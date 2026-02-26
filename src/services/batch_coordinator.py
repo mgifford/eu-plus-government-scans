@@ -10,11 +10,15 @@ from typing import List, Optional
 
 from src.storage.schema import ValidationBatchState, initialize_schema
 
+# Cycle ID timestamp format (e.g., "20260226-223045")
+CYCLE_ID_FORMAT = '%Y%m%d-%H%M%S'
+
 
 @dataclass
 class BatchConfig:
     """Configuration for batch processing."""
     batch_size: int = 5  # Number of countries per batch
+    # Max runtime matches GitHub Actions timeout (110 min) in validate-urls-batch.yml
     max_runtime_minutes: int = 110  # Leave 10 minutes buffer before 2hr timeout
 
 
@@ -64,7 +68,7 @@ class BatchCoordinator:
                 return cycle_id
             
             # Create new cycle
-            cycle_id = datetime.now(timezone.utc).strftime('%Y%m%d-%H%M%S')
+            cycle_id = datetime.now(timezone.utc).strftime(CYCLE_ID_FORMAT)
             
             # Initialize all countries as pending for this cycle
             # We'll get the list from available TOON files

@@ -27,7 +27,9 @@ on:
 jobs:
   validate-urls-batch:
     runs-on: ubuntu-latest
-    timeout-minutes: 110  # Leave 10 min buffer before 2hr timeout
+    # Timeout matches BatchConfig.max_runtime_minutes in src/services/batch_coordinator.py
+    # Set to 110 minutes to leave 10-minute buffer before GitHub's 2-hour limit
+    timeout-minutes: 110
     permissions:
       contents: write
       issues: write
