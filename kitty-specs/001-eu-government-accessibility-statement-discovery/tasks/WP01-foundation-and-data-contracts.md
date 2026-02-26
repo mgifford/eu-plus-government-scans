@@ -1,7 +1,7 @@
 ---
 work_package_id: WP01
 title: Foundation and Data Contracts
-lane: "doing"
+lane: "for_review"
 dependencies: []
 base_branch: main
 base_commit: 798ba6324ea80c93200da3d4a0b2fc8db3c6a2d3
@@ -151,3 +151,4 @@ Implementation command for this WP:
 
 - 2026-02-26T09:14:51Z - system - lane=planned - Prompt created.
 - 2026-02-26T09:24:28Z – copilot – shell_pid=38647 – lane=doing – Assigned agent via workflow command
+- 2026-02-26T09:29:45Z – copilot – shell_pid=38647 – lane=for_review – Ready for review: foundation skeleton, config, ingestion, normalization, schema, and logging completed with tests
