@@ -8,7 +8,7 @@ import sqlite3
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Dict, List, Set
+from typing import Any, Dict, List, Set
 from uuid import uuid4
 
 from src.lib.settings import Settings
@@ -181,7 +181,7 @@ class UrlValidationScanner:
         country_code: str,
         toon_path: Path,
         rate_limit_per_second: float = 2.0,
-    ) -> Dict[str, any]:
+    ) -> Dict[str, Any]:
         """
         Scan all URLs in a country's TOON file.
         
@@ -283,7 +283,7 @@ class UrlValidationScanner:
         self,
         toon_seeds_dir: Path,
         rate_limit_per_second: float = 2.0,
-    ) -> List[Dict[str, any]]:
+    ) -> List[Dict[str, Any]]:
         """
         Scan all TOON files in a directory.
         
