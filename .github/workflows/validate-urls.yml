@@ -62,8 +62,9 @@ jobs:
           path: |
             validation-report.md
             validation-output.txt
-            metadata.db
+            data/metadata.db
           retention-days: 90
+          if-no-files-found: warn
       
       - name: Display report summary
         if: always()
