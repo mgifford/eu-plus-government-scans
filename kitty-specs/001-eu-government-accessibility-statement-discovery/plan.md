@@ -1,108 +1,89 @@
-# Implementation Plan: [FEATURE]
+# Implementation Plan: EU Government Accessibility Statement Discovery
 *Path: [templates/plan-template.md](templates/plan-template.md)*
 
-
-**Branch**: `[###-feature-name]` | **Date**: [DATE] | **Spec**: [link]
-**Input**: Feature specification from `/kitty-specs/[###-feature-name]/spec.md`
-
-**Note**: This template is filled in by the `/spec-kitty.plan` command. See `src/specify_cli/missions/software-dev/command-templates/plan.md` for the execution workflow.
-
-The planner will not begin until all planning questions have been answered—capture those answers in this document before progressing to later phases.
+**Branch**: `main` | **Date**: 2026-02-26 | **Spec**: [/workspaces/eu-plus-government-scans/kitty-specs/001-eu-government-accessibility-statement-discovery/spec.md](/workspaces/eu-plus-government-scans/kitty-specs/001-eu-government-accessibility-statement-discovery/spec.md)
+**Input**: Feature specification from `/kitty-specs/001-eu-government-accessibility-statement-discovery/spec.md`
 
 ## Summary
 
-[Extract from feature spec: primary requirement + technical approach from research]
+Build a scheduled server-side scanning service that runs monthly and produces country-specific cached TOON outputs for government domains in scope of the EU Web Accessibility Directive. The service ingests authoritative country domain lists, normalizes hostnames with redirect tracing, detects accessibility statements across official EU languages using a glossary, assigns `high`/`medium`/`low` confidence, and preserves provenance and sampled navigation URLs for downstream accessibility analysis.
 
 ## Technical Context
 
-<!--
-  ACTION REQUIRED: Replace the content in this section with the technical details
-  for the project. The structure here is presented in advisory capacity to guide
-  the iteration process.
--->
-
-**Language/Version**: [e.g., Python 3.11, Swift 5.9, Rust 1.75 or NEEDS CLARIFICATION]  
-**Primary Dependencies**: [e.g., FastAPI, UIKit, LLVM or NEEDS CLARIFICATION]  
-**Storage**: [if applicable, e.g., PostgreSQL, CoreData, files or N/A]  
-**Testing**: [e.g., pytest, XCTest, cargo test or NEEDS CLARIFICATION]  
-**Target Platform**: [e.g., Linux server, iOS 15+, WASM or NEEDS CLARIFICATION]
-**Project Type**: [single/web/mobile - determines source structure]  
-**Performance Goals**: [domain-specific, e.g., 1000 req/s, 10k lines/sec, 60 fps or NEEDS CLARIFICATION]  
-**Constraints**: [domain-specific, e.g., <200ms p95, <100MB memory, offline-capable or NEEDS CLARIFICATION]  
-**Scale/Scope**: [domain-specific, e.g., 10k users, 1M LOC, 50 screens or NEEDS CLARIFICATION]
+**Language/Version**: Python 3.12  
+**Primary Dependencies**: FastAPI, HTTPX, Pydantic, APScheduler, tldextract, beautifulsoup4, tenacity  
+**Storage**: File-based TOON cache artifacts per country/month plus lightweight relational metadata store (SQLite local/dev, PostgreSQL-compatible schema for server deployment)  
+**Testing**: pytest with unit, integration, and contract suites  
+**Target Platform**: Linux server scheduled-job runtime  
+**Project Type**: Single backend service  
+**Performance Goals**: Complete one monthly country run in <=30 minutes for up to 2,000 hostnames and generate 100% country artifact availability for completed runs  
+**Constraints**: Respect robots and polite crawl limits, at most one active run per country, preserve prior stale results on first unreachable detection  
+**Scale/Scope**: Initial scope EU countries (Europe-first) with optional Canada inclusion, monthly snapshots, one TOON artifact per country per month
 
 ## Constitution Check
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- `.kittify/memory/constitution.md` is not present in this repository.
+- Constitution gate is skipped for this plan run.
+- Post-design constitution re-check: skipped (no constitution file present).
 
 ## Project Structure
 
 ### Documentation (this feature)
 
 ```
-kitty-specs/[###-feature]/
-├── plan.md              # This file (/spec-kitty.plan command output)
-├── research.md          # Phase 0 output (/spec-kitty.plan command)
-├── data-model.md        # Phase 1 output (/spec-kitty.plan command)
-├── quickstart.md        # Phase 1 output (/spec-kitty.plan command)
-├── contracts/           # Phase 1 output (/spec-kitty.plan command)
-└── tasks.md             # Phase 2 output (/spec-kitty.tasks command - NOT created by /spec-kitty.plan)
+kitty-specs/001-eu-government-accessibility-statement-discovery/
+|- plan.md              # This file (/spec-kitty.plan output)
+|- research.md          # Phase 0 output
+|- data-model.md        # Phase 1 output
+|- quickstart.md        # Phase 1 output
+|- contracts/           # Phase 1 output
+`- tasks.md             # Phase 2 output (/spec-kitty.tasks)
 ```
 
 ### Source Code (repository root)
-<!--
-  ACTION REQUIRED: Replace the placeholder tree below with the concrete layout
-  for this feature. Delete unused options and expand the chosen structure with
-  real paths (e.g., apps/admin, packages/something). The delivered plan must
-  not include Option labels.
--->
 
 ```
-# [REMOVE IF UNUSED] Option 1: Single project (DEFAULT)
 src/
-├── models/
-├── services/
-├── cli/
-└── lib/
+|- api/
+|- jobs/
+|- models/
+|- services/
+|- cli/
+|- glossary/
+`- storage/
 
 tests/
-├── contract/
-├── integration/
-└── unit/
-
-# [REMOVE IF UNUSED] Option 2: Web application (when "frontend" + "backend" detected)
-backend/
-├── src/
-│   ├── models/
-│   ├── services/
-│   └── api/
-└── tests/
-
-frontend/
-├── src/
-│   ├── components/
-│   ├── pages/
-│   └── services/
-└── tests/
-
-# [REMOVE IF UNUSED] Option 3: Mobile + API (when "iOS/Android" detected)
-api/
-└── [same as backend above]
-
-ios/ or android/
-└── [platform-specific structure: feature modules, UI flows, platform tests]
+|- contract/
+|- integration/
+`- unit/
 ```
 
-**Structure Decision**: [Document the selected structure and reference the real
-directories captured above]
+**Structure Decision**: Use a single backend service layout in `src/` with modular boundaries for API, scheduler jobs, detection services, glossary handling, and artifact storage.
 
 ## Complexity Tracking
 
-*Fill ONLY if Constitution Check has violations that must be justified*
+No constitution violations identified.
 
-| Violation | Why Needed | Simpler Alternative Rejected Because |
-|-----------|------------|-------------------------------------|
-| [e.g., 4th project] | [current need] | [why 3 projects insufficient] |
-| [e.g., Repository pattern] | [specific problem] | [why direct DB access insufficient] |
+## Parallel Work Analysis
+
+### Dependency Graph
+
+```
+Foundation (ingestion + canonical hostname model + glossary loading)
+-> Wave 1 parallel (statement detection, scheduler stale lifecycle, TOON writer)
+-> Wave 2 parallel (API read endpoints, contract tests, integration fixtures)
+-> Integration (monthly orchestration + artifact validation)
+```
+
+### Work Distribution
+
+- **Sequential work**: Data contracts and canonical hostname model must land first.
+- **Parallel streams**: Detection logic, scheduler lifecycle, and API retrieval can proceed in parallel after model contracts stabilize.
+- **Agent assignments**: Split by module boundary (`src/services/detection`, `src/jobs/scheduler`, `src/api`).
+
+### Coordination Points
+
+- **Sync schedule**: Merge after Foundation and after each wave.
+- **Integration tests**: Validate end-to-end monthly run, stale retry-delete flow, and country TOON output schema compliance.
