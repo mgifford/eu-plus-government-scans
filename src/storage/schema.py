@@ -51,6 +51,18 @@ class UrlValidationResult:
     validated_at: str | None = None
 
 
+@dataclass(slots=True)
+class ValidationBatchState:
+    """Tracks progress of batch validation cycles."""
+    cycle_id: str
+    country_code: str
+    status: str  # pending, processing, completed, failed
+    started_at: str | None = None
+    completed_at: str | None = None
+    github_issue_number: int | None = None
+    error_message: str | None = None
+
+
 SCHEMA_SQL = """
 CREATE TABLE IF NOT EXISTS country_scans (
     scan_id TEXT PRIMARY KEY,
@@ -99,6 +111,21 @@ CREATE TABLE IF NOT EXISTS url_validation_results (
 CREATE INDEX IF NOT EXISTS idx_url_validation_country ON url_validation_results(country_code);
 CREATE INDEX IF NOT EXISTS idx_url_validation_scan ON url_validation_results(scan_id);
 CREATE INDEX IF NOT EXISTS idx_url_validation_failures ON url_validation_results(failure_count);
+
+CREATE TABLE IF NOT EXISTS validation_batch_state (
+    cycle_id TEXT NOT NULL,
+    country_code TEXT NOT NULL,
+    status TEXT NOT NULL,
+    started_at TEXT,
+    completed_at TEXT,
+    github_issue_number INTEGER,
+    error_message TEXT,
+    PRIMARY KEY (cycle_id, country_code)
+);
+
+CREATE INDEX IF NOT EXISTS idx_batch_state_cycle ON validation_batch_state(cycle_id);
+CREATE INDEX IF NOT EXISTS idx_batch_state_status ON validation_batch_state(status);
+CREATE INDEX IF NOT EXISTS idx_batch_state_issue ON validation_batch_state(github_issue_number);
 """
 
 
