@@ -1,0 +1,77 @@
+name: Validate Government URLs
+
+on:
+  workflow_dispatch:
+    inputs:
+      country:
+        description: 'Specific country code to validate (e.g., ICELAND, FRANCE) or leave empty for all'
+        required: false
+        type: string
+      rate_limit:
+        description: 'Maximum requests per second'
+        required: false
+        default: '2.0'
+        type: string
+
+jobs:
+  validate-urls:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    permissions:
+      contents: read
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+      
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+      
+      - name: Run URL validation (specific country)
+        if: ${{ github.event.inputs.country != '' }}
+        run: |
+          python3 -m src.cli.validate_urls \
+            --country "${{ github.event.inputs.country }}" \
+            --rate-limit "${{ github.event.inputs.rate_limit }}" \
+            2>&1 | tee validation-output.txt
+      
+      - name: Run URL validation (all countries)
+        if: ${{ github.event.inputs.country == '' }}
+        run: |
+          python3 -m src.cli.validate_urls \
+            --all \
+            --rate-limit "${{ github.event.inputs.rate_limit }}" \
+            2>&1 | tee validation-output.txt
+      
+      - name: Generate validation report
+        if: always()
+        run: |
+          python3 -m src.cli.generate_validation_report \
+            --output validation-report.md
+      
+      - name: Upload validation report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: validation-report
+          path: |
+            validation-report.md
+            validation-output.txt
+            data/metadata.db
+          retention-days: 90
+          if-no-files-found: warn
+      
+      - name: Display report summary
+        if: always()
+        run: |
+          if [ -f validation-report.md ]; then
+            echo "## Validation Report Summary" >> $GITHUB_STEP_SUMMARY
+            cat validation-report.md >> $GITHUB_STEP_SUMMARY
+          fi
