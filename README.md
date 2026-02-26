@@ -60,6 +60,7 @@ A URL validation scanner is available to validate government site accessibility 
 - `src/services/url_validator.py` - Async URL validation with redirect tracking
 - `src/jobs/url_validation_scanner.py` - Batch scanner for TOON files
 - `src/cli/validate_urls.py` - CLI interface for running scans
+- `src/cli/generate_validation_report.py` - Generate validation reports from database
 
 Key features:
 - Validates URLs and tracks HTTP status codes and errors
@@ -67,21 +68,38 @@ Key features:
 - Tracks failure counts: first failure is noted, second failure removes URL
 - No retry within same scan session
 - Supports quarterly validation runs
+- **GitHub Action for automated validation** - Trigger validations manually from the Actions tab
 
-See [docs/url-validation-scanner.md](docs/url-validation-scanner.md) for usage instructions.
+### GitHub Action (Recommended)
 
-Quick start:
+The easiest way to run validations is through the GitHub Action:
+
+1. Go to the **Actions** tab in this repository
+2. Select **"Validate Government URLs"**
+3. Click **"Run workflow"** and optionally specify a country
+4. View results in the workflow summary and download detailed reports
+
+See [docs/github-action-validation.md](docs/github-action-validation.md) for full instructions.
+
+### CLI Usage
+
+For local or manual validation:
 
 ```bash
 # Install dependencies
 pip install -r requirements.txt
 
 # Validate a specific country
-python3 -m src.cli.validate_urls --country iceland --rate-limit 2
+python3 -m src.cli.validate_urls --country ICELAND --rate-limit 2
 
 # Validate all countries
 python3 -m src.cli.validate_urls --all --rate-limit 2
+
+# Generate a report from validation results
+python3 -m src.cli.generate_validation_report --output validation-report.md
 ```
+
+See [docs/url-validation-scanner.md](docs/url-validation-scanner.md) for detailed CLI usage.
 
 ## Next steps
 
