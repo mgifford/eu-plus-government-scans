@@ -35,7 +35,7 @@ async def test_validate_url_redirect():
     """Test URL validation with redirect."""
     validator = UrlValidator(timeout_seconds=10)
     
-    # Mock httpx response with redirect
+    # Mock httpx response with redirect (final URL different from original)
     mock_response = Mock()
     mock_response.status_code = 200
     mock_response.url = "https://example.com/new-page"
@@ -47,10 +47,12 @@ async def test_validate_url_redirect():
         
         result = await validator.validate_url("https://example.com/old-page")
         
+        # Verify redirect was detected
         assert result.is_valid is True
         assert result.status_code == 200
         assert result.url == "https://example.com/old-page"
         assert result.redirected_to == "https://example.com/new-page"
+        # Note: redirect_chain tracking is tested in integration tests with real httpx behavior
 
 
 @pytest.mark.asyncio

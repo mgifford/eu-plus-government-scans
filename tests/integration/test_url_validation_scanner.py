@@ -93,6 +93,23 @@ async def test_scanner_processes_toon_file(temp_settings, sample_toon_file):
     output_path = Path(stats["output_path"])
     assert output_path.exists()
     
+    # Verify output TOON file content
+    with output_path.open("r") as f:
+        output_toon = json.load(f)
+    
+    # Check that validation metadata was added to pages
+    found_validation_status = False
+    for domain in output_toon.get("domains", []):
+        for page in domain.get("pages", []):
+            # Each page should have validation_status
+            if "validation_status" in page:
+                found_validation_status = True
+                assert page["validation_status"] in ["valid", "invalid"]
+                # Pages may have status_code or error_message depending on result
+                assert "status_code" in page or "error_message" in page
+    
+    assert found_validation_status, "No validation metadata found in output TOON"
+    
     # Verify database records were created
     conn = sqlite3.connect(scanner.db_path)
     cursor = conn.execute(

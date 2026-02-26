@@ -194,7 +194,7 @@ class UrlValidationScanner:
         Returns:
             Scan statistics and results
         """
-        scan_id = f"{country_code}-{datetime.now(timezone.utc).strftime('%Y%m%d-%H%M%S')}-{uuid4().hex[:8]}"
+        scan_id = f"{country_code}-{datetime.now(timezone.utc).strftime('%Y%m%d-%H%M%S%f')}-{uuid4().hex[:8]}"
         
         print(f"Starting scan {scan_id} for {country_code}")
         print(f"Loading TOON file: {toon_path}")
