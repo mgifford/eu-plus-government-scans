@@ -25,12 +25,12 @@
 **Prompt**: `/tasks/WP01-foundation-and-data-contracts.md`
 
 ### Included Subtasks
-- [ ] T001 Create backend module skeleton in `src/api`, `src/jobs`, `src/models`, `src/services`, `src/glossary`, `src/storage`, and mirrored `tests/` directories
-- [ ] T002 Implement runtime configuration loader for scheduler cadence, crawl limits, and storage paths in `src/lib/settings.py`
-- [ ] T003 Implement source-list ingestion interfaces and CSV/URL adapters with provenance URL capture in `src/services/source_ingest.py`
-- [ ] T004 Implement hostname normalization utilities (full-hostname canonical key and alias mapping) in `src/services/domain_normalizer.py`
-- [ ] T005 Create persistence schema for `CountryScan` and `DomainRecord` plus migration bootstrap in `src/storage/schema.py`
-- [ ] T006 Configure baseline structured logging and error model in `src/lib/logging.py`
+- [x] T001 Create backend module skeleton in `src/api`, `src/jobs`, `src/models`, `src/services`, `src/glossary`, `src/storage`, and mirrored `tests/` directories
+- [x] T002 Implement runtime configuration loader for scheduler cadence, crawl limits, and storage paths in `src/lib/settings.py`
+- [x] T003 Implement source-list ingestion interfaces and CSV/URL adapters with provenance URL capture in `src/services/source_ingest.py`
+- [x] T004 Implement hostname normalization utilities (full-hostname canonical key and alias mapping) in `src/services/domain_normalizer.py`
+- [x] T005 Create persistence schema for `CountryScan` and `DomainRecord` plus migration bootstrap in `src/storage/schema.py`
+- [x] T006 Configure baseline structured logging and error model in `src/lib/logging.py`
 
 ### Implementation Notes
 - Build this package first to unblock all downstream work.
