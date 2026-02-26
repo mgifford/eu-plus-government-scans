@@ -15,3 +15,7 @@
 .kittify/missions/__pycache__/
 __pycache__/
 *.pyc
+
+# Generated data files
+data/metadata.db
+data/toon-seeds/countries/*_validated.toon
