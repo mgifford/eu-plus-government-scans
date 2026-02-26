@@ -107,8 +107,10 @@ def test_generate_report_includes_statistics(test_db, tmp_path):
     generate_report(test_db, output_path)
     
     content = output_path.read_text()
-    # Should show: 3 total, 1 valid, 2 invalid
-    assert "| ICELAND | 3 | 1 | 2 |" in content
+    # Should show: 3 total, 1 valid, 2 invalid, 0 redirected, 1 removed
+    # Format: | Country | Total | Valid | Invalid | Redirected | Removed | Success Rate |
+    assert "| ICELAND | 3 | 1 | 2 | 0 | 1 |" in content
+    assert "33.3%" in content  # Success rate should be ~33.3% (1 valid out of 3)
 
 
 def test_generate_report_shows_errors(test_db, tmp_path):
