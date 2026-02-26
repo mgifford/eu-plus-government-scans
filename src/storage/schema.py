@@ -37,6 +37,20 @@ class DomainRecord:
     active: int = 1
 
 
+@dataclass(slots=True)
+class UrlValidationResult:
+    url: str
+    country_code: str
+    scan_id: str
+    status_code: int | None = None
+    error_message: str | None = None
+    redirected_to: str | None = None
+    redirect_chain: str | None = None
+    is_valid: int = 0
+    failure_count: int = 0
+    validated_at: str | None = None
+
+
 SCHEMA_SQL = """
 CREATE TABLE IF NOT EXISTS country_scans (
     scan_id TEXT PRIMARY KEY,
@@ -67,6 +81,24 @@ CREATE TABLE IF NOT EXISTS domain_records (
     active INTEGER NOT NULL DEFAULT 1,
     PRIMARY KEY (country_code, canonical_hostname)
 );
+
+CREATE TABLE IF NOT EXISTS url_validation_results (
+    url TEXT NOT NULL,
+    country_code TEXT NOT NULL,
+    scan_id TEXT NOT NULL,
+    status_code INTEGER,
+    error_message TEXT,
+    redirected_to TEXT,
+    redirect_chain TEXT,
+    is_valid INTEGER NOT NULL DEFAULT 0,
+    failure_count INTEGER NOT NULL DEFAULT 0,
+    validated_at TEXT,
+    PRIMARY KEY (url, scan_id)
+);
+
+CREATE INDEX IF NOT EXISTS idx_url_validation_country ON url_validation_results(country_code);
+CREATE INDEX IF NOT EXISTS idx_url_validation_scan ON url_validation_results(scan_id);
+CREATE INDEX IF NOT EXISTS idx_url_validation_failures ON url_validation_results(failure_count);
 """
 
 
