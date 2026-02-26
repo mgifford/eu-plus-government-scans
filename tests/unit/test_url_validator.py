@@ -127,11 +127,10 @@ async def test_validate_urls_batch():
     mock_response.status_code = 200
     mock_response.is_redirect = False
     
-    call_count = [0]
-    
     async def mock_get_side_effect(*args, **kwargs):
-        call_count[0] += 1
-        mock_response.url = urls[call_count[0] - 1]
+        # Return mock response with URL from the call
+        url_arg = args[0] if args else kwargs.get('url', urls[0])
+        mock_response.url = url_arg
         return mock_response
     
     with patch("httpx.AsyncClient") as mock_client:

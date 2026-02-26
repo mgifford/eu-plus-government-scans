@@ -11,6 +11,7 @@ from pathlib import Path
 from typing import Any, Dict, List, Set
 from uuid import uuid4
 
+from src.lib.country_utils import country_filename_to_code
 from src.lib.settings import Settings
 from src.services.url_validator import UrlValidator, ValidationResult
 from src.storage.schema import initialize_schema
@@ -302,8 +303,8 @@ class UrlValidationScanner:
         print(f"Found {len(toon_files)} TOON files to process")
         
         for toon_path in sorted(toon_files):
-            # Extract country code from filename
-            country_code = toon_path.stem.upper().replace("-", "_")
+            # Extract country code from filename using utility function
+            country_code = country_filename_to_code(toon_path.stem)
             
             try:
                 stats = await self.scan_country(

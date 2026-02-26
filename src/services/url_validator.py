@@ -114,7 +114,19 @@ class UrlValidator:
             )
 
     def _track_redirect(self, redirect_chain: List[str]):
-        """Create event hook to track redirect chain."""
+        """
+        Create event hook to track redirect chain.
+        
+        Returns a callback function for use with httpx event hooks that
+        appends intermediate redirect URLs to the redirect_chain list
+        when responses have redirect status codes (3xx).
+        
+        Args:
+            redirect_chain: List to accumulate redirect URLs
+            
+        Returns:
+            Event hook function that accepts an httpx Response
+        """
         def hook(response: httpx.Response):
             if response.is_redirect:
                 redirect_chain.append(str(response.url))
