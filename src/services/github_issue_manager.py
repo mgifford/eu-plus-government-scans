@@ -6,6 +6,10 @@ import os
 import subprocess
 from typing import Optional
 
+# Timeout constants for GitHub CLI operations
+GH_CLI_CHECK_TIMEOUT = 5  # seconds for version check
+GH_CLI_COMMAND_TIMEOUT = 30  # seconds for actual commands
+
 
 class GitHubIssueManager:
     """Manages GitHub issues for validation cycle tracking."""
@@ -21,7 +25,7 @@ class GitHubIssueManager:
                 ["gh", "--version"],
                 capture_output=True,
                 text=True,
-                timeout=5
+                timeout=GH_CLI_CHECK_TIMEOUT
             )
             return result.returncode == 0
         except (FileNotFoundError, subprocess.TimeoutExpired):
@@ -42,7 +46,7 @@ class GitHubIssueManager:
                 ["gh"] + args,
                 capture_output=True,
                 text=True,
-                timeout=30,
+                timeout=GH_CLI_COMMAND_TIMEOUT,
                 env={**os.environ, "GH_REPO": self.repo}
             )
             return result.returncode == 0, result.stdout.strip()
