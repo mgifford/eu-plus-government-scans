@@ -265,3 +265,15 @@ def test_mark_batch_pending(coordinator, temp_db, monkeypatch):
     
     assert results["FRANCE"] == "processing"
     assert results["GERMANY"] == "pending"
+
+
+def test_batch_config_defaults():
+    """Test that BatchConfig has appropriate defaults for ~1 hour completion."""
+    config = BatchConfig()
+    
+    # Batch size should be small enough to complete within ~1 hour
+    assert config.batch_size == 2
+    
+    # Max runtime represents GitHub Actions workflow timeout limit
+    # (CLI uses 50 min to leave 10 min buffer before this timeout)
+    assert config.max_runtime_minutes == 60

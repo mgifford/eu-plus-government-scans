@@ -29,9 +29,9 @@ def main():
     )
     parser.add_argument(
         "--batch-size",
-        help="Number of countries to process per batch (default: 5)",
+        help="Number of countries to process per batch (default: 2)",
         type=int,
-        default=5,
+        default=2,
     )
     parser.add_argument(
         "--github-issue",
@@ -154,9 +154,9 @@ def run_batch_mode(
     
     # Track start time for timeout handling
     start_time = time.time()
-    # Stop processing early to leave buffer before the 110 minute GitHub Actions timeout
-    # Set max runtime to 100 minutes (leaving 10 minutes as safety buffer)
-    max_runtime_seconds = 100 * 60
+    # Stop processing early to leave buffer before the 60 minute GitHub Actions timeout
+    # Set max runtime to 50 minutes (leaving 10 minutes as safety buffer)
+    max_runtime_seconds = 50 * 60
     # Stop when less than 5 minutes remain to complete gracefully
     safety_threshold_seconds = 5 * 60
     
