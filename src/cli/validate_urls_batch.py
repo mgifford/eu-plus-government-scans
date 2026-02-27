@@ -150,11 +150,22 @@ def run_batch_mode(
     create_issue: bool,
 ):
     """Run validation in batch mode."""
+    import time
+    
+    # Track start time for timeout handling
+    start_time = time.time()
+    # Stop processing early to leave buffer before the 110 minute GitHub Actions timeout
+    # Set max runtime to 100 minutes (leaving 10 minutes as safety buffer)
+    max_runtime_seconds = 100 * 60
+    # Stop when less than 5 minutes remain to complete gracefully
+    safety_threshold_seconds = 5 * 60
+    
     print("=" * 80)
     print("BATCH VALIDATION MODE")
     print("=" * 80)
     print(f"Batch size: {batch_size} countries")
     print(f"Rate limit: {rate_limit} requests/second")
+    print(f"Max runtime: {max_runtime_seconds // 60} minutes")
     print("")
     
     # Initialize coordinators
@@ -211,9 +222,29 @@ def run_batch_mode(
     # Mark as processing
     coordinator.mark_batch_processing(cycle_id, countries)
     
-    # Process each country
+    # Process each country with timeout check
     completed_countries = []
+    stopped_early = False
+    
     for country_code in countries:
+        # Check if we're approaching timeout
+        elapsed = time.time() - start_time
+        remaining = max_runtime_seconds - elapsed
+        
+        if remaining < safety_threshold_seconds:
+            print("")
+            print("⏱️  Approaching timeout limit - stopping batch processing early")
+            print(f"   Elapsed: {elapsed / 60:.1f} minutes")
+            print(f"   Less than {safety_threshold_seconds / 60:.0f} minutes remaining")
+            print(f"   Remaining countries will be processed in next run")
+            stopped_early = True
+            
+            # Mark unprocessed countries as pending again
+            unprocessed = [c for c in countries if c not in completed_countries]
+            for country in unprocessed:
+                coordinator.mark_batch_pending(cycle_id, country)
+            break
+        
         try:
             toon_file = toon_dir / f"{country_code_to_filename(country_code)}.toon"
             
@@ -228,6 +259,7 @@ def run_batch_mode(
             
             print(f"\n{'=' * 80}")
             print(f"Processing: {country_code}")
+            print(f"Elapsed time: {elapsed / 60:.1f} minutes, Remaining: {remaining / 60:.1f} minutes")
             print('=' * 80)
             
             stats = asyncio.run(
@@ -253,9 +285,17 @@ def run_batch_mode(
     
     print("")
     print("=" * 80)
-    print("BATCH COMPLETE")
+    if stopped_early:
+        print("BATCH STOPPED EARLY (TIMEOUT PREVENTION)")
+    else:
+        print("BATCH COMPLETE")
     print("=" * 80)
     print_progress(progress)
+    
+    if stopped_early:
+        print("")
+        print("⚠️  Batch processing stopped early to avoid GitHub Actions timeout")
+        print("   The next scheduled run will continue with remaining countries")
     
     # Update GitHub issue
     if github_issue:

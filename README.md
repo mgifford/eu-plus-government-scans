@@ -71,6 +71,30 @@ Key features:
 - **Batched processing** - Handle 80k+ URLs without timeout
 - **GitHub Issue tracking** - Monitor progress across multiple runs
 - **Automated cron scheduling** - Run every 2 hours automatically
+- **Issue-triggered validation** - Trigger scans by creating GitHub issues
+
+### Issue-Triggered Validation (NEW!)
+
+Trigger validation scans by simply creating a GitHub issue with a special title prefix:
+
+- **`SCAN: <description>`** - Run once and close issue when complete
+- **`QUARTERLY:`, `MONTHLY:`, `WEEKLY:`, etc.** - Run periodically, keep issue open
+
+When triggered, the system:
+1. Validates all URLs across all countries
+2. Posts a detailed report as a comment to the issue
+3. Closes the issue (for one-time scans) or keeps it open (for periodic scans)
+
+See **[docs/issue-triggered-validation.md](docs/issue-triggered-validation.md)** for complete documentation.
+
+**Example:**
+1. Create issue titled `SCAN: Validate URL`
+2. Wait for hourly check (runs every hour)
+3. Review report posted as comment
+4. Issue automatically closes when complete
+
+**Workflows:**
+- `.github/workflows/issue-triggered-validation.yml` - Checks for trigger issues every hour
 
 ### Batched Validation (Recommended)
 
@@ -136,3 +160,40 @@ See [docs/url-validation-scanner.md](docs/url-validation-scanner.md) for detaile
 - Continue implementation by work package (`WP02`, `WP03`, ...)
 - Use TOON seeds as source inputs for country scans
 - Refine statement detection confidence and multilingual glossary coverage
+
+## Data Caching and Storage
+
+### Validation Metadata Database
+
+The validation system uses an SQLite database (`data/metadata.db`) to track:
+- URL validation results (status codes, errors, redirect chains)
+- Failure counts across scans (remove URLs after 2 failures)
+- Batch processing state (cycle tracking, country progress)
+
+**Storage Location:**
+- **NOT committed to the repository** (excluded in `.gitignore`)
+- Stored as a **GitHub Actions artifact** named `validation-metadata`
+- Artifact retention: **90 days**
+- Automatically downloaded at the start of each workflow run
+- Automatically uploaded at the end of each workflow run
+
+This approach ensures:
+- State persists across workflow runs without bloating the repository
+- Failed URLs are consistently tracked and eventually removed
+- Batch validation cycles can resume after any interruption
+- No merge conflicts or version control issues with binary database files
+
+**Viewing Artifacts:**
+1. Go to a completed workflow run in the **Actions** tab
+2. Scroll to the **Artifacts** section at the bottom
+3. Download `validation-metadata` to inspect the database locally
+
+### Validated TOON Files
+
+Updated TOON files with validation results are also **not committed**:
+- Pattern: `data/toon-seeds/countries/*_validated.toon`
+- Excluded in `.gitignore`
+- Generated during validation runs
+- Contain validation metadata (status codes, redirects, etc.)
+
+Only the original seed TOON files (without `_validated` suffix) are version controlled.
