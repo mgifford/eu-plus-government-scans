@@ -184,6 +184,22 @@ class BatchCoordinator:
         finally:
             conn.close()
 
+    def mark_batch_pending(self, cycle_id: str, country_code: str):
+        """Mark a country as pending (e.g., when stopping early due to timeout)."""
+        conn = sqlite3.connect(self.db_path)
+        try:
+            conn.execute(
+                """
+                UPDATE validation_batch_state
+                SET status = 'pending', started_at = NULL
+                WHERE cycle_id = ? AND country_code = ?
+                """,
+                (cycle_id, country_code)
+            )
+            conn.commit()
+        finally:
+            conn.close()
+
     def get_cycle_progress(self, cycle_id: str) -> dict:
         """
         Get progress statistics for a cycle.
