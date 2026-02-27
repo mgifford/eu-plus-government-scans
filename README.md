@@ -71,6 +71,30 @@ Key features:
 - **Batched processing** - Handle 80k+ URLs without timeout
 - **GitHub Issue tracking** - Monitor progress across multiple runs
 - **Automated cron scheduling** - Run every 2 hours automatically
+- **Issue-triggered validation** - Trigger scans by creating GitHub issues
+
+### Issue-Triggered Validation (NEW!)
+
+Trigger validation scans by simply creating a GitHub issue with a special title prefix:
+
+- **`SCAN: <description>`** - Run once and close issue when complete
+- **`QUARTERLY:`, `MONTHLY:`, `WEEKLY:`, etc.** - Run periodically, keep issue open
+
+When triggered, the system:
+1. Validates all URLs across all countries
+2. Posts a detailed report as a comment to the issue
+3. Closes the issue (for one-time scans) or keeps it open (for periodic scans)
+
+See **[docs/issue-triggered-validation.md](docs/issue-triggered-validation.md)** for complete documentation.
+
+**Example:**
+1. Create issue titled `SCAN: Validate URL`
+2. Wait for hourly check (runs every hour)
+3. Review report posted as comment
+4. Issue automatically closes when complete
+
+**Workflows:**
+- `.github/workflows/issue-triggered-validation.yml` - Checks for trigger issues every hour
 
 ### Batched Validation (Recommended)
 
