@@ -154,8 +154,11 @@ def run_batch_mode(
     
     # Track start time for timeout handling
     start_time = time.time()
-    # Leave 10 minutes buffer before the 110 minute GitHub Actions timeout
-    max_runtime_seconds = (110 - 10) * 60  # 100 minutes
+    # Stop processing early to leave buffer before the 110 minute GitHub Actions timeout
+    # Set max runtime to 100 minutes (leaving 10 minutes as safety buffer)
+    max_runtime_seconds = 100 * 60
+    # Stop when less than 5 minutes remain to complete gracefully
+    safety_threshold_seconds = 5 * 60
     
     print("=" * 80)
     print("BATCH VALIDATION MODE")
@@ -228,10 +231,11 @@ def run_batch_mode(
         elapsed = time.time() - start_time
         remaining = max_runtime_seconds - elapsed
         
-        if remaining < 300:  # Less than 5 minutes remaining
+        if remaining < safety_threshold_seconds:
             print("")
-            print("⏱️  Approaching timeout limit - stopping batch processing")
+            print("⏱️  Approaching timeout limit - stopping batch processing early")
             print(f"   Elapsed: {elapsed / 60:.1f} minutes")
+            print(f"   Less than {safety_threshold_seconds / 60:.0f} minutes remaining")
             print(f"   Remaining countries will be processed in next run")
             stopped_early = True
             

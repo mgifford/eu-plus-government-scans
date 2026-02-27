@@ -217,6 +217,10 @@ class IssueTriggerHandler:
         total_redirected = sum(s.get("redirected_urls", 0) for s in all_stats)
         total_removed = sum(s.get("urls_removed", 0) for s in all_stats)
         
+        # Calculate percentages safely
+        valid_pct = (total_valid / total_validated * 100) if total_validated > 0 else 0
+        invalid_pct = (total_invalid / total_validated * 100) if total_validated > 0 else 0
+        
         report = f"""## URL Validation Report
 
 **Trigger:** {config.prefix} {f"({config.schedule})" if config.schedule else ""}
@@ -229,8 +233,8 @@ class IssueTriggerHandler:
 |--------|-------|
 | Total URLs | {total_urls:,} |
 | Validated | {total_validated:,} |
-| Valid | {total_valid:,} ({total_valid/total_validated*100:.1f}%) |
-| Invalid | {total_invalid:,} ({total_invalid/total_validated*100:.1f}%) |
+| Valid | {total_valid:,} ({valid_pct:.1f}%) |
+| Invalid | {total_invalid:,} ({invalid_pct:.1f}%) |
 | Redirected | {total_redirected:,} |
 | Removed (failed 2x) | {total_removed:,} |
 
