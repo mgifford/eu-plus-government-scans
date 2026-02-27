@@ -11,7 +11,7 @@ on:
       batch_size:
         description: 'Number of countries per batch'
         required: false
-        default: '5'
+        default: '2'
         type: string
       rate_limit:
         description: 'Maximum requests per second'
@@ -28,8 +28,8 @@ jobs:
   validate-urls-batch:
     runs-on: ubuntu-latest
     # Timeout matches BatchConfig.max_runtime_minutes in src/services/batch_coordinator.py
-    # Set to 110 minutes to leave 10-minute buffer before GitHub's 2-hour limit
-    timeout-minutes: 110
+    # Set to 60 minutes to complete batches within ~1 hour
+    timeout-minutes: 60
     permissions:
       contents: write
       issues: write
@@ -60,7 +60,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           # Set default values for scheduled runs
-          BATCH_SIZE="${{ github.event.inputs.batch_size || '5' }}"
+          BATCH_SIZE="${{ github.event.inputs.batch_size || '2' }}"
           RATE_LIMIT="${{ github.event.inputs.rate_limit || '2.0' }}"
           CREATE_ISSUE="${{ github.event.inputs.create_issue || 'true' }}"
           
@@ -115,6 +115,6 @@ jobs:
           
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### Batch Processing Info" >> $GITHUB_STEP_SUMMARY
-          echo "- Batch Size: ${{ github.event.inputs.batch_size || '5' }} countries" >> $GITHUB_STEP_SUMMARY
+          echo "- Batch Size: ${{ github.event.inputs.batch_size || '2' }} countries" >> $GITHUB_STEP_SUMMARY
           echo "- Rate Limit: ${{ github.event.inputs.rate_limit || '2.0' }} req/sec" >> $GITHUB_STEP_SUMMARY
           echo "- Workflow Run: [\#${{ github.run_number }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})" >> $GITHUB_STEP_SUMMARY
