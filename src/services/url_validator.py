@@ -125,9 +125,9 @@ class UrlValidator:
             redirect_chain: List to accumulate redirect URLs
             
         Returns:
-            Event hook function that accepts an httpx Response
+            Async event hook function that accepts an httpx Response
         """
-        def hook(response: httpx.Response):
+        async def hook(response: httpx.Response):
             if response.is_redirect:
                 redirect_chain.append(str(response.url))
         return hook
