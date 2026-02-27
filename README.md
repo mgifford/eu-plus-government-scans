@@ -59,7 +59,8 @@ A URL validation scanner is available to validate government site accessibility 
 
 - `src/services/url_validator.py` - Async URL validation with redirect tracking
 - `src/jobs/url_validation_scanner.py` - Batch scanner for TOON files
-- `src/cli/validate_urls.py` - CLI interface for running scans
+- `src/cli/validate_urls.py` - CLI interface for running scans (legacy)
+- `src/cli/validate_urls_batch.py` - **New batched CLI for large-scale validation**
 - `src/cli/generate_validation_report.py` - Generate validation reports from database
 
 Key features:
@@ -67,12 +68,41 @@ Key features:
 - Records and follows redirects, updating URLs for future scans
 - Tracks failure counts: first failure is noted, second failure removes URL
 - No retry within same scan session
-- Supports quarterly validation runs
-- **GitHub Action for automated validation** - Trigger validations manually from the Actions tab
+- **Batched processing** - Handle 80k+ URLs without timeout
+- **GitHub Issue tracking** - Monitor progress across multiple runs
+- **Automated cron scheduling** - Run every 2 hours automatically
 
-### GitHub Action (Recommended)
+### Batched Validation (Recommended)
 
-The easiest way to run validations is through the GitHub Action:
+For large-scale validation (all countries), use the **batched system** which:
+- Processes countries in small batches (default: 5 at a time)
+- Runs automatically every 2 hours via GitHub Actions cron
+- Tracks progress in a GitHub Issue
+- Never times out (spreads work over multiple days)
+- Fully resumable if interrupted
+
+See **[docs/batched-validation.md](docs/batched-validation.md)** for complete documentation.
+
+Quick start:
+```bash
+# Process next batch of countries (creates GitHub issue)
+python3 -m src.cli.validate_urls_batch --batch-mode --create-issue
+
+# Process specific batch size
+python3 -m src.cli.validate_urls_batch --batch-mode --batch-size 10
+```
+
+**Workflows:**
+- `.github/workflows/validate-urls-batch.yml` - Runs every 2 hours (automatic)
+- `.github/workflows/reopen-validation-cycle.yml` - Starts new cycles quarterly
+
+### Single Country / Legacy Validation
+
+For validating individual countries or small sets:
+
+**GitHub Action (UI-based):**
+
+The easiest way to run single-country validations:
 
 1. Go to the **Actions** tab in this repository
 2. Select **"Validate Government URLs"**
@@ -81,7 +111,7 @@ The easiest way to run validations is through the GitHub Action:
 
 See [docs/github-action-validation.md](docs/github-action-validation.md) for full instructions.
 
-### CLI Usage
+**CLI Usage:**
 
 For local or manual validation:
 
@@ -92,7 +122,7 @@ pip install -r requirements.txt
 # Validate a specific country
 python3 -m src.cli.validate_urls --country ICELAND --rate-limit 2
 
-# Validate all countries
+# Validate all countries (may timeout - use batch mode instead)
 python3 -m src.cli.validate_urls --all --rate-limit 2
 
 # Generate a report from validation results
