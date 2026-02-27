@@ -136,3 +136,40 @@ See [docs/url-validation-scanner.md](docs/url-validation-scanner.md) for detaile
 - Continue implementation by work package (`WP02`, `WP03`, ...)
 - Use TOON seeds as source inputs for country scans
 - Refine statement detection confidence and multilingual glossary coverage
+
+## Data Caching and Storage
+
+### Validation Metadata Database
+
+The validation system uses an SQLite database (`data/metadata.db`) to track:
+- URL validation results (status codes, errors, redirect chains)
+- Failure counts across scans (remove URLs after 2 failures)
+- Batch processing state (cycle tracking, country progress)
+
+**Storage Location:**
+- **NOT committed to the repository** (excluded in `.gitignore`)
+- Stored as a **GitHub Actions artifact** named `validation-metadata`
+- Artifact retention: **90 days**
+- Automatically downloaded at the start of each workflow run
+- Automatically uploaded at the end of each workflow run
+
+This approach ensures:
+- State persists across workflow runs without bloating the repository
+- Failed URLs are consistently tracked and eventually removed
+- Batch validation cycles can resume after any interruption
+- No merge conflicts or version control issues with binary database files
+
+**Viewing Artifacts:**
+1. Go to a completed workflow run in the **Actions** tab
+2. Scroll to the **Artifacts** section at the bottom
+3. Download `validation-metadata` to inspect the database locally
+
+### Validated TOON Files
+
+Updated TOON files with validation results are also **not committed**:
+- Pattern: `data/toon-seeds/countries/*_validated.toon`
+- Excluded in `.gitignore`
+- Generated during validation runs
+- Contain validation metadata (status codes, redirects, etc.)
+
+Only the original seed TOON files (without `_validated` suffix) are version controlled.
