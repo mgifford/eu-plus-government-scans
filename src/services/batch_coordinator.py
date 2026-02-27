@@ -18,8 +18,9 @@ CYCLE_ID_FORMAT = '%Y%m%d-%H%M%S'
 class BatchConfig:
     """Configuration for batch processing."""
     batch_size: int = 2  # Number of countries per batch
-    # Max runtime matches GitHub Actions timeout (60 min) in validate-urls-batch.yml
-    max_runtime_minutes: int = 60  # Target ~1 hour completion time
+    # Max runtime aligns with GitHub Actions timeout in validate-urls-batch.yml
+    # CLI implementation uses 50 min to leave 10 min safety buffer
+    max_runtime_minutes: int = 60  # GitHub Actions workflow timeout limit
 
 
 class BatchCoordinator:
