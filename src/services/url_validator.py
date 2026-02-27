@@ -150,9 +150,20 @@ class UrlValidator:
         results: Dict[str, ValidationResult] = {}
         delay = 1.0 / rate_limit_per_second if rate_limit_per_second > 0 else 0
         
-        for url in urls:
+        total = len(urls)
+        for idx, url in enumerate(urls, 1):
+            print(f"  [{idx}/{total}] Validating: {url}")
             result = await self.validate_url(url)
             results[url] = result
+            
+            # Print result status
+            if result.is_valid:
+                status_msg = f"✓ {result.status_code}" if result.status_code else "✓"
+                if result.redirected_to:
+                    status_msg += f" → {result.redirected_to}"
+            else:
+                status_msg = f"✗ {result.error_message or 'Failed'}"
+            print(f"      {status_msg}")
             
             # Rate limiting delay
             if delay > 0:
