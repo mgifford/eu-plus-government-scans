@@ -238,3 +238,30 @@ def test_github_issue_tracking(coordinator, temp_db, monkeypatch):
     progress = coordinator.get_cycle_progress(cycle_id)
     
     assert progress["issue_number"] == 123
+
+
+def test_mark_batch_pending(coordinator, temp_db, monkeypatch):
+    """Test marking a country back to pending (e.g., after timeout)."""
+    def mock_get_countries(self):
+        return ["FRANCE", "GERMANY"]
+    
+    monkeypatch.setattr(BatchCoordinator, "_get_available_countries", mock_get_countries)
+    
+    cycle_id = coordinator.get_or_create_cycle()
+    
+    # Mark as processing
+    coordinator.mark_batch_processing(cycle_id, ["FRANCE", "GERMANY"])
+    
+    # Mark one back to pending (e.g., stopped early due to timeout)
+    coordinator.mark_batch_pending(cycle_id, "GERMANY")
+    
+    conn = sqlite3.connect(temp_db)
+    cursor = conn.execute(
+        "SELECT country_code, status FROM validation_batch_state WHERE cycle_id = ? ORDER BY country_code",
+        (cycle_id,)
+    )
+    results = {code: status for code, status in cursor.fetchall()}
+    conn.close()
+    
+    assert results["FRANCE"] == "processing"
+    assert results["GERMANY"] == "pending"
