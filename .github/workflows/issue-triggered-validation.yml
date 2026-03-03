@@ -8,6 +8,11 @@ on:
   # Allow manual trigger
   workflow_dispatch:
 
+# Only one issue-triggered run at a time; excess scheduled triggers are dropped.
+concurrency:
+  group: issue-triggered-validation
+  cancel-in-progress: false
+
 jobs:
   check-and-process-issues:
     runs-on: ubuntu-latest
