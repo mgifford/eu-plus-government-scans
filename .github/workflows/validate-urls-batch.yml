@@ -23,6 +23,17 @@ on:
         required: false
         default: 'true'
         type: boolean
+      reset_failed:
+        description: 'Re-queue previously failed countries so they are retried in this run'
+        required: false
+        default: 'false'
+        type: boolean
+
+# Prevent multiple batch runs from queuing up: only one run at a time.
+# A queued run will replace any pending one, keeping at most one waiting.
+concurrency:
+  group: batch-validation
+  cancel-in-progress: false
 
 jobs:
   validate-urls-batch:
@@ -63,6 +74,7 @@ jobs:
           BATCH_SIZE="${{ github.event.inputs.batch_size || '2' }}"
           RATE_LIMIT="${{ github.event.inputs.rate_limit || '2.0' }}"
           CREATE_ISSUE="${{ github.event.inputs.create_issue || 'true' }}"
+          RESET_FAILED="${{ github.event.inputs.reset_failed || 'false' }}"
           
           # Build command
           CMD="python3 -m src.cli.validate_urls_batch \
@@ -73,6 +85,11 @@ jobs:
           # Add create-issue flag if enabled
           if [ "$CREATE_ISSUE" = "true" ]; then
             CMD="$CMD --create-issue"
+          fi
+          
+          # Reset failed countries back to pending so they are retried
+          if [ "$RESET_FAILED" = "true" ]; then
+            CMD="$CMD --reset-failed"
           fi
           
           # Run validation
