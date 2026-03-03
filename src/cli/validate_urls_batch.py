@@ -43,6 +43,11 @@ def main():
         help="Create a GitHub issue to track progress",
         action="store_true",
     )
+    parser.add_argument(
+        "--reset-failed",
+        help="Reset previously failed countries back to pending so they are retried",
+        action="store_true",
+    )
     
     # Single country mode (original)
     parser.add_argument(
@@ -98,6 +103,7 @@ def main():
                 rate_limit=args.rate_limit,
                 github_issue=args.github_issue,
                 create_issue=args.create_issue,
+                reset_failed=args.reset_failed,
             )
         elif args.all:
             # Legacy mode: scan all countries
@@ -148,6 +154,7 @@ def run_batch_mode(
     rate_limit: float,
     github_issue: int | None,
     create_issue: bool,
+    reset_failed: bool = False,
 ):
     """Run validation in batch mode."""
     import time
@@ -175,6 +182,11 @@ def run_batch_mode(
     # Get or create cycle
     cycle_id = coordinator.get_or_create_cycle(github_issue)
     print(f"Cycle ID: {cycle_id}")
+    
+    # Reset failed countries back to pending if requested
+    if reset_failed:
+        print("♻️  Resetting previously failed countries to pending for retry...")
+        coordinator.reset_failed_countries(cycle_id)
     
     # Handle GitHub issue
     if create_issue and not github_issue:

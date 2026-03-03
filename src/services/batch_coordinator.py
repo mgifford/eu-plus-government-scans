@@ -185,6 +185,22 @@ class BatchCoordinator:
         finally:
             conn.close()
 
+    def reset_failed_countries(self, cycle_id: str):
+        """Reset all failed countries in a cycle back to pending so they can be retried."""
+        conn = sqlite3.connect(self.db_path)
+        try:
+            conn.execute(
+                """
+                UPDATE validation_batch_state
+                SET status = 'pending', started_at = NULL, completed_at = NULL, error_message = NULL
+                WHERE cycle_id = ? AND status = 'failed'
+                """,
+                (cycle_id,)
+            )
+            conn.commit()
+        finally:
+            conn.close()
+
     def mark_batch_pending(self, cycle_id: str, country_code: str):
         """Mark a country as pending (e.g., when stopping early due to timeout)."""
         conn = sqlite3.connect(self.db_path)
