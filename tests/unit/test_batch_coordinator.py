@@ -277,3 +277,38 @@ def test_batch_config_defaults():
     # Max runtime represents GitHub Actions workflow timeout limit
     # (CLI uses 50 min to leave 10 min buffer before this timeout)
     assert config.max_runtime_minutes == 60
+
+
+def test_reset_failed_countries(coordinator, temp_db, monkeypatch):
+    """Test resetting failed countries back to pending for retry."""
+    def mock_get_countries(self):
+        return ["FRANCE", "GERMANY", "SPAIN"]
+
+    monkeypatch.setattr(BatchCoordinator, "_get_available_countries", mock_get_countries)
+
+    cycle_id = coordinator.get_or_create_cycle()
+
+    # Mark some countries as failed and one as completed
+    coordinator.mark_batch_failed(cycle_id, "FRANCE", "Connection error")
+    coordinator.mark_batch_failed(cycle_id, "GERMANY", "Timeout")
+    coordinator.mark_batch_completed(cycle_id, ["SPAIN"])
+
+    # Reset failed countries back to pending
+    coordinator.reset_failed_countries(cycle_id)
+
+    conn = sqlite3.connect(temp_db)
+    cursor = conn.execute(
+        "SELECT country_code, status, error_message FROM validation_batch_state WHERE cycle_id = ? ORDER BY country_code",
+        (cycle_id,)
+    )
+    results = {code: (status, error) for code, status, error in cursor.fetchall()}
+    conn.close()
+
+    # Failed countries should now be pending with no error message
+    assert results["FRANCE"][0] == "pending"
+    assert results["FRANCE"][1] is None
+    assert results["GERMANY"][0] == "pending"
+    assert results["GERMANY"][1] is None
+    # Completed country should remain completed
+    assert results["SPAIN"][0] == "completed"
+
