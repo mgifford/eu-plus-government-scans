@@ -8,15 +8,18 @@ on:
   # Allow manual trigger
   workflow_dispatch:
 
-# Only one issue-triggered run at a time; excess scheduled triggers are dropped.
+# Share the concurrency group with the batch-validation workflow so that only
+# one validation workflow runs at a time.  Excess triggers queue behind the
+# running job rather than being cancelled, preventing simultaneous runs that
+# would compete for the shared validation-metadata artifact.
 concurrency:
-  group: issue-triggered-validation
+  group: validation-runs
   cancel-in-progress: false
 
 jobs:
   check-and-process-issues:
     runs-on: ubuntu-latest
-    timeout-minutes: 110
+    timeout-minutes: 60
     permissions:
       contents: write
       issues: write

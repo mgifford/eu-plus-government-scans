@@ -126,6 +126,18 @@ CREATE TABLE IF NOT EXISTS validation_batch_state (
 CREATE INDEX IF NOT EXISTS idx_batch_state_cycle ON validation_batch_state(cycle_id);
 CREATE INDEX IF NOT EXISTS idx_batch_state_status ON validation_batch_state(status);
 CREATE INDEX IF NOT EXISTS idx_batch_state_issue ON validation_batch_state(github_issue_number);
+
+CREATE TABLE IF NOT EXISTS issue_trigger_runs (
+    issue_number INTEGER NOT NULL,
+    trigger_prefix TEXT NOT NULL,
+    started_at TEXT NOT NULL,
+    completed_at TEXT,
+    status TEXT NOT NULL DEFAULT 'running',
+    PRIMARY KEY (issue_number, started_at)
+);
+
+CREATE INDEX IF NOT EXISTS idx_trigger_runs_issue ON issue_trigger_runs(issue_number);
+CREATE INDEX IF NOT EXISTS idx_trigger_runs_status ON issue_trigger_runs(status);
 """
 
 
