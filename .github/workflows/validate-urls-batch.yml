@@ -29,10 +29,12 @@ on:
         default: 'false'
         type: boolean
 
-# Prevent multiple batch runs from queuing up: only one run at a time.
+# Share the concurrency group with the issue-triggered-validation workflow so
+# that only one validation workflow runs at a time, preventing simultaneous
+# runs from competing for the shared validation-metadata artifact.
 # A queued run will replace any pending one, keeping at most one waiting.
 concurrency:
-  group: batch-validation
+  group: validation-runs
   cancel-in-progress: false
 
 jobs:
