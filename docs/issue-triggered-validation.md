@@ -9,11 +9,26 @@ The repository includes an automated system that monitors GitHub issues and trig
 ## How It Works
 
 1. **Issue Detection**: Every hour, a GitHub Actions workflow checks for open issues with specific title prefixes
-2. **Scan Execution**: When a trigger issue is found, the system runs a full URL validation scan across all countries
-3. **Report Generation**: After validation completes, a detailed report is posted as a comment to the issue
-4. **Issue Management**: 
-   - One-time scans (`SCAN:` prefix) close the issue automatically
+2. **Schedule Check**: Before running, the system checks whether the issue is due based on its prefix schedule and when it last ran. Issues that are not yet due are skipped without error.
+3. **Scan Execution**: When a trigger issue is found and is due, the system runs a URL validation scan across all countries
+4. **Time Budget**: Each run has a 50-minute budget. When approaching the limit, scanning stops early and a partial report is posted. The next hourly run will continue where it left off.
+5. **Report Generation**: After validation completes, a detailed report is posted as a comment to the issue
+6. **Issue Management**: 
+   - One-time scans (`SCAN:` prefix) close the issue automatically after a full run
    - Periodic scans keep the issue open for future runs
+
+## Concurrency
+
+The issue-triggered workflow and the batch-validation workflow share a single
+`validation-runs` concurrency group in GitHub Actions. This means:
+
+- **Only one validation workflow runs at a time** — they queue rather than
+  run simultaneously.
+- If a batch-validation run is in progress when the hourly issue check fires,
+  the issue check waits until the batch run finishes (or the batch run queues
+  behind the issue check, depending on which started first).
+- This prevents the two workflows from competing for the shared
+  `validation-metadata` artifact.
 
 ## Supported Trigger Prefixes
 
@@ -27,20 +42,25 @@ The repository includes an automated system that monitors GitHub issues and trig
 
 ### Periodic Scans
 
-These prefixes trigger validation on a schedule but keep the issue open:
+These prefixes trigger validation on a schedule and keep the issue open:
 
-- **`QUARTERLY: <description>`** - Intended for quarterly validation cycles
-- **`MONTHLY: <description>`** - Intended for monthly validation cycles
-- **`WEEKLY: <description>`** - Intended for weekly validation cycles
-- **`MONDAYS: <description>`** - Intended for Monday validation runs
-- **`TUESDAYS: <description>`** - Intended for Tuesday validation runs
-- **`WEDNESDAYS: <description>`** - Intended for Wednesday validation runs
-- **`THURSDAYS: <description>`** - Intended for Thursday validation runs
-- **`FRIDAYS: <description>`** - Intended for Friday validation runs
-- **`SATURDAYS: <description>`** - Intended for Saturday validation runs
-- **`SUNDAYS: <description>`** - Intended for Sunday validation runs
+| Prefix | Cooldown | Day restriction |
+|--------|----------|-----------------|
+| `QUARTERLY:` | 85 days | Any day |
+| `MONTHLY:` | 28 days | Any day |
+| `WEEKLY:` | 6 days | Any day |
+| `MONDAYS:` | 23 hours | Mondays only |
+| `TUESDAYS:` | 23 hours | Tuesdays only |
+| `WEDNESDAYS:` | 23 hours | Wednesdays only |
+| `THURSDAYS:` | 23 hours | Thursdays only |
+| `FRIDAYS:` | 23 hours | Fridays only |
+| `SATURDAYS:` | 23 hours | Saturdays only |
+| `SUNDAYS:` | 23 hours | Sundays only |
 
-**Note:** The workflow checks for trigger issues every hour. The day/frequency names are semantic hints for organization, but all periodic scans are checked on the same schedule.
+The workflow checks issues every hour. When a trigger issue is found, the
+system compares the current time against the issue's last completed run to
+decide whether to proceed or skip. Day-of-week prefixes (e.g. `MONDAYS:`) will
+only fire on the matching day of the week.
 
 ## Creating a Trigger Issue
 
@@ -136,7 +156,10 @@ To trigger another one-time scan:
 - `contents: write` - Download/upload artifacts
 - `issues: write` - Post comments and close issues
 
-**Timeout:** 110 minutes (same as batch validation)
+**Timeout:** 60 minutes (workflow). The CLI uses a 50-minute budget, leaving a
+10-minute safety buffer. Each issue scan gets a share of that budget; if time
+runs low the scan stops early and the remaining countries are processed in the
+next hourly run.
 
 **Artifacts:**
 - Validation metadata database is automatically saved
