@@ -44,13 +44,72 @@ jobs:
         with:
           name: validation-metadata
           path: data/
-      
+
+      - name: Check for consecutive failures (circuit breaker)
+        id: circuit-breaker
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          THRESHOLD=3
+
+          # Fetch the last 10 completed run conclusions for this workflow,
+          # most recent first.  The current run is still in_progress and will
+          # not appear in this list.
+          CONCLUSIONS=$(gh run list \
+            --workflow issue-triggered-validation.yml \
+            --status completed \
+            --limit 10 \
+            --json conclusion \
+            --jq '.[].conclusion' 2>/dev/null || true)
+
+          # Count consecutive non-success conclusions from the most recent run.
+          STREAK=0
+          while IFS= read -r line; do
+            case "$line" in
+              cancelled|failure|timed_out)
+                STREAK=$((STREAK + 1))
+                ;;
+              *)
+                break
+                ;;
+            esac
+          done <<< "$CONCLUSIONS"
+
+          echo "streak=$STREAK" >> "$GITHUB_OUTPUT"
+          echo "threshold=$THRESHOLD" >> "$GITHUB_OUTPUT"
+
+          if [ "$STREAK" -ge "$THRESHOLD" ]; then
+            echo "triggered=true" >> "$GITHUB_OUTPUT"
+            echo "::warning::Circuit breaker triggered: $STREAK consecutive failures/cancellations detected."
+          else
+            echo "triggered=false" >> "$GITHUB_OUTPUT"
+            echo "Failure streak: $STREAK / $THRESHOLD — proceeding normally."
+          fi
+
       - name: Check for trigger issues and process
+        if: steps.circuit-breaker.outputs.triggered != 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           python3 -m src.cli.issue_triggered_validation
-      
+
+      - name: Report circuit breaker status
+        if: steps.circuit-breaker.outputs.triggered == 'true'
+        run: |
+          echo "## ⚠️ Circuit Breaker Active" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "Validation was **skipped** because the last ${{ steps.circuit-breaker.outputs.streak }} workflow" >> "$GITHUB_STEP_SUMMARY"
+          echo "runs all ended in failure or cancellation (threshold: ${{ steps.circuit-breaker.outputs.threshold }})." >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "**What to do:**" >> "$GITHUB_STEP_SUMMARY"
+          echo "1. Review recent failures in the [Actions tab](${{ github.server_url }}/${{ github.repository }}/actions/workflows/issue-triggered-validation.yml)" >> "$GITHUB_STEP_SUMMARY"
+          echo "2. Fix the underlying problem" >> "$GITHUB_STEP_SUMMARY"
+          echo "3. Manually trigger this workflow once the issue is resolved to reset the circuit breaker" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "The circuit breaker resets automatically after one successful run." >> "$GITHUB_STEP_SUMMARY"
+          echo "::error::Circuit breaker active — ${{ steps.circuit-breaker.outputs.streak }} consecutive failures. Skipping validation until a successful run resets the streak."
+          exit 1
+
       - name: Upload metadata
         if: always()
         uses: actions/upload-artifact@v4
