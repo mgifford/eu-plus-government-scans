@@ -52,6 +52,17 @@ class UrlValidationResult:
 
 
 @dataclass(slots=True)
+class UrlTechResult:
+    """Result of a technology detection scan for a single URL."""
+    url: str
+    country_code: str
+    scan_id: str
+    technologies: str  # JSON-encoded string: {tech_name: {versions: [...], categories: [...]}}
+    error_message: str | None = None
+    scanned_at: str | None = None
+
+
+@dataclass(slots=True)
 class ValidationBatchState:
     """Tracks progress of batch validation cycles."""
     cycle_id: str
@@ -111,6 +122,20 @@ CREATE TABLE IF NOT EXISTS url_validation_results (
 CREATE INDEX IF NOT EXISTS idx_url_validation_country ON url_validation_results(country_code);
 CREATE INDEX IF NOT EXISTS idx_url_validation_scan ON url_validation_results(scan_id);
 CREATE INDEX IF NOT EXISTS idx_url_validation_failures ON url_validation_results(failure_count);
+
+-- Migration: Added url_tech_results table for technology detection scan results
+CREATE TABLE IF NOT EXISTS url_tech_results (
+    url TEXT NOT NULL,
+    country_code TEXT NOT NULL,
+    scan_id TEXT NOT NULL,
+    technologies TEXT NOT NULL DEFAULT '{}',
+    error_message TEXT,
+    scanned_at TEXT,
+    PRIMARY KEY (url, scan_id)
+);
+
+CREATE INDEX IF NOT EXISTS idx_url_tech_country ON url_tech_results(country_code);
+CREATE INDEX IF NOT EXISTS idx_url_tech_scan ON url_tech_results(scan_id);
 
 CREATE TABLE IF NOT EXISTS validation_batch_state (
     cycle_id TEXT NOT NULL,
