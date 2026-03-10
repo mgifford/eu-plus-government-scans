@@ -1,0 +1,174 @@
+"""Technology detection service using Wappalyzer for government websites."""
+
+from __future__ import annotations
+
+import asyncio
+import warnings
+from dataclasses import dataclass
+from datetime import datetime, timezone
+from typing import Dict, List
+
+import httpx
+from Wappalyzer import WebPage
+
+
+@dataclass(slots=True)
+class TechDetectionResult:
+    """Result of a technology detection check for a single URL."""
+    url: str
+    technologies: Dict[str, Dict]  # {tech_name: {versions: [...], categories: [...]}}
+    error_message: str | None = None
+    scanned_at: str | None = None
+
+
+class TechDetector:
+    """
+    Service for detecting technologies used by government websites.
+
+    Uses python-Wappalyzer to fingerprint technologies from HTTP response
+    headers and HTML content.  Page content is fetched with the project's
+    standard httpx client and the resulting HTML/headers are passed directly
+    to Wappalyzer, avoiding a separate aiohttp dependency.
+    """
+
+    def __init__(
+        self,
+        timeout_seconds: int = 20,
+        max_redirects: int = 10,
+        user_agent: str = "EU-Government-Accessibility-Scanner/1.0",
+    ):
+        self.timeout_seconds = timeout_seconds
+        self.max_redirects = max_redirects
+        self.user_agent = user_agent
+        self._wappalyzer = None  # lazily initialised
+
+    def _get_wappalyzer(self):
+        """Return a cached Wappalyzer instance (lazy init to avoid import cost)."""
+        if self._wappalyzer is None:
+            from Wappalyzer import Wappalyzer
+
+            with warnings.catch_warnings():
+                warnings.simplefilter("ignore")
+                self._wappalyzer = Wappalyzer.latest()
+        return self._wappalyzer
+
+    async def detect_url(self, url: str) -> TechDetectionResult:
+        """
+        Detect technologies used by a single URL.
+
+        Fetches the page with httpx and passes the HTML and response headers
+        to Wappalyzer for fingerprinting.
+
+        Returns:
+            TechDetectionResult with detected technologies or an error message.
+        """
+        scanned_at = datetime.now(timezone.utc).isoformat()
+
+        try:
+            async with httpx.AsyncClient(
+                follow_redirects=True,
+                max_redirects=self.max_redirects,
+                timeout=self.timeout_seconds,
+            ) as client:
+                response = await client.get(
+                    url,
+                    headers={"User-Agent": self.user_agent},
+                )
+
+                html = response.text
+                # httpx headers are case-insensitive; convert to plain dict for Wappalyzer
+                headers = dict(response.headers)
+
+        except httpx.TooManyRedirects as exc:
+            return TechDetectionResult(
+                url=url,
+                technologies={},
+                error_message=f"Too many redirects: {exc}",
+                scanned_at=scanned_at,
+            )
+        except httpx.TimeoutException as exc:
+            return TechDetectionResult(
+                url=url,
+                technologies={},
+                error_message=f"Timeout: {exc}",
+                scanned_at=scanned_at,
+            )
+        except httpx.ConnectError as exc:
+            return TechDetectionResult(
+                url=url,
+                technologies={},
+                error_message=f"Connection error: {exc}",
+                scanned_at=scanned_at,
+            )
+        except httpx.HTTPError as exc:
+            return TechDetectionResult(
+                url=url,
+                technologies={},
+                error_message=f"HTTP error: {exc}",
+                scanned_at=scanned_at,
+            )
+        except Exception as exc:  # noqa: BLE001
+            return TechDetectionResult(
+                url=url,
+                technologies={},
+                error_message=f"Unexpected error: {exc}",
+                scanned_at=scanned_at,
+            )
+
+        try:
+            webpage = WebPage(str(response.url), html, headers)
+            wappalyzer = self._get_wappalyzer()
+            with warnings.catch_warnings():
+                warnings.simplefilter("ignore")
+                technologies = wappalyzer.analyze_with_versions_and_categories(webpage)
+        except Exception as exc:  # noqa: BLE001
+            return TechDetectionResult(
+                url=url,
+                technologies={},
+                error_message=f"Analysis error: {exc}",
+                scanned_at=scanned_at,
+            )
+
+        return TechDetectionResult(
+            url=url,
+            technologies=technologies,
+            scanned_at=scanned_at,
+        )
+
+    async def detect_urls_batch(
+        self,
+        urls: List[str],
+        rate_limit_per_second: float = 2.0,
+    ) -> Dict[str, TechDetectionResult]:
+        """
+        Detect technologies for multiple URLs with rate limiting.
+
+        Args:
+            urls: List of URLs to analyse.
+            rate_limit_per_second: Maximum requests per second.
+
+        Returns:
+            Dictionary mapping URL to TechDetectionResult.
+        """
+        results: Dict[str, TechDetectionResult] = {}
+        delay = 1.0 / rate_limit_per_second if rate_limit_per_second > 0 else 0
+        # Cap the delay at 60 seconds to prevent accidental freezes from very
+        # small (but positive) rate_limit_per_second values.
+        delay = min(delay, 60.0)
+
+        total = len(urls)
+        for idx, url in enumerate(urls, 1):
+            print(f"  [{idx}/{total}] Scanning: {url}")
+            result = await self.detect_url(url)
+            results[url] = result
+
+            if result.error_message:
+                print(f"      ✗ {result.error_message}")
+            else:
+                tech_names = ", ".join(result.technologies.keys()) or "(none detected)"
+                print(f"      ✓ {tech_names}")
+
+            if delay > 0:
+                await asyncio.sleep(delay)
+
+        return results
