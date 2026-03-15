@@ -63,6 +63,22 @@ class UrlTechResult:
 
 
 @dataclass(slots=True)
+class UrlSocialMediaResult:
+    """Result of a social media link scan for a single URL."""
+    url: str
+    country_code: str
+    scan_id: str
+    is_reachable: int = 1  # 1 = reachable, 0 = not reachable
+    twitter_links: str = "[]"   # JSON list of twitter.com hrefs
+    x_links: str = "[]"         # JSON list of x.com hrefs
+    bluesky_links: str = "[]"   # JSON list of bsky.app / bsky.social hrefs
+    mastodon_links: str = "[]"  # JSON list of detected Mastodon hrefs
+    social_tier: str = "no_social"  # "unreachable"|"no_social"|"twitter_only"|"modern_only"|"mixed"
+    error_message: str | None = None
+    scanned_at: str | None = None
+
+
+@dataclass(slots=True)
 class ValidationBatchState:
     """Tracks progress of batch validation cycles."""
     cycle_id: str
@@ -136,6 +152,26 @@ CREATE TABLE IF NOT EXISTS url_tech_results (
 
 CREATE INDEX IF NOT EXISTS idx_url_tech_country ON url_tech_results(country_code);
 CREATE INDEX IF NOT EXISTS idx_url_tech_scan ON url_tech_results(scan_id);
+
+-- Migration: Added url_social_media_results table for social media link scan results
+CREATE TABLE IF NOT EXISTS url_social_media_results (
+    url TEXT NOT NULL,
+    country_code TEXT NOT NULL,
+    scan_id TEXT NOT NULL,
+    is_reachable INTEGER NOT NULL DEFAULT 1,
+    twitter_links TEXT NOT NULL DEFAULT '[]',
+    x_links TEXT NOT NULL DEFAULT '[]',
+    bluesky_links TEXT NOT NULL DEFAULT '[]',
+    mastodon_links TEXT NOT NULL DEFAULT '[]',
+    social_tier TEXT NOT NULL DEFAULT 'no_social',
+    error_message TEXT,
+    scanned_at TEXT,
+    PRIMARY KEY (url, scan_id)
+);
+
+CREATE INDEX IF NOT EXISTS idx_social_media_country ON url_social_media_results(country_code);
+CREATE INDEX IF NOT EXISTS idx_social_media_scan ON url_social_media_results(scan_id);
+CREATE INDEX IF NOT EXISTS idx_social_media_tier ON url_social_media_results(social_tier);
 
 CREATE TABLE IF NOT EXISTS validation_batch_state (
     cycle_id TEXT NOT NULL,
