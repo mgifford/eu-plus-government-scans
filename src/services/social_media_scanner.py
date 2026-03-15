@@ -1,0 +1,342 @@
+"""Social media link scanner for government websites.
+
+Fetches a page and detects links to Twitter/X, Bluesky, and Mastodon.
+"""
+
+from __future__ import annotations
+
+import asyncio
+import re
+from dataclasses import dataclass, field
+from datetime import datetime, timezone
+from typing import Dict, List
+from urllib.parse import urlparse
+
+import httpx
+from bs4 import BeautifulSoup
+
+# ---------------------------------------------------------------------------
+# Known Mastodon / Fediverse instance hostnames.
+# This list covers many large instances; detection also covers rel="me" links
+# and the /@user pattern on any domain.
+# ---------------------------------------------------------------------------
+KNOWN_MASTODON_HOSTS: frozenset[str] = frozenset(
+    {
+        "mastodon.social",
+        "mastodon.online",
+        "fosstodon.org",
+        "social.coop",
+        "hachyderm.io",
+        "mstdn.social",
+        "infosec.exchange",
+        "chaos.social",
+        "mastodon.world",
+        "aus.social",
+        "social.saarland",
+        "social.vivaldi.net",
+        "mastodon.green",
+        "eupolicy.social",
+        "social.bund.de",
+        "social.numerique.gouv.fr",
+        "social.techno.app",
+        "mastodon.nz",
+        "mastodon.ie",
+        "mastodon.scot",
+        "mastodon.me.uk",
+        "mastodon.com.br",
+        "mastodon.lol",
+        "mastodon.uno",
+        "mastodon.cloud",
+        "social.linux.pizza",
+        "toot.cafe",
+        "masto.ai",
+        "tabletop.social",
+        "sigmoid.social",
+        "urbanists.social",
+        "disabled.social",
+        "newsie.social",
+        "kolektiva.social",
+        "tech.lgbt",
+        "scholar.social",
+        "scicomm.xyz",
+        "hcommons.social",
+        "pkm.social",
+        "home.social",
+        "indieweb.social",
+    }
+)
+
+# Hostnames that belong to Twitter/X
+TWITTER_HOSTS: frozenset[str] = frozenset({"twitter.com", "www.twitter.com"})
+X_HOSTS: frozenset[str] = frozenset({"x.com", "www.x.com"})
+
+# Hostnames that belong to Bluesky
+BLUESKY_HOSTS: frozenset[str] = frozenset(
+    {"bsky.app", "www.bsky.app", "bsky.social", "www.bsky.social"}
+)
+
+# Regex for detecting @user@domain patterns in page text (Mastodon handles)
+_MASTODON_HANDLE_RE = re.compile(r"@[\w.-]+@([\w.-]+\.\w{2,})")
+
+
+@dataclass(slots=True)
+class SocialMediaScanResult:
+    """Result of a social media link scan for a single URL."""
+
+    url: str
+    is_reachable: bool
+    twitter_links: List[str] = field(default_factory=list)
+    x_links: List[str] = field(default_factory=list)
+    bluesky_links: List[str] = field(default_factory=list)
+    mastodon_links: List[str] = field(default_factory=list)
+    # Tier classification:
+    #   "unreachable"   – page could not be fetched
+    #   "no_social"     – reachable, no social media links found
+    #   "twitter_only"  – only Twitter/X links
+    #   "modern_only"   – only Bluesky / Mastodon links
+    #   "mixed"         – Twitter/X plus at least one modern platform
+    social_tier: str = "no_social"
+    error_message: str | None = None
+    scanned_at: str | None = None
+
+
+def _classify_tier(result: SocialMediaScanResult) -> str:
+    """Return the social media tier string for a scan result."""
+    if not result.is_reachable:
+        return "unreachable"
+
+    has_legacy = bool(result.twitter_links or result.x_links)
+    has_modern = bool(result.bluesky_links or result.mastodon_links)
+
+    if has_legacy and has_modern:
+        return "mixed"
+    if has_legacy:
+        return "twitter_only"
+    if has_modern:
+        return "modern_only"
+    return "no_social"
+
+
+def _extract_social_links(html: str, base_url: str) -> dict:
+    """
+    Parse HTML and extract links to Twitter/X, Bluesky and Mastodon.
+
+    Returns a dict with keys: twitter, x, bluesky, mastodon — each a list of
+    href strings found in <a> elements.
+    """
+    soup = BeautifulSoup(html, "html.parser")
+
+    twitter: list[str] = []
+    x_links: list[str] = []
+    bluesky: list[str] = []
+    mastodon: list[str] = []
+
+    for tag in soup.find_all("a", href=True):
+        href = tag["href"].strip()
+        try:
+            parsed = urlparse(href)
+        except ValueError:
+            continue
+
+        netloc = parsed.netloc.lower()
+
+        if netloc in TWITTER_HOSTS:
+            twitter.append(href)
+        elif netloc in X_HOSTS:
+            x_links.append(href)
+        elif netloc in BLUESKY_HOSTS:
+            bluesky.append(href)
+        elif netloc in KNOWN_MASTODON_HOSTS:
+            mastodon.append(href)
+        elif netloc and _looks_like_mastodon_profile(href, parsed):
+            mastodon.append(href)
+
+    # Also detect @user@domain handles in plain text
+    for match in _MASTODON_HANDLE_RE.finditer(soup.get_text()):
+        instance = match.group(1).lower()
+        if instance not in TWITTER_HOSTS and instance not in BLUESKY_HOSTS:
+            mastodon.append(match.group(0))
+
+    return {
+        "twitter": _deduplicate(twitter),
+        "x": _deduplicate(x_links),
+        "bluesky": _deduplicate(bluesky),
+        "mastodon": _deduplicate(mastodon),
+    }
+
+
+def _looks_like_mastodon_profile(href: str, parsed) -> bool:
+    """
+    Heuristic: a link looks like a Mastodon profile URL when its path starts
+    with ``/@`` (e.g. ``https://example.social/@alice``).
+    """
+    return bool(parsed.scheme in {"http", "https"} and parsed.path.startswith("/@"))
+
+
+def _deduplicate(items: list[str]) -> list[str]:
+    """Return items with duplicates removed, preserving order."""
+    seen: set[str] = set()
+    result: list[str] = []
+    for item in items:
+        if item not in seen:
+            seen.add(item)
+            result.append(item)
+    return result
+
+
+class SocialMediaScanner:
+    """
+    Service for scanning government website pages for social media links.
+
+    Fetches each URL with httpx, parses the HTML with BeautifulSoup, and
+    identifies links to Twitter/X, Bluesky, and Mastodon.  Also records
+    whether the page was reachable at all, which helps track defunct domains.
+    """
+
+    def __init__(
+        self,
+        timeout_seconds: int = 20,
+        max_redirects: int = 10,
+        user_agent: str = "EU-Government-Accessibility-Scanner/1.0",
+    ):
+        self.timeout_seconds = timeout_seconds
+        self.max_redirects = max_redirects
+        self.user_agent = user_agent
+
+    async def scan_url(self, url: str) -> SocialMediaScanResult:
+        """
+        Scan a single URL for social media links.
+
+        Returns:
+            SocialMediaScanResult with detected links and tier classification.
+        """
+        scanned_at = datetime.now(timezone.utc).isoformat()
+
+        try:
+            async with httpx.AsyncClient(
+                follow_redirects=True,
+                max_redirects=self.max_redirects,
+                timeout=self.timeout_seconds,
+            ) as client:
+                response = await client.get(
+                    url,
+                    headers={"User-Agent": self.user_agent},
+                )
+                html = response.text
+
+        except httpx.TooManyRedirects as exc:
+            result = SocialMediaScanResult(
+                url=url,
+                is_reachable=False,
+                error_message=f"Too many redirects: {exc}",
+                scanned_at=scanned_at,
+            )
+            result.social_tier = _classify_tier(result)
+            return result
+        except httpx.TimeoutException as exc:
+            result = SocialMediaScanResult(
+                url=url,
+                is_reachable=False,
+                error_message=f"Timeout: {exc}",
+                scanned_at=scanned_at,
+            )
+            result.social_tier = _classify_tier(result)
+            return result
+        except httpx.ConnectError as exc:
+            result = SocialMediaScanResult(
+                url=url,
+                is_reachable=False,
+                error_message=f"Connection error: {exc}",
+                scanned_at=scanned_at,
+            )
+            result.social_tier = _classify_tier(result)
+            return result
+        except httpx.HTTPError as exc:
+            result = SocialMediaScanResult(
+                url=url,
+                is_reachable=False,
+                error_message=f"HTTP error: {exc}",
+                scanned_at=scanned_at,
+            )
+            result.social_tier = _classify_tier(result)
+            return result
+        except Exception as exc:  # noqa: BLE001
+            result = SocialMediaScanResult(
+                url=url,
+                is_reachable=False,
+                error_message=f"Unexpected error: {exc}",
+                scanned_at=scanned_at,
+            )
+            result.social_tier = _classify_tier(result)
+            return result
+
+        try:
+            links = _extract_social_links(html, url)
+        except Exception as exc:  # noqa: BLE001
+            result = SocialMediaScanResult(
+                url=url,
+                is_reachable=True,
+                error_message=f"Parse error: {exc}",
+                scanned_at=scanned_at,
+            )
+            result.social_tier = _classify_tier(result)
+            return result
+
+        result = SocialMediaScanResult(
+            url=url,
+            is_reachable=True,
+            twitter_links=links["twitter"],
+            x_links=links["x"],
+            bluesky_links=links["bluesky"],
+            mastodon_links=links["mastodon"],
+            scanned_at=scanned_at,
+        )
+        result.social_tier = _classify_tier(result)
+        return result
+
+    async def scan_urls_batch(
+        self,
+        urls: List[str],
+        rate_limit_per_second: float = 2.0,
+    ) -> Dict[str, SocialMediaScanResult]:
+        """
+        Scan multiple URLs for social media links with rate limiting.
+
+        Args:
+            urls: List of URLs to scan.
+            rate_limit_per_second: Maximum requests per second.
+
+        Returns:
+            Dictionary mapping URL to SocialMediaScanResult.
+        """
+        results: Dict[str, SocialMediaScanResult] = {}
+        # rate_limit_per_second <= 0 disables inter-request delay entirely;
+        # this is intentional for unit tests and should not be used in production.
+        delay = 1.0 / rate_limit_per_second if rate_limit_per_second > 0 else 0
+        delay = min(delay, 60.0)
+
+        total = len(urls)
+        for idx, url in enumerate(urls, 1):
+            print(f"  [{idx}/{total}] Scanning: {url}")
+            result = await self.scan_url(url)
+            results[url] = result
+
+            if result.error_message:
+                print(f"      ✗ {result.error_message}")
+            else:
+                platforms = []
+                if result.twitter_links:
+                    platforms.append(f"Twitter×{len(result.twitter_links)}")
+                if result.x_links:
+                    platforms.append(f"X×{len(result.x_links)}")
+                if result.bluesky_links:
+                    platforms.append(f"Bluesky×{len(result.bluesky_links)}")
+                if result.mastodon_links:
+                    platforms.append(f"Mastodon×{len(result.mastodon_links)}")
+                summary = ", ".join(platforms) or "(no social media links)"
+                print(f"      ✓ [{result.social_tier}] {summary}")
+
+            if delay > 0:
+                await asyncio.sleep(delay)
+
+        return results
