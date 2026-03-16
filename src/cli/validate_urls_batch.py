@@ -74,6 +74,16 @@ def main():
         help="Scan all countries (legacy mode, use --batch-mode instead)",
         action="store_true",
     )
+    parser.add_argument(
+        "--skip-recently-validated-days",
+        help=(
+            "Skip URLs already confirmed reachable by any scanner within this "
+            "many days (default: 30). Set to 0 to always re-validate every URL."
+        ),
+        type=int,
+        default=30,
+        dest="skip_recently_validated_days",
+    )
     
     args = parser.parse_args()
     
@@ -104,6 +114,7 @@ def main():
                 github_issue=args.github_issue,
                 create_issue=args.create_issue,
                 reset_failed=args.reset_failed,
+                skip_recently_validated_days=args.skip_recently_validated_days,
             )
         elif args.all:
             # Legacy mode: scan all countries
@@ -114,6 +125,7 @@ def main():
                 scanner.scan_all_countries(
                     args.toon_dir,
                     rate_limit_per_second=args.rate_limit,
+                    skip_recently_validated_days=args.skip_recently_validated_days,
                 )
             )
             print_summary(stats)
@@ -132,6 +144,7 @@ def main():
                     country_code,
                     toon_file,
                     rate_limit_per_second=args.rate_limit,
+                    skip_recently_validated_days=args.skip_recently_validated_days,
                 )
             )
             print_country_stats(stats)
@@ -155,6 +168,7 @@ def run_batch_mode(
     github_issue: int | None,
     create_issue: bool,
     reset_failed: bool = False,
+    skip_recently_validated_days: int = 30,
 ):
     """Run validation in batch mode."""
     import time
@@ -279,6 +293,7 @@ def run_batch_mode(
                     country_code,
                     toon_file,
                     rate_limit_per_second=rate_limit,
+                    skip_recently_validated_days=skip_recently_validated_days,
                 )
             )
             
@@ -357,7 +372,10 @@ def print_country_stats(stats: dict):
     print(f"Scan ID: {stats['scan_id']}")
     print(f"Total URLs: {stats['total_urls']}")
     print(f"Validated: {stats['urls_validated']}")
-    print(f"Skipped: {stats['urls_skipped']}")
+    print(f"Skipped (failed 2×): {stats['urls_skipped']}")
+    recently = stats.get("urls_skipped_recently_confirmed", 0)
+    if recently:
+        print(f"Skipped (recently confirmed): {recently}")
     print(f"Valid: {stats['valid_urls']}")
     print(f"Invalid: {stats['invalid_urls']}")
     print(f"Redirected: {stats['redirected_urls']}")
