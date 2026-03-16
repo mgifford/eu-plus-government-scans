@@ -1,9 +1,12 @@
 name: URL Validation - Batched
 
 on:
-  # Run every 2 hours
+  # Run every 6 hours — URL validation is a low-priority background task.
+  # Higher-priority scans (social media, technology) run more frequently or on
+  # demand and already confirm whether pages are reachable, so URL-only
+  # validation does not need to run as often.
   schedule:
-    - cron: '0 */2 * * *'
+    - cron: '0 */6 * * *'
   
   # Allow manual trigger
   workflow_dispatch:
@@ -28,6 +31,11 @@ on:
         required: false
         default: 'false'
         type: boolean
+      skip_recently_validated_days:
+        description: 'Skip URLs already confirmed reachable by any scanner within this many days (0 = always re-validate)'
+        required: false
+        default: '30'
+        type: string
 
 # Share the concurrency group with the issue-triggered-validation workflow so
 # that only one validation workflow runs at a time, preventing simultaneous
@@ -77,12 +85,14 @@ jobs:
           RATE_LIMIT="${{ github.event.inputs.rate_limit || '2.0' }}"
           CREATE_ISSUE="${{ github.event.inputs.create_issue || 'true' }}"
           RESET_FAILED="${{ github.event.inputs.reset_failed || 'false' }}"
+          SKIP_DAYS="${{ github.event.inputs.skip_recently_validated_days || '30' }}"
           
           # Build command
           CMD="python3 -m src.cli.validate_urls_batch \
             --batch-mode \
             --batch-size $BATCH_SIZE \
-            --rate-limit $RATE_LIMIT"
+            --rate-limit $RATE_LIMIT \
+            --skip-recently-validated-days $SKIP_DAYS"
           
           # Add create-issue flag if enabled
           if [ "$CREATE_ISSUE" = "true" ]; then
