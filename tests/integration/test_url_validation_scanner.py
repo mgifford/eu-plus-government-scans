@@ -197,3 +197,151 @@ def test_scanner_initializes_database(temp_settings):
     conn.close()
     
     assert table_exists
+
+
+def test_get_recently_confirmed_urls_empty_db(temp_settings):
+    """Return empty set when no recent scan data exists."""
+    scanner = UrlValidationScanner(temp_settings)
+    confirmed = scanner._get_recently_confirmed_urls("TESTLAND", within_days=30)
+    assert confirmed == set()
+
+
+def test_get_recently_confirmed_urls_from_social_scan(temp_settings):
+    """URLs confirmed reachable by social media scanner should be returned."""
+    from datetime import datetime, timezone
+
+    scanner = UrlValidationScanner(temp_settings)
+    now = datetime.now(timezone.utc).isoformat()
+
+    conn = sqlite3.connect(scanner.db_path)
+    try:
+        # Insert a recent reachable social-media result
+        conn.execute(
+            """
+            INSERT INTO url_social_media_results
+            (url, country_code, scan_id, is_reachable, social_tier,
+             twitter_links, x_links, bluesky_links, mastodon_links, scanned_at)
+            VALUES (?, ?, ?, ?, ?, '[]', '[]', '[]', '[]', ?)
+            """,
+            ("https://example.is/page1", "TESTLAND", "social-001", 1, "no_social", now),
+        )
+        # Insert a recent *unreachable* social-media result — should NOT be returned
+        conn.execute(
+            """
+            INSERT INTO url_social_media_results
+            (url, country_code, scan_id, is_reachable, social_tier,
+             twitter_links, x_links, bluesky_links, mastodon_links, scanned_at)
+            VALUES (?, ?, ?, ?, ?, '[]', '[]', '[]', '[]', ?)
+            """,
+            ("https://example.is/page2", "TESTLAND", "social-001", 0, "unreachable", now),
+        )
+        conn.commit()
+    finally:
+        conn.close()
+
+    confirmed = scanner._get_recently_confirmed_urls("TESTLAND", within_days=30)
+    assert "https://example.is/page1" in confirmed
+    assert "https://example.is/page2" not in confirmed
+
+
+def test_get_recently_confirmed_urls_from_validation_results(temp_settings):
+    """URLs previously validated as valid should also be returned."""
+    from datetime import datetime, timezone
+
+    scanner = UrlValidationScanner(temp_settings)
+    now = datetime.now(timezone.utc).isoformat()
+
+    conn = sqlite3.connect(scanner.db_path)
+    try:
+        conn.execute(
+            """
+            INSERT INTO url_validation_results
+            (url, country_code, scan_id, status_code, is_valid,
+             failure_count, validated_at)
+            VALUES (?, ?, ?, ?, ?, ?, ?)
+            """,
+            ("https://example.is/page3", "TESTLAND", "val-001", 200, 1, 0, now),
+        )
+        conn.commit()
+    finally:
+        conn.close()
+
+    confirmed = scanner._get_recently_confirmed_urls("TESTLAND", within_days=30)
+    assert "https://example.is/page3" in confirmed
+
+
+def test_get_recently_confirmed_urls_old_results_excluded(temp_settings):
+    """Results older than ``within_days`` should not be returned."""
+    from datetime import datetime, timezone, timedelta
+
+    scanner = UrlValidationScanner(temp_settings)
+    within_days = 30
+    # Use a timestamp well outside the window so the test never becomes flaky
+    old_ts = (
+        datetime.now(timezone.utc) - timedelta(days=within_days + 10)
+    ).isoformat()
+
+    conn = sqlite3.connect(scanner.db_path)
+    try:
+        conn.execute(
+            """
+            INSERT INTO url_social_media_results
+            (url, country_code, scan_id, is_reachable, social_tier,
+             twitter_links, x_links, bluesky_links, mastodon_links, scanned_at)
+            VALUES (?, ?, ?, ?, ?, '[]', '[]', '[]', '[]', ?)
+            """,
+            ("https://example.is/old", "TESTLAND", "social-old", 1, "no_social", old_ts),
+        )
+        conn.commit()
+    finally:
+        conn.close()
+
+    confirmed = scanner._get_recently_confirmed_urls("TESTLAND", within_days=within_days)
+    assert "https://example.is/old" not in confirmed
+
+
+@pytest.mark.asyncio
+async def test_scanner_skips_recently_confirmed_urls(temp_settings, sample_toon_file):
+    """URLs confirmed reachable by a previous scan should be skipped."""
+    from datetime import datetime, timezone
+    from unittest.mock import AsyncMock, patch
+
+    scanner = UrlValidationScanner(temp_settings)
+    now = datetime.now(timezone.utc).isoformat()
+
+    # Pre-populate social scan results for all three TOON URLs
+    toon_urls = [
+        "https://httpbin.org/status/200",
+        "https://httpbin.org/status/404",
+        "https://httpbin.org/redirect/1",
+    ]
+    conn = sqlite3.connect(scanner.db_path)
+    try:
+        for url in toon_urls:
+            conn.execute(
+                """
+                INSERT INTO url_social_media_results
+                (url, country_code, scan_id, is_reachable, social_tier,
+                 twitter_links, x_links, bluesky_links, mastodon_links, scanned_at)
+                VALUES (?, ?, ?, ?, ?, '[]', '[]', '[]', '[]', ?)
+                """,
+                (url, "TEST", "social-001", 1, "no_social", now),
+            )
+        conn.commit()
+    finally:
+        conn.close()
+
+    # Patch the actual HTTP validator so no real requests are made
+    with patch.object(scanner.validator, "validate_urls_batch", new_callable=AsyncMock) as mock_val:
+        mock_val.return_value = {}
+        stats = await scanner.scan_country(
+            country_code="TEST",
+            toon_path=sample_toon_file,
+            rate_limit_per_second=10,
+            skip_recently_validated_days=30,
+        )
+
+    # All three URLs were recently confirmed → none should be re-validated
+    assert stats["urls_skipped_recently_confirmed"] == 3
+    assert stats["urls_validated"] == 0
+    mock_val.assert_called_once_with([], rate_limit_per_second=10)

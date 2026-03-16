@@ -1,0 +1,90 @@
+name: Generate Scan Progress Report
+
+on:
+  # Re-generate progress after every major scan workflow completes.
+  workflow_run:
+    workflows:
+      - "Scan Social Media Links"
+      - "Scan Technology Stack"
+      - "URL Validation - Batched"
+    types:
+      - completed
+
+  # Allow manual trigger at any time.
+  workflow_dispatch:
+
+# Only one report-generation job at a time; newer runs cancel older queued ones.
+concurrency:
+  group: scan-progress-report
+  cancel-in-progress: true
+
+jobs:
+  generate-progress-report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Download latest metadata DB (if exists)
+        continue-on-error: true
+        uses: actions/download-artifact@v4
+        with:
+          name: validation-metadata
+          path: data/
+
+      - name: Generate scan progress report
+        run: |
+          python3 -m src.cli.generate_scan_progress \
+            --output docs/scan-progress.md \
+            2>&1 | tee scan-progress-output.txt
+
+      - name: Commit progress report to repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/scan-progress.md
+          if git diff --staged --quiet; then
+            echo "No changes to commit — progress report is up to date."
+          else
+            git commit -m "docs: update scan progress report [skip ci]"
+            git push
+            echo "Progress report committed and pushed."
+          fi
+
+      - name: Upload progress report artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: scan-progress-report-${{ github.run_number }}
+          path: |
+            docs/scan-progress.md
+            scan-progress-output.txt
+          retention-days: 30
+          if-no-files-found: warn
+
+      - name: Display progress summary
+        if: always()
+        run: |
+          echo "## Scan Progress Report" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ -f docs/scan-progress.md ]; then
+            cat docs/scan-progress.md >> $GITHUB_STEP_SUMMARY
+          else
+            echo "_No progress data available yet._" >> $GITHUB_STEP_SUMMARY
+          fi
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- Workflow Run: [\\#${{ github.run_number }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})" >> $GITHUB_STEP_SUMMARY

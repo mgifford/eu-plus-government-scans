@@ -69,7 +69,7 @@ jobs:
             --rate-limit "${{ github.event.inputs.rate_limit || '1.0' }}" \
             2>&1 | tee social-scan-output.txt
 
-      - name: Upload artifacts
+      - name: Upload scan results
         if: always()
         uses: actions/upload-artifact@v4
         with:
@@ -79,6 +79,17 @@ jobs:
             social-scan-output.txt
             data/toon-seeds/countries/**_social.toon
           retention-days: 90
+          if-no-files-found: warn
+
+      - name: Update shared validation metadata
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: validation-metadata
+          path: |
+            data/metadata.db
+          retention-days: 90
+          overwrite: true
           if-no-files-found: warn
 
       - name: Display scan summary
