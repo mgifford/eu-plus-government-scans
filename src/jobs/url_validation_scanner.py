@@ -73,6 +73,69 @@ class UrlValidationScanner:
         finally:
             conn.close()
 
+    def _get_recently_confirmed_urls(
+        self, country_code: str, within_days: int = 30
+    ) -> Set[str]:
+        """
+        Return URLs already confirmed reachable by *any* scan within the last
+        ``within_days`` days.
+
+        Checks two sources:
+        * ``url_social_media_results`` — URLs fetched by the social media
+          scanner that were reachable (is_reachable = 1).
+        * ``url_validation_results`` — URLs previously validated as valid
+          (is_valid = 1).
+
+        This prevents redundant re-validation of pages that were already
+        confirmed working by a more-comprehensive scan (e.g. social media
+        scanning, which downloads and parses the full page).
+
+        Args:
+            country_code: Country to look up.
+            within_days: Consider results from the last N days (default 30).
+
+        Returns:
+            Set of URL strings that do not need re-validation.
+        """
+        from datetime import timedelta
+
+        cutoff = (
+            datetime.now(timezone.utc) - timedelta(days=within_days)
+        ).isoformat()
+
+        conn = sqlite3.connect(self.db_path)
+        try:
+            confirmed: Set[str] = set()
+
+            # URLs confirmed reachable by the social media scanner
+            for table, ts_col, condition in [
+                (
+                    "url_social_media_results",
+                    "scanned_at",
+                    "is_reachable = 1",
+                ),
+                (
+                    "url_validation_results",
+                    "validated_at",
+                    "is_valid = 1",
+                ),
+            ]:
+                cursor = conn.execute(
+                    f"""
+                    SELECT DISTINCT url
+                    FROM {table}
+                    WHERE country_code = ?
+                      AND {condition}
+                      AND {ts_col} >= ?
+                    """,
+                    (country_code, cutoff),
+                )
+                confirmed.update(row[0] for row in cursor.fetchall())
+
+            return confirmed
+        finally:
+            conn.close()
+
     def _save_validation_results(
         self,
         results: List[ValidationResult],
@@ -182,6 +245,7 @@ class UrlValidationScanner:
         country_code: str,
         toon_path: Path,
         rate_limit_per_second: float = 2.0,
+        skip_recently_validated_days: int = 0,
     ) -> Dict[str, Any]:
         """
         Scan all URLs in a country's TOON file.
@@ -190,6 +254,11 @@ class UrlValidationScanner:
             country_code: ISO country code
             toon_path: Path to TOON file
             rate_limit_per_second: Max requests per second
+            skip_recently_validated_days: Skip URLs confirmed reachable by
+                *any* scanner within this many days (0 = always re-validate).
+                Passing a positive value avoids redundant HTTP requests when
+                the social-media or tech scanner has already fetched the page
+                recently.
             
         Returns:
             Scan statistics and results
@@ -210,7 +279,23 @@ class UrlValidationScanner:
         
         # Filter out URLs that already failed twice (skip them)
         urls_to_skip = {url for url, count in previous_failures.items() if count >= 2}
-        urls_to_validate = [url for url in urls if url not in urls_to_skip]
+
+        # Optionally skip URLs already confirmed valid by any recent scan.
+        recently_confirmed: Set[str] = set()
+        if skip_recently_validated_days > 0:
+            recently_confirmed = self._get_recently_confirmed_urls(
+                country_code, within_days=skip_recently_validated_days
+            )
+            if recently_confirmed:
+                print(
+                    f"Skipping {len(recently_confirmed)} URLs already confirmed "
+                    f"reachable within the last {skip_recently_validated_days} day(s)"
+                )
+
+        urls_to_validate = [
+            url for url in urls
+            if url not in urls_to_skip and url not in recently_confirmed
+        ]
         
         print(f"Skipping {len(urls_to_skip)} URLs that previously failed twice")
         print(f"Validating {len(urls_to_validate)} URLs")
@@ -265,6 +350,7 @@ class UrlValidationScanner:
             "total_urls": len(urls),
             "urls_validated": len(urls_to_validate),
             "urls_skipped": len(urls_to_skip),
+            "urls_skipped_recently_confirmed": len(recently_confirmed),
             "valid_urls": valid_count,
             "invalid_urls": invalid_count,
             "redirected_urls": redirect_count,
@@ -277,6 +363,8 @@ class UrlValidationScanner:
         print(f"  Invalid: {invalid_count}")
         print(f"  Redirected: {redirect_count}")
         print(f"  Removed (failed 2x): {len(urls_to_remove)}")
+        if recently_confirmed:
+            print(f"  Skipped (recently confirmed): {len(recently_confirmed)}")
         
         return stats
 
@@ -284,6 +372,7 @@ class UrlValidationScanner:
         self,
         toon_seeds_dir: Path,
         rate_limit_per_second: float = 2.0,
+        skip_recently_validated_days: int = 0,
     ) -> List[Dict[str, Any]]:
         """
         Scan all TOON files in a directory.
@@ -291,6 +380,8 @@ class UrlValidationScanner:
         Args:
             toon_seeds_dir: Directory containing TOON files
             rate_limit_per_second: Max requests per second per country
+            skip_recently_validated_days: Skip URLs confirmed reachable by any
+                scanner within this many days (0 = always re-validate).
             
         Returns:
             List of scan statistics for each country
@@ -311,6 +402,7 @@ class UrlValidationScanner:
                     country_code,
                     toon_path,
                     rate_limit_per_second,
+                    skip_recently_validated_days=skip_recently_validated_days,
                 )
                 all_stats.append(stats)
             except Exception as e:
