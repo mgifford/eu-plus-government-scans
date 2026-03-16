@@ -66,6 +66,7 @@ jobs:
         run: |
           python3 -m src.cli.scan_social_media \
             --all \
+            --max-runtime 110 \
             --rate-limit "${{ github.event.inputs.rate_limit || '1.0' }}" \
             2>&1 | tee social-scan-output.txt
 
