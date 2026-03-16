@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import time
 from unittest.mock import AsyncMock, Mock, patch
 
 import httpx
@@ -333,3 +334,129 @@ async def test_scan_urls_batch():
     assert len(results) == 2
     assert results[urls[0]].social_tier == "no_social"
     assert results[urls[1]].social_tier == "twitter_only"
+
+
+# ---------------------------------------------------------------------------
+# scan_urls_batch — on_result callback
+# ---------------------------------------------------------------------------
+
+
+@pytest.mark.asyncio
+async def test_scan_urls_batch_on_result_called_for_each_url():
+    """on_result callback is invoked once per scanned URL, in order."""
+    scanner = SocialMediaScanner(timeout_seconds=10)
+    urls = ["https://gov1.example/", "https://gov2.example/"]
+
+    saved: list[SocialMediaScanResult] = []
+
+    def capture(result: SocialMediaScanResult) -> None:
+        saved.append(result)
+
+    async def mock_get(url, **kwargs):
+        r = Mock()
+        r.status_code = 200
+        r.url = url
+        r.text = "<html><body></body></html>"
+        return r
+
+    with patch("httpx.AsyncClient") as mock_client:
+        mock_client.return_value.__aenter__.return_value.get = AsyncMock(
+            side_effect=mock_get
+        )
+        results = await scanner.scan_urls_batch(
+            urls, rate_limit_per_second=0, on_result=capture
+        )
+
+    assert len(saved) == 2
+    assert saved[0].url == urls[0]
+    assert saved[1].url == urls[1]
+    # Callback results match the returned dict
+    assert saved[0] is results[urls[0]]
+    assert saved[1] is results[urls[1]]
+
+
+@pytest.mark.asyncio
+async def test_scan_urls_batch_no_callback_still_works():
+    """Omitting on_result does not break anything — backward compatibility."""
+    scanner = SocialMediaScanner(timeout_seconds=10)
+    urls = ["https://gov1.example/"]
+
+    async def mock_get(url, **kwargs):
+        r = Mock()
+        r.status_code = 200
+        r.url = url
+        r.text = "<html><body></body></html>"
+        return r
+
+    with patch("httpx.AsyncClient") as mock_client:
+        mock_client.return_value.__aenter__.return_value.get = AsyncMock(
+            side_effect=mock_get
+        )
+        results = await scanner.scan_urls_batch(urls, rate_limit_per_second=0)
+
+    assert len(results) == 1
+
+
+# ---------------------------------------------------------------------------
+# scan_urls_batch — max_runtime_seconds early stop
+# ---------------------------------------------------------------------------
+
+
+@pytest.mark.asyncio
+async def test_scan_urls_batch_stops_early_when_budget_exhausted():
+    """
+    When start_time is in the distant past the budget is already exhausted
+    and no URLs should be scanned.
+    """
+    scanner = SocialMediaScanner(timeout_seconds=10)
+    urls = ["https://gov1.example/", "https://gov2.example/", "https://gov3.example/"]
+
+    async def mock_get(url, **kwargs):
+        r = Mock()
+        r.status_code = 200
+        r.url = url
+        r.text = "<html><body></body></html>"
+        return r
+
+    # Simulate a start_time 1 hour ago with only a 1-second budget ⇒
+    # remaining = 1.0 - 3600 ≈ -3599 < 60 (safety buffer) → stop immediately.
+    past_start = time.monotonic() - 3600
+
+    with patch("httpx.AsyncClient") as mock_client:
+        mock_client.return_value.__aenter__.return_value.get = AsyncMock(
+            side_effect=mock_get
+        )
+        results = await scanner.scan_urls_batch(
+            urls,
+            rate_limit_per_second=0,
+            max_runtime_seconds=1.0,
+            start_time=past_start,
+        )
+
+    assert len(results) == 0
+
+
+@pytest.mark.asyncio
+async def test_scan_urls_batch_no_max_runtime_scans_all():
+    """When max_runtime_seconds is None all URLs are scanned."""
+    scanner = SocialMediaScanner(timeout_seconds=10)
+    urls = ["https://gov1.example/", "https://gov2.example/"]
+
+    async def mock_get(url, **kwargs):
+        r = Mock()
+        r.status_code = 200
+        r.url = url
+        r.text = "<html><body></body></html>"
+        return r
+
+    with patch("httpx.AsyncClient") as mock_client:
+        mock_client.return_value.__aenter__.return_value.get = AsyncMock(
+            side_effect=mock_get
+        )
+        results = await scanner.scan_urls_batch(
+            urls,
+            rate_limit_per_second=0,
+            max_runtime_seconds=None,
+        )
+
+    assert len(results) == 2
