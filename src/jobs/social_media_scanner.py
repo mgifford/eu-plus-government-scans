@@ -5,9 +5,10 @@ from __future__ import annotations
 import asyncio
 import json
 import sqlite3
+import time
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Dict, List
+from typing import Any, Dict, List, Optional
 from uuid import uuid4
 
 from src.lib.country_utils import country_filename_to_code
@@ -113,14 +114,25 @@ class SocialMediaScannerJob:
         country_code: str,
         toon_path: Path,
         rate_limit_per_second: float = 2.0,
+        max_runtime_seconds: Optional[float] = None,
+        start_time: Optional[float] = None,
     ) -> Dict[str, Any]:
         """
         Scan all URLs in a country's TOON file for social media links.
+
+        Results are persisted to the database incrementally as each URL is
+        scanned, so partial results are preserved even if the job is stopped
+        early due to a timeout.
 
         Args:
             country_code: Country code (e.g. FRANCE).
             toon_path: Path to the TOON seed file.
             rate_limit_per_second: Maximum HTTP requests per second.
+            max_runtime_seconds: Shared runtime budget in seconds measured
+                from *start_time*.  When the remaining budget drops below
+                60 seconds scanning stops gracefully.  ``None`` = no limit.
+            start_time: ``time.monotonic()`` value from the start of the
+                overall job.  ``None`` means a fresh clock for this country.
 
         Returns:
             Scan statistics dictionary.
@@ -139,14 +151,23 @@ class SocialMediaScannerJob:
 
         print(f"Found {len(urls)} URLs to scan")
 
+        # Use the caller's start_time so the budget is shared across countries.
+        _start = start_time if start_time is not None else time.monotonic()
+
+        def _save_result(result: SocialMediaScanResult) -> None:
+            """Persist a single scan result immediately after it is computed."""
+            self._save_social_media_results([result], country_code, scan_id)
+
         scan_results = await self.scanner.scan_urls_batch(
             urls,
             rate_limit_per_second=rate_limit_per_second,
+            max_runtime_seconds=max_runtime_seconds,
+            start_time=_start,
+            on_result=_save_result,
         )
 
-        self._save_social_media_results(
-            list(scan_results.values()), country_code, scan_id
-        )
+        # Note: each result was already written to the DB via _save_result;
+        # no further bulk save is needed here.
 
         updated_toon = self._update_toon_with_social_media(toon_data, scan_results)
 
@@ -156,10 +177,18 @@ class SocialMediaScannerJob:
         with output_path.open("w", encoding="utf-8") as f:
             json.dump(updated_toon, f, indent=2, ensure_ascii=False)
 
-        print(f"Saved social-media-annotated TOON to: {output_path}")
+        scanned_count = len(scan_results)
+        is_complete = scanned_count == len(urls)
+        if is_complete:
+            print(f"Saved social-media-annotated TOON to: {output_path}")
+        else:
+            print(
+                f"Saved partial social-media-annotated TOON to: {output_path} "
+                f"({scanned_count}/{len(urls)} URLs scanned)"
+            )
 
         reachable_count = sum(1 for r in scan_results.values() if r.is_reachable)
-        unreachable_count = len(scan_results) - reachable_count
+        unreachable_count = scanned_count - reachable_count
         twitter_count = sum(1 for r in scan_results.values() if r.twitter_links)
         x_count = sum(1 for r in scan_results.values() if r.x_links)
         bluesky_count = sum(1 for r in scan_results.values() if r.bluesky_links)
@@ -173,6 +202,8 @@ class SocialMediaScannerJob:
             "scan_id": scan_id,
             "country_code": country_code,
             "total_urls": len(urls),
+            "urls_scanned": scanned_count,
+            "is_complete": is_complete,
             "reachable_count": reachable_count,
             "unreachable_count": unreachable_count,
             "twitter_count": twitter_count,
@@ -183,8 +214,8 @@ class SocialMediaScannerJob:
             "output_path": str(output_path),
         }
 
-        print(f"\nSocial media scan complete:")
-        print(f"  Scanned:     {len(urls)}")
+        print(f"\nSocial media scan {'complete' if is_complete else 'partial'}:")
+        print(f"  Scanned:     {scanned_count}/{len(urls)}")
         print(f"  Reachable:   {reachable_count}")
         print(f"  Unreachable: {unreachable_count}")
         print(f"  Twitter:     {twitter_count}")
@@ -200,29 +231,59 @@ class SocialMediaScannerJob:
         self,
         toon_seeds_dir: Path,
         rate_limit_per_second: float = 2.0,
+        max_runtime_seconds: Optional[float] = None,
     ) -> List[Dict[str, Any]]:
         """
         Scan all TOON files in a directory for social media links.
 
+        Stops gracefully before *max_runtime_seconds* elapses so that partial
+        results can be saved and the GitHub Actions job is not hard-cancelled.
+
         Args:
             toon_seeds_dir: Directory containing TOON seed files.
             rate_limit_per_second: Maximum requests per second per country.
+            max_runtime_seconds: Shared runtime budget in seconds.  The job
+                will not *start* a new country when fewer than 5 minutes remain,
+                and will pass the remaining budget into each country scan so
+                that even a large country stops gracefully mid-way if needed.
+                ``None`` means no limit.
 
         Returns:
-            List of scan statistics for each country.
+            List of scan statistics for each country processed.
         """
         all_stats = []
         toon_files = sorted(toon_seeds_dir.glob("*.toon"))
 
         print(f"Found {len(toon_files)} TOON files to process")
 
+        start_time = time.monotonic()
+        # Reserve this many seconds at the end so we don't attempt to start a
+        # fresh country scan when there is not enough time left.
+        _country_start_buffer = 5 * 60  # 5 minutes
+
         for toon_path in toon_files:
             country_code = country_filename_to_code(toon_path.stem)
+
+            # Check whether enough time remains to begin a new country.
+            if max_runtime_seconds is not None:
+                elapsed = time.monotonic() - start_time
+                remaining = max_runtime_seconds - elapsed
+                if remaining < _country_start_buffer:
+                    print(
+                        f"⏱️  Time budget near limit "
+                        f"({elapsed / 60:.1f}m elapsed, "
+                        f"{remaining / 60:.1f}m remaining) "
+                        f"— skipping remaining countries starting with {country_code}"
+                    )
+                    break
+
             try:
                 stats = await self.scan_country(
                     country_code,
                     toon_path,
                     rate_limit_per_second,
+                    max_runtime_seconds=max_runtime_seconds,
+                    start_time=start_time,
                 )
                 all_stats.append(stats)
             except Exception as exc:
