@@ -43,6 +43,18 @@ def main():
         help="Scan all countries",
         action="store_true",
     )
+    parser.add_argument(
+        "--max-runtime",
+        help=(
+            "Maximum runtime in minutes before stopping gracefully. "
+            "0 = no limit (default).  For --all mode in GitHub Actions set "
+            "this to ~10 minutes less than the workflow timeout-minutes value "
+            "so the job can finish cleanly and upload its artifacts."
+        ),
+        type=int,
+        default=0,
+        dest="max_runtime",
+    )
 
     args = parser.parse_args()
 
@@ -55,16 +67,25 @@ def main():
         print(f"Error: TOON directory not found: {args.toon_dir}")
         sys.exit(1)
 
+    max_runtime_seconds = args.max_runtime * 60 if args.max_runtime > 0 else None
+
     settings = load_settings()
     job = SocialMediaScannerJob(settings)
 
     try:
         if args.all:
-            print("Scanning all countries for social media links...")
+            if max_runtime_seconds is not None:
+                print(
+                    f"Scanning all countries for social media links "
+                    f"(max runtime: {args.max_runtime} minutes)..."
+                )
+            else:
+                print("Scanning all countries for social media links...")
             all_stats = asyncio.run(
                 job.scan_all_countries(
                     args.toon_dir,
                     rate_limit_per_second=args.rate_limit,
+                    max_runtime_seconds=max_runtime_seconds,
                 )
             )
 
@@ -78,8 +99,9 @@ def main():
                         f"ERROR - {country_stats['error']}"
                     )
                 else:
+                    complete_flag = "" if country_stats.get("is_complete", True) else " (partial)"
                     print(
-                        f"{country_stats['country_code']}: "
+                        f"{country_stats['country_code']}{complete_flag}: "
                         f"{country_stats['reachable_count']} reachable, "
                         f"Twitter={country_stats['twitter_count']} "
                         f"X={country_stats['x_count']} "
@@ -103,6 +125,7 @@ def main():
                     country_code,
                     toon_file,
                     rate_limit_per_second=args.rate_limit,
+                    max_runtime_seconds=max_runtime_seconds,
                 )
             )
 
@@ -111,6 +134,8 @@ def main():
             print("=" * 80)
             print(f"Scan ID:      {stats['scan_id']}")
             print(f"Total URLs:   {stats['total_urls']}")
+            print(f"Scanned:      {stats['urls_scanned']}")
+            print(f"Complete:     {'Yes' if stats.get('is_complete', True) else 'No (stopped early)'}")
             print(f"Reachable:    {stats['reachable_count']}")
             print(f"Unreachable:  {stats['unreachable_count']}")
             print(f"Twitter:      {stats['twitter_count']}")
