@@ -1,7 +1,5 @@
 # Scan Progress Report
 
-_This file is automatically updated after every scan run by the
-[Generate Scan Progress Report](../.github/workflows/generate-scan-progress.yml)
-workflow. The content below reflects the state at the last commit._
+_Generated: 2026-03-16 11:29 UTC_
 
 No scan data available yet. Run a scan first.
