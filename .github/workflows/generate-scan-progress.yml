@@ -52,17 +52,23 @@ jobs:
             --output docs/scan-progress.md \
             2>&1 | tee scan-progress-output.txt
 
+      - name: Generate domains report
+        run: |
+          python3 -m src.cli.generate_domains_report \
+            --output docs/domains.md \
+            2>&1 | tee domains-report-output.txt
+
       - name: Commit progress report to repository
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/scan-progress.md
+          git add docs/scan-progress.md docs/domains.md
           if git diff --staged --quiet; then
-            echo "No changes to commit — progress report is up to date."
+            echo "No changes to commit — reports are up to date."
           else
-            git commit -m "docs: update scan progress report [skip ci]"
+            git commit -m "docs: update scan progress and domains reports [skip ci]"
             git push
-            echo "Progress report committed and pushed."
+            echo "Reports committed and pushed."
           fi
 
       - name: Upload progress report artifact
@@ -72,7 +78,9 @@ jobs:
           name: scan-progress-report-${{ github.run_number }}
           path: |
             docs/scan-progress.md
+            docs/domains.md
             scan-progress-output.txt
+            domains-report-output.txt
           retention-days: 30
           if-no-files-found: warn
 
