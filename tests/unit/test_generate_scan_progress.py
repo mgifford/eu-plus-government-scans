@@ -214,3 +214,21 @@ def test_generate_progress_report_scan_priority_guide(
     assert "Social Media Scan" in content
     assert "URL Validation" in content
     assert "30 days" in content
+
+
+def test_generate_progress_report_social_media_platform_breakdown(
+    populated_db: Path, tmp_path: Path
+):
+    """Report should include a per-platform social media breakdown table."""
+    output_path = tmp_path / "report.md"
+    generate_progress_report(populated_db, output_path)
+    content = output_path.read_text()
+
+    assert "## Social Media Platform Breakdown" in content
+    # Table should include the platform columns
+    assert "Twitter" in content
+    assert "Bluesky" in content
+    assert "Mastodon" in content
+    # Should show the countries that have social media data
+    assert "ICELAND" in content
+    assert "GERMANY" in content
