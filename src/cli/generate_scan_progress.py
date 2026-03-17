@@ -101,6 +101,35 @@ def _query_social_media(conn: sqlite3.Connection) -> dict[str, dict]:
     return result
 
 
+def _query_social_media_platforms(conn: sqlite3.Connection) -> dict[str, dict]:
+    """Return per-country platform-level social media link counts.
+
+    Counts the number of scanned pages that contain at least one link to each
+    platform (Twitter, X, Bluesky, Mastodon), derived from the stored JSON lists.
+    """
+    result: dict[str, dict] = {}
+    for row in conn.execute(
+        """
+        SELECT country_code,
+               COUNT(DISTINCT url)                                            AS total,
+               SUM(CASE WHEN twitter_links  != '[]' THEN 1 ELSE 0 END)       AS has_twitter,
+               SUM(CASE WHEN x_links        != '[]' THEN 1 ELSE 0 END)       AS has_x,
+               SUM(CASE WHEN bluesky_links  != '[]' THEN 1 ELSE 0 END)       AS has_bluesky,
+               SUM(CASE WHEN mastodon_links != '[]' THEN 1 ELSE 0 END)       AS has_mastodon,
+               SUM(CASE WHEN is_reachable = 1       THEN 1 ELSE 0 END)       AS reachable,
+               SUM(CASE WHEN (twitter_links != '[]' OR x_links != '[]')
+                             THEN 1 ELSE 0 END)                               AS has_any_legacy,
+               SUM(CASE WHEN (bluesky_links != '[]' OR mastodon_links != '[]')
+                             THEN 1 ELSE 0 END)                               AS has_any_modern
+        FROM url_social_media_results
+        GROUP BY country_code
+        ORDER BY country_code
+        """
+    ):
+        result[row["country_code"]] = dict(row)
+    return result
+
+
 def _query_technology(conn: sqlite3.Connection) -> dict[str, dict]:
     """Return per-country technology scan stats from the database."""
     result: dict[str, dict] = {}
@@ -203,6 +232,78 @@ def _write_social_media_table(
     f.write("\n")
 
 
+def _write_social_media_platform_breakdown(
+    f, platforms: dict[str, dict], all_countries: list[str]
+) -> None:
+    """Write a per-platform social media link count table.
+
+    Shows how many reachable pages per country contain at least one link to
+    each individual platform (Twitter, X, Bluesky, Mastodon).
+    """
+    if not platforms:
+        return
+
+    # Aggregate totals for the summary row
+    total_reachable = sum(d["reachable"] for d in platforms.values())
+    total_twitter = sum(d["has_twitter"] for d in platforms.values())
+    total_x = sum(d["has_x"] for d in platforms.values())
+    total_bluesky = sum(d["has_bluesky"] for d in platforms.values())
+    total_mastodon = sum(d["has_mastodon"] for d in platforms.values())
+    total_legacy = sum(d["has_any_legacy"] for d in platforms.values())
+    total_modern = sum(d["has_any_modern"] for d in platforms.values())
+
+    f.write("## Social Media Platform Breakdown\n\n")
+    f.write(
+        "Number of **reachable** pages per country that link to each platform. "
+        "A page may link to more than one platform.\n\n"
+    )
+    f.write(
+        "| Country | Reachable | Twitter | X | Bluesky | Mastodon "
+        "| Legacy % | Modern % |\n"
+    )
+    f.write(
+        "|---------|-----------|---------|---|---------|----------"
+        "|----------|----------|\n"
+    )
+    for cc in all_countries:
+        if cc not in platforms:
+            continue
+        d = platforms[cc]
+        r = d["reachable"]
+        if r > 0:
+            legacy_pct = f"{d['has_any_legacy'] / r * 100:.1f}%"
+            modern_pct = f"{d['has_any_modern'] / r * 100:.1f}%"
+        else:
+            legacy_pct = "—"
+            modern_pct = "—"
+        f.write(
+            f"| {cc} | {d['reachable']:,} | {d['has_twitter']:,} | "
+            f"{d['has_x']:,} | {d['has_bluesky']:,} | {d['has_mastodon']:,} | "
+            f"{legacy_pct} | {modern_pct} |\n"
+        )
+
+    # Summary / totals row
+    if total_reachable > 0:
+        summary_legacy = f"**{total_legacy / total_reachable * 100:.1f}%**"
+        summary_modern = f"**{total_modern / total_reachable * 100:.1f}%**"
+    else:
+        summary_legacy = "**—**"
+        summary_modern = "**—**"
+    f.write(
+        f"| **Total** | **{total_reachable:,}** | **{total_twitter:,}** | "
+        f"**{total_x:,}** | **{total_bluesky:,}** | **{total_mastodon:,}** | "
+        f"{summary_legacy} | {summary_modern} |\n"
+    )
+    f.write("\n")
+
+    # Narrative summary
+    f.write(
+        "> **Legacy platforms** (Twitter / X) vs **modern open platforms** "
+        "(Bluesky / Mastodon) — percentages are share of reachable pages "
+        "that contain at least one link to any platform in that group.\n\n"
+    )
+
+
 def _write_technology_table(
     f, tech: dict[str, dict], all_countries: list[str]
 ) -> None:
@@ -287,6 +388,7 @@ def _write_report(conn: sqlite3.Connection, output_path: Path, generated_at: str
 
     url_val = _query_url_validation(conn)
     social = _query_social_media(conn)
+    platforms = _query_social_media_platforms(conn)
     tech = _query_technology(conn)
 
     all_countries = sorted(set(url_val) | set(social) | set(tech))
@@ -304,6 +406,7 @@ def _write_report(conn: sqlite3.Connection, output_path: Path, generated_at: str
 
         _write_url_validation_table(f, url_val, all_countries)
         _write_social_media_table(f, social, all_countries)
+        _write_social_media_platform_breakdown(f, platforms, all_countries)
         _write_technology_table(f, tech, all_countries)
         _write_pending_sections(f, url_val, social)
         _write_priority_guide(f)
