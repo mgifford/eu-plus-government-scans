@@ -12,6 +12,8 @@ theme: minima
 header_pages:
   - index.md
   - scan-progress.md
+  - social-media.md
+  - domains.md
   - batched-validation.md
   - technology-scanning.md
 
