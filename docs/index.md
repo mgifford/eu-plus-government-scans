@@ -7,6 +7,14 @@ This project discovers and catalogues how European (and allied) government websi
 use social media, whether their URLs are accessible, and what technology platforms
 power them.
 
+## Current Scan Progress
+
+<!-- SCAN_PROGRESS_START -->
+
+_No scan data yet — progress updates automatically after every scan run._
+
+<!-- SCAN_PROGRESS_END -->
+
 ## Latest Scan Results
 
 - **[Scan Progress Report](scan-progress.md)** — Up-to-date social media, URL validation, and
@@ -79,12 +87,12 @@ See **[Government Domains](domains.md)** for the full domain listing per country
 
 Scans run automatically on a schedule via **GitHub Actions**:
 
-| Scan | Schedule |
-|------|----------|
-| Social Media | Every 3 hours |
-| URL Validation | Every 6 hours |
-| Technology Detection | On demand |
-| Scan Progress Report | After every scan |
+| Scan | Schedule | Priority |
+|------|----------|----------|
+| Social Media | Every 3 hours | **Highest** — confirms reachability *and* collects social-link data in one pass |
+| Technology Detection | On demand | Medium — run manually for new countries |
+| URL Validation | Every 12 hours | Lowest — lightweight redirect/404 check; skipped for pages already confirmed reachable within 30 days |
+| Scan Progress Report | After every scan | — |
 
 After each scan run, this site is automatically updated with the latest results.
 
