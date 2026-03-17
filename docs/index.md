@@ -10,7 +10,27 @@ power them.
 ## Latest Scan Results
 
 - **[Scan Progress Report](scan-progress.md)** — Up-to-date social media, URL validation, and
-  technology scan coverage across all countries.
+  technology scan coverage across all countries, including the date range each country was scanned.
+- **[Social Media](social-media.md)** — Detailed breakdown of social platform usage across
+  government sites, with per-country platform counts (Twitter, X, Bluesky, Mastodon).
+- **[Government Domains](domains.md)** — Full listing of all ~36,000 government domains tracked
+  across 31 countries.
+
+## Accessing Scan Artifacts
+
+Each GitHub Actions scan run uploads its results as a downloadable artifact:
+
+1. Go to [GitHub Actions](https://github.com/mgifford/eu-plus-government-scans/actions)
+2. Click the relevant workflow (e.g. **Scan Social Media Links**)
+3. Open a completed run and scroll to the **Artifacts** section
+4. Download the artifact (e.g. `social-scan-<run_number>`) to inspect:
+   - `data/metadata.db` — the full SQLite results database
+   - `*_social.toon` / `*_tech.toon` — annotated TOON files
+   - Scan output logs
+
+> The [Scan Progress Report](scan-progress.md) is regenerated automatically
+> after every scan and committed to this site, so you can always see the
+> latest aggregated results here without downloading artifacts.
 
 ## What We Track
 
@@ -34,6 +54,8 @@ Each scanned page is classified into one of the following tiers:
 | `mixed` | Links to both Twitter/X **and** at least one modern platform |
 | `unreachable` | Page could not be fetched |
 
+See the **[Social Media](social-media.md)** page for full details.
+
 ### URL Validation
 
 We validate each URL and track:
@@ -50,6 +72,8 @@ We detect the CMS, framework, and analytics platforms used by each government si
 
 The dataset covers **all EU member states** plus selected allied nations:
 United Kingdom, Switzerland, Iceland, Norway, and Canada.
+
+See **[Government Domains](domains.md)** for the full domain listing per country.
 
 ## How the Scans Work
 
