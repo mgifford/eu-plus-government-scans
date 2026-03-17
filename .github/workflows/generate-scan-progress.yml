@@ -50,6 +50,7 @@ jobs:
         run: |
           python3 -m src.cli.generate_scan_progress \
             --output docs/scan-progress.md \
+            --update-index docs/index.md \
             2>&1 | tee scan-progress-output.txt
 
       - name: Generate domains report
@@ -62,7 +63,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/scan-progress.md docs/domains.md
+          git add docs/scan-progress.md docs/domains.md docs/index.md
           if git diff --staged --quiet; then
             echo "No changes to commit — reports are up to date."
           else
@@ -79,6 +80,7 @@ jobs:
           path: |
             docs/scan-progress.md
             docs/domains.md
+            docs/index.md
             scan-progress-output.txt
             domains-report-output.txt
           retention-days: 30
