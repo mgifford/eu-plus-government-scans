@@ -7,7 +7,10 @@ from pathlib import Path
 
 import pytest
 
-from src.cli.generate_scan_progress import generate_progress_report
+from src.cli.generate_scan_progress import (
+    _format_month_range,
+    generate_progress_report,
+)
 from src.storage.schema import initialize_schema
 
 
@@ -232,3 +235,80 @@ def test_generate_progress_report_social_media_platform_breakdown(
     # Should show the countries that have social media data
     assert "ICELAND" in content
     assert "GERMANY" in content
+
+
+# ---------------------------------------------------------------------------
+# Tests for _format_month_range helper
+# ---------------------------------------------------------------------------
+
+def test_format_month_range_both_none():
+    """Should return '—' when both values are None."""
+    assert _format_month_range(None, None) == "—"
+
+
+def test_format_month_range_same_month():
+    """Should return a single month when first and last are in the same month."""
+    result = _format_month_range(
+        "2024-06-01T10:00:00+00:00",
+        "2024-06-30T23:59:59+00:00",
+    )
+    assert result == "Jun 2024"
+
+
+def test_format_month_range_different_months():
+    """Should return 'Mon YYYY – Mon YYYY' when months differ."""
+    result = _format_month_range(
+        "2024-01-01T00:00:00+00:00",
+        "2024-03-31T23:59:59+00:00",
+    )
+    assert result == "Jan 2024 – Mar 2024"
+
+
+def test_format_month_range_only_last():
+    """Should return the last month when first is None."""
+    result = _format_month_range(None, "2024-06-15T12:00:00+00:00")
+    assert result == "Jun 2024"
+
+
+def test_format_month_range_only_first():
+    """Should return the first month when last is None."""
+    result = _format_month_range("2024-06-15T12:00:00+00:00", None)
+    assert result == "Jun 2024"
+
+
+def test_format_month_range_cross_year():
+    """Should handle date ranges that span across years."""
+    result = _format_month_range(
+        "2023-11-01T00:00:00+00:00",
+        "2024-02-28T23:59:59+00:00",
+    )
+    assert result == "Nov 2023 – Feb 2024"
+
+
+# ---------------------------------------------------------------------------
+# Tests for date range in generated reports
+# ---------------------------------------------------------------------------
+
+def test_generate_progress_report_url_validation_scan_period(
+    populated_db: Path, tmp_path: Path
+):
+    """URL validation table should use 'Scan Period' column instead of 'Last Scan'."""
+    output_path = tmp_path / "report.md"
+    generate_progress_report(populated_db, output_path)
+    content = output_path.read_text()
+
+    assert "Scan Period" in content
+    # The fixture data uses 2024-06-* dates — all in June 2024
+    assert "Jun 2024" in content
+
+
+def test_generate_progress_report_social_media_scan_period(
+    populated_db: Path, tmp_path: Path
+):
+    """Social media table should use 'Scan Period' column instead of 'Last Scan'."""
+    output_path = tmp_path / "report.md"
+    generate_progress_report(populated_db, output_path)
+    content = output_path.read_text()
+
+    # Both tables should show the scan period column
+    assert content.count("Scan Period") >= 2

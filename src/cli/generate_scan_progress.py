@@ -31,6 +31,31 @@ def _progress_bar(completed: int, total: int, width: int = 20) -> str:
     return f"{bar} {pct * 100:.1f}%"
 
 
+def _format_month_range(first: str | None, last: str | None) -> str:
+    """Return a human-readable month range string.
+
+    Both *first* and *last* are ISO-8601 timestamp strings (or None).
+    Returns e.g. ``"Jan 2024 – Mar 2024"`` or ``"Mar 2024"`` when they are
+    in the same month, or ``"—"`` when no data is available.
+    """
+    if not first and not last:
+        return "—"
+
+    def _to_month(ts: str) -> str:
+        # Handle both "YYYY-MM-DD..." and "YYYY-MM-DDTHH:MM:SS..." formats.
+        try:
+            return datetime.fromisoformat(ts[:19]).strftime("%b %Y")
+        except (ValueError, TypeError):
+            return ts[:7]  # Fall back to "YYYY-MM"
+
+    first_m = _to_month(first) if first else None
+    last_m = _to_month(last) if last else None
+
+    if first_m and last_m:
+        return first_m if first_m == last_m else f"{first_m} – {last_m}"
+    return first_m or last_m or "—"
+
+
 # ---------------------------------------------------------------------------
 # report generation
 # ---------------------------------------------------------------------------
@@ -68,6 +93,7 @@ def _query_url_validation(conn: sqlite3.Connection) -> dict[str, dict]:
                COUNT(DISTINCT url)                                   AS total,
                SUM(CASE WHEN is_valid = 1       THEN 1 ELSE 0 END)  AS valid,
                SUM(CASE WHEN is_valid = 0       THEN 1 ELSE 0 END)  AS invalid,
+               MIN(validated_at)                                     AS first_scan,
                MAX(validated_at)                                     AS last_scan
         FROM url_validation_results
         GROUP BY country_code
@@ -91,6 +117,7 @@ def _query_social_media(conn: sqlite3.Connection) -> dict[str, dict]:
                SUM(CASE WHEN social_tier = 'mixed'         THEN 1 ELSE 0 END) AS mixed,
                SUM(CASE WHEN social_tier = 'no_social'     THEN 1 ELSE 0 END) AS no_social,
                SUM(CASE WHEN social_tier = 'unreachable'   THEN 1 ELSE 0 END) AS unreachable,
+               MIN(scanned_at)                                             AS first_scan,
                MAX(scanned_at)                                             AS last_scan
         FROM url_social_media_results
         GROUP BY country_code
@@ -189,16 +216,16 @@ def _write_url_validation_table(
     if not url_val:
         return
     f.write("## URL Validation by Country\n\n")
-    f.write("| Country | Total | Valid | Invalid | Last Scan | Coverage |\n")
-    f.write("|---------|-------|-------|---------|-----------|----------|\n")
+    f.write("| Country | Total | Valid | Invalid | Scan Period | Coverage |\n")
+    f.write("|---------|-------|-------|---------|-------------|----------|\n")
     for cc in all_countries:
         if cc not in url_val:
             continue
         d = url_val[cc]
-        last = (d["last_scan"] or "—")[:10]
+        scan_period = _format_month_range(d.get("first_scan"), d.get("last_scan"))
         f.write(
             f"| {cc} | {d['total']:,} | {d['valid']:,} | "
-            f"{d['invalid']:,} | {last} | "
+            f"{d['invalid']:,} | {scan_period} | "
             f"{_progress_bar(d['valid'], d['total'], 15)} |\n"
         )
     f.write("\n")
@@ -213,21 +240,21 @@ def _write_social_media_table(
     f.write("## Social Media Scan by Country\n\n")
     f.write(
         "| Country | Scanned | Reachable | Twitter-only | Modern | "
-        "Mixed | No Social | Last Scan |\n"
+        "Mixed | No Social | Scan Period |\n"
     )
     f.write(
         "|---------|---------|-----------|-------------|--------|"
-        "-------|-----------|----------|\n"
+        "-------|-----------|-------------|\n"
     )
     for cc in all_countries:
         if cc not in social:
             continue
         d = social[cc]
-        last = (d["last_scan"] or "—")[:10]
+        scan_period = _format_month_range(d.get("first_scan"), d.get("last_scan"))
         f.write(
             f"| {cc} | {d['total']:,} | {d['reachable']:,} | "
             f"{d['twitter_only']:,} | {d['modern_only']:,} | "
-            f"{d['mixed']:,} | {d['no_social']:,} | {last} |\n"
+            f"{d['mixed']:,} | {d['no_social']:,} | {scan_period} |\n"
         )
     f.write("\n")
 
