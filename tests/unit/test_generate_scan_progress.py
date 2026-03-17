@@ -10,6 +10,7 @@ import pytest
 from src.cli.generate_scan_progress import (
     _format_month_range,
     generate_progress_report,
+    update_index_progress,
 )
 from src.storage.schema import initialize_schema
 
@@ -312,3 +313,85 @@ def test_generate_progress_report_social_media_scan_period(
 
     # Both tables should show the scan period column
     assert content.count("Scan Period") >= 2
+
+
+# ---------------------------------------------------------------------------
+# Tests for update_index_progress
+# ---------------------------------------------------------------------------
+
+_INDEX_WITH_MARKERS = """\
+---
+title: Test
+---
+
+## Current Scan Progress
+
+<!-- SCAN_PROGRESS_START -->
+
+_No data yet._
+
+<!-- SCAN_PROGRESS_END -->
+
+## Other Section
+
+Some content.
+"""
+
+
+def test_update_index_progress_no_db(tmp_path: Path):
+    """Should insert a 'no data' placeholder when the DB does not exist."""
+    index_path = tmp_path / "index.md"
+    index_path.write_text(_INDEX_WITH_MARKERS)
+    db_path = tmp_path / "nonexistent.db"
+
+    result = update_index_progress(index_path, db_path)
+
+    assert result is True
+    content = index_path.read_text()
+    assert "<!-- SCAN_PROGRESS_START -->" in content
+    assert "<!-- SCAN_PROGRESS_END -->" in content
+    assert "No scan data yet" in content
+    # Other section should be preserved
+    assert "## Other Section" in content
+
+
+def test_update_index_progress_with_data(populated_db: Path, tmp_path: Path):
+    """Should replace the marker block with a real coverage table."""
+    index_path = tmp_path / "index.md"
+    index_path.write_text(_INDEX_WITH_MARKERS)
+
+    result = update_index_progress(index_path, populated_db)
+
+    assert result is True
+    content = index_path.read_text()
+    assert "<!-- SCAN_PROGRESS_START -->" in content
+    assert "<!-- SCAN_PROGRESS_END -->" in content
+    assert "Social Media" in content
+    assert "URL Validation" in content
+    # Coverage table should appear between the markers
+    assert "countries" in content.lower()
+    # The "Other Section" below the end marker must still be present
+    assert "## Other Section" in content
+
+
+def test_update_index_progress_missing_markers(tmp_path: Path):
+    """Should return False and not modify the file when markers are absent."""
+    index_path = tmp_path / "index.md"
+    original = "# Index\n\nNo markers here.\n"
+    index_path.write_text(original)
+    db_path = tmp_path / "nonexistent.db"
+
+    result = update_index_progress(index_path, db_path)
+
+    assert result is False
+    assert index_path.read_text() == original
+
+
+def test_update_index_progress_missing_index_file(tmp_path: Path):
+    """Should return False when the index file does not exist."""
+    index_path = tmp_path / "missing.md"
+    db_path = tmp_path / "nonexistent.db"
+
+    result = update_index_progress(index_path, db_path)
+
+    assert result is False

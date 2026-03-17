@@ -8,6 +8,7 @@ so stakeholders can see overall coverage at a glance.
 from __future__ import annotations
 
 import argparse
+import io
 import sqlite3
 import sys
 from collections import defaultdict
@@ -20,6 +21,10 @@ from src.lib.settings import load_settings
 # ---------------------------------------------------------------------------
 # helpers
 # ---------------------------------------------------------------------------
+
+# Markers used in docs/index.md to delimit the auto-generated progress block.
+_PROGRESS_MARKER_START = "<!-- SCAN_PROGRESS_START -->"
+_PROGRESS_MARKER_END = "<!-- SCAN_PROGRESS_END -->"
 
 def _progress_bar(completed: int, total: int, width: int = 20) -> str:
     """Return a simple ASCII progress bar."""
@@ -82,6 +87,94 @@ def generate_progress_report(db_path: Path, output_path: Path) -> None:
         conn.close()
 
     print(f"Report generated: {output_path}")
+
+
+def update_index_progress(index_path: Path, db_path: Path) -> bool:
+    """Replace the progress block in *index_path* with fresh scan stats.
+
+    The block is delimited by ``<!-- SCAN_PROGRESS_START -->`` and
+    ``<!-- SCAN_PROGRESS_END -->`` HTML comments.  If the markers are not
+    found, the file is left unchanged and ``False`` is returned.
+
+    Returns ``True`` when the index file was successfully updated.
+    """
+    if not index_path.exists():
+        print(f"Index file not found: {index_path}", file=sys.stderr)
+        return False
+
+    content = index_path.read_text(encoding="utf-8")
+    start_idx = content.find(_PROGRESS_MARKER_START)
+    end_idx = content.find(_PROGRESS_MARKER_END)
+
+    if start_idx == -1 or end_idx == -1:
+        print(
+            f"Progress markers not found in {index_path}. "
+            "Add <!-- SCAN_PROGRESS_START --> and <!-- SCAN_PROGRESS_END --> "
+            "to the file first.",
+            file=sys.stderr,
+        )
+        return False
+
+    generated_at = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    buf = io.StringIO()
+    buf.write(_PROGRESS_MARKER_START + "\n\n")
+    buf.write(f"_Progress as of {generated_at}_\n\n")
+
+    if db_path.exists():
+        conn = sqlite3.connect(db_path)
+        conn.row_factory = sqlite3.Row
+        try:
+            url_val = _query_url_validation(conn)
+            social = _query_social_media(conn)
+            tech = _query_technology(conn)
+        finally:
+            conn.close()
+
+        uv_total = sum(d["total"] for d in url_val.values())
+        uv_valid = sum(d["valid"] for d in url_val.values())
+        sm_total = sum(d["total"] for d in social.values())
+        sm_reachable = sum(d["reachable"] for d in social.values())
+        tech_total = sum(d["total"] for d in tech.values())
+        all_countries = sorted(set(url_val) | set(social) | set(tech))
+
+        buf.write("| Scan Type | URLs Scanned | Coverage |\n")
+        buf.write("|-----------|-------------|----------|\n")
+        buf.write(
+            f"| Social Media | {sm_total:,} scanned "
+            f"({sm_reachable:,} reachable) | "
+            f"{_progress_bar(sm_reachable, sm_total)} |\n"
+        )
+        buf.write(
+            f"| URL Validation | {uv_total:,} URLs "
+            f"({uv_valid:,} valid) | "
+            f"{_progress_bar(uv_valid, uv_total)} |\n"
+        )
+        if tech_total:
+            buf.write(
+                f"| Technology | {tech_total:,} URLs scanned | "
+                f"{_progress_bar(tech_total, sm_total or uv_total or 1)} |\n"
+            )
+        buf.write("\n")
+        buf.write(
+            f"**{len(all_countries)} countries** with scan data. "
+            "See the [Scan Progress Report](scan-progress.md) for full details.\n\n"
+        )
+    else:
+        buf.write(
+            "_No scan data yet — progress updates automatically after every scan run._\n\n"
+        )
+
+    buf.write(_PROGRESS_MARKER_END)
+
+    new_block = buf.getvalue()
+    new_content = (
+        content[:start_idx]
+        + new_block
+        + content[end_idx + len(_PROGRESS_MARKER_END):]
+    )
+    index_path.write_text(new_content, encoding="utf-8")
+    print(f"Index updated: {index_path}")
+    return True
 
 
 def _query_url_validation(conn: sqlite3.Connection) -> dict[str, dict]:
@@ -473,6 +566,19 @@ def main() -> None:
         help="Database file path (overrides settings)",
         type=Path,
     )
+    parser.add_argument(
+        "--update-index",
+        help=(
+            "Path to docs/index.md (or similar) whose "
+            "<!-- SCAN_PROGRESS_START/END --> block should be updated with "
+            "the latest scan summary (default: docs/index.md)"
+        ),
+        type=Path,
+        nargs="?",
+        const=Path("docs/index.md"),
+        default=None,
+        metavar="INDEX_PATH",
+    )
 
     args = parser.parse_args()
 
@@ -485,6 +591,8 @@ def main() -> None:
     try:
         args.output.parent.mkdir(parents=True, exist_ok=True)
         generate_progress_report(db_path, args.output)
+        if args.update_index is not None:
+            update_index_progress(args.update_index, db_path)
     except Exception as exc:
         print(f"Error generating report: {exc}")
         import traceback
