@@ -123,6 +123,11 @@ python3 -m src.cli.generate_validation_report --output validation-report.md
 - Use `src/lib/country_utils.py` for any country-code / filename conversions
 - Respect rate limits in `src/services/url_validator.py` — do not bypass them
 - When modifying the schema, update `src/storage/schema.py` and add a migration comment
+- **Disclose AI use:** whenever you use an AI tool to contribute to this repository — whether
+  for writing code, tests, or documentation — update the **AI Disclosure** section in
+  `README.md` to record which LLM(s) were used, what they were used for (build-time
+  assistance, runtime inference, browser-based features, etc.), and whether any AI runs as
+  part of the application at runtime
 
 ## What AI Agents Should NOT Do
 

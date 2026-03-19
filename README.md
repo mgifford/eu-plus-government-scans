@@ -155,6 +155,41 @@ python3 -m src.cli.generate_validation_report --output validation-report.md
 
 See [docs/url-validation-scanner.md](docs/url-validation-scanner.md) for detailed CLI usage.
 
+## AI Disclosure
+
+This project is committed to transparency about how artificial intelligence tools have been
+used in its development and operation.
+
+### Build-time AI assistance
+
+AI coding assistants (large language models) have been used to help write, review, and refine
+code and documentation in this repository. Known uses include:
+
+| Tool / LLM | What it was used for |
+|---|---|
+| GitHub Copilot (OpenAI Codex / GPT-4 family) | Code completion, refactoring suggestions, and inline documentation while writing Python source files |
+| Claude (Anthropic) | PR reviews, writing and editing documentation (README, AGENTS.md, docs/), and code-generation tasks via the GitHub Copilot Coding Agent |
+| ChatGPT / GPT-4 (OpenAI) | Answering design questions and reviewing draft implementations |
+
+> **Note for contributors and AI agents:** if you use an AI tool while contributing to this
+> repository — whether for writing code, tests, or documentation — please add or update the
+> row for that tool in the table above and describe what it was used for.
+
+### Runtime AI
+
+**No AI model runs as part of the application at runtime.** The validation scanner, batch
+coordinator, social-media scanner, and technology-detection service all use deterministic
+rule-based or HTTP-based logic only (HTTPX, BeautifulSoup4, python-Wappalyzer). No inference
+calls are made to any LLM API during normal operation.
+
+### Browser-based AI
+
+**No browser-based AI (e.g. browser extensions, client-side LLM inference, or AI-powered
+browser automation) is used to run any part of this application.** All automation runs
+server-side via GitHub Actions using the Python CLI entry points documented above.
+
+---
+
 ## Next steps
 
 - Continue implementation by work package (`WP02`, `WP03`, ...)
