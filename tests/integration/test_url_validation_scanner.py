@@ -344,4 +344,88 @@ async def test_scanner_skips_recently_confirmed_urls(temp_settings, sample_toon_
     # All three URLs were recently confirmed → none should be re-validated
     assert stats["urls_skipped_recently_confirmed"] == 3
     assert stats["urls_validated"] == 0
-    mock_val.assert_called_once_with([], rate_limit_per_second=10)
+    # The validator should have been called with an empty list and the rate
+    # limit; extra keyword args (max_runtime_seconds, start_time, on_result)
+    # are also passed but we only assert on the positional args here.
+    mock_val.assert_called_once()
+    call_args, call_kwargs = mock_val.call_args
+    assert call_args == ([],)
+    assert call_kwargs["rate_limit_per_second"] == 10
+
+
+@pytest.mark.asyncio
+async def test_scanner_stops_early_when_budget_exhausted(temp_settings, sample_toon_file):
+    """scan_country should stop early when the runtime budget is exhausted."""
+    import time
+    from unittest.mock import AsyncMock, patch
+
+    scanner = UrlValidationScanner(temp_settings)
+
+    # Use a start_time far in the past so the budget is already exhausted.
+    past_start = time.monotonic() - 10_000
+
+    with patch.object(scanner.validator, "validate_urls_batch", new_callable=AsyncMock) as mock_val:
+        mock_val.return_value = {}
+        stats = await scanner.scan_country(
+            country_code="TEST",
+            toon_path=sample_toon_file,
+            rate_limit_per_second=10,
+            max_runtime_seconds=100,   # 100 s budget, but 10,000 s have elapsed
+            start_time=past_start,
+        )
+
+    # No URLs should have been validated because the budget was already exhausted
+    assert stats["urls_validated"] == 0
+    assert stats["is_complete"] is False
+
+
+@pytest.mark.asyncio
+async def test_scanner_incremental_save_via_callback(temp_settings, sample_toon_file):
+    """Each validated URL should be persisted incrementally via the on_result callback."""
+    import sqlite3
+    from unittest.mock import AsyncMock, patch
+    from src.services.url_validator import ValidationResult
+    from datetime import datetime, timezone
+
+    scanner = UrlValidationScanner(temp_settings)
+
+    toon_urls = [
+        "https://httpbin.org/status/200",
+        "https://httpbin.org/status/404",
+    ]
+
+    fake_results = {
+        url: ValidationResult(
+            url=url,
+            is_valid=(i == 0),
+            status_code=200 if i == 0 else 404,
+            validated_at=datetime.now(timezone.utc).isoformat(),
+        )
+        for i, url in enumerate(toon_urls)
+    }
+
+    async def fake_batch(urls, rate_limit_per_second, max_runtime_seconds, start_time, on_result):
+        """Simulate validate_urls_batch calling on_result for each URL."""
+        for url in urls:
+            if url in fake_results:
+                on_result(fake_results[url])
+        return {url: fake_results[url] for url in urls if url in fake_results}
+
+    with patch.object(scanner.validator, "validate_urls_batch", side_effect=fake_batch):
+        stats = await scanner.scan_country(
+            country_code="TEST",
+            toon_path=sample_toon_file,
+            rate_limit_per_second=10,
+        )
+
+    # Verify the on_result callback saved results to DB
+    conn = sqlite3.connect(scanner.db_path)
+    cursor = conn.execute(
+        "SELECT COUNT(*) FROM url_validation_results WHERE country_code = ?",
+        ("TEST",),
+    )
+    count = cursor.fetchone()[0]
+    conn.close()
+
+    assert count == len(fake_results)
+    assert stats["urls_validated"] == len(fake_results)

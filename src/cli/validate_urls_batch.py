@@ -294,6 +294,8 @@ def run_batch_mode(
                     toon_file,
                     rate_limit_per_second=rate_limit,
                     skip_recently_validated_days=skip_recently_validated_days,
+                    max_runtime_seconds=max_runtime_seconds,
+                    start_time=start_time,
                 )
             )
             
@@ -372,6 +374,8 @@ def print_country_stats(stats: dict):
     print(f"Scan ID: {stats['scan_id']}")
     print(f"Total URLs: {stats['total_urls']}")
     print(f"Validated: {stats['urls_validated']}")
+    if not stats.get("is_complete", True):
+        print("  ⚠️  Validation stopped early (time budget reached)")
     print(f"Skipped (failed 2×): {stats['urls_skipped']}")
     recently = stats.get("urls_skipped_recently_confirmed", 0)
     if recently:
