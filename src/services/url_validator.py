@@ -3,9 +3,11 @@
 from __future__ import annotations
 
 import asyncio
+import time
+from collections.abc import Callable
 from dataclasses import dataclass
 from datetime import datetime, timezone
-from typing import Dict, List
+from typing import Dict, List, Optional
 
 import httpx
 
@@ -136,26 +138,61 @@ class UrlValidator:
         self,
         urls: List[str],
         rate_limit_per_second: float = 2.0,
+        max_runtime_seconds: Optional[float] = None,
+        start_time: Optional[float] = None,
+        on_result: Optional[Callable[["ValidationResult"], None]] = None,
     ) -> Dict[str, ValidationResult]:
         """
         Validate multiple URLs with rate limiting.
-        
+
         Args:
-            urls: List of URLs to validate
-            rate_limit_per_second: Maximum requests per second
-            
+            urls: List of URLs to validate.
+            rate_limit_per_second: Maximum requests per second.
+            max_runtime_seconds: Stop validating early when this many seconds
+                have elapsed since *start_time*, leaving a 60-second safety
+                buffer.  ``None`` means no limit.
+            start_time: ``time.monotonic()`` value recorded at the start of
+                the overall job.  When ``None`` the clock starts at the first
+                call to this method.
+            on_result: Optional callback invoked immediately after each URL is
+                validated (before the inter-request delay).  Useful for
+                incremental persistence so that partial results survive a
+                timeout.
+
         Returns:
-            Dictionary mapping URL to ValidationResult
+            Dictionary mapping URL to ValidationResult.  When stopped early
+            the dict contains only the URLs that were actually validated.
         """
         results: Dict[str, ValidationResult] = {}
         delay = 1.0 / rate_limit_per_second if rate_limit_per_second > 0 else 0
-        
+
+        _start = start_time if start_time is not None else time.monotonic()
+        # Stop validating this many seconds before the hard deadline so the
+        # caller has time to flush results and upload artifacts.
+        _safety_buffer = 60.0
+
         total = len(urls)
         for idx, url in enumerate(urls, 1):
+            # Check remaining runtime budget before making the next request.
+            if max_runtime_seconds is not None:
+                elapsed = time.monotonic() - _start
+                remaining = max_runtime_seconds - elapsed
+                if remaining < _safety_buffer:
+                    print(
+                        f"  ⏱️  Time budget near limit "
+                        f"({elapsed / 60:.1f}m elapsed, "
+                        f"{remaining / 60:.1f}m remaining) "
+                        f"— stopping after {idx - 1}/{total} URLs"
+                    )
+                    break
+
             print(f"  [{idx}/{total}] Validating: {url}")
             result = await self.validate_url(url)
             results[url] = result
-            
+
+            if on_result is not None:
+                on_result(result)
+
             # Print result status
             if result.is_valid:
                 status_msg = f"✓ {result.status_code}" if result.status_code else "✓"
@@ -164,9 +201,9 @@ class UrlValidator:
             else:
                 status_msg = f"✗ {result.error_message or 'Failed'}"
             print(f"      {status_msg}")
-            
+
             # Rate limiting delay
             if delay > 0:
                 await asyncio.sleep(delay)
-        
+
         return results
