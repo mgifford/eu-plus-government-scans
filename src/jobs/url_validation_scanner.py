@@ -5,10 +5,11 @@ from __future__ import annotations
 import asyncio
 import json
 import sqlite3
+import time
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Dict, List, Set
+from typing import Any, Dict, List, Optional, Set
 from uuid import uuid4
 
 from src.lib.country_utils import country_filename_to_code
@@ -246,6 +247,8 @@ class UrlValidationScanner:
         toon_path: Path,
         rate_limit_per_second: float = 2.0,
         skip_recently_validated_days: int = 0,
+        max_runtime_seconds: Optional[float] = None,
+        start_time: Optional[float] = None,
     ) -> Dict[str, Any]:
         """
         Scan all URLs in a country's TOON file.
@@ -259,12 +262,20 @@ class UrlValidationScanner:
                 Passing a positive value avoids redundant HTTP requests when
                 the social-media or tech scanner has already fetched the page
                 recently.
-            
+            max_runtime_seconds: Shared runtime budget in seconds measured
+                from *start_time*.  When the remaining budget drops below
+                60 seconds validation stops gracefully.  ``None`` = no limit.
+            start_time: ``time.monotonic()`` value from the start of the
+                overall job.  ``None`` means a fresh clock for this country.
+
         Returns:
             Scan statistics and results
         """
         scan_id = f"{country_code}-{datetime.now(timezone.utc).strftime('%Y%m%d-%H%M%S%f')}-{uuid4().hex[:8]}"
-        
+
+        # Use the caller's start_time so the budget is shared across countries.
+        _start = start_time if start_time is not None else time.monotonic()
+
         print(f"Starting scan {scan_id} for {country_code}")
         print(f"Loading TOON file: {toon_path}")
         
@@ -299,19 +310,21 @@ class UrlValidationScanner:
         
         print(f"Skipping {len(urls_to_skip)} URLs that previously failed twice")
         print(f"Validating {len(urls_to_validate)} URLs")
-        
+
+        # Build an incremental save callback so partial results are persisted
+        # even if the job is stopped early due to a timeout.
+
+        def _save_result(result: ValidationResult) -> None:
+            """Persist a single validation result immediately after it is computed."""
+            self._save_validation_results([result], country_code, scan_id, previous_failures)
+
         # Validate URLs
         validation_results = await self.validator.validate_urls_batch(
             urls_to_validate,
             rate_limit_per_second=rate_limit_per_second,
-        )
-        
-        # Save results
-        self._save_validation_results(
-            list(validation_results.values()),
-            country_code,
-            scan_id,
-            previous_failures,
+            max_runtime_seconds=max_runtime_seconds,
+            start_time=_start,
+            on_result=_save_result,
         )
         
         # Identify newly failed URLs (failed twice total)
@@ -336,8 +349,16 @@ class UrlValidationScanner:
         output_path = toon_path.parent / f"{toon_path.stem}_validated{toon_path.suffix}"
         with output_path.open("w", encoding="utf-8") as f:
             json.dump(updated_toon, f, indent=2, ensure_ascii=False)
-        
-        print(f"Saved updated TOON to: {output_path}")
+
+        scanned_count = len(validation_results)
+        is_complete = scanned_count == len(urls_to_validate)
+        if is_complete:
+            print(f"Saved validated TOON to: {output_path}")
+        else:
+            print(
+                f"Saved partial validated TOON to: {output_path} "
+                f"({scanned_count}/{len(urls_to_validate)} URLs validated)"
+            )
         
         # Calculate statistics
         valid_count = sum(1 for r in validation_results.values() if r.is_valid)
@@ -348,9 +369,10 @@ class UrlValidationScanner:
             "scan_id": scan_id,
             "country_code": country_code,
             "total_urls": len(urls),
-            "urls_validated": len(urls_to_validate),
+            "urls_validated": len(validation_results),
             "urls_skipped": len(urls_to_skip),
             "urls_skipped_recently_confirmed": len(recently_confirmed),
+            "is_complete": is_complete,
             "valid_urls": valid_count,
             "invalid_urls": invalid_count,
             "redirected_urls": redirect_count,
@@ -358,11 +380,12 @@ class UrlValidationScanner:
             "output_path": str(output_path),
         }
         
-        print(f"\nScan complete:")
-        print(f"  Valid: {valid_count}")
-        print(f"  Invalid: {invalid_count}")
-        print(f"  Redirected: {redirect_count}")
-        print(f"  Removed (failed 2x): {len(urls_to_remove)}")
+        print(f"\nValidation {'complete' if is_complete else 'partial'}:")
+        print(f"  Validated:   {scanned_count}/{len(urls_to_validate)}")
+        print(f"  Valid:       {valid_count}")
+        print(f"  Invalid:     {invalid_count}")
+        print(f"  Redirected:  {redirect_count}")
+        print(f"  Removed (failed 2×): {len(urls_to_remove)}")
         if recently_confirmed:
             print(f"  Skipped (recently confirmed): {len(recently_confirmed)}")
         
@@ -373,36 +396,65 @@ class UrlValidationScanner:
         toon_seeds_dir: Path,
         rate_limit_per_second: float = 2.0,
         skip_recently_validated_days: int = 0,
+        max_runtime_seconds: Optional[float] = None,
     ) -> List[Dict[str, Any]]:
         """
         Scan all TOON files in a directory.
-        
+
+        Stops gracefully before *max_runtime_seconds* elapses so that partial
+        results can be saved and the GitHub Actions job is not hard-cancelled.
+
         Args:
-            toon_seeds_dir: Directory containing TOON files
-            rate_limit_per_second: Max requests per second per country
+            toon_seeds_dir: Directory containing TOON files.
+            rate_limit_per_second: Max requests per second per country.
             skip_recently_validated_days: Skip URLs confirmed reachable by any
                 scanner within this many days (0 = always re-validate).
-            
+            max_runtime_seconds: Shared runtime budget in seconds.  The job
+                will not *start* a new country when fewer than 5 minutes remain,
+                and will pass the remaining budget into each country scan so
+                that even a large country stops gracefully mid-way if needed.
+                ``None`` means no limit.
+
         Returns:
             List of scan statistics for each country
         """
         all_stats = []
-        
+
         # Find all .toon files
         toon_files = list(toon_seeds_dir.glob("*.toon"))
-        
+
         print(f"Found {len(toon_files)} TOON files to process")
-        
+
+        start_time = time.monotonic()
+        # Reserve this many seconds at the end so we don't attempt to start a
+        # fresh country scan when there is not enough time left.
+        _country_start_buffer = 5 * 60  # 5 minutes
+
         for toon_path in sorted(toon_files):
             # Extract country code from filename using utility function
             country_code = country_filename_to_code(toon_path.stem)
-            
+
+            # Check whether enough time remains to begin a new country.
+            if max_runtime_seconds is not None:
+                elapsed = time.monotonic() - start_time
+                remaining = max_runtime_seconds - elapsed
+                if remaining < _country_start_buffer:
+                    print(
+                        f"⏱️  Time budget near limit "
+                        f"({elapsed / 60:.1f}m elapsed, "
+                        f"{remaining / 60:.1f}m remaining) "
+                        f"— skipping remaining countries starting with {country_code}"
+                    )
+                    break
+
             try:
                 stats = await self.scan_country(
                     country_code,
                     toon_path,
                     rate_limit_per_second,
                     skip_recently_validated_days=skip_recently_validated_days,
+                    max_runtime_seconds=max_runtime_seconds,
+                    start_time=start_time,
                 )
                 all_stats.append(stats)
             except Exception as e:
@@ -411,5 +463,5 @@ class UrlValidationScanner:
                     "country_code": country_code,
                     "error": str(e),
                 })
-        
+
         return all_stats
