@@ -1,3 +1,8 @@
+---
+title: Technology Scanning
+layout: page
+---
+
 # Technology Scanning
 
 This document describes the technology-detection scan that fingerprints the
@@ -13,6 +18,10 @@ technologies from HTTP response headers and HTML content.  Detected
 technologies (CMS, web server, JavaScript frameworks, analytics, etc.) and
 their versions are stored in the metadata database and written back into an
 annotated `*_tech.toon` TOON file.
+
+Scans run **automatically every 6 hours** via GitHub Actions so that the full
+set of URLs across all countries can be covered gradually without overloading
+government servers.
 
 ---
 
@@ -30,6 +39,12 @@ python3 -m src.cli.scan_technology --country ICELAND --rate-limit 2
 python3 -m src.cli.scan_technology --all --rate-limit 2
 ```
 
+### Scan all countries with a runtime cap (recommended for CI)
+
+```bash
+python3 -m src.cli.scan_technology --all --max-runtime 110 --rate-limit 2.0
+```
+
 ### Command-line options
 
 | Option | Default | Description |
@@ -38,13 +53,15 @@ python3 -m src.cli.scan_technology --all --rate-limit 2
 | `--all` | — | Scan all countries in the TOON directory |
 | `--toon-dir PATH` | `data/toon-seeds/countries` | Directory with `.toon` seed files |
 | `--rate-limit N` | `2.0` | Maximum HTTP requests per second |
+| `--max-runtime N` | `0` (no limit) | Maximum runtime in minutes.  The scanner stops gracefully before this limit so that partial results can be saved.  Set to ~10 minutes less than the GitHub Actions `timeout-minutes` value. |
 
 ---
 
 ## GitHub Actions
 
 The **Scan Technology Stack** workflow (`.github/workflows/scan-technology.yml`)
-can be triggered manually from the Actions tab:
+runs automatically every 6 hours and can also be triggered manually from the
+Actions tab:
 
 1. Go to **Actions → Scan Technology Stack → Run workflow**
 2. Optionally enter a country code (leave blank to scan all countries)
@@ -55,6 +72,7 @@ Artifacts uploaded after each run:
 | Artifact | Contents |
 |---|---|
 | `tech-scan-<run_number>` | `data/metadata.db`, scan output log, annotated `*_tech.toon` files |
+| `validation-metadata` | `data/metadata.db` (shared with URL validation and social media scans) |
 
 ---
 
@@ -111,7 +129,7 @@ ORDER BY scanned_at DESC;
 ## Architecture
 
 ```
-scan-technology.yml (GitHub Actions)
+scan-technology.yml (GitHub Actions — every 6 hours)
     ↓
 scan_technology.py (CLI)
     ↓
@@ -123,7 +141,7 @@ For each URL:
     httpx.get()  →  HTML + headers
     Wappalyzer.analyze_with_versions_and_categories()
     ↓
-Save to url_tech_results table
+Save to url_tech_results table (incremental, per URL)
     ↓
 Write *_tech.toon output file
 ```
@@ -138,5 +156,7 @@ Write *_tech.toon output file
   if they use custom or obfuscated stacks.
 - Unlike the URL validator, failed tech scans do **not** mark a URL for removal
   — errors are recorded but the URL is kept in future scan cycles.
+- Results are persisted **incrementally** (one URL at a time) so that partial
+  results are preserved even if the GitHub Actions job times out.
 - The `*_tech.toon` output files are excluded from version control (see
   `.gitignore`).
