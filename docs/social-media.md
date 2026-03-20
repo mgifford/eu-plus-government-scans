@@ -10,6 +10,16 @@ social media links, which platforms are tracked, and how to access the results.
 
 ---
 
+## Current Stats
+
+<!-- SOCIAL_MEDIA_STATS_START -->
+
+_No scan data yet — stats update automatically after every scan run._
+
+<!-- SOCIAL_MEDIA_STATS_END -->
+
+---
+
 ## Overview
 
 The social media scanner fetches each government page and inspects the HTML for
