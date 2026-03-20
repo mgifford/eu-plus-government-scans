@@ -167,6 +167,176 @@ async def test_detect_urls_batch():
 
 
 @pytest.mark.asyncio
+async def test_detect_urls_batch():
+    """Test batch technology detection."""
+    detector = TechDetector(timeout_seconds=10)
+
+    urls = [
+        "https://gov1.example/",
+        "https://gov2.example/",
+    ]
+
+    expected_techs = {"Nginx": {"versions": ["1.24"], "categories": ["Web servers"]}}
+
+    mock_response = Mock()
+    mock_response.status_code = 200
+    mock_response.text = "<html></html>"
+    mock_response.headers = {"server": "nginx/1.24"}
+
+    async def mock_get_side_effect(*args, **kwargs):
+        url_arg = args[0] if args else kwargs.get("url", urls[0])
+        mock_response.url = url_arg
+        return mock_response
+
+    with patch("httpx.AsyncClient") as mock_client:
+        mock_get = AsyncMock(side_effect=mock_get_side_effect)
+        mock_client.return_value.__aenter__.return_value.get = mock_get
+
+        with patch.object(detector, "_get_wappalyzer") as mock_get_wap:
+            mock_wap = Mock()
+            mock_wap.analyze_with_versions_and_categories.return_value = expected_techs
+            mock_get_wap.return_value = mock_wap
+
+            with patch("src.services.tech_detector.WebPage") as mock_webpage_cls:
+                mock_webpage_cls.return_value = Mock()
+                results = await detector.detect_urls_batch(urls, rate_limit_per_second=0)
+
+    assert len(results) == 2
+    for url in urls:
+        assert url in results
+        assert results[url].technologies == expected_techs
+        assert results[url].error_message is None
+
+
+@pytest.mark.asyncio
+async def test_detect_urls_batch_on_result_called_for_each_url():
+    """Test that on_result callback is invoked for every scanned URL."""
+    detector = TechDetector(timeout_seconds=10)
+
+    urls = [
+        "https://gov1.example/",
+        "https://gov2.example/",
+    ]
+
+    mock_response = Mock()
+    mock_response.status_code = 200
+    mock_response.text = "<html></html>"
+    mock_response.headers = {}
+
+    async def mock_get_side_effect(*args, **kwargs):
+        url_arg = args[0] if args else kwargs.get("url", urls[0])
+        mock_response.url = url_arg
+        return mock_response
+
+    collected: list = []
+
+    with patch("httpx.AsyncClient") as mock_client:
+        mock_get = AsyncMock(side_effect=mock_get_side_effect)
+        mock_client.return_value.__aenter__.return_value.get = mock_get
+
+        with patch.object(detector, "_get_wappalyzer") as mock_get_wap:
+            mock_wap = Mock()
+            mock_wap.analyze_with_versions_and_categories.return_value = {}
+            mock_get_wap.return_value = mock_wap
+
+            with patch("src.services.tech_detector.WebPage") as mock_webpage_cls:
+                mock_webpage_cls.return_value = Mock()
+                await detector.detect_urls_batch(
+                    urls,
+                    rate_limit_per_second=0,
+                    on_result=collected.append,
+                )
+
+    assert len(collected) == 2
+    assert {r.url for r in collected} == set(urls)
+
+
+@pytest.mark.asyncio
+async def test_detect_urls_batch_stops_early_when_budget_exhausted():
+    """Test that scanning stops when max_runtime_seconds budget is used up."""
+    import time as time_mod
+
+    detector = TechDetector(timeout_seconds=10)
+
+    urls = [
+        "https://gov1.example/",
+        "https://gov2.example/",
+        "https://gov3.example/",
+    ]
+
+    mock_response = Mock()
+    mock_response.status_code = 200
+    mock_response.text = "<html></html>"
+    mock_response.headers = {}
+
+    async def mock_get_side_effect(*args, **kwargs):
+        url_arg = args[0] if args else kwargs.get("url", urls[0])
+        mock_response.url = url_arg
+        return mock_response
+
+    # Budget is already almost exhausted (only 30 s left, safety buffer is 60 s)
+    elapsed_start = time_mod.monotonic() - 9970  # 9970 s ago → 30 s remaining of 10000
+
+    with patch("httpx.AsyncClient") as mock_client:
+        mock_get = AsyncMock(side_effect=mock_get_side_effect)
+        mock_client.return_value.__aenter__.return_value.get = mock_get
+
+        with patch.object(detector, "_get_wappalyzer") as mock_get_wap:
+            mock_wap = Mock()
+            mock_wap.analyze_with_versions_and_categories.return_value = {}
+            mock_get_wap.return_value = mock_wap
+
+            with patch("src.services.tech_detector.WebPage") as mock_webpage_cls:
+                mock_webpage_cls.return_value = Mock()
+                results = await detector.detect_urls_batch(
+                    urls,
+                    rate_limit_per_second=0,
+                    max_runtime_seconds=10000,
+                    start_time=elapsed_start,
+                )
+
+    # All 3 URLs should be skipped because the budget is already exhausted
+    assert len(results) == 0
+
+
+@pytest.mark.asyncio
+async def test_detect_urls_batch_no_max_runtime_scans_all():
+    """Test that all URLs are scanned when max_runtime_seconds is None."""
+    detector = TechDetector(timeout_seconds=10)
+
+    urls = ["https://gov1.example/", "https://gov2.example/", "https://gov3.example/"]
+
+    mock_response = Mock()
+    mock_response.status_code = 200
+    mock_response.text = "<html></html>"
+    mock_response.headers = {}
+
+    async def mock_get_side_effect(*args, **kwargs):
+        url_arg = args[0] if args else kwargs.get("url", urls[0])
+        mock_response.url = url_arg
+        return mock_response
+
+    with patch("httpx.AsyncClient") as mock_client:
+        mock_get = AsyncMock(side_effect=mock_get_side_effect)
+        mock_client.return_value.__aenter__.return_value.get = mock_get
+
+        with patch.object(detector, "_get_wappalyzer") as mock_get_wap:
+            mock_wap = Mock()
+            mock_wap.analyze_with_versions_and_categories.return_value = {}
+            mock_get_wap.return_value = mock_wap
+
+            with patch("src.services.tech_detector.WebPage") as mock_webpage_cls:
+                mock_webpage_cls.return_value = Mock()
+                results = await detector.detect_urls_batch(
+                    urls,
+                    rate_limit_per_second=0,
+                    max_runtime_seconds=None,
+                )
+
+    assert len(results) == 3
+
+
+@pytest.mark.asyncio
 async def test_detect_url_analysis_error():
     """Test graceful handling of Wappalyzer analysis failure."""
     detector = TechDetector(timeout_seconds=10)

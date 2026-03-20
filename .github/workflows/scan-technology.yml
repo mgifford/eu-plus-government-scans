@@ -1,6 +1,11 @@
 name: Scan Technology Stack
 
 on:
+  # Run every 6 hours so the full set of URLs can be covered gradually
+  # across several days without hammering government servers.
+  schedule:
+    - cron: '0 */6 * * *'
+
   # Allow manual trigger for a single country or all countries
   workflow_dispatch:
     inputs:
@@ -57,14 +62,15 @@ jobs:
             2>&1 | tee tech-scan-output.txt
 
       - name: Run technology scan (all countries)
-        if: ${{ github.event.inputs.country == '' }}
+        if: ${{ github.event.inputs.country == '' || github.event_name == 'schedule' }}
         run: |
           python3 -m src.cli.scan_technology \
             --all \
-            --rate-limit "${{ github.event.inputs.rate_limit }}" \
+            --max-runtime 110 \
+            --rate-limit "${{ github.event.inputs.rate_limit || '2.0' }}" \
             2>&1 | tee tech-scan-output.txt
 
-      - name: Upload artifacts
+      - name: Upload scan results
         if: always()
         uses: actions/upload-artifact@v4
         with:
@@ -76,6 +82,17 @@ jobs:
           retention-days: 90
           if-no-files-found: warn
 
+      - name: Update shared validation metadata
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: validation-metadata
+          path: |
+            data/metadata.db
+          retention-days: 90
+          overwrite: true
+          if-no-files-found: warn
+
       - name: Display scan summary
         if: always()
         run: |
@@ -83,7 +100,7 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           if [ -f tech-scan-output.txt ]; then
             echo '```' >> $GITHUB_STEP_SUMMARY
-            tail -30 tech-scan-output.txt >> $GITHUB_STEP_SUMMARY
+            tail -50 tech-scan-output.txt >> $GITHUB_STEP_SUMMARY
             echo '```' >> $GITHUB_STEP_SUMMARY
           fi
           echo "" >> $GITHUB_STEP_SUMMARY
