@@ -53,6 +53,13 @@ jobs:
             --update-index docs/index.md \
             2>&1 | tee scan-progress-output.txt
 
+      - name: Generate social media stats page
+        run: |
+          python3 -m src.cli.generate_social_media_report \
+            --page docs/social-media.md \
+            --data docs/social-media-data.json \
+            2>&1 | tee social-media-report-output.txt
+
       - name: Generate domains report
         run: |
           python3 -m src.cli.generate_domains_report \
@@ -63,11 +70,12 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/scan-progress.md docs/domains.md docs/index.md
+          git add docs/scan-progress.md docs/domains.md docs/index.md \
+                  docs/social-media.md docs/social-media-data.json
           if git diff --staged --quiet; then
             echo "No changes to commit — reports are up to date."
           else
-            git commit -m "docs: update scan progress and domains reports [skip ci]"
+            git commit -m "docs: update scan progress, social media stats, and domains reports [skip ci]"
             git push
             echo "Reports committed and pushed."
           fi
@@ -81,7 +89,10 @@ jobs:
             docs/scan-progress.md
             docs/domains.md
             docs/index.md
+            docs/social-media.md
+            docs/social-media-data.json
             scan-progress-output.txt
+            social-media-report-output.txt
             domains-report-output.txt
           retention-days: 30
           if-no-files-found: warn
