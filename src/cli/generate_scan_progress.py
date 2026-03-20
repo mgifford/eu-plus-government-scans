@@ -127,6 +127,7 @@ def update_index_progress(index_path: Path, db_path: Path) -> bool:
             url_val = _query_url_validation(conn)
             social = _query_social_media(conn)
             tech = _query_technology(conn)
+            lighthouse = _query_lighthouse(conn)
         finally:
             conn.close()
 
@@ -135,7 +136,8 @@ def update_index_progress(index_path: Path, db_path: Path) -> bool:
         sm_total = sum(d["total"] for d in social.values())
         sm_reachable = sum(d["reachable"] for d in social.values())
         tech_total = sum(d["total"] for d in tech.values())
-        all_countries = sorted(set(url_val) | set(social) | set(tech))
+        lh_total = sum(d["total"] for d in lighthouse.values())
+        all_countries = sorted(set(url_val) | set(social) | set(tech) | set(lighthouse))
 
         buf.write("| Scan Type | URLs Scanned | Coverage |\n")
         buf.write("|-----------|-------------|----------|\n")
@@ -153,6 +155,11 @@ def update_index_progress(index_path: Path, db_path: Path) -> bool:
             buf.write(
                 f"| Technology | {tech_total:,} URLs scanned | "
                 f"{_progress_bar(tech_total, sm_total or uv_total or 1)} |\n"
+            )
+        if lh_total:
+            buf.write(
+                f"| Lighthouse | {lh_total:,} URLs scanned | "
+                f"{_progress_bar(lh_total, sm_total or uv_total or 1)} |\n"
             )
         buf.write("\n")
         buf.write(
@@ -267,11 +274,38 @@ def _query_technology(conn: sqlite3.Connection) -> dict[str, dict]:
     return result
 
 
+def _query_lighthouse(conn: sqlite3.Connection) -> dict[str, dict]:
+    """Return per-country Google Lighthouse scan stats from the database."""
+    result: dict[str, dict] = {}
+    for row in conn.execute(
+        """
+        SELECT country_code,
+               COUNT(DISTINCT url)                                        AS total,
+               AVG(CASE WHEN performance_score IS NOT NULL
+                        THEN performance_score END)                       AS avg_performance,
+               AVG(CASE WHEN accessibility_score IS NOT NULL
+                        THEN accessibility_score END)                     AS avg_accessibility,
+               AVG(CASE WHEN best_practices_score IS NOT NULL
+                        THEN best_practices_score END)                    AS avg_best_practices,
+               AVG(CASE WHEN seo_score IS NOT NULL
+                        THEN seo_score END)                               AS avg_seo,
+               MAX(scanned_at)                                            AS last_scan
+        FROM url_lighthouse_results
+        WHERE error_message IS NULL
+        GROUP BY country_code
+        ORDER BY country_code
+        """
+    ):
+        result[row["country_code"]] = dict(row)
+    return result
+
+
 def _write_overall_coverage(
     f,
     url_val: dict[str, dict],
     social: dict[str, dict],
     tech: dict[str, dict],
+    lighthouse: dict[str, dict] | None = None,
 ) -> None:
     """Write the overall coverage section."""
     uv_total = sum(d["total"] for d in url_val.values())
@@ -279,6 +313,7 @@ def _write_overall_coverage(
     sm_total = sum(d["total"] for d in social.values())
     sm_reachable = sum(d["reachable"] for d in social.values())
     tech_total = sum(d["total"] for d in tech.values())
+    lh_total = sum(d["total"] for d in (lighthouse or {}).values())
 
     f.write("## Overall Coverage\n\n")
     f.write("| Scan Type | URLs Scanned | Coverage |\n")
@@ -296,6 +331,10 @@ def _write_overall_coverage(
     f.write(
         f"| Technology | {tech_total:,} URLs scanned | "
         f"{'(manual scan)' if tech_total == 0 else _progress_bar(tech_total, sm_total or uv_total or 1)} |\n"
+    )
+    f.write(
+        f"| Lighthouse | {lh_total:,} URLs scanned | "
+        f"{'(manual scan)' if lh_total == 0 else _progress_bar(lh_total, sm_total or uv_total or 1)} |\n"
     )
     f.write("\n")
 
@@ -447,6 +486,52 @@ def _write_technology_table(
     f.write("\n")
 
 
+def _write_lighthouse_table(
+    f, lighthouse: dict[str, dict], all_countries: list[str]
+) -> None:
+    """Write the per-country Google Lighthouse scan table (or a placeholder).
+
+    Shows average scores (×100) for Performance, Accessibility,
+    Best Practices, and SEO alongside the last-scan date.
+    """
+    if not lighthouse:
+        f.write(
+            "## Lighthouse Scan\n\n"
+            "_No Lighthouse scans have been run yet. "
+            "Trigger the **Scan Lighthouse** workflow manually._\n\n"
+        )
+        return
+
+    def _pct(val: float | None) -> str:
+        return f"{val * 100:.0f}" if val is not None else "—"
+
+    f.write("## Lighthouse Scan by Country\n\n")
+    f.write(
+        "| Country | URLs | Perf | A11y | Best Practices | SEO | Last Scan |\n"
+    )
+    f.write(
+        "|---------|------|------|------|----------------|-----|----------|\n"
+    )
+    for cc in all_countries:
+        if cc not in lighthouse:
+            continue
+        d = lighthouse[cc]
+        last = (d["last_scan"] or "—")[:10]
+        f.write(
+            f"| {cc} | {d['total']:,} | "
+            f"{_pct(d.get('avg_performance'))} | "
+            f"{_pct(d.get('avg_accessibility'))} | "
+            f"{_pct(d.get('avg_best_practices'))} | "
+            f"{_pct(d.get('avg_seo'))} | "
+            f"{last} |\n"
+        )
+    f.write("\n")
+    f.write(
+        "> Scores are averages across all successfully audited URLs, "
+        "displayed as 0–100 (multiply source values × 100).\n\n"
+    )
+
+
 def _write_pending_sections(
     f,
     url_val: dict[str, dict],
@@ -490,7 +575,11 @@ def _write_priority_guide(f) -> None:
         "and analytics platforms.\n"
     )
     f.write(
-        "3. **URL Validation** — runs every 6 hours in the background; "
+        "3. **Lighthouse Scan** — run on demand; measures performance, "
+        "accessibility (WCAG), best practices, and SEO for each URL.\n"
+    )
+    f.write(
+        "4. **URL Validation** — runs every 6 hours in the background; "
         "a lightweight redirect/404 check that is **automatically skipped** "
         "for URLs already confirmed reachable by a higher-priority scan "
         "within the last 30 days.\n"
@@ -510,8 +599,9 @@ def _write_report(conn: sqlite3.Connection, output_path: Path, generated_at: str
     social = _query_social_media(conn)
     platforms = _query_social_media_platforms(conn)
     tech = _query_technology(conn)
+    lighthouse = _query_lighthouse(conn)
 
-    all_countries = sorted(set(url_val) | set(social) | set(tech))
+    all_countries = sorted(set(url_val) | set(social) | set(tech) | set(lighthouse))
 
     with output_path.open("w", encoding="utf-8") as f:
         f.write("# Scan Progress Report\n\n")
@@ -521,16 +611,18 @@ def _write_report(conn: sqlite3.Connection, output_path: Path, generated_at: str
             "countries. It is regenerated automatically after every scan run.\n\n"
         )
 
-        totals = _write_overall_coverage(f, url_val, social, tech)
+        totals = _write_overall_coverage(f, url_val, social, tech, lighthouse)
         uv_total, uv_valid, sm_total, sm_reachable, tech_total = totals
 
         _write_url_validation_table(f, url_val, all_countries)
         _write_social_media_table(f, social, all_countries)
         _write_social_media_platform_breakdown(f, platforms, all_countries)
         _write_technology_table(f, tech, all_countries)
+        _write_lighthouse_table(f, lighthouse, all_countries)
         _write_pending_sections(f, url_val, social)
         _write_priority_guide(f)
 
+    lh_total = sum(d["total"] for d in lighthouse.values())
     # Print console summary
     print("\n" + "=" * 70)
     print("SCAN PROGRESS SUMMARY")
@@ -538,6 +630,7 @@ def _write_report(conn: sqlite3.Connection, output_path: Path, generated_at: str
     print(f"URL Validation : {uv_valid:,} / {uv_total:,} URLs valid")
     print(f"Social Media   : {sm_reachable:,} / {sm_total:,} URLs reachable")
     print(f"Technology     : {tech_total:,} URLs scanned")
+    print(f"Lighthouse     : {lh_total:,} URLs scanned")
     print(f"Countries      : {len(all_countries)} with data")
     print("=" * 70)
 
