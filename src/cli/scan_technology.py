@@ -40,6 +40,19 @@ def main():
         action="store_true",
     )
 
+    parser.add_argument(
+        "--max-runtime",
+        help=(
+            "Maximum runtime in minutes before stopping gracefully. "
+            "0 = no limit (default).  For --all mode in GitHub Actions set "
+            "this to ~10 minutes less than the workflow timeout-minutes value "
+            "so the job can finish cleanly and upload its artifacts."
+        ),
+        type=int,
+        default=0,
+        dest="max_runtime",
+    )
+
     args = parser.parse_args()
 
     if not args.all and not args.country:
@@ -54,13 +67,22 @@ def main():
     settings = load_settings()
     scanner = TechScanner(settings)
 
+    max_runtime_seconds = args.max_runtime * 60 if args.max_runtime > 0 else None
+
     try:
         if args.all:
-            print("Scanning all countries for technologies...")
+            if max_runtime_seconds is not None:
+                print(
+                    f"Scanning all countries for technologies "
+                    f"(max runtime: {args.max_runtime} minutes)..."
+                )
+            else:
+                print("Scanning all countries for technologies...")
             all_stats = asyncio.run(
                 scanner.scan_all_countries(
                     args.toon_dir,
                     rate_limit_per_second=args.rate_limit,
+                    max_runtime_seconds=max_runtime_seconds,
                 )
             )
 
@@ -74,8 +96,9 @@ def main():
                         f"ERROR - {country_stats['error']}"
                     )
                 else:
+                    complete_flag = "" if country_stats.get("is_complete", True) else " (partial)"
                     print(
-                        f"{country_stats['country_code']}: "
+                        f"{country_stats['country_code']}{complete_flag}: "
                         f"{country_stats['success_count']} scanned, "
                         f"{country_stats['tech_detected_count']} with technologies, "
                         f"{country_stats['error_count']} errors"
@@ -94,6 +117,7 @@ def main():
                     country_code,
                     toon_file,
                     rate_limit_per_second=args.rate_limit,
+                    max_runtime_seconds=max_runtime_seconds,
                 )
             )
 
@@ -102,6 +126,8 @@ def main():
             print("=" * 80)
             print(f"Scan ID:        {stats['scan_id']}")
             print(f"Total URLs:     {stats['total_urls']}")
+            print(f"Scanned:        {stats['urls_scanned']}")
+            print(f"Complete:       {'Yes' if stats.get('is_complete', True) else 'No (stopped early)'}")
             print(f"Success:        {stats['success_count']}")
             print(f"With tech:      {stats['tech_detected_count']}")
             print(f"Errors:         {stats['error_count']}")

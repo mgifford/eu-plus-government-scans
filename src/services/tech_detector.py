@@ -3,10 +3,12 @@
 from __future__ import annotations
 
 import asyncio
+import time
 import warnings
+from collections.abc import Callable
 from dataclasses import dataclass
 from datetime import datetime, timezone
-from typing import Dict, List
+from typing import Dict, List, Optional
 
 import httpx
 from Wappalyzer import WebPage
@@ -139,6 +141,9 @@ class TechDetector:
         self,
         urls: List[str],
         rate_limit_per_second: float = 2.0,
+        max_runtime_seconds: Optional[float] = None,
+        start_time: Optional[float] = None,
+        on_result: Optional[Callable[["TechDetectionResult"], None]] = None,
     ) -> Dict[str, TechDetectionResult]:
         """
         Detect technologies for multiple URLs with rate limiting.
@@ -146,9 +151,19 @@ class TechDetector:
         Args:
             urls: List of URLs to analyse.
             rate_limit_per_second: Maximum requests per second.
+            max_runtime_seconds: Stop scanning early when this many seconds have
+                elapsed since *start_time*, leaving a 60-second safety buffer.
+                ``None`` means no limit.
+            start_time: ``time.monotonic()`` value recorded at the start of the
+                overall job.  When ``None`` the clock starts at the first call
+                to this method.
+            on_result: Optional callback invoked immediately after each URL is
+                scanned (before the inter-request delay).  Useful for incremental
+                persistence so that partial results survive a timeout.
 
         Returns:
-            Dictionary mapping URL to TechDetectionResult.
+            Dictionary mapping URL to TechDetectionResult.  When stopped
+            early the dict contains only the URLs that were actually scanned.
         """
         results: Dict[str, TechDetectionResult] = {}
         delay = 1.0 / rate_limit_per_second if rate_limit_per_second > 0 else 0
@@ -156,11 +171,32 @@ class TechDetector:
         # small (but positive) rate_limit_per_second values.
         delay = min(delay, 60.0)
 
+        _start = start_time if start_time is not None else time.monotonic()
+        # Stop scanning this many seconds before the hard deadline so the
+        # caller has time to flush results and upload artifacts.
+        _safety_buffer = 60.0
+
         total = len(urls)
         for idx, url in enumerate(urls, 1):
+            # Check remaining runtime budget before making the next request.
+            if max_runtime_seconds is not None:
+                elapsed = time.monotonic() - _start
+                remaining = max_runtime_seconds - elapsed
+                if remaining < _safety_buffer:
+                    print(
+                        f"  ⏱️  Time budget near limit "
+                        f"({elapsed / 60:.1f}m elapsed, "
+                        f"{remaining / 60:.1f}m remaining) "
+                        f"— stopping after {idx - 1}/{total} URLs"
+                    )
+                    break
+
             print(f"  [{idx}/{total}] Scanning: {url}")
             result = await self.detect_url(url)
             results[url] = result
+
+            if on_result is not None:
+                on_result(result)
 
             if result.error_message:
                 print(f"      ✗ {result.error_message}")
