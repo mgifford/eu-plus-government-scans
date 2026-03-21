@@ -101,6 +101,22 @@ def populated_db(tmp_path: Path) -> Path:
             ),
         )
 
+        # Lighthouse results
+        for url, performance, accessibility, best_practices, seo, pwa, ts in [
+            ("https://example.is/page1", 0.95, 0.88, 1.0, 0.92, 0.0, "2024-06-06T09:00:00+00:00"),
+            ("https://example.is/page2", 0.70, 0.75, 0.83, 0.80, 0.0, "2024-06-06T09:05:00+00:00"),
+        ]:
+            conn.execute(
+                """
+                INSERT INTO url_lighthouse_results
+                (url, country_code, scan_id,
+                 performance_score, accessibility_score,
+                 best_practices_score, seo_score, pwa_score, scanned_at)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                """,
+                (url, "ICELAND", "lh-001", performance, accessibility, best_practices, seo, pwa, ts),
+            )
+
         conn.commit()
     finally:
         conn.close()
@@ -395,3 +411,58 @@ def test_update_index_progress_missing_index_file(tmp_path: Path):
     result = update_index_progress(index_path, db_path)
 
     assert result is False
+
+
+# ---------------------------------------------------------------------------
+# Tests for Lighthouse section
+# ---------------------------------------------------------------------------
+
+def test_generate_progress_report_lighthouse_section(
+    populated_db: Path, tmp_path: Path
+):
+    """Lighthouse section should appear when Lighthouse scan data exists."""
+    output_path = tmp_path / "report.md"
+    generate_progress_report(populated_db, output_path)
+    content = output_path.read_text()
+
+    assert "## Lighthouse Scan by Country" in content
+    assert "ICELAND" in content
+    # Score columns should be present
+    assert "A11y" in content
+    assert "Perf" in content
+
+
+def test_generate_progress_report_lighthouse_placeholder_when_no_data(
+    empty_db: Path, tmp_path: Path
+):
+    """Lighthouse placeholder should appear when there are no Lighthouse results."""
+    output_path = tmp_path / "report.md"
+    generate_progress_report(empty_db, output_path)
+    content = output_path.read_text()
+
+    assert "Lighthouse Scan" in content
+    assert "No Lighthouse scans have been run yet" in content
+
+
+def test_generate_progress_report_overall_coverage_includes_lighthouse(
+    populated_db: Path, tmp_path: Path
+):
+    """Overall coverage table should include a Lighthouse row."""
+    output_path = tmp_path / "report.md"
+    generate_progress_report(populated_db, output_path)
+    content = output_path.read_text()
+
+    assert "## Overall Coverage" in content
+    assert "Lighthouse" in content
+
+
+def test_generate_progress_report_priority_guide_includes_lighthouse(
+    populated_db: Path, tmp_path: Path
+):
+    """Scan priority guide should mention the Lighthouse scan."""
+    output_path = tmp_path / "report.md"
+    generate_progress_report(populated_db, output_path)
+    content = output_path.read_text()
+
+    assert "Lighthouse Scan" in content
+    assert "accessibility" in content.lower()
