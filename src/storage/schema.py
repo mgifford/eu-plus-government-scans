@@ -79,6 +79,21 @@ class UrlSocialMediaResult:
 
 
 @dataclass(slots=True)
+class UrlLighthouseResult:
+    """Result of a Google Lighthouse scan for a single URL."""
+    url: str
+    country_code: str
+    scan_id: str
+    performance_score: float | None = None    # 0.0–1.0
+    accessibility_score: float | None = None  # 0.0–1.0
+    best_practices_score: float | None = None  # 0.0–1.0
+    seo_score: float | None = None             # 0.0–1.0
+    pwa_score: float | None = None             # 0.0–1.0
+    error_message: str | None = None
+    scanned_at: str | None = None
+
+
+@dataclass(slots=True)
 class ValidationBatchState:
     """Tracks progress of batch validation cycles."""
     cycle_id: str
@@ -172,6 +187,24 @@ CREATE TABLE IF NOT EXISTS url_social_media_results (
 CREATE INDEX IF NOT EXISTS idx_social_media_country ON url_social_media_results(country_code);
 CREATE INDEX IF NOT EXISTS idx_social_media_scan ON url_social_media_results(scan_id);
 CREATE INDEX IF NOT EXISTS idx_social_media_tier ON url_social_media_results(social_tier);
+
+-- Migration: Added url_lighthouse_results table for Google Lighthouse scan results
+CREATE TABLE IF NOT EXISTS url_lighthouse_results (
+    url TEXT NOT NULL,
+    country_code TEXT NOT NULL,
+    scan_id TEXT NOT NULL,
+    performance_score REAL,
+    accessibility_score REAL,
+    best_practices_score REAL,
+    seo_score REAL,
+    pwa_score REAL,
+    error_message TEXT,
+    scanned_at TEXT,
+    PRIMARY KEY (url, scan_id)
+);
+
+CREATE INDEX IF NOT EXISTS idx_lighthouse_country ON url_lighthouse_results(country_code);
+CREATE INDEX IF NOT EXISTS idx_lighthouse_scan ON url_lighthouse_results(scan_id);
 
 CREATE TABLE IF NOT EXISTS validation_batch_state (
     cycle_id TEXT NOT NULL,
