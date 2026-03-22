@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-03-22 14:12 UTC_
+_Generated: 2026-03-22 16:56 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -8,8 +8,8 @@ This report tracks how far along each scan type is across all countries. It is r
 
 | Scan Type | URLs Scanned | Coverage |
 |-----------|-------------|----------|
-| URL Validation | 2,421 URLs (14,979 valid) | ███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ 618.7% |
-| Social Media | 2,963 URLs scanned (5,369 reachable) | ████████████████████████████████████ 181.2% |
+| URL Validation | 2,421 URLs (16,754 valid) | ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ 692.0% |
+| Social Media | 2,978 URLs scanned (8,160 reachable) | ██████████████████████████████████████████████████████ 274.0% |
 | Technology | 0 URLs scanned | (manual scan) |
 | Lighthouse | 0 URLs scanned | (manual scan) |
 
@@ -17,19 +17,19 @@ This report tracks how far along each scan type is across all countries. It is r
 
 | Country | Total | Valid | Invalid | Scan Period | Coverage |
 |---------|-------|-------|---------|-------------|----------|
-| AUSTRIA | 821 | 6,452 | 216 | Mar 2026 | █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ 785.9% |
-| BELGIUM | 1,309 | 8,296 | 535 | Mar 2026 | ███████████████████████████████████████████████████████████████████████████████████████████████ 633.8% |
+| AUSTRIA | 821 | 7,170 | 216 | Mar 2026 | ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ 873.3% |
+| BELGIUM | 1,309 | 9,353 | 538 | Mar 2026 | ███████████████████████████████████████████████████████████████████████████████████████████████████████████ 714.5% |
 | BULGARIA | 291 | 231 | 60 | Mar 2026 | ███████████░░░░ 79.4% |
 
 ## Social Media Scan by Country
 
 | Country | Scanned | Reachable | Twitter-only | Modern | Mixed | No Social | Scan Period |
 |---------|---------|-----------|-------------|--------|-------|-----------|-------------|
-| AUSTRIA | 821 | 1,574 | 60 | 50 | 44 | 1,420 | Mar 2026 |
-| BELGIUM | 1,309 | 2,451 | 405 | 113 | 94 | 1,839 | Mar 2026 |
-| BULGARIA | 291 | 536 | 42 | 22 | 4 | 468 | Mar 2026 |
-| CROATIA | 233 | 462 | 62 | 22 | 6 | 372 | Mar 2026 |
-| CZECHIA | 309 | 346 | 59 | 9 | 4 | 274 | Mar 2026 |
+| AUSTRIA | 821 | 2,361 | 90 | 75 | 66 | 2,130 | Mar 2026 |
+| BELGIUM | 1,309 | 3,679 | 610 | 171 | 141 | 2,757 | Mar 2026 |
+| BULGARIA | 291 | 805 | 63 | 33 | 6 | 703 | Mar 2026 |
+| CROATIA | 233 | 693 | 93 | 33 | 9 | 558 | Mar 2026 |
+| CZECHIA | 324 | 622 | 107 | 20 | 8 | 487 | Mar 2026 |
 
 ## Social Media Platform Breakdown
 
@@ -37,12 +37,12 @@ Number of **reachable** pages per country that link to each platform. A page may
 
 | Country | Reachable | Twitter | X | Bluesky | Mastodon | Legacy % | Modern % |
 |---------|-----------|---------|---|---------|----------|----------|----------|
-| AUSTRIA | 1,574 | 70 | 36 | 32 | 84 | 6.6% | 6.0% |
-| BELGIUM | 2,451 | 359 | 148 | 54 | 177 | 20.4% | 8.4% |
-| BULGARIA | 536 | 36 | 10 | 0 | 26 | 8.6% | 4.9% |
-| CROATIA | 462 | 68 | 0 | 0 | 28 | 14.7% | 6.1% |
-| CZECHIA | 346 | 63 | 0 | 0 | 13 | 18.2% | 3.8% |
-| **Total** | **5,369** | **596** | **194** | **86** | **328** | **14.5%** | **6.9%** |
+| AUSTRIA | 2,361 | 105 | 54 | 48 | 126 | 6.6% | 6.0% |
+| BELGIUM | 3,679 | 541 | 222 | 81 | 267 | 20.4% | 8.5% |
+| BULGARIA | 805 | 54 | 15 | 0 | 39 | 8.6% | 4.8% |
+| CROATIA | 693 | 102 | 0 | 0 | 42 | 14.7% | 6.1% |
+| CZECHIA | 622 | 115 | 1 | 0 | 28 | 18.5% | 4.5% |
+| **Total** | **8,160** | **917** | **292** | **129** | **502** | **14.6%** | **6.9%** |
 
 > **Legacy platforms** (Twitter / X) vs **modern open platforms** (Bluesky / Mastodon) — percentages are share of reachable pages that contain at least one link to any platform in that group.
 
