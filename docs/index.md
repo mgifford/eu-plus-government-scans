@@ -11,9 +11,14 @@ power them.
 
 <!-- SCAN_PROGRESS_START -->
 
-_Progress as of 2026-03-22 00:26 UTC_
+_Progress as of 2026-03-22 02:26 UTC_
 
-_No scan data yet — progress updates automatically after every scan run._
+| Scan Type | URLs Scanned | Coverage |
+|-----------|-------------|----------|
+| Social Media | 2,756 scanned (2,597 reachable) | ██████████████████░░ 94.2% |
+| URL Validation | 0 URLs (0 valid) | ░░░░░░░░░░░░░░░░░░░░ (no data) |
+
+**5 countries** with scan data. See the [Scan Progress Report](scan-progress.md) for full details.
 
 <!-- SCAN_PROGRESS_END -->
 
