@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-03-22 02:26 UTC_
+_Generated: 2026-03-22 03:27 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -8,35 +8,17 @@ This report tracks how far along each scan type is across all countries. It is r
 
 | Scan Type | URLs Scanned | Coverage |
 |-----------|-------------|----------|
-| URL Validation | 0 URLs (0 valid) | ░░░░░░░░░░░░░░░░░░░░ (no data) |
-| Social Media | 2,756 URLs scanned (2,597 reachable) | ██████████████████░░ 94.2% |
+| URL Validation | 2,130 URLs (1,887 valid) | █████████████████░░░ 88.6% |
+| Social Media | 0 URLs scanned (0 reachable) | ░░░░░░░░░░░░░░░░░░░░ (no data) |
 | Technology | 0 URLs scanned | (manual scan) |
 | Lighthouse | 0 URLs scanned | (manual scan) |
 
-## Social Media Scan by Country
+## URL Validation by Country
 
-| Country | Scanned | Reachable | Twitter-only | Modern | Mixed | No Social | Scan Period |
-|---------|---------|-----------|-------------|--------|-------|-----------|-------------|
-| AUSTRIA | 821 | 787 | 30 | 25 | 22 | 710 | Mar 2026 |
-| BELGIUM | 1,309 | 1,227 | 201 | 58 | 47 | 921 | Mar 2026 |
-| BULGARIA | 291 | 268 | 21 | 11 | 2 | 234 | Mar 2026 |
-| CROATIA | 233 | 231 | 31 | 11 | 3 | 186 | Mar 2026 |
-| CZECHIA | 102 | 84 | 17 | 0 | 0 | 67 | Mar 2026 |
-
-## Social Media Platform Breakdown
-
-Number of **reachable** pages per country that link to each platform. A page may link to more than one platform.
-
-| Country | Reachable | Twitter | X | Bluesky | Mastodon | Legacy % | Modern % |
-|---------|-----------|---------|---|---------|----------|----------|----------|
-| AUSTRIA | 787 | 35 | 18 | 16 | 42 | 6.6% | 6.0% |
-| BELGIUM | 1,227 | 178 | 74 | 27 | 90 | 20.2% | 8.6% |
-| BULGARIA | 268 | 18 | 5 | 0 | 13 | 8.6% | 4.9% |
-| CROATIA | 231 | 34 | 0 | 0 | 14 | 14.7% | 6.1% |
-| CZECHIA | 84 | 17 | 0 | 0 | 0 | 20.2% | 0.0% |
-| **Total** | **2,597** | **282** | **97** | **43** | **159** | **14.4%** | **6.9%** |
-
-> **Legacy platforms** (Twitter / X) vs **modern open platforms** (Bluesky / Mastodon) — percentages are share of reachable pages that contain at least one link to any platform in that group.
+| Country | Total | Valid | Invalid | Scan Period | Coverage |
+|---------|-------|-------|---------|-------------|----------|
+| AUSTRIA | 821 | 718 | 208 | Mar 2026 | █████████████░░ 87.5% |
+| BELGIUM | 1,309 | 1,169 | 281 | Mar 2026 | █████████████░░ 89.3% |
 
 ## Technology Scan
 
@@ -46,11 +28,11 @@ _No technology scans have been run yet. Trigger the **Scan Technology Stack** wo
 
 _No Lighthouse scans have been run yet. Trigger the **Scan Lighthouse** workflow manually._
 
-## Countries With Social Scan But No URL Validation
+## Countries Pending Social Media Scan
 
-These countries have social media scan data but no URL validation data (URL validation may have been skipped because the social scan already confirmed reachability):
+These countries have URL validation data but have not yet been scanned for social media links:
 
-`AUSTRIA`, `BELGIUM`, `BULGARIA`, `CROATIA`, `CZECHIA`
+`AUSTRIA`, `BELGIUM`
 
 ## Scan Priority Guide
 
