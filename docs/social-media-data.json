@@ -1,66 +1,66 @@
 {
-  "generated_at": "2026-03-22 14:12 UTC",
+  "generated_at": "2026-03-22 16:56 UTC",
   "summary": {
-    "total_batches": 10,
-    "total_scanned": 2963,
-    "total_reachable": 5369,
-    "twitter_pages": 596,
-    "x_pages": 194,
-    "bluesky_pages": 86,
-    "mastodon_pages": 328,
+    "total_batches": 15,
+    "total_scanned": 2978,
+    "total_reachable": 8160,
+    "twitter_pages": 917,
+    "x_pages": 292,
+    "bluesky_pages": 129,
+    "mastodon_pages": 502,
     "first_scan": "2026-03-22T00:36:33.003106+00:00",
-    "last_scan": "2026-03-22T08:07:52.877453+00:00"
+    "last_scan": "2026-03-22T16:56:19.617583+00:00"
   },
   "by_country": [
     {
       "country_code": "AUSTRIA",
       "total_scanned": 821,
-      "reachable": 1574,
-      "twitter_pages": 70,
-      "x_pages": 36,
-      "bluesky_pages": 32,
-      "mastodon_pages": 84,
-      "last_scan": "2026-03-22T06:44:06.535728+00:00"
+      "reachable": 2361,
+      "twitter_pages": 105,
+      "x_pages": 54,
+      "bluesky_pages": 48,
+      "mastodon_pages": 126,
+      "last_scan": "2026-03-22T15:32:35.406324+00:00"
     },
     {
       "country_code": "BELGIUM",
       "total_scanned": 1309,
-      "reachable": 2451,
-      "twitter_pages": 359,
-      "x_pages": 148,
-      "bluesky_pages": 54,
-      "mastodon_pages": 177,
-      "last_scan": "2026-03-22T07:24:24.573274+00:00"
+      "reachable": 3679,
+      "twitter_pages": 541,
+      "x_pages": 222,
+      "bluesky_pages": 81,
+      "mastodon_pages": 267,
+      "last_scan": "2026-03-22T16:13:07.692391+00:00"
     },
     {
       "country_code": "BULGARIA",
       "total_scanned": 291,
-      "reachable": 536,
-      "twitter_pages": 36,
-      "x_pages": 10,
+      "reachable": 805,
+      "twitter_pages": 54,
+      "x_pages": 15,
       "bluesky_pages": 0,
-      "mastodon_pages": 26,
-      "last_scan": "2026-03-22T07:36:13.675592+00:00"
+      "mastodon_pages": 39,
+      "last_scan": "2026-03-22T16:24:44.017281+00:00"
     },
     {
       "country_code": "CROATIA",
       "total_scanned": 233,
-      "reachable": 462,
-      "twitter_pages": 68,
+      "reachable": 693,
+      "twitter_pages": 102,
       "x_pages": 0,
       "bluesky_pages": 0,
-      "mastodon_pages": 28,
-      "last_scan": "2026-03-22T07:44:35.607959+00:00"
+      "mastodon_pages": 42,
+      "last_scan": "2026-03-22T16:32:31.204294+00:00"
     },
     {
       "country_code": "CZECHIA",
-      "total_scanned": 309,
-      "reachable": 346,
-      "twitter_pages": 63,
-      "x_pages": 0,
+      "total_scanned": 324,
+      "reachable": 622,
+      "twitter_pages": 115,
+      "x_pages": 1,
       "bluesky_pages": 0,
-      "mastodon_pages": 13,
-      "last_scan": "2026-03-22T08:07:52.877453+00:00"
+      "mastodon_pages": 28,
+      "last_scan": "2026-03-22T16:56:19.617583+00:00"
     }
   ]
 }
