@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-03-22 18:04 UTC_
+_Generated: 2026-03-22 19:58 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -9,7 +9,7 @@ This report tracks how far along each scan type is across all countries. It is r
 | Scan Type | URLs Scanned | Coverage |
 |-----------|-------------|----------|
 | URL Validation | 2,421 URLs (16,754 valid) | ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ 692.0% |
-| Social Media | 2,978 URLs scanned (8,160 reachable) | ██████████████████████████████████████████████████████ 274.0% |
+| Social Media | 2,978 URLs scanned (10,950 reachable) | █████████████████████████████████████████████████████████████████████████ 367.7% |
 | Technology | 0 URLs scanned | (manual scan) |
 | Lighthouse | 0 URLs scanned | (manual scan) |
 
@@ -25,11 +25,11 @@ This report tracks how far along each scan type is across all countries. It is r
 
 | Country | Scanned | Reachable | Twitter-only | Modern | Mixed | No Social | Scan Period |
 |---------|---------|-----------|-------------|--------|-------|-----------|-------------|
-| AUSTRIA | 821 | 2,361 | 90 | 75 | 66 | 2,130 | Mar 2026 |
-| BELGIUM | 1,309 | 3,679 | 610 | 171 | 141 | 2,757 | Mar 2026 |
-| BULGARIA | 291 | 805 | 63 | 33 | 6 | 703 | Mar 2026 |
-| CROATIA | 233 | 693 | 93 | 33 | 9 | 558 | Mar 2026 |
-| CZECHIA | 324 | 622 | 107 | 20 | 8 | 487 | Mar 2026 |
+| AUSTRIA | 821 | 3,148 | 120 | 100 | 88 | 2,840 | Mar 2026 |
+| BELGIUM | 1,309 | 4,907 | 815 | 229 | 188 | 3,675 | Mar 2026 |
+| BULGARIA | 291 | 1,073 | 84 | 44 | 8 | 937 | Mar 2026 |
+| CROATIA | 233 | 924 | 124 | 44 | 12 | 744 | Mar 2026 |
+| CZECHIA | 324 | 898 | 155 | 31 | 12 | 700 | Mar 2026 |
 
 ## Social Media Platform Breakdown
 
@@ -37,12 +37,12 @@ Number of **reachable** pages per country that link to each platform. A page may
 
 | Country | Reachable | Twitter | X | Bluesky | Mastodon | Legacy % | Modern % |
 |---------|-----------|---------|---|---------|----------|----------|----------|
-| AUSTRIA | 2,361 | 105 | 54 | 48 | 126 | 6.6% | 6.0% |
-| BELGIUM | 3,679 | 541 | 222 | 81 | 267 | 20.4% | 8.5% |
-| BULGARIA | 805 | 54 | 15 | 0 | 39 | 8.6% | 4.8% |
-| CROATIA | 693 | 102 | 0 | 0 | 42 | 14.7% | 6.1% |
-| CZECHIA | 622 | 115 | 1 | 0 | 28 | 18.5% | 4.5% |
-| **Total** | **8,160** | **917** | **292** | **129** | **502** | **14.6%** | **6.9%** |
+| AUSTRIA | 3,148 | 140 | 72 | 64 | 168 | 6.6% | 6.0% |
+| BELGIUM | 4,907 | 723 | 296 | 108 | 357 | 20.4% | 8.5% |
+| BULGARIA | 1,073 | 72 | 20 | 0 | 52 | 8.6% | 4.8% |
+| CROATIA | 924 | 136 | 0 | 0 | 56 | 14.7% | 6.1% |
+| CZECHIA | 898 | 167 | 2 | 0 | 43 | 18.6% | 4.8% |
+| **Total** | **10,950** | **1,238** | **390** | **172** | **676** | **14.7%** | **6.9%** |
 
 > **Legacy platforms** (Twitter / X) vs **modern open platforms** (Bluesky / Mastodon) — percentages are share of reachable pages that contain at least one link to any platform in that group.
 
