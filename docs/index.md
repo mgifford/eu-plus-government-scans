@@ -11,12 +11,12 @@ power them.
 
 <!-- SCAN_PROGRESS_START -->
 
-_Progress as of 2026-03-22 13:59 UTC_
+_Progress as of 2026-03-22 14:12 UTC_
 
 | Scan Type | URLs Scanned | Coverage |
 |-----------|-------------|----------|
-| Social Media | 2,963 scanned (7,983 reachable) | █████████████████████████████████████████████████████ 269.4% |
-| URL Validation | 2,130 URLs (11,194 valid) | █████████████████████████████████████████████████████████████████████████████████████████████████████████ 525.5% |
+| Social Media | 2,963 scanned (5,369 reachable) | ████████████████████████████████████ 181.2% |
+| URL Validation | 2,421 URLs (14,979 valid) | ███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ 618.7% |
 
 **5 countries** with scan data. See the [Scan Progress Report](scan-progress.md) for full details.
 
