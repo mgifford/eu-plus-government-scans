@@ -1,0 +1,19 @@
+---
+---
+
+@import "minima";
+
+// Responsive tables: allow horizontal scrolling on small screens
+// so wide data tables don't overflow the viewport on mobile.
+.post-content,
+.page-content,
+.home {
+  table {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-collapse: collapse;
+  }
+}

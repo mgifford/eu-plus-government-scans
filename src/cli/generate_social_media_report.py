@@ -33,12 +33,16 @@ _STATS_MARKER_END = "<!-- SOCIAL_MEDIA_STATS_END -->"
 # ---------------------------------------------------------------------------
 
 def _query_summary(conn: sqlite3.Connection) -> dict:
-    """Return aggregate social media scan totals from the database."""
+    """Return aggregate social media scan totals from the database.
+
+    Only the most recent scan result for each URL is considered so that
+    counts do not exceed the number of distinct URLs.
+    """
     row = conn.execute(
         """
         SELECT
             COUNT(DISTINCT scan_id)                                     AS total_batches,
-            COUNT(DISTINCT url)                                         AS total_scanned,
+            COUNT(*)                                                    AS total_scanned,
             SUM(CASE WHEN is_reachable = 1       THEN 1 ELSE 0 END)    AS total_reachable,
             SUM(CASE WHEN twitter_links != '[]'  THEN 1 ELSE 0 END)    AS twitter_pages,
             SUM(CASE WHEN x_links       != '[]'  THEN 1 ELSE 0 END)    AS x_pages,
@@ -46,7 +50,16 @@ def _query_summary(conn: sqlite3.Connection) -> dict:
             SUM(CASE WHEN mastodon_links != '[]' THEN 1 ELSE 0 END)    AS mastodon_pages,
             MIN(scanned_at)                                             AS first_scan,
             MAX(scanned_at)                                             AS last_scan
-        FROM url_social_media_results
+        FROM (
+            SELECT url, scan_id, is_reachable,
+                   twitter_links, x_links, bluesky_links, mastodon_links,
+                   scanned_at,
+                   ROW_NUMBER() OVER (
+                       PARTITION BY url ORDER BY scanned_at DESC
+                   ) AS rn
+            FROM url_social_media_results
+        )
+        WHERE rn = 1
         """
     ).fetchone()
     if row is None:
@@ -55,21 +68,33 @@ def _query_summary(conn: sqlite3.Connection) -> dict:
 
 
 def _query_by_country(conn: sqlite3.Connection) -> list[dict]:
-    """Return per-country social media platform totals."""
+    """Return per-country social media platform totals.
+
+    Only the most recent scan result for each URL is considered.
+    """
     rows = conn.execute(
         """
         SELECT
-            country_code,
-            COUNT(DISTINCT url)                                         AS total_scanned,
+            latest.country_code,
+            COUNT(*)                                                    AS total_scanned,
             SUM(CASE WHEN is_reachable = 1       THEN 1 ELSE 0 END)    AS reachable,
             SUM(CASE WHEN twitter_links != '[]'  THEN 1 ELSE 0 END)    AS twitter_pages,
             SUM(CASE WHEN x_links       != '[]'  THEN 1 ELSE 0 END)    AS x_pages,
             SUM(CASE WHEN bluesky_links  != '[]' THEN 1 ELSE 0 END)    AS bluesky_pages,
             SUM(CASE WHEN mastodon_links != '[]' THEN 1 ELSE 0 END)    AS mastodon_pages,
             MAX(scanned_at)                                             AS last_scan
-        FROM url_social_media_results
-        GROUP BY country_code
-        ORDER BY country_code
+        FROM (
+            SELECT url, country_code, is_reachable,
+                   twitter_links, x_links, bluesky_links, mastodon_links,
+                   scanned_at,
+                   ROW_NUMBER() OVER (
+                       PARTITION BY url ORDER BY scanned_at DESC
+                   ) AS rn
+            FROM url_social_media_results
+        ) latest
+        WHERE latest.rn = 1
+        GROUP BY latest.country_code
+        ORDER BY latest.country_code
         """
     ).fetchall()
     return [dict(r) for r in rows]
@@ -97,23 +122,28 @@ def _build_stats_block(summary: dict, generated_at: str) -> str:
     mastodon = summary.get("mastodon_pages") or 0
     last_scan = (summary.get("last_scan") or "")[:10] or "—"
 
+    def _pct_of_scanned(n: int) -> str:
+        """Return 'n / scanned * 100' as a formatted percentage string."""
+        return f"{n / scanned * 100:.1f}%" if scanned else "—"
+
     lines = [
         _STATS_MARKER_START,
         "",
         f"_Stats as of {generated_at} — last scan: {last_scan}_",
         "",
         f"**{batches:,}** scan batches run &nbsp;|&nbsp; "
-        f"**{scanned:,}** sites crawled so far",
+        f"**{scanned:,}** pages scanned &nbsp;|&nbsp; "
+        f"**{reachable:,}** reachable ({_pct_of_scanned(reachable)})",
         "",
-        "| Platform | Pages with a link |",
-        "|----------|-------------------|",
-        f"| 🐦 Twitter | **{twitter:,}** |",
-        f"| ✖ X | **{x_pages:,}** |",
-        f"| 🦋 Bluesky | **{bluesky:,}** |",
-        f"| 🐘 Mastodon / Fediverse | **{mastodon:,}** |",
+        "| Platform | Pages with a link | % of Scanned Pages |",
+        "|----------|-------------------|--------------------|",
+        f"| 🐦 Twitter | **{twitter:,}** | {_pct_of_scanned(twitter)} |",
+        f"| ✖ X | **{x_pages:,}** | {_pct_of_scanned(x_pages)} |",
+        f"| 🦋 Bluesky | **{bluesky:,}** | {_pct_of_scanned(bluesky)} |",
+        f"| 🐘 Mastodon / Fediverse | **{mastodon:,}** | {_pct_of_scanned(mastodon)} |",
         "",
-        f"**{reachable:,}** of **{scanned:,}** pages were reachable "
-        f"({reachable / scanned * 100:.1f}% reachable rate).",
+        "> A single page may link to more than one platform.  "
+        "Percentages show the share of all scanned pages that link to each platform.",
         "",
         "📥 Machine-readable results: "
         "[social-media-data.json](social-media-data.json)",
