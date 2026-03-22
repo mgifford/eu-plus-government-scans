@@ -1,0 +1,65 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+// ---------------------------------------------------------------------------
+// Responsive table support
+// Prevents wide tables from overflowing on mobile viewports by wrapping
+// them in a horizontally-scrollable container.
+// ---------------------------------------------------------------------------
+
+.page-content table,
+.post-content table,
+article table,
+main table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-collapse: collapse;
+}
+
+// Ensure table cells don't wrap aggressively on narrow screens
+.page-content table th,
+.page-content table td,
+.post-content table th,
+.post-content table td {
+  white-space: nowrap;
+  padding: 0.4em 0.6em;
+}
+
+// On wider screens, allow wrapping again so the table doesn't extend
+// unnecessarily
+@media (min-width: 900px) {
+  .page-content table th,
+  .page-content table td,
+  .post-content table th,
+  .post-content table td {
+    white-space: normal;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Code blocks – prevent horizontal overflow
+// ---------------------------------------------------------------------------
+
+pre,
+code {
+  overflow-x: auto;
+  word-break: break-word;
+}
+
+// ---------------------------------------------------------------------------
+// Navigation – wrap long header links on small screens
+// ---------------------------------------------------------------------------
+
+.site-nav .page-link {
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .site-header .site-nav {
+    flex-wrap: wrap;
+  }
+}

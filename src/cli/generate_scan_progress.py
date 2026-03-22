@@ -9,12 +9,14 @@ from __future__ import annotations
 
 import argparse
 import io
+import json
 import sqlite3
 import sys
 from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
+from src.lib.country_utils import country_filename_to_code
 from src.lib.settings import load_settings
 
 
@@ -30,10 +32,30 @@ def _progress_bar(completed: int, total: int, width: int = 20) -> str:
     """Return a simple ASCII progress bar."""
     if total == 0:
         return "░" * width + " (no data)"
-    pct = completed / total
+    pct = min(completed / total, 1.0)
     filled = int(pct * width)
     bar = "█" * filled + "░" * (width - filled)
     return f"{bar} {pct * 100:.1f}%"
+
+
+def _count_toon_seed_urls(toon_seeds_dir: Path) -> dict[str, int]:
+    """Return a mapping of country_code → page_count from toon seed files.
+
+    Reads every ``*.toon`` file in *toon_seeds_dir* and extracts the
+    ``page_count`` field.  Returns an empty dict when the directory does
+    not exist or contains no seed files.
+    """
+    counts: dict[str, int] = {}
+    if not toon_seeds_dir.is_dir():
+        return counts
+    for toon_file in toon_seeds_dir.glob("*.toon"):
+        try:
+            data = json.loads(toon_file.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            continue
+        country_code = country_filename_to_code(toon_file.stem)
+        counts[country_code] = int(data.get("page_count") or 0)
+    return counts
 
 
 def _format_month_range(first: str | None, last: str | None) -> str:
@@ -65,8 +87,20 @@ def _format_month_range(first: str | None, last: str | None) -> str:
 # report generation
 # ---------------------------------------------------------------------------
 
-def generate_progress_report(db_path: Path, output_path: Path) -> None:
-    """Generate a comprehensive scan-progress report from the database."""
+def generate_progress_report(
+    db_path: Path,
+    output_path: Path,
+    toon_seeds_dir: Path | None = None,
+) -> None:
+    """Generate a comprehensive scan-progress report from the database.
+
+    Args:
+        db_path: Path to the SQLite metadata database.
+        output_path: Output file path for the Markdown report.
+        toon_seeds_dir: Directory containing ``*.toon`` seed files.  When
+            provided the report will include "X of Y available pages scanned"
+            coverage figures in the overall-coverage section.
+    """
 
     generated_at = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
 
@@ -81,20 +115,33 @@ def generate_progress_report(db_path: Path, output_path: Path) -> None:
     conn = sqlite3.connect(db_path)
     conn.row_factory = sqlite3.Row
 
+    seed_counts = _count_toon_seed_urls(toon_seeds_dir) if toon_seeds_dir else {}
+
     try:
-        _write_report(conn, output_path, generated_at)
+        _write_report(conn, output_path, generated_at, seed_counts)
     finally:
         conn.close()
 
     print(f"Report generated: {output_path}")
 
 
-def update_index_progress(index_path: Path, db_path: Path) -> bool:
+def update_index_progress(
+    index_path: Path,
+    db_path: Path,
+    toon_seeds_dir: Path | None = None,
+) -> bool:
     """Replace the progress block in *index_path* with fresh scan stats.
 
     The block is delimited by ``<!-- SCAN_PROGRESS_START -->`` and
     ``<!-- SCAN_PROGRESS_END -->`` HTML comments.  If the markers are not
     found, the file is left unchanged and ``False`` is returned.
+
+    Args:
+        index_path: Path to the ``docs/index.md`` file to update.
+        db_path: Path to the SQLite metadata database.
+        toon_seeds_dir: Directory containing ``*.toon`` seed files.  When
+            provided the coverage column shows scan coverage vs. available
+            pages rather than reachability.
 
     Returns ``True`` when the index file was successfully updated.
     """
@@ -116,6 +163,9 @@ def update_index_progress(index_path: Path, db_path: Path) -> bool:
         return False
 
     generated_at = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    seed_counts = _count_toon_seed_urls(toon_seeds_dir) if toon_seeds_dir else {}
+    total_available = sum(seed_counts.values())
+
     buf = io.StringIO()
     buf.write(_PROGRESS_MARKER_START + "\n\n")
     buf.write(f"_Progress as of {generated_at}_\n\n")
@@ -139,33 +189,42 @@ def update_index_progress(index_path: Path, db_path: Path) -> bool:
         lh_total = sum(d["total"] for d in lighthouse.values())
         all_countries = sorted(set(url_val) | set(social) | set(tech) | set(lighthouse))
 
-        buf.write("| Scan Type | URLs Scanned | Coverage |\n")
-        buf.write("|-----------|-------------|----------|\n")
+        denom = total_available or sm_total or uv_total or 1
+
+        buf.write("| Scan Type | Pages Scanned | Coverage |\n")
+        buf.write("|-----------|--------------|----------|\n")
         buf.write(
             f"| Social Media | {sm_total:,} scanned "
             f"({sm_reachable:,} reachable) | "
-            f"{_progress_bar(sm_reachable, sm_total)} |\n"
+            f"{_progress_bar(sm_total, denom)} |\n"
         )
         buf.write(
-            f"| URL Validation | {uv_total:,} URLs "
+            f"| URL Validation | {uv_total:,} validated "
             f"({uv_valid:,} valid) | "
-            f"{_progress_bar(uv_valid, uv_total)} |\n"
+            f"{_progress_bar(uv_total, denom)} |\n"
         )
         if tech_total:
             buf.write(
-                f"| Technology | {tech_total:,} URLs scanned | "
-                f"{_progress_bar(tech_total, sm_total or uv_total or 1)} |\n"
+                f"| Technology | {tech_total:,} scanned | "
+                f"{_progress_bar(tech_total, denom)} |\n"
             )
         if lh_total:
             buf.write(
-                f"| Lighthouse | {lh_total:,} URLs scanned | "
-                f"{_progress_bar(lh_total, sm_total or uv_total or 1)} |\n"
+                f"| Lighthouse | {lh_total:,} scanned | "
+                f"{_progress_bar(lh_total, denom)} |\n"
             )
         buf.write("\n")
-        buf.write(
-            f"**{len(all_countries)} countries** with scan data. "
-            "See the [Scan Progress Report](scan-progress.md) for full details.\n\n"
-        )
+        if total_available:
+            buf.write(
+                f"**{len(all_countries)} countries** with scan data · "
+                f"**{sm_total:,}** of **{total_available:,}** available pages scanned. "
+                "See the [Scan Progress Report](scan-progress.md) for full details.\n\n"
+            )
+        else:
+            buf.write(
+                f"**{len(all_countries)} countries** with scan data. "
+                "See the [Scan Progress Report](scan-progress.md) for full details.\n\n"
+            )
     else:
         buf.write(
             "_No scan data yet — progress updates automatically after every scan run._\n\n"
@@ -185,16 +244,21 @@ def update_index_progress(index_path: Path, db_path: Path) -> bool:
 
 
 def _query_url_validation(conn: sqlite3.Connection) -> dict[str, dict]:
-    """Return per-country URL validation stats from the database."""
+    """Return per-country URL validation stats from the database.
+
+    Uses COUNT(DISTINCT CASE WHEN … THEN url END) so that each URL is
+    counted at most once per country even when it appears in multiple
+    scan batches.
+    """
     result: dict[str, dict] = {}
     for row in conn.execute(
         """
         SELECT country_code,
-               COUNT(DISTINCT url)                                   AS total,
-               SUM(CASE WHEN is_valid = 1       THEN 1 ELSE 0 END)  AS valid,
-               SUM(CASE WHEN is_valid = 0       THEN 1 ELSE 0 END)  AS invalid,
-               MIN(validated_at)                                     AS first_scan,
-               MAX(validated_at)                                     AS last_scan
+               COUNT(DISTINCT url)                                                   AS total,
+               COUNT(DISTINCT CASE WHEN is_valid = 1 THEN url ELSE NULL END)        AS valid,
+               COUNT(DISTINCT CASE WHEN is_valid = 0 THEN url ELSE NULL END)        AS invalid,
+               MIN(validated_at)                                                     AS first_scan,
+               MAX(validated_at)                                                     AS last_scan
         FROM url_validation_results
         GROUP BY country_code
         ORDER BY country_code
@@ -205,20 +269,25 @@ def _query_url_validation(conn: sqlite3.Connection) -> dict[str, dict]:
 
 
 def _query_social_media(conn: sqlite3.Connection) -> dict[str, dict]:
-    """Return per-country social media scan stats from the database."""
+    """Return per-country social media scan stats from the database.
+
+    Uses COUNT(DISTINCT CASE WHEN … THEN url END) so that each URL is
+    counted at most once per country even when it appears in multiple
+    scan batches.
+    """
     result: dict[str, dict] = {}
     for row in conn.execute(
         """
         SELECT country_code,
-               COUNT(DISTINCT url)                                        AS total,
-               SUM(CASE WHEN is_reachable = 1   THEN 1 ELSE 0 END)       AS reachable,
-               SUM(CASE WHEN social_tier = 'twitter_only'  THEN 1 ELSE 0 END) AS twitter_only,
-               SUM(CASE WHEN social_tier = 'modern_only'   THEN 1 ELSE 0 END) AS modern_only,
-               SUM(CASE WHEN social_tier = 'mixed'         THEN 1 ELSE 0 END) AS mixed,
-               SUM(CASE WHEN social_tier = 'no_social'     THEN 1 ELSE 0 END) AS no_social,
-               SUM(CASE WHEN social_tier = 'unreachable'   THEN 1 ELSE 0 END) AS unreachable,
-               MIN(scanned_at)                                             AS first_scan,
-               MAX(scanned_at)                                             AS last_scan
+               COUNT(DISTINCT url)                                                                   AS total,
+               COUNT(DISTINCT CASE WHEN is_reachable = 1            THEN url ELSE NULL END)         AS reachable,
+               COUNT(DISTINCT CASE WHEN social_tier = 'twitter_only' THEN url ELSE NULL END)        AS twitter_only,
+               COUNT(DISTINCT CASE WHEN social_tier = 'modern_only'  THEN url ELSE NULL END)        AS modern_only,
+               COUNT(DISTINCT CASE WHEN social_tier = 'mixed'        THEN url ELSE NULL END)        AS mixed,
+               COUNT(DISTINCT CASE WHEN social_tier = 'no_social'    THEN url ELSE NULL END)        AS no_social,
+               COUNT(DISTINCT CASE WHEN social_tier = 'unreachable'  THEN url ELSE NULL END)        AS unreachable,
+               MIN(scanned_at)                                                                       AS first_scan,
+               MAX(scanned_at)                                                                       AS last_scan
         FROM url_social_media_results
         GROUP BY country_code
         ORDER BY country_code
@@ -232,22 +301,22 @@ def _query_social_media_platforms(conn: sqlite3.Connection) -> dict[str, dict]:
     """Return per-country platform-level social media link counts.
 
     Counts the number of scanned pages that contain at least one link to each
-    platform (Twitter, X, Bluesky, Mastodon), derived from the stored JSON lists.
+    platform (Twitter, X, Bluesky, Mastodon), derived from the stored JSON
+    lists.  Each URL is counted at most once per country using
+    COUNT(DISTINCT CASE WHEN … THEN url END).
     """
     result: dict[str, dict] = {}
     for row in conn.execute(
         """
         SELECT country_code,
-               COUNT(DISTINCT url)                                            AS total,
-               SUM(CASE WHEN twitter_links  != '[]' THEN 1 ELSE 0 END)       AS has_twitter,
-               SUM(CASE WHEN x_links        != '[]' THEN 1 ELSE 0 END)       AS has_x,
-               SUM(CASE WHEN bluesky_links  != '[]' THEN 1 ELSE 0 END)       AS has_bluesky,
-               SUM(CASE WHEN mastodon_links != '[]' THEN 1 ELSE 0 END)       AS has_mastodon,
-               SUM(CASE WHEN is_reachable = 1       THEN 1 ELSE 0 END)       AS reachable,
-               SUM(CASE WHEN (twitter_links != '[]' OR x_links != '[]')
-                             THEN 1 ELSE 0 END)                               AS has_any_legacy,
-               SUM(CASE WHEN (bluesky_links != '[]' OR mastodon_links != '[]')
-                             THEN 1 ELSE 0 END)                               AS has_any_modern
+               COUNT(DISTINCT url)                                                                                AS total,
+               COUNT(DISTINCT CASE WHEN twitter_links  != '[]' THEN url ELSE NULL END)                          AS has_twitter,
+               COUNT(DISTINCT CASE WHEN x_links        != '[]' THEN url ELSE NULL END)                          AS has_x,
+               COUNT(DISTINCT CASE WHEN bluesky_links  != '[]' THEN url ELSE NULL END)                          AS has_bluesky,
+               COUNT(DISTINCT CASE WHEN mastodon_links != '[]' THEN url ELSE NULL END)                          AS has_mastodon,
+               COUNT(DISTINCT CASE WHEN is_reachable = 1 THEN url ELSE NULL END)                                AS reachable,
+               COUNT(DISTINCT CASE WHEN (twitter_links != '[]' OR x_links != '[]') THEN url ELSE NULL END)      AS has_any_legacy,
+               COUNT(DISTINCT CASE WHEN (bluesky_links != '[]' OR mastodon_links != '[]') THEN url ELSE NULL END) AS has_any_modern
         FROM url_social_media_results
         GROUP BY country_code
         ORDER BY country_code
@@ -306,8 +375,14 @@ def _write_overall_coverage(
     social: dict[str, dict],
     tech: dict[str, dict],
     lighthouse: dict[str, dict] | None = None,
-) -> None:
-    """Write the overall coverage section."""
+    seed_counts: dict[str, int] | None = None,
+) -> tuple:
+    """Write the overall coverage section.
+
+    When *seed_counts* is provided the progress bar denominator is the total
+    number of pages available in the toon seed files; otherwise the total
+    number of scanned URLs is used.
+    """
     uv_total = sum(d["total"] for d in url_val.values())
     uv_valid = sum(d["valid"] for d in url_val.values())
     sm_total = sum(d["total"] for d in social.values())
@@ -315,26 +390,34 @@ def _write_overall_coverage(
     tech_total = sum(d["total"] for d in tech.values())
     lh_total = sum(d["total"] for d in (lighthouse or {}).values())
 
+    total_available = sum((seed_counts or {}).values())
+    denom = total_available or sm_total or uv_total or 1
+
     f.write("## Overall Coverage\n\n")
-    f.write("| Scan Type | URLs Scanned | Coverage |\n")
-    f.write("|-----------|-------------|----------|\n")
+    if total_available:
+        f.write(
+            f"Coverage is measured as pages scanned out of "
+            f"**{total_available:,}** pages available in the seed files.\n\n"
+        )
+    f.write("| Scan Type | Pages Scanned | Coverage |\n")
+    f.write("|-----------|--------------|----------|\n")
     f.write(
-        f"| URL Validation | {uv_total:,} URLs "
+        f"| URL Validation | {uv_total:,} validated "
         f"({uv_valid:,} valid) | "
-        f"{_progress_bar(uv_valid, uv_total)} |\n"
+        f"{_progress_bar(uv_total, denom)} |\n"
     )
     f.write(
-        f"| Social Media | {sm_total:,} URLs scanned "
+        f"| Social Media | {sm_total:,} scanned "
         f"({sm_reachable:,} reachable) | "
-        f"{_progress_bar(sm_reachable, sm_total)} |\n"
+        f"{_progress_bar(sm_total, denom)} |\n"
     )
     f.write(
-        f"| Technology | {tech_total:,} URLs scanned | "
-        f"{'(manual scan)' if tech_total == 0 else _progress_bar(tech_total, sm_total or uv_total or 1)} |\n"
+        f"| Technology | {tech_total:,} scanned | "
+        f"{'(manual scan)' if tech_total == 0 else _progress_bar(tech_total, denom)} |\n"
     )
     f.write(
-        f"| Lighthouse | {lh_total:,} URLs scanned | "
-        f"{'(manual scan)' if lh_total == 0 else _progress_bar(lh_total, sm_total or uv_total or 1)} |\n"
+        f"| Lighthouse | {lh_total:,} scanned | "
+        f"{'(manual scan)' if lh_total == 0 else _progress_bar(lh_total, denom)} |\n"
     )
     f.write("\n")
 
@@ -342,7 +425,10 @@ def _write_overall_coverage(
 
 
 def _write_url_validation_table(
-    f, url_val: dict[str, dict], all_countries: list[str]
+    f,
+    url_val: dict[str, dict],
+    all_countries: list[str],
+    seed_counts: dict[str, int] | None = None,
 ) -> None:
     """Write the per-country URL validation table."""
     if not url_val:
@@ -354,37 +440,43 @@ def _write_url_validation_table(
         if cc not in url_val:
             continue
         d = url_val[cc]
+        available = (seed_counts or {}).get(cc) or d["total"]
         scan_period = _format_month_range(d.get("first_scan"), d.get("last_scan"))
         f.write(
             f"| {cc} | {d['total']:,} | {d['valid']:,} | "
             f"{d['invalid']:,} | {scan_period} | "
-            f"{_progress_bar(d['valid'], d['total'], 15)} |\n"
+            f"{_progress_bar(d['total'], available, 15)} |\n"
         )
     f.write("\n")
 
 
 def _write_social_media_table(
-    f, social: dict[str, dict], all_countries: list[str]
+    f,
+    social: dict[str, dict],
+    all_countries: list[str],
+    seed_counts: dict[str, int] | None = None,
 ) -> None:
     """Write the per-country social media scan table."""
     if not social:
         return
     f.write("## Social Media Scan by Country\n\n")
     f.write(
-        "| Country | Scanned | Reachable | Twitter-only | Modern | "
+        "| Country | Scanned | Available | Reachable | Twitter-only | Modern | "
         "Mixed | No Social | Scan Period |\n"
     )
     f.write(
-        "|---------|---------|-----------|-------------|--------|"
+        "|---------|---------|-----------|-----------|-------------|--------|"
         "-------|-----------|-------------|\n"
     )
     for cc in all_countries:
         if cc not in social:
             continue
         d = social[cc]
+        available = (seed_counts or {}).get(cc, 0)
+        available_str = f"{available:,}" if available else "—"
         scan_period = _format_month_range(d.get("first_scan"), d.get("last_scan"))
         f.write(
-            f"| {cc} | {d['total']:,} | {d['reachable']:,} | "
+            f"| {cc} | {d['total']:,} | {available_str} | {d['reachable']:,} | "
             f"{d['twitter_only']:,} | {d['modern_only']:,} | "
             f"{d['mixed']:,} | {d['no_social']:,} | {scan_period} |\n"
         )
@@ -396,13 +488,15 @@ def _write_social_media_platform_breakdown(
 ) -> None:
     """Write a per-platform social media link count table.
 
-    Shows how many reachable pages per country contain at least one link to
-    each individual platform (Twitter, X, Bluesky, Mastodon).
+    Shows how many scanned pages per country contain at least one link to
+    each individual platform (Twitter, X, Bluesky, Mastodon), plus the
+    percentage of scanned pages.
     """
     if not platforms:
         return
 
     # Aggregate totals for the summary row
+    total_scanned = sum(d["total"] for d in platforms.values())
     total_reachable = sum(d["reachable"] for d in platforms.values())
     total_twitter = sum(d["has_twitter"] for d in platforms.values())
     total_x = sum(d["has_x"] for d in platforms.values())
@@ -413,43 +507,43 @@ def _write_social_media_platform_breakdown(
 
     f.write("## Social Media Platform Breakdown\n\n")
     f.write(
-        "Number of **reachable** pages per country that link to each platform. "
+        "Number of **scanned** pages per country that link to each platform. "
         "A page may link to more than one platform.\n\n"
     )
     f.write(
-        "| Country | Reachable | Twitter | X | Bluesky | Mastodon "
+        "| Country | Scanned | Twitter | X | Bluesky | Mastodon "
         "| Legacy % | Modern % |\n"
     )
     f.write(
-        "|---------|-----------|---------|---|---------|----------"
+        "|---------|---------|---------|---|---------|----------"
         "|----------|----------|\n"
     )
     for cc in all_countries:
         if cc not in platforms:
             continue
         d = platforms[cc]
-        r = d["reachable"]
-        if r > 0:
-            legacy_pct = f"{d['has_any_legacy'] / r * 100:.1f}%"
-            modern_pct = f"{d['has_any_modern'] / r * 100:.1f}%"
+        s = d["total"]
+        if s > 0:
+            legacy_pct = f"{d['has_any_legacy'] / s * 100:.1f}%"
+            modern_pct = f"{d['has_any_modern'] / s * 100:.1f}%"
         else:
             legacy_pct = "—"
             modern_pct = "—"
         f.write(
-            f"| {cc} | {d['reachable']:,} | {d['has_twitter']:,} | "
+            f"| {cc} | {d['total']:,} | {d['has_twitter']:,} | "
             f"{d['has_x']:,} | {d['has_bluesky']:,} | {d['has_mastodon']:,} | "
             f"{legacy_pct} | {modern_pct} |\n"
         )
 
     # Summary / totals row
-    if total_reachable > 0:
-        summary_legacy = f"**{total_legacy / total_reachable * 100:.1f}%**"
-        summary_modern = f"**{total_modern / total_reachable * 100:.1f}%**"
+    if total_scanned > 0:
+        summary_legacy = f"**{total_legacy / total_scanned * 100:.1f}%**"
+        summary_modern = f"**{total_modern / total_scanned * 100:.1f}%**"
     else:
         summary_legacy = "**—**"
         summary_modern = "**—**"
     f.write(
-        f"| **Total** | **{total_reachable:,}** | **{total_twitter:,}** | "
+        f"| **Total** | **{total_scanned:,}** | **{total_twitter:,}** | "
         f"**{total_x:,}** | **{total_bluesky:,}** | **{total_mastodon:,}** | "
         f"{summary_legacy} | {summary_modern} |\n"
     )
@@ -458,7 +552,7 @@ def _write_social_media_platform_breakdown(
     # Narrative summary
     f.write(
         "> **Legacy platforms** (Twitter / X) vs **modern open platforms** "
-        "(Bluesky / Mastodon) — percentages are share of reachable pages "
+        "(Bluesky / Mastodon) — percentages are share of **scanned** pages "
         "that contain at least one link to any platform in that group.\n\n"
     )
 
@@ -592,7 +686,12 @@ def _write_priority_guide(f) -> None:
     )
 
 
-def _write_report(conn: sqlite3.Connection, output_path: Path, generated_at: str) -> None:
+def _write_report(
+    conn: sqlite3.Connection,
+    output_path: Path,
+    generated_at: str,
+    seed_counts: dict[str, int] | None = None,
+) -> None:
     """Query the database and write the Markdown report."""
 
     url_val = _query_url_validation(conn)
@@ -611,11 +710,11 @@ def _write_report(conn: sqlite3.Connection, output_path: Path, generated_at: str
             "countries. It is regenerated automatically after every scan run.\n\n"
         )
 
-        totals = _write_overall_coverage(f, url_val, social, tech, lighthouse)
+        totals = _write_overall_coverage(f, url_val, social, tech, lighthouse, seed_counts)
         uv_total, uv_valid, sm_total, sm_reachable, tech_total = totals
 
-        _write_url_validation_table(f, url_val, all_countries)
-        _write_social_media_table(f, social, all_countries)
+        _write_url_validation_table(f, url_val, all_countries, seed_counts)
+        _write_social_media_table(f, social, all_countries, seed_counts)
         _write_social_media_platform_breakdown(f, platforms, all_countries)
         _write_technology_table(f, tech, all_countries)
         _write_lighthouse_table(f, lighthouse, all_countries)
@@ -624,11 +723,16 @@ def _write_report(conn: sqlite3.Connection, output_path: Path, generated_at: str
 
     lh_total = sum(d["total"] for d in lighthouse.values())
     # Print console summary
+    total_available = sum((seed_counts or {}).values())
     print("\n" + "=" * 70)
     print("SCAN PROGRESS SUMMARY")
     print("=" * 70)
     print(f"URL Validation : {uv_valid:,} / {uv_total:,} URLs valid")
-    print(f"Social Media   : {sm_reachable:,} / {sm_total:,} URLs reachable")
+    if total_available:
+        print(f"Social Media   : {sm_total:,} / {total_available:,} available pages scanned "
+              f"({sm_reachable:,} reachable)")
+    else:
+        print(f"Social Media   : {sm_reachable:,} / {sm_total:,} URLs reachable")
     print(f"Technology     : {tech_total:,} URLs scanned")
     print(f"Lighthouse     : {lh_total:,} URLs scanned")
     print(f"Countries      : {len(all_countries)} with data")
@@ -672,6 +776,15 @@ def main() -> None:
         default=None,
         metavar="INDEX_PATH",
     )
+    parser.add_argument(
+        "--seeds-dir",
+        help=(
+            "Directory containing TOON seed files used to calculate scan "
+            "coverage (default: data/toon-seeds/countries)"
+        ),
+        type=Path,
+        default=Path("data/toon-seeds/countries"),
+    )
 
     args = parser.parse_args()
 
@@ -683,9 +796,9 @@ def main() -> None:
 
     try:
         args.output.parent.mkdir(parents=True, exist_ok=True)
-        generate_progress_report(db_path, args.output)
+        generate_progress_report(db_path, args.output, args.seeds_dir)
         if args.update_index is not None:
-            update_index_progress(args.update_index, db_path)
+            update_index_progress(args.update_index, db_path, args.seeds_dir)
     except Exception as exc:
         print(f"Error generating report: {exc}")
         import traceback
