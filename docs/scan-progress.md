@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-03-22 13:59 UTC_
+_Generated: 2026-03-22 14:12 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -8,8 +8,8 @@ This report tracks how far along each scan type is across all countries. It is r
 
 | Scan Type | URLs Scanned | Coverage |
 |-----------|-------------|----------|
-| URL Validation | 2,130 URLs (11,194 valid) | █████████████████████████████████████████████████████████████████████████████████████████████████████████ 525.5% |
-| Social Media | 2,963 URLs scanned (7,983 reachable) | █████████████████████████████████████████████████████ 269.4% |
+| URL Validation | 2,421 URLs (14,979 valid) | ███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ 618.7% |
+| Social Media | 2,963 URLs scanned (5,369 reachable) | ████████████████████████████████████ 181.2% |
 | Technology | 0 URLs scanned | (manual scan) |
 | Lighthouse | 0 URLs scanned | (manual scan) |
 
@@ -17,18 +17,19 @@ This report tracks how far along each scan type is across all countries. It is r
 
 | Country | Total | Valid | Invalid | Scan Period | Coverage |
 |---------|-------|-------|---------|-------------|----------|
-| AUSTRIA | 821 | 5,017 | 215 | Mar 2026 | ███████████████████████████████████████████████████████████████████████████████████████████ 611.1% |
-| BELGIUM | 1,309 | 6,177 | 534 | Mar 2026 | ██████████████████████████████████████████████████████████████████████ 471.9% |
+| AUSTRIA | 821 | 6,452 | 216 | Mar 2026 | █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ 785.9% |
+| BELGIUM | 1,309 | 8,296 | 535 | Mar 2026 | ███████████████████████████████████████████████████████████████████████████████████████████████ 633.8% |
+| BULGARIA | 291 | 231 | 60 | Mar 2026 | ███████████░░░░ 79.4% |
 
 ## Social Media Scan by Country
 
 | Country | Scanned | Reachable | Twitter-only | Modern | Mixed | No Social | Scan Period |
 |---------|---------|-----------|-------------|--------|-------|-----------|-------------|
-| AUSTRIA | 821 | 2,361 | 90 | 75 | 66 | 2,130 | Mar 2026 |
-| BELGIUM | 1,309 | 3,677 | 610 | 169 | 141 | 2,757 | Mar 2026 |
-| BULGARIA | 291 | 805 | 63 | 33 | 6 | 703 | Mar 2026 |
-| CROATIA | 233 | 694 | 93 | 33 | 9 | 559 | Mar 2026 |
-| CZECHIA | 309 | 446 | 76 | 9 | 4 | 357 | Mar 2026 |
+| AUSTRIA | 821 | 1,574 | 60 | 50 | 44 | 1,420 | Mar 2026 |
+| BELGIUM | 1,309 | 2,451 | 405 | 113 | 94 | 1,839 | Mar 2026 |
+| BULGARIA | 291 | 536 | 42 | 22 | 4 | 468 | Mar 2026 |
+| CROATIA | 233 | 462 | 62 | 22 | 6 | 372 | Mar 2026 |
+| CZECHIA | 309 | 346 | 59 | 9 | 4 | 274 | Mar 2026 |
 
 ## Social Media Platform Breakdown
 
@@ -36,12 +37,12 @@ Number of **reachable** pages per country that link to each platform. A page may
 
 | Country | Reachable | Twitter | X | Bluesky | Mastodon | Legacy % | Modern % |
 |---------|-----------|---------|---|---------|----------|----------|----------|
-| AUSTRIA | 2,361 | 105 | 54 | 48 | 126 | 6.6% | 6.0% |
-| BELGIUM | 3,677 | 541 | 222 | 81 | 265 | 20.4% | 8.4% |
-| BULGARIA | 805 | 54 | 15 | 0 | 39 | 8.6% | 4.8% |
-| CROATIA | 694 | 102 | 0 | 0 | 42 | 14.7% | 6.1% |
-| CZECHIA | 446 | 80 | 0 | 0 | 13 | 17.9% | 2.9% |
-| **Total** | **7,983** | **882** | **291** | **129** | **485** | **14.5%** | **6.8%** |
+| AUSTRIA | 1,574 | 70 | 36 | 32 | 84 | 6.6% | 6.0% |
+| BELGIUM | 2,451 | 359 | 148 | 54 | 177 | 20.4% | 8.4% |
+| BULGARIA | 536 | 36 | 10 | 0 | 26 | 8.6% | 4.9% |
+| CROATIA | 462 | 68 | 0 | 0 | 28 | 14.7% | 6.1% |
+| CZECHIA | 346 | 63 | 0 | 0 | 13 | 18.2% | 3.8% |
+| **Total** | **5,369** | **596** | **194** | **86** | **328** | **14.5%** | **6.9%** |
 
 > **Legacy platforms** (Twitter / X) vs **modern open platforms** (Bluesky / Mastodon) — percentages are share of reachable pages that contain at least one link to any platform in that group.
 
@@ -57,7 +58,7 @@ _No Lighthouse scans have been run yet. Trigger the **Scan Lighthouse** workflow
 
 These countries have social media scan data but no URL validation data (URL validation may have been skipped because the social scan already confirmed reachability):
 
-`BULGARIA`, `CROATIA`, `CZECHIA`
+`CROATIA`, `CZECHIA`
 
 ## Scan Priority Guide
 
