@@ -6,45 +6,45 @@ This report tracks how far along each scan type is across all countries. It is r
 
 ## Overall Coverage
 
-| Scan Type | URLs Scanned | Coverage |
-|-----------|-------------|----------|
-| URL Validation | 2,421 URLs (16,754 valid) | ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ 692.0% |
-| Social Media | 2,978 URLs scanned (8,160 reachable) | ██████████████████████████████████████████████████████ 274.0% |
-| Technology | 0 URLs scanned | (manual scan) |
-| Lighthouse | 0 URLs scanned | (manual scan) |
+| Scan Type | Pages Scanned | Available | Coverage |
+|-----------|--------------|-----------|----------|
+| URL Validation | 2,421 scanned (1,941 valid) | 36,755 | █░░░░░░░░░░░░░░░░░░░ 6.6% |
+| Social Media | 2,978 scanned (787 reachable) | 36,755 | ██░░░░░░░░░░░░░░░░░░ 8.1% |
+| Technology | 0 URLs scanned | — | (manual scan) |
+| Lighthouse | 0 URLs scanned | — | (manual scan) |
 
 ## URL Validation by Country
 
 | Country | Total | Valid | Invalid | Scan Period | Coverage |
 |---------|-------|-------|---------|-------------|----------|
-| AUSTRIA | 821 | 7,170 | 216 | Mar 2026 | ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ 873.3% |
-| BELGIUM | 1,309 | 9,353 | 538 | Mar 2026 | ███████████████████████████████████████████████████████████████████████████████████████████████████████████ 714.5% |
+| AUSTRIA | 821 | 714 | 107 | Mar 2026 | ████████████████░░░░ 87.0% |
+| BELGIUM | 1,309 | 1,238 | 71 | Mar 2026 | ████████████████████ 94.6% |
 | BULGARIA | 291 | 231 | 60 | Mar 2026 | ███████████░░░░ 79.4% |
 
 ## Social Media Scan by Country
 
 | Country | Scanned | Reachable | Twitter-only | Modern | Mixed | No Social | Scan Period |
 |---------|---------|-----------|-------------|--------|-------|-----------|-------------|
-| AUSTRIA | 821 | 2,361 | 90 | 75 | 66 | 2,130 | Mar 2026 |
-| BELGIUM | 1,309 | 3,679 | 610 | 171 | 141 | 2,757 | Mar 2026 |
-| BULGARIA | 291 | 805 | 63 | 33 | 6 | 703 | Mar 2026 |
-| CROATIA | 233 | 693 | 93 | 33 | 9 | 558 | Mar 2026 |
-| CZECHIA | 324 | 622 | 107 | 20 | 8 | 487 | Mar 2026 |
+| AUSTRIA | 821 | 787 | 90 | 75 | 66 | 589 | Mar 2026 |
+| BELGIUM | 1,309 | 1,246 | 170 | 57 | 47 | 972 | Mar 2026 |
+| BULGARIA | 291 | 278 | 21 | 11 | 2 | 244 | Mar 2026 |
+| CROATIA | 233 | 222 | 31 | 11 | 3 | 177 | Mar 2026 |
+| CZECHIA | 324 | 309 | 36 | 7 | 3 | 263 | Mar 2026 |
 
 ## Social Media Platform Breakdown
 
-Number of **reachable** pages per country that link to each platform. A page may link to more than one platform.
+Number of **scanned** pages per country that link to each platform. A page may link to more than one platform.  Percentages show the share of all scanned pages.
 
-| Country | Reachable | Twitter | X | Bluesky | Mastodon | Legacy % | Modern % |
-|---------|-----------|---------|---|---------|----------|----------|----------|
-| AUSTRIA | 2,361 | 105 | 54 | 48 | 126 | 6.6% | 6.0% |
-| BELGIUM | 3,679 | 541 | 222 | 81 | 267 | 20.4% | 8.5% |
-| BULGARIA | 805 | 54 | 15 | 0 | 39 | 8.6% | 4.8% |
-| CROATIA | 693 | 102 | 0 | 0 | 42 | 14.7% | 6.1% |
-| CZECHIA | 622 | 115 | 1 | 0 | 28 | 18.5% | 4.5% |
-| **Total** | **8,160** | **917** | **292** | **129** | **502** | **14.6%** | **6.9%** |
+| Country | Scanned | Reachable | Twitter | X | Bluesky | Mastodon | Legacy % | Modern % |
+|---------|---------|-----------|---------|---|---------|----------|----------|----------|
+| AUSTRIA | 821 | 787 | 105 | 54 | 48 | 126 | 19.4% | 21.2% |
+| BELGIUM | 1,309 | 1,246 | 541 | 222 | 81 | 267 | 58.3% | 26.7% |
+| BULGARIA | 291 | 278 | 54 | 15 | 0 | 39 | 23.7% | 13.4% |
+| CROATIA | 233 | 222 | 102 | 0 | 0 | 42 | 43.8% | 18.0% |
+| CZECHIA | 324 | 309 | 115 | 1 | 0 | 28 | 35.8% | 8.6% |
+| **Total** | **2,978** | **2,842** | **917** | **292** | **129** | **502** | **40.7%** | **21.2%** |
 
-> **Legacy platforms** (Twitter / X) vs **modern open platforms** (Bluesky / Mastodon) — percentages are share of reachable pages that contain at least one link to any platform in that group.
+> **Legacy platforms** (Twitter / X) vs **modern open platforms** (Bluesky / Mastodon) — percentages are share of all scanned pages that contain at least one link to any platform in that group.
 
 ## Technology Scan
 
