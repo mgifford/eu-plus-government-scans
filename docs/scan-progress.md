@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-03-23 12:17 UTC_
+_Generated: 2026-03-23 13:53 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -8,21 +8,22 @@ This report tracks how far along each scan type is across all countries. It is r
 
 Coverage is measured as pages scanned out of **82,714** pages available in the seed files.
 
-| Scan Type | Pages Scanned | Coverage |
-|-----------|--------------|----------|
-| URL Validation | 2,421 validated (2,115 valid) | ░░░░░░░░░░░░░░░░░░░░ 2.9% |
-| Social Media | 2,978 scanned (2,793 reachable) | ░░░░░░░░░░░░░░░░░░░░ 3.6% |
-| Technology | 0 scanned | (manual scan) |
-| Lighthouse | 0 scanned | (manual scan) |
+| Scan Type | Pages Scanned | Available | Coverage |
+|-----------|--------------|-----------|----------|
+| **Combined Reachability** | **2,793 confirmed reachable** | 82,714 | **░░░░░░░░░░░░░░░░░░░░ 3.4%** |
+| URL Validation | 2,421 validated (2,115 valid) | 82,714 | ░░░░░░░░░░░░░░░░░░░░ 2.9% |
+| Social Media | 2,978 scanned (2,793 reachable) | 82,714 | ░░░░░░░░░░░░░░░░░░░░ 3.6% |
+| Technology | 0 scanned | 82,714 | (manual scan) |
+| Lighthouse | 0 scanned | 82,714 | (manual scan) |
 
-> **Combined Reachability** (shown after the next scan run) counts each URL once if it was confirmed reachable by *either* URL Validation or Social Media scanning.  URL Validation automatically skips pages already confirmed reachable by the Social Media scanner (within the last 30 days), so the two individual counts complement rather than duplicate each other.
+> **Combined Reachability** counts each URL once if it was confirmed reachable by *either* URL Validation or Social Media scanning.  URL Validation automatically skips pages already confirmed reachable by the Social Media scanner (within the last 30 days), so the two individual counts complement rather than duplicate each other.
 
 ## URL Validation by Country
 
 | Country | Total | Valid | Invalid | Scan Period | Coverage |
 |---------|-------|-------|---------|-------------|----------|
 | AUSTRIA | 821 | 718 | 127 | Mar 2026 | ███████████████ 100.0% |
-| BELGIUM | 1,309 | 1,166 | 419 | Mar 2026 | ███████████████ 100.0% |
+| BELGIUM | 1,309 | 1,166 | 418 | Mar 2026 | ███████████████ 100.0% |
 | BULGARIA | 291 | 231 | 60 | Mar 2026 | ███████████████ 100.0% |
 
 ## Social Media Scan by Country
@@ -37,16 +38,16 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 ## Social Media Platform Breakdown
 
-Number of **scanned** pages per country that link to each platform. A page may link to more than one platform.
+Number of **scanned** pages per country that link to each platform. A page may link to more than one platform.  Percentages show the share of all scanned pages.
 
-| Country | Scanned | Twitter | X | Bluesky | Mastodon | Legacy % | Modern % |
-|---------|---------|---------|---|---------|----------|----------|----------|
-| AUSTRIA | 821 | 35 | 18 | 16 | 42 | 6.3% | 5.7% |
-| BELGIUM | 1,309 | 182 | 74 | 27 | 90 | 19.3% | 8.0% |
-| BULGARIA | 291 | 18 | 5 | 0 | 13 | 7.9% | 4.5% |
-| CROATIA | 233 | 34 | 0 | 0 | 14 | 14.6% | 6.0% |
-| CZECHIA | 324 | 52 | 1 | 0 | 15 | 16.0% | 4.6% |
-| **Total** | **2,978** | **321** | **98** | **43** | **174** | **13.9%** | **6.5%** |
+| Country | Scanned | Reachable | Twitter | X | Bluesky | Mastodon | Legacy % | Modern % |
+|---------|---------|-----------|---------|---|---------|----------|----------|----------|
+| AUSTRIA | 821 | 787 | 35 | 18 | 16 | 42 | 6.3% | 5.7% |
+| BELGIUM | 1,309 | 1,229 | 182 | 74 | 27 | 90 | 19.3% | 8.0% |
+| BULGARIA | 291 | 269 | 18 | 5 | 0 | 13 | 7.9% | 4.5% |
+| CROATIA | 233 | 232 | 34 | 0 | 0 | 14 | 14.6% | 6.0% |
+| CZECHIA | 324 | 276 | 52 | 1 | 0 | 15 | 16.0% | 4.6% |
+| **Total** | **2,978** | **2,793** | **321** | **98** | **43** | **174** | **13.9%** | **6.5%** |
 
 > **Legacy platforms** (Twitter / X) vs **modern open platforms** (Bluesky / Mastodon) — percentages are share of **scanned** pages that contain at least one link to any platform in that group.
 
