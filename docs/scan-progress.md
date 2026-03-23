@@ -15,6 +15,8 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Technology | 0 scanned | (manual scan) |
 | Lighthouse | 0 scanned | (manual scan) |
 
+> **Combined Reachability** (shown after the next scan run) counts each URL once if it was confirmed reachable by *either* URL Validation or Social Media scanning.  URL Validation automatically skips pages already confirmed reachable by the Social Media scanner (within the last 30 days), so the two individual counts complement rather than duplicate each other.
+
 ## URL Validation by Country
 
 | Country | Total | Valid | Invalid | Scan Period | Coverage |
@@ -72,3 +74,15 @@ Scans are ordered from **highest** to **lowest** priority:
 4. **URL Validation** — runs every 6 hours in the background; a lightweight redirect/404 check that is **automatically skipped** for URLs already confirmed reachable by a higher-priority scan within the last 30 days.
 
 > **Tip:** Run a social media scan first for a new country — this simultaneously validates all URLs *and* collects social media data, avoiding a separate URL-only pass.
+
+### Why are Social Media and URL Validation counts different?
+
+The Social Media scanner runs more frequently than URL Validation and therefore covers more URLs over time.  Because the Social Media scanner already confirms whether each URL is reachable, the URL Validation job automatically *skips* any page already confirmed reachable within the last 30 days.  As a result the two individual scan counts do **not** simply add up — each scan covers a different subset of pages.
+
+**What URL Validation adds beyond Social Media:**
+
+- **Failure tracking** — records how many consecutive times each URL has failed; URLs that fail twice are removed from future scans to keep the seed file accurate.
+- **Redirect-chain capture** — follows and stores the full redirect chain so the seed file can be updated with the final canonical URL.
+- **Lightweight fallback** — a fast HTTP-only check for URLs that the Social Media scanner has not yet reached, without the overhead of downloading and parsing the full page.
+
+The **Combined Reachability** row at the top of the coverage table counts each URL once if it was confirmed reachable by *either* scan, giving the most accurate picture of overall URL health.
