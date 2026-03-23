@@ -335,3 +335,155 @@ def test_generate_social_media_report_preserves_page_structure(
     # Section after the markers
     assert "## Overview" in content
     assert "Some content." in content
+
+
+# ---------------------------------------------------------------------------
+# Tests for duplicate URL handling (inflated counts bug)
+# ---------------------------------------------------------------------------
+
+@pytest.fixture
+def duplicate_scan_db(tmp_path: Path) -> Path:
+    """DB where the same URL appears in two different scan batches."""
+    db_path = tmp_path / "test.db"
+    initialize_schema(f"sqlite:///{db_path}")
+    conn = sqlite3.connect(db_path)
+    try:
+        # Same URL scanned twice in different batches
+        rows = [
+            (
+                "https://example.is/page1", "ICELAND",
+                "social-ICELAND-scan-001", 1,
+                '["https://twitter.com/gov_is"]', '[]', '[]', '[]',
+                "twitter_only", "2024-06-01T10:00:00+00:00",
+            ),
+            # Same URL in a second batch - should NOT be double-counted
+            (
+                "https://example.is/page1", "ICELAND",
+                "social-ICELAND-scan-002", 1,
+                '["https://twitter.com/gov_is"]', '[]', '[]', '[]',
+                "twitter_only", "2024-06-02T10:00:00+00:00",
+            ),
+            (
+                "https://example.is/page2", "ICELAND",
+                "social-ICELAND-scan-001", 0,
+                '[]', '[]', '[]', '[]',
+                "unreachable", "2024-06-01T10:01:00+00:00",
+            ),
+        ]
+        for row in rows:
+            conn.execute(
+                """
+                INSERT INTO url_social_media_results
+                (url, country_code, scan_id, is_reachable,
+                 twitter_links, x_links, bluesky_links, mastodon_links,
+                 social_tier, scanned_at)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                """,
+                row,
+            )
+        conn.commit()
+    finally:
+        conn.close()
+    return db_path
+
+
+def test_query_summary_no_double_counting(duplicate_scan_db: Path):
+    """URL that appears in multiple scan batches should be counted only once."""
+    conn = sqlite3.connect(duplicate_scan_db)
+    conn.row_factory = sqlite3.Row
+    try:
+        result = _query_summary(conn)
+    finally:
+        conn.close()
+
+    assert result["total_batches"] == 2     # 2 distinct scan_ids
+    assert result["total_scanned"] == 2     # only 2 distinct URLs
+    assert result["total_reachable"] == 1   # page1 is reachable (counted once)
+    assert result["twitter_pages"] == 1     # page1 has twitter (counted once)
+
+
+def test_query_by_country_no_double_counting(duplicate_scan_db: Path):
+    """Per-country query must not inflate counts for multi-batch URLs."""
+    conn = sqlite3.connect(duplicate_scan_db)
+    conn.row_factory = sqlite3.Row
+    try:
+        rows = _query_by_country(conn)
+    finally:
+        conn.close()
+
+    assert len(rows) == 1
+    iceland = rows[0]
+    assert iceland["total_scanned"] == 2   # 2 distinct URLs
+    assert iceland["reachable"] == 1       # only page1 is reachable
+    assert iceland["twitter_pages"] == 1   # only page1 has twitter
+
+
+def test_build_stats_block_with_total_available():
+    """Stats block should include coverage line when total_available > 0."""
+    summary = {
+        "total_batches": 5,
+        "total_scanned": 100,
+        "total_reachable": 80,
+        "twitter_pages": 20,
+        "x_pages": 10,
+        "bluesky_pages": 5,
+        "mastodon_pages": 15,
+        "last_scan": "2024-06-01T12:00:00",
+    }
+    block = _build_stats_block(summary, "2024-06-01 12:00 UTC", total_available=1000)
+    assert "100" in block                          # scanned
+    assert "1,000" in block                        # available
+    assert "10.0%" in block                        # 100/1000 coverage
+
+
+def test_generate_social_media_report_json_includes_total_available(
+    populated_db: Path, tmp_path: Path
+):
+    """JSON data file should include total_available when seeds_dir is provided."""
+    # Create a minimal toon seed directory with one file
+    seeds_dir = tmp_path / "seeds"
+    seeds_dir.mkdir()
+    seed_data = {"version": "0.1-seed", "country": "Iceland", "page_count": 50, "domains": []}
+    (seeds_dir / "iceland.toon").write_text(json.dumps(seed_data), encoding="utf-8")
+
+    page_path = tmp_path / "social-media.md"
+    page_path.write_text(_SOCIAL_MEDIA_PAGE_TEMPLATE)
+    data_path = tmp_path / "social-media-data.json"
+
+    generate_social_media_report(populated_db, page_path, data_path, seeds_dir)
+
+    data = json.loads(data_path.read_text())
+    assert data["summary"]["total_available"] == 50
+
+
+# ---------------------------------------------------------------------------
+# Tests for _count_toon_seed_urls
+# ---------------------------------------------------------------------------
+
+def test_count_toon_seed_urls_missing_dir(tmp_path: Path):
+    """Should return empty dict when the directory does not exist."""
+    from src.cli.generate_social_media_report import _count_toon_seed_urls
+    result = _count_toon_seed_urls(tmp_path / "nonexistent")
+    assert result == {}
+
+
+def test_count_toon_seed_urls_empty_dir(tmp_path: Path):
+    """Should return empty dict when the directory contains no .toon files."""
+    from src.cli.generate_social_media_report import _count_toon_seed_urls
+    seeds_dir = tmp_path / "seeds"
+    seeds_dir.mkdir()
+    result = _count_toon_seed_urls(seeds_dir)
+    assert result == {}
+
+
+def test_count_toon_seed_urls_reads_page_count(tmp_path: Path):
+    """Should correctly read page_count from toon seed files."""
+    from src.cli.generate_social_media_report import _count_toon_seed_urls
+    seeds_dir = tmp_path / "seeds"
+    seeds_dir.mkdir()
+    for name, count in [("iceland", 139), ("norway", 239)]:
+        data = {"page_count": count, "domains": []}
+        (seeds_dir / f"{name}.toon").write_text(json.dumps(data), encoding="utf-8")
+    result = _count_toon_seed_urls(seeds_dir)
+    assert result == {"ICELAND": 139, "NORWAY": 239}
+

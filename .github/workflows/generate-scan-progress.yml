@@ -70,6 +70,7 @@ jobs:
           python3 -m src.cli.generate_scan_progress \
             --output docs/scan-progress.md \
             --update-index docs/index.md \
+            --seeds-dir data/toon-seeds/countries \
             2>&1 | tee scan-progress-output.txt
 
       - name: Generate social media stats page
@@ -77,6 +78,7 @@ jobs:
           python3 -m src.cli.generate_social_media_report \
             --page docs/social-media.md \
             --data docs/social-media-data.json \
+            --seeds-dir data/toon-seeds/countries \
             2>&1 | tee social-media-report-output.txt
 
       - name: Generate domains report
