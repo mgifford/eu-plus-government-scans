@@ -13,10 +13,19 @@ power them.
 
 _Progress as of 2026-03-23 08:18 UTC_
 
-| Scan Type | URLs Scanned | Coverage |
-|-----------|-------------|----------|
-| Social Media | 2,978 scanned (10,754 reachable) | ████████████████████████████████████████████████████████████████████████ 361.1% |
-| URL Validation | 2,421 URLs (36,207 valid) | ███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ 1495.5% |
+| Scan Type | Pages Scanned | Available | Coverage |
+|-----------|--------------|-----------|----------|
+| Social Media | 2,978 scanned (787 reachable) | 36,755 | ██░░░░░░░░░░░░░░░░░░ 8.1% |
+| URL Validation | 2,421 scanned (1,941 valid) | 36,755 | █░░░░░░░░░░░░░░░░░░░ 6.6% |
+
+**Social media platforms** (% of scanned pages):
+
+| Platform | Pages | % of Scanned |
+|----------|-------|--------------|
+| 🐦 Twitter | 917 | 30.8% |
+| ✖ X | 292 | 9.8% |
+| 🦋 Bluesky | 129 | 4.3% |
+| 🐘 Mastodon | 502 | 16.9% |
 
 **5 countries** with scan data. See the [Scan Progress Report](scan-progress.md) for full details.
 

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 import sqlite3
 from pathlib import Path
 
@@ -466,3 +467,69 @@ def test_generate_progress_report_priority_guide_includes_lighthouse(
 
     assert "Lighthouse Scan" in content
     assert "accessibility" in content.lower()
+
+
+# ---------------------------------------------------------------------------
+# Tests for toon seed coverage integration
+# ---------------------------------------------------------------------------
+
+
+def _make_seeds_dir(tmp_path: Path, counts: dict) -> Path:
+    """Create a temporary seeds directory with minimal toon files."""
+    seeds_dir = tmp_path / "seeds"
+    seeds_dir.mkdir(exist_ok=True)
+    for country_code, page_count in counts.items():
+        filename = country_code.lower().replace("_", "-") + ".toon"
+        data = {"page_count": page_count, "domains": []}
+        (seeds_dir / filename).write_text(json.dumps(data), encoding="utf-8")
+    return seeds_dir
+
+
+def test_generate_progress_report_with_seeds(populated_db: Path, tmp_path: Path):
+    """Report should show total_available in overall coverage when seeds provided."""
+    seeds_dir = _make_seeds_dir(tmp_path, {"ICELAND": 200, "FRANCE": 500, "GERMANY": 300})
+    output_path = tmp_path / "report.md"
+    generate_progress_report(populated_db, output_path, seeds_dir)
+    content = output_path.read_text()
+
+    assert "1,000" in content      # 200+500+300 total available
+    assert "## Overall Coverage" in content
+
+
+def test_generate_progress_report_social_media_table_shows_available(
+    populated_db: Path, tmp_path: Path
+):
+    """Social media scan table should show 'Available' column when seeds provided."""
+    seeds_dir = _make_seeds_dir(tmp_path, {"ICELAND": 200, "FRANCE": 500, "GERMANY": 300})
+    output_path = tmp_path / "report.md"
+    generate_progress_report(populated_db, output_path, seeds_dir)
+    content = output_path.read_text()
+
+    assert "Available" in content
+
+
+def test_update_index_progress_with_seeds(populated_db: Path, tmp_path: Path):
+    """Index progress block should include available pages total when seeds provided."""
+    seeds_dir = _make_seeds_dir(tmp_path, {"ICELAND": 200, "FRANCE": 500, "GERMANY": 300})
+
+    index_path = tmp_path / "index.md"
+    index_path.write_text(
+        "# Test\n\n<!-- SCAN_PROGRESS_START -->\n_placeholder_\n<!-- SCAN_PROGRESS_END -->\n## Other\n"
+    )
+
+    result = update_index_progress(index_path, populated_db, seeds_dir)
+    assert result is True
+    content = index_path.read_text()
+    assert "1,000" in content    # total available
+
+
+def test_count_toon_seed_urls_in_scan_progress(tmp_path: Path):
+    """_count_toon_seed_urls from generate_scan_progress should work correctly."""
+    from src.cli.generate_scan_progress import _count_toon_seed_urls
+    seeds_dir = tmp_path / "seeds"
+    seeds_dir.mkdir()
+    data = {"page_count": 150, "domains": []}
+    (seeds_dir / "norway.toon").write_text(json.dumps(data), encoding="utf-8")
+    result = _count_toon_seed_urls(seeds_dir)
+    assert result == {"NORWAY": 150}
+
