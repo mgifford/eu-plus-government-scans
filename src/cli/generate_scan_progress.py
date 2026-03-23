@@ -178,6 +178,7 @@ def update_index_progress(
             social = _query_social_media(conn)
             tech = _query_technology(conn)
             lighthouse = _query_lighthouse(conn)
+            combined_reachable = _query_combined_reachability(conn)
         finally:
             conn.close()
 
@@ -187,12 +188,18 @@ def update_index_progress(
         sm_reachable = sum(d["reachable"] for d in social.values())
         tech_total = sum(d["total"] for d in tech.values())
         lh_total = sum(d["total"] for d in lighthouse.values())
+        combined_total = sum(d["confirmed"] for d in combined_reachable.values())
         all_countries = sorted(set(url_val) | set(social) | set(tech) | set(lighthouse))
 
-        denom = total_available or sm_total or uv_total or 1
+        denom = total_available or combined_total or sm_total or uv_total or 1
 
         buf.write("| Scan Type | Pages Scanned | Coverage |\n")
         buf.write("|-----------|--------------|----------|\n")
+        if combined_total:
+            buf.write(
+                f"| **Combined Reachability** | **{combined_total:,} confirmed reachable** | "
+                f"**{_progress_bar(combined_total, denom)}** |\n"
+            )
         buf.write(
             f"| Social Media | {sm_total:,} scanned "
             f"({sm_reachable:,} reachable) | "
@@ -217,7 +224,7 @@ def update_index_progress(
         if total_available:
             buf.write(
                 f"**{len(all_countries)} countries** with scan data · "
-                f"**{sm_total:,}** of **{total_available:,}** available pages scanned. "
+                f"**{combined_total:,}** of **{total_available:,}** available pages confirmed reachable. "
                 "See the [Scan Progress Report](scan-progress.md) for full details.\n\n"
             )
         else:
@@ -326,6 +333,37 @@ def _query_social_media_platforms(conn: sqlite3.Connection) -> dict[str, dict]:
     return result
 
 
+def _query_combined_reachability(conn: sqlite3.Connection) -> dict[str, dict]:
+    """Return per-country counts of URLs confirmed reachable by *any* scan.
+
+    A URL is counted once even if it appears in both
+    ``url_validation_results`` (``is_valid = 1``) and
+    ``url_social_media_results`` (``is_reachable = 1``).  The UNION
+    deduplicates across the two tables so each unique URL is counted at
+    most once per country.
+    """
+    result: dict[str, dict] = {}
+    for row in conn.execute(
+        """
+        SELECT country_code,
+               COUNT(DISTINCT url) AS confirmed
+        FROM (
+            SELECT country_code, url
+            FROM url_validation_results
+            WHERE is_valid = 1
+            UNION
+            SELECT country_code, url
+            FROM url_social_media_results
+            WHERE is_reachable = 1
+        )
+        GROUP BY country_code
+        ORDER BY country_code
+        """
+    ):
+        result[row["country_code"]] = dict(row)
+    return result
+
+
 def _query_technology(conn: sqlite3.Connection) -> dict[str, dict]:
     """Return per-country technology scan stats from the database."""
     result: dict[str, dict] = {}
@@ -376,12 +414,17 @@ def _write_overall_coverage(
     tech: dict[str, dict],
     lighthouse: dict[str, dict] | None = None,
     seed_counts: dict[str, int] | None = None,
+    combined_reachable: dict[str, dict] | None = None,
 ) -> tuple:
     """Write the overall coverage section.
 
     When *seed_counts* is provided the progress bar denominator is the total
     number of pages available in the toon seed files; otherwise the total
     number of scanned URLs is used.
+
+    When *combined_reachable* is provided a summary row is prepended that
+    shows the union of URLs confirmed reachable by *any* scan type (URL
+    Validation or Social Media).
     """
     uv_total = sum(d["total"] for d in url_val.values())
     uv_valid = sum(d["valid"] for d in url_val.values())
@@ -389,9 +432,12 @@ def _write_overall_coverage(
     sm_reachable = sum(d["reachable"] for d in social.values())
     tech_total = sum(d["total"] for d in tech.values())
     lh_total = sum(d["total"] for d in (lighthouse or {}).values())
+    combined_total = sum(d["confirmed"] for d in (combined_reachable or {}).values())
 
     total_available = sum((seed_counts or {}).values())
-    denom = total_available or sm_total or uv_total or 1
+    denom = total_available or combined_total or sm_total or uv_total or 1
+
+    avail_str = f"{total_available:,}" if total_available else "—"
 
     f.write("## Overall Coverage\n\n")
     if total_available:
@@ -399,27 +445,44 @@ def _write_overall_coverage(
             f"Coverage is measured as pages scanned out of "
             f"**{total_available:,}** pages available in the seed files.\n\n"
         )
-    f.write("| Scan Type | Pages Scanned | Coverage |\n")
-    f.write("|-----------|--------------|----------|\n")
+    f.write("| Scan Type | Pages Scanned | Available | Coverage |\n")
+    f.write("|-----------|--------------|-----------|----------|\n")
+    if combined_total:
+        f.write(
+            f"| **Combined Reachability** | **{combined_total:,} confirmed reachable** | "
+            f"{avail_str} | "
+            f"**{_progress_bar(combined_total, denom)}** |\n"
+        )
     f.write(
         f"| URL Validation | {uv_total:,} validated "
         f"({uv_valid:,} valid) | "
+        f"{avail_str} | "
         f"{_progress_bar(uv_total, denom)} |\n"
     )
     f.write(
         f"| Social Media | {sm_total:,} scanned "
         f"({sm_reachable:,} reachable) | "
+        f"{avail_str} | "
         f"{_progress_bar(sm_total, denom)} |\n"
     )
     f.write(
         f"| Technology | {tech_total:,} scanned | "
+        f"{avail_str} | "
         f"{'(manual scan)' if tech_total == 0 else _progress_bar(tech_total, denom)} |\n"
     )
     f.write(
         f"| Lighthouse | {lh_total:,} scanned | "
+        f"{avail_str} | "
         f"{'(manual scan)' if lh_total == 0 else _progress_bar(lh_total, denom)} |\n"
     )
     f.write("\n")
+    f.write(
+        "> **Combined Reachability** counts each URL once if it was confirmed "
+        "reachable by *either* URL Validation or Social Media scanning.  "
+        "URL Validation automatically skips pages already confirmed reachable "
+        "by the Social Media scanner (within the last 30 days), so the two "
+        "individual counts complement rather than duplicate each other.\n\n"
+    )
 
     return uv_total, uv_valid, sm_total, sm_reachable, tech_total
 
@@ -508,14 +571,15 @@ def _write_social_media_platform_breakdown(
     f.write("## Social Media Platform Breakdown\n\n")
     f.write(
         "Number of **scanned** pages per country that link to each platform. "
-        "A page may link to more than one platform.\n\n"
+        "A page may link to more than one platform.  "
+        "Percentages show the share of all scanned pages.\n\n"
     )
     f.write(
-        "| Country | Scanned | Twitter | X | Bluesky | Mastodon "
+        "| Country | Scanned | Reachable | Twitter | X | Bluesky | Mastodon "
         "| Legacy % | Modern % |\n"
     )
     f.write(
-        "|---------|---------|---------|---|---------|----------"
+        "|---------|---------|-----------|---------|---|---------|----------"
         "|----------|----------|\n"
     )
     for cc in all_countries:
@@ -530,7 +594,7 @@ def _write_social_media_platform_breakdown(
             legacy_pct = "—"
             modern_pct = "—"
         f.write(
-            f"| {cc} | {d['total']:,} | {d['has_twitter']:,} | "
+            f"| {cc} | {d['total']:,} | {d['reachable']:,} | {d['has_twitter']:,} | "
             f"{d['has_x']:,} | {d['has_bluesky']:,} | {d['has_mastodon']:,} | "
             f"{legacy_pct} | {modern_pct} |\n"
         )
@@ -543,7 +607,7 @@ def _write_social_media_platform_breakdown(
         summary_legacy = "**—**"
         summary_modern = "**—**"
     f.write(
-        f"| **Total** | **{total_scanned:,}** | **{total_twitter:,}** | "
+        f"| **Total** | **{total_scanned:,}** | **{total_reachable:,}** | **{total_twitter:,}** | "
         f"**{total_x:,}** | **{total_bluesky:,}** | **{total_mastodon:,}** | "
         f"{summary_legacy} | {summary_modern} |\n"
     )
@@ -682,7 +746,29 @@ def _write_priority_guide(f) -> None:
     f.write(
         "> **Tip:** Run a social media scan first for a new country — "
         "this simultaneously validates all URLs *and* collects social "
-        "media data, avoiding a separate URL-only pass.\n"
+        "media data, avoiding a separate URL-only pass.\n\n"
+    )
+    f.write("### Why are Social Media and URL Validation counts different?\n\n")
+    f.write(
+        "The Social Media scanner runs more frequently than URL Validation "
+        "and therefore covers more URLs over time.  Because the Social Media "
+        "scanner already confirms whether each URL is reachable, the URL "
+        "Validation job automatically *skips* any page already confirmed "
+        "reachable within the last 30 days.  As a result the two individual "
+        "scan counts do **not** simply add up — each scan covers a different "
+        "subset of pages.\n\n"
+        "**What URL Validation adds beyond Social Media:**\n\n"
+        "- **Failure tracking** — records how many consecutive times each URL "
+        "has failed; URLs that fail twice are removed from future scans to "
+        "keep the seed file accurate.\n"
+        "- **Redirect-chain capture** — follows and stores the full redirect "
+        "chain so the seed file can be updated with the final canonical URL.\n"
+        "- **Lightweight fallback** — a fast HTTP-only check for URLs that the "
+        "Social Media scanner has not yet reached, without the overhead of "
+        "downloading and parsing the full page.\n\n"
+        "The **Combined Reachability** row at the top of the coverage table "
+        "counts each URL once if it was confirmed reachable by *either* scan, "
+        "giving the most accurate picture of overall URL health.\n"
     )
 
 
@@ -699,6 +785,7 @@ def _write_report(
     platforms = _query_social_media_platforms(conn)
     tech = _query_technology(conn)
     lighthouse = _query_lighthouse(conn)
+    combined_reachable = _query_combined_reachability(conn)
 
     all_countries = sorted(set(url_val) | set(social) | set(tech) | set(lighthouse))
 
@@ -710,7 +797,7 @@ def _write_report(
             "countries. It is regenerated automatically after every scan run.\n\n"
         )
 
-        totals = _write_overall_coverage(f, url_val, social, tech, lighthouse, seed_counts)
+        totals = _write_overall_coverage(f, url_val, social, tech, lighthouse, seed_counts, combined_reachable)
         uv_total, uv_valid, sm_total, sm_reachable, tech_total = totals
 
         _write_url_validation_table(f, url_val, all_countries, seed_counts)
@@ -722,11 +809,14 @@ def _write_report(
         _write_priority_guide(f)
 
     lh_total = sum(d["total"] for d in lighthouse.values())
+    combined_total = sum(d["confirmed"] for d in combined_reachable.values())
     # Print console summary
     total_available = sum((seed_counts or {}).values())
     print("\n" + "=" * 70)
     print("SCAN PROGRESS SUMMARY")
     print("=" * 70)
+    if combined_total:
+        print(f"Combined       : {combined_total:,} URLs confirmed reachable (URL Validation + Social Media)")
     print(f"URL Validation : {uv_valid:,} / {uv_total:,} URLs valid")
     if total_available:
         print(f"Social Media   : {sm_total:,} / {total_available:,} available pages scanned "
