@@ -533,3 +533,120 @@ def test_count_toon_seed_urls_in_scan_progress(tmp_path: Path):
     result = _count_toon_seed_urls(seeds_dir)
     assert result == {"NORWAY": 150}
 
+
+# ---------------------------------------------------------------------------
+# Tests for _query_combined_reachability and Combined Reachability row
+# ---------------------------------------------------------------------------
+
+def test_query_combined_reachability(populated_db: Path):
+    """Combined reachability should count distinct URLs confirmed reachable by either scan."""
+    from src.cli.generate_scan_progress import _query_combined_reachability
+    import sqlite3
+
+    conn = sqlite3.connect(populated_db)
+    conn.row_factory = sqlite3.Row
+    try:
+        result = _query_combined_reachability(conn)
+    finally:
+        conn.close()
+
+    # ICELAND: page1 reachable via both scans (counted once), page3 via both
+    # (counted once), page2 invalid and unreachable → 2 confirmed reachable
+    assert "ICELAND" in result
+    assert result["ICELAND"]["confirmed"] == 2
+
+    # GERMANY: only in social media (page home, reachable) → 1
+    assert "GERMANY" in result
+    assert result["GERMANY"]["confirmed"] == 1
+
+    # FRANCE: only in url_validation (page1, is_valid=1) → 1
+    assert "FRANCE" in result
+    assert result["FRANCE"]["confirmed"] == 1
+
+
+def test_query_combined_reachability_deduplicates(populated_db: Path):
+    """URLs in both tables should be counted only once per country."""
+    from src.cli.generate_scan_progress import _query_combined_reachability
+    import sqlite3
+
+    conn = sqlite3.connect(populated_db)
+    conn.row_factory = sqlite3.Row
+    try:
+        result = _query_combined_reachability(conn)
+    finally:
+        conn.close()
+
+    # Iceland: page1 is valid (url_validation) AND reachable (social_media).
+    # page3 is valid AND reachable.  page2 is invalid AND unreachable.
+    # Confirmed = 2 unique URLs, not 4.
+    assert result["ICELAND"]["confirmed"] == 2
+
+    # Aggregate across all countries: ICELAND=2, GERMANY=1, FRANCE=1 → total=4.
+    # This is less than the naive sum of url_valid (3) + sm_reachable (3) = 6,
+    # confirming the UNION deduplication reduces the count correctly.
+    total_combined = sum(d["confirmed"] for d in result.values())
+    assert total_combined == 4
+
+
+def test_generate_progress_report_shows_combined_reachability(
+    populated_db: Path, tmp_path: Path
+):
+    """Overall coverage table should contain a Combined Reachability row."""
+    output_path = tmp_path / "report.md"
+    generate_progress_report(populated_db, output_path)
+    content = output_path.read_text()
+
+    assert "Combined Reachability" in content
+
+
+def test_generate_progress_report_overall_coverage_has_available_column(
+    populated_db: Path, tmp_path: Path
+):
+    """Overall coverage table should have an 'Available' column header."""
+    output_path = tmp_path / "report.md"
+    generate_progress_report(populated_db, output_path)
+    content = output_path.read_text()
+
+    # Header row should include 'Available'
+    assert "| Scan Type | Pages Scanned | Available | Coverage |" in content
+
+
+def test_generate_progress_report_priority_guide_explains_difference(
+    populated_db: Path, tmp_path: Path
+):
+    """Priority guide should explain why Social Media and URL Validation counts differ."""
+    output_path = tmp_path / "report.md"
+    generate_progress_report(populated_db, output_path)
+    content = output_path.read_text()
+
+    assert "Why are Social Media and URL Validation counts different" in content
+    assert "Failure tracking" in content
+    assert "Redirect-chain capture" in content
+
+
+def test_update_index_progress_shows_combined_reachability(
+    populated_db: Path, tmp_path: Path
+):
+    """Index progress block should include Combined Reachability row."""
+    index_path = tmp_path / "index.md"
+    index_path.write_text(_INDEX_WITH_MARKERS)
+
+    result = update_index_progress(index_path, populated_db)
+
+    assert result is True
+    content = index_path.read_text()
+    assert "Combined Reachability" in content
+
+
+def test_generate_progress_report_platform_breakdown_has_reachable_column(
+    populated_db: Path, tmp_path: Path
+):
+    """Social media platform breakdown table should include 'Reachable' column."""
+    output_path = tmp_path / "report.md"
+    generate_progress_report(populated_db, output_path)
+    content = output_path.read_text()
+
+    # The platform breakdown table header should include Reachable
+    assert "## Social Media Platform Breakdown" in content
+    assert "Reachable" in content
+
