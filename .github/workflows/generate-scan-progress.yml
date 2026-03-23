@@ -97,6 +97,11 @@ jobs:
             echo "No changes to commit — reports are up to date."
           else
             git commit -m "docs: update scan progress, social media stats, and domains reports [skip ci]"
+            if ! git pull --rebase origin main; then
+              echo "Rebase failed (likely a merge conflict); aborting rebase."
+              git rebase --abort
+              exit 1
+            fi
             git push
             echo "Reports committed and pushed."
           fi
