@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-03-24 17:38 UTC_
+_Generated: 2026-03-24 18:15 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -10,9 +10,9 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage |
 |-----------|--------------|-----------|----------|
-| **Combined Reachability** | **3,865 confirmed reachable** | 82,714 | **░░░░░░░░░░░░░░░░░░░░ 4.7%** |
-| URL Validation | 3,673 validated (3,187 valid) | 82,714 | ░░░░░░░░░░░░░░░░░░░░ 4.4% |
-| Social Media | 2,978 scanned (2,794 reachable) | 82,714 | ░░░░░░░░░░░░░░░░░░░░ 3.6% |
+| **Combined Reachability** | **2,793 confirmed reachable** | 82,714 | **░░░░░░░░░░░░░░░░░░░░ 3.4%** |
+| URL Validation | 2,422 validated (2,116 valid) | 82,714 | ░░░░░░░░░░░░░░░░░░░░ 2.9% |
+| Social Media | 2,978 scanned (2,793 reachable) | 82,714 | ░░░░░░░░░░░░░░░░░░░░ 3.6% |
 | Technology | 0 scanned | 82,714 | (manual scan) |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) |
 
@@ -23,18 +23,16 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Country | Total | Valid | Invalid | Scan Period | Coverage |
 |---------|-------|-------|---------|-------------|----------|
 | AUSTRIA | 821 | 718 | 134 | Mar 2026 | ███████████████ 100.0% |
-| BELGIUM | 1,309 | 1,166 | 488 | Mar 2026 | ███████████████ 100.0% |
-| BULGARIA | 291 | 232 | 63 | Mar 2026 | ███████████████ 100.0% |
+| BELGIUM | 1,309 | 1,166 | 511 | Mar 2026 | ███████████████ 100.0% |
+| BULGARIA | 291 | 232 | 64 | Mar 2026 | ███████████████ 100.0% |
 | CROATIA | 1 | 0 | 1 | Mar 2026 | ░░░░░░░░░░░░░░░ 0.4% |
-| CZECHIA | 567 | 437 | 130 | Mar 2026 | ██████████░░░░░ 67.3% |
-| DENMARK | 684 | 634 | 50 | Mar 2026 | ██████░░░░░░░░░ 45.0% |
 
 ## Social Media Scan by Country
 
 | Country | Scanned | Available | Reachable | Twitter-only | Modern | Mixed | No Social | Scan Period |
 |---------|---------|-----------|-----------|-------------|--------|-------|-----------|-------------|
 | AUSTRIA | 821 | 821 | 787 | 30 | 25 | 22 | 710 | Mar 2026 |
-| BELGIUM | 1,309 | 1,309 | 1,230 | 205 | 58 | 47 | 925 | Mar 2026 |
+| BELGIUM | 1,309 | 1,309 | 1,229 | 205 | 58 | 47 | 924 | Mar 2026 |
 | BULGARIA | 291 | 291 | 269 | 21 | 11 | 2 | 235 | Mar 2026 |
 | CROATIA | 233 | 233 | 232 | 31 | 11 | 3 | 187 | Mar 2026 |
 | CZECHIA | 324 | 843 | 276 | 48 | 11 | 4 | 213 | Mar 2026 |
@@ -46,11 +44,11 @@ Number of **scanned** pages per country that link to each platform. A page may l
 | Country | Scanned | Reachable | Twitter | X | Bluesky | Mastodon | Legacy % | Modern % |
 |---------|---------|-----------|---------|---|---------|----------|----------|----------|
 | AUSTRIA | 821 | 787 | 35 | 18 | 16 | 42 | 6.3% | 5.7% |
-| BELGIUM | 1,309 | 1,230 | 182 | 74 | 27 | 90 | 19.3% | 8.0% |
+| BELGIUM | 1,309 | 1,229 | 182 | 74 | 27 | 90 | 19.3% | 8.0% |
 | BULGARIA | 291 | 269 | 18 | 5 | 0 | 13 | 7.9% | 4.5% |
 | CROATIA | 233 | 232 | 34 | 0 | 0 | 14 | 14.6% | 6.0% |
 | CZECHIA | 324 | 276 | 52 | 1 | 0 | 15 | 16.0% | 4.6% |
-| **Total** | **2,978** | **2,794** | **321** | **98** | **43** | **174** | **13.9%** | **6.5%** |
+| **Total** | **2,978** | **2,793** | **321** | **98** | **43** | **174** | **13.9%** | **6.5%** |
 
 > **Legacy platforms** (Twitter / X) vs **modern open platforms** (Bluesky / Mastodon) — percentages are share of **scanned** pages that contain at least one link to any platform in that group.
 
@@ -62,11 +60,11 @@ _No technology scans have been run yet. Trigger the **Scan Technology Stack** wo
 
 _No Lighthouse scans have been run yet. Trigger the **Scan Lighthouse** workflow manually._
 
-## Countries Pending Social Media Scan
+## Countries With Social Scan But No URL Validation
 
-These countries have URL validation data but have not yet been scanned for social media links:
+These countries have social media scan data but no URL validation data (URL validation may have been skipped because the social scan already confirmed reachability):
 
-`DENMARK`
+`CZECHIA`
 
 ## Scan Priority Guide
 
