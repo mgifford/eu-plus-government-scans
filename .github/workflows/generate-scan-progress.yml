@@ -87,16 +87,25 @@ jobs:
             --output docs/domains.md \
             2>&1 | tee domains-report-output.txt
 
+      - name: Generate technology stats page
+        run: |
+          python3 -m src.cli.generate_technology_report \
+            --page docs/technology-scanning.md \
+            --data docs/technology-data.json \
+            --seeds-dir data/toon-seeds/countries \
+            2>&1 | tee technology-report-output.txt
+
       - name: Commit progress report to repository
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add docs/scan-progress.md docs/domains.md docs/index.md \
-                  docs/social-media.md docs/social-media-data.json
+                  docs/social-media.md docs/social-media-data.json \
+                  docs/technology-scanning.md docs/technology-data.json
           if git diff --staged --quiet; then
             echo "No changes to commit — reports are up to date."
           else
-            git commit -m "docs: update scan progress, social media stats, and domains reports [skip ci]"
+            git commit -m "docs: update scan progress, social media, technology stats, and domains reports [skip ci]"
             if ! git pull --rebase origin main; then
               echo "Rebase failed (likely a merge conflict); aborting rebase."
               git rebase --abort
@@ -117,9 +126,12 @@ jobs:
             docs/index.md
             docs/social-media.md
             docs/social-media-data.json
+            docs/technology-scanning.md
+            docs/technology-data.json
             scan-progress-output.txt
             social-media-report-output.txt
             domains-report-output.txt
+            technology-report-output.txt
           retention-days: 30
           if-no-files-found: warn
 
