@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-03-23 23:02 UTC_
+_Generated: 2026-03-24 00:07 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -22,7 +22,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Country | Total | Valid | Invalid | Scan Period | Coverage |
 |---------|-------|-------|---------|-------------|----------|
-| AUSTRIA | 821 | 718 | 131 | Mar 2026 | ███████████████ 100.0% |
+| AUSTRIA | 821 | 718 | 132 | Mar 2026 | ███████████████ 100.0% |
 | BELGIUM | 1,309 | 1,166 | 422 | Mar 2026 | ███████████████ 100.0% |
 | BULGARIA | 291 | 232 | 62 | Mar 2026 | ███████████████ 100.0% |
 
