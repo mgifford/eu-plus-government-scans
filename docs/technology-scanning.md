@@ -5,8 +5,19 @@ layout: page
 
 # Technology Scanning
 
-This document describes the technology-detection scan that fingerprints the
-software stack used by government websites catalogued in TOON seed files.
+This page describes how the project scans European government websites to
+fingerprint the software stack they use, and shows which technologies are
+most commonly found across government sites.
+
+---
+
+## Current Stats
+
+<!-- TECH_STATS_START -->
+
+_No scan data yet — stats update automatically after every scan run._
+
+<!-- TECH_STATS_END -->
 
 ---
 
