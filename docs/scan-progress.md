@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-03-24 14:49 UTC_
+_Generated: 2026-03-24 15:49 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -10,8 +10,8 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage |
 |-----------|--------------|-----------|----------|
-| **Combined Reachability** | **2,794 confirmed reachable** | 82,714 | **░░░░░░░░░░░░░░░░░░░░ 3.4%** |
-| URL Validation | 2,422 validated (2,116 valid) | 82,714 | ░░░░░░░░░░░░░░░░░░░░ 2.9% |
+| **Combined Reachability** | **3,865 confirmed reachable** | 82,714 | **░░░░░░░░░░░░░░░░░░░░ 4.7%** |
+| URL Validation | 3,673 validated (3,187 valid) | 82,714 | ░░░░░░░░░░░░░░░░░░░░ 4.4% |
 | Social Media | 2,978 scanned (2,794 reachable) | 82,714 | ░░░░░░░░░░░░░░░░░░░░ 3.6% |
 | Technology | 0 scanned | 82,714 | (manual scan) |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) |
@@ -26,6 +26,8 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | BELGIUM | 1,309 | 1,166 | 488 | Mar 2026 | ███████████████ 100.0% |
 | BULGARIA | 291 | 232 | 63 | Mar 2026 | ███████████████ 100.0% |
 | CROATIA | 1 | 0 | 1 | Mar 2026 | ░░░░░░░░░░░░░░░ 0.4% |
+| CZECHIA | 567 | 437 | 130 | Mar 2026 | ██████████░░░░░ 67.3% |
+| DENMARK | 684 | 634 | 50 | Mar 2026 | ██████░░░░░░░░░ 45.0% |
 
 ## Social Media Scan by Country
 
@@ -60,11 +62,11 @@ _No technology scans have been run yet. Trigger the **Scan Technology Stack** wo
 
 _No Lighthouse scans have been run yet. Trigger the **Scan Lighthouse** workflow manually._
 
-## Countries With Social Scan But No URL Validation
+## Countries Pending Social Media Scan
 
-These countries have social media scan data but no URL validation data (URL validation may have been skipped because the social scan already confirmed reachability):
+These countries have URL validation data but have not yet been scanned for social media links:
 
-`CZECHIA`
+`DENMARK`
 
 ## Scan Priority Guide
 
