@@ -14,7 +14,7 @@ social media links, which platforms are tracked, and how to access the results.
 
 <!-- SOCIAL_MEDIA_STATS_START -->
 
-_Stats as of 2026-03-25 16:51 UTC — last scan: 2026-03-25_
+_Stats as of 2026-03-25 17:15 UTC — last scan: 2026-03-25_
 
 **50** scan batches run
 
