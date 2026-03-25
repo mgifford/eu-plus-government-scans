@@ -14,9 +14,9 @@ social media links, which platforms are tracked, and how to access the results.
 
 <!-- SOCIAL_MEDIA_STATS_START -->
 
-_Stats as of 2026-03-25 00:08 UTC — last scan: 2026-03-24_
+_Stats as of 2026-03-25 02:15 UTC — last scan: 2026-03-25_
 
-**35** scan batches run
+**40** scan batches run
 
 **2,978** of **82,714** available pages scanned (**3.6%** coverage)
 **2,794** of **2,978** scanned pages were reachable (**93.8%**)
