@@ -1,6 +1,14 @@
 name: Scan Lighthouse
 
 on:
+  # Run once a week (Sunday at 04:00 UTC).  Lighthouse is slow (~5 s/URL at
+  # 0.2 req/s) so a weekly cadence keeps the data reasonably fresh while
+  # avoiding sustained load on government servers.  With --max-runtime 110
+  # each run covers ~1,300 URLs; at one run/week the full ~82k corpus takes
+  # ~63 weeks, so consider bumping --rate-limit for faster initial coverage.
+  schedule:
+    - cron: '0 4 * * 0'
+
   # Allow manual trigger for a single country or all countries
   workflow_dispatch:
     inputs:
