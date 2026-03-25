@@ -94,6 +94,22 @@ class UrlLighthouseResult:
 
 
 @dataclass(slots=True)
+class UrlAccessibilityResult:
+    """Result of an accessibility statement scan for a single URL."""
+
+    url: str
+    country_code: str
+    scan_id: str
+    is_reachable: int = 1           # 1 = reachable, 0 = not reachable
+    has_statement: int = 0          # 1 = accessibility statement link found
+    found_in_footer: int = 0        # 1 = link was found inside a <footer> element
+    statement_links: str = "[]"     # JSON list of resolved statement URLs
+    matched_terms: str = "[]"       # JSON list of matched glossary terms
+    error_message: str | None = None
+    scanned_at: str | None = None
+
+
+@dataclass(slots=True)
 class ValidationBatchState:
     """Tracks progress of batch validation cycles."""
     cycle_id: str
@@ -205,6 +221,26 @@ CREATE TABLE IF NOT EXISTS url_lighthouse_results (
 
 CREATE INDEX IF NOT EXISTS idx_lighthouse_country ON url_lighthouse_results(country_code);
 CREATE INDEX IF NOT EXISTS idx_lighthouse_scan ON url_lighthouse_results(scan_id);
+
+-- Migration: Added url_accessibility_results table for accessibility statement scan results
+CREATE TABLE IF NOT EXISTS url_accessibility_results (
+    url TEXT NOT NULL,
+    country_code TEXT NOT NULL,
+    scan_id TEXT NOT NULL,
+    is_reachable INTEGER NOT NULL DEFAULT 1,
+    has_statement INTEGER NOT NULL DEFAULT 0,
+    found_in_footer INTEGER NOT NULL DEFAULT 0,
+    statement_links TEXT NOT NULL DEFAULT '[]',
+    matched_terms TEXT NOT NULL DEFAULT '[]',
+    error_message TEXT,
+    scanned_at TEXT,
+    PRIMARY KEY (url, scan_id)
+);
+
+CREATE INDEX IF NOT EXISTS idx_accessibility_country ON url_accessibility_results(country_code);
+CREATE INDEX IF NOT EXISTS idx_accessibility_scan ON url_accessibility_results(scan_id);
+CREATE INDEX IF NOT EXISTS idx_accessibility_has_statement ON url_accessibility_results(has_statement);
+CREATE INDEX IF NOT EXISTS idx_accessibility_in_footer ON url_accessibility_results(found_in_footer);
 
 CREATE TABLE IF NOT EXISTS validation_batch_state (
     cycle_id TEXT NOT NULL,
