@@ -29,9 +29,9 @@ def main():
     )
     parser.add_argument(
         "--batch-size",
-        help="Number of countries to process per batch (default: 2)",
+        help="Number of countries to process per batch (default: 4)",
         type=int,
-        default=2,
+        default=4,
     )
     parser.add_argument(
         "--github-issue",

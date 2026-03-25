@@ -16,7 +16,7 @@ on:
       batch_size:
         description: 'Number of countries per batch'
         required: false
-        default: '2'
+        default: '4'
         type: string
       rate_limit:
         description: 'Maximum requests per second'
@@ -102,7 +102,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           # Set default values for scheduled runs
-          BATCH_SIZE="${{ github.event.inputs.batch_size || '2' }}"
+          BATCH_SIZE="${{ github.event.inputs.batch_size || '4' }}"
           RATE_LIMIT="${{ github.event.inputs.rate_limit || '2.0' }}"
           CREATE_ISSUE="${{ github.event.inputs.create_issue || 'true' }}"
           RESET_FAILED="${{ github.event.inputs.reset_failed || 'false' }}"
@@ -165,6 +165,6 @@ jobs:
           
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### Batch Processing Info" >> $GITHUB_STEP_SUMMARY
-          echo "- Batch Size: ${{ github.event.inputs.batch_size || '2' }} countries" >> $GITHUB_STEP_SUMMARY
+          echo "- Batch Size: ${{ github.event.inputs.batch_size || '4' }} countries" >> $GITHUB_STEP_SUMMARY
           echo "- Rate Limit: ${{ github.event.inputs.rate_limit || '2.0' }} req/sec" >> $GITHUB_STEP_SUMMARY
           echo "- Workflow Run: [\#${{ github.run_number }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})" >> $GITHUB_STEP_SUMMARY
