@@ -105,6 +105,9 @@ class UrlAccessibilityResult:
     found_in_footer: int = 0        # 1 = link was found inside a <footer> element
     statement_links: str = "[]"     # JSON list of resolved statement URLs
     matched_terms: str = "[]"       # JSON list of matched glossary terms
+    # JSON-encoded list of ThirdPartyScript dicts:
+    # [{src, host, service_name, version, categories}, ...]
+    scripts: str = "[]"
     error_message: str | None = None
     scanned_at: str | None = None
 
@@ -268,6 +271,21 @@ CREATE TABLE IF NOT EXISTS issue_trigger_runs (
 
 CREATE INDEX IF NOT EXISTS idx_trigger_runs_issue ON issue_trigger_runs(issue_number);
 CREATE INDEX IF NOT EXISTS idx_trigger_runs_status ON issue_trigger_runs(status);
+
+-- Migration: Added url_third_party_js_results table for third-party JavaScript scan results
+CREATE TABLE IF NOT EXISTS url_third_party_js_results (
+    url TEXT NOT NULL,
+    country_code TEXT NOT NULL,
+    scan_id TEXT NOT NULL,
+    is_reachable INTEGER NOT NULL DEFAULT 1,
+    scripts TEXT NOT NULL DEFAULT '[]',
+    error_message TEXT,
+    scanned_at TEXT,
+    PRIMARY KEY (url, scan_id)
+);
+
+CREATE INDEX IF NOT EXISTS idx_third_party_js_country ON url_third_party_js_results(country_code);
+CREATE INDEX IF NOT EXISTS idx_third_party_js_scan ON url_third_party_js_results(scan_id);
 """
 
 
