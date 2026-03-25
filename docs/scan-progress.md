@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-03-25 05:59 UTC_
+_Generated: 2026-03-25 06:19 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
