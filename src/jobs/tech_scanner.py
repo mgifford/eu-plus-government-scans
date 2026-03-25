@@ -6,9 +6,9 @@ import asyncio
 import json
 import sqlite3
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Set
 from uuid import uuid4
 
 from src.lib.country_utils import country_filename_to_code
@@ -41,6 +41,43 @@ class TechScanner:
                 if url:
                     urls.append(url)
         return urls
+
+    def _get_recently_scanned_urls(
+        self, country_code: str, within_days: int
+    ) -> Set[str]:
+        """
+        Return URLs already scanned by the technology scanner within the
+        last ``within_days`` days.
+
+        This is used to skip URLs that were recently scanned so each run can
+        focus on stale or previously-unscanned pages rather than repeating
+        work done in an earlier run.
+
+        Args:
+            country_code: Country to look up.
+            within_days: Consider results from the last N days.
+
+        Returns:
+            Set of URL strings that do not need re-scanning.
+        """
+        cutoff = (
+            datetime.now(timezone.utc) - timedelta(days=within_days)
+        ).isoformat()
+
+        conn = sqlite3.connect(self.db_path)
+        try:
+            cursor = conn.execute(
+                """
+                SELECT DISTINCT url
+                FROM url_tech_results
+                WHERE country_code = ?
+                  AND scanned_at >= ?
+                """,
+                (country_code, cutoff),
+            )
+            return {row[0] for row in cursor.fetchall()}
+        finally:
+            conn.close()
 
     def _save_tech_results(
         self,
@@ -103,6 +140,7 @@ class TechScanner:
         rate_limit_per_second: float = 2.0,
         max_runtime_seconds: Optional[float] = None,
         start_time: Optional[float] = None,
+        skip_recently_scanned_days: int = 0,
     ) -> Dict[str, Any]:
         """
         Detect technologies for all URLs in a country's TOON file.
@@ -120,6 +158,10 @@ class TechScanner:
                 60 seconds scanning stops gracefully.  ``None`` = no limit.
             start_time: ``time.monotonic()`` value from the start of the
                 overall job.  ``None`` means a fresh clock for this country.
+            skip_recently_scanned_days: Skip URLs that were already scanned
+                by this scanner within the last N days.  0 = always re-scan.
+                Setting this to 7 makes each run focus on stale/new URLs so
+                the full domain list is covered progressively across runs.
 
         Returns:
             Scan statistics dictionary.
@@ -134,9 +176,38 @@ class TechScanner:
         print(f"Loading TOON file: {toon_path}")
 
         toon_data = self._load_toon_file(toon_path)
-        urls = self._extract_urls_from_toon(toon_data)
+        all_urls = self._extract_urls_from_toon(toon_data)
 
-        print(f"Found {len(urls)} URLs to scan")
+        print(f"Found {len(all_urls)} URLs to scan")
+
+        recently_scanned: Set[str] = set()
+        if skip_recently_scanned_days > 0:
+            recently_scanned = self._get_recently_scanned_urls(
+                country_code, within_days=skip_recently_scanned_days
+            )
+            if recently_scanned:
+                print(
+                    f"Skipping {len(recently_scanned)} URLs already scanned "
+                    f"within the last {skip_recently_scanned_days} day(s)"
+                )
+
+        urls = [u for u in all_urls if u not in recently_scanned]
+        if not urls:
+            print(f"All {len(all_urls)} URLs were recently scanned — nothing to do")
+            return {
+                "scan_id": scan_id,
+                "country_code": country_code,
+                "total_urls": len(all_urls),
+                "urls_scanned": 0,
+                "urls_skipped_recently_scanned": len(recently_scanned),
+                "is_complete": True,
+                "success_count": 0,
+                "error_count": 0,
+                "tech_detected_count": 0,
+                "output_path": str(
+                    toon_path.parent / f"{toon_path.stem}_tech{toon_path.suffix}"
+                ),
+            }
 
         # Use the caller's start_time so the budget is shared across countries.
         _start = start_time if start_time is not None else time.monotonic()
@@ -185,8 +256,9 @@ class TechScanner:
         stats = {
             "scan_id": scan_id,
             "country_code": country_code,
-            "total_urls": len(urls),
+            "total_urls": len(all_urls),
             "urls_scanned": scanned_count,
+            "urls_skipped_recently_scanned": len(recently_scanned),
             "is_complete": is_complete,
             "success_count": success_count,
             "error_count": error_count,
@@ -196,6 +268,8 @@ class TechScanner:
 
         print(f"\nTech scan {'complete' if is_complete else 'partial'}:")
         print(f"  Scanned:   {scanned_count}/{len(urls)}")
+        if recently_scanned:
+            print(f"  Skipped (recently scanned): {len(recently_scanned)}")
         print(f"  Success:   {success_count}")
         print(f"  Errors:    {error_count}")
         print(f"  With tech: {tech_detected_count}")
@@ -207,6 +281,7 @@ class TechScanner:
         toon_seeds_dir: Path,
         rate_limit_per_second: float = 2.0,
         max_runtime_seconds: Optional[float] = None,
+        skip_recently_scanned_days: int = 0,
     ) -> List[Dict[str, Any]]:
         """
         Scan all TOON files in a directory for technologies.
@@ -222,6 +297,10 @@ class TechScanner:
                 and will pass the remaining budget into each country scan so
                 that even a large country stops gracefully mid-way if needed.
                 ``None`` means no limit.
+            skip_recently_scanned_days: Skip URLs already scanned within the
+                last N days.  0 = always re-scan all URLs.  Setting this to 7
+                means each run only scans URLs that haven't been seen recently,
+                allowing the full list to be covered progressively across runs.
 
         Returns:
             List of scan statistics for each country.
@@ -259,6 +338,7 @@ class TechScanner:
                     rate_limit_per_second,
                     max_runtime_seconds=max_runtime_seconds,
                     start_time=start_time,
+                    skip_recently_scanned_days=skip_recently_scanned_days,
                 )
                 all_stats.append(stats)
             except Exception as exc:

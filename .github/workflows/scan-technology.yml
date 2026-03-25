@@ -1,10 +1,13 @@
 name: Scan Technology Stack
 
 on:
-  # Run every 6 hours so the full set of URLs can be covered gradually
-  # across several days without hammering government servers.
+  # Run every 4 hours — with --skip-recently-scanned-days 7 each run focuses
+  # only on URLs not yet scanned in the past week, so the full ~82k URL corpus
+  # is covered progressively without hammering government servers twice.
+  # 6 runs/day × 13,200 URLs/run (110 min @ 2 req/s) covers all 82k URLs in
+  # roughly 1 day; every URL is refreshed at least once per week.
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: '0 */4 * * *'
 
   # Allow manual trigger for a single country or all countries
   workflow_dispatch:
@@ -17,6 +20,11 @@ on:
         description: 'Maximum requests per second'
         required: false
         default: '2.0'
+        type: string
+      skip_recently_scanned_days:
+        description: 'Skip URLs scanned within this many days (0 = re-scan all, 7 = weekly refresh)'
+        required: false
+        default: '7'
         type: string
 
 # Share concurrency group with URL-validation workflows so that only one
@@ -75,18 +83,22 @@ jobs:
       - name: Run technology scan (specific country)
         if: ${{ github.event.inputs.country != '' }}
         run: |
+          SKIP_DAYS="${{ github.event.inputs.skip_recently_scanned_days || '7' }}"
           python3 -m src.cli.scan_technology \
             --country "${{ github.event.inputs.country }}" \
             --rate-limit "${{ github.event.inputs.rate_limit }}" \
+            --skip-recently-scanned-days "$SKIP_DAYS" \
             2>&1 | tee tech-scan-output.txt
 
       - name: Run technology scan (all countries)
         if: ${{ github.event.inputs.country == '' || github.event_name == 'schedule' }}
         run: |
+          SKIP_DAYS="${{ github.event.inputs.skip_recently_scanned_days || '7' }}"
           python3 -m src.cli.scan_technology \
             --all \
             --max-runtime 110 \
             --rate-limit "${{ github.event.inputs.rate_limit || '2.0' }}" \
+            --skip-recently-scanned-days "$SKIP_DAYS" \
             2>&1 | tee tech-scan-output.txt
 
       - name: Upload scan results
@@ -124,4 +136,5 @@ jobs:
           fi
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "- Rate Limit: ${{ github.event.inputs.rate_limit || '2.0' }} req/sec" >> $GITHUB_STEP_SUMMARY
+          echo "- Skip Recently Scanned: ${{ github.event.inputs.skip_recently_scanned_days || '7' }} days" >> $GITHUB_STEP_SUMMARY
           echo "- Workflow Run: [\#${{ github.run_number }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})" >> $GITHUB_STEP_SUMMARY

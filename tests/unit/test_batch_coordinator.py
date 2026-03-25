@@ -272,7 +272,7 @@ def test_batch_config_defaults():
     config = BatchConfig()
     
     # Batch size should be small enough to complete within ~1 hour
-    assert config.batch_size == 2
+    assert config.batch_size == 4
     
     # Max runtime represents GitHub Actions workflow timeout limit
     # (CLI uses 50 min to leave 10 min buffer before this timeout)
