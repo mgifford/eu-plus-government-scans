@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-03-25 12:10 UTC",
+  "summary": {
+    "total_batches": 0,
+    "total_scanned": 0,
+    "total_detected": 0,
+    "total_available": 82714,
+    "unique_technologies": 0,
+    "unique_categories": 0,
+    "first_scan": null,
+    "last_scan": null
+  },
+  "top_technologies": [],
+  "top_categories": [],
+  "by_country": []
+}
