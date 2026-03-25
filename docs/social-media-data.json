@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-03-25 14:07 UTC",
+  "generated_at": "2026-03-25 16:15 UTC",
   "summary": {
     "total_batches": 50,
-    "total_scanned": 3150,
-    "total_reachable": 2986,
+    "total_scanned": 6399,
+    "total_reachable": 6131,
     "total_available": 82714,
-    "twitter_pages": 337,
-    "x_pages": 98,
-    "bluesky_pages": 43,
-    "mastodon_pages": 178,
+    "twitter_pages": 787,
+    "x_pages": 168,
+    "bluesky_pages": 70,
+    "mastodon_pages": 256,
     "first_scan": "2026-03-22T00:36:33.003106+00:00",
-    "last_scan": "2026-03-25T14:06:44.243628+00:00"
+    "last_scan": "2026-03-25T16:14:40.310978+00:00"
   },
   "by_country": [
     {
@@ -21,7 +21,7 @@
       "x_pages": 18,
       "bluesky_pages": 16,
       "mastodon_pages": 42,
-      "last_scan": "2026-03-25T12:47:02.785810+00:00"
+      "last_scan": "2026-03-25T09:45:59.237101+00:00"
     },
     {
       "country_code": "BELGIUM",
@@ -31,7 +31,7 @@
       "x_pages": 74,
       "bluesky_pages": 27,
       "mastodon_pages": 90,
-      "last_scan": "2026-03-25T13:36:41.271008+00:00"
+      "last_scan": "2026-03-25T10:29:16.778287+00:00"
     },
     {
       "country_code": "BULGARIA",
@@ -41,7 +41,7 @@
       "x_pages": 5,
       "bluesky_pages": 0,
       "mastodon_pages": 13,
-      "last_scan": "2026-03-25T13:51:03.775949+00:00"
+      "last_scan": "2026-03-25T10:42:04.934552+00:00"
     },
     {
       "country_code": "CROATIA",
@@ -51,17 +51,57 @@
       "x_pages": 0,
       "bluesky_pages": 0,
       "mastodon_pages": 14,
-      "last_scan": "2026-03-25T14:00:11.167070+00:00"
+      "last_scan": "2026-03-25T10:50:15.268092+00:00"
     },
     {
       "country_code": "CZECHIA",
-      "total_scanned": 496,
-      "reachable": 468,
-      "twitter_pages": 67,
-      "x_pages": 1,
+      "total_scanned": 843,
+      "reachable": 803,
+      "twitter_pages": 131,
+      "x_pages": 10,
       "bluesky_pages": 0,
-      "mastodon_pages": 19,
-      "last_scan": "2026-03-25T14:06:44.243628+00:00"
+      "mastodon_pages": 36,
+      "last_scan": "2026-03-25T14:37:09.247971+00:00"
+    },
+    {
+      "country_code": "DENMARK",
+      "total_scanned": 1521,
+      "reachable": 1503,
+      "twitter_pages": 176,
+      "x_pages": 21,
+      "bluesky_pages": 17,
+      "mastodon_pages": 13,
+      "last_scan": "2026-03-25T15:21:47.095000+00:00"
+    },
+    {
+      "country_code": "ESTONIA",
+      "total_scanned": 396,
+      "reachable": 384,
+      "twitter_pages": 67,
+      "x_pages": 2,
+      "bluesky_pages": 0,
+      "mastodon_pages": 26,
+      "last_scan": "2026-03-25T15:36:55.350147+00:00"
+    },
+    {
+      "country_code": "FINLAND",
+      "total_scanned": 180,
+      "reachable": 172,
+      "twitter_pages": 26,
+      "x_pages": 13,
+      "bluesky_pages": 2,
+      "mastodon_pages": 0,
+      "last_scan": "2026-03-25T15:43:46.659780+00:00"
+    },
+    {
+      "country_code": "FRANCE",
+      "total_scanned": 805,
+      "reachable": 751,
+      "twitter_pages": 117,
+      "x_pages": 25,
+      "bluesky_pages": 8,
+      "mastodon_pages": 22,
+      "last_scan": "2026-03-25T16:14:40.310978+00:00"
     }
   ]
 }

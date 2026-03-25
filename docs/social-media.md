@@ -14,19 +14,19 @@ social media links, which platforms are tracked, and how to access the results.
 
 <!-- SOCIAL_MEDIA_STATS_START -->
 
-_Stats as of 2026-03-25 14:07 UTC — last scan: 2026-03-25_
+_Stats as of 2026-03-25 16:15 UTC — last scan: 2026-03-25_
 
 **50** scan batches run
 
-**3,150** of **82,714** available pages scanned (**3.8%** coverage)
-**2,986** of **3,150** scanned pages were reachable (**94.8%**)
+**6,399** of **82,714** available pages scanned (**7.7%** coverage)
+**6,131** of **6,399** scanned pages were reachable (**95.8%**)
 
 | Platform | Pages with link | % of scanned | % of reachable |
 |----------|----------------|:------------:|:--------------:|
-| 🐦 Twitter | **337** | 10.7% | 11.3% |
-| ✖ X | **98** | 3.1% | 3.3% |
-| 🦋 Bluesky | **43** | 1.4% | 1.4% |
-| 🐘 Mastodon / Fediverse | **178** | 5.7% | 6.0% |
+| 🐦 Twitter | **787** | 12.3% | 12.8% |
+| ✖ X | **168** | 2.6% | 2.7% |
+| 🦋 Bluesky | **70** | 1.1% | 1.1% |
+| 🐘 Mastodon / Fediverse | **256** | 4.0% | 4.2% |
 
 📥 Machine-readable results: [social-media-data.json](social-media-data.json)
 
