@@ -5,7 +5,7 @@ from pathlib import Path
 
 import pytest
 
-from src.cli.generate_validation_report import generate_report
+from src.cli.generate_validation_report import generate_report, _country_anchor
 from src.storage.schema import initialize_schema
 
 
@@ -146,3 +146,120 @@ def test_generate_report_handles_missing_database(tmp_path):
     
     # Should not raise an exception
     generate_report(db_path, output_path)
+
+
+# ---------------------------------------------------------------------------
+# Anchor link / navigation tests
+# ---------------------------------------------------------------------------
+
+def test_country_anchor_simple():
+    """_country_anchor should lowercase and prefix with 'errors-'."""
+    assert _country_anchor("ICELAND") == "errors-iceland"
+
+
+def test_country_anchor_with_underscores():
+    """_country_anchor should replace underscores with hyphens."""
+    assert _country_anchor("UNITED_KINGDOM_UK") == "errors-united-kingdom-uk"
+
+
+def test_generate_report_has_explicit_top_anchor(test_db, tmp_path):
+    """Report should begin with an explicit anchor id for back-to-top links."""
+    output_path = tmp_path / "report.md"
+
+    generate_report(test_db, output_path)
+
+    content = output_path.read_text()
+    assert '<a id="url-validation-report"></a>' in content
+
+
+def test_generate_report_has_table_of_contents(test_db, tmp_path):
+    """Report should include a Contents/TOC section with anchor links."""
+    output_path = tmp_path / "report.md"
+
+    generate_report(test_db, output_path)
+
+    content = output_path.read_text()
+    assert "## Contents" in content
+    assert "[Summary by Country](#summary-by-country)" in content
+    assert "[Legend](#legend)" in content
+
+
+def test_generate_report_toc_includes_errors_section(test_db, tmp_path):
+    """TOC should list 'Errors by Country' when errors exist."""
+    output_path = tmp_path / "report.md"
+
+    generate_report(test_db, output_path)
+
+    content = output_path.read_text()
+    assert "[Errors by Country](#errors-by-country)" in content
+
+
+def test_generate_report_toc_includes_country_links(test_db, tmp_path):
+    """TOC should contain per-country anchor links for countries with errors."""
+    output_path = tmp_path / "report.md"
+
+    generate_report(test_db, output_path)
+
+    content = output_path.read_text()
+    # ICELAND has 2 errors in the fixture
+    assert "(#errors-iceland)" in content
+
+
+def test_generate_report_country_anchor_ids(test_db, tmp_path):
+    """Each country with errors should have a stable HTML anchor id."""
+    output_path = tmp_path / "report.md"
+
+    generate_report(test_db, output_path)
+
+    content = output_path.read_text()
+    assert '<a id="errors-iceland"></a>' in content
+
+
+def test_generate_report_back_to_top_links(test_db, tmp_path):
+    """Each country error section should end with a back-to-top link."""
+    output_path = tmp_path / "report.md"
+
+    generate_report(test_db, output_path)
+
+    content = output_path.read_text()
+    assert "[↑ Back to top](#url-validation-report)" in content
+
+
+def test_generate_report_no_toc_when_no_errors(tmp_path):
+    """When there are no errors, the TOC should not include an Errors section."""
+    db_path = tmp_path / "valid_only.db"
+    initialize_schema(f"sqlite:///{db_path}")
+
+    conn = sqlite3.connect(db_path)
+    try:
+        conn.execute(
+            """
+            INSERT INTO url_validation_results
+            (url, country_code, scan_id, status_code, error_message,
+             redirected_to, redirect_chain, is_valid, failure_count, validated_at)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+            (
+                "https://example.com/ok",
+                "NORWAY",
+                "NORWAY-20240101-000000000000-test0001",
+                200,
+                None,
+                None,
+                None,
+                1,
+                0,
+                "2024-01-01T00:00:00+00:00",
+            ),
+        )
+        conn.commit()
+    finally:
+        conn.close()
+
+    output_path = tmp_path / "report.md"
+    generate_report(db_path, output_path)
+
+    content = output_path.read_text()
+    assert "## Contents" in content
+    assert "Errors by Country" not in content
+    assert "#errors-" not in content

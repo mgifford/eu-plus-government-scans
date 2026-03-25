@@ -13,6 +13,11 @@ from typing import Any, Dict, List
 from src.lib.settings import load_settings
 
 
+def _country_anchor(country_code: str) -> str:
+    """Return a stable HTML anchor ID for a country's error section."""
+    return "errors-" + country_code.lower().replace("_", "-")
+
+
 def generate_report(db_path: Path, output_path: Path):
     """Generate a comprehensive validation report from the database."""
     
@@ -106,9 +111,23 @@ def generate_report(db_path: Path, output_path: Path):
         
         # Generate markdown report
         with output_path.open("w") as f:
+            f.write('<a id="url-validation-report"></a>\n\n')
             f.write("# URL Validation Report\n\n")
             f.write(f"**Generated:** {country_scans[0]['latest_validation']}\n\n")
-            
+
+            # Table of contents
+            f.write("## Contents\n\n")
+            f.write("- [Summary by Country](#summary-by-country)\n")
+            if error_details:
+                f.write("- [Errors by Country](#errors-by-country)\n")
+                for country_code in sorted(error_details.keys()):
+                    anchor = _country_anchor(country_code)
+                    errors = error_details[country_code]
+                    f.write(
+                        f"  - [{country_code} ({len(errors)} errors)](#{anchor})\n"
+                    )
+            f.write("- [Legend](#legend)\n\n")
+
             # Summary table
             f.write("## Summary by Country\n\n")
             f.write("| Country | Total URLs | Valid | Invalid | Redirected | Removed | Success Rate |\n")
@@ -150,6 +169,8 @@ def generate_report(db_path: Path, output_path: Path):
                 
                 for country_code in sorted(error_details.keys()):
                     errors = error_details[country_code]
+                    anchor = _country_anchor(country_code)
+                    f.write(f'<a id="{anchor}"></a>\n\n')
                     f.write(f"### {country_code} ({len(errors)} errors)\n\n")
                     
                     # Group by error type
@@ -174,6 +195,8 @@ def generate_report(db_path: Path, output_path: Path):
                             f.write(f"\n_... and {len(status_errors) - 10} more URLs with status {status}_\n")
                         
                         f.write("\n")
+
+                    f.write("[↑ Back to top](#url-validation-report)\n\n")
             
             # Legend
             f.write("\n## Legend\n\n")
