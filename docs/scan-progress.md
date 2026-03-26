@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-03-26 00:28 UTC_
+_Generated: 2026-03-26 00:29 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -10,9 +10,9 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage |
 |-----------|--------------|-----------|----------|
-| **Combined Reachability** | **6,131 confirmed reachable** | 82,714 | **█░░░░░░░░░░░░░░░░░░░ 7.4%** |
-| URL Validation | 3,963 validated (3,447 valid) | 82,714 | ░░░░░░░░░░░░░░░░░░░░ 4.8% |
-| Social Media | 6,399 scanned (6,131 reachable) | 82,714 | █░░░░░░░░░░░░░░░░░░░ 7.7% |
+| **Combined Reachability** | **8,419 confirmed reachable** | 82,714 | **██░░░░░░░░░░░░░░░░░░ 10.2%** |
+| URL Validation | 5,209 validated (4,385 valid) | 82,714 | █░░░░░░░░░░░░░░░░░░░ 6.3% |
+| Social Media | 8,857 scanned (8,412 reachable) | 82,714 | ██░░░░░░░░░░░░░░░░░░ 10.7% |
 | Technology | 0 scanned | 82,714 | (manual scan) |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) |
 
@@ -22,12 +22,15 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Country | Total | Valid | Invalid | Scan Period | Coverage |
 |---------|-------|-------|---------|-------------|----------|
-| AUSTRIA | 821 | 718 | 140 | Mar 2026 | ███████████████ 100.0% |
-| BELGIUM | 1,309 | 1,166 | 586 | Mar 2026 | ███████████████ 100.0% |
-| BULGARIA | 291 | 232 | 68 | Mar 2026 | ███████████████ 100.0% |
+| AUSTRIA | 821 | 718 | 139 | Mar 2026 | ███████████████ 100.0% |
+| BELGIUM | 1,309 | 1,166 | 522 | Mar 2026 | ███████████████ 100.0% |
+| BULGARIA | 291 | 232 | 67 | Mar 2026 | ███████████████ 100.0% |
 | CROATIA | 1 | 0 | 1 | Mar 2026 | ░░░░░░░░░░░░░░░ 0.4% |
 | CZECHIA | 567 | 440 | 127 | Mar 2026 | ██████████░░░░░ 67.3% |
 | DENMARK | 974 | 891 | 83 | Mar 2026 | █████████░░░░░░ 64.0% |
+| ESTONIA | 12 | 3 | 9 | Mar 2026 | ░░░░░░░░░░░░░░░ 3.0% |
+| FINLAND | 8 | 0 | 8 | Mar 2026 | ░░░░░░░░░░░░░░░ 4.4% |
+| FRANCE | 1,226 | 935 | 291 | Mar 2026 | █░░░░░░░░░░░░░░ 12.3% |
 
 ## Social Media Scan by Country
 
@@ -41,7 +44,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | DENMARK | 1,521 | 1,521 | 1,503 | 177 | 10 | 17 | 1,299 | Mar 2026 |
 | ESTONIA | 396 | 396 | 384 | 65 | 22 | 4 | 293 | Mar 2026 |
 | FINLAND | 180 | 180 | 172 | 38 | 2 | 0 | 132 | Mar 2026 |
-| FRANCE | 805 | 10,007 | 751 | 116 | 11 | 16 | 608 | Mar 2026 |
+| FRANCE | 3,263 | 10,007 | 3,032 | 473 | 68 | 80 | 2,411 | Mar 2026 |
 
 ## Social Media Platform Breakdown
 
@@ -57,8 +60,8 @@ Number of **scanned** pages per country that link to each platform. A page may l
 | DENMARK | 1,521 | 1,503 | 176 | 21 | 17 | 13 | 12.8% | 1.8% |
 | ESTONIA | 396 | 384 | 67 | 2 | 0 | 26 | 17.4% | 6.6% |
 | FINLAND | 180 | 172 | 26 | 13 | 2 | 0 | 21.1% | 1.1% |
-| FRANCE | 805 | 751 | 117 | 25 | 8 | 22 | 16.4% | 3.4% |
-| **Total** | **6,399** | **6,131** | **787** | **168** | **70** | **256** | **14.6%** | **4.6%** |
+| FRANCE | 3,263 | 3,032 | 484 | 85 | 29 | 128 | 16.9% | 4.5% |
+| **Total** | **8,857** | **8,412** | **1,154** | **228** | **91** | **362** | **15.3%** | **4.7%** |
 
 > **Legacy platforms** (Twitter / X) vs **modern open platforms** (Bluesky / Mastodon) — percentages are share of **scanned** pages that contain at least one link to any platform in that group.
 
@@ -69,12 +72,6 @@ _No technology scans have been run yet. Trigger the **Scan Technology Stack** wo
 ## Lighthouse Scan
 
 _No Lighthouse scans have been run yet. Trigger the **Scan Lighthouse** workflow manually._
-
-## Countries With Social Scan But No URL Validation
-
-These countries have social media scan data but no URL validation data (URL validation may have been skipped because the social scan already confirmed reachability):
-
-`ESTONIA`, `FINLAND`, `FRANCE`
 
 ## Scan Priority Guide
 
