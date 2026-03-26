@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-03-26 16:51 UTC_
+_Generated: 2026-03-26 18:14 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -10,9 +10,9 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage |
 |-----------|--------------|-----------|----------|
-| **Combined Reachability** | **9,436 confirmed reachable** | 82,714 | **██░░░░░░░░░░░░░░░░░░ 11.4%** |
+| **Combined Reachability** | **11,979 confirmed reachable** | 82,714 | **██░░░░░░░░░░░░░░░░░░ 14.5%** |
 | URL Validation | 6,418 validated (5,402 valid) | 82,714 | █░░░░░░░░░░░░░░░░░░░ 7.8% |
-| Social Media | 8,857 scanned (8,412 reachable) | 82,714 | ██░░░░░░░░░░░░░░░░░░ 10.7% |
+| Social Media | 11,568 scanned (10,955 reachable) | 82,714 | ██░░░░░░░░░░░░░░░░░░ 14.0% |
 | Technology | 0 scanned | 82,714 | (manual scan) |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) |
 
@@ -45,7 +45,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | DENMARK | 1,521 | 1,521 | 1,503 | 177 | 10 | 17 | 1,299 | Mar 2026 |
 | ESTONIA | 396 | 396 | 384 | 65 | 22 | 4 | 293 | Mar 2026 |
 | FINLAND | 180 | 180 | 172 | 38 | 2 | 0 | 132 | Mar 2026 |
-| FRANCE | 3,263 | 10,007 | 3,032 | 473 | 68 | 80 | 2,411 | Mar 2026 |
+| FRANCE | 5,974 | 10,007 | 5,575 | 857 | 106 | 160 | 4,452 | Mar 2026 |
 
 ## Social Media Platform Breakdown
 
@@ -61,8 +61,8 @@ Number of **scanned** pages per country that link to each platform. A page may l
 | DENMARK | 1,521 | 1,503 | 176 | 21 | 17 | 13 | 12.8% | 1.8% |
 | ESTONIA | 396 | 384 | 67 | 2 | 0 | 26 | 17.4% | 6.6% |
 | FINLAND | 180 | 172 | 26 | 13 | 2 | 0 | 21.1% | 1.1% |
-| FRANCE | 3,263 | 3,032 | 484 | 85 | 29 | 128 | 16.9% | 4.5% |
-| **Total** | **8,857** | **8,412** | **1,154** | **228** | **91** | **362** | **15.3%** | **4.7%** |
+| FRANCE | 5,974 | 5,575 | 884 | 154 | 55 | 229 | 17.0% | 4.5% |
+| **Total** | **11,568** | **10,955** | **1,554** | **297** | **117** | **463** | **15.7%** | **4.6%** |
 
 > **Legacy platforms** (Twitter / X) vs **modern open platforms** (Bluesky / Mastodon) — percentages are share of **scanned** pages that contain at least one link to any platform in that group.
 
