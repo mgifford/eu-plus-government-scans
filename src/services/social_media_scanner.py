@@ -205,6 +205,53 @@ class SocialMediaScanner:
         self.max_redirects = max_redirects
         self.user_agent = user_agent
 
+    def scan_html(
+        self,
+        url: str,
+        html: str,
+        scanned_at: str | None = None,
+    ) -> "SocialMediaScanResult":
+        """
+        Analyse pre-fetched HTML for social media links.
+
+        Use this when the page content has already been retrieved (e.g. by a
+        multi-scanner that shares a single HTTP request across several analyses).
+
+        Args:
+            url: The URL the HTML was fetched from.
+            html: Raw HTML of the page.
+            scanned_at: ISO-8601 timestamp string.  Defaults to *now* in UTC.
+
+        Returns:
+            :class:`SocialMediaScanResult` with ``is_reachable=True``.
+        """
+        if scanned_at is None:
+            scanned_at = datetime.now(timezone.utc).isoformat()
+
+        try:
+            links = _extract_social_links(html, url)
+        except Exception as exc:  # noqa: BLE001
+            result = SocialMediaScanResult(
+                url=url,
+                is_reachable=True,
+                error_message=f"Parse error: {exc}",
+                scanned_at=scanned_at,
+            )
+            result.social_tier = _classify_tier(result)
+            return result
+
+        result = SocialMediaScanResult(
+            url=url,
+            is_reachable=True,
+            twitter_links=links["twitter"],
+            x_links=links["x"],
+            bluesky_links=links["bluesky"],
+            mastodon_links=links["mastodon"],
+            scanned_at=scanned_at,
+        )
+        result.social_tier = _classify_tier(result)
+        return result
+
     async def scan_url(self, url: str) -> SocialMediaScanResult:
         """
         Scan a single URL for social media links.
@@ -272,29 +319,7 @@ class SocialMediaScanner:
             result.social_tier = _classify_tier(result)
             return result
 
-        try:
-            links = _extract_social_links(html, url)
-        except Exception as exc:  # noqa: BLE001
-            result = SocialMediaScanResult(
-                url=url,
-                is_reachable=True,
-                error_message=f"Parse error: {exc}",
-                scanned_at=scanned_at,
-            )
-            result.social_tier = _classify_tier(result)
-            return result
-
-        result = SocialMediaScanResult(
-            url=url,
-            is_reachable=True,
-            twitter_links=links["twitter"],
-            x_links=links["x"],
-            bluesky_links=links["bluesky"],
-            mastodon_links=links["mastodon"],
-            scanned_at=scanned_at,
-        )
-        result.social_tier = _classify_tier(result)
-        return result
+        return self.scan_html(url, html, scanned_at=scanned_at)
 
     async def scan_urls_batch(
         self,
