@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-03-26 05:38 UTC_
+_Generated: 2026-03-26 06:49 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -10,8 +10,8 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage |
 |-----------|--------------|-----------|----------|
-| **Combined Reachability** | **9,436 confirmed reachable** | 82,714 | **██░░░░░░░░░░░░░░░░░░ 11.4%** |
-| URL Validation | 6,418 validated (5,402 valid) | 82,714 | █░░░░░░░░░░░░░░░░░░░ 7.8% |
+| **Combined Reachability** | **8,419 confirmed reachable** | 82,714 | **██░░░░░░░░░░░░░░░░░░ 10.2%** |
+| URL Validation | 5,209 validated (4,385 valid) | 82,714 | █░░░░░░░░░░░░░░░░░░░ 6.3% |
 | Social Media | 8,857 scanned (8,412 reachable) | 82,714 | ██░░░░░░░░░░░░░░░░░░ 10.7% |
 | Technology | 0 scanned | 82,714 | (manual scan) |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) |
@@ -23,7 +23,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Country | Total | Valid | Invalid | Scan Period | Coverage |
 |---------|-------|-------|---------|-------------|----------|
 | AUSTRIA | 821 | 718 | 139 | Mar 2026 | ███████████████ 100.0% |
-| BELGIUM | 1,309 | 1,166 | 522 | Mar 2026 | ███████████████ 100.0% |
+| BELGIUM | 1,309 | 1,166 | 530 | Mar 2026 | ███████████████ 100.0% |
 | BULGARIA | 291 | 232 | 67 | Mar 2026 | ███████████████ 100.0% |
 | CROATIA | 1 | 0 | 1 | Mar 2026 | ░░░░░░░░░░░░░░░ 0.4% |
 | CZECHIA | 567 | 440 | 127 | Mar 2026 | ██████████░░░░░ 67.3% |
@@ -31,7 +31,6 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | ESTONIA | 12 | 3 | 9 | Mar 2026 | ░░░░░░░░░░░░░░░ 3.0% |
 | FINLAND | 8 | 0 | 8 | Mar 2026 | ░░░░░░░░░░░░░░░ 4.4% |
 | FRANCE | 1,226 | 935 | 291 | Mar 2026 | █░░░░░░░░░░░░░░ 12.3% |
-| GREECE | 1,209 | 1,017 | 192 | Mar 2026 | ██████████░░░░░ 69.2% |
 
 ## Social Media Scan by Country
 
@@ -73,12 +72,6 @@ _No technology scans have been run yet. Trigger the **Scan Technology Stack** wo
 ## Lighthouse Scan
 
 _No Lighthouse scans have been run yet. Trigger the **Scan Lighthouse** workflow manually._
-
-## Countries Pending Social Media Scan
-
-These countries have URL validation data but have not yet been scanned for social media links:
-
-`GREECE`
 
 ## Scan Priority Guide
 
