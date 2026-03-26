@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-03-26 00:28 UTC",
+  "generated_at": "2026-03-26 00:29 UTC",
   "summary": {
-    "total_batches": 50,
-    "total_scanned": 6399,
-    "total_reachable": 6131,
+    "total_batches": 51,
+    "total_scanned": 8857,
+    "total_reachable": 8412,
     "total_available": 82714,
-    "twitter_pages": 787,
-    "x_pages": 168,
-    "bluesky_pages": 70,
-    "mastodon_pages": 256,
+    "twitter_pages": 1154,
+    "x_pages": 228,
+    "bluesky_pages": 91,
+    "mastodon_pages": 362,
     "first_scan": "2026-03-22T00:36:33.003106+00:00",
-    "last_scan": "2026-03-25T16:14:40.310978+00:00"
+    "last_scan": "2026-03-26T00:29:19.109611+00:00"
   },
   "by_country": [
     {
@@ -95,13 +95,13 @@
     },
     {
       "country_code": "FRANCE",
-      "total_scanned": 805,
-      "reachable": 751,
-      "twitter_pages": 117,
-      "x_pages": 25,
-      "bluesky_pages": 8,
-      "mastodon_pages": 22,
-      "last_scan": "2026-03-25T16:14:40.310978+00:00"
+      "total_scanned": 3263,
+      "reachable": 3032,
+      "twitter_pages": 484,
+      "x_pages": 85,
+      "bluesky_pages": 29,
+      "mastodon_pages": 128,
+      "last_scan": "2026-03-26T00:29:19.109611+00:00"
     }
   ]
 }
