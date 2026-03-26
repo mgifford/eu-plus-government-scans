@@ -5,14 +5,6 @@ layout: page
 
 # Technology Scanning
 
-This page describes how the project scans European government websites to
-fingerprint the software stack they use, and shows which technologies are
-most commonly found across government sites.
-
----
-
-## Current Stats
-
 <!-- TECH_STATS_START -->
 
 _No scan data yet — stats update automatically after every scan run._

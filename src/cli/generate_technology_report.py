@@ -193,6 +193,8 @@ def _build_stats_block(
     total_available: int = 0,
     top_n_techs: int = 20,
     top_n_cats: int = 15,
+    by_country: list[dict] | None = None,
+    seed_counts: dict[str, int] | None = None,
 ) -> str:
     """Return a Markdown stats block to inject between the markers.
 
@@ -206,6 +208,11 @@ def _build_stats_block(
             the block includes a "X of Y available pages scanned" coverage line.
         top_n_techs: How many top technologies to list in the table.
         top_n_cats: How many top categories to list in the table.
+        by_country: Per-country rows from :func:`_query_by_country`.  When
+            provided, the block includes a per-country scan breakdown table.
+        seed_counts: Mapping of country_code → available page count from
+            toon seed files.  Used for the "Available" column in the per-country
+            table when *by_country* is provided.
     """
     if not summary or not summary.get("total_scanned"):
         return (
@@ -247,6 +254,28 @@ def _build_stats_block(
         f"**{unique_techs:,}** unique technologies identified",
         "",
     ]
+
+    # Per-country breakdown table
+    if by_country:
+        seed_counts = seed_counts or {}
+        lines += [
+            "---",
+            "",
+            "## Technology Scan by Country",
+            "",
+            "| Country | URLs Scanned | Pages with Detections | Available | Last Scan |",
+            "|---------|-------------|----------------------|-----------|----------|",
+        ]
+        for row in by_country:
+            cc = row["country_code"]
+            available = seed_counts.get(cc, 0)
+            avail_str = f"{available:,}" if available else "—"
+            last = (row.get("last_scan") or "—")[:10]
+            lines.append(
+                f"| {cc} | {row['total_scanned']:,} | {row['total_detected']:,} "
+                f"| {avail_str} | {last} |"
+            )
+        lines += ["", "---", ""]
 
     # Top technologies table
     if tech_counts:
@@ -382,7 +411,8 @@ def generate_technology_report(
         return False
 
     new_block = _build_stats_block(
-        summary, tech_counts, cat_counts, tech_categories, generated_at, total_available
+        summary, tech_counts, cat_counts, tech_categories, generated_at, total_available,
+        by_country=by_country, seed_counts=seed_counts,
     )
     new_content = (
         content[:start_idx]

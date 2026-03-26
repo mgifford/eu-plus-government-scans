@@ -5,30 +5,9 @@ layout: page
 
 # Social Media Scanning
 
-This page describes how the project scans European government websites for
-social media links, which platforms are tracked, and how to access the results.
-
----
-
-## Current Stats
-
 <!-- SOCIAL_MEDIA_STATS_START -->
 
-_Stats as of 2026-03-26 12:21 UTC — last scan: 2026-03-26_
-
-**51** scan batches run
-
-**8,857** of **82,714** available pages scanned (**10.7%** coverage)
-**8,412** of **8,857** scanned pages were reachable (**95.0%**)
-
-| Platform | Pages with link | % of scanned | % of reachable |
-|----------|----------------|:------------:|:--------------:|
-| 🐦 Twitter | **1,154** | 13.0% | 13.7% |
-| ✖ X | **228** | 2.6% | 2.7% |
-| 🦋 Bluesky | **91** | 1.0% | 1.1% |
-| 🐘 Mastodon / Fediverse | **362** | 4.1% | 4.3% |
-
-📥 Machine-readable results: [social-media-data.json](social-media-data.json)
+_No scan data yet — stats update automatically after every scan run._
 
 <!-- SOCIAL_MEDIA_STATS_END -->
 
