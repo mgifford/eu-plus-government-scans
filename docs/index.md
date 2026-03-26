@@ -29,6 +29,8 @@ _Progress as of 2026-03-26 12:21 UTC_
   technology scan coverage across all countries, including the date range each country was scanned.
 - **[Social Media](social-media.md)** — Detailed breakdown of social platform usage across
   government sites, with per-country platform counts (Twitter, X, Bluesky, Mastodon).
+- **[Lighthouse Scanning](lighthouse-scanning.md)** — Google Lighthouse audit scores
+  (performance, accessibility, best practices, SEO, PWA) for government pages.
 - **[Government Domains](domains.md)** — Full listing of all ~36,000 government domains tracked
   across 31 countries.
 
@@ -84,6 +86,13 @@ We validate each URL and track:
 
 We detect the CMS, framework, and analytics platforms used by each government site.
 
+### Lighthouse Audits
+
+We run Google Lighthouse on each government page and record five quality scores:
+performance, accessibility, best practices, SEO, and PWA compliance (0–100 scale).
+
+See **[Lighthouse Scanning](lighthouse-scanning.md)** for full details.
+
 ## Countries Covered
 
 The dataset covers **all EU member states** plus selected allied nations:
@@ -100,6 +109,7 @@ Scans run automatically on a schedule via **GitHub Actions**:
 | Social Media | Every 3 hours | **Highest** — confirms reachability *and* collects social-link data in one pass |
 | Technology Detection | On demand | Medium — run manually for new countries |
 | URL Validation | Every 12 hours | Lowest — lightweight redirect/404 check; skipped for pages already confirmed reachable within 30 days |
+| Lighthouse Audits | Weekly (Sundays 04:00 UTC) | Medium — slow per-URL (~5 s); weekly cadence keeps data fresh without overloading servers |
 | Scan Progress Report | After every scan | — |
 
 After each scan run, this site is automatically updated with the latest results.
