@@ -7,7 +7,21 @@ layout: page
 
 <!-- SOCIAL_MEDIA_STATS_START -->
 
-_No scan data yet — stats update automatically after every scan run._
+_Stats as of 2026-03-27 01:32 UTC — last scan: 2026-03-27_
+
+**53** scan batches run
+
+**14,200** of **82,714** available pages scanned (**17.2%** coverage)
+**13,450** of **14,200** scanned pages were reachable (**94.7%**)
+
+| Platform | Pages with link | % of scanned | % of reachable |
+|----------|----------------|:------------:|:--------------:|
+| 🐦 Twitter | **2,000** | 14.1% | 14.9% |
+| ✖ X | **438** | 3.1% | 3.3% |
+| 🦋 Bluesky | **151** | 1.1% | 1.1% |
+| 🐘 Mastodon / Fediverse | **578** | 4.1% | 4.3% |
+
+📥 Machine-readable results: [social-media-data.json](social-media-data.json)
 
 <!-- SOCIAL_MEDIA_STATS_END -->
 
