@@ -155,6 +155,31 @@ python3 -m src.cli.generate_validation_report --output validation-report.md
 
 See [docs/url-validation-scanner.md](docs/url-validation-scanner.md) for detailed CLI usage.
 
+## Google Lighthouse Scanning
+
+The Lighthouse scanner runs Google Lighthouse audits on government page URLs and stores five
+headline scores: **performance**, **accessibility**, **best practices**, **SEO**, and **PWA**.
+
+- `src/services/lighthouse_scanner.py` — Async Lighthouse runner (subprocess-based)
+- `src/jobs/lighthouse_scanner.py` — Job that processes TOON files and persists results
+- `src/cli/scan_lighthouse.py` — CLI entry point
+
+```bash
+# Prerequisites: install the Lighthouse CLI
+npm install -g lighthouse
+
+# Scan a specific country
+python3 -m src.cli.scan_lighthouse --country ICELAND
+
+# Scan all countries with a runtime cap
+python3 -m src.cli.scan_lighthouse --all --max-runtime 110 --rate-limit 0.2
+```
+
+The GitHub Actions workflow (`.github/workflows/scan-lighthouse.yml`) runs automatically
+every week (Sunday at 04:00 UTC) and can also be triggered manually.
+
+See [docs/lighthouse-scanning.md](docs/lighthouse-scanning.md) for full documentation.
+
 ## AI Disclosure
 
 This project is committed to transparency about how artificial intelligence tools have been
