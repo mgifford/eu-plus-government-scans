@@ -11,15 +11,15 @@ power them.
 
 <!-- SCAN_PROGRESS_START -->
 
-_Progress as of 2026-03-26 12:21 UTC_
+_Progress as of 2026-03-27 01:32 UTC_
 
 | Scan Type | Pages Scanned | Coverage |
 |-----------|--------------|----------|
-| **Combined Reachability** | **9,436 confirmed reachable** | **██░░░░░░░░░░░░░░░░░░ 11.4%** |
-| Social Media | 8,857 scanned (8,412 reachable) | ██░░░░░░░░░░░░░░░░░░ 10.7% |
+| **Combined Reachability** | **14,474 confirmed reachable** | **███░░░░░░░░░░░░░░░░░ 17.5%** |
+| Social Media | 14,200 scanned (13,450 reachable) | ███░░░░░░░░░░░░░░░░░ 17.2% |
 | URL Validation | 6,418 validated (5,402 valid) | █░░░░░░░░░░░░░░░░░░░ 7.8% |
 
-**10 countries** with scan data · **9,436** of **82,714** available pages confirmed reachable. See the [Scan Progress Report](scan-progress.md) for full details.
+**10 countries** with scan data · **14,474** of **82,714** available pages confirmed reachable. See the [Scan Progress Report](scan-progress.md) for full details.
 
 <!-- SCAN_PROGRESS_END -->
 
@@ -88,6 +88,13 @@ We validate each URL and track:
 
 We detect the CMS, framework, and analytics platforms used by each government site.
 
+### Lighthouse Audits
+
+We run Google Lighthouse on each government page and record five quality scores:
+performance, accessibility, best practices, SEO, and PWA compliance (0–100 scale).
+
+See **[Lighthouse Scanning](lighthouse-scanning.md)** for full details.
+
 ## Countries Covered
 
 The dataset covers **all EU member states** plus selected allied nations:
@@ -104,6 +111,7 @@ Scans run automatically on a schedule via **GitHub Actions**:
 | Social Media | Every 3 hours | **Highest** — confirms reachability *and* collects social-link data in one pass |
 | Technology Detection | On demand | Medium — run manually for new countries |
 | URL Validation | Every 12 hours | Lowest — lightweight redirect/404 check; skipped for pages already confirmed reachable within 30 days |
+| Lighthouse Audits | Weekly (Sundays 04:00 UTC) | Medium — slow per-URL (~5 s); weekly cadence keeps data fresh without overloading servers |
 | Scan Progress Report | After every scan | — |
 
 After each scan run, this site is automatically updated with the latest results.
