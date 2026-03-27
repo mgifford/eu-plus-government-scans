@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-27 03:11 UTC",
+  "generated_at": "2026-03-27 03:22 UTC",
   "summary": {
-    "total_batches": 15,
-    "total_scanned": 16270,
-    "total_reachable": 15427,
+    "total_batches": 16,
+    "total_scanned": 19109,
+    "total_reachable": 18218,
     "total_available": 82714,
-    "total_has_statement": 7003,
-    "total_in_footer": 6576,
+    "total_has_statement": 8626,
+    "total_in_footer": 7941,
     "first_scan": "2026-03-25T17:15:29.276776+00:00",
-    "last_scan": "2026-03-26T23:42:40.428661+00:00"
+    "last_scan": "2026-03-27T03:21:39.919142+00:00"
   },
   "by_country": [
     {
@@ -94,12 +94,12 @@
     },
     {
       "country_code": "GERMANY",
-      "total_scanned": 669,
-      "reachable": 656,
-      "has_statement": 455,
-      "found_in_footer": 429,
+      "total_scanned": 3508,
+      "reachable": 3447,
+      "has_statement": 2078,
+      "found_in_footer": 1794,
       "first_scan": "2026-03-26T23:17:11.908189+00:00",
-      "last_scan": "2026-03-26T23:42:40.428661+00:00"
+      "last_scan": "2026-03-27T03:21:39.919142+00:00"
     }
   ]
 }
