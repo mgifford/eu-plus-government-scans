@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-03-27 01:32 UTC_
+_Generated: 2026-03-27 03:11 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -15,6 +15,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Social Media | 14,200 scanned (13,450 reachable) | 82,714 | ███░░░░░░░░░░░░░░░░░ 17.2% |
 | Technology | 0 scanned | 82,714 | (manual scan) |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) |
+| Accessibility Statements | 16,270 scanned | 82,714 | ███░░░░░░░░░░░░░░░░░ 19.7% |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by *either* URL Validation or Social Media scanning.  URL Validation automatically skips pages already confirmed reachable by the Social Media scanner (within the last 30 days), so the two individual counts complement rather than duplicate each other.
 
@@ -23,7 +24,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Country | Total | Valid | Invalid | Scan Period | Coverage |
 |---------|-------|-------|---------|-------------|----------|
 | AUSTRIA | 821 | 718 | 142 | Mar 2026 | ███████████████ 100.0% |
-| BELGIUM | 1,309 | 1,166 | 536 | Mar 2026 | ███████████████ 100.0% |
+| BELGIUM | 1,309 | 1,166 | 542 | Mar 2026 | ███████████████ 100.0% |
 | BULGARIA | 291 | 232 | 69 | Mar 2026 | ███████████████ 100.0% |
 | CROATIA | 1 | 0 | 1 | Mar 2026 | ░░░░░░░░░░░░░░░ 0.4% |
 | CZECHIA | 567 | 440 | 127 | Mar 2026 | ██████████░░░░░ 67.3% |
@@ -74,6 +75,25 @@ _No technology scans have been run yet. Trigger the **Scan Technology Stack** wo
 
 _No Lighthouse scans have been run yet. Trigger the **Scan Lighthouse** workflow manually._
 
+## Accessibility Statement Scan by Country
+
+Checks whether each government page links to an accessibility statement as required by the EU Web Accessibility Directive (Directive 2016/2102).
+
+| Country | Scanned | Reachable | Has Statement | In Footer | Statement % | Scan Period |
+|---------|---------|-----------|--------------|-----------|------------|-------------|
+| AUSTRIA | 821 | 787 | 547 | 517 | 70% | Mar 2026 |
+| BELGIUM | 1,309 | 1,219 | 526 | 477 | 43% | Mar 2026 |
+| BULGARIA | 291 | 269 | 61 | 59 | 23% | Mar 2026 |
+| CROATIA | 233 | 231 | 85 | 61 | 37% | Mar 2026 |
+| CZECHIA | 843 | 803 | 427 | 362 | 53% | Mar 2026 |
+| DENMARK | 1,521 | 1,500 | 1,030 | 1,013 | 69% | Mar 2026 |
+| ESTONIA | 396 | 388 | 136 | 65 | 35% | Mar 2026 |
+| FINLAND | 180 | 172 | 111 | 104 | 65% | Mar 2026 |
+| FRANCE | 10,007 | 9,402 | 3,625 | 3,489 | 39% | Mar 2026 |
+| GERMANY | 669 | 656 | 455 | 429 | 69% | Mar 2026 |
+
+> **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
+
 ## Countries Pending Social Media Scan
 
 These countries have URL validation data but have not yet been scanned for social media links:
@@ -85,9 +105,10 @@ These countries have URL validation data but have not yet been scanned for socia
 Scans are ordered from **highest** to **lowest** priority:
 
 1. **Social Media Scan** — runs every 3 hours; downloads and parses full pages, confirming reachability *and* detecting social links in one pass.
-2. **Technology Scan** — run on demand; detects CMS, framework, and analytics platforms.
-3. **Lighthouse Scan** — run on demand; measures performance, accessibility (WCAG), best practices, and SEO for each URL.
-4. **URL Validation** — runs every 6 hours in the background; a lightweight redirect/404 check that is **automatically skipped** for URLs already confirmed reachable by a higher-priority scan within the last 30 days.
+2. **Accessibility Statement Scan** — runs every 4 hours; checks whether each page links to an accessibility statement as required by the EU Web Accessibility Directive (Directive 2016/2102).
+3. **Technology Scan** — run on demand; detects CMS, framework, and analytics platforms.
+4. **Lighthouse Scan** — run on demand; measures performance, accessibility (WCAG), best practices, and SEO for each URL.
+5. **URL Validation** — runs every 6 hours in the background; a lightweight redirect/404 check that is **automatically skipped** for URLs already confirmed reachable by a higher-priority scan within the last 30 days.
 
 > **Tip:** Run a social media scan first for a new country — this simultaneously validates all URLs *and* collects social media data, avoiding a separate URL-only pass.
 

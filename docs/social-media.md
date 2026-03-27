@@ -7,7 +7,7 @@ layout: page
 
 <!-- SOCIAL_MEDIA_STATS_START -->
 
-_Stats as of 2026-03-27 01:32 UTC — last scan: 2026-03-27_
+_Stats as of 2026-03-27 03:11 UTC — last scan: 2026-03-27_
 
 **53** scan batches run
 
@@ -22,6 +22,44 @@ _Stats as of 2026-03-27 01:32 UTC — last scan: 2026-03-27_
 | 🐘 Mastodon / Fediverse | **578** | 4.1% | 4.3% |
 
 📥 Machine-readable results: [social-media-data.json](social-media-data.json)
+
+---
+
+## Social Media Scan by Country
+
+| Country | Scanned | Available | Reachable | Twitter-only | Modern | Mixed | No Social | Scan Period |
+|---------|---------|-----------|-----------|-------------|--------|-------|-----------|-------------|
+| AUSTRIA | 821 | 821 | 787 | 30 | 25 | 22 | 710 | Mar 2026 |
+| BELGIUM | 1,309 | 1,309 | 1,230 | 206 | 58 | 47 | 929 | Mar 2026 |
+| BULGARIA | 291 | 291 | 269 | 21 | 11 | 2 | 235 | Mar 2026 |
+| CROATIA | 233 | 233 | 232 | 31 | 11 | 3 | 187 | Mar 2026 |
+| CZECHIA | 843 | 843 | 803 | 124 | 21 | 15 | 643 | Mar 2026 |
+| DENMARK | 1,521 | 1,521 | 1,503 | 177 | 10 | 17 | 1,299 | Mar 2026 |
+| ESTONIA | 396 | 396 | 384 | 65 | 22 | 4 | 293 | Mar 2026 |
+| FINLAND | 180 | 180 | 172 | 38 | 2 | 0 | 132 | Mar 2026 |
+| FRANCE | 8,606 | 10,007 | 8,070 | 1,334 | 159 | 247 | 6,330 | Mar 2026 |
+| **Total** | **14,200** | **82,714** | **13,450** | **2,026** | **319** | **357** | **10,758** | — |
+
+---
+
+## Social Media Platform Breakdown
+
+Number of **scanned** pages per country that link to each platform. A page may link to more than one platform. Percentages show the share of all scanned pages.
+
+| Country | Scanned | Reachable | Twitter | X | Bluesky | Mastodon | Legacy % | Modern % |
+|---------|---------|-----------|---------|---|---------|----------|----------|----------|
+| AUSTRIA | 821 | 787 | 35 | 18 | 16 | 42 | 6.3% | 5.7% |
+| BELGIUM | 1,309 | 1,230 | 183 | 74 | 27 | 90 | 19.3% | 8.0% |
+| BULGARIA | 291 | 269 | 18 | 5 | 0 | 13 | 7.9% | 4.5% |
+| CROATIA | 233 | 232 | 34 | 0 | 0 | 14 | 14.6% | 6.0% |
+| CZECHIA | 843 | 803 | 131 | 10 | 0 | 36 | 16.5% | 4.3% |
+| DENMARK | 1,521 | 1,503 | 176 | 21 | 17 | 13 | 12.8% | 1.8% |
+| ESTONIA | 396 | 384 | 67 | 2 | 0 | 26 | 17.4% | 6.6% |
+| FINLAND | 180 | 172 | 26 | 13 | 2 | 0 | 21.1% | 1.1% |
+| FRANCE | 8,606 | 8,070 | 1,330 | 295 | 89 | 344 | 18.4% | 4.7% |
+| **Total** | **14,200** | **13,450** | **2,000** | **438** | **151** | **578** | **16.8%** | **4.8%** |
+
+> **Legacy platforms** (Twitter / X) vs **modern open platforms** (Bluesky / Mastodon) — percentages are share of **scanned** pages that contain at least one link to any platform in that group.
 
 <!-- SOCIAL_MEDIA_STATS_END -->
 
