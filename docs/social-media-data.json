@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-03-27 06:24 UTC",
+  "generated_at": "2026-03-27 06:35 UTC",
   "summary": {
-    "total_batches": 53,
-    "total_scanned": 14200,
-    "total_reachable": 13450,
+    "total_batches": 55,
+    "total_scanned": 16818,
+    "total_reachable": 15946,
     "total_available": 82714,
-    "twitter_pages": 2000,
-    "x_pages": 438,
-    "bluesky_pages": 151,
-    "mastodon_pages": 578,
+    "twitter_pages": 2681,
+    "x_pages": 795,
+    "bluesky_pages": 203,
+    "mastodon_pages": 827,
     "first_scan": "2026-03-22T00:36:33.003106+00:00",
-    "last_scan": "2026-03-27T01:32:08.883558+00:00"
+    "last_scan": "2026-03-27T06:35:18.162241+00:00"
   },
   "by_country": [
     {
@@ -151,20 +151,37 @@
     },
     {
       "country_code": "FRANCE",
-      "total_scanned": 8606,
-      "reachable": 8070,
-      "twitter_pages": 1330,
-      "x_pages": 295,
-      "bluesky_pages": 89,
-      "mastodon_pages": 344,
-      "twitter_only": 1334,
-      "modern_only": 159,
-      "mixed": 247,
-      "no_social": 6330,
-      "has_any_legacy": 1581,
-      "has_any_modern": 406,
+      "total_scanned": 10007,
+      "reachable": 9373,
+      "twitter_pages": 1799,
+      "x_pages": 629,
+      "bluesky_pages": 124,
+      "mastodon_pages": 495,
+      "twitter_only": 1935,
+      "modern_only": 212,
+      "mixed": 361,
+      "no_social": 6865,
+      "has_any_legacy": 2296,
+      "has_any_modern": 573,
       "first_scan": "2026-03-25T15:43:48.896505+00:00",
-      "last_scan": "2026-03-27T01:32:08.883558+00:00"
+      "last_scan": "2026-03-27T05:52:40.134124+00:00"
+    },
+    {
+      "country_code": "GERMANY",
+      "total_scanned": 1217,
+      "reachable": 1193,
+      "twitter_pages": 212,
+      "x_pages": 23,
+      "bluesky_pages": 17,
+      "mastodon_pages": 98,
+      "twitter_only": 206,
+      "modern_only": 92,
+      "mixed": 16,
+      "no_social": 879,
+      "has_any_legacy": 222,
+      "has_any_modern": 108,
+      "first_scan": "2026-03-27T05:52:42.257416+00:00",
+      "last_scan": "2026-03-27T06:35:18.162241+00:00"
     }
   ]
 }
