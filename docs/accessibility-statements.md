@@ -7,14 +7,14 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-03-27 10:39 UTC — last scan: 2026-03-27_
+_Stats as of 2026-03-27 12:17 UTC — last scan: 2026-03-27_
 
-**18** scan batches run
+**16** scan batches run
 
-**22,358** of **82,714** available pages scanned (**27.0%** coverage)
-**21,401** of **22,358** scanned pages were reachable (**95.7%**)
-**11,131** of **21,401** reachable pages have an accessibility statement (**52.0%**)
-**10,020** pages have the statement link in the footer (**90.0%** of pages with a statement)
+**19,109** of **82,714** available pages scanned (**23.1%** coverage)
+**18,218** of **19,109** scanned pages were reachable (**95.3%**)
+**8,626** of **18,218** reachable pages have an accessibility statement (**47.3%**)
+**7,941** pages have the statement link in the footer (**92.1%** of pages with a statement)
 
 📥 Machine-readable results: [accessibility-data.json](accessibility-data.json)
 
@@ -33,9 +33,8 @@ _Stats as of 2026-03-27 10:39 UTC — last scan: 2026-03-27_
 | ESTONIA | 396 | 396 | 388 | 136 | 65 | 35.1% | Mar 2026 |
 | FINLAND | 180 | 180 | 172 | 111 | 104 | 64.5% | Mar 2026 |
 | FRANCE | 10,007 | 10,007 | 9,402 | 3,625 | 3,489 | 38.6% | Mar 2026 |
-| GERMANY | 6,555 | 6,555 | 6,442 | 4,555 | 3,850 | 70.7% | Mar 2026 |
-| GREECE | 202 | 1,748 | 188 | 28 | 23 | 14.9% | Mar 2026 |
-| **Total** | **22,358** | **82,714** | **21,401** | **11,131** | **10,020** | **52.0%** | — |
+| GERMANY | 3,508 | 6,555 | 3,447 | 2,078 | 1,794 | 60.3% | Mar 2026 |
+| **Total** | **19,109** | **82,714** | **18,218** | **8,626** | **7,941** | **47.3%** | — |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
