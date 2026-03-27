@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-03-27 03:22 UTC_
+_Generated: 2026-03-27 04:22 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -10,8 +10,8 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage |
 |-----------|--------------|-----------|----------|
-| **Combined Reachability** | **14,474 confirmed reachable** | 82,714 | **███░░░░░░░░░░░░░░░░░ 17.5%** |
-| URL Validation | 6,418 validated (5,402 valid) | 82,714 | █░░░░░░░░░░░░░░░░░░░ 7.8% |
+| **Combined Reachability** | **14,999 confirmed reachable** | 82,714 | **███░░░░░░░░░░░░░░░░░ 18.1%** |
+| URL Validation | 7,123 validated (5,927 valid) | 82,714 | █░░░░░░░░░░░░░░░░░░░ 8.6% |
 | Social Media | 14,200 scanned (13,450 reachable) | 82,714 | ███░░░░░░░░░░░░░░░░░ 17.2% |
 | Technology | 0 scanned | 82,714 | (manual scan) |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) |
@@ -33,6 +33,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | FINLAND | 8 | 0 | 8 | Mar 2026 | ░░░░░░░░░░░░░░░ 4.4% |
 | FRANCE | 1,226 | 935 | 291 | Mar 2026 | █░░░░░░░░░░░░░░ 12.3% |
 | GREECE | 1,209 | 1,017 | 192 | Mar 2026 | ██████████░░░░░ 69.2% |
+| ITALY | 705 | 525 | 180 | Mar 2026 | █░░░░░░░░░░░░░░ 13.2% |
 
 ## Social Media Scan by Country
 
@@ -98,7 +99,7 @@ Checks whether each government page links to an accessibility statement as requi
 
 These countries have URL validation data but have not yet been scanned for social media links:
 
-`GREECE`
+`GREECE`, `ITALY`
 
 ## Scan Priority Guide
 
