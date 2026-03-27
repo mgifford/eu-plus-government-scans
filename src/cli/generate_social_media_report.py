@@ -86,22 +86,31 @@ def _query_summary(conn: sqlite3.Connection) -> dict:
 
 
 def _query_by_country(conn: sqlite3.Connection) -> list[dict]:
-    """Return per-country social media platform totals.
+    """Return per-country social media platform totals with tier breakdown.
 
     Uses COUNT(DISTINCT CASE WHEN … THEN url END) so that each URL is counted
     at most once per country, even when a URL appears in multiple scan batches.
+    Includes both per-platform link counts and social-tier distribution for
+    use in the per-country tables on the social media stats page.
     """
     rows = conn.execute(
         """
         SELECT
             country_code,
-            COUNT(DISTINCT url)                                                         AS total_scanned,
-            COUNT(DISTINCT CASE WHEN is_reachable = 1      THEN url ELSE NULL END)     AS reachable,
-            COUNT(DISTINCT CASE WHEN twitter_links != '[]' THEN url ELSE NULL END)     AS twitter_pages,
-            COUNT(DISTINCT CASE WHEN x_links       != '[]' THEN url ELSE NULL END)     AS x_pages,
-            COUNT(DISTINCT CASE WHEN bluesky_links  != '[]' THEN url ELSE NULL END)    AS bluesky_pages,
-            COUNT(DISTINCT CASE WHEN mastodon_links != '[]' THEN url ELSE NULL END)    AS mastodon_pages,
-            MAX(scanned_at)                                                             AS last_scan
+            COUNT(DISTINCT url)                                                                                    AS total_scanned,
+            COUNT(DISTINCT CASE WHEN is_reachable = 1               THEN url ELSE NULL END)                        AS reachable,
+            COUNT(DISTINCT CASE WHEN twitter_links != '[]'          THEN url ELSE NULL END)                        AS twitter_pages,
+            COUNT(DISTINCT CASE WHEN x_links       != '[]'          THEN url ELSE NULL END)                        AS x_pages,
+            COUNT(DISTINCT CASE WHEN bluesky_links  != '[]'         THEN url ELSE NULL END)                        AS bluesky_pages,
+            COUNT(DISTINCT CASE WHEN mastodon_links != '[]'         THEN url ELSE NULL END)                        AS mastodon_pages,
+            COUNT(DISTINCT CASE WHEN social_tier = 'twitter_only'   THEN url ELSE NULL END)                        AS twitter_only,
+            COUNT(DISTINCT CASE WHEN social_tier = 'modern_only'    THEN url ELSE NULL END)                        AS modern_only,
+            COUNT(DISTINCT CASE WHEN social_tier = 'mixed'          THEN url ELSE NULL END)                        AS mixed,
+            COUNT(DISTINCT CASE WHEN social_tier = 'no_social'      THEN url ELSE NULL END)                        AS no_social,
+            COUNT(DISTINCT CASE WHEN (twitter_links != '[]' OR x_links != '[]')             THEN url ELSE NULL END) AS has_any_legacy,
+            COUNT(DISTINCT CASE WHEN (bluesky_links != '[]' OR mastodon_links != '[]')      THEN url ELSE NULL END) AS has_any_modern,
+            MIN(scanned_at)                                                                                         AS first_scan,
+            MAX(scanned_at)                                                                                         AS last_scan
         FROM url_social_media_results
         GROUP BY country_code
         ORDER BY country_code
@@ -114,7 +123,13 @@ def _query_by_country(conn: sqlite3.Connection) -> list[dict]:
 # Stats block builder
 # ---------------------------------------------------------------------------
 
-def _build_stats_block(summary: dict, generated_at: str, total_available: int = 0) -> str:
+def _build_stats_block(
+    summary: dict,
+    generated_at: str,
+    total_available: int = 0,
+    by_country: list[dict] | None = None,
+    seed_counts: dict[str, int] | None = None,
+) -> str:
     """Return a Markdown stats block to inject between the markers.
 
     Args:
@@ -122,6 +137,11 @@ def _build_stats_block(summary: dict, generated_at: str, total_available: int = 
         generated_at: Human-readable timestamp string.
         total_available: Total pages across all toon seed files.  When > 0,
             the block includes a "X of Y available pages scanned" coverage line.
+        by_country: Per-country rows from ``_query_by_country()``.  When
+            provided, the block includes per-country breakdown tables.
+        seed_counts: Mapping of country_code → available page count from
+            toon seed files.  Used for the "Available" column in the per-country
+            table when *by_country* is provided.
     """
     if not summary or not summary.get("total_scanned"):
         return (
@@ -141,6 +161,21 @@ def _build_stats_block(summary: dict, generated_at: str, total_available: int = 
 
     def _pct(num: int, denom: int) -> str:
         return f"{num / denom * 100:.1f}%" if denom else "—"
+
+    def _month(ts: str | None) -> str:
+        if not ts:
+            return "—"
+        try:
+            return datetime.fromisoformat(ts[:19]).strftime("%b %Y")
+        except (ValueError, TypeError):
+            return ts[:7]
+
+    def _scan_period(first: str | None, last: str | None) -> str:
+        f = _month(first)
+        l = _month(last)
+        if f and l:
+            return f if f == l else f"{f} – {l}"
+        return f or l or "—"
 
     lines = [
         _STATS_MARKER_START,
@@ -174,6 +209,94 @@ def _build_stats_block(summary: dict, generated_at: str, total_available: int = 
         "",
         "📥 Machine-readable results: "
         "[social-media-data.json](social-media-data.json)",
+    ]
+
+    # Per-country breakdown tables
+    if by_country:
+        seed_counts = seed_counts or {}
+
+        lines += [
+            "",
+            "---",
+            "",
+            "## Social Media Scan by Country",
+            "",
+            "| Country | Scanned | Available | Reachable | Twitter-only | Modern | Mixed | No Social | Scan Period |",
+            "|---------|---------|-----------|-----------|-------------|--------|-------|-----------|-------------|",
+        ]
+        for row in by_country:
+            cc = row["country_code"]
+            available = seed_counts.get(cc, 0)
+            avail_str = f"{available:,}" if available else "—"
+            period = _scan_period(row.get("first_scan"), row.get("last_scan"))
+            lines.append(
+                f"| {cc} | {row['total_scanned']:,} | {avail_str} | {row['reachable']:,} | "
+                f"{row.get('twitter_only', 0):,} | {row.get('modern_only', 0):,} | "
+                f"{row.get('mixed', 0):,} | {row.get('no_social', 0):,} | {period} |"
+            )
+
+        # totals row
+        tot_scanned = sum(r["total_scanned"] for r in by_country)
+        tot_avail = sum(seed_counts.values())
+        tot_avail_str = f"**{tot_avail:,}**" if tot_avail else "—"
+        tot_reachable = sum(r["reachable"] for r in by_country)
+        tot_twitter_only = sum(r.get("twitter_only", 0) for r in by_country)
+        tot_modern_only = sum(r.get("modern_only", 0) for r in by_country)
+        tot_mixed = sum(r.get("mixed", 0) for r in by_country)
+        tot_no_social = sum(r.get("no_social", 0) for r in by_country)
+        lines.append(
+            f"| **Total** | **{tot_scanned:,}** | {tot_avail_str} | **{tot_reachable:,}** | "
+            f"**{tot_twitter_only:,}** | **{tot_modern_only:,}** | "
+            f"**{tot_mixed:,}** | **{tot_no_social:,}** | — |"
+        )
+        lines.append("")
+
+        lines += [
+            "---",
+            "",
+            "## Social Media Platform Breakdown",
+            "",
+            "Number of **scanned** pages per country that link to each platform. "
+            "A page may link to more than one platform. "
+            "Percentages show the share of all scanned pages.",
+            "",
+            "| Country | Scanned | Reachable | Twitter | X | Bluesky | Mastodon | Legacy % | Modern % |",
+            "|---------|---------|-----------|---------|---|---------|----------|----------|----------|",
+        ]
+        for row in by_country:
+            cc = row["country_code"]
+            s = row["total_scanned"]
+            legacy_pct = _pct(row.get("has_any_legacy", 0), s)
+            modern_pct = _pct(row.get("has_any_modern", 0), s)
+            lines.append(
+                f"| {cc} | {s:,} | {row['reachable']:,} | "
+                f"{row.get('twitter_pages', 0):,} | {row.get('x_pages', 0):,} | "
+                f"{row.get('bluesky_pages', 0):,} | {row.get('mastodon_pages', 0):,} | "
+                f"{legacy_pct} | {modern_pct} |"
+            )
+
+        # totals row
+        tot_has_legacy = sum(r.get("has_any_legacy", 0) for r in by_country)
+        tot_has_modern = sum(r.get("has_any_modern", 0) for r in by_country)
+        tot_tw = sum(r.get("twitter_pages", 0) for r in by_country)
+        tot_x = sum(r.get("x_pages", 0) for r in by_country)
+        tot_bsky = sum(r.get("bluesky_pages", 0) for r in by_country)
+        tot_mast = sum(r.get("mastodon_pages", 0) for r in by_country)
+        leg_pct = _pct(tot_has_legacy, tot_scanned)
+        mod_pct = _pct(tot_has_modern, tot_scanned)
+        lines.append(
+            f"| **Total** | **{tot_scanned:,}** | **{tot_reachable:,}** | "
+            f"**{tot_tw:,}** | **{tot_x:,}** | **{tot_bsky:,}** | **{tot_mast:,}** | "
+            f"**{leg_pct}** | **{mod_pct}** |"
+        )
+        lines += [
+            "",
+            "> **Legacy platforms** (Twitter / X) vs **modern open platforms** "
+            "(Bluesky / Mastodon) — percentages are share of **scanned** pages "
+            "that contain at least one link to any platform in that group.",
+        ]
+
+    lines += [
         "",
         _STATS_MARKER_END,
     ]
@@ -259,7 +382,7 @@ def generate_social_media_report(
         )
         return False
 
-    new_block = _build_stats_block(summary, generated_at, total_available)
+    new_block = _build_stats_block(summary, generated_at, total_available, by_country, seed_counts)
     new_content = (
         content[:start_idx]
         + new_block
