@@ -25,12 +25,14 @@ _Progress as of 2026-03-27 01:32 UTC_
 
 ## Latest Scan Results
 
-- **[Scan Progress Report](scan-progress.md)** — Up-to-date social media, URL validation, and
-  technology scan coverage across all countries, including the date range each country was scanned.
+- **[Scan Progress Report](scan-progress.md)** — Up-to-date social media, URL validation,
+  accessibility, and technology scan coverage across all countries, including the date range each country was scanned.
 - **[Social Media](social-media.md)** — Detailed breakdown of social platform usage across
   government sites, with per-country platform counts (Twitter, X, Bluesky, Mastodon).
-- **[Lighthouse Scanning](lighthouse-scanning.md)** — Google Lighthouse audit scores
-  (performance, accessibility, best practices, SEO, PWA) for government pages.
+- **[Accessibility Statements](accessibility-statements.md)** — Per-country tracking of
+  accessibility statement links as required by the EU Web Accessibility Directive.
+- **[Technology Scanning](technology-scanning.md)** — Technologies detected on government sites
+  (CMS, web server, analytics, and more).
 - **[Government Domains](domains.md)** — Full listing of all ~36,000 government domains tracked
   across 31 countries.
 

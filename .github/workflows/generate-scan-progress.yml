@@ -6,6 +6,7 @@ on:
     workflows:
       - "Scan Social Media Links"
       - "Scan Technology Stack"
+      - "Scan Accessibility Statements"
       - "URL Validation - Batched"
     types:
       - completed
@@ -95,13 +96,22 @@ jobs:
             --seeds-dir data/toon-seeds/countries \
             2>&1 | tee technology-report-output.txt
 
+      - name: Generate accessibility statement stats page
+        run: |
+          python3 -m src.cli.generate_accessibility_report \
+            --page docs/accessibility-statements.md \
+            --data docs/accessibility-data.json \
+            --seeds-dir data/toon-seeds/countries \
+            2>&1 | tee accessibility-report-output.txt
+
       - name: Commit progress report to repository
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add docs/scan-progress.md docs/domains.md docs/index.md \
                   docs/social-media.md docs/social-media-data.json \
-                  docs/technology-scanning.md docs/technology-data.json
+                  docs/technology-scanning.md docs/technology-data.json \
+                  docs/accessibility-statements.md docs/accessibility-data.json
           if git diff --staged --quiet; then
             echo "No changes to commit — reports are up to date."
           else
@@ -128,10 +138,13 @@ jobs:
             docs/social-media-data.json
             docs/technology-scanning.md
             docs/technology-data.json
+            docs/accessibility-statements.md
+            docs/accessibility-data.json
             scan-progress-output.txt
             social-media-report-output.txt
             domains-report-output.txt
             technology-report-output.txt
+            accessibility-report-output.txt
           retention-days: 30
           if-no-files-found: warn
 

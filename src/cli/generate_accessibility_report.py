@@ -1,11 +1,11 @@
-"""CLI tool to generate the social media scanning stats page.
+"""CLI tool to generate the accessibility statement scanning stats page.
 
-Queries the metadata database for aggregate social media scan statistics
-and updates ``docs/social-media.md`` with a live stats block between
-``<!-- SOCIAL_MEDIA_STATS_START -->`` and ``<!-- SOCIAL_MEDIA_STATS_END -->``
-markers.  A summary JSON data file (``docs/social-media-data.json``) is also
-written so that external tools and the page itself can link directly to the
-machine-readable results.
+Queries the metadata database for aggregate accessibility scan statistics
+and updates ``docs/accessibility-statements.md`` with a live stats block
+between ``<!-- ACCESSIBILITY_STATS_START -->`` and
+``<!-- ACCESSIBILITY_STATS_END -->`` markers.  A summary JSON data file
+(``docs/accessibility-data.json``) is also written so that external tools
+and the page itself can link directly to the machine-readable results.
 """
 
 from __future__ import annotations
@@ -25,8 +25,8 @@ from src.lib.settings import load_settings
 # HTML comment markers
 # ---------------------------------------------------------------------------
 
-_STATS_MARKER_START = "<!-- SOCIAL_MEDIA_STATS_START -->"
-_STATS_MARKER_END = "<!-- SOCIAL_MEDIA_STATS_END -->"
+_STATS_MARKER_START = "<!-- ACCESSIBILITY_STATS_START -->"
+_STATS_MARKER_END = "<!-- ACCESSIBILITY_STATS_END -->"
 
 
 # ---------------------------------------------------------------------------
@@ -58,7 +58,7 @@ def _count_toon_seed_urls(toon_seeds_dir: Path) -> dict[str, int]:
 # ---------------------------------------------------------------------------
 
 def _query_summary(conn: sqlite3.Connection) -> dict:
-    """Return aggregate social media scan totals from the database.
+    """Return aggregate accessibility scan totals from the database.
 
     Each URL may appear in multiple scan batches (one row per (url, scan_id)).
     All per-URL counts use COUNT(DISTINCT CASE WHEN … THEN url END) so that a
@@ -68,16 +68,14 @@ def _query_summary(conn: sqlite3.Connection) -> dict:
     row = conn.execute(
         """
         SELECT
-            COUNT(DISTINCT scan_id)                                                     AS total_batches,
-            COUNT(DISTINCT url)                                                         AS total_scanned,
-            COUNT(DISTINCT CASE WHEN is_reachable = 1      THEN url ELSE NULL END)     AS total_reachable,
-            COUNT(DISTINCT CASE WHEN twitter_links != '[]' THEN url ELSE NULL END)     AS twitter_pages,
-            COUNT(DISTINCT CASE WHEN x_links       != '[]' THEN url ELSE NULL END)     AS x_pages,
-            COUNT(DISTINCT CASE WHEN bluesky_links  != '[]' THEN url ELSE NULL END)    AS bluesky_pages,
-            COUNT(DISTINCT CASE WHEN mastodon_links != '[]' THEN url ELSE NULL END)    AS mastodon_pages,
-            MIN(scanned_at)                                                             AS first_scan,
-            MAX(scanned_at)                                                             AS last_scan
-        FROM url_social_media_results
+            COUNT(DISTINCT scan_id)                                                         AS total_batches,
+            COUNT(DISTINCT url)                                                             AS total_scanned,
+            COUNT(DISTINCT CASE WHEN is_reachable = 1    THEN url ELSE NULL END)           AS total_reachable,
+            COUNT(DISTINCT CASE WHEN has_statement = 1   THEN url ELSE NULL END)           AS total_has_statement,
+            COUNT(DISTINCT CASE WHEN found_in_footer = 1 THEN url ELSE NULL END)           AS total_in_footer,
+            MIN(scanned_at)                                                                 AS first_scan,
+            MAX(scanned_at)                                                                 AS last_scan
+        FROM url_accessibility_results
         """
     ).fetchone()
     if row is None:
@@ -86,32 +84,22 @@ def _query_summary(conn: sqlite3.Connection) -> dict:
 
 
 def _query_by_country(conn: sqlite3.Connection) -> list[dict]:
-    """Return per-country social media platform totals with tier breakdown.
+    """Return per-country accessibility scan totals.
 
     Uses COUNT(DISTINCT CASE WHEN … THEN url END) so that each URL is counted
     at most once per country, even when a URL appears in multiple scan batches.
-    Includes both per-platform link counts and social-tier distribution for
-    use in the per-country tables on the social media stats page.
     """
     rows = conn.execute(
         """
         SELECT
             country_code,
-            COUNT(DISTINCT url)                                                                                    AS total_scanned,
-            COUNT(DISTINCT CASE WHEN is_reachable = 1               THEN url ELSE NULL END)                        AS reachable,
-            COUNT(DISTINCT CASE WHEN twitter_links != '[]'          THEN url ELSE NULL END)                        AS twitter_pages,
-            COUNT(DISTINCT CASE WHEN x_links       != '[]'          THEN url ELSE NULL END)                        AS x_pages,
-            COUNT(DISTINCT CASE WHEN bluesky_links  != '[]'         THEN url ELSE NULL END)                        AS bluesky_pages,
-            COUNT(DISTINCT CASE WHEN mastodon_links != '[]'         THEN url ELSE NULL END)                        AS mastodon_pages,
-            COUNT(DISTINCT CASE WHEN social_tier = 'twitter_only'   THEN url ELSE NULL END)                        AS twitter_only,
-            COUNT(DISTINCT CASE WHEN social_tier = 'modern_only'    THEN url ELSE NULL END)                        AS modern_only,
-            COUNT(DISTINCT CASE WHEN social_tier = 'mixed'          THEN url ELSE NULL END)                        AS mixed,
-            COUNT(DISTINCT CASE WHEN social_tier = 'no_social'      THEN url ELSE NULL END)                        AS no_social,
-            COUNT(DISTINCT CASE WHEN (twitter_links != '[]' OR x_links != '[]')             THEN url ELSE NULL END) AS has_any_legacy,
-            COUNT(DISTINCT CASE WHEN (bluesky_links != '[]' OR mastodon_links != '[]')      THEN url ELSE NULL END) AS has_any_modern,
-            MIN(scanned_at)                                                                                         AS first_scan,
-            MAX(scanned_at)                                                                                         AS last_scan
-        FROM url_social_media_results
+            COUNT(DISTINCT url)                                                             AS total_scanned,
+            COUNT(DISTINCT CASE WHEN is_reachable = 1    THEN url ELSE NULL END)           AS reachable,
+            COUNT(DISTINCT CASE WHEN has_statement = 1   THEN url ELSE NULL END)           AS has_statement,
+            COUNT(DISTINCT CASE WHEN found_in_footer = 1 THEN url ELSE NULL END)           AS found_in_footer,
+            MIN(scanned_at)                                                                 AS first_scan,
+            MAX(scanned_at)                                                                 AS last_scan
+        FROM url_accessibility_results
         GROUP BY country_code
         ORDER BY country_code
         """
@@ -138,9 +126,9 @@ def _build_stats_block(
         total_available: Total pages across all toon seed files.  When > 0,
             the block includes a "X of Y available pages scanned" coverage line.
         by_country: Per-country rows from ``_query_by_country()``.  When
-            provided, the block includes per-country breakdown tables.
-        seed_counts: Mapping of country_code → available page count from
-            toon seed files.  Used for the "Available" column in the per-country
+            provided, the block includes a per-country breakdown table.
+        seed_counts: Mapping of country_code → available page count from toon
+            seed files.  Used for the "Available" column in the per-country
             table when *by_country* is provided.
     """
     if not summary or not summary.get("total_scanned"):
@@ -153,10 +141,8 @@ def _build_stats_block(
     batches = summary.get("total_batches") or 0
     scanned = summary.get("total_scanned") or 0
     reachable = summary.get("total_reachable") or 0
-    twitter = summary.get("twitter_pages") or 0
-    x_pages = summary.get("x_pages") or 0
-    bluesky = summary.get("bluesky_pages") or 0
-    mastodon = summary.get("mastodon_pages") or 0
+    has_statement = summary.get("total_has_statement") or 0
+    in_footer = summary.get("total_in_footer") or 0
     last_scan = (summary.get("last_scan") or "")[:10] or "—"
 
     def _pct(num: int, denom: int) -> str:
@@ -195,23 +181,19 @@ def _build_stats_block(
     else:
         lines.append(f"**{scanned:,}** pages scanned")
 
-    reach_pct = _pct(reachable, scanned)
     lines += [
         f"**{reachable:,}** of **{scanned:,}** scanned pages were reachable "
-        f"(**{reach_pct}**)",
-        "",
-        "| Platform | Pages with link | % of scanned | % of reachable |",
-        "|----------|----------------|:------------:|:--------------:|",
-        f"| 🐦 Twitter | **{twitter:,}** | {_pct(twitter, scanned)} | {_pct(twitter, reachable)} |",
-        f"| ✖ X | **{x_pages:,}** | {_pct(x_pages, scanned)} | {_pct(x_pages, reachable)} |",
-        f"| 🦋 Bluesky | **{bluesky:,}** | {_pct(bluesky, scanned)} | {_pct(bluesky, reachable)} |",
-        f"| 🐘 Mastodon / Fediverse | **{mastodon:,}** | {_pct(mastodon, scanned)} | {_pct(mastodon, reachable)} |",
+        f"(**{_pct(reachable, scanned)}**)",
+        f"**{has_statement:,}** of **{reachable:,}** reachable pages have an "
+        f"accessibility statement (**{_pct(has_statement, reachable)}**)",
+        f"**{in_footer:,}** pages have the statement link in the footer "
+        f"(**{_pct(in_footer, has_statement)}** of pages with a statement)",
         "",
         "📥 Machine-readable results: "
-        "[social-media-data.json](social-media-data.json)",
+        "[accessibility-data.json](accessibility-data.json)",
     ]
 
-    # Per-country breakdown tables
+    # Per-country breakdown table
     if by_country:
         seed_counts = seed_counts or {}
 
@@ -219,20 +201,21 @@ def _build_stats_block(
             "",
             "---",
             "",
-            "## Social Media Scan by Country",
+            "## Accessibility Statement Scan by Country",
             "",
-            "| Country | Scanned | Available | Reachable | Twitter-only | Modern | Mixed | No Social | Scan Period |",
-            "|---------|---------|-----------|-----------|-------------|--------|-------|-----------|-------------|",
+            "| Country | Scanned | Available | Reachable | Has Statement | In Footer | Statement % | Scan Period |",
+            "|---------|---------|-----------|-----------|--------------|-----------|------------|-------------|",
         ]
         for row in by_country:
             cc = row["country_code"]
             available = seed_counts.get(cc, 0)
             avail_str = f"{available:,}" if available else "—"
             period = _scan_period(row.get("first_scan"), row.get("last_scan"))
+            stmt_pct = _pct(row.get("has_statement", 0), row.get("reachable", 0))
             lines.append(
                 f"| {cc} | {row['total_scanned']:,} | {avail_str} | {row['reachable']:,} | "
-                f"{row.get('twitter_only', 0):,} | {row.get('modern_only', 0):,} | "
-                f"{row.get('mixed', 0):,} | {row.get('no_social', 0):,} | {period} |"
+                f"{row.get('has_statement', 0):,} | {row.get('found_in_footer', 0):,} | "
+                f"{stmt_pct} | {period} |"
             )
 
         # totals row
@@ -240,60 +223,17 @@ def _build_stats_block(
         tot_avail = sum(seed_counts.values())
         tot_avail_str = f"**{tot_avail:,}**" if tot_avail else "—"
         tot_reachable = sum(r["reachable"] for r in by_country)
-        tot_twitter_only = sum(r.get("twitter_only", 0) for r in by_country)
-        tot_modern_only = sum(r.get("modern_only", 0) for r in by_country)
-        tot_mixed = sum(r.get("mixed", 0) for r in by_country)
-        tot_no_social = sum(r.get("no_social", 0) for r in by_country)
+        tot_has_statement = sum(r.get("has_statement", 0) for r in by_country)
+        tot_in_footer = sum(r.get("found_in_footer", 0) for r in by_country)
+        tot_stmt_pct = _pct(tot_has_statement, tot_reachable)
         lines.append(
             f"| **Total** | **{tot_scanned:,}** | {tot_avail_str} | **{tot_reachable:,}** | "
-            f"**{tot_twitter_only:,}** | **{tot_modern_only:,}** | "
-            f"**{tot_mixed:,}** | **{tot_no_social:,}** | — |"
-        )
-        lines.append("")
-
-        lines += [
-            "---",
-            "",
-            "## Social Media Platform Breakdown",
-            "",
-            "Number of **scanned** pages per country that link to each platform. "
-            "A page may link to more than one platform. "
-            "Percentages show the share of all scanned pages.",
-            "",
-            "| Country | Scanned | Reachable | Twitter | X | Bluesky | Mastodon | Legacy % | Modern % |",
-            "|---------|---------|-----------|---------|---|---------|----------|----------|----------|",
-        ]
-        for row in by_country:
-            cc = row["country_code"]
-            s = row["total_scanned"]
-            legacy_pct = _pct(row.get("has_any_legacy", 0), s)
-            modern_pct = _pct(row.get("has_any_modern", 0), s)
-            lines.append(
-                f"| {cc} | {s:,} | {row['reachable']:,} | "
-                f"{row.get('twitter_pages', 0):,} | {row.get('x_pages', 0):,} | "
-                f"{row.get('bluesky_pages', 0):,} | {row.get('mastodon_pages', 0):,} | "
-                f"{legacy_pct} | {modern_pct} |"
-            )
-
-        # totals row
-        tot_has_legacy = sum(r.get("has_any_legacy", 0) for r in by_country)
-        tot_has_modern = sum(r.get("has_any_modern", 0) for r in by_country)
-        tot_tw = sum(r.get("twitter_pages", 0) for r in by_country)
-        tot_x = sum(r.get("x_pages", 0) for r in by_country)
-        tot_bsky = sum(r.get("bluesky_pages", 0) for r in by_country)
-        tot_mast = sum(r.get("mastodon_pages", 0) for r in by_country)
-        leg_pct = _pct(tot_has_legacy, tot_scanned)
-        mod_pct = _pct(tot_has_modern, tot_scanned)
-        lines.append(
-            f"| **Total** | **{tot_scanned:,}** | **{tot_reachable:,}** | "
-            f"**{tot_tw:,}** | **{tot_x:,}** | **{tot_bsky:,}** | **{tot_mast:,}** | "
-            f"**{leg_pct}** | **{mod_pct}** |"
+            f"**{tot_has_statement:,}** | **{tot_in_footer:,}** | **{tot_stmt_pct}** | — |"
         )
         lines += [
             "",
-            "> **Legacy platforms** (Twitter / X) vs **modern open platforms** "
-            "(Bluesky / Mastodon) — percentages are share of **scanned** pages "
-            "that contain at least one link to any platform in that group.",
+            "> **Statement %** is the percentage of *reachable* pages that contain "
+            "at least one link to an accessibility statement.",
         ]
 
     lines += [
@@ -307,7 +247,7 @@ def _build_stats_block(
 # Public API
 # ---------------------------------------------------------------------------
 
-def generate_social_media_report(
+def generate_accessibility_report(
     db_path: Path,
     page_path: Path,
     data_path: Path,
@@ -317,7 +257,7 @@ def generate_social_media_report(
 
     Args:
         db_path: Path to the SQLite metadata database.
-        page_path: Path to the ``docs/social-media.md`` Markdown page.
+        page_path: Path to the ``docs/accessibility-statements.md`` Markdown page.
         data_path: Output path for the machine-readable JSON data file.
         toon_seeds_dir: Directory containing ``*.toon`` seed files.  When
             provided the stats block will include a "X of Y available pages
@@ -353,10 +293,8 @@ def generate_social_media_report(
             "total_scanned": summary.get("total_scanned") or 0,
             "total_reachable": summary.get("total_reachable") or 0,
             "total_available": total_available,
-            "twitter_pages": summary.get("twitter_pages") or 0,
-            "x_pages": summary.get("x_pages") or 0,
-            "bluesky_pages": summary.get("bluesky_pages") or 0,
-            "mastodon_pages": summary.get("mastodon_pages") or 0,
+            "total_has_statement": summary.get("total_has_statement") or 0,
+            "total_in_footer": summary.get("total_in_footer") or 0,
             "first_scan": summary.get("first_scan"),
             "last_scan": summary.get("last_scan"),
         },
@@ -367,7 +305,7 @@ def generate_social_media_report(
 
     # --- update the Markdown page -----------------------------------------
     if not page_path.exists():
-        print(f"Social media page not found: {page_path}", file=sys.stderr)
+        print(f"Accessibility page not found: {page_path}", file=sys.stderr)
         return False
 
     content = page_path.read_text(encoding="utf-8")
@@ -389,25 +327,25 @@ def generate_social_media_report(
         + content[end_idx + len(_STATS_MARKER_END):]
     )
     page_path.write_text(new_content, encoding="utf-8")
-    print(f"Social media page updated: {page_path}")
+    print(f"Accessibility page updated: {page_path}")
 
     # --- console summary --------------------------------------------------
     print("\n" + "=" * 60)
-    print("SOCIAL MEDIA STATS SUMMARY")
+    print("ACCESSIBILITY STATS SUMMARY")
     print("=" * 60)
-    print(f"Batches run  : {summary.get('total_batches', 0):,}")
-    scanned = summary.get('total_scanned', 0)
-    reachable = summary.get('total_reachable', 0)
+    print(f"Batches run       : {summary.get('total_batches', 0):,}")
+    scanned = summary.get("total_scanned", 0)
+    reachable = summary.get("total_reachable", 0)
+    has_statement = summary.get("total_has_statement", 0)
+    in_footer = summary.get("total_in_footer", 0)
     if total_available:
-        print(f"Pages scanned: {scanned:,} / {total_available:,} available "
+        print(f"Pages scanned     : {scanned:,} / {total_available:,} available "
               f"({scanned / total_available * 100:.1f}% coverage)")
     else:
-        print(f"Sites crawled: {scanned:,} ({reachable:,} reachable)")
-    print(f"Reachable    : {reachable:,} / {scanned:,}")
-    print(f"Twitter pages: {summary.get('twitter_pages', 0):,}")
-    print(f"X pages      : {summary.get('x_pages', 0):,}")
-    print(f"Bluesky pages: {summary.get('bluesky_pages', 0):,}")
-    print(f"Mastodon pages:{summary.get('mastodon_pages', 0):,}")
+        print(f"Pages scanned     : {scanned:,}")
+    print(f"Reachable         : {reachable:,} / {scanned:,}")
+    print(f"Has statement     : {has_statement:,} / {reachable:,}")
+    print(f"Found in footer   : {in_footer:,}")
     print("=" * 60)
 
     return True
@@ -421,21 +359,23 @@ def main() -> None:
     """Main CLI entry point."""
     parser = argparse.ArgumentParser(
         description=(
-            "Generate aggregate social media scan stats and update "
-            "docs/social-media.md with a live stats block."
+            "Generate aggregate accessibility statement scan stats and update "
+            "docs/accessibility-statements.md with a live stats block."
         )
     )
     parser.add_argument(
         "--page",
-        help="Path to the social-media Markdown page (default: docs/social-media.md)",
+        help="Path to the accessibility Markdown page "
+             "(default: docs/accessibility-statements.md)",
         type=Path,
-        default=Path("docs/social-media.md"),
+        default=Path("docs/accessibility-statements.md"),
     )
     parser.add_argument(
         "--data",
-        help="Output path for the JSON data file (default: docs/social-media-data.json)",
+        help="Output path for the JSON data file "
+             "(default: docs/accessibility-data.json)",
         type=Path,
-        default=Path("docs/social-media-data.json"),
+        default=Path("docs/accessibility-data.json"),
     )
     parser.add_argument(
         "--db",
@@ -461,11 +401,11 @@ def main() -> None:
         db_path = Path(settings.metadata_db_url.replace("sqlite:///", ""))
 
     try:
-        ok = generate_social_media_report(db_path, args.page, args.data, args.seeds_dir)
+        ok = generate_accessibility_report(db_path, args.page, args.data, args.seeds_dir)
         if not ok:
             sys.exit(1)
     except Exception as exc:
-        print(f"Error generating social media report: {exc}", file=sys.stderr)
+        print(f"Error generating accessibility report: {exc}", file=sys.stderr)
         import traceback
         traceback.print_exc()
         sys.exit(1)

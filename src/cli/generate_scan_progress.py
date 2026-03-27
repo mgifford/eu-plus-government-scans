@@ -178,6 +178,7 @@ def update_index_progress(
             social = _query_social_media(conn)
             tech = _query_technology(conn)
             lighthouse = _query_lighthouse(conn)
+            accessibility = _query_accessibility(conn)
             combined_reachable = _query_combined_reachability(conn)
         finally:
             conn.close()
@@ -188,8 +189,9 @@ def update_index_progress(
         sm_reachable = sum(d["reachable"] for d in social.values())
         tech_total = sum(d["total"] for d in tech.values())
         lh_total = sum(d["total"] for d in lighthouse.values())
+        a11y_total = sum(d["total"] for d in accessibility.values())
         combined_total = sum(d["confirmed"] for d in combined_reachable.values())
-        all_countries = sorted(set(url_val) | set(social) | set(tech) | set(lighthouse))
+        all_countries = sorted(set(url_val) | set(social) | set(tech) | set(lighthouse) | set(accessibility))
 
         denom = total_available or combined_total or sm_total or uv_total or 1
 
@@ -219,6 +221,11 @@ def update_index_progress(
             buf.write(
                 f"| Lighthouse | {lh_total:,} scanned | "
                 f"{_progress_bar(lh_total, denom)} |\n"
+            )
+        if a11y_total:
+            buf.write(
+                f"| Accessibility Statements | {a11y_total:,} scanned | "
+                f"{_progress_bar(a11y_total, denom)} |\n"
             )
         buf.write("\n")
         if total_available:
@@ -364,6 +371,31 @@ def _query_combined_reachability(conn: sqlite3.Connection) -> dict[str, dict]:
     return result
 
 
+def _query_accessibility(conn: sqlite3.Connection) -> dict[str, dict]:
+    """Return per-country accessibility statement scan stats from the database.
+
+    Uses COUNT(DISTINCT CASE WHEN … THEN url END) so that each URL is counted
+    at most once per country even when it appears in multiple scan batches.
+    """
+    result: dict[str, dict] = {}
+    for row in conn.execute(
+        """
+        SELECT country_code,
+               COUNT(DISTINCT url)                                                            AS total,
+               COUNT(DISTINCT CASE WHEN is_reachable = 1    THEN url ELSE NULL END)          AS reachable,
+               COUNT(DISTINCT CASE WHEN has_statement = 1   THEN url ELSE NULL END)          AS has_statement,
+               COUNT(DISTINCT CASE WHEN found_in_footer = 1 THEN url ELSE NULL END)          AS found_in_footer,
+               MIN(scanned_at)                                                                AS first_scan,
+               MAX(scanned_at)                                                                AS last_scan
+        FROM url_accessibility_results
+        GROUP BY country_code
+        ORDER BY country_code
+        """
+    ):
+        result[row["country_code"]] = dict(row)
+    return result
+
+
 def _query_technology(conn: sqlite3.Connection) -> dict[str, dict]:
     """Return per-country technology scan stats from the database."""
     result: dict[str, dict] = {}
@@ -415,6 +447,7 @@ def _write_overall_coverage(
     lighthouse: dict[str, dict] | None = None,
     seed_counts: dict[str, int] | None = None,
     combined_reachable: dict[str, dict] | None = None,
+    accessibility: dict[str, dict] | None = None,
 ) -> tuple:
     """Write the overall coverage section.
 
@@ -432,6 +465,7 @@ def _write_overall_coverage(
     sm_reachable = sum(d["reachable"] for d in social.values())
     tech_total = sum(d["total"] for d in tech.values())
     lh_total = sum(d["total"] for d in (lighthouse or {}).values())
+    a11y_total = sum(d["total"] for d in (accessibility or {}).values())
     combined_total = sum(d["confirmed"] for d in (combined_reachable or {}).values())
 
     total_available = sum((seed_counts or {}).values())
@@ -474,6 +508,11 @@ def _write_overall_coverage(
         f"| Lighthouse | {lh_total:,} scanned | "
         f"{avail_str} | "
         f"{'(manual scan)' if lh_total == 0 else _progress_bar(lh_total, denom)} |\n"
+    )
+    f.write(
+        f"| Accessibility Statements | {a11y_total:,} scanned | "
+        f"{avail_str} | "
+        f"{_progress_bar(a11y_total, denom)} |\n"
     )
     f.write("\n")
     f.write(
@@ -690,6 +729,56 @@ def _write_lighthouse_table(
     )
 
 
+def _write_accessibility_table(
+    f, accessibility: dict[str, dict], all_countries: list[str]
+) -> None:
+    """Write the per-country accessibility statement scan table (or a placeholder).
+
+    Shows the number of scanned pages, reachable pages, pages with an
+    accessibility statement link, and pages where the link was found in the
+    footer alongside the last-scan date.
+    """
+    if not accessibility:
+        f.write(
+            "## Accessibility Statement Scan\n\n"
+            "_No accessibility statement scans have been run yet. "
+            "Trigger the **Scan Accessibility Statements** workflow manually "
+            "or wait for the next scheduled run._\n\n"
+        )
+        return
+
+    def _pct(num: int, denom: int) -> str:
+        return f"{num / denom * 100:.0f}%" if denom else "—"
+
+    f.write("## Accessibility Statement Scan by Country\n\n")
+    f.write(
+        "Checks whether each government page links to an accessibility statement "
+        "as required by the EU Web Accessibility Directive (Directive 2016/2102).\n\n"
+    )
+    f.write(
+        "| Country | Scanned | Reachable | Has Statement | In Footer | Statement % | Scan Period |\n"
+    )
+    f.write(
+        "|---------|---------|-----------|--------------|-----------|------------|-------------|\n"
+    )
+    for cc in all_countries:
+        if cc not in accessibility:
+            continue
+        d = accessibility[cc]
+        scan_period = _format_month_range(d.get("first_scan"), d.get("last_scan"))
+        stmt_pct = _pct(d["has_statement"], d["reachable"])
+        f.write(
+            f"| {cc} | {d['total']:,} | {d['reachable']:,} | "
+            f"{d['has_statement']:,} | {d['found_in_footer']:,} | "
+            f"{stmt_pct} | {scan_period} |\n"
+        )
+    f.write("\n")
+    f.write(
+        "> **Statement %** is the percentage of *reachable* pages that contain "
+        "at least one link to an accessibility statement.\n\n"
+    )
+
+
 def _write_pending_sections(
     f,
     url_val: dict[str, dict],
@@ -729,15 +818,20 @@ def _write_priority_guide(f) -> None:
         "links in one pass.\n"
     )
     f.write(
-        "2. **Technology Scan** — run on demand; detects CMS, framework, "
+        "2. **Accessibility Statement Scan** — runs every 4 hours; checks "
+        "whether each page links to an accessibility statement as required "
+        "by the EU Web Accessibility Directive (Directive 2016/2102).\n"
+    )
+    f.write(
+        "3. **Technology Scan** — run on demand; detects CMS, framework, "
         "and analytics platforms.\n"
     )
     f.write(
-        "3. **Lighthouse Scan** — run on demand; measures performance, "
+        "4. **Lighthouse Scan** — run on demand; measures performance, "
         "accessibility (WCAG), best practices, and SEO for each URL.\n"
     )
     f.write(
-        "4. **URL Validation** — runs every 6 hours in the background; "
+        "5. **URL Validation** — runs every 6 hours in the background; "
         "a lightweight redirect/404 check that is **automatically skipped** "
         "for URLs already confirmed reachable by a higher-priority scan "
         "within the last 30 days.\n"
@@ -785,9 +879,10 @@ def _write_report(
     platforms = _query_social_media_platforms(conn)
     tech = _query_technology(conn)
     lighthouse = _query_lighthouse(conn)
+    accessibility = _query_accessibility(conn)
     combined_reachable = _query_combined_reachability(conn)
 
-    all_countries = sorted(set(url_val) | set(social) | set(tech) | set(lighthouse))
+    all_countries = sorted(set(url_val) | set(social) | set(tech) | set(lighthouse) | set(accessibility))
 
     with output_path.open("w", encoding="utf-8") as f:
         f.write("# Scan Progress Report\n\n")
@@ -797,7 +892,7 @@ def _write_report(
             "countries. It is regenerated automatically after every scan run.\n\n"
         )
 
-        totals = _write_overall_coverage(f, url_val, social, tech, lighthouse, seed_counts, combined_reachable)
+        totals = _write_overall_coverage(f, url_val, social, tech, lighthouse, seed_counts, combined_reachable, accessibility)
         uv_total, uv_valid, sm_total, sm_reachable, tech_total = totals
 
         _write_url_validation_table(f, url_val, all_countries, seed_counts)
@@ -805,10 +900,12 @@ def _write_report(
         _write_social_media_platform_breakdown(f, platforms, all_countries)
         _write_technology_table(f, tech, all_countries)
         _write_lighthouse_table(f, lighthouse, all_countries)
+        _write_accessibility_table(f, accessibility, all_countries)
         _write_pending_sections(f, url_val, social)
         _write_priority_guide(f)
 
     lh_total = sum(d["total"] for d in lighthouse.values())
+    a11y_total = sum(d["total"] for d in accessibility.values())
     combined_total = sum(d["confirmed"] for d in combined_reachable.values())
     # Print console summary
     total_available = sum((seed_counts or {}).values())
@@ -825,6 +922,7 @@ def _write_report(
         print(f"Social Media   : {sm_reachable:,} / {sm_total:,} URLs reachable")
     print(f"Technology     : {tech_total:,} URLs scanned")
     print(f"Lighthouse     : {lh_total:,} URLs scanned")
+    print(f"Accessibility  : {a11y_total:,} URLs scanned")
     print(f"Countries      : {len(all_countries)} with data")
     print("=" * 70)
 

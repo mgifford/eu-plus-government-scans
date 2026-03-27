@@ -5,13 +5,6 @@ layout: page
 
 # Social Media Scanning
 
-This page describes how the project scans European government websites for
-social media links, which platforms are tracked, and how to access the results.
-
----
-
-## Current Stats
-
 <!-- SOCIAL_MEDIA_STATS_START -->
 
 _Stats as of 2026-03-27 01:32 UTC — last scan: 2026-03-27_
