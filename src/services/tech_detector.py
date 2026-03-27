@@ -54,6 +54,53 @@ class TechDetector:
                 self._wappalyzer = Wappalyzer.latest()
         return self._wappalyzer
 
+    def detect_html(
+        self,
+        url: str,
+        html: str,
+        headers: dict,
+        final_url: str | None = None,
+        scanned_at: str | None = None,
+    ) -> "TechDetectionResult":
+        """
+        Detect technologies from pre-fetched HTML and response headers.
+
+        Use this when the page content has already been retrieved (e.g. by a
+        multi-scanner that shares a single HTTP request across several analyses).
+
+        Args:
+            url: The original URL requested.
+            html: Raw HTML of the page.
+            headers: HTTP response headers as a plain dict.
+            final_url: The URL after redirects (uses *url* when not provided).
+            scanned_at: ISO-8601 timestamp string.  Defaults to *now* in UTC.
+
+        Returns:
+            :class:`TechDetectionResult` with detected technologies.
+        """
+        if scanned_at is None:
+            scanned_at = datetime.now(timezone.utc).isoformat()
+
+        try:
+            webpage = WebPage(final_url or url, html, headers)
+            wappalyzer = self._get_wappalyzer()
+            with warnings.catch_warnings():
+                warnings.simplefilter("ignore")
+                technologies = wappalyzer.analyze_with_versions_and_categories(webpage)
+        except Exception as exc:  # noqa: BLE001
+            return TechDetectionResult(
+                url=url,
+                technologies={},
+                error_message=f"Analysis error: {exc}",
+                scanned_at=scanned_at,
+            )
+
+        return TechDetectionResult(
+            url=url,
+            technologies=technologies,
+            scanned_at=scanned_at,
+        )
+
     async def detect_url(self, url: str) -> TechDetectionResult:
         """
         Detect technologies used by a single URL.
@@ -80,6 +127,7 @@ class TechDetector:
                 html = response.text
                 # httpx headers are case-insensitive; convert to plain dict for Wappalyzer
                 headers = dict(response.headers)
+                final_url = str(response.url)
 
         except httpx.TooManyRedirects as exc:
             return TechDetectionResult(
@@ -117,25 +165,7 @@ class TechDetector:
                 scanned_at=scanned_at,
             )
 
-        try:
-            webpage = WebPage(str(response.url), html, headers)
-            wappalyzer = self._get_wappalyzer()
-            with warnings.catch_warnings():
-                warnings.simplefilter("ignore")
-                technologies = wappalyzer.analyze_with_versions_and_categories(webpage)
-        except Exception as exc:  # noqa: BLE001
-            return TechDetectionResult(
-                url=url,
-                technologies={},
-                error_message=f"Analysis error: {exc}",
-                scanned_at=scanned_at,
-            )
-
-        return TechDetectionResult(
-            url=url,
-            technologies=technologies,
-            scanned_at=scanned_at,
-        )
+        return self.detect_html(url, html, headers, final_url=final_url, scanned_at=scanned_at)
 
     async def detect_urls_batch(
         self,
