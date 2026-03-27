@@ -163,7 +163,53 @@ class AccessibilityScanner:
         self.max_redirects = max_redirects
         self.user_agent = user_agent
 
-    async def scan_url(self, url: str) -> AccessibilityScanResult:
+    def scan_html(
+        self,
+        url: str,
+        html: str,
+        scanned_at: str | None = None,
+    ) -> "AccessibilityScanResult":
+        """
+        Analyse pre-fetched HTML for accessibility statement links.
+
+        Use this when the page content has already been retrieved (e.g. by a
+        multi-scanner that shares a single HTTP request across several analyses).
+
+        Args:
+            url: The URL the HTML was fetched from (used for base-URL resolution
+                and as the ``url`` field in the returned result).
+            html: Raw HTML of the page.
+            scanned_at: ISO-8601 timestamp string.  Defaults to *now* in UTC.
+
+        Returns:
+            :class:`AccessibilityScanResult` with ``is_reachable=True``.
+        """
+        if scanned_at is None:
+            scanned_at = datetime.now(timezone.utc).isoformat()
+
+        try:
+            statement_links, matched_terms, found_in_footer = (
+                _extract_accessibility_links(html, url)
+            )
+        except Exception as exc:  # noqa: BLE001
+            return AccessibilityScanResult(
+                url=url,
+                is_reachable=True,
+                error_message=f"Parse error: {exc}",
+                scanned_at=scanned_at,
+            )
+
+        return AccessibilityScanResult(
+            url=url,
+            is_reachable=True,
+            statement_links=statement_links,
+            matched_terms=matched_terms,
+            has_statement=bool(statement_links),
+            found_in_footer=found_in_footer,
+            scanned_at=scanned_at,
+        )
+
+    async def scan_url(self, url: str) -> "AccessibilityScanResult":
         """
         Scan a single URL for accessibility statement links.
 
@@ -220,27 +266,7 @@ class AccessibilityScanner:
                 scanned_at=scanned_at,
             )
 
-        try:
-            statement_links, matched_terms, found_in_footer = (
-                _extract_accessibility_links(html, url)
-            )
-        except Exception as exc:  # noqa: BLE001
-            return AccessibilityScanResult(
-                url=url,
-                is_reachable=True,
-                error_message=f"Parse error: {exc}",
-                scanned_at=scanned_at,
-            )
-
-        return AccessibilityScanResult(
-            url=url,
-            is_reachable=True,
-            statement_links=statement_links,
-            matched_terms=matched_terms,
-            has_statement=bool(statement_links),
-            found_in_footer=found_in_footer,
-            scanned_at=scanned_at,
-        )
+        return self.scan_html(url, html, scanned_at=scanned_at)
 
     async def scan_urls_batch(
         self,

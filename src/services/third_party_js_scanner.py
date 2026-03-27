@@ -521,6 +521,49 @@ class ThirdPartyJsScanner:
         self.max_redirects = max_redirects
         self.user_agent = user_agent
 
+    def scan_html(
+        self,
+        url: str,
+        html: str,
+        final_url: str | None = None,
+        scanned_at: str | None = None,
+    ) -> "ThirdPartyJsScanResult":
+        """
+        Analyse pre-fetched HTML for third-party JavaScript resources.
+
+        Use this when the page content has already been retrieved (e.g. by a
+        multi-scanner that shares a single HTTP request across several analyses).
+
+        Args:
+            url: The original URL requested.
+            html: Raw HTML of the page.
+            final_url: The URL after redirects (used for host comparison when
+                detecting third-party scripts).  Defaults to *url*.
+            scanned_at: ISO-8601 timestamp string.  Defaults to *now* in UTC.
+
+        Returns:
+            :class:`ThirdPartyJsScanResult` with ``is_reachable=True``.
+        """
+        if scanned_at is None:
+            scanned_at = datetime.now(timezone.utc).isoformat()
+
+        try:
+            scripts = _extract_third_party_scripts(html, final_url or url)
+        except Exception as exc:  # noqa: BLE001
+            return ThirdPartyJsScanResult(
+                url=url,
+                is_reachable=True,
+                error_message=f"Parse error: {exc}",
+                scanned_at=scanned_at,
+            )
+
+        return ThirdPartyJsScanResult(
+            url=url,
+            is_reachable=True,
+            scripts=scripts,
+            scanned_at=scanned_at,
+        )
+
     async def scan_url(self, url: str) -> ThirdPartyJsScanResult:
         """
         Scan a single URL for third-party JavaScript resources.
@@ -579,22 +622,7 @@ class ThirdPartyJsScanner:
                 scanned_at=scanned_at,
             )
 
-        try:
-            scripts = _extract_third_party_scripts(html, final_url)
-        except Exception as exc:  # noqa: BLE001
-            return ThirdPartyJsScanResult(
-                url=url,
-                is_reachable=True,
-                error_message=f"Parse error: {exc}",
-                scanned_at=scanned_at,
-            )
-
-        return ThirdPartyJsScanResult(
-            url=url,
-            is_reachable=True,
-            scripts=scripts,
-            scanned_at=scanned_at,
-        )
+        return self.scan_html(url, html, final_url=final_url, scanned_at=scanned_at)
 
     async def scan_urls_batch(
         self,
