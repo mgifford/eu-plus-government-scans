@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-27 01:32 UTC",
+  "generated_at": "2026-03-27 03:11 UTC",
   "summary": {
     "total_batches": 53,
     "total_scanned": 14200,
@@ -21,6 +21,13 @@
       "x_pages": 18,
       "bluesky_pages": 16,
       "mastodon_pages": 42,
+      "twitter_only": 30,
+      "modern_only": 25,
+      "mixed": 22,
+      "no_social": 710,
+      "has_any_legacy": 52,
+      "has_any_modern": 47,
+      "first_scan": "2026-03-22T00:36:33.003106+00:00",
       "last_scan": "2026-03-25T09:45:59.237101+00:00"
     },
     {
@@ -31,6 +38,13 @@
       "x_pages": 74,
       "bluesky_pages": 27,
       "mastodon_pages": 90,
+      "twitter_only": 206,
+      "modern_only": 58,
+      "mixed": 47,
+      "no_social": 929,
+      "has_any_legacy": 253,
+      "has_any_modern": 105,
+      "first_scan": "2026-03-22T01:05:38.430207+00:00",
       "last_scan": "2026-03-25T10:29:16.778287+00:00"
     },
     {
@@ -41,6 +55,13 @@
       "x_pages": 5,
       "bluesky_pages": 0,
       "mastodon_pages": 13,
+      "twitter_only": 21,
+      "modern_only": 11,
+      "mixed": 2,
+      "no_social": 235,
+      "has_any_legacy": 23,
+      "has_any_modern": 13,
+      "first_scan": "2026-03-22T01:54:24.709226+00:00",
       "last_scan": "2026-03-25T10:42:04.934552+00:00"
     },
     {
@@ -51,6 +72,13 @@
       "x_pages": 0,
       "bluesky_pages": 0,
       "mastodon_pages": 14,
+      "twitter_only": 31,
+      "modern_only": 11,
+      "mixed": 3,
+      "no_social": 187,
+      "has_any_legacy": 34,
+      "has_any_modern": 14,
+      "first_scan": "2026-03-22T02:07:26.039772+00:00",
       "last_scan": "2026-03-25T10:50:15.268092+00:00"
     },
     {
@@ -61,6 +89,13 @@
       "x_pages": 10,
       "bluesky_pages": 0,
       "mastodon_pages": 36,
+      "twitter_only": 124,
+      "modern_only": 21,
+      "mixed": 15,
+      "no_social": 643,
+      "has_any_legacy": 139,
+      "has_any_modern": 36,
+      "first_scan": "2026-03-22T02:16:47.036985+00:00",
       "last_scan": "2026-03-25T14:37:09.247971+00:00"
     },
     {
@@ -71,6 +106,13 @@
       "x_pages": 21,
       "bluesky_pages": 17,
       "mastodon_pages": 13,
+      "twitter_only": 177,
+      "modern_only": 10,
+      "mixed": 17,
+      "no_social": 1299,
+      "has_any_legacy": 194,
+      "has_any_modern": 27,
+      "first_scan": "2026-03-25T14:37:10.950638+00:00",
       "last_scan": "2026-03-25T15:21:47.095000+00:00"
     },
     {
@@ -81,6 +123,13 @@
       "x_pages": 2,
       "bluesky_pages": 0,
       "mastodon_pages": 26,
+      "twitter_only": 65,
+      "modern_only": 22,
+      "mixed": 4,
+      "no_social": 293,
+      "has_any_legacy": 69,
+      "has_any_modern": 26,
+      "first_scan": "2026-03-25T15:21:48.567834+00:00",
       "last_scan": "2026-03-25T15:36:55.350147+00:00"
     },
     {
@@ -91,6 +140,13 @@
       "x_pages": 13,
       "bluesky_pages": 2,
       "mastodon_pages": 0,
+      "twitter_only": 38,
+      "modern_only": 2,
+      "mixed": 0,
+      "no_social": 132,
+      "has_any_legacy": 38,
+      "has_any_modern": 2,
+      "first_scan": "2026-03-25T15:36:57.288884+00:00",
       "last_scan": "2026-03-25T15:43:46.659780+00:00"
     },
     {
@@ -101,6 +157,13 @@
       "x_pages": 295,
       "bluesky_pages": 89,
       "mastodon_pages": 344,
+      "twitter_only": 1334,
+      "modern_only": 159,
+      "mixed": 247,
+      "no_social": 6330,
+      "has_any_legacy": 1581,
+      "has_any_modern": 406,
+      "first_scan": "2026-03-25T15:43:48.896505+00:00",
       "last_scan": "2026-03-27T01:32:08.883558+00:00"
     }
   ]

@@ -1,14 +1,105 @@
 {
-  "generated_at": "2026-03-26 12:57 UTC",
+  "generated_at": "2026-03-27 03:11 UTC",
   "summary": {
-    "total_batches": 0,
-    "total_scanned": 0,
-    "total_reachable": 0,
+    "total_batches": 15,
+    "total_scanned": 16270,
+    "total_reachable": 15427,
     "total_available": 82714,
-    "total_has_statement": 0,
-    "total_in_footer": 0,
-    "first_scan": null,
-    "last_scan": null
+    "total_has_statement": 7003,
+    "total_in_footer": 6576,
+    "first_scan": "2026-03-25T17:15:29.276776+00:00",
+    "last_scan": "2026-03-26T23:42:40.428661+00:00"
   },
-  "by_country": []
+  "by_country": [
+    {
+      "country_code": "AUSTRIA",
+      "total_scanned": 821,
+      "reachable": 787,
+      "has_statement": 547,
+      "found_in_footer": 517,
+      "first_scan": "2026-03-25T17:15:29.276776+00:00",
+      "last_scan": "2026-03-25T17:41:37.231063+00:00"
+    },
+    {
+      "country_code": "BELGIUM",
+      "total_scanned": 1309,
+      "reachable": 1219,
+      "has_statement": 526,
+      "found_in_footer": 477,
+      "first_scan": "2026-03-25T17:41:38.663095+00:00",
+      "last_scan": "2026-03-25T18:26:17.758666+00:00"
+    },
+    {
+      "country_code": "BULGARIA",
+      "total_scanned": 291,
+      "reachable": 269,
+      "has_statement": 61,
+      "found_in_footer": 59,
+      "first_scan": "2026-03-25T18:26:19.400810+00:00",
+      "last_scan": "2026-03-25T18:38:08.639108+00:00"
+    },
+    {
+      "country_code": "CROATIA",
+      "total_scanned": 233,
+      "reachable": 231,
+      "has_statement": 85,
+      "found_in_footer": 61,
+      "first_scan": "2026-03-25T18:38:10.475706+00:00",
+      "last_scan": "2026-03-25T18:46:24.212984+00:00"
+    },
+    {
+      "country_code": "CZECHIA",
+      "total_scanned": 843,
+      "reachable": 803,
+      "has_statement": 427,
+      "found_in_footer": 362,
+      "first_scan": "2026-03-25T18:46:26.205282+00:00",
+      "last_scan": "2026-03-25T21:01:36.645618+00:00"
+    },
+    {
+      "country_code": "DENMARK",
+      "total_scanned": 1521,
+      "reachable": 1500,
+      "has_statement": 1030,
+      "found_in_footer": 1013,
+      "first_scan": "2026-03-25T21:01:38.178245+00:00",
+      "last_scan": "2026-03-25T21:50:11.658708+00:00"
+    },
+    {
+      "country_code": "ESTONIA",
+      "total_scanned": 396,
+      "reachable": 388,
+      "has_statement": 136,
+      "found_in_footer": 65,
+      "first_scan": "2026-03-25T21:50:13.268154+00:00",
+      "last_scan": "2026-03-25T22:04:36.251317+00:00"
+    },
+    {
+      "country_code": "FINLAND",
+      "total_scanned": 180,
+      "reachable": 172,
+      "has_statement": 111,
+      "found_in_footer": 104,
+      "first_scan": "2026-03-25T22:04:38.468144+00:00",
+      "last_scan": "2026-03-25T22:11:27.157114+00:00"
+    },
+    {
+      "country_code": "FRANCE",
+      "total_scanned": 10007,
+      "reachable": 9402,
+      "has_statement": 3625,
+      "found_in_footer": 3489,
+      "first_scan": "2026-03-25T22:11:29.812991+00:00",
+      "last_scan": "2026-03-26T23:17:09.156536+00:00"
+    },
+    {
+      "country_code": "GERMANY",
+      "total_scanned": 669,
+      "reachable": 656,
+      "has_statement": 455,
+      "found_in_footer": 429,
+      "first_scan": "2026-03-26T23:17:11.908189+00:00",
+      "last_scan": "2026-03-26T23:42:40.428661+00:00"
+    }
+  ]
 }
