@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-03-28 06:18 UTC_
+_Generated: 2026-03-28 06:26 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -10,9 +10,9 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage |
 |-----------|--------------|-----------|----------|
-| **Combined Reachability** | **27,822 confirmed reachable** | 82,714 | **██████░░░░░░░░░░░░░░ 33.6%** |
+| **Combined Reachability** | **29,801 confirmed reachable** | 82,714 | **███████░░░░░░░░░░░░░ 36.0%** |
 | URL Validation | 10,495 validated (8,949 valid) | 82,714 | ██░░░░░░░░░░░░░░░░░░ 12.7% |
-| Social Media | 26,152 scanned (24,771 reachable) | 82,714 | ██████░░░░░░░░░░░░░░ 31.6% |
+| Social Media | 28,355 scanned (26,750 reachable) | 82,714 | ██████░░░░░░░░░░░░░░ 34.3% |
 | Technology | 0 scanned | 82,714 | (manual scan) |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) |
 | Accessibility Statements | 28,414 scanned | 82,714 | ██████░░░░░░░░░░░░░░ 34.4% |
@@ -24,7 +24,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Country | Total | Valid | Invalid | Scan Period | Coverage |
 |---------|-------|-------|---------|-------------|----------|
 | AUSTRIA | 821 | 718 | 142 | Mar 2026 | ███████████████ 100.0% |
-| BELGIUM | 1,309 | 1,166 | 538 | Mar 2026 | ███████████████ 100.0% |
+| BELGIUM | 1,309 | 1,166 | 537 | Mar 2026 | ███████████████ 100.0% |
 | BULGARIA | 291 | 232 | 69 | Mar 2026 | ███████████████ 100.0% |
 | CROATIA | 1 | 0 | 1 | Mar 2026 | ░░░░░░░░░░░░░░░ 0.4% |
 | CZECHIA | 567 | 440 | 127 | Mar 2026 | ██████████░░░░░ 67.3% |
@@ -57,7 +57,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | HUNGARY | 390 | 390 | 366 | 24 | 20 | 5 | 317 | Mar 2026 |
 | ICELAND | 139 | 139 | 135 | 5 | 8 | 6 | 116 | Mar 2026 |
 | IRELAND | 522 | 522 | 494 | 149 | 25 | 29 | 291 | Mar 2026 |
-| ITALY | 1,197 | 5,338 | 976 | 544 | 13 | 43 | 376 | Mar 2026 |
+| ITALY | 3,400 | 5,338 | 2,955 | 1,234 | 56 | 114 | 1,551 | Mar 2026 |
 
 ## Social Media Platform Breakdown
 
@@ -79,8 +79,8 @@ Number of **scanned** pages per country that link to each platform. A page may l
 | HUNGARY | 390 | 366 | 29 | 0 | 0 | 25 | 7.4% | 6.4% |
 | ICELAND | 139 | 135 | 8 | 5 | 0 | 14 | 7.9% | 10.1% |
 | IRELAND | 522 | 494 | 153 | 31 | 18 | 42 | 34.1% | 10.3% |
-| ITALY | 1,197 | 976 | 574 | 18 | 0 | 56 | 49.0% | 4.7% |
-| **Total** | **26,152** | **24,771** | **4,636** | **1,056** | **322** | **1,401** | **20.9%** | **6.0%** |
+| ITALY | 3,400 | 2,955 | 1,310 | 52 | 0 | 170 | 39.6% | 5.0% |
+| **Total** | **28,355** | **26,750** | **5,372** | **1,090** | **322** | **1,515** | **21.9%** | **6.0%** |
 
 > **Legacy platforms** (Twitter / X) vs **modern open platforms** (Bluesky / Mastodon) — percentages are share of **scanned** pages that contain at least one link to any platform in that group.
 
