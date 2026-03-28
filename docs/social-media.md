@@ -7,19 +7,19 @@ layout: page
 
 <!-- SOCIAL_MEDIA_STATS_START -->
 
-_Stats as of 2026-03-28 08:13 UTC — last scan: 2026-03-28_
+_Stats as of 2026-03-28 08:16 UTC — last scan: 2026-03-28_
 
-**65** scan batches run
+**67** scan batches run
 
-**28,355** of **82,714** available pages scanned (**34.3%** coverage)
-**26,750** of **28,355** scanned pages were reachable (**94.3%**)
+**30,624** of **82,714** available pages scanned (**37.0%** coverage)
+**28,835** of **30,624** scanned pages were reachable (**94.2%**)
 
 | Platform | Pages with link | % of scanned | % of reachable |
 |----------|----------------|:------------:|:--------------:|
-| 🐦 Twitter | **5,372** | 18.9% | 20.1% |
-| ✖ X | **1,090** | 3.8% | 4.1% |
-| 🦋 Bluesky | **322** | 1.1% | 1.2% |
-| 🐘 Mastodon / Fediverse | **1,515** | 5.3% | 5.7% |
+| 🐦 Twitter | **6,117** | 20.0% | 21.2% |
+| ✖ X | **1,139** | 3.7% | 4.0% |
+| 🦋 Bluesky | **322** | 1.1% | 1.1% |
+| 🐘 Mastodon / Fediverse | **1,616** | 5.3% | 5.6% |
 
 📥 Machine-readable results: [social-media-data.json](social-media-data.json)
 
@@ -43,8 +43,9 @@ _Stats as of 2026-03-28 08:13 UTC — last scan: 2026-03-28_
 | HUNGARY | 390 | 390 | 366 | 24 | 20 | 5 | 317 | Mar 2026 |
 | ICELAND | 139 | 139 | 135 | 5 | 8 | 6 | 116 | Mar 2026 |
 | IRELAND | 522 | 522 | 494 | 149 | 25 | 29 | 291 | Mar 2026 |
-| ITALY | 3,400 | 5,338 | 2,955 | 1,234 | 56 | 114 | 1,551 | Mar 2026 |
-| **Total** | **28,355** | **82,714** | **26,750** | **5,351** | **822** | **870** | **19,717** | — |
+| ITALY | 5,338 | 5,338 | 4,729 | 1,891 | 81 | 168 | 2,589 | Mar 2026 |
+| LATVIA | 331 | 802 | 311 | 60 | 9 | 13 | 229 | Mar 2026 |
+| **Total** | **30,624** | **82,714** | **28,835** | **6,068** | **856** | **937** | **20,984** | — |
 
 ---
 
@@ -68,8 +69,9 @@ Number of **scanned** pages per country that link to each platform. A page may l
 | HUNGARY | 390 | 366 | 29 | 0 | 0 | 25 | 7.4% | 6.4% |
 | ICELAND | 139 | 135 | 8 | 5 | 0 | 14 | 7.9% | 10.1% |
 | IRELAND | 522 | 494 | 153 | 31 | 18 | 42 | 34.1% | 10.3% |
-| ITALY | 3,400 | 2,955 | 1,310 | 52 | 0 | 170 | 39.6% | 5.0% |
-| **Total** | **28,355** | **26,750** | **5,372** | **1,090** | **322** | **1,515** | **21.9%** | **6.0%** |
+| ITALY | 5,338 | 4,729 | 1,991 | 90 | 0 | 249 | 38.6% | 4.7% |
+| LATVIA | 331 | 311 | 64 | 11 | 0 | 22 | 22.1% | 6.6% |
+| **Total** | **30,624** | **28,835** | **6,117** | **1,139** | **322** | **1,616** | **22.9%** | **5.9%** |
 
 > **Legacy platforms** (Twitter / X) vs **modern open platforms** (Bluesky / Mastodon) — percentages are share of **scanned** pages that contain at least one link to any platform in that group.
 

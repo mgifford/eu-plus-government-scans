@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-03-28 08:13 UTC_
+_Generated: 2026-03-28 08:16 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -10,9 +10,9 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage |
 |-----------|--------------|-----------|----------|
-| **Combined Reachability** | **29,801 confirmed reachable** | 82,714 | **███████░░░░░░░░░░░░░ 36.0%** |
+| **Combined Reachability** | **31,886 confirmed reachable** | 82,714 | **███████░░░░░░░░░░░░░ 38.5%** |
 | URL Validation | 10,495 validated (8,949 valid) | 82,714 | ██░░░░░░░░░░░░░░░░░░ 12.7% |
-| Social Media | 28,355 scanned (26,750 reachable) | 82,714 | ██████░░░░░░░░░░░░░░ 34.3% |
+| Social Media | 30,624 scanned (28,835 reachable) | 82,714 | ███████░░░░░░░░░░░░░ 37.0% |
 | Technology | 0 scanned | 82,714 | (manual scan) |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) |
 | Accessibility Statements | 28,414 scanned | 82,714 | ██████░░░░░░░░░░░░░░ 34.4% |
@@ -57,7 +57,8 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | HUNGARY | 390 | 390 | 366 | 24 | 20 | 5 | 317 | Mar 2026 |
 | ICELAND | 139 | 139 | 135 | 5 | 8 | 6 | 116 | Mar 2026 |
 | IRELAND | 522 | 522 | 494 | 149 | 25 | 29 | 291 | Mar 2026 |
-| ITALY | 3,400 | 5,338 | 2,955 | 1,234 | 56 | 114 | 1,551 | Mar 2026 |
+| ITALY | 5,338 | 5,338 | 4,729 | 1,891 | 81 | 168 | 2,589 | Mar 2026 |
+| LATVIA | 331 | 802 | 311 | 60 | 9 | 13 | 229 | Mar 2026 |
 
 ## Social Media Platform Breakdown
 
@@ -79,8 +80,9 @@ Number of **scanned** pages per country that link to each platform. A page may l
 | HUNGARY | 390 | 366 | 29 | 0 | 0 | 25 | 7.4% | 6.4% |
 | ICELAND | 139 | 135 | 8 | 5 | 0 | 14 | 7.9% | 10.1% |
 | IRELAND | 522 | 494 | 153 | 31 | 18 | 42 | 34.1% | 10.3% |
-| ITALY | 3,400 | 2,955 | 1,310 | 52 | 0 | 170 | 39.6% | 5.0% |
-| **Total** | **28,355** | **26,750** | **5,372** | **1,090** | **322** | **1,515** | **21.9%** | **6.0%** |
+| ITALY | 5,338 | 4,729 | 1,991 | 90 | 0 | 249 | 38.6% | 4.7% |
+| LATVIA | 331 | 311 | 64 | 11 | 0 | 22 | 22.1% | 6.6% |
+| **Total** | **30,624** | **28,835** | **6,117** | **1,139** | **322** | **1,616** | **22.9%** | **5.9%** |
 
 > **Legacy platforms** (Twitter / X) vs **modern open platforms** (Bluesky / Mastodon) — percentages are share of **scanned** pages that contain at least one link to any platform in that group.
 
@@ -126,7 +128,7 @@ These countries have URL validation data but have not yet been scanned for socia
 
 These countries have social media scan data but no URL validation data (URL validation may have been skipped because the social scan already confirmed reachability):
 
-`GERMANY`, `HUNGARY`, `ICELAND`, `IRELAND`
+`GERMANY`, `HUNGARY`, `ICELAND`, `IRELAND`, `LATVIA`
 
 ## Scan Priority Guide
 
