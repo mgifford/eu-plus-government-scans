@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-28 03:07 UTC",
+  "generated_at": "2026-03-28 03:13 UTC",
   "summary": {
-    "total_batches": 23,
-    "total_scanned": 26426,
-    "total_reachable": 25056,
+    "total_batches": 24,
+    "total_scanned": 28414,
+    "total_reachable": 26802,
     "total_available": 82714,
-    "total_has_statement": 12644,
-    "total_in_footer": 11320,
+    "total_has_statement": 13356,
+    "total_in_footer": 12010,
     "first_scan": "2026-03-25T17:15:29.276776+00:00",
-    "last_scan": "2026-03-27T23:33:10.970229+00:00"
+    "last_scan": "2026-03-28T03:12:28.599007+00:00"
   },
   "by_country": [
     {
@@ -139,12 +139,12 @@
     },
     {
       "country_code": "ITALY",
-      "total_scanned": 1471,
-      "reachable": 1233,
-      "has_statement": 839,
-      "found_in_footer": 829,
+      "total_scanned": 3459,
+      "reachable": 2979,
+      "has_statement": 1551,
+      "found_in_footer": 1519,
       "first_scan": "2026-03-27T21:44:15.447477+00:00",
-      "last_scan": "2026-03-27T23:33:10.970229+00:00"
+      "last_scan": "2026-03-28T03:12:28.599007+00:00"
     }
   ]
 }
