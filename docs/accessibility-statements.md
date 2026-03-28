@@ -7,14 +7,14 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-03-28 20:46 UTC — last scan: 2026-03-28_
+_Stats as of 2026-03-28 23:24 UTC — last scan: 2026-03-28_
 
-**26** scan batches run
+**34** scan batches run
 
-**30,861** of **82,714** available pages scanned (**37.3%** coverage)
-**29,066** of **30,861** scanned pages were reachable (**94.2%**)
-**14,625** of **29,066** reachable pages have an accessibility statement (**50.3%**)
-**13,226** pages have the statement link in the footer (**90.4%** of pages with a statement)
+**36,301** of **82,714** available pages scanned (**43.9%** coverage)
+**33,906** of **36,301** scanned pages were reachable (**93.4%**)
+**16,924** of **33,906** reachable pages have an accessibility statement (**49.9%**)
+**15,095** pages have the statement link in the footer (**89.2%** of pages with a statement)
 
 📥 Machine-readable results: [accessibility-data.json](accessibility-data.json)
 
@@ -39,8 +39,14 @@ _Stats as of 2026-03-28 20:46 UTC — last scan: 2026-03-28_
 | ICELAND | 139 | 139 | 133 | 15 | 7 | 11.3% | Mar 2026 |
 | IRELAND | 522 | 522 | 494 | 223 | 202 | 45.1% | Mar 2026 |
 | ITALY | 5,338 | 5,338 | 4,702 | 2,539 | 2,489 | 54.0% | Mar 2026 |
-| LATVIA | 568 | 802 | 541 | 281 | 246 | 51.9% | Mar 2026 |
-| **Total** | **30,861** | **82,714** | **29,066** | **14,625** | **13,226** | **50.3%** | — |
+| LATVIA | 802 | 802 | 768 | 485 | 443 | 63.2% | Mar 2026 |
+| LITHUANIA | 120 | 120 | 108 | 0 | 0 | 0.0% | Mar 2026 |
+| LUXEMBOURG | 571 | 571 | 250 | 85 | 74 | 34.0% | Mar 2026 |
+| MALTA | 608 | 608 | 595 | 381 | 374 | 64.0% | Mar 2026 |
+| NETHERLANDS | 937 | 937 | 908 | 447 | 438 | 49.2% | Mar 2026 |
+| NORWAY | 239 | 239 | 233 | 108 | 102 | 46.4% | Mar 2026 |
+| POLAND | 2,731 | 14,938 | 2,519 | 1,074 | 684 | 42.6% | Mar 2026 |
+| **Total** | **36,301** | **82,714** | **33,906** | **16,924** | **15,095** | **49.9%** | — |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
