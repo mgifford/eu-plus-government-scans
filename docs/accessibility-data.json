@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-28 16:46 UTC",
+  "generated_at": "2026-03-28 17:56 UTC",
   "summary": {
-    "total_batches": 24,
-    "total_scanned": 28414,
-    "total_reachable": 26802,
+    "total_batches": 26,
+    "total_scanned": 30861,
+    "total_reachable": 29066,
     "total_available": 82714,
-    "total_has_statement": 13356,
-    "total_in_footer": 12010,
+    "total_has_statement": 14625,
+    "total_in_footer": 13226,
     "first_scan": "2026-03-25T17:15:29.276776+00:00",
-    "last_scan": "2026-03-28T03:12:28.599007+00:00"
+    "last_scan": "2026-03-28T10:37:29.582053+00:00"
   },
   "by_country": [
     {
@@ -139,12 +139,21 @@
     },
     {
       "country_code": "ITALY",
-      "total_scanned": 3459,
-      "reachable": 2979,
-      "has_statement": 1551,
-      "found_in_footer": 1519,
+      "total_scanned": 5338,
+      "reachable": 4702,
+      "has_statement": 2539,
+      "found_in_footer": 2489,
       "first_scan": "2026-03-27T21:44:15.447477+00:00",
-      "last_scan": "2026-03-28T03:12:28.599007+00:00"
+      "last_scan": "2026-03-28T10:14:46.831621+00:00"
+    },
+    {
+      "country_code": "LATVIA",
+      "total_scanned": 568,
+      "reachable": 541,
+      "has_statement": 281,
+      "found_in_footer": 246,
+      "first_scan": "2026-03-28T10:14:48.773445+00:00",
+      "last_scan": "2026-03-28T10:37:29.582053+00:00"
     }
   ]
 }
