@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-03-28 03:07 UTC_
+_Generated: 2026-03-28 03:13 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -15,7 +15,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Social Media | 26,152 scanned (24,771 reachable) | 82,714 | ██████░░░░░░░░░░░░░░ 31.6% |
 | Technology | 0 scanned | 82,714 | (manual scan) |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) |
-| Accessibility Statements | 26,426 scanned | 82,714 | ██████░░░░░░░░░░░░░░ 31.9% |
+| Accessibility Statements | 28,414 scanned | 82,714 | ██████░░░░░░░░░░░░░░ 34.4% |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by *either* URL Validation or Social Media scanning.  URL Validation automatically skips pages already confirmed reachable by the Social Media scanner (within the last 30 days), so the two individual counts complement rather than duplicate each other.
 
@@ -110,7 +110,7 @@ Checks whether each government page links to an accessibility statement as requi
 | HUNGARY | 390 | 361 | 64 | 48 | 18% | Mar 2026 |
 | ICELAND | 139 | 133 | 15 | 7 | 11% | Mar 2026 |
 | IRELAND | 522 | 494 | 223 | 202 | 45% | Mar 2026 |
-| ITALY | 1,471 | 1,233 | 839 | 829 | 68% | Mar 2026 |
+| ITALY | 3,459 | 2,979 | 1,551 | 1,519 | 52% | Mar 2026 |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
