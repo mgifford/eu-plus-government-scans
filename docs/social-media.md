@@ -7,19 +7,19 @@ layout: page
 
 <!-- SOCIAL_MEDIA_STATS_START -->
 
-_Stats as of 2026-03-28 00:54 UTC — last scan: 2026-03-27_
+_Stats as of 2026-03-28 01:23 UTC — last scan: 2026-03-28_
 
-**58** scan batches run
+**64** scan batches run
 
-**22,448** of **82,714** available pages scanned (**27.1%** coverage)
-**21,470** of **22,448** scanned pages were reachable (**95.6%**)
+**26,152** of **82,714** available pages scanned (**31.6%** coverage)
+**24,771** of **26,152** scanned pages were reachable (**94.7%**)
 
 | Platform | Pages with link | % of scanned | % of reachable |
 |----------|----------------|:------------:|:--------------:|
-| 🐦 Twitter | **3,678** | 16.4% | 17.1% |
-| ✖ X | **953** | 4.2% | 4.4% |
-| 🦋 Bluesky | **304** | 1.4% | 1.4% |
-| 🐘 Mastodon / Fediverse | **1,181** | 5.3% | 5.5% |
+| 🐦 Twitter | **4,636** | 17.7% | 18.7% |
+| ✖ X | **1,056** | 4.0% | 4.3% |
+| 🦋 Bluesky | **322** | 1.2% | 1.3% |
+| 🐘 Mastodon / Fediverse | **1,401** | 5.4% | 5.7% |
 
 📥 Machine-readable results: [social-media-data.json](social-media-data.json)
 
@@ -39,8 +39,12 @@ _Stats as of 2026-03-28 00:54 UTC — last scan: 2026-03-27_
 | FINLAND | 180 | 180 | 172 | 38 | 2 | 0 | 132 | Mar 2026 |
 | FRANCE | 10,007 | 10,007 | 9,373 | 1,935 | 212 | 361 | 6,865 | Mar 2026 |
 | GERMANY | 6,555 | 6,555 | 6,443 | 1,083 | 301 | 191 | 4,868 | Mar 2026 |
-| GREECE | 292 | 1,748 | 274 | 41 | 8 | 3 | 222 | Mar 2026 |
-| **Total** | **22,448** | **82,714** | **21,470** | **3,751** | **681** | **665** | **16,383** | — |
+| GREECE | 1,748 | 1,748 | 1,604 | 229 | 40 | 54 | 1,281 | Mar 2026 |
+| HUNGARY | 390 | 390 | 366 | 24 | 20 | 5 | 317 | Mar 2026 |
+| ICELAND | 139 | 139 | 135 | 5 | 8 | 6 | 116 | Mar 2026 |
+| IRELAND | 522 | 522 | 494 | 149 | 25 | 29 | 291 | Mar 2026 |
+| ITALY | 1,197 | 5,338 | 976 | 544 | 13 | 43 | 376 | Mar 2026 |
+| **Total** | **26,152** | **82,714** | **24,771** | **4,661** | **779** | **799** | **18,542** | — |
 
 ---
 
@@ -60,8 +64,12 @@ Number of **scanned** pages per country that link to each platform. A page may l
 | FINLAND | 180 | 172 | 26 | 13 | 2 | 0 | 21.1% | 1.1% |
 | FRANCE | 10,007 | 9,373 | 1,799 | 629 | 124 | 495 | 22.9% | 5.7% |
 | GERMANY | 6,555 | 6,443 | 1,171 | 174 | 118 | 441 | 19.4% | 7.5% |
-| GREECE | 292 | 274 | 38 | 7 | 0 | 11 | 15.1% | 3.8% |
-| **Total** | **22,448** | **21,470** | **3,678** | **953** | **304** | **1,181** | **19.7%** | **6.0%** |
+| GREECE | 1,748 | 1,604 | 232 | 56 | 0 | 94 | 16.2% | 5.4% |
+| HUNGARY | 390 | 366 | 29 | 0 | 0 | 25 | 7.4% | 6.4% |
+| ICELAND | 139 | 135 | 8 | 5 | 0 | 14 | 7.9% | 10.1% |
+| IRELAND | 522 | 494 | 153 | 31 | 18 | 42 | 34.1% | 10.3% |
+| ITALY | 1,197 | 976 | 574 | 18 | 0 | 56 | 49.0% | 4.7% |
+| **Total** | **26,152** | **24,771** | **4,636** | **1,056** | **322** | **1,401** | **20.9%** | **6.0%** |
 
 > **Legacy platforms** (Twitter / X) vs **modern open platforms** (Bluesky / Mastodon) — percentages are share of **scanned** pages that contain at least one link to any platform in that group.
 

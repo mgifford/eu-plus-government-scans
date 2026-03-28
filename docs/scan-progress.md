@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-03-28 00:54 UTC_
+_Generated: 2026-03-28 01:23 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -10,12 +10,12 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage |
 |-----------|--------------|-----------|----------|
-| **Combined Reachability** | **24,175 confirmed reachable** | 82,714 | **█████░░░░░░░░░░░░░░░ 29.2%** |
+| **Combined Reachability** | **26,204 confirmed reachable** | 82,714 | **██████░░░░░░░░░░░░░░ 31.7%** |
 | URL Validation | 8,668 validated (7,331 valid) | 82,714 | ██░░░░░░░░░░░░░░░░░░ 10.5% |
-| Social Media | 22,448 scanned (21,470 reachable) | 82,714 | █████░░░░░░░░░░░░░░░ 27.1% |
+| Social Media | 26,152 scanned (24,771 reachable) | 82,714 | ██████░░░░░░░░░░░░░░ 31.6% |
 | Technology | 0 scanned | 82,714 | (manual scan) |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) |
-| Accessibility Statements | 22,358 scanned | 82,714 | █████░░░░░░░░░░░░░░░ 27.0% |
+| Accessibility Statements | 26,426 scanned | 82,714 | ██████░░░░░░░░░░░░░░ 31.9% |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by *either* URL Validation or Social Media scanning.  URL Validation automatically skips pages already confirmed reachable by the Social Media scanner (within the last 30 days), so the two individual counts complement rather than duplicate each other.
 
@@ -23,9 +23,9 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Country | Total | Valid | Invalid | Scan Period | Coverage |
 |---------|-------|-------|---------|-------------|----------|
-| AUSTRIA | 821 | 718 | 159 | Mar 2026 | ███████████████ 100.0% |
-| BELGIUM | 1,309 | 1,166 | 581 | Mar 2026 | ███████████████ 100.0% |
-| BULGARIA | 291 | 232 | 70 | Mar 2026 | ███████████████ 100.0% |
+| AUSTRIA | 821 | 718 | 142 | Mar 2026 | ███████████████ 100.0% |
+| BELGIUM | 1,309 | 1,166 | 537 | Mar 2026 | ███████████████ 100.0% |
+| BULGARIA | 291 | 232 | 69 | Mar 2026 | ███████████████ 100.0% |
 | CROATIA | 1 | 0 | 1 | Mar 2026 | ░░░░░░░░░░░░░░░ 0.4% |
 | CZECHIA | 567 | 440 | 127 | Mar 2026 | ██████████░░░░░ 67.3% |
 | DENMARK | 974 | 891 | 83 | Mar 2026 | █████████░░░░░░ 64.0% |
@@ -51,7 +51,11 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | FINLAND | 180 | 180 | 172 | 38 | 2 | 0 | 132 | Mar 2026 |
 | FRANCE | 10,007 | 10,007 | 9,373 | 1,935 | 212 | 361 | 6,865 | Mar 2026 |
 | GERMANY | 6,555 | 6,555 | 6,443 | 1,083 | 301 | 191 | 4,868 | Mar 2026 |
-| GREECE | 292 | 1,748 | 274 | 41 | 8 | 3 | 222 | Mar 2026 |
+| GREECE | 1,748 | 1,748 | 1,604 | 229 | 40 | 54 | 1,281 | Mar 2026 |
+| HUNGARY | 390 | 390 | 366 | 24 | 20 | 5 | 317 | Mar 2026 |
+| ICELAND | 139 | 139 | 135 | 5 | 8 | 6 | 116 | Mar 2026 |
+| IRELAND | 522 | 522 | 494 | 149 | 25 | 29 | 291 | Mar 2026 |
+| ITALY | 1,197 | 5,338 | 976 | 544 | 13 | 43 | 376 | Mar 2026 |
 
 ## Social Media Platform Breakdown
 
@@ -69,8 +73,12 @@ Number of **scanned** pages per country that link to each platform. A page may l
 | FINLAND | 180 | 172 | 26 | 13 | 2 | 0 | 21.1% | 1.1% |
 | FRANCE | 10,007 | 9,373 | 1,799 | 629 | 124 | 495 | 22.9% | 5.7% |
 | GERMANY | 6,555 | 6,443 | 1,171 | 174 | 118 | 441 | 19.4% | 7.5% |
-| GREECE | 292 | 274 | 38 | 7 | 0 | 11 | 15.1% | 3.8% |
-| **Total** | **22,448** | **21,470** | **3,678** | **953** | **304** | **1,181** | **19.7%** | **6.0%** |
+| GREECE | 1,748 | 1,604 | 232 | 56 | 0 | 94 | 16.2% | 5.4% |
+| HUNGARY | 390 | 366 | 29 | 0 | 0 | 25 | 7.4% | 6.4% |
+| ICELAND | 139 | 135 | 8 | 5 | 0 | 14 | 7.9% | 10.1% |
+| IRELAND | 522 | 494 | 153 | 31 | 18 | 42 | 34.1% | 10.3% |
+| ITALY | 1,197 | 976 | 574 | 18 | 0 | 56 | 49.0% | 4.7% |
+| **Total** | **26,152** | **24,771** | **4,636** | **1,056** | **322** | **1,401** | **20.9%** | **6.0%** |
 
 > **Legacy platforms** (Twitter / X) vs **modern open platforms** (Bluesky / Mastodon) — percentages are share of **scanned** pages that contain at least one link to any platform in that group.
 
@@ -98,7 +106,11 @@ Checks whether each government page links to an accessibility statement as requi
 | FINLAND | 180 | 172 | 111 | 104 | 65% | Mar 2026 |
 | FRANCE | 10,007 | 9,402 | 3,625 | 3,489 | 39% | Mar 2026 |
 | GERMANY | 6,555 | 6,442 | 4,555 | 3,850 | 71% | Mar 2026 |
-| GREECE | 202 | 188 | 28 | 23 | 15% | Mar 2026 |
+| GREECE | 1,748 | 1,622 | 400 | 237 | 25% | Mar 2026 |
+| HUNGARY | 390 | 361 | 64 | 48 | 18% | Mar 2026 |
+| ICELAND | 139 | 133 | 15 | 7 | 11% | Mar 2026 |
+| IRELAND | 522 | 494 | 223 | 202 | 45% | Mar 2026 |
+| ITALY | 1,471 | 1,233 | 839 | 829 | 68% | Mar 2026 |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
@@ -106,13 +118,13 @@ Checks whether each government page links to an accessibility statement as requi
 
 These countries have URL validation data but have not yet been scanned for social media links:
 
-`ITALY`, `MALTA`, `NETHERLANDS`
+`MALTA`, `NETHERLANDS`
 
 ## Countries With Social Scan But No URL Validation
 
 These countries have social media scan data but no URL validation data (URL validation may have been skipped because the social scan already confirmed reachability):
 
-`GERMANY`
+`GERMANY`, `HUNGARY`, `ICELAND`, `IRELAND`
 
 ## Scan Priority Guide
 
