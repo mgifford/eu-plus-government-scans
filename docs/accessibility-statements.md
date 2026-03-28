@@ -7,14 +7,14 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-03-28 18:43 UTC — last scan: 2026-03-28_
+_Stats as of 2026-03-28 19:45 UTC — last scan: 2026-03-28_
 
-**26** scan batches run
+**33** scan batches run
 
-**30,861** of **82,714** available pages scanned (**37.3%** coverage)
-**29,066** of **30,861** scanned pages were reachable (**94.2%**)
-**14,625** of **29,066** reachable pages have an accessibility statement (**50.3%**)
-**13,226** pages have the statement link in the footer (**90.4%** of pages with a statement)
+**33,998** of **82,714** available pages scanned (**41.1%** coverage)
+**31,804** of **33,998** scanned pages were reachable (**93.5%**)
+**15,955** of **31,804** reachable pages have an accessibility statement (**50.2%**)
+**14,480** pages have the statement link in the footer (**90.8%** of pages with a statement)
 
 📥 Machine-readable results: [accessibility-data.json](accessibility-data.json)
 
@@ -39,8 +39,14 @@ _Stats as of 2026-03-28 18:43 UTC — last scan: 2026-03-28_
 | ICELAND | 139 | 139 | 133 | 15 | 7 | 11.3% | Mar 2026 |
 | IRELAND | 522 | 522 | 494 | 223 | 202 | 45.1% | Mar 2026 |
 | ITALY | 5,338 | 5,338 | 4,702 | 2,539 | 2,489 | 54.0% | Mar 2026 |
-| LATVIA | 568 | 802 | 541 | 281 | 246 | 51.9% | Mar 2026 |
-| **Total** | **30,861** | **82,714** | **29,066** | **14,625** | **13,226** | **50.3%** | — |
+| LATVIA | 802 | 802 | 768 | 485 | 443 | 63.2% | Mar 2026 |
+| LITHUANIA | 120 | 120 | 108 | 0 | 0 | 0.0% | Mar 2026 |
+| LUXEMBOURG | 571 | 571 | 250 | 85 | 74 | 34.0% | Mar 2026 |
+| MALTA | 608 | 608 | 595 | 381 | 374 | 64.0% | Mar 2026 |
+| NETHERLANDS | 937 | 937 | 908 | 447 | 438 | 49.2% | Mar 2026 |
+| NORWAY | 239 | 239 | 233 | 108 | 102 | 46.4% | Mar 2026 |
+| POLAND | 428 | 14,938 | 417 | 105 | 69 | 25.2% | Mar 2026 |
+| **Total** | **33,998** | **82,714** | **31,804** | **15,955** | **14,480** | **50.2%** | — |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
