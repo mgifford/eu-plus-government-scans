@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-03-28 03:13 UTC_
+_Generated: 2026-03-28 04:13 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -10,8 +10,8 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage |
 |-----------|--------------|-----------|----------|
-| **Combined Reachability** | **26,204 confirmed reachable** | 82,714 | **██████░░░░░░░░░░░░░░ 31.7%** |
-| URL Validation | 8,668 validated (7,331 valid) | 82,714 | ██░░░░░░░░░░░░░░░░░░ 10.5% |
+| **Combined Reachability** | **27,822 confirmed reachable** | 82,714 | **██████░░░░░░░░░░░░░░ 33.6%** |
+| URL Validation | 10,495 validated (8,949 valid) | 82,714 | ██░░░░░░░░░░░░░░░░░░ 12.7% |
 | Social Media | 26,152 scanned (24,771 reachable) | 82,714 | ██████░░░░░░░░░░░░░░ 31.6% |
 | Technology | 0 scanned | 82,714 | (manual scan) |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) |
@@ -36,6 +36,8 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | ITALY | 705 | 525 | 180 | Mar 2026 | █░░░░░░░░░░░░░░ 13.2% |
 | MALTA | 608 | 573 | 35 | Mar 2026 | ███████████████ 100.0% |
 | NETHERLANDS | 937 | 831 | 106 | Mar 2026 | ███████████████ 100.0% |
+| NORWAY | 239 | 233 | 6 | Mar 2026 | ███████████████ 100.0% |
+| POLAND | 1,588 | 1,385 | 203 | Mar 2026 | █░░░░░░░░░░░░░░ 10.6% |
 
 ## Social Media Scan by Country
 
@@ -118,7 +120,7 @@ Checks whether each government page links to an accessibility statement as requi
 
 These countries have URL validation data but have not yet been scanned for social media links:
 
-`MALTA`, `NETHERLANDS`
+`MALTA`, `NETHERLANDS`, `NORWAY`, `POLAND`
 
 ## Countries With Social Scan But No URL Validation
 
