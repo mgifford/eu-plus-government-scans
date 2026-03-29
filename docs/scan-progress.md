@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-03-28 23:24 UTC_
+_Generated: 2026-03-29 00:29 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -15,7 +15,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Social Media | 36,071 scanned (33,715 reachable) | 82,714 | ████████░░░░░░░░░░░░ 43.6% |
 | Technology | 0 scanned | 82,714 | (manual scan) |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) |
-| Accessibility Statements | 36,301 scanned | 82,714 | ████████░░░░░░░░░░░░ 43.9% |
+| Accessibility Statements | 30,861 scanned | 82,714 | ███████░░░░░░░░░░░░░ 37.3% |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by *either* URL Validation or Social Media scanning.  URL Validation automatically skips pages already confirmed reachable by the Social Media scanner (within the last 30 days), so the two individual counts complement rather than duplicate each other.
 
@@ -23,8 +23,8 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Country | Total | Valid | Invalid | Scan Period | Coverage |
 |---------|-------|-------|---------|-------------|----------|
-| AUSTRIA | 821 | 718 | 142 | Mar 2026 | ███████████████ 100.0% |
-| BELGIUM | 1,309 | 1,166 | 537 | Mar 2026 | ███████████████ 100.0% |
+| AUSTRIA | 821 | 718 | 150 | Mar 2026 | ███████████████ 100.0% |
+| BELGIUM | 1,309 | 1,166 | 552 | Mar 2026 | ███████████████ 100.0% |
 | BULGARIA | 291 | 232 | 69 | Mar 2026 | ███████████████ 100.0% |
 | CROATIA | 1 | 0 | 1 | Mar 2026 | ░░░░░░░░░░░░░░░ 0.4% |
 | CZECHIA | 567 | 440 | 127 | Mar 2026 | ██████████░░░░░ 67.3% |
@@ -128,13 +128,7 @@ Checks whether each government page links to an accessibility statement as requi
 | ICELAND | 139 | 133 | 15 | 7 | 11% | Mar 2026 |
 | IRELAND | 522 | 494 | 223 | 202 | 45% | Mar 2026 |
 | ITALY | 5,338 | 4,702 | 2,539 | 2,489 | 54% | Mar 2026 |
-| LATVIA | 802 | 768 | 485 | 443 | 63% | Mar 2026 |
-| LITHUANIA | 120 | 108 | 0 | 0 | 0% | Mar 2026 |
-| LUXEMBOURG | 571 | 250 | 85 | 74 | 34% | Mar 2026 |
-| MALTA | 608 | 595 | 381 | 374 | 64% | Mar 2026 |
-| NETHERLANDS | 937 | 908 | 447 | 438 | 49% | Mar 2026 |
-| NORWAY | 239 | 233 | 108 | 102 | 46% | Mar 2026 |
-| POLAND | 2,731 | 2,519 | 1,074 | 684 | 43% | Mar 2026 |
+| LATVIA | 568 | 541 | 281 | 246 | 52% | Mar 2026 |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
