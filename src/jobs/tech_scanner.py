@@ -42,6 +42,34 @@ class TechScanner:
                     urls.append(url)
         return urls
 
+    def _get_last_scan_time_per_country(self) -> Dict[str, str]:
+        """Return the latest ``scanned_at`` timestamp per country code.
+
+        Used to sort countries by how recently they were scanned so that
+        never-scanned or least-recently-scanned countries are prioritised at
+        the start of each run.  Countries absent from the result have never
+        been scanned by this scanner.
+
+        Returns:
+            Mapping of country_code → ISO-8601 string of the most recent scan.
+        """
+        conn = sqlite3.connect(self.db_path)
+        try:
+            cursor = conn.execute(
+                """
+                SELECT country_code, MAX(scanned_at)
+                FROM url_tech_results
+                GROUP BY country_code
+                """
+            )
+            return {
+                row[0]: row[1]
+                for row in cursor.fetchall()
+                if row[1] is not None
+            }
+        finally:
+            conn.close()
+
     def _get_recently_scanned_urls(
         self, country_code: str, within_days: int
     ) -> Set[str]:
@@ -306,7 +334,22 @@ class TechScanner:
             List of scan statistics for each country.
         """
         all_stats = []
-        toon_files = sorted(toon_seeds_dir.glob("*.toon"))
+
+        # When skipping recently-scanned URLs, sort countries so those not
+        # scanned recently (or never scanned) come first.  This prevents the
+        # scanner from repeatedly revisiting alphabetically early countries
+        # (Austria, Belgium, …) while later countries never get processed.
+        if skip_recently_scanned_days > 0:
+            last_scan_times = self._get_last_scan_time_per_country()
+            toon_files = sorted(
+                toon_seeds_dir.glob("*.toon"),
+                key=lambda p: (
+                    last_scan_times.get(country_filename_to_code(p.stem), ""),
+                    p.stem,
+                ),
+            )
+        else:
+            toon_files = sorted(toon_seeds_dir.glob("*.toon"))
 
         print(f"Found {len(toon_files)} TOON files to process")
 
