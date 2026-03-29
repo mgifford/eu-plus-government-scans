@@ -7,7 +7,31 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_No scan data yet — stats update automatically after every scan run._
+_Stats as of 2026-03-29 10:38 UTC — last scan: 2026-03-29_
+
+**5** scan batches run
+
+**2,869** of **82,714** available pages scanned (**3.5%** coverage)
+**2,711** of **2,869** scanned pages were reachable (**94.5%**)
+**1,306** of **2,711** reachable pages have an accessibility statement (**48.2%**)
+**1,198** pages have the statement link in the footer (**91.7%** of pages with a statement)
+
+📥 Machine-readable results: [accessibility-data.json](accessibility-data.json)
+
+---
+
+## Accessibility Statement Scan by Country
+
+| Country | Scanned | Available | Reachable | Has Statement | In Footer | Statement % | Scan Period |
+|---------|---------|-----------|-----------|--------------|-----------|------------|-------------|
+| AUSTRIA | 821 | 821 | 787 | 547 | 517 | 69.5% | Mar 2026 |
+| BELGIUM | 1,309 | 1,309 | 1,225 | 536 | 487 | 43.8% | Mar 2026 |
+| BULGARIA | 291 | 291 | 269 | 61 | 59 | 22.7% | Mar 2026 |
+| CROATIA | 233 | 233 | 232 | 86 | 62 | 37.1% | Mar 2026 |
+| CZECHIA | 215 | 843 | 198 | 76 | 73 | 38.4% | Mar 2026 |
+| **Total** | **2,869** | **82,714** | **2,711** | **1,306** | **1,198** | **48.2%** | — |
+
+> **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
 <!-- ACCESSIBILITY_STATS_END -->
 

@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-03-29 08:34 UTC_
+_Generated: 2026-03-29 10:38 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -15,7 +15,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Social Media | 1,533 scanned (1,255 reachable) | 82,714 | ░░░░░░░░░░░░░░░░░░░░ 1.9% |
 | Technology | 0 scanned | 82,714 | (manual scan) |
 | Lighthouse | 295 scanned | 82,714 | ░░░░░░░░░░░░░░░░░░░░ 0.4% |
-| Accessibility Statements | 0 scanned | 82,714 | ░░░░░░░░░░░░░░░░░░░░ 0.0% |
+| Accessibility Statements | 2,869 scanned | 82,714 | ░░░░░░░░░░░░░░░░░░░░ 3.5% |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by *either* URL Validation or Social Media scanning.  URL Validation automatically skips pages already confirmed reachable by the Social Media scanner (within the last 30 days), so the two individual counts complement rather than duplicate each other.
 
@@ -50,9 +50,19 @@ _No technology scans have been run yet. Trigger the **Scan Technology Stack** wo
 
 > Scores are averages across all successfully audited URLs, displayed as 0–100 (multiply source values × 100).
 
-## Accessibility Statement Scan
+## Accessibility Statement Scan by Country
 
-_No accessibility statement scans have been run yet. Trigger the **Scan Accessibility Statements** workflow manually or wait for the next scheduled run._
+Checks whether each government page links to an accessibility statement as required by the EU Web Accessibility Directive (Directive 2016/2102).
+
+| Country | Scanned | Reachable | Has Statement | In Footer | Statement % | Scan Period |
+|---------|---------|-----------|--------------|-----------|------------|-------------|
+| AUSTRIA | 821 | 787 | 547 | 517 | 70% | Mar 2026 |
+| BELGIUM | 1,309 | 1,225 | 536 | 487 | 44% | Mar 2026 |
+| BULGARIA | 291 | 269 | 61 | 59 | 23% | Mar 2026 |
+| CROATIA | 233 | 232 | 86 | 62 | 37% | Mar 2026 |
+| CZECHIA | 215 | 198 | 76 | 73 | 38% | Mar 2026 |
+
+> **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
 ## Countries With Social Scan But No URL Validation
 
