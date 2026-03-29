@@ -11,16 +11,16 @@ power them.
 
 <!-- SCAN_PROGRESS_START -->
 
-_Progress as of 2026-03-29 18:43 UTC_
+_Progress as of 2026-03-29 19:45 UTC_
 
 | Scan Type | Pages Scanned | Coverage |
 |-----------|--------------|----------|
-| **Combined Reachability** | **37,233 confirmed reachable** | **█████████░░░░░░░░░░░ 45.0%** |
-| Social Media | 39,814 scanned (37,075 reachable) | █████████░░░░░░░░░░░ 48.1% |
-| URL Validation | 11,017 validated (9,299 valid) | ██░░░░░░░░░░░░░░░░░░ 13.3% |
-| Accessibility Statements | 38,509 scanned | █████████░░░░░░░░░░░ 46.6% |
+| **Combined Reachability** | **39,175 confirmed reachable** | **█████████░░░░░░░░░░░ 47.4%** |
+| Social Media | 42,197 scanned (39,017 reachable) | ██████████░░░░░░░░░░ 51.0% |
+| URL Validation | 11,017 validated (9,297 valid) | ██░░░░░░░░░░░░░░░░░░ 13.3% |
+| Accessibility Statements | 41,021 scanned | █████████░░░░░░░░░░░ 49.6% |
 
-**23 countries** with scan data · **37,233** of **82,714** available pages confirmed reachable. See the [Scan Progress Report](scan-progress.md) for full details.
+**24 countries** with scan data · **39,175** of **82,714** available pages confirmed reachable. See the [Scan Progress Report](scan-progress.md) for full details.
 
 <!-- SCAN_PROGRESS_END -->
 

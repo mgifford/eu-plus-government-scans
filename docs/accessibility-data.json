@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-29 18:43 UTC",
+  "generated_at": "2026-03-29 19:45 UTC",
   "summary": {
-    "total_batches": 35,
-    "total_scanned": 38509,
-    "total_reachable": 35940,
+    "total_batches": 36,
+    "total_scanned": 41021,
+    "total_reachable": 38012,
     "total_available": 82714,
-    "total_has_statement": 17586,
-    "total_in_footer": 15600,
+    "total_has_statement": 18058,
+    "total_in_footer": 15991,
     "first_scan": "2026-03-25T17:15:29.276776+00:00",
-    "last_scan": "2026-03-29T03:03:17.732026+00:00"
+    "last_scan": "2026-03-29T19:45:15.167439+00:00"
   },
   "by_country": [
     {
@@ -208,6 +208,15 @@
       "found_in_footer": 1189,
       "first_scan": "2026-03-28T19:28:02.048285+00:00",
       "last_scan": "2026-03-29T03:03:17.732026+00:00"
+    },
+    {
+      "country_code": "PORTUGAL",
+      "total_scanned": 2512,
+      "reachable": 2072,
+      "has_statement": 472,
+      "found_in_footer": 391,
+      "first_scan": "2026-03-29T17:56:18.335204+00:00",
+      "last_scan": "2026-03-29T19:45:15.167439+00:00"
     }
   ]
 }
