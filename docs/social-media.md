@@ -7,19 +7,19 @@ layout: page
 
 <!-- SOCIAL_MEDIA_STATS_START -->
 
-_Stats as of 2026-03-29 04:52 UTC — last scan: 2026-03-29_
+_Stats as of 2026-03-29 04:54 UTC — last scan: 2026-03-29_
 
-**76** scan batches run
+**77** scan batches run
 
-**37,725** of **82,714** available pages scanned (**45.6%** coverage)
-**35,220** of **37,725** scanned pages were reachable (**93.4%**)
+**39,814** of **82,714** available pages scanned (**48.1%** coverage)
+**37,075** of **39,814** scanned pages were reachable (**93.1%**)
 
 | Platform | Pages with link | % of scanned | % of reachable |
 |----------|----------------|:------------:|:--------------:|
-| 🐦 Twitter | **6,945** | 18.4% | 19.7% |
-| ✖ X | **1,388** | 3.7% | 3.9% |
-| 🦋 Bluesky | **377** | 1.0% | 1.1% |
-| 🐘 Mastodon / Fediverse | **2,145** | 5.7% | 6.1% |
+| 🐦 Twitter | **7,113** | 17.9% | 19.2% |
+| ✖ X | **1,417** | 3.6% | 3.8% |
+| 🦋 Bluesky | **377** | 0.9% | 1.0% |
+| 🐘 Mastodon / Fediverse | **2,260** | 5.7% | 6.1% |
 
 📥 Machine-readable results: [social-media-data.json](social-media-data.json)
 
@@ -50,8 +50,8 @@ _Stats as of 2026-03-29 04:52 UTC — last scan: 2026-03-29_
 | MALTA | 608 | 608 | 595 | 60 | 20 | 14 | 501 | Mar 2026 |
 | NETHERLANDS | 937 | 937 | 908 | 162 | 54 | 49 | 643 | Mar 2026 |
 | NORWAY | 239 | 239 | 233 | 20 | 2 | 0 | 211 | Mar 2026 |
-| POLAND | 4,155 | 14,938 | 3,833 | 294 | 175 | 144 | 3,220 | Mar 2026 |
-| **Total** | **37,725** | **82,714** | **35,220** | **6,842** | **1,146** | **1,206** | **26,036** | — |
+| POLAND | 6,244 | 14,938 | 5,688 | 447 | 255 | 179 | 4,807 | Mar 2026 |
+| **Total** | **39,814** | **82,714** | **37,075** | **6,995** | **1,226** | **1,241** | **27,623** | — |
 
 ---
 
@@ -82,8 +82,8 @@ Number of **scanned** pages per country that link to each platform. A page may l
 | MALTA | 608 | 595 | 57 | 17 | 0 | 34 | 12.2% | 5.6% |
 | NETHERLANDS | 937 | 908 | 147 | 74 | 43 | 77 | 22.5% | 11.0% |
 | NORWAY | 239 | 233 | 10 | 13 | 0 | 2 | 8.4% | 0.8% |
-| POLAND | 4,155 | 3,833 | 351 | 106 | 1 | 318 | 10.5% | 7.7% |
-| **Total** | **37,725** | **35,220** | **6,945** | **1,388** | **377** | **2,145** | **21.3%** | **6.2%** |
+| POLAND | 6,244 | 5,688 | 519 | 135 | 1 | 433 | 10.0% | 7.0% |
+| **Total** | **39,814** | **37,075** | **7,113** | **1,417** | **377** | **2,260** | **20.7%** | **6.2%** |
 
 > **Legacy platforms** (Twitter / X) vs **modern open platforms** (Bluesky / Mastodon) — percentages are share of **scanned** pages that contain at least one link to any platform in that group.
 
