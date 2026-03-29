@@ -7,14 +7,14 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-03-29 20:46 UTC — last scan: 2026-03-29_
+_Stats as of 2026-03-29 23:25 UTC — last scan: 2026-03-29_
 
-**35** scan batches run
+**38** scan batches run
 
-**38,509** of **82,714** available pages scanned (**46.6%** coverage)
-**35,940** of **38,509** scanned pages were reachable (**93.3%**)
-**17,586** of **35,940** reachable pages have an accessibility statement (**48.9%**)
-**15,600** pages have the statement link in the footer (**88.7%** of pages with a statement)
+**41,568** of **82,714** available pages scanned (**50.3%** coverage)
+**38,266** of **41,568** scanned pages were reachable (**92.1%**)
+**18,073** of **38,266** reachable pages have an accessibility statement (**47.2%**)
+**15,993** pages have the statement link in the footer (**88.5%** of pages with a statement)
 
 📥 Machine-readable results: [accessibility-data.json](accessibility-data.json)
 
@@ -46,7 +46,10 @@ _Stats as of 2026-03-29 20:46 UTC — last scan: 2026-03-29_
 | NETHERLANDS | 937 | 937 | 908 | 447 | 438 | 49.2% | Mar 2026 |
 | NORWAY | 239 | 239 | 233 | 108 | 102 | 46.4% | Mar 2026 |
 | POLAND | 4,939 | 14,938 | 4,553 | 1,736 | 1,189 | 38.1% | Mar 2026 |
-| **Total** | **38,509** | **82,714** | **35,940** | **17,586** | **15,600** | **48.9%** | — |
+| PORTUGAL | 2,512 | 3,503 | 2,072 | 472 | 391 | 22.8% | Mar 2026 |
+| REPUBLIC_OF_CYPRUS | 24 | 24 | 24 | 0 | 0 | 0.0% | Mar 2026 |
+| ROMANIA | 523 | 799 | 230 | 15 | 2 | 6.5% | Mar 2026 |
+| **Total** | **41,568** | **82,714** | **38,266** | **18,073** | **15,993** | **47.2%** | — |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
