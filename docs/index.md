@@ -11,7 +11,7 @@ power them.
 
 <!-- SCAN_PROGRESS_START -->
 
-_Progress as of 2026-03-29 08:34 UTC_
+_Progress as of 2026-03-29 10:38 UTC_
 
 | Scan Type | Pages Scanned | Coverage |
 |-----------|--------------|----------|
@@ -19,8 +19,9 @@ _Progress as of 2026-03-29 08:34 UTC_
 | Social Media | 1,533 scanned (1,255 reachable) | ░░░░░░░░░░░░░░░░░░░░ 1.9% |
 | URL Validation | 0 validated (0 valid) | ░░░░░░░░░░░░░░░░░░░░ 0.0% |
 | Lighthouse | 295 scanned | ░░░░░░░░░░░░░░░░░░░░ 0.4% |
+| Accessibility Statements | 2,869 scanned | ░░░░░░░░░░░░░░░░░░░░ 3.5% |
 
-**2 countries** with scan data · **1,255** of **82,714** available pages confirmed reachable. See the [Scan Progress Report](scan-progress.md) for full details.
+**5 countries** with scan data · **1,255** of **82,714** available pages confirmed reachable. See the [Scan Progress Report](scan-progress.md) for full details.
 
 <!-- SCAN_PROGRESS_END -->
 
