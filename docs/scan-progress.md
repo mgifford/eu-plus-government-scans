@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-03-29 10:38 UTC_
+_Generated: 2026-03-29 12:12 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -10,21 +10,62 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage |
 |-----------|--------------|-----------|----------|
-| **Combined Reachability** | **1,255 confirmed reachable** | 82,714 | **░░░░░░░░░░░░░░░░░░░░ 1.5%** |
-| URL Validation | 0 validated (0 valid) | 82,714 | ░░░░░░░░░░░░░░░░░░░░ 0.0% |
-| Social Media | 1,533 scanned (1,255 reachable) | 82,714 | ░░░░░░░░░░░░░░░░░░░░ 1.9% |
+| **Combined Reachability** | **37,233 confirmed reachable** | 82,714 | **█████████░░░░░░░░░░░ 45.0%** |
+| URL Validation | 11,017 validated (9,297 valid) | 82,714 | ██░░░░░░░░░░░░░░░░░░ 13.3% |
+| Social Media | 39,814 scanned (37,075 reachable) | 82,714 | █████████░░░░░░░░░░░ 48.1% |
 | Technology | 0 scanned | 82,714 | (manual scan) |
-| Lighthouse | 295 scanned | 82,714 | ░░░░░░░░░░░░░░░░░░░░ 0.4% |
-| Accessibility Statements | 2,869 scanned | 82,714 | ░░░░░░░░░░░░░░░░░░░░ 3.5% |
+| Lighthouse | 0 scanned | 82,714 | (manual scan) |
+| Accessibility Statements | 38,509 scanned | 82,714 | █████████░░░░░░░░░░░ 46.6% |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by *either* URL Validation or Social Media scanning.  URL Validation automatically skips pages already confirmed reachable by the Social Media scanner (within the last 30 days), so the two individual counts complement rather than duplicate each other.
+
+## URL Validation by Country
+
+| Country | Total | Valid | Invalid | Scan Period | Coverage |
+|---------|-------|-------|---------|-------------|----------|
+| AUSTRIA | 821 | 718 | 149 | Mar 2026 | ███████████████ 100.0% |
+| BELGIUM | 1,309 | 1,166 | 578 | Mar 2026 | ███████████████ 100.0% |
+| BULGARIA | 291 | 232 | 73 | Mar 2026 | ███████████████ 100.0% |
+| CROATIA | 233 | 227 | 6 | Mar 2026 | ███████████████ 100.0% |
+| CZECHIA | 567 | 440 | 127 | Mar 2026 | ██████████░░░░░ 67.3% |
+| DENMARK | 974 | 891 | 83 | Mar 2026 | █████████░░░░░░ 64.0% |
+| ESTONIA | 12 | 3 | 9 | Mar 2026 | ░░░░░░░░░░░░░░░ 3.0% |
+| FINLAND | 8 | 0 | 8 | Mar 2026 | ░░░░░░░░░░░░░░░ 4.4% |
+| FRANCE | 1,226 | 935 | 291 | Mar 2026 | █░░░░░░░░░░░░░░ 12.3% |
+| GREECE | 1,209 | 1,017 | 192 | Mar 2026 | ██████████░░░░░ 69.2% |
+| ITALY | 705 | 525 | 180 | Mar 2026 | █░░░░░░░░░░░░░░ 13.2% |
+| MALTA | 608 | 573 | 35 | Mar 2026 | ███████████████ 100.0% |
+| NETHERLANDS | 937 | 831 | 106 | Mar 2026 | ███████████████ 100.0% |
+| NORWAY | 239 | 233 | 6 | Mar 2026 | ███████████████ 100.0% |
+| POLAND | 1,588 | 1,385 | 203 | Mar 2026 | █░░░░░░░░░░░░░░ 10.6% |
+| ROMANIA | 290 | 121 | 169 | Mar 2026 | █████░░░░░░░░░░ 36.3% |
 
 ## Social Media Scan by Country
 
 | Country | Scanned | Available | Reachable | Twitter-only | Modern | Mixed | No Social | Scan Period |
 |---------|---------|-----------|-----------|-------------|--------|-------|-----------|-------------|
-| AUSTRIA | 821 | 821 | 785 | 30 | 25 | 22 | 708 | Mar 2026 |
-| BELGIUM | 712 | 1,309 | 470 | 51 | 22 | 20 | 377 | Mar 2026 |
+| AUSTRIA | 821 | 821 | 787 | 30 | 25 | 22 | 710 | Mar 2026 |
+| BELGIUM | 1,309 | 1,309 | 1,230 | 206 | 58 | 47 | 929 | Mar 2026 |
+| BULGARIA | 291 | 291 | 269 | 21 | 11 | 2 | 235 | Mar 2026 |
+| CROATIA | 233 | 233 | 232 | 31 | 11 | 3 | 187 | Mar 2026 |
+| CZECHIA | 843 | 843 | 803 | 124 | 21 | 15 | 643 | Mar 2026 |
+| DENMARK | 1,521 | 1,521 | 1,503 | 177 | 10 | 17 | 1,299 | Mar 2026 |
+| ESTONIA | 396 | 396 | 384 | 65 | 22 | 4 | 293 | Mar 2026 |
+| FINLAND | 180 | 180 | 172 | 38 | 2 | 0 | 132 | Mar 2026 |
+| FRANCE | 10,007 | 10,007 | 9,373 | 1,935 | 212 | 361 | 6,865 | Mar 2026 |
+| GERMANY | 6,555 | 6,555 | 6,443 | 1,083 | 301 | 191 | 4,868 | Mar 2026 |
+| GREECE | 1,748 | 1,748 | 1,604 | 229 | 40 | 54 | 1,281 | Mar 2026 |
+| HUNGARY | 390 | 390 | 366 | 24 | 20 | 5 | 317 | Mar 2026 |
+| ICELAND | 139 | 139 | 135 | 5 | 8 | 6 | 116 | Mar 2026 |
+| IRELAND | 522 | 522 | 494 | 149 | 25 | 29 | 291 | Mar 2026 |
+| ITALY | 5,338 | 5,338 | 4,729 | 1,891 | 81 | 168 | 2,589 | Mar 2026 |
+| LATVIA | 802 | 802 | 769 | 262 | 23 | 60 | 424 | Mar 2026 |
+| LITHUANIA | 120 | 120 | 108 | 5 | 4 | 0 | 99 | Mar 2026 |
+| LUXEMBOURG | 571 | 571 | 250 | 31 | 21 | 15 | 183 | Mar 2026 |
+| MALTA | 608 | 608 | 595 | 60 | 20 | 14 | 501 | Mar 2026 |
+| NETHERLANDS | 937 | 937 | 908 | 162 | 54 | 49 | 643 | Mar 2026 |
+| NORWAY | 239 | 239 | 233 | 20 | 2 | 0 | 211 | Mar 2026 |
+| POLAND | 6,244 | 14,938 | 5,688 | 447 | 255 | 179 | 4,807 | Mar 2026 |
 
 ## Social Media Platform Breakdown
 
@@ -32,9 +73,29 @@ Number of **scanned** pages per country that link to each platform. A page may l
 
 | Country | Scanned | Reachable | Twitter | X | Bluesky | Mastodon | Legacy % | Modern % |
 |---------|---------|-----------|---------|---|---------|----------|----------|----------|
-| AUSTRIA | 821 | 785 | 35 | 18 | 16 | 42 | 6.3% | 5.7% |
-| BELGIUM | 712 | 470 | 49 | 22 | 1 | 41 | 10.0% | 5.9% |
-| **Total** | **1,533** | **1,255** | **84** | **40** | **17** | **83** | **8.0%** | **5.8%** |
+| AUSTRIA | 821 | 787 | 35 | 18 | 16 | 42 | 6.3% | 5.7% |
+| BELGIUM | 1,309 | 1,230 | 183 | 74 | 27 | 90 | 19.3% | 8.0% |
+| BULGARIA | 291 | 269 | 18 | 5 | 0 | 13 | 7.9% | 4.5% |
+| CROATIA | 233 | 232 | 34 | 0 | 0 | 14 | 14.6% | 6.0% |
+| CZECHIA | 843 | 803 | 131 | 10 | 0 | 36 | 16.5% | 4.3% |
+| DENMARK | 1,521 | 1,503 | 176 | 21 | 17 | 13 | 12.8% | 1.8% |
+| ESTONIA | 396 | 384 | 67 | 2 | 0 | 26 | 17.4% | 6.6% |
+| FINLAND | 180 | 172 | 26 | 13 | 2 | 0 | 21.1% | 1.1% |
+| FRANCE | 10,007 | 9,373 | 1,799 | 629 | 124 | 495 | 22.9% | 5.7% |
+| GERMANY | 6,555 | 6,443 | 1,171 | 174 | 118 | 441 | 19.4% | 7.5% |
+| GREECE | 1,748 | 1,604 | 232 | 56 | 0 | 94 | 16.2% | 5.4% |
+| HUNGARY | 390 | 366 | 29 | 0 | 0 | 25 | 7.4% | 6.4% |
+| ICELAND | 139 | 135 | 8 | 5 | 0 | 14 | 7.9% | 10.1% |
+| IRELAND | 522 | 494 | 153 | 31 | 18 | 42 | 34.1% | 10.3% |
+| ITALY | 5,338 | 4,729 | 1,991 | 90 | 0 | 249 | 38.6% | 4.7% |
+| LATVIA | 802 | 769 | 279 | 47 | 0 | 83 | 40.1% | 10.3% |
+| LITHUANIA | 120 | 108 | 5 | 0 | 0 | 4 | 4.2% | 3.3% |
+| LUXEMBOURG | 571 | 250 | 43 | 3 | 11 | 33 | 8.1% | 6.3% |
+| MALTA | 608 | 595 | 57 | 17 | 0 | 34 | 12.2% | 5.6% |
+| NETHERLANDS | 937 | 908 | 147 | 74 | 43 | 77 | 22.5% | 11.0% |
+| NORWAY | 239 | 233 | 10 | 13 | 0 | 2 | 8.4% | 0.8% |
+| POLAND | 6,244 | 5,688 | 519 | 135 | 1 | 433 | 10.0% | 7.0% |
+| **Total** | **39,814** | **37,075** | **7,113** | **1,417** | **377** | **2,260** | **20.7%** | **6.2%** |
 
 > **Legacy platforms** (Twitter / X) vs **modern open platforms** (Bluesky / Mastodon) — percentages are share of **scanned** pages that contain at least one link to any platform in that group.
 
@@ -42,13 +103,9 @@ Number of **scanned** pages per country that link to each platform. A page may l
 
 _No technology scans have been run yet. Trigger the **Scan Technology Stack** workflow manually._
 
-## Lighthouse Scan by Country
+## Lighthouse Scan
 
-| Country | URLs | Perf | A11y | Best Practices | SEO | Last Scan |
-|---------|------|------|------|----------------|-----|----------|
-| AUSTRIA | 295 | 68 | 89 | 93 | 85 | 2026-03-29 |
-
-> Scores are averages across all successfully audited URLs, displayed as 0–100 (multiply source values × 100).
+_No Lighthouse scans have been run yet. Trigger the **Scan Lighthouse** workflow manually._
 
 ## Accessibility Statement Scan by Country
 
@@ -57,18 +114,41 @@ Checks whether each government page links to an accessibility statement as requi
 | Country | Scanned | Reachable | Has Statement | In Footer | Statement % | Scan Period |
 |---------|---------|-----------|--------------|-----------|------------|-------------|
 | AUSTRIA | 821 | 787 | 547 | 517 | 70% | Mar 2026 |
-| BELGIUM | 1,309 | 1,225 | 536 | 487 | 44% | Mar 2026 |
+| BELGIUM | 1,309 | 1,219 | 526 | 477 | 43% | Mar 2026 |
 | BULGARIA | 291 | 269 | 61 | 59 | 23% | Mar 2026 |
-| CROATIA | 233 | 232 | 86 | 62 | 37% | Mar 2026 |
-| CZECHIA | 215 | 198 | 76 | 73 | 38% | Mar 2026 |
+| CROATIA | 233 | 231 | 85 | 61 | 37% | Mar 2026 |
+| CZECHIA | 843 | 803 | 427 | 362 | 53% | Mar 2026 |
+| DENMARK | 1,521 | 1,500 | 1,030 | 1,013 | 69% | Mar 2026 |
+| ESTONIA | 396 | 388 | 136 | 65 | 35% | Mar 2026 |
+| FINLAND | 180 | 172 | 111 | 104 | 65% | Mar 2026 |
+| FRANCE | 10,007 | 9,402 | 3,625 | 3,489 | 39% | Mar 2026 |
+| GERMANY | 6,555 | 6,442 | 4,555 | 3,850 | 71% | Mar 2026 |
+| GREECE | 1,748 | 1,622 | 400 | 237 | 25% | Mar 2026 |
+| HUNGARY | 390 | 361 | 64 | 48 | 18% | Mar 2026 |
+| ICELAND | 139 | 133 | 15 | 7 | 11% | Mar 2026 |
+| IRELAND | 522 | 494 | 223 | 202 | 45% | Mar 2026 |
+| ITALY | 5,338 | 4,702 | 2,539 | 2,489 | 54% | Mar 2026 |
+| LATVIA | 802 | 768 | 485 | 443 | 63% | Mar 2026 |
+| LITHUANIA | 120 | 108 | 0 | 0 | 0% | Mar 2026 |
+| LUXEMBOURG | 571 | 250 | 85 | 74 | 34% | Mar 2026 |
+| MALTA | 608 | 595 | 381 | 374 | 64% | Mar 2026 |
+| NETHERLANDS | 937 | 908 | 447 | 438 | 49% | Mar 2026 |
+| NORWAY | 239 | 233 | 108 | 102 | 46% | Mar 2026 |
+| POLAND | 4,939 | 4,553 | 1,736 | 1,189 | 38% | Mar 2026 |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
+
+## Countries Pending Social Media Scan
+
+These countries have URL validation data but have not yet been scanned for social media links:
+
+`ROMANIA`
 
 ## Countries With Social Scan But No URL Validation
 
 These countries have social media scan data but no URL validation data (URL validation may have been skipped because the social scan already confirmed reachability):
 
-`AUSTRIA`, `BELGIUM`
+`GERMANY`, `HUNGARY`, `ICELAND`, `IRELAND`, `LATVIA`, `LITHUANIA`, `LUXEMBOURG`
 
 ## Scan Priority Guide
 
