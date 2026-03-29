@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-03-29 17:56 UTC",
+  "generated_at": "2026-03-29 18:43 UTC",
   "summary": {
-    "total_batches": 78,
-    "total_scanned": 42197,
-    "total_reachable": 39017,
+    "total_batches": 77,
+    "total_scanned": 39814,
+    "total_reachable": 37075,
     "total_available": 82714,
-    "twitter_pages": 7325,
-    "x_pages": 1449,
+    "twitter_pages": 7113,
+    "x_pages": 1417,
     "bluesky_pages": 377,
-    "mastodon_pages": 2342,
+    "mastodon_pages": 2260,
     "first_scan": "2026-03-22T00:36:33.003106+00:00",
-    "last_scan": "2026-03-29T17:55:48.992370+00:00"
+    "last_scan": "2026-03-29T04:52:21.757944+00:00"
   },
   "by_country": [
     {
@@ -386,23 +386,6 @@
       "has_any_modern": 434,
       "first_scan": "2026-03-28T12:12:41.498832+00:00",
       "last_scan": "2026-03-29T04:52:21.757944+00:00"
-    },
-    {
-      "country_code": "PORTUGAL",
-      "total_scanned": 2383,
-      "reachable": 1942,
-      "twitter_pages": 212,
-      "x_pages": 32,
-      "bluesky_pages": 0,
-      "mastodon_pages": 82,
-      "twitter_only": 215,
-      "modern_only": 53,
-      "mixed": 29,
-      "no_social": 1645,
-      "has_any_legacy": 244,
-      "has_any_modern": 82,
-      "first_scan": "2026-03-29T16:06:49.938895+00:00",
-      "last_scan": "2026-03-29T17:55:48.992370+00:00"
     }
   ]
 }
