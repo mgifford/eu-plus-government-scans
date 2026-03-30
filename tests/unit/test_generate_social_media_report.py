@@ -63,12 +63,14 @@ def populated_db(tmp_path: Path) -> Path:
     conn = sqlite3.connect(db_path)
     try:
         rows = [
-            # url, country, scan_id, is_reachable, twitter, x, bluesky, mastodon, tier
+            # url, country, scan_id, is_reachable, twitter, x, bluesky, mastodon,
+            # facebook, linkedin, tier
             (
                 "https://example.is/page1",
                 "ICELAND",
                 "social-ICELAND-20240601-001",
                 1, '["https://twitter.com/gov_is"]', '[]', '[]', '[]',
+                '[]', '[]',
                 "twitter_only", "2024-06-01T10:00:00+00:00",
             ),
             (
@@ -76,6 +78,7 @@ def populated_db(tmp_path: Path) -> Path:
                 "ICELAND",
                 "social-ICELAND-20240601-001",
                 0, '[]', '[]', '[]', '[]',
+                '[]', '[]',
                 "unreachable", "2024-06-01T10:01:00+00:00",
             ),
             (
@@ -85,6 +88,7 @@ def populated_db(tmp_path: Path) -> Path:
                 1, '[]', '[]',
                 '["https://bsky.app/profile/gov.is"]',
                 '["https://mastodon.social/@gov_is"]',
+                '[]', '[]',
                 "modern_only", "2024-06-01T10:02:00+00:00",
             ),
             (
@@ -93,6 +97,7 @@ def populated_db(tmp_path: Path) -> Path:
                 "social-FRANCE-20240602-001",
                 1, '[]', '["https://x.com/france_gov"]',
                 '[]', '[]',
+                '["https://www.facebook.com/francegov"]', '[]',
                 "twitter_only", "2024-06-02T08:00:00+00:00",
             ),
             (
@@ -100,6 +105,7 @@ def populated_db(tmp_path: Path) -> Path:
                 "FRANCE",
                 "social-FRANCE-20240602-001",
                 1, '[]', '[]', '[]', '[]',
+                '[]', '[]',
                 "no_social", "2024-06-02T08:01:00+00:00",
             ),
         ]
@@ -109,8 +115,9 @@ def populated_db(tmp_path: Path) -> Path:
                 INSERT INTO url_social_media_results
                 (url, country_code, scan_id, is_reachable,
                  twitter_links, x_links, bluesky_links, mastodon_links,
+                 facebook_links, linkedin_links,
                  social_tier, scanned_at)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """,
                 row,
             )
@@ -154,6 +161,8 @@ def test_query_summary_populated_db(populated_db: Path):
     assert result["x_pages"] == 1          # 1 page with x links
     assert result["bluesky_pages"] == 1    # 1 page with bluesky links
     assert result["mastodon_pages"] == 1   # 1 page with mastodon links
+    assert result["facebook_pages"] == 1   # 1 page with facebook links
+    assert result["linkedin_pages"] == 0   # no pages with linkedin links
 
 
 # ---------------------------------------------------------------------------
@@ -200,6 +209,8 @@ def test_build_stats_block_with_data():
         "x_pages": 20,
         "bluesky_pages": 15,
         "mastodon_pages": 12,
+        "facebook_pages": 40,
+        "linkedin_pages": 25,
         "last_scan": "2024-06-01T12:00:00",
     }
     block = _build_stats_block(summary, "2024-06-01 12:00 UTC")
@@ -211,6 +222,8 @@ def test_build_stats_block_with_data():
     assert "30" in block          # twitter
     assert "15" in block          # bluesky
     assert "12" in block          # mastodon
+    assert "40" in block          # facebook
+    assert "25" in block          # linkedin
     assert "social-media-data.json" in block
 
 
@@ -314,7 +327,8 @@ def test_generate_social_media_report_json_structure(populated_db: Path, tmp_pat
 
     summary = data["summary"]
     for key in ("total_batches", "total_scanned", "total_reachable",
-                "twitter_pages", "x_pages", "bluesky_pages", "mastodon_pages"):
+                "twitter_pages", "x_pages", "bluesky_pages", "mastodon_pages",
+                "facebook_pages", "linkedin_pages"):
         assert key in summary, f"Missing key: {key}"
 
 
@@ -354,6 +368,7 @@ def duplicate_scan_db(tmp_path: Path) -> Path:
                 "https://example.is/page1", "ICELAND",
                 "social-ICELAND-scan-001", 1,
                 '["https://twitter.com/gov_is"]', '[]', '[]', '[]',
+                '[]', '[]',
                 "twitter_only", "2024-06-01T10:00:00+00:00",
             ),
             # Same URL in a second batch - should NOT be double-counted
@@ -361,12 +376,14 @@ def duplicate_scan_db(tmp_path: Path) -> Path:
                 "https://example.is/page1", "ICELAND",
                 "social-ICELAND-scan-002", 1,
                 '["https://twitter.com/gov_is"]', '[]', '[]', '[]',
+                '[]', '[]',
                 "twitter_only", "2024-06-02T10:00:00+00:00",
             ),
             (
                 "https://example.is/page2", "ICELAND",
                 "social-ICELAND-scan-001", 0,
                 '[]', '[]', '[]', '[]',
+                '[]', '[]',
                 "unreachable", "2024-06-01T10:01:00+00:00",
             ),
         ]
@@ -376,8 +393,9 @@ def duplicate_scan_db(tmp_path: Path) -> Path:
                 INSERT INTO url_social_media_results
                 (url, country_code, scan_id, is_reachable,
                  twitter_links, x_links, bluesky_links, mastodon_links,
+                 facebook_links, linkedin_links,
                  social_tier, scanned_at)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """,
                 row,
             )
@@ -428,6 +446,8 @@ def test_build_stats_block_with_total_available():
         "x_pages": 10,
         "bluesky_pages": 5,
         "mastodon_pages": 15,
+        "facebook_pages": 30,
+        "linkedin_pages": 8,
         "last_scan": "2024-06-01T12:00:00",
     }
     block = _build_stats_block(summary, "2024-06-01 12:00 UTC", total_available=1000)
@@ -486,4 +506,111 @@ def test_count_toon_seed_urls_reads_page_count(tmp_path: Path):
         (seeds_dir / f"{name}.toon").write_text(json.dumps(data), encoding="utf-8")
     result = _count_toon_seed_urls(seeds_dir)
     assert result == {"ICELAND": 139, "NORWAY": 239}
+
+
+# ---------------------------------------------------------------------------
+# Tests for new platform columns (Facebook, LinkedIn) and column ordering
+# ---------------------------------------------------------------------------
+
+def test_build_stats_block_includes_facebook_linkedin():
+    """Platform overview table must include Facebook and LinkedIn rows."""
+    summary = {
+        "total_batches": 3,
+        "total_scanned": 200,
+        "total_reachable": 180,
+        "twitter_pages": 10,
+        "x_pages": 5,
+        "bluesky_pages": 8,
+        "mastodon_pages": 12,
+        "facebook_pages": 25,
+        "linkedin_pages": 15,
+        "last_scan": "2024-06-01T12:00:00",
+    }
+    block = _build_stats_block(summary, "2024-06-01 12:00 UTC")
+    assert "Facebook" in block
+    assert "LinkedIn" in block
+    assert "Legacy social media" in block
+    assert "Modern" in block or "modern" in block
+
+
+def test_build_stats_block_country_table_column_order(populated_db: Path):
+    """Country table must place No Social and Legacy-only before platform columns."""
+    conn = sqlite3.connect(populated_db)
+    conn.row_factory = sqlite3.Row
+    try:
+        summary = _query_summary(conn)
+        by_country = _query_by_country(conn)
+    finally:
+        conn.close()
+
+    block = _build_stats_block(summary, "2024-06-01 12:00 UTC", by_country=by_country)
+
+    # Find the header row of the country table
+    header_line = None
+    for line in block.splitlines():
+        if "No Social" in line and "Legacy-only" in line and "Scan Period" in line:
+            header_line = line
+            break
+
+    assert header_line is not None, "Country table header not found"
+    # No Social must come before Legacy-only, which must come before Twitter column
+    ns_pos = header_line.index("No Social")
+    lo_pos = header_line.index("Legacy-only")
+    # Find " Twitter |" to avoid matching "Legacy-only" or "Twitter-only"
+    tw_pos = header_line.index("| Twitter |")
+    assert ns_pos < lo_pos < tw_pos, (
+        f"Column order wrong: No Social={ns_pos}, Legacy-only={lo_pos}, Twitter={tw_pos}"
+    )
+
+
+def test_build_stats_block_sortable_table_uses_scan_period_identifier(populated_db: Path):
+    """JS _findCountryTable should look for 'Scan Period', not 'Non-X Score'."""
+    conn = sqlite3.connect(populated_db)
+    conn.row_factory = sqlite3.Row
+    try:
+        summary = _query_summary(conn)
+        by_country = _query_by_country(conn)
+    finally:
+        conn.close()
+
+    block = _build_stats_block(summary, "2024-06-01 12:00 UTC", by_country=by_country)
+
+    # The JS should use "Scan Period" as the identifier, NOT "Non-X Score"
+    assert '"Scan Period"' in block
+    assert '"Non-X Score"' not in block
+
+
+def test_build_stats_block_available_reachable_clarification(populated_db: Path):
+    """Stats block must explain Available and Reachable in the country table section."""
+    conn = sqlite3.connect(populated_db)
+    conn.row_factory = sqlite3.Row
+    try:
+        summary = _query_summary(conn)
+        by_country = _query_by_country(conn)
+    finally:
+        conn.close()
+
+    block = _build_stats_block(summary, "2024-06-01 12:00 UTC", by_country=by_country)
+
+    assert "Available" in block
+    assert "Reachable" in block
+    # The introductory sentence should explain both terms
+    assert "valid HTTP response" in block or "tracked in our domain list" in block
+
+
+def test_generate_social_media_report_json_includes_facebook_linkedin(
+    populated_db: Path, tmp_path: Path
+):
+    """JSON data file should include facebook_pages and linkedin_pages."""
+    page_path = tmp_path / "social-media.md"
+    page_path.write_text(_SOCIAL_MEDIA_PAGE_TEMPLATE)
+    data_path = tmp_path / "social-media-data.json"
+
+    generate_social_media_report(populated_db, page_path, data_path)
+
+    data = json.loads(data_path.read_text())
+    assert "facebook_pages" in data["summary"]
+    assert "linkedin_pages" in data["summary"]
+    assert data["summary"]["facebook_pages"] == 1   # one France page has Facebook
+    assert data["summary"]["linkedin_pages"] == 0
 
