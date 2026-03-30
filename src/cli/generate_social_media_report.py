@@ -273,7 +273,7 @@ def _build_stats_block(
         "[social-media-data.json](social-media-data.json)",
     ]
 
-    # Per-country breakdown tables
+    # Per-country breakdown table
     if by_country:
         lines += [
             "",
@@ -281,10 +281,12 @@ def _build_stats_block(
             "",
             "## Social Media Scan by Country",
             "",
-            "_Click any column header to sort. Numbers below 25 show a tooltip on hover or focus._",
+            "Tier columns classify each page by its overall social media presence. "
+            "Platform columns count pages with at least one link to that platform — "
+            "a page may appear in more than one platform column.",
             "",
-            "| Country | Scanned | Available | Reachable | Twitter-only | Modern | Mixed | No Social | Non-X Score | Scan Period |",
-            "|---------|---------|-----------|-----------|-------------|--------|-------|-----------|-------------|-------------|",
+            "| Country | Scanned | Available | Reachable | Twitter-only | Modern | Mixed | No Social | Twitter | X | Bluesky | Mastodon | Scan Period |",
+            "|---------|---------|-----------|-----------|-------------|--------|-------|-----------|---------|---|---------|----------|-------------|",
         ]
         for row in by_country:
             cc = row["country_code"]
@@ -295,59 +297,28 @@ def _build_stats_block(
                 f"| {cc} | {row['total_scanned']:,} | {avail_str} | {row['reachable']:,} | "
                 f"{row.get('twitter_only', 0):,} | {row.get('modern_only', 0):,} | "
                 f"{row.get('mixed', 0):,} | {row.get('no_social', 0):,} | "
-                f"{_non_x_score(row)} | {period} |"
+                f"{row.get('twitter_pages', 0):,} | {row.get('x_pages', 0):,} | "
+                f"{row.get('bluesky_pages', 0):,} | {row.get('mastodon_pages', 0):,} | "
+                f"{period} |"
             )
 
         # totals row
         tot_avail_str = f"**{tot_avail:,}**" if tot_avail else "—"
-        tot_non_x = (
-            f"{(tot_modern_only + tot_mixed) / tot_reachable * 100:.1f}%"
-            if tot_reachable else "—"
-        )
+        tot_reachable = sum(r["reachable"] for r in by_country)
+        tot_twitter_only = sum(r.get("twitter_only", 0) for r in by_country)
+        tot_modern_only = sum(r.get("modern_only", 0) for r in by_country)
+        tot_mixed = sum(r.get("mixed", 0) for r in by_country)
+        tot_no_social = sum(r.get("no_social", 0) for r in by_country)
+        tot_tw = sum(r.get("twitter_pages", 0) for r in by_country)
+        tot_x = sum(r.get("x_pages", 0) for r in by_country)
+        tot_bsky = sum(r.get("bluesky_pages", 0) for r in by_country)
+        tot_mast = sum(r.get("mastodon_pages", 0) for r in by_country)
         lines.append(
             f"| **Total** | **{tot_scanned:,}** | {tot_avail_str} | **{tot_reachable:,}** | "
             f"**{tot_twitter_only:,}** | **{tot_modern_only:,}** | "
-            f"**{tot_mixed:,}** | **{tot_no_social:,}** | **{tot_non_x}** | — |"
+            f"**{tot_mixed:,}** | **{tot_no_social:,}** | "
+            f"**{tot_tw:,}** | **{tot_x:,}** | **{tot_bsky:,}** | **{tot_mast:,}** | — |"
         )
-        lines.append("")
-
-        lines += [
-            "---",
-            "",
-            "## Social Media Platform Breakdown",
-            "",
-            "Number of **scanned** pages per country that link to each platform. "
-            "A page may link to more than one platform. "
-            "Percentages show the share of all scanned pages.",
-            "",
-            "| Country | Scanned | Reachable | Twitter | X | Bluesky | Mastodon | Legacy % | Modern % |",
-            "|---------|---------|-----------|---------|---|---------|----------|----------|----------|",
-        ]
-        for row in by_country:
-            cc = row["country_code"]
-            s = row["total_scanned"]
-            legacy_pct = _pct(row.get("has_any_legacy", 0), s)
-            modern_pct = _pct(row.get("has_any_modern", 0), s)
-            lines.append(
-                f"| {cc} | {s:,} | {row['reachable']:,} | "
-                f"{row.get('twitter_pages', 0):,} | {row.get('x_pages', 0):,} | "
-                f"{row.get('bluesky_pages', 0):,} | {row.get('mastodon_pages', 0):,} | "
-                f"{legacy_pct} | {modern_pct} |"
-            )
-
-        leg_pct = _pct(tot_has_legacy, tot_scanned)
-        mod_pct = _pct(tot_has_modern, tot_scanned)
-        lines.append(
-            f"| **Total** | **{tot_scanned:,}** | **{tot_reachable:,}** | "
-            f"**{tot_tw:,}** | **{tot_x:,}** | **{tot_bsky:,}** | **{tot_mast:,}** | "
-            f"**{leg_pct}** | **{mod_pct}** |"
-        )
-        lines += [
-            "",
-            "> **Legacy platforms** (Twitter / X) vs **modern open platforms** "
-            "(Bluesky / Mastodon) — percentages are share of **scanned** pages "
-            "that contain at least one link to any platform in that group.",
-        ]
 
         # Embed pie chart data and wire up interactive JavaScript enhancements
         pie_json = json.dumps(
