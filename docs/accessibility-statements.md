@@ -7,14 +7,14 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-03-30 07:44 UTC — last scan: 2026-03-30_
+_Stats as of 2026-03-30 08:35 UTC — last scan: 2026-03-30_
 
-**43** scan batches run
+**41** scan batches run
 
-**46,665** of **82,714** available pages scanned (**56.4%** coverage)
-**43,064** of **46,665** scanned pages were reachable (**92.3%**)
-**20,524** of **43,064** reachable pages have an accessibility statement (**47.7%**)
-**18,270** pages have the statement link in the footer (**89.0%** of pages with a statement)
+**43,577** of **82,714** available pages scanned (**52.7%** coverage)
+**40,076** of **43,577** scanned pages were reachable (**92.0%**)
+**18,820** of **40,076** reachable pages have an accessibility statement (**47.0%**)
+**16,643** pages have the statement link in the footer (**88.4%** of pages with a statement)
 
 📥 Machine-readable results: [accessibility-data.json](accessibility-data.json)
 
@@ -52,9 +52,7 @@ _Stats as of 2026-03-30 07:44 UTC — last scan: 2026-03-30_
 | SLOVAKIA | 434 | 434 | 411 | 187 | 172 | 45.5% | Mar 2026 |
 | SLOVENIA | 200 | 200 | 188 | 95 | 69 | 50.5% | Mar 2026 |
 | SPAIN | 1,375 | 6,069 | 1,211 | 465 | 409 | 38.4% | Mar 2026 |
-| SWEDEN | 1,558 | 1,558 | 1,483 | 857 | 782 | 57.8% | Mar 2026 |
-| SWITZERLAND | 1,530 | 2,117 | 1,505 | 847 | 845 | 56.3% | Mar 2026 |
-| **Total** | **46,665** | **82,714** | **43,064** | **20,524** | **18,270** | **47.7%** | — |
+| **Total** | **43,577** | **82,714** | **40,076** | **18,820** | **16,643** | **47.0%** | — |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 

@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-03-30 07:44 UTC_
+_Generated: 2026-03-30 08:35 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -15,7 +15,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Social Media | 44,901 scanned (41,223 reachable) | 82,714 | ██████████░░░░░░░░░░ 54.3% |
 | Technology | 0 scanned | 82,714 | (manual scan) |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) |
-| Accessibility Statements | 46,665 scanned | 82,714 | ███████████░░░░░░░░░ 56.4% |
+| Accessibility Statements | 43,577 scanned | 82,714 | ██████████░░░░░░░░░░ 52.7% |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by *either* URL Validation or Social Media scanning.  URL Validation automatically skips pages already confirmed reachable by the Social Media scanner (within the last 30 days), so the two individual counts complement rather than duplicate each other.
 
@@ -24,7 +24,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Country | Total | Valid | Invalid | Scan Period | Coverage |
 |---------|-------|-------|---------|-------------|----------|
 | AUSTRIA | 821 | 718 | 151 | Mar 2026 | ███████████████ 100.0% |
-| BELGIUM | 1,309 | 1,166 | 627 | Mar 2026 | ███████████████ 100.0% |
+| BELGIUM | 1,309 | 1,166 | 631 | Mar 2026 | ███████████████ 100.0% |
 | BULGARIA | 291 | 232 | 73 | Mar 2026 | ███████████████ 100.0% |
 | CROATIA | 233 | 227 | 6 | Mar 2026 | ███████████████ 100.0% |
 | CZECHIA | 567 | 440 | 127 | Mar 2026 | ██████████░░░░░ 67.3% |
@@ -119,8 +119,6 @@ Checks whether each government page links to an accessibility statement as requi
 | SLOVAKIA | 434 | 411 | 187 | 172 | 45% | Mar 2026 |
 | SLOVENIA | 200 | 188 | 95 | 69 | 51% | Mar 2026 |
 | SPAIN | 1,375 | 1,211 | 465 | 409 | 38% | Mar 2026 |
-| SWEDEN | 1,558 | 1,483 | 857 | 782 | 58% | Mar 2026 |
-| SWITZERLAND | 1,530 | 1,505 | 847 | 845 | 56% | Mar 2026 |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
