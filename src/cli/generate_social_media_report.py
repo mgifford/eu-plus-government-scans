@@ -28,6 +28,9 @@ from src.lib.settings import load_settings
 _STATS_MARKER_START = "<!-- SOCIAL_MEDIA_STATS_START -->"
 _STATS_MARKER_END = "<!-- SOCIAL_MEDIA_STATS_END -->"
 
+# Chart.js CDN URL (loaded client-side only)
+_CHART_JS_CDN = "https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"
+
 
 # ---------------------------------------------------------------------------
 # Toon seed helpers
@@ -138,7 +141,8 @@ def _build_stats_block(
         total_available: Total pages across all toon seed files.  When > 0,
             the block includes a "X of Y available pages scanned" coverage line.
         by_country: Per-country rows from ``_query_by_country()``.  When
-            provided, the block includes per-country breakdown tables.
+            provided, the block includes per-country breakdown tables, a pie
+            chart, sortable table, and accessible tooltips for small numbers.
         seed_counts: Mapping of country_code → available page count from
             toon seed files.  Used for the "Available" column in the per-country
             table when *by_country* is provided.
@@ -177,6 +181,15 @@ def _build_stats_block(
             return f if f == l else f"{f} – {l}"
         return f or l or "—"
 
+    def _non_x_score(row: dict) -> str:
+        """Non-X Score: % of reachable pages with modern (non-Twitter/X) social media."""
+        r = row.get("reachable", 0) or 0
+        m = row.get("modern_only", 0) or 0
+        mx = row.get("mixed", 0) or 0
+        if not r:
+            return "—"
+        return f"{(m + mx) / r * 100:.1f}%"
+
     lines = [
         _STATS_MARKER_START,
         "",
@@ -200,12 +213,61 @@ def _build_stats_block(
         f"**{reachable:,}** of **{scanned:,}** scanned pages were reachable "
         f"(**{reach_pct}**)",
         "",
+    ]
+
+    # Pre-compute per-country totals (needed for pie chart and total rows)
+    if by_country:
+        seed_counts = seed_counts or {}
+        tot_scanned = sum(r["total_scanned"] for r in by_country)
+        tot_avail = sum(seed_counts.values())
+        tot_reachable = sum(r["reachable"] for r in by_country)
+        tot_twitter_only = sum(r.get("twitter_only", 0) for r in by_country)
+        tot_modern_only = sum(r.get("modern_only", 0) for r in by_country)
+        tot_mixed = sum(r.get("mixed", 0) for r in by_country)
+        tot_no_social = sum(r.get("no_social", 0) for r in by_country)
+        tot_has_legacy = sum(r.get("has_any_legacy", 0) for r in by_country)
+        tot_has_modern = sum(r.get("has_any_modern", 0) for r in by_country)
+        tot_tw = sum(r.get("twitter_pages", 0) for r in by_country)
+        tot_x = sum(r.get("x_pages", 0) for r in by_country)
+        tot_bsky = sum(r.get("bluesky_pages", 0) for r in by_country)
+        tot_mast = sum(r.get("mastodon_pages", 0) for r in by_country)
+
+        # Pie chart canvas: floated right so the platform table wraps to its left
+        pie_aria = (
+            f"Pie chart: social media tier distribution across {tot_scanned:,} scanned pages. "
+            f"Twitter/X only: {tot_twitter_only:,} ({_pct(tot_twitter_only, tot_scanned)}), "
+            f"Modern only: {tot_modern_only:,} ({_pct(tot_modern_only, tot_scanned)}), "
+            f"Mixed: {tot_mixed:,} ({_pct(tot_mixed, tot_scanned)}), "
+            f"No Social: {tot_no_social:,} ({_pct(tot_no_social, tot_scanned)})"
+        )
+        lines += [
+            '<div id="sm-tier-pie-container" style="float:right;margin:0 0 1rem 1.5rem;'
+            'width:260px;max-width:45%;">',
+            f'<canvas id="sm-tier-pie" width="240" height="240" role="img"'
+            f' aria-label="{pie_aria}"></canvas>',
+            '<p style="text-align:center;font-size:0.75em;margin:0.3rem 0 0;'
+            'color:#555;font-style:italic;">Social media tier distribution</p>',
+            '</div>',
+            "",
+        ]
+
+    # Platform overview table
+    lines += [
         "| Platform | Pages with link | % of scanned | % of reachable |",
         "|----------|----------------|:------------:|:--------------:|",
         f"| 🐦 Twitter | **{twitter:,}** | {_pct(twitter, scanned)} | {_pct(twitter, reachable)} |",
         f"| ✖ X | **{x_pages:,}** | {_pct(x_pages, scanned)} | {_pct(x_pages, reachable)} |",
         f"| 🦋 Bluesky | **{bluesky:,}** | {_pct(bluesky, scanned)} | {_pct(bluesky, reachable)} |",
         f"| 🐘 Mastodon / Fediverse | **{mastodon:,}** | {_pct(mastodon, scanned)} | {_pct(mastodon, reachable)} |",
+    ]
+
+    if by_country:
+        lines += [
+            "",
+            '<div style="clear:both;"></div>',
+        ]
+
+    lines += [
         "",
         "📥 Machine-readable results: "
         "[social-media-data.json](social-media-data.json)",
@@ -213,8 +275,6 @@ def _build_stats_block(
 
     # Per-country breakdown table
     if by_country:
-        seed_counts = seed_counts or {}
-
         lines += [
             "",
             "---",
@@ -243,8 +303,6 @@ def _build_stats_block(
             )
 
         # totals row
-        tot_scanned = sum(r["total_scanned"] for r in by_country)
-        tot_avail = sum(seed_counts.values())
         tot_avail_str = f"**{tot_avail:,}**" if tot_avail else "—"
         tot_reachable = sum(r["reachable"] for r in by_country)
         tot_twitter_only = sum(r.get("twitter_only", 0) for r in by_country)
@@ -262,11 +320,297 @@ def _build_stats_block(
             f"**{tot_tw:,}** | **{tot_x:,}** | **{tot_bsky:,}** | **{tot_mast:,}** | — |"
         )
 
+        # Embed pie chart data and wire up interactive JavaScript enhancements
+        pie_json = json.dumps(
+            {
+                "twitterOnly": tot_twitter_only,
+                "modernOnly": tot_modern_only,
+                "mixed": tot_mixed,
+                "noSocial": tot_no_social,
+            },
+            separators=(",", ":"),
+        )
+        lines += _build_interactive_block(pie_json)
+
     lines += [
         "",
         _STATS_MARKER_END,
     ]
     return "\n".join(lines)
+
+
+def _build_interactive_block(pie_json: str) -> list[str]:
+    """Return the CSS ``<style>`` and JavaScript ``<script>`` lines.
+
+    The returned lines are appended at the end of the stats section.  They
+    provide three interactive enhancements:
+
+    1. A Chart.js pie chart rendered into ``#sm-tier-pie``.
+    2. Sortable column headers on the "Social Media Scan by Country" table.
+    3. Accessible WCAG 2.2 AA tooltips (role="tooltip" + aria-describedby)
+       for numeric cells whose value is less than 25.
+    """
+    css = """\
+<style>
+/* Pie chart container — floats right of the platform overview table */
+#sm-tier-pie-container { float: right; margin: 0 0 1rem 1.5rem; width: 260px; max-width: 45%; }
+
+/* Accessible tooltip trigger */
+.sm-tip {
+  position: relative;
+  display: inline-block;
+  cursor: help;
+  text-decoration: underline dotted;
+  text-underline-offset: 2px;
+}
+/* Tooltip popup — hidden until hover/focus */
+.sm-tooltip-popup {
+  visibility: hidden;
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #222;
+  color: #fff;
+  padding: 5px 9px;
+  border-radius: 4px;
+  font-size: 0.78em;
+  white-space: normal;
+  z-index: 200;
+  min-width: 180px;
+  max-width: 260px;
+  line-height: 1.4;
+}
+.sm-tooltip-popup::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: #222;
+}
+/* Show tooltip on hover or keyboard focus */
+.sm-tip:hover .sm-tooltip-popup,
+.sm-tip:focus .sm-tooltip-popup { visibility: visible; }
+
+/* Sortable table column headers */
+.sm-sortable th[aria-sort] { cursor: pointer; white-space: nowrap; user-select: none; }
+.sm-sortable th[aria-sort]:hover,
+.sm-sortable th[aria-sort]:focus-visible { text-decoration: underline; outline: 2px solid currentColor; outline-offset: 2px; }
+.sm-sortable th[aria-sort="ascending"]::after  { content: " ▲"; font-size: 0.75em; }
+.sm-sortable th[aria-sort="descending"]::after { content: " ▼"; font-size: 0.75em; }
+.sm-sortable th[aria-sort="none"]::after       { content: " ⇅"; font-size: 0.75em; opacity: 0.5; }
+</style>"""
+
+    js = f"""\
+<script>
+(function () {{
+  "use strict";
+
+  // Tier data embedded by generate_social_media_report.py
+  var SM_PIE = {pie_json};
+
+  // ── Accessible tooltips ──────────────────────────────────────────────────
+  // Numbers < 25 in the country table get a WCAG 2.2 AA tooltip
+  // (role="tooltip" + aria-describedby, visible on hover and keyboard focus).
+  var _tipSeq = 0;
+
+  function addTooltips() {{
+    var countryTable = _findCountryTable();
+    if (!countryTable) return;
+
+    var headers = Array.from(countryTable.querySelectorAll("thead th"));
+    // Numeric columns are all except Country (0), Non-X Score, and Scan Period
+    var numericCols = [];
+    headers.forEach(function (th, i) {{
+      var t = th.textContent.trim();
+      if (t !== "Country" && t !== "Scan Period" && t !== "Non-X Score") {{
+        numericCols.push(i);
+      }}
+    }});
+
+    countryTable.querySelectorAll("tbody tr").forEach(function (row) {{
+      var cells = row.querySelectorAll("td");
+      // Skip the totals row
+      if (cells[0] && cells[0].textContent.includes("Total")) return;
+      numericCols.forEach(function (ci) {{
+        var cell = cells[ci];
+        if (!cell) return;
+        var raw = cell.textContent.replace(/,/g, "").trim();
+        var n = parseInt(raw, 10);
+        if (isNaN(n) || n <= 0 || n >= 25) return;
+        var id = "sm-tip-" + (++_tipSeq);
+        var country = cells[0] ? cells[0].textContent.trim() : "";
+        var colName = headers[ci] ? headers[ci].textContent.trim() : "";
+        // Store original value so sorting still works after innerHTML change
+        cell.dataset.sortVal = String(n);
+        cell.innerHTML =
+          '<span class="sm-tip" tabindex="0" aria-describedby="' + id + '">' +
+          cell.textContent +
+          "</span>" +
+          '<span role="tooltip" id="' + id + '" class="sm-tooltip-popup">' +
+          colName + ": " + n + " for " + country +
+          ". Small sample — interpret with caution." +
+          "</span>";
+      }});
+    }});
+
+    // Allow Escape key to dismiss any focused tooltip
+    document.addEventListener("keydown", function (e) {{
+      if (e.key === "Escape") {{
+        var active = document.activeElement;
+        if (active && active.classList.contains("sm-tip")) active.blur();
+      }}
+    }});
+  }}
+
+  // ── Sortable column headers ──────────────────────────────────────────────
+  function addSortable() {{
+    var countryTable = _findCountryTable();
+    if (!countryTable) return;
+
+    countryTable.classList.add("sm-sortable");
+    var headers = Array.from(countryTable.querySelectorAll("thead th"));
+    headers.forEach(function (th, ci) {{
+      th.setAttribute("aria-sort", "none");
+      th.setAttribute("tabindex", "0");
+      function doSort(e) {{
+        if (e.type === "keydown" && e.key !== "Enter" && e.key !== " ") return;
+        if (e.type === "keydown") e.preventDefault();
+        var asc = th.getAttribute("aria-sort") !== "ascending";
+        headers.forEach(function (h) {{ h.setAttribute("aria-sort", "none"); }});
+        th.setAttribute("aria-sort", asc ? "ascending" : "descending");
+        _sortTable(countryTable, ci, asc);
+      }}
+      th.addEventListener("click", doSort);
+      th.addEventListener("keydown", doSort);
+    }});
+  }}
+
+  function _getCellVal(cell) {{
+    if (!cell) return null;
+    // Prefer the data attribute set when a tooltip was injected
+    if (cell.dataset && cell.dataset.sortVal !== undefined) {{
+      return parseInt(cell.dataset.sortVal, 10);
+    }}
+    // Use textContent directly — CSS ::after pseudo-elements and Markdown bold
+    // markers are not included in textContent, so no stripping is needed.
+    var text = cell.textContent.trim();
+    if (text === "—" || text === "") return null;
+    if (text.endsWith("%")) return parseFloat(text) || 0;
+    var n = parseInt(text.replace(/,/g, ""), 10);
+    return isNaN(n) ? text.toLowerCase() : n;
+  }}
+
+  function _sortTable(table, ci, asc) {{
+    var tbody = table.querySelector("tbody");
+    if (!tbody) return;
+    var rows = Array.from(tbody.querySelectorAll("tr"));
+    // Pin the Total row to the bottom
+    var pinned = null;
+    if (rows.length && rows[rows.length - 1].textContent.includes("Total")) {{
+      pinned = rows.pop();
+    }}
+    rows.sort(function (a, b) {{
+      var av = _getCellVal(a.querySelectorAll("td")[ci]);
+      var bv = _getCellVal(b.querySelectorAll("td")[ci]);
+      if (av === null) return asc ? 1 : -1;
+      if (bv === null) return asc ? -1 : 1;
+      if (typeof av === "number" && typeof bv === "number") return asc ? av - bv : bv - av;
+      return asc
+        ? String(av).localeCompare(String(bv))
+        : String(bv).localeCompare(String(av));
+    }});
+    rows.forEach(function (r) {{ tbody.appendChild(r); }});
+    if (pinned) tbody.appendChild(pinned);
+  }}
+
+  // ── Pie chart ────────────────────────────────────────────────────────────
+  function _buildPie() {{
+    var canvas = document.getElementById("sm-tier-pie");
+    if (!canvas || !window.Chart) return;
+    var total = SM_PIE.twitterOnly + SM_PIE.modernOnly + SM_PIE.mixed + SM_PIE.noSocial;
+    function pct(n) {{ return total ? (n / total * 100).toFixed(1) + "%" : "—"; }}
+    new Chart(canvas, {{
+      type: "pie",
+      data: {{
+        labels: [
+          "Twitter/X only (" + pct(SM_PIE.twitterOnly) + ")",
+          "Modern only (" + pct(SM_PIE.modernOnly) + ")",
+          "Mixed (" + pct(SM_PIE.mixed) + ")",
+          "No Social (" + pct(SM_PIE.noSocial) + ")"
+        ],
+        datasets: [{{
+          data: [SM_PIE.twitterOnly, SM_PIE.modernOnly, SM_PIE.mixed, SM_PIE.noSocial],
+          backgroundColor: ["#1a8cd8", "#0085ff", "#7856ff", "#cccccc"],
+          borderWidth: 1,
+          borderColor: "#fff"
+        }}]
+      }},
+      options: {{
+        responsive: true,
+        plugins: {{
+          legend: {{ position: "bottom", labels: {{ font: {{ size: 11 }}, boxWidth: 14 }} }},
+          tooltip: {{
+            callbacks: {{
+              label: function (ctx) {{
+                var v = ctx.raw;
+                var p = total ? (v / total * 100).toFixed(1) + "%" : "—";
+                return " " + v.toLocaleString() + " pages (" + p + ")";
+              }}
+            }}
+          }}
+        }}
+      }}
+    }});
+  }}
+
+  function _loadChartJs() {{
+    if (window.Chart) {{ _buildPie(); return; }}
+    var s = document.createElement("script");
+    s.src = "{_CHART_JS_CDN}";
+    s.crossOrigin = "anonymous";
+    s.onload = _buildPie;
+    s.onerror = function () {{
+      var c = document.getElementById("sm-tier-pie-container");
+      if (c) {{
+        c.innerHTML =
+          '<p style="font-size:0.85em;color:#666;text-align:center;">' +
+          "Chart unavailable. See the platform table for data." +
+          "</p>";
+      }}
+    }};
+    document.head.appendChild(s);
+  }}
+
+  // ── Helpers ──────────────────────────────────────────────────────────────
+  function _findCountryTable() {{
+    var found = null;
+    document.querySelectorAll("table").forEach(function (t) {{
+      t.querySelectorAll("th").forEach(function (th) {{
+        if (th.textContent.trim() === "Non-X Score") found = t;
+      }});
+    }});
+    return found;
+  }}
+
+  // ── Init ─────────────────────────────────────────────────────────────────
+  function _init() {{
+    addTooltips();
+    addSortable();
+    _loadChartJs();
+  }}
+
+  if (document.readyState === "loading") {{
+    document.addEventListener("DOMContentLoaded", _init);
+  }} else {{
+    _init();
+  }}
+}})();
+</script>"""
+
+    return ["", css, "", js]
 
 
 # ---------------------------------------------------------------------------

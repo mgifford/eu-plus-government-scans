@@ -14,12 +14,19 @@ _Stats as of 2026-03-30 00:30 UTC — last scan: 2026-03-29_
 **39,814** of **82,714** available pages scanned (**48.1%** coverage)
 **37,075** of **39,814** scanned pages were reachable (**93.1%**)
 
+<div id="sm-tier-pie-container" style="float:right;margin:0 0 1rem 1.5rem;width:260px;max-width:45%;">
+<canvas id="sm-tier-pie" width="240" height="240" role="img" aria-label="Pie chart: social media tier distribution across 42,197 scanned pages. Twitter/X only: 7,210 (17.1%), Modern only: 1,279 (3.0%), Mixed: 1,270 (3.0%), No Social: 29,268 (69.4%)"></canvas>
+<p style="text-align:center;font-size:0.75em;margin:0.3rem 0 0;color:#555;font-style:italic;">Social media tier distribution</p>
+</div>
+
 | Platform | Pages with link | % of scanned | % of reachable |
 |----------|----------------|:------------:|:--------------:|
 | 🐦 Twitter | **7,113** | 17.9% | 19.2% |
 | ✖ X | **1,417** | 3.6% | 3.8% |
 | 🦋 Bluesky | **377** | 0.9% | 1.0% |
 | 🐘 Mastodon / Fediverse | **2,260** | 5.7% | 6.1% |
+
+<div style="clear:both;"></div>
 
 📥 Machine-readable results: [social-media-data.json](social-media-data.json)
 
@@ -86,6 +93,264 @@ Number of **scanned** pages per country that link to each platform. A page may l
 | **Total** | **39,814** | **37,075** | **7,113** | **1,417** | **377** | **2,260** | **20.7%** | **6.2%** |
 
 > **Legacy platforms** (Twitter / X) vs **modern open platforms** (Bluesky / Mastodon) — percentages are share of **scanned** pages that contain at least one link to any platform in that group.
+
+<style>
+/* Pie chart container — floats right of the platform overview table */
+#sm-tier-pie-container { float: right; margin: 0 0 1rem 1.5rem; width: 260px; max-width: 45%; }
+
+/* Accessible tooltip trigger */
+.sm-tip {
+  position: relative;
+  display: inline-block;
+  cursor: help;
+  text-decoration: underline dotted;
+  text-underline-offset: 2px;
+}
+/* Tooltip popup — hidden until hover/focus */
+.sm-tooltip-popup {
+  visibility: hidden;
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #222;
+  color: #fff;
+  padding: 5px 9px;
+  border-radius: 4px;
+  font-size: 0.78em;
+  white-space: normal;
+  z-index: 200;
+  min-width: 180px;
+  max-width: 260px;
+  line-height: 1.4;
+}
+.sm-tooltip-popup::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: #222;
+}
+/* Show tooltip on hover or keyboard focus */
+.sm-tip:hover .sm-tooltip-popup,
+.sm-tip:focus .sm-tooltip-popup { visibility: visible; }
+
+/* Sortable table column headers */
+.sm-sortable th[aria-sort] { cursor: pointer; white-space: nowrap; user-select: none; }
+.sm-sortable th[aria-sort]:hover,
+.sm-sortable th[aria-sort]:focus-visible { text-decoration: underline; outline: 2px solid currentColor; outline-offset: 2px; }
+.sm-sortable th[aria-sort="ascending"]::after  { content: " ▲"; font-size: 0.75em; }
+.sm-sortable th[aria-sort="descending"]::after { content: " ▼"; font-size: 0.75em; }
+.sm-sortable th[aria-sort="none"]::after       { content: " ⇅"; font-size: 0.75em; opacity: 0.5; }
+</style>
+
+<script>
+(function () {
+  "use strict";
+
+  // Tier data embedded by generate_social_media_report.py
+  var SM_PIE = {"twitterOnly":7210,"modernOnly":1279,"mixed":1270,"noSocial":29268};
+
+  // ── Accessible tooltips ──────────────────────────────────────────────────
+  // Numbers < 25 in the country table get a WCAG 2.2 AA tooltip
+  // (role="tooltip" + aria-describedby, visible on hover and keyboard focus).
+  var _tipSeq = 0;
+
+  function addTooltips() {
+    var countryTable = _findCountryTable();
+    if (!countryTable) return;
+
+    var headers = Array.from(countryTable.querySelectorAll("thead th"));
+    // Numeric columns are all except Country (0), Non-X Score, and Scan Period
+    var numericCols = [];
+    headers.forEach(function (th, i) {
+      var t = th.textContent.trim();
+      if (t !== "Country" && t !== "Scan Period" && t !== "Non-X Score") {
+        numericCols.push(i);
+      }
+    });
+
+    countryTable.querySelectorAll("tbody tr").forEach(function (row) {
+      var cells = row.querySelectorAll("td");
+      // Skip the totals row
+      if (cells[0] && cells[0].textContent.includes("Total")) return;
+      numericCols.forEach(function (ci) {
+        var cell = cells[ci];
+        if (!cell) return;
+        var raw = cell.textContent.replace(/,/g, "").trim();
+        var n = parseInt(raw, 10);
+        if (isNaN(n) || n <= 0 || n >= 25) return;
+        var id = "sm-tip-" + (++_tipSeq);
+        var country = cells[0] ? cells[0].textContent.trim() : "";
+        var colName = headers[ci] ? headers[ci].textContent.trim() : "";
+        // Store original value so sorting still works after innerHTML change
+        cell.dataset.sortVal = String(n);
+        cell.innerHTML =
+          '<span class="sm-tip" tabindex="0" aria-describedby="' + id + '">' +
+          cell.textContent +
+          "</span>" +
+          '<span role="tooltip" id="' + id + '" class="sm-tooltip-popup">' +
+          colName + ": " + n + " for " + country +
+          ". Small sample — interpret with caution." +
+          "</span>";
+      });
+    });
+
+    // Allow Escape key to dismiss any focused tooltip
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        var active = document.activeElement;
+        if (active && active.classList.contains("sm-tip")) active.blur();
+      }
+    });
+  }
+
+  // ── Sortable column headers ──────────────────────────────────────────────
+  function addSortable() {
+    var countryTable = _findCountryTable();
+    if (!countryTable) return;
+
+    countryTable.classList.add("sm-sortable");
+    var headers = Array.from(countryTable.querySelectorAll("thead th"));
+    headers.forEach(function (th, ci) {
+      th.setAttribute("aria-sort", "none");
+      th.setAttribute("tabindex", "0");
+      function doSort(e) {
+        if (e.type === "keydown" && e.key !== "Enter" && e.key !== " ") return;
+        if (e.type === "keydown") e.preventDefault();
+        var asc = th.getAttribute("aria-sort") !== "ascending";
+        headers.forEach(function (h) { h.setAttribute("aria-sort", "none"); });
+        th.setAttribute("aria-sort", asc ? "ascending" : "descending");
+        _sortTable(countryTable, ci, asc);
+      }
+      th.addEventListener("click", doSort);
+      th.addEventListener("keydown", doSort);
+    });
+  }
+
+  function _getCellVal(cell) {
+    if (!cell) return null;
+    // Prefer the data attribute set when a tooltip was injected
+    if (cell.dataset && cell.dataset.sortVal !== undefined) {
+      return parseInt(cell.dataset.sortVal, 10);
+    }
+    // Use textContent directly — CSS ::after pseudo-elements and Markdown bold
+    // markers are not included in textContent, so no stripping is needed.
+    var text = cell.textContent.trim();
+    if (text === "—" || text === "") return null;
+    if (text.endsWith("%")) return parseFloat(text) || 0;
+    var n = parseInt(text.replace(/,/g, ""), 10);
+    return isNaN(n) ? text.toLowerCase() : n;
+  }
+
+  function _sortTable(table, ci, asc) {
+    var tbody = table.querySelector("tbody");
+    if (!tbody) return;
+    var rows = Array.from(tbody.querySelectorAll("tr"));
+    // Pin the Total row to the bottom
+    var pinned = null;
+    if (rows.length && rows[rows.length - 1].textContent.includes("Total")) {
+      pinned = rows.pop();
+    }
+    rows.sort(function (a, b) {
+      var av = _getCellVal(a.querySelectorAll("td")[ci]);
+      var bv = _getCellVal(b.querySelectorAll("td")[ci]);
+      if (av === null) return asc ? 1 : -1;
+      if (bv === null) return asc ? -1 : 1;
+      if (typeof av === "number" && typeof bv === "number") return asc ? av - bv : bv - av;
+      return asc
+        ? String(av).localeCompare(String(bv))
+        : String(bv).localeCompare(String(av));
+    });
+    rows.forEach(function (r) { tbody.appendChild(r); });
+    if (pinned) tbody.appendChild(pinned);
+  }
+
+  // ── Pie chart ────────────────────────────────────────────────────────────
+  function _buildPie() {
+    var canvas = document.getElementById("sm-tier-pie");
+    if (!canvas || !window.Chart) return;
+    var total = SM_PIE.twitterOnly + SM_PIE.modernOnly + SM_PIE.mixed + SM_PIE.noSocial;
+    function pct(n) { return total ? (n / total * 100).toFixed(1) + "%" : "—"; }
+    new Chart(canvas, {
+      type: "pie",
+      data: {
+        labels: [
+          "Twitter/X only (" + pct(SM_PIE.twitterOnly) + ")",
+          "Modern only (" + pct(SM_PIE.modernOnly) + ")",
+          "Mixed (" + pct(SM_PIE.mixed) + ")",
+          "No Social (" + pct(SM_PIE.noSocial) + ")"
+        ],
+        datasets: [{
+          data: [SM_PIE.twitterOnly, SM_PIE.modernOnly, SM_PIE.mixed, SM_PIE.noSocial],
+          backgroundColor: ["#1a8cd8", "#0085ff", "#7856ff", "#cccccc"],
+          borderWidth: 1,
+          borderColor: "#fff"
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { position: "bottom", labels: { font: { size: 11 }, boxWidth: 14 } },
+          tooltip: {
+            callbacks: {
+              label: function (ctx) {
+                var v = ctx.raw;
+                var p = total ? (v / total * 100).toFixed(1) + "%" : "—";
+                return " " + v.toLocaleString() + " pages (" + p + ")";
+              }
+            }
+          }
+        }
+      }
+    });
+  }
+
+  function _loadChartJs() {
+    if (window.Chart) { _buildPie(); return; }
+    var s = document.createElement("script");
+    s.src = "https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js";
+    s.crossOrigin = "anonymous";
+    s.onload = _buildPie;
+    s.onerror = function () {
+      var c = document.getElementById("sm-tier-pie-container");
+      if (c) {
+        c.innerHTML =
+          '<p style="font-size:0.85em;color:#666;text-align:center;">' +
+          "Chart unavailable. See the platform table for data." +
+          "</p>";
+      }
+    };
+    document.head.appendChild(s);
+  }
+
+  // ── Helpers ──────────────────────────────────────────────────────────────
+  function _findCountryTable() {
+    var found = null;
+    document.querySelectorAll("table").forEach(function (t) {
+      t.querySelectorAll("th").forEach(function (th) {
+        if (th.textContent.trim() === "Non-X Score") found = t;
+      });
+    });
+    return found;
+  }
+
+  // ── Init ─────────────────────────────────────────────────────────────────
+  function _init() {
+    addTooltips();
+    addSortable();
+    _loadChartJs();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", _init);
+  } else {
+    _init();
+  }
+})();
+</script>
 
 <!-- SOCIAL_MEDIA_STATS_END -->
 
