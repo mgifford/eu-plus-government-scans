@@ -3,9 +3,27 @@ title: Social Media Scanning
 layout: page
 ---
 
-# Social Media Scanning
-
 <!-- SOCIAL_MEDIA_STATS_START -->
+
+<div id="sm-tier-pie-container" style="float:right;margin:0 0 1rem 1.5rem;width:260px;max-width:45%;">
+<svg role="img" aria-labelledby="pie-title pie-desc" viewBox="0 0 240 314" width="240" height="314" xmlns="http://www.w3.org/2000/svg">
+<title id="pie-title">Social media tier distribution</title>
+<desc id="pie-desc">Pie chart: social media tier distribution. Twitter/X only: 7,728 (18.7%), Modern only: 1,313 (3.2%), Mixed: 1,340 (3.2%), No Social: 30,852 (74.8%)</desc>
+<path d="M 120,110 L 120.000,20.000 A 90,90 0 0,1 203.132,75.518 Z" fill="#1a8cd8" stroke="#fff" stroke-width="1"><title>Twitter/X only: 7,728 (18.7%)</title></path>
+<path d="M 120,110 L 203.132,75.518 A 90,90 0 0,1 208.327,92.728 Z" fill="#0085ff" stroke="#fff" stroke-width="1"><title>Modern only: 1,313 (3.2%)</title></path>
+<path d="M 120,110 L 208.327,92.728 A 90,90 0 0,1 209.994,110.998 Z" fill="#7856ff" stroke="#fff" stroke-width="1"><title>Mixed: 1,340 (3.2%)</title></path>
+<path d="M 120,110 L 209.994,110.998 A 90,90 0 1,1 120.000,20.000 Z" fill="#cccccc" stroke="#fff" stroke-width="1"><title>No Social: 30,852 (74.8%)</title></path>
+<rect x="20" y="216" width="14" height="14" fill="#1a8cd8"/>
+<text x="40" y="227" font-size="11" font-family="sans-serif" fill="#333">Twitter/X only (18.7%)</text>
+<rect x="20" y="238" width="14" height="14" fill="#0085ff"/>
+<text x="40" y="249" font-size="11" font-family="sans-serif" fill="#333">Modern only (3.2%)</text>
+<rect x="20" y="260" width="14" height="14" fill="#7856ff"/>
+<text x="40" y="271" font-size="11" font-family="sans-serif" fill="#333">Mixed (3.2%)</text>
+<rect x="20" y="282" width="14" height="14" fill="#cccccc"/>
+<text x="40" y="293" font-size="11" font-family="sans-serif" fill="#333">No Social (74.8%)</text>
+</svg>
+<p style="text-align:center;font-size:0.75em;margin:0.3rem 0 0;color:#555;font-style:italic;">Social media tier distribution</p>
+</div>
 
 _Stats as of 2026-03-30 12:46 UTC — last scan: 2026-03-30_
 
@@ -13,11 +31,6 @@ _Stats as of 2026-03-30 12:46 UTC — last scan: 2026-03-30_
 
 **44,901** of **82,714** available pages scanned (**54.3%** coverage)
 **41,223** of **44,901** scanned pages were reachable (**91.8%**)
-
-<div id="sm-tier-pie-container" style="float:right;margin:0 0 1rem 1.5rem;width:260px;max-width:45%;">
-<canvas id="sm-tier-pie" width="240" height="240" role="img" aria-label="Pie chart: social media tier distribution across 44,901 scanned pages. Twitter/X only: 7,728 (17.2%), Modern only: 1,313 (2.9%), Mixed: 1,340 (3.0%), No Social: 30,852 (68.7%)"></canvas>
-<p style="text-align:center;font-size:0.75em;margin:0.3rem 0 0;color:#555;font-style:italic;">Social media tier distribution</p>
-</div>
 
 | Platform | Pages with link | % of scanned | % of reachable |
 |----------|----------------|:------------:|:--------------:|
