@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-03-30 01:01 UTC",
+  "generated_at": "2026-03-30 01:14 UTC",
   "summary": {
-    "total_batches": 77,
-    "total_scanned": 39814,
-    "total_reachable": 37075,
+    "total_batches": 80,
+    "total_scanned": 42743,
+    "total_reachable": 39271,
     "total_available": 82714,
-    "twitter_pages": 7113,
-    "x_pages": 1417,
+    "twitter_pages": 7353,
+    "x_pages": 1449,
     "bluesky_pages": 377,
-    "mastodon_pages": 2260,
+    "mastodon_pages": 2348,
     "first_scan": "2026-03-22T00:36:33.003106+00:00",
-    "last_scan": "2026-03-29T04:52:21.757944+00:00"
+    "last_scan": "2026-03-30T01:13:57.826874+00:00"
   },
   "by_country": [
     {
@@ -386,6 +386,57 @@
       "has_any_modern": 434,
       "first_scan": "2026-03-28T12:12:41.498832+00:00",
       "last_scan": "2026-03-29T04:52:21.757944+00:00"
+    },
+    {
+      "country_code": "PORTUGAL",
+      "total_scanned": 2383,
+      "reachable": 1942,
+      "twitter_pages": 212,
+      "x_pages": 32,
+      "bluesky_pages": 0,
+      "mastodon_pages": 82,
+      "twitter_only": 215,
+      "modern_only": 53,
+      "mixed": 29,
+      "no_social": 1645,
+      "has_any_legacy": 244,
+      "has_any_modern": 82,
+      "first_scan": "2026-03-29T16:06:49.938895+00:00",
+      "last_scan": "2026-03-29T17:55:48.992370+00:00"
+    },
+    {
+      "country_code": "REPUBLIC_OF_CYPRUS",
+      "total_scanned": 24,
+      "reachable": 24,
+      "twitter_pages": 5,
+      "x_pages": 0,
+      "bluesky_pages": 0,
+      "mastodon_pages": 0,
+      "twitter_only": 5,
+      "modern_only": 0,
+      "mixed": 0,
+      "no_social": 19,
+      "has_any_legacy": 5,
+      "has_any_modern": 0,
+      "first_scan": "2026-03-29T23:25:11.016669+00:00",
+      "last_scan": "2026-03-29T23:25:58.209751+00:00"
+    },
+    {
+      "country_code": "ROMANIA",
+      "total_scanned": 522,
+      "reachable": 230,
+      "twitter_pages": 23,
+      "x_pages": 0,
+      "bluesky_pages": 0,
+      "mastodon_pages": 6,
+      "twitter_only": 20,
+      "modern_only": 3,
+      "mixed": 3,
+      "no_social": 204,
+      "has_any_legacy": 23,
+      "has_any_modern": 6,
+      "first_scan": "2026-03-29T23:26:02.362840+00:00",
+      "last_scan": "2026-03-30T01:13:57.826874+00:00"
     }
   ]
 }

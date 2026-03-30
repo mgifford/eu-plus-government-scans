@@ -7,24 +7,24 @@ layout: page
 
 <!-- SOCIAL_MEDIA_STATS_START -->
 
-_Stats as of 2026-03-30 01:01 UTC — last scan: 2026-03-29_
+_Stats as of 2026-03-30 01:14 UTC — last scan: 2026-03-30_
 
-**77** scan batches run
+**80** scan batches run
 
-**39,814** of **82,714** available pages scanned (**48.1%** coverage)
-**37,075** of **39,814** scanned pages were reachable (**93.1%**)
+**42,743** of **82,714** available pages scanned (**51.7%** coverage)
+**39,271** of **42,743** scanned pages were reachable (**91.9%**)
 
 <div id="sm-tier-pie-container" style="float:right;margin:0 0 1rem 1.5rem;width:260px;max-width:45%;">
-<canvas id="sm-tier-pie" width="240" height="240" role="img" aria-label="Pie chart: social media tier distribution across 39,814 scanned pages. Twitter/X only: 6,995 (17.6%), Modern only: 1,226 (3.1%), Mixed: 1,241 (3.1%), No Social: 27,623 (69.4%)"></canvas>
+<canvas id="sm-tier-pie" width="240" height="240" role="img" aria-label="Pie chart: social media tier distribution across 42,743 scanned pages. Twitter/X only: 7,235 (16.9%), Modern only: 1,282 (3.0%), Mixed: 1,273 (3.0%), No Social: 29,491 (69.0%)"></canvas>
 <p style="text-align:center;font-size:0.75em;margin:0.3rem 0 0;color:#555;font-style:italic;">Social media tier distribution</p>
 </div>
 
 | Platform | Pages with link | % of scanned | % of reachable |
 |----------|----------------|:------------:|:--------------:|
-| 🐦 Twitter | **7,113** | 17.9% | 19.2% |
-| ✖ X | **1,417** | 3.6% | 3.8% |
+| 🐦 Twitter | **7,353** | 17.2% | 18.7% |
+| ✖ X | **1,449** | 3.4% | 3.7% |
 | 🦋 Bluesky | **377** | 0.9% | 1.0% |
-| 🐘 Mastodon / Fediverse | **2,260** | 5.7% | 6.1% |
+| 🐘 Mastodon / Fediverse | **2,348** | 5.5% | 6.0% |
 
 <div style="clear:both;"></div>
 
@@ -60,7 +60,10 @@ Tier columns classify each page by its overall social media presence. Platform c
 | NETHERLANDS | 937 | 937 | 908 | 162 | 54 | 49 | 643 | 147 | 74 | 43 | 77 | Mar 2026 |
 | NORWAY | 239 | 239 | 233 | 20 | 2 | 0 | 211 | 10 | 13 | 0 | 2 | Mar 2026 |
 | POLAND | 6,244 | 14,938 | 5,688 | 447 | 255 | 179 | 4,807 | 519 | 135 | 1 | 433 | Mar 2026 |
-| **Total** | **39,814** | **82,714** | **37,075** | **6,995** | **1,226** | **1,241** | **27,623** | **7,113** | **1,417** | **377** | **2,260** | — |
+| PORTUGAL | 2,383 | 3,503 | 1,942 | 215 | 53 | 29 | 1,645 | 212 | 32 | 0 | 82 | Mar 2026 |
+| REPUBLIC_OF_CYPRUS | 24 | 24 | 24 | 5 | 0 | 0 | 19 | 5 | 0 | 0 | 0 | Mar 2026 |
+| ROMANIA | 522 | 799 | 230 | 20 | 3 | 3 | 204 | 23 | 0 | 0 | 6 | Mar 2026 |
+| **Total** | **42,743** | **82,714** | **39,271** | **7,235** | **1,282** | **1,273** | **29,491** | **7,353** | **1,449** | **377** | **2,348** | — |
 
 <style>
 /* Pie chart container — floats right of the platform overview table */
@@ -119,7 +122,7 @@ Tier columns classify each page by its overall social media presence. Platform c
   "use strict";
 
   // Tier data embedded by generate_social_media_report.py
-  var SM_PIE = {"twitterOnly":6995,"modernOnly":1226,"mixed":1241,"noSocial":27623};
+  var SM_PIE = {"twitterOnly":7235,"modernOnly":1282,"mixed":1273,"noSocial":29491};
 
   // ── Accessible tooltips ──────────────────────────────────────────────────
   // Numbers < 25 in the country table get a WCAG 2.2 AA tooltip
