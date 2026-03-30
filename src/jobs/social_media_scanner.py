@@ -122,8 +122,9 @@ class SocialMediaScannerJob:
                     INSERT INTO url_social_media_results
                     (url, country_code, scan_id, is_reachable,
                      twitter_links, x_links, bluesky_links, mastodon_links,
+                     facebook_links, linkedin_links,
                      social_tier, error_message, scanned_at)
-                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                     """,
                     (
                         result.url,
@@ -134,6 +135,8 @@ class SocialMediaScannerJob:
                         json.dumps(result.x_links),
                         json.dumps(result.bluesky_links),
                         json.dumps(result.mastodon_links),
+                        json.dumps(result.facebook_links),
+                        json.dumps(result.linkedin_links),
                         result.social_tier,
                         result.error_message,
                         result.scanned_at,
@@ -170,6 +173,8 @@ class SocialMediaScannerJob:
                         "x": result.x_links,
                         "bluesky": result.bluesky_links,
                         "mastodon": result.mastodon_links,
+                        "facebook": result.facebook_links,
+                        "linkedin": result.linkedin_links,
                     }
 
         return toon_data
@@ -248,6 +253,8 @@ class SocialMediaScannerJob:
                 "x_count": 0,
                 "bluesky_count": 0,
                 "mastodon_count": 0,
+                "facebook_count": 0,
+                "linkedin_count": 0,
                 "tier_counts": {},
                 "output_path": str(
                     toon_path.parent / f"{toon_path.stem}_social{toon_path.suffix}"
@@ -296,6 +303,8 @@ class SocialMediaScannerJob:
         x_count = sum(1 for r in scan_results.values() if r.x_links)
         bluesky_count = sum(1 for r in scan_results.values() if r.bluesky_links)
         mastodon_count = sum(1 for r in scan_results.values() if r.mastodon_links)
+        facebook_count = sum(1 for r in scan_results.values() if r.facebook_links)
+        linkedin_count = sum(1 for r in scan_results.values() if r.linkedin_links)
 
         tier_counts: Dict[str, int] = {}
         for r in scan_results.values():
@@ -314,6 +323,8 @@ class SocialMediaScannerJob:
             "x_count": x_count,
             "bluesky_count": bluesky_count,
             "mastodon_count": mastodon_count,
+            "facebook_count": facebook_count,
+            "linkedin_count": linkedin_count,
             "tier_counts": tier_counts,
             "output_path": str(output_path),
         }
@@ -326,6 +337,8 @@ class SocialMediaScannerJob:
         print(f"  Unreachable: {unreachable_count}")
         print(f"  Twitter:     {twitter_count}")
         print(f"  X:           {x_count}")
+        print(f"  Facebook:    {facebook_count}")
+        print(f"  LinkedIn:    {linkedin_count}")
         print(f"  Bluesky:     {bluesky_count}")
         print(f"  Mastodon:    {mastodon_count}")
         for tier, count in sorted(tier_counts.items()):
