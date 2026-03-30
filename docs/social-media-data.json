@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-03-30 12:46 UTC",
+  "generated_at": "2026-03-30 15:02 UTC",
   "summary": {
-    "total_batches": 83,
-    "total_scanned": 44901,
-    "total_reachable": 41223,
+    "total_batches": 85,
+    "total_scanned": 48252,
+    "total_reachable": 44476,
     "total_available": 82714,
-    "twitter_pages": 7817,
-    "x_pages": 1574,
-    "bluesky_pages": 389,
-    "mastodon_pages": 2437,
+    "twitter_pages": 8097,
+    "x_pages": 1783,
+    "bluesky_pages": 451,
+    "mastodon_pages": 2542,
     "first_scan": "2026-03-22T00:36:33.003106+00:00",
-    "last_scan": "2026-03-30T04:53:40.777224+00:00"
+    "last_scan": "2026-03-30T13:12:18.911979+00:00"
   },
   "by_country": [
     {
@@ -488,6 +488,40 @@
       "has_any_modern": 77,
       "first_scan": "2026-03-30T03:30:16.840716+00:00",
       "last_scan": "2026-03-30T04:53:40.777224+00:00"
+    },
+    {
+      "country_code": "SWEDEN",
+      "total_scanned": 1558,
+      "reachable": 1487,
+      "twitter_pages": 92,
+      "x_pages": 24,
+      "bluesky_pages": 11,
+      "mastodon_pages": 25,
+      "twitter_only": 89,
+      "modern_only": 14,
+      "mixed": 22,
+      "no_social": 1362,
+      "has_any_legacy": 111,
+      "has_any_modern": 36,
+      "first_scan": "2026-03-30T11:23:20.728651+00:00",
+      "last_scan": "2026-03-30T12:21:00.122078+00:00"
+    },
+    {
+      "country_code": "SWITZERLAND",
+      "total_scanned": 1793,
+      "reachable": 1766,
+      "twitter_pages": 188,
+      "x_pages": 185,
+      "bluesky_pages": 51,
+      "mastodon_pages": 80,
+      "twitter_only": 288,
+      "modern_only": 48,
+      "mixed": 73,
+      "no_social": 1357,
+      "has_any_legacy": 361,
+      "has_any_modern": 121,
+      "first_scan": "2026-03-30T12:21:01.843740+00:00",
+      "last_scan": "2026-03-30T13:12:18.911979+00:00"
     }
   ]
 }
