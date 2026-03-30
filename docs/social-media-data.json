@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-03-30 03:04 UTC",
+  "generated_at": "2026-03-30 04:54 UTC",
   "summary": {
-    "total_batches": 80,
-    "total_scanned": 42743,
-    "total_reachable": 39271,
+    "total_batches": 83,
+    "total_scanned": 44901,
+    "total_reachable": 41223,
     "total_available": 82714,
-    "twitter_pages": 7353,
-    "x_pages": 1449,
-    "bluesky_pages": 377,
-    "mastodon_pages": 2348,
+    "twitter_pages": 7817,
+    "x_pages": 1574,
+    "bluesky_pages": 389,
+    "mastodon_pages": 2437,
     "first_scan": "2026-03-22T00:36:33.003106+00:00",
-    "last_scan": "2026-03-30T01:13:57.826874+00:00"
+    "last_scan": "2026-03-30T04:53:40.777224+00:00"
   },
   "by_country": [
     {
@@ -437,6 +437,57 @@
       "has_any_modern": 6,
       "first_scan": "2026-03-29T23:26:02.362840+00:00",
       "last_scan": "2026-03-30T01:13:57.826874+00:00"
+    },
+    {
+      "country_code": "SLOVAKIA",
+      "total_scanned": 434,
+      "reachable": 411,
+      "twitter_pages": 14,
+      "x_pages": 9,
+      "bluesky_pages": 0,
+      "mastodon_pages": 12,
+      "twitter_only": 19,
+      "modern_only": 9,
+      "mixed": 3,
+      "no_social": 380,
+      "has_any_legacy": 22,
+      "has_any_modern": 12,
+      "first_scan": "2026-03-30T03:04:41.069781+00:00",
+      "last_scan": "2026-03-30T03:22:08.426100+00:00"
+    },
+    {
+      "country_code": "SLOVENIA",
+      "total_scanned": 200,
+      "reachable": 187,
+      "twitter_pages": 18,
+      "x_pages": 6,
+      "bluesky_pages": 1,
+      "mastodon_pages": 9,
+      "twitter_only": 22,
+      "modern_only": 7,
+      "mixed": 2,
+      "no_social": 156,
+      "has_any_legacy": 24,
+      "has_any_modern": 9,
+      "first_scan": "2026-03-30T03:22:10.450965+00:00",
+      "last_scan": "2026-03-30T03:30:14.714019+00:00"
+    },
+    {
+      "country_code": "SPAIN",
+      "total_scanned": 1524,
+      "reachable": 1354,
+      "twitter_pages": 432,
+      "x_pages": 110,
+      "bluesky_pages": 11,
+      "mastodon_pages": 68,
+      "twitter_only": 452,
+      "modern_only": 15,
+      "mixed": 62,
+      "no_social": 825,
+      "has_any_legacy": 514,
+      "has_any_modern": 77,
+      "first_scan": "2026-03-30T03:30:16.840716+00:00",
+      "last_scan": "2026-03-30T04:53:40.777224+00:00"
     }
   ]
 }
