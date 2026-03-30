@@ -5,34 +5,34 @@ layout: page
 
 <!-- SOCIAL_MEDIA_STATS_START -->
 
+<div id="sm-tier-pie-container" style="float:right;margin:0 0 1rem 1.5rem;width:260px;max-width:45%;">
+<svg role="img" aria-labelledby="pie-title pie-desc" viewBox="0 0 240 314" width="240" height="314" xmlns="http://www.w3.org/2000/svg">
+<title id="pie-title">Social media tier distribution</title>
+<desc id="pie-desc">Pie chart: social media tier distribution across 48,252 scanned pages. Legacy only: 8,105 (16.8%), Modern only: 1,375 (2.8%), Mixed: 1,435 (3.0%), No Social: 33,571 (69.6%)</desc>
+<path d="M 120,110 L 120.000,20.000 A 90,90 0 0,1 201.955,72.805 Z" fill="#1a8cd8" stroke="#fff" stroke-width="1"><title>Twitter/X only: 8,105 (18.2%)</title></path>
+<path d="M 120,110 L 201.955,72.805 A 90,90 0 0,1 207.592,89.320 Z" fill="#0085ff" stroke="#fff" stroke-width="1"><title>Modern only: 1,375 (3.1%)</title></path>
+<path d="M 120,110 L 207.592,89.320 A 90,90 0 0,1 209.962,107.375 Z" fill="#7856ff" stroke="#fff" stroke-width="1"><title>Mixed: 1,435 (3.2%)</title></path>
+<path d="M 120,110 L 209.962,107.375 A 90,90 0 1,1 120.000,20.000 Z" fill="#cccccc" stroke="#fff" stroke-width="1"><title>No Social: 33,571 (75.5%)</title></path>
+<rect x="20" y="216" width="14" height="14" fill="#1a8cd8"/>
+<text x="40" y="227" font-size="11" font-family="sans-serif" fill="#333">Twitter/X only (18.2%)</text>
+<rect x="20" y="238" width="14" height="14" fill="#0085ff"/>
+<text x="40" y="249" font-size="11" font-family="sans-serif" fill="#333">Modern only (3.1%)</text>
+<rect x="20" y="260" width="14" height="14" fill="#7856ff"/>
+<text x="40" y="271" font-size="11" font-family="sans-serif" fill="#333">Mixed (3.2%)</text>
+<rect x="20" y="282" width="14" height="14" fill="#cccccc"/>
+<text x="40" y="293" font-size="11" font-family="sans-serif" fill="#333">No Social (75.5%)</text>
+</svg>
+<p style="text-align:center;font-size:0.75em;margin:0.3rem 0 0;color:#555;font-style:italic;">Social media tier distribution</p>
+</div>
 
-_Stats as of 2026-03-30 12:46 UTC — last scan: 2026-03-30_
+_Stats as of 2026-03-30 16:50 UTC — last scan: 2026-03-30_
 
 **85** scan batches run
 
 **48,252** of **82,714** available pages scanned (**58.3%** coverage)
 **44,476** of **48,252** scanned pages were reachable (**92.2%**)
 
-<div id="sm-tier-pie-container" style="float:right;margin:0 0 1rem 1.5rem;width:260px;max-width:45%;">
-<svg role="img" aria-labelledby="pie-title pie-desc" viewBox="0 0 240 314" width="240" height="314" xmlns="http://www.w3.org/2000/svg">
-<title id="pie-title">Social media tier distribution</title>
-<desc id="pie-desc">Pie chart: social media tier distribution. Twitter/X only: 7,728 (18.7%), Modern only: 1,313 (3.2%), Mixed: 1,340 (3.2%), No Social: 30,852 (74.8%)</desc>
-<path d="M 120,110 L 120.000,20.000 A 90,90 0 0,1 203.132,75.518 Z" fill="#1a8cd8" stroke="#fff" stroke-width="1"><title>Twitter/X only: 7,728 (18.7%)</title></path>
-<path d="M 120,110 L 203.132,75.518 A 90,90 0 0,1 208.327,92.728 Z" fill="#0085ff" stroke="#fff" stroke-width="1"><title>Modern only: 1,313 (3.2%)</title></path>
-<path d="M 120,110 L 208.327,92.728 A 90,90 0 0,1 209.994,110.998 Z" fill="#7856ff" stroke="#fff" stroke-width="1"><title>Mixed: 1,340 (3.2%)</title></path>
-<path d="M 120,110 L 209.994,110.998 A 90,90 0 1,1 120.000,20.000 Z" fill="#cccccc" stroke="#fff" stroke-width="1"><title>No Social: 30,852 (74.8%)</title></path>
-<rect x="20" y="216" width="14" height="14" fill="#1a8cd8"/>
-<text x="40" y="227" font-size="11" font-family="sans-serif" fill="#333">Twitter/X only (18.7%)</text>
-<rect x="20" y="238" width="14" height="14" fill="#0085ff"/>
-<text x="40" y="249" font-size="11" font-family="sans-serif" fill="#333">Modern only (3.2%)</text>
-<rect x="20" y="260" width="14" height="14" fill="#7856ff"/>
-<text x="40" y="271" font-size="11" font-family="sans-serif" fill="#333">Mixed (3.2%)</text>
-<rect x="20" y="282" width="14" height="14" fill="#cccccc"/>
-<text x="40" y="293" font-size="11" font-family="sans-serif" fill="#333">No Social (74.8%)</text>
-</svg>
-<p style="text-align:center;font-size:0.75em;margin:0.3rem 0 0;color:#555;font-style:italic;">Social media tier distribution</p>
-</div>
-
+**Legacy social media** (older, centralised platforms):
 
 | Platform | Pages with link | % of scanned | % of reachable |
 |----------|----------------|:------------:|:--------------:|
@@ -93,7 +93,7 @@ _Stats as of 2026-03-30 12:46 UTC — last scan: 2026-03-30_
 | **Total** | **48,252** | **82,714** | **44,476** | **33,571** | **8,105** | **8,097** | **1,783** | **0** | **0** | **1,375** | **1,435** | **451** | **2,542** | — |
 
 <style>
-/* Pie chart container — floats right of the platform overview table */
+/* Pie chart container — floats right so stats text wraps to its left */
 #sm-tier-pie-container { float: right; margin: 0 0 1rem 1.5rem; width: 260px; max-width: 45%; }
 
 /* Accessible tooltip trigger */
@@ -148,9 +148,6 @@ _Stats as of 2026-03-30 12:46 UTC — last scan: 2026-03-30_
 (function () {
   "use strict";
 
-  // Tier data embedded by generate_social_media_report.py
-  var SM_PIE = {"twitterOnly":8105,"modernOnly":1375,"mixed":1435,"noSocial":33571};
-
   // ── Accessible tooltips ──────────────────────────────────────────────────
   // Numbers < 25 in the country table get a WCAG 2.2 AA tooltip
   // (role="tooltip" + aria-describedby, visible on hover and keyboard focus).
@@ -165,7 +162,7 @@ _Stats as of 2026-03-30 12:46 UTC — last scan: 2026-03-30_
     var numericCols = [];
     headers.forEach(function (th, i) {
       var t = th.textContent.trim();
-      if (t !== "Country" && t !== "Scan Period") {
+      if (t !== "Country" && t !== "Scan Period" && t !== "Non-X Score") {
         numericCols.push(i);
       }
     });
@@ -264,72 +261,72 @@ _Stats as of 2026-03-30 12:46 UTC — last scan: 2026-03-30_
     });
     rows.forEach(function (r) { tbody.appendChild(r); });
     if (pinned) tbody.appendChild(pinned);
-  }
+  }}
 
   // ── Pie chart ────────────────────────────────────────────────────────────
-  function _buildPie() {
+  function _buildPie() {{
     var canvas = document.getElementById("sm-tier-pie");
     if (!canvas || !window.Chart) return;
     var total = SM_PIE.twitterOnly + SM_PIE.modernOnly + SM_PIE.mixed + SM_PIE.noSocial;
-    function pct(n) { return total ? (n / total * 100).toFixed(1) + "%" : "—"; }
-    new Chart(canvas, {
+    function pct(n) {{ return total ? (n / total * 100).toFixed(1) + "%" : "—"; }}
+    new Chart(canvas, {{
       type: "pie",
-      data: {
+      data: {{
         labels: [
           "Legacy only (" + pct(SM_PIE.twitterOnly) + ")",
           "Modern only (" + pct(SM_PIE.modernOnly) + ")",
           "Mixed (" + pct(SM_PIE.mixed) + ")",
           "No Social (" + pct(SM_PIE.noSocial) + ")"
         ],
-        datasets: [{
+        datasets: [{{
           data: [SM_PIE.twitterOnly, SM_PIE.modernOnly, SM_PIE.mixed, SM_PIE.noSocial],
           backgroundColor: ["#1a8cd8", "#0085ff", "#7856ff", "#cccccc"],
           borderWidth: 1,
           borderColor: "#fff"
-        }]
-      },
-      options: {
+        }}]
+      }},
+      options: {{
         responsive: true,
-        plugins: {
-          legend: { position: "bottom", labels: { font: { size: 11 }, boxWidth: 14 } },
-          tooltip: {
-            callbacks: {
-              label: function (ctx) {
+        plugins: {{
+          legend: {{ position: "bottom", labels: {{ font: {{ size: 11 }}, boxWidth: 14 }} }},
+          tooltip: {{
+            callbacks: {{
+              label: function (ctx) {{
                 var v = ctx.raw;
                 var p = total ? (v / total * 100).toFixed(1) + "%" : "—";
                 return " " + v.toLocaleString() + " pages (" + p + ")";
-              }
-            }
-          }
-        }
-      }
-    });
-  }
+              }}
+            }}
+          }}
+        }}
+      }}
+    }});
+  }}
 
-  function _loadChartJs() {
-    if (window.Chart) { _buildPie(); return; }
+  function _loadChartJs() {{
+    if (window.Chart) {{ _buildPie(); return; }}
     var s = document.createElement("script");
-    s.src = "https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js";
+    s.src = "{_CHART_JS_CDN}";
     s.crossOrigin = "anonymous";
     s.onload = _buildPie;
-    s.onerror = function () {
+    s.onerror = function () {{
       var c = document.getElementById("sm-tier-pie-container");
-      if (c) {
+      if (c) {{
         c.innerHTML =
           '<p style="font-size:0.85em;color:#666;text-align:center;">' +
           "Chart unavailable. See the platform table for data." +
           "</p>";
-      }
-    };
+      }}
+    }};
     document.head.appendChild(s);
-  }
+  }}
 
   // ── Helpers ──────────────────────────────────────────────────────────────
   function _findCountryTable() {
     var found = null;
     document.querySelectorAll("table").forEach(function (t) {
       t.querySelectorAll("th").forEach(function (th) {
-        if (th.textContent.trim() === "Scan Period") found = t;
+        if (th.textContent.trim() === "Non-X Score") found = t;
       });
     });
     return found;
@@ -339,7 +336,6 @@ _Stats as of 2026-03-30 12:46 UTC — last scan: 2026-03-30_
   function _init() {
     addTooltips();
     addSortable();
-    _loadChartJs();
   }
 
   if (document.readyState === "loading") {
