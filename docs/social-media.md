@@ -7,24 +7,24 @@ layout: page
 
 <!-- SOCIAL_MEDIA_STATS_START -->
 
-_Stats as of 2026-03-30 12:46 UTC — last scan: 2026-03-30_
+_Stats as of 2026-03-30 13:12 UTC — last scan: 2026-03-30_
 
-**83** scan batches run
+**85** scan batches run
 
-**44,901** of **82,714** available pages scanned (**54.3%** coverage)
-**41,223** of **44,901** scanned pages were reachable (**91.8%**)
+**48,252** of **82,714** available pages scanned (**58.3%** coverage)
+**44,476** of **48,252** scanned pages were reachable (**92.2%**)
 
 <div id="sm-tier-pie-container" style="float:right;margin:0 0 1rem 1.5rem;width:260px;max-width:45%;">
-<canvas id="sm-tier-pie" width="240" height="240" role="img" aria-label="Pie chart: social media tier distribution across 44,901 scanned pages. Twitter/X only: 7,728 (17.2%), Modern only: 1,313 (2.9%), Mixed: 1,340 (3.0%), No Social: 30,852 (68.7%)"></canvas>
+<canvas id="sm-tier-pie" width="240" height="240" role="img" aria-label="Pie chart: social media tier distribution across 48,252 scanned pages. Twitter/X only: 8,105 (16.8%), Modern only: 1,375 (2.8%), Mixed: 1,435 (3.0%), No Social: 33,571 (69.6%)"></canvas>
 <p style="text-align:center;font-size:0.75em;margin:0.3rem 0 0;color:#555;font-style:italic;">Social media tier distribution</p>
 </div>
 
 | Platform | Pages with link | % of scanned | % of reachable |
 |----------|----------------|:------------:|:--------------:|
-| 🐦 Twitter | **7,817** | 17.4% | 19.0% |
-| ✖ X | **1,574** | 3.5% | 3.8% |
-| 🦋 Bluesky | **389** | 0.9% | 0.9% |
-| 🐘 Mastodon / Fediverse | **2,437** | 5.4% | 5.9% |
+| 🐦 Twitter | **8,097** | 16.8% | 18.2% |
+| ✖ X | **1,783** | 3.7% | 4.0% |
+| 🦋 Bluesky | **451** | 0.9% | 1.0% |
+| 🐘 Mastodon / Fediverse | **2,542** | 5.3% | 5.7% |
 
 <div style="clear:both;"></div>
 
@@ -66,7 +66,9 @@ Tier columns classify each page by its overall social media presence. Platform c
 | SLOVAKIA | 434 | 434 | 411 | 19 | 9 | 3 | 380 | 14 | 9 | 0 | 12 | Mar 2026 |
 | SLOVENIA | 200 | 200 | 187 | 22 | 7 | 2 | 156 | 18 | 6 | 1 | 9 | Mar 2026 |
 | SPAIN | 1,524 | 6,069 | 1,354 | 452 | 15 | 62 | 825 | 432 | 110 | 11 | 68 | Mar 2026 |
-| **Total** | **44,901** | **82,714** | **41,223** | **7,728** | **1,313** | **1,340** | **30,852** | **7,817** | **1,574** | **389** | **2,437** | — |
+| SWEDEN | 1,558 | 1,558 | 1,487 | 89 | 14 | 22 | 1,362 | 92 | 24 | 11 | 25 | Mar 2026 |
+| SWITZERLAND | 1,793 | 2,117 | 1,766 | 288 | 48 | 73 | 1,357 | 188 | 185 | 51 | 80 | Mar 2026 |
+| **Total** | **48,252** | **82,714** | **44,476** | **8,105** | **1,375** | **1,435** | **33,571** | **8,097** | **1,783** | **451** | **2,542** | — |
 
 <style>
 /* Pie chart container — floats right of the platform overview table */
@@ -125,7 +127,7 @@ Tier columns classify each page by its overall social media presence. Platform c
   "use strict";
 
   // Tier data embedded by generate_social_media_report.py
-  var SM_PIE = {"twitterOnly":7728,"modernOnly":1313,"mixed":1340,"noSocial":30852};
+  var SM_PIE = {"twitterOnly":8105,"modernOnly":1375,"mixed":1435,"noSocial":33571};
 
   // ── Accessible tooltips ──────────────────────────────────────────────────
   // Numbers < 25 in the country table get a WCAG 2.2 AA tooltip
