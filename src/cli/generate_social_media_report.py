@@ -76,6 +76,8 @@ def _query_summary(conn: sqlite3.Connection) -> dict:
             COUNT(DISTINCT CASE WHEN x_links       != '[]' THEN url ELSE NULL END)     AS x_pages,
             COUNT(DISTINCT CASE WHEN bluesky_links  != '[]' THEN url ELSE NULL END)    AS bluesky_pages,
             COUNT(DISTINCT CASE WHEN mastodon_links != '[]' THEN url ELSE NULL END)    AS mastodon_pages,
+            COUNT(DISTINCT CASE WHEN facebook_links != '[]' THEN url ELSE NULL END)  AS facebook_pages,
+            COUNT(DISTINCT CASE WHEN linkedin_links != '[]' THEN url ELSE NULL END)  AS linkedin_pages,
             MIN(scanned_at)                                                             AS first_scan,
             MAX(scanned_at)                                                             AS last_scan
         FROM url_social_media_results
@@ -104,11 +106,15 @@ def _query_by_country(conn: sqlite3.Connection) -> list[dict]:
             COUNT(DISTINCT CASE WHEN x_links       != '[]'          THEN url ELSE NULL END)                        AS x_pages,
             COUNT(DISTINCT CASE WHEN bluesky_links  != '[]'         THEN url ELSE NULL END)                        AS bluesky_pages,
             COUNT(DISTINCT CASE WHEN mastodon_links != '[]'         THEN url ELSE NULL END)                        AS mastodon_pages,
+            COUNT(DISTINCT CASE WHEN facebook_links != '[]'         THEN url ELSE NULL END)                        AS facebook_pages,
+            COUNT(DISTINCT CASE WHEN linkedin_links != '[]'         THEN url ELSE NULL END)                        AS linkedin_pages,
             COUNT(DISTINCT CASE WHEN social_tier = 'twitter_only'   THEN url ELSE NULL END)                        AS twitter_only,
             COUNT(DISTINCT CASE WHEN social_tier = 'modern_only'    THEN url ELSE NULL END)                        AS modern_only,
             COUNT(DISTINCT CASE WHEN social_tier = 'mixed'          THEN url ELSE NULL END)                        AS mixed,
             COUNT(DISTINCT CASE WHEN social_tier = 'no_social'      THEN url ELSE NULL END)                        AS no_social,
-            COUNT(DISTINCT CASE WHEN (twitter_links != '[]' OR x_links != '[]')             THEN url ELSE NULL END) AS has_any_legacy,
+            COUNT(DISTINCT CASE WHEN (twitter_links != '[]' OR x_links != '[]'
+                                      OR facebook_links != '[]'
+                                      OR linkedin_links != '[]')     THEN url ELSE NULL END)                        AS has_any_legacy,
             COUNT(DISTINCT CASE WHEN (bluesky_links != '[]' OR mastodon_links != '[]')      THEN url ELSE NULL END) AS has_any_modern,
             MIN(scanned_at)                                                                                         AS first_scan,
             MAX(scanned_at)                                                                                         AS last_scan
@@ -245,6 +251,8 @@ def _build_stats_block(
     x_pages = summary.get("x_pages") or 0
     bluesky = summary.get("bluesky_pages") or 0
     mastodon = summary.get("mastodon_pages") or 0
+    facebook = summary.get("facebook_pages") or 0
+    linkedin = summary.get("linkedin_pages") or 0
     last_scan = (summary.get("last_scan") or "")[:10] or "—"
 
     def _pct(num: int, denom: int) -> str:
@@ -265,15 +273,6 @@ def _build_stats_block(
             return f if f == l else f"{f} – {l}"
         return f or l or "—"
 
-    def _non_x_score(row: dict) -> str:
-        """Non-X Score: % of reachable pages with modern (non-Twitter/X) social media."""
-        r = row.get("reachable", 0) or 0
-        m = row.get("modern_only", 0) or 0
-        mx = row.get("mixed", 0) or 0
-        if not r:
-            return "—"
-        return f"{(m + mx) / r * 100:.1f}%"
-
     lines = [
         _STATS_MARKER_START,
         "",
@@ -291,12 +290,12 @@ def _build_stats_block(
         tot_modern_only = sum(r.get("modern_only", 0) for r in by_country)
         tot_mixed = sum(r.get("mixed", 0) for r in by_country)
         tot_no_social = sum(r.get("no_social", 0) for r in by_country)
-        tot_has_legacy = sum(r.get("has_any_legacy", 0) for r in by_country)
-        tot_has_modern = sum(r.get("has_any_modern", 0) for r in by_country)
         tot_tw = sum(r.get("twitter_pages", 0) for r in by_country)
         tot_x = sum(r.get("x_pages", 0) for r in by_country)
         tot_bsky = sum(r.get("bluesky_pages", 0) for r in by_country)
         tot_mast = sum(r.get("mastodon_pages", 0) for r in by_country)
+        tot_fb = sum(r.get("facebook_pages", 0) for r in by_country)
+        tot_li = sum(r.get("linkedin_pages", 0) for r in by_country)
 
         # SVG pie chart: floated right so the stats text wraps to its left.
         # SVG is preferred over <canvas> because SVG elements live in the DOM
@@ -305,11 +304,11 @@ def _build_stats_block(
         # percentages in <desc> are consistent with the segment <title> elements.
         pie_total = tot_twitter_only + tot_modern_only + tot_mixed + tot_no_social
         pie_aria = (
-            f"Pie chart: social media tier distribution. "
-            f"Twitter/X only: {tot_twitter_only:,} ({_pct(tot_twitter_only, pie_total)}), "
-            f"Modern only: {tot_modern_only:,} ({_pct(tot_modern_only, pie_total)}), "
-            f"Mixed: {tot_mixed:,} ({_pct(tot_mixed, pie_total)}), "
-            f"No Social: {tot_no_social:,} ({_pct(tot_no_social, pie_total)})"
+            f"Pie chart: social media tier distribution across {tot_scanned:,} scanned pages. "
+            f"Legacy only: {tot_twitter_only:,} ({_pct(tot_twitter_only, tot_scanned)}), "
+            f"Modern only: {tot_modern_only:,} ({_pct(tot_modern_only, tot_scanned)}), "
+            f"Mixed: {tot_mixed:,} ({_pct(tot_mixed, tot_scanned)}), "
+            f"No Social: {tot_no_social:,} ({_pct(tot_no_social, tot_scanned)})"
         )
         lines += [
             '<div id="sm-tier-pie-container" style="float:right;margin:0 0 1rem 1.5rem;'
@@ -349,10 +348,19 @@ def _build_stats_block(
 
     # Platform overview table
     lines += [
+        "**Legacy social media** (older, centralised platforms):",
+        "",
         "| Platform | Pages with link | % of scanned | % of reachable |",
         "|----------|----------------|:------------:|:--------------:|",
         f"| 🐦 Twitter | **{twitter:,}** | {_pct(twitter, scanned)} | {_pct(twitter, reachable)} |",
         f"| ✖ X | **{x_pages:,}** | {_pct(x_pages, scanned)} | {_pct(x_pages, reachable)} |",
+        f"| 👍 Facebook | **{facebook:,}** | {_pct(facebook, scanned)} | {_pct(facebook, reachable)} |",
+        f"| 💼 LinkedIn | **{linkedin:,}** | {_pct(linkedin, scanned)} | {_pct(linkedin, reachable)} |",
+        "",
+        "**Modern / open social media** (decentralised or open platforms):",
+        "",
+        "| Platform | Pages with link | % of scanned | % of reachable |",
+        "|----------|----------------|:------------:|:--------------:|",
         f"| 🦋 Bluesky | **{bluesky:,}** | {_pct(bluesky, scanned)} | {_pct(bluesky, reachable)} |",
         f"| 🐘 Mastodon / Fediverse | **{mastodon:,}** | {_pct(mastodon, scanned)} | {_pct(mastodon, reachable)} |",
     ]
@@ -370,6 +378,13 @@ def _build_stats_block(
     ]
 
     # Per-country breakdown table
+    # Column order: Country | Scanned | Available | Reachable | No Social |
+    #   Legacy-only | Twitter | X | Facebook | LinkedIn |
+    #   Modern | Mixed | Bluesky | Mastodon | Scan Period
+    #
+    # "Available" = total pages in the TOON seed file (all government pages tracked).
+    # "Reachable" = pages that returned a valid HTTP response when scanned
+    #               (not 404 / 500 / timeout).
     if by_country:
         lines += [
             "",
@@ -377,12 +392,17 @@ def _build_stats_block(
             "",
             "## Social Media Scan by Country",
             "",
-            "Tier columns classify each page by its overall social media presence. "
-            "Platform columns count pages with at least one link to that platform — "
+            "**Available**: all government pages tracked in our domain list. "
+            "**Reachable**: of those scanned, pages that returned a valid HTTP response "
+            "(not an error or timeout). "
+            "Tier columns classify each page by its overall social media presence; "
+            "platform columns count pages with at least one link to that platform — "
             "a page may appear in more than one platform column.",
             "",
-            "| Country | Scanned | Available | Reachable | Twitter-only | Modern | Mixed | No Social | Twitter | X | Bluesky | Mastodon | Scan Period |",
-            "|---------|---------|-----------|-----------|-------------|--------|-------|-----------|---------|---|---------|----------|-------------|",
+            "| Country | Scanned | Available | Reachable | No Social | Legacy-only |"
+            " Twitter | X | Facebook | LinkedIn | Modern | Mixed | Bluesky | Mastodon | Scan Period |",
+            "|---------|---------|-----------|-----------|-----------|-------------|"
+            "---------|---|----------|----------|--------|-------|---------|----------|-------------|",
         ]
         for row in by_country:
             cc = row["country_code"]
@@ -391,32 +411,26 @@ def _build_stats_block(
             period = _scan_period(row.get("first_scan"), row.get("last_scan"))
             lines.append(
                 f"| {cc} | {row['total_scanned']:,} | {avail_str} | {row['reachable']:,} | "
-                f"{row.get('twitter_only', 0):,} | {row.get('modern_only', 0):,} | "
-                f"{row.get('mixed', 0):,} | {row.get('no_social', 0):,} | "
+                f"{row.get('no_social', 0):,} | {row.get('twitter_only', 0):,} | "
                 f"{row.get('twitter_pages', 0):,} | {row.get('x_pages', 0):,} | "
+                f"{row.get('facebook_pages', 0):,} | {row.get('linkedin_pages', 0):,} | "
+                f"{row.get('modern_only', 0):,} | {row.get('mixed', 0):,} | "
                 f"{row.get('bluesky_pages', 0):,} | {row.get('mastodon_pages', 0):,} | "
                 f"{period} |"
             )
 
         # totals row
         tot_avail_str = f"**{tot_avail:,}**" if tot_avail else "—"
-        tot_reachable = sum(r["reachable"] for r in by_country)
-        tot_twitter_only = sum(r.get("twitter_only", 0) for r in by_country)
-        tot_modern_only = sum(r.get("modern_only", 0) for r in by_country)
-        tot_mixed = sum(r.get("mixed", 0) for r in by_country)
-        tot_no_social = sum(r.get("no_social", 0) for r in by_country)
-        tot_tw = sum(r.get("twitter_pages", 0) for r in by_country)
-        tot_x = sum(r.get("x_pages", 0) for r in by_country)
-        tot_bsky = sum(r.get("bluesky_pages", 0) for r in by_country)
-        tot_mast = sum(r.get("mastodon_pages", 0) for r in by_country)
         lines.append(
             f"| **Total** | **{tot_scanned:,}** | {tot_avail_str} | **{tot_reachable:,}** | "
-            f"**{tot_twitter_only:,}** | **{tot_modern_only:,}** | "
-            f"**{tot_mixed:,}** | **{tot_no_social:,}** | "
-            f"**{tot_tw:,}** | **{tot_x:,}** | **{tot_bsky:,}** | **{tot_mast:,}** | — |"
+            f"**{tot_no_social:,}** | **{tot_twitter_only:,}** | "
+            f"**{tot_tw:,}** | **{tot_x:,}** | **{tot_fb:,}** | **{tot_li:,}** | "
+            f"**{tot_modern_only:,}** | **{tot_mixed:,}** | "
+            f"**{tot_bsky:,}** | **{tot_mast:,}** | — |"
         )
 
         lines += _build_interactive_block()
+
 
     lines += [
         "",
@@ -503,7 +517,7 @@ def _build_interactive_block() -> list[str]:
     if (!countryTable) return;
 
     var headers = Array.from(countryTable.querySelectorAll("thead th"));
-    // Numeric columns are all except Country (0), Non-X Score, and Scan Period
+    // Numeric columns are all except Country (0) and Scan Period
     var numericCols = [];
     headers.forEach(function (th, i) {
       var t = th.textContent.trim();
@@ -606,7 +620,65 @@ def _build_interactive_block() -> list[str]:
     });
     rows.forEach(function (r) { tbody.appendChild(r); });
     if (pinned) tbody.appendChild(pinned);
-  }
+  }}
+
+  // ── Pie chart ────────────────────────────────────────────────────────────
+  function _buildPie() {{
+    var canvas = document.getElementById("sm-tier-pie");
+    if (!canvas || !window.Chart) return;
+    var total = SM_PIE.twitterOnly + SM_PIE.modernOnly + SM_PIE.mixed + SM_PIE.noSocial;
+    function pct(n) {{ return total ? (n / total * 100).toFixed(1) + "%" : "—"; }}
+    new Chart(canvas, {{
+      type: "pie",
+      data: {{
+        labels: [
+          "Legacy only (" + pct(SM_PIE.twitterOnly) + ")",
+          "Modern only (" + pct(SM_PIE.modernOnly) + ")",
+          "Mixed (" + pct(SM_PIE.mixed) + ")",
+          "No Social (" + pct(SM_PIE.noSocial) + ")"
+        ],
+        datasets: [{{
+          data: [SM_PIE.twitterOnly, SM_PIE.modernOnly, SM_PIE.mixed, SM_PIE.noSocial],
+          backgroundColor: ["#1a8cd8", "#0085ff", "#7856ff", "#cccccc"],
+          borderWidth: 1,
+          borderColor: "#fff"
+        }}]
+      }},
+      options: {{
+        responsive: true,
+        plugins: {{
+          legend: {{ position: "bottom", labels: {{ font: {{ size: 11 }}, boxWidth: 14 }} }},
+          tooltip: {{
+            callbacks: {{
+              label: function (ctx) {{
+                var v = ctx.raw;
+                var p = total ? (v / total * 100).toFixed(1) + "%" : "—";
+                return " " + v.toLocaleString() + " pages (" + p + ")";
+              }}
+            }}
+          }}
+        }}
+      }}
+    }});
+  }}
+
+  function _loadChartJs() {{
+    if (window.Chart) {{ _buildPie(); return; }}
+    var s = document.createElement("script");
+    s.src = "{_CHART_JS_CDN}";
+    s.crossOrigin = "anonymous";
+    s.onload = _buildPie;
+    s.onerror = function () {{
+      var c = document.getElementById("sm-tier-pie-container");
+      if (c) {{
+        c.innerHTML =
+          '<p style="font-size:0.85em;color:#666;text-align:center;">' +
+          "Chart unavailable. See the platform table for data." +
+          "</p>";
+      }}
+    }};
+    document.head.appendChild(s);
+  }}
 
   // ── Helpers ──────────────────────────────────────────────────────────────
   function _findCountryTable() {
@@ -690,6 +762,8 @@ def generate_social_media_report(
             "x_pages": summary.get("x_pages") or 0,
             "bluesky_pages": summary.get("bluesky_pages") or 0,
             "mastodon_pages": summary.get("mastodon_pages") or 0,
+            "facebook_pages": summary.get("facebook_pages") or 0,
+            "linkedin_pages": summary.get("linkedin_pages") or 0,
             "first_scan": summary.get("first_scan"),
             "last_scan": summary.get("last_scan"),
         },

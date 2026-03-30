@@ -73,6 +73,8 @@ class UrlSocialMediaResult:
     x_links: str = "[]"         # JSON list of x.com hrefs
     bluesky_links: str = "[]"   # JSON list of bsky.app / bsky.social hrefs
     mastodon_links: str = "[]"  # JSON list of detected Mastodon hrefs
+    facebook_links: str = "[]"  # JSON list of facebook.com hrefs
+    linkedin_links: str = "[]"  # JSON list of linkedin.com hrefs
     social_tier: str = "no_social"  # "unreachable"|"no_social"|"twitter_only"|"modern_only"|"mixed"
     error_message: str | None = None
     scanned_at: str | None = None
@@ -197,6 +199,8 @@ CREATE TABLE IF NOT EXISTS url_social_media_results (
     x_links TEXT NOT NULL DEFAULT '[]',
     bluesky_links TEXT NOT NULL DEFAULT '[]',
     mastodon_links TEXT NOT NULL DEFAULT '[]',
+    facebook_links TEXT NOT NULL DEFAULT '[]',
+    linkedin_links TEXT NOT NULL DEFAULT '[]',
     social_tier TEXT NOT NULL DEFAULT 'no_social',
     error_message TEXT,
     scanned_at TEXT,
@@ -302,6 +306,23 @@ def initialize_schema(db_url: str) -> Path:
     conn = sqlite3.connect(db_path)
     try:
         conn.executescript(SCHEMA_SQL)
+        # Migration: add facebook_links and linkedin_links to existing databases
+        # that were created before these columns were added.
+        # The column names below come from a hardcoded tuple and are never
+        # derived from user input, so string interpolation is safe here.
+        _NEW_SOCIAL_COLUMNS = (("facebook_links", "[]"), ("linkedin_links", "[]"))
+        for col, default in _NEW_SOCIAL_COLUMNS:
+            existing = {
+                row[1]
+                for row in conn.execute(
+                    "PRAGMA table_info(url_social_media_results)"
+                ).fetchall()
+            }
+            if col not in existing:
+                conn.execute(
+                    f"ALTER TABLE url_social_media_results "
+                    f"ADD COLUMN {col} TEXT NOT NULL DEFAULT '{default}'"
+                )
         conn.commit()
     finally:
         conn.close()

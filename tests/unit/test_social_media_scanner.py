@@ -36,6 +36,8 @@ def test_extract_twitter_links():
     assert links["x"] == []
     assert links["bluesky"] == []
     assert links["mastodon"] == []
+    assert links["facebook"] == []
+    assert links["linkedin"] == []
 
 
 def test_extract_x_links():
@@ -48,6 +50,36 @@ def test_extract_x_links():
     links = _extract_social_links(html, "https://example.gov/")
     assert links["x"] == ["https://x.com/govuk"]
     assert links["twitter"] == []
+    assert links["facebook"] == []
+    assert links["linkedin"] == []
+
+
+def test_extract_facebook_links():
+    """Detect links to facebook.com and fb.com."""
+    html = """
+    <html><body>
+      <a href="https://www.facebook.com/govagency">Facebook</a>
+      <a href="https://fb.com/shortlink">FB short</a>
+    </body></html>
+    """
+    links = _extract_social_links(html, "https://example.gov/")
+    assert "https://www.facebook.com/govagency" in links["facebook"]
+    assert "https://fb.com/shortlink" in links["facebook"]
+    assert links["twitter"] == []
+    assert links["linkedin"] == []
+
+
+def test_extract_linkedin_links():
+    """Detect links to linkedin.com."""
+    html = """
+    <html><body>
+      <a href="https://www.linkedin.com/company/govagency">LinkedIn</a>
+    </body></html>
+    """
+    links = _extract_social_links(html, "https://example.gov/")
+    assert "https://www.linkedin.com/company/govagency" in links["linkedin"]
+    assert links["twitter"] == []
+    assert links["facebook"] == []
 
 
 def test_extract_bluesky_links():
@@ -104,6 +136,8 @@ def test_extract_no_social_links():
     assert links["x"] == []
     assert links["bluesky"] == []
     assert links["mastodon"] == []
+    assert links["facebook"] == []
+    assert links["linkedin"] == []
 
 
 def test_extract_deduplicates_links():
@@ -148,6 +182,34 @@ def test_classify_tier_x_counts_as_legacy():
         x_links=["https://x.com/gov"],
     )
     assert _classify_tier(result) == "twitter_only"
+
+
+def test_classify_tier_facebook_counts_as_legacy():
+    result = SocialMediaScanResult(
+        url="https://legacy.gov/",
+        is_reachable=True,
+        facebook_links=["https://www.facebook.com/govpage"],
+    )
+    assert _classify_tier(result) == "twitter_only"
+
+
+def test_classify_tier_linkedin_counts_as_legacy():
+    result = SocialMediaScanResult(
+        url="https://legacy.gov/",
+        is_reachable=True,
+        linkedin_links=["https://www.linkedin.com/company/govagency"],
+    )
+    assert _classify_tier(result) == "twitter_only"
+
+
+def test_classify_tier_facebook_plus_modern_is_mixed():
+    result = SocialMediaScanResult(
+        url="https://both.gov/",
+        is_reachable=True,
+        facebook_links=["https://www.facebook.com/govpage"],
+        bluesky_links=["https://bsky.app/profile/gov"],
+    )
+    assert _classify_tier(result) == "mixed"
 
 
 def test_classify_tier_modern_only():
@@ -195,6 +257,8 @@ async def test_scan_url_success_no_social():
     assert result.x_links == []
     assert result.bluesky_links == []
     assert result.mastodon_links == []
+    assert result.facebook_links == []
+    assert result.linkedin_links == []
     assert result.social_tier == "no_social"
     assert result.error_message is None
     assert result.scanned_at is not None
