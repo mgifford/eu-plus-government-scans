@@ -15,14 +15,23 @@ _Stats as of 2026-03-30 13:12 UTC — last scan: 2026-03-30_
 **44,476** of **48,252** scanned pages were reachable (**92.2%**)
 
 <div id="sm-tier-pie-container" style="float:right;margin:0 0 1rem 1.5rem;width:260px;max-width:45%;">
-<canvas id="sm-tier-pie" width="240" height="240" role="img" aria-label="Pie chart: social media tier distribution across 48,252 scanned pages. Twitter/X only: 8,105 (16.8%), Modern only: 1,375 (2.8%), Mixed: 1,435 (3.0%), No Social: 33,571 (69.6%)"></canvas>
+<canvas id="sm-tier-pie" width="240" height="240" role="img" aria-label="Pie chart: social media tier distribution across 48,252 scanned pages. Legacy only: 8,105 (16.8%), Modern only: 1,375 (2.8%), Mixed: 1,435 (3.0%), No Social: 33,571 (69.6%)"></canvas>
 <p style="text-align:center;font-size:0.75em;margin:0.3rem 0 0;color:#555;font-style:italic;">Social media tier distribution</p>
 </div>
+
+**Legacy social media** (older, centralised platforms):
 
 | Platform | Pages with link | % of scanned | % of reachable |
 |----------|----------------|:------------:|:--------------:|
 | 🐦 Twitter | **8,097** | 16.8% | 18.2% |
 | ✖ X | **1,783** | 3.7% | 4.0% |
+| 👍 Facebook | **0** | 0.0% | 0.0% |
+| 💼 LinkedIn | **0** | 0.0% | 0.0% |
+
+**Modern / open social media** (decentralised or open platforms):
+
+| Platform | Pages with link | % of scanned | % of reachable |
+|----------|----------------|:------------:|:--------------:|
 | 🦋 Bluesky | **451** | 0.9% | 1.0% |
 | 🐘 Mastodon / Fediverse | **2,542** | 5.3% | 5.7% |
 
@@ -34,41 +43,41 @@ _Stats as of 2026-03-30 13:12 UTC — last scan: 2026-03-30_
 
 ## Social Media Scan by Country
 
-Tier columns classify each page by its overall social media presence. Platform columns count pages with at least one link to that platform — a page may appear in more than one platform column.
+**Available**: all government pages tracked in our domain list. **Reachable**: of those scanned, pages that returned a valid HTTP response (not an error or timeout). Tier columns classify each page by its overall social media presence; platform columns count pages with at least one link to that platform — a page may appear in more than one platform column.
 
-| Country | Scanned | Available | Reachable | Twitter-only | Modern | Mixed | No Social | Twitter | X | Bluesky | Mastodon | Scan Period |
-|---------|---------|-----------|-----------|-------------|--------|-------|-----------|---------|---|---------|----------|-------------|
-| AUSTRIA | 821 | 821 | 787 | 30 | 25 | 22 | 710 | 35 | 18 | 16 | 42 | Mar 2026 |
-| BELGIUM | 1,309 | 1,309 | 1,230 | 206 | 58 | 47 | 929 | 183 | 74 | 27 | 90 | Mar 2026 |
-| BULGARIA | 291 | 291 | 269 | 21 | 11 | 2 | 235 | 18 | 5 | 0 | 13 | Mar 2026 |
-| CROATIA | 233 | 233 | 232 | 31 | 11 | 3 | 187 | 34 | 0 | 0 | 14 | Mar 2026 |
-| CZECHIA | 843 | 843 | 803 | 124 | 21 | 15 | 643 | 131 | 10 | 0 | 36 | Mar 2026 |
-| DENMARK | 1,521 | 1,521 | 1,503 | 177 | 10 | 17 | 1,299 | 176 | 21 | 17 | 13 | Mar 2026 |
-| ESTONIA | 396 | 396 | 384 | 65 | 22 | 4 | 293 | 67 | 2 | 0 | 26 | Mar 2026 |
-| FINLAND | 180 | 180 | 172 | 38 | 2 | 0 | 132 | 26 | 13 | 2 | 0 | Mar 2026 |
-| FRANCE | 10,007 | 10,007 | 9,373 | 1,935 | 212 | 361 | 6,865 | 1,799 | 629 | 124 | 495 | Mar 2026 |
-| GERMANY | 6,555 | 6,555 | 6,443 | 1,083 | 301 | 191 | 4,868 | 1,171 | 174 | 118 | 441 | Mar 2026 |
-| GREECE | 1,748 | 1,748 | 1,604 | 229 | 40 | 54 | 1,281 | 232 | 56 | 0 | 94 | Mar 2026 |
-| HUNGARY | 390 | 390 | 366 | 24 | 20 | 5 | 317 | 29 | 0 | 0 | 25 | Mar 2026 |
-| ICELAND | 139 | 139 | 135 | 5 | 8 | 6 | 116 | 8 | 5 | 0 | 14 | Mar 2026 |
-| IRELAND | 522 | 522 | 494 | 149 | 25 | 29 | 291 | 153 | 31 | 18 | 42 | Mar 2026 |
-| ITALY | 5,338 | 5,338 | 4,729 | 1,891 | 81 | 168 | 2,589 | 1,991 | 90 | 0 | 249 | Mar 2026 |
-| LATVIA | 802 | 802 | 769 | 262 | 23 | 60 | 424 | 279 | 47 | 0 | 83 | Mar 2026 |
-| LITHUANIA | 120 | 120 | 108 | 5 | 4 | 0 | 99 | 5 | 0 | 0 | 4 | Mar 2026 |
-| LUXEMBOURG | 571 | 571 | 250 | 31 | 21 | 15 | 183 | 43 | 3 | 11 | 33 | Mar 2026 |
-| MALTA | 608 | 608 | 595 | 60 | 20 | 14 | 501 | 57 | 17 | 0 | 34 | Mar 2026 |
-| NETHERLANDS | 937 | 937 | 908 | 162 | 54 | 49 | 643 | 147 | 74 | 43 | 77 | Mar 2026 |
-| NORWAY | 239 | 239 | 233 | 20 | 2 | 0 | 211 | 10 | 13 | 0 | 2 | Mar 2026 |
-| POLAND | 6,244 | 14,938 | 5,688 | 447 | 255 | 179 | 4,807 | 519 | 135 | 1 | 433 | Mar 2026 |
-| PORTUGAL | 2,383 | 3,503 | 1,942 | 215 | 53 | 29 | 1,645 | 212 | 32 | 0 | 82 | Mar 2026 |
-| REPUBLIC_OF_CYPRUS | 24 | 24 | 24 | 5 | 0 | 0 | 19 | 5 | 0 | 0 | 0 | Mar 2026 |
-| ROMANIA | 522 | 799 | 230 | 20 | 3 | 3 | 204 | 23 | 0 | 0 | 6 | Mar 2026 |
-| SLOVAKIA | 434 | 434 | 411 | 19 | 9 | 3 | 380 | 14 | 9 | 0 | 12 | Mar 2026 |
-| SLOVENIA | 200 | 200 | 187 | 22 | 7 | 2 | 156 | 18 | 6 | 1 | 9 | Mar 2026 |
-| SPAIN | 1,524 | 6,069 | 1,354 | 452 | 15 | 62 | 825 | 432 | 110 | 11 | 68 | Mar 2026 |
-| SWEDEN | 1,558 | 1,558 | 1,487 | 89 | 14 | 22 | 1,362 | 92 | 24 | 11 | 25 | Mar 2026 |
-| SWITZERLAND | 1,793 | 2,117 | 1,766 | 288 | 48 | 73 | 1,357 | 188 | 185 | 51 | 80 | Mar 2026 |
-| **Total** | **48,252** | **82,714** | **44,476** | **8,105** | **1,375** | **1,435** | **33,571** | **8,097** | **1,783** | **451** | **2,542** | — |
+| Country | Scanned | Available | Reachable | No Social | Legacy-only | Twitter | X | Facebook | LinkedIn | Modern | Mixed | Bluesky | Mastodon | Scan Period |
+|---------|---------|-----------|-----------|-----------|-------------|---------|---|----------|----------|--------|-------|---------|----------|-------------|
+| AUSTRIA | 821 | 821 | 787 | 710 | 30 | 35 | 18 | 0 | 0 | 25 | 22 | 16 | 42 | Mar 2026 |
+| BELGIUM | 1,309 | 1,309 | 1,230 | 929 | 206 | 183 | 74 | 0 | 0 | 58 | 47 | 27 | 90 | Mar 2026 |
+| BULGARIA | 291 | 291 | 269 | 235 | 21 | 18 | 5 | 0 | 0 | 11 | 2 | 0 | 13 | Mar 2026 |
+| CROATIA | 233 | 233 | 232 | 187 | 31 | 34 | 0 | 0 | 0 | 11 | 3 | 0 | 14 | Mar 2026 |
+| CZECHIA | 843 | 843 | 803 | 643 | 124 | 131 | 10 | 0 | 0 | 21 | 15 | 0 | 36 | Mar 2026 |
+| DENMARK | 1,521 | 1,521 | 1,503 | 1,299 | 177 | 176 | 21 | 0 | 0 | 10 | 17 | 17 | 13 | Mar 2026 |
+| ESTONIA | 396 | 396 | 384 | 293 | 65 | 67 | 2 | 0 | 0 | 22 | 4 | 0 | 26 | Mar 2026 |
+| FINLAND | 180 | 180 | 172 | 132 | 38 | 26 | 13 | 0 | 0 | 2 | 0 | 2 | 0 | Mar 2026 |
+| FRANCE | 10,007 | 10,007 | 9,373 | 6,865 | 1,935 | 1,799 | 629 | 0 | 0 | 212 | 361 | 124 | 495 | Mar 2026 |
+| GERMANY | 6,555 | 6,555 | 6,443 | 4,868 | 1,083 | 1,171 | 174 | 0 | 0 | 301 | 191 | 118 | 441 | Mar 2026 |
+| GREECE | 1,748 | 1,748 | 1,604 | 1,281 | 229 | 232 | 56 | 0 | 0 | 40 | 54 | 0 | 94 | Mar 2026 |
+| HUNGARY | 390 | 390 | 366 | 317 | 24 | 29 | 0 | 0 | 0 | 20 | 5 | 0 | 25 | Mar 2026 |
+| ICELAND | 139 | 139 | 135 | 116 | 5 | 8 | 5 | 0 | 0 | 8 | 6 | 0 | 14 | Mar 2026 |
+| IRELAND | 522 | 522 | 494 | 291 | 149 | 153 | 31 | 0 | 0 | 25 | 29 | 18 | 42 | Mar 2026 |
+| ITALY | 5,338 | 5,338 | 4,729 | 2,589 | 1,891 | 1,991 | 90 | 0 | 0 | 81 | 168 | 0 | 249 | Mar 2026 |
+| LATVIA | 802 | 802 | 769 | 424 | 262 | 279 | 47 | 0 | 0 | 23 | 60 | 0 | 83 | Mar 2026 |
+| LITHUANIA | 120 | 120 | 108 | 99 | 5 | 5 | 0 | 0 | 0 | 4 | 0 | 0 | 4 | Mar 2026 |
+| LUXEMBOURG | 571 | 571 | 250 | 183 | 31 | 43 | 3 | 0 | 0 | 21 | 15 | 11 | 33 | Mar 2026 |
+| MALTA | 608 | 608 | 595 | 501 | 60 | 57 | 17 | 0 | 0 | 20 | 14 | 0 | 34 | Mar 2026 |
+| NETHERLANDS | 937 | 937 | 908 | 643 | 162 | 147 | 74 | 0 | 0 | 54 | 49 | 43 | 77 | Mar 2026 |
+| NORWAY | 239 | 239 | 233 | 211 | 20 | 10 | 13 | 0 | 0 | 2 | 0 | 0 | 2 | Mar 2026 |
+| POLAND | 6,244 | 14,938 | 5,688 | 4,807 | 447 | 519 | 135 | 0 | 0 | 255 | 179 | 1 | 433 | Mar 2026 |
+| PORTUGAL | 2,383 | 3,503 | 1,942 | 1,645 | 215 | 212 | 32 | 0 | 0 | 53 | 29 | 0 | 82 | Mar 2026 |
+| REPUBLIC_OF_CYPRUS | 24 | 24 | 24 | 19 | 5 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Mar 2026 |
+| ROMANIA | 522 | 799 | 230 | 204 | 20 | 23 | 0 | 0 | 0 | 3 | 3 | 0 | 6 | Mar 2026 |
+| SLOVAKIA | 434 | 434 | 411 | 380 | 19 | 14 | 9 | 0 | 0 | 9 | 3 | 0 | 12 | Mar 2026 |
+| SLOVENIA | 200 | 200 | 187 | 156 | 22 | 18 | 6 | 0 | 0 | 7 | 2 | 1 | 9 | Mar 2026 |
+| SPAIN | 1,524 | 6,069 | 1,354 | 825 | 452 | 432 | 110 | 0 | 0 | 15 | 62 | 11 | 68 | Mar 2026 |
+| SWEDEN | 1,558 | 1,558 | 1,487 | 1,362 | 89 | 92 | 24 | 0 | 0 | 14 | 22 | 11 | 25 | Mar 2026 |
+| SWITZERLAND | 1,793 | 2,117 | 1,766 | 1,357 | 288 | 188 | 185 | 0 | 0 | 48 | 73 | 51 | 80 | Mar 2026 |
+| **Total** | **48,252** | **82,714** | **44,476** | **33,571** | **8,105** | **8,097** | **1,783** | **0** | **0** | **1,375** | **1,435** | **451** | **2,542** | — |
 
 <style>
 /* Pie chart container — floats right of the platform overview table */
@@ -139,11 +148,11 @@ Tier columns classify each page by its overall social media presence. Platform c
     if (!countryTable) return;
 
     var headers = Array.from(countryTable.querySelectorAll("thead th"));
-    // Numeric columns are all except Country (0), Non-X Score, and Scan Period
+    // Numeric columns are all except Country (0) and Scan Period
     var numericCols = [];
     headers.forEach(function (th, i) {
       var t = th.textContent.trim();
-      if (t !== "Country" && t !== "Scan Period" && t !== "Non-X Score") {
+      if (t !== "Country" && t !== "Scan Period") {
         numericCols.push(i);
       }
     });
@@ -254,7 +263,7 @@ Tier columns classify each page by its overall social media presence. Platform c
       type: "pie",
       data: {
         labels: [
-          "Twitter/X only (" + pct(SM_PIE.twitterOnly) + ")",
+          "Legacy only (" + pct(SM_PIE.twitterOnly) + ")",
           "Modern only (" + pct(SM_PIE.modernOnly) + ")",
           "Mixed (" + pct(SM_PIE.mixed) + ")",
           "No Social (" + pct(SM_PIE.noSocial) + ")"
@@ -307,7 +316,7 @@ Tier columns classify each page by its overall social media presence. Platform c
     var found = null;
     document.querySelectorAll("table").forEach(function (t) {
       t.querySelectorAll("th").forEach(function (th) {
-        if (th.textContent.trim() === "Non-X Score") found = t;
+        if (th.textContent.trim() === "Scan Period") found = t;
       });
     });
     return found;
@@ -346,10 +355,19 @@ overloading government servers.
 
 ## Platforms Tracked
 
+### Legacy Social Media (older, centralised platforms)
+
 | Platform | Domains detected |
 |----------|-----------------|
 | **Twitter** | `twitter.com` |
 | **X** | `x.com` |
+| **Facebook** | `facebook.com`, `fb.com` |
+| **LinkedIn** | `linkedin.com` |
+
+### Modern / Open Social Media (decentralised or open platforms)
+
+| Platform | Domains detected |
+|----------|-----------------|
 | **Bluesky** | `bsky.app`, `bsky.social` |
 | **Mastodon / Fediverse** | 40+ known instances + `/@username` pattern detection |
 
@@ -363,9 +381,9 @@ Each scanned page is assigned one of five tiers:
 |------|---------|
 | `unreachable` | Page could not be fetched (network error, timeout, 4xx/5xx) |
 | `no_social` | Page is reachable but contains no recognised social media links |
-| `twitter_only` | Page links only to Twitter / X (legacy platform) |
+| `twitter_only` | Page links only to legacy platforms (Twitter, X, Facebook, or LinkedIn) |
 | `modern_only` | Page links only to Bluesky or Mastodon (modern / open platforms) |
-| `mixed` | Page links to Twitter/X **and** at least one modern platform |
+| `mixed` | Page links to at least one legacy platform **and** at least one modern platform |
 
 ---
 
@@ -434,6 +452,8 @@ Each page entry gains a `social_media` field:
     "social_tier": "mixed",
     "twitter_links": ["https://twitter.com/example_gov"],
     "x_links": [],
+    "facebook_links": [],
+    "linkedin_links": [],
     "bluesky_links": ["https://bsky.app/profile/example.bsky.social"],
     "mastodon_links": []
   }
@@ -450,6 +470,8 @@ Each page entry gains a `social_media` field:
 | `is_reachable` | INTEGER | 1 = reachable, 0 = not reachable |
 | `twitter_links` | TEXT | JSON list of `twitter.com` hrefs found |
 | `x_links` | TEXT | JSON list of `x.com` hrefs found |
+| `facebook_links` | TEXT | JSON list of `facebook.com` / `fb.com` hrefs found |
+| `linkedin_links` | TEXT | JSON list of `linkedin.com` hrefs found |
 | `bluesky_links` | TEXT | JSON list of Bluesky hrefs found |
 | `mastodon_links` | TEXT | JSON list of Mastodon hrefs found |
 | `social_tier` | TEXT | Tier classification (see above) |

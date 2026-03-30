@@ -1,6 +1,7 @@
 """Social media link scanner for government websites.
 
-Fetches a page and detects links to Twitter/X, Bluesky, and Mastodon.
+Fetches a page and detects links to Twitter/X, Bluesky, Mastodon,
+Facebook, and LinkedIn.
 """
 
 from __future__ import annotations
@@ -77,6 +78,14 @@ BLUESKY_HOSTS: frozenset[str] = frozenset(
     {"bsky.app", "www.bsky.app", "bsky.social", "www.bsky.social"}
 )
 
+# Hostnames that belong to Facebook (legacy platform)
+FACEBOOK_HOSTS: frozenset[str] = frozenset(
+    {"facebook.com", "www.facebook.com", "fb.com", "www.fb.com"}
+)
+
+# Hostnames that belong to LinkedIn (legacy platform)
+LINKEDIN_HOSTS: frozenset[str] = frozenset({"linkedin.com", "www.linkedin.com"})
+
 # Regex for detecting @user@domain patterns in page text (Mastodon handles)
 _MASTODON_HANDLE_RE = re.compile(r"@[\w.-]+@([\w.-]+\.\w{2,})")
 
@@ -91,12 +100,14 @@ class SocialMediaScanResult:
     x_links: List[str] = field(default_factory=list)
     bluesky_links: List[str] = field(default_factory=list)
     mastodon_links: List[str] = field(default_factory=list)
+    facebook_links: List[str] = field(default_factory=list)
+    linkedin_links: List[str] = field(default_factory=list)
     # Tier classification:
     #   "unreachable"   – page could not be fetched
     #   "no_social"     – reachable, no social media links found
-    #   "twitter_only"  – only Twitter/X links
+    #   "twitter_only"  – only legacy social media (Twitter, X, Facebook, LinkedIn)
     #   "modern_only"   – only Bluesky / Mastodon links
-    #   "mixed"         – Twitter/X plus at least one modern platform
+    #   "mixed"         – legacy plus at least one modern platform
     social_tier: str = "no_social"
     error_message: str | None = None
     scanned_at: str | None = None
@@ -107,7 +118,10 @@ def _classify_tier(result: SocialMediaScanResult) -> str:
     if not result.is_reachable:
         return "unreachable"
 
-    has_legacy = bool(result.twitter_links or result.x_links)
+    has_legacy = bool(
+        result.twitter_links or result.x_links
+        or result.facebook_links or result.linkedin_links
+    )
     has_modern = bool(result.bluesky_links or result.mastodon_links)
 
     if has_legacy and has_modern:
@@ -121,10 +135,11 @@ def _classify_tier(result: SocialMediaScanResult) -> str:
 
 def _extract_social_links(html: str, base_url: str) -> dict:
     """
-    Parse HTML and extract links to Twitter/X, Bluesky and Mastodon.
+    Parse HTML and extract links to Twitter/X, Bluesky, Mastodon,
+    Facebook, and LinkedIn.
 
-    Returns a dict with keys: twitter, x, bluesky, mastodon — each a list of
-    href strings found in <a> elements.
+    Returns a dict with keys: twitter, x, bluesky, mastodon, facebook,
+    linkedin — each a list of href strings found in <a> elements.
     """
     soup = BeautifulSoup(html, "html.parser")
 
@@ -132,6 +147,8 @@ def _extract_social_links(html: str, base_url: str) -> dict:
     x_links: list[str] = []
     bluesky: list[str] = []
     mastodon: list[str] = []
+    facebook: list[str] = []
+    linkedin: list[str] = []
 
     for tag in soup.find_all("a", href=True):
         href = tag["href"].strip()
@@ -150,6 +167,10 @@ def _extract_social_links(html: str, base_url: str) -> dict:
             bluesky.append(href)
         elif netloc in KNOWN_MASTODON_HOSTS:
             mastodon.append(href)
+        elif netloc in FACEBOOK_HOSTS:
+            facebook.append(href)
+        elif netloc in LINKEDIN_HOSTS:
+            linkedin.append(href)
         elif netloc and _looks_like_mastodon_profile(href, parsed):
             mastodon.append(href)
 
@@ -164,6 +185,8 @@ def _extract_social_links(html: str, base_url: str) -> dict:
         "x": _deduplicate(x_links),
         "bluesky": _deduplicate(bluesky),
         "mastodon": _deduplicate(mastodon),
+        "facebook": _deduplicate(facebook),
+        "linkedin": _deduplicate(linkedin),
     }
 
 
@@ -247,6 +270,8 @@ class SocialMediaScanner:
             x_links=links["x"],
             bluesky_links=links["bluesky"],
             mastodon_links=links["mastodon"],
+            facebook_links=links["facebook"],
+            linkedin_links=links["linkedin"],
             scanned_at=scanned_at,
         )
         result.social_tier = _classify_tier(result)
@@ -390,6 +415,10 @@ class SocialMediaScanner:
                     platforms.append(f"Twitter×{len(result.twitter_links)}")
                 if result.x_links:
                     platforms.append(f"X×{len(result.x_links)}")
+                if result.facebook_links:
+                    platforms.append(f"Facebook×{len(result.facebook_links)}")
+                if result.linkedin_links:
+                    platforms.append(f"LinkedIn×{len(result.linkedin_links)}")
                 if result.bluesky_links:
                     platforms.append(f"Bluesky×{len(result.bluesky_links)}")
                 if result.mastodon_links:
