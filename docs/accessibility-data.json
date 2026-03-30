@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-30 07:03 UTC",
+  "generated_at": "2026-03-30 07:44 UTC",
   "summary": {
-    "total_batches": 41,
-    "total_scanned": 43577,
-    "total_reachable": 40076,
+    "total_batches": 43,
+    "total_scanned": 46665,
+    "total_reachable": 43064,
     "total_available": 82714,
-    "total_has_statement": 18820,
-    "total_in_footer": 16643,
+    "total_has_statement": 20524,
+    "total_in_footer": 18270,
     "first_scan": "2026-03-25T17:15:29.276776+00:00",
-    "last_scan": "2026-03-30T03:03:53.193414+00:00"
+    "last_scan": "2026-03-30T07:43:38.245620+00:00"
   },
   "by_country": [
     {
@@ -262,6 +262,24 @@
       "found_in_footer": 409,
       "first_scan": "2026-03-30T01:41:25.055437+00:00",
       "last_scan": "2026-03-30T03:03:53.193414+00:00"
+    },
+    {
+      "country_code": "SWEDEN",
+      "total_scanned": 1558,
+      "reachable": 1483,
+      "has_statement": 857,
+      "found_in_footer": 782,
+      "first_scan": "2026-03-30T05:54:38.370122+00:00",
+      "last_scan": "2026-03-30T06:57:37.950640+00:00"
+    },
+    {
+      "country_code": "SWITZERLAND",
+      "total_scanned": 1530,
+      "reachable": 1505,
+      "has_statement": 847,
+      "found_in_footer": 845,
+      "first_scan": "2026-03-30T06:57:39.744634+00:00",
+      "last_scan": "2026-03-30T07:43:38.245620+00:00"
     }
   ]
 }
