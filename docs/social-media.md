@@ -7,7 +7,7 @@ layout: page
 
 <!-- SOCIAL_MEDIA_STATS_START -->
 
-_Stats as of 2026-03-30 00:30 UTC — last scan: 2026-03-29_
+_Stats as of 2026-03-30 01:01 UTC — last scan: 2026-03-29_
 
 **77** scan batches run
 
@@ -15,7 +15,7 @@ _Stats as of 2026-03-30 00:30 UTC — last scan: 2026-03-29_
 **37,075** of **39,814** scanned pages were reachable (**93.1%**)
 
 <div id="sm-tier-pie-container" style="float:right;margin:0 0 1rem 1.5rem;width:260px;max-width:45%;">
-<canvas id="sm-tier-pie" width="240" height="240" role="img" aria-label="Pie chart: social media tier distribution across 42,197 scanned pages. Twitter/X only: 7,210 (17.1%), Modern only: 1,279 (3.0%), Mixed: 1,270 (3.0%), No Social: 29,268 (69.4%)"></canvas>
+<canvas id="sm-tier-pie" width="240" height="240" role="img" aria-label="Pie chart: social media tier distribution across 39,814 scanned pages. Twitter/X only: 6,995 (17.6%), Modern only: 1,226 (3.1%), Mixed: 1,241 (3.1%), No Social: 27,623 (69.4%)"></canvas>
 <p style="text-align:center;font-size:0.75em;margin:0.3rem 0 0;color:#555;font-style:italic;">Social media tier distribution</p>
 </div>
 
@@ -34,65 +34,33 @@ _Stats as of 2026-03-30 00:30 UTC — last scan: 2026-03-29_
 
 ## Social Media Scan by Country
 
-| Country | Scanned | Available | Reachable | Twitter-only | Modern | Mixed | No Social | Scan Period |
-|---------|---------|-----------|-----------|-------------|--------|-------|-----------|-------------|
-| AUSTRIA | 821 | 821 | 787 | 30 | 25 | 22 | 710 | Mar 2026 |
-| BELGIUM | 1,309 | 1,309 | 1,230 | 206 | 58 | 47 | 929 | Mar 2026 |
-| BULGARIA | 291 | 291 | 269 | 21 | 11 | 2 | 235 | Mar 2026 |
-| CROATIA | 233 | 233 | 232 | 31 | 11 | 3 | 187 | Mar 2026 |
-| CZECHIA | 843 | 843 | 803 | 124 | 21 | 15 | 643 | Mar 2026 |
-| DENMARK | 1,521 | 1,521 | 1,503 | 177 | 10 | 17 | 1,299 | Mar 2026 |
-| ESTONIA | 396 | 396 | 384 | 65 | 22 | 4 | 293 | Mar 2026 |
-| FINLAND | 180 | 180 | 172 | 38 | 2 | 0 | 132 | Mar 2026 |
-| FRANCE | 10,007 | 10,007 | 9,373 | 1,935 | 212 | 361 | 6,865 | Mar 2026 |
-| GERMANY | 6,555 | 6,555 | 6,443 | 1,083 | 301 | 191 | 4,868 | Mar 2026 |
-| GREECE | 1,748 | 1,748 | 1,604 | 229 | 40 | 54 | 1,281 | Mar 2026 |
-| HUNGARY | 390 | 390 | 366 | 24 | 20 | 5 | 317 | Mar 2026 |
-| ICELAND | 139 | 139 | 135 | 5 | 8 | 6 | 116 | Mar 2026 |
-| IRELAND | 522 | 522 | 494 | 149 | 25 | 29 | 291 | Mar 2026 |
-| ITALY | 5,338 | 5,338 | 4,729 | 1,891 | 81 | 168 | 2,589 | Mar 2026 |
-| LATVIA | 802 | 802 | 769 | 262 | 23 | 60 | 424 | Mar 2026 |
-| LITHUANIA | 120 | 120 | 108 | 5 | 4 | 0 | 99 | Mar 2026 |
-| LUXEMBOURG | 571 | 571 | 250 | 31 | 21 | 15 | 183 | Mar 2026 |
-| MALTA | 608 | 608 | 595 | 60 | 20 | 14 | 501 | Mar 2026 |
-| NETHERLANDS | 937 | 937 | 908 | 162 | 54 | 49 | 643 | Mar 2026 |
-| NORWAY | 239 | 239 | 233 | 20 | 2 | 0 | 211 | Mar 2026 |
-| POLAND | 6,244 | 14,938 | 5,688 | 447 | 255 | 179 | 4,807 | Mar 2026 |
-| **Total** | **39,814** | **82,714** | **37,075** | **6,995** | **1,226** | **1,241** | **27,623** | — |
+Tier columns classify each page by its overall social media presence. Platform columns count pages with at least one link to that platform — a page may appear in more than one platform column.
 
----
-
-## Social Media Platform Breakdown
-
-Number of **scanned** pages per country that link to each platform. A page may link to more than one platform. Percentages show the share of all scanned pages.
-
-| Country | Scanned | Reachable | Twitter | X | Bluesky | Mastodon | Legacy % | Modern % |
-|---------|---------|-----------|---------|---|---------|----------|----------|----------|
-| AUSTRIA | 821 | 787 | 35 | 18 | 16 | 42 | 6.3% | 5.7% |
-| BELGIUM | 1,309 | 1,230 | 183 | 74 | 27 | 90 | 19.3% | 8.0% |
-| BULGARIA | 291 | 269 | 18 | 5 | 0 | 13 | 7.9% | 4.5% |
-| CROATIA | 233 | 232 | 34 | 0 | 0 | 14 | 14.6% | 6.0% |
-| CZECHIA | 843 | 803 | 131 | 10 | 0 | 36 | 16.5% | 4.3% |
-| DENMARK | 1,521 | 1,503 | 176 | 21 | 17 | 13 | 12.8% | 1.8% |
-| ESTONIA | 396 | 384 | 67 | 2 | 0 | 26 | 17.4% | 6.6% |
-| FINLAND | 180 | 172 | 26 | 13 | 2 | 0 | 21.1% | 1.1% |
-| FRANCE | 10,007 | 9,373 | 1,799 | 629 | 124 | 495 | 22.9% | 5.7% |
-| GERMANY | 6,555 | 6,443 | 1,171 | 174 | 118 | 441 | 19.4% | 7.5% |
-| GREECE | 1,748 | 1,604 | 232 | 56 | 0 | 94 | 16.2% | 5.4% |
-| HUNGARY | 390 | 366 | 29 | 0 | 0 | 25 | 7.4% | 6.4% |
-| ICELAND | 139 | 135 | 8 | 5 | 0 | 14 | 7.9% | 10.1% |
-| IRELAND | 522 | 494 | 153 | 31 | 18 | 42 | 34.1% | 10.3% |
-| ITALY | 5,338 | 4,729 | 1,991 | 90 | 0 | 249 | 38.6% | 4.7% |
-| LATVIA | 802 | 769 | 279 | 47 | 0 | 83 | 40.1% | 10.3% |
-| LITHUANIA | 120 | 108 | 5 | 0 | 0 | 4 | 4.2% | 3.3% |
-| LUXEMBOURG | 571 | 250 | 43 | 3 | 11 | 33 | 8.1% | 6.3% |
-| MALTA | 608 | 595 | 57 | 17 | 0 | 34 | 12.2% | 5.6% |
-| NETHERLANDS | 937 | 908 | 147 | 74 | 43 | 77 | 22.5% | 11.0% |
-| NORWAY | 239 | 233 | 10 | 13 | 0 | 2 | 8.4% | 0.8% |
-| POLAND | 6,244 | 5,688 | 519 | 135 | 1 | 433 | 10.0% | 7.0% |
-| **Total** | **39,814** | **37,075** | **7,113** | **1,417** | **377** | **2,260** | **20.7%** | **6.2%** |
-
-> **Legacy platforms** (Twitter / X) vs **modern open platforms** (Bluesky / Mastodon) — percentages are share of **scanned** pages that contain at least one link to any platform in that group.
+| Country | Scanned | Available | Reachable | Twitter-only | Modern | Mixed | No Social | Twitter | X | Bluesky | Mastodon | Scan Period |
+|---------|---------|-----------|-----------|-------------|--------|-------|-----------|---------|---|---------|----------|-------------|
+| AUSTRIA | 821 | 821 | 787 | 30 | 25 | 22 | 710 | 35 | 18 | 16 | 42 | Mar 2026 |
+| BELGIUM | 1,309 | 1,309 | 1,230 | 206 | 58 | 47 | 929 | 183 | 74 | 27 | 90 | Mar 2026 |
+| BULGARIA | 291 | 291 | 269 | 21 | 11 | 2 | 235 | 18 | 5 | 0 | 13 | Mar 2026 |
+| CROATIA | 233 | 233 | 232 | 31 | 11 | 3 | 187 | 34 | 0 | 0 | 14 | Mar 2026 |
+| CZECHIA | 843 | 843 | 803 | 124 | 21 | 15 | 643 | 131 | 10 | 0 | 36 | Mar 2026 |
+| DENMARK | 1,521 | 1,521 | 1,503 | 177 | 10 | 17 | 1,299 | 176 | 21 | 17 | 13 | Mar 2026 |
+| ESTONIA | 396 | 396 | 384 | 65 | 22 | 4 | 293 | 67 | 2 | 0 | 26 | Mar 2026 |
+| FINLAND | 180 | 180 | 172 | 38 | 2 | 0 | 132 | 26 | 13 | 2 | 0 | Mar 2026 |
+| FRANCE | 10,007 | 10,007 | 9,373 | 1,935 | 212 | 361 | 6,865 | 1,799 | 629 | 124 | 495 | Mar 2026 |
+| GERMANY | 6,555 | 6,555 | 6,443 | 1,083 | 301 | 191 | 4,868 | 1,171 | 174 | 118 | 441 | Mar 2026 |
+| GREECE | 1,748 | 1,748 | 1,604 | 229 | 40 | 54 | 1,281 | 232 | 56 | 0 | 94 | Mar 2026 |
+| HUNGARY | 390 | 390 | 366 | 24 | 20 | 5 | 317 | 29 | 0 | 0 | 25 | Mar 2026 |
+| ICELAND | 139 | 139 | 135 | 5 | 8 | 6 | 116 | 8 | 5 | 0 | 14 | Mar 2026 |
+| IRELAND | 522 | 522 | 494 | 149 | 25 | 29 | 291 | 153 | 31 | 18 | 42 | Mar 2026 |
+| ITALY | 5,338 | 5,338 | 4,729 | 1,891 | 81 | 168 | 2,589 | 1,991 | 90 | 0 | 249 | Mar 2026 |
+| LATVIA | 802 | 802 | 769 | 262 | 23 | 60 | 424 | 279 | 47 | 0 | 83 | Mar 2026 |
+| LITHUANIA | 120 | 120 | 108 | 5 | 4 | 0 | 99 | 5 | 0 | 0 | 4 | Mar 2026 |
+| LUXEMBOURG | 571 | 571 | 250 | 31 | 21 | 15 | 183 | 43 | 3 | 11 | 33 | Mar 2026 |
+| MALTA | 608 | 608 | 595 | 60 | 20 | 14 | 501 | 57 | 17 | 0 | 34 | Mar 2026 |
+| NETHERLANDS | 937 | 937 | 908 | 162 | 54 | 49 | 643 | 147 | 74 | 43 | 77 | Mar 2026 |
+| NORWAY | 239 | 239 | 233 | 20 | 2 | 0 | 211 | 10 | 13 | 0 | 2 | Mar 2026 |
+| POLAND | 6,244 | 14,938 | 5,688 | 447 | 255 | 179 | 4,807 | 519 | 135 | 1 | 433 | Mar 2026 |
+| **Total** | **39,814** | **82,714** | **37,075** | **6,995** | **1,226** | **1,241** | **27,623** | **7,113** | **1,417** | **377** | **2,260** | — |
 
 <style>
 /* Pie chart container — floats right of the platform overview table */
@@ -151,7 +119,7 @@ Number of **scanned** pages per country that link to each platform. A page may l
   "use strict";
 
   // Tier data embedded by generate_social_media_report.py
-  var SM_PIE = {"twitterOnly":7210,"modernOnly":1279,"mixed":1270,"noSocial":29268};
+  var SM_PIE = {"twitterOnly":6995,"modernOnly":1226,"mixed":1241,"noSocial":27623};
 
   // ── Accessible tooltips ──────────────────────────────────────────────────
   // Numbers < 25 in the country table get a WCAG 2.2 AA tooltip
