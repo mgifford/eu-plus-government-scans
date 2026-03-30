@@ -240,12 +240,15 @@ def test_generate_progress_report_scan_priority_guide(
 def test_generate_progress_report_social_media_platform_breakdown(
     populated_db: Path, tmp_path: Path
 ):
-    """Report should include a per-platform social media breakdown table."""
+    """Report should include per-platform columns in the social media scan table."""
     output_path = tmp_path / "report.md"
     generate_progress_report(populated_db, output_path)
     content = output_path.read_text()
 
-    assert "## Social Media Platform Breakdown" in content
+    # Platform columns merged into a single "Social Media Scan by Country" table
+    assert "## Social Media Scan by Country" in content
+    # Separate breakdown table should no longer exist
+    assert "## Social Media Platform Breakdown" not in content
     # Table should include the platform columns
     assert "Twitter" in content
     assert "Bluesky" in content
@@ -641,12 +644,12 @@ def test_update_index_progress_shows_combined_reachability(
 def test_generate_progress_report_platform_breakdown_has_reachable_column(
     populated_db: Path, tmp_path: Path
 ):
-    """Social media platform breakdown table should include 'Reachable' column."""
+    """Social media scan table should include a 'Reachable' column."""
     output_path = tmp_path / "report.md"
     generate_progress_report(populated_db, output_path)
     content = output_path.read_text()
 
-    # The platform breakdown table header should include Reachable
-    assert "## Social Media Platform Breakdown" in content
+    # Platform data is now part of the single "Social Media Scan by Country" table
+    assert "## Social Media Scan by Country" in content
     assert "Reachable" in content
 
