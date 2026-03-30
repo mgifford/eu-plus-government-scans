@@ -285,6 +285,8 @@ def _query_url_validation(conn: sqlite3.Connection) -> dict[str, dict]:
 def _query_social_media(conn: sqlite3.Connection) -> dict[str, dict]:
     """Return per-country social media scan stats from the database.
 
+    Includes both tier distribution and per-platform link counts so that
+    a single merged table can be generated without a separate query.
     Uses COUNT(DISTINCT CASE WHEN … THEN url END) so that each URL is
     counted at most once per country even when it appears in multiple
     scan batches.
@@ -293,44 +295,19 @@ def _query_social_media(conn: sqlite3.Connection) -> dict[str, dict]:
     for row in conn.execute(
         """
         SELECT country_code,
-               COUNT(DISTINCT url)                                                                   AS total,
-               COUNT(DISTINCT CASE WHEN is_reachable = 1            THEN url ELSE NULL END)         AS reachable,
-               COUNT(DISTINCT CASE WHEN social_tier = 'twitter_only' THEN url ELSE NULL END)        AS twitter_only,
-               COUNT(DISTINCT CASE WHEN social_tier = 'modern_only'  THEN url ELSE NULL END)        AS modern_only,
-               COUNT(DISTINCT CASE WHEN social_tier = 'mixed'        THEN url ELSE NULL END)        AS mixed,
-               COUNT(DISTINCT CASE WHEN social_tier = 'no_social'    THEN url ELSE NULL END)        AS no_social,
-               COUNT(DISTINCT CASE WHEN social_tier = 'unreachable'  THEN url ELSE NULL END)        AS unreachable,
-               MIN(scanned_at)                                                                       AS first_scan,
-               MAX(scanned_at)                                                                       AS last_scan
-        FROM url_social_media_results
-        GROUP BY country_code
-        ORDER BY country_code
-        """
-    ):
-        result[row["country_code"]] = dict(row)
-    return result
-
-
-def _query_social_media_platforms(conn: sqlite3.Connection) -> dict[str, dict]:
-    """Return per-country platform-level social media link counts.
-
-    Counts the number of scanned pages that contain at least one link to each
-    platform (Twitter, X, Bluesky, Mastodon), derived from the stored JSON
-    lists.  Each URL is counted at most once per country using
-    COUNT(DISTINCT CASE WHEN … THEN url END).
-    """
-    result: dict[str, dict] = {}
-    for row in conn.execute(
-        """
-        SELECT country_code,
-               COUNT(DISTINCT url)                                                                                AS total,
-               COUNT(DISTINCT CASE WHEN twitter_links  != '[]' THEN url ELSE NULL END)                          AS has_twitter,
-               COUNT(DISTINCT CASE WHEN x_links        != '[]' THEN url ELSE NULL END)                          AS has_x,
-               COUNT(DISTINCT CASE WHEN bluesky_links  != '[]' THEN url ELSE NULL END)                          AS has_bluesky,
-               COUNT(DISTINCT CASE WHEN mastodon_links != '[]' THEN url ELSE NULL END)                          AS has_mastodon,
-               COUNT(DISTINCT CASE WHEN is_reachable = 1 THEN url ELSE NULL END)                                AS reachable,
-               COUNT(DISTINCT CASE WHEN (twitter_links != '[]' OR x_links != '[]') THEN url ELSE NULL END)      AS has_any_legacy,
-               COUNT(DISTINCT CASE WHEN (bluesky_links != '[]' OR mastodon_links != '[]') THEN url ELSE NULL END) AS has_any_modern
+               COUNT(DISTINCT url)                                                                                 AS total,
+               COUNT(DISTINCT CASE WHEN is_reachable = 1             THEN url ELSE NULL END)                      AS reachable,
+               COUNT(DISTINCT CASE WHEN social_tier = 'twitter_only' THEN url ELSE NULL END)                      AS twitter_only,
+               COUNT(DISTINCT CASE WHEN social_tier = 'modern_only'  THEN url ELSE NULL END)                      AS modern_only,
+               COUNT(DISTINCT CASE WHEN social_tier = 'mixed'        THEN url ELSE NULL END)                      AS mixed,
+               COUNT(DISTINCT CASE WHEN social_tier = 'no_social'    THEN url ELSE NULL END)                      AS no_social,
+               COUNT(DISTINCT CASE WHEN social_tier = 'unreachable'  THEN url ELSE NULL END)                      AS unreachable,
+               COUNT(DISTINCT CASE WHEN twitter_links  != '[]'       THEN url ELSE NULL END)                      AS has_twitter,
+               COUNT(DISTINCT CASE WHEN x_links        != '[]'       THEN url ELSE NULL END)                      AS has_x,
+               COUNT(DISTINCT CASE WHEN bluesky_links  != '[]'       THEN url ELSE NULL END)                      AS has_bluesky,
+               COUNT(DISTINCT CASE WHEN mastodon_links != '[]'       THEN url ELSE NULL END)                      AS has_mastodon,
+               MIN(scanned_at)                                                                                     AS first_scan,
+               MAX(scanned_at)                                                                                     AS last_scan
         FROM url_social_media_results
         GROUP BY country_code
         ORDER BY country_code
@@ -558,17 +535,24 @@ def _write_social_media_table(
     all_countries: list[str],
     seed_counts: dict[str, int] | None = None,
 ) -> None:
-    """Write the per-country social media scan table."""
+    """Write the per-country social media scan table.
+
+    Combines tier distribution (Twitter-only, Modern, Mixed, No Social) with
+    per-platform link counts (Twitter, X, Bluesky, Mastodon) in a single
+    table to avoid redundant Country, Scanned, and Reachable columns.
+    A page may link to more than one platform, so platform counts can exceed
+    tier counts.
+    """
     if not social:
         return
     f.write("## Social Media Scan by Country\n\n")
     f.write(
         "| Country | Scanned | Available | Reachable | Twitter-only | Modern | "
-        "Mixed | No Social | Scan Period |\n"
+        "Mixed | No Social | Twitter | X | Bluesky | Mastodon | Scan Period |\n"
     )
     f.write(
         "|---------|---------|-----------|-----------|-------------|--------|"
-        "-------|-----------|-------------|\n"
+        "-------|-----------|---------|---|---------|----------|-------------|\n"
     )
     for cc in all_countries:
         if cc not in social:
@@ -580,83 +564,17 @@ def _write_social_media_table(
         f.write(
             f"| {cc} | {d['total']:,} | {available_str} | {d['reachable']:,} | "
             f"{d['twitter_only']:,} | {d['modern_only']:,} | "
-            f"{d['mixed']:,} | {d['no_social']:,} | {scan_period} |\n"
+            f"{d['mixed']:,} | {d['no_social']:,} | "
+            f"{d.get('has_twitter', 0):,} | {d.get('has_x', 0):,} | "
+            f"{d.get('has_bluesky', 0):,} | {d.get('has_mastodon', 0):,} | "
+            f"{scan_period} |\n"
         )
     f.write("\n")
-
-
-def _write_social_media_platform_breakdown(
-    f, platforms: dict[str, dict], all_countries: list[str]
-) -> None:
-    """Write a per-platform social media link count table.
-
-    Shows how many scanned pages per country contain at least one link to
-    each individual platform (Twitter, X, Bluesky, Mastodon), plus the
-    percentage of scanned pages.
-    """
-    if not platforms:
-        return
-
-    # Aggregate totals for the summary row
-    total_scanned = sum(d["total"] for d in platforms.values())
-    total_reachable = sum(d["reachable"] for d in platforms.values())
-    total_twitter = sum(d["has_twitter"] for d in platforms.values())
-    total_x = sum(d["has_x"] for d in platforms.values())
-    total_bluesky = sum(d["has_bluesky"] for d in platforms.values())
-    total_mastodon = sum(d["has_mastodon"] for d in platforms.values())
-    total_legacy = sum(d["has_any_legacy"] for d in platforms.values())
-    total_modern = sum(d["has_any_modern"] for d in platforms.values())
-
-    f.write("## Social Media Platform Breakdown\n\n")
     f.write(
-        "Number of **scanned** pages per country that link to each platform. "
-        "A page may link to more than one platform.  "
-        "Percentages show the share of all scanned pages.\n\n"
-    )
-    f.write(
-        "| Country | Scanned | Reachable | Twitter | X | Bluesky | Mastodon "
-        "| Legacy % | Modern % |\n"
-    )
-    f.write(
-        "|---------|---------|-----------|---------|---|---------|----------"
-        "|----------|----------|\n"
-    )
-    for cc in all_countries:
-        if cc not in platforms:
-            continue
-        d = platforms[cc]
-        s = d["total"]
-        if s > 0:
-            legacy_pct = f"{d['has_any_legacy'] / s * 100:.1f}%"
-            modern_pct = f"{d['has_any_modern'] / s * 100:.1f}%"
-        else:
-            legacy_pct = "—"
-            modern_pct = "—"
-        f.write(
-            f"| {cc} | {d['total']:,} | {d['reachable']:,} | {d['has_twitter']:,} | "
-            f"{d['has_x']:,} | {d['has_bluesky']:,} | {d['has_mastodon']:,} | "
-            f"{legacy_pct} | {modern_pct} |\n"
-        )
-
-    # Summary / totals row
-    if total_scanned > 0:
-        summary_legacy = f"**{total_legacy / total_scanned * 100:.1f}%**"
-        summary_modern = f"**{total_modern / total_scanned * 100:.1f}%**"
-    else:
-        summary_legacy = "**—**"
-        summary_modern = "**—**"
-    f.write(
-        f"| **Total** | **{total_scanned:,}** | **{total_reachable:,}** | **{total_twitter:,}** | "
-        f"**{total_x:,}** | **{total_bluesky:,}** | **{total_mastodon:,}** | "
-        f"{summary_legacy} | {summary_modern} |\n"
-    )
-    f.write("\n")
-
-    # Narrative summary
-    f.write(
-        "> **Legacy platforms** (Twitter / X) vs **modern open platforms** "
-        "(Bluesky / Mastodon) — percentages are share of **scanned** pages "
-        "that contain at least one link to any platform in that group.\n\n"
+        "> **Tier columns** (Twitter-only / Modern / Mixed / No Social) classify each "
+        "page by its overall social media presence. **Platform columns** (Twitter / X / "
+        "Bluesky / Mastodon) count pages with at least one link to that platform — "
+        "a page may appear in more than one platform column.\n\n"
     )
 
 
@@ -876,7 +794,6 @@ def _write_report(
 
     url_val = _query_url_validation(conn)
     social = _query_social_media(conn)
-    platforms = _query_social_media_platforms(conn)
     tech = _query_technology(conn)
     lighthouse = _query_lighthouse(conn)
     accessibility = _query_accessibility(conn)
@@ -897,7 +814,6 @@ def _write_report(
 
         _write_url_validation_table(f, url_val, all_countries, seed_counts)
         _write_social_media_table(f, social, all_countries, seed_counts)
-        _write_social_media_platform_breakdown(f, platforms, all_countries)
         _write_technology_table(f, tech, all_countries)
         _write_lighthouse_table(f, lighthouse, all_countries)
         _write_accessibility_table(f, accessibility, all_countries)
