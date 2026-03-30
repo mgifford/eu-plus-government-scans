@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-03-30 16:50 UTC_
+_Generated: 2026-03-30 18:09 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -10,9 +10,9 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage |
 |-----------|--------------|-----------|----------|
-| **Combined Reachability** | **44,513 confirmed reachable** | 82,714 | **██████████░░░░░░░░░░ 53.8%** |
+| **Combined Reachability** | **47,459 confirmed reachable** | 82,714 | **███████████░░░░░░░░░ 57.4%** |
 | URL Validation | 13,495 validated (11,613 valid) | 82,714 | ███░░░░░░░░░░░░░░░░░ 16.3% |
-| Social Media | 48,252 scanned (44,476 reachable) | 82,714 | ███████████░░░░░░░░░ 58.3% |
+| Social Media | 51,339 scanned (47,422 reachable) | 82,714 | ████████████░░░░░░░░ 62.1% |
 | Technology | 0 scanned | 82,714 | (manual scan) |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) |
 | Accessibility Statements | 49,812 scanned | 82,714 | ████████████░░░░░░░░ 60.2% |
@@ -24,7 +24,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Country | Total | Valid | Invalid | Scan Period | Coverage |
 |---------|-------|-------|---------|-------------|----------|
 | AUSTRIA | 821 | 718 | 191 | Mar 2026 | ███████████████ 100.0% |
-| BELGIUM | 1,309 | 1,166 | 630 | Mar 2026 | ███████████████ 100.0% |
+| BELGIUM | 1,309 | 1,166 | 629 | Mar 2026 | ███████████████ 100.0% |
 | BULGARIA | 291 | 232 | 73 | Mar 2026 | ███████████████ 100.0% |
 | CROATIA | 233 | 227 | 6 | Mar 2026 | ███████████████ 100.0% |
 | CZECHIA | 567 | 440 | 127 | Mar 2026 | ██████████░░░░░ 67.3% |
@@ -76,6 +76,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | SPAIN | 1,524 | 6,069 | 1,354 | 452 | 15 | 62 | 825 | 432 | 110 | 11 | 68 | Mar 2026 |
 | SWEDEN | 1,558 | 1,558 | 1,487 | 89 | 14 | 22 | 1,362 | 92 | 24 | 11 | 25 | Mar 2026 |
 | SWITZERLAND | 1,793 | 2,117 | 1,766 | 288 | 48 | 73 | 1,357 | 188 | 185 | 51 | 80 | Mar 2026 |
+| UNITED_KINGDOM_UK | 3,087 | 19,502 | 2,946 | 1,028 | 10 | 119 | 1,789 | 782 | 120 | 11 | 124 | Mar 2026 |
 
 > **Tier columns** (Twitter-only / Modern / Mixed / No Social) classify each page by its overall social media presence. **Platform columns** (Twitter / X / Bluesky / Mastodon) count pages with at least one link to that platform — a page may appear in more than one platform column.
 
@@ -131,7 +132,7 @@ Checks whether each government page links to an accessibility statement as requi
 
 These countries have social media scan data but no URL validation data (URL validation may have been skipped because the social scan already confirmed reachability):
 
-`GERMANY`, `HUNGARY`, `ICELAND`, `IRELAND`, `LATVIA`, `LITHUANIA`, `LUXEMBOURG`, `PORTUGAL`, `REPUBLIC_OF_CYPRUS`, `SLOVAKIA`, `SLOVENIA`, `SPAIN`
+`GERMANY`, `HUNGARY`, `ICELAND`, `IRELAND`, `LATVIA`, `LITHUANIA`, `LUXEMBOURG`, `PORTUGAL`, `REPUBLIC_OF_CYPRUS`, `SLOVAKIA`, `SLOVENIA`, `SPAIN`, `UNITED_KINGDOM_UK`
 
 ## Scan Priority Guide
 
