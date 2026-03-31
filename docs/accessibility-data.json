@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-03-31 01:28 UTC",
+  "generated_at": "2026-03-31 03:11 UTC",
   "summary": {
-    "total_batches": 47,
-    "total_scanned": 53123,
-    "total_reachable": 48866,
+    "total_batches": 44,
+    "total_scanned": 49812,
+    "total_reachable": 46056,
     "total_available": 82714,
-    "total_has_statement": 23566,
-    "total_in_footer": 20779,
+    "total_has_statement": 22314,
+    "total_in_footer": 19938,
     "first_scan": "2026-03-25T17:15:29.276776+00:00",
-    "last_scan": "2026-03-30T23:37:50.910004+00:00"
+    "last_scan": "2026-03-30T11:22:50.040484+00:00"
   },
   "by_country": [
     {
@@ -202,21 +202,21 @@
     },
     {
       "country_code": "POLAND",
-      "total_scanned": 7012,
-      "reachable": 6416,
-      "has_statement": 2570,
-      "found_in_footer": 1711,
+      "total_scanned": 4939,
+      "reachable": 4553,
+      "has_statement": 1736,
+      "found_in_footer": 1189,
       "first_scan": "2026-03-28T19:28:02.048285+00:00",
-      "last_scan": "2026-03-30T19:58:41.219591+00:00"
+      "last_scan": "2026-03-29T03:03:17.732026+00:00"
     },
     {
       "country_code": "PORTUGAL",
-      "total_scanned": 3503,
-      "reachable": 2920,
-      "has_statement": 880,
-      "found_in_footer": 705,
+      "total_scanned": 2512,
+      "reachable": 2072,
+      "has_statement": 472,
+      "found_in_footer": 391,
       "first_scan": "2026-03-29T17:56:18.335204+00:00",
-      "last_scan": "2026-03-30T22:44:55.648110+00:00"
+      "last_scan": "2026-03-29T19:45:15.167439+00:00"
     },
     {
       "country_code": "REPUBLIC_OF_CYPRUS",
@@ -229,12 +229,12 @@
     },
     {
       "country_code": "ROMANIA",
-      "total_scanned": 770,
-      "reachable": 329,
-      "has_statement": 25,
-      "found_in_footer": 7,
+      "total_scanned": 523,
+      "reachable": 230,
+      "has_statement": 15,
+      "found_in_footer": 2,
       "first_scan": "2026-03-29T21:36:09.956858+00:00",
-      "last_scan": "2026-03-30T23:37:50.910004+00:00"
+      "last_scan": "2026-03-29T23:24:12.826056+00:00"
     },
     {
       "country_code": "SLOVAKIA",
