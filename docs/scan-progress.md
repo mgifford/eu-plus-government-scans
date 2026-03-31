@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-03-31 20:14 UTC_
+_Generated: 2026-03-31 20:28 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -10,12 +10,12 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage |
 |-----------|--------------|-----------|----------|
-| **Combined Reachability** | **52,791 confirmed reachable** | 82,714 | **████████████░░░░░░░░ 63.8%** |
+| **Combined Reachability** | **55,261 confirmed reachable** | 82,714 | **█████████████░░░░░░░ 66.8%** |
 | URL Validation | 13,495 validated (11,613 valid) | 82,714 | ███░░░░░░░░░░░░░░░░░ 16.3% |
-| Social Media | 57,333 scanned (52,754 reachable) | 82,714 | █████████████░░░░░░░ 69.3% |
+| Social Media | 59,959 scanned (55,224 reachable) | 82,714 | ██████████████░░░░░░ 72.5% |
 | Technology | 0 scanned | 82,714 | (manual scan) |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) |
-| Accessibility Statements | 52,187 scanned | 82,714 | ████████████░░░░░░░░ 63.1% |
+| Accessibility Statements | 53,454 scanned | 82,714 | ████████████░░░░░░░░ 64.6% |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by *either* URL Validation or Social Media scanning.  URL Validation automatically skips pages already confirmed reachable by the Social Media scanner (within the last 30 days), so the two individual counts complement rather than duplicate each other.
 
@@ -24,9 +24,9 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Country | Total | Valid | Invalid | Scan Period | Coverage |
 |---------|-------|-------|---------|-------------|----------|
 | AUSTRIA | 821 | 718 | 191 | Mar 2026 | ███████████████ 100.0% |
-| BELGIUM | 1,309 | 1,166 | 676 | Mar 2026 | ███████████████ 100.0% |
-| BULGARIA | 291 | 232 | 83 | Mar 2026 | ███████████████ 100.0% |
-| CROATIA | 233 | 227 | 7 | Mar 2026 | ███████████████ 100.0% |
+| BELGIUM | 1,309 | 1,166 | 670 | Mar 2026 | ███████████████ 100.0% |
+| BULGARIA | 291 | 232 | 82 | Mar 2026 | ███████████████ 100.0% |
+| CROATIA | 233 | 227 | 6 | Mar 2026 | ███████████████ 100.0% |
 | CZECHIA | 567 | 440 | 127 | Mar 2026 | ██████████░░░░░ 67.3% |
 | DENMARK | 974 | 891 | 83 | Mar 2026 | █████████░░░░░░ 64.0% |
 | ESTONIA | 12 | 3 | 9 | Mar 2026 | ░░░░░░░░░░░░░░░ 3.0% |
@@ -75,8 +75,8 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | SLOVENIA | 200 | 200 | 187 | 22 | 7 | 2 | 156 | 18 | 6 | 1 | 9 | Mar 2026 |
 | SPAIN | 3,857 | 6,069 | 3,485 | 1,256 | 24 | 172 | 2,033 | 1,148 | 222 | 23 | 180 | Mar 2026 |
 | SWEDEN | 1,558 | 1,558 | 1,487 | 89 | 14 | 22 | 1,362 | 92 | 24 | 11 | 25 | Mar 2026 |
-| SWITZERLAND | 1,793 | 2,117 | 1,766 | 288 | 48 | 73 | 1,357 | 188 | 185 | 51 | 80 | Mar 2026 |
-| UNITED_KINGDOM_UK | 3,148 | 19,502 | 2,991 | 1,042 | 9 | 117 | 1,823 | 784 | 126 | 11 | 121 | Mar 2026 |
+| SWITZERLAND | 2,117 | 2,117 | 2,077 | 371 | 56 | 99 | 1,551 | 238 | 213 | 56 | 113 | Mar 2026 |
+| UNITED_KINGDOM_UK | 5,450 | 19,502 | 5,150 | 1,753 | 13 | 178 | 3,206 | 1,306 | 238 | 14 | 183 | Mar 2026 |
 
 > **Tier columns** (Twitter-only / Modern / Mixed / No Social) classify each page by its overall social media presence. **Platform columns** (Twitter / X / Bluesky / Mastodon) count pages with at least one link to that platform — a page may appear in more than one platform column.
 
@@ -116,9 +116,9 @@ Checks whether each government page links to an accessibility statement as requi
 | NETHERLANDS | 937 | 908 | 447 | 438 | 49% | Mar 2026 |
 | NORWAY | 239 | 233 | 108 | 102 | 46% | Mar 2026 |
 | POLAND | 7,314 | 6,747 | 2,794 | 1,878 | 41% | Mar 2026 |
-| PORTUGAL | 2,512 | 2,072 | 472 | 391 | 23% | Mar 2026 |
+| PORTUGAL | 3,503 | 2,930 | 884 | 710 | 30% | Mar 2026 |
 | REPUBLIC_OF_CYPRUS | 24 | 24 | 0 | 0 | 0% | Mar 2026 |
-| ROMANIA | 523 | 230 | 15 | 2 | 7% | Mar 2026 |
+| ROMANIA | 799 | 351 | 28 | 9 | 8% | Mar 2026 |
 | SLOVAKIA | 434 | 411 | 187 | 172 | 45% | Mar 2026 |
 | SLOVENIA | 200 | 188 | 95 | 69 | 51% | Mar 2026 |
 | SPAIN | 1,375 | 1,211 | 465 | 409 | 38% | Mar 2026 |
