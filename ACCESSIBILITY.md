@@ -81,4 +81,42 @@ We regularly review and update:
 - Documentation clarity based on community feedback
 - Inclusive language and terminology
 
-Last updated: 2026-03-09
+## 11. Accessible Twitter/X Visibility Feature
+
+The **Social Media Scan by Country** table now lets readers immediately see *which* government sites still link to Twitter or X, using two complementary accessible patterns.
+
+### Pattern A — WCAG 2.2 AA Tooltip (fewer than 25 sites)
+
+When a country's Twitter or X column shows a count smaller than 25, the number becomes a keyboard-focusable trigger with a persistent tooltip listing the actual scanned-page URLs.
+
+**Implementation details (following [WCAG 1.4.13 Content on Hover or Focus](https://www.w3.org/TR/WCAG21/#content-on-hover-or-focus)):**
+
+- The trigger element carries `tabindex="0"` so keyboard users can reach it with Tab.
+- The popup carries `role="tooltip"` and a unique `id`; the trigger links to it via `aria-describedby`.
+- The popup is a *child* of the trigger element, so moving the pointer from the trigger onto the tooltip text does **not** dismiss it (WCAG 1.4.13 "hoverable" requirement).
+- Pressing **Escape** while the trigger is focused blurs it, dismissing the tooltip (WCAG 1.4.13 "dismissable" requirement).
+- The tooltip remains visible as long as the trigger is hovered or focused (WCAG 1.4.13 "persistent" requirement).
+- URLs inside the tooltip are plain text (no links), consistent with the TOOLTIP_ACCESSIBILITY_BEST_PRACTICES principle that tooltips must be non-interactive.
+- URL strings are HTML-escaped before rendering to prevent injection.
+
+### Pattern B — Native `<details>`/`<summary>` Widget (25 or more sites)
+
+When the count is 25 or above, the cell renders a native `<details>`/`<summary>` element.  To keep page size manageable for countries with hundreds or thousands of Twitter/X-linked pages, the widget shows the first 10 sample URLs with an "…and N more" note linking to the full `social-media-data.json` data file.
+
+**Why `<details>`/`<summary>` instead of a tooltip for large lists:**
+
+- Natively keyboard-accessible: Tab to reach, Enter/Space to expand.
+- Screen readers announce the expanded/collapsed state automatically.
+- Works without JavaScript.
+- Scrollable content without overflowing the viewport.
+- Links inside the expanded list are fully navigable by keyboard.
+
+**Page-size constraint:** The per-country URL sample embedded in the page is capped at 25 URLs per country (constant `_TWITTER_X_URL_SAMPLE_LIMIT` in `generate_social_media_report.py`).  Countries with more Twitter/X sites show a truncated sample; the complete list is always available in the machine-readable `social-media-data.json` file.
+
+### CSS & JavaScript Location
+
+All CSS and JavaScript for these patterns is injected as inline `<style>` and `<script>` blocks inside the `<!-- SOCIAL_MEDIA_STATS_START -->` / `<!-- SOCIAL_MEDIA_STATS_END -->` markers in `docs/social-media.md` by `src/cli/generate_social_media_report.py`.
+
+The per-country Twitter/X URL data is serialised as a JSON object (`var SM_TWITTER_X_URLS = {...};`) and injected in a separate `<script>` block before the interactive script, so the data and the behaviour remain cleanly separated.
+
+Last updated: 2026-03-31

@@ -9,12 +9,14 @@ from pathlib import Path
 import pytest
 
 from src.cli.generate_social_media_report import (
+    _TWITTER_X_URL_SAMPLE_LIMIT,
     _build_stats_block,
     _build_sovereignty_section,
     _enrich_sovereignty_metrics,
     _legacy_exposure,
     _query_by_country,
     _query_summary,
+    _query_twitter_x_urls_by_country,
     _sovereignty_score,
     _sovereignty_tier,
     generate_social_media_report,
@@ -826,3 +828,219 @@ def test_generate_social_media_report_json_includes_sovereignty(
     # no_social=1, modern_only=0, reachable=2 → score = 1/2*100 = 50.0
     assert france["sovereignty_score"] == 50.0
 
+
+
+# ---------------------------------------------------------------------------
+# Tests for _query_twitter_x_urls_by_country
+# ---------------------------------------------------------------------------
+
+def test_query_twitter_x_urls_by_country_empty_db(empty_db: Path):
+    """Should return empty dict from an empty database."""
+    conn = sqlite3.connect(empty_db)
+    conn.row_factory = sqlite3.Row
+    try:
+        result = _query_twitter_x_urls_by_country(conn)
+    finally:
+        conn.close()
+    assert result == {}
+
+
+def test_query_twitter_x_urls_by_country_populated_db(populated_db: Path):
+    """Should return URLs with Twitter or X links, grouped by country."""
+    conn = sqlite3.connect(populated_db)
+    conn.row_factory = sqlite3.Row
+    try:
+        result = _query_twitter_x_urls_by_country(conn)
+    finally:
+        conn.close()
+
+    # ICELAND has page1 with twitter_links; FRANCE has page1 with x_links
+    assert "ICELAND" in result
+    assert "FRANCE" in result
+    assert "https://example.is/page1" in result["ICELAND"]
+    assert "https://example.fr/page1" in result["FRANCE"]
+    # page2 and page3 from ICELAND have no Twitter/X links
+    assert "https://example.is/page2" not in result.get("ICELAND", [])
+    assert "https://example.is/page3" not in result.get("ICELAND", [])
+
+
+def test_query_twitter_x_urls_by_country_no_double_counting(duplicate_scan_db: Path):
+    """URLs scanned in multiple batches should appear only once per country."""
+    conn = sqlite3.connect(duplicate_scan_db)
+    conn.row_factory = sqlite3.Row
+    try:
+        result = _query_twitter_x_urls_by_country(conn)
+    finally:
+        conn.close()
+
+    assert "ICELAND" in result
+    # page1 appears in 2 scan batches but should be listed only once
+    assert result["ICELAND"].count("https://example.is/page1") == 1
+
+
+# ---------------------------------------------------------------------------
+# Tests for Twitter/X URL visibility in the interactive block
+# ---------------------------------------------------------------------------
+
+def test_build_stats_block_embeds_twitter_x_urls_json(populated_db: Path):
+    """Stats block should embed SM_TWITTER_X_URLS with actual site URLs."""
+    conn = sqlite3.connect(populated_db)
+    conn.row_factory = sqlite3.Row
+    try:
+        summary = _query_summary(conn)
+        by_country = _query_by_country(conn)
+        twitter_x_urls = _query_twitter_x_urls_by_country(conn)
+    finally:
+        conn.close()
+
+    block = _build_stats_block(
+        summary, "2024-06-01 12:00 UTC",
+        by_country=by_country, twitter_x_urls=twitter_x_urls,
+    )
+
+    # The JSON variable must be present in the output
+    assert "SM_TWITTER_X_URLS" in block
+    # The actual URLs should be embedded in the block
+    assert "example.is/page1" in block
+    assert "example.fr/page1" in block
+
+
+def test_build_stats_block_twitter_x_js_features_present(populated_db: Path):
+    """Interactive block should include tooltip and details/summary JS helpers."""
+    conn = sqlite3.connect(populated_db)
+    conn.row_factory = sqlite3.Row
+    try:
+        summary = _query_summary(conn)
+        by_country = _query_by_country(conn)
+        twitter_x_urls = _query_twitter_x_urls_by_country(conn)
+    finally:
+        conn.close()
+
+    block = _build_stats_block(
+        summary, "2024-06-01 12:00 UTC",
+        by_country=by_country, twitter_x_urls=twitter_x_urls,
+    )
+
+    # Tooltip function enhanced to distinguish Twitter/X columns
+    assert "twitterXCols" in block
+    # Details/summary builder for >= 25 sites
+    assert "_buildTwXDetails" in block
+    # HTML-escape helper for safe URL rendering
+    assert "_escHtml" in block
+    # CSS for the details widget
+    assert "sm-tw-details" in block
+    assert "sm-tw-summary" in block
+    assert "sm-tw-list" in block
+
+
+def test_build_stats_block_no_twitter_x_urls_still_works(populated_db: Path):
+    """Stats block must render correctly even when twitter_x_urls is None."""
+    conn = sqlite3.connect(populated_db)
+    conn.row_factory = sqlite3.Row
+    try:
+        summary = _query_summary(conn)
+        by_country = _query_by_country(conn)
+    finally:
+        conn.close()
+
+    block = _build_stats_block(
+        summary, "2024-06-01 12:00 UTC",
+        by_country=by_country,
+        # twitter_x_urls omitted (defaults to None)
+    )
+
+    # Should still emit the JS variable with an empty object
+    assert "SM_TWITTER_X_URLS" in block
+    assert "{}" in block
+
+
+def test_generate_social_media_report_includes_twitter_x_urls(
+    populated_db: Path, tmp_path: Path
+):
+    """Full report generation should embed Twitter/X URL data in the page."""
+    page_path = tmp_path / "social-media.md"
+    page_path.write_text(_SOCIAL_MEDIA_PAGE_TEMPLATE)
+    data_path = tmp_path / "social-media-data.json"
+
+    result = generate_social_media_report(populated_db, page_path, data_path)
+
+    assert result is True
+    content = page_path.read_text()
+    assert "SM_TWITTER_X_URLS" in content
+    # URLs that have Twitter/X links should appear in the embedded JSON
+    assert "example.is/page1" in content   # ICELAND Twitter page
+    assert "example.fr/page1" in content   # FRANCE X page
+
+
+def test_query_twitter_x_urls_capped_at_limit(tmp_path: Path):
+    """Query should return at most _TWITTER_X_URL_SAMPLE_LIMIT URLs per country."""
+    db_path = tmp_path / "cap_test.db"
+    initialize_schema(f"sqlite:///{db_path}")
+    conn = sqlite3.connect(db_path)
+    # Insert more rows than the cap for one country
+    n_rows = _TWITTER_X_URL_SAMPLE_LIMIT + 10
+    for i in range(n_rows):
+        conn.execute(
+            """
+            INSERT INTO url_social_media_results
+            (url, country_code, scan_id, is_reachable,
+             twitter_links, x_links, bluesky_links, mastodon_links,
+             facebook_links, linkedin_links, social_tier, scanned_at)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+            (
+                f"https://example.lg/page{i}", "LARGE_COUNTRY",
+                "scan-cap-test", 1,
+                f'["https://twitter.com/gov_{i}"]', '[]', '[]', '[]',
+                '[]', '[]', "twitter_only", "2024-01-01T00:00:00",
+            ),
+        )
+    conn.commit()
+    conn.row_factory = sqlite3.Row
+    result = _query_twitter_x_urls_by_country(conn)
+    conn.close()
+
+    assert "LARGE_COUNTRY" in result
+    assert len(result["LARGE_COUNTRY"]) == _TWITTER_X_URL_SAMPLE_LIMIT
+
+
+def test_build_stats_block_large_count_shows_and_more(tmp_path: Path):
+    """Details widget for >= 25 sites should display 'and N more' with data file link."""
+    db_path = tmp_path / "large_test.db"
+    initialize_schema(f"sqlite:///{db_path}")
+    conn = sqlite3.connect(db_path)
+    # Insert enough rows to trigger the >= 25 details/summary path
+    n_rows = 30
+    for i in range(n_rows):
+        conn.execute(
+            """
+            INSERT INTO url_social_media_results
+            (url, country_code, scan_id, is_reachable,
+             twitter_links, x_links, bluesky_links, mastodon_links,
+             facebook_links, linkedin_links, social_tier, scanned_at)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+            (
+                f"https://example.big/page{i}", "BIG_COUNTRY",
+                "scan-large-test", 1,
+                f'["https://twitter.com/big_{i}"]', '[]', '[]', '[]',
+                '[]', '[]', "twitter_only", "2024-01-01T00:00:00",
+            ),
+        )
+    conn.commit()
+    conn.row_factory = sqlite3.Row
+    summary = _query_summary(conn)
+    by_country = _query_by_country(conn)
+    twitter_x_urls = _query_twitter_x_urls_by_country(conn)
+    conn.close()
+
+    block = _build_stats_block(
+        summary, "2024-06-01 12:00 UTC",
+        by_country=by_country, twitter_x_urls=twitter_x_urls,
+    )
+
+    # The "and N more" text and data file link should appear for large counts
+    assert "more" in block
+    assert "social-media-data.json" in block
+    # Only the capped sample URLs should be embedded in SM_TWITTER_X_URLS
+    assert block.count("example.big/page") <= _TWITTER_X_URL_SAMPLE_LIMIT
