@@ -88,6 +88,31 @@ def _query_summary(conn: sqlite3.Connection) -> dict:
     return dict(row)
 
 
+def _query_twitter_x_urls_by_country(conn: sqlite3.Connection) -> dict[str, list[str]]:
+    """Return a mapping of country_code → sorted list of URLs with Twitter or X links.
+
+    Each URL appears at most once per country, even if it was scanned in multiple
+    batches.  Only URLs with at least one twitter.com or x.com link are included.
+    The result is used by the report's JavaScript to populate per-country
+    Twitter/X site lists in accessible tooltips (< 25 sites) and expandable
+    ``<details>`` widgets (≥ 25 sites).
+    """
+    rows = conn.execute(
+        """
+        SELECT DISTINCT country_code, url
+        FROM url_social_media_results
+        WHERE twitter_links != '[]' OR x_links != '[]'
+        ORDER BY country_code, url
+        """
+    ).fetchall()
+    result: dict[str, list[str]] = {}
+    for row in rows:
+        cc = row["country_code"]
+        url = row["url"]
+        result.setdefault(cc, []).append(url)
+    return result
+
+
 def _query_by_country(conn: sqlite3.Connection) -> list[dict]:
     """Return per-country social media platform totals with tier breakdown.
 
@@ -346,6 +371,7 @@ def _build_stats_block(
     total_available: int = 0,
     by_country: list[dict] | None = None,
     seed_counts: dict[str, int] | None = None,
+    twitter_x_urls: dict[str, list[str]] | None = None,
 ) -> str:
     """Return a Markdown stats block to inject between the markers.
 
@@ -360,6 +386,10 @@ def _build_stats_block(
         seed_counts: Mapping of country_code → available page count from
             toon seed files.  Used for the "Available" column in the per-country
             table when *by_country* is provided.
+        twitter_x_urls: Mapping of country_code → list of scanned page URLs
+            that link to Twitter or X.  When provided, the interactive block
+            shows the actual site URLs in a tooltip (< 25 sites per country) or
+            in an expandable ``<details>`` widget (≥ 25 sites).
     """
     if not summary or not summary.get("total_scanned"):
         return (
@@ -571,7 +601,7 @@ def _build_stats_block(
             f"**{tot_bsky:,}** | **{tot_mast:,}** | — |"
         )
 
-        lines += _build_interactive_block()
+        lines += _build_interactive_block(twitter_x_urls)
 
 
     lines += [
@@ -581,16 +611,28 @@ def _build_stats_block(
     return "\n".join(lines)
 
 
-def _build_interactive_block() -> list[str]:
+def _build_interactive_block(
+    twitter_x_urls: dict[str, list[str]] | None = None,
+) -> list[str]:
     """Return the CSS ``<style>`` and JavaScript ``<script>`` lines.
 
     The returned lines are appended at the end of the stats section.  They
-    provide two interactive enhancements:
+    provide three interactive enhancements:
 
     1. Sortable column headers on the "Social Media Scan by Country" table.
     2. Accessible WCAG 2.2 AA tooltips (role="tooltip" + aria-describedby)
        for numeric cells whose value is less than 25.
+    3. For the Twitter and X columns specifically, the tooltip (< 25 sites)
+       or an expandable ``<details>/<summary>`` widget (≥ 25 sites) shows
+       the actual scanned-page URLs that link to Twitter or X, making it easy
+       to identify which government sites still use those platforms.
     """
+    # Embed the per-country Twitter/X URL data as a JS variable so the browser
+    # script can populate tooltips / details widgets with real site names.
+    tw_x_data = twitter_x_urls or {}
+    tw_x_json = json.dumps(tw_x_data, ensure_ascii=False).replace("</", "<\\/")
+    data_script = f"<script>\nvar SM_TWITTER_X_URLS = {tw_x_json};\n</script>"
+
     css = """\
 <style>
 /* Pie chart container — floats right so stats text wraps to its left */
@@ -617,9 +659,10 @@ def _build_interactive_block() -> list[str]:
   border-radius: 4px;
   font-size: 0.78em;
   white-space: normal;
+  overflow-wrap: break-word;
   z-index: 200;
   min-width: 180px;
-  max-width: 260px;
+  max-width: 320px;
   line-height: 1.4;
 }
 .sm-tooltip-popup::after {
@@ -634,6 +677,42 @@ def _build_interactive_block() -> list[str]:
 /* Show tooltip on hover or keyboard focus */
 .sm-tip:hover .sm-tooltip-popup,
 .sm-tip:focus .sm-tooltip-popup { visibility: visible; }
+
+/* Twitter/X expandable site-list widget (used when count >= 25) */
+.sm-tw-details { display: inline; }
+.sm-tw-summary {
+  cursor: pointer;
+  text-decoration: underline dotted;
+  text-underline-offset: 2px;
+  color: inherit;
+  font-size: 1em;
+}
+.sm-tw-summary::-webkit-details-marker { display: none; }
+.sm-tw-details .sm-tw-list {
+  position: absolute;
+  background: #222;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 0.78em;
+  line-height: 1.5;
+  z-index: 200;
+  max-height: 220px;
+  overflow-y: auto;
+  min-width: 240px;
+  max-width: 420px;
+  list-style: none;
+  margin: 4px 0 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  overflow-wrap: break-word;
+}
+.sm-tw-details .sm-tw-list a {
+  color: #9ecfff;
+  text-decoration: none;
+}
+.sm-tw-details .sm-tw-list a:hover,
+.sm-tw-details .sm-tw-list a:focus { text-decoration: underline; }
+.sm-tw-details[open] .sm-tw-summary { outline: 2px solid currentColor; outline-offset: 2px; }
 
 /* Sortable table column headers */
 .sm-sortable th[aria-sort] { cursor: pointer; white-space: nowrap; user-select: none; }
@@ -650,8 +729,10 @@ def _build_interactive_block() -> list[str]:
   "use strict";
 
   // ── Accessible tooltips ──────────────────────────────────────────────────
-  // Numbers < 25 in the country table get a WCAG 2.2 AA tooltip
-  // (role="tooltip" + aria-describedby, visible on hover and keyboard focus).
+  // Twitter/X columns (< 25 sites): WCAG 2.2 AA tooltip showing actual URLs.
+  // Twitter/X columns (≥ 25 sites): accessible <details>/<summary> widget.
+  // Other numeric columns (< 25): generic "small sample" tooltip.
+  // All use role="tooltip" + aria-describedby where applicable.
   var _tipSeq = 0;
 
   function addTooltips() {
@@ -659,12 +740,17 @@ def _build_interactive_block() -> list[str]:
     if (!countryTable) return;
 
     var headers = Array.from(countryTable.querySelectorAll("thead th"));
-    // Numeric columns are all except Country (0) and Scan Period
+    // Numeric columns are all except Country (0), Sov. Score, and Scan Period.
     var numericCols = [];
+    // Track which column indices are the Twitter and X platform columns.
+    var twitterXCols = [];
     headers.forEach(function (th, i) {
       var t = th.textContent.trim();
       if (t !== "Country" && t !== "Scan Period" && t !== "Sov. Score") {
         numericCols.push(i);
+      }
+      if (t === "Twitter" || t === "X") {
+        twitterXCols.push(i);
       }
     });
 
@@ -672,25 +758,51 @@ def _build_interactive_block() -> list[str]:
       var cells = row.querySelectorAll("td");
       // Skip the totals row
       if (cells[0] && cells[0].textContent.includes("Total")) return;
+      var country = cells[0] ? cells[0].textContent.trim() : "";
       numericCols.forEach(function (ci) {
         var cell = cells[ci];
         if (!cell) return;
         var raw = cell.textContent.replace(/,/g, "").trim();
         var n = parseInt(raw, 10);
-        if (isNaN(n) || n <= 0 || n >= 25) return;
-        var id = "sm-tip-" + (++_tipSeq);
-        var country = cells[0] ? cells[0].textContent.trim() : "";
+        if (isNaN(n) || n <= 0) return;
         var colName = headers[ci] ? headers[ci].textContent.trim() : "";
         // Store original value so sorting still works after innerHTML change
         cell.dataset.sortVal = String(n);
-        cell.innerHTML =
-          '<span class="sm-tip" tabindex="0" aria-describedby="' + id + '">' +
-          cell.textContent +
-          "</span>" +
-          '<span role="tooltip" id="' + id + '" class="sm-tooltip-popup">' +
-          colName + ": " + n + " for " + country +
-          ". Small sample — interpret with caution." +
-          "</span>";
+
+        if (twitterXCols.indexOf(ci) !== -1) {
+          // ── Twitter / X column ───────────────────────────────────────────
+          // Retrieve the scanned-page URLs that link to Twitter/X for this country.
+          var urls = (typeof SM_TWITTER_X_URLS !== "undefined" && SM_TWITTER_X_URLS[country]) || [];
+          if (n < 25) {
+            // Tooltip: list the actual site URLs (WCAG 2.2 AA, role="tooltip").
+            var id = "sm-tip-" + (++_tipSeq);
+            var tipContent = urls.length > 0
+              ? urls.map(function (u) { return _escHtml(u); }).join("<br>")
+              : n + " site(s)";
+            cell.innerHTML =
+              '<span class="sm-tip" tabindex="0" aria-describedby="' + id + '">' +
+              raw + "</span>" +
+              '<span role="tooltip" id="' + id + '" class="sm-tooltip-popup">' +
+              "<strong>" + _escHtml(colName) + " (" + n + " site" + (n === 1 ? "" : "s") + "):</strong><br>" +
+              tipContent +
+              "</span>";
+          } else {
+            // Details/summary: accessible expandable list for ≥ 25 sites.
+            cell.innerHTML = _buildTwXDetails(urls, n, colName);
+          }
+        } else if (n < 25) {
+          // ── Other numeric column ─────────────────────────────────────────
+          // Generic "small sample" tooltip for any other column with < 25.
+          var id = "sm-tip-" + (++_tipSeq);
+          cell.innerHTML =
+            '<span class="sm-tip" tabindex="0" aria-describedby="' + id + '">' +
+            raw +
+            "</span>" +
+            '<span role="tooltip" id="' + id + '" class="sm-tooltip-popup">' +
+            colName + ": " + n + " for " + country +
+            ". Small sample — interpret with caution." +
+            "</span>";
+        }
       });
     });
 
@@ -703,7 +815,34 @@ def _build_interactive_block() -> list[str]:
     });
   }
 
-  // ── Sortable column headers ──────────────────────────────────────────────
+  // Build an accessible <details>/<summary> widget listing sites that link to
+  // Twitter/X.  Used when count >= 25 (too many for a tooltip).
+  function _buildTwXDetails(urls, count, colName) {
+    var label = _escHtml(colName) + ": " + count + " site" + (count === 1 ? "" : "s");
+    var items = urls.length > 0
+      ? urls.map(function (u) {
+          return '<li><a href="' + _escHtml(u) + '" rel="noopener noreferrer">' +
+                 _escHtml(u) + "</a></li>";
+        }).join("")
+      : "<li>" + count + " site(s)</li>";
+    return (
+      '<details class="sm-tw-details">' +
+      '<summary class="sm-tw-summary" aria-label="' + label + '">' + label + "</summary>" +
+      '<ul class="sm-tw-list">' + items + "</ul>" +
+      "</details>"
+    );
+  }
+
+  // HTML-escape a string for safe insertion into attribute values and content.
+  function _escHtml(str) {
+    return String(str)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#39;");
+  }
+
   function addSortable() {
     var countryTable = _findCountryTable();
     if (!countryTable) return;
@@ -847,7 +986,7 @@ def _build_interactive_block() -> list[str]:
 })();
 </script>"""
 
-    return ["", css, "", js]
+    return ["", css, "", data_script, "", js]
 
 
 # ---------------------------------------------------------------------------
@@ -879,12 +1018,14 @@ def generate_social_media_report(
     if not db_path.exists():
         summary: dict = {}
         by_country: list[dict] = []
+        twitter_x_urls: dict[str, list[str]] = {}
     else:
         conn = sqlite3.connect(db_path)
         conn.row_factory = sqlite3.Row
         try:
             summary = _query_summary(conn)
             by_country = _query_by_country(conn)
+            twitter_x_urls = _query_twitter_x_urls_by_country(conn)
         finally:
             conn.close()
 
@@ -933,7 +1074,7 @@ def generate_social_media_report(
         )
         return False
 
-    new_block = _build_stats_block(summary, generated_at, total_available, by_country, seed_counts)
+    new_block = _build_stats_block(summary, generated_at, total_available, by_country, seed_counts, twitter_x_urls)
     new_content = (
         content[:start_idx]
         + new_block
