@@ -127,6 +127,130 @@ def _query_by_country(conn: sqlite3.Connection) -> list[dict]:
 
 
 # ---------------------------------------------------------------------------
+# Digital Sovereignty helpers
+# ---------------------------------------------------------------------------
+
+def _sovereignty_score(row: dict) -> float:
+    """Sovereignty score: % of reachable pages with no-social or modern-only presence.
+
+    Higher scores indicate more digital sovereignty (fewer links to US corporate
+    social-media platforms).  Pages with no social media at all score highest;
+    pages linking *only* to Mastodon or Bluesky also rank well.
+    """
+    reachable = max(row.get("reachable", 0), 1)
+    sovereign = row.get("no_social", 0) + row.get("modern_only", 0)
+    return round(sovereign / reachable * 100, 1)
+
+
+def _legacy_exposure(row: dict) -> float:
+    """Legacy exposure: % of reachable pages with any legacy-platform link.
+
+    "Legacy" means Twitter, X, Facebook, or LinkedIn — centralised platforms
+    headquartered in the USA.
+    """
+    reachable = max(row.get("reachable", 0), 1)
+    return round(row.get("has_any_legacy", 0) / reachable * 100, 1)
+
+
+def _sovereignty_tier(score: float, legacy_pct: float) -> str:
+    """Return a human-readable Digital Sovereignty tier label.
+
+    Args:
+        score: Sovereignty score (0–100) from :func:`_sovereignty_score`.
+        legacy_pct: Legacy-platform exposure (0–100) from :func:`_legacy_exposure`.
+
+    Returns:
+        One of: "🥇 Leader", "🥈 Strong", "🥉 Growing",
+        "⚠️ Legacy-heavy", or "➡️ Mixed".
+    """
+    if score >= 80 and legacy_pct <= 5:
+        return "🥇 Leader"
+    if score >= 60 and legacy_pct <= 20:
+        return "🥈 Strong"
+    if score >= 40:
+        return "🥉 Growing"
+    if legacy_pct >= 50:
+        return "⚠️ Legacy-heavy"
+    return "➡️ Mixed"
+
+
+def _enrich_sovereignty_metrics(row: dict) -> dict:
+    """Return a copy of *row* with sovereignty_score, legacy_exposure, and tier added.
+
+    If the row has no reachable pages, ``sovereignty_score`` and
+    ``legacy_exposure`` are set to ``None`` and the tier defaults to
+    ``"➡️ Mixed"`` (insufficient data).
+    """
+    entry = dict(row)
+    reachable = row.get("reachable", 0)
+    if reachable:
+        score = _sovereignty_score(row)
+        leg_pct = _legacy_exposure(row)
+    else:
+        score = leg_pct = None
+    entry["sovereignty_score"] = score
+    entry["legacy_exposure"] = leg_pct
+    entry["sovereignty_tier"] = _sovereignty_tier(score or 0.0, leg_pct or 0.0)
+    return entry
+
+
+def _build_sovereignty_section(by_country: list[dict]) -> list[str]:
+    """Return Markdown lines for the Digital Sovereignty Rankings section.
+
+    Countries are ranked by their Digital Sovereignty Score (descending), with
+    legacy-platform exposure used as a tiebreaker (lower is better).  Only
+    countries with at least one reachable page are included.
+
+    The section explains the scoring methodology and lists the tier each
+    country falls into so readers can quickly identify leaders, strong
+    performers, and countries still dominated by US corporate platforms.
+    """
+    ranked = []
+    for row in by_country:
+        if row.get("reachable", 0) == 0:
+            continue
+        entry = _enrich_sovereignty_metrics(row)
+        ranked.append({
+            "country_code": row["country_code"],
+            "score": entry["sovereignty_score"],
+            "legacy_pct": entry["legacy_exposure"],
+            "no_social": row.get("no_social", 0),
+            "modern_only": row.get("modern_only", 0),
+            "has_any_legacy": row.get("has_any_legacy", 0),
+            "reachable": row.get("reachable", 0),
+            "tier": entry["sovereignty_tier"],
+        })
+
+    if not ranked:
+        return []
+
+    # Sort: higher sovereignty score first; lower legacy exposure as tiebreaker.
+    ranked.sort(key=lambda r: (-r["score"], r["legacy_pct"]))
+
+    lines = [
+        "",
+        "---",
+        "",
+        "## Digital Sovereignty Rankings",
+        "",
+        "Countries ranked by **Digital Sovereignty Score** — the percentage of reachable pages using *no social media* or *modern open platforms only* (Mastodon / Bluesky).  A higher score means fewer links to US corporate social-media platforms (Twitter / X, Facebook, LinkedIn).  Pages with no social-media links at all score highest; pages linking only to Mastodon or Bluesky also rank well.  **Legacy Exposure** shows the percentage of reachable pages that still link to Twitter/X, Facebook, or LinkedIn.",
+        "",
+        "| Rank | Country | Sovereignty Score | No Social | Modern Only"
+        " | Legacy Exposure | Tier |",
+        "|------|---------|:-----------------:|:---------:|:-----------:"
+        "|:---------------:|------|",
+    ]
+    for i, r in enumerate(ranked, start=1):
+        lines.append(
+            f"| {i} | {r['country_code']} | {r['score']:.1f}% | "
+            f"{r['no_social']:,} | {r['modern_only']:,} | "
+            f"{r['legacy_pct']:.1f}% | {r['tier']} |"
+        )
+
+    return lines
+
+
+# ---------------------------------------------------------------------------
 # SVG pie chart builder
 # ---------------------------------------------------------------------------
 
@@ -377,15 +501,25 @@ def _build_stats_block(
         "[social-media-data.json](social-media-data.json)",
     ]
 
+    # Digital Sovereignty Rankings section (leaderboard)
+    if by_country:
+        lines += _build_sovereignty_section(by_country)
+
     # Per-country breakdown table
-    # Column order: Country | Scanned | Available | Reachable | No Social |
-    #   Legacy-only | Twitter | X | Facebook | LinkedIn |
+    # Column order: Country | Scanned | Available | Reachable | Sov. Score |
+    #   No Social | Legacy-only | Twitter | X | Facebook | LinkedIn |
     #   Modern | Mixed | Bluesky | Mastodon | Scan Period
     #
     # "Available" = total pages in the TOON seed file (all government pages tracked).
     # "Reachable" = pages that returned a valid HTTP response when scanned
     #               (not 404 / 500 / timeout).
+    # "Sov. Score" = Digital Sovereignty Score (% reachable with no/modern social only).
     if by_country:
+        # Overall sovereignty score from totals
+        tot_sov_score = (
+            f"{(tot_no_social + tot_modern_only) / max(tot_reachable, 1) * 100:.1f}%"
+            if tot_reachable else "—"
+        )
         lines += [
             "",
             "---",
@@ -395,13 +529,15 @@ def _build_stats_block(
             "**Available**: all government pages tracked in our domain list. "
             "**Reachable**: of those scanned, pages that returned a valid HTTP response "
             "(not an error or timeout). "
+            "**Sov. Score**: Digital Sovereignty Score — % of reachable pages with "
+            "no social media or modern-only social presence. "
             "Tier columns classify each page by its overall social media presence; "
             "platform columns count pages with at least one link to that platform — "
             "a page may appear in more than one platform column.",
             "",
-            "| Country | Scanned | Available | Reachable | No Social | Legacy-only |"
+            "| Country | Scanned | Available | Reachable | Sov. Score | No Social | Legacy-only |"
             " Twitter | X | Facebook | LinkedIn | Modern | Mixed | Bluesky | Mastodon | Scan Period |",
-            "|---------|---------|-----------|-----------|-----------|-------------|"
+            "|---------|---------|-----------|-----------|:----------:|-----------|-------------|"
             "---------|---|----------|----------|--------|-------|---------|----------|-------------|",
         ]
         for row in by_country:
@@ -409,8 +545,13 @@ def _build_stats_block(
             available = seed_counts.get(cc, 0)
             avail_str = f"{available:,}" if available else "—"
             period = _scan_period(row.get("first_scan"), row.get("last_scan"))
+            sov = (
+                f"{_sovereignty_score(row):.1f}%"
+                if row.get("reachable", 0) else "—"
+            )
             lines.append(
                 f"| {cc} | {row['total_scanned']:,} | {avail_str} | {row['reachable']:,} | "
+                f"{sov} | "
                 f"{row.get('no_social', 0):,} | {row.get('twitter_only', 0):,} | "
                 f"{row.get('twitter_pages', 0):,} | {row.get('x_pages', 0):,} | "
                 f"{row.get('facebook_pages', 0):,} | {row.get('linkedin_pages', 0):,} | "
@@ -423,6 +564,7 @@ def _build_stats_block(
         tot_avail_str = f"**{tot_avail:,}**" if tot_avail else "—"
         lines.append(
             f"| **Total** | **{tot_scanned:,}** | {tot_avail_str} | **{tot_reachable:,}** | "
+            f"**{tot_sov_score}** | "
             f"**{tot_no_social:,}** | **{tot_twitter_only:,}** | "
             f"**{tot_tw:,}** | **{tot_x:,}** | **{tot_fb:,}** | **{tot_li:,}** | "
             f"**{tot_modern_only:,}** | **{tot_mixed:,}** | "
@@ -521,7 +663,7 @@ def _build_interactive_block() -> list[str]:
     var numericCols = [];
     headers.forEach(function (th, i) {
       var t = th.textContent.trim();
-      if (t !== "Country" && t !== "Scan Period" && t !== "Non-X Score") {
+      if (t !== "Country" && t !== "Scan Period" && t !== "Sov. Score") {
         numericCols.push(i);
       }
     });
@@ -685,7 +827,7 @@ def _build_interactive_block() -> list[str]:
     var found = null;
     document.querySelectorAll("table").forEach(function (t) {
       t.querySelectorAll("th").forEach(function (th) {
-        if (th.textContent.trim() === "Non-X Score") found = t;
+        if (th.textContent.trim() === "Scan Period") found = t;
       });
     });
     return found;
@@ -751,6 +893,8 @@ def generate_social_media_report(
 
     # --- write the JSON data file -----------------------------------------
     data_path.parent.mkdir(parents=True, exist_ok=True)
+    # Enrich each per-country row with computed sovereignty metrics.
+    enriched_by_country = [_enrich_sovereignty_metrics(row) for row in by_country]
     data: dict = {
         "generated_at": generated_at,
         "summary": {
@@ -767,7 +911,7 @@ def generate_social_media_report(
             "first_scan": summary.get("first_scan"),
             "last_scan": summary.get("last_scan"),
         },
-        "by_country": by_country,
+        "by_country": enriched_by_country,
     }
     data_path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"Data file written: {data_path}")
