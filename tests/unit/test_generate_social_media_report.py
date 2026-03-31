@@ -10,8 +10,13 @@ import pytest
 
 from src.cli.generate_social_media_report import (
     _build_stats_block,
+    _build_sovereignty_section,
+    _enrich_sovereignty_metrics,
+    _legacy_exposure,
     _query_by_country,
     _query_summary,
+    _sovereignty_score,
+    _sovereignty_tier,
     generate_social_media_report,
 )
 from src.storage.schema import initialize_schema
@@ -613,4 +618,211 @@ def test_generate_social_media_report_json_includes_facebook_linkedin(
     assert "linkedin_pages" in data["summary"]
     assert data["summary"]["facebook_pages"] == 1   # one France page has Facebook
     assert data["summary"]["linkedin_pages"] == 0
+
+
+# ---------------------------------------------------------------------------
+# Tests for Digital Sovereignty helpers and section
+# ---------------------------------------------------------------------------
+
+def test_sovereignty_score_all_no_social():
+    """Score should be 100% when all reachable pages have no social links."""
+    row = {"reachable": 10, "no_social": 10, "modern_only": 0}
+    assert _sovereignty_score(row) == 100.0
+
+
+def test_sovereignty_score_all_modern_only():
+    """Score should be 100% when all reachable pages use modern platforms only."""
+    row = {"reachable": 10, "no_social": 0, "modern_only": 10}
+    assert _sovereignty_score(row) == 100.0
+
+
+def test_sovereignty_score_mixed():
+    """Score reflects the proportion of no_social + modern_only pages."""
+    row = {"reachable": 20, "no_social": 10, "modern_only": 5}
+    assert _sovereignty_score(row) == 75.0  # 15/20
+
+
+def test_sovereignty_score_zero_reachable():
+    """Score should not raise; uses max(reachable, 1) guard."""
+    row = {"reachable": 0, "no_social": 0, "modern_only": 0}
+    assert _sovereignty_score(row) == 0.0
+
+
+def test_legacy_exposure_all_legacy():
+    """Legacy exposure should be 100% when all reachable pages link to legacy platforms."""
+    row = {"reachable": 5, "has_any_legacy": 5}
+    assert _legacy_exposure(row) == 100.0
+
+
+def test_legacy_exposure_none():
+    """Legacy exposure should be 0% when no pages link to legacy platforms."""
+    row = {"reachable": 5, "has_any_legacy": 0}
+    assert _legacy_exposure(row) == 0.0
+
+
+def test_legacy_exposure_partial():
+    """Legacy exposure reflects the ratio of legacy-linked pages to reachable."""
+    row = {"reachable": 10, "has_any_legacy": 3}
+    assert _legacy_exposure(row) == 30.0
+
+
+def test_sovereignty_tier_leader():
+    """Should be Leader when score >= 80 and legacy <= 5."""
+    assert _sovereignty_tier(85.0, 3.0) == "🥇 Leader"
+
+
+def test_sovereignty_tier_strong():
+    """Should be Strong when score >= 60 and legacy <= 20."""
+    assert _sovereignty_tier(65.0, 15.0) == "🥈 Strong"
+
+
+def test_sovereignty_tier_growing():
+    """Should be Growing when score >= 40."""
+    assert _sovereignty_tier(45.0, 30.0) == "🥉 Growing"
+
+
+def test_sovereignty_tier_legacy_heavy():
+    """Should be Legacy-heavy when legacy_pct >= 50 and score is low."""
+    assert _sovereignty_tier(10.0, 60.0) == "⚠️ Legacy-heavy"
+
+
+def test_sovereignty_tier_mixed():
+    """Should be Mixed for moderate scores that don't fit other tiers."""
+    assert _sovereignty_tier(20.0, 35.0) == "➡️ Mixed"
+
+
+def test_build_sovereignty_section_empty():
+    """Should return empty list when by_country is empty."""
+    assert _build_sovereignty_section([]) == []
+
+
+def test_enrich_sovereignty_metrics_with_reachable():
+    """_enrich_sovereignty_metrics should add sovereignty fields to a row dict."""
+    row = {
+        "country_code": "TEST", "reachable": 10, "no_social": 6,
+        "modern_only": 2, "has_any_legacy": 1,
+    }
+    enriched = _enrich_sovereignty_metrics(row)
+    assert enriched["sovereignty_score"] == 80.0   # (6+2)/10
+    assert enriched["legacy_exposure"] == 10.0     # 1/10
+    # score=80, legacy=10 → Strong (Leader needs legacy <= 5)
+    assert enriched["sovereignty_tier"] == "🥈 Strong"
+    # Original row should not be mutated
+    assert "sovereignty_score" not in row
+
+
+def test_enrich_sovereignty_metrics_zero_reachable():
+    """_enrich_sovereignty_metrics should set score/exposure to None when no reachable pages."""
+    row = {"country_code": "EMPTY", "reachable": 0, "no_social": 0, "modern_only": 0, "has_any_legacy": 0}
+    enriched = _enrich_sovereignty_metrics(row)
+    assert enriched["sovereignty_score"] is None
+    assert enriched["legacy_exposure"] is None
+
+
+def test_build_sovereignty_section_skips_zero_reachable():
+    """Countries with reachable = 0 should be excluded from the leaderboard."""
+    rows = [
+        {"country_code": "NOWHERE", "reachable": 0, "no_social": 0,
+         "modern_only": 0, "has_any_legacy": 0},
+    ]
+    assert _build_sovereignty_section(rows) == []
+
+
+def test_build_sovereignty_section_sorted_by_score():
+    """Countries should be sorted by sovereignty score descending."""
+    rows = [
+        {"country_code": "LOW", "reachable": 10, "no_social": 2,
+         "modern_only": 0, "has_any_legacy": 8},
+        {"country_code": "HIGH", "reachable": 10, "no_social": 9,
+         "modern_only": 1, "has_any_legacy": 0},
+    ]
+    lines = _build_sovereignty_section(rows)
+    content = "\n".join(lines)
+    # HIGH should appear before LOW in the output
+    assert content.index("HIGH") < content.index("LOW")
+
+
+def test_build_sovereignty_section_contains_key_fields():
+    """Leaderboard should contain country code, score, and tier columns."""
+    rows = [
+        {"country_code": "ICELAND", "reachable": 10, "no_social": 8,
+         "modern_only": 2, "has_any_legacy": 0},
+    ]
+    lines = _build_sovereignty_section(rows)
+    content = "\n".join(lines)
+    assert "ICELAND" in content
+    assert "100.0%" in content       # sovereignty score
+    assert "0.0%" in content         # legacy exposure
+    assert "🥇 Leader" in content    # tier
+
+
+def test_build_stats_block_includes_sovereignty_section(populated_db: Path):
+    """Stats block should include the Digital Sovereignty Rankings section."""
+    conn = sqlite3.connect(populated_db)
+    conn.row_factory = sqlite3.Row
+    try:
+        summary = _query_summary(conn)
+        by_country = _query_by_country(conn)
+    finally:
+        conn.close()
+
+    block = _build_stats_block(summary, "2024-06-01 12:00 UTC", by_country=by_country)
+
+    assert "Digital Sovereignty Rankings" in block
+    assert "Sovereignty Score" in block
+    assert "Legacy Exposure" in block
+
+
+def test_build_stats_block_country_table_has_sov_score_column(populated_db: Path):
+    """Per-country table should include a Sov. Score column."""
+    conn = sqlite3.connect(populated_db)
+    conn.row_factory = sqlite3.Row
+    try:
+        summary = _query_summary(conn)
+        by_country = _query_by_country(conn)
+    finally:
+        conn.close()
+
+    block = _build_stats_block(summary, "2024-06-01 12:00 UTC", by_country=by_country)
+
+    # Find the header row of the detailed country table
+    header_line = None
+    for line in block.splitlines():
+        if "Sov. Score" in line and "Scan Period" in line:
+            header_line = line
+            break
+
+    assert header_line is not None, "Sov. Score column not found in country table header"
+    # Sov. Score should come before No Social
+    sov_pos = header_line.index("Sov. Score")
+    ns_pos = header_line.index("No Social")
+    assert sov_pos < ns_pos, "Sov. Score column should appear before No Social"
+
+
+def test_generate_social_media_report_json_includes_sovereignty(
+    populated_db: Path, tmp_path: Path
+):
+    """JSON data file should include sovereignty_score and sovereignty_tier per country."""
+    page_path = tmp_path / "social-media.md"
+    page_path.write_text(_SOCIAL_MEDIA_PAGE_TEMPLATE)
+    data_path = tmp_path / "social-media-data.json"
+
+    generate_social_media_report(populated_db, page_path, data_path)
+
+    data = json.loads(data_path.read_text())
+    assert "by_country" in data
+    for entry in data["by_country"]:
+        assert "sovereignty_score" in entry, f"Missing sovereignty_score for {entry['country_code']}"
+        assert "sovereignty_tier" in entry, f"Missing sovereignty_tier for {entry['country_code']}"
+        assert "legacy_exposure" in entry, f"Missing legacy_exposure for {entry['country_code']}"
+
+    # ICELAND has 2 reachable pages: 1 twitter_only, 1 modern_only
+    iceland = next(e for e in data["by_country"] if e["country_code"] == "ICELAND")
+    # modern_only=1, no_social=0, reachable=2 → score = 1/2*100 = 50.0
+    assert iceland["sovereignty_score"] == 50.0
+
+    # FRANCE has 2 reachable pages: 1 twitter_only, 1 no_social
+    france = next(e for e in data["by_country"] if e["country_code"] == "FRANCE")
+    # no_social=1, modern_only=0, reachable=2 → score = 1/2*100 = 50.0
+    assert france["sovereignty_score"] == 50.0
 
