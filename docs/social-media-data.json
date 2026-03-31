@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-03-30 23:38 UTC",
+  "generated_at": "2026-03-31 00:28 UTC",
   "summary": {
-    "total_batches": 86,
-    "total_scanned": 51339,
-    "total_reachable": 47422,
+    "total_batches": 85,
+    "total_scanned": 48252,
+    "total_reachable": 44476,
     "total_available": 82714,
-    "twitter_pages": 8879,
-    "x_pages": 1903,
-    "bluesky_pages": 462,
-    "mastodon_pages": 2666,
-    "facebook_pages": 1024,
-    "linkedin_pages": 444,
+    "twitter_pages": 8097,
+    "x_pages": 1783,
+    "bluesky_pages": 451,
+    "mastodon_pages": 2542,
+    "facebook_pages": 0,
+    "linkedin_pages": 0,
     "first_scan": "2026-03-22T00:36:33.003106+00:00",
-    "last_scan": "2026-03-30T18:09:05.087155+00:00"
+    "last_scan": "2026-03-30T13:12:18.911979+00:00"
   },
   "by_country": [
     {
@@ -32,7 +32,10 @@
       "has_any_legacy": 52,
       "has_any_modern": 47,
       "first_scan": "2026-03-22T00:36:33.003106+00:00",
-      "last_scan": "2026-03-25T09:45:59.237101+00:00"
+      "last_scan": "2026-03-25T09:45:59.237101+00:00",
+      "sovereignty_score": 93.4,
+      "legacy_exposure": 6.6,
+      "sovereignty_tier": "🥈 Strong"
     },
     {
       "country_code": "BELGIUM",
@@ -51,7 +54,10 @@
       "has_any_legacy": 253,
       "has_any_modern": 105,
       "first_scan": "2026-03-22T01:05:38.430207+00:00",
-      "last_scan": "2026-03-25T10:29:16.778287+00:00"
+      "last_scan": "2026-03-25T10:29:16.778287+00:00",
+      "sovereignty_score": 80.2,
+      "legacy_exposure": 20.6,
+      "sovereignty_tier": "🥉 Growing"
     },
     {
       "country_code": "BULGARIA",
@@ -70,7 +76,10 @@
       "has_any_legacy": 23,
       "has_any_modern": 13,
       "first_scan": "2026-03-22T01:54:24.709226+00:00",
-      "last_scan": "2026-03-25T10:42:04.934552+00:00"
+      "last_scan": "2026-03-25T10:42:04.934552+00:00",
+      "sovereignty_score": 91.4,
+      "legacy_exposure": 8.6,
+      "sovereignty_tier": "🥈 Strong"
     },
     {
       "country_code": "CROATIA",
@@ -89,7 +98,10 @@
       "has_any_legacy": 34,
       "has_any_modern": 14,
       "first_scan": "2026-03-22T02:07:26.039772+00:00",
-      "last_scan": "2026-03-25T10:50:15.268092+00:00"
+      "last_scan": "2026-03-25T10:50:15.268092+00:00",
+      "sovereignty_score": 85.3,
+      "legacy_exposure": 14.7,
+      "sovereignty_tier": "🥈 Strong"
     },
     {
       "country_code": "CZECHIA",
@@ -108,7 +120,10 @@
       "has_any_legacy": 139,
       "has_any_modern": 36,
       "first_scan": "2026-03-22T02:16:47.036985+00:00",
-      "last_scan": "2026-03-25T14:37:09.247971+00:00"
+      "last_scan": "2026-03-25T14:37:09.247971+00:00",
+      "sovereignty_score": 82.7,
+      "legacy_exposure": 17.3,
+      "sovereignty_tier": "🥈 Strong"
     },
     {
       "country_code": "DENMARK",
@@ -127,7 +142,10 @@
       "has_any_legacy": 194,
       "has_any_modern": 27,
       "first_scan": "2026-03-25T14:37:10.950638+00:00",
-      "last_scan": "2026-03-25T15:21:47.095000+00:00"
+      "last_scan": "2026-03-25T15:21:47.095000+00:00",
+      "sovereignty_score": 87.1,
+      "legacy_exposure": 12.9,
+      "sovereignty_tier": "🥈 Strong"
     },
     {
       "country_code": "ESTONIA",
@@ -146,7 +164,10 @@
       "has_any_legacy": 69,
       "has_any_modern": 26,
       "first_scan": "2026-03-25T15:21:48.567834+00:00",
-      "last_scan": "2026-03-25T15:36:55.350147+00:00"
+      "last_scan": "2026-03-25T15:36:55.350147+00:00",
+      "sovereignty_score": 82.0,
+      "legacy_exposure": 18.0,
+      "sovereignty_tier": "🥈 Strong"
     },
     {
       "country_code": "FINLAND",
@@ -165,7 +186,10 @@
       "has_any_legacy": 38,
       "has_any_modern": 2,
       "first_scan": "2026-03-25T15:36:57.288884+00:00",
-      "last_scan": "2026-03-25T15:43:46.659780+00:00"
+      "last_scan": "2026-03-25T15:43:46.659780+00:00",
+      "sovereignty_score": 77.9,
+      "legacy_exposure": 22.1,
+      "sovereignty_tier": "🥉 Growing"
     },
     {
       "country_code": "FRANCE",
@@ -184,7 +208,10 @@
       "has_any_legacy": 2296,
       "has_any_modern": 573,
       "first_scan": "2026-03-25T15:43:48.896505+00:00",
-      "last_scan": "2026-03-27T05:52:40.134124+00:00"
+      "last_scan": "2026-03-27T05:52:40.134124+00:00",
+      "sovereignty_score": 75.5,
+      "legacy_exposure": 24.5,
+      "sovereignty_tier": "🥉 Growing"
     },
     {
       "country_code": "GERMANY",
@@ -203,7 +230,10 @@
       "has_any_legacy": 1274,
       "has_any_modern": 492,
       "first_scan": "2026-03-27T05:52:42.257416+00:00",
-      "last_scan": "2026-03-27T12:15:00.226412+00:00"
+      "last_scan": "2026-03-27T12:15:00.226412+00:00",
+      "sovereignty_score": 80.2,
+      "legacy_exposure": 19.8,
+      "sovereignty_tier": "🥈 Strong"
     },
     {
       "country_code": "GREECE",
@@ -222,7 +252,10 @@
       "has_any_legacy": 283,
       "has_any_modern": 94,
       "first_scan": "2026-03-27T12:15:03.098809+00:00",
-      "last_scan": "2026-03-27T17:30:26.594437+00:00"
+      "last_scan": "2026-03-27T17:30:26.594437+00:00",
+      "sovereignty_score": 82.4,
+      "legacy_exposure": 17.6,
+      "sovereignty_tier": "🥈 Strong"
     },
     {
       "country_code": "HUNGARY",
@@ -241,7 +274,10 @@
       "has_any_legacy": 29,
       "has_any_modern": 25,
       "first_scan": "2026-03-27T17:30:29.403664+00:00",
-      "last_scan": "2026-03-27T17:46:46.446596+00:00"
+      "last_scan": "2026-03-27T17:46:46.446596+00:00",
+      "sovereignty_score": 92.1,
+      "legacy_exposure": 7.9,
+      "sovereignty_tier": "🥈 Strong"
     },
     {
       "country_code": "ICELAND",
@@ -260,7 +296,10 @@
       "has_any_legacy": 11,
       "has_any_modern": 14,
       "first_scan": "2026-03-27T17:46:49.186259+00:00",
-      "last_scan": "2026-03-27T17:52:45.056918+00:00"
+      "last_scan": "2026-03-27T17:52:45.056918+00:00",
+      "sovereignty_score": 91.9,
+      "legacy_exposure": 8.1,
+      "sovereignty_tier": "🥈 Strong"
     },
     {
       "country_code": "IRELAND",
@@ -279,7 +318,10 @@
       "has_any_legacy": 178,
       "has_any_modern": 54,
       "first_scan": "2026-03-27T17:52:46.833606+00:00",
-      "last_scan": "2026-03-27T23:40:08.303614+00:00"
+      "last_scan": "2026-03-27T23:40:08.303614+00:00",
+      "sovereignty_score": 64.0,
+      "legacy_exposure": 36.0,
+      "sovereignty_tier": "🥉 Growing"
     },
     {
       "country_code": "ITALY",
@@ -298,7 +340,10 @@
       "has_any_legacy": 2059,
       "has_any_modern": 249,
       "first_scan": "2026-03-27T23:40:09.926644+00:00",
-      "last_scan": "2026-03-28T08:01:39.159103+00:00"
+      "last_scan": "2026-03-28T08:01:39.159103+00:00",
+      "sovereignty_score": 56.5,
+      "legacy_exposure": 43.5,
+      "sovereignty_tier": "🥉 Growing"
     },
     {
       "country_code": "LATVIA",
@@ -317,7 +362,10 @@
       "has_any_legacy": 322,
       "has_any_modern": 83,
       "first_scan": "2026-03-28T08:01:40.928419+00:00",
-      "last_scan": "2026-03-28T10:54:34.436401+00:00"
+      "last_scan": "2026-03-28T10:54:34.436401+00:00",
+      "sovereignty_score": 58.1,
+      "legacy_exposure": 41.9,
+      "sovereignty_tier": "🥉 Growing"
     },
     {
       "country_code": "LITHUANIA",
@@ -336,7 +384,10 @@
       "has_any_legacy": 5,
       "has_any_modern": 4,
       "first_scan": "2026-03-28T10:54:36.185229+00:00",
-      "last_scan": "2026-03-28T11:00:21.813392+00:00"
+      "last_scan": "2026-03-28T11:00:21.813392+00:00",
+      "sovereignty_score": 95.4,
+      "legacy_exposure": 4.6,
+      "sovereignty_tier": "🥇 Leader"
     },
     {
       "country_code": "LUXEMBOURG",
@@ -355,7 +406,10 @@
       "has_any_legacy": 46,
       "has_any_modern": 36,
       "first_scan": "2026-03-28T11:00:23.616457+00:00",
-      "last_scan": "2026-03-28T11:16:15.921404+00:00"
+      "last_scan": "2026-03-28T11:16:15.921404+00:00",
+      "sovereignty_score": 81.6,
+      "legacy_exposure": 18.4,
+      "sovereignty_tier": "🥈 Strong"
     },
     {
       "country_code": "MALTA",
@@ -374,7 +428,10 @@
       "has_any_legacy": 74,
       "has_any_modern": 34,
       "first_scan": "2026-03-28T11:16:17.605053+00:00",
-      "last_scan": "2026-03-28T11:38:58.534771+00:00"
+      "last_scan": "2026-03-28T11:38:58.534771+00:00",
+      "sovereignty_score": 87.6,
+      "legacy_exposure": 12.4,
+      "sovereignty_tier": "🥈 Strong"
     },
     {
       "country_code": "NETHERLANDS",
@@ -393,7 +450,10 @@
       "has_any_legacy": 211,
       "has_any_modern": 103,
       "first_scan": "2026-03-28T11:39:00.853492+00:00",
-      "last_scan": "2026-03-28T12:05:38.998362+00:00"
+      "last_scan": "2026-03-28T12:05:38.998362+00:00",
+      "sovereignty_score": 76.8,
+      "legacy_exposure": 23.2,
+      "sovereignty_tier": "🥉 Growing"
     },
     {
       "country_code": "NORWAY",
@@ -412,7 +472,10 @@
       "has_any_legacy": 20,
       "has_any_modern": 2,
       "first_scan": "2026-03-28T12:05:40.388763+00:00",
-      "last_scan": "2026-03-28T12:12:39.976838+00:00"
+      "last_scan": "2026-03-28T12:12:39.976838+00:00",
+      "sovereignty_score": 91.4,
+      "legacy_exposure": 8.6,
+      "sovereignty_tier": "🥈 Strong"
     },
     {
       "country_code": "POLAND",
@@ -431,7 +494,10 @@
       "has_any_legacy": 626,
       "has_any_modern": 434,
       "first_scan": "2026-03-28T12:12:41.498832+00:00",
-      "last_scan": "2026-03-29T04:52:21.757944+00:00"
+      "last_scan": "2026-03-29T04:52:21.757944+00:00",
+      "sovereignty_score": 89.0,
+      "legacy_exposure": 11.0,
+      "sovereignty_tier": "🥈 Strong"
     },
     {
       "country_code": "PORTUGAL",
@@ -450,7 +516,10 @@
       "has_any_legacy": 244,
       "has_any_modern": 82,
       "first_scan": "2026-03-29T16:06:49.938895+00:00",
-      "last_scan": "2026-03-29T17:55:48.992370+00:00"
+      "last_scan": "2026-03-29T17:55:48.992370+00:00",
+      "sovereignty_score": 87.4,
+      "legacy_exposure": 12.6,
+      "sovereignty_tier": "🥈 Strong"
     },
     {
       "country_code": "REPUBLIC_OF_CYPRUS",
@@ -469,7 +538,10 @@
       "has_any_legacy": 5,
       "has_any_modern": 0,
       "first_scan": "2026-03-29T23:25:11.016669+00:00",
-      "last_scan": "2026-03-29T23:25:58.209751+00:00"
+      "last_scan": "2026-03-29T23:25:58.209751+00:00",
+      "sovereignty_score": 79.2,
+      "legacy_exposure": 20.8,
+      "sovereignty_tier": "🥉 Growing"
     },
     {
       "country_code": "ROMANIA",
@@ -488,7 +560,10 @@
       "has_any_legacy": 23,
       "has_any_modern": 6,
       "first_scan": "2026-03-29T23:26:02.362840+00:00",
-      "last_scan": "2026-03-30T01:13:57.826874+00:00"
+      "last_scan": "2026-03-30T01:13:57.826874+00:00",
+      "sovereignty_score": 90.0,
+      "legacy_exposure": 10.0,
+      "sovereignty_tier": "🥈 Strong"
     },
     {
       "country_code": "SLOVAKIA",
@@ -507,7 +582,10 @@
       "has_any_legacy": 22,
       "has_any_modern": 12,
       "first_scan": "2026-03-30T03:04:41.069781+00:00",
-      "last_scan": "2026-03-30T03:22:08.426100+00:00"
+      "last_scan": "2026-03-30T03:22:08.426100+00:00",
+      "sovereignty_score": 94.6,
+      "legacy_exposure": 5.4,
+      "sovereignty_tier": "🥈 Strong"
     },
     {
       "country_code": "SLOVENIA",
@@ -526,7 +604,10 @@
       "has_any_legacy": 24,
       "has_any_modern": 9,
       "first_scan": "2026-03-30T03:22:10.450965+00:00",
-      "last_scan": "2026-03-30T03:30:14.714019+00:00"
+      "last_scan": "2026-03-30T03:30:14.714019+00:00",
+      "sovereignty_score": 87.2,
+      "legacy_exposure": 12.8,
+      "sovereignty_tier": "🥈 Strong"
     },
     {
       "country_code": "SPAIN",
@@ -545,7 +626,10 @@
       "has_any_legacy": 514,
       "has_any_modern": 77,
       "first_scan": "2026-03-30T03:30:16.840716+00:00",
-      "last_scan": "2026-03-30T04:53:40.777224+00:00"
+      "last_scan": "2026-03-30T04:53:40.777224+00:00",
+      "sovereignty_score": 62.0,
+      "legacy_exposure": 38.0,
+      "sovereignty_tier": "🥉 Growing"
     },
     {
       "country_code": "SWEDEN",
@@ -564,7 +648,10 @@
       "has_any_legacy": 111,
       "has_any_modern": 36,
       "first_scan": "2026-03-30T11:23:20.728651+00:00",
-      "last_scan": "2026-03-30T12:21:00.122078+00:00"
+      "last_scan": "2026-03-30T12:21:00.122078+00:00",
+      "sovereignty_score": 92.5,
+      "legacy_exposure": 7.5,
+      "sovereignty_tier": "🥈 Strong"
     },
     {
       "country_code": "SWITZERLAND",
@@ -583,26 +670,10 @@
       "has_any_legacy": 361,
       "has_any_modern": 121,
       "first_scan": "2026-03-30T12:21:01.843740+00:00",
-      "last_scan": "2026-03-30T13:12:18.911979+00:00"
-    },
-    {
-      "country_code": "UNITED_KINGDOM_UK",
-      "total_scanned": 3087,
-      "reachable": 2946,
-      "twitter_pages": 782,
-      "x_pages": 120,
-      "bluesky_pages": 11,
-      "mastodon_pages": 124,
-      "facebook_pages": 1024,
-      "linkedin_pages": 444,
-      "twitter_only": 1028,
-      "modern_only": 10,
-      "mixed": 119,
-      "no_social": 1789,
-      "has_any_legacy": 1147,
-      "has_any_modern": 129,
-      "first_scan": "2026-03-30T16:20:07.075757+00:00",
-      "last_scan": "2026-03-30T18:09:05.087155+00:00"
+      "last_scan": "2026-03-30T13:12:18.911979+00:00",
+      "sovereignty_score": 79.6,
+      "legacy_exposure": 20.4,
+      "sovereignty_tier": "🥉 Growing"
     }
   ]
 }
