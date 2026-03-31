@@ -88,14 +88,29 @@ def _query_summary(conn: sqlite3.Connection) -> dict:
     return dict(row)
 
 
-def _query_twitter_x_urls_by_country(conn: sqlite3.Connection) -> dict[str, list[str]]:
-    """Return a mapping of country_code → sorted list of URLs with Twitter or X links.
+_TWITTER_X_URL_SAMPLE_LIMIT = 25
+"""Maximum number of Twitter/X site URLs to embed per country in the page.
 
-    Each URL appears at most once per country, even if it was scanned in multiple
-    batches.  Only URLs with at least one twitter.com or x.com link are included.
+URLs are embedded as a JSON blob in the generated HTML so the browser can
+display them in accessible tooltips (< 25 sites) or a short sample list
+(≥ 25 sites).  Capping at 25 keeps the page size manageable for countries
+with hundreds or thousands of Twitter/X-linked pages — the full list is
+always available in the machine-readable social-media-data.json file.
+"""
+
+
+def _query_twitter_x_urls_by_country(conn: sqlite3.Connection) -> dict[str, list[str]]:
+    """Return a mapping of country_code → list of URLs with Twitter or X links.
+
+    Each URL appears at most once per country, even if it was scanned in
+    multiple batches.  Only URLs with at least one twitter.com or x.com link
+    are included.  At most :data:`_TWITTER_X_URL_SAMPLE_LIMIT` URLs are
+    returned per country so that the embedded JSON blob stays small even for
+    countries with hundreds of Twitter/X-linked pages.
+
     The result is used by the report's JavaScript to populate per-country
-    Twitter/X site lists in accessible tooltips (< 25 sites) and expandable
-    ``<details>`` widgets (≥ 25 sites).
+    Twitter/X site lists in accessible tooltips (< 25 sites) or a short
+    sample list inside a ``<details>`` widget (≥ 25 sites).
     """
     rows = conn.execute(
         """
@@ -109,7 +124,9 @@ def _query_twitter_x_urls_by_country(conn: sqlite3.Connection) -> dict[str, list
     for row in rows:
         cc = row["country_code"]
         url = row["url"]
-        result.setdefault(cc, []).append(url)
+        bucket = result.setdefault(cc, [])
+        if len(bucket) < _TWITTER_X_URL_SAMPLE_LIMIT:
+            bucket.append(url)
     return result
 
 
@@ -387,9 +404,12 @@ def _build_stats_block(
             toon seed files.  Used for the "Available" column in the per-country
             table when *by_country* is provided.
         twitter_x_urls: Mapping of country_code → list of scanned page URLs
-            that link to Twitter or X.  When provided, the interactive block
-            shows the actual site URLs in a tooltip (< 25 sites per country) or
-            in an expandable ``<details>`` widget (≥ 25 sites).
+            that link to Twitter or X (capped at
+            :data:`_TWITTER_X_URL_SAMPLE_LIMIT` per country).  When
+            provided, the interactive block shows the actual site URLs in a
+            tooltip (< 25 sites per country) or in a short-sample
+            ``<details>`` widget (≥ 25 sites, showing the first 10 with a
+            link to the full data file for the rest).
     """
     if not summary or not summary.get("total_scanned"):
         return (
@@ -817,18 +837,26 @@ def _build_interactive_block(
 
   // Build an accessible <details>/<summary> widget listing sites that link to
   // Twitter/X.  Used when count >= 25 (too many for a tooltip).
+  // Shows up to 10 sample URLs; if there are more, appends a note with a link
+  // to the full machine-readable data file.
   function _buildTwXDetails(urls, count, colName) {
     var label = _escHtml(colName) + ": " + count + " site" + (count === 1 ? "" : "s");
-    var items = urls.length > 0
-      ? urls.map(function (u) {
+    var sample = urls.slice(0, 10);
+    var items = sample.length > 0
+      ? sample.map(function (u) {
           return '<li><a href="' + _escHtml(u) + '" rel="noopener noreferrer">' +
                  _escHtml(u) + "</a></li>";
         }).join("")
-      : "<li>" + count + " site(s)</li>";
+      : "";
+    var more = count > sample.length
+      ? '<li style="color:#aaa;font-style:italic;">…and ' +
+        (count - sample.length).toLocaleString() +
+        ' more — <a href="social-media-data.json" rel="noopener noreferrer" style="color:#9ecfff;">full list in data file</a></li>'
+      : "";
     return (
       '<details class="sm-tw-details">' +
       '<summary class="sm-tw-summary" aria-label="' + label + '">' + label + "</summary>" +
-      '<ul class="sm-tw-list">' + items + "</ul>" +
+      '<ul class="sm-tw-list">' + items + more + "</ul>" +
       "</details>"
     );
   }
