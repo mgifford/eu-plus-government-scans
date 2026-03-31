@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-03-31 12:30 UTC_
+_Generated: 2026-03-31 14:34 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -10,12 +10,12 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage |
 |-----------|--------------|-----------|----------|
-| **Combined Reachability** | **50,660 confirmed reachable** | 82,714 | **████████████░░░░░░░░ 61.2%** |
+| **Combined Reachability** | **49,603 confirmed reachable** | 82,714 | **███████████░░░░░░░░░ 60.0%** |
 | URL Validation | 13,495 validated (11,613 valid) | 82,714 | ███░░░░░░░░░░░░░░░░░ 16.3% |
-| Social Media | 55,000 scanned (50,623 reachable) | 82,714 | █████████████░░░░░░░ 66.5% |
+| Social Media | 53,635 scanned (49,566 reachable) | 82,714 | ████████████░░░░░░░░ 64.8% |
 | Technology | 0 scanned | 82,714 | (manual scan) |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) |
-| Accessibility Statements | 52,187 scanned | 82,714 | ████████████░░░░░░░░ 63.1% |
+| Accessibility Statements | 49,812 scanned | 82,714 | ████████████░░░░░░░░ 60.2% |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by *either* URL Validation or Social Media scanning.  URL Validation automatically skips pages already confirmed reachable by the Social Media scanner (within the last 30 days), so the two individual counts complement rather than duplicate each other.
 
@@ -23,10 +23,10 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Country | Total | Valid | Invalid | Scan Period | Coverage |
 |---------|-------|-------|---------|-------------|----------|
-| AUSTRIA | 821 | 718 | 191 | Mar 2026 | ███████████████ 100.0% |
-| BELGIUM | 1,309 | 1,166 | 670 | Mar 2026 | ███████████████ 100.0% |
-| BULGARIA | 291 | 232 | 82 | Mar 2026 | ███████████████ 100.0% |
-| CROATIA | 233 | 227 | 6 | Mar 2026 | ███████████████ 100.0% |
+| AUSTRIA | 821 | 718 | 195 | Mar 2026 | ███████████████ 100.0% |
+| BELGIUM | 1,309 | 1,166 | 679 | Mar 2026 | ███████████████ 100.0% |
+| BULGARIA | 291 | 232 | 94 | Mar 2026 | ███████████████ 100.0% |
+| CROATIA | 233 | 227 | 8 | Mar 2026 | ███████████████ 100.0% |
 | CZECHIA | 567 | 440 | 127 | Mar 2026 | ██████████░░░░░ 67.3% |
 | DENMARK | 974 | 891 | 83 | Mar 2026 | █████████░░░░░░ 64.0% |
 | ESTONIA | 12 | 3 | 9 | Mar 2026 | ░░░░░░░░░░░░░░░ 3.0% |
@@ -68,9 +68,9 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | NETHERLANDS | 937 | 937 | 908 | 162 | 54 | 49 | 643 | 147 | 74 | 43 | 77 | Mar 2026 |
 | NORWAY | 239 | 239 | 233 | 20 | 2 | 0 | 211 | 10 | 13 | 0 | 2 | Mar 2026 |
 | POLAND | 8,479 | 14,938 | 7,787 | 1,301 | 263 | 321 | 5,902 | 678 | 179 | 1 | 583 | Mar 2026 |
-| PORTUGAL | 3,503 | 3,503 | 2,901 | 701 | 57 | 122 | 2,021 | 420 | 70 | 2 | 179 | Mar 2026 |
+| PORTUGAL | 2,383 | 3,503 | 1,942 | 215 | 53 | 29 | 1,645 | 212 | 32 | 0 | 82 | Mar 2026 |
 | REPUBLIC_OF_CYPRUS | 24 | 24 | 24 | 5 | 0 | 0 | 19 | 5 | 0 | 0 | 0 | Mar 2026 |
-| ROMANIA | 767 | 799 | 328 | 56 | 6 | 7 | 259 | 33 | 1 | 0 | 13 | Mar 2026 |
+| ROMANIA | 522 | 799 | 230 | 20 | 3 | 3 | 204 | 23 | 0 | 0 | 6 | Mar 2026 |
 | SLOVAKIA | 434 | 434 | 411 | 19 | 9 | 3 | 380 | 14 | 9 | 0 | 12 | Mar 2026 |
 | SLOVENIA | 200 | 200 | 187 | 22 | 7 | 2 | 156 | 18 | 6 | 1 | 9 | Mar 2026 |
 | SPAIN | 1,524 | 6,069 | 1,354 | 452 | 15 | 62 | 825 | 432 | 110 | 11 | 68 | Mar 2026 |
@@ -115,7 +115,7 @@ Checks whether each government page links to an accessibility statement as requi
 | MALTA | 608 | 595 | 381 | 374 | 64% | Mar 2026 |
 | NETHERLANDS | 937 | 908 | 447 | 438 | 49% | Mar 2026 |
 | NORWAY | 239 | 233 | 108 | 102 | 46% | Mar 2026 |
-| POLAND | 7,314 | 6,747 | 2,794 | 1,878 | 41% | Mar 2026 |
+| POLAND | 4,939 | 4,553 | 1,736 | 1,189 | 38% | Mar 2026 |
 | PORTUGAL | 2,512 | 2,072 | 472 | 391 | 23% | Mar 2026 |
 | REPUBLIC_OF_CYPRUS | 24 | 24 | 0 | 0 | 0% | Mar 2026 |
 | ROMANIA | 523 | 230 | 15 | 2 | 7% | Mar 2026 |
