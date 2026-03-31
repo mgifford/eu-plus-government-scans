@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-03-31 20:29 UTC_
+_Generated: 2026-03-31 22:38 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -15,7 +15,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Social Media | 59,959 scanned (55,224 reachable) | 82,714 | ██████████████░░░░░░ 72.5% |
 | Technology | 0 scanned | 82,714 | (manual scan) |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) |
-| Accessibility Statements | 53,454 scanned | 82,714 | ████████████░░░░░░░░ 64.6% |
+| Accessibility Statements | 55,494 scanned | 82,714 | █████████████░░░░░░░ 67.1% |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by *either* URL Validation or Social Media scanning.  URL Validation automatically skips pages already confirmed reachable by the Social Media scanner (within the last 30 days), so the two individual counts complement rather than duplicate each other.
 
@@ -121,7 +121,7 @@ Checks whether each government page links to an accessibility statement as requi
 | ROMANIA | 799 | 351 | 28 | 9 | 8% | Mar 2026 |
 | SLOVAKIA | 434 | 411 | 187 | 172 | 45% | Mar 2026 |
 | SLOVENIA | 200 | 188 | 95 | 69 | 51% | Mar 2026 |
-| SPAIN | 1,375 | 1,211 | 465 | 409 | 38% | Mar 2026 |
+| SPAIN | 3,415 | 3,090 | 1,184 | 1,020 | 38% | Mar 2026 |
 | SWEDEN | 1,558 | 1,483 | 857 | 782 | 58% | Mar 2026 |
 | SWITZERLAND | 1,530 | 1,505 | 847 | 845 | 56% | Mar 2026 |
 | UNITED_KINGDOM_UK | 3,147 | 2,992 | 1,790 | 1,668 | 60% | Mar 2026 |
