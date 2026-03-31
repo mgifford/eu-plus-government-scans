@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-03-31 06:27 UTC",
+  "generated_at": "2026-03-31 06:37 UTC",
   "summary": {
-    "total_batches": 85,
-    "total_scanned": 48252,
-    "total_reachable": 44476,
+    "total_batches": 86,
+    "total_scanned": 51400,
+    "total_reachable": 47467,
     "total_available": 82714,
-    "twitter_pages": 8097,
-    "x_pages": 1783,
-    "bluesky_pages": 451,
-    "mastodon_pages": 2542,
-    "facebook_pages": 0,
-    "linkedin_pages": 0,
+    "twitter_pages": 8881,
+    "x_pages": 1909,
+    "bluesky_pages": 462,
+    "mastodon_pages": 2663,
+    "facebook_pages": 1033,
+    "linkedin_pages": 449,
     "first_scan": "2026-03-22T00:36:33.003106+00:00",
-    "last_scan": "2026-03-30T13:12:18.911979+00:00"
+    "last_scan": "2026-03-31T06:36:30.970191+00:00"
   },
   "by_country": [
     {
@@ -673,6 +673,28 @@
       "last_scan": "2026-03-30T13:12:18.911979+00:00",
       "sovereignty_score": 79.6,
       "legacy_exposure": 20.4,
+      "sovereignty_tier": "🥉 Growing"
+    },
+    {
+      "country_code": "UNITED_KINGDOM_UK",
+      "total_scanned": 3148,
+      "reachable": 2991,
+      "twitter_pages": 784,
+      "x_pages": 126,
+      "bluesky_pages": 11,
+      "mastodon_pages": 121,
+      "facebook_pages": 1033,
+      "linkedin_pages": 449,
+      "twitter_only": 1042,
+      "modern_only": 9,
+      "mixed": 117,
+      "no_social": 1823,
+      "has_any_legacy": 1159,
+      "has_any_modern": 126,
+      "first_scan": "2026-03-31T04:47:31.540481+00:00",
+      "last_scan": "2026-03-31T06:36:30.970191+00:00",
+      "sovereignty_score": 61.3,
+      "legacy_exposure": 38.7,
       "sovereignty_tier": "🥉 Growing"
     }
   ]
