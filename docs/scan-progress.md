@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-04-01 08:35 UTC_
+_Generated: 2026-04-01 10:41 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -15,7 +15,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Social Media | 69,321 scanned (63,724 reachable) | 82,714 | ████████████████░░░░ 83.8% |
 | Technology | 0 scanned | 82,714 | (manual scan) |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) |
-| Accessibility Statements | 58,241 scanned | 82,714 | ██████████████░░░░░░ 70.4% |
+| Accessibility Statements | 60,528 scanned | 82,714 | ██████████████░░░░░░ 73.2% |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by *either* URL Validation or Social Media scanning.  URL Validation automatically skips pages already confirmed reachable by the Social Media scanner (within the last 30 days), so the two individual counts complement rather than duplicate each other.
 
@@ -115,7 +115,7 @@ Checks whether each government page links to an accessibility statement as requi
 | MALTA | 608 | 595 | 381 | 374 | 64% | Mar 2026 |
 | NETHERLANDS | 937 | 908 | 447 | 438 | 49% | Mar 2026 |
 | NORWAY | 239 | 233 | 108 | 102 | 46% | Mar 2026 |
-| POLAND | 7,314 | 6,747 | 2,794 | 1,878 | 41% | Mar 2026 |
+| POLAND | 9,601 | 8,882 | 3,847 | 2,390 | 43% | Mar 2026 – Apr 2026 |
 | PORTUGAL | 3,503 | 2,930 | 884 | 710 | 30% | Mar 2026 |
 | REPUBLIC_OF_CYPRUS | 24 | 24 | 0 | 0 | 0% | Mar 2026 |
 | ROMANIA | 799 | 351 | 28 | 9 | 8% | Mar 2026 |
