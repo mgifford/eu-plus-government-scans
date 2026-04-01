@@ -108,6 +108,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          # Pull before staging so the working tree is up-to-date with no
+          # uncommitted files in the way; our freshly generated docs files are
+          # on disk but not yet staged, so this rebase is always conflict-free.
+          git pull --rebase origin main
           git add docs/scan-progress.md docs/domains.md docs/index.md \
                   docs/social-media.md docs/social-media-data.json \
                   docs/technology-scanning.md docs/technology-data.json \
@@ -116,11 +120,6 @@ jobs:
             echo "No changes to commit — reports are up to date."
           else
             git commit -m "docs: update scan progress, social media, technology stats, and domains reports [skip ci]"
-            if ! git pull --rebase origin main; then
-              echo "Rebase failed (likely a merge conflict); aborting rebase."
-              git rebase --abort
-              exit 1
-            fi
             git push
             echo "Reports committed and pushed."
           fi
