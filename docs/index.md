@@ -11,14 +11,14 @@ power them.
 
 <!-- SCAN_PROGRESS_START -->
 
-_Progress as of 2026-04-01 16:25 UTC_
+_Progress as of 2026-04-01 18:40 UTC_
 
 | Scan Type | Pages Scanned | Coverage |
 |-----------|--------------|----------|
 | **Combined Reachability** | **66,521 confirmed reachable** | **████████████████░░░░ 80.4%** |
 | Social Media | 72,258 scanned (66,484 reachable) | █████████████████░░░ 87.4% |
 | URL Validation | 13,495 validated (11,613 valid) | ███░░░░░░░░░░░░░░░░░ 16.3% |
-| Accessibility Statements | 60,528 scanned | ██████████████░░░░░░ 73.2% |
+| Accessibility Statements | 62,680 scanned | ███████████████░░░░░ 75.8% |
 
 **31 countries** with scan data · **66,521** of **82,714** available pages confirmed reachable. See the [Scan Progress Report](scan-progress.md) for full details.
 
