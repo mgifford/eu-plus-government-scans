@@ -108,10 +108,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # Stage the freshly generated docs files first so the working tree is
-          # clean, then rebase onto the latest main to pick up any concurrent
-          # commits before pushing.  Staged changes survive a rebase, so this
-          # order is always conflict-free.
+          # Pull --rebase first (index is still clean at this point) to pick up
+          # any concurrent commits on main, then stage and commit the freshly
+          # generated docs.  This avoids the "index contains uncommitted changes"
+          # error that git raises when rebase is attempted with staged files.
+          git pull --rebase origin main
           git add docs/scan-progress.md docs/domains.md docs/index.md \
                   docs/social-media.md docs/social-media-data.json \
                   docs/technology-scanning.md docs/technology-data.json \
@@ -119,7 +120,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit — reports are up to date."
           else
-            git pull --rebase origin main
             git commit -m "docs: update scan progress, social media, technology stats, and domains reports [skip ci]"
             git push
             echo "Reports committed and pushed."
