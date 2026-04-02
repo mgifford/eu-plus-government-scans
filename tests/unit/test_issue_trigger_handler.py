@@ -419,7 +419,8 @@ def test_generate_validation_report_summary_counts(handler):
 
     assert "ALPHA" in report
     assert "BETA" in report
-    assert "15" in report or "10" in report  # total URLs somewhere
+    # Combined total_urls = 15; check the number appears in the report
+    assert "15" in report
     assert "SCAN:" in report
 
 

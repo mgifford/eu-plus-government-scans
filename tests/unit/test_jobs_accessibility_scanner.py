@@ -269,7 +269,7 @@ def test_get_recently_scanned_urls_returns_recent_url(temp_settings):
     job._save_accessibility_results(results, "TESTLAND", "scan-001")
 
     urls = job._get_recently_scanned_urls("TESTLAND", within_days=7)
-    assert "https://gov.example/" in urls
+    assert urls == {"https://gov.example/"}
 
 
 # ---------------------------------------------------------------------------
@@ -421,12 +421,14 @@ async def test_scan_country_incremental_save(temp_settings, sample_toon):
     captured_callbacks: list = []
 
     async def _mock_batch(urls, *, rate_limit_per_second=2.0, on_result=None, **kwargs):
+        results = {}
         for url in urls:
             r = _make_result(url)
             if on_result:
                 on_result(r)
                 captured_callbacks.append(r)
-        return {r.url: r for url in urls for r in [_make_result(url)]}
+            results[url] = r
+        return results
 
     job.scanner.scan_urls_batch = _mock_batch
 
