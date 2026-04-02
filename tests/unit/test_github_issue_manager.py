@@ -117,7 +117,7 @@ def test_run_gh_command_timeout():
     """Returns (False, 'Command timed out') on TimeoutExpired."""
     manager = _make_manager_with_cli(available=True)
 
-    with patch("subprocess.run", side_effect=subprocess.TimeoutExpired("gh", GH_CLI_COMMAND_TIMEOUT)):
+    with patch("subprocess.run", side_effect=subprocess.TimeoutExpired(["gh", "issue", "list"], GH_CLI_COMMAND_TIMEOUT)):
         success, output = manager._run_gh_command(["issue", "list"])
 
     assert success is False
