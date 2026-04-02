@@ -157,11 +157,11 @@ def _build_stats_block(
             return ts[:7]
 
     def _scan_period(first: str | None, last: str | None) -> str:
-        f = _month(first)
+        first_month = _month(first)
         last_month = _month(last)
-        if f and last_month:
-            return f if f == last_month else f"{f} – {last_month}"
-        return f or last_month or "—"
+        if first_month and last_month:
+            return first_month if first_month == last_month else f"{first_month} – {last_month}"
+        return first_month or last_month or "—"
 
     lines = [
         _STATS_MARKER_START,
