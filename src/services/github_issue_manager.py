@@ -34,7 +34,7 @@ class GitHubIssueManager:
     def _run_gh_command(self, args: list[str]) -> tuple[bool, str]:
         """
         Run a GitHub CLI command.
-        
+
         Returns:
             Tuple of (success, output)
         """
@@ -58,10 +58,10 @@ class GitHubIssueManager:
     def create_validation_issue(self, cycle_id: str) -> Optional[int]:
         """
         Create a GitHub issue to track a validation cycle.
-        
+
         Args:
             cycle_id: The cycle ID
-            
+
         Returns:
             Issue number if created successfully, None otherwise
         """
@@ -111,7 +111,7 @@ This issue will be automatically closed when all countries have been validated.
     ):
         """
         Update issue with current progress.
-        
+
         Args:
             issue_number: GitHub issue number
             cycle_id: Cycle ID
@@ -122,14 +122,14 @@ This issue will be automatically closed when all countries have been validated.
             failed: Failed countries
         """
         progress_pct = (completed / total * 100) if total > 0 else 0
-        
+
         # Create progress bar
         bar_length = 20
         filled = int(bar_length * completed / total) if total > 0 else 0
         bar = "█" * filled + "░" * (bar_length - filled)
-        
+
         status_emoji = "🟢" if pending == 0 and processing == 0 else "🟡"
-        
+
         body = f"""This issue tracks the automated URL validation cycle `{cycle_id}`.
 
 ## Progress
@@ -167,7 +167,7 @@ The validation workflow runs every 2 hours and processes countries in batches to
     ):
         """
         Close a validation cycle issue.
-        
+
         Args:
             issue_number: GitHub issue number
             cycle_id: Cycle ID
@@ -194,7 +194,7 @@ All countries have been processed. The validation cycle is complete.
             "issue", "edit", str(issue_number),
             "--body", body
         ])
-        
+
         self._run_gh_command([
             "issue", "close", str(issue_number),
             "--reason", "completed"
@@ -216,7 +216,7 @@ All countries have been processed. The validation cycle is complete.
     def find_open_validation_issue(self) -> Optional[int]:
         """
         Find an open validation issue.
-        
+
         Returns:
             Issue number if found, None otherwise
         """

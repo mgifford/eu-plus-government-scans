@@ -6,7 +6,6 @@ import asyncio
 import sys
 import time
 from datetime import datetime, timezone
-from pathlib import Path
 
 from src.jobs.url_validation_scanner import UrlValidationScanner
 from src.lib.settings import load_settings
@@ -78,7 +77,7 @@ def main():
             elif result["success"]:
                 print(f"Issue #{issue['number']} processed successfully")
                 if result.get("closed"):
-                    print(f"  Issue closed (one-time scan)")
+                    print("  Issue closed (one-time scan)")
             else:
                 print(f"Issue #{issue['number']} processing failed: {result.get('error')}")
 

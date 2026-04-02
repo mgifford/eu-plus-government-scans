@@ -8,7 +8,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import List, Optional
 
-from src.storage.schema import ValidationBatchState, initialize_schema
+from src.storage.schema import ValidationBatchState
 
 # Cycle ID timestamp format (e.g., "20260226-223045")
 CYCLE_ID_FORMAT = '%Y%m%d-%H%M%S'
@@ -32,10 +32,10 @@ class BatchCoordinator:
     def get_or_create_cycle(self, github_issue_number: Optional[int] = None) -> str:
         """
         Get the current active cycle or create a new one.
-        
+
         Args:
             github_issue_number: Optional GitHub issue number tracking this cycle
-            
+
         Returns:
             Cycle ID (format: YYYYMMDD-HHMMSS)
         """
@@ -52,7 +52,7 @@ class BatchCoordinator:
                 """
             )
             row = cursor.fetchone()
-            
+
             if row:
                 cycle_id, existing_issue = row
                 # Update issue number if provided and not already set
@@ -67,14 +67,14 @@ class BatchCoordinator:
                     )
                     conn.commit()
                 return cycle_id
-            
+
             # Create new cycle
             cycle_id = datetime.now(timezone.utc).strftime(CYCLE_ID_FORMAT)
-            
+
             # Initialize all countries as pending for this cycle
             # We'll get the list from available TOON files
             countries = self._get_available_countries()
-            
+
             for country_code in countries:
                 conn.execute(
                     """
@@ -84,35 +84,35 @@ class BatchCoordinator:
                     """,
                     (cycle_id, country_code, github_issue_number)
                 )
-            
+
             conn.commit()
             return cycle_id
-            
+
         finally:
             conn.close()
 
     def _get_available_countries(self) -> List[str]:
         """Get list of countries from TOON files."""
         from src.lib.country_utils import country_filename_to_code
-        
+
         toon_dir = Path("data/toon-seeds/countries")
         countries = []
-        
+
         if toon_dir.exists():
             for toon_file in sorted(toon_dir.glob("*.toon")):
                 country_code = country_filename_to_code(toon_file.stem)
                 countries.append(country_code)
-        
+
         return countries
 
     def get_next_batch(self, cycle_id: str, batch_size: int) -> List[str]:
         """
         Get the next batch of countries to process.
-        
+
         Args:
             cycle_id: The current cycle ID
             batch_size: Number of countries to return
-            
+
         Returns:
             List of country codes to process
         """
@@ -220,7 +220,7 @@ class BatchCoordinator:
     def get_cycle_progress(self, cycle_id: str) -> dict:
         """
         Get progress statistics for a cycle.
-        
+
         Returns:
             Dictionary with progress statistics
         """
@@ -228,7 +228,7 @@ class BatchCoordinator:
         try:
             cursor = conn.execute(
                 """
-                SELECT 
+                SELECT
                     COUNT(*) as total,
                     SUM(CASE WHEN status = 'completed' THEN 1 ELSE 0 END) as completed,
                     SUM(CASE WHEN status = 'processing' THEN 1 ELSE 0 END) as processing,
@@ -241,7 +241,7 @@ class BatchCoordinator:
                 (cycle_id,)
             )
             row = cursor.fetchone()
-            
+
             if not row:
                 return {
                     "total": 0,
@@ -252,9 +252,9 @@ class BatchCoordinator:
                     "is_complete": False,
                     "issue_number": None,
                 }
-            
+
             total, completed, processing, pending, failed, issue_number = row
-            
+
             return {
                 "cycle_id": cycle_id,
                 "total": total or 0,
@@ -274,11 +274,11 @@ class BatchCoordinator:
         try:
             cursor = conn.execute(
                 """
-                SELECT cycle_id, country_code, status, started_at, completed_at, 
+                SELECT cycle_id, country_code, status, started_at, completed_at,
                        github_issue_number, error_message
                 FROM validation_batch_state
                 WHERE cycle_id = ?
-                ORDER BY 
+                ORDER BY
                     CASE status
                         WHEN 'processing' THEN 1
                         WHEN 'pending' THEN 2
@@ -289,7 +289,7 @@ class BatchCoordinator:
                 """,
                 (cycle_id,)
             )
-            
+
             results = []
             for row in cursor.fetchall():
                 results.append(ValidationBatchState(
@@ -301,7 +301,7 @@ class BatchCoordinator:
                     github_issue_number=row[5],
                     error_message=row[6],
                 ))
-            
+
             return results
         finally:
             conn.close()

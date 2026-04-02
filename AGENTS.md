@@ -114,9 +114,24 @@ python3 -m src.cli.generate_validation_report --output validation-report.md
 
 ---
 
+## Python Coding Standards
+
+All Python code in this repository must follow the guidelines in
+[PYTHON_GUIDANCE.md](./PYTHON_GUIDANCE.md).  Key points:
+
+- Use type annotations on every function signature.
+- Add docstrings to every module, class, and function (Google style preferred).
+- Keep functions ≤ 50 lines; split longer ones into focused helpers.
+- Never use a bare `except:`; always catch specific exception types.
+- Only use `f"..."` strings when they actually interpolate a variable.
+- Run `ruff check src/` before committing; fix all warnings.
+
+---
+
 ## What AI Agents Should Do
 
 - Follow existing code style and patterns; examine nearby files before introducing new patterns
+- Follow the Python coding standards described in [PYTHON_GUIDANCE.md](./PYTHON_GUIDANCE.md)
 - Run `python3 -m pytest tests/ -v` to verify changes do not break existing tests
 - Keep commits focused and minimal; avoid reformatting unrelated code
 - Update or add documentation in `docs/` when changing user-facing behaviour
