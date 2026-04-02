@@ -40,15 +40,15 @@ class UrlValidator:
     async def validate_url(self, url: str) -> ValidationResult:
         """
         Validate a single URL and track redirects.
-        
+
         Returns ValidationResult with success/failure status, error codes,
         and redirect information.
         """
         validated_at = datetime.now(timezone.utc).isoformat()
-        
+
         # Track redirect chain
         redirect_chain: List[str] = []
-        
+
         try:
             async with httpx.AsyncClient(
                 follow_redirects=True,
@@ -62,14 +62,14 @@ class UrlValidator:
                     url,
                     headers={"User-Agent": self.user_agent},
                 )
-                
+
                 # Determine final URL after redirects
                 final_url = str(response.url)
                 redirected_to = final_url if final_url != url else None
-                
+
                 # Consider 2xx and 3xx as valid (3xx should have been followed)
                 is_valid = response.status_code < 400
-                
+
                 return ValidationResult(
                     url=url,
                     is_valid=is_valid,
@@ -78,7 +78,7 @@ class UrlValidator:
                     redirect_chain=redirect_chain if redirect_chain else None,
                     validated_at=validated_at,
                 )
-                
+
         except httpx.TooManyRedirects as e:
             return ValidationResult(
                 url=url,
@@ -118,14 +118,14 @@ class UrlValidator:
     def _track_redirect(self, redirect_chain: List[str]):
         """
         Create event hook to track redirect chain.
-        
+
         Returns a callback function for use with httpx event hooks that
         appends intermediate redirect URLs to the redirect_chain list
         when responses have redirect status codes (3xx).
-        
+
         Args:
             redirect_chain: List to accumulate redirect URLs
-            
+
         Returns:
             Async event hook function that accepts an httpx Response
         """

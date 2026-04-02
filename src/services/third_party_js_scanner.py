@@ -438,7 +438,6 @@ def _identify_script(script_src: str) -> Optional[_ServiceSignature]:
         return signatures[0]
 
     # Multiple signatures on one host — pick by path prefix.
-    path = parsed.path.lower()
     for sig in signatures:
         if sig.version_pattern and sig.version_pattern.search(script_src):
             return sig

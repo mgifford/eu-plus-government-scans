@@ -10,7 +10,7 @@ from pathlib import Path
 from src.jobs.url_validation_scanner import UrlValidationScanner
 from src.lib.country_utils import country_code_to_filename
 from src.lib.settings import load_settings
-from src.services.batch_coordinator import BatchCoordinator, BatchConfig
+from src.services.batch_coordinator import BatchCoordinator
 from src.services.github_issue_manager import GitHubIssueManager
 from src.storage.schema import initialize_schema
 
@@ -20,7 +20,7 @@ def main():
     parser = argparse.ArgumentParser(
         description="Validate URLs in government TOON files with batch processing"
     )
-    
+
     # Batch mode arguments
     parser.add_argument(
         "--batch-mode",
@@ -48,14 +48,14 @@ def main():
         help="Reset previously failed countries back to pending so they are retried",
         action="store_true",
     )
-    
+
     # Single country mode (original)
     parser.add_argument(
         "--country",
         help="Specific country code to scan (e.g., ICELAND, FRANCE)",
         type=str,
     )
-    
+
     # Common arguments
     parser.add_argument(
         "--toon-dir",
@@ -84,24 +84,24 @@ def main():
         default=30,
         dest="skip_recently_validated_days",
     )
-    
+
     args = parser.parse_args()
-    
+
     # Validate arguments
     if not args.batch_mode and not args.all and not args.country:
         print("Error: Must specify --batch-mode, --country, or --all")
         parser.print_help()
         sys.exit(1)
-    
+
     if not args.toon_dir.exists():
         print(f"Error: TOON directory not found: {args.toon_dir}")
         sys.exit(1)
-    
+
     # Load settings and initialize
     settings = load_settings()
     db_path = initialize_schema(settings.metadata_db_url)
     scanner = UrlValidationScanner(settings)
-    
+
     try:
         if args.batch_mode:
             # Batch processing mode
@@ -133,11 +133,11 @@ def main():
             # Single country mode
             country_code = args.country.upper()
             toon_file = args.toon_dir / f"{country_code_to_filename(country_code)}.toon"
-            
+
             if not toon_file.exists():
                 print(f"Error: TOON file not found: {toon_file}")
                 sys.exit(1)
-            
+
             print(f"Scanning {country_code}...")
             stats = asyncio.run(
                 scanner.scan_country(
@@ -148,7 +148,7 @@ def main():
                 )
             )
             print_country_stats(stats)
-    
+
     except KeyboardInterrupt:
         print("\nScan interrupted by user")
         sys.exit(1)
@@ -172,7 +172,7 @@ def run_batch_mode(
 ):
     """Run validation in batch mode."""
     import time
-    
+
     # Track start time for timeout handling
     start_time = time.time()
     # Stop processing early to leave buffer before the 60 minute GitHub Actions timeout
@@ -180,7 +180,7 @@ def run_batch_mode(
     max_runtime_seconds = 50 * 60
     # Stop when less than 5 minutes remain to complete gracefully
     safety_threshold_seconds = 5 * 60
-    
+
     print("=" * 80)
     print("BATCH VALIDATION MODE")
     print("=" * 80)
@@ -188,20 +188,20 @@ def run_batch_mode(
     print(f"Rate limit: {rate_limit} requests/second")
     print(f"Max runtime: {max_runtime_seconds // 60} minutes")
     print("")
-    
+
     # Initialize coordinators
     coordinator = BatchCoordinator(db_path)
     issue_manager = GitHubIssueManager()
-    
+
     # Get or create cycle
     cycle_id = coordinator.get_or_create_cycle(github_issue)
     print(f"Cycle ID: {cycle_id}")
-    
+
     # Reset failed countries back to pending if requested
     if reset_failed:
         print("♻️  Resetting previously failed countries to pending for retry...")
         coordinator.reset_failed_countries(cycle_id)
-    
+
     # Handle GitHub issue
     if create_issue and not github_issue:
         print("Creating GitHub issue to track progress...")
@@ -214,12 +214,12 @@ def run_batch_mode(
             print("⚠️  Could not create GitHub issue (gh CLI may not be available)")
     elif github_issue:
         print(f"Tracking progress in issue #{github_issue}")
-    
+
     # Get initial progress
     progress = coordinator.get_cycle_progress(cycle_id)
     print("")
     print_progress(progress)
-    
+
     if progress["is_complete"]:
         print("")
         print("✓ Cycle is already complete!")
@@ -232,48 +232,48 @@ def run_batch_mode(
                 progress["failed"],
             )
         return
-    
+
     # Get next batch
     countries = coordinator.get_next_batch(cycle_id, batch_size)
-    
+
     if not countries:
         print("")
         print("No pending countries to process in this batch.")
         return
-    
+
     print("")
     print(f"Processing batch: {', '.join(countries)}")
     print("")
-    
+
     # Mark as processing
     coordinator.mark_batch_processing(cycle_id, countries)
-    
+
     # Process each country with timeout check
     completed_countries = []
     stopped_early = False
-    
+
     for country_code in countries:
         # Check if we're approaching timeout
         elapsed = time.time() - start_time
         remaining = max_runtime_seconds - elapsed
-        
+
         if remaining < safety_threshold_seconds:
             print("")
             print("⏱️  Approaching timeout limit - stopping batch processing early")
             print(f"   Elapsed: {elapsed / 60:.1f} minutes")
             print(f"   Less than {safety_threshold_seconds / 60:.0f} minutes remaining")
-            print(f"   Remaining countries will be processed in next run")
+            print("   Remaining countries will be processed in next run")
             stopped_early = True
-            
+
             # Mark unprocessed countries as pending again
             unprocessed = [c for c in countries if c not in completed_countries]
             for country in unprocessed:
                 coordinator.mark_batch_pending(cycle_id, country)
             break
-        
+
         try:
             toon_file = toon_dir / f"{country_code_to_filename(country_code)}.toon"
-            
+
             if not toon_file.exists():
                 print(f"⚠️  Skipping {country_code}: TOON file not found")
                 coordinator.mark_batch_failed(
@@ -282,12 +282,12 @@ def run_batch_mode(
                     "TOON file not found"
                 )
                 continue
-            
+
             print(f"\n{'=' * 80}")
             print(f"Processing: {country_code}")
             print(f"Elapsed time: {elapsed / 60:.1f} minutes, Remaining: {remaining / 60:.1f} minutes")
             print('=' * 80)
-            
+
             stats = asyncio.run(
                 scanner.scan_country(
                     country_code,
@@ -298,20 +298,20 @@ def run_batch_mode(
                     start_time=start_time,
                 )
             )
-            
+
             print_country_stats(stats)
-            
+
             # Mark as completed
             coordinator.mark_batch_completed(cycle_id, [country_code])
             completed_countries.append(country_code)
-            
+
         except Exception as e:
             print(f"❌ Error processing {country_code}: {e}")
             coordinator.mark_batch_failed(cycle_id, country_code, str(e))
-    
+
     # Get final progress
     progress = coordinator.get_cycle_progress(cycle_id)
-    
+
     print("")
     print("=" * 80)
     if stopped_early:
@@ -320,12 +320,12 @@ def run_batch_mode(
         print("BATCH COMPLETE")
     print("=" * 80)
     print_progress(progress)
-    
+
     if stopped_early:
         print("")
         print("⚠️  Batch processing stopped early to avoid GitHub Actions timeout")
         print("   The next scheduled run will continue with remaining countries")
-    
+
     # Update GitHub issue
     if github_issue:
         issue_manager.update_issue_progress(
@@ -337,7 +337,7 @@ def run_batch_mode(
             progress["pending"],
             progress["failed"],
         )
-        
+
         # Close issue if cycle is complete
         if progress["is_complete"]:
             print("")
@@ -358,9 +358,9 @@ def print_progress(progress: dict):
     pending = progress["pending"]
     processing = progress["processing"]
     failed = progress["failed"]
-    
+
     pct = (completed / total * 100) if total > 0 else 0
-    
+
     print(f"Progress: {completed}/{total} ({pct:.1f}%)")
     print(f"  Completed: {completed}")
     print(f"  Processing: {processing}")
