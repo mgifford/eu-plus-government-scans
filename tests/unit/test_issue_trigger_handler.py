@@ -295,3 +295,284 @@ async def test_process_trigger_issue_unknown_action(handler):
 
     assert result["success"] is False
     assert "error" in result
+
+
+# ---------------------------------------------------------------------------
+# find_trigger_issues
+# ---------------------------------------------------------------------------
+
+
+def test_find_trigger_issues_returns_matching_issues(handler):
+    """Issues whose titles begin with a known prefix are returned."""
+    import json
+    from unittest.mock import patch
+
+    issues = [
+        {"number": 1, "title": "SCAN: Validate URLs", "body": ""},
+        {"number": 2, "title": "WEEKLY: Validate URL for all", "body": ""},
+        {"number": 3, "title": "Some random issue", "body": ""},
+    ]
+    mock_result = MagicMock()
+    mock_result.returncode = 0
+    mock_result.stdout = json.dumps(issues)
+
+    with patch("subprocess.run", return_value=mock_result):
+        found = handler.find_trigger_issues()
+
+    assert len(found) == 2
+    numbers = {i["number"] for i in found}
+    assert numbers == {1, 2}
+
+
+def test_find_trigger_issues_no_matches(handler):
+    """Returns empty list when no issues match any prefix."""
+    import json
+    from unittest.mock import patch
+
+    issues = [
+        {"number": 5, "title": "Bug: Something is broken", "body": ""},
+    ]
+    mock_result = MagicMock()
+    mock_result.returncode = 0
+    mock_result.stdout = json.dumps(issues)
+
+    with patch("subprocess.run", return_value=mock_result):
+        found = handler.find_trigger_issues()
+
+    assert found == []
+
+
+def test_find_trigger_issues_gh_command_fails(handler):
+    """Returns empty list when the gh command fails."""
+    from unittest.mock import patch
+
+    mock_result = MagicMock()
+    mock_result.returncode = 1
+    mock_result.stderr = "error"
+    mock_result.stdout = ""
+
+    with patch("subprocess.run", return_value=mock_result):
+        found = handler.find_trigger_issues()
+
+    assert found == []
+
+
+def test_find_trigger_issues_exception_returns_empty(handler):
+    """Returns empty list on unexpected exceptions."""
+    from unittest.mock import patch
+
+    with patch("subprocess.run", side_effect=RuntimeError("network error")):
+        found = handler.find_trigger_issues()
+
+    assert found == []
+
+
+def test_find_trigger_issues_attaches_trigger_config(handler):
+    """Each returned issue has a 'trigger_config' field set."""
+    import json
+    from unittest.mock import patch
+
+    issues = [{"number": 10, "title": "MONTHLY: Validate URL schedule", "body": ""}]
+    mock_result = MagicMock()
+    mock_result.returncode = 0
+    mock_result.stdout = json.dumps(issues)
+
+    with patch("subprocess.run", return_value=mock_result):
+        found = handler.find_trigger_issues()
+
+    assert len(found) == 1
+    assert "trigger_config" in found[0]
+    assert found[0]["trigger_config"].prefix == "MONTHLY:"
+
+
+# ---------------------------------------------------------------------------
+# _generate_validation_report
+# ---------------------------------------------------------------------------
+
+
+def test_generate_validation_report_summary_counts(handler):
+    """The report includes correct summary counts from all_stats."""
+    cfg = next(c for c in TRIGGER_CONFIGS if c.prefix == "SCAN:")
+
+    all_stats = [
+        {
+            "country_code": "ALPHA",
+            "total_urls": 10,
+            "urls_validated": 8,
+            "valid_urls": 6,
+            "invalid_urls": 2,
+            "redirected_urls": 1,
+            "urls_removed": 0,
+        },
+        {
+            "country_code": "BETA",
+            "total_urls": 5,
+            "urls_validated": 5,
+            "valid_urls": 4,
+            "invalid_urls": 1,
+            "redirected_urls": 0,
+            "urls_removed": 1,
+        },
+    ]
+
+    report = handler._generate_validation_report(all_stats, cfg)
+
+    assert "ALPHA" in report
+    assert "BETA" in report
+    assert "15" in report or "10" in report  # total URLs somewhere
+    assert "SCAN:" in report
+
+
+def test_generate_validation_report_stopped_early_note(handler):
+    """When stopped_early=True the report contains a partial-run note."""
+    cfg = next(c for c in TRIGGER_CONFIGS if c.prefix == "WEEKLY:")
+    report = handler._generate_validation_report([], cfg, stopped_early=True)
+    assert "Partial run" in report or "partial" in report.lower()
+
+
+def test_generate_validation_report_periodic_note(handler):
+    """Periodic configs mention the next run in the report."""
+    cfg = next(c for c in TRIGGER_CONFIGS if c.prefix == "WEEKLY:")
+    report = handler._generate_validation_report([], cfg)
+    assert "weekly" in report.lower() or "Next Run" in report
+
+
+def test_generate_validation_report_one_time_close_note(handler):
+    """One-time SCAN: config mentions closing in the report."""
+    cfg = next(c for c in TRIGGER_CONFIGS if c.prefix == "SCAN:")
+    report = handler._generate_validation_report([], cfg)
+    assert "closed" in report.lower() or "complete" in report.lower()
+
+
+def test_generate_validation_report_zero_validated_no_error(handler):
+    """With zero validated URLs the percentage calculation does not raise."""
+    cfg = next(c for c in TRIGGER_CONFIGS if c.prefix == "SCAN:")
+    all_stats = [
+        {
+            "country_code": "EMPTY",
+            "total_urls": 0,
+            "urls_validated": 0,
+            "valid_urls": 0,
+            "invalid_urls": 0,
+            "redirected_urls": 0,
+            "urls_removed": 0,
+        }
+    ]
+    # Should not raise ZeroDivisionError
+    report = handler._generate_validation_report(all_stats, cfg)
+    assert "EMPTY" in report
+
+
+# ---------------------------------------------------------------------------
+# _get_all_countries
+# ---------------------------------------------------------------------------
+
+
+def test_get_all_countries_returns_countries(tmp_path):
+    """Countries are extracted from *.toon files, excluding _validated files."""
+    from unittest.mock import MagicMock
+
+    toon_dir = tmp_path / "countries"
+    toon_dir.mkdir()
+    (toon_dir / "france.toon").write_text("{}", encoding="utf-8")
+    (toon_dir / "germany.toon").write_text("{}", encoding="utf-8")
+    (toon_dir / "france_validated.toon").write_text("{}", encoding="utf-8")  # excluded
+
+    scanner = MagicMock()
+    issue_manager = MagicMock()
+    from src.services.issue_trigger_handler import IssueTriggerHandler
+    from src.storage.schema import initialize_schema
+
+    db_path = tmp_path / "test.db"
+    initialize_schema(f"sqlite:///{db_path}")
+    h = IssueTriggerHandler(scanner, issue_manager, db_path)
+    h.toon_dir = toon_dir
+
+    countries = h._get_all_countries()
+
+    assert len(countries) == 2
+    # _validated.toon excluded
+    assert all("_validated" not in c.lower() for c in countries)
+
+
+def test_get_all_countries_empty_dir(tmp_path):
+    from unittest.mock import MagicMock
+    from src.services.issue_trigger_handler import IssueTriggerHandler
+    from src.storage.schema import initialize_schema
+
+    toon_dir = tmp_path / "countries"
+    toon_dir.mkdir()
+
+    db_path = tmp_path / "test.db"
+    initialize_schema(f"sqlite:///{db_path}")
+    h = IssueTriggerHandler(MagicMock(), MagicMock(), db_path)
+    h.toon_dir = toon_dir
+
+    assert h._get_all_countries() == []
+
+
+def test_get_all_countries_nonexistent_dir(tmp_path):
+    from unittest.mock import MagicMock
+    from src.services.issue_trigger_handler import IssueTriggerHandler
+    from src.storage.schema import initialize_schema
+
+    db_path = tmp_path / "test.db"
+    initialize_schema(f"sqlite:///{db_path}")
+    h = IssueTriggerHandler(MagicMock(), MagicMock(), db_path)
+    h.toon_dir = tmp_path / "nonexistent"
+
+    assert h._get_all_countries() == []
+
+
+# ---------------------------------------------------------------------------
+# process_trigger_issue: URL validation path
+# ---------------------------------------------------------------------------
+
+
+@pytest.mark.asyncio
+async def test_process_trigger_issue_url_validation_one_time(handler, temp_db, tmp_path):
+    """One-time SCAN: validate url issue is closed after a complete run."""
+    cfg = next(c for c in TRIGGER_CONFIGS if c.prefix == "SCAN:")
+
+    # Point handler at an empty toon directory so no countries are processed
+    empty_dir = tmp_path / "toon-seeds" / "countries"
+    empty_dir.mkdir(parents=True)
+    handler.toon_dir = empty_dir
+
+    issue = {
+        "number": 200,
+        "title": "SCAN: Validate URL for all countries",
+        "body": "",
+        "trigger_config": cfg,
+    }
+
+    result = await handler.process_trigger_issue(issue)
+
+    assert result["success"] is True
+    assert result["closed"] is True
+    assert result["skipped"] is False
+    # The issue_manager's add_comment and close-related calls should have been made
+    handler.issue_manager.add_comment.assert_called_once()
+
+
+@pytest.mark.asyncio
+async def test_process_trigger_issue_url_validation_periodic(handler, tmp_path):
+    """Periodic WEEKLY: validate url issue remains open after a complete run."""
+    cfg = next(c for c in TRIGGER_CONFIGS if c.prefix == "WEEKLY:")
+
+    empty_dir = tmp_path / "toon-seeds" / "countries"
+    empty_dir.mkdir(parents=True)
+    handler.toon_dir = empty_dir
+
+    issue = {
+        "number": 201,
+        "title": "WEEKLY: Validate URL schedule",
+        "body": "",
+        "trigger_config": cfg,
+    }
+
+    result = await handler.process_trigger_issue(issue)
+
+    assert result["success"] is True
+    assert result["closed"] is False
+    assert result["skipped"] is False
