@@ -442,10 +442,10 @@ def _build_stats_block(
 
     def _scan_period(first: str | None, last: str | None) -> str:
         f = _month(first)
-        l = _month(last)
-        if f and l:
-            return f if f == l else f"{f} – {l}"
-        return f or l or "—"
+        last_month = _month(last)
+        if f and last_month:
+            return f if f == last_month else f"{f} – {last_month}"
+        return f or last_month or "—"
 
     lines = [
         _STATS_MARKER_START,
@@ -476,7 +476,6 @@ def _build_stats_block(
         # and are natively traversable by assistive technologies without JS.
         # Use the pie total (classified pages only) as the denominator so the
         # percentages in <desc> are consistent with the segment <title> elements.
-        pie_total = tot_twitter_only + tot_modern_only + tot_mixed + tot_no_social
         pie_aria = (
             f"Pie chart: social media tier distribution across {tot_scanned:,} scanned pages. "
             f"Legacy only: {tot_twitter_only:,} ({_pct(tot_twitter_only, tot_scanned)}), "

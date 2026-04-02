@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import asyncio
 import json
 import sqlite3
 import time
@@ -25,7 +24,7 @@ class ScanSession:
     country_code: str
     failed_urls: Set[str]
     processed_urls: Set[str]
-    
+
 
 class UrlValidationScanner:
     """Scanner for validating URLs from TOON files."""
@@ -55,7 +54,7 @@ class UrlValidationScanner:
     def _get_previous_failures(self, country_code: str) -> Dict[str, int]:
         """
         Get failure counts for URLs from previous scans.
-        
+
         Returns:
             Dictionary mapping URL to failure count
         """
@@ -151,12 +150,12 @@ class UrlValidationScanner:
                 # Calculate new failure count
                 prev_failures = previous_failures.get(result.url, 0)
                 new_failure_count = prev_failures + 1 if not result.is_valid else 0
-                
+
                 # Build redirect chain as JSON string
                 redirect_chain_json = None
                 if result.redirect_chain:
                     redirect_chain_json = json.dumps(result.redirect_chain)
-                
+
                 conn.execute(
                     """
                     INSERT INTO url_validation_results
@@ -189,56 +188,56 @@ class UrlValidationScanner:
     ) -> dict:
         """
         Update TOON data with validation results and remove failed URLs.
-        
+
         Args:
             toon_data: Original TOON data
             validation_results: Validation results by URL
             urls_to_remove: URLs that failed twice and should be removed
-            
+
         Returns:
             Updated TOON data
         """
         updated_domains = []
-        
+
         for domain_entry in toon_data.get("domains", []):
             updated_pages = []
-            
+
             for page in domain_entry.get("pages", []):
                 url = page.get("url")
-                
+
                 # Skip URLs that should be removed (failed twice)
                 if url in urls_to_remove:
                     continue
-                
+
                 # Add validation metadata
                 if url in validation_results:
                     result = validation_results[url]
                     page["validation_status"] = "valid" if result.is_valid else "invalid"
-                    
+
                     if result.status_code is not None:
                         page["status_code"] = result.status_code
-                    
+
                     if result.error_message:
                         page["error_message"] = result.error_message
-                    
+
                     if result.redirected_to:
                         page["redirected_to"] = result.redirected_to
                         # Update the URL to the redirect target for future scans
                         page["original_url"] = url
                         page["url"] = result.redirected_to
-                
+
                 updated_pages.append(page)
-            
+
             # Only keep domain if it has pages left
             if updated_pages:
                 domain_entry["pages"] = updated_pages
                 updated_domains.append(domain_entry)
-        
+
         # Update domain and page counts
         toon_data["domains"] = updated_domains
         toon_data["domain_count"] = len(updated_domains)
         toon_data["page_count"] = sum(len(d.get("pages", [])) for d in updated_domains)
-        
+
         return toon_data
 
     async def scan_country(
@@ -252,7 +251,7 @@ class UrlValidationScanner:
     ) -> Dict[str, Any]:
         """
         Scan all URLs in a country's TOON file.
-        
+
         Args:
             country_code: ISO country code
             toon_path: Path to TOON file
@@ -278,16 +277,16 @@ class UrlValidationScanner:
 
         print(f"Starting scan {scan_id} for {country_code}")
         print(f"Loading TOON file: {toon_path}")
-        
+
         # Load TOON data
         toon_data = self._load_toon_file(toon_path)
         urls = self._extract_urls_from_toon(toon_data)
-        
+
         print(f"Found {len(urls)} URLs to validate")
-        
+
         # Get previous failure counts
         previous_failures = self._get_previous_failures(country_code)
-        
+
         # Filter out URLs that already failed twice (skip them)
         urls_to_skip = {url for url, count in previous_failures.items() if count >= 2}
 
@@ -307,7 +306,7 @@ class UrlValidationScanner:
             url for url in urls
             if url not in urls_to_skip and url not in recently_confirmed
         ]
-        
+
         print(f"Skipping {len(urls_to_skip)} URLs that previously failed twice")
         print(f"Validating {len(urls_to_validate)} URLs")
 
@@ -326,7 +325,7 @@ class UrlValidationScanner:
             start_time=_start,
             on_result=_save_result,
         )
-        
+
         # Identify newly failed URLs (failed twice total)
         newly_failed_twice = set()
         for url, result in validation_results.items():
@@ -334,17 +333,17 @@ class UrlValidationScanner:
                 prev_count = previous_failures.get(url, 0)
                 if prev_count + 1 >= 2:
                     newly_failed_twice.add(url)
-        
+
         # Combine with already failed URLs
         urls_to_remove = urls_to_skip | newly_failed_twice
-        
+
         # Update TOON file with validation results
         updated_toon = self._update_toon_with_validation(
             toon_data,
             validation_results,
             urls_to_remove,
         )
-        
+
         # Save updated TOON file
         output_path = toon_path.parent / f"{toon_path.stem}_validated{toon_path.suffix}"
         with output_path.open("w", encoding="utf-8") as f:
@@ -359,12 +358,12 @@ class UrlValidationScanner:
                 f"Saved partial validated TOON to: {output_path} "
                 f"({scanned_count}/{len(urls_to_validate)} URLs validated)"
             )
-        
+
         # Calculate statistics
         valid_count = sum(1 for r in validation_results.values() if r.is_valid)
         invalid_count = len(validation_results) - valid_count
         redirect_count = sum(1 for r in validation_results.values() if r.redirected_to)
-        
+
         stats = {
             "scan_id": scan_id,
             "country_code": country_code,
@@ -379,7 +378,7 @@ class UrlValidationScanner:
             "urls_removed": len(urls_to_remove),
             "output_path": str(output_path),
         }
-        
+
         print(f"\nValidation {'complete' if is_complete else 'partial'}:")
         print(f"  Validated:   {scanned_count}/{len(urls_to_validate)}")
         print(f"  Valid:       {valid_count}")
@@ -388,7 +387,7 @@ class UrlValidationScanner:
         print(f"  Removed (failed 2×): {len(urls_to_remove)}")
         if recently_confirmed:
             print(f"  Skipped (recently confirmed): {len(recently_confirmed)}")
-        
+
         return stats
 
     async def scan_all_countries(
