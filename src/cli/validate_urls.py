@@ -59,25 +59,25 @@ def main():
         default=30,
         dest="skip_recently_validated_days",
     )
-    
+
     args = parser.parse_args()
-    
+
     # Validate arguments
     if not args.all and not args.country:
         print("Error: Must specify either --country or --all")
         parser.print_help()
         sys.exit(1)
-    
+
     if not args.toon_dir.exists():
         print(f"Error: TOON directory not found: {args.toon_dir}")
         sys.exit(1)
-    
+
     max_runtime_seconds = args.max_runtime * 60 if args.max_runtime is not None else None
 
     # Load settings
     settings = load_settings()
     scanner = UrlValidationScanner(settings)
-    
+
     # Run scan
     try:
         if args.all:
@@ -90,7 +90,7 @@ def main():
                     max_runtime_seconds=max_runtime_seconds,
                 )
             )
-            
+
             print("\n" + "=" * 80)
             print("SUMMARY")
             print("=" * 80)
@@ -111,11 +111,11 @@ def main():
             country_code = args.country.upper()
             # Convert country code to filename format using utility function
             toon_file = args.toon_dir / f"{country_code_to_filename(country_code)}.toon"
-            
+
             if not toon_file.exists():
                 print(f"Error: TOON file not found: {toon_file}")
                 sys.exit(1)
-            
+
             print(f"Scanning {country_code}...")
             stats = asyncio.run(
                 scanner.scan_country(
@@ -126,7 +126,7 @@ def main():
                     max_runtime_seconds=max_runtime_seconds,
                 )
             )
-            
+
             print("\n" + "=" * 80)
             print("SCAN COMPLETE" if stats.get("is_complete", True) else "SCAN PARTIAL")
             print("=" * 80)
@@ -144,7 +144,7 @@ def main():
             print(f"Redirected: {stats['redirected_urls']}")
             print(f"Removed: {stats['urls_removed']}")
             print(f"Output: {stats['output_path']}")
-    
+
     except KeyboardInterrupt:
         print("\nScan interrupted by user")
         sys.exit(1)
