@@ -7,14 +7,14 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-04-03 14:21 UTC — last scan: 2026-04-02_
+_Stats as of 2026-04-03 14:35 UTC — last scan: 2026-04-03_
 
-**63** scan batches run
+**64** scan batches run
 
 **67,515** of **82,714** available pages scanned (**81.6%** coverage)
-**62,099** of **67,515** scanned pages were reachable (**92.0%**)
-**29,765** of **62,099** reachable pages have an accessibility statement (**47.9%**)
-**25,821** pages have the statement link in the footer (**86.7%** of pages with a statement)
+**62,112** of **67,515** scanned pages were reachable (**92.0%**)
+**29,779** of **62,112** reachable pages have an accessibility statement (**47.9%**)
+**25,832** pages have the statement link in the footer (**86.7%** of pages with a statement)
 
 📥 Machine-readable results: [accessibility-data.json](accessibility-data.json)
 
@@ -33,7 +33,7 @@ _Stats as of 2026-04-03 14:21 UTC — last scan: 2026-04-02_
 | ESTONIA | 396 | 396 | 389 | 136 | 65 | 35.0% | Mar 2026 – Apr 2026 |
 | FINLAND | 180 | 180 | 172 | 111 | 104 | 64.5% | Mar 2026 – Apr 2026 |
 | FRANCE | 10,007 | 10,007 | 9,404 | 3,632 | 3,496 | 38.6% | Mar 2026 – Apr 2026 |
-| GERMANY | 6,555 | 6,555 | 6,442 | 4,555 | 3,850 | 70.7% | Mar 2026 |
+| GERMANY | 6,555 | 6,555 | 6,455 | 4,569 | 3,861 | 70.8% | Mar 2026 – Apr 2026 |
 | GREECE | 1,748 | 1,748 | 1,622 | 400 | 237 | 24.7% | Mar 2026 |
 | HUNGARY | 390 | 390 | 361 | 64 | 48 | 17.7% | Mar 2026 |
 | ICELAND | 139 | 139 | 133 | 15 | 7 | 11.3% | Mar 2026 |
@@ -55,7 +55,7 @@ _Stats as of 2026-04-03 14:21 UTC — last scan: 2026-04-02_
 | SWEDEN | 1,558 | 1,558 | 1,483 | 857 | 782 | 57.8% | Mar 2026 |
 | SWITZERLAND | 2,117 | 2,117 | 2,080 | 979 | 977 | 47.1% | Mar 2026 – Apr 2026 |
 | UNITED_KINGDOM_UK | 7,868 | 19,502 | 7,372 | 4,220 | 3,940 | 57.2% | Mar 2026 – Apr 2026 |
-| **Total** | **67,515** | **82,714** | **62,099** | **29,765** | **25,821** | **47.9%** | — |
+| **Total** | **67,515** | **82,714** | **62,112** | **29,779** | **25,832** | **47.9%** | — |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
