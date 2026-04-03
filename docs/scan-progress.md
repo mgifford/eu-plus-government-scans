@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-04-03 14:20 UTC_
+_Generated: 2026-04-03 14:35 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -10,9 +10,9 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage |
 |-----------|--------------|-----------|----------|
-| **Combined Reachability** | **76,785 confirmed reachable** | 82,714 | **██████████████████░░ 92.8%** |
+| **Combined Reachability** | **76,793 confirmed reachable** | 82,714 | **██████████████████░░ 92.8%** |
 | URL Validation | 13,495 validated (11,613 valid) | 82,714 | ███░░░░░░░░░░░░░░░░░ 16.3% |
-| Social Media | 82,714 scanned (76,755 reachable) | 82,714 | ████████████████████ 100.0% |
+| Social Media | 82,714 scanned (76,763 reachable) | 82,714 | ████████████████████ 100.0% |
 | Technology | 0 scanned | 82,714 | (manual scan) |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) |
 | Accessibility Statements | 67,515 scanned | 82,714 | ████████████████░░░░ 81.6% |
@@ -23,9 +23,9 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Country | Total | Valid | Invalid | Scan Period | Coverage |
 |---------|-------|-------|---------|-------------|----------|
-| AUSTRIA | 821 | 718 | 192 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
-| BELGIUM | 1,309 | 1,166 | 726 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
-| BULGARIA | 291 | 232 | 87 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
+| AUSTRIA | 821 | 718 | 191 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
+| BELGIUM | 1,309 | 1,166 | 678 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
+| BULGARIA | 291 | 232 | 86 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
 | CROATIA | 233 | 227 | 13 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
 | CZECHIA | 567 | 440 | 127 | Mar 2026 | ██████████░░░░░ 67.3% |
 | DENMARK | 974 | 891 | 83 | Mar 2026 | █████████░░░░░░ 64.0% |
@@ -55,7 +55,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | ESTONIA | 396 | 396 | 389 | 180 | 22 | 25 | 298 | 67 | 2 | 0 | 27 | Mar 2026 – Apr 2026 |
 | FINLAND | 180 | 180 | 172 | 64 | 2 | 4 | 132 | 28 | 13 | 2 | 2 | Mar 2026 – Apr 2026 |
 | FRANCE | 10,007 | 10,007 | 9,450 | 2,756 | 213 | 517 | 6,928 | 1,818 | 636 | 126 | 503 | Mar 2026 – Apr 2026 |
-| GERMANY | 6,555 | 6,555 | 6,448 | 1,124 | 301 | 279 | 4,873 | 1,171 | 174 | 118 | 441 | Mar 2026 – Apr 2026 |
+| GERMANY | 6,555 | 6,555 | 6,456 | 1,399 | 301 | 324 | 4,880 | 1,171 | 174 | 120 | 443 | Mar 2026 – Apr 2026 |
 | GREECE | 1,748 | 1,748 | 1,604 | 229 | 40 | 54 | 1,281 | 232 | 56 | 0 | 94 | Mar 2026 |
 | HUNGARY | 390 | 390 | 366 | 24 | 20 | 5 | 317 | 29 | 0 | 0 | 25 | Mar 2026 |
 | ICELAND | 139 | 139 | 135 | 5 | 8 | 6 | 116 | 8 | 5 | 0 | 14 | Mar 2026 |
@@ -103,7 +103,7 @@ Checks whether each government page links to an accessibility statement as requi
 | ESTONIA | 396 | 389 | 136 | 65 | 35% | Mar 2026 – Apr 2026 |
 | FINLAND | 180 | 172 | 111 | 104 | 65% | Mar 2026 – Apr 2026 |
 | FRANCE | 10,007 | 9,404 | 3,632 | 3,496 | 39% | Mar 2026 – Apr 2026 |
-| GERMANY | 6,555 | 6,442 | 4,555 | 3,850 | 71% | Mar 2026 |
+| GERMANY | 6,555 | 6,455 | 4,569 | 3,861 | 71% | Mar 2026 – Apr 2026 |
 | GREECE | 1,748 | 1,622 | 400 | 237 | 25% | Mar 2026 |
 | HUNGARY | 390 | 361 | 64 | 48 | 18% | Mar 2026 |
 | ICELAND | 139 | 133 | 15 | 7 | 11% | Mar 2026 |
