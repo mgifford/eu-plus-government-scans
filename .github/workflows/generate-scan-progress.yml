@@ -66,6 +66,12 @@ jobs:
           run-id: ${{ steps.find-metadata.outputs.run_id }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Pull latest main before generating reports
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main
+
       - name: Generate scan progress report
         run: |
           python3 -m src.cli.generate_scan_progress \
@@ -106,13 +112,6 @@ jobs:
 
       - name: Commit progress report to repository
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          # Pull --rebase first (index is still clean at this point) to pick up
-          # any concurrent commits on main, then stage and commit the freshly
-          # generated docs.  This avoids the "index contains uncommitted changes"
-          # error that git raises when rebase is attempted with staged files.
-          git pull --rebase origin main
           git add docs/scan-progress.md docs/domains.md docs/index.md \
                   docs/social-media.md docs/social-media-data.json \
                   docs/technology-scanning.md docs/technology-data.json \
