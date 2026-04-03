@@ -7,14 +7,14 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-04-01 18:40 UTC — last scan: 2026-04-01_
+_Stats as of 2026-04-03 14:15 UTC — last scan: 2026-04-02_
 
-**52** scan batches run
+**63** scan batches run
 
-**62,680** of **82,714** available pages scanned (**75.8%** coverage)
-**57,667** of **62,680** scanned pages were reachable (**92.0%**)
-**27,763** of **57,667** reachable pages have an accessibility statement (**48.1%**)
-**24,072** pages have the statement link in the footer (**86.7%** of pages with a statement)
+**67,515** of **82,714** available pages scanned (**81.6%** coverage)
+**62,099** of **67,515** scanned pages were reachable (**92.0%**)
+**29,765** of **62,099** reachable pages have an accessibility statement (**47.9%**)
+**25,821** pages have the statement link in the footer (**86.7%** of pages with a statement)
 
 📥 Machine-readable results: [accessibility-data.json](accessibility-data.json)
 
@@ -24,15 +24,15 @@ _Stats as of 2026-04-01 18:40 UTC — last scan: 2026-04-01_
 
 | Country | Scanned | Available | Reachable | Has Statement | In Footer | Statement % | Scan Period |
 |---------|---------|-----------|-----------|--------------|-----------|------------|-------------|
-| AUSTRIA | 821 | 821 | 787 | 547 | 517 | 69.5% | Mar 2026 |
-| BELGIUM | 1,309 | 1,309 | 1,219 | 526 | 477 | 43.2% | Mar 2026 |
-| BULGARIA | 291 | 291 | 269 | 61 | 59 | 22.7% | Mar 2026 |
-| CROATIA | 233 | 233 | 231 | 85 | 61 | 36.8% | Mar 2026 |
-| CZECHIA | 843 | 843 | 803 | 427 | 362 | 53.2% | Mar 2026 |
-| DENMARK | 1,521 | 1,521 | 1,500 | 1,030 | 1,013 | 68.7% | Mar 2026 |
-| ESTONIA | 396 | 396 | 388 | 136 | 65 | 35.1% | Mar 2026 |
-| FINLAND | 180 | 180 | 172 | 111 | 104 | 64.5% | Mar 2026 |
-| FRANCE | 10,007 | 10,007 | 9,402 | 3,625 | 3,489 | 38.6% | Mar 2026 |
+| AUSTRIA | 821 | 821 | 787 | 547 | 517 | 69.5% | Mar 2026 – Apr 2026 |
+| BELGIUM | 1,309 | 1,309 | 1,229 | 548 | 499 | 44.6% | Mar 2026 – Apr 2026 |
+| BULGARIA | 291 | 291 | 269 | 61 | 59 | 22.7% | Mar 2026 – Apr 2026 |
+| CROATIA | 233 | 233 | 231 | 85 | 61 | 36.8% | Mar 2026 – Apr 2026 |
+| CZECHIA | 843 | 843 | 803 | 427 | 365 | 53.2% | Mar 2026 – Apr 2026 |
+| DENMARK | 1,521 | 1,521 | 1,503 | 1,036 | 1,019 | 68.9% | Mar 2026 – Apr 2026 |
+| ESTONIA | 396 | 396 | 389 | 136 | 65 | 35.0% | Mar 2026 – Apr 2026 |
+| FINLAND | 180 | 180 | 172 | 111 | 104 | 64.5% | Mar 2026 – Apr 2026 |
+| FRANCE | 10,007 | 10,007 | 9,404 | 3,632 | 3,496 | 38.6% | Mar 2026 – Apr 2026 |
 | GERMANY | 6,555 | 6,555 | 6,442 | 4,555 | 3,850 | 70.7% | Mar 2026 |
 | GREECE | 1,748 | 1,748 | 1,622 | 400 | 237 | 24.7% | Mar 2026 |
 | HUNGARY | 390 | 390 | 361 | 64 | 48 | 17.7% | Mar 2026 |
@@ -45,7 +45,7 @@ _Stats as of 2026-04-01 18:40 UTC — last scan: 2026-04-01_
 | MALTA | 608 | 608 | 595 | 381 | 374 | 64.0% | Mar 2026 |
 | NETHERLANDS | 937 | 937 | 908 | 447 | 438 | 49.2% | Mar 2026 |
 | NORWAY | 239 | 239 | 233 | 108 | 102 | 46.4% | Mar 2026 |
-| POLAND | 9,601 | 14,938 | 8,882 | 3,847 | 2,390 | 43.3% | Mar 2026 – Apr 2026 |
+| POLAND | 11,875 | 14,938 | 10,982 | 4,541 | 2,898 | 41.3% | Mar 2026 – Apr 2026 |
 | PORTUGAL | 3,503 | 3,503 | 2,930 | 884 | 710 | 30.2% | Mar 2026 |
 | REPUBLIC_OF_CYPRUS | 24 | 24 | 24 | 0 | 0 | 0.0% | Mar 2026 |
 | ROMANIA | 799 | 799 | 351 | 28 | 9 | 8.0% | Mar 2026 |
@@ -54,8 +54,8 @@ _Stats as of 2026-04-01 18:40 UTC — last scan: 2026-04-01_
 | SPAIN | 5,567 | 6,069 | 4,875 | 2,089 | 1,815 | 42.9% | Mar 2026 – Apr 2026 |
 | SWEDEN | 1,558 | 1,558 | 1,483 | 857 | 782 | 57.8% | Mar 2026 |
 | SWITZERLAND | 2,117 | 2,117 | 2,080 | 979 | 977 | 47.1% | Mar 2026 – Apr 2026 |
-| UNITED_KINGDOM_UK | 5,307 | 19,502 | 5,056 | 2,947 | 2,737 | 58.3% | Mar 2026 – Apr 2026 |
-| **Total** | **62,680** | **82,714** | **57,667** | **27,763** | **24,072** | **48.1%** | — |
+| UNITED_KINGDOM_UK | 7,868 | 19,502 | 7,372 | 4,220 | 3,940 | 57.2% | Mar 2026 – Apr 2026 |
+| **Total** | **67,515** | **82,714** | **62,099** | **29,765** | **25,821** | **47.9%** | — |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
