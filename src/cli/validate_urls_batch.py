@@ -11,7 +11,7 @@ from src.jobs.url_validation_scanner import UrlValidationScanner
 from src.lib.country_utils import country_code_to_filename
 from src.lib.settings import load_settings
 from src.services.batch_coordinator import BatchCoordinator
-from src.services.github_issue_manager import GitHubIssueManager
+from src.services.github_issue_manager import GitHubIssueManager, _compute_eta
 from src.storage.schema import initialize_schema
 
 
@@ -218,7 +218,7 @@ def run_batch_mode(
     # Get initial progress
     progress = coordinator.get_cycle_progress(cycle_id)
     print("")
-    print_progress(progress)
+    print_progress(progress, batch_size=batch_size)
 
     if progress["is_complete"]:
         print("")
@@ -231,6 +231,15 @@ def run_batch_mode(
                 progress["completed"],
                 progress["failed"],
             )
+            review_issue = issue_manager.create_review_issue(
+                cycle_id,
+                progress["total"],
+                progress["completed"],
+                progress["failed"],
+                tracking_issue_number=github_issue,
+            )
+            if review_issue:
+                print(f"✓ Created review issue #{review_issue}")
         return
 
     # Get next batch
@@ -319,7 +328,7 @@ def run_batch_mode(
     else:
         print("BATCH COMPLETE")
     print("=" * 80)
-    print_progress(progress)
+    print_progress(progress, batch_size=batch_size)
 
     if stopped_early:
         print("")
@@ -336,6 +345,7 @@ def run_batch_mode(
             progress["processing"],
             progress["pending"],
             progress["failed"],
+            batch_size=batch_size,
         )
 
         # Close issue if cycle is complete
@@ -349,10 +359,23 @@ def run_batch_mode(
                 progress["completed"],
                 progress["failed"],
             )
+            review_issue = issue_manager.create_review_issue(
+                cycle_id,
+                progress["total"],
+                progress["completed"],
+                progress["failed"],
+                tracking_issue_number=github_issue,
+            )
+            if review_issue:
+                print(f"✓ Created review issue #{review_issue}")
 
 
-def print_progress(progress: dict):
-    """Print progress statistics."""
+def print_progress(
+    progress: dict,
+    batch_size: int = 4,
+    workflow_interval_hours: float = 12.0,
+):
+    """Print progress statistics, including an estimated completion time."""
     total = progress["total"]
     completed = progress["completed"]
     pending = progress["pending"]
@@ -366,6 +389,11 @@ def print_progress(progress: dict):
     print(f"  Processing: {processing}")
     print(f"  Pending: {pending}")
     print(f"  Failed: {failed}")
+
+    if pending > 0:
+        eta = _compute_eta(pending, batch_size, workflow_interval_hours)
+        if eta:
+            print(f"  Est. completion: {eta}")
 
 
 def print_country_stats(stats: dict):

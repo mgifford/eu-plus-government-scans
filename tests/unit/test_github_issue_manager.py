@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import subprocess
+from datetime import datetime, timezone
 from unittest.mock import MagicMock, patch
 
 import pytest
@@ -11,6 +12,7 @@ from src.services.github_issue_manager import (
     GH_CLI_CHECK_TIMEOUT,
     GH_CLI_COMMAND_TIMEOUT,
     GitHubIssueManager,
+    _compute_eta,
 )
 
 
@@ -429,3 +431,225 @@ def test_custom_repo_is_stored():
     with patch("subprocess.run", return_value=check_result):
         manager = GitHubIssueManager(repo="other/repo")
     assert manager.repo == "other/repo"
+
+
+# ---------------------------------------------------------------------------
+# _compute_eta
+# ---------------------------------------------------------------------------
+
+
+def test_compute_eta_returns_none_when_no_pending():
+    """Returns None when there is nothing left to process."""
+    assert _compute_eta(pending=0, batch_size=4, workflow_interval_hours=12.0) is None
+
+
+def test_compute_eta_single_batch_remaining():
+    """When only one batch remains the ETA is approximately now (no future runs needed)."""
+    from datetime import timedelta
+
+    now = datetime.now(timezone.utc)
+    result = _compute_eta(pending=3, batch_size=4, workflow_interval_hours=12.0)
+    assert result is not None
+    eta = datetime.strptime(result, "%Y-%m-%d %H:%M UTC").replace(tzinfo=timezone.utc)
+    # ETA should be within a few seconds of now (0 future runs × 12 h = +0 h)
+    diff = abs((eta - now).total_seconds())
+    assert diff < 60, f"Expected ETA ≈ now, got {result}"
+
+
+def test_compute_eta_multiple_batches():
+    """With multiple batches pending the ETA is (batches_remaining - 1) × interval hours from now."""
+    import math
+    from datetime import timedelta
+
+    pending = 10
+    batch_size = 4
+    interval = 12.0
+    now = datetime.now(timezone.utc)
+
+    result = _compute_eta(pending=pending, batch_size=batch_size, workflow_interval_hours=interval)
+    assert result is not None
+    eta = datetime.strptime(result, "%Y-%m-%d %H:%M UTC").replace(tzinfo=timezone.utc)
+
+    batches_remaining = math.ceil(pending / batch_size)  # 3
+    expected_hours = (batches_remaining - 1) * interval  # 2 × 12 = 24
+    expected_eta = now.replace(second=0, microsecond=0) + timedelta(hours=expected_hours)
+    diff_minutes = abs((eta - expected_eta).total_seconds() / 60)
+    assert diff_minutes < 2, f"ETA off by {diff_minutes:.1f} minutes"
+
+
+def test_compute_eta_returns_utc_formatted_string():
+    """The returned string matches the expected format."""
+    result = _compute_eta(pending=5, batch_size=4, workflow_interval_hours=12.0)
+    assert result is not None
+    # Verify it parses back without error
+    datetime.strptime(result, "%Y-%m-%d %H:%M UTC")
+    assert result.endswith("UTC")
+
+
+# ---------------------------------------------------------------------------
+# update_issue_progress – ETA behaviour
+# ---------------------------------------------------------------------------
+
+
+def test_update_issue_progress_includes_eta_when_pending():
+    """ETA line appears in the issue body when there are pending countries."""
+    manager = _make_manager_with_cli(available=True)
+    captured_body = []
+
+    def _fake_run(cmd, **kwargs):
+        if "--body" in cmd:
+            captured_body.append(cmd[cmd.index("--body") + 1])
+        result = MagicMock()
+        result.returncode = 0
+        result.stdout = ""
+        return result
+
+    with patch("subprocess.run", side_effect=_fake_run):
+        manager.update_issue_progress(
+            issue_number=1,
+            cycle_id="cycle-1",
+            total=10,
+            completed=2,
+            processing=1,
+            pending=7,
+            failed=0,
+            batch_size=4,
+            workflow_interval_hours=12.0,
+        )
+
+    assert len(captured_body) == 1
+    assert "Est. completion" in captured_body[0]
+
+
+def test_update_issue_progress_no_eta_when_complete():
+    """No ETA line appears when the cycle is complete."""
+    manager = _make_manager_with_cli(available=True)
+    captured_body = []
+
+    def _fake_run(cmd, **kwargs):
+        if "--body" in cmd:
+            captured_body.append(cmd[cmd.index("--body") + 1])
+        result = MagicMock()
+        result.returncode = 0
+        result.stdout = ""
+        return result
+
+    with patch("subprocess.run", side_effect=_fake_run):
+        manager.update_issue_progress(
+            issue_number=1,
+            cycle_id="cycle-1",
+            total=10,
+            completed=10,
+            processing=0,
+            pending=0,
+            failed=0,
+        )
+
+    assert len(captured_body) == 1
+    assert "Est. completion" not in captured_body[0]
+
+
+# ---------------------------------------------------------------------------
+# create_review_issue
+# ---------------------------------------------------------------------------
+
+
+def test_create_review_issue_success():
+    """Returns the parsed issue number on success."""
+    manager = _make_manager_with_cli(available=True)
+
+    cmd_result = MagicMock()
+    cmd_result.returncode = 0
+    cmd_result.stdout = "https://github.com/mgifford/eu-plus-government-scans/issues/200\n"
+
+    with patch("subprocess.run", return_value=cmd_result):
+        issue_number = manager.create_review_issue(
+            cycle_id="20260101-120000",
+            total=10,
+            completed=9,
+            failed=1,
+        )
+
+    assert issue_number == 200
+
+
+def test_create_review_issue_includes_tracking_ref():
+    """Body contains a reference to the tracking issue when provided."""
+    manager = _make_manager_with_cli(available=True)
+    captured_body = []
+
+    def _fake_run(cmd, **kwargs):
+        if "--body" in cmd:
+            captured_body.append(cmd[cmd.index("--body") + 1])
+        result = MagicMock()
+        result.returncode = 0
+        result.stdout = "https://github.com/owner/repo/issues/77\n"
+        return result
+
+    with patch("subprocess.run", side_effect=_fake_run):
+        manager.create_review_issue(
+            cycle_id="20260101-120000",
+            total=5,
+            completed=5,
+            failed=0,
+            tracking_issue_number=55,
+        )
+
+    assert len(captured_body) == 1
+    assert "#55" in captured_body[0]
+
+
+def test_create_review_issue_no_tracking_ref_when_omitted():
+    """Body does NOT contain a tracking-issue reference when none is passed."""
+    manager = _make_manager_with_cli(available=True)
+    captured_body = []
+
+    def _fake_run(cmd, **kwargs):
+        if "--body" in cmd:
+            captured_body.append(cmd[cmd.index("--body") + 1])
+        result = MagicMock()
+        result.returncode = 0
+        result.stdout = "https://github.com/owner/repo/issues/78\n"
+        return result
+
+    with patch("subprocess.run", side_effect=_fake_run):
+        manager.create_review_issue(
+            cycle_id="20260101-120000",
+            total=5,
+            completed=5,
+            failed=0,
+        )
+
+    assert len(captured_body) == 1
+    assert "issue #" not in captured_body[0].lower()
+
+
+def test_create_review_issue_command_fails():
+    """Returns None when the CLI command fails."""
+    manager = _make_manager_with_cli(available=True)
+
+    cmd_result = MagicMock()
+    cmd_result.returncode = 1
+    cmd_result.stdout = ""
+
+    with patch("subprocess.run", return_value=cmd_result):
+        issue_number = manager.create_review_issue(
+            cycle_id="20260101-120000",
+            total=5,
+            completed=4,
+            failed=1,
+        )
+
+    assert issue_number is None
+
+
+def test_create_review_issue_no_cli():
+    """Returns None when the CLI is not available."""
+    manager = _make_manager_with_cli(available=False)
+    issue_number = manager.create_review_issue(
+        cycle_id="20260101-120000",
+        total=5,
+        completed=5,
+        failed=0,
+    )
+    assert issue_number is None
