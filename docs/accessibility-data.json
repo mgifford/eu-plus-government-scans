@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-04-04 20:27 UTC",
+  "generated_at": "2026-04-04 22:36 UTC",
   "summary": {
-    "total_batches": 75,
+    "total_batches": 81,
     "total_scanned": 72735,
-    "total_reachable": 67024,
+    "total_reachable": 67025,
     "total_available": 82714,
-    "total_has_statement": 32402,
-    "total_in_footer": 28046,
+    "total_has_statement": 32404,
+    "total_in_footer": 28047,
     "first_scan": "2026-03-25T17:15:29.276776+00:00",
-    "last_scan": "2026-04-04T18:36:44.530177+00:00"
+    "last_scan": "2026-04-04T22:35:25.689402+00:00"
   },
   "by_country": [
     {
@@ -99,7 +99,7 @@
       "has_statement": 4570,
       "found_in_footer": 3861,
       "first_scan": "2026-03-26T23:17:11.908189+00:00",
-      "last_scan": "2026-04-03T19:48:16.892834+00:00"
+      "last_scan": "2026-04-04T22:35:25.689402+00:00"
     },
     {
       "country_code": "GREECE",
@@ -162,7 +162,7 @@
       "has_statement": 0,
       "found_in_footer": 0,
       "first_scan": "2026-03-28T18:04:38.626709+00:00",
-      "last_scan": "2026-03-28T18:10:33.581673+00:00"
+      "last_scan": "2026-04-04T20:52:53.097691+00:00"
     },
     {
       "country_code": "LUXEMBOURG",
@@ -171,7 +171,7 @@
       "has_statement": 85,
       "found_in_footer": 74,
       "first_scan": "2026-03-28T18:10:35.449633+00:00",
-      "last_scan": "2026-03-28T18:29:10.179605+00:00"
+      "last_scan": "2026-04-04T21:14:18.131764+00:00"
     },
     {
       "country_code": "MALTA",
@@ -180,16 +180,16 @@
       "has_statement": 381,
       "found_in_footer": 374,
       "first_scan": "2026-03-28T18:29:11.988223+00:00",
-      "last_scan": "2026-03-28T18:52:04.824564+00:00"
+      "last_scan": "2026-04-04T21:39:36.286741+00:00"
     },
     {
       "country_code": "NETHERLANDS",
       "total_scanned": 937,
-      "reachable": 908,
-      "has_statement": 447,
-      "found_in_footer": 438,
+      "reachable": 909,
+      "has_statement": 449,
+      "found_in_footer": 439,
       "first_scan": "2026-03-28T18:52:06.884443+00:00",
-      "last_scan": "2026-03-28T19:20:56.328063+00:00"
+      "last_scan": "2026-04-04T22:12:54.854443+00:00"
     },
     {
       "country_code": "NORWAY",
@@ -198,7 +198,7 @@
       "has_statement": 108,
       "found_in_footer": 102,
       "first_scan": "2026-03-28T19:20:57.771152+00:00",
-      "last_scan": "2026-03-28T19:28:00.503860+00:00"
+      "last_scan": "2026-04-04T22:21:06.381905+00:00"
     },
     {
       "country_code": "POLAND",

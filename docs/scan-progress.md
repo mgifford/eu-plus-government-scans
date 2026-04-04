@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-04-04 20:27 UTC_
+_Generated: 2026-04-04 22:36 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -110,11 +110,11 @@ Checks whether each government page links to an accessibility statement as requi
 | IRELAND | 522 | 498 | 226 | 205 | 45% | Mar 2026 – Apr 2026 |
 | ITALY | 5,338 | 4,704 | 2,544 | 2,494 | 54% | Mar 2026 – Apr 2026 |
 | LATVIA | 802 | 771 | 488 | 444 | 63% | Mar 2026 – Apr 2026 |
-| LITHUANIA | 120 | 108 | 0 | 0 | 0% | Mar 2026 |
-| LUXEMBOURG | 571 | 250 | 85 | 74 | 34% | Mar 2026 |
-| MALTA | 608 | 595 | 381 | 374 | 64% | Mar 2026 |
-| NETHERLANDS | 937 | 908 | 447 | 438 | 49% | Mar 2026 |
-| NORWAY | 239 | 233 | 108 | 102 | 46% | Mar 2026 |
+| LITHUANIA | 120 | 108 | 0 | 0 | 0% | Mar 2026 – Apr 2026 |
+| LUXEMBOURG | 571 | 250 | 85 | 74 | 34% | Mar 2026 – Apr 2026 |
+| MALTA | 608 | 595 | 381 | 374 | 64% | Mar 2026 – Apr 2026 |
+| NETHERLANDS | 937 | 909 | 449 | 439 | 49% | Mar 2026 – Apr 2026 |
+| NORWAY | 239 | 233 | 108 | 102 | 46% | Mar 2026 – Apr 2026 |
 | POLAND | 13,875 | 12,857 | 5,300 | 3,363 | 41% | Mar 2026 – Apr 2026 |
 | PORTUGAL | 3,503 | 2,930 | 884 | 710 | 30% | Mar 2026 |
 | REPUBLIC_OF_CYPRUS | 24 | 24 | 0 | 0 | 0% | Mar 2026 |
