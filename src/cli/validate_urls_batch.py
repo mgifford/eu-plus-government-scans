@@ -4,7 +4,9 @@ from __future__ import annotations
 
 import argparse
 import asyncio
+import math
 import sys
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from src.jobs.url_validation_scanner import UrlValidationScanner
@@ -218,7 +220,7 @@ def run_batch_mode(
     # Get initial progress
     progress = coordinator.get_cycle_progress(cycle_id)
     print("")
-    print_progress(progress)
+    print_progress(progress, batch_size=batch_size)
 
     if progress["is_complete"]:
         print("")
@@ -231,6 +233,15 @@ def run_batch_mode(
                 progress["completed"],
                 progress["failed"],
             )
+            review_issue = issue_manager.create_review_issue(
+                cycle_id,
+                progress["total"],
+                progress["completed"],
+                progress["failed"],
+                tracking_issue_number=github_issue,
+            )
+            if review_issue:
+                print(f"✓ Created review issue #{review_issue}")
         return
 
     # Get next batch
@@ -319,7 +330,7 @@ def run_batch_mode(
     else:
         print("BATCH COMPLETE")
     print("=" * 80)
-    print_progress(progress)
+    print_progress(progress, batch_size=batch_size)
 
     if stopped_early:
         print("")
@@ -336,6 +347,7 @@ def run_batch_mode(
             progress["processing"],
             progress["pending"],
             progress["failed"],
+            batch_size=batch_size,
         )
 
         # Close issue if cycle is complete
@@ -349,10 +361,23 @@ def run_batch_mode(
                 progress["completed"],
                 progress["failed"],
             )
+            review_issue = issue_manager.create_review_issue(
+                cycle_id,
+                progress["total"],
+                progress["completed"],
+                progress["failed"],
+                tracking_issue_number=github_issue,
+            )
+            if review_issue:
+                print(f"✓ Created review issue #{review_issue}")
 
 
-def print_progress(progress: dict):
-    """Print progress statistics."""
+def print_progress(
+    progress: dict,
+    batch_size: int = 4,
+    workflow_interval_hours: float = 12.0,
+):
+    """Print progress statistics, including an estimated completion time."""
     total = progress["total"]
     completed = progress["completed"]
     pending = progress["pending"]
@@ -366,6 +391,14 @@ def print_progress(progress: dict):
     print(f"  Processing: {processing}")
     print(f"  Pending: {pending}")
     print(f"  Failed: {failed}")
+
+    if pending > 0:
+        batches_remaining = math.ceil(pending / batch_size)
+        future_runs = max(batches_remaining - 1, 0)
+        eta = datetime.now(timezone.utc) + timedelta(
+            hours=future_runs * workflow_interval_hours
+        )
+        print(f"  Est. completion: {eta.strftime('%Y-%m-%d %H:%M UTC')}")
 
 
 def print_country_stats(stats: dict):
