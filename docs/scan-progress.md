@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-04-04 06:46 UTC_
+_Generated: 2026-04-04 06:56 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -10,12 +10,12 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage |
 |-----------|--------------|-----------|----------|
-| **Combined Reachability** | **76,800 confirmed reachable** | 82,714 | **██████████████████░░ 92.9%** |
+| **Combined Reachability** | **76,820 confirmed reachable** | 82,714 | **██████████████████░░ 92.9%** |
 | URL Validation | 13,495 validated (11,613 valid) | 82,714 | ███░░░░░░░░░░░░░░░░░ 16.3% |
-| Social Media | 82,714 scanned (76,773 reachable) | 82,714 | ████████████████████ 100.0% |
+| Social Media | 82,714 scanned (76,811 reachable) | 82,714 | ████████████████████ 100.0% |
 | Technology | 0 scanned | 82,714 | (manual scan) |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) |
-| Accessibility Statements | 67,515 scanned | 82,714 | ████████████████░░░░ 81.6% |
+| Accessibility Statements | 68,017 scanned | 82,714 | ████████████████░░░░ 82.2% |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by *either* URL Validation or Social Media scanning.  URL Validation automatically skips pages already confirmed reachable by the Social Media scanner (within the last 30 days), so the two individual counts complement rather than duplicate each other.
 
@@ -23,8 +23,8 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Country | Total | Valid | Invalid | Scan Period | Coverage |
 |---------|-------|-------|---------|-------------|----------|
-| AUSTRIA | 821 | 718 | 193 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
-| BELGIUM | 1,309 | 1,166 | 732 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
+| AUSTRIA | 821 | 718 | 192 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
+| BELGIUM | 1,309 | 1,166 | 731 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
 | BULGARIA | 291 | 232 | 87 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
 | CROATIA | 233 | 227 | 13 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
 | CZECHIA | 567 | 440 | 127 | Mar 2026 | ██████████░░░░░ 67.3% |
@@ -55,8 +55,8 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | ESTONIA | 396 | 396 | 389 | 180 | 22 | 25 | 298 | 67 | 2 | 0 | 27 | Mar 2026 – Apr 2026 |
 | FINLAND | 180 | 180 | 172 | 64 | 2 | 4 | 132 | 28 | 13 | 2 | 2 | Mar 2026 – Apr 2026 |
 | FRANCE | 10,007 | 10,007 | 9,455 | 2,833 | 213 | 546 | 6,941 | 1,819 | 636 | 126 | 505 | Mar 2026 – Apr 2026 |
-| GERMANY | 6,555 | 6,555 | 6,454 | 1,380 | 301 | 325 | 4,877 | 1,171 | 174 | 120 | 443 | Mar 2026 – Apr 2026 |
-| GREECE | 1,748 | 1,748 | 1,606 | 252 | 40 | 61 | 1,287 | 232 | 56 | 0 | 94 | Mar 2026 – Apr 2026 |
+| GERMANY | 6,555 | 6,555 | 6,471 | 1,452 | 301 | 363 | 4,892 | 1,172 | 174 | 123 | 448 | Mar 2026 – Apr 2026 |
+| GREECE | 1,748 | 1,748 | 1,627 | 447 | 41 | 100 | 1,324 | 236 | 60 | 0 | 103 | Mar 2026 – Apr 2026 |
 | HUNGARY | 390 | 390 | 366 | 124 | 20 | 23 | 317 | 29 | 0 | 0 | 25 | Mar 2026 – Apr 2026 |
 | ICELAND | 139 | 139 | 135 | 47 | 8 | 12 | 116 | 8 | 5 | 0 | 14 | Mar 2026 – Apr 2026 |
 | IRELAND | 522 | 522 | 498 | 197 | 25 | 54 | 293 | 165 | 31 | 18 | 42 | Mar 2026 – Apr 2026 |
@@ -102,7 +102,7 @@ Checks whether each government page links to an accessibility statement as requi
 | DENMARK | 1,521 | 1,503 | 1,036 | 1,019 | 69% | Mar 2026 – Apr 2026 |
 | ESTONIA | 396 | 389 | 136 | 65 | 35% | Mar 2026 – Apr 2026 |
 | FINLAND | 180 | 172 | 111 | 104 | 65% | Mar 2026 – Apr 2026 |
-| FRANCE | 10,007 | 9,404 | 3,632 | 3,496 | 39% | Mar 2026 – Apr 2026 |
+| FRANCE | 10,007 | 9,417 | 3,649 | 3,511 | 39% | Mar 2026 – Apr 2026 |
 | GERMANY | 6,555 | 6,456 | 4,570 | 3,861 | 71% | Mar 2026 – Apr 2026 |
 | GREECE | 1,748 | 1,627 | 409 | 238 | 25% | Mar 2026 – Apr 2026 |
 | HUNGARY | 390 | 366 | 64 | 48 | 17% | Mar 2026 – Apr 2026 |
@@ -121,7 +121,7 @@ Checks whether each government page links to an accessibility statement as requi
 | ROMANIA | 799 | 351 | 28 | 9 | 8% | Mar 2026 |
 | SLOVAKIA | 434 | 411 | 187 | 172 | 45% | Mar 2026 |
 | SLOVENIA | 200 | 188 | 95 | 69 | 51% | Mar 2026 |
-| SPAIN | 5,567 | 4,875 | 2,089 | 1,815 | 43% | Mar 2026 – Apr 2026 |
+| SPAIN | 6,069 | 5,316 | 2,339 | 2,043 | 44% | Mar 2026 – Apr 2026 |
 | SWEDEN | 1,558 | 1,483 | 857 | 782 | 58% | Mar 2026 |
 | SWITZERLAND | 2,117 | 2,080 | 979 | 977 | 47% | Mar 2026 – Apr 2026 |
 | UNITED_KINGDOM_UK | 7,868 | 7,372 | 4,220 | 3,940 | 57% | Mar 2026 – Apr 2026 |
