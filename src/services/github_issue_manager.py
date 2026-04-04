@@ -187,7 +187,7 @@ This issue will be automatically closed when all countries have been validated.
 
 ### Details
 
-The validation workflow runs every 12 hours and processes countries in batches to avoid GitHub Actions timeouts.
+The validation workflow runs every {workflow_interval_hours:.0f} hours and processes countries in batches to avoid GitHub Actions timeouts.
 
 ---
 *Last updated: Automatically by URL validation workflow*
@@ -311,7 +311,7 @@ All countries have been processed. The validation cycle is complete.
                 f"\n\nThis validation was tracked in issue #{tracking_issue_number}."
             )
 
-        body = f"""The URL validation cycle `{cycle_id}` has completed. \
+        body = f"""The URL validation cycle `{cycle_id}` has completed.
 Please review the findings.
 
 ## Summary
