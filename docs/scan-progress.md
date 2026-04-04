@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-04-04 04:37 UTC_
+_Generated: 2026-04-04 04:56 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -10,9 +10,9 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage |
 |-----------|--------------|-----------|----------|
-| **Combined Reachability** | **76,800 confirmed reachable** | 82,714 | **██████████████████░░ 92.9%** |
+| **Combined Reachability** | **76,820 confirmed reachable** | 82,714 | **██████████████████░░ 92.9%** |
 | URL Validation | 13,495 validated (11,613 valid) | 82,714 | ███░░░░░░░░░░░░░░░░░ 16.3% |
-| Social Media | 82,714 scanned (76,773 reachable) | 82,714 | ████████████████████ 100.0% |
+| Social Media | 82,714 scanned (76,811 reachable) | 82,714 | ████████████████████ 100.0% |
 | Technology | 0 scanned | 82,714 | (manual scan) |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) |
 | Accessibility Statements | 67,515 scanned | 82,714 | ████████████████░░░░ 81.6% |
@@ -55,8 +55,8 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | ESTONIA | 396 | 396 | 389 | 180 | 22 | 25 | 298 | 67 | 2 | 0 | 27 | Mar 2026 – Apr 2026 |
 | FINLAND | 180 | 180 | 172 | 64 | 2 | 4 | 132 | 28 | 13 | 2 | 2 | Mar 2026 – Apr 2026 |
 | FRANCE | 10,007 | 10,007 | 9,455 | 2,833 | 213 | 546 | 6,941 | 1,819 | 636 | 126 | 505 | Mar 2026 – Apr 2026 |
-| GERMANY | 6,555 | 6,555 | 6,454 | 1,380 | 301 | 325 | 4,877 | 1,171 | 174 | 120 | 443 | Mar 2026 – Apr 2026 |
-| GREECE | 1,748 | 1,748 | 1,606 | 252 | 40 | 61 | 1,287 | 232 | 56 | 0 | 94 | Mar 2026 – Apr 2026 |
+| GERMANY | 6,555 | 6,555 | 6,471 | 1,452 | 301 | 363 | 4,892 | 1,172 | 174 | 123 | 448 | Mar 2026 – Apr 2026 |
+| GREECE | 1,748 | 1,748 | 1,627 | 447 | 41 | 100 | 1,324 | 236 | 60 | 0 | 103 | Mar 2026 – Apr 2026 |
 | HUNGARY | 390 | 390 | 366 | 124 | 20 | 23 | 317 | 29 | 0 | 0 | 25 | Mar 2026 – Apr 2026 |
 | ICELAND | 139 | 139 | 135 | 47 | 8 | 12 | 116 | 8 | 5 | 0 | 14 | Mar 2026 – Apr 2026 |
 | IRELAND | 522 | 522 | 498 | 197 | 25 | 54 | 293 | 165 | 31 | 18 | 42 | Mar 2026 – Apr 2026 |
