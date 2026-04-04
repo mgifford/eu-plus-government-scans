@@ -4,16 +4,14 @@ from __future__ import annotations
 
 import argparse
 import asyncio
-import math
 import sys
-from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from src.jobs.url_validation_scanner import UrlValidationScanner
 from src.lib.country_utils import country_code_to_filename
 from src.lib.settings import load_settings
 from src.services.batch_coordinator import BatchCoordinator
-from src.services.github_issue_manager import GitHubIssueManager
+from src.services.github_issue_manager import GitHubIssueManager, _compute_eta
 from src.storage.schema import initialize_schema
 
 
@@ -393,12 +391,9 @@ def print_progress(
     print(f"  Failed: {failed}")
 
     if pending > 0:
-        batches_remaining = math.ceil(pending / batch_size)
-        future_runs = max(batches_remaining - 1, 0)
-        eta = datetime.now(timezone.utc) + timedelta(
-            hours=future_runs * workflow_interval_hours
-        )
-        print(f"  Est. completion: {eta.strftime('%Y-%m-%d %H:%M UTC')}")
+        eta = _compute_eta(pending, batch_size, workflow_interval_hours)
+        if eta:
+            print(f"  Est. completion: {eta}")
 
 
 def print_country_stats(stats: dict):
