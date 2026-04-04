@@ -115,6 +115,20 @@ class UrlAccessibilityResult:
 
 
 @dataclass(slots=True)
+class UrlOverlayResult:
+    """Result of an accessibility overlay scan for a single URL."""
+
+    url: str
+    country_code: str
+    scan_id: str
+    is_reachable: int = 1       # 1 = reachable, 0 = not reachable
+    overlays: str = "[]"        # JSON list of detected overlay vendor names
+    overlay_count: int = 0      # number of distinct overlays detected
+    error_message: str | None = None
+    scanned_at: str | None = None
+
+
+@dataclass(slots=True)
 class ValidationBatchState:
     """Tracks progress of batch validation cycles."""
     cycle_id: str
@@ -290,6 +304,23 @@ CREATE TABLE IF NOT EXISTS url_third_party_js_results (
 
 CREATE INDEX IF NOT EXISTS idx_third_party_js_country ON url_third_party_js_results(country_code);
 CREATE INDEX IF NOT EXISTS idx_third_party_js_scan ON url_third_party_js_results(scan_id);
+
+-- Migration: Added url_overlay_results table for accessibility overlay scan results
+CREATE TABLE IF NOT EXISTS url_overlay_results (
+    url TEXT NOT NULL,
+    country_code TEXT NOT NULL,
+    scan_id TEXT NOT NULL,
+    is_reachable INTEGER NOT NULL DEFAULT 1,
+    overlays TEXT NOT NULL DEFAULT '[]',
+    overlay_count INTEGER NOT NULL DEFAULT 0,
+    error_message TEXT,
+    scanned_at TEXT,
+    PRIMARY KEY (url, scan_id)
+);
+
+CREATE INDEX IF NOT EXISTS idx_overlay_country ON url_overlay_results(country_code);
+CREATE INDEX IF NOT EXISTS idx_overlay_scan ON url_overlay_results(scan_id);
+CREATE INDEX IF NOT EXISTS idx_overlay_has_overlay ON url_overlay_results(overlay_count);
 """
 
 
