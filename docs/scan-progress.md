@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-04-04 16:09 UTC_
+_Generated: 2026-04-04 16:21 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -10,12 +10,12 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage |
 |-----------|--------------|-----------|----------|
-| **Combined Reachability** | **76,800 confirmed reachable** | 82,714 | **██████████████████░░ 92.9%** |
-| URL Validation | 13,771 validated (11,960 valid) | 82,714 | ███░░░░░░░░░░░░░░░░░ 16.6% |
-| Social Media | 82,714 scanned (76,773 reachable) | 82,714 | ████████████████████ 100.0% |
+| **Combined Reachability** | **77,000 confirmed reachable** | 82,714 | **██████████████████░░ 93.1%** |
+| URL Validation | 13,495 validated (11,613 valid) | 82,714 | ███░░░░░░░░░░░░░░░░░ 16.3% |
+| Social Media | 82,714 scanned (76,991 reachable) | 82,714 | ████████████████████ 100.0% |
 | Technology | 0 scanned | 82,714 | (manual scan) |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) |
-| Accessibility Statements | 67,515 scanned | 82,714 | ████████████████░░░░ 81.6% |
+| Accessibility Statements | 70,735 scanned | 82,714 | █████████████████░░░ 85.5% |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by *either* URL Validation or Social Media scanning.  URL Validation automatically skips pages already confirmed reachable by the Social Media scanner (within the last 30 days), so the two individual counts complement rather than duplicate each other.
 
@@ -23,11 +23,11 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Country | Total | Valid | Invalid | Scan Period | Coverage |
 |---------|-------|-------|---------|-------------|----------|
-| AUSTRIA | 821 | 718 | 264 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
-| BELGIUM | 1,309 | 1,166 | 860 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
-| BULGARIA | 291 | 232 | 150 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
-| CROATIA | 233 | 227 | 19 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
-| CZECHIA | 843 | 787 | 145 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
+| AUSTRIA | 821 | 718 | 192 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
+| BELGIUM | 1,309 | 1,166 | 731 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
+| BULGARIA | 291 | 232 | 87 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
+| CROATIA | 233 | 227 | 13 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
+| CZECHIA | 567 | 440 | 127 | Mar 2026 | ██████████░░░░░ 67.3% |
 | DENMARK | 974 | 891 | 83 | Mar 2026 | █████████░░░░░░ 64.0% |
 | ESTONIA | 12 | 3 | 9 | Mar 2026 | ░░░░░░░░░░░░░░░ 3.0% |
 | FINLAND | 8 | 0 | 8 | Mar 2026 | ░░░░░░░░░░░░░░░ 4.4% |
@@ -55,24 +55,24 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | ESTONIA | 396 | 396 | 389 | 180 | 22 | 25 | 298 | 67 | 2 | 0 | 27 | Mar 2026 – Apr 2026 |
 | FINLAND | 180 | 180 | 172 | 64 | 2 | 4 | 132 | 28 | 13 | 2 | 2 | Mar 2026 – Apr 2026 |
 | FRANCE | 10,007 | 10,007 | 9,455 | 2,833 | 213 | 546 | 6,941 | 1,819 | 636 | 126 | 505 | Mar 2026 – Apr 2026 |
-| GERMANY | 6,555 | 6,555 | 6,454 | 1,380 | 301 | 325 | 4,877 | 1,171 | 174 | 120 | 443 | Mar 2026 – Apr 2026 |
-| GREECE | 1,748 | 1,748 | 1,606 | 252 | 40 | 61 | 1,287 | 232 | 56 | 0 | 94 | Mar 2026 – Apr 2026 |
+| GERMANY | 6,555 | 6,555 | 6,471 | 1,452 | 301 | 363 | 4,892 | 1,172 | 174 | 123 | 448 | Mar 2026 – Apr 2026 |
+| GREECE | 1,748 | 1,748 | 1,627 | 447 | 41 | 100 | 1,324 | 236 | 60 | 0 | 103 | Mar 2026 – Apr 2026 |
 | HUNGARY | 390 | 390 | 366 | 124 | 20 | 23 | 317 | 29 | 0 | 0 | 25 | Mar 2026 – Apr 2026 |
 | ICELAND | 139 | 139 | 135 | 47 | 8 | 12 | 116 | 8 | 5 | 0 | 14 | Mar 2026 – Apr 2026 |
 | IRELAND | 522 | 522 | 498 | 197 | 25 | 54 | 293 | 165 | 31 | 18 | 42 | Mar 2026 – Apr 2026 |
-| ITALY | 5,338 | 5,338 | 4,730 | 1,909 | 81 | 176 | 2,589 | 1,992 | 90 | 0 | 249 | Mar 2026 – Apr 2026 |
-| LATVIA | 802 | 802 | 769 | 262 | 23 | 60 | 424 | 279 | 47 | 0 | 83 | Mar 2026 |
-| LITHUANIA | 120 | 120 | 108 | 5 | 4 | 0 | 99 | 5 | 0 | 0 | 4 | Mar 2026 |
-| LUXEMBOURG | 571 | 571 | 250 | 31 | 21 | 15 | 183 | 43 | 3 | 11 | 33 | Mar 2026 |
-| MALTA | 608 | 608 | 595 | 60 | 20 | 14 | 501 | 57 | 17 | 0 | 34 | Mar 2026 |
-| NETHERLANDS | 937 | 937 | 908 | 162 | 54 | 49 | 643 | 147 | 74 | 43 | 77 | Mar 2026 |
-| NORWAY | 239 | 239 | 233 | 20 | 2 | 0 | 211 | 10 | 13 | 0 | 2 | Mar 2026 |
+| ITALY | 5,338 | 5,338 | 4,902 | 2,117 | 85 | 233 | 2,632 | 2,033 | 94 | 0 | 288 | Mar 2026 – Apr 2026 |
+| LATVIA | 802 | 802 | 771 | 305 | 23 | 66 | 430 | 281 | 47 | 0 | 83 | Mar 2026 – Apr 2026 |
+| LITHUANIA | 120 | 120 | 108 | 29 | 4 | 4 | 99 | 5 | 0 | 0 | 4 | Mar 2026 – Apr 2026 |
+| LUXEMBOURG | 571 | 571 | 250 | 64 | 21 | 36 | 183 | 43 | 3 | 11 | 33 | Mar 2026 – Apr 2026 |
+| MALTA | 608 | 608 | 595 | 129 | 20 | 32 | 501 | 57 | 17 | 0 | 34 | Mar 2026 – Apr 2026 |
+| NETHERLANDS | 937 | 937 | 909 | 257 | 54 | 95 | 644 | 148 | 74 | 45 | 77 | Mar 2026 – Apr 2026 |
+| NORWAY | 239 | 239 | 233 | 55 | 2 | 0 | 211 | 10 | 13 | 0 | 2 | Mar 2026 – Apr 2026 |
 | POLAND | 14,938 | 14,938 | 13,808 | 4,242 | 297 | 733 | 8,536 | 1,072 | 311 | 1 | 1,029 | Mar 2026 – Apr 2026 |
 | PORTUGAL | 3,503 | 3,503 | 2,901 | 701 | 57 | 122 | 2,021 | 420 | 70 | 2 | 179 | Mar 2026 |
-| REPUBLIC_OF_CYPRUS | 24 | 24 | 24 | 5 | 0 | 0 | 19 | 5 | 0 | 0 | 0 | Mar 2026 |
+| REPUBLIC_OF_CYPRUS | 24 | 24 | 24 | 11 | 0 | 0 | 19 | 5 | 0 | 0 | 0 | Mar 2026 – Apr 2026 |
 | ROMANIA | 799 | 799 | 351 | 66 | 6 | 8 | 271 | 42 | 1 | 0 | 14 | Mar 2026 – Apr 2026 |
-| SLOVAKIA | 434 | 434 | 411 | 19 | 9 | 3 | 380 | 14 | 9 | 0 | 12 | Mar 2026 |
-| SLOVENIA | 200 | 200 | 187 | 22 | 7 | 2 | 156 | 18 | 6 | 1 | 9 | Mar 2026 |
+| SLOVAKIA | 434 | 434 | 413 | 135 | 9 | 13 | 382 | 17 | 9 | 0 | 13 | Mar 2026 – Apr 2026 |
+| SLOVENIA | 200 | 200 | 190 | 52 | 7 | 9 | 156 | 21 | 6 | 1 | 9 | Mar 2026 – Apr 2026 |
 | SPAIN | 6,069 | 6,069 | 5,382 | 1,907 | 29 | 306 | 3,140 | 1,741 | 366 | 51 | 305 | Mar 2026 – Apr 2026 |
 | SWEDEN | 1,558 | 1,558 | 1,487 | 89 | 14 | 22 | 1,362 | 92 | 24 | 11 | 25 | Mar 2026 |
 | SWITZERLAND | 2,117 | 2,117 | 2,077 | 371 | 56 | 99 | 1,551 | 238 | 213 | 56 | 113 | Mar 2026 |
@@ -102,7 +102,7 @@ Checks whether each government page links to an accessibility statement as requi
 | DENMARK | 1,521 | 1,503 | 1,036 | 1,019 | 69% | Mar 2026 – Apr 2026 |
 | ESTONIA | 396 | 389 | 136 | 65 | 35% | Mar 2026 – Apr 2026 |
 | FINLAND | 180 | 172 | 111 | 104 | 65% | Mar 2026 – Apr 2026 |
-| FRANCE | 10,007 | 9,404 | 3,632 | 3,496 | 39% | Mar 2026 – Apr 2026 |
+| FRANCE | 10,007 | 9,417 | 3,649 | 3,511 | 39% | Mar 2026 – Apr 2026 |
 | GERMANY | 6,555 | 6,456 | 4,570 | 3,861 | 71% | Mar 2026 – Apr 2026 |
 | GREECE | 1,748 | 1,627 | 409 | 238 | 25% | Mar 2026 – Apr 2026 |
 | HUNGARY | 390 | 366 | 64 | 48 | 17% | Mar 2026 – Apr 2026 |
@@ -121,10 +121,10 @@ Checks whether each government page links to an accessibility statement as requi
 | ROMANIA | 799 | 351 | 28 | 9 | 8% | Mar 2026 |
 | SLOVAKIA | 434 | 411 | 187 | 172 | 45% | Mar 2026 |
 | SLOVENIA | 200 | 188 | 95 | 69 | 51% | Mar 2026 |
-| SPAIN | 5,567 | 4,875 | 2,089 | 1,815 | 43% | Mar 2026 – Apr 2026 |
+| SPAIN | 6,069 | 5,316 | 2,339 | 2,043 | 44% | Mar 2026 – Apr 2026 |
 | SWEDEN | 1,558 | 1,483 | 857 | 782 | 58% | Mar 2026 |
 | SWITZERLAND | 2,117 | 2,080 | 979 | 977 | 47% | Mar 2026 – Apr 2026 |
-| UNITED_KINGDOM_UK | 7,868 | 7,372 | 4,220 | 3,940 | 57% | Mar 2026 – Apr 2026 |
+| UNITED_KINGDOM_UK | 10,586 | 9,933 | 5,796 | 5,436 | 58% | Mar 2026 – Apr 2026 |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
