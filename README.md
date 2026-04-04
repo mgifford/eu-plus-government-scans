@@ -1,7 +1,61 @@
 # eu-plus-government-scans
 
+[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](LICENSE)
+[![URL Validation](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/validate-urls-batch.yml/badge.svg)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/validate-urls-batch.yml)
+[![Deploy GitHub Pages](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/deploy-pages.yml)
+[![GitHub Pages](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://mgifford.github.io/eu-plus-government-scans/)
+
 Scans and seed datasets for finding accessibility statements on government websites,
 with a Europe-first scope (plus selected non-EU countries like UK and Switzerland).
+
+## Table of contents
+
+- [Who this is for](#who-this-is-for)
+- [How it works](#how-it-works)
+- [What is in this repository](#what-is-in-this-repository)
+- [Data imports](#data-imports)
+- [TOON seed outputs](#toon-seed-outputs)
+- [WP01 foundation implementation](#wp01-foundation-implementation)
+- [URL validation scanner](#url-validation-scanner)
+- [Google Lighthouse scanning](#google-lighthouse-scanning)
+- [Running tests locally](#running-tests-locally)
+- [Data caching and storage](#data-caching-and-storage)
+- [AI disclosure](#ai-disclosure)
+- [Next steps](#next-steps)
+
+## Who this is for
+
+This repository is intended for **developers and researchers** who want to:
+
+- Fork or clone the project and run their own accessibility-statement discovery scans.
+- Contribute new country seed data (TOON files) or improve scanning logic.
+- Understand the automated batch-validation pipeline and extend it.
+
+If you are looking for the published scan results and reports, see the
+[GitHub Pages site](https://mgifford.github.io/eu-plus-government-scans/).
+
+## How it works
+
+```mermaid
+flowchart TD
+    A[Google Sheets / CSV imports] -->|data/imports/| B[TOON seed files\ndata/toon-seeds/]
+    B --> C{Scan type}
+    C -->|URL validation| D[validate_urls_batch CLI\nsrc/cli/validate_urls_batch.py]
+    C -->|Lighthouse audit| E[scan_lighthouse CLI\nsrc/cli/scan_lighthouse.py]
+    C -->|Social media scan| F[scan_social_media CLI\nsrc/cli/scan_social_media.py]
+    C -->|Technology detection| G[scan_technology CLI\nsrc/cli/scan_technology.py]
+    D --> H[(SQLite metadata DB\ndata/metadata.db)]
+    E --> H
+    F --> H
+    G --> H
+    H --> I[generate_validation_report CLI\nsrc/cli/generate_validation_report.py]
+    I --> J[Markdown reports\ndocs/]
+    J --> K[GitHub Pages\nhttps://mgifford.github.io/eu-plus-government-scans/]
+```
+
+All scanning runs automatically via **GitHub Actions** (cron schedules + manual triggers).
+Results are stored as **workflow artifacts** and published to GitHub Pages — nothing is
+committed back to the repository except the original seed TOON files.
 
 ## What is in this repository
 
@@ -53,7 +107,7 @@ Initial backend foundation for the feature is included (WP01):
 - `src/storage/schema.py` metadata schema bootstrap + migration seed
 - Unit/integration tests under `tests/`
 
-## URL Validation Scanner
+## URL validation scanner
 
 A URL validation scanner is available to validate government site accessibility from TOON files:
 
@@ -73,7 +127,7 @@ Key features:
 - **Automated cron scheduling** - Run every 2 hours automatically
 - **Issue-triggered validation** - Trigger scans by creating GitHub issues
 
-### Issue-Triggered Validation (NEW!)
+### Issue-triggered validation (NEW!)
 
 Trigger validation scans by simply creating a GitHub issue with a special title prefix:
 
@@ -96,7 +150,7 @@ See **[docs/issue-triggered-validation.md](docs/issue-triggered-validation.md)**
 **Workflows:**
 - `.github/workflows/issue-triggered-validation.yml` - Checks for trigger issues every hour
 
-### Batched Validation (Recommended)
+### Batched validation (recommended)
 
 For large-scale validation (all countries), use the **batched system** which:
 - Processes countries in small batches (default: 5 at a time)
@@ -120,7 +174,7 @@ python3 -m src.cli.validate_urls_batch --batch-mode --batch-size 10
 - `.github/workflows/validate-urls-batch.yml` - Runs every 2 hours (automatic)
 - `.github/workflows/reopen-validation-cycle.yml` - Starts new cycles quarterly
 
-### Single Country / Legacy Validation
+### Single country / legacy validation
 
 For validating individual countries or small sets:
 
@@ -155,7 +209,7 @@ python3 -m src.cli.generate_validation_report --output validation-report.md
 
 See [docs/url-validation-scanner.md](docs/url-validation-scanner.md) for detailed CLI usage.
 
-## Google Lighthouse Scanning
+## Google Lighthouse scanning
 
 The Lighthouse scanner runs Google Lighthouse audits on government page URLs and stores five
 headline scores: **performance**, **accessibility**, **best practices**, **SEO**, and **PWA**.
@@ -180,7 +234,47 @@ every week (Sunday at 04:00 UTC) and can also be triggered manually.
 
 See [docs/lighthouse-scanning.md](docs/lighthouse-scanning.md) for full documentation.
 
-## AI Disclosure
+## Running tests locally
+
+A `tests/` directory is present with unit, integration, and contract tests.
+
+**Prerequisites:**
+
+```bash
+pip install -r requirements.txt
+```
+
+**Run the full test suite:**
+
+```bash
+python3 -m pytest tests/ -v
+```
+
+**Run only unit tests:**
+
+```bash
+python3 -m pytest tests/unit/ -v
+```
+
+**Run only integration tests:**
+
+```bash
+python3 -m pytest tests/integration/ -v
+```
+
+**Run a single test file:**
+
+```bash
+python3 -m pytest tests/unit/test_url_validation_scanner.py -v
+```
+
+**Lint the source code (required before committing):**
+
+```bash
+ruff check src/
+```
+
+## AI disclosure
 
 This project is committed to transparency about how artificial intelligence tools have been
 used in its development and operation.
@@ -221,9 +315,9 @@ server-side via GitHub Actions using the Python CLI entry points documented abov
 - Use TOON seeds as source inputs for country scans
 - Refine statement detection confidence and multilingual glossary coverage
 
-## Data Caching and Storage
+## Data caching and storage
 
-### Validation Metadata Database
+### Validation metadata database
 
 The validation system uses an SQLite database (`data/metadata.db`) to track:
 - URL validation results (status codes, errors, redirect chains)
@@ -248,7 +342,7 @@ This approach ensures:
 2. Scroll to the **Artifacts** section at the bottom
 3. Download `validation-metadata` to inspect the database locally
 
-### Validated TOON Files
+### Validated TOON files
 
 Updated TOON files with validation results are also **not committed**:
 - Pattern: `data/toon-seeds/countries/*_validated.toon`
