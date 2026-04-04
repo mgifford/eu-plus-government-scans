@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-04-04 00:54 UTC_
+_Generated: 2026-04-04 01:17 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -10,9 +10,9 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage |
 |-----------|--------------|-----------|----------|
-| **Combined Reachability** | **76,791 confirmed reachable** | 82,714 | **██████████████████░░ 92.8%** |
+| **Combined Reachability** | **76,800 confirmed reachable** | 82,714 | **██████████████████░░ 92.9%** |
 | URL Validation | 13,495 validated (11,613 valid) | 82,714 | ███░░░░░░░░░░░░░░░░░ 16.3% |
-| Social Media | 82,714 scanned (76,763 reachable) | 82,714 | ████████████████████ 100.0% |
+| Social Media | 82,714 scanned (76,773 reachable) | 82,714 | ████████████████████ 100.0% |
 | Technology | 0 scanned | 82,714 | (manual scan) |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) |
 | Accessibility Statements | 67,515 scanned | 82,714 | ████████████████░░░░ 81.6% |
@@ -54,13 +54,13 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | DENMARK | 1,521 | 1,521 | 1,503 | 551 | 10 | 27 | 1,299 | 176 | 21 | 17 | 13 | Mar 2026 – Apr 2026 |
 | ESTONIA | 396 | 396 | 389 | 180 | 22 | 25 | 298 | 67 | 2 | 0 | 27 | Mar 2026 – Apr 2026 |
 | FINLAND | 180 | 180 | 172 | 64 | 2 | 4 | 132 | 28 | 13 | 2 | 2 | Mar 2026 – Apr 2026 |
-| FRANCE | 10,007 | 10,007 | 9,450 | 2,756 | 213 | 517 | 6,928 | 1,818 | 636 | 126 | 503 | Mar 2026 – Apr 2026 |
+| FRANCE | 10,007 | 10,007 | 9,455 | 2,833 | 213 | 546 | 6,941 | 1,819 | 636 | 126 | 505 | Mar 2026 – Apr 2026 |
 | GERMANY | 6,555 | 6,555 | 6,454 | 1,380 | 301 | 325 | 4,877 | 1,171 | 174 | 120 | 443 | Mar 2026 – Apr 2026 |
 | GREECE | 1,748 | 1,748 | 1,606 | 252 | 40 | 61 | 1,287 | 232 | 56 | 0 | 94 | Mar 2026 – Apr 2026 |
-| HUNGARY | 390 | 390 | 366 | 24 | 20 | 5 | 317 | 29 | 0 | 0 | 25 | Mar 2026 |
-| ICELAND | 139 | 139 | 135 | 5 | 8 | 6 | 116 | 8 | 5 | 0 | 14 | Mar 2026 |
-| IRELAND | 522 | 522 | 494 | 149 | 25 | 29 | 291 | 153 | 31 | 18 | 42 | Mar 2026 |
-| ITALY | 5,338 | 5,338 | 4,729 | 1,891 | 81 | 168 | 2,589 | 1,991 | 90 | 0 | 249 | Mar 2026 |
+| HUNGARY | 390 | 390 | 366 | 124 | 20 | 23 | 317 | 29 | 0 | 0 | 25 | Mar 2026 – Apr 2026 |
+| ICELAND | 139 | 139 | 135 | 47 | 8 | 12 | 116 | 8 | 5 | 0 | 14 | Mar 2026 – Apr 2026 |
+| IRELAND | 522 | 522 | 498 | 197 | 25 | 54 | 293 | 165 | 31 | 18 | 42 | Mar 2026 – Apr 2026 |
+| ITALY | 5,338 | 5,338 | 4,730 | 1,909 | 81 | 176 | 2,589 | 1,992 | 90 | 0 | 249 | Mar 2026 – Apr 2026 |
 | LATVIA | 802 | 802 | 769 | 262 | 23 | 60 | 424 | 279 | 47 | 0 | 83 | Mar 2026 |
 | LITHUANIA | 120 | 120 | 108 | 5 | 4 | 0 | 99 | 5 | 0 | 0 | 4 | Mar 2026 |
 | LUXEMBOURG | 571 | 571 | 250 | 31 | 21 | 15 | 183 | 43 | 3 | 11 | 33 | Mar 2026 |
@@ -103,10 +103,10 @@ Checks whether each government page links to an accessibility statement as requi
 | ESTONIA | 396 | 389 | 136 | 65 | 35% | Mar 2026 – Apr 2026 |
 | FINLAND | 180 | 172 | 111 | 104 | 65% | Mar 2026 – Apr 2026 |
 | FRANCE | 10,007 | 9,404 | 3,632 | 3,496 | 39% | Mar 2026 – Apr 2026 |
-| GERMANY | 6,555 | 6,442 | 4,555 | 3,850 | 71% | Mar 2026 |
-| GREECE | 1,748 | 1,622 | 400 | 237 | 25% | Mar 2026 |
-| HUNGARY | 390 | 361 | 64 | 48 | 18% | Mar 2026 |
-| ICELAND | 139 | 133 | 15 | 7 | 11% | Mar 2026 |
+| GERMANY | 6,555 | 6,456 | 4,570 | 3,861 | 71% | Mar 2026 – Apr 2026 |
+| GREECE | 1,748 | 1,627 | 409 | 238 | 25% | Mar 2026 – Apr 2026 |
+| HUNGARY | 390 | 366 | 64 | 48 | 17% | Mar 2026 – Apr 2026 |
+| ICELAND | 139 | 135 | 15 | 7 | 11% | Mar 2026 – Apr 2026 |
 | IRELAND | 522 | 494 | 223 | 202 | 45% | Mar 2026 |
 | ITALY | 5,338 | 4,702 | 2,539 | 2,489 | 54% | Mar 2026 |
 | LATVIA | 802 | 768 | 485 | 443 | 63% | Mar 2026 |
