@@ -78,6 +78,10 @@ class UrlSocialMediaResult:
     social_tier: str = "no_social"  # "unreachable"|"no_social"|"twitter_only"|"modern_only"|"mixed"
     error_message: str | None = None
     scanned_at: str | None = None
+    # Tracks which platform set was active when this row was written.
+    # Rows with platforms_version < SOCIAL_PLATFORMS_VERSION are re-scanned
+    # so newly-added platforms (e.g. Facebook, LinkedIn) are picked up.
+    platforms_version: int = 0
 
 
 @dataclass(slots=True)
@@ -218,6 +222,7 @@ CREATE TABLE IF NOT EXISTS url_social_media_results (
     social_tier TEXT NOT NULL DEFAULT 'no_social',
     error_message TEXT,
     scanned_at TEXT,
+    platforms_version INTEGER NOT NULL DEFAULT 0,
     PRIMARY KEY (url, scan_id)
 );
 
@@ -354,6 +359,21 @@ def initialize_schema(db_url: str) -> Path:
                     f"ALTER TABLE url_social_media_results "
                     f"ADD COLUMN {col} TEXT NOT NULL DEFAULT '{default}'"
                 )
+        # Migration: add platforms_version to existing databases.  Rows created
+        # before this column existed receive DEFAULT 0, meaning they pre-date
+        # full platform support and will be re-scanned when the skip logic
+        # checks platforms_version >= SOCIAL_PLATFORMS_VERSION.
+        existing_cols = {
+            row[1]
+            for row in conn.execute(
+                "PRAGMA table_info(url_social_media_results)"
+            ).fetchall()
+        }
+        if "platforms_version" not in existing_cols:
+            conn.execute(
+                "ALTER TABLE url_social_media_results "
+                "ADD COLUMN platforms_version INTEGER NOT NULL DEFAULT 0"
+            )
         conn.commit()
     finally:
         conn.close()

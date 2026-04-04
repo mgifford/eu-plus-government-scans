@@ -86,6 +86,13 @@ FACEBOOK_HOSTS: frozenset[str] = frozenset(
 # Hostnames that belong to LinkedIn (legacy platform)
 LINKEDIN_HOSTS: frozenset[str] = frozenset({"linkedin.com", "www.linkedin.com"})
 
+# Version number that identifies which set of social-media platforms this
+# scanner detects.  Increment this constant whenever a new platform is added
+# so that previously-scanned URLs are re-scanned to collect the new data.
+#   1 – Twitter, X, Bluesky, Mastodon
+#   2 – Twitter, X, Bluesky, Mastodon, Facebook, LinkedIn  (current)
+SOCIAL_PLATFORMS_VERSION: int = 2
+
 # Regex for detecting @user@domain patterns in page text (Mastodon handles)
 _MASTODON_HANDLE_RE = re.compile(r"@[\w.-]+@([\w.-]+\.\w{2,})")
 

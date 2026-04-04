@@ -2,13 +2,13 @@ name: URL Validation - Batched
 
 on:
   # Run every 12 hours — URL validation is the LOWEST-priority background task.
-  # Social media scans (every 3 hours) simultaneously confirm reachability AND
+  # Social media scans (every 2 hours) simultaneously confirm reachability AND
   # collect social-link data, making a separate URL-only pass unnecessary for
-  # recently-scanned pages.  Scheduled at 02:00 and 14:00 UTC to avoid
-  # colliding with social media scans that run on the 0/3/6/9/12/15/18/21 hour
-  # marks, reducing queueing in the shared concurrency group.
+  # recently-scanned pages.  Scheduled at 01:00 and 13:00 UTC to sit between
+  # social media scan runs (0/2/4/…/22 hour marks), reducing queueing in the
+  # shared concurrency group.
   schedule:
-    - cron: '0 2,14 * * *'
+    - cron: '0 1,13 * * *'
   
   # Allow manual trigger
   workflow_dispatch:
