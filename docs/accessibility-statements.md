@@ -7,14 +7,14 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-04-04 08:46 UTC — last scan: 2026-04-04_
+_Stats as of 2026-04-04 10:38 UTC — last scan: 2026-04-04_
 
-**72** scan batches run
+**73** scan batches run
 
-**68,017** of **82,714** available pages scanned (**82.2%** coverage)
-**62,585** of **68,017** scanned pages were reachable (**92.0%**)
-**30,064** of **62,585** reachable pages have an accessibility statement (**48.0%**)
-**26,084** pages have the statement link in the footer (**86.8%** of pages with a statement)
+**70,735** of **82,714** available pages scanned (**85.5%** coverage)
+**65,146** of **70,735** scanned pages were reachable (**92.1%**)
+**31,640** of **65,146** reachable pages have an accessibility statement (**48.6%**)
+**27,580** pages have the statement link in the footer (**87.2%** of pages with a statement)
 
 📥 Machine-readable results: [accessibility-data.json](accessibility-data.json)
 
@@ -54,8 +54,8 @@ _Stats as of 2026-04-04 08:46 UTC — last scan: 2026-04-04_
 | SPAIN | 6,069 | 6,069 | 5,316 | 2,339 | 2,043 | 44.0% | Mar 2026 – Apr 2026 |
 | SWEDEN | 1,558 | 1,558 | 1,483 | 857 | 782 | 57.8% | Mar 2026 |
 | SWITZERLAND | 2,117 | 2,117 | 2,080 | 979 | 977 | 47.1% | Mar 2026 – Apr 2026 |
-| UNITED_KINGDOM_UK | 7,868 | 19,502 | 7,372 | 4,220 | 3,940 | 57.2% | Mar 2026 – Apr 2026 |
-| **Total** | **68,017** | **82,714** | **62,585** | **30,064** | **26,084** | **48.0%** | — |
+| UNITED_KINGDOM_UK | 10,586 | 19,502 | 9,933 | 5,796 | 5,436 | 58.4% | Mar 2026 – Apr 2026 |
+| **Total** | **70,735** | **82,714** | **65,146** | **31,640** | **27,580** | **48.6%** | — |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
