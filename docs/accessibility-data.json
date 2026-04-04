@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-04-04 10:38 UTC",
+  "generated_at": "2026-04-04 12:12 UTC",
   "summary": {
-    "total_batches": 73,
-    "total_scanned": 70735,
-    "total_reachable": 65146,
+    "total_batches": 69,
+    "total_scanned": 67515,
+    "total_reachable": 62131,
     "total_available": 82714,
-    "total_has_statement": 31640,
-    "total_in_footer": 27580,
+    "total_has_statement": 29797,
+    "total_in_footer": 25841,
     "first_scan": "2026-03-25T17:15:29.276776+00:00",
-    "last_scan": "2026-04-04T10:37:39.789642+00:00"
+    "last_scan": "2026-04-04T03:06:31.958323+00:00"
   },
   "by_country": [
     {
@@ -54,7 +54,7 @@
       "has_statement": 427,
       "found_in_footer": 365,
       "first_scan": "2026-03-25T18:46:26.205282+00:00",
-      "last_scan": "2026-04-04T05:40:54.202934+00:00"
+      "last_scan": "2026-04-01T22:37:56.924162+00:00"
     },
     {
       "country_code": "DENMARK",
@@ -86,11 +86,11 @@
     {
       "country_code": "FRANCE",
       "total_scanned": 10007,
-      "reachable": 9417,
-      "has_statement": 3649,
-      "found_in_footer": 3511,
+      "reachable": 9404,
+      "has_statement": 3632,
+      "found_in_footer": 3496,
       "first_scan": "2026-03-25T22:11:29.812991+00:00",
-      "last_scan": "2026-04-04T06:55:39.701670+00:00"
+      "last_scan": "2026-04-02T04:35:05.682912+00:00"
     },
     {
       "country_code": "GERMANY",
@@ -256,12 +256,12 @@
     },
     {
       "country_code": "SPAIN",
-      "total_scanned": 6069,
-      "reachable": 5316,
-      "has_statement": 2339,
-      "found_in_footer": 2043,
+      "total_scanned": 5567,
+      "reachable": 4875,
+      "has_statement": 2089,
+      "found_in_footer": 1815,
       "first_scan": "2026-03-30T01:41:25.055437+00:00",
-      "last_scan": "2026-04-04T05:28:14.595778+00:00"
+      "last_scan": "2026-04-01T18:39:22.651417+00:00"
     },
     {
       "country_code": "SWEDEN",
@@ -283,12 +283,12 @@
     },
     {
       "country_code": "UNITED_KINGDOM_UK",
-      "total_scanned": 10586,
-      "reachable": 9933,
-      "has_statement": 5796,
-      "found_in_footer": 5436,
+      "total_scanned": 7868,
+      "reachable": 7372,
+      "has_statement": 4220,
+      "found_in_footer": 3940,
       "first_scan": "2026-03-30T09:33:51.161852+00:00",
-      "last_scan": "2026-04-04T10:37:39.789642+00:00"
+      "last_scan": "2026-04-02T19:57:19.524607+00:00"
     }
   ]
 }
