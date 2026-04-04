@@ -12,7 +12,11 @@ from uuid import uuid4
 
 from src.lib.country_utils import country_filename_to_code
 from src.lib.settings import Settings
-from src.services.social_media_scanner import SocialMediaScanResult, SocialMediaScanner
+from src.services.social_media_scanner import (
+    SOCIAL_PLATFORMS_VERSION,
+    SocialMediaScanResult,
+    SocialMediaScanner,
+)
 from src.storage.schema import initialize_schema
 
 
@@ -99,8 +103,9 @@ class SocialMediaScannerJob:
                 FROM url_social_media_results
                 WHERE country_code = ?
                   AND scanned_at >= ?
+                  AND platforms_version >= ?
                 """,
-                (country_code, cutoff),
+                (country_code, cutoff, SOCIAL_PLATFORMS_VERSION),
             )
             return {row[0] for row in cursor.fetchall()}
         finally:
@@ -122,8 +127,8 @@ class SocialMediaScannerJob:
                     (url, country_code, scan_id, is_reachable,
                      twitter_links, x_links, bluesky_links, mastodon_links,
                      facebook_links, linkedin_links,
-                     social_tier, error_message, scanned_at)
-                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                     social_tier, error_message, scanned_at, platforms_version)
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                     """,
                     (
                         result.url,
@@ -139,6 +144,7 @@ class SocialMediaScannerJob:
                         result.social_tier,
                         result.error_message,
                         result.scanned_at,
+                        SOCIAL_PLATFORMS_VERSION,
                     ),
                 )
             conn.commit()

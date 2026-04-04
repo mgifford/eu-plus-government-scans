@@ -14,7 +14,7 @@ from src.jobs.accessibility_scanner import AccessibilityScannerJob
 from src.jobs.social_media_scanner import SocialMediaScannerJob
 from src.jobs.tech_scanner import TechScanner
 from src.lib.settings import Settings
-from src.services.social_media_scanner import SocialMediaScanResult
+from src.services.social_media_scanner import SOCIAL_PLATFORMS_VERSION, SocialMediaScanResult
 from src.services.tech_detector import TechDetectionResult
 from src.storage.schema import initialize_schema
 
@@ -80,10 +80,12 @@ def test_social_get_recently_scanned_returns_recent_urls(temp_settings):
             """
             INSERT INTO url_social_media_results
             (url, country_code, scan_id, is_reachable, social_tier,
-             twitter_links, x_links, bluesky_links, mastodon_links, scanned_at)
-            VALUES (?, ?, ?, ?, ?, '[]', '[]', '[]', '[]', ?)
+             twitter_links, x_links, bluesky_links, mastodon_links,
+             platforms_version, scanned_at)
+            VALUES (?, ?, ?, ?, ?, '[]', '[]', '[]', '[]', ?, ?)
             """,
-            ("https://example.test/page1", "TESTLAND", "s-001", 1, "no_social", now),
+            ("https://example.test/page1", "TESTLAND", "s-001", 1, "no_social",
+             SOCIAL_PLATFORMS_VERSION, now),
         )
         conn.commit()
     finally:
@@ -104,10 +106,12 @@ def test_social_get_recently_scanned_excludes_old_results(temp_settings):
             """
             INSERT INTO url_social_media_results
             (url, country_code, scan_id, is_reachable, social_tier,
-             twitter_links, x_links, bluesky_links, mastodon_links, scanned_at)
-            VALUES (?, ?, ?, ?, ?, '[]', '[]', '[]', '[]', ?)
+             twitter_links, x_links, bluesky_links, mastodon_links,
+             platforms_version, scanned_at)
+            VALUES (?, ?, ?, ?, ?, '[]', '[]', '[]', '[]', ?, ?)
             """,
-            ("https://example.test/old", "TESTLAND", "s-old", 1, "no_social", old_ts),
+            ("https://example.test/old", "TESTLAND", "s-old", 1, "no_social",
+             SOCIAL_PLATFORMS_VERSION, old_ts),
         )
         conn.commit()
     finally:
@@ -128,10 +132,12 @@ def test_social_get_recently_scanned_excludes_other_countries(temp_settings):
             """
             INSERT INTO url_social_media_results
             (url, country_code, scan_id, is_reachable, social_tier,
-             twitter_links, x_links, bluesky_links, mastodon_links, scanned_at)
-            VALUES (?, ?, ?, ?, ?, '[]', '[]', '[]', '[]', ?)
+             twitter_links, x_links, bluesky_links, mastodon_links,
+             platforms_version, scanned_at)
+            VALUES (?, ?, ?, ?, ?, '[]', '[]', '[]', '[]', ?, ?)
             """,
-            ("https://example.fr/page1", "FRANCE", "s-001", 1, "no_social", now),
+            ("https://example.fr/page1", "FRANCE", "s-001", 1, "no_social",
+             SOCIAL_PLATFORMS_VERSION, now),
         )
         conn.commit()
     finally:
@@ -139,6 +145,42 @@ def test_social_get_recently_scanned_excludes_other_countries(temp_settings):
 
     result = job._get_recently_scanned_urls("TESTLAND", within_days=7)
     assert result == set()
+
+
+def test_social_get_recently_scanned_excludes_old_platform_version(temp_settings):
+    """URLs scanned with an older platforms_version are not considered recently scanned.
+
+    This ensures that when a new social-media platform is added (and
+    SOCIAL_PLATFORMS_VERSION is bumped), previously-scanned URLs are
+    re-processed to collect data for the new platform rather than being
+    silently skipped.
+    """
+    job = SocialMediaScannerJob(temp_settings)
+    now = datetime.now(timezone.utc).isoformat()
+
+    conn = sqlite3.connect(job.db_path)
+    try:
+        conn.execute(
+            """
+            INSERT INTO url_social_media_results
+            (url, country_code, scan_id, is_reachable, social_tier,
+             twitter_links, x_links, bluesky_links, mastodon_links,
+             platforms_version, scanned_at)
+            VALUES (?, ?, ?, ?, ?, '[]', '[]', '[]', '[]', ?, ?)
+            """,
+            # platforms_version = 0 simulates a pre-Facebook/LinkedIn scan row
+            ("https://example.test/old-platform", "TESTLAND", "s-v0",
+             1, "no_social", 0, now),
+        )
+        conn.commit()
+    finally:
+        conn.close()
+
+    result = job._get_recently_scanned_urls("TESTLAND", within_days=7)
+    assert "https://example.test/old-platform" not in result, (
+        "URLs scanned with an outdated platforms_version should not be "
+        "treated as recently scanned — they need a re-scan."
+    )
 
 
 @pytest.mark.asyncio
@@ -157,10 +199,11 @@ async def test_social_scan_country_skips_recently_scanned_urls(
                 """
                 INSERT INTO url_social_media_results
                 (url, country_code, scan_id, is_reachable, social_tier,
-                 twitter_links, x_links, bluesky_links, mastodon_links, scanned_at)
-                VALUES (?, ?, ?, ?, ?, '[]', '[]', '[]', '[]', ?)
+                 twitter_links, x_links, bluesky_links, mastodon_links,
+                 platforms_version, scanned_at)
+                VALUES (?, ?, ?, ?, ?, '[]', '[]', '[]', '[]', ?, ?)
                 """,
-                (url, "TESTLAND", "s-prev", 1, "no_social", now),
+                (url, "TESTLAND", "s-prev", 1, "no_social", SOCIAL_PLATFORMS_VERSION, now),
             )
         conn.commit()
     finally:
@@ -216,10 +259,11 @@ async def test_social_scan_country_all_recently_scanned_skips_scan(
                 """
                 INSERT INTO url_social_media_results
                 (url, country_code, scan_id, is_reachable, social_tier,
-                 twitter_links, x_links, bluesky_links, mastodon_links, scanned_at)
-                VALUES (?, ?, ?, ?, ?, '[]', '[]', '[]', '[]', ?)
+                 twitter_links, x_links, bluesky_links, mastodon_links,
+                 platforms_version, scanned_at)
+                VALUES (?, ?, ?, ?, ?, '[]', '[]', '[]', '[]', ?, ?)
                 """,
-                (url, "TESTLAND", "s-prev", 1, "no_social", now),
+                (url, "TESTLAND", "s-prev", 1, "no_social", SOCIAL_PLATFORMS_VERSION, now),
             )
         conn.commit()
     finally:
@@ -408,10 +452,12 @@ def test_social_get_last_scan_time_returns_max_per_country(temp_settings):
                 """
                 INSERT INTO url_social_media_results
                 (url, country_code, scan_id, is_reachable, social_tier,
-                 twitter_links, x_links, bluesky_links, mastodon_links, scanned_at)
-                VALUES (?, ?, ?, ?, ?, '[]', '[]', '[]', '[]', ?)
+                 twitter_links, x_links, bluesky_links, mastodon_links,
+                 platforms_version, scanned_at)
+                VALUES (?, ?, ?, ?, ?, '[]', '[]', '[]', '[]', ?, ?)
                 """,
-                ("https://example.test/p", "TESTLAND", scan_id, 1, "no_social", ts),
+                ("https://example.test/p", "TESTLAND", scan_id, 1, "no_social",
+                 SOCIAL_PLATFORMS_VERSION, ts),
             )
         conn.commit()
     finally:
@@ -433,19 +479,23 @@ def test_social_get_last_scan_time_multiple_countries(temp_settings):
             """
             INSERT INTO url_social_media_results
             (url, country_code, scan_id, is_reachable, social_tier,
-             twitter_links, x_links, bluesky_links, mastodon_links, scanned_at)
-            VALUES (?, ?, ?, ?, ?, '[]', '[]', '[]', '[]', ?)
+             twitter_links, x_links, bluesky_links, mastodon_links,
+             platforms_version, scanned_at)
+            VALUES (?, ?, ?, ?, ?, '[]', '[]', '[]', '[]', ?, ?)
             """,
-            ("https://a.test/p", "COUNTRY_A", "s-a", 1, "no_social", ts_a),
+            ("https://a.test/p", "COUNTRY_A", "s-a", 1, "no_social",
+             SOCIAL_PLATFORMS_VERSION, ts_a),
         )
         conn.execute(
             """
             INSERT INTO url_social_media_results
             (url, country_code, scan_id, is_reachable, social_tier,
-             twitter_links, x_links, bluesky_links, mastodon_links, scanned_at)
-            VALUES (?, ?, ?, ?, ?, '[]', '[]', '[]', '[]', ?)
+             twitter_links, x_links, bluesky_links, mastodon_links,
+             platforms_version, scanned_at)
+            VALUES (?, ?, ?, ?, ?, '[]', '[]', '[]', '[]', ?, ?)
             """,
-            ("https://b.test/p", "COUNTRY_B", "s-b", 1, "no_social", ts_b),
+            ("https://b.test/p", "COUNTRY_B", "s-b", 1, "no_social",
+             SOCIAL_PLATFORMS_VERSION, ts_b),
         )
         conn.commit()
     finally:
@@ -498,10 +548,12 @@ async def test_social_scan_all_countries_unseen_first(tmp_path):
             """
             INSERT INTO url_social_media_results
             (url, country_code, scan_id, is_reachable, social_tier,
-             twitter_links, x_links, bluesky_links, mastodon_links, scanned_at)
-            VALUES (?, ?, ?, ?, ?, '[]', '[]', '[]', '[]', ?)
+             twitter_links, x_links, bluesky_links, mastodon_links,
+             platforms_version, scanned_at)
+            VALUES (?, ?, ?, ?, ?, '[]', '[]', '[]', '[]', ?, ?)
             """,
-            ("https://alpha.test/page", "ALPHA", "s-alpha", 1, "no_social", recent_ts),
+            ("https://alpha.test/page", "ALPHA", "s-alpha", 1, "no_social",
+             SOCIAL_PLATFORMS_VERSION, recent_ts),
         )
         conn.commit()
     finally:
