@@ -1,7 +1,6 @@
 # eu-plus-government-scans
 
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](LICENSE)
-[![URL Validation](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/validate-urls-batch.yml/badge.svg)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/validate-urls-batch.yml)
 [![Deploy GitHub Pages](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/deploy-pages.yml)
 [![GitHub Pages](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://mgifford.github.io/eu-plus-government-scans/)
 
