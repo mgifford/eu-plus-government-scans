@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-04-04 22:36 UTC_
+_Generated: 2026-04-05 00:25 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -10,9 +10,9 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage |
 |-----------|--------------|-----------|----------|
-| **Combined Reachability** | **77,003 confirmed reachable** | 82,714 | **██████████████████░░ 93.1%** |
+| **Combined Reachability** | **77,008 confirmed reachable** | 82,714 | **██████████████████░░ 93.1%** |
 | URL Validation | 13,495 validated (11,613 valid) | 82,714 | ███░░░░░░░░░░░░░░░░░ 16.3% |
-| Social Media | 82,714 scanned (76,994 reachable) | 82,714 | ████████████████████ 100.0% |
+| Social Media | 82,714 scanned (76,999 reachable) | 82,714 | ████████████████████ 100.0% |
 | Technology | 0 scanned | 82,714 | (manual scan) |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) |
 | Accessibility Statements | 72,735 scanned | 82,714 | █████████████████░░░ 87.9% |
@@ -70,12 +70,12 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | POLAND | 14,938 | 14,938 | 13,808 | 4,242 | 297 | 733 | 8,536 | 1,072 | 311 | 1 | 1,029 | Mar 2026 – Apr 2026 |
 | PORTUGAL | 3,503 | 3,503 | 2,904 | 752 | 57 | 136 | 2,023 | 420 | 70 | 2 | 179 | Mar 2026 – Apr 2026 |
 | REPUBLIC_OF_CYPRUS | 24 | 24 | 24 | 11 | 0 | 0 | 19 | 5 | 0 | 0 | 0 | Mar 2026 – Apr 2026 |
-| ROMANIA | 799 | 799 | 351 | 66 | 6 | 8 | 271 | 42 | 1 | 0 | 14 | Mar 2026 – Apr 2026 |
+| ROMANIA | 799 | 799 | 351 | 85 | 6 | 8 | 271 | 42 | 1 | 0 | 14 | Mar 2026 – Apr 2026 |
 | SLOVAKIA | 434 | 434 | 413 | 135 | 9 | 13 | 382 | 17 | 9 | 0 | 13 | Mar 2026 – Apr 2026 |
 | SLOVENIA | 200 | 200 | 190 | 52 | 7 | 9 | 156 | 21 | 6 | 1 | 9 | Mar 2026 – Apr 2026 |
 | SPAIN | 6,069 | 6,069 | 5,382 | 1,907 | 29 | 306 | 3,140 | 1,741 | 366 | 51 | 305 | Mar 2026 – Apr 2026 |
 | SWEDEN | 1,558 | 1,558 | 1,487 | 477 | 14 | 35 | 1,362 | 92 | 24 | 11 | 25 | Mar 2026 – Apr 2026 |
-| SWITZERLAND | 2,117 | 2,117 | 2,077 | 371 | 56 | 99 | 1,551 | 238 | 213 | 56 | 113 | Mar 2026 |
+| SWITZERLAND | 2,117 | 2,117 | 2,082 | 557 | 56 | 128 | 1,565 | 239 | 215 | 56 | 114 | Mar 2026 – Apr 2026 |
 | UNITED_KINGDOM_UK | 19,502 | 19,502 | 18,653 | 6,518 | 36 | 690 | 11,409 | 4,114 | 976 | 115 | 657 | Mar 2026 – Apr 2026 |
 
 > **Tier columns** (Twitter-only / Modern / Mixed / No Social) classify each page by its overall social media presence. **Platform columns** (Twitter / X / Bluesky / Mastodon) count pages with at least one link to that platform — a page may appear in more than one platform column.
