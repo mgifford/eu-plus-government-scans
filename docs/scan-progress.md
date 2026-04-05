@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-04-05 06:24 UTC_
+_Generated: 2026-04-05 06:40 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -11,7 +11,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Scan Type | Pages Scanned | Available | Coverage |
 |-----------|--------------|-----------|----------|
 | **Combined Reachability** | **77,012 confirmed reachable** | 82,714 | **██████████████████░░ 93.1%** |
-| URL Validation | 13,771 validated (11,959 valid) | 82,714 | ███░░░░░░░░░░░░░░░░░ 16.6% |
+| URL Validation | 13,495 validated (11,613 valid) | 82,714 | ███░░░░░░░░░░░░░░░░░ 16.3% |
 | Social Media | 82,714 scanned (77,003 reachable) | 82,714 | ████████████████████ 100.0% |
 | Technology | 0 scanned | 82,714 | (manual scan) |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) |
@@ -27,7 +27,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | BELGIUM | 1,309 | 1,166 | 732 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
 | BULGARIA | 291 | 232 | 87 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
 | CROATIA | 233 | 227 | 13 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
-| CZECHIA | 843 | 786 | 146 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
+| CZECHIA | 567 | 440 | 127 | Mar 2026 | ██████████░░░░░ 67.3% |
 | DENMARK | 974 | 891 | 83 | Mar 2026 | █████████░░░░░░ 64.0% |
 | ESTONIA | 12 | 3 | 9 | Mar 2026 | ░░░░░░░░░░░░░░░ 3.0% |
 | FINLAND | 8 | 0 | 8 | Mar 2026 | ░░░░░░░░░░░░░░░ 4.4% |
@@ -51,7 +51,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | BULGARIA | 291 | 291 | 269 | 90 | 11 | 12 | 235 | 18 | 5 | 0 | 13 | Mar 2026 – Apr 2026 |
 | CROATIA | 233 | 233 | 232 | 70 | 11 | 14 | 187 | 34 | 0 | 0 | 14 | Mar 2026 – Apr 2026 |
 | CZECHIA | 843 | 843 | 803 | 241 | 23 | 33 | 643 | 131 | 10 | 0 | 38 | Mar 2026 – Apr 2026 |
-| DENMARK | 1,521 | 1,521 | 1,503 | 551 | 10 | 27 | 1,299 | 176 | 21 | 17 | 13 | Mar 2026 – Apr 2026 |
+| DENMARK | 1,521 | 1,521 | 1,503 | 557 | 10 | 27 | 1,307 | 176 | 21 | 17 | 13 | Mar 2026 – Apr 2026 |
 | ESTONIA | 396 | 396 | 389 | 180 | 22 | 25 | 298 | 67 | 2 | 0 | 27 | Mar 2026 – Apr 2026 |
 | FINLAND | 180 | 180 | 172 | 64 | 2 | 4 | 132 | 28 | 13 | 2 | 2 | Mar 2026 – Apr 2026 |
 | FRANCE | 10,007 | 10,007 | 9,455 | 2,833 | 213 | 546 | 6,941 | 1,819 | 636 | 126 | 505 | Mar 2026 – Apr 2026 |
@@ -67,7 +67,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | MALTA | 608 | 608 | 595 | 129 | 20 | 32 | 501 | 57 | 17 | 0 | 34 | Mar 2026 – Apr 2026 |
 | NETHERLANDS | 937 | 937 | 909 | 257 | 54 | 95 | 644 | 148 | 74 | 45 | 77 | Mar 2026 – Apr 2026 |
 | NORWAY | 239 | 239 | 233 | 55 | 2 | 0 | 211 | 10 | 13 | 0 | 2 | Mar 2026 – Apr 2026 |
-| POLAND | 14,938 | 14,938 | 13,808 | 4,242 | 297 | 733 | 8,536 | 1,072 | 311 | 1 | 1,029 | Mar 2026 – Apr 2026 |
+| POLAND | 14,938 | 14,938 | 13,808 | 4,376 | 297 | 745 | 8,540 | 1,072 | 311 | 1 | 1,029 | Mar 2026 – Apr 2026 |
 | PORTUGAL | 3,503 | 3,503 | 2,904 | 752 | 57 | 136 | 2,023 | 420 | 70 | 2 | 179 | Mar 2026 – Apr 2026 |
 | REPUBLIC_OF_CYPRUS | 24 | 24 | 24 | 11 | 0 | 0 | 19 | 5 | 0 | 0 | 0 | Mar 2026 – Apr 2026 |
 | ROMANIA | 799 | 799 | 351 | 85 | 6 | 8 | 271 | 42 | 1 | 0 | 14 | Mar 2026 – Apr 2026 |
