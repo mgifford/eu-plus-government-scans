@@ -83,6 +83,7 @@ jobs:
       - name: Run technology scan (specific country)
         if: ${{ github.event.inputs.country != '' }}
         run: |
+          set -o pipefail
           SKIP_DAYS="${{ github.event.inputs.skip_recently_scanned_days || '7' }}"
           python3 -m src.cli.scan_technology \
             --country "${{ github.event.inputs.country }}" \
@@ -93,6 +94,7 @@ jobs:
       - name: Run technology scan (all countries)
         if: ${{ github.event.inputs.country == '' || github.event_name == 'schedule' }}
         run: |
+          set -o pipefail
           SKIP_DAYS="${{ github.event.inputs.skip_recently_scanned_days || '7' }}"
           python3 -m src.cli.scan_technology \
             --all \
