@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-05 02:15 UTC",
+  "generated_at": "2026-04-05 04:51 UTC",
   "summary": {
     "total_batches": 148,
     "total_scanned": 82714,
@@ -9,10 +9,10 @@
     "x_pages": 3275,
     "bluesky_pages": 623,
     "mastodon_pages": 4242,
-    "facebook_pages": 22353,
-    "linkedin_pages": 8333,
+    "facebook_pages": 22413,
+    "linkedin_pages": 8357,
     "first_scan": "2026-03-22T00:36:33.003106+00:00",
-    "last_scan": "2026-04-05T02:14:38.930011+00:00"
+    "last_scan": "2026-04-05T04:50:34.603930+00:00"
   },
   "by_country": [
     {
@@ -32,7 +32,7 @@
       "has_any_legacy": 357,
       "has_any_modern": 47,
       "first_scan": "2026-03-22T00:36:33.003106+00:00",
-      "last_scan": "2026-04-05T00:55:38.292059+00:00",
+      "last_scan": "2026-04-05T03:29:01.051997+00:00",
       "sovereignty_score": 93.4,
       "legacy_exposure": 45.4,
       "sovereignty_tier": "🥉 Growing"
@@ -54,7 +54,7 @@
       "has_any_legacy": 498,
       "has_any_modern": 106,
       "first_scan": "2026-03-22T01:05:38.430207+00:00",
-      "last_scan": "2026-04-05T01:43:59.882778+00:00",
+      "last_scan": "2026-04-05T04:13:01.521435+00:00",
       "sovereignty_score": 82.8,
       "legacy_exposure": 40.5,
       "sovereignty_tier": "🥉 Growing"
@@ -76,7 +76,7 @@
       "has_any_legacy": 102,
       "has_any_modern": 13,
       "first_scan": "2026-03-22T01:54:24.709226+00:00",
-      "last_scan": "2026-04-05T01:56:36.219799+00:00",
+      "last_scan": "2026-04-05T04:24:39.712776+00:00",
       "sovereignty_score": 91.4,
       "legacy_exposure": 37.9,
       "sovereignty_tier": "🥉 Growing"
@@ -98,7 +98,7 @@
       "has_any_legacy": 84,
       "has_any_modern": 14,
       "first_scan": "2026-03-22T02:07:26.039772+00:00",
-      "last_scan": "2026-04-05T02:05:04.551006+00:00",
+      "last_scan": "2026-04-05T04:33:23.267793+00:00",
       "sovereignty_score": 85.3,
       "legacy_exposure": 36.2,
       "sovereignty_tier": "🥉 Growing"
@@ -617,18 +617,18 @@
       "x_pages": 366,
       "bluesky_pages": 51,
       "mastodon_pages": 305,
-      "facebook_pages": 1341,
-      "linkedin_pages": 387,
-      "twitter_only": 1916,
+      "facebook_pages": 1401,
+      "linkedin_pages": 411,
+      "twitter_only": 1929,
       "modern_only": 29,
-      "mixed": 306,
+      "mixed": 307,
       "no_social": 3140,
-      "has_any_legacy": 2222,
+      "has_any_legacy": 2236,
       "has_any_modern": 335,
       "first_scan": "2026-03-30T03:30:16.840716+00:00",
-      "last_scan": "2026-04-05T02:14:38.930011+00:00",
+      "last_scan": "2026-04-05T04:50:34.603930+00:00",
       "sovereignty_score": 58.8,
-      "legacy_exposure": 41.3,
+      "legacy_exposure": 41.5,
       "sovereignty_tier": "🥉 Growing"
     },
     {
