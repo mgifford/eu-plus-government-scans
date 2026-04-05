@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-04-05 01:48 UTC_
+_Generated: 2026-04-05 02:15 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -10,9 +10,9 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage |
 |-----------|--------------|-----------|----------|
-| **Combined Reachability** | **77,008 confirmed reachable** | 82,714 | **██████████████████░░ 93.1%** |
+| **Combined Reachability** | **77,012 confirmed reachable** | 82,714 | **██████████████████░░ 93.1%** |
 | URL Validation | 13,495 validated (11,613 valid) | 82,714 | ███░░░░░░░░░░░░░░░░░ 16.3% |
-| Social Media | 82,714 scanned (76,999 reachable) | 82,714 | ████████████████████ 100.0% |
+| Social Media | 82,714 scanned (77,003 reachable) | 82,714 | ████████████████████ 100.0% |
 | Technology | 0 scanned | 82,714 | (manual scan) |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) |
 | Accessibility Statements | 72,735 scanned | 82,714 | █████████████████░░░ 87.9% |
@@ -24,7 +24,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Country | Total | Valid | Invalid | Scan Period | Coverage |
 |---------|-------|-------|---------|-------------|----------|
 | AUSTRIA | 821 | 718 | 192 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
-| BELGIUM | 1,309 | 1,166 | 732 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
+| BELGIUM | 1,309 | 1,166 | 731 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
 | BULGARIA | 291 | 232 | 87 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
 | CROATIA | 233 | 227 | 13 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
 | CZECHIA | 567 | 440 | 127 | Mar 2026 | ██████████░░░░░ 67.3% |
@@ -47,7 +47,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Country | Scanned | Available | Reachable | Twitter-only | Modern | Mixed | No Social | Twitter | X | Bluesky | Mastodon | Scan Period |
 |---------|---------|-----------|-----------|-------------|--------|-------|-----------|---------|---|---------|----------|-------------|
 | AUSTRIA | 821 | 821 | 787 | 312 | 25 | 45 | 710 | 35 | 18 | 16 | 42 | Mar 2026 – Apr 2026 |
-| BELGIUM | 1,309 | 1,309 | 1,230 | 402 | 58 | 96 | 929 | 183 | 74 | 27 | 90 | Mar 2026 – Apr 2026 |
+| BELGIUM | 1,309 | 1,309 | 1,230 | 404 | 59 | 97 | 960 | 183 | 74 | 28 | 90 | Mar 2026 – Apr 2026 |
 | BULGARIA | 291 | 291 | 269 | 90 | 11 | 12 | 235 | 18 | 5 | 0 | 13 | Mar 2026 – Apr 2026 |
 | CROATIA | 233 | 233 | 232 | 70 | 11 | 14 | 187 | 34 | 0 | 0 | 14 | Mar 2026 – Apr 2026 |
 | CZECHIA | 843 | 843 | 803 | 241 | 23 | 33 | 643 | 131 | 10 | 0 | 38 | Mar 2026 – Apr 2026 |
@@ -73,7 +73,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | ROMANIA | 799 | 799 | 351 | 85 | 6 | 8 | 271 | 42 | 1 | 0 | 14 | Mar 2026 – Apr 2026 |
 | SLOVAKIA | 434 | 434 | 413 | 135 | 9 | 13 | 382 | 17 | 9 | 0 | 13 | Mar 2026 – Apr 2026 |
 | SLOVENIA | 200 | 200 | 190 | 52 | 7 | 9 | 156 | 21 | 6 | 1 | 9 | Mar 2026 – Apr 2026 |
-| SPAIN | 6,069 | 6,069 | 5,382 | 1,907 | 29 | 306 | 3,140 | 1,741 | 366 | 51 | 305 | Mar 2026 – Apr 2026 |
+| SPAIN | 6,069 | 6,069 | 5,386 | 1,916 | 29 | 306 | 3,140 | 1,745 | 366 | 51 | 305 | Mar 2026 – Apr 2026 |
 | SWEDEN | 1,558 | 1,558 | 1,487 | 477 | 14 | 35 | 1,362 | 92 | 24 | 11 | 25 | Mar 2026 – Apr 2026 |
 | SWITZERLAND | 2,117 | 2,117 | 2,082 | 557 | 56 | 128 | 1,565 | 239 | 215 | 56 | 114 | Mar 2026 – Apr 2026 |
 | UNITED_KINGDOM_UK | 19,502 | 19,502 | 18,653 | 6,518 | 36 | 690 | 11,409 | 4,114 | 976 | 115 | 657 | Mar 2026 – Apr 2026 |
