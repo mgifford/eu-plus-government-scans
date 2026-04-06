@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-04-06 06:45 UTC_
+_Generated: 2026-04-06 08:35 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -10,9 +10,9 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage |
 |-----------|--------------|-----------|----------|
-| **Combined Reachability** | **77,078 confirmed reachable** | 82,714 | **██████████████████░░ 93.2%** |
+| **Combined Reachability** | **77,111 confirmed reachable** | 82,714 | **██████████████████░░ 93.2%** |
 | URL Validation | 13,771 validated (11,960 valid) | 82,714 | ███░░░░░░░░░░░░░░░░░ 16.6% |
-| Social Media | 82,714 scanned (77,070 reachable) | 82,714 | ████████████████████ 100.0% |
+| Social Media | 82,714 scanned (77,111 reachable) | 82,714 | ████████████████████ 100.0% |
 | Technology | 0 scanned | 82,714 | (manual scan) |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) |
 | Accessibility Statements | 72,735 scanned | 82,714 | █████████████████░░░ 87.9% |
@@ -67,7 +67,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | MALTA | 608 | 608 | 595 | 129 | 20 | 32 | 501 | 57 | 17 | 0 | 34 | Mar 2026 – Apr 2026 |
 | NETHERLANDS | 937 | 937 | 909 | 257 | 54 | 95 | 644 | 148 | 74 | 45 | 77 | Mar 2026 – Apr 2026 |
 | NORWAY | 239 | 239 | 233 | 55 | 2 | 0 | 211 | 10 | 13 | 0 | 2 | Mar 2026 – Apr 2026 |
-| POLAND | 14,938 | 14,938 | 13,808 | 4,376 | 297 | 745 | 8,540 | 1,072 | 311 | 1 | 1,029 | Mar 2026 – Apr 2026 |
+| POLAND | 14,938 | 14,938 | 13,849 | 5,050 | 299 | 820 | 8,558 | 1,077 | 313 | 1 | 1,035 | Mar 2026 – Apr 2026 |
 | PORTUGAL | 3,503 | 3,503 | 2,925 | 993 | 57 | 173 | 2,031 | 425 | 70 | 2 | 182 | Mar 2026 – Apr 2026 |
 | REPUBLIC_OF_CYPRUS | 24 | 24 | 24 | 11 | 0 | 0 | 19 | 5 | 0 | 0 | 0 | Mar 2026 – Apr 2026 |
 | ROMANIA | 799 | 799 | 351 | 124 | 6 | 11 | 271 | 42 | 1 | 0 | 14 | Mar 2026 – Apr 2026 |
