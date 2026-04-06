@@ -130,6 +130,89 @@ def _query_twitter_x_urls_by_country(conn: sqlite3.Connection) -> dict[str, list
     return result
 
 
+_PLATFORM_LINK_COLUMNS = {
+    "twitter": "twitter_links",
+    "x": "x_links",
+    "bluesky": "bluesky_links",
+    "mastodon": "mastodon_links",
+    "facebook": "facebook_links",
+    "linkedin": "linkedin_links",
+}
+
+
+def _parse_link_list(raw_value: str | None) -> list[str]:
+    """Return a deduplicated list of platform URLs from JSON text."""
+    if not raw_value:
+        return []
+    try:
+        parsed = json.loads(raw_value)
+    except json.JSONDecodeError:
+        return []
+    if not isinstance(parsed, list):
+        return []
+
+    links: list[str] = []
+    for item in parsed:
+        if not isinstance(item, str) or not item:
+            continue
+        if item not in links:
+            links.append(item)
+    return links
+
+
+def _query_platform_drilldowns_by_country(
+    conn: sqlite3.Connection,
+) -> dict[str, dict[str, list[dict[str, object]]]]:
+    """Return per-country platform drilldowns for interactive table cells.
+
+    Each platform record contains the scanned page URL and the distinct
+    detected platform-profile URLs found on that page. Pages are deduplicated
+    per country and platform across scan batches so the drilldowns stay aligned
+    with the report's ``COUNT(DISTINCT url)`` totals.
+    """
+    column_sql = ", ".join(_PLATFORM_LINK_COLUMNS.values())
+    rows = conn.execute(
+        f"""
+        SELECT country_code, url, {column_sql}
+        FROM url_social_media_results
+        ORDER BY country_code, url, scanned_at DESC
+        """
+    ).fetchall()
+
+    grouped: dict[str, dict[str, dict[str, dict[str, object]]]] = {}
+    for row in rows:
+        country_code = row["country_code"]
+        country_bucket = grouped.setdefault(
+            country_code,
+            {platform: {} for platform in _PLATFORM_LINK_COLUMNS},
+        )
+        page_url = row["url"]
+
+        for platform, column in _PLATFORM_LINK_COLUMNS.items():
+            detected_links = _parse_link_list(row[column])
+            if not detected_links:
+                continue
+
+            page_entry = country_bucket[platform].setdefault(
+                page_url,
+                {"page_url": page_url, "detected_links": []},
+            )
+            existing_links = page_entry["detected_links"]
+            for link in detected_links:
+                if link not in existing_links:
+                    existing_links.append(link)
+
+    result: dict[str, dict[str, list[dict[str, object]]]] = {}
+    for country_code in sorted(grouped):
+        result[country_code] = {}
+        for platform in _PLATFORM_LINK_COLUMNS:
+            result[country_code][platform] = sorted(
+                grouped[country_code][platform].values(),
+                key=lambda item: str(item["page_url"]),
+            )
+    return result
+
+
 def _query_by_country(conn: sqlite3.Connection) -> list[dict]:
     """Return per-country social media platform totals with tier breakdown.
 
@@ -403,13 +486,9 @@ def _build_stats_block(
         seed_counts: Mapping of country_code → available page count from
             toon seed files.  Used for the "Available" column in the per-country
             table when *by_country* is provided.
-        twitter_x_urls: Mapping of country_code → list of scanned page URLs
-            that link to Twitter or X (capped at
-            :data:`_TWITTER_X_URL_SAMPLE_LIMIT` per country).  When
-            provided, the interactive block shows the actual site URLs in a
-            tooltip (< 25 sites per country) or in a short-sample
-            ``<details>`` widget (≥ 25 sites, showing the first 10 with a
-            link to the full data file for the rest).
+        twitter_x_urls: Deprecated. Retained for backwards compatibility with
+            older tests while the drilldown UI now reads from
+            ``social-media-data.json`` directly.
     """
     if not summary or not summary.get("total_scanned"):
         return (
@@ -620,7 +699,12 @@ def _build_stats_block(
             f"**{tot_bsky:,}** | **{tot_mast:,}** | — |"
         )
 
-        lines += _build_interactive_block(twitter_x_urls)
+        lines += [
+            "",
+            "> Hover or focus any non-zero platform count to preview matching pages. "
+            "Activate the number to keep the preview open and download a CSV for that "
+            "country and platform from [social-media-data.json](social-media-data.json).",
+        ]
 
 
     lines += [
@@ -1045,14 +1129,14 @@ def generate_social_media_report(
     if not db_path.exists():
         summary: dict = {}
         by_country: list[dict] = []
-        twitter_x_urls: dict[str, list[str]] = {}
+        platform_drilldowns: dict[str, dict[str, list[dict[str, object]]]] = {}
     else:
         conn = sqlite3.connect(db_path)
         conn.row_factory = sqlite3.Row
         try:
             summary = _query_summary(conn)
             by_country = _query_by_country(conn)
-            twitter_x_urls = _query_twitter_x_urls_by_country(conn)
+            platform_drilldowns = _query_platform_drilldowns_by_country(conn)
         finally:
             conn.close()
 
@@ -1080,6 +1164,7 @@ def generate_social_media_report(
             "last_scan": summary.get("last_scan"),
         },
         "by_country": enriched_by_country,
+        "platform_drilldowns": platform_drilldowns,
     }
     data_path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"Data file written: {data_path}")
@@ -1101,7 +1186,13 @@ def generate_social_media_report(
         )
         return False
 
-    new_block = _build_stats_block(summary, generated_at, total_available, by_country, seed_counts, twitter_x_urls)
+    new_block = _build_stats_block(
+        summary,
+        generated_at,
+        total_available,
+        by_country,
+        seed_counts,
+    )
     new_content = (
         content[:start_idx]
         + new_block

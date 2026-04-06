@@ -256,6 +256,8 @@ def test_generate_progress_report_social_media_platform_breakdown(
     # Should show the countries that have social media data
     assert "ICELAND" in content
     assert "GERMANY" in content
+    assert "Hover or focus any non-zero platform count" in content
+    assert "social-media-data.json" in content
 
 
 # ---------------------------------------------------------------------------
@@ -652,4 +654,3 @@ def test_generate_progress_report_platform_breakdown_has_reachable_column(
     # Platform data is now part of the single "Social Media Scan by Country" table
     assert "## Social Media Scan by Country" in content
     assert "Reachable" in content
-

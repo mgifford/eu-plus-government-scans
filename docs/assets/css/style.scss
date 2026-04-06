@@ -390,6 +390,132 @@ th {
   font-size: 1.08rem;
 }
 
+.sm-sortable th[aria-sort] {
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.sm-sortable th[aria-sort="ascending"]::after {
+  content: " ▲";
+  font-size: 0.75em;
+}
+
+.sm-sortable th[aria-sort="descending"]::after {
+  content: " ▼";
+  font-size: 0.75em;
+}
+
+.sm-sortable th[aria-sort="none"]::after {
+  content: " ⇅";
+  font-size: 0.75em;
+  opacity: 0.55;
+}
+
+.table-drilldown {
+  display: inline-block;
+  position: relative;
+}
+
+.table-drilldown__trigger {
+  background: none;
+  border: 0;
+  border-bottom: 1px dotted currentColor;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  min-width: 2ch;
+  padding: 0;
+  text-decoration: none;
+  text-underline-offset: 0.2em;
+}
+
+.table-drilldown__trigger:hover {
+  color: var(--color-link-hover);
+}
+
+.table-drilldown__panel {
+  background: var(--color-bg-panel);
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+  color: var(--color-text);
+  left: 50%;
+  margin-top: 0.45rem;
+  max-width: min(28rem, calc(100vw - 2rem));
+  min-width: 18rem;
+  padding: 0.9rem 1rem;
+  position: absolute;
+  top: 100%;
+  transform: translateX(-50%);
+  width: max-content;
+  z-index: 40;
+}
+
+.table-drilldown__title,
+.table-drilldown__description,
+.table-drilldown__summary,
+.table-drilldown__hint {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.table-drilldown__title {
+  color: var(--color-heading);
+  font-weight: 700;
+}
+
+.table-drilldown__description,
+.table-drilldown__summary,
+.table-drilldown__hint,
+.table-drilldown__meta {
+  color: var(--color-text-secondary);
+}
+
+.table-drilldown__description,
+.table-drilldown__list,
+.table-drilldown__summary,
+.table-drilldown__hint {
+  margin-top: 0.5rem;
+}
+
+.table-drilldown__list {
+  max-height: 14rem;
+  overflow-y: auto;
+  padding-left: 1rem;
+}
+
+.table-drilldown__list li + li {
+  margin-top: 0.55rem;
+}
+
+.table-drilldown__meta {
+  display: block;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  margin-top: 0.2rem;
+  overflow-wrap: anywhere;
+}
+
+.table-drilldown__download {
+  background: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: 999px;
+  color: var(--color-primary-text);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  margin-top: 0.8rem;
+  min-height: 2.5rem;
+  padding: 0.5rem 0.9rem;
+}
+
+.table-drilldown__download:hover {
+  background: var(--color-link-hover);
+  border-color: var(--color-link-hover);
+}
+
 @media (min-width: 600px) {
   .page-content {
     padding: 2.5rem 0 3.5rem;
@@ -427,6 +553,12 @@ th {
 
   .theme-toggle {
     margin-left: auto;
+  }
+
+  .table-drilldown__panel {
+    left: 0;
+    max-width: min(24rem, calc(100vw - 2rem));
+    transform: none;
   }
 }
 

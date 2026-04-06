@@ -575,6 +575,11 @@ def _write_social_media_table(
         "Bluesky / Mastodon) count pages with at least one link to that platform — "
         "a page may appear in more than one platform column.\n\n"
     )
+    f.write(
+        "> Hover or focus any non-zero platform count to preview matching pages. "
+        "Activate the number to keep the preview open and download a CSV for that "
+        "country and platform from [social-media-data.json](social-media-data.json).\n\n"
+    )
 
 
 def _write_technology_table(
