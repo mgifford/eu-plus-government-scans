@@ -7,7 +7,70 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_No scan data yet — stats update automatically after every scan run._
+_Stats as of 2026-04-06 14:20 UTC — last scan: 2026-04-05_
+
+**87** scan batches run
+
+**3,235** of **82,714** available pages scanned (**3.9%** coverage)
+**3,069** of **3,235** scanned pages were reachable (**94.9%**)
+**1,415** reachable pages loaded at least one third-party script (**46.1%** of reachable)
+**1,535** known third-party service loads identified
+**17** unique known services across **12** categories
+
+---
+
+## Third-Party JavaScript by Country
+
+| Country | Scanned | Available | Reachable | URLs with 3rd-Party JS | Known Service Loads | Last Scan |
+|---------|---------|-----------|-----------|------------------------|--------------------|----------|
+| AUSTRIA | 821 | 821 | 787 | 264 | 44 | 2026-04-05 |
+| BELGIUM | 1,309 | 1,309 | 1,230 | 637 | 717 | 2026-04-05 |
+| BULGARIA | 291 | 291 | 269 | 107 | 120 | 2026-04-05 |
+| CROATIA | 233 | 233 | 232 | 120 | 166 | 2026-04-05 |
+| CZECHIA | 581 | 843 | 551 | 287 | 488 | 2026-04-05 |
+
+---
+
+### Top Third-Party Services
+
+| # | Service | Loads |
+|--:|---------|------:|
+| 1 | jsDelivr CDN | **377** |
+| 2 | Google Analytics (GA4) | **231** |
+| 3 | unpkg CDN | **219** |
+| 4 | cdnjs (Cloudflare CDN) | **176** |
+| 5 | Google Hosted Libraries | **132** |
+| 6 | Google reCAPTCHA | **119** |
+| 7 | Google Tag Manager | **107** |
+| 8 | jQuery | **76** |
+| 9 | Cookiebot | **27** |
+| 10 | Font Awesome | **20** |
+| 11 | Bootstrap | **19** |
+| 12 | Facebook Pixel | **13** |
+| 13 | Matomo Cloud | **11** |
+| 14 | Zendesk | **2** |
+| 15 | Cloudflare Turnstile / Challenge | **2** |
+| 16 | OneTrust | **2** |
+| 17 | Google Analytics (Universal) | **2** |
+
+### Top Service Categories
+
+| # | Category | Loads |
+|--:|----------|------:|
+| 1 | CDN | **904** |
+| 2 | Analytics | **257** |
+| 3 | JavaScript Library | **208** |
+| 4 | Security | **121** |
+| 5 | CAPTCHA | **119** |
+| 6 | Tag Manager | **107** |
+| 7 | Cookie Consent | **29** |
+| 8 | Icon Library | **20** |
+| 9 | UI Framework | **19** |
+| 10 | Advertising | **13** |
+| 11 | Customer Support | **2** |
+| 12 | Chat | **2** |
+
+📥 Machine-readable results: [third-party-tools-data.json](third-party-tools-data.json)
 
 <!-- THIRD_PARTY_JS_STATS_END -->
 
