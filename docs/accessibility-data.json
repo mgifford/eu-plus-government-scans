@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-04-06 12:37 UTC",
+  "generated_at": "2026-04-06 13:35 UTC",
   "summary": {
-    "total_batches": 90,
+    "total_batches": 85,
     "total_scanned": 72735,
-    "total_reachable": 67168,
+    "total_reachable": 67160,
     "total_available": 82714,
-    "total_has_statement": 32493,
-    "total_in_footer": 28118,
+    "total_has_statement": 32480,
+    "total_in_footer": 28105,
     "first_scan": "2026-03-25T17:15:29.276776+00:00",
-    "last_scan": "2026-04-06T10:46:16.017383+00:00"
+    "last_scan": "2026-04-05T22:35:46.734204+00:00"
   },
   "by_country": [
     {
@@ -225,7 +225,7 @@
       "has_statement": 0,
       "found_in_footer": 0,
       "first_scan": "2026-03-29T21:35:16.603989+00:00",
-      "last_scan": "2026-04-06T08:58:11.046434+00:00"
+      "last_scan": "2026-03-29T21:36:05.618370+00:00"
     },
     {
       "country_code": "ROMANIA",
@@ -234,25 +234,25 @@
       "has_statement": 28,
       "found_in_footer": 9,
       "first_scan": "2026-03-29T21:36:09.956858+00:00",
-      "last_scan": "2026-04-06T10:46:16.017383+00:00"
+      "last_scan": "2026-03-31T18:38:17.119568+00:00"
     },
     {
       "country_code": "SLOVAKIA",
       "total_scanned": 434,
-      "reachable": 414,
-      "has_statement": 192,
-      "found_in_footer": 177,
+      "reachable": 411,
+      "has_statement": 187,
+      "found_in_footer": 172,
       "first_scan": "2026-03-30T01:14:53.326353+00:00",
-      "last_scan": "2026-04-06T09:14:52.625563+00:00"
+      "last_scan": "2026-03-30T01:32:58.540743+00:00"
     },
     {
       "country_code": "SLOVENIA",
       "total_scanned": 200,
-      "reachable": 190,
-      "has_statement": 100,
-      "found_in_footer": 74,
+      "reachable": 188,
+      "has_statement": 95,
+      "found_in_footer": 69,
       "first_scan": "2026-03-30T01:33:00.713283+00:00",
-      "last_scan": "2026-04-06T09:21:29.915855+00:00"
+      "last_scan": "2026-03-30T01:41:23.054038+00:00"
     },
     {
       "country_code": "SPAIN",
@@ -266,11 +266,11 @@
     {
       "country_code": "SWEDEN",
       "total_scanned": 1558,
-      "reachable": 1486,
-      "has_statement": 860,
-      "found_in_footer": 785,
+      "reachable": 1483,
+      "has_statement": 857,
+      "found_in_footer": 782,
       "first_scan": "2026-03-30T05:54:38.370122+00:00",
-      "last_scan": "2026-04-06T10:21:52.090789+00:00"
+      "last_scan": "2026-03-30T06:57:37.950640+00:00"
     },
     {
       "country_code": "SWITZERLAND",
