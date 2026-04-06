@@ -1,0 +1,14 @@
+<script>
+  (function () {
+    var storageKey = "eu-gov-scans-theme";
+    try {
+      var stored = localStorage.getItem(storageKey);
+      if (stored === "light" || stored === "dark") {
+        document.documentElement.setAttribute("data-theme", stored);
+      }
+    } catch (error) {
+      // Ignore storage failures and fall back to system preference.
+    }
+  })();
+</script>
+<script src="{{ '/assets/js/theme-toggle.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>

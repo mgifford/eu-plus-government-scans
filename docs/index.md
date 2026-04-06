@@ -5,7 +5,7 @@ layout: home
 
 This project discovers and catalogues how European (and allied) government websites
 use social media, whether their URLs are accessible, and what technology platforms
-power them.
+power them, including which third-party JavaScript services they rely on.
 
 ## Current Scan Progress
 
@@ -34,6 +34,8 @@ _Progress as of 2026-04-06 13:35 UTC_
   accessibility statement links as required by the EU Web Accessibility Directive.
 - **[Technology Scanning](technology-scanning.md)** — Technologies detected on government sites
   (CMS, web server, analytics, and more).
+- **[Third-Party JavaScript](third-party-tools.md)** — Externally hosted scripts,
+  analytics tags, consent tools, and other third-party services loaded by government sites.
 - **[Government Domains](domains.md)** — Full listing of all ~36,000 government domains tracked
   across 31 countries.
 
@@ -88,6 +90,17 @@ We validate each URL and track:
 ### Technology Detection
 
 We detect the CMS, framework, and analytics platforms used by each government site.
+
+### Third-Party JavaScript
+
+We also track externally hosted scripts loaded by government pages, including:
+
+- Analytics and tag managers
+- Cookie consent tools
+- CDNs and shared JavaScript libraries
+- Customer-support and monitoring widgets
+
+See **[Third-Party JavaScript](third-party-tools.md)** for the EU-wide breakdown.
 
 ### Lighthouse Audits
 

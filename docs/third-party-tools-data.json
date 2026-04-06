@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-04-06 13:35 UTC",
+  "summary": {
+    "total_batches": 0,
+    "total_scanned": 0,
+    "total_reachable": 0,
+    "urls_with_scripts": 0,
+    "total_available": 82714,
+    "identified_service_loads": 0,
+    "unique_services": 0,
+    "unique_categories": 0,
+    "first_scan": null,
+    "last_scan": null
+  },
+  "top_services": [],
+  "top_categories": [],
+  "by_country": []
+}
