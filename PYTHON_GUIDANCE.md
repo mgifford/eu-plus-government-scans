@@ -4,6 +4,20 @@ This document outlines the core principles for writing high-quality,
 maintainable, and "Pythonic" code. Use these guidelines when drafting scripts
 or reviewing AI-generated Python code.
 
+This repository adopts these guidelines as the default standard for Python
+code. Because the existing `src/` tree contains older modules that predate
+this guidance, adoption is **phased**:
+
+- **New Python files must follow this guide in full.**
+- **Modified Python files should be moved toward this guide as part of the
+  change being made.**
+- **Do not perform large style-only refactors across unrelated files unless a
+  maintainer explicitly asks for that cleanup.**
+
+When this guide conflicts with legacy code already in the repository, treat
+the guide as the target state and legacy code as technical debt to reduce
+incrementally.
+
 ## 1. Core Philosophy (The Zen of Python)
 * **Explicit is better than implicit:** Code should clearly state what it is doing. Avoid "magic" behavior.
 * **Readability counts:** Code is read much more often than it is written. Write for the human reader.
@@ -12,8 +26,9 @@ or reviewing AI-generated Python code.
 
 ## 2. Style and Formatting (PEP 8)
 
-Automated linters (`flake8`, `ruff`) enforce these rules.  Run them before
-every commit and fix all warnings before merging.
+Automated linters (`ruff`, and `flake8` where used in other environments)
+support these rules. Run lint checks before every commit and fix all warnings
+in the files you touch.
 
 * **Indentation:** Always use 4 spaces per indentation level (no tabs).
 * **Naming Conventions:**
@@ -49,15 +64,16 @@ every commit and fix all warnings before merging.
 
 ## 4. Documentation
 
-Every module, class, and *public* function must have a docstring.  This
-includes short utility functions and `main()`.  Missing docstrings are one of
-the most common reasons a code review scores below an A.
+Every module, class, and public function must have a docstring. Private helper
+functions should also have docstrings unless the function is truly trivial and
+its purpose is immediately obvious from the name and body. `main()` should
+always have a docstring.
 
 ### Required docstring locations
 * Top of every `.py` file (module docstring).
 * Every `class` definition.
-* **Every `def` statement**, including `main()`, `parse_date()`, small helpers,
-  and private functions prefixed with `_`.
+* Every public `def` statement, including `main()`.
+* Private helpers whenever the behavior is not completely obvious at a glance.
 
 ### Preferred style – Google docstrings
 ```python
@@ -79,9 +95,10 @@ def parse_date(value: str) -> date | None:
 ## 5. Code Structure
 
 ### Function length
-* **Target ≤ 50 lines per function** (excluding docstring).  If a function
-  exceeds this, split it into focused helper functions with their own
-  docstrings.
+* **Target ≤ 50 lines per function** (excluding docstring). This is a strong
+  goal, not a reason to force awkward extra indirection. If a function grows
+  beyond that, prefer splitting it into focused helpers when that improves
+  readability and testability.
 * Each function should do *one thing* (Single Responsibility Principle).
 
 ### Example – splitting a long function
@@ -115,12 +132,16 @@ def write_page(row: dict, output_dir: Path) -> bool:
 
 ## 6. Error Handling
 * **Be Specific:** Never use a bare `except:`. Always catch specific exceptions (e.g., `ValueError`, `KeyError`).
-* **Fail Fast:** Let errors happen early rather than masking them with `try-except` blocks that hide the root cause.
+* **Fail Fast:** Let errors happen early rather than masking them with
+  `try-except` blocks that hide the root cause.
 
 ## 7. Tooling & Environment
-* **Formatting:** Use automated tools like `black` or `ruff` to enforce style consistently.
-* **Linting:** Run `ruff check src/` before every commit.  A clean linter run
-  with zero warnings is a prerequisite for merging.
+* **Formatting:** Use automated tools like `black` or `ruff format` where the
+  project chooses to adopt them.
+* **Linting:** This repository currently uses `ruff` with the rules configured
+  in `pyproject.toml`. Run `ruff check` on the Python files you changed before
+  every commit. A clean linter run for touched files is the minimum bar; a
+  clean full-tree run remains the long-term goal.
 * **Dependencies:** Always define dependencies in a `requirements.txt` or `pyproject.toml` file.
 
 ## 8. Testing
@@ -131,9 +152,9 @@ def write_page(row: dict, output_dir: Path) -> bool:
 
 ## Quick checklist before submitting code
 
-- [ ] Every function has a docstring (including `main` and private helpers).
-- [ ] `ruff check src/` reports zero warnings.
-- [ ] No function is longer than ~50 lines (docstring excluded).
+- [ ] New public functions have docstrings, and touched helpers are documented when needed.
+- [ ] `ruff check` passes for the Python files changed in this branch.
+- [ ] No new function is unnecessarily long; split large logic when it improves readability.
 - [ ] All type annotations are present on function signatures.
 - [ ] No bare `f"..."` strings without an interpolated variable.
 - [ ] Blank lines inside functions contain no trailing whitespace.

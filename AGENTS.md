@@ -120,11 +120,22 @@ All Python code in this repository must follow the guidelines in
 [PYTHON_GUIDANCE.md](./PYTHON_GUIDANCE.md).  Key points:
 
 - Use type annotations on every function signature.
-- Add docstrings to every module, class, and function (Google style preferred).
-- Keep functions ≤ 50 lines; split longer ones into focused helpers.
+- Add docstrings to every module, class, and public function; document private
+  helpers when the behavior is not obvious (Google style preferred).
+- Target functions ≤ 50 lines where that improves readability; split longer
+  ones into focused helpers when practical.
 - Never use a bare `except:`; always catch specific exception types.
 - Only use `f"..."` strings when they actually interpolate a variable.
-- Run `ruff check src/` before committing; fix all warnings.
+- Run `ruff check` on the Python files you change before committing, and move
+  touched code toward full guide compliance.
+
+This standard is applied **incrementally** across the existing codebase:
+
+- New Python files should follow the guide in full.
+- Modified Python files should be improved toward the guide as part of the
+  change being made.
+- Avoid repository-wide style churn unless a human maintainer explicitly asks
+  for a cleanup pass.
 
 ---
 

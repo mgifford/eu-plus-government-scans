@@ -267,11 +267,34 @@ python3 -m pytest tests/integration/ -v
 python3 -m pytest tests/unit/test_url_validation_scanner.py -v
 ```
 
-**Lint the source code (required before committing):**
+**Lint Python files you changed before committing:**
 
 ```bash
-ruff check src/
+ruff check path/to/file.py tests/path/to/test_file.py
 ```
+
+For larger cleanup passes, you can still run `ruff check src/ tests/`, but the
+current repository includes some older Python that is being brought into
+compliance gradually.
+
+**Run the GitHub Pages accessibility smoke test locally:**
+
+```bash
+npm ci
+npx playwright install --with-deps chromium
+python3 -m http.server 4000 --directory _site
+```
+
+In a second terminal:
+
+```bash
+A11Y_SITE_DIR=_site A11Y_BASE_URL=http://127.0.0.1:4000 npm run test:a11y
+```
+
+The GitHub Actions workflow at
+[`/.github/workflows/axe-site-accessibility.yml`](./.github/workflows/axe-site-accessibility.yml)
+builds the Jekyll site and runs these axe checks automatically on every fifth
+push to `main`, with manual runs available through `workflow_dispatch`.
 
 ## AI disclosure
 
@@ -287,7 +310,7 @@ code and documentation in this repository. Known uses include:
 |---|---|
 | GitHub Copilot (OpenAI Codex / GPT-4 family) | Code completion, refactoring suggestions, and inline documentation while writing Python source files |
 | Claude (Anthropic) | PR reviews, writing and editing documentation (README, AGENTS.md, docs/), and code-generation tasks via the GitHub Copilot Coding Agent |
-| ChatGPT / GPT-4 / GPT-5 (OpenAI) | Answering design questions, reviewing draft implementations, and helping implement docs/report-generation pages for scan outputs such as technology and third-party JavaScript reporting |
+| ChatGPT / GPT-4 / GPT-5 (OpenAI) | Answering design questions, reviewing draft implementations, helping implement docs/report-generation pages for scan outputs such as technology and third-party JavaScript reporting, and adding CI/browser automation such as Playwright + axe accessibility checks for the generated site |
 
 > **Note for contributors and AI agents:** if you use an AI tool while contributing to this
 > repository — whether for writing code, tests, or documentation — please add or update the

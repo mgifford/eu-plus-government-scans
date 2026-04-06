@@ -15,6 +15,7 @@
 .kittify/missions/__pycache__/
 __pycache__/
 *.pyc
+node_modules/
 
 # Generated data files
 data/metadata.db
