@@ -13,9 +13,10 @@ header_pages:
   - index.md
   - scan-progress.md
   - social-media.md
-  - domains.md
-  - batched-validation.md
+  - accessibility-statements.md
   - technology-scanning.md
+  - third-party-tools.md
+  - domains.md
 
 # Markdown processor
 markdown: kramdown
