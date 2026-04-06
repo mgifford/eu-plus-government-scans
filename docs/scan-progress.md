@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-04-06 16:25 UTC_
+_Generated: 2026-04-06 18:39 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -123,9 +123,9 @@ Checks whether each government page links to an accessibility statement as requi
 | ROMANIA | 799 | 351 | 28 | 9 | 8% | Mar 2026 – Apr 2026 |
 | SLOVAKIA | 434 | 414 | 192 | 177 | 46% | Mar 2026 – Apr 2026 |
 | SLOVENIA | 200 | 190 | 100 | 74 | 53% | Mar 2026 – Apr 2026 |
-| SPAIN | 6,069 | 5,316 | 2,339 | 2,043 | 44% | Mar 2026 – Apr 2026 |
+| SPAIN | 6,069 | 5,357 | 2,372 | 2,076 | 44% | Mar 2026 – Apr 2026 |
 | SWEDEN | 1,558 | 1,486 | 860 | 785 | 58% | Mar 2026 – Apr 2026 |
-| SWITZERLAND | 2,117 | 2,080 | 979 | 977 | 47% | Mar 2026 – Apr 2026 |
+| SWITZERLAND | 2,117 | 2,082 | 980 | 978 | 47% | Mar 2026 – Apr 2026 |
 | UNITED_KINGDOM_UK | 10,586 | 9,933 | 5,796 | 5,436 | 58% | Mar 2026 – Apr 2026 |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
