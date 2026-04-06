@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-04-06 02:16 UTC_
+_Generated: 2026-04-06 04:52 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -11,7 +11,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Scan Type | Pages Scanned | Available | Coverage |
 |-----------|--------------|-----------|----------|
 | **Combined Reachability** | **77,045 confirmed reachable** | 82,714 | **██████████████████░░ 93.1%** |
-| URL Validation | 13,495 validated (11,613 valid) | 82,714 | ███░░░░░░░░░░░░░░░░░ 16.3% |
+| URL Validation | 13,771 validated (11,960 valid) | 82,714 | ███░░░░░░░░░░░░░░░░░ 16.6% |
 | Social Media | 82,714 scanned (77,037 reachable) | 82,714 | ████████████████████ 100.0% |
 | Technology | 0 scanned | 82,714 | (manual scan) |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) |
@@ -27,7 +27,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | BELGIUM | 1,309 | 1,166 | 732 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
 | BULGARIA | 291 | 232 | 87 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
 | CROATIA | 233 | 227 | 13 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
-| CZECHIA | 567 | 440 | 127 | Mar 2026 | ██████████░░░░░ 67.3% |
+| CZECHIA | 843 | 787 | 142 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
 | DENMARK | 974 | 891 | 83 | Mar 2026 | █████████░░░░░░ 64.0% |
 | ESTONIA | 12 | 3 | 9 | Mar 2026 | ░░░░░░░░░░░░░░░ 3.0% |
 | FINLAND | 8 | 0 | 8 | Mar 2026 | ░░░░░░░░░░░░░░░ 4.4% |
@@ -70,7 +70,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | POLAND | 14,938 | 14,938 | 13,808 | 4,376 | 297 | 745 | 8,540 | 1,072 | 311 | 1 | 1,029 | Mar 2026 – Apr 2026 |
 | PORTUGAL | 3,503 | 3,503 | 2,925 | 993 | 57 | 173 | 2,031 | 425 | 70 | 2 | 182 | Mar 2026 – Apr 2026 |
 | REPUBLIC_OF_CYPRUS | 24 | 24 | 24 | 11 | 0 | 0 | 19 | 5 | 0 | 0 | 0 | Mar 2026 – Apr 2026 |
-| ROMANIA | 799 | 799 | 351 | 126 | 6 | 11 | 271 | 42 | 1 | 0 | 14 | Mar 2026 – Apr 2026 |
+| ROMANIA | 799 | 799 | 351 | 124 | 6 | 11 | 271 | 42 | 1 | 0 | 14 | Mar 2026 – Apr 2026 |
 | SLOVAKIA | 434 | 434 | 413 | 135 | 9 | 13 | 382 | 17 | 9 | 0 | 13 | Mar 2026 – Apr 2026 |
 | SLOVENIA | 200 | 200 | 190 | 52 | 7 | 9 | 156 | 21 | 6 | 1 | 9 | Mar 2026 – Apr 2026 |
 | SPAIN | 6,069 | 6,069 | 5,386 | 1,929 | 29 | 307 | 3,140 | 1,745 | 366 | 51 | 305 | Mar 2026 – Apr 2026 |
