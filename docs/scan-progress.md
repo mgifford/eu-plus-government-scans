@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-04-06 20:29 UTC_
+_Generated: 2026-04-06 22:37 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -126,7 +126,7 @@ Checks whether each government page links to an accessibility statement as requi
 | SPAIN | 6,069 | 5,357 | 2,372 | 2,076 | 44% | Mar 2026 – Apr 2026 |
 | SWEDEN | 1,558 | 1,486 | 860 | 785 | 58% | Mar 2026 – Apr 2026 |
 | SWITZERLAND | 2,117 | 2,082 | 980 | 978 | 47% | Mar 2026 – Apr 2026 |
-| UNITED_KINGDOM_UK | 10,586 | 9,933 | 5,796 | 5,436 | 58% | Mar 2026 – Apr 2026 |
+| UNITED_KINGDOM_UK | 10,586 | 9,947 | 5,811 | 5,450 | 58% | Mar 2026 – Apr 2026 |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
