@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-04-07 12:37 UTC_
+_Generated: 2026-04-07 13:37 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -10,9 +10,9 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage |
 |-----------|--------------|-----------|----------|
-| **Combined Reachability** | **77,229 confirmed reachable** | 82,714 | **██████████████████░░ 93.4%** |
+| **Combined Reachability** | **77,187 confirmed reachable** | 82,714 | **██████████████████░░ 93.3%** |
 | URL Validation | 13,771 validated (11,960 valid) | 82,714 | ███░░░░░░░░░░░░░░░░░ 16.6% |
-| Social Media | 82,714 scanned (77,229 reachable) | 82,714 | ████████████████████ 100.0% |
+| Social Media | 82,714 scanned (77,187 reachable) | 82,714 | ████████████████████ 100.0% |
 | Technology | 0 scanned | 82,714 | (manual scan) |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) |
 | Accessibility Statements | 72,735 scanned | 82,714 | █████████████████░░░ 87.9% |
@@ -23,11 +23,11 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Country | Total | Valid | Invalid | Scan Period | Coverage |
 |---------|-------|-------|---------|-------------|----------|
-| AUSTRIA | 821 | 718 | 192 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
-| BELGIUM | 1,309 | 1,166 | 736 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
-| BULGARIA | 291 | 232 | 87 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
-| CROATIA | 233 | 227 | 13 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
-| CZECHIA | 843 | 787 | 142 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
+| AUSTRIA | 821 | 718 | 193 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
+| BELGIUM | 1,309 | 1,166 | 775 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
+| BULGARIA | 291 | 232 | 166 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
+| CROATIA | 233 | 227 | 14 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
+| CZECHIA | 843 | 787 | 143 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
 | DENMARK | 974 | 891 | 83 | Mar 2026 | █████████░░░░░░ 64.0% |
 | ESTONIA | 12 | 3 | 9 | Mar 2026 | ░░░░░░░░░░░░░░░ 3.0% |
 | FINLAND | 8 | 0 | 8 | Mar 2026 | ░░░░░░░░░░░░░░░ 4.4% |
@@ -67,7 +67,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | MALTA | 608 | 608 | 595 | 129 | 20 | 32 | 501 | 57 | 17 | 0 | 34 | Mar 2026 – Apr 2026 |
 | NETHERLANDS | 937 | 937 | 909 | 257 | 54 | 95 | 644 | 148 | 74 | 45 | 77 | Mar 2026 – Apr 2026 |
 | NORWAY | 239 | 239 | 233 | 55 | 2 | 0 | 211 | 10 | 13 | 0 | 2 | Mar 2026 – Apr 2026 |
-| POLAND | 14,938 | 14,938 | 13,891 | 5,806 | 301 | 925 | 8,575 | 1,083 | 315 | 1 | 1,044 | Mar 2026 – Apr 2026 |
+| POLAND | 14,938 | 14,938 | 13,849 | 5,050 | 299 | 820 | 8,558 | 1,077 | 313 | 1 | 1,035 | Mar 2026 – Apr 2026 |
 | PORTUGAL | 3,503 | 3,503 | 2,933 | 1,015 | 57 | 175 | 2,039 | 430 | 70 | 2 | 183 | Mar 2026 – Apr 2026 |
 | REPUBLIC_OF_CYPRUS | 24 | 24 | 24 | 11 | 0 | 0 | 19 | 5 | 0 | 0 | 0 | Mar 2026 – Apr 2026 |
 | ROMANIA | 799 | 799 | 351 | 124 | 6 | 11 | 273 | 42 | 1 | 0 | 14 | Mar 2026 – Apr 2026 |
@@ -105,7 +105,7 @@ Checks whether each government page links to an accessibility statement as requi
 | ESTONIA | 396 | 389 | 136 | 65 | 35% | Mar 2026 – Apr 2026 |
 | FINLAND | 180 | 172 | 111 | 104 | 65% | Mar 2026 – Apr 2026 |
 | FRANCE | 10,007 | 9,425 | 3,655 | 3,516 | 39% | Mar 2026 – Apr 2026 |
-| GERMANY | 6,555 | 6,479 | 4,612 | 3,872 | 71% | Mar 2026 – Apr 2026 |
+| GERMANY | 6,555 | 6,456 | 4,570 | 3,861 | 71% | Mar 2026 – Apr 2026 |
 | GREECE | 1,748 | 1,627 | 409 | 238 | 25% | Mar 2026 – Apr 2026 |
 | HUNGARY | 390 | 366 | 64 | 48 | 17% | Mar 2026 – Apr 2026 |
 | ICELAND | 139 | 135 | 15 | 7 | 11% | Mar 2026 – Apr 2026 |
@@ -117,7 +117,7 @@ Checks whether each government page links to an accessibility statement as requi
 | MALTA | 608 | 595 | 381 | 374 | 64% | Mar 2026 – Apr 2026 |
 | NETHERLANDS | 937 | 909 | 449 | 439 | 49% | Mar 2026 – Apr 2026 |
 | NORWAY | 239 | 233 | 108 | 102 | 46% | Mar 2026 – Apr 2026 |
-| POLAND | 13,875 | 12,866 | 5,309 | 3,369 | 41% | Mar 2026 – Apr 2026 |
+| POLAND | 13,875 | 12,857 | 5,300 | 3,363 | 41% | Mar 2026 – Apr 2026 |
 | PORTUGAL | 3,503 | 2,931 | 885 | 710 | 30% | Mar 2026 – Apr 2026 |
 | REPUBLIC_OF_CYPRUS | 24 | 24 | 0 | 0 | 0% | Mar 2026 – Apr 2026 |
 | ROMANIA | 799 | 351 | 28 | 9 | 8% | Mar 2026 – Apr 2026 |
