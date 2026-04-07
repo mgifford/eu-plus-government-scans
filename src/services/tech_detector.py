@@ -11,7 +11,14 @@ from datetime import datetime, timezone
 from typing import Dict, List, Optional
 
 import httpx
-from Wappalyzer import WebPage
+
+
+WebPage = None
+"""Lazily imported Wappalyzer WebPage class.
+
+Keeping this import out of module scope prevents the whole CLI from crashing
+at import time when the optional Wappalyzer dependency stack is misconfigured.
+"""
 
 
 @dataclass(slots=True)
@@ -54,6 +61,13 @@ class TechDetector:
                 self._wappalyzer = Wappalyzer.latest()
         return self._wappalyzer
 
+    def _build_webpage(self, url: str, html: str, headers: dict):
+        """Return a Wappalyzer WebPage instance for the fetched content."""
+        webpage_cls = WebPage
+        if webpage_cls is None:
+            from Wappalyzer import WebPage as webpage_cls
+        return webpage_cls(url, html, headers)
+
     def detect_html(
         self,
         url: str,
@@ -82,7 +96,7 @@ class TechDetector:
             scanned_at = datetime.now(timezone.utc).isoformat()
 
         try:
-            webpage = WebPage(final_url or url, html, headers)
+            webpage = self._build_webpage(final_url or url, html, headers)
             wappalyzer = self._get_wappalyzer()
             with warnings.catch_warnings():
                 warnings.simplefilter("ignore")
