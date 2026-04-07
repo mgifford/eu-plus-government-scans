@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-04-07 22:11 UTC_
+_Generated: 2026-04-07 22:20 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -10,10 +10,10 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage |
 |-----------|--------------|-----------|----------|
-| **Combined Reachability** | **77,240 confirmed reachable** | 82,714 | **██████████████████░░ 93.4%** |
+| **Combined Reachability** | **77,242 confirmed reachable** | 82,714 | **██████████████████░░ 93.4%** |
 | URL Validation | 13,771 validated (11,960 valid) | 82,714 | ███░░░░░░░░░░░░░░░░░ 16.6% |
-| Social Media | 82,714 scanned (77,240 reachable) | 82,714 | ████████████████████ 100.0% |
-| Technology | 0 scanned | 82,714 | (manual scan) |
+| Social Media | 82,714 scanned (77,242 reachable) | 82,714 | ████████████████████ 100.0% |
+| Technology | 3,912 scanned | 82,714 | ░░░░░░░░░░░░░░░░░░░░ 4.7% |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) |
 | Accessibility Statements | 72,735 scanned | 82,714 | █████████████████░░░ 87.9% |
 
@@ -23,9 +23,9 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Country | Total | Valid | Invalid | Scan Period | Coverage |
 |---------|-------|-------|---------|-------------|----------|
-| AUSTRIA | 821 | 718 | 193 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
-| BELGIUM | 1,309 | 1,166 | 738 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
-| BULGARIA | 291 | 232 | 167 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
+| AUSTRIA | 821 | 718 | 192 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
+| BELGIUM | 1,309 | 1,166 | 736 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
+| BULGARIA | 291 | 232 | 87 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
 | CROATIA | 233 | 227 | 13 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
 | CZECHIA | 843 | 787 | 142 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
 | DENMARK | 974 | 891 | 83 | Mar 2026 | █████████░░░░░░ 64.0% |
@@ -54,7 +54,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | DENMARK | 1,521 | 1,521 | 1,503 | 557 | 10 | 27 | 1,307 | 176 | 21 | 17 | 13 | Mar 2026 – Apr 2026 |
 | ESTONIA | 396 | 396 | 389 | 180 | 22 | 25 | 298 | 67 | 2 | 0 | 27 | Mar 2026 – Apr 2026 |
 | FINLAND | 180 | 180 | 172 | 64 | 2 | 4 | 132 | 28 | 13 | 2 | 2 | Mar 2026 – Apr 2026 |
-| FRANCE | 10,007 | 10,007 | 9,455 | 2,833 | 213 | 546 | 6,950 | 1,819 | 636 | 126 | 505 | Mar 2026 – Apr 2026 |
+| FRANCE | 10,007 | 10,007 | 9,457 | 2,835 | 213 | 546 | 6,963 | 1,821 | 636 | 126 | 505 | Mar 2026 – Apr 2026 |
 | GERMANY | 6,555 | 6,555 | 6,472 | 1,452 | 301 | 364 | 4,894 | 1,173 | 174 | 124 | 449 | Mar 2026 – Apr 2026 |
 | GREECE | 1,748 | 1,748 | 1,628 | 447 | 41 | 100 | 1,325 | 236 | 60 | 0 | 103 | Mar 2026 – Apr 2026 |
 | HUNGARY | 390 | 390 | 366 | 124 | 20 | 23 | 317 | 29 | 0 | 0 | 25 | Mar 2026 – Apr 2026 |
@@ -82,9 +82,16 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 > Hover or focus any non-zero platform count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and platform from [social-media-data.json](social-media-data.json).
 
-## Technology Scan
+## Technology Scan by Country
 
-_No technology scans have been run yet. Trigger the **Scan Technology Stack** workflow manually._
+| Country | URLs Scanned | Last Scan |
+|---------|-------------|----------|
+| AUSTRIA | 821 | 2026-04-07 |
+| BELGIUM | 1,309 | 2026-04-07 |
+| BULGARIA | 291 | 2026-04-07 |
+| CROATIA | 233 | 2026-04-07 |
+| CZECHIA | 843 | 2026-04-07 |
+| DENMARK | 415 | 2026-04-07 |
 
 ## Lighthouse Scan
 
@@ -110,7 +117,7 @@ Checks whether each government page links to an accessibility statement as requi
 | HUNGARY | 390 | 366 | 64 | 48 | 17% | Mar 2026 – Apr 2026 |
 | ICELAND | 139 | 135 | 15 | 7 | 11% | Mar 2026 – Apr 2026 |
 | IRELAND | 522 | 498 | 226 | 205 | 45% | Mar 2026 – Apr 2026 |
-| ITALY | 5,338 | 4,830 | 2,613 | 2,547 | 54% | Mar 2026 – Apr 2026 |
+| ITALY | 5,338 | 4,851 | 2,622 | 2,556 | 54% | Mar 2026 – Apr 2026 |
 | LATVIA | 802 | 771 | 488 | 444 | 63% | Mar 2026 – Apr 2026 |
 | LITHUANIA | 120 | 108 | 0 | 0 | 0% | Mar 2026 – Apr 2026 |
 | LUXEMBOURG | 571 | 250 | 85 | 74 | 34% | Mar 2026 – Apr 2026 |
