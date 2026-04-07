@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-04-06 22:37 UTC_
+_Generated: 2026-04-07 00:27 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -60,7 +60,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | HUNGARY | 390 | 390 | 366 | 124 | 20 | 23 | 317 | 29 | 0 | 0 | 25 | Mar 2026 – Apr 2026 |
 | ICELAND | 139 | 139 | 135 | 48 | 8 | 12 | 116 | 8 | 5 | 0 | 14 | Mar 2026 – Apr 2026 |
 | IRELAND | 522 | 522 | 498 | 197 | 25 | 54 | 293 | 165 | 31 | 18 | 42 | Mar 2026 – Apr 2026 |
-| ITALY | 5,338 | 5,338 | 4,902 | 2,117 | 85 | 233 | 2,632 | 2,033 | 94 | 0 | 288 | Mar 2026 – Apr 2026 |
+| ITALY | 5,338 | 5,338 | 4,902 | 2,122 | 85 | 237 | 2,632 | 2,033 | 94 | 0 | 288 | Mar 2026 – Apr 2026 |
 | LATVIA | 802 | 802 | 771 | 382 | 23 | 82 | 430 | 284 | 47 | 0 | 83 | Mar 2026 – Apr 2026 |
 | LITHUANIA | 120 | 120 | 108 | 29 | 4 | 4 | 99 | 5 | 0 | 0 | 4 | Mar 2026 – Apr 2026 |
 | LUXEMBOURG | 571 | 571 | 250 | 64 | 21 | 36 | 183 | 43 | 3 | 11 | 33 | Mar 2026 – Apr 2026 |
