@@ -7,12 +7,12 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-04-07 08:51 UTC — last scan: 2026-04-06_
+_Stats as of 2026-04-07 08:57 UTC — last scan: 2026-04-07_
 
-**92** scan batches run
+**97** scan batches run
 
 **3,235** of **82,714** available pages scanned (**3.9%** coverage)
-**3,069** of **3,235** scanned pages were reachable (**94.9%**)
+**3,070** of **3,235** scanned pages were reachable (**94.9%**)
 **1,415** reachable pages loaded at least one third-party script (**46.1%** of reachable)
 **1,536** known third-party service loads identified
 **17** unique known services across **12** categories
@@ -23,11 +23,11 @@ _Stats as of 2026-04-07 08:51 UTC — last scan: 2026-04-06_
 
 | Country | Scanned | Available | Reachable | URLs with 3rd-Party JS | Known Service Loads | Last Scan |
 |---------|---------|-----------|-----------|------------------------|--------------------|----------|
-| AUSTRIA | 821 | 821 | 787 | 264 | 44 | 2026-04-06 |
-| BELGIUM | 1,309 | 1,309 | 1,230 | 637 | 717 | 2026-04-06 |
-| BULGARIA | 291 | 291 | 269 | 107 | 120 | 2026-04-06 |
-| CROATIA | 233 | 233 | 232 | 120 | 167 | 2026-04-06 |
-| CZECHIA | 581 | 843 | 551 | 287 | 488 | 2026-04-06 |
+| AUSTRIA | 821 | 821 | 787 | 264 | 44 | 2026-04-07 |
+| BELGIUM | 1,309 | 1,309 | 1,230 | 637 | 718 | 2026-04-07 |
+| BULGARIA | 291 | 291 | 269 | 107 | 120 | 2026-04-07 |
+| CROATIA | 233 | 233 | 232 | 120 | 166 | 2026-04-07 |
+| CZECHIA | 581 | 843 | 552 | 287 | 488 | 2026-04-07 |
 
 ---
 
@@ -36,12 +36,12 @@ _Stats as of 2026-04-07 08:51 UTC — last scan: 2026-04-06_
 | # | Service | Loads |
 |--:|---------|------:|
 | 1 | jsDelivr CDN | **377** |
-| 2 | Google Analytics (GA4) | **232** |
+| 2 | Google Analytics (GA4) | **231** |
 | 3 | unpkg CDN | **219** |
 | 4 | cdnjs (Cloudflare CDN) | **176** |
 | 5 | Google Hosted Libraries | **132** |
 | 6 | Google reCAPTCHA | **119** |
-| 7 | Google Tag Manager | **107** |
+| 7 | Google Tag Manager | **108** |
 | 8 | jQuery | **76** |
 | 9 | Cookiebot | **27** |
 | 10 | Font Awesome | **20** |
@@ -58,11 +58,11 @@ _Stats as of 2026-04-07 08:51 UTC — last scan: 2026-04-06_
 | # | Category | Loads |
 |--:|----------|------:|
 | 1 | CDN | **904** |
-| 2 | Analytics | **258** |
+| 2 | Analytics | **257** |
 | 3 | JavaScript Library | **208** |
 | 4 | Security | **121** |
 | 5 | CAPTCHA | **119** |
-| 6 | Tag Manager | **107** |
+| 6 | Tag Manager | **108** |
 | 7 | Cookie Consent | **29** |
 | 8 | Icon Library | **20** |
 | 9 | UI Framework | **19** |
