@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-04-07 12:22 UTC",
+  "generated_at": "2026-04-07 12:37 UTC",
   "summary": {
-    "total_batches": 93,
+    "total_batches": 96,
     "total_scanned": 72735,
-    "total_reachable": 67225,
+    "total_reachable": 67257,
     "total_available": 82714,
-    "total_has_statement": 32542,
-    "total_in_footer": 28166,
+    "total_has_statement": 32593,
+    "total_in_footer": 28183,
     "first_scan": "2026-03-25T17:15:29.276776+00:00",
-    "last_scan": "2026-04-06T22:36:53.691540+00:00"
+    "last_scan": "2026-04-07T10:46:24.622488+00:00"
   },
   "by_country": [
     {
@@ -95,11 +95,11 @@
     {
       "country_code": "GERMANY",
       "total_scanned": 6555,
-      "reachable": 6456,
-      "has_statement": 4570,
-      "found_in_footer": 3861,
+      "reachable": 6479,
+      "has_statement": 4612,
+      "found_in_footer": 3872,
       "first_scan": "2026-03-26T23:17:11.908189+00:00",
-      "last_scan": "2026-04-04T22:35:25.689402+00:00"
+      "last_scan": "2026-04-07T10:46:24.622488+00:00"
     },
     {
       "country_code": "GREECE",
@@ -153,7 +153,7 @@
       "has_statement": 488,
       "found_in_footer": 444,
       "first_scan": "2026-03-28T10:14:48.773445+00:00",
-      "last_scan": "2026-04-04T17:10:08.884570+00:00"
+      "last_scan": "2026-04-07T05:31:52.842358+00:00"
     },
     {
       "country_code": "LITHUANIA",
@@ -203,11 +203,11 @@
     {
       "country_code": "POLAND",
       "total_scanned": 13875,
-      "reachable": 12857,
-      "has_statement": 5300,
-      "found_in_footer": 3363,
+      "reachable": 12866,
+      "has_statement": 5309,
+      "found_in_footer": 3369,
       "first_scan": "2026-03-28T19:28:02.048285+00:00",
-      "last_scan": "2026-04-04T18:36:44.530177+00:00"
+      "last_scan": "2026-04-07T07:06:57.315934+00:00"
     },
     {
       "country_code": "PORTUGAL",
