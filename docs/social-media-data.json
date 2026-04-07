@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-07 01:40 UTC",
+  "generated_at": "2026-04-07 02:18 UTC",
   "summary": {
-    "total_batches": 170,
+    "total_batches": 173,
     "total_scanned": 82714,
-    "total_reachable": 77177,
+    "total_reachable": 77189,
     "total_available": 82714,
-    "twitter_pages": 14514,
+    "twitter_pages": 14527,
     "x_pages": 3290,
     "bluesky_pages": 626,
-    "mastodon_pages": 4263,
-    "facebook_pages": 24902,
-    "linkedin_pages": 8891,
+    "mastodon_pages": 4266,
+    "facebook_pages": 24941,
+    "linkedin_pages": 8905,
     "first_scan": "2026-03-22T00:36:33.003106+00:00",
-    "last_scan": "2026-04-07T00:26:29.604834+00:00"
+    "last_scan": "2026-04-07T02:16:21.349375+00:00"
   },
   "by_country": [
     {
@@ -502,23 +502,23 @@
     {
       "country_code": "PORTUGAL",
       "total_scanned": 3503,
-      "reachable": 2925,
-      "twitter_pages": 425,
+      "reachable": 2933,
+      "twitter_pages": 435,
       "x_pages": 70,
       "bluesky_pages": 2,
-      "mastodon_pages": 182,
-      "facebook_pages": 1088,
-      "linkedin_pages": 260,
-      "twitter_only": 993,
+      "mastodon_pages": 185,
+      "facebook_pages": 1124,
+      "linkedin_pages": 274,
+      "twitter_only": 1021,
       "modern_only": 57,
-      "mixed": 173,
-      "no_social": 2031,
-      "has_any_legacy": 1166,
-      "has_any_modern": 182,
+      "mixed": 177,
+      "no_social": 2039,
+      "has_any_legacy": 1198,
+      "has_any_modern": 185,
       "first_scan": "2026-03-29T16:06:49.938895+00:00",
-      "last_scan": "2026-04-06T00:25:30.502450+00:00",
-      "sovereignty_score": 71.4,
-      "legacy_exposure": 39.9,
+      "last_scan": "2026-04-07T01:38:24.050969+00:00",
+      "sovereignty_score": 71.5,
+      "legacy_exposure": 40.8,
       "sovereignty_tier": "🥉 Growing"
     },
     {
@@ -560,7 +560,7 @@
       "has_any_legacy": 135,
       "has_any_modern": 14,
       "first_scan": "2026-03-29T23:26:02.362840+00:00",
-      "last_scan": "2026-04-06T04:51:02.836019+00:00",
+      "last_scan": "2026-04-07T01:48:52.841058+00:00",
       "sovereignty_score": 78.9,
       "legacy_exposure": 38.5,
       "sovereignty_tier": "🥉 Growing"
@@ -612,21 +612,21 @@
     {
       "country_code": "SPAIN",
       "total_scanned": 6069,
-      "reachable": 5419,
-      "twitter_pages": 1773,
+      "reachable": 5423,
+      "twitter_pages": 1776,
       "x_pages": 368,
       "bluesky_pages": 51,
       "mastodon_pages": 305,
-      "facebook_pages": 1763,
+      "facebook_pages": 1766,
       "linkedin_pages": 485,
-      "twitter_only": 2022,
+      "twitter_only": 2025,
       "modern_only": 29,
       "mixed": 318,
-      "no_social": 3163,
-      "has_any_legacy": 2340,
+      "no_social": 3165,
+      "has_any_legacy": 2343,
       "has_any_modern": 335,
       "first_scan": "2026-03-30T03:30:16.840716+00:00",
-      "last_scan": "2026-04-06T06:43:54.807766+00:00",
+      "last_scan": "2026-04-07T02:16:21.349375+00:00",
       "sovereignty_score": 58.9,
       "legacy_exposure": 43.2,
       "sovereignty_tier": "🥉 Growing"
@@ -203545,6 +203545,24 @@
           ]
         },
         {
+          "page_url": "https://www.cm-aveiro.pt/",
+          "detected_links": [
+            "https://twitter.com/CMAveiro"
+          ]
+        },
+        {
+          "page_url": "https://www.cm-aveiro.pt/municipio/comunicacao/noticias/noticia/camara-de-aveiro-entrega-viaturas-eletricas-a-quatro-unidades-de-saude-do-municipio",
+          "detected_links": [
+            "https://twitter.com/CMAveiro"
+          ]
+        },
+        {
+          "page_url": "https://www.cm-aveiro.pt/municipio/comunicacao/noticias/noticia/novo-concurso-para-reabilitacao-do-museu-de-aveiro-santa-joana",
+          "detected_links": [
+            "https://twitter.com/CMAveiro"
+          ]
+        },
+        {
           "page_url": "https://www.cm-barcelos.pt/",
           "detected_links": [
             "https://twitter.com/camarabarcelos"
@@ -203682,6 +203700,18 @@
           "page_url": "https://www.cm-fundao.pt/index.php/comunicacao-de-ocorrencias",
           "detected_links": [
             "https://twitter.com/CMFundao"
+          ]
+        },
+        {
+          "page_url": "https://www.cm-gaia.pt/",
+          "detected_links": [
+            "https://www.twitter.com/CamaraGaia"
+          ]
+        },
+        {
+          "page_url": "https://www.cm-gaia.pt/pt/noticias/homenagem-a-41-personalidades-e-instituicoes-no-dia-do-municipio/",
+          "detected_links": [
+            "https://www.twitter.com/CamaraGaia"
           ]
         },
         {
@@ -203949,10 +203979,10 @@
         {
           "page_url": "https://www.cm-oliveiradohospital.pt/",
           "detected_links": [
-            "https://twitter.com/share?url=https%3A%2F%2Fwww.ticketline.pt%2Fevento%2Famigos-com-beneficios-101534",
             "https://twitter.com/share?url=https%3A%2F%2Fwww.ticketline.pt%2Fevento%2Fafonso-dubraz-101544",
             "https://twitter.com/share?url=https%3A%2F%2Fwww.ticketline.pt%2Fevento%2Fmenina-do-mar-o-musical-101385",
-            "https://twitter.com/share?url=https%3A%2F%2Fwww.cm-oliveiradohospital.pt%2Fcmeventos%2Fmarchas-populares%2F"
+            "https://twitter.com/share?url=https%3A%2F%2Fwww.cm-oliveiradohospital.pt%2Fcmeventos%2Fmarchas-populares%2F",
+            "https://twitter.com/share?url=https%3A%2F%2Fwww.ticketline.pt%2Fevento%2Famigos-com-beneficios-101534"
           ]
         },
         {
@@ -203989,6 +204019,18 @@
           "page_url": "https://www.cm-pinhel.pt/pinhel-nas-tuas-maos-programa-de-voluntariado-juvenil-2025/",
           "detected_links": [
             "https://twitter.com/intent/tweet?text=Pinhel+Nas+Tuas+M%C3%A3os+%E2%80%93+Programa+de+Voluntariado+Juvenil+2025+%26%238211%3B+Pinhel%2C+Cidade+Falc%C3%A3o.+https%3A%2F%2Fwww.cm-pinhel.pt%2Fpinhel-nas-tuas-maos-programa-de-voluntariado-juvenil-2025%2F"
+          ]
+        },
+        {
+          "page_url": "https://www.cm-pontedesor.pt/",
+          "detected_links": [
+            "https://twitter.com/ponte_de_sor"
+          ]
+        },
+        {
+          "page_url": "https://www.cm-pontedesor.pt/viver/",
+          "detected_links": [
+            "https://twitter.com/ponte_de_sor"
           ]
         },
         {
@@ -204037,6 +204079,7 @@
         {
           "page_url": "https://www.cm-sardoal.pt/index.php/contactos",
           "detected_links": [
+            "https://twitter.com/share?url=https://www.cm-sardoal.pt/contactos&text=Contactos",
             "https://twitter.com/share?url=https://www.cm-sardoal.pt/index.php/contactos&text=Contactos",
             "https://twitter.com/intent/tweet?text=Contactos&url=https://www.cm-sardoal.pt/index.php/contactos"
           ]
@@ -204044,6 +204087,7 @@
         {
           "page_url": "https://www.cm-sardoal.pt/index.php/viver/caracterizacao",
           "detected_links": [
+            "https://twitter.com/share?url=https://www.cm-sardoal.pt/viver/caracterizacao&text=Caracterização",
             "https://twitter.com/share?url=https://www.cm-sardoal.pt/index.php/viver/caracterizacao&text=Caracterização",
             "https://twitter.com/intent/tweet?text=Caracteriza%C3%A7%C3%A3o&url=https://www.cm-sardoal.pt/index.php/viver/caracterizacao"
           ]
@@ -204166,6 +204210,7 @@
           "page_url": "https://www.culturaportugal.gov.pt/",
           "detected_links": [
             "http://twitter.com/cultura_pt",
+            "https://twitter.com/intent/tweet?text=Cultura Portugal: http://culturaportugal.gov.pt/pt/homepage/",
             "https://twitter.com/intent/tweet?text=Cultura Portugal: http://www.culturaportugal.gov.pt/pt/homepage/"
           ]
         },
@@ -204243,6 +204288,24 @@
           "page_url": "https://www.dgterritorio.gov.pt/Levantamento-LiDAR-de-Portugal-continental-0",
           "detected_links": [
             "https://twitter.com/DGTerritorio"
+          ]
+        },
+        {
+          "page_url": "https://www.emec.gov.pt/",
+          "detected_links": [
+            "https://twitter.com/incm_da"
+          ]
+        },
+        {
+          "page_url": "https://www.emec.gov.pt/catalogo/detalhes_produto.php?id=589",
+          "detected_links": [
+            "https://twitter.com/incm_da"
+          ]
+        },
+        {
+          "page_url": "https://www.emec.gov.pt/catalogo/detalhes_produto.php?id=592",
+          "detected_links": [
+            "https://twitter.com/incm_da"
           ]
         },
         {
@@ -205594,6 +205657,13 @@
           ]
         },
         {
+          "page_url": "https://www.cm-amarante.pt/",
+          "detected_links": [
+            "https://www.youtube.com/@municipio_de_amarante",
+            "https://www.tiktok.com/@municipiodeamarante?_t=ZN-8wkro5MbrNO&_r=1"
+          ]
+        },
+        {
           "page_url": "https://www.cm-amarante.pt/abertura-do-procedimento-de-arrendamento-do-bar-do-rossio/",
           "detected_links": [
             "https://www.youtube.com/@municipio_de_amarante",
@@ -205703,6 +205773,20 @@
           "page_url": "https://www.cm-fcr.pt/",
           "detected_links": [
             "https://www.youtube.com/@munfigueiradecastelorodrigo"
+          ]
+        },
+        {
+          "page_url": "https://www.cm-gaia.pt/",
+          "detected_links": [
+            "https://www.tiktok.com/@camaramunicipaldegaia",
+            "https://www.threads.net/@cm_gaia"
+          ]
+        },
+        {
+          "page_url": "https://www.cm-gaia.pt/pt/noticias/homenagem-a-41-personalidades-e-instituicoes-no-dia-do-municipio/",
+          "detected_links": [
+            "https://www.tiktok.com/@camaramunicipaldegaia",
+            "https://www.threads.net/@cm_gaia"
           ]
         },
         {
@@ -206152,6 +206236,7 @@
           "page_url": "http://www.biblioteca.cm-feira.pt/",
           "detected_links": [
             "https://www.facebook.com/bmsantamariafeira",
+            "https://www.facebook.com/events/1124601753124646/1124601836457971/",
             "http://www.facebook.com/events/2303955226684908"
           ]
         },
@@ -206159,6 +206244,7 @@
           "page_url": "http://www.biblioteca.cm-feira.pt/home.php",
           "detected_links": [
             "https://www.facebook.com/bmsantamariafeira",
+            "https://www.facebook.com/events/1124601753124646/1124601836457971/",
             "http://www.facebook.com/events/2303955226684908"
           ]
         },
@@ -206166,8 +206252,15 @@
           "page_url": "http://www.biblioteca.cm-feira.pt/infantojuvenil.php",
           "detected_links": [
             "https://www.facebook.com/bmsantamariafeira",
-            "http://www.facebook.com/events/2303955226684908",
-            "https://www.facebook.com/bmsantamariafeira/events?ref=page_internal"
+            "https://www.facebook.com/events/1124601753124646/1124601836457971/",
+            "https://www.facebook.com/bmsantamariafeira/events?ref=page_internal",
+            "http://www.facebook.com/events/2303955226684908"
+          ]
+        },
+        {
+          "page_url": "http://www.cm-ourique.pt/",
+          "detected_links": [
+            "https://www.facebook.com/municipio.deourique"
           ]
         },
         {
@@ -209558,6 +209651,126 @@
           ]
         },
         {
+          "page_url": "https://servicos.cm-ourem.pt/",
+          "detected_links": [
+            "https://www.facebook.com/municipiodeourem/"
+          ]
+        },
+        {
+          "page_url": "https://servicos.cm-terrasdebouro.pt/",
+          "detected_links": [
+            "https://www.facebook.com/municipiodeterrasdebouro/?locale=pt_PT"
+          ]
+        },
+        {
+          "page_url": "https://servicosonline.cm-cantanhede.pt/",
+          "detected_links": [
+            "https://www.facebook.com/MunicipiodeCantanhede"
+          ]
+        },
+        {
+          "page_url": "https://servicosonline.cm-cantanhede.pt/?src=SpoProServlet.asp&intmenu=10502",
+          "detected_links": [
+            "https://www.facebook.com/MunicipiodeCantanhede"
+          ]
+        },
+        {
+          "page_url": "https://servicosonline.cm-coimbra.pt/",
+          "detected_links": [
+            "https://www.facebook.com/municipiodecoimbra/"
+          ]
+        },
+        {
+          "page_url": "https://servicosonline.cm-elvas.pt/",
+          "detected_links": [
+            "https://www.facebook.com/MunicipioElvas/"
+          ]
+        },
+        {
+          "page_url": "https://servicosonline.cm-oaz.pt/",
+          "detected_links": [
+            "https://www.facebook.com/azemeisvida"
+          ]
+        },
+        {
+          "page_url": "https://servicosonline.cm-oaz.pt/formularios",
+          "detected_links": [
+            "https://www.facebook.com/azemeisvida"
+          ]
+        },
+        {
+          "page_url": "https://servicosonline.cm-oaz.pt/pages/364",
+          "detected_links": [
+            "https://www.facebook.com/azemeisvida"
+          ]
+        },
+        {
+          "page_url": "https://servicosonline.cm-ovar.pt/",
+          "detected_links": [
+            "https://www.facebook.com/cm.ovar"
+          ]
+        },
+        {
+          "page_url": "https://servicosonline.cm-palmela.pt/",
+          "detected_links": [
+            "https://www.facebook.com/palmelamunicipio"
+          ]
+        },
+        {
+          "page_url": "https://servicosonline.cm-palmela.pt/Default.aspx",
+          "detected_links": [
+            "https://www.facebook.com/palmelamunicipio"
+          ]
+        },
+        {
+          "page_url": "https://servicosonline.cm-palmela.pt/Registo/Scripts/TermosAdesao.aspx",
+          "detected_links": [
+            "https://www.facebook.com/palmelamunicipio"
+          ]
+        },
+        {
+          "page_url": "https://servicosonline.cm-seixal.pt/",
+          "detected_links": [
+            "https://www.facebook.com/municipioseixal/"
+          ]
+        },
+        {
+          "page_url": "https://servicosonline.cm-sesimbra.pt/",
+          "detected_links": [
+            "https://www.facebook.com/CamaraMunicipalSesimbra"
+          ]
+        },
+        {
+          "page_url": "https://servicosonline.cm-sesimbra.pt/Registo/Scripts/Instrucoes.aspx",
+          "detected_links": [
+            "https://www.facebook.com/CamaraMunicipalSesimbra"
+          ]
+        },
+        {
+          "page_url": "https://servonline.cm-alcochete.pt/",
+          "detected_links": [
+            "https://www.facebook.com/AlcocheteMunicipio"
+          ]
+        },
+        {
+          "page_url": "https://sgmj.justica.gov.pt/",
+          "detected_links": [
+            "https://www.facebook.com/SGJustica"
+          ]
+        },
+        {
+          "page_url": "https://sig.cm-estarreja.pt/websig/mapas_pdf.html",
+          "detected_links": [
+            "https://www.facebook.com/estarrejamunicipio"
+          ]
+        },
+        {
+          "page_url": "https://simtaxasurbanisticas.cm-lisboa.pt/",
+          "detected_links": [
+            "https://www.facebook.com/camaradelisboa"
+          ]
+        },
+        {
           "page_url": "https://snipi.gov.pt/",
           "detected_links": [
             "https://www.facebook.com/DGEducacao"
@@ -210171,6 +210384,12 @@
           ]
         },
         {
+          "page_url": "https://www.cm-amarante.pt/",
+          "detected_links": [
+            "https://www.facebook.com/municipiodeamarante/?locale=pt_PT"
+          ]
+        },
+        {
           "page_url": "https://www.cm-amarante.pt/abertura-do-procedimento-de-arrendamento-do-bar-do-rossio/",
           "detected_links": [
             "https://www.facebook.com/municipiodeamarante/?locale=pt_PT"
@@ -210276,6 +210495,24 @@
           "page_url": "https://www.cm-arruda.pt/pages/721",
           "detected_links": [
             "http://www.facebook.com/marrudavinhos"
+          ]
+        },
+        {
+          "page_url": "https://www.cm-aveiro.pt/",
+          "detected_links": [
+            "http://www.facebook.com/municipiodeaveiro"
+          ]
+        },
+        {
+          "page_url": "https://www.cm-aveiro.pt/municipio/comunicacao/noticias/noticia/camara-de-aveiro-entrega-viaturas-eletricas-a-quatro-unidades-de-saude-do-municipio",
+          "detected_links": [
+            "http://www.facebook.com/municipiodeaveiro"
+          ]
+        },
+        {
+          "page_url": "https://www.cm-aveiro.pt/municipio/comunicacao/noticias/noticia/novo-concurso-para-reabilitacao-do-museu-de-aveiro-santa-joana",
+          "detected_links": [
+            "http://www.facebook.com/municipiodeaveiro"
           ]
         },
         {
@@ -210695,6 +210932,18 @@
           "page_url": "https://www.cm-fundao.pt/index.php/comunicacao-de-ocorrencias",
           "detected_links": [
             "https://www.facebook.com/MunicipiodoFundao"
+          ]
+        },
+        {
+          "page_url": "https://www.cm-gaia.pt/",
+          "detected_links": [
+            "https://www.facebook.com/cmgaia"
+          ]
+        },
+        {
+          "page_url": "https://www.cm-gaia.pt/pt/noticias/homenagem-a-41-personalidades-e-instituicoes-no-dia-do-municipio/",
+          "detected_links": [
+            "https://www.facebook.com/cmgaia"
           ]
         },
         {
@@ -211339,11 +211588,11 @@
         {
           "page_url": "https://www.cm-oliveiradohospital.pt/",
           "detected_links": [
-            "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ticketline.pt%2Fevento%2Famigos-com-beneficios-101534",
             "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ticketline.pt%2Fevento%2Fafonso-dubraz-101544",
             "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ticketline.pt%2Fevento%2Fmenina-do-mar-o-musical-101385",
             "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.cm-oliveiradohospital.pt%2Fcmeventos%2Fmarchas-populares%2F",
-            "https://www.facebook.com/municipiodeoliveiradohospital/"
+            "https://www.facebook.com/municipiodeoliveiradohospital/",
+            "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.ticketline.pt%2Fevento%2Famigos-com-beneficios-101534"
           ]
         },
         {
@@ -211788,6 +212037,7 @@
           "page_url": "https://www.cm-sardoal.pt/index.php/contactos",
           "detected_links": [
             "https://www.facebook.com/MunicipiodeSardoal/?locale=pt_BR",
+            "https://www.facebook.com/sharer.php?u=https://www.cm-sardoal.pt/contactos",
             "https://www.facebook.com/sharer.php?u=https://www.cm-sardoal.pt/index.php/contactos"
           ]
         },
@@ -211795,6 +212045,7 @@
           "page_url": "https://www.cm-sardoal.pt/index.php/viver/caracterizacao",
           "detected_links": [
             "https://www.facebook.com/MunicipiodeSardoal/?locale=pt_BR",
+            "https://www.facebook.com/sharer.php?u=https://www.cm-sardoal.pt/viver/caracterizacao",
             "https://www.facebook.com/sharer.php?u=https://www.cm-sardoal.pt/index.php/viver/caracterizacao"
           ]
         },
@@ -212155,6 +212406,27 @@
           ]
         },
         {
+          "page_url": "https://www.cm-viseu.pt/",
+          "detected_links": [
+            "https://www.facebook.com/municipioviseu",
+            "https://www.facebook.com/vissaiumxxi/"
+          ]
+        },
+        {
+          "page_url": "https://www.cm-viseu.pt/pt/areas-servicos/ambiente/residuos-verdes-objetos-volumosos/",
+          "detected_links": [
+            "https://www.facebook.com/municipioviseu",
+            "https://www.facebook.com/vissaiumxxi/"
+          ]
+        },
+        {
+          "page_url": "https://www.cm-viseu.pt/pt/noticias/",
+          "detected_links": [
+            "https://www.facebook.com/municipioviseu",
+            "https://www.facebook.com/vissaiumxxi/"
+          ]
+        },
+        {
           "page_url": "https://www.cm-vizela.pt/",
           "detected_links": [
             "https://www.facebook.com/CMVizela/"
@@ -212296,6 +212568,26 @@
           ]
         },
         {
+          "page_url": "https://www.culturacores.azores.gov.pt/",
+          "detected_links": [
+            "https://www.facebook.com/culturacores?fref=ts"
+          ]
+        },
+        {
+          "page_url": "https://www.culturacores.azores.gov.pt/agenda/default.aspx?id=49644",
+          "detected_links": [
+            "https://www.facebook.com/culturacores",
+            "https://www.facebook.com/culturacores?fref=ts"
+          ]
+        },
+        {
+          "page_url": "https://www.culturacores.azores.gov.pt/agenda/default.aspx?id=49646",
+          "detected_links": [
+            "https://www.facebook.com/culturacores",
+            "https://www.facebook.com/culturacores?fref=ts"
+          ]
+        },
+        {
           "page_url": "https://www.defesa.gov.pt/",
           "detected_links": [
             "https://www.facebook.com/defesa.pt/"
@@ -212391,6 +212683,24 @@
           "page_url": "https://www.eeagrants.gov.pt/pt/unidade-nacional-de-gestao/",
           "detected_links": [
             "https://www.facebook.com/EEAGrantsPortugal/"
+          ]
+        },
+        {
+          "page_url": "https://www.emec.gov.pt/",
+          "detected_links": [
+            "https://www.facebook.com/INCM.SA"
+          ]
+        },
+        {
+          "page_url": "https://www.emec.gov.pt/catalogo/detalhes_produto.php?id=589",
+          "detected_links": [
+            "https://www.facebook.com/INCM.SA"
+          ]
+        },
+        {
+          "page_url": "https://www.emec.gov.pt/catalogo/detalhes_produto.php?id=592",
+          "detected_links": [
+            "https://www.facebook.com/INCM.SA"
           ]
         },
         {
@@ -213648,6 +213958,18 @@
           ]
         },
         {
+          "page_url": "https://sgmj.justica.gov.pt/",
+          "detected_links": [
+            "https://www.linkedin.com/company/secretaria-geral-do-ministerio-da-justica"
+          ]
+        },
+        {
+          "page_url": "https://simtaxasurbanisticas.cm-lisboa.pt/",
+          "detected_links": [
+            "https://www.linkedin.com/company/camaralisboa"
+          ]
+        },
+        {
           "page_url": "https://ssi.gov.pt/",
           "detected_links": [
             "https://www.linkedin.com/company/interpol/posts/?feedView=all",
@@ -213712,6 +214034,24 @@
           "page_url": "https://www.ama.gov.pt/web/agencia-para-a-modernizacao-administrativa/inicio?p_p_auth=lCJV3TQ9&p_p_id=49&p_p_lifecycle=1&p_p_state=normal&p_p_mode=view&_49_struts_action=%2Fmy_sites%2Fview&_49_groupId=24077&_49_privateLayout=false",
           "detected_links": [
             "https://linkedin.com"
+          ]
+        },
+        {
+          "page_url": "https://www.ana.pt/",
+          "detected_links": [
+            "https://www.linkedin.com/company/ana-aeroportos-de-portugal-sa"
+          ]
+        },
+        {
+          "page_url": "https://www.ana.pt/en/corporate/environment-and-sustainability/our-environmental-management",
+          "detected_links": [
+            "https://www.linkedin.com/company/ana-aeroportos-de-portugal-sa"
+          ]
+        },
+        {
+          "page_url": "https://www.ana.pt/en/pt/institucional/inovacao/biometric",
+          "detected_links": [
+            "https://www.linkedin.com/company/ana-aeroportos-de-portugal-sa"
           ]
         },
         {
@@ -213817,6 +214157,12 @@
           ]
         },
         {
+          "page_url": "https://www.cm-amarante.pt/",
+          "detected_links": [
+            "https://www.linkedin.com/company/município-de-amarante"
+          ]
+        },
+        {
           "page_url": "https://www.cm-amarante.pt/abertura-do-procedimento-de-arrendamento-do-bar-do-rossio/",
           "detected_links": [
             "https://www.linkedin.com/company/município-de-amarante"
@@ -213844,6 +214190,24 @@
           "page_url": "https://www.cm-armamar.pt/pages/944",
           "detected_links": [
             "https://www.linkedin.com/company/municipio-armamar"
+          ]
+        },
+        {
+          "page_url": "https://www.cm-aveiro.pt/",
+          "detected_links": [
+            "https://www.linkedin.com/company/municipiodeaveiro/"
+          ]
+        },
+        {
+          "page_url": "https://www.cm-aveiro.pt/municipio/comunicacao/noticias/noticia/camara-de-aveiro-entrega-viaturas-eletricas-a-quatro-unidades-de-saude-do-municipio",
+          "detected_links": [
+            "https://www.linkedin.com/company/municipiodeaveiro/"
+          ]
+        },
+        {
+          "page_url": "https://www.cm-aveiro.pt/municipio/comunicacao/noticias/noticia/novo-concurso-para-reabilitacao-do-museu-de-aveiro-santa-joana",
+          "detected_links": [
+            "https://www.linkedin.com/company/municipiodeaveiro/"
           ]
         },
         {
@@ -214033,10 +214397,10 @@
         {
           "page_url": "https://www.cm-oliveiradohospital.pt/",
           "detected_links": [
-            "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.ticketline.pt%2Fevento%2Famigos-com-beneficios-101534",
             "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.ticketline.pt%2Fevento%2Fafonso-dubraz-101544",
             "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.ticketline.pt%2Fevento%2Fmenina-do-mar-o-musical-101385",
-            "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.cm-oliveiradohospital.pt%2Fcmeventos%2Fmarchas-populares%2F"
+            "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.cm-oliveiradohospital.pt%2Fcmeventos%2Fmarchas-populares%2F",
+            "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.ticketline.pt%2Fevento%2Famigos-com-beneficios-101534"
           ]
         },
         {
@@ -214076,6 +214440,18 @@
           ]
         },
         {
+          "page_url": "https://www.cm-pontedesor.pt/",
+          "detected_links": [
+            "https://www.linkedin.com/company/pontedesor"
+          ]
+        },
+        {
+          "page_url": "https://www.cm-pontedesor.pt/viver/",
+          "detected_links": [
+            "https://www.linkedin.com/company/pontedesor"
+          ]
+        },
+        {
           "page_url": "https://www.cm-saoroquedopico.pt/noticia/read/2801/edital",
           "detected_links": [
             "https://www.linkedin.com/shareArticle?mini=true&url=https://www.cm-saoroquedopico.pt/noticia/read/2801/edital&title=Edital&summary=Luís Filipe Silva, Presidente da Câmara Municipal faz público que, devido à pretensão da Fábrica Igreja Paroquial de Santo António para a realização da Festa de São Vicente 2025, Freguesia de Santo António, Município de São Roque do Pico, há necessidade de condicionar o trânsito automóvel nos dias, horas e troços das vias públicas abaixo indicados."
@@ -214084,6 +214460,7 @@
         {
           "page_url": "https://www.cm-sardoal.pt/index.php/contactos",
           "detected_links": [
+            "https://www.linkedin.com/shareArticle?mini=true&url=https://www.cm-sardoal.pt/contactos",
             "https://www.linkedin.com/shareArticle?mini=true&url=https://www.cm-sardoal.pt/index.php/contactos",
             "https://www.linkedin.com/shareArticle?url=https://www.cm-sardoal.pt/index.php/contactos"
           ]
@@ -214091,6 +214468,7 @@
         {
           "page_url": "https://www.cm-sardoal.pt/index.php/viver/caracterizacao",
           "detected_links": [
+            "https://www.linkedin.com/shareArticle?mini=true&url=https://www.cm-sardoal.pt/viver/caracterizacao",
             "https://www.linkedin.com/shareArticle?mini=true&url=https://www.cm-sardoal.pt/index.php/viver/caracterizacao",
             "https://www.linkedin.com/shareArticle?url=https://www.cm-sardoal.pt/index.php/viver/caracterizacao"
           ]
@@ -214235,6 +214613,24 @@
           "page_url": "https://www.eeagrants.gov.pt/pt/unidade-nacional-de-gestao/",
           "detected_links": [
             "https://www.linkedin.com/company/eeagrantsportugal"
+          ]
+        },
+        {
+          "page_url": "https://www.emec.gov.pt/",
+          "detected_links": [
+            "https://www.linkedin.com/company/incm"
+          ]
+        },
+        {
+          "page_url": "https://www.emec.gov.pt/catalogo/detalhes_produto.php?id=589",
+          "detected_links": [
+            "https://www.linkedin.com/company/incm"
+          ]
+        },
+        {
+          "page_url": "https://www.emec.gov.pt/catalogo/detalhes_produto.php?id=592",
+          "detected_links": [
+            "https://www.linkedin.com/company/incm"
           ]
         },
         {
@@ -214822,6 +215218,8 @@
           "page_url": "https://www.senat.ro/",
           "detected_links": [
             "https://www.twitter.com/SenatRomania",
+            "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3deb4f9060-ded1-4b1d-8500-fa142cddb989&text=Mesajul+pre%c8%99edintelui+Senatului+cu+ocazia+Zilei+Jandarmeriei+Rom%c3%a2ne&via=SenatRomania",
+            "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d42e7b779-3c06-4b50-a507-195660c8e6b0&text=Pre%c8%99edintele+Senatului%2c+Mircea+Abrudean%2c+a+participat+la+cel+de+al+doilea+Summit+de+la+Bucha+dedicat+comemor%c4%83rii+victimelor+masacrului+din+2022&via=SenatRomania",
             "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d745d6c1a-e9ba-420e-ac90-866c528da9af&text=Vicepre%c8%99edintele+Senatului+Rom%c3%a2niei%2c+Mihai+Cote%c8%9b%2c+a+primit+ast%c4%83zi+delega%c8%9bia+Cur%c8%9bii+de+Conturi+Europene%2c+condus%c4%83+de+pre%c8%99edintele+Tony+Murphy&via=SenatRomania",
             "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d522f8cd9-da22-47d0-aa95-d49d792b531f&text=+Vizita+oficial%c4%83+%c3%aen+Rom%c3%a2nia+a+domnului+prof.+dr.+Numan+Kurtulmu%c5%9f%2c+pre%c8%99edintele+Marii+Adun%c4%83ri+Na%c8%9bionale+a+Republicii+Turcia%2c+%c3%aenso%c8%9bit+de+o+delega%c8%9bie+parlamentar%c4%83+&via=SenatRomania",
             "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d8b13cb42-40ca-47bc-a54e-b3653560bfe3&text=Participarea+pre%c8%99edintelui+Senatului%2c+Mircea+Abrudean%2c+la+Summitul+parlamentar+al+Ini%c8%9biativei+celor+Trei+M%c4%83ri%2c+organizat+la+Zagreb%2c+Croa%c8%9bia&via=SenatRomania",
@@ -214840,8 +215238,12 @@
             "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3ddcdb1641-04ee-4dd6-9e87-a69140df6314&text=Mesajul+pre%c8%99edintelui+Senatului+Rom%c3%a2niei+la+trecerea+%c3%aen+nefiin%c8%9b%c4%83+a+senatorului+Ilie+Ila%c8%99cu&via=SenatRomania",
             "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d518ad2ad-9515-4731-81ec-b5f0d7d06cb5&text=Mircea+Abrudean%2c+pre%c8%99edintele+Senatului%3a+Rom%c3%a2nia+a+fost+evaluat%c4%83+pozitiv+%c3%aen+Grupul+de+lucru+OCDE+pentru+integritate+public%c4%83&via=SenatRomania",
             "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d9fc6b4ba-d978-47ec-87a1-9eeb616b9cf1&text=Premierul+Republicii+Moldova%2c+Alexandru+Munteanu%2c+primit+la+Senatul+Rom%c3%a2niei+de+pre%c8%99edintele+Mircea+Abrudean&via=SenatRomania",
-            "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3dd8906a7e-4bf7-428c-aee6-592b9956e1e5&text=Dezbaterea+%e2%80%9eLift+pentru+via%c8%9b%c4%83%e2%80%9d+%e2%80%93+un+program+na%c8%9bional+pentru+demnitate%2c+accesibilitate+%c8%99i+respect&via=SenatRomania",
-            "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3de782042a-e5b5-4293-a982-0b82b4ce5d40&text=Mesajul+pre%c8%99edintelui+Senatului+cu+prilejul+Zilei+Veteranilor+din+Teatrele+de+Opera%c8%9bii+%e2%80%93+11+noiembrie&via=SenatRomania",
+            "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3db98c8a50-7e82-4104-be26-789511c82585&text=Pre%c8%99edintele+Comisiei+de+transporturi+%c8%99i+infrastructur%c4%83%2c+senatorul+Robert+Cazanciuc%2c+premiaz%c4%83+c%c3%a2%c8%99tig%c4%83torii+concursului+%e2%80%9eLift+pentru+via%c8%9b%c4%83%e2%80%9d&via=SenatRomania",
+            "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d555dcb19-fc9e-4823-9339-b0eb42e32ad0&text=Delega%c8%9bia+Comisiei+juridice%2c+de+numiri%2c+disciplin%c4%83%2c+imunit%c4%83%c8%9bi+%c8%99i+valid%c4%83ri+a+Senatului+Rom%c3%a2niei+-+vizit%c4%83+oficial%c4%83+%c3%aen+Republica+Albania&via=SenatRomania",
+            "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d422d3941-66ad-4972-b91d-1a0547f0fc2e&text=Vizitele+de+lucru+ale+Comisiei+pentru+energie%2c+infrastructur%c4%83+energetic%c4%83+%c8%99i+resurse+minerale+la+companiile+din+sectorul+energetic&via=SenatRomania",
+            "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d2b5c16ce-8204-4511-8ef4-0f70f40b64cf&text=Ziua+interna%c8%9bional%c4%83+de+con%c8%99tientizare+a+autismului%2c+marcat%c4%83+de+Comisia+pentru+%c3%aenv%c4%83%c8%9b%c4%83m%c3%a2nt%2c+%c8%99tiin%c8%9b%c4%83+%c8%99i+inovare+prin+dezbaterea+%e2%80%9eF%c4%83r%c4%83+date+clare%2c+incluziunea+r%c4%83m%c3%a2ne+doar+o+idee%e2%80%9d&via=SenatRomania",
+            "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d5c822c42-ac6e-4754-bd97-6e03b4f937e2&text=Participarea+delega%c8%9biei+Comisiei+pentru+rom%c3%a2nii+de+pretutindeni+din+Senatului+Rom%c3%a2niei+la+comemorarea+victimelor+masacrului+de+la+F%c3%a2nt%c3%a2na+Alb%c4%83+&via=SenatRomania",
+            "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d0a21affc-3800-4f30-885f-c109a1ff3452&text=Ceremonia+de+%c3%aenm%c3%a2nare+a+Ordinului+Na%c8%9bional+%e2%80%9cSteaua+Rom%c3%a2niei%e2%80%9d+%c3%aen+grad+de+Mare+Ofi%c8%9ber+lui+Pierre+Moscovici+-+Curtea+de+Conturi+European%c4%83%2c+prim-pre%c8%99edinte+al+Cur%c8%9bii+de+Conturi+a+Fran%c8%9bei+(2020-2025)&via=SenatRomania",
             "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d97f0dc35-998a-4b36-903a-1c1e769a1d36&text=Vernisaj+aniversar+la+Palatul+Parlamentului%3a+70+de+ani+de+prezen%c8%9b%c4%83+rom%c3%a2neasc%c4%83+%c3%aen+UNESCO&via=SenatRomania",
             "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d9f6b0d18-b3a7-404c-a4e1-2fa875b7ea8b&text=%e2%80%9eO+Rom%c3%a2nie+puternic%c4%83+%c3%aenseamn%c4%83+o+Uniune+European%c4%83+mai+puternic%c4%83%e2%80%9d%3a+Dezbatere+la+Parlamentul+Rom%c3%a2niei+privind+viitorul+transportului+durabil+%c8%99i+al+mobilit%c4%83%c8%9bii+militare+%c3%aen+prezen%c8%9ba+comisarului+european+Apostolos+Tzitzikostas&via=SenatRomania",
             "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3dd9dcc174-d772-431f-b905-5cb4cf6ef887&text=%c3%8ent%c3%a2lnire+comun%c4%83+a+comisiilor+juridice+din+Rom%c3%a2nia+%c8%99i+Republica+Moldova+la+Chi%c8%99in%c4%83u&via=SenatRomania",
@@ -214912,6 +215314,7 @@
             "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d0536eb26-4c8d-43af-b082-7efafddd214c&text=Consolidarea+rela%c8%9biilor+bilaterale+rom%c3%a2no-franceze+-+Vizita+de+lucru+a+Secretarului+general+adjunct+al+Senatului+Rom%c3%a2niei%2c+Izabela+Chencian%2c+la+Senatul+Republicii+Franceze+(Paris%2c+17-19+noiembrie+2025)&via=SenatRomania",
             "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d3958c7b2-be6c-4c6d-9a14-61326d676081&text=Secretarul+Senatului+Cristian+Ghinea+a+primit+vizita+studen%c8%9bilor+de+la+Universitatea+Ovidius%2c+Constan%c8%9ba&via=SenatRomania",
             "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d4401f6c6-990b-40d6-a48c-732d6c2d10fa&text=Participarea+la+Conferin%c8%9ba+Mondial%c4%83+pentru+Dezvoltarea+Telecomunica%c8%9biilor+(WTDC-25)&via=SenatRomania",
+            "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3dd8906a7e-4bf7-428c-aee6-592b9956e1e5&text=Dezbaterea+%e2%80%9eLift+pentru+via%c8%9b%c4%83%e2%80%9d+%e2%80%93+un+program+na%c8%9bional+pentru+demnitate%2c+accesibilitate+%c8%99i+respect&via=SenatRomania",
             "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d010c6f84-b576-4da0-b495-1ecc65bfefa6&text=Dezbatere+privind+viitorul+Politicii+Agricole+Comune+%c8%99i+implica%c8%9biile+noului+Cadru+Financiar+Multianual&via=SenatRomania",
             "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3da996983f-cc8d-4713-9fad-41711ae10db3&text=Participarea+senatorului+Lauren%c8%9biu-Cristinel+%c8%9aepelu%c8%99+la+reuniunea+Adun%c4%83rii+Parlamentare+a+Ini%c8%9biativei+Central-Europene+&via=SenatRomania",
             "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3dce9cb678-df8d-41fd-9135-acb21770ddf0&text=75+de+ani+de+rela%c8%9bii+diplomatice+%c3%aentre+Mongolia+%c8%99i+Rom%c3%a2nia&via=SenatRomania",
@@ -215027,12 +215430,13 @@
             "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3dd782f904-4e17-4a68-9641-df4c53801699&text=Senatorul+Titus+Corl%c4%83%c8%9bean%2c+membru+al+Delega%c8%9biei+Parlamentului+Rom%c3%a2niei+la+Adunarea+Parlamentar%c4%83+a+Consiliului+Europei%2c+desemnat+raportor+al+Comisiei+APCE+pentru+afaceri+juridice+%c8%99i+drepturile+omului&via=SenatRomania",
             "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d3d5a07ae-bf05-4004-bd9b-95d97a99b36b&text=Numirea+unui+nou+vicepre%c8%99edinte+al+Consiliului+de+monitorizare+pentru+implementarea+Conven%c8%9biei+privind+drepturile+persoanelor+cu+dizabilit%c4%83%c8%9bi&via=SenatRomania",
             "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3dfc976842-cda6-4dac-a239-3e304e0446d9&text=%e2%80%9eTr%c4%83im+%c3%aentr-un+context+geopolitic+%c3%aen+care+solidaritatea+european%c4%83+este+cel+mai+important+scut+cu+care+ne+putem+ap%c4%83ra%e2%80%9d%2c+a+declarat+senatoarea+Nicoleta+Pauliuc%2c+pre%c8%99edinta+Comisiei+pentru+ap%c4%83rare%2c+ordine+public%c4%83+%c8%99i+siguran%c8%9b%c4%83+na%c8%9bional%c4%83&via=SenatRomania",
+            "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d54d6a1f4-b7eb-46eb-a3fc-886c69f5660c&text=Selectarea+proiectului+%2c%2cSolu%c8%9bii+digitale+pentru+cre%c8%99terea+capacit%c4%83%c8%9bii+administrative++a+Senatului+Rom%c3%a2niei%22++%c3%aen+baza+de+date+digital%c4%83+a+OCDE+-+OPSI&via=SenatRomania",
+            "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3de782042a-e5b5-4293-a982-0b82b4ce5d40&text=Mesajul+pre%c8%99edintelui+Senatului+cu+prilejul+Zilei+Veteranilor+din+Teatrele+de+Opera%c8%9bii+%e2%80%93+11+noiembrie&via=SenatRomania",
             "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3df967088c-0381-4592-93dc-305476808c1d&text=%c3%8entrevederea+vicepre%c8%99edintelui+Senatului+Rom%c3%a2niei%2c+Robert+Cazanciuc%2c+cu+Prim-ministrul+Saint+Vincent+%c8%99i+Grenadine%2c+Ralph+Gonsalves&via=SenatRomania",
             "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3de6fee046-9e25-4cb2-8ddc-734d79659170&text=Interferen%c8%9ba+rus%c4%83+asupra+Rom%c3%a2niei%2c+a+proceselor+electorale%2c+ac%c8%9biunile+ostile+ale+Federa%c8%9biei+Ruse+%c3%aendreptate+%c3%aempotriva+Occidentului%2c+teme+pe+agenda+%c3%aent%c3%a2lnirilor+%c8%99i+ac%c8%9biunilor+de+control+ale+Comisiei+speciale+pentru+controlul+activit%c4%83%c8%9bii+SIE+%c3%aen+primele+cinci+s%c4%83pt%c4%83m%c3%a2ni+de+mandat&via=SenatRomania",
             "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3df6b34797-7e63-49f9-8b9d-bab2453360d0&text=Finan%c8%9barea+priorit%c4%83%c8%9bilor+europene%3a+dialog+politic+asupra+cadrului+financiar+multianual&via=SenatRomania",
             "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3dc1b44815-9ddb-40d5-91a4-d987baaad722&text=%c3%8entrevederea+vicepre%c8%99edintelui+Senatului+Rom%c3%a2niei%2c+Robert+Cazanciuc%2c+cu+pre%c8%99edintele+Cur%c8%9bii+Federale+de+Conturi+a+Braziliei%2c+Vital+do+R%c3%aago&via=SenatRomania",
-            "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3da93a4613-7c1d-4883-953f-4de169843a9a&text=Vizita+oficial%c4%83+a+delega%c8%9biei+Comisiei+pentru+cultur%c4%83+%c8%99i+media+din+Senatul+Rom%c3%a2niei+la+Chi%c8%99in%c4%83u%2c+Republica+Moldova&via=SenatRomania",
-            "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d54d6a1f4-b7eb-46eb-a3fc-886c69f5660c&text=Selectarea+proiectului+%2c%2cSolu%c8%9bii+digitale+pentru+cre%c8%99terea+capacit%c4%83%c8%9bii+administrative++a+Senatului+Rom%c3%a2niei%22++%c3%aen+baza+de+date+digital%c4%83+a+OCDE+-+OPSI&via=SenatRomania"
+            "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3da93a4613-7c1d-4883-953f-4de169843a9a&text=Vizita+oficial%c4%83+a+delega%c8%9biei+Comisiei+pentru+cultur%c4%83+%c8%99i+media+din+Senatul+Rom%c3%a2niei+la+Chi%c8%99in%c4%83u%2c+Republica+Moldova&via=SenatRomania"
           ]
         },
         {
@@ -215936,6 +216340,9 @@
           "detected_links": [
             "http://www.facebook.com/primariabrasov",
             "https://www.facebook.com/sharer/sharer.php?u=https://www.brasovcity.ro/",
+            "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.brasovcity.ro%2Fro%2Fstiri_pe_larg%2F36028%2F%26src%3Dsdkpreparse",
+            "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.brasovcity.ro%2Fro%2Fstiri_pe_larg%2F36019%2F%26src%3Dsdkpreparse",
+            "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.brasovcity.ro%2Fro%2Fstiri_pe_larg%2F36013%2F%26src%3Dsdkpreparse",
             "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.brasovcity.ro%2Fro%2Fstiri_pe_larg%2F36000%2F%26src%3Dsdkpreparse",
             "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.brasovcity.ro%2Fro%2Fstiri_pe_larg%2F35984%2F%26src%3Dsdkpreparse",
             "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.brasovcity.ro%2Fro%2Fstiri_pe_larg%2F35974%2F%26src%3Dsdkpreparse"
@@ -215983,6 +216390,8 @@
           "page_url": "https://www.senat.ro/",
           "detected_links": [
             "https://www.facebook.com/SenatulRomaniei",
+            "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3deb4f9060-ded1-4b1d-8500-fa142cddb989",
+            "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d42e7b779-3c06-4b50-a507-195660c8e6b0",
             "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d745d6c1a-e9ba-420e-ac90-866c528da9af",
             "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d522f8cd9-da22-47d0-aa95-d49d792b531f",
             "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d8b13cb42-40ca-47bc-a54e-b3653560bfe3",
@@ -216001,8 +216410,12 @@
             "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3ddcdb1641-04ee-4dd6-9e87-a69140df6314",
             "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d518ad2ad-9515-4731-81ec-b5f0d7d06cb5",
             "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d9fc6b4ba-d978-47ec-87a1-9eeb616b9cf1",
-            "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3dd8906a7e-4bf7-428c-aee6-592b9956e1e5",
-            "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3de782042a-e5b5-4293-a982-0b82b4ce5d40",
+            "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3db98c8a50-7e82-4104-be26-789511c82585",
+            "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d555dcb19-fc9e-4823-9339-b0eb42e32ad0",
+            "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d422d3941-66ad-4972-b91d-1a0547f0fc2e",
+            "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d2b5c16ce-8204-4511-8ef4-0f70f40b64cf",
+            "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d5c822c42-ac6e-4754-bd97-6e03b4f937e2",
+            "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d0a21affc-3800-4f30-885f-c109a1ff3452",
             "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d97f0dc35-998a-4b36-903a-1c1e769a1d36",
             "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d9f6b0d18-b3a7-404c-a4e1-2fa875b7ea8b",
             "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3dd9dcc174-d772-431f-b905-5cb4cf6ef887",
@@ -216073,6 +216486,7 @@
             "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d0536eb26-4c8d-43af-b082-7efafddd214c",
             "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d3958c7b2-be6c-4c6d-9a14-61326d676081",
             "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d4401f6c6-990b-40d6-a48c-732d6c2d10fa",
+            "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3dd8906a7e-4bf7-428c-aee6-592b9956e1e5",
             "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d010c6f84-b576-4da0-b495-1ecc65bfefa6",
             "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3da996983f-cc8d-4713-9fad-41711ae10db3",
             "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3dce9cb678-df8d-41fd-9135-acb21770ddf0",
@@ -216188,12 +216602,13 @@
             "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3dd782f904-4e17-4a68-9641-df4c53801699",
             "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d3d5a07ae-bf05-4004-bd9b-95d97a99b36b",
             "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3dfc976842-cda6-4dac-a239-3e304e0446d9",
+            "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d54d6a1f4-b7eb-46eb-a3fc-886c69f5660c",
+            "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3de782042a-e5b5-4293-a982-0b82b4ce5d40",
             "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3df967088c-0381-4592-93dc-305476808c1d",
             "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3de6fee046-9e25-4cb2-8ddc-734d79659170",
             "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3df6b34797-7e63-49f9-8b9d-bab2453360d0",
             "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3dc1b44815-9ddb-40d5-91a4-d987baaad722",
-            "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3da93a4613-7c1d-4883-953f-4de169843a9a",
-            "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d54d6a1f4-b7eb-46eb-a3fc-886c69f5660c"
+            "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3da93a4613-7c1d-4883-953f-4de169843a9a"
           ]
         },
         {
@@ -216300,6 +216715,8 @@
         {
           "page_url": "https://www.senat.ro/",
           "detected_links": [
+            "https://www.linkedin.com/cws/share?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3deb4f9060-ded1-4b1d-8500-fa142cddb989",
+            "https://www.linkedin.com/cws/share?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d42e7b779-3c06-4b50-a507-195660c8e6b0",
             "https://www.linkedin.com/cws/share?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d745d6c1a-e9ba-420e-ac90-866c528da9af",
             "https://www.linkedin.com/cws/share?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d522f8cd9-da22-47d0-aa95-d49d792b531f",
             "https://www.linkedin.com/cws/share?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d8b13cb42-40ca-47bc-a54e-b3653560bfe3",
@@ -216318,8 +216735,12 @@
             "https://www.linkedin.com/cws/share?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3ddcdb1641-04ee-4dd6-9e87-a69140df6314",
             "https://www.linkedin.com/cws/share?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d518ad2ad-9515-4731-81ec-b5f0d7d06cb5",
             "https://www.linkedin.com/cws/share?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d9fc6b4ba-d978-47ec-87a1-9eeb616b9cf1",
-            "https://www.linkedin.com/cws/share?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3dd8906a7e-4bf7-428c-aee6-592b9956e1e5",
-            "https://www.linkedin.com/cws/share?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3de782042a-e5b5-4293-a982-0b82b4ce5d40",
+            "https://www.linkedin.com/cws/share?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3db98c8a50-7e82-4104-be26-789511c82585",
+            "https://www.linkedin.com/cws/share?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d555dcb19-fc9e-4823-9339-b0eb42e32ad0",
+            "https://www.linkedin.com/cws/share?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d422d3941-66ad-4972-b91d-1a0547f0fc2e",
+            "https://www.linkedin.com/cws/share?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d2b5c16ce-8204-4511-8ef4-0f70f40b64cf",
+            "https://www.linkedin.com/cws/share?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d5c822c42-ac6e-4754-bd97-6e03b4f937e2",
+            "https://www.linkedin.com/cws/share?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d0a21affc-3800-4f30-885f-c109a1ff3452",
             "https://www.linkedin.com/cws/share?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d97f0dc35-998a-4b36-903a-1c1e769a1d36",
             "https://www.linkedin.com/cws/share?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d9f6b0d18-b3a7-404c-a4e1-2fa875b7ea8b",
             "https://www.linkedin.com/cws/share?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3dd9dcc174-d772-431f-b905-5cb4cf6ef887",
@@ -216390,6 +216811,7 @@
             "https://www.linkedin.com/cws/share?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d0536eb26-4c8d-43af-b082-7efafddd214c",
             "https://www.linkedin.com/cws/share?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d3958c7b2-be6c-4c6d-9a14-61326d676081",
             "https://www.linkedin.com/cws/share?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d4401f6c6-990b-40d6-a48c-732d6c2d10fa",
+            "https://www.linkedin.com/cws/share?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3dd8906a7e-4bf7-428c-aee6-592b9956e1e5",
             "https://www.linkedin.com/cws/share?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d010c6f84-b576-4da0-b495-1ecc65bfefa6",
             "https://www.linkedin.com/cws/share?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3da996983f-cc8d-4713-9fad-41711ae10db3",
             "https://www.linkedin.com/cws/share?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3dce9cb678-df8d-41fd-9135-acb21770ddf0",
@@ -216505,12 +216927,13 @@
             "https://www.linkedin.com/cws/share?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3dd782f904-4e17-4a68-9641-df4c53801699",
             "https://www.linkedin.com/cws/share?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d3d5a07ae-bf05-4004-bd9b-95d97a99b36b",
             "https://www.linkedin.com/cws/share?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3dfc976842-cda6-4dac-a239-3e304e0446d9",
+            "https://www.linkedin.com/cws/share?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d54d6a1f4-b7eb-46eb-a3fc-886c69f5660c",
+            "https://www.linkedin.com/cws/share?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3de782042a-e5b5-4293-a982-0b82b4ce5d40",
             "https://www.linkedin.com/cws/share?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3df967088c-0381-4592-93dc-305476808c1d",
             "https://www.linkedin.com/cws/share?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3de6fee046-9e25-4cb2-8ddc-734d79659170",
             "https://www.linkedin.com/cws/share?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3df6b34797-7e63-49f9-8b9d-bab2453360d0",
             "https://www.linkedin.com/cws/share?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3dc1b44815-9ddb-40d5-91a4-d987baaad722",
-            "https://www.linkedin.com/cws/share?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3da93a4613-7c1d-4883-953f-4de169843a9a",
-            "https://www.linkedin.com/cws/share?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3d54d6a1f4-b7eb-46eb-a3fc-886c69f5660c"
+            "https://www.linkedin.com/cws/share?url=https%3a%2f%2fwww.senat.ro%2fStiriSenatDetaliu.aspx%3fID%3da93a4613-7c1d-4883-953f-4de169843a9a"
           ]
         },
         {
@@ -223412,6 +223835,13 @@
           ]
         },
         {
+          "page_url": "https://empleopublico.carm.es/",
+          "detected_links": [
+            "https://twitter.com/empleopublicarm",
+            "https://twitter.com/empleopublicoRM"
+          ]
+        },
+        {
           "page_url": "https://empleopublico.carm.es/web/pagina?IDCONTENIDO=61968&IDTIPO=100&RASTRO=c$m",
           "detected_links": [
             "https://twitter.com/empleopublicoRM"
@@ -223527,6 +223957,12 @@
           "detected_links": [
             "https://twitter.com/energiajcyl",
             "https://twitter.com/share?url=https%3A%2F%2Fenergia.jcyl.es%2Fweb%2Fjcyl%2FEnergia%2Fes%2FPlantilla100Detalle%2F1261039295566%2F_%2F1285524799271%2FComunicacion&text=El+X+Campus+de+la+Energ%C3%ADa+El%C3%A9ctrica+para+estudiantes+y+egresados+de+Universidades+y+FP+analizar%C3%A1+el+sector+el%C3%A9ctrico%2C+energ%C3%ADas+renovables%2C+y+redes+inteligentes"
+          ]
+        },
+        {
+          "page_url": "https://eoi-hellin.centros.castillalamancha.es/",
+          "detected_links": [
+            "https://twitter.com/eoidehellin"
           ]
         },
         {
@@ -224166,6 +224602,12 @@
           "page_url": "https://gobiernoabierto.jcyl.es/web/es/transparencia/derecho-informacion-publica.html",
           "detected_links": [
             "https://twitter.com/transparencia"
+          ]
+        },
+        {
+          "page_url": "https://guiacomunicacio.caib.es/",
+          "detected_links": [
+            "https://twitter.com/goib"
           ]
         },
         {
@@ -239120,6 +239562,12 @@
           ]
         },
         {
+          "page_url": "https://empleopublico.carm.es/",
+          "detected_links": [
+            "https://www.facebook.com/empleopublicoRM"
+          ]
+        },
+        {
           "page_url": "https://empleopublico.carm.es/web/pagina?IDCONTENIDO=61968&IDTIPO=100&RASTRO=c$m",
           "detected_links": [
             "https://www.facebook.com/empleopublicoRM"
@@ -239216,6 +239664,12 @@
           "page_url": "https://eoi-almansa.centros.castillalamancha.es/anuncios/matr%C3%ADcula-julio-y-grupos-2024-2025",
           "detected_links": [
             "https://www.facebook.com/eoialmansa"
+          ]
+        },
+        {
+          "page_url": "https://eoi-hellin.centros.castillalamancha.es/",
+          "detected_links": [
+            "https://www.facebook.com/groups/136525126373150/"
           ]
         },
         {
@@ -239878,6 +240332,12 @@
           "page_url": "https://governobert.gencat.cat/ca/inici/",
           "detected_links": [
             "https://www.facebook.com/gencat/"
+          ]
+        },
+        {
+          "page_url": "https://guiacomunicacio.caib.es/",
+          "detected_links": [
+            "https://www.facebook.com/GovernIllesBalears/"
           ]
         },
         {
