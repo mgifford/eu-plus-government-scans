@@ -46,7 +46,6 @@
     }
 
     var nextTheme = theme === "dark" ? "light" : "dark";
-    var label = nextTheme === "dark" ? "Dark mode" : "Light mode";
     var actionLabel = "Switch to " + nextTheme + " mode";
 
     button.setAttribute("aria-pressed", String(theme === "dark"));
@@ -54,9 +53,9 @@
     button.setAttribute("title", actionLabel);
     button.dataset.theme = theme;
 
-    var labelNode = button.querySelector(".theme-toggle__label");
+    var labelNode = button.querySelector("[data-theme-toggle-text]");
     if (labelNode) {
-      labelNode.textContent = label;
+      labelNode.textContent = actionLabel;
     }
   }
 
@@ -72,7 +71,7 @@
     updateToggle(getEffectiveTheme());
   }
 
-  document.addEventListener("DOMContentLoaded", function () {
+  function initializeToggle() {
     var button = document.querySelector("[data-theme-toggle]");
     if (!button) {
       return;
@@ -86,5 +85,12 @@
     } else if (typeof mediaQuery.addListener === "function") {
       mediaQuery.addListener(handleSystemThemeChange);
     }
-  });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initializeToggle);
+    return;
+  }
+
+  initializeToggle();
 })();
