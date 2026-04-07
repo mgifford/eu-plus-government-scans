@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-07 16:25 UTC",
+  "generated_at": "2026-04-07 16:26 UTC",
   "summary": {
-    "total_batches": 174,
+    "total_batches": 175,
     "total_scanned": 82714,
-    "total_reachable": 77229,
+    "total_reachable": 77240,
     "total_available": 82714,
-    "twitter_pages": 14527,
-    "x_pages": 3292,
+    "twitter_pages": 14538,
+    "x_pages": 3295,
     "bluesky_pages": 626,
     "mastodon_pages": 4273,
-    "facebook_pages": 26053,
-    "linkedin_pages": 9090,
+    "facebook_pages": 26069,
+    "linkedin_pages": 9093,
     "first_scan": "2026-03-22T00:36:33.003106+00:00",
-    "last_scan": "2026-04-07T12:35:56.270752+00:00"
+    "last_scan": "2026-04-07T16:26:04.650556+00:00"
   },
   "by_country": [
     {
@@ -678,23 +678,23 @@
     {
       "country_code": "UNITED_KINGDOM_UK",
       "total_scanned": 19502,
-      "reachable": 18730,
-      "twitter_pages": 4141,
-      "x_pages": 987,
+      "reachable": 18741,
+      "twitter_pages": 4152,
+      "x_pages": 990,
       "bluesky_pages": 117,
       "mastodon_pages": 668,
-      "facebook_pages": 6500,
-      "linkedin_pages": 2478,
-      "twitter_only": 6606,
+      "facebook_pages": 6516,
+      "linkedin_pages": 2481,
+      "twitter_only": 6624,
       "modern_only": 37,
       "mixed": 700,
-      "no_social": 11454,
-      "has_any_legacy": 7306,
+      "no_social": 11459,
+      "has_any_legacy": 7324,
       "has_any_modern": 737,
       "first_scan": "2026-03-31T04:47:31.540481+00:00",
-      "last_scan": "2026-04-06T12:36:13.193868+00:00",
-      "sovereignty_score": 61.4,
-      "legacy_exposure": 39.0,
+      "last_scan": "2026-04-07T16:26:04.650556+00:00",
+      "sovereignty_score": 61.3,
+      "legacy_exposure": 39.1,
       "sovereignty_tier": "🥉 Growing"
     }
   ],
@@ -280967,6 +280967,9 @@
           "page_url": "https://museums.calderdale.gov.uk/",
           "detected_links": [
             "https://twitter.com/intent/tweet?url=https://museums.calderdale.gov.uk/event-details/fashion-extremes-2026-12-19-10-00&text=Check%20out%20this%20event.%20Hope%20to%20see%20you%20there!",
+            "https://twitter.com/intent/tweet?url=https://museums.calderdale.gov.uk/event-details/springtime-easter-wreaths-2026-04-08-10-00&text=Check%20out%20this%20event.%20Hope%20to%20see%20you%20there!",
+            "https://twitter.com/intent/tweet?url=https://museums.calderdale.gov.uk/event-details/georgian-medicine-at-shibden-hall&text=Check%20out%20this%20event.%20Hope%20to%20see%20you%20there!",
+            "https://twitter.com/intent/tweet?url=https://museums.calderdale.gov.uk/event-details/vintage-sewing-machines-attachments-hemmers-and-braiders-2026-04-17-10-30&text=Check%20out%20this%20event.%20Hope%20to%20see%20you%20there!",
             "https://twitter.com/intent/tweet?url=https://museums.calderdale.gov.uk/event-details/easter-egg-pom-poms-2026-04-01-10-00&text=Check%20out%20this%20event.%20Hope%20to%20see%20you%20there!",
             "https://twitter.com/intent/tweet?url=https://museums.calderdale.gov.uk/event-details/saturday-family-art-club-2026-04-04-10-30&text=Check%20out%20this%20event.%20Hope%20to%20see%20you%20there!",
             "https://twitter.com/intent/tweet?url=https://museums.calderdale.gov.uk/event-details/easter-craft-2026-04-07-10-00&text=Check%20out%20this%20event.%20Hope%20to%20see%20you%20there!"
@@ -281100,6 +281103,12 @@
         },
         {
           "page_url": "https://my.maidstone.gov.uk/service/order--renew--change--replace-or-cancel-garden-bins",
+          "detected_links": [
+            "https://twitter.com/maidstonebc?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor/"
+          ]
+        },
+        {
+          "page_url": "https://my.maidstone.gov.uk/ssauth/register?return_url=https%3A%2F%2Fmy.maidstone.gov.uk%2Fen&lang=en",
           "detected_links": [
             "https://twitter.com/maidstonebc?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor/"
           ]
@@ -281413,6 +281422,24 @@
           "page_url": "https://myjobscotland.gov.uk/social-care",
           "detected_links": [
             "https://twitter.com/myjobscotland"
+          ]
+        },
+        {
+          "page_url": "https://mylife.enfield.gov.uk/",
+          "detected_links": [
+            "https://twitter.com/EnfieldCouncil"
+          ]
+        },
+        {
+          "page_url": "https://mylife.enfield.gov.uk/enfield-home-page/content/information-and-advice/information-and-advice-menu-page/",
+          "detected_links": [
+            "https://twitter.com/EnfieldCouncil"
+          ]
+        },
+        {
+          "page_url": "https://mylife.enfield.gov.uk/home/index",
+          "detected_links": [
+            "https://twitter.com/EnfieldCouncil"
           ]
         },
         {
@@ -282193,6 +282220,24 @@
           ]
         },
         {
+          "page_url": "https://online.royalpapworth.nhs.uk/",
+          "detected_links": [
+            "https://twitter.com/papworth_pd"
+          ]
+        },
+        {
+          "page_url": "https://online.royalpapworth.nhs.uk/event/national-ild-preceptorship-2025/",
+          "detected_links": [
+            "https://twitter.com/papworth_pd"
+          ]
+        },
+        {
+          "page_url": "https://online.royalpapworth.nhs.uk/events",
+          "detected_links": [
+            "https://twitter.com/papworth_pd"
+          ]
+        },
+        {
           "page_url": "https://onlinepermits.lambeth.gov.uk/",
           "detected_links": [
             "https://twitter.com/lambeth_council"
@@ -282253,6 +282298,12 @@
           "detected_links": [
             "https://twitter.com/intent/tweet?original_referer&url=https%3A%2F%2Fopenpolicy.blog.gov.uk%2F2024%2F07%2F09%2Flaunching-the-new-policy-lab-prospectus-2%2F&text=Launching+the+new+Policy+Lab+prospectus",
             "https://twitter.com/PolicyLabUK?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+          ]
+        },
+        {
+          "page_url": "https://openportal.broxtowe.gov.uk/",
+          "detected_links": [
+            "https://twitter.com/broxtowebc"
           ]
         },
         {
@@ -282870,6 +282921,24 @@
           "page_url": "https://planning.redcar-cleveland.gov.uk/",
           "detected_links": [
             "https://twitter.com/RedcarCleveland"
+          ]
+        },
+        {
+          "page_url": "https://planning.stockport.gov.uk/",
+          "detected_links": [
+            "https://twitter.com/StockportMBC"
+          ]
+        },
+        {
+          "page_url": "https://planning.stockport.gov.uk/PlanningData-live/search.do?action=simple&searchType=Appeal",
+          "detected_links": [
+            "https://twitter.com/StockportMBC"
+          ]
+        },
+        {
+          "page_url": "https://planning.stockport.gov.uk/PlanningData-live/search.do?action=weeklyList",
+          "detected_links": [
+            "https://twitter.com/StockportMBC"
           ]
         },
         {
@@ -299086,6 +299155,24 @@
           "page_url": "https://newbank.nhs.uk/health-reviews-assessments/",
           "detected_links": [
             "https://x.com/gtdhealthcare"
+          ]
+        },
+        {
+          "page_url": "https://newenttowncouncil.gov.uk/",
+          "detected_links": [
+            "https://x.com/NewentTC"
+          ]
+        },
+        {
+          "page_url": "https://newenttowncouncil.gov.uk/contact-us/",
+          "detected_links": [
+            "https://x.com/NewentTC"
+          ]
+        },
+        {
+          "page_url": "https://newenttowncouncil.gov.uk/local-attractions/",
+          "detected_links": [
+            "https://x.com/NewentTC"
           ]
         },
         {
@@ -319406,6 +319493,18 @@
           ]
         },
         {
+          "page_url": "https://lonsdalemedicalcentre.nhs.uk/",
+          "detected_links": [
+            "https://www.facebook.com/lonsdalemedicalcentre/"
+          ]
+        },
+        {
+          "page_url": "https://lonsdalemedicalcentre.nhs.uk/request-a-repeat-prescription/",
+          "detected_links": [
+            "https://www.facebook.com/lonsdalemedicalcentre/"
+          ]
+        },
+        {
           "page_url": "https://love.lambeth.gov.uk/",
           "detected_links": [
             "http://www.facebook.com/sharer.php?u=https://love.lambeth.gov.uk/&t=Home",
@@ -319417,6 +319516,18 @@
           "detected_links": [
             "http://www.facebook.com/sharer.php?u=https://love.lambeth.gov.uk/lambeth-launches-new-drive-to-keep-young-people-safe-from-crime-after-school/&t=Lambeth launches new drive to keep young people safe from crime after school",
             "https://www.facebook.com/LambethCouncil"
+          ]
+        },
+        {
+          "page_url": "https://lowestofttowncouncil.gov.uk/",
+          "detected_links": [
+            "https://www.facebook.com/profile.php?id=100069126043366"
+          ]
+        },
+        {
+          "page_url": "https://lowestofttowncouncil.gov.uk/get-in-touch/",
+          "detected_links": [
+            "https://www.facebook.com/profile.php?id=100069126043366"
           ]
         },
         {
@@ -319508,6 +319619,7 @@
           "detected_links": [
             "https://www.facebook.com/MaghullTown/",
             "https://facebook.com/618528084997497",
+            "https://www.facebook.com/618528084997497/posts/1264071585872533",
             "https://www.facebook.com/photo.php?fbid=1254797866799905&set=a.252984426981259&type=3"
           ]
         },
@@ -320518,6 +320630,9 @@
           "page_url": "https://museums.calderdale.gov.uk/",
           "detected_links": [
             "https://www.facebook.com/sharer/sharer.php?u=https://museums.calderdale.gov.uk/event-details/fashion-extremes-2026-12-19-10-00&quote=Check%20out%20this%20event.%20Hope%20to%20see%20you%20there!",
+            "https://www.facebook.com/sharer/sharer.php?u=https://museums.calderdale.gov.uk/event-details/springtime-easter-wreaths-2026-04-08-10-00&quote=Check%20out%20this%20event.%20Hope%20to%20see%20you%20there!",
+            "https://www.facebook.com/sharer/sharer.php?u=https://museums.calderdale.gov.uk/event-details/georgian-medicine-at-shibden-hall&quote=Check%20out%20this%20event.%20Hope%20to%20see%20you%20there!",
+            "https://www.facebook.com/sharer/sharer.php?u=https://museums.calderdale.gov.uk/event-details/vintage-sewing-machines-attachments-hemmers-and-braiders-2026-04-17-10-30&quote=Check%20out%20this%20event.%20Hope%20to%20see%20you%20there!",
             "https://www.facebook.com/sharer/sharer.php?u=https://museums.calderdale.gov.uk/event-details/easter-egg-pom-poms-2026-04-01-10-00&quote=Check%20out%20this%20event.%20Hope%20to%20see%20you%20there!",
             "https://www.facebook.com/sharer/sharer.php?u=https://museums.calderdale.gov.uk/event-details/saturday-family-art-club-2026-04-04-10-30&quote=Check%20out%20this%20event.%20Hope%20to%20see%20you%20there!",
             "https://www.facebook.com/sharer/sharer.php?u=https://museums.calderdale.gov.uk/event-details/easter-craft-2026-04-07-10-00&quote=Check%20out%20this%20event.%20Hope%20to%20see%20you%20there!"
@@ -320681,6 +320796,12 @@
         },
         {
           "page_url": "https://my.maidstone.gov.uk/service/order--renew--change--replace-or-cancel-garden-bins",
+          "detected_links": [
+            "https://www.facebook.com/maidstoneboroughcouncil/"
+          ]
+        },
+        {
+          "page_url": "https://my.maidstone.gov.uk/ssauth/register?return_url=https%3A%2F%2Fmy.maidstone.gov.uk%2Fen&lang=en",
           "detected_links": [
             "https://www.facebook.com/maidstoneboroughcouncil/"
           ]
@@ -321128,6 +321249,24 @@
           ]
         },
         {
+          "page_url": "https://mylife.enfield.gov.uk/",
+          "detected_links": [
+            "http://www.facebook.com/pages/Enfield-Council/252946378095154"
+          ]
+        },
+        {
+          "page_url": "https://mylife.enfield.gov.uk/enfield-home-page/content/information-and-advice/information-and-advice-menu-page/",
+          "detected_links": [
+            "http://www.facebook.com/pages/Enfield-Council/252946378095154"
+          ]
+        },
+        {
+          "page_url": "https://mylife.enfield.gov.uk/home/index",
+          "detected_links": [
+            "http://www.facebook.com/pages/Enfield-Council/252946378095154"
+          ]
+        },
+        {
           "page_url": "https://mymaps.walsall.gov.uk/",
           "detected_links": [
             "https://www.facebook.com/Our-Walsall-281925178567"
@@ -321338,6 +321477,24 @@
           "page_url": "https://newark-sherwooddc.gov.uk/report/",
           "detected_links": [
             "https://www.facebook.com/NSDCouncil/"
+          ]
+        },
+        {
+          "page_url": "https://newenttowncouncil.gov.uk/",
+          "detected_links": [
+            "https://www.facebook.com/Newent-Town-Council-147707619127917/"
+          ]
+        },
+        {
+          "page_url": "https://newenttowncouncil.gov.uk/contact-us/",
+          "detected_links": [
+            "https://www.facebook.com/Newent-Town-Council-147707619127917/"
+          ]
+        },
+        {
+          "page_url": "https://newenttowncouncil.gov.uk/local-attractions/",
+          "detected_links": [
+            "https://www.facebook.com/Newent-Town-Council-147707619127917/"
           ]
         },
         {
@@ -322306,6 +322463,12 @@
           ]
         },
         {
+          "page_url": "https://openportal.broxtowe.gov.uk/",
+          "detected_links": [
+            "https://www.facebook.com/broxtoweboroughcouncil"
+          ]
+        },
+        {
           "page_url": "https://oracle.wiltshire.gov.uk/",
           "detected_links": [
             "https://www.facebook.com/WiltshireCouncil"
@@ -323051,6 +323214,24 @@
           ]
         },
         {
+          "page_url": "https://planning.stockport.gov.uk/",
+          "detected_links": [
+            "https://www.facebook.com/StockportMBC"
+          ]
+        },
+        {
+          "page_url": "https://planning.stockport.gov.uk/PlanningData-live/search.do?action=simple&searchType=Appeal",
+          "detected_links": [
+            "https://www.facebook.com/StockportMBC"
+          ]
+        },
+        {
+          "page_url": "https://planning.stockport.gov.uk/PlanningData-live/search.do?action=weeklyList",
+          "detected_links": [
+            "https://www.facebook.com/StockportMBC"
+          ]
+        },
+        {
           "page_url": "https://planning.wealden.gov.uk/",
           "detected_links": [
             "https://www.facebook.com/wealden"
@@ -323347,6 +323528,12 @@
           "page_url": "https://practice.jobs.nhs.scot/jobdetailpage/?id=13762",
           "detected_links": [
             "https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fnhsscotlandrecruitment.azurewebsites.net%2F_Details.aspx?vacNo={{id}}"
+          ]
+        },
+        {
+          "page_url": "https://prentismedicalcentre.nhs.uk/",
+          "detected_links": [
+            "https://www.facebook.com/PrentisMedicalCentreNHS/"
           ]
         },
         {
@@ -353311,6 +353498,9 @@
           "page_url": "https://museums.calderdale.gov.uk/",
           "detected_links": [
             "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fmuseums.calderdale.gov.uk%2Fevent-details%2Ffashion-extremes-2026-12-19-10-00",
+            "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fmuseums.calderdale.gov.uk%2Fevent-details%2Fspringtime-easter-wreaths-2026-04-08-10-00",
+            "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fmuseums.calderdale.gov.uk%2Fevent-details%2Fgeorgian-medicine-at-shibden-hall",
+            "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fmuseums.calderdale.gov.uk%2Fevent-details%2Fvintage-sewing-machines-attachments-hemmers-and-braiders-2026-04-17-10-30",
             "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fmuseums.calderdale.gov.uk%2Fevent-details%2Feaster-egg-pom-poms-2026-04-01-10-00",
             "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fmuseums.calderdale.gov.uk%2Fevent-details%2Fsaturday-family-art-club-2026-04-04-10-30",
             "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fmuseums.calderdale.gov.uk%2Fevent-details%2Feaster-craft-2026-04-07-10-00"
@@ -354061,6 +354251,24 @@
           "page_url": "https://onenhsfinance.nhs.uk/the-finance-innovation-forum/",
           "detected_links": [
             "https://www.linkedin.com/company/onenhsfinance/"
+          ]
+        },
+        {
+          "page_url": "https://online.royalpapworth.nhs.uk/",
+          "detected_links": [
+            "https://www.linkedin.com/company/royalpapworth-ppd/"
+          ]
+        },
+        {
+          "page_url": "https://online.royalpapworth.nhs.uk/event/national-ild-preceptorship-2025/",
+          "detected_links": [
+            "https://www.linkedin.com/company/royalpapworth-ppd/"
+          ]
+        },
+        {
+          "page_url": "https://online.royalpapworth.nhs.uk/events",
+          "detected_links": [
+            "https://www.linkedin.com/company/royalpapworth-ppd/"
           ]
         },
         {
