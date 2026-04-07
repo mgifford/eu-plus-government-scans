@@ -7,7 +7,7 @@ from unittest.mock import AsyncMock, Mock, patch
 import httpx
 import pytest
 
-from src.services.tech_detector import TechDetectionResult, TechDetector
+from src.services.tech_detector import TechDetector
 
 
 @pytest.mark.asyncio
@@ -125,8 +125,8 @@ async def test_detect_url_too_many_redirects():
 
 
 @pytest.mark.asyncio
-async def test_detect_urls_batch():
-    """Test batch technology detection."""
+async def test_detect_urls_batch_no_delay():
+    """Test batch technology detection without rate-limit delay."""
     detector = TechDetector(timeout_seconds=10)
 
     urls = [
