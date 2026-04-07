@@ -14,8 +14,10 @@ import argparse
 import json
 import sqlite3
 import sys
+from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import urlparse
 
 from src.lib.country_utils import country_filename_to_code
 from src.lib.settings import load_settings
@@ -107,6 +109,174 @@ def _query_by_country(conn: sqlite3.Connection) -> list[dict]:
     return [dict(r) for r in rows]
 
 
+def _parse_json_text_list(raw_value: str | None) -> list[str]:
+    """Return a deduplicated list of strings parsed from JSON text."""
+    if not raw_value:
+        return []
+    try:
+        parsed = json.loads(raw_value)
+    except json.JSONDecodeError:
+        return []
+    if not isinstance(parsed, list):
+        return []
+
+    values: list[str] = []
+    for item in parsed:
+        if not isinstance(item, str) or not item:
+            continue
+        if item not in values:
+            values.append(item)
+    return values
+
+
+def _hostname_from_url(url: str) -> str:
+    """Return the hostname portion of a URL, or an empty string on failure."""
+    try:
+        return urlparse(url).hostname or ""
+    except ValueError:
+        return ""
+
+
+def _initial_page_record(row: sqlite3.Row) -> dict[str, object]:
+    """Return the initial aggregate page record for a query row."""
+    url = row["url"]
+    return {
+        "url": url,
+        "domain": _hostname_from_url(url),
+        "is_reachable": bool(row["is_reachable"]),
+        "has_statement": bool(row["has_statement"]),
+        "found_in_footer": bool(row["found_in_footer"]),
+        "statement_links": _parse_json_text_list(row["statement_links"]),
+        "matched_terms": _parse_json_text_list(row["matched_terms"]),
+        "error_message": row["error_message"] or "",
+        "last_scanned": row["scanned_at"],
+    }
+
+
+def _merge_page_record(page_record: dict[str, object], row: sqlite3.Row) -> None:
+    """Merge another scan row for the same page into *page_record*."""
+    page_record["is_reachable"] = bool(page_record["is_reachable"]) or bool(row["is_reachable"])
+    page_record["has_statement"] = bool(page_record["has_statement"]) or bool(row["has_statement"])
+    page_record["found_in_footer"] = bool(page_record["found_in_footer"]) or bool(row["found_in_footer"])
+
+    statement_links = page_record["statement_links"]
+    for link in _parse_json_text_list(row["statement_links"]):
+        if link not in statement_links:
+            statement_links.append(link)
+
+    matched_terms = page_record["matched_terms"]
+    for term in _parse_json_text_list(row["matched_terms"]):
+        if term not in matched_terms:
+            matched_terms.append(term)
+
+    error_message = row["error_message"] or ""
+    if error_message:
+        page_record["error_message"] = error_message
+
+    scanned_at = row["scanned_at"]
+    if scanned_at and (
+        not page_record["last_scanned"]
+        or str(scanned_at) > str(page_record["last_scanned"])
+    ):
+        page_record["last_scanned"] = scanned_at
+
+
+def _categorize_page_records(
+    page_records: list[dict[str, object]],
+) -> tuple[list[dict[str, object]], list[dict[str, object]], list[dict[str, object]]]:
+    """Return page records split into with-statement, without, and unreachable."""
+    with_statement: list[dict[str, object]] = []
+    without_statement: list[dict[str, object]] = []
+    unreachable: list[dict[str, object]] = []
+
+    for record in page_records:
+        if record["has_statement"]:
+            with_statement.append(record)
+        elif record["is_reachable"]:
+            without_statement.append(record)
+        else:
+            unreachable.append(record)
+
+    return with_statement, without_statement, unreachable
+
+
+def _summarize_domains(page_records: list[dict[str, object]]) -> list[dict[str, object]]:
+    """Return per-domain accessibility counts for a country's page records."""
+    domains: dict[str, dict[str, object]] = defaultdict(
+        lambda: {
+            "domain": "",
+            "total_pages": 0,
+            "reachable_pages": 0,
+            "has_statement_pages": 0,
+            "no_statement_pages": 0,
+            "found_in_footer_pages": 0,
+            "unreachable_pages": 0,
+        }
+    )
+
+    for record in page_records:
+        domain = str(record["domain"] or "")
+        if not domain:
+            continue
+        summary = domains[domain]
+        summary["domain"] = domain
+        summary["total_pages"] += 1
+        if record["is_reachable"]:
+            summary["reachable_pages"] += 1
+        else:
+            summary["unreachable_pages"] += 1
+        if record["has_statement"]:
+            summary["has_statement_pages"] += 1
+        elif record["is_reachable"]:
+            summary["no_statement_pages"] += 1
+        if record["found_in_footer"]:
+            summary["found_in_footer_pages"] += 1
+
+    return sorted(domains.values(), key=lambda item: str(item["domain"]))
+
+
+def _query_country_detail(conn: sqlite3.Connection) -> dict[str, dict[str, object]]:
+    """Return per-country page and domain detail for accessibility evidence."""
+    rows = conn.execute(
+        """
+        SELECT
+            country_code,
+            url,
+            is_reachable,
+            has_statement,
+            found_in_footer,
+            statement_links,
+            matched_terms,
+            error_message,
+            scanned_at
+        FROM url_accessibility_results
+        ORDER BY country_code, url, scanned_at DESC
+        """
+    ).fetchall()
+
+    countries: dict[str, dict[str, dict[str, object]]] = {}
+    for row in rows:
+        country_code = row["country_code"]
+        pages = countries.setdefault(country_code, {})
+        page_record = pages.get(row["url"])
+        if page_record is None:
+            pages[row["url"]] = _initial_page_record(row)
+            continue
+        _merge_page_record(page_record, row)
+
+    details: dict[str, dict[str, object]] = {}
+    for country_code, pages in sorted(countries.items()):
+        page_records = sorted(pages.values(), key=lambda item: str(item["url"]))
+        with_statement, without_statement, unreachable = _categorize_page_records(page_records)
+        details[country_code] = {
+            "pages_with_statement": with_statement,
+            "pages_without_statement": without_statement,
+            "unreachable_pages": unreachable,
+            "domains": _summarize_domains(page_records),
+        }
+    return details
+
+
 # ---------------------------------------------------------------------------
 # Stats block builder
 # ---------------------------------------------------------------------------
@@ -191,6 +361,10 @@ def _build_stats_block(
         "",
         "📥 Machine-readable results: "
         "[accessibility-data.json](accessibility-data.json)",
+        "",
+        "Each country entry in the JSON file includes page-level evidence for "
+        "pages with and without accessibility statements, plus a per-domain "
+        "summary you can share to validate the published counts.",
     ]
 
     # Per-country breakdown table
@@ -272,12 +446,14 @@ def generate_accessibility_report(
     if not db_path.exists():
         summary: dict = {}
         by_country: list[dict] = []
+        country_detail: dict[str, dict[str, object]] = {}
     else:
         conn = sqlite3.connect(db_path)
         conn.row_factory = sqlite3.Row
         try:
             summary = _query_summary(conn)
             by_country = _query_by_country(conn)
+            country_detail = _query_country_detail(conn)
         finally:
             conn.close()
 
@@ -299,6 +475,7 @@ def generate_accessibility_report(
             "last_scan": summary.get("last_scan"),
         },
         "by_country": by_country,
+        "country_detail": country_detail,
     }
     data_path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"Data file written: {data_path}")
