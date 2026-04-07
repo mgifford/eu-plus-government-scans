@@ -131,6 +131,7 @@ body {
   display: flex;
   gap: 0.75rem;
   justify-content: flex-end;
+  margin-left: auto;
 }
 
 .site-title,
@@ -162,11 +163,10 @@ body {
   cursor: pointer;
   display: inline-flex;
   font: inherit;
-  gap: 0.55rem;
   justify-content: center;
   min-height: 2.75rem;
   min-width: 2.75rem;
-  padding: 0.55rem 0.9rem;
+  padding: 0.55rem;
   transition: background-color 160ms ease, border-color 160ms ease,
     color 160ms ease, box-shadow 160ms ease;
 }
@@ -182,26 +182,18 @@ body {
 }
 
 .theme-toggle__glyph {
-  display: inline-flex;
-  font-size: 1rem;
+  display: none;
+  font-size: 1.15rem;
   line-height: 1;
 }
 
-.theme-toggle__glyph--sun {
-  display: none;
+.theme-toggle[data-theme="light"] .theme-toggle__glyph--moon,
+.theme-toggle:not([data-theme]) .theme-toggle__glyph--moon {
+  display: inline-flex;
 }
 
 .theme-toggle[data-theme="dark"] .theme-toggle__glyph--sun {
   display: inline-flex;
-}
-
-.theme-toggle[data-theme="dark"] .theme-toggle__glyph--moon {
-  display: none;
-}
-
-.theme-toggle__label {
-  font-size: 0.95rem;
-  font-weight: 600;
 }
 
 .site-nav .page-link,
@@ -542,12 +534,14 @@ th {
 @media (max-width: 899px) {
   .site-header-inner {
     align-items: flex-start;
-    flex-direction: column;
+    flex-wrap: wrap;
     padding-bottom: 0.6rem;
     padding-top: 0.6rem;
   }
 
   .site-header-actions {
+    align-items: flex-start;
+    justify-content: space-between;
     width: 100%;
   }
 
