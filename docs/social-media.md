@@ -8,11 +8,11 @@ layout: page
 <div id="sm-tier-pie-container" style="float:right;margin:0 0 1rem 1.5rem;width:260px;max-width:45%;">
 <svg role="img" aria-labelledby="pie-title pie-desc" viewBox="0 0 240 314" width="240" height="314" xmlns="http://www.w3.org/2000/svg">
 <title id="pie-title">Social media tier distribution</title>
-<desc id="pie-desc">Pie chart: social media tier distribution across 82,714 scanned pages. Legacy only: 26,884 (32.5%), Modern only: 1,496 (1.8%), Mixed: 4,156 (5.0%), No Social: 52,061 (62.9%)</desc>
-<path d="M 120,110 L 120.000,20.000 A 90,90 0 0,1 201.959,147.185 Z" fill="#1a8cd8" stroke="#fff" stroke-width="1"><title>Twitter/X only: 26,884 (31.8%)</title></path>
-<path d="M 120,110 L 201.959,147.185 A 90,90 0 0,1 197.330,156.044 Z" fill="#0085ff" stroke="#fff" stroke-width="1"><title>Modern only: 1,496 (1.8%)</title></path>
-<path d="M 120,110 L 197.330,156.044 A 90,90 0 0,1 179.688,177.360 Z" fill="#7856ff" stroke="#fff" stroke-width="1"><title>Mixed: 4,156 (4.9%)</title></path>
-<path d="M 120,110 L 179.688,177.360 A 90,90 0 1,1 120.000,20.000 Z" fill="#cccccc" stroke="#fff" stroke-width="1"><title>No Social: 52,061 (61.5%)</title></path>
+<desc id="pie-desc">Pie chart: social media tier distribution across 82,714 scanned pages. Legacy only: 26,886 (32.5%), Modern only: 1,496 (1.8%), Mixed: 4,156 (5.0%), No Social: 52,074 (63.0%)</desc>
+<path d="M 120,110 L 120.000,20.000 A 90,90 0 0,1 201.967,147.168 Z" fill="#1a8cd8" stroke="#fff" stroke-width="1"><title>Twitter/X only: 26,886 (31.8%)</title></path>
+<path d="M 120,110 L 201.967,147.168 A 90,90 0 0,1 197.341,156.026 Z" fill="#0085ff" stroke="#fff" stroke-width="1"><title>Modern only: 1,496 (1.8%)</title></path>
+<path d="M 120,110 L 197.341,156.026 A 90,90 0 0,1 179.706,177.343 Z" fill="#7856ff" stroke="#fff" stroke-width="1"><title>Mixed: 4,156 (4.9%)</title></path>
+<path d="M 120,110 L 179.706,177.343 A 90,90 0 1,1 120.000,20.000 Z" fill="#cccccc" stroke="#fff" stroke-width="1"><title>No Social: 52,074 (61.5%)</title></path>
 <rect x="20" y="216" width="14" height="14" fill="#1a8cd8"/>
 <text x="40" y="227" font-size="11" font-family="sans-serif" fill="#333">Twitter/X only (31.8%)</text>
 <rect x="20" y="238" width="14" height="14" fill="#0085ff"/>
@@ -25,21 +25,21 @@ layout: page
 <p style="text-align:center;font-size:0.75em;margin:0.3rem 0 0;color:#555;font-style:italic;">Social media tier distribution</p>
 </div>
 
-_Stats as of 2026-04-07 22:11 UTC — last scan: 2026-04-07_
+_Stats as of 2026-04-07 22:20 UTC — last scan: 2026-04-07_
 
-**175** scan batches run
+**176** scan batches run
 
 **82,714** of **82,714** available pages scanned (**100.0%** coverage)
-**77,240** of **82,714** scanned pages were reachable (**93.4%**)
+**77,242** of **82,714** scanned pages were reachable (**93.4%**)
 
 **Legacy social media** (older, centralised platforms):
 
 | Platform | Pages with link | % of scanned | % of reachable |
 |----------|----------------|:------------:|:--------------:|
-| 🐦 Twitter | **14,538** | 17.6% | 18.8% |
+| 🐦 Twitter | **14,540** | 17.6% | 18.8% |
 | ✖ X | **3,295** | 4.0% | 4.3% |
-| 👍 Facebook | **26,069** | 31.5% | 33.8% |
-| 💼 LinkedIn | **9,093** | 11.0% | 11.8% |
+| 👍 Facebook | **26,071** | 31.5% | 33.8% |
+| 💼 LinkedIn | **9,095** | 11.0% | 11.8% |
 
 **Modern / open social media** (decentralised or open platforms):
 
@@ -83,7 +83,7 @@ Countries ranked by **Digital Sovereignty Score** — the percentage of reachabl
 | 21 | SWITZERLAND | 77.9% | 1,565 | 56 | 32.9% | 🥉 Growing |
 | 22 | FINLAND | 77.9% | 132 | 2 | 39.5% | 🥉 Growing |
 | 23 | NETHERLANDS | 76.8% | 644 | 54 | 38.6% | 🥉 Growing |
-| 24 | FRANCE | 75.8% | 6,950 | 213 | 35.7% | 🥉 Growing |
+| 24 | FRANCE | 75.9% | 6,963 | 213 | 35.8% | 🥉 Growing |
 | 25 | PORTUGAL | 71.5% | 2,039 | 57 | 40.6% | 🥉 Growing |
 | 26 | POLAND | 63.9% | 8,575 | 301 | 48.4% | 🥉 Growing |
 | 27 | IRELAND | 63.9% | 293 | 25 | 50.4% | 🥉 Growing |
@@ -108,7 +108,7 @@ Countries ranked by **Digital Sovereignty Score** — the percentage of reachabl
 | DENMARK | 1,521 | 1,521 | 1,503 | 87.6% | 1,307 | 557 | 176 | 21 | 483 | 339 | 10 | 27 | 17 | 13 | Mar 2026 – Apr 2026 |
 | ESTONIA | 396 | 396 | 389 | 82.3% | 298 | 180 | 67 | 2 | 204 | 65 | 22 | 25 | 0 | 27 | Mar 2026 – Apr 2026 |
 | FINLAND | 180 | 180 | 172 | 77.9% | 132 | 64 | 28 | 13 | 51 | 57 | 2 | 4 | 2 | 2 | Mar 2026 – Apr 2026 |
-| FRANCE | 10,007 | 10,007 | 9,455 | 75.8% | 6,950 | 2,833 | 1,819 | 636 | 2,730 | 1,687 | 213 | 546 | 126 | 505 | Mar 2026 – Apr 2026 |
+| FRANCE | 10,007 | 10,007 | 9,457 | 75.9% | 6,963 | 2,835 | 1,821 | 636 | 2,732 | 1,689 | 213 | 546 | 126 | 505 | Mar 2026 – Apr 2026 |
 | GERMANY | 6,555 | 6,555 | 6,472 | 80.3% | 4,894 | 1,452 | 1,173 | 174 | 1,090 | 421 | 301 | 364 | 124 | 449 | Mar 2026 – Apr 2026 |
 | GREECE | 1,748 | 1,748 | 1,628 | 83.9% | 1,325 | 447 | 236 | 60 | 497 | 116 | 41 | 100 | 0 | 103 | Mar 2026 – Apr 2026 |
 | HUNGARY | 390 | 390 | 366 | 92.1% | 317 | 124 | 29 | 0 | 143 | 12 | 20 | 23 | 0 | 25 | Mar 2026 – Apr 2026 |
@@ -131,7 +131,7 @@ Countries ranked by **Digital Sovereignty Score** — the percentage of reachabl
 | SWEDEN | 1,558 | 1,558 | 1,487 | 92.5% | 1,362 | 477 | 92 | 24 | 443 | 337 | 14 | 35 | 11 | 25 | Mar 2026 – Apr 2026 |
 | SWITZERLAND | 2,117 | 2,117 | 2,082 | 77.9% | 1,565 | 557 | 239 | 215 | 256 | 525 | 56 | 128 | 56 | 114 | Mar 2026 – Apr 2026 |
 | UNITED_KINGDOM_UK | 19,502 | 19,502 | 18,741 | 61.3% | 11,459 | 6,624 | 4,152 | 990 | 6,516 | 2,481 | 37 | 700 | 117 | 668 | Mar 2026 – Apr 2026 |
-| **Total** | **82,714** | **82,714** | **77,240** | **69.3%** | **52,061** | **26,884** | **14,538** | **3,295** | **26,069** | **9,093** | **1,496** | **4,156** | **626** | **4,273** | — |
+| **Total** | **82,714** | **82,714** | **77,242** | **69.4%** | **52,074** | **26,886** | **14,540** | **3,295** | **26,071** | **9,095** | **1,496** | **4,156** | **626** | **4,273** | — |
 
 > Hover or focus any non-zero platform count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and platform from [social-media-data.json](social-media-data.json).
 
