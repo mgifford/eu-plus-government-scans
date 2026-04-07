@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-04-07 10:47 UTC",
+  "generated_at": "2026-04-07 12:22 UTC",
   "summary": {
-    "total_batches": 97,
+    "total_batches": 92,
     "total_scanned": 3235,
-    "total_reachable": 3070,
+    "total_reachable": 3069,
     "urls_with_scripts": 1415,
     "total_available": 82714,
     "identified_service_loads": 1536,
     "unique_services": 17,
     "unique_categories": 12,
     "first_scan": "2026-03-25T19:05:00.893544+00:00",
-    "last_scan": "2026-04-07T08:56:45.137859+00:00"
+    "last_scan": "2026-04-06T14:34:52.241574+00:00"
   },
   "top_services": [
     {
@@ -19,7 +19,7 @@
     },
     {
       "name": "Google Analytics (GA4)",
-      "loads": 231
+      "loads": 232
     },
     {
       "name": "unpkg CDN",
@@ -39,7 +39,7 @@
     },
     {
       "name": "Google Tag Manager",
-      "loads": 108
+      "loads": 107
     },
     {
       "name": "jQuery",
@@ -89,7 +89,7 @@
     },
     {
       "name": "Analytics",
-      "loads": 257
+      "loads": 258
     },
     {
       "name": "JavaScript Library",
@@ -105,7 +105,7 @@
     },
     {
       "name": "Tag Manager",
-      "loads": 108
+      "loads": 107
     },
     {
       "name": "Cookie Consent",
@@ -139,7 +139,7 @@
       "reachable": 787,
       "urls_with_scripts": 264,
       "first_scan": "2026-03-25T19:05:00.893544+00:00",
-      "last_scan": "2026-04-07T07:37:09.333736+00:00",
+      "last_scan": "2026-04-06T13:12:10.175788+00:00",
       "identified_service_loads": 44
     },
     {
@@ -148,8 +148,8 @@
       "reachable": 1230,
       "urls_with_scripts": 637,
       "first_scan": "2026-03-25T19:34:18.560097+00:00",
-      "last_scan": "2026-04-07T08:24:38.857774+00:00",
-      "identified_service_loads": 718
+      "last_scan": "2026-04-06T13:55:16.196007+00:00",
+      "identified_service_loads": 717
     },
     {
       "country_code": "BULGARIA",
@@ -157,7 +157,7 @@
       "reachable": 269,
       "urls_with_scripts": 107,
       "first_scan": "2026-03-25T20:36:42.574216+00:00",
-      "last_scan": "2026-04-07T08:37:48.690821+00:00",
+      "last_scan": "2026-04-06T14:08:15.479814+00:00",
       "identified_service_loads": 120
     },
     {
@@ -166,16 +166,16 @@
       "reachable": 232,
       "urls_with_scripts": 120,
       "first_scan": "2026-03-26T02:31:48.618141+00:00",
-      "last_scan": "2026-04-07T08:46:37.394626+00:00",
-      "identified_service_loads": 166
+      "last_scan": "2026-04-06T14:17:15.179614+00:00",
+      "identified_service_loads": 167
     },
     {
       "country_code": "CZECHIA",
       "total_scanned": 581,
-      "reachable": 552,
+      "reachable": 551,
       "urls_with_scripts": 287,
       "first_scan": "2026-03-26T02:40:50.796344+00:00",
-      "last_scan": "2026-04-07T08:56:45.137859+00:00",
+      "last_scan": "2026-04-06T14:34:52.241574+00:00",
       "identified_service_loads": 488
     }
   ]
