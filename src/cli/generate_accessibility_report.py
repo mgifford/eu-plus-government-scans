@@ -5,7 +5,9 @@ and updates ``docs/accessibility-statements.md`` with a live stats block
 between ``<!-- ACCESSIBILITY_STATS_START -->`` and
 ``<!-- ACCESSIBILITY_STATS_END -->`` markers.  A summary JSON data file
 (``docs/accessibility-data.json``) is also written so that external tools
-and the page itself can link directly to the machine-readable results.
+can access the machine-readable results.  This file is uploaded as a workflow
+artifact rather than committed to the repository (it can exceed GitHub's
+100 MB file-size limit at scale).
 """
 
 from __future__ import annotations
@@ -359,8 +361,10 @@ def _build_stats_block(
         f"**{in_footer:,}** pages have the statement link in the footer "
         f"(**{_pct(in_footer, has_statement)}** of pages with a statement)",
         "",
-        "📥 Machine-readable results: "
-        "[accessibility-data.json](accessibility-data.json)",
+        "📥 Machine-readable results are available as the "
+        "`accessibility-data.json` artifact in the "
+        "[latest Generate Scan Progress Report workflow run]"
+        "(https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).",
         "",
         "Each country entry in the JSON file includes page-level evidence for "
         "pages with and without accessibility statements, plus a per-domain "
@@ -368,8 +372,10 @@ def _build_stats_block(
         "",
         "> Hover or focus any non-zero count in the country table to preview the "
         "matching pages. If there are 20 or fewer URLs, the preview shows all of "
-        "them; otherwise it shows a short sample and lets you download the full "
-        "CSV from [accessibility-data.json](accessibility-data.json).",
+        "them; otherwise it shows a short sample. Full machine-readable data is "
+        "available as the `accessibility-data.json` artifact in the "
+        "[latest workflow run]"
+        "(https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).",
     ]
 
     # Per-country breakdown table

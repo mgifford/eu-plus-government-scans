@@ -923,8 +923,8 @@ def test_build_stats_block_includes_drilldown_instructions(populated_db: Path):
     block = _build_stats_block(summary, "2024-06-01 12:00 UTC", by_country=by_country)
 
     assert "Hover or focus any non-zero country-table count" in block
-    assert "download a CSV" in block
     assert "social-media-data.json" in block
+    assert "artifact" in block
 
 
 def test_generate_social_media_report_writes_platform_drilldowns(
