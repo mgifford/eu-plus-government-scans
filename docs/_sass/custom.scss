@@ -1,8 +1,4 @@
----
----
-
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700;800&display=swap");
-@import "minima";
 
 :root {
   --ca-red: #d83933;
@@ -163,10 +159,10 @@ body {
   color: var(--color-text);
   cursor: pointer;
   display: inline-flex;
-  font: inherit;
-  justify-content: center;
   flex: 0 0 auto;
+  font: inherit;
   height: 2.75rem;
+  justify-content: center;
   margin-left: auto;
   padding: 0;
   transition: background-color 160ms ease, border-color 160ms ease,
@@ -354,12 +350,12 @@ th {
 .page-content,
 .home {
   table {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     border-collapse: collapse;
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    width: 100%;
   }
 }
 
@@ -610,7 +606,21 @@ blockquote a:focus-visible {
 @media print {
   .site-header,
   .site-footer,
-  .site-nav {
-    display: none;
+  .theme-toggle,
+  .site-nav,
+  .table-drilldown__panel,
+  .table-drilldown__download {
+    display: none !important;
+  }
+
+  body {
+    background: #ffffff;
+    color: #000000;
+  }
+
+  a,
+  a:visited {
+    color: #000000;
+    text-decoration: underline;
   }
 }
