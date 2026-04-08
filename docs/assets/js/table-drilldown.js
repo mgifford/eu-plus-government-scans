@@ -275,6 +275,9 @@
 
   function init() {
     var tableEntries = findDrilldownTables();
+    enhanceScrollableTables();
+    window.addEventListener("resize", enhanceScrollableTables);
+
     if (!tableEntries.length) {
       return;
     }
@@ -304,6 +307,37 @@
 
     document.addEventListener("click", handleDocumentClick);
     document.addEventListener("keydown", handleDocumentKeydown);
+  }
+
+  function enhanceScrollableTables() {
+    document.querySelectorAll("table").forEach(function (table) {
+      var isScrollable = table.scrollWidth > table.clientWidth + 1;
+      if (isScrollable) {
+        table.setAttribute("tabindex", "0");
+        if (!table.hasAttribute("aria-label")) {
+          var heading = findTableHeading(table);
+          if (heading) {
+            table.setAttribute("aria-label", heading + " table");
+          }
+        }
+      } else {
+        table.removeAttribute("tabindex");
+        if (table.getAttribute("aria-label") && / table$/.test(table.getAttribute("aria-label"))) {
+          table.removeAttribute("aria-label");
+        }
+      }
+    });
+  }
+
+  function findTableHeading(table) {
+    var element = table.previousElementSibling;
+    while (element) {
+      if (/^H[1-6]$/.test(element.tagName)) {
+        return element.textContent.trim();
+      }
+      element = element.previousElementSibling;
+    }
+    return "";
   }
 
   function loadDrilldownData(dataFile) {

@@ -16,6 +16,10 @@
 __pycache__/
 *.pyc
 node_modules/
+.bundle/
+vendor/bundle/
+_site/
+_site_local/
 
 # Generated data files
 data/metadata.db
