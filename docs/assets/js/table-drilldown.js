@@ -24,6 +24,14 @@
     Valid: "URLs with at least one valid validation result",
     Invalid: "URLs with at least one invalid validation result",
   };
+  var SOCIAL_METRIC_KEYS = {
+    Scanned: "scanned",
+    Reachable: "reachable",
+    "No Social": "no_social",
+    "Legacy-only": "legacy_only",
+    Modern: "modern",
+    Mixed: "mixed",
+  };
   var TABLE_CONFIGS = [
     {
       id: "social",
@@ -37,21 +45,77 @@
         });
       },
       getDataset: function (data) {
-        return data && data.platform_drilldowns;
+        return data || null;
       },
       getColumns: function (headers) {
         var columns = [];
         headers.forEach(function (label, index) {
+          if (SOCIAL_METRIC_KEYS[label]) {
+            columns.push({ index: index, label: label, key: SOCIAL_METRIC_KEYS[label], type: "metric" });
+          }
           if (PLATFORM_KEYS[label]) {
-            columns.push({ index: index, label: label, key: PLATFORM_KEYS[label] });
+            columns.push({ index: index, label: label, key: PLATFORM_KEYS[label], type: "platform" });
           }
         });
         return columns;
       },
       getRecords: function (dataset, country, column) {
-        return (dataset[country] && dataset[country][column.key]) || [];
+        if (column.type === "platform") {
+          return (dataset.platform_drilldowns && dataset.platform_drilldowns[country] &&
+            dataset.platform_drilldowns[country][column.key]) || [];
+        }
+        return (dataset.metric_drilldowns && dataset.metric_drilldowns[country] &&
+          dataset.metric_drilldowns[country][column.key]) || [];
       },
       buildContext: function (country, column, count, records) {
+        if (column.type === "metric") {
+          return {
+            availableCount: records.length,
+            label: column.label,
+            panelLabel: column.label + " pages for " + country,
+            title: column.label + ": " + count.toLocaleString() + " pages in " + country,
+            description: buildSocialMetricDescription(country, column.label, records.length),
+            items: records.map(function (record) {
+              return {
+                href: record.page_url,
+                label: record.page_url,
+                meta: buildSocialMetricMeta(record),
+              };
+            }),
+            csvHeaders: [
+              "country",
+              "metric",
+              "page_url",
+              "is_reachable",
+              "social_tier",
+              "twitter_links",
+              "x_links",
+              "facebook_links",
+              "linkedin_links",
+              "bluesky_links",
+              "mastodon_links",
+              "last_scanned",
+            ],
+            csvRows: records.map(function (record) {
+              return [
+                country,
+                column.label,
+                record.page_url,
+                record.is_reachable ? "true" : "false",
+                record.social_tier || "",
+                joinPlatformLinks(record, "twitter"),
+                joinPlatformLinks(record, "x"),
+                joinPlatformLinks(record, "facebook"),
+                joinPlatformLinks(record, "linkedin"),
+                joinPlatformLinks(record, "bluesky"),
+                joinPlatformLinks(record, "mastodon"),
+                record.last_scanned || "",
+              ];
+            }),
+            slug: country + "-" + column.label + "-social",
+            titleAttribute: "Preview " + column.label + " pages for " + country,
+          };
+        }
         return {
           availableCount: records.length,
           label: column.label,
@@ -84,6 +148,150 @@
           }),
           slug: country + "-" + column.label,
           titleAttribute: "Preview " + column.label + " pages for " + country,
+        };
+      },
+    },
+    {
+      id: "technology",
+      dataFile: "technology-data.json",
+      matchesTable: function (headers) {
+        return (
+          headers.indexOf("Country") !== -1 &&
+          headers.indexOf("URLs Scanned") !== -1 &&
+          headers.indexOf("Pages with Detections") !== -1 &&
+          headers.indexOf("Available") !== -1 &&
+          headers.indexOf("Last Scan") !== -1
+        );
+      },
+      getDataset: function (data) {
+        return data && data.country_drilldowns;
+      },
+      getColumns: function (headers) {
+        return [
+          { label: "URLs Scanned", key: "scanned" },
+          { label: "Pages with Detections", key: "detected" },
+        ]
+          .map(function (column) {
+            var index = headers.indexOf(column.label);
+            return index === -1 ? null : { index: index, label: column.label, key: column.key };
+          })
+          .filter(Boolean);
+      },
+      getRecords: function (dataset, country, column) {
+        return (dataset[country] && dataset[country][column.key]) || [];
+      },
+      buildContext: function (country, column, count, records) {
+        return {
+          availableCount: records.length,
+          label: column.label,
+          panelLabel: column.label + " for " + country,
+          title: column.label + ": " + count.toLocaleString() + " pages in " + country,
+          description: buildTechnologyDescription(country, column.label, records.length),
+          items: records.map(function (record) {
+            return {
+              href: record.page_url,
+              label: record.page_url,
+              meta: buildTechnologyMeta(record),
+            };
+          }),
+          csvHeaders: [
+            "country",
+            "metric",
+            "page_url",
+            "technology_names",
+            "error_message",
+            "last_scanned",
+          ],
+          csvRows: records.map(function (record) {
+            return [
+              country,
+              column.label,
+              record.page_url,
+              (record.technology_names || []).join(" | "),
+              record.error_message || "",
+              record.last_scanned || "",
+            ];
+          }),
+          slug: country + "-" + column.label + "-technology",
+          titleAttribute: "Preview " + column.label + " pages for " + country,
+        };
+      },
+    },
+    {
+      id: "third-party-js",
+      dataFile: "third-party-tools-data.json",
+      matchesTable: function (headers) {
+        return (
+          headers.indexOf("Country") !== -1 &&
+          headers.indexOf("Scanned") !== -1 &&
+          headers.indexOf("Reachable") !== -1 &&
+          headers.indexOf("URLs with 3rd-Party JS") !== -1 &&
+          headers.indexOf("Known Service Loads") !== -1 &&
+          headers.indexOf("Last Scan") !== -1
+        );
+      },
+      getDataset: function (data) {
+        return data && data.country_drilldowns;
+      },
+      getColumns: function (headers) {
+        return [
+          { label: "Scanned", key: "scanned" },
+          { label: "Reachable", key: "reachable" },
+          { label: "URLs with 3rd-Party JS", key: "urls_with_scripts" },
+          { label: "Known Service Loads", key: "service_loads" },
+        ]
+          .map(function (column) {
+            var index = headers.indexOf(column.label);
+            return index === -1 ? null : { index: index, label: column.label, key: column.key };
+          })
+          .filter(Boolean);
+      },
+      getRecords: function (dataset, country, column) {
+        return (dataset[country] && dataset[country][column.key]) || [];
+      },
+      buildContext: function (country, column, count, records) {
+        var isServiceLoad = column.key === "service_loads";
+        return {
+          availableCount: records.length,
+          label: column.label,
+          panelLabel: column.label + " for " + country,
+          title: column.label + ": " + count.toLocaleString() + " records in " + country,
+          description: buildThirdPartyDescription(country, column.label, records.length),
+          items: records.map(function (record) {
+            return {
+              href: record.page_url,
+              label: isServiceLoad ? record.service_name + " on " + record.page_url : record.page_url,
+              meta: buildThirdPartyMeta(record, column.key),
+            };
+          }),
+          csvHeaders: isServiceLoad
+            ? ["country", "metric", "page_url", "service_name", "src", "host", "version", "categories", "last_scanned"]
+            : ["country", "metric", "page_url", "service_names", "script_sources", "last_scanned"],
+          csvRows: records.map(function (record) {
+            if (isServiceLoad) {
+              return [
+                country,
+                column.label,
+                record.page_url,
+                record.service_name || "",
+                record.src || "",
+                record.host || "",
+                record.version || "",
+                (record.categories || []).join(" | "),
+                record.last_scanned || "",
+              ];
+            }
+            return [
+              country,
+              column.label,
+              record.page_url,
+              (record.service_names || []).join(" | "),
+              (record.scripts || []).map(function (script) { return script.src || ""; }).join(" | "),
+              record.last_scanned || "",
+            ];
+          }),
+          slug: country + "-" + column.label + "-third-party",
+          titleAttribute: "Preview " + column.label + " records for " + country,
         };
       },
     },
@@ -654,6 +862,113 @@
     hint.textContent =
       "Hover or focus previews this panel. Activate the number to keep it open and download the full CSV.";
     return hint;
+  }
+
+  function buildSocialMetricDescription(country, label, availableCount) {
+    if (label === "Scanned") {
+      return availableCount.toLocaleString() + " scanned pages in " + country + " are listed here.";
+    }
+    if (label === "Reachable") {
+      return availableCount.toLocaleString() + " reachable pages in " + country + " are listed here.";
+    }
+    if (label === "No Social") {
+      return availableCount.toLocaleString() + " reachable pages in " + country + " had no detected social-media links.";
+    }
+    if (label === "Legacy-only") {
+      return availableCount.toLocaleString() + " pages in " + country + " used only legacy social platforms.";
+    }
+    if (label === "Modern") {
+      return availableCount.toLocaleString() + " pages in " + country + " used only modern/open social platforms.";
+    }
+    if (label === "Mixed") {
+      return availableCount.toLocaleString() + " pages in " + country + " mixed legacy and modern social links.";
+    }
+    return availableCount.toLocaleString() + " social-media records are available for " + country + ".";
+  }
+
+  function buildSocialMetricMeta(record) {
+    var parts = [];
+    if (record.social_tier) {
+      parts.push("Tier: " + record.social_tier);
+    }
+    Object.keys(PLATFORM_KEYS).forEach(function (label) {
+      var platformKey = PLATFORM_KEYS[label];
+      var links = record.links_by_platform && record.links_by_platform[platformKey];
+      if (links && links.length) {
+        parts.push(label + ": " + links[0]);
+      }
+    });
+    if (record.last_scanned) {
+      parts.push("Latest scan: " + record.last_scanned);
+    }
+    return parts.join(" | ");
+  }
+
+  function joinPlatformLinks(record, platformKey) {
+    return record.links_by_platform && record.links_by_platform[platformKey]
+      ? record.links_by_platform[platformKey].join(" | ")
+      : "";
+  }
+
+  function buildTechnologyDescription(country, label, availableCount) {
+    if (label === "URLs Scanned") {
+      return availableCount.toLocaleString() + " scanned pages in " + country + " are listed here.";
+    }
+    if (label === "Pages with Detections") {
+      return availableCount.toLocaleString() + " pages counted in the technology detections column for " + country + " are listed here.";
+    }
+    return availableCount.toLocaleString() + " technology records are available for " + country + ".";
+  }
+
+  function buildTechnologyMeta(record) {
+    var parts = [];
+    if (record.technology_names && record.technology_names.length) {
+      parts.push("Technologies: " + record.technology_names.slice(0, 3).join(", "));
+    } else if (record.error_message) {
+      parts.push("Error: " + record.error_message);
+    } else {
+      parts.push("No technologies identified in saved result");
+    }
+    if (record.last_scanned) {
+      parts.push("Latest scan: " + record.last_scanned);
+    }
+    return parts.join(" | ");
+  }
+
+  function buildThirdPartyDescription(country, label, availableCount) {
+    if (label === "Scanned") {
+      return availableCount.toLocaleString() + " scanned pages in " + country + " are listed here.";
+    }
+    if (label === "Reachable") {
+      return availableCount.toLocaleString() + " reachable pages in " + country + " are listed here.";
+    }
+    if (label === "URLs with 3rd-Party JS") {
+      return availableCount.toLocaleString() + " pages in " + country + " loaded at least one third-party script.";
+    }
+    if (label === "Known Service Loads") {
+      return availableCount.toLocaleString() + " known third-party service loads in " + country + " are listed here.";
+    }
+    return availableCount.toLocaleString() + " third-party records are available for " + country + ".";
+  }
+
+  function buildThirdPartyMeta(record, key) {
+    var parts = [];
+    if (key === "service_loads") {
+      if (record.src) {
+        parts.push("Source: " + record.src);
+      }
+      if (record.categories && record.categories.length) {
+        parts.push("Categories: " + record.categories.join(", "));
+      }
+    } else if (record.service_names && record.service_names.length) {
+      parts.push("Services: " + record.service_names.slice(0, 3).join(", "));
+    } else {
+      parts.push("No known third-party services identified");
+    }
+    if (record.last_scanned) {
+      parts.push("Latest scan: " + record.last_scanned);
+    }
+    return parts.join(" | ");
   }
 
   function buildDownloadButton(context) {

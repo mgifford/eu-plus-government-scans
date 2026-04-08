@@ -13,6 +13,7 @@ from src.cli.generate_third_party_js_report import (
     _aggregate_script_counts,
     _build_stats_block,
     _query_by_country,
+    _query_country_drilldowns,
     _query_script_rows,
     _query_summary,
     generate_third_party_js_report,
@@ -197,6 +198,23 @@ def test_query_by_country_populated_db(populated_db: Path) -> None:
     assert france["reachable"] == 1
 
 
+def test_query_country_drilldowns_populated_db(populated_db: Path) -> None:
+    """Should expose country drilldowns for page and service evidence."""
+    conn = sqlite3.connect(populated_db)
+    conn.row_factory = sqlite3.Row
+    try:
+        rows = _query_country_drilldowns(conn)
+    finally:
+        conn.close()
+
+    assert rows["ICELAND"]["scanned"][0]["page_url"] == "https://example.is/page1"
+    assert rows["ICELAND"]["urls_with_scripts"][0]["service_names"] == [
+        "Google Tag Manager",
+        "OneTrust",
+    ]
+    assert rows["ICELAND"]["service_loads"][0]["service_name"] == "Google Tag Manager"
+
+
 def test_aggregate_script_counts() -> None:
     """Should count known services and categories correctly."""
     rows = [
@@ -291,3 +309,4 @@ def test_generate_third_party_js_report_with_data(
     assert data["summary"]["total_scanned"] == 4
     assert data["summary"]["urls_with_scripts"] == 2
     assert data["top_services"][0]["name"] == "Google Tag Manager"
+    assert data["country_drilldowns"]["ICELAND"]["service_loads"][0]["service_name"] == "Google Tag Manager"

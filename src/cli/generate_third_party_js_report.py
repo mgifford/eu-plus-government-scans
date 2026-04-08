@@ -97,6 +97,105 @@ def _query_by_country(conn: sqlite3.Connection) -> list[dict]:
     return [dict(r) for r in rows]
 
 
+def _parse_scripts(raw_value: str | None) -> list[dict[str, object]]:
+    """Return a normalized third-party script list from JSON text."""
+    if not raw_value:
+        return []
+    try:
+        parsed = json.loads(raw_value)
+    except (json.JSONDecodeError, TypeError):
+        return []
+    if not isinstance(parsed, list):
+        return []
+
+    scripts: list[dict[str, object]] = []
+    for item in parsed:
+        if not isinstance(item, dict):
+            continue
+        categories = item.get("categories")
+        scripts.append(
+            {
+                "src": item.get("src") or "",
+                "host": item.get("host") or "",
+                "service_name": item.get("service_name") or "",
+                "version": item.get("version") or "",
+                "categories": categories if isinstance(categories, list) else [],
+            }
+        )
+    return scripts
+
+
+def _query_country_drilldowns(
+    conn: sqlite3.Connection,
+) -> dict[str, dict[str, list[dict[str, object]]]]:
+    """Return per-country evidence rows for third-party JS report tables."""
+    rows = conn.execute(
+        """
+        SELECT country_code, url, is_reachable, scripts, error_message, scanned_at
+        FROM url_third_party_js_results
+        ORDER BY country_code, url, scanned_at DESC
+        """
+    ).fetchall()
+
+    grouped: dict[str, dict[str, list[dict[str, object]]]] = {}
+    seen_reachable: set[tuple[str, str]] = set()
+    seen_script_pages: set[tuple[str, str]] = set()
+    seen_service_rows: set[tuple[str, str]] = set()
+
+    for row in rows:
+        country_code = row["country_code"]
+        page_url = row["url"]
+        key = (country_code, page_url)
+        country_bucket = grouped.setdefault(
+            country_code,
+            {"scanned": [], "reachable": [], "urls_with_scripts": [], "service_loads": []},
+        )
+        scripts = _parse_scripts(row["scripts"])
+        page_record = {
+            "page_url": page_url,
+            "scripts": scripts,
+            "service_names": [
+                script["service_name"] for script in scripts if script["service_name"]
+            ],
+            "error_message": row["error_message"] or "",
+            "last_scanned": row["scanned_at"] or "",
+        }
+
+        if key not in seen_reachable:
+            country_bucket["scanned"].append(page_record)
+        if key not in seen_reachable and row["is_reachable"]:
+            country_bucket["reachable"].append(page_record)
+            seen_reachable.add(key)
+        elif key not in seen_reachable:
+            seen_reachable.add(key)
+
+        if key not in seen_script_pages and scripts:
+            country_bucket["urls_with_scripts"].append(page_record)
+            seen_script_pages.add(key)
+
+        if key in seen_service_rows or not row["is_reachable"]:
+            continue
+
+        for script in scripts:
+            service_name = script["service_name"]
+            if not service_name:
+                continue
+            country_bucket["service_loads"].append(
+                {
+                    "page_url": page_url,
+                    "service_name": service_name,
+                    "src": script["src"],
+                    "host": script["host"],
+                    "version": script["version"],
+                    "categories": script["categories"],
+                    "last_scanned": row["scanned_at"] or "",
+                }
+            )
+        seen_service_rows.add(key)
+
+    return grouped
+
+
 def _aggregate_script_counts(
     script_rows: list[dict],
 ) -> tuple[Counter, Counter, int]:
@@ -252,7 +351,15 @@ def _build_stats_block(
                 f"| {cc} | {row['total_scanned']:,} | {avail_str} | {row['reachable']:,} | "
                 f"{row.get('urls_with_scripts', 0):,} | {identified_by_country.get(cc, 0):,} | {last} |"
             )
-        lines += ["", "---", ""]
+        lines += [
+            "",
+            "> Hover or focus any non-zero country-table count to preview matching pages. "
+            "Activate the number to keep the preview open and download a CSV for that "
+            "country and metric from [third-party-tools-data.json](third-party-tools-data.json).",
+            "",
+            "---",
+            "",
+        ]
 
     if service_counts:
         lines += [
@@ -299,6 +406,7 @@ def generate_third_party_js_report(
         script_rows: list[dict] = []
         by_country: list[dict] = []
         identified_by_country: dict[str, int] = {}
+        country_drilldowns: dict[str, dict[str, list[dict[str, object]]]] = {}
     else:
         conn = sqlite3.connect(db_path)
         conn.row_factory = sqlite3.Row
@@ -307,6 +415,7 @@ def generate_third_party_js_report(
             script_rows = _query_script_rows(conn)
             by_country = _query_by_country(conn)
             identified_by_country = _query_identified_services_by_country(conn)
+            country_drilldowns = _query_country_drilldowns(conn)
         finally:
             conn.close()
 
@@ -348,6 +457,7 @@ def generate_third_party_js_report(
             }
             for row in by_country
         ],
+        "country_drilldowns": country_drilldowns,
     }
     data_path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"Data file written: {data_path}")
