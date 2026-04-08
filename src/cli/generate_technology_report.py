@@ -105,6 +105,81 @@ def _query_tech_rows(conn: sqlite3.Connection) -> list[dict]:
     return [dict(r) for r in rows]
 
 
+def _parse_technologies(raw_value: str | None) -> list[dict[str, object]]:
+    """Return a normalized technology list from a JSON payload."""
+    if not raw_value:
+        return []
+    try:
+        parsed = json.loads(raw_value)
+    except (json.JSONDecodeError, TypeError):
+        return []
+    if not isinstance(parsed, dict):
+        return []
+
+    technologies: list[dict[str, object]] = []
+    for name in sorted(parsed):
+        info = parsed[name]
+        if not isinstance(info, dict):
+            technologies.append(
+                {"name": name, "categories": [], "versions": []}
+            )
+            continue
+        categories = info.get("categories")
+        versions = info.get("versions")
+        technologies.append(
+            {
+                "name": name,
+                "categories": categories if isinstance(categories, list) else [],
+                "versions": versions if isinstance(versions, list) else [],
+            }
+        )
+    return technologies
+
+
+def _query_country_drilldowns(
+    conn: sqlite3.Connection,
+) -> dict[str, dict[str, list[dict[str, object]]]]:
+    """Return per-country evidence rows for the country table drilldowns."""
+    rows = conn.execute(
+        """
+        SELECT country_code, url, technologies, error_message, scanned_at
+        FROM url_tech_results
+        ORDER BY country_code, url, scanned_at DESC
+        """
+    ).fetchall()
+
+    grouped: dict[str, dict[str, list[dict[str, object]]]] = {}
+    seen_scanned: set[tuple[str, str]] = set()
+    seen_detected: set[tuple[str, str]] = set()
+
+    for row in rows:
+        country_code = row["country_code"]
+        page_url = row["url"]
+        key = (country_code, page_url)
+        country_bucket = grouped.setdefault(
+            country_code,
+            {"scanned": [], "detected": []},
+        )
+        tech_list = _parse_technologies(row["technologies"])
+        record = {
+            "page_url": page_url,
+            "technologies": tech_list,
+            "technology_names": [item["name"] for item in tech_list],
+            "error_message": row["error_message"] or "",
+            "last_scanned": row["scanned_at"] or "",
+        }
+
+        if key not in seen_scanned:
+            country_bucket["scanned"].append(record)
+            seen_scanned.add(key)
+
+        if key not in seen_detected and row["error_message"] is None:
+            country_bucket["detected"].append(record)
+            seen_detected.add(key)
+
+    return grouped
+
+
 def _query_by_country(conn: sqlite3.Connection) -> list[dict]:
     """Return per-country technology scan totals."""
     rows = conn.execute(
@@ -275,7 +350,15 @@ def _build_stats_block(
                 f"| {cc} | {row['total_scanned']:,} | {row['total_detected']:,} "
                 f"| {avail_str} | {last} |"
             )
-        lines += ["", "---", ""]
+        lines += [
+            "",
+            "> Hover or focus any non-zero country-table count to preview matching pages. "
+            "Activate the number to keep the preview open and download a CSV for that "
+            "country and metric from [technology-data.json](technology-data.json).",
+            "",
+            "---",
+            "",
+        ]
 
     # Top technologies table
     if tech_counts:
@@ -341,6 +424,7 @@ def generate_technology_report(
         summary: dict = {}
         tech_rows: list[dict] = []
         by_country: list[dict] = []
+        country_drilldowns: dict[str, dict[str, list[dict[str, object]]]] = {}
     else:
         conn = sqlite3.connect(db_path)
         conn.row_factory = sqlite3.Row
@@ -348,6 +432,7 @@ def generate_technology_report(
             summary = _query_summary(conn)
             tech_rows = _query_tech_rows(conn)
             by_country = _query_by_country(conn)
+            country_drilldowns = _query_country_drilldowns(conn)
         finally:
             conn.close()
 
@@ -389,6 +474,7 @@ def generate_technology_report(
         "top_technologies": top_technologies,
         "top_categories": top_categories,
         "by_country": by_country,
+        "country_drilldowns": country_drilldowns,
     }
     data_path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"Data file written: {data_path}")

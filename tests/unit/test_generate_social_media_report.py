@@ -14,6 +14,7 @@ from src.cli.generate_social_media_report import (
     _enrich_sovereignty_metrics,
     _legacy_exposure,
     _query_by_country,
+    _query_metric_drilldowns_by_country,
     _query_platform_drilldowns_by_country,
     _query_summary,
     _sovereignty_score,
@@ -894,6 +895,21 @@ def test_query_platform_drilldowns_by_country_no_double_counting(
     ]
 
 
+def test_query_metric_drilldowns_by_country_populated_db(populated_db: Path):
+    """Should return evidence rows for social country-table metrics."""
+    conn = sqlite3.connect(populated_db)
+    conn.row_factory = sqlite3.Row
+    try:
+        result = _query_metric_drilldowns_by_country(conn)
+    finally:
+        conn.close()
+
+    assert result["ICELAND"]["scanned"][0]["page_url"] == "https://example.is/page1"
+    assert result["ICELAND"]["reachable"][0]["is_reachable"] is True
+    assert result["ICELAND"]["legacy_only"][0]["social_tier"] == "twitter_only"
+    assert result["ICELAND"]["modern"][0]["social_tier"] == "modern_only"
+
+
 def test_build_stats_block_includes_drilldown_instructions(populated_db: Path):
     """Country table block should explain the hover/focus download workflow."""
     conn = sqlite3.connect(populated_db)
@@ -906,7 +922,7 @@ def test_build_stats_block_includes_drilldown_instructions(populated_db: Path):
 
     block = _build_stats_block(summary, "2024-06-01 12:00 UTC", by_country=by_country)
 
-    assert "Hover or focus any non-zero platform count" in block
+    assert "Hover or focus any non-zero country-table count" in block
     assert "download a CSV" in block
     assert "social-media-data.json" in block
 
@@ -924,10 +940,11 @@ def test_generate_social_media_report_writes_platform_drilldowns(
     assert result is True
     data = json.loads(data_path.read_text())
     assert data["platform_drilldowns"]["ICELAND"]["twitter"][0]["page_url"] == "https://example.is/page1"
+    assert data["metric_drilldowns"]["ICELAND"]["legacy_only"][0]["social_tier"] == "twitter_only"
     assert (
         data["platform_drilldowns"]["ICELAND"]["mastodon"][0]["detected_links"][0]
         == "https://mastodon.social/@gov_is"
     )
 
     content = page_path.read_text()
-    assert "Hover or focus any non-zero platform count" in content
+    assert "Hover or focus any non-zero country-table count" in content

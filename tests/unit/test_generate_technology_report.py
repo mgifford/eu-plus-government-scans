@@ -12,6 +12,7 @@ from src.cli.generate_technology_report import (
     _aggregate_tech_counts,
     _build_stats_block,
     _query_by_country,
+    _query_country_drilldowns,
     _query_summary,
     _query_tech_rows,
     generate_technology_report,
@@ -230,6 +231,20 @@ def test_query_by_country_populated_db(populated_db: Path):
     assert iceland["total_scanned"] == 4    # 4 Iceland URLs
     # page4 has error_message → not detected
     assert iceland["total_detected"] == 3
+
+
+def test_query_country_drilldowns_populated_db(populated_db: Path):
+    """Should expose scanned and detected page evidence by country."""
+    conn = sqlite3.connect(populated_db)
+    conn.row_factory = sqlite3.Row
+    try:
+        rows = _query_country_drilldowns(conn)
+    finally:
+        conn.close()
+
+    assert rows["ICELAND"]["scanned"][0]["page_url"] == "https://example.is/page1"
+    assert rows["ICELAND"]["detected"][0]["technology_names"] == ["Nginx", "WordPress"]
+    assert rows["ICELAND"]["detected"][-1]["technology_names"] == []
 
 
 # ---------------------------------------------------------------------------
@@ -478,11 +493,13 @@ def test_generate_technology_report_json_structure(populated_db: Path, tmp_path:
     assert "top_technologies" in data
     assert "top_categories" in data
     assert "by_country" in data
+    assert "country_drilldowns" in data
 
     summary = data["summary"]
     for key in ("total_batches", "total_scanned", "total_detected",
                 "total_available", "unique_technologies", "unique_categories"):
         assert key in summary, f"Missing key: {key}"
+    assert data["country_drilldowns"]["ICELAND"]["detected"][0]["page_url"] == "https://example.is/page1"
 
 
 def test_generate_technology_report_preserves_page_structure(

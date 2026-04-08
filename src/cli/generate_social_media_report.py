@@ -213,6 +213,89 @@ def _query_platform_drilldowns_by_country(
     return result
 
 
+def _query_metric_drilldowns_by_country(
+    conn: sqlite3.Connection,
+) -> dict[str, dict[str, list[dict[str, object]]]]:
+    """Return per-country drilldowns for social country-table metrics."""
+    column_sql = ", ".join(_PLATFORM_LINK_COLUMNS.values())
+    rows = conn.execute(
+        f"""
+        SELECT
+            country_code,
+            url,
+            is_reachable,
+            social_tier,
+            scanned_at,
+            {column_sql}
+        FROM url_social_media_results
+        ORDER BY country_code, url, scanned_at DESC
+        """
+    ).fetchall()
+
+    grouped: dict[str, dict[str, list[dict[str, object]]]] = {}
+    seen_by_metric: dict[str, set[tuple[str, str]]] = {
+        "scanned": set(),
+        "reachable": set(),
+        "no_social": set(),
+        "legacy_only": set(),
+        "modern": set(),
+        "mixed": set(),
+    }
+
+    for row in rows:
+        country_code = row["country_code"]
+        page_url = row["url"]
+        key = (country_code, page_url)
+        country_bucket = grouped.setdefault(
+            country_code,
+            {
+                "scanned": [],
+                "reachable": [],
+                "no_social": [],
+                "legacy_only": [],
+                "modern": [],
+                "mixed": [],
+            },
+        )
+        links_by_platform = {
+            platform: _parse_link_list(row[column])
+            for platform, column in _PLATFORM_LINK_COLUMNS.items()
+        }
+        record = {
+            "page_url": page_url,
+            "is_reachable": bool(row["is_reachable"]),
+            "social_tier": row["social_tier"] or "",
+            "links_by_platform": links_by_platform,
+            "last_scanned": row["scanned_at"] or "",
+        }
+
+        if key not in seen_by_metric["scanned"]:
+            country_bucket["scanned"].append(record)
+            seen_by_metric["scanned"].add(key)
+
+        if row["is_reachable"] and key not in seen_by_metric["reachable"]:
+            country_bucket["reachable"].append(record)
+            seen_by_metric["reachable"].add(key)
+
+        if row["social_tier"] == "no_social" and key not in seen_by_metric["no_social"]:
+            country_bucket["no_social"].append(record)
+            seen_by_metric["no_social"].add(key)
+
+        if row["social_tier"] == "twitter_only" and key not in seen_by_metric["legacy_only"]:
+            country_bucket["legacy_only"].append(record)
+            seen_by_metric["legacy_only"].add(key)
+
+        if row["social_tier"] == "modern_only" and key not in seen_by_metric["modern"]:
+            country_bucket["modern"].append(record)
+            seen_by_metric["modern"].add(key)
+
+        if row["social_tier"] == "mixed" and key not in seen_by_metric["mixed"]:
+            country_bucket["mixed"].append(record)
+            seen_by_metric["mixed"].add(key)
+
+    return grouped
+
+
 def _query_by_country(conn: sqlite3.Connection) -> list[dict]:
     """Return per-country social media platform totals with tier breakdown.
 
@@ -701,9 +784,9 @@ def _build_stats_block(
 
         lines += [
             "",
-            "> Hover or focus any non-zero platform count to preview matching pages. "
+            "> Hover or focus any non-zero country-table count to preview matching pages. "
             "Activate the number to keep the preview open and download a CSV for that "
-            "country and platform from [social-media-data.json](social-media-data.json).",
+            "country and metric from [social-media-data.json](social-media-data.json).",
         ]
 
 
@@ -1130,6 +1213,7 @@ def generate_social_media_report(
         summary: dict = {}
         by_country: list[dict] = []
         platform_drilldowns: dict[str, dict[str, list[dict[str, object]]]] = {}
+        metric_drilldowns: dict[str, dict[str, list[dict[str, object]]]] = {}
     else:
         conn = sqlite3.connect(db_path)
         conn.row_factory = sqlite3.Row
@@ -1137,6 +1221,7 @@ def generate_social_media_report(
             summary = _query_summary(conn)
             by_country = _query_by_country(conn)
             platform_drilldowns = _query_platform_drilldowns_by_country(conn)
+            metric_drilldowns = _query_metric_drilldowns_by_country(conn)
         finally:
             conn.close()
 
@@ -1165,6 +1250,7 @@ def generate_social_media_report(
         },
         "by_country": enriched_by_country,
         "platform_drilldowns": platform_drilldowns,
+        "metric_drilldowns": metric_drilldowns,
     }
     data_path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"Data file written: {data_path}")
