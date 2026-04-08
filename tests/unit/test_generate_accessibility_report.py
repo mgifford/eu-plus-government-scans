@@ -218,7 +218,7 @@ def test_build_stats_block_mentions_country_evidence(populated_db: Path) -> None
     assert "per-domain summary" in block
     assert "accessibility-data.json" in block
     assert "Hover or focus any non-zero count" in block
-    assert "download the full CSV" in block
+    assert "Full machine-readable data is available" in block
 
 
 def test_generate_accessibility_report_writes_country_detail(
