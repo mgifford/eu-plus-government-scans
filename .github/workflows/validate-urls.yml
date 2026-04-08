@@ -18,6 +18,13 @@ on:
         default: '30'
         type: string
 
+# Validation is a low-priority background task. Keep validation workflows
+# serialized with each other so they do not race on the shared metadata
+# artifact, but do not let them block the richer scan workflows.
+concurrency:
+  group: validation-background
+  cancel-in-progress: false
+
 jobs:
   validate-urls:
     runs-on: ubuntu-latest

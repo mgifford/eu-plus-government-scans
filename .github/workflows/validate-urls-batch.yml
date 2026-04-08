@@ -39,12 +39,12 @@ on:
         default: '30'
         type: string
 
-# Share the concurrency group with the issue-triggered-validation workflow so
-# that only one validation workflow runs at a time, preventing simultaneous
-# runs from competing for the shared validation-metadata artifact.
+# Validation is the lowest-priority background task. Keep validation workflows
+# serialized with each other, but do not let them block the richer scan
+# workflows that also refresh reachability data and power GitHub Pages reports.
 # A queued run will replace any pending one, keeping at most one waiting.
 concurrency:
-  group: validation-runs
+  group: validation-background
   cancel-in-progress: false
 
 jobs:
