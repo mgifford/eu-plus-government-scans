@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-04-08 12:52 UTC_
+_Generated: 2026-04-08 13:13 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -23,8 +23,8 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Country | Total | Valid | Invalid | Scan Period | Coverage |
 |---------|-------|-------|---------|-------------|----------|
-| AUSTRIA | 821 | 718 | 193 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
-| BELGIUM | 1,309 | 1,166 | 736 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
+| AUSTRIA | 821 | 718 | 194 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
+| BELGIUM | 1,309 | 1,166 | 740 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
 | BULGARIA | 291 | 232 | 90 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
 | CROATIA | 233 | 227 | 13 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
 | CZECHIA | 843 | 787 | 142 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
@@ -41,6 +41,8 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | ROMANIA | 290 | 121 | 169 | Mar 2026 | █████░░░░░░░░░░ 36.3% |
 | SWEDEN | 1,558 | 1,448 | 110 | Mar 2026 | ███████████████ 100.0% |
 | SWITZERLAND | 920 | 868 | 52 | Mar 2026 | ██████░░░░░░░░░ 43.5% |
+
+> Hover or focus any non-zero **Total**, **Valid**, or **Invalid** count to preview matching URLs. **Valid** and **Invalid** can overlap because a URL may have passed in one validation run and failed in another during the same scan period; download the CSV for the underlying evidence from [scan-progress-data.json](scan-progress-data.json).
 
 ## Social Media Scan by Country
 
