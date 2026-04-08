@@ -16,10 +16,11 @@ on:
         default: '1.0'
         type: string
 
-# Share concurrency group with URL-validation workflows so that only one
-# scan workflow runs at a time, protecting the shared metadata artifact.
+# Share concurrency group with the other metadata-producing scan workflows so
+# only one of them runs at a time, protecting the shared validation-metadata
+# artifact without letting low-priority URL validation block richer scans.
 concurrency:
-  group: validation-runs
+  group: metadata-scans
   cancel-in-progress: false
 
 jobs:
