@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-04-08 10:26 UTC_
+_Generated: 2026-04-08 12:16 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -10,9 +10,9 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage |
 |-----------|--------------|-----------|----------|
-| **Combined Reachability** | **77,298 confirmed reachable** | 82,714 | **██████████████████░░ 93.5%** |
+| **Combined Reachability** | **77,348 confirmed reachable** | 82,714 | **██████████████████░░ 93.5%** |
 | URL Validation | 13,771 validated (11,960 valid) | 82,714 | ███░░░░░░░░░░░░░░░░░ 16.6% |
-| Social Media | 82,714 scanned (77,298 reachable) | 82,714 | ████████████████████ 100.0% |
+| Social Media | 82,714 scanned (77,348 reachable) | 82,714 | ████████████████████ 100.0% |
 | Technology | 10,376 scanned | 82,714 | ██░░░░░░░░░░░░░░░░░░ 12.5% |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) |
 | Accessibility Statements | 72,735 scanned | 82,714 | █████████████████░░░ 87.9% |
@@ -67,7 +67,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | MALTA | 608 | 608 | 595 | 129 | 20 | 32 | 501 | 57 | 17 | 0 | 34 | Mar 2026 – Apr 2026 |
 | NETHERLANDS | 937 | 937 | 909 | 257 | 54 | 95 | 644 | 148 | 74 | 45 | 77 | Mar 2026 – Apr 2026 |
 | NORWAY | 239 | 239 | 233 | 55 | 2 | 0 | 211 | 10 | 13 | 0 | 2 | Mar 2026 – Apr 2026 |
-| POLAND | 14,938 | 14,938 | 13,891 | 5,806 | 301 | 925 | 8,575 | 1,083 | 315 | 1 | 1,044 | Mar 2026 – Apr 2026 |
+| POLAND | 14,938 | 14,938 | 13,941 | 6,150 | 301 | 957 | 8,601 | 1,092 | 325 | 1 | 1,047 | Mar 2026 – Apr 2026 |
 | PORTUGAL | 3,503 | 3,503 | 2,933 | 1,015 | 57 | 175 | 2,039 | 430 | 70 | 2 | 183 | Mar 2026 – Apr 2026 |
 | REPUBLIC_OF_CYPRUS | 24 | 24 | 24 | 11 | 0 | 0 | 19 | 5 | 0 | 0 | 0 | Mar 2026 – Apr 2026 |
 | ROMANIA | 799 | 799 | 351 | 124 | 6 | 11 | 273 | 42 | 1 | 0 | 14 | Mar 2026 – Apr 2026 |
