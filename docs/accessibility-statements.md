@@ -7,20 +7,20 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-04-08 14:06 UTC — last scan: 2026-04-07_
+_Stats as of 2026-04-08 16:47 UTC — last scan: 2026-04-08_
 
-**98** scan batches run
+**99** scan batches run
 
 **72,735** of **82,714** available pages scanned (**87.9%** coverage)
-**67,278** of **72,735** scanned pages were reachable (**92.5%**)
-**32,602** of **67,278** reachable pages have an accessibility statement (**48.5%**)
-**28,192** pages have the statement link in the footer (**86.5%** of pages with a statement)
+**67,284** of **72,735** scanned pages were reachable (**92.5%**)
+**32,612** of **67,284** reachable pages have an accessibility statement (**48.5%**)
+**28,202** pages have the statement link in the footer (**86.5%** of pages with a statement)
 
-📥 Machine-readable results: [accessibility-data.json](accessibility-data.json)
+📥 Machine-readable results are available as the `accessibility-data.json` artifact in the [latest Generate Scan Progress Report workflow run](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
 
 Each country entry in the JSON file includes page-level evidence for pages with and without accessibility statements, plus a per-domain summary you can share to validate the published counts.
 
-> Hover or focus any non-zero count in the country table to preview the matching pages. If there are 20 or fewer URLs, the preview shows all of them; otherwise it shows a short sample and lets you download the full CSV from [accessibility-data.json](accessibility-data.json).
+> Hover or focus any non-zero count in the country table to preview the matching pages. If there are 20 or fewer URLs, the preview shows all of them; otherwise it shows a short sample. Full machine-readable data is available as the `accessibility-data.json` artifact in the [latest workflow run](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
 
 ---
 
@@ -50,7 +50,7 @@ Each country entry in the JSON file includes page-level evidence for pages with 
 | NETHERLANDS | 937 | 937 | 909 | 449 | 439 | 49.4% | Mar 2026 – Apr 2026 |
 | NORWAY | 239 | 239 | 233 | 108 | 102 | 46.4% | Mar 2026 – Apr 2026 |
 | POLAND | 13,875 | 14,938 | 12,866 | 5,309 | 3,369 | 41.3% | Mar 2026 – Apr 2026 |
-| PORTUGAL | 3,503 | 3,503 | 2,931 | 885 | 710 | 30.2% | Mar 2026 – Apr 2026 |
+| PORTUGAL | 3,503 | 3,503 | 2,937 | 895 | 720 | 30.5% | Mar 2026 – Apr 2026 |
 | REPUBLIC_OF_CYPRUS | 24 | 24 | 24 | 0 | 0 | 0.0% | Mar 2026 – Apr 2026 |
 | ROMANIA | 799 | 799 | 351 | 28 | 9 | 8.0% | Mar 2026 – Apr 2026 |
 | SLOVAKIA | 434 | 434 | 414 | 192 | 177 | 46.4% | Mar 2026 – Apr 2026 |
@@ -59,7 +59,7 @@ Each country entry in the JSON file includes page-level evidence for pages with 
 | SWEDEN | 1,558 | 1,558 | 1,486 | 860 | 785 | 57.9% | Mar 2026 – Apr 2026 |
 | SWITZERLAND | 2,117 | 2,117 | 2,082 | 980 | 978 | 47.1% | Mar 2026 – Apr 2026 |
 | UNITED_KINGDOM_UK | 10,586 | 19,502 | 9,947 | 5,811 | 5,450 | 58.4% | Mar 2026 – Apr 2026 |
-| **Total** | **72,735** | **82,714** | **67,278** | **32,602** | **28,192** | **48.5%** | — |
+| **Total** | **72,735** | **82,714** | **67,284** | **32,612** | **28,202** | **48.5%** | — |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 

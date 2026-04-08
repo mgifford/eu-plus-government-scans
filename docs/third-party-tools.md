@@ -7,7 +7,7 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-04-08 14:06 UTC — last scan: 2026-04-07_
+_Stats as of 2026-04-08 16:47 UTC — last scan: 2026-04-07_
 
 **99** scan batches run
 
@@ -28,6 +28,8 @@ _Stats as of 2026-04-08 14:06 UTC — last scan: 2026-04-07_
 | BULGARIA | 291 | 291 | 269 | 107 | 120 | 2026-04-07 |
 | CROATIA | 233 | 233 | 232 | 120 | 166 | 2026-04-07 |
 | CZECHIA | 581 | 843 | 552 | 287 | 488 | 2026-04-07 |
+
+> Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and metric from [third-party-tools-data.json](third-party-tools-data.json).
 
 ---
 

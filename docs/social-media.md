@@ -25,7 +25,7 @@ layout: page
 <p style="text-align:center;font-size:0.75em;margin:0.3rem 0 0;color:#555;font-style:italic;">Social media tier distribution</p>
 </div>
 
-_Stats as of 2026-04-08 14:06 UTC — last scan: 2026-04-08_
+_Stats as of 2026-04-08 16:47 UTC — last scan: 2026-04-08_
 
 **181** scan batches run
 
@@ -50,7 +50,7 @@ _Stats as of 2026-04-08 14:06 UTC — last scan: 2026-04-08_
 
 <div style="clear:both;"></div>
 
-📥 Machine-readable results: [social-media-data.json](social-media-data.json)
+📥 Machine-readable results are available as the `social-media-data.json` artifact in the [latest Generate Scan Progress Report workflow run](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
 
 ---
 
@@ -133,7 +133,7 @@ Countries ranked by **Digital Sovereignty Score** — the percentage of reachabl
 | UNITED_KINGDOM_UK | 19,502 | 19,502 | 18,743 | 61.4% | 11,462 | 6,627 | 4,152 | 990 | 6,520 | 2,484 | 37 | 701 | 118 | 668 | Mar 2026 – Apr 2026 |
 | **Total** | **82,714** | **82,714** | **77,350** | **69.3%** | **52,134** | **27,504** | **14,581** | **3,307** | **27,753** | **9,413** | **1,496** | **4,262** | **627** | **4,281** | — |
 
-> Hover or focus any non-zero platform count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and platform from [social-media-data.json](social-media-data.json).
+> Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open. Full machine-readable data is available as the `social-media-data.json` artifact in the [latest workflow run](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
 
 <!-- SOCIAL_MEDIA_STATS_END -->
 
