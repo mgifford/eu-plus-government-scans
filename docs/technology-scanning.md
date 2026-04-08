@@ -7,13 +7,13 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-04-08 10:22 UTC — last scan: 2026-04-07_
+_Stats as of 2026-04-08 10:26 UTC — last scan: 2026-04-08_
 
-**6** scan batches run
+**10** scan batches run
 
-**3,912** of **82,714** available pages scanned (**4.7%** coverage)
-**3,720** pages with technology detections (**95.1%** of scanned)
-**196** unique technologies identified
+**10,376** of **82,714** available pages scanned (**12.5%** coverage)
+**9,925** pages with technology detections (**95.7%** of scanned)
+**270** unique technologies identified
 
 ---
 
@@ -27,6 +27,10 @@ _Stats as of 2026-04-08 10:22 UTC — last scan: 2026-04-07_
 | CROATIA | 233 | 230 | 233 | 2026-04-07 |
 | CZECHIA | 843 | 798 | 843 | 2026-04-07 |
 | DENMARK | 415 | 412 | 1,521 | 2026-04-07 |
+| ESTONIA | 396 | 388 | 396 | 2026-04-08 |
+| FINLAND | 180 | 172 | 180 | 2026-04-08 |
+| FRANCE | 2,457 | 2,282 | 10,007 | 2026-04-08 |
+| GERMANY | 3,431 | 3,363 | 6,555 | 2026-04-08 |
 
 ---
 
@@ -34,46 +38,46 @@ _Stats as of 2026-04-08 10:22 UTC — last scan: 2026-04-07_
 
 | # | Technology | Pages | Categories |
 |--:|-----------|------:|-----------|
-| 1 | jQuery | **2,161** | JavaScript libraries |
-| 2 | Font Awesome | **1,213** | Font scripts |
-| 3 | PHP | **1,082** | Programming languages |
-| 4 | Bootstrap | **1,016** | UI frameworks |
-| 5 | Google Font API | **774** | Font scripts |
-| 6 | Nginx | **676** | Reverse proxies, Web servers |
-| 7 | Windows Server | **671** | Operating systems |
-| 8 | IIS | **662** | Web servers |
-| 9 | jQuery UI | **655** | JavaScript libraries |
-| 10 | Microsoft ASP.NET | **572** | Web frameworks |
-| 11 | Drupal | **558** | CMS |
-| 12 | Apache | **531** | Web servers |
-| 13 | Slick | **430** | JavaScript libraries |
-| 14 | Lightbox | **428** | JavaScript libraries |
-| 15 | WordPress | **327** | Blogs, CMS |
-| 16 | MySQL | **327** | Databases |
-| 17 | jQuery Migrate | **288** | JavaScript libraries |
-| 18 | jsDelivr | **242** | CDN |
-| 19 | Cloudflare | **235** | CDN |
-| 20 | Varnish | **220** | Caching |
+| 1 | jQuery | **4,674** | JavaScript libraries |
+| 2 | PHP | **3,349** | Programming languages |
+| 3 | Apache | **2,524** | Web servers |
+| 4 | Bootstrap | **2,113** | UI frameworks |
+| 5 | Font Awesome | **2,104** | Font scripts |
+| 6 | Nginx | **1,895** | Reverse proxies, Web servers |
+| 7 | Google Font API | **1,252** | Font scripts |
+| 8 | jQuery UI | **1,184** | JavaScript libraries |
+| 9 | Drupal | **1,166** | CMS |
+| 10 | MySQL | **1,030** | Databases |
+| 11 | WordPress | **1,019** | Blogs, CMS |
+| 12 | jQuery Migrate | **1,008** | JavaScript libraries |
+| 13 | Windows Server | **833** | Operating systems |
+| 14 | IIS | **816** | Web servers |
+| 15 | Slick | **812** | JavaScript libraries |
+| 16 | TYPO3 CMS | **801** | CMS |
+| 17 | jsDelivr | **783** | CDN |
+| 18 | Lightbox | **760** | JavaScript libraries |
+| 19 | Microsoft ASP.NET | **695** | Web frameworks |
+| 20 | Varnish | **618** | Caching |
 
 ### Top Technology Categories
 
 | # | Category | Pages |
 |--:|---------|------:|
-| 1 | JavaScript libraries | **4,466** |
-| 2 | Font scripts | **2,016** |
-| 3 | Web servers | **1,972** |
-| 4 | Programming languages | **1,316** |
-| 5 | UI frameworks | **1,124** |
-| 6 | CMS | **1,063** |
-| 7 | Operating systems | **762** |
-| 8 | Reverse proxies | **706** |
-| 9 | Web frameworks | **684** |
-| 10 | CDN | **533** |
-| 11 | Databases | **344** |
-| 12 | Blogs | **329** |
-| 13 | JavaScript frameworks | **302** |
-| 14 | Maps | **279** |
-| 15 | Caching | **256** |
+| 1 | JavaScript libraries | **10,413** |
+| 2 | Web servers | **5,523** |
+| 3 | Programming languages | **3,994** |
+| 4 | Font scripts | **3,439** |
+| 5 | CMS | **3,281** |
+| 6 | UI frameworks | **2,368** |
+| 7 | Reverse proxies | **1,961** |
+| 8 | CDN | **1,453** |
+| 9 | Databases | **1,081** |
+| 10 | Operating systems | **1,076** |
+| 11 | Web frameworks | **1,056** |
+| 12 | Blogs | **1,021** |
+| 13 | JavaScript frameworks | **785** |
+| 14 | Caching | **759** |
+| 15 | Maps | **451** |
 
 📥 Machine-readable results: [technology-data.json](technology-data.json)
 
