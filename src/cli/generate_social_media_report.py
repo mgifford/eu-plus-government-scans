@@ -4,8 +4,9 @@ Queries the metadata database for aggregate social media scan statistics
 and updates ``docs/social-media.md`` with a live stats block between
 ``<!-- SOCIAL_MEDIA_STATS_START -->`` and ``<!-- SOCIAL_MEDIA_STATS_END -->``
 markers.  A summary JSON data file (``docs/social-media-data.json``) is also
-written so that external tools and the page itself can link directly to the
-machine-readable results.
+written so that external tools can access the machine-readable results.  This
+file is uploaded as a workflow artifact rather than committed to the repository
+(it can exceed GitHub's 100 MB file-size limit at scale).
 """
 
 from __future__ import annotations
@@ -708,8 +709,10 @@ def _build_stats_block(
 
     lines += [
         "",
-        "📥 Machine-readable results: "
-        "[social-media-data.json](social-media-data.json)",
+        "📥 Machine-readable results are available as the "
+        "`social-media-data.json` artifact in the "
+        "[latest Generate Scan Progress Report workflow run]"
+        "(https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).",
     ]
 
     # Digital Sovereignty Rankings section (leaderboard)
@@ -785,8 +788,10 @@ def _build_stats_block(
         lines += [
             "",
             "> Hover or focus any non-zero country-table count to preview matching pages. "
-            "Activate the number to keep the preview open and download a CSV for that "
-            "country and metric from [social-media-data.json](social-media-data.json).",
+            "Activate the number to keep the preview open. Full machine-readable data is "
+            "available as the `social-media-data.json` artifact in the "
+            "[latest workflow run]"
+            "(https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).",
         ]
 
 
@@ -1017,7 +1022,7 @@ def _build_interactive_block(
     var more = count > sample.length
       ? '<li style="color:#aaa;font-style:italic;">…and ' +
         (count - sample.length).toLocaleString() +
-        ' more — <a href="social-media-data.json" rel="noopener noreferrer" style="color:#9ecfff;">full list in data file</a></li>'
+        ' more — see the <a href="https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml" rel="noopener noreferrer" style="color:#9ecfff;"><code>social-media-data.json</code> artifact in the latest workflow run</a> for the full list.</li>'
       : "";
     return (
       '<details class="sm-tw-details">' +
