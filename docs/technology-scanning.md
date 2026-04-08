@@ -7,13 +7,13 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-04-08 08:36 UTC — last scan: 2026-04-08_
+_Stats as of 2026-04-08 10:22 UTC — last scan: 2026-04-07_
 
-**9** scan batches run
+**6** scan batches run
 
-**6,945** of **82,714** available pages scanned (**8.4%** coverage)
-**6,562** pages with technology detections (**94.5%** of scanned)
-**247** unique technologies identified
+**3,912** of **82,714** available pages scanned (**4.7%** coverage)
+**3,720** pages with technology detections (**95.1%** of scanned)
+**196** unique technologies identified
 
 ---
 
@@ -27,9 +27,6 @@ _Stats as of 2026-04-08 08:36 UTC — last scan: 2026-04-08_
 | CROATIA | 233 | 230 | 233 | 2026-04-07 |
 | CZECHIA | 843 | 798 | 843 | 2026-04-07 |
 | DENMARK | 415 | 412 | 1,521 | 2026-04-07 |
-| ESTONIA | 396 | 388 | 396 | 2026-04-08 |
-| FINLAND | 180 | 172 | 180 | 2026-04-08 |
-| FRANCE | 2,457 | 2,282 | 10,007 | 2026-04-08 |
 
 ---
 
@@ -37,46 +34,46 @@ _Stats as of 2026-04-08 08:36 UTC — last scan: 2026-04-08_
 
 | # | Technology | Pages | Categories |
 |--:|-----------|------:|-----------|
-| 1 | jQuery | **3,219** | JavaScript libraries |
-| 2 | PHP | **1,909** | Programming languages |
-| 3 | Font Awesome | **1,706** | Font scripts |
-| 4 | Bootstrap | **1,573** | UI frameworks |
-| 5 | Nginx | **1,182** | Reverse proxies, Web servers |
-| 6 | Google Font API | **1,134** | Font scripts |
-| 7 | Apache | **1,110** | Web servers |
-| 8 | Drupal | **949** | CMS |
-| 9 | jQuery UI | **887** | JavaScript libraries |
-| 10 | Windows Server | **731** | Operating systems |
-| 11 | IIS | **722** | Web servers |
-| 12 | Microsoft ASP.NET | **630** | Web frameworks |
-| 13 | MySQL | **616** | Databases |
-| 14 | WordPress | **611** | Blogs, CMS |
-| 15 | jQuery Migrate | **572** | JavaScript libraries |
-| 16 | Slick | **539** | JavaScript libraries |
-| 17 | Cloudflare | **524** | CDN |
-| 18 | Lightbox | **477** | JavaScript libraries |
-| 19 | jsDelivr | **388** | CDN |
-| 20 | Google Tag Manager | **283** | Tag managers |
+| 1 | jQuery | **2,161** | JavaScript libraries |
+| 2 | Font Awesome | **1,213** | Font scripts |
+| 3 | PHP | **1,082** | Programming languages |
+| 4 | Bootstrap | **1,016** | UI frameworks |
+| 5 | Google Font API | **774** | Font scripts |
+| 6 | Nginx | **676** | Reverse proxies, Web servers |
+| 7 | Windows Server | **671** | Operating systems |
+| 8 | IIS | **662** | Web servers |
+| 9 | jQuery UI | **655** | JavaScript libraries |
+| 10 | Microsoft ASP.NET | **572** | Web frameworks |
+| 11 | Drupal | **558** | CMS |
+| 12 | Apache | **531** | Web servers |
+| 13 | Slick | **430** | JavaScript libraries |
+| 14 | Lightbox | **428** | JavaScript libraries |
+| 15 | WordPress | **327** | Blogs, CMS |
+| 16 | MySQL | **327** | Databases |
+| 17 | jQuery Migrate | **288** | JavaScript libraries |
+| 18 | jsDelivr | **242** | CDN |
+| 19 | Cloudflare | **235** | CDN |
+| 20 | Varnish | **220** | Caching |
 
 ### Top Technology Categories
 
 | # | Category | Pages |
 |--:|---------|------:|
-| 1 | JavaScript libraries | **6,641** |
-| 2 | Web servers | **3,271** |
-| 3 | Font scripts | **2,921** |
-| 4 | Programming languages | **2,370** |
-| 5 | CMS | **1,851** |
-| 6 | UI frameworks | **1,766** |
-| 7 | Reverse proxies | **1,234** |
-| 8 | CDN | **1,015** |
-| 9 | Operating systems | **899** |
-| 10 | Web frameworks | **860** |
-| 11 | Databases | **646** |
-| 12 | JavaScript frameworks | **618** |
-| 13 | Blogs | **613** |
-| 14 | Maps | **385** |
-| 15 | Caching | **385** |
+| 1 | JavaScript libraries | **4,466** |
+| 2 | Font scripts | **2,016** |
+| 3 | Web servers | **1,972** |
+| 4 | Programming languages | **1,316** |
+| 5 | UI frameworks | **1,124** |
+| 6 | CMS | **1,063** |
+| 7 | Operating systems | **762** |
+| 8 | Reverse proxies | **706** |
+| 9 | Web frameworks | **684** |
+| 10 | CDN | **533** |
+| 11 | Databases | **344** |
+| 12 | Blogs | **329** |
+| 13 | JavaScript frameworks | **302** |
+| 14 | Maps | **279** |
+| 15 | Caching | **256** |
 
 📥 Machine-readable results: [technology-data.json](technology-data.json)
 

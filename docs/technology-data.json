@@ -1,338 +1,219 @@
 {
-  "generated_at": "2026-04-08 08:36 UTC",
+  "generated_at": "2026-04-08 10:22 UTC",
   "summary": {
-    "total_batches": 9,
-    "total_scanned": 6945,
-    "total_detected": 6562,
+    "total_batches": 6,
+    "total_scanned": 3912,
+    "total_detected": 3720,
     "total_available": 82714,
-    "unique_technologies": 247,
-    "unique_categories": 45,
+    "unique_technologies": 196,
+    "unique_categories": 41,
     "first_scan": "2026-04-07T20:30:23.024316+00:00",
-    "last_scan": "2026-04-08T08:35:41.684595+00:00"
+    "last_scan": "2026-04-07T22:19:21.741282+00:00"
   },
   "top_technologies": [
     {
       "name": "jQuery",
-      "pages": 3219,
+      "pages": 2161,
       "categories": [
         "JavaScript libraries"
       ]
     },
     {
-      "name": "PHP",
-      "pages": 1909,
-      "categories": [
-        "Programming languages"
-      ]
-    },
-    {
       "name": "Font Awesome",
-      "pages": 1706,
+      "pages": 1213,
       "categories": [
         "Font scripts"
       ]
     },
     {
+      "name": "PHP",
+      "pages": 1082,
+      "categories": [
+        "Programming languages"
+      ]
+    },
+    {
       "name": "Bootstrap",
-      "pages": 1573,
+      "pages": 1016,
       "categories": [
         "UI frameworks"
       ]
     },
     {
+      "name": "Google Font API",
+      "pages": 774,
+      "categories": [
+        "Font scripts"
+      ]
+    },
+    {
       "name": "Nginx",
-      "pages": 1182,
+      "pages": 676,
       "categories": [
         "Reverse proxies",
         "Web servers"
       ]
     },
     {
-      "name": "Google Font API",
-      "pages": 1134,
-      "categories": [
-        "Font scripts"
-      ]
-    },
-    {
-      "name": "Apache",
-      "pages": 1110,
-      "categories": [
-        "Web servers"
-      ]
-    },
-    {
-      "name": "Drupal",
-      "pages": 949,
-      "categories": [
-        "CMS"
-      ]
-    },
-    {
-      "name": "jQuery UI",
-      "pages": 887,
-      "categories": [
-        "JavaScript libraries"
-      ]
-    },
-    {
       "name": "Windows Server",
-      "pages": 731,
+      "pages": 671,
       "categories": [
         "Operating systems"
       ]
     },
     {
       "name": "IIS",
-      "pages": 722,
+      "pages": 662,
       "categories": [
         "Web servers"
       ]
     },
     {
+      "name": "jQuery UI",
+      "pages": 655,
+      "categories": [
+        "JavaScript libraries"
+      ]
+    },
+    {
       "name": "Microsoft ASP.NET",
-      "pages": 630,
+      "pages": 572,
       "categories": [
         "Web frameworks"
       ]
     },
     {
-      "name": "MySQL",
-      "pages": 616,
+      "name": "Drupal",
+      "pages": 558,
       "categories": [
-        "Databases"
+        "CMS"
+      ]
+    },
+    {
+      "name": "Apache",
+      "pages": 531,
+      "categories": [
+        "Web servers"
+      ]
+    },
+    {
+      "name": "Slick",
+      "pages": 430,
+      "categories": [
+        "JavaScript libraries"
+      ]
+    },
+    {
+      "name": "Lightbox",
+      "pages": 428,
+      "categories": [
+        "JavaScript libraries"
       ]
     },
     {
       "name": "WordPress",
-      "pages": 611,
+      "pages": 327,
       "categories": [
         "Blogs",
         "CMS"
       ]
     },
     {
+      "name": "MySQL",
+      "pages": 327,
+      "categories": [
+        "Databases"
+      ]
+    },
+    {
       "name": "jQuery Migrate",
-      "pages": 572,
-      "categories": [
-        "JavaScript libraries"
-      ]
-    },
-    {
-      "name": "Slick",
-      "pages": 539,
-      "categories": [
-        "JavaScript libraries"
-      ]
-    },
-    {
-      "name": "Cloudflare",
-      "pages": 524,
-      "categories": [
-        "CDN"
-      ]
-    },
-    {
-      "name": "Lightbox",
-      "pages": 477,
+      "pages": 288,
       "categories": [
         "JavaScript libraries"
       ]
     },
     {
       "name": "jsDelivr",
-      "pages": 388,
+      "pages": 242,
       "categories": [
         "CDN"
       ]
     },
     {
-      "name": "Google Tag Manager",
-      "pages": 283,
+      "name": "Cloudflare",
+      "pages": 235,
       "categories": [
-        "Tag managers"
+        "CDN"
       ]
     },
     {
       "name": "Varnish",
-      "pages": 273,
+      "pages": 220,
       "categories": [
         "Caching"
       ]
     },
     {
       "name": "Leaflet",
-      "pages": 271,
+      "pages": 214,
       "categories": [
         "Maps"
       ]
     },
     {
-      "name": "Cart Functionality",
-      "pages": 264,
+      "name": "Google Tag Manager",
+      "pages": 183,
       "categories": [
-        "Ecommerce"
-      ]
-    },
-    {
-      "name": "Yoast SEO",
-      "pages": 261,
-      "categories": [
-        "SEO"
+        "Tag managers"
       ]
     },
     {
       "name": "reCAPTCHA",
-      "pages": 241,
+      "pages": 176,
       "categories": [
         "Security"
       ]
     },
     {
+      "name": "Modernizr",
+      "pages": 108,
+      "categories": [
+        "JavaScript libraries"
+      ]
+    },
+    {
+      "name": "Yoast SEO",
+      "pages": 107,
+      "categories": [
+        "SEO"
+      ]
+    },
+    {
+      "name": "Cart Functionality",
+      "pages": 97,
+      "categories": [
+        "Ecommerce"
+      ]
+    },
+    {
       "name": "OWL Carousel",
-      "pages": 181,
+      "pages": 84,
       "categories": [
         "Widgets"
       ]
     },
     {
-      "name": "Modernizr",
-      "pages": 170,
+      "name": "Python",
+      "pages": 84,
       "categories": [
-        "JavaScript libraries"
+        "Programming languages"
       ]
     },
     {
       "name": "Moment.js",
-      "pages": 150,
-      "categories": [
-        "JavaScript libraries"
-      ]
-    },
-    {
-      "name": "AngularJS",
-      "pages": 149,
-      "categories": [
-        "JavaScript frameworks"
-      ]
-    },
-    {
-      "name": "Select2",
-      "pages": 143,
-      "categories": [
-        "JavaScript libraries"
-      ]
-    },
-    {
-      "name": "Node.js",
-      "pages": 132,
-      "categories": [
-        "Programming languages"
-      ]
-    },
-    {
-      "name": "Python",
-      "pages": 117,
-      "categories": [
-        "Programming languages"
-      ]
-    },
-    {
-      "name": "DataTables",
-      "pages": 106,
-      "categories": [
-        "JavaScript libraries"
-      ]
-    },
-    {
-      "name": "YouTube",
-      "pages": 103,
-      "categories": [
-        "Video players"
-      ]
-    },
-    {
-      "name": "Vue.js",
-      "pages": 101,
-      "categories": [
-        "JavaScript frameworks"
-      ]
-    },
-    {
-      "name": "animate.css",
-      "pages": 101,
-      "categories": [
-        "UI frameworks"
-      ]
-    },
-    {
-      "name": "Lua",
-      "pages": 99,
-      "categories": [
-        "Programming languages"
-      ]
-    },
-    {
-      "name": "OpenResty",
-      "pages": 99,
-      "categories": [
-        "Web servers"
-      ]
-    },
-    {
-      "name": "Underscore.js",
-      "pages": 93,
-      "categories": [
-        "JavaScript libraries"
-      ]
-    },
-    {
-      "name": "Amazon Web Services",
-      "pages": 90,
-      "categories": [
-        "PaaS"
-      ]
-    },
-    {
-      "name": "Amazon Cloudfront",
-      "pages": 90,
-      "categories": [
-        "CDN"
-      ]
-    },
-    {
-      "name": "Swiper Slider",
-      "pages": 87,
-      "categories": [
-        "Miscellaneous"
-      ]
-    },
-    {
-      "name": "Elementor",
-      "pages": 81,
-      "categories": [
-        "Page builders"
-      ]
-    },
-    {
-      "name": "React",
-      "pages": 78,
-      "categories": [
-        "JavaScript frameworks"
-      ]
-    },
-    {
-      "name": "Ubuntu",
-      "pages": 76,
-      "categories": [
-        "Operating systems"
-      ]
-    },
-    {
-      "name": "TYPO3 CMS",
       "pages": 70,
       "categories": [
-        "CMS"
+        "JavaScript libraries"
       ]
     },
     {
@@ -343,115 +224,80 @@
       ]
     },
     {
-      "name": "Nuxt.js",
+      "name": "Node.js",
       "pages": 68,
-      "categories": [
-        "JavaScript frameworks"
-      ]
-    },
-    {
-      "name": "Debian",
-      "pages": 68,
-      "categories": [
-        "Operating systems"
-      ]
-    },
-    {
-      "name": "Google Maps",
-      "pages": 68,
-      "categories": [
-        "Maps"
-      ]
-    },
-    {
-      "name": "AddToAny",
-      "pages": 60,
-      "categories": [
-        "Widgets"
-      ]
-    },
-    {
-      "name": "Joomla",
-      "pages": 58,
-      "categories": [
-        "CMS"
-      ]
-    },
-    {
-      "name": "Glyphicons",
-      "pages": 57,
-      "categories": [
-        "Font scripts"
-      ]
-    },
-    {
-      "name": "prettyPhoto",
-      "pages": 57,
-      "categories": [
-        "JavaScript libraries"
-      ]
-    },
-    {
-      "name": "Ruby",
-      "pages": 57,
       "categories": [
         "Programming languages"
       ]
     },
     {
-      "name": "Ruby on Rails",
+      "name": "Select2",
+      "pages": 65,
+      "categories": [
+        "JavaScript libraries"
+      ]
+    },
+    {
+      "name": "Vue.js",
+      "pages": 63,
+      "categories": [
+        "JavaScript frameworks"
+      ]
+    },
+    {
+      "name": "YouTube",
+      "pages": 60,
+      "categories": [
+        "Video players"
+      ]
+    },
+    {
+      "name": "animate.css",
       "pages": 57,
       "categories": [
-        "Web frameworks"
+        "UI frameworks"
+      ]
+    },
+    {
+      "name": "DataTables",
+      "pages": 55,
+      "categories": [
+        "JavaScript libraries"
+      ]
+    },
+    {
+      "name": "Amazon Web Services",
+      "pages": 51,
+      "categories": [
+        "PaaS"
+      ]
+    },
+    {
+      "name": "Amazon Cloudfront",
+      "pages": 51,
+      "categories": [
+        "CDN"
+      ]
+    },
+    {
+      "name": "prettyPhoto",
+      "pages": 51,
+      "categories": [
+        "JavaScript libraries"
+      ]
+    },
+    {
+      "name": "Nuxt.js",
+      "pages": 50,
+      "categories": [
+        "JavaScript frameworks"
       ]
     },
     {
       "name": "Cookiebot",
-      "pages": 56,
+      "pages": 48,
       "categories": [
         "Cookie compliance"
-      ]
-    },
-    {
-      "name": "SweetAlert2",
-      "pages": 54,
-      "categories": [
-        "JavaScript libraries"
-      ]
-    },
-    {
-      "name": "TinyMCE",
-      "pages": 53,
-      "categories": [
-        "Rich text editors"
-      ]
-    },
-    {
-      "name": "webpack",
-      "pages": 52,
-      "categories": [
-        "Miscellaneous"
-      ]
-    },
-    {
-      "name": "Highcharts",
-      "pages": 51,
-      "categories": [
-        "JavaScript graphics"
-      ]
-    },
-    {
-      "name": "SWFObject",
-      "pages": 49,
-      "categories": [
-        "Miscellaneous"
-      ]
-    },
-    {
-      "name": "FancyBox",
-      "pages": 49,
-      "categories": [
-        "JavaScript libraries"
       ]
     },
     {
@@ -462,306 +308,298 @@
       ]
     },
     {
-      "name": "Next.js",
-      "pages": 47,
+      "name": "Underscore.js",
+      "pages": 46,
       "categories": [
-        "Web frameworks",
-        "Web servers"
+        "JavaScript libraries"
       ]
     },
     {
-      "name": "Java",
-      "pages": 44,
+      "name": "Debian",
+      "pages": 46,
       "categories": [
-        "Programming languages"
+        "Operating systems"
       ]
     },
     {
-      "name": "Stimulus",
-      "pages": 44,
+      "name": "SWFObject",
+      "pages": 42,
       "categories": [
-        "JavaScript frameworks"
+        "Miscellaneous"
       ]
     },
     {
-      "name": "WP Rocket",
-      "pages": 41,
-      "categories": [
-        "Caching"
-      ]
-    },
-    {
-      "name": "OpenLayers",
-      "pages": 41,
-      "categories": [
-        "Maps"
-      ]
-    },
-    {
-      "name": "OpenSSL",
-      "pages": 40,
-      "categories": [
-        "Web server extensions"
-      ]
-    },
-    {
-      "name": "AddThis",
-      "pages": 38,
-      "categories": [
-        "Widgets"
-      ]
-    },
-    {
-      "name": "Chart.js",
-      "pages": 37,
+      "name": "Highcharts",
+      "pages": 42,
       "categories": [
         "JavaScript graphics"
       ]
     },
     {
-      "name": "Polyfill",
-      "pages": 37,
+      "name": "Java",
+      "pages": 40,
       "categories": [
-        "JavaScript libraries"
+        "Programming languages"
       ]
     },
     {
-      "name": "SPIP",
-      "pages": 36,
+      "name": "TinyMCE",
+      "pages": 40,
+      "categories": [
+        "Rich text editors"
+      ]
+    },
+    {
+      "name": "TYPO3 CMS",
+      "pages": 39,
       "categories": [
         "CMS"
       ]
     },
     {
-      "name": "ZURB Foundation",
-      "pages": 35,
+      "name": "AngularJS",
+      "pages": 39,
       "categories": [
-        "UI frameworks"
+        "JavaScript frameworks"
       ]
     },
     {
-      "name": "Revslider",
-      "pages": 35,
-      "categories": [
-        "Miscellaneous"
-      ]
-    },
-    {
-      "name": "Django",
-      "pages": 34,
-      "categories": [
-        "Web frameworks"
-      ]
-    },
-    {
-      "name": "UIKit",
-      "pages": 33,
-      "categories": [
-        "UI frameworks"
-      ]
-    },
-    {
-      "name": "Envoy",
-      "pages": 33,
-      "categories": [
-        "Reverse proxies"
-      ]
-    },
-    {
-      "name": "Osano",
-      "pages": 31,
-      "categories": [
-        "Cookie compliance"
-      ]
-    },
-    {
-      "name": "Hammer.js",
-      "pages": 30,
+      "name": "SweetAlert2",
+      "pages": 39,
       "categories": [
         "JavaScript libraries"
       ]
     },
     {
-      "name": "Alpine.js",
-      "pages": 30,
+      "name": "Joomla",
+      "pages": 33,
+      "categories": [
+        "CMS"
+      ]
+    },
+    {
+      "name": "OpenLayers",
+      "pages": 33,
+      "categories": [
+        "Maps"
+      ]
+    },
+    {
+      "name": "React",
+      "pages": 32,
       "categories": [
         "JavaScript frameworks"
       ]
     },
     {
-      "name": "Imperva",
+      "name": "OpenSSL",
       "pages": 30,
       "categories": [
-        "Security"
+        "Web server extensions"
       ]
     },
     {
-      "name": "RequireJS",
+      "name": "Ubuntu",
       "pages": 29,
       "categories": [
-        "JavaScript frameworks"
+        "Operating systems"
       ]
     },
     {
-      "name": "Facebook",
-      "pages": 27,
+      "name": "FancyBox",
+      "pages": 29,
+      "categories": [
+        "JavaScript libraries"
+      ]
+    },
+    {
+      "name": "Google Maps",
+      "pages": 28,
+      "categories": [
+        "Maps"
+      ]
+    },
+    {
+      "name": "AddThis",
+      "pages": 26,
       "categories": [
         "Widgets"
       ]
     },
     {
-      "name": "W3 Total Cache",
-      "pages": 27,
+      "name": "Elementor",
+      "pages": 26,
       "categories": [
-        "Caching"
+        "Page builders"
       ]
     },
     {
-      "name": "Ionicons",
+      "name": "Swiper Slider",
+      "pages": 25,
+      "categories": [
+        "Miscellaneous"
+      ]
+    },
+    {
+      "name": "UIKit",
       "pages": 24,
       "categories": [
-        "Font scripts"
+        "UI frameworks"
       ]
     },
     {
-      "name": "Kestrel",
-      "pages": 22,
-      "categories": [
-        "Web servers"
-      ]
-    },
-    {
-      "name": "Flickity",
-      "pages": 20,
-      "categories": [
-        "JavaScript libraries"
-      ]
-    },
-    {
-      "name": "GSAP",
-      "pages": 18,
+      "name": "RequireJS",
+      "pages": 23,
       "categories": [
         "JavaScript frameworks"
       ]
     },
     {
-      "name": "LiteSpeed",
-      "pages": 17,
+      "name": "AddToAny",
+      "pages": 22,
       "categories": [
-        "Web servers"
+        "Widgets"
       ]
     },
     {
-      "name": "Express",
-      "pages": 17,
+      "name": "Osano",
+      "pages": 22,
+      "categories": [
+        "Cookie compliance"
+      ]
+    },
+    {
+      "name": "Alpine.js",
+      "pages": 22,
+      "categories": [
+        "JavaScript frameworks"
+      ]
+    },
+    {
+      "name": "webpack",
+      "pages": 20,
+      "categories": [
+        "Miscellaneous"
+      ]
+    },
+    {
+      "name": "ZURB Foundation",
+      "pages": 20,
+      "categories": [
+        "UI frameworks"
+      ]
+    },
+    {
+      "name": "Next.js",
+      "pages": 18,
       "categories": [
         "Web frameworks",
         "Web servers"
       ]
     },
     {
-      "name": "Mustache",
-      "pages": 16,
+      "name": "Stimulus",
+      "pages": 17,
       "categories": [
         "JavaScript frameworks"
       ]
     },
     {
-      "name": "Clipboard.js",
-      "pages": 16,
+      "name": "Lua",
+      "pages": 17,
       "categories": [
-        "Miscellaneous"
+        "Programming languages"
       ]
     },
     {
-      "name": "F5 BigIP",
-      "pages": 16,
+      "name": "OpenResty",
+      "pages": 17,
+      "categories": [
+        "Web servers"
+      ]
+    },
+    {
+      "name": "Kestrel",
+      "pages": 17,
+      "categories": [
+        "Web servers"
+      ]
+    },
+    {
+      "name": "Envoy",
+      "pages": 17,
       "categories": [
         "Reverse proxies"
       ]
     },
     {
-      "name": "Redis",
+      "name": "Facebook",
       "pages": 16,
       "categories": [
-        "Databases"
+        "Widgets"
       ]
     },
     {
-      "name": "Redis Object Cache",
+      "name": "Ruby",
       "pages": 16,
+      "categories": [
+        "Programming languages"
+      ]
+    },
+    {
+      "name": "Ruby on Rails",
+      "pages": 16,
+      "categories": [
+        "Web frameworks"
+      ]
+    },
+    {
+      "name": "Ionicons",
+      "pages": 15,
+      "categories": [
+        "Font scripts"
+      ]
+    },
+    {
+      "name": "GSAP",
+      "pages": 15,
+      "categories": [
+        "JavaScript frameworks"
+      ]
+    },
+    {
+      "name": "Glyphicons",
+      "pages": 14,
+      "categories": [
+        "Font scripts"
+      ]
+    },
+    {
+      "name": "OneTrust",
+      "pages": 13,
+      "categories": [
+        "Cookie compliance"
+      ]
+    },
+    {
+      "name": "Revslider",
+      "pages": 13,
+      "categories": [
+        "Miscellaneous"
+      ]
+    },
+    {
+      "name": "WP Rocket",
+      "pages": 12,
       "categories": [
         "Caching"
       ]
     },
     {
       "name": "Amazon S3",
-      "pages": 15,
+      "pages": 12,
       "categories": [
         "Miscellaneous"
-      ]
-    },
-    {
-      "name": "OneTrust",
-      "pages": 15,
-      "categories": [
-        "Cookie compliance"
-      ]
-    },
-    {
-      "name": "MooTools",
-      "pages": 14,
-      "categories": [
-        "JavaScript frameworks"
-      ]
-    },
-    {
-      "name": "WordPress Super Cache",
-      "pages": 14,
-      "categories": [
-        "Caching"
-      ]
-    },
-    {
-      "name": "D3",
-      "pages": 13,
-      "categories": [
-        "JavaScript graphics"
-      ]
-    },
-    {
-      "name": "Prototype",
-      "pages": 13,
-      "categories": [
-        "JavaScript frameworks"
-      ]
-    },
-    {
-      "name": "Moodle",
-      "pages": 12,
-      "categories": [
-        "LMS"
-      ]
-    },
-    {
-      "name": "Litespeed Cache",
-      "pages": 12,
-      "categories": [
-        "Caching"
-      ]
-    },
-    {
-      "name": "Vercel",
-      "pages": 12,
-      "categories": [
-        "Web servers"
-      ]
-    },
-    {
-      "name": "Seravo",
-      "pages": 12,
-      "categories": [
-        "PaaS"
       ]
     },
     {
@@ -786,59 +624,45 @@
       ]
     },
     {
-      "name": "Adobe Experience Manager",
+      "name": "Moodle",
       "pages": 11,
       "categories": [
-        "CMS"
+        "LMS"
       ]
     },
     {
-      "name": "Gravity Forms",
-      "pages": 11,
-      "categories": [
-        "Miscellaneous"
-      ]
-    },
-    {
-      "name": "Backbone.js",
+      "name": "Mustache",
       "pages": 11,
       "categories": [
         "JavaScript frameworks"
       ]
     },
     {
-      "name": "Plyr",
-      "pages": 11,
+      "name": "Chart.js",
+      "pages": 10,
       "categories": [
-        "Video players"
+        "JavaScript graphics"
       ]
     },
     {
-      "name": "MailChimp",
+      "name": "Vercel",
       "pages": 10,
       "categories": [
-        "Marketing automation"
+        "Web servers"
       ]
     },
     {
-      "name": "Plesk",
+      "name": "F5 BigIP",
       "pages": 10,
       "categories": [
-        "Hosting panels"
+        "Reverse proxies"
       ]
     },
     {
-      "name": "jQuery Mobile",
-      "pages": 10,
+      "name": "Adobe Experience Manager",
+      "pages": 9,
       "categories": [
-        "Mobile frameworks"
-      ]
-    },
-    {
-      "name": "Twitter",
-      "pages": 10,
-      "categories": [
-        "Widgets"
+        "CMS"
       ]
     },
     {
@@ -849,45 +673,17 @@
       ]
     },
     {
-      "name": "MathJax",
-      "pages": 9,
-      "categories": [
-        "JavaScript graphics"
-      ]
-    },
-    {
-      "name": "Go",
-      "pages": 9,
-      "categories": [
-        "Programming languages"
-      ]
-    },
-    {
-      "name": "Caddy",
-      "pages": 9,
-      "categories": [
-        "Web servers"
-      ]
-    },
-    {
-      "name": "Handlebars",
+      "name": "MooTools",
       "pages": 9,
       "categories": [
         "JavaScript frameworks"
       ]
     },
     {
-      "name": "particles.js",
+      "name": "W3 Total Cache",
       "pages": 9,
       "categories": [
-        "JavaScript graphics"
-      ]
-    },
-    {
-      "name": "FlexSlider",
-      "pages": 8,
-      "categories": [
-        "Widgets"
+        "Caching"
       ]
     },
     {
@@ -898,24 +694,52 @@
       ]
     },
     {
-      "name": "Microsoft HTTPAPI",
+      "name": "Polyfill",
       "pages": 8,
       "categories": [
-        "Web servers"
+        "JavaScript libraries"
       ]
     },
     {
-      "name": "Google Plus",
+      "name": "MathJax",
       "pages": 8,
       "categories": [
-        "Widgets"
+        "JavaScript graphics"
       ]
     },
     {
-      "name": "PostgreSQL",
+      "name": "Hammer.js",
+      "pages": 8,
+      "categories": [
+        "JavaScript libraries"
+      ]
+    },
+    {
+      "name": "MailChimp",
+      "pages": 8,
+      "categories": [
+        "Marketing automation"
+      ]
+    },
+    {
+      "name": "Flickity",
+      "pages": 8,
+      "categories": [
+        "JavaScript libraries"
+      ]
+    },
+    {
+      "name": "Redis",
       "pages": 8,
       "categories": [
         "Databases"
+      ]
+    },
+    {
+      "name": "Redis Object Cache",
+      "pages": 8,
+      "categories": [
+        "Caching"
       ]
     },
     {
@@ -926,24 +750,31 @@
       ]
     },
     {
-      "name": "Angular",
-      "pages": 8,
-      "categories": [
-        "JavaScript frameworks"
-      ]
-    },
-    {
-      "name": "Pure CSS",
-      "pages": 8,
-      "categories": [
-        "UI frameworks"
-      ]
-    },
-    {
-      "name": "Awesomplete",
+      "name": "FlexSlider",
       "pages": 7,
       "categories": [
-        "Search engines"
+        "Widgets"
+      ]
+    },
+    {
+      "name": "Microsoft HTTPAPI",
+      "pages": 7,
+      "categories": [
+        "Web servers"
+      ]
+    },
+    {
+      "name": "LiteSpeed",
+      "pages": 7,
+      "categories": [
+        "Web servers"
+      ]
+    },
+    {
+      "name": "D3",
+      "pages": 7,
+      "categories": [
+        "JavaScript graphics"
       ]
     },
     {
@@ -954,116 +785,73 @@
       ]
     },
     {
-      "name": "Lodash",
+      "name": "particles.js",
       "pages": 7,
       "categories": [
-        "JavaScript libraries"
+        "JavaScript graphics"
       ]
     },
     {
-      "name": "Vuetify",
-      "pages": 7,
-      "categories": [
-        "UI frameworks"
-      ]
-    },
-    {
-      "name": "AMP",
-      "pages": 7,
-      "categories": [
-        "JavaScript frameworks"
-      ]
-    },
-    {
-      "name": "CentOS",
+      "name": "Go",
       "pages": 6,
       "categories": [
-        "Operating systems"
+        "Programming languages"
       ]
     },
     {
-      "name": "Bootstrap Table",
+      "name": "Caddy",
       "pages": 6,
       "categories": [
-        "JavaScript libraries"
+        "Web servers"
+      ]
+    },
+    {
+      "name": "Django",
+      "pages": 6,
+      "categories": [
+        "Web frameworks"
+      ]
+    },
+    {
+      "name": "jQuery Mobile",
+      "pages": 6,
+      "categories": [
+        "Mobile frameworks"
+      ]
+    },
+    {
+      "name": "Awesomplete",
+      "pages": 5,
+      "categories": [
+        "Search engines"
+      ]
+    },
+    {
+      "name": "Gravity Forms",
+      "pages": 5,
+      "categories": [
+        "Miscellaneous"
+      ]
+    },
+    {
+      "name": "Plesk",
+      "pages": 5,
+      "categories": [
+        "Hosting panels"
+      ]
+    },
+    {
+      "name": "Clipboard.js",
+      "pages": 5,
+      "categories": [
+        "Miscellaneous"
       ]
     },
     {
       "name": "Google Cloud",
-      "pages": 6,
+      "pages": 5,
       "categories": [
         "CDN"
-      ]
-    },
-    {
-      "name": "Gravatar",
-      "pages": 6,
-      "categories": [
-        "Miscellaneous"
-      ]
-    },
-    {
-      "name": "Hugo",
-      "pages": 6,
-      "categories": [
-        "Static site generator"
-      ]
-    },
-    {
-      "name": "GitHub Pages",
-      "pages": 6,
-      "categories": [
-        "PaaS"
-      ]
-    },
-    {
-      "name": "Fastly",
-      "pages": 6,
-      "categories": [
-        "CDN"
-      ]
-    },
-    {
-      "name": "Dojo",
-      "pages": 5,
-      "categories": [
-        "JavaScript libraries"
-      ]
-    },
-    {
-      "name": "Gatsby",
-      "pages": 5,
-      "categories": [
-        "JavaScript frameworks",
-        "Static site generator"
-      ]
-    },
-    {
-      "name": "WooCommerce",
-      "pages": 5,
-      "categories": [
-        "Ecommerce"
-      ]
-    },
-    {
-      "name": "Oracle Dynamic Monitoring Service",
-      "pages": 5,
-      "categories": [
-        "Miscellaneous"
-      ]
-    },
-    {
-      "name": "ExtJS",
-      "pages": 5,
-      "categories": [
-        "JavaScript frameworks"
-      ]
-    },
-    {
-      "name": "ArcGIS API for JavaScript",
-      "pages": 5,
-      "categories": [
-        "Maps"
       ]
     },
     {
@@ -1074,81 +862,38 @@
       ]
     },
     {
-      "name": "Paths.js",
-      "pages": 5,
-      "categories": [
-        "JavaScript graphics"
-      ]
-    },
-    {
-      "name": "Raphael",
-      "pages": 5,
-      "categories": [
-        "JavaScript graphics"
-      ]
-    },
-    {
-      "name": "TrackJs",
-      "pages": 5,
-      "categories": [
-        "Analytics"
-      ]
-    },
-    {
-      "name": "Webdev",
-      "pages": 5,
-      "categories": [
-        "Editors"
-      ]
-    },
-    {
-      "name": "Less",
-      "pages": 5,
-      "categories": [
-        "Miscellaneous"
-      ]
-    },
-    {
-      "name": "Odoo",
-      "pages": 5,
-      "categories": [
-        "CMS",
-        "Ecommerce"
-      ]
-    },
-    {
-      "name": "PrestaShop",
-      "pages": 5,
-      "categories": [
-        "Ecommerce"
-      ]
-    },
-    {
-      "name": "Microsoft Word",
+      "name": "Dojo",
       "pages": 4,
       "categories": [
-        "Editors"
+        "JavaScript libraries"
       ]
     },
     {
-      "name": "Svelte",
+      "name": "Litespeed Cache",
+      "pages": 4,
+      "categories": [
+        "Caching"
+      ]
+    },
+    {
+      "name": "Backbone.js",
       "pages": 4,
       "categories": [
         "JavaScript frameworks"
       ]
     },
     {
-      "name": "Element UI",
+      "name": "CentOS",
       "pages": 4,
       "categories": [
-        "JavaScript frameworks"
+        "Operating systems"
       ]
     },
     {
-      "name": "Material Design Lite",
+      "name": "Google Plus",
       "pages": 4,
       "categories": [
-        "UI frameworks"
+        "Widgets"
       ]
     },
     {
@@ -1166,10 +911,17 @@
       ]
     },
     {
-      "name": "UNIX",
+      "name": "Twitter",
       "pages": 4,
       "categories": [
-        "Operating systems"
+        "Widgets"
+      ]
+    },
+    {
+      "name": "Lodash",
+      "pages": 4,
+      "categories": [
+        "JavaScript libraries"
       ]
     },
     {
@@ -1180,6 +932,13 @@
       ]
     },
     {
+      "name": "ArcGIS API for JavaScript",
+      "pages": 4,
+      "categories": [
+        "Maps"
+      ]
+    },
+    {
       "name": "OpenCms",
       "pages": 4,
       "categories": [
@@ -1187,24 +946,10 @@
       ]
     },
     {
-      "name": "Blazor",
-      "pages": 4,
+      "name": "Microsoft Word",
+      "pages": 3,
       "categories": [
-        "Web frameworks"
-      ]
-    },
-    {
-      "name": "Twitter typeahead.js",
-      "pages": 4,
-      "categories": [
-        "JavaScript libraries"
-      ]
-    },
-    {
-      "name": "script.aculo.us",
-      "pages": 4,
-      "categories": [
-        "JavaScript libraries"
+        "Editors"
       ]
     },
     {
@@ -1212,13 +957,6 @@
       "pages": 3,
       "categories": [
         "JavaScript frameworks"
-      ]
-    },
-    {
-      "name": "decimal.js",
-      "pages": 3,
-      "categories": [
-        "JavaScript libraries"
       ]
     },
     {
@@ -1233,6 +971,20 @@
       "pages": 3,
       "categories": [
         "Social login"
+      ]
+    },
+    {
+      "name": "Handlebars",
+      "pages": 3,
+      "categories": [
+        "JavaScript frameworks"
+      ]
+    },
+    {
+      "name": "Bootstrap Table",
+      "pages": 3,
+      "categories": [
+        "JavaScript libraries"
       ]
     },
     {
@@ -1272,6 +1024,27 @@
       ]
     },
     {
+      "name": "Gravatar",
+      "pages": 3,
+      "categories": [
+        "Miscellaneous"
+      ]
+    },
+    {
+      "name": "WordPress Super Cache",
+      "pages": 3,
+      "categories": [
+        "Caching"
+      ]
+    },
+    {
+      "name": "PostgreSQL",
+      "pages": 3,
+      "categories": [
+        "Databases"
+      ]
+    },
+    {
       "name": "Solr",
       "pages": 3,
       "categories": [
@@ -1307,10 +1080,10 @@
       ]
     },
     {
-      "name": "Microsoft SharePoint",
+      "name": "ExtJS",
       "pages": 3,
       "categories": [
-        "CMS"
+        "JavaScript frameworks"
       ]
     },
     {
@@ -1322,6 +1095,13 @@
     },
     {
       "name": "jQuery Sparklines",
+      "pages": 3,
+      "categories": [
+        "JavaScript graphics"
+      ]
+    },
+    {
+      "name": "Raphael",
       "pages": 3,
       "categories": [
         "JavaScript graphics"
@@ -1349,87 +1129,10 @@
       ]
     },
     {
-      "name": "Weglot",
-      "pages": 3,
-      "categories": [
-        "Miscellaneous"
-      ]
-    },
-    {
-      "name": "FreeBSD",
-      "pages": 3,
-      "categories": [
-        "Operating systems"
-      ]
-    },
-    {
-      "name": "Jalios",
-      "pages": 3,
-      "categories": [
-        "CMS"
-      ]
-    },
-    {
-      "name": "YUI",
-      "pages": 3,
-      "categories": [
-        "JavaScript libraries"
-      ]
-    },
-    {
-      "name": "mod_ssl",
-      "pages": 3,
-      "categories": [
-        "Web server extensions"
-      ]
-    },
-    {
-      "name": "TagCommander",
-      "pages": 3,
-      "categories": [
-        "Tag managers"
-      ]
-    },
-    {
-      "name": "gunicorn",
-      "pages": 3,
-      "categories": [
-        "Web servers"
-      ]
-    },
-    {
-      "name": "Bolt",
-      "pages": 3,
-      "categories": [
-        "CMS"
-      ]
-    },
-    {
-      "name": "Contao",
-      "pages": 3,
-      "categories": [
-        "CMS"
-      ]
-    },
-    {
-      "name": "Mobirise",
-      "pages": 3,
-      "categories": [
-        "Page builders"
-      ]
-    },
-    {
-      "name": "Gridsome",
-      "pages": 3,
-      "categories": [
-        "Static site generator"
-      ]
-    },
-    {
-      "name": "Vaadin",
+      "name": "decimal.js",
       "pages": 2,
       "categories": [
-        "Web frameworks"
+        "JavaScript libraries"
       ]
     },
     {
@@ -1437,6 +1140,27 @@
       "pages": 2,
       "categories": [
         "Analytics"
+      ]
+    },
+    {
+      "name": "Svelte",
+      "pages": 2,
+      "categories": [
+        "JavaScript frameworks"
+      ]
+    },
+    {
+      "name": "Element UI",
+      "pages": 2,
+      "categories": [
+        "JavaScript frameworks"
+      ]
+    },
+    {
+      "name": "Material Design Lite",
+      "pages": 2,
+      "categories": [
+        "UI frameworks"
       ]
     },
     {
@@ -1454,10 +1178,32 @@
       ]
     },
     {
+      "name": "Gatsby",
+      "pages": 2,
+      "categories": [
+        "JavaScript frameworks",
+        "Static site generator"
+      ]
+    },
+    {
       "name": "Mautic",
       "pages": 2,
       "categories": [
         "Marketing automation"
+      ]
+    },
+    {
+      "name": "WooCommerce",
+      "pages": 2,
+      "categories": [
+        "Ecommerce"
+      ]
+    },
+    {
+      "name": "Oracle Dynamic Monitoring Service",
+      "pages": 2,
+      "categories": [
+        "Miscellaneous"
       ]
     },
     {
@@ -1532,6 +1278,27 @@
       ]
     },
     {
+      "name": "Microsoft SharePoint",
+      "pages": 2,
+      "categories": [
+        "CMS"
+      ]
+    },
+    {
+      "name": "Paths.js",
+      "pages": 2,
+      "categories": [
+        "JavaScript graphics"
+      ]
+    },
+    {
+      "name": "Blazor",
+      "pages": 2,
+      "categories": [
+        "Web frameworks"
+      ]
+    },
+    {
       "name": "Wix",
       "pages": 2,
       "categories": [
@@ -1548,99 +1315,14 @@
       ]
     },
     {
-      "name": "Google PageSpeed",
-      "pages": 2,
-      "categories": [
-        "Caching",
-        "Web server extensions"
-      ]
-    },
-    {
-      "name": "Pagekit",
-      "pages": 2,
-      "categories": [
-        "CMS"
-      ]
-    },
-    {
-      "name": "Snoobi",
-      "pages": 2,
-      "categories": [
-        "Analytics"
-      ]
-    },
-    {
-      "name": "CookieHub",
-      "pages": 2,
-      "categories": [
-        "Cookie compliance"
-      ]
-    },
-    {
-      "name": "Platform.sh",
-      "pages": 2,
-      "categories": [
-        "PaaS"
-      ]
-    },
-    {
-      "name": "Google Web Server",
-      "pages": 2,
-      "categories": [
-        "Web servers"
-      ]
-    },
-    {
-      "name": "DokuWiki",
-      "pages": 2,
-      "categories": [
-        "Wikis"
-      ]
-    },
-    {
-      "name": "AppNexus",
-      "pages": 2,
-      "categories": [
-        "Advertising"
-      ]
-    },
-    {
-      "name": "HubSpot",
-      "pages": 2,
-      "categories": [
-        "Marketing automation"
-      ]
-    },
-    {
-      "name": "Kinsta",
-      "pages": 2,
-      "categories": [
-        "PaaS"
-      ]
-    },
-    {
-      "name": "Grav",
-      "pages": 2,
-      "categories": [
-        "CMS"
-      ]
-    },
-    {
-      "name": "Froala Editor",
-      "pages": 2,
-      "categories": [
-        "Rich text editors"
-      ]
-    },
-    {
-      "name": "GitBook",
-      "pages": 2,
-      "categories": [
-        "Documentation"
-      ]
-    },
-    {
       "name": "JavaServer Pages",
+      "pages": 1,
+      "categories": [
+        "Web frameworks"
+      ]
+    },
+    {
+      "name": "Vaadin",
       "pages": 1,
       "categories": [
         "Web frameworks"
@@ -1658,6 +1340,13 @@
       "pages": 1,
       "categories": [
         "JavaScript libraries"
+      ]
+    },
+    {
+      "name": "UNIX",
+      "pages": 1,
+      "categories": [
+        "Operating systems"
       ]
     },
     {
@@ -1701,205 +1390,143 @@
       "categories": [
         "Analytics"
       ]
-    },
-    {
-      "name": "Moment Timezone",
-      "pages": 1,
-      "categories": [
-        "JavaScript libraries"
-      ]
-    },
-    {
-      "name": "XRegExp",
-      "pages": 1,
-      "categories": [
-        "JavaScript libraries"
-      ]
-    },
-    {
-      "name": "three.js",
-      "pages": 1,
-      "categories": [
-        "JavaScript graphics"
-      ]
-    },
-    {
-      "name": "Atlassian Jira",
-      "pages": 1,
-      "categories": [
-        "Issue trackers"
-      ]
-    },
-    {
-      "name": "hCaptcha",
-      "pages": 1,
-      "categories": [
-        "Security"
-      ]
-    },
-    {
-      "name": "Synology DiskStation",
-      "pages": 1,
-      "categories": [
-        "Network storage"
-      ]
-    },
-    {
-      "name": "Netlify",
-      "pages": 1,
-      "categories": [
-        "CDN",
-        "PaaS"
-      ]
     }
   ],
   "top_categories": [
     {
       "name": "JavaScript libraries",
-      "pages": 6641
-    },
-    {
-      "name": "Web servers",
-      "pages": 3271
+      "pages": 4466
     },
     {
       "name": "Font scripts",
-      "pages": 2921
+      "pages": 2016
+    },
+    {
+      "name": "Web servers",
+      "pages": 1972
     },
     {
       "name": "Programming languages",
-      "pages": 2370
-    },
-    {
-      "name": "CMS",
-      "pages": 1851
+      "pages": 1316
     },
     {
       "name": "UI frameworks",
-      "pages": 1766
+      "pages": 1124
     },
     {
-      "name": "Reverse proxies",
-      "pages": 1234
-    },
-    {
-      "name": "CDN",
-      "pages": 1015
+      "name": "CMS",
+      "pages": 1063
     },
     {
       "name": "Operating systems",
-      "pages": 899
+      "pages": 762
+    },
+    {
+      "name": "Reverse proxies",
+      "pages": 706
     },
     {
       "name": "Web frameworks",
-      "pages": 860
+      "pages": 684
+    },
+    {
+      "name": "CDN",
+      "pages": 533
     },
     {
       "name": "Databases",
-      "pages": 646
-    },
-    {
-      "name": "JavaScript frameworks",
-      "pages": 618
+      "pages": 344
     },
     {
       "name": "Blogs",
-      "pages": 613
+      "pages": 329
+    },
+    {
+      "name": "JavaScript frameworks",
+      "pages": 302
     },
     {
       "name": "Maps",
-      "pages": 385
+      "pages": 279
     },
     {
       "name": "Caching",
-      "pages": 385
-    },
-    {
-      "name": "Widgets",
-      "pages": 335
-    },
-    {
-      "name": "Miscellaneous",
-      "pages": 304
+      "pages": 256
     },
     {
       "name": "Tag managers",
-      "pages": 286
-    },
-    {
-      "name": "Ecommerce",
-      "pages": 283
+      "pages": 183
     },
     {
       "name": "Security",
-      "pages": 272
+      "pages": 176
+    },
+    {
+      "name": "Widgets",
+      "pages": 166
+    },
+    {
+      "name": "Miscellaneous",
+      "pages": 147
     },
     {
       "name": "SEO",
-      "pages": 262
+      "pages": 108
+    },
+    {
+      "name": "Ecommerce",
+      "pages": 103
     },
     {
       "name": "JavaScript graphics",
-      "pages": 140
-    },
-    {
-      "name": "PaaS",
-      "pages": 125
-    },
-    {
-      "name": "Video players",
-      "pages": 114
+      "pages": 89
     },
     {
       "name": "Cookie compliance",
-      "pages": 104
+      "pages": 83
     },
     {
-      "name": "Page builders",
-      "pages": 88
+      "name": "PaaS",
+      "pages": 63
+    },
+    {
+      "name": "Video players",
+      "pages": 60
     },
     {
       "name": "Rich text editors",
-      "pages": 55
+      "pages": 40
     },
     {
       "name": "Web server extensions",
-      "pages": 51
+      "pages": 36
     },
     {
-      "name": "Analytics",
-      "pages": 14
-    },
-    {
-      "name": "Marketing automation",
-      "pages": 14
-    },
-    {
-      "name": "Static site generator",
-      "pages": 14
+      "name": "Page builders",
+      "pages": 30
     },
     {
       "name": "LMS",
-      "pages": 12
+      "pages": 11
     },
     {
-      "name": "Editors",
+      "name": "Marketing automation",
       "pages": 10
     },
     {
-      "name": "Hosting panels",
-      "pages": 10
-    },
-    {
-      "name": "Mobile frameworks",
-      "pages": 10
-    },
-    {
-      "name": "Search engines",
+      "name": "Analytics",
       "pages": 7
     },
     {
-      "name": "Wikis",
+      "name": "Mobile frameworks",
+      "pages": 6
+    },
+    {
+      "name": "Search engines",
+      "pages": 5
+    },
+    {
+      "name": "Hosting panels",
       "pages": 5
     },
     {
@@ -1907,31 +1534,27 @@
       "pages": 5
     },
     {
+      "name": "Editors",
+      "pages": 4
+    },
+    {
+      "name": "Wikis",
+      "pages": 3
+    },
+    {
       "name": "Social login",
       "pages": 3
+    },
+    {
+      "name": "Static site generator",
+      "pages": 2
     },
     {
       "name": "Accessibility",
       "pages": 2
     },
     {
-      "name": "Advertising",
-      "pages": 2
-    },
-    {
-      "name": "Documentation",
-      "pages": 2
-    },
-    {
       "name": "Live chat",
-      "pages": 1
-    },
-    {
-      "name": "Issue trackers",
-      "pages": 1
-    },
-    {
-      "name": "Network storage",
       "pages": 1
     }
   ],
@@ -1971,24 +1594,6 @@
       "total_scanned": 415,
       "total_detected": 412,
       "last_scan": "2026-04-07T22:19:21.741282+00:00"
-    },
-    {
-      "country_code": "ESTONIA",
-      "total_scanned": 396,
-      "total_detected": 388,
-      "last_scan": "2026-04-08T06:59:03.848781+00:00"
-    },
-    {
-      "country_code": "FINLAND",
-      "total_scanned": 180,
-      "total_detected": 172,
-      "last_scan": "2026-04-08T07:05:10.063999+00:00"
-    },
-    {
-      "country_code": "FRANCE",
-      "total_scanned": 2457,
-      "total_detected": 2282,
-      "last_scan": "2026-04-08T08:35:41.684595+00:00"
     }
   ]
 }
