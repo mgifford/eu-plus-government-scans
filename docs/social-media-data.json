@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-08 06:29 UTC",
+  "generated_at": "2026-04-08 08:23 UTC",
   "summary": {
-    "total_batches": 178,
+    "total_batches": 179,
     "total_scanned": 82714,
-    "total_reachable": 77260,
+    "total_reachable": 77298,
     "total_available": 82714,
-    "twitter_pages": 14544,
-    "x_pages": 3295,
+    "twitter_pages": 14572,
+    "x_pages": 3297,
     "bluesky_pages": 626,
-    "mastodon_pages": 4273,
-    "facebook_pages": 27261,
-    "linkedin_pages": 9368,
+    "mastodon_pages": 4278,
+    "facebook_pages": 27287,
+    "linkedin_pages": 9370,
     "first_scan": "2026-03-22T00:36:33.003106+00:00",
-    "last_scan": "2026-04-08T04:50:45.220477+00:00"
+    "last_scan": "2026-04-08T06:40:20.591791+00:00"
   },
   "by_country": [
     {
@@ -612,23 +612,23 @@
     {
       "country_code": "SPAIN",
       "total_scanned": 6069,
-      "reachable": 5421,
-      "twitter_pages": 1775,
-      "x_pages": 368,
+      "reachable": 5459,
+      "twitter_pages": 1803,
+      "x_pages": 370,
       "bluesky_pages": 51,
-      "mastodon_pages": 305,
-      "facebook_pages": 1765,
-      "linkedin_pages": 485,
-      "twitter_only": 2024,
+      "mastodon_pages": 310,
+      "facebook_pages": 1791,
+      "linkedin_pages": 487,
+      "twitter_only": 2052,
       "modern_only": 29,
-      "mixed": 318,
-      "no_social": 3164,
-      "has_any_legacy": 2342,
-      "has_any_modern": 335,
+      "mixed": 323,
+      "no_social": 3177,
+      "has_any_legacy": 2374,
+      "has_any_modern": 340,
       "first_scan": "2026-03-30T03:30:16.840716+00:00",
-      "last_scan": "2026-04-07T04:50:43.775513+00:00",
-      "sovereignty_score": 58.9,
-      "legacy_exposure": 43.2,
+      "last_scan": "2026-04-08T06:40:20.591791+00:00",
+      "sovereignty_score": 58.7,
+      "legacy_exposure": 43.5,
       "sovereignty_tier": "🥉 Growing"
     },
     {
@@ -237310,8 +237310,9 @@
         {
           "page_url": "http://pop.jccm.es/acredita/acredita/convocatorias-acredita-2021/",
           "detected_links": [
-            "http://twitter.com/home?status=Convocatorias%20ACREDITA%202021%20http://pop.jccm.es/acredita/acredita/convocatorias-acredita-2021",
-            "http://twitter.com/popclm"
+            "http://twitter.com/home?status=Convocatorias%20ACREDITA%202021%20http://pop.jccm.es/?id=347",
+            "http://twitter.com/popclm",
+            "http://twitter.com/home?status=Convocatorias%20ACREDITA%202021%20http://pop.jccm.es/acredita/acredita/convocatorias-acredita-2021"
           ]
         },
         {
@@ -242471,6 +242472,12 @@
           ]
         },
         {
+          "page_url": "https://ies-alonsodeercilla.centros.castillalamancha.es/",
+          "detected_links": [
+            "http://www.twitter.com/educajccm"
+          ]
+        },
+        {
           "page_url": "https://ies-alonsodeercilla.centros.castillalamancha.es/contacta-con-nosotros",
           "detected_links": [
             "http://www.twitter.com/educajccm"
@@ -242478,6 +242485,12 @@
         },
         {
           "page_url": "https://ies-amparosanz.centros.castillalamancha.es/",
+          "detected_links": [
+            "http://www.twitter.com/educajccm"
+          ]
+        },
+        {
+          "page_url": "https://ies-amparosanz.centros.castillalamancha.es/albumes/im%C3%A1genes-del-ies-amparo-sanz",
           "detected_links": [
             "http://www.twitter.com/educajccm"
           ]
@@ -242508,6 +242521,12 @@
           ]
         },
         {
+          "page_url": "https://ies-antoniojimenezlandi.centros.castillalamancha.es/",
+          "detected_links": [
+            "http://www.twitter.com/AntonioJLandi"
+          ]
+        },
+        {
           "page_url": "https://ies-antoniojimenezlandi.centros.castillalamancha.es/avisolegal",
           "detected_links": [
             "http://www.twitter.com/AntonioJLandi"
@@ -242521,6 +242540,12 @@
         },
         {
           "page_url": "https://ies-arenales.centros.castillalamancha.es/",
+          "detected_links": [
+            "http://www.twitter.com/arenalestajo"
+          ]
+        },
+        {
+          "page_url": "https://ies-arenales.centros.castillalamancha.es/anuncios/enlace-la-prueba-de-evaluaci%C3%B3n-de-diagn%C3%B3stico-2425",
           "detected_links": [
             "http://www.twitter.com/arenalestajo"
           ]
@@ -242541,6 +242566,12 @@
           "page_url": "https://ies-blasdeprado.centros.castillalamancha.es/",
           "detected_links": [
             "http://www.twitter.com/educajccm"
+          ]
+        },
+        {
+          "page_url": "https://ies-bonifaciosotos.centros.castillalamancha.es/",
+          "detected_links": [
+            "https://twitter.com/Iesbonifacio"
           ]
         },
         {
@@ -242569,6 +242600,12 @@
         },
         {
           "page_url": "https://ies-castilloaguila.centros.castillalamancha.es/nuestro-centro/el-centro",
+          "detected_links": [
+            "http://www.twitter.com/educajccm"
+          ]
+        },
+        {
+          "page_url": "https://ies-chiloeches.centros.castillalamancha.es/",
           "detected_links": [
             "http://www.twitter.com/educajccm"
           ]
@@ -242622,13 +242659,31 @@
           ]
         },
         {
+          "page_url": "https://ies-diegodesiloe.centros.castillalamancha.es/",
+          "detected_links": [
+            "http://www.twitter.com/educajccm"
+          ]
+        },
+        {
           "page_url": "https://ies-diegodesiloe.centros.castillalamancha.es/nuestro-centro/normas-de-organizaci%C3%B3n-funcionamiento-y-convivencia-del-centro-y-del-aula",
           "detected_links": [
             "http://www.twitter.com/educajccm"
           ]
         },
         {
+          "page_url": "https://ies-escultorjlsanchez.centros.castillalamancha.es/",
+          "detected_links": [
+            "http://www.twitter.com/educajccm"
+          ]
+        },
+        {
           "page_url": "https://ies-fernando-de-mena.centros.castillalamancha.es/",
+          "detected_links": [
+            "https://twitter.com/IES_FMena"
+          ]
+        },
+        {
+          "page_url": "https://ies-fernando-de-mena.centros.castillalamancha.es/anuncios/elecciones-consejo-escolar-modelo-de-papeleta-e-instrucciones-para-el-voto-por-correo",
           "detected_links": [
             "https://twitter.com/IES_FMena"
           ]
@@ -242647,6 +242702,12 @@
         },
         {
           "page_url": "https://ies-fernandozobel.centros.castillalamancha.es/",
+          "detected_links": [
+            "http://www.twitter.com/educajccm"
+          ]
+        },
+        {
+          "page_url": "https://ies-fernandozobel.centros.castillalamancha.es/anuncios/premios-certamen-de-artes-pl%C3%A1sticas-2025",
           "detected_links": [
             "http://www.twitter.com/educajccm"
           ]
@@ -242673,6 +242734,12 @@
           "page_url": "https://ies-francisconieva.centros.castillalamancha.es/videos/25n-el-nieva-contra-la-violencia-de-g%C3%A9nero",
           "detected_links": [
             "https://twitter.com/IES_FNieva"
+          ]
+        },
+        {
+          "page_url": "https://ies-galileogalilei.centros.castillalamancha.es/",
+          "detected_links": [
+            "http://www.twitter.com/educajccm"
           ]
         },
         {
@@ -242712,6 +242779,12 @@
           ]
         },
         {
+          "page_url": "https://ies-hernanperezdelpulgar.centros.castillalamancha.es/contacta-con-nosotros",
+          "detected_links": [
+            "https://twitter.com/ieshernan"
+          ]
+        },
+        {
           "page_url": "https://ies-jlsampedro.centros.castillalamancha.es/",
           "detected_links": [
             "http://www.twitter.com/educajccm"
@@ -242719,6 +242792,12 @@
         },
         {
           "page_url": "https://ies-josefinaaldecoa.centros.castillalamancha.es/",
+          "detected_links": [
+            "http://www.twitter.com/educajccm"
+          ]
+        },
+        {
+          "page_url": "https://ies-josefinaaldecoa.centros.castillalamancha.es/albumes/fondos-europeos-pmar",
           "detected_links": [
             "http://www.twitter.com/educajccm"
           ]
@@ -242748,6 +242827,12 @@
           ]
         },
         {
+          "page_url": "https://ies-lacanuela.centros.castillalamancha.es/",
+          "detected_links": [
+            "https://twitter.com/ieslacanuela"
+          ]
+        },
+        {
           "page_url": "https://ies-lacanuela.centros.castillalamancha.es/anuncios/vi-plan-de-%C3%A9xito-educativo-y-prevenci%C3%B3n-del-abandono-escolar-temprano",
           "detected_links": [
             "https://twitter.com/ieslacanuela"
@@ -242755,6 +242840,12 @@
         },
         {
           "page_url": "https://ies-lazarillo.centros.castillalamancha.es/",
+          "detected_links": [
+            "http://www.twitter.com/educajccm"
+          ]
+        },
+        {
+          "page_url": "https://ies-lazarillo.centros.castillalamancha.es/albumes/actuaci%C3%B3n-4eso-artes-esc%C3%A9nicas-en-teatro-victoria-de-talavera-abril-2025",
           "detected_links": [
             "http://www.twitter.com/educajccm"
           ]
@@ -242784,6 +242875,12 @@
           ]
         },
         {
+          "page_url": "https://ies-liceocaracense.centros.castillalamancha.es/anuncios/espa%C3%B1-suma-otras-cuatro-medallas-un-oro-una-plata-y-dos-bronces-en-las-olimpiadas-de-la",
+          "detected_links": [
+            "http://www.twitter.com/liceocaracense"
+          ]
+        },
+        {
           "page_url": "https://ies-lorenzohervasypanduro.centros.castillalamancha.es/",
           "detected_links": [
             "http://www.twitter.com/educajccm"
@@ -242808,6 +242905,12 @@
           ]
         },
         {
+          "page_url": "https://ies-maria-zambrano.centros.castillalamancha.es/",
+          "detected_links": [
+            "http://www.twitter.com/educajccm"
+          ]
+        },
+        {
           "page_url": "https://ies-maria-zambrano.centros.castillalamancha.es/anuncios/inicio-convocatoria-ayudas-uso-de-libros-de-texto-y-comedores-escolares-curso-2023-2024",
           "detected_links": [
             "http://www.twitter.com/educajccm"
@@ -242815,6 +242918,12 @@
         },
         {
           "page_url": "https://ies-maria-zambrano.centros.castillalamancha.es/videos/trabajo-en-el-laboratorio-en-el-ies-mar%C3%AD-zambrano-reportaje-alc%C3%A1zar-media",
+          "detected_links": [
+            "http://www.twitter.com/educajccm"
+          ]
+        },
+        {
+          "page_url": "https://ies-maximolaguna.centros.castillalamancha.es/",
           "detected_links": [
             "http://www.twitter.com/educajccm"
           ]
@@ -242844,7 +242953,19 @@
           ]
         },
         {
+          "page_url": "https://ies-pastrana.centros.castillalamancha.es/",
+          "detected_links": [
+            "http://www.twitter.com/educajccm"
+          ]
+        },
+        {
           "page_url": "https://ies-pastrana.centros.castillalamancha.es/albumes/visita-la-rec%C3%B3polis-y-castillo-de-zorita-2018",
+          "detected_links": [
+            "http://www.twitter.com/educajccm"
+          ]
+        },
+        {
+          "page_url": "https://ies-perezpastor.centros.castillalamancha.es/",
           "detected_links": [
             "http://www.twitter.com/educajccm"
           ]
@@ -242922,6 +243043,12 @@
           ]
         },
         {
+          "page_url": "https://ies-sotomayor.centros.castillalamancha.es/",
+          "detected_links": [
+            "http://www.twitter.com/educajccm"
+          ]
+        },
+        {
           "page_url": "https://ies-sotomayor.centros.castillalamancha.es/videos/presentaci%C3%B3n-ies-sotomayor-formando-en-valores-manzanares-ciudad-educadora-noviembre-2019",
           "detected_links": [
             "http://www.twitter.com/educajccm"
@@ -242941,6 +243068,12 @@
         },
         {
           "page_url": "https://ies-valledelhenares.centros.castillalamancha.es/",
+          "detected_links": [
+            "http://www.twitter.com/educajccm"
+          ]
+        },
+        {
+          "page_url": "https://ies-valledelhenares.centros.castillalamancha.es/content/banco-de-recursos-educativos-abiertos-rea",
           "detected_links": [
             "http://www.twitter.com/educajccm"
           ]
@@ -243530,6 +243663,13 @@
           ]
         },
         {
+          "page_url": "https://ivaj.gva.es/",
+          "detected_links": [
+            "http://www.twitter.com/GVAivaj",
+            "https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fplatform.twitter.com%2Fwidgets%2Ffollow_button.1357323348.html®ion=follow_link&screen_name=GVAivaj&tw_p=followbutton&variant=2.0"
+          ]
+        },
+        {
           "page_url": "https://ivaj.gva.es/ca/inici/-/asset_publisher/xPCcurp3nMrb/content/l-ivaj-augmenta-fins-als-775.000-euros-les-ajudes-per-a-entitats-juvenils-en-2025?_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_xPCcurp3nMrb_assetEntryId=394292253&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_xPCcurp3nMrb_redirect=https%3A%2F%2Fivaj.gva.es%2Fca%2Finici%3Fp_p_id%3Dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_xPCcurp3nMrb%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_xPCcurp3nMrb_cur%3D0%26p_r_p_resetCur%3Dfalse%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_xPCcurp3nMrb_assetEntryId%3D394292253",
           "detected_links": [
             "http://www.twitter.com/GVAivaj",
@@ -243880,6 +244020,18 @@
           ]
         },
         {
+          "page_url": "https://libreriavirtual.trabajo.gob.es/libreriavirtual/detalle/ERT0037",
+          "detected_links": [
+            "https://twitter.com/PublicMEYSS"
+          ]
+        },
+        {
+          "page_url": "https://libreriavirtual.trabajo.gob.es/libreriavirtual/puntosYDistribuidores",
+          "detected_links": [
+            "https://twitter.com/PublicMEYSS"
+          ]
+        },
+        {
           "page_url": "https://llengua.gencat.cat/",
           "detected_links": [
             "https://twitter.com/llenguacatalana"
@@ -243985,6 +244137,7 @@
           "page_url": "https://marinabaixa.san.gva.es/",
           "detected_links": [
             "https://twitter.com/GVAsanitat",
+            "https://twitter.com/intent/tweet?text=L'HOSPITAL+UNIVERSITARI+MARINA+BAIXA+reforça+l'activitat+de+l'Àrea+d'Hospital+de+Dia&tw_p=tweetbutton&url=https://marinabaixa.san.gva.es/ca/portada/-/asset_publisher/qo4oKiPcagXn/content/l-hospital-universitari-marina-baixa-refor%C3%A7a-l-activitat-de-l-%C3%A0rea-d-hospital-de-dia-amb?p_r_p_assetEntryId=154478884&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_type=content&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_urlTitle=l-hospital-universitari-marina-baixa-refor%25C3%25A7a-l-activitat-de-l-%25C3%25A0rea-d-hospital-de-dia-amb&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_redirect=https%3A%2F%2Fmarinabaixa.san.gva.es%2Fca%2Fportada%3Fp_p_id%3Dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_r_p_assetEntryId%3D154478884%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_cur%3D0%26p_r_p_resetCur%3Dfalse",
             "https://twitter.com/intent/tweet?text=Curs+en+línia+del+Ministeri+«Competències+d'autocura+i+cura+per+a+cuidadors+informals»&tw_p=tweetbutton&url=https://marinabaixa.san.gva.es/ca/portada/-/asset_publisher/qo4oKiPcagXn/content/curs-en-l%C3%ADnia-del-ministeri-%C2%ABcompet%C3%A8ncies-d-autocura-i-cura-per-a-cuidadors-informals%C2%BB?p_r_p_assetEntryId=150924172&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_type=content&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_urlTitle=curs-en-l%25C3%25ADnia-del-ministeri-%25C2%25ABcompet%25C3%25A8ncies-d-autocura-i-cura-per-a-cuidadors-informals%25C2%25BB&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_redirect=https%3A%2F%2Fmarinabaixa.san.gva.es%2Fca%2Fportada%3Fp_p_id%3Dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_r_p_assetEntryId%3D150924172%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_cur%3D0%26p_r_p_resetCur%3Dfalse",
             "https://twitter.com/intent/tweet?text=Sanitat+ampliarà+el+consultori+auxiliar+de+la+Cala+de+La+Vila+Joiosa+gràcies+a+l'adquisició+d'un+nou+local+cedit+per+l'Ajuntament&tw_p=tweetbutton&url=https://marinabaixa.san.gva.es/ca/portada/-/asset_publisher/qo4oKiPcagXn/content/sanitat-ampliar%C3%A0-el-consultori-auxiliar-de-la-cala-de-la-vila-joiosa-gr%C3%A0cies-a-l-adquisici%C3%B3-d-un-nou-local-cedit-per-l-ajuntament?p_r_p_assetEntryId=150427004&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_type=content&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_urlTitle=sanitat-ampliar%25C3%25A0-el-consultori-auxiliar-de-la-cala-de-la-vila-joiosa-gr%25C3%25A0cies-a-l-adquisici%25C3%25B3-d-un-nou-local-cedit-per-l-ajuntament&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_redirect=https%3A%2F%2Fmarinabaixa.san.gva.es%2Fca%2Fportada%3Fp_p_id%3Dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_r_p_assetEntryId%3D150427004%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_cur%3D0%26p_r_p_resetCur%3Dfalse",
             "https://twitter.com/intent/tweet?text=Pérez+Llorca+assenyala+que+el+nou+Centre+de+Salut+el+Racó+de+Loix+de+Benidorm+millora+l'accessibilitat,+assistència+i+organització+de+personal+i+usuaris&tw_p=tweetbutton&url=https://marinabaixa.san.gva.es/ca/portada/-/asset_publisher/qo4oKiPcagXn/content/p%C3%A9rez-llorca-assenyala-que-el-nou-centre-de-salut-el-rac%C3%B3-de-loix-de-benidorm-millora-l-accessibilitat-assist%C3%A8ncia-i-organitzaci%C3%B3-de-personal-i-usuaris?p_r_p_assetEntryId=148336257&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_type=content&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_urlTitle=p%25C3%25A9rez-llorca-assenyala-que-el-nou-centre-de-salut-el-rac%25C3%25B3-de-loix-de-benidorm-millora-l-accessibilitat-assist%25C3%25A8ncia-i-organitzaci%25C3%25B3-de-personal-i-usuaris&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_redirect=https%3A%2F%2Fmarinabaixa.san.gva.es%2Fca%2Fportada%3Fp_p_id%3Dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_r_p_assetEntryId%3D148336257%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_cur%3D0%26p_r_p_resetCur%3Dfalse",
@@ -244435,9 +244588,28 @@
           ]
         },
         {
+          "page_url": "https://ojs.sanidad.gob.es/",
+          "detected_links": [
+            "https://twitter.com/RESaludPublica"
+          ]
+        },
+        {
+          "page_url": "https://ojs.sanidad.gob.es/index.php/resp/announcement/view/13",
+          "detected_links": [
+            "https://twitter.com/RESaludPublica"
+          ]
+        },
+        {
+          "page_url": "https://ojs.sanidad.gob.es/index.php/resp/index",
+          "detected_links": [
+            "https://twitter.com/RESaludPublica"
+          ]
+        },
+        {
           "page_url": "https://orihuela.san.gva.es/",
           "detected_links": [
             "https://twitter.com/GVAsanitat",
+            "https://twitter.com/intent/tweet?text=Josefina+Salinas,+nova+subdirectora+d'Infermeria+de+l'Hospital+Universitari+Vega+Baixa+d'Orihuela&tw_p=tweetbutton&url=https://orihuela.san.gva.es/ca/-/josefina-salinas-nova-subdirectora-d-infermeria-de-l-hospital-universitari-vega-baixa-d-orihuela",
             "https://twitter.com/intent/tweet?text=L'Hospital+Universitari+Vega+Baixa+mostra+als+futurs+residents+el+seu+creixement+i+oportunitats+de+formació&tw_p=tweetbutton&url=https://orihuela.san.gva.es/ca/-/l-hospital-universitari-vega-baixa-mostra-als-futurs-residents-el-seu-creixement-i-oportunitats-de-formaci%C3%B3-1",
             "https://twitter.com/intent/tweet?text=Sanitat+nomena+a+Laura+Párraga+nova+directora+d'Infermeria+d'Atenció+Primària+del+Departament+de+Salut+d'Orihuela&tw_p=tweetbutton&url=https://orihuela.san.gva.es/ca/-/sanitat-nomena-a-laura-p%C3%A1rraga-nova-directora-d-infermeria-d-atenci%C3%B3-prim%C3%A0ria-del-departament-de-salut-d-orihuela",
             "https://twitter.com/intent/tweet?text=El+Departamento+de+Salud+de+Orihuela+abre+sus+puertas+a+futuros+residentes+el+26+de+marzo&tw_p=tweetbutton&url=https://orihuela.san.gva.es/ca/inicio/-/asset_publisher/dtO2oDb0UDxe/content/el-departamento-de-salud-de-orihuela-celebra-su-jornada-de-puertas-abiertas-a-residentes-el-26-de-marzo?p_r_p_assetEntryId=148224917&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_dtO2oDb0UDxe_type=content&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_dtO2oDb0UDxe_urlTitle=el-departamento-de-salud-de-orihuela-celebra-su-jornada-de-puertas-abiertas-a-residentes-el-26-de-marzo&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_dtO2oDb0UDxe_redirect=https%3A%2F%2Forihuela.san.gva.es%2Fca%2Finicio%3Fp_p_id%3Dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_dtO2oDb0UDxe%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_r_p_assetEntryId%3D148224917%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_dtO2oDb0UDxe_cur%3D0%26p_r_p_resetCur%3Dfalse",
@@ -244466,13 +244638,14 @@
         {
           "page_url": "https://parcsnaturals.gencat.cat/",
           "detected_links": [
-            "https://twitter.com/pnaltpirineu",
-            "https://twitter.com/parcscat?lang=ca"
+            "https://twitter.com/parcscat?lang=ca",
+            "https://twitter.com/pnaltpirineu"
           ]
         },
         {
           "page_url": "https://parcsnaturals.gencat.cat/ca/inici/",
           "detected_links": [
+            "https://twitter.com/pnaltpirineu",
             "https://twitter.com/parcscat?lang=ca"
           ]
         },
@@ -249321,6 +249494,18 @@
           ]
         },
         {
+          "page_url": "https://pepac.castillalamancha.es/",
+          "detected_links": [
+            "https://x.com/gobjccm"
+          ]
+        },
+        {
+          "page_url": "https://pepac.castillalamancha.es/plan-estrategico-de-la-pac",
+          "detected_links": [
+            "https://x.com/gobjccm"
+          ]
+        },
+        {
           "page_url": "https://portal-cec.consumo.gob.es/",
           "detected_links": [
             "https://x.com/eccspain"
@@ -251286,6 +251471,7 @@
         {
           "page_url": "https://imd.sevilla.org/",
           "detected_links": [
+            "https://imd.sevilla.org/@@search?advanced_search=True&review_state=published&amp;start.query:record:list:date=2026-4-12+23%3A59%3A59&start.range:record=max&end.query:record:list:date=2026-4-12+00%3A00%3A00&end.range:record=min&list:&Type=Event&amp;",
             "https://imd.sevilla.org/@@search?advanced_search=True&review_state=published&amp;start.query:record:list:date=2026-3-6+23%3A59%3A59&start.range:record=max&end.query:record:list:date=2026-3-6+00%3A00%3A00&end.range:record=min&list:&Type=Event&amp;",
             "https://imd.sevilla.org/@@search?advanced_search=True&review_state=published&amp;start.query:record:list:date=2026-3-7+23%3A59%3A59&start.range:record=max&end.query:record:list:date=2026-3-7+00%3A00%3A00&end.range:record=min&list:&Type=Event&amp;",
             "https://imd.sevilla.org/@@search?advanced_search=True&review_state=published&amp;start.query:record:list:date=2026-3-8+23%3A59%3A59&start.range:record=max&end.query:record:list:date=2026-3-8+00%3A00%3A00&end.range:record=min&list:&Type=Event&amp;",
@@ -251294,6 +251480,12 @@
             "https://imd.sevilla.org/@@search?advanced_search=True&review_state=published&amp;start.query:record:list:date=2026-3-15+23%3A59%3A59&start.range:record=max&end.query:record:list:date=2026-3-15+00%3A00%3A00&end.range:record=min&list:&Type=Event&amp;",
             "https://imd.sevilla.org/@@search?advanced_search=True&review_state=published&amp;start.query:record:list:date=2026-3-21+23%3A59%3A59&start.range:record=max&end.query:record:list:date=2026-3-21+00%3A00%3A00&end.range:record=min&list:&Type=Event&amp;",
             "https://imd.sevilla.org/@@search?advanced_search=True&review_state=published&amp;start.query:record:list:date=2026-3-22+23%3A59%3A59&start.range:record=max&end.query:record:list:date=2026-3-22+00%3A00%3A00&end.range:record=min&list:&Type=Event&amp;"
+          ]
+        },
+        {
+          "page_url": "https://imv.malaga.eu/es/promociones-venta-alquiler/index.html",
+          "detected_links": [
+            "https://www.youtube.com/@CiudadDeMalaga/streams"
           ]
         },
         {
@@ -251312,6 +251504,12 @@
           "page_url": "https://infocam.castillalamancha.es/noticias",
           "detected_links": [
             "https://www.youtube.com/@planinfocam5932"
+          ]
+        },
+        {
+          "page_url": "https://ivaj.gva.es/",
+          "detected_links": [
+            "https://www.tiktok.com/@gvaivaj"
           ]
         },
         {
@@ -251492,6 +251690,24 @@
           "page_url": "https://museodeartesescenicas.inaem.gob.es/exposicion-permanente/",
           "detected_links": [
             "https://www.tiktok.com/@mnaescenicas?_t=ZN-8uEhfU8qcEw&_r=1"
+          ]
+        },
+        {
+          "page_url": "https://ojs.sanidad.gob.es/",
+          "detected_links": [
+            "https://www.youtube.com/@RESaludPublica"
+          ]
+        },
+        {
+          "page_url": "https://ojs.sanidad.gob.es/index.php/resp/announcement/view/13",
+          "detected_links": [
+            "https://www.youtube.com/@RESaludPublica"
+          ]
+        },
+        {
+          "page_url": "https://ojs.sanidad.gob.es/index.php/resp/index",
+          "detected_links": [
+            "https://www.youtube.com/@RESaludPublica"
           ]
         },
         {
@@ -253090,8 +253306,9 @@
         {
           "page_url": "http://pop.jccm.es/acredita/acredita/convocatorias-acredita-2021/",
           "detected_links": [
-            "http://www.facebook.com/sharer.php?u=http://pop.jccm.es/acredita/acredita/convocatorias-acredita-2021&t=Convocatorias%20ACREDITA%202021",
-            "http://www.facebook.com/?ref=home#!/pages/POP-Portal-de-Orientacion-Profesional-de-CLM/120110244687254?ref=ts"
+            "http://www.facebook.com/sharer.php?u=http://pop.jccm.es/?id=347&t=Convocatorias%20ACREDITA%202021",
+            "http://www.facebook.com/?ref=home#!/pages/POP-Portal-de-Orientacion-Profesional-de-CLM/120110244687254?ref=ts",
+            "http://www.facebook.com/sharer.php?u=http://pop.jccm.es/acredita/acredita/convocatorias-acredita-2021&t=Convocatorias%20ACREDITA%202021"
           ]
         },
         {
@@ -258126,6 +258343,18 @@
           ]
         },
         {
+          "page_url": "https://ies-aguasvivas.centros.castillalamancha.es/albumes/los-alumnos-de-eca-y-su-profesora-inmaculada-sim%C3%B3n-ganadores-en-iv-foro-open-innovation",
+          "detected_links": [
+            "https://www.facebook.com/iesaguasvivasguadalajara"
+          ]
+        },
+        {
+          "page_url": "https://ies-alejovera.centros.castillalamancha.es/",
+          "detected_links": [
+            "https://www.facebook.com/alejo.vera.73"
+          ]
+        },
+        {
           "page_url": "https://ies-alejovera.centros.castillalamancha.es/actividades/talleres-de-recreo-202425",
           "detected_links": [
             "https://www.facebook.com/alejo.vera.73"
@@ -258135,6 +258364,12 @@
           "page_url": "https://ies-alejovera.centros.castillalamancha.es/videos/manifiesto-8m-2024-d%C3%AD-intenacional-de-la-mujer",
           "detected_links": [
             "https://www.facebook.com/alejo.vera.73"
+          ]
+        },
+        {
+          "page_url": "https://ies-alonsodeercilla.centros.castillalamancha.es/",
+          "detected_links": [
+            "https://www.facebook.com/educacionjccm"
           ]
         },
         {
@@ -258154,6 +258389,12 @@
           "detected_links": [
             "https://www.facebook.com/educacionjccm",
             "https://www.facebook.com/profile.php?id=100011177827029"
+          ]
+        },
+        {
+          "page_url": "https://ies-amparosanz.centros.castillalamancha.es/albumes/im%C3%A1genes-del-ies-amparo-sanz",
+          "detected_links": [
+            "https://www.facebook.com/educacionjccm"
           ]
         },
         {
@@ -258213,6 +258454,12 @@
           ]
         },
         {
+          "page_url": "https://ies-bonifaciosotos.centros.castillalamancha.es/",
+          "detected_links": [
+            "https://www.facebook.com/educacionjccm"
+          ]
+        },
+        {
           "page_url": "https://ies-bonifaciosotos.centros.castillalamancha.es/nuestro-centro/carta-de-convivencia-del-ies-bonifacio-sotos",
           "detected_links": [
             "https://www.facebook.com/educacionjccm"
@@ -258250,6 +258497,12 @@
         },
         {
           "page_url": "https://ies-castilloaguila.centros.castillalamancha.es/nuestro-centro/el-centro",
+          "detected_links": [
+            "https://www.facebook.com/educacionjccm"
+          ]
+        },
+        {
+          "page_url": "https://ies-chiloeches.centros.castillalamancha.es/",
           "detected_links": [
             "https://www.facebook.com/educacionjccm"
           ]
@@ -258309,7 +258562,19 @@
           ]
         },
         {
+          "page_url": "https://ies-diegodesiloe.centros.castillalamancha.es/",
+          "detected_links": [
+            "https://www.facebook.com/educacionjccm"
+          ]
+        },
+        {
           "page_url": "https://ies-diegodesiloe.centros.castillalamancha.es/nuestro-centro/normas-de-organizaci%C3%B3n-funcionamiento-y-convivencia-del-centro-y-del-aula",
+          "detected_links": [
+            "https://www.facebook.com/educacionjccm"
+          ]
+        },
+        {
+          "page_url": "https://ies-escultorjlsanchez.centros.castillalamancha.es/",
           "detected_links": [
             "https://www.facebook.com/educacionjccm"
           ]
@@ -258319,6 +258584,12 @@
           "detected_links": [
             "https://www.facebook.com/educacionjccm",
             "https://www.facebook.com/IesFernandodeMena/"
+          ]
+        },
+        {
+          "page_url": "https://ies-fernando-de-mena.centros.castillalamancha.es/anuncios/elecciones-consejo-escolar-modelo-de-papeleta-e-instrucciones-para-el-voto-por-correo",
+          "detected_links": [
+            "https://www.facebook.com/educacionjccm"
           ]
         },
         {
@@ -258340,6 +258611,12 @@
           ]
         },
         {
+          "page_url": "https://ies-fernandozobel.centros.castillalamancha.es/anuncios/premios-certamen-de-artes-pl%C3%A1sticas-2025",
+          "detected_links": [
+            "https://www.facebook.com/educacionjccm"
+          ]
+        },
+        {
           "page_url": "https://ies-franciscodequevedo.centros.castillalamancha.es/",
           "detected_links": [
             "https://www.facebook.com/profile.php?id=100015153521523"
@@ -258349,6 +258626,12 @@
           "page_url": "https://ies-franciscodequevedo.centros.castillalamancha.es/videos/fase-final-provincial-del-campeonato-escolar-de-baloncesto-3%C3%973",
           "detected_links": [
             "https://www.facebook.com/profile.php?id=100015153521523"
+          ]
+        },
+        {
+          "page_url": "https://ies-galileogalilei.centros.castillalamancha.es/",
+          "detected_links": [
+            "https://www.facebook.com/educacionjccm"
           ]
         },
         {
@@ -258395,6 +258678,13 @@
           ]
         },
         {
+          "page_url": "https://ies-josefinaaldecoa.centros.castillalamancha.es/albumes/fondos-europeos-pmar",
+          "detected_links": [
+            "https://www.facebook.com/educacionjccm",
+            "https://www.facebook.com/pg/ampajosefinaaldecoa/about/?ref=page_internal"
+          ]
+        },
+        {
           "page_url": "https://ies-josefinaaldecoa.centros.castillalamancha.es/nuestro-centro/el-centro",
           "detected_links": [
             "https://www.facebook.com/educacionjccm",
@@ -258420,10 +258710,23 @@
           ]
         },
         {
+          "page_url": "https://ies-justomillan.centros.castillalamancha.es/",
+          "detected_links": [
+            "https://www.facebook.com/iesjm/?locale=es_ES",
+            "https://www.facebook.com/educacionjccm"
+          ]
+        },
+        {
           "page_url": "https://ies-justomillan.centros.castillalamancha.es/anuncios/publicaci%C3%B3n-de-la-adjudicaci%C3%B3n-de-vacantes-en-ccff-del-alumnado-en-listas-de-espera",
           "detected_links": [
             "https://www.facebook.com/iesjm/?locale=es_ES",
             "https://www.facebook.com/educacionjccm"
+          ]
+        },
+        {
+          "page_url": "https://ies-lacanuela.centros.castillalamancha.es/",
+          "detected_links": [
+            "https://www.facebook.com/Ies-La-Ca%C3%B1uela-Yuncos-1107295005990081/"
           ]
         },
         {
@@ -258434,6 +258737,12 @@
         },
         {
           "page_url": "https://ies-lazarillo.centros.castillalamancha.es/",
+          "detected_links": [
+            "https://www.facebook.com/educacionjccm"
+          ]
+        },
+        {
+          "page_url": "https://ies-lazarillo.centros.castillalamancha.es/albumes/actuaci%C3%B3n-4eso-artes-esc%C3%A9nicas-en-teatro-victoria-de-talavera-abril-2025",
           "detected_links": [
             "https://www.facebook.com/educacionjccm"
           ]
@@ -258463,6 +258772,12 @@
           ]
         },
         {
+          "page_url": "https://ies-liceocaracense.centros.castillalamancha.es/anuncios/espa%C3%B1-suma-otras-cuatro-medallas-un-oro-una-plata-y-dos-bronces-en-las-olimpiadas-de-la",
+          "detected_links": [
+            "https://www.facebook.com/educacionjccm"
+          ]
+        },
+        {
           "page_url": "https://ies-losolmos.centros.castillalamancha.es/",
           "detected_links": [
             "https://www.facebook.com/educacionjccm"
@@ -258470,6 +258785,12 @@
         },
         {
           "page_url": "https://ies-losolmos.centros.castillalamancha.es/nuestro-centro/el-centro",
+          "detected_links": [
+            "https://www.facebook.com/educacionjccm"
+          ]
+        },
+        {
+          "page_url": "https://ies-maximolaguna.centros.castillalamancha.es/",
           "detected_links": [
             "https://www.facebook.com/educacionjccm"
           ]
@@ -258506,9 +258827,21 @@
           ]
         },
         {
+          "page_url": "https://ies-pastrana.centros.castillalamancha.es/",
+          "detected_links": [
+            "https://www.facebook.com/educacionjccm"
+          ]
+        },
+        {
           "page_url": "https://ies-pastrana.centros.castillalamancha.es/albumes/visita-la-rec%C3%B3polis-y-castillo-de-zorita-2018",
           "detected_links": [
             "https://www.facebook.com/educacionjccm"
+          ]
+        },
+        {
+          "page_url": "https://ies-perezpastor.centros.castillalamancha.es/",
+          "detected_links": [
+            "https://www.facebook.com/IES-Crist%C3%B3bal-P%C3%A9rez-Pastor-915767208527803/"
           ]
         },
         {
@@ -258585,6 +258918,12 @@
           ]
         },
         {
+          "page_url": "https://ies-sotomayor.centros.castillalamancha.es/",
+          "detected_links": [
+            "https://www.facebook.com/pages/IES-Pedro-Alvarez-de-Sotomayor/152419534812993"
+          ]
+        },
+        {
           "page_url": "https://ies-sotomayor.centros.castillalamancha.es/videos/presentaci%C3%B3n-ies-sotomayor-formando-en-valores-manzanares-ciudad-educadora-noviembre-2019",
           "detected_links": [
             "https://www.facebook.com/pages/IES-Pedro-Alvarez-de-Sotomayor/152419534812993"
@@ -258592,6 +258931,12 @@
         },
         {
           "page_url": "https://ies-valledelhenares.centros.castillalamancha.es/",
+          "detected_links": [
+            "https://www.facebook.com/educacionjccm"
+          ]
+        },
+        {
+          "page_url": "https://ies-valledelhenares.centros.castillalamancha.es/content/banco-de-recursos-educativos-abiertos-rea",
           "detected_links": [
             "https://www.facebook.com/educacionjccm"
           ]
@@ -259096,6 +259441,12 @@
           ]
         },
         {
+          "page_url": "https://ivaj.gva.es/",
+          "detected_links": [
+            "https://www.facebook.com/GVAivaj/"
+          ]
+        },
+        {
           "page_url": "https://ivaj.gva.es/ca/inici/-/asset_publisher/xPCcurp3nMrb/content/l-ivaj-augmenta-fins-als-775.000-euros-les-ajudes-per-a-entitats-juvenils-en-2025?_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_xPCcurp3nMrb_assetEntryId=394292253&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_xPCcurp3nMrb_redirect=https%3A%2F%2Fivaj.gva.es%2Fca%2Finici%3Fp_p_id%3Dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_xPCcurp3nMrb%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_xPCcurp3nMrb_cur%3D0%26p_r_p_resetCur%3Dfalse%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_xPCcurp3nMrb_assetEntryId%3D394292253",
           "detected_links": [
             "https://www.facebook.com/GVAivaj/"
@@ -259411,6 +259762,18 @@
           ]
         },
         {
+          "page_url": "https://libreriavirtual.trabajo.gob.es/libreriavirtual/detalle/ERT0037",
+          "detected_links": [
+            "https://www.facebook.com/pages/publicacionesMTMSS/460014554084414"
+          ]
+        },
+        {
+          "page_url": "https://libreriavirtual.trabajo.gob.es/libreriavirtual/puntosYDistribuidores",
+          "detected_links": [
+            "https://www.facebook.com/pages/publicacionesMTMSS/460014554084414"
+          ]
+        },
+        {
           "page_url": "https://llengua.gencat.cat/",
           "detected_links": [
             "https://facebook.com/llenguacatalana"
@@ -259521,6 +259884,7 @@
           "page_url": "https://marinabaixa.san.gva.es/",
           "detected_links": [
             "https://www.facebook.com/generalitatvalenciana",
+            "http://www.facebook.com/sharer.php?u=https://marinabaixa.san.gva.es/ca/portada/-/asset_publisher/qo4oKiPcagXn/content/l-hospital-universitari-marina-baixa-refor%C3%A7a-l-activitat-de-l-%C3%A0rea-d-hospital-de-dia-amb?p_r_p_assetEntryId=154478884&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_type=content&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_urlTitle=l-hospital-universitari-marina-baixa-refor%25C3%25A7a-l-activitat-de-l-%25C3%25A0rea-d-hospital-de-dia-amb&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_redirect=https%3A%2F%2Fmarinabaixa.san.gva.es%2Fca%2Fportada%3Fp_p_id%3Dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_r_p_assetEntryId%3D154478884%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_cur%3D0%26p_r_p_resetCur%3Dfalse",
             "http://www.facebook.com/sharer.php?u=https://marinabaixa.san.gva.es/ca/portada/-/asset_publisher/qo4oKiPcagXn/content/curs-en-l%C3%ADnia-del-ministeri-%C2%ABcompet%C3%A8ncies-d-autocura-i-cura-per-a-cuidadors-informals%C2%BB?p_r_p_assetEntryId=150924172&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_type=content&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_urlTitle=curs-en-l%25C3%25ADnia-del-ministeri-%25C2%25ABcompet%25C3%25A8ncies-d-autocura-i-cura-per-a-cuidadors-informals%25C2%25BB&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_redirect=https%3A%2F%2Fmarinabaixa.san.gva.es%2Fca%2Fportada%3Fp_p_id%3Dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_r_p_assetEntryId%3D150924172%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_cur%3D0%26p_r_p_resetCur%3Dfalse",
             "http://www.facebook.com/sharer.php?u=https://marinabaixa.san.gva.es/ca/portada/-/asset_publisher/qo4oKiPcagXn/content/sanitat-ampliar%C3%A0-el-consultori-auxiliar-de-la-cala-de-la-vila-joiosa-gr%C3%A0cies-a-l-adquisici%C3%B3-d-un-nou-local-cedit-per-l-ajuntament?p_r_p_assetEntryId=150427004&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_type=content&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_urlTitle=sanitat-ampliar%25C3%25A0-el-consultori-auxiliar-de-la-cala-de-la-vila-joiosa-gr%25C3%25A0cies-a-l-adquisici%25C3%25B3-d-un-nou-local-cedit-per-l-ajuntament&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_redirect=https%3A%2F%2Fmarinabaixa.san.gva.es%2Fca%2Fportada%3Fp_p_id%3Dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_r_p_assetEntryId%3D150427004%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_cur%3D0%26p_r_p_resetCur%3Dfalse",
             "http://www.facebook.com/sharer.php?u=https://marinabaixa.san.gva.es/ca/portada/-/asset_publisher/qo4oKiPcagXn/content/p%C3%A9rez-llorca-assenyala-que-el-nou-centre-de-salut-el-rac%C3%B3-de-loix-de-benidorm-millora-l-accessibilitat-assist%C3%A8ncia-i-organitzaci%C3%B3-de-personal-i-usuaris?p_r_p_assetEntryId=148336257&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_type=content&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_urlTitle=p%25C3%25A9rez-llorca-assenyala-que-el-nou-centre-de-salut-el-rac%25C3%25B3-de-loix-de-benidorm-millora-l-accessibilitat-assist%25C3%25A8ncia-i-organitzaci%25C3%25B3-de-personal-i-usuaris&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_redirect=https%3A%2F%2Fmarinabaixa.san.gva.es%2Fca%2Fportada%3Fp_p_id%3Dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_r_p_assetEntryId%3D148336257%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_cur%3D0%26p_r_p_resetCur%3Dfalse",
@@ -260015,6 +260379,7 @@
           "page_url": "https://orihuela.san.gva.es/",
           "detected_links": [
             "https://www.facebook.com/generalitatvalenciana",
+            "http://www.facebook.com/sharer.php?u=https://orihuela.san.gva.es/ca/-/josefina-salinas-nova-subdirectora-d-infermeria-de-l-hospital-universitari-vega-baixa-d-orihuela",
             "http://www.facebook.com/sharer.php?u=https://orihuela.san.gva.es/ca/-/l-hospital-universitari-vega-baixa-mostra-als-futurs-residents-el-seu-creixement-i-oportunitats-de-formaci%C3%B3-1",
             "http://www.facebook.com/sharer.php?u=https://orihuela.san.gva.es/ca/-/sanitat-nomena-a-laura-p%C3%A1rraga-nova-directora-d-infermeria-d-atenci%C3%B3-prim%C3%A0ria-del-departament-de-salut-d-orihuela",
             "http://www.facebook.com/sharer.php?u=https://orihuela.san.gva.es/ca/inicio/-/asset_publisher/dtO2oDb0UDxe/content/el-departamento-de-salud-de-orihuela-celebra-su-jornada-de-puertas-abiertas-a-residentes-el-26-de-marzo?p_r_p_assetEntryId=148224917&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_dtO2oDb0UDxe_type=content&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_dtO2oDb0UDxe_urlTitle=el-departamento-de-salud-de-orihuela-celebra-su-jornada-de-puertas-abiertas-a-residentes-el-26-de-marzo&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_dtO2oDb0UDxe_redirect=https%3A%2F%2Forihuela.san.gva.es%2Fca%2Finicio%3Fp_p_id%3Dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_dtO2oDb0UDxe%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_r_p_assetEntryId%3D148224917%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_dtO2oDb0UDxe_cur%3D0%26p_r_p_resetCur%3Dfalse",
@@ -260059,9 +260424,22 @@
           ]
         },
         {
+          "page_url": "https://papea.defensa.gob.es/index.html",
+          "detected_links": [
+            "https://www.facebook.com/Tefrisur-1455830967832220"
+          ]
+        },
+        {
           "page_url": "https://parcsnaturals.gencat.cat/",
           "detected_links": [
+            "https://www.facebook.com/PNTerFreser/",
             "https://www.facebook.com/PNCadiMoixero/"
+          ]
+        },
+        {
+          "page_url": "https://parcsnaturals.gencat.cat/ca/inici/",
+          "detected_links": [
+            "https://www.facebook.com/PNCapDeCreus/"
           ]
         },
         {
@@ -263513,6 +263891,7 @@
         {
           "page_url": "http://pop.jccm.es/acredita/acredita/convocatorias-acredita-2021/",
           "detected_links": [
+            "http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fpop.jccm.es%2F%3Fid%3D347&title=Convocatorias%20ACREDITA%202021",
             "http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fpop.jccm.es%2Facredita%2Facredita%2Fconvocatorias-acredita-2021&title=Convocatorias%20ACREDITA%202021"
           ]
         },
@@ -265371,6 +265750,18 @@
           ]
         },
         {
+          "page_url": "https://libreriavirtual.trabajo.gob.es/libreriavirtual/detalle/ERT0037",
+          "detected_links": [
+            "https://www.linkedin.com/in/la-libreria-de-trabajo/"
+          ]
+        },
+        {
+          "page_url": "https://libreriavirtual.trabajo.gob.es/libreriavirtual/puntosYDistribuidores",
+          "detected_links": [
+            "https://www.linkedin.com/in/la-libreria-de-trabajo/"
+          ]
+        },
+        {
           "page_url": "https://lourizan.xunta.gal/gl/xardin-botanico",
           "detected_links": [
             "https://www.linkedin.com/shareArticle?mini=true&url=https://lourizan.xunta.gal/gl/xardin-botanico/historia&summary=Presentación"
@@ -265400,6 +265791,7 @@
         {
           "page_url": "https://marinabaixa.san.gva.es/",
           "detected_links": [
+            "http://www.linkedin.com/shareArticle?&title=L'HOSPITAL+UNIVERSITARI+MARINA+BAIXA+reforça+l'activitat+de+l'Àrea+d'Hospital+de+Dia&mini=true&url=https://marinabaixa.san.gva.es/ca/portada/-/asset_publisher/qo4oKiPcagXn/content/l-hospital-universitari-marina-baixa-refor%C3%A7a-l-activitat-de-l-%C3%A0rea-d-hospital-de-dia-amb?p_r_p_assetEntryId=154478884&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_type=content&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_urlTitle=l-hospital-universitari-marina-baixa-refor%25C3%25A7a-l-activitat-de-l-%25C3%25A0rea-d-hospital-de-dia-amb&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_redirect=https%3A%2F%2Fmarinabaixa.san.gva.es%2Fca%2Fportada%3Fp_p_id%3Dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_r_p_assetEntryId%3D154478884%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_cur%3D0%26p_r_p_resetCur%3Dfalse&summary=L'HOSPITAL+UNIVERSITARI+MARINA+BAIXA+reforça+l'activitat+de+l'Àrea+d'Hospital+de+Dia",
             "http://www.linkedin.com/shareArticle?&title=Curs+en+línia+del+Ministeri+«Competències+d'autocura+i+cura+per+a+cuidadors+informals»&mini=true&url=https://marinabaixa.san.gva.es/ca/portada/-/asset_publisher/qo4oKiPcagXn/content/curs-en-l%C3%ADnia-del-ministeri-%C2%ABcompet%C3%A8ncies-d-autocura-i-cura-per-a-cuidadors-informals%C2%BB?p_r_p_assetEntryId=150924172&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_type=content&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_urlTitle=curs-en-l%25C3%25ADnia-del-ministeri-%25C2%25ABcompet%25C3%25A8ncies-d-autocura-i-cura-per-a-cuidadors-informals%25C2%25BB&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_redirect=https%3A%2F%2Fmarinabaixa.san.gva.es%2Fca%2Fportada%3Fp_p_id%3Dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_r_p_assetEntryId%3D150924172%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_cur%3D0%26p_r_p_resetCur%3Dfalse&summary=Curs+en+línia+del+Ministeri+«Competències+d'autocura+i+cura+per+a+cuidadors+informals»",
             "http://www.linkedin.com/shareArticle?&title=Sanitat+ampliarà+el+consultori+auxiliar+de+la+Cala+de+La+Vila+Joiosa+gràcies+a+l'adquisició+d'un+nou+local+cedit+per+l'Ajuntament&mini=true&url=https://marinabaixa.san.gva.es/ca/portada/-/asset_publisher/qo4oKiPcagXn/content/sanitat-ampliar%C3%A0-el-consultori-auxiliar-de-la-cala-de-la-vila-joiosa-gr%C3%A0cies-a-l-adquisici%C3%B3-d-un-nou-local-cedit-per-l-ajuntament?p_r_p_assetEntryId=150427004&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_type=content&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_urlTitle=sanitat-ampliar%25C3%25A0-el-consultori-auxiliar-de-la-cala-de-la-vila-joiosa-gr%25C3%25A0cies-a-l-adquisici%25C3%25B3-d-un-nou-local-cedit-per-l-ajuntament&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_redirect=https%3A%2F%2Fmarinabaixa.san.gva.es%2Fca%2Fportada%3Fp_p_id%3Dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_r_p_assetEntryId%3D150427004%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_cur%3D0%26p_r_p_resetCur%3Dfalse&summary=Sanitat+ampliarà+el+consultori+auxiliar+de+la+Cala+de+La+Vila+Joiosa+gràcies+a+l'adquisició+d'un+nou+local+cedit+per+l'Ajuntament",
             "http://www.linkedin.com/shareArticle?&title=Pérez+Llorca+assenyala+que+el+nou+Centre+de+Salut+el+Racó+de+Loix+de+Benidorm+millora+l'accessibilitat,+assistència+i+organització+de+personal+i+usuaris&mini=true&url=https://marinabaixa.san.gva.es/ca/portada/-/asset_publisher/qo4oKiPcagXn/content/p%C3%A9rez-llorca-assenyala-que-el-nou-centre-de-salut-el-rac%C3%B3-de-loix-de-benidorm-millora-l-accessibilitat-assist%C3%A8ncia-i-organitzaci%C3%B3-de-personal-i-usuaris?p_r_p_assetEntryId=148336257&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_type=content&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_urlTitle=p%25C3%25A9rez-llorca-assenyala-que-el-nou-centre-de-salut-el-rac%25C3%25B3-de-loix-de-benidorm-millora-l-accessibilitat-assist%25C3%25A8ncia-i-organitzaci%25C3%25B3-de-personal-i-usuaris&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_redirect=https%3A%2F%2Fmarinabaixa.san.gva.es%2Fca%2Fportada%3Fp_p_id%3Dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_r_p_assetEntryId%3D148336257%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_qo4oKiPcagXn_cur%3D0%26p_r_p_resetCur%3Dfalse&summary=Pérez+Llorca+assenyala+que+el+nou+Centre+de+Salut+el+Racó+de+Loix+de+Benidorm+millora+l'accessibilitat,+assistència+i+organització+de+personal+i+usuaris",
@@ -265487,6 +265879,7 @@
         {
           "page_url": "https://orihuela.san.gva.es/",
           "detected_links": [
+            "http://www.linkedin.com/shareArticle?&title=Josefina+Salinas,+nova+subdirectora+d'Infermeria+de+l'Hospital+Universitari+Vega+Baixa+d'Orihuela&mini=true&url=https://orihuela.san.gva.es/ca/-/josefina-salinas-nova-subdirectora-d-infermeria-de-l-hospital-universitari-vega-baixa-d-orihuela&summary=Josefina+Salinas,+nova+subdirectora+d'Infermeria+de+l'Hospital+Universitari+Vega+Baixa+d'Orihuela",
             "http://www.linkedin.com/shareArticle?&title=L'Hospital+Universitari+Vega+Baixa+mostra+als+futurs+residents+el+seu+creixement+i+oportunitats+de+formació&mini=true&url=https://orihuela.san.gva.es/ca/-/l-hospital-universitari-vega-baixa-mostra-als-futurs-residents-el-seu-creixement-i-oportunitats-de-formaci%C3%B3-1&summary=L'Hospital+Universitari+Vega+Baixa+mostra+als+futurs+residents+el+seu+creixement+i+oportunitats+de+formació",
             "http://www.linkedin.com/shareArticle?&title=Sanitat+nomena+a+Laura+Párraga+nova+directora+d'Infermeria+d'Atenció+Primària+del+Departament+de+Salut+d'Orihuela&mini=true&url=https://orihuela.san.gva.es/ca/-/sanitat-nomena-a-laura-p%C3%A1rraga-nova-directora-d-infermeria-d-atenci%C3%B3-prim%C3%A0ria-del-departament-de-salut-d-orihuela&summary=Sanitat+nomena+a+Laura+Párraga+nova+directora+d'Infermeria+d'Atenció+Primària+del+Departament+de+Salut+d'Orihuela",
             "http://www.linkedin.com/shareArticle?&title=El+Departamento+de+Salud+de+Orihuela+abre+sus+puertas+a+futuros+residentes+el+26+de+marzo&mini=true&url=https://orihuela.san.gva.es/ca/inicio/-/asset_publisher/dtO2oDb0UDxe/content/el-departamento-de-salud-de-orihuela-celebra-su-jornada-de-puertas-abiertas-a-residentes-el-26-de-marzo?p_r_p_assetEntryId=148224917&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_dtO2oDb0UDxe_type=content&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_dtO2oDb0UDxe_urlTitle=el-departamento-de-salud-de-orihuela-celebra-su-jornada-de-puertas-abiertas-a-residentes-el-26-de-marzo&_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_dtO2oDb0UDxe_redirect=https%3A%2F%2Forihuela.san.gva.es%2Fca%2Finicio%3Fp_p_id%3Dcom_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_dtO2oDb0UDxe%26p_p_lifecycle%3D0%26p_p_state%3Dnormal%26p_p_mode%3Dview%26p_r_p_assetEntryId%3D148224917%26_com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet_INSTANCE_dtO2oDb0UDxe_cur%3D0%26p_r_p_resetCur%3Dfalse&summary=El+Departamento+de+Salud+de+Orihuela+abre+sus+puertas+a+futuros+residentes+el+26+de+marzo",
