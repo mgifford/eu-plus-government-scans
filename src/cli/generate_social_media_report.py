@@ -1022,7 +1022,7 @@ def _build_interactive_block(
     var more = count > sample.length
       ? '<li style="color:#aaa;font-style:italic;">…and ' +
         (count - sample.length).toLocaleString() +
-        ' more — see the <code>social-media-data.json</code> artifact in the latest workflow run for the full list.</li>'
+        ' more — see the <a href="https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml" rel="noopener noreferrer" style="color:#9ecfff;"><code>social-media-data.json</code> artifact in the latest workflow run</a> for the full list.</li>'
       : "";
     return (
       '<details class="sm-tw-details">' +
