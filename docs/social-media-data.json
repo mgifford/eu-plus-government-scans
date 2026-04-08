@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-08 13:39 UTC",
+  "generated_at": "2026-04-08 14:06 UTC",
   "summary": {
-    "total_batches": 180,
+    "total_batches": 181,
     "total_scanned": 82714,
-    "total_reachable": 77348,
+    "total_reachable": 77350,
     "total_available": 82714,
     "twitter_pages": 14581,
     "x_pages": 3307,
-    "bluesky_pages": 626,
+    "bluesky_pages": 627,
     "mastodon_pages": 4281,
-    "facebook_pages": 27749,
-    "linkedin_pages": 9410,
+    "facebook_pages": 27753,
+    "linkedin_pages": 9413,
     "first_scan": "2026-03-22T00:36:33.003106+00:00",
-    "last_scan": "2026-04-08T12:15:16.123822+00:00"
+    "last_scan": "2026-04-08T14:05:18.355980+00:00"
   },
   "by_country": [
     {
@@ -678,22 +678,22 @@
     {
       "country_code": "UNITED_KINGDOM_UK",
       "total_scanned": 19502,
-      "reachable": 18741,
+      "reachable": 18743,
       "twitter_pages": 4152,
       "x_pages": 990,
-      "bluesky_pages": 117,
+      "bluesky_pages": 118,
       "mastodon_pages": 668,
-      "facebook_pages": 6516,
-      "linkedin_pages": 2481,
-      "twitter_only": 6624,
+      "facebook_pages": 6520,
+      "linkedin_pages": 2484,
+      "twitter_only": 6627,
       "modern_only": 37,
-      "mixed": 700,
-      "no_social": 11459,
-      "has_any_legacy": 7324,
-      "has_any_modern": 737,
+      "mixed": 701,
+      "no_social": 11462,
+      "has_any_legacy": 7328,
+      "has_any_modern": 738,
       "first_scan": "2026-03-31T04:47:31.540481+00:00",
-      "last_scan": "2026-04-07T16:26:04.650556+00:00",
-      "sovereignty_score": 61.3,
+      "last_scan": "2026-04-08T14:05:18.355980+00:00",
+      "sovereignty_score": 61.4,
       "legacy_exposure": 39.1,
       "sovereignty_tier": "🥉 Growing"
     }
@@ -297618,6 +297618,12 @@
         {
           "page_url": "https://southswindon-pc.gov.uk/",
           "detected_links": [
+            "https://twitter.com/intent/tweet?text=https%3A%2F%2Fwww.facebook.com%2F294800127850725_1260788776174949",
+            "https://twitter.com/intent/tweet?text=https%3A%2F%2Fwww.facebook.com%2F294800127850725_1260479279539232",
+            "https://twitter.com/intent/tweet?text=https%3A%2F%2Fwww.facebook.com%2F294800127850725_1260050472915446",
+            "https://twitter.com/intent/tweet?text=https%3A%2F%2Fwww.facebook.com%2F294800127850725_1259295799657580",
+            "https://twitter.com/intent/tweet?text=https%3A%2F%2Fwww.facebook.com%2F294800127850725_1258532123067281",
+            "https://twitter.com/intent/tweet?text=https%3A%2F%2Fwww.facebook.com%2F294800127850725_1258233886430438",
             "https://twitter.com/intent/tweet?text=https%3A%2F%2Fwww.facebook.com%2F294800127850725_1255372706716556",
             "https://twitter.com/intent/tweet?text=https%3A%2F%2Fwww.facebook.com%2F294800127850725_1255308146723012",
             "https://twitter.com/intent/tweet?text=https%3A%2F%2Fwww.facebook.com%2F294800127850725_1254642593456234",
@@ -298242,6 +298248,11 @@
             "https://twitter.com/TodmordenTown",
             "https://twitter.com/TodmordenTown/",
             "https://twitter.com/todmordentown",
+            "https://twitter.com/todmordentown/status/2039032476807410002",
+            "https://twitter.com/TodmordenTown/status/2039032476807410002",
+            "https://twitter.com/intent/tweet?in_reply_to=2039032476807410002&related=todmordentown",
+            "https://twitter.com/intent/retweet?tweet_id=2039032476807410002&related=todmordentown",
+            "https://twitter.com/intent/like?tweet_id=2039032476807410002&related=todmordentown",
             "https://twitter.com/todmordentown/status/2037217133734564026",
             "https://twitter.com/TodmordenTown/status/2037217133734564026",
             "https://twitter.com/intent/tweet?in_reply_to=2037217133734564026&related=todmordentown",
@@ -299026,12 +299037,14 @@
         {
           "page_url": "https://wroughton.gov.uk/",
           "detected_links": [
+            "https://twitter.com/intent/tweet?text=https%3A%2F%2Fwww.facebook.com%2F255387694555937_936793932072616",
             "https://twitter.com/intent/tweet?text=https%3A%2F%2Fwww.facebook.com%2F255387694555937_931059172646092"
           ]
         },
         {
           "page_url": "https://wroughton.gov.uk/agendas-minutes/",
           "detected_links": [
+            "https://twitter.com/intent/tweet?text=https%3A%2F%2Fwww.facebook.com%2F255387694555937_936793932072616",
             "https://twitter.com/intent/tweet?text=https%3A%2F%2Fwww.facebook.com%2F255387694555937_931059172646092"
           ]
         },
@@ -299039,6 +299052,7 @@
           "page_url": "https://wroughton.gov.uk/community-information/",
           "detected_links": [
             "https://twitter.com/Stagecoach_West",
+            "https://twitter.com/intent/tweet?text=https%3A%2F%2Fwww.facebook.com%2F255387694555937_936793932072616",
             "https://twitter.com/intent/tweet?text=https%3A%2F%2Fwww.facebook.com%2F255387694555937_931059172646092"
           ]
         },
@@ -312924,18 +312938,21 @@
         {
           "page_url": "https://whh.nhs.uk/",
           "detected_links": [
+            "https://x.com/NorthCandMNHS",
             "https://x.com/whhnhs"
           ]
         },
         {
           "page_url": "https://whh.nhs.uk/cookie-settings",
           "detected_links": [
+            "https://x.com/NorthCandMNHS",
             "https://x.com/whhnhs"
           ]
         },
         {
           "page_url": "https://whh.nhs.uk/patients-and-visitors/patient-information/when-you-need-urgent-healthcare/",
           "detected_links": [
+            "https://x.com/NorthCandMNHS",
             "https://x.com/whhnhs"
           ]
         },
@@ -316466,6 +316483,12 @@
           "page_url": "https://thamesvalleycanceralliance.nhs.uk/our-work/early-diagnosis-and-innovation/",
           "detected_links": [
             "https://bsky.app/profile/tvca2025.bsky.social"
+          ]
+        },
+        {
+          "page_url": "https://wantagetowncouncil.gov.uk/",
+          "detected_links": [
+            "https://bsky.app/profile/wantagetowncouncil.bsky.social"
           ]
         },
         {
@@ -337417,6 +337440,18 @@
           ]
         },
         {
+          "page_url": "https://salisburyfertilitycentre.nhs.uk/",
+          "detected_links": [
+            "https://www.facebook.com/salisburyfertility/"
+          ]
+        },
+        {
+          "page_url": "https://salisburyfertilitycentre.nhs.uk/salisbury_fertility/ivf-with-donor-eggs/",
+          "detected_links": [
+            "https://www.facebook.com/salisburyfertility/"
+          ]
+        },
+        {
           "page_url": "https://sandbach.gov.uk/",
           "detected_links": [
             "https://www.facebook.com/Sandbach-Town-Council-383790335094395/"
@@ -337627,6 +337662,9 @@
           "detected_links": [
             "https://www.facebook.com/seatontowncouncil/",
             "https://facebook.com/300109907000872",
+            "https://facebook.com/106463268644159",
+            "https://facebook.com/329644320547196",
+            "https://www.facebook.com/300109907000872_960073373021917",
             "https://www.facebook.com/300109907000872_959184123110842",
             "https://facebook.com/1555667781378628",
             "https://www.facebook.com/300109907000872_956125653416689",
@@ -338197,6 +338235,8 @@
           "detected_links": [
             "https://www.facebook.com/SherborneTownCl",
             "https://www.facebook.com/106357571322811",
+            "https://www.facebook.com/photo.php?fbid=1520831640047243&set=a.498876062242811&type=3",
+            "https://www.facebook.com/106357571322811_1520859450044462",
             "https://www.facebook.com/photo.php?fbid=1251170687189818&set=a.249533907353506&type=3",
             "https://www.facebook.com/106357571322811_1519905926806481",
             "https://www.facebook.com/photo.php?fbid=122119141137171340&set=a.122119141317171340&type=3",
@@ -338208,6 +338248,8 @@
           "detected_links": [
             "https://www.facebook.com/SherborneTownCl",
             "https://www.facebook.com/106357571322811",
+            "https://www.facebook.com/photo.php?fbid=1520831640047243&set=a.498876062242811&type=3",
+            "https://www.facebook.com/106357571322811_1520859450044462",
             "https://www.facebook.com/photo.php?fbid=1251170687189818&set=a.249533907353506&type=3",
             "https://www.facebook.com/106357571322811_1519905926806481",
             "https://www.facebook.com/photo.php?fbid=122119141137171340&set=a.122119141317171340&type=3",
@@ -338219,6 +338261,8 @@
           "detected_links": [
             "https://www.facebook.com/SherborneTownCl",
             "https://www.facebook.com/106357571322811",
+            "https://www.facebook.com/photo.php?fbid=1520831640047243&set=a.498876062242811&type=3",
+            "https://www.facebook.com/106357571322811_1520859450044462",
             "https://www.facebook.com/photo.php?fbid=1251170687189818&set=a.249533907353506&type=3",
             "https://www.facebook.com/106357571322811_1519905926806481",
             "https://www.facebook.com/photo.php?fbid=122119141137171340&set=a.122119141317171340&type=3",
@@ -338505,7 +338549,30 @@
             "https://facebook.com/705287509494208",
             "https://facebook.com/460244407385967",
             "https://facebook.com/506725432717642",
+            "https://facebook.com/282917988505687",
+            "https://facebook.com/541068942582490",
+            "https://facebook.com/652992738063723",
+            "https://www.facebook.com/294800127850725_1260788776174949",
+            "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2F294800127850725_1260788776174949",
+            "https://www.facebook.com/294800127850725_1260479279539232",
+            "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2F294800127850725_1260479279539232",
+            "https://facebook.com/103022299888580",
             "https://facebook.com/603158303032286",
+            "https://facebook.com/142181732615219",
+            "https://www.facebook.com/294800127850725_1260050472915446",
+            "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2F294800127850725_1260050472915446",
+            "https://facebook.com/143336709166137",
+            "https://facebook.com/541742962536657",
+            "https://www.facebook.com/294800127850725_1259295799657580",
+            "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2F294800127850725_1259295799657580",
+            "https://facebook.com/493832494012841",
+            "https://facebook.com/462685150470169",
+            "https://www.facebook.com/294800127850725_1258532123067281",
+            "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2F294800127850725_1258532123067281",
+            "https://facebook.com/411242068966567",
+            "https://facebook.com/582734505071224",
+            "https://www.facebook.com/294800127850725_1258233886430438",
+            "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2F294800127850725_1258233886430438",
             "https://facebook.com/165604356924693",
             "https://facebook.com/433420840073737",
             "https://www.facebook.com/294800127850725_1255372706716556",
@@ -338615,6 +338682,12 @@
         },
         {
           "page_url": "https://sprowston-tc.gov.uk/",
+          "detected_links": [
+            "https://www.facebook.com/pages/Sprowston-Town-Council/422268864568533?ref=hl"
+          ]
+        },
+        {
+          "page_url": "https://sprowston-tc.gov.uk/2025/06/18/2173/",
           "detected_links": [
             "https://www.facebook.com/pages/Sprowston-Town-Council/422268864568533?ref=hl"
           ]
@@ -339791,12 +339864,14 @@
         {
           "page_url": "https://truro.gov.uk/",
           "detected_links": [
+            "https://www.facebook.com/trurocitycouncil",
             "http://facebook.com/trurocitycouncil"
           ]
         },
         {
           "page_url": "https://truro.gov.uk/councillors/",
           "detected_links": [
+            "https://www.facebook.com/trurocitycouncil",
             "http://facebook.com/trurocitycouncil"
           ]
         },
@@ -340280,6 +340355,12 @@
           ]
         },
         {
+          "page_url": "https://wantagetowncouncil.gov.uk/",
+          "detected_links": [
+            "https://www.facebook.com/profile.php?id=61574440809266"
+          ]
+        },
+        {
           "page_url": "https://wantagetowncouncil.gov.uk/https-wantagetowncouncil-gov-uk-wp-content-uploads-2024-03-wantage-neighbourhood-plan-updated-6th-dec-23-clean-pdf/",
           "detected_links": [
             "https://www.facebook.com/profile.php?id=61574440809266"
@@ -340608,8 +340689,8 @@
         {
           "page_url": "https://wetherbytowncouncil.gov.uk/",
           "detected_links": [
-            "https://www.facebook.com/beecraftymarkets/",
-            "https://www.facebook.com/wetherbycouncil/"
+            "https://www.facebook.com/wetherbycouncil/",
+            "https://www.facebook.com/beecraftymarkets/"
           ]
         },
         {
@@ -340645,18 +340726,21 @@
         {
           "page_url": "https://whh.nhs.uk/",
           "detected_links": [
+            "https://www.facebook.com/NorthCheshireandMerseyNHS",
             "https://www.facebook.com/WarringtonAndHaltonHospitalsNhsFoundationTrust"
           ]
         },
         {
           "page_url": "https://whh.nhs.uk/cookie-settings",
           "detected_links": [
+            "https://www.facebook.com/NorthCheshireandMerseyNHS",
             "https://www.facebook.com/WarringtonAndHaltonHospitalsNhsFoundationTrust"
           ]
         },
         {
           "page_url": "https://whh.nhs.uk/patients-and-visitors/patient-information/when-you-need-urgent-healthcare/",
           "detected_links": [
+            "https://www.facebook.com/NorthCheshireandMerseyNHS",
             "https://www.facebook.com/WarringtonAndHaltonHospitalsNhsFoundationTrust"
           ]
         },
@@ -340959,6 +341043,8 @@
           "page_url": "https://wroughton.gov.uk/",
           "detected_links": [
             "https://facebook.com/255387694555937",
+            "https://www.facebook.com/255387694555937_936793932072616",
+            "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2F255387694555937_936793932072616",
             "https://www.facebook.com/255387694555937_931059172646092",
             "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2F255387694555937_931059172646092"
           ]
@@ -340967,6 +341053,8 @@
           "page_url": "https://wroughton.gov.uk/agendas-minutes/",
           "detected_links": [
             "https://facebook.com/255387694555937",
+            "https://www.facebook.com/255387694555937_936793932072616",
+            "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2F255387694555937_936793932072616",
             "https://www.facebook.com/255387694555937_931059172646092",
             "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2F255387694555937_931059172646092"
           ]
@@ -340976,6 +341064,8 @@
           "detected_links": [
             "https://www.facebook.com/LittleLambsBabyToddlerGroup/",
             "https://facebook.com/255387694555937",
+            "https://www.facebook.com/255387694555937_936793932072616",
+            "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2F255387694555937_936793932072616",
             "https://www.facebook.com/255387694555937_931059172646092",
             "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2F255387694555937_931059172646092"
           ]
@@ -368359,6 +368449,12 @@
         {
           "page_url": "https://southswindon-pc.gov.uk/",
           "detected_links": [
+            "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.facebook.com%2F294800127850725_1260788776174949&title=%09Live%20Events%20at%20the%20Town%20Gardens%20Bowl%20this%20summer.%20We%20have%20a%20full%20programme%20of%20live%20music%2C%20theatre%2C%20comedy%20and%20family%20shows%20coming%20up.In%202-month%26%23039%3Bs%20time%2C%20on%20Sunday%207th%20June%20at%2011am%2C%20we%20have%3AMusic%20for%20Miniatures%3A%20Up%20in%20the%20AirA%20joyful%2C%20baby%20friendly%20concert%20featuring%20flute%2C%20oboe%20and%20piano.%20This%20playful%20musical%20adventure%20celebrates%20everything%20you%20might%20see%20when%20you%20look%20up%2C%20from%20birds%20and%20bees%20to%20sunshine%2C%20clouds%20and%20rainbows.Designed%20especially%20for%20babies%2C%20toddlers%20and%20their%20grown%20ups%2C%20in%20a%20relaxed%20and%20welcoming%20environment%20where%20little%20ones%20are%20free%20to%20crawl%2C%20cuddle%2C%20dance%20or%20nap%20while%20the%20music%20plays.A%20wonderful%20introduction%20to%20live%20music%20and%20a%20chance%20for%20families%20to%20slow%20down%20and%20enjoy%20a%20magical%20musical%20journey%20together.Tickets%20on%20sale%20now%2C%20from%20%C2%A34%20-%20%C2%A39.To%20see%20all%20our%20events%20and%20book%20your%20tickets%2C%20visit%3A%20southswindonparishcouncil.ticketsolve.com%2Fticketbooth%2Fshows%23SouthSwindon%20%23TownGardens%20%23TheBowl%20%23FamilyEvents%20%23LiveMusic%20%23ThingsToDoWithKids%20%09%09",
+            "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.facebook.com%2F294800127850725_1260479279539232&title=%09Community%20Clean%20Up%20Day%20Today.%2012%3A30pm%20-%202%3A30pm.%20St.%20John%26%23039%3Bs%20Church%2C%20Whitbourne%20Avenue.%20%09%09",
+            "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.facebook.com%2F294800127850725_1260050472915446&title=%09%28ALMOST%29%20COMPLETE%20HISTORY%20OF%20BRITAIN.%20Live%20Events%20at%20the%20Town%20Gardens%20Bowl%20this%20summer.%20We%20have%20a%20full%20programme%20of%20live%20music%2C%20theatre%2C%20comedy%20and%20family%20shows%20coming%20up.In%203-month%E2%80%99s%20time%2C%20on%20Sunday%205th%20July%20at%202pm%2C%20we%20have%3AThe%20%28Almost%29%20Complete%20History%20of%20BritainA%20breathless%20race%20through%20the%20centuries%20telling%20the%20entire%20story%20of%20Britain%20in%20under%202%20hours.%20Expect%20live%20music%2C%20audience%20interaction%2C%20and%20wild%20historical%20inaccuracy%2C%20as%20great%20moments%20from%20history%20are%20retold%20in%20a%20variety%20of%20surprising%20genres.Tickets%20on%20sale%20now%2C%20from%20%C2%A311%20to%20%C2%A318.To%20see%20all%20our%20events%20and%20book%20your%20tickets%2C%20visit%3A%20southswindonparishcouncil.ticketsolve.com%2Fticketbooth%2Fshows%23SouthSwindon%20%23TownGardens%20%23TheBowl%20%23Theatre%20%23Comedy%20%23History%20%09%09",
+            "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.facebook.com%2F294800127850725_1259295799657580&title=%09Live%20Events%20at%20the%20Town%20Gardens%20Bowl%20this%20summer.%20We%20have%20a%20full%20programme%20of%20live%20music%2C%20theatre%2C%20comedy%20and%20family%20shows%20coming%20up.In%202-month%E2%80%99s%20time%2C%20on%20Friday%205th%20June%20at%207%3A30pm%2C%20we%20have%3AThe%20Mumford%20%26amp%3B%20Sons%20StoryThe%20Mumford%20%26amp%3B%20Sons%20Story%20recreates%20the%20epic%20rise%20of%20the%20foot-stomping%20folk-rock%20giants%20who%20took%20the%20world%20by%20storm.Four%20powerhouse%20musicians%20deliver%20a%20folk%20rock%20celebration%20of%20Mumford%20%26amp%3B%20Sons%E2%80%99%20unmistakable%20sound%20and%20unstoppable%20journey%20to%20global%20fame.Get%20ready%20to%20dance%2C%20clap%20and%20sing%20along%20to%20the%20anthems%20you%20love.%20Pure%20festival%20energy%20for%20an%20unforgettable%20night.Tickets%20on%20sale%20now%2C%20from%20%C2%A311%20to%20%C2%A320.%20Family%20tickets%20available.%20To%20see%20all%20our%20events%20and%20book%20your%20tickets%2C%20visit%3A%20southswindonparishcouncil.ticketsolve.com%2Fticketbooth%2Fshows%23SouthSwindon%20%23TownGardens%20%23TheBowl%20%23LiveMusic%20%23MumfordAndSons%20%23TributeAct%20%09%09",
+            "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.facebook.com%2F294800127850725_1258532123067281&title=%09SERIOUSLY%20COLLINS.%20Live%20Events%20at%20the%20Town%20Gardens%20Bowl%20this%20summer.%20We%20have%20a%20full%20programme%20of%20live%20music%2C%20theatre%2C%20comedy%20and%20family%20shows%20coming%20up.In%203-month%E2%80%99s%20time%2C%20on%20Saturday%204th%20July%20at%207%3A30pm%2C%20we%20have%3ASeriously%20Collins%3A%20A%20Tribute%20to%20Phil%20Collins%20and%20GenesisExperience%20the%20magic%20of%20Phil%20Collins%20and%20Genesis%2C%20as%20Seriously%20Collins%20takes%20you%20on%20an%20electrifying%20journey%20through%20the%20music%20that%20has%20defined%20generations.%20Expect%20incredible%20vocals%2C%20a%20captivating%20performance%2C%20and%20all%20the%20iconic%20hits%20brought%20to%20life.Tickets%20on%20sale%20now%2C%20from%20%C2%A311%20to%20%C2%A320.%20Family%20tickets%20available.To%20see%20all%20our%20events%20and%20book%20your%20tickets%2C%20visit%3A%20southswindonparishcouncil.ticketsolve.com%2Fticketbooth%2Fshows%23SouthSwindon%20%23TownGardens%20%23TheBowl%20%23LiveMusic%20%23PhilCollins%20%23Genesis%20%23TributeAct%20%09%09",
+            "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.facebook.com%2F294800127850725_1258233886430438&title=%09MID-WEST%20BIG%20BAND.%20Live%20Events%20at%20the%20Town%20Gardens%20Bowl%20this%20summer.%20We%20have%20a%20full%20programme%20of%20live%20music%2C%20theatre%2C%20comedy%20and%20family%20shows%20coming%20up.Monday%204th%20May%20at%202pm%2C%20for%20free%2C%20we%20have%3AMid-West%20Big%20BandCelebrate%20the%2090th%20Anniversary%20of%20the%20Town%20Gardens%20Bowl%20with%20a%20free%20concert%20from%20Swindon%E2%80%99s%20very%20own%20Mid-West%20Big%20Band.Founded%20in%201981%20and%20still%20going%20strong%2045%20years%20later%2C%20the%20band%20brings%20Big%20Band%2C%20Swing%20and%20Jazz%20classics%20from%20Count%20Basie%2C%20Benny%20Goodman%2C%20Frank%20Sinatra%20and%20Glen%20Miller.A%20foot%20tapping%20performance%20in%20the%20park.Free%20to%20attend.%20You%20can%20reserve%20a%20ticket%20or%20just%20turn%20up%20on%20the%20day.To%20see%20all%20our%20events%20and%20find%20out%20more%2C%20visit%3A%20southswindonparishcouncil.ticketsolve.com%2Fticketbooth%2Fshows%23SouthSwindon%20%23TownGardens%20%23TheBowl%20%23LiveMusic%20%23BigBand%20%23Jazz%20%09%09",
             "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.facebook.com%2F294800127850725_1255372706716556&title=%09Live%20Events%20at%20the%20Town%20Gardens%20Bowl%20this%20summer.%20We%20have%20a%20full%20programme%20of%20live%20music%2C%20theatre%2C%20comedy%20and%20family%20shows%20coming%20up.In%202-month%26%23039%3Bs%20time%2C%20on%20Sunday%2031st%20May%20at%207pm%2C%20we%20have%3AComedy%20at%20the%20BowlSwindon%20Old%20Town%20Comedy%20Club%20LIVE%20at%20the%20Town%20Gardens%20Bowl.Headlined%20by%20Sara%20Pascoe%20%28Taskmaster%2C%20Live%20at%20the%20Apollo%29%2C%20joined%20by%20Michael%20Akadiri%2C%20Jessie%20Nixon%20and%20Nick%20Byard%2C%20and%20hosted%20by%20Sam%20Michael.A%20great%20line%20up%20of%20stand%20up%20comedy%20talent%20in%20a%20stunning%20outdoor%20setting%20in%20the%20heart%20of%20Old%20Town.Tickets%20from%20%C2%A318%20to%20%C2%A320.%20Family%20tickets%20available.To%20see%20all%20our%20events%20and%20book%20your%20tickets%2C%20visit%3A%20southswindonparishcouncil.ticketsolve.com%2Fticketbooth%2Fshows%23SouthSwindon%20%23TownGardens%20%23TheBowl%20%23Comedy%20%23StandUp%20%23LiveComedy%20%09%09",
             "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.facebook.com%2F294800127850725_1255308146723012&title=%09A%20Big%20Thank%20You.%20Thank%20you%20to%20Sovereign%20Network%20Group%20for%20sponsoring%20this%20year%E2%80%99s%20Blossom%20Festival%20at%20GWR%20Park%21%20%23SouthSwindon%20%23SovereignNetworkGroup%20%23BlossomFestival%20%09%09",
             "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.facebook.com%2F294800127850725_1254642593456234&title=%09April%20plans%20sorted%21%20%F0%9F%8C%B8Come%20along%20to%20one%20%28or%20all%21%29%20of%20our%20Blossom%20Festival%20weekends%20taking%20place%20across%20South%20Swindon%21%20Get%20stuck%20in%20with%20crafts%2C%20enjoy%20some%20music%2C%20try%20some%20yoga%2C%20or%20simply%20relax%20and%20take%20in%20the%20beauty%20of%20the%20parish%26%23039%3Bs%20green%20spaces%20-%20there%26%23039%3Bs%20something%20for%20everyone%21%F0%9F%8C%BFFind%20out%20more%20here%20-%20southswindon-pc.gov.uk%2Fblossom%2F%23southswindon%20%23southswindonparishcouncil%20%23freeevents%20%23blossom%20%23springevents%20%23community%20%09%09",
@@ -369131,6 +369227,24 @@
           ]
         },
         {
+          "page_url": "https://whh.nhs.uk/",
+          "detected_links": [
+            "https://www.linkedin.com/company/north-cheshire-and-mersey-nhs/"
+          ]
+        },
+        {
+          "page_url": "https://whh.nhs.uk/cookie-settings",
+          "detected_links": [
+            "https://www.linkedin.com/company/north-cheshire-and-mersey-nhs/"
+          ]
+        },
+        {
+          "page_url": "https://whh.nhs.uk/patients-and-visitors/patient-information/when-you-need-urgent-healthcare/",
+          "detected_links": [
+            "https://www.linkedin.com/company/north-cheshire-and-mersey-nhs/"
+          ]
+        },
+        {
           "page_url": "https://workingwales.gov.wales/",
           "detected_links": [
             "https://www.linkedin.com/company/workingwales"
@@ -369175,18 +369289,21 @@
         {
           "page_url": "https://wroughton.gov.uk/",
           "detected_links": [
+            "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.facebook.com%2F255387694555937_936793932072616&title=%09%F0%9F%93%A3%F0%9D%97%A3%F0%9D%97%AE%F0%9D%97%BF%F0%9D%97%B6%F0%9D%98%80%F0%9D%97%B5%20%F0%9D%97%A2%F0%9D%97%B3%F0%9D%97%B3%F0%9D%97%B6%F0%9D%97%B0%F0%9D%97%B2%20%E2%80%93%20%F0%9D%97%98%F0%9D%97%AE%F0%9D%98%80%F0%9D%98%81%F0%9D%97%B2%F0%9D%97%BF%20%F0%9D%97%AA%F0%9D%97%B2%F0%9D%97%B2%F0%9D%97%B8%F0%9D%97%B2%F0%9D%97%BB%F0%9D%97%B1%20%F0%9D%97%A8%F0%9D%97%BD%F0%9D%97%B1%F0%9D%97%AE%F0%9D%98%81%F0%9D%97%B2%21The%20Parish%20Council%20office%20is%20now%20closed%20for%20the%20Easter%20Weekend%20and%20will%20reopen%20on%20Tuesday%207th%20April.For%20helpful%20contact%20details%20for%20outside%20organisations%2C%20please%20visit%20our%20website%3A%20wroughton.gov.uk%2F%20%20%F0%9F%93%9A%20%F0%9D%97%9F%F0%9D%97%B6%F0%9D%97%AF%F0%9D%97%BF%F0%9D%97%AE%F0%9D%97%BF%F0%9D%98%86%20%F0%9D%97%A2%F0%9D%97%BD%F0%9D%97%B2%F0%9D%97%BB%F0%9D%97%B6%F0%9D%97%BB%F0%9D%97%B4A%20quick%20reminder%20that%20the%20library%20will%20be%20open%20as%20usual%20this%20Saturday%2C%204th%20April%2C%20from%2010am%20%E2%80%931pm.%F0%9F%A4%9D%20%F0%9D%97%99%F0%9D%97%BF%F0%9D%97%B6%F0%9D%97%B2%F0%9D%97%BB%F0%9D%97%B1%F0%9D%98%80%F0%9D%97%B5%F0%9D%97%B6%F0%9D%97%BD%20%F0%9D%97%9A%F0%9D%97%BF%F0%9D%97%BC%F0%9D%98%82%F0%9D%97%BDPlease%20note%20there%20is%20no%20Friendship%20Group%20this%20coming%20Monday%20due%20to%20the%20Bank%20Holiday.%20We%20look%20forward%20to%20welcoming%20everyone%20back%20on%20Monday%2013th%20April.%F0%9F%93%B0%20%F0%9D%97%A3%F0%9D%97%AE%F0%9D%97%BF%F0%9D%97%B6%F0%9D%98%80%F0%9D%97%B5%20%F0%9D%97%A1%F0%9D%97%B2%F0%9D%98%84%F0%9D%98%80%F0%9D%97%B9%F0%9D%97%B2%F0%9D%98%81%F0%9D%98%81%F0%9D%97%B2%F0%9D%97%BFWe%20hope%20residents%20have%20now%20received%20their%20copy%20of%20the%20Spring%20Parish%20Council%20newsletter.%20If%20you%20haven%E2%80%99t%2C%20you%20can%20read%20the%20online%20version%20here%3A%20%F0%9F%91%89%20wroughton.gov.uk%2Fspring-2026-newsletter%2F%F0%9D%97%A8%F0%9D%97%BD%F0%9D%97%B0%F0%9D%97%BC%F0%9D%97%BA%F0%9D%97%B6%F0%9D%97%BB%F0%9D%97%B4%20%F0%9D%97%A0%F0%9D%97%B2%F0%9D%97%B2%F0%9D%98%81%F0%9D%97%B6%F0%9D%97%BB%F0%9D%97%B4%20%F0%9D%97%97%F0%9D%97%AE%F0%9D%98%81%F0%9D%97%B2%F0%9D%98%80%3ACommunity%20Assets%20%26amp%3B%20Open%20Spaces%20Committee%20Wed%208th%20April%E2%80%93%20CANCELLEDPlanning%20%26amp%3B%20Highways%20Committee%20%20%20%20%20%20%20%20%20Wed%2015th%20April%207.30pmFinance%20%26amp%3B%20General%20Purposes%20Committee%20%20Mon%2020th%20April%206.45pmFull%20Council%20Meeting%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Mon%2020th%20April%207.30pmANNUAL%20PARISH%20MEETING%20%20%20%20%20%20%20%20%20%20%20Mon%2027th%20April%206.30pmDon%E2%80%99t%20forget%20you%20can%20subscribe%20to%20our%20parish%20meeting%20calendar%20here%3A%20wroughton.gov.uk%2Fmeetings%2F%20%F0%9F%90%A3%F0%9D%93%A6%F0%9D%93%AE%20%F0%9D%94%80%F0%9D%93%B2%F0%9D%93%BC%F0%9D%93%B1%20%F0%9D%93%AE%F0%9D%93%BF%F0%9D%93%AE%F0%9D%93%BB%F0%9D%94%82%F0%9D%93%B8%F0%9D%93%B7%F0%9D%93%AE%20%F0%9D%93%AA%20%F0%9D%93%B1%F0%9D%93%AA%F0%9D%93%B9%F0%9D%93%B9%F0%9D%94%82%20%F0%9D%93%94%F0%9D%93%AA%F0%9D%93%BC%F0%9D%93%BD%F0%9D%93%AE%F0%9D%93%BB%20%F0%9D%94%80%F0%9D%93%AE%F0%9D%93%AE%F0%9D%93%B4%F0%9D%93%AE%F0%9D%93%B7%F0%9D%93%AD%21%F0%9F%90%A3%20%09%09",
             "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.facebook.com%2F255387694555937_931059172646092&title=%09COMMUNITY%20LITTERPICK%20TALLY%20TODAY%F0%9F%98%AE32%20bin%20bags%20of%20litter%F0%9F%98%AE3%20shoes%F0%9F%98%AE1%20hacksaw%F0%9F%98%AE3%20tyres%20-%20just%20a%20selection%20of%20the%20stuff%20picked%20by%20our%20fab%20team%20of%2027%20volunteers.%F0%9F%98%80Thanks%20to%20Parish%20Councillors%20Holly%20Woodward%2C%20Diane%20Archer%20and%20Lisa%20Campisano%2C%20Richard%20James%20Estate%20Agents%2C%20Step%20Out%20Swindon%2C%20representatives%20from%20the%20Parish%20Church%20of%20St%20John%20the%20Baptist%20and%20St%20Helen%2C%20the%20Discovery%20Church%20and%20various%20residents%20for%20their%20stellar%20effort%20today%20in%20cleaning%20up%20our%20community%20today.%F0%9F%98%8D%F0%9F%AB%B5Want%20to%20volunteer%20to%20litterpick%20at%20times%20to%20suit%20you%3F%20%20Contact%20Amanda%20on%20projects%40wroughton.gov.uk%20for%20a%20safety%20briefing%20and%20equipment.%20%09%09"
           ]
         },
         {
           "page_url": "https://wroughton.gov.uk/agendas-minutes/",
           "detected_links": [
+            "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.facebook.com%2F255387694555937_936793932072616&title=%09%F0%9F%93%A3%F0%9D%97%A3%F0%9D%97%AE%F0%9D%97%BF%F0%9D%97%B6%F0%9D%98%80%F0%9D%97%B5%20%F0%9D%97%A2%F0%9D%97%B3%F0%9D%97%B3%F0%9D%97%B6%F0%9D%97%B0%F0%9D%97%B2%20%E2%80%93%20%F0%9D%97%98%F0%9D%97%AE%F0%9D%98%80%F0%9D%98%81%F0%9D%97%B2%F0%9D%97%BF%20%F0%9D%97%AA%F0%9D%97%B2%F0%9D%97%B2%F0%9D%97%B8%F0%9D%97%B2%F0%9D%97%BB%F0%9D%97%B1%20%F0%9D%97%A8%F0%9D%97%BD%F0%9D%97%B1%F0%9D%97%AE%F0%9D%98%81%F0%9D%97%B2%21The%20Parish%20Council%20office%20is%20now%20closed%20for%20the%20Easter%20Weekend%20and%20will%20reopen%20on%20Tuesday%207th%20April.For%20helpful%20contact%20details%20for%20outside%20organisations%2C%20please%20visit%20our%20website%3A%20wroughton.gov.uk%2F%20%20%F0%9F%93%9A%20%F0%9D%97%9F%F0%9D%97%B6%F0%9D%97%AF%F0%9D%97%BF%F0%9D%97%AE%F0%9D%97%BF%F0%9D%98%86%20%F0%9D%97%A2%F0%9D%97%BD%F0%9D%97%B2%F0%9D%97%BB%F0%9D%97%B6%F0%9D%97%BB%F0%9D%97%B4A%20quick%20reminder%20that%20the%20library%20will%20be%20open%20as%20usual%20this%20Saturday%2C%204th%20April%2C%20from%2010am%20%E2%80%931pm.%F0%9F%A4%9D%20%F0%9D%97%99%F0%9D%97%BF%F0%9D%97%B6%F0%9D%97%B2%F0%9D%97%BB%F0%9D%97%B1%F0%9D%98%80%F0%9D%97%B5%F0%9D%97%B6%F0%9D%97%BD%20%F0%9D%97%9A%F0%9D%97%BF%F0%9D%97%BC%F0%9D%98%82%F0%9D%97%BDPlease%20note%20there%20is%20no%20Friendship%20Group%20this%20coming%20Monday%20due%20to%20the%20Bank%20Holiday.%20We%20look%20forward%20to%20welcoming%20everyone%20back%20on%20Monday%2013th%20April.%F0%9F%93%B0%20%F0%9D%97%A3%F0%9D%97%AE%F0%9D%97%BF%F0%9D%97%B6%F0%9D%98%80%F0%9D%97%B5%20%F0%9D%97%A1%F0%9D%97%B2%F0%9D%98%84%F0%9D%98%80%F0%9D%97%B9%F0%9D%97%B2%F0%9D%98%81%F0%9D%98%81%F0%9D%97%B2%F0%9D%97%BFWe%20hope%20residents%20have%20now%20received%20their%20copy%20of%20the%20Spring%20Parish%20Council%20newsletter.%20If%20you%20haven%E2%80%99t%2C%20you%20can%20read%20the%20online%20version%20here%3A%20%F0%9F%91%89%20wroughton.gov.uk%2Fspring-2026-newsletter%2F%F0%9D%97%A8%F0%9D%97%BD%F0%9D%97%B0%F0%9D%97%BC%F0%9D%97%BA%F0%9D%97%B6%F0%9D%97%BB%F0%9D%97%B4%20%F0%9D%97%A0%F0%9D%97%B2%F0%9D%97%B2%F0%9D%98%81%F0%9D%97%B6%F0%9D%97%BB%F0%9D%97%B4%20%F0%9D%97%97%F0%9D%97%AE%F0%9D%98%81%F0%9D%97%B2%F0%9D%98%80%3ACommunity%20Assets%20%26amp%3B%20Open%20Spaces%20Committee%20Wed%208th%20April%E2%80%93%20CANCELLEDPlanning%20%26amp%3B%20Highways%20Committee%20%20%20%20%20%20%20%20%20Wed%2015th%20April%207.30pmFinance%20%26amp%3B%20General%20Purposes%20Committee%20%20Mon%2020th%20April%206.45pmFull%20Council%20Meeting%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Mon%2020th%20April%207.30pmANNUAL%20PARISH%20MEETING%20%20%20%20%20%20%20%20%20%20%20Mon%2027th%20April%206.30pmDon%E2%80%99t%20forget%20you%20can%20subscribe%20to%20our%20parish%20meeting%20calendar%20here%3A%20wroughton.gov.uk%2Fmeetings%2F%20%F0%9F%90%A3%F0%9D%93%A6%F0%9D%93%AE%20%F0%9D%94%80%F0%9D%93%B2%F0%9D%93%BC%F0%9D%93%B1%20%F0%9D%93%AE%F0%9D%93%BF%F0%9D%93%AE%F0%9D%93%BB%F0%9D%94%82%F0%9D%93%B8%F0%9D%93%B7%F0%9D%93%AE%20%F0%9D%93%AA%20%F0%9D%93%B1%F0%9D%93%AA%F0%9D%93%B9%F0%9D%93%B9%F0%9D%94%82%20%F0%9D%93%94%F0%9D%93%AA%F0%9D%93%BC%F0%9D%93%BD%F0%9D%93%AE%F0%9D%93%BB%20%F0%9D%94%80%F0%9D%93%AE%F0%9D%93%AE%F0%9D%93%B4%F0%9D%93%AE%F0%9D%93%B7%F0%9D%93%AD%21%F0%9F%90%A3%20%09%09",
             "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.facebook.com%2F255387694555937_931059172646092&title=%09COMMUNITY%20LITTERPICK%20TALLY%20TODAY%F0%9F%98%AE32%20bin%20bags%20of%20litter%F0%9F%98%AE3%20shoes%F0%9F%98%AE1%20hacksaw%F0%9F%98%AE3%20tyres%20-%20just%20a%20selection%20of%20the%20stuff%20picked%20by%20our%20fab%20team%20of%2027%20volunteers.%F0%9F%98%80Thanks%20to%20Parish%20Councillors%20Holly%20Woodward%2C%20Diane%20Archer%20and%20Lisa%20Campisano%2C%20Richard%20James%20Estate%20Agents%2C%20Step%20Out%20Swindon%2C%20representatives%20from%20the%20Parish%20Church%20of%20St%20John%20the%20Baptist%20and%20St%20Helen%2C%20the%20Discovery%20Church%20and%20various%20residents%20for%20their%20stellar%20effort%20today%20in%20cleaning%20up%20our%20community%20today.%F0%9F%98%8D%F0%9F%AB%B5Want%20to%20volunteer%20to%20litterpick%20at%20times%20to%20suit%20you%3F%20%20Contact%20Amanda%20on%20projects%40wroughton.gov.uk%20for%20a%20safety%20briefing%20and%20equipment.%20%09%09"
           ]
         },
         {
           "page_url": "https://wroughton.gov.uk/community-information/",
           "detected_links": [
+            "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.facebook.com%2F255387694555937_936793932072616&title=%09%F0%9F%93%A3%F0%9D%97%A3%F0%9D%97%AE%F0%9D%97%BF%F0%9D%97%B6%F0%9D%98%80%F0%9D%97%B5%20%F0%9D%97%A2%F0%9D%97%B3%F0%9D%97%B3%F0%9D%97%B6%F0%9D%97%B0%F0%9D%97%B2%20%E2%80%93%20%F0%9D%97%98%F0%9D%97%AE%F0%9D%98%80%F0%9D%98%81%F0%9D%97%B2%F0%9D%97%BF%20%F0%9D%97%AA%F0%9D%97%B2%F0%9D%97%B2%F0%9D%97%B8%F0%9D%97%B2%F0%9D%97%BB%F0%9D%97%B1%20%F0%9D%97%A8%F0%9D%97%BD%F0%9D%97%B1%F0%9D%97%AE%F0%9D%98%81%F0%9D%97%B2%21The%20Parish%20Council%20office%20is%20now%20closed%20for%20the%20Easter%20Weekend%20and%20will%20reopen%20on%20Tuesday%207th%20April.For%20helpful%20contact%20details%20for%20outside%20organisations%2C%20please%20visit%20our%20website%3A%20wroughton.gov.uk%2F%20%20%F0%9F%93%9A%20%F0%9D%97%9F%F0%9D%97%B6%F0%9D%97%AF%F0%9D%97%BF%F0%9D%97%AE%F0%9D%97%BF%F0%9D%98%86%20%F0%9D%97%A2%F0%9D%97%BD%F0%9D%97%B2%F0%9D%97%BB%F0%9D%97%B6%F0%9D%97%BB%F0%9D%97%B4A%20quick%20reminder%20that%20the%20library%20will%20be%20open%20as%20usual%20this%20Saturday%2C%204th%20April%2C%20from%2010am%20%E2%80%931pm.%F0%9F%A4%9D%20%F0%9D%97%99%F0%9D%97%BF%F0%9D%97%B6%F0%9D%97%B2%F0%9D%97%BB%F0%9D%97%B1%F0%9D%98%80%F0%9D%97%B5%F0%9D%97%B6%F0%9D%97%BD%20%F0%9D%97%9A%F0%9D%97%BF%F0%9D%97%BC%F0%9D%98%82%F0%9D%97%BDPlease%20note%20there%20is%20no%20Friendship%20Group%20this%20coming%20Monday%20due%20to%20the%20Bank%20Holiday.%20We%20look%20forward%20to%20welcoming%20everyone%20back%20on%20Monday%2013th%20April.%F0%9F%93%B0%20%F0%9D%97%A3%F0%9D%97%AE%F0%9D%97%BF%F0%9D%97%B6%F0%9D%98%80%F0%9D%97%B5%20%F0%9D%97%A1%F0%9D%97%B2%F0%9D%98%84%F0%9D%98%80%F0%9D%97%B9%F0%9D%97%B2%F0%9D%98%81%F0%9D%98%81%F0%9D%97%B2%F0%9D%97%BFWe%20hope%20residents%20have%20now%20received%20their%20copy%20of%20the%20Spring%20Parish%20Council%20newsletter.%20If%20you%20haven%E2%80%99t%2C%20you%20can%20read%20the%20online%20version%20here%3A%20%F0%9F%91%89%20wroughton.gov.uk%2Fspring-2026-newsletter%2F%F0%9D%97%A8%F0%9D%97%BD%F0%9D%97%B0%F0%9D%97%BC%F0%9D%97%BA%F0%9D%97%B6%F0%9D%97%BB%F0%9D%97%B4%20%F0%9D%97%A0%F0%9D%97%B2%F0%9D%97%B2%F0%9D%98%81%F0%9D%97%B6%F0%9D%97%BB%F0%9D%97%B4%20%F0%9D%97%97%F0%9D%97%AE%F0%9D%98%81%F0%9D%97%B2%F0%9D%98%80%3ACommunity%20Assets%20%26amp%3B%20Open%20Spaces%20Committee%20Wed%208th%20April%E2%80%93%20CANCELLEDPlanning%20%26amp%3B%20Highways%20Committee%20%20%20%20%20%20%20%20%20Wed%2015th%20April%207.30pmFinance%20%26amp%3B%20General%20Purposes%20Committee%20%20Mon%2020th%20April%206.45pmFull%20Council%20Meeting%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Mon%2020th%20April%207.30pmANNUAL%20PARISH%20MEETING%20%20%20%20%20%20%20%20%20%20%20Mon%2027th%20April%206.30pmDon%E2%80%99t%20forget%20you%20can%20subscribe%20to%20our%20parish%20meeting%20calendar%20here%3A%20wroughton.gov.uk%2Fmeetings%2F%20%F0%9F%90%A3%F0%9D%93%A6%F0%9D%93%AE%20%F0%9D%94%80%F0%9D%93%B2%F0%9D%93%BC%F0%9D%93%B1%20%F0%9D%93%AE%F0%9D%93%BF%F0%9D%93%AE%F0%9D%93%BB%F0%9D%94%82%F0%9D%93%B8%F0%9D%93%B7%F0%9D%93%AE%20%F0%9D%93%AA%20%F0%9D%93%B1%F0%9D%93%AA%F0%9D%93%B9%F0%9D%93%B9%F0%9D%94%82%20%F0%9D%93%94%F0%9D%93%AA%F0%9D%93%BC%F0%9D%93%BD%F0%9D%93%AE%F0%9D%93%BB%20%F0%9D%94%80%F0%9D%93%AE%F0%9D%93%AE%F0%9D%93%B4%F0%9D%93%AE%F0%9D%93%B7%F0%9D%93%AD%21%F0%9F%90%A3%20%09%09",
             "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.facebook.com%2F255387694555937_931059172646092&title=%09COMMUNITY%20LITTERPICK%20TALLY%20TODAY%F0%9F%98%AE32%20bin%20bags%20of%20litter%F0%9F%98%AE3%20shoes%F0%9F%98%AE1%20hacksaw%F0%9F%98%AE3%20tyres%20-%20just%20a%20selection%20of%20the%20stuff%20picked%20by%20our%20fab%20team%20of%2027%20volunteers.%F0%9F%98%80Thanks%20to%20Parish%20Councillors%20Holly%20Woodward%2C%20Diane%20Archer%20and%20Lisa%20Campisano%2C%20Richard%20James%20Estate%20Agents%2C%20Step%20Out%20Swindon%2C%20representatives%20from%20the%20Parish%20Church%20of%20St%20John%20the%20Baptist%20and%20St%20Helen%2C%20the%20Discovery%20Church%20and%20various%20residents%20for%20their%20stellar%20effort%20today%20in%20cleaning%20up%20our%20community%20today.%F0%9F%98%8D%F0%9F%AB%B5Want%20to%20volunteer%20to%20litterpick%20at%20times%20to%20suit%20you%3F%20%20Contact%20Amanda%20on%20projects%40wroughton.gov.uk%20for%20a%20safety%20briefing%20and%20equipment.%20%09%09"
           ]
         },
