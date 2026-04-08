@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-04-08 08:36 UTC_
+_Generated: 2026-04-08 10:22 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -10,10 +10,10 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage |
 |-----------|--------------|-----------|----------|
-| **Combined Reachability** | **77,298 confirmed reachable** | 82,714 | **██████████████████░░ 93.5%** |
+| **Combined Reachability** | **77,349 confirmed reachable** | 82,714 | **██████████████████░░ 93.5%** |
 | URL Validation | 13,771 validated (11,960 valid) | 82,714 | ███░░░░░░░░░░░░░░░░░ 16.6% |
-| Social Media | 82,714 scanned (77,298 reachable) | 82,714 | ████████████████████ 100.0% |
-| Technology | 6,945 scanned | 82,714 | █░░░░░░░░░░░░░░░░░░░ 8.4% |
+| Social Media | 82,714 scanned (77,349 reachable) | 82,714 | ████████████████████ 100.0% |
+| Technology | 3,912 scanned | 82,714 | ░░░░░░░░░░░░░░░░░░░░ 4.7% |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) |
 | Accessibility Statements | 72,735 scanned | 82,714 | █████████████████░░░ 87.9% |
 
@@ -23,7 +23,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Country | Total | Valid | Invalid | Scan Period | Coverage |
 |---------|-------|-------|---------|-------------|----------|
-| AUSTRIA | 821 | 718 | 193 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
+| AUSTRIA | 821 | 718 | 194 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
 | BELGIUM | 1,309 | 1,166 | 736 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
 | BULGARIA | 291 | 232 | 90 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
 | CROATIA | 233 | 227 | 13 | Mar 2026 – Apr 2026 | ███████████████ 100.0% |
@@ -67,7 +67,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | MALTA | 608 | 608 | 595 | 129 | 20 | 32 | 501 | 57 | 17 | 0 | 34 | Mar 2026 – Apr 2026 |
 | NETHERLANDS | 937 | 937 | 909 | 257 | 54 | 95 | 644 | 148 | 74 | 45 | 77 | Mar 2026 – Apr 2026 |
 | NORWAY | 239 | 239 | 233 | 55 | 2 | 0 | 211 | 10 | 13 | 0 | 2 | Mar 2026 – Apr 2026 |
-| POLAND | 14,938 | 14,938 | 13,891 | 5,806 | 301 | 925 | 8,575 | 1,083 | 315 | 1 | 1,044 | Mar 2026 – Apr 2026 |
+| POLAND | 14,938 | 14,938 | 13,942 | 6,182 | 301 | 957 | 8,600 | 1,091 | 325 | 1 | 1,047 | Mar 2026 – Apr 2026 |
 | PORTUGAL | 3,503 | 3,503 | 2,933 | 1,015 | 57 | 175 | 2,039 | 430 | 70 | 2 | 183 | Mar 2026 – Apr 2026 |
 | REPUBLIC_OF_CYPRUS | 24 | 24 | 24 | 11 | 0 | 0 | 19 | 5 | 0 | 0 | 0 | Mar 2026 – Apr 2026 |
 | ROMANIA | 799 | 799 | 351 | 124 | 6 | 11 | 273 | 42 | 1 | 0 | 14 | Mar 2026 – Apr 2026 |
@@ -92,9 +92,6 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | CROATIA | 233 | 2026-04-07 |
 | CZECHIA | 843 | 2026-04-07 |
 | DENMARK | 415 | 2026-04-07 |
-| ESTONIA | 396 | 2026-04-08 |
-| FINLAND | 180 | 2026-04-08 |
-| FRANCE | 2,457 | 2026-04-08 |
 
 ## Lighthouse Scan
 
