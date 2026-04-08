@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-07 22:20 UTC",
+  "generated_at": "2026-04-08 00:09 UTC",
   "summary": {
-    "total_batches": 176,
+    "total_batches": 177,
     "total_scanned": 82714,
-    "total_reachable": 77242,
+    "total_reachable": 77253,
     "total_available": 82714,
-    "twitter_pages": 14540,
+    "twitter_pages": 14544,
     "x_pages": 3295,
     "bluesky_pages": 626,
     "mastodon_pages": 4273,
-    "facebook_pages": 26071,
-    "linkedin_pages": 9095,
+    "facebook_pages": 26529,
+    "linkedin_pages": 9240,
     "first_scan": "2026-03-22T00:36:33.003106+00:00",
-    "last_scan": "2026-04-07T20:29:40.408867+00:00"
+    "last_scan": "2026-04-08T00:09:04.268050+00:00"
   },
   "by_country": [
     {
@@ -216,23 +216,23 @@
     {
       "country_code": "GERMANY",
       "total_scanned": 6555,
-      "reachable": 6472,
-      "twitter_pages": 1173,
+      "reachable": 6483,
+      "twitter_pages": 1177,
       "x_pages": 174,
       "bluesky_pages": 124,
       "mastodon_pages": 449,
-      "facebook_pages": 1090,
-      "linkedin_pages": 421,
-      "twitter_only": 1452,
+      "facebook_pages": 1548,
+      "linkedin_pages": 566,
+      "twitter_only": 1602,
       "modern_only": 301,
-      "mixed": 364,
-      "no_social": 4894,
-      "has_any_legacy": 1816,
+      "mixed": 419,
+      "no_social": 4902,
+      "has_any_legacy": 2021,
       "has_any_modern": 500,
       "first_scan": "2026-03-27T05:52:42.257416+00:00",
-      "last_scan": "2026-04-06T20:28:07.268150+00:00",
+      "last_scan": "2026-04-08T00:09:04.268050+00:00",
       "sovereignty_score": 80.3,
-      "legacy_exposure": 28.1,
+      "legacy_exposure": 31.2,
       "sovereignty_tier": "🥉 Growing"
     },
     {
@@ -78501,6 +78501,10 @@
           "page_url": "https://www.cdu-fraktion.berlin.de/",
           "detected_links": [
             "https://twitter.com/CDUBerlin_AGH",
+            "https://twitter.com/share?url=https%3A%2F%2Fwww.instagram.com%2Fp%2FDW0lDXpDvqy%2F",
+            "https://twitter.com/share?url=https%3A%2F%2Fwww.facebook.com%2F648796107284846%2Fposts%2F1396368159194300",
+            "https://twitter.com/share?url=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D1394675139363602%26set%3Da.648712047293252%26type%3D3",
+            "https://twitter.com/share?url=https%3A%2F%2Fwww.instagram.com%2Fp%2FDWvXf5cDdrT%2F",
             "https://twitter.com/share?url=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D1392958652868584%26set%3Da.648712047293252%26type%3D3",
             "https://twitter.com/share?url=https%3A%2F%2Fwww.instagram.com%2Fp%2FDWqLsLGDc1-%2F",
             "https://twitter.com/share?url=https%3A%2F%2Fwww.facebook.com%2Freel%2F1685950259503753%2F",
@@ -78958,6 +78962,12 @@
         },
         {
           "page_url": "https://www.geologie.sachsen.de/",
+          "detected_links": [
+            "https://twitter.com/intent/tweet?url=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.geologie.sachsen.de/veranstaltungskalender-30357.html",
           "detected_links": [
             "https://twitter.com/intent/tweet?url=http://www.sachsen.de/"
           ]
@@ -80004,6 +80014,18 @@
           ]
         },
         {
+          "page_url": "https://www.sab.sachsen.de/",
+          "detected_links": [
+            "https://twitter.com/sab_foerderbank"
+          ]
+        },
+        {
+          "page_url": "https://www.sab.sachsen.de/web/guest/news",
+          "detected_links": [
+            "https://twitter.com/sab_foerderbank"
+          ]
+        },
+        {
           "page_url": "https://www.sachsen.de/",
           "detected_links": [
             "https://twitter.com/intent/tweet?url=http://www.sachsen.de/"
@@ -80062,6 +80084,12 @@
           "page_url": "https://www.schulsport.sachsen.de/schwimmunterricht-4144.html",
           "detected_links": [
             "https://twitter.com/intent/tweet?url=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.service.bund.de/Content/DE/Stellen/Suche/Formular.html?nn=4641514&type=1",
+          "detected_links": [
+            "http://twitter.com/bundde_Jobs"
           ]
         },
         {
@@ -80454,6 +80482,7 @@
           "page_url": "https://www.tagespflege.bayern.de/",
           "detected_links": [
             "https://twitter.com/BayStMAS",
+            "https://twitter.com/intent/tweet?text=Kindertagespflege%20in%20Bayern&url=https%3A%2F%2Fwww.tagespflege.bayern.de%2F&lang=de",
             "https://twitter.com/intent/tweet?text=Kindertagespflege%20in%20Bayern&url=https://www.tagespflege.bayern.de/&lang=de"
           ]
         },
@@ -80461,6 +80490,7 @@
           "page_url": "https://www.tagespflege.bayern.de/datenschutz/",
           "detected_links": [
             "https://twitter.com/BayStMAS",
+            "https://twitter.com/intent/tweet?text=Datenschutz&url=https%3A%2F%2Fwww.tagespflege.bayern.de%2Fdatenschutz%2F&lang=de",
             "https://twitter.com/intent/tweet?text=Datenschutz&url=https://www.tagespflege.bayern.de/datenschutz/&lang=de"
           ]
         },
@@ -81608,9 +81638,10 @@
             "https://x.com/RegSprecher",
             "https://x.com/bundeskanzler",
             "https://x.com/intent/post?text=Unterst%C3%BCtzung%20f%C3%BCr%20Stabilit%C3%A4t%20und%20Wachstum%20Syriens&url=https://www.bundesregierung.de/breg-de/aktuelles/kanzler-merz-al-scharaa-2417464&hashtags=Merz,BuReg",
+            "https://x.com/intent/post?text=Ma%C3%9Fnahmen%20der%20Bundesregierung%20gegen%20hohe%20Spritpreise&url=https://www.bundesregierung.de/breg-de/aktuelles/massnahmen-gegen-spritpreise-2410850&hashtags=Merz,BuReg",
+            "https://x.com/intent/post?text=Bundeskabinett&url=https://www.bundesregierung.de/breg-de/bundesregierung/bundeskabinett&hashtags=Merz,BuReg",
             "https://x.com/intent/post?text=Was%20ist%20neu%20im%20April%202026%3F&url=https://www.bundesregierung.de/breg-de/aktuelles/gesetzliche-neuregelungen-april-2026-2416748&hashtags=Merz,BuReg",
             "https://x.com/intent/post?text=Verbrechen%20in%20Butscha%20d%C3%BCrfen%20nicht%20ungestraft%20bleiben&url=https://www.bundesregierung.de/breg-de/aktuelles/jahrestag-butscha-2417764&hashtags=Merz,BuReg",
-            "https://x.com/intent/post?text=Bundeskabinett&url=https://www.bundesregierung.de/breg-de/bundesregierung/bundeskabinett&hashtags=Merz,BuReg",
             "https://x.com/intent/post?text=Eine%20Zukunft%20in%20Frieden%2C%20Freiheit%20und%20Wohlstand&url=https://www.bundesregierung.de/breg-de/aktuelles/kanzler-regierungsbefragung-2415918&hashtags=Merz,BuReg",
             "https://x.com/intent/post?text=Investitionen%20und%20Innovationen%20in%20Ostdeutschland%20st%C3%A4rken&url=https://www.bundesregierung.de/breg-de/aktuelles/mpk-ost-pressekonferenz-2416218&hashtags=Merz,BuReg"
           ]
@@ -81863,7 +81894,7 @@
         {
           "page_url": "https://www.landtag.sachsen.de/",
           "detected_links": [
-            "https://x.com/intent/tweet?url=https://www.landtag.sachsen.de/de/18-maerz-sondersitzung-des-innenausschusses-zur-neuregelung-des-nachrichtenrechts-29011.cshtml&text=Sondersitzung%20des%20Innenausschusses%20am%2027.%20M%c3%a4rz%202026",
+            "https://x.com/intent/tweet?url=https://www.landtag.sachsen.de/de/saechsische-landesbeauftragte-zur-aufarbeitung-der-sed-diktatur-wiedergewaehlt-33491.cshtml&text=S%c3%a4chsische%20Landesbeauftragte%20zur%20Aufarbeitung%20der%20SED-Diktatur%20wiedergew%c3%a4hlt",
             "https://x.com/intent/tweet?url=https://www.landtag.sachsen.de/de/usbekischer-botschafter-zu-gast-im-parlament-33485.cshtml&text=Usbekischer%20Botschafter%20zu%20Gast%20im%20Parlament",
             "https://x.com/intent/tweet?url=https://www.landtag.sachsen.de/de/konferenz-europa-und-mitteleuropa-in-der-weltweiten-zeitenwende-am-16-april-2026-in-tallinn-33310.cshtml&text=Konferenz%20%22Europa%20und%20Mitteleuropa%20in%20der%20weltweiten%20Zeitenwende%22%20am%2016.%20April%202026%20in%20Tallinn",
             "https://x.com/intent/tweet?url=https://www.landtag.sachsen.de/de/tag-der-demokratiegeschichte-33464.cshtml&text=Tag%20der%20Demokratiegeschichte",
@@ -81872,13 +81903,14 @@
             "https://x.com/intent/tweet?url=https://www.landtag.sachsen.de/de/blick-hinter-die-kulissen-ein-tag-mit-sandra-gockel-33353.cshtml&text=Blick%20hinter%20die%20Kulissen%3a%20Ein%20Tag%20mit%20Sandra%20Gockel",
             "https://x.com/intent/tweet?url=https://www.landtag.sachsen.de/de/plenum-im-rueckblick-landtagssitzungen-im-november-2023-28324.cshtml&text=Plenum%20im%20R%c3%bcckblick%3a%20Landtagssitzungen%20im%20Februar%202026",
             "https://x.com/intent/tweet?url=https://www.landtag.sachsen.de/de/mitzeichner-koennen-oeffentliche-petitionen-jetzt-sichtbar-unterstuetzen-32509.cshtml&text=Mitzeichner%20k%c3%b6nnen%20%c3%b6ffentliche%20Petitionen%20jetzt%20sichtbar%20unterst%c3%bctzen",
-            "https://x.com/sax_lt"
+            "https://x.com/sax_lt",
+            "https://x.com/intent/tweet?url=https://www.landtag.sachsen.de/de/18-maerz-sondersitzung-des-innenausschusses-zur-neuregelung-des-nachrichtenrechts-29011.cshtml&text=Sondersitzung%20des%20Innenausschusses%20am%2027.%20M%c3%a4rz%202026"
           ]
         },
         {
           "page_url": "https://www.landtag.sachsen.de/de/index.cshtml",
           "detected_links": [
-            "https://x.com/intent/tweet?url=https://www.landtag.sachsen.de/de/18-maerz-sondersitzung-des-innenausschusses-zur-neuregelung-des-nachrichtenrechts-29011.cshtml&text=Sondersitzung%20des%20Innenausschusses%20am%2027.%20M%c3%a4rz%202026",
+            "https://x.com/intent/tweet?url=https://www.landtag.sachsen.de/de/saechsische-landesbeauftragte-zur-aufarbeitung-der-sed-diktatur-wiedergewaehlt-33491.cshtml&text=S%c3%a4chsische%20Landesbeauftragte%20zur%20Aufarbeitung%20der%20SED-Diktatur%20wiedergew%c3%a4hlt",
             "https://x.com/intent/tweet?url=https://www.landtag.sachsen.de/de/usbekischer-botschafter-zu-gast-im-parlament-33485.cshtml&text=Usbekischer%20Botschafter%20zu%20Gast%20im%20Parlament",
             "https://x.com/intent/tweet?url=https://www.landtag.sachsen.de/de/konferenz-europa-und-mitteleuropa-in-der-weltweiten-zeitenwende-am-16-april-2026-in-tallinn-33310.cshtml&text=Konferenz%20%22Europa%20und%20Mitteleuropa%20in%20der%20weltweiten%20Zeitenwende%22%20am%2016.%20April%202026%20in%20Tallinn",
             "https://x.com/intent/tweet?url=https://www.landtag.sachsen.de/de/tag-der-demokratiegeschichte-33464.cshtml&text=Tag%20der%20Demokratiegeschichte",
@@ -81887,7 +81919,8 @@
             "https://x.com/intent/tweet?url=https://www.landtag.sachsen.de/de/blick-hinter-die-kulissen-ein-tag-mit-sandra-gockel-33353.cshtml&text=Blick%20hinter%20die%20Kulissen%3a%20Ein%20Tag%20mit%20Sandra%20Gockel",
             "https://x.com/intent/tweet?url=https://www.landtag.sachsen.de/de/plenum-im-rueckblick-landtagssitzungen-im-november-2023-28324.cshtml&text=Plenum%20im%20R%c3%bcckblick%3a%20Landtagssitzungen%20im%20Februar%202026",
             "https://x.com/intent/tweet?url=https://www.landtag.sachsen.de/de/mitzeichner-koennen-oeffentliche-petitionen-jetzt-sichtbar-unterstuetzen-32509.cshtml&text=Mitzeichner%20k%c3%b6nnen%20%c3%b6ffentliche%20Petitionen%20jetzt%20sichtbar%20unterst%c3%bctzen",
-            "https://x.com/sax_lt"
+            "https://x.com/sax_lt",
+            "https://x.com/intent/tweet?url=https://www.landtag.sachsen.de/de/18-maerz-sondersitzung-des-innenausschusses-zur-neuregelung-des-nachrichtenrechts-29011.cshtml&text=Sondersitzung%20des%20Innenausschusses%20am%2027.%20M%c3%a4rz%202026"
           ]
         },
         {
@@ -81987,6 +82020,7 @@
           "page_url": "https://www.stmi.bayern.de/",
           "detected_links": [
             "https://x.com/baystmi",
+            "https://x.com//status/2038566389170967032",
             "https://x.com//status/2037181420762775700",
             "https://x.com//status/2036717093320638917",
             "https://x.com//status/2036436662624960782",
@@ -85434,9 +85468,11 @@
         {
           "page_url": "https://www.schleswig-holstein.de/",
           "detected_links": [
-            "https://social.schleswig-holstein.de/@landesregierung/116279283236996668",
+            "https://social.schleswig-holstein.de/@landesregierung/116350665727913579",
+            "https://social.schleswig-holstein.de/@landesregierung/116324051387423945",
             "https://social.schleswig-holstein.de/@landesregierung",
-            "https://mastodon.social/share?text=Landesportal%20Schleswig-Holstein%20https%3A%2F%2Fwww.schleswig-holstein.de%2FDE%2Flandesportal"
+            "https://mastodon.social/share?text=Landesportal%20Schleswig-Holstein%20https%3A%2F%2Fwww.schleswig-holstein.de%2FDE%2Flandesportal",
+            "https://social.schleswig-holstein.de/@landesregierung/116279283236996668"
           ]
         },
         {
@@ -85597,6 +85633,23 @@
         {
           "page_url": "https://www.thueringer-landtag.de/",
           "detected_links": [
+            "https://social.bund.de/@thueringerlandtag/116362370395078468",
+            "https://social.bund.de/tags/demokratie",
+            "https://social.bund.de/tags/parlament",
+            "https://social.bund.de/@thueringerlandtag/116356708153383378",
+            "https://social.bund.de/tags/stellenangebote",
+            "https://social.bund.de/tags/wehire",
+            "https://social.bund.de/@thueringerlandtag/116350810044616820",
+            "https://social.bund.de/@thueringerlandtag/116336023753470226",
+            "https://social.bund.de/tags/deinlandtag",
+            "https://social.bund.de/tags/landtagerleben",
+            "https://social.bund.de/@thueringerlandtag/116335522726798996",
+            "https://social.bund.de/@thueringerlandtag/116330101429672623",
+            "https://social.bund.de/@thueringerlandtag/116329917313136514",
+            "https://social.bund.de/@thueringerlandtag/116328842878953360",
+            "https://social.bund.de/@thueringerlandtag/116324627664536466",
+            "https://freistaat-thueringen.social/@thueringen",
+            "https://social.bund.de/@thueringerlandtag",
             "https://social.bund.de/@thueringerlandtag/116300599454671685",
             "https://social.bund.de/@thueringerlandtag/116300148477431007",
             "https://social.bund.de/tags/plenumth",
@@ -85606,8 +85659,7 @@
             "https://social.bund.de/@thueringerlandtag/116294470527876594",
             "https://social.bund.de/@thueringerlandtag/116290671588688564",
             "https://social.bund.de/@thueringerlandtag/116289832912985967",
-            "https://social.bund.de/@thueringerlandtag/116289392695269639",
-            "https://social.bund.de/@thueringerlandtag"
+            "https://social.bund.de/@thueringerlandtag/116289392695269639"
           ]
         },
         {
@@ -91185,15 +91237,17 @@
         {
           "page_url": "https://welcome.stuttgart.de/",
           "detected_links": [
-            "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwelcome.stuttgart.de%2F&t=1775238364",
-            "https://www.facebook.com/Stadt.Stuttgart"
+            "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwelcome.stuttgart.de%2F&t=1775600790",
+            "https://www.facebook.com/Stadt.Stuttgart",
+            "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwelcome.stuttgart.de%2F&t=1775238364"
           ]
         },
         {
           "page_url": "https://welcome.stuttgart.de/welcome-center/index.php",
           "detected_links": [
-            "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwelcome.stuttgart.de%2Fwelcome-center%2F&t=1775238365",
-            "https://www.facebook.com/Stadt.Stuttgart"
+            "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwelcome.stuttgart.de%2Fwelcome-center%2F&t=1775600792",
+            "https://www.facebook.com/Stadt.Stuttgart",
+            "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwelcome.stuttgart.de%2Fwelcome-center%2F&t=1775238365"
           ]
         },
         {
@@ -91996,6 +92050,18 @@
           ]
         },
         {
+          "page_url": "https://www.arbeitsschutz.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.arbeitsschutz.sachsen.de/psychische-belastungen-4082.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
           "page_url": "https://www.arbg.bayern.de/",
           "detected_links": [
             "https://www.facebook.com/sharer.php?u=https://www.arbg.bayern.de/"
@@ -92067,6 +92133,12 @@
           "page_url": "https://www.awg.bayern.de/cms02/asp/319397/index.php",
           "detected_links": [
             "https://www.facebook.com/Land.Schafft.Bayern/"
+          ]
+        },
+        {
+          "page_url": "https://www.babs.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
           ]
         },
         {
@@ -92191,6 +92263,18 @@
           ]
         },
         {
+          "page_url": "https://www.baustellen.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.baustellen.sachsen.de/baustelleninformationen-des-bundes-und-der-lander-3967.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
           "page_url": "https://www.bayerische-stiftung-hospiz.bayern.de/",
           "detected_links": [
             "https://www.facebook.com/sharer.php?u=https://www.bayerische-stiftung-hospiz.bayern.de/"
@@ -92205,10 +92289,12 @@
         {
           "page_url": "https://www.bayern.de/",
           "detected_links": [
+            "https://www.facebook.com/reel/993596876326004/",
+            "https://www.facebook.com/655606226595367/posts/1399665915522724",
             "https://www.facebook.com/bayern",
+            "http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.bayern.de%2F",
             "https://www.facebook.com/reel/1662186641601560/",
-            "https://www.facebook.com/reel/1125948722996598/",
-            "http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.bayern.de%2F"
+            "https://www.facebook.com/reel/1125948722996598/"
           ]
         },
         {
@@ -92247,6 +92333,12 @@
         },
         {
           "page_url": "https://www.behindern.verhindern.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.behindern.verhindern.sachsen.de/saechsische-politik-fuer-menschen-mit-behinderungen.html",
           "detected_links": [
             "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
           ]
@@ -92479,11 +92571,12 @@
         {
           "page_url": "https://www.bmvg.de/",
           "detected_links": [
+            "https://www.facebook.com/1223220453176488/posts/1396410792524119",
             "https://www.facebook.com/reel/4290800021236980/",
             "https://www.facebook.com/1223220453176488/posts/1393868919444973",
-            "https://www.facebook.com/1223220453176488/posts/1393118346186697",
             "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.bmvg.de%2Fde",
-            "https://www.facebook.com/about/privacy/"
+            "https://www.facebook.com/about/privacy/",
+            "https://www.facebook.com/1223220453176488/posts/1393118346186697"
           ]
         },
         {
@@ -92616,9 +92709,10 @@
           "detected_links": [
             "https://www.facebook.com/Bundesregierung",
             "https://www.facebook.com/sharer/sharer.php?u=https://www.bundesregierung.de/breg-de/aktuelles/kanzler-merz-al-scharaa-2417464&t=Unterst%C3%BCtzung%20f%C3%BCr%20Stabilit%C3%A4t%20und%20Wachstum%20Syriens",
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.bundesregierung.de/breg-de/aktuelles/massnahmen-gegen-spritpreise-2410850&t=Ma%C3%9Fnahmen%20der%20Bundesregierung%20gegen%20hohe%20Spritpreise",
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.bundesregierung.de/breg-de/bundesregierung/bundeskabinett&t=Bundeskabinett",
             "https://www.facebook.com/sharer/sharer.php?u=https://www.bundesregierung.de/breg-de/aktuelles/gesetzliche-neuregelungen-april-2026-2416748&t=Was%20ist%20neu%20im%20April%202026%3F",
-            "https://www.facebook.com/sharer/sharer.php?u=https://www.bundesregierung.de/breg-de/aktuelles/jahrestag-butscha-2417764&t=Verbrechen%20in%20Butscha%20d%C3%BCrfen%20nicht%20ungestraft%20bleiben",
-            "https://www.facebook.com/sharer/sharer.php?u=https://www.bundesregierung.de/breg-de/bundesregierung/bundeskabinett&t=Bundeskabinett"
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.bundesregierung.de/breg-de/aktuelles/jahrestag-butscha-2417764&t=Verbrechen%20in%20Butscha%20d%C3%BCrfen%20nicht%20ungestraft%20bleiben"
           ]
         },
         {
@@ -92638,11 +92732,12 @@
         {
           "page_url": "https://www.bundeswehr.de/",
           "detected_links": [
+            "https://www.facebook.com/1223220453176488/posts/1396410792524119",
             "https://www.facebook.com/reel/4290800021236980/",
             "https://www.facebook.com/1223220453176488/posts/1393868919444973",
-            "https://www.facebook.com/1223220453176488/posts/1393118346186697",
             "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.bundeswehr.de%2Fde",
-            "https://www.facebook.com/about/privacy/"
+            "https://www.facebook.com/about/privacy/",
+            "https://www.facebook.com/1223220453176488/posts/1393118346186697"
           ]
         },
         {
@@ -92663,8 +92758,14 @@
           "page_url": "https://www.cdu-fraktion.berlin.de/",
           "detected_links": [
             "https://www.facebook.com/cdufraktionberlin",
-            "https://www.facebook.com/photo.php?fbid=1392958652868584&set=a.648712047293252&type=3",
+            "https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.instagram.com%2Fp%2FDW0lDXpDvqy%2F",
+            "https://www.facebook.com/648796107284846/posts/1396368159194300",
             "https://www.facebook.com/119192498110884",
+            "https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2F648796107284846%2Fposts%2F1396368159194300",
+            "https://www.facebook.com/photo.php?fbid=1394675139363602&set=a.648712047293252&type=3",
+            "https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D1394675139363602%26set%3Da.648712047293252%26type%3D3",
+            "https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.instagram.com%2Fp%2FDWvXf5cDdrT%2F",
+            "https://www.facebook.com/photo.php?fbid=1392958652868584&set=a.648712047293252&type=3",
             "https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D1392958652868584%26set%3Da.648712047293252%26type%3D3",
             "https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.instagram.com%2Fp%2FDWqLsLGDc1-%2F",
             "https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Freel%2F1685950259503753%2F",
@@ -92996,6 +93097,2882 @@
           "page_url": "https://www.familie.sachsen.de/jugendberufshilfe-und-produktionsschule-5184.html",
           "detected_links": [
             "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.familienplanung.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.familienplanung.de%2F&t=Das+habe+ich+gerade+gelesen"
+          ]
+        },
+        {
+          "page_url": "https://www.familienplanung.de/beratung/beratungsstelle-finden/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.familienplanung.de%2Fberatung%2Fberatungsstelle-finden%2F&t=Das+habe+ich+gerade+gelesen"
+          ]
+        },
+        {
+          "page_url": "https://www.finanzamt.nrw.de/",
+          "detected_links": [
+            "https://www.facebook.com/finanzverwaltung.fuer.nrw"
+          ]
+        },
+        {
+          "page_url": "https://www.finanzamt.nrw.de/bearbeitungsstand-ihrer-steuererklaerung",
+          "detected_links": [
+            "https://www.facebook.com/finanzverwaltung.fuer.nrw"
+          ]
+        },
+        {
+          "page_url": "https://www.finanzamt.nrw.de/top-anliegen",
+          "detected_links": [
+            "https://www.facebook.com/finanzverwaltung.fuer.nrw"
+          ]
+        },
+        {
+          "page_url": "https://www.finanzamt.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.finanzamt.sachsen.de/annaberg.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.finanzamt.sachsen.de/region-chemnitz-4038.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.finanzen.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.finanzen.sachsen.de/doppelhaushalt-2025-2026-7246.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.finanzministerium.bayern.de/",
+          "detected_links": [
+            "https://www.facebook.com/BayerischesStaatsministeriumDerFinanzen"
+          ]
+        },
+        {
+          "page_url": "https://www.finanzverwaltung.nrw.de/",
+          "detected_links": [
+            "https://www.facebook.com/finanzverwaltung.fuer.nrw"
+          ]
+        },
+        {
+          "page_url": "https://www.finanzverwaltung.nrw.de/uebersicht-rubrik-aktuelles-und-presse/pressemitteilungen/verdacht-auf-steuerbetrug-grossem-stil",
+          "detected_links": [
+            "https://www.facebook.com/finanzverwaltung.fuer.nrw"
+          ]
+        },
+        {
+          "page_url": "https://www.fischerei.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.fischerei.sachsen.de/antrag-zum-fischereischein-3992.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.flussgebiete.nrw.de/",
+          "detected_links": [
+            "https://www.facebook.com"
+          ]
+        },
+        {
+          "page_url": "https://www.flussgebiete.nrw.de/erlass-hochwasserschutz-starkregenvorsorge-fuer-abwasseranlagen",
+          "detected_links": [
+            "https://www.facebook.com"
+          ]
+        },
+        {
+          "page_url": "https://www.foerderinfo.bund.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.foerderinfo.bund.de/foerderinfo/de/home/home_node.html"
+          ]
+        },
+        {
+          "page_url": "https://www.foerderinfo.bund.de/foerderinfo/de/foerderung/foerderung_node.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.foerderinfo.bund.de/foerderinfo/de/foerderung/foerderung_node.html"
+          ]
+        },
+        {
+          "page_url": "https://www.forstschule-lohr.bayern.de/",
+          "detected_links": [
+            "https://www.facebook.com/Land.Schafft.Bayern/"
+          ]
+        },
+        {
+          "page_url": "https://www.forstschule-lohr.bayern.de/cms02/forstschulen/380645/index.php",
+          "detected_links": [
+            "https://www.facebook.com/Land.Schafft.Bayern/"
+          ]
+        },
+        {
+          "page_url": "https://www.forststeig.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.forststeig.sachsen.de/neuigkeiten.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.forststeig.sachsen.de/trekkingroute-4127.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.frauen.bremen.de/",
+          "detected_links": [
+            "https://www.facebook.com/ZGFBremen/"
+          ]
+        },
+        {
+          "page_url": "https://www.frauengesundheitsportal.de/",
+          "detected_links": [
+            "https://www.facebook.com/bioeg.de"
+          ]
+        },
+        {
+          "page_url": "https://www.frauengesundheitsportal.de/leichte-sprache/",
+          "detected_links": [
+            "https://www.facebook.com/bioeg.de"
+          ]
+        },
+        {
+          "page_url": "https://www.frauengesundheitsportal.de/organisationen/",
+          "detected_links": [
+            "https://www.facebook.com/bioeg.de"
+          ]
+        },
+        {
+          "page_url": "https://www.freistaat.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.freistaat.sachsen.de/freistaat-sachsen-staatsregierung-und-verwaltung-5345.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.fruehe-chancen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.fruehe-chancen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.fruehe-chancen.de/datenschutz-nutzungshinweise",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.fruehe-chancen.de/datenschutz-nutzungshinweise"
+          ]
+        },
+        {
+          "page_url": "https://www.fruehe-chancen.de/news/detail/ausgezeichnet-fortbildungsmodul-des-esf-plus-programms-integrationskurs-mit-kind-plus-perspektive-durch-qualifizierung-erhaelt-zwei-comenius-siegel",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.fruehe-chancen.de/news/detail"
+          ]
+        },
+        {
+          "page_url": "https://www.fruehehilfen-online.nrw.de/kreis-hochsauerlandkreis.suche",
+          "detected_links": [
+            "https://www.facebook.com/Hochsauerlandkreis/?locale=de_DE"
+          ]
+        },
+        {
+          "page_url": "https://www.fruehlingsspaziergang.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.fsj.bayern.de/",
+          "detected_links": [
+            "https://www.facebook.com/bayerischessozialministerium/",
+            "http://www.facebook.com/sharer.php?u=https://www.fsj.bayern.de/index.php"
+          ]
+        },
+        {
+          "page_url": "https://www.fsj.bayern.de/informier-dich/index.php",
+          "detected_links": [
+            "https://www.facebook.com/bayerischessozialministerium/",
+            "http://www.facebook.com/sharer.php?u=https://www.fsj.bayern.de/informier-dich/index.php"
+          ]
+        },
+        {
+          "page_url": "https://www.ganz-meine-natur.bayern.de/",
+          "detected_links": [
+            "https://www.facebook.com/ganz.meine.natur/"
+          ]
+        },
+        {
+          "page_url": "https://www.ganz-meine-natur.bayern.de/2022/11/am-natura-2000-tag-das-europaeische-naturerbe-feiern/",
+          "detected_links": [
+            "https://www.facebook.com/ganz.meine.natur/"
+          ]
+        },
+        {
+          "page_url": "https://www.ganz-meine-natur.bayern.de/natura-2000-botschafter-kampagne/",
+          "detected_links": [
+            "https://www.facebook.com/Maffay.de",
+            "https://www.facebook.com/petermaffaystiftung",
+            "https://www.facebook.com/BrucknerMusik/",
+            "https://www.facebook.com/DJANGO3000/",
+            "https://www.facebook.com/ganz.meine.natur/"
+          ]
+        },
+        {
+          "page_url": "https://www.gartenakademie.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.gartenakademie.sachsen.de/Gartenpodcast.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.gartenakademie.sachsen.de/impressionen-5398.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.gd.nrw.de/",
+          "detected_links": [
+            "https://www.facebook.com/geologischerdienstnrw"
+          ]
+        },
+        {
+          "page_url": "https://www.gd.nrw.de/gw_start.htm",
+          "detected_links": [
+            "https://www.facebook.com/geologischerdienstnrw"
+          ]
+        },
+        {
+          "page_url": "https://www.gd.nrw.de/home.php",
+          "detected_links": [
+            "https://www.facebook.com/geologischerdienstnrw"
+          ]
+        },
+        {
+          "page_url": "https://www.gdws.wsv.bund.de/",
+          "detected_links": [
+            "https://www.facebook.com/WSV.de"
+          ]
+        },
+        {
+          "page_url": "https://www.gemeinde.berchtesgaden.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.gemeinde.berchtesgaden.de/startseite"
+          ]
+        },
+        {
+          "page_url": "https://www.gemeinde.berchtesgaden.de/FrontendMenus/FrontendMenus/landingpage_index/mountPoint:data-protection",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.gemeinde.berchtesgaden.de/startseite"
+          ]
+        },
+        {
+          "page_url": "https://www.gemeinde.berchtesgaden.de/startseite/buergermeldungen",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.gemeinde.berchtesgaden.de/startseite/buergermeldungen"
+          ]
+        },
+        {
+          "page_url": "https://www.geologie.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.geologie.sachsen.de/veranstaltungskalender-30357.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.geosn.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/SMRsachsen/"
+          ]
+        },
+        {
+          "page_url": "https://www.gerichtsvollzieher.nrw.de/",
+          "detected_links": [
+            "https://www.facebook.com/Justiz.NRWKarriere/"
+          ]
+        },
+        {
+          "page_url": "https://www.geschichte.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.geschichte.sachsen.de/michael-ballack-6553.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.gesunde.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.gesunde.sachsen.de/saechsische-gesundheitspolitik-3979.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.gesundheit.bremen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sgfv.bremen/"
+          ]
+        },
+        {
+          "page_url": "https://www.gewerbeaufsicht.bayern.de/",
+          "detected_links": [
+            "https://www.facebook.com/lebensministerium/"
+          ]
+        },
+        {
+          "page_url": "https://www.gewerbeaufsicht.bayern.de/arbeitsschutz/index.htm",
+          "detected_links": [
+            "https://www.facebook.com/lebensministerium/"
+          ]
+        },
+        {
+          "page_url": "https://www.gewerbeaufsicht.bayern.de/marktueberwachung/index.htm",
+          "detected_links": [
+            "https://www.facebook.com/lebensministerium/"
+          ]
+        },
+        {
+          "page_url": "https://www.go-bio.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.go-bio.de/gobio/de/home/home_node.html"
+          ]
+        },
+        {
+          "page_url": "https://www.go-bio.de/gobio/de/aktuelles/_documents/LyoThroReg_Ideenwettbewerb.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.go-bio.de/gobio/de/aktuelles/_documents/LyoThroReg_Ideenwettbewerb.html"
+          ]
+        },
+        {
+          "page_url": "https://www.go-bio.de/gobio/de/aktuelles/_documents/QTAS_medical_valley.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.go-bio.de/gobio/de/aktuelles/_documents/QTAS_medical_valley.html"
+          ]
+        },
+        {
+          "page_url": "https://www.gruenderinnenpreis.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.gruenderinnenpreis.sachsen.de/preistraegerinnen-2024-4490.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.gruene-berufe.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/SMULsachsen/",
+            "https://www.facebook.com/Sachsenforst",
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.grundbuch.nrw.de/",
+          "detected_links": [
+            "https://www.facebook.com/Justiz.NRWKarriere/"
+          ]
+        },
+        {
+          "page_url": "https://www.guterstart.nrw.de/kreis-hochsauerlandkreis.suche",
+          "detected_links": [
+            "https://www.facebook.com/Hochsauerlandkreis/?locale=de_DE"
+          ]
+        },
+        {
+          "page_url": "https://www.haefen.bremen.de/",
+          "detected_links": [
+            "https://www.facebook.com/wirtschaftbremen"
+          ]
+        },
+        {
+          "page_url": "https://www.hamburg.de/",
+          "detected_links": [
+            "https://www.facebook.com/Hamburg/",
+            "https://www.facebook.com/senat.hamburg"
+          ]
+        },
+        {
+          "page_url": "https://www.hamburg.de/tourismus/sehenswuerdigkeiten",
+          "detected_links": [
+            "https://www.facebook.com/Hamburg/",
+            "https://www.facebook.com/senat.hamburg"
+          ]
+        },
+        {
+          "page_url": "https://www.hamburgische-buergerschaft.de/",
+          "detected_links": [
+            "https://www.facebook.com/buergerschaftHH"
+          ]
+        },
+        {
+          "page_url": "https://www.hamburgische-buergerschaft.de/aktuelles/nachrichten/stolpersteine-helene-lange-gymnasium-demnig-1077100",
+          "detected_links": [
+            "https://www.facebook.com/buergerschaftHH"
+          ]
+        },
+        {
+          "page_url": "https://www.hamburgische-buergerschaft.de/service-/gebaerden",
+          "detected_links": [
+            "https://www.facebook.com/buergerschaftHH"
+          ]
+        },
+        {
+          "page_url": "https://www.hausamkarswald.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/hausamkarswald/"
+          ]
+        },
+        {
+          "page_url": "https://www.hdo.bayern.de/",
+          "detected_links": [
+            "https://www.facebook.com/bayerischessozialministerium/",
+            "https://www.facebook.com/sharer.php?u=https://www.hdo.bayern.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.hdo.bayern.de/programm/ausstellungen/index.php",
+          "detected_links": [
+            "https://www.facebook.com/bayerischessozialministerium/",
+            "https://www.facebook.com/sharer.php?u=https://www.hdo.bayern.de/programm/ausstellungen/"
+          ]
+        },
+        {
+          "page_url": "https://www.hochwasser.baden-wuerttemberg.de/",
+          "detected_links": [
+            "https://www.facebook.com/UmweltministeriumBW/"
+          ]
+        },
+        {
+          "page_url": "https://www.hochwasser.baden-wuerttemberg.de/hochwasserrisikokarten",
+          "detected_links": [
+            "https://www.facebook.com/UmweltministeriumBW/",
+            "http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.hochwasser.baden-wuerttemberg.de%2Fhochwasserrisikokarten"
+          ]
+        },
+        {
+          "page_url": "https://www.hochwasser.baden-wuerttemberg.de/unsere-themen",
+          "detected_links": [
+            "https://www.facebook.com/UmweltministeriumBW/"
+          ]
+        },
+        {
+          "page_url": "https://www.hsf.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/HSFmeissen?locale=de_DE"
+          ]
+        },
+        {
+          "page_url": "https://www.hspv.nrw.de/",
+          "detected_links": [
+            "https://www.facebook.com/profile.php?id=61558240263766"
+          ]
+        },
+        {
+          "page_url": "https://www.hspv.nrw.de/nachrichten/artikel/ende-nominierungsphase-lehrpreis-2024-2025",
+          "detected_links": [
+            "https://www.facebook.com/profile.php?id=61558240263766"
+          ]
+        },
+        {
+          "page_url": "https://www.hvv.de/",
+          "detected_links": [
+            "https://www.facebook.com/deinhvv"
+          ]
+        },
+        {
+          "page_url": "https://www.hvv.de/de",
+          "detected_links": [
+            "https://www.facebook.com/deinhvv"
+          ]
+        },
+        {
+          "page_url": "https://www.hvv.de/de/ueber-uns/neuigkeiten/neuigkeiten-detail/world-triathlon-hamburg-umleitungen-und-strassensperrungen-149792",
+          "detected_links": [
+            "https://www.facebook.com/deinhvv"
+          ]
+        },
+        {
+          "page_url": "https://www.hvz.baden-wuerttemberg.de/datenschutz.html",
+          "detected_links": [
+            "https://www.facebook.com/settings?tab=ads"
+          ]
+        },
+        {
+          "page_url": "https://www.idf.nrw.de/",
+          "detected_links": [
+            "https://www.facebook.com/IdF.NRW/"
+          ]
+        },
+        {
+          "page_url": "https://www.idf.nrw.de/bauberichte/baubericht_idf.php",
+          "detected_links": [
+            "https://www.facebook.com/IdF.NRW/"
+          ]
+        },
+        {
+          "page_url": "https://www.in.stuttgart.de/",
+          "detected_links": [
+            "https://www.facebook.com/fruehlingsfeststuttgart.de/?locale=de_DE",
+            "https://www.facebook.com/stadtwerkestuttgartlichterfestival/?locale=de_DE _blank",
+            "https://www.facebook.com/wasen.de/?locale=de_DE",
+            "https://www.facebook.com/StuttgarterWeihnachtsmarkt.de/?locale=de_DE",
+            "https://www.facebook.com/PorscheTennis/?locale=de_DE",
+            "https://www.facebook.com/stuttgartgermanmasters",
+            "https://www.facebook.com/stuttgart.uefaeuro2024",
+            "https://www.facebook.com/schleyerhalle/?locale=de_DE",
+            "https://www.facebook.com/porschearena/?locale=de_DE",
+            "https://www.facebook.com/Liederhalle/",
+            "https://www.facebook.com/buergerfreilichtbuehne/?locale=de_DE",
+            "https://www.facebook.com/holidayonicede?locale=de_DE",
+            "https://www.facebook.com/schleyerhalle",
+            "https://www.facebook.com/porschearena",
+            "https://www.facebook.com/wasen.de",
+            "https://www.facebook.com/fruehlingsfeststuttgart.de",
+            "https://www.facebook.com/stuttgarterweihnachtsmarkt.de",
+            "https://www.facebook.com/stadtwerkestuttgartlichterfestival",
+            "https://www.facebook.com/historischesvolksfest",
+            "https://www.facebook.com/lwhstuttgart",
+            "https://www.facebook.com/EasyTicketService",
+            "https://www.facebook.com/about/privacy/update",
+            "https://www.facebook.com/legal/terms/page_controller_addendum"
+          ]
+        },
+        {
+          "page_url": "https://www.inklusion.bildung.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.inklusion.bildung.sachsen.de/materialbox-fur-die-individuelle-forderung-4804.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.inklusion.bildung.sachsen.de/schulischeinklusioninsachsen-4017.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.integrationsbeauftragte.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.integrationsbeauftragte.de/ib-de/staatsministerin/natalie-pawlik-ist-neue-integrations-und-antirassismusbeauftragte-2345974&t=Natalie%20Pawlik%20ist%20neue%20Integrations-%20und%20Antirassismusbeauftragte",
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.integrationsbeauftragte.de/ib-de/medien/presse/interviews/-wir-sprechen-zu-viel-ueber-abschottung--2382770&t=%E2%80%9EWir%20sprechen%20zu%20viel%20%C3%BCber%20Abschottung%E2%80%9C",
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.integrationsbeauftragte.de/ib-de/medien/presse/interviews/-harte-gangart-ist-nicht-immer-einfach--2382776&t=%E2%80%9EHarte%20Gangart%20ist%20nicht%20immer%20einfach%E2%80%9C",
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.integrationsbeauftragte.de/ib-de/ich-moechte-mehr-wissen-ueber/einbuergerung/der-weg-zum-deutschen-pass-1869146&t=Der%20Weg%20zum%20deutschen%20Pass",
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.integrationsbeauftragte.de/ib-de/staatsministerin/handbuch-mit-praxistipps-gegen-rassismus-an-schulen-2363328&t=Handbuch%20mit%20Praxistipps%20gegen%20Rassismus%20an%20Schulen",
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.integrationsbeauftragte.de/ib-de/medien/presse/interviews/-die-erfolgsgeschichten-erzaehlen--2382778&t=%E2%80%9EDie%20Erfolgsgeschichten%20erz%C3%A4hlen%E2%80%9C",
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.integrationsbeauftragte.de/ib-de/staatsministerin/arbeitsdefinition-rassismus-2337302&t=Expert*innenrat%20stellt%20Arbeitsdefinition%20von%20Rassismus%20f%C3%BCr%20Verwaltungen%20vor",
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.integrationsbeauftragte.de/ib-de/integrationsarbeit-in-den-bereichen/forschung-und-integration/14-integrationsbericht-teilhabe-in-der-einwanderungsgesellschaft-2315880&t=14.%20Integrationsbericht%20%E2%80%9ETeilhabe%20in%20der%20Einwanderungsgesellschaft%20%E2%80%93%20Ein%20wissenschaftsbasierter%20und%20indikatorengest%C3%BCtzter%20Lagebericht%20zum%20Stand%20der%20Integration%20in%20Deutschland%E2%80%9C",
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.integrationsbeauftragte.de/ib-de/integrationsarbeit-in-den-bereichen/vielfalt-im-oeffentlichen-dienst/gemeinsam-fuer-mehr-vielfalt-in-der-bundesverwaltung-die-ganzheitliche-diversitaetsstrategie-der-bundesregierung-2332460&t=Gemeinsam%20f%C3%BCr%20mehr%20Vielfalt%20in%20der%20Bundesverwaltung%20%E2%80%93%20die%20ganzheitliche%20Diversit%C3%A4tsstrategie%20der%20Bundesregierung",
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.eu-gleichbehandlungsstelle.de/eugs-de&t=Gleichbehandlungsstelle%20EU-Arbeitnehmer",
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.bundesregierung.de/&t=Bundesregierung"
+          ]
+        },
+        {
+          "page_url": "https://www.integrationsbeauftragte.de/ib-de/datenschutzhinweis",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.integrationsbeauftragte.de/ib-de/datenschutzhinweis/datenschutzhinweis-1864206&t=Datenschutzhinweis"
+          ]
+        },
+        {
+          "page_url": "https://www.ioev.nrw.de/",
+          "detected_links": [
+            "https://www.facebook.com",
+            "https://www.facebook.com/deGov.org"
+          ]
+        },
+        {
+          "page_url": "https://www.ioev.nrw.de/ausbildungslehrgaenge/regierungssekretaeranwaerterinnen-und-regierungssekretaeranwaerter",
+          "detected_links": [
+            "https://www.facebook.com",
+            "https://www.facebook.com/deGov.org"
+          ]
+        },
+        {
+          "page_url": "https://www.ir-online.nrw.de/",
+          "detected_links": [
+            "https://www.facebook.com/Justiz.NRWKarriere/"
+          ]
+        },
+        {
+          "page_url": "https://www.justiz.nrw.de/",
+          "detected_links": [
+            "https://www.facebook.com/Justiz.NRWKarriere/"
+          ]
+        },
+        {
+          "page_url": "https://www.justiz.nrw.de/BS",
+          "detected_links": [
+            "https://www.facebook.com/Justiz.NRWKarriere/"
+          ]
+        },
+        {
+          "page_url": "https://www.justiz.nrw.de/datenschutz",
+          "detected_links": [
+            "https://www.facebook.com/Justiz.NRWKarriere/"
+          ]
+        },
+        {
+          "page_url": "https://www.justizadressen.nrw.de/",
+          "detected_links": [
+            "https://www.facebook.com/Justiz.NRWKarriere/"
+          ]
+        },
+        {
+          "page_url": "https://www.justizadressen.nrw.de/de/nrw/angelegenheiten",
+          "detected_links": [
+            "https://www.facebook.com/Justiz.NRWKarriere/"
+          ]
+        },
+        {
+          "page_url": "https://www.justizvollzugsanstalt-oldenburg.niedersachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/JVA-Oldenburg-101188325632037"
+          ]
+        },
+        {
+          "page_url": "https://www.jva-geldern.nrw.de/behoerde/ausbildung_stellen/index.php",
+          "detected_links": [
+            "http://www.facebook.com/Justiz.NRWKarriere"
+          ]
+        },
+        {
+          "page_url": "https://www.jva-willich2.nrw.de/behoerde/Stellenangebote-JVA-Willich-II/index.php",
+          "detected_links": [
+            "https://www.facebook.com/Justiz.NRWKarriere"
+          ]
+        },
+        {
+          "page_url": "https://www.jvv.nrw.de/",
+          "detected_links": [
+            "https://www.facebook.com/Justiz.NRWKarriere/"
+          ]
+        },
+        {
+          "page_url": "https://www.jvv.nrw.de/aktenzeichen.jsp",
+          "detected_links": [
+            "https://www.facebook.com/Justiz.NRWKarriere/"
+          ]
+        },
+        {
+          "page_url": "https://www.jvv.nrw.de/inhalt.jsp",
+          "detected_links": [
+            "https://www.facebook.com/Justiz.NRWKarriere/"
+          ]
+        },
+        {
+          "page_url": "https://www.karriere.justiz.hessen.de/arbeitgeber-justiz-hessen",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.karriere.justiz.hessen.de/arbeitgeber-justiz-hessen&title=Arbeitgeber Justiz Hessen"
+          ]
+        },
+        {
+          "page_url": "https://www.karriere.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.karriere.sachsen.de/karriere/suche.jsp?fachbereichId=14",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.kern.bayern.de/",
+          "detected_links": [
+            "https://www.facebook.com/Land.Schafft.Bayern/"
+          ]
+        },
+        {
+          "page_url": "https://www.kern.bayern.de/cms03/ueberkern/195746/index.php",
+          "detected_links": [
+            "https://www.facebook.com/Land.Schafft.Bayern/"
+          ]
+        },
+        {
+          "page_url": "https://www.kern.bayern.de/cms03/wissenstransfer/index.php",
+          "detected_links": [
+            "https://www.facebook.com/Land.Schafft.Bayern/"
+          ]
+        },
+        {
+          "page_url": "https://www.kinderkinder.dguv.de/",
+          "detected_links": [
+            "https://www.facebook.com/UKundBG/"
+          ]
+        },
+        {
+          "page_url": "https://www.kinderkinder.dguv.de/riskant-aber-nicht-gefaehrlich/",
+          "detected_links": [
+            "http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.kinderkinder.dguv.de%2Friskant-aber-nicht-gefaehrlich%2F",
+            "https://www.facebook.com/UKundBG/"
+          ]
+        },
+        {
+          "page_url": "https://www.kinderkinder.dguv.de/unfallpraevention-in-kitaalltag-einbrigen/",
+          "detected_links": [
+            "http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.kinderkinder.dguv.de%2Funfallpraevention-in-kitaalltag-einbrigen%2F",
+            "https://www.facebook.com/UKundBG/"
+          ]
+        },
+        {
+          "page_url": "https://www.kita-schulverpflegung.bayern.de/",
+          "detected_links": [
+            "https://www.facebook.com/Land.Schafft.Bayern/"
+          ]
+        },
+        {
+          "page_url": "https://www.kita-schulverpflegung.bayern.de/cms09/impressum/197797/index.php",
+          "detected_links": [
+            "https://www.facebook.com/Land.Schafft.Bayern/"
+          ]
+        },
+        {
+          "page_url": "https://www.kita-schulverpflegung.bayern.de/cms09/kontakt/011713/index.php",
+          "detected_links": [
+            "https://www.facebook.com/Land.Schafft.Bayern/"
+          ]
+        },
+        {
+          "page_url": "https://www.kita.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.klima.bayern.de/",
+          "detected_links": [
+            "https://www.facebook.com/klima.bayern"
+          ]
+        },
+        {
+          "page_url": "https://www.klima.bayern.de/index.html",
+          "detected_links": [
+            "https://www.facebook.com/klima.bayern"
+          ]
+        },
+        {
+          "page_url": "https://www.km.bayern.de/",
+          "detected_links": [
+            "https://www.facebook.com/schuleinbayern"
+          ]
+        },
+        {
+          "page_url": "https://www.km.bayern.de/meldung/schuelerinnen-und-schueler-gestalten-zukunft-abschlussveranstaltung-des-schulversuchs-wirkstatt-nachhaltigkeit",
+          "detected_links": [
+            "https://www.facebook.com/schuleinbayern"
+          ]
+        },
+        {
+          "page_url": "https://www.km.bayern.de/meldung/ultusministerin-anna-stolz-und-ernaehrungsministerin-michaela-kaniber-besuchen-eine-gute-gesunde-schule-in-nuernberg",
+          "detected_links": [
+            "https://www.facebook.com/schuleinbayern"
+          ]
+        },
+        {
+          "page_url": "https://www.koeln.de/",
+          "detected_links": [
+            "https://www.facebook.com/Koeln"
+          ]
+        },
+        {
+          "page_url": "https://www.kommunale-verwaltung.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.kommunale-verwaltung.sachsen.de/allgemeines-kommunales-haushaltsrecht-4016.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.kommunale-verwaltung.sachsen.de/kommunale-finanzen-kommunale-haushalte-kommunalabgaben-4006.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.kommweiter.bayern.de/",
+          "detected_links": [
+            "https://www.facebook.com/bayerischessozialministerium/"
+          ]
+        },
+        {
+          "page_url": "https://www.kommweiter.bayern.de/datenschutz/",
+          "detected_links": [
+            "https://www.facebook.com/bayerischessozialministerium/"
+          ]
+        },
+        {
+          "page_url": "https://www.kommweiter.bayern.de/lotse/",
+          "detected_links": [
+            "https://www.facebook.com/bayerischessozialministerium/"
+          ]
+        },
+        {
+          "page_url": "https://www.kt.smwk.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/smktsachsen/",
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.kt.smwk.sachsen.de/museumspreis-2025.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.kulturland.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.kulturland.sachsen.de/preise-wettbewerbe-4936.html?_cp=%7B%22accordion-content-4995%22%3A%7B%226%22%3Atrue%7D%2C%22previousOpen%22%3A%7B%22group%22%3A%22accordion-content-4995%22%2C%22idx%22%3A6%7D%7D",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.laendlicher-raum.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.laendlicher-raum.sachsen.de/foerderung-im-ueberblick-14470.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.land.nrw/",
+          "detected_links": [
+            "https://www.facebook.com/NRW/",
+            "https://www.facebook.com/NRW"
+          ]
+        },
+        {
+          "page_url": "https://www.land.nrw/datenschutzhinweise",
+          "detected_links": [
+            "https://www.facebook.com/NRW"
+          ]
+        },
+        {
+          "page_url": "https://www.land.nrw/nrw-informieren",
+          "detected_links": [
+            "https://www.facebook.com/NRW"
+          ]
+        },
+        {
+          "page_url": "https://www.landesentwicklung.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.landesentwicklung.sachsen.de/modellvorhaben-zum-demographischen-wandel-4761.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.landesjugendamt.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.landesjugendamt.sachsen.de/ukraine-5760.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.landesmusikgymnasium.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.landesmusikgymnasium.sachsen.de/aufnahmeverfahren-3994.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.landesmusikgymnasium.sachsen.de/gymnasiale-bildung-3999.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.landesvermessung.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/SMRsachsen/"
+          ]
+        },
+        {
+          "page_url": "https://www.landesvertretung.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.landesvertretung.sachsen.de/1056-bundesratssitzung-vom-11-juli-2025-14403.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.landtag-bw.de/",
+          "detected_links": [
+            "https://www.facebook.com/LandtagBW"
+          ]
+        },
+        {
+          "page_url": "https://www.landtag-bw.de/de",
+          "detected_links": [
+            "https://www.facebook.com/LandtagBW"
+          ]
+        },
+        {
+          "page_url": "https://www.landtag-bw.de/de/der-landtag",
+          "detected_links": [
+            "https://www.facebook.com/LandtagBW"
+          ]
+        },
+        {
+          "page_url": "https://www.landtag-mv.de/",
+          "detected_links": [
+            "https://www.facebook.com/LandtagMV/"
+          ]
+        },
+        {
+          "page_url": "https://www.landtag-mv.de/aktuelles/landtag-live",
+          "detected_links": [
+            "https://www.facebook.com/LandtagMV/"
+          ]
+        },
+        {
+          "page_url": "https://www.landtag-mv.de/mitmachen",
+          "detected_links": [
+            "https://www.facebook.com/LandtagMV/"
+          ]
+        },
+        {
+          "page_url": "https://www.landtag-niedersachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/ndslandtag/"
+          ]
+        },
+        {
+          "page_url": "https://www.landtag-niedersachsen.de/landtagsbesuch/kinder/offene-fuehrungen-fuer-grundschulkinder/",
+          "detected_links": [
+            "https://www.facebook.com/ndslandtag/"
+          ]
+        },
+        {
+          "page_url": "https://www.landtag.nrw.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.landtag.nrw.de%2Fhome.html"
+          ]
+        },
+        {
+          "page_url": "https://www.landtag.nrw.de/home/aktuelles/meldungen-und-berichte/meldungen-berichte-und-informati/meldungen-und-berichte/2025/07/0907_sespraesentation.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.landtag.nrw.de%2Fhome%2Faktuelles%2Fmeldungen-und-berichte%2Fmeldungen-berichte-und-informati%2Fmeldungen-und-berichte%2F2025%2F07%2F0907_sespraesentation.html"
+          ]
+        },
+        {
+          "page_url": "https://www.landtag.nrw.de/home/aktuelles/termine-und-veranstaltungen/kalender.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.landtag.nrw.de%2Fhome%2Faktuelles%2Ftermine-und-veranstaltungen%2Fkalender.html"
+          ]
+        },
+        {
+          "page_url": "https://www.landtag.sachsen-anhalt.de/",
+          "detected_links": [
+            "https://www.facebook.com/Landtag-von-Sachsen-Anhalt-105128368764869/"
+          ]
+        },
+        {
+          "page_url": "https://www.landtag.sachsen-anhalt.de/landtag/abgeordnete/abgeordnetensuche",
+          "detected_links": [
+            "https://www.facebook.com/Landtag-von-Sachsen-Anhalt-105128368764869/"
+          ]
+        },
+        {
+          "page_url": "https://www.landtag.sachsen-anhalt.de/unsere-sommerserie-zum-landesgeburtstag",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.landtag.sachsen-anhalt.de/unsere-sommerserie-zum-landesgeburtstag",
+            "https://www.facebook.com/Landtag-von-Sachsen-Anhalt-105128368764869/"
+          ]
+        },
+        {
+          "page_url": "https://www.landtag.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.landtag.sachsen.de/de/saechsische-landesbeauftragte-zur-aufarbeitung-der-sed-diktatur-wiedergewaehlt-33491.cshtml",
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.landtag.sachsen.de/de/usbekischer-botschafter-zu-gast-im-parlament-33485.cshtml",
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.landtag.sachsen.de/de/konferenz-europa-und-mitteleuropa-in-der-weltweiten-zeitenwende-am-16-april-2026-in-tallinn-33310.cshtml",
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.landtag.sachsen.de/de/tag-der-demokratiegeschichte-33464.cshtml",
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.landtag.sachsen.de/de/parlamentspraesident-trifft-us-generalkonsulin-austausch-zwischen-jungen-menschen-foerdern-33447.cshtml",
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.landtag.sachsen.de/de/landtagskurier-ausgabe-7-2022-erschienen-25906.cshtml",
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.landtag.sachsen.de/de/blick-hinter-die-kulissen-ein-tag-mit-sandra-gockel-33353.cshtml",
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.landtag.sachsen.de/de/plenum-im-rueckblick-landtagssitzungen-im-november-2023-28324.cshtml",
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.landtag.sachsen.de/de/mitzeichner-koennen-oeffentliche-petitionen-jetzt-sichtbar-unterstuetzen-32509.cshtml"
+          ]
+        },
+        {
+          "page_url": "https://www.landtag.sachsen.de/de/index.cshtml",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.landtag.sachsen.de/de/saechsische-landesbeauftragte-zur-aufarbeitung-der-sed-diktatur-wiedergewaehlt-33491.cshtml",
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.landtag.sachsen.de/de/usbekischer-botschafter-zu-gast-im-parlament-33485.cshtml",
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.landtag.sachsen.de/de/konferenz-europa-und-mitteleuropa-in-der-weltweiten-zeitenwende-am-16-april-2026-in-tallinn-33310.cshtml",
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.landtag.sachsen.de/de/tag-der-demokratiegeschichte-33464.cshtml",
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.landtag.sachsen.de/de/parlamentspraesident-trifft-us-generalkonsulin-austausch-zwischen-jungen-menschen-foerdern-33447.cshtml",
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.landtag.sachsen.de/de/landtagskurier-ausgabe-7-2022-erschienen-25906.cshtml",
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.landtag.sachsen.de/de/blick-hinter-die-kulissen-ein-tag-mit-sandra-gockel-33353.cshtml",
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.landtag.sachsen.de/de/plenum-im-rueckblick-landtagssitzungen-im-november-2023-28324.cshtml",
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.landtag.sachsen.de/de/mitzeichner-koennen-oeffentliche-petitionen-jetzt-sichtbar-unterstuetzen-32509.cshtml"
+          ]
+        },
+        {
+          "page_url": "https://www.landwirtschaft.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.landwirtschaft.sachsen.de/veranstaltungen.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.landwirtschaft.sachsen.de/vorlaeufige-ergebnisse-aus-den-landessortenversuchen-2018-20071.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.lapo.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u="
+          ]
+        },
+        {
+          "page_url": "https://www.laquila.nrw.de/",
+          "detected_links": [
+            "https://www.facebook.com"
+          ]
+        },
+        {
+          "page_url": "https://www.laquila.nrw.de/ueber-uns/recht",
+          "detected_links": [
+            "https://www.facebook.com"
+          ]
+        },
+        {
+          "page_url": "https://www.laquila.nrw.de/wie-werde-ich-lehrerin-oder-lehrer-nrw",
+          "detected_links": [
+            "https://www.facebook.com"
+          ]
+        },
+        {
+          "page_url": "https://www.lasub.smk.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/Freistaat.Sachsen/"
+          ]
+        },
+        {
+          "page_url": "https://www.lasub.smk.sachsen.de/pressestelle-beauftragte-fuer-buergeranliegen-4435.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.lasuv.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.lasuv.sachsen.de/foerderung-oepnv-spnv-4023.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.lasuv.sachsen.de/karriere.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.lbbp.nrw.de/",
+          "detected_links": [
+            "https://www.facebook.com"
+          ]
+        },
+        {
+          "page_url": "https://www.lbbp.nrw.de/service",
+          "detected_links": [
+            "https://www.facebook.com"
+          ]
+        },
+        {
+          "page_url": "https://www.lbbp.nrw.de/themen/barrierefreiheit/barrierefreiheit-im-gesundheitswesen",
+          "detected_links": [
+            "https://www.facebook.com"
+          ]
+        },
+        {
+          "page_url": "https://www.ldi.nrw.de/",
+          "detected_links": [
+            "https://www.facebook.com"
+          ]
+        },
+        {
+          "page_url": "https://www.ldi.nrw.de/obdachlosigkeit",
+          "detected_links": [
+            "https://www.facebook.com"
+          ]
+        },
+        {
+          "page_url": "https://www.lehrerfortbildung.schulministerium.nrw.de/",
+          "detected_links": [
+            "https://www.facebook.com"
+          ]
+        },
+        {
+          "page_url": "https://www.lehrerfortbildung.schulministerium.nrw.de/Fortbildung/Bezirksregierungen/",
+          "detected_links": [
+            "https://www.facebook.com"
+          ]
+        },
+        {
+          "page_url": "https://www.lehrerfortbildung.schulministerium.nrw.de/Fortbildung/Metanavigation/Impressum/",
+          "detected_links": [
+            "https://www.facebook.com"
+          ]
+        },
+        {
+          "page_url": "https://www.leipzig.de/",
+          "detected_links": [
+            "https://www.facebook.com/Portal.Stadt.Leipzig/"
+          ]
+        },
+        {
+          "page_url": "https://www.leipzig.de/newsarchiv/news/neuer-nahlesteg-fuer-fussgaenger-und-radfahrer-freigegeben",
+          "detected_links": [
+            "https://www.facebook.com/Portal.Stadt.Leipzig/"
+          ]
+        },
+        {
+          "page_url": "https://www.lfl.bayern.de/",
+          "detected_links": [
+            "https://www.facebook.com/Land.Schafft.Bayern/"
+          ]
+        },
+        {
+          "page_url": "https://www.lfl.bayern.de/cms07/iab/index.php",
+          "detected_links": [
+            "https://www.facebook.com/Land.Schafft.Bayern/"
+          ]
+        },
+        {
+          "page_url": "https://www.lfl.bayern.de/cms07/verschiedenes/ueberuns/195433/index.php",
+          "detected_links": [
+            "https://www.facebook.com/Land.Schafft.Bayern/"
+          ]
+        },
+        {
+          "page_url": "https://www.lfs.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.lfs.sachsen.de/Navigationspunkt_5143.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.lfulg.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.lfulg.sachsen.de/forder-und-fachbildungszentren-mit-informations-und-servicestellen-9914.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.lfulg.sachsen.de/veranstaltungen.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.lks.nrw.de/",
+          "detected_links": [
+            "https://www.facebook.com/werkstadtDT",
+            "https://www.facebook.com/pfdhattingen",
+            "https://www.facebook.com/NRWeltoffen-Kreis-Euskirchen-115346706885028/",
+            "https://www.facebook.com/adarheinerft",
+            "https://www.facebook.com/pages/category/Public---Government-Service/Integration-in-Krefeld-108162014121218/",
+            "https://www.facebook.com/opferberatung.rheinland/",
+            "http://www.facebook.com/backup.nrw",
+            "https://www.facebook.com/koelnischegesellschaft"
+          ]
+        },
+        {
+          "page_url": "https://www.lpa.bayern.de/",
+          "detected_links": [
+            "http://www.facebook.com/pages/Bayern/237236916311200"
+          ]
+        },
+        {
+          "page_url": "https://www.lpb.rlp.de/",
+          "detected_links": [
+            "https://www.facebook.com/LpBRheinlandPfalz"
+          ]
+        },
+        {
+          "page_url": "https://www.lpb.rlp.de/service/aktuell?tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=4972&cHash=c28606600de841bca984e915ad35cf8a",
+          "detected_links": [
+            "https://www.facebook.com/LpBRheinlandPfalz"
+          ]
+        },
+        {
+          "page_url": "https://www.lpb.rlp.de/service/aktuell?tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=4984&cHash=ec898085b80a6b581413ed22236c98c3",
+          "detected_links": [
+            "https://www.facebook.com/LpBRheinlandPfalz"
+          ]
+        },
+        {
+          "page_url": "https://www.lpr.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/Freistaat.Sachsen/",
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.lpr.sachsen.de/detailseite-news-bzw-veranstaltungsmeldung-7857-7857.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.lpr.sachsen.de/praeventionskampagne-hoer-genau-hin-telefonbetrug-kann-jeden-treffen-startet-7285.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.lsf.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.lsf.sachsen.de/amtsangemessene-alimentation-4148.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.lsf.sachsen.de/landesamt-3989.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.lsg.bayern.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer.php?u=https://www.lsg.bayern.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.lsg.bayern.de/index.php",
+          "detected_links": [
+            "https://www.facebook.com/sharer.php?u=https://www.lsg.bayern.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.lua.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.lua.sachsen.de/aufgaben-und-organisation-3950.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.lua.sachsen.de/lua-jahresberichte-4103.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.luft.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.luft.sachsen.de/aktuelle-messwerte-15045.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.luft.sachsen.de/ausstoss-emission-und-quellen-von-luftschadstoffen-14442.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.luis.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.luis.sachsen.de/wasser/gw/grundwasserdynamik-2022.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.lwf.bayern.de/",
+          "detected_links": [
+            "https://www.facebook.com/Land.Schafft.Bayern/"
+          ]
+        },
+        {
+          "page_url": "https://www.lwf.bayern.de/cms04/service/195911/index.php",
+          "detected_links": [
+            "https://www.facebook.com/Land.Schafft.Bayern/"
+          ]
+        },
+        {
+          "page_url": "https://www.lwf.bayern.de/cms04/wildtierbiologie/index.php",
+          "detected_links": [
+            "https://www.facebook.com/Land.Schafft.Bayern/"
+          ]
+        },
+        {
+          "page_url": "https://www.lwg.bayern.de/",
+          "detected_links": [
+            "https://www.facebook.com/Land.Schafft.Bayern/"
+          ]
+        },
+        {
+          "page_url": "https://www.lwg.bayern.de/cms06/verschiedenes/197297/index.php",
+          "detected_links": [
+            "https://www.facebook.com/Land.Schafft.Bayern/"
+          ]
+        },
+        {
+          "page_url": "https://www.lwg.bayern.de/cms06/weinbau/rebe_weinberg/233909/index.php",
+          "detected_links": [
+            "https://www.facebook.com/Land.Schafft.Bayern/"
+          ]
+        },
+        {
+          "page_url": "https://www.medienservice.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.medienservice.sachsen.de/medien/account",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.medienservice.sachsen.de/medien/news/1088948",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.migration-gesundheit.bund.de/",
+          "detected_links": [
+            "https://www.facebook.com/bmg.bund"
+          ]
+        },
+        {
+          "page_url": "https://www.migration-gesundheit.bund.de/de/gesundheit-vorsorge",
+          "detected_links": [
+            "https://www.facebook.com/bmg.bund"
+          ]
+        },
+        {
+          "page_url": "https://www.migration-gesundheit.bund.de/ru/startovaja-stranica",
+          "detected_links": [
+            "https://www.facebook.com/bmg.bund"
+          ]
+        },
+        {
+          "page_url": "https://www.ministerpraesident.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/Freistaat.Sachsen/",
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.ministerpraesident.sachsen.de/chronik-folgeseite-18058-18058.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.mlv.nrw.de/",
+          "detected_links": [
+            "https://www.facebook.com/MLV.NRW/"
+          ]
+        },
+        {
+          "page_url": "https://www.mlv.nrw.de/datenschutzhinweise/",
+          "detected_links": [
+            "https://www.facebook.com/MLV.NRW/"
+          ]
+        },
+        {
+          "page_url": "https://www.mlv.nrw.de/newsletter-anmeldung/",
+          "detected_links": [
+            "https://www.facebook.com/MLV.NRW/"
+          ]
+        },
+        {
+          "page_url": "https://www.mobilitaet.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.mobilitaet.sachsen.de/aktuelles-4362.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.mobilitaet.sachsen.de/alrad-4521.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.ms.niedersachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/SozialministeriumNds"
+          ]
+        },
+        {
+          "page_url": "https://www.muenchen.de/",
+          "detected_links": [
+            "https://www.facebook.com/muenchen"
+          ]
+        },
+        {
+          "page_url": "https://www.muenchen.de/sehenswuerdigkeiten/die-20-top-sehenswuerdigkeiten-muenchen",
+          "detected_links": [
+            "http://www.facebook.com/share.php?u=https://www.muenchen.de/sehenswuerdigkeiten/die-20-top-sehenswuerdigkeiten-muenchen",
+            "https://www.facebook.com/muenchen"
+          ]
+        },
+        {
+          "page_url": "https://www.mw.niedersachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/WirtschaftsministerNiedersachsen/"
+          ]
+        },
+        {
+          "page_url": "https://www.nationalpark-bayerischer-wald.bayern.de/",
+          "detected_links": [
+            "https://www.facebook.com/nationalpark.bayerischer.wald",
+            "https://www.facebook.com/nationalpark.bayerischer.wald/posts/1364358839072202",
+            "https://www.facebook.com/nationalpark.bayerischer.wald/posts/1364191245755628",
+            "https://www.facebook.com/nationalpark.bayerischer.wald/posts/1363469449161141",
+            "https://www.facebook.com/nationalpark.bayerischer.wald/posts/1362787139229372",
+            "https://www.facebook.com/nationalpark.bayerischer.wald/posts/1362754519232634",
+            "https://www.facebook.com/nationalpark.bayerischer.wald/"
+          ]
+        },
+        {
+          "page_url": "https://www.nationalpark-bayerischer-wald.bayern.de/aktuelles/blog/detailansicht.htm?ID=A+s3RgSTi2QwaMdXwmInJQ==",
+          "detected_links": [
+            "https://www.facebook.com/nationalpark.bayerischer.wald"
+          ]
+        },
+        {
+          "page_url": "https://www.nationalpark-bayerischer-wald.bayern.de/aktuelles/pressemitteilung/detailansicht.htm?ID=A%2Bs3RgSTi2QpB5zqt8XdNA%3D%3D",
+          "detected_links": [
+            "https://www.facebook.com/nationalpark.bayerischer.wald"
+          ]
+        },
+        {
+          "page_url": "https://www.nationalpark-berchtesgaden.bayern.de/",
+          "detected_links": [
+            "https://www.facebook.com/npv.bgd"
+          ]
+        },
+        {
+          "page_url": "https://www.nationalpark-berchtesgaden.bayern.de/forschung/monitoring/bartgeier/index.htm",
+          "detected_links": [
+            "https://www.facebook.com/npv.bgd"
+          ]
+        },
+        {
+          "page_url": "https://www.nationalpark-berchtesgaden.bayern.de/service/presse/pressemitteilungen/index.htm",
+          "detected_links": [
+            "https://www.facebook.com/npv.bgd"
+          ]
+        },
+        {
+          "page_url": "https://www.natur.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.natur.sachsen.de/biologische-vielfalt-7931.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.natur.sachsen.de/natur-des-jahres-7521.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.natura2000.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.natura2000.sachsen.de/natura-2000-ein-uberblick-7330.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.naturerlebnis.bayern.de/",
+          "detected_links": [
+            "https://www.facebook.com/lebensministerium"
+          ]
+        },
+        {
+          "page_url": "https://www.naturerlebnis.bayern.de/index.html",
+          "detected_links": [
+            "https://www.facebook.com/lebensministerium"
+          ]
+        },
+        {
+          "page_url": "https://www.niedersachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/Niedersachsen"
+          ]
+        },
+        {
+          "page_url": "https://www.niedersachsen.de/gelingensgeschichten/geschichten-aus-niedersachsen-von-niedersachsen-fur-niedersachsen-mach-mit-239459.html",
+          "detected_links": [
+            "https://www.facebook.com/Niedersachsen"
+          ]
+        },
+        {
+          "page_url": "https://www.nlbk.niedersachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/Nieders%C3%A4chsische-Akademie-f%C3%BCr-Brand-und-Katastrophenschutz-NABK-518547688298705/?ref=ts&fref=ts"
+          ]
+        },
+        {
+          "page_url": "https://www.nlbl.niedersachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/profile.php?id=61579108455286"
+          ]
+        },
+        {
+          "page_url": "https://www.oekolandbau.nrw.de/",
+          "detected_links": [
+            "https://www.facebook.com"
+          ]
+        },
+        {
+          "page_url": "https://www.oekolandbau.nrw.de/polenta-und-mantecada-mit-oeko-speisemais",
+          "detected_links": [
+            "https://www.facebook.com"
+          ]
+        },
+        {
+          "page_url": "https://www.opferhilfe.niedersachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/Opferhilfe.Niedersachsen"
+          ]
+        },
+        {
+          "page_url": "https://www.opferhilfe.niedersachsen.de/nano.cms/hilfe-fuer-betroffene-uebersicht",
+          "detected_links": [
+            "https://www.facebook.com/Opferhilfe.Niedersachsen"
+          ]
+        },
+        {
+          "page_url": "https://www.ortsamt-huchting.bremen.de/",
+          "detected_links": [
+            "https://www.facebook.com/OAHuchting/",
+            "https://www.facebook.com/OrtsamtHuchting/"
+          ]
+        },
+        {
+          "page_url": "https://www.parlament-berlin.de/",
+          "detected_links": [
+            "https://www.facebook.com/aghberlin/"
+          ]
+        },
+        {
+          "page_url": "https://www.parlament-berlin.de/Meldungen/bericht-des-petitionsausschusses-uber-seine-tatigkeit-im-jahr-2024",
+          "detected_links": [
+            "https://www.facebook.com/aghberlin/"
+          ]
+        },
+        {
+          "page_url": "https://www.parlament-berlin.de/aktuelles-presse",
+          "detected_links": [
+            "https://www.facebook.com/aghberlin/"
+          ]
+        },
+        {
+          "page_url": "https://www.pflegenetz.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.pflegenetz.sachsen.de/leistungen.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.pflegenetz.sachsen.de/pflegedatenbank.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.pit.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/Freistaat.Sachsen/",
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.pit.sachsen.de/folgeseite-news-und-veranstaltungen-6397-6397.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.pluspunkt.dguv.de/",
+          "detected_links": [
+            "https://www.facebook.com/UKundBG/"
+          ]
+        },
+        {
+          "page_url": "https://www.pluspunkt.dguv.de/besser-im-team/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpluspunkt.dguv.de%2Fpraevention%2Fbesser-im-team%2F",
+            "https://www.facebook.com/UKundBG/"
+          ]
+        },
+        {
+          "page_url": "https://www.pluspunkt.dguv.de/fuer-die-krise-geruestet/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpluspunkt.dguv.de%2Fpraevention%2Ffuer-die-krise-geruestet%2F",
+            "https://www.facebook.com/UKundBG/"
+          ]
+        },
+        {
+          "page_url": "https://www.polizei.bremen.de/",
+          "detected_links": [
+            "https://www.facebook.com/BremenPolizei"
+          ]
+        },
+        {
+          "page_url": "https://www.polizei.bremerhaven.de/",
+          "detected_links": [
+            "http://www.facebook.com/sharer/sharer.php?u=http://www.polizei.bremerhaven.de/app.php",
+            "https://www.facebook.com/PolizeiBremerhaven/?locale=de_DE"
+          ]
+        },
+        {
+          "page_url": "https://www.polizei.bremerhaven.de/home.html",
+          "detected_links": [
+            "http://www.facebook.com/sharer/sharer.php?u=http://www.polizei.bremerhaven.de/app.php",
+            "https://www.facebook.com/PolizeiBremerhaven/?locale=de_DE"
+          ]
+        },
+        {
+          "page_url": "https://www.polizei.mvnet.de/",
+          "detected_links": [
+            "https://www.facebook.com/PolizeiMV/"
+          ]
+        },
+        {
+          "page_url": "https://www.polizei.mvnet.de/Datenschutz/",
+          "detected_links": [
+            "https://www.facebook.com/PolizeiMV/"
+          ]
+        },
+        {
+          "page_url": "https://www.polizei.rlp.de/",
+          "detected_links": [
+            "https://www.facebook.com/PolizeiRheinlandPfalz"
+          ]
+        },
+        {
+          "page_url": "https://www.polizei.rlp.de/bussgeldstelle",
+          "detected_links": [
+            "https://www.facebook.com/PolizeiRheinlandPfalz"
+          ]
+        },
+        {
+          "page_url": "https://www.polizei.rlp.de/service/presse/detail/lka-rp-entschlossen-im-kampf-gegen-geldautomatensprenger",
+          "detected_links": [
+            "https://www.facebook.com/PolizeiRheinlandPfalz"
+          ]
+        },
+        {
+          "page_url": "https://www.polizei.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/polizeisachsen.info"
+          ]
+        },
+        {
+          "page_url": "https://www.qua-lis.nrw.de/",
+          "detected_links": [
+            "https://www.facebook.com"
+          ]
+        },
+        {
+          "page_url": "https://www.qua-lis.nrw.de/der-lehrplannavigator-nrw-im-neuen-gewand",
+          "detected_links": [
+            "https://www.facebook.com"
+          ]
+        },
+        {
+          "page_url": "https://www.qua-lis.nrw.de/fortbildung-schriftsprachforscher-des-lif-muenster-jetzt-zur-infoveranstaltung-anmelden-0",
+          "detected_links": [
+            "https://www.facebook.com"
+          ]
+        },
+        {
+          "page_url": "https://www.rathaus.scheidegg.de/",
+          "detected_links": [
+            "https://facebook.com/Scheidegg.allgaeu/"
+          ]
+        },
+        {
+          "page_url": "https://www.rathaus.scheidegg.de/einrichtungen/",
+          "detected_links": [
+            "https://facebook.com/Scheidegg.allgaeu/"
+          ]
+        },
+        {
+          "page_url": "https://www.rathaus.scheidegg.de/service/datenschutz/",
+          "detected_links": [
+            "https://www.facebook.com/legal/terms/page_controller_addendum",
+            "https://www.facebook.com/settings?tab=ads",
+            "https://www.facebook.com/legal/controller_addendum",
+            "https://www.facebook.com/legal/EU_data_transfer_addendum",
+            "https://www.facebook.com/policy.php",
+            "https://facebook.com/Scheidegg.allgaeu/"
+          ]
+        },
+        {
+          "page_url": "https://www.rechnungshof.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.rechnungshof.sachsen.de/medieninformationen.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.region-gestalten.bund.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.region-gestalten.bund.de%2FRegion%2FDE%2FHome%2Fhome_node.html"
+          ]
+        },
+        {
+          "page_url": "https://www.region-gestalten.bund.de/Region/DE/einblicke/2412/Oberallg%C3%A4u_Planspiele.html;jsessionid=3112946A0095CDF795894B086FE7080D.live21322?nn=3591504",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.region-gestalten.bund.de%2FRegion%2FDE%2Feinblicke%2F2412%2FOberallg%25C3%25A4u_Planspiele.html"
+          ]
+        },
+        {
+          "page_url": "https://www.region-gestalten.bund.de/Region/DE/service/Gebaerdensprache/gebaerdensprache_node.html;jsessionid=2959E560962B7F3214007A7895137422.live11314",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.region-gestalten.bund.de%2FRegion%2FDE%2Fservice%2FGebaerdensprache%2Fgebaerdensprache_node.html"
+          ]
+        },
+        {
+          "page_url": "https://www.regionales.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.smul.sachsen.de/&t=Startseite%20-%20S%C3%A4chsisches%20Staatsministerium%20f%C3%BCr%20Energie,%20Klimaschutz,%20Umwelt%20und%20Landwirtschaft%20-%20sachsen.de"
+          ]
+        },
+        {
+          "page_url": "https://www.regionales.sachsen.de/anbieter",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.smul.sachsen.de/&t=Startseite%20-%20S%C3%A4chsisches%20Staatsministerium%20f%C3%BCr%20Energie,%20Klimaschutz,%20Umwelt%20und%20Landwirtschaft%20-%20sachsen.de"
+          ]
+        },
+        {
+          "page_url": "https://www.regionen.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.regionen.sachsen.de/dresden-elbland-3972.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.regionen.sachsen.de/reiseregionen-in-sachsen-3950.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.rlp.de/",
+          "detected_links": [
+            "https://www.facebook.com/landesregierungrheinlandpfalz/",
+            "https://www.facebook.com/landesregierungrheinlandpfalz/posts/pfbid02LfYxyR9J88mcsmJBbD3cYUdoQdSjxHxJvsZhhN4eShUEHoPNEmuRgn2gT7M1q9sAl"
+          ]
+        },
+        {
+          "page_url": "https://www.rlp.de/ministerpraesident",
+          "detected_links": [
+            "https://www.facebook.com/landesregierungrheinlandpfalz/"
+          ]
+        },
+        {
+          "page_url": "https://www.rlp.de/service/pressemitteilungen/detail/ministerpraesident-alexander-schweitzer-eroeffnet-mythoshalle-auf-der-loreley-wahrzeichen-des-mittelrheintals-erstrahlt-im-neuen-glanz",
+          "detected_links": [
+            "https://www.facebook.com/landesregierungrheinlandpfalz/"
+          ]
+        },
+        {
+          "page_url": "https://www.runtervomgas.de/",
+          "detected_links": [
+            "https://www.facebook.com/RunterVomGas/"
+          ]
+        },
+        {
+          "page_url": "https://www.runtervomgas.de/aktuelles-und-downloads/aktuelles/sicher-und-ruecksichtsvoll-in-die-rennradsaison-starten/",
+          "detected_links": [
+            "https://www.facebook.com/RunterVomGas/"
+          ]
+        },
+        {
+          "page_url": "https://www.runtervomgas.de/menschen-und-geschichten/",
+          "detected_links": [
+            "https://www.facebook.com/RunterVomGas/"
+          ]
+        },
+        {
+          "page_url": "https://www.sab.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sab.foerderbank"
+          ]
+        },
+        {
+          "page_url": "https://www.sab.sachsen.de/web/guest/news",
+          "detected_links": [
+            "https://www.facebook.com/sab.foerderbank"
+          ]
+        },
+        {
+          "page_url": "https://www.sachsen.de/datenschutz.html",
+          "detected_links": [
+            "https://www.facebook.com/privacy/explanation",
+            "https://www.facebook.com/privacy/explanation/",
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.sbs.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/Freistaat.Sachsen/",
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.sbs.sachsen.de/staatswaldbewirtschaftung-7225.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.schleswig-holstein.de/",
+          "detected_links": [
+            "https://www.facebook.com/1373647411462126",
+            "https://www.facebook.com/1369760528517481",
+            "https://www.facebook.com/SchleswigHolstein/",
+            "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.schleswig-holstein.de%2FDE%2Flandesportal&t=Landesportal%20Schleswig-Holstein"
+          ]
+        },
+        {
+          "page_url": "https://www.schleswig-holstein.de/DE/landesregierung/ministerien-behoerden/I/_startseite/Artikel2025/III/250715_mp_pk_einigungen_klv",
+          "detected_links": [
+            "https://www.facebook.com/SchleswigHolstein/",
+            "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.schleswig-holstein.de%2FDE%2Flandesregierung%2Fministerien-behoerden%2FI%2F_startseite%2FArtikel2025%2FIII%2F250715_mp_pk_einigungen_klv&t=Der%20Ministerpr%C3%A4sident%20-%20Staatskanzlei%20und%20Bundesangelegenheiten"
+          ]
+        },
+        {
+          "page_url": "https://www.schleswig-holstein.de/DE/landesregierung/ministerien-behoerden/I/_startseite/Artikel2025/III/250716_emmi_verleihung",
+          "detected_links": [
+            "https://www.facebook.com/SchleswigHolstein/",
+            "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.schleswig-holstein.de%2FDE%2Flandesregierung%2Fministerien-behoerden%2FI%2F_startseite%2FArtikel2025%2FIII%2F250716_emmi_verleihung&t=Der%20Ministerpr%C3%A4sident%20-%20Staatskanzlei%20und%20Bundesangelegenheiten"
+          ]
+        },
+        {
+          "page_url": "https://www.schloesser.bayern.de/",
+          "detected_links": [
+            "https://www.facebook.com/bayerische.schloesserverwaltung/"
+          ]
+        },
+        {
+          "page_url": "https://www.schloesser.bayern.de/index.htm",
+          "detected_links": [
+            "https://www.facebook.com/bayerische.schloesserverwaltung/"
+          ]
+        },
+        {
+          "page_url": "https://www.schule.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.schule.sachsen.de/allgemeinbildende-schulen-3988.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.schule.sachsen.de/saechsisches-schulsystem-3979.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.schulsport.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.schulsport.sachsen.de/schwimmunterricht-4144.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.sdz.nrw.de/",
+          "detected_links": [
+            "https://www.facebook.com/nuanrw"
+          ]
+        },
+        {
+          "page_url": "https://www.sdz.nrw.de/landesprogramm/bne",
+          "detected_links": [
+            "https://www.facebook.com/nuanrw"
+          ]
+        },
+        {
+          "page_url": "https://www.sdz.nrw.de/sdz/sdz-familie",
+          "detected_links": [
+            "https://www.facebook.com/nuanrw"
+          ]
+        },
+        {
+          "page_url": "https://www.sib.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.sib.sachsen.de/informationen-fuer-auftragnehmer-zuwendungs-empfaenger-bedarfstraeger-3970.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.sib.sachsen.de/stellenangebote-ausbildung-3973.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.sid.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.sid.sachsen.de/leistungen.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.sifo.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.sifo.de/sifo/de/home/home_node.html"
+          ]
+        },
+        {
+          "page_url": "https://www.sifo.de/sifo/de/nks-sicherheitsforschung/nks-sicherheitsforschung_node.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.sifo.de/sifo/de/nks-sicherheitsforschung/nks-sicherheitsforschung_node.html"
+          ]
+        },
+        {
+          "page_url": "https://www.sifo.de/sifo/de/projekte/querschnittsthemen-und-aktivitaeten/praxistransfer-und-kompetenzaufbau/anwender-innovativ/kiresq/kiresq_node.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=https://www.sifo.de/sifo/de/projekte/querschnittsthemen-und-aktivitaeten/praxistransfer-und-kompetenzaufbau/anwender-innovativ/kiresq/kiresq_node.html"
+          ]
+        },
+        {
+          "page_url": "https://www.sk.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.sk.sachsen.de/chef-der-staatskanzlei-4619.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.skh-altscherbitz.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/skhaltscherbitz"
+          ]
+        },
+        {
+          "page_url": "https://www.skh-arnsdorf.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/profile.php?id=100054445031241&locale=de_DE"
+          ]
+        },
+        {
+          "page_url": "https://www.smac.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/smac.Staatliches.Museum.fuer.Archaeologie"
+          ]
+        },
+        {
+          "page_url": "https://www.smac.sachsen.de/fuehrungen-veranstaltung.html?id=2975",
+          "detected_links": [
+            "https://www.facebook.com/smac.Staatliches.Museum.fuer.Archaeologie"
+          ]
+        },
+        {
+          "page_url": "https://www.smac.sachsen.de/index.html",
+          "detected_links": [
+            "https://www.facebook.com/smac.Staatliches.Museum.fuer.Archaeologie"
+          ]
+        },
+        {
+          "page_url": "https://www.smf.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.smf.sachsen.de/ministerium-3949.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.smf.sachsen.de/schaufenster-4300.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.smi.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/SMIsachsen/"
+          ]
+        },
+        {
+          "page_url": "https://www.smil.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/smilsachsen",
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.smil.sachsen.de/foerderkompass-des-smr-4499.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.smk.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.smk.sachsen.de/beauftragter-der-saechsischen-staatsregierung-fuer-das-juedische-leben-4124.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.smk.sachsen.de/www.bgm-schulen.sachsen.de",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.sms.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.sms.sachsen.de/newsroom.html",
+          "detected_links": [
+            "https://www.facebook.com/SozialministeriumSachsen",
+            "https://www.facebook.com/PetraKoeppingSMS",
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.smul-foerderung.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.smul-foerderung.sachsen.de/foerderrichtlinie-agrarumwelt-und-klimamassnahmen-frl-auk-2023-11982.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.smul.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.smul.sachsen.de/alle-themenportale-im-ueberblick-4142.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.smul.sachsen.de/staatsminister-und-staatssekretaer-5303.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.smwa.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/smwa.sachsen/",
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.smwa.sachsen.de/blog/2025/06/13/akzeleratoren-gesucht-zweiter-projektaufruf-im-akzeleratoren-programm-laeuft-bis-28-juli/",
+          "detected_links": [
+            "https://www.facebook.com/smwa.sachsen",
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.smwa.sachsen.de/leitung-4043.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.smwk.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.smwk.sachsen.de/aufgaben-organisation.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.sorben.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.sorben.sachsen.de/sprache-und-geschichte-3903.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.soziales.bremen.de/",
+          "detected_links": [
+            "https://www.facebook.com/profile.php?id=61557971224416"
+          ]
+        },
+        {
+          "page_url": "https://www.staatsregierung.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.staatsregierung.sachsen.de/aus-dem-kabinett-4512.html?_cp=%7B%22accordion-content-9143%22%3A%7B%220%22%3Atrue%7D%2C%22previousOpen%22%3A%7B%22group%22%3A%22accordion-content-9143%22%2C%22idx%22%3A0%7D%7D",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.stadt-koeln.de/",
+          "detected_links": [
+            "https://www.facebook.com/stadt.koeln50/"
+          ]
+        },
+        {
+          "page_url": "https://www.stadt-koeln.de/artikel/06415/index.html",
+          "detected_links": [
+            "https://www.facebook.com/stadt.koeln50/"
+          ]
+        },
+        {
+          "page_url": "https://www.stadt-koeln.de/leben-in-koeln/soziales/auslaenderamt",
+          "detected_links": [
+            "https://www.facebook.com/stadt.koeln50/"
+          ]
+        },
+        {
+          "page_url": "https://www.stadt.bamberg.de/",
+          "detected_links": [
+            "https://www.facebook.com/bamberg.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.stadt.bamberg.de/Unsere-Stadt/Unsere-Stadt-Aktuelles-2/",
+          "detected_links": [
+            "https://www.facebook.com/bamberg.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.stadt.bamberg.de/index.php?object=tx,3481.6&ModID=7&FID=3481.27536.1&NavID=2730.4",
+          "detected_links": [
+            "https://www.facebook.com/bamberg.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.stadt.brunsbuettel.de/",
+          "detected_links": [
+            "https://www.facebook.com/brunsbuettel.schleusenstadt"
+          ]
+        },
+        {
+          "page_url": "https://www.stadt.brunsbuettel.de/buergerservice/digitaler-service/default-7080aaf19fd73a4245c9f088229cf289",
+          "detected_links": [
+            "https://www.facebook.com/brunsbuettel.schleusenstadt"
+          ]
+        },
+        {
+          "page_url": "https://www.stadt.brunsbuettel.de/unser-brunsbuettel/heisst-sie-herzlich-willkommen/grusswort",
+          "detected_links": [
+            "https://www.facebook.com/brunsbuettel.schleusenstadt"
+          ]
+        },
+        {
+          "page_url": "https://www.standardsicherung.nrw.de/",
+          "detected_links": [
+            "https://www.facebook.com"
+          ]
+        },
+        {
+          "page_url": "https://www.standardsicherung.schulministerium.nrw.de/",
+          "detected_links": [
+            "https://www.facebook.com"
+          ]
+        },
+        {
+          "page_url": "https://www.standardsicherung.schulministerium.nrw.de/cms/login.php",
+          "detected_links": [
+            "https://www.facebook.com"
+          ]
+        },
+        {
+          "page_url": "https://www.standardsicherung.schulministerium.nrw.de/cms/zentrale-pruefungen-10/zentrale-pruefungen-10.php",
+          "detected_links": [
+            "https://www.facebook.com"
+          ]
+        },
+        {
+          "page_url": "https://www.statistik.rlp.de/",
+          "detected_links": [
+            "https://www.facebook.com/Statistik.rlp"
+          ]
+        },
+        {
+          "page_url": "https://www.statistik.rlp.de/nachrichten/nachichtendetailseite/aussenhandel-mit-china-wichtiger-handelspartner-fuer-die-rheinland-pfaelzische-wirtschaft",
+          "detected_links": [
+            "https://www.facebook.com/Statistik.rlp"
+          ]
+        },
+        {
+          "page_url": "https://www.statistik.rlp.de/nachrichten/nachichtendetailseite/neuerscheinungen-070725-110725",
+          "detected_links": [
+            "https://www.facebook.com/Statistik.rlp"
+          ]
+        },
+        {
+          "page_url": "https://www.steuerausbildung.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.steuerausbildung.sachsen.de/mehr-als-nur-zahlen-ihre-berufliche-zukunft-in-der-steuerverwaltung-3916.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.steuerausbildung.sachsen.de/studium-diplom-verwaltungswirt-in-fh-4296.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.steuern.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.steuern.sachsen.de/aktuelles-und-presse-3961.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.steuern.sachsen.de/info-telefon-4109.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.stk.niedersachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/ministerpraesident.niedersachsen/"
+          ]
+        },
+        {
+          "page_url": "https://www.stmas.bayern.de/",
+          "detected_links": [
+            "https://www.facebook.com/bayerischessozialministerium/"
+          ]
+        },
+        {
+          "page_url": "https://www.stmas.bayern.de/bayerngemeinsamstark/",
+          "detected_links": [
+            "https://www.facebook.com/bayerischessozialministerium/"
+          ]
+        },
+        {
+          "page_url": "https://www.stmas.bayern.de/newsletter/index.php",
+          "detected_links": [
+            "https://www.facebook.com/bayerischessozialministerium/"
+          ]
+        },
+        {
+          "page_url": "https://www.stmb.bayern.de/",
+          "detected_links": [
+            "https://www.facebook.com/lebenbauenbewegen",
+            "https://www.facebook.com/lebenbauenbewegen/"
+          ]
+        },
+        {
+          "page_url": "https://www.stmb.bayern.de/hil/datenschutz/index.php",
+          "detected_links": [
+            "https://www.facebook.com/lebenbauenbewegen/"
+          ]
+        },
+        {
+          "page_url": "https://www.stmb.bayern.de/med/aktuell/archiv/2025/250102bmk_vmk/",
+          "detected_links": [
+            "https://www.facebook.com/lebenbauenbewegen/"
+          ]
+        },
+        {
+          "page_url": "https://www.stmelf.bayern.de/",
+          "detected_links": [
+            "https://www.facebook.com/1033295482320642/posts/1268199112163610",
+            "https://www.facebook.com/1033295482320642/posts/1266594382324083",
+            "https://www.facebook.com/1033295482320642/posts/1264293172554204",
+            "https://www.facebook.com/1322621052990865/posts/1456223946297241",
+            "https://www.facebook.com/1033295482320642/posts/1264667502516771",
+            "https://www.facebook.com/reel/927684830154216/",
+            "https://www.facebook.com/Land.Schafft.Bayern/"
+          ]
+        },
+        {
+          "page_url": "https://www.stmelf.bayern.de/cms01/service/presse/pm/2025/7-bayerische-ernaehrungstage/index.html",
+          "detected_links": [
+            "https://www.facebook.com/Land.Schafft.Bayern/"
+          ]
+        },
+        {
+          "page_url": "https://www.stmelf.bayern.de/cms01/service/presse/pm/2025/zukunft-der-eu-agrarpolitik/index.html",
+          "detected_links": [
+            "https://www.facebook.com/Land.Schafft.Bayern/"
+          ]
+        },
+        {
+          "page_url": "https://www.stmfh.bayern.de/",
+          "detected_links": [
+            "https://www.facebook.com/BayerischesStaatsministeriumDerFinanzen"
+          ]
+        },
+        {
+          "page_url": "https://www.stmgp.bayern.de/",
+          "detected_links": [
+            "https://www.facebook.com/gesundheit.pflege.praevention.bayern"
+          ]
+        },
+        {
+          "page_url": "https://www.stmgp.bayern.de/vorsorge/umwelteinwirkungen/badeseen/",
+          "detected_links": [
+            "https://www.facebook.com/gesundheit.pflege.praevention.bayern"
+          ]
+        },
+        {
+          "page_url": "https://www.stmi.bayern.de/",
+          "detected_links": [
+            "https://www.facebook.com/BayStMI/",
+            "https://www.facebook.com/928832489271148/posts/1361028656051527",
+            "https://www.facebook.com/928832489271148/posts/1356905103130549",
+            "https://www.facebook.com/928832489271148/posts/1359211182899941",
+            "https://www.facebook.com/reel/824348250074202/",
+            "https://www.facebook.com/photo.php?fbid=1357557106398682&set=a.638952681592465&type=3",
+            "https://www.facebook.com/928832489271148/posts/1356716289816097",
+            "https://www.facebook.com/photo.php?fbid=1356121596542233&set=a.638952681592465&type=3",
+            "https://www.facebook.com/photo.php?fbid=1355890016565391&set=a.638952681592465&type=3",
+            "https://www.facebook.com/photo.php?fbid=1354713066683086&set=a.638952681592465&type=3",
+            "https://www.facebook.com/928832489271148/posts/1354663003354759",
+            "https://www.facebook.com/photo.php?fbid=1354579846696408&set=a.638952681592465&type=3",
+            "https://www.facebook.com/photo.php?fbid=1354450463376013&set=a.638952681592465&type=3",
+            "https://www.facebook.com/photo.php?fbid=1354343970053329&set=a.638952681592465&type=3",
+            "https://www.facebook.com/928832489271148/posts/1353508223470237"
+          ]
+        },
+        {
+          "page_url": "https://www.stmi.bayern.de/ministerium/staatssekretaer/",
+          "detected_links": [
+            "https://www.facebook.com/BayStMI/"
+          ]
+        },
+        {
+          "page_url": "https://www.stmi.bayern.de/news/detail/novelle-des-bayerischen-feuerwehrgesetzes-vom-landtag-beschlossen-wichtige-weichen-fuer-die-zukunft/",
+          "detected_links": [
+            "https://www.facebook.com/BayStMI/"
+          ]
+        },
+        {
+          "page_url": "https://www.stmuv.bayern.de/",
+          "detected_links": [
+            "https://www.facebook.com/lebensministerium/"
+          ]
+        },
+        {
+          "page_url": "https://www.stmuv.bayern.de/aktuell/presse/pressemitteilung.htm?PMNr=78/25",
+          "detected_links": [
+            "https://www.facebook.com/lebensministerium/"
+          ]
+        },
+        {
+          "page_url": "https://www.stmwi.bayern.de/",
+          "detected_links": [
+            "https://www.facebook.com/wirtschaft.bayern",
+            "https://www.facebook.com/reel/1443495290306472/",
+            "https://www.facebook.com/reel/3597848590367195/"
+          ]
+        },
+        {
+          "page_url": "https://www.stmwk.bayern.de/",
+          "detected_links": [
+            "https://www.facebook.com/StMWK.Bayern/"
+          ]
+        },
+        {
+          "page_url": "https://www.stmwk.bayern.de/allgemein/meldung/7245/staffelstabuebergabe-am-deutschen-museum-michael-decker-folgt-als-neuer-generaldirektor-auf-wolfgang-m-heckl.html",
+          "detected_links": [
+            "https://www.facebook.com/StMWK.Bayern/"
+          ]
+        },
+        {
+          "page_url": "https://www.strahlenschutz.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.strahlenschutz.sachsen.de/smr-projekt-tusimice-31978.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.strassen.nrw.de/",
+          "detected_links": [
+            "https://www.facebook.com/1069130651918414/posts/1400390552125754",
+            "https://www.facebook.com/1069130651918414/posts/1395522855945857",
+            "https://www.facebook.com/1069130651918414/posts/1393797369451739",
+            "https://www.facebook.com/1069130651918414/posts/1387210213443788",
+            "https://www.facebook.com/1069130651918414/posts/1384817900349686",
+            "https://www.facebook.com/1069130651918414/posts/1384057560425720",
+            "https://www.facebook.com/1069130651918414/posts/1383308820500594",
+            "https://www.facebook.com/1069130651918414/posts/1382603757237767",
+            "https://www.facebook.com/1069130651918414/posts/1381902920641184",
+            "https://www.facebook.com/reel/1445389243636737/",
+            "https://www.facebook.com/1069130651918414/posts/1379632920868184",
+            "https://www.facebook.com/1069130651918414/posts/1378914884273321",
+            "https://www.facebook.com/strassennrw/"
+          ]
+        },
+        {
+          "page_url": "https://www.strassen.nrw.de/de/organisation-und-direktorium.html",
+          "detected_links": [
+            "https://www.facebook.com/strassennrw/"
+          ]
+        },
+        {
+          "page_url": "https://www.strassen.nrw.de/de/wissenssommer-2025.html",
+          "detected_links": [
+            "https://www.facebook.com/1069130651918414/posts/1217219377109540",
+            "https://www.facebook.com/1069130651918414/posts/1215483807283097",
+            "https://www.facebook.com/1069130651918414/posts/1211094317722046",
+            "https://www.facebook.com/1069130651918414/posts/1204831795014965",
+            "https://www.facebook.com/1069130651918414/posts/1203064655191679",
+            "https://www.facebook.com/1069130651918414/posts/1198838928947585",
+            "https://www.facebook.com/1069130651918414/posts/1197064019125076",
+            "https://www.facebook.com/1069130651918414/posts/1192757826222362",
+            "https://www.facebook.com/1069130651918414/posts/1191223563042455",
+            "https://www.facebook.com/1069130651918414/posts/1185063376991807",
+            "https://www.facebook.com/1069130651918414/posts/1180732760758202",
+            "https://www.facebook.com/strassennrw/"
+          ]
+        },
+        {
+          "page_url": "https://www.studieren.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.studieren.sachsen.de/antragsverfahren-gesetze-verordnungen-4558.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.studieren.sachsen.de/en/index.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.stuttgart.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.stuttgart.de%2F&t=1775606844",
+            "https://www.facebook.com/Stadt.Stuttgart"
+          ]
+        },
+        {
+          "page_url": "https://www.stuttgart.de/buergerbueros/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.stuttgart.de%2Fservice%2Fbuergerbueros&t=1775606846",
+            "https://www.facebook.com/Stadt.Stuttgart"
+          ]
+        },
+        {
+          "page_url": "https://www.stuttgart.de/service/dienstleistungen/index.php",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.stuttgart.de%2Fservice%2Fdienstleistungen%2F&t=1775606847",
+            "https://www.facebook.com/Stadt.Stuttgart"
+          ]
+        },
+        {
+          "page_url": "https://www.suchtinfo.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/Freistaat.Sachsen/",
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.suchtinfo.sachsen.de/mobile-ausstellung-gluck-sucht-dich-4297.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.svws.nrw.de/",
+          "detected_links": [
+            "https://www.facebook.com"
+          ]
+        },
+        {
+          "page_url": "https://www.svws.nrw.de/infos/datenschutzerklaerung-svws",
+          "detected_links": [
+            "https://www.facebook.com"
+          ]
+        },
+        {
+          "page_url": "https://www.svws.nrw.de/startseite",
+          "detected_links": [
+            "https://www.facebook.com"
+          ]
+        },
+        {
+          "page_url": "https://www.tagespflege.bayern.de/",
+          "detected_links": [
+            "https://www.facebook.com/bayerischessozialministerium/",
+            "https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.tagespflege.bayern.de%2F"
+          ]
+        },
+        {
+          "page_url": "https://www.tagespflege.bayern.de/datenschutz/",
+          "detected_links": [
+            "https://www.facebook.com/bayerischessozialministerium/",
+            "https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.tagespflege.bayern.de%2Fdatenschutz%2F"
+          ]
+        },
+        {
+          "page_url": "https://www.tds.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.tds.sachsen.de/tag-der-sachsen-2025.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.technikerschule-triesdorf.bayern.de/",
+          "detected_links": [
+            "https://www.facebook.com/Land.Schafft.Bayern/"
+          ]
+        },
+        {
+          "page_url": "https://www.technikerschule-triesdorf.bayern.de/cms11/awlb_tr/index.php",
+          "detected_links": [
+            "https://www.facebook.com/Land.Schafft.Bayern/"
+          ]
+        },
+        {
+          "page_url": "https://www.technikerschule-triesdorf.bayern.de/datenschutz",
+          "detected_links": [
+            "https://www.facebook.com/Land.Schafft.Bayern/"
+          ]
+        },
+        {
+          "page_url": "https://www.tfz.bayern.de/",
+          "detected_links": [
+            "https://www.facebook.com/Land.Schafft.Bayern/"
+          ]
+        },
+        {
+          "page_url": "https://www.tfz.bayern.de/cms08/stellenangebote/index.php",
+          "detected_links": [
+            "https://www.facebook.com/Land.Schafft.Bayern/"
+          ]
+        },
+        {
+          "page_url": "https://www.tfz.bayern.de/cms08/tfz/organisation/195299/index.php",
+          "detected_links": [
+            "https://www.facebook.com/Land.Schafft.Bayern/"
+          ]
+        },
+        {
+          "page_url": "https://www.themen.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.themen.sachsen.de/index.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.themen.sachsen.de/suche.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.thueringer-landtag.de/",
+          "detected_links": [
+            "http://www.facebook.com/sharer.php?u=https://www.thueringer-landtag.de/&t=Startseite",
+            "https://www.facebook.com/thueringer.landtag/"
+          ]
+        },
+        {
+          "page_url": "https://www.thueringer-landtag.de/landtag-live/",
+          "detected_links": [
+            "http://www.facebook.com/sharer.php?u=https://www.thueringer-landtag.de/landtag-live/&t=Landtag%20Live",
+            "https://www.facebook.com/thueringer.landtag/"
+          ]
+        },
+        {
+          "page_url": "https://www.thueringer-landtag.de/presse/pressemitteilungen/2025/landtag-auf-achse-in-nord-und-mittelthueringen/",
+          "detected_links": [
+            "http://www.facebook.com/sharer.php?u=https://www.thueringer-landtag.de/presse/pressemitteilungen/2025/landtag-auf-achse-in-nord-und-mittelthueringen/&t=Landtag%20auf%20Achse%20in%20Nord-%20und%20Mittelth%C3%BCringen",
+            "https://www.facebook.com/thueringer.landtag/"
+          ]
+        },
+        {
+          "page_url": "https://www.thw.de/",
+          "detected_links": [
+            "https://www.facebook.com/thw.de/?locale=de_DE"
+          ]
+        },
+        {
+          "page_url": "https://www.thw.de/SharedDocs/Meldungen/DE/Pressemitteilungen/Inland/2025/07/pm_05_75_jahre_ehrenamt/75_jahre_ehrenamt.html",
+          "detected_links": [
+            "https://www.facebook.com/thw.de/?locale=de_DE"
+          ]
+        },
+        {
+          "page_url": "https://www.tiergesundheit.sachsen.de/",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.tiergesundheit.sachsen.de/amtstierarzt-werden.html",
+          "detected_links": [
+            "https://www.facebook.com/sharer/sharer.php?u=http://www.sachsen.de/"
+          ]
+        },
+        {
+          "page_url": "https://www.tournatur.bayern.de/",
+          "detected_links": [
+            "https://www.facebook.com/lebensministerium/"
+          ]
+        },
+        {
+          "page_url": "https://www.tournatur.bayern.de/index.html",
+          "detected_links": [
+            "https://www.facebook.com/lebensministerium/"
+          ]
+        },
+        {
+          "page_url": "https://www.transparenzportal.bund.de/",
+          "detected_links": [
+            "https://www.facebook.com/BMZ.Bund"
+          ]
+        },
+        {
+          "page_url": "https://www.transparenzportal.bund.de/start",
+          "detected_links": [
+            "https://www.facebook.com/BMZ.Bund"
           ]
         }
       ],
@@ -95428,6 +98405,10 @@
         {
           "page_url": "https://www.cdu-fraktion.berlin.de/",
           "detected_links": [
+            "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.instagram.com%2Fp%2FDW0lDXpDvqy%2F",
+            "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.facebook.com%2F648796107284846%2Fposts%2F1396368159194300",
+            "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D1394675139363602%26set%3Da.648712047293252%26type%3D3",
+            "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.instagram.com%2Fp%2FDWvXf5cDdrT%2F",
             "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.facebook.com%2Fphoto.php%3Ffbid%3D1392958652868584%26set%3Da.648712047293252%26type%3D3",
             "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.instagram.com%2Fp%2FDWqLsLGDc1-%2F",
             "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.facebook.com%2Freel%2F1685950259503753%2F",
@@ -95436,11 +98417,11 @@
             "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.instagram.com%2Fp%2FDWlz1-wjVFw%2F",
             "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.facebook.com%2Freel%2F1046404708559693%2F",
             "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.instagram.com%2Freel%2FDWlRrTYjYNs%2F",
+            "https://www.linkedin.com/company/cdufraktionberlin",
             "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.facebook.com%2Freel%2F1470203271487892%2F",
             "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.instagram.com%2Freel%2FDWgf5_dDW29%2F",
             "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.facebook.com%2Freel%2F932407482715646%2F",
-            "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.instagram.com%2Freel%2FDWYPT3ruiv8%2F",
-            "https://www.linkedin.com/company/cdufraktionberlin"
+            "https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.instagram.com%2Freel%2FDWYPT3ruiv8%2F"
           ]
         },
         {
@@ -95579,6 +98560,898 @@
           "page_url": "https://www.esf.bayern.de/esf-foerderung/foerderaktion/fp2021-2027/index.php",
           "detected_links": [
             "https://www.linkedin.com/company/bayerischessozialministerium/"
+          ]
+        },
+        {
+          "page_url": "https://www.feuerwehr.bremen.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/feuerwehr-bremen"
+          ]
+        },
+        {
+          "page_url": "https://www.ffa.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/filmf%C3%B6rderungsanstalt"
+          ]
+        },
+        {
+          "page_url": "https://www.finanzverwaltung.nrw.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/finanzministerium-nrw/"
+          ]
+        },
+        {
+          "page_url": "https://www.finanzverwaltung.nrw.de/uebersicht-rubrik-aktuelles-und-presse/pressemitteilungen/verdacht-auf-steuerbetrug-grossem-stil",
+          "detected_links": [
+            "https://www.linkedin.com/company/finanzministerium-nrw/"
+          ]
+        },
+        {
+          "page_url": "https://www.frauen.bremen.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/zgfbremen"
+          ]
+        },
+        {
+          "page_url": "https://www.frauengesundheitsportal.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/bioeg"
+          ]
+        },
+        {
+          "page_url": "https://www.frauengesundheitsportal.de/leichte-sprache/",
+          "detected_links": [
+            "https://www.linkedin.com/company/bioeg"
+          ]
+        },
+        {
+          "page_url": "https://www.frauengesundheitsportal.de/organisationen/",
+          "detected_links": [
+            "https://www.linkedin.com/company/bioeg"
+          ]
+        },
+        {
+          "page_url": "https://www.fsj.bayern.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/bayerischessozialministerium/"
+          ]
+        },
+        {
+          "page_url": "https://www.fsj.bayern.de/informier-dich/index.php",
+          "detected_links": [
+            "https://www.linkedin.com/company/bayerischessozialministerium/"
+          ]
+        },
+        {
+          "page_url": "https://www.gbe.rki.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/robertkochinstitut"
+          ]
+        },
+        {
+          "page_url": "https://www.gbe.rki.de/SiteGlobals/Forms/Suche/IndikatorenAZ/IndikatorenAZ_Formular.html?nn=16894664",
+          "detected_links": [
+            "https://www.linkedin.com/company/robertkochinstitut"
+          ]
+        },
+        {
+          "page_url": "https://www.gbe.rki.de/datenschutz",
+          "detected_links": [
+            "https://www.linkedin.com/company/robertkochinstitut"
+          ]
+        },
+        {
+          "page_url": "https://www.gd.nrw.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/geologischerdienstnrw/"
+          ]
+        },
+        {
+          "page_url": "https://www.gd.nrw.de/gw_start.htm",
+          "detected_links": [
+            "https://www.linkedin.com/company/geologischerdienstnrw/"
+          ]
+        },
+        {
+          "page_url": "https://www.gd.nrw.de/home.php",
+          "detected_links": [
+            "https://www.linkedin.com/company/geologischerdienstnrw/"
+          ]
+        },
+        {
+          "page_url": "https://www.gda.bayern.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/generaldirektion-der-staatlichen-archive-bayerns/"
+          ]
+        },
+        {
+          "page_url": "https://www.geosn.sachsen.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/landesamt-f%C3%BCr-geobasisinformation-sachsen-geosn/?viewAsMember=true&original_referer="
+          ]
+        },
+        {
+          "page_url": "https://www.gewerbeaufsicht.bayern.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/6814447/admin/"
+          ]
+        },
+        {
+          "page_url": "https://www.gewerbeaufsicht.bayern.de/arbeitsschutz/index.htm",
+          "detected_links": [
+            "https://www.linkedin.com/company/6814447/admin/"
+          ]
+        },
+        {
+          "page_url": "https://www.gewerbeaufsicht.bayern.de/marktueberwachung/index.htm",
+          "detected_links": [
+            "https://www.linkedin.com/company/6814447/admin/"
+          ]
+        },
+        {
+          "page_url": "https://www.gewerbeaufsicht.niedersachsen.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/109162232/admin/page-posts/published/"
+          ]
+        },
+        {
+          "page_url": "https://www.go-bio.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/bundesministerium-fuer-forschung-technologie-und-raumfahrt/posts/?feedView=all"
+          ]
+        },
+        {
+          "page_url": "https://www.go-bio.de/gobio/de/aktuelles/_documents/LyoThroReg_Ideenwettbewerb.html",
+          "detected_links": [
+            "https://www.linkedin.com/company/bundesministerium-fuer-forschung-technologie-und-raumfahrt/posts/?feedView=all"
+          ]
+        },
+        {
+          "page_url": "https://www.go-bio.de/gobio/de/aktuelles/_documents/QTAS_medical_valley.html",
+          "detected_links": [
+            "https://www.linkedin.com/company/bundesministerium-fuer-forschung-technologie-und-raumfahrt/posts/?feedView=all"
+          ]
+        },
+        {
+          "page_url": "https://www.govdata.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/govdata-de"
+          ]
+        },
+        {
+          "page_url": "https://www.govdata.de/erweitertesuche",
+          "detected_links": [
+            "https://www.linkedin.com/company/govdata-de"
+          ]
+        },
+        {
+          "page_url": "https://www.govdata.de/suche?type=dataset",
+          "detected_links": [
+            "https://www.linkedin.com/company/govdata-de"
+          ]
+        },
+        {
+          "page_url": "https://www.gruene-berufe.sachsen.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/smulsachsen"
+          ]
+        },
+        {
+          "page_url": "https://www.hamburg.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/senathamburg/"
+          ]
+        },
+        {
+          "page_url": "https://www.hamburg.de/tourismus/sehenswuerdigkeiten",
+          "detected_links": [
+            "https://www.linkedin.com/company/senathamburg/"
+          ]
+        },
+        {
+          "page_url": "https://www.hdo.bayern.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/bayerischessozialministerium/"
+          ]
+        },
+        {
+          "page_url": "https://www.hdo.bayern.de/programm/ausstellungen/index.php",
+          "detected_links": [
+            "https://www.linkedin.com/company/bayerischessozialministerium/"
+          ]
+        },
+        {
+          "page_url": "https://www.hsf.sachsen.de/",
+          "detected_links": [
+            "https://www.linkedin.com/school/hsfmeissen/posts/?feedView=all"
+          ]
+        },
+        {
+          "page_url": "https://www.hspv.nrw.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/hochschule-f%C3%BCr-polizei-und-verwaltung-nrw/"
+          ]
+        },
+        {
+          "page_url": "https://www.hspv.nrw.de/nachrichten/artikel/ende-nominierungsphase-lehrpreis-2024-2025",
+          "detected_links": [
+            "https://www.linkedin.com/company/hochschule-f%C3%BCr-polizei-und-verwaltung-nrw/"
+          ]
+        },
+        {
+          "page_url": "https://www.hvv.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/hvv-hamburger-verkehrsverbund/mycompany/?viewAsMember=true"
+          ]
+        },
+        {
+          "page_url": "https://www.hvv.de/de",
+          "detected_links": [
+            "https://www.linkedin.com/company/hvv-hamburger-verkehrsverbund/mycompany/?viewAsMember=true"
+          ]
+        },
+        {
+          "page_url": "https://www.hvv.de/de/ueber-uns/neuigkeiten/neuigkeiten-detail/world-triathlon-hamburg-umleitungen-und-strassensperrungen-149792",
+          "detected_links": [
+            "https://www.linkedin.com/company/hvv-hamburger-verkehrsverbund/mycompany/?viewAsMember=true"
+          ]
+        },
+        {
+          "page_url": "https://www.in.stuttgart.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/kultur-kongresszentrum-liederhalle-stuttgart/"
+          ]
+        },
+        {
+          "page_url": "https://www.it-planungsrat.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/it-planungsrat/"
+          ]
+        },
+        {
+          "page_url": "https://www.it-planungsrat.de/beschluesse-informationen",
+          "detected_links": [
+            "https://www.linkedin.com/company/it-planungsrat/"
+          ]
+        },
+        {
+          "page_url": "https://www.it-planungsrat.de/datenschutz",
+          "detected_links": [
+            "https://www.linkedin.com/legal/privacy-policy",
+            "https://www.linkedin.com/company/it-planungsrat/"
+          ]
+        },
+        {
+          "page_url": "https://www.it.niedersachsen.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/it-niedersachsen?originalSubdomain=de"
+          ]
+        },
+        {
+          "page_url": "https://www.karriere.bva.bund.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/27088497/"
+          ]
+        },
+        {
+          "page_url": "https://www.karriere.bva.bund.de/SiteGlobals/Forms/Webs/Karriere/Suche/Stellenangebotssuche/Stellenangebotssuche_Formular.html",
+          "detected_links": [
+            "https://www.linkedin.com/company/27088497/"
+          ]
+        },
+        {
+          "page_url": "https://www.karriere.bva.bund.de/Webs/Karriere/DE/Service/Suche/Expertensuche/suche_node.html",
+          "detected_links": [
+            "https://www.linkedin.com/company/27088497/"
+          ]
+        },
+        {
+          "page_url": "https://www.karriere.justiz.hessen.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/oberlandesgericht-frankfurt-am-main/?viewAsMember=true"
+          ]
+        },
+        {
+          "page_url": "https://www.karriere.justiz.hessen.de/arbeitgeber-justiz-hessen",
+          "detected_links": [
+            "http://www.linkedin.com/shareArticle?mini=true&url=https://www.karriere.justiz.hessen.de/arbeitgeber-justiz-hessen&title=Arbeitgeber Justiz Hessen&source="
+          ]
+        },
+        {
+          "page_url": "https://www.kba.de/",
+          "detected_links": [
+            "https://www.linkedin.com/shareArticle?url=https://www.kba.de/DE/Home/home_node.html"
+          ]
+        },
+        {
+          "page_url": "https://www.kba.de/DE/Presse/Pressemitteilungen/Allgemein/2024/pm44_keine_staatshaftung_OLG_FL.html",
+          "detected_links": [
+            "https://www.linkedin.com/shareArticle?url=https://www.kba.de/DE/Presse/Pressemitteilungen/Allgemein/2024/pm44_keine_staatshaftung_OLG_FL.html?nn=827402"
+          ]
+        },
+        {
+          "page_url": "https://www.kba.de/EN/Service_en/Hinweise_en/Datenschutz_en/datenschutz_node_en.html",
+          "detected_links": [
+            "https://www.linkedin.com/shareArticle?url=https://www.kba.de/EN/Service_en/Hinweise_en/Datenschutz_en/datenschutz_node_en.html"
+          ]
+        },
+        {
+          "page_url": "https://www.kern.bayern.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/kern-bayern/"
+          ]
+        },
+        {
+          "page_url": "https://www.klimawandel.rlp.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/rheinland-pfalz-kompetenzzentrum-f%C3%BCr-klimawandelfolgen"
+          ]
+        },
+        {
+          "page_url": "https://www.klimawandel.rlp.de/aktuelles/einzelansicht?tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2876&cHash=3a2f1e9a3b11bb47378d58b315595740",
+          "detected_links": [
+            "https://www.linkedin.com/company/rheinland-pfalz-kompetenzzentrum-f%C3%BCr-klimawandelfolgen"
+          ]
+        },
+        {
+          "page_url": "https://www.klimawandel.rlp.de/klimawandel",
+          "detected_links": [
+            "https://www.linkedin.com/company/rheinland-pfalz-kompetenzzentrum-f%C3%BCr-klimawandelfolgen"
+          ]
+        },
+        {
+          "page_url": "https://www.kommweiter.bayern.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/bayerischessozialministerium/"
+          ]
+        },
+        {
+          "page_url": "https://www.kommweiter.bayern.de/datenschutz/",
+          "detected_links": [
+            "https://www.linkedin.com/company/bayerischessozialministerium/"
+          ]
+        },
+        {
+          "page_url": "https://www.kommweiter.bayern.de/lotse/",
+          "detected_links": [
+            "https://www.linkedin.com/company/bayerischessozialministerium/"
+          ]
+        },
+        {
+          "page_url": "https://www.landesvermessung.sachsen.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/landesamt-f%C3%BCr-geobasisinformation-sachsen-geosn/?viewAsMember=true&original_referer="
+          ]
+        },
+        {
+          "page_url": "https://www.landkreistag.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/deutscher-landkreistag/"
+          ]
+        },
+        {
+          "page_url": "https://www.landkreistag.de/presseforum/pressemitteilungen/3465-sondervermoegen-streichung-des-60-anteils-waere-schlag-ins-gesicht-der-kommunen",
+          "detected_links": [
+            "https://www.linkedin.com/company/deutscher-landkreistag/"
+          ]
+        },
+        {
+          "page_url": "https://www.landkreistag.de/presseforum/pressemitteilungen/3467-staatsmodernisierung-kann-nur-gemeinsam-mit-den-landkreisen-gelingen",
+          "detected_links": [
+            "https://www.linkedin.com/company/deutscher-landkreistag/"
+          ]
+        },
+        {
+          "page_url": "https://www.landtag-niedersachsen.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/niedersächsischer-landtag"
+          ]
+        },
+        {
+          "page_url": "https://www.lave.nrw.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/landesamt-f%C3%BCr-verbraucherschutz-und-ern%C3%A4hrung-nrw/?viewAsMember=true"
+          ]
+        },
+        {
+          "page_url": "https://www.lave.nrw.de/themen/tiere/tiergesundheit/tierseuchen/die-afrikanische-schweinepest-asp",
+          "detected_links": [
+            "https://www.linkedin.com/company/landesamt-f%C3%BCr-verbraucherschutz-und-ern%C3%A4hrung-nrw/?viewAsMember=true"
+          ]
+        },
+        {
+          "page_url": "https://www.lbbp.nrw.de/",
+          "detected_links": [
+            "https://www.linkedin.com/in/claudia-middendorf-a2a959335/"
+          ]
+        },
+        {
+          "page_url": "https://www.lbbp.nrw.de/service",
+          "detected_links": [
+            "https://www.linkedin.com/in/claudia-middendorf-a2a959335/"
+          ]
+        },
+        {
+          "page_url": "https://www.lbbp.nrw.de/themen/barrierefreiheit/barrierefreiheit-im-gesundheitswesen",
+          "detected_links": [
+            "https://www.linkedin.com/in/claudia-middendorf-a2a959335/"
+          ]
+        },
+        {
+          "page_url": "https://www.lfar.bayern.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/bayerisches-landesamt-f%C3%BCr-asyl-und-r%C3%BCckf%C3%BChrungen"
+          ]
+        },
+        {
+          "page_url": "https://www.lfar.bayern.de/meta/datenschutz/index.html",
+          "detected_links": [
+            "https://www.linkedin.com/company/bayerisches-landesamt-f%C3%BCr-asyl-und-r%C3%BCckf%C3%BChrungen"
+          ]
+        },
+        {
+          "page_url": "https://www.lfulg.sachsen.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/s%C3%A4chsisches-landesamt-f%C3%BCr-umwelt-landwirtschaft-und-geologie/"
+          ]
+        },
+        {
+          "page_url": "https://www.lgl.bayern.de/",
+          "detected_links": [
+            "http://www.linkedin.com/company/bayerisches-landesamt-fuer-gesundheit-und-lebensmittelsicherheit"
+          ]
+        },
+        {
+          "page_url": "https://www.lgl.bayern.de/index.htm",
+          "detected_links": [
+            "http://www.linkedin.com/company/bayerisches-landesamt-fuer-gesundheit-und-lebensmittelsicherheit"
+          ]
+        },
+        {
+          "page_url": "https://www.meinkiez-meinfriedhof.berlin.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/98560919"
+          ]
+        },
+        {
+          "page_url": "https://www.meinkiez-meinfriedhof.berlin.de/berliner-friedhoefe",
+          "detected_links": [
+            "https://www.linkedin.com/company/98560919"
+          ]
+        },
+        {
+          "page_url": "https://www.meinkiez-meinfriedhof.berlin.de/veranstaltungen/fhrung-friedhof-grunewald-forst-juli",
+          "detected_links": [
+            "https://www.linkedin.com/company/98560919"
+          ]
+        },
+        {
+          "page_url": "https://www.migration-gesundheit.bund.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/bundesgesundheitsministerium"
+          ]
+        },
+        {
+          "page_url": "https://www.migration-gesundheit.bund.de/de/gesundheit-vorsorge",
+          "detected_links": [
+            "https://www.linkedin.com/company/bundesgesundheitsministerium"
+          ]
+        },
+        {
+          "page_url": "https://www.migration-gesundheit.bund.de/ru/startovaja-stranica",
+          "detected_links": [
+            "https://www.linkedin.com/company/bundesgesundheitsministerium"
+          ]
+        },
+        {
+          "page_url": "https://www.mlv.nrw.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/ministerium-für-landwirtschaft-und-verbraucherschutz-des-landes-nordrhein-westfalen/?originalSubdomain=de"
+          ]
+        },
+        {
+          "page_url": "https://www.mlv.nrw.de/datenschutzhinweise/",
+          "detected_links": [
+            "https://www.linkedin.com/company/ministerium-für-landwirtschaft-und-verbraucherschutz-des-landes-nordrhein-westfalen/?originalSubdomain=de"
+          ]
+        },
+        {
+          "page_url": "https://www.mlv.nrw.de/newsletter-anmeldung/",
+          "detected_links": [
+            "https://www.linkedin.com/company/ministerium-für-landwirtschaft-und-verbraucherschutz-des-landes-nordrhein-westfalen/?originalSubdomain=de"
+          ]
+        },
+        {
+          "page_url": "https://www.mw.niedersachsen.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/nieders-chsisches-ministerium-f-r-wirtschaft-bauen-und-verkehr?originalSubdomain=de"
+          ]
+        },
+        {
+          "page_url": "https://www.mwk.niedersachsen.de/",
+          "detected_links": [
+            "https://www.linkedin.com/in/falko-mohrs/?originalSubdomain=de"
+          ]
+        },
+        {
+          "page_url": "https://www.mwk.niedersachsen.de/wissenschaftspreis/wissenschaftspreis-niedersachsen-2025-242668.html",
+          "detected_links": [
+            "https://www.linkedin.com/company/niedersachsen-mwk/"
+          ]
+        },
+        {
+          "page_url": "https://www.nkcs.bund.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/nkcs-ncc-de/"
+          ]
+        },
+        {
+          "page_url": "https://www.nkcs.bund.de/de/news/eroeffnung-der-call-proposals-der-eu-foerderprogramme-digital-europe-und-horizont-europa",
+          "detected_links": [
+            "https://www.linkedin.com/company/nkcs-ncc-de/"
+          ]
+        },
+        {
+          "page_url": "https://www.nkcs.bund.de/de/ueber-uns/das-nkcs",
+          "detected_links": [
+            "https://www.linkedin.com/company/nkcs-ncc-de/"
+          ]
+        },
+        {
+          "page_url": "https://www.nlbl.niedersachsen.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/68870393/admin/dashboard/"
+          ]
+        },
+        {
+          "page_url": "https://www.normenkontrollrat.bund.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/nationaler-normenkontrollrat-nkr/"
+          ]
+        },
+        {
+          "page_url": "https://www.normenkontrollrat.bund.de/Webs/NKR/DE/der-nkr/aufgabe/aufgabe.html",
+          "detected_links": [
+            "https://www.linkedin.com/company/nationaler-normenkontrollrat-nkr/"
+          ]
+        },
+        {
+          "page_url": "https://www.orh.bayern.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/bayerischer-oberster-rechnungshof/"
+          ]
+        },
+        {
+          "page_url": "https://www.orh.bayern.de/meta/datenschutz/index.html",
+          "detected_links": [
+            "https://www.linkedin.com/company/bayerischer-oberster-rechnungshof/"
+          ]
+        },
+        {
+          "page_url": "https://www.pei.de/",
+          "detected_links": [
+            "https://www.linkedin.com/sharing/share-offsite/?url=https://www.pei.de/DE/home/home-node.html"
+          ]
+        },
+        {
+          "page_url": "https://www.pei.de/DE/newsroom/hp-meldungen/2025/250707-ema-leitlinie-allergene-allergiediagnostik-therapie.html",
+          "detected_links": [
+            "https://www.linkedin.com/sharing/share-offsite/?url=https://www.pei.de/DE/newsroom/hp-meldungen/2025/250707-ema-leitlinie-allergene-allergiediagnostik-therapie.html?nn=170852"
+          ]
+        },
+        {
+          "page_url": "https://www.pei.de/DE/service-navi/datenschutz/datenschutz-node.html",
+          "detected_links": [
+            "https://www.linkedin.com/legal/privacy-policy",
+            "https://www.linkedin.com/sharing/share-offsite/?url=https://www.pei.de/DE/service-navi/datenschutz/datenschutz-node.html"
+          ]
+        },
+        {
+          "page_url": "https://www.pluspunkt.dguv.de/besser-im-team/",
+          "detected_links": [
+            "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fpluspunkt.dguv.de%2Fpraevention%2Fbesser-im-team%2F"
+          ]
+        },
+        {
+          "page_url": "https://www.pluspunkt.dguv.de/fuer-die-krise-geruestet/",
+          "detected_links": [
+            "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fpluspunkt.dguv.de%2Fpraevention%2Ffuer-die-krise-geruestet%2F"
+          ]
+        },
+        {
+          "page_url": "https://www.ptb.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/379368/"
+          ]
+        },
+        {
+          "page_url": "https://www.ptb.de/cms/metrologische-dienstleistungen/dienstleistungskatalog.html",
+          "detected_links": [
+            "https://www.linkedin.com/company/379368/"
+          ]
+        },
+        {
+          "page_url": "https://www.ptb.de/cms/presseaktuelles/journalisten/nachrichten-presseinformationen/presseinfo.html?tx_news_pi1%5Bnews%5D=14813&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bday%5D=1&tx_news_pi1%5Bmonth%5D=7&tx_news_pi1%5Byear%5D=2025&cHash=52fba5da296f19eec8e063d1eecda23f",
+          "detected_links": [
+            "https://www.linkedin.com/company/379368/"
+          ]
+        },
+        {
+          "page_url": "https://www.region-gestalten.bund.de/",
+          "detected_links": [
+            "https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fwww.region-gestalten.bund.de%2FRegion%2FDE%2FHome%2Fhome_node.html"
+          ]
+        },
+        {
+          "page_url": "https://www.region-gestalten.bund.de/Region/DE/einblicke/2412/Oberallg%C3%A4u_Planspiele.html;jsessionid=3112946A0095CDF795894B086FE7080D.live21322?nn=3591504",
+          "detected_links": [
+            "https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fwww.region-gestalten.bund.de%2FRegion%2FDE%2Feinblicke%2F2412%2FOberallg%25C3%25A4u_Planspiele.html"
+          ]
+        },
+        {
+          "page_url": "https://www.region-gestalten.bund.de/Region/DE/service/Gebaerdensprache/gebaerdensprache_node.html;jsessionid=2959E560962B7F3214007A7895137422.live11314",
+          "detected_links": [
+            "https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fwww.region-gestalten.bund.de%2FRegion%2FDE%2Fservice%2FGebaerdensprache%2Fgebaerdensprache_node.html"
+          ]
+        },
+        {
+          "page_url": "https://www.rki.de/",
+          "detected_links": [
+            "https://www.linkedin.com/sharing/share-offsite/?url={url}",
+            "https://www.linkedin.com/company/robertkochinstitut"
+          ]
+        },
+        {
+          "page_url": "https://www.rki.de/DE/Themen/Infektionskrankheiten/Infektionskrankheiten-A-Z/Z/Zeckenuebertragene-Erkrankungen/ZEMEKI.html",
+          "detected_links": [
+            "https://www.linkedin.com/sharing/share-offsite/?url={url}",
+            "https://www.linkedin.com/company/robertkochinstitut"
+          ]
+        },
+        {
+          "page_url": "https://www.rlp.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/staatskanzlei-rheinland-pfalz"
+          ]
+        },
+        {
+          "page_url": "https://www.rlp.de/ministerpraesident",
+          "detected_links": [
+            "https://www.linkedin.com/company/staatskanzlei-rheinland-pfalz"
+          ]
+        },
+        {
+          "page_url": "https://www.rlp.de/service/pressemitteilungen/detail/ministerpraesident-alexander-schweitzer-eroeffnet-mythoshalle-auf-der-loreley-wahrzeichen-des-mittelrheintals-erstrahlt-im-neuen-glanz",
+          "detected_links": [
+            "https://www.linkedin.com/company/staatskanzlei-rheinland-pfalz"
+          ]
+        },
+        {
+          "page_url": "https://www.sab.sachsen.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/sab-foerderbank"
+          ]
+        },
+        {
+          "page_url": "https://www.sab.sachsen.de/web/guest/news",
+          "detected_links": [
+            "https://www.linkedin.com/company/sab-foerderbank"
+          ]
+        },
+        {
+          "page_url": "https://www.schleswig-holstein.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/schleswig-holstein-der-echte-norden/",
+            "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.schleswig-holstein.de%2FDE%2Flandesportal"
+          ]
+        },
+        {
+          "page_url": "https://www.schleswig-holstein.de/DE/landesregierung/ministerien-behoerden/I/_startseite/Artikel2025/III/250715_mp_pk_einigungen_klv",
+          "detected_links": [
+            "https://www.linkedin.com/company/schleswig-holstein-der-echte-norden/",
+            "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.schleswig-holstein.de%2FDE%2Flandesregierung%2Fministerien-behoerden%2FI%2F_startseite%2FArtikel2025%2FIII%2F250715_mp_pk_einigungen_klv"
+          ]
+        },
+        {
+          "page_url": "https://www.schleswig-holstein.de/DE/landesregierung/ministerien-behoerden/I/_startseite/Artikel2025/III/250716_emmi_verleihung",
+          "detected_links": [
+            "https://www.linkedin.com/company/schleswig-holstein-der-echte-norden/",
+            "https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.schleswig-holstein.de%2FDE%2Flandesregierung%2Fministerien-behoerden%2FI%2F_startseite%2FArtikel2025%2FIII%2F250716_emmi_verleihung"
+          ]
+        },
+        {
+          "page_url": "https://www.sib.sachsen.de/stellenangebote-ausbildung-3973.html",
+          "detected_links": [
+            "https://www.linkedin.com/company/staatsbetrieb-s%C3%A4chsisches-immobilien-und-baumanagement-sib/?viewAsMember=true"
+          ]
+        },
+        {
+          "page_url": "https://www.sid.sachsen.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/staatsbetrieb-s%C3%A4chsische-informatik-dienste/mycompany/?viewAsMember=true"
+          ]
+        },
+        {
+          "page_url": "https://www.smil.sachsen.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/smrsachsen"
+          ]
+        },
+        {
+          "page_url": "https://www.smwa.sachsen.de/blog/2025/06/13/akzeleratoren-gesucht-zweiter-projektaufruf-im-akzeleratoren-programm-laeuft-bis-28-juli/",
+          "detected_links": [
+            "https://www.linkedin.com/company/smwa/"
+          ]
+        },
+        {
+          "page_url": "https://www.soziales.bremen.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/103045825/"
+          ]
+        },
+        {
+          "page_url": "https://www.stmas.bayern.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/bayerischessozialministerium/"
+          ]
+        },
+        {
+          "page_url": "https://www.stmas.bayern.de/bayerngemeinsamstark/",
+          "detected_links": [
+            "https://www.linkedin.com/company/bayerischessozialministerium/"
+          ]
+        },
+        {
+          "page_url": "https://www.stmas.bayern.de/newsletter/index.php",
+          "detected_links": [
+            "https://www.linkedin.com/company/bayerischessozialministerium/"
+          ]
+        },
+        {
+          "page_url": "https://www.stmb.bayern.de/",
+          "detected_links": [
+            "http://www.linkedin.com/company/wirbauenbayern",
+            "https://www.linkedin.com/company/wirbauenbayern"
+          ]
+        },
+        {
+          "page_url": "https://www.stmb.bayern.de/hil/datenschutz/index.php",
+          "detected_links": [
+            "https://www.linkedin.com/company/wirbauenbayern"
+          ]
+        },
+        {
+          "page_url": "https://www.stmb.bayern.de/med/aktuell/archiv/2025/250102bmk_vmk/",
+          "detected_links": [
+            "https://www.linkedin.com/company/wirbauenbayern"
+          ]
+        },
+        {
+          "page_url": "https://www.stmuv.bayern.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/6814447/admin/",
+            "https://www.linkedin.com/company/stmuv/"
+          ]
+        },
+        {
+          "page_url": "https://www.stmuv.bayern.de/aktuell/presse/pressemitteilung.htm?PMNr=78/25",
+          "detected_links": [
+            "https://www.linkedin.com/company/6814447/admin/",
+            "https://www.linkedin.com/company/stmuv/"
+          ]
+        },
+        {
+          "page_url": "https://www.stmwi.bayern.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/wirtschaftsministerium-bayern"
+          ]
+        },
+        {
+          "page_url": "https://www.stmwi.bayern.de/veranstaltungen/55986/",
+          "detected_links": [
+            "https://www.linkedin.com/company/wirtschaftsministerium-bayern"
+          ]
+        },
+        {
+          "page_url": "https://www.stmwi.bayern.de/veranstaltungen/56136/",
+          "detected_links": [
+            "https://www.linkedin.com/company/wirtschaftsministerium-bayern"
+          ]
+        },
+        {
+          "page_url": "https://www.stmwk.bayern.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/stmwk-bayern"
+          ]
+        },
+        {
+          "page_url": "https://www.stmwk.bayern.de/allgemein/meldung/7245/staffelstabuebergabe-am-deutschen-museum-michael-decker-folgt-als-neuer-generaldirektor-auf-wolfgang-m-heckl.html",
+          "detected_links": [
+            "https://www.linkedin.com/company/stmwk-bayern"
+          ]
+        },
+        {
+          "page_url": "https://www.strassenbau.niedersachsen.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/nlstbv/?viewAsMember=true"
+          ]
+        },
+        {
+          "page_url": "https://www.stuttgart.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/landeshauptstadt-stuttgart"
+          ]
+        },
+        {
+          "page_url": "https://www.stuttgart.de/buergerbueros/",
+          "detected_links": [
+            "https://www.linkedin.com/company/landeshauptstadt-stuttgart"
+          ]
+        },
+        {
+          "page_url": "https://www.stuttgart.de/service/dienstleistungen/index.php",
+          "detected_links": [
+            "https://www.linkedin.com/company/landeshauptstadt-stuttgart"
+          ]
+        },
+        {
+          "page_url": "https://www.tab-beim-bundestag.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/tab-beim-bundestag"
+          ]
+        },
+        {
+          "page_url": "https://www.tab-beim-bundestag.de/ueber-uns.php",
+          "detected_links": [
+            "https://www.linkedin.com/in/arnold-sauter-126284336/",
+            "https://www.linkedin.com/in/bstegmann/",
+            "https://www.linkedin.com/in/steffen-albrecht-05b33932/",
+            "https://www.linkedin.com/in/christoph-kehl-b29a25276/",
+            "https://www.linkedin.com/in/johannamehler/",
+            "https://www.linkedin.com/in/christine-milchram/",
+            "https://www.linkedin.com/in/pauline-riousset-10841517/",
+            "https://www.linkedin.com/in/michaela-evers-wölk-b9b06520/",
+            "https://www.linkedin.com/in/roland-nolte-22a14612b/",
+            "https://www.linkedin.com/in/tobias-hungerland-geb-jetzke-386961181/",
+            "https://www.linkedin.com/in/simone-ehrenberg-silies-789a09209/",
+            "https://www.linkedin.com/in/marlenedesaussure/",
+            "https://www.linkedin.com/company/tab-beim-bundestag"
+          ]
+        },
+        {
+          "page_url": "https://www.tagespflege.bayern.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/bayerischessozialministerium/"
+          ]
+        },
+        {
+          "page_url": "https://www.tagespflege.bayern.de/datenschutz/",
+          "detected_links": [
+            "https://www.linkedin.com/company/bayerischessozialministerium/"
+          ]
+        },
+        {
+          "page_url": "https://www.tournatur.bayern.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/stmuv/"
+          ]
+        },
+        {
+          "page_url": "https://www.tournatur.bayern.de/index.html",
+          "detected_links": [
+            "https://www.linkedin.com/company/stmuv/"
+          ]
+        },
+        {
+          "page_url": "https://www.transparenzportal.bund.de/",
+          "detected_links": [
+            "https://www.linkedin.com/company/bmz-bund/"
+          ]
+        },
+        {
+          "page_url": "https://www.transparenzportal.bund.de/start",
+          "detected_links": [
+            "https://www.linkedin.com/company/bmz-bund/"
           ]
         }
       ]

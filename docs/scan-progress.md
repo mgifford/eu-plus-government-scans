@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-04-07 22:20 UTC_
+_Generated: 2026-04-08 00:09 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -10,9 +10,9 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage |
 |-----------|--------------|-----------|----------|
-| **Combined Reachability** | **77,242 confirmed reachable** | 82,714 | **██████████████████░░ 93.4%** |
+| **Combined Reachability** | **77,253 confirmed reachable** | 82,714 | **██████████████████░░ 93.4%** |
 | URL Validation | 13,771 validated (11,960 valid) | 82,714 | ███░░░░░░░░░░░░░░░░░ 16.6% |
-| Social Media | 82,714 scanned (77,242 reachable) | 82,714 | ████████████████████ 100.0% |
+| Social Media | 82,714 scanned (77,253 reachable) | 82,714 | ████████████████████ 100.0% |
 | Technology | 3,912 scanned | 82,714 | ░░░░░░░░░░░░░░░░░░░░ 4.7% |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) |
 | Accessibility Statements | 72,735 scanned | 82,714 | █████████████████░░░ 87.9% |
@@ -55,7 +55,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | ESTONIA | 396 | 396 | 389 | 180 | 22 | 25 | 298 | 67 | 2 | 0 | 27 | Mar 2026 – Apr 2026 |
 | FINLAND | 180 | 180 | 172 | 64 | 2 | 4 | 132 | 28 | 13 | 2 | 2 | Mar 2026 – Apr 2026 |
 | FRANCE | 10,007 | 10,007 | 9,457 | 2,835 | 213 | 546 | 6,963 | 1,821 | 636 | 126 | 505 | Mar 2026 – Apr 2026 |
-| GERMANY | 6,555 | 6,555 | 6,472 | 1,452 | 301 | 364 | 4,894 | 1,173 | 174 | 124 | 449 | Mar 2026 – Apr 2026 |
+| GERMANY | 6,555 | 6,555 | 6,483 | 1,602 | 301 | 419 | 4,902 | 1,177 | 174 | 124 | 449 | Mar 2026 – Apr 2026 |
 | GREECE | 1,748 | 1,748 | 1,628 | 447 | 41 | 100 | 1,325 | 236 | 60 | 0 | 103 | Mar 2026 – Apr 2026 |
 | HUNGARY | 390 | 390 | 366 | 124 | 20 | 23 | 317 | 29 | 0 | 0 | 25 | Mar 2026 – Apr 2026 |
 | ICELAND | 139 | 139 | 135 | 48 | 8 | 12 | 116 | 8 | 5 | 0 | 14 | Mar 2026 – Apr 2026 |
