@@ -310,7 +310,7 @@ code and documentation in this repository. Known uses include:
 |---|---|
 | GitHub Copilot (OpenAI Codex / GPT-4 family) | Code completion, refactoring suggestions, and inline documentation while writing Python source files |
 | Claude (Anthropic) | PR reviews, writing and editing documentation (README, AGENTS.md, docs/), and code-generation tasks via the GitHub Copilot Coding Agent |
-| ChatGPT / GPT-4 / GPT-5 (OpenAI) | Answering design questions, reviewing draft implementations, helping implement docs/report-generation pages for scan outputs such as technology and third-party JavaScript reporting, and adding CI/browser automation such as Playwright + axe accessibility checks for the generated site |
+| ChatGPT / GPT-4 / GPT-5 (OpenAI) | Answering design questions, reviewing draft implementations, helping implement docs/report-generation pages for scan outputs such as technology and third-party JavaScript reporting, adding table drilldowns and CSV evidence downloads for published scan counts, and debugging CI/browser automation such as Playwright + axe accessibility checks for the generated site |
 
 > **Note for contributors and AI agents:** if you use an AI tool while contributing to this
 > repository — whether for writing code, tests, or documentation — please add or update the

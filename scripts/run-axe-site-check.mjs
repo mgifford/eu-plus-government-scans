@@ -65,7 +65,8 @@ async function run() {
   }
 
   const browser = await chromium.launch();
-  const page = await browser.newPage();
+  const context = await browser.newContext();
+  const page = await context.newPage();
   const failures = [];
 
   try {
@@ -86,6 +87,7 @@ async function run() {
       }
     }
   } finally {
+    await context.close();
     await browser.close();
   }
 
