@@ -20,6 +20,8 @@ _Stats as of 2026-04-08 12:16 UTC — last scan: 2026-04-07_
 
 Each country entry in the JSON file includes page-level evidence for pages with and without accessibility statements, plus a per-domain summary you can share to validate the published counts.
 
+> Hover or focus any non-zero count in the country table to preview the matching pages. If there are 20 or fewer URLs, the preview shows all of them; otherwise it shows a short sample and lets you download the full CSV from [accessibility-data.json](accessibility-data.json).
+
 ---
 
 ## Accessibility Statement Scan by Country

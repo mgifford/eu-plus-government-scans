@@ -203,7 +203,7 @@ def test_query_country_detail_merges_duplicate_page_rows(populated_db: Path) -> 
 
 
 def test_build_stats_block_mentions_country_evidence(populated_db: Path) -> None:
-    """Stats block should explain that JSON now includes country evidence."""
+    """Stats block should explain the JSON evidence and table drilldowns."""
     conn = sqlite3.connect(populated_db)
     conn.row_factory = sqlite3.Row
     try:
@@ -217,6 +217,8 @@ def test_build_stats_block_mentions_country_evidence(populated_db: Path) -> None
     assert "page-level evidence" in block
     assert "per-domain summary" in block
     assert "accessibility-data.json" in block
+    assert "Hover or focus any non-zero count" in block
+    assert "download the full CSV" in block
 
 
 def test_generate_accessibility_report_writes_country_detail(
@@ -238,3 +240,4 @@ def test_generate_accessibility_report_writes_country_detail(
 
     content = page_path.read_text(encoding="utf-8")
     assert "page-level evidence" in content
+    assert "Hover or focus any non-zero count" in content

@@ -1,8 +1,10 @@
 (function () {
   "use strict";
 
-  var DATA_FILE = "social-media-data.json";
-  var PREVIEW_LIMIT = 5;
+  var DEFAULT_PREVIEW_LIMIT = 5;
+  var FULL_PREVIEW_THRESHOLD = 20;
+  var panelSequence = 0;
+  var dataPromises = {};
   var PLATFORM_KEYS = {
     Twitter: "twitter",
     X: "x",
@@ -11,22 +13,206 @@
     Facebook: "facebook",
     LinkedIn: "linkedin",
   };
-  var dataPromise = null;
-  var panelSequence = 0;
+  var ACCESSIBILITY_LABELS = {
+    Scanned: "scanned pages",
+    Reachable: "reachable pages",
+    "Has Statement": "pages with an accessibility statement",
+    "In Footer": "pages with a footer accessibility statement link",
+  };
+  var TABLE_CONFIGS = [
+    {
+      id: "social",
+      dataFile: "social-media-data.json",
+      matchesTable: function (headers) {
+        if (headers.indexOf("Country") === -1 || headers.indexOf("Scan Period") === -1) {
+          return false;
+        }
+        return Object.keys(PLATFORM_KEYS).some(function (label) {
+          return headers.indexOf(label) !== -1;
+        });
+      },
+      getDataset: function (data) {
+        return data && data.platform_drilldowns;
+      },
+      getColumns: function (headers) {
+        var columns = [];
+        headers.forEach(function (label, index) {
+          if (PLATFORM_KEYS[label]) {
+            columns.push({ index: index, label: label, key: PLATFORM_KEYS[label] });
+          }
+        });
+        return columns;
+      },
+      getRecords: function (dataset, country, column) {
+        return (dataset[country] && dataset[country][column.key]) || [];
+      },
+      buildContext: function (country, column, count, records) {
+        return {
+          availableCount: records.length,
+          label: column.label,
+          panelLabel: column.label + " pages for " + country,
+          title: column.label + ": " + count.toLocaleString() + " pages in " + country,
+          description:
+            records.length.toLocaleString() +
+            " scanned pages in " +
+            country +
+            " had at least one " +
+            column.label +
+            " link.",
+          items: records.map(function (record) {
+            return {
+              href: record.page_url,
+              label: record.page_url,
+              meta: record.detected_links && record.detected_links.length
+                ? "Detected: " + record.detected_links[0]
+                : "",
+            };
+          }),
+          csvHeaders: ["country", "metric", "page_url", "detected_links"],
+          csvRows: records.map(function (record) {
+            return [
+              country,
+              column.label,
+              record.page_url,
+              (record.detected_links || []).join(" | "),
+            ];
+          }),
+          slug: country + "-" + column.label,
+          titleAttribute: "Preview " + column.label + " pages for " + country,
+        };
+      },
+    },
+    {
+      id: "accessibility",
+      dataFile: "accessibility-data.json",
+      matchesTable: function (headers) {
+        if (headers.indexOf("Country") === -1 || headers.indexOf("Scan Period") === -1) {
+          return false;
+        }
+        return (
+          headers.indexOf("Has Statement") !== -1 &&
+          headers.indexOf("In Footer") !== -1 &&
+          headers.indexOf("Reachable") !== -1
+        );
+      },
+      getDataset: function (data) {
+        return data && data.country_detail;
+      },
+      getColumns: function (headers) {
+        var columns = [];
+        Object.keys(ACCESSIBILITY_LABELS).forEach(function (label) {
+          var index = headers.indexOf(label);
+          if (index !== -1) {
+            columns.push({ index: index, label: label });
+          }
+        });
+        return columns;
+      },
+      getRecords: function (dataset, country, column) {
+        var countryDetail = dataset[country];
+        if (!countryDetail) {
+          return [];
+        }
+
+        if (column.label === "Scanned") {
+          return [].concat(
+            countryDetail.pages_with_statement || [],
+            countryDetail.pages_without_statement || [],
+            countryDetail.unreachable_pages || []
+          );
+        }
+        if (column.label === "Reachable") {
+          return [].concat(
+            countryDetail.pages_with_statement || [],
+            countryDetail.pages_without_statement || []
+          );
+        }
+        if (column.label === "Has Statement") {
+          return countryDetail.pages_with_statement || [];
+        }
+        if (column.label === "In Footer") {
+          return (countryDetail.pages_with_statement || []).filter(function (record) {
+            return record.found_in_footer;
+          });
+        }
+        return [];
+      },
+      buildContext: function (country, column, count, records) {
+        return {
+          availableCount: records.length,
+          label: column.label,
+          panelLabel: ACCESSIBILITY_LABELS[column.label] + " for " + country,
+          title:
+            column.label + ": " + count.toLocaleString() + " " + ACCESSIBILITY_LABELS[column.label] + " in " + country,
+          description: buildAccessibilityDescription(country, column.label, records.length),
+          items: records.map(function (record) {
+            return {
+              href: record.url,
+              label: record.url,
+              meta: buildAccessibilityMeta(record),
+            };
+          }),
+          csvHeaders: [
+            "country",
+            "metric",
+            "page_url",
+            "domain",
+            "is_reachable",
+            "has_statement",
+            "found_in_footer",
+            "statement_links",
+            "matched_terms",
+            "error_message",
+            "last_scanned",
+          ],
+          csvRows: records.map(function (record) {
+            return [
+              country,
+              column.label,
+              record.url,
+              record.domain || "",
+              record.is_reachable ? "true" : "false",
+              record.has_statement ? "true" : "false",
+              record.found_in_footer ? "true" : "false",
+              (record.statement_links || []).join(" | "),
+              (record.matched_terms || []).join(" | "),
+              record.error_message || "",
+              record.last_scanned || "",
+            ];
+          }),
+          slug: country + "-" + column.label + "-accessibility",
+          titleAttribute: "Preview " + column.label + " evidence for " + country,
+        };
+      },
+    },
+  ];
 
   function init() {
-    var tables = findSocialTables();
-    if (!tables.length) {
+    var tableEntries = findDrilldownTables();
+    if (!tableEntries.length) {
       return;
     }
 
-    tables.forEach(makeSortable);
-    loadDrilldownData().then(function (data) {
-      if (!data || !data.platform_drilldowns) {
+    tableEntries.forEach(function (entry) {
+      makeSortable(entry.table);
+    });
+
+    TABLE_CONFIGS.forEach(function (config) {
+      var matchingEntries = tableEntries.filter(function (entry) {
+        return entry.config.id === config.id;
+      });
+      if (!matchingEntries.length) {
         return;
       }
-      tables.forEach(function (table) {
-        enhanceTable(table, data.platform_drilldowns);
+
+      loadDrilldownData(config.dataFile).then(function (data) {
+        var dataset = config.getDataset(data);
+        if (!dataset) {
+          return;
+        }
+        matchingEntries.forEach(function (entry) {
+          enhanceTable(entry.table, config, dataset);
+        });
       });
     });
 
@@ -34,9 +220,9 @@
     document.addEventListener("keydown", handleDocumentKeydown);
   }
 
-  function loadDrilldownData() {
-    if (!dataPromise) {
-      dataPromise = fetch(new URL(DATA_FILE, window.location.href).href, {
+  function loadDrilldownData(dataFile) {
+    if (!dataPromises[dataFile]) {
+      dataPromises[dataFile] = fetch(new URL(dataFile, window.location.href).href, {
         headers: { Accept: "application/json" },
       })
         .then(function (response) {
@@ -49,19 +235,22 @@
           return null;
         });
     }
-    return dataPromise;
+    return dataPromises[dataFile];
   }
 
-  function findSocialTables() {
-    return Array.from(document.querySelectorAll("table")).filter(function (table) {
-      var headers = getHeaderLabels(table);
-      if (headers.indexOf("Country") === -1 || headers.indexOf("Scan Period") === -1) {
-        return false;
-      }
-      return Object.keys(PLATFORM_KEYS).some(function (label) {
-        return headers.indexOf(label) !== -1;
-      });
-    });
+  function findDrilldownTables() {
+    return Array.from(document.querySelectorAll("table"))
+      .map(function (table) {
+        var headers = getHeaderLabels(table);
+        var config = TABLE_CONFIGS.find(function (candidate) {
+          return candidate.matchesTable(headers);
+        });
+        if (!config) {
+          return null;
+        }
+        return { table: table, config: config };
+      })
+      .filter(Boolean);
   }
 
   function getHeaderLabels(table) {
@@ -166,20 +355,15 @@
     return isNaN(numberValue) ? text.toLowerCase() : numberValue;
   }
 
-  function enhanceTable(table, drilldowns) {
-    if (table.dataset.drilldownReady === "true") {
+  function enhanceTable(table, config, dataset) {
+    if (table.dataset.drilldownReadyConfig === config.id) {
       return;
     }
-    table.dataset.drilldownReady = "true";
+    table.dataset.drilldownReadyConfig = config.id;
 
     var headers = getHeaderLabels(table);
     var countryColumn = headers.indexOf("Country");
-    var platformColumns = [];
-    headers.forEach(function (label, index) {
-      if (PLATFORM_KEYS[label]) {
-        platformColumns.push({ index: index, label: label, key: PLATFORM_KEYS[label] });
-      }
-    });
+    var columns = config.getColumns(headers);
 
     table.querySelectorAll("tbody tr").forEach(function (row) {
       var cells = row.querySelectorAll("td");
@@ -192,7 +376,7 @@
         return;
       }
 
-      platformColumns.forEach(function (column) {
+      columns.forEach(function (column) {
         var cell = cells[column.index];
         if (!cell) {
           return;
@@ -204,24 +388,20 @@
           return;
         }
 
-        var platformRecords = (
-          drilldowns[country] &&
-          drilldowns[country][column.key]
-        ) || [];
-        if (!platformRecords.length) {
+        var records = config.getRecords(dataset, country, column);
+        if (!records.length) {
           return;
         }
 
+        var context = config.buildContext(country, column, count, records);
         cell.dataset.sortVal = String(count);
         cell.textContent = "";
-        cell.appendChild(
-          buildDrilldownControl(country, column.label, count, platformRecords)
-        );
+        cell.appendChild(buildDrilldownControl(context, count));
       });
     });
   }
 
-  function buildDrilldownControl(country, platformLabel, count, records) {
+  function buildDrilldownControl(context, count) {
     var wrapper = document.createElement("span");
     wrapper.className = "table-drilldown";
 
@@ -231,22 +411,22 @@
     trigger.textContent = count.toLocaleString();
     trigger.setAttribute("aria-expanded", "false");
     trigger.setAttribute("aria-haspopup", "dialog");
-    trigger.setAttribute("title", "Preview " + platformLabel + " pages for " + country);
+    trigger.setAttribute("title", context.titleAttribute);
 
     var panel = document.createElement("div");
     panel.className = "table-drilldown__panel";
     panel.hidden = true;
     panel.id = "table-drilldown-panel-" + (++panelSequence);
     panel.setAttribute("role", "dialog");
-    panel.setAttribute("aria-label", platformLabel + " pages for " + country);
+    panel.setAttribute("aria-label", context.panelLabel);
     trigger.setAttribute("aria-controls", panel.id);
 
-    panel.appendChild(buildPanelTitle(country, platformLabel, count));
-    panel.appendChild(buildPanelDescription(country, platformLabel, count, records.length));
-    panel.appendChild(buildPreviewList(records));
-    panel.appendChild(buildPreviewSummary(count, records.length));
+    panel.appendChild(buildPanelTitle(context.title));
+    panel.appendChild(buildPanelDescription(context.description, count, context.availableCount));
+    panel.appendChild(buildPreviewList(context.items, context.availableCount));
+    panel.appendChild(buildPreviewSummary(count, context.availableCount));
     panel.appendChild(buildPanelHint());
-    panel.appendChild(buildDownloadButton(country, platformLabel, records));
+    panel.appendChild(buildDownloadButton(context));
 
     wrapper.appendChild(trigger);
     wrapper.appendChild(panel);
@@ -271,45 +451,44 @@
     return wrapper;
   }
 
-  function buildPanelTitle(country, platformLabel, count) {
+  function buildPanelTitle(titleText) {
     var title = document.createElement("p");
     title.className = "table-drilldown__title";
-    title.textContent = platformLabel + ": " + count.toLocaleString() + " pages in " + country;
+    title.textContent = titleText;
     return title;
   }
 
-  function buildPanelDescription(country, platformLabel, count, availableCount) {
+  function buildPanelDescription(descriptionText, count, availableCount) {
     var text = document.createElement("p");
     text.className = "table-drilldown__description";
-    text.textContent =
-      availableCount.toLocaleString() +
-      " scanned pages in " +
-      country +
-      " had at least one " +
-      platformLabel +
-      " link.";
+    text.textContent = descriptionText;
     if (count !== availableCount) {
       text.textContent += " Preview and CSV use the currently available drilldown records.";
     }
     return text;
   }
 
-  function buildPreviewList(records) {
+  function buildPreviewList(items, availableCount) {
+    var previewLimit = getPreviewLimit(availableCount);
     var list = document.createElement("ul");
     list.className = "table-drilldown__list";
 
-    records.slice(0, PREVIEW_LIMIT).forEach(function (record) {
+    items.slice(0, previewLimit).forEach(function (itemData) {
       var item = document.createElement("li");
-      var link = document.createElement("a");
-      link.href = record.page_url;
-      link.textContent = record.page_url;
-      link.rel = "noopener noreferrer";
-      item.appendChild(link);
+      if (itemData.href) {
+        var link = document.createElement("a");
+        link.href = itemData.href;
+        link.textContent = itemData.label;
+        link.rel = "noopener noreferrer";
+        item.appendChild(link);
+      } else {
+        item.textContent = itemData.label;
+      }
 
-      if (record.detected_links && record.detected_links.length) {
+      if (itemData.meta) {
         var meta = document.createElement("span");
         meta.className = "table-drilldown__meta";
-        meta.textContent = "Detected: " + record.detected_links[0];
+        meta.textContent = itemData.meta;
         item.appendChild(meta);
       }
 
@@ -320,12 +499,13 @@
   }
 
   function buildPreviewSummary(count, availableCount) {
+    var previewLimit = getPreviewLimit(availableCount);
     var summary = document.createElement("p");
     summary.className = "table-drilldown__summary";
-    if (availableCount > PREVIEW_LIMIT) {
+    if (availableCount > previewLimit) {
       summary.textContent =
         "Showing the first " +
-        PREVIEW_LIMIT +
+        previewLimit +
         " of " +
         availableCount.toLocaleString() +
         " matching pages.";
@@ -341,6 +521,13 @@
     return summary;
   }
 
+  function getPreviewLimit(availableCount) {
+    if (availableCount <= FULL_PREVIEW_THRESHOLD) {
+      return availableCount;
+    }
+    return DEFAULT_PREVIEW_LIMIT;
+  }
+
   function buildPanelHint() {
     var hint = document.createElement("p");
     hint.className = "table-drilldown__hint";
@@ -349,15 +536,50 @@
     return hint;
   }
 
-  function buildDownloadButton(country, platformLabel, records) {
+  function buildDownloadButton(context) {
     var button = document.createElement("button");
     button.className = "table-drilldown__download";
     button.type = "button";
     button.textContent = "Download CSV";
     button.addEventListener("click", function () {
-      downloadCsv(country, platformLabel, records);
+      downloadCsv(context);
     });
     return button;
+  }
+
+  function buildAccessibilityDescription(country, label, availableCount) {
+    if (label === "Scanned") {
+      return availableCount.toLocaleString() + " scanned pages in " + country + " have detailed accessibility evidence.";
+    }
+    if (label === "Reachable") {
+      return availableCount.toLocaleString() + " reachable pages in " + country + " are listed here.";
+    }
+    if (label === "Has Statement") {
+      return availableCount.toLocaleString() + " pages in " + country + " include at least one accessibility statement link.";
+    }
+    if (label === "In Footer") {
+      return availableCount.toLocaleString() + " pages in " + country + " expose the statement link from the footer.";
+    }
+    return availableCount.toLocaleString() + " accessibility records are available for " + country + ".";
+  }
+
+  function buildAccessibilityMeta(record) {
+    var parts = [];
+    if (record.domain) {
+      parts.push("Domain: " + record.domain);
+    }
+    if (record.found_in_footer) {
+      parts.push("Found in footer");
+    }
+    if (record.statement_links && record.statement_links.length) {
+      parts.push("Statement: " + record.statement_links[0]);
+    }
+    if (record.error_message) {
+      parts.push("Error: " + record.error_message);
+    } else if (record.matched_terms && record.matched_terms.length) {
+      parts.push("Matched: " + record.matched_terms.slice(0, 2).join(", "));
+    }
+    return parts.join(" | ");
   }
 
   function togglePinned(wrapper) {
@@ -433,23 +655,20 @@
     closeAllPanels(null);
   }
 
-  function downloadCsv(country, platformLabel, records) {
-    var lines = [
-      ["country", "platform", "page_url", "detected_links"].join(","),
-    ];
-    records.forEach(function (record) {
-      lines.push([
-        csvEscape(country),
-        csvEscape(platformLabel),
-        csvEscape(record.page_url),
-        csvEscape((record.detected_links || []).join(" | ")),
-      ].join(","));
+  function downloadCsv(context) {
+    var lines = [context.csvHeaders.join(",")];
+    context.csvRows.forEach(function (row) {
+      lines.push(
+        row.map(function (value) {
+          return csvEscape(value);
+        }).join(",")
+      );
     });
 
     var blob = new Blob([lines.join("\n")], { type: "text/csv;charset=utf-8" });
     var url = URL.createObjectURL(blob);
     var link = document.createElement("a");
-    var slug = (country + "-" + platformLabel)
+    var slug = context.slug
       .toLowerCase()
       .replace(/[^a-z0-9]+/g, "-")
       .replace(/^-+|-+$/g, "");
