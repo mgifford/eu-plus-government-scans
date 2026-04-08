@@ -259,6 +259,7 @@ li + li {
 a,
 a:visited {
   color: var(--color-link);
+  text-decoration-line: underline;
   text-decoration-color: currentColor;
   text-decoration-thickness: 0.08em;
   text-underline-offset: 0.18em;
@@ -289,6 +290,27 @@ blockquote {
   color: var(--color-info-text);
   margin: 1.5rem 0;
   padding: 0.9rem 1rem;
+}
+
+blockquote p,
+blockquote li {
+  color: var(--color-info-text) !important;
+}
+
+.page-content blockquote p,
+.page-content blockquote li,
+.post-content blockquote p,
+.post-content blockquote li,
+.home blockquote p,
+.home blockquote li {
+  color: var(--color-info-text) !important;
+}
+
+blockquote a,
+blockquote a:visited {
+  color: var(--ca-blue-dark);
+  font-weight: 600;
+  text-decoration-line: underline;
 }
 
 code,
@@ -349,19 +371,48 @@ th {
 
 .site-footer a,
 .site-footer a:visited {
-  color: var(--color-link);
+  color: var(--ca-blue-dark);
+  text-decoration-line: underline;
 }
 
 .site-footer .footer-heading,
 .site-footer .contact-list,
-.site-footer p {
+.site-footer p,
+.site-footer .p-name {
   color: var(--color-text-secondary);
+}
+
+.site-footer .p-name {
+  color: var(--color-text) !important;
 }
 
 .site-footer .footer-cta {
   border-top: 1px solid var(--color-border);
   margin-top: 1rem;
   padding-top: 1rem;
+}
+
+.page-content a,
+.page-content a:visited,
+.post-content a,
+.post-content a:visited,
+.home .page-content a,
+.home .page-content a:visited {
+  color: var(--color-link);
+  text-decoration-line: underline;
+}
+
+.page-content a:hover,
+.page-content a:focus-visible,
+.post-content a:hover,
+.post-content a:focus-visible,
+.home .page-content a:hover,
+.home .page-content a:focus-visible,
+.site-footer a:hover,
+.site-footer a:focus-visible,
+blockquote a:hover,
+blockquote a:focus-visible {
+  color: var(--color-link-hover);
 }
 
 .post-content > p:first-of-type,
