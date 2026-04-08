@@ -90,6 +90,7 @@ def generate_progress_report(
     db_path: Path,
     output_path: Path,
     toon_seeds_dir: Path | None = None,
+    data_path: Path | None = None,
 ) -> None:
     """Generate a comprehensive scan-progress report from the database.
 
@@ -108,6 +109,16 @@ def generate_progress_report(
             f.write("# Scan Progress Report\n\n")
             f.write(f"_Generated: {generated_at}_\n\n")
             f.write("No scan data available yet. Run a scan first.\n")
+        if data_path is not None:
+            data_path.parent.mkdir(parents=True, exist_ok=True)
+            data_path.write_text(
+                json.dumps(
+                    {"generated_at": generated_at, "url_validation_drilldowns": {}},
+                    ensure_ascii=True,
+                    indent=2,
+                ) + "\n",
+                encoding="utf-8",
+            )
         print(f"Report generated (empty): {output_path}")
         return
 
@@ -117,7 +128,7 @@ def generate_progress_report(
     seed_counts = _count_toon_seed_urls(toon_seeds_dir) if toon_seeds_dir else {}
 
     try:
-        _write_report(conn, output_path, generated_at, seed_counts)
+        _write_report(conn, output_path, generated_at, seed_counts, data_path)
     finally:
         conn.close()
 
@@ -278,6 +289,77 @@ def _query_url_validation(conn: sqlite3.Connection) -> dict[str, dict]:
         """
     ):
         result[row["country_code"]] = dict(row)
+    return result
+
+
+def _query_url_validation_detail(conn: sqlite3.Connection) -> dict[str, dict[str, list[dict[str, object]]]]:
+    """Return per-country drilldown data for URL validation counts.
+
+    The summary table counts a URL once per country for each bucket where it ever
+    appeared, so ``valid`` and ``invalid`` can overlap across scan runs.  The
+    drilldown data mirrors that behavior while preserving the latest known
+    validation state for each URL so stakeholders can inspect the evidence.
+    """
+    rows = conn.execute(
+        """
+        SELECT
+            country_code,
+            url,
+            status_code,
+            error_message,
+            redirected_to,
+            redirect_chain,
+            is_valid,
+            failure_count,
+            validated_at
+        FROM url_validation_results
+        ORDER BY country_code, url, validated_at DESC
+        """
+    ).fetchall()
+
+    by_country: dict[str, dict[str, dict[str, dict[str, object]]]] = {}
+    for row in rows:
+        country_code = row["country_code"]
+        country = by_country.setdefault(
+            country_code,
+            {"total": {}, "valid": {}, "invalid": {}},
+        )
+        url = row["url"]
+        record = country["total"].get(url)
+        if record is None:
+            record = {
+                "url": url,
+                "latest_status": "valid" if row["is_valid"] else "invalid",
+                "latest_status_code": row["status_code"],
+                "latest_error_message": row["error_message"] or "",
+                "latest_redirected_to": row["redirected_to"] or "",
+                "latest_redirect_chain": row["redirect_chain"] or "",
+                "latest_failure_count": row["failure_count"] or 0,
+                "latest_validated_at": row["validated_at"] or "",
+                "ever_valid": False,
+                "ever_invalid": False,
+                "latest_valid_at": "",
+                "latest_invalid_at": "",
+            }
+            country["total"][url] = record
+
+        if row["is_valid"]:
+            record["ever_valid"] = True
+            if not record["latest_valid_at"]:
+                record["latest_valid_at"] = row["validated_at"] or ""
+            country["valid"].setdefault(url, record)
+        else:
+            record["ever_invalid"] = True
+            if not record["latest_invalid_at"]:
+                record["latest_invalid_at"] = row["validated_at"] or ""
+            country["invalid"].setdefault(url, record)
+
+    result: dict[str, dict[str, list[dict[str, object]]]] = {}
+    for country_code, categories in by_country.items():
+        result[country_code] = {
+            key: sorted(category.values(), key=lambda item: str(item["url"]))
+            for key, category in categories.items()
+        }
     return result
 
 
@@ -526,6 +608,13 @@ def _write_url_validation_table(
             f"{_progress_bar(d['total'], available, 15)} |\n"
         )
     f.write("\n")
+    f.write(
+        "> Hover or focus any non-zero **Total**, **Valid**, or **Invalid** count "
+        "to preview matching URLs. **Valid** and **Invalid** can overlap because "
+        "a URL may have passed in one validation run and failed in another during "
+        "the same scan period; download the CSV for the underlying evidence from "
+        "[scan-progress-data.json](scan-progress-data.json).\n\n"
+    )
 
 
 def _write_social_media_table(
@@ -793,10 +882,12 @@ def _write_report(
     output_path: Path,
     generated_at: str,
     seed_counts: dict[str, int] | None = None,
+    data_path: Path | None = None,
 ) -> None:
     """Query the database and write the Markdown report."""
 
     url_val = _query_url_validation(conn)
+    url_val_detail = _query_url_validation_detail(conn)
     social = _query_social_media(conn)
     tech = _query_technology(conn)
     lighthouse = _query_lighthouse(conn)
@@ -823,6 +914,17 @@ def _write_report(
         _write_accessibility_table(f, accessibility, all_countries)
         _write_pending_sections(f, url_val, social)
         _write_priority_guide(f)
+
+    if data_path is not None:
+        payload = {
+            "generated_at": generated_at,
+            "url_validation_drilldowns": url_val_detail,
+        }
+        data_path.parent.mkdir(parents=True, exist_ok=True)
+        data_path.write_text(
+            json.dumps(payload, ensure_ascii=True, indent=2) + "\n",
+            encoding="utf-8",
+        )
 
     lh_total = sum(d["total"] for d in lighthouse.values())
     a11y_total = sum(d["total"] for d in accessibility.values())
@@ -893,6 +995,12 @@ def main() -> None:
         type=Path,
         default=Path("data/toon-seeds/countries"),
     )
+    parser.add_argument(
+        "--data",
+        help="Output file path for scan-progress drilldown JSON (default: docs/scan-progress-data.json)",
+        type=Path,
+        default=Path("docs/scan-progress-data.json"),
+    )
 
     args = parser.parse_args()
 
@@ -904,7 +1012,7 @@ def main() -> None:
 
     try:
         args.output.parent.mkdir(parents=True, exist_ok=True)
-        generate_progress_report(db_path, args.output, args.seeds_dir)
+        generate_progress_report(db_path, args.output, args.seeds_dir, args.data)
         if args.update_index is not None:
             update_index_progress(args.update_index, db_path, args.seeds_dir)
     except Exception as exc:

@@ -19,6 +19,11 @@
     "Has Statement": "pages with an accessibility statement",
     "In Footer": "pages with a footer accessibility statement link",
   };
+  var VALIDATION_LABELS = {
+    Total: "validated URLs",
+    Valid: "URLs with at least one valid validation result",
+    Invalid: "URLs with at least one invalid validation result",
+  };
   var TABLE_CONFIGS = [
     {
       id: "social",
@@ -79,6 +84,87 @@
           }),
           slug: country + "-" + column.label,
           titleAttribute: "Preview " + column.label + " pages for " + country,
+        };
+      },
+    },
+    {
+      id: "scan-progress-validation",
+      dataFile: "scan-progress-data.json",
+      matchesTable: function (headers) {
+        return (
+          headers.indexOf("Country") !== -1 &&
+          headers.indexOf("Total") !== -1 &&
+          headers.indexOf("Valid") !== -1 &&
+          headers.indexOf("Invalid") !== -1 &&
+          headers.indexOf("Scan Period") !== -1 &&
+          headers.indexOf("Coverage") !== -1
+        );
+      },
+      getDataset: function (data) {
+        return data && data.url_validation_drilldowns;
+      },
+      getColumns: function (headers) {
+        return ["Total", "Valid", "Invalid"]
+          .map(function (label) {
+            var index = headers.indexOf(label);
+            return index === -1 ? null : { index: index, label: label, key: label.toLowerCase() };
+          })
+          .filter(Boolean);
+      },
+      getRecords: function (dataset, country, column) {
+        return (dataset[country] && dataset[country][column.key]) || [];
+      },
+      buildContext: function (country, column, count, records) {
+        return {
+          availableCount: records.length,
+          label: column.label,
+          panelLabel: VALIDATION_LABELS[column.label] + " for " + country,
+          title:
+            column.label + ": " + count.toLocaleString() + " " + VALIDATION_LABELS[column.label] + " in " + country,
+          description: buildValidationDescription(country, column.label, records.length),
+          items: records.map(function (record) {
+            return {
+              href: record.url,
+              label: record.url,
+              meta: buildValidationMeta(record, column.label),
+            };
+          }),
+          csvHeaders: [
+            "country",
+            "metric",
+            "url",
+            "latest_status",
+            "latest_status_code",
+            "latest_error_message",
+            "latest_redirected_to",
+            "latest_redirect_chain",
+            "latest_failure_count",
+            "latest_validated_at",
+            "ever_valid",
+            "ever_invalid",
+            "latest_valid_at",
+            "latest_invalid_at",
+          ],
+          csvRows: records.map(function (record) {
+            return [
+              country,
+              column.label,
+              record.url,
+              record.latest_status || "",
+              record.latest_status_code == null ? "" : String(record.latest_status_code),
+              record.latest_error_message || "",
+              record.latest_redirected_to || "",
+              record.latest_redirect_chain || "",
+              record.latest_failure_count == null ? "" : String(record.latest_failure_count),
+              record.latest_validated_at || "",
+              record.ever_valid ? "true" : "false",
+              record.ever_invalid ? "true" : "false",
+              record.latest_valid_at || "",
+              record.latest_invalid_at || "",
+            ];
+          }),
+          slug: country + "-" + column.label + "-validation",
+          titleAttribute: "Preview " + column.label + " validation URLs for " + country,
         };
       },
     },
@@ -578,6 +664,42 @@
       parts.push("Error: " + record.error_message);
     } else if (record.matched_terms && record.matched_terms.length) {
       parts.push("Matched: " + record.matched_terms.slice(0, 2).join(", "));
+    }
+    return parts.join(" | ");
+  }
+
+  function buildValidationDescription(country, label, availableCount) {
+    if (label === "Total") {
+      return availableCount.toLocaleString() + " validated URLs in " + country + " are available here.";
+    }
+    if (label === "Valid") {
+      return availableCount.toLocaleString() + " URLs in " + country + " returned a valid result at least once during the scan period.";
+    }
+    if (label === "Invalid") {
+      return availableCount.toLocaleString() + " URLs in " + country + " returned an invalid result at least once during the scan period.";
+    }
+    return availableCount.toLocaleString() + " validation URLs are available for " + country + ".";
+  }
+
+  function buildValidationMeta(record, label) {
+    var parts = [];
+    if (label !== "Total") {
+      parts.push(label === "Invalid" ? "Includes invalid result in scan period" : "Includes valid result in scan period");
+    }
+    if (record.latest_status) {
+      parts.push("Latest status: " + record.latest_status);
+    }
+    if (record.latest_status_code != null && record.latest_status_code !== "") {
+      parts.push("HTTP " + record.latest_status_code);
+    }
+    if (record.latest_redirected_to) {
+      parts.push("Redirected to: " + record.latest_redirected_to);
+    }
+    if (record.latest_error_message) {
+      parts.push("Error: " + record.latest_error_message);
+    }
+    if (record.latest_validated_at) {
+      parts.push("Latest check: " + record.latest_validated_at);
     }
     return parts.join(" | ");
   }

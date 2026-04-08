@@ -174,6 +174,32 @@ def test_generate_progress_report_with_data(populated_db: Path, tmp_path: Path):
     assert "GERMANY" in content
 
 
+def test_generate_progress_report_writes_validation_drilldown_data(
+    populated_db: Path, tmp_path: Path
+):
+    """Scan progress generation should export URL-validation drilldown JSON."""
+    output_path = tmp_path / "report.md"
+    data_path = tmp_path / "scan-progress-data.json"
+    generate_progress_report(populated_db, output_path, data_path=data_path)
+
+    payload = json.loads(data_path.read_text(encoding="utf-8"))
+    assert "url_validation_drilldowns" in payload
+    assert payload["url_validation_drilldowns"]["ICELAND"]["total"][0]["url"] == "https://example.is/page1"
+    assert payload["url_validation_drilldowns"]["ICELAND"]["valid"][0]["ever_valid"] is True
+    assert payload["url_validation_drilldowns"]["ICELAND"]["invalid"][0]["ever_invalid"] is True
+
+
+def test_generate_progress_report_writes_empty_drilldown_data_for_missing_db(tmp_path: Path):
+    """Missing DB runs should still write an empty scan-progress JSON file."""
+    db_path = tmp_path / "missing.db"
+    output_path = tmp_path / "report.md"
+    data_path = tmp_path / "scan-progress-data.json"
+    generate_progress_report(db_path, output_path, data_path=data_path)
+
+    payload = json.loads(data_path.read_text(encoding="utf-8"))
+    assert payload["url_validation_drilldowns"] == {}
+
+
 def test_generate_progress_report_url_validation_stats(
     populated_db: Path, tmp_path: Path
 ):
@@ -186,6 +212,8 @@ def test_generate_progress_report_url_validation_stats(
     # The table rows should have numbers present
     assert "ICELAND" in content
     assert "FRANCE" in content
+    assert "Hover or focus any non-zero **Total**, **Valid**, or **Invalid** count" in content
+    assert "scan-progress-data.json" in content
 
 
 def test_generate_progress_report_social_tiers(populated_db: Path, tmp_path: Path):
