@@ -7,7 +7,7 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-04-08 14:06 UTC — last scan: 2026-04-08_
+_Stats as of 2026-04-08 16:47 UTC — last scan: 2026-04-08_
 
 **10** scan batches run
 
@@ -31,6 +31,8 @@ _Stats as of 2026-04-08 14:06 UTC — last scan: 2026-04-08_
 | FINLAND | 180 | 172 | 180 | 2026-04-08 |
 | FRANCE | 2,457 | 2,282 | 10,007 | 2026-04-08 |
 | GERMANY | 3,431 | 3,363 | 6,555 | 2026-04-08 |
+
+> Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and metric from [technology-data.json](technology-data.json).
 
 ---
 
