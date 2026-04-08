@@ -7,9 +7,9 @@
 
   function getStoredTheme() {
     try {
-      var stored = localStorage.getItem(storageKey);
-      if (stored === "light" || stored === "dark") {
-        return stored;
+      var value = localStorage.getItem(storageKey);
+      if (value === "light" || value === "dark") {
+        return value;
       }
     } catch (error) {
       return null;
@@ -17,80 +17,83 @@
     return null;
   }
 
-  function getEffectiveTheme() {
-    var explicitTheme = root.getAttribute("data-theme");
-    if (explicitTheme === "light" || explicitTheme === "dark") {
-      return explicitTheme;
+  function getTheme() {
+    var explicit = root.getAttribute("data-theme");
+    if (explicit === "light" || explicit === "dark") {
+      return explicit;
     }
     return mediaQuery.matches ? "dark" : "light";
   }
 
-  function persistTheme(theme) {
+  function saveTheme(theme) {
     try {
       localStorage.setItem(storageKey, theme);
     } catch (error) {
-      // Ignore storage failures and still apply the theme for this session.
+      // Ignore storage failures and keep the active session usable.
+    }
+  }
+
+  function updateButton(theme) {
+    var button = document.querySelector("[data-theme-toggle]");
+    if (!button) {
+      return;
+    }
+
+    var icon = button.querySelector("[data-theme-toggle-icon]");
+    var text = button.querySelector("[data-theme-toggle-text]");
+    var nextTheme = theme === "dark" ? "light" : "dark";
+    var label = "Switch to " + nextTheme + " mode";
+
+    if (icon) {
+      icon.textContent = theme === "dark" ? "☀" : "☾";
+    }
+
+    button.dataset.theme = theme;
+    button.setAttribute("aria-label", label);
+    button.setAttribute("title", label);
+
+    if (text) {
+      text.textContent = label;
     }
   }
 
   function applyTheme(theme) {
     root.setAttribute("data-theme", theme);
-    persistTheme(theme);
-    updateToggle(theme);
+    saveTheme(theme);
+    updateButton(theme);
   }
 
-  function updateToggle(theme) {
-    var button = document.querySelector("[data-theme-toggle]");
-    if (!button) {
-      return;
-    }
-
-    var nextTheme = theme === "dark" ? "light" : "dark";
-    var actionLabel = "Switch to " + nextTheme + " mode";
-
-    button.setAttribute("aria-pressed", String(theme === "dark"));
-    button.setAttribute("aria-label", actionLabel);
-    button.setAttribute("title", actionLabel);
-    button.dataset.theme = theme;
-
-    var labelNode = button.querySelector("[data-theme-toggle-text]");
-    if (labelNode) {
-      labelNode.textContent = actionLabel;
-    }
+  function toggleTheme() {
+    applyTheme(getTheme() === "dark" ? "light" : "dark");
   }
 
-  function handleToggleClick() {
-    var currentTheme = getEffectiveTheme();
-    applyTheme(currentTheme === "dark" ? "light" : "dark");
-  }
-
-  function handleSystemThemeChange() {
+  function syncWithSystem() {
     if (getStoredTheme()) {
       return;
     }
-    updateToggle(getEffectiveTheme());
+    root.removeAttribute("data-theme");
+    updateButton(getTheme());
   }
 
-  function initializeToggle() {
+  function init() {
     var button = document.querySelector("[data-theme-toggle]");
     if (!button) {
       return;
     }
 
-    updateToggle(getEffectiveTheme());
-    button.addEventListener("click", handleToggleClick);
+    updateButton(getTheme());
+    button.addEventListener("click", toggleTheme);
 
     if (typeof mediaQuery.addEventListener === "function") {
-      mediaQuery.addEventListener("change", handleSystemThemeChange);
+      mediaQuery.addEventListener("change", syncWithSystem);
     } else if (typeof mediaQuery.addListener === "function") {
-      mediaQuery.addListener(handleSystemThemeChange);
+      mediaQuery.addListener(syncWithSystem);
     }
   }
 
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", initializeToggle);
-    return;
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
   }
-
-  initializeToggle();
 })();
