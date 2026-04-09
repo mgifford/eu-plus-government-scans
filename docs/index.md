@@ -11,17 +11,17 @@ power them, including which third-party JavaScript services they rely on.
 
 <!-- SCAN_PROGRESS_START -->
 
-_Progress as of 2026-04-09 06:40 UTC_
+_Progress as of 2026-04-09 08:30 UTC_
 
 | Scan Type | Pages Scanned | Coverage |
 |-----------|--------------|----------|
-| **Combined Reachability** | **77,396 confirmed reachable** | **██████████████████░░ 93.6%** |
-| Social Media | 82,714 scanned (77,396 reachable) | ████████████████████ 100.0% |
+| **Combined Reachability** | **77,440 confirmed reachable** | **██████████████████░░ 93.6%** |
+| Social Media | 82,714 scanned (77,440 reachable) | ████████████████████ 100.0% |
 | URL Validation | 13,771 validated (11,960 valid) | ███░░░░░░░░░░░░░░░░░ 16.6% |
 | Technology | 13,463 scanned | ███░░░░░░░░░░░░░░░░░ 16.3% |
 | Accessibility Statements | 72,735 scanned | █████████████████░░░ 87.9% |
 
-**31 countries** with scan data · **77,396** of **82,714** available pages confirmed reachable. See the [Scan Progress Report](scan-progress.md) for full details.
+**31 countries** with scan data · **77,440** of **82,714** available pages confirmed reachable. See the [Scan Progress Report](scan-progress.md) for full details.
 
 <!-- SCAN_PROGRESS_END -->
 
