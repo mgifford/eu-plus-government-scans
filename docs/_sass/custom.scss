@@ -149,7 +149,16 @@ body {
   display: flex;
   gap: 1rem;
   justify-content: space-between;
-  min-height: 4.25rem;
+  min-height: 4.5rem;
+  padding-bottom: 0.75rem;
+  padding-top: 0.75rem;
+}
+
+.site-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 0;
 }
 
 .site-header-actions {
@@ -163,9 +172,18 @@ body {
 .site-title,
 .site-title:visited {
   color: var(--color-heading);
-  font-size: 1.35rem;
+  font-size: 1.2rem;
   font-weight: 800;
   letter-spacing: -0.01em;
+  line-height: 1.15;
+}
+
+.site-tagline {
+  color: var(--color-text-secondary);
+  font-size: 0.88rem;
+  line-height: 1.35;
+  margin: 0;
+  max-width: 32rem;
 }
 
 .sr-only {
@@ -211,18 +229,127 @@ body {
   line-height: 1;
 }
 
+.site-nav {
+  position: relative;
+}
+
+.nav-trigger {
+  display: none;
+}
+
+.nav-toggle-label {
+  align-items: center;
+  background: var(--color-bg-panel);
+  border: 1px solid var(--color-border-input);
+  border-radius: 999px;
+  color: var(--color-text);
+  cursor: pointer;
+  display: none;
+  gap: 0.55rem;
+  min-height: 2.75rem;
+  padding: 0.55rem 0.9rem;
+}
+
+.nav-toggle-label:hover {
+  background: var(--color-secondary-bg);
+  border-color: var(--color-primary);
+}
+
+.menu-icon {
+  display: inline-flex;
+  line-height: 0;
+}
+
+.menu-icon svg {
+  fill: currentColor;
+}
+
+.nav-toggle-text {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.site-nav .trigger {
+  align-items: center;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.nav-group {
+  align-items: center;
+  display: flex;
+  gap: 0.35rem;
+}
+
 .site-nav .page-link,
 .site-nav .page-link:visited {
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 999px;
   color: var(--color-link);
-  font-size: 0.98rem;
-  margin-left: 1rem;
+  display: inline-flex;
+  font-size: 0.94rem;
+  font-weight: 600;
+  margin-left: 0;
+  min-height: 2.5rem;
+  padding: 0.45rem 0.8rem;
+  text-decoration: none;
   text-decoration-thickness: 0.08em;
   text-underline-offset: 0.18em;
 }
 
 .site-nav .page-link:hover,
 .site-nav .page-link:focus-visible {
+  background: var(--color-secondary-bg);
+  border-color: var(--color-border);
   color: var(--color-link-hover);
+}
+
+.nav-group--reports {
+  position: relative;
+}
+
+.nav-summary {
+  align-items: center;
+  cursor: pointer;
+  list-style: none;
+}
+
+.nav-summary::-webkit-details-marker {
+  display: none;
+}
+
+.nav-summary::after {
+  content: "▾";
+  font-size: 0.8rem;
+  margin-left: 0.45rem;
+}
+
+.nav-group--reports[open] .nav-summary {
+  background: var(--color-secondary-bg);
+  border-color: var(--color-border);
+}
+
+.nav-submenu {
+  background: var(--color-bg-panel);
+  border: 1px solid var(--color-border);
+  border-radius: 1rem;
+  box-shadow: 0 1rem 2rem rgba(22, 46, 81, 0.12);
+  display: grid;
+  gap: 0.25rem;
+  min-width: 14rem;
+  padding: 0.45rem;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.5rem);
+  z-index: 30;
+}
+
+.nav-sublink,
+.nav-sublink:visited {
+  border-radius: 0.75rem;
+  justify-content: flex-start;
+  width: 100%;
 }
 
 .page-content {
@@ -742,18 +869,82 @@ blockquote a:focus-visible {
   .site-header-inner {
     align-items: flex-start;
     flex-wrap: wrap;
-    padding-bottom: 0.6rem;
-    padding-top: 0.6rem;
+    gap: 0.85rem;
   }
 
   .site-header-actions {
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     width: 100%;
   }
 
   .theme-toggle {
-    margin-left: auto;
+    margin-left: 0;
+  }
+
+  .site-title,
+  .site-title:visited {
+    font-size: 1.05rem;
+  }
+
+  .site-tagline {
+    font-size: 0.82rem;
+    max-width: 100%;
+  }
+
+  .nav-toggle-label {
+    display: inline-flex;
+  }
+
+  .site-nav .trigger {
+    background: var(--color-bg-panel);
+    border: 1px solid var(--color-border);
+    border-radius: 1rem;
+    box-shadow: 0 0.75rem 2rem rgba(22, 46, 81, 0.12);
+    display: none;
+    left: 0;
+    margin-top: 0.6rem;
+    padding: 0.6rem;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 40;
+  }
+
+  .nav-trigger:checked ~ .trigger {
+    display: grid;
+    gap: 0.75rem;
+  }
+
+  .nav-group,
+  .nav-group--primary {
+    align-items: stretch;
+    display: grid;
+    gap: 0.4rem;
+  }
+
+  .site-nav .page-link,
+  .site-nav .page-link:visited,
+  .nav-summary {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .nav-group--reports {
+    display: block;
+  }
+
+  .nav-submenu {
+    box-shadow: none;
+    margin-top: 0.35rem;
+    min-width: 0;
+    padding: 0.35rem 0 0;
+    position: static;
+  }
+
+  .nav-sublink,
+  .nav-sublink:visited {
+    padding-left: 1rem;
   }
 
   .table-drilldown__panel {
@@ -793,6 +984,7 @@ blockquote a:focus-visible {
   .site-footer,
   .theme-toggle,
   .site-nav,
+  .site-tagline,
   .table-drilldown__panel,
   .table-drilldown__download {
     display: none !important;
