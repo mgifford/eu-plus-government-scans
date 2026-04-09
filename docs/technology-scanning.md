@@ -7,7 +7,7 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-04-09 12:52 UTC — last scan: 2026-04-09_
+_Stats as of 2026-04-09 14:27 UTC — last scan: 2026-04-09_
 
 **15** scan batches run
 
@@ -21,21 +21,21 @@ _Stats as of 2026-04-09 12:52 UTC — last scan: 2026-04-09_
 
 | Country | URLs Scanned | Pages with Detections | Available | Last Scan |
 |---------|-------------|----------------------|-----------|----------|
-| AUSTRIA | 821 | 787 | 821 | 2026-04-07 |
-| BELGIUM | 1,309 | 1,225 | 1,309 | 2026-04-07 |
-| BULGARIA | 291 | 268 | 291 | 2026-04-07 |
-| CROATIA | 233 | 230 | 233 | 2026-04-07 |
-| CZECHIA | 843 | 798 | 843 | 2026-04-07 |
-| DENMARK | 415 | 412 | 1,521 | 2026-04-07 |
-| ESTONIA | 396 | 388 | 396 | 2026-04-08 |
-| FINLAND | 180 | 172 | 180 | 2026-04-08 |
-| FRANCE | 2,457 | 2,282 | 10,007 | 2026-04-08 |
-| GERMANY | 3,431 | 3,363 | 6,555 | 2026-04-08 |
-| GREECE | 1,748 | 1,609 | 1,748 | 2026-04-09 |
-| HUNGARY | 390 | 363 | 390 | 2026-04-09 |
-| ICELAND | 139 | 135 | 139 | 2026-04-09 |
-| IRELAND | 522 | 492 | 522 | 2026-04-09 |
-| ITALY | 288 | 280 | 5,338 | 2026-04-09 |
+| Austria | 821 | 787 | 821 | 2026-04-07 |
+| Belgium | 1,309 | 1,225 | 1,309 | 2026-04-07 |
+| Bulgaria | 291 | 268 | 291 | 2026-04-07 |
+| Croatia | 233 | 230 | 233 | 2026-04-07 |
+| Czechia | 843 | 798 | 843 | 2026-04-07 |
+| Denmark | 415 | 412 | 1,521 | 2026-04-07 |
+| Estonia | 396 | 388 | 396 | 2026-04-08 |
+| Finland | 180 | 172 | 180 | 2026-04-08 |
+| France | 2,457 | 2,282 | 10,007 | 2026-04-08 |
+| Germany | 3,431 | 3,363 | 6,555 | 2026-04-08 |
+| Greece | 1,748 | 1,609 | 1,748 | 2026-04-09 |
+| Hungary | 390 | 363 | 390 | 2026-04-09 |
+| Iceland | 139 | 135 | 139 | 2026-04-09 |
+| Ireland | 522 | 492 | 522 | 2026-04-09 |
+| Italy | 288 | 280 | 5,338 | 2026-04-09 |
 
 > Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and metric from [technology-data.json](technology-data.json).
 
