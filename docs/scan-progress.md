@@ -1,9 +1,6 @@
----
-title: Scan Progress Report
-layout: page
----
+# Scan Progress Report
 
-_Generated: 2026-04-09 14:26 UTC_
+_Generated: 2026-04-09 20:20 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -13,9 +10,9 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage |
 |-----------|--------------|-----------|----------|
-| **Combined Reachability** | **77,457 confirmed reachable** | 82,714 | **██████████████████░░ 93.6%** |
+| **Combined Reachability** | **77,498 confirmed reachable** | 82,714 | **██████████████████░░ 93.7%** |
 | URL Validation | 13,771 validated (11,960 valid) | 82,714 | ███░░░░░░░░░░░░░░░░░ 16.6% |
-| Social Media | 82,714 scanned (77,457 reachable) | 82,714 | ████████████████████ 100.0% |
+| Social Media | 82,714 scanned (77,498 reachable) | 82,714 | ████████████████████ 100.0% |
 | Technology | 13,463 scanned | 82,714 | ███░░░░░░░░░░░░░░░░░ 16.3% |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) |
 | Accessibility Statements | 72,735 scanned | 82,714 | █████████████████░░░ 87.9% |
@@ -72,7 +69,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Malta | 608 | 608 | 595 | 129 | 20 | 32 | 501 | 57 | 17 | 0 | 34 | Mar 2026 – Apr 2026 |
 | Netherlands | 937 | 937 | 909 | 257 | 54 | 95 | 644 | 148 | 74 | 45 | 77 | Mar 2026 – Apr 2026 |
 | Norway | 239 | 239 | 233 | 55 | 2 | 0 | 211 | 10 | 13 | 0 | 2 | Mar 2026 – Apr 2026 |
-| Poland | 14,938 | 14,938 | 13,959 | 6,167 | 301 | 959 | 8,616 | 1,092 | 325 | 1 | 1,049 | Mar 2026 – Apr 2026 |
+| Poland | 14,938 | 14,938 | 14,000 | 6,185 | 303 | 962 | 8,649 | 1,093 | 325 | 1 | 1,054 | Mar 2026 – Apr 2026 |
 | Portugal | 3,503 | 3,503 | 2,933 | 1,015 | 57 | 175 | 2,039 | 430 | 70 | 2 | 183 | Mar 2026 – Apr 2026 |
 | Cyprus | 24 | 24 | 24 | 11 | 0 | 0 | 19 | 5 | 0 | 0 | 0 | Mar 2026 – Apr 2026 |
 | Romania | 799 | 799 | 351 | 124 | 6 | 11 | 273 | 42 | 1 | 0 | 14 | Mar 2026 – Apr 2026 |
@@ -125,8 +122,8 @@ Checks whether each government page links to an accessibility statement as requi
 | Denmark | 1,521 | 1,503 | 1,041 | 1,021 | 69% | Mar 2026 – Apr 2026 |
 | Estonia | 396 | 389 | 136 | 65 | 35% | Mar 2026 – Apr 2026 |
 | Finland | 180 | 172 | 111 | 104 | 65% | Mar 2026 – Apr 2026 |
-| France | 10,007 | 9,425 | 3,655 | 3,516 | 39% | Mar 2026 – Apr 2026 |
-| Germany | 6,555 | 6,479 | 4,612 | 3,872 | 71% | Mar 2026 – Apr 2026 |
+| France | 10,007 | 9,436 | 3,670 | 3,528 | 39% | Mar 2026 – Apr 2026 |
+| Germany | 6,555 | 6,480 | 4,617 | 3,872 | 71% | Mar 2026 – Apr 2026 |
 | Greece | 1,748 | 1,627 | 409 | 238 | 25% | Mar 2026 – Apr 2026 |
 | Hungary | 390 | 366 | 64 | 48 | 17% | Mar 2026 – Apr 2026 |
 | Iceland | 139 | 135 | 15 | 7 | 11% | Mar 2026 – Apr 2026 |
@@ -138,7 +135,7 @@ Checks whether each government page links to an accessibility statement as requi
 | Malta | 608 | 595 | 381 | 374 | 64% | Mar 2026 – Apr 2026 |
 | Netherlands | 937 | 909 | 449 | 439 | 49% | Mar 2026 – Apr 2026 |
 | Norway | 239 | 233 | 108 | 102 | 46% | Mar 2026 – Apr 2026 |
-| Poland | 13,875 | 12,866 | 5,309 | 3,369 | 41% | Mar 2026 – Apr 2026 |
+| Poland | 13,875 | 12,891 | 5,336 | 3,394 | 41% | Mar 2026 – Apr 2026 |
 | Portugal | 3,503 | 2,937 | 895 | 720 | 30% | Mar 2026 – Apr 2026 |
 | Cyprus | 24 | 24 | 0 | 0 | 0% | Mar 2026 – Apr 2026 |
 | Romania | 799 | 351 | 28 | 9 | 8% | Mar 2026 – Apr 2026 |
