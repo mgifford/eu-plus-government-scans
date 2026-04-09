@@ -208,22 +208,17 @@ ORDER BY scanned_at DESC;
 
 ## Architecture
 
-```
-scan-technology.yml (GitHub Actions — every 6 hours)
-    ↓
-scan_technology.py (CLI)
-    ↓
-TechScanner.scan_country()
-    ↓
-TechDetector.detect_urls_batch()
-    ↓
-For each URL:
-    httpx.get()  →  HTML + headers
-    Wappalyzer.analyze_with_versions_and_categories()
-    ↓
-Save to url_tech_results table (incremental, per URL)
-    ↓
-Write *_tech.toon output file
+```mermaid
+flowchart TD
+    A["scan-technology.yml\n(GitHub Actions — every 6 hours)"]
+    A --> B["scan_technology.py (CLI)"]
+    B --> C["TechScanner.scan_country()"]
+    C --> D["TechDetector.detect_urls_batch()"]
+    D --> E["For each URL"]
+    E --> F["httpx.get() → HTML + headers"]
+    F --> G["Wappalyzer.analyze_with_versions_and_categories()"]
+    G --> H["Save to url_tech_results table\n(incremental, per URL)"]
+    H --> I["Write *_tech.toon output file"]
 ```
 
 ---

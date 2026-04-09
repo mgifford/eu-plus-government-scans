@@ -231,23 +231,16 @@ Scans cover all 27 EU member states plus 4 allied nations:
 
 ## Architecture
 
-```
-scan-accessibility.yml (GitHub Actions — every 4 hours)
-    ↓
-scan_accessibility.py (CLI)
-    ↓
-AccessibilityScannerJob.scan_country()
-    ↓
-AccessibilityScanner.scan_urls_batch()
-    ↓
-For each URL:
-    httpx.get()  →  HTML content
-    BeautifulSoup  →  find <footer> links, then full-page links
-    Match against multilingual glossary terms
-    ↓
-Classify: has_statement / found_in_footer
-    ↓
-Save to url_accessibility_results table
-    ↓
-Write *_accessibility.toon output file
+```mermaid
+flowchart TD
+    A["scan-accessibility.yml\n(GitHub Actions — every 4 hours)"]
+    A --> B["scan_accessibility.py (CLI)"]
+    B --> C["AccessibilityScannerJob.scan_country()"]
+    C --> D["AccessibilityScanner.scan_urls_batch()"]
+    D --> E["For each URL"]
+    E --> F["httpx.get() → HTML content"]
+    F --> G["BeautifulSoup → find footer links, then full-page links\nMatch against multilingual glossary terms"]
+    G --> H["Classify: has_statement / found_in_footer"]
+    H --> I["Save to url_accessibility_results table"]
+    I --> J["Write *_accessibility.toon output file"]
 ```
