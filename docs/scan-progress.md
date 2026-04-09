@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-04-09 01:40 UTC_
+_Generated: 2026-04-09 02:54 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -113,7 +113,7 @@ Checks whether each government page links to an accessibility statement as requi
 | BELGIUM | 1,309 | 1,229 | 551 | 502 | 45% | Mar 2026 – Apr 2026 |
 | BULGARIA | 291 | 269 | 61 | 59 | 23% | Mar 2026 – Apr 2026 |
 | CROATIA | 233 | 231 | 85 | 61 | 37% | Mar 2026 – Apr 2026 |
-| CZECHIA | 843 | 803 | 427 | 365 | 53% | Mar 2026 – Apr 2026 |
+| CZECHIA | 843 | 804 | 427 | 365 | 53% | Mar 2026 – Apr 2026 |
 | DENMARK | 1,521 | 1,503 | 1,036 | 1,019 | 69% | Mar 2026 – Apr 2026 |
 | ESTONIA | 396 | 389 | 136 | 65 | 35% | Mar 2026 – Apr 2026 |
 | FINLAND | 180 | 172 | 111 | 104 | 65% | Mar 2026 – Apr 2026 |
@@ -136,7 +136,7 @@ Checks whether each government page links to an accessibility statement as requi
 | ROMANIA | 799 | 351 | 28 | 9 | 8% | Mar 2026 – Apr 2026 |
 | SLOVAKIA | 434 | 414 | 192 | 177 | 46% | Mar 2026 – Apr 2026 |
 | SLOVENIA | 200 | 190 | 100 | 74 | 53% | Mar 2026 – Apr 2026 |
-| SPAIN | 6,069 | 5,357 | 2,372 | 2,076 | 44% | Mar 2026 – Apr 2026 |
+| SPAIN | 6,069 | 5,374 | 2,379 | 2,083 | 44% | Mar 2026 – Apr 2026 |
 | SWEDEN | 1,558 | 1,486 | 860 | 785 | 58% | Mar 2026 – Apr 2026 |
 | SWITZERLAND | 2,117 | 2,082 | 980 | 978 | 47% | Mar 2026 – Apr 2026 |
 | UNITED_KINGDOM_UK | 10,586 | 9,947 | 5,811 | 5,450 | 58% | Mar 2026 – Apr 2026 |
