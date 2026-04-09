@@ -1,6 +1,6 @@
 # Scan Progress Report
 
-_Generated: 2026-04-09 06:30 UTC_
+_Generated: 2026-04-09 06:40 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -13,7 +13,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | **Combined Reachability** | **77,396 confirmed reachable** | 82,714 | **██████████████████░░ 93.6%** |
 | URL Validation | 13,771 validated (11,960 valid) | 82,714 | ███░░░░░░░░░░░░░░░░░ 16.6% |
 | Social Media | 82,714 scanned (77,396 reachable) | 82,714 | ████████████████████ 100.0% |
-| Technology | 10,376 scanned | 82,714 | ██░░░░░░░░░░░░░░░░░░ 12.5% |
+| Technology | 13,463 scanned | 82,714 | ███░░░░░░░░░░░░░░░░░ 16.3% |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) |
 | Accessibility Statements | 72,735 scanned | 82,714 | █████████████████░░░ 87.9% |
 
@@ -98,6 +98,11 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | FINLAND | 180 | 2026-04-08 |
 | FRANCE | 2,457 | 2026-04-08 |
 | GERMANY | 3,431 | 2026-04-08 |
+| GREECE | 1,748 | 2026-04-09 |
+| HUNGARY | 390 | 2026-04-09 |
+| ICELAND | 139 | 2026-04-09 |
+| IRELAND | 522 | 2026-04-09 |
+| ITALY | 288 | 2026-04-09 |
 
 ## Lighthouse Scan
 
