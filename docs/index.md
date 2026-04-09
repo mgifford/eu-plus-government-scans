@@ -27,81 +27,39 @@ _Progress as of 2026-04-09 14:27 UTC_
 
 ## Latest Scan Results
 
-- **[Scan Progress Report](scan-progress.md)** — Up-to-date social media, URL validation,
-  accessibility, and technology scan coverage across all countries, including the date range each country was scanned.
-- **[Social Media](social-media.md)** — Detailed breakdown of social platform usage across
-  government sites, with per-country platform counts (Twitter, X, Bluesky, Mastodon).
-- **[Accessibility Statements](accessibility-statements.md)** — Per-country tracking of
-  accessibility statement links as required by the EU Web Accessibility Directive.
-- **[Technology Scanning](technology-scanning.md)** — Technologies detected on government sites
-  (CMS, web server, analytics, and more).
-- **[Third-Party JavaScript](third-party-tools.md)** — Externally hosted scripts,
-  analytics tags, consent tools, and other third-party services loaded by government sites.
-- **[Government Domains](domains.md)** — Full listing of all ~36,000 government domains tracked
-  across 31 countries.
-
-## Accessing Scan Artifacts
-
-Each GitHub Actions scan run uploads its results as a downloadable artifact:
-
-1. Go to [GitHub Actions](https://github.com/mgifford/eu-plus-government-scans/actions)
-2. Click the relevant workflow (e.g. **Scan Social Media Links**)
-3. Open a completed run and scroll to the **Artifacts** section
-4. Download the artifact (e.g. `social-scan-<run_number>`) to inspect:
-   - `data/metadata.db` — the full SQLite results database
-   - `*_social.toon` / `*_tech.toon` — annotated TOON files
-   - Scan output logs
-
-> The [Scan Progress Report](scan-progress.md) is regenerated automatically
-> after every scan and committed to this site, so you can always see the
-> latest aggregated results here without downloading artifacts.
+- **[Scan Progress Report](scan-progress.md)** — The best place to start for overall coverage, scan status, and country-level comparisons across the project.
+- **[Social Media](social-media.md)** — Government use of legacy and open social platforms, with evidence behind the published counts.
+- **[Accessibility Statements](accessibility-statements.md)** — Country-by-country evidence showing which pages do and do not publish accessibility statements.
+- **[Technology Scanning](technology-scanning.md)** — Detected CMSs, frameworks, analytics tools, and other software found on government sites.
+- **[Third-Party JavaScript](third-party-tools.md)** — External scripts, services, and hosted dependencies loaded by government pages.
+- **[Lighthouse Scanning](lighthouse-scanning.md)** — Google Lighthouse methodology, workflow details, and page-level quality scores as they are collected.
+- **[Government Domains](domains.md)** — The tracked source dataset: government domains and page URLs used as the input for scans, grouped by country.
 
 ## What We Track
 
 ### Social Media Presence
 
-We check every government URL for links to:
+We check government pages for links to legacy and open social platforms, then classify what was found at page and country level.
 
-| Platform | Includes |
-|----------|----------|
-| **Twitter / X** | `twitter.com`, `x.com` |
-| **Bluesky** | `bsky.app`, `bsky.social` |
-| **Mastodon / Fediverse** | 40+ known instances + `/@user` pattern detection |
-
-Each scanned page is classified into one of the following tiers:
-
-| Tier | Meaning |
-|------|---------|
-| `no_social` | Page is reachable but contains no social media links |
-| `twitter_only` | Only links to Twitter / X (legacy platform) |
-| `modern_only` | Only links to Bluesky or Mastodon (modern / open platforms) |
-| `mixed` | Links to both Twitter/X **and** at least one modern platform |
-| `unreachable` | Page could not be fetched |
-
-See the **[Social Media](social-media.md)** page for full details.
+See **[Social Media](social-media.md)** for platform coverage, tier definitions, and downloadable evidence.
 
 ### URL Validation
 
-We validate each URL and track:
+We validate tracked URLs, follow redirects, and monitor persistent failures so the source dataset stays current.
 
-- HTTP status codes and redirect chains
-- Persistent failures (a URL is removed after 2 consecutive failures)
-- Final redirect destinations (updated for future scans)
+See **[Scan Progress Report](scan-progress.md)** for current validation coverage and country-level results.
 
 ### Technology Detection
 
-We detect the CMS, framework, and analytics platforms used by each government site.
+We detect the CMS, framework, analytics, hosting, and other technologies used by government sites.
+
+See **[Technology Scanning](technology-scanning.md)** for the detected technologies and country tables.
 
 ### Third-Party JavaScript
 
-We also track externally hosted scripts loaded by government pages, including:
+We track externally hosted scripts and services such as analytics tags, consent tools, CDNs, shared JavaScript libraries, and support widgets.
 
-- Analytics and tag managers
-- Cookie consent tools
-- CDNs and shared JavaScript libraries
-- Customer-support and monitoring widgets
-
-See **[Third-Party JavaScript](third-party-tools.md)** for the EU-wide breakdown.
+See **[Third-Party JavaScript](third-party-tools.md)** for the EU-wide breakdown and evidence exports.
 
 ### Lighthouse Audits
 
@@ -115,7 +73,7 @@ See **[Lighthouse Scanning](lighthouse-scanning.md)** for full details.
 The dataset covers **all EU member states** plus selected allied nations:
 United Kingdom, Switzerland, Iceland, Norway, and Canada.
 
-See **[Government Domains](domains.md)** for the full domain listing per country.
+See **[Government Domains](domains.md)** for the full domain and page-url source list per country.
 
 ## How the Scans Work
 
@@ -130,6 +88,17 @@ Scans run automatically on a schedule via **GitHub Actions**:
 | Scan Progress Report | After every scan | — |
 
 After each scan run, this site is automatically updated with the latest results.
+
+## Accessing Scan Artifacts
+
+Each GitHub Actions scan run uploads its results as a downloadable artifact:
+
+1. Go to [GitHub Actions](https://github.com/mgifford/eu-plus-government-scans/actions)
+2. Click the relevant workflow
+3. Open a completed run and scroll to the **Artifacts** section
+4. Download the artifact to inspect the database, annotated TOON files, and scan logs
+
+> The [Scan Progress Report](scan-progress.md) is regenerated automatically, so most visitors should not need the raw artifacts unless they want to inspect the source outputs directly.
 
 ## Source Code & Data
 

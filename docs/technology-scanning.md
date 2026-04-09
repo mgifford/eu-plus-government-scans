@@ -3,8 +3,6 @@ title: Technology Scanning
 layout: page
 ---
 
-# Technology Scanning
-
 <!-- TECH_STATS_START -->
 
 _Stats as of 2026-04-09 14:27 UTC — last scan: 2026-04-09_

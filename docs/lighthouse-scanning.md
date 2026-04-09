@@ -3,8 +3,6 @@ title: Lighthouse Scanning
 layout: page
 ---
 
-# Google Lighthouse Scanning
-
 This page describes how the project runs Google Lighthouse audits on European government
 websites to measure performance, accessibility, best practices, SEO, and Progressive Web App
 (PWA) quality.
