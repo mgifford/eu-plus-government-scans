@@ -152,23 +152,17 @@ ORDER BY accessibility_score DESC;
 
 ## Architecture
 
-```
-scan-lighthouse.yml (GitHub Actions — weekly + manual)
-    ↓
-scan_lighthouse.py (CLI)
-    ↓
-LighthouseScannerJob.scan_country()
-    ↓
-LighthouseScanner.scan_urls_batch()
-    ↓
-For each URL:
-    subprocess: lighthouse <url> --output=json --output-path=stdout
-    ↓
-_parse_lighthouse_output()  →  5 category scores
-    ↓
-Save to url_lighthouse_results table (incremental, per URL)
-    ↓
-Write *_lighthouse.toon output file
+```mermaid
+flowchart TD
+    A["scan-lighthouse.yml\n(GitHub Actions — weekly + manual)"]
+    A --> B["scan_lighthouse.py (CLI)"]
+    B --> C["LighthouseScannerJob.scan_country()"]
+    C --> D["LighthouseScanner.scan_urls_batch()"]
+    D --> E["For each URL"]
+    E --> F["subprocess: lighthouse URL --output=json --output-path=stdout"]
+    F --> G["_parse_lighthouse_output() → 5 category scores"]
+    G --> H["Save to url_lighthouse_results table\n(incremental, per URL)"]
+    H --> I["Write *_lighthouse.toon output file"]
 ```
 
 ---
