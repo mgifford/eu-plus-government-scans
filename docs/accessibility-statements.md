@@ -50,16 +50,16 @@ Each country entry in the JSON file includes page-level evidence for pages with 
 | NETHERLANDS | 937 | 937 | 909 | 449 | 439 | 49.4% | Mar 2026 – Apr 2026 |
 | NORWAY | 239 | 239 | 233 | 108 | 102 | 46.4% | Mar 2026 – Apr 2026 |
 | POLAND | 13,875 | 14,938 | 12,866 | 5,309 | 3,369 | 41.3% | Mar 2026 – Apr 2026 |
-| PORTUGAL | 3,503 | 3,503 | 2,937 | 895 | 720 | 30.5% | Mar 2026 – Apr 2026 |
-| REPUBLIC_OF_CYPRUS | 24 | 24 | 24 | 0 | 0 | 0.0% | Mar 2026 – Apr 2026 |
+| PORTUGAL | 3,503 | 3,503 | 2,931 | 885 | 710 | 30.2% | Mar 2026 – Apr 2026 |
+| Cyprus | 24 | 24 | 24 | 0 | 0 | 0.0% | Mar 2026 – Apr 2026 |
 | ROMANIA | 799 | 799 | 351 | 28 | 9 | 8.0% | Mar 2026 – Apr 2026 |
 | SLOVAKIA | 434 | 434 | 414 | 192 | 177 | 46.4% | Mar 2026 – Apr 2026 |
 | SLOVENIA | 200 | 200 | 190 | 100 | 74 | 52.6% | Mar 2026 – Apr 2026 |
 | SPAIN | 6,069 | 6,069 | 5,374 | 2,379 | 2,083 | 44.3% | Mar 2026 – Apr 2026 |
 | SWEDEN | 1,558 | 1,558 | 1,486 | 860 | 785 | 57.9% | Mar 2026 – Apr 2026 |
 | SWITZERLAND | 2,117 | 2,117 | 2,082 | 980 | 978 | 47.1% | Mar 2026 – Apr 2026 |
-| UNITED_KINGDOM_UK | 10,586 | 19,502 | 9,949 | 5,811 | 5,450 | 58.4% | Mar 2026 – Apr 2026 |
-| **Total** | **72,735** | **82,714** | **67,304** | **32,627** | **28,214** | **48.5%** | — |
+| United Kingdom | 10,586 | 19,502 | 9,947 | 5,811 | 5,450 | 58.4% | Mar 2026 – Apr 2026 |
+| **Total** | **72,735** | **82,714** | **67,278** | **32,602** | **28,192** | **48.5%** | — |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 

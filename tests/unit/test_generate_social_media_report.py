@@ -742,7 +742,7 @@ def test_build_sovereignty_section_sorted_by_score():
     lines = _build_sovereignty_section(rows)
     content = "\n".join(lines)
     # HIGH should appear before LOW in the output
-    assert content.index("HIGH") < content.index("LOW")
+    assert content.index("High") < content.index("Low")
 
 
 def test_build_sovereignty_section_contains_key_fields():
@@ -753,7 +753,7 @@ def test_build_sovereignty_section_contains_key_fields():
     ]
     lines = _build_sovereignty_section(rows)
     content = "\n".join(lines)
-    assert "ICELAND" in content
+    assert "Iceland" in content
     assert "100.0%" in content       # sovereignty score
     assert "0.0%" in content         # legacy exposure
     assert "🥇 Leader" in content    # tier

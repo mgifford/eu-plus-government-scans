@@ -79,18 +79,18 @@ Countries ranked by **Digital Sovereignty Score** — the percentage of reachabl
 | 17 | LUXEMBOURG | 81.6% | 183 | 21 | 40.0% | 🥉 Growing |
 | 18 | GERMANY | 80.3% | 4,903 | 301 | 32.1% | 🥉 Growing |
 | 19 | ROMANIA | 79.5% | 273 | 6 | 38.5% | 🥉 Growing |
-| 20 | REPUBLIC_OF_CYPRUS | 79.2% | 19 | 0 | 45.8% | 🥉 Growing |
+| 20 | Cyprus | 79.2% | 19 | 0 | 45.8% | 🥉 Growing |
 | 21 | SWITZERLAND | 77.9% | 1,565 | 56 | 32.9% | 🥉 Growing |
 | 22 | FINLAND | 77.9% | 132 | 2 | 39.5% | 🥉 Growing |
 | 23 | NETHERLANDS | 76.8% | 644 | 54 | 38.6% | 🥉 Growing |
 | 24 | FRANCE | 76.0% | 6,974 | 213 | 36.1% | 🥉 Growing |
 | 25 | PORTUGAL | 71.5% | 2,039 | 57 | 40.6% | 🥉 Growing |
 | 26 | IRELAND | 63.9% | 293 | 25 | 50.4% | 🥉 Growing |
-| 27 | POLAND | 63.9% | 8,616 | 301 | 51.0% | 🥉 Growing |
-| 28 | UNITED_KINGDOM_UK | 61.4% | 11,490 | 37 | 39.9% | 🥉 Growing |
-| 29 | SPAIN | 59.1% | 3,208 | 31 | 43.5% | 🥉 Growing |
-| 30 | LATVIA | 58.8% | 430 | 23 | 60.2% | 🥉 Growing |
-| 31 | ITALY | 55.5% | 2,647 | 85 | 51.6% | 🥉 Growing |
+| 27 | POLAND | 63.9% | 8,601 | 301 | 51.0% | 🥉 Growing |
+| 28 | United Kingdom | 61.4% | 11,462 | 37 | 39.1% | 🥉 Growing |
+| 29 | LATVIA | 58.8% | 430 | 23 | 60.2% | 🥉 Growing |
+| 30 | SPAIN | 58.7% | 3,177 | 29 | 43.5% | 🥉 Growing |
+| 31 | ITALY | 55.6% | 2,642 | 85 | 50.2% | 🥉 Growing |
 
 ---
 
@@ -123,15 +123,15 @@ Countries ranked by **Digital Sovereignty Score** — the percentage of reachabl
 | NORWAY | 239 | 239 | 233 | 91.4% | 211 | 55 | 10 | 13 | 40 | 42 | 2 | 0 | 0 | 2 | Mar 2026 – Apr 2026 |
 | POLAND | 14,938 | 14,938 | 13,959 | 63.9% | 8,616 | 6,167 | 1,092 | 325 | 7,007 | 762 | 301 | 959 | 1 | 1,049 | Mar 2026 – Apr 2026 |
 | PORTUGAL | 3,503 | 3,503 | 2,933 | 71.5% | 2,039 | 1,015 | 430 | 70 | 1,116 | 271 | 57 | 175 | 2 | 183 | Mar 2026 – Apr 2026 |
-| REPUBLIC_OF_CYPRUS | 24 | 24 | 24 | 79.2% | 19 | 11 | 5 | 0 | 11 | 3 | 0 | 0 | 0 | 0 | Mar 2026 – Apr 2026 |
+| Cyprus | 24 | 24 | 24 | 79.2% | 19 | 11 | 5 | 0 | 11 | 3 | 0 | 0 | 0 | 0 | Mar 2026 – Apr 2026 |
 | ROMANIA | 799 | 799 | 351 | 79.5% | 273 | 124 | 42 | 1 | 135 | 13 | 6 | 11 | 0 | 14 | Mar 2026 – Apr 2026 |
 | SLOVAKIA | 434 | 434 | 413 | 94.7% | 382 | 135 | 17 | 9 | 143 | 50 | 9 | 13 | 0 | 13 | Mar 2026 – Apr 2026 |
 | SLOVENIA | 200 | 200 | 190 | 85.8% | 156 | 52 | 21 | 6 | 57 | 5 | 7 | 9 | 1 | 9 | Mar 2026 – Apr 2026 |
 | SPAIN | 6,069 | 6,069 | 5,481 | 59.1% | 3,208 | 2,057 | 1,808 | 373 | 1,800 | 490 | 31 | 327 | 51 | 316 | Mar 2026 – Apr 2026 |
 | SWEDEN | 1,558 | 1,558 | 1,487 | 92.5% | 1,362 | 477 | 92 | 24 | 443 | 337 | 14 | 35 | 11 | 25 | Mar 2026 – Apr 2026 |
 | SWITZERLAND | 2,117 | 2,117 | 2,082 | 77.9% | 1,565 | 557 | 239 | 215 | 256 | 525 | 56 | 128 | 56 | 114 | Mar 2026 – Apr 2026 |
-| UNITED_KINGDOM_UK | 19,502 | 19,502 | 18,787 | 61.4% | 11,490 | 6,777 | 4,239 | 1,016 | 6,663 | 2,514 | 37 | 714 | 127 | 675 | Mar 2026 – Apr 2026 |
-| **Total** | **82,714** | **82,714** | **77,449** | **69.4%** | **52,225** | **27,814** | **14,687** | **3,337** | **28,615** | **9,767** | **1,498** | **4,312** | **636** | **4,300** | — |
+| United Kingdom | 19,502 | 19,502 | 18,743 | 61.4% | 11,462 | 6,627 | 4,152 | 990 | 6,520 | 2,484 | 37 | 701 | 118 | 668 | Mar 2026 – Apr 2026 |
+| **Total** | **82,714** | **82,714** | **77,350** | **69.3%** | **52,134** | **27,504** | **14,581** | **3,307** | **27,753** | **9,413** | **1,496** | **4,262** | **627** | **4,281** | — |
 
 > Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open. Full machine-readable data is available as the `social-media-data.json` artifact in the [latest workflow run](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
 

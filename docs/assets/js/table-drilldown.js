@@ -13,6 +13,10 @@
     Facebook: "facebook",
     LinkedIn: "linkedin",
   };
+  var COUNTRY_CODE_ALIASES = {
+    Cyprus: "REPUBLIC_OF_CYPRUS",
+    "United Kingdom": "UNITED_KINGDOM_UK",
+  };
   var ACCESSIBILITY_LABELS = {
     Scanned: "scanned pages",
     Reachable: "reachable pages",
@@ -60,6 +64,7 @@
         return columns;
       },
       getRecords: function (dataset, country, column) {
+        country = resolveCountryCode(country, dataset.platform_drilldowns || dataset.metric_drilldowns || {});
         if (column.type === "platform") {
           return (dataset.platform_drilldowns && dataset.platform_drilldowns[country] &&
             dataset.platform_drilldowns[country][column.key]) || [];
@@ -178,6 +183,7 @@
           .filter(Boolean);
       },
       getRecords: function (dataset, country, column) {
+        country = resolveCountryCode(country, dataset);
         return (dataset[country] && dataset[country][column.key]) || [];
       },
       buildContext: function (country, column, count, records) {
@@ -247,6 +253,7 @@
           .filter(Boolean);
       },
       getRecords: function (dataset, country, column) {
+        country = resolveCountryCode(country, dataset);
         return (dataset[country] && dataset[country][column.key]) || [];
       },
       buildContext: function (country, column, count, records) {
@@ -320,6 +327,7 @@
           .filter(Boolean);
       },
       getRecords: function (dataset, country, column) {
+        country = resolveCountryCode(country, dataset);
         return (dataset[country] && dataset[country][column.key]) || [];
       },
       buildContext: function (country, column, count, records) {
@@ -403,6 +411,7 @@
         return columns;
       },
       getRecords: function (dataset, country, column) {
+        country = resolveCountryCode(country, dataset);
         var countryDetail = dataset[country];
         if (!countryDetail) {
           return [];
@@ -862,6 +871,19 @@
     hint.textContent =
       "Hover or focus previews this panel. Activate the number to keep it open and download the full CSV.";
     return hint;
+  }
+
+  function resolveCountryCode(country, dataset) {
+    if (!country) {
+      return country;
+    }
+    if (dataset && dataset[country]) {
+      return country;
+    }
+    if (COUNTRY_CODE_ALIASES[country]) {
+      return COUNTRY_CODE_ALIASES[country];
+    }
+    return country.toUpperCase().replace(/\s+/g, "_");
   }
 
   function buildSocialMetricDescription(country, label, availableCount) {

@@ -3,6 +3,12 @@
 from __future__ import annotations
 
 
+_COUNTRY_DISPLAY_NAMES = {
+    "REPUBLIC_OF_CYPRUS": "Cyprus",
+    "UNITED_KINGDOM_UK": "United Kingdom",
+}
+
+
 def country_filename_to_code(filename: str) -> str:
     """
     Convert a country filename to a country code.
@@ -33,3 +39,10 @@ def country_code_to_filename(country_code: str) -> str:
         Lowercase hyphenated filename (without extension)
     """
     return country_code.lower().replace("_", "-")
+
+
+def country_code_to_display_name(country_code: str) -> str:
+    """Return a human-friendly display label for a country code."""
+    if country_code in _COUNTRY_DISPLAY_NAMES:
+        return _COUNTRY_DISPLAY_NAMES[country_code]
+    return country_code.replace("_", " ").title()
