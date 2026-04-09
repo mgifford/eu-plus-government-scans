@@ -293,23 +293,16 @@ all domains tracked per country.
 
 ## Architecture
 
-```
-scan-social-media.yml (GitHub Actions — every 3 hours)
-    ↓
-scan_social_media.py (CLI)
-    ↓
-SocialMediaScannerJob.scan_country()
-    ↓
-SocialMediaScanner.scan_urls_batch()
-    ↓
-For each URL:
-    httpx.get()  →  HTML content
-    BeautifulSoup  →  extract <a href="..."> links
-    Match against platform patterns
-    ↓
-Classify into social_tier
-    ↓
-Save to url_social_media_results table
-    ↓
-Write *_social.toon output file
+```mermaid
+flowchart TD
+    A["scan-social-media.yml\n(GitHub Actions — every 3 hours)"]
+    A --> B["scan_social_media.py (CLI)"]
+    B --> C["SocialMediaScannerJob.scan_country()"]
+    C --> D["SocialMediaScanner.scan_urls_batch()"]
+    D --> E["For each URL"]
+    E --> F["httpx.get() → HTML content"]
+    F --> G["BeautifulSoup → extract href links\nMatch against platform patterns"]
+    G --> H["Classify into social_tier"]
+    H --> I["Save to url_social_media_results table"]
+    I --> J["Write *_social.toon output file"]
 ```
