@@ -133,7 +133,10 @@ body {
 }
 
 .page-content .wrapper,
-.post-content,
+.post-content {
+  max-width: 78rem;
+}
+
 .home .page-content .wrapper {
   max-width: 48rem;
 }
@@ -652,8 +655,9 @@ th b {
     border-collapse: collapse;
     display: block;
     max-width: 100%;
+    min-width: 100%;
     overflow-x: auto;
-    width: 100%;
+    width: max-content;
   }
 }
 
