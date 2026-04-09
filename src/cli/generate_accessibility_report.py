@@ -21,7 +21,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse
 
-from src.lib.country_utils import country_filename_to_code
+from src.lib.country_utils import country_code_to_display_name, country_filename_to_code
 from src.lib.settings import load_settings
 
 
@@ -393,12 +393,13 @@ def _build_stats_block(
         ]
         for row in by_country:
             cc = row["country_code"]
+            display_cc = country_code_to_display_name(cc)
             available = seed_counts.get(cc, 0)
             avail_str = f"{available:,}" if available else "—"
             period = _scan_period(row.get("first_scan"), row.get("last_scan"))
             stmt_pct = _pct(row.get("has_statement", 0), row.get("reachable", 0))
             lines.append(
-                f"| {cc} | {row['total_scanned']:,} | {avail_str} | {row['reachable']:,} | "
+                f"| {display_cc} | {row['total_scanned']:,} | {avail_str} | {row['reachable']:,} | "
                 f"{row.get('has_statement', 0):,} | {row.get('found_in_footer', 0):,} | "
                 f"{stmt_pct} | {period} |"
             )

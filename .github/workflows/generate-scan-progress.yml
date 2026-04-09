@@ -1,16 +1,9 @@
 name: Generate Scan Progress Report
 
 on:
-  # Re-generate progress after every major scan workflow completes.
-  workflow_run:
-    workflows:
-      - "Scan Social Media Links"
-      - "Scan Technology Stack"
-      - "Scan Accessibility Statements"
-      - "Scan Third-Party JavaScript"
-      - "URL Validation - Batched"
-    types:
-      - completed
+  # Re-generate progress once per day.
+  schedule:
+    - cron: "15 5 * * *"
 
   # Allow manual trigger at any time.
   workflow_dispatch:

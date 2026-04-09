@@ -18,7 +18,7 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
-from src.lib.country_utils import country_filename_to_code
+from src.lib.country_utils import country_code_to_display_name, country_filename_to_code
 from src.lib.settings import load_settings
 
 
@@ -343,11 +343,12 @@ def _build_stats_block(
         ]
         for row in by_country:
             cc = row["country_code"]
+            display_cc = country_code_to_display_name(cc)
             available = seed_counts.get(cc, 0)
             avail_str = f"{available:,}" if available else "—"
             last = (row.get("last_scan") or "—")[:10]
             lines.append(
-                f"| {cc} | {row['total_scanned']:,} | {row['total_detected']:,} "
+                f"| {display_cc} | {row['total_scanned']:,} | {row['total_detected']:,} "
                 f"| {avail_str} | {last} |"
             )
         lines += [

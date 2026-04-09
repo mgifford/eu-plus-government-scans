@@ -1,6 +1,10 @@
 """Unit tests for country utility functions."""
 
-from src.lib.country_utils import country_code_to_filename, country_filename_to_code
+from src.lib.country_utils import (
+    country_code_to_display_name,
+    country_code_to_filename,
+    country_filename_to_code,
+)
 
 
 def test_country_filename_to_code():
@@ -35,3 +39,10 @@ def test_roundtrip_conversion_from_code():
         filename = country_code_to_filename(code)
         result = country_filename_to_code(filename)
         assert result == code
+
+
+def test_country_code_to_display_name():
+    """Test converting country codes to human-friendly display names."""
+    assert country_code_to_display_name("ICELAND") == "Iceland"
+    assert country_code_to_display_name("REPUBLIC_OF_CYPRUS") == "Cyprus"
+    assert country_code_to_display_name("UNITED_KINGDOM_UK") == "United Kingdom"

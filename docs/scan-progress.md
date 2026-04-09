@@ -71,14 +71,14 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | NORWAY | 239 | 239 | 233 | 55 | 2 | 0 | 211 | 10 | 13 | 0 | 2 | Mar 2026 – Apr 2026 |
 | POLAND | 14,938 | 14,938 | 13,959 | 6,167 | 301 | 959 | 8,616 | 1,092 | 325 | 1 | 1,049 | Mar 2026 – Apr 2026 |
 | PORTUGAL | 3,503 | 3,503 | 2,933 | 1,015 | 57 | 175 | 2,039 | 430 | 70 | 2 | 183 | Mar 2026 – Apr 2026 |
-| REPUBLIC_OF_CYPRUS | 24 | 24 | 24 | 11 | 0 | 0 | 19 | 5 | 0 | 0 | 0 | Mar 2026 – Apr 2026 |
+| Cyprus | 24 | 24 | 24 | 11 | 0 | 0 | 19 | 5 | 0 | 0 | 0 | Mar 2026 – Apr 2026 |
 | ROMANIA | 799 | 799 | 351 | 124 | 6 | 11 | 273 | 42 | 1 | 0 | 14 | Mar 2026 – Apr 2026 |
 | SLOVAKIA | 434 | 434 | 413 | 135 | 9 | 13 | 382 | 17 | 9 | 0 | 13 | Mar 2026 – Apr 2026 |
 | SLOVENIA | 200 | 200 | 190 | 52 | 7 | 9 | 156 | 21 | 6 | 1 | 9 | Mar 2026 – Apr 2026 |
 | SPAIN | 6,069 | 6,069 | 5,481 | 2,057 | 31 | 327 | 3,208 | 1,808 | 373 | 51 | 316 | Mar 2026 – Apr 2026 |
 | SWEDEN | 1,558 | 1,558 | 1,487 | 477 | 14 | 35 | 1,362 | 92 | 24 | 11 | 25 | Mar 2026 – Apr 2026 |
 | SWITZERLAND | 2,117 | 2,117 | 2,082 | 557 | 56 | 128 | 1,565 | 239 | 215 | 56 | 114 | Mar 2026 – Apr 2026 |
-| UNITED_KINGDOM_UK | 19,502 | 19,502 | 18,787 | 6,777 | 37 | 714 | 11,490 | 4,239 | 1,016 | 127 | 675 | Mar 2026 – Apr 2026 |
+| United Kingdom | 19,502 | 19,502 | 18,743 | 6,627 | 37 | 701 | 11,462 | 4,152 | 990 | 118 | 668 | Mar 2026 – Apr 2026 |
 
 > **Tier columns** (Twitter-only / Modern / Mixed / No Social) classify each page by its overall social media presence. **Platform columns** (Twitter / X / Bluesky / Mastodon) count pages with at least one link to that platform — a page may appear in more than one platform column.
 
@@ -136,15 +136,15 @@ Checks whether each government page links to an accessibility statement as requi
 | NETHERLANDS | 937 | 909 | 449 | 439 | 49% | Mar 2026 – Apr 2026 |
 | NORWAY | 239 | 233 | 108 | 102 | 46% | Mar 2026 – Apr 2026 |
 | POLAND | 13,875 | 12,866 | 5,309 | 3,369 | 41% | Mar 2026 – Apr 2026 |
-| PORTUGAL | 3,503 | 2,937 | 895 | 720 | 30% | Mar 2026 – Apr 2026 |
-| REPUBLIC_OF_CYPRUS | 24 | 24 | 0 | 0 | 0% | Mar 2026 – Apr 2026 |
+| PORTUGAL | 3,503 | 2,931 | 885 | 710 | 30% | Mar 2026 – Apr 2026 |
+| Cyprus | 24 | 24 | 0 | 0 | 0% | Mar 2026 – Apr 2026 |
 | ROMANIA | 799 | 351 | 28 | 9 | 8% | Mar 2026 – Apr 2026 |
 | SLOVAKIA | 434 | 414 | 192 | 177 | 46% | Mar 2026 – Apr 2026 |
 | SLOVENIA | 200 | 190 | 100 | 74 | 53% | Mar 2026 – Apr 2026 |
 | SPAIN | 6,069 | 5,374 | 2,379 | 2,083 | 44% | Mar 2026 – Apr 2026 |
 | SWEDEN | 1,558 | 1,486 | 860 | 785 | 58% | Mar 2026 – Apr 2026 |
 | SWITZERLAND | 2,117 | 2,082 | 980 | 978 | 47% | Mar 2026 – Apr 2026 |
-| UNITED_KINGDOM_UK | 10,586 | 9,949 | 5,811 | 5,450 | 58% | Mar 2026 – Apr 2026 |
+| United Kingdom | 10,586 | 9,947 | 5,811 | 5,450 | 58% | Mar 2026 – Apr 2026 |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
