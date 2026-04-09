@@ -3,8 +3,6 @@ title: Third-Party JavaScript
 layout: page
 ---
 
-# Third-Party JavaScript on EU Government Sites
-
 <!-- THIRD_PARTY_JS_STATS_START -->
 
 _Stats as of 2026-04-09 14:27 UTC — last scan: 2026-04-08_
