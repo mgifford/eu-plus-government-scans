@@ -7,7 +7,7 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-04-09 12:52 UTC — last scan: 2026-04-08_
+_Stats as of 2026-04-09 14:27 UTC — last scan: 2026-04-08_
 
 **104** scan batches run
 
@@ -23,11 +23,11 @@ _Stats as of 2026-04-09 12:52 UTC — last scan: 2026-04-08_
 
 | Country | Scanned | Available | Reachable | URLs with 3rd-Party JS | Known Service Loads | Last Scan |
 |---------|---------|-----------|-----------|------------------------|--------------------|----------|
-| AUSTRIA | 821 | 821 | 787 | 264 | 44 | 2026-04-08 |
-| BELGIUM | 1,309 | 1,309 | 1,230 | 637 | 717 | 2026-04-08 |
-| BULGARIA | 291 | 291 | 269 | 107 | 120 | 2026-04-08 |
-| CROATIA | 233 | 233 | 232 | 120 | 165 | 2026-04-08 |
-| CZECHIA | 581 | 843 | 552 | 287 | 488 | 2026-04-08 |
+| Austria | 821 | 821 | 787 | 264 | 44 | 2026-04-08 |
+| Belgium | 1,309 | 1,309 | 1,230 | 637 | 717 | 2026-04-08 |
+| Bulgaria | 291 | 291 | 269 | 107 | 120 | 2026-04-08 |
+| Croatia | 233 | 233 | 232 | 120 | 165 | 2026-04-08 |
+| Czechia | 581 | 843 | 552 | 287 | 488 | 2026-04-08 |
 
 > Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and metric from [third-party-tools-data.json](third-party-tools-data.json).
 
