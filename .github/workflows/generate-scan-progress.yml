@@ -115,12 +115,13 @@ jobs:
 
       - name: Commit progress report to repository
         run: |
-          # docs/social-media-data.json and docs/accessibility-data.json are
-          # excluded from git because they can exceed GitHub's 100 MB file-size
-          # limit.  Both files are still uploaded as workflow artifacts above.
+          # docs/social-media-data.json, docs/accessibility-data.json, and
+          # docs/technology-data.json are excluded from git because they can
+          # exceed GitHub's 100 MB file-size limit.  All three files are still
+          # uploaded as workflow artifacts above.
           git add docs/scan-progress.md docs/domains.md docs/index.md \
                   docs/social-media.md \
-                  docs/technology-scanning.md docs/technology-data.json \
+                  docs/technology-scanning.md \
                   docs/third-party-tools.md docs/third-party-tools-data.json \
                   docs/accessibility-statements.md
           if git diff --staged --quiet; then
