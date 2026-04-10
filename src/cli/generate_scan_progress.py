@@ -27,6 +27,13 @@ from src.lib.settings import load_settings
 _PROGRESS_MARKER_START = "<!-- SCAN_PROGRESS_START -->"
 _PROGRESS_MARKER_END = "<!-- SCAN_PROGRESS_END -->"
 
+# Progress-bar rendering constants.
+_BAR_PX_PER_UNIT: int = 6        # pixels per logical width unit (width=20 → 120 px)
+_BAR_MIN_SLIVER_PX: int = 2      # minimum filled width so non-zero bars are visible
+_BAR_GREEN_THRESHOLD: float = 0.67   # ≥ this fraction → green fill
+_BAR_AMBER_THRESHOLD: float = 0.34   # ≥ this fraction → amber fill; below → red
+
+
 def _progress_bar(completed: int, total: int, width: int = 20) -> str:
     """Return an HTML progress bar for report tables.
 
@@ -47,7 +54,7 @@ def _progress_bar(completed: int, total: int, width: int = 20) -> str:
     Args:
         completed: Number of items completed.
         total: Total number of items.
-        width: Logical width units; each unit maps to 6 px
+        width: Logical width units; each unit maps to ``_BAR_PX_PER_UNIT`` px
             (default 20 → 120 px wide bar).
     """
     if total == 0:
@@ -55,17 +62,16 @@ def _progress_bar(completed: int, total: int, width: int = 20) -> str:
     pct = min(completed / total, 1.0)
     pct_display = f"{pct * 100:.1f}%"
 
-    # Each logical width unit maps to 6 px.
-    bar_px = width * 6
+    bar_px = width * _BAR_PX_PER_UNIT
     filled_px = round(pct * bar_px)
     # Always show a visible sliver for any non-zero count.
     if completed > 0 and filled_px == 0:
-        filled_px = 2
+        filled_px = _BAR_MIN_SLIVER_PX
 
     # WCAG 1.4.11 Non-text Contrast: fill colour needs ≥ 3:1 vs background.
-    if pct >= 0.67:
+    if pct >= _BAR_GREEN_THRESHOLD:
         fill = "#15803d"  # green-700
-    elif pct >= 0.34:
+    elif pct >= _BAR_AMBER_THRESHOLD:
         fill = "#b45309"  # amber-700
     else:
         fill = "#b91c1c"  # red-700
