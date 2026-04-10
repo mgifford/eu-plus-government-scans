@@ -879,7 +879,13 @@ blockquote a:focus-visible {
   .site-header-actions {
     align-items: center;
     justify-content: space-between;
+    position: relative;
     width: 100%;
+  }
+
+  .site-nav {
+    order: -1;
+    position: static;
   }
 
   .theme-toggle {
