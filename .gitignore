@@ -25,6 +25,7 @@ _site_local/
 # These files are available as workflow artifacts in GitHub Actions.
 docs/social-media-data.json
 docs/accessibility-data.json
+docs/technology-data.json
 
 data/metadata.db
 data/toon-seeds/countries/*_validated.toon
