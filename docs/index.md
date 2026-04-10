@@ -15,11 +15,11 @@ _Progress as of 2026-04-09 20:20 UTC_
 
 | Scan Type | Pages Scanned | Coverage |
 |-----------|--------------|----------|
-| **Combined Reachability** | **77,498 confirmed reachable** | **██████████████████░░ 93.7%** |
-| Social Media | 82,714 scanned (77,498 reachable) | ████████████████████ 100.0% |
-| URL Validation | 13,771 validated (11,960 valid) | ███░░░░░░░░░░░░░░░░░ 16.6% |
-| Technology | 13,463 scanned | ███░░░░░░░░░░░░░░░░░ 16.3% |
-| Accessibility Statements | 72,735 scanned | █████████████████░░░ 87.9% |
+| **Combined Reachability** | **77,498 confirmed reachable** | **<span role="img" aria-label="93.7% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:112px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">93.7%</span></span>** |
+| Social Media | 82,714 scanned (77,498 reachable) | <span role="img" aria-label="100.0% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:120px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">100.0%</span></span> |
+| URL Validation | 13,771 validated (11,960 valid) | <span role="img" aria-label="16.6% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:20px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">16.6%</span></span> |
+| Technology | 13,463 scanned | <span role="img" aria-label="16.3% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:20px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">16.3%</span></span> |
+| Accessibility Statements | 72,735 scanned | <span role="img" aria-label="87.9% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:105px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">87.9%</span></span> |
 
 **31 countries** with scan data · **77,498** of **82,714** available pages confirmed reachable. See the [Scan Progress Report](scan-progress.md) for full details.
 
