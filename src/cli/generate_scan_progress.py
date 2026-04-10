@@ -27,14 +27,67 @@ from src.lib.settings import load_settings
 _PROGRESS_MARKER_START = "<!-- SCAN_PROGRESS_START -->"
 _PROGRESS_MARKER_END = "<!-- SCAN_PROGRESS_END -->"
 
+# Progress-bar rendering constants.
+_BAR_PX_PER_UNIT: int = 6        # pixels per logical width unit (width=20 → 120 px)
+_BAR_MIN_SLIVER_PX: int = 2      # minimum filled width so non-zero bars are visible
+_BAR_GREEN_THRESHOLD: float = 0.67   # ≥ this fraction → green fill
+_BAR_AMBER_THRESHOLD: float = 0.34   # ≥ this fraction → amber fill; below → red
+
+
 def _progress_bar(completed: int, total: int, width: int = 20) -> str:
-    """Return a simple ASCII progress bar."""
+    """Return an HTML progress bar for report tables.
+
+    The bar is styled with inline CSS and meets WCAG 2.2 AA requirements:
+
+    - Fill colours achieve ≥ 3:1 contrast against white (WCAG 1.4.11).
+    - The percentage label (#374151) achieves > 9:1 contrast on white.
+    - ``role="img"`` + ``aria-label`` provide a text alternative for
+      screen readers (WCAG 1.1.1).
+
+    Colour is mapped to completion level so the chart conveys status at
+    a glance:
+
+    - ≥ 67 %  → green  (#15803d, ~5.1:1 on white)
+    - 34–66 % → amber  (#b45309, ~5.1:1 on white)
+    - < 34 %  → red    (#b91c1c, ~6.0:1 on white)
+
+    Args:
+        completed: Number of items completed.
+        total: Total number of items.
+        width: Logical width units; each unit maps to ``_BAR_PX_PER_UNIT`` px
+            (default 20 → 120 px wide bar).
+    """
     if total == 0:
-        return "░" * width + " (no data)"
+        return "—"
     pct = min(completed / total, 1.0)
-    filled = int(pct * width)
-    bar = "█" * filled + "░" * (width - filled)
-    return f"{bar} {pct * 100:.1f}%"
+    pct_display = f"{pct * 100:.1f}%"
+
+    bar_px = width * _BAR_PX_PER_UNIT
+    filled_px = round(pct * bar_px)
+    # Always show a visible sliver for any non-zero count.
+    if completed > 0 and filled_px == 0:
+        filled_px = _BAR_MIN_SLIVER_PX
+
+    # WCAG 1.4.11 Non-text Contrast: fill colour needs ≥ 3:1 vs background.
+    if pct >= _BAR_GREEN_THRESHOLD:
+        fill = "#15803d"  # green-700
+    elif pct >= _BAR_AMBER_THRESHOLD:
+        fill = "#b45309"  # amber-700
+    else:
+        fill = "#b91c1c"  # red-700
+
+    return (
+        f'<span role="img" aria-label="{pct_display} complete"'
+        f' style="display:inline-flex;align-items:center;gap:4px;'
+        f'vertical-align:middle;">'
+        f'<span style="display:inline-block;width:{bar_px}px;height:12px;'
+        f'background:#e2e8f0;border-radius:2px;overflow:hidden;">'
+        f'<span style="display:block;width:{filled_px}px;height:100%;'
+        f'background:{fill};"></span>'
+        f'</span>'
+        f'<span style="font-size:0.85em;color:#374151;">{pct_display}</span>'
+        f'</span>'
+    )
 
 
 def _count_toon_seed_urls(toon_seeds_dir: Path) -> dict[str, int]:
