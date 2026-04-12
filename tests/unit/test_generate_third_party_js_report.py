@@ -315,22 +315,18 @@ def test_generate_third_party_js_report_with_data(
 
 def test_sanitize_script_src_removes_key_param() -> None:
     """Should strip the ``key`` query parameter from a Maps URL."""
-    src = "https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyC6GyHP-ic_NFaiy0Dg-CVIG9Z3474GlVE&ver=4.27.6"
+    src = "https://maps.googleapis.com/maps/api/js?v=3&key=FAKE_KEY_FOR_TESTING_ONLY&ver=4.27.6"
+    expected = "https://maps.googleapis.com/maps/api/js?v=3&ver=4.27.6"
     result = _sanitize_script_src(src)
-    assert "key=" not in result
-    assert "AIzaSy" not in result
-    assert "maps.googleapis.com" in result
-    assert "v=3" in result
-    assert "ver=4.27.6" in result
+    assert result == expected
 
 
 def test_sanitize_script_src_removes_token_param() -> None:
     """Should strip the ``token`` query parameter."""
-    src = "https://cdn.example.com/script.js?token=secret123&version=2"
+    src = "https://cdn.example.com/script.js?token=FAKE_TOKEN_FOR_TESTING&version=2"
+    expected = "https://cdn.example.com/script.js?version=2"
     result = _sanitize_script_src(src)
-    assert "token=" not in result
-    assert "secret123" not in result
-    assert "version=2" in result
+    assert result == expected
 
 
 def test_sanitize_script_src_no_query_unchanged() -> None:
