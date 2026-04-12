@@ -17,6 +17,7 @@ import sys
 from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
 
 from src.lib.country_utils import country_code_to_display_name, country_filename_to_code
 from src.lib.settings import load_settings
@@ -24,6 +25,32 @@ from src.lib.settings import load_settings
 
 _STATS_MARKER_START = "<!-- THIRD_PARTY_JS_STATS_START -->"
 _STATS_MARKER_END = "<!-- THIRD_PARTY_JS_STATS_END -->"
+
+# Query-string parameter names that may carry API keys or tokens embedded in
+# third-party script src URLs found on scanned government websites.  These are
+# stripped from src values before the data is written to the committed JSON
+# data file so that the repo does not inadvertently store API credentials.
+_SENSITIVE_QUERY_PARAMS: frozenset[str] = frozenset({"key", "token", "apikey", "api_key"})
+
+
+def _sanitize_script_src(src: str) -> str:
+    """Strip sensitive query parameters (e.g. ``key=``) from a script src URL.
+
+    The function parses the URL, removes any query parameter whose name matches
+    a known sensitive pattern, and returns the sanitised URL.  Non-URL values
+    (e.g. relative paths without a scheme) are returned unchanged.
+    """
+    if not src:
+        return src
+    try:
+        parsed = urlparse(src)
+    except ValueError:
+        return src
+    if not parsed.query:
+        return src
+    filtered = [(k, v) for k, v in parse_qsl(parsed.query) if k.lower() not in _SENSITIVE_QUERY_PARAMS]
+    clean_query = urlencode(filtered)
+    return urlunparse(parsed._replace(query=clean_query))
 
 
 def _count_toon_seed_urls(toon_seeds_dir: Path) -> dict[str, int]:
@@ -115,7 +142,7 @@ def _parse_scripts(raw_value: str | None) -> list[dict[str, object]]:
         categories = item.get("categories")
         scripts.append(
             {
-                "src": item.get("src") or "",
+                "src": _sanitize_script_src(item.get("src") or ""),
                 "host": item.get("host") or "",
                 "service_name": item.get("service_name") or "",
                 "version": item.get("version") or "",
