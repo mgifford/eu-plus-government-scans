@@ -16,6 +16,7 @@ from src.cli.generate_third_party_js_report import (
     _query_country_drilldowns,
     _query_script_rows,
     _query_summary,
+    _sanitize_script_src,
     generate_third_party_js_report,
 )
 from src.storage.schema import initialize_schema
@@ -310,3 +311,40 @@ def test_generate_third_party_js_report_with_data(
     assert data["summary"]["urls_with_scripts"] == 2
     assert data["top_services"][0]["name"] == "Google Tag Manager"
     assert data["country_drilldowns"]["ICELAND"]["service_loads"][0]["service_name"] == "Google Tag Manager"
+
+
+def test_sanitize_script_src_removes_key_param() -> None:
+    """Should strip the ``key`` query parameter from a Maps URL."""
+    src = "https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyC6GyHP-ic_NFaiy0Dg-CVIG9Z3474GlVE&ver=4.27.6"
+    result = _sanitize_script_src(src)
+    assert "key=" not in result
+    assert "AIzaSy" not in result
+    assert "maps.googleapis.com" in result
+    assert "v=3" in result
+    assert "ver=4.27.6" in result
+
+
+def test_sanitize_script_src_removes_token_param() -> None:
+    """Should strip the ``token`` query parameter."""
+    src = "https://cdn.example.com/script.js?token=secret123&version=2"
+    result = _sanitize_script_src(src)
+    assert "token=" not in result
+    assert "secret123" not in result
+    assert "version=2" in result
+
+
+def test_sanitize_script_src_no_query_unchanged() -> None:
+    """Should return URLs without query strings unchanged."""
+    src = "https://kit.fontawesome.com/f6f4ea8fb9.js"
+    assert _sanitize_script_src(src) == src
+
+
+def test_sanitize_script_src_empty_unchanged() -> None:
+    """Should return empty string unchanged."""
+    assert _sanitize_script_src("") == ""
+
+
+def test_sanitize_script_src_no_sensitive_params_unchanged() -> None:
+    """Should return URLs whose query params are not sensitive unchanged."""
+    src = "https://www.googletagmanager.com/gtm.js?id=GTM-AAA"
+    assert _sanitize_script_src(src) == src
