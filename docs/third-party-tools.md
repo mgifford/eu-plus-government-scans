@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-04-11 05:42 UTC — last scan: 2026-04-10_
+_Stats as of 2026-04-12 05:55 UTC — last scan: 2026-04-11_
 
-**116** scan batches run
+**124** scan batches run
 
 **3,235** of **82,714** available pages scanned (**3.9%** coverage)
 **3,071** of **3,235** scanned pages were reachable (**94.9%**)
 **1,415** reachable pages loaded at least one third-party script (**46.1%** of reachable)
-**1,539** known third-party service loads identified
+**1,537** known third-party service loads identified
 **17** unique known services across **12** categories
 
 ---
@@ -21,11 +21,11 @@ _Stats as of 2026-04-11 05:42 UTC — last scan: 2026-04-10_
 
 | Country | Scanned | Available | Reachable | URLs with 3rd-Party JS | Known Service Loads | Last Scan |
 |---------|---------|-----------|-----------|------------------------|--------------------|----------|
-| Austria | 821 | 821 | 788 | 264 | 44 | 2026-04-10 |
-| Belgium | 1,309 | 1,309 | 1,230 | 637 | 723 | 2026-04-10 |
-| Bulgaria | 291 | 291 | 269 | 107 | 120 | 2026-04-10 |
-| Croatia | 233 | 233 | 232 | 120 | 164 | 2026-04-10 |
-| Czechia | 581 | 843 | 552 | 287 | 488 | 2026-04-10 |
+| Austria | 821 | 821 | 788 | 264 | 44 | 2026-04-11 |
+| Belgium | 1,309 | 1,309 | 1,230 | 637 | 720 | 2026-04-11 |
+| Bulgaria | 291 | 291 | 269 | 107 | 120 | 2026-04-11 |
+| Croatia | 233 | 233 | 232 | 120 | 165 | 2026-04-11 |
+| Czechia | 581 | 843 | 552 | 287 | 488 | 2026-04-11 |
 
 > Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and metric from [third-party-tools-data.json](third-party-tools-data.json).
 
@@ -36,36 +36,36 @@ _Stats as of 2026-04-11 05:42 UTC — last scan: 2026-04-10_
 | # | Service | Loads |
 |--:|---------|------:|
 | 1 | jsDelivr CDN | **377** |
-| 2 | Google Analytics (GA4) | **229** |
+| 2 | Google Analytics (GA4) | **230** |
 | 3 | unpkg CDN | **219** |
 | 4 | cdnjs (Cloudflare CDN) | **176** |
-| 5 | Google Hosted Libraries | **132** |
+| 5 | Google Hosted Libraries | **130** |
 | 6 | Google reCAPTCHA | **119** |
-| 7 | Google Tag Manager | **114** |
+| 7 | Google Tag Manager | **113** |
 | 8 | jQuery | **76** |
 | 9 | Cookiebot | **27** |
-| 10 | Font Awesome | **19** |
-| 11 | Bootstrap | **19** |
+| 10 | Bootstrap | **19** |
+| 11 | Font Awesome | **19** |
 | 12 | Facebook Pixel | **13** |
 | 13 | Matomo Cloud | **11** |
 | 14 | Zendesk | **2** |
 | 15 | Cloudflare Turnstile / Challenge | **2** |
-| 16 | OneTrust | **2** |
-| 17 | Google Analytics (Universal) | **2** |
+| 16 | Google Analytics (Universal) | **2** |
+| 17 | OneTrust | **2** |
 
 ### Top Service Categories
 
 | # | Category | Loads |
 |--:|----------|------:|
-| 1 | CDN | **904** |
-| 2 | Analytics | **255** |
-| 3 | JavaScript Library | **208** |
+| 1 | CDN | **902** |
+| 2 | Analytics | **256** |
+| 3 | JavaScript Library | **206** |
 | 4 | Security | **121** |
 | 5 | CAPTCHA | **119** |
-| 6 | Tag Manager | **114** |
+| 6 | Tag Manager | **113** |
 | 7 | Cookie Consent | **29** |
-| 8 | Icon Library | **19** |
-| 9 | UI Framework | **19** |
+| 8 | UI Framework | **19** |
+| 9 | Icon Library | **19** |
 | 10 | Advertising | **13** |
 | 11 | Customer Support | **2** |
 | 12 | Chat | **2** |
