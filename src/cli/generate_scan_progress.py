@@ -159,7 +159,7 @@ def generate_progress_report(
 
     if not db_path.exists():
         with output_path.open("w") as f:
-            f.write("# Scan Progress Report\n\n")
+            f.write("---\ntitle: Scan Progress Report\nlayout: page\n---\n\n")
             f.write(f"_Generated: {generated_at}_\n\n")
             f.write("No scan data available yet. Run a scan first.\n")
         if data_path is not None:
@@ -950,7 +950,7 @@ def _write_report(
     all_countries = sorted(set(url_val) | set(social) | set(tech) | set(lighthouse) | set(accessibility))
 
     with output_path.open("w", encoding="utf-8") as f:
-        f.write("# Scan Progress Report\n\n")
+        f.write("---\ntitle: Scan Progress Report\nlayout: page\n---\n\n")
         f.write(f"_Generated: {generated_at}_\n\n")
         f.write(
             "This report tracks how far along each scan type is across all "
