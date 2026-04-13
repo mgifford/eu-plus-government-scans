@@ -9,12 +9,16 @@ def test_deploy_pages_workflow_validates_required_drilldown_json_files() -> None
     content = workflow_path.read_text(encoding="utf-8")
 
     assert "Validate required drilldown JSON files" in content
-    assert "docs/social-media-data.json" in content
-    assert "docs/technology-data.json" in content
-    assert "docs/accessibility-data.json" in content
-    assert "docs/third-party-tools-data.json" in content
-    assert "docs/scan-progress-data.json" in content
+    assert "REQUIRED_DRILLDOWN_JSON_FILES" in content
+    assert "social-media-data.json" in content
+    assert "technology-data.json" in content
+    assert "accessibility-data.json" in content
+    assert "third-party-tools-data.json" in content
+    assert "scan-progress-data.json" in content
+    assert "docs/$file" in content
     assert "GitHub Pages build stopped because one or more drilldown JSON files are missing." in content
+    assert "if [ \"$missing\" -ne 0 ]; then" in content
+    assert "exit 1" in content
 
 
 def test_deploy_pages_workflow_hydrates_scan_progress_artifacts() -> None:
@@ -27,3 +31,7 @@ def test_deploy_pages_workflow_hydrates_scan_progress_artifacts() -> None:
     assert "Download latest scan-progress artifact" in content
     assert "pattern: scan-progress-report-*" in content
     assert "Hydrate drilldown JSON files for site build" in content
+    assert "REQUIRED_DRILLDOWN_JSON_FILES" in content
+    assert "/tmp/scan-progress-artifact/docs/$file" in content
+    assert "/tmp/scan-progress-artifact/$file" in content
+    assert "set -eo pipefail" in content

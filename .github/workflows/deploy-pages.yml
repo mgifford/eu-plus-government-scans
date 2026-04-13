@@ -28,6 +28,7 @@ permissions:
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+  REQUIRED_DRILLDOWN_JSON_FILES: "social-media-data.json technology-data.json accessibility-data.json third-party-tools-data.json scan-progress-data.json"
 
 jobs:
   build:
@@ -57,14 +58,15 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          RUN_ID=$(gh api --paginate "/repos/${{ github.repository }}/actions/artifacts?per_page=100" \
-            --jq '.artifacts[] | select(.expired == false and (.name|startswith("scan-progress-report-"))) | "\(.created_at) \(.workflow_run.id)"' \
-            2>/dev/null | sort -rk1 | head -1 | awk '{print $2}' || echo "")
+          set -eo pipefail
+          ARTIFACT_ROWS=$(gh api --paginate "/repos/${{ github.repository }}/actions/artifacts?per_page=100" \
+            --jq '.artifacts[] | select(.expired == false and (.name|startswith("scan-progress-report-"))) | "\(.created_at) \(.workflow_run.id)"' || true)
+          RUN_ID=$(printf "%s\n" "$ARTIFACT_ROWS" | sort -rk1 | head -1 | awk '{print $2}')
           echo "run_id=${RUN_ID}" >> "$GITHUB_OUTPUT"
           if [ -n "$RUN_ID" ]; then
             echo "Found scan-progress artifact run $RUN_ID"
           else
-            echo "No scan-progress artifact run found"
+            echo "No scan-progress artifact run found; API may have returned no matching artifacts."
           fi
 
       - name: Download latest scan-progress artifact
@@ -80,13 +82,8 @@ jobs:
 
       - name: Hydrate drilldown JSON files for site build
         run: |
-          for file in \
-            social-media-data.json \
-            technology-data.json \
-            accessibility-data.json \
-            third-party-tools-data.json \
-            scan-progress-data.json
-          do
+          set -eo pipefail
+          for file in $REQUIRED_DRILLDOWN_JSON_FILES; do
             if [ -f "/tmp/scan-progress-artifact/docs/$file" ]; then
               cp "/tmp/scan-progress-artifact/docs/$file" "docs/$file"
             elif [ -f "/tmp/scan-progress-artifact/$file" ]; then
@@ -96,16 +93,11 @@ jobs:
 
       - name: Validate required drilldown JSON files
         run: |
+          set -eo pipefail
           missing=0
-          for file in \
-            docs/social-media-data.json \
-            docs/technology-data.json \
-            docs/accessibility-data.json \
-            docs/third-party-tools-data.json \
-            docs/scan-progress-data.json
-          do
-            if [ ! -f "$file" ]; then
-              echo "Missing required data file: $file"
+          for file in $REQUIRED_DRILLDOWN_JSON_FILES; do
+            if [ ! -f "docs/$file" ]; then
+              echo "Missing required data file: docs/$file"
               missing=1
             fi
           done
