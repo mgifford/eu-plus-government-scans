@@ -1,4 +1,7 @@
-# Scan Progress Report
+---
+title: Scan Progress Report
+layout: page
+---
 
 _Generated: 2026-04-13 06:03 UTC_
 

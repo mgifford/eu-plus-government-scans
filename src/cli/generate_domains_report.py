@@ -44,7 +44,7 @@ def generate_domains_report(toon_dir: Path, output_path: Path) -> None:
     toon_files = sorted(toon_dir.glob("*.toon"))
     if not toon_files:
         with output_path.open("w", encoding="utf-8") as f:
-            f.write("# Government Domains\n\n")
+            f.write("---\ntitle: Government Domains\nlayout: page\n---\n\n")
             f.write(f"_Generated: {generated_at}_\n\n")
             f.write("No TOON seed files found.\n")
         print(f"Domains report generated (empty): {output_path}")
@@ -65,7 +65,6 @@ def generate_domains_report(toon_dir: Path, output_path: Path) -> None:
 
     with output_path.open("w", encoding="utf-8") as f:
         f.write("---\ntitle: Government Domains\nlayout: page\n---\n\n")
-        f.write("# Government Domains\n\n")
         f.write(f"_Generated: {generated_at}_\n\n")
         f.write(
             "This page lists all government domains tracked in the dataset, "
