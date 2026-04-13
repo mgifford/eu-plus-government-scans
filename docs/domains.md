@@ -3,8 +3,6 @@ title: Government Domains
 layout: page
 ---
 
-# Government Domains
-
 _Generated: 2026-04-13 06:04 UTC_
 
 This page lists all government domains tracked in the dataset, grouped by country. Data is sourced from the [TOON seed files](https://github.com/mgifford/eu-plus-government-scans/tree/main/data/toon-seeds/countries) in the repository.
@@ -37018,4 +37016,3 @@ This page lists all government domains tracked in the dataset, grouped by countr
 | `yoxfordparishcouncil.gov.uk` | [https://yoxfordparishcouncil.gov.uk/](https://yoxfordparishcouncil.gov.uk/), [https://yoxfordparishcouncil.gov.uk/presentation-from-suffolk-energy-action-solutions/](https://yoxfordparishcouncil.gov.uk/presentation-from-suffolk-energy-action-solutions/) |
 | `ystradgynlaisgp.wales.nhs.uk` | [https://ystradgynlaisgp.wales.nhs.uk/](https://ystradgynlaisgp.wales.nhs.uk/), [https://ystradgynlaisgp.wales.nhs.uk/appointments/](https://ystradgynlaisgp.wales.nhs.uk/appointments/), [https://ystradgynlaisgp.wales.nhs.uk/cookie-policy](https://ystradgynlaisgp.wales.nhs.uk/cookie-policy) |
 | `zainmedical.nhs.uk` | [https://zainmedical.nhs.uk/](https://zainmedical.nhs.uk/), [https://zainmedical.nhs.uk/cookie-information/](https://zainmedical.nhs.uk/cookie-information/), [https://zainmedical.nhs.uk/services/appointments/](https://zainmedical.nhs.uk/services/appointments/) |
-
