@@ -9,6 +9,7 @@ from pathlib import Path
 import pytest
 
 from src.cli.generate_social_media_report import (
+    _build_interactive_block,
     _build_stats_block,
     _build_sovereignty_section,
     _enrich_sovereignty_metrics,
@@ -948,3 +949,13 @@ def test_generate_social_media_report_writes_platform_drilldowns(
 
     content = page_path.read_text()
     assert "Hover or focus any non-zero country-table count" in content
+
+
+def test_build_interactive_block_uses_descriptive_site_link_labels():
+    """Twitter/X drilldown details should use descriptive anchor text."""
+    block = "".join(_build_interactive_block({"Iceland": ["https://example.is/about"]}))
+
+    assert "_formatSiteLinkLabel" in block
+    assert 'var linkLabel = _escHtml(_formatSiteLinkLabel(u));' in block
+    assert '" homepage"' in block
+    assert "_escHtml(u)" in block

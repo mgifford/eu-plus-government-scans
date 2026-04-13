@@ -11,6 +11,7 @@ import json
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import urlparse
 
 
 # ---------------------------------------------------------------------------
@@ -32,6 +33,29 @@ def _country_sort_key(entry: tuple[str, dict]) -> str:
     return data.get("country", "").lower()
 
 
+def _page_link_label(url: str) -> str:
+    """Build descriptive anchor text for page URLs.
+
+    Args:
+        url: Absolute page URL.
+
+    Returns:
+        Human-readable link text describing the destination page.
+        Returns ``"Visit linked site"`` when the URL cannot be parsed or does
+        not include a hostname.
+    """
+    try:
+        parsed = urlparse(url)
+    except ValueError:
+        return "Visit linked site"
+    if not parsed.hostname:
+        return "Visit linked site"
+    path = parsed.path if parsed.path and parsed.path != "/" else ""
+    if not path:
+        return f"Visit {parsed.hostname} homepage"
+    return f"Visit {parsed.hostname}{path}"
+
+
 # ---------------------------------------------------------------------------
 # report generation
 # ---------------------------------------------------------------------------
@@ -44,7 +68,7 @@ def generate_domains_report(toon_dir: Path, output_path: Path) -> None:
     toon_files = sorted(toon_dir.glob("*.toon"))
     if not toon_files:
         with output_path.open("w", encoding="utf-8") as f:
-            f.write("# Government Domains\n\n")
+            f.write("---\ntitle: Government Domains\nlayout: page\n---\n\n")
             f.write(f"_Generated: {generated_at}_\n\n")
             f.write("No TOON seed files found.\n")
         print(f"Domains report generated (empty): {output_path}")
@@ -65,7 +89,6 @@ def generate_domains_report(toon_dir: Path, output_path: Path) -> None:
 
     with output_path.open("w", encoding="utf-8") as f:
         f.write("---\ntitle: Government Domains\nlayout: page\n---\n\n")
-        f.write("# Government Domains\n\n")
         f.write(f"_Generated: {generated_at}_\n\n")
         f.write(
             "This page lists all government domains tracked in the dataset, "
@@ -112,7 +135,8 @@ def generate_domains_report(toon_dir: Path, output_path: Path) -> None:
                     canonical = domain_entry.get("canonical_domain", "")
                     pages = domain_entry.get("pages", [])
                     page_links = ", ".join(
-                        f"[{p['url']}]({p['url']})" for p in pages[:3]
+                        f"[{_page_link_label(p['url'])}]({p['url']})"
+                        for p in pages[:3]
                     )
                     if len(pages) > 3:
                         page_links += f" _(+{len(pages) - 3} more)_"
