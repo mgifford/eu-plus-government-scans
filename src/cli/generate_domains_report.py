@@ -11,6 +11,7 @@ import json
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import urlparse
 
 
 # ---------------------------------------------------------------------------
@@ -30,6 +31,29 @@ def _country_sort_key(entry: tuple[str, dict]) -> str:
     """Sort key for (filename, toon_data) tuples: use country name."""
     _name, data = entry
     return data.get("country", "").lower()
+
+
+def _page_link_label(url: str) -> str:
+    """Build descriptive anchor text for page URLs.
+
+    Args:
+        url: Absolute page URL.
+
+    Returns:
+        Human-readable link text describing the destination page.
+        Returns ``"Visit linked site"`` when the URL cannot be parsed or does
+        not include a hostname.
+    """
+    try:
+        parsed = urlparse(url)
+    except ValueError:
+        return "Visit linked site"
+    if not parsed.hostname:
+        return "Visit linked site"
+    path = parsed.path if parsed.path and parsed.path != "/" else ""
+    if not path:
+        return f"Visit {parsed.hostname} homepage"
+    return f"Visit {parsed.hostname}{path}"
 
 
 # ---------------------------------------------------------------------------
@@ -111,7 +135,8 @@ def generate_domains_report(toon_dir: Path, output_path: Path) -> None:
                     canonical = domain_entry.get("canonical_domain", "")
                     pages = domain_entry.get("pages", [])
                     page_links = ", ".join(
-                        f"[{p['url']}]({p['url']})" for p in pages[:3]
+                        f"[{_page_link_label(p['url'])}]({p['url']})"
+                        for p in pages[:3]
                     )
                     if len(pages) > 3:
                         page_links += f" _(+{len(pages) - 3} more)_"

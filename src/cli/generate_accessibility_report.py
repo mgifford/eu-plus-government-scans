@@ -362,8 +362,7 @@ def _build_stats_block(
         f"(**{_pct(in_footer, has_statement)}** of pages with a statement)",
         "",
         "📥 Machine-readable results are available as the "
-        "`accessibility-data.json` artifact in the "
-        "[latest Generate Scan Progress Report workflow run]"
+        "[accessibility-data.json artifact (machine-readable JSON)]"
         "(https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).",
         "",
         "Each country entry in the JSON file includes page-level evidence for "
@@ -373,8 +372,7 @@ def _build_stats_block(
         "> Hover or focus any non-zero count in the country table to preview the "
         "matching pages. If there are 20 or fewer URLs, the preview shows all of "
         "them; otherwise it shows a short sample. Full machine-readable data is "
-        "available as the `accessibility-data.json` artifact in the "
-        "[latest workflow run]"
+        "available as the [accessibility-data.json artifact (machine-readable JSON)]"
         "(https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).",
     ]
 
