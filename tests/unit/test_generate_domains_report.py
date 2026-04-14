@@ -158,6 +158,8 @@ def test_generate_domains_report_page_links(toon_dir: Path, tmp_path: Path):
 
     assert "https://example.is/" in content
     assert "https://www.gouvernement.fr/" in content
+    assert "Visit example.is homepage" in content
+    assert "[https://example.is/](https://example.is/)" not in content
 
 
 def test_generate_domains_report_has_frontmatter(toon_dir: Path, tmp_path: Path):

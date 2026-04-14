@@ -355,7 +355,7 @@ def _build_stats_block(
             "",
             "> Hover or focus any non-zero country-table count to preview matching pages. "
             "Activate the number to keep the preview open and download a CSV for that "
-            "country and metric from [technology-data.json](technology-data.json).",
+            "country and metric from [Download machine-readable technology data (JSON)](technology-data.json).",
             "",
             "---",
             "",
@@ -388,7 +388,7 @@ def _build_stats_block(
 
     lines += [
         "📥 Machine-readable results: "
-        "[technology-data.json](technology-data.json)",
+        "[Download machine-readable technology data (JSON)](technology-data.json)",
         "",
         _STATS_MARKER_END,
     ]

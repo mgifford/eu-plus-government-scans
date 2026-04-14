@@ -383,7 +383,7 @@ def _build_stats_block(
             "",
             "> Hover or focus any non-zero country-table count to preview matching pages. "
             "Activate the number to keep the preview open and download a CSV for that "
-            "country and metric from [third-party-tools-data.json](third-party-tools-data.json).",
+            "country and metric from [Download machine-readable third-party tools data (JSON)](third-party-tools-data.json).",
             "",
             "---",
             "",
@@ -413,7 +413,7 @@ def _build_stats_block(
 
     lines += [
         "📥 Machine-readable results: "
-        "[third-party-tools-data.json](third-party-tools-data.json)",
+        "[Download machine-readable third-party tools data (JSON)](third-party-tools-data.json)",
         "",
         _STATS_MARKER_END,
     ]

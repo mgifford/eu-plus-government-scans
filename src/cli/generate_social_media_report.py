@@ -710,8 +710,7 @@ def _build_stats_block(
     lines += [
         "",
         "📥 Machine-readable results are available as the "
-        "`social-media-data.json` artifact in the "
-        "[latest Generate Scan Progress Report workflow run]"
+        "[social-media-data.json artifact (machine-readable JSON)]"
         "(https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).",
     ]
 
@@ -790,8 +789,7 @@ def _build_stats_block(
             "",
             "> Hover or focus any non-zero country-table count to preview matching pages. "
             "Activate the number to keep the preview open. Full machine-readable data is "
-            "available as the `social-media-data.json` artifact in the "
-            "[latest workflow run]"
+            "available as the [social-media-data.json artifact (machine-readable JSON)]"
             "(https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).",
         ]
 
@@ -1016,14 +1014,15 @@ def _build_interactive_block(
     var sample = urls.slice(0, 10);
     var items = sample.length > 0
       ? sample.map(function (u) {
+          var linkLabel = _escHtml(_formatSiteLinkLabel(u));
           return '<li><a href="' + _escHtml(u) + '" rel="noopener noreferrer">' +
-                 _escHtml(u) + "</a></li>";
+                 linkLabel + "</a></li>";
         }).join("")
       : "";
     var more = count > sample.length
       ? '<li style="color:#aaa;font-style:italic;">…and ' +
         (count - sample.length).toLocaleString() +
-        ' more — see the <a href="https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml" rel="noopener noreferrer" style="color:#9ecfff;"><code>social-media-data.json</code> artifact in the latest workflow run</a> for the full list.</li>'
+        ' more — see the <a href="https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml" rel="noopener noreferrer" style="color:#9ecfff;">social-media-data.json artifact (machine-readable JSON) in the Generate Scan Progress workflow</a> for the full list.</li>'
       : "";
     return (
       '<details class="sm-tw-details">' +
@@ -1031,6 +1030,21 @@ def _build_interactive_block(
       '<ul class="sm-tw-list">' + items + more + "</ul>" +
       "</details>"
     );
+  }
+
+  // Build descriptive link text for a URL in the Twitter/X details widget.
+  // Returns a human-readable label and falls back to "Visit linked site"
+  // for malformed URLs.
+  function _formatSiteLinkLabel(rawUrl) {
+    try {
+      var parsed = new URL(rawUrl);
+      var path = parsed.pathname && parsed.pathname !== "/" ? parsed.pathname : "";
+      return path
+        ? "Visit " + parsed.hostname + path
+        : "Visit " + parsed.hostname + " homepage";
+    } catch (e) {
+      return "Visit linked site";
+    }
   }
 
   // HTML-escape a string for safe insertion into attribute values and content.
