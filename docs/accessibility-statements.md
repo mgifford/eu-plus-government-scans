@@ -5,20 +5,20 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-04-13 06:04 UTC — last scan: 2026-04-13_
+_Stats as of 2026-04-14 05:56 UTC — last scan: 2026-04-13_
 
-**157** scan batches run
+**173** scan batches run
 
-**75,196** of **82,714** available pages scanned (**90.9%** coverage)
-**70,061** of **75,196** scanned pages were reachable (**93.2%**)
-**34,314** of **70,061** reachable pages have an accessibility statement (**49.0%**)
-**29,815** pages have the statement link in the footer (**86.9%** of pages with a statement)
+**81,371** of **82,714** available pages scanned (**98.4%** coverage)
+**76,212** of **81,371** scanned pages were reachable (**93.7%**)
+**38,007** of **76,212** reachable pages have an accessibility statement (**49.9%**)
+**33,124** pages have the statement link in the footer (**87.2%** of pages with a statement)
 
-📥 Machine-readable results are available as the `accessibility-data.json` artifact in the [latest Generate Scan Progress Report workflow run](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
+📥 Machine-readable results are available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
 
 Each country entry in the JSON file includes page-level evidence for pages with and without accessibility statements, plus a per-domain summary you can share to validate the published counts.
 
-> Hover or focus any non-zero count in the country table to preview the matching pages. If there are 20 or fewer URLs, the preview shows all of them; otherwise it shows a short sample. Full machine-readable data is available as the `accessibility-data.json` artifact in the [latest workflow run](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
+> Hover or focus any non-zero count in the country table to preview the matching pages. If there are 20 or fewer URLs, the preview shows all of them; otherwise it shows a short sample. Full machine-readable data is available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
 
 ---
 
@@ -47,17 +47,17 @@ Each country entry in the JSON file includes page-level evidence for pages with 
 | Malta | 608 | 608 | 595 | 381 | 374 | 64.0% | Mar 2026 – Apr 2026 |
 | Netherlands | 937 | 937 | 911 | 453 | 443 | 49.7% | Mar 2026 – Apr 2026 |
 | Norway | 239 | 239 | 233 | 108 | 102 | 46.4% | Mar 2026 – Apr 2026 |
-| Poland | 13,877 | 14,938 | 12,981 | 5,407 | 3,450 | 41.7% | Mar 2026 – Apr 2026 |
-| Portugal | 3,503 | 3,503 | 2,938 | 895 | 720 | 30.5% | Mar 2026 – Apr 2026 |
+| Poland | 14,938 | 14,938 | 13,946 | 6,019 | 3,786 | 43.2% | Mar 2026 – Apr 2026 |
+| Portugal | 3,503 | 3,503 | 3,119 | 1,070 | 895 | 34.3% | Mar 2026 – Apr 2026 |
 | Cyprus | 24 | 24 | 24 | 0 | 0 | 0.0% | Mar 2026 – Apr 2026 |
 | Romania | 799 | 799 | 351 | 28 | 9 | 8.0% | Mar 2026 – Apr 2026 |
 | Slovakia | 434 | 434 | 414 | 192 | 177 | 46.4% | Mar 2026 – Apr 2026 |
 | Slovenia | 200 | 200 | 190 | 100 | 74 | 52.6% | Mar 2026 – Apr 2026 |
-| Spain | 6,069 | 6,069 | 5,491 | 2,439 | 2,141 | 44.4% | Mar 2026 – Apr 2026 |
-| Sweden | 1,558 | 1,558 | 1,486 | 860 | 785 | 57.9% | Mar 2026 – Apr 2026 |
+| Spain | 6,069 | 6,069 | 5,498 | 2,444 | 2,145 | 44.5% | Mar 2026 – Apr 2026 |
+| Sweden | 1,558 | 1,558 | 1,487 | 861 | 786 | 57.9% | Mar 2026 – Apr 2026 |
 | Switzerland | 2,117 | 2,117 | 2,082 | 980 | 978 | 47.1% | Mar 2026 – Apr 2026 |
-| United Kingdom | 13,045 | 19,502 | 12,399 | 7,268 | 6,853 | 58.6% | Mar 2026 – Apr 2026 |
-| **Total** | **75,196** | **82,714** | **70,061** | **34,314** | **29,815** | **49.0%** | — |
+| United Kingdom | 18,159 | 19,502 | 17,396 | 10,168 | 9,646 | 58.5% | Mar 2026 – Apr 2026 |
+| **Total** | **81,371** | **82,714** | **76,212** | **38,007** | **33,124** | **49.9%** | — |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 

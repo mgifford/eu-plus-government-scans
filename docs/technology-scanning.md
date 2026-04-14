@@ -5,7 +5,7 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-04-13 06:04 UTC — last scan: 2026-04-13_
+_Stats as of 2026-04-14 05:56 UTC — last scan: 2026-04-13_
 
 **37** scan batches run
 
@@ -51,7 +51,7 @@ _Stats as of 2026-04-13 06:04 UTC — last scan: 2026-04-13_
 | Switzerland | 578 | 493 | 2,117 | 2026-04-11 |
 | United Kingdom | 3,565 | 3,394 | 19,502 | 2026-04-11 |
 
-> Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and metric from [technology-data.json](technology-data.json).
+> Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and metric from [Download machine-readable technology data (JSON)](technology-data.json).
 
 ---
 
@@ -100,7 +100,7 @@ _Stats as of 2026-04-13 06:04 UTC — last scan: 2026-04-13_
 | 14 | Miscellaneous | **2,567** |
 | 15 | Widgets | **2,385** |
 
-📥 Machine-readable results: [technology-data.json](technology-data.json)
+📥 Machine-readable results: [Download machine-readable technology data (JSON)](technology-data.json)
 
 <!-- TECH_STATS_END -->
 
