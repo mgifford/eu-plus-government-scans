@@ -2,16 +2,22 @@
 
 from pathlib import Path
 
+import yaml
+
 
 def test_generate_scan_progress_workflow_uploads_scan_progress_data_json() -> None:
     """Workflow artifact should include scan-progress drilldown JSON."""
     workflow_path = Path(".github/workflows/generate-scan-progress.yml")
-    content = workflow_path.read_text(encoding="utf-8")
-    upload_section = content.partition("- name: Upload progress report artifact")[2]
-    assert upload_section, "Upload progress report artifact step is missing from workflow."
+    workflow = yaml.safe_load(workflow_path.read_text(encoding="utf-8"))
 
-    upload_path_block = upload_section.partition("retention-days:")[0]
-    assert upload_path_block, "Could not find artifact path block before retention-days."
+    jobs = workflow.get("jobs", {})
+    steps = jobs.get("generate-progress-report", {}).get("steps", [])
+    upload_step = next(
+        (step for step in steps if step.get("name") == "Upload progress report artifact"),
+        None,
+    )
 
-    assert "Upload progress report artifact" in content
-    assert "docs/scan-progress-data.json" in upload_path_block
+    assert upload_step is not None, "Upload progress report artifact step is missing."
+
+    upload_path = upload_step.get("with", {}).get("path", "")
+    assert "docs/scan-progress-data.json" in upload_path
