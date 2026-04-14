@@ -139,6 +139,7 @@ jobs:
           name: scan-progress-report-${{ github.run_number }}
           path: |
             docs/scan-progress.md
+            docs/scan-progress-data.json
             docs/domains.md
             docs/index.md
             docs/social-media.md
