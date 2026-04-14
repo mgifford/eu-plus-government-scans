@@ -138,7 +138,8 @@ def test_generate_progress_report_missing_db(tmp_path: Path):
 
     assert output_path.exists()
     content = output_path.read_text()
-    assert "# Scan Progress Report" in content
+    assert "title: Scan Progress Report" in content
+    assert "layout: page" in content
     assert "No scan data available yet" in content
 
 
@@ -150,7 +151,8 @@ def test_generate_progress_report_empty_db(empty_db: Path, tmp_path: Path):
     assert output_path.exists()
     content = output_path.read_text()
     # Empty DB → no validation data → gracefully handled
-    assert "# Scan Progress Report" in content
+    assert "title: Scan Progress Report" in content
+    assert "layout: page" in content
 
 
 def test_generate_progress_report_with_data(populated_db: Path, tmp_path: Path):
@@ -162,7 +164,8 @@ def test_generate_progress_report_with_data(populated_db: Path, tmp_path: Path):
     content = output_path.read_text()
 
     # Check main sections
-    assert "# Scan Progress Report" in content
+    assert "title: Scan Progress Report" in content
+    assert "layout: page" in content
     assert "## Overall Coverage" in content
     assert "## URL Validation by Country" in content
     assert "## Social Media Scan by Country" in content

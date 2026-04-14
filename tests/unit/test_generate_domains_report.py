@@ -95,6 +95,7 @@ def test_generate_domains_report_empty_dir(empty_toon_dir: Path, tmp_path: Path)
     assert output_path.exists()
     content = output_path.read_text()
     assert "title: Government Domains" in content
+    assert "layout: page" in content
     assert "No TOON seed files found" in content
 
 
@@ -107,6 +108,7 @@ def test_generate_domains_report_has_expected_sections(
     content = output_path.read_text()
 
     assert "title: Government Domains" in content
+    assert "layout: page" in content
     assert "## Countries" in content
     assert "## France" in content
     assert "## Iceland" in content
