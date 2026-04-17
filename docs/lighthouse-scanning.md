@@ -4,15 +4,16 @@ layout: page
 ---
 
 This page describes how the project runs Google Lighthouse audits on European government
-websites to measure performance, accessibility, best practices, SEO, and Progressive Web App
-(PWA) quality.
+websites to measure performance, accessibility, best practices, and SEO.
+
+👉 **[View the latest Lighthouse results →](lighthouse-results.md)**
 
 ---
 
 ## Overview
 
 The Lighthouse scanner runs the [Google Lighthouse CLI](https://github.com/GoogleChrome/lighthouse)
-against each government page URL and extracts the five headline category scores:
+against each government page URL and extracts four headline category scores:
 
 | Category | What it measures |
 |---|---|
@@ -20,9 +21,12 @@ against each government page URL and extracts the five headline category scores:
 | **Accessibility** | WCAG-aligned accessibility checks (colour contrast, ARIA labels, keyboard navigation, …) |
 | **Best Practices** | Security headers, HTTPS, modern web APIs, console errors |
 | **SEO** | Search-engine crawlability, meta tags, structured data |
-| **PWA** | Progressive Web App criteria (service worker, offline capability, installability) |
 
 All scores are on a **0–100** scale (stored internally as 0.0–1.0).
+
+> PWA (Progressive Web App) audits are skipped — they are not relevant to EU
+> Web Accessibility Directive requirements and omitting them reduces per-URL
+> scan time significantly.
 
 ---
 
@@ -52,7 +56,13 @@ python3 -m src.cli.scan_lighthouse --all
 ### Scan all countries with a runtime cap (recommended for CI)
 
 ```bash
-python3 -m src.cli.scan_lighthouse --all --max-runtime 110 --rate-limit 0.2
+python3 -m src.cli.scan_lighthouse \
+  --all \
+  --max-runtime 110 \
+  --concurrency 3 \
+  --skip-recently-scanned-days 30 \
+  --only-categories performance,accessibility,best-practices,seo \
+  --throttling-method provided
 ```
 
 ### Command-line options
@@ -62,8 +72,12 @@ python3 -m src.cli.scan_lighthouse --all --max-runtime 110 --rate-limit 0.2
 | `--country CODE` | — | Country code to scan (e.g. `FRANCE`, `ICELAND`) |
 | `--all` | — | Scan all countries in the TOON directory |
 | `--toon-dir PATH` | `data/toon-seeds/countries` | Directory with `.toon` seed files |
-| `--rate-limit N` | `0.2` | Maximum Lighthouse runs per second (0.2 = one every 5 s) |
-| `--max-runtime N` | `0` (no limit) | Maximum runtime in minutes.  The scanner stops gracefully before this limit so that partial results can be saved.  Set to ~10 minutes less than the GitHub Actions `timeout-minutes` value. |
+| `--rate-limit N` | `0.2` | Minimum gap (seconds⁻¹) between starting new Lighthouse processes |
+| `--concurrency N` | `1` | Maximum parallel Lighthouse processes.  `3` is a good default for CI. |
+| `--skip-recently-scanned-days N` | `0` | Skip URLs successfully scanned within the last N days.  `30` for a monthly refresh. |
+| `--only-categories LIST` | (all) | Comma-separated list of Lighthouse categories to run (e.g. `performance,accessibility,best-practices,seo`) |
+| `--throttling-method METHOD` | (lighthouse default) | Lighthouse throttling method.  `provided` skips slow-network simulation, which is appropriate for server-to-server audits. |
+| `--max-runtime N` | `0` (no limit) | Maximum runtime in minutes.  Set to ~10 minutes less than the GitHub Actions `timeout-minutes` value. |
 | `--lighthouse-path PATH` | `lighthouse` | Path to the Lighthouse binary (defaults to `PATH` lookup) |
 
 ---
@@ -71,18 +85,21 @@ python3 -m src.cli.scan_lighthouse --all --max-runtime 110 --rate-limit 0.2
 ## GitHub Actions
 
 The **Scan Lighthouse** workflow (`.github/workflows/scan-lighthouse.yml`) runs automatically
-once a week (Sunday at 04:00 UTC) and can also be triggered manually from the Actions tab:
+every day at 03:00 UTC and can also be triggered manually from the Actions tab:
 
 1. Go to **Actions → Scan Lighthouse → Run workflow**
 2. Optionally enter a country code (leave blank to scan all countries)
-3. Optionally adjust the rate limit
+3. Optionally adjust the rate limit, concurrency, and skip-recently-scanned-days
 
-### Why weekly?
+### Why daily?
 
-Lighthouse is slow (~30–90 s per URL).  At the default 0.2 req/s rate (one URL every 5 s) a
-two-hour run covers roughly 1,400 URLs.  The full corpus of ~82k URLs takes many weeks at this
-rate; a weekly schedule keeps the data reasonably fresh without placing sustained load on
-government servers.  Consider bumping `--rate-limit` for faster initial coverage.
+With `--concurrency 3`, `--only-categories performance,accessibility,best-practices,seo`,
+and `--throttling-method provided`, each URL takes ~20–30 s.  A 110-minute run covers
+~750–1,000 URLs.  Running daily with `--skip-recently-scanned-days 30` ensures every URL
+is refreshed at least once per month while focusing each run on previously uncovered URLs.
+
+Lighthouse now has **its own concurrency group** (`lighthouse-scan`) so it is never
+cancelled by higher-frequency scans like social-media (every 2 hours) or tech (every 4 hours).
 
 ### Artifacts uploaded after each run
 
@@ -154,28 +171,35 @@ ORDER BY accessibility_score DESC;
 
 ```mermaid
 flowchart TD
-    A["scan-lighthouse.yml\n(GitHub Actions — weekly + manual)"]
+    A["scan-lighthouse.yml\n(GitHub Actions — daily at 03:00 UTC + manual)"]
     A --> B["scan_lighthouse.py (CLI)"]
     B --> C["LighthouseScannerJob.scan_country()"]
-    C --> D["LighthouseScanner.scan_urls_batch()"]
-    D --> E["For each URL"]
-    E --> F["subprocess: lighthouse URL --output=json --output-path=stdout"]
-    F --> G["_parse_lighthouse_output() → 5 category scores"]
-    G --> H["Save to url_lighthouse_results table\n(incremental, per URL)"]
-    H --> I["Write *_lighthouse.toon output file"]
+    C --> D["Filter out recently-scanned URLs\n(_get_recently_scanned_urls)"]
+    D --> E["LighthouseScanner.scan_urls_batch()\n(asyncio.Semaphore — up to N concurrent)"]
+    E --> F["For each URL (parallel)"]
+    F --> G["subprocess: lighthouse URL --output=json\n--only-categories=performance,accessibility,\nbest-practices,seo --throttling-method=provided"]
+    G --> H["_parse_lighthouse_output() → 4 category scores"]
+    H --> I["Save to url_lighthouse_results table\n(incremental, per URL)"]
+    I --> J["Write *_lighthouse.toon output file"]
 ```
 
 ---
 
 ## Notes
 
-- **Rate limiting** is applied between audits to avoid overloading government servers.
-  The default is 0.2 runs/s (one URL every 5 s), much slower than other scanners because
-  Lighthouse is CPU-intensive and drives a full headless Chrome session.
+- **Parallelism:** Up to `--concurrency` Lighthouse processes run simultaneously, controlled
+  by an `asyncio.Semaphore`.  The rate limit controls how quickly new processes are started.
+- **Speed flags:** `--only-categories performance,accessibility,best-practices,seo` skips the
+  PWA audit category (irrelevant for government sites) and `--throttling-method provided`
+  skips simulated slow-network throttling.  Together they reduce per-URL time from ~60–90 s
+  to ~20–30 s.
+- **Skip recently scanned:** URLs successfully audited within the last N days are skipped,
+  so each run focuses on previously uncovered or overdue URLs.  Countries not yet scanned
+  are prioritised.
 - Lighthouse requires **Chrome or Chromium** to be installed.  On GitHub Actions
   `ubuntu-latest` runners, Chromium is pre-installed.
 - Failed Lighthouse audits do **not** remove a URL from future scans — errors are recorded
-  but the URL is kept for subsequent validation cycles.
+  but the URL is kept for subsequent audit cycles.
 - Results are persisted **incrementally** (one URL at a time) so that partial results are
   preserved even if the GitHub Actions job times out.
 - The `*_lighthouse.toon` output files are excluded from version control (see `.gitignore`).
