@@ -60,6 +60,50 @@ def main():
         type=str,
         default="lighthouse",
     )
+    parser.add_argument(
+        "--concurrency",
+        help=(
+            "Maximum number of Lighthouse processes to run in parallel "
+            "(default: 1 = sequential).  Values > 1 improve throughput on "
+            "multi-core CI runners."
+        ),
+        type=int,
+        default=1,
+    )
+    parser.add_argument(
+        "--skip-recently-scanned-days",
+        help=(
+            "Skip URLs that were successfully scanned within the last N days "
+            "(default: 0 = always re-scan).  Set to 30 for a monthly refresh "
+            "cycle.  Countries not scanned recently are prioritised."
+        ),
+        type=int,
+        default=0,
+        dest="skip_recently_scanned_days",
+    )
+    parser.add_argument(
+        "--only-categories",
+        help=(
+            "Comma-separated list of Lighthouse categories to run "
+            "(e.g. 'performance,accessibility,best-practices,seo'). "
+            "Omitting 'pwa' saves time on government sites.  "
+            "Default: run all categories."
+        ),
+        type=str,
+        default=None,
+        dest="only_categories",
+    )
+    parser.add_argument(
+        "--throttling-method",
+        help=(
+            "Lighthouse throttling method.  Use 'provided' to skip simulated "
+            "slow-network throttling (faster for server-to-server audits). "
+            "Default: lighthouse's own default (devtools)."
+        ),
+        type=str,
+        default=None,
+        dest="throttling_method",
+    )
 
     args = parser.parse_args()
 
@@ -72,8 +116,19 @@ def main():
         print(f"Error: TOON directory not found: {args.toon_dir}")
         sys.exit(1)
 
+    only_categories = (
+        [c.strip() for c in args.only_categories.split(",") if c.strip()]
+        if args.only_categories
+        else None
+    )
+
     settings = load_settings()
-    job = LighthouseScannerJob(settings, lighthouse_path=args.lighthouse_path)
+    job = LighthouseScannerJob(
+        settings,
+        lighthouse_path=args.lighthouse_path,
+        only_categories=only_categories,
+        throttling_method=args.throttling_method,
+    )
 
     max_runtime_seconds = args.max_runtime * 60 if args.max_runtime > 0 else None
 
@@ -91,6 +146,8 @@ def main():
                     args.toon_dir,
                     rate_limit_per_second=args.rate_limit,
                     max_runtime_seconds=max_runtime_seconds,
+                    skip_recently_scanned_days=args.skip_recently_scanned_days,
+                    concurrency=args.concurrency,
                 )
             )
 
@@ -132,6 +189,8 @@ def main():
                     toon_file,
                     rate_limit_per_second=args.rate_limit,
                     max_runtime_seconds=max_runtime_seconds,
+                    skip_recently_scanned_days=args.skip_recently_scanned_days,
+                    concurrency=args.concurrency,
                 )
             )
 

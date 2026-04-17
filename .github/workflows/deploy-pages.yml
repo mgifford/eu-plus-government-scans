@@ -28,7 +28,7 @@ permissions:
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-  REQUIRED_DRILLDOWN_JSON_FILES: "social-media-data.json technology-data.json accessibility-data.json third-party-tools-data.json scan-progress-data.json"
+  REQUIRED_DRILLDOWN_JSON_FILES: "social-media-data.json technology-data.json accessibility-data.json third-party-tools-data.json scan-progress-data.json lighthouse-data.json"
 
 jobs:
   build:

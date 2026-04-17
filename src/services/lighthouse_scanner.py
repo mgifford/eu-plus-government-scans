@@ -19,7 +19,7 @@ import time
 from collections.abc import Callable
 from dataclasses import dataclass
 from datetime import datetime, timezone
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Sequence
 
 
 @dataclass(slots=True)
@@ -104,6 +104,8 @@ class LighthouseScanner:
         lighthouse_path: str = "lighthouse",
         chrome_flags: str | None = None,
         extra_args: List[str] | None = None,
+        only_categories: Sequence[str] | None = None,
+        throttling_method: str | None = None,
     ):
         """
         Args:
@@ -115,11 +117,27 @@ class LighthouseScanner:
                 ``--chrome-flags``.  ``None`` uses the default headless flags.
             extra_args: Additional CLI arguments appended to every Lighthouse
                 invocation (e.g. ``["--only-categories=accessibility"]``).
+            only_categories: When provided, pass
+                ``--only-categories=<comma-joined>`` to Lighthouse to skip
+                unwanted audit categories and speed up each run.  Common
+                value for government sites:
+                ``["performance", "accessibility", "best-practices", "seo"]``.
+            throttling_method: When provided, pass
+                ``--throttling-method=<value>`` to Lighthouse.  Use
+                ``"provided"`` to skip simulated slow-network throttling
+                (appropriate for server-to-server audits).
         """
         self.timeout_seconds = timeout_seconds
         self.lighthouse_path = lighthouse_path
         self.chrome_flags = chrome_flags if chrome_flags is not None else self._DEFAULT_CHROME_FLAGS
-        self.extra_args = extra_args or []
+
+        # Build extra_args from explicit flags + caller-supplied list.
+        built_extra: List[str] = list(extra_args or [])
+        if only_categories:
+            built_extra.append(f"--only-categories={','.join(only_categories)}")
+        if throttling_method:
+            built_extra.append(f"--throttling-method={throttling_method}")
+        self.extra_args = built_extra
 
     # ------------------------------------------------------------------
     # Internal helpers
@@ -233,17 +251,24 @@ class LighthouseScanner:
         max_runtime_seconds: Optional[float] = None,
         start_time: Optional[float] = None,
         on_result: Optional[Callable[["LighthouseScanResult"], None]] = None,
+        concurrency: int = 1,
     ) -> Dict[str, "LighthouseScanResult"]:
         """
-        Run Lighthouse audits for multiple URLs with rate limiting.
+        Run Lighthouse audits for multiple URLs with rate limiting and
+        optional concurrency.
 
         Lighthouse is slow (30–90 s per URL), so the default rate limit is
         0.2 req/s (one request every 5 seconds) to avoid overloading
-        government servers.
+        government servers.  Setting *concurrency* > 1 allows multiple
+        Lighthouse processes to run simultaneously, which can significantly
+        improve throughput when the bottleneck is network I/O rather than CPU.
 
         Args:
             urls: List of URLs to audit.
-            rate_limit_per_second: Maximum Lighthouse runs per second.
+            rate_limit_per_second: Minimum gap between *starting* new
+                Lighthouse processes.  With concurrency > 1 this controls
+                how quickly new processes are submitted, not how quickly they
+                complete.
             max_runtime_seconds: Stop scanning early when this many seconds
                 have elapsed since *start_time*, leaving a 60-second safety
                 buffer.  ``None`` means no limit.
@@ -252,6 +277,9 @@ class LighthouseScanner:
             on_result: Optional callback invoked immediately after each URL
                 is scanned.  Useful for incremental persistence so that
                 partial results survive a timeout.
+            concurrency: Maximum number of Lighthouse processes to run in
+                parallel.  Defaults to 1 (sequential).  Values > 1 increase
+                throughput but consume more CPU and memory.
 
         Returns:
             Dictionary mapping URL to LighthouseScanResult.  When stopped
@@ -264,8 +292,36 @@ class LighthouseScanner:
 
         _start = start_time if start_time is not None else time.monotonic()
         _safety_buffer = 60.0
+        semaphore = asyncio.Semaphore(max(1, concurrency))
 
         total = len(urls)
+
+        async def _scan_one(idx: int, url: str) -> None:
+            """Scan a single URL, respecting the concurrency semaphore."""
+            async with semaphore:
+                print(f"  [{idx}/{total}] Scanning: {url}")
+                result = await self.scan_url(url)
+                results[url] = result
+
+                if on_result is not None:
+                    on_result(result)
+
+                if result.error_message:
+                    print(f"      ✗ {result.error_message}")
+                else:
+                    perf = (
+                        f"{result.performance_score * 100:.0f}"
+                        if result.performance_score is not None
+                        else "—"
+                    )
+                    a11y = (
+                        f"{result.accessibility_score * 100:.0f}"
+                        if result.accessibility_score is not None
+                        else "—"
+                    )
+                    print(f"      ✓ perf={perf} a11y={a11y}")
+
+        tasks: List[asyncio.Task] = []
         for idx, url in enumerate(urls, 1):
             if max_runtime_seconds is not None:
                 elapsed = time.monotonic() - _start
@@ -275,25 +331,16 @@ class LighthouseScanner:
                         f"  ⏱️  Time budget near limit "
                         f"({elapsed / 60:.1f}m elapsed, "
                         f"{remaining / 60:.1f}m remaining) "
-                        f"— stopping after {idx - 1}/{total} URLs"
+                        f"— stopping after submitting {len(tasks)}/{total} URLs"
                     )
                     break
 
-            print(f"  [{idx}/{total}] Scanning: {url}")
-            result = await self.scan_url(url)
-            results[url] = result
-
-            if on_result is not None:
-                on_result(result)
-
-            if result.error_message:
-                print(f"      ✗ {result.error_message}")
-            else:
-                perf = f"{result.performance_score * 100:.0f}" if result.performance_score is not None else "—"
-                a11y = f"{result.accessibility_score * 100:.0f}" if result.accessibility_score is not None else "—"
-                print(f"      ✓ perf={perf} a11y={a11y}")
+            tasks.append(asyncio.create_task(_scan_one(idx, url)))
 
             if delay > 0:
                 await asyncio.sleep(delay)
+
+        if tasks:
+            await asyncio.gather(*tasks, return_exceptions=True)
 
         return results
