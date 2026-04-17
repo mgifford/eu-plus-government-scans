@@ -5,7 +5,32 @@ layout: page
 
 <!-- LIGHTHOUSE_STATS_START -->
 
-_No Lighthouse scan data yet — stats update automatically after every scan run.  Trigger the **Scan Lighthouse** workflow manually or wait for the next scheduled run._
+_Stats as of 2026-04-17 05:57 UTC — last scan: 2026-04-17_
+
+**1** scan batches run
+
+**318** of **82,714** available pages audited (**0.4%** coverage)
+**300** successful audits (**94.3%** of audited)
+
+**Overall average Lighthouse scores** (0–100 scale):
+
+| Performance | Accessibility | Best Practices | SEO |
+|:-----------:|:-------------:|:--------------:|:---:|
+| 68 | 89 | 93 | 85 |
+
+---
+
+## Lighthouse Scores by Country
+
+| Country | Audited | Available | Perf | A11y | Best Practices | SEO | Last Scan |
+|---------|--------:|----------:|:----:|:----:|:--------------:|:---:|-----------|
+| Austria | 318 | 821 | 68 | 89 | 93 | 85 | 2026-04-17 |
+
+> Scores are averages across all successfully audited URLs, displayed as 0–100 (Lighthouse stores scores as 0.0–1.0 internally).
+
+---
+
+📥 Machine-readable results: [Download machine-readable Lighthouse data (JSON)](lighthouse-data.json)
 
 <!-- LIGHTHOUSE_STATS_END -->
 
