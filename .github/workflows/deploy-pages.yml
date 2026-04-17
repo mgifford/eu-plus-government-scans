@@ -61,7 +61,7 @@ jobs:
           set -eo pipefail
           ARTIFACT_ROWS=$(gh api --paginate "/repos/${{ github.repository }}/actions/artifacts?per_page=100" \
             --jq '.artifacts[] | select(.expired == false and (.name|startswith("scan-progress-report-"))) | "\(.created_at) \(.workflow_run.id)"' || true)
-          RUN_ID=$(printf "%s\n" "$ARTIFACT_ROWS" | sort -rk1 | head -1 | awk '{print $2}')
+          RUN_ID=$(printf "%s\n" "$ARTIFACT_ROWS" | sort -rk1 | head -1 | awk '{print $2}') || true
           echo "run_id=${RUN_ID}" >> "$GITHUB_OUTPUT"
           if [ -n "$RUN_ID" ]; then
             echo "Found scan-progress artifact run $RUN_ID"
