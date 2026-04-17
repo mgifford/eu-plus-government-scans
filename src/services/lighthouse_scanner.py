@@ -296,7 +296,7 @@ class LighthouseScanner:
 
         total = len(urls)
 
-        async def _scan_one(idx: int, url: str) -> None:
+        async def _scan_one_url(idx: int, url: str) -> None:
             """Scan a single URL, respecting the concurrency semaphore."""
             async with semaphore:
                 print(f"  [{idx}/{total}] Scanning: {url}")
@@ -335,12 +335,15 @@ class LighthouseScanner:
                     )
                     break
 
-            tasks.append(asyncio.create_task(_scan_one(idx, url)))
+            tasks.append(asyncio.create_task(_scan_one_url(idx, url)))
 
             if delay > 0:
                 await asyncio.sleep(delay)
 
         if tasks:
-            await asyncio.gather(*tasks, return_exceptions=True)
+            task_results = await asyncio.gather(*tasks, return_exceptions=True)
+            for task_result in task_results:
+                if isinstance(task_result, BaseException):
+                    print(f"      ✗ Unexpected task error: {task_result}")
 
         return results

@@ -52,7 +52,7 @@ def populated_db(tmp_path: Path) -> Path:
     conn = sqlite3.connect(db_path)
     try:
         rows = [
-            # (url, country_code, scan_id, perf, a11y, bp, seo, pwa, error, scanned_at)
+            # (url, country_code, scan_id, perf, a11y, bp, seo, error, scanned_at)
             (
                 "https://example.is/page1",
                 "ICELAND",

@@ -112,6 +112,66 @@ class LighthouseScannerJob:
         finally:
             conn.close()
 
+    def _build_scan_stats(
+        self,
+        scan_id: str,
+        country_code: str,
+        total_urls: int,
+        urls_skipped: int,
+        output_path: Path,
+        scan_results: Dict[str, LighthouseScanResult] | None = None,
+    ) -> Dict[str, Any]:
+        """Build the scan statistics dictionary returned by :meth:`scan_country`.
+
+        Extracts success/error counts and average scores from *scan_results*.
+        When *scan_results* is ``None`` (all URLs were recently-scanned and
+        skipped) the counts and averages default to zero / ``None``.
+        """
+        if scan_results is None:
+            return {
+                "scan_id": scan_id,
+                "country_code": country_code,
+                "total_urls": total_urls,
+                "urls_scanned": 0,
+                "urls_skipped_recently_scanned": urls_skipped,
+                "is_complete": True,
+                "success_count": 0,
+                "error_count": 0,
+                "avg_performance": None,
+                "avg_accessibility": None,
+                "avg_best_practices": None,
+                "avg_seo": None,
+                "output_path": str(output_path),
+            }
+
+        scanned_count = len(scan_results)
+        is_complete = scanned_count == (total_urls - urls_skipped)
+        success_count = sum(1 for r in scan_results.values() if not r.error_message)
+
+        def _avg(attr: str) -> float | None:
+            vals = [
+                getattr(r, attr)
+                for r in scan_results.values()
+                if not r.error_message and getattr(r, attr) is not None
+            ]
+            return round(sum(vals) / len(vals), 3) if vals else None
+
+        return {
+            "scan_id": scan_id,
+            "country_code": country_code,
+            "total_urls": total_urls,
+            "urls_scanned": scanned_count,
+            "urls_skipped_recently_scanned": urls_skipped,
+            "is_complete": is_complete,
+            "success_count": success_count,
+            "error_count": scanned_count - success_count,
+            "avg_performance": _avg("performance_score"),
+            "avg_accessibility": _avg("accessibility_score"),
+            "avg_best_practices": _avg("best_practices_score"),
+            "avg_seo": _avg("seo_score"),
+            "output_path": str(output_path),
+        }
+
     def _save_lighthouse_results(
         self,
         results: List[LighthouseScanResult],
@@ -246,21 +306,9 @@ class LighthouseScannerJob:
             output_path = (
                 toon_path.parent / f"{toon_path.stem}_lighthouse{toon_path.suffix}"
             )
-            return {
-                "scan_id": scan_id,
-                "country_code": country_code,
-                "total_urls": len(all_urls),
-                "urls_scanned": 0,
-                "urls_skipped_recently_scanned": len(recently_scanned),
-                "is_complete": True,
-                "success_count": 0,
-                "error_count": 0,
-                "avg_performance": None,
-                "avg_accessibility": None,
-                "avg_best_practices": None,
-                "avg_seo": None,
-                "output_path": str(output_path),
-            }
+            return self._build_scan_stats(
+                scan_id, country_code, len(all_urls), len(recently_scanned), output_path
+            )
 
         _start = start_time if start_time is not None else time.monotonic()
 
@@ -295,39 +343,17 @@ class LighthouseScannerJob:
                 f"({scanned_count}/{len(urls)} URLs scanned)"
             )
 
-        success_count = sum(1 for r in scan_results.values() if not r.error_message)
-        error_count = scanned_count - success_count
-
-        def _avg_score(attr: str) -> float | None:
-            vals = [
-                getattr(r, attr)
-                for r in scan_results.values()
-                if not r.error_message and getattr(r, attr) is not None
-            ]
-            return round(sum(vals) / len(vals), 3) if vals else None
-
-        stats = {
-            "scan_id": scan_id,
-            "country_code": country_code,
-            "total_urls": len(all_urls),
-            "urls_scanned": scanned_count,
-            "urls_skipped_recently_scanned": len(recently_scanned),
-            "is_complete": is_complete,
-            "success_count": success_count,
-            "error_count": error_count,
-            "avg_performance": _avg_score("performance_score"),
-            "avg_accessibility": _avg_score("accessibility_score"),
-            "avg_best_practices": _avg_score("best_practices_score"),
-            "avg_seo": _avg_score("seo_score"),
-            "output_path": str(output_path),
-        }
+        stats = self._build_scan_stats(
+            scan_id, country_code, len(all_urls), len(recently_scanned),
+            output_path, scan_results
+        )
 
         print(f"\nLighthouse scan {'complete' if is_complete else 'partial'}:")
         print(f"  Scanned:          {scanned_count}/{len(urls)}")
         if recently_scanned:
             print(f"  Skipped (recently scanned): {len(recently_scanned)}")
-        print(f"  Success:          {success_count}")
-        print(f"  Errors:           {error_count}")
+        print(f"  Success:          {stats['success_count']}")
+        print(f"  Errors:           {stats['error_count']}")
         if stats["avg_accessibility"] is not None:
             print(f"  Avg accessibility: {stats['avg_accessibility'] * 100:.1f}")
         if stats["avg_performance"] is not None:
