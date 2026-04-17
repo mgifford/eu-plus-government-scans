@@ -5,9 +5,9 @@ from __future__ import annotations
 import json
 import sqlite3
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Set
 from uuid import uuid4
 
 from src.lib.country_utils import country_filename_to_code
@@ -19,11 +19,19 @@ from src.storage.schema import initialize_schema
 class LighthouseScannerJob:
     """Scanner job that runs Google Lighthouse audits from TOON file URLs."""
 
-    def __init__(self, settings: Settings, lighthouse_path: str = "lighthouse"):
+    def __init__(
+        self,
+        settings: Settings,
+        lighthouse_path: str = "lighthouse",
+        only_categories: list[str] | None = None,
+        throttling_method: str | None = None,
+    ):
         self.settings = settings
         self.scanner = LighthouseScanner(
             timeout_seconds=settings.crawl_timeout_seconds * 6,  # Lighthouse is slow
             lighthouse_path=lighthouse_path,
+            only_categories=only_categories,
+            throttling_method=throttling_method,
         )
         self.db_path = initialize_schema(settings.metadata_db_url)
 
@@ -41,6 +49,128 @@ class LighthouseScannerJob:
                 if url:
                     urls.append(url)
         return urls
+
+    def _get_last_scan_time_per_country(self) -> Dict[str, str]:
+        """Return the latest ``scanned_at`` timestamp per country code.
+
+        Used to sort countries by how recently they were scanned so that
+        never-scanned or least-recently-scanned countries are prioritised at
+        the start of each run.
+
+        Returns:
+            Mapping of country_code → ISO-8601 string of the most recent scan.
+        """
+        conn = sqlite3.connect(self.db_path)
+        try:
+            cursor = conn.execute(
+                """
+                SELECT country_code, MAX(scanned_at)
+                FROM url_lighthouse_results
+                GROUP BY country_code
+                """
+            )
+            return {
+                row[0]: row[1]
+                for row in cursor.fetchall()
+                if row[1] is not None
+            }
+        finally:
+            conn.close()
+
+    def _get_recently_scanned_urls(
+        self, country_code: str, within_days: int
+    ) -> Set[str]:
+        """Return URLs already scanned by Lighthouse within the last N days.
+
+        Only successful scans (no error_message) count as "recently scanned"
+        so that failed URLs are always retried.
+
+        Args:
+            country_code: Country to look up.
+            within_days: Consider results from the last N days.
+
+        Returns:
+            Set of URL strings that do not need re-scanning.
+        """
+        cutoff = (
+            datetime.now(timezone.utc) - timedelta(days=within_days)
+        ).isoformat()
+
+        conn = sqlite3.connect(self.db_path)
+        try:
+            cursor = conn.execute(
+                """
+                SELECT DISTINCT url
+                FROM url_lighthouse_results
+                WHERE country_code = ?
+                  AND error_message IS NULL
+                  AND scanned_at >= ?
+                """,
+                (country_code, cutoff),
+            )
+            return {row[0] for row in cursor.fetchall()}
+        finally:
+            conn.close()
+
+    def _build_scan_stats(
+        self,
+        scan_id: str,
+        country_code: str,
+        total_urls: int,
+        urls_skipped: int,
+        output_path: Path,
+        scan_results: Dict[str, LighthouseScanResult] | None = None,
+    ) -> Dict[str, Any]:
+        """Build the scan statistics dictionary returned by :meth:`scan_country`.
+
+        Extracts success/error counts and average scores from *scan_results*.
+        When *scan_results* is ``None`` (all URLs were recently-scanned and
+        skipped) the counts and averages default to zero / ``None``.
+        """
+        if scan_results is None:
+            return {
+                "scan_id": scan_id,
+                "country_code": country_code,
+                "total_urls": total_urls,
+                "urls_scanned": 0,
+                "urls_skipped_recently_scanned": urls_skipped,
+                "is_complete": True,
+                "success_count": 0,
+                "error_count": 0,
+                "avg_performance": None,
+                "avg_accessibility": None,
+                "avg_best_practices": None,
+                "avg_seo": None,
+                "output_path": str(output_path),
+            }
+
+        scanned_count = len(scan_results)
+        is_complete = scanned_count == (total_urls - urls_skipped)
+        success_count = sum(1 for r in scan_results.values() if not r.error_message)
+
+        def _avg(attr: str) -> float | None:
+            vals = [
+                getattr(r, attr)
+                for r in scan_results.values()
+                if not r.error_message and getattr(r, attr) is not None
+            ]
+            return round(sum(vals) / len(vals), 3) if vals else None
+
+        return {
+            "scan_id": scan_id,
+            "country_code": country_code,
+            "total_urls": total_urls,
+            "urls_scanned": scanned_count,
+            "urls_skipped_recently_scanned": urls_skipped,
+            "is_complete": is_complete,
+            "success_count": success_count,
+            "error_count": scanned_count - success_count,
+            "avg_performance": _avg("performance_score"),
+            "avg_accessibility": _avg("accessibility_score"),
+            "avg_best_practices": _avg("best_practices_score"),
+            "avg_seo": _avg("seo_score"),
+            "output_path": str(output_path),
+        }
 
     def _save_lighthouse_results(
         self,
@@ -117,6 +247,8 @@ class LighthouseScannerJob:
         rate_limit_per_second: float = 0.2,
         max_runtime_seconds: Optional[float] = None,
         start_time: Optional[float] = None,
+        skip_recently_scanned_days: int = 0,
+        concurrency: int = 1,
     ) -> Dict[str, Any]:
         """
         Run Lighthouse audits for all URLs in a country's TOON file.
@@ -134,6 +266,11 @@ class LighthouseScannerJob:
                 60 seconds scanning stops gracefully.  ``None`` = no limit.
             start_time: ``time.monotonic()`` value from the start of the
                 overall job.  ``None`` means a fresh clock for this country.
+            skip_recently_scanned_days: Skip URLs that were already
+                successfully scanned within the last N days.  0 = always
+                re-scan all URLs.
+            concurrency: Maximum number of parallel Lighthouse processes.
+                Defaults to 1 (sequential).
 
         Returns:
             Scan statistics dictionary.
@@ -148,9 +285,30 @@ class LighthouseScannerJob:
         print(f"Loading TOON file: {toon_path}")
 
         toon_data = self._load_toon_file(toon_path)
-        urls = self._extract_urls_from_toon(toon_data)
+        all_urls = self._extract_urls_from_toon(toon_data)
 
-        print(f"Found {len(urls)} URLs to scan")
+        print(f"Found {len(all_urls)} URLs to scan")
+
+        recently_scanned: Set[str] = set()
+        if skip_recently_scanned_days > 0:
+            recently_scanned = self._get_recently_scanned_urls(
+                country_code, within_days=skip_recently_scanned_days
+            )
+            if recently_scanned:
+                print(
+                    f"Skipping {len(recently_scanned)} URLs already scanned "
+                    f"within the last {skip_recently_scanned_days} day(s)"
+                )
+
+        urls = [u for u in all_urls if u not in recently_scanned]
+        if not urls:
+            print(f"All {len(all_urls)} URLs were recently scanned — nothing to do")
+            output_path = (
+                toon_path.parent / f"{toon_path.stem}_lighthouse{toon_path.suffix}"
+            )
+            return self._build_scan_stats(
+                scan_id, country_code, len(all_urls), len(recently_scanned), output_path
+            )
 
         _start = start_time if start_time is not None else time.monotonic()
 
@@ -164,6 +322,7 @@ class LighthouseScannerJob:
             max_runtime_seconds=max_runtime_seconds,
             start_time=_start,
             on_result=_save_result,
+            concurrency=concurrency,
         )
 
         updated_toon = self._update_toon_with_lighthouse(toon_data, scan_results)
@@ -184,36 +343,17 @@ class LighthouseScannerJob:
                 f"({scanned_count}/{len(urls)} URLs scanned)"
             )
 
-        success_count = sum(1 for r in scan_results.values() if not r.error_message)
-        error_count = scanned_count - success_count
-
-        def _avg_score(attr: str) -> float | None:
-            vals = [
-                getattr(r, attr)
-                for r in scan_results.values()
-                if not r.error_message and getattr(r, attr) is not None
-            ]
-            return round(sum(vals) / len(vals), 3) if vals else None
-
-        stats = {
-            "scan_id": scan_id,
-            "country_code": country_code,
-            "total_urls": len(urls),
-            "urls_scanned": scanned_count,
-            "is_complete": is_complete,
-            "success_count": success_count,
-            "error_count": error_count,
-            "avg_performance": _avg_score("performance_score"),
-            "avg_accessibility": _avg_score("accessibility_score"),
-            "avg_best_practices": _avg_score("best_practices_score"),
-            "avg_seo": _avg_score("seo_score"),
-            "output_path": str(output_path),
-        }
+        stats = self._build_scan_stats(
+            scan_id, country_code, len(all_urls), len(recently_scanned),
+            output_path, scan_results
+        )
 
         print(f"\nLighthouse scan {'complete' if is_complete else 'partial'}:")
         print(f"  Scanned:          {scanned_count}/{len(urls)}")
-        print(f"  Success:          {success_count}")
-        print(f"  Errors:           {error_count}")
+        if recently_scanned:
+            print(f"  Skipped (recently scanned): {len(recently_scanned)}")
+        print(f"  Success:          {stats['success_count']}")
+        print(f"  Errors:           {stats['error_count']}")
         if stats["avg_accessibility"] is not None:
             print(f"  Avg accessibility: {stats['avg_accessibility'] * 100:.1f}")
         if stats["avg_performance"] is not None:
@@ -226,6 +366,8 @@ class LighthouseScannerJob:
         toon_seeds_dir: Path,
         rate_limit_per_second: float = 0.2,
         max_runtime_seconds: Optional[float] = None,
+        skip_recently_scanned_days: int = 0,
+        concurrency: int = 1,
     ) -> List[Dict[str, Any]]:
         """
         Run Lighthouse audits for all TOON files in a directory.
@@ -240,12 +382,30 @@ class LighthouseScannerJob:
             max_runtime_seconds: Shared runtime budget in seconds.  The job
                 will not *start* a new country when fewer than 5 minutes
                 remain.  ``None`` means no limit.
+            skip_recently_scanned_days: Skip URLs already scanned within the
+                last N days.  0 = always re-scan all URLs.  Countries not
+                scanned recently are prioritised when this is set.
+            concurrency: Maximum number of parallel Lighthouse processes per
+                country.  Defaults to 1 (sequential).
 
         Returns:
             List of scan statistics for each country processed.
         """
         all_stats = []
-        toon_files = sorted(toon_seeds_dir.glob("*.toon"))
+
+        # When skipping recently-scanned URLs, sort countries so those not
+        # scanned recently (or never scanned) come first.
+        if skip_recently_scanned_days > 0:
+            last_scan_times = self._get_last_scan_time_per_country()
+            toon_files = sorted(
+                toon_seeds_dir.glob("*.toon"),
+                key=lambda p: (
+                    last_scan_times.get(country_filename_to_code(p.stem), ""),
+                    p.stem,
+                ),
+            )
+        else:
+            toon_files = sorted(toon_seeds_dir.glob("*.toon"))
 
         print(f"Found {len(toon_files)} TOON files to process")
 
@@ -274,6 +434,8 @@ class LighthouseScannerJob:
                     rate_limit_per_second,
                     max_runtime_seconds=max_runtime_seconds,
                     start_time=start_time,
+                    skip_recently_scanned_days=skip_recently_scanned_days,
+                    concurrency=concurrency,
                 )
                 all_stats.append(stats)
             except Exception as exc:
