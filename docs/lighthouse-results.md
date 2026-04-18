@@ -30,7 +30,7 @@ _Stats as of 2026-04-18 05:49 UTC — last scan: 2026-04-17_
 
 ---
 
-📥 Machine-readable results: [Download machine-readable Lighthouse data (JSON)](lighthouse-data.json)
+📥 Machine-readable results: [Download machine-readable Lighthouse data (JSON)](lighthouse-data.json) · [Download per-URL Lighthouse data (CSV)](lighthouse-data.csv)
 
 <!-- LIGHTHOUSE_STATS_END -->
 
@@ -68,7 +68,8 @@ country.
 - **0–49**: Poor
 
 For a detailed breakdown of individual audit failures, download the
-[machine-readable Lighthouse data (JSON)](lighthouse-data.json).
+[machine-readable Lighthouse data (JSON)](lighthouse-data.json) or
+the [per-URL Lighthouse data (CSV)](lighthouse-data.csv).
 
 ---
 
