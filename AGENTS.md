@@ -107,7 +107,24 @@ python3 -m src.cli.generate_validation_report --output validation-report.md
 - Default batch size: **2 countries per batch**
 - Artifacts (SQLite DB, validated TOON files) are **stored as workflow artifacts**, not committed
 
-### TOON Files
+### Independent Verification
+
+Every aggregate number published in a report must be backed by machine-readable
+source data so that any reader can independently verify the claim:
+
+- **JSON** (e.g. `docs/lighthouse-data.json`) — full dataset including per-country
+  summaries and, crucially, a `by_url` array containing one entry per scanned URL.
+  The aggregate scores in the country table must be reproducible by grouping the
+  `by_url` rows and recalculating averages.
+- **CSV** (e.g. `docs/lighthouse-data.csv`) — the same per-URL rows exported as a
+  spreadsheet-friendly flat file, one row per URL.  Scores are on the 0–100 scale.
+  The CSV includes a UTF-8 BOM so it opens correctly in Excel without an import wizard.
+
+Both files are uploaded as GitHub Actions workflow artifacts (not committed to the
+repository, as they can be large).  New report generators must follow this pattern:
+produce the aggregate Markdown page **and** the machine-readable backing data files.
+
+---
 
 - Original seed files (`*.toon`) are version-controlled
 - Validated output files (`*_validated.toon`) are **excluded** from version control (see `.gitignore`)
