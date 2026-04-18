@@ -118,6 +118,7 @@ jobs:
           python3 -m src.cli.generate_lighthouse_report \
             --page docs/lighthouse-results.md \
             --data docs/lighthouse-data.json \
+            --csv docs/lighthouse-data.csv \
             --seeds-dir data/toon-seeds/countries \
             2>&1 | tee lighthouse-report-output.txt
 
@@ -161,6 +162,7 @@ jobs:
             docs/accessibility-data.json
             docs/lighthouse-results.md
             docs/lighthouse-data.json
+            docs/lighthouse-data.csv
             scan-progress-output.txt
             social-media-report-output.txt
             domains-report-output.txt

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import csv as _csv
 import json
 import sqlite3
 from pathlib import Path
@@ -11,7 +12,9 @@ import pytest
 from src.cli.generate_lighthouse_report import (
     _build_stats_block,
     _query_by_country,
+    _query_by_url,
     _query_summary,
+    _write_csv,
     generate_lighthouse_report,
 )
 from src.storage.schema import initialize_schema
@@ -296,3 +299,270 @@ def test_generate_lighthouse_report_writes_stats(tmp_path: Path, populated_db: P
     assert data["summary"]["total_scanned"] == 4
     assert data["summary"]["total_success"] == 3
     assert len(data["by_country"]) == 2
+
+
+# ---------------------------------------------------------------------------
+# _query_by_url tests
+# ---------------------------------------------------------------------------
+
+def test_query_by_url_empty_db(empty_db: Path) -> None:
+    """Should return an empty list from an empty database."""
+    conn = sqlite3.connect(empty_db)
+    conn.row_factory = sqlite3.Row
+    try:
+        rows = _query_by_url(conn)
+    finally:
+        conn.close()
+
+    assert rows == []
+
+
+def test_query_by_url_returns_one_row_per_url(populated_db: Path) -> None:
+    """Should return one row per URL with individual scan scores."""
+    conn = sqlite3.connect(populated_db)
+    conn.row_factory = sqlite3.Row
+    try:
+        rows = _query_by_url(conn)
+    finally:
+        conn.close()
+
+    assert len(rows) == 4
+    urls = {r["url"] for r in rows}
+    assert "https://example.is/page1" in urls
+    assert "https://example.is/page2" in urls
+    assert "https://example.is/page3" in urls
+    assert "https://gov.example.fr/home" in urls
+
+
+def test_query_by_url_includes_scores(populated_db: Path) -> None:
+    """Should include individual scores for successful scans."""
+    conn = sqlite3.connect(populated_db)
+    conn.row_factory = sqlite3.Row
+    try:
+        rows = _query_by_url(conn)
+    finally:
+        conn.close()
+
+    row_map = {r["url"]: r for r in rows}
+    page1 = row_map["https://example.is/page1"]
+    assert page1["performance_score"] == pytest.approx(0.9)
+    assert page1["accessibility_score"] == pytest.approx(0.8)
+    assert page1["best_practices_score"] == pytest.approx(1.0)
+    assert page1["seo_score"] == pytest.approx(0.95)
+    assert page1["error_message"] is None
+
+
+def test_query_by_url_includes_error_rows(populated_db: Path) -> None:
+    """Should include error rows (scores are None, error_message is set)."""
+    conn = sqlite3.connect(populated_db)
+    conn.row_factory = sqlite3.Row
+    try:
+        rows = _query_by_url(conn)
+    finally:
+        conn.close()
+
+    row_map = {r["url"]: r for r in rows}
+    page3 = row_map["https://example.is/page3"]
+    assert page3["performance_score"] is None
+    assert page3["error_message"] == "Lighthouse timed out after 120s"
+
+
+def test_query_by_url_ordered_by_country_then_url(populated_db: Path) -> None:
+    """Rows should be ordered by country_code then url."""
+    conn = sqlite3.connect(populated_db)
+    conn.row_factory = sqlite3.Row
+    try:
+        rows = _query_by_url(conn)
+    finally:
+        conn.close()
+
+    france_rows = [r for r in rows if r["country_code"] == "FRANCE"]
+    iceland_rows = [r for r in rows if r["country_code"] == "ICELAND"]
+    # FRANCE comes before ICELAND alphabetically
+    france_idx = rows.index(france_rows[0])
+    iceland_idx = rows.index(iceland_rows[0])
+    assert france_idx < iceland_idx
+
+
+# ---------------------------------------------------------------------------
+# _write_csv tests
+# ---------------------------------------------------------------------------
+
+def test_write_csv_creates_file(populated_db: Path, tmp_path: Path) -> None:
+    """Should create a CSV file with a header and one data row per URL."""
+    conn = sqlite3.connect(populated_db)
+    conn.row_factory = sqlite3.Row
+    try:
+        rows = _query_by_url(conn)
+    finally:
+        conn.close()
+
+    csv_path = tmp_path / "lighthouse-data.csv"
+    _write_csv(rows, csv_path)
+
+    assert csv_path.exists()
+    # File should start with UTF-8 BOM
+    raw = csv_path.read_bytes()
+    assert raw[:3] == b"\xef\xbb\xbf"
+
+
+def test_write_csv_header_columns(populated_db: Path, tmp_path: Path) -> None:
+    """CSV header should match the expected column names."""
+    conn = sqlite3.connect(populated_db)
+    conn.row_factory = sqlite3.Row
+    try:
+        rows = _query_by_url(conn)
+    finally:
+        conn.close()
+
+    csv_path = tmp_path / "lighthouse-data.csv"
+    _write_csv(rows, csv_path)
+
+    text = csv_path.read_text(encoding="utf-8-sig")
+    lines = text.splitlines()
+    header = lines[0]
+    assert "country_code" in header
+    assert "url" in header
+    assert "performance" in header
+    assert "accessibility" in header
+    assert "best_practices" in header
+    assert "seo" in header
+    assert "error" in header
+    assert "scanned_at" in header
+
+
+def test_write_csv_row_count(populated_db: Path, tmp_path: Path) -> None:
+    """CSV should have one data row per URL (plus header)."""
+    conn = sqlite3.connect(populated_db)
+    conn.row_factory = sqlite3.Row
+    try:
+        rows = _query_by_url(conn)
+    finally:
+        conn.close()
+
+    csv_path = tmp_path / "lighthouse-data.csv"
+    _write_csv(rows, csv_path)
+
+    text = csv_path.read_text(encoding="utf-8-sig")
+    data_lines = [ln for ln in text.splitlines() if ln.strip()]
+    # 1 header + 4 data rows
+    assert len(data_lines) == 5
+
+
+def test_write_csv_scores_as_percentage(populated_db: Path, tmp_path: Path) -> None:
+    """Scores should be expressed on the 0–100 scale in the CSV."""
+    conn = sqlite3.connect(populated_db)
+    conn.row_factory = sqlite3.Row
+    try:
+        rows = _query_by_url(conn)
+    finally:
+        conn.close()
+
+    csv_path = tmp_path / "lighthouse-data.csv"
+    _write_csv(rows, csv_path)
+
+    text = csv_path.read_text(encoding="utf-8-sig")
+    reader = _csv.DictReader(text.splitlines())
+    row_map = {r["url"]: r for r in reader}
+
+    page1 = row_map["https://example.is/page1"]
+    assert float(page1["performance"]) == pytest.approx(90.0)
+    assert float(page1["accessibility"]) == pytest.approx(80.0)
+
+
+def test_write_csv_empty_scores_for_error_rows(populated_db: Path, tmp_path: Path) -> None:
+    """Error rows should have empty score cells in the CSV."""
+    conn = sqlite3.connect(populated_db)
+    conn.row_factory = sqlite3.Row
+    try:
+        rows = _query_by_url(conn)
+    finally:
+        conn.close()
+
+    csv_path = tmp_path / "lighthouse-data.csv"
+    _write_csv(rows, csv_path)
+
+    text = csv_path.read_text(encoding="utf-8-sig")
+    reader = _csv.DictReader(text.splitlines())
+    row_map = {r["url"]: r for r in reader}
+
+    page3 = row_map["https://example.is/page3"]
+    assert page3["performance"] == ""
+    assert page3["accessibility"] == ""
+    assert page3["error"] == "Lighthouse timed out after 120s"
+
+
+# ---------------------------------------------------------------------------
+# generate_lighthouse_report CSV integration tests
+# ---------------------------------------------------------------------------
+
+def test_generate_lighthouse_report_writes_csv(
+    tmp_path: Path, populated_db: Path
+) -> None:
+    """Should write a CSV file alongside the JSON when csv_path is provided."""
+    page_path = tmp_path / "lighthouse-results.md"
+    page_path.write_text(_LIGHTHOUSE_PAGE_TEMPLATE, encoding="utf-8")
+    data_path = tmp_path / "lighthouse-data.json"
+    csv_path = tmp_path / "lighthouse-data.csv"
+
+    ok = generate_lighthouse_report(
+        populated_db, page_path, data_path, csv_path=csv_path
+    )
+
+    assert ok
+    assert csv_path.exists()
+    text = csv_path.read_text(encoding="utf-8-sig")
+    assert "url" in text
+    assert "country_code" in text
+    # 4 data rows + header = 5 non-empty lines
+    data_lines = [ln for ln in text.splitlines() if ln.strip()]
+    assert len(data_lines) == 5
+
+
+def test_generate_lighthouse_report_json_contains_by_url(
+    tmp_path: Path, populated_db: Path
+) -> None:
+    """JSON output should include a 'by_url' array with individual scan rows."""
+    page_path = tmp_path / "lighthouse-results.md"
+    page_path.write_text(_LIGHTHOUSE_PAGE_TEMPLATE, encoding="utf-8")
+    data_path = tmp_path / "lighthouse-data.json"
+
+    ok = generate_lighthouse_report(populated_db, page_path, data_path)
+
+    assert ok
+    data = json.loads(data_path.read_text())
+    assert "by_url" in data
+    assert len(data["by_url"]) == 4
+
+
+def test_generate_lighthouse_report_no_csv_when_not_requested(
+    tmp_path: Path, populated_db: Path
+) -> None:
+    """Should not create a CSV when csv_path is None."""
+    page_path = tmp_path / "lighthouse-results.md"
+    page_path.write_text(_LIGHTHOUSE_PAGE_TEMPLATE, encoding="utf-8")
+    data_path = tmp_path / "lighthouse-data.json"
+
+    ok = generate_lighthouse_report(populated_db, page_path, data_path, csv_path=None)
+
+    assert ok
+    # No CSV should have been written
+    assert not (tmp_path / "lighthouse-data.csv").exists()
+
+
+def test_build_stats_block_references_csv() -> None:
+    """Stats block should link to the CSV file for independent verification."""
+    from src.cli.generate_lighthouse_report import _build_stats_block
+
+    summary = {
+        "total_batches": 1,
+        "total_scanned": 2,
+        "total_success": 2,
+        "avg_performance": 0.8,
+        "avg_accessibility": 0.9,
+        "avg_best_practices": 0.95,
+        "avg_seo": 0.85,
+        "last_scan": "2026-01-01T00:00:00",
+    }
+    block = _build_stats_block(summary, [], "2026-01-01 00:00 UTC")
+    assert "lighthouse-data.csv" in block

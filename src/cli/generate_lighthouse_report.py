@@ -5,13 +5,17 @@ updates ``docs/lighthouse-results.md`` with a live stats block between
 ``<!-- LIGHTHOUSE_STATS_START -->`` and ``<!-- LIGHTHOUSE_STATS_END -->``
 markers.  A summary JSON data file (``docs/lighthouse-data.json``) is also
 written so that the page and external tools can link to machine-readable
-results.  This file is uploaded as a workflow artifact rather than committed
-to the repository (it may exceed GitHub's 100 MB file-size limit at scale).
+results.  An optional CSV file (``docs/lighthouse-data.csv``) exports one
+row per scanned URL for independent verification of the aggregate numbers.
+Both files are uploaded as workflow artifacts rather than committed to the
+repository (they may exceed GitHub's 100 MB file-size limit at scale).
 """
 
 from __future__ import annotations
 
 import argparse
+import csv
+import io
 import json
 import sqlite3
 import sys
@@ -117,6 +121,94 @@ def _query_by_country(conn: sqlite3.Connection) -> list[dict]:
         """
     ).fetchall()
     return [dict(r) for r in rows]
+
+
+def _query_by_url(conn: sqlite3.Connection) -> list[dict]:
+    """Return per-URL Lighthouse scan results for independent verification.
+
+    Returns one row per URL using the most recent scan result when a URL has
+    been scanned more than once.  Results are ordered by country code then URL
+    so the output is stable and easy to diff between runs.
+
+    These rows back up the aggregate numbers shown in the country table —
+    every claim in the report can be reproduced by grouping on ``country_code``
+    and recalculating the averages from these individual rows.
+    """
+    rows = conn.execute(
+        """
+        SELECT
+            r.country_code,
+            r.url,
+            r.performance_score,
+            r.accessibility_score,
+            r.best_practices_score,
+            r.seo_score,
+            r.error_message,
+            r.scanned_at
+        FROM url_lighthouse_results r
+        INNER JOIN (
+            SELECT url, MAX(scanned_at) AS latest_scanned_at
+            FROM url_lighthouse_results
+            GROUP BY url
+        ) latest ON r.url = latest.url AND r.scanned_at = latest.latest_scanned_at
+        ORDER BY r.country_code, r.url
+        """
+    ).fetchall()
+    return [dict(row) for row in rows]
+
+
+# ---------------------------------------------------------------------------
+# CSV writer
+# ---------------------------------------------------------------------------
+
+_CSV_FIELDNAMES = [
+    "country_code",
+    "url",
+    "performance",
+    "accessibility",
+    "best_practices",
+    "seo",
+    "error",
+    "scanned_at",
+]
+
+
+def _score_pct(val: float | None) -> str:
+    """Format a 0.0–1.0 score as a percentage string (one decimal place) or empty string."""
+    return f"{val * 100:.1f}" if val is not None else ""
+
+
+def _write_csv(rows_by_url: list[dict], csv_path: Path) -> None:
+    """Write per-URL Lighthouse scan results to a CSV file.
+
+    Args:
+        rows_by_url: Rows returned by :func:`_query_by_url`.
+        csv_path: Destination path for the CSV file.
+
+    The CSV uses UTF-8 encoding with a BOM so it opens correctly in
+    spreadsheet applications.  Scores are expressed on the 0–100 scale
+    (rounded to one decimal place) to match the human-readable report;
+    missing or error rows have empty score cells.
+    """
+    csv_path.parent.mkdir(parents=True, exist_ok=True)
+    buf = io.StringIO()
+    writer = csv.DictWriter(buf, fieldnames=_CSV_FIELDNAMES, lineterminator="\r\n")
+    writer.writeheader()
+    for row in rows_by_url:
+        writer.writerow(
+            {
+                "country_code": row.get("country_code", ""),
+                "url": row.get("url", ""),
+                "performance": _score_pct(row.get("performance_score")),
+                "accessibility": _score_pct(row.get("accessibility_score")),
+                "best_practices": _score_pct(row.get("best_practices_score")),
+                "seo": _score_pct(row.get("seo_score")),
+                "error": row.get("error_message") or "",
+                "scanned_at": row.get("scanned_at") or "",
+            }
+        )
+    # Write UTF-8 BOM so Excel opens the file correctly without import wizard.
+    csv_path.write_bytes(b"\xef\xbb\xbf" + buf.getvalue().encode("utf-8"))
 
 
 # ---------------------------------------------------------------------------
@@ -234,7 +326,9 @@ def _build_stats_block(
 
     lines += [
         "📥 Machine-readable results: "
-        "[Download machine-readable Lighthouse data (JSON)](lighthouse-data.json)",
+        "[Download machine-readable Lighthouse data (JSON)](lighthouse-data.json)"
+        " · "
+        "[Download per-URL Lighthouse data (CSV)](lighthouse-data.csv)",
         "",
         _STATS_MARKER_END,
     ]
@@ -250,8 +344,9 @@ def generate_lighthouse_report(
     page_path: Path,
     data_path: Path,
     toon_seeds_dir: Path | None = None,
+    csv_path: Path | None = None,
 ) -> bool:
-    """Update *page_path* stats block and write *data_path* JSON.
+    """Update *page_path* stats block, write *data_path* JSON, and optionally write *csv_path* CSV.
 
     Args:
         db_path: Path to the SQLite metadata database.
@@ -259,6 +354,9 @@ def generate_lighthouse_report(
         data_path: Output path for the machine-readable JSON data file.
         toon_seeds_dir: Directory containing ``*.toon`` seed files.  When
             provided the stats block includes a coverage line.
+        csv_path: Optional output path for a CSV file containing one row per
+            scanned URL.  When provided, the CSV enables independent
+            verification of the aggregate numbers in the report.
 
     Returns:
         ``True`` on success, ``False`` when the markers are missing from
@@ -269,12 +367,14 @@ def generate_lighthouse_report(
     if not db_path.exists():
         summary: dict = {}
         by_country: list[dict] = []
+        by_url: list[dict] = []
     else:
         conn = sqlite3.connect(db_path)
         conn.row_factory = sqlite3.Row
         try:
             summary = _query_summary(conn)
             by_country = _query_by_country(conn)
+            by_url = _query_by_url(conn)
         finally:
             conn.close()
 
@@ -299,9 +399,15 @@ def generate_lighthouse_report(
             "last_scan": summary.get("last_scan"),
         },
         "by_country": by_country,
+        "by_url": by_url,
     }
     data_path.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"Data file written: {data_path}")
+
+    # --- write the CSV data file (optional) --------------------------------
+    if csv_path is not None:
+        _write_csv(by_url, csv_path)
+        print(f"CSV file written: {csv_path} ({len(by_url)} rows)")
 
     # --- update the Markdown page -----------------------------------------
     if not page_path.exists():
@@ -387,6 +493,15 @@ def main() -> None:
         type=Path,
     )
     parser.add_argument(
+        "--csv",
+        help=(
+            "Output path for the per-URL CSV data file for independent verification "
+            "(default: docs/lighthouse-data.csv)"
+        ),
+        type=Path,
+        default=Path("docs/lighthouse-data.csv"),
+    )
+    parser.add_argument(
         "--seeds-dir",
         help=(
             "Directory containing TOON seed files used to calculate scan "
@@ -405,7 +520,13 @@ def main() -> None:
         db_path = Path(settings.metadata_db_url.replace("sqlite:///", ""))
 
     try:
-        ok = generate_lighthouse_report(db_path, args.page, args.data, args.seeds_dir)
+        ok = generate_lighthouse_report(
+            db_path,
+            args.page,
+            args.data,
+            toon_seeds_dir=args.seeds_dir,
+            csv_path=args.csv,
+        )
         if not ok:
             sys.exit(1)
     except Exception as exc:
