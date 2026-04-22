@@ -270,11 +270,6 @@ def update_index_progress(
             f"({sm_reachable:,} reachable) | "
             f"{_progress_bar(sm_total, denom)} |\n"
         )
-        buf.write(
-            f"| URL Validation | {uv_total:,} validated "
-            f"({uv_valid:,} valid) | "
-            f"{_progress_bar(uv_total, denom)} |\n"
-        )
         if tech_total:
             buf.write(
                 f"| Technology | {tech_total:,} scanned | "
@@ -599,12 +594,6 @@ def _write_overall_coverage(
             f"**{_progress_bar(combined_total, denom)}** |\n"
         )
     f.write(
-        f"| URL Validation | {uv_total:,} validated "
-        f"({uv_valid:,} valid) | "
-        f"{avail_str} | "
-        f"{_progress_bar(uv_total, denom)} |\n"
-    )
-    f.write(
         f"| Social Media | {sm_total:,} scanned "
         f"({sm_reachable:,} reachable) | "
         f"{avail_str} | "
@@ -628,10 +617,7 @@ def _write_overall_coverage(
     f.write("\n")
     f.write(
         "> **Combined Reachability** counts each URL once if it was confirmed "
-        "reachable by *either* URL Validation or Social Media scanning.  "
-        "URL Validation automatically skips pages already confirmed reachable "
-        "by the Social Media scanner (within the last 30 days), so the two "
-        "individual counts complement rather than duplicate each other.\n\n"
+        "reachable by any scan type.\n\n"
     )
 
     return uv_total, uv_valid, sm_total, sm_reachable, tech_total
