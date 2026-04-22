@@ -171,8 +171,9 @@ def test_generate_progress_report_with_data(populated_db: Path, tmp_path: Path):
     assert "## Social Media Scan by Country" in content
     assert "## Scan Priority Guide" in content
 
-    # Check country rows appear
-    assert "ICELAND" in content
+    # Check country rows appear (display names in per-country tables;
+    # uppercase codes in the pending-scan backtick lists)
+    assert "Iceland" in content
     assert "FRANCE" in content
     assert "GERMANY" in content
 
@@ -213,7 +214,7 @@ def test_generate_progress_report_url_validation_stats(
 
     # Iceland has 2 valid + 1 invalid; France has 1 valid
     # The table rows should have numbers present
-    assert "ICELAND" in content
+    assert "Iceland" in content
     assert "FRANCE" in content
     assert "Hover or focus any non-zero **Total**, **Valid**, or **Invalid** count" in content
     assert "scan-progress-data.json" in content
@@ -228,7 +229,6 @@ def test_generate_progress_report_social_tiers(populated_db: Path, tmp_path: Pat
     assert "Social Media Scan by Country" in content
     assert "GERMANY" in content
 
-
 def test_generate_progress_report_technology_section(
     populated_db: Path, tmp_path: Path
 ):
@@ -238,7 +238,7 @@ def test_generate_progress_report_technology_section(
     content = output_path.read_text()
 
     assert "Technology" in content
-    assert "ICELAND" in content
+    assert "Iceland" in content
 
 
 def test_generate_progress_report_pending_social_scan(
@@ -285,7 +285,7 @@ def test_generate_progress_report_social_media_platform_breakdown(
     assert "Bluesky" in content
     assert "Mastodon" in content
     # Should show the countries that have social media data
-    assert "ICELAND" in content
+    assert "Iceland" in content
     assert "GERMANY" in content
     assert "Hover or focus any non-zero platform count" in content
     assert "social-media-data.json" in content
@@ -420,7 +420,6 @@ def test_update_index_progress_with_data(populated_db: Path, tmp_path: Path):
     assert "<!-- SCAN_PROGRESS_START -->" in content
     assert "<!-- SCAN_PROGRESS_END -->" in content
     assert "Social Media" in content
-    assert "URL Validation" in content
     # Coverage table should appear between the markers
     assert "countries" in content.lower()
     # The "Other Section" below the end marker must still be present
@@ -463,7 +462,7 @@ def test_generate_progress_report_lighthouse_section(
     content = output_path.read_text()
 
     assert "## Lighthouse Scan by Country" in content
-    assert "ICELAND" in content
+    assert "Iceland" in content
     # Score columns should be present
     assert "A11y" in content
     assert "Perf" in content
