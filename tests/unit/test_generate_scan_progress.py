@@ -171,11 +171,10 @@ def test_generate_progress_report_with_data(populated_db: Path, tmp_path: Path):
     assert "## Social Media Scan by Country" in content
     assert "## Scan Priority Guide" in content
 
-    # Check country rows appear (display names in per-country tables;
-    # uppercase codes in the pending-scan backtick lists)
+    # Check country rows appear
     assert "Iceland" in content
-    assert "FRANCE" in content
-    assert "GERMANY" in content
+    assert "France" in content
+    assert "Germany" in content
 
 
 def test_generate_progress_report_writes_validation_drilldown_data(
@@ -215,7 +214,7 @@ def test_generate_progress_report_url_validation_stats(
     # Iceland has 2 valid + 1 invalid; France has 1 valid
     # The table rows should have numbers present
     assert "Iceland" in content
-    assert "FRANCE" in content
+    assert "France" in content
     assert "Hover or focus any non-zero **Total**, **Valid**, or **Invalid** count" in content
     assert "scan-progress-data.json" in content
 
@@ -227,7 +226,7 @@ def test_generate_progress_report_social_tiers(populated_db: Path, tmp_path: Pat
     content = output_path.read_text()
 
     assert "Social Media Scan by Country" in content
-    assert "GERMANY" in content
+    assert "Germany" in content
 
 def test_generate_progress_report_technology_section(
     populated_db: Path, tmp_path: Path
@@ -286,7 +285,7 @@ def test_generate_progress_report_social_media_platform_breakdown(
     assert "Mastodon" in content
     # Should show the countries that have social media data
     assert "Iceland" in content
-    assert "GERMANY" in content
+    assert "Germany" in content
     assert "Hover or focus any non-zero platform count" in content
     assert "social-media-data.json" in content
 

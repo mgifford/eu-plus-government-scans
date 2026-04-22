@@ -617,7 +617,7 @@ def _write_overall_coverage(
     f.write("\n")
     f.write(
         "> **Combined Reachability** counts each URL once if it was confirmed "
-        "reachable by URL Validation or Social Media scanning.\n\n"
+        "reachable by any scan type.\n\n"
     )
 
     return uv_total, uv_valid, sm_total, sm_reachable, tech_total
