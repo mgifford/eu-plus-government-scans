@@ -133,9 +133,22 @@ jobs:
         run: |
           python3 -m src.cli.generate_validation_report \
             --output validation-report.md
+
+      - name: Guard against overwriting shared metadata with data-loss result
+        if: always()
+        id: db-guard
+        run: |
+          PREV_RUN_ID="${{ steps.find-metadata.outputs.run_id }}"
+          if [ -n "$PREV_RUN_ID" ] && [ ! -f "data/metadata.db" ]; then
+            echo "safe_to_upload=false" >> $GITHUB_OUTPUT
+            echo "WARNING: Previous artifact found (run $PREV_RUN_ID) but data/metadata.db is missing after download. Skipping overwrite to protect existing data."
+          else
+            echo "safe_to_upload=true" >> $GITHUB_OUTPUT
+            echo "Database present (or no prior artifact) — safe to update shared metadata."
+          fi
       
       - name: Upload artifacts
-        if: always()
+        if: always() && steps.db-guard.outputs.safe_to_upload == 'true'
         uses: actions/upload-artifact@v4
         with:
           name: validation-metadata

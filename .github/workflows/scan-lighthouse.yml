@@ -44,6 +44,7 @@ jobs:
     timeout-minutes: 120
     permissions:
       contents: read
+      actions: read
 
     steps:
       - name: Checkout repository
@@ -68,12 +69,30 @@ jobs:
         run: |
           npm install -g lighthouse
 
+      - name: Find latest metadata artifact run ID
+        id: find-metadata
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          RUN_ID=$(gh api --paginate "/repos/${{ github.repository }}/actions/artifacts?per_page=100&name=validation-metadata" \
+            --jq '.artifacts[] | select(.expired == false) | "\(.created_at) \(.workflow_run.id)"' \
+            2>/dev/null | sort -rk1 | head -1 | awk '{print $2}' || echo "")
+          echo "run_id=${RUN_ID}" >> $GITHUB_OUTPUT
+          if [ -n "$RUN_ID" ]; then
+            echo "Found validation-metadata artifact from run $RUN_ID"
+          else
+            echo "No validation-metadata artifact found — will start with fresh database"
+          fi
+
       - name: Download previous metadata DB (if exists)
+        if: steps.find-metadata.outputs.run_id != ''
         continue-on-error: true
         uses: actions/download-artifact@v4
         with:
           name: validation-metadata
           path: data/
+          run-id: ${{ steps.find-metadata.outputs.run_id }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run Lighthouse scan (specific country)
         if: ${{ github.event.inputs.country != '' }}
@@ -112,8 +131,23 @@ jobs:
           retention-days: 90
           if-no-files-found: warn
 
-      - name: Update shared validation metadata
+      - name: Guard against overwriting shared metadata with data-loss result
         if: always()
+        id: db-guard
+        run: |
+          # If a previous artifact existed but data/metadata.db is not present
+          # (download failed), skip the overwrite to avoid wiping stored data.
+          PREV_RUN_ID="${{ steps.find-metadata.outputs.run_id }}"
+          if [ -n "$PREV_RUN_ID" ] && [ ! -f "data/metadata.db" ]; then
+            echo "safe_to_upload=false" >> $GITHUB_OUTPUT
+            echo "WARNING: Previous artifact found (run $PREV_RUN_ID) but data/metadata.db is missing after download. Skipping overwrite to protect existing data."
+          else
+            echo "safe_to_upload=true" >> $GITHUB_OUTPUT
+            echo "Database present (or no prior artifact) — safe to update shared metadata."
+          fi
+
+      - name: Update shared validation metadata
+        if: always() && steps.db-guard.outputs.safe_to_upload == 'true'
         uses: actions/upload-artifact@v4
         with:
           name: validation-metadata
