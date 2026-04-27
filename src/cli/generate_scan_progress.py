@@ -605,7 +605,7 @@ def _query_avg_ages(conn: sqlite3.Connection) -> dict[str, float | None]:
     for key, sql in queries.items():
         try:
             row = conn.execute(sql).fetchone()
-            result[key] = float(row[0]) if row and row[0] is not None else None
+            result[key] = row[0] if row and row[0] is not None else None
         except sqlite3.OperationalError:
             result[key] = None
     return result
