@@ -1,0 +1,50 @@
+# Lychee link-checker configuration
+# https://lychee.cli.rs/configuration/
+
+# Maximum number of concurrent link checks
+max_concurrency = 5
+
+# Request timeout in seconds
+timeout = 20
+
+# Number of retries on failure
+max_retries = 3
+
+# Wait time between retries (seconds)
+retry_wait_time = 2
+
+# Accept these HTTP response codes as "valid".
+# 2xx = success; 3xx redirects are followed automatically by lychee.
+# 429 (Too Many Requests) is accepted as valid because documentation links
+# to sites like GitHub or shields.io are often rate-limited in CI.  The
+# three built-in retries with backoff already handle transient 429s — if a
+# link is genuinely gone the server returns 404, not 429.
+accept = "200..=299,429"
+
+# User-agent string
+user_agent = "Mozilla/5.0 (compatible; lychee/2.x; +https://github.com/lycheeverse/lychee)"
+
+# Exclude URLs matching these regular expressions from checking.
+# - localhost / 127.0.0.1  : local development server referenced in README
+# - example.gov / unreachable.gov : placeholder URLs used in code examples
+# - shields.io badge URLs  : sometimes rate-limited; not worth failing CI
+exclude = [
+    "http://127\\.0\\.0\\.1",
+    "http://localhost",
+    "https?://.*\\.example\\.gov",
+    "https?://example\\.gov",
+    "https?://unreachable\\.gov",
+    "https://img\\.shields\\.io",
+]
+
+# Exclude specific files that are machine-generated scan reports containing
+# tens of thousands of government URLs — checking those would drown out
+# real documentation link errors.
+exclude_path = [
+    "docs/domains.md",
+    "docs/scan-progress.md",
+    "docs/lighthouse-results.md",
+    "docs/accessibility-statements.md",
+    "docs/third-party-tools.md",
+    "docs/third-party-tools-data.json",
+]
