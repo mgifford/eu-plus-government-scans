@@ -5,72 +5,7 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-04-26 05:58 UTC — last scan: 2026-04-25_
-
-**73** scan batches run
-
-**3,260** of **82,714** available pages scanned (**3.9%** coverage)
-**3,095** of **3,260** scanned pages were reachable (**94.9%**)
-**1,433** reachable pages loaded at least one third-party script (**46.3%** of reachable)
-**1,587** known third-party service loads identified
-**17** unique known services across **12** categories
-
----
-
-## Third-Party JavaScript by Country
-
-| Country | Scanned | Available | Reachable | URLs with 3rd-Party JS | Known Service Loads | Last Scan |
-|---------|---------|-----------|-----------|------------------------|--------------------|----------|
-| Austria | 821 | 821 | 790 | 266 | 40 | 2026-04-25 |
-| Belgium | 1,309 | 1,309 | 1,227 | 637 | 718 | 2026-04-25 |
-| Bulgaria | 291 | 291 | 269 | 107 | 120 | 2026-04-25 |
-| Croatia | 233 | 233 | 232 | 120 | 163 | 2026-04-25 |
-| Czechia | 606 | 843 | 577 | 303 | 546 | 2026-04-25 |
-
-> Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and metric from [Download machine-readable third-party tools data (JSON)](third-party-tools-data.json).
-
----
-
-### Top Third-Party Services
-
-| # | Service | Loads |
-|--:|---------|------:|
-| 1 | jsDelivr CDN | **382** |
-| 2 | Google Analytics (GA4) | **243** |
-| 3 | unpkg CDN | **216** |
-| 4 | cdnjs (Cloudflare CDN) | **178** |
-| 5 | Google Hosted Libraries | **149** |
-| 6 | Google reCAPTCHA | **130** |
-| 7 | Google Tag Manager | **107** |
-| 8 | jQuery | **87** |
-| 9 | Cookiebot | **24** |
-| 10 | Font Awesome | **20** |
-| 11 | Bootstrap | **19** |
-| 12 | Facebook Pixel | **13** |
-| 13 | Matomo Cloud | **11** |
-| 14 | Zendesk | **2** |
-| 15 | Cloudflare Turnstile / Challenge | **2** |
-| 16 | Google Analytics (Universal) | **2** |
-| 17 | OneTrust | **2** |
-
-### Top Service Categories
-
-| # | Category | Loads |
-|--:|----------|------:|
-| 1 | CDN | **925** |
-| 2 | Analytics | **269** |
-| 3 | JavaScript Library | **236** |
-| 4 | Security | **132** |
-| 5 | CAPTCHA | **130** |
-| 6 | Tag Manager | **107** |
-| 7 | Cookie Consent | **26** |
-| 8 | Icon Library | **20** |
-| 9 | UI Framework | **19** |
-| 10 | Advertising | **13** |
-| 11 | Customer Support | **2** |
-| 12 | Chat | **2** |
-
-📥 Machine-readable results: [Download machine-readable third-party tools data (JSON)](third-party-tools-data.json)
+_No scan data yet — stats update automatically after every scan run._
 
 <!-- THIRD_PARTY_JS_STATS_END -->
 

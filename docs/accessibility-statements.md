@@ -5,61 +5,7 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-04-26 05:58 UTC — last scan: 2026-04-26_
-
-**85** scan batches run
-
-**82,171** of **82,714** available pages scanned (**99.3%** coverage)
-**75,645** of **82,171** scanned pages were reachable (**92.1%**)
-**37,291** of **75,645** reachable pages have an accessibility statement (**49.3%**)
-**32,694** pages have the statement link in the footer (**87.7%** of pages with a statement)
-
-📥 Machine-readable results are available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
-
-Each country entry in the JSON file includes page-level evidence for pages with and without accessibility statements, plus a per-domain summary you can share to validate the published counts.
-
-> Hover or focus any non-zero count in the country table to preview the matching pages. If there are 20 or fewer URLs, the preview shows all of them; otherwise it shows a short sample. Full machine-readable data is available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
-
----
-
-## Accessibility Statement Scan by Country
-
-| Country | Scanned | Available | Reachable | Has Statement | In Footer | Statement % | Scan Period |
-|---------|---------|-----------|-----------|--------------|-----------|------------|-------------|
-| Austria | 821 | 821 | 790 | 552 | 522 | 69.9% | Apr 2026 |
-| Belgium | 1,309 | 1,309 | 1,224 | 547 | 499 | 44.7% | Apr 2026 |
-| Bulgaria | 291 | 291 | 268 | 61 | 59 | 22.8% | Apr 2026 |
-| Croatia | 233 | 233 | 232 | 86 | 62 | 37.1% | Apr 2026 |
-| Czechia | 843 | 843 | 800 | 424 | 365 | 53.0% | Apr 2026 |
-| Denmark | 1,521 | 1,521 | 1,503 | 1,033 | 1,013 | 68.7% | Apr 2026 |
-| Estonia | 396 | 396 | 383 | 141 | 71 | 36.8% | Apr 2026 |
-| Finland | 180 | 180 | 172 | 112 | 105 | 65.1% | Apr 2026 |
-| France | 10,007 | 10,007 | 9,172 | 3,316 | 3,174 | 36.2% | Apr 2026 |
-| Germany | 6,555 | 6,555 | 6,449 | 4,622 | 3,884 | 71.7% | Apr 2026 |
-| Greece | 1,748 | 1,748 | 1,622 | 398 | 236 | 24.5% | Apr 2026 |
-| Hungary | 390 | 390 | 364 | 64 | 48 | 17.6% | Apr 2026 |
-| Iceland | 139 | 139 | 135 | 18 | 7 | 13.3% | Apr 2026 |
-| Ireland | 522 | 522 | 495 | 220 | 199 | 44.4% | Apr 2026 |
-| Italy | 5,338 | 5,338 | 4,644 | 2,529 | 2,479 | 54.5% | Apr 2026 |
-| Latvia | 802 | 802 | 757 | 469 | 428 | 62.0% | Apr 2026 |
-| Lithuania | 120 | 120 | 108 | 0 | 0 | 0.0% | Apr 2026 |
-| Luxembourg | 571 | 571 | 264 | 99 | 88 | 37.5% | Apr 2026 |
-| Malta | 608 | 608 | 595 | 387 | 380 | 65.0% | Apr 2026 |
-| Netherlands | 937 | 937 | 911 | 444 | 434 | 48.7% | Apr 2026 |
-| Norway | 239 | 239 | 233 | 108 | 102 | 46.4% | Apr 2026 |
-| Poland | 14,395 | 14,938 | 13,269 | 5,509 | 3,535 | 41.5% | Apr 2026 |
-| Portugal | 3,503 | 3,503 | 2,916 | 881 | 713 | 30.2% | Apr 2026 |
-| Cyprus | 24 | 24 | 24 | 0 | 0 | 0.0% | Apr 2026 |
-| Romania | 799 | 799 | 343 | 27 | 9 | 7.9% | Apr 2026 |
-| Slovakia | 434 | 434 | 414 | 192 | 177 | 46.4% | Apr 2026 |
-| Slovenia | 200 | 200 | 187 | 97 | 71 | 51.9% | Apr 2026 |
-| Spain | 6,069 | 6,069 | 5,172 | 2,333 | 2,040 | 45.1% | Apr 2026 |
-| Sweden | 1,558 | 1,558 | 1,472 | 843 | 772 | 57.3% | Apr 2026 |
-| Switzerland | 2,117 | 2,117 | 2,047 | 949 | 948 | 46.4% | Apr 2026 |
-| United Kingdom | 19,502 | 19,502 | 18,680 | 10,830 | 10,274 | 58.0% | Apr 2026 |
-| **Total** | **82,171** | **82,714** | **75,645** | **37,291** | **32,694** | **49.3%** | — |
-
-> **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
+_No scan data yet — stats update automatically after every scan run._
 
 <!-- ACCESSIBILITY_STATS_END -->
 
