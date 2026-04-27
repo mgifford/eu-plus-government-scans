@@ -3,6 +3,7 @@
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](LICENSE)
 [![Deploy GitHub Pages](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/deploy-pages.yml)
 [![GitHub Pages](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://mgifford.github.io/eu-plus-government-scans/)
+[![Check Documentation Links](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/check-links.yml/badge.svg)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/check-links.yml)
 
 Scans and seed datasets for finding accessibility statements on government websites,
 with a Europe-first scope (plus selected non-EU countries like UK and Switzerland).
@@ -309,7 +310,7 @@ code and documentation in this repository. Known uses include:
 | Tool / LLM | What it was used for |
 |---|---|
 | GitHub Copilot (OpenAI Codex / GPT-4 family) | Code completion, refactoring suggestions, and inline documentation while writing Python source files |
-| Claude (Anthropic) | PR reviews, writing and editing documentation (README, AGENTS.md, docs/), and code-generation tasks via the GitHub Copilot Coding Agent |
+| Claude (Anthropic) | PR reviews, writing and editing documentation (README, AGENTS.md, docs/), code-generation tasks via the GitHub Copilot Coding Agent, and implementing the documentation link-checker workflow (`check-links.yml`) inspired by the GitHubNext agentics approach |
 | ChatGPT / GPT-4 / GPT-5 (OpenAI) | Answering design questions, reviewing draft implementations, helping implement docs/report-generation pages for scan outputs such as technology and third-party JavaScript reporting, adding table drilldowns and CSV evidence downloads for published scan counts, and debugging CI/browser automation such as Playwright + axe accessibility checks for the generated site |
 
 > **Note for contributors and AI agents:** if you use an AI tool while contributing to this

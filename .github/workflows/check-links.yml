@@ -1,0 +1,80 @@
+name: Check Documentation Links
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**.md'
+      - '.lychee.toml'
+  pull_request:
+    paths:
+      - '**.md'
+      - '.lychee.toml'
+  schedule:
+    # Run every Wednesday at 20:00 UTC
+    - cron: '0 20 * * 3'
+  workflow_dispatch:
+
+# Only one link-check run at a time; newer runs supersede older ones on the
+# same branch to avoid wasted minutes from stacked pushes.
+concurrency:
+  group: check-links-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check links with lychee
+        id: lychee
+        uses: lycheeverse/lychee-action@v2.8.0
+        with:
+          # Check all Markdown files in the repo.  Generated scan-report files
+          # with tens of thousands of government URLs are excluded via the
+          # exclude_path entries in .lychee.toml so they don't drown out real
+          # documentation link errors.
+          args: >-
+            --config .lychee.toml
+            --verbose
+            --no-progress
+            '**.md'
+          # Write a machine-readable summary so the step summary is populated.
+          output: lychee-report.md
+          format: markdown
+          # Do not fail the job immediately; we post a summary first.
+          fail: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Write step summary
+        if: always()
+        run: |
+          echo "## Documentation Link Check" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ -f lychee-report.md ]; then
+            cat lychee-report.md >> $GITHUB_STEP_SUMMARY
+          else
+            echo "No report generated." >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: Upload link-check report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lychee-link-report
+          path: lychee-report.md
+          retention-days: 30
+          if-no-files-found: warn
+
+      - name: Fail if broken links were found
+        if: steps.lychee.outputs.exit_code != '0'
+        run: |
+          echo "::error::Broken links detected. See the step summary or the uploaded artifact for details."
+          exit 1
