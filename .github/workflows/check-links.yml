@@ -11,8 +11,8 @@ on:
       - '**.md'
       - '.lychee.toml'
   schedule:
-    # Run every Monday at 08:00 UTC
-    - cron: '0 8 * * 1'
+    # Run every Wednesday at 20:00 UTC
+    - cron: '0 20 * * 3'
   workflow_dispatch:
 
 # Only one link-check run at a time; newer runs supersede older ones on the
