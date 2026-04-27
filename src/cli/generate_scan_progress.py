@@ -34,6 +34,24 @@ _BAR_GREEN_THRESHOLD: float = 0.67   # ≥ this fraction → green fill
 _BAR_AMBER_THRESHOLD: float = 0.34   # ≥ this fraction → amber fill; below → red
 
 
+def _format_age_days(days: float | None) -> str:
+    """Return a human-readable string for an average scan age in days.
+
+    Args:
+        days: Average age in fractional days, or None when no data exists.
+
+    Returns:
+        A compact age string such as ``"2.3 days"``, ``"18 h"``, or ``"—"``
+        when no data is available.
+    """
+    if days is None:
+        return "—"
+    if days < 1:
+        hours = days * 24
+        return f"{hours:.0f} h"
+    return f"{days:.1f} days"
+
+
 def _progress_bar(completed: int, total: int, width: int = 20) -> str:
     """Return an HTML progress bar for report tables.
 
@@ -243,6 +261,7 @@ def update_index_progress(
             lighthouse = _query_lighthouse(conn)
             accessibility = _query_accessibility(conn)
             combined_reachable = _query_combined_reachability(conn)
+            avg_ages = _query_avg_ages(conn)
         finally:
             conn.close()
 
@@ -258,32 +277,37 @@ def update_index_progress(
 
         denom = total_available or combined_total or sm_total or uv_total or 1
 
-        buf.write("| Scan Type | Pages Scanned | Coverage |\n")
-        buf.write("|-----------|--------------|----------|\n")
+        sm_age = _format_age_days(avg_ages.get("social_media"))
+        tech_age = _format_age_days(avg_ages.get("technology"))
+        lh_age = _format_age_days(avg_ages.get("lighthouse"))
+        a11y_age = _format_age_days(avg_ages.get("accessibility"))
+
+        buf.write("| Scan Type | Pages Scanned | Coverage | Avg Age |\n")
+        buf.write("|-----------|--------------|----------|---------|\n")
         if combined_total:
             buf.write(
                 f"| **Combined Reachability** | **{combined_total:,} confirmed reachable** | "
-                f"**{_progress_bar(combined_total, denom)}** |\n"
+                f"**{_progress_bar(combined_total, denom)}** | — |\n"
             )
         buf.write(
             f"| Social Media | {sm_total:,} scanned "
             f"({sm_reachable:,} reachable) | "
-            f"{_progress_bar(sm_total, denom)} |\n"
+            f"{_progress_bar(sm_total, denom)} | {sm_age} |\n"
         )
         if tech_total:
             buf.write(
                 f"| Technology | {tech_total:,} scanned | "
-                f"{_progress_bar(tech_total, denom)} |\n"
+                f"{_progress_bar(tech_total, denom)} | {tech_age} |\n"
             )
         if lh_total:
             buf.write(
                 f"| Lighthouse | {lh_total:,} scanned | "
-                f"{_progress_bar(lh_total, denom)} |\n"
+                f"{_progress_bar(lh_total, denom)} | {lh_age} |\n"
             )
         if a11y_total:
             buf.write(
                 f"| Accessibility Statements | {a11y_total:,} scanned | "
-                f"{_progress_bar(a11y_total, denom)} |\n"
+                f"{_progress_bar(a11y_total, denom)} | {a11y_age} |\n"
             )
         buf.write("\n")
         if total_available:
@@ -545,6 +569,48 @@ def _query_lighthouse(conn: sqlite3.Connection) -> dict[str, dict]:
     return result
 
 
+def _query_avg_ages(conn: sqlite3.Connection) -> dict[str, float | None]:
+    """Return average scan age in days for each scan type.
+
+    The average age for a scan type is the mean number of days since each
+    URL was last scanned.  Returns ``None`` for a scan type when no rows
+    exist in its table.
+
+    Keys returned: ``"url_validation"``, ``"social_media"``,
+    ``"technology"``, ``"lighthouse"``, ``"accessibility"``.
+    """
+    queries: dict[str, str] = {
+        "url_validation": (
+            "SELECT AVG(julianday('now') - julianday(validated_at))"
+            " FROM url_validation_results WHERE validated_at IS NOT NULL"
+        ),
+        "social_media": (
+            "SELECT AVG(julianday('now') - julianday(scanned_at))"
+            " FROM url_social_media_results WHERE scanned_at IS NOT NULL"
+        ),
+        "technology": (
+            "SELECT AVG(julianday('now') - julianday(scanned_at))"
+            " FROM url_tech_results WHERE scanned_at IS NOT NULL"
+        ),
+        "lighthouse": (
+            "SELECT AVG(julianday('now') - julianday(scanned_at))"
+            " FROM url_lighthouse_results WHERE scanned_at IS NOT NULL"
+        ),
+        "accessibility": (
+            "SELECT AVG(julianday('now') - julianday(scanned_at))"
+            " FROM url_accessibility_results WHERE scanned_at IS NOT NULL"
+        ),
+    }
+    result: dict[str, float | None] = {}
+    for key, sql in queries.items():
+        try:
+            row = conn.execute(sql).fetchone()
+            result[key] = float(row[0]) if row and row[0] is not None else None
+        except sqlite3.OperationalError:
+            result[key] = None
+    return result
+
+
 def _write_overall_coverage(
     f,
     url_val: dict[str, dict],
@@ -554,6 +620,7 @@ def _write_overall_coverage(
     seed_counts: dict[str, int] | None = None,
     combined_reachable: dict[str, dict] | None = None,
     accessibility: dict[str, dict] | None = None,
+    avg_ages: dict[str, float | None] | None = None,
 ) -> tuple:
     """Write the overall coverage section.
 
@@ -564,6 +631,9 @@ def _write_overall_coverage(
     When *combined_reachable* is provided a summary row is prepended that
     shows the union of URLs confirmed reachable by *any* scan type (URL
     Validation or Social Media).
+
+    When *avg_ages* is provided each scan-type row shows the average age of
+    its most recent scan data, giving a quick indicator of data freshness.
     """
     uv_total = sum(d["total"] for d in url_val.values())
     uv_valid = sum(d["valid"] for d in url_val.values())
@@ -579,45 +649,55 @@ def _write_overall_coverage(
 
     avail_str = f"{total_available:,}" if total_available else "—"
 
+    ages = avg_ages or {}
+    sm_age = _format_age_days(ages.get("social_media"))
+    tech_age = _format_age_days(ages.get("technology"))
+    lh_age = _format_age_days(ages.get("lighthouse"))
+    a11y_age = _format_age_days(ages.get("accessibility"))
+
     f.write("## Overall Coverage\n\n")
     if total_available:
         f.write(
             f"Coverage is measured as pages scanned out of "
             f"**{total_available:,}** pages available in the seed files.\n\n"
         )
-    f.write("| Scan Type | Pages Scanned | Available | Coverage |\n")
-    f.write("|-----------|--------------|-----------|----------|\n")
+    f.write("| Scan Type | Pages Scanned | Available | Coverage | Avg Age |\n")
+    f.write("|-----------|--------------|-----------|----------|---------|\n")
     if combined_total:
         f.write(
             f"| **Combined Reachability** | **{combined_total:,} confirmed reachable** | "
             f"{avail_str} | "
-            f"**{_progress_bar(combined_total, denom)}** |\n"
+            f"**{_progress_bar(combined_total, denom)}** | — |\n"
         )
     f.write(
         f"| Social Media | {sm_total:,} scanned "
         f"({sm_reachable:,} reachable) | "
         f"{avail_str} | "
-        f"{_progress_bar(sm_total, denom)} |\n"
+        f"{_progress_bar(sm_total, denom)} | {sm_age} |\n"
     )
     f.write(
         f"| Technology | {tech_total:,} scanned | "
         f"{avail_str} | "
-        f"{'(manual scan)' if tech_total == 0 else _progress_bar(tech_total, denom)} |\n"
+        f"{'(manual scan)' if tech_total == 0 else _progress_bar(tech_total, denom)} | "
+        f"{tech_age} |\n"
     )
     f.write(
         f"| Lighthouse | {lh_total:,} scanned | "
         f"{avail_str} | "
-        f"{'(manual scan)' if lh_total == 0 else _progress_bar(lh_total, denom)} |\n"
+        f"{'(manual scan)' if lh_total == 0 else _progress_bar(lh_total, denom)} | "
+        f"{lh_age} |\n"
     )
     f.write(
         f"| Accessibility Statements | {a11y_total:,} scanned | "
         f"{avail_str} | "
-        f"{_progress_bar(a11y_total, denom)} |\n"
+        f"{_progress_bar(a11y_total, denom)} | {a11y_age} |\n"
     )
     f.write("\n")
     f.write(
         "> **Combined Reachability** counts each URL once if it was confirmed "
-        "reachable by any scan type.\n\n"
+        "reachable by any scan type. **Avg Age** shows the mean number of days "
+        "(or hours) since each URL in that scan type was last scanned — lower is "
+        "fresher.\n\n"
     )
 
     return uv_total, uv_valid, sm_total, sm_reachable, tech_total
@@ -932,6 +1012,7 @@ def _write_report(
     lighthouse = _query_lighthouse(conn)
     accessibility = _query_accessibility(conn)
     combined_reachable = _query_combined_reachability(conn)
+    avg_ages = _query_avg_ages(conn)
 
     all_countries = sorted(set(url_val) | set(social) | set(tech) | set(lighthouse) | set(accessibility))
 
@@ -943,7 +1024,7 @@ def _write_report(
             "countries. It is regenerated automatically after every scan run.\n\n"
         )
 
-        totals = _write_overall_coverage(f, url_val, social, tech, lighthouse, seed_counts, combined_reachable, accessibility)
+        totals = _write_overall_coverage(f, url_val, social, tech, lighthouse, seed_counts, combined_reachable, accessibility, avg_ages)
         uv_total, uv_valid, sm_total, sm_reachable, tech_total = totals
 
         _write_url_validation_table(f, url_val, all_countries, seed_counts)
