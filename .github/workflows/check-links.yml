@@ -21,6 +21,9 @@ concurrency:
   group: check-links-${{ github.ref }}
   cancel-in-progress: true
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   check-links:
     runs-on: ubuntu-latest
@@ -44,7 +47,7 @@ jobs:
             --config .lychee.toml
             --verbose
             --no-progress
-            '**.md'
+            '**/*.md'
           # Write a machine-readable summary so the step summary is populated.
           output: lychee-report.md
           format: markdown
