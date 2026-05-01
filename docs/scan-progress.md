@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-04-30 06:14 UTC_
+_Generated: 2026-05-01 06:21 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -13,11 +13,11 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
-| **Combined Reachability** | **76,736 confirmed reachable** | 82,714 | **<span role="img" aria-label="92.8% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:111px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">92.8%</span></span>** | — |
-| Social Media | 82,714 scanned (76,736 reachable) | 82,714 | <span role="img" aria-label="100.0% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:120px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">100.0%</span></span> | 6.7 days |
-| Technology | 45,275 scanned | 82,714 | <span role="img" aria-label="54.7% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:66px;height:100%;background:#b45309;"></span></span><span style="font-size:0.85em;color:#374151;">54.7%</span></span> | 7.0 days |
-| Lighthouse | 300 scanned | 82,714 | <span role="img" aria-label="0.4% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:2px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">0.4%</span></span> | 13.2 days |
-| Accessibility Statements | 82,714 scanned | 82,714 | <span role="img" aria-label="100.0% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:120px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">100.0%</span></span> | 6.5 days |
+| **Combined Reachability** | **76,835 confirmed reachable** | 82,714 | **<span role="img" aria-label="92.9% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:111px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">92.9%</span></span>** | — |
+| Social Media | 82,714 scanned (76,835 reachable) | 82,714 | <span role="img" aria-label="100.0% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:120px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">100.0%</span></span> | 7.1 days |
+| Technology | 49,001 scanned | 82,714 | <span role="img" aria-label="59.2% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:71px;height:100%;background:#b45309;"></span></span><span style="font-size:0.85em;color:#374151;">59.2%</span></span> | 7.2 days |
+| Lighthouse | 300 scanned | 82,714 | <span role="img" aria-label="0.4% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:2px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">0.4%</span></span> | 14.2 days |
+| Accessibility Statements | 82,714 scanned | 82,714 | <span role="img" aria-label="100.0% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:120px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">100.0%</span></span> | 7.1 days |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by any scan type. **Avg Age** shows the mean number of days (or hours) since each URL in that scan type was last scanned — lower is fresher.
 
@@ -39,14 +39,14 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Hungary | 390 | 390 | 364 | 122 | 1 | 23 | 218 | 29 | 0 | 0 | 24 | Apr 2026 |
 | Iceland | 139 | 139 | 135 | 48 | 0 | 12 | 75 | 8 | 5 | 0 | 12 | Apr 2026 |
 | Ireland | 522 | 522 | 495 | 188 | 0 | 54 | 254 | 157 | 32 | 18 | 42 | Apr 2026 |
-| Italy | 5,338 | 5,338 | 4,806 | 2,282 | 16 | 272 | 2,252 | 2,049 | 105 | 0 | 288 | Apr 2026 |
+| Italy | 5,338 | 5,338 | 4,811 | 2,288 | 16 | 275 | 2,260 | 2,052 | 109 | 0 | 291 | Apr 2026 |
 | Latvia | 802 | 802 | 766 | 378 | 0 | 85 | 306 | 280 | 47 | 0 | 85 | Apr 2026 |
 | Lithuania | 120 | 120 | 108 | 29 | 0 | 4 | 75 | 5 | 0 | 0 | 4 | Apr 2026 |
 | Luxembourg | 571 | 571 | 264 | 64 | 0 | 53 | 149 | 57 | 3 | 25 | 36 | Apr 2026 |
 | Malta | 608 | 608 | 595 | 129 | 2 | 34 | 432 | 57 | 17 | 0 | 36 | Apr 2026 |
 | Netherlands | 937 | 937 | 911 | 254 | 9 | 97 | 559 | 145 | 74 | 46 | 76 | Apr 2026 |
 | Norway | 239 | 239 | 233 | 56 | 2 | 0 | 176 | 10 | 13 | 0 | 2 | Apr 2026 |
-| Poland | 14,938 | 14,938 | 13,734 | 6,084 | 77 | 981 | 6,668 | 1,071 | 316 | 1 | 1,057 | Apr 2026 |
+| Poland | 14,938 | 14,938 | 13,812 | 6,155 | 77 | 984 | 6,757 | 1,078 | 316 | 1 | 1,060 | Apr 2026 – May 2026 |
 | Portugal | 3,503 | 3,503 | 2,932 | 1,032 | 4 | 179 | 1,734 | 422 | 70 | 2 | 183 | Apr 2026 |
 | Cyprus | 24 | 24 | 24 | 11 | 0 | 0 | 13 | 5 | 0 | 0 | 0 | Apr 2026 |
 | Romania | 799 | 799 | 347 | 125 | 3 | 11 | 208 | 46 | 1 | 0 | 14 | Apr 2026 |
@@ -55,7 +55,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Spain | 6,069 | 6,069 | 5,360 | 2,029 | 11 | 330 | 3,067 | 1,794 | 381 | 50 | 310 | Apr 2026 |
 | Sweden | 1,558 | 1,558 | 1,487 | 488 | 1 | 35 | 965 | 92 | 24 | 11 | 25 | Apr 2026 |
 | Switzerland | 2,117 | 2,117 | 2,082 | 559 | 29 | 128 | 1,391 | 237 | 217 | 56 | 115 | Apr 2026 |
-| United Kingdom | 19,502 | 19,502 | 18,731 | 6,659 | 37 | 696 | 11,412 | 4,137 | 996 | 115 | 668 | Apr 2026 |
+| United Kingdom | 19,502 | 19,502 | 18,747 | 6,711 | 39 | 702 | 11,449 | 4,161 | 1,007 | 118 | 676 | Apr 2026 – May 2026 |
 
 > **Tier columns** (Twitter-only / Modern / Mixed / No Social) classify each page by its overall social media presence. **Platform columns** (Twitter / X / Bluesky / Mastodon) count pages with at least one link to that platform — a page may appear in more than one platform column.
 
@@ -70,17 +70,17 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Bulgaria | 291 | 2026-04-25 |
 | Croatia | 233 | 2026-04-25 |
 | Czechia | 843 | 2026-04-25 |
-| Denmark | 1,521 | 2026-04-26 |
+| Denmark | 1,521 | 2026-04-30 |
 | Estonia | 396 | 2026-04-25 |
 | Finland | 180 | 2026-04-25 |
-| France | 4,064 | 2026-04-26 |
+| France | 4,448 | 2026-04-30 |
 | Germany | 6,555 | 2026-04-27 |
 | Greece | 1,748 | 2026-04-29 |
 | Hungary | 390 | 2026-04-25 |
 | Iceland | 139 | 2026-04-25 |
 | Ireland | 522 | 2026-04-28 |
 | Italy | 4,701 | 2026-04-28 |
-| Latvia | 802 | 2026-04-25 |
+| Latvia | 802 | 2026-04-30 |
 | Lithuania | 120 | 2026-04-26 |
 | Luxembourg | 571 | 2026-04-26 |
 | Malta | 608 | 2026-04-26 |
@@ -92,10 +92,10 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Romania | 709 | 2026-04-29 |
 | Slovakia | 434 | 2026-04-28 |
 | Slovenia | 200 | 2026-04-28 |
-| Spain | 3,345 | 2026-04-25 |
+| Spain | 3,345 | 2026-04-30 |
 | Sweden | 1,558 | 2026-04-29 |
 | Switzerland | 2,117 | 2026-04-29 |
-| United Kingdom | 1,729 | 2026-04-26 |
+| United Kingdom | 5,071 | 2026-04-30 |
 
 ## Lighthouse Scan by Country
 
@@ -119,7 +119,7 @@ Checks whether each government page links to an accessibility statement as requi
 | Denmark | 1,521 | 1,503 | 1,033 | 1,013 | 69% | Apr 2026 |
 | Estonia | 396 | 383 | 141 | 71 | 37% | Apr 2026 |
 | Finland | 180 | 172 | 112 | 105 | 65% | Apr 2026 |
-| France | 10,007 | 9,197 | 3,348 | 3,205 | 36% | Apr 2026 |
+| France | 10,007 | 9,204 | 3,361 | 3,217 | 37% | Apr 2026 |
 | Germany | 6,555 | 6,476 | 4,644 | 3,896 | 72% | Apr 2026 |
 | Greece | 1,748 | 1,624 | 412 | 243 | 25% | Apr 2026 |
 | Hungary | 390 | 364 | 64 | 48 | 18% | Apr 2026 |
@@ -132,16 +132,16 @@ Checks whether each government page links to an accessibility statement as requi
 | Malta | 608 | 595 | 387 | 380 | 65% | Apr 2026 |
 | Netherlands | 937 | 911 | 444 | 434 | 49% | Apr 2026 |
 | Norway | 239 | 233 | 108 | 102 | 46% | Apr 2026 |
-| Poland | 14,938 | 13,791 | 5,914 | 3,723 | 43% | Apr 2026 |
+| Poland | 14,938 | 13,805 | 5,920 | 3,727 | 43% | Apr 2026 |
 | Portugal | 3,503 | 2,931 | 883 | 715 | 30% | Apr 2026 |
 | Cyprus | 24 | 24 | 0 | 0 | 0% | Apr 2026 |
-| Romania | 799 | 345 | 28 | 9 | 8% | Apr 2026 |
+| Romania | 799 | 345 | 28 | 9 | 8% | Apr 2026 – May 2026 |
 | Slovakia | 434 | 415 | 193 | 178 | 47% | Apr 2026 |
 | Slovenia | 200 | 190 | 100 | 74 | 53% | Apr 2026 |
-| Spain | 6,069 | 5,342 | 2,440 | 2,141 | 46% | Apr 2026 |
+| Spain | 6,069 | 5,361 | 2,459 | 2,160 | 46% | Apr 2026 |
 | Sweden | 1,558 | 1,487 | 859 | 786 | 58% | Apr 2026 |
 | Switzerland | 2,117 | 2,081 | 985 | 983 | 47% | Apr 2026 |
-| United Kingdom | 19,502 | 18,707 | 10,870 | 10,314 | 58% | Apr 2026 |
+| United Kingdom | 19,502 | 18,710 | 10,873 | 10,317 | 58% | Apr 2026 – May 2026 |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
