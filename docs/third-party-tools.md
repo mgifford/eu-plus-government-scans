@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-05-03 06:14 UTC — last scan: 2026-05-02_
+_Stats as of 2026-05-04 06:21 UTC — last scan: 2026-05-03_
 
-**127** scan batches run
+**133** scan batches run
 
 **3,260** of **82,714** available pages scanned (**3.9%** coverage)
 **3,095** of **3,260** scanned pages were reachable (**94.9%**)
 **1,435** reachable pages loaded at least one third-party script (**46.4%** of reachable)
-**1,598** known third-party service loads identified
+**1,606** known third-party service loads identified
 **17** unique known services across **12** categories
 
 ---
@@ -21,9 +21,9 @@ _Stats as of 2026-05-03 06:14 UTC — last scan: 2026-05-02_
 
 | Country | Scanned | Available | Reachable | URLs with 3rd-Party JS | Known Service Loads | Last Scan |
 |---------|---------|-----------|-----------|------------------------|--------------------|----------|
-| Austria | 821 | 821 | 790 | 266 | 44 | 2026-05-02 |
-| Belgium | 1,309 | 1,309 | 1,227 | 639 | 722 | 2026-05-02 |
-| Bulgaria | 291 | 291 | 269 | 107 | 120 | 2026-05-02 |
+| Austria | 821 | 821 | 790 | 266 | 44 | 2026-05-03 |
+| Belgium | 1,309 | 1,309 | 1,227 | 639 | 730 | 2026-05-03 |
+| Bulgaria | 291 | 291 | 269 | 107 | 120 | 2026-05-03 |
 | Croatia | 233 | 233 | 232 | 120 | 165 | 2026-05-02 |
 | Czechia | 606 | 843 | 577 | 303 | 547 | 2026-05-02 |
 
@@ -35,13 +35,13 @@ _Stats as of 2026-05-03 06:14 UTC — last scan: 2026-05-02_
 
 | # | Service | Loads |
 |--:|---------|------:|
-| 1 | jsDelivr CDN | **388** |
+| 1 | jsDelivr CDN | **389** |
 | 2 | Google Analytics (GA4) | **246** |
 | 3 | unpkg CDN | **217** |
 | 4 | cdnjs (Cloudflare CDN) | **178** |
 | 5 | Google Hosted Libraries | **149** |
 | 6 | Google reCAPTCHA | **130** |
-| 7 | Google Tag Manager | **105** |
+| 7 | Google Tag Manager | **112** |
 | 8 | jQuery | **87** |
 | 9 | Cookiebot | **27** |
 | 10 | Font Awesome | **20** |
@@ -49,20 +49,20 @@ _Stats as of 2026-05-03 06:14 UTC — last scan: 2026-05-02_
 | 12 | Facebook Pixel | **13** |
 | 13 | Matomo Cloud | **11** |
 | 14 | Zendesk | **2** |
-| 15 | Cloudflare Turnstile / Challenge | **2** |
-| 16 | Google Analytics (Universal) | **2** |
+| 15 | Google Analytics (Universal) | **2** |
+| 16 | Cloudflare Turnstile / Challenge | **2** |
 | 17 | OneTrust | **2** |
 
 ### Top Service Categories
 
 | # | Category | Loads |
 |--:|----------|------:|
-| 1 | CDN | **932** |
+| 1 | CDN | **933** |
 | 2 | Analytics | **272** |
 | 3 | JavaScript Library | **236** |
 | 4 | Security | **132** |
 | 5 | CAPTCHA | **130** |
-| 6 | Tag Manager | **105** |
+| 6 | Tag Manager | **112** |
 | 7 | Cookie Consent | **29** |
 | 8 | Icon Library | **20** |
 | 9 | UI Framework | **19** |
