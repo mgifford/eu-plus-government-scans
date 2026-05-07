@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-05-06 06:15 UTC — last scan: 2026-05-05_
+_Stats as of 2026-05-07 06:18 UTC — last scan: 2026-05-06_
 
-**152** scan batches run
+**154** scan batches run
 
 **3,260** of **82,714** available pages scanned (**3.9%** coverage)
 **3,095** of **3,260** scanned pages were reachable (**94.9%**)
-**1,436** reachable pages loaded at least one third-party script (**46.4%** of reachable)
-**1,600** known third-party service loads identified
+**1,437** reachable pages loaded at least one third-party script (**46.4%** of reachable)
+**1,601** known third-party service loads identified
 **17** unique known services across **12** categories
 
 ---
@@ -21,8 +21,8 @@ _Stats as of 2026-05-06 06:15 UTC — last scan: 2026-05-05_
 
 | Country | Scanned | Available | Reachable | URLs with 3rd-Party JS | Known Service Loads | Last Scan |
 |---------|---------|-----------|-----------|------------------------|--------------------|----------|
-| Austria | 821 | 821 | 790 | 266 | 44 | 2026-05-05 |
-| Belgium | 1,309 | 1,309 | 1,227 | 640 | 725 | 2026-05-05 |
+| Austria | 821 | 821 | 790 | 266 | 44 | 2026-05-06 |
+| Belgium | 1,309 | 1,309 | 1,227 | 641 | 726 | 2026-05-06 |
 | Bulgaria | 291 | 291 | 269 | 107 | 120 | 2026-05-05 |
 | Croatia | 233 | 233 | 232 | 120 | 167 | 2026-05-05 |
 | Czechia | 606 | 843 | 577 | 303 | 544 | 2026-05-05 |
@@ -41,7 +41,7 @@ _Stats as of 2026-05-06 06:15 UTC — last scan: 2026-05-05_
 | 4 | cdnjs (Cloudflare CDN) | **178** |
 | 5 | Google Hosted Libraries | **149** |
 | 6 | Google reCAPTCHA | **130** |
-| 7 | Google Tag Manager | **105** |
+| 7 | Google Tag Manager | **106** |
 | 8 | jQuery | **87** |
 | 9 | Cookiebot | **27** |
 | 10 | Font Awesome | **20** |
@@ -62,7 +62,7 @@ _Stats as of 2026-05-06 06:15 UTC — last scan: 2026-05-05_
 | 3 | JavaScript Library | **236** |
 | 4 | Security | **132** |
 | 5 | CAPTCHA | **130** |
-| 6 | Tag Manager | **105** |
+| 6 | Tag Manager | **106** |
 | 7 | Cookie Consent | **29** |
 | 8 | Icon Library | **20** |
 | 9 | UI Framework | **19** |
