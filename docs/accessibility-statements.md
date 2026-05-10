@@ -5,14 +5,14 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-05-09 06:05 UTC — last scan: 2026-05-09_
+_Stats as of 2026-05-10 06:19 UTC — last scan: 2026-05-10_
 
-**225** scan batches run
+**242** scan batches run
 
 **82,714** of **82,714** available pages scanned (**100.0%** coverage)
-**77,201** of **82,714** scanned pages were reachable (**93.3%**)
-**39,104** of **77,201** reachable pages have an accessibility statement (**50.7%**)
-**34,199** pages have the statement link in the footer (**87.5%** of pages with a statement)
+**77,232** of **82,714** scanned pages were reachable (**93.4%**)
+**39,202** of **77,232** reachable pages have an accessibility statement (**50.8%**)
+**34,292** pages have the statement link in the footer (**87.5%** of pages with a statement)
 
 📥 Machine-readable results are available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
 
@@ -27,14 +27,14 @@ Each country entry in the JSON file includes page-level evidence for pages with 
 | Country | Scanned | Available | Reachable | Has Statement | In Footer | Statement % | Scan Period |
 |---------|---------|-----------|-----------|--------------|-----------|------------|-------------|
 | Austria | 821 | 821 | 790 | 552 | 522 | 69.9% | Apr 2026 – May 2026 |
-| Belgium | 1,309 | 1,309 | 1,224 | 557 | 507 | 45.5% | Apr 2026 – May 2026 |
+| Belgium | 1,309 | 1,309 | 1,224 | 558 | 508 | 45.6% | Apr 2026 – May 2026 |
 | Bulgaria | 291 | 291 | 268 | 62 | 59 | 23.1% | Apr 2026 – May 2026 |
 | Croatia | 233 | 233 | 232 | 86 | 62 | 37.1% | Apr 2026 – May 2026 |
 | Czechia | 843 | 843 | 803 | 427 | 368 | 53.2% | Apr 2026 – May 2026 |
-| Denmark | 1,521 | 1,521 | 1,503 | 1,034 | 1,014 | 68.8% | Apr 2026 – May 2026 |
+| Denmark | 1,521 | 1,521 | 1,503 | 1,036 | 1,016 | 68.9% | Apr 2026 – May 2026 |
 | Estonia | 396 | 396 | 383 | 141 | 77 | 36.8% | Apr 2026 – May 2026 |
 | Finland | 180 | 180 | 172 | 114 | 107 | 66.3% | Apr 2026 – May 2026 |
-| France | 10,007 | 10,007 | 9,283 | 3,482 | 3,337 | 37.5% | Apr 2026 – May 2026 |
+| France | 10,007 | 10,007 | 9,305 | 3,518 | 3,373 | 37.8% | Apr 2026 – May 2026 |
 | Germany | 6,555 | 6,555 | 6,479 | 4,649 | 3,901 | 71.8% | Apr 2026 – May 2026 |
 | Greece | 1,748 | 1,748 | 1,624 | 418 | 246 | 25.7% | Apr 2026 – May 2026 |
 | Hungary | 390 | 390 | 366 | 64 | 48 | 17.5% | Apr 2026 – May 2026 |
@@ -47,17 +47,17 @@ Each country entry in the JSON file includes page-level evidence for pages with 
 | Malta | 608 | 608 | 595 | 387 | 380 | 65.0% | Apr 2026 – May 2026 |
 | Netherlands | 937 | 937 | 911 | 444 | 434 | 48.7% | Apr 2026 – May 2026 |
 | Norway | 239 | 239 | 233 | 108 | 102 | 46.4% | Apr 2026 – May 2026 |
-| Poland | 14,938 | 14,938 | 13,902 | 5,956 | 3,754 | 42.8% | Apr 2026 – May 2026 |
+| Poland | 14,938 | 14,938 | 13,908 | 5,960 | 3,756 | 42.9% | Apr 2026 – May 2026 |
 | Portugal | 3,503 | 3,503 | 2,942 | 884 | 716 | 30.0% | Apr 2026 – May 2026 |
 | Cyprus | 24 | 24 | 24 | 0 | 0 | 0.0% | Apr 2026 – May 2026 |
 | Romania | 799 | 799 | 348 | 28 | 9 | 8.0% | Apr 2026 – May 2026 |
 | Slovakia | 434 | 434 | 415 | 193 | 178 | 46.5% | Apr 2026 – May 2026 |
 | Slovenia | 200 | 200 | 190 | 100 | 74 | 52.6% | Apr 2026 – May 2026 |
-| Spain | 6,069 | 6,069 | 5,380 | 2,475 | 2,176 | 46.0% | Apr 2026 – May 2026 |
+| Spain | 6,069 | 6,069 | 5,382 | 2,475 | 2,176 | 46.0% | Apr 2026 – May 2026 |
 | Sweden | 1,558 | 1,558 | 1,487 | 860 | 787 | 57.8% | Apr 2026 – May 2026 |
 | Switzerland | 2,117 | 2,117 | 2,082 | 994 | 992 | 47.7% | Apr 2026 – May 2026 |
-| United Kingdom | 19,502 | 19,502 | 18,765 | 11,430 | 10,845 | 60.9% | Apr 2026 – May 2026 |
-| **Total** | **82,714** | **82,714** | **77,201** | **39,104** | **34,199** | **50.7%** | — |
+| United Kingdom | 19,502 | 19,502 | 18,766 | 11,485 | 10,897 | 61.2% | Apr 2026 – May 2026 |
+| **Total** | **82,714** | **82,714** | **77,232** | **39,202** | **34,292** | **50.8%** | — |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
