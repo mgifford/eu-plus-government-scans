@@ -69,27 +69,27 @@ jobs:
         run: |
           npm install -g lighthouse
 
-      - name: Find latest metadata artifact run ID
+      - name: Find latest Lighthouse metadata artifact run ID
         id: find-metadata
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          RUN_ID=$(gh api --paginate "/repos/${{ github.repository }}/actions/artifacts?per_page=100&name=validation-metadata" \
+          RUN_ID=$(gh api --paginate "/repos/${{ github.repository }}/actions/artifacts?per_page=100&name=lighthouse-metadata" \
             --jq '.artifacts[] | select(.expired == false) | "\(.created_at) \(.workflow_run.id)"' \
             2>/dev/null | sort -rk1 | head -1 | awk '{print $2}' || echo "")
           echo "run_id=${RUN_ID}" >> $GITHUB_OUTPUT
           if [ -n "$RUN_ID" ]; then
-            echo "Found validation-metadata artifact from run $RUN_ID"
+            echo "Found lighthouse-metadata artifact from run $RUN_ID"
           else
-            echo "No validation-metadata artifact found — will start with fresh database"
+            echo "No lighthouse-metadata artifact found — will start with fresh Lighthouse database"
           fi
 
-      - name: Download previous metadata DB (if exists)
+      - name: Download previous Lighthouse metadata DB (if exists)
         if: steps.find-metadata.outputs.run_id != ''
         continue-on-error: true
         uses: actions/download-artifact@v4
         with:
-          name: validation-metadata
+          name: lighthouse-metadata
           path: data/
           run-id: ${{ steps.find-metadata.outputs.run_id }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
@@ -131,7 +131,7 @@ jobs:
           retention-days: 90
           if-no-files-found: warn
 
-      - name: Guard against overwriting shared metadata with data-loss result
+      - name: Guard against overwriting Lighthouse metadata with data-loss result
         if: always()
         id: db-guard
         run: |
@@ -146,11 +146,11 @@ jobs:
             echo "Database present (or no prior artifact) — safe to update shared metadata."
           fi
 
-      - name: Update shared validation metadata
+      - name: Update Lighthouse metadata
         if: always() && steps.db-guard.outputs.safe_to_upload == 'true'
         uses: actions/upload-artifact@v4
         with:
-          name: validation-metadata
+          name: lighthouse-metadata
           path: |
             data/metadata.db
           retention-days: 90
