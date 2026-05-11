@@ -60,6 +60,31 @@ jobs:
           run-id: ${{ steps.find-metadata.outputs.run_id }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Find latest Lighthouse metadata artifact run ID
+        id: find-lighthouse-metadata
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          RUN_ID=$(gh api --paginate "/repos/${{ github.repository }}/actions/artifacts?per_page=100&name=lighthouse-metadata" \
+            --jq '.artifacts[] | select(.expired == false) | "\(.created_at) \(.workflow_run.id)"' \
+            2>/dev/null | sort -rk1 | head -1 | awk '{print $2}' || echo "")
+          echo "run_id=${RUN_ID}" >> $GITHUB_OUTPUT
+          if [ -n "$RUN_ID" ]; then
+            echo "Found lighthouse-metadata artifact from run $RUN_ID"
+          else
+            echo "No lighthouse-metadata artifact found — Lighthouse report will fall back to shared metadata DB"
+          fi
+
+      - name: Download latest Lighthouse metadata DB (if exists)
+        if: steps.find-lighthouse-metadata.outputs.run_id != ''
+        continue-on-error: true
+        uses: actions/download-artifact@v4
+        with:
+          name: lighthouse-metadata
+          path: data/lighthouse/
+          run-id: ${{ steps.find-lighthouse-metadata.outputs.run_id }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Pull latest main before generating reports
         run: |
           git config user.name "github-actions[bot]"
@@ -115,10 +140,18 @@ jobs:
 
       - name: Generate Lighthouse results page
         run: |
+          LIGHTHOUSE_DB="data/lighthouse/metadata.db"
+          if [ ! -f "$LIGHTHOUSE_DB" ]; then
+            LIGHTHOUSE_DB="data/metadata.db"
+            echo "No Lighthouse-specific metadata DB found; falling back to shared metadata DB: $LIGHTHOUSE_DB"
+          else
+            echo "Using Lighthouse-specific metadata DB: $LIGHTHOUSE_DB"
+          fi
           python3 -m src.cli.generate_lighthouse_report \
             --page docs/lighthouse-results.md \
             --data docs/lighthouse-data.json \
             --csv docs/lighthouse-data.csv \
+            --db "$LIGHTHOUSE_DB" \
             --seeds-dir data/toon-seeds/countries \
             2>&1 | tee lighthouse-report-output.txt
 
