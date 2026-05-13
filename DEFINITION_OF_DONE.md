@@ -132,7 +132,7 @@ latest metadata artifacts before regeneration.
 - [ ] The existing validation command for the affected area has been run.
 - [ ] Any failures unrelated to the report are noted separately.
 - [ ] If the change is documentation-only, validation is still attempted where practical and any environment limitation is recorded.
-- [ ] If validation cannot be run because tooling is unavailable, that limitation is documented in the PR or change summary rather than embedded in the long-lived report definition.
+- [ ] If validation cannot be run because tooling is unavailable, that limitation is documented in the PR description rather than in this definition of done document.
 
 ## What can already be marked done for the current repository
 
