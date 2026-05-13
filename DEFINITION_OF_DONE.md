@@ -68,7 +68,7 @@ both show generated or stats timestamps, and both include explanatory text.
 - [ ] Every aggregate number in the report can be recomputed from machine-readable rows.
 - [ ] The report has at least one published machine-readable backing file.
 - [ ] If the report publishes aggregates, it should publish both JSON and CSV unless there is a documented reason not to.
-- [ ] The JSON should include a `by_url` array when the report is based on per-URL evidence.
+- [ ] Per `AGENTS.md`, the JSON should include a `by_url` array when the report is based on per-URL evidence.
 
 **Repository evidence:** `AGENTS.md` requires JSON plus UTF-8 BOM CSV backing data
 for aggregate reports. `docs/lighthouse-results.md` links to both
@@ -106,8 +106,9 @@ media report.
 - [ ] The report fits the current docs structure and naming style.
 
 **Repository evidence:** `docs/index.md` links to Scan Progress, Social Media,
-Accessibility Statements, Technology Scanning, Third-Party JavaScript, and
-Lighthouse Scanning.
+Accessibility Statements, Technology Scanning, Third-Party JavaScript, and the
+separate Lighthouse documentation page `docs/lighthouse-scanning.md`. The
+generated Lighthouse results page currently exists as `docs/lighthouse-results.md`.
 
 ### 7. The workflow preserves and publishes outputs correctly
 
