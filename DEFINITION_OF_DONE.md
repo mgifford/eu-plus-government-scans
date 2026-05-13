@@ -7,7 +7,7 @@ before a report page in this project should be considered done.
 ## Scope
 
 This definition of done applies to generated report pages and their backing data,
-including the current report set in `/home/runner/work/eu-plus-government-scans/eu-plus-government-scans/docs/`:
+including the current report set in `docs/`:
 
 - `scan-progress.md`
 - `social-media.md`
@@ -22,12 +22,10 @@ including the current report set in `/home/runner/work/eu-plus-government-scans/
 The following are already true in this repository today:
 
 - Report generation is automated through GitHub Actions, especially
-  `/home/runner/work/eu-plus-government-scans/eu-plus-government-scans/.github/workflows/generate-scan-progress.yml`.
+  `.github/workflows/generate-scan-progress.yml`.
 - The repository already publishes report pages to GitHub Pages via the `docs/`
   directory.
-- The homepage at
-  `/home/runner/work/eu-plus-government-scans/eu-plus-government-scans/docs/index.md`
-  already links to the current report family.
+- The homepage at `docs/index.md` already links to the current report family.
 - The project requires documentation and generated outputs to meet **WCAG 2.2 AA**
   expectations.
 - The project requires machine-readable backing data for aggregate report claims.
