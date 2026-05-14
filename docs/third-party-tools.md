@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-05-13 06:26 UTC — last scan: 2026-05-12_
+_Stats as of 2026-05-14 06:25 UTC — last scan: 2026-05-13_
 
-**183** scan batches run
+**191** scan batches run
 
 **3,260** of **82,714** available pages scanned (**3.9%** coverage)
 **3,095** of **3,260** scanned pages were reachable (**94.9%**)
 **1,441** reachable pages loaded at least one third-party script (**46.6%** of reachable)
-**1,611** known third-party service loads identified
+**1,612** known third-party service loads identified
 **17** unique known services across **12** categories
 
 ---
@@ -21,11 +21,11 @@ _Stats as of 2026-05-13 06:26 UTC — last scan: 2026-05-12_
 
 | Country | Scanned | Available | Reachable | URLs with 3rd-Party JS | Known Service Loads | Last Scan |
 |---------|---------|-----------|-----------|------------------------|--------------------|----------|
-| Austria | 821 | 821 | 790 | 266 | 44 | 2026-05-12 |
-| Belgium | 1,309 | 1,309 | 1,227 | 645 | 732 | 2026-05-12 |
-| Bulgaria | 291 | 291 | 269 | 107 | 120 | 2026-05-12 |
-| Croatia | 233 | 233 | 232 | 120 | 171 | 2026-05-12 |
-| Czechia | 606 | 843 | 577 | 303 | 544 | 2026-05-12 |
+| Austria | 821 | 821 | 790 | 266 | 44 | 2026-05-13 |
+| Belgium | 1,309 | 1,309 | 1,227 | 645 | 733 | 2026-05-13 |
+| Bulgaria | 291 | 291 | 269 | 107 | 120 | 2026-05-13 |
+| Croatia | 233 | 233 | 232 | 120 | 171 | 2026-05-13 |
+| Czechia | 606 | 843 | 577 | 303 | 544 | 2026-05-13 |
 
 > Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and metric from [Download machine-readable third-party tools data (JSON)](third-party-tools-data.json).
 
@@ -36,7 +36,7 @@ _Stats as of 2026-05-13 06:26 UTC — last scan: 2026-05-12_
 | # | Service | Loads |
 |--:|---------|------:|
 | 1 | jsDelivr CDN | **397** |
-| 2 | Google Analytics (GA4) | **245** |
+| 2 | Google Analytics (GA4) | **246** |
 | 3 | unpkg CDN | **218** |
 | 4 | cdnjs (Cloudflare CDN) | **179** |
 | 5 | Google Hosted Libraries | **149** |
@@ -49,16 +49,16 @@ _Stats as of 2026-05-13 06:26 UTC — last scan: 2026-05-12_
 | 12 | Facebook Pixel | **13** |
 | 13 | Matomo Cloud | **11** |
 | 14 | Zendesk | **2** |
-| 15 | Cloudflare Turnstile / Challenge | **2** |
-| 16 | OneTrust | **2** |
-| 17 | Google Analytics (Universal) | **2** |
+| 15 | Google Analytics (Universal) | **2** |
+| 16 | Cloudflare Turnstile / Challenge | **2** |
+| 17 | OneTrust | **2** |
 
 ### Top Service Categories
 
 | # | Category | Loads |
 |--:|----------|------:|
 | 1 | CDN | **943** |
-| 2 | Analytics | **271** |
+| 2 | Analytics | **272** |
 | 3 | JavaScript Library | **236** |
 | 4 | Security | **132** |
 | 5 | CAPTCHA | **130** |
