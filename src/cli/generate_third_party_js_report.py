@@ -25,6 +25,9 @@ from src.lib.settings import load_settings
 
 _STATS_MARKER_START = "<!-- THIRD_PARTY_JS_STATS_START -->"
 _STATS_MARKER_END = "<!-- THIRD_PARTY_JS_STATS_END -->"
+_INFRASTRUCTURE_CATEGORIES: frozenset[str] = frozenset(
+    {"CDN", "JavaScript Library", "UI Framework", "Icon Library"}
+)
 
 # Query-string parameter names that may carry API keys or tokens embedded in
 # third-party script src URLs found on scanned government websites.  These are
@@ -257,6 +260,57 @@ def _aggregate_script_counts(
     return service_counts, category_counts, identified_scripts
 
 
+def _aggregate_service_prevalence_and_unknown_hosts(
+    script_rows: list[dict],
+) -> tuple[dict[str, int], Counter, dict[str, int]]:
+    """Return known-service prevalence and unknown-host evidence counters."""
+    service_pages: dict[str, set[str]] = {}
+    unknown_host_counts: Counter = Counter()
+    unknown_host_pages: dict[str, set[str]] = {}
+
+    seen_urls: set[str] = set()
+    for row in script_rows:
+        url = row["url"]
+        if url in seen_urls:
+            continue
+        seen_urls.add(url)
+
+        try:
+            scripts = json.loads(row["scripts"] or "[]")
+        except (json.JSONDecodeError, TypeError):
+            continue
+
+        for script in scripts:
+            if not isinstance(script, dict):
+                continue
+            service_name = script.get("service_name")
+            host = script.get("host") or ""
+            if service_name:
+                service_pages.setdefault(service_name, set()).add(url)
+                continue
+            if host:
+                unknown_host_counts[host] += 1
+                unknown_host_pages.setdefault(host, set()).add(url)
+
+    return (
+        {service: len(urls) for service, urls in service_pages.items()},
+        unknown_host_counts,
+        {host: len(urls) for host, urls in unknown_host_pages.items()},
+    )
+
+
+def _split_category_balance(category_counts: Counter) -> tuple[Counter, Counter]:
+    """Split categories into infrastructure and policy-relevant groups."""
+    infrastructure: Counter = Counter()
+    policy_relevant: Counter = Counter()
+    for category, count in category_counts.items():
+        if category in _INFRASTRUCTURE_CATEGORIES:
+            infrastructure[category] += count
+        else:
+            policy_relevant[category] += count
+    return infrastructure, policy_relevant
+
+
 def _query_identified_services_by_country(conn: sqlite3.Connection) -> dict[str, int]:
     """Return per-country counts of identified known third-party services."""
     rows = conn.execute(
@@ -302,8 +356,13 @@ def _query_identified_services_by_country(conn: sqlite3.Connection) -> dict[str,
 def _build_stats_block(
     summary: dict,
     service_counts: Counter,
+    service_page_counts: dict[str, int],
     category_counts: Counter,
+    infrastructure_category_counts: Counter,
+    policy_category_counts: Counter,
     identified_scripts: int,
+    unknown_host_counts: Counter,
+    unknown_host_pages: dict[str, int],
     generated_at: str,
     total_available: int = 0,
     by_country: list[dict] | None = None,
@@ -328,6 +387,9 @@ def _build_stats_block(
 
     def _pct(num: int, denom: int) -> str:
         return f"{num / denom * 100:.1f}%" if denom else "—"
+
+    def _per_100(num: int, denom: int) -> str:
+        return f"{num / denom * 100:.1f}" if denom else "—"
 
     lines = [
         _STATS_MARKER_START,
@@ -366,8 +428,8 @@ def _build_stats_block(
             "",
             "## Third-Party JavaScript by Country",
             "",
-            "| Country | Scanned | Available | Reachable | URLs with 3rd-Party JS | Known Service Loads | Last Scan |",
-            "|---------|---------|-----------|-----------|------------------------|--------------------|----------|",
+            "| Country | Scanned | Available | Reachable | URLs with 3rd-Party JS | Known Service Loads | JS URLs /100 Reachable | Known Loads /100 Reachable | Last Scan |",
+            "|---------|---------|-----------|-----------|------------------------|--------------------|------------------------|---------------------------|----------|",
         ]
         for row in by_country:
             cc = row["country_code"]
@@ -375,9 +437,13 @@ def _build_stats_block(
             available = seed_counts.get(cc, 0)
             avail_str = f"{available:,}" if available else "—"
             last = (row.get("last_scan") or "—")[:10]
+            reachable = row["reachable"] or 0
+            urls_with_scripts = row.get("urls_with_scripts", 0)
+            known_loads = identified_by_country.get(cc, 0)
             lines.append(
                 f"| {display_cc} | {row['total_scanned']:,} | {avail_str} | {row['reachable']:,} | "
-                f"{row.get('urls_with_scripts', 0):,} | {identified_by_country.get(cc, 0):,} | {last} |"
+                f"{urls_with_scripts:,} | {known_loads:,} | {_per_100(urls_with_scripts, reachable)} | "
+                f"{_per_100(known_loads, reachable)} | {last} |"
             )
         lines += [
             "",
@@ -400,6 +466,23 @@ def _build_stats_block(
             lines.append(f"| {rank} | {service} | **{count:,}** |")
         lines.append("")
 
+    if service_page_counts:
+        lines += [
+            "### Top Services by Page Prevalence",
+            "",
+            "| # | Service | Reachable Pages | Prevalence of Reachable Pages |",
+            "|--:|---------|----------------:|------------------------------:|",
+        ]
+        sorted_prevalence = sorted(
+            service_page_counts.items(),
+            key=lambda item: (-item[1], item[0]),
+        )
+        for rank, (service, pages) in enumerate(sorted_prevalence[:top_n_services], start=1):
+            lines.append(
+                f"| {rank} | {service} | **{pages:,}** | **{_pct(pages, reachable)}** |"
+            )
+        lines.append("")
+
     if category_counts:
         lines += [
             "### Top Service Categories",
@@ -410,6 +493,50 @@ def _build_stats_block(
         for rank, (category, count) in enumerate(category_counts.most_common(top_n_categories), start=1):
             lines.append(f"| {rank} | {category} | **{count:,}** |")
         lines.append("")
+
+    if infrastructure_category_counts or policy_category_counts:
+        lines += [
+            "### Category Balance",
+            "",
+            "Infrastructure-heavy categories (CDNs, core libraries, and UI assets):",
+            "",
+            "| # | Infrastructure Category | Loads |",
+            "|--:|--------------------------|------:|",
+        ]
+        for rank, (category, count) in enumerate(
+            infrastructure_category_counts.most_common(top_n_categories), start=1
+        ):
+            lines.append(f"| {rank} | {category} | **{count:,}** |")
+        lines += [
+            "",
+            "Policy-relevant categories (tracking, consent, support, and security tooling):",
+            "",
+            "| # | Policy-Relevant Category | Loads |",
+            "|--:|--------------------------|------:|",
+        ]
+        for rank, (category, count) in enumerate(
+            policy_category_counts.most_common(top_n_categories), start=1
+        ):
+            lines.append(f"| {rank} | {category} | **{count:,}** |")
+        lines.append("")
+
+    if unknown_host_counts:
+        lines += [
+            "### Unknown Third-Party Hosts (Review Queue)",
+            "",
+            "| # | Host | Loads | Reachable Pages |",
+            "|--:|------|------:|----------------:|",
+        ]
+        for rank, (host, count) in enumerate(unknown_host_counts.most_common(15), start=1):
+            lines.append(
+                f"| {rank} | `{host}` | **{count:,}** | **{unknown_host_pages.get(host, 0):,}** |"
+            )
+        lines += [
+            "",
+            "> These hosts were seen as third-party script sources but did not match a known service signature. "
+            "Review this queue regularly and promote stable, policy-relevant hosts into the signature list.",
+            "",
+        ]
 
     lines += [
         "📥 Machine-readable results: "
@@ -450,8 +577,16 @@ def generate_third_party_js_report(
     service_counts, category_counts, identified_scripts = _aggregate_script_counts(
         script_rows
     )
+    service_page_counts, unknown_host_counts, unknown_host_pages = (
+        _aggregate_service_prevalence_and_unknown_hosts(script_rows)
+    )
+    infrastructure_category_counts, policy_category_counts = _split_category_balance(
+        category_counts
+    )
     seed_counts = _count_toon_seed_urls(toon_seeds_dir) if toon_seeds_dir else {}
     total_available = sum(seed_counts.values())
+
+    reachable_total = summary.get("total_reachable") or 0
 
     data_path.parent.mkdir(parents=True, exist_ok=True)
     data = {
@@ -469,18 +604,65 @@ def generate_third_party_js_report(
             "last_scan": summary.get("last_scan"),
         },
         "top_services": [
-            {"name": service, "loads": count}
+            {
+                "name": service,
+                "loads": count,
+                "reachable_pages": service_page_counts.get(service, 0),
+                "prevalence_pct": (service_page_counts.get(service, 0) / reachable_total * 100)
+                if reachable_total
+                else 0.0,
+            }
             for service, count in service_counts.most_common()
+        ],
+        "service_prevalence": [
+            {
+                "name": service,
+                "reachable_pages": pages,
+                "prevalence_pct": (pages / reachable_total * 100) if reachable_total else 0.0,
+            }
+            for service, pages in sorted(
+                service_page_counts.items(), key=lambda item: (-item[1], item[0])
+            )
         ],
         "top_categories": [
             {"name": category, "loads": count}
             for category, count in category_counts.most_common()
+        ],
+        "category_balance": {
+            "infrastructure": [
+                {"name": category, "loads": count}
+                for category, count in infrastructure_category_counts.most_common()
+            ],
+            "policy_relevant": [
+                {"name": category, "loads": count}
+                for category, count in policy_category_counts.most_common()
+            ],
+        },
+        "unknown_hosts_top": [
+            {
+                "host": host,
+                "loads": count,
+                "reachable_pages": unknown_host_pages.get(host, 0),
+            }
+            for host, count in unknown_host_counts.most_common()
         ],
         "by_country": [
             {
                 **row,
                 "identified_service_loads": identified_by_country.get(
                     row["country_code"], 0
+                ),
+                "identified_service_loads_per_100_reachable": (
+                    identified_by_country.get(row["country_code"], 0)
+                    / row["reachable"]
+                    * 100
+                    if row["reachable"]
+                    else 0.0
+                ),
+                "urls_with_scripts_per_100_reachable": (
+                    row.get("urls_with_scripts", 0) / row["reachable"] * 100
+                    if row["reachable"]
+                    else 0.0
                 ),
             }
             for row in by_country
@@ -508,8 +690,13 @@ def generate_third_party_js_report(
     new_block = _build_stats_block(
         summary=summary,
         service_counts=service_counts,
+        service_page_counts=service_page_counts,
         category_counts=category_counts,
+        infrastructure_category_counts=infrastructure_category_counts,
+        policy_category_counts=policy_category_counts,
         identified_scripts=identified_scripts,
+        unknown_host_counts=unknown_host_counts,
+        unknown_host_pages=unknown_host_pages,
         generated_at=generated_at,
         total_available=total_available,
         by_country=by_country,

@@ -10,6 +10,7 @@ from pathlib import Path
 import pytest
 
 from src.cli.generate_third_party_js_report import (
+    _aggregate_service_prevalence_and_unknown_hosts,
     _aggregate_script_counts,
     _build_stats_block,
     _query_by_country,
@@ -249,7 +250,7 @@ def test_aggregate_script_counts() -> None:
 
 def test_build_stats_block_empty_summary() -> None:
     """Should return a placeholder block when no summary data is available."""
-    block = _build_stats_block({}, {}, {}, 0, "2024-06-01 12:00 UTC")
+    block = _build_stats_block({}, {}, {}, {}, {}, {}, 0, {}, {}, "2024-06-01 12:00 UTC")
     assert _STATS_MARKER_START in block
     assert _STATS_MARKER_END in block
     assert "No scan data yet" in block
@@ -267,8 +268,13 @@ def test_build_stats_block_with_data() -> None:
     block = _build_stats_block(
         summary=summary,
         service_counts=Counter({"Google Tag Manager": 120, "OneTrust": 50}),
+        service_page_counts={"Google Tag Manager": 80, "OneTrust": 40},
         category_counts=Counter({"Tag Manager": 120, "Cookie Consent": 50}),
+        infrastructure_category_counts=Counter(),
+        policy_category_counts=Counter({"Tag Manager": 120, "Cookie Consent": 50}),
         identified_scripts=170,
+        unknown_host_counts=Counter({"unknown.example": 10}),
+        unknown_host_pages={"unknown.example": 7},
         generated_at="2024-06-01 12:00 UTC",
         total_available=1000,
         by_country=[
@@ -287,8 +293,54 @@ def test_build_stats_block_with_data() -> None:
     assert "**500** of **1,000** available pages scanned" in block
     assert "**200** reachable pages loaded at least one third-party script" in block
     assert "Top Third-Party Services" in block
+    assert "Top Services by Page Prevalence" in block
     assert "Google Tag Manager" in block
     assert "Third-Party JavaScript by Country" in block
+    assert "Unknown Third-Party Hosts (Review Queue)" in block
+
+
+def test_aggregate_service_prevalence_and_unknown_hosts() -> None:
+    """Should return per-service reachable-page counts and unknown host totals."""
+    rows = [
+        {
+            "url": "https://example.is/page1",
+            "scripts": json.dumps(
+                [
+                    {
+                        "host": "www.googletagmanager.com",
+                        "service_name": "Google Tag Manager",
+                    },
+                    {
+                        "host": "cdn.unknown.example",
+                        "service_name": None,
+                    },
+                ]
+            ),
+        },
+        {
+            "url": "https://example.is/page2",
+            "scripts": json.dumps(
+                [
+                    {
+                        "host": "www.googletagmanager.com",
+                        "service_name": "Google Tag Manager",
+                    },
+                    {
+                        "host": "cdn.unknown.example",
+                        "service_name": None,
+                    },
+                ]
+            ),
+        },
+    ]
+
+    service_pages, unknown_loads, unknown_pages = (
+        _aggregate_service_prevalence_and_unknown_hosts(rows)
+    )
+
+    assert service_pages["Google Tag Manager"] == 2
+    assert unknown_loads["cdn.unknown.example"] == 2
+    assert unknown_pages["cdn.unknown.example"] == 2
 
 
 def test_generate_third_party_js_report_with_data(
@@ -310,6 +362,11 @@ def test_generate_third_party_js_report_with_data(
     assert data["summary"]["total_scanned"] == 4
     assert data["summary"]["urls_with_scripts"] == 2
     assert data["top_services"][0]["name"] == "Google Tag Manager"
+    assert "prevalence_pct" in data["top_services"][0]
+    assert "service_prevalence" in data
+    assert "unknown_hosts_top" in data
+    assert "category_balance" in data
+    assert "identified_service_loads_per_100_reachable" in data["by_country"][0]
     assert data["country_drilldowns"]["ICELAND"]["service_loads"][0]["service_name"] == "Google Tag Manager"
 
 
