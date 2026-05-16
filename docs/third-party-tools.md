@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-05-15 06:26 UTC — last scan: 2026-05-14_
+_Stats as of 2026-05-16 06:10 UTC — last scan: 2026-05-15_
 
-**201** scan batches run
+**210** scan batches run
 
 **3,260** of **82,714** available pages scanned (**3.9%** coverage)
 **3,095** of **3,260** scanned pages were reachable (**94.9%**)
-**1,441** reachable pages loaded at least one third-party script (**46.6%** of reachable)
-**1,608** known third-party service loads identified
+**1,443** reachable pages loaded at least one third-party script (**46.6%** of reachable)
+**1,614** known third-party service loads identified
 **17** unique known services across **12** categories
 
 ---
@@ -21,11 +21,11 @@ _Stats as of 2026-05-15 06:26 UTC — last scan: 2026-05-14_
 
 | Country | Scanned | Available | Reachable | URLs with 3rd-Party JS | Known Service Loads | Last Scan |
 |---------|---------|-----------|-----------|------------------------|--------------------|----------|
-| Austria | 821 | 821 | 790 | 266 | 44 | 2026-05-14 |
-| Belgium | 1,309 | 1,309 | 1,227 | 645 | 733 | 2026-05-14 |
-| Bulgaria | 291 | 291 | 269 | 107 | 120 | 2026-05-14 |
-| Croatia | 233 | 233 | 232 | 120 | 169 | 2026-05-14 |
-| Czechia | 606 | 843 | 577 | 303 | 542 | 2026-05-14 |
+| Austria | 821 | 821 | 790 | 266 | 44 | 2026-05-15 |
+| Belgium | 1,309 | 1,309 | 1,227 | 647 | 739 | 2026-05-15 |
+| Bulgaria | 291 | 291 | 269 | 107 | 120 | 2026-05-15 |
+| Croatia | 233 | 233 | 232 | 120 | 167 | 2026-05-15 |
+| Czechia | 606 | 843 | 577 | 303 | 544 | 2026-05-15 |
 
 > Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and metric from [Download machine-readable third-party tools data (JSON)](third-party-tools-data.json).
 
@@ -36,12 +36,12 @@ _Stats as of 2026-05-15 06:26 UTC — last scan: 2026-05-14_
 | # | Service | Loads |
 |--:|---------|------:|
 | 1 | jsDelivr CDN | **397** |
-| 2 | Google Analytics (GA4) | **243** |
+| 2 | Google Analytics (GA4) | **242** |
 | 3 | unpkg CDN | **218** |
 | 4 | cdnjs (Cloudflare CDN) | **179** |
 | 5 | Google Hosted Libraries | **149** |
-| 6 | Google reCAPTCHA | **129** |
-| 7 | Google Tag Manager | **105** |
+| 6 | Google reCAPTCHA | **130** |
+| 7 | Google Tag Manager | **111** |
 | 8 | jQuery | **87** |
 | 9 | Cookiebot | **27** |
 | 10 | Font Awesome | **23** |
@@ -58,11 +58,11 @@ _Stats as of 2026-05-15 06:26 UTC — last scan: 2026-05-14_
 | # | Category | Loads |
 |--:|----------|------:|
 | 1 | CDN | **943** |
-| 2 | Analytics | **269** |
+| 2 | Analytics | **268** |
 | 3 | JavaScript Library | **236** |
-| 4 | Security | **131** |
-| 5 | CAPTCHA | **129** |
-| 6 | Tag Manager | **105** |
+| 4 | Security | **132** |
+| 5 | CAPTCHA | **130** |
+| 6 | Tag Manager | **111** |
 | 7 | Cookie Consent | **29** |
 | 8 | Icon Library | **23** |
 | 9 | UI Framework | **19** |
