@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import json
 import sqlite3
-from dataclasses import dataclass, field
 from pathlib import Path
 from unittest.mock import AsyncMock, MagicMock, patch
 
@@ -395,3 +394,60 @@ async def test_scan_all_countries_empty_dir(temp_settings, tmp_path):
     job = _make_job(temp_settings)
     all_stats = await job.scan_all_countries(tmp_path)
     assert all_stats == []
+
+
+@pytest.mark.asyncio
+async def test_scan_all_countries_prioritizes_oldest_last_scan(
+    temp_settings, toon_seeds_dir
+):
+    """Countries with older last scans should be processed first."""
+    job = _make_job(temp_settings)
+
+    conn = sqlite3.connect(job.db_path)
+    try:
+        conn.execute(
+            """
+            INSERT INTO url_third_party_js_results
+            (url, country_code, scan_id, is_reachable, scripts, error_message, scanned_at)
+            VALUES (?, ?, ?, ?, ?, ?, ?)
+            """,
+            (
+                "https://alpha.gov/",
+                "ALPHA",
+                "scan-alpha",
+                1,
+                "[]",
+                None,
+                "2026-05-15T10:00:00+00:00",
+            ),
+        )
+        conn.execute(
+            """
+            INSERT INTO url_third_party_js_results
+            (url, country_code, scan_id, is_reachable, scripts, error_message, scanned_at)
+            VALUES (?, ?, ?, ?, ?, ?, ?)
+            """,
+            (
+                "https://beta.gov/",
+                "BETA",
+                "scan-beta",
+                1,
+                "[]",
+                None,
+                "2026-05-10T10:00:00+00:00",
+            ),
+        )
+        conn.commit()
+    finally:
+        conn.close()
+
+    scanned_order: list[str] = []
+
+    async def _mock_scan(country_code, toon_path, *args, **kwargs):
+        scanned_order.append(country_code)
+        return {"country_code": country_code}
+
+    with patch.object(job, "scan_country", side_effect=_mock_scan):
+        await job.scan_all_countries(toon_seeds_dir)
+
+    assert scanned_order[:2] == ["BETA", "ALPHA"]
