@@ -5,12 +5,12 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-05-15 06:26 UTC — last scan: 2026-05-13_
+_Stats as of 2026-05-16 06:10 UTC — last scan: 2026-05-15_
 
-**138** scan batches run
+**143** scan batches run
 
 **51,356** of **82,714** available pages scanned (**62.1%** coverage)
-**47,930** pages with technology detections (**93.3%** of scanned)
+**47,934** pages with technology detections (**93.3%** of scanned)
 **404** unique technologies identified
 
 ---
@@ -24,13 +24,13 @@ _Stats as of 2026-05-15 06:26 UTC — last scan: 2026-05-13_
 | Bulgaria | 291 | 264 | 291 | 2026-05-09 |
 | Croatia | 233 | 232 | 233 | 2026-05-09 |
 | Czechia | 843 | 803 | 843 | 2026-05-09 |
-| Denmark | 1,521 | 1,503 | 1,521 | 2026-05-07 |
+| Denmark | 1,521 | 1,504 | 1,521 | 2026-05-15 |
 | Estonia | 396 | 383 | 396 | 2026-05-09 |
 | Finland | 180 | 172 | 180 | 2026-05-09 |
 | France | 4,586 | 4,317 | 10,007 | 2026-05-12 |
 | Germany | 6,555 | 6,479 | 6,555 | 2026-05-12 |
 | Greece | 1,748 | 1,626 | 1,748 | 2026-05-10 |
-| Hungary | 390 | 366 | 390 | 2026-05-09 |
+| Hungary | 390 | 366 | 390 | 2026-05-15 |
 | Iceland | 139 | 135 | 139 | 2026-05-09 |
 | Ireland | 522 | 495 | 522 | 2026-05-12 |
 | Italy | 5,232 | 4,883 | 5,338 | 2026-05-13 |
@@ -44,10 +44,10 @@ _Stats as of 2026-05-15 06:26 UTC — last scan: 2026-05-13_
 | Portugal | 3,503 | 2,933 | 3,503 | 2026-05-10 |
 | Cyprus | 24 | 24 | 24 | 2026-05-12 |
 | Romania | 709 | 301 | 799 | 2026-05-11 |
-| Slovakia | 434 | 415 | 434 | 2026-05-06 |
-| Slovenia | 200 | 190 | 200 | 2026-05-06 |
+| Slovakia | 434 | 415 | 434 | 2026-05-15 |
+| Slovenia | 200 | 190 | 200 | 2026-05-15 |
 | Spain | 3,345 | 3,032 | 6,069 | 2026-05-11 |
-| Sweden | 1,558 | 1,487 | 1,558 | 2026-05-06 |
+| Sweden | 1,558 | 1,490 | 1,558 | 2026-05-15 |
 | Switzerland | 2,117 | 2,083 | 2,117 | 2026-05-12 |
 | United Kingdom | 6,757 | 6,439 | 19,502 | 2026-05-12 |
 
@@ -59,44 +59,44 @@ _Stats as of 2026-05-15 06:26 UTC — last scan: 2026-05-13_
 
 | # | Technology | Pages | Categories |
 |--:|-----------|------:|-----------|
-| 1 | jQuery | **27,088** | JavaScript libraries |
+| 1 | jQuery | **27,087** | JavaScript libraries |
 | 2 | PHP | **15,913** | Programming languages |
-| 3 | Apache | **14,614** | Web servers |
+| 3 | Apache | **14,603** | Web servers |
 | 4 | Bootstrap | **12,771** | UI frameworks |
-| 5 | Font Awesome | **11,503** | Font scripts |
-| 6 | Google Font API | **9,346** | Font scripts |
+| 5 | Font Awesome | **11,506** | Font scripts |
+| 6 | Google Font API | **9,350** | Font scripts |
 | 7 | MySQL | **8,826** | Databases |
 | 8 | WordPress | **8,770** | Blogs, CMS |
-| 9 | Nginx | **8,502** | Reverse proxies, Web servers |
+| 9 | Nginx | **8,506** | Reverse proxies, Web servers |
 | 10 | jQuery Migrate | **7,700** | JavaScript libraries |
 | 11 | Windows Server | **4,909** | Operating systems |
 | 12 | IIS | **4,837** | Web servers |
 | 13 | jQuery UI | **4,698** | JavaScript libraries |
 | 14 | Microsoft ASP.NET | **4,136** | Web frameworks |
-| 15 | Drupal | **3,636** | CMS |
+| 15 | Drupal | **3,635** | CMS |
 | 16 | Google Tag Manager | **3,407** | Tag managers |
 | 17 | jsDelivr | **3,377** | CDN |
 | 18 | Cloudflare | **3,288** | CDN |
 | 19 | Yoast SEO | **2,865** | SEO |
-| 20 | reCAPTCHA | **2,760** | Security |
+| 20 | reCAPTCHA | **2,762** | Security |
 
 ### Top Technology Categories
 
 | # | Category | Pages |
 |--:|---------|------:|
-| 1 | JavaScript libraries | **54,195** |
-| 2 | Web servers | **30,700** |
-| 3 | Font scripts | **21,268** |
+| 1 | JavaScript libraries | **54,192** |
+| 2 | Web servers | **30,694** |
+| 3 | Font scripts | **21,275** |
 | 4 | Programming languages | **21,058** |
-| 5 | CMS | **17,099** |
+| 5 | CMS | **17,097** |
 | 6 | UI frameworks | **16,622** |
 | 7 | Databases | **9,223** |
 | 8 | Blogs | **8,803** |
-| 9 | Reverse proxies | **8,781** |
+| 9 | Reverse proxies | **8,784** |
 | 10 | CDN | **8,313** |
-| 11 | Operating systems | **8,301** |
+| 11 | Operating systems | **8,305** |
 | 12 | Web frameworks | **6,701** |
-| 13 | JavaScript frameworks | **4,963** |
+| 13 | JavaScript frameworks | **4,961** |
 | 14 | Miscellaneous | **3,712** |
 | 15 | Tag managers | **3,425** |
 
