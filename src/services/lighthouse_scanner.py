@@ -106,6 +106,7 @@ class LighthouseScanner:
         extra_args: List[str] | None = None,
         only_categories: Sequence[str] | None = None,
         throttling_method: str | None = None,
+        lighthouse_timeout_ms: int | None = 45000,
     ):
         """
         Args:
@@ -126,6 +127,9 @@ class LighthouseScanner:
                 ``--throttling-method=<value>`` to Lighthouse.  Use
                 ``"provided"`` to skip simulated slow-network throttling
                 (appropriate for server-to-server audits).
+            lighthouse_timeout_ms: When provided, pass
+                ``--timeout=<value>`` (milliseconds) to Lighthouse so slow
+                pages fail fast and free concurrency slots.
         """
         self.timeout_seconds = timeout_seconds
         self.lighthouse_path = lighthouse_path
@@ -137,6 +141,9 @@ class LighthouseScanner:
             built_extra.append(f"--only-categories={','.join(only_categories)}")
         if throttling_method:
             built_extra.append(f"--throttling-method={throttling_method}")
+        has_timeout_arg = any(arg.startswith("--timeout=") for arg in built_extra)
+        if lighthouse_timeout_ms is not None and not has_timeout_arg:
+            built_extra.append(f"--timeout={lighthouse_timeout_ms}")
         self.extra_args = built_extra
 
     # ------------------------------------------------------------------

@@ -25,6 +25,7 @@ class LighthouseScannerJob:
         lighthouse_path: str = "lighthouse",
         only_categories: list[str] | None = None,
         throttling_method: str | None = None,
+        lighthouse_timeout_ms: int | None = 45000,
     ):
         self.settings = settings
         self.scanner = LighthouseScanner(
@@ -32,6 +33,7 @@ class LighthouseScannerJob:
             lighthouse_path=lighthouse_path,
             only_categories=only_categories,
             throttling_method=throttling_method,
+            lighthouse_timeout_ms=lighthouse_timeout_ms,
         )
         self.db_path = initialize_schema(settings.metadata_db_url)
 
@@ -76,6 +78,70 @@ class LighthouseScannerJob:
             }
         finally:
             conn.close()
+
+    def _toon_page_count(self, toon_path: Path) -> int:
+        """Return the number of pages in a TOON file."""
+        try:
+            toon_data = self._load_toon_file(toon_path)
+        except (OSError, json.JSONDecodeError):
+            return 0
+
+        declared_count = toon_data.get("page_count")
+        if isinstance(declared_count, int):
+            return max(declared_count, 0)
+        return len(self._extract_urls_from_toon(toon_data))
+
+    def _build_balanced_toon_order(self, toon_files: List[Path]) -> List[Path]:
+        """Return a stratified country order to reduce runtime-cap bias."""
+        if len(toon_files) <= 1:
+            return toon_files
+
+        last_scans = self._get_last_scan_time_per_country()
+        entries: list[tuple[Path, int, str | None]] = [
+            (
+                path,
+                self._toon_page_count(path),
+                last_scans.get(country_filename_to_code(path.stem)),
+            )
+            for path in toon_files
+        ]
+
+        sorted_counts = sorted(count for _, count, _ in entries)
+        lower_idx = len(sorted_counts) // 3
+        upper_idx = (len(sorted_counts) * 2) // 3
+        lower_cutoff = sorted_counts[lower_idx]
+        upper_cutoff = sorted_counts[upper_idx]
+
+        buckets: dict[str, list[tuple[Path, int, str | None]]] = {
+            "small": [],
+            "medium": [],
+            "large": [],
+        }
+
+        for path, count, last_scan in entries:
+            if count <= lower_cutoff:
+                buckets["small"].append((path, count, last_scan))
+            elif count <= upper_cutoff:
+                buckets["medium"].append((path, count, last_scan))
+            else:
+                buckets["large"].append((path, count, last_scan))
+
+        for items in buckets.values():
+            items.sort(
+                key=lambda item: (
+                    0 if not item[2] else 1,
+                    item[2] or "",
+                    item[0].stem,
+                )
+            )
+
+        balanced: List[Path] = []
+        while any(buckets.values()):
+            for key in ("small", "medium", "large"):
+                if buckets[key]:
+                    balanced.append(buckets[key].pop(0)[0])
+
+        return balanced
 
     def _get_recently_scanned_urls(
         self, country_code: str, within_days: int
@@ -393,19 +459,9 @@ class LighthouseScannerJob:
         """
         all_stats = []
 
-        # When skipping recently-scanned URLs, sort countries so those not
-        # scanned recently (or never scanned) come first.
-        if skip_recently_scanned_days > 0:
-            last_scan_times = self._get_last_scan_time_per_country()
-            toon_files = sorted(
-                toon_seeds_dir.glob("*.toon"),
-                key=lambda p: (
-                    last_scan_times.get(country_filename_to_code(p.stem), ""),
-                    p.stem,
-                ),
-            )
-        else:
-            toon_files = sorted(toon_seeds_dir.glob("*.toon"))
+        toon_files = self._build_balanced_toon_order(
+            sorted(toon_seeds_dir.glob("*.toon"))
+        )
 
         print(f"Found {len(toon_files)} TOON files to process")
 
