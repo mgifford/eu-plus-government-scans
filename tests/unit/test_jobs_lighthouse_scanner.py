@@ -2,10 +2,8 @@
 
 from __future__ import annotations
 
-import asyncio
 import json
 import sqlite3
-import tempfile
 from pathlib import Path
 from unittest.mock import AsyncMock, MagicMock, patch
 
@@ -14,7 +12,6 @@ import pytest
 from src.jobs.lighthouse_scanner import LighthouseScannerJob
 from src.lib.settings import Settings
 from src.services.lighthouse_scanner import LighthouseScanResult
-from src.storage.schema import initialize_schema
 
 
 # ---------------------------------------------------------------------------
@@ -326,6 +323,51 @@ def toon_seeds_dir(tmp_path):
     return tmp_path
 
 
+def test_build_balanced_toon_order_interleaves_size_buckets(temp_settings, tmp_path):
+    """Balanced ordering should interleave small/medium/large country buckets."""
+    job = _make_job(temp_settings)
+
+    def _write_toon(name: str, page_count: int) -> Path:
+        path = tmp_path / f"{name}.toon"
+        path.write_text(
+            json.dumps(
+                {
+                    "version": "0.1-seed",
+                    "country": name.upper(),
+                    "page_count": page_count,
+                    "domains": [],
+                }
+            ),
+            encoding="utf-8",
+        )
+        return path
+
+    toon_files = [
+        _write_toon("small_old", 1),
+        _write_toon("small_new", 2),
+        _write_toon("small_mid", 10),
+        _write_toon("medium_old", 11),
+        _write_toon("medium_new", 30),
+        _write_toon("large_old", 31),
+    ]
+
+    with patch.object(
+        job,
+        "_get_last_scan_time_per_country",
+        return_value={
+            "SMALL_OLD": "2024-01-01T00:00:00+00:00",
+            "SMALL_MID": "2024-02-01T00:00:00+00:00",
+            "SMALL_NEW": "2024-03-01T00:00:00+00:00",
+            "MEDIUM_OLD": "2024-01-01T00:00:00+00:00",
+            "MEDIUM_NEW": "2024-03-01T00:00:00+00:00",
+            "LARGE_OLD": "2024-01-01T00:00:00+00:00",
+        },
+    ):
+        ordered = job._build_balanced_toon_order(sorted(toon_files))
+
+    assert [p.stem for p in ordered[:3]] == ["small_old", "medium_old", "large_old"]
+
+
 @pytest.mark.asyncio
 async def test_scan_all_countries_processes_all(temp_settings, toon_seeds_dir):
     job = _make_job(temp_settings)
@@ -345,7 +387,6 @@ async def test_scan_all_countries_processes_all(temp_settings, toon_seeds_dir):
 @pytest.mark.asyncio
 async def test_scan_all_countries_stops_when_budget_exhausted(temp_settings, toon_seeds_dir):
     """With an already-exhausted time budget no countries are started."""
-    import time
     job = _make_job(temp_settings)
 
     call_count = 0

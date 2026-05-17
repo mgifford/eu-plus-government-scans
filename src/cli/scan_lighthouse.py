@@ -104,6 +104,16 @@ def main():
         default=None,
         dest="throttling_method",
     )
+    parser.add_argument(
+        "--lighthouse-timeout-ms",
+        help=(
+            "Lighthouse internal timeout in milliseconds "
+            "(default: 45000 = 45 seconds)."
+        ),
+        type=int,
+        default=45000,
+        dest="lighthouse_timeout_ms",
+    )
 
     args = parser.parse_args()
 
@@ -128,6 +138,7 @@ def main():
         lighthouse_path=args.lighthouse_path,
         only_categories=only_categories,
         throttling_method=args.throttling_method,
+        lighthouse_timeout_ms=args.lighthouse_timeout_ms,
     )
 
     max_runtime_seconds = args.max_runtime * 60 if args.max_runtime > 0 else None
