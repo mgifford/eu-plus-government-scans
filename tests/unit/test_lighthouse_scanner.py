@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import json
 import subprocess
-from unittest.mock import MagicMock, patch
+from unittest.mock import patch
 
 import pytest
 
@@ -263,6 +263,7 @@ def test_build_command_json_output():
     cmd = scanner._build_command("https://example.gov/")
     assert "--output=json" in cmd
     assert "--output-path=stdout" in cmd
+    assert "--timeout=45000" in cmd
 
 
 def test_build_command_extra_args():
@@ -270,6 +271,14 @@ def test_build_command_extra_args():
     scanner = LighthouseScanner(extra_args=["--only-categories=accessibility"])
     cmd = scanner._build_command("https://example.gov/")
     assert "--only-categories=accessibility" in cmd
+
+
+def test_build_command_preserves_explicit_timeout_arg():
+    """An explicit --timeout argument should not be duplicated."""
+    scanner = LighthouseScanner(extra_args=["--timeout=30000"])
+    cmd = scanner._build_command("https://example.gov/")
+    assert cmd.count("--timeout=30000") == 1
+    assert "--timeout=45000" not in cmd
 
 
 def test_build_command_custom_chrome_flags():
