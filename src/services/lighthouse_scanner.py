@@ -299,7 +299,8 @@ class LighthouseScanner:
 
         _start = start_time if start_time is not None else time.monotonic()
         _safety_buffer = 60.0
-        semaphore = asyncio.Semaphore(max(1, concurrency))
+        max_concurrency = max(1, concurrency)
+        semaphore = asyncio.Semaphore(max_concurrency)
 
         total = len(urls)
 
@@ -328,7 +329,8 @@ class LighthouseScanner:
                     )
                     print(f"      ✓ perf={perf} a11y={a11y}")
 
-        tasks: List[asyncio.Task] = []
+        running_tasks: set[asyncio.Task[None]] = set()
+        submitted_count = 0
         for idx, url in enumerate(urls, 1):
             if max_runtime_seconds is not None:
                 elapsed = time.monotonic() - _start
@@ -338,19 +340,40 @@ class LighthouseScanner:
                         f"  ⏱️  Time budget near limit "
                         f"({elapsed / 60:.1f}m elapsed, "
                         f"{remaining / 60:.1f}m remaining) "
-                        f"— stopping after submitting {len(tasks)}/{total} URLs"
+                        f"— stopping after submitting {submitted_count}/{total} URLs"
                     )
                     break
 
-            tasks.append(asyncio.create_task(_scan_one_url(idx, url)))
+            while len(running_tasks) >= max_concurrency:
+                done, pending = await asyncio.wait(
+                    running_tasks,
+                    return_when=asyncio.FIRST_COMPLETED,
+                )
+                running_tasks = pending
+                for done_task in done:
+                    if done_task.cancelled():
+                        continue
+                    exc = done_task.exception()
+                    if exc is not None:
+                        print(f"      ✗ Unexpected task error: {exc}")
+
+            running_tasks.add(asyncio.create_task(_scan_one_url(idx, url)))
+            submitted_count += 1
 
             if delay > 0:
                 await asyncio.sleep(delay)
 
-        if tasks:
-            task_results = await asyncio.gather(*tasks, return_exceptions=True)
-            for task_result in task_results:
-                if isinstance(task_result, BaseException):
-                    print(f"      ✗ Unexpected task error: {task_result}")
+        while running_tasks:
+            done, pending = await asyncio.wait(
+                running_tasks,
+                return_when=asyncio.FIRST_COMPLETED,
+            )
+            running_tasks = pending
+            for done_task in done:
+                if done_task.cancelled():
+                    continue
+                exc = done_task.exception()
+                if exc is not None:
+                    print(f"      ✗ Unexpected task error: {exc}")
 
         return results
