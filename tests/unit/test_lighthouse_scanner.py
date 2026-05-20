@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import asyncio
 import json
 import subprocess
 from unittest.mock import patch
@@ -244,6 +245,35 @@ async def test_scan_urls_batch_no_max_runtime_scans_all():
         )
 
     assert len(results) == 3
+
+
+@pytest.mark.asyncio
+async def test_scan_urls_batch_runtime_cap_with_concurrency_limits_submissions():
+    """Runtime cap should stop new submissions instead of queueing all URLs."""
+    scanner = LighthouseScanner()
+    urls = [f"https://gov{i}.example/" for i in range(20)]
+
+    async def _slow_scan(url: str) -> LighthouseScanResult:
+        await asyncio.sleep(0.25)
+        return LighthouseScanResult(
+            url=url,
+            performance_score=0.9,
+            accessibility_score=0.9,
+            best_practices_score=0.9,
+            seo_score=0.9,
+            pwa_score=None,
+            scanned_at="2024-01-01T00:00:00+00:00",
+        )
+
+    with patch.object(scanner, "scan_url", side_effect=_slow_scan):
+        results = await scanner.scan_urls_batch(
+            urls,
+            rate_limit_per_second=0,
+            max_runtime_seconds=60.5,
+            concurrency=2,
+        )
+
+    assert 0 < len(results) < len(urls)
 
 
 # ---------------------------------------------------------------------------
