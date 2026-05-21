@@ -957,7 +957,7 @@ def _write_priority_guide(f) -> None:
         "and analytics platforms.\n"
     )
     f.write(
-        "4. **Lighthouse Scan** — run on demand; measures performance, "
+        "4. **Lighthouse Scan** — runs every 6 hours; measures performance, "
         "accessibility (WCAG), best practices, and SEO for each URL.\n"
     )
     f.write(
