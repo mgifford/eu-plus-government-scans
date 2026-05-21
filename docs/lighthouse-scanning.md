@@ -85,18 +85,18 @@ python3 -m src.cli.scan_lighthouse \
 ## GitHub Actions
 
 The **Scan Lighthouse** workflow (`.github/workflows/scan-lighthouse.yml`) runs automatically
-every day at 03:00 UTC and can also be triggered manually from the Actions tab:
+every 6 hours and can also be triggered manually from the Actions tab:
 
 1. Go to **Actions → Scan Lighthouse → Run workflow**
 2. Optionally enter a country code (leave blank to scan all countries)
 3. Optionally adjust the rate limit, concurrency, and skip-recently-scanned-days
 
-### Why daily?
+### Why every 6 hours?
 
 With `--concurrency 3`, `--only-categories performance,accessibility,best-practices,seo`,
 and `--throttling-method provided`, each URL takes ~20–30 s.  A 110-minute run covers
-~750–1,000 URLs.  Running daily with `--skip-recently-scanned-days 30` ensures every URL
-is refreshed at least once per month while focusing each run on previously uncovered URLs.
+~750–1,000 URLs.  Running every 6 hours with `--skip-recently-scanned-days 30` increases
+coverage velocity while still focusing each run on previously uncovered URLs.
 
 Lighthouse now has **its own concurrency group** (`lighthouse-scan`) so it is never
 cancelled by higher-frequency scans like social-media (every 2 hours) or tech (every 4 hours).
@@ -171,7 +171,7 @@ ORDER BY accessibility_score DESC;
 
 ```mermaid
 flowchart TD
-    A["scan-lighthouse.yml\n(GitHub Actions — daily at 03:00 UTC + manual)"]
+    A["scan-lighthouse.yml\n(GitHub Actions — every 6 hours + manual)"]
     A --> B["scan_lighthouse.py (CLI)"]
     B --> C["LighthouseScannerJob.scan_country()"]
     C --> D["Filter out recently-scanned URLs\n(_get_recently_scanned_urls)"]
