@@ -266,7 +266,6 @@ def update_index_progress(
             conn.close()
 
         uv_total = sum(d["total"] for d in url_val.values())
-        uv_valid = sum(d["valid"] for d in url_val.values())
         sm_total = sum(d["total"] for d in social.values())
         sm_reachable = sum(d["reachable"] for d in social.values())
         tech_total = sum(d["total"] for d in tech.values())
