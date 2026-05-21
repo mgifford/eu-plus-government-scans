@@ -104,6 +104,7 @@ Each GitHub Actions scan run uploads its results as a downloadable artifact:
 
 - [GitHub Repository](https://github.com/mgifford/eu-plus-government-scans)
 - [GitHub Actions Workflows](https://github.com/mgifford/eu-plus-government-scans/actions)
+- [Data API](api.md)
 - [Accessibility Statement](https://github.com/mgifford/eu-plus-government-scans/blob/main/ACCESSIBILITY.md)
 
 ---
