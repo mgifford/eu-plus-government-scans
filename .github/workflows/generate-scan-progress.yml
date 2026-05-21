@@ -1,12 +1,23 @@
 name: Generate Scan Progress Report
 
 on:
-  # Re-generate progress once per day.
+  # Re-generate progress frequently so published coverage stays in step with scans.
   schedule:
-    - cron: "15 5 * * *"
+    - cron: "15 */2 * * *"
 
   # Allow manual trigger at any time.
   workflow_dispatch:
+
+  # Refresh progress right after scan workflows complete on main.
+  workflow_run:
+    workflows:
+      - URL Validation - Batched
+      - Scan Social Media Links
+      - Scan Technology Stack
+      - Scan Lighthouse
+      - Scan Accessibility Statements
+    types:
+      - completed
 
 # Only one report-generation job at a time; newer runs cancel older queued ones.
 concurrency:
@@ -15,6 +26,7 @@ concurrency:
 
 jobs:
   generate-progress-report:
+    if: ${{ github.event_name != 'workflow_run' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main') }}
     runs-on: ubuntu-latest
     timeout-minutes: 15
     permissions:
