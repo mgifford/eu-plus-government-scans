@@ -121,6 +121,32 @@ government servers.
 
 ---
 
+## License and Digital Public Goods status (Top Technologies)
+
+To support policy tracking of open source and free software use, this page now
+includes a machine-readable license registry for the current **Top
+Technologies** list:
+
+- [Download technology license data (JSON)](technology-license-data.json)
+
+Current summary from `technology-license-data.json`:
+
+- **DPGA Registry listed:** Drupal
+- **OSI-approved license (yes):** jQuery, PHP, Apache, Bootstrap, MySQL,
+  WordPress, Nginx, jQuery Migrate, jQuery UI, Drupal, Yoast SEO
+- **Partial/mixed:** Font Awesome, Microsoft ASP.NET, jsDelivr
+- **Not OSI-approved (no):** Google Font API, Windows Server, IIS,
+  Google Tag Manager, Cloudflare, reCAPTCHA
+
+> Notes:
+> - This is a best-effort mapping of detected technology names to primary
+>   upstream licenses.
+> - Some detections are products/services (not single software packages), so
+>   their licensing model can be mixed or proprietary.
+> - DPGA status is based on a checked snapshot at generation time and may change.
+
+---
+
 ## Usage
 
 ### Scan a single country
