@@ -17,6 +17,7 @@ header_pages:
   - technology-scanning.md
   - third-party-tools.md
   - domains.md
+  - api.md
 
 # Markdown processor
 markdown: kramdown
