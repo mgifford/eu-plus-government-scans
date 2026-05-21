@@ -28,6 +28,7 @@ but can be downloaded from the GitHub Actions workflow run that produced them
 | Endpoint | Availability | Description |
 |----------|-------------|-------------|
 | [`technology-index.json`](#technology-indexjson) | **committed** | Compact cross-reference: technology → page count, categories, per-country page counts. Ideal for finding which countries use a given technology. |
+| [`technology-license-data.json`](#technology-license-datajson) | **committed** | License and policy-classification metadata for the current top detected technologies, including OSI-approval status and DPGA Registry status. |
 | [`third-party-tools-data.json`](#third-party-tools-datajson) | **committed** | Third-party JavaScript scan summary: top services, categories, per-country stats, and unknown host review queue. |
 | [`technology-data.json`](#technology-datajson) | artifact-only | Full technology scan data with per-country page-level drilldowns. |
 | [`social-media-data.json`](#social-media-datajson) | artifact-only | Full social-media scan data with per-URL evidence for every country. |
@@ -129,6 +130,65 @@ console.log('Top 5 jQuery countries:', ranked);
 // All CMS technologies
 const cmsTechs = data.by_category['CMS']?.technologies ?? [];
 console.log('CMS technologies:', cmsTechs);
+```
+
+---
+
+## technology-license-data.json
+
+**URL:** `https://mgifford.github.io/eu-plus-government-scans/technology-license-data.json`
+
+Policy-focused metadata for the technologies currently listed in the
+Technology Scanning page's **Top Technologies** table.
+
+Use this endpoint to answer questions like:
+- _Which detected top technologies have OSI-approved licenses?_
+- _Which detected top technologies are listed in the DPGA Registry?_
+- _Which detections map to proprietary or mixed licensing models?_
+
+### Schema
+
+```jsonc
+{
+  "generated_at": "2026-05-21 21:40 UTC",
+  "scope_note": "...",
+  "dpga_registry_source": "...",
+  "records": [
+    {
+      "technology": "Drupal",
+      "license": "GPL-2.0-or-later",
+      "osi_approved": "yes",        // one of: yes | no | partial
+      "dpga_registry": "listed"     // one of: listed | not_listed
+    }
+    // ... one entry per top technology
+  ]
+}
+```
+
+### Example: list technologies with OSI-approved licenses
+
+```bash
+curl -s https://mgifford.github.io/eu-plus-government-scans/technology-license-data.json \
+  | python3 -c "
+import json, sys
+data = json.load(sys.stdin)
+for r in data.get('records', []):
+    if r.get('osi_approved') == 'yes':
+        print(r.get('technology'))
+"
+```
+
+### Example: list DPGA Registry technologies
+
+```bash
+curl -s https://mgifford.github.io/eu-plus-government-scans/technology-license-data.json \
+  | python3 -c "
+import json, sys
+data = json.load(sys.stdin)
+for r in data.get('records', []):
+    if r.get('dpga_registry') == 'listed':
+        print(f\"{r.get('technology')}: {r.get('license')}\")
+"
 ```
 
 ---
