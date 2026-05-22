@@ -32,6 +32,9 @@ env:
 
 jobs:
   build:
+    # Skip when triggered by a skipped/failed generate-scan-progress run — there
+    # is nothing new to deploy and the required JSON artifacts won't be available.
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
