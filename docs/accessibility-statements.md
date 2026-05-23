@@ -5,7 +5,35 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_No scan data yet — stats update automatically after every scan run._
+_Stats as of 2026-05-23 15:56 UTC — last scan: 2026-05-23_
+
+**5** scan batches run
+
+**2,991** of **82,714** available pages scanned (**3.6%** coverage)
+**2,816** of **2,991** scanned pages were reachable (**94.1%**)
+**1,375** of **2,816** reachable pages have an accessibility statement (**48.8%**)
+**1,256** pages have the statement link in the footer (**91.3%** of pages with a statement)
+
+📥 Machine-readable results are available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
+
+Each country entry in the JSON file includes page-level evidence for pages with and without accessibility statements, plus a per-domain summary you can share to validate the published counts.
+
+> Hover or focus any non-zero count in the country table to preview the matching pages. If there are 20 or fewer URLs, the preview shows all of them; otherwise it shows a short sample. Full machine-readable data is available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
+
+---
+
+## Accessibility Statement Scan by Country
+
+| Country | Scanned | Available | Reachable | Has Statement | In Footer | Statement % | Scan Period |
+|---------|---------|-----------|-----------|--------------|-----------|------------|-------------|
+| Austria | 821 | 821 | 778 | 547 | 517 | 70.3% | May 2026 |
+| Belgium | 1,309 | 1,309 | 1,219 | 558 | 508 | 45.8% | May 2026 |
+| Bulgaria | 291 | 291 | 264 | 61 | 59 | 23.1% | May 2026 |
+| Croatia | 233 | 233 | 227 | 83 | 59 | 36.6% | May 2026 |
+| Czechia | 337 | 843 | 328 | 126 | 113 | 38.4% | May 2026 |
+| **Total** | **2,991** | **82,714** | **2,816** | **1,375** | **1,256** | **48.8%** | — |
+
+> **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
 <!-- ACCESSIBILITY_STATS_END -->
 
