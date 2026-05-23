@@ -5,7 +5,140 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_No scan data yet — stats update automatically after every scan run._
+_Stats as of 2026-05-23 22:34 UTC — last scan: 2026-05-23_
+
+**3** scan batches run
+
+**2,638** of **82,714** available pages scanned (**3.2%** coverage)
+**2,462** of **2,638** scanned pages were reachable (**93.3%**)
+**1,007** reachable pages loaded at least one third-party script (**40.9%** of reachable)
+**586** known third-party service loads identified
+**17** unique known services across **13** categories
+
+---
+
+## Third-Party JavaScript by Country
+
+| Country | Scanned | Available | Reachable | URLs with 3rd-Party JS | Known Service Loads | JS URLs /100 Reachable | Known Loads /100 Reachable | Last Scan |
+|---------|---------|-----------|-----------|------------------------|--------------------|------------------------|---------------------------|----------|
+| Austria | 821 | 821 | 778 | 265 | 44 | 34.1 | 5.7 | 2026-05-23 |
+| Bulgaria | 291 | 291 | 263 | 104 | 120 | 39.5 | 45.6 | 2026-05-23 |
+| France | 1,526 | 10,007 | 1,421 | 638 | 422 | 44.9 | 29.7 | 2026-05-23 |
+
+> Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and metric from [Download machine-readable third-party tools data (JSON)](third-party-tools-data.json).
+
+---
+
+### Top Third-Party Services
+
+| # | Service | Loads |
+|--:|---------|------:|
+| 1 | cdnjs (Cloudflare CDN) | **125** |
+| 2 | jsDelivr CDN | **112** |
+| 3 | Google reCAPTCHA | **56** |
+| 4 | Google Analytics (GA4) | **55** |
+| 5 | unpkg CDN | **49** |
+| 6 | Google Hosted Libraries | **48** |
+| 7 | jQuery | **38** |
+| 8 | Font Awesome | **37** |
+| 9 | Bootstrap | **21** |
+| 10 | Google Tag Manager | **20** |
+| 11 | Facebook Pixel | **6** |
+| 12 | Cookiebot | **6** |
+| 13 | Sentry | **5** |
+| 14 | Matomo Cloud | **3** |
+| 15 | OneTrust | **2** |
+| 16 | Adobe Dynamic Tag Management / Launch | **2** |
+| 17 | HubSpot | **1** |
+
+### Top Services by Page Prevalence
+
+| # | Service | Reachable Pages | Prevalence of Reachable Pages |
+|--:|---------|----------------:|------------------------------:|
+| 1 | cdnjs (Cloudflare CDN) | **86** | **6.1%** |
+| 2 | jsDelivr CDN | **74** | **5.2%** |
+| 3 | Google reCAPTCHA | **56** | **3.9%** |
+| 4 | Google Analytics (GA4) | **55** | **3.9%** |
+| 5 | Google Hosted Libraries | **45** | **3.2%** |
+| 6 | unpkg CDN | **37** | **2.6%** |
+| 7 | jQuery | **36** | **2.5%** |
+| 8 | Font Awesome | **27** | **1.9%** |
+| 9 | Bootstrap | **21** | **1.5%** |
+| 10 | Google Tag Manager | **20** | **1.4%** |
+| 11 | Cookiebot | **6** | **0.4%** |
+| 12 | Facebook Pixel | **6** | **0.4%** |
+| 13 | Sentry | **5** | **0.4%** |
+| 14 | Matomo Cloud | **3** | **0.2%** |
+| 15 | Adobe Dynamic Tag Management / Launch | **2** | **0.1%** |
+| 16 | OneTrust | **2** | **0.1%** |
+| 17 | HubSpot | **1** | **0.1%** |
+
+### Top Service Categories
+
+| # | Category | Loads |
+|--:|----------|------:|
+| 1 | CDN | **334** |
+| 2 | JavaScript Library | **86** |
+| 3 | Analytics | **66** |
+| 4 | Security | **56** |
+| 5 | CAPTCHA | **56** |
+| 6 | Icon Library | **37** |
+| 7 | Tag Manager | **22** |
+| 8 | UI Framework | **21** |
+| 9 | Cookie Consent | **8** |
+| 10 | Advertising | **6** |
+| 11 | Error Tracking | **5** |
+| 12 | CRM | **1** |
+| 13 | Marketing | **1** |
+
+### Category Balance
+
+Infrastructure-heavy categories (CDNs, core libraries, and UI assets):
+
+| # | Infrastructure Category | Loads |
+|--:|--------------------------|------:|
+| 1 | CDN | **334** |
+| 2 | JavaScript Library | **86** |
+| 3 | Icon Library | **37** |
+| 4 | UI Framework | **21** |
+
+Policy-relevant categories (tracking, consent, support, and security tooling):
+
+| # | Policy-Relevant Category | Loads |
+|--:|--------------------------|------:|
+| 1 | Analytics | **66** |
+| 2 | Security | **56** |
+| 3 | CAPTCHA | **56** |
+| 4 | Tag Manager | **22** |
+| 5 | Cookie Consent | **8** |
+| 6 | Advertising | **6** |
+| 7 | Error Tracking | **5** |
+| 8 | CRM | **1** |
+| 9 | Marketing | **1** |
+
+### Unknown Third-Party Hosts (Review Queue)
+
+| # | Host | Loads | Reachable Pages |
+|--:|------|------:|----------------:|
+| 1 | `cdn.ent.auvergnerhonealpes.fr` | **2,473** | **260** |
+| 2 | `cdn.ecollege.haute-garonne.fr` | **465** | **44** |
+| 3 | `webcachex-eu.datareporter.eu` | **164** | **164** |
+| 4 | `cartographie-prod-app-static-assets.s3.fr-par.scw.cloud` | **44** | **2** |
+| 5 | `static.crisp.help` | **39** | **16** |
+| 6 | `cdn.maine-et-loire.fr` | **38** | **4** |
+| 7 | `translate.google.com` | **35** | **35** |
+| 8 | `s7.addthis.com` | **30** | **28** |
+| 9 | `tardenois.grandreims.fr` | **28** | **1** |
+| 10 | `maps.googleapis.com` | **21** | **21** |
+| 11 | `tarteaucitron.io` | **21** | **21** |
+| 12 | `static.grandnancy.eu` | **21** | **3** |
+| 13 | `static.addtoany.com` | **19** | **19** |
+| 14 | `static.ingenie.fr` | **13** | **3** |
+| 15 | `js.hcaptcha.com` | **12** | **12** |
+
+> These hosts were seen as third-party script sources but did not match a known service signature. Review this queue regularly and promote stable, policy-relevant hosts into the signature list.
+
+📥 Machine-readable results: [Download machine-readable third-party tools data (JSON)](third-party-tools-data.json)
 
 <!-- THIRD_PARTY_JS_STATS_END -->
 
