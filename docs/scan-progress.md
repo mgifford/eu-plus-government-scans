@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-05-23 01:14 UTC_
+_Generated: 2026-05-23 01:28 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -14,10 +14,10 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
 | **Combined Reachability** | **77,564 confirmed reachable** | 82,714 | **<span role="img" aria-label="93.8% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:113px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">93.8%</span></span>** | — |
-| Social Media | 82,714 scanned (77,564 reachable) | 82,714 | <span role="img" aria-label="100.0% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:120px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">100.0%</span></span> | 18.0 days |
+| Social Media | 82,714 scanned (77,564 reachable) | 82,714 | <span role="img" aria-label="100.0% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:120px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">100.0%</span></span> | 17.9 days |
 | Technology | 51,659 scanned | 82,714 | <span role="img" aria-label="62.5% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:75px;height:100%;background:#b45309;"></span></span><span style="font-size:0.85em;color:#374151;">62.5%</span></span> | 18.0 days |
-| Lighthouse | 300 scanned | 82,714 | <span role="img" aria-label="0.4% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:2px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">0.4%</span></span> | 35.9 days |
-| Accessibility Statements | 82,714 scanned | 82,714 | <span role="img" aria-label="100.0% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:120px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">100.0%</span></span> | 18.3 days |
+| Lighthouse | 300 scanned | 82,714 | <span role="img" aria-label="0.4% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:2px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">0.4%</span></span> | 36.0 days |
+| Accessibility Statements | 82,714 scanned | 82,714 | <span role="img" aria-label="100.0% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:120px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">100.0%</span></span> | 18.4 days |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by any scan type. **Avg Age** shows the mean number of days (or hours) since each URL in that scan type was last scanned — lower is fresher.
 
@@ -45,7 +45,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Estonia | 396 | 396 | 384 | 181 | 2 | 24 | 177 | 67 | 3 | 0 | 26 | Apr 2026 – May 2026 |
 | Finland | 180 | 180 | 172 | 57 | 0 | 4 | 115 | 26 | 6 | 2 | 2 | Apr 2026 – May 2026 |
 | France | 10,007 | 10,007 | 9,370 | 2,733 | 26 | 562 | 6,265 | 1,678 | 575 | 127 | 509 | Apr 2026 – May 2026 |
-| Germany | 6,555 | 6,555 | 6,481 | 1,686 | 78 | 435 | 4,363 | 1,192 | 188 | 124 | 464 | Apr 2026 – May 2026 |
+| Germany | 6,555 | 6,555 | 6,481 | 1,686 | 79 | 435 | 4,363 | 1,192 | 188 | 124 | 465 | Apr 2026 – May 2026 |
 | Greece | 1,748 | 1,748 | 1,627 | 454 | 2 | 100 | 1,126 | 239 | 60 | 0 | 102 | Apr 2026 – May 2026 |
 | Hungary | 390 | 390 | 366 | 123 | 1 | 23 | 222 | 29 | 0 | 0 | 24 | Apr 2026 – May 2026 |
 | Iceland | 139 | 139 | 135 | 48 | 0 | 12 | 77 | 8 | 5 | 0 | 12 | Apr 2026 – May 2026 |
@@ -66,7 +66,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Spain | 6,069 | 6,069 | 5,413 | 2,062 | 11 | 344 | 3,118 | 1,821 | 423 | 60 | 314 | Apr 2026 – May 2026 |
 | Sweden | 1,558 | 1,558 | 1,490 | 492 | 3 | 35 | 970 | 92 | 24 | 11 | 25 | Apr 2026 – May 2026 |
 | Switzerland | 2,117 | 2,117 | 2,083 | 564 | 31 | 128 | 1,407 | 238 | 221 | 56 | 115 | Apr 2026 – May 2026 |
-| United Kingdom | 19,502 | 19,502 | 18,803 | 7,177 | 39 | 767 | 11,667 | 4,354 | 1,088 | 143 | 722 | Apr 2026 – May 2026 |
+| United Kingdom | 19,502 | 19,502 | 18,803 | 7,177 | 39 | 767 | 11,672 | 4,354 | 1,088 | 143 | 722 | Apr 2026 – May 2026 |
 
 > **Tier columns** (Twitter-only / Modern / Mixed / No Social) classify each page by its overall social media presence. **Platform columns** (Twitter / X / Bluesky / Mastodon) count pages with at least one link to that platform — a page may appear in more than one platform column.
 
