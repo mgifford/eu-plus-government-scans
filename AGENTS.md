@@ -61,8 +61,15 @@ requirements.txt        Python dependencies
 ## Development Setup
 
 ```bash
-# Install dependencies
-pip install -r requirements.txt
+# Install uv (recommended)
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Create and activate virtual environment
+uv venv
+source .venv/bin/activate
+
+# Install dependencies with uv
+uv pip install -r requirements.txt
 
 # Run all tests
 python3 -m pytest tests/ -v
@@ -99,6 +106,14 @@ python3 -m src.cli.generate_validation_report --output validation-report.md
 - Validation metadata lives in `data/metadata.db` (SQLite, **not committed**)
 - Batch state is tracked in `validation_batch_state` table
 - See `src/storage/schema.py` for full schema
+
+### Python Dependency Management (uv)
+
+- Use **uv** as the preferred Python package manager for local development and CI setup
+- Keep dependency versions pinned in `requirements.txt` for reproducibility
+- Use virtual environments (`uv venv`) and avoid system-wide installs
+- Before upgrading dependencies, check vulnerability advisories and license impact
+- Track dependency inventory and licenses in `SBOM.md`
 
 ### GitHub Actions
 
