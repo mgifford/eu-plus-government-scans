@@ -5,7 +5,39 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_No scan data yet — stats update automatically after every scan run._
+_Stats as of 2026-05-23 19:32 UTC — last scan: 2026-05-23_
+
+**9** scan batches run
+
+**6,165** of **82,714** available pages scanned (**7.5%** coverage)
+**5,868** of **6,165** scanned pages were reachable (**95.2%**)
+**2,884** of **5,868** reachable pages have an accessibility statement (**49.1%**)
+**2,665** pages have the statement link in the footer (**92.4%** of pages with a statement)
+
+📥 Machine-readable results are available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
+
+Each country entry in the JSON file includes page-level evidence for pages with and without accessibility statements, plus a per-domain summary you can share to validate the published counts.
+
+> Hover or focus any non-zero count in the country table to preview the matching pages. If there are 20 or fewer URLs, the preview shows all of them; otherwise it shows a short sample. Full machine-readable data is available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
+
+---
+
+## Accessibility Statement Scan by Country
+
+| Country | Scanned | Available | Reachable | Has Statement | In Footer | Statement % | Scan Period |
+|---------|---------|-----------|-----------|--------------|-----------|------------|-------------|
+| Austria | 821 | 821 | 778 | 547 | 517 | 70.3% | May 2026 |
+| Belgium | 1,309 | 1,309 | 1,219 | 558 | 508 | 45.8% | May 2026 |
+| Bulgaria | 291 | 291 | 264 | 61 | 59 | 23.1% | May 2026 |
+| Croatia | 233 | 233 | 227 | 83 | 59 | 36.6% | May 2026 |
+| Czechia | 337 | 843 | 328 | 126 | 113 | 38.4% | May 2026 |
+| Denmark | 1,521 | 1,521 | 1,495 | 960 | 940 | 64.2% | May 2026 |
+| Estonia | 396 | 396 | 380 | 141 | 77 | 37.1% | May 2026 |
+| Finland | 180 | 180 | 170 | 115 | 108 | 67.6% | May 2026 |
+| France | 1,077 | 10,007 | 1,007 | 293 | 284 | 29.1% | May 2026 |
+| **Total** | **6,165** | **82,714** | **5,868** | **2,884** | **2,665** | **49.1%** | — |
+
+> **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
 <!-- ACCESSIBILITY_STATS_END -->
 
