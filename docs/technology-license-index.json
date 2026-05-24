@@ -1,0 +1,3390 @@
+{
+  "generated_at": "2026-05-24 07:32 UTC",
+  "records": [
+    {
+      "by_country": {
+        "AUSTRIA": 580,
+        "BELGIUM": 568,
+        "BULGARIA": 182,
+        "CROATIA": 124,
+        "CZECHIA": 208
+      },
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "confidence": "high",
+      "detected_count": 1662,
+      "license_source": "override",
+      "license_status": "osi_approved",
+      "name": "jQuery",
+      "notes": "jQuery is distributed under the MIT License.",
+      "osi_approved": true,
+      "requires_manual_review": false,
+      "spdx_license_expression": "MIT"
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 447,
+        "BELGIUM": 453,
+        "BULGARIA": 73,
+        "CROATIA": 57,
+        "CZECHIA": 59
+      },
+      "categories": [
+        "Font scripts"
+      ],
+      "confidence": "medium",
+      "detected_count": 1089,
+      "license_source": "override",
+      "license_status": "unknown",
+      "name": "Font Awesome",
+      "notes": "Font Awesome combines MIT code, OFL-1.1 fonts, and CC-BY-4.0 assets, so the generic detection is mixed rather than a single OSI-approved package license.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": "MIT AND OFL-1.1 AND CC-BY-4.0"
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 71,
+        "BELGIUM": 504,
+        "BULGARIA": 65,
+        "CROATIA": 78,
+        "CZECHIA": 96
+      },
+      "categories": [
+        "Programming languages"
+      ],
+      "confidence": "medium",
+      "detected_count": 814,
+      "license_source": "override",
+      "license_status": "osi_approved",
+      "name": "PHP",
+      "notes": "PHP is distributed under the PHP License v3.01, which is OSI-approved.",
+      "osi_approved": true,
+      "requires_manual_review": true,
+      "spdx_license_expression": "PHP-3.01"
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 293,
+        "BELGIUM": 198,
+        "BULGARIA": 115,
+        "CROATIA": 83,
+        "CZECHIA": 88
+      },
+      "categories": [
+        "UI frameworks"
+      ],
+      "confidence": "high",
+      "detected_count": 777,
+      "license_source": "override",
+      "license_status": "osi_approved",
+      "name": "Bootstrap",
+      "notes": "Bootstrap is distributed under the MIT License.",
+      "osi_approved": true,
+      "requires_manual_review": false,
+      "spdx_license_expression": "MIT"
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 8,
+        "BELGIUM": 354,
+        "BULGARIA": 57,
+        "CROATIA": 60,
+        "CZECHIA": 96
+      },
+      "categories": [
+        "Font scripts"
+      ],
+      "confidence": "high",
+      "detected_count": 575,
+      "license_source": "override",
+      "license_status": "not_applicable_service",
+      "name": "Google Font API",
+      "notes": "Google Font API is a hosted font delivery service rather than a single distributable software package.",
+      "osi_approved": null,
+      "requires_manual_review": false,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 453,
+        "BELGIUM": 42,
+        "BULGARIA": 35,
+        "CROATIA": 9,
+        "CZECHIA": 24
+      },
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "confidence": "high",
+      "detected_count": 563,
+      "license_source": "override",
+      "license_status": "osi_approved",
+      "name": "jQuery UI",
+      "notes": "jQuery UI is distributed under the MIT License.",
+      "osi_approved": true,
+      "requires_manual_review": false,
+      "spdx_license_expression": "MIT"
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 295,
+        "BELGIUM": 73,
+        "BULGARIA": 22,
+        "CROATIA": 40,
+        "CZECHIA": 51
+      },
+      "categories": [
+        "Operating systems"
+      ],
+      "confidence": "high",
+      "detected_count": 481,
+      "license_source": "override",
+      "license_status": "proprietary",
+      "name": "Windows Server",
+      "notes": "Windows Server is proprietary Microsoft server software.",
+      "osi_approved": false,
+      "requires_manual_review": false,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 210,
+        "BELGIUM": 171,
+        "BULGARIA": 4,
+        "CROATIA": 19,
+        "CZECHIA": 75
+      },
+      "categories": [
+        "Reverse proxies",
+        "Web servers"
+      ],
+      "confidence": "high",
+      "detected_count": 479,
+      "license_source": "override",
+      "license_status": "osi_approved",
+      "name": "Nginx",
+      "notes": "Open source Nginx uses the BSD-2-Clause license.",
+      "osi_approved": true,
+      "requires_manual_review": false,
+      "spdx_license_expression": "BSD-2-Clause"
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 295,
+        "BELGIUM": 72,
+        "BULGARIA": 22,
+        "CROATIA": 40,
+        "CZECHIA": 49
+      },
+      "categories": [
+        "Web servers"
+      ],
+      "confidence": "high",
+      "detected_count": 478,
+      "license_source": "override",
+      "license_status": "proprietary",
+      "name": "IIS",
+      "notes": "Internet Information Services is proprietary software bundled with Windows Server.",
+      "osi_approved": false,
+      "requires_manual_review": false,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 2,
+        "BELGIUM": 429,
+        "BULGARIA": 6,
+        "CROATIA": 11,
+        "CZECHIA": 3
+      },
+      "categories": [
+        "CMS"
+      ],
+      "confidence": "high",
+      "detected_count": 451,
+      "license_source": "override",
+      "license_status": "osi_approved",
+      "name": "Drupal",
+      "notes": "Drupal core is licensed under GPL-2.0-or-later.",
+      "osi_approved": true,
+      "requires_manual_review": false,
+      "spdx_license_expression": "GPL-2.0-or-later"
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 293,
+        "BELGIUM": 65,
+        "BULGARIA": 22,
+        "CROATIA": 40,
+        "CZECHIA": 25
+      },
+      "categories": [
+        "Web frameworks"
+      ],
+      "confidence": "medium",
+      "detected_count": 445,
+      "license_source": "override",
+      "license_status": "osi_approved",
+      "name": "Microsoft ASP.NET",
+      "notes": "ASP.NET Core is MIT-licensed, while legacy ASP.NET components were proprietary; treat this generic detection as medium confidence.",
+      "osi_approved": true,
+      "requires_manual_review": true,
+      "spdx_license_expression": "MIT"
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 122,
+        "BELGIUM": 107,
+        "BULGARIA": 97,
+        "CROATIA": 76,
+        "CZECHIA": 36
+      },
+      "categories": [
+        "Web servers"
+      ],
+      "confidence": "high",
+      "detected_count": 438,
+      "license_source": "override",
+      "license_status": "osi_approved",
+      "name": "Apache",
+      "notes": "Apache HTTP Server is distributed under Apache-2.0.",
+      "osi_approved": true,
+      "requires_manual_review": false,
+      "spdx_license_expression": "Apache-2.0"
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 243,
+        "BELGIUM": 14,
+        "BULGARIA": 60,
+        "CROATIA": 19,
+        "CZECHIA": 41
+      },
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "confidence": "high",
+      "detected_count": 377,
+      "license_source": "override",
+      "license_status": "osi_approved",
+      "name": "Lightbox",
+      "notes": "Common Lightbox distributions are MIT-licensed.",
+      "osi_approved": true,
+      "requires_manual_review": false,
+      "spdx_license_expression": "MIT"
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 167,
+        "BELGIUM": 95,
+        "BULGARIA": 33,
+        "CROATIA": 23,
+        "CZECHIA": 40
+      },
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "confidence": "high",
+      "detected_count": 358,
+      "license_source": "override",
+      "license_status": "osi_approved",
+      "name": "Slick",
+      "notes": "Slick carousel is distributed under the MIT License.",
+      "osi_approved": true,
+      "requires_manual_review": false,
+      "spdx_license_expression": "MIT"
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 20,
+        "BELGIUM": 52,
+        "BULGARIA": 43,
+        "CROATIA": 45,
+        "CZECHIA": 66
+      },
+      "categories": [
+        "Databases"
+      ],
+      "confidence": "medium",
+      "detected_count": 226,
+      "license_source": "override",
+      "license_status": "osi_approved",
+      "name": "MySQL",
+      "notes": "MySQL Community Server is GPL-2.0-only, with separate commercial licensing also available.",
+      "osi_approved": true,
+      "requires_manual_review": true,
+      "spdx_license_expression": "GPL-2.0-only"
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 20,
+        "BELGIUM": 52,
+        "BULGARIA": 43,
+        "CROATIA": 45,
+        "CZECHIA": 66
+      },
+      "categories": [
+        "Blogs",
+        "CMS"
+      ],
+      "confidence": "high",
+      "detected_count": 226,
+      "license_source": "override",
+      "license_status": "osi_approved",
+      "name": "WordPress",
+      "notes": "WordPress core is licensed under GPL-2.0-or-later.",
+      "osi_approved": true,
+      "requires_manual_review": false,
+      "spdx_license_expression": "GPL-2.0-or-later"
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 27,
+        "BELGIUM": 58,
+        "BULGARIA": 42,
+        "CROATIA": 35,
+        "CZECHIA": 49
+      },
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "confidence": "high",
+      "detected_count": 211,
+      "license_source": "override",
+      "license_status": "osi_approved",
+      "name": "jQuery Migrate",
+      "notes": "jQuery Migrate is distributed under the MIT License.",
+      "osi_approved": true,
+      "requires_manual_review": false,
+      "spdx_license_expression": "MIT"
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 8,
+        "BELGIUM": 142,
+        "BULGARIA": 15,
+        "CROATIA": 18,
+        "CZECHIA": 25
+      },
+      "categories": [
+        "CDN"
+      ],
+      "confidence": "medium",
+      "detected_count": 208,
+      "license_source": "override",
+      "license_status": "osi_approved",
+      "name": "jsDelivr",
+      "notes": "The jsDelivr platform code is MIT-licensed, but the CDN serves packages under many different upstream licenses.",
+      "osi_approved": true,
+      "requires_manual_review": true,
+      "spdx_license_expression": "MIT"
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 161,
+        "BELGIUM": 30,
+        "BULGARIA": 4,
+        "CZECHIA": 8
+      },
+      "categories": [
+        "Maps"
+      ],
+      "confidence": "high",
+      "detected_count": 203,
+      "license_source": "override",
+      "license_status": "osi_approved",
+      "name": "Leaflet",
+      "notes": "Leaflet is distributed under the BSD-2-Clause license.",
+      "osi_approved": true,
+      "requires_manual_review": false,
+      "spdx_license_expression": "BSD-2-Clause"
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 10,
+        "BELGIUM": 72,
+        "BULGARIA": 82,
+        "CROATIA": 10,
+        "CZECHIA": 8
+      },
+      "categories": [
+        "CDN"
+      ],
+      "confidence": "high",
+      "detected_count": 182,
+      "license_source": "override",
+      "license_status": "not_applicable_service",
+      "name": "Cloudflare",
+      "notes": "Cloudflare is primarily a proprietary CDN and DDoS mitigation service; package SPDX classification does not cleanly apply.",
+      "osi_approved": null,
+      "requires_manual_review": false,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 3,
+        "BELGIUM": 86,
+        "BULGARIA": 6,
+        "CROATIA": 20,
+        "CZECHIA": 22
+      },
+      "categories": [
+        "Tag managers"
+      ],
+      "confidence": "high",
+      "detected_count": 137,
+      "license_source": "override",
+      "license_status": "not_applicable_service",
+      "name": "Google Tag Manager",
+      "notes": "Google Tag Manager is a proprietary hosted service, not a single distributable software package.",
+      "osi_approved": null,
+      "requires_manual_review": false,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 2,
+        "BELGIUM": 120,
+        "CROATIA": 5
+      },
+      "categories": [
+        "Caching"
+      ],
+      "confidence": "high",
+      "detected_count": 127,
+      "license_source": "override",
+      "license_status": "osi_approved",
+      "name": "Varnish",
+      "notes": "Varnish Cache is distributed under Apache-2.0.",
+      "osi_approved": true,
+      "requires_manual_review": false,
+      "spdx_license_expression": "Apache-2.0"
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 4,
+        "BELGIUM": 9,
+        "BULGARIA": 24,
+        "CROATIA": 14,
+        "CZECHIA": 44
+      },
+      "categories": [
+        "Security"
+      ],
+      "confidence": "high",
+      "detected_count": 95,
+      "license_source": "override",
+      "license_status": "not_applicable_service",
+      "name": "reCAPTCHA",
+      "notes": "Google reCAPTCHA is a proprietary hosted service.",
+      "osi_approved": null,
+      "requires_manual_review": false,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 70,
+        "BULGARIA": 11,
+        "CROATIA": 8
+      },
+      "categories": [
+        "Ecommerce"
+      ],
+      "confidence": "low",
+      "detected_count": 89,
+      "license_source": "override",
+      "license_status": "unknown",
+      "name": "Cart Functionality",
+      "notes": "Cart Functionality is a generic detection category, not a single upstream package.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 16,
+        "BELGIUM": 27,
+        "BULGARIA": 9,
+        "CROATIA": 22,
+        "CZECHIA": 10
+      },
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "confidence": "high",
+      "detected_count": 84,
+      "license_source": "override",
+      "license_status": "osi_approved",
+      "name": "Modernizr",
+      "notes": "Modernizr is distributed under the MIT License.",
+      "osi_approved": true,
+      "requires_manual_review": false,
+      "spdx_license_expression": "MIT"
+    },
+    {
+      "by_country": {
+        "BELGIUM": 14,
+        "BULGARIA": 8,
+        "CROATIA": 25,
+        "CZECHIA": 24
+      },
+      "categories": [
+        "SEO"
+      ],
+      "confidence": "high",
+      "detected_count": 71,
+      "license_source": "override",
+      "license_status": "osi_approved",
+      "name": "Yoast SEO",
+      "notes": "Yoast SEO is distributed under GPL-3.0-or-later.",
+      "osi_approved": true,
+      "requires_manual_review": false,
+      "spdx_license_expression": "GPL-3.0-or-later"
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 7,
+        "BULGARIA": 45,
+        "CROATIA": 6,
+        "CZECHIA": 10
+      },
+      "categories": [
+        "Widgets"
+      ],
+      "confidence": "high",
+      "detected_count": 68,
+      "license_source": "override",
+      "license_status": "osi_approved",
+      "name": "OWL Carousel",
+      "notes": "OWL Carousel is distributed under the MIT License.",
+      "osi_approved": true,
+      "requires_manual_review": false,
+      "spdx_license_expression": "MIT"
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 6,
+        "BELGIUM": 26,
+        "BULGARIA": 15,
+        "CROATIA": 7,
+        "CZECHIA": 5
+      },
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "confidence": "low",
+      "detected_count": 59,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Select2",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 14,
+        "BELGIUM": 15,
+        "BULGARIA": 16,
+        "CROATIA": 10
+      },
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "confidence": "low",
+      "detected_count": 55,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "DataTables",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 5,
+        "BELGIUM": 11,
+        "BULGARIA": 27,
+        "CROATIA": 2,
+        "CZECHIA": 7
+      },
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "confidence": "low",
+      "detected_count": 52,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Moment.js",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 4,
+        "BELGIUM": 9,
+        "BULGARIA": 28,
+        "CROATIA": 7,
+        "CZECHIA": 4
+      },
+      "categories": [
+        "UI frameworks"
+      ],
+      "confidence": "low",
+      "detected_count": 52,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "animate.css",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 10,
+        "BELGIUM": 27,
+        "BULGARIA": 7,
+        "CROATIA": 3,
+        "CZECHIA": 2
+      },
+      "categories": [
+        "Video players"
+      ],
+      "confidence": "low",
+      "detected_count": 49,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "YouTube",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 39,
+        "BULGARIA": 5,
+        "CROATIA": 2,
+        "CZECHIA": 3
+      },
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "confidence": "low",
+      "detected_count": 49,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "prettyPhoto",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 24,
+        "CROATIA": 6,
+        "CZECHIA": 18
+      },
+      "categories": [
+        "Programming languages"
+      ],
+      "confidence": "low",
+      "detected_count": 48,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Python",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 5,
+        "BELGIUM": 30,
+        "BULGARIA": 3,
+        "CROATIA": 6
+      },
+      "categories": [
+        "UI frameworks"
+      ],
+      "confidence": "low",
+      "detected_count": 44,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "ZURB Foundation",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 39,
+        "BULGARIA": 2,
+        "CROATIA": 1
+      },
+      "categories": [
+        "Miscellaneous"
+      ],
+      "confidence": "low",
+      "detected_count": 42,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "SWFObject",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 6,
+        "BELGIUM": 23,
+        "BULGARIA": 3,
+        "CROATIA": 6,
+        "CZECHIA": 4
+      },
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "confidence": "low",
+      "detected_count": 42,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Underscore.js",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 3,
+        "BELGIUM": 35,
+        "CROATIA": 2
+      },
+      "categories": [
+        "CDN"
+      ],
+      "confidence": "low",
+      "detected_count": 40,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Amazon Cloudfront",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 3,
+        "BELGIUM": 35,
+        "CROATIA": 2
+      },
+      "categories": [
+        "PaaS"
+      ],
+      "confidence": "low",
+      "detected_count": 40,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Amazon Web Services",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 36,
+        "CZECHIA": 4
+      },
+      "categories": [
+        "Rich text editors"
+      ],
+      "confidence": "low",
+      "detected_count": 40,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "TinyMCE",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 22,
+        "CZECHIA": 12
+      },
+      "categories": [
+        "CMS"
+      ],
+      "confidence": "low",
+      "detected_count": 34,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Plone",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 6,
+        "BELGIUM": 26,
+        "CROATIA": 1
+      },
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "confidence": "low",
+      "detected_count": 33,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "AngularJS",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 33
+      },
+      "categories": [
+        "CMS"
+      ],
+      "confidence": "low",
+      "detected_count": 33,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "TYPO3 CMS",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 24,
+        "BULGARIA": 5,
+        "CROATIA": 2
+      },
+      "categories": [
+        "Maps"
+      ],
+      "confidence": "low",
+      "detected_count": 31,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "OpenLayers",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 12,
+        "BELGIUM": 6,
+        "CROATIA": 5,
+        "CZECHIA": 5
+      },
+      "categories": [
+        "Programming languages"
+      ],
+      "confidence": "low",
+      "detected_count": 28,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Java",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 3,
+        "BULGARIA": 6,
+        "CROATIA": 19
+      },
+      "categories": [
+        "CMS"
+      ],
+      "confidence": "low",
+      "detected_count": 28,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Joomla",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 22,
+        "BULGARIA": 3,
+        "CROATIA": 1
+      },
+      "categories": [
+        "Widgets"
+      ],
+      "confidence": "low",
+      "detected_count": 26,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "AddThis",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 8,
+        "BELGIUM": 11,
+        "BULGARIA": 4,
+        "CZECHIA": 3
+      },
+      "categories": [
+        "Operating systems"
+      ],
+      "confidence": "low",
+      "detected_count": 26,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Debian",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 2,
+        "BELGIUM": 6,
+        "BULGARIA": 8,
+        "CROATIA": 10
+      },
+      "categories": [
+        "Page builders"
+      ],
+      "confidence": "low",
+      "detected_count": 26,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Elementor",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 6,
+        "BELGIUM": 19
+      },
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "confidence": "high",
+      "detected_count": 25,
+      "license_source": "override",
+      "license_status": "osi_approved",
+      "name": "React",
+      "notes": "React is distributed under the MIT License.",
+      "osi_approved": true,
+      "requires_manual_review": false,
+      "spdx_license_expression": "MIT"
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 10,
+        "BELGIUM": 12,
+        "BULGARIA": 3
+      },
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "confidence": "high",
+      "detected_count": 25,
+      "license_source": "override",
+      "license_status": "osi_approved",
+      "name": "Vue.js",
+      "notes": "Vue.js is distributed under the MIT License.",
+      "osi_approved": true,
+      "requires_manual_review": false,
+      "spdx_license_expression": "MIT"
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 6,
+        "BELGIUM": 13,
+        "CZECHIA": 5
+      },
+      "categories": [
+        "Cookie compliance"
+      ],
+      "confidence": "low",
+      "detected_count": 24,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Cookiebot",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 8,
+        "BELGIUM": 16
+      },
+      "categories": [
+        "Programming languages"
+      ],
+      "confidence": "low",
+      "detected_count": 24,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Node.js",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 4,
+        "BULGARIA": 7,
+        "CROATIA": 11
+      },
+      "categories": [
+        "Miscellaneous"
+      ],
+      "confidence": "low",
+      "detected_count": 22,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Swiper Slider",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 5,
+        "BELGIUM": 2,
+        "BULGARIA": 4,
+        "CROATIA": 6,
+        "CZECHIA": 5
+      },
+      "categories": [
+        "Operating systems"
+      ],
+      "confidence": "low",
+      "detected_count": 22,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Ubuntu",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 12,
+        "CROATIA": 9
+      },
+      "categories": [
+        "Widgets"
+      ],
+      "confidence": "low",
+      "detected_count": 21,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "AddToAny",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 1,
+        "BELGIUM": 8,
+        "BULGARIA": 3,
+        "CROATIA": 6,
+        "CZECHIA": 2
+      },
+      "categories": [
+        "Web server extensions"
+      ],
+      "confidence": "low",
+      "detected_count": 20,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "OpenSSL",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 19
+      },
+      "categories": [
+        "Reverse proxies"
+      ],
+      "confidence": "low",
+      "detected_count": 19,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Envoy",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 13,
+        "BULGARIA": 2,
+        "CROATIA": 4
+      },
+      "categories": [
+        "Maps"
+      ],
+      "confidence": "low",
+      "detected_count": 19,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Google Maps",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 2,
+        "BELGIUM": 9,
+        "BULGARIA": 8
+      },
+      "categories": [
+        "UI frameworks"
+      ],
+      "confidence": "low",
+      "detected_count": 19,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "UIKit",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "CZECHIA": 18
+      },
+      "categories": [
+        "Web frameworks"
+      ],
+      "confidence": "low",
+      "detected_count": 18,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Nette Framework",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 7,
+        "BELGIUM": 7,
+        "CROATIA": 1,
+        "CZECHIA": 3
+      },
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "confidence": "low",
+      "detected_count": 18,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "RequireJS",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 6,
+        "BELGIUM": 12
+      },
+      "categories": [
+        "Miscellaneous"
+      ],
+      "confidence": "low",
+      "detected_count": 18,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "webpack",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 14,
+        "CZECHIA": 3
+      },
+      "categories": [
+        "Web servers"
+      ],
+      "confidence": "low",
+      "detected_count": 17,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Kestrel",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 14,
+        "CZECHIA": 2
+      },
+      "categories": [
+        "Programming languages"
+      ],
+      "confidence": "low",
+      "detected_count": 16,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Lua",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 14,
+        "CZECHIA": 2
+      },
+      "categories": [
+        "Web servers"
+      ],
+      "confidence": "low",
+      "detected_count": 16,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "OpenResty",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BULGARIA": 3,
+        "CROATIA": 4,
+        "CZECHIA": 8
+      },
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "confidence": "low",
+      "detected_count": 15,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "FancyBox",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 6,
+        "BULGARIA": 6,
+        "CROATIA": 3
+      },
+      "categories": [
+        "Cookie compliance"
+      ],
+      "confidence": "low",
+      "detected_count": 15,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Osano",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 2,
+        "BELGIUM": 12
+      },
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "confidence": "low",
+      "detected_count": 14,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Nuxt.js",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 2,
+        "BELGIUM": 3,
+        "BULGARIA": 6,
+        "CZECHIA": 3
+      },
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "confidence": "low",
+      "detected_count": 14,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Stimulus",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 6,
+        "CROATIA": 3,
+        "CZECHIA": 4
+      },
+      "categories": [
+        "JavaScript graphics"
+      ],
+      "confidence": "low",
+      "detected_count": 13,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Chart.js",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 10,
+        "CROATIA": 2
+      },
+      "categories": [
+        "Miscellaneous"
+      ],
+      "confidence": "low",
+      "detected_count": 12,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Amazon S3",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BULGARIA": 12
+      },
+      "categories": [
+        "Reverse proxies"
+      ],
+      "confidence": "low",
+      "detected_count": 12,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "F5 BigIP",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 3,
+        "BELGIUM": 9
+      },
+      "categories": [
+        "Font scripts"
+      ],
+      "confidence": "low",
+      "detected_count": 12,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Glyphicons",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 2,
+        "BELGIUM": 7,
+        "CROATIA": 3
+      },
+      "categories": [
+        "Caching"
+      ],
+      "confidence": "low",
+      "detected_count": 12,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "WP Rocket",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 3,
+        "BELGIUM": 6,
+        "CROATIA": 2
+      },
+      "categories": [
+        "CMS"
+      ],
+      "confidence": "low",
+      "detected_count": 11,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "DNN",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 3,
+        "BULGARIA": 1,
+        "CROATIA": 3,
+        "CZECHIA": 4
+      },
+      "categories": [
+        "Widgets"
+      ],
+      "confidence": "low",
+      "detected_count": 11,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Facebook",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "CZECHIA": 11
+      },
+      "categories": [
+        "JavaScript graphics"
+      ],
+      "confidence": "low",
+      "detected_count": 11,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Highcharts",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 11
+      },
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "confidence": "low",
+      "detected_count": 11,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Mustache",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 7,
+        "BULGARIA": 2,
+        "CROATIA": 2
+      },
+      "categories": [
+        "Miscellaneous"
+      ],
+      "confidence": "low",
+      "detected_count": 11,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Prism",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 1,
+        "BELGIUM": 8,
+        "CZECHIA": 2
+      },
+      "categories": [
+        "Operating systems"
+      ],
+      "confidence": "low",
+      "detected_count": 11,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Red Hat",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "CROATIA": 10
+      },
+      "categories": [
+        "Font scripts"
+      ],
+      "confidence": "low",
+      "detected_count": 10,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Ionicons",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 4,
+        "BELGIUM": 6
+      },
+      "categories": [
+        "LMS"
+      ],
+      "confidence": "low",
+      "detected_count": 10,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Moodle",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 6,
+        "BELGIUM": 4
+      },
+      "categories": [
+        "Web frameworks",
+        "Web servers"
+      ],
+      "confidence": "low",
+      "detected_count": 10,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Next.js",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BULGARIA": 8,
+        "CROATIA": 2
+      },
+      "categories": [
+        "Miscellaneous"
+      ],
+      "confidence": "low",
+      "detected_count": 10,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Revslider",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 8,
+        "BULGARIA": 2
+      },
+      "categories": [
+        "Programming languages"
+      ],
+      "confidence": "low",
+      "detected_count": 10,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Ruby",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 8,
+        "BULGARIA": 2
+      },
+      "categories": [
+        "Web frameworks"
+      ],
+      "confidence": "low",
+      "detected_count": 10,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Ruby on Rails",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 5,
+        "BELGIUM": 4
+      },
+      "categories": [
+        "CMS"
+      ],
+      "confidence": "low",
+      "detected_count": 9,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Adobe Experience Manager",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 5,
+        "BULGARIA": 2,
+        "CROATIA": 2
+      },
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "confidence": "low",
+      "detected_count": 9,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Alpine.js",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BULGARIA": 2,
+        "CROATIA": 5,
+        "CZECHIA": 2
+      },
+      "categories": [
+        "Caching"
+      ],
+      "confidence": "low",
+      "detected_count": 9,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "W3 Total Cache",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BULGARIA": 6,
+        "CZECHIA": 2
+      },
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "confidence": "low",
+      "detected_count": 8,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Flickity",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 8
+      },
+      "categories": [
+        "JavaScript frameworks",
+        "Static site generator"
+      ],
+      "confidence": "low",
+      "detected_count": 8,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Gatsby",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 7,
+        "BULGARIA": 1
+      },
+      "categories": [
+        "Marketing automation"
+      ],
+      "confidence": "low",
+      "detected_count": 8,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "MailChimp",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 4,
+        "BELGIUM": 4
+      },
+      "categories": [
+        "JavaScript graphics"
+      ],
+      "confidence": "low",
+      "detected_count": 8,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "MathJax",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 1,
+        "BELGIUM": 7
+      },
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "confidence": "low",
+      "detected_count": 8,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Polyfill",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 2,
+        "CZECHIA": 5
+      },
+      "categories": [
+        "Web servers"
+      ],
+      "confidence": "low",
+      "detected_count": 7,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Apache Tomcat",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 3,
+        "CROATIA": 4
+      },
+      "categories": [
+        "JavaScript graphics"
+      ],
+      "confidence": "low",
+      "detected_count": 7,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "D3",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 2,
+        "BELGIUM": 5
+      },
+      "categories": [
+        "Web servers"
+      ],
+      "confidence": "low",
+      "detected_count": 7,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Microsoft HTTPAPI",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BULGARIA": 4,
+        "CROATIA": 3
+      },
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "confidence": "low",
+      "detected_count": 7,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "MooTools",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BULGARIA": 4,
+        "CROATIA": 3
+      },
+      "categories": [
+        "JavaScript graphics"
+      ],
+      "confidence": "low",
+      "detected_count": 7,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "particles.js",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 6
+      },
+      "categories": [
+        "Web servers"
+      ],
+      "confidence": "low",
+      "detected_count": 6,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Caddy",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 2,
+        "CROATIA": 3,
+        "CZECHIA": 1
+      },
+      "categories": [
+        "Web frameworks"
+      ],
+      "confidence": "low",
+      "detected_count": 6,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Django",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 6
+      },
+      "categories": [
+        "Programming languages"
+      ],
+      "confidence": "low",
+      "detected_count": 6,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Go",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 1,
+        "BELGIUM": 5
+      },
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "confidence": "low",
+      "detected_count": 6,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Hammer.js",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 3,
+        "CZECHIA": 3
+      },
+      "categories": [
+        "Web frameworks"
+      ],
+      "confidence": "low",
+      "detected_count": 6,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Yii",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 3,
+        "BULGARIA": 2
+      },
+      "categories": [
+        "Search engines"
+      ],
+      "confidence": "low",
+      "detected_count": 5,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Awesomplete",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 2,
+        "CZECHIA": 3
+      },
+      "categories": [
+        "Widgets"
+      ],
+      "confidence": "low",
+      "detected_count": 5,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "FlexSlider",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 4,
+        "BULGARIA": 1
+      },
+      "categories": [
+        "Miscellaneous"
+      ],
+      "confidence": "low",
+      "detected_count": 5,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Gravity Forms",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 3,
+        "CROATIA": 2
+      },
+      "categories": [
+        "Web servers"
+      ],
+      "confidence": "low",
+      "detected_count": 5,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Lotus Domino",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 5
+      },
+      "categories": [
+        "Hosting panels"
+      ],
+      "confidence": "low",
+      "detected_count": 5,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Plesk",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 3,
+        "CZECHIA": 2
+      },
+      "categories": [
+        "Web servers"
+      ],
+      "confidence": "low",
+      "detected_count": 5,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Vercel",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 1,
+        "BULGARIA": 2,
+        "CROATIA": 2
+      },
+      "categories": [
+        "Mobile frameworks"
+      ],
+      "confidence": "low",
+      "detected_count": 5,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "jQuery Mobile",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 2,
+        "CROATIA": 2
+      },
+      "categories": [
+        "Miscellaneous"
+      ],
+      "confidence": "low",
+      "detected_count": 4,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Clipboard.js",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 2,
+        "CZECHIA": 2
+      },
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "confidence": "low",
+      "detected_count": 4,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Dojo",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 1,
+        "BULGARIA": 1,
+        "CZECHIA": 2
+      },
+      "categories": [
+        "Widgets"
+      ],
+      "confidence": "low",
+      "detected_count": 4,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Google Plus",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 1,
+        "CROATIA": 3
+      },
+      "categories": [
+        "Miscellaneous"
+      ],
+      "confidence": "low",
+      "detected_count": 4,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Highlight.js",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 4
+      },
+      "categories": [
+        "PaaS"
+      ],
+      "confidence": "low",
+      "detected_count": 4,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "SiteGround",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 3
+      },
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "confidence": "high",
+      "detected_count": 3,
+      "license_source": "override",
+      "license_status": "osi_approved",
+      "name": "Angular",
+      "notes": "AngularJS is MIT-licensed, while newer Angular releases use Apache-2.0; treat this generic detection as best-effort.",
+      "osi_approved": true,
+      "requires_manual_review": false,
+      "spdx_license_expression": "MIT"
+    },
+    {
+      "by_country": {
+        "BELGIUM": 1,
+        "BULGARIA": 2
+      },
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "confidence": "low",
+      "detected_count": 3,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Backbone.js",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 2,
+        "CROATIA": 1
+      },
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "confidence": "low",
+      "detected_count": 3,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Bootstrap Table",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 2,
+        "CZECHIA": 1
+      },
+      "categories": [
+        "Operating systems"
+      ],
+      "confidence": "low",
+      "detected_count": 3,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "CentOS",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "CROATIA": 3
+      },
+      "categories": [
+        "CMS"
+      ],
+      "confidence": "low",
+      "detected_count": 3,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Ckan",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 3
+      },
+      "categories": [
+        "CMS"
+      ],
+      "confidence": "low",
+      "detected_count": 3,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Craft CMS",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "CZECHIA": 3
+      },
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "confidence": "low",
+      "detected_count": 3,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "ExtJS",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "CZECHIA": 3
+      },
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "confidence": "low",
+      "detected_count": 3,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "GSAP",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BULGARIA": 3
+      },
+      "categories": [
+        "CDN"
+      ],
+      "confidence": "low",
+      "detected_count": 3,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Google Cloud",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 1,
+        "CZECHIA": 2
+      },
+      "categories": [
+        "Social login"
+      ],
+      "confidence": "low",
+      "detected_count": 3,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Google Sign-in",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BULGARIA": 2,
+        "CROATIA": 1
+      },
+      "categories": [
+        "Miscellaneous"
+      ],
+      "confidence": "low",
+      "detected_count": 3,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Gravatar",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 3
+      },
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "confidence": "low",
+      "detected_count": 3,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Handlebars",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "CZECHIA": 3
+      },
+      "categories": [
+        "Reverse proxies"
+      ],
+      "confidence": "low",
+      "detected_count": 3,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "IBM DataPower",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 3
+      },
+      "categories": [
+        "Web frameworks"
+      ],
+      "confidence": "low",
+      "detected_count": 3,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Laravel",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BULGARIA": 2,
+        "CROATIA": 1
+      },
+      "categories": [
+        "Widgets"
+      ],
+      "confidence": "low",
+      "detected_count": 3,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Linkedin",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BULGARIA": 3
+      },
+      "categories": [
+        "Web servers"
+      ],
+      "confidence": "low",
+      "detected_count": 3,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "LiteSpeed",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 3
+      },
+      "categories": [
+        "Miscellaneous",
+        "Web frameworks"
+      ],
+      "confidence": "low",
+      "detected_count": 3,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Livewire",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "CROATIA": 3
+      },
+      "categories": [
+        "Databases"
+      ],
+      "confidence": "low",
+      "detected_count": 3,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Lucene",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 3
+      },
+      "categories": [
+        "Wikis"
+      ],
+      "confidence": "low",
+      "detected_count": 3,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "MediaWiki",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 2,
+        "CROATIA": 1
+      },
+      "categories": [
+        "JavaScript graphics"
+      ],
+      "confidence": "low",
+      "detected_count": 3,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "NVD3",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "CROATIA": 3
+      },
+      "categories": [
+        "Databases"
+      ],
+      "confidence": "low",
+      "detected_count": 3,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "PostgreSQL",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "CZECHIA": 3
+      },
+      "categories": [
+        "Databases"
+      ],
+      "confidence": "low",
+      "detected_count": 3,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Redis",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "CZECHIA": 3
+      },
+      "categories": [
+        "Caching"
+      ],
+      "confidence": "low",
+      "detected_count": 3,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Redis Object Cache",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 3
+      },
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "confidence": "low",
+      "detected_count": 3,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Riot",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "CZECHIA": 3
+      },
+      "categories": [
+        "UI frameworks"
+      ],
+      "confidence": "low",
+      "detected_count": 3,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Semantic-ui",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "CROATIA": 3
+      },
+      "categories": [
+        "Databases"
+      ],
+      "confidence": "low",
+      "detected_count": 3,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Solr",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 3
+      },
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "confidence": "low",
+      "detected_count": 3,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "SweetAlert2",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "CROATIA": 1,
+        "CZECHIA": 2
+      },
+      "categories": [
+        "Widgets"
+      ],
+      "confidence": "low",
+      "detected_count": 3,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Twitter",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "CROATIA": 3
+      },
+      "categories": [
+        "Caching"
+      ],
+      "confidence": "low",
+      "detected_count": 3,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "WordPress Super Cache",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "CZECHIA": 3
+      },
+      "categories": [
+        "Web server extensions"
+      ],
+      "confidence": "low",
+      "detected_count": 3,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "mod_wsgi",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 2
+      },
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "confidence": "low",
+      "detected_count": 2,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "BEM",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "CZECHIA": 2
+      },
+      "categories": [
+        "Web frameworks",
+        "Web servers"
+      ],
+      "confidence": "low",
+      "detected_count": 2,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "CherryPy",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 2
+      },
+      "categories": [
+        "CMS"
+      ],
+      "confidence": "low",
+      "detected_count": 2,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Contentful",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 2
+      },
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "confidence": "low",
+      "detected_count": 2,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Element UI",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "CZECHIA": 2
+      },
+      "categories": [
+        "Analytics"
+      ],
+      "confidence": "high",
+      "detected_count": 2,
+      "license_source": "override",
+      "license_status": "not_applicable_service",
+      "name": "Google Analytics",
+      "notes": "Google Analytics is a proprietary hosted analytics service, not a single distributable software package.",
+      "osi_approved": null,
+      "requires_manual_review": false,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 2
+      },
+      "categories": [
+        "Web frameworks"
+      ],
+      "confidence": "low",
+      "detected_count": 2,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "JavaServer Faces",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "CROATIA": 2
+      },
+      "categories": [
+        "Miscellaneous"
+      ],
+      "confidence": "low",
+      "detected_count": 2,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "K2",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 2
+      },
+      "categories": [
+        "UI frameworks"
+      ],
+      "confidence": "low",
+      "detected_count": 2,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Material Design Lite",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 2
+      },
+      "categories": [
+        "Analytics"
+      ],
+      "confidence": "low",
+      "detected_count": 2,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Matomo Analytics",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 2
+      },
+      "categories": [
+        "Marketing automation"
+      ],
+      "confidence": "low",
+      "detected_count": 2,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Mautic",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "CZECHIA": 2
+      },
+      "categories": [
+        "CMS"
+      ],
+      "confidence": "low",
+      "detected_count": 2,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Microsoft SharePoint",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 1,
+        "CZECHIA": 1
+      },
+      "categories": [
+        "Editors"
+      ],
+      "confidence": "low",
+      "detected_count": 2,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Microsoft Word",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 2
+      },
+      "categories": [
+        "Cookie compliance"
+      ],
+      "confidence": "low",
+      "detected_count": 2,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "OneTrust",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 1,
+        "BULGARIA": 1
+      },
+      "categories": [
+        "Miscellaneous"
+      ],
+      "confidence": "low",
+      "detected_count": 2,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Oracle Dynamic Monitoring Service",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "CZECHIA": 2
+      },
+      "categories": [
+        "Ecommerce"
+      ],
+      "confidence": "low",
+      "detected_count": 2,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Shoptet",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "CROATIA": 2
+      },
+      "categories": [
+        "Analytics"
+      ],
+      "confidence": "low",
+      "detected_count": 2,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Statcounter",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 2
+      },
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "confidence": "low",
+      "detected_count": 2,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Svelte",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BULGARIA": 2
+      },
+      "categories": [
+        "Accessibility"
+      ],
+      "confidence": "low",
+      "detected_count": 2,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "UserWay",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 2
+      },
+      "categories": [
+        "Ecommerce"
+      ],
+      "confidence": "low",
+      "detected_count": 2,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "WooCommerce",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "CZECHIA": 2
+      },
+      "categories": [
+        "JavaScript graphics"
+      ],
+      "confidence": "low",
+      "detected_count": 2,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "amCharts",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 2
+      },
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "confidence": "low",
+      "detected_count": 2,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "basket.js",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 2
+      },
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "confidence": "low",
+      "detected_count": 2,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "decimal.js",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "CROATIA": 2
+      },
+      "categories": [
+        "JavaScript graphics"
+      ],
+      "confidence": "low",
+      "detected_count": 2,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "xCharts",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BULGARIA": 1
+      },
+      "categories": [
+        "SEO"
+      ],
+      "confidence": "low",
+      "detected_count": 1,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "All in One SEO Pack",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "CZECHIA": 1
+      },
+      "categories": [
+        "Maps"
+      ],
+      "confidence": "low",
+      "detected_count": 1,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "ArcGIS API for JavaScript",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 1
+      },
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "confidence": "low",
+      "detected_count": 1,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "DHTMLX",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "CROATIA": 1
+      },
+      "categories": [
+        "Editors"
+      ],
+      "confidence": "low",
+      "detected_count": 1,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "FrontPage",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 1
+      },
+      "categories": [
+        "Web frameworks"
+      ],
+      "confidence": "low",
+      "detected_count": 1,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "JavaServer Pages",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 1
+      },
+      "categories": [
+        "Live chat"
+      ],
+      "confidence": "low",
+      "detected_count": 1,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Jitsi",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "CZECHIA": 1
+      },
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "confidence": "low",
+      "detected_count": 1,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Lodash",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 1
+      },
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "confidence": "low",
+      "detected_count": 1,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Marked",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "CZECHIA": 1
+      },
+      "categories": [
+        "Photo galleries"
+      ],
+      "confidence": "low",
+      "detected_count": 1,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "NextGEN Gallery",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 1
+      },
+      "categories": [
+        "Web servers"
+      ],
+      "confidence": "low",
+      "detected_count": 1,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "TornadoServer",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "BELGIUM": 1
+      },
+      "categories": [
+        "Operating systems"
+      ],
+      "confidence": "low",
+      "detected_count": 1,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "UNIX",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "AUSTRIA": 1
+      },
+      "categories": [
+        "Web frameworks"
+      ],
+      "confidence": "low",
+      "detected_count": 1,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Vaadin",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    },
+    {
+      "by_country": {
+        "CZECHIA": 1
+      },
+      "categories": [
+        "Page builders"
+      ],
+      "confidence": "low",
+      "detected_count": 1,
+      "license_source": "unknown",
+      "license_status": "unknown",
+      "name": "Webflow",
+      "notes": "No curated override found; manual review required.",
+      "osi_approved": null,
+      "requires_manual_review": true,
+      "spdx_license_expression": null
+    }
+  ],
+  "scope_note": "Best-effort classification of upstream technology licenses, not deployment compliance. SaaS and cloud services are not OSI-licensed just because they use open source internally. Confidence levels matter, and manual review is required before making public claims.",
+  "stats": {
+    "by_license_status": {
+      "not_applicable_service": 5,
+      "osi_approved": 22,
+      "proprietary": 2,
+      "source_available": 0,
+      "unknown": 154
+    },
+    "manual_review_queue_count": 158,
+    "osi_approved_count": 22,
+    "proprietary_or_service_count": 7,
+    "total_technologies": 183,
+    "unknown_count": 154
+  }
+}
