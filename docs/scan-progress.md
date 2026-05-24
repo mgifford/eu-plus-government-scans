@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-05-24 05:39 UTC_
+_Generated: 2026-05-24 06:28 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -13,11 +13,11 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
-| **Combined Reachability** | **7,306 confirmed reachable** | 82,714 | **<span role="img" aria-label="8.8% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:11px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">8.8%</span></span>** | — |
-| Social Media | 7,720 scanned (7,306 reachable) | 82,714 | <span role="img" aria-label="9.3% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:11px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">9.3%</span></span> | 12 h |
-| Technology | 3,012 scanned | 82,714 | <span role="img" aria-label="3.6% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:4px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">3.6%</span></span> | 4 h |
+| **Combined Reachability** | **9,963 confirmed reachable** | 82,714 | **<span role="img" aria-label="12.0% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:14px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">12.0%</span></span>** | — |
+| Social Media | 10,434 scanned (9,963 reachable) | 82,714 | <span role="img" aria-label="12.6% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:15px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">12.6%</span></span> | 10 h |
+| Technology | 3,012 scanned | 82,714 | <span role="img" aria-label="3.6% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:4px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">3.6%</span></span> | 5 h |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) | — |
-| Accessibility Statements | 11,262 scanned | 82,714 | <span role="img" aria-label="13.6% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:16px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">13.6%</span></span> | 9 h |
+| Accessibility Statements | 11,262 scanned | 82,714 | <span role="img" aria-label="13.6% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:16px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">13.6%</span></span> | 10 h |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by any scan type. **Avg Age** shows the mean number of days (or hours) since each URL in that scan type was last scanned — lower is fresher.
 
@@ -34,6 +34,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Estonia | 396 | 396 | 376 | 178 | 2 | 24 | 172 | 66 | 3 | 0 | 26 | May 2026 |
 | Finland | 180 | 180 | 170 | 56 | 0 | 4 | 110 | 23 | 6 | 2 | 2 | May 2026 |
 | France | 2,160 | 10,007 | 2,013 | 468 | 9 | 91 | 1,445 | 248 | 41 | 28 | 84 | May 2026 |
+| Germany | 2,714 | 6,555 | 2,657 | 672 | 16 | 171 | 1,798 | 528 | 58 | 32 | 172 | May 2026 |
 
 > **Tier columns** (Twitter-only / Modern / Mixed / No Social) classify each page by its overall social media presence. **Platform columns** (Twitter / X / Bluesky / Mastodon) count pages with at least one link to that platform — a page may appear in more than one platform column.
 
@@ -78,7 +79,7 @@ Checks whether each government page links to an accessibility statement as requi
 
 These countries have social media scan data but no URL validation data (URL validation may have been skipped because the social scan already confirmed reachability):
 
-`AUSTRIA`, `BELGIUM`, `BULGARIA`, `CROATIA`, `CZECHIA`, `DENMARK`, `ESTONIA`, `FINLAND`, `FRANCE`
+`AUSTRIA`, `BELGIUM`, `BULGARIA`, `CROATIA`, `CZECHIA`, `DENMARK`, `ESTONIA`, `FINLAND`, `FRANCE`, `GERMANY`
 
 ## Scan Priority Guide
 

@@ -11,16 +11,16 @@ power them, including which third-party JavaScript services they rely on.
 
 <!-- SCAN_PROGRESS_START -->
 
-_Progress as of 2026-05-24 05:39 UTC_
+_Progress as of 2026-05-24 06:28 UTC_
 
 | Scan Type | Pages Scanned | Coverage | Avg Age |
 |-----------|--------------|----------|---------|
-| **Combined Reachability** | **7,306 confirmed reachable** | **<span role="img" aria-label="8.8% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:11px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">8.8%</span></span>** | — |
-| Social Media | 7,720 scanned (7,306 reachable) | <span role="img" aria-label="9.3% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:11px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">9.3%</span></span> | 12 h |
-| Technology | 3,012 scanned | <span role="img" aria-label="3.6% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:4px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">3.6%</span></span> | 4 h |
-| Accessibility Statements | 11,262 scanned | <span role="img" aria-label="13.6% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:16px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">13.6%</span></span> | 9 h |
+| **Combined Reachability** | **9,963 confirmed reachable** | **<span role="img" aria-label="12.0% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:14px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">12.0%</span></span>** | — |
+| Social Media | 10,434 scanned (9,963 reachable) | <span role="img" aria-label="12.6% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:15px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">12.6%</span></span> | 10 h |
+| Technology | 3,012 scanned | <span role="img" aria-label="3.6% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:4px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">3.6%</span></span> | 5 h |
+| Accessibility Statements | 11,262 scanned | <span role="img" aria-label="13.6% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:16px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">13.6%</span></span> | 10 h |
 
-**12 countries** with scan data · **7,306** of **82,714** available pages confirmed reachable. See the [Scan Progress Report](scan-progress.md) for full details.
+**12 countries** with scan data · **9,963** of **82,714** available pages confirmed reachable. See the [Scan Progress Report](scan-progress.md) for full details.
 
 <!-- SCAN_PROGRESS_END -->
 
