@@ -11,13 +11,13 @@ power them, including which third-party JavaScript services they rely on.
 
 <!-- SCAN_PROGRESS_START -->
 
-_Progress as of 2026-05-24 01:00 UTC_
+_Progress as of 2026-05-24 01:20 UTC_
 
 | Scan Type | Pages Scanned | Coverage | Avg Age |
 |-----------|--------------|----------|---------|
 | **Combined Reachability** | **7,306 confirmed reachable** | **<span role="img" aria-label="8.8% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:11px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">8.8%</span></span>** | — |
-| Social Media | 7,720 scanned (7,306 reachable) | <span role="img" aria-label="9.3% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:11px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">9.3%</span></span> | 7 h |
-| Accessibility Statements | 9,124 scanned | <span role="img" aria-label="11.0% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:13px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">11.0%</span></span> | 6 h |
+| Social Media | 7,720 scanned (7,306 reachable) | <span role="img" aria-label="9.3% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:11px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">9.3%</span></span> | 8 h |
+| Accessibility Statements | 9,124 scanned | <span role="img" aria-label="11.0% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:13px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">11.0%</span></span> | 7 h |
 
 **10 countries** with scan data · **7,306** of **82,714** available pages confirmed reachable. See the [Scan Progress Report](scan-progress.md) for full details.
 
