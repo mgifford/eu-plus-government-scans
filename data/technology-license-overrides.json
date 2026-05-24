@@ -1,0 +1,237 @@
+{
+  "schema_version": "1.0",
+  "note": "Best-effort curated mapping of detected technology names to likely upstream license metadata. Classifications should be verified against upstream projects before making policy claims.",
+  "overrides": {
+    "Drupal": {
+      "spdx_expression": "GPL-2.0-or-later",
+      "license_status": "osi_approved",
+      "osi_approved": true,
+      "notes": "Drupal core is licensed under GPL-2.0-or-later.",
+      "confidence": "high"
+    },
+    "WordPress": {
+      "spdx_expression": "GPL-2.0-or-later",
+      "license_status": "osi_approved",
+      "osi_approved": true,
+      "notes": "WordPress core is licensed under GPL-2.0-or-later.",
+      "confidence": "high"
+    },
+    "jQuery": {
+      "spdx_expression": "MIT",
+      "license_status": "osi_approved",
+      "osi_approved": true,
+      "notes": "jQuery is distributed under the MIT License.",
+      "confidence": "high"
+    },
+    "jQuery UI": {
+      "spdx_expression": "MIT",
+      "license_status": "osi_approved",
+      "osi_approved": true,
+      "notes": "jQuery UI is distributed under the MIT License.",
+      "confidence": "high"
+    },
+    "jQuery Migrate": {
+      "spdx_expression": "MIT",
+      "license_status": "osi_approved",
+      "osi_approved": true,
+      "notes": "jQuery Migrate is distributed under the MIT License.",
+      "confidence": "high"
+    },
+    "Bootstrap": {
+      "spdx_expression": "MIT",
+      "license_status": "osi_approved",
+      "osi_approved": true,
+      "notes": "Bootstrap is distributed under the MIT License.",
+      "confidence": "high"
+    },
+    "React": {
+      "spdx_expression": "MIT",
+      "license_status": "osi_approved",
+      "osi_approved": true,
+      "notes": "React is distributed under the MIT License.",
+      "confidence": "high"
+    },
+    "Angular": {
+      "spdx_expression": "MIT",
+      "license_status": "osi_approved",
+      "osi_approved": true,
+      "notes": "AngularJS is MIT-licensed, while newer Angular releases use Apache-2.0; treat this generic detection as best-effort.",
+      "confidence": "high"
+    },
+    "Vue.js": {
+      "spdx_expression": "MIT",
+      "license_status": "osi_approved",
+      "osi_approved": true,
+      "notes": "Vue.js is distributed under the MIT License.",
+      "confidence": "high"
+    },
+    "Matomo": {
+      "spdx_expression": "GPL-3.0-or-later",
+      "license_status": "osi_approved",
+      "osi_approved": true,
+      "notes": "Matomo is distributed under GPL-3.0-or-later.",
+      "confidence": "high"
+    },
+    "Google Analytics": {
+      "spdx_expression": null,
+      "license_status": "not_applicable_service",
+      "osi_approved": null,
+      "notes": "Google Analytics is a proprietary hosted analytics service, not a single distributable software package.",
+      "confidence": "high"
+    },
+    "Google Tag Manager": {
+      "spdx_expression": null,
+      "license_status": "not_applicable_service",
+      "osi_approved": null,
+      "notes": "Google Tag Manager is a proprietary hosted service, not a single distributable software package.",
+      "confidence": "high"
+    },
+    "Cloudflare": {
+      "spdx_expression": null,
+      "license_status": "not_applicable_service",
+      "osi_approved": null,
+      "notes": "Cloudflare is primarily a proprietary CDN and DDoS mitigation service; package SPDX classification does not cleanly apply.",
+      "confidence": "high"
+    },
+    "Akamai": {
+      "spdx_expression": null,
+      "license_status": "not_applicable_service",
+      "osi_approved": null,
+      "notes": "Akamai is primarily a proprietary CDN and edge service; package SPDX classification does not cleanly apply.",
+      "confidence": "high"
+    },
+    "Nginx": {
+      "spdx_expression": "BSD-2-Clause",
+      "license_status": "osi_approved",
+      "osi_approved": true,
+      "notes": "Open source Nginx uses the BSD-2-Clause license.",
+      "confidence": "high"
+    },
+    "Apache": {
+      "spdx_expression": "Apache-2.0",
+      "license_status": "osi_approved",
+      "osi_approved": true,
+      "notes": "Apache HTTP Server is distributed under Apache-2.0.",
+      "confidence": "high"
+    },
+    "PHP": {
+      "spdx_expression": "PHP-3.01",
+      "license_status": "osi_approved",
+      "osi_approved": true,
+      "notes": "PHP is distributed under the PHP License v3.01, which is OSI-approved.",
+      "confidence": "medium"
+    },
+    "MySQL": {
+      "spdx_expression": "GPL-2.0-only",
+      "license_status": "osi_approved",
+      "osi_approved": true,
+      "notes": "MySQL Community Server is GPL-2.0-only, with separate commercial licensing also available.",
+      "confidence": "medium"
+    },
+    "Yoast SEO": {
+      "spdx_expression": "GPL-3.0-or-later",
+      "license_status": "osi_approved",
+      "osi_approved": true,
+      "notes": "Yoast SEO is distributed under GPL-3.0-or-later.",
+      "confidence": "high"
+    },
+    "reCAPTCHA": {
+      "spdx_expression": null,
+      "license_status": "not_applicable_service",
+      "osi_approved": null,
+      "notes": "Google reCAPTCHA is a proprietary hosted service.",
+      "confidence": "high"
+    },
+    "Windows Server": {
+      "spdx_expression": null,
+      "license_status": "proprietary",
+      "osi_approved": false,
+      "notes": "Windows Server is proprietary Microsoft server software.",
+      "confidence": "high"
+    },
+    "IIS": {
+      "spdx_expression": null,
+      "license_status": "proprietary",
+      "osi_approved": false,
+      "notes": "Internet Information Services is proprietary software bundled with Windows Server.",
+      "confidence": "high"
+    },
+    "Microsoft ASP.NET": {
+      "spdx_expression": "MIT",
+      "license_status": "osi_approved",
+      "osi_approved": true,
+      "notes": "ASP.NET Core is MIT-licensed, while legacy ASP.NET components were proprietary; treat this generic detection as medium confidence.",
+      "confidence": "medium"
+    },
+    "Font Awesome": {
+      "spdx_expression": "MIT AND OFL-1.1 AND CC-BY-4.0",
+      "license_status": "unknown",
+      "osi_approved": null,
+      "notes": "Font Awesome combines MIT code, OFL-1.1 fonts, and CC-BY-4.0 assets, so the generic detection is mixed rather than a single OSI-approved package license.",
+      "confidence": "medium"
+    },
+    "jsDelivr": {
+      "spdx_expression": "MIT",
+      "license_status": "osi_approved",
+      "osi_approved": true,
+      "notes": "The jsDelivr platform code is MIT-licensed, but the CDN serves packages under many different upstream licenses.",
+      "confidence": "medium"
+    },
+    "Lightbox": {
+      "spdx_expression": "MIT",
+      "license_status": "osi_approved",
+      "osi_approved": true,
+      "notes": "Common Lightbox distributions are MIT-licensed.",
+      "confidence": "high"
+    },
+    "Slick": {
+      "spdx_expression": "MIT",
+      "license_status": "osi_approved",
+      "osi_approved": true,
+      "notes": "Slick carousel is distributed under the MIT License.",
+      "confidence": "high"
+    },
+    "Leaflet": {
+      "spdx_expression": "BSD-2-Clause",
+      "license_status": "osi_approved",
+      "osi_approved": true,
+      "notes": "Leaflet is distributed under the BSD-2-Clause license.",
+      "confidence": "high"
+    },
+    "Modernizr": {
+      "spdx_expression": "MIT",
+      "license_status": "osi_approved",
+      "osi_approved": true,
+      "notes": "Modernizr is distributed under the MIT License.",
+      "confidence": "high"
+    },
+    "OWL Carousel": {
+      "spdx_expression": "MIT",
+      "license_status": "osi_approved",
+      "osi_approved": true,
+      "notes": "OWL Carousel is distributed under the MIT License.",
+      "confidence": "high"
+    },
+    "Varnish": {
+      "spdx_expression": "Apache-2.0",
+      "license_status": "osi_approved",
+      "osi_approved": true,
+      "notes": "Varnish Cache is distributed under Apache-2.0.",
+      "confidence": "high"
+    },
+    "Google Font API": {
+      "spdx_expression": null,
+      "license_status": "not_applicable_service",
+      "osi_approved": null,
+      "notes": "Google Font API is a hosted font delivery service rather than a single distributable software package.",
+      "confidence": "high"
+    },
+    "Cart Functionality": {
+      "spdx_expression": null,
+      "license_status": "unknown",
+      "osi_approved": null,
+      "notes": "Cart Functionality is a generic detection category, not a single upstream package.",
+      "confidence": "low"
+    }
+  }
+}
