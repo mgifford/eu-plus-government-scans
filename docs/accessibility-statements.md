@@ -5,14 +5,14 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-05-24 10:49 UTC — last scan: 2026-05-24_
+_Stats as of 2026-05-24 11:57 UTC — last scan: 2026-05-24_
 
-**15** scan batches run
+**21** scan batches run
 
-**13,538** of **82,714** available pages scanned (**16.4%** coverage)
-**12,739** of **13,538** scanned pages were reachable (**94.1%**)
-**6,285** of **12,739** reachable pages have an accessibility statement (**49.3%**)
-**5,596** pages have the statement link in the footer (**89.0%** of pages with a statement)
+**16,753** of **82,714** available pages scanned (**20.3%** coverage)
+**15,664** of **16,753** scanned pages were reachable (**93.5%**)
+**7,877** of **15,664** reachable pages have an accessibility statement (**50.3%**)
+**7,116** pages have the statement link in the footer (**90.3%** of pages with a statement)
 
 📥 Machine-readable results are available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
 
@@ -41,7 +41,13 @@ Each country entry in the JSON file includes page-level evidence for pages with 
 | Iceland | 139 | 139 | 135 | 12 | 5 | 8.9% | May 2026 |
 | Ireland | 522 | 522 | 487 | 211 | 196 | 43.3% | May 2026 |
 | Italy | 1,615 | 5,338 | 1,476 | 935 | 910 | 63.3% | May 2026 |
-| **Total** | **13,538** | **82,714** | **12,739** | **6,285** | **5,596** | **49.3%** | — |
+| Latvia | 802 | 802 | 756 | 485 | 445 | 64.2% | May 2026 |
+| Lithuania | 120 | 120 | 110 | 0 | 0 | 0.0% | May 2026 |
+| Luxembourg | 571 | 571 | 392 | 228 | 217 | 58.2% | May 2026 |
+| Malta | 608 | 608 | 590 | 384 | 377 | 65.1% | May 2026 |
+| Netherlands | 937 | 937 | 906 | 440 | 430 | 48.6% | May 2026 |
+| Norway | 177 | 239 | 171 | 55 | 51 | 32.2% | May 2026 |
+| **Total** | **16,753** | **82,714** | **15,664** | **7,877** | **7,116** | **50.3%** | — |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
