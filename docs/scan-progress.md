@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-05-24 10:49 UTC_
+_Generated: 2026-05-24 11:57 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -14,10 +14,10 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
 | **Combined Reachability** | **9,963 confirmed reachable** | 82,714 | **<span role="img" aria-label="12.0% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:14px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">12.0%</span></span>** | — |
-| Social Media | 10,434 scanned (9,963 reachable) | 82,714 | <span role="img" aria-label="12.6% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:15px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">12.6%</span></span> | 14 h |
-| Technology | 3,012 scanned | 82,714 | <span role="img" aria-label="3.6% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:4px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">3.6%</span></span> | 9 h |
+| Social Media | 10,434 scanned (9,963 reachable) | 82,714 | <span role="img" aria-label="12.6% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:15px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">12.6%</span></span> | 15 h |
+| Technology | 3,012 scanned | 82,714 | <span role="img" aria-label="3.6% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:4px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">3.6%</span></span> | 10 h |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) | — |
-| Accessibility Statements | 13,538 scanned | 82,714 | <span role="img" aria-label="16.4% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:20px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">16.4%</span></span> | 13 h |
+| Accessibility Statements | 16,753 scanned | 82,714 | <span role="img" aria-label="20.3% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:24px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">20.3%</span></span> | 11 h |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by any scan type. **Avg Age** shows the mean number of days (or hours) since each URL in that scan type was last scanned — lower is fresher.
 
@@ -75,6 +75,12 @@ Checks whether each government page links to an accessibility statement as requi
 | Iceland | 139 | 135 | 12 | 5 | 9% | May 2026 |
 | Ireland | 522 | 487 | 211 | 196 | 43% | May 2026 |
 | Italy | 1,615 | 1,476 | 935 | 910 | 63% | May 2026 |
+| Latvia | 802 | 756 | 485 | 445 | 64% | May 2026 |
+| Lithuania | 120 | 110 | 0 | 0 | 0% | May 2026 |
+| Luxembourg | 571 | 392 | 228 | 217 | 58% | May 2026 |
+| Malta | 608 | 590 | 384 | 377 | 65% | May 2026 |
+| Netherlands | 937 | 906 | 440 | 430 | 49% | May 2026 |
+| Norway | 177 | 171 | 55 | 51 | 32% | May 2026 |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
