@@ -5,13 +5,13 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-05-25 14:33 UTC — last scan: 2026-05-24_
+_Stats as of 2026-05-25 15:20 UTC — last scan: 2026-05-25_
 
-**5** scan batches run
+**9** scan batches run
 
-**3,012** of **82,714** available pages scanned (**3.6%** coverage)
-**2,832** pages with technology detections (**94.0%** of scanned)
-**183** unique technologies identified
+**6,380** of **82,714** available pages scanned (**7.7%** coverage)
+**6,045** pages with technology detections (**94.7%** of scanned)
+**232** unique technologies identified
 
 ---
 
@@ -24,6 +24,10 @@ _Stats as of 2026-05-25 14:33 UTC — last scan: 2026-05-24_
 | Bulgaria | 291 | 264 | 291 | 2026-05-24 |
 | Croatia | 233 | 229 | 233 | 2026-05-24 |
 | Czechia | 358 | 349 | 843 | 2026-05-24 |
+| Denmark | 1,521 | 1,495 | 1,521 | 2026-05-25 |
+| Estonia | 396 | 380 | 396 | 2026-05-25 |
+| Finland | 180 | 170 | 180 | 2026-05-25 |
+| France | 1,271 | 1,168 | 10,007 | 2026-05-25 |
 
 > Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and metric from [Download machine-readable technology data (JSON)](technology-data.json).
 
@@ -33,46 +37,46 @@ _Stats as of 2026-05-25 14:33 UTC — last scan: 2026-05-24_
 
 | # | Technology | Pages | Categories |
 |--:|-----------|------:|-----------|
-| 1 | jQuery | **1,662** | JavaScript libraries |
-| 2 | Font Awesome | **1,089** | Font scripts |
-| 3 | PHP | **814** | Programming languages |
-| 4 | Bootstrap | **777** | UI frameworks |
-| 5 | Google Font API | **575** | Font scripts |
-| 6 | jQuery UI | **563** | JavaScript libraries |
-| 7 | Windows Server | **481** | Operating systems |
-| 8 | Nginx | **479** | Reverse proxies, Web servers |
-| 9 | IIS | **478** | Web servers |
-| 10 | Drupal | **451** | CMS |
-| 11 | Microsoft ASP.NET | **445** | Web frameworks |
-| 12 | Apache | **438** | Web servers |
-| 13 | Lightbox | **377** | JavaScript libraries |
-| 14 | Slick | **358** | JavaScript libraries |
-| 15 | WordPress | **226** | Blogs, CMS |
-| 16 | MySQL | **226** | Databases |
-| 17 | jQuery Migrate | **211** | JavaScript libraries |
-| 18 | jsDelivr | **208** | CDN |
-| 19 | Leaflet | **203** | Maps |
-| 20 | Cloudflare | **182** | CDN |
+| 1 | jQuery | **3,007** | JavaScript libraries |
+| 2 | PHP | **1,645** | Programming languages |
+| 3 | Bootstrap | **1,417** | UI frameworks |
+| 4 | Font Awesome | **1,385** | Font scripts |
+| 5 | Drupal | **1,059** | CMS |
+| 6 | Nginx | **1,051** | Reverse proxies, Web servers |
+| 7 | Windows Server | **981** | Operating systems |
+| 8 | IIS | **977** | Web servers |
+| 9 | Google Font API | **928** | Font scripts |
+| 10 | Microsoft ASP.NET | **865** | Web frameworks |
+| 11 | Apache | **816** | Web servers |
+| 12 | jQuery UI | **753** | JavaScript libraries |
+| 13 | Cloudflare | **640** | CDN |
+| 14 | Lightbox | **457** | JavaScript libraries |
+| 15 | Slick | **457** | JavaScript libraries |
+| 16 | Varnish | **447** | Caching |
+| 17 | MySQL | **388** | Databases |
+| 18 | WordPress | **386** | Blogs, CMS |
+| 19 | jQuery Migrate | **382** | JavaScript libraries |
+| 20 | jsDelivr | **293** | CDN |
 
 ### Top Technology Categories
 
 | # | Category | Pages |
 |--:|---------|------:|
-| 1 | JavaScript libraries | **3,566** |
-| 2 | Font scripts | **1,686** |
-| 3 | Web servers | **1,474** |
-| 4 | Programming languages | **946** |
-| 5 | UI frameworks | **897** |
-| 6 | CMS | **802** |
-| 7 | Operating systems | **544** |
-| 8 | Reverse proxies | **513** |
-| 9 | Web frameworks | **507** |
-| 10 | CDN | **433** |
-| 11 | Maps | **254** |
-| 12 | Databases | **238** |
-| 13 | Blogs | **226** |
-| 14 | JavaScript frameworks | **188** |
-| 15 | Caching | **154** |
+| 1 | JavaScript libraries | **5,783** |
+| 2 | Web servers | **3,000** |
+| 3 | Font scripts | **2,376** |
+| 4 | Programming languages | **2,008** |
+| 5 | CMS | **1,623** |
+| 6 | UI frameworks | **1,578** |
+| 7 | Operating systems | **1,110** |
+| 8 | Reverse proxies | **1,107** |
+| 9 | CDN | **1,034** |
+| 10 | Web frameworks | **1,005** |
+| 11 | JavaScript frameworks | **646** |
+| 12 | Caching | **512** |
+| 13 | Databases | **408** |
+| 14 | Blogs | **389** |
+| 15 | Maps | **316** |
 
 📥 Machine-readable results: [Download machine-readable technology data (JSON)](technology-data.json)
 
