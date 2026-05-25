@@ -309,7 +309,7 @@ code and documentation in this repository. Known uses include:
 
 | Tool / LLM | What it was used for |
 |---|---|
-| GitHub Copilot (OpenAI Codex / GPT-4 family) | Code completion, refactoring suggestions, and inline documentation while writing Python source files |
+| GitHub Copilot (OpenAI Codex / GPT-4 family) | Code completion, refactoring suggestions, inline documentation while writing Python source files, and debugging/revising GitHub Actions workflow and test changes |
 | Claude (Anthropic) | PR reviews, writing and editing documentation (README, AGENTS.md, docs/), code-generation tasks via the GitHub Copilot Coding Agent, and implementing the documentation link-checker workflow (`check-links.yml`) inspired by the GitHubNext agentics approach |
 | ChatGPT / GPT-4 / GPT-5 (OpenAI) | Answering design questions, reviewing draft implementations, helping implement docs/report-generation pages for scan outputs such as technology and third-party JavaScript reporting, adding table drilldowns and CSV evidence downloads for published scan counts, drafting repository documentation such as `DEFINITION_OF_DONE.md`, and debugging CI/browser automation such as Playwright + axe accessibility checks for the generated site |
 

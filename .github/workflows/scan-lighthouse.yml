@@ -2,7 +2,7 @@ name: Scan Lighthouse
 
 on:
   # Run every 6 hours to build up progressive coverage.
-  # With --concurrency 5 and --only-categories=performance,accessibility,
+  # With --concurrency 3 and --only-categories=performance,accessibility,
   # best-practices,seo and --lighthouse-timeout-ms 45000, each URL takes
   # ~15-30 s, giving significantly higher throughput per day.  With
   # --skip-recently-scanned-days 30 each URL is
@@ -23,9 +23,9 @@ on:
         default: '0.5'
         type: string
       concurrency:
-        description: 'Maximum parallel Lighthouse processes (default: 5)'
+        description: 'Maximum parallel Lighthouse processes (default: 3)'
         required: false
-        default: '5'
+        default: '3'
         type: string
       lighthouse_timeout_ms:
         description: 'Lighthouse internal timeout in milliseconds (default: 45000)'
@@ -106,7 +106,7 @@ jobs:
           python3 -m src.cli.scan_lighthouse \
             --country "${{ github.event.inputs.country }}" \
             --rate-limit "${{ github.event.inputs.rate_limit || '0.5' }}" \
-            --concurrency "${{ github.event.inputs.concurrency || '5' }}" \
+            --concurrency "${{ github.event.inputs.concurrency || '3' }}" \
             --lighthouse-timeout-ms "${{ github.event.inputs.lighthouse_timeout_ms || '45000' }}" \
             --skip-recently-scanned-days "${{ github.event.inputs.skip_recently_scanned_days || '30' }}" \
             --only-categories "performance,accessibility,best-practices,seo" \
@@ -120,7 +120,7 @@ jobs:
             --all \
             --max-runtime 110 \
             --rate-limit "${{ github.event.inputs.rate_limit || '0.5' }}" \
-            --concurrency "${{ github.event.inputs.concurrency || '5' }}" \
+            --concurrency "${{ github.event.inputs.concurrency || '3' }}" \
             --lighthouse-timeout-ms "${{ github.event.inputs.lighthouse_timeout_ms || '45000' }}" \
             --skip-recently-scanned-days "${{ github.event.inputs.skip_recently_scanned_days || '30' }}" \
             --only-categories "performance,accessibility,best-practices,seo" \
@@ -188,7 +188,7 @@ jobs:
           fi
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "- Rate Limit: ${{ github.event.inputs.rate_limit || '0.5' }} runs/sec" >> $GITHUB_STEP_SUMMARY
-          echo "- Concurrency: ${{ github.event.inputs.concurrency || '5' }} parallel processes" >> $GITHUB_STEP_SUMMARY
+          echo "- Concurrency: ${{ github.event.inputs.concurrency || '3' }} parallel processes" >> $GITHUB_STEP_SUMMARY
           echo "- Lighthouse timeout: ${{ github.event.inputs.lighthouse_timeout_ms || '45000' }} ms" >> $GITHUB_STEP_SUMMARY
           echo "- Skip recently scanned: ${{ github.event.inputs.skip_recently_scanned_days || '30' }} days" >> $GITHUB_STEP_SUMMARY
           echo "- Workflow Run: [\#${{ github.run_number }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})" >> $GITHUB_STEP_SUMMARY
