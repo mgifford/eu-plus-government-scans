@@ -5,13 +5,13 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-05-25 22:37 UTC — last scan: 2026-05-25_
+_Stats as of 2026-05-25 22:39 UTC — last scan: 2026-05-25_
 
-**10** scan batches run
+**14** scan batches run
 
-**9,753** of **82,714** available pages scanned (**11.8%** coverage)
-**9,358** pages with technology detections (**95.9%** of scanned)
-**254** unique technologies identified
+**12,435** of **82,714** available pages scanned (**15.0%** coverage)
+**11,763** pages with technology detections (**94.6%** of scanned)
+**285** unique technologies identified
 
 ---
 
@@ -29,6 +29,10 @@ _Stats as of 2026-05-25 22:37 UTC — last scan: 2026-05-25_
 | Finland | 180 | 170 | 180 | 2026-05-25 |
 | France | 1,271 | 1,168 | 10,007 | 2026-05-25 |
 | Germany | 3,373 | 3,313 | 6,555 | 2026-05-25 |
+| Greece | 1,748 | 1,616 | 1,748 | 2026-05-25 |
+| Hungary | 390 | 281 | 390 | 2026-05-25 |
+| Iceland | 139 | 135 | 139 | 2026-05-25 |
+| Ireland | 405 | 373 | 522 | 2026-05-25 |
 
 > Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and metric from [Download machine-readable technology data (JSON)](technology-data.json).
 
@@ -38,46 +42,46 @@ _Stats as of 2026-05-25 22:37 UTC — last scan: 2026-05-25_
 
 | # | Technology | Pages | Categories |
 |--:|-----------|------:|-----------|
-| 1 | jQuery | **4,456** | JavaScript libraries |
-| 2 | PHP | **3,059** | Programming languages |
-| 3 | Apache | **2,204** | Web servers |
-| 4 | Bootstrap | **1,949** | UI frameworks |
-| 5 | Font Awesome | **1,785** | Font scripts |
-| 6 | Nginx | **1,755** | Reverse proxies, Web servers |
-| 7 | Drupal | **1,276** | CMS |
-| 8 | Windows Server | **1,079** | Operating systems |
-| 9 | IIS | **1,070** | Web servers |
-| 10 | Google Font API | **1,043** | Font scripts |
-| 11 | jQuery UI | **1,041** | JavaScript libraries |
-| 12 | Microsoft ASP.NET | **929** | Web frameworks |
-| 13 | jQuery Migrate | **818** | JavaScript libraries |
-| 14 | MySQL | **804** | Databases |
-| 15 | WordPress | **796** | Blogs, CMS |
-| 16 | Varnish | **789** | Caching |
-| 17 | TYPO3 CMS | **763** | CMS |
-| 18 | Lightbox | **746** | JavaScript libraries |
-| 19 | Slick | **728** | JavaScript libraries |
-| 20 | jsDelivr | **677** | CDN |
+| 1 | jQuery | **6,004** | JavaScript libraries |
+| 2 | PHP | **4,188** | Programming languages |
+| 3 | Apache | **2,792** | Web servers |
+| 4 | Bootstrap | **2,729** | UI frameworks |
+| 5 | Font Awesome | **2,661** | Font scripts |
+| 6 | Nginx | **2,615** | Reverse proxies, Web servers |
+| 7 | Google Font API | **2,001** | Font scripts |
+| 8 | jQuery Migrate | **1,558** | JavaScript libraries |
+| 9 | MySQL | **1,534** | Databases |
+| 10 | WordPress | **1,526** | Blogs, CMS |
+| 11 | Drupal | **1,485** | CMS |
+| 12 | Windows Server | **1,325** | Operating systems |
+| 13 | IIS | **1,307** | Web servers |
+| 14 | jQuery UI | **1,281** | JavaScript libraries |
+| 15 | Microsoft ASP.NET | **1,132** | Web frameworks |
+| 16 | jsDelivr | **909** | CDN |
+| 17 | Lightbox | **849** | JavaScript libraries |
+| 18 | Slick | **836** | JavaScript libraries |
+| 19 | Varnish | **827** | Caching |
+| 20 | Cloudflare | **798** | CDN |
 
 ### Top Technology Categories
 
 | # | Category | Pages |
 |--:|---------|------:|
-| 1 | JavaScript libraries | **9,610** |
-| 2 | Web servers | **5,217** |
-| 3 | Programming languages | **3,616** |
-| 4 | CMS | **3,030** |
-| 5 | Font scripts | **2,893** |
-| 6 | UI frameworks | **2,175** |
-| 7 | Reverse proxies | **1,826** |
-| 8 | CDN | **1,458** |
-| 9 | Operating systems | **1,290** |
-| 10 | Web frameworks | **1,212** |
-| 11 | Caching | **885** |
-| 12 | Databases | **847** |
-| 13 | JavaScript frameworks | **804** |
-| 14 | Blogs | **799** |
-| 15 | Maps | **458** |
+| 1 | JavaScript libraries | **13,014** |
+| 2 | Web servers | **7,121** |
+| 3 | Programming languages | **4,921** |
+| 4 | Font scripts | **4,754** |
+| 5 | CMS | **4,135** |
+| 6 | UI frameworks | **3,222** |
+| 7 | Reverse proxies | **2,692** |
+| 8 | CDN | **1,940** |
+| 9 | Operating systems | **1,790** |
+| 10 | Databases | **1,651** |
+| 11 | Blogs | **1,532** |
+| 12 | Web frameworks | **1,518** |
+| 13 | JavaScript frameworks | **1,178** |
+| 14 | Caching | **1,108** |
+| 15 | Miscellaneous | **660** |
 
 📥 Machine-readable results: [Download machine-readable technology data (JSON)](technology-data.json)
 
