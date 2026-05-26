@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-05-26 17:25 UTC_
+_Generated: 2026-05-26 18:23 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -13,8 +13,8 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
-| **Combined Reachability** | **34,638 confirmed reachable** | 82,714 | **<span role="img" aria-label="41.9% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:50px;height:100%;background:#b45309;"></span></span><span style="font-size:0.85em;color:#374151;">41.9%</span></span>** | — |
-| Social Media | 37,461 scanned (34,638 reachable) | 82,714 | <span role="img" aria-label="45.3% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:54px;height:100%;background:#b45309;"></span></span><span style="font-size:0.85em;color:#374151;">45.3%</span></span> | 1.6 days |
+| **Combined Reachability** | **37,022 confirmed reachable** | 82,714 | **<span role="img" aria-label="44.8% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:54px;height:100%;background:#b45309;"></span></span><span style="font-size:0.85em;color:#374151;">44.8%</span></span>** | — |
+| Social Media | 40,119 scanned (37,022 reachable) | 82,714 | <span role="img" aria-label="48.5% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:58px;height:100%;background:#b45309;"></span></span><span style="font-size:0.85em;color:#374151;">48.5%</span></span> | 1.6 days |
 | Technology | 15,136 scanned | 82,714 | <span role="img" aria-label="18.3% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:22px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">18.3%</span></span> | 1.2 days |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) | — |
 | Accessibility Statements | 37,915 scanned | 82,714 | <span role="img" aria-label="45.8% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:55px;height:100%;background:#b45309;"></span></span><span style="font-size:0.85em;color:#374151;">45.8%</span></span> | 1.9 days |
@@ -38,8 +38,8 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Greece | 1,748 | 1,748 | 1,618 | 446 | 2 | 100 | 1,070 | 237 | 62 | 0 | 102 | May 2026 |
 | Hungary | 390 | 390 | 278 | 112 | 1 | 22 | 143 | 26 | 0 | 0 | 23 | May 2026 |
 | Iceland | 139 | 139 | 135 | 27 | 0 | 12 | 96 | 8 | 5 | 0 | 12 | May 2026 |
-| Ireland | 298 | 522 | 274 | 94 | 0 | 17 | 163 | 75 | 17 | 2 | 15 | May 2026 |
-| Italy | 2,112 | 5,338 | 1,922 | 1,080 | 10 | 156 | 676 | 968 | 45 | 0 | 166 | May 2026 |
+| Ireland | 522 | 522 | 487 | 189 | 0 | 54 | 244 | 153 | 37 | 18 | 42 | May 2026 |
+| Italy | 4,546 | 5,338 | 4,093 | 1,995 | 13 | 236 | 1,849 | 1,729 | 75 | 0 | 249 | May 2026 |
 | Latvia | 802 | 802 | 757 | 376 | 0 | 85 | 296 | 276 | 47 | 0 | 85 | May 2026 |
 | Lithuania | 120 | 120 | 110 | 22 | 0 | 4 | 84 | 5 | 0 | 0 | 4 | May 2026 |
 | Luxembourg | 571 | 571 | 392 | 66 | 0 | 172 | 154 | 174 | 6 | 143 | 37 | May 2026 |
