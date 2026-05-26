@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-05-26 01:56 UTC_
+_Generated: 2026-05-26 02:19 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -13,24 +13,13 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
-| **Combined Reachability** | **26,464 confirmed reachable** | 82,714 | **<span role="img" aria-label="32.0% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:38px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">32.0%</span></span>** | — |
-| Social Media | 28,906 scanned (26,432 reachable) | 82,714 | <span role="img" aria-label="34.9% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:42px;height:100%;background:#b45309;"></span></span><span style="font-size:0.85em;color:#374151;">34.9%</span></span> | 1.4 days |
+| **Combined Reachability** | **29,052 confirmed reachable** | 82,714 | **<span role="img" aria-label="35.1% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:42px;height:100%;background:#b45309;"></span></span><span style="font-size:0.85em;color:#374151;">35.1%</span></span>** | — |
+| Social Media | 31,674 scanned (29,052 reachable) | 82,714 | <span role="img" aria-label="38.3% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:46px;height:100%;background:#b45309;"></span></span><span style="font-size:0.85em;color:#374151;">38.3%</span></span> | 1.3 days |
 | Technology | 12,435 scanned | 82,714 | <span role="img" aria-label="15.0% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:18px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">15.0%</span></span> | 18 h |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) | — |
 | Accessibility Statements | 30,185 scanned | 82,714 | <span role="img" aria-label="36.5% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:44px;height:100%;background:#b45309;"></span></span><span style="font-size:0.85em;color:#374151;">36.5%</span></span> | 1.6 days |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by any scan type. **Avg Age** shows the mean number of days (or hours) since each URL in that scan type was last scanned — lower is fresher.
-
-## URL Validation by Country
-
-| Country | Total | Valid | Invalid | Scan Period | Coverage |
-|---------|-------|-------|---------|-------------|----------|
-| Austria | 43 | 1 | 42 | May 2026 | <span role="img" aria-label="5.2% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:90px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:5px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">5.2%</span></span> |
-| Belgium | 92 | 0 | 92 | May 2026 | <span role="img" aria-label="7.0% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:90px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:6px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">7.0%</span></span> |
-| Bulgaria | 27 | 1 | 26 | May 2026 | <span role="img" aria-label="9.3% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:90px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:8px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">9.3%</span></span> |
-| Croatia | 40 | 30 | 10 | May 2026 | <span role="img" aria-label="17.2% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:90px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:15px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">17.2%</span></span> |
-
-> Hover or focus any non-zero **Total**, **Valid**, or **Invalid** count to preview matching URLs. **Valid** and **Invalid** can overlap because a URL may have passed in one validation run and failed in another during the same scan period; download the CSV for the underlying evidence from [scan-progress-data.json](scan-progress-data.json).
 
 ## Social Media Scan by Country
 
@@ -66,6 +55,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Spain | 1,426 | 6,069 | 1,245 | 506 | 3 | 70 | 666 | 400 | 110 | 14 | 61 | May 2026 |
 | Sweden | 1,558 | 1,558 | 1,473 | 474 | 3 | 33 | 963 | 80 | 18 | 11 | 25 | May 2026 |
 | Switzerland | 1,752 | 2,117 | 1,722 | 456 | 22 | 93 | 1,151 | 172 | 182 | 49 | 76 | May 2026 |
+| United Kingdom | 2,768 | 19,502 | 2,620 | 947 | 10 | 105 | 1,558 | 696 | 121 | 11 | 110 | May 2026 |
 
 > **Tier columns** (Twitter-only / Modern / Mixed / No Social) classify each page by its overall social media presence. **Platform columns** (Twitter / X / Bluesky / Mastodon) count pages with at least one link to that platform — a page may appear in more than one platform column.
 
@@ -138,7 +128,7 @@ Checks whether each government page links to an accessibility statement as requi
 
 These countries have social media scan data but no URL validation data (URL validation may have been skipped because the social scan already confirmed reachability):
 
-`CZECHIA`, `DENMARK`, `ESTONIA`, `FINLAND`, `FRANCE`, `GERMANY`, `GREECE`, `HUNGARY`, `ICELAND`, `IRELAND`, `ITALY`, `LATVIA`, `LITHUANIA`, `LUXEMBOURG`, `MALTA`, `NETHERLANDS`, `NORWAY`, `POLAND`, `PORTUGAL`, `REPUBLIC_OF_CYPRUS`, `ROMANIA`, `SLOVAKIA`, `SLOVENIA`, `SPAIN`, `SWEDEN`, `SWITZERLAND`
+`AUSTRIA`, `BELGIUM`, `BULGARIA`, `CROATIA`, `CZECHIA`, `DENMARK`, `ESTONIA`, `FINLAND`, `FRANCE`, `GERMANY`, `GREECE`, `HUNGARY`, `ICELAND`, `IRELAND`, `ITALY`, `LATVIA`, `LITHUANIA`, `LUXEMBOURG`, `MALTA`, `NETHERLANDS`, `NORWAY`, `POLAND`, `PORTUGAL`, `REPUBLIC_OF_CYPRUS`, `ROMANIA`, `SLOVAKIA`, `SLOVENIA`, `SPAIN`, `SWEDEN`, `SWITZERLAND`, `UNITED_KINGDOM_UK`
 
 ## Scan Priority Guide
 
