@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-05-26 22:43 UTC_
+_Generated: 2026-05-26 23:53 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -15,9 +15,9 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 |-----------|--------------|-----------|----------|---------|
 | **Combined Reachability** | **37,022 confirmed reachable** | 82,714 | **<span role="img" aria-label="44.8% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:54px;height:100%;background:#b45309;"></span></span><span style="font-size:0.85em;color:#374151;">44.8%</span></span>** | — |
 | Social Media | 40,119 scanned (37,022 reachable) | 82,714 | <span role="img" aria-label="48.5% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:58px;height:100%;background:#b45309;"></span></span><span style="font-size:0.85em;color:#374151;">48.5%</span></span> | 1.8 days |
-| Technology | 15,136 scanned | 82,714 | <span role="img" aria-label="18.3% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:22px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">18.3%</span></span> | 1.4 days |
+| Technology | 15,136 scanned | 82,714 | <span role="img" aria-label="18.3% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:22px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">18.3%</span></span> | 1.5 days |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) | — |
-| Accessibility Statements | 40,309 scanned | 82,714 | <span role="img" aria-label="48.7% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:58px;height:100%;background:#b45309;"></span></span><span style="font-size:0.85em;color:#374151;">48.7%</span></span> | 2.0 days |
+| Accessibility Statements | 41,593 scanned | 82,714 | <span role="img" aria-label="50.3% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:60px;height:100%;background:#b45309;"></span></span><span style="font-size:0.85em;color:#374151;">50.3%</span></span> | 1.9 days |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by any scan type. **Avg Age** shows the mean number of days (or hours) since each URL in that scan type was last scanned — lower is fresher.
 
@@ -113,9 +113,9 @@ Checks whether each government page links to an accessibility statement as requi
 | Netherlands | 937 | 906 | 440 | 430 | 49% | May 2026 |
 | Norway | 239 | 233 | 107 | 101 | 46% | May 2026 |
 | Poland | 4,532 | 4,179 | 1,602 | 1,138 | 38% | May 2026 |
-| Portugal | 2,450 | 1,966 | 456 | 385 | 23% | May 2026 |
+| Portugal | 3,503 | 2,857 | 865 | 702 | 30% | May 2026 |
 | Cyprus | 24 | 24 | 0 | 0 | 0% | May 2026 |
-| Romania | 506 | 212 | 14 | 2 | 7% | May 2026 |
+| Romania | 737 | 298 | 19 | 7 | 6% | May 2026 |
 | Slovakia | 434 | 408 | 186 | 171 | 46% | May 2026 |
 | Slovenia | 200 | 190 | 100 | 74 | 53% | May 2026 |
 | Spain | 1,406 | 1,222 | 484 | 425 | 40% | May 2026 |
