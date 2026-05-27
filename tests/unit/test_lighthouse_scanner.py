@@ -5,13 +5,14 @@ from __future__ import annotations
 import asyncio
 import json
 import subprocess
-from unittest.mock import patch
+from unittest.mock import MagicMock, patch
 
 import pytest
 
 from src.services.lighthouse_scanner import (
     LighthouseScanResult,
     LighthouseScanner,
+    _host_from_url,
     _parse_lighthouse_output,
 )
 
@@ -78,6 +79,36 @@ def test_parse_lighthouse_output_no_categories():
         _parse_lighthouse_output(json.dumps({"audits": {}}))
 
 
+def test_parse_lighthouse_output_with_leading_noise():
+    """Leading non-JSON content (Chrome logs, DevTools noise) should be stripped."""
+    noise = "DevTools listening on ws://127.0.0.1:9222\n[1234:5678] WARNING: some message\n"
+    json_payload = _make_lighthouse_json(performance=0.9, accessibility=0.8)
+    raw = noise + json_payload
+    scores = _parse_lighthouse_output(raw)
+    assert scores["performance"] == pytest.approx(0.9)
+    assert scores["accessibility"] == pytest.approx(0.8)
+
+
+def test_parse_lighthouse_output_no_json_object():
+    """Output with no '{' character should raise ValueError."""
+    with pytest.raises(ValueError, match="no JSON object found"):
+        _parse_lighthouse_output("just plain text\nno json here")
+
+
+# ---------------------------------------------------------------------------
+# _host_from_url
+# ---------------------------------------------------------------------------
+
+
+def test_host_from_url_extracts_hostname():
+    assert _host_from_url("https://gov.example/page") == "gov.example"
+
+
+def test_host_from_url_fallback_on_invalid():
+    result = _host_from_url("not-a-url")
+    assert result  # must return something non-empty
+
+
 # ---------------------------------------------------------------------------
 # LighthouseScanner.scan_url
 # ---------------------------------------------------------------------------
@@ -105,7 +136,7 @@ async def test_scan_url_success():
 
 @pytest.mark.asyncio
 async def test_scan_url_lighthouse_not_found():
-    """FileNotFoundError should yield an informative error message."""
+    """FileNotFoundError should yield an informative error message (no retry)."""
     scanner = LighthouseScanner()
 
     with patch.object(scanner, "_run_lighthouse", side_effect=FileNotFoundError()):
@@ -118,8 +149,8 @@ async def test_scan_url_lighthouse_not_found():
 
 @pytest.mark.asyncio
 async def test_scan_url_timeout():
-    """TimeoutExpired should yield a timeout error message."""
-    scanner = LighthouseScanner(timeout_seconds=30)
+    """TimeoutExpired should yield a timeout error message after retries exhaust."""
+    scanner = LighthouseScanner(timeout_seconds=30, max_retries=0)
 
     with patch.object(
         scanner,
@@ -136,7 +167,7 @@ async def test_scan_url_timeout():
 @pytest.mark.asyncio
 async def test_scan_url_non_zero_exit():
     """CalledProcessError should yield an error message with the exit code."""
-    scanner = LighthouseScanner()
+    scanner = LighthouseScanner(max_retries=0)
 
     with patch.object(
         scanner,
@@ -157,8 +188,8 @@ async def test_scan_url_non_zero_exit():
 
 @pytest.mark.asyncio
 async def test_scan_url_invalid_json_output():
-    """Invalid JSON from Lighthouse should yield a parse error message."""
-    scanner = LighthouseScanner()
+    """Invalid JSON from Lighthouse should yield a parse error message after retries."""
+    scanner = LighthouseScanner(max_retries=0)
 
     with patch.object(scanner, "_run_lighthouse", return_value="garbage output"):
         result = await scanner.scan_url("https://gov.example/")
@@ -166,6 +197,87 @@ async def test_scan_url_invalid_json_output():
     assert result.performance_score is None
     assert result.error_message is not None
     assert "Invalid JSON" in result.error_message
+
+
+@pytest.mark.asyncio
+async def test_scan_url_retries_on_timeout_then_succeeds():
+    """scan_url should retry on TimeoutExpired and succeed on a later attempt."""
+    scanner = LighthouseScanner(max_retries=2, retry_backoff_seconds=0.0)
+    raw = _make_lighthouse_json(performance=0.9, accessibility=0.85)
+
+    call_count = 0
+
+    def _mock_run(url: str) -> str:
+        nonlocal call_count
+        call_count += 1
+        if call_count < 2:
+            raise subprocess.TimeoutExpired(cmd=["lighthouse"], timeout=30)
+        return raw
+
+    with patch.object(scanner, "_run_lighthouse", side_effect=_mock_run):
+        result = await scanner.scan_url("https://gov.example/")
+
+    assert call_count == 2
+    assert result.error_message is None
+    assert result.performance_score == pytest.approx(0.9)
+
+
+@pytest.mark.asyncio
+async def test_scan_url_retries_on_invalid_json_then_succeeds():
+    """scan_url should retry on truncated/invalid JSON and succeed on a later attempt."""
+    scanner = LighthouseScanner(max_retries=2, retry_backoff_seconds=0.0)
+    raw = _make_lighthouse_json(performance=0.8, accessibility=0.75)
+
+    call_count = 0
+
+    def _mock_run(url: str) -> str:
+        nonlocal call_count
+        call_count += 1
+        if call_count < 2:
+            return '{"categories": {"performance": {"score": 0.8'  # truncated JSON
+        return raw
+
+    with patch.object(scanner, "_run_lighthouse", side_effect=_mock_run):
+        result = await scanner.scan_url("https://gov.example/")
+
+    assert call_count == 2
+    assert result.error_message is None
+    assert result.performance_score == pytest.approx(0.8)
+
+
+@pytest.mark.asyncio
+async def test_scan_url_exhausts_retries():
+    """After all retries fail, the last error message should be returned."""
+    scanner = LighthouseScanner(max_retries=2, retry_backoff_seconds=0.0)
+
+    with patch.object(
+        scanner,
+        "_run_lighthouse",
+        side_effect=subprocess.TimeoutExpired(cmd=["lighthouse"], timeout=30),
+    ):
+        result = await scanner.scan_url("https://slow.gov/")
+
+    assert result.performance_score is None
+    assert result.error_message is not None
+    assert "timed out" in result.error_message
+
+
+@pytest.mark.asyncio
+async def test_scan_url_no_retry_on_file_not_found():
+    """FileNotFoundError must not be retried (lighthouse binary is missing)."""
+    call_count = 0
+    scanner = LighthouseScanner(max_retries=2, retry_backoff_seconds=0.0)
+
+    def _mock_run(url: str) -> str:
+        nonlocal call_count
+        call_count += 1
+        raise FileNotFoundError()
+
+    with patch.object(scanner, "_run_lighthouse", side_effect=_mock_run):
+        result = await scanner.scan_url("https://gov.example/")
+
+    assert call_count == 1  # no retries
+    assert "npm install -g lighthouse" in result.error_message
 
 
 # ---------------------------------------------------------------------------
@@ -316,3 +428,110 @@ def test_build_command_custom_chrome_flags():
     scanner = LighthouseScanner(chrome_flags="--headless --disable-gpu")
     cmd = scanner._build_command("https://example.gov/")
     assert any("--headless --disable-gpu" in arg for arg in cmd)
+
+
+# ---------------------------------------------------------------------------
+# Circuit breaker
+# ---------------------------------------------------------------------------
+
+
+@pytest.mark.asyncio
+async def test_circuit_breaker_skips_host_after_consecutive_failures():
+    """After circuit_breaker_threshold failures on one host, remaining URLs are skipped."""
+    scanner = LighthouseScanner(max_retries=0)
+    # Five URLs from the same host; after 3 failures the circuit breaker trips.
+    urls = [
+        "https://slow.gov/",
+        "https://slow.gov/page1",
+        "https://slow.gov/page2",
+        "https://slow.gov/page3",   # circuit-broken
+        "https://slow.gov/page4",   # circuit-broken
+    ]
+
+    with patch.object(
+        scanner,
+        "_run_lighthouse",
+        side_effect=subprocess.TimeoutExpired(cmd=["lighthouse"], timeout=30),
+    ):
+        results = await scanner.scan_urls_batch(
+            urls,
+            rate_limit_per_second=0,
+            circuit_breaker_threshold=3,
+        )
+
+    assert len(results) == 5
+    cb_results = [
+        r for r in results.values()
+        if r.error_message and "Circuit breaker" in r.error_message
+    ]
+    assert len(cb_results) == 2
+
+
+@pytest.mark.asyncio
+async def test_circuit_breaker_resets_on_success():
+    """A successful scan resets the failure streak so the circuit never trips."""
+    scanner = LighthouseScanner(max_retries=0)
+    raw = _make_lighthouse_json()
+    urls = [
+        "https://flaky.gov/",
+        "https://flaky.gov/ok",  # succeeds → resets streak
+        "https://flaky.gov/ok2",
+        "https://flaky.gov/ok3",
+    ]
+
+    call_count = 0
+
+    def _mock_run(url: str) -> str:
+        nonlocal call_count
+        call_count += 1
+        if "flaky.gov/" == url.rstrip("/").split("/")[-1] + "/":
+            raise subprocess.TimeoutExpired(cmd=["lighthouse"], timeout=30)
+        return raw
+
+    def _url_mock(url: str) -> str:
+        nonlocal call_count
+        call_count += 1
+        if url == "https://flaky.gov/":
+            raise subprocess.TimeoutExpired(cmd=["lighthouse"], timeout=30)
+        return raw
+
+    with patch.object(scanner, "_run_lighthouse", side_effect=_url_mock):
+        results = await scanner.scan_urls_batch(
+            urls,
+            rate_limit_per_second=0,
+            circuit_breaker_threshold=3,
+        )
+
+    # All 4 URLs should appear in results (no CB trip because streak was reset)
+    assert len(results) == 4
+    cb_results = [
+        r for r in results.values()
+        if r.error_message and "Circuit breaker" in r.error_message
+    ]
+    assert len(cb_results) == 0
+
+
+@pytest.mark.asyncio
+async def test_circuit_breaker_disabled_at_zero():
+    """Setting circuit_breaker_threshold=0 should disable the circuit breaker."""
+    scanner = LighthouseScanner(max_retries=0)
+    urls = [f"https://broken.gov/page{i}" for i in range(6)]
+
+    with patch.object(
+        scanner,
+        "_run_lighthouse",
+        side_effect=subprocess.TimeoutExpired(cmd=["lighthouse"], timeout=30),
+    ):
+        results = await scanner.scan_urls_batch(
+            urls,
+            rate_limit_per_second=0,
+            circuit_breaker_threshold=0,
+        )
+
+    # All 6 URLs should be attempted; none circuit-broken
+    assert len(results) == 6
+    cb_results = [
+        r for r in results.values()
+        if r.error_message and "Circuit breaker" in r.error_message
+    ]
+    assert len(cb_results) == 0
