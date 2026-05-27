@@ -67,7 +67,7 @@ jobs:
         id: download-metadata
         if: steps.find-metadata.outputs.run_id != ''
         continue-on-error: true
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: validation-metadata
           path: data/
@@ -153,7 +153,7 @@ jobs:
 
       - name: Upload metadata
         if: always() && steps.download-metadata.outcome != 'failure'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: validation-metadata
           path: |
