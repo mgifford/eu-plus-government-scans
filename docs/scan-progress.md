@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-05-27 18:19 UTC_
+_Generated: 2026-05-27 19:04 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -15,7 +15,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 |-----------|--------------|-----------|----------|---------|
 | **Combined Reachability** | **47,842 confirmed reachable** | 82,714 | **<span role="img" aria-label="57.8% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:69px;height:100%;background:#b45309;"></span></span><span style="font-size:0.85em;color:#374151;">57.8%</span></span>** | — |
 | Social Media | 52,127 scanned (47,842 reachable) | 82,714 | <span role="img" aria-label="63.0% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:76px;height:100%;background:#b45309;"></span></span><span style="font-size:0.85em;color:#374151;">63.0%</span></span> | 2.1 days |
-| Technology | 15,136 scanned | 82,714 | <span role="img" aria-label="18.3% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:22px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">18.3%</span></span> | 2.2 days |
+| Technology | 15,136 scanned | 82,714 | <span role="img" aria-label="18.3% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:22px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">18.3%</span></span> | 2.3 days |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) | — |
 | Accessibility Statements | 51,248 scanned | 82,714 | <span role="img" aria-label="62.0% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:74px;height:100%;background:#b45309;"></span></span><span style="font-size:0.85em;color:#374151;">62.0%</span></span> | 2.3 days |
 
