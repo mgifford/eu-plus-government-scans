@@ -68,7 +68,7 @@ jobs:
       - name: Download latest metadata DB (if exists)
         if: steps.find-metadata.outputs.run_id != ''
         continue-on-error: true
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: validation-metadata
           path: data/
@@ -93,7 +93,7 @@ jobs:
       - name: Download latest Lighthouse metadata DB (if exists)
         if: steps.find-lighthouse-metadata.outputs.run_id != ''
         continue-on-error: true
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: lighthouse-metadata
           path: data/lighthouse/
@@ -195,7 +195,7 @@ jobs:
 
       - name: Upload progress report artifact
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: scan-progress-report-${{ github.run_number }}
           path: |
