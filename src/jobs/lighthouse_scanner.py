@@ -186,6 +186,7 @@ class LighthouseScannerJob:
         urls_skipped: int,
         output_path: Path,
         scan_results: Dict[str, LighthouseScanResult] | None = None,
+        stopped_due_to_budget: bool = False,
     ) -> Dict[str, Any]:
         """Build the scan statistics dictionary returned by :meth:`scan_country`.
 
@@ -201,6 +202,7 @@ class LighthouseScannerJob:
                 "urls_scanned": 0,
                 "urls_skipped_recently_scanned": urls_skipped,
                 "is_complete": True,
+                "stopped_due_to_budget": False,
                 "success_count": 0,
                 "error_count": 0,
                 "avg_performance": None,
@@ -229,6 +231,7 @@ class LighthouseScannerJob:
             "urls_scanned": scanned_count,
             "urls_skipped_recently_scanned": urls_skipped,
             "is_complete": is_complete,
+            "stopped_due_to_budget": stopped_due_to_budget,
             "success_count": success_count,
             "error_count": scanned_count - success_count,
             "avg_performance": _avg("performance_score"),
@@ -401,6 +404,8 @@ class LighthouseScannerJob:
 
         scanned_count = len(scan_results)
         is_complete = scanned_count == len(urls)
+        # Budget stop: fewer URLs were processed than were available to scan.
+        stopped_due_to_budget = not is_complete
         if is_complete:
             print(f"Saved Lighthouse-annotated TOON to: {output_path}")
         else:
@@ -411,7 +416,8 @@ class LighthouseScannerJob:
 
         stats = self._build_scan_stats(
             scan_id, country_code, len(all_urls), len(recently_scanned),
-            output_path, scan_results
+            output_path, scan_results,
+            stopped_due_to_budget=stopped_due_to_budget,
         )
 
         print(f"\nLighthouse scan {'complete' if is_complete else 'partial'}:")
@@ -424,6 +430,8 @@ class LighthouseScannerJob:
             print(f"  Avg accessibility: {stats['avg_accessibility'] * 100:.1f}")
         if stats["avg_performance"] is not None:
             print(f"  Avg performance:   {stats['avg_performance'] * 100:.1f}")
+        if stopped_due_to_budget:
+            print("  ⏱️  Stopped early: time budget reached")
 
         return stats
 
