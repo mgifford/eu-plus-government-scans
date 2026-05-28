@@ -318,6 +318,7 @@ class LighthouseScannerJob:
         start_time: Optional[float] = None,
         skip_recently_scanned_days: int = 0,
         concurrency: int = 1,
+        max_urls: Optional[int] = None,
     ) -> Dict[str, Any]:
         """
         Run Lighthouse audits for all URLs in a country's TOON file.
@@ -340,6 +341,8 @@ class LighthouseScannerJob:
                 re-scan all URLs.
             concurrency: Maximum number of parallel Lighthouse processes.
                 Defaults to 1 (sequential).
+            max_urls: Stop after scanning this many URLs for this country.
+                ``None`` means no limit.
 
         Returns:
             Scan statistics dictionary.
@@ -392,6 +395,7 @@ class LighthouseScannerJob:
             start_time=_start,
             on_result=_save_result,
             concurrency=concurrency,
+            max_urls=max_urls,
         )
 
         updated_toon = self._update_toon_with_lighthouse(toon_data, scan_results)
@@ -442,6 +446,7 @@ class LighthouseScannerJob:
         max_runtime_seconds: Optional[float] = None,
         skip_recently_scanned_days: int = 0,
         concurrency: int = 1,
+        max_urls: Optional[int] = None,
     ) -> List[Dict[str, Any]]:
         """
         Run Lighthouse audits for all TOON files in a directory.
@@ -461,6 +466,8 @@ class LighthouseScannerJob:
                 scanned recently are prioritised when this is set.
             concurrency: Maximum number of parallel Lighthouse processes per
                 country.  Defaults to 1 (sequential).
+            max_urls: Stop after scanning this many URLs in total across all
+                countries.  ``None`` means no limit.
 
         Returns:
             List of scan statistics for each country processed.
@@ -475,6 +482,7 @@ class LighthouseScannerJob:
 
         start_time = time.monotonic()
         _country_start_buffer = 5 * 60  # 5 minutes
+        urls_remaining = max_urls  # None = unlimited
 
         for toon_path in toon_files:
             country_code = country_filename_to_code(toon_path.stem)
@@ -491,6 +499,13 @@ class LighthouseScannerJob:
                     )
                     break
 
+            if urls_remaining is not None and urls_remaining <= 0:
+                print(
+                    f"🎯 Global URL target reached — "
+                    f"skipping remaining countries starting with {country_code}"
+                )
+                break
+
             try:
                 stats = await self.scan_country(
                     country_code,
@@ -500,8 +515,11 @@ class LighthouseScannerJob:
                     start_time=start_time,
                     skip_recently_scanned_days=skip_recently_scanned_days,
                     concurrency=concurrency,
+                    max_urls=urls_remaining,
                 )
                 all_stats.append(stats)
+                if urls_remaining is not None:
+                    urls_remaining -= stats.get("urls_scanned", 0)
             except Exception as exc:
                 print(f"Error scanning {toon_path}: {exc}")
                 all_stats.append({"country_code": country_code, "error": str(exc)})

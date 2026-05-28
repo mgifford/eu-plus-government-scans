@@ -23,6 +23,15 @@ import httpx
 from bs4 import BeautifulSoup
 
 
+def _host_from_url(url: str) -> str:
+    """Extract the hostname from a URL for circuit-breaker tracking."""
+    try:
+        hostname = urlparse(url).hostname
+        return hostname or url
+    except Exception:
+        return url
+
+
 # ---------------------------------------------------------------------------
 # Known third-party service fingerprints.
 # Each entry maps a (hostname, optional path-prefix) pair to metadata that
@@ -630,9 +639,15 @@ class ThirdPartyJsScanner:
         max_runtime_seconds: Optional[float] = None,
         start_time: Optional[float] = None,
         on_result: Optional[Callable[["ThirdPartyJsScanResult"], None]] = None,
+        circuit_breaker_threshold: int = 3,
+        max_urls: Optional[int] = None,
     ) -> Dict[str, "ThirdPartyJsScanResult"]:
         """
         Scan multiple URLs for third-party JavaScript with rate limiting.
+
+        A per-host **circuit breaker** skips further URLs for any hostname that
+        accumulates *circuit_breaker_threshold* consecutive failures, preventing
+        a single slow or unresponsive domain from exhausting the run budget.
 
         Args:
             urls: List of URLs to scan.
@@ -646,6 +661,12 @@ class ThirdPartyJsScanner:
             on_result: Optional callback invoked immediately after each URL is
                 scanned (before the inter-request delay).  Useful for incremental
                 persistence so that partial results survive a timeout.
+            circuit_breaker_threshold: Number of consecutive failures on a
+                single hostname before further URLs from that host are skipped.
+                Defaults to 3.  Set to 0 to disable the circuit breaker.
+            max_urls: Stop after scanning this many URLs (across this batch).
+                Circuit-breaker-skipped URLs do not count toward the limit.
+                ``None`` means no limit.
 
         Returns:
             Dictionary mapping URL to :class:`ThirdPartyJsScanResult`.  When
@@ -657,6 +678,10 @@ class ThirdPartyJsScanner:
 
         _start = start_time if start_time is not None else time.monotonic()
         _safety_buffer = 60.0
+
+        # Per-host consecutive failure counts for the circuit breaker.
+        host_failure_counts: dict[str, int] = {}
+        scanned_count = 0
 
         total = len(urls)
         for idx, url in enumerate(urls, 1):
@@ -672,16 +697,47 @@ class ThirdPartyJsScanner:
                     )
                     break
 
+            if max_urls is not None and scanned_count >= max_urls:
+                print(
+                    f"  🎯 URL target reached ({scanned_count}/{max_urls}) "
+                    f"— stopping after {idx - 1}/{total} URLs"
+                )
+                break
+
+            host = _host_from_url(url)
+
+            # Circuit breaker: skip without making an HTTP request.
+            if circuit_breaker_threshold > 0 and host_failure_counts.get(host, 0) >= circuit_breaker_threshold:
+                streak = host_failure_counts[host]
+                print(
+                    f"  [{idx}/{total}] ⚡ Circuit breaker: "
+                    f"skipping {url} ({streak} consecutive failures on {host})"
+                )
+                skip_result = ThirdPartyJsScanResult(
+                    url=url,
+                    is_reachable=False,
+                    error_message=f"Circuit breaker: {streak} consecutive failures on {host}",
+                    scanned_at=datetime.now(timezone.utc).isoformat(),
+                )
+                results[url] = skip_result
+                if on_result is not None:
+                    on_result(skip_result)
+                continue
+
             print(f"  [{idx}/{total}] Scanning: {url}")
             result = await self.scan_url(url)
             results[url] = result
+            scanned_count += 1
 
             if on_result is not None:
                 on_result(result)
 
+            # Update circuit breaker state.
             if result.error_message:
+                host_failure_counts[host] = host_failure_counts.get(host, 0) + 1
                 print(f"      ✗ {result.error_message}")
             else:
+                host_failure_counts[host] = 0  # reset streak on success
                 known = result.known_service_count
                 total_scripts = result.third_party_count
                 summary = (

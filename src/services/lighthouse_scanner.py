@@ -309,6 +309,7 @@ class LighthouseScanner:
         on_result: Optional[Callable[["LighthouseScanResult"], None]] = None,
         concurrency: int = 1,
         circuit_breaker_threshold: int = 3,
+        max_urls: Optional[int] = None,
     ) -> Dict[str, "LighthouseScanResult"]:
         """
         Run Lighthouse audits for multiple URLs with rate limiting and
@@ -349,6 +350,9 @@ class LighthouseScanner:
             circuit_breaker_threshold: Number of consecutive failures on a
                 single hostname before further URLs from that host are skipped.
                 Defaults to 3.  Set to 0 to disable the circuit breaker.
+            max_urls: Stop submitting new URLs after this many have been
+                submitted (across this batch).  Circuit-breaker-skipped URLs
+                do not count toward the limit.  ``None`` means no limit.
 
         Returns:
             Dictionary mapping URL to LighthouseScanResult.  When stopped
@@ -451,6 +455,13 @@ class LighthouseScanner:
                         f"— stopping after submitting {submitted_count}/{total} URLs"
                     )
                     break
+
+            if max_urls is not None and submitted_count >= max_urls:
+                print(
+                    f"  🎯 URL target reached ({submitted_count}/{max_urls}) "
+                    f"— stopping after submitting {submitted_count}/{total} URLs"
+                )
+                break
 
             while len(running_tasks) >= max_concurrency:
                 done, pending = await asyncio.wait(

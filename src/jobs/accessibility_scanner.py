@@ -177,6 +177,8 @@ class AccessibilityScannerJob:
         max_runtime_seconds: Optional[float] = None,
         start_time: Optional[float] = None,
         skip_recently_scanned_days: int = 0,
+        circuit_breaker_threshold: int = 3,
+        max_urls: Optional[int] = None,
     ) -> Dict[str, Any]:
         """
         Scan all URLs in a country's TOON file for accessibility statement links.
@@ -196,6 +198,11 @@ class AccessibilityScannerJob:
                 overall job.  ``None`` means a fresh clock for this country.
             skip_recently_scanned_days: Skip URLs that were already scanned
                 by this scanner within the last N days.  0 = always re-scan.
+            circuit_breaker_threshold: Number of consecutive failures on a
+                single hostname before further URLs from that host are skipped.
+                Defaults to 3.  Set to 0 to disable the circuit breaker.
+            max_urls: Stop after scanning this many URLs for this country.
+                ``None`` means no limit.
 
         Returns:
             Scan statistics dictionary.
@@ -257,6 +264,8 @@ class AccessibilityScannerJob:
             max_runtime_seconds=max_runtime_seconds,
             start_time=_start,
             on_result=_save_result,
+            circuit_breaker_threshold=circuit_breaker_threshold,
+            max_urls=max_urls,
         )
 
         updated_toon = self._update_toon_with_accessibility(toon_data, scan_results)
@@ -317,6 +326,8 @@ class AccessibilityScannerJob:
         rate_limit_per_second: float = 2.0,
         max_runtime_seconds: Optional[float] = None,
         skip_recently_scanned_days: int = 0,
+        circuit_breaker_threshold: int = 3,
+        max_urls: Optional[int] = None,
     ) -> List[Dict[str, Any]]:
         """
         Scan all TOON files in a directory for accessibility statement links.
@@ -330,6 +341,11 @@ class AccessibilityScannerJob:
             max_runtime_seconds: Shared runtime budget in seconds.
             skip_recently_scanned_days: Skip URLs already scanned within the
                 last N days.  0 = always re-scan all URLs.
+            circuit_breaker_threshold: Number of consecutive failures on a
+                single hostname before further URLs from that host are skipped.
+                Defaults to 3.  Set to 0 to disable the circuit breaker.
+            max_urls: Stop after scanning this many URLs in total across all
+                countries.  ``None`` means no limit.
 
         Returns:
             List of scan statistics for each country processed.
@@ -356,6 +372,7 @@ class AccessibilityScannerJob:
 
         start_time = time.monotonic()
         _country_start_buffer = 5 * 60  # 5 minutes
+        urls_remaining = max_urls  # None = unlimited
 
         for toon_path in toon_files:
             country_code = country_filename_to_code(toon_path.stem)
@@ -372,6 +389,13 @@ class AccessibilityScannerJob:
                     )
                     break
 
+            if urls_remaining is not None and urls_remaining <= 0:
+                print(
+                    f"🎯 Global URL target reached — "
+                    f"skipping remaining countries starting with {country_code}"
+                )
+                break
+
             try:
                 stats = await self.scan_country(
                     country_code,
@@ -380,8 +404,12 @@ class AccessibilityScannerJob:
                     max_runtime_seconds=max_runtime_seconds,
                     start_time=start_time,
                     skip_recently_scanned_days=skip_recently_scanned_days,
+                    circuit_breaker_threshold=circuit_breaker_threshold,
+                    max_urls=urls_remaining,
                 )
                 all_stats.append(stats)
+                if urls_remaining is not None:
+                    urls_remaining -= stats.get("urls_scanned", 0)
             except Exception as exc:
                 print(f"Error scanning {toon_path}: {exc}")
                 all_stats.append({"country_code": country_code, "error": str(exc)})
