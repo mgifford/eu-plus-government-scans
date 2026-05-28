@@ -5,14 +5,14 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-05-28 11:28 UTC — last scan: 2026-05-28_
+_Stats as of 2026-05-28 12:42 UTC — last scan: 2026-05-28_
 
-**51** scan batches run
+**53** scan batches run
 
-**59,130** of **82,714** available pages scanned (**71.5%** coverage)
-**54,135** of **59,130** scanned pages were reachable (**91.6%**)
-**25,958** of **54,135** reachable pages have an accessibility statement (**48.0%**)
-**23,029** pages have the statement link in the footer (**88.7%** of pages with a statement)
+**61,209** of **82,714** available pages scanned (**74.0%** coverage)
+**55,906** of **61,209** scanned pages were reachable (**91.3%**)
+**26,951** of **55,906** reachable pages have an accessibility statement (**48.2%**)
+**23,929** pages have the statement link in the footer (**88.8%** of pages with a statement)
 
 📥 Machine-readable results are available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
 
@@ -53,11 +53,11 @@ Each country entry in the JSON file includes page-level evidence for pages with 
 | Romania | 799 | 799 | 338 | 27 | 9 | 8.0% | May 2026 |
 | Slovakia | 434 | 434 | 408 | 186 | 171 | 45.6% | May 2026 |
 | Slovenia | 200 | 200 | 190 | 100 | 74 | 52.6% | May 2026 |
-| Spain | 4,546 | 6,069 | 3,950 | 1,624 | 1,422 | 41.1% | May 2026 |
+| Spain | 6,069 | 6,069 | 5,238 | 2,339 | 2,053 | 44.7% | May 2026 |
 | Sweden | 1,558 | 1,558 | 1,474 | 837 | 764 | 56.8% | May 2026 |
 | Switzerland | 2,117 | 2,117 | 2,072 | 991 | 990 | 47.8% | May 2026 |
-| United Kingdom | 7,878 | 19,502 | 7,361 | 4,144 | 3,884 | 56.3% | May 2026 |
-| **Total** | **59,130** | **82,714** | **54,135** | **25,958** | **23,029** | **48.0%** | — |
+| United Kingdom | 8,434 | 19,502 | 7,844 | 4,422 | 4,153 | 56.4% | May 2026 |
+| **Total** | **61,209** | **82,714** | **55,906** | **26,951** | **23,929** | **48.2%** | — |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
