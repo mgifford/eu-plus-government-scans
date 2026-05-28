@@ -69,6 +69,29 @@ def main():
         default=0,
         dest="skip_recently_scanned_days",
     )
+    parser.add_argument(
+        "--circuit-breaker-threshold",
+        help=(
+            "Number of consecutive HTTP failures on a single hostname before "
+            "further URLs from that host are skipped for the current run. "
+            "0 disables the circuit breaker (default: 3)."
+        ),
+        type=int,
+        default=3,
+        dest="circuit_breaker_threshold",
+    )
+    parser.add_argument(
+        "--max-urls",
+        help=(
+            "Stop after scanning this many URLs in total across all countries. "
+            "0 = no limit (default).  Useful for targeting a fixed scan quota "
+            "per run while ensuring constant progression across the full URL set "
+            "when combined with --skip-recently-scanned-days."
+        ),
+        type=int,
+        default=0,
+        dest="max_urls",
+    )
 
     args = parser.parse_args()
 
@@ -82,6 +105,7 @@ def main():
         sys.exit(1)
 
     max_runtime_seconds = args.max_runtime * 60 if args.max_runtime > 0 else None
+    max_urls = args.max_urls if args.max_urls > 0 else None
 
     settings = load_settings()
     job = AccessibilityScannerJob(settings)
@@ -101,6 +125,8 @@ def main():
                     rate_limit_per_second=args.rate_limit,
                     max_runtime_seconds=max_runtime_seconds,
                     skip_recently_scanned_days=args.skip_recently_scanned_days,
+                    circuit_breaker_threshold=args.circuit_breaker_threshold,
+                    max_urls=max_urls,
                 )
             )
 
@@ -153,6 +179,8 @@ def main():
                     rate_limit_per_second=args.rate_limit,
                     max_runtime_seconds=max_runtime_seconds,
                     skip_recently_scanned_days=args.skip_recently_scanned_days,
+                    circuit_breaker_threshold=args.circuit_breaker_threshold,
+                    max_urls=max_urls,
                 )
             )
 

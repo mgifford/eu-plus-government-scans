@@ -32,7 +32,7 @@ env:
 jobs:
   scan-third-party-js:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 65
     permissions:
       contents: read
       actions: read
@@ -89,7 +89,7 @@ jobs:
         run: |
           python3 -m src.cli.scan_third_party_js \
             --all \
-            --max-runtime 110 \
+            --max-runtime 55 \
             --rate-limit "${{ github.event.inputs.rate_limit || '1.0' }}" \
             2>&1 | tee 3pjs-scan-output.txt
 

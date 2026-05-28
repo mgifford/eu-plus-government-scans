@@ -114,6 +114,18 @@ def main():
         default=45000,
         dest="lighthouse_timeout_ms",
     )
+    parser.add_argument(
+        "--max-urls",
+        help=(
+            "Stop after scanning this many URLs in total across all countries. "
+            "0 = no limit (default).  Useful for targeting a fixed scan quota "
+            "per run while ensuring constant progression across the full URL set "
+            "when combined with --skip-recently-scanned-days."
+        ),
+        type=int,
+        default=0,
+        dest="max_urls",
+    )
 
     args = parser.parse_args()
 
@@ -142,6 +154,7 @@ def main():
     )
 
     max_runtime_seconds = args.max_runtime * 60 if args.max_runtime > 0 else None
+    max_urls = args.max_urls if args.max_urls > 0 else None
 
     try:
         if args.all:
@@ -159,6 +172,7 @@ def main():
                     max_runtime_seconds=max_runtime_seconds,
                     skip_recently_scanned_days=args.skip_recently_scanned_days,
                     concurrency=args.concurrency,
+                    max_urls=max_urls,
                 )
             )
 
@@ -202,6 +216,7 @@ def main():
                     max_runtime_seconds=max_runtime_seconds,
                     skip_recently_scanned_days=args.skip_recently_scanned_days,
                     concurrency=args.concurrency,
+                    max_urls=max_urls,
                 )
             )
 
