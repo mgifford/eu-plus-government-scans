@@ -477,3 +477,160 @@ async def test_scan_urls_batch_no_max_runtime_scans_all():
         )
 
     assert len(results) == 2
+
+
+# ---------------------------------------------------------------------------
+# AccessibilityScanner — circuit breaker
+# ---------------------------------------------------------------------------
+
+
+@pytest.mark.asyncio
+async def test_circuit_breaker_skips_host_after_consecutive_failures():
+    """After circuit_breaker_threshold failures on one host, remaining URLs are skipped."""
+    scanner = AccessibilityScanner(timeout_seconds=10)
+    # Five URLs from the same host; after 3 failures the circuit breaker trips.
+    urls = [
+        "https://slow.gov/",
+        "https://slow.gov/page1",
+        "https://slow.gov/page2",
+        "https://slow.gov/page3",   # circuit-broken
+        "https://slow.gov/page4",   # circuit-broken
+    ]
+
+    with patch("httpx.AsyncClient") as mock_client:
+        mock_client.return_value.__aenter__.return_value.get = AsyncMock(
+            side_effect=httpx.TimeoutException("timed out")
+        )
+        results = await scanner.scan_urls_batch(
+            urls,
+            rate_limit_per_second=0,
+            circuit_breaker_threshold=3,
+        )
+
+    assert len(results) == 5
+    cb_results = [
+        r for r in results.values()
+        if r.error_message and "Circuit breaker" in r.error_message
+    ]
+    assert len(cb_results) == 2
+
+
+@pytest.mark.asyncio
+async def test_circuit_breaker_resets_on_success():
+    """A successful scan resets the failure streak so the circuit never trips."""
+    scanner = AccessibilityScanner(timeout_seconds=10)
+    urls = [
+        "https://flaky.gov/",
+        "https://flaky.gov/ok",  # succeeds → resets streak
+        "https://flaky.gov/ok2",
+        "https://flaky.gov/ok3",
+    ]
+
+    async def mock_get(url, **kwargs):
+        if url == "https://flaky.gov/":
+            raise httpx.TimeoutException("timed out")
+        r = Mock()
+        r.status_code = 200
+        r.url = url
+        r.text = "<html><body></body></html>"
+        return r
+
+    with patch("httpx.AsyncClient") as mock_client:
+        mock_client.return_value.__aenter__.return_value.get = AsyncMock(
+            side_effect=mock_get
+        )
+        results = await scanner.scan_urls_batch(
+            urls,
+            rate_limit_per_second=0,
+            circuit_breaker_threshold=3,
+        )
+
+    # All 4 URLs should appear in results (no CB trip because streak was reset)
+    assert len(results) == 4
+    cb_results = [
+        r for r in results.values()
+        if r.error_message and "Circuit breaker" in r.error_message
+    ]
+    assert len(cb_results) == 0
+
+
+@pytest.mark.asyncio
+async def test_circuit_breaker_disabled_at_zero():
+    """Setting circuit_breaker_threshold=0 should disable the circuit breaker."""
+    scanner = AccessibilityScanner(timeout_seconds=10)
+    urls = [f"https://broken.gov/page{i}" for i in range(6)]
+
+    with patch("httpx.AsyncClient") as mock_client:
+        mock_client.return_value.__aenter__.return_value.get = AsyncMock(
+            side_effect=httpx.TimeoutException("timed out")
+        )
+        results = await scanner.scan_urls_batch(
+            urls,
+            rate_limit_per_second=0,
+            circuit_breaker_threshold=0,
+        )
+
+    # All 6 URLs should be attempted; none circuit-broken
+    assert len(results) == 6
+    cb_results = [
+        r for r in results.values()
+        if r.error_message and "Circuit breaker" in r.error_message
+    ]
+    assert len(cb_results) == 0
+
+
+# ---------------------------------------------------------------------------
+# AccessibilityScanner — max_urls limit
+# ---------------------------------------------------------------------------
+
+
+@pytest.mark.asyncio
+async def test_scan_urls_batch_max_urls_stops_early():
+    """When max_urls is set, scanning stops after the target is reached."""
+    scanner = AccessibilityScanner(timeout_seconds=10)
+    urls = [f"https://gov{i}.example/" for i in range(5)]
+
+    async def mock_get(url, **kwargs):
+        r = Mock()
+        r.status_code = 200
+        r.url = url
+        r.text = "<html><body></body></html>"
+        return r
+
+    with patch("httpx.AsyncClient") as mock_client:
+        mock_client.return_value.__aenter__.return_value.get = AsyncMock(
+            side_effect=mock_get
+        )
+        results = await scanner.scan_urls_batch(
+            urls,
+            rate_limit_per_second=0,
+            max_urls=3,
+        )
+
+    assert len(results) == 3
+
+
+@pytest.mark.asyncio
+async def test_scan_urls_batch_max_urls_none_scans_all():
+    """When max_urls is None all URLs are scanned."""
+    scanner = AccessibilityScanner(timeout_seconds=10)
+    urls = [f"https://gov{i}.example/" for i in range(4)]
+
+    async def mock_get(url, **kwargs):
+        r = Mock()
+        r.status_code = 200
+        r.url = url
+        r.text = "<html><body></body></html>"
+        return r
+
+    with patch("httpx.AsyncClient") as mock_client:
+        mock_client.return_value.__aenter__.return_value.get = AsyncMock(
+            side_effect=mock_get
+        )
+        results = await scanner.scan_urls_batch(
+            urls,
+            rate_limit_per_second=0,
+            max_urls=None,
+        )
+
+    assert len(results) == 4
