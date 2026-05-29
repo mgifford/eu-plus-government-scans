@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-05-29 00:35 UTC_
+_Generated: 2026-05-29 01:20 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -14,10 +14,10 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
 | **Combined Reachability** | **66,058 confirmed reachable** | 82,714 | **<span role="img" aria-label="79.9% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:96px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">79.9%</span></span>** | — |
-| Social Media | 71,988 scanned (66,058 reachable) | 82,714 | <span role="img" aria-label="87.0% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:104px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">87.0%</span></span> | 2.5 days |
+| Social Media | 71,988 scanned (66,058 reachable) | 82,714 | <span role="img" aria-label="87.0% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:104px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">87.0%</span></span> | 2.6 days |
 | Technology | 18,407 scanned | 82,714 | <span role="img" aria-label="22.3% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:27px;height:100%;background:#b91c1c;"></span></span><span style="font-size:0.85em;color:#374151;">22.3%</span></span> | 2.9 days |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) | — |
-| Accessibility Statements | 62,508 scanned | 82,714 | <span role="img" aria-label="75.6% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:91px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">75.6%</span></span> | 3.0 days |
+| Accessibility Statements | 62,508 scanned | 82,714 | <span role="img" aria-label="75.6% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:91px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">75.6%</span></span> | 3.1 days |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by any scan type. **Avg Age** shows the mean number of days (or hours) since each URL in that scan type was last scanned — lower is fresher.
 
