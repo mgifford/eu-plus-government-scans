@@ -5,7 +5,102 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_No scan data yet — stats update automatically after every scan run._
+_Stats as of 2026-05-30 20:11 UTC — last scan: 2026-05-30_
+
+**36** scan batches run
+
+**36,141** of **82,714** available pages scanned (**43.7%** coverage)
+**33,231** pages with technology detections (**91.9%** of scanned)
+**376** unique technologies identified
+
+---
+
+## Technology Scan by Country
+
+| Country | URLs Scanned | Pages with Detections | Available | Last Scan |
+|---------|-------------|----------------------|-----------|----------|
+| Austria | 821 | 772 | 821 | 2026-05-24 |
+| Belgium | 1,309 | 1,218 | 1,309 | 2026-05-24 |
+| Bulgaria | 291 | 264 | 291 | 2026-05-24 |
+| Croatia | 233 | 229 | 233 | 2026-05-24 |
+| Czechia | 843 | 799 | 843 | 2026-05-30 |
+| Denmark | 1,521 | 1,495 | 1,521 | 2026-05-25 |
+| Estonia | 396 | 380 | 396 | 2026-05-25 |
+| Finland | 180 | 170 | 180 | 2026-05-25 |
+| France | 3,323 | 3,058 | 10,007 | 2026-05-30 |
+| Germany | 6,555 | 6,447 | 6,555 | 2026-05-30 |
+| Greece | 1,748 | 1,616 | 1,748 | 2026-05-25 |
+| Hungary | 390 | 281 | 390 | 2026-05-25 |
+| Iceland | 139 | 135 | 139 | 2026-05-25 |
+| Ireland | 522 | 485 | 522 | 2026-05-30 |
+| Italy | 3,059 | 2,732 | 5,338 | 2026-05-30 |
+| Latvia | 802 | 752 | 802 | 2026-05-28 |
+| Lithuania | 120 | 110 | 120 | 2026-05-28 |
+| Luxembourg | 571 | 406 | 571 | 2026-05-28 |
+| Malta | 608 | 590 | 608 | 2026-05-28 |
+| Netherlands | 937 | 906 | 937 | 2026-05-28 |
+| Norway | 233 | 227 | 239 | 2026-05-28 |
+| Poland | 2,178 | 1,997 | 14,938 | 2026-05-29 |
+| Portugal | 2,816 | 2,281 | 3,503 | 2026-05-29 |
+| Cyprus | 24 | 24 | 24 | 2026-05-29 |
+| Romania | 523 | 221 | 799 | 2026-05-29 |
+| Slovakia | 434 | 410 | 434 | 2026-05-30 |
+| Slovenia | 200 | 193 | 200 | 2026-05-30 |
+| Spain | 1,464 | 1,279 | 6,069 | 2026-05-30 |
+| Sweden | 1,558 | 1,474 | 1,558 | 2026-05-30 |
+| Switzerland | 2,117 | 2,068 | 2,117 | 2026-05-30 |
+| United Kingdom | 226 | 212 | 19,502 | 2026-05-30 |
+
+> Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and metric from [Download machine-readable technology data (JSON)](technology-data.json).
+
+---
+
+### Top Technologies
+
+| # | Technology | Pages | Categories |
+|--:|-----------|------:|-----------|
+| 1 | jQuery | **17,959** | JavaScript libraries |
+| 2 | PHP | **10,667** | Programming languages |
+| 3 | Apache | **10,500** | Web servers |
+| 4 | Bootstrap | **8,376** | UI frameworks |
+| 5 | Font Awesome | **7,220** | Font scripts |
+| 6 | Nginx | **5,968** | Reverse proxies, Web servers |
+| 7 | Google Font API | **5,888** | Font scripts |
+| 8 | MySQL | **5,293** | Databases |
+| 9 | WordPress | **5,254** | Blogs, CMS |
+| 10 | jQuery Migrate | **4,498** | JavaScript libraries |
+| 11 | Windows Server | **3,295** | Operating systems |
+| 12 | IIS | **3,252** | Web servers |
+| 13 | jQuery UI | **3,210** | JavaScript libraries |
+| 14 | Microsoft ASP.NET | **2,812** | Web frameworks |
+| 15 | Drupal | **2,606** | CMS |
+| 16 | jsDelivr | **2,554** | CDN |
+| 17 | Cloudflare | **2,151** | CDN |
+| 18 | Google Tag Manager | **1,974** | Tag managers |
+| 19 | Slick | **1,895** | JavaScript libraries |
+| 20 | reCAPTCHA | **1,820** | Security |
+
+### Top Technology Categories
+
+| # | Category | Pages |
+|--:|---------|------:|
+| 1 | JavaScript libraries | **35,996** |
+| 2 | Web servers | **21,303** |
+| 3 | Programming languages | **14,536** |
+| 4 | Font scripts | **13,400** |
+| 5 | CMS | **11,862** |
+| 6 | UI frameworks | **10,350** |
+| 7 | Reverse proxies | **6,227** |
+| 8 | Databases | **5,581** |
+| 9 | Operating systems | **5,580** |
+| 10 | CDN | **5,468** |
+| 11 | Blogs | **5,278** |
+| 12 | Web frameworks | **4,325** |
+| 13 | JavaScript frameworks | **3,622** |
+| 14 | Caching | **2,202** |
+| 15 | Widgets | **2,079** |
+
+📥 Machine-readable results: [Download machine-readable technology data (JSON)](technology-data.json)
 
 <!-- TECH_STATS_END -->
 
