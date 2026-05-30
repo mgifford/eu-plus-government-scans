@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-05-30 20:36 UTC — last scan: 2026-05-30_
+_Stats as of 2026-05-30 22:01 UTC — last scan: 2026-05-30_
 
-**36** scan batches run
+**38** scan batches run
 
 **23,043** of **82,714** available pages scanned (**27.9%** coverage)
 **21,139** of **23,043** scanned pages were reachable (**91.7%**)
-**10,084** reachable pages loaded at least one third-party script (**47.7%** of reachable)
-**13,535** known third-party service loads identified
+**10,095** reachable pages loaded at least one third-party script (**47.8%** of reachable)
+**13,541** known third-party service loads identified
 **24** unique known services across **16** categories
 
 ---
@@ -26,8 +26,8 @@ _Stats as of 2026-05-30 20:36 UTC — last scan: 2026-05-30_
 | Bulgaria | 291 | 291 | 265 | 104 | 123 | 39.2 | 46.4 | 2026-05-29 |
 | Croatia | 233 | 233 | 230 | 120 | 166 | 52.2 | 72.2 | 2026-05-30 |
 | Czechia | 843 | 843 | 802 | 477 | 829 | 59.5 | 103.4 | 2026-05-30 |
-| Denmark | 1,521 | 1,521 | 1,496 | 805 | 2,108 | 53.8 | 140.9 | 2026-05-25 |
-| Estonia | 396 | 396 | 379 | 211 | 197 | 55.7 | 52.0 | 2026-05-24 |
+| Denmark | 1,521 | 1,521 | 1,496 | 816 | 2,114 | 54.5 | 141.3 | 2026-05-30 |
+| Estonia | 396 | 396 | 379 | 211 | 197 | 55.7 | 52.0 | 2026-05-30 |
 | Finland | 180 | 180 | 170 | 45 | 25 | 26.5 | 14.7 | 2026-05-25 |
 | France | 1,526 | 10,007 | 1,421 | 638 | 422 | 44.9 | 29.7 | 2026-05-23 |
 | Germany | 1,576 | 6,555 | 1,541 | 469 | 511 | 30.4 | 33.2 | 2026-05-24 |
@@ -70,7 +70,7 @@ _Stats as of 2026-05-30 20:36 UTC — last scan: 2026-05-30_
 | 7 | Google Tag Manager | **815** |
 | 8 | Google Hosted Libraries | **663** |
 | 9 | CookieInformation | **446** |
-| 10 | Cookiebot | **412** |
+| 10 | Cookiebot | **418** |
 | 11 | Font Awesome | **276** |
 | 12 | Bootstrap | **215** |
 | 13 | OneTrust | **120** |
@@ -95,7 +95,7 @@ _Stats as of 2026-05-30 20:36 UTC — last scan: 2026-05-30_
 | 7 | unpkg CDN | **629** | **133.8%** |
 | 8 | Google Hosted Libraries | **586** | **124.7%** |
 | 9 | CookieInformation | **446** | **94.9%** |
-| 10 | Cookiebot | **403** | **85.7%** |
+| 10 | Cookiebot | **409** | **87.0%** |
 | 11 | Font Awesome | **219** | **46.6%** |
 | 12 | Bootstrap | **214** | **45.5%** |
 | 13 | OneTrust | **103** | **21.9%** |
@@ -116,7 +116,7 @@ _Stats as of 2026-05-30 20:36 UTC — last scan: 2026-05-30_
 | 3 | JavaScript Library | **1,725** |
 | 4 | Security | **1,062** |
 | 5 | CAPTCHA | **1,024** |
-| 6 | Cookie Consent | **988** |
+| 6 | Cookie Consent | **994** |
 | 7 | Tag Manager | **847** |
 | 8 | Icon Library | **276** |
 | 9 | UI Framework | **215** |
@@ -145,7 +145,7 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 | 1 | Analytics | **2,110** |
 | 2 | Security | **1,062** |
 | 3 | CAPTCHA | **1,024** |
-| 4 | Cookie Consent | **988** |
+| 4 | Cookie Consent | **994** |
 | 5 | Tag Manager | **847** |
 | 6 | Advertising | **78** |
 | 7 | Error Tracking | **26** |
@@ -160,12 +160,12 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 | # | Host | Loads | Reachable Pages |
 |--:|------|------:|----------------:|
 | 1 | `cdn.ent.auvergnerhonealpes.fr` | **2,473** | **260** |
-| 2 | `ajax.aspnetcdn.com` | **637** | **326** |
+| 2 | `ajax.aspnetcdn.com` | **652** | **331** |
 | 3 | `cdn.ecollege.haute-garonne.fr` | **465** | **44** |
 | 4 | `static.addtoany.com` | **396** | **390** |
 | 5 | `translate.google.com` | **337** | **337** |
 | 6 | `assets.epexio.com` | **329** | **13** |
-| 7 | `customer.cludo.com` | **308** | **234** |
+| 7 | `customer.cludo.com` | **314** | **240** |
 | 8 | `maps.googleapis.com` | **301** | **299** |
 | 9 | `www.youtube.com` | **277** | **277** |
 | 10 | `cookie-notice.plzen.eu` | **276** | **146** |
