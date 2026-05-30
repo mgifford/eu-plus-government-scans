@@ -5,7 +5,99 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_No scan data yet — stats update automatically after every scan run._
+_Stats as of 2026-05-30 02:34 UTC — last scan: 2026-05-30_
+
+**28** scan batches run
+
+**26,046** of **82,714** available pages scanned (**31.5%** coverage)
+**23,576** pages with technology detections (**90.5%** of scanned)
+**354** unique technologies identified
+
+---
+
+## Technology Scan by Country
+
+| Country | URLs Scanned | Pages with Detections | Available | Last Scan |
+|---------|-------------|----------------------|-----------|----------|
+| Austria | 821 | 772 | 821 | 2026-05-24 |
+| Belgium | 1,309 | 1,218 | 1,309 | 2026-05-24 |
+| Bulgaria | 291 | 264 | 291 | 2026-05-24 |
+| Croatia | 233 | 229 | 233 | 2026-05-24 |
+| Czechia | 358 | 349 | 843 | 2026-05-24 |
+| Denmark | 1,521 | 1,495 | 1,521 | 2026-05-25 |
+| Estonia | 396 | 380 | 396 | 2026-05-25 |
+| Finland | 180 | 170 | 180 | 2026-05-25 |
+| France | 1,271 | 1,168 | 10,007 | 2026-05-25 |
+| Germany | 3,373 | 3,313 | 6,555 | 2026-05-25 |
+| Greece | 1,748 | 1,616 | 1,748 | 2026-05-25 |
+| Hungary | 390 | 281 | 390 | 2026-05-25 |
+| Iceland | 139 | 135 | 139 | 2026-05-25 |
+| Ireland | 405 | 373 | 522 | 2026-05-25 |
+| Italy | 2,701 | 2,417 | 5,338 | 2026-05-26 |
+| Latvia | 802 | 752 | 802 | 2026-05-28 |
+| Lithuania | 120 | 110 | 120 | 2026-05-28 |
+| Luxembourg | 571 | 406 | 571 | 2026-05-28 |
+| Malta | 608 | 590 | 608 | 2026-05-28 |
+| Netherlands | 937 | 906 | 937 | 2026-05-28 |
+| Norway | 233 | 227 | 239 | 2026-05-28 |
+| Poland | 2,178 | 1,997 | 14,938 | 2026-05-29 |
+| Portugal | 2,816 | 2,281 | 3,503 | 2026-05-29 |
+| Cyprus | 24 | 24 | 24 | 2026-05-29 |
+| Romania | 523 | 221 | 799 | 2026-05-29 |
+| Slovakia | 434 | 410 | 434 | 2026-05-30 |
+| Slovenia | 200 | 193 | 200 | 2026-05-30 |
+| Spain | 1,464 | 1,279 | 6,069 | 2026-05-30 |
+
+> Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and metric from [Download machine-readable technology data (JSON)](technology-data.json).
+
+---
+
+### Top Technologies
+
+| # | Technology | Pages | Categories |
+|--:|-----------|------:|-----------|
+| 1 | jQuery | **13,386** | JavaScript libraries |
+| 2 | PHP | **8,846** | Programming languages |
+| 3 | Bootstrap | **6,934** | UI frameworks |
+| 4 | Apache | **6,808** | Web servers |
+| 5 | Font Awesome | **6,094** | Font scripts |
+| 6 | Google Font API | **5,029** | Font scripts |
+| 7 | Nginx | **4,894** | Reverse proxies, Web servers |
+| 8 | MySQL | **4,580** | Databases |
+| 9 | WordPress | **4,552** | Blogs, CMS |
+| 10 | jQuery Migrate | **3,820** | JavaScript libraries |
+| 11 | jQuery UI | **2,547** | JavaScript libraries |
+| 12 | Windows Server | **2,524** | Operating systems |
+| 13 | IIS | **2,494** | Web servers |
+| 14 | jsDelivr | **2,222** | CDN |
+| 15 | Drupal | **2,201** | CMS |
+| 16 | Microsoft ASP.NET | **2,142** | Web frameworks |
+| 17 | Cloudflare | **1,853** | CDN |
+| 18 | Lightbox | **1,630** | JavaScript libraries |
+| 19 | reCAPTCHA | **1,620** | Security |
+| 20 | Yoast SEO | **1,500** | SEO |
+
+### Top Technology Categories
+
+| # | Category | Pages |
+|--:|---------|------:|
+| 1 | JavaScript libraries | **27,795** |
+| 2 | Web servers | **15,421** |
+| 3 | Font scripts | **11,364** |
+| 4 | Programming languages | **10,788** |
+| 5 | CMS | **8,902** |
+| 6 | UI frameworks | **8,534** |
+| 7 | Reverse proxies | **5,089** |
+| 8 | Databases | **4,801** |
+| 9 | CDN | **4,666** |
+| 10 | Blogs | **4,560** |
+| 11 | Operating systems | **4,514** |
+| 12 | Web frameworks | **3,278** |
+| 13 | JavaScript frameworks | **2,445** |
+| 14 | Widgets | **1,906** |
+| 15 | Caching | **1,856** |
+
+📥 Machine-readable results: [Download machine-readable technology data (JSON)](technology-data.json)
 
 <!-- TECH_STATS_END -->
 
