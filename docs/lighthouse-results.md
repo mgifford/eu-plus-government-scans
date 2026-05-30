@@ -5,12 +5,12 @@ layout: page
 
 <!-- LIGHTHOUSE_STATS_START -->
 
-_Stats as of 2026-05-30 12:43 UTC — last scan: 2026-05-30_
+_Stats as of 2026-05-30 13:33 UTC — last scan: 2026-05-30_
 
-**72** scan batches run
+**75** scan batches run
 
-**20,435** of **82,714** available pages audited (**24.7%** coverage)
-**18,695** successful audits (**91.5%** of audited)
+**20,549** of **82,714** available pages audited (**24.8%** coverage)
+**18,818** successful audits (**91.6%** of audited)
 
 **Overall average Lighthouse scores** (0–100 scale):
 
@@ -36,13 +36,13 @@ _Stats as of 2026-05-30 12:43 UTC — last scan: 2026-05-30_
 | Germany | 1,895 | 6,555 | 91 | 91 | 96 | 88 | 2026-05-21 |
 | Greece | 1,241 | 1,748 | 88 | 85 | 91 | 88 | 2026-05-21 |
 | Hungary | 390 | 390 | 85 | 76 | 82 | 87 | 2026-05-30 |
-| Iceland | 139 | 139 | 89 | 91 | 91 | 91 | 2026-05-22 |
+| Iceland | 139 | 139 | 89 | 91 | 91 | 91 | 2026-05-30 |
 | Ireland | 522 | 522 | 89 | 91 | 89 | 88 | 2026-05-29 |
 | Italy | 1,019 | 5,338 | 85 | 88 | 93 | 88 | 2026-05-22 |
 | Latvia | 802 | 802 | 80 | 89 | 88 | 89 | 2026-05-30 |
 | Lithuania | 120 | 120 | 87 | 80 | 87 | 85 | 2026-05-22 |
 | Luxembourg | 571 | 571 | 90 | 93 | 93 | 91 | 2026-05-30 |
-| Malta | 608 | 608 | 88 | 85 | 79 | 82 | 2026-05-22 |
+| Malta | 608 | 608 | 88 | 85 | 79 | 81 | 2026-05-30 |
 | Netherlands | 937 | 937 | 93 | 94 | 93 | 88 | 2026-05-22 |
 | Norway | 239 | 239 | 91 | 93 | 92 | 90 | 2026-05-22 |
 | Poland | 1,607 | 14,938 | 88 | 87 | 89 | 90 | 2026-05-22 |
@@ -53,7 +53,7 @@ _Stats as of 2026-05-30 12:43 UTC — last scan: 2026-05-30_
 | Slovenia | 200 | 200 | 88 | 79 | 89 | 85 | 2026-05-29 |
 | Spain | 396 | 6,069 | 86 | 87 | 88 | 87 | 2026-05-30 |
 | Sweden | 804 | 1,558 | 89 | 92 | 93 | 85 | 2026-05-30 |
-| Switzerland | 535 | 2,117 | 86 | 89 | 96 | 88 | 2026-05-20 |
+| Switzerland | 649 | 2,117 | 86 | 90 | 96 | 88 | 2026-05-30 |
 | United Kingdom | 399 | 19,502 | 92 | 93 | 91 | 86 | 2026-05-21 |
 
 > Scores are averages across all successfully audited URLs, displayed as 0–100 (Lighthouse stores scores as 0.0–1.0 internally).
