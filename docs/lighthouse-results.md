@@ -5,9 +5,9 @@ layout: page
 
 <!-- LIGHTHOUSE_STATS_START -->
 
-_Stats as of 2026-05-31 02:03 UTC — last scan: 2026-05-30_
+_Stats as of 2026-05-31 02:19 UTC — last scan: 2026-05-31_
 
-**78** scan batches run
+**79** scan batches run
 
 **20,662** of **82,714** available pages audited (**25.0%** coverage)
 **18,937** successful audits (**91.7%** of audited)
@@ -48,7 +48,7 @@ _Stats as of 2026-05-31 02:03 UTC — last scan: 2026-05-30_
 | Poland | 1,607 | 14,938 | 88 | 87 | 89 | 90 | 2026-05-22 |
 | Portugal | 1,241 | 3,503 | 83 | 83 | 86 | 89 | 2026-05-22 |
 | Cyprus | 24 | 24 | 80 | 86 | 84 | 87 | 2026-05-28 |
-| Romania | 216 | 799 | 87 | 75 | 89 | 81 | 2026-05-28 |
+| Romania | 216 | 799 | 87 | 75 | 89 | 81 | 2026-05-31 |
 | Slovakia | 434 | 434 | 86 | 87 | 89 | 88 | 2026-05-28 |
 | Slovenia | 200 | 200 | 88 | 79 | 89 | 85 | 2026-05-29 |
 | Spain | 396 | 6,069 | 86 | 87 | 88 | 87 | 2026-05-30 |
