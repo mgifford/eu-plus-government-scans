@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-05-31 22:36 UTC_
+_Generated: 2026-05-31 23:08 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -124,7 +124,7 @@ Checks whether each government page links to an accessibility statement as requi
 | Italy | 5,338 | 4,816 | 2,645 | 2,573 | 55% | May 2026 |
 | Latvia | 802 | 757 | 486 | 446 | 64% | May 2026 |
 | Lithuania | 120 | 110 | 0 | 0 | 0% | May 2026 |
-| Luxembourg | 571 | 392 | 228 | 217 | 58% | May 2026 |
+| Luxembourg | 571 | 406 | 241 | 230 | 59% | May 2026 |
 | Malta | 608 | 590 | 384 | 377 | 65% | May 2026 |
 | Netherlands | 937 | 906 | 440 | 430 | 49% | May 2026 |
 | Norway | 239 | 233 | 107 | 101 | 46% | May 2026 |
