@@ -5,9 +5,9 @@ layout: page
 
 <!-- LIGHTHOUSE_STATS_START -->
 
-_Stats as of 2026-05-31 08:14 UTC — last scan: 2026-05-31_
+_Stats as of 2026-05-31 08:30 UTC — last scan: 2026-05-31_
 
-**79** scan batches run
+**81** scan batches run
 
 **20,662** of **82,714** available pages audited (**25.0%** coverage)
 **18,937** successful audits (**91.7%** of audited)
@@ -24,7 +24,7 @@ _Stats as of 2026-05-31 08:14 UTC — last scan: 2026-05-31_
 
 | Country | Audited | Available | Perf | A11y | Best Practices | SEO | Last Scan |
 |---------|--------:|----------:|:----:|:----:|:--------------:|:---:|-----------|
-| Austria | 821 | 821 | 88 | 90 | 91 | 89 | 2026-05-28 |
+| Austria | 821 | 821 | 88 | 90 | 91 | 89 | 2026-05-31 |
 | Belgium | 1,309 | 1,309 | 89 | 91 | 91 | 90 | 2026-05-29 |
 | Bulgaria | 291 | 291 | 84 | 80 | 87 | 89 | 2026-05-29 |
 | Croatia | 233 | 233 | 90 | 72 | 91 | 90 | 2026-05-29 |
@@ -32,7 +32,7 @@ _Stats as of 2026-05-31 08:14 UTC — last scan: 2026-05-31_
 | Denmark | 1,521 | 1,521 | 90 | 94 | 96 | 89 | 2026-05-29 |
 | Estonia | 396 | 396 | 92 | 87 | 85 | 89 | 2026-05-29 |
 | Finland | 180 | 180 | 89 | 94 | 95 | 87 | 2026-05-30 |
-| France | 502 | 10,007 | 91 | 91 | 92 | 92 | 2026-05-21 |
+| France | 502 | 10,007 | 91 | 91 | 92 | 92 | 2026-05-31 |
 | Germany | 1,895 | 6,555 | 91 | 91 | 96 | 88 | 2026-05-21 |
 | Greece | 1,241 | 1,748 | 88 | 85 | 91 | 88 | 2026-05-21 |
 | Hungary | 390 | 390 | 85 | 76 | 82 | 87 | 2026-05-30 |
