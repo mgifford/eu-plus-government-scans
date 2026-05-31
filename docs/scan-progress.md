@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-05-31 16:40 UTC_
+_Generated: 2026-05-31 17:09 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -13,8 +13,8 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
-| **Combined Reachability** | **76,213 confirmed reachable** | 82,714 | **<span role="img" aria-label="92.1% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:111px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">92.1%</span></span>** | — |
-| Social Media | 82,714 scanned (76,213 reachable) | 82,714 | <span role="img" aria-label="100.0% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:120px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">100.0%</span></span> | 4.3 days |
+| **Combined Reachability** | **76,214 confirmed reachable** | 82,714 | **<span role="img" aria-label="92.1% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:111px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">92.1%</span></span>** | — |
+| Social Media | 82,714 scanned (76,214 reachable) | 82,714 | <span role="img" aria-label="100.0% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:120px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">100.0%</span></span> | 4.2 days |
 | Technology | 38,645 scanned | 82,714 | <span role="img" aria-label="46.7% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:56px;height:100%;background:#b45309;"></span></span><span style="font-size:0.85em;color:#374151;">46.7%</span></span> | 3.2 days |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) | — |
 | Accessibility Statements | 69,809 scanned | 82,714 | <span role="img" aria-label="84.4% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:101px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">84.4%</span></span> | 5.0 days |
@@ -39,7 +39,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Hungary | 390 | 390 | 281 | 113 | 1 | 22 | 145 | 26 | 0 | 0 | 23 | May 2026 |
 | Iceland | 139 | 139 | 135 | 27 | 0 | 12 | 96 | 8 | 5 | 0 | 12 | May 2026 |
 | Ireland | 522 | 522 | 487 | 198 | 0 | 54 | 244 | 162 | 37 | 18 | 42 | May 2026 |
-| Italy | 5,338 | 5,338 | 4,780 | 2,276 | 14 | 302 | 2,188 | 1,975 | 118 | 0 | 316 | May 2026 |
+| Italy | 5,338 | 5,338 | 4,781 | 2,279 | 14 | 302 | 2,190 | 1,977 | 118 | 0 | 316 | May 2026 |
 | Latvia | 802 | 802 | 757 | 376 | 0 | 85 | 296 | 276 | 47 | 0 | 85 | May 2026 |
 | Lithuania | 120 | 120 | 110 | 22 | 0 | 4 | 84 | 5 | 0 | 0 | 4 | May 2026 |
 | Luxembourg | 571 | 571 | 392 | 66 | 0 | 172 | 154 | 174 | 6 | 143 | 37 | May 2026 |
