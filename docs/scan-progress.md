@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-06-01 15:53 UTC_
+_Generated: 2026-06-01 16:48 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -131,7 +131,7 @@ Checks whether each government page links to an accessibility statement as requi
 | Poland | 8,741 | 7,922 | 3,256 | 2,132 | 41% | May 2026 |
 | Portugal | 3,503 | 2,857 | 865 | 702 | 30% | May 2026 – Jun 2026 |
 | Cyprus | 24 | 24 | 0 | 0 | 0% | May 2026 – Jun 2026 |
-| Romania | 799 | 338 | 27 | 9 | 8% | May 2026 |
+| Romania | 799 | 338 | 27 | 9 | 8% | May 2026 – Jun 2026 |
 | Slovakia | 434 | 414 | 187 | 172 | 45% | May 2026 – Jun 2026 |
 | Slovenia | 200 | 193 | 103 | 77 | 53% | May 2026 – Jun 2026 |
 | Spain | 6,069 | 5,238 | 2,339 | 2,053 | 45% | May 2026 |
