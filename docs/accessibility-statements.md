@@ -5,7 +5,7 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-06-01 10:07 UTC — last scan: 2026-06-01_
+_Stats as of 2026-06-01 11:43 UTC — last scan: 2026-06-01_
 
 **85** scan batches run
 
