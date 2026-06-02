@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-06-01 23:24 UTC_
+_Generated: 2026-06-02 01:13 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -13,9 +13,9 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
-| **Combined Reachability** | **76,320 confirmed reachable** | 82,714 | **<span role="img" aria-label="92.3% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:111px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">92.3%</span></span>** | — |
-| Social Media | 82,714 scanned (76,320 reachable) | 82,714 | <span role="img" aria-label="100.0% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:120px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">100.0%</span></span> | 5.0 days |
-| Technology | 43,422 scanned | 82,714 | <span role="img" aria-label="52.5% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:63px;height:100%;background:#b45309;"></span></span><span style="font-size:0.85em;color:#374151;">52.5%</span></span> | 3.6 days |
+| **Combined Reachability** | **76,327 confirmed reachable** | 82,714 | **<span role="img" aria-label="92.3% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:111px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">92.3%</span></span>** | — |
+| Social Media | 82,714 scanned (76,327 reachable) | 82,714 | <span role="img" aria-label="100.0% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:120px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">100.0%</span></span> | 4.9 days |
+| Technology | 43,422 scanned | 82,714 | <span role="img" aria-label="52.5% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:63px;height:100%;background:#b45309;"></span></span><span style="font-size:0.85em;color:#374151;">52.5%</span></span> | 3.7 days |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) | — |
 | Accessibility Statements | 69,809 scanned | 82,714 | <span role="img" aria-label="84.4% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:101px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">84.4%</span></span> | 5.8 days |
 
@@ -53,9 +53,9 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Slovakia | 434 | 434 | 414 | 136 | 0 | 19 | 259 | 17 | 9 | 0 | 19 | May 2026 – Jun 2026 |
 | Slovenia | 200 | 200 | 190 | 52 | 0 | 9 | 129 | 21 | 6 | 1 | 9 | May 2026 – Jun 2026 |
 | Spain | 6,069 | 6,069 | 5,291 | 1,945 | 11 | 331 | 3,020 | 1,698 | 408 | 61 | 303 | May 2026 – Jun 2026 |
-| Sweden | 1,558 | 1,558 | 1,473 | 474 | 3 | 33 | 963 | 80 | 18 | 11 | 25 | May 2026 |
-| Switzerland | 2,117 | 2,117 | 2,066 | 544 | 30 | 124 | 1,368 | 218 | 213 | 54 | 114 | May 2026 |
-| United Kingdom | 19,502 | 19,502 | 18,601 | 6,518 | 37 | 712 | 11,334 | 4,021 | 1,003 | 114 | 684 | May 2026 |
+| Sweden | 1,558 | 1,558 | 1,477 | 477 | 3 | 33 | 967 | 80 | 18 | 11 | 25 | May 2026 – Jun 2026 |
+| Switzerland | 2,117 | 2,117 | 2,066 | 545 | 30 | 124 | 1,371 | 218 | 213 | 54 | 114 | May 2026 – Jun 2026 |
+| United Kingdom | 19,502 | 19,502 | 18,604 | 6,518 | 37 | 712 | 11,340 | 4,021 | 1,003 | 114 | 684 | May 2026 – Jun 2026 |
 
 > **Tier columns** (Twitter-only / Modern / Mixed / No Social) classify each page by its overall social media presence. **Platform columns** (Twitter / X / Bluesky / Mastodon) count pages with at least one link to that platform — a page may appear in more than one platform column.
 
