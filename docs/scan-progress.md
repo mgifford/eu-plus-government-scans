@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-06-02 05:53 UTC_
+_Generated: 2026-06-02 07:30 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -14,8 +14,8 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
 | **Combined Reachability** | **76,353 confirmed reachable** | 82,714 | **<span role="img" aria-label="92.3% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:111px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">92.3%</span></span>** | — |
-| Social Media | 82,714 scanned (76,353 reachable) | 82,714 | <span role="img" aria-label="100.0% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:120px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">100.0%</span></span> | 5.0 days |
-| Technology | 45,160 scanned | 82,714 | <span role="img" aria-label="54.6% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:66px;height:100%;background:#b45309;"></span></span><span style="font-size:0.85em;color:#374151;">54.6%</span></span> | 3.7 days |
+| Social Media | 82,714 scanned (76,353 reachable) | 82,714 | <span role="img" aria-label="100.0% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:120px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">100.0%</span></span> | 5.1 days |
+| Technology | 46,974 scanned | 82,714 | <span role="img" aria-label="56.8% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:68px;height:100%;background:#b45309;"></span></span><span style="font-size:0.85em;color:#374151;">56.8%</span></span> | 3.7 days |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) | — |
 | Accessibility Statements | 69,809 scanned | 82,714 | <span role="img" aria-label="84.4% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:101px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">84.4%</span></span> | 6.0 days |
 
@@ -86,7 +86,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Malta | 608 | 2026-05-28 |
 | Netherlands | 937 | 2026-05-28 |
 | Norway | 239 | 2026-05-31 |
-| Poland | 4,676 | 2026-05-31 |
+| Poland | 6,490 | 2026-06-02 |
 | Portugal | 3,503 | 2026-05-31 |
 | Cyprus | 24 | 2026-05-29 |
 | Romania | 799 | 2026-05-31 |
