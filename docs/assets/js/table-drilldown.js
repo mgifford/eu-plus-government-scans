@@ -495,13 +495,14 @@
     enhanceScrollableTables();
     window.addEventListener("resize", enhanceScrollableTables);
 
+    // Make all tables sortable
+    document.querySelectorAll("table").forEach(function (table) {
+      makeSortable(table);
+    });
+
     if (!tableEntries.length) {
       return;
     }
-
-    tableEntries.forEach(function (entry) {
-      makeSortable(entry.table);
-    });
 
     TABLE_CONFIGS.forEach(function (config) {
       var matchingEntries = tableEntries.filter(function (entry) {
