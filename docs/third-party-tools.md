@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-07-03 20:39 UTC — last scan: 2026-07-03_
+_Stats as of 2026-07-03 22:05 UTC — last scan: 2026-07-03_
 
-**63** scan batches run
+**65** scan batches run
 
 **23,406** of **82,714** available pages scanned (**28.3%** coverage)
-**21,555** of **23,406** scanned pages were reachable (**92.1%**)
-**10,394** reachable pages loaded at least one third-party script (**48.2%** of reachable)
-**13,760** known third-party service loads identified
+**21,556** of **23,406** scanned pages were reachable (**92.1%**)
+**10,415** reachable pages loaded at least one third-party script (**48.3%** of reachable)
+**13,774** known third-party service loads identified
 **24** unique known services across **16** categories
 
 ---
@@ -24,9 +24,9 @@ _Stats as of 2026-07-03 20:39 UTC — last scan: 2026-07-03_
 | Austria | 821 | 821 | 787 | 275 | 52 | 34.9 | 6.6 | 2026-07-02 |
 | Belgium | 1,309 | 1,309 | 1,220 | 636 | 725 | 52.1 | 59.4 | 2026-07-03 |
 | Bulgaria | 291 | 291 | 265 | 104 | 126 | 39.2 | 47.5 | 2026-07-03 |
-| Croatia | 233 | 233 | 230 | 120 | 166 | 52.2 | 72.2 | 2026-05-30 |
+| Croatia | 233 | 233 | 231 | 120 | 171 | 51.9 | 74.0 | 2026-07-03 |
 | Czechia | 843 | 843 | 806 | 489 | 820 | 60.7 | 101.7 | 2026-07-03 |
-| Denmark | 1,521 | 1,521 | 1,496 | 816 | 2,114 | 54.5 | 141.3 | 2026-05-30 |
+| Denmark | 1,521 | 1,521 | 1,496 | 837 | 2,123 | 55.9 | 141.9 | 2026-07-03 |
 | Estonia | 396 | 396 | 379 | 211 | 197 | 55.7 | 52.0 | 2026-05-30 |
 | Finland | 180 | 180 | 170 | 45 | 25 | 26.5 | 14.7 | 2026-05-31 |
 | France | 1,526 | 10,007 | 1,421 | 638 | 422 | 44.9 | 29.7 | 2026-05-31 |
@@ -62,15 +62,15 @@ _Stats as of 2026-07-03 20:39 UTC — last scan: 2026-07-03_
 | # | Service | Loads |
 |--:|---------|------:|
 | 1 | jsDelivr CDN | **2,948** |
-| 2 | cdnjs (Cloudflare CDN) | **2,603** |
-| 3 | Google Analytics (GA4) | **1,980** |
+| 2 | cdnjs (Cloudflare CDN) | **2,610** |
+| 3 | Google Analytics (GA4) | **1,985** |
 | 4 | jQuery | **1,067** |
-| 5 | Google reCAPTCHA | **1,044** |
+| 5 | Google reCAPTCHA | **1,045** |
 | 6 | unpkg CDN | **876** |
 | 7 | Google Tag Manager | **831** |
 | 8 | Google Hosted Libraries | **676** |
-| 9 | CookieInformation | **446** |
-| 10 | Cookiebot | **434** |
+| 9 | CookieInformation | **444** |
+| 10 | Cookiebot | **437** |
 | 11 | Font Awesome | **292** |
 | 12 | Bootstrap | **215** |
 | 13 | OneTrust | **96** |
@@ -86,16 +86,16 @@ _Stats as of 2026-07-03 20:39 UTC — last scan: 2026-07-03_
 
 | # | Service | Reachable Pages | Prevalence of Reachable Pages |
 |--:|---------|----------------:|------------------------------:|
-| 1 | Google Analytics (GA4) | **1,941** | **413.0%** |
+| 1 | Google Analytics (GA4) | **1,946** | **414.0%** |
 | 2 | jsDelivr CDN | **1,744** | **371.1%** |
-| 3 | cdnjs (Cloudflare CDN) | **1,162** | **247.2%** |
-| 4 | Google reCAPTCHA | **1,018** | **216.6%** |
+| 3 | cdnjs (Cloudflare CDN) | **1,161** | **247.0%** |
+| 4 | Google reCAPTCHA | **1,019** | **216.8%** |
 | 5 | Google Tag Manager | **801** | **170.4%** |
 | 6 | jQuery | **762** | **162.1%** |
 | 7 | unpkg CDN | **636** | **135.3%** |
 | 8 | Google Hosted Libraries | **597** | **127.0%** |
-| 9 | CookieInformation | **446** | **94.9%** |
-| 10 | Cookiebot | **425** | **90.4%** |
+| 9 | CookieInformation | **444** | **94.5%** |
+| 10 | Cookiebot | **428** | **91.1%** |
 | 11 | Font Awesome | **235** | **50.0%** |
 | 12 | Bootstrap | **214** | **45.5%** |
 | 13 | OneTrust | **91** | **19.4%** |
@@ -111,12 +111,12 @@ _Stats as of 2026-07-03 20:39 UTC — last scan: 2026-07-03_
 
 | # | Category | Loads |
 |--:|----------|------:|
-| 1 | CDN | **7,103** |
-| 2 | Analytics | **2,132** |
+| 1 | CDN | **7,110** |
+| 2 | Analytics | **2,137** |
 | 3 | JavaScript Library | **1,743** |
-| 4 | Security | **1,082** |
-| 5 | CAPTCHA | **1,044** |
-| 6 | Cookie Consent | **986** |
+| 4 | Security | **1,083** |
+| 5 | CAPTCHA | **1,045** |
+| 6 | Cookie Consent | **987** |
 | 7 | Tag Manager | **862** |
 | 8 | Icon Library | **292** |
 | 9 | UI Framework | **215** |
@@ -133,7 +133,7 @@ Infrastructure-heavy categories (CDNs, core libraries, and UI assets):
 
 | # | Infrastructure Category | Loads |
 |--:|--------------------------|------:|
-| 1 | CDN | **7,103** |
+| 1 | CDN | **7,110** |
 | 2 | JavaScript Library | **1,743** |
 | 3 | Icon Library | **292** |
 | 4 | UI Framework | **215** |
@@ -142,10 +142,10 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 
 | # | Policy-Relevant Category | Loads |
 |--:|--------------------------|------:|
-| 1 | Analytics | **2,132** |
-| 2 | Security | **1,082** |
-| 3 | CAPTCHA | **1,044** |
-| 4 | Cookie Consent | **986** |
+| 1 | Analytics | **2,137** |
+| 2 | Security | **1,083** |
+| 3 | CAPTCHA | **1,045** |
+| 4 | Cookie Consent | **987** |
 | 5 | Tag Manager | **862** |
 | 6 | Advertising | **78** |
 | 7 | Error Tracking | **29** |
@@ -160,20 +160,20 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 | # | Host | Loads | Reachable Pages |
 |--:|------|------:|----------------:|
 | 1 | `cdn.ent.auvergnerhonealpes.fr` | **2,469** | **260** |
-| 2 | `ajax.aspnetcdn.com` | **652** | **331** |
+| 2 | `ajax.aspnetcdn.com` | **656** | **333** |
 | 3 | `cdn.ecollege.haute-garonne.fr` | **461** | **44** |
 | 4 | `static.addtoany.com` | **397** | **391** |
 | 5 | `cuatro.sim-cdn.nl` | **377** | **11** |
 | 6 | `translate.google.com` | **334** | **334** |
 | 7 | `assets.epexio.com` | **329** | **13** |
 | 8 | `maps.googleapis.com` | **320** | **305** |
-| 9 | `customer.cludo.com` | **314** | **240** |
+| 9 | `customer.cludo.com` | **319** | **243** |
 | 10 | `www.youtube.com` | **278** | **278** |
 | 11 | `cookie-notice.plzen.eu` | **274** | **146** |
 | 12 | `cdn.datatables.net` | **263** | **86** |
 | 13 | `cm-ob.pt` | **249** | **17** |
-| 14 | `dreambroker.com` | **245** | **245** |
-| 15 | `cdn.herning.dk` | **238** | **24** |
+| 14 | `dreambroker.com` | **247** | **247** |
+| 15 | `cdn.herning.dk` | **237** | **24** |
 
 > These hosts were seen as third-party script sources but did not match a known service signature. Review this queue regularly and promote stable, policy-relevant hosts into the signature list.
 
