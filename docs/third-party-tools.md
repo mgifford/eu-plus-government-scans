@@ -5,7 +5,179 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_No scan data yet — stats update automatically after every scan run._
+_Stats as of 2026-07-04 08:53 UTC — last scan: 2026-07-04_
+
+**68** scan batches run
+
+**23,406** of **82,714** available pages scanned (**28.3%** coverage)
+**21,565** of **23,406** scanned pages were reachable (**92.1%**)
+**10,423** reachable pages loaded at least one third-party script (**48.3%** of reachable)
+**13,721** known third-party service loads identified
+**24** unique known services across **16** categories
+
+---
+
+## Third-Party JavaScript by Country
+
+| Country | Scanned | Available | Reachable | URLs with 3rd-Party JS | Known Service Loads | JS URLs /100 Reachable | Known Loads /100 Reachable | Last Scan |
+|---------|---------|-----------|-----------|------------------------|--------------------|------------------------|---------------------------|----------|
+| Austria | 821 | 821 | 787 | 275 | 52 | 34.9 | 6.6 | 2026-07-02 |
+| Belgium | 1,309 | 1,309 | 1,220 | 636 | 725 | 52.1 | 59.4 | 2026-07-03 |
+| Bulgaria | 291 | 291 | 265 | 104 | 126 | 39.2 | 47.5 | 2026-07-03 |
+| Croatia | 233 | 233 | 231 | 120 | 171 | 51.9 | 74.0 | 2026-07-03 |
+| Czechia | 843 | 843 | 806 | 489 | 820 | 60.7 | 101.7 | 2026-07-03 |
+| Denmark | 1,521 | 1,521 | 1,496 | 837 | 2,123 | 55.9 | 141.9 | 2026-07-03 |
+| Estonia | 396 | 396 | 380 | 215 | 195 | 56.6 | 51.3 | 2026-07-04 |
+| Finland | 180 | 180 | 170 | 45 | 25 | 26.5 | 14.7 | 2026-05-31 |
+| France | 1,526 | 10,007 | 1,421 | 638 | 422 | 44.9 | 29.7 | 2026-05-31 |
+| Germany | 1,576 | 6,555 | 1,550 | 469 | 511 | 30.3 | 33.0 | 2026-05-31 |
+| Greece | 1,477 | 1,748 | 1,371 | 674 | 947 | 49.2 | 69.1 | 2026-06-01 |
+| Hungary | 390 | 390 | 281 | 126 | 195 | 44.8 | 69.4 | 2026-05-31 |
+| Iceland | 139 | 139 | 135 | 72 | 45 | 53.3 | 33.3 | 2026-06-01 |
+| Ireland | 522 | 522 | 490 | 276 | 717 | 56.3 | 146.3 | 2026-07-04 |
+| Italy | 1,030 | 5,338 | 939 | 346 | 323 | 36.8 | 34.4 | 2026-06-01 |
+| Latvia | 802 | 802 | 758 | 533 | 633 | 70.3 | 83.5 | 2026-05-31 |
+| Lithuania | 120 | 120 | 110 | 55 | 110 | 50.0 | 100.0 | 2026-06-01 |
+| Luxembourg | 571 | 571 | 411 | 293 | 138 | 71.3 | 33.6 | 2026-06-01 |
+| Malta | 608 | 608 | 590 | 467 | 1,268 | 79.2 | 214.9 | 2026-06-01 |
+| Netherlands | 937 | 937 | 908 | 411 | 292 | 45.3 | 32.2 | 2026-06-02 |
+| Norway | 239 | 239 | 233 | 131 | 107 | 56.2 | 45.9 | 2026-06-02 |
+| Poland | 1,439 | 14,938 | 1,330 | 674 | 980 | 50.7 | 73.7 | 2026-06-02 |
+| Portugal | 1,360 | 3,503 | 1,154 | 679 | 1,100 | 58.8 | 95.3 | 2026-07-02 |
+| Cyprus | 24 | 24 | 24 | 13 | 15 | 54.2 | 62.5 | 2026-07-02 |
+| Romania | 439 | 799 | 202 | 152 | 154 | 75.2 | 76.2 | 2026-07-02 |
+| Slovakia | 434 | 434 | 415 | 214 | 275 | 51.6 | 66.3 | 2026-07-02 |
+| Slovenia | 200 | 200 | 192 | 53 | 80 | 27.6 | 41.7 | 2026-07-03 |
+| Spain | 1,334 | 6,069 | 1,175 | 577 | 481 | 49.1 | 40.9 | 2026-07-03 |
+| Sweden | 1,558 | 1,558 | 1,472 | 459 | 250 | 31.2 | 17.0 | 2026-07-04 |
+| Switzerland | 593 | 2,117 | 579 | 150 | 161 | 25.9 | 27.8 | 2026-05-29 |
+| United Kingdom | 494 | 19,502 | 470 | 240 | 280 | 51.1 | 59.6 | 2026-05-30 |
+
+> Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and metric from [Download machine-readable third-party tools data (JSON)](third-party-tools-data.json).
+
+---
+
+### Top Third-Party Services
+
+| # | Service | Loads |
+|--:|---------|------:|
+| 1 | jsDelivr CDN | **2,946** |
+| 2 | cdnjs (Cloudflare CDN) | **2,599** |
+| 3 | Google Analytics (GA4) | **1,979** |
+| 4 | jQuery | **1,061** |
+| 5 | Google reCAPTCHA | **1,035** |
+| 6 | unpkg CDN | **876** |
+| 7 | Google Tag Manager | **828** |
+| 8 | Google Hosted Libraries | **668** |
+| 9 | CookieInformation | **444** |
+| 10 | Cookiebot | **437** |
+| 11 | Font Awesome | **290** |
+| 12 | Bootstrap | **215** |
+| 13 | OneTrust | **96** |
+| 14 | Facebook Pixel | **77** |
+| 15 | Cloudflare Turnstile / Challenge | **38** |
+| 16 | Adobe Dynamic Tag Management / Launch | **31** |
+| 17 | Sentry | **29** |
+| 18 | Google Analytics (Universal) | **24** |
+| 19 | Matomo Cloud | **14** |
+| 20 | Zendesk | **13** |
+
+### Top Services by Page Prevalence
+
+| # | Service | Reachable Pages | Prevalence of Reachable Pages |
+|--:|---------|----------------:|------------------------------:|
+| 1 | Google Analytics (GA4) | **1,940** | **412.8%** |
+| 2 | jsDelivr CDN | **1,745** | **371.3%** |
+| 3 | cdnjs (Cloudflare CDN) | **1,156** | **246.0%** |
+| 4 | Google reCAPTCHA | **1,009** | **214.7%** |
+| 5 | Google Tag Manager | **798** | **169.8%** |
+| 6 | jQuery | **755** | **160.6%** |
+| 7 | unpkg CDN | **636** | **135.3%** |
+| 8 | Google Hosted Libraries | **589** | **125.3%** |
+| 9 | CookieInformation | **444** | **94.5%** |
+| 10 | Cookiebot | **428** | **91.1%** |
+| 11 | Font Awesome | **233** | **49.6%** |
+| 12 | Bootstrap | **214** | **45.5%** |
+| 13 | OneTrust | **91** | **19.4%** |
+| 14 | Facebook Pixel | **75** | **16.0%** |
+| 15 | Cloudflare Turnstile / Challenge | **35** | **7.4%** |
+| 16 | Sentry | **29** | **6.2%** |
+| 17 | Adobe Dynamic Tag Management / Launch | **28** | **6.0%** |
+| 18 | Google Analytics (Universal) | **24** | **5.1%** |
+| 19 | Matomo Cloud | **14** | **3.0%** |
+| 20 | Zendesk | **13** | **2.8%** |
+
+### Top Service Categories
+
+| # | Category | Loads |
+|--:|----------|------:|
+| 1 | CDN | **7,089** |
+| 2 | Analytics | **2,130** |
+| 3 | JavaScript Library | **1,729** |
+| 4 | Security | **1,073** |
+| 5 | CAPTCHA | **1,035** |
+| 6 | Cookie Consent | **987** |
+| 7 | Tag Manager | **859** |
+| 8 | Icon Library | **290** |
+| 9 | UI Framework | **215** |
+| 10 | Advertising | **77** |
+| 11 | Error Tracking | **29** |
+| 12 | Customer Support | **13** |
+| 13 | Chat | **13** |
+| 14 | CRM | **3** |
+| 15 | Marketing | **3** |
+
+### Category Balance
+
+Infrastructure-heavy categories (CDNs, core libraries, and UI assets):
+
+| # | Infrastructure Category | Loads |
+|--:|--------------------------|------:|
+| 1 | CDN | **7,089** |
+| 2 | JavaScript Library | **1,729** |
+| 3 | Icon Library | **290** |
+| 4 | UI Framework | **215** |
+
+Policy-relevant categories (tracking, consent, support, and security tooling):
+
+| # | Policy-Relevant Category | Loads |
+|--:|--------------------------|------:|
+| 1 | Analytics | **2,130** |
+| 2 | Security | **1,073** |
+| 3 | CAPTCHA | **1,035** |
+| 4 | Cookie Consent | **987** |
+| 5 | Tag Manager | **859** |
+| 6 | Advertising | **77** |
+| 7 | Error Tracking | **29** |
+| 8 | Customer Support | **13** |
+| 9 | Chat | **13** |
+| 10 | CRM | **3** |
+| 11 | Marketing | **3** |
+| 12 | Payments | **3** |
+
+### Unknown Third-Party Hosts (Review Queue)
+
+| # | Host | Loads | Reachable Pages |
+|--:|------|------:|----------------:|
+| 1 | `cdn.ent.auvergnerhonealpes.fr` | **2,469** | **260** |
+| 2 | `ajax.aspnetcdn.com` | **656** | **333** |
+| 3 | `cdn.ecollege.haute-garonne.fr` | **461** | **44** |
+| 4 | `static.addtoany.com` | **397** | **391** |
+| 5 | `cuatro.sim-cdn.nl` | **377** | **11** |
+| 6 | `translate.google.com` | **334** | **334** |
+| 7 | `assets.epexio.com` | **329** | **13** |
+| 8 | `maps.googleapis.com` | **320** | **305** |
+| 9 | `customer.cludo.com` | **319** | **243** |
+| 10 | `www.youtube.com` | **278** | **278** |
+| 11 | `cookie-notice.plzen.eu` | **274** | **146** |
+| 12 | `cdn.datatables.net` | **263** | **86** |
+| 13 | `cm-ob.pt` | **249** | **17** |
+| 14 | `dreambroker.com` | **247** | **247** |
+| 15 | `cdn.herning.dk` | **237** | **24** |
+
+> These hosts were seen as third-party script sources but did not match a known service signature. Review this queue regularly and promote stable, policy-relevant hosts into the signature list.
+
+📥 Machine-readable results: [Download machine-readable third-party tools data (JSON)](third-party-tools-data.json)
 
 <!-- THIRD_PARTY_JS_STATS_END -->
 
