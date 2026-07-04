@@ -5,14 +5,14 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-07-04 20:35 UTC — last scan: 2026-07-04_
+_Stats as of 2026-07-04 21:57 UTC — last scan: 2026-07-04_
 
-**106** scan batches run
+**109** scan batches run
 
 **69,809** of **82,714** available pages scanned (**84.4%** coverage)
-**64,075** of **69,809** scanned pages were reachable (**91.8%**)
-**31,582** of **64,075** reachable pages have an accessibility statement (**49.3%**)
-**28,021** pages have the statement link in the footer (**88.7%** of pages with a statement)
+**64,117** of **69,809** scanned pages were reachable (**91.8%**)
+**31,622** of **64,117** reachable pages have an accessibility statement (**49.3%**)
+**28,063** pages have the statement link in the footer (**88.7%** of pages with a statement)
 
 📥 Machine-readable results are available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
 
@@ -42,9 +42,9 @@ Each country entry in the JSON file includes page-level evidence for pages with 
 | Ireland | 522 | 522 | 490 | 211 | 196 | 43.1% | May 2026 – Jul 2026 |
 | Italy | 5,338 | 5,338 | 4,816 | 2,646 | 2,574 | 54.9% | May 2026 – Jun 2026 |
 | Latvia | 802 | 802 | 770 | 488 | 448 | 63.4% | May 2026 – Jul 2026 |
-| Lithuania | 120 | 120 | 110 | 0 | 0 | 0.0% | May 2026 |
-| Luxembourg | 571 | 571 | 406 | 241 | 230 | 59.4% | May 2026 |
-| Malta | 608 | 608 | 590 | 384 | 377 | 65.1% | May 2026 |
+| Lithuania | 120 | 120 | 110 | 0 | 0 | 0.0% | May 2026 – Jul 2026 |
+| Luxembourg | 571 | 571 | 445 | 278 | 267 | 62.5% | May 2026 – Jul 2026 |
+| Malta | 608 | 608 | 593 | 387 | 382 | 65.3% | May 2026 – Jul 2026 |
 | Netherlands | 937 | 937 | 909 | 442 | 432 | 48.6% | May 2026 – Jun 2026 |
 | Norway | 239 | 239 | 233 | 107 | 101 | 45.9% | May 2026 – Jun 2026 |
 | Poland | 8,741 | 14,938 | 7,938 | 3,268 | 2,143 | 41.2% | May 2026 – Jun 2026 |
@@ -57,7 +57,7 @@ Each country entry in the JSON file includes page-level evidence for pages with 
 | Sweden | 1,558 | 1,558 | 1,478 | 843 | 770 | 57.0% | May 2026 – Jun 2026 |
 | Switzerland | 2,117 | 2,117 | 2,072 | 991 | 990 | 47.8% | May 2026 – Jun 2026 |
 | United Kingdom | 12,794 | 19,502 | 12,030 | 6,904 | 6,524 | 57.4% | May 2026 – Jun 2026 |
-| **Total** | **69,809** | **82,714** | **64,075** | **31,582** | **28,021** | **49.3%** | — |
+| **Total** | **69,809** | **82,714** | **64,117** | **31,622** | **28,063** | **49.3%** | — |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
