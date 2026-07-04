@@ -5,9 +5,9 @@ layout: page
 
 <!-- LIGHTHOUSE_STATS_START -->
 
-_Stats as of 2026-07-04 12:41 UTC — last scan: 2026-07-04_
+_Stats as of 2026-07-04 13:26 UTC — last scan: 2026-07-04_
 
-**112** scan batches run
+**113** scan batches run
 
 **20,662** of **82,714** available pages audited (**25.0%** coverage)
 **19,007** successful audits (**92.0%** of audited)
@@ -35,7 +35,7 @@ _Stats as of 2026-07-04 12:41 UTC — last scan: 2026-07-04_
 | France | 502 | 10,007 | 91 | 91 | 92 | 92 | 2026-05-31 |
 | Germany | 1,895 | 6,555 | 91 | 91 | 96 | 88 | 2026-05-31 |
 | Greece | 1,241 | 1,748 | 88 | 86 | 91 | 88 | 2026-05-31 |
-| Hungary | 390 | 390 | 85 | 76 | 82 | 87 | 2026-05-30 |
+| Hungary | 390 | 390 | 88 | 76 | 81 | 86 | 2026-07-04 |
 | Iceland | 139 | 139 | 89 | 91 | 91 | 91 | 2026-05-30 |
 | Ireland | 522 | 522 | 90 | 91 | 90 | 88 | 2026-07-03 |
 | Italy | 1,019 | 5,338 | 85 | 88 | 93 | 88 | 2026-06-01 |
