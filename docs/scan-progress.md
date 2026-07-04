@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-07-04 09:06 UTC_
+_Generated: 2026-07-04 10:42 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -13,11 +13,11 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
-| **Combined Reachability** | **76,667 confirmed reachable** | 82,714 | **<span role="img" aria-label="92.7% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:111px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">92.7%</span></span>** | — |
-| Social Media | 82,714 scanned (76,667 reachable) | 82,714 | <span role="img" aria-label="100.0% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:120px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">100.0%</span></span> | 29.0 days |
-| Technology | 54,207 scanned | 82,714 | <span role="img" aria-label="65.5% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:79px;height:100%;background:#b45309;"></span></span><span style="font-size:0.85em;color:#374151;">65.5%</span></span> | 30.9 days |
+| **Combined Reachability** | **76,684 confirmed reachable** | 82,714 | **<span role="img" aria-label="92.7% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:111px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">92.7%</span></span>** | — |
+| Social Media | 82,714 scanned (76,684 reachable) | 82,714 | <span role="img" aria-label="100.0% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:120px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">100.0%</span></span> | 28.5 days |
+| Technology | 54,207 scanned | 82,714 | <span role="img" aria-label="65.5% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:79px;height:100%;background:#b45309;"></span></span><span style="font-size:0.85em;color:#374151;">65.5%</span></span> | 31.0 days |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) | — |
-| Accessibility Statements | 69,809 scanned | 82,714 | <span role="img" aria-label="84.4% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:101px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">84.4%</span></span> | 35.5 days |
+| Accessibility Statements | 69,809 scanned | 82,714 | <span role="img" aria-label="84.4% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:101px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">84.4%</span></span> | 35.6 days |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by any scan type. **Avg Age** shows the mean number of days (or hours) since each URL in that scan type was last scanned — lower is fresher.
 
@@ -33,7 +33,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Denmark | 1,521 | 1,521 | 1,500 | 547 | 0 | 26 | 939 | 168 | 18 | 16 | 13 | May 2026 – Jul 2026 |
 | Estonia | 396 | 396 | 380 | 178 | 3 | 24 | 179 | 66 | 3 | 0 | 27 | May 2026 – Jul 2026 |
 | Finland | 180 | 180 | 170 | 57 | 0 | 4 | 110 | 24 | 6 | 2 | 2 | May 2026 – Jul 2026 |
-| France | 10,007 | 10,007 | 9,284 | 2,618 | 26 | 558 | 6,112 | 1,575 | 546 | 120 | 510 | May 2026 – Jul 2026 |
+| France | 10,007 | 10,007 | 9,301 | 2,621 | 28 | 559 | 6,134 | 1,578 | 554 | 120 | 513 | May 2026 – Jul 2026 |
 | Germany | 6,555 | 6,555 | 6,470 | 1,661 | 78 | 430 | 4,357 | 1,169 | 188 | 119 | 459 | May 2026 – Jul 2026 |
 | Greece | 1,748 | 1,748 | 1,635 | 460 | 2 | 106 | 1,110 | 245 | 62 | 0 | 108 | May 2026 – Jul 2026 |
 | Hungary | 390 | 390 | 293 | 114 | 1 | 28 | 159 | 26 | 0 | 0 | 29 | May 2026 – Jul 2026 |
