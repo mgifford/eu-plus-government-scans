@@ -5,12 +5,12 @@ layout: page
 
 <!-- LIGHTHOUSE_STATS_START -->
 
-_Stats as of 2026-07-04 18:36 UTC — last scan: 2026-07-04_
+_Stats as of 2026-07-04 19:21 UTC — last scan: 2026-07-04_
 
-**113** scan batches run
+**115** scan batches run
 
 **20,662** of **82,714** available pages audited (**25.0%** coverage)
-**19,007** successful audits (**92.0%** of audited)
+**19,008** successful audits (**92.0%** of audited)
 
 **Overall average Lighthouse scores** (0–100 scale):
 
@@ -36,12 +36,12 @@ _Stats as of 2026-07-04 18:36 UTC — last scan: 2026-07-04_
 | Germany | 1,895 | 6,555 | 91 | 91 | 96 | 88 | 2026-05-31 |
 | Greece | 1,241 | 1,748 | 88 | 86 | 91 | 88 | 2026-05-31 |
 | Hungary | 390 | 390 | 88 | 76 | 81 | 86 | 2026-07-04 |
-| Iceland | 139 | 139 | 89 | 91 | 91 | 91 | 2026-05-30 |
+| Iceland | 139 | 139 | 90 | 91 | 91 | 91 | 2026-07-04 |
 | Ireland | 522 | 522 | 90 | 91 | 90 | 88 | 2026-07-03 |
 | Italy | 1,019 | 5,338 | 85 | 88 | 93 | 88 | 2026-06-01 |
 | Latvia | 802 | 802 | 81 | 88 | 88 | 89 | 2026-07-04 |
 | Lithuania | 120 | 120 | 87 | 80 | 87 | 85 | 2026-05-30 |
-| Luxembourg | 571 | 571 | 90 | 93 | 93 | 91 | 2026-06-01 |
+| Luxembourg | 571 | 571 | 91 | 93 | 93 | 92 | 2026-07-04 |
 | Malta | 608 | 608 | 88 | 85 | 79 | 81 | 2026-06-02 |
 | Netherlands | 937 | 937 | 93 | 94 | 93 | 88 | 2026-06-02 |
 | Norway | 239 | 239 | 91 | 93 | 92 | 90 | 2026-07-02 |
