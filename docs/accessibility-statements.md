@@ -5,61 +5,7 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-07-05 18:39 UTC — last scan: 2026-07-05_
-
-**114** scan batches run
-
-**69,809** of **82,714** available pages scanned (**84.4%** coverage)
-**64,130** of **69,809** scanned pages were reachable (**91.9%**)
-**31,628** of **64,130** reachable pages have an accessibility statement (**49.3%**)
-**28,069** pages have the statement link in the footer (**88.7%** of pages with a statement)
-
-📥 Machine-readable results are available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
-
-Each country entry in the JSON file includes page-level evidence for pages with and without accessibility statements, plus a per-domain summary you can share to validate the published counts.
-
-> Hover or focus any non-zero count in the country table to preview the matching pages. If there are 20 or fewer URLs, the preview shows all of them; otherwise it shows a short sample. Full machine-readable data is available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
-
----
-
-## Accessibility Statement Scan by Country
-
-| Country | Scanned | Available | Reachable | Has Statement | In Footer | Statement % | Scan Period |
-|---------|---------|-----------|-----------|--------------|-----------|------------|-------------|
-| Austria | 821 | 821 | 779 | 548 | 518 | 70.3% | May 2026 – Jun 2026 |
-| Belgium | 1,309 | 1,309 | 1,220 | 563 | 513 | 46.1% | May 2026 – Jul 2026 |
-| Bulgaria | 291 | 291 | 264 | 61 | 59 | 23.1% | May 2026 – Jul 2026 |
-| Croatia | 233 | 233 | 230 | 85 | 61 | 37.0% | May 2026 – Jul 2026 |
-| Czechia | 843 | 843 | 806 | 428 | 371 | 53.1% | May 2026 – Jul 2026 |
-| Denmark | 1,521 | 1,521 | 1,496 | 975 | 955 | 65.2% | May 2026 – Jul 2026 |
-| Estonia | 396 | 396 | 381 | 144 | 77 | 37.8% | May 2026 – Jul 2026 |
-| Finland | 180 | 180 | 170 | 115 | 108 | 67.6% | May 2026 – Jul 2026 |
-| France | 10,007 | 10,007 | 9,339 | 3,546 | 3,410 | 38.0% | May 2026 – Jun 2026 |
-| Germany | 6,555 | 6,555 | 6,407 | 4,583 | 3,846 | 71.5% | May 2026 – Jul 2026 |
-| Greece | 1,748 | 1,748 | 1,629 | 413 | 247 | 25.4% | May 2026 – Jul 2026 |
-| Hungary | 390 | 390 | 293 | 55 | 47 | 18.8% | May 2026 – Jul 2026 |
-| Iceland | 139 | 139 | 137 | 13 | 5 | 9.5% | May 2026 – Jul 2026 |
-| Ireland | 522 | 522 | 490 | 211 | 196 | 43.1% | May 2026 – Jul 2026 |
-| Italy | 5,338 | 5,338 | 4,816 | 2,646 | 2,574 | 54.9% | May 2026 – Jun 2026 |
-| Latvia | 802 | 802 | 770 | 488 | 448 | 63.4% | May 2026 – Jul 2026 |
-| Lithuania | 120 | 120 | 110 | 0 | 0 | 0.0% | May 2026 – Jul 2026 |
-| Luxembourg | 571 | 571 | 445 | 278 | 267 | 62.5% | May 2026 – Jul 2026 |
-| Malta | 608 | 608 | 593 | 387 | 382 | 65.3% | May 2026 – Jul 2026 |
-| Netherlands | 937 | 937 | 913 | 443 | 433 | 48.5% | May 2026 – Jul 2026 |
-| Norway | 239 | 239 | 233 | 107 | 101 | 45.9% | May 2026 – Jun 2026 |
-| Poland | 8,741 | 14,938 | 7,938 | 3,268 | 2,143 | 41.2% | May 2026 – Jun 2026 |
-| Portugal | 3,503 | 3,503 | 2,857 | 865 | 702 | 30.3% | May 2026 – Jun 2026 |
-| Cyprus | 24 | 24 | 24 | 0 | 0 | 0.0% | May 2026 – Jul 2026 |
-| Romania | 799 | 799 | 338 | 27 | 9 | 8.0% | May 2026 – Jun 2026 |
-| Slovakia | 434 | 434 | 415 | 190 | 175 | 45.8% | May 2026 – Jul 2026 |
-| Slovenia | 200 | 200 | 193 | 103 | 77 | 53.4% | May 2026 – Jul 2026 |
-| Spain | 6,069 | 6,069 | 5,256 | 2,346 | 2,059 | 44.6% | May 2026 – Jun 2026 |
-| Sweden | 1,558 | 1,558 | 1,486 | 845 | 772 | 56.9% | May 2026 – Jul 2026 |
-| Switzerland | 2,117 | 2,117 | 2,072 | 991 | 990 | 47.8% | May 2026 – Jun 2026 |
-| United Kingdom | 12,794 | 19,502 | 12,030 | 6,904 | 6,524 | 57.4% | May 2026 – Jun 2026 |
-| **Total** | **69,809** | **82,714** | **64,130** | **31,628** | **28,069** | **49.3%** | — |
-
-> **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
+_No scan data yet — stats update automatically after every scan run._
 
 <!-- ACCESSIBILITY_STATS_END -->
 
