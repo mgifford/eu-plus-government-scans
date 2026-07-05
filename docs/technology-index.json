@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-05 05:39 UTC",
+  "generated_at": "2026-07-05 07:07 UTC",
   "base_url": "https://mgifford.github.io/eu-plus-government-scans/",
   "note": "Compact cross-reference index: technology → page count, categories, and per-country page counts. For full per-URL drilldown data see the technology-data.json workflow artifact.",
   "by_technology": {
     "jQuery": {
-      "pages": 27536,
+      "pages": 27534,
       "categories": [
         "JavaScript libraries"
       ],
@@ -33,7 +33,7 @@
         "POLAND": 4499,
         "PORTUGAL": 1928,
         "REPUBLIC_OF_CYPRUS": 17,
-        "ROMANIA": 293,
+        "ROMANIA": 291,
         "SLOVAKIA": 239,
         "SLOVENIA": 95,
         "SPAIN": 1398,
@@ -43,7 +43,7 @@
       }
     },
     "PHP": {
-      "pages": 16687,
+      "pages": 16685,
       "categories": [
         "Programming languages"
       ],
@@ -72,7 +72,7 @@
         "POLAND": 3569,
         "PORTUGAL": 828,
         "REPUBLIC_OF_CYPRUS": 12,
-        "ROMANIA": 47,
+        "ROMANIA": 45,
         "SLOVAKIA": 144,
         "SLOVENIA": 51,
         "SPAIN": 997,
@@ -625,7 +625,7 @@
       }
     },
     "Google Tag Manager": {
-      "pages": 3589,
+      "pages": 3590,
       "categories": [
         "Tag managers"
       ],
@@ -653,7 +653,7 @@
         "NORWAY": 43,
         "POLAND": 599,
         "PORTUGAL": 92,
-        "ROMANIA": 55,
+        "ROMANIA": 56,
         "SLOVAKIA": 23,
         "SLOVENIA": 5,
         "SPAIN": 229,
@@ -1173,6 +1173,41 @@
         "UNITED_KINGDOM_UK": 121
       }
     },
+    "DataTables": {
+      "pages": 1257,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "AUSTRIA": 14,
+        "BELGIUM": 15,
+        "BULGARIA": 18,
+        "CROATIA": 4,
+        "ESTONIA": 27,
+        "FINLAND": 1,
+        "FRANCE": 48,
+        "GERMANY": 615,
+        "GREECE": 61,
+        "HUNGARY": 3,
+        "ICELAND": 2,
+        "IRELAND": 15,
+        "ITALY": 92,
+        "LATVIA": 2,
+        "LITHUANIA": 5,
+        "LUXEMBOURG": 1,
+        "MALTA": 12,
+        "NORWAY": 2,
+        "POLAND": 160,
+        "PORTUGAL": 40,
+        "ROMANIA": 4,
+        "SLOVAKIA": 5,
+        "SLOVENIA": 4,
+        "SPAIN": 50,
+        "SWEDEN": 3,
+        "SWITZERLAND": 4,
+        "UNITED_KINGDOM_UK": 50
+      }
+    },
     "Underscore.js": {
       "pages": 1257,
       "categories": [
@@ -1208,41 +1243,6 @@
         "SWEDEN": 6,
         "SWITZERLAND": 15,
         "UNITED_KINGDOM_UK": 162
-      }
-    },
-    "DataTables": {
-      "pages": 1254,
-      "categories": [
-        "JavaScript libraries"
-      ],
-      "by_country": {
-        "AUSTRIA": 14,
-        "BELGIUM": 15,
-        "BULGARIA": 18,
-        "CROATIA": 4,
-        "ESTONIA": 27,
-        "FINLAND": 1,
-        "FRANCE": 48,
-        "GERMANY": 615,
-        "GREECE": 61,
-        "HUNGARY": 3,
-        "ICELAND": 2,
-        "IRELAND": 15,
-        "ITALY": 92,
-        "LATVIA": 2,
-        "LITHUANIA": 5,
-        "LUXEMBOURG": 1,
-        "MALTA": 12,
-        "NORWAY": 2,
-        "POLAND": 160,
-        "PORTUGAL": 40,
-        "ROMANIA": 1,
-        "SLOVAKIA": 5,
-        "SLOVENIA": 4,
-        "SPAIN": 50,
-        "SWEDEN": 3,
-        "SWITZERLAND": 4,
-        "UNITED_KINGDOM_UK": 50
       }
     },
     "Swiper Slider": {
@@ -1389,7 +1389,7 @@
       }
     },
     "YouTube": {
-      "pages": 1024,
+      "pages": 1026,
       "categories": [
         "Video players"
       ],
@@ -1418,7 +1418,7 @@
         "POLAND": 171,
         "PORTUGAL": 83,
         "REPUBLIC_OF_CYPRUS": 1,
-        "ROMANIA": 6,
+        "ROMANIA": 8,
         "SLOVAKIA": 13,
         "SLOVENIA": 5,
         "SPAIN": 185,
@@ -4202,25 +4202,6 @@
         "UNITED_KINGDOM_UK": 5
       }
     },
-    "Laravel": {
-      "pages": 51,
-      "categories": [
-        "Web frameworks"
-      ],
-      "by_country": {
-        "BELGIUM": 3,
-        "GERMANY": 2,
-        "GREECE": 2,
-        "LATVIA": 3,
-        "POLAND": 9,
-        "PORTUGAL": 6,
-        "ROMANIA": 10,
-        "SLOVAKIA": 2,
-        "SPAIN": 3,
-        "SWITZERLAND": 3,
-        "UNITED_KINGDOM_UK": 8
-      }
-    },
     "Lucene": {
       "pages": 51,
       "categories": [
@@ -4271,6 +4252,25 @@
         "PORTUGAL": 6,
         "SPAIN": 6,
         "UNITED_KINGDOM_UK": 1
+      }
+    },
+    "Laravel": {
+      "pages": 49,
+      "categories": [
+        "Web frameworks"
+      ],
+      "by_country": {
+        "BELGIUM": 3,
+        "GERMANY": 2,
+        "GREECE": 2,
+        "LATVIA": 3,
+        "POLAND": 9,
+        "PORTUGAL": 6,
+        "ROMANIA": 8,
+        "SLOVAKIA": 2,
+        "SPAIN": 3,
+        "SWITZERLAND": 3,
+        "UNITED_KINGDOM_UK": 8
       }
     },
     "basket.js": {
@@ -4333,25 +4333,6 @@
         "UNITED_KINGDOM_UK": 10
       }
     },
-    "Livewire": {
-      "pages": 47,
-      "categories": [
-        "Miscellaneous",
-        "Web frameworks"
-      ],
-      "by_country": {
-        "BELGIUM": 3,
-        "GERMANY": 2,
-        "LATVIA": 3,
-        "POLAND": 7,
-        "PORTUGAL": 6,
-        "ROMANIA": 10,
-        "SLOVAKIA": 2,
-        "SPAIN": 3,
-        "SWITZERLAND": 3,
-        "UNITED_KINGDOM_UK": 8
-      }
-    },
     "F5 BigIP": {
       "pages": 46,
       "categories": [
@@ -4366,6 +4347,25 @@
         "SWEDEN": 10,
         "SWITZERLAND": 2,
         "UNITED_KINGDOM_UK": 2
+      }
+    },
+    "Livewire": {
+      "pages": 45,
+      "categories": [
+        "Miscellaneous",
+        "Web frameworks"
+      ],
+      "by_country": {
+        "BELGIUM": 3,
+        "GERMANY": 2,
+        "LATVIA": 3,
+        "POLAND": 7,
+        "PORTUGAL": 6,
+        "ROMANIA": 8,
+        "SLOVAKIA": 2,
+        "SPAIN": 3,
+        "SWITZERLAND": 3,
+        "UNITED_KINGDOM_UK": 8
       }
     },
     "Bootstrap Table": {
@@ -6987,7 +6987,7 @@
   },
   "by_category": {
     "JavaScript libraries": {
-      "pages": 55392,
+      "pages": 55393,
       "technologies": [
         "Bootstrap Table",
         "DHTMLX",
@@ -7079,7 +7079,7 @@
       ]
     },
     "Programming languages": {
-      "pages": 21997,
+      "pages": 21995,
       "technologies": [
         "CFML",
         "Go",
@@ -7230,7 +7230,7 @@
       ]
     },
     "Web frameworks": {
-      "pages": 6575,
+      "pages": 6571,
       "technologies": [
         "Akka HTTP",
         "Blazor",
@@ -7300,7 +7300,7 @@
       ]
     },
     "Miscellaneous": {
-      "pages": 3888,
+      "pages": 3886,
       "technologies": [
         "Amazon S3",
         "Clipboard.js",
@@ -7325,7 +7325,7 @@
       ]
     },
     "Tag managers": {
-      "pages": 3609,
+      "pages": 3610,
       "technologies": [
         "Google Tag Manager",
         "TagCommander"
@@ -7446,7 +7446,7 @@
       ]
     },
     "Video players": {
-      "pages": 1045,
+      "pages": 1047,
       "technologies": [
         "Plyr",
         "VideoJS",
