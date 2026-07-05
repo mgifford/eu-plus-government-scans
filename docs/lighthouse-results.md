@@ -5,9 +5,9 @@ layout: page
 
 <!-- LIGHTHOUSE_STATS_START -->
 
-_Stats as of 2026-07-05 07:25 UTC — last scan: 2026-07-05_
+_Stats as of 2026-07-05 08:08 UTC — last scan: 2026-07-05_
 
-**117** scan batches run
+**118** scan batches run
 
 **20,662** of **82,714** available pages audited (**25.0%** coverage)
 **19,008** successful audits (**92.0%** of audited)
@@ -43,7 +43,7 @@ _Stats as of 2026-07-05 07:25 UTC — last scan: 2026-07-05_
 | Lithuania | 120 | 120 | 88 | 81 | 87 | 85 | 2026-07-05 |
 | Luxembourg | 571 | 571 | 91 | 93 | 93 | 92 | 2026-07-04 |
 | Malta | 608 | 608 | 88 | 85 | 79 | 81 | 2026-07-05 |
-| Netherlands | 937 | 937 | 93 | 94 | 93 | 88 | 2026-06-02 |
+| Netherlands | 937 | 937 | 93 | 94 | 93 | 87 | 2026-07-05 |
 | Norway | 239 | 239 | 91 | 93 | 92 | 90 | 2026-07-02 |
 | Poland | 1,607 | 14,938 | 88 | 87 | 89 | 90 | 2026-06-01 |
 | Portugal | 1,241 | 3,503 | 83 | 83 | 86 | 89 | 2026-06-01 |
