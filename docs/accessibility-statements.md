@@ -5,9 +5,9 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-07-07 07:30 UTC — last scan: 2026-07-06_
+_Stats as of 2026-07-07 08:02 UTC — last scan: 2026-07-07_
 
-**118** scan batches run
+**119** scan batches run
 
 **69,809** of **82,714** available pages scanned (**84.4%** coverage)
 **64,192** of **69,809** scanned pages were reachable (**92.0%**)
@@ -50,7 +50,7 @@ Each country entry in the JSON file includes page-level evidence for pages with 
 | Poland | 8,741 | 14,938 | 7,938 | 3,268 | 2,143 | 41.2% | May 2026 – Jun 2026 |
 | Portugal | 3,503 | 3,503 | 2,883 | 866 | 703 | 30.0% | May 2026 – Jul 2026 |
 | Cyprus | 24 | 24 | 24 | 0 | 0 | 0.0% | May 2026 – Jul 2026 |
-| Romania | 799 | 799 | 338 | 27 | 9 | 8.0% | May 2026 – Jun 2026 |
+| Romania | 799 | 799 | 338 | 27 | 9 | 8.0% | May 2026 – Jul 2026 |
 | Slovakia | 434 | 434 | 415 | 190 | 175 | 45.8% | May 2026 – Jul 2026 |
 | Slovenia | 200 | 200 | 193 | 103 | 77 | 53.4% | May 2026 – Jul 2026 |
 | Spain | 6,069 | 6,069 | 5,256 | 2,346 | 2,059 | 44.6% | May 2026 – Jun 2026 |
