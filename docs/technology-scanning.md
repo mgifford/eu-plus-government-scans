@@ -5,7 +5,102 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_No scan data yet — stats update automatically after every scan run._
+_Stats as of 2026-07-07 02:14 UTC — last scan: 2026-07-07_
+
+**90** scan batches run
+
+**54,207** of **82,714** available pages scanned (**65.5%** coverage)
+**50,035** pages with technology detections (**92.3%** of scanned)
+**410** unique technologies identified
+
+---
+
+## Technology Scan by Country
+
+| Country | URLs Scanned | Pages with Detections | Available | Last Scan |
+|---------|-------------|----------------------|-----------|----------|
+| Austria | 821 | 787 | 821 | 2026-07-04 |
+| Belgium | 1,309 | 1,221 | 1,309 | 2026-07-04 |
+| Bulgaria | 291 | 265 | 291 | 2026-07-05 |
+| Croatia | 233 | 231 | 233 | 2026-07-05 |
+| Czechia | 843 | 806 | 843 | 2026-07-06 |
+| Denmark | 1,521 | 1,500 | 1,521 | 2026-06-02 |
+| Estonia | 396 | 381 | 396 | 2026-07-06 |
+| Finland | 180 | 170 | 180 | 2026-07-06 |
+| France | 5,699 | 5,335 | 10,007 | 2026-06-02 |
+| Germany | 6,555 | 6,458 | 6,555 | 2026-07-06 |
+| Greece | 1,748 | 1,627 | 1,748 | 2026-07-06 |
+| Hungary | 390 | 298 | 390 | 2026-07-06 |
+| Iceland | 139 | 137 | 139 | 2026-07-06 |
+| Ireland | 522 | 490 | 522 | 2026-07-06 |
+| Italy | 4,797 | 4,277 | 5,338 | 2026-07-06 |
+| Latvia | 802 | 774 | 802 | 2026-07-02 |
+| Lithuania | 120 | 110 | 120 | 2026-07-02 |
+| Luxembourg | 571 | 445 | 571 | 2026-07-02 |
+| Malta | 608 | 593 | 608 | 2026-07-02 |
+| Netherlands | 937 | 912 | 937 | 2026-07-02 |
+| Norway | 239 | 233 | 239 | 2026-07-05 |
+| Poland | 6,490 | 5,907 | 14,938 | 2026-07-06 |
+| Portugal | 3,503 | 2,910 | 3,503 | 2026-07-05 |
+| Cyprus | 24 | 24 | 24 | 2026-07-02 |
+| Romania | 799 | 342 | 799 | 2026-07-05 |
+| Slovakia | 434 | 410 | 434 | 2026-07-02 |
+| Slovenia | 200 | 193 | 200 | 2026-07-04 |
+| Spain | 3,556 | 3,171 | 6,069 | 2026-07-07 |
+| Sweden | 1,558 | 1,489 | 1,558 | 2026-07-04 |
+| Switzerland | 2,117 | 2,078 | 2,117 | 2026-07-04 |
+| United Kingdom | 6,805 | 6,461 | 19,502 | 2026-06-02 |
+
+> Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and metric from [Download machine-readable technology data (JSON)](technology-data.json).
+
+---
+
+### Top Technologies
+
+| # | Technology | Pages | Categories |
+|--:|-----------|------:|-----------|
+| 1 | jQuery | **27,501** | JavaScript libraries |
+| 2 | PHP | **16,629** | Programming languages |
+| 3 | Apache | **15,156** | Web servers |
+| 4 | Bootstrap | **12,926** | UI frameworks |
+| 5 | Font Awesome | **11,796** | Font scripts |
+| 6 | Google Font API | **9,936** | Font scripts |
+| 7 | MySQL | **9,282** | Databases |
+| 8 | WordPress | **9,219** | Blogs, CMS |
+| 9 | Nginx | **8,926** | Reverse proxies, Web servers |
+| 10 | jQuery Migrate | **8,152** | JavaScript libraries |
+| 11 | Windows Server | **4,799** | Operating systems |
+| 12 | IIS | **4,731** | Web servers |
+| 13 | jQuery UI | **4,631** | JavaScript libraries |
+| 14 | Microsoft ASP.NET | **4,023** | Web frameworks |
+| 15 | jsDelivr | **3,811** | CDN |
+| 16 | Drupal | **3,770** | CMS |
+| 17 | Google Tag Manager | **3,563** | Tag managers |
+| 18 | Cloudflare | **3,526** | CDN |
+| 19 | Yoast SEO | **3,009** | SEO |
+| 20 | reCAPTCHA | **2,717** | Security |
+
+### Top Technology Categories
+
+| # | Category | Pages |
+|--:|---------|------:|
+| 1 | JavaScript libraries | **55,255** |
+| 2 | Web servers | **31,949** |
+| 3 | Font scripts | **22,167** |
+| 4 | Programming languages | **22,027** |
+| 5 | CMS | **17,788** |
+| 6 | UI frameworks | **16,823** |
+| 7 | Databases | **9,717** |
+| 8 | Blogs | **9,252** |
+| 9 | Reverse proxies | **9,201** |
+| 10 | CDN | **9,015** |
+| 11 | Operating systems | **8,183** |
+| 12 | Web frameworks | **6,554** |
+| 13 | JavaScript frameworks | **5,419** |
+| 14 | Miscellaneous | **3,882** |
+| 15 | Tag managers | **3,583** |
+
+📥 Machine-readable results: [Download machine-readable technology data (JSON)](technology-data.json)
 
 <!-- TECH_STATS_END -->
 
