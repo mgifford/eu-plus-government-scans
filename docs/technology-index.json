@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-07 20:54 UTC",
+  "generated_at": "2026-07-07 22:23 UTC",
   "base_url": "https://mgifford.github.io/eu-plus-government-scans/",
   "note": "Compact cross-reference index: technology → page count, categories, and per-country page counts. For full per-URL drilldown data see the technology-data.json workflow artifact.",
   "by_technology": {
     "jQuery": {
-      "pages": 27498,
+      "pages": 27496,
       "categories": [
         "JavaScript libraries"
       ],
@@ -18,8 +18,8 @@
         "ESTONIA": 260,
         "FINLAND": 71,
         "FRANCE": 1573,
-        "GERMANY": 3551,
-        "GREECE": 1092,
+        "GERMANY": 3552,
+        "GREECE": 1089,
         "HUNGARY": 143,
         "ICELAND": 72,
         "IRELAND": 329,
@@ -43,7 +43,7 @@
       }
     },
     "PHP": {
-      "pages": 16633,
+      "pages": 16626,
       "categories": [
         "Programming languages"
       ],
@@ -57,8 +57,8 @@
         "ESTONIA": 250,
         "FINLAND": 26,
         "FRANCE": 1279,
-        "GERMANY": 1956,
-        "GREECE": 868,
+        "GERMANY": 1954,
+        "GREECE": 863,
         "HUNGARY": 69,
         "ICELAND": 40,
         "IRELAND": 178,
@@ -82,7 +82,7 @@
       }
     },
     "Apache": {
-      "pages": 15159,
+      "pages": 15179,
       "categories": [
         "Web servers"
       ],
@@ -96,8 +96,8 @@
         "ESTONIA": 157,
         "FINLAND": 17,
         "FRANCE": 909,
-        "GERMANY": 3990,
-        "GREECE": 468,
+        "GERMANY": 4005,
+        "GREECE": 473,
         "HUNGARY": 88,
         "ICELAND": 5,
         "IRELAND": 68,
@@ -121,7 +121,7 @@
       }
     },
     "Bootstrap": {
-      "pages": 12928,
+      "pages": 12922,
       "categories": [
         "UI frameworks"
       ],
@@ -135,8 +135,8 @@
         "ESTONIA": 142,
         "FINLAND": 48,
         "FRANCE": 757,
-        "GERMANY": 933,
-        "GREECE": 553,
+        "GERMANY": 929,
+        "GREECE": 551,
         "HUNGARY": 58,
         "ICELAND": 16,
         "IRELAND": 203,
@@ -160,7 +160,7 @@
       }
     },
     "Font Awesome": {
-      "pages": 11804,
+      "pages": 11807,
       "categories": [
         "Font scripts"
       ],
@@ -174,8 +174,8 @@
         "ESTONIA": 89,
         "FINLAND": 44,
         "FRANCE": 666,
-        "GERMANY": 586,
-        "GREECE": 695,
+        "GERMANY": 584,
+        "GREECE": 700,
         "HUNGARY": 37,
         "ICELAND": 18,
         "IRELAND": 164,
@@ -199,7 +199,7 @@
       }
     },
     "Google Font API": {
-      "pages": 9943,
+      "pages": 9950,
       "categories": [
         "Font scripts"
       ],
@@ -213,8 +213,8 @@
         "ESTONIA": 82,
         "FINLAND": 6,
         "FRANCE": 482,
-        "GERMANY": 151,
-        "GREECE": 766,
+        "GERMANY": 152,
+        "GREECE": 772,
         "HUNGARY": 73,
         "ICELAND": 31,
         "IRELAND": 129,
@@ -238,7 +238,7 @@
       }
     },
     "MySQL": {
-      "pages": 9294,
+      "pages": 9293,
       "categories": [
         "Databases"
       ],
@@ -252,7 +252,7 @@
         "ESTONIA": 71,
         "FINLAND": 18,
         "FRANCE": 396,
-        "GERMANY": 491,
+        "GERMANY": 490,
         "GREECE": 641,
         "HUNGARY": 25,
         "ICELAND": 13,
@@ -277,7 +277,7 @@
       }
     },
     "WordPress": {
-      "pages": 9231,
+      "pages": 9230,
       "categories": [
         "Blogs",
         "CMS"
@@ -292,7 +292,7 @@
         "ESTONIA": 71,
         "FINLAND": 18,
         "FRANCE": 386,
-        "GERMANY": 480,
+        "GERMANY": 479,
         "GREECE": 641,
         "HUNGARY": 25,
         "ICELAND": 13,
@@ -317,7 +317,7 @@
       }
     },
     "Nginx": {
-      "pages": 8957,
+      "pages": 8960,
       "categories": [
         "Reverse proxies",
         "Web servers"
@@ -332,7 +332,7 @@
         "ESTONIA": 25,
         "FINLAND": 28,
         "FRANCE": 789,
-        "GERMANY": 933,
+        "GERMANY": 936,
         "GREECE": 658,
         "HUNGARY": 87,
         "ICELAND": 28,
@@ -357,7 +357,7 @@
       }
     },
     "jQuery Migrate": {
-      "pages": 8138,
+      "pages": 8139,
       "categories": [
         "JavaScript libraries"
       ],
@@ -371,8 +371,8 @@
         "ESTONIA": 69,
         "FINLAND": 12,
         "FRANCE": 409,
-        "GERMANY": 510,
-        "GREECE": 604,
+        "GERMANY": 508,
+        "GREECE": 607,
         "HUNGARY": 23,
         "ICELAND": 16,
         "IRELAND": 114,
@@ -396,7 +396,7 @@
       }
     },
     "Windows Server": {
-      "pages": 4848,
+      "pages": 4850,
       "categories": [
         "Operating systems"
       ],
@@ -411,7 +411,7 @@
         "FINLAND": 2,
         "FRANCE": 76,
         "GERMANY": 170,
-        "GREECE": 137,
+        "GREECE": 139,
         "HUNGARY": 7,
         "ICELAND": 22,
         "IRELAND": 116,
@@ -435,7 +435,7 @@
       }
     },
     "IIS": {
-      "pages": 4781,
+      "pages": 4783,
       "categories": [
         "Web servers"
       ],
@@ -450,7 +450,7 @@
         "FINLAND": 2,
         "FRANCE": 74,
         "GERMANY": 160,
-        "GREECE": 128,
+        "GREECE": 130,
         "HUNGARY": 7,
         "ICELAND": 22,
         "IRELAND": 114,
@@ -474,7 +474,7 @@
       }
     },
     "jQuery UI": {
-      "pages": 4636,
+      "pages": 4634,
       "categories": [
         "JavaScript libraries"
       ],
@@ -488,8 +488,8 @@
         "ESTONIA": 55,
         "FINLAND": 12,
         "FRANCE": 339,
-        "GERMANY": 578,
-        "GREECE": 101,
+        "GERMANY": 574,
+        "GREECE": 103,
         "HUNGARY": 34,
         "ICELAND": 16,
         "IRELAND": 97,
@@ -512,7 +512,7 @@
       }
     },
     "Microsoft ASP.NET": {
-      "pages": 4072,
+      "pages": 4074,
       "categories": [
         "Web frameworks"
       ],
@@ -527,7 +527,7 @@
         "FINLAND": 2,
         "FRANCE": 71,
         "GERMANY": 126,
-        "GREECE": 108,
+        "GREECE": 110,
         "HUNGARY": 7,
         "ICELAND": 20,
         "IRELAND": 92,
@@ -551,7 +551,7 @@
       }
     },
     "jsDelivr": {
-      "pages": 3812,
+      "pages": 3817,
       "categories": [
         "CDN"
       ],
@@ -565,7 +565,7 @@
         "ESTONIA": 13,
         "FINLAND": 4,
         "FRANCE": 271,
-        "GERMANY": 425,
+        "GERMANY": 430,
         "GREECE": 167,
         "HUNGARY": 20,
         "ICELAND": 5,
@@ -590,7 +590,7 @@
       }
     },
     "Drupal": {
-      "pages": 3771,
+      "pages": 3772,
       "categories": [
         "CMS"
       ],
@@ -603,7 +603,7 @@
         "ESTONIA": 168,
         "FINLAND": 8,
         "FRANCE": 566,
-        "GERMANY": 358,
+        "GERMANY": 359,
         "GREECE": 91,
         "HUNGARY": 16,
         "ICELAND": 27,
@@ -663,7 +663,7 @@
       }
     },
     "Cloudflare": {
-      "pages": 3548,
+      "pages": 3545,
       "categories": [
         "CDN"
       ],
@@ -678,7 +678,7 @@
         "FINLAND": 39,
         "FRANCE": 227,
         "GERMANY": 42,
-        "GREECE": 66,
+        "GREECE": 63,
         "HUNGARY": 2,
         "ICELAND": 12,
         "IRELAND": 72,
@@ -702,7 +702,7 @@
       }
     },
     "Yoast SEO": {
-      "pages": 2985,
+      "pages": 2982,
       "categories": [
         "SEO"
       ],
@@ -716,7 +716,7 @@
         "FINLAND": 6,
         "FRANCE": 214,
         "GERMANY": 109,
-        "GREECE": 222,
+        "GREECE": 219,
         "HUNGARY": 11,
         "IRELAND": 36,
         "ITALY": 171,
@@ -774,7 +774,7 @@
       }
     },
     "Slick": {
-      "pages": 2630,
+      "pages": 2632,
       "categories": [
         "JavaScript libraries"
       ],
@@ -788,7 +788,7 @@
         "ESTONIA": 1,
         "FINLAND": 3,
         "FRANCE": 159,
-        "GERMANY": 614,
+        "GERMANY": 616,
         "GREECE": 94,
         "HUNGARY": 8,
         "IRELAND": 16,
@@ -812,7 +812,7 @@
       }
     },
     "Lightbox": {
-      "pages": 2526,
+      "pages": 2528,
       "categories": [
         "JavaScript libraries"
       ],
@@ -827,7 +827,7 @@
         "FINLAND": 4,
         "FRANCE": 43,
         "GERMANY": 363,
-        "GREECE": 80,
+        "GREECE": 82,
         "HUNGARY": 7,
         "ICELAND": 11,
         "IRELAND": 8,
@@ -851,7 +851,7 @@
       }
     },
     "Modernizr": {
-      "pages": 2208,
+      "pages": 2203,
       "categories": [
         "JavaScript libraries"
       ],
@@ -865,8 +865,8 @@
         "ESTONIA": 13,
         "FINLAND": 4,
         "FRANCE": 103,
-        "GERMANY": 312,
-        "GREECE": 88,
+        "GERMANY": 308,
+        "GREECE": 87,
         "HUNGARY": 16,
         "ICELAND": 5,
         "IRELAND": 38,
@@ -923,7 +923,7 @@
       }
     },
     "Elementor": {
-      "pages": 1961,
+      "pages": 1962,
       "categories": [
         "Page builders"
       ],
@@ -935,7 +935,7 @@
         "ESTONIA": 14,
         "FRANCE": 68,
         "GERMANY": 49,
-        "GREECE": 208,
+        "GREECE": 209,
         "HUNGARY": 4,
         "ICELAND": 10,
         "IRELAND": 4,
@@ -958,7 +958,7 @@
       }
     },
     "Cart Functionality": {
-      "pages": 1898,
+      "pages": 1899,
       "categories": [
         "Ecommerce"
       ],
@@ -969,7 +969,7 @@
         "CROATIA": 3,
         "DENMARK": 17,
         "FRANCE": 348,
-        "GERMANY": 55,
+        "GERMANY": 56,
         "GREECE": 15,
         "ICELAND": 2,
         "IRELAND": 3,
@@ -989,7 +989,7 @@
       }
     },
     "OWL Carousel": {
-      "pages": 1712,
+      "pages": 1710,
       "categories": [
         "Widgets"
       ],
@@ -1002,7 +1002,7 @@
         "ESTONIA": 12,
         "FINLAND": 21,
         "FRANCE": 129,
-        "GERMANY": 32,
+        "GERMANY": 30,
         "GREECE": 95,
         "HUNGARY": 9,
         "IRELAND": 6,
@@ -1059,7 +1059,7 @@
       }
     },
     "Varnish": {
-      "pages": 1513,
+      "pages": 1516,
       "categories": [
         "Caching"
       ],
@@ -1071,7 +1071,7 @@
         "ESTONIA": 8,
         "FINLAND": 2,
         "FRANCE": 195,
-        "GERMANY": 400,
+        "GERMANY": 403,
         "GREECE": 13,
         "ICELAND": 23,
         "IRELAND": 2,
@@ -1139,7 +1139,7 @@
       }
     },
     "animate.css": {
-      "pages": 1341,
+      "pages": 1335,
       "categories": [
         "UI frameworks"
       ],
@@ -1151,8 +1151,8 @@
         "CZECHIA": 9,
         "ESTONIA": 6,
         "FRANCE": 75,
-        "GERMANY": 27,
-        "GREECE": 149,
+        "GERMANY": 23,
+        "GREECE": 147,
         "HUNGARY": 14,
         "ICELAND": 8,
         "IRELAND": 13,
@@ -1174,7 +1174,7 @@
       }
     },
     "Underscore.js": {
-      "pages": 1242,
+      "pages": 1244,
       "categories": [
         "JavaScript libraries"
       ],
@@ -1188,7 +1188,7 @@
         "ESTONIA": 4,
         "FRANCE": 101,
         "GERMANY": 195,
-        "GREECE": 67,
+        "GREECE": 69,
         "HUNGARY": 3,
         "ICELAND": 1,
         "IRELAND": 25,
@@ -1211,7 +1211,7 @@
       }
     },
     "DataTables": {
-      "pages": 1199,
+      "pages": 1187,
       "categories": [
         "JavaScript libraries"
       ],
@@ -1223,7 +1223,7 @@
         "ESTONIA": 27,
         "FINLAND": 1,
         "FRANCE": 48,
-        "GERMANY": 549,
+        "GERMANY": 537,
         "GREECE": 61,
         "HUNGARY": 3,
         "ICELAND": 2,
@@ -1246,7 +1246,7 @@
       }
     },
     "Swiper Slider": {
-      "pages": 1157,
+      "pages": 1159,
       "categories": [
         "Miscellaneous"
       ],
@@ -1257,8 +1257,8 @@
         "DENMARK": 4,
         "ESTONIA": 26,
         "FRANCE": 55,
-        "GERMANY": 51,
-        "GREECE": 82,
+        "GERMANY": 54,
+        "GREECE": 81,
         "HUNGARY": 8,
         "ICELAND": 10,
         "IRELAND": 1,
@@ -1316,7 +1316,7 @@
       }
     },
     "Leaflet": {
-      "pages": 1111,
+      "pages": 1102,
       "categories": [
         "Maps"
       ],
@@ -1327,7 +1327,7 @@
         "DENMARK": 5,
         "ESTONIA": 2,
         "FRANCE": 135,
-        "GERMANY": 121,
+        "GERMANY": 112,
         "GREECE": 48,
         "HUNGARY": 2,
         "IRELAND": 8,
@@ -1361,7 +1361,7 @@
       }
     },
     "FancyBox": {
-      "pages": 1047,
+      "pages": 1048,
       "categories": [
         "JavaScript libraries"
       ],
@@ -1371,7 +1371,7 @@
         "CZECHIA": 19,
         "ESTONIA": 3,
         "FRANCE": 34,
-        "GERMANY": 610,
+        "GERMANY": 611,
         "GREECE": 29,
         "HUNGARY": 9,
         "IRELAND": 22,
@@ -1460,7 +1460,7 @@
       }
     },
     "Amazon Web Services": {
-      "pages": 960,
+      "pages": 962,
       "categories": [
         "PaaS"
       ],
@@ -1472,7 +1472,7 @@
         "ESTONIA": 2,
         "FINLAND": 15,
         "FRANCE": 27,
-        "GERMANY": 22,
+        "GERMANY": 24,
         "GREECE": 22,
         "HUNGARY": 8,
         "ICELAND": 19,
@@ -1491,7 +1491,7 @@
       }
     },
     "Amazon Cloudfront": {
-      "pages": 952,
+      "pages": 954,
       "categories": [
         "CDN"
       ],
@@ -1503,7 +1503,7 @@
         "ESTONIA": 2,
         "FINLAND": 15,
         "FRANCE": 27,
-        "GERMANY": 22,
+        "GERMANY": 24,
         "GREECE": 22,
         "HUNGARY": 8,
         "ICELAND": 19,
@@ -1522,7 +1522,7 @@
       }
     },
     "ZURB Foundation": {
-      "pages": 878,
+      "pages": 882,
       "categories": [
         "UI frameworks"
       ],
@@ -1533,7 +1533,7 @@
         "ESTONIA": 5,
         "FINLAND": 1,
         "FRANCE": 18,
-        "GERMANY": 186,
+        "GERMANY": 190,
         "GREECE": 10,
         "HUNGARY": 4,
         "IRELAND": 5,
@@ -1788,7 +1788,7 @@
       }
     },
     "OpenSSL": {
-      "pages": 697,
+      "pages": 699,
       "categories": [
         "Web server extensions"
       ],
@@ -1802,7 +1802,7 @@
         "ESTONIA": 8,
         "FRANCE": 8,
         "GERMANY": 24,
-        "GREECE": 33,
+        "GREECE": 35,
         "IRELAND": 2,
         "ITALY": 171,
         "LATVIA": 2,
@@ -1844,7 +1844,7 @@
       }
     },
     "Joomla": {
-      "pages": 679,
+      "pages": 674,
       "categories": [
         "CMS"
       ],
@@ -1857,7 +1857,7 @@
         "ESTONIA": 7,
         "FRANCE": 23,
         "GERMANY": 8,
-        "GREECE": 84,
+        "GREECE": 79,
         "HUNGARY": 7,
         "IRELAND": 13,
         "ITALY": 57,
@@ -1872,7 +1872,7 @@
       }
     },
     "Osano": {
-      "pages": 607,
+      "pages": 608,
       "categories": [
         "Cookie compliance"
       ],
@@ -1884,7 +1884,7 @@
         "ESTONIA": 3,
         "FRANCE": 12,
         "GERMANY": 204,
-        "GREECE": 36,
+        "GREECE": 37,
         "HUNGARY": 11,
         "IRELAND": 21,
         "ITALY": 36,
@@ -2114,7 +2114,7 @@
       }
     },
     "CentOS": {
-      "pages": 506,
+      "pages": 508,
       "categories": [
         "Operating systems"
       ],
@@ -2123,7 +2123,7 @@
         "CZECHIA": 1,
         "FRANCE": 2,
         "GERMANY": 1,
-        "GREECE": 30,
+        "GREECE": 32,
         "HUNGARY": 4,
         "ITALY": 96,
         "LATVIA": 2,
@@ -2135,7 +2135,7 @@
       }
     },
     "WordPress Super Cache": {
-      "pages": 470,
+      "pages": 468,
       "categories": [
         "Caching"
       ],
@@ -2143,7 +2143,7 @@
         "ESTONIA": 4,
         "FRANCE": 21,
         "GERMANY": 6,
-        "GREECE": 33,
+        "GREECE": 31,
         "HUNGARY": 1,
         "ICELAND": 3,
         "IRELAND": 3,
@@ -2460,7 +2460,7 @@
       }
     },
     "Chart.js": {
-      "pages": 349,
+      "pages": 351,
       "categories": [
         "JavaScript graphics"
       ],
@@ -2472,7 +2472,7 @@
         "ESTONIA": 5,
         "FINLAND": 3,
         "FRANCE": 27,
-        "GERMANY": 31,
+        "GERMANY": 33,
         "GREECE": 12,
         "HUNGARY": 4,
         "IRELAND": 5,
@@ -2515,7 +2515,7 @@
       }
     },
     "WP Rocket": {
-      "pages": 322,
+      "pages": 323,
       "categories": [
         "Caching"
       ],
@@ -2525,7 +2525,7 @@
         "ESTONIA": 3,
         "FRANCE": 66,
         "GERMANY": 10,
-        "GREECE": 32,
+        "GREECE": 33,
         "HUNGARY": 2,
         "ICELAND": 10,
         "IRELAND": 3,
@@ -2568,7 +2568,7 @@
       }
     },
     "W3 Total Cache": {
-      "pages": 260,
+      "pages": 258,
       "categories": [
         "Caching"
       ],
@@ -2577,7 +2577,7 @@
         "CROATIA": 5,
         "CZECHIA": 2,
         "FRANCE": 28,
-        "GERMANY": 14,
+        "GERMANY": 12,
         "GREECE": 39,
         "HUNGARY": 2,
         "ITALY": 6,
@@ -2713,14 +2713,14 @@
       }
     },
     "TrackJs": {
-      "pages": 235,
+      "pages": 237,
       "categories": [
         "Analytics"
       ],
       "by_country": {
         "ESTONIA": 2,
         "FRANCE": 6,
-        "GERMANY": 8,
+        "GERMANY": 10,
         "GREECE": 10,
         "HUNGARY": 2,
         "ITALY": 22,
@@ -2776,7 +2776,7 @@
       }
     },
     "Alpine.js": {
-      "pages": 228,
+      "pages": 230,
       "categories": [
         "JavaScript frameworks"
       ],
@@ -2787,7 +2787,7 @@
         "DENMARK": 43,
         "FRANCE": 27,
         "GERMANY": 20,
-        "GREECE": 4,
+        "GREECE": 6,
         "HUNGARY": 3,
         "ITALY": 5,
         "LATVIA": 8,
@@ -2881,6 +2881,32 @@
         "UNITED_KINGDOM_UK": 38
       }
     },
+    "Envoy": {
+      "pages": 224,
+      "categories": [
+        "Reverse proxies"
+      ],
+      "by_country": {
+        "BELGIUM": 22,
+        "DENMARK": 6,
+        "FINLAND": 5,
+        "FRANCE": 18,
+        "GERMANY": 28,
+        "GREECE": 5,
+        "IRELAND": 1,
+        "ITALY": 28,
+        "LATVIA": 3,
+        "MALTA": 3,
+        "NETHERLANDS": 16,
+        "NORWAY": 12,
+        "POLAND": 4,
+        "SLOVAKIA": 5,
+        "SPAIN": 4,
+        "SWEDEN": 23,
+        "SWITZERLAND": 5,
+        "UNITED_KINGDOM_UK": 36
+      }
+    },
     "Stimulus": {
       "pages": 220,
       "categories": [
@@ -2905,32 +2931,6 @@
         "SWEDEN": 5,
         "SWITZERLAND": 12,
         "UNITED_KINGDOM_UK": 31
-      }
-    },
-    "Envoy": {
-      "pages": 219,
-      "categories": [
-        "Reverse proxies"
-      ],
-      "by_country": {
-        "BELGIUM": 22,
-        "DENMARK": 6,
-        "FINLAND": 5,
-        "FRANCE": 18,
-        "GERMANY": 23,
-        "GREECE": 5,
-        "IRELAND": 1,
-        "ITALY": 28,
-        "LATVIA": 3,
-        "MALTA": 3,
-        "NETHERLANDS": 16,
-        "NORWAY": 12,
-        "POLAND": 4,
-        "SLOVAKIA": 5,
-        "SPAIN": 4,
-        "SWEDEN": 23,
-        "SWITZERLAND": 5,
-        "UNITED_KINGDOM_UK": 36
       }
     },
     "Moodle": {
@@ -3082,7 +3082,7 @@
       }
     },
     "Plesk": {
-      "pages": 187,
+      "pages": 188,
       "categories": [
         "Hosting panels"
       ],
@@ -3090,7 +3090,7 @@
         "BELGIUM": 5,
         "FRANCE": 13,
         "GERMANY": 6,
-        "GREECE": 60,
+        "GREECE": 61,
         "IRELAND": 1,
         "ITALY": 16,
         "LATVIA": 2,
@@ -3324,13 +3324,13 @@
       }
     },
     "UserWay": {
-      "pages": 144,
+      "pages": 143,
       "categories": [
         "Accessibility"
       ],
       "by_country": {
         "BULGARIA": 2,
-        "GREECE": 82,
+        "GREECE": 81,
         "IRELAND": 3,
         "ITALY": 2,
         "LITHUANIA": 3,
@@ -3766,13 +3766,13 @@
       }
     },
     "SiteGround": {
-      "pages": 84,
+      "pages": 83,
       "categories": [
         "PaaS"
       ],
       "by_country": {
         "BELGIUM": 4,
-        "GREECE": 12,
+        "GREECE": 11,
         "IRELAND": 2,
         "ITALY": 4,
         "MALTA": 6,
@@ -3945,6 +3945,23 @@
         "UNITED_KINGDOM_UK": 2
       }
     },
+    "DreamWeaver": {
+      "pages": 69,
+      "categories": [
+        "Editors"
+      ],
+      "by_country": {
+        "BELGIUM": 2,
+        "FRANCE": 1,
+        "GERMANY": 39,
+        "ITALY": 1,
+        "POLAND": 2,
+        "ROMANIA": 3,
+        "SPAIN": 7,
+        "SWITZERLAND": 5,
+        "UNITED_KINGDOM_UK": 9
+      }
+    },
     "PostgreSQL": {
       "pages": 68,
       "categories": [
@@ -3976,23 +3993,6 @@
         "ITALY": 48,
         "POLAND": 4,
         "SPAIN": 13
-      }
-    },
-    "DreamWeaver": {
-      "pages": 66,
-      "categories": [
-        "Editors"
-      ],
-      "by_country": {
-        "BELGIUM": 2,
-        "FRANCE": 1,
-        "GERMANY": 36,
-        "ITALY": 1,
-        "POLAND": 2,
-        "ROMANIA": 3,
-        "SPAIN": 7,
-        "SWITZERLAND": 5,
-        "UNITED_KINGDOM_UK": 9
       }
     },
     "Fastly": {
@@ -4152,22 +4152,6 @@
         "UNITED_KINGDOM_UK": 39
       }
     },
-    "Mautic": {
-      "pages": 54,
-      "categories": [
-        "Marketing automation"
-      ],
-      "by_country": {
-        "BELGIUM": 2,
-        "DENMARK": 2,
-        "ESTONIA": 2,
-        "FRANCE": 2,
-        "GERMANY": 3,
-        "IRELAND": 34,
-        "MALTA": 5,
-        "UNITED_KINGDOM_UK": 4
-      }
-    },
     "Mustache": {
       "pages": 53,
       "categories": [
@@ -4272,6 +4256,21 @@
         "POLAND": 1,
         "SPAIN": 7,
         "UNITED_KINGDOM_UK": 5
+      }
+    },
+    "Mautic": {
+      "pages": 51,
+      "categories": [
+        "Marketing automation"
+      ],
+      "by_country": {
+        "BELGIUM": 2,
+        "DENMARK": 2,
+        "ESTONIA": 2,
+        "FRANCE": 2,
+        "IRELAND": 34,
+        "MALTA": 5,
+        "UNITED_KINGDOM_UK": 4
       }
     },
     "Solr": {
@@ -4447,21 +4446,6 @@
         "UNITED_KINGDOM_UK": 23
       }
     },
-    "Raphael": {
-      "pages": 42,
-      "categories": [
-        "JavaScript graphics"
-      ],
-      "by_country": {
-        "CZECHIA": 3,
-        "FRANCE": 5,
-        "GERMANY": 2,
-        "ITALY": 20,
-        "POLAND": 3,
-        "PORTUGAL": 4,
-        "SPAIN": 5
-      }
-    },
     "gunicorn": {
       "pages": 42,
       "categories": [
@@ -4489,6 +4473,20 @@
         "ITALY": 6,
         "SPAIN": 23,
         "SWITZERLAND": 6
+      }
+    },
+    "Raphael": {
+      "pages": 40,
+      "categories": [
+        "JavaScript graphics"
+      ],
+      "by_country": {
+        "CZECHIA": 3,
+        "FRANCE": 5,
+        "ITALY": 20,
+        "POLAND": 3,
+        "PORTUGAL": 4,
+        "SPAIN": 5
       }
     },
     "Blazor": {
@@ -4597,23 +4595,6 @@
         "UNITED_KINGDOM_UK": 17
       }
     },
-    "Google PageSpeed": {
-      "pages": 33,
-      "categories": [
-        "Caching",
-        "Web server extensions"
-      ],
-      "by_country": {
-        "ESTONIA": 2,
-        "GERMANY": 10,
-        "ITALY": 3,
-        "LITHUANIA": 1,
-        "NORWAY": 2,
-        "POLAND": 2,
-        "SWITZERLAND": 2,
-        "UNITED_KINGDOM_UK": 11
-      }
-    },
     "Materialize CSS": {
       "pages": 33,
       "categories": [
@@ -4695,6 +4676,23 @@
         "NORWAY": 4,
         "POLAND": 2,
         "UNITED_KINGDOM_UK": 3
+      }
+    },
+    "Google PageSpeed": {
+      "pages": 30,
+      "categories": [
+        "Caching",
+        "Web server extensions"
+      ],
+      "by_country": {
+        "ESTONIA": 2,
+        "GERMANY": 7,
+        "ITALY": 3,
+        "LITHUANIA": 1,
+        "NORWAY": 2,
+        "POLAND": 2,
+        "SWITZERLAND": 2,
+        "UNITED_KINGDOM_UK": 11
       }
     },
     "Prism": {
@@ -6995,7 +6993,7 @@
   },
   "by_category": {
     "JavaScript libraries": {
-      "pages": 55181,
+      "pages": 55168,
       "technologies": [
         "Bootstrap Table",
         "DHTMLX",
@@ -7035,7 +7033,7 @@
       ]
     },
     "Web servers": {
-      "pages": 32037,
+      "pages": 32062,
       "technologies": [
         "Akka HTTP",
         "Amazon EC2",
@@ -7075,7 +7073,7 @@
       ]
     },
     "Font scripts": {
-      "pages": 22186,
+      "pages": 22196,
       "technologies": [
         "Cufon",
         "Font Awesome",
@@ -7086,7 +7084,7 @@
       ]
     },
     "Programming languages": {
-      "pages": 22041,
+      "pages": 22034,
       "technologies": [
         "CFML",
         "Go",
@@ -7100,7 +7098,7 @@
       ]
     },
     "CMS": {
-      "pages": 17804,
+      "pages": 17799,
       "technologies": [
         "AMP Plugin",
         "Adobe Experience Manager",
@@ -7160,7 +7158,7 @@
       ]
     },
     "UI frameworks": {
-      "pages": 16821,
+      "pages": 16813,
       "technologies": [
         "Bootstrap",
         "Bulma",
@@ -7178,7 +7176,7 @@
       ]
     },
     "Databases": {
-      "pages": 9723,
+      "pages": 9722,
       "technologies": [
         "Lucene",
         "MariaDB",
@@ -7191,7 +7189,7 @@
       ]
     },
     "Blogs": {
-      "pages": 9264,
+      "pages": 9263,
       "technologies": [
         "Blogger",
         "Wix",
@@ -7199,7 +7197,7 @@
       ]
     },
     "Reverse proxies": {
-      "pages": 9231,
+      "pages": 9239,
       "technologies": [
         "Envoy",
         "F5 BigIP",
@@ -7208,7 +7206,7 @@
       ]
     },
     "CDN": {
-      "pages": 9031,
+      "pages": 9035,
       "technologies": [
         "Akamai",
         "Amazon Cloudfront",
@@ -7222,7 +7220,7 @@
       ]
     },
     "Operating systems": {
-      "pages": 8223,
+      "pages": 8227,
       "technologies": [
         "CentOS",
         "Debian",
@@ -7237,7 +7235,7 @@
       ]
     },
     "Web frameworks": {
-      "pages": 6614,
+      "pages": 6616,
       "technologies": [
         "Akka HTTP",
         "Blazor",
@@ -7269,7 +7267,7 @@
       ]
     },
     "JavaScript frameworks": {
-      "pages": 5428,
+      "pages": 5430,
       "technologies": [
         "AMP",
         "Alpine.js",
@@ -7306,7 +7304,7 @@
       ]
     },
     "Miscellaneous": {
-      "pages": 3894,
+      "pages": 3896,
       "technologies": [
         "Amazon S3",
         "Clipboard.js",
@@ -7338,7 +7336,7 @@
       ]
     },
     "Caching": {
-      "pages": 3266,
+      "pages": 3263,
       "technologies": [
         "Google PageSpeed",
         "Litespeed Cache",
@@ -7354,7 +7352,7 @@
       ]
     },
     "Widgets": {
-      "pages": 3259,
+      "pages": 3257,
       "technologies": [
         "AMP Plugin",
         "AddThis",
@@ -7370,7 +7368,7 @@
       ]
     },
     "SEO": {
-      "pages": 3003,
+      "pages": 3000,
       "technologies": [
         "All in One SEO Pack",
         "Yoast SEO"
@@ -7385,7 +7383,7 @@
       ]
     },
     "Ecommerce": {
-      "pages": 2317,
+      "pages": 2318,
       "technologies": [
         "Botble CMS",
         "Cart Functionality",
@@ -7407,7 +7405,7 @@
       ]
     },
     "Maps": {
-      "pages": 2139,
+      "pages": 2130,
       "technologies": [
         "ArcGIS API for JavaScript",
         "Google Maps",
@@ -7416,7 +7414,7 @@
       ]
     },
     "Page builders": {
-      "pages": 1986,
+      "pages": 1987,
       "technologies": [
         "Elementor",
         "Mobirise",
@@ -7424,7 +7422,7 @@
       ]
     },
     "Cookie compliance": {
-      "pages": 1785,
+      "pages": 1786,
       "technologies": [
         "CIVIC",
         "CookieHub",
@@ -7434,7 +7432,7 @@
       ]
     },
     "PaaS": {
-      "pages": 1279,
+      "pages": 1280,
       "technologies": [
         "Amazon Web Services",
         "Atlassian Statuspage",
@@ -7482,7 +7480,7 @@
       ]
     },
     "Web server extensions": {
-      "pages": 830,
+      "pages": 829,
       "technologies": [
         "Google PageSpeed",
         "OpenSSL",
@@ -7495,7 +7493,7 @@
       ]
     },
     "Analytics": {
-      "pages": 403,
+      "pages": 405,
       "technologies": [
         "AppDynamics",
         "BugSnag",
@@ -7529,7 +7527,7 @@
       ]
     },
     "Hosting panels": {
-      "pages": 187,
+      "pages": 188,
       "technologies": [
         "Plesk"
       ]
@@ -7541,7 +7539,7 @@
       ]
     },
     "Accessibility": {
-      "pages": 160,
+      "pages": 159,
       "technologies": [
         "Adally",
         "Recite Me",
@@ -7558,7 +7556,7 @@
       ]
     },
     "Editors": {
-      "pages": 146,
+      "pages": 149,
       "technologies": [
         "DreamWeaver",
         "FrontPage",
@@ -7568,7 +7566,7 @@
       ]
     },
     "Marketing automation": {
-      "pages": 130,
+      "pages": 127,
       "technologies": [
         "HubSpot",
         "MailChimp",
