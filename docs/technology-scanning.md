@@ -5,12 +5,12 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-07-08 16:49 UTC — last scan: 2026-07-08_
+_Stats as of 2026-07-08 18:20 UTC — last scan: 2026-07-08_
 
-**104** scan batches run
+**105** scan batches run
 
 **54,670** of **82,714** available pages scanned (**66.1%** coverage)
-**50,642** pages with technology detections (**92.6%** of scanned)
+**50,671** pages with technology detections (**92.7%** of scanned)
 **410** unique technologies identified
 
 ---
@@ -27,7 +27,7 @@ _Stats as of 2026-07-08 16:49 UTC — last scan: 2026-07-08_
 | Denmark | 1,521 | 1,500 | 1,521 | 2026-07-07 |
 | Estonia | 396 | 381 | 396 | 2026-07-06 |
 | Finland | 180 | 170 | 180 | 2026-07-06 |
-| France | 5,699 | 5,345 | 10,007 | 2026-07-07 |
+| France | 5,699 | 5,374 | 10,007 | 2026-07-08 |
 | Germany | 6,555 | 6,471 | 6,555 | 2026-07-07 |
 | Greece | 1,748 | 1,631 | 1,748 | 2026-07-07 |
 | Hungary | 390 | 298 | 390 | 2026-07-06 |
@@ -59,45 +59,45 @@ _Stats as of 2026-07-08 16:49 UTC — last scan: 2026-07-08_
 
 | # | Technology | Pages | Categories |
 |--:|-----------|------:|-----------|
-| 1 | jQuery | **27,736** | JavaScript libraries |
-| 2 | PHP | **16,719** | Programming languages |
-| 3 | Apache | **15,327** | Web servers |
-| 4 | Bootstrap | **13,042** | UI frameworks |
-| 5 | Font Awesome | **11,925** | Font scripts |
-| 6 | Google Font API | **10,030** | Font scripts |
-| 7 | MySQL | **9,340** | Databases |
-| 8 | WordPress | **9,274** | Blogs, CMS |
-| 9 | Nginx | **9,017** | Reverse proxies, Web servers |
-| 10 | jQuery Migrate | **8,161** | JavaScript libraries |
+| 1 | jQuery | **27,757** | JavaScript libraries |
+| 2 | PHP | **16,708** | Programming languages |
+| 3 | Apache | **15,387** | Web servers |
+| 4 | Bootstrap | **13,035** | UI frameworks |
+| 5 | Font Awesome | **11,918** | Font scripts |
+| 6 | Google Font API | **10,008** | Font scripts |
+| 7 | MySQL | **9,329** | Databases |
+| 8 | WordPress | **9,263** | Blogs, CMS |
+| 9 | Nginx | **9,019** | Reverse proxies, Web servers |
+| 10 | jQuery Migrate | **8,150** | JavaScript libraries |
 | 11 | Windows Server | **4,903** | Operating systems |
 | 12 | IIS | **4,836** | Web servers |
-| 13 | jQuery UI | **4,674** | JavaScript libraries |
+| 13 | jQuery UI | **4,673** | JavaScript libraries |
 | 14 | Microsoft ASP.NET | **4,104** | Web frameworks |
 | 15 | jsDelivr | **3,846** | CDN |
-| 16 | Drupal | **3,811** | CMS |
-| 17 | Cloudflare | **3,578** | CDN |
+| 16 | Drupal | **3,817** | CMS |
+| 17 | Cloudflare | **3,576** | CDN |
 | 18 | Google Tag Manager | **3,574** | Tag managers |
-| 19 | Yoast SEO | **2,976** | SEO |
-| 20 | reCAPTCHA | **2,721** | Security |
+| 19 | Yoast SEO | **2,968** | SEO |
+| 20 | reCAPTCHA | **2,712** | Security |
 
 ### Top Technology Categories
 
 | # | Category | Pages |
 |--:|---------|------:|
-| 1 | JavaScript libraries | **55,534** |
-| 2 | Web servers | **32,349** |
-| 3 | Font scripts | **22,399** |
-| 4 | Programming languages | **22,191** |
-| 5 | CMS | **17,898** |
-| 6 | UI frameworks | **16,967** |
-| 7 | Databases | **9,770** |
-| 8 | Blogs | **9,307** |
-| 9 | Reverse proxies | **9,273** |
-| 10 | CDN | **9,123** |
-| 11 | Operating systems | **8,331** |
-| 12 | Web frameworks | **6,692** |
-| 13 | JavaScript frameworks | **5,430** |
-| 14 | Miscellaneous | **3,947** |
+| 1 | JavaScript libraries | **55,533** |
+| 2 | Web servers | **32,416** |
+| 3 | Font scripts | **22,370** |
+| 4 | Programming languages | **22,180** |
+| 5 | CMS | **17,889** |
+| 6 | UI frameworks | **16,960** |
+| 7 | Databases | **9,759** |
+| 8 | Blogs | **9,296** |
+| 9 | Reverse proxies | **9,275** |
+| 10 | CDN | **9,121** |
+| 11 | Operating systems | **8,333** |
+| 12 | Web frameworks | **6,689** |
+| 13 | JavaScript frameworks | **5,423** |
+| 14 | Miscellaneous | **3,941** |
 | 15 | Tag managers | **3,594** |
 
 📥 Machine-readable results: [Download machine-readable technology data (JSON)](technology-data.json)
