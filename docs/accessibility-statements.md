@@ -5,13 +5,13 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-07-10 07:27 UTC — last scan: 2026-07-09_
+_Stats as of 2026-07-10 08:01 UTC — last scan: 2026-07-10_
 
-**136** scan batches run
+**139** scan batches run
 
 **69,809** of **82,714** available pages scanned (**84.4%** coverage)
 **64,289** of **69,809** scanned pages were reachable (**92.1%**)
-**31,766** of **64,289** reachable pages have an accessibility statement (**49.4%**)
+**31,769** of **64,289** reachable pages have an accessibility statement (**49.4%**)
 **28,203** pages have the statement link in the footer (**88.8%** of pages with a statement)
 
 📥 Machine-readable results are available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
@@ -32,7 +32,7 @@ Each country entry in the JSON file includes page-level evidence for pages with 
 | Croatia | 233 | 233 | 230 | 85 | 61 | 37.0% | May 2026 – Jul 2026 |
 | Czechia | 843 | 843 | 806 | 428 | 371 | 53.1% | May 2026 – Jul 2026 |
 | Denmark | 1,521 | 1,521 | 1,497 | 981 | 961 | 65.5% | May 2026 – Jul 2026 |
-| Estonia | 396 | 396 | 381 | 144 | 77 | 37.8% | May 2026 – Jul 2026 |
+| Estonia | 396 | 396 | 381 | 147 | 77 | 38.6% | May 2026 – Jul 2026 |
 | Finland | 180 | 180 | 170 | 115 | 108 | 67.6% | May 2026 – Jul 2026 |
 | France | 10,007 | 10,007 | 9,339 | 3,554 | 3,418 | 38.1% | May 2026 – Jul 2026 |
 | Germany | 6,555 | 6,555 | 6,414 | 4,587 | 3,850 | 71.5% | May 2026 – Jul 2026 |
@@ -57,7 +57,7 @@ Each country entry in the JSON file includes page-level evidence for pages with 
 | Sweden | 1,558 | 1,558 | 1,488 | 847 | 774 | 56.9% | May 2026 – Jul 2026 |
 | Switzerland | 2,117 | 2,117 | 2,080 | 1,022 | 1,021 | 49.1% | May 2026 – Jul 2026 |
 | United Kingdom | 12,794 | 19,502 | 12,030 | 6,907 | 6,527 | 57.4% | May 2026 – Jul 2026 |
-| **Total** | **69,809** | **82,714** | **64,289** | **31,766** | **28,203** | **49.4%** | — |
+| **Total** | **69,809** | **82,714** | **64,289** | **31,769** | **28,203** | **49.4%** | — |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
