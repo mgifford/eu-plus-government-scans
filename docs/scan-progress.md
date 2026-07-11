@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-07-11 05:20 UTC_
+_Generated: 2026-07-11 06:50 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -14,8 +14,8 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
 | **Combined Reachability** | **77,168 confirmed reachable** | 82,714 | **<span role="img" aria-label="93.3% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:112px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">93.3%</span></span>** | — |
-| Social Media | 82,714 scanned (77,168 reachable) | 82,714 | <span role="img" aria-label="100.0% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:120px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">100.0%</span></span> | 26.0 days |
-| Technology | 67,465 scanned | 82,714 | <span role="img" aria-label="81.6% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:98px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">81.6%</span></span> | 22.0 days |
+| Social Media | 82,714 scanned (77,168 reachable) | 82,714 | <span role="img" aria-label="100.0% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:120px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">100.0%</span></span> | 26.1 days |
+| Technology | 67,465 scanned | 82,714 | <span role="img" aria-label="81.6% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:98px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">81.6%</span></span> | 21.7 days |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) | — |
 | Accessibility Statements | 69,809 scanned | 82,714 | <span role="img" aria-label="84.4% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:101px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">84.4%</span></span> | 34.3 days |
 
@@ -66,7 +66,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Country | URLs Scanned | Last Scan |
 |---------|-------------|----------|
 | Austria | 821 | 2026-07-04 |
-| Belgium | 1,309 | 2026-07-07 |
+| Belgium | 1,309 | 2026-07-11 |
 | Bulgaria | 291 | 2026-07-05 |
 | Croatia | 233 | 2026-07-05 |
 | Czechia | 843 | 2026-07-06 |
@@ -91,9 +91,9 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Cyprus | 24 | 2026-07-10 |
 | Romania | 799 | 2026-07-08 |
 | Slovakia | 434 | 2026-07-10 |
-| Slovenia | 200 | 2026-07-04 |
+| Slovenia | 200 | 2026-07-11 |
 | Spain | 6,069 | 2026-07-10 |
-| Sweden | 1,558 | 2026-07-07 |
+| Sweden | 1,558 | 2026-07-11 |
 | Switzerland | 2,117 | 2026-07-04 |
 | United Kingdom | 13,216 | 2026-07-10 |
 
