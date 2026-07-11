@@ -5,7 +5,7 @@ layout: page
 
 <!-- LIGHTHOUSE_STATS_START -->
 
-_Stats as of 2026-07-11 08:54 UTC — last scan: 2026-07-11_
+_Stats as of 2026-07-11 10:30 UTC — last scan: 2026-07-11_
 
 **145** scan batches run
 
