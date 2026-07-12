@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-07-12 08:57 UTC — last scan: 2026-07-12_
+_Stats as of 2026-07-12 10:31 UTC — last scan: 2026-07-12_
 
-**143** scan batches run
+**145** scan batches run
 
 **23,543** of **82,714** available pages scanned (**28.5%** coverage)
 **21,794** of **23,543** scanned pages were reachable (**92.6%**)
-**10,521** reachable pages loaded at least one third-party script (**48.3%** of reachable)
-**13,473** known third-party service loads identified
+**10,522** reachable pages loaded at least one third-party script (**48.3%** of reachable)
+**13,478** known third-party service loads identified
 **24** unique known services across **16** categories
 
 ---
@@ -26,7 +26,7 @@ _Stats as of 2026-07-12 08:57 UTC — last scan: 2026-07-12_
 | Bulgaria | 291 | 291 | 265 | 104 | 126 | 39.2 | 47.5 | 2026-07-09 |
 | Croatia | 233 | 233 | 231 | 120 | 169 | 51.9 | 73.2 | 2026-07-09 |
 | Czechia | 843 | 843 | 806 | 489 | 817 | 60.7 | 101.4 | 2026-07-12 |
-| Denmark | 1,521 | 1,521 | 1,496 | 837 | 2,123 | 55.9 | 141.9 | 2026-07-09 |
+| Denmark | 1,521 | 1,521 | 1,496 | 838 | 2,128 | 56.0 | 142.2 | 2026-07-12 |
 | Estonia | 396 | 396 | 382 | 215 | 106 | 56.3 | 27.7 | 2026-07-10 |
 | Finland | 180 | 180 | 170 | 45 | 25 | 26.5 | 14.7 | 2026-07-10 |
 | France | 1,526 | 10,007 | 1,421 | 641 | 422 | 45.1 | 29.7 | 2026-07-09 |
@@ -47,7 +47,7 @@ _Stats as of 2026-07-12 08:57 UTC — last scan: 2026-07-12_
 | Cyprus | 24 | 24 | 24 | 14 | 15 | 58.3 | 62.5 | 2026-07-11 |
 | Romania | 439 | 799 | 202 | 152 | 154 | 75.2 | 76.2 | 2026-07-11 |
 | Slovakia | 434 | 434 | 415 | 214 | 275 | 51.6 | 66.3 | 2026-07-12 |
-| Slovenia | 200 | 200 | 192 | 53 | 80 | 27.6 | 41.7 | 2026-07-09 |
+| Slovenia | 200 | 200 | 192 | 53 | 80 | 27.6 | 41.7 | 2026-07-12 |
 | Spain | 1,334 | 6,069 | 1,175 | 577 | 477 | 49.1 | 40.6 | 2026-07-07 |
 | Sweden | 1,558 | 1,558 | 1,472 | 459 | 250 | 31.2 | 17.0 | 2026-07-08 |
 | Switzerland | 730 | 2,117 | 715 | 160 | 171 | 22.4 | 23.9 | 2026-07-08 |
@@ -62,7 +62,7 @@ _Stats as of 2026-07-12 08:57 UTC — last scan: 2026-07-12_
 | # | Service | Loads |
 |--:|---------|------:|
 | 1 | jsDelivr CDN | **2,975** |
-| 2 | cdnjs (Cloudflare CDN) | **2,517** |
+| 2 | cdnjs (Cloudflare CDN) | **2,522** |
 | 3 | Google Analytics (GA4) | **1,955** |
 | 4 | jQuery | **1,055** |
 | 5 | Google reCAPTCHA | **950** |
@@ -88,7 +88,7 @@ _Stats as of 2026-07-12 08:57 UTC — last scan: 2026-07-12_
 |--:|---------|----------------:|------------------------------:|
 | 1 | Google Analytics (GA4) | **1,916** | **407.7%** |
 | 2 | jsDelivr CDN | **1,759** | **374.3%** |
-| 3 | cdnjs (Cloudflare CDN) | **1,072** | **228.1%** |
+| 3 | cdnjs (Cloudflare CDN) | **1,073** | **228.3%** |
 | 4 | Google reCAPTCHA | **924** | **196.6%** |
 | 5 | Google Tag Manager | **789** | **167.9%** |
 | 6 | jQuery | **747** | **158.9%** |
@@ -111,7 +111,7 @@ _Stats as of 2026-07-12 08:57 UTC — last scan: 2026-07-12_
 
 | # | Category | Loads |
 |--:|----------|------:|
-| 1 | CDN | **6,980** |
+| 1 | CDN | **6,985** |
 | 2 | Analytics | **2,104** |
 | 3 | JavaScript Library | **1,719** |
 | 4 | Security | **988** |
@@ -133,7 +133,7 @@ Infrastructure-heavy categories (CDNs, core libraries, and UI assets):
 
 | # | Infrastructure Category | Loads |
 |--:|--------------------------|------:|
-| 1 | CDN | **6,980** |
+| 1 | CDN | **6,985** |
 | 2 | JavaScript Library | **1,719** |
 | 3 | Icon Library | **289** |
 | 4 | UI Framework | **214** |
@@ -160,7 +160,7 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 | # | Host | Loads | Reachable Pages |
 |--:|------|------:|----------------:|
 | 1 | `cdn.ent.auvergnerhonealpes.fr` | **2,455** | **260** |
-| 2 | `ajax.aspnetcdn.com` | **632** | **312** |
+| 2 | `ajax.aspnetcdn.com` | **634** | **313** |
 | 3 | `cdn.ecollege.haute-garonne.fr` | **461** | **44** |
 | 4 | `static.addtoany.com` | **394** | **388** |
 | 5 | `cuatro.sim-cdn.nl` | **379** | **11** |
@@ -173,7 +173,7 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 | 12 | `cdn.public.lu` | **267** | **209** |
 | 13 | `cdn.datatables.net` | **263** | **86** |
 | 14 | `cm-ob.pt` | **249** | **17** |
-| 15 | `dreambroker.com` | **247** | **247** |
+| 15 | `dreambroker.com` | **248** | **248** |
 
 > These hosts were seen as third-party script sources but did not match a known service signature. Review this queue regularly and promote stable, policy-relevant hosts into the signature list.
 
