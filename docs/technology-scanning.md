@@ -5,7 +5,102 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_No scan data yet — stats update automatically after every scan run._
+_Stats as of 2026-07-12 20:07 UTC — last scan: 2026-07-12_
+
+**134** scan batches run
+
+**67,465** of **82,714** available pages scanned (**81.6%** coverage)
+**62,346** pages with technology detections (**92.4%** of scanned)
+**427** unique technologies identified
+
+---
+
+## Technology Scan by Country
+
+| Country | URLs Scanned | Pages with Detections | Available | Last Scan |
+|---------|-------------|----------------------|-----------|----------|
+| Austria | 821 | 787 | 821 | 2026-07-12 |
+| Belgium | 1,309 | 1,221 | 1,309 | 2026-07-11 |
+| Bulgaria | 291 | 265 | 291 | 2026-07-12 |
+| Croatia | 233 | 231 | 233 | 2026-07-12 |
+| Czechia | 843 | 806 | 843 | 2026-07-06 |
+| Denmark | 1,521 | 1,500 | 1,521 | 2026-07-07 |
+| Estonia | 396 | 381 | 396 | 2026-07-06 |
+| Finland | 180 | 170 | 180 | 2026-07-06 |
+| France | 9,492 | 8,883 | 10,007 | 2026-07-11 |
+| Germany | 6,555 | 6,477 | 6,555 | 2026-07-08 |
+| Greece | 1,748 | 1,631 | 1,748 | 2026-07-07 |
+| Hungary | 390 | 298 | 390 | 2026-07-06 |
+| Iceland | 139 | 137 | 139 | 2026-07-06 |
+| Ireland | 522 | 490 | 522 | 2026-07-06 |
+| Italy | 5,338 | 4,820 | 5,338 | 2026-07-10 |
+| Latvia | 802 | 774 | 802 | 2026-07-10 |
+| Lithuania | 120 | 110 | 120 | 2026-07-10 |
+| Luxembourg | 571 | 445 | 571 | 2026-07-10 |
+| Malta | 608 | 593 | 608 | 2026-07-10 |
+| Netherlands | 937 | 912 | 937 | 2026-07-10 |
+| Norway | 239 | 233 | 239 | 2026-07-12 |
+| Poland | 6,490 | 5,971 | 14,938 | 2026-07-10 |
+| Portugal | 3,503 | 2,935 | 3,503 | 2026-07-12 |
+| Cyprus | 24 | 24 | 24 | 2026-07-10 |
+| Romania | 799 | 342 | 799 | 2026-07-12 |
+| Slovakia | 434 | 415 | 434 | 2026-07-10 |
+| Slovenia | 200 | 193 | 200 | 2026-07-11 |
+| Spain | 6,069 | 5,301 | 6,069 | 2026-07-10 |
+| Sweden | 1,558 | 1,489 | 1,558 | 2026-07-11 |
+| Switzerland | 2,117 | 2,080 | 2,117 | 2026-07-12 |
+| United Kingdom | 13,216 | 12,432 | 19,502 | 2026-07-10 |
+
+> Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and metric from [Download machine-readable technology data (JSON)](technology-data.json).
+
+---
+
+### Top Technologies
+
+| # | Technology | Pages | Categories |
+|--:|-----------|------:|-----------|
+| 1 | jQuery | **33,651** | JavaScript libraries |
+| 2 | PHP | **20,237** | Programming languages |
+| 3 | Apache | **17,909** | Web servers |
+| 4 | Bootstrap | **15,755** | UI frameworks |
+| 5 | Font Awesome | **14,692** | Font scripts |
+| 6 | Google Font API | **12,109** | Font scripts |
+| 7 | MySQL | **11,210** | Databases |
+| 8 | WordPress | **11,139** | Blogs, CMS |
+| 9 | Nginx | **10,998** | Reverse proxies, Web servers |
+| 10 | jQuery Migrate | **9,854** | JavaScript libraries |
+| 11 | Windows Server | **5,881** | Operating systems |
+| 12 | IIS | **5,796** | Web servers |
+| 13 | jQuery UI | **5,650** | JavaScript libraries |
+| 14 | Microsoft ASP.NET | **5,007** | Web frameworks |
+| 15 | Cloudflare | **4,838** | CDN |
+| 16 | Google Tag Manager | **4,814** | Tag managers |
+| 17 | Drupal | **4,755** | CMS |
+| 18 | jsDelivr | **4,578** | CDN |
+| 19 | Yoast SEO | **3,636** | SEO |
+| 20 | reCAPTCHA | **3,599** | Security |
+
+### Top Technology Categories
+
+| # | Category | Pages |
+|--:|---------|------:|
+| 1 | JavaScript libraries | **66,695** |
+| 2 | Web servers | **38,377** |
+| 3 | Font scripts | **27,305** |
+| 4 | Programming languages | **26,353** |
+| 5 | CMS | **21,559** |
+| 6 | UI frameworks | **20,853** |
+| 7 | CDN | **12,298** |
+| 8 | Databases | **11,748** |
+| 9 | Reverse proxies | **11,308** |
+| 10 | Blogs | **11,208** |
+| 11 | Operating systems | **9,700** |
+| 12 | Web frameworks | **7,976** |
+| 13 | JavaScript frameworks | **6,517** |
+| 14 | Miscellaneous | **4,935** |
+| 15 | Tag managers | **4,846** |
+
+📥 Machine-readable results: [Download machine-readable technology data (JSON)](technology-data.json)
 
 <!-- TECH_STATS_END -->
 
