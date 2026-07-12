@@ -5,7 +5,61 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_No scan data yet — stats update automatically after every scan run._
+_Stats as of 2026-07-12 01:46 UTC — last scan: 2026-07-11_
+
+**147** scan batches run
+
+**69,809** of **82,714** available pages scanned (**84.4%** coverage)
+**64,345** of **69,809** scanned pages were reachable (**92.2%**)
+**31,802** of **64,345** reachable pages have an accessibility statement (**49.4%**)
+**28,238** pages have the statement link in the footer (**88.8%** of pages with a statement)
+
+📥 Machine-readable results are available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
+
+Each country entry in the JSON file includes page-level evidence for pages with and without accessibility statements, plus a per-domain summary you can share to validate the published counts.
+
+> Hover or focus any non-zero count in the country table to preview the matching pages. If there are 20 or fewer URLs, the preview shows all of them; otherwise it shows a short sample. Full machine-readable data is available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
+
+---
+
+## Accessibility Statement Scan by Country
+
+| Country | Scanned | Available | Reachable | Has Statement | In Footer | Statement % | Scan Period |
+|---------|---------|-----------|-----------|--------------|-----------|------------|-------------|
+| Austria | 821 | 821 | 787 | 557 | 527 | 70.8% | May 2026 – Jul 2026 |
+| Belgium | 1,309 | 1,309 | 1,223 | 569 | 521 | 46.5% | May 2026 – Jul 2026 |
+| Bulgaria | 291 | 291 | 264 | 61 | 59 | 23.1% | May 2026 – Jul 2026 |
+| Croatia | 233 | 233 | 230 | 85 | 61 | 37.0% | May 2026 – Jul 2026 |
+| Czechia | 843 | 843 | 806 | 428 | 371 | 53.1% | May 2026 – Jul 2026 |
+| Denmark | 1,521 | 1,521 | 1,497 | 981 | 961 | 65.5% | May 2026 – Jul 2026 |
+| Estonia | 396 | 396 | 381 | 147 | 77 | 38.6% | May 2026 – Jul 2026 |
+| Finland | 180 | 180 | 170 | 115 | 108 | 67.6% | May 2026 – Jul 2026 |
+| France | 10,007 | 10,007 | 9,352 | 3,566 | 3,429 | 38.1% | May 2026 – Jul 2026 |
+| Germany | 6,555 | 6,555 | 6,414 | 4,587 | 3,850 | 71.5% | May 2026 – Jul 2026 |
+| Greece | 1,748 | 1,748 | 1,635 | 421 | 251 | 25.7% | May 2026 – Jul 2026 |
+| Hungary | 390 | 390 | 298 | 55 | 47 | 18.5% | May 2026 – Jul 2026 |
+| Iceland | 139 | 139 | 137 | 13 | 5 | 9.5% | May 2026 – Jul 2026 |
+| Ireland | 522 | 522 | 490 | 211 | 196 | 43.1% | May 2026 – Jul 2026 |
+| Italy | 5,338 | 5,338 | 4,868 | 2,687 | 2,617 | 55.2% | May 2026 – Jul 2026 |
+| Latvia | 802 | 802 | 774 | 493 | 452 | 63.7% | May 2026 – Jul 2026 |
+| Lithuania | 120 | 120 | 110 | 0 | 0 | 0.0% | May 2026 – Jul 2026 |
+| Luxembourg | 571 | 571 | 445 | 278 | 267 | 62.5% | May 2026 – Jul 2026 |
+| Malta | 608 | 608 | 593 | 387 | 382 | 65.3% | May 2026 – Jul 2026 |
+| Netherlands | 937 | 937 | 913 | 443 | 433 | 48.5% | May 2026 – Jul 2026 |
+| Norway | 239 | 239 | 233 | 108 | 102 | 46.4% | May 2026 – Jul 2026 |
+| Poland | 8,741 | 14,938 | 7,949 | 3,270 | 2,148 | 41.1% | May 2026 – Jul 2026 |
+| Portugal | 3,503 | 3,503 | 2,911 | 869 | 706 | 29.9% | May 2026 – Jul 2026 |
+| Cyprus | 24 | 24 | 24 | 0 | 0 | 0.0% | May 2026 – Jul 2026 |
+| Romania | 799 | 799 | 338 | 27 | 9 | 8.0% | May 2026 – Jul 2026 |
+| Slovakia | 434 | 434 | 415 | 190 | 175 | 45.8% | May 2026 – Jul 2026 |
+| Slovenia | 200 | 200 | 193 | 103 | 77 | 53.4% | May 2026 – Jul 2026 |
+| Spain | 6,069 | 6,069 | 5,297 | 2,375 | 2,085 | 44.8% | May 2026 – Jul 2026 |
+| Sweden | 1,558 | 1,558 | 1,488 | 847 | 774 | 56.9% | May 2026 – Jul 2026 |
+| Switzerland | 2,117 | 2,117 | 2,080 | 1,022 | 1,021 | 49.1% | May 2026 – Jul 2026 |
+| United Kingdom | 12,794 | 19,502 | 12,030 | 6,907 | 6,527 | 57.4% | May 2026 – Jul 2026 |
+| **Total** | **69,809** | **82,714** | **64,345** | **31,802** | **28,238** | **49.4%** | — |
+
+> **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
 <!-- ACCESSIBILITY_STATS_END -->
 
