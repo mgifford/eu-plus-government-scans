@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-07-13 13:52 UTC — last scan: 2026-07-13_
+_Stats as of 2026-07-13 15:15 UTC — last scan: 2026-07-13_
 
-**157** scan batches run
+**159** scan batches run
 
 **23,669** of **82,714** available pages scanned (**28.6%** coverage)
 **21,919** of **23,669** scanned pages were reachable (**92.6%**)
 **10,597** reachable pages loaded at least one third-party script (**48.3%** of reachable)
-**13,602** known third-party service loads identified
+**13,603** known third-party service loads identified
 **24** unique known services across **16** categories
 
 ---
@@ -32,7 +32,7 @@ _Stats as of 2026-07-13 13:52 UTC — last scan: 2026-07-13_
 | France | 1,526 | 10,007 | 1,421 | 641 | 422 | 45.1 | 29.7 | 2026-07-09 |
 | Germany | 1,576 | 6,555 | 1,552 | 469 | 469 | 30.2 | 30.2 | 2026-07-10 |
 | Greece | 1,477 | 1,748 | 1,378 | 678 | 919 | 49.2 | 66.7 | 2026-07-10 |
-| Hungary | 390 | 390 | 298 | 129 | 189 | 43.3 | 63.4 | 2026-07-10 |
+| Hungary | 390 | 390 | 298 | 129 | 187 | 43.3 | 62.8 | 2026-07-13 |
 | Iceland | 139 | 139 | 137 | 73 | 46 | 53.3 | 33.6 | 2026-07-10 |
 | Ireland | 522 | 522 | 490 | 276 | 735 | 56.3 | 150.0 | 2026-07-12 |
 | Italy | 1,030 | 5,338 | 941 | 346 | 323 | 36.8 | 34.3 | 2026-07-10 |
@@ -40,7 +40,7 @@ _Stats as of 2026-07-13 13:52 UTC — last scan: 2026-07-13_
 | Lithuania | 120 | 120 | 110 | 55 | 110 | 50.0 | 100.0 | 2026-07-11 |
 | Luxembourg | 571 | 571 | 445 | 334 | 146 | 75.1 | 32.8 | 2026-07-13 |
 | Malta | 608 | 608 | 593 | 471 | 1,284 | 79.4 | 216.5 | 2026-07-13 |
-| Netherlands | 937 | 937 | 913 | 415 | 296 | 45.5 | 32.4 | 2026-07-10 |
+| Netherlands | 937 | 937 | 913 | 415 | 299 | 45.5 | 32.7 | 2026-07-13 |
 | Norway | 239 | 239 | 233 | 131 | 110 | 56.2 | 47.2 | 2026-07-11 |
 | Poland | 1,439 | 14,938 | 1,330 | 680 | 972 | 51.1 | 73.1 | 2026-07-11 |
 | Portugal | 1,360 | 3,503 | 1,157 | 679 | 1,069 | 58.7 | 92.4 | 2026-07-11 |
@@ -61,14 +61,14 @@ _Stats as of 2026-07-13 13:52 UTC — last scan: 2026-07-13_
 
 | # | Service | Loads |
 |--:|---------|------:|
-| 1 | jsDelivr CDN | **2,984** |
+| 1 | jsDelivr CDN | **2,985** |
 | 2 | cdnjs (Cloudflare CDN) | **2,535** |
 | 3 | Google Analytics (GA4) | **2,000** |
 | 4 | jQuery | **1,061** |
 | 5 | Google reCAPTCHA | **971** |
 | 6 | unpkg CDN | **833** |
-| 7 | Google Tag Manager | **822** |
-| 8 | Google Hosted Libraries | **669** |
+| 7 | Google Tag Manager | **820** |
+| 8 | Google Hosted Libraries | **671** |
 | 9 | CookieInformation | **444** |
 | 10 | Cookiebot | **425** |
 | 11 | Font Awesome | **289** |
@@ -87,13 +87,13 @@ _Stats as of 2026-07-13 13:52 UTC — last scan: 2026-07-13_
 | # | Service | Reachable Pages | Prevalence of Reachable Pages |
 |--:|---------|----------------:|------------------------------:|
 | 1 | Google Analytics (GA4) | **1,959** | **334.3%** |
-| 2 | jsDelivr CDN | **1,768** | **301.7%** |
+| 2 | jsDelivr CDN | **1,769** | **301.9%** |
 | 3 | cdnjs (Cloudflare CDN) | **1,085** | **185.2%** |
 | 4 | Google reCAPTCHA | **943** | **160.9%** |
-| 5 | Google Tag Manager | **794** | **135.5%** |
+| 5 | Google Tag Manager | **792** | **135.2%** |
 | 6 | jQuery | **754** | **128.7%** |
 | 7 | unpkg CDN | **620** | **105.8%** |
-| 8 | Google Hosted Libraries | **592** | **101.0%** |
+| 8 | Google Hosted Libraries | **594** | **101.4%** |
 | 9 | CookieInformation | **444** | **75.8%** |
 | 10 | Cookiebot | **416** | **71.0%** |
 | 11 | Font Awesome | **232** | **39.6%** |
@@ -111,13 +111,13 @@ _Stats as of 2026-07-13 13:52 UTC — last scan: 2026-07-13_
 
 | # | Category | Loads |
 |--:|----------|------:|
-| 1 | CDN | **7,021** |
+| 1 | CDN | **7,024** |
 | 2 | Analytics | **2,154** |
-| 3 | JavaScript Library | **1,730** |
+| 3 | JavaScript Library | **1,732** |
 | 4 | Security | **1,009** |
 | 5 | Cookie Consent | **976** |
 | 6 | CAPTCHA | **971** |
-| 7 | Tag Manager | **853** |
+| 7 | Tag Manager | **851** |
 | 8 | Icon Library | **289** |
 | 9 | UI Framework | **218** |
 | 10 | Advertising | **77** |
@@ -133,8 +133,8 @@ Infrastructure-heavy categories (CDNs, core libraries, and UI assets):
 
 | # | Infrastructure Category | Loads |
 |--:|--------------------------|------:|
-| 1 | CDN | **7,021** |
-| 2 | JavaScript Library | **1,730** |
+| 1 | CDN | **7,024** |
+| 2 | JavaScript Library | **1,732** |
 | 3 | Icon Library | **289** |
 | 4 | UI Framework | **218** |
 
@@ -146,7 +146,7 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 | 2 | Security | **1,009** |
 | 3 | Cookie Consent | **976** |
 | 4 | CAPTCHA | **971** |
-| 5 | Tag Manager | **853** |
+| 5 | Tag Manager | **851** |
 | 6 | Advertising | **77** |
 | 7 | Error Tracking | **29** |
 | 8 | Customer Support | **13** |
@@ -163,11 +163,11 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 | 2 | `ajax.aspnetcdn.com` | **634** | **313** |
 | 3 | `cdn.ecollege.haute-garonne.fr` | **461** | **44** |
 | 4 | `static.addtoany.com` | **394** | **388** |
-| 5 | `assets.epexio.com` | **381** | **15** |
-| 6 | `cuatro.sim-cdn.nl` | **379** | **11** |
+| 5 | `cuatro.sim-cdn.nl` | **390** | **11** |
+| 6 | `assets.epexio.com` | **381** | **15** |
 | 7 | `translate.google.com` | **331** | **331** |
 | 8 | `customer.cludo.com` | **327** | **247** |
-| 9 | `maps.googleapis.com` | **319** | **304** |
+| 9 | `maps.googleapis.com` | **320** | **305** |
 | 10 | `www.youtube.com` | **276** | **276** |
 | 11 | `cookie-notice.plzen.eu` | **274** | **146** |
 | 12 | `cdn.public.lu` | **267** | **209** |
