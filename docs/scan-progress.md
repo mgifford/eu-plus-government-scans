@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-07-13 15:15 UTC_
+_Generated: 2026-07-13 16:47 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -13,11 +13,11 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
-| **Combined Reachability** | **77,203 confirmed reachable** | 82,714 | **<span role="img" aria-label="93.3% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:112px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">93.3%</span></span>** | — |
-| Social Media | 82,714 scanned (77,203 reachable) | 82,714 | <span role="img" aria-label="100.0% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:120px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">100.0%</span></span> | 25.0 days |
-| Technology | 69,164 scanned | 82,714 | <span role="img" aria-label="83.6% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:100px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">83.6%</span></span> | 22.1 days |
+| **Combined Reachability** | **77,248 confirmed reachable** | 82,714 | **<span role="img" aria-label="93.4% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:112px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">93.4%</span></span>** | — |
+| Social Media | 82,714 scanned (77,248 reachable) | 82,714 | <span role="img" aria-label="100.0% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:120px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">100.0%</span></span> | 24.9 days |
+| Technology | 69,164 scanned | 82,714 | <span role="img" aria-label="83.6% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:100px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">83.6%</span></span> | 22.2 days |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) | — |
-| Accessibility Statements | 69,809 scanned | 82,714 | <span role="img" aria-label="84.4% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:101px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">84.4%</span></span> | 34.2 days |
+| Accessibility Statements | 69,809 scanned | 82,714 | <span role="img" aria-label="84.4% complete" style="display:inline-flex;align-items:center;gap:4px;vertical-align:middle;"><span style="display:inline-block;width:120px;height:12px;background:#e2e8f0;border-radius:2px;overflow:hidden;"><span style="display:block;width:101px;height:100%;background:#15803d;"></span></span><span style="font-size:0.85em;color:#374151;">84.4%</span></span> | 34.3 days |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by any scan type. **Avg Age** shows the mean number of days (or hours) since each URL in that scan type was last scanned — lower is fresher.
 
@@ -39,7 +39,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Hungary | 390 | 390 | 298 | 117 | 1 | 28 | 161 | 26 | 0 | 0 | 29 | May 2026 – Jul 2026 |
 | Iceland | 139 | 139 | 137 | 27 | 0 | 15 | 98 | 8 | 5 | 0 | 15 | May 2026 – Jul 2026 |
 | Ireland | 522 | 522 | 490 | 201 | 0 | 54 | 256 | 162 | 37 | 18 | 42 | May 2026 – Jul 2026 |
-| Italy | 5,338 | 5,338 | 4,941 | 2,357 | 18 | 331 | 2,329 | 2,037 | 144 | 0 | 349 | May 2026 – Jul 2026 |
+| Italy | 5,338 | 5,338 | 4,976 | 2,387 | 18 | 333 | 2,338 | 2,068 | 144 | 0 | 351 | May 2026 – Jul 2026 |
 | Latvia | 802 | 802 | 774 | 384 | 0 | 86 | 321 | 282 | 55 | 0 | 86 | May 2026 – Jul 2026 |
 | Lithuania | 120 | 120 | 110 | 25 | 0 | 4 | 84 | 5 | 0 | 0 | 4 | May 2026 – Jul 2026 |
 | Luxembourg | 571 | 571 | 445 | 78 | 2 | 176 | 217 | 177 | 6 | 143 | 41 | May 2026 – Jul 2026 |
@@ -52,7 +52,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Romania | 799 | 799 | 342 | 119 | 3 | 11 | 209 | 46 | 1 | 0 | 14 | May 2026 – Jul 2026 |
 | Slovakia | 434 | 434 | 415 | 138 | 0 | 21 | 263 | 17 | 12 | 0 | 21 | May 2026 – Jul 2026 |
 | Slovenia | 200 | 200 | 190 | 52 | 0 | 9 | 133 | 21 | 6 | 1 | 9 | May 2026 – Jul 2026 |
-| Spain | 6,069 | 6,069 | 5,402 | 2,027 | 11 | 346 | 3,102 | 1,765 | 448 | 63 | 316 | May 2026 – Jul 2026 |
+| Spain | 6,069 | 6,069 | 5,412 | 2,031 | 11 | 347 | 3,107 | 1,770 | 448 | 63 | 317 | May 2026 – Jul 2026 |
 | Sweden | 1,558 | 1,558 | 1,489 | 487 | 3 | 33 | 977 | 82 | 18 | 11 | 25 | May 2026 – Jul 2026 |
 | Switzerland | 2,117 | 2,117 | 2,080 | 573 | 31 | 148 | 1,385 | 241 | 225 | 54 | 139 | May 2026 – Jul 2026 |
 | United Kingdom | 19,502 | 19,502 | 18,731 | 6,660 | 37 | 760 | 11,966 | 4,111 | 1,068 | 130 | 719 | May 2026 – Jul 2026 |
