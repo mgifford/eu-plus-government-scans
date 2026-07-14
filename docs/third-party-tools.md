@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-07-14 20:39 UTC — last scan: 2026-07-14_
+_Stats as of 2026-07-14 22:02 UTC — last scan: 2026-07-14_
 
-**166** scan batches run
+**169** scan batches run
 
 **23,669** of **82,714** available pages scanned (**28.6%** coverage)
 **21,919** of **23,669** scanned pages were reachable (**92.6%**)
 **10,597** reachable pages loaded at least one third-party script (**48.3%** of reachable)
-**13,602** known third-party service loads identified
+**13,605** known third-party service loads identified
 **24** unique known services across **16** categories
 
 ---
@@ -25,12 +25,12 @@ _Stats as of 2026-07-14 20:39 UTC — last scan: 2026-07-14_
 | Belgium | 1,309 | 1,309 | 1,220 | 638 | 720 | 52.3 | 59.0 | 2026-07-14 |
 | Bulgaria | 291 | 291 | 265 | 104 | 126 | 39.2 | 47.5 | 2026-07-12 |
 | Croatia | 233 | 233 | 231 | 120 | 169 | 51.9 | 73.2 | 2026-07-12 |
-| Czechia | 843 | 843 | 806 | 489 | 817 | 60.7 | 101.4 | 2026-07-12 |
+| Czechia | 843 | 843 | 806 | 489 | 820 | 60.7 | 101.7 | 2026-07-14 |
 | Denmark | 1,521 | 1,521 | 1,496 | 838 | 2,128 | 56.0 | 142.2 | 2026-07-12 |
 | Estonia | 396 | 396 | 382 | 215 | 106 | 56.3 | 27.7 | 2026-07-13 |
 | Finland | 180 | 180 | 170 | 45 | 25 | 26.5 | 14.7 | 2026-07-13 |
 | France | 1,526 | 10,007 | 1,421 | 641 | 422 | 45.1 | 29.7 | 2026-07-14 |
-| Germany | 1,576 | 6,555 | 1,552 | 469 | 469 | 30.2 | 30.2 | 2026-07-10 |
+| Germany | 1,576 | 6,555 | 1,552 | 469 | 469 | 30.2 | 30.2 | 2026-07-14 |
 | Greece | 1,477 | 1,748 | 1,378 | 678 | 919 | 49.2 | 66.7 | 2026-07-10 |
 | Hungary | 390 | 390 | 298 | 129 | 187 | 43.3 | 62.8 | 2026-07-13 |
 | Iceland | 139 | 139 | 137 | 73 | 45 | 53.3 | 32.8 | 2026-07-14 |
@@ -44,7 +44,7 @@ _Stats as of 2026-07-14 20:39 UTC — last scan: 2026-07-14_
 | Norway | 239 | 239 | 233 | 131 | 110 | 56.2 | 47.2 | 2026-07-14 |
 | Poland | 1,439 | 14,938 | 1,330 | 680 | 972 | 51.1 | 73.1 | 2026-07-11 |
 | Portugal | 1,360 | 3,503 | 1,157 | 679 | 1,069 | 58.7 | 92.4 | 2026-07-11 |
-| Cyprus | 24 | 24 | 24 | 14 | 15 | 58.3 | 62.5 | 2026-07-11 |
+| Cyprus | 24 | 24 | 24 | 14 | 15 | 58.3 | 62.5 | 2026-07-14 |
 | Romania | 439 | 799 | 202 | 152 | 154 | 75.2 | 76.2 | 2026-07-14 |
 | Slovakia | 434 | 434 | 415 | 214 | 275 | 51.6 | 66.3 | 2026-07-12 |
 | Slovenia | 200 | 200 | 192 | 53 | 80 | 27.6 | 41.7 | 2026-07-12 |
@@ -63,7 +63,7 @@ _Stats as of 2026-07-14 20:39 UTC — last scan: 2026-07-14_
 |--:|---------|------:|
 | 1 | jsDelivr CDN | **2,984** |
 | 2 | cdnjs (Cloudflare CDN) | **2,535** |
-| 3 | Google Analytics (GA4) | **2,000** |
+| 3 | Google Analytics (GA4) | **2,003** |
 | 4 | jQuery | **1,061** |
 | 5 | Google reCAPTCHA | **971** |
 | 6 | unpkg CDN | **833** |
@@ -86,7 +86,7 @@ _Stats as of 2026-07-14 20:39 UTC — last scan: 2026-07-14_
 
 | # | Service | Reachable Pages | Prevalence of Reachable Pages |
 |--:|---------|----------------:|------------------------------:|
-| 1 | Google Analytics (GA4) | **1,959** | **334.3%** |
+| 1 | Google Analytics (GA4) | **1,962** | **334.8%** |
 | 2 | jsDelivr CDN | **1,768** | **301.7%** |
 | 3 | cdnjs (Cloudflare CDN) | **1,085** | **185.2%** |
 | 4 | Google reCAPTCHA | **943** | **160.9%** |
@@ -112,7 +112,7 @@ _Stats as of 2026-07-14 20:39 UTC — last scan: 2026-07-14_
 | # | Category | Loads |
 |--:|----------|------:|
 | 1 | CDN | **7,023** |
-| 2 | Analytics | **2,154** |
+| 2 | Analytics | **2,157** |
 | 3 | JavaScript Library | **1,732** |
 | 4 | Security | **1,009** |
 | 5 | Cookie Consent | **976** |
@@ -142,7 +142,7 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 
 | # | Policy-Relevant Category | Loads |
 |--:|--------------------------|------:|
-| 1 | Analytics | **2,154** |
+| 1 | Analytics | **2,157** |
 | 2 | Security | **1,009** |
 | 3 | Cookie Consent | **976** |
 | 4 | CAPTCHA | **971** |
