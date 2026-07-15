@@ -28,6 +28,7 @@ user_agent = "Mozilla/5.0 (compatible; lychee/2.x; +https://github.com/lycheever
 # - localhost / 127.0.0.1  : local development server referenced in README
 # - example.gov / unreachable.gov : placeholder URLs used in code examples
 # - shields.io badge URLs  : sometimes rate-limited; not worth failing CI
+# - technology-data.json   : artifact-only file generated at scan time; not committed
 exclude = [
     "http://127\\.0\\.0\\.1",
     "http://localhost",
@@ -35,11 +36,18 @@ exclude = [
     "https?://example\\.gov",
     "https?://unreachable\\.gov",
     "https://img\\.shields\\.io",
+    "technology-data\\.json",
 ]
 
 # Exclude specific files that are machine-generated scan reports containing
 # tens of thousands of government URLs — checking those would drown out
 # real documentation link errors.
+# Also exclude internal tooling directories:
+# - .kittify/            : Kittify AI-agent templates with placeholder links ({link},
+#                          {external-link}, etc.) that are not real URLs
+# - .github/prompts/     : AI prompt files that reference non-existent template paths
+# - kitty-specs/         : Feature spec/planning files with devcontainer-absolute paths
+#                          (/workspaces/...) that are only valid inside VS Code
 exclude_path = [
     "docs/domains.md",
     "docs/scan-progress.md",
@@ -47,4 +55,7 @@ exclude_path = [
     "docs/accessibility-statements.md",
     "docs/third-party-tools.md",
     "docs/third-party-tools-data.json",
+    ".kittify",
+    ".github/prompts",
+    "kitty-specs",
 ]

@@ -67,7 +67,7 @@ When crawling or referencing external accessibility resources:
 
 ## 9. Getting Help
 
-- **Questions:** Open a [discussion](https://github.com/mgifford/eu-plus-government-scans/discussions)
+- **Questions:** Open an [issue](https://github.com/mgifford/eu-plus-government-scans/issues)
 - **Bugs or gaps:** Open an [issue](https://github.com/mgifford/eu-plus-government-scans/issues)
 - **Contributions:** See [README.md](./README.md) for setup and contribution guidance
 - **Accommodations:** Request via the `accessibility-accommodation` label
