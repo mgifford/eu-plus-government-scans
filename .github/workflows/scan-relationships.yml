@@ -1,0 +1,149 @@
+name: Scan Relationships
+
+on:
+  # Run weekly on Sundays at 04:00 UTC (same as Lighthouse)
+  schedule:
+    - cron: '0 4 * * 0'
+
+  # Allow manual trigger for a single country or all countries
+  workflow_dispatch:
+    inputs:
+      country:
+        description: 'Country code to scan (e.g., ICELAND, FRANCE) — leave empty for all EU countries'
+        required: false
+        type: string
+      rate_limit:
+        description: 'Maximum requests per second (keep low for polite crawling)'
+        required: false
+        default: '1.0'
+        type: string
+      max_runtime:
+        description: 'Maximum runtime in minutes (0 = no limit)'
+        required: false
+        default: '0'
+        type: string
+
+# Share concurrency group with other metadata-producing scan workflows
+concurrency:
+  group: metadata-scans
+  cancel-in-progress: false
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  scan-relationships:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    permissions:
+      contents: read
+      actions: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Find latest relationship artifact run ID
+        id: find-relationships
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          RUN_ID=$(gh api --paginate "/repos/${{ github.repository }}/actions/artifacts?per_page=100&name=relationship-data" \
+            --jq '.artifacts[] | select(.expired == false) | "\(.created_at) \(.workflow_run.id)"' \
+            2>/dev/null | sort -rk1 | head -1 | awk '{print $2}' || echo "")
+          echo "run_id=${RUN_ID}" >> $GITHUB_OUTPUT
+          if [ -n "$RUN_ID" ]; then
+            echo "Found relationship-data artifact from run $RUN_ID"
+          else
+            echo "No relationship-data artifact found — will start fresh"
+          fi
+
+      - name: Download previous relationship data (if exists)
+        if: steps.find-relationships.outputs.run_id != ''
+        continue-on-error: true
+        uses: actions/download-artifact@v8
+        with:
+          name: relationship-data
+          path: data/work/relationships
+          run-id: ${{ steps.find-relationships.outputs.run_id }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Scan relationships for specified country
+        if: inputs.country != ''
+        run: |
+          python -m src.cli.scan_relationships \
+            --country ${{ inputs.country }} \
+            --rate-limit ${{ inputs.rate_limit }} \
+            --max-runtime ${{ inputs.max_runtime }}
+
+      - name: Scan relationships for all EU countries
+        if: inputs.country == ''
+        run: |
+          # List of EU + allied countries to scan
+          COUNTRIES=(
+            "AUSTRIA" "BELGIUM" "BULGARIA" "CROATIA" "CYPRUS" "CZECHIA"
+            "DENMARK" "ESTONIA" "FINLAND" "FRANCE" "GERMANY" "GREECE"
+            "HUNGARY" "ICELAND" "IRELAND" "ITALY" "LATVIA" "LITHUANIA"
+            "LUXEMBOURG" "MALTA" "NETHERLANDS" "NORWAY" "POLAND" "PORTUGAL"
+            "REPUBLIC_OF_CYPRUS" "ROMANIA" "SLOVAKIA" "SLOVENIA" "SPAIN"
+            "SWEDEN" "SWITZERLAND" "UNITED_KINGDOM"
+          )
+          
+          for country in "${COUNTRIES[@]}"; do
+            echo "=========================================="
+            echo "Scanning: $country"
+            echo "=========================================="
+            python -m src.cli.scan_relationships \
+              --country "$country" \
+              --rate-limit ${{ inputs.rate_limit }} \
+              --max-runtime ${{ inputs.max_runtime }} || true
+          done
+
+      - name: Aggregate relationship data
+        run: |
+          # Create aggregated relationships.jsonl for GitHub Pages
+          mkdir -p docs/data
+          
+          # Find all relationship JSONL files and combine them
+          find data/work/relationships -name "*.jsonl" -exec cat {} \; > docs/data/relationships.jsonl
+          
+          echo "Aggregated relationship data:"
+          wc -l docs/data/relationships.jsonl
+
+      - name: Upload relationship data artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: relationship-data
+          path: data/work/relationships
+          retention-days: 90
+
+      - name: Upload aggregated data for GitHub Pages
+        uses: actions/upload-artifact@v4
+        with:
+          name: pages-data
+          path: docs/data/relationships.jsonl
+          retention-days: 365
+
+      - name: Commit updated relationship data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Only commit if there are changes
+          if git diff --quiet docs/data/relationships.jsonl 2>/dev/null; then
+            echo "No changes to commit"
+          else
+            git add docs/data/relationships.jsonl
+            git commit -m "data: Update relationship scan results [skip ci]"
+            git push
+          fi
