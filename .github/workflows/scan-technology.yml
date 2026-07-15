@@ -1,13 +1,12 @@
 name: Scan Technology Stack
 
 on:
-  # Run every 4 hours — with --skip-recently-scanned-days 7 each run focuses
-  # only on URLs not yet scanned in the past week, so the full ~82k URL corpus
-  # is covered progressively without hammering government servers twice.
-  # 6 runs/day × 13,200 URLs/run (110 min @ 2 req/s) covers all 82k URLs in
-  # roughly 1 day; every URL is refreshed at least once per week.
+  # Run every 2 hours — with --skip-recently-scanned-days 7 each run focuses
+  # only on URLs not yet scanned in the past week.
+  # 12 runs/day × ~1,000 URLs/run (15 min @ 2 req/s) covers the 82k URL corpus
+  # progressively and safely without hammering government servers.
   schedule:
-    - cron: '0 */4 * * *'
+    - cron: '0 */2 * * *'
 
   # Allow manual trigger for a single country or all countries
   workflow_dispatch:
@@ -26,6 +25,10 @@ on:
         required: false
         default: '7'
         type: string
+      limit:
+        description: 'Hard limit on the number of URLs to scan (Optional — e.g., 250, 500)'
+        required: false
+        type: string
 
 # Share concurrency group with the other metadata-producing scan workflows so
 # only one of them runs at a time, protecting the shared validation-metadata
@@ -40,7 +43,7 @@ env:
 jobs:
   scan-technology:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 25
     permissions:
       contents: read
       actions: read
@@ -88,23 +91,37 @@ jobs:
         run: |
           set -o pipefail
           SKIP_DAYS="${{ github.event.inputs.skip_recently_scanned_days || '7' }}"
-          python3 -m src.cli.scan_technology \
-            --country "${{ github.event.inputs.country }}" \
-            --rate-limit "${{ github.event.inputs.rate_limit }}" \
-            --skip-recently-scanned-days "$SKIP_DAYS" \
-            2>&1 | tee tech-scan-output.txt
+          
+          # Build arguments dynamically to support optional --limit
+          ARGS=(
+            --country "${{ github.event.inputs.country }}"
+            --rate-limit "${{ github.event.inputs.rate_limit }}"
+            --skip-recently-scanned-days "$SKIP_DAYS"
+          )
+          if [ -n "${{ github.event.inputs.limit }}" ]; then
+            ARGS+=(--limit "${{ github.event.inputs.limit }}")
+          fi
+          
+          python3 -m src.cli.scan_technology "${ARGS[@]}" 2>&1 | tee tech-scan-output.txt
 
       - name: Run technology scan (all countries)
         if: ${{ github.event.inputs.country == '' || github.event_name == 'schedule' }}
         run: |
           set -o pipefail
           SKIP_DAYS="${{ github.event.inputs.skip_recently_scanned_days || '7' }}"
-          python3 -m src.cli.scan_technology \
-            --all \
-            --max-runtime 110 \
-            --rate-limit "${{ github.event.inputs.rate_limit || '2.0' }}" \
-            --skip-recently-scanned-days "$SKIP_DAYS" \
-            2>&1 | tee tech-scan-output.txt
+          
+          # Build arguments dynamically to support optional --limit and run duration
+          ARGS=(
+            --all
+            --max-runtime 15
+            --rate-limit "${{ github.event.inputs.rate_limit || '2.0' }}"
+            --skip-recently-scanned-days "$SKIP_DAYS"
+          )
+          if [ -n "${{ github.event.inputs.limit }}" ]; then
+            ARGS+=(--limit "${{ github.event.inputs.limit }}")
+          fi
+          
+          python3 -m src.cli.scan_technology "${ARGS[@]}" 2>&1 | tee tech-scan-output.txt
 
       - name: Upload scan results
         if: always()
