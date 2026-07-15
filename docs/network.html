@@ -1026,204 +1026,192 @@
 
     <script>
         // Global state
-        let allData = {
-            domains: {},
-            relationships: [],
-            manifest: null
-        };
+        let allRelationships = [];
         
-        let filteredData = {
-            domains: {},
-            relationships: []
-        };
-        
-        let currentFilters = {};
-        let sortConfig = {};
-        
-        // Initialize the application when DOM is loaded
+        // Initialize when DOM is loaded
         document.addEventListener('DOMContentLoaded', function() {
-            initializeApp();
+            loadRelationshipData();
+            setupEventListeners();
         });
         
-        function initializeApp() {
-            loadManifest();
-            setupEventListeners();
-            updateSummaryCards();
-            renderDomainsTable();
-            renderRelationshipsTable();
-        }
-        
-        function loadManifest() {
-            fetch('docs/data/manifest.json')
-                .then(response => response.json())
-                .then(manifest => {
-                    allData.manifest = manifest;
-                    updateUIWithManifest(manifest);
+        function loadRelationshipData() {
+            fetch('data/relationships.jsonl')
+                .then(response => {
+                    if (!response.ok) throw new Error('Network response was not ok');
+                    return response.text();
+                })
+                .then(text => {
+                    const lines = text.split('\n').filter(line => line.trim());
+                    allRelationships = lines.map(line => {
+                        try { return JSON.parse(line); } 
+                        catch (e) { return null; }
+                    }).filter(r => r !== null);
+                    
+                    console.log(`Loaded ${allRelationships.length} relationships`);
+                    processAndDisplayData();
                 })
                 .catch(error => {
-                    showError('Failed to load manifest: ' + error.message);
+                    console.error('Could not load relationship data:', error);
+                    const loadingMessage = document.querySelector('.loading-message');
+                    if (loadingMessage) {
+                        loadingMessage.innerHTML = '<h2>Error Loading Data</h2><p>' + error.message + '</p>';
+                    }
                 });
         }
         
-        function updateUIWithManifest(manifest) {
-            // Update summary cards with initial data
-            if (manifest && manifest.global_summary) {
-                updateSummaryCardsFromManifest(manifest.global_summary);
-            }
+        function processAndDisplayData() {
+            // Group by source domain
+            const bySource = {};
+            allRelationships.forEach(rel => {
+                if (!bySource[rel.source_domain]) bySource[rel.source_domain] = [];
+                bySource[rel.source_domain].push(rel);
+            });
             
-            // Load countries for the country selector
-            if (manifest && manifest.countries && manifest.countries.length > 0) {
-                populateCountrySelector(manifest.countries);
-            }
+            // Group by relationship type
+            const byType = {};
+            allRelationships.forEach(rel => {
+                if (!byType[rel.relationship_type]) byType[rel.relationship_type] = [];
+                byType[rel.relationship_type].push(rel);
+            });
             
-            // Announce to screen readers
-            announceToScreenReader('Data loaded successfully');
+            // Update summary cards
+            updateSummaryStats(allRelationships, bySource, byType);
+            
+            // Populate tables
+            populateDomainTable(bySource);
+            populateRelationshipsTable(allRelationships);
+            
+            // Hide loading message
+            const loadingMessage = document.querySelector('.loading-message');
+            if (loadingMessage) loadingMessage.style.display = 'none';
         }
         
-        function updateSummaryCardsFromManifest(summary) {
-            document.getElementById('total-domains').textContent = summary.total_domains || 0;
-            document.getElementById('total-relationships').textContent = summary.total_edges || 0;
-            document.getElementById('confirmed-domains').textContent = summary.domains_by_classification?.confirmed || 0;
-            document.getElementById('candidate-domains').textContent = summary.domains_by_classification?.candidate || 0;
-            document.getElementById('editorial-links').textContent = summary.edges_by_type?.editorial_link || 0;
-            document.getElementById('technical-deps').textContent = 
-                (summary.edges_by_type?.script_dependency || 0) + 
-                (summary.edges_by_type?.stylesheet_dependency || 0) + 
-                (summary.edges_by_type?.font_or_preload_dependency || 0) + 
-                (summary.edges_by_type?.image_or_media_dependency || 0) + 
-                (summary.edges_by_type?.form_destination || 0) || 0;
+        function updateSummaryStats(relationships, bySource, byType) {
+            const totalDomains = Object.keys(bySource).length;
+            const totalRelationships = relationships.length;
+            
+            const editorialLinks = byType['editorial_link']?.length || 0;
+            const scriptDeps = byType['script_dependency']?.length || 0;
+            const styleDeps = byType['stylesheet_dependency']?.length || 0;
+            const fontDeps = byType['font_or_preload_dependency']?.length || 0;
+            const imageDeps = byType['image_or_media_dependency']?.length || 0;
+            const formDeps = byType['form_destination']?.length || 0;
+            
+            const countries = new Set();
+            relationships.forEach(rel => {
+                const parts = rel.source_domain.split('.');
+                if (parts.length > 1) countries.add(parts[parts.length - 1]);
+            });
+            
+            const totalDomainsEl = document.getElementById('total-domains');
+            const totalRelationshipsEl = document.getElementById('total-relationships');
+            const confirmedDomainsEl = document.getElementById('confirmed-domains');
+            const candidateDomainsEl = document.getElementById('candidate-domains');
+            const editorialLinksEl = document.getElementById('editorial-links');
+            const technicalDepsEl = document.getElementById('technical-deps');
+            
+            if (totalDomainsEl) totalDomainsEl.textContent = totalDomains;
+            if (totalRelationshipsEl) totalRelationshipsEl.textContent = totalRelationships;
+            if (confirmedDomainsEl) confirmedDomainsEl.textContent = countries.size;
+            if (candidateDomainsEl) candidateDomainsEl.textContent = totalDomains;
+            if (editorialLinksEl) editorialLinksEl.textContent = editorialLinks;
+            if (technicalDepsEl) technicalDepsEl.textContent = scriptDeps + styleDeps + fontDeps + imageDeps + formDeps;
+        }
+        
+        function populateDomainTable(bySource) {
+            const tableBody = document.querySelector('#domains-table-body');
+            if (!tableBody) return;
+            
+            tableBody.innerHTML = '';
+            
+            const domainStats = {};
+            Object.keys(bySource).forEach(domain => {
+                const rels = bySource[domain];
+                const totalObs = rels.reduce((sum, r) => sum + r.observations, 0);
+                const uniqueTargets = new Set(rels.map(r => r.target_domain)).size;
+                
+                domainStats[domain] = {
+                    domain,
+                    relationshipCount: rels.length,
+                    targetCount: uniqueTargets,
+                    observations: totalObs,
+                    lastSeen: rels[0]?.last_seen
+                };
+            });
+            
+            const sorted = Object.values(domainStats).sort((a, b) => b.observations - a.observations);
+            
+            sorted.forEach(stat => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${stat.domain}</td>
+                    <td>${stat.domain}</td>
+                    <td>${stat.domain.split('.').pop().toUpperCase()}</td>
+                    <td>National</td>
+                    <td>Government Portal</td>
+                    <td>Confirmed</td>
+                    <td>${stat.targetCount}</td>
+                    <td>${Math.floor(stat.observations * 0.3)}</td>
+                    <td>${stat.observations}</td>
+                    <td>${stat.lastSeen ? new Date(stat.lastSeen).toLocaleDateString() : 'N/A'}</td>
+                `;
+                tableBody.appendChild(row);
+            });
+        }
+        
+        function populateRelationshipsTable(relationships) {
+            const tableBody = document.querySelector('#relationships-table-body');
+            if (!tableBody) return;
+            
+            tableBody.innerHTML = '';
+            
+            const sorted = [...relationships].sort((a, b) => b.observations - a.observations);
+            
+            sorted.forEach(rel => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${rel.source_domain}</td>
+                    <td>${rel.target_domain}</td>
+                    <td>${rel.relationship_type.replace(/_/g, ' ')}</td>
+                    <td>${rel.source_pages}</td>
+                    <td>${rel.observations}</td>
+                    <td>${(rel.page_regions || []).join(', ')}</td>
+                    <td>${rel.first_seen ? new Date(rel.first_seen).toLocaleDateString() : 'N/A'}</td>
+                    <td>${rel.last_seen ? new Date(rel.last_seen).toLocaleDateString() : 'N/A'}</td>
+                `;
+                tableBody.appendChild(row);
+            });
         }
         
         function setupEventListeners() {
-            // Filter controls
-            const applyFiltersBtn = document.getElementById('apply-filters');
-            const resetFiltersBtn = document.getElementById('reset-filters');
-            const toggleGraphBtn = document.getElementById('toggle-graph');
-            
-            applyFiltersBtn.addEventListener('click', applyFilters);
-            resetFiltersBtn.addEventListener('click', resetFilters);
-            toggleGraphBtn.addEventListener('click', toggleGraphView);
-            
-            // Country selector change
-            document.getElementById('country-filter').addEventListener('change', applyFilters);
-            
-            // Other filter changes (apply on change for better UX)
-            ['relationship-type-filter', 'government-level-filter', 
-             'classification-status-filter', 'category-filter', 'search'].forEach(id => {
-                const element = document.getElementById(id);
-                if (element) {
-                    element.addEventListener('change', applyFilters);
-                    element.addEventListener('input', applyFilters);
-                }
-            });
-            
-            // Table sorting
-            document.querySelectorAll('#domains-table th[data-sort], #relationships-table th[data-sort]').forEach(th => {
-                th.addEventListener('click', function() {
-                    const sortKey = this.dataset.sort;
-                    sortTable(sortKey, this.dataset.sortDirection || 'asc');
-                });
-            });
-            
             // Collapsible sections
             document.querySelectorAll('.collapsible-header').forEach(header => {
                 header.addEventListener('click', function() {
-                    toggleCollapsible(this);
+                    const content = this.nextElementSibling;
+                    const indicator = this.querySelector('span:last-child');
+                    content.classList.toggle('active');
+                    indicator.textContent = content.classList.contains('active') ? '−' : '+';
                 });
             });
             
             // Modal controls
-            const closeModalBtns = document.querySelectorAll('.close-modal, #modal-close-btn');
-            closeModalBtns.forEach(btn => {
+            document.querySelectorAll('.close-modal, #modal-close-btn').forEach(btn => {
                 btn.addEventListener('click', closeModal);
             });
-            
-            // Zoom controls for graph
-            document.getElementById('zoom-in')?.addEventListener('click', function() {
-                zoomGraph(1.2);
-            });
-            
-            document.getElementById('zoom-out')?.addEventListener('click', function() {
-                zoomGraph(0.8);
-            });
-            
-            document.getElementById('reset-zoom')?.addEventListener('click', function() {
-                resetGraphZoom();
-            });
         }
         
-        function toggleCollapsible(header) {
-            const content = header.nextElementSibling;
-            const indicator = header.querySelector('span:last-child');
-            
-            content.classList.toggle('active');
-            
-            if (content.classList.contains('active')) {
-                indicator.textContent = '−';
-            } else {
-                indicator.textContent = '+';
+        function closeModal() {
+            const modal = document.getElementById('modal');
+            if (modal) modal.style.display = 'none';
+        }
+        
+        function announceToScreenReader(message) {
+            const liveRegion = document.getElementById('live-region');
+            if (liveRegion) {
+                const statusMessage = document.getElementById('status-message');
+                if (statusMessage) statusMessage.textContent = message;
             }
         }
-        
-        function applyFilters() {
-            // Get filter values
-            currentFilters = {
-                country: document.getElementById('country-filter').value.toLowerCase(),
-                relationship_type: document.getElementById('relationship-type-filter').value,
-                government_level: document.getElementById('government-level-filter').value,
-                classification_status: document.getElementById('classification-status-filter').value,
-                category: document.getElementById('category-filter').value,
-                search: document.getElementById('search').value.toLowerCase()
-            };
-            
-            // Apply filters to data
-            applyFiltersToData();
-            
-            // Update UI
-            updateSummaryCards();
-            renderDomainsTable();
-            renderRelationshipsTable();
-            
-            // Announce to screen readers
-            announceToScreenReader(`Filtered data: ${filteredData.domains.length} domains, ${filteredData.relationships.length} relationships`);
-        }
-        
-        function resetFilters() {
-            // Reset all filter controls
-            document.getElementById('country-filter').value = '';
-            document.getElementById('relationship-type-filter').value = '';
-            document.getElementById('government-level-filter').value = '';
-            document.getElementById('classification-status-filter').value = '';
-            document.getElementById('category-filter').value = '';
-            document.getElementById('search').value = '';
-            
-            // Reset filters and update UI
-            currentFilters = {};
-            applyFiltersToData();
-            updateSummaryCards();
-            renderDomainsTable();
-            renderRelationshipsTable();
-            
-            announceToScreenReader('Filters have been reset');
-        }
-        
-        function applyFiltersToData() {
-            filteredData.domains = {};
-            filteredData.relationships = [];
-            
-            // First, apply basic filtering to domains
-            Object.values(allData.domains).forEach(domain => {
-                if (matchesFilters(domain, currentFilters)) {
-                    filteredData.domains[domain.id] = domain;
-                }
-            });
-            
-            // Then filter relationships
-            allData.relationships.forEach(rel => {
-                if (matchesFilters(rel, currentFilters)) {
-                    filteredData.relationships.push(rel);
-                }
-            });
         }
         
         function matchesFilters(item, filters) {
@@ -1624,331 +1612,6 @@
                 }
             }, 5000);
         }
-    </script>
-
-    <style>
-        /* Additional styles for the modal and detail tables */
-        .domain-details {
-            display: grid;
-            gap: 1.5rem;
-        }
-        
-        .domain-details section {
-            background: var(--light-bg);
-            padding: 1rem;
-            border-radius: 4px;
-        }
-        
-        .detail-table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        
-        .detail-table td {
-            padding: 0.5rem;
-            border-bottom: 1px solid var(--border-color);
-        }
-        
-        .detail-table td:first-child {
-            font-weight: 600;
-            width: 40%;
-        }
-        
-        .sources-list {
-            display: grid;
-            gap: 0.5rem;
-        }
-        
-        .source-item {
-            background: white;
-            padding: 0.75rem;
-            border-radius: 4px;
-            border-left: 3px solid var(--accent-color);
-        }
-        
-        .table-filters {
-            display: flex;
-            gap: 1rem;
-            margin: 1rem 0;
-            flex-wrap: wrap;
-        }
-        
-        .table-filter {
-            padding: 0.5rem 1rem;
-            background: white;
-            border: 1px solid var(--border-color);
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        
-        .table-filter.active {
-            background: var(--accent-color);
-            color: white;
-            border-color: var(--accent-color);
-        }
-        
-        /* Sort indicators */
-        th.sorted-asc::after {
-            content: ' ↑';
-        }
-        
-        th.sorted-desc::after {
-            content: ' ↓';
-        }
-        
-        /* Responsive adjustments for modal */
-        @media (max-width: 768px) {
-            .modal-content {
-                padding: 1rem;
-            }
-            
-            .domain-details {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
-</head>
-<body>
-    <!-- Navigation will be loaded from template -->
-    
-    <main>
-        <!-- Content will be loaded dynamically -->
-        <div class="loading-message" style="text-align: center; padding: 3rem; color: var(--text-secondary);">
-            <p>Loading government web relationship data...</p>
-            <div class="loading" style="display: inline-block; margin-top: 1rem;"></div>
-        </div>
-    </main>
-    
-    <!-- Footer will be loaded from template -->
-    
-    <script>
-        // Load navigation and footer after page load
-        document.addEventListener('DOMContentLoaded', function() {
-            // Load navigation
-            fetch('docs/_includes/header.html')
-                .then(response => response.text())
-                .then(html => {
-                    // Insert header into page
-                    // For now, we'll keep the header inline
-                })
-                .catch(error => {
-                    console.log('Could not load header:', error);
-                });
-            
-            // Initialize the actual application
-            setTimeout(initializeApp, 500);
-        });
-        
-        // Override the existing initializeApp function to load data
-        function initializeApp() {
-            // First, load the actual relationship data
-            loadRelationshipData();
-            
-            // Then setup the application
-            originalInitializeApp();
-        }
-        
-        function loadRelationshipData() {
-            // Try to load the aggregated relationship data
-            fetch('data/relationships.jsonl')
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.text();
-                })
-                .then(text => {
-                    // Parse the JSONL data
-                    const lines = text.split('\n').filter(line => line.trim());
-                    const relationships = lines.map(line => {
-                        try {
-                            return JSON.parse(line);
-                        } catch (e) {
-                            console.warn('Failed to parse line:', line);
-                            return null;
-                        }
-                    }).filter(r => r !== null);
-                    
-                    console.log(`Loaded ${relationships.length} relationships`);
-                    
-                    // Store the data globally
-                    window.relationshipData = relationships;
-                    
-                    // Process and display the data
-                    processRelationshipData(relationships);
-                    
-                    // Hide loading message
-                    const loadingMessage = document.querySelector('.loading-message');
-                    if (loadingMessage) {
-                        loadingMessage.style.display = 'none';
-                    }
-                })
-                .catch(error => {
-                    console.error('Could not load relationship data:', error);
-                    // Show error message
-                    const loadingMessage = document.querySelector('.loading-message');
-                    if (loadingMessage) {
-                        loadingMessage.innerHTML = `
-                            <h2>Government Web Relationship Interface</h2>
-                            <p>Unable to load relationship data.</p>
-                            <p>Please ensure the data file exists at <code>data/relationships.jsonl</code></p>
-                            <p>Error: ${error.message}</p>
-                        `;
-                    }
-                });
-        }
-        
-        function processRelationshipData(relationships) {
-            // Group by source domain
-            const bySource = {};
-            relationships.forEach(rel => {
-                if (!bySource[rel.source_domain]) {
-                    bySource[rel.source_domain] = [];
-                }
-                bySource[rel.source_domain].push(rel);
-            });
-            
-            // Group by relationship type
-            const byType = {};
-            relationships.forEach(rel => {
-                if (!byType[rel.relationship_type]) {
-                    byType[rel.relationship_type] = [];
-                }
-                byType[rel.relationship_type].push(rel);
-            });
-            
-            // Update the UI with summary statistics
-            updateSummaryStats(relationships, bySource, byType);
-            
-            // Populate the domain table
-            populateDomainTable(bySource);
-            
-            // Populate the relationships table
-            populateRelationshipsTable(relationships);
-        }
-        
-        function updateSummaryStats(relationships, bySource, byType) {
-            // Update total domains
-            const totalDomains = Object.keys(bySource).length;
-            const totalRelationships = relationships.length;
-            
-            // Count by type
-            const editorialLinks = byType['editorial_link'] ? byType['editorial_link'].length : 0;
-            const scriptDeps = byType['script_dependency'] ? byType['script_dependency'].length : 0;
-            const styleDeps = byType['stylesheet_dependency'] ? byType['stylesheet_dependency'].length : 0;
-            const fontDeps = byType['font_or_preload_dependency'] ? byType['font_or_preload_dependency'].length : 0;
-            const imageDeps = byType['image_or_media_dependency'] ? byType['image_or_media_dependency'].length : 0;
-            const formDeps = byType['form_destination'] ? byType['form_destination'].length : 0;
-            
-            // Count unique countries
-            const countries = new Set();
-            relationships.forEach(rel => {
-                // Extract country from domain TLD
-                const parts = rel.source_domain.split('.');
-                if (parts.length > 1) {
-                    countries.add(parts[parts.length - 1]);
-                }
-            });
-            
-            // Update the summary cards
-            const totalDomainsEl = document.getElementById('total-domains');
-            const totalRelationshipsEl = document.getElementById('total-relationships');
-            const confirmedDomainsEl = document.getElementById('confirmed-domains');
-            const candidateDomainsEl = document.getElementById('candidate-domains');
-            const editorialLinksEl = document.getElementById('editorial-links');
-            const technicalDepsEl = document.getElementById('technical-deps');
-            
-            if (totalDomainsEl) totalDomainsEl.textContent = totalDomains;
-            if (totalRelationshipsEl) totalRelationshipsEl.textContent = totalRelationships;
-            if (confirmedDomainsEl) confirmedDomainsEl.textContent = countries.size;
-            if (candidateDomainsEl) candidateDomainsEl.textContent = totalDomains;
-            if (editorialLinksEl) editorialLinksEl.textContent = editorialLinks;
-            if (technicalDepsEl) technicalDepsEl.textContent = scriptDeps + styleDeps + fontDeps + imageDeps + formDeps;
-        }
-        
-        function populateDomainTable(bySource) {
-            const tableBody = document.querySelector('#domains-table-body');
-            if (!tableBody) return;
-            
-            tableBody.innerHTML = '';
-            
-            // Group by source domain and aggregate
-            const domainStats = {};
-            Object.keys(bySource).forEach(domain => {
-                const rels = bySource[domain];
-                const totalObs = rels.reduce((sum, r) => sum + r.observations, 0);
-                const uniqueTargets = new Set(rels.map(r => r.target_domain)).size;
-                const totalPages = new Set(rels.flatMap(r => r.source_pages || [])).size;
-                
-                domainStats[domain] = {
-                    domain,
-                    relationshipCount: rels.length,
-                    targetCount: uniqueTargets,
-                    observations: totalObs,
-                    pages: totalPages,
-                    firstSeen: rels[0]?.first_seen,
-                    lastSeen: rels[0]?.last_seen
-                };
-            });
-            
-            // Sort by observations descending
-            const sorted = Object.values(domainStats).sort((a, b) => b.observations - a.observations);
-            
-            sorted.forEach(stat => {
-                const row = document.createElement('tr');
-                row.innerHTML = `
-                    <td>${stat.domain}</td>
-                    <td>${stat.domain}</td>
-                    <td>${stat.domain.split('.').pop().toUpperCase()}</td>
-                    <td>National</td>
-                    <td>Government Portal</td>
-                    <td>Confirmed</td>
-                    <td>${stat.targetCount}</td>
-                    <td>${Math.floor(stat.observations * 0.3)}</td>
-                    <td>${stat.observations}</td>
-                    <td>${stat.lastSeen ? new Date(stat.lastSeen).toLocaleDateString() : 'N/A'}</td>
-                `;
-                tableBody.appendChild(row);
-            });
-        }
-        
-        function populateRelationshipsTable(relationships) {
-            const tableBody = document.querySelector('#relationships-table-body');
-            if (!tableBody) return;
-            
-            tableBody.innerHTML = '';
-            
-            // Sort by observations descending
-            const sorted = [...relationships].sort((a, b) => b.observations - a.observations);
-            
-            sorted.forEach(rel => {
-                const row = document.createElement('tr');
-                row.innerHTML = `
-                    <td>${rel.source_domain}</td>
-                    <td>${rel.target_domain}</td>
-                    <td>${rel.relationship_type.replace(/_/g, ' ')}</td>
-                    <td>${rel.source_pages}</td>
-                    <td>${rel.observations}</td>
-                    <td>${(rel.page_regions || []).join(', ')}</td>
-                    <td>${rel.first_seen ? new Date(rel.first_seen).toLocaleDateString() : 'N/A'}</td>
-                    <td>${rel.last_seen ? new Date(rel.last_seen).toLocaleDateString() : 'N/A'}</td>
-                `;
-                tableBody.appendChild(row);
-            });
-        }
-        
-        function originalInitializeApp() {
-            // Call the original initializeApp function
-            if (typeof window.originalInitializeApp === 'function') {
-                window.originalInitializeApp();
-            }
-        }
-        
-        // Store the original initializeApp for later use
-        window.originalInitializeApp = function() {
-            require('path').join(__dirname, 'path/to/original/initializeApp.js');
-            // This would be called from the actual implementation
-        };
     </script>
 </body>
 </html>
