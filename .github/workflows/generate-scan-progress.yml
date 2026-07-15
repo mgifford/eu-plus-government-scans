@@ -38,26 +38,25 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
-      - name: Set up Python
-        uses: actions/setup-python@v6
+      - name: Set up uv (Python & Dependency Manager)
+        uses: astral-sh/setup-uv@v8
         with:
+          enable-cache: true
           python-version: '3.12'
-          cache: 'pip'
 
       - name: Install dependencies
         run: |
-          pip install -r requirements.txt
+          uv pip install --system -r requirements.txt
 
       - name: Find latest metadata artifact run ID
         id: find-metadata
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          RUN_ID=$(gh api --paginate "/repos/${{ github.repository }}/actions/artifacts?per_page=100&name=validation-metadata" \
-            --jq '.artifacts[] | select(.expired == false) | "\(.created_at) \(.workflow_run.id)"' \
-            2>/dev/null | sort -rk1 | head -1 | awk '{print $2}' || echo "")
+          RUN_ID=$(gh api "/repos/${{ github.repository }}/actions/artifacts?name=validation-metadata&per_page=1" \
+            --jq '.artifacts[] | select(.expired == false) | .workflow_run.id' 2>/dev/null || echo "")
           echo "run_id=${RUN_ID}" >> $GITHUB_OUTPUT
           if [ -n "$RUN_ID" ]; then
             echo "Found validation-metadata artifact from run $RUN_ID"
@@ -80,9 +79,8 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          RUN_ID=$(gh api --paginate "/repos/${{ github.repository }}/actions/artifacts?per_page=100&name=lighthouse-metadata" \
-            --jq '.artifacts[] | select(.expired == false) | "\(.created_at) \(.workflow_run.id)"' \
-            2>/dev/null | sort -rk1 | head -1 | awk '{print $2}' || echo "")
+          RUN_ID=$(gh api "/repos/${{ github.repository }}/actions/artifacts?name=lighthouse-metadata&per_page=1" \
+            --jq '.artifacts[] | select(.expired == false) | .workflow_run.id' 2>/dev/null || echo "")
           echo "run_id=${RUN_ID}" >> $GITHUB_OUTPUT
           if [ -n "$RUN_ID" ]; then
             echo "Found lighthouse-metadata artifact from run $RUN_ID"
@@ -108,6 +106,7 @@ jobs:
 
       - name: Generate scan progress report
         run: |
+          set -o pipefail
           python3 -m src.cli.generate_scan_progress \
             --output docs/scan-progress.md \
             --data docs/scan-progress-data.json \
@@ -117,6 +116,7 @@ jobs:
 
       - name: Generate social media stats page
         run: |
+          set -o pipefail
           python3 -m src.cli.generate_social_media_report \
             --page docs/social-media.md \
             --data docs/social-media-data.json \
@@ -125,12 +125,14 @@ jobs:
 
       - name: Generate domains report
         run: |
+          set -o pipefail
           python3 -m src.cli.generate_domains_report \
             --output docs/domains.md \
             2>&1 | tee domains-report-output.txt
 
       - name: Generate technology stats page
         run: |
+          set -o pipefail
           python3 -m src.cli.generate_technology_report \
             --page docs/technology-scanning.md \
             --data docs/technology-data.json \
@@ -140,6 +142,7 @@ jobs:
 
       - name: Generate third-party JavaScript stats page
         run: |
+          set -o pipefail
           python3 -m src.cli.generate_third_party_js_report \
             --page docs/third-party-tools.md \
             --data docs/third-party-tools-data.json \
@@ -148,6 +151,7 @@ jobs:
 
       - name: Generate accessibility statement stats page
         run: |
+          set -o pipefail
           python3 -m src.cli.generate_accessibility_report \
             --page docs/accessibility-statements.md \
             --data docs/accessibility-data.json \
@@ -156,6 +160,7 @@ jobs:
 
       - name: Generate Lighthouse results page
         run: |
+          set -o pipefail
           LIGHTHOUSE_DB="data/lighthouse/metadata.db"
           if [ ! -f "$LIGHTHOUSE_DB" ]; then
             LIGHTHOUSE_DB="data/metadata.db"
@@ -224,6 +229,7 @@ jobs:
             lighthouse-report-output.txt
           retention-days: 30
           if-no-files-found: warn
+          compression-level: 0
 
       - name: Display progress summary
         if: always()
@@ -236,4 +242,4 @@ jobs:
             echo "_No progress data available yet._" >> $GITHUB_STEP_SUMMARY
           fi
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "- Workflow Run: [\\#${{ github.run_number }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})" >> $GITHUB_STEP_SUMMARY
+          echo "- Workflow Run: [\#${{ github.run_number }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})" >> $GITHUB_STEP_SUMMARY
