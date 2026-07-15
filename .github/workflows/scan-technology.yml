@@ -47,26 +47,25 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
-      - name: Set up Python
-        uses: actions/setup-python@v6
+      - name: Set up uv (Python & Dependency Manager)
+        uses: astral-sh/setup-uv@v8
         with:
+          enable-cache: true
           python-version: '3.12'
-          cache: 'pip'
 
       - name: Install dependencies
         run: |
-          pip install -r requirements.txt
+          uv pip install --system -r requirements.txt
 
       - name: Find latest metadata artifact run ID
         id: find-metadata
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          RUN_ID=$(gh api --paginate "/repos/${{ github.repository }}/actions/artifacts?per_page=100&name=validation-metadata" \
-            --jq '.artifacts[] | select(.expired == false) | "\(.created_at) \(.workflow_run.id)"' \
-            2>/dev/null | sort -rk1 | head -1 | awk '{print $2}' || echo "")
+          RUN_ID=$(gh api "/repos/${{ github.repository }}/actions/artifacts?name=validation-metadata&per_page=1" \
+            --jq '.artifacts[] | select(.expired == false) | .workflow_run.id' 2>/dev/null || echo "")
           echo "run_id=${RUN_ID}" >> $GITHUB_OUTPUT
           if [ -n "$RUN_ID" ]; then
             echo "Found validation-metadata artifact from run $RUN_ID"
@@ -118,6 +117,7 @@ jobs:
             data/toon-seeds/countries/**_tech.toon
           retention-days: 90
           if-no-files-found: warn
+          compression-level: 0
 
       - name: Guard against overwriting shared metadata with data-loss result
         if: always()
@@ -142,6 +142,7 @@ jobs:
           retention-days: 90
           overwrite: true
           if-no-files-found: warn
+          compression-level: 0
 
       - name: Display scan summary
         if: always()
