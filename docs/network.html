@@ -1,0 +1,1805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Web Relationship Data</title>
+    <meta name="description" content="Explore relationships between European and allied government websites, including links, dependencies, and technical connections. Fully accessible HTML interface with detailed filtering and evidence-based data.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Modern, accessible CSS based on project patterns */
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --success-color: #27ae60;
+            --warning-color: #f39c12;
+            --danger-color: #e74c3c;
+            --light-bg: #f8f9fa;
+            --border-color: #dee2e6;
+            --text-primary: #212529;
+            --text-secondary: #6c757d;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
+            --shadow-md: 0 2px 6px rgba(0,0,0,0.15);
+            --shadow-lg: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+            background-color: #fff;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0;
+            font-size: 16px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* Skip navigation */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: var(--primary-color);
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 1000;
+        }
+        .skip-link:focus {
+            top: 6px;
+        }
+
+        /* Header */
+        header {
+            background: white;
+            border-bottom: 1px solid var(--border-color);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: var(--shadow-sm);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+            padding: 0.5rem 0;
+        }
+
+        .nav-links a:hover, .nav-links a:focus {
+            color: var(--accent-color);
+        }
+
+        /* Main content */
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Section headers */
+        h1, h2, h3, h4 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2rem;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        /* About section */
+        .about-section {
+            background: var(--light-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .about-section h2 {
+            margin-top: 0;
+        }
+
+        /* Filter controls */
+        .filter-controls {
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .filters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .filter-group label {
+            font-weight: 600;
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+
+        .filter-group select,
+        .filter-group input {
+            padding: 0.5rem;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            font-size: 0.875rem;
+            background-color: white;
+        }
+
+        .filter-group input[type="text"] {
+            width: 100%;
+            padding: 0.75rem;
+        }
+
+        /* Summary cards */
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .summary-card {
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .summary-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .summary-card h4 {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .summary-card .value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        .summary-card .value.small {
+            font-size: 1.5rem;
+        }
+
+        .summary-card .change {
+            font-size: 0.75rem;
+            margin-top: 0.5rem;
+        }
+
+        .change.positive {
+            color: var(--success-color);
+        }
+
+        .change.negative {
+            color: var(--danger-color);
+        }
+
+        /* Tables */
+        .table-container {
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 1.5rem 0;
+            box-shadow: var(--shadow-sm);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.875rem;
+        }
+
+        thead {
+            background-color: var(--light-bg);
+        }
+
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            font-weight: 600;
+            color: var(--text-secondary);
+            cursor: pointer;
+            user-select: none;
+            position: relative;
+        }
+
+        th:hover {
+            background-color: rgba(52, 152, 219, 0.05);
+        }
+
+        tr:hover {
+            background-color: var(--light-bg);
+        }
+
+        td {
+            max-width: 300px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .domain-cell {
+            font-weight: 500;
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .domain-cell:hover {
+            text-decoration: underline;
+        }
+
+        /* Badges */
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            margin-right: 0.25rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .badge.country {
+            background-color: rgba(52, 152, 219, 0.1);
+            color: var(--accent-color);
+        }
+
+        .badge.level {
+            background-color: rgba(46, 204, 113, 0.1);
+            color: var(--success-color);
+        }
+
+        .badge.status {
+            background-color: rgba(241, 196, 15, 0.1);
+            color: var(--warning-color);
+        }
+
+        .badge.type {
+            background-color: rgba(155, 89, 182, 0.1);
+            color: #8e44ad;
+        }
+
+        .badge.editable {
+            background-color: rgba(231, 76, 60, 0.1);
+            color: var(--danger-color);
+            cursor: pointer;
+        }
+
+        .badge.editable:hover {
+            background-color: rgba(231, 76, 60, 0.2);
+        }
+
+        /* Relationship type colors */
+        .badge.rel-editorial { background-color: rgba(52, 152, 219, 0.1); color: #2980b9; }
+        .badge.rel-script { background-color: rgba(241, 196, 15, 0.1); color: #f39c12; }
+        .badge.rel-style { background-color: rgba(155, 89, 182, 0.1); color: #8e44ad; }
+        .badge.rel-font { background-color: rgba(46, 204, 113, 0.1); color: #27ae60; }
+        .badge.rel-image { background-color: rgba(231, 76, 60, 1); color: #c0392b; }
+        .badge.rel-form { background-color: rgba(26, 188, 156, 0.1); color: #16a085; }
+
+        /* Category colors */
+        .badge.cat-analytics { background-color: rgba(231, 76, 60, 0.1); color: #c0392b; }
+        .badge.cat-social { background-color: rgba(52, 152, 219, 1); color: #2980b9; }
+        .badge.cat-cdn { background-color: rgba(155, 89, 182, 1); color: #8e44ad; }
+        .badge.cat-identity { background-color: rgba(46, 204, 113, 1); color: #27ae60; }
+        .badge.cat-document { background-color: rgba(241, 196, 15, 1); color: #f39c12; }
+        .badge.cat-commercial { background-color: rgba(26, 188, 156, 1); color: #16a085; }
+
+        /* Controls */
+        .controls {
+            display: flex;
+            gap: 1rem;
+            margin: 1rem 0;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--border-color);
+            background: white;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+
+        .btn:hover, .btn:focus {
+            background-color: var(--light-bg);
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+        }
+
+        .btn-primary {
+            background-color: var(--accent-color);
+            color: white;
+            border-color: var(--accent-color);
+        }
+
+        .btn-primary:hover, .btn-primary:focus {
+            background-color: #2980b9;
+            border-color: #2980b9;
+        }
+
+        .btn-secondary {
+            background-color: #6c757d;
+            color: white;
+            border-color: #6c757d;
+        }
+
+        /* Live region for announcements */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        #live-region {
+            position: absolute;
+            top: -10000px;
+            left: -10000px;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+
+        /* Loading indicator */
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid var(--border-color);
+            border-top-color: var(--accent-color);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin-left: 0.5rem;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Empty state */
+        .empty-state {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-secondary);
+        }
+
+        .empty-state h3 {
+            margin-bottom: 1rem;
+        }
+
+        /* Error message */
+        .error-message {
+            background-color: rgba(231, 76, 60, 0.1);
+            border: 1px solid rgba(231, 76, 60, 0.3);
+            color: #c0392b;
+            padding: 1rem;
+            border-radius: 4px;
+            margin: 1rem 0;
+        }
+
+        /* Download section */
+        .download-section {
+            background: var(--light-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .download-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin: 1rem 0;
+        }
+
+        .download-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: all 0.2s;
+        }
+
+        .download-link:hover, .download-link:focus {
+            background-color: var(--accent-color);
+            color: white;
+            border-color: var(--accent-color);
+        }
+
+        /* Collapsible sections */
+        .collapsible {
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            margin: 1rem 0;
+            overflow: hidden;
+        }
+
+        .collapsible-header {
+            padding: 1rem;
+            background-color: var(--light-bg);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+        }
+
+        .collapsible-header:hover {
+            background-color: rgba(52, 152, 219, 0.05);
+        }
+
+        .collapsible-content {
+            padding: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .collapsible-content.active {
+            padding: 1rem;
+            max-height: 500px;
+        }
+
+        /* Graph placeholder */
+        .graph-container {
+            background: white;
+            border: 2px dashed var(--border-color);
+            border-radius: 8px;
+            padding: 3rem;
+            text-align: center;
+            color: var(--text-secondary);
+            margin: 1.5rem 0;
+            display: none;
+        }
+
+        .graph-container.active {
+            display: block;
+        }
+
+        .graph-placeholder {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            opacity: 0.5;
+        }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            max-width: 600px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .close-modal {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-secondary);
+        }
+
+        .close-modal:hover {
+            color: var(--danger-color);
+        }
+
+        .modal-body {
+            margin-bottom: 1.5rem;
+        }
+
+        .modal-footer {
+            display: flex;
+            gap: 1rem;
+            justify-content: flex-end;
+        }
+
+        /* Zoom controls for graph */
+        .zoom-controls {
+            display: flex;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+
+        /* Tooltip */
+        .tooltip {
+            position: absolute;
+            background: var(--primary-color);
+            color: white;
+            padding: 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.2s;
+            z-index: 1000;
+            max-width: 300px;
+        }
+
+        .tooltip.visible {
+            opacity: 1;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            body {
+                padding: 0;
+            }
+
+            header {
+                padding: 0.75rem 1rem;
+            }
+
+            main {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .filters-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .summary-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+
+            th, td {
+                padding: 0.75rem 0.5rem;
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <nav>
+            <a href="/eu-plus-government-scans/" class="logo">
+                <span>🇪🇺 EU Government Scans</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="/eu-plus-government-scans/" title="Home page">Home</a></li>
+                <li><a href="/eu-plus-government-scans/scan-progress.md" title="View current scan progress">Scan Progress</a></li>
+                <li><a href="/eu-plus-government-scans/social-media.md" title="View social media usage analysis">Social Media</a></li>
+                <li><a href="/eu-plus-government-scans/accessibility-statements.md" title="View accessibility statement compliance">Accessibility</a></li>
+                <li><a href="/eu-plus-government-scans/technology-scanning.md" title="View technology usage analysis">Technology</a></li>
+                <li><a href="/eu-plus-government-scans/third-party-tools.md" title="View third-party tools usage">Third-Party JS</a></li>
+                <li><a href="/eu-plus-government-scans/domains.md" title="View government domains dataset">Domains</a></li>
+                <li><a href="/eu-plus-government-scans/api.md" title="View API documentation">API</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="about-section">
+            <h1>Government Web Relationship Data</h1>
+            <p>This page provides comprehensive insights into the web relationships between European and allied government websites. We analyze links, scripts, styles, forms, and media dependencies to understand how government sites connect and interact with each other and third-party services.</p>
+            
+            <div class="collapsible">
+                <div class="collapsible-header">
+                    <span>About This Dataset</span>
+                    <span>+</span>
+                </div>
+                <div class="collapsible-content">
+                    <h3>What is Extracted</h3>
+                    <p>This dataset contains relationship observations from government web pages scanned as part of the EU Government Accessibility Statement Discovery project. Relationships include:</p>
+                    <ul>
+                        <li><strong>Editorial Links</strong>: <code>&lt;a href&gt;</code> links to internal/external pages</li>
+                        <li><strong>Script Dependencies</strong>: <code>&lt;script src&gt;</code> external JavaScript resources</li>
+                        <li><strong>Style Dependencies</strong>: <code>&lt;link rel="stylesheet"&gt;</code> CSS stylesheets</li>
+                        <li><strong>Font/Prelooad Dependencies</strong>: <code>&lt;link rel="preload"|&quot;font&quot;|&quot;preconnect&quot;&gt;</code> font resources</li>
+                        <li><strong>Image/Media Dependencies</strong>: <code>&lt;img src&gt;</code> images and media</li>
+                        <li><strong>Form Destinations</strong>: <code>&lt;form action&gt;</code> external form submissions</li>
+                    </ul>
+
+                    <h3>Classification Categories</h3>
+                    <p>External domains are automatically categorized based on their function:</p>
+                    <ul>
+                        <li><strong>Analytics</strong>: Google Analytics, Tag Manager, Heatmaps, etc.</li>
+                        <li><strong>Social Platform</strong>: Facebook, Twitter/X, LinkedIn, Instagram, YouTube</li>
+                        <li><strong>CDN</strong>: Content Delivery Networks like Cloudflare, Fastly, Akamai</li>
+                        <li><strong>Identity</strong>: Authentication services like Okta, Auth0, Microsoft Login</li>
+                        <li><strong>Document Host</strong>: File hosting services like Google Drive, Dropbox, SharePoint</li>
+                        <li><strong>Commercial Service</strong>: Payment, support, and business services</li>
+                    </ul>
+
+                    <h3>Methodology Notes</h3>
+                    <ul>
+                        <li><strong>Graph Metrics</strong>: In-degree, out-degree, and weighted measures represent observed web relationships, NOT institutional authority or hierarchy.</li>
+                        <li><strong>Country Assignment</strong>: Prioritized through institutional evidence, not just TLD mapping.</li>
+                        <li><strong>Classification Precedence</strong>: Authoritative registry > Curated source > Institutional source > Structured source > Software Heritage > Domain pattern > Network signal</li>
+                        <li><strong>Data Provenance</strong>: All data is sourced from machine-readable scan results with full tracking of observation timestamps and source pages.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="filter-controls">
+            <h2>Filters and Search</h2>
+            <div class="filters-grid">
+                <div class="filter-group">
+                    <label for="country-filter">Country</label>
+                    <select id="country-filter">
+                        <option value="">All Countries</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="relationship-type-filter">Relationship Type</label>
+                    <select id="relationship-type-filter">
+                        <option value="">All Types</option>
+                        <option value="editorial_link">Editorial Link</option>
+                        <option value="script_dependency">Script Dependency</option>
+                        <option value="stylesheet_dependency">Style Dependency</option>
+                        <option value="font_or_preload_dependency">Font/Preload</option>
+                        <option value="image_or_media_dependency">Image/Media</option>
+                        <option value="form_destination">Form Destination</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="government-level-filter">Government Level</label>
+                    <select id="government-level-filter">
+                        <option value="">All Levels</option>
+                        <option value="supranational">Supranational</option>
+                        <option value="national">National</option>
+                        <option value="regional">Regional</option>
+                        <option value="state_or_province">State/Province</option>
+                        <option value="local">Local</option>
+                        <option value="municipal">Municipal</option>
+                        <option value="independent_public_body">Independent Public Body</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="classification-status-filter">Classification Status</label>
+                    <select id="classification-status-filter">
+                        <option value="">All Statuses</option>
+                        <option value="confirmed">Confirmed</option>
+                        <option value="probable">Probable</option>
+                        <option value="candidate">Candidate</option>
+                        <option value="disputed">Disputed</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="category-filter">Target Category</label>
+                    <select id="category-filter">
+                        <option value="">All Categories</option>
+                        <option value="analytics">Analytics</option>
+                        <option value="social_platform">Social Platform</option>
+                        <option value="cdn">CDN</option>
+                        <option value="identity">Identity</option>
+                        <option value="document_host">Document Host</option>
+                        <option value="commercial_service">Commercial Service</option>
+                        <option value="known_government">Known Government</option>
+                        <option value="shared_government_service">Shared Government Service</option>
+                        <option value="unknown_external">Unknown External</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="search">Search</label>
+                    <input type="text" id="search" placeholder="Search domains, organizations, or categories...">
+                </div>
+            </div>
+            
+            <div class="controls">
+                <button id="apply-filters" class="btn btn-primary">Apply Filters</button>
+                <button id="reset-filters" class="btn">Reset Filters</button>
+                <button id="toggle-graph" class="btn">Toggle Graph View</button>
+            </div>
+        </section>
+
+        <section aria-live="polite" id="live-region">
+            <div class="sr-only" id="status-message" role="status"></div>
+        </section>
+
+        <section class="summary-grid" id="summary-cards">
+            <div class="summary-card">
+                <h4>Total Domains</h4>
+                <div class="value" id="total-domains">0</div>
+            </div>
+            <div class="summary-card">
+                <h4>Total Relationships</h4>
+                <div class="value" id="total-relationships">0</div>
+            </div>
+            <div class="summary-card">
+                <h4>Confirmed Domains</h4>
+                <div class="value small" id="confirmed-domains">0</div>
+            </div>
+            <div class="summary-card">
+                <h4>Candidate Domains</h4>
+                <div class="value small" id="candidate-domains">0</div>
+            </div>
+            <div class="summary-card">
+                <h4>Editorial Links</h4>
+                <div class="value small" id="editorial-links">0</div>
+            </div>
+            <div class="summary-card">
+                <h4>Technical Dependencies</h4>
+                <div class="value small" id="technical-deps">0</div>
+            </div>
+        </section>
+
+        <section class="collapsible">
+            <div class="collapsible-header">
+                <span>Domains Table</span>
+                <span>+</span>
+            </div>
+            <div class="collapsible-content active">
+                <div class="table-container">
+                    <table id="domains-table">
+                        <thead>
+                            <tr>
+                                <th data-sort="organization_name">Organization Name</th>
+                                <th data-sort="domain">Domain</th>
+                                <th data-sort="country">Country</th>
+                                <th data-sort="government_level">Government Level</th>
+                                <th data-sort="organization_type">Organization Type</th>
+                                <th data-sort="classification_status">Classification Status</th>
+                                <th data-sort="source_count">Source Count</th>
+                                <th data-sort="in_degree">In-Degree</th>
+                                <th data-sort="out_degree">Out-Degree</th>
+                                <th data-sort="last_seen">Last Seen</th>
+                            </tr>
+                        </thead>
+                        <tbody id="domains-table-body">
+                            <tr>
+                                <td colspan="10" class="empty-state">
+                                    <h3>No domains match the current filters</h3>
+                                    <p>Try adjusting your search criteria or filters</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="collapsible">
+            <div class="collapsible-header">
+                <span>Relationships Table</span>
+                <span>+</span>
+            </div>
+            <div class="collapsible-content">
+                <div class="table-container">
+                    <table id="relationships-table">
+                        <thead>
+                            <tr>
+                                <th data-sort="source_domain">Source Domain</th>
+                                <th data-sort="target_domain">Target Domain</th>
+                                <th data-sort="relationship_type">Relationship Type</th>
+                                <th data-sort="source_pages">Source Pages</th>
+                                <th data-sort="observations">Observations</th>
+                                <th data-sort="page_regions">Page Regions</th>
+                                <th data-sort="first_seen">First Seen</th>
+                                <th data-sort="last_seen">Last Seen</th>
+                            </tr>
+                        </thead>
+                        <tbody id="relationships-table-body">
+                            <tr>
+                                <td colspan="8" class="empty-state">
+                                    <h3>No relationships match the current filters</h3>
+                                    <p>Try adjusting your search criteria or filters</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="graph-container" id="graph-container">
+            <div class="graph-placeholder">📊 Network Graph Explorer (Coming Soon)</div>
+            <p>The network graph visualization will display filtered relationships between domains when available. Click on graph nodes to explore details in the tables above.</p>
+            
+            <div class="zoom-controls">
+                <button class="btn" id="zoom-in">Zoom In</button>
+                <button class="btn" id="zoom-out">Zoom Out</button>
+                <button class="btn" id="reset-zoom">Reset View</button>
+            </div>
+            
+            <p><small><strong>Graph Notes:</strong> This visualization represents observed web relationships and does NOT establish institutional authority or government hierarchy. High-degree nodes are not labeled as central government.</small></p>
+        </section>
+
+        <section class="download-section">
+            <h2>Downloads</h2>
+            <p>Download the complete relationship dataset or specific filtered results for offline analysis.</p>
+            
+            <div class="download-links">
+                <a href="#" class="download-link" id="download-json">
+                    <span>📄</span>
+                    <span>Download Complete JSON Dataset</span>
+                </a>
+                <a href="#" class="download-link" id="download-csv">
+                    <span>📊</span>
+                    <span>Download Complete CSV Dataset</span>
+                </a>
+                <a href="#" class="download-link" id="download-filtered-json">
+                    <span>📄</span>
+                    <span>Download Filtered JSON</span>
+                </a>
+                <a href="#" class="download-link" id="download-filtered-csv">
+                    <span>📊</span>
+                    <span>Download Filtered CSV</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="collapsible">
+            <div class="collapsible-header">
+                <span>Methodology and Limitations</span>
+                <span>+</span>
+            </div>
+            <div class="collapsible-content">
+                <h3>Data Extraction Process</h3>
+                <p>All relationship data is extracted during the scanning process using the existing MultiScanner infrastructure. The HTML parsing is performed using BeautifulSoup and tldextract for domain normalization. URLs are resolved relative to their source page and normalized to eliminate fragments, default ports, and IDNA encoding.</p>
+
+                <h3>Classification Logic</h3>
+                <p>Domain categorization follows a configurable rule-based approach defined in <code>data/relationship_categories.json</code>. Categories are applied to registrable domains and represent preliminary indicators rather than definitive classifications.</p>
+
+                <h3>Aggregation Methodology</h3>
+                <p>For each scan batch, relationships are deduplicated within source pages and then aggregated by:
+                <ul>
+                    <li>Source registrable domain</li>
+                    <li>Target registrable domain</li>
+                    <li>Relationship type</li>
+                </ul>
+                Aggregation preserves evidence counts, timestamps, and page regions (main, navigation, footer, header, unknown).</p>
+
+                <h3>Limitations and Interpretations</h3>
+                <ul>
+                    <li>Graph metrics (in-degree, out-degree) indicate observed connection patterns, not institutional authority or hierarchy.</li>
+                    <li>Domain-level analysis does not infer central government status from network structure.</li>
+                    <li>Country assignment prioritizes institutional evidence over TLD mapping alone.</li>
+                    <li>Classification uses preliminary categorization that may require manual verification for certain services.</li>
+                    <li>Data represents a snapshot in time; relationships may change as pages are updated.</li>
+                </ul>
+
+                <h3>Provenanced Data</h3>
+                <p>All data maintains full provenance tracking with:
+                <ul>
+                    <li>Source page URLs</li>
+                    <li>Extraction timestamps</li>
+                    <li>Page region information</li>
+                    <li>Canonical domain records with classification basis</li>
+                    <li>Multiple source evidence for each domain</li>
+                </ul>
+                </p>
+
+                <h3>Submitting Corrections</h3>
+                <p>If you identify errors in the relationship data, please use the issue tracker on GitHub to submit corrections. Include the source page URL, target domain, and the specific type of correction needed (classification, country assignment, relationship type, etc.).</p>
+
+                <p><strong>Data Schema Version:</strong> 1.0.0<br>
+                <strong>Last Updated:</strong> 2026-07-15</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for detailed node information -->
+    <div class="modal" id="node-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Domain Details</h3>
+                <button class="close-modal" id="close-modal">×</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn" id="modal-close-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Global state
+        let allData = {
+            domains: {},
+            relationships: [],
+            manifest: null
+        };
+        
+        let filteredData = {
+            domains: {},
+            relationships: []
+        };
+        
+        let currentFilters = {};
+        let sortConfig = {};
+        
+        // Initialize the application when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeApp();
+        });
+        
+        function initializeApp() {
+            loadManifest();
+            setupEventListeners();
+            updateSummaryCards();
+            renderDomainsTable();
+            renderRelationshipsTable();
+        }
+        
+        function loadManifest() {
+            fetch('docs/data/manifest.json')
+                .then(response => response.json())
+                .then(manifest => {
+                    allData.manifest = manifest;
+                    updateUIWithManifest(manifest);
+                })
+                .catch(error => {
+                    showError('Failed to load manifest: ' + error.message);
+                });
+        }
+        
+        function updateUIWithManifest(manifest) {
+            // Update summary cards with initial data
+            if (manifest && manifest.global_summary) {
+                updateSummaryCardsFromManifest(manifest.global_summary);
+            }
+            
+            // Load countries for the country selector
+            if (manifest && manifest.countries && manifest.countries.length > 0) {
+                populateCountrySelector(manifest.countries);
+            }
+            
+            // Announce to screen readers
+            announceToScreenReader('Data loaded successfully');
+        }
+        
+        function updateSummaryCardsFromManifest(summary) {
+            document.getElementById('total-domains').textContent = summary.total_domains || 0;
+            document.getElementById('total-relationships').textContent = summary.total_edges || 0;
+            document.getElementById('confirmed-domains').textContent = summary.domains_by_classification?.confirmed || 0;
+            document.getElementById('candidate-domains').textContent = summary.domains_by_classification?.candidate || 0;
+            document.getElementById('editorial-links').textContent = summary.edges_by_type?.editorial_link || 0;
+            document.getElementById('technical-deps').textContent = 
+                (summary.edges_by_type?.script_dependency || 0) + 
+                (summary.edges_by_type?.stylesheet_dependency || 0) + 
+                (summary.edges_by_type?.font_or_preload_dependency || 0) + 
+                (summary.edges_by_type?.image_or_media_dependency || 0) + 
+                (summary.edges_by_type?.form_destination || 0) || 0;
+        }
+        
+        function setupEventListeners() {
+            // Filter controls
+            const applyFiltersBtn = document.getElementById('apply-filters');
+            const resetFiltersBtn = document.getElementById('reset-filters');
+            const toggleGraphBtn = document.getElementById('toggle-graph');
+            
+            applyFiltersBtn.addEventListener('click', applyFilters);
+            resetFiltersBtn.addEventListener('click', resetFilters);
+            toggleGraphBtn.addEventListener('click', toggleGraphView);
+            
+            // Country selector change
+            document.getElementById('country-filter').addEventListener('change', applyFilters);
+            
+            // Other filter changes (apply on change for better UX)
+            ['relationship-type-filter', 'government-level-filter', 
+             'classification-status-filter', 'category-filter', 'search'].forEach(id => {
+                const element = document.getElementById(id);
+                if (element) {
+                    element.addEventListener('change', applyFilters);
+                    element.addEventListener('input', applyFilters);
+                }
+            });
+            
+            // Table sorting
+            document.querySelectorAll('#domains-table th[data-sort], #relationships-table th[data-sort]').forEach(th => {
+                th.addEventListener('click', function() {
+                    const sortKey = this.dataset.sort;
+                    sortTable(sortKey, this.dataset.sortDirection || 'asc');
+                });
+            });
+            
+            // Collapsible sections
+            document.querySelectorAll('.collapsible-header').forEach(header => {
+                header.addEventListener('click', function() {
+                    toggleCollapsible(this);
+                });
+            });
+            
+            // Modal controls
+            const closeModalBtns = document.querySelectorAll('.close-modal, #modal-close-btn');
+            closeModalBtns.forEach(btn => {
+                btn.addEventListener('click', closeModal);
+            });
+            
+            // Zoom controls for graph
+            document.getElementById('zoom-in')?.addEventListener('click', function() {
+                zoomGraph(1.2);
+            });
+            
+            document.getElementById('zoom-out')?.addEventListener('click', function() {
+                zoomGraph(0.8);
+            });
+            
+            document.getElementById('reset-zoom')?.addEventListener('click', function() {
+                resetGraphZoom();
+            });
+        }
+        
+        function toggleCollapsible(header) {
+            const content = header.nextElementSibling;
+            const indicator = header.querySelector('span:last-child');
+            
+            content.classList.toggle('active');
+            
+            if (content.classList.contains('active')) {
+                indicator.textContent = '−';
+            } else {
+                indicator.textContent = '+';
+            }
+        }
+        
+        function applyFilters() {
+            // Get filter values
+            currentFilters = {
+                country: document.getElementById('country-filter').value.toLowerCase(),
+                relationship_type: document.getElementById('relationship-type-filter').value,
+                government_level: document.getElementById('government-level-filter').value,
+                classification_status: document.getElementById('classification-status-filter').value,
+                category: document.getElementById('category-filter').value,
+                search: document.getElementById('search').value.toLowerCase()
+            };
+            
+            // Apply filters to data
+            applyFiltersToData();
+            
+            // Update UI
+            updateSummaryCards();
+            renderDomainsTable();
+            renderRelationshipsTable();
+            
+            // Announce to screen readers
+            announceToScreenReader(`Filtered data: ${filteredData.domains.length} domains, ${filteredData.relationships.length} relationships`);
+        }
+        
+        function resetFilters() {
+            // Reset all filter controls
+            document.getElementById('country-filter').value = '';
+            document.getElementById('relationship-type-filter').value = '';
+            document.getElementById('government-level-filter').value = '';
+            document.getElementById('classification-status-filter').value = '';
+            document.getElementById('category-filter').value = '';
+            document.getElementById('search').value = '';
+            
+            // Reset filters and update UI
+            currentFilters = {};
+            applyFiltersToData();
+            updateSummaryCards();
+            renderDomainsTable();
+            renderRelationshipsTable();
+            
+            announceToScreenReader('Filters have been reset');
+        }
+        
+        function applyFiltersToData() {
+            filteredData.domains = {};
+            filteredData.relationships = [];
+            
+            // First, apply basic filtering to domains
+            Object.values(allData.domains).forEach(domain => {
+                if (matchesFilters(domain, currentFilters)) {
+                    filteredData.domains[domain.id] = domain;
+                }
+            });
+            
+            // Then filter relationships
+            allData.relationships.forEach(rel => {
+                if (matchesFilters(rel, currentFilters)) {
+                    filteredData.relationships.push(rel);
+                }
+            });
+        }
+        
+        function matchesFilters(item, filters) {
+            // Check country filter
+            if (filters.country && item.country && !item.country.toLowerCase().includes(filters.country)) {
+                return false;
+            }
+            
+            // Check domain search
+            if (filters.search) {
+                const searchText = `${item.domain} ${item.organization_name || ''} ${item.country || ''}`.toLowerCase();
+                if (!searchText.includes(filters.search)) {
+                    return false;
+                }
+            }
+            
+            // Special handling for domains
+            if (item.domain && !Array.isArray(item.domain)) {
+                if (filters.category && item.category && item.category !== filters.category) {
+                    return false;
+                }
+            }
+            
+            // Special handling for relationships
+            if (item.relationship_type && filters.relationship_type && item.relationship_type !== filters.relationship_type) {
+                return false;
+            }
+            
+            return true;
+        }
+        
+        function updateSummaryCards() {
+            // Update summary based on filtered data
+            const totalDomains = Object.keys(filteredData.domains).length;
+            const totalRelationships = filteredData.relationships.length;
+            
+            document.getElementById('total-domains').textContent = totalDomains;
+            document.getElementById('total-relationships').textContent = totalRelationships;
+            
+            // Count domains by classification status
+            const confirmedDomains = Object.values(filteredData.domains).filter(d => d.classification_status === 'confirmed').length;
+            const candidateDomains = Object.values(filteredData.domains).filter(d => d.classification_status === 'candidate').length;
+            
+            document.getElementById('confirmed-domains').textContent = confirmedDomains;
+            document.getElementById('candidate-domains').textContent = candidateDomains;
+            
+            // Count relationships by type
+            const editorialLinks = filteredData.relationships.filter(r => r.relationship_type === 'editorial_link').length;
+            const technicalDeps = filteredData.relationships.filter(r => 
+                ['script_dependency', 'stylesheet_dependency', 'font_or_preload_dependency', 
+                 'image_or_media_dependency', 'form_destination'].includes(r.relationship_type)
+            ).length;
+            
+            document.getElementById('editorial-links').textContent = editorialLinks;
+            document.getElementById('technical-deps').textContent = technicalDeps;
+        }
+        
+        function renderDomainsTable() {
+            const tbody = document.getElementById('domains-table-body');
+            const domains = Object.values(filteredData.domains);
+            
+            if (domains.length === 0) {
+                tbody.innerHTML = `
+                    <tr>
+                        <td colspan="10" class="empty-state">
+                            <h3>No domains match the current filters</h3>
+                            <p>Try adjusting your search criteria or filters</p>
+                        </td>
+                    </tr>
+                `;
+                return;
+            }
+            
+            // Apply sorting
+            domains.sort((a, b) => {
+                const sortKey = sortConfig.domains?.key || 'organization_name';
+                const direction = sortConfig.domains?.direction || 'asc';
+                
+                const aValue = a[sortKey] || '';
+                const bValue = b[sortKey] || '';
+                
+                if (aValue < bValue) return direction === 'asc' ? -1 : 1;
+                if (aValue > bValue) return direction === 'asc' ? 1 : -1;
+                return 0;
+            });
+            
+            tbody.innerHTML = domains.map(domain => {
+                const badges = [
+                    `<span class="badge country" title="Country: ${domain.country || 'Unknown'}">${domain.country || 'Unknown'}</span>`,
+                    `<span class="badge level" title="Government Level: ${domain.government_level || 'Unknown'}">${domain.government_level || 'Unknown'}</span>`,
+                    `<span class="badge status" title="Classification Status: ${domain.classification_status || 'Unknown'}">${domain.classification_status || 'Unknown'}</span>`
+                ].join('');
+                
+                return `
+                    <tr>
+                        <td>${domain.organization_name || 'Unknown Organization'}</td>
+                        <td><a href="#" class="domain-cell" onclick="showDomainDetails('${domain.id}'); return false;">${domain.domain}</a></td>
+                        <td>${domain.country || 'Unknown'}</td>
+                        <td>${domain.government_level || 'Unknown'}</td>
+                        <td>${domain.organization_type || 'Unknown'}</td>
+                        <td>${badges}</td>
+                        <td>${domain.source_count || 0}</td>
+                        <td>${domain.in_degree || 0}</td>
+                        <td>${domain.out_degree || 0}</td>
+                        <td>${formatDate(domain.last_seen)}</td>
+                    </tr>
+                `;
+            }).join('');
+        }
+        
+        function renderRelationshipsTable() {
+            const tbody = document.getElementById('relationships-table-body');
+            const relationships = filteredData.relationships;
+            
+            if (relationships.length === 0) {
+                tbody.innerHTML = `
+                    <tr>
+                        <td colspan="8" class="empty-state">
+                            <h3>No relationships match the current filters</h3>
+                            <p>Try adjusting your search criteria or filters</p>
+                        </td>
+                    </tr>
+                `;
+                return;
+            }
+            
+            // Apply sorting
+            relationships.sort((a, b) => {
+                const sortKey = sortConfig.relationships?.key || 'first_seen';
+                const direction = sortConfig.relationships?.direction || 'desc';
+                
+                const aValue = a[sortKey] || '';
+                const bValue = b[sortKey] || '';
+                
+                if (aValue < bValue) return direction === 'desc' ? -1 : 1;
+                if (aValue > bValue) return direction === 'desc' ? 1 : -1;
+                return 0;
+            });
+            
+            tbody.innerHTML = relationships.map(rel => {
+                const regionBadges = Object.entries(rel.page_regions || {}).map(([region, count]) => 
+                    `<span class="badge" title="${region}: ${count} occurrences">${region}: ${count}</span>`
+                ).join('');
+                
+                const relationshipBadgeClass = {
+                    'editorial_link': 'rel-editorial',
+                    'script_dependency': 'rel-script',
+                    'stylesheet_dependency': 'rel-style',
+                    'font_or_preload_dependency': 'rel-font',
+                    'image_or_media_dependency': 'rel-image',
+                    'form_destination': 'rel-form'
+                }[rel.relationship_type] || '';
+                
+                const categoryBadgeClass = rel.target_category ? `cat-${rel.target_category.toLowerCase().replace('_', '-')}` : '';
+                
+                return `
+                    <tr>
+                        <td><a href="#" class="domain-cell" onclick="showDomainDetails('${rel.source_domain}'); return false;">${rel.source_domain}</a></td>
+                        <td><a href="#" class="domain-cell" onclick="showDomainDetails('${rel.target_domain}'); return false;">${rel.target_domain}</a></td>
+                        <td><span class="badge ${relationshipBadgeClass}">${rel.relationship_type.replace('_', ' ')}</span></td>
+                        <td>${rel.source_pages || 0}</td>
+                        <td>${rel.observations || 0}</td>
+                        <td>${regionBadges}</td>
+                        <td>${formatDate(rel.first_seen)}</td>
+                        <td>${formatDate(rel.last_seen)}</td>
+                    </tr>
+                `;
+            }).join('');
+        }
+        
+        function sortTable(sortKey, direction = 'asc') {
+            const tableId = this.closest('table').id;
+            
+            if (tableId === 'domains-table') {
+                sortConfig.domains = { key: sortKey, direction };
+            } else if (tableId === 'relationships-table') {
+                sortConfig.relationships = { key: sortKey, direction };
+            }
+            
+            // Update header indicators
+            document.querySelectorAll(`#${tableId} th`).forEach(th => {
+                th.classList.remove('sorted-asc', 'sorted-desc');
+                if (th.dataset.sort === sortKey) {
+                    th.classList.add(`sorted-${direction}`);
+                }
+            });
+            
+            // Re-render table
+            if (tableId === 'domains-table') {
+                renderDomainsTable();
+            } else if (tableId === 'relationships-table') {
+                renderRelationshipsTable();
+            }
+        }
+        
+        function populateCountrySelector(countries) {
+            const select = document.getElementById('country-filter');
+            
+            // Keep the first option (All Countries)
+            const firstOption = select.querySelector('option');
+            select.innerHTML = '';
+            select.appendChild(firstOption);
+            
+            // Add country options
+            countries.forEach(country => {
+                const option = document.createElement('option');
+                option.value = country.name.toLowerCase();
+                option.textContent = country.name;
+                select.appendChild(option);
+            });
+        }
+        
+        function showDomainDetails(domainId) {
+            const domain = allData.domains[domainId];
+            
+            if (!domain) return;
+            
+            // Build modal content
+            const modalTitle = document.getElementById('modal-title');
+            const modalBody = document.getElementById('modal-body');
+            
+            modalTitle.textContent = domain.domain || 'Domain Details';
+            
+            const sources = domain.sources && domain.sources.map(source => 
+                `<div class="source-item">
+                    <strong>${source.name}:</strong> ${source.source_url}<br>
+                    <small>Retrieved: ${source.retrieved_at}${source.confidence ? ` | Confidence: ${source.confidence}` : ''}</small>
+                </div>`
+            ).join('');
+            
+            const relatedDomains = domain.related_domains && domain.related_domains.length > 0 ? 
+                `<ul>
+                    ${domain.related_domains.map(related => 
+                        `<li><a href="#" onclick="showDomainDetails('${related}'); return false;">${related}</a></li>`
+                    ).join('')}
+                </ul>` : 
+                '<p>No related domains recorded.</p>';
+            
+            modalBody.innerHTML = `
+                <div class="domain-details">
+                    <section>
+                        <h4>Basic Information</h4>
+                        <table class="detail-table">
+                            <tr>
+                                <td><strong>Domain:</strong></td>
+                                <td>${domain.domain || 'N/A'}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Country:</strong></td>
+                                <td>${domain.country || 'N/A'}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Organization:</strong></td>
+                                <td>${domain.organization_name || 'N/A'}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Government Level:</strong></td>
+                                <td>${domain.government_level || 'N/A'}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Organization Type:</strong></td>
+                                <td>${domain.organization_type || 'N/A'}</td>
+                            </tr>
+                        </table>
+                    </section>
+                    
+                    <section>
+                        <h4>Classification</h4>
+                        <table class="detail-table">
+                            <tr>
+                                <td><strong>Status:</strong></td>
+                                <td><span class="badge status">${domain.classification_status || 'Unknown'}</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Basis:</strong></td>
+                                <td><span class="badge type">${domain.classification_basis || 'Unknown'}</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>ID:</strong></td>
+                                <td>${domain.id || 'N/A'}</td>
+                            </tr>
+                        </table>
+                    </section>
+                    
+                    <section>
+                        <h4>Graph Metrics</h4>
+                        <table class="detail-table">
+                            <tr>
+                                <td><strong>In-Degree:</strong></td>
+                                <td>${domain.in_degree || 0}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Out-Degree:</strong></td>
+                                <td>${domain.out_degree || 0}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Weighted In-Degree:</strong></td>
+                                <td>${domain.weighted_in_degree || 0}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Weighted Out-Degree:</strong></td>
+                                <td>${domain.weighted_out_degree || 0}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Source Organizations:</strong></td>
+                                <td>${domain.unique_source_organizations || 0}</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Source Pages:</strong></td>
+                                <td>${domain.unique_source_pages || 0}</td>
+                            </tr>
+                        </table>
+                    </section>
+                    
+                    <section>
+                        <h4>Provenance Sources</h4>
+                        <div class="sources-list">
+                            ${sources}
+                        </div>
+                    </section>
+                    
+                    <section>
+                        <h4>Related Domains</h4>
+                        ${relatedDomains}
+                    </section>
+                    
+                    <section>
+                        <h4>Timeline</h4>
+                        <p>Last observed: <strong>${formatDate(domain.last_seen)}</strong></p>
+                    </section>
+                </div>
+            `;
+            
+            // Show modal
+            const modal = document.getElementById('node-modal');
+            modal.classList.add('active');
+        }
+        
+        function closeModal() {
+            const modal = document.getElementById('node-modal');
+            modal.classList.remove('active');
+        }
+        
+        function toggleGraphView() {
+            const graphContainer = document.getElementById('graph-container');
+            graphContainer.classList.toggle('active');
+            
+            if (graphContainer.classList.contains('active')) {
+                announceToScreenReader('Network graph view activated');
+            } else {
+                announceToScreenReader('Network graph view deactivated');
+            }
+        }
+        
+        function zoomGraph(factor) {
+            // Placeholder for graph zoom functionality
+            announceToScreenReader(`Graph zoom level adjusted by ${factor}`);
+        }
+        
+        function resetGraphZoom() {
+            // Placeholder for graph zoom reset
+            announceToScreenReader('Graph view reset');
+        }
+        
+        function formatDate(dateString) {
+            if (!dateString) return 'N/A';
+            
+            const date = new Date(dateString);
+            return date.toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'short',
+                day: 'numeric'
+            });
+        }
+        
+        function announceToScreenReader(message) {
+            const announcer = document.getElementById('status-message');
+            announcer.textContent = message;
+            
+            // Clear the message after announcement
+            setTimeout(() => {
+                announcer.textContent = '';
+            }, 1000);
+        }
+        
+        function showError(message) {
+            const container = document.querySelector('main');
+            const errorElement = document.createElement('div');
+            errorElement.className = 'error-message';
+            errorElement.textContent = message;
+            
+            container.insertBefore(errorElement, container.firstChild);
+            
+            // Auto-hide after 5 seconds
+            setTimeout(() => {
+                if (errorElement.parentNode) {
+                    errorElement.parentNode.removeChild(errorElement);
+                }
+            }, 5000);
+        }
+    </script>
+
+    <style>
+        /* Additional styles for the modal and detail tables */
+        .domain-details {
+            display: grid;
+            gap: 1.5rem;
+        }
+        
+        .domain-details section {
+            background: var(--light-bg);
+            padding: 1rem;
+            border-radius: 4px;
+        }
+        
+        .detail-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .detail-table td {
+            padding: 0.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .detail-table td:first-child {
+            font-weight: 600;
+            width: 40%;
+        }
+        
+        .sources-list {
+            display: grid;
+            gap: 0.5rem;
+        }
+        
+        .source-item {
+            background: white;
+            padding: 0.75rem;
+            border-radius: 4px;
+            border-left: 3px solid var(--accent-color);
+        }
+        
+        .table-filters {
+            display: flex;
+            gap: 1rem;
+            margin: 1rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .table-filter {
+            padding: 0.5rem 1rem;
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .table-filter.active {
+            background: var(--accent-color);
+            color: white;
+            border-color: var(--accent-color);
+        }
+        
+        /* Sort indicators */
+        th.sorted-asc::after {
+            content: ' ↑';
+        }
+        
+        th.sorted-desc::after {
+            content: ' ↓';
+        }
+        
+        /* Responsive adjustments for modal */
+        @media (max-width: 768px) {
+            .modal-content {
+                padding: 1rem;
+            }
+            
+            .domain-details {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation will be loaded from template -->
+    
+    <main>
+        <!-- Content will be loaded dynamically -->
+        <div class="loading-message" style="text-align: center; padding: 3rem; color: var(--text-secondary);">
+            <p>Loading government web relationship data...</p>
+            <div class="loading" style="display: inline-block; margin-top: 1rem;"></div>
+        </div>
+    </main>
+    
+    <!-- Footer will be loaded from template -->
+    
+    <script>
+        // Load navigation and footer after page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load navigation
+            fetch('docs/_includes/header.html')
+                .then(response => response.text())
+                .then(html => {
+                    // Insert header into page
+                    // For now, we'll keep the header inline
+                })
+                .catch(error => {
+                    console.log('Could not load header:', error);
+                });
+            
+            // Initialize the actual application
+            setTimeout(initializeApp, 500);
+        });
+        
+        // Override the existing initializeApp function to load data
+        function initializeApp() {
+            // First, load the actual relationship data
+            loadRelationshipData();
+            
+            // Then setup the application
+            originalInitializeApp();
+        }
+        
+        function loadRelationshipData() {
+            // Try to load the aggregated relationship data
+            fetch('docs/data/relationships.jsonl')
+                .then(response => response.text())
+                .then(text => {
+                    // Parse the JSONL data
+                    const lines = text.split('\n').filter(line => line.trim());
+                    const relationships = lines.map(line => JSON.parse(line));
+                    
+                    // For now, we'll simulate the data loading
+                    // In a real implementation, we would:
+                    // 1. Parse all .jsonl files
+                    // 2. Build canonical domains
+                    // 3. Aggregate by source/target pairs
+                    // 4. Apply the institution precedence rules
+                    
+                    // For demo, we'll show a message about the interface being ready
+                    console.log('Relationship data loading simulation started');
+                    
+                    // Show the main content
+                    const loadingMessage = document.querySelector('.loading-message');
+                    if (loadingMessage) {
+                        loadingMessage.style.display = 'none';
+                    }
+                })
+                .catch(error => {
+                    console.log('Could not load relationship data:', error);
+                    // Proceed with demo mode
+                    const loadingMessage = document.querySelector('.loading-message');
+                    if (loadingMessage) {
+                        loadingMessage.innerHTML = `
+                            <h2>Government Web Relationship Interface</h2>
+                            <p>The relationship extraction data pipeline is not currently available.</p>
+                            <p>This page demonstrates the interface structure and features based on the implementation plan.</p>
+                            <p>In a production environment, this page would load actual relationship data from:
+                            <br><code>docs/data/work/relationships/<scan-id>/*.jsonl</code></p>
+                        `;
+                    }
+                });
+        }
+        
+        function originalInitializeApp() {
+            // Call the original initializeApp function
+            if (typeof window.originalInitializeApp === 'function') {
+                window.originalInitializeApp();
+            }
+        }
+        
+        // Store the original initializeApp for later use
+        window.originalInitializeApp = function() {
+            require('path').join(__dirname, 'path/to/original/initializeApp.js');
+            // This would be called from the actual implementation
+        };
+    </script>
+</body>
+</html>
