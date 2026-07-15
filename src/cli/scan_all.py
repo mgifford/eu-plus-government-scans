@@ -19,7 +19,7 @@ def _build_parser() -> argparse.ArgumentParser:
         description=(
             "Fetch each URL once and apply multiple analyses (accessibility "
             "statement detection, social media links, technology fingerprinting, "
-            "third-party JS detection) in a single HTTP request per URL."
+            "third-party JS detection, relationship extraction) in a single HTTP request per URL."
         )
     )
     parser.add_argument(
@@ -69,6 +69,12 @@ def _build_parser() -> argparse.ArgumentParser:
         action="store_true",
         dest="no_third_party_js",
     )
+    parser.add_argument(
+        "--no-relationships",
+        help="Skip relationship extraction.",
+        action="store_true",
+        dest="no_relationships",
+    )
     return parser
 
 
@@ -100,6 +106,7 @@ def main() -> None:
         run_social_media=not args.no_social_media,
         run_tech=not args.no_tech,
         run_third_party_js=not args.no_third_party_js,
+        run_relationships=not args.no_relationships,
     )
 
     enabled = []
@@ -111,6 +118,8 @@ def main() -> None:
         enabled.append("technology")
     if not args.no_third_party_js:
         enabled.append("third-party-js")
+    if not args.no_relationships:
+        enabled.append("relationships")
 
     print(f"Scanning {len(urls)} URL(s) with: {', '.join(enabled)}")
     print(f"Rate limit: {args.rate_limit} req/s")
@@ -173,6 +182,14 @@ def main() -> None:
             if r.third_party_js and r.third_party_js.third_party_count > 0
         )
         print(f"With third-party JS: {has_3pjs}")
+
+    if not args.no_relationships:
+        has_rels = sum(
+            1
+            for r in results.values()
+            if r.relationships and len(r.relationships.relationships) > 0
+        )
+        print(f"With extracted relationships: {has_rels}")
 
 
 if __name__ == "__main__":

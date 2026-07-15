@@ -1,0 +1,89 @@
+{
+  "rules": [
+    {
+      "category": "analytics",
+      "domains": [
+        "google-analytics.com",
+        "googletagmanager.com",
+        "hotjar.com",
+        "matomo.cloud",
+        "piwik.pro"
+      ]
+    },
+    {
+      "category": "social_platform",
+      "domains": [
+        "facebook.com",
+        "twitter.com",
+        "x.com",
+        "linkedin.com",
+        "instagram.com",
+        "youtube.com",
+        "youtu.be"
+      ]
+    },
+    {
+      "category": "cdn",
+      "domains": [
+        "cloudflare.com",
+        "akamai.net",
+        "fastly.net",
+        "cloudfront.net",
+        "jsdelivr.net",
+        "unpkg.com",
+        "cdnjs.cloudflare.com",
+        "ajax.googleapis.com"
+      ]
+    },
+    {
+      "category": "identity",
+      "domains": [
+        "okta.com",
+        "auth0.com",
+        "login.microsoftonline.com"
+      ]
+    },
+    {
+      "category": "document_host",
+      "domains": [
+        "drive.google.com",
+        "dropbox.com",
+        "box.com",
+        "sharepoint.com"
+      ]
+    },
+    {
+      "category": "commercial_service",
+      "domains": [
+        "stripe.com",
+        "paypal.com",
+        "salesforce.com",
+        "zendesk.com"
+      ]
+    },
+    {
+      "category": "editorial_link",
+      "domains": []
+    },
+    {
+      "category": "script_dependency",
+      "domains": []
+    },
+    {
+      "category": "stylesheet_dependency",
+      "domains": []
+    },
+    {
+      "category": "font_or_preload_dependency",
+      "domains": []
+    },
+    {
+      "category": "image_or_media_dependency",
+      "domains": []
+    },
+    {
+      "category": "form_destination",
+      "domains": []
+    }
+  ]
+}
