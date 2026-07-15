@@ -26,18 +26,28 @@ GovernmentLevel = Literal[
 ]
 
 OrganizationType = Literal[
-    "executive",
+    "head_of_government",
+    "executive_office",
+    "ministry",
+    "department",
+    "executive_agency",
+    "shared_service",
     "legislature",
     "judiciary",
-    "ministry",
-    "agency",
-    "regulator",
+    "independent_regulator",
+    "central_bank",
+    "audit_body",
+    "ombuds_body",
+    "regional_government",
+    "state_or_province",
+    "territorial_government",
     "municipality",
     "public_health",
     "public_education",
-    "public_utility",
+    "public_university",
+    "public_broadcaster",
     "state_owned_enterprise",
-    "shared_service",
+    "public_utility",
     "unknown"
 ]
 
@@ -46,6 +56,7 @@ ClassificationStatus = Literal[
     "probable",
     "candidate",
     "disputed",
+    "retired",
     "unknown"
 ]
 
@@ -57,8 +68,25 @@ ClassificationBasis = Literal[
     "software_heritage",
     "domain_pattern",
     "network_signal",
+    "explicit_exception",
+    "country_rule",
     "unknown"
 ]
+
+ReviewStatus = Literal[
+    "pending",
+    "reviewed",
+    "approved",
+    "rejected",
+    "unknown"
+]
+
+
+class Conflict(BaseModel):
+    """A conflict between classification sources."""
+    source: str = Field(description="Name of the source making the assertion")
+    assertion: str = Field(description="The assertion made by the source")
+    url: Optional[str] = Field(None, description="URL of the source")
 
 
 class CanonicalDomain(BaseModel):
@@ -69,8 +97,53 @@ class CanonicalDomain(BaseModel):
     organization_name: Optional[str] = Field(None, description="Name of the organization")
     government_level: GovernmentLevel = Field(default="unknown")
     organization_type: OrganizationType = Field(default="unknown")
+
+    # Central administration classification
+    central_administration: Optional[bool] = Field(
+        None,
+        description="Whether the domain belongs to central administration. "
+        "True for national executive ministries/departments, False for non-central bodies, "
+        "null for unknown or unresolved cases."
+    )
+
+    # Classification metadata
     classification_status: ClassificationStatus = Field(default="unknown")
-    classification_basis: ClassificationBasis = Field(default="unknown")
+    classification_basis: List[str] = Field(
+        default_factory=list,
+        description="List of evidence sources used for classification"
+    )
+    classification_rule: Optional[str] = Field(
+        None,
+        description="The classification rule that was applied (e.g., CA-EXPLICIT-INCLUDE)"
+    )
+
+    # Review tracking
+    review_status: ReviewStatus = Field(
+        default="unknown",
+        description="Whether the classification has been reviewed by a maintainer"
+    )
+    reviewed_at: Optional[str] = Field(
+        None,
+        description="ISO date when the classification was last reviewed"
+    )
+    reviewed_by: Optional[str] = Field(
+        None,
+        description="Who reviewed the classification (e.g., maintainer username)"
+    )
+
+    # Conflict tracking
+    conflicts: List[Conflict] = Field(
+        default_factory=list,
+        description="List of conflicting source assertions"
+    )
+
+    # Applied rules tracking
+    applied_rules: List[str] = Field(
+        default_factory=list,
+        description="List of classification rules that were applied"
+    )
+
+    # Source tracking
     sources: List[SourceEvidence] = Field(default_factory=list)
 
     # Descriptive graph metrics (must not be called institutional confidence scores)

@@ -1,0 +1,81 @@
+---
+name: Request Domain Retirement
+about: Request removal of a stale or inactive government domain
+title: "Retire: "
+labels: ["domain-retirement", "needs-review"]
+assignees: []
+---
+
+## Domain Retirement Request
+
+### Domain to Retire
+
+**Domain:** 
+<!-- Enter the domain to retire -->
+
+**Current Status:** 
+<!-- What is the current status of this domain? -->
+
+**Last Known Active Date:** 
+<!-- When was this domain last known to be active? -->
+
+### Retirement Reason
+
+**Reason for Retirement:**
+<!-- Select the reason for retirement -->
+- [ ] Domain no longer exists (DNS failure)
+- [ ] Domain redirects to another domain (please specify)
+- [ ] Domain is inactive (no content)
+- [ ] Domain has been merged with another domain (please specify)
+- [ ] Domain is a duplicate of another domain (please specify)
+- [ ] Organization no longer exists
+- [ ] Other (please specify)
+
+**Evidence of Retirement:**
+<!-- Provide evidence that the domain should be retired -->
+
+**Redirect Target (if applicable):**
+<!-- If the domain redirects, where does it redirect to? -->
+
+**Replacement Domain (if applicable):**
+<!-- If the domain has been replaced, what is the new domain? -->
+
+### Impact Assessment
+
+**Current Usage:**
+<!-- Is this domain currently referenced anywhere in the dataset? -->
+
+**Related Domains:**
+<!-- Are there any related domains that should also be reviewed? -->
+
+**Historical Importance:**
+<!-- Is there any historical importance to preserving this domain record? -->
+
+### Retirement Process
+
+**Proposed Process:**
+<!-- How should this domain be retired? -->
+- [ ] Mark as retired in the dataset
+- [ ] Remove from active scanning
+- [ ] Preserve historical record
+- [ ] Update references to point to replacement domain
+- [ ] Other (please specify)
+
+**Preservation Requirements:**
+<!-- Are there any requirements for preserving the historical record? -->
+
+### Additional Context
+
+**Source of Information:**
+<!-- Where did you learn that this domain should be retired? -->
+
+**Verification Method:**
+<!-- How did you verify that the domain should be retired? -->
+
+### Checklist
+
+- [ ] I have verified the domain is no longer active or valid
+- [ ] I have provided evidence supporting retirement
+- [ ] I have considered the impact on other domains
+- [ ] I have identified any replacement domains
+- [ ] I understand that retirement requests require maintainer approval

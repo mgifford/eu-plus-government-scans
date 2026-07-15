@@ -1,0 +1,102 @@
+---
+name: Propose Country Governance Rule
+about: Propose changes to a country's governance classification rules
+title: "Country Rule: "
+labels: ["country-rule", "needs-review"]
+assignees: []
+---
+
+## Country Governance Rule Proposal
+
+### Country Information
+
+**Country Code:** 
+<!-- Enter ISO-3166-1 alpha-2 country code (e.g., CA, FR, DE, ES, GB) -->
+
+**Country Name:** 
+<!-- Enter the full country name -->
+
+**Current Rule Version:** 
+<!-- What is the current rule version? (e.g., 1) -->
+
+### Proposed Changes
+
+**Change Type:**
+<!-- Select the type of change you are proposing -->
+- [ ] New country rule
+- [ ] Update to existing country rule
+- [ ] Add/modify explicit exceptions
+- [ ] Update authoritative sources
+- [ ] Clarify known ambiguities
+- [ ] Other (please specify)
+
+**Proposed Changes:**
+<!-- Describe the specific changes you are proposing -->
+
+### Administrative Context
+
+**Administrative Context Update:**
+<!-- If you are proposing changes to the administrative context, provide the updated description -->
+
+**Central Administration Definition Update:**
+<!-- If you are proposing changes to the central administration definition, provide the updated definition -->
+
+### Classification Rules
+
+**Included Organization Types:**
+<!-- List organization types that should be included as central administration -->
+
+**Excluded Organization Types:**
+<!-- List organization types that should be excluded from central administration -->
+
+**Domain Patterns:**
+<!-- List any domain patterns that support classification -->
+
+### Explicit Exceptions
+
+**Include Exceptions:**
+<!-- List any domains that should be explicitly included as central administration -->
+- Domain: 
+  Reason: 
+  Source URL: 
+
+**Exclude Exceptions:**
+<!-- List any domains that should be explicitly excluded from central administration -->
+- Domain: 
+  Reason: 
+  Source URL: 
+
+### Authoritative Sources
+
+**Primary Source:** 
+<!-- URL to the primary authoritative source for this country's government structure -->
+
+**Additional Sources:** 
+<!-- List any additional authoritative sources -->
+
+### Known Ambiguities
+
+**Ambiguities to Document:**
+<!-- List any known ambiguities or edge cases in this country's administrative structure -->
+
+### Justification
+
+**Reason for Change:**
+<!-- Explain why this change is necessary -->
+
+**Impact Assessment:**
+<!-- How will this change affect existing classifications? -->
+
+**Evidence Quality:**
+<!-- Rate the quality of your evidence -->
+- [ ] High - Based on authoritative official source
+- [ ] Medium - Based on reliable but not authoritative source
+- [ ] Low - Based on pattern or inference only
+
+### Checklist
+
+- [ ] I have verified the country code is valid
+- [ ] I have checked that no country rule already exists (or identified the existing rule)
+- [ ] I have provided authoritative sources for my proposed changes
+- [ ] I understand that country rules require maintainer approval
+- [ ] I have considered the impact on existing domain classifications

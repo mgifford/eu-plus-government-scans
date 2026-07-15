@@ -1,0 +1,94 @@
+---
+name: Submit New Government Domain
+about: Submit a new government domain for inclusion in the dataset
+title: "New Domain: "
+labels: ["domain-submission", "needs-review"]
+assignees: []
+---
+
+## New Government Domain Submission
+
+### Domain Information
+
+**Domain:** 
+<!-- Enter the registrable domain (e.g., example.gov.xx) -->
+
+**Country Code:** 
+<!-- Enter ISO-3166-1 alpha-2 country code (e.g., CA, FR, DE, ES, GB) -->
+
+**Organization Name:** 
+<!-- Enter the official name of the organization -->
+
+**Proposed Government Level:**
+<!-- Select one -->
+- [ ] supranational
+- [ ] national
+- [ ] regional
+- [ ] state_or_province
+- [ ] local
+- [ ] municipal
+- [ ] independent_public_body
+- [ ] unknown
+
+**Proposed Organization Type:**
+<!-- Select one -->
+- [ ] head_of_government
+- [ ] executive_office
+- [ ] ministry
+- [ ] department
+- [ ] executive_agency
+- [ ] shared_service
+- [ ] legislature
+- [ ] judiciary
+- [ ] independent_regulator
+- [ ] central_bank
+- [ ] audit_body
+- [ ] ombuds_body
+- [ ] regional_government
+- [ ] state_or_province
+- [ ] territorial_government
+- [ ] municipality
+- [ ] public_health
+- [ ] public_education
+- [ ] public_university
+- [ ] public_broadcaster
+- [ ] state_owned_enterprise
+- [ ] public_utility
+- [ ] unknown
+
+**Central Administration:**
+<!-- Select one -->
+- [ ] Yes - This domain belongs to central administration
+- [ ] No - This domain does NOT belong to central administration
+- [ ] Unknown - Evidence is insufficient to determine
+
+### Evidence
+
+**Evidence URL:** 
+<!-- Provide a URL that supports this classification (official directory, legal document, etc.) -->
+
+**Explanation:** 
+<!-- Explain why this domain should be included and how you determined its classification -->
+
+### Additional Context
+
+**Source Type:**
+<!-- Select the type of evidence source -->
+- [ ] Official government directory
+- [ ] Legislation or official register
+- [ ] Organization website
+- [ ] Structured institutional data
+- [ ] Other (please specify)
+
+**Confidence Level:**
+<!-- How confident are you in this classification? -->
+- [ ] High - Based on authoritative official source
+- [ ] Medium - Based on reliable but not authoritative source
+- [ ] Low - Based on pattern or inference only
+
+### Checklist
+
+- [ ] I have verified the domain is syntactically valid
+- [ ] I have checked that this domain is not already in the dataset
+- [ ] I have provided an evidence URL that supports my classification
+- [ ] I understand that classifications may be updated as new evidence becomes available

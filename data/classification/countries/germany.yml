@@ -1,0 +1,119 @@
+# Germany - Country Governance Model
+# Last reviewed: 2026-07-15
+# Rule version: 1
+
+country:
+  code: DE
+  name: Germany
+
+rule_version: 1
+last_reviewed: "2026-07-15"
+
+administrative_context: >
+  Germany is a federal parliamentary republic with 16 states (Länder).
+  The federal government structure includes the Chancellor, federal ministries,
+  federal agencies, the Bundestag (parliament), Bundesrat (state chamber),
+  the judiciary, and numerous independent bodies. The Basic Law (Grundgesetz)
+  clearly defines the division of powers between federal and state governments.
+
+central_administration_definition: >
+  Federal executive ministries, federal agencies (Bundesbehörden), and shared
+  services that form part of, or are directly accountable to, the Federal
+  Government (Bundesregierung) through the Chancellor and Cabinet. This
+  includes the core federal administration but excludes the parliament,
+  judiciary, state governments, and independent federal bodies.
+
+include:
+  organization_types:
+    - federal_ministry
+    - federal_agency
+    - executive_office
+    - shared_service
+    - central_administration
+
+exclude:
+  organization_types:
+    - parliament
+    - judiciary
+    - state_government
+    - municipality
+    - public_university
+    - independent_regulator
+    - central_bank
+    - audit_body
+    - public_broadcaster
+    - state_owned_enterprise
+    - constitutional_court
+
+domain_patterns:
+  supporting:
+    - "*.bund.de"
+    - "*.de"
+  high_confidence:
+    - "www.bund.de"
+    - "bund.de"
+
+exceptions:
+  include:
+    - domain: "www.bundesregierung.de"
+      reason: "Federal Government portal - central administration"
+      source: "https://www.bundesregierung.de/"
+    - domain: "www.bmwk.de"
+      reason: "Federal Ministry for Economic Affairs and Energy - central administration"
+      source: "https://www.bmwk.de/"
+    - domain: "www.bmvi.de"
+      reason: "Federal Ministry of Transport - central administration"
+      source: "https://www.bmvi.de/"
+    - domain: "www.bmi.bund.de"
+      reason: "Federal Ministry of the Interior - central administration"
+      source: "https://www.bmi.bund.de/"
+
+  exclude:
+    - domain: "www.bundestag.de"
+      reason: "Bundestag - legislative branch, not central administration"
+      source: "https://www.bundestag.de/"
+    - domain: "www.bundesrat.de"
+      reason: "Bundesrat - state chamber, not central administration"
+      source: "https://www.bundesrat.de/"
+    - domain: "www.bundesverfassungsgericht.de"
+      reason: "Federal Constitutional Court - judicial branch, not central administration"
+      source: "https://www.bundesverfassungsgericht.de/"
+    - domain: "www.bundesbank.de"
+      reason: "Deutsche Bundesbank - independent central bank"
+      source: "https://www.bundesbank.de/"
+    - domain: "www.bundesnetzagentur.de"
+      reason: "Federal Network Agency - independent regulator"
+      source: "https://www.bundesnetzagentur.de/"
+    - domain: "www.zdf.de"
+      reason: "ZDF - public broadcaster, independent"
+      source: "https://www.zdf.de/"
+    - domain: "www.ndr.de"
+      reason: "NDR - public broadcaster, independent"
+      source: "https://www.ndr.de/"
+
+authoritative_sources:
+  - name: "Bundesportal - Federal Administration"
+    url: "https://www.bund.de/"
+    description: "Official portal of the federal administration"
+  - name: "Bundesministerien - Federal Ministries"
+    url: "https://www.bundesregierung.de/bundesregierung/en/bundesregierung/cabinet-and-ministries"
+    description: "Official list of federal ministries"
+  - name: "Handbuch der deutschen Bundesämter"
+    url: "https://www.bund.de/DE/Themen/Bundesverwaltung/Verwaltung Organisation/verwaltung-organisation_node.html"
+    description: "Handbook of federal agencies"
+
+known_ambiguities:
+  - "Federal states (Länder) have their own governments and administrations"
+  - "Public law foundations (Stiftungen) may have mixed status"
+  - "Federal laboratories and research institutions have varying autonomy"
+  - "Joint federal-state responsibilities (e.g., higher education) create governance complexity"
+  - "Some federal agencies serve multiple levels of government"
+
+classification_notes: >
+  Germany's federal system creates clear constitutional separation between
+  federal and state jurisdictions. The Basic Law (Grundgesetz) defines
+  which powers belong to the federation. Federal agencies (Bundesbehörden)
+  are clearly part of the federal administration. Independent bodies like
+  the Bundesbank and constitutional courts report to the constitution,
+  not the government. State governments have their own administrative
+  structures that should not be classified as central administration.

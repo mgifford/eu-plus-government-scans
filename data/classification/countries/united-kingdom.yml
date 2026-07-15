@@ -1,0 +1,119 @@
+# United Kingdom - Country Governance Model
+# Last reviewed: 2026-07-15
+# Rule version: 1
+
+country:
+  code: GB
+  name: United Kingdom
+
+rule_version: 1
+last_reviewed: "2026-07-15"
+
+administrative_context: >
+  The United Kingdom is a constitutional monarchy with a parliamentary system.
+  The administrative structure includes the Crown, the Prime Minister, Cabinet,
+  Parliament (House of Commons and House of Lords), the judiciary, devolved
+  governments (Scotland, Wales, Northern Ireland), and local authorities.
+  The UK has a unitary system with devolution to the devolved administrations.
+
+central_administration_definition: >
+  UK Government departments, executive agencies, and shared services that
+  form part of, or are directly accountable to, His Majesty's Government
+  through the Prime Minister and Cabinet. This includes the core central
+  administration (the Civil Service) but excludes Parliament, the judiciary,
+  devolved governments, and independent public bodies.
+
+include:
+  organization_types:
+    - department
+    - executive_agency
+    - shared_service
+    - central_administration
+    - government_office
+
+exclude:
+  organization_types:
+    - parliament
+    - judiciary
+    - devolved_government
+    - local_authority
+    - public_university
+    - independent_regulator
+    - central_bank
+    - audit_body
+    - public_broadcaster
+    - state_owned_enterprise
+    - crown_estate
+
+domain_patterns:
+  supporting:
+    - "*.gov.uk"
+    - "*.gov.uk"
+  high_confidence:
+    - "www.gov.uk"
+    - "gov.uk"
+
+exceptions:
+  include:
+    - domain: "www.gov.uk"
+      reason: "GOV.UK - Central Government portal"
+      source: "https://www.gov.uk/"
+    - domain: "www.parliament.uk"
+      reason: "Parliament.uk - Parliament's website (but Parliament itself is excluded)"
+      source: "https://www.parliament.uk/"
+    - domain: "www.cabinet-office.gov.uk"
+      reason: "Cabinet Office - central administrative support"
+      source: "https://www.gov.uk/government/organisations/cabinet-office"
+    - domain: "www.gov.scot"
+      reason: "Scottish Government - devolved government"
+      source: "https://www.gov.scot/"
+
+  exclude:
+    - domain: "www.parliament.uk"
+      reason: "Parliament - legislative branch, not central administration"
+      source: "https://www.parliament.uk/"
+    - domain: "www.supremecourt.uk"
+      reason: "Supreme Court - judicial branch, not central administration"
+      source: "https://www.supremecourt.uk/"
+    - domain: "www.bankofengland.co.uk"
+      reason: "Bank of England - independent central bank"
+      source: "https://www.bankofengland.co.uk/"
+    - domain: "www.ofcom.org.uk"
+      reason: "Ofcom - independent regulator"
+      source: "https://www.ofcom.org.uk/"
+    - domain: "www.bbc.co.uk"
+      reason: "BBC - public broadcaster, operationally independent"
+      source: "https://www.bbc.co.uk/"
+    - domain: "www.gov.wales"
+      reason: "Welsh Government - devolved government"
+      source: "https://www.gov.wales/"
+    - domain: "www.nidirect.gov.uk"
+      reason: "Northern Ireland Executive - devolved government"
+      source: "https://www.nidirect.gov.uk/"
+
+authoritative_sources:
+  - name: "GOV.UK - Government departments"
+    url: "https://www.gov.uk/government/organisations"
+    description: "Official list of UK government departments"
+  - name: "Civil Service Commission - Departments"
+    url: "https://www Civil-service.org.uk/"
+    description: "Civil Service departments and agencies"
+  - name: "UK Government Structure"
+    url: "https://www.gov.uk/government/how-great-britain-is-governed"
+    description: "Overview of UK government structure"
+
+known_ambiguities:
+  - "Devolved governments have significant autonomy in their areas"
+  - "Non-ministerial departments report to Parliament, not ministers"
+  - "Executive agencies operate with varying degrees of autonomy"
+  - "Arms-length bodies (ALBs) have complex governance relationships"
+  - "Crown dependencies have unique constitutional status"
+
+classification_notes: >
+  The UK's constitutional framework creates clear separation between
+  central government, Parliament, and the devolved administrations.
+  Executive agencies operate under departmental sponsorship but have
+  operational independence. Non-ministerial departments (e.g., HMRC,
+  Ofsted) report to Parliament rather than ministers. The devolved
+  governments in Scotland, Wales, and Northern Ireland have their own
+  legislative and executive powers.
