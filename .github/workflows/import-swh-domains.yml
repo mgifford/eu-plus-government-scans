@@ -1,0 +1,71 @@
+name: Import Software Heritage Domains
+
+on:
+  schedule:
+    # Run monthly on the 1st at 06:00 UTC
+    - cron: '0 6 1 * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Show what would be imported without saving'
+        required: false
+        default: 'false'
+        type: boolean
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  import-swh-domains:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Import Software Heritage domains
+        run: |
+          python -m src.cli.import_swh_gov_domains ${{ github.event.inputs.dry_run == 'true' && '--dry-run' || '' }}
+
+      - name: Create Pull Request
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'data: Import Software Heritage government domains'
+          title: 'Monthly import of Software Heritage government domains'
+          body: |
+            ## Monthly Import of Software Heritage Government Domains
+            
+            This PR imports updated government domain data from the [Software Heritage world-gov-domain-names](https://gitlab.softwareheritage.org/swh/products/insights/world-gov-domain-names) dataset.
+            
+            ### Changes
+            - Updated `data/imports/swh_*.csv` files with new domains
+            - Deduplicated against existing TOON seed files
+            - Filtered for European countries
+            
+            ### Review Instructions
+            1. Check the diff for each country's CSV file
+            2. Verify that domains look legitimate (government domains)
+            3. Merge when satisfied with the changes
+            
+            This PR was automatically created by the [Import Software Heritage Domains](https://github.com/${{ github.repository }}/actions/workflows/import-swh-domains.yml) workflow.
+          branch: data/import-swh-domains
+          delete-branch: true
+          labels: |
+            automated
+            data-import
+          reviewers: |
+            mgifford
