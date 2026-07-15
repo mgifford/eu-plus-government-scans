@@ -1,0 +1,115 @@
+---
+name: Correct Domain Classification
+about: Propose corrections to an existing domain's classification
+title: "Correction: "
+labels: ["classification-correction", "needs-review"]
+assignees: []
+---
+
+## Domain Classification Correction
+
+### Domain to Correct
+
+**Domain:** 
+<!-- Enter the domain to correct (e.g., example.gov.xx) -->
+
+**Current Government Level:** 
+<!-- What is the current government level classification? -->
+
+**Current Organization Type:** 
+<!-- What is the current organization type classification? -->
+
+**Current Central Administration Status:**
+<!-- Select one -->
+- [ ] True (central administration)
+- [ ] False (not central administration)
+- [ ] Unknown
+
+### Proposed Correction
+
+**Corrected Government Level:**
+<!-- Select what you believe is correct -->
+- [ ] supranational
+- [ ] national
+- [ ] regional
+- [ ] state_or_province
+- [ ] local
+- [ ] municipal
+- [ ] independent_public_body
+- [ ] unknown
+- [ ] No change needed
+
+**Corrected Organization Type:**
+<!-- Select what you believe is correct -->
+- [ ] head_of_government
+- [ ] executive_office
+- [ ] ministry
+- [ ] department
+- [ ] executive_agency
+- [ ] shared_service
+- [ ] legislature
+- [ ] judiciary
+- [ ] independent_regulator
+- [ ] central_bank
+- [ ] audit_body
+- [ ] ombuds_body
+- [ ] regional_government
+- [ ] state_or_province
+- [ ] territorial_government
+- [ ] municipality
+- [ ] public_health
+- [ ] public_education
+- [ ] public_university
+- [ ] public_broadcaster
+- [ ] state_owned_enterprise
+- [ ] public_utility
+- [ ] unknown
+- [ ] No change needed
+
+**Corrected Central Administration Status:**
+<!-- Select what you believe is correct -->
+- [ ] True (central administration)
+- [ ] False (not central administration)
+- [ ] Unknown
+- [ ] No change needed
+
+### Evidence for Correction
+
+**Evidence URL:** 
+<!-- Provide a URL that supports your correction -->
+
+**Explanation:** 
+<!-- Explain why the current classification is incorrect and why your correction is accurate -->
+
+### Correction Type
+
+**Type of Correction:**
+<!-- Select the type of correction you are proposing -->
+- [ ] Government level correction
+- [ ] Organization type correction
+- [ ] Central administration status correction
+- [ ] Multiple corrections (please specify in explanation)
+
+### Additional Context
+
+**Source of New Evidence:**
+<!-- Where did you find the new evidence? -->
+- [ ] Official government directory
+- [ ] Legislation or official register
+- [ ] Organization website
+- [ ] Structured institutional data
+- [ ] Personal knowledge (please explain)
+- [ ] Other (please specify)
+
+**Impact Assessment:**
+<!-- How widespread is this issue? -->
+- [ ] Isolated - Only affects this domain
+- [ ] Systematic - May affect other domains in this country
+- [ ] Uncertain - Need to investigate further
+
+### Checklist
+
+- [ ] I have verified the domain exists in the dataset
+- [ ] I have provided an evidence URL that supports my correction
+- [ ] I have checked that my proposed correction is consistent with country-specific rules
+- [ ] I understand that my correction will be reviewed by a maintainer

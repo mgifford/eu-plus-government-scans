@@ -1,0 +1,121 @@
+# Spain - Country Governance Model
+# Last reviewed: 2026-07-15
+# Rule version: 1
+
+country:
+  code: ES
+  name: Spain
+
+rule_version: 1
+last_reviewed: "2026-07-15"
+
+administrative_context: >
+  Spain is a unitary state organized as a parliamentary monarchy with
+  17 autonomous communities (comunidades autónomas) and 2 autonomous cities.
+  The administrative structure includes the Crown, the national government,
+  Parliament (Cortes Generales), the judiciary, autonomous communities,
+  provinces, and municipalities. Spain has a decentralized system with
+  significant devolution to autonomous communities.
+
+central_administration_definition: >
+  National executive ministries, government agencies (organismos públicos),
+  and shared services that form part of, or are directly accountable to,
+  the Government of Spain (Gobierno de España) through the Prime Minister
+  (Presidente del Gobierno) and Council of Ministers. This includes the
+  core central administration (Administración General del Estado) but
+  excludes Parliament, the judiciary, autonomous communities, and
+  independent public bodies.
+
+include:
+  organization_types:
+    - ministry
+    - national_agency
+    - executive_office
+    - shared_service
+    - central_administration
+    - government_agency
+
+exclude:
+  organization_types:
+    - parliament
+    - judiciary
+    - autonomous_community
+    - municipality
+    - public_university
+    - independent_regulator
+    - central_bank
+    - audit_body
+    - public_broadcaster
+    - state_owned_enterprise
+
+domain_patterns:
+  supporting:
+    - "*.gob.es"
+    - "*.es"
+  high_confidence:
+    - "www.gob.es"
+    - "gob.es"
+
+exceptions:
+  include:
+    - domain: "www.lamoncloa.gob.es"
+      reason: "La Moncloa - Prime Minister's Office - central administration"
+      source: "https://www.lamoncloa.gob.es/"
+    - domain: "www.mincotur.gob.es"
+      reason: "Ministry of Industry, Commerce and Tourism - central administration"
+      source: "https://www.mincotur.gob.es/"
+    - domain: "www.mInterior.gob.es"
+      reason: "Ministry of Interior - central administration"
+      source: "https://www.minterior.gob.es/"
+    - domain: "www.hacienda.gob.es"
+      reason: "Ministry of Finance - central administration"
+      source: "https://www.hacienda.gob.es/"
+
+  exclude:
+    - domain: "www.congreso.es"
+      reason: "Congress of Deputies - legislative branch, not central administration"
+      source: "https://www.congreso.es/"
+    - domain: "www.senado.es"
+      reason: "Senate - legislative branch, not central administration"
+      source: "https://www.senado.es/"
+    - domain: "www.poderjudicial.es"
+      reason: "General Council of the Judiciary - judicial branch, not central administration"
+      source: "https://www.poderjudicial.es/"
+    - domain: "www.bde.es"
+      reason: "Bank of Spain - independent central bank"
+      source: "https://www.bde.es/"
+    - domain: "www.cnmv.es"
+      reason: "National Securities Market Commission - independent regulator"
+      source: "https://www.cnmv.es/"
+    - domain: "www.rtve.es"
+      reason: "Radio Televisión Española - public broadcaster"
+      source: "https://www.rtve.es/"
+    - domain: "www.comunidad.madrid"
+      reason: "Community of Madrid - autonomous community government"
+      source: "https://www.comunidad.madrid/"
+
+authoritative_sources:
+  - name: "Gobierno de España - Ministros"
+    url: "https://www.lamoncloa.gob.es/consejodeministros/Paginas/index.aspx"
+    description: "Official list of ministers and ministries"
+  - name: "Boletín Oficial del Estado - Organismos Públicos"
+    url: "https://www.boe.es/"
+    description: "Official gazette with administrative structure"
+  - name: "Administración General del Estado"
+    url: "https://www.administracion.gob.es/"
+    description: "General State Administration portal"
+
+known_ambiguities:
+  - "Autonomous communities have significant self-governance"
+  - "Some agencies serve both national and regional levels"
+  - "Organismos públicos have varying degrees of autonomy"
+  - "State-owned enterprises may have mixed governance"
+  - "Autonomous cities (Ceuta, Melilla) have unique status"
+
+classification_notes: >
+  Spain's autonomous community system creates clear separation between
+  national and regional administrations. The Statute of Autonomy defines
+  the powers of each community. The central government retains authority
+  over foreign affairs, defense, and other national matters. Some
+  organizations operate at both national and regional levels, requiring
+  careful examination of their legal status and accountability.

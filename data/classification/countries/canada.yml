@@ -1,0 +1,122 @@
+# Canada - Country Governance Model
+# Last reviewed: 2026-07-15
+# Rule version: 1
+
+country:
+  code: CA
+  name: Canada
+
+rule_version: 1
+last_reviewed: "2026-07-15"
+
+administrative_context: >
+  Canada is a federal parliamentary democracy with 10 provinces and 3 territories.
+  The federal government structure includes Parliament (Senate and House of Commons),
+  the executive branch (Privy Council Office, Prime Minister's Office, Cabinet),
+  federal departments and agencies, Crown corporations, and independent bodies.
+  Provinces and territories have their own governments with jurisdiction over
+  education, healthcare, natural resources, and other areas.
+
+central_administration_definition: >
+  Federal executive departments, ministries, agencies, offices, and shared
+  services that form part of, or are directly accountable to, the Government
+  of Canada through the Prime Minister and Cabinet. This includes the core
+  public administration but excludes Parliament, the judiciary, Crown
+  corporations, independent agencies, and provincial/territorial governments.
+
+include:
+  organization_types:
+    - ministry
+    - federal_department
+    - federal_agency
+    - executive_office
+    - shared_service
+    - central_department
+
+exclude:
+  organization_types:
+    - parliament
+    - judiciary
+    - provincial_government
+    - territorial_government
+    - municipality
+    - crown_corporation
+    - public_university
+    - independent_regulator
+    - central_bank
+    - audit_body
+    - public_broadcaster
+    - state_owned_enterprise
+
+domain_patterns:
+  supporting:
+    - "*.canada.ca"
+    - "*.gc.ca"
+    - "*.canada.ca"
+  high_confidence:
+    - "www.canada.ca"
+    - "canada.ca"
+
+exceptions:
+  include:
+    - domain: "www.canada.ca"
+      reason: "Official Government of Canada portal - central administration"
+      source: "https://www.canada.ca/en.html"
+    - domain: "www.tbs-sct.gc.ca"
+      reason: "Treasury Board Secretariat - central administrative agency"
+      source: "https://www.tbs-sct.gc.ca/"
+    - domain: "www.pco-bcp.gc.ca"
+      reason: "Privy Council Office - central executive support"
+      source: "https://www.pco-bcp.gc.ca/"
+    - domain: "www.pm.gc.ca"
+      reason: "Prime Minister's Office - head of government office"
+      source: "https://www.pm.gc.ca/"
+    - domain: "www.laurentian.ca"
+      reason: "Laurentian University - not a federal institution"
+      source: "https://www.laurentian.ca/"
+
+  exclude:
+    - domain: "www.parl.ca"
+      reason: "Parliament of Canada - legislative branch, not central administration"
+      source: "https://www.parl.ca/"
+    - domain: "www.scc-csc.ca"
+      reason: "Supreme Court of Canada - judicial branch, not central administration"
+      source: "https://www.scc-csc.ca/"
+    - domain: "www.bankofcanada.ca"
+      reason: "Bank of Canada - independent Crown corporation"
+      source: "https://www.bankofcanada.ca/"
+    - domain: "www.cbc.ca"
+      reason: "Canadian Broadcasting Corporation - Crown corporation, not central administration"
+      source: "https://www.cbc.ca/"
+    - domain: "www.cisa.gc.ca"
+      reason: "Communications Security Establishment - intelligence agency with independent oversight"
+      source: "https://www.cse-cst.gc.ca/"
+    - domain: "www.nrcan.gc.ca"
+      reason: "Natural Resources Canada - department but classified as central"
+      source: "https://www.nrcan.gc.ca/"
+
+authoritative_sources:
+  - name: "Government of Canada Departments and Agencies"
+    url: "https://www.canada.ca/en/government/system/government-how-it-works.html"
+    description: "Official listing of federal organizations"
+  - name: "Treasury Board Secretariat - Organization List"
+    url: "https://www.tbs-sct.gc.ca/apps/sd-dsi/"
+    description: "Comprehensive directory of federal organizations"
+  - name: "Privy Council Office - Cabinet and Ministers"
+    url: "https://www.pm.gc.ca/cabinet"
+    description: "Current cabinet and ministerial responsibilities"
+
+known_ambiguities:
+  - "Crown corporations (e.g., CBC, Bank of Canada) are national but not central administration"
+  - "Independent agencies (e.g., Elections Canada, Ethics Commissioner) have operational independence"
+  - "Shared governance bodies (e.g., Canada Revenue Agency) may have mixed status"
+  - "Provincial governments have jurisdiction over many public services"
+  - "Territorial governments have unique administrative structures"
+
+classification_notes: >
+  Canada's federal system creates clear separation between federal and
+  provincial/territorial jurisdictions. The core federal public service
+  is well-defined through the Public Service Employment Act. Crown
+  corporations operate at arm's length from government. Independent
+  officers of Parliament (e.g., Auditor General, Ethics Commissioner)
+  report to Parliament, not the executive branch.

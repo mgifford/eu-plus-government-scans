@@ -1,0 +1,95 @@
+---
+name: Report Disputed Classification
+about: Report conflicting evidence for a domain's classification
+title: "Disputed: "
+labels: ["disputed-classification", "needs-review"]
+assignees: []
+---
+
+## Disputed Classification Report
+
+### Domain with Disputed Classification
+
+**Domain:** 
+<!-- Enter the domain with the disputed classification -->
+
+**Current Classification Status:**
+<!-- What is the current classification status? -->
+- [ ] candidate
+- [ ] probable
+- [ ] confirmed
+- [ ] disputed
+- [ ] unknown
+
+**Current Central Administration Status:**
+<!-- What is the current central administration status? -->
+- [ ] True (central administration)
+- [ ] False (not central administration)
+- [ ] Unknown
+
+### Conflicting Sources
+
+**Source A (Supporting Current Classification):**
+- Name: 
+- URL: 
+- Assertion: 
+
+**Source B (Contradicting Current Classification):**
+- Name: 
+- URL: 
+- Assertion: 
+
+**Additional Conflicting Sources:**
+<!-- List any other conflicting sources -->
+- Source: 
+  URL: 
+  Assertion: 
+
+### Evidence Analysis
+
+**Reason for Dispute:**
+<!-- Explain why you believe the current classification is disputed -->
+
+**Source Reliability Assessment:**
+<!-- Assess the reliability of each source -->
+- Source A reliability: 
+- Source B reliability: 
+
+**Recommendation:**
+<!-- What do you believe the correct classification should be? -->
+- [ ] Should be central administration
+- [ ] Should NOT be central administration
+- [ ] Should remain disputed
+- [ ] Need more evidence
+
+### Impact Assessment
+
+**Scope of Impact:**
+<!-- How widespread is this dispute? -->
+- [ ] Isolated - Only affects this domain
+- [ ] Systematic - May affect other domains from the same source
+- [ ] Country-wide - May affect multiple domains in this country
+- [ ] Uncertain - Need to investigate further
+
+**Affected Domains:**
+<!-- List any other domains that may be affected by this dispute -->
+
+### Resolution Guidance
+
+**Proposed Resolution Process:**
+<!-- How should this dispute be resolved? -->
+- [ ] Consult additional authoritative sources
+- [ ] Request maintainer review
+- [ ] Update country governance rules
+- [ ] Other (please specify)
+
+**Timeline Considerations:**
+<!-- Are there any time-sensitive aspects to this dispute? -->
+
+### Checklist
+
+- [ ] I have identified at least two conflicting sources
+- [ ] I have provided URLs for all sources mentioned
+- [ ] I have assessed the reliability of each source
+- [ ] I have considered the impact on other domains
+- [ ] I understand that disputed classifications require maintainer review

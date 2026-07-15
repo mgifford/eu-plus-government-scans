@@ -1,0 +1,97 @@
+# Global Baseline Classification Rule
+# This rule applies when no country-specific rule exists
+# Last reviewed: 2026-07-15
+# Rule version: 1
+
+rule_id: GLOBAL-BASELINE-001
+rule_version: 1
+last_reviewed: "2026-07-15"
+
+administrative_context: >
+  This is the global baseline definition used when no country-specific rule
+  exists. It provides a conservative default that prioritizes evidence over
+  assumption. Country-specific rules may override this baseline where the
+  national administrative structure requires different classification criteria.
+
+central_administration_definition: >
+  Central administration includes national-level executive ministries,
+  departments, agencies, offices, and shared services that form part of,
+  or are directly accountable to, the national executive government.
+  By default, this excludes all other levels and branches of government.
+
+include:
+  organization_types:
+    - ministry
+    - department
+    - executive_agency
+    - executive_office
+    - shared_service
+    - central_administration
+
+exclude:
+  organization_types:
+    - parliament
+    - judiciary
+    - regional_government
+    - state_or_province
+    - territorial_government
+    - municipality
+    - independent_regulator
+    - central_bank
+    - audit_body
+    - ombuds_body
+    - public_university
+    - public_broadcaster
+    - state_owned_enterprise
+    - public_utility
+    - public_health
+    - political_party
+    - private_contractor
+
+classification_principles:
+  - "Do not classify based on graph in-degree or link patterns"
+  - "Do not classify based on government-looking TLDs alone"
+  - "Do not classify based on Software Heritage presence alone"
+  - "Do not classify based on HTTP 200 responses alone"
+  - "Do not classify based on national prominence alone"
+  - "Central-administration status must be based on institutional evidence"
+  - "When in doubt, classify as null (unknown)"
+
+evidence_precedence:
+  1: "Country-specific authoritative government directory"
+  2: "Legislation or official administrative register"
+  3: "Existing reviewed country classification"
+  4: "Official organization website describing legal status"
+  5: "Trusted structured institutional data"
+  6: "Software Heritage classification"
+  7: "Domain naming pattern"
+  8: "Link and graph observations"
+
+conflict_handling:
+  - "Retain all source assertions when sources disagree"
+  - "Mark record as disputed when conflicts exist"
+  - "Do not choose classification based only on source count"
+  - "Prefer authoritative country-specific evidence"
+  - "Generate a review item for conflicting classifications"
+  - "Record the reason for the conflict"
+
+classification_statuses:
+  candidate: "Initial status for new domains"
+  probable: "Likely classification based on multiple supporting signals"
+  confirmed: "Verified through authoritative source"
+  disputed: "Conflicting evidence from different sources"
+  retired: "Domain no longer active or valid"
+
+review_requirements:
+  confirmed_classifications: "Require maintainer approval"
+  government_level_changes: "Require maintainer approval"
+  disputed_records: "Require maintainer approval"
+  new_country_rules: "Require maintainer approval"
+
+limitations: >
+  Administrative structures change over time. Official sources may be
+  incomplete. Translations may obscure legal distinctions. The same
+  organization type may have different status across countries. A domain
+  may be shared by central and non-central bodies. Classification may
+  require legal or administrative expertise. Unresolved classifications
+  are preferable to unsupported certainty.
