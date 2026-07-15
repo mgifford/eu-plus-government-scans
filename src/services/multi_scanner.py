@@ -36,6 +36,10 @@ from src.services.third_party_js_scanner import (
     ThirdPartyJsScanResult,
     ThirdPartyJsScanner,
 )
+from src.services.relationship_scanner import (
+    RelationshipScanResult,
+    RelationshipScanner,
+)
 
 
 @dataclass
@@ -70,6 +74,9 @@ class MultiScanResult:
     third_party_js: ThirdPartyJsScanResult | None = None
     """Third-party JavaScript detection result."""
 
+    relationships: RelationshipScanResult | None = None
+    """Extracted relationships (links, scripts, forms, etc.)."""
+
     scanned_at: str | None = None
     """ISO-8601 UTC timestamp of when the scan was performed."""
 
@@ -100,6 +107,7 @@ class MultiScanner:
         run_social_media: bool = True,
         run_tech: bool = True,
         run_third_party_js: bool = True,
+        run_relationships: bool = True,
     ):
         self.timeout_seconds = timeout_seconds
         self.max_redirects = max_redirects
@@ -108,6 +116,7 @@ class MultiScanner:
         self.run_social_media = run_social_media
         self.run_tech = run_tech
         self.run_third_party_js = run_third_party_js
+        self.run_relationships = run_relationships
 
         self._accessibility = AccessibilityScanner(
             timeout_seconds=timeout_seconds,
@@ -129,6 +138,7 @@ class MultiScanner:
             max_redirects=max_redirects,
             user_agent=user_agent,
         )
+        self._relationships = RelationshipScanner()
 
     async def scan_url(self, url: str) -> MultiScanResult:
         """Fetch *url* once and run all enabled analyses against the response.
@@ -252,6 +262,19 @@ class MultiScanner:
             )
             task_names.append("third_party_js")
 
+        if self.run_relationships:
+            tasks.append(
+                asyncio.get_event_loop().run_in_executor(
+                    None,
+                    self._relationships.scan_html,
+                    url,
+                    html,
+                    final_url,
+                    scanned_at,
+                )
+            )
+            task_names.append("relationships")
+
         sub_results = await asyncio.gather(*tasks, return_exceptions=True)
 
         # Map results back to their named fields
@@ -260,6 +283,7 @@ class MultiScanner:
             "social_media": None,
             "tech": None,
             "third_party_js": None,
+            "relationships": None,
         }
         for name, sub in zip(task_names, sub_results):
             if isinstance(sub, Exception):
@@ -292,6 +316,13 @@ class MultiScanner:
                         error_message=f"Unexpected error: {sub}",
                         scanned_at=scanned_at,
                     )
+                elif name == "relationships":
+                    result_map[name] = RelationshipScanResult(
+                        url=url,
+                        is_reachable=True,
+                        error_message=f"Unexpected error: {sub}",
+                        scanned_at=scanned_at,
+                    )
             else:
                 result_map[name] = sub
 
@@ -303,6 +334,7 @@ class MultiScanner:
             social_media=result_map["social_media"],
             tech=result_map["tech"],
             third_party_js=result_map["third_party_js"],
+            relationships=result_map["relationships"],
             scanned_at=scanned_at,
         )
 
@@ -397,5 +429,9 @@ def _print_result_summary(result: MultiScanResult) -> None:
     if result.third_party_js is not None:
         js_count = result.third_party_js.third_party_count
         parts.append(f"📜 {js_count} 3pjs")
+
+    if result.relationships is not None:
+        rel_count = len(result.relationships.relationships)
+        parts.append(f"🔗 {rel_count} rels")
 
     print(f"      ✓ {' | '.join(parts)}")
