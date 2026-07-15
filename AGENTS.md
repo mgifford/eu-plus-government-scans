@@ -208,6 +208,6 @@ standard: all documentation and data outputs must follow **WCAG 2.2 AA** guideli
 
 ## Getting Help
 
-- **Questions and discussions:** [GitHub Discussions](https://github.com/mgifford/eu-plus-government-scans/discussions)
+- **Questions and discussions:** [GitHub Issues](https://github.com/mgifford/eu-plus-government-scans/issues)
 - **Bugs and feature requests:** [GitHub Issues](https://github.com/mgifford/eu-plus-government-scans/issues)
 - **Full documentation:** [`docs/`](./docs/)
