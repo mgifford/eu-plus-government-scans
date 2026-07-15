@@ -58,17 +58,17 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
-      - name: Set up Python
-        uses: actions/setup-python@v6
+      - name: Set up uv (Python & Dependency Manager)
+        uses: astral-sh/setup-uv@v8
         with:
+          enable-cache: true
           python-version: '3.12'
-          cache: 'pip'
 
       - name: Install Python dependencies
         run: |
-          pip install -r requirements.txt
+          uv pip install --system -r requirements.txt
 
       - name: Set up Node.js
         uses: actions/setup-node@v6
@@ -77,16 +77,15 @@ jobs:
 
       - name: Install Lighthouse CLI
         run: |
-          npm install -g lighthouse
+          npm install -g lighthouse --no-audit --no-fund
 
       - name: Find latest Lighthouse metadata artifact run ID
         id: find-metadata
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          RUN_ID=$(gh api --paginate "/repos/${{ github.repository }}/actions/artifacts?per_page=100&name=lighthouse-metadata" \
-            --jq '.artifacts[] | select(.expired == false) | "\(.created_at) \(.workflow_run.id)"' \
-            2>/dev/null | sort -rk1 | head -1 | awk '{print $2}' || echo "")
+          RUN_ID=$(gh api "/repos/${{ github.repository }}/actions/artifacts?name=lighthouse-metadata&per_page=1" \
+            --jq '.artifacts[] | select(.expired == false) | .workflow_run.id' 2>/dev/null || echo "")
           echo "run_id=${RUN_ID}" >> $GITHUB_OUTPUT
           if [ -n "$RUN_ID" ]; then
             echo "Found lighthouse-metadata artifact from run $RUN_ID"
@@ -107,6 +106,7 @@ jobs:
       - name: Run Lighthouse scan (specific country)
         if: ${{ github.event.inputs.country != '' }}
         run: |
+          set -o pipefail
           python3 -m src.cli.scan_lighthouse \
             --country "${{ github.event.inputs.country }}" \
             --rate-limit "${{ github.event.inputs.rate_limit || '0.5' }}" \
@@ -120,6 +120,7 @@ jobs:
       - name: Run Lighthouse scan (all countries)
         if: ${{ github.event.inputs.country == '' || github.event_name == 'schedule' }}
         run: |
+          set -o pipefail
           python3 -m src.cli.scan_lighthouse \
             --all \
             --max-runtime 55 \
@@ -142,13 +143,12 @@ jobs:
             data/toon-seeds/countries/**_lighthouse.toon
           retention-days: 90
           if-no-files-found: warn
+          compression-level: 0
 
       - name: Guard against overwriting Lighthouse metadata with data-loss result
         if: always()
         id: db-guard
         run: |
-          # If a previous artifact existed but data/metadata.db is not present
-          # (download failed), skip the overwrite to avoid wiping stored data.
           PREV_RUN_ID="${{ steps.find-metadata.outputs.run_id }}"
           if [ -n "$PREV_RUN_ID" ] && [ ! -f "data/metadata.db" ]; then
             echo "safe_to_upload=false" >> $GITHUB_OUTPUT
@@ -168,6 +168,7 @@ jobs:
           retention-days: 90
           overwrite: true
           if-no-files-found: warn
+          compression-level: 0
 
       - name: Update shared validation metadata
         if: always() && steps.db-guard.outputs.safe_to_upload == 'true'
@@ -179,6 +180,7 @@ jobs:
           retention-days: 90
           overwrite: true
           if-no-files-found: warn
+          compression-level: 0
 
       - name: Display scan summary
         if: always()
