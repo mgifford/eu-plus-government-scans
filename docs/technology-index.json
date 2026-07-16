@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-16 22:57 UTC",
+  "generated_at": "2026-07-16 23:12 UTC",
   "base_url": "https://mgifford.github.io/eu-plus-government-scans/",
   "note": "Compact cross-reference index: technology → page count, categories, and per-country page counts. For full per-URL drilldown data see the technology-data.json workflow artifact.",
   "by_technology": {
     "jQuery": {
-      "pages": 34844,
+      "pages": 34845,
       "categories": [
         "JavaScript libraries"
       ],
@@ -39,7 +39,7 @@
         "SPAIN": 2770,
         "SWEDEN": 677,
         "SWITZERLAND": 471,
-        "UNITED_KINGDOM_UK": 6707
+        "UNITED_KINGDOM_UK": 6708
       }
     },
     "PHP": {
@@ -121,7 +121,7 @@
       }
     },
     "Bootstrap": {
-      "pages": 16108,
+      "pages": 16109,
       "categories": [
         "UI frameworks"
       ],
@@ -156,11 +156,11 @@
         "SPAIN": 1777,
         "SWEDEN": 150,
         "SWITZERLAND": 166,
-        "UNITED_KINGDOM_UK": 2487
+        "UNITED_KINGDOM_UK": 2488
       }
     },
     "Font Awesome": {
-      "pages": 15341,
+      "pages": 15343,
       "categories": [
         "Font scripts"
       ],
@@ -195,11 +195,11 @@
         "SPAIN": 1377,
         "SWEDEN": 166,
         "SWITZERLAND": 158,
-        "UNITED_KINGDOM_UK": 3496
+        "UNITED_KINGDOM_UK": 3498
       }
     },
     "Google Font API": {
-      "pages": 12878,
+      "pages": 12880,
       "categories": [
         "Font scripts"
       ],
@@ -234,7 +234,7 @@
         "SPAIN": 1074,
         "SWEDEN": 119,
         "SWITZERLAND": 146,
-        "UNITED_KINGDOM_UK": 2508
+        "UNITED_KINGDOM_UK": 2510
       }
     },
     "MySQL": {
@@ -317,7 +317,7 @@
       }
     },
     "Nginx": {
-      "pages": 11353,
+      "pages": 11354,
       "categories": [
         "Reverse proxies",
         "Web servers"
@@ -353,7 +353,7 @@
         "SPAIN": 613,
         "SWEDEN": 63,
         "SWITZERLAND": 237,
-        "UNITED_KINGDOM_UK": 2071
+        "UNITED_KINGDOM_UK": 2072
       }
     },
     "jQuery Migrate": {
@@ -396,7 +396,7 @@
       }
     },
     "Windows Server": {
-      "pages": 5897,
+      "pages": 5896,
       "categories": [
         "Operating systems"
       ],
@@ -431,11 +431,11 @@
         "SPAIN": 237,
         "SWEDEN": 419,
         "SWITZERLAND": 54,
-        "UNITED_KINGDOM_UK": 1799
+        "UNITED_KINGDOM_UK": 1798
       }
     },
     "jQuery UI": {
-      "pages": 5809,
+      "pages": 5808,
       "categories": [
         "JavaScript libraries"
       ],
@@ -469,11 +469,11 @@
         "SPAIN": 662,
         "SWEDEN": 94,
         "SWITZERLAND": 36,
-        "UNITED_KINGDOM_UK": 995
+        "UNITED_KINGDOM_UK": 994
       }
     },
     "IIS": {
-      "pages": 5808,
+      "pages": 5807,
       "categories": [
         "Web servers"
       ],
@@ -508,11 +508,11 @@
         "SPAIN": 220,
         "SWEDEN": 418,
         "SWITZERLAND": 53,
-        "UNITED_KINGDOM_UK": 1784
+        "UNITED_KINGDOM_UK": 1783
       }
     },
     "Microsoft ASP.NET": {
-      "pages": 5021,
+      "pages": 5020,
       "categories": [
         "Web frameworks"
       ],
@@ -547,11 +547,11 @@
         "SPAIN": 173,
         "SWEDEN": 390,
         "SWITZERLAND": 44,
-        "UNITED_KINGDOM_UK": 1550
+        "UNITED_KINGDOM_UK": 1549
       }
     },
     "Google Tag Manager": {
-      "pages": 5004,
+      "pages": 5007,
       "categories": [
         "Tag managers"
       ],
@@ -585,7 +585,7 @@
         "SPAIN": 552,
         "SWEDEN": 46,
         "SWITZERLAND": 828,
-        "UNITED_KINGDOM_UK": 1744
+        "UNITED_KINGDOM_UK": 1747
       }
     },
     "Cloudflare": {
@@ -664,7 +664,7 @@
       }
     },
     "jsDelivr": {
-      "pages": 4692,
+      "pages": 4691,
       "categories": [
         "CDN"
       ],
@@ -699,7 +699,7 @@
         "SPAIN": 387,
         "SWEDEN": 29,
         "SWITZERLAND": 60,
-        "UNITED_KINGDOM_UK": 817
+        "UNITED_KINGDOM_UK": 816
       }
     },
     "Yoast SEO": {
@@ -1118,7 +1118,7 @@
       }
     },
     "Varnish": {
-      "pages": 1833,
+      "pages": 1834,
       "categories": [
         "Caching"
       ],
@@ -1146,7 +1146,7 @@
         "SPAIN": 11,
         "SWEDEN": 24,
         "SWITZERLAND": 27,
-        "UNITED_KINGDOM_UK": 227
+        "UNITED_KINGDOM_UK": 228
       }
     },
     "Ubuntu": {
@@ -1484,7 +1484,7 @@
       }
     },
     "Google Maps": {
-      "pages": 1220,
+      "pages": 1223,
       "categories": [
         "Maps"
       ],
@@ -1515,7 +1515,7 @@
         "SPAIN": 29,
         "SWEDEN": 11,
         "SWITZERLAND": 3,
-        "UNITED_KINGDOM_UK": 424
+        "UNITED_KINGDOM_UK": 427
       }
     },
     "GOV.UK Frontend": {
@@ -3615,7 +3615,7 @@
       }
     },
     "DNN": {
-      "pages": 131,
+      "pages": 130,
       "categories": [
         "CMS"
       ],
@@ -3632,7 +3632,7 @@
         "PORTUGAL": 60,
         "SLOVENIA": 1,
         "SWITZERLAND": 3,
-        "UNITED_KINGDOM_UK": 25
+        "UNITED_KINGDOM_UK": 24
       }
     },
     "particles.js": {
@@ -5384,6 +5384,17 @@
         "SPAIN": 14
       }
     },
+    "MariaDB": {
+      "pages": 19,
+      "categories": [
+        "Databases"
+      ],
+      "by_country": {
+        "IRELAND": 2,
+        "PORTUGAL": 3,
+        "UNITED_KINGDOM_UK": 14
+      }
+    },
     "Orchard CMS": {
       "pages": 19,
       "categories": [
@@ -5391,6 +5402,17 @@
       ],
       "by_country": {
         "MALTA": 5,
+        "UNITED_KINGDOM_UK": 14
+      }
+    },
+    "Pantheon": {
+      "pages": 19,
+      "categories": [
+        "PaaS"
+      ],
+      "by_country": {
+        "IRELAND": 2,
+        "PORTUGAL": 3,
         "UNITED_KINGDOM_UK": 14
       }
     },
@@ -5433,28 +5455,6 @@
         "SLOVAKIA": 3,
         "SPAIN": 1,
         "UNITED_KINGDOM_UK": 2
-      }
-    },
-    "MariaDB": {
-      "pages": 18,
-      "categories": [
-        "Databases"
-      ],
-      "by_country": {
-        "IRELAND": 2,
-        "PORTUGAL": 3,
-        "UNITED_KINGDOM_UK": 13
-      }
-    },
-    "Pantheon": {
-      "pages": 18,
-      "categories": [
-        "PaaS"
-      ],
-      "by_country": {
-        "IRELAND": 2,
-        "PORTUGAL": 3,
-        "UNITED_KINGDOM_UK": 13
       }
     },
     "Slimbox 2": {
@@ -7354,7 +7354,7 @@
       ]
     },
     "Font scripts": {
-      "pages": 28728,
+      "pages": 28732,
       "technologies": [
         "Cufon",
         "Font Awesome",
@@ -7379,7 +7379,7 @@
       ]
     },
     "CMS": {
-      "pages": 22537,
+      "pages": 22536,
       "technologies": [
         "AMP Plugin",
         "Adobe Experience Manager",
@@ -7441,7 +7441,7 @@
       ]
     },
     "UI frameworks": {
-      "pages": 21353,
+      "pages": 21354,
       "technologies": [
         "Bootstrap",
         "Bulma",
@@ -7460,7 +7460,7 @@
       ]
     },
     "CDN": {
-      "pages": 12512,
+      "pages": 12511,
       "technologies": [
         "Akamai",
         "Amazon Cloudfront",
@@ -7474,7 +7474,7 @@
       ]
     },
     "Databases": {
-      "pages": 12508,
+      "pages": 12509,
       "technologies": [
         "Firebase",
         "Lucene",
@@ -7498,7 +7498,7 @@
       ]
     },
     "Reverse proxies": {
-      "pages": 11671,
+      "pages": 11672,
       "technologies": [
         "Envoy",
         "F5 BigIP",
@@ -7507,7 +7507,7 @@
       ]
     },
     "Operating systems": {
-      "pages": 9890,
+      "pages": 9889,
       "technologies": [
         "CentOS",
         "Debian",
@@ -7522,7 +7522,7 @@
       ]
     },
     "Web frameworks": {
-      "pages": 8037,
+      "pages": 8036,
       "technologies": [
         "Akka HTTP",
         "Blazor",
@@ -7616,14 +7616,14 @@
       ]
     },
     "Tag managers": {
-      "pages": 5039,
+      "pages": 5042,
       "technologies": [
         "Google Tag Manager",
         "TagCommander"
       ]
     },
     "Caching": {
-      "pages": 4199,
+      "pages": 4200,
       "technologies": [
         "Google PageSpeed",
         "Litespeed Cache",
@@ -7693,7 +7693,7 @@
       ]
     },
     "Maps": {
-      "pages": 2960,
+      "pages": 2963,
       "technologies": [
         "ArcGIS API for JavaScript",
         "Google Maps",
@@ -7722,7 +7722,7 @@
       ]
     },
     "PaaS": {
-      "pages": 2278,
+      "pages": 2279,
       "technologies": [
         "Amazon Web Services",
         "Atlassian Statuspage",
