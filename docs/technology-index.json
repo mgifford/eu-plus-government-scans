@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16 18:47 UTC",
+  "generated_at": "2026-07-16 18:57 UTC",
   "base_url": "https://mgifford.github.io/eu-plus-government-scans/",
   "note": "Compact cross-reference index: technology → page count, categories, and per-country page counts. For full per-URL drilldown data see the technology-data.json workflow artifact.",
   "by_technology": {
@@ -890,7 +890,7 @@
       }
     },
     "Cart Functionality": {
-      "pages": 2834,
+      "pages": 2833,
       "categories": [
         "Ecommerce"
       ],
@@ -914,7 +914,7 @@
         "PORTUGAL": 342,
         "REPUBLIC_OF_CYPRUS": 3,
         "ROMANIA": 11,
-        "SPAIN": 531,
+        "SPAIN": 530,
         "SWEDEN": 13,
         "SWITZERLAND": 32,
         "UNITED_KINGDOM_UK": 152
@@ -7670,7 +7670,7 @@
       ]
     },
     "Ecommerce": {
-      "pages": 3394,
+      "pages": 3393,
       "technologies": [
         "Botble CMS",
         "Cart Functionality",
