@@ -5,9 +5,9 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-07-16 14:56 UTC — last scan: 2026-07-15_
+_Stats as of 2026-07-16 15:39 UTC — last scan: 2026-07-16_
 
-**158** scan batches run
+**159** scan batches run
 
 **69,679** of **82,714** available pages scanned (**84.2%** coverage)
 **64,273** pages with technology detections (**92.2%** of scanned)
@@ -33,7 +33,7 @@ _Stats as of 2026-07-16 14:56 UTC — last scan: 2026-07-15_
 | Hungary | 390 | 298 | 390 | 2026-07-13 |
 | Iceland | 139 | 137 | 139 | 2026-07-13 |
 | Ireland | 522 | 490 | 522 | 2026-07-14 |
-| Italy | 5,338 | 4,820 | 5,338 | 2026-07-14 |
+| Italy | 5,338 | 4,820 | 5,338 | 2026-07-16 |
 | Latvia | 802 | 774 | 802 | 2026-07-10 |
 | Lithuania | 120 | 110 | 120 | 2026-07-10 |
 | Luxembourg | 571 | 445 | 571 | 2026-07-10 |
@@ -59,18 +59,18 @@ _Stats as of 2026-07-16 14:56 UTC — last scan: 2026-07-15_
 
 | # | Technology | Pages | Categories |
 |--:|-----------|------:|-----------|
-| 1 | jQuery | **34,843** | JavaScript libraries |
-| 2 | PHP | **21,299** | Programming languages |
+| 1 | jQuery | **34,844** | JavaScript libraries |
+| 2 | PHP | **21,300** | Programming languages |
 | 3 | Apache | **18,660** | Web servers |
-| 4 | Bootstrap | **16,107** | UI frameworks |
+| 4 | Bootstrap | **16,108** | UI frameworks |
 | 5 | Font Awesome | **15,341** | Font scripts |
 | 6 | Google Font API | **12,878** | Font scripts |
-| 7 | MySQL | **11,954** | Databases |
-| 8 | WordPress | **11,866** | Blogs, CMS |
+| 7 | MySQL | **11,955** | Databases |
+| 8 | WordPress | **11,867** | Blogs, CMS |
 | 9 | Nginx | **11,353** | Reverse proxies, Web servers |
-| 10 | jQuery Migrate | **10,451** | JavaScript libraries |
+| 10 | jQuery Migrate | **10,452** | JavaScript libraries |
 | 11 | Windows Server | **5,897** | Operating systems |
-| 12 | jQuery UI | **5,808** | JavaScript libraries |
+| 12 | jQuery UI | **5,809** | JavaScript libraries |
 | 13 | IIS | **5,808** | Web servers |
 | 14 | Microsoft ASP.NET | **5,021** | Web frameworks |
 | 15 | Google Tag Manager | **5,004** | Tag managers |
@@ -84,15 +84,15 @@ _Stats as of 2026-07-16 14:56 UTC — last scan: 2026-07-15_
 
 | # | Category | Pages |
 |--:|---------|------:|
-| 1 | JavaScript libraries | **69,374** |
+| 1 | JavaScript libraries | **69,377** |
 | 2 | Web servers | **39,882** |
 | 3 | Font scripts | **28,728** |
-| 4 | Programming languages | **27,474** |
-| 5 | CMS | **22,536** |
-| 6 | UI frameworks | **21,352** |
+| 4 | Programming languages | **27,475** |
+| 5 | CMS | **22,537** |
+| 6 | UI frameworks | **21,353** |
 | 7 | CDN | **12,512** |
-| 8 | Databases | **12,504** |
-| 9 | Blogs | **11,940** |
+| 8 | Databases | **12,508** |
+| 9 | Blogs | **11,941** |
 | 10 | Reverse proxies | **11,671** |
 | 11 | Operating systems | **9,890** |
 | 12 | Web frameworks | **8,037** |

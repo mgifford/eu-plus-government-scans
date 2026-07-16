@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-16 14:56 UTC",
+  "generated_at": "2026-07-16 15:39 UTC",
   "base_url": "https://mgifford.github.io/eu-plus-government-scans/",
   "note": "Compact cross-reference index: technology → page count, categories, and per-country page counts. For full per-URL drilldown data see the technology-data.json workflow artifact.",
   "by_technology": {
     "jQuery": {
-      "pages": 34843,
+      "pages": 34844,
       "categories": [
         "JavaScript libraries"
       ],
@@ -23,7 +23,7 @@
         "HUNGARY": 149,
         "ICELAND": 72,
         "IRELAND": 279,
-        "ITALY": 3289,
+        "ITALY": 3290,
         "LATVIA": 300,
         "LITHUANIA": 65,
         "LUXEMBOURG": 213,
@@ -43,7 +43,7 @@
       }
     },
     "PHP": {
-      "pages": 21299,
+      "pages": 21300,
       "categories": [
         "Programming languages"
       ],
@@ -62,7 +62,7 @@
         "HUNGARY": 76,
         "ICELAND": 40,
         "IRELAND": 128,
-        "ITALY": 1767,
+        "ITALY": 1768,
         "LATVIA": 234,
         "LITHUANIA": 32,
         "LUXEMBOURG": 63,
@@ -121,7 +121,7 @@
       }
     },
     "Bootstrap": {
-      "pages": 16107,
+      "pages": 16108,
       "categories": [
         "UI frameworks"
       ],
@@ -140,7 +140,7 @@
         "HUNGARY": 61,
         "ICELAND": 16,
         "IRELAND": 166,
-        "ITALY": 2632,
+        "ITALY": 2633,
         "LATVIA": 106,
         "LITHUANIA": 41,
         "LUXEMBOURG": 40,
@@ -238,7 +238,7 @@
       }
     },
     "MySQL": {
-      "pages": 11954,
+      "pages": 11955,
       "categories": [
         "Databases"
       ],
@@ -257,7 +257,7 @@
         "HUNGARY": 28,
         "ICELAND": 13,
         "IRELAND": 63,
-        "ITALY": 1162,
+        "ITALY": 1163,
         "LATVIA": 117,
         "LITHUANIA": 27,
         "LUXEMBOURG": 44,
@@ -277,7 +277,7 @@
       }
     },
     "WordPress": {
-      "pages": 11866,
+      "pages": 11867,
       "categories": [
         "Blogs",
         "CMS"
@@ -297,7 +297,7 @@
         "HUNGARY": 28,
         "ICELAND": 13,
         "IRELAND": 63,
-        "ITALY": 1162,
+        "ITALY": 1163,
         "LATVIA": 117,
         "LITHUANIA": 27,
         "LUXEMBOURG": 44,
@@ -357,7 +357,7 @@
       }
     },
     "jQuery Migrate": {
-      "pages": 10451,
+      "pages": 10452,
       "categories": [
         "JavaScript libraries"
       ],
@@ -376,7 +376,7 @@
         "HUNGARY": 26,
         "ICELAND": 16,
         "IRELAND": 81,
-        "ITALY": 525,
+        "ITALY": 526,
         "LATVIA": 108,
         "LITHUANIA": 19,
         "LUXEMBOURG": 40,
@@ -434,6 +434,44 @@
         "UNITED_KINGDOM_UK": 1799
       }
     },
+    "jQuery UI": {
+      "pages": 5809,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "AUSTRIA": 456,
+        "BELGIUM": 42,
+        "BULGARIA": 38,
+        "CROATIA": 10,
+        "CZECHIA": 95,
+        "DENMARK": 26,
+        "ESTONIA": 52,
+        "FINLAND": 12,
+        "FRANCE": 631,
+        "GERMANY": 575,
+        "GREECE": 103,
+        "HUNGARY": 37,
+        "ICELAND": 16,
+        "IRELAND": 75,
+        "ITALY": 425,
+        "LATVIA": 113,
+        "LITHUANIA": 5,
+        "LUXEMBOURG": 11,
+        "MALTA": 24,
+        "NETHERLANDS": 48,
+        "NORWAY": 11,
+        "POLAND": 611,
+        "PORTUGAL": 424,
+        "ROMANIA": 115,
+        "SLOVAKIA": 52,
+        "SLOVENIA": 15,
+        "SPAIN": 662,
+        "SWEDEN": 94,
+        "SWITZERLAND": 36,
+        "UNITED_KINGDOM_UK": 995
+      }
+    },
     "IIS": {
       "pages": 5808,
       "categories": [
@@ -471,44 +509,6 @@
         "SWEDEN": 418,
         "SWITZERLAND": 53,
         "UNITED_KINGDOM_UK": 1784
-      }
-    },
-    "jQuery UI": {
-      "pages": 5808,
-      "categories": [
-        "JavaScript libraries"
-      ],
-      "by_country": {
-        "AUSTRIA": 456,
-        "BELGIUM": 42,
-        "BULGARIA": 38,
-        "CROATIA": 10,
-        "CZECHIA": 95,
-        "DENMARK": 26,
-        "ESTONIA": 52,
-        "FINLAND": 12,
-        "FRANCE": 631,
-        "GERMANY": 575,
-        "GREECE": 103,
-        "HUNGARY": 37,
-        "ICELAND": 16,
-        "IRELAND": 75,
-        "ITALY": 424,
-        "LATVIA": 113,
-        "LITHUANIA": 5,
-        "LUXEMBOURG": 11,
-        "MALTA": 24,
-        "NETHERLANDS": 48,
-        "NORWAY": 11,
-        "POLAND": 611,
-        "PORTUGAL": 424,
-        "ROMANIA": 115,
-        "SLOVAKIA": 52,
-        "SLOVENIA": 15,
-        "SPAIN": 662,
-        "SWEDEN": 94,
-        "SWITZERLAND": 36,
-        "UNITED_KINGDOM_UK": 995
       }
     },
     "Microsoft ASP.NET": {
@@ -890,7 +890,7 @@
       }
     },
     "Cart Functionality": {
-      "pages": 2833,
+      "pages": 2834,
       "categories": [
         "Ecommerce"
       ],
@@ -905,7 +905,7 @@
         "GREECE": 15,
         "ICELAND": 2,
         "IRELAND": 3,
-        "ITALY": 502,
+        "ITALY": 503,
         "LUXEMBOURG": 39,
         "MALTA": 8,
         "NETHERLANDS": 8,
@@ -991,7 +991,7 @@
       }
     },
     "OWL Carousel": {
-      "pages": 2137,
+      "pages": 2138,
       "categories": [
         "Widgets"
       ],
@@ -1008,7 +1008,7 @@
         "GREECE": 97,
         "HUNGARY": 9,
         "IRELAND": 6,
-        "ITALY": 189,
+        "ITALY": 190,
         "LATVIA": 12,
         "LITHUANIA": 4,
         "LUXEMBOURG": 2,
@@ -1311,7 +1311,7 @@
       }
     },
     "Leaflet": {
-      "pages": 1385,
+      "pages": 1386,
       "categories": [
         "Maps"
       ],
@@ -1327,7 +1327,7 @@
         "GREECE": 50,
         "HUNGARY": 2,
         "IRELAND": 8,
-        "ITALY": 162,
+        "ITALY": 163,
         "LATVIA": 17,
         "LUXEMBOURG": 8,
         "MALTA": 1,
@@ -2645,7 +2645,7 @@
       }
     },
     "Redis": {
-      "pages": 321,
+      "pages": 324,
       "categories": [
         "Databases"
       ],
@@ -2657,7 +2657,7 @@
         "GREECE": 29,
         "ICELAND": 10,
         "IRELAND": 3,
-        "ITALY": 17,
+        "ITALY": 20,
         "LATVIA": 6,
         "NETHERLANDS": 3,
         "POLAND": 92,
@@ -2668,7 +2668,7 @@
       }
     },
     "Redis Object Cache": {
-      "pages": 321,
+      "pages": 324,
       "categories": [
         "Caching"
       ],
@@ -2680,7 +2680,7 @@
         "GREECE": 29,
         "ICELAND": 10,
         "IRELAND": 3,
-        "ITALY": 17,
+        "ITALY": 20,
         "LATVIA": 6,
         "NETHERLANDS": 3,
         "POLAND": 92,
@@ -7272,7 +7272,7 @@
   },
   "by_category": {
     "JavaScript libraries": {
-      "pages": 69374,
+      "pages": 69377,
       "technologies": [
         "Bootstrap Table",
         "DHTMLX",
@@ -7365,7 +7365,7 @@
       ]
     },
     "Programming languages": {
-      "pages": 27474,
+      "pages": 27475,
       "technologies": [
         "CFML",
         "Go",
@@ -7379,7 +7379,7 @@
       ]
     },
     "CMS": {
-      "pages": 22536,
+      "pages": 22537,
       "technologies": [
         "AMP Plugin",
         "Adobe Experience Manager",
@@ -7441,7 +7441,7 @@
       ]
     },
     "UI frameworks": {
-      "pages": 21352,
+      "pages": 21353,
       "technologies": [
         "Bootstrap",
         "Bulma",
@@ -7474,7 +7474,7 @@
       ]
     },
     "Databases": {
-      "pages": 12504,
+      "pages": 12508,
       "technologies": [
         "Firebase",
         "Lucene",
@@ -7488,7 +7488,7 @@
       ]
     },
     "Blogs": {
-      "pages": 11940,
+      "pages": 11941,
       "technologies": [
         "Blogger",
         "Ghost",
@@ -7623,7 +7623,7 @@
       ]
     },
     "Caching": {
-      "pages": 4196,
+      "pages": 4199,
       "technologies": [
         "Google PageSpeed",
         "Litespeed Cache",
@@ -7647,7 +7647,7 @@
       ]
     },
     "Widgets": {
-      "pages": 4059,
+      "pages": 4060,
       "technologies": [
         "AMP Plugin",
         "AddThis",
@@ -7670,7 +7670,7 @@
       ]
     },
     "Ecommerce": {
-      "pages": 3393,
+      "pages": 3394,
       "technologies": [
         "Botble CMS",
         "Cart Functionality",
@@ -7693,7 +7693,7 @@
       ]
     },
     "Maps": {
-      "pages": 2959,
+      "pages": 2960,
       "technologies": [
         "ArcGIS API for JavaScript",
         "Google Maps",
