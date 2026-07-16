@@ -47,15 +47,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v7
 
-      - name: Set up uv (Python & Dependency Manager)
-        uses: astral-sh/setup-uv@v7
+      - name: Set up Python
+        uses: actions/setup-python@v6
         with:
-          enable-cache: true
           python-version: '3.12'
+          cache: 'pip'
 
       - name: Install dependencies
         run: |
-          uv pip install --system -r requirements.txt
+          pip install -r requirements.txt
 
       - name: Find latest metadata artifact run ID
         id: find-metadata
