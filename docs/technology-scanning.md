@@ -5,9 +5,9 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-07-17 10:33 UTC — last scan: 2026-07-17_
+_Stats as of 2026-07-17 10:51 UTC — last scan: 2026-07-17_
 
-**165** scan batches run
+**167** scan batches run
 
 **69,679** of **82,714** available pages scanned (**84.2%** coverage)
 **64,273** pages with technology detections (**92.2%** of scanned)
@@ -38,11 +38,11 @@ _Stats as of 2026-07-17 10:33 UTC — last scan: 2026-07-17_
 | Lithuania | 120 | 110 | 120 | 2026-07-17 |
 | Luxembourg | 571 | 445 | 571 | 2026-07-17 |
 | Malta | 608 | 593 | 608 | 2026-07-17 |
-| Netherlands | 937 | 912 | 937 | 2026-07-13 |
+| Netherlands | 937 | 912 | 937 | 2026-07-17 |
 | Norway | 239 | 233 | 239 | 2026-07-15 |
 | Poland | 8,189 | 7,529 | 14,938 | 2026-07-15 |
 | Portugal | 3,503 | 2,935 | 3,503 | 2026-07-15 |
-| Cyprus | 24 | 24 | 24 | 2026-07-10 |
+| Cyprus | 24 | 24 | 24 | 2026-07-17 |
 | Romania | 799 | 342 | 799 | 2026-07-15 |
 | Slovakia | 434 | 415 | 434 | 2026-07-15 |
 | Slovenia | 200 | 193 | 200 | 2026-07-11 |
@@ -59,11 +59,11 @@ _Stats as of 2026-07-17 10:33 UTC — last scan: 2026-07-17_
 
 | # | Technology | Pages | Categories |
 |--:|-----------|------:|-----------|
-| 1 | jQuery | **34,853** | JavaScript libraries |
+| 1 | jQuery | **34,845** | JavaScript libraries |
 | 2 | PHP | **21,300** | Programming languages |
 | 3 | Apache | **18,660** | Web servers |
-| 4 | Bootstrap | **16,109** | UI frameworks |
-| 5 | Font Awesome | **15,354** | Font scripts |
+| 4 | Bootstrap | **16,107** | UI frameworks |
+| 5 | Font Awesome | **15,346** | Font scripts |
 | 6 | Google Font API | **12,874** | Font scripts |
 | 7 | MySQL | **11,963** | Databases |
 | 8 | WordPress | **11,875** | Blogs, CMS |
@@ -76,7 +76,7 @@ _Stats as of 2026-07-17 10:33 UTC — last scan: 2026-07-17_
 | 15 | Google Tag Manager | **5,007** | Tag managers |
 | 16 | Cloudflare | **4,917** | CDN |
 | 17 | Drupal | **4,906** | CMS |
-| 18 | jsDelivr | **4,691** | CDN |
+| 18 | jsDelivr | **4,690** | CDN |
 | 19 | Yoast SEO | **3,860** | SEO |
 | 20 | reCAPTCHA | **3,715** | Security |
 
@@ -84,14 +84,14 @@ _Stats as of 2026-07-17 10:33 UTC — last scan: 2026-07-17_
 
 | # | Category | Pages |
 |--:|---------|------:|
-| 1 | JavaScript libraries | **69,406** |
+| 1 | JavaScript libraries | **69,398** |
 | 2 | Web servers | **39,890** |
-| 3 | Font scripts | **28,737** |
+| 3 | Font scripts | **28,729** |
 | 4 | Programming languages | **27,483** |
 | 5 | CMS | **22,541** |
-| 6 | UI frameworks | **21,354** |
+| 6 | UI frameworks | **21,352** |
 | 7 | Databases | **12,527** |
-| 8 | CDN | **12,511** |
+| 8 | CDN | **12,510** |
 | 9 | Blogs | **11,949** |
 | 10 | Reverse proxies | **11,675** |
 | 11 | Operating systems | **9,889** |
