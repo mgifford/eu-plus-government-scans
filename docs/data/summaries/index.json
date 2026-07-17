@@ -1,0 +1,489 @@
+{
+  "Austria": {
+    "total_relationships": 1624,
+    "total_source_domains": 30,
+    "total_unique_targets": 510,
+    "gov_to_gov_pairs": 79,
+    "relationship_types": {
+      "editorial_link": 897,
+      "script_dependency": 199,
+      "stylesheet_dependency": 181,
+      "image_or_media_dependency": 177,
+      "form_destination": 148,
+      "font_or_preload_dependency": 22
+    }
+  },
+  "Belgium": {
+    "total_relationships": 283,
+    "total_source_domains": 11,
+    "total_unique_targets": 88,
+    "gov_to_gov_pairs": 0,
+    "relationship_types": {
+      "editorial_link": 157,
+      "script_dependency": 42,
+      "stylesheet_dependency": 36,
+      "image_or_media_dependency": 25,
+      "form_destination": 14,
+      "font_or_preload_dependency": 9
+    }
+  },
+  "Bulgaria": {
+    "total_relationships": 832,
+    "total_source_domains": 22,
+    "total_unique_targets": 245,
+    "gov_to_gov_pairs": 0,
+    "relationship_types": {
+      "editorial_link": 457,
+      "script_dependency": 125,
+      "stylesheet_dependency": 110,
+      "image_or_media_dependency": 80,
+      "form_destination": 55,
+      "font_or_preload_dependency": 5
+    }
+  },
+  "Croatia": {
+    "total_relationships": 1018,
+    "total_source_domains": 23,
+    "total_unique_targets": 384,
+    "gov_to_gov_pairs": 0,
+    "relationship_types": {
+      "editorial_link": 639,
+      "script_dependency": 140,
+      "stylesheet_dependency": 99,
+      "image_or_media_dependency": 78,
+      "form_destination": 46,
+      "font_or_preload_dependency": 16
+    }
+  },
+  "Cyprus": {
+    "total_relationships": 123,
+    "total_source_domains": 5,
+    "total_unique_targets": 56,
+    "gov_to_gov_pairs": 0,
+    "relationship_types": {
+      "editorial_link": 77,
+      "script_dependency": 15,
+      "stylesheet_dependency": 12,
+      "font_or_preload_dependency": 7,
+      "image_or_media_dependency": 6,
+      "form_destination": 6
+    }
+  },
+  "Czechia": {
+    "total_relationships": 1078,
+    "total_source_domains": 28,
+    "total_unique_targets": 328,
+    "gov_to_gov_pairs": 14,
+    "relationship_types": {
+      "editorial_link": 599,
+      "script_dependency": 156,
+      "stylesheet_dependency": 129,
+      "image_or_media_dependency": 102,
+      "form_destination": 64,
+      "font_or_preload_dependency": 28
+    }
+  },
+  "Denmark": {
+    "total_relationships": 1640,
+    "total_source_domains": 51,
+    "total_unique_targets": 343,
+    "gov_to_gov_pairs": 4,
+    "relationship_types": {
+      "script_dependency": 299,
+      "stylesheet_dependency": 215,
+      "editorial_link": 789,
+      "font_or_preload_dependency": 47,
+      "image_or_media_dependency": 159,
+      "form_destination": 131
+    }
+  },
+  "EU Institutions": {
+    "total_relationships": 698,
+    "total_source_domains": 9,
+    "total_unique_targets": 224,
+    "gov_to_gov_pairs": 0,
+    "relationship_types": {
+      "editorial_link": 376,
+      "script_dependency": 106,
+      "font_or_preload_dependency": 18,
+      "stylesheet_dependency": 79,
+      "image_or_media_dependency": 79,
+      "form_destination": 40
+    }
+  },
+  "Estonia": {
+    "total_relationships": 1262,
+    "total_source_domains": 27,
+    "total_unique_targets": 352,
+    "gov_to_gov_pairs": 0,
+    "relationship_types": {
+      "editorial_link": 734,
+      "script_dependency": 168,
+      "stylesheet_dependency": 148,
+      "image_or_media_dependency": 119,
+      "form_destination": 76,
+      "font_or_preload_dependency": 17
+    }
+  },
+  "Finland": {
+    "total_relationships": 697,
+    "total_source_domains": 27,
+    "total_unique_targets": 167,
+    "gov_to_gov_pairs": 7,
+    "relationship_types": {
+      "editorial_link": 405,
+      "script_dependency": 95,
+      "stylesheet_dependency": 78,
+      "image_or_media_dependency": 59,
+      "font_or_preload_dependency": 21,
+      "form_destination": 39
+    }
+  },
+  "France": {
+    "total_relationships": 1695,
+    "total_source_domains": 97,
+    "total_unique_targets": 392,
+    "gov_to_gov_pairs": 93,
+    "relationship_types": {
+      "editorial_link": 915,
+      "script_dependency": 258,
+      "stylesheet_dependency": 216,
+      "image_or_media_dependency": 179,
+      "form_destination": 82,
+      "font_or_preload_dependency": 45
+    }
+  },
+  "Germany": {
+    "total_relationships": 2054,
+    "total_source_domains": 37,
+    "total_unique_targets": 489,
+    "gov_to_gov_pairs": 5,
+    "relationship_types": {
+      "editorial_link": 1181,
+      "script_dependency": 246,
+      "stylesheet_dependency": 211,
+      "image_or_media_dependency": 215,
+      "form_destination": 169,
+      "font_or_preload_dependency": 32
+    }
+  },
+  "Greece": {
+    "total_relationships": 1996,
+    "total_source_domains": 115,
+    "total_unique_targets": 535,
+    "gov_to_gov_pairs": 230,
+    "relationship_types": {
+      "editorial_link": 1135,
+      "script_dependency": 298,
+      "stylesheet_dependency": 255,
+      "image_or_media_dependency": 151,
+      "form_destination": 97,
+      "font_or_preload_dependency": 60
+    }
+  },
+  "Hungary": {
+    "total_relationships": 917,
+    "total_source_domains": 26,
+    "total_unique_targets": 285,
+    "gov_to_gov_pairs": 0,
+    "relationship_types": {
+      "editorial_link": 520,
+      "script_dependency": 120,
+      "stylesheet_dependency": 107,
+      "image_or_media_dependency": 97,
+      "form_destination": 46,
+      "font_or_preload_dependency": 27
+    }
+  },
+  "Iceland": {
+    "total_relationships": 496,
+    "total_source_domains": 18,
+    "total_unique_targets": 164,
+    "gov_to_gov_pairs": 0,
+    "relationship_types": {
+      "editorial_link": 247,
+      "script_dependency": 82,
+      "stylesheet_dependency": 65,
+      "image_or_media_dependency": 49,
+      "form_destination": 26,
+      "font_or_preload_dependency": 27
+    }
+  },
+  "Ireland": {
+    "total_relationships": 1430,
+    "total_source_domains": 76,
+    "total_unique_targets": 334,
+    "gov_to_gov_pairs": 28,
+    "relationship_types": {
+      "editorial_link": 693,
+      "script_dependency": 293,
+      "stylesheet_dependency": 202,
+      "image_or_media_dependency": 118,
+      "form_destination": 86,
+      "font_or_preload_dependency": 38
+    }
+  },
+  "Italy": {
+    "total_relationships": 987,
+    "total_source_domains": 43,
+    "total_unique_targets": 214,
+    "gov_to_gov_pairs": 3,
+    "relationship_types": {
+      "editorial_link": 557,
+      "script_dependency": 136,
+      "stylesheet_dependency": 116,
+      "image_or_media_dependency": 97,
+      "form_destination": 65,
+      "font_or_preload_dependency": 16
+    }
+  },
+  "Latvia": {
+    "total_relationships": 1545,
+    "total_source_domains": 90,
+    "total_unique_targets": 331,
+    "gov_to_gov_pairs": 120,
+    "relationship_types": {
+      "editorial_link": 880,
+      "script_dependency": 201,
+      "font_or_preload_dependency": 66,
+      "stylesheet_dependency": 177,
+      "image_or_media_dependency": 137,
+      "form_destination": 84
+    }
+  },
+  "Lithuania": {
+    "total_relationships": 509,
+    "total_source_domains": 14,
+    "total_unique_targets": 181,
+    "gov_to_gov_pairs": 0,
+    "relationship_types": {
+      "script_dependency": 93,
+      "font_or_preload_dependency": 8,
+      "stylesheet_dependency": 65,
+      "editorial_link": 267,
+      "image_or_media_dependency": 49,
+      "form_destination": 27
+    }
+  },
+  "Luxembourg": {
+    "total_relationships": 1286,
+    "total_source_domains": 33,
+    "total_unique_targets": 302,
+    "gov_to_gov_pairs": 11,
+    "relationship_types": {
+      "editorial_link": 657,
+      "script_dependency": 200,
+      "stylesheet_dependency": 169,
+      "image_or_media_dependency": 126,
+      "form_destination": 109,
+      "font_or_preload_dependency": 25
+    }
+  },
+  "Malta": {
+    "total_relationships": 1101,
+    "total_source_domains": 2,
+    "total_unique_targets": 184,
+    "gov_to_gov_pairs": 11,
+    "relationship_types": {
+      "editorial_link": 460,
+      "script_dependency": 174,
+      "stylesheet_dependency": 168,
+      "image_or_media_dependency": 168,
+      "form_destination": 120,
+      "font_or_preload_dependency": 11
+    }
+  },
+  "Netherlands": {
+    "total_relationships": 1366,
+    "total_source_domains": 52,
+    "total_unique_targets": 297,
+    "gov_to_gov_pairs": 8,
+    "relationship_types": {
+      "editorial_link": 643,
+      "script_dependency": 254,
+      "stylesheet_dependency": 191,
+      "image_or_media_dependency": 130,
+      "form_destination": 90,
+      "font_or_preload_dependency": 58
+    }
+  },
+  "Norway": {
+    "total_relationships": 778,
+    "total_source_domains": 24,
+    "total_unique_targets": 158,
+    "gov_to_gov_pairs": 3,
+    "relationship_types": {
+      "editorial_link": 315,
+      "script_dependency": 177,
+      "stylesheet_dependency": 137,
+      "image_or_media_dependency": 69,
+      "form_destination": 41,
+      "font_or_preload_dependency": 39
+    }
+  },
+  "Poland": {
+    "total_relationships": 1752,
+    "total_source_domains": 82,
+    "total_unique_targets": 506,
+    "gov_to_gov_pairs": 8,
+    "relationship_types": {
+      "editorial_link": 1011,
+      "script_dependency": 242,
+      "stylesheet_dependency": 216,
+      "image_or_media_dependency": 162,
+      "form_destination": 81,
+      "font_or_preload_dependency": 40
+    }
+  },
+  "Portugal": {
+    "total_relationships": 1423,
+    "total_source_domains": 83,
+    "total_unique_targets": 374,
+    "gov_to_gov_pairs": 41,
+    "relationship_types": {
+      "editorial_link": 797,
+      "script_dependency": 230,
+      "stylesheet_dependency": 167,
+      "font_or_preload_dependency": 47,
+      "image_or_media_dependency": 117,
+      "form_destination": 65
+    }
+  },
+  "Romania": {
+    "total_relationships": 146,
+    "total_source_domains": 5,
+    "total_unique_targets": 58,
+    "gov_to_gov_pairs": 0,
+    "relationship_types": {
+      "editorial_link": 92,
+      "script_dependency": 18,
+      "stylesheet_dependency": 13,
+      "image_or_media_dependency": 14,
+      "form_destination": 9
+    }
+  },
+  "Scotland": {
+    "total_relationships": 17,
+    "total_source_domains": 1,
+    "total_unique_targets": 9,
+    "gov_to_gov_pairs": 0,
+    "relationship_types": {
+      "editorial_link": 11,
+      "script_dependency": 2,
+      "image_or_media_dependency": 2,
+      "form_destination": 2
+    }
+  },
+  "Slovakia": {
+    "total_relationships": 1236,
+    "total_source_domains": 14,
+    "total_unique_targets": 334,
+    "gov_to_gov_pairs": 4,
+    "relationship_types": {
+      "editorial_link": 640,
+      "script_dependency": 193,
+      "stylesheet_dependency": 155,
+      "font_or_preload_dependency": 35,
+      "image_or_media_dependency": 125,
+      "form_destination": 88
+    }
+  },
+  "Slovenia": {
+    "total_relationships": 810,
+    "total_source_domains": 12,
+    "total_unique_targets": 245,
+    "gov_to_gov_pairs": 8,
+    "relationship_types": {
+      "editorial_link": 472,
+      "script_dependency": 104,
+      "stylesheet_dependency": 90,
+      "image_or_media_dependency": 89,
+      "form_destination": 40,
+      "font_or_preload_dependency": 15
+    }
+  },
+  "Spain": {
+    "total_relationships": 718,
+    "total_source_domains": 30,
+    "total_unique_targets": 186,
+    "gov_to_gov_pairs": 37,
+    "relationship_types": {
+      "editorial_link": 415,
+      "script_dependency": 101,
+      "stylesheet_dependency": 81,
+      "image_or_media_dependency": 62,
+      "form_destination": 48,
+      "font_or_preload_dependency": 11
+    }
+  },
+  "Sweden": {
+    "total_relationships": 1495,
+    "total_source_domains": 74,
+    "total_unique_targets": 282,
+    "gov_to_gov_pairs": 17,
+    "relationship_types": {
+      "editorial_link": 688,
+      "script_dependency": 265,
+      "stylesheet_dependency": 200,
+      "image_or_media_dependency": 158,
+      "form_destination": 115,
+      "font_or_preload_dependency": 69
+    }
+  },
+  "Switzerland": {
+    "total_relationships": 1782,
+    "total_source_domains": 5,
+    "total_unique_targets": 237,
+    "gov_to_gov_pairs": 3,
+    "relationship_types": {
+      "editorial_link": 806,
+      "script_dependency": 290,
+      "stylesheet_dependency": 277,
+      "image_or_media_dependency": 207,
+      "font_or_preload_dependency": 47,
+      "form_destination": 155
+    }
+  },
+  "United Kingdom": {
+    "total_relationships": 2000,
+    "total_source_domains": 156,
+    "total_unique_targets": 486,
+    "gov_to_gov_pairs": 155,
+    "relationship_types": {
+      "script_dependency": 427,
+      "stylesheet_dependency": 249,
+      "editorial_link": 974,
+      "image_or_media_dependency": 166,
+      "form_destination": 128,
+      "font_or_preload_dependency": 56
+    }
+  },
+  "Unknown": {
+    "total_relationships": 360,
+    "total_source_domains": 12,
+    "total_unique_targets": 98,
+    "gov_to_gov_pairs": 1,
+    "relationship_types": {
+      "editorial_link": 199,
+      "script_dependency": 49,
+      "stylesheet_dependency": 49,
+      "image_or_media_dependency": 35,
+      "form_destination": 22,
+      "font_or_preload_dependency": 6
+    }
+  },
+  "Wales": {
+    "total_relationships": 48,
+    "total_source_domains": 2,
+    "total_unique_targets": 19,
+    "gov_to_gov_pairs": 0,
+    "relationship_types": {
+      "editorial_link": 20,
+      "script_dependency": 11,
+      "stylesheet_dependency": 8,
+      "image_or_media_dependency": 4,
+      "form_destination": 3,
+      "font_or_preload_dependency": 2
+    }
+  }
+}

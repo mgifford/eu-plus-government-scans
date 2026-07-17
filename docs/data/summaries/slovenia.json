@@ -1,0 +1,414 @@
+{
+  "country": "Slovenia",
+  "total_relationships": 810,
+  "total_source_domains": 12,
+  "total_unique_targets": 245,
+  "gov_to_gov_pairs": 8,
+  "relationship_types": {
+    "editorial_link": 472,
+    "script_dependency": 104,
+    "stylesheet_dependency": 90,
+    "image_or_media_dependency": 89,
+    "form_destination": 40,
+    "font_or_preload_dependency": 15
+  },
+  "top_source_domains": [
+    {
+      "domain": "gov.si",
+      "observations": 1024,
+      "unique_targets": 124,
+      "relationship_types": {
+        "editorial_link": 266,
+        "script_dependency": 62,
+        "stylesheet_dependency": 56,
+        "image_or_media_dependency": 53,
+        "form_destination": 26,
+        "font_or_preload_dependency": 6
+      }
+    },
+    {
+      "domain": "ptuj.si",
+      "observations": 126,
+      "unique_targets": 15,
+      "relationship_types": {
+        "editorial_link": 20,
+        "script_dependency": 2,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 2,
+        "form_destination": 2
+      }
+    },
+    {
+      "domain": "ds-rs.si",
+      "observations": 123,
+      "unique_targets": 18,
+      "relationship_types": {
+        "editorial_link": 17,
+        "script_dependency": 4,
+        "stylesheet_dependency": 4,
+        "image_or_media_dependency": 3,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "kamnik.si",
+      "observations": 117,
+      "unique_targets": 19,
+      "relationship_types": {
+        "editorial_link": 19,
+        "script_dependency": 3,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 4,
+        "form_destination": 2
+      }
+    },
+    {
+      "domain": "maribor.si",
+      "observations": 112,
+      "unique_targets": 28,
+      "relationship_types": {
+        "editorial_link": 35,
+        "script_dependency": 7,
+        "stylesheet_dependency": 4,
+        "image_or_media_dependency": 3,
+        "form_destination": 3
+      }
+    },
+    {
+      "domain": "ljubljana.si",
+      "observations": 111,
+      "unique_targets": 27,
+      "relationship_types": {
+        "image_or_media_dependency": 6,
+        "editorial_link": 29,
+        "script_dependency": 7,
+        "stylesheet_dependency": 8,
+        "font_or_preload_dependency": 2,
+        "form_destination": 2
+      }
+    },
+    {
+      "domain": "celje.si",
+      "observations": 109,
+      "unique_targets": 29,
+      "relationship_types": {
+        "editorial_link": 29,
+        "script_dependency": 5,
+        "font_or_preload_dependency": 5,
+        "stylesheet_dependency": 4,
+        "image_or_media_dependency": 13,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "trbovlje.si",
+      "observations": 48,
+      "unique_targets": 14,
+      "relationship_types": {
+        "editorial_link": 16,
+        "script_dependency": 1,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "slovenjgradec.si",
+      "observations": 36,
+      "unique_targets": 32,
+      "relationship_types": {
+        "editorial_link": 29,
+        "script_dependency": 4,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "koper.si",
+      "observations": 34,
+      "unique_targets": 8,
+      "relationship_types": {
+        "editorial_link": 8,
+        "script_dependency": 1,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "kranj.si",
+      "observations": 24,
+      "unique_targets": 9,
+      "relationship_types": {
+        "script_dependency": 3,
+        "font_or_preload_dependency": 2,
+        "stylesheet_dependency": 4,
+        "editorial_link": 3,
+        "image_or_media_dependency": 2
+      }
+    },
+    {
+      "domain": "vlada.si",
+      "observations": 18,
+      "unique_targets": 5,
+      "relationship_types": {
+        "editorial_link": 1,
+        "script_dependency": 5,
+        "stylesheet_dependency": 3
+      }
+    }
+  ],
+  "top_targets": [
+    {
+      "domain": "gov.si",
+      "observations": 711
+    },
+    {
+      "domain": "ljubljana.si",
+      "observations": 57
+    },
+    {
+      "domain": "facebook.com",
+      "observations": 54
+    },
+    {
+      "domain": "maribor.si",
+      "observations": 50
+    },
+    {
+      "domain": "ptuj.si",
+      "observations": 48
+    },
+    {
+      "domain": "celje.si",
+      "observations": 43
+    },
+    {
+      "domain": "googleapis.com",
+      "observations": 43
+    },
+    {
+      "domain": "youtube.com",
+      "observations": 40
+    },
+    {
+      "domain": "google.com",
+      "observations": 36
+    },
+    {
+      "domain": "ds-rs.si",
+      "observations": 36
+    },
+    {
+      "domain": "kamnik.si",
+      "observations": 33
+    },
+    {
+      "domain": "europa.eu",
+      "observations": 26
+    },
+    {
+      "domain": "instagram.com",
+      "observations": 24
+    },
+    {
+      "domain": "pisrs.si",
+      "observations": 23
+    },
+    {
+      "domain": "twitter.com",
+      "observations": 19
+    },
+    {
+      "domain": "vlada.si",
+      "observations": 18
+    },
+    {
+      "domain": "trbovlje.si",
+      "observations": 16
+    },
+    {
+      "domain": "googletagmanager.com",
+      "observations": 15
+    },
+    {
+      "domain": "koper.si",
+      "observations": 15
+    },
+    {
+      "domain": "geoprostor.net",
+      "observations": 13
+    },
+    {
+      "domain": "jsdelivr.net",
+      "observations": 13
+    },
+    {
+      "domain": "kranj.si",
+      "observations": 12
+    },
+    {
+      "domain": "dz-rs.si",
+      "observations": 11
+    },
+    {
+      "domain": "cloudflare.com",
+      "observations": 10
+    },
+    {
+      "domain": "e-obcina.si",
+      "observations": 9
+    },
+    {
+      "domain": "linkedin.com",
+      "observations": 9
+    },
+    {
+      "domain": "arcgis.com",
+      "observations": 9
+    },
+    {
+      "domain": "osmrtnice.si",
+      "observations": 8
+    },
+    {
+      "domain": "visitkamnik.com",
+      "observations": 8
+    },
+    {
+      "domain": "zmos.si",
+      "observations": 8
+    },
+    {
+      "domain": "ip-rs.si",
+      "observations": 8
+    },
+    {
+      "domain": "up-rs.si",
+      "observations": 7
+    },
+    {
+      "domain": "us-rs.si",
+      "observations": 7
+    },
+    {
+      "domain": "rs-rs.si",
+      "observations": 7
+    },
+    {
+      "domain": "velikaplanina.si",
+      "observations": 6
+    },
+    {
+      "domain": "kamkolo.si",
+      "observations": 6
+    },
+    {
+      "domain": "consulta.si",
+      "observations": 6
+    },
+    {
+      "domain": "jzkk.si",
+      "observations": 6
+    },
+    {
+      "domain": "skupnostobcin.si",
+      "observations": 6
+    },
+    {
+      "domain": "visitptuj.eu",
+      "observations": 6
+    },
+    {
+      "domain": "ekosklad.si",
+      "observations": 6
+    },
+    {
+      "domain": "europeanbestdestinations.com",
+      "observations": 6
+    },
+    {
+      "domain": "zlatikamen.si",
+      "observations": 6
+    },
+    {
+      "domain": "traffistat.si",
+      "observations": 6
+    },
+    {
+      "domain": "cloudinary.com",
+      "observations": 6
+    },
+    {
+      "domain": "bootstrapcdn.com",
+      "observations": 6
+    },
+    {
+      "domain": "fontawesome.com",
+      "observations": 6
+    },
+    {
+      "domain": "wa.me",
+      "observations": 6
+    },
+    {
+      "domain": "evropskasredstva.si",
+      "observations": 6
+    },
+    {
+      "domain": "x.com",
+      "observations": 6
+    }
+  ],
+  "gov_to_gov_links": [
+    {
+      "source": "gov.si",
+      "target": "europa.eu",
+      "target_country": "EU Institutions",
+      "cross_country": true
+    },
+    {
+      "source": "gov.si",
+      "target": "data.gov.uk",
+      "target_country": "United Kingdom",
+      "cross_country": true
+    },
+    {
+      "source": "gov.si",
+      "target": "zagovorniki-okolja.si",
+      "target_country": "Slovenia",
+      "cross_country": false
+    },
+    {
+      "source": "gov.si",
+      "target": "sigov.si",
+      "target_country": "Slovenia",
+      "cross_country": false
+    },
+    {
+      "source": "gov.si",
+      "target": "sigov-ca.si",
+      "target_country": "Slovenia",
+      "cross_country": false
+    },
+    {
+      "source": "gov.si",
+      "target": "gov-ankete.si",
+      "target_country": "Slovenia",
+      "cross_country": false
+    },
+    {
+      "source": "gov.si",
+      "target": "ingv.it",
+      "target_country": "Italy",
+      "cross_country": true
+    },
+    {
+      "source": "gov.si",
+      "target": "usgs.gov",
+      "target_country": "Unknown",
+      "cross_country": true
+    }
+  ]
+}

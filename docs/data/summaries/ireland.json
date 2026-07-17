@@ -1,0 +1,999 @@
+{
+  "country": "Ireland",
+  "total_relationships": 1430,
+  "total_source_domains": 76,
+  "total_unique_targets": 334,
+  "gov_to_gov_pairs": 28,
+  "relationship_types": {
+    "editorial_link": 693,
+    "script_dependency": 293,
+    "stylesheet_dependency": 202,
+    "image_or_media_dependency": 118,
+    "form_destination": 86,
+    "font_or_preload_dependency": 38
+  },
+  "top_source_domains": [
+    {
+      "domain": "cavancoco.ie",
+      "observations": 107,
+      "unique_targets": 41,
+      "relationship_types": {
+        "editorial_link": 46,
+        "script_dependency": 2,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 2,
+        "form_destination": 2
+      }
+    },
+    {
+      "domain": "limerick.ie",
+      "observations": 91,
+      "unique_targets": 23,
+      "relationship_types": {
+        "editorial_link": 23,
+        "script_dependency": 9,
+        "stylesheet_dependency": 7,
+        "form_destination": 4,
+        "image_or_media_dependency": 4
+      }
+    },
+    {
+      "domain": "hse.ie",
+      "observations": 91,
+      "unique_targets": 18,
+      "relationship_types": {
+        "script_dependency": 6,
+        "stylesheet_dependency": 4,
+        "image_or_media_dependency": 4,
+        "form_destination": 3,
+        "editorial_link": 32,
+        "font_or_preload_dependency": 2
+      }
+    },
+    {
+      "domain": "kildarecoco.ie",
+      "observations": 88,
+      "unique_targets": 24,
+      "relationship_types": {
+        "editorial_link": 19,
+        "script_dependency": 7,
+        "stylesheet_dependency": 6,
+        "image_or_media_dependency": 2
+      }
+    },
+    {
+      "domain": "artscouncil.ie",
+      "observations": 86,
+      "unique_targets": 11,
+      "relationship_types": {
+        "editorial_link": 14,
+        "script_dependency": 2,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "clarecoco.ie",
+      "observations": 83,
+      "unique_targets": 26,
+      "relationship_types": {
+        "editorial_link": 12,
+        "script_dependency": 10,
+        "stylesheet_dependency": 9,
+        "font_or_preload_dependency": 6,
+        "image_or_media_dependency": 5,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "donegalcoco.ie",
+      "observations": 80,
+      "unique_targets": 21,
+      "relationship_types": {
+        "editorial_link": 10,
+        "script_dependency": 9,
+        "stylesheet_dependency": 4,
+        "font_or_preload_dependency": 2,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "ipoi.gov.ie",
+      "observations": 79,
+      "unique_targets": 9,
+      "relationship_types": {
+        "editorial_link": 12,
+        "script_dependency": 5,
+        "stylesheet_dependency": 7,
+        "image_or_media_dependency": 5,
+        "form_destination": 4,
+        "font_or_preload_dependency": 3
+      }
+    },
+    {
+      "domain": "courts.ie",
+      "observations": 78,
+      "unique_targets": 13,
+      "relationship_types": {
+        "editorial_link": 13,
+        "script_dependency": 7,
+        "stylesheet_dependency": 7,
+        "image_or_media_dependency": 5,
+        "form_destination": 2,
+        "font_or_preload_dependency": 2
+      }
+    },
+    {
+      "domain": "dlrcoco.ie",
+      "observations": 78,
+      "unique_targets": 15,
+      "relationship_types": {
+        "editorial_link": 11,
+        "script_dependency": 7,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 2,
+        "form_destination": 2
+      }
+    },
+    {
+      "domain": "fingal.ie",
+      "observations": 77,
+      "unique_targets": 17,
+      "relationship_types": {
+        "editorial_link": 20,
+        "script_dependency": 8,
+        "stylesheet_dependency": 6,
+        "image_or_media_dependency": 4,
+        "form_destination": 3,
+        "font_or_preload_dependency": 1
+      }
+    },
+    {
+      "domain": "dublincity.ie",
+      "observations": 77,
+      "unique_targets": 20,
+      "relationship_types": {
+        "script_dependency": 11,
+        "stylesheet_dependency": 8,
+        "editorial_link": 25,
+        "image_or_media_dependency": 4,
+        "font_or_preload_dependency": 1,
+        "form_destination": 3
+      }
+    },
+    {
+      "domain": "kilkennycoco.ie",
+      "observations": 59,
+      "unique_targets": 20,
+      "relationship_types": {
+        "editorial_link": 29,
+        "script_dependency": 4,
+        "stylesheet_dependency": 3,
+        "image_or_media_dependency": 3,
+        "form_destination": 4,
+        "font_or_preload_dependency": 1
+      }
+    },
+    {
+      "domain": "kerrycoco.ie",
+      "observations": 57,
+      "unique_targets": 20,
+      "relationship_types": {
+        "editorial_link": 18,
+        "script_dependency": 6,
+        "font_or_preload_dependency": 2,
+        "stylesheet_dependency": 5,
+        "image_or_media_dependency": 3,
+        "form_destination": 2
+      }
+    },
+    {
+      "domain": "corkcoco.ie",
+      "observations": 57,
+      "unique_targets": 15,
+      "relationship_types": {
+        "editorial_link": 15,
+        "script_dependency": 3,
+        "font_or_preload_dependency": 1,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "galwaycity.ie",
+      "observations": 56,
+      "unique_targets": 12,
+      "relationship_types": {
+        "editorial_link": 12,
+        "script_dependency": 4,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "roscommoncoco.ie",
+      "observations": 55,
+      "unique_targets": 16,
+      "relationship_types": {
+        "editorial_link": 14,
+        "script_dependency": 6,
+        "stylesheet_dependency": 3,
+        "image_or_media_dependency": 2,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "louthcoco.ie",
+      "observations": 51,
+      "unique_targets": 11,
+      "relationship_types": {
+        "editorial_link": 14,
+        "script_dependency": 4,
+        "stylesheet_dependency": 4,
+        "image_or_media_dependency": 3,
+        "form_destination": 3
+      }
+    },
+    {
+      "domain": "enterprise.gov.ie",
+      "observations": 51,
+      "unique_targets": 11,
+      "relationship_types": {
+        "editorial_link": 9,
+        "script_dependency": 6,
+        "stylesheet_dependency": 5,
+        "image_or_media_dependency": 3,
+        "form_destination": 2,
+        "font_or_preload_dependency": 2
+      }
+    },
+    {
+      "domain": "cso.ie",
+      "observations": 50,
+      "unique_targets": 15,
+      "relationship_types": {
+        "script_dependency": 10,
+        "stylesheet_dependency": 8,
+        "image_or_media_dependency": 2,
+        "form_destination": 2,
+        "editorial_link": 11
+      }
+    },
+    {
+      "domain": "longfordcoco.ie",
+      "observations": 48,
+      "unique_targets": 17,
+      "relationship_types": {
+        "editorial_link": 14,
+        "script_dependency": 7,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "teachingcouncil.ie",
+      "observations": 48,
+      "unique_targets": 17,
+      "relationship_types": {
+        "editorial_link": 13,
+        "script_dependency": 6,
+        "stylesheet_dependency": 6,
+        "image_or_media_dependency": 2,
+        "form_destination": 2
+      }
+    },
+    {
+      "domain": "wexfordcoco.ie",
+      "observations": 43,
+      "unique_targets": 14,
+      "relationship_types": {
+        "editorial_link": 14,
+        "script_dependency": 5,
+        "stylesheet_dependency": 4,
+        "image_or_media_dependency": 3,
+        "form_destination": 2
+      }
+    },
+    {
+      "domain": "agriculture.gov.ie",
+      "observations": 42,
+      "unique_targets": 9,
+      "relationship_types": {
+        "script_dependency": 11,
+        "stylesheet_dependency": 7,
+        "editorial_link": 6,
+        "image_or_media_dependency": 1
+      }
+    },
+    {
+      "domain": "rtb.ie",
+      "observations": 34,
+      "unique_targets": 10,
+      "relationship_types": {
+        "editorial_link": 6,
+        "script_dependency": 7,
+        "stylesheet_dependency": 3,
+        "image_or_media_dependency": 2,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "waterfordcouncil.ie",
+      "observations": 34,
+      "unique_targets": 11,
+      "relationship_types": {
+        "editorial_link": 12,
+        "script_dependency": 3,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 1,
+        "form_destination": 2
+      }
+    },
+    {
+      "domain": "irishstatutebook.ie",
+      "observations": 33,
+      "unique_targets": 12,
+      "relationship_types": {
+        "editorial_link": 10,
+        "script_dependency": 4,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "creativeireland.gov.ie",
+      "observations": 33,
+      "unique_targets": 11,
+      "relationship_types": {
+        "editorial_link": 9,
+        "script_dependency": 4,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "carrentalcouncil.ie",
+      "observations": 32,
+      "unique_targets": 15,
+      "relationship_types": {
+        "editorial_link": 12,
+        "script_dependency": 2,
+        "stylesheet_dependency": 1,
+        "font_or_preload_dependency": 2,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "medicalcouncil.ie",
+      "observations": 31,
+      "unique_targets": 12,
+      "relationship_types": {
+        "editorial_link": 8,
+        "script_dependency": 5,
+        "stylesheet_dependency": 4,
+        "image_or_media_dependency": 2,
+        "form_destination": 2
+      }
+    },
+    {
+      "domain": "britishcouncil.ie",
+      "observations": 31,
+      "unique_targets": 10,
+      "relationship_types": {
+        "editorial_link": 8,
+        "script_dependency": 4,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "corkcity.ie",
+      "observations": 28,
+      "unique_targets": 20,
+      "relationship_types": {
+        "editorial_link": 20,
+        "script_dependency": 4,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "per.gov.ie",
+      "observations": 24,
+      "unique_targets": 8,
+      "relationship_types": {
+        "editorial_link": 7,
+        "script_dependency": 2,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 2,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "sbci.gov.ie",
+      "observations": 24,
+      "unique_targets": 17,
+      "relationship_types": {
+        "editorial_link": 11,
+        "script_dependency": 6,
+        "stylesheet_dependency": 4,
+        "image_or_media_dependency": 1,
+        "form_destination": 1,
+        "font_or_preload_dependency": 1
+      }
+    },
+    {
+      "domain": "oireachtas.ie",
+      "observations": 23,
+      "unique_targets": 14,
+      "relationship_types": {
+        "editorial_link": 15,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 2,
+        "script_dependency": 3,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "cafelacoco.ie",
+      "observations": 22,
+      "unique_targets": 4,
+      "relationship_types": {
+        "editorial_link": 3,
+        "script_dependency": 3,
+        "font_or_preload_dependency": 2,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "ncsc.gov.ie",
+      "observations": 20,
+      "unique_targets": 5,
+      "relationship_types": {
+        "editorial_link": 5,
+        "script_dependency": 2,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1
+      }
+    },
+    {
+      "domain": "neh.gov.ie",
+      "observations": 20,
+      "unique_targets": 6,
+      "relationship_types": {
+        "editorial_link": 5,
+        "script_dependency": 2,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "president.ie",
+      "observations": 19,
+      "unique_targets": 12,
+      "relationship_types": {
+        "editorial_link": 5,
+        "script_dependency": 8,
+        "stylesheet_dependency": 4,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "audit.gov.ie",
+      "observations": 19,
+      "unique_targets": 5,
+      "relationship_types": {
+        "editorial_link": 3,
+        "script_dependency": 1,
+        "font_or_preload_dependency": 2,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "westmeathcoco.ie",
+      "observations": 19,
+      "unique_targets": 9,
+      "relationship_types": {
+        "editorial_link": 7,
+        "script_dependency": 5,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 2,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "growingup.gov.ie",
+      "observations": 17,
+      "unique_targets": 13,
+      "relationship_types": {
+        "editorial_link": 7,
+        "script_dependency": 6,
+        "stylesheet_dependency": 3,
+        "image_or_media_dependency": 1
+      }
+    },
+    {
+      "domain": "data.gov.ie",
+      "observations": 16,
+      "unique_targets": 10,
+      "relationship_types": {
+        "editorial_link": 12,
+        "script_dependency": 1,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "buyerzone.gov.ie",
+      "observations": 15,
+      "unique_targets": 7,
+      "relationship_types": {
+        "editorial_link": 1,
+        "script_dependency": 6,
+        "stylesheet_dependency": 6,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "yourcouncil.ie",
+      "observations": 15,
+      "unique_targets": 10,
+      "relationship_types": {
+        "editorial_link": 8,
+        "script_dependency": 4,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 1
+      }
+    },
+    {
+      "domain": "singlepensionscheme.gov.ie",
+      "observations": 14,
+      "unique_targets": 3,
+      "relationship_types": {
+        "editorial_link": 1,
+        "script_dependency": 2,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "irishmuslimcouncil.ie",
+      "observations": 14,
+      "unique_targets": 4,
+      "relationship_types": {
+        "editorial_link": 2,
+        "script_dependency": 1,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 2,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "climatecouncil.ie",
+      "observations": 14,
+      "unique_targets": 8,
+      "relationship_types": {
+        "editorial_link": 5,
+        "script_dependency": 4,
+        "stylesheet_dependency": 3,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "heritagecouncil.ie",
+      "observations": 14,
+      "unique_targets": 10,
+      "relationship_types": {
+        "editorial_link": 6,
+        "script_dependency": 5,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "ecoco.ie",
+      "observations": 14,
+      "unique_targets": 10,
+      "relationship_types": {
+        "editorial_link": 6,
+        "script_dependency": 3,
+        "font_or_preload_dependency": 2,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 1
+      }
+    }
+  ],
+  "top_targets": [
+    {
+      "domain": "googleapis.com",
+      "observations": 101
+    },
+    {
+      "domain": "facebook.com",
+      "observations": 95
+    },
+    {
+      "domain": "instagram.com",
+      "observations": 76
+    },
+    {
+      "domain": "youtube.com",
+      "observations": 73
+    },
+    {
+      "domain": "twitter.com",
+      "observations": 66
+    },
+    {
+      "domain": "linkedin.com",
+      "observations": 64
+    },
+    {
+      "domain": "ipoi.gov.ie",
+      "observations": 48
+    },
+    {
+      "domain": "googletagmanager.com",
+      "observations": 46
+    },
+    {
+      "domain": "fingal.ie",
+      "observations": 45
+    },
+    {
+      "domain": "limerick.ie",
+      "observations": 44
+    },
+    {
+      "domain": "jsdelivr.net",
+      "observations": 44
+    },
+    {
+      "domain": "google.com",
+      "observations": 43
+    },
+    {
+      "domain": "hse.ie",
+      "observations": 41
+    },
+    {
+      "domain": "artscouncil.ie",
+      "observations": 39
+    },
+    {
+      "domain": "courts.ie",
+      "observations": 39
+    },
+    {
+      "domain": "dublincity.ie",
+      "observations": 37
+    },
+    {
+      "domain": "arcgis.com",
+      "observations": 35
+    },
+    {
+      "domain": "gstatic.com",
+      "observations": 32
+    },
+    {
+      "domain": "cloudflare.com",
+      "observations": 31
+    },
+    {
+      "domain": "louthcoco.ie",
+      "observations": 31
+    },
+    {
+      "domain": "kilkennycoco.ie",
+      "observations": 30
+    },
+    {
+      "domain": "cookiebot.com",
+      "observations": 29
+    },
+    {
+      "domain": "kerrycoco.ie",
+      "observations": 27
+    },
+    {
+      "domain": "dlrcoco.ie",
+      "observations": 26
+    },
+    {
+      "domain": "wexfordcoco.ie",
+      "observations": 23
+    },
+    {
+      "domain": "cso.ie",
+      "observations": 22
+    },
+    {
+      "domain": "jquery.com",
+      "observations": 22
+    },
+    {
+      "domain": "clarecoco.ie",
+      "observations": 22
+    },
+    {
+      "domain": "enterprise.gov.ie",
+      "observations": 21
+    },
+    {
+      "domain": "teachingcouncil.ie",
+      "observations": 20
+    },
+    {
+      "domain": "galwaycity.ie",
+      "observations": 20
+    },
+    {
+      "domain": "kildarecoco.ie",
+      "observations": 19
+    },
+    {
+      "domain": "per.gov.ie",
+      "observations": 18
+    },
+    {
+      "domain": "agriculture.gov.ie",
+      "observations": 18
+    },
+    {
+      "domain": "cavancoco.ie",
+      "observations": 18
+    },
+    {
+      "domain": "roscommoncoco.ie",
+      "observations": 18
+    },
+    {
+      "domain": "creativeireland.gov.ie",
+      "observations": 17
+    },
+    {
+      "domain": "amazonaws.com",
+      "observations": 17
+    },
+    {
+      "domain": "x.com",
+      "observations": 16
+    },
+    {
+      "domain": "rtb.ie",
+      "observations": 16
+    },
+    {
+      "domain": "www.gov.ie",
+      "observations": 15
+    },
+    {
+      "domain": "donegalcoco.ie",
+      "observations": 15
+    },
+    {
+      "domain": "civiq.eu",
+      "observations": 14
+    },
+    {
+      "domain": "bootstrapcdn.com",
+      "observations": 14
+    },
+    {
+      "domain": "vimeo.com",
+      "observations": 14
+    },
+    {
+      "domain": "waterfordcouncil.ie",
+      "observations": 14
+    },
+    {
+      "domain": "corkcoco.ie",
+      "observations": 14
+    },
+    {
+      "domain": "oireachtas.ie",
+      "observations": 13
+    },
+    {
+      "domain": "cookielaw.org",
+      "observations": 13
+    },
+    {
+      "domain": "fontawesome.com",
+      "observations": 13
+    }
+  ],
+  "gov_to_gov_links": [
+    {
+      "source": "growingup.gov.ie",
+      "target": "www.gov.ie",
+      "target_country": "Ireland",
+      "cross_country": false
+    },
+    {
+      "source": "education.gov.ie",
+      "target": "www.gov.ie",
+      "target_country": "Ireland",
+      "cross_country": false
+    },
+    {
+      "source": "ogcio.gov.ie",
+      "target": "www.gov.ie",
+      "target_country": "Ireland",
+      "cross_country": false
+    },
+    {
+      "source": "ogcio.gov.ie",
+      "target": "whodoeswhat.gov.ie",
+      "target_country": "Ireland",
+      "cross_country": false
+    },
+    {
+      "source": "ogcio.gov.ie",
+      "target": "per.gov.ie",
+      "target_country": "Ireland",
+      "cross_country": false
+    },
+    {
+      "source": "artscouncil.ie",
+      "target": "creativeeuropeireland.eu",
+      "target_country": "EU Institutions",
+      "cross_country": true
+    },
+    {
+      "source": "cruinniu.gov.ie",
+      "target": "creativeireland.gov.ie",
+      "target_country": "Ireland",
+      "cross_country": false
+    },
+    {
+      "source": "agriculture.gov.ie",
+      "target": "www.gov.ie",
+      "target_country": "Ireland",
+      "cross_country": false
+    },
+    {
+      "source": "ncsc.gov.ie",
+      "target": "www.gov.ie",
+      "target_country": "Ireland",
+      "cross_country": false
+    },
+    {
+      "source": "enterprise.gov.ie",
+      "target": "neh.gov.ie",
+      "target_country": "Ireland",
+      "cross_country": false
+    },
+    {
+      "source": "per.gov.ie",
+      "target": "foi.gov.ie",
+      "target_country": "Ireland",
+      "cross_country": false
+    },
+    {
+      "source": "per.gov.ie",
+      "target": "psi.gov.ie",
+      "target_country": "Ireland",
+      "cross_country": false
+    },
+    {
+      "source": "fiscalcouncil.ie",
+      "target": "www.gov.ie",
+      "target_country": "Ireland",
+      "cross_country": false
+    },
+    {
+      "source": "revenue.ie",
+      "target": "www.gov.ie",
+      "target_country": "Ireland",
+      "cross_country": false
+    },
+    {
+      "source": "publicservicepensions.gov.ie",
+      "target": "singlepensionscheme.gov.ie",
+      "target_country": "Ireland",
+      "cross_country": false
+    },
+    {
+      "source": "publicservicepensions.gov.ie",
+      "target": "www.gov.ie",
+      "target_country": "Ireland",
+      "cross_country": false
+    },
+    {
+      "source": "sbci.gov.ie",
+      "target": "financeireland.ie",
+      "target_country": "Ireland",
+      "cross_country": false
+    },
+    {
+      "source": "britishcouncil.ie",
+      "target": "britishcouncil.org",
+      "target_country": "Unknown",
+      "cross_country": true
+    },
+    {
+      "source": "growdigital.gov.ie",
+      "target": "www.gov.ie",
+      "target_country": "Ireland",
+      "cross_country": false
+    },
+    {
+      "source": "growdigital.gov.ie",
+      "target": "neh.gov.ie",
+      "target_country": "Ireland",
+      "cross_country": false
+    },
+    {
+      "source": "growdigital.gov.ie",
+      "target": "europa.eu",
+      "target_country": "EU Institutions",
+      "cross_country": true
+    },
+    {
+      "source": "cwmf.gov.ie",
+      "target": "www.gov.ie",
+      "target_country": "Ireland",
+      "cross_country": false
+    },
+    {
+      "source": "carrentalcouncil.ie",
+      "target": "ireland.com",
+      "target_country": "Unknown",
+      "cross_country": true
+    },
+    {
+      "source": "carrentalcouncil.ie",
+      "target": "discoverireland.ie",
+      "target_country": "Ireland",
+      "cross_country": false
+    },
+    {
+      "source": "circulars.gov.ie",
+      "target": "www.gov.ie",
+      "target_country": "Ireland",
+      "cross_country": false
+    },
+    {
+      "source": "circulars.gov.ie",
+      "target": "per.gov.ie",
+      "target_country": "Ireland",
+      "cross_country": false
+    },
+    {
+      "source": "aim.gov.ie",
+      "target": "www.gov.ie",
+      "target_country": "Ireland",
+      "cross_country": false
+    },
+    {
+      "source": "data.gov.ie",
+      "target": "per.gov.ie",
+      "target_country": "Ireland",
+      "cross_country": false
+    }
+  ]
+}
