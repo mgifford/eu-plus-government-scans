@@ -5,9 +5,9 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-07-17 07:03 UTC — last scan: 2026-07-17_
+_Stats as of 2026-07-17 07:11 UTC — last scan: 2026-07-17_
 
-**162** scan batches run
+**164** scan batches run
 
 **69,679** of **82,714** available pages scanned (**84.2%** coverage)
 **64,273** pages with technology detections (**92.2%** of scanned)
@@ -35,8 +35,8 @@ _Stats as of 2026-07-17 07:03 UTC — last scan: 2026-07-17_
 | Ireland | 522 | 490 | 522 | 2026-07-14 |
 | Italy | 5,338 | 4,820 | 5,338 | 2026-07-16 |
 | Latvia | 802 | 774 | 802 | 2026-07-17 |
-| Lithuania | 120 | 110 | 120 | 2026-07-10 |
-| Luxembourg | 571 | 445 | 571 | 2026-07-10 |
+| Lithuania | 120 | 110 | 120 | 2026-07-17 |
+| Luxembourg | 571 | 445 | 571 | 2026-07-17 |
 | Malta | 608 | 593 | 608 | 2026-07-10 |
 | Netherlands | 937 | 912 | 937 | 2026-07-13 |
 | Norway | 239 | 233 | 239 | 2026-07-15 |
@@ -59,7 +59,7 @@ _Stats as of 2026-07-17 07:03 UTC — last scan: 2026-07-17_
 
 | # | Technology | Pages | Categories |
 |--:|-----------|------:|-----------|
-| 1 | jQuery | **34,841** | JavaScript libraries |
+| 1 | jQuery | **34,842** | JavaScript libraries |
 | 2 | PHP | **21,289** | Programming languages |
 | 3 | Apache | **18,660** | Web servers |
 | 4 | Bootstrap | **16,109** | UI frameworks |
@@ -68,7 +68,7 @@ _Stats as of 2026-07-17 07:03 UTC — last scan: 2026-07-17_
 | 7 | MySQL | **11,952** | Databases |
 | 8 | WordPress | **11,864** | Blogs, CMS |
 | 9 | Nginx | **11,357** | Reverse proxies, Web servers |
-| 10 | jQuery Migrate | **10,449** | JavaScript libraries |
+| 10 | jQuery Migrate | **10,450** | JavaScript libraries |
 | 11 | Windows Server | **5,896** | Operating systems |
 | 12 | jQuery UI | **5,808** | JavaScript libraries |
 | 13 | IIS | **5,807** | Web servers |
@@ -84,7 +84,7 @@ _Stats as of 2026-07-17 07:03 UTC — last scan: 2026-07-17_
 
 | # | Category | Pages |
 |--:|---------|------:|
-| 1 | JavaScript libraries | **69,370** |
+| 1 | JavaScript libraries | **69,373** |
 | 2 | Web servers | **39,890** |
 | 3 | Font scripts | **28,721** |
 | 4 | Programming languages | **27,472** |
