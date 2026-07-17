@@ -974,6 +974,12 @@
                     <label for="search">Search</label>
                     <input type="text" id="search" placeholder="Search domains, organizations, or categories...">
                 </div>
+                <div class="filter-group">
+                    <label for="gov-to-gov-filter" style="display:flex;align-items:center;gap:6px;cursor:pointer">
+                        <input type="checkbox" id="gov-to-gov-filter" style="width:18px;height:18px">
+                        Gov-to-Gov Links Only
+                    </label>
+                </div>
             </div>
             
             <div class="controls">
@@ -1096,6 +1102,13 @@
                     <div id="country-domains-list"></div>
                 </div>
             </div>
+        </section>
+
+        <section id="gov-to-gov-section" style="display:none;margin:24px 0">
+            <h2 style="margin-bottom:12px">Government-to-Government Links</h2>
+            <p style="color:var(--text-secondary);margin-bottom:16px">Editorial links where both source and target are government domains (excluding self-links). Use the "Gov-to-Gov Links Only" filter above to activate.</p>
+            <div id="gov-to-gov-summary"></div>
+            <div id="gov-to-gov-table-container"></div>
         </section>
 
         <section class="graph-container" id="graph-container">
@@ -1237,6 +1250,90 @@
             'identity': '#27ae60'
         };
 
+        function isGovernmentDomain(domain) {
+            const d = domain.toLowerCase();
+            const parts = d.split('.');
+            const tld = parts[parts.length - 1] || '';
+            const sld = parts[parts.length - 2] || '';
+
+            // Exact TLD matches for government
+            if (['gov', 'mil', 'gouv', 'gob', 'gc', 'gub'].includes(tld)) return true;
+
+            // ccTLD + government SLD patterns
+            const govSlds = ['gov', 'gouv', 'gv', 'gob', 'mil', 'parliament', 'assembly',
+                'council', 'ministry', 'staat', 'bundes', 'land', 'region', 'departement',
+                'comune', 'municipio', 'ayuntamiento', 'kommune', 'kommun', 'amt',
+                'forvaltning', 'direktorat', 'styrelse', 'regering', 'riksdag',
+                'eduskunta', 'storting', 'diet', 'sejm', 'senat', 'cortes',
+                'parlament', 'natsys', 'govt', 'state'];
+            if (govSlds.some(p => sld.includes(p))) return true;
+
+            // Known government second-level domains under ccTLDs
+            const govSldExact = [
+                'gov', 'gouv', 'gv', 'gob', 'gub', 'gc', 'gouv', 'gob',
+                'kommune', 'kommun', 'municipality', 'county', 'prefecture',
+                'canton', 'province', 'shire', 'borough', 'district',
+                'regierung', 'ministerium', 'agentur', 'amt', 'behörde',
+                'direktion', 'institut', 'stiftung', 'anstalt'
+            ];
+            if (govSldExact.includes(sld)) return true;
+
+            // Known government domains that don't follow TLD patterns
+            const knownGov = [
+                'europa.eu', 'un.org', 'who.int', 'worldbank.org', 'imf.org',
+                'oecd.org', 'nato.int', 'coe.int', 'echr.coe.int',
+                'ebanking.nordea.dk', 'medarbetarportalen.gu.se',
+                'digst.dk', 'uustatus.no', 'borger.dk', 'sundhed.dk',
+                'skole.hr', 'nhs.uk', 'nhs.net', 'gov.uk',
+                'slovensko.sk', 'gem2go.at', 'public.lu',
+                'vergleich.org', 'bmi.gv.at', 'help.gv.at',
+                'meinestadt.de', 'bund.de', 'bmbf.de', 'bmvi.de',
+                'bmz.de', 'bmj.de', 'bmwi.de', 'bmfg.bund.de',
+                'arbeitsagentur.de', 'bundesregierung.de',
+                'gouvernement.fr', 'service-public.fr', 'ameli.fr',
+                'data.gouv.fr', 'etalab.github.io',
+                'gov.it', 'agenziaentrate.gov.it', 'inps.it',
+                'gov.ie', 'revenue.ie', 'citizensinformation.ie',
+                'gov.nl', 'rijksoverheid.nl', 'overheid.nl',
+                'gov.pt', 'portaldasfinancas.gov.pt',
+                'gov.es', 'sedelectronica.gob.es', 'ingresos.gob.es',
+                'gov.gr', 'gov.cy', 'gov.mt', 'gov.ee', 'gov.lv',
+                'gov.lt', 'gov.si', 'gov.sk', 'gov.hu', 'gov.pl',
+                'gov.cz', 'gov.bg', 'gov.ro', 'gov.hr', 'gov.rs',
+                'gov.ba', 'gov.me', 'gov.mk', 'gov.al', 'gov.md',
+                'admin.ch', 'admin.ch', 'bundesverwaltung.ch',
+                'riksdag.se', 'regeringen.se',
+                'storting.no', 'regjeringen.no',
+                'eduskunta.fi', 'gov.fi',
+                'parlament.gv.at', 'bundeskanzler.gv.at',
+                'gov.gg', 'gov.je', 'gov.im',
+                'gov.cy', 'gov.by',
+                'digital.gov', 'usa.gov', 'whitehouse.gov',
+                'canada.ca', 'gc.ca', 'gov.bc.ca', 'gov.on.ca',
+                'gov.au', 'gov.nz', 'gov.za',
+                'gov.sg', 'gov.hk', 'gov.tw',
+                'gov.in', 'gov.br', 'gov.ar', 'gov.cl', 'gov.co',
+                'gov.ru', 'gov.ua', 'gov.ge', 'gov.am', 'gov.az',
+                'gov.kz', 'gov.uz', 'gov.tj', 'gov.kg', 'gov.tm',
+                'gov.tr', 'gov.il', 'gov.jo', 'gov.lb', 'gov.eg',
+                'gov.sa', 'gov.ae', 'gov.qa', 'gov.bh', 'gov.kw',
+                'gov.om', 'gov.ye', 'gov.iq', 'gov.ir',
+                'gov.cn', 'gov.jp', 'gov.kr', 'gov.th', 'gov.vn',
+                'gov.ph', 'gov.my', 'gov.id', 'gov.mm',
+                'gov.na', 'gov.ng', 'gov.ke', 'gov.gh', 'gov.tz',
+                'gov.zw', 'gov.mw', 'gov.ug', 'gov.rw', 'gov.bw',
+                'gov.sz', 'gov.ls', 'gov.mg'
+            ];
+            if (knownGov.includes(d)) return true;
+
+            // Check if domain ends with known government domain
+            for (const g of knownGov) {
+                if (d.endsWith('.' + g) || d === g) return true;
+            }
+
+            return false;
+        }
+
         let allRelationships = [];
         let filteredRelationships = [];
         let currentFilters = { country: '', type: '', category: '', search: '' };
@@ -1274,6 +1371,7 @@
             currentFilters.type = document.getElementById('relationship-type-filter').value;
             currentFilters.category = document.getElementById('category-filter').value;
             currentFilters.search = document.getElementById('search').value.toLowerCase();
+            currentFilters.govToGov = document.getElementById('gov-to-gov-filter').checked;
 
             filteredRelationships = allRelationships.filter(r => {
                 const country = getCountry(r.source_domain);
@@ -1284,10 +1382,21 @@
                     const hay = (r.source_domain + ' ' + r.target_domain + ' ' + r.target_hostname + ' ' + r.relationship_type + ' ' + r.target_category).toLowerCase();
                     if (!hay.includes(currentFilters.search)) return false;
                 }
+                if (currentFilters.govToGov) {
+                    if (r.relationship_type !== 'editorial_link') return false;
+                    if (!isGovernmentDomain(r.source_domain)) return false;
+                    if (!isGovernmentDomain(r.target_domain)) return false;
+                    if (r.source_domain === r.target_domain) return false;
+                }
                 return true;
             });
 
             renderAll();
+            if (currentFilters.govToGov) {
+                renderGovToGovSummary();
+            } else {
+                document.getElementById('gov-to-gov-section').style.display = 'none';
+            }
             announceToScreenReader('Filters applied. Showing ' + filteredRelationships.length + ' relationships.');
         }
 
@@ -1296,8 +1405,10 @@
             document.getElementById('relationship-type-filter').value = '';
             document.getElementById('category-filter').value = '';
             document.getElementById('search').value = '';
-            currentFilters = { country: '', type: '', category: '', search: '' };
+            document.getElementById('gov-to-gov-filter').checked = false;
+            currentFilters = { country: '', type: '', category: '', search: '', govToGov: false };
             filteredRelationships = [...allRelationships];
+            document.getElementById('gov-to-gov-section').style.display = 'none';
             renderAll();
             announceToScreenReader('Filters reset. Showing all ' + filteredRelationships.length + ' relationships.');
         }
@@ -1312,6 +1423,143 @@
             populateDomainTable(bySource);
             populateRelationshipsTable(filteredRelationships);
             renderCountryBreakdown();
+        }
+
+        function renderGovToGovSummary() {
+            const section = document.getElementById('gov-to-gov-section');
+            const summaryDiv = document.getElementById('gov-to-gov-summary');
+            const tableDiv = document.getElementById('gov-to-gov-table-container');
+            section.style.display = 'block';
+
+            // Build cross-government pairs
+            const pairs = {};
+            filteredRelationships.forEach(r => {
+                if (r.relationship_type !== 'editorial_link') return;
+                if (!isGovernmentDomain(r.source_domain)) return;
+                if (!isGovernmentDomain(r.target_domain)) return;
+                if (r.source_domain === r.target_domain) return;
+
+                const srcCountry = getCountry(r.source_domain);
+                const tgtCountry = getCountry(r.target_domain);
+                const key = r.source_domain + '|||' + r.target_domain;
+                if (!pairs[key]) {
+                    pairs[key] = {
+                        source: r.source_domain,
+                        target: r.target_domain,
+                        srcCountry, tgtCountry,
+                        observations: 0,
+                        source_pages: new Set(),
+                        link_types: new Set()
+                    };
+                }
+                pairs[key].observations += r.observations;
+                pairs[key].source_pages.add(r.source_page);
+                pairs[key].link_types.add(r.link_type);
+            });
+
+            const pairList = Object.values(pairs).sort((a, b) => b.observations - a.observations);
+
+            // Summary stats
+            const countries = new Set(pairList.map(p => p.srcCountry));
+            const targets = new Set(pairList.map(p => p.target));
+            const crossCountry = pairList.filter(p => p.srcCountry !== p.tgtCountry);
+
+            summaryDiv.innerHTML = `
+                <div style="display:flex;gap:24px;flex-wrap:wrap;margin-bottom:20px">
+                    <div class="summary-card"><h4>Cross-Gov Links</h4><div class="value">${pairList.length}</div></div>
+                    <div class="summary-card"><h4>Source Gov Domains</h4><div class="value">${new Set(pairList.map(p => p.source)).size}</div></div>
+                    <div class="summary-card"><h4>Target Gov Domains</h4><div class="value">${targets.size}</div></div>
+                    <div class="summary-card"><h4>Countries Involved</h4><div class="value">${countries.size}</div></div>
+                    <div class="summary-card"><h4>Cross-Country Links</h4><div class="value">${crossCountry.length}</div></div>
+                </div>
+            `;
+
+            // Table
+            let html = '<table class="data-table" style="width:100%"><thead><tr>' +
+                '<th style="cursor:pointer" data-sort="source">Source Domain ↕</th>' +
+                '<th>Source Country</th>' +
+                '<th style="cursor:pointer" data-sort="target">Target Domain ↕</th>' +
+                '<th>Target Country</th>' +
+                '<th style="cursor:pointer" data-sort="obs">Observations ↕</th>' +
+                '<th>Cross-Country?</th>' +
+                '</tr></thead><tbody>';
+
+            pairList.forEach(p => {
+                const cross = p.srcCountry !== p.tgtCountry;
+                html += `<tr>
+                    <td><a href="https://${escapeHtml(p.source)}" target="_blank" rel="noopener">${escapeHtml(p.source)}</a></td>
+                    <td>${escapeHtml(p.srcCountry)}</td>
+                    <td><a href="https://${escapeHtml(p.target)}" target="_blank" rel="noopener">${escapeHtml(p.target)}</a></td>
+                    <td>${escapeHtml(p.tgtCountry)}</td>
+                    <td>${p.observations}</td>
+                    <td>${cross ? '<span style="color:var(--accent-color);font-weight:600">Yes</span>' : 'No (same country)'}</td>
+                </tr>`;
+            });
+
+            html += '</tbody></table>';
+            tableDiv.innerHTML = html;
+
+            // Make table sortable
+            tableDiv.querySelectorAll('th[data-sort]').forEach(th => {
+                th.addEventListener('click', () => {
+                    const key = th.dataset.sort;
+                    const dir = th.dataset.dir === 'asc' ? 'desc' : 'asc';
+                    th.dataset.dir = dir;
+                    const sorted = [...pairList].sort((a, b) => {
+                        let va, vb;
+                        if (key === 'source') { va = a.source; vb = b.source; }
+                        else if (key === 'target') { va = a.target; vb = b.target; }
+                        else { va = a.observations; vb = b.observations; }
+                        if (typeof va === 'string') return dir === 'asc' ? va.localeCompare(vb) : vb.localeCompare(va);
+                        return dir === 'asc' ? va - vb : vb - va;
+                    });
+                    // Re-render with sorted data
+                    renderGovToGovTable(sorted, tableDiv);
+                });
+            });
+        }
+
+        function renderGovToGovTable(pairList, container) {
+            let html = '<table class="data-table" style="width:100%"><thead><tr>' +
+                '<th style="cursor:pointer" data-sort="source">Source Domain ↕</th>' +
+                '<th>Source Country</th>' +
+                '<th style="cursor:pointer" data-sort="target">Target Domain ↕</th>' +
+                '<th>Target Country</th>' +
+                '<th style="cursor:pointer" data-sort="obs">Observations ↕</th>' +
+                '<th>Cross-Country?</th>' +
+                '</tr></thead><tbody>';
+
+            pairList.forEach(p => {
+                const cross = p.srcCountry !== p.tgtCountry;
+                html += `<tr>
+                    <td><a href="https://${escapeHtml(p.source)}" target="_blank" rel="noopener">${escapeHtml(p.source)}</a></td>
+                    <td>${escapeHtml(p.srcCountry)}</td>
+                    <td><a href="https://${escapeHtml(p.target)}" target="_blank" rel="noopener">${escapeHtml(p.target)}</a></td>
+                    <td>${escapeHtml(p.tgtCountry)}</td>
+                    <td>${p.observations}</td>
+                    <td>${cross ? '<span style="color:var(--accent-color);font-weight:600">Yes</span>' : 'No (same country)'}</td>
+                </tr>`;
+            });
+
+            html += '</tbody></table>';
+            container.innerHTML = html;
+
+            container.querySelectorAll('th[data-sort]').forEach(th => {
+                th.addEventListener('click', () => {
+                    const key = th.dataset.sort;
+                    const dir = th.dataset.dir === 'asc' ? 'desc' : 'asc';
+                    th.dataset.dir = dir;
+                    const sorted = [...pairList].sort((a, b) => {
+                        let va, vb;
+                        if (key === 'source') { va = a.source; vb = b.source; }
+                        else if (key === 'target') { va = a.target; vb = b.target; }
+                        else { va = a.observations; vb = b.observations; }
+                        if (typeof va === 'string') return dir === 'asc' ? va.localeCompare(vb) : vb.localeCompare(va);
+                        return dir === 'asc' ? va - vb : vb - va;
+                    });
+                    renderGovToGovTable(sorted, container);
+                });
+            });
         }
 
         function updateSummaryStats(relationships, bySource) {
