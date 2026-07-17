@@ -548,7 +548,6 @@
             text-align: center;
             color: var(--text-secondary);
             margin: 1.5rem 0;
-            display: none;
         }
 
         .graph-container.active {
@@ -1459,10 +1458,18 @@
             if (country) rels = rels.filter(r => getCountry(r.source_domain) === country);
             if (type) rels = rels.filter(r => r.relationship_type === type);
 
-            const topRels = rels.sort((a, b) => b.observations - a.observations).slice(0, 200);
+            const topRels = rels.sort((a, b) => b.observations - a.observations).slice(0, 300);
 
             const nodeMap = {};
             const links = [];
+            const linkTypeColors = {
+                'editorial_link': '#3498db',
+                'script_dependency': '#e74c3c',
+                'stylesheet_dependency': '#9b59b6',
+                'font_or_preload_dependency': '#27ae60',
+                'image_or_media_dependency': '#f39c12',
+                'form_destination': '#1abc9c'
+            };
             topRels.forEach(r => {
                 if (!nodeMap[r.source_domain]) nodeMap[r.source_domain] = { id: r.source_domain, country: getCountry(r.source_domain), category: 'known_government', degree: 0 };
                 if (!nodeMap[r.target_domain]) nodeMap[r.target_domain] = { id: r.target_domain, country: getCountry(r.target_domain), category: r.target_category, degree: 0 };
@@ -1481,7 +1488,7 @@
             }
 
             const width = container.clientWidth || 900;
-            const height = 500;
+            const height = 600;
 
             const svg = d3.select(container).append('svg')
                 .attr('width', width).attr('height', height)
@@ -1492,17 +1499,21 @@
             svg.call(d3.zoom().scaleExtent([0.2, 5]).on('zoom', (e) => g.attr('transform', e.transform)));
 
             const maxDegree = d3.max(nodes, d => d.degree) || 1;
-            const radiusScale = d3.scaleSqrt().domain([1, maxDegree]).range([4, 20]);
+            const radiusScale = d3.scaleSqrt().domain([1, maxDegree]).range([5, 22]);
 
             const simulation = d3.forceSimulation(nodes)
-                .force('link', d3.forceLink(links).id(d => d.id).distance(80))
-                .force('charge', d3.forceManyBody().strength(-120))
+                .force('link', d3.forceLink(links).id(d => d.id).distance(100).strength(d => Math.min(1, d.weight / 20)))
+                .force('charge', d3.forceManyBody().strength(-200))
                 .force('center', d3.forceCenter(width / 2, height / 2))
-                .force('collision', d3.forceCollide().radius(d => radiusScale(d.degree) + 2));
+                .force('collision', d3.forceCollide().radius(d => radiusScale(d.degree) + 4))
+                .force('x', d3.forceX(width / 2).strength(0.05))
+                .force('y', d3.forceY(height / 2).strength(0.05));
 
             const link = g.append('g').selectAll('line')
                 .data(links).join('line')
                 .attr('class', 'link')
+                .attr('stroke', d => linkTypeColors[d.type] || '#999')
+                .attr('stroke-opacity', 0.5)
                 .attr('stroke-width', d => Math.max(1, Math.sqrt(d.weight)));
 
             const node = g.append('g').selectAll('g')
@@ -1516,13 +1527,17 @@
 
             node.append('circle')
                 .attr('r', d => radiusScale(d.degree))
-                .attr('fill', d => CATEGORY_COLORS[d.category] || '#95a5a6');
+                .attr('fill', d => CATEGORY_COLORS[d.category] || '#95a5a6')
+                .attr('stroke', '#fff')
+                .attr('stroke-width', 1.5);
 
             node.append('text')
-                .attr('dx', d => radiusScale(d.degree) + 3)
+                .attr('dx', d => radiusScale(d.degree) + 4)
                 .attr('dy', '0.35em')
-                .text(d => d.degree > 2 ? d.id.split('.')[0] : '')
-                .style('font-size', '9px');
+                .text(d => d.degree > 1 ? d.id.split('.')[0] : '')
+                .style('font-size', '10px')
+                .style('fill', '#333')
+                .style('font-weight', d => d.degree > 5 ? 'bold' : 'normal');
 
             const tooltip = document.getElementById('graph-tooltip');
             node.on('mouseover', (e, d) => {
@@ -1575,9 +1590,18 @@
 
         function renderGraphLegend() {
             const legend = document.getElementById('graph-legend');
-            legend.innerHTML = Object.entries(CATEGORY_COLORS)
+            const nodeLegend = Object.entries(CATEGORY_COLORS)
                 .map(([cat, color]) => '<span class="legend-item"><span class="legend-dot" style="background:' + color + '"></span>' + cat.replace(/_/g, ' ') + '</span>')
                 .join('');
+            const linkLegend = [
+                ['editorial_link', '#3498db', 'Editorial'],
+                ['script_dependency', '#e74c3c', 'Scripts'],
+                ['stylesheet_dependency', '#9b59b6', 'Styles'],
+                ['font_or_preload_dependency', '#27ae60', 'Fonts'],
+                ['image_or_media_dependency', '#f39c12', 'Images'],
+                ['form_destination', '#1abc9c', 'Forms']
+            ].map(([t, c, l]) => '<span class="legend-item"><span class="legend-dot" style="background:' + c + ';border-radius:0;width:16px;height:4px"></span>' + l + '</span>').join('');
+            legend.innerHTML = '<strong>Nodes:</strong> ' + nodeLegend + ' &nbsp;&nbsp; <strong>Edges:</strong> ' + linkLegend;
         }
 
         function exportJSON(data, filename) {
@@ -1707,6 +1731,14 @@
                     console.log('Loaded ' + allRelationships.length + ' relationships');
                     populateCountryFilter();
                     renderAll();
+
+                    const countries = {};
+                    allRelationships.forEach(r => { const c = getCountry(r.source_domain); countries[c] = (countries[c] || 0) + 1; });
+                    const topCountry = Object.entries(countries).sort((a, b) => b[1] - a[1])[0];
+                    if (topCountry) {
+                        document.getElementById('graph-country-select').value = topCountry[0];
+                    }
+                    renderGraph();
                 })
                 .catch(err => {
                     console.error('Could not load data:', err);
