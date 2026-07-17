@@ -5,25 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Government Web Relationship Data</title>
     <meta name="description" content="Explore relationships between European and allied government websites, including links, dependencies, and technical connections. Fully accessible HTML interface with detailed filtering and evidence-based data.">
+    <script>
+      (function () {
+        var storageKey = "eu-gov-scans-theme";
+        try {
+          var stored = localStorage.getItem(storageKey);
+          if (stored === "light" || stored === "dark") {
+            document.documentElement.setAttribute("data-theme", stored);
+          }
+        } catch (error) {}
+      })();
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         /* Modern, accessible CSS based on project patterns */
         :root {
+            --color-bg: #ffffff;
+            --color-bg-panel: #ffffff;
+            --color-secondary-bg: #f8f9fa;
+            --color-text: #212529;
+            --color-text-secondary: #6c757d;
+            --color-border: #dee2e6;
+            --color-border-input: #adb5bd;
+            --color-primary: #2c3e50;
+            --color-primary-text: #ffffff;
+            --color-accent: #3498db;
+            --color-link: #2c3e50;
+            --color-link-hover: #1a252f;
+            --color-heading: #2c3e50;
             --primary-color: #2c3e50;
-            --secondary-color: #34495e;
             --accent-color: #3498db;
+            --text-primary: #212529;
+            --text-secondary: #6c757d;
+            --border-color: #dee2e6;
+            --light-bg: #f8f9fa;
             --success-color: #27ae60;
             --warning-color: #f39c12;
             --danger-color: #e74c3c;
-            --light-bg: #f8f9fa;
-            --border-color: #dee2e6;
-            --text-primary: #212529;
-            --text-secondary: #6c757d;
             --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
             --shadow-md: 0 2px 6px rgba(0,0,0,0.15);
             --shadow-lg: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        html[data-theme="dark"] {
+            --color-bg: #1b1b1b;
+            --color-bg-panel: #2d2d2d;
+            --color-secondary-bg: #232323;
+            --color-text: #e9e9e9;
+            --color-text-secondary: #c9c9c9;
+            --color-border: #5c5c5c;
+            --color-border-input: #8f8f8f;
+            --color-primary: #73b3e7;
+            --color-primary-text: #1b1b1b;
+            --color-link: #73b3e7;
+            --color-link-hover: #a9d8ff;
+            --color-heading: #e9e9e9;
+            --primary-color: #73b3e7;
+            --accent-color: #73b3e7;
+            --text-primary: #e9e9e9;
+            --text-secondary: #c9c9c9;
+            --border-color: #5c5c5c;
+            --light-bg: #232323;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+            --shadow-md: 0 2px 6px rgba(0,0,0,0.4);
+            --shadow-lg: 0 4px 12px rgba(0,0,0,0.3);
         }
 
         * {
@@ -66,126 +113,226 @@
             top: 6px;
         }
 
-        /* Header */
-        header {
-            background: white;
-            border-bottom: 1px solid var(--border-color);
-            padding: 1rem 2rem;
+        /* Header - matches Jekyll site structure */
+        .site-header {
+            background: var(--color-bg);
+            border-bottom: 1px solid var(--color-border);
+            min-height: 4.5rem;
+            padding-bottom: 0.75rem;
+            padding-top: 0.75rem;
             position: sticky;
             top: 0;
             z-index: 100;
             box-shadow: var(--shadow-sm);
         }
 
-        nav {
+        .site-header-inner {
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            gap: 1.5rem;
             max-width: 1200px;
             margin: 0 auto;
+            padding: 0 2rem;
         }
 
-        .logo {
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: var(--primary-color);
-            text-decoration: none;
+        .site-brand {
             display: flex;
-            align-items: center;
-            gap: 0.5rem;
+            flex-direction: column;
+            gap: 0.2rem;
+            min-width: 0;
         }
 
-        .hamburger {
-            display: none;
-            background: none;
-            border: 1px solid var(--border-color);
+        .site-title,
+        .site-title:visited {
+            color: var(--color-heading);
+            font-size: 1.2rem;
+            font-weight: 800;
+            letter-spacing: -0.01em;
+            line-height: 1.15;
+            text-decoration: none;
+        }
+
+        .site-tagline {
+            color: var(--color-text-secondary);
+            font-size: 0.88rem;
+            line-height: 1.35;
+            margin: 0;
+            max-width: 32rem;
+        }
+
+        .site-header-actions {
+            align-items: center;
+            display: flex;
+            gap: 0.75rem;
+            justify-content: flex-end;
+            margin-left: auto;
+        }
+
+        .sr-only {
+            border: 0;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            white-space: nowrap;
+            width: 1px;
+        }
+
+        .theme-toggle {
+            align-items: center;
+            background: var(--color-bg-panel);
+            border: 1px solid var(--color-border-input);
             border-radius: 999px;
-            padding: 0.45rem 0.75rem;
+            box-sizing: border-box;
+            color: var(--color-text);
             cursor: pointer;
-            color: var(--text-primary);
-            font-size: 1.25rem;
-            line-height: 1;
-            min-height: 2.5rem;
-            align-items: center;
-        }
-
-        .hamburger:hover {
-            background: var(--light-bg);
-            border-color: var(--accent-color);
-        }
-
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 0.5rem;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .nav-links > li {
-            position: relative;
-        }
-
-        .nav-links a, .nav-dropdown-label {
-            color: var(--text-secondary);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.94rem;
-            transition: color 0.2s, background 0.2s;
-            padding: 0.45rem 0.8rem;
-            border-radius: 999px;
-            border: 1px solid transparent;
             display: inline-flex;
-            align-items: center;
-            min-height: 2.5rem;
+            flex: 0 0 auto;
+            font: inherit;
+            height: 2.75rem;
+            justify-content: center;
+            padding: 0;
+            transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
+            width: 2.75rem;
         }
 
-        .nav-links a:hover, .nav-links a:focus,
-        .nav-dropdown-label:hover {
-            color: var(--accent-color);
-            background: var(--light-bg);
-            border-color: var(--border-color);
+        .theme-toggle:hover {
+            background: var(--color-secondary-bg);
+            border-color: var(--color-primary);
         }
 
-        .nav-links a.active {
-            color: var(--accent-color);
-            background: var(--light-bg);
-            border-color: var(--accent-color);
+        .theme-toggle__icon {
+            display: inline-flex;
+            font-size: 1.15rem;
+            line-height: 1;
         }
 
-        .nav-dropdown {
+        .site-nav {
             position: relative;
         }
 
-        .nav-dropdown-label {
+        .nav-trigger {
+            display: none;
+        }
+
+        .nav-toggle-label {
+            align-items: center;
+            background: var(--color-bg-panel);
+            border: 1px solid var(--color-border-input);
+            border-radius: 999px;
+            color: var(--color-text);
             cursor: pointer;
-            user-select: none;
+            display: none;
+            gap: 0.55rem;
+            min-height: 2.75rem;
+            padding: 0.55rem 0.9rem;
+        }
+
+        .nav-toggle-label:hover {
+            background: var(--color-secondary-bg);
+            border-color: var(--color-primary);
+        }
+
+        .menu-icon {
+            display: inline-flex;
+            line-height: 0;
+        }
+
+        .menu-icon svg {
+            fill: currentColor;
+        }
+
+        .nav-toggle-text {
+            font-size: 0.95rem;
+            font-weight: 700;
+        }
+
+        .site-nav .trigger {
+            align-items: center;
+            display: flex;
+            gap: 0.75rem;
+        }
+
+        .nav-group {
+            align-items: center;
+            display: flex;
+            gap: 0.35rem;
+        }
+
+        .site-nav .page-link,
+        .site-nav .page-link:visited {
+            background: transparent;
+            border: 1px solid transparent;
+            border-radius: 999px;
+            color: var(--color-link);
+            display: inline-flex;
+            font-size: 0.94rem;
+            font-weight: 600;
+            margin-left: 0;
+            min-height: 2.5rem;
+            padding: 0.45rem 0.8rem;
+            text-decoration: none;
+            text-decoration-thickness: 0.08em;
+            text-underline-offset: 0.18em;
+        }
+
+        .site-nav .page-link:hover,
+        .site-nav .page-link:focus-visible {
+            background: var(--color-secondary-bg);
+            border-color: var(--color-border);
+            color: var(--color-link-hover);
+        }
+
+        .nav-group--reports,
+        .nav-group--tools {
+            position: relative;
+        }
+
+        .nav-summary {
+            align-items: center;
+            cursor: pointer;
+            list-style: none;
+        }
+
+        .nav-summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .nav-summary::after {
+            content: "▾";
+            font-size: 0.8rem;
+            margin-left: 0.45rem;
+        }
+
+        .nav-group--reports[open] .nav-summary,
+        .nav-group--tools[open] .nav-summary {
+            background: var(--color-secondary-bg);
+            border-color: var(--color-border);
         }
 
         .nav-submenu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background: #fff;
-            border: 1px solid var(--border-color);
-            border-radius: 0.75rem;
-            box-shadow: var(--shadow-md);
-            min-width: 14rem;
-            padding: 0.4rem;
-            z-index: 30;
-            list-style: none;
-        }
-
-        .nav-dropdown:hover .nav-submenu,
-        .nav-dropdown:focus-within .nav-submenu {
+            background: var(--color-bg-panel);
+            border: 1px solid var(--color-border);
+            border-radius: 1rem;
+            box-shadow: 0 1rem 2rem rgba(22, 46, 81, 0.12);
             display: grid;
-            gap: 0.15rem;
+            gap: 0.25rem;
+            min-width: 14rem;
+            padding: 0.45rem;
+            position: absolute;
+            right: 0;
+            top: calc(100% + 0.5rem);
+            z-index: 30;
         }
 
-        .nav-submenu a {
-            border-radius: 0.5rem;
-            min-height: 2.25rem;
+        .nav-sublink,
+        .nav-sublink:visited {
+            border-radius: 0.75rem;
+            justify-content: flex-start;
+            width: 100%;
+        }
             font-size: 0.9rem;
             padding: 0.35rem 0.75rem;
         }
@@ -895,17 +1042,60 @@
                 padding: 0;
             }
 
-            header {
-                padding: 0.75rem 1rem;
+            .site-header-inner {
                 flex-wrap: wrap;
+                padding: 0 1rem;
             }
 
-            .logo {
-                flex: 1;
+            .site-header-actions {
+                width: 100%;
+                justify-content: space-between;
             }
 
-            .hamburger {
+            .nav-toggle-label {
+                display: inline-flex;
+            }
+
+            .site-nav .trigger {
+                display: none;
+                gap: 0.75rem;
+            }
+
+            .nav-trigger:checked ~ .trigger {
+                display: grid;
+                gap: 0.75rem;
+            }
+
+            .nav-group,
+            .nav-group--primary {
+                align-items: stretch;
+                display: grid;
+                gap: 0.4rem;
+            }
+
+            .site-nav .page-link,
+            .site-nav .page-link:visited,
+            .nav-summary {
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            .nav-group--reports,
+            .nav-group--tools {
                 display: block;
+            }
+
+            .nav-submenu {
+                box-shadow: none;
+                margin-top: 0.35rem;
+                min-width: 0;
+                padding: 0.35rem 0 0;
+                position: static;
+            }
+
+            .nav-sublink,
+            .nav-sublink:visited {
+                padding-left: 1rem;
             }
 
             main {
@@ -914,45 +1104,6 @@
 
             h1 {
                 font-size: 2rem;
-            }
-
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                width: 100%;
-                gap: 0.25rem;
-                padding-top: 0.75rem;
-                border-top: 1px solid var(--border-color);
-            }
-
-            .nav-links.open {
-                display: flex;
-            }
-
-            .nav-links > li {
-                width: 100%;
-            }
-
-            .nav-dropdown-label {
-                width: 100%;
-                justify-content: space-between;
-            }
-
-            .nav-submenu {
-                position: static;
-                box-shadow: none;
-                border: none;
-                min-width: 0;
-                padding-left: 1rem;
-            }
-
-            .nav-dropdown:hover .nav-submenu,
-            .nav-dropdown:focus-within .nav-submenu {
-                display: none;
-            }
-
-            .nav-dropdown.open .nav-submenu {
-                display: grid;
             }
 
             .filters-grid {
@@ -978,36 +1129,72 @@
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <header>
-        <nav>
-            <a href="/eu-plus-government-scans/" class="logo">
-                <span>🇪🇺 EU Government Scans</span>
-            </a>
-            <button class="hamburger" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="/eu-plus-government-scans/" title="Home page">Overview</a></li>
-                <li><a href="/eu-plus-government-scans/scan-progress" title="View current scan progress">Progress</a></li>
-                <li><a href="/eu-plus-government-scans/domains" title="View government domains dataset">Domains</a></li>
-                <li class="nav-dropdown">
-                    <span class="nav-dropdown-label">Reports ▾</span>
-                    <ul class="nav-submenu">
-                        <li><a href="/eu-plus-government-scans/social-media" title="View social media usage analysis">Social Media</a></li>
-                        <li><a href="/eu-plus-government-scans/accessibility-statements" title="View accessibility statement compliance">Accessibility</a></li>
-                        <li><a href="/eu-plus-government-scans/technology-scanning" title="View technology usage analysis">Technology</a></li>
-                        <li><a href="/eu-plus-government-scans/third-party-tools" title="View third-party tools usage">Third-Party JS</a></li>
-                        <li><a href="/eu-plus-government-scans/lighthouse-scanning" title="Lighthouse scanning methodology">Lighthouse Methodology</a></li>
-                        <li><a href="/eu-plus-government-scans/lighthouse-results" title="Lighthouse score results">Lighthouse Results</a></li>
-                    </ul>
-                </li>
-                <li class="nav-dropdown">
-                    <span class="nav-dropdown-label">Tools ▾</span>
-                    <ul class="nav-submenu">
-                        <li><a href="/eu-plus-government-scans/network" title="View network relationships" class="active">Network Explorer</a></li>
-                        <li><a href="/eu-plus-government-scans/api" title="View API documentation">Data API</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+    <header class="site-header" role="banner">
+        <div class="wrapper site-header-inner">
+            <div class="site-brand">
+                <a class="site-title" rel="author" href="/eu-plus-government-scans/">
+                    EU Government Website Scans
+                </a>
+                <p class="site-tagline">EU-wide scans for accessibility, technology, and digital presence</p>
+            </div>
+
+            <div class="site-header-actions">
+                <button
+                    class="theme-toggle"
+                    type="button"
+                    data-theme-toggle
+                    aria-label="Switch to dark mode"
+                    title="Switch to dark mode">
+                    <span class="theme-toggle__icon" aria-hidden="true" data-theme-toggle-icon>☾</span>
+                    <span class="sr-only" data-theme-toggle-text>Switch to dark mode</span>
+                </button>
+
+                <nav class="site-nav" aria-label="Primary">
+                    <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+                    <label for="nav-trigger" class="nav-toggle-label">
+                        <span class="menu-icon" aria-hidden="true">
+                            <svg viewBox="0 0 18 15" width="18" height="15">
+                                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0
+                                    C0,0.665,0.665,0,1.484,0h15.031C17.335,0,18,0.665,18,1.484L18,1.484z
+                                    M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0
+                                    c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z
+                                    M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0
+                                    c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z" />
+                            </svg>
+                        </span>
+                        <span class="nav-toggle-text">Menu</span>
+                    </label>
+
+                    <div class="trigger">
+                        <div class="nav-group nav-group--primary">
+                            <a class="page-link" href="/eu-plus-government-scans/">Overview</a>
+                            <a class="page-link" href="/eu-plus-government-scans/scan-progress.html">Progress</a>
+                            <a class="page-link" href="/eu-plus-government-scans/domains.html">Domains</a>
+                        </div>
+
+                        <details class="nav-group nav-group--reports">
+                            <summary class="page-link nav-summary">Reports</summary>
+                            <div class="nav-submenu">
+                                <a class="page-link nav-sublink" href="/eu-plus-government-scans/social-media.html">Social Media</a>
+                                <a class="page-link nav-sublink" href="/eu-plus-government-scans/accessibility-statements.html">Accessibility</a>
+                                <a class="page-link nav-sublink" href="/eu-plus-government-scans/technology-scanning.html">Technology</a>
+                                <a class="page-link nav-sublink" href="/eu-plus-government-scans/third-party-tools.html">Third-Party JS</a>
+                                <a class="page-link nav-sublink" href="/eu-plus-government-scans/lighthouse-scanning.html">Lighthouse Methodology</a>
+                                <a class="page-link nav-sublink" href="/eu-plus-government-scans/lighthouse-results.html">Lighthouse Results</a>
+                            </div>
+                        </details>
+
+                        <details class="nav-group nav-group--tools" open>
+                            <summary class="page-link nav-summary">Tools</summary>
+                            <div class="nav-submenu">
+                                <a class="page-link nav-sublink" href="/eu-plus-government-scans/network.html" style="font-weight:700">Network Explorer</a>
+                                <a class="page-link nav-sublink" href="/eu-plus-government-scans/api.html">Data API</a>
+                            </div>
+                        </details>
+                    </div>
+                </nav>
+            </div>
+        </div>
     </header>
 
     <main id="main-content">
@@ -2196,26 +2383,6 @@
         }
 
         function setupEventListeners() {
-            // Mobile nav toggle
-            const navToggle = document.getElementById('nav-toggle');
-            const navLinks = document.getElementById('nav-links');
-            if (navToggle && navLinks) {
-                navToggle.addEventListener('click', () => {
-                    const open = navLinks.classList.toggle('open');
-                    navToggle.setAttribute('aria-expanded', open);
-                    navToggle.textContent = open ? '✕' : '☰';
-                });
-                // Mobile dropdown toggles
-                navLinks.querySelectorAll('.nav-dropdown-label').forEach(label => {
-                    label.addEventListener('click', (e) => {
-                        if (window.innerWidth <= 768) {
-                            e.preventDefault();
-                            label.parentElement.classList.toggle('open');
-                        }
-                    });
-                });
-            }
-
             document.querySelectorAll('.collapsible-header').forEach(h => {
                 h.addEventListener('click', () => {
                     const content = h.nextElementSibling;
@@ -2366,5 +2533,6 @@
             });
         }
     </script>
+    <script src="/eu-plus-government-scans/assets/js/theme-toggle.js" defer></script>
 </body>
 </html>
