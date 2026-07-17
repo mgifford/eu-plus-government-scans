@@ -5,9 +5,9 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-07-17 23:03 UTC — last scan: 2026-07-17_
+_Stats as of 2026-07-17 23:18 UTC — last scan: 2026-07-17_
 
-**169** scan batches run
+**172** scan batches run
 
 **69,679** of **82,714** available pages scanned (**84.2%** coverage)
 **64,273** pages with technology detections (**92.2%** of scanned)
@@ -41,13 +41,13 @@ _Stats as of 2026-07-17 23:03 UTC — last scan: 2026-07-17_
 | Netherlands | 937 | 912 | 937 | 2026-07-17 |
 | Norway | 239 | 233 | 239 | 2026-07-15 |
 | Poland | 8,189 | 7,529 | 14,938 | 2026-07-15 |
-| Portugal | 3,503 | 2,935 | 3,503 | 2026-07-15 |
+| Portugal | 3,503 | 2,935 | 3,503 | 2026-07-17 |
 | Cyprus | 24 | 24 | 24 | 2026-07-17 |
-| Romania | 799 | 342 | 799 | 2026-07-15 |
+| Romania | 799 | 342 | 799 | 2026-07-17 |
 | Slovakia | 434 | 415 | 434 | 2026-07-17 |
 | Slovenia | 200 | 193 | 200 | 2026-07-11 |
 | Spain | 6,069 | 5,305 | 6,069 | 2026-07-16 |
-| Sweden | 1,558 | 1,489 | 1,558 | 2026-07-15 |
+| Sweden | 1,558 | 1,489 | 1,558 | 2026-07-17 |
 | Switzerland | 2,117 | 2,080 | 2,117 | 2026-07-12 |
 | United Kingdom | 13,216 | 12,432 | 19,502 | 2026-07-16 |
 
