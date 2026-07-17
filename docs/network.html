@@ -1804,12 +1804,50 @@
             return d.innerHTML;
         }
 
+        function syncFiltersToURL() {
+            const params = new URLSearchParams();
+            if (currentFilters.country) params.set('country', currentFilters.country);
+            if (currentFilters.type) params.set('type', currentFilters.type);
+            if (currentFilters.category) params.set('category', currentFilters.category);
+            if (currentFilters.search) params.set('search', currentFilters.search);
+            if (currentFilters.govToGov) params.set('govToGov', 'true');
+            const qs = params.toString();
+            const url = qs ? window.location.pathname + '?' + qs : window.location.pathname;
+            history.replaceState(null, '', url);
+        }
+
+        function loadFiltersFromURL() {
+            const params = new URLSearchParams(window.location.search);
+            if (params.has('country')) {
+                currentFilters.country = params.get('country');
+                document.getElementById('country-filter').value = currentFilters.country;
+            }
+            if (params.has('type')) {
+                currentFilters.type = params.get('type');
+                document.getElementById('relationship-type-filter').value = currentFilters.type;
+            }
+            if (params.has('category')) {
+                currentFilters.category = params.get('category');
+                document.getElementById('category-filter').value = currentFilters.category;
+            }
+            if (params.has('search')) {
+                currentFilters.search = params.get('search');
+                document.getElementById('search').value = currentFilters.search;
+            }
+            if (params.has('govToGov')) {
+                currentFilters.govToGov = params.get('govToGov') === 'true';
+                document.getElementById('gov-to-gov-filter').checked = currentFilters.govToGov;
+            }
+        }
+
         function applyFilters() {
             currentFilters.country = document.getElementById('country-filter').value;
             currentFilters.type = document.getElementById('relationship-type-filter').value;
             currentFilters.category = document.getElementById('category-filter').value;
             currentFilters.search = document.getElementById('search').value.toLowerCase();
             currentFilters.govToGov = document.getElementById('gov-to-gov-filter').checked;
+
+            syncFiltersToURL();
 
             // If a specific country is selected and we haven't loaded JSONL, load the summary
             if (currentFilters.country && !jsonlLoaded && !currentCountrySummary) {
@@ -1855,6 +1893,7 @@
                     currentCountrySummary = summary;
                     currentFilters.country = country;
                     document.getElementById('country-filter').value = country;
+                    syncFiltersToURL();
                     renderAll();
                     announceToScreenReader('Loaded data for ' + country + '. ' + summary.total_relationships + ' relationships.');
                 })
@@ -1872,6 +1911,7 @@
             document.getElementById('gov-to-gov-filter').checked = false;
             currentFilters = { country: '', type: '', category: '', search: '', govToGov: false };
             currentCountrySummary = null;
+            history.replaceState(null, '', window.location.pathname);
             if (jsonlLoaded) {
                 filteredRelationships = [...allRelationships];
             }
@@ -2553,6 +2593,16 @@
         }
 
         document.addEventListener('DOMContentLoaded', () => {
+            // Load filters from URL first (overrides defaults)
+            loadFiltersFromURL();
+
+            // If no URL params, apply defaults: govToGov on, random country for graph
+            const hasURLFilters = window.location.search.length > 1;
+            if (!hasURLFilters) {
+                currentFilters.govToGov = true;
+                document.getElementById('gov-to-gov-filter').checked = true;
+            }
+
             // Load index.json for fast initial render
             fetch('data/summaries/index.json')
                 .then(r => r.json())
@@ -2563,7 +2613,6 @@
                     const totalRels = Object.values(index).reduce((s, c) => s + c.total_relationships, 0);
                     const totalDomains = Object.values(index).reduce((s, c) => s + c.total_source_domains, 0);
                     const totalTargets = Object.values(index).reduce((s, c) => s + c.total_unique_targets, 0);
-                    const totalGov = Object.values(index).reduce((s, c) => s + c.gov_to_gov_pairs, 0);
                     document.getElementById('total-domains').textContent = totalDomains;
                     document.getElementById('total-relationships').textContent = totalRels;
                     document.getElementById('confirmed-domains').textContent = Object.keys(index).length;
@@ -2571,6 +2620,19 @@
 
                     // Show country breakdown from index
                     renderCountryBreakdownFromIndex(index);
+
+                    // Pick random country for graph if none selected via URL
+                    if (!hasURLFilters) {
+                        const countries = Object.keys(index);
+                        const randomCountry = countries[Math.floor(Math.random() * countries.length)];
+                        document.getElementById('graph-country-select').value = randomCountry;
+                    }
+
+                    // If URL has a country, load that summary
+                    if (currentFilters.country) {
+                        loadCountrySummary(currentFilters.country);
+                    }
+
                     console.log('Loaded index: ' + Object.keys(index).length + ' countries, ' + totalRels + ' relationships');
                 })
                 .catch(err => {
