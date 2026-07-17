@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-07-17 16:40 UTC_
+_Generated: 2026-07-17 18:16 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -60,12 +60,12 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Poland | 14,938 | 14,938 | 13,840 | 6,202 | 85 | 1,060 | 6,828 | 1,116 | 347 | 1 | 1,142 | May 2026 – Jul 2026 |
 | Portugal | 3,503 | 3,503 | 2,939 | 1,022 | 5 | 192 | 1,856 | 415 | 78 | 2 | 196 | May 2026 – Jul 2026 |
 | Cyprus | 24 | 24 | 24 | 15 | 0 | 0 | 11 | 9 | 0 | 0 | 0 | May 2026 – Jul 2026 |
-| Romania | 799 | 799 | 342 | 119 | 3 | 11 | 209 | 46 | 1 | 0 | 14 | May 2026 – Jul 2026 |
+| Romania | 799 | 799 | 342 | 119 | 3 | 11 | 211 | 46 | 2 | 0 | 14 | May 2026 – Jul 2026 |
 | Slovakia | 434 | 434 | 415 | 138 | 0 | 21 | 263 | 17 | 12 | 0 | 21 | May 2026 – Jul 2026 |
 | Slovenia | 200 | 200 | 190 | 52 | 0 | 9 | 133 | 21 | 6 | 1 | 9 | May 2026 – Jul 2026 |
 | Spain | 6,069 | 6,069 | 5,412 | 2,031 | 11 | 347 | 3,107 | 1,770 | 450 | 63 | 317 | May 2026 – Jul 2026 |
 | Sweden | 1,558 | 1,558 | 1,489 | 487 | 3 | 33 | 977 | 82 | 18 | 11 | 25 | May 2026 – Jul 2026 |
-| Switzerland | 2,117 | 2,117 | 2,080 | 573 | 31 | 148 | 1,385 | 241 | 225 | 54 | 139 | May 2026 – Jul 2026 |
+| Switzerland | 2,117 | 2,117 | 2,080 | 573 | 31 | 148 | 1,386 | 241 | 225 | 54 | 139 | May 2026 – Jul 2026 |
 | United Kingdom | 19,502 | 19,502 | 18,769 | 6,686 | 37 | 768 | 12,032 | 4,121 | 1,077 | 137 | 720 | May 2026 – Jul 2026 |
 
 > **Tier columns** (Twitter-only / Modern / Mixed / No Social) classify each page by its overall social media presence. **Platform columns** (Twitter / X / Bluesky / Mastodon) count pages with at least one link to that platform — a page may appear in more than one platform column.
