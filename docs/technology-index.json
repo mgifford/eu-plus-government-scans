@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-17 07:03 UTC",
+  "generated_at": "2026-07-17 07:11 UTC",
   "base_url": "https://mgifford.github.io/eu-plus-government-scans/",
   "note": "Compact cross-reference index: technology → page count, categories, and per-country page counts. For full per-URL drilldown data see the technology-data.json workflow artifact.",
   "by_technology": {
     "jQuery": {
-      "pages": 34841,
+      "pages": 34842,
       "categories": [
         "JavaScript libraries"
       ],
@@ -26,7 +26,7 @@
         "ITALY": 3290,
         "LATVIA": 296,
         "LITHUANIA": 65,
-        "LUXEMBOURG": 213,
+        "LUXEMBOURG": 214,
         "MALTA": 493,
         "NETHERLANDS": 316,
         "NORWAY": 65,
@@ -357,7 +357,7 @@
       }
     },
     "jQuery Migrate": {
-      "pages": 10449,
+      "pages": 10450,
       "categories": [
         "JavaScript libraries"
       ],
@@ -379,7 +379,7 @@
         "ITALY": 526,
         "LATVIA": 105,
         "LITHUANIA": 19,
-        "LUXEMBOURG": 40,
+        "LUXEMBOURG": 41,
         "MALTA": 397,
         "NETHERLANDS": 60,
         "NORWAY": 5,
@@ -776,7 +776,7 @@
       }
     },
     "Slick": {
-      "pages": 3206,
+      "pages": 3207,
       "categories": [
         "JavaScript libraries"
       ],
@@ -797,7 +797,7 @@
         "ITALY": 91,
         "LATVIA": 20,
         "LITHUANIA": 5,
-        "LUXEMBOURG": 14,
+        "LUXEMBOURG": 15,
         "MALTA": 15,
         "NETHERLANDS": 14,
         "NORWAY": 1,
@@ -991,7 +991,7 @@
       }
     },
     "OWL Carousel": {
-      "pages": 2138,
+      "pages": 2139,
       "categories": [
         "Widgets"
       ],
@@ -1011,7 +1011,7 @@
         "ITALY": 190,
         "LATVIA": 12,
         "LITHUANIA": 4,
-        "LUXEMBOURG": 2,
+        "LUXEMBOURG": 3,
         "MALTA": 215,
         "NETHERLANDS": 6,
         "NORWAY": 2,
@@ -7271,7 +7271,7 @@
   },
   "by_category": {
     "JavaScript libraries": {
-      "pages": 69370,
+      "pages": 69373,
       "technologies": [
         "Bootstrap Table",
         "DHTMLX",
@@ -7646,7 +7646,7 @@
       ]
     },
     "Widgets": {
-      "pages": 4060,
+      "pages": 4061,
       "technologies": [
         "AMP Plugin",
         "AddThis",
