@@ -1108,7 +1108,16 @@
             <h2 style="margin-bottom:12px">Government-to-Government Links</h2>
             <p style="color:var(--text-secondary);margin-bottom:16px">Editorial links where both source and target are government domains (excluding self-links). Use the "Gov-to-Gov Links Only" filter above to activate.</p>
             <div id="gov-to-gov-summary"></div>
-            <div id="gov-to-gov-table-container"></div>
+            <div style="margin:16px 0;display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+                <label for="gov-to-gov-country-filter"><strong>Filter by country:</strong></label>
+                <select id="gov-to-gov-country-filter">
+                    <option value="">All Countries</option>
+                </select>
+            </div>
+            <details id="gov-to-gov-details">
+                <summary style="cursor:pointer;font-weight:600;padding:8px 0">Show full link table</summary>
+                <div id="gov-to-gov-table-container" style="margin-top:12px"></div>
+            </details>
         </section>
 
         <section class="graph-container" id="graph-container">
@@ -1409,6 +1418,7 @@
             currentFilters = { country: '', type: '', category: '', search: '', govToGov: false };
             filteredRelationships = [...allRelationships];
             document.getElementById('gov-to-gov-section').style.display = 'none';
+            document.getElementById('gov-to-gov-country-filter').innerHTML = '<option value="">All Countries</option>';
             renderAll();
             announceToScreenReader('Filters reset. Showing all ' + filteredRelationships.length + ' relationships.');
         }
@@ -1425,13 +1435,9 @@
             renderCountryBreakdown();
         }
 
-        function renderGovToGovSummary() {
-            const section = document.getElementById('gov-to-gov-section');
-            const summaryDiv = document.getElementById('gov-to-gov-summary');
-            const tableDiv = document.getElementById('gov-to-gov-table-container');
-            section.style.display = 'block';
+        let govToGovPairs = [];
 
-            // Build cross-government pairs
+        function buildGovToGovPairs() {
             const pairs = {};
             filteredRelationships.forEach(r => {
                 if (r.relationship_type !== 'editorial_link') return;
@@ -1447,76 +1453,60 @@
                         source: r.source_domain,
                         target: r.target_domain,
                         srcCountry, tgtCountry,
-                        observations: 0,
-                        source_pages: new Set(),
-                        link_types: new Set()
+                        observations: 0
                     };
                 }
                 pairs[key].observations += r.observations;
-                pairs[key].source_pages.add(r.source_page);
-                pairs[key].link_types.add(r.link_type);
             });
+            govToGovPairs = Object.values(pairs).sort((a, b) => b.observations - a.observations);
+        }
 
-            const pairList = Object.values(pairs).sort((a, b) => b.observations - a.observations);
+        function renderGovToGovSummary() {
+            const section = document.getElementById('gov-to-gov-section');
+            const summaryDiv = document.getElementById('gov-to-gov-summary');
+            const tableDiv = document.getElementById('gov-to-gov-table-container');
+            const countrySelect = document.getElementById('gov-to-gov-country-filter');
+            const details = document.getElementById('gov-to-gov-details');
+            section.style.display = 'block';
+
+            buildGovToGovPairs();
+
+            // Populate country filter
+            const srcCountries = [...new Set(govToGovPairs.map(p => p.srcCountry))].sort();
+            const tgtCountries = [...new Set(govToGovPairs.map(p => p.tgtCountry))].sort();
+            const allCountries = [...new Set([...srcCountries, ...tgtCountries])].sort();
+            countrySelect.innerHTML = '<option value="">All Countries</option>' +
+                allCountries.map(c => `<option value="${escapeHtml(c)}">${escapeHtml(c)}</option>`).join('');
 
             // Summary stats
-            const countries = new Set(pairList.map(p => p.srcCountry));
-            const targets = new Set(pairList.map(p => p.target));
-            const crossCountry = pairList.filter(p => p.srcCountry !== p.tgtCountry);
+            const countries = new Set(govToGovPairs.map(p => p.srcCountry));
+            const targets = new Set(govToGovPairs.map(p => p.target));
+            const crossCountry = govToGovPairs.filter(p => p.srcCountry !== p.tgtCountry);
 
             summaryDiv.innerHTML = `
                 <div style="display:flex;gap:24px;flex-wrap:wrap;margin-bottom:20px">
-                    <div class="summary-card"><h4>Cross-Gov Links</h4><div class="value">${pairList.length}</div></div>
-                    <div class="summary-card"><h4>Source Gov Domains</h4><div class="value">${new Set(pairList.map(p => p.source)).size}</div></div>
+                    <div class="summary-card"><h4>Cross-Gov Links</h4><div class="value">${govToGovPairs.length}</div></div>
+                    <div class="summary-card"><h4>Source Gov Domains</h4><div class="value">${new Set(govToGovPairs.map(p => p.source)).size}</div></div>
                     <div class="summary-card"><h4>Target Gov Domains</h4><div class="value">${targets.size}</div></div>
                     <div class="summary-card"><h4>Countries Involved</h4><div class="value">${countries.size}</div></div>
                     <div class="summary-card"><h4>Cross-Country Links</h4><div class="value">${crossCountry.length}</div></div>
                 </div>
             `;
 
-            // Table
-            let html = '<table class="data-table" style="width:100%"><thead><tr>' +
-                '<th style="cursor:pointer" data-sort="source">Source Domain ↕</th>' +
-                '<th>Source Country</th>' +
-                '<th style="cursor:pointer" data-sort="target">Target Domain ↕</th>' +
-                '<th>Target Country</th>' +
-                '<th style="cursor:pointer" data-sort="obs">Observations ↕</th>' +
-                '<th>Cross-Country?</th>' +
-                '</tr></thead><tbody>';
+            // Update details summary text
+            details.querySelector('summary').textContent = `Show full link table (${govToGovPairs.length} pairs)`;
 
-            pairList.forEach(p => {
-                const cross = p.srcCountry !== p.tgtCountry;
-                html += `<tr>
-                    <td><a href="https://${escapeHtml(p.source)}" target="_blank" rel="noopener">${escapeHtml(p.source)}</a></td>
-                    <td>${escapeHtml(p.srcCountry)}</td>
-                    <td><a href="https://${escapeHtml(p.target)}" target="_blank" rel="noopener">${escapeHtml(p.target)}</a></td>
-                    <td>${escapeHtml(p.tgtCountry)}</td>
-                    <td>${p.observations}</td>
-                    <td>${cross ? '<span style="color:var(--accent-color);font-weight:600">Yes</span>' : 'No (same country)'}</td>
-                </tr>`;
-            });
+            renderGovToGovTable(govToGovPairs, tableDiv);
 
-            html += '</tbody></table>';
-            tableDiv.innerHTML = html;
-
-            // Make table sortable
-            tableDiv.querySelectorAll('th[data-sort]').forEach(th => {
-                th.addEventListener('click', () => {
-                    const key = th.dataset.sort;
-                    const dir = th.dataset.dir === 'asc' ? 'desc' : 'asc';
-                    th.dataset.dir = dir;
-                    const sorted = [...pairList].sort((a, b) => {
-                        let va, vb;
-                        if (key === 'source') { va = a.source; vb = b.source; }
-                        else if (key === 'target') { va = a.target; vb = b.target; }
-                        else { va = a.observations; vb = b.observations; }
-                        if (typeof va === 'string') return dir === 'asc' ? va.localeCompare(vb) : vb.localeCompare(va);
-                        return dir === 'asc' ? va - vb : vb - va;
-                    });
-                    // Re-render with sorted data
-                    renderGovToGovTable(sorted, tableDiv);
-                });
-            });
+            // Country filter event
+            countrySelect.onchange = () => {
+                const country = countrySelect.value;
+                const filtered = country
+                    ? govToGovPairs.filter(p => p.srcCountry === country || p.tgtCountry === country)
+                    : govToGovPairs;
+                details.querySelector('summary').textContent = `Show full link table (${filtered.length} pairs)`;
+                renderGovToGovTable(filtered, tableDiv);
+            };
         }
 
         function renderGovToGovTable(pairList, container) {
