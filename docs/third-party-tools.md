@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-07-17 01:58 UTC — last scan: 2026-07-16_
+_Stats as of 2026-07-17 03:02 UTC — last scan: 2026-07-17_
 
-**187** scan batches run
+**190** scan batches run
 
 **23,669** of **82,714** available pages scanned (**28.6%** coverage)
 **21,920** of **23,669** scanned pages were reachable (**92.6%**)
 **10,599** reachable pages loaded at least one third-party script (**48.4%** of reachable)
-**13,562** known third-party service loads identified
+**13,561** known third-party service loads identified
 **24** unique known services across **16** categories
 
 ---
@@ -21,7 +21,7 @@ _Stats as of 2026-07-17 01:58 UTC — last scan: 2026-07-16_
 
 | Country | Scanned | Available | Reachable | URLs with 3rd-Party JS | Known Service Loads | JS URLs /100 Reachable | Known Loads /100 Reachable | Last Scan |
 |---------|---------|-----------|-----------|------------------------|--------------------|------------------------|---------------------------|----------|
-| Austria | 821 | 821 | 787 | 275 | 52 | 34.9 | 6.6 | 2026-07-14 |
+| Austria | 821 | 821 | 787 | 275 | 52 | 34.9 | 6.6 | 2026-07-17 |
 | Belgium | 1,309 | 1,309 | 1,220 | 638 | 720 | 52.3 | 59.0 | 2026-07-14 |
 | Bulgaria | 291 | 291 | 265 | 104 | 126 | 39.2 | 47.5 | 2026-07-15 |
 | Croatia | 233 | 233 | 231 | 121 | 168 | 52.4 | 72.7 | 2026-07-15 |
@@ -33,7 +33,7 @@ _Stats as of 2026-07-17 01:58 UTC — last scan: 2026-07-16_
 | Germany | 1,576 | 6,555 | 1,552 | 469 | 469 | 30.2 | 30.2 | 2026-07-14 |
 | Greece | 1,477 | 1,748 | 1,378 | 678 | 919 | 49.2 | 66.7 | 2026-07-15 |
 | Hungary | 390 | 390 | 298 | 129 | 187 | 43.3 | 62.8 | 2026-07-16 |
-| Iceland | 139 | 139 | 137 | 73 | 45 | 53.3 | 32.8 | 2026-07-14 |
+| Iceland | 139 | 139 | 137 | 73 | 44 | 53.3 | 32.1 | 2026-07-17 |
 | Ireland | 522 | 522 | 490 | 276 | 737 | 56.3 | 150.4 | 2026-07-15 |
 | Italy | 1,030 | 5,338 | 941 | 346 | 323 | 36.8 | 34.3 | 2026-07-15 |
 | Latvia | 802 | 802 | 774 | 545 | 565 | 70.4 | 73.0 | 2026-07-15 |
@@ -48,7 +48,7 @@ _Stats as of 2026-07-17 01:58 UTC — last scan: 2026-07-16_
 | Romania | 439 | 799 | 202 | 152 | 154 | 75.2 | 76.2 | 2026-07-16 |
 | Slovakia | 434 | 434 | 415 | 214 | 275 | 51.6 | 66.3 | 2026-07-15 |
 | Slovenia | 200 | 200 | 192 | 53 | 80 | 27.6 | 41.7 | 2026-07-15 |
-| Spain | 1,334 | 6,069 | 1,184 | 584 | 491 | 49.3 | 41.5 | 2026-07-12 |
+| Spain | 1,334 | 6,069 | 1,184 | 584 | 491 | 49.3 | 41.5 | 2026-07-17 |
 | Sweden | 1,558 | 1,558 | 1,472 | 459 | 250 | 31.2 | 17.0 | 2026-07-12 |
 | Switzerland | 730 | 2,117 | 715 | 160 | 171 | 22.4 | 23.9 | 2026-07-13 |
 | United Kingdom | 620 | 19,502 | 586 | 315 | 368 | 53.8 | 62.8 | 2026-07-13 |
@@ -61,7 +61,7 @@ _Stats as of 2026-07-17 01:58 UTC — last scan: 2026-07-16_
 
 | # | Service | Loads |
 |--:|---------|------:|
-| 1 | jsDelivr CDN | **2,976** |
+| 1 | jsDelivr CDN | **2,975** |
 | 2 | cdnjs (Cloudflare CDN) | **2,535** |
 | 3 | Google Analytics (GA4) | **1,990** |
 | 4 | jQuery | **1,062** |
@@ -87,7 +87,7 @@ _Stats as of 2026-07-17 01:58 UTC — last scan: 2026-07-16_
 | # | Service | Reachable Pages | Prevalence of Reachable Pages |
 |--:|---------|----------------:|------------------------------:|
 | 1 | Google Analytics (GA4) | **1,951** | **332.9%** |
-| 2 | jsDelivr CDN | **1,766** | **301.4%** |
+| 2 | jsDelivr CDN | **1,765** | **301.2%** |
 | 3 | cdnjs (Cloudflare CDN) | **1,085** | **185.2%** |
 | 4 | Google reCAPTCHA | **944** | **161.1%** |
 | 5 | Google Tag Manager | **782** | **133.4%** |
@@ -111,7 +111,7 @@ _Stats as of 2026-07-17 01:58 UTC — last scan: 2026-07-16_
 
 | # | Category | Loads |
 |--:|----------|------:|
-| 1 | CDN | **7,009** |
+| 1 | CDN | **7,008** |
 | 2 | Analytics | **2,144** |
 | 3 | JavaScript Library | **1,727** |
 | 4 | Security | **1,010** |
@@ -133,7 +133,7 @@ Infrastructure-heavy categories (CDNs, core libraries, and UI assets):
 
 | # | Infrastructure Category | Loads |
 |--:|--------------------------|------:|
-| 1 | CDN | **7,009** |
+| 1 | CDN | **7,008** |
 | 2 | JavaScript Library | **1,727** |
 | 3 | Icon Library | **283** |
 | 4 | UI Framework | **218** |
