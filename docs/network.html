@@ -647,6 +647,163 @@
             opacity: 1;
         }
 
+        /* Graph styles */
+        .graph-container svg {
+            width: 100%;
+            height: 500px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background: #fafbfc;
+        }
+
+        .graph-container .node circle {
+            stroke: #fff;
+            stroke-width: 1.5px;
+            cursor: pointer;
+        }
+
+        .graph-container .node text {
+            font-size: 10px;
+            fill: var(--text-primary);
+            pointer-events: none;
+        }
+
+        .graph-container .link {
+            stroke: #999;
+            stroke-opacity: 0.6;
+        }
+
+        .graph-container .graph-controls {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+            margin: 1rem 0;
+            flex-wrap: wrap;
+        }
+
+        .graph-container .graph-controls select {
+            padding: 0.5rem;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            font-size: 0.875rem;
+        }
+
+        .graph-container .graph-legend {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin: 0.5rem 0;
+            font-size: 0.8rem;
+        }
+
+        .graph-container .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .graph-container .legend-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        /* Country breakdown */
+        .country-breakdown {
+            margin: 1.5rem 0;
+        }
+
+        .country-bar {
+            display: flex;
+            align-items: center;
+            margin: 0.4rem 0;
+            gap: 0.5rem;
+        }
+
+        .country-bar .country-label {
+            min-width: 140px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-align: right;
+        }
+
+        .country-bar .bar-track {
+            flex: 1;
+            height: 20px;
+            background: var(--light-bg);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .country-bar .bar-fill {
+            height: 100%;
+            background: var(--accent-color);
+            border-radius: 4px;
+            transition: width 0.3s ease;
+        }
+
+        .country-bar .bar-count {
+            min-width: 60px;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        .country-detail-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .country-detail-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .country-detail-stat {
+            text-align: center;
+            padding: 0.75rem;
+            background: var(--light-bg);
+            border-radius: 6px;
+        }
+
+        .country-detail-stat .stat-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-color);
+        }
+
+        .country-detail-stat .stat-label {
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+        }
+
+        /* Tooltip for graph */
+        .graph-tooltip {
+            position: absolute;
+            background: var(--primary-color);
+            color: white;
+            padding: 0.5rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.15s;
+            z-index: 200;
+            max-width: 300px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .graph-tooltip.visible {
+            opacity: 1;
+        }
+
         /* Responsive design */
         @media (max-width: 768px) {
             body {
@@ -680,6 +837,11 @@
             th, td {
                 padding: 0.75rem 0.5rem;
                 font-size: 0.8rem;
+            }
+
+            .country-bar .country-label {
+                min-width: 80px;
+                font-size: 0.75rem;
             }
         }
     </style>
@@ -836,11 +998,11 @@
                 <div class="value" id="total-relationships">0</div>
             </div>
             <div class="summary-card">
-                <h4>Confirmed Domains</h4>
+                <h4>Countries</h4>
                 <div class="value small" id="confirmed-domains">0</div>
             </div>
             <div class="summary-card">
-                <h4>Candidate Domains</h4>
+                <h4>Unique Targets</h4>
                 <div class="value small" id="candidate-domains">0</div>
             </div>
             <div class="summary-card">
@@ -863,21 +1025,17 @@
                     <table id="domains-table">
                         <thead>
                             <tr>
-                                <th data-sort="organization_name">Organization Name</th>
-                                <th data-sort="domain">Domain</th>
                                 <th data-sort="country">Country</th>
-                                <th data-sort="government_level">Government Level</th>
-                                <th data-sort="organization_type">Organization Type</th>
-                                <th data-sort="classification_status">Classification Status</th>
-                                <th data-sort="source_count">Source Count</th>
-                                <th data-sort="in_degree">In-Degree</th>
-                                <th data-sort="out_degree">Out-Degree</th>
+                                <th data-sort="domain">Domain</th>
+                                <th data-sort="targets">Targets</th>
+                                <th>Top Types</th>
+                                <th data-sort="observations">Observations</th>
                                 <th data-sort="last_seen">Last Seen</th>
                             </tr>
                         </thead>
                         <tbody id="domains-table-body">
                             <tr>
-                                <td colspan="10" class="empty-state">
+                                <td colspan="6" class="empty-state">
                                     <h3>No domains match the current filters</h3>
                                     <p>Try adjusting your search criteria or filters</p>
                                 </td>
@@ -921,17 +1079,48 @@
             </div>
         </section>
 
-        <section class="graph-container" id="graph-container">
-            <div class="graph-placeholder">📊 Network Graph Explorer (Coming Soon)</div>
-            <p>The network graph visualization will display filtered relationships between domains when available. Click on graph nodes to explore details in the tables above.</p>
-            
-            <div class="zoom-controls">
-                <button class="btn" id="zoom-in">Zoom In</button>
-                <button class="btn" id="zoom-out">Zoom Out</button>
-                <button class="btn" id="reset-zoom">Reset View</button>
+        <section class="collapsible">
+            <div class="collapsible-header">
+                <span>Country Breakdown</span>
+                <span>+</span>
             </div>
-            
-            <p><small><strong>Graph Notes:</strong> This visualization represents observed web relationships and does NOT establish institutional authority or government hierarchy. High-degree nodes are not labeled as central government.</small></p>
+            <div class="collapsible-content">
+                <div id="country-breakdown" class="country-breakdown">
+                    <p>Loading country data...</p>
+                </div>
+                <div id="country-detail" style="display:none;">
+                    <div class="country-detail-header">
+                        <h3 id="country-detail-title">Country Details</h3>
+                        <button class="btn" id="back-to-overview">Back to All Countries</button>
+                    </div>
+                    <div class="country-detail-stats" id="country-detail-stats"></div>
+                    <div id="country-domains-list"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="graph-container" id="graph-container">
+            <div class="graph-controls">
+                <label for="graph-country-select"><strong>Country:</strong></label>
+                <select id="graph-country-select">
+                    <option value="">All Countries</option>
+                </select>
+                <label for="graph-type-select"><strong>Type:</strong></label>
+                <select id="graph-type-select">
+                    <option value="">All Types</option>
+                    <option value="editorial_link">Editorial Links</option>
+                    <option value="script_dependency">Scripts</option>
+                    <option value="stylesheet_dependency">Stylesheets</option>
+                    <option value="font_or_preload_dependency">Fonts</option>
+                    <option value="image_or_media_dependency">Images</option>
+                    <option value="form_destination">Forms</option>
+                </select>
+                <button class="btn btn-primary" id="render-graph">Render Graph</button>
+            </div>
+            <div class="graph-legend" id="graph-legend"></div>
+            <div id="graph-svg-container"></div>
+            <div class="graph-tooltip" id="graph-tooltip"></div>
+            <p><small><strong>Graph Notes:</strong> Node size = connection count. Edge thickness = observation count. This visualization represents observed web relationships and does NOT establish institutional authority or government hierarchy.</small></p>
         </section>
 
         <section class="download-section">
@@ -1024,228 +1213,508 @@
         </div>
     </div>
 
+    <script src="https://d3js.org/d3.v7.min.js"></script>
     <script>
-        // Global state
+        const TLD_TO_COUNTRY = {
+            'at': 'Austria', 'be': 'Belgium', 'bg': 'Bulgaria', 'hr': 'Croatia',
+            'cy': 'Cyprus', 'cz': 'Czechia', 'dk': 'Denmark', 'ee': 'Estonia',
+            'fi': 'Finland', 'fr': 'France', 'de': 'Germany', 'gr': 'Greece',
+            'hu': 'Hungary', 'is': 'Iceland', 'ie': 'Ireland', 'it': 'Italy',
+            'lv': 'Latvia', 'lt': 'Lithuania', 'lu': 'Luxembourg', 'mt': 'Malta',
+            'nl': 'Netherlands', 'no': 'Norway', 'pl': 'Poland', 'pt': 'Portugal',
+            'ro': 'Romania', 'sk': 'Slovakia', 'si': 'Slovenia', 'es': 'Spain',
+            'se': 'Sweden', 'ch': 'Switzerland', 'uk': 'United Kingdom',
+            'cymru': 'Wales', 'scot': 'Scotland', 'eu': 'EU Institutions'
+        };
+
+        const CATEGORY_COLORS = {
+            'known_government': '#2c3e50',
+            'unknown_external': '#95a5a6',
+            'social_platform': '#3498db',
+            'analytics': '#e74c3c',
+            'cdn': '#9b59b6',
+            'commercial_service': '#1abc9c',
+            'document_host': '#f39c12',
+            'identity': '#27ae60'
+        };
+
         let allRelationships = [];
-        
-        // Initialize when DOM is loaded
-        document.addEventListener('DOMContentLoaded', function() {
-            loadRelationshipData();
+        let filteredRelationships = [];
+        let currentFilters = { country: '', type: '', category: '', search: '' };
+
+        function getCountry(domain) {
+            const parts = domain.split('.');
+            for (let i = parts.length - 1; i >= 0; i--) {
+                if (TLD_TO_COUNTRY[parts[i]]) return TLD_TO_COUNTRY[parts[i]];
+            }
+            if (parts.length >= 2) {
+                const tld = parts[parts.length - 1];
+                if (tld === 'uk' && parts[parts.length - 2] === 'co') return 'United Kingdom';
+            }
+            return 'Unknown';
+        }
+
+        function getTld(domain) {
+            const parts = domain.split('.');
+            return parts[parts.length - 1] || '';
+        }
+
+        function formatDate(s) {
+            if (!s) return 'N/A';
+            return new Date(s).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+        }
+
+        function escapeHtml(s) {
+            const d = document.createElement('div');
+            d.textContent = s;
+            return d.innerHTML;
+        }
+
+        function applyFilters() {
+            currentFilters.country = document.getElementById('country-filter').value;
+            currentFilters.type = document.getElementById('relationship-type-filter').value;
+            currentFilters.category = document.getElementById('category-filter').value;
+            currentFilters.search = document.getElementById('search').value.toLowerCase();
+
+            filteredRelationships = allRelationships.filter(r => {
+                const country = getCountry(r.source_domain);
+                if (currentFilters.country && country !== currentFilters.country) return false;
+                if (currentFilters.type && r.relationship_type !== currentFilters.type) return false;
+                if (currentFilters.category && r.target_category !== currentFilters.category) return false;
+                if (currentFilters.search) {
+                    const hay = (r.source_domain + ' ' + r.target_domain + ' ' + r.target_hostname + ' ' + r.relationship_type + ' ' + r.target_category).toLowerCase();
+                    if (!hay.includes(currentFilters.search)) return false;
+                }
+                return true;
+            });
+
+            renderAll();
+            announceToScreenReader('Filters applied. Showing ' + filteredRelationships.length + ' relationships.');
+        }
+
+        function resetFilters() {
+            document.getElementById('country-filter').value = '';
+            document.getElementById('relationship-type-filter').value = '';
+            document.getElementById('category-filter').value = '';
+            document.getElementById('search').value = '';
+            currentFilters = { country: '', type: '', category: '', search: '' };
+            filteredRelationships = [...allRelationships];
+            renderAll();
+            announceToScreenReader('Filters reset. Showing all ' + filteredRelationships.length + ' relationships.');
+        }
+
+        function renderAll() {
+            const bySource = {};
+            filteredRelationships.forEach(r => {
+                if (!bySource[r.source_domain]) bySource[r.source_domain] = [];
+                bySource[r.source_domain].push(r);
+            });
+            updateSummaryStats(filteredRelationships, bySource);
+            populateDomainTable(bySource);
+            populateRelationshipsTable(filteredRelationships);
+            renderCountryBreakdown();
+        }
+
+        function updateSummaryStats(relationships, bySource) {
+            const totalDomains = Object.keys(bySource).length;
+            const countries = new Set(relationships.map(r => getCountry(r.source_domain)));
+            const uniqueTargets = new Set(relationships.map(r => r.target_domain)).size;
+            const editorialLinks = relationships.filter(r => r.relationship_type === 'editorial_link').length;
+            const techDeps = relationships.filter(r =>
+                ['script_dependency', 'stylesheet_dependency', 'font_or_preload_dependency',
+                 'image_or_media_dependency', 'form_destination'].includes(r.relationship_type)
+            ).length;
+
+            document.getElementById('total-domains').textContent = totalDomains;
+            document.getElementById('total-relationships').textContent = relationships.length;
+            document.getElementById('confirmed-domains').textContent = countries.size;
+            document.getElementById('candidate-domains').textContent = uniqueTargets;
+            document.getElementById('editorial-links').textContent = editorialLinks;
+            document.getElementById('technical-deps').textContent = techDeps;
+        }
+
+        function populateDomainTable(bySource) {
+            const tbody = document.getElementById('domains-table-body');
+            const stats = Object.entries(bySource).map(([domain, rels]) => ({
+                domain,
+                country: getCountry(domain),
+                targets: new Set(rels.map(r => r.target_domain)).size,
+                observations: rels.reduce((s, r) => s + r.observations, 0),
+                types: {},
+                lastSeen: rels[0]?.last_seen
+            })).sort((a, b) => b.observations - a.observations);
+
+            stats.forEach(s => {
+                rels_for_domain = bySource[s.domain];
+                rels_for_domain.forEach(r => {
+                    s.types[r.relationship_type] = (s.types[r.relationship_type] || 0) + 1;
+                });
+            });
+
+            if (stats.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="10" class="empty-state"><h3>No domains match</h3><p>Try adjusting filters</p></td></tr>';
+                return;
+            }
+
+            tbody.innerHTML = stats.map(s => {
+                const topTypes = Object.entries(s.types).sort((a, b) => b[1] - a[1]).slice(0, 3)
+                    .map(([t, c]) => '<span class="badge type">' + t.replace(/_/g, ' ') + ' (' + c + ')</span>').join(' ');
+                return '<tr>'
+                    + '<td>' + escapeHtml(s.country) + '</td>'
+                    + '<td><a href="https://' + escapeHtml(s.domain) + '" target="_blank" rel="noopener" class="domain-cell">' + escapeHtml(s.domain) + '</a></td>'
+                    + '<td>' + s.targets + '</td>'
+                    + '<td>' + topTypes + '</td>'
+                    + '<td>' + s.observations + '</td>'
+                    + '<td>' + formatDate(s.lastSeen) + '</td>'
+                    + '</tr>';
+            }).join('');
+        }
+
+        function populateRelationshipsTable(relationships) {
+            const tbody = document.getElementById('relationships-table-body');
+            const sorted = [...relationships].sort((a, b) => b.observations - a.observations).slice(0, 500);
+
+            if (sorted.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="8" class="empty-state"><h3>No relationships match</h3><p>Try adjusting filters</p></td></tr>';
+                return;
+            }
+
+            tbody.innerHTML = sorted.map(r => '<tr>'
+                + '<td>' + escapeHtml(r.source_domain) + '</td>'
+                + '<td>' + escapeHtml(r.target_domain) + '</td>'
+                + '<td><span class="badge rel-' + r.relationship_type.replace(/_/g, '-').split('-')[0] + '">' + r.relationship_type.replace(/_/g, ' ') + '</span></td>'
+                + '<td>' + r.source_pages + '</td>'
+                + '<td>' + r.observations + '</td>'
+                + '<td>' + (r.page_regions || []).join(', ') + '</td>'
+                + '<td>' + formatDate(r.first_seen) + '</td>'
+                + '<td>' + formatDate(r.last_seen) + '</td>'
+                + '</tr>').join('');
+        }
+
+        function renderCountryBreakdown() {
+            const container = document.getElementById('country-breakdown');
+            const countryData = {};
+            filteredRelationships.forEach(r => {
+                const c = getCountry(r.source_domain);
+                if (!countryData[c]) countryData[c] = { domains: new Set(), relationships: 0 };
+                countryData[c].domains.add(r.source_domain);
+                countryData[c].relationships++;
+            });
+
+            const sorted = Object.entries(countryData)
+                .map(([name, d]) => ({ name, domains: d.domains.size, relationships: d.relationships }))
+                .sort((a, b) => b.relationships - a.relationships);
+
+            const maxRels = sorted[0]?.relationships || 1;
+
+            container.innerHTML = '<h3>Relationships by Country</h3>'
+                + sorted.map(c => '<div class="country-bar" data-country="' + escapeHtml(c.name) + '" style="cursor:pointer">'
+                    + '<span class="country-label">' + escapeHtml(c.name) + '</span>'
+                    + '<div class="bar-track"><div class="bar-fill" style="width:' + (c.relationships / maxRels * 100) + '%"></div></div>'
+                    + '<span class="bar-count">' + c.relationships.toLocaleString() + ' rels / ' + c.domains + ' domains</span>'
+                    + '</div>').join('');
+
+            container.querySelectorAll('.country-bar').forEach(bar => {
+                bar.addEventListener('click', () => showCountryDetail(bar.dataset.country));
+            });
+        }
+
+        function showCountryDetail(country) {
+            document.getElementById('country-breakdown').style.display = 'none';
+            document.getElementById('country-detail').style.display = 'block';
+
+            const rels = filteredRelationships.filter(r => getCountry(r.source_domain) === country);
+            const domains = new Set(rels.map(r => r.source_domain));
+            const targets = new Set(rels.map(r => r.target_domain));
+            const types = {};
+            rels.forEach(r => { types[r.relationship_type] = (types[r.relationship_type] || 0) + 1; });
+
+            document.getElementById('country-detail-title').textContent = country;
+            document.getElementById('country-detail-stats').innerHTML =
+                '<div class="country-detail-stat"><div class="stat-value">' + domains.size + '</div><div class="stat-label">Source Domains</div></div>'
+                + '<div class="country-detail-stat"><div class="stat-value">' + rels.length.toLocaleString() + '</div><div class="stat-label">Relationships</div></div>'
+                + '<div class="country-detail-stat"><div class="stat-value">' + targets.size + '</div><div class="stat-label">Unique Targets</div></div>'
+                + '<div class="country-detail-stat"><div class="stat-value">' + Object.keys(types).length + '</div><div class="stat-label">Relationship Types</div></div>';
+
+            const typeList = Object.entries(types).sort((a, b) => b[1] - a[1])
+                .map(([t, c]) => '<span class="badge type">' + t.replace(/_/g, ' ') + ': ' + c + '</span>').join(' ');
+
+            const domainList = [...domains].sort().map(d => {
+                const count = rels.filter(r => r.source_domain === d).length;
+                return '<li><a href="https://' + escapeHtml(d) + '" target="_blank" rel="noopener">' + escapeHtml(d) + '</a> (' + count + ' relationships)</li>';
+            }).join('');
+
+            document.getElementById('country-domains-list').innerHTML =
+                '<h4>Relationship Types</h4><p>' + typeList + '</p>'
+                + '<h4>Source Domains (' + domains.size + ')</h4><ul>' + domainList + '</ul>';
+
+            announceToScreenReader('Showing details for ' + country);
+        }
+
+        function renderGraph() {
+            const country = document.getElementById('graph-country-select').value;
+            const type = document.getElementById('graph-type-select').value;
+
+            let rels = filteredRelationships;
+            if (country) rels = rels.filter(r => getCountry(r.source_domain) === country);
+            if (type) rels = rels.filter(r => r.relationship_type === type);
+
+            const topRels = rels.sort((a, b) => b.observations - a.observations).slice(0, 200);
+
+            const nodeMap = {};
+            const links = [];
+            topRels.forEach(r => {
+                if (!nodeMap[r.source_domain]) nodeMap[r.source_domain] = { id: r.source_domain, country: getCountry(r.source_domain), category: 'known_government', degree: 0 };
+                if (!nodeMap[r.target_domain]) nodeMap[r.target_domain] = { id: r.target_domain, country: getCountry(r.target_domain), category: r.target_category, degree: 0 };
+                nodeMap[r.source_domain].degree++;
+                nodeMap[r.target_domain].degree++;
+                links.push({ source: r.source_domain, target: r.target_domain, weight: r.observations, type: r.relationship_type });
+            });
+
+            const nodes = Object.values(nodeMap);
+
+            const container = document.getElementById('graph-svg-container');
+            container.innerHTML = '';
+            if (nodes.length === 0) {
+                container.innerHTML = '<p style="text-align:center;padding:2rem;color:#6c757d;">No data to display. Try different filters.</p>';
+                return;
+            }
+
+            const width = container.clientWidth || 900;
+            const height = 500;
+
+            const svg = d3.select(container).append('svg')
+                .attr('width', width).attr('height', height)
+                .attr('viewBox', [0, 0, width, height]);
+
+            const g = svg.append('g');
+
+            svg.call(d3.zoom().scaleExtent([0.2, 5]).on('zoom', (e) => g.attr('transform', e.transform)));
+
+            const maxDegree = d3.max(nodes, d => d.degree) || 1;
+            const radiusScale = d3.scaleSqrt().domain([1, maxDegree]).range([4, 20]);
+
+            const simulation = d3.forceSimulation(nodes)
+                .force('link', d3.forceLink(links).id(d => d.id).distance(80))
+                .force('charge', d3.forceManyBody().strength(-120))
+                .force('center', d3.forceCenter(width / 2, height / 2))
+                .force('collision', d3.forceCollide().radius(d => radiusScale(d.degree) + 2));
+
+            const link = g.append('g').selectAll('line')
+                .data(links).join('line')
+                .attr('class', 'link')
+                .attr('stroke-width', d => Math.max(1, Math.sqrt(d.weight)));
+
+            const node = g.append('g').selectAll('g')
+                .data(nodes).join('g')
+                .attr('class', 'node')
+                .call(d3.drag()
+                    .on('start', (e, d) => { if (!e.active) simulation.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
+                    .on('drag', (e, d) => { d.fx = e.x; d.fy = e.y; })
+                    .on('end', (e, d) => { if (!e.active) simulation.alphaTarget(0); d.fx = null; d.fy = null; })
+                );
+
+            node.append('circle')
+                .attr('r', d => radiusScale(d.degree))
+                .attr('fill', d => CATEGORY_COLORS[d.category] || '#95a5a6');
+
+            node.append('text')
+                .attr('dx', d => radiusScale(d.degree) + 3)
+                .attr('dy', '0.35em')
+                .text(d => d.degree > 2 ? d.id.split('.')[0] : '')
+                .style('font-size', '9px');
+
+            const tooltip = document.getElementById('graph-tooltip');
+            node.on('mouseover', (e, d) => {
+                tooltip.innerHTML = '<strong>' + escapeHtml(d.id) + '</strong><br>'
+                    + 'Country: ' + escapeHtml(d.country) + '<br>'
+                    + 'Category: ' + d.category.replace(/_/g, ' ') + '<br>'
+                    + 'Connections: ' + d.degree;
+                tooltip.classList.add('visible');
+                tooltip.style.left = (e.pageX + 10) + 'px';
+                tooltip.style.top = (e.pageY - 10) + 'px';
+            }).on('mousemove', (e) => {
+                tooltip.style.left = (e.pageX + 10) + 'px';
+                tooltip.style.top = (e.pageY - 10) + 'px';
+            }).on('mouseout', () => tooltip.classList.remove('visible'));
+
+            node.on('click', (e, d) => {
+                node.select('circle').attr('opacity', 0.2);
+                link.attr('opacity', 0.1);
+                const connected = new Set();
+                connected.add(d.id);
+                links.forEach(l => {
+                    const s = typeof l.source === 'object' ? l.source.id : l.source;
+                    const t = typeof l.target === 'object' ? l.target.id : l.target;
+                    if (s === d.id) connected.add(t);
+                    if (t === d.id) connected.add(s);
+                });
+                node.filter(n => connected.has(n.id)).select('circle').attr('opacity', 1);
+                link.filter(l => {
+                    const s = typeof l.source === 'object' ? l.source.id : l.source;
+                    const t = typeof l.target === 'object' ? l.target.id : l.target;
+                    return s === d.id || t === d.id;
+                }).attr('opacity', 1).attr('stroke', '#e74c3c');
+            });
+
+            svg.on('click', (e) => {
+                if (e.target === svg.node()) {
+                    node.select('circle').attr('opacity', 1);
+                    link.attr('opacity', 0.6).attr('stroke', '#999');
+                }
+            });
+
+            simulation.on('tick', () => {
+                link.attr('x1', d => d.source.x).attr('y1', d => d.source.y)
+                    .attr('x2', d => d.target.x).attr('y2', d => d.target.y);
+                node.attr('transform', d => 'translate(' + d.x + ',' + d.y + ')');
+            });
+
+            renderGraphLegend();
+        }
+
+        function renderGraphLegend() {
+            const legend = document.getElementById('graph-legend');
+            legend.innerHTML = Object.entries(CATEGORY_COLORS)
+                .map(([cat, color]) => '<span class="legend-item"><span class="legend-dot" style="background:' + color + '"></span>' + cat.replace(/_/g, ' ') + '</span>')
+                .join('');
+        }
+
+        function exportJSON(data, filename) {
+            const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url; a.download = filename; a.click();
+            URL.revokeObjectURL(url);
+        }
+
+        function exportCSV(data, filename) {
+            if (!data.length) return;
+            const headers = Object.keys(data[0]);
+            const csv = [headers.join(',')].concat(data.map(r => headers.map(h => '"' + String(r[h] || '').replace(/"/g, '""') + '"').join(','))).join('\n');
+            const blob = new Blob([csv], { type: 'text/csv' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url; a.download = filename; a.click();
+            URL.revokeObjectURL(url);
+        }
+
+        function announceToScreenReader(message) {
+            const el = document.getElementById('status-message');
+            if (el) { el.textContent = message; setTimeout(() => el.textContent = '', 2000); }
+        }
+
+        function populateCountryFilter() {
+            const countries = new Set(allRelationships.map(r => getCountry(r.source_domain)));
+            const sorted = [...countries].sort();
+            const selects = ['country-filter', 'graph-country-select'];
+            selects.forEach(id => {
+                const sel = document.getElementById(id);
+                if (!sel) return;
+                const first = sel.querySelector('option');
+                sel.innerHTML = '';
+                sel.appendChild(first);
+                sorted.forEach(c => {
+                    const opt = document.createElement('option');
+                    opt.value = c; opt.textContent = c;
+                    sel.appendChild(opt);
+                });
+            });
+        }
+
+        function setupEventListeners() {
+            document.querySelectorAll('.collapsible-header').forEach(h => {
+                h.addEventListener('click', () => {
+                    const content = h.nextElementSibling;
+                    const indicator = h.querySelector('span:last-child');
+                    content.classList.toggle('active');
+                    if (indicator) indicator.textContent = content.classList.contains('active') ? '−' : '+';
+                });
+            });
+
+            document.getElementById('apply-filters').addEventListener('click', applyFilters);
+            document.getElementById('reset-filters').addEventListener('click', resetFilters);
+
+            document.getElementById('toggle-graph').addEventListener('click', () => {
+                const gc = document.getElementById('graph-container');
+                gc.classList.toggle('active');
+                if (gc.classList.contains('active')) renderGraph();
+            });
+
+            document.getElementById('render-graph').addEventListener('click', renderGraph);
+
+            document.getElementById('back-to-overview').addEventListener('click', () => {
+                document.getElementById('country-detail').style.display = 'none';
+                document.getElementById('country-breakdown').style.display = 'block';
+            });
+
+            document.getElementById('close-modal').addEventListener('click', () => {
+                document.getElementById('node-modal').classList.remove('active');
+            });
+            document.getElementById('modal-close-btn').addEventListener('click', () => {
+                document.getElementById('node-modal').classList.remove('active');
+            });
+
+            document.getElementById('download-json').addEventListener('click', (e) => {
+                e.preventDefault();
+                exportJSON(allRelationships, 'relationships-all.json');
+            });
+            document.getElementById('download-csv').addEventListener('click', (e) => {
+                e.preventDefault();
+                exportCSV(allRelationships, 'relationships-all.csv');
+            });
+            document.getElementById('download-filtered-json').addEventListener('click', (e) => {
+                e.preventDefault();
+                exportJSON(filteredRelationships, 'relationships-filtered.json');
+            });
+            document.getElementById('download-filtered-csv').addEventListener('click', (e) => {
+                e.preventDefault();
+                exportCSV(filteredRelationships, 'relationships-filtered.csv');
+            });
+
+            document.querySelectorAll('#domains-table th[data-sort], #relationships-table th[data-sort]').forEach(th => {
+                th.addEventListener('click', () => {
+                    const key = th.dataset.sort;
+                    const table = th.closest('table');
+                    const tbody = table.querySelector('tbody');
+                    const rows = Array.from(tbody.querySelectorAll('tr'));
+                    const idx = Array.from(th.parentNode.children).indexOf(th);
+                    const asc = th.classList.contains('sorted-asc');
+
+                    table.querySelectorAll('th').forEach(h => h.classList.remove('sorted-asc', 'sorted-desc'));
+                    th.classList.add(asc ? 'sorted-desc' : 'sorted-asc');
+
+                    rows.sort((a, b) => {
+                        const av = a.children[idx]?.textContent.trim() || '';
+                        const bv = b.children[idx]?.textContent.trim() || '';
+                        const an = parseFloat(av), bn = parseFloat(bv);
+                        if (!isNaN(an) && !isNaN(bn)) return asc ? bn - an : an - bn;
+                        return asc ? bv.localeCompare(av) : av.localeCompare(bv);
+                    });
+                    rows.forEach(r => tbody.appendChild(r));
+                });
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch('data/relationships.jsonl')
+                .then(r => { if (!r.ok) throw new Error('Network response was not ok'); return r.text(); })
+                .then(text => {
+                    allRelationships = text.split('\n').filter(l => l.trim()).map(l => {
+                        try { return JSON.parse(l); } catch(e) { return null; }
+                    }).filter(Boolean);
+                    filteredRelationships = [...allRelationships];
+                    console.log('Loaded ' + allRelationships.length + ' relationships');
+                    populateCountryFilter();
+                    renderAll();
+                })
+                .catch(err => {
+                    console.error('Could not load data:', err);
+                    document.querySelector('main').insertAdjacentHTML('afterbegin',
+                        '<div class="error-message">Error loading data: ' + escapeHtml(err.message) + '</div>');
+                });
             setupEventListeners();
         });
-        
-        function loadRelationshipData() {
-            fetch('data/relationships.jsonl')
-                .then(response => {
-                    if (!response.ok) throw new Error('Network response was not ok');
-                    return response.text();
-                })
-                .then(text => {
-                    const lines = text.split('\n').filter(line => line.trim());
-                    allRelationships = lines.map(line => {
-                        try { return JSON.parse(line); } 
-                        catch (e) { return null; }
-                    }).filter(r => r !== null);
-                    
-                    console.log(`Loaded ${allRelationships.length} relationships`);
-                    processAndDisplayData();
-                })
-                .catch(error => {
-                    console.error('Could not load relationship data:', error);
-                    const loadingMessage = document.querySelector('.loading-message');
-                    if (loadingMessage) {
-                        loadingMessage.innerHTML = '<h2>Error Loading Data</h2><p>' + error.message + '</p>';
-                    }
-                });
-        }
-        
-        function processAndDisplayData() {
-            // Group by source domain
-            const bySource = {};
-            allRelationships.forEach(rel => {
-                if (!bySource[rel.source_domain]) bySource[rel.source_domain] = [];
-                bySource[rel.source_domain].push(rel);
-            });
-            
-            // Group by relationship type
-            const byType = {};
-            allRelationships.forEach(rel => {
-                if (!byType[rel.relationship_type]) byType[rel.relationship_type] = [];
-                byType[rel.relationship_type].push(rel);
-            });
-            
-            // Update summary cards
-            updateSummaryStats(allRelationships, bySource, byType);
-            
-            // Populate tables
-            populateDomainTable(bySource);
-            populateRelationshipsTable(allRelationships);
-            
-            // Hide loading message
-            const loadingMessage = document.querySelector('.loading-message');
-            if (loadingMessage) loadingMessage.style.display = 'none';
-        }
-        
-        function updateSummaryStats(relationships, bySource, byType) {
-            const totalDomains = Object.keys(bySource).length;
-            const totalRelationships = relationships.length;
-            
-            const editorialLinks = byType['editorial_link']?.length || 0;
-            const scriptDeps = byType['script_dependency']?.length || 0;
-            const styleDeps = byType['stylesheet_dependency']?.length || 0;
-            const fontDeps = byType['font_or_preload_dependency']?.length || 0;
-            const imageDeps = byType['image_or_media_dependency']?.length || 0;
-            const formDeps = byType['form_destination']?.length || 0;
-            
-            const countries = new Set();
-            relationships.forEach(rel => {
-                const parts = rel.source_domain.split('.');
-                if (parts.length > 1) countries.add(parts[parts.length - 1]);
-            });
-            
-            const totalDomainsEl = document.getElementById('total-domains');
-            const totalRelationshipsEl = document.getElementById('total-relationships');
-            const confirmedDomainsEl = document.getElementById('confirmed-domains');
-            const candidateDomainsEl = document.getElementById('candidate-domains');
-            const editorialLinksEl = document.getElementById('editorial-links');
-            const technicalDepsEl = document.getElementById('technical-deps');
-            
-            if (totalDomainsEl) totalDomainsEl.textContent = totalDomains;
-            if (totalRelationshipsEl) totalRelationshipsEl.textContent = totalRelationships;
-            if (confirmedDomainsEl) confirmedDomainsEl.textContent = countries.size;
-            if (candidateDomainsEl) candidateDomainsEl.textContent = totalDomains;
-            if (editorialLinksEl) editorialLinksEl.textContent = editorialLinks;
-            if (technicalDepsEl) technicalDepsEl.textContent = scriptDeps + styleDeps + fontDeps + imageDeps + formDeps;
-        }
-        
-        function populateDomainTable(bySource) {
-            const tableBody = document.querySelector('#domains-table-body');
-            if (!tableBody) return;
-            
-            tableBody.innerHTML = '';
-            
-            const domainStats = {};
-            Object.keys(bySource).forEach(domain => {
-                const rels = bySource[domain];
-                const totalObs = rels.reduce((sum, r) => sum + r.observations, 0);
-                const uniqueTargets = new Set(rels.map(r => r.target_domain)).size;
-                
-                domainStats[domain] = {
-                    domain,
-                    relationshipCount: rels.length,
-                    targetCount: uniqueTargets,
-                    observations: totalObs,
-                    lastSeen: rels[0]?.last_seen
-                };
-            });
-            
-            const sorted = Object.values(domainStats).sort((a, b) => b.observations - a.observations);
-            
-            sorted.forEach(stat => {
-                const row = document.createElement('tr');
-                row.innerHTML = `
-                    <td>${stat.domain}</td>
-                    <td>${stat.domain}</td>
-                    <td>${stat.domain.split('.').pop().toUpperCase()}</td>
-                    <td>National</td>
-                    <td>Government Portal</td>
-                    <td>Confirmed</td>
-                    <td>${stat.targetCount}</td>
-                    <td>${Math.floor(stat.observations * 0.3)}</td>
-                    <td>${stat.observations}</td>
-                    <td>${stat.lastSeen ? new Date(stat.lastSeen).toLocaleDateString() : 'N/A'}</td>
-                `;
-                tableBody.appendChild(row);
-            });
-        }
-        
-        function populateRelationshipsTable(relationships) {
-            const tableBody = document.querySelector('#relationships-table-body');
-            if (!tableBody) return;
-            
-            tableBody.innerHTML = '';
-            
-            const sorted = [...relationships].sort((a, b) => b.observations - a.observations);
-            
-            sorted.forEach(rel => {
-                const row = document.createElement('tr');
-                row.innerHTML = `
-                    <td>${rel.source_domain}</td>
-                    <td>${rel.target_domain}</td>
-                    <td>${rel.relationship_type.replace(/_/g, ' ')}</td>
-                    <td>${rel.source_pages}</td>
-                    <td>${rel.observations}</td>
-                    <td>${(rel.page_regions || []).join(', ')}</td>
-                    <td>${rel.first_seen ? new Date(rel.first_seen).toLocaleDateString() : 'N/A'}</td>
-                    <td>${rel.last_seen ? new Date(rel.last_seen).toLocaleDateString() : 'N/A'}</td>
-                `;
-                tableBody.appendChild(row);
-            });
-        }
-        
-        function setupEventListeners() {
-            // Collapsible sections
-            document.querySelectorAll('.collapsible-header').forEach(header => {
-                header.addEventListener('click', function() {
-                    const content = this.nextElementSibling;
-                    const indicator = this.querySelector('span:last-child');
-                    content.classList.toggle('active');
-                    indicator.textContent = content.classList.contains('active') ? '−' : '+';
-                });
-            });
-            
-            // Modal controls
-            document.querySelectorAll('.close-modal, #modal-close-btn').forEach(btn => {
-                btn.addEventListener('click', closeModal);
-            });
-        }
-        
-        function closeModal() {
-            const modal = document.getElementById('modal');
-            if (modal) modal.style.display = 'none';
-        }
-        
-        function announceToScreenReader(message) {
-            const liveRegion = document.getElementById('live-region');
-            if (liveRegion) {
-                const statusMessage = document.getElementById('status-message');
-                if (statusMessage) statusMessage.textContent = message;
-            }
-        }
-        
-        function toggleGraphView() {
-            const graphContainer = document.getElementById('graph-container');
-            graphContainer.classList.toggle('active');
-            
-            if (graphContainer.classList.contains('active')) {
-                announceToScreenReader('Network graph view activated');
-            } else {
-                announceToScreenReader('Network graph view deactivated');
-            }
-        }
-        
-        function zoomGraph(factor) {
-            announceToScreenReader(`Graph zoom level adjusted by ${factor}`);
-        }
-        
-        function resetGraphZoom() {
-            announceToScreenReader('Graph view reset');
-        }
-        
-        function showError(message) {
-            const container = document.querySelector('main');
-            const errorElement = document.createElement('div');
-            errorElement.className = 'error-message';
-            errorElement.textContent = message;
-            
-            container.insertBefore(errorElement, container.firstChild);
-            
-            setTimeout(() => {
-                if (errorElement.parentNode) {
-                    errorElement.parentNode.removeChild(errorElement);
-                }
-            }, 5000);
-        }
     </script>
 </body>
 </html>
