@@ -5,9 +5,9 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-07-17 15:12 UTC — last scan: 2026-07-17_
+_Stats as of 2026-07-17 15:27 UTC — last scan: 2026-07-17_
 
-**167** scan batches run
+**169** scan batches run
 
 **69,679** of **82,714** available pages scanned (**84.2%** coverage)
 **64,273** pages with technology detections (**92.2%** of scanned)
@@ -27,7 +27,7 @@ _Stats as of 2026-07-17 15:12 UTC — last scan: 2026-07-17_
 | Denmark | 1,521 | 1,500 | 1,521 | 2026-07-14 |
 | Estonia | 396 | 381 | 396 | 2026-07-13 |
 | Finland | 180 | 170 | 180 | 2026-07-13 |
-| France | 10,007 | 9,242 | 10,007 | 2026-07-15 |
+| France | 10,007 | 9,242 | 10,007 | 2026-07-17 |
 | Germany | 6,555 | 6,477 | 6,555 | 2026-07-15 |
 | Greece | 1,748 | 1,634 | 1,748 | 2026-07-15 |
 | Hungary | 390 | 298 | 390 | 2026-07-13 |
@@ -44,7 +44,7 @@ _Stats as of 2026-07-17 15:12 UTC — last scan: 2026-07-17_
 | Portugal | 3,503 | 2,935 | 3,503 | 2026-07-15 |
 | Cyprus | 24 | 24 | 24 | 2026-07-17 |
 | Romania | 799 | 342 | 799 | 2026-07-15 |
-| Slovakia | 434 | 415 | 434 | 2026-07-15 |
+| Slovakia | 434 | 415 | 434 | 2026-07-17 |
 | Slovenia | 200 | 193 | 200 | 2026-07-11 |
 | Spain | 6,069 | 5,305 | 6,069 | 2026-07-16 |
 | Sweden | 1,558 | 1,489 | 1,558 | 2026-07-15 |
@@ -59,46 +59,46 @@ _Stats as of 2026-07-17 15:12 UTC — last scan: 2026-07-17_
 
 | # | Technology | Pages | Categories |
 |--:|-----------|------:|-----------|
-| 1 | jQuery | **34,845** | JavaScript libraries |
-| 2 | PHP | **21,300** | Programming languages |
+| 1 | jQuery | **34,840** | JavaScript libraries |
+| 2 | PHP | **21,308** | Programming languages |
 | 3 | Apache | **18,660** | Web servers |
-| 4 | Bootstrap | **16,107** | UI frameworks |
-| 5 | Font Awesome | **15,346** | Font scripts |
-| 6 | Google Font API | **12,874** | Font scripts |
-| 7 | MySQL | **11,963** | Databases |
-| 8 | WordPress | **11,875** | Blogs, CMS |
+| 4 | Bootstrap | **16,111** | UI frameworks |
+| 5 | Font Awesome | **15,351** | Font scripts |
+| 6 | Google Font API | **12,884** | Font scripts |
+| 7 | MySQL | **11,966** | Databases |
+| 8 | WordPress | **11,878** | Blogs, CMS |
 | 9 | Nginx | **11,357** | Reverse proxies, Web servers |
-| 10 | jQuery Migrate | **10,461** | JavaScript libraries |
+| 10 | jQuery Migrate | **10,468** | JavaScript libraries |
 | 11 | Windows Server | **5,896** | Operating systems |
-| 12 | jQuery UI | **5,808** | JavaScript libraries |
-| 13 | IIS | **5,807** | Web servers |
+| 12 | IIS | **5,807** | Web servers |
+| 13 | jQuery UI | **5,805** | JavaScript libraries |
 | 14 | Microsoft ASP.NET | **5,020** | Web frameworks |
-| 15 | Google Tag Manager | **5,007** | Tag managers |
+| 15 | Google Tag Manager | **5,010** | Tag managers |
 | 16 | Cloudflare | **4,917** | CDN |
 | 17 | Drupal | **4,906** | CMS |
-| 18 | jsDelivr | **4,690** | CDN |
+| 18 | jsDelivr | **4,692** | CDN |
 | 19 | Yoast SEO | **3,860** | SEO |
-| 20 | reCAPTCHA | **3,715** | Security |
+| 20 | reCAPTCHA | **3,718** | Security |
 
 ### Top Technology Categories
 
 | # | Category | Pages |
 |--:|---------|------:|
-| 1 | JavaScript libraries | **69,398** |
+| 1 | JavaScript libraries | **69,405** |
 | 2 | Web servers | **39,890** |
-| 3 | Font scripts | **28,729** |
-| 4 | Programming languages | **27,483** |
-| 5 | CMS | **22,541** |
-| 6 | UI frameworks | **21,352** |
-| 7 | Databases | **12,527** |
-| 8 | CDN | **12,510** |
-| 9 | Blogs | **11,949** |
+| 3 | Font scripts | **28,744** |
+| 4 | Programming languages | **27,492** |
+| 5 | CMS | **22,548** |
+| 6 | UI frameworks | **21,355** |
+| 7 | Databases | **12,530** |
+| 8 | CDN | **12,512** |
+| 9 | Blogs | **11,952** |
 | 10 | Reverse proxies | **11,675** |
 | 11 | Operating systems | **9,889** |
-| 12 | Web frameworks | **8,036** |
-| 13 | JavaScript frameworks | **6,672** |
-| 14 | Miscellaneous | **5,183** |
-| 15 | Tag managers | **5,042** |
+| 12 | Web frameworks | **8,037** |
+| 13 | JavaScript frameworks | **6,676** |
+| 14 | Miscellaneous | **5,189** |
+| 15 | Tag managers | **5,045** |
 
 📥 Machine-readable results: [Download machine-readable technology data (JSON)](technology-data.json)
 
