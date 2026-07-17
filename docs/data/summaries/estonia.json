@@ -1,0 +1,541 @@
+{
+  "country": "Estonia",
+  "total_relationships": 1262,
+  "total_source_domains": 27,
+  "total_unique_targets": 352,
+  "gov_to_gov_pairs": 0,
+  "relationship_types": {
+    "editorial_link": 734,
+    "script_dependency": 168,
+    "stylesheet_dependency": 148,
+    "image_or_media_dependency": 119,
+    "form_destination": 76,
+    "font_or_preload_dependency": 17
+  },
+  "top_source_domains": [
+    {
+      "domain": "tartu.ee",
+      "observations": 527,
+      "unique_targets": 99,
+      "relationship_types": {
+        "editorial_link": 139,
+        "script_dependency": 43,
+        "stylesheet_dependency": 34,
+        "image_or_media_dependency": 31,
+        "form_destination": 12,
+        "font_or_preload_dependency": 6
+      }
+    },
+    {
+      "domain": "tallinn.ee",
+      "observations": 298,
+      "unique_targets": 51,
+      "relationship_types": {
+        "editorial_link": 64,
+        "script_dependency": 26,
+        "stylesheet_dependency": 23,
+        "image_or_media_dependency": 20,
+        "form_destination": 9,
+        "font_or_preload_dependency": 6
+      }
+    },
+    {
+      "domain": "parnu.ee",
+      "observations": 206,
+      "unique_targets": 45,
+      "relationship_types": {
+        "editorial_link": 56,
+        "script_dependency": 18,
+        "stylesheet_dependency": 17,
+        "image_or_media_dependency": 13,
+        "form_destination": 9,
+        "font_or_preload_dependency": 1
+      }
+    },
+    {
+      "domain": "agri.ee",
+      "observations": 193,
+      "unique_targets": 42,
+      "relationship_types": {
+        "editorial_link": 55,
+        "script_dependency": 12,
+        "stylesheet_dependency": 10,
+        "image_or_media_dependency": 6,
+        "form_destination": 4
+      }
+    },
+    {
+      "domain": "kul.ee",
+      "observations": 131,
+      "unique_targets": 30,
+      "relationship_types": {
+        "editorial_link": 33,
+        "script_dependency": 3,
+        "stylesheet_dependency": 3,
+        "image_or_media_dependency": 3,
+        "form_destination": 2
+      }
+    },
+    {
+      "domain": "sm.ee",
+      "observations": 115,
+      "unique_targets": 40,
+      "relationship_types": {
+        "editorial_link": 46,
+        "script_dependency": 4,
+        "stylesheet_dependency": 4,
+        "image_or_media_dependency": 4,
+        "form_destination": 3
+      }
+    },
+    {
+      "domain": "stat.ee",
+      "observations": 114,
+      "unique_targets": 20,
+      "relationship_types": {
+        "editorial_link": 29,
+        "script_dependency": 9,
+        "stylesheet_dependency": 8,
+        "image_or_media_dependency": 8,
+        "form_destination": 7
+      }
+    },
+    {
+      "domain": "ria.ee",
+      "observations": 106,
+      "unique_targets": 15,
+      "relationship_types": {
+        "editorial_link": 21,
+        "script_dependency": 5,
+        "stylesheet_dependency": 5,
+        "image_or_media_dependency": 3,
+        "form_destination": 2
+      }
+    },
+    {
+      "domain": "vm.ee",
+      "observations": 105,
+      "unique_targets": 19,
+      "relationship_types": {
+        "editorial_link": 22,
+        "script_dependency": 6,
+        "stylesheet_dependency": 5,
+        "image_or_media_dependency": 3,
+        "form_destination": 3,
+        "font_or_preload_dependency": 1
+      }
+    },
+    {
+      "domain": "mkm.ee",
+      "observations": 94,
+      "unique_targets": 22,
+      "relationship_types": {
+        "editorial_link": 25,
+        "script_dependency": 3,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 2,
+        "form_destination": 2
+      }
+    },
+    {
+      "domain": "valitsus.ee",
+      "observations": 89,
+      "unique_targets": 24,
+      "relationship_types": {
+        "editorial_link": 29,
+        "script_dependency": 2,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 2,
+        "form_destination": 2
+      }
+    },
+    {
+      "domain": "kliimaministeerium.ee",
+      "observations": 78,
+      "unique_targets": 19,
+      "relationship_types": {
+        "editorial_link": 23,
+        "script_dependency": 2,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 2,
+        "form_destination": 2
+      }
+    },
+    {
+      "domain": "riigikogu.ee",
+      "observations": 76,
+      "unique_targets": 13,
+      "relationship_types": {
+        "editorial_link": 18,
+        "script_dependency": 4,
+        "stylesheet_dependency": 3,
+        "image_or_media_dependency": 2,
+        "form_destination": 2
+      }
+    },
+    {
+      "domain": "hm.ee",
+      "observations": 72,
+      "unique_targets": 15,
+      "relationship_types": {
+        "editorial_link": 20,
+        "script_dependency": 4,
+        "stylesheet_dependency": 4,
+        "image_or_media_dependency": 2,
+        "form_destination": 3
+      }
+    },
+    {
+      "domain": "riigikantselei.ee",
+      "observations": 61,
+      "unique_targets": 12,
+      "relationship_types": {
+        "editorial_link": 17,
+        "script_dependency": 2,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 2,
+        "form_destination": 2
+      }
+    },
+    {
+      "domain": "viljandi.ee",
+      "observations": 60,
+      "unique_targets": 15,
+      "relationship_types": {
+        "editorial_link": 14,
+        "script_dependency": 6,
+        "stylesheet_dependency": 5,
+        "image_or_media_dependency": 3,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "kaitseministeerium.ee",
+      "observations": 57,
+      "unique_targets": 20,
+      "relationship_types": {
+        "editorial_link": 23,
+        "script_dependency": 2,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 2,
+        "form_destination": 2
+      }
+    },
+    {
+      "domain": "narva.ee",
+      "observations": 43,
+      "unique_targets": 30,
+      "relationship_types": {
+        "script_dependency": 2,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 2,
+        "form_destination": 2,
+        "editorial_link": 35
+      }
+    },
+    {
+      "domain": "rakvere.ee",
+      "observations": 39,
+      "unique_targets": 16,
+      "relationship_types": {
+        "editorial_link": 16,
+        "script_dependency": 1,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "riigikohus.ee",
+      "observations": 37,
+      "unique_targets": 6,
+      "relationship_types": {
+        "editorial_link": 5,
+        "script_dependency": 4,
+        "stylesheet_dependency": 3,
+        "image_or_media_dependency": 2,
+        "form_destination": 2
+      }
+    },
+    {
+      "domain": "fin.ee",
+      "observations": 30,
+      "unique_targets": 10,
+      "relationship_types": {
+        "editorial_link": 11,
+        "script_dependency": 2,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 2,
+        "form_destination": 2
+      }
+    },
+    {
+      "domain": "siseministeerium.ee",
+      "observations": 26,
+      "unique_targets": 19,
+      "relationship_types": {
+        "editorial_link": 21,
+        "script_dependency": 1,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 2,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "eesti.ee",
+      "observations": 16,
+      "unique_targets": 3,
+      "relationship_types": {
+        "script_dependency": 3,
+        "font_or_preload_dependency": 1,
+        "stylesheet_dependency": 2
+      }
+    },
+    {
+      "domain": "just.ee",
+      "observations": 13,
+      "unique_targets": 9,
+      "relationship_types": {
+        "editorial_link": 8,
+        "script_dependency": 1,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "tehik.ee",
+      "observations": 8,
+      "unique_targets": 4,
+      "relationship_types": {
+        "editorial_link": 4,
+        "script_dependency": 1,
+        "stylesheet_dependency": 1,
+        "font_or_preload_dependency": 1,
+        "image_or_media_dependency": 1
+      }
+    },
+    {
+      "domain": "riigiteataja.ee",
+      "observations": 6,
+      "unique_targets": 2,
+      "relationship_types": {
+        "script_dependency": 1,
+        "font_or_preload_dependency": 1,
+        "stylesheet_dependency": 1
+      }
+    },
+    {
+      "domain": "riigihanked.riik.ee",
+      "observations": 3,
+      "unique_targets": 2,
+      "relationship_types": {
+        "script_dependency": 1,
+        "stylesheet_dependency": 2
+      }
+    }
+  ],
+  "top_targets": [
+    {
+      "domain": "tartu.ee",
+      "observations": 246
+    },
+    {
+      "domain": "tallinn.ee",
+      "observations": 178
+    },
+    {
+      "domain": "facebook.com",
+      "observations": 123
+    },
+    {
+      "domain": "parnu.ee",
+      "observations": 100
+    },
+    {
+      "domain": "stat.ee",
+      "observations": 88
+    },
+    {
+      "domain": "agri.ee",
+      "observations": 79
+    },
+    {
+      "domain": "youtube.com",
+      "observations": 73
+    },
+    {
+      "domain": "vm.ee",
+      "observations": 63
+    },
+    {
+      "domain": "sm.ee",
+      "observations": 56
+    },
+    {
+      "domain": "instagram.com",
+      "observations": 55
+    },
+    {
+      "domain": "googleapis.com",
+      "observations": 54
+    },
+    {
+      "domain": "valitsus.ee",
+      "observations": 50
+    },
+    {
+      "domain": "riigikantselei.ee",
+      "observations": 45
+    },
+    {
+      "domain": "linkedin.com",
+      "observations": 42
+    },
+    {
+      "domain": "kul.ee",
+      "observations": 42
+    },
+    {
+      "domain": "ria.ee",
+      "observations": 42
+    },
+    {
+      "domain": "eesti.ee",
+      "observations": 41
+    },
+    {
+      "domain": "riigikogu.ee",
+      "observations": 41
+    },
+    {
+      "domain": "flickr.com",
+      "observations": 39
+    },
+    {
+      "domain": "hm.ee",
+      "observations": 38
+    },
+    {
+      "domain": "twitter.com",
+      "observations": 35
+    },
+    {
+      "domain": "googletagmanager.com",
+      "observations": 33
+    },
+    {
+      "domain": "mkm.ee",
+      "observations": 33
+    },
+    {
+      "domain": "kliimaministeerium.ee",
+      "observations": 29
+    },
+    {
+      "domain": "kaitseministeerium.ee",
+      "observations": 28
+    },
+    {
+      "domain": "kriis.ee",
+      "observations": 27
+    },
+    {
+      "domain": "viljandi.ee",
+      "observations": 27
+    },
+    {
+      "domain": "riigikohus.ee",
+      "observations": 24
+    },
+    {
+      "domain": "fin.ee",
+      "observations": 22
+    },
+    {
+      "domain": "riigiteataja.ee",
+      "observations": 19
+    },
+    {
+      "domain": "siseministeerium.ee",
+      "observations": 18
+    },
+    {
+      "domain": "ope.ee",
+      "observations": 17
+    },
+    {
+      "domain": "cloudflare.com",
+      "observations": 16
+    },
+    {
+      "domain": "google.com",
+      "observations": 15
+    },
+    {
+      "domain": "jsdelivr.net",
+      "observations": 14
+    },
+    {
+      "domain": "gstatic.com",
+      "observations": 12
+    },
+    {
+      "domain": "just.ee",
+      "observations": 12
+    },
+    {
+      "domain": "narva.ee",
+      "observations": 11
+    },
+    {
+      "domain": "addtoany.com",
+      "observations": 10
+    },
+    {
+      "domain": "plausible.io",
+      "observations": 10
+    },
+    {
+      "domain": "rakvere.ee",
+      "observations": 10
+    },
+    {
+      "domain": "id.ee",
+      "observations": 9
+    },
+    {
+      "domain": "envir.ee",
+      "observations": 9
+    },
+    {
+      "domain": "blogspot.com",
+      "observations": 9
+    },
+    {
+      "domain": "europa.eu",
+      "observations": 8
+    },
+    {
+      "domain": "edupage.org",
+      "observations": 8
+    },
+    {
+      "domain": "politsei.ee",
+      "observations": 7
+    },
+    {
+      "domain": "justdigi.ee",
+      "observations": 7
+    },
+    {
+      "domain": "itvaatlik.ee",
+      "observations": 7
+    },
+    {
+      "domain": "fontawesome.com",
+      "observations": 7
+    }
+  ],
+  "gov_to_gov_links": []
+}

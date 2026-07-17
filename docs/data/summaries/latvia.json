@@ -1,0 +1,1449 @@
+{
+  "country": "Latvia",
+  "total_relationships": 1545,
+  "total_source_domains": 90,
+  "total_unique_targets": 331,
+  "gov_to_gov_pairs": 120,
+  "relationship_types": {
+    "editorial_link": 880,
+    "script_dependency": 201,
+    "font_or_preload_dependency": 66,
+    "stylesheet_dependency": 177,
+    "image_or_media_dependency": 137,
+    "form_destination": 84
+  },
+  "top_source_domains": [
+    {
+      "domain": "riga.lv",
+      "observations": 181,
+      "unique_targets": 47,
+      "relationship_types": {
+        "editorial_link": 73,
+        "script_dependency": 21,
+        "stylesheet_dependency": 18,
+        "image_or_media_dependency": 14,
+        "form_destination": 9,
+        "font_or_preload_dependency": 2
+      }
+    },
+    {
+      "domain": "rtu.lv",
+      "observations": 149,
+      "unique_targets": 30,
+      "relationship_types": {
+        "editorial_link": 44,
+        "script_dependency": 17,
+        "stylesheet_dependency": 14,
+        "image_or_media_dependency": 13,
+        "form_destination": 2,
+        "font_or_preload_dependency": 2
+      }
+    },
+    {
+      "domain": "jelgava.lv",
+      "observations": 114,
+      "unique_targets": 54,
+      "relationship_types": {
+        "editorial_link": 58,
+        "script_dependency": 10,
+        "stylesheet_dependency": 8,
+        "image_or_media_dependency": 6,
+        "form_destination": 2
+      }
+    },
+    {
+      "domain": "daugavpils.lv",
+      "observations": 81,
+      "unique_targets": 22,
+      "relationship_types": {
+        "editorial_link": 22,
+        "script_dependency": 9,
+        "stylesheet_dependency": 7,
+        "image_or_media_dependency": 5,
+        "form_destination": 2,
+        "font_or_preload_dependency": 3
+      }
+    },
+    {
+      "domain": "liepaja.lv",
+      "observations": 77,
+      "unique_targets": 24,
+      "relationship_types": {
+        "editorial_link": 26,
+        "script_dependency": 5,
+        "stylesheet_dependency": 4,
+        "image_or_media_dependency": 4,
+        "font_or_preload_dependency": 1,
+        "form_destination": 2
+      }
+    },
+    {
+      "domain": "kem.gov.lv",
+      "observations": 42,
+      "unique_targets": 13,
+      "relationship_types": {
+        "editorial_link": 12,
+        "script_dependency": 4,
+        "font_or_preload_dependency": 1,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 3,
+        "form_destination": 2
+      }
+    },
+    {
+      "domain": "ventspils.lv",
+      "observations": 42,
+      "unique_targets": 14,
+      "relationship_types": {
+        "editorial_link": 13,
+        "script_dependency": 5,
+        "stylesheet_dependency": 3,
+        "image_or_media_dependency": 1
+      }
+    },
+    {
+      "domain": "iem.gov.lv",
+      "observations": 41,
+      "unique_targets": 10,
+      "relationship_types": {
+        "editorial_link": 13,
+        "script_dependency": 4,
+        "font_or_preload_dependency": 2,
+        "stylesheet_dependency": 3,
+        "image_or_media_dependency": 3,
+        "form_destination": 3
+      }
+    },
+    {
+      "domain": "nkc.gov.lv",
+      "observations": 39,
+      "unique_targets": 8,
+      "relationship_types": {
+        "editorial_link": 8,
+        "script_dependency": 1,
+        "font_or_preload_dependency": 1,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "rs.gov.lv",
+      "observations": 38,
+      "unique_targets": 9,
+      "relationship_types": {
+        "editorial_link": 10,
+        "script_dependency": 3,
+        "font_or_preload_dependency": 2,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 2,
+        "form_destination": 2
+      }
+    },
+    {
+      "domain": "mk.gov.lv",
+      "observations": 35,
+      "unique_targets": 12,
+      "relationship_types": {
+        "editorial_link": 17,
+        "script_dependency": 5,
+        "stylesheet_dependency": 4,
+        "image_or_media_dependency": 4,
+        "font_or_preload_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "rpr.gov.lv",
+      "observations": 35,
+      "unique_targets": 21,
+      "relationship_types": {
+        "editorial_link": 18,
+        "script_dependency": 3,
+        "stylesheet_dependency": 3,
+        "image_or_media_dependency": 1
+      }
+    },
+    {
+      "domain": "mfa.gov.lv",
+      "observations": 35,
+      "unique_targets": 12,
+      "relationship_types": {
+        "editorial_link": 13,
+        "script_dependency": 1,
+        "font_or_preload_dependency": 1,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "spkc.gov.lv",
+      "observations": 34,
+      "unique_targets": 13,
+      "relationship_types": {
+        "editorial_link": 14,
+        "script_dependency": 1,
+        "font_or_preload_dependency": 1,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "daba.gov.lv",
+      "observations": 33,
+      "unique_targets": 18,
+      "relationship_types": {
+        "editorial_link": 15,
+        "script_dependency": 5,
+        "stylesheet_dependency": 3,
+        "image_or_media_dependency": 3,
+        "form_destination": 2,
+        "font_or_preload_dependency": 1
+      }
+    },
+    {
+      "domain": "lnkc.gov.lv",
+      "observations": 32,
+      "unique_targets": 16,
+      "relationship_types": {
+        "editorial_link": 15,
+        "script_dependency": 3,
+        "stylesheet_dependency": 3,
+        "image_or_media_dependency": 2,
+        "font_or_preload_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "mod.gov.lv",
+      "observations": 31,
+      "unique_targets": 24,
+      "relationship_types": {
+        "editorial_link": 25,
+        "script_dependency": 3,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 1
+      }
+    },
+    {
+      "domain": "saeima.lv",
+      "observations": 30,
+      "unique_targets": 8,
+      "relationship_types": {
+        "editorial_link": 10,
+        "script_dependency": 3,
+        "stylesheet_dependency": 3,
+        "image_or_media_dependency": 2,
+        "form_destination": 2
+      }
+    },
+    {
+      "domain": "lrvk.gov.lv",
+      "observations": 30,
+      "unique_targets": 11,
+      "relationship_types": {
+        "editorial_link": 9,
+        "script_dependency": 3,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 1
+      }
+    },
+    {
+      "domain": "vp.gov.lv",
+      "observations": 30,
+      "unique_targets": 11,
+      "relationship_types": {
+        "editorial_link": 10,
+        "script_dependency": 2,
+        "font_or_preload_dependency": 1,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "fm.gov.lv",
+      "observations": 28,
+      "unique_targets": 8,
+      "relationship_types": {
+        "editorial_link": 9,
+        "script_dependency": 1,
+        "font_or_preload_dependency": 1,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "viaa.gov.lv",
+      "observations": 28,
+      "unique_targets": 19,
+      "relationship_types": {
+        "editorial_link": 20,
+        "script_dependency": 2,
+        "font_or_preload_dependency": 1,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 2,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "bis.gov.lv",
+      "observations": 28,
+      "unique_targets": 10,
+      "relationship_types": {
+        "editorial_link": 10,
+        "script_dependency": 1,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "kis.gov.lv",
+      "observations": 27,
+      "unique_targets": 10,
+      "relationship_types": {
+        "editorial_link": 11,
+        "script_dependency": 1,
+        "font_or_preload_dependency": 1,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "vsackurzeme.gov.lv",
+      "observations": 22,
+      "unique_targets": 6,
+      "relationship_types": {
+        "editorial_link": 5,
+        "script_dependency": 2,
+        "font_or_preload_dependency": 1,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "kase.gov.lv",
+      "observations": 22,
+      "unique_targets": 16,
+      "relationship_types": {
+        "editorial_link": 18,
+        "script_dependency": 1,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "vmd.gov.lv",
+      "observations": 22,
+      "unique_targets": 5,
+      "relationship_types": {
+        "editorial_link": 7,
+        "script_dependency": 1,
+        "font_or_preload_dependency": 1,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "zm.gov.lv",
+      "observations": 20,
+      "unique_targets": 14,
+      "relationship_types": {
+        "editorial_link": 14,
+        "script_dependency": 2,
+        "font_or_preload_dependency": 1,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "akcmv.gov.lv",
+      "observations": 20,
+      "unique_targets": 7,
+      "relationship_types": {
+        "editorial_link": 6,
+        "script_dependency": 1,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 1
+      }
+    },
+    {
+      "domain": "vtua.gov.lv",
+      "observations": 19,
+      "unique_targets": 12,
+      "relationship_types": {
+        "editorial_link": 13,
+        "script_dependency": 2,
+        "font_or_preload_dependency": 1,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "iub.gov.lv",
+      "observations": 18,
+      "unique_targets": 7,
+      "relationship_types": {
+        "script_dependency": 3,
+        "stylesheet_dependency": 3,
+        "editorial_link": 9,
+        "font_or_preload_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "vpd.gov.lv",
+      "observations": 18,
+      "unique_targets": 13,
+      "relationship_types": {
+        "editorial_link": 12,
+        "script_dependency": 2,
+        "font_or_preload_dependency": 1,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "valic.gov.lv",
+      "observations": 18,
+      "unique_targets": 14,
+      "relationship_types": {
+        "editorial_link": 14,
+        "script_dependency": 2,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1
+      }
+    },
+    {
+      "domain": "siva.gov.lv",
+      "observations": 17,
+      "unique_targets": 8,
+      "relationship_types": {
+        "editorial_link": 9,
+        "script_dependency": 1,
+        "font_or_preload_dependency": 1,
+        "stylesheet_dependency": 3,
+        "image_or_media_dependency": 2,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "izm.gov.lv",
+      "observations": 17,
+      "unique_targets": 12,
+      "relationship_types": {
+        "editorial_link": 12,
+        "script_dependency": 1,
+        "font_or_preload_dependency": 1,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "nmv.gov.lv",
+      "observations": 17,
+      "unique_targets": 13,
+      "relationship_types": {
+        "editorial_link": 12,
+        "script_dependency": 1,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "dvi.gov.lv",
+      "observations": 16,
+      "unique_targets": 3,
+      "relationship_types": {
+        "editorial_link": 4,
+        "script_dependency": 1,
+        "font_or_preload_dependency": 1,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "business.gov.lv",
+      "observations": 16,
+      "unique_targets": 11,
+      "relationship_types": {
+        "editorial_link": 9,
+        "script_dependency": 2,
+        "stylesheet_dependency": 2,
+        "font_or_preload_dependency": 2,
+        "image_or_media_dependency": 1
+      }
+    },
+    {
+      "domain": "pmlp.gov.lv",
+      "observations": 15,
+      "unique_targets": 9,
+      "relationship_types": {
+        "editorial_link": 10,
+        "script_dependency": 1,
+        "font_or_preload_dependency": 1,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "ptac.gov.lv",
+      "observations": 15,
+      "unique_targets": 9,
+      "relationship_types": {
+        "editorial_link": 10,
+        "script_dependency": 2,
+        "font_or_preload_dependency": 1,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1
+      }
+    },
+    {
+      "domain": "stars.gov.lv",
+      "observations": 15,
+      "unique_targets": 10,
+      "relationship_types": {
+        "editorial_link": 8,
+        "script_dependency": 3,
+        "stylesheet_dependency": 2,
+        "font_or_preload_dependency": 1,
+        "image_or_media_dependency": 1
+      }
+    },
+    {
+      "domain": "vaad.gov.lv",
+      "observations": 15,
+      "unique_targets": 8,
+      "relationship_types": {
+        "editorial_link": 10,
+        "script_dependency": 1,
+        "font_or_preload_dependency": 1,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "liaa.gov.lv",
+      "observations": 14,
+      "unique_targets": 9,
+      "relationship_types": {
+        "editorial_link": 9,
+        "script_dependency": 1,
+        "font_or_preload_dependency": 1,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "vadc.gov.lv",
+      "observations": 14,
+      "unique_targets": 9,
+      "relationship_types": {
+        "editorial_link": 9,
+        "script_dependency": 1,
+        "font_or_preload_dependency": 1,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "nometnes.gov.lv",
+      "observations": 14,
+      "unique_targets": 3,
+      "relationship_types": {
+        "editorial_link": 2,
+        "script_dependency": 3,
+        "stylesheet_dependency": 4,
+        "image_or_media_dependency": 2
+      }
+    },
+    {
+      "domain": "kp.gov.lv",
+      "observations": 14,
+      "unique_targets": 8,
+      "relationship_types": {
+        "editorial_link": 9,
+        "script_dependency": 1,
+        "font_or_preload_dependency": 1,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "sam.gov.lv",
+      "observations": 13,
+      "unique_targets": 8,
+      "relationship_types": {
+        "editorial_link": 8,
+        "script_dependency": 1,
+        "font_or_preload_dependency": 1,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "knab.gov.lv",
+      "observations": 13,
+      "unique_targets": 7,
+      "relationship_types": {
+        "editorial_link": 8,
+        "script_dependency": 1,
+        "font_or_preload_dependency": 1,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "bac.gov.lv",
+      "observations": 12,
+      "unique_targets": 7,
+      "relationship_types": {
+        "editorial_link": 7,
+        "script_dependency": 1,
+        "font_or_preload_dependency": 1,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "ievp.gov.lv",
+      "observations": 12,
+      "unique_targets": 7,
+      "relationship_types": {
+        "editorial_link": 7,
+        "script_dependency": 1,
+        "font_or_preload_dependency": 1,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    }
+  ],
+  "top_targets": [
+    {
+      "domain": "facebook.com",
+      "observations": 111
+    },
+    {
+      "domain": "riga.lv",
+      "observations": 97
+    },
+    {
+      "domain": "youtube.com",
+      "observations": 81
+    },
+    {
+      "domain": "rtu.lv",
+      "observations": 71
+    },
+    {
+      "domain": "latvija.gov.lv",
+      "observations": 70
+    },
+    {
+      "domain": "instagram.com",
+      "observations": 68
+    },
+    {
+      "domain": "twitter.com",
+      "observations": 67
+    },
+    {
+      "domain": "linkedin.com",
+      "observations": 51
+    },
+    {
+      "domain": "googleapis.com",
+      "observations": 48
+    },
+    {
+      "domain": "jelgava.lv",
+      "observations": 38
+    },
+    {
+      "domain": "daugavpils.lv",
+      "observations": 35
+    },
+    {
+      "domain": "flickr.com",
+      "observations": 30
+    },
+    {
+      "domain": "liepaja.lv",
+      "observations": 30
+    },
+    {
+      "domain": "jsdelivr.net",
+      "observations": 28
+    },
+    {
+      "domain": "googletagmanager.com",
+      "observations": 28
+    },
+    {
+      "domain": "google.com",
+      "observations": 27
+    },
+    {
+      "domain": "iem.gov.lv",
+      "observations": 25
+    },
+    {
+      "domain": "mk.gov.lv",
+      "observations": 23
+    },
+    {
+      "domain": "rs.gov.lv",
+      "observations": 21
+    },
+    {
+      "domain": "nkc.gov.lv",
+      "observations": 18
+    },
+    {
+      "domain": "kem.gov.lv",
+      "observations": 16
+    },
+    {
+      "domain": "x.com",
+      "observations": 15
+    },
+    {
+      "domain": "saeima.lv",
+      "observations": 14
+    },
+    {
+      "domain": "fm.gov.lv",
+      "observations": 14
+    },
+    {
+      "domain": "latvija.lv",
+      "observations": 14
+    },
+    {
+      "domain": "spkc.gov.lv",
+      "observations": 14
+    },
+    {
+      "domain": "ventspils.lv",
+      "observations": 14
+    },
+    {
+      "domain": "mfa.gov.lv",
+      "observations": 14
+    },
+    {
+      "domain": "vmd.gov.lv",
+      "observations": 14
+    },
+    {
+      "domain": "dvi.gov.lv",
+      "observations": 13
+    },
+    {
+      "domain": "iub.gov.lv",
+      "observations": 13
+    },
+    {
+      "domain": "kis.gov.lv",
+      "observations": 13
+    },
+    {
+      "domain": "likumi.lv",
+      "observations": 12
+    },
+    {
+      "domain": "daba.gov.lv",
+      "observations": 12
+    },
+    {
+      "domain": "vsackurzeme.gov.lv",
+      "observations": 12
+    },
+    {
+      "domain": "viaa.gov.lv",
+      "observations": 12
+    },
+    {
+      "domain": "vp.gov.lv",
+      "observations": 12
+    },
+    {
+      "domain": "lrvk.gov.lv",
+      "observations": 11
+    },
+    {
+      "domain": "cloudflare.com",
+      "observations": 11
+    },
+    {
+      "domain": "nbd.gov.lv",
+      "observations": 11
+    },
+    {
+      "domain": "knab.gov.lv",
+      "observations": 10
+    },
+    {
+      "domain": "tiktok.com",
+      "observations": 10
+    },
+    {
+      "domain": "data.gov.lv",
+      "observations": 10
+    },
+    {
+      "domain": "lnkc.gov.lv",
+      "observations": 10
+    },
+    {
+      "domain": "izm.gov.lv",
+      "observations": 10
+    },
+    {
+      "domain": "bis.gov.lv",
+      "observations": 10
+    },
+    {
+      "domain": "siva.gov.lv",
+      "observations": 10
+    },
+    {
+      "domain": "draugiem.lv",
+      "observations": 9
+    },
+    {
+      "domain": "zm.gov.lv",
+      "observations": 9
+    },
+    {
+      "domain": "vugd.gov.lv",
+      "observations": 8
+    }
+  ],
+  "gov_to_gov_links": [
+    {
+      "source": "nkc.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "bac.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "bac.gov.lv",
+      "target": "lrvk.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "rs.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "vugd.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "daba.gov.lv",
+      "target": "ozols.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "liaa.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "liaa.gov.lv",
+      "target": "business.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "fm.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "vid.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "mkd.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "dvi.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "vadc.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "vadc.gov.lv",
+      "target": "pmlp.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "vadc.gov.lv",
+      "target": "vi.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "pmlp.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "spkc.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "vsackurzeme.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "vtua.gov.lv",
+      "target": "zm.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "vtua.gov.lv",
+      "target": "data.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "vtua.gov.lv",
+      "target": "llm.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "vtua.gov.lv",
+      "target": "piksas.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "vtua.gov.lv",
+      "target": "lad.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "vtua.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "ptac.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "viaa.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "kem.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "ievp.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "lmmv.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "vm.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "ikvd.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "ikvd.gov.lv",
+      "target": "izm.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "zm.gov.lv",
+      "target": "europa.eu",
+      "target_country": "EU Institutions",
+      "cross_country": true
+    },
+    {
+      "source": "zm.gov.lv",
+      "target": "pvd.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "zm.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "vp.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "vp.gov.lv",
+      "target": "iem.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "bis.gov.lv",
+      "target": "bvkb.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "bis.gov.lv",
+      "target": "em.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "vdzti.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "spkc.gov.lv",
+      "target": "vmnvd.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "vpd.gov.lv",
+      "target": "eis.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "vpd.gov.lv",
+      "target": "data.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "vpd.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "lrpv.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "ugf.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "ldc.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "lvarhivs.gov.lv",
+      "target": "arhivi.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "business.gov.lv",
+      "target": "liaa.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "lnkc.gov.lv",
+      "target": "iub.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "lnkc.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "iem.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "nkmp.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "siva.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "kis.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "ozols.gov.lv",
+      "target": "daba.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "ozols.gov.lv",
+      "target": "data.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "eksameni.gov.lv",
+      "target": "viaa.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "eksameni.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "mk.gov.lv",
+      "target": "vas.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "mk.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "daba.gov.lv",
+      "target": "varam.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "daba.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "daba.gov.lv",
+      "target": "nbd.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "stars.gov.lv",
+      "target": "viaa.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "termini.gov.lv",
+      "target": "vvc.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "termini.gov.lv",
+      "target": "kis.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "valic.gov.lv",
+      "target": "eis.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "valic.gov.lv",
+      "target": "mod.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "valic.gov.lv",
+      "target": "vamoic.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "valic.gov.lv",
+      "target": "lgia.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "valic.gov.lv",
+      "target": "jc.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "valic.gov.lv",
+      "target": "www.mil.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "valic.gov.lv",
+      "target": "naa.mil.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "valic.gov.lv",
+      "target": "zs.mil.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "iem.gov.lv",
+      "target": "eis.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "izm.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "rpr.gov.lv",
+      "target": "militaryheritagetourism.info",
+      "target_country": "Unknown",
+      "cross_country": true
+    },
+    {
+      "source": "sam.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "tm.gov.lv",
+      "target": "data.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "tm.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "vmnvd.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "vmnvd.gov.lv",
+      "target": "eveseliba.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "kem.gov.lv",
+      "target": "europa.eu",
+      "target_country": "EU Institutions",
+      "cross_country": true
+    },
+    {
+      "source": "kem.gov.lv",
+      "target": "vraa.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "kem.gov.lv",
+      "target": "varam.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "data.gov.lv",
+      "target": "mk.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "data.gov.lv",
+      "target": "europa.eu",
+      "target_country": "EU Institutions",
+      "cross_country": true
+    },
+    {
+      "source": "data.gov.lv",
+      "target": "vdaa.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "data.gov.lv",
+      "target": "varam.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "iub.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "iub.gov.lv",
+      "target": "eis.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "kase.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "kase.gov.lv",
+      "target": "mazaksslogs.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "kase.gov.lv",
+      "target": "europa.eu",
+      "target_country": "EU Institutions",
+      "cross_country": true
+    },
+    {
+      "source": "mfa.gov.lv",
+      "target": "rs.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "mfa.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "vsaczemgale.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "vmd.gov.lv",
+      "target": "latvija.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    },
+    {
+      "source": "ta.gov.lv",
+      "target": "tm.gov.lv",
+      "target_country": "Latvia",
+      "cross_country": false
+    }
+  ]
+}

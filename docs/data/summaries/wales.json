@@ -1,0 +1,120 @@
+{
+  "country": "Wales",
+  "total_relationships": 48,
+  "total_source_domains": 2,
+  "total_unique_targets": 19,
+  "gov_to_gov_pairs": 0,
+  "relationship_types": {
+    "editorial_link": 20,
+    "script_dependency": 11,
+    "stylesheet_dependency": 8,
+    "image_or_media_dependency": 4,
+    "form_destination": 3,
+    "font_or_preload_dependency": 2
+  },
+  "top_source_domains": [
+    {
+      "domain": "llyw.cymru",
+      "observations": 41,
+      "unique_targets": 16,
+      "relationship_types": {
+        "editorial_link": 15,
+        "script_dependency": 9,
+        "stylesheet_dependency": 7,
+        "image_or_media_dependency": 4,
+        "form_destination": 2,
+        "font_or_preload_dependency": 2
+      }
+    },
+    {
+      "domain": "senedd.cymru",
+      "observations": 9,
+      "unique_targets": 4,
+      "relationship_types": {
+        "editorial_link": 5,
+        "script_dependency": 2,
+        "stylesheet_dependency": 1,
+        "form_destination": 1
+      }
+    }
+  ],
+  "top_targets": [
+    {
+      "domain": "llyw.cymru",
+      "observations": 21
+    },
+    {
+      "domain": "senedd.cymru",
+      "observations": 5
+    },
+    {
+      "domain": "facebook.com",
+      "observations": 3
+    },
+    {
+      "domain": "googleapis.com",
+      "observations": 3
+    },
+    {
+      "domain": "senedd.wales",
+      "observations": 2
+    },
+    {
+      "domain": "civiccomputing.com",
+      "observations": 2
+    },
+    {
+      "domain": "gov.wales",
+      "observations": 2
+    },
+    {
+      "domain": "bsky.app",
+      "observations": 1
+    },
+    {
+      "domain": "nationalarchives.gov.uk",
+      "observations": 1
+    },
+    {
+      "domain": "x.com",
+      "observations": 1
+    },
+    {
+      "domain": "linkedin.com",
+      "observations": 1
+    },
+    {
+      "domain": "instagram.com",
+      "observations": 1
+    },
+    {
+      "domain": "tiktok.com",
+      "observations": 1
+    },
+    {
+      "domain": "fontawesome.com",
+      "observations": 1
+    },
+    {
+      "domain": "addtoany.com",
+      "observations": 1
+    },
+    {
+      "domain": "google.com",
+      "observations": 1
+    },
+    {
+      "domain": "typekit.net",
+      "observations": 1
+    },
+    {
+      "domain": "gstatic.com",
+      "observations": 1
+    },
+    {
+      "domain": "unpkg.com",
+      "observations": 1
+    }
+  ],
+  "gov_to_gov_links": []
+}

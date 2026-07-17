@@ -1,0 +1,65 @@
+{
+  "country": "Scotland",
+  "total_relationships": 17,
+  "total_source_domains": 1,
+  "total_unique_targets": 9,
+  "gov_to_gov_pairs": 0,
+  "relationship_types": {
+    "editorial_link": 11,
+    "script_dependency": 2,
+    "image_or_media_dependency": 2,
+    "form_destination": 2
+  },
+  "top_source_domains": [
+    {
+      "domain": "gov.scot",
+      "observations": 19,
+      "unique_targets": 9,
+      "relationship_types": {
+        "editorial_link": 11,
+        "script_dependency": 2,
+        "image_or_media_dependency": 2,
+        "form_destination": 2
+      }
+    }
+  ],
+  "top_targets": [
+    {
+      "domain": "gov.scot",
+      "observations": 9
+    },
+    {
+      "domain": "instagram.com",
+      "observations": 2
+    },
+    {
+      "domain": "linkedin.com",
+      "observations": 2
+    },
+    {
+      "domain": "ruralpayments.org",
+      "observations": 1
+    },
+    {
+      "domain": "x.com",
+      "observations": 1
+    },
+    {
+      "domain": "facebook.com",
+      "observations": 1
+    },
+    {
+      "domain": "twitter.com",
+      "observations": 1
+    },
+    {
+      "domain": "youtube.com",
+      "observations": 1
+    },
+    {
+      "domain": "threads.com",
+      "observations": 1
+    }
+  ],
+  "gov_to_gov_links": []
+}

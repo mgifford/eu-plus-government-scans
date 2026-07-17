@@ -12,11 +12,13 @@ theme: minima
 header_pages:
   - index.md
   - scan-progress.md
+  - domains.md
   - social-media.md
   - accessibility-statements.md
   - technology-scanning.md
   - third-party-tools.md
-  - domains.md
+  - lighthouse-scanning.md
+  - lighthouse-results.md
   - network.html
   - api.md
 

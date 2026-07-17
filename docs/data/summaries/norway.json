@@ -1,0 +1,535 @@
+{
+  "country": "Norway",
+  "total_relationships": 778,
+  "total_source_domains": 24,
+  "total_unique_targets": 158,
+  "gov_to_gov_pairs": 3,
+  "relationship_types": {
+    "editorial_link": 315,
+    "script_dependency": 177,
+    "stylesheet_dependency": 137,
+    "image_or_media_dependency": 69,
+    "form_destination": 41,
+    "font_or_preload_dependency": 39
+  },
+  "top_source_domains": [
+    {
+      "domain": "miljodirektoratet.no",
+      "observations": 205,
+      "unique_targets": 27,
+      "relationship_types": {
+        "editorial_link": 34,
+        "script_dependency": 16,
+        "stylesheet_dependency": 15,
+        "image_or_media_dependency": 7,
+        "form_destination": 5,
+        "font_or_preload_dependency": 8
+      }
+    },
+    {
+      "domain": "udir.no",
+      "observations": 179,
+      "unique_targets": 14,
+      "relationship_types": {
+        "editorial_link": 20,
+        "script_dependency": 23,
+        "stylesheet_dependency": 21,
+        "image_or_media_dependency": 7,
+        "form_destination": 4,
+        "font_or_preload_dependency": 3
+      }
+    },
+    {
+      "domain": "lovdata.no",
+      "observations": 163,
+      "unique_targets": 20,
+      "relationship_types": {
+        "editorial_link": 22,
+        "script_dependency": 11,
+        "image_or_media_dependency": 6,
+        "stylesheet_dependency": 7,
+        "form_destination": 4
+      }
+    },
+    {
+      "domain": "nve.no",
+      "observations": 158,
+      "unique_targets": 30,
+      "relationship_types": {
+        "editorial_link": 25,
+        "script_dependency": 20,
+        "stylesheet_dependency": 15,
+        "font_or_preload_dependency": 5,
+        "image_or_media_dependency": 2,
+        "form_destination": 3
+      }
+    },
+    {
+      "domain": "vegvesen.no",
+      "observations": 125,
+      "unique_targets": 17,
+      "relationship_types": {
+        "editorial_link": 21,
+        "script_dependency": 19,
+        "stylesheet_dependency": 16,
+        "image_or_media_dependency": 8,
+        "form_destination": 3,
+        "font_or_preload_dependency": 1
+      }
+    },
+    {
+      "domain": "arbeidstilsynet.no",
+      "observations": 105,
+      "unique_targets": 11,
+      "relationship_types": {
+        "editorial_link": 12,
+        "script_dependency": 8,
+        "stylesheet_dependency": 3,
+        "image_or_media_dependency": 3,
+        "form_destination": 3
+      }
+    },
+    {
+      "domain": "brreg.no",
+      "observations": 95,
+      "unique_targets": 4,
+      "relationship_types": {
+        "editorial_link": 11,
+        "script_dependency": 4,
+        "font_or_preload_dependency": 3,
+        "stylesheet_dependency": 4,
+        "image_or_media_dependency": 3,
+        "form_destination": 3
+      }
+    },
+    {
+      "domain": "stortinget.no",
+      "observations": 87,
+      "unique_targets": 7,
+      "relationship_types": {
+        "editorial_link": 10,
+        "script_dependency": 4,
+        "stylesheet_dependency": 3,
+        "image_or_media_dependency": 3
+      }
+    },
+    {
+      "domain": "skatteetaten.no",
+      "observations": 82,
+      "unique_targets": 15,
+      "relationship_types": {
+        "script_dependency": 10,
+        "stylesheet_dependency": 5,
+        "editorial_link": 11,
+        "font_or_preload_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "kystverket.no",
+      "observations": 81,
+      "unique_targets": 17,
+      "relationship_types": {
+        "script_dependency": 6,
+        "font_or_preload_dependency": 1,
+        "stylesheet_dependency": 7,
+        "editorial_link": 20,
+        "image_or_media_dependency": 3,
+        "form_destination": 3
+      }
+    },
+    {
+      "domain": "nav.no",
+      "observations": 67,
+      "unique_targets": 12,
+      "relationship_types": {
+        "editorial_link": 17,
+        "script_dependency": 3,
+        "stylesheet_dependency": 3,
+        "font_or_preload_dependency": 3,
+        "image_or_media_dependency": 4
+      }
+    },
+    {
+      "domain": "ssb.no",
+      "observations": 64,
+      "unique_targets": 15,
+      "relationship_types": {
+        "editorial_link": 20,
+        "script_dependency": 3,
+        "stylesheet_dependency": 3,
+        "image_or_media_dependency": 2,
+        "font_or_preload_dependency": 1
+      }
+    },
+    {
+      "domain": "fhi.no",
+      "observations": 63,
+      "unique_targets": 12,
+      "relationship_types": {
+        "script_dependency": 6,
+        "stylesheet_dependency": 4,
+        "editorial_link": 13,
+        "image_or_media_dependency": 4,
+        "form_destination": 2,
+        "font_or_preload_dependency": 1
+      }
+    },
+    {
+      "domain": "bufdir.no",
+      "observations": 55,
+      "unique_targets": 7,
+      "relationship_types": {
+        "editorial_link": 5,
+        "script_dependency": 6,
+        "stylesheet_dependency": 3,
+        "image_or_media_dependency": 2,
+        "form_destination": 1,
+        "font_or_preload_dependency": 3
+      }
+    },
+    {
+      "domain": "forsvaret.no",
+      "observations": 55,
+      "unique_targets": 9,
+      "relationship_types": {
+        "editorial_link": 14,
+        "script_dependency": 5,
+        "font_or_preload_dependency": 2,
+        "stylesheet_dependency": 3,
+        "image_or_media_dependency": 3,
+        "form_destination": 3
+      }
+    },
+    {
+      "domain": "dsa.no",
+      "observations": 47,
+      "unique_targets": 9,
+      "relationship_types": {
+        "editorial_link": 11,
+        "script_dependency": 3,
+        "stylesheet_dependency": 1,
+        "form_destination": 1,
+        "image_or_media_dependency": 1
+      }
+    },
+    {
+      "domain": "mattilsynet.no",
+      "observations": 43,
+      "unique_targets": 5,
+      "relationship_types": {
+        "script_dependency": 3,
+        "stylesheet_dependency": 5,
+        "editorial_link": 8,
+        "font_or_preload_dependency": 1,
+        "image_or_media_dependency": 2
+      }
+    },
+    {
+      "domain": "altinn.no",
+      "observations": 40,
+      "unique_targets": 3,
+      "relationship_types": {
+        "editorial_link": 8,
+        "script_dependency": 2,
+        "stylesheet_dependency": 3,
+        "image_or_media_dependency": 3
+      }
+    },
+    {
+      "domain": "udi.no",
+      "observations": 40,
+      "unique_targets": 11,
+      "relationship_types": {
+        "editorial_link": 11,
+        "script_dependency": 3,
+        "stylesheet_dependency": 3,
+        "image_or_media_dependency": 2,
+        "form_destination": 2
+      }
+    },
+    {
+      "domain": "nupi.no",
+      "observations": 38,
+      "unique_targets": 16,
+      "relationship_types": {
+        "editorial_link": 9,
+        "script_dependency": 6,
+        "stylesheet_dependency": 3,
+        "font_or_preload_dependency": 2,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "nkom.no",
+      "observations": 35,
+      "unique_targets": 8,
+      "relationship_types": {
+        "editorial_link": 3,
+        "script_dependency": 8,
+        "font_or_preload_dependency": 1,
+        "stylesheet_dependency": 5,
+        "form_destination": 1,
+        "image_or_media_dependency": 1
+      }
+    },
+    {
+      "domain": "norges-bank.no",
+      "observations": 31,
+      "unique_targets": 6,
+      "relationship_types": {
+        "editorial_link": 5,
+        "script_dependency": 3,
+        "font_or_preload_dependency": 1,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1
+      }
+    },
+    {
+      "domain": "helsenorge.no",
+      "observations": 23,
+      "unique_targets": 1,
+      "relationship_types": {
+        "editorial_link": 2,
+        "script_dependency": 2,
+        "font_or_preload_dependency": 2,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 1
+      }
+    },
+    {
+      "domain": "regjeringen.no",
+      "observations": 16,
+      "unique_targets": 2,
+      "relationship_types": {
+        "editorial_link": 3,
+        "script_dependency": 3,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    }
+  ],
+  "top_targets": [
+    {
+      "domain": "udir.no",
+      "observations": 123
+    },
+    {
+      "domain": "miljodirektoratet.no",
+      "observations": 122
+    },
+    {
+      "domain": "lovdata.no",
+      "observations": 95
+    },
+    {
+      "domain": "vegvesen.no",
+      "observations": 90
+    },
+    {
+      "domain": "brreg.no",
+      "observations": 90
+    },
+    {
+      "domain": "nve.no",
+      "observations": 74
+    },
+    {
+      "domain": "googleapis.com",
+      "observations": 62
+    },
+    {
+      "domain": "uustatus.no",
+      "observations": 60
+    },
+    {
+      "domain": "stortinget.no",
+      "observations": 55
+    },
+    {
+      "domain": "arbeidstilsynet.no",
+      "observations": 53
+    },
+    {
+      "domain": "linkedin.com",
+      "observations": 49
+    },
+    {
+      "domain": "nav.no",
+      "observations": 47
+    },
+    {
+      "domain": "fhi.no",
+      "observations": 40
+    },
+    {
+      "domain": "facebook.com",
+      "observations": 38
+    },
+    {
+      "domain": "ssb.no",
+      "observations": 38
+    },
+    {
+      "domain": "kystverket.no",
+      "observations": 37
+    },
+    {
+      "domain": "forsvaret.no",
+      "observations": 36
+    },
+    {
+      "domain": "bufdir.no",
+      "observations": 35
+    },
+    {
+      "domain": "skatteetaten.no",
+      "observations": 35
+    },
+    {
+      "domain": "mattilsynet.no",
+      "observations": 33
+    },
+    {
+      "domain": "plausible.io",
+      "observations": 31
+    },
+    {
+      "domain": "instagram.com",
+      "observations": 31
+    },
+    {
+      "domain": "google.com",
+      "observations": 29
+    },
+    {
+      "domain": "altinn.no",
+      "observations": 28
+    },
+    {
+      "domain": "dsa.no",
+      "observations": 25
+    },
+    {
+      "domain": "cookieinformation.com",
+      "observations": 23
+    },
+    {
+      "domain": "siteimproveanalytics.com",
+      "observations": 23
+    },
+    {
+      "domain": "helsenorge.no",
+      "observations": 23
+    },
+    {
+      "domain": "udi.no",
+      "observations": 22
+    },
+    {
+      "domain": "nkom.no",
+      "observations": 20
+    },
+    {
+      "domain": "jsdelivr.net",
+      "observations": 19
+    },
+    {
+      "domain": "norges-bank.no",
+      "observations": 18
+    },
+    {
+      "domain": "regjeringen.no",
+      "observations": 18
+    },
+    {
+      "domain": "cloudflare.com",
+      "observations": 17
+    },
+    {
+      "domain": "youtube.com",
+      "observations": 16
+    },
+    {
+      "domain": "x.com",
+      "observations": 13
+    },
+    {
+      "domain": "gstatic.com",
+      "observations": 11
+    },
+    {
+      "domain": "cloudfront.net",
+      "observations": 10
+    },
+    {
+      "domain": "altinncdn.no",
+      "observations": 10
+    },
+    {
+      "domain": "skyra.no",
+      "observations": 10
+    },
+    {
+      "domain": "ckan.org",
+      "observations": 9
+    },
+    {
+      "domain": "twitter.com",
+      "observations": 8
+    },
+    {
+      "domain": "github.com",
+      "observations": 8
+    },
+    {
+      "domain": "nupi.no",
+      "observations": 8
+    },
+    {
+      "domain": "googletagmanager.com",
+      "observations": 8
+    },
+    {
+      "domain": "europalov.no",
+      "observations": 7
+    },
+    {
+      "domain": "unpkg.com",
+      "observations": 6
+    },
+    {
+      "domain": "norge.no",
+      "observations": 6
+    },
+    {
+      "domain": "usefathom.com",
+      "observations": 6
+    },
+    {
+      "domain": "typekit.net",
+      "observations": 6
+    }
+  ],
+  "gov_to_gov_links": [
+    {
+      "source": "vegvesen.no",
+      "target": "uustatus.no",
+      "target_country": "Norway",
+      "cross_country": false
+    },
+    {
+      "source": "miljodirektoratet.no",
+      "target": "uustatus.no",
+      "target_country": "Norway",
+      "cross_country": false
+    },
+    {
+      "source": "miljodirektoratet.no",
+      "target": "xn--miljdirektoratet-oxb.no",
+      "target_country": "Norway",
+      "cross_country": false
+    }
+  ]
+}

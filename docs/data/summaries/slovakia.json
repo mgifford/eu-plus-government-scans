@@ -1,0 +1,422 @@
+{
+  "country": "Slovakia",
+  "total_relationships": 1236,
+  "total_source_domains": 14,
+  "total_unique_targets": 334,
+  "gov_to_gov_pairs": 4,
+  "relationship_types": {
+    "editorial_link": 640,
+    "script_dependency": 193,
+    "stylesheet_dependency": 155,
+    "font_or_preload_dependency": 35,
+    "image_or_media_dependency": 125,
+    "form_destination": 88
+  },
+  "top_source_domains": [
+    {
+      "domain": "gov.sk",
+      "observations": 1615,
+      "unique_targets": 168,
+      "relationship_types": {
+        "editorial_link": 298,
+        "script_dependency": 97,
+        "stylesheet_dependency": 84,
+        "font_or_preload_dependency": 8,
+        "image_or_media_dependency": 71,
+        "form_destination": 57
+      }
+    },
+    {
+      "domain": "zilina.sk",
+      "observations": 156,
+      "unique_targets": 30,
+      "relationship_types": {
+        "editorial_link": 40,
+        "script_dependency": 12,
+        "stylesheet_dependency": 9,
+        "image_or_media_dependency": 8,
+        "form_destination": 5,
+        "font_or_preload_dependency": 2
+      }
+    },
+    {
+      "domain": "slovensko.sk",
+      "observations": 140,
+      "unique_targets": 20,
+      "relationship_types": {
+        "editorial_link": 31,
+        "script_dependency": 11,
+        "stylesheet_dependency": 10,
+        "image_or_media_dependency": 7,
+        "form_destination": 6,
+        "font_or_preload_dependency": 3
+      }
+    },
+    {
+      "domain": "kosice.sk",
+      "observations": 119,
+      "unique_targets": 31,
+      "relationship_types": {
+        "editorial_link": 41,
+        "script_dependency": 7,
+        "stylesheet_dependency": 7,
+        "image_or_media_dependency": 5,
+        "form_destination": 1,
+        "font_or_preload_dependency": 2
+      }
+    },
+    {
+      "domain": "trnava.sk",
+      "observations": 115,
+      "unique_targets": 31,
+      "relationship_types": {
+        "script_dependency": 17,
+        "stylesheet_dependency": 11,
+        "editorial_link": 38,
+        "image_or_media_dependency": 9,
+        "form_destination": 4,
+        "font_or_preload_dependency": 3
+      }
+    },
+    {
+      "domain": "bratislava.sk",
+      "observations": 115,
+      "unique_targets": 22,
+      "relationship_types": {
+        "editorial_link": 26,
+        "script_dependency": 10,
+        "stylesheet_dependency": 8,
+        "image_or_media_dependency": 5,
+        "form_destination": 3,
+        "font_or_preload_dependency": 4
+      }
+    },
+    {
+      "domain": "presov.sk",
+      "observations": 94,
+      "unique_targets": 28,
+      "relationship_types": {
+        "editorial_link": 31,
+        "script_dependency": 3,
+        "stylesheet_dependency": 3,
+        "image_or_media_dependency": 3,
+        "form_destination": 3
+      }
+    },
+    {
+      "domain": "poprad.sk",
+      "observations": 86,
+      "unique_targets": 26,
+      "relationship_types": {
+        "editorial_link": 29,
+        "script_dependency": 3,
+        "font_or_preload_dependency": 3,
+        "stylesheet_dependency": 3,
+        "image_or_media_dependency": 3,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "banskabystrica.sk",
+      "observations": 80,
+      "unique_targets": 45,
+      "relationship_types": {
+        "stylesheet_dependency": 5,
+        "image_or_media_dependency": 4,
+        "editorial_link": 46,
+        "script_dependency": 9,
+        "font_or_preload_dependency": 8,
+        "form_destination": 2
+      }
+    },
+    {
+      "domain": "trencin.sk",
+      "observations": 53,
+      "unique_targets": 18,
+      "relationship_types": {
+        "editorial_link": 14,
+        "script_dependency": 7,
+        "stylesheet_dependency": 4,
+        "image_or_media_dependency": 2,
+        "form_destination": 2
+      }
+    },
+    {
+      "domain": "martin.sk",
+      "observations": 33,
+      "unique_targets": 13,
+      "relationship_types": {
+        "script_dependency": 9,
+        "stylesheet_dependency": 6,
+        "editorial_link": 8,
+        "font_or_preload_dependency": 1,
+        "image_or_media_dependency": 4,
+        "form_destination": 2
+      }
+    },
+    {
+      "domain": "nrsr.sk",
+      "observations": 29,
+      "unique_targets": 13,
+      "relationship_types": {
+        "editorial_link": 15,
+        "script_dependency": 2,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "mlba.sk",
+      "observations": 27,
+      "unique_targets": 15,
+      "relationship_types": {
+        "editorial_link": 14,
+        "script_dependency": 3,
+        "font_or_preload_dependency": 1,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "minv.sk",
+      "observations": 24,
+      "unique_targets": 4,
+      "relationship_types": {
+        "script_dependency": 3,
+        "stylesheet_dependency": 3,
+        "editorial_link": 9,
+        "image_or_media_dependency": 2
+      }
+    }
+  ],
+  "top_targets": [
+    {
+      "domain": "gov.sk",
+      "observations": 883
+    },
+    {
+      "domain": "slovensko.sk",
+      "observations": 141
+    },
+    {
+      "domain": "googleapis.com",
+      "observations": 92
+    },
+    {
+      "domain": "facebook.com",
+      "observations": 86
+    },
+    {
+      "domain": "zilina.sk",
+      "observations": 83
+    },
+    {
+      "domain": "googletagmanager.com",
+      "observations": 74
+    },
+    {
+      "domain": "bratislava.sk",
+      "observations": 66
+    },
+    {
+      "domain": "kosice.sk",
+      "observations": 60
+    },
+    {
+      "domain": "google.com",
+      "observations": 59
+    },
+    {
+      "domain": "trnava.sk",
+      "observations": 58
+    },
+    {
+      "domain": "instagram.com",
+      "observations": 56
+    },
+    {
+      "domain": "linkedin.com",
+      "observations": 43
+    },
+    {
+      "domain": "youtube.com",
+      "observations": 40
+    },
+    {
+      "domain": "europa.eu",
+      "observations": 33
+    },
+    {
+      "domain": "presov.sk",
+      "observations": 32
+    },
+    {
+      "domain": "poprad.sk",
+      "observations": 29
+    },
+    {
+      "domain": "banskabystrica.sk",
+      "observations": 24
+    },
+    {
+      "domain": "gstatic.com",
+      "observations": 23
+    },
+    {
+      "domain": "jsdelivr.net",
+      "observations": 22
+    },
+    {
+      "domain": "syscom.sk",
+      "observations": 21
+    },
+    {
+      "domain": "minv.sk",
+      "observations": 20
+    },
+    {
+      "domain": "aglo.sk",
+      "observations": 19
+    },
+    {
+      "domain": "martin.sk",
+      "observations": 18
+    },
+    {
+      "domain": "trencin.sk",
+      "observations": 16
+    },
+    {
+      "domain": "nrsr.sk",
+      "observations": 16
+    },
+    {
+      "domain": "cookiedatabase.org",
+      "observations": 15
+    },
+    {
+      "domain": "cloudflare.com",
+      "observations": 14
+    },
+    {
+      "domain": "twitter.com",
+      "observations": 12
+    },
+    {
+      "domain": "mlba.sk",
+      "observations": 12
+    },
+    {
+      "domain": "jquery.com",
+      "observations": 12
+    },
+    {
+      "domain": "planobnovy.sk",
+      "observations": 10
+    },
+    {
+      "domain": "cinemaware.eu",
+      "observations": 10
+    },
+    {
+      "domain": "mhsr.sk",
+      "observations": 8
+    },
+    {
+      "domain": "arcgis.com",
+      "observations": 8
+    },
+    {
+      "domain": "bootstrapcdn.com",
+      "observations": 7
+    },
+    {
+      "domain": "pohladavkystatu.sk",
+      "observations": 6
+    },
+    {
+      "domain": "unms.sk",
+      "observations": 6
+    },
+    {
+      "domain": "mam.sk",
+      "observations": 6
+    },
+    {
+      "domain": "nsrr.sk",
+      "observations": 5
+    },
+    {
+      "domain": "esluzbykosice.sk",
+      "observations": 5
+    },
+    {
+      "domain": "google.sk",
+      "observations": 5
+    },
+    {
+      "domain": "soi.sk",
+      "observations": 5
+    },
+    {
+      "domain": "goo.gl",
+      "observations": 5
+    },
+    {
+      "domain": "slov-lex.sk",
+      "observations": 5
+    },
+    {
+      "domain": "webygroup.sk",
+      "observations": 5
+    },
+    {
+      "domain": "webyportal.sk",
+      "observations": 5
+    },
+    {
+      "domain": "webyhosting.sk",
+      "observations": 5
+    },
+    {
+      "domain": "webydomena.sk",
+      "observations": 5
+    },
+    {
+      "domain": "tiktok.com",
+      "observations": 5
+    },
+    {
+      "domain": "plausible.io",
+      "observations": 5
+    }
+  ],
+  "gov_to_gov_links": [
+    {
+      "source": "gov.sk",
+      "target": "slovensko.sk",
+      "target_country": "Slovakia",
+      "cross_country": false
+    },
+    {
+      "source": "gov.sk",
+      "target": "europa.eu",
+      "target_country": "EU Institutions",
+      "cross_country": true
+    },
+    {
+      "source": "slovensko.sk",
+      "target": "gov.sk",
+      "target_country": "Slovakia",
+      "cross_country": false
+    },
+    {
+      "source": "slovensko.sk",
+      "target": "europa.eu",
+      "target_country": "EU Institutions",
+      "cross_country": true
+    }
+  ]
+}

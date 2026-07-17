@@ -1,0 +1,309 @@
+{
+  "country": "Malta",
+  "total_relationships": 1101,
+  "total_source_domains": 2,
+  "total_unique_targets": 184,
+  "gov_to_gov_pairs": 11,
+  "relationship_types": {
+    "editorial_link": 460,
+    "script_dependency": 174,
+    "stylesheet_dependency": 168,
+    "image_or_media_dependency": 168,
+    "form_destination": 120,
+    "font_or_preload_dependency": 11
+  },
+  "top_source_domains": [
+    {
+      "domain": "gov.mt",
+      "observations": 2924,
+      "unique_targets": 184,
+      "relationship_types": {
+        "editorial_link": 459,
+        "script_dependency": 174,
+        "stylesheet_dependency": 167,
+        "image_or_media_dependency": 168,
+        "form_destination": 120,
+        "font_or_preload_dependency": 11
+      }
+    },
+    {
+      "domain": "parlament.mt",
+      "observations": 2,
+      "unique_targets": 2,
+      "relationship_types": {
+        "editorial_link": 1,
+        "stylesheet_dependency": 1
+      }
+    }
+  ],
+  "top_targets": [
+    {
+      "domain": "gov.mt",
+      "observations": 1493
+    },
+    {
+      "domain": "googleapis.com",
+      "observations": 166
+    },
+    {
+      "domain": "jsdelivr.net",
+      "observations": 159
+    },
+    {
+      "domain": "jquery.com",
+      "observations": 118
+    },
+    {
+      "domain": "googletagmanager.com",
+      "observations": 106
+    },
+    {
+      "domain": "youtube.com",
+      "observations": 104
+    },
+    {
+      "domain": "wordpress.org",
+      "observations": 80
+    },
+    {
+      "domain": "addtoany.com",
+      "observations": 71
+    },
+    {
+      "domain": "europa.eu",
+      "observations": 60
+    },
+    {
+      "domain": "facebook.com",
+      "observations": 58
+    },
+    {
+      "domain": "gstatic.com",
+      "observations": 40
+    },
+    {
+      "domain": "cloudflare.com",
+      "observations": 39
+    },
+    {
+      "domain": "google.com",
+      "observations": 37
+    },
+    {
+      "domain": "instagram.com",
+      "observations": 33
+    },
+    {
+      "domain": "linkedin.com",
+      "observations": 22
+    },
+    {
+      "domain": "twitter.com",
+      "observations": 14
+    },
+    {
+      "domain": "wponetap.com",
+      "observations": 13
+    },
+    {
+      "domain": "fbcdn.net",
+      "observations": 11
+    },
+    {
+      "domain": "fontawesome.com",
+      "observations": 11
+    },
+    {
+      "domain": "office.com",
+      "observations": 10
+    },
+    {
+      "domain": "legislation.mt",
+      "observations": 9
+    },
+    {
+      "domain": "corterm.com",
+      "observations": 9
+    },
+    {
+      "domain": "unpkg.com",
+      "observations": 8
+    },
+    {
+      "domain": "microsoft.com",
+      "observations": 7
+    },
+    {
+      "domain": "bootstrapcdn.com",
+      "observations": 7
+    },
+    {
+      "domain": "um.edu.mt",
+      "observations": 6
+    },
+    {
+      "domain": "goo.gl",
+      "observations": 5
+    },
+    {
+      "domain": "2isoftware.com",
+      "observations": 5
+    },
+    {
+      "domain": "x.com",
+      "observations": 4
+    },
+    {
+      "domain": "odoo.com",
+      "observations": 4
+    },
+    {
+      "domain": "simplybook.me",
+      "observations": 4
+    },
+    {
+      "domain": "mapbox.com",
+      "observations": 4
+    },
+    {
+      "domain": "chatbot.com",
+      "observations": 3
+    },
+    {
+      "domain": "9hdigital.com",
+      "observations": 3
+    },
+    {
+      "domain": "cookiedatabase.org",
+      "observations": 3
+    },
+    {
+      "domain": "fliphtml5.com",
+      "observations": 3
+    },
+    {
+      "domain": "arcgis.com",
+      "observations": 3
+    },
+    {
+      "domain": "msm.io",
+      "observations": 3
+    },
+    {
+      "domain": "dna.studio",
+      "observations": 3
+    },
+    {
+      "domain": "m.me",
+      "observations": 3
+    },
+    {
+      "domain": "apple.com",
+      "observations": 3
+    },
+    {
+      "domain": "mta.com.mt",
+      "observations": 3
+    },
+    {
+      "domain": "en",
+      "observations": 2
+    },
+    {
+      "domain": "ombudsman.org.mt",
+      "observations": 2
+    },
+    {
+      "domain": "interpol.int",
+      "observations": 2
+    },
+    {
+      "domain": "eumostwanted.eu",
+      "observations": 2
+    },
+    {
+      "domain": "parlament.mt",
+      "observations": 2
+    },
+    {
+      "domain": "artscouncilmalta.org",
+      "observations": 2
+    },
+    {
+      "domain": "soundcloud.com",
+      "observations": 2
+    },
+    {
+      "domain": "housingauthority.org.mt",
+      "observations": 2
+    }
+  ],
+  "gov_to_gov_links": [
+    {
+      "source": "gov.mt",
+      "target": "europa.eu",
+      "target_country": "EU Institutions",
+      "cross_country": true
+    },
+    {
+      "source": "gov.mt",
+      "target": "un.org",
+      "target_country": "Unknown",
+      "cross_country": true
+    },
+    {
+      "source": "gov.mt",
+      "target": "parlament.mt",
+      "target_country": "Malta",
+      "cross_country": false
+    },
+    {
+      "source": "gov.mt",
+      "target": "artscouncilmalta.org",
+      "target_country": "Unknown",
+      "cross_country": true
+    },
+    {
+      "source": "gov.mt",
+      "target": "housinglandscape.mt",
+      "target_country": "Malta",
+      "cross_country": false
+    },
+    {
+      "source": "gov.mt",
+      "target": "mygov.mt",
+      "target_country": "Malta",
+      "cross_country": false
+    },
+    {
+      "source": "gov.mt",
+      "target": "who.int",
+      "target_country": "Unknown",
+      "cross_country": true
+    },
+    {
+      "source": "gov.mt",
+      "target": "te.gob.mx",
+      "target_country": "Unknown",
+      "cross_country": true
+    },
+    {
+      "source": "gov.mt",
+      "target": "landsregistry.mt",
+      "target_country": "Malta",
+      "cross_country": false
+    },
+    {
+      "source": "gov.mt",
+      "target": "cdc.gov",
+      "target_country": "Unknown",
+      "cross_country": true
+    },
+    {
+      "source": "gov.mt",
+      "target": "stateadvocate.mt",
+      "target_country": "Malta",
+      "cross_country": false
+    }
+  ]
+}

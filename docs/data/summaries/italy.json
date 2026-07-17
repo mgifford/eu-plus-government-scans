@@ -1,0 +1,731 @@
+{
+  "country": "Italy",
+  "total_relationships": 987,
+  "total_source_domains": 43,
+  "total_unique_targets": 214,
+  "gov_to_gov_pairs": 3,
+  "relationship_types": {
+    "editorial_link": 557,
+    "script_dependency": 136,
+    "stylesheet_dependency": 116,
+    "image_or_media_dependency": 97,
+    "form_destination": 65,
+    "font_or_preload_dependency": 16
+  },
+  "top_source_domains": [
+    {
+      "domain": "esteri.it",
+      "observations": 403,
+      "unique_targets": 35,
+      "relationship_types": {
+        "editorial_link": 80,
+        "script_dependency": 19,
+        "stylesheet_dependency": 18,
+        "image_or_media_dependency": 18,
+        "form_destination": 18
+      }
+    },
+    {
+      "domain": "giustizia.it",
+      "observations": 198,
+      "unique_targets": 30,
+      "relationship_types": {
+        "editorial_link": 49,
+        "script_dependency": 20,
+        "stylesheet_dependency": 18,
+        "image_or_media_dependency": 17,
+        "form_destination": 17
+      }
+    },
+    {
+      "domain": "regione.campania.it",
+      "observations": 57,
+      "unique_targets": 23,
+      "relationship_types": {
+        "editorial_link": 33,
+        "script_dependency": 5,
+        "stylesheet_dependency": 6,
+        "image_or_media_dependency": 3,
+        "form_destination": 3
+      }
+    },
+    {
+      "domain": "regione.lombardia.it",
+      "observations": 53,
+      "unique_targets": 19,
+      "relationship_types": {
+        "script_dependency": 8,
+        "font_or_preload_dependency": 1,
+        "stylesheet_dependency": 4,
+        "editorial_link": 32,
+        "image_or_media_dependency": 3,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "comune.parma.it",
+      "observations": 53,
+      "unique_targets": 14,
+      "relationship_types": {
+        "editorial_link": 32,
+        "script_dependency": 3,
+        "stylesheet_dependency": 4,
+        "image_or_media_dependency": 3,
+        "form_destination": 2
+      }
+    },
+    {
+      "domain": "comune.fi.it",
+      "observations": 43,
+      "unique_targets": 14,
+      "relationship_types": {
+        "editorial_link": 26,
+        "script_dependency": 3,
+        "stylesheet_dependency": 3,
+        "image_or_media_dependency": 3,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "regione.lazio.it",
+      "observations": 40,
+      "unique_targets": 24,
+      "relationship_types": {
+        "editorial_link": 31,
+        "script_dependency": 3,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 2,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "regione.emilia-romagna.it",
+      "observations": 33,
+      "unique_targets": 10,
+      "relationship_types": {
+        "editorial_link": 16,
+        "script_dependency": 2,
+        "font_or_preload_dependency": 1,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 3
+      }
+    },
+    {
+      "domain": "mef.gov.it",
+      "observations": 32,
+      "unique_targets": 15,
+      "relationship_types": {
+        "editorial_link": 17,
+        "script_dependency": 5,
+        "stylesheet_dependency": 6,
+        "image_or_media_dependency": 2,
+        "form_destination": 2
+      }
+    },
+    {
+      "domain": "comune.messina.it",
+      "observations": 31,
+      "unique_targets": 12,
+      "relationship_types": {
+        "editorial_link": 13,
+        "script_dependency": 7,
+        "stylesheet_dependency": 5,
+        "image_or_media_dependency": 4
+      }
+    },
+    {
+      "domain": "comune.biella.it",
+      "observations": 30,
+      "unique_targets": 24,
+      "relationship_types": {
+        "editorial_link": 25,
+        "script_dependency": 2,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "comune.venezia.it",
+      "observations": 29,
+      "unique_targets": 12,
+      "relationship_types": {
+        "editorial_link": 16,
+        "script_dependency": 3,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 2,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "comune.alessandria.it",
+      "observations": 28,
+      "unique_targets": 18,
+      "relationship_types": {
+        "editorial_link": 19,
+        "script_dependency": 2,
+        "font_or_preload_dependency": 3,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 2,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "regione.piemonte.it",
+      "observations": 23,
+      "unique_targets": 12,
+      "relationship_types": {
+        "editorial_link": 13,
+        "script_dependency": 4,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 2,
+        "form_destination": 2
+      }
+    },
+    {
+      "domain": "comune.prato.it",
+      "observations": 22,
+      "unique_targets": 5,
+      "relationship_types": {
+        "editorial_link": 9,
+        "script_dependency": 4,
+        "stylesheet_dependency": 3,
+        "image_or_media_dependency": 3,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "comune.bologna.it",
+      "observations": 20,
+      "unique_targets": 6,
+      "relationship_types": {
+        "script_dependency": 6,
+        "font_or_preload_dependency": 2,
+        "stylesheet_dependency": 6,
+        "editorial_link": 4,
+        "image_or_media_dependency": 2
+      }
+    },
+    {
+      "domain": "comune.cagliari.it",
+      "observations": 18,
+      "unique_targets": 10,
+      "relationship_types": {
+        "script_dependency": 2,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 2,
+        "editorial_link": 11,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "difesa.it",
+      "observations": 18,
+      "unique_targets": 10,
+      "relationship_types": {
+        "editorial_link": 12,
+        "script_dependency": 1,
+        "font_or_preload_dependency": 2,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 1
+      }
+    },
+    {
+      "domain": "comune.ancona.it",
+      "observations": 15,
+      "unique_targets": 9,
+      "relationship_types": {
+        "editorial_link": 9,
+        "script_dependency": 2,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "regione.veneto.it",
+      "observations": 15,
+      "unique_targets": 9,
+      "relationship_types": {
+        "editorial_link": 9,
+        "script_dependency": 1,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 2,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "comune.latina.it",
+      "observations": 14,
+      "unique_targets": 8,
+      "relationship_types": {
+        "editorial_link": 8,
+        "script_dependency": 2,
+        "stylesheet_dependency": 1,
+        "font_or_preload_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "governo.it",
+      "observations": 14,
+      "unique_targets": 7,
+      "relationship_types": {
+        "editorial_link": 8,
+        "script_dependency": 2,
+        "font_or_preload_dependency": 1,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 2
+      }
+    },
+    {
+      "domain": "comune.brindisi.it",
+      "observations": 14,
+      "unique_targets": 8,
+      "relationship_types": {
+        "editorial_link": 8,
+        "script_dependency": 2,
+        "stylesheet_dependency": 1,
+        "font_or_preload_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "comune.udine.it",
+      "observations": 14,
+      "unique_targets": 8,
+      "relationship_types": {
+        "editorial_link": 8,
+        "script_dependency": 2,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "comune.terni.it",
+      "observations": 14,
+      "unique_targets": 9,
+      "relationship_types": {
+        "editorial_link": 7,
+        "script_dependency": 4,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "agid.gov.it",
+      "observations": 13,
+      "unique_targets": 2,
+      "relationship_types": {
+        "editorial_link": 6,
+        "script_dependency": 2,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 2,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "comune.pistoia.it",
+      "observations": 13,
+      "unique_targets": 8,
+      "relationship_types": {
+        "editorial_link": 8,
+        "script_dependency": 2,
+        "stylesheet_dependency": 2,
+        "image_or_media_dependency": 1
+      }
+    },
+    {
+      "domain": "comune.pordenone.it",
+      "observations": 13,
+      "unique_targets": 8,
+      "relationship_types": {
+        "editorial_link": 9,
+        "script_dependency": 1,
+        "font_or_preload_dependency": 1,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1
+      }
+    },
+    {
+      "domain": "comune.agrigento.it",
+      "observations": 12,
+      "unique_targets": 6,
+      "relationship_types": {
+        "editorial_link": 7,
+        "script_dependency": 2,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "comune.cuneo.it",
+      "observations": 12,
+      "unique_targets": 7,
+      "relationship_types": {
+        "editorial_link": 8,
+        "script_dependency": 1,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "comune.verona.it",
+      "observations": 11,
+      "unique_targets": 3,
+      "relationship_types": {
+        "editorial_link": 5,
+        "script_dependency": 2,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 2,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "cultura.gov.it",
+      "observations": 11,
+      "unique_targets": 6,
+      "relationship_types": {
+        "editorial_link": 7,
+        "script_dependency": 1,
+        "font_or_preload_dependency": 1,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1
+      }
+    },
+    {
+      "domain": "comune.padova.it",
+      "observations": 10,
+      "unique_targets": 3,
+      "relationship_types": {
+        "editorial_link": 4,
+        "script_dependency": 2,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 2,
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "comune.modena.it",
+      "observations": 9,
+      "unique_targets": 2,
+      "relationship_types": {
+        "editorial_link": 5,
+        "image_or_media_dependency": 2,
+        "script_dependency": 1,
+        "stylesheet_dependency": 1
+      }
+    },
+    {
+      "domain": "comune.palermo.it",
+      "observations": 7,
+      "unique_targets": 3,
+      "relationship_types": {
+        "editorial_link": 3,
+        "script_dependency": 2,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1
+      }
+    },
+    {
+      "domain": "plugandpay.it",
+      "observations": 4,
+      "unique_targets": 3,
+      "relationship_types": {
+        "script_dependency": 1,
+        "font_or_preload_dependency": 2,
+        "stylesheet_dependency": 1
+      }
+    },
+    {
+      "domain": "corteconti.it",
+      "observations": 3,
+      "unique_targets": 2,
+      "relationship_types": {
+        "script_dependency": 1,
+        "stylesheet_dependency": 2
+      }
+    },
+    {
+      "domain": "istat.it",
+      "observations": 3,
+      "unique_targets": 1,
+      "relationship_types": {
+        "script_dependency": 1,
+        "stylesheet_dependency": 1,
+        "image_or_media_dependency": 1
+      }
+    },
+    {
+      "domain": "agenziaentrate.gov.it",
+      "observations": 2,
+      "unique_targets": 1,
+      "relationship_types": {
+        "script_dependency": 1,
+        "stylesheet_dependency": 1
+      }
+    },
+    {
+      "domain": "mise.gov.it",
+      "observations": 2,
+      "unique_targets": 1,
+      "relationship_types": {
+        "script_dependency": 1,
+        "stylesheet_dependency": 1
+      }
+    },
+    {
+      "domain": "mase.gov.it",
+      "observations": 2,
+      "unique_targets": 1,
+      "relationship_types": {
+        "script_dependency": 1,
+        "stylesheet_dependency": 1
+      }
+    },
+    {
+      "domain": "comune.bari.it",
+      "observations": 1,
+      "unique_targets": 1,
+      "relationship_types": {
+        "form_destination": 1
+      }
+    },
+    {
+      "domain": "camera.it",
+      "observations": 1,
+      "unique_targets": 1,
+      "relationship_types": {
+        "form_destination": 1
+      }
+    }
+  ],
+  "top_targets": [
+    {
+      "domain": "esteri.it",
+      "observations": 177
+    },
+    {
+      "domain": "giustizia.it",
+      "observations": 107
+    },
+    {
+      "domain": "facebook.com",
+      "observations": 66
+    },
+    {
+      "domain": "youtube.com",
+      "observations": 56
+    },
+    {
+      "domain": "twitter.com",
+      "observations": 56
+    },
+    {
+      "domain": "agid.gov.it",
+      "observations": 51
+    },
+    {
+      "domain": "instagram.com",
+      "observations": 38
+    },
+    {
+      "domain": "comune.parma.it",
+      "observations": 32
+    },
+    {
+      "domain": "regione.campania.it",
+      "observations": 31
+    },
+    {
+      "domain": "governo.it",
+      "observations": 29
+    },
+    {
+      "domain": "europa.eu",
+      "observations": 27
+    },
+    {
+      "domain": "regione.lombardia.it",
+      "observations": 27
+    },
+    {
+      "domain": "googleapis.com",
+      "observations": 25
+    },
+    {
+      "domain": "regione.emilia-romagna.it",
+      "observations": 25
+    },
+    {
+      "domain": "comune.fi.it",
+      "observations": 23
+    },
+    {
+      "domain": "viaggiaresicuri.it",
+      "observations": 20
+    },
+    {
+      "domain": "dovesiamonelmondo.it",
+      "observations": 20
+    },
+    {
+      "domain": "regione.lazio.it",
+      "observations": 18
+    },
+    {
+      "domain": "comune.prato.it",
+      "observations": 18
+    },
+    {
+      "domain": "whatsapp.com",
+      "observations": 17
+    },
+    {
+      "domain": "mef.gov.it",
+      "observations": 16
+    },
+    {
+      "domain": "regione.piemonte.it",
+      "observations": 14
+    },
+    {
+      "domain": "comune.venezia.it",
+      "observations": 14
+    },
+    {
+      "domain": "linkedin.com",
+      "observations": 12
+    },
+    {
+      "domain": "comune.messina.it",
+      "observations": 12
+    },
+    {
+      "domain": "comune.bologna.it",
+      "observations": 12
+    },
+    {
+      "domain": "comune.alessandria.it",
+      "observations": 10
+    },
+    {
+      "domain": "comune.verona.it",
+      "observations": 9
+    },
+    {
+      "domain": "regione.veneto.it",
+      "observations": 9
+    },
+    {
+      "domain": "comune.cagliari.it",
+      "observations": 9
+    },
+    {
+      "domain": "googletagmanager.com",
+      "observations": 8
+    },
+    {
+      "domain": "comune.modena.it",
+      "observations": 8
+    },
+    {
+      "domain": "csm.it",
+      "observations": 8
+    },
+    {
+      "domain": "spreaker.com",
+      "observations": 8
+    },
+    {
+      "domain": "difesa.it",
+      "observations": 8
+    },
+    {
+      "domain": "comune.agrigento.it",
+      "observations": 7
+    },
+    {
+      "domain": "comune.latina.it",
+      "observations": 7
+    },
+    {
+      "domain": "comune.brindisi.it",
+      "observations": 7
+    },
+    {
+      "domain": "comune.padova.it",
+      "observations": 7
+    },
+    {
+      "domain": "italea.com",
+      "observations": 6
+    },
+    {
+      "domain": "google.com",
+      "observations": 6
+    },
+    {
+      "domain": "comune.cuneo.it",
+      "observations": 6
+    },
+    {
+      "domain": "comune.terni.it",
+      "observations": 6
+    },
+    {
+      "domain": "italia.it",
+      "observations": 5
+    },
+    {
+      "domain": "jquery.com",
+      "observations": 5
+    },
+    {
+      "domain": "jsdelivr.net",
+      "observations": 5
+    },
+    {
+      "domain": "opportunitaly.gov.it",
+      "observations": 5
+    },
+    {
+      "domain": "cortedicassazione.it",
+      "observations": 5
+    },
+    {
+      "domain": "quirinale.it",
+      "observations": 5
+    },
+    {
+      "domain": "comune.udine.it",
+      "observations": 5
+    }
+  ],
+  "gov_to_gov_links": [
+    {
+      "source": "mef.gov.it",
+      "target": "agid.gov.it",
+      "target_country": "Italy",
+      "cross_country": false
+    },
+    {
+      "source": "governo.it",
+      "target": "agid.gov.it",
+      "target_country": "Italy",
+      "cross_country": false
+    },
+    {
+      "source": "agid.gov.it",
+      "target": "regione.emilia-romagna.it",
+      "target_country": "Italy",
+      "cross_country": false
+    }
+  ]
+}
