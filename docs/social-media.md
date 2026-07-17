@@ -25,9 +25,9 @@ layout: page
 <p style="text-align:center;font-size:0.75em;margin:0.3rem 0 0;color:#555;font-style:italic;">Social media tier distribution</p>
 </div>
 
-_Stats as of 2026-07-17 20:32 UTC — last scan: 2026-07-17_
+_Stats as of 2026-07-17 22:09 UTC — last scan: 2026-07-17_
 
-**282** scan batches run
+**286** scan batches run
 
 **82,714** of **82,714** available pages scanned (**100.0%** coverage)
 **77,370** of **82,714** scanned pages were reachable (**93.5%**)
@@ -39,7 +39,7 @@ _Stats as of 2026-07-17 20:32 UTC — last scan: 2026-07-17_
 | 🐦 Twitter | **14,512** | 17.5% | 18.8% |
 | ✖ X | **3,577** | 4.3% | 4.6% |
 | 👍 Facebook | **29,101** | 35.2% | 37.6% |
-| 💼 LinkedIn | **10,184** | 12.3% | 13.2% |
+| 💼 LinkedIn | **10,185** | 12.3% | 13.2% |
 
 **Modern / open social media** (decentralised or open platforms):
 
@@ -108,7 +108,7 @@ Countries ranked by **Digital Sovereignty Score** — the percentage of reachabl
 | Denmark | 1,521 | 1,521 | 1,500 | 62.7% | 940 | 547 | 170 | 18 | 475 | 335 | 0 | 26 | 16 | 13 | May 2026 – Jul 2026 |
 | Estonia | 396 | 396 | 382 | 48.2% | 181 | 178 | 66 | 3 | 201 | 65 | 3 | 24 | 0 | 27 | May 2026 – Jul 2026 |
 | Finland | 180 | 180 | 170 | 64.7% | 110 | 57 | 24 | 6 | 44 | 50 | 0 | 4 | 2 | 2 | May 2026 – Jul 2026 |
-| France | 10,007 | 10,007 | 9,420 | 66.6% | 6,244 | 2,729 | 1,660 | 610 | 2,907 | 1,788 | 28 | 581 | 123 | 533 | May 2026 – Jul 2026 |
+| France | 10,007 | 10,007 | 9,420 | 66.6% | 6,244 | 2,729 | 1,660 | 610 | 2,907 | 1,789 | 28 | 581 | 123 | 533 | May 2026 – Jul 2026 |
 | Germany | 6,555 | 6,555 | 6,482 | 68.7% | 4,372 | 1,670 | 1,172 | 191 | 1,686 | 624 | 84 | 441 | 133 | 476 | May 2026 – Jul 2026 |
 | Greece | 1,748 | 1,748 | 1,635 | 68.1% | 1,111 | 461 | 245 | 62 | 534 | 131 | 2 | 106 | 0 | 108 | May 2026 – Jul 2026 |
 | Hungary | 390 | 390 | 298 | 54.4% | 161 | 117 | 26 | 0 | 140 | 15 | 1 | 28 | 0 | 29 | May 2026 – Jul 2026 |
@@ -131,7 +131,7 @@ Countries ranked by **Digital Sovereignty Score** — the percentage of reachabl
 | Sweden | 1,558 | 1,558 | 1,489 | 65.8% | 977 | 487 | 82 | 18 | 448 | 352 | 3 | 33 | 11 | 25 | May 2026 – Jul 2026 |
 | Switzerland | 2,117 | 2,117 | 2,080 | 68.1% | 1,386 | 573 | 241 | 225 | 260 | 564 | 31 | 148 | 54 | 139 | May 2026 – Jul 2026 |
 | United Kingdom | 19,502 | 19,502 | 18,769 | 64.3% | 12,032 | 6,686 | 4,121 | 1,077 | 6,613 | 2,565 | 37 | 768 | 137 | 720 | May 2026 – Jul 2026 |
-| **Total** | **82,714** | **82,714** | **77,370** | **60.5%** | **46,487** | **27,787** | **14,512** | **3,577** | **29,101** | **10,184** | **341** | **4,806** | **798** | **4,621** | — |
+| **Total** | **82,714** | **82,714** | **77,370** | **60.5%** | **46,487** | **27,787** | **14,512** | **3,577** | **29,101** | **10,185** | **341** | **4,806** | **798** | **4,621** | — |
 
 > Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open. Full machine-readable data is available as the [social-media-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
 
