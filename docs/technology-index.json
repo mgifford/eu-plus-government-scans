@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-17 10:33 UTC",
+  "generated_at": "2026-07-17 10:51 UTC",
   "base_url": "https://mgifford.github.io/eu-plus-government-scans/",
   "note": "Compact cross-reference index: technology → page count, categories, and per-country page counts. For full per-URL drilldown data see the technology-data.json workflow artifact.",
   "by_technology": {
     "jQuery": {
-      "pages": 34853,
+      "pages": 34845,
       "categories": [
         "JavaScript libraries"
       ],
@@ -28,7 +28,7 @@
         "LITHUANIA": 65,
         "LUXEMBOURG": 214,
         "MALTA": 504,
-        "NETHERLANDS": 316,
+        "NETHERLANDS": 308,
         "NORWAY": 65,
         "POLAND": 5653,
         "PORTUGAL": 1864,
@@ -121,7 +121,7 @@
       }
     },
     "Bootstrap": {
-      "pages": 16109,
+      "pages": 16107,
       "categories": [
         "UI frameworks"
       ],
@@ -145,7 +145,7 @@
         "LITHUANIA": 41,
         "LUXEMBOURG": 40,
         "MALTA": 229,
-        "NETHERLANDS": 120,
+        "NETHERLANDS": 118,
         "NORWAY": 42,
         "POLAND": 2613,
         "PORTUGAL": 922,
@@ -160,7 +160,7 @@
       }
     },
     "Font Awesome": {
-      "pages": 15354,
+      "pages": 15346,
       "categories": [
         "Font scripts"
       ],
@@ -184,7 +184,7 @@
         "LITHUANIA": 31,
         "LUXEMBOURG": 51,
         "MALTA": 348,
-        "NETHERLANDS": 129,
+        "NETHERLANDS": 121,
         "NORWAY": 21,
         "POLAND": 3051,
         "PORTUGAL": 1063,
@@ -664,7 +664,7 @@
       }
     },
     "jsDelivr": {
-      "pages": 4691,
+      "pages": 4690,
       "categories": [
         "CDN"
       ],
@@ -688,7 +688,7 @@
         "LITHUANIA": 18,
         "LUXEMBOURG": 35,
         "MALTA": 244,
-        "NETHERLANDS": 36,
+        "NETHERLANDS": 35,
         "NORWAY": 18,
         "POLAND": 767,
         "PORTUGAL": 267,
@@ -1484,7 +1484,7 @@
       }
     },
     "Google Maps": {
-      "pages": 1223,
+      "pages": 1222,
       "categories": [
         "Maps"
       ],
@@ -1506,7 +1506,7 @@
         "LITHUANIA": 1,
         "LUXEMBOURG": 9,
         "MALTA": 5,
-        "NETHERLANDS": 11,
+        "NETHERLANDS": 10,
         "NORWAY": 4,
         "POLAND": 222,
         "PORTUGAL": 170,
@@ -4129,7 +4129,7 @@
       }
     },
     "SiteGround": {
-      "pages": 75,
+      "pages": 76,
       "categories": [
         "PaaS"
       ],
@@ -4140,7 +4140,7 @@
         "ITALY": 4,
         "MALTA": 8,
         "PORTUGAL": 5,
-        "REPUBLIC_OF_CYPRUS": 4,
+        "REPUBLIC_OF_CYPRUS": 5,
         "SPAIN": 8,
         "UNITED_KINGDOM_UK": 38
       }
@@ -7275,7 +7275,7 @@
   },
   "by_category": {
     "JavaScript libraries": {
-      "pages": 69406,
+      "pages": 69398,
       "technologies": [
         "Bootstrap Table",
         "DHTMLX",
@@ -7357,7 +7357,7 @@
       ]
     },
     "Font scripts": {
-      "pages": 28737,
+      "pages": 28729,
       "technologies": [
         "Cufon",
         "Font Awesome",
@@ -7444,7 +7444,7 @@
       ]
     },
     "UI frameworks": {
-      "pages": 21354,
+      "pages": 21352,
       "technologies": [
         "Bootstrap",
         "Bulma",
@@ -7477,7 +7477,7 @@
       ]
     },
     "CDN": {
-      "pages": 12511,
+      "pages": 12510,
       "technologies": [
         "Akamai",
         "Amazon Cloudfront",
@@ -7696,7 +7696,7 @@
       ]
     },
     "Maps": {
-      "pages": 2963,
+      "pages": 2962,
       "technologies": [
         "ArcGIS API for JavaScript",
         "Google Maps",
@@ -7725,7 +7725,7 @@
       ]
     },
     "PaaS": {
-      "pages": 2284,
+      "pages": 2285,
       "technologies": [
         "Amazon Web Services",
         "Atlassian Statuspage",
