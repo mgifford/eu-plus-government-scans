@@ -113,6 +113,15 @@
             top: 6px;
         }
 
+        /* Wrapper - matches Jekyll site */
+        .wrapper {
+            max-width: 64rem;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
         /* Header - matches Jekyll site structure */
         .site-header {
             background: var(--color-bg);
@@ -1124,6 +1133,59 @@
                 font-size: 0.75rem;
             }
         }
+
+        /* Footer - matches Jekyll site */
+        .site-footer {
+            background: var(--color-secondary-bg);
+            border-top: 1px solid var(--color-border);
+            color: var(--color-text-secondary);
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        .site-footer a,
+        .site-footer a:visited {
+            color: var(--color-link);
+            text-decoration-line: underline;
+        }
+
+        .site-footer .footer-heading,
+        .site-footer .contact-list,
+        .site-footer p,
+        .site-footer .p-name {
+            color: var(--color-text-secondary);
+        }
+
+        .site-footer .p-name {
+            color: var(--color-text) !important;
+        }
+
+        .footer-col-wrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .site-footer .footer-cta {
+            border-top: 1px solid var(--color-border);
+            margin-top: 1rem;
+            padding-top: 1rem;
+        }
+
+        .site-footer .footer-cta p {
+            color: var(--color-text-secondary);
+        }
+
+        .contact-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .contact-list li {
+            margin-bottom: 0.25rem;
+        }
     </style>
 </head>
 <body>
@@ -1547,6 +1609,40 @@
             </div>
         </section>
     </main>
+
+    <footer class="site-footer">
+        <div class="wrapper">
+            <h2 class="footer-heading">EU Government Website Scans</h2>
+
+            <div class="footer-col-wrapper">
+                <div class="footer-col footer-col-1">
+                    <ul class="contact-list">
+                        <li class="p-name">EU Government Website Scans</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col footer-col-2">
+                    <p>
+                        <a href="https://github.com/mgifford/eu-plus-government-scans">GitHub</a>
+                    </p>
+                </div>
+
+                <div class="footer-col footer-col-3">
+                    <p>Accessibility statement discovery and social media usage tracking for European (and allied) government websites.</p>
+                </div>
+            </div>
+
+            <div class="footer-col-wrapper footer-cta">
+                <p>
+                    Want to contribute? Visit the
+                    <a href="https://github.com/mgifford/eu-plus-government-scans">
+                        eu-plus-government-scans project on GitHub
+                    </a>
+                    to report issues, suggest new countries, or submit pull requests.
+                </p>
+            </div>
+        </div>
+    </footer>
 
     <!-- Modal for detailed node information -->
     <div class="modal" id="node-modal">
