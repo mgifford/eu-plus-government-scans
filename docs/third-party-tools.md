@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-07-17 13:39 UTC — last scan: 2026-07-17_
+_Stats as of 2026-07-17 14:51 UTC — last scan: 2026-07-17_
 
-**192** scan batches run
+**195** scan batches run
 
 **23,669** of **82,714** available pages scanned (**28.6%** coverage)
 **21,920** of **23,669** scanned pages were reachable (**92.6%**)
 **10,599** reachable pages loaded at least one third-party script (**48.4%** of reachable)
-**13,561** known third-party service loads identified
+**13,558** known third-party service loads identified
 **24** unique known services across **16** categories
 
 ---
@@ -25,7 +25,7 @@ _Stats as of 2026-07-17 13:39 UTC — last scan: 2026-07-17_
 | Belgium | 1,309 | 1,309 | 1,220 | 638 | 720 | 52.3 | 59.0 | 2026-07-17 |
 | Bulgaria | 291 | 291 | 265 | 104 | 126 | 39.2 | 47.5 | 2026-07-15 |
 | Croatia | 233 | 233 | 231 | 121 | 168 | 52.4 | 72.7 | 2026-07-15 |
-| Czechia | 843 | 843 | 806 | 489 | 820 | 60.7 | 101.7 | 2026-07-14 |
+| Czechia | 843 | 843 | 806 | 489 | 815 | 60.7 | 101.1 | 2026-07-17 |
 | Denmark | 1,521 | 1,521 | 1,496 | 838 | 2,128 | 56.0 | 142.2 | 2026-07-15 |
 | Estonia | 396 | 396 | 383 | 216 | 112 | 56.4 | 29.2 | 2026-07-16 |
 | Finland | 180 | 180 | 170 | 45 | 25 | 26.5 | 14.7 | 2026-07-16 |
@@ -41,7 +41,7 @@ _Stats as of 2026-07-17 13:39 UTC — last scan: 2026-07-17_
 | Luxembourg | 571 | 571 | 445 | 334 | 146 | 75.1 | 32.8 | 2026-07-15 |
 | Malta | 608 | 608 | 593 | 471 | 1,237 | 79.4 | 208.6 | 2026-07-16 |
 | Netherlands | 937 | 937 | 913 | 415 | 289 | 45.5 | 31.7 | 2026-07-16 |
-| Norway | 239 | 239 | 233 | 131 | 110 | 56.2 | 47.2 | 2026-07-14 |
+| Norway | 239 | 239 | 233 | 131 | 110 | 56.2 | 47.2 | 2026-07-17 |
 | Poland | 1,439 | 14,938 | 1,330 | 680 | 976 | 51.1 | 73.4 | 2026-07-16 |
 | Portugal | 1,360 | 3,503 | 1,157 | 679 | 1,072 | 58.7 | 92.7 | 2026-07-16 |
 | Cyprus | 24 | 24 | 24 | 14 | 15 | 58.3 | 62.5 | 2026-07-14 |
@@ -49,7 +49,7 @@ _Stats as of 2026-07-17 13:39 UTC — last scan: 2026-07-17_
 | Slovakia | 434 | 434 | 415 | 214 | 275 | 51.6 | 66.3 | 2026-07-15 |
 | Slovenia | 200 | 200 | 192 | 53 | 80 | 27.6 | 41.7 | 2026-07-15 |
 | Spain | 1,334 | 6,069 | 1,184 | 584 | 491 | 49.3 | 41.5 | 2026-07-17 |
-| Sweden | 1,558 | 1,558 | 1,472 | 459 | 250 | 31.2 | 17.0 | 2026-07-12 |
+| Sweden | 1,558 | 1,558 | 1,472 | 459 | 252 | 31.2 | 17.1 | 2026-07-17 |
 | Switzerland | 730 | 2,117 | 715 | 160 | 171 | 22.4 | 23.9 | 2026-07-13 |
 | United Kingdom | 620 | 19,502 | 586 | 315 | 368 | 53.8 | 62.8 | 2026-07-13 |
 
@@ -63,9 +63,9 @@ _Stats as of 2026-07-17 13:39 UTC — last scan: 2026-07-17_
 |--:|---------|------:|
 | 1 | jsDelivr CDN | **2,975** |
 | 2 | cdnjs (Cloudflare CDN) | **2,535** |
-| 3 | Google Analytics (GA4) | **1,990** |
+| 3 | Google Analytics (GA4) | **1,986** |
 | 4 | jQuery | **1,062** |
-| 5 | Google reCAPTCHA | **972** |
+| 5 | Google reCAPTCHA | **973** |
 | 6 | unpkg CDN | **833** |
 | 7 | Google Tag Manager | **808** |
 | 8 | Google Hosted Libraries | **665** |
@@ -86,10 +86,10 @@ _Stats as of 2026-07-17 13:39 UTC — last scan: 2026-07-17_
 
 | # | Service | Reachable Pages | Prevalence of Reachable Pages |
 |--:|---------|----------------:|------------------------------:|
-| 1 | Google Analytics (GA4) | **1,951** | **332.9%** |
+| 1 | Google Analytics (GA4) | **1,947** | **332.3%** |
 | 2 | jsDelivr CDN | **1,765** | **301.2%** |
 | 3 | cdnjs (Cloudflare CDN) | **1,085** | **185.2%** |
-| 4 | Google reCAPTCHA | **944** | **161.1%** |
+| 4 | Google reCAPTCHA | **945** | **161.3%** |
 | 5 | Google Tag Manager | **782** | **133.4%** |
 | 6 | jQuery | **755** | **128.8%** |
 | 7 | unpkg CDN | **617** | **105.3%** |
@@ -112,11 +112,11 @@ _Stats as of 2026-07-17 13:39 UTC — last scan: 2026-07-17_
 | # | Category | Loads |
 |--:|----------|------:|
 | 1 | CDN | **7,008** |
-| 2 | Analytics | **2,144** |
+| 2 | Analytics | **2,140** |
 | 3 | JavaScript Library | **1,727** |
-| 4 | Security | **1,010** |
+| 4 | Security | **1,011** |
 | 5 | Cookie Consent | **976** |
-| 6 | CAPTCHA | **972** |
+| 6 | CAPTCHA | **973** |
 | 7 | Tag Manager | **839** |
 | 8 | Icon Library | **283** |
 | 9 | UI Framework | **218** |
@@ -142,10 +142,10 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 
 | # | Policy-Relevant Category | Loads |
 |--:|--------------------------|------:|
-| 1 | Analytics | **2,144** |
-| 2 | Security | **1,010** |
+| 1 | Analytics | **2,140** |
+| 2 | Security | **1,011** |
 | 3 | Cookie Consent | **976** |
-| 4 | CAPTCHA | **972** |
+| 4 | CAPTCHA | **973** |
 | 5 | Tag Manager | **839** |
 | 6 | Advertising | **77** |
 | 7 | Error Tracking | **29** |
@@ -169,7 +169,7 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 | 8 | `customer.cludo.com` | **327** | **247** |
 | 9 | `maps.googleapis.com` | **319** | **304** |
 | 10 | `www.youtube.com` | **275** | **275** |
-| 11 | `cookie-notice.plzen.eu` | **274** | **146** |
+| 11 | `cookie-notice.plzen.eu` | **272** | **145** |
 | 12 | `cdn.public.lu` | **267** | **209** |
 | 13 | `cdn.datatables.net` | **263** | **86** |
 | 14 | `cm-ob.pt` | **249** | **17** |
