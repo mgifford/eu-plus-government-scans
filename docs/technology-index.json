@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-07-17 03:01 UTC",
+  "generated_at": "2026-07-17 03:22 UTC",
   "base_url": "https://mgifford.github.io/eu-plus-government-scans/",
   "note": "Compact cross-reference index: technology → page count, categories, and per-country page counts. For full per-URL drilldown data see the technology-data.json workflow artifact.",
   "by_technology": {
     "jQuery": {
-      "pages": 34845,
+      "pages": 34841,
       "categories": [
         "JavaScript libraries"
       ],
@@ -24,7 +24,7 @@
         "ICELAND": 72,
         "IRELAND": 279,
         "ITALY": 3290,
-        "LATVIA": 300,
+        "LATVIA": 296,
         "LITHUANIA": 65,
         "LUXEMBOURG": 213,
         "MALTA": 493,
@@ -43,7 +43,7 @@
       }
     },
     "PHP": {
-      "pages": 21300,
+      "pages": 21289,
       "categories": [
         "Programming languages"
       ],
@@ -63,7 +63,7 @@
         "ICELAND": 40,
         "IRELAND": 128,
         "ITALY": 1768,
-        "LATVIA": 234,
+        "LATVIA": 223,
         "LITHUANIA": 32,
         "LUXEMBOURG": 63,
         "MALTA": 410,
@@ -199,7 +199,7 @@
       }
     },
     "Google Font API": {
-      "pages": 12880,
+      "pages": 12869,
       "categories": [
         "Font scripts"
       ],
@@ -219,7 +219,7 @@
         "ICELAND": 31,
         "IRELAND": 123,
         "ITALY": 525,
-        "LATVIA": 171,
+        "LATVIA": 160,
         "LITHUANIA": 31,
         "LUXEMBOURG": 43,
         "MALTA": 357,
@@ -238,7 +238,7 @@
       }
     },
     "MySQL": {
-      "pages": 11955,
+      "pages": 11952,
       "categories": [
         "Databases"
       ],
@@ -258,7 +258,7 @@
         "ICELAND": 13,
         "IRELAND": 63,
         "ITALY": 1163,
-        "LATVIA": 117,
+        "LATVIA": 114,
         "LITHUANIA": 27,
         "LUXEMBOURG": 44,
         "MALTA": 402,
@@ -277,7 +277,7 @@
       }
     },
     "WordPress": {
-      "pages": 11867,
+      "pages": 11864,
       "categories": [
         "Blogs",
         "CMS"
@@ -298,7 +298,7 @@
         "ICELAND": 13,
         "IRELAND": 63,
         "ITALY": 1163,
-        "LATVIA": 117,
+        "LATVIA": 114,
         "LITHUANIA": 27,
         "LUXEMBOURG": 44,
         "MALTA": 402,
@@ -317,7 +317,7 @@
       }
     },
     "Nginx": {
-      "pages": 11354,
+      "pages": 11357,
       "categories": [
         "Reverse proxies",
         "Web servers"
@@ -338,7 +338,7 @@
         "ICELAND": 28,
         "IRELAND": 114,
         "ITALY": 683,
-        "LATVIA": 152,
+        "LATVIA": 155,
         "LITHUANIA": 9,
         "LUXEMBOURG": 27,
         "MALTA": 21,
@@ -357,7 +357,7 @@
       }
     },
     "jQuery Migrate": {
-      "pages": 10452,
+      "pages": 10449,
       "categories": [
         "JavaScript libraries"
       ],
@@ -377,7 +377,7 @@
         "ICELAND": 16,
         "IRELAND": 81,
         "ITALY": 526,
-        "LATVIA": 108,
+        "LATVIA": 105,
         "LITHUANIA": 19,
         "LUXEMBOURG": 40,
         "MALTA": 397,
@@ -628,7 +628,7 @@
       }
     },
     "Drupal": {
-      "pages": 4909,
+      "pages": 4906,
       "categories": [
         "CMS"
       ],
@@ -648,7 +648,7 @@
         "ICELAND": 27,
         "IRELAND": 58,
         "ITALY": 352,
-        "LATVIA": 53,
+        "LATVIA": 50,
         "LUXEMBOURG": 9,
         "MALTA": 10,
         "NETHERLANDS": 102,
@@ -664,7 +664,7 @@
       }
     },
     "jsDelivr": {
-      "pages": 4691,
+      "pages": 4689,
       "categories": [
         "CDN"
       ],
@@ -684,7 +684,7 @@
         "ICELAND": 5,
         "IRELAND": 61,
         "ITALY": 235,
-        "LATVIA": 318,
+        "LATVIA": 316,
         "LITHUANIA": 18,
         "LUXEMBOURG": 35,
         "MALTA": 242,
@@ -1026,7 +1026,7 @@
       }
     },
     "LiteSpeed": {
-      "pages": 1938,
+      "pages": 1935,
       "categories": [
         "Web servers"
       ],
@@ -1041,7 +1041,7 @@
         "HUNGARY": 4,
         "IRELAND": 3,
         "ITALY": 16,
-        "LATVIA": 6,
+        "LATVIA": 3,
         "LITHUANIA": 2,
         "MALTA": 3,
         "NETHERLANDS": 16,
@@ -2040,7 +2040,7 @@
       }
     },
     "Litespeed Cache": {
-      "pages": 611,
+      "pages": 608,
       "categories": [
         "Caching"
       ],
@@ -2051,7 +2051,6 @@
         "GERMANY": 3,
         "GREECE": 14,
         "IRELAND": 6,
-        "LATVIA": 3,
         "LITHUANIA": 2,
         "MALTA": 6,
         "NETHERLANDS": 6,
@@ -2345,6 +2344,60 @@
         "UNITED_KINGDOM_UK": 63
       }
     },
+    "Lua": {
+      "pages": 487,
+      "categories": [
+        "Programming languages"
+      ],
+      "by_country": {
+        "BELGIUM": 14,
+        "CZECHIA": 5,
+        "FRANCE": 138,
+        "GERMANY": 3,
+        "GREECE": 2,
+        "IRELAND": 15,
+        "ITALY": 12,
+        "LATVIA": 11,
+        "LITHUANIA": 5,
+        "LUXEMBOURG": 2,
+        "NETHERLANDS": 2,
+        "POLAND": 132,
+        "PORTUGAL": 84,
+        "ROMANIA": 2,
+        "SLOVAKIA": 13,
+        "SPAIN": 8,
+        "SWEDEN": 6,
+        "SWITZERLAND": 18,
+        "UNITED_KINGDOM_UK": 15
+      }
+    },
+    "OpenResty": {
+      "pages": 487,
+      "categories": [
+        "Web servers"
+      ],
+      "by_country": {
+        "BELGIUM": 14,
+        "CZECHIA": 5,
+        "FRANCE": 138,
+        "GERMANY": 3,
+        "GREECE": 2,
+        "IRELAND": 15,
+        "ITALY": 12,
+        "LATVIA": 11,
+        "LITHUANIA": 5,
+        "LUXEMBOURG": 2,
+        "NETHERLANDS": 2,
+        "POLAND": 132,
+        "PORTUGAL": 84,
+        "ROMANIA": 2,
+        "SLOVAKIA": 13,
+        "SPAIN": 8,
+        "SWEDEN": 6,
+        "SWITZERLAND": 18,
+        "UNITED_KINGDOM_UK": 15
+      }
+    },
     "Lodash": {
       "pages": 481,
       "categories": [
@@ -2369,60 +2422,6 @@
         "SWEDEN": 22,
         "SWITZERLAND": 4,
         "UNITED_KINGDOM_UK": 224
-      }
-    },
-    "Lua": {
-      "pages": 479,
-      "categories": [
-        "Programming languages"
-      ],
-      "by_country": {
-        "BELGIUM": 14,
-        "CZECHIA": 5,
-        "FRANCE": 138,
-        "GERMANY": 3,
-        "GREECE": 2,
-        "IRELAND": 15,
-        "ITALY": 12,
-        "LATVIA": 3,
-        "LITHUANIA": 5,
-        "LUXEMBOURG": 2,
-        "NETHERLANDS": 2,
-        "POLAND": 132,
-        "PORTUGAL": 84,
-        "ROMANIA": 2,
-        "SLOVAKIA": 13,
-        "SPAIN": 8,
-        "SWEDEN": 6,
-        "SWITZERLAND": 18,
-        "UNITED_KINGDOM_UK": 15
-      }
-    },
-    "OpenResty": {
-      "pages": 479,
-      "categories": [
-        "Web servers"
-      ],
-      "by_country": {
-        "BELGIUM": 14,
-        "CZECHIA": 5,
-        "FRANCE": 138,
-        "GERMANY": 3,
-        "GREECE": 2,
-        "IRELAND": 15,
-        "ITALY": 12,
-        "LATVIA": 3,
-        "LITHUANIA": 5,
-        "LUXEMBOURG": 2,
-        "NETHERLANDS": 2,
-        "POLAND": 132,
-        "PORTUGAL": 84,
-        "ROMANIA": 2,
-        "SLOVAKIA": 13,
-        "SPAIN": 8,
-        "SWEDEN": 6,
-        "SWITZERLAND": 18,
-        "UNITED_KINGDOM_UK": 15
       }
     },
     "script.aculo.us": {
@@ -7272,7 +7271,7 @@
   },
   "by_category": {
     "JavaScript libraries": {
-      "pages": 69377,
+      "pages": 69370,
       "technologies": [
         "Bootstrap Table",
         "DHTMLX",
@@ -7313,7 +7312,7 @@
       ]
     },
     "Web servers": {
-      "pages": 39882,
+      "pages": 39890,
       "technologies": [
         "Akka HTTP",
         "Amazon EC2",
@@ -7354,7 +7353,7 @@
       ]
     },
     "Font scripts": {
-      "pages": 28732,
+      "pages": 28721,
       "technologies": [
         "Cufon",
         "Font Awesome",
@@ -7365,7 +7364,7 @@
       ]
     },
     "Programming languages": {
-      "pages": 27475,
+      "pages": 27472,
       "technologies": [
         "CFML",
         "Go",
@@ -7379,7 +7378,7 @@
       ]
     },
     "CMS": {
-      "pages": 22536,
+      "pages": 22530,
       "technologies": [
         "AMP Plugin",
         "Adobe Experience Manager",
@@ -7460,7 +7459,7 @@
       ]
     },
     "CDN": {
-      "pages": 12511,
+      "pages": 12509,
       "technologies": [
         "Akamai",
         "Amazon Cloudfront",
@@ -7474,7 +7473,7 @@
       ]
     },
     "Databases": {
-      "pages": 12509,
+      "pages": 12506,
       "technologies": [
         "Firebase",
         "Lucene",
@@ -7488,7 +7487,7 @@
       ]
     },
     "Blogs": {
-      "pages": 11941,
+      "pages": 11938,
       "technologies": [
         "Blogger",
         "Ghost",
@@ -7498,7 +7497,7 @@
       ]
     },
     "Reverse proxies": {
-      "pages": 11672,
+      "pages": 11675,
       "technologies": [
         "Envoy",
         "F5 BigIP",
@@ -7623,7 +7622,7 @@
       ]
     },
     "Caching": {
-      "pages": 4200,
+      "pages": 4197,
       "technologies": [
         "Google PageSpeed",
         "Litespeed Cache",
