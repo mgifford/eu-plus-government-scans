@@ -5,9 +5,9 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-07-18 14:36 UTC — last scan: 2026-07-18_
+_Stats as of 2026-07-18 15:15 UTC — last scan: 2026-07-18_
 
-**175** scan batches run
+**177** scan batches run
 
 **69,679** of **82,714** available pages scanned (**84.2%** coverage)
 **64,275** pages with technology detections (**92.2%** of scanned)
@@ -20,7 +20,7 @@ _Stats as of 2026-07-18 14:36 UTC — last scan: 2026-07-18_
 | Country | URLs Scanned | Pages with Detections | Available | Last Scan |
 |---------|-------------|----------------------|-----------|----------|
 | Austria | 821 | 787 | 821 | 2026-07-12 |
-| Belgium | 1,309 | 1,224 | 1,309 | 2026-07-15 |
+| Belgium | 1,309 | 1,224 | 1,309 | 2026-07-18 |
 | Bulgaria | 291 | 265 | 291 | 2026-07-12 |
 | Croatia | 233 | 231 | 233 | 2026-07-12 |
 | Czechia | 843 | 806 | 843 | 2026-07-13 |
@@ -33,7 +33,7 @@ _Stats as of 2026-07-18 14:36 UTC — last scan: 2026-07-18_
 | Hungary | 390 | 298 | 390 | 2026-07-13 |
 | Iceland | 139 | 137 | 139 | 2026-07-13 |
 | Ireland | 522 | 490 | 522 | 2026-07-14 |
-| Italy | 5,338 | 4,820 | 5,338 | 2026-07-16 |
+| Italy | 5,338 | 4,820 | 5,338 | 2026-07-18 |
 | Latvia | 802 | 774 | 802 | 2026-07-17 |
 | Lithuania | 120 | 110 | 120 | 2026-07-17 |
 | Luxembourg | 571 | 445 | 571 | 2026-07-17 |
@@ -61,13 +61,13 @@ _Stats as of 2026-07-18 14:36 UTC — last scan: 2026-07-18_
 |--:|-----------|------:|-----------|
 | 1 | jQuery | **34,862** | JavaScript libraries |
 | 2 | PHP | **21,326** | Programming languages |
-| 3 | Apache | **18,660** | Web servers |
+| 3 | Apache | **18,661** | Web servers |
 | 4 | Bootstrap | **16,120** | UI frameworks |
-| 5 | Font Awesome | **15,354** | Font scripts |
+| 5 | Font Awesome | **15,353** | Font scripts |
 | 6 | Google Font API | **12,893** | Font scripts |
 | 7 | MySQL | **11,984** | Databases |
 | 8 | WordPress | **11,894** | Blogs, CMS |
-| 9 | Nginx | **11,335** | Reverse proxies, Web servers |
+| 9 | Nginx | **11,334** | Reverse proxies, Web servers |
 | 10 | jQuery Migrate | **10,478** | JavaScript libraries |
 | 11 | Windows Server | **5,896** | Operating systems |
 | 12 | IIS | **5,807** | Web servers |
@@ -85,16 +85,16 @@ _Stats as of 2026-07-18 14:36 UTC — last scan: 2026-07-18_
 | # | Category | Pages |
 |--:|---------|------:|
 | 1 | JavaScript libraries | **69,452** |
-| 2 | Web servers | **39,870** |
-| 3 | Font scripts | **28,757** |
-| 4 | Programming languages | **27,490** |
+| 2 | Web servers | **39,871** |
+| 3 | Font scripts | **28,756** |
+| 4 | Programming languages | **27,491** |
 | 5 | CMS | **22,564** |
 | 6 | UI frameworks | **21,365** |
 | 7 | Databases | **12,548** |
 | 8 | CDN | **12,516** |
 | 9 | Blogs | **11,968** |
-| 10 | Reverse proxies | **11,653** |
-| 11 | Operating systems | **9,889** |
+| 10 | Reverse proxies | **11,652** |
+| 11 | Operating systems | **9,890** |
 | 12 | Web frameworks | **8,037** |
 | 13 | JavaScript frameworks | **6,676** |
 | 14 | Miscellaneous | **5,189** |
