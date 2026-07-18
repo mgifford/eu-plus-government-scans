@@ -55,19 +55,21 @@ def _format_age_days(days: float | None) -> str:
 def _progress_bar(completed: int, total: int, width: int = 20) -> str:
     """Return an HTML progress bar for report tables.
 
-    The bar is styled with inline CSS and meets WCAG 2.2 AA requirements:
-
-    - Fill colours achieve ≥ 3:1 contrast against white (WCAG 1.4.11).
-    - The percentage label (#374151) achieves > 9:1 contrast on white.
-    - ``role="img"`` + ``aria-label`` provide a text alternative for
-      screen readers (WCAG 1.1.1).
+    The bar's colours come from ``docs/_sass/custom.scss`` (classes
+    ``sm-bar``, ``sm-bar__fill--green|amber|red``, ``sm-bar__label``) so
+    they track the site's light/dark theme instead of being frozen at
+    build time. Only non-themed geometry (bar and fill width in px) is
+    inline. ``role="img"`` + ``aria-label`` provide a text alternative for
+    screen readers (WCAG 1.1.1); the fill/label classes are verified to
+    meet WCAG 1.4.11 (≥ 3:1) and 1.4.3 (≥ 4.5:1 for the label) in both
+    themes.
 
     Colour is mapped to completion level so the chart conveys status at
     a glance:
 
-    - ≥ 67 %  → green  (#15803d, ~5.1:1 on white)
-    - 34–66 % → amber  (#b45309, ~5.1:1 on white)
-    - < 34 %  → red    (#b91c1c, ~6.0:1 on white)
+    - ≥ 67 %  → green
+    - 34–66 % → amber
+    - < 34 %  → red
 
     Args:
         completed: Number of items completed.
@@ -86,24 +88,19 @@ def _progress_bar(completed: int, total: int, width: int = 20) -> str:
     if completed > 0 and filled_px == 0:
         filled_px = _BAR_MIN_SLIVER_PX
 
-    # WCAG 1.4.11 Non-text Contrast: fill colour needs ≥ 3:1 vs background.
     if pct >= _BAR_GREEN_THRESHOLD:
-        fill = "#15803d"  # green-700
+        fill_class = "sm-bar__fill--green"
     elif pct >= _BAR_AMBER_THRESHOLD:
-        fill = "#b45309"  # amber-700
+        fill_class = "sm-bar__fill--amber"
     else:
-        fill = "#b91c1c"  # red-700
+        fill_class = "sm-bar__fill--red"
 
     return (
-        f'<span role="img" aria-label="{pct_display} complete"'
-        f' style="display:inline-flex;align-items:center;gap:4px;'
-        f'vertical-align:middle;">'
-        f'<span style="display:inline-block;width:{bar_px}px;height:12px;'
-        f'background:#e2e8f0;border-radius:2px;overflow:hidden;">'
-        f'<span style="display:block;width:{filled_px}px;height:100%;'
-        f'background:{fill};"></span>'
+        f'<span role="img" aria-label="{pct_display} complete" class="sm-bar">'
+        f'<span class="sm-bar__track" style="width:{bar_px}px;">'
+        f'<span class="sm-bar__fill {fill_class}" style="width:{filled_px}px;"></span>'
         f'</span>'
-        f'<span style="font-size:0.85em;color:#374151;">{pct_display}</span>'
+        f'<span class="sm-bar__label">{pct_display}</span>'
         f'</span>'
     )
 
