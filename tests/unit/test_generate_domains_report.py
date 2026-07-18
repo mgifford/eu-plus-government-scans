@@ -81,11 +81,23 @@ def empty_toon_dir(tmp_path: Path) -> Path:
 # tests
 # ---------------------------------------------------------------------------
 
-def test_generate_domains_report_creates_file(toon_dir: Path, tmp_path: Path):
-    """Report file should be created."""
+def test_generate_domains_report_creates_index_file(
+    toon_dir: Path, tmp_path: Path
+):
+    """Index file should be created."""
     output_path = tmp_path / "domains.md"
     generate_domains_report(toon_dir, output_path)
     assert output_path.exists()
+
+
+def test_generate_domains_report_creates_country_pages(
+    toon_dir: Path, tmp_path: Path
+):
+    """One page per country should be created under the countries dir."""
+    output_path = tmp_path / "domains.md"
+    generate_domains_report(toon_dir, output_path)
+    assert (tmp_path / "domains" / "france.md").exists()
+    assert (tmp_path / "domains" / "iceland.md").exists()
 
 
 def test_generate_domains_report_empty_dir(empty_toon_dir: Path, tmp_path: Path):
@@ -99,10 +111,10 @@ def test_generate_domains_report_empty_dir(empty_toon_dir: Path, tmp_path: Path)
     assert "No TOON seed files found" in content
 
 
-def test_generate_domains_report_has_expected_sections(
+def test_generate_domains_report_index_lists_countries(
     toon_dir: Path, tmp_path: Path
 ):
-    """Report should contain country sections and domain tables."""
+    """Index page should list each country with a link to its own page."""
     output_path = tmp_path / "domains.md"
     generate_domains_report(toon_dir, output_path)
     content = output_path.read_text()
@@ -110,23 +122,70 @@ def test_generate_domains_report_has_expected_sections(
     assert "title: Government Domains" in content
     assert "layout: page" in content
     assert "## Countries" in content
-    assert "## France" in content
-    assert "## Iceland" in content
+    assert "[France](domains/france.html)" in content
+    assert "[Iceland](domains/iceland.html)" in content
 
 
-def test_generate_domains_report_domain_entries(toon_dir: Path, tmp_path: Path):
-    """Each domain should appear in the report."""
+def test_generate_domains_report_index_has_no_domain_tables(
+    toon_dir: Path, tmp_path: Path
+):
+    """Index page should not contain the raw per-domain tables."""
     output_path = tmp_path / "domains.md"
     generate_domains_report(toon_dir, output_path)
     content = output_path.read_text()
 
-    assert "example.is" in content
-    assert "gov.is" in content
-    assert "gouvernement.fr" in content
+    assert "example.is" not in content
+    assert "gouvernement.fr" not in content
+
+
+def test_generate_domains_report_country_page_domain_entries(
+    toon_dir: Path, tmp_path: Path
+):
+    """Each domain should appear on its own country's page."""
+    output_path = tmp_path / "domains.md"
+    generate_domains_report(toon_dir, output_path)
+
+    iceland_content = (tmp_path / "domains" / "iceland.md").read_text()
+    france_content = (tmp_path / "domains" / "france.md").read_text()
+
+    assert "example.is" in iceland_content
+    assert "gov.is" in iceland_content
+    assert "gouvernement.fr" in france_content
+    assert "example.is" not in france_content
+
+
+def test_generate_domains_report_country_page_frontmatter(
+    toon_dir: Path, tmp_path: Path
+):
+    """Country pages should include Jekyll front matter with a permalink."""
+    output_path = tmp_path / "domains.md"
+    generate_domains_report(toon_dir, output_path)
+
+    content = (tmp_path / "domains" / "iceland.md").read_text()
+    assert content.startswith("---\n")
+    assert "title: Iceland Government Domains" in content
+    assert "permalink: /domains/iceland.html" in content
+    assert "layout: page" in content
+
+
+def test_generate_domains_report_country_page_back_link_is_relative(
+    toon_dir: Path, tmp_path: Path
+):
+    """The back-link must be a relative path so it respects site.baseurl.
+
+    An absolute path like /domains.html would ignore Jekyll's baseurl
+    (e.g. "/eu-plus-government-scans") and 404 once deployed.
+    """
+    output_path = tmp_path / "domains.md"
+    generate_domains_report(toon_dir, output_path)
+
+    content = (tmp_path / "domains" / "iceland.md").read_text()
+    assert "[← Back to all countries](../domains.html)" in content
+    assert "(/domains.html)" not in content
 
 
 def test_generate_domains_report_totals(toon_dir: Path, tmp_path: Path):
-    """Report header should show correct totals."""
+    """Index header should show correct totals."""
     output_path = tmp_path / "domains.md"
     generate_domains_report(toon_dir, output_path)
     content = output_path.read_text()
@@ -140,30 +199,32 @@ def test_generate_domains_report_totals(toon_dir: Path, tmp_path: Path):
 def test_generate_domains_report_sorted_alphabetically(
     toon_dir: Path, tmp_path: Path
 ):
-    """Countries should appear in alphabetical order."""
+    """Countries should appear in alphabetical order on the index page."""
     output_path = tmp_path / "domains.md"
     generate_domains_report(toon_dir, output_path)
     content = output_path.read_text()
 
-    france_pos = content.index("## France")
-    iceland_pos = content.index("## Iceland")
+    france_pos = content.index("France")
+    iceland_pos = content.index("Iceland")
     assert france_pos < iceland_pos, "France should appear before Iceland alphabetically"
 
 
 def test_generate_domains_report_page_links(toon_dir: Path, tmp_path: Path):
-    """Domain entries should include page links."""
+    """Country page domain entries should include page links."""
     output_path = tmp_path / "domains.md"
     generate_domains_report(toon_dir, output_path)
-    content = output_path.read_text()
 
-    assert "https://example.is/" in content
-    assert "https://www.gouvernement.fr/" in content
-    assert "Visit example.is homepage" in content
-    assert "[https://example.is/](https://example.is/)" not in content
+    iceland_content = (tmp_path / "domains" / "iceland.md").read_text()
+    france_content = (tmp_path / "domains" / "france.md").read_text()
+
+    assert "https://example.is/" in iceland_content
+    assert "https://www.gouvernement.fr/" in france_content
+    assert "Visit example.is homepage" in iceland_content
+    assert "[https://example.is/](https://example.is/)" not in iceland_content
 
 
 def test_generate_domains_report_has_frontmatter(toon_dir: Path, tmp_path: Path):
-    """Report should include Jekyll front matter."""
+    """Index page should include Jekyll front matter."""
     output_path = tmp_path / "domains.md"
     generate_domains_report(toon_dir, output_path)
     content = output_path.read_text()
@@ -199,7 +260,7 @@ def test_generate_domains_report_many_pages_truncated(
 
     output_path = tmp_path / "domains.md"
     generate_domains_report(countries_dir, output_path)
-    content = output_path.read_text()
+    content = (tmp_path / "domains" / "testland.md").read_text()
 
     # Should mention "+7 more" (10 pages - 3 shown = 7)
     assert "+7 more" in content
