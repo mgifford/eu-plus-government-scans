@@ -1,485 +1,306 @@
 {
-  "country": "Bulgaria",
-  "total_relationships": 832,
+  "country_code": "BULGARIA",
+  "total_relationships": 1002,
   "total_source_domains": 22,
-  "total_unique_targets": 245,
-  "gov_to_gov_pairs": 0,
-  "relationship_types": {
-    "editorial_link": 457,
-    "script_dependency": 125,
-    "stylesheet_dependency": 110,
-    "image_or_media_dependency": 80,
-    "form_destination": 55,
-    "font_or_preload_dependency": 5
-  },
   "top_source_domains": [
     {
       "domain": "sofia.bg",
-      "observations": 382,
-      "unique_targets": 93,
-      "relationship_types": {
-        "editorial_link": 114,
-        "script_dependency": 25,
-        "stylesheet_dependency": 20,
-        "image_or_media_dependency": 14,
-        "form_destination": 15,
-        "font_or_preload_dependency": 3
-      }
-    },
-    {
-      "domain": "varna.bg",
-      "observations": 142,
-      "unique_targets": 28,
-      "relationship_types": {
-        "editorial_link": 33,
-        "script_dependency": 9,
-        "stylesheet_dependency": 8,
-        "image_or_media_dependency": 5,
-        "form_destination": 5
-      }
+      "count": 990
     },
     {
       "domain": "gabrovo.bg",
-      "observations": 110,
-      "unique_targets": 22,
-      "relationship_types": {
-        "editorial_link": 27,
-        "script_dependency": 11,
-        "stylesheet_dependency": 12,
-        "image_or_media_dependency": 8,
-        "form_destination": 2
-      }
+      "count": 588
     },
     {
-      "domain": "pleven.bg",
-      "observations": 109,
-      "unique_targets": 21,
-      "relationship_types": {
-        "script_dependency": 8,
-        "stylesheet_dependency": 7,
-        "image_or_media_dependency": 7,
-        "form_destination": 6,
-        "editorial_link": 24,
-        "font_or_preload_dependency": 1
-      }
-    },
-    {
-      "domain": "sliven.bg",
-      "observations": 89,
-      "unique_targets": 19,
-      "relationship_types": {
-        "editorial_link": 29,
-        "script_dependency": 5,
-        "stylesheet_dependency": 7,
-        "image_or_media_dependency": 4,
-        "form_destination": 2
-      }
+      "domain": "varna.bg",
+      "count": 582
     },
     {
       "domain": "burgas.bg",
-      "observations": 84,
-      "unique_targets": 18,
-      "relationship_types": {
-        "editorial_link": 21,
-        "script_dependency": 8,
-        "image_or_media_dependency": 7,
-        "stylesheet_dependency": 5,
-        "form_destination": 4
-      }
+      "count": 404
     },
     {
-      "domain": "shumen.bg",
-      "observations": 79,
-      "unique_targets": 16,
-      "relationship_types": {
-        "editorial_link": 18,
-        "script_dependency": 5,
-        "stylesheet_dependency": 6,
-        "image_or_media_dependency": 2,
-        "form_destination": 2
-      }
-    },
-    {
-      "domain": "lovech.bg",
-      "observations": 76,
-      "unique_targets": 8,
-      "relationship_types": {
-        "editorial_link": 14,
-        "script_dependency": 5,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 3,
-        "form_destination": 3
-      }
+      "domain": "pleven.bg",
+      "count": 388
     },
     {
       "domain": "nsi.bg",
-      "observations": 74,
-      "unique_targets": 15,
-      "relationship_types": {
-        "script_dependency": 8,
-        "stylesheet_dependency": 5,
-        "font_or_preload_dependency": 1,
-        "editorial_link": 20,
-        "image_or_media_dependency": 3,
-        "form_destination": 3
-      }
+      "count": 300
     },
     {
       "domain": "pernik.bg",
-      "observations": 69,
-      "unique_targets": 32,
-      "relationship_types": {
-        "editorial_link": 30,
-        "script_dependency": 10,
-        "stylesheet_dependency": 5,
-        "image_or_media_dependency": 5,
-        "form_destination": 2
-      }
+      "count": 278
+    },
+    {
+      "domain": "shumen.bg",
+      "count": 238
+    },
+    {
+      "domain": "sliven.bg",
+      "count": 232
     },
     {
       "domain": "haskovo.bg",
-      "observations": 68,
-      "unique_targets": 27,
-      "relationship_types": {
-        "editorial_link": 32,
-        "script_dependency": 8,
-        "stylesheet_dependency": 8,
-        "image_or_media_dependency": 5,
-        "form_destination": 2
-      }
+      "count": 192
+    },
+    {
+      "domain": "lovech.bg",
+      "count": 178
     },
     {
       "domain": "president.bg",
-      "observations": 61,
-      "unique_targets": 11,
-      "relationship_types": {
-        "editorial_link": 14,
-        "script_dependency": 3,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 2
-      }
-    },
-    {
-      "domain": "silistra.bg",
-      "observations": 41,
-      "unique_targets": 13,
-      "relationship_types": {
-        "editorial_link": 18,
-        "script_dependency": 1,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 3,
-        "form_destination": 1
-      }
+      "count": 152
     },
     {
       "domain": "pazardzhik.bg",
-      "observations": 38,
-      "unique_targets": 8,
-      "relationship_types": {
-        "editorial_link": 9,
-        "script_dependency": 2,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "yambol.bg",
-      "observations": 35,
-      "unique_targets": 12,
-      "relationship_types": {
-        "editorial_link": 13,
-        "script_dependency": 2,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
+      "count": 132
     },
     {
       "domain": "dobrich.bg",
-      "observations": 29,
-      "unique_targets": 12,
-      "relationship_types": {
-        "script_dependency": 3,
-        "stylesheet_dependency": 5,
-        "editorial_link": 13,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
+      "count": 122
+    },
+    {
+      "domain": "yambol.bg",
+      "count": 114
     },
     {
       "domain": "plovdiv.bg",
-      "observations": 22,
-      "unique_targets": 13,
-      "relationship_types": {
-        "editorial_link": 10,
-        "script_dependency": 5,
-        "stylesheet_dependency": 4,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
+      "count": 94
     },
     {
-      "domain": "mfa.bg",
-      "observations": 21,
-      "unique_targets": 12,
-      "relationship_types": {
-        "editorial_link": 12,
-        "script_dependency": 3,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
+      "domain": "silistra.bg",
+      "count": 82
     },
     {
       "domain": "bnb.bg",
-      "observations": 12,
-      "unique_targets": 2,
-      "relationship_types": {
-        "editorial_link": 3,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 2,
-        "script_dependency": 1,
-        "form_destination": 1
-      }
+      "count": 56
+    },
+    {
+      "domain": "mfa.bg",
+      "count": 45
     },
     {
       "domain": "parliament.bg",
-      "observations": 6,
-      "unique_targets": 1,
-      "relationship_types": {
-        "script_dependency": 1,
-        "stylesheet_dependency": 2,
-        "editorial_link": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
+      "count": 36
     },
     {
       "domain": "ombudsman.bg",
-      "observations": 5,
-      "unique_targets": 1,
-      "relationship_types": {
-        "editorial_link": 1,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
+      "count": 30
     },
     {
       "domain": "nra.bg",
-      "observations": 4,
-      "unique_targets": 1,
-      "relationship_types": {
-        "editorial_link": 1,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1
-      }
+      "count": 16
     }
   ],
-  "top_targets": [
+  "top_target_domains": [
     {
       "domain": "sofia.bg",
-      "observations": 171
-    },
-    {
-      "domain": "varna.bg",
-      "observations": 71
-    },
-    {
-      "domain": "pleven.bg",
-      "observations": 69
-    },
-    {
-      "domain": "facebook.com",
-      "observations": 63
+      "count": 450
     },
     {
       "domain": "gabrovo.bg",
-      "observations": 63
+      "count": 280
     },
     {
-      "domain": "burgas.bg",
-      "observations": 55
+      "domain": "varna.bg",
+      "count": 276
+    },
+    {
+      "domain": "pleven.bg",
+      "count": 220
+    },
+    {
+      "domain": "facebook.com",
+      "count": 196
     },
     {
       "domain": "nsi.bg",
-      "observations": 50
+      "count": 192
     },
     {
-      "domain": "google.com",
-      "observations": 47
-    },
-    {
-      "domain": "lovech.bg",
-      "observations": 46
+      "domain": "burgas.bg",
+      "count": 188
     },
     {
       "domain": "googleapis.com",
-      "observations": 45
+      "count": 158
+    },
+    {
+      "domain": "google.com",
+      "count": 154
+    },
+    {
+      "domain": "lovech.bg",
+      "count": 106
     },
     {
       "domain": "sliven.bg",
-      "observations": 40
-    },
-    {
-      "domain": "haskovo.bg",
-      "observations": 34
-    },
-    {
-      "domain": "shumen.bg",
-      "observations": 29
-    },
-    {
-      "domain": "nksoftware.net",
-      "observations": 26
-    },
-    {
-      "domain": "president.bg",
-      "observations": 26
+      "count": 106
     },
     {
       "domain": "pernik.bg",
-      "observations": 24
+      "count": 98
     },
     {
       "domain": "youtube.com",
-      "observations": 23
+      "count": 96
     },
     {
-      "domain": "silistra.bg",
-      "observations": 23
+      "domain": "haskovo.bg",
+      "count": 94
     },
     {
-      "domain": "cloudflare.com",
-      "observations": 20
+      "domain": "shumen.bg",
+      "count": 86
     },
     {
-      "domain": "googletagmanager.com",
-      "observations": 19
-    },
-    {
-      "domain": "pazardzhik.bg",
-      "observations": 18
-    },
-    {
-      "domain": "egov.bg",
-      "observations": 17
-    },
-    {
-      "domain": "twitter.com",
-      "observations": 15
-    },
-    {
-      "domain": "uslugi.io",
-      "observations": 15
+      "domain": "nksoftware.net",
+      "count": 84
     },
     {
       "domain": "government.bg",
-      "observations": 15
-    },
-    {
-      "domain": "mfa.bg",
-      "observations": 14
+      "count": 68
     },
     {
       "domain": "dobrich.bg",
-      "observations": 14
+      "count": 68
     },
     {
-      "domain": "imeon.bg",
-      "observations": 13
+      "domain": "president.bg",
+      "count": 68
+    },
+    {
+      "domain": "pazardzhik.bg",
+      "count": 64
+    },
+    {
+      "domain": "googletagmanager.com",
+      "count": 60
+    },
+    {
+      "domain": "cloudflare.com",
+      "count": 58
     },
     {
       "domain": "instagram.com",
-      "observations": 13
-    },
-    {
-      "domain": "jsdelivr.net",
-      "observations": 12
-    },
-    {
-      "domain": "gstatic.com",
-      "observations": 12
-    },
-    {
-      "domain": "yambol.bg",
-      "observations": 12
-    },
-    {
-      "domain": "europa.eu",
-      "observations": 11
+      "count": 54
     },
     {
       "domain": "bnb.bg",
-      "observations": 11
+      "count": 52
+    },
+    {
+      "domain": "gstatic.com",
+      "count": 52
+    },
+    {
+      "domain": "jsdelivr.net",
+      "count": 46
     },
     {
       "domain": "parliament.bg",
-      "observations": 10
+      "count": 46
     },
     {
-      "domain": "sliven.net",
-      "observations": 9
+      "domain": "silistra.bg",
+      "count": 46
     },
     {
-      "domain": "eop.bg",
-      "observations": 7
+      "domain": "uslugi.io",
+      "count": 44
     },
     {
-      "domain": "itservice-bg.net",
-      "observations": 7
+      "domain": "egov.bg",
+      "count": 44
     },
     {
-      "domain": "jquery.com",
-      "observations": 6
+      "domain": "yambol.bg",
+      "count": 40
     },
     {
-      "domain": "plovdiv.bg",
-      "observations": 6
+      "domain": "imeon.bg",
+      "count": 38
     },
     {
-      "domain": "fontawesome.com",
-      "observations": 6
+      "domain": "twitter.com",
+      "count": 37
     },
     {
-      "domain": "linkedin.com",
-      "observations": 5
+      "domain": "mfa.bg",
+      "count": 31
     },
     {
-      "domain": "openweathermap.org",
-      "observations": 5
-    },
-    {
-      "domain": "116111.bg",
-      "observations": 5
-    },
-    {
-      "domain": "forms.gle",
-      "observations": 5
-    },
-    {
-      "domain": "ormy.io",
-      "observations": 5
-    },
-    {
-      "domain": "youtu.be",
-      "observations": 5
+      "domain": "europa.eu",
+      "count": 30
     },
     {
       "domain": "ombudsman.bg",
-      "observations": 5
+      "count": 30
     },
     {
-      "domain": "viber.com",
-      "observations": 4
+      "domain": "eop.bg",
+      "count": 28
     },
     {
-      "domain": "apple.com",
-      "observations": 4
+      "domain": "plovdiv.bg",
+      "count": 24
+    },
+    {
+      "domain": "sliven.net",
+      "count": 22
+    },
+    {
+      "domain": "itservice-bg.net",
+      "count": 22
+    },
+    {
+      "domain": "116111.bg",
+      "count": 21
+    },
+    {
+      "domain": "jquery.com",
+      "count": 20
+    },
+    {
+      "domain": "smartburgas.eu",
+      "count": 20
+    },
+    {
+      "domain": "openweathermap.org",
+      "count": 18
+    },
+    {
+      "domain": "nra.bg",
+      "count": 18
+    },
+    {
+      "domain": "arcgis.com",
+      "count": 16
+    },
+    {
+      "domain": "forms.gle",
+      "count": 16
+    },
+    {
+      "domain": "cookiedatabase.org",
+      "count": 16
+    },
+    {
+      "domain": "youtu.be",
+      "count": 16
+    },
+    {
+      "domain": "evroto.bg",
+      "count": 16
     }
   ],
-  "gov_to_gov_links": []
+  "relationship_types": {
+    "editorial_link": 561,
+    "script_dependency": 148,
+    "stylesheet_dependency": 125,
+    "image_or_media_dependency": 94,
+    "form_destination": 64,
+    "font_or_preload_dependency": 10
+  },
+  "generated_at": "2026-07-18T17:13:16.594633+00:00"
 }

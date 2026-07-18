@@ -1,1379 +1,418 @@
 {
-  "country": "France",
-  "total_relationships": 1695,
-  "total_source_domains": 97,
-  "total_unique_targets": 392,
-  "gov_to_gov_pairs": 93,
-  "relationship_types": {
-    "editorial_link": 915,
-    "script_dependency": 258,
-    "stylesheet_dependency": 216,
-    "image_or_media_dependency": 179,
-    "form_destination": 82,
-    "font_or_preload_dependency": 45
-  },
+  "country_code": "FRANCE",
+  "total_relationships": 9032,
+  "total_source_domains": 196,
   "top_source_domains": [
     {
       "domain": "auvergnerhonealpes.fr",
-      "observations": 381,
-      "unique_targets": 25,
-      "relationship_types": {
-        "editorial_link": 63,
-        "script_dependency": 26,
-        "stylesheet_dependency": 13,
-        "image_or_media_dependency": 33,
-        "form_destination": 1,
-        "font_or_preload_dependency": 1
-      }
-    },
-    {
-      "domain": "paris.fr",
-      "observations": 207,
-      "unique_targets": 22,
-      "relationship_types": {
-        "editorial_link": 64,
-        "script_dependency": 22,
-        "stylesheet_dependency": 20,
-        "image_or_media_dependency": 19,
-        "form_destination": 6
-      }
-    },
-    {
-      "domain": "toulouse.fr",
-      "observations": 103,
-      "unique_targets": 29,
-      "relationship_types": {
-        "editorial_link": 50,
-        "script_dependency": 9,
-        "stylesheet_dependency": 6,
-        "image_or_media_dependency": 5,
-        "font_or_preload_dependency": 2,
-        "form_destination": 3
-      }
-    },
-    {
-      "domain": "developpement-durable.gouv.fr",
-      "observations": 90,
-      "unique_targets": 9,
-      "relationship_types": {
-        "editorial_link": 17,
-        "script_dependency": 7,
-        "stylesheet_dependency": 7,
-        "image_or_media_dependency": 7,
-        "form_destination": 7
-      }
-    },
-    {
-      "domain": "bourgognefranchecomte.fr",
-      "observations": 58,
-      "unique_targets": 31,
-      "relationship_types": {
-        "editorial_link": 34,
-        "script_dependency": 8,
-        "stylesheet_dependency": 7,
-        "image_or_media_dependency": 3,
-        "form_destination": 2
-      }
-    },
-    {
-      "domain": "normandie.fr",
-      "observations": 41,
-      "unique_targets": 29,
-      "relationship_types": {
-        "editorial_link": 31,
-        "script_dependency": 4,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
+      "count": 21514
     },
     {
       "domain": "haute-garonne.fr",
-      "observations": 40,
-      "unique_targets": 5,
-      "relationship_types": {
-        "editorial_link": 11,
-        "script_dependency": 2,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 4
-      }
+      "count": 3979
     },
     {
-      "domain": "interieur.gouv.fr",
-      "observations": 37,
-      "unique_targets": 10,
-      "relationship_types": {
-        "editorial_link": 20,
-        "script_dependency": 4,
-        "stylesheet_dependency": 5,
-        "image_or_media_dependency": 3,
-        "form_destination": 3
-      }
-    },
-    {
-      "domain": "defense.gouv.fr",
-      "observations": 33,
-      "unique_targets": 19,
-      "relationship_types": {
-        "editorial_link": 15,
-        "script_dependency": 7,
-        "stylesheet_dependency": 7,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "valdoise.fr",
-      "observations": 32,
-      "unique_targets": 12,
-      "relationship_types": {
-        "editorial_link": 9,
-        "script_dependency": 2,
-        "stylesheet_dependency": 3,
-        "font_or_preload_dependency": 1,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
+      "domain": "paris.fr",
+      "count": 3837
     },
     {
       "domain": "cnam.fr",
-      "observations": 30,
-      "unique_targets": 6,
-      "relationship_types": {
-        "editorial_link": 19,
-        "script_dependency": 2,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 3,
-        "form_destination": 2
-      }
+      "count": 1839
     },
     {
-      "domain": "aude.fr",
-      "observations": 29,
-      "unique_targets": 16,
-      "relationship_types": {
-        "editorial_link": 10,
-        "script_dependency": 6,
-        "font_or_preload_dependency": 2,
-        "stylesheet_dependency": 7,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
+      "domain": "toulouse.fr",
+      "count": 1224
     },
     {
-      "domain": "monparcourshandicap.gouv.fr",
-      "observations": 27,
-      "unique_targets": 21,
-      "relationship_types": {
-        "editorial_link": 21,
-        "script_dependency": 3,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
+      "domain": "herault.fr",
+      "count": 310
+    },
+    {
+      "domain": "bourgognefranchecomte.fr",
+      "count": 245
+    },
+    {
+      "domain": "developpement-durable.gouv.fr",
+      "count": 203
+    },
+    {
+      "domain": "departement06.fr",
+      "count": 177
+    },
+    {
+      "domain": "bordeaux.fr",
+      "count": 149
+    },
+    {
+      "domain": "seine-et-marne.fr",
+      "count": 122
+    },
+    {
+      "domain": "bordeaux-metropole.fr",
+      "count": 112
+    },
+    {
+      "domain": "cotesdarmor.fr",
+      "count": 107
+    },
+    {
+      "domain": "culture.gouv.fr",
+      "count": 106
+    },
+    {
+      "domain": "valdoise.fr",
+      "count": 104
+    },
+    {
+      "domain": "metropole-rouen-normandie.fr",
+      "count": 96
+    },
+    {
+      "domain": "anct.gouv.fr",
+      "count": 72
     },
     {
       "domain": "manche.fr",
-      "observations": 27,
-      "unique_targets": 21,
-      "relationship_types": {
-        "editorial_link": 22,
-        "script_dependency": 1,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
+      "count": 71
     },
     {
-      "domain": "nievre.fr",
-      "observations": 26,
-      "unique_targets": 12,
-      "relationship_types": {
-        "editorial_link": 11,
-        "script_dependency": 3,
-        "stylesheet_dependency": 3,
-        "font_or_preload_dependency": 2,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
+      "domain": "lyon.fr",
+      "count": 64
     },
     {
-      "domain": "departement06.fr",
-      "observations": 25,
-      "unique_targets": 9,
-      "relationship_types": {
-        "editorial_link": 10,
-        "script_dependency": 3,
-        "font_or_preload_dependency": 2,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 2,
-        "form_destination": 2
-      }
+      "domain": "montpellier.fr",
+      "count": 63
     },
     {
-      "domain": "haute-vienne.fr",
-      "observations": 25,
-      "unique_targets": 14,
-      "relationship_types": {
-        "editorial_link": 19,
-        "stylesheet_dependency": 2,
-        "form_destination": 2,
-        "script_dependency": 1,
-        "image_or_media_dependency": 1
-      }
-    },
-    {
-      "domain": "cotesdarmor.fr",
-      "observations": 25,
-      "unique_targets": 13,
-      "relationship_types": {
-        "editorial_link": 20,
-        "script_dependency": 2,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "cc-plateaupicard.fr",
-      "observations": 23,
-      "unique_targets": 15,
-      "relationship_types": {
-        "editorial_link": 9,
-        "script_dependency": 6,
-        "stylesheet_dependency": 4,
-        "font_or_preload_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "emploi.gouv.fr",
-      "observations": 23,
-      "unique_targets": 11,
-      "relationship_types": {
-        "editorial_link": 21,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1
-      }
-    },
-    {
-      "domain": "fonction-publique.gouv.fr",
-      "observations": 22,
-      "unique_targets": 7,
-      "relationship_types": {
-        "editorial_link": 6,
-        "script_dependency": 2,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "cc-dufrontonnais.fr",
-      "observations": 22,
-      "unique_targets": 17,
-      "relationship_types": {
-        "editorial_link": 16,
-        "script_dependency": 2,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
+      "domain": "laregionvoustransporte.fr",
+      "count": 60
     },
     {
       "domain": "lenord.fr",
-      "observations": 20,
-      "unique_targets": 12,
-      "relationship_types": {
-        "editorial_link": 8,
-        "script_dependency": 2,
-        "font_or_preload_dependency": 7,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1
-      }
+      "count": 58
     },
     {
-      "domain": "education.gouv.fr",
-      "observations": 20,
-      "unique_targets": 4,
-      "relationship_types": {
-        "editorial_link": 8,
-        "script_dependency": 3,
-        "stylesheet_dependency": 3,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "nancy.fr",
-      "observations": 20,
-      "unique_targets": 8,
-      "relationship_types": {
-        "editorial_link": 11,
-        "script_dependency": 4,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 2
-      }
-    },
-    {
-      "domain": "herault.fr",
-      "observations": 19,
-      "unique_targets": 8,
-      "relationship_types": {
-        "editorial_link": 15,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
+      "domain": "maine-et-loire.fr",
+      "count": 58
     },
     {
       "domain": "data.gouv.fr",
-      "observations": 19,
-      "unique_targets": 5,
-      "relationship_types": {
-        "editorial_link": 11,
-        "script_dependency": 3,
-        "image_or_media_dependency": 2,
-        "stylesheet_dependency": 2,
-        "form_destination": 1
-      }
+      "count": 58
     },
     {
-      "domain": "angers.fr",
-      "observations": 19,
-      "unique_targets": 12,
-      "relationship_types": {
-        "editorial_link": 13,
-        "script_dependency": 3,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
+      "domain": "beta.gouv.fr",
+      "count": 57
     },
     {
-      "domain": "seine-et-marne.fr",
-      "observations": 17,
-      "unique_targets": 5,
-      "relationship_types": {
-        "editorial_link": 5,
-        "script_dependency": 4,
-        "stylesheet_dependency": 4,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
+      "domain": "france-services.gouv.fr",
+      "count": 57
     },
     {
-      "domain": "esante.gouv.fr",
-      "observations": 17,
-      "unique_targets": 9,
-      "relationship_types": {
-        "editorial_link": 8,
-        "stylesheet_dependency": 5,
-        "image_or_media_dependency": 2,
-        "script_dependency": 1
-      }
-    },
-    {
-      "domain": "ille-et-vilaine.gouv.fr",
-      "observations": 17,
-      "unique_targets": 12,
-      "relationship_types": {
-        "editorial_link": 12,
-        "script_dependency": 2,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "eure.gouv.fr",
-      "observations": 17,
-      "unique_targets": 13,
-      "relationship_types": {
-        "editorial_link": 13,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "cc-salagou.fr",
-      "observations": 17,
-      "unique_targets": 12,
-      "relationship_types": {
-        "editorial_link": 12,
-        "script_dependency": 1,
-        "font_or_preload_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "metropole-rouen-normandie.fr",
-      "observations": 16,
-      "unique_targets": 3,
-      "relationship_types": {
-        "editorial_link": 4,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "bordeaux.fr",
-      "observations": 16,
-      "unique_targets": 4,
-      "relationship_types": {
-        "editorial_link": 5,
-        "script_dependency": 4,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 2,
-        "form_destination": 2
-      }
-    },
-    {
-      "domain": "grandangouleme.fr",
-      "observations": 16,
-      "unique_targets": 10,
-      "relationship_types": {
-        "editorial_link": 6,
-        "script_dependency": 4,
-        "font_or_preload_dependency": 1,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "pour-les-personnes-agees.gouv.fr",
-      "observations": 16,
-      "unique_targets": 12,
-      "relationship_types": {
-        "editorial_link": 10,
-        "script_dependency": 4,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1
-      }
-    },
-    {
-      "domain": "selestat-territoires.fr",
-      "observations": 16,
-      "unique_targets": 10,
-      "relationship_types": {
-        "editorial_link": 7,
-        "script_dependency": 3,
-        "stylesheet_dependency": 3,
-        "font_or_preload_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "hautesavoie.fr",
-      "observations": 15,
-      "unique_targets": 8,
-      "relationship_types": {
-        "editorial_link": 10,
-        "script_dependency": 2,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "vendee.fr",
-      "observations": 15,
-      "unique_targets": 9,
-      "relationship_types": {
-        "image_or_media_dependency": 3,
-        "editorial_link": 9,
-        "script_dependency": 1,
-        "stylesheet_dependency": 2
-      }
-    },
-    {
-      "domain": "loire-atlantique.fr",
-      "observations": 15,
-      "unique_targets": 8,
-      "relationship_types": {
-        "editorial_link": 6,
-        "script_dependency": 4,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "lillemetropole.fr",
-      "observations": 15,
-      "unique_targets": 7,
-      "relationship_types": {
-        "editorial_link": 5,
-        "script_dependency": 2,
-        "stylesheet_dependency": 4,
-        "font_or_preload_dependency": 2,
-        "image_or_media_dependency": 2
-      }
-    },
-    {
-      "domain": "vae.gouv.fr",
-      "observations": 15,
-      "unique_targets": 10,
-      "relationship_types": {
-        "editorial_link": 10,
-        "script_dependency": 1,
-        "font_or_preload_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 2
-      }
-    },
-    {
-      "domain": "amiens.fr",
-      "observations": 14,
-      "unique_targets": 8,
-      "relationship_types": {
-        "editorial_link": 6,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "font_or_preload_dependency": 1,
-        "image_or_media_dependency": 4,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "stop-punaises.gouv.fr",
-      "observations": 14,
-      "unique_targets": 10,
-      "relationship_types": {
-        "editorial_link": 11,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1
-      }
+      "domain": "nantes.fr",
+      "count": 55
     },
     {
       "domain": "agriculture.gouv.fr",
-      "observations": 14,
-      "unique_targets": 9,
-      "relationship_types": {
-        "editorial_link": 9,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "cantal.gouv.fr",
-      "observations": 13,
-      "unique_targets": 9,
-      "relationship_types": {
-        "editorial_link": 9,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "morbihan.fr",
-      "observations": 13,
-      "unique_targets": 6,
-      "relationship_types": {
-        "editorial_link": 10,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1
-      }
-    },
-    {
-      "domain": "travail-emploi.gouv.fr",
-      "observations": 13,
-      "unique_targets": 8,
-      "relationship_types": {
-        "editorial_link": 8,
-        "script_dependency": 2,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "gard.fr",
-      "observations": 13,
-      "unique_targets": 9,
-      "relationship_types": {
-        "editorial_link": 8,
-        "script_dependency": 1,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 1
-      }
-    }
-  ],
-  "top_targets": [
-    {
-      "domain": "auvergnerhonealpes.fr",
-      "observations": 281
-    },
-    {
-      "domain": "paris.fr",
-      "observations": 154
-    },
-    {
-      "domain": "facebook.com",
-      "observations": 66
-    },
-    {
-      "domain": "googleapis.com",
-      "observations": 43
-    },
-    {
-      "domain": "developpement-durable.gouv.fr",
-      "observations": 42
-    },
-    {
-      "domain": "toulouse.fr",
-      "observations": 42
-    },
-    {
-      "domain": "linkedin.com",
-      "observations": 40
-    },
-    {
-      "domain": "instagram.com",
-      "observations": 38
-    },
-    {
-      "domain": "data.gouv.fr",
-      "observations": 37
-    },
-    {
-      "domain": "youtube.com",
-      "observations": 35
-    },
-    {
-      "domain": "skolengo.com",
-      "observations": 34
-    },
-    {
-      "domain": "haute-garonne.fr",
-      "observations": 31
-    },
-    {
-      "domain": "twitter.com",
-      "observations": 30
-    },
-    {
-      "domain": "legifrance.gouv.fr",
-      "observations": 29
-    },
-    {
-      "domain": "jsdelivr.net",
-      "observations": 26
-    },
-    {
-      "domain": "cnam.fr",
-      "observations": 25
-    },
-    {
-      "domain": "interieur.gouv.fr",
-      "observations": 24
-    },
-    {
-      "domain": "github.com",
-      "observations": 23
-    },
-    {
-      "domain": "service-public.fr",
-      "observations": 19
-    },
-    {
-      "domain": "google.com",
-      "observations": 18
-    },
-    {
-      "domain": "bourgognefranchecomte.fr",
-      "observations": 18
-    },
-    {
-      "domain": "unpkg.com",
-      "observations": 17
-    },
-    {
-      "domain": "info.gouv.fr",
-      "observations": 16
-    },
-    {
-      "domain": "ac-grenoble.fr",
-      "observations": 16
-    },
-    {
-      "domain": "cloudflare.com",
-      "observations": 14
-    },
-    {
-      "domain": "education.gouv.fr",
-      "observations": 14
-    },
-    {
-      "domain": "cotesdarmor.fr",
-      "observations": 13
-    },
-    {
-      "domain": "puy-de-dome.fr",
-      "observations": 13
-    },
-    {
-      "domain": "gstatic.com",
-      "observations": 13
-    },
-    {
-      "domain": "tarteaucitron.io",
-      "observations": 13
-    },
-    {
-      "domain": "metropole-rouen-normandie.fr",
-      "observations": 12
-    },
-    {
-      "domain": "departement06.fr",
-      "observations": 12
-    },
-    {
-      "domain": "herault.fr",
-      "observations": 12
-    },
-    {
-      "domain": "x.com",
-      "observations": 12
-    },
-    {
-      "domain": "seine-et-marne.fr",
-      "observations": 12
-    },
-    {
-      "domain": "defense.gouv.fr",
-      "observations": 12
-    },
-    {
-      "domain": "bordeaux.fr",
-      "observations": 12
-    },
-    {
-      "domain": "valdoise.fr",
-      "observations": 12
-    },
-    {
-      "domain": "emploi.gouv.fr",
-      "observations": 12
-    },
-    {
-      "domain": "haute-vienne.fr",
-      "observations": 11
-    },
-    {
-      "domain": "service-public.gouv.fr",
-      "observations": 11
-    },
-    {
-      "domain": "bootstrapcdn.com",
-      "observations": 11
-    },
-    {
-      "domain": "nievre.fr",
-      "observations": 11
-    },
-    {
-      "domain": "fonction-publique.gouv.fr",
-      "observations": 10
+      "count": 55
     },
     {
       "domain": "normandie.fr",
-      "observations": 10
+      "count": 48
+    },
+    {
+      "domain": "hautsdefrance.fr",
+      "count": 44
+    },
+    {
+      "domain": "cc-laveyle.fr",
+      "count": 43
+    },
+    {
+      "domain": "angers.fr",
+      "count": 41
+    },
+    {
+      "domain": "sarthe.gouv.fr",
+      "count": 40
+    },
+    {
+      "domain": "grandannecy.fr",
+      "count": 40
+    },
+    {
+      "domain": "vendee.fr",
+      "count": 40
+    },
+    {
+      "domain": "education.gouv.fr",
+      "count": 38
+    },
+    {
+      "domain": "numerique.gouv.fr",
+      "count": 38
+    },
+    {
+      "domain": "ampmetropole.fr",
+      "count": 38
+    },
+    {
+      "domain": "code.gouv.fr",
+      "count": 38
+    },
+    {
+      "domain": "georisques.gouv.fr",
+      "count": 37
+    },
+    {
+      "domain": "dreets.gouv.fr",
+      "count": 35
+    },
+    {
+      "domain": "defense.gouv.fr",
+      "count": 34
+    },
+    {
+      "domain": "service-public.gouv.fr",
+      "count": 34
+    },
+    {
+      "domain": "orne.fr",
+      "count": 33
+    },
+    {
+      "domain": "cc-valleedelhomme.fr",
+      "count": 33
+    },
+    {
+      "domain": "hautespyrenees.fr",
+      "count": 30
+    },
+    {
+      "domain": "maritimelimits.gouv.fr",
+      "count": 27
+    },
+    {
+      "domain": "moselle.fr",
+      "count": 27
+    },
+    {
+      "domain": "grandangouleme.fr",
+      "count": 26
+    },
+    {
+      "domain": "marches-publics.gouv.fr",
+      "count": 26
+    }
+  ],
+  "top_target_domains": [
+    {
+      "domain": "auvergnerhonealpes.fr",
+      "count": 16074
+    },
+    {
+      "domain": "haute-garonne.fr",
+      "count": 2990
+    },
+    {
+      "domain": "paris.fr",
+      "count": 2677
+    },
+    {
+      "domain": "skolengo.com",
+      "count": 2015
+    },
+    {
+      "domain": "cnam.fr",
+      "count": 1261
+    },
+    {
+      "domain": "ac-grenoble.fr",
+      "count": 758
+    },
+    {
+      "domain": "toulouse.fr",
+      "count": 543
+    },
+    {
+      "domain": "ac-lyon.fr",
+      "count": 515
     },
     {
       "domain": "ac-clermont.fr",
-      "observations": 9
+      "count": 492
     },
     {
-      "domain": "jquery.com",
-      "observations": 9
+      "domain": "facebook.com",
+      "count": 485
+    },
+    {
+      "domain": "instagram.com",
+      "count": 312
+    },
+    {
+      "domain": "twitter.com",
+      "count": 304
+    },
+    {
+      "domain": "linkedin.com",
+      "count": 290
+    },
+    {
+      "domain": "ac-toulouse.fr",
+      "count": 288
+    },
+    {
+      "domain": "europe-en-occitanie.eu",
+      "count": 283
+    },
+    {
+      "domain": "isere.fr",
+      "count": 237
+    },
+    {
+      "domain": "googleapis.com",
+      "count": 199
+    },
+    {
+      "domain": "youtube.com",
+      "count": 194
+    },
+    {
+      "domain": "herault.fr",
+      "count": 183
+    },
+    {
+      "domain": "puy-de-dome.fr",
+      "count": 170
+    },
+    {
+      "domain": "unpkg.com",
+      "count": 149
     },
     {
       "domain": "hautesavoie.fr",
-      "observations": 9
+      "count": 144
     },
     {
-      "domain": "googletagmanager.com",
-      "observations": 9
+      "domain": "ain.fr",
+      "count": 144
     },
     {
-      "domain": "aude.fr",
-      "observations": 9
+      "domain": "education.gouv.fr",
+      "count": 131
+    },
+    {
+      "domain": "data.gouv.fr",
+      "count": 117
+    },
+    {
+      "domain": "savoie.fr",
+      "count": 113
+    },
+    {
+      "domain": "google.com",
+      "count": 110
+    },
+    {
+      "domain": "defenseurdesdroits.fr",
+      "count": 105
+    },
+    {
+      "domain": "allier.fr",
+      "count": 102
+    },
+    {
+      "domain": "bourgognefranchecomte.fr",
+      "count": 101
+    },
+    {
+      "domain": "legifrance.gouv.fr",
+      "count": 99
+    },
+    {
+      "domain": "departement06.fr",
+      "count": 94
+    },
+    {
+      "domain": "developpement-durable.gouv.fr",
+      "count": 93
+    },
+    {
+      "domain": "rhone.fr",
+      "count": 90
+    },
+    {
+      "domain": "toulouse-metropole.fr",
+      "count": 84
+    },
+    {
+      "domain": "bordeaux.fr",
+      "count": 83
+    },
+    {
+      "domain": "github.com",
+      "count": 76
+    },
+    {
+      "domain": "numerique.gouv.fr",
+      "count": 76
+    },
+    {
+      "domain": "seine-et-marne.fr",
+      "count": 73
+    },
+    {
+      "domain": "jsdelivr.net",
+      "count": 72
+    },
+    {
+      "domain": "info.gouv.fr",
+      "count": 65
+    },
+    {
+      "domain": "gstatic.com",
+      "count": 65
+    },
+    {
+      "domain": "service-public.gouv.fr",
+      "count": 63
+    },
+    {
+      "domain": "metropole-rouen-normandie.fr",
+      "count": 62
+    },
+    {
+      "domain": "agriculture.gouv.fr",
+      "count": 59
+    },
+    {
+      "domain": "culture.gouv.fr",
+      "count": 59
+    },
+    {
+      "domain": "cloudflare.com",
+      "count": 58
+    },
+    {
+      "domain": "tarteaucitron.io",
+      "count": 58
+    },
+    {
+      "domain": "cotesdarmor.fr",
+      "count": 56
+    },
+    {
+      "domain": "hauteloire.fr",
+      "count": 55
     }
   ],
-  "gov_to_gov_links": [
-    {
-      "source": "monparcourshandicap.gouv.fr",
-      "target": "info.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "monparcourshandicap.gouv.fr",
-      "target": "service-public.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "monparcourshandicap.gouv.fr",
-      "target": "legifrance.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "monparcourshandicap.gouv.fr",
-      "target": "data.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "developpement-durable.gouv.fr",
-      "target": "info.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "developpement-durable.gouv.fr",
-      "target": "service-public.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "developpement-durable.gouv.fr",
-      "target": "legifrance.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "developpement-durable.gouv.fr",
-      "target": "data.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "fonction-publique.gouv.fr",
-      "target": "legifrance.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "fonction-publique.gouv.fr",
-      "target": "service-public.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "fonction-publique.gouv.fr",
-      "target": "gouvernement.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "fonction-publique.gouv.fr",
-      "target": "data.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "defense.gouv.fr",
-      "target": "lamarinerecrute.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "defense.gouv.fr",
-      "target": "marinenationale.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "defense.gouv.fr",
-      "target": "imagesdefense.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "cantal.gouv.fr",
-      "target": "service-public.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "cantal.gouv.fr",
-      "target": "info.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "cantal.gouv.fr",
-      "target": "legifrance.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "cantal.gouv.fr",
-      "target": "data.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "ille-et-vilaine.gouv.fr",
-      "target": "interieur.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "ille-et-vilaine.gouv.fr",
-      "target": "info.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "ille-et-vilaine.gouv.fr",
-      "target": "service-public.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "ille-et-vilaine.gouv.fr",
-      "target": "legifrance.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "ille-et-vilaine.gouv.fr",
-      "target": "data.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "travail-emploi.gouv.fr",
-      "target": "moncompteformation.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "travail-emploi.gouv.fr",
-      "target": "legifrance.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "travail-emploi.gouv.fr",
-      "target": "info.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "travail-emploi.gouv.fr",
-      "target": "service-public.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "travail-emploi.gouv.fr",
-      "target": "data.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "esante.gouv.fr",
-      "target": "sante.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "esante.gouv.fr",
-      "target": "solidarites-sante.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "esante.gouv.fr",
-      "target": "legifrance.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "esante.gouv.fr",
-      "target": "service-public.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "interieur.gouv.fr",
-      "target": "franceconnect.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "interieur.gouv.fr",
-      "target": "legifrance.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "interieur.gouv.fr",
-      "target": "gouvernement.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "interieur.gouv.fr",
-      "target": "service-public.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "interieur.gouv.fr",
-      "target": "data.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "sports.gouv.fr",
-      "target": "legifrance.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "sports.gouv.fr",
-      "target": "gouvernement.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "sports.gouv.fr",
-      "target": "service-public.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "sports.gouv.fr",
-      "target": "data.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "data.gouv.fr",
-      "target": "api.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "eure.gouv.fr",
-      "target": "service-public.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "eure.gouv.fr",
-      "target": "info.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "eure.gouv.fr",
-      "target": "service-public.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "eure.gouv.fr",
-      "target": "legifrance.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "eure.gouv.fr",
-      "target": "data.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "etudiant.gouv.fr",
-      "target": "franceconnect.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "etudiant.gouv.fr",
-      "target": "ameli.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "etudiant.gouv.fr",
-      "target": "enseignementsup-recherche.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "jeprotegemonenfant.gouv.fr",
-      "target": "legifrance.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "jeprotegemonenfant.gouv.fr",
-      "target": "gouvernement.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "jeprotegemonenfant.gouv.fr",
-      "target": "service-public.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "jeprotegemonenfant.gouv.fr",
-      "target": "data.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "finances.gouv.fr",
-      "target": "economie.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "education.gouv.fr",
-      "target": "service-public.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "education.gouv.fr",
-      "target": "legifrance.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "education.gouv.fr",
-      "target": "franceconnect.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "arretonslesviolences.gouv.fr",
-      "target": "service-public.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "arretonslesviolences.gouv.fr",
-      "target": "europa.eu",
-      "target_country": "EU Institutions",
-      "cross_country": true
-    },
-    {
-      "source": "arretonslesviolences.gouv.fr",
-      "target": "legifrance.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "arretonslesviolences.gouv.fr",
-      "target": "gouvernement.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "arretonslesviolences.gouv.fr",
-      "target": "data.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "stop-punaises.gouv.fr",
-      "target": "legifrance.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "stop-punaises.gouv.fr",
-      "target": "info.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "stop-punaises.gouv.fr",
-      "target": "service-public.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "stop-punaises.gouv.fr",
-      "target": "data.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "stop-punaises.gouv.fr",
-      "target": "ecologie.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "vae.gouv.fr",
-      "target": "info.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "vae.gouv.fr",
-      "target": "service-public.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "vae.gouv.fr",
-      "target": "legifrance.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "vae.gouv.fr",
-      "target": "data.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "pour-les-personnes-agees.gouv.fr",
-      "target": "gouvernement.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "pour-les-personnes-agees.gouv.fr",
-      "target": "service-public.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "pour-les-personnes-agees.gouv.fr",
-      "target": "legifrance.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "pour-les-personnes-agees.gouv.fr",
-      "target": "data.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "ecologie.gouv.fr",
-      "target": "europa.eu",
-      "target_country": "EU Institutions",
-      "cross_country": true
-    },
-    {
-      "source": "ecologie.gouv.fr",
-      "target": "legifrance.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "ecologie.gouv.fr",
-      "target": "info.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "ecologie.gouv.fr",
-      "target": "service-public.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "ecologie.gouv.fr",
-      "target": "data.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "agriculture.gouv.fr",
-      "target": "info.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "agriculture.gouv.fr",
-      "target": "service-public.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "agriculture.gouv.fr",
-      "target": "legifrance.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "agriculture.gouv.fr",
-      "target": "data.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "emploi.gouv.fr",
-      "target": "moncompteformation.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "emploi.gouv.fr",
-      "target": "travail.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "emploi.gouv.fr",
-      "target": "info.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "emploi.gouv.fr",
-      "target": "service-public.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "emploi.gouv.fr",
-      "target": "legifrance.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "emploi.gouv.fr",
-      "target": "data.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    },
-    {
-      "source": "emploi.gouv.fr",
-      "target": "beta.gouv.fr",
-      "target_country": "France",
-      "cross_country": false
-    }
-  ]
+  "relationship_types": {
+    "editorial_link": 4257,
+    "script_dependency": 1532,
+    "stylesheet_dependency": 1435,
+    "image_or_media_dependency": 1338,
+    "form_destination": 352,
+    "font_or_preload_dependency": 118
+  },
+  "generated_at": "2026-07-18T17:13:16.648374+00:00"
 }

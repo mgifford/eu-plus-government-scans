@@ -1,1052 +1,358 @@
 {
-  "country": "Austria",
-  "total_relationships": 1624,
-  "total_source_domains": 30,
-  "total_unique_targets": 510,
-  "gov_to_gov_pairs": 79,
-  "relationship_types": {
-    "editorial_link": 897,
-    "script_dependency": 199,
-    "stylesheet_dependency": 181,
-    "image_or_media_dependency": 177,
-    "form_destination": 148,
-    "font_or_preload_dependency": 22
-  },
+  "country_code": "AUSTRIA",
+  "total_relationships": 2928,
+  "total_source_domains": 35,
   "top_source_domains": [
     {
-      "domain": "ooe.gv.at",
-      "observations": 1114,
-      "unique_targets": 293,
-      "relationship_types": {
-        "script_dependency": 63,
-        "font_or_preload_dependency": 6,
-        "stylesheet_dependency": 62,
-        "editorial_link": 404,
-        "image_or_media_dependency": 65,
-        "form_destination": 59
-      }
+      "domain": "steiermark.at",
+      "count": 7879
     },
     {
-      "domain": "steiermark.at",
-      "observations": 1007,
-      "unique_targets": 79,
-      "relationship_types": {
-        "editorial_link": 167,
-        "script_dependency": 53,
-        "stylesheet_dependency": 49,
-        "image_or_media_dependency": 53,
-        "form_destination": 47,
-        "font_or_preload_dependency": 3
-      }
+      "domain": "ooe.gv.at",
+      "count": 6736
     },
     {
       "domain": "wien.gv.at",
-      "observations": 186,
-      "unique_targets": 35,
-      "relationship_types": {
-        "editorial_link": 53,
-        "script_dependency": 19,
-        "stylesheet_dependency": 17,
-        "image_or_media_dependency": 15,
-        "form_destination": 9,
-        "font_or_preload_dependency": 6
-      }
-    },
-    {
-      "domain": "kaernten.at",
-      "observations": 66,
-      "unique_targets": 36,
-      "relationship_types": {
-        "editorial_link": 34,
-        "script_dependency": 5,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 8,
-        "form_destination": 2
-      }
-    },
-    {
-      "domain": "vorarlberg.at",
-      "observations": 50,
-      "unique_targets": 13,
-      "relationship_types": {
-        "editorial_link": 18,
-        "script_dependency": 5,
-        "stylesheet_dependency": 6,
-        "image_or_media_dependency": 5,
-        "form_destination": 3,
-        "font_or_preload_dependency": 2
-      }
+      "count": 1330
     },
     {
       "domain": "noe.gv.at",
-      "observations": 44,
-      "unique_targets": 25,
-      "relationship_types": {
-        "script_dependency": 4,
-        "stylesheet_dependency": 5,
-        "editorial_link": 30,
-        "image_or_media_dependency": 2,
-        "form_destination": 2
-      }
+      "count": 494
+    },
+    {
+      "domain": "kaernten.at",
+      "count": 466
+    },
+    {
+      "domain": "vorarlberg.at",
+      "count": 432
     },
     {
       "domain": "bundesheer.at",
-      "observations": 41,
-      "unique_targets": 15,
-      "relationship_types": {
-        "editorial_link": 23,
-        "script_dependency": 3,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 2,
-        "form_destination": 2
-      }
+      "count": 398
     },
     {
-      "domain": "stmk.gv.at",
-      "observations": 34,
-      "unique_targets": 11,
-      "relationship_types": {
-        "editorial_link": 16,
-        "script_dependency": 4,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
+      "domain": "ams.at",
+      "count": 228
     },
     {
       "domain": "bmf.gv.at",
-      "observations": 31,
-      "unique_targets": 8,
-      "relationship_types": {
-        "script_dependency": 5,
-        "stylesheet_dependency": 3,
-        "editorial_link": 11,
-        "image_or_media_dependency": 2,
-        "form_destination": 2
-      }
+      "count": 216
     },
     {
-      "domain": "bmbwf.gv.at",
-      "observations": 26,
-      "unique_targets": 3,
-      "relationship_types": {
-        "editorial_link": 4,
-        "script_dependency": 2,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 2,
-        "form_destination": 2
-      }
-    },
-    {
-      "domain": "tirol.gv.at",
-      "observations": 26,
-      "unique_targets": 14,
-      "relationship_types": {
-        "editorial_link": 17,
-        "script_dependency": 2,
-        "stylesheet_dependency": 2,
-        "font_or_preload_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 2
-      }
-    },
-    {
-      "domain": "burgenland.at",
-      "observations": 26,
-      "unique_targets": 18,
-      "relationship_types": {
-        "editorial_link": 20,
-        "script_dependency": 3,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "bmeia.gv.at",
-      "observations": 24,
-      "unique_targets": 16,
-      "relationship_types": {
-        "editorial_link": 16,
-        "script_dependency": 3,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 2
-      }
-    },
-    {
-      "domain": "statistik.at",
-      "observations": 23,
-      "unique_targets": 6,
-      "relationship_types": {
-        "editorial_link": 9,
-        "script_dependency": 3,
-        "stylesheet_dependency": 3,
-        "font_or_preload_dependency": 2,
-        "image_or_media_dependency": 2,
-        "form_destination": 3
-      }
-    },
-    {
-      "domain": "oesterreich.gv.at",
-      "observations": 23,
-      "unique_targets": 7,
-      "relationship_types": {
-        "editorial_link": 8,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "font_or_preload_dependency": 1,
-        "image_or_media_dependency": 1
-      }
-    },
-    {
-      "domain": "salzburg.gv.at",
-      "observations": 22,
-      "unique_targets": 9,
-      "relationship_types": {
-        "editorial_link": 10,
-        "script_dependency": 4,
-        "stylesheet_dependency": 2,
-        "font_or_preload_dependency": 1,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "bmj.gv.at",
-      "observations": 22,
-      "unique_targets": 8,
-      "relationship_types": {
-        "editorial_link": 8,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
+      "domain": "stmk.gv.at",
+      "count": 182
     },
     {
       "domain": "justiz.gv.at",
-      "observations": 21,
-      "unique_targets": 10,
-      "relationship_types": {
-        "editorial_link": 12,
-        "script_dependency": 3,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
+      "count": 178
     },
     {
-      "domain": "fma.gv.at",
-      "observations": 15,
-      "unique_targets": 9,
-      "relationship_types": {
-        "editorial_link": 9,
-        "script_dependency": 3,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
+      "domain": "bmeia.gv.at",
+      "count": 176
     },
     {
-      "domain": "id-austria.gv.at",
-      "observations": 15,
-      "unique_targets": 7,
-      "relationship_types": {
-        "editorial_link": 7,
-        "script_dependency": 3,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
+      "domain": "salzburg.gv.at",
+      "count": 152
     },
     {
-      "domain": "gesundheit.gv.at",
-      "observations": 11,
-      "unique_targets": 6,
-      "relationship_types": {
-        "editorial_link": 7,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "usp.gv.at",
-      "observations": 8,
-      "unique_targets": 1,
-      "relationship_types": {
-        "editorial_link": 4,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "vfgh.gv.at",
-      "observations": 8,
-      "unique_targets": 4,
-      "relationship_types": {
-        "editorial_link": 3,
-        "script_dependency": 1,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "rechnungshof.gv.at",
-      "observations": 8,
-      "unique_targets": 4,
-      "relationship_types": {
-        "editorial_link": 4,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "bmi.gv.at",
-      "observations": 5,
-      "unique_targets": 1,
-      "relationship_types": {
-        "editorial_link": 1,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "vwgh.gv.at",
-      "observations": 5,
-      "unique_targets": 1,
-      "relationship_types": {
-        "editorial_link": 1,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
+      "domain": "tirol.gv.at",
+      "count": 152
     },
     {
       "domain": "bgld.gv.at",
-      "observations": 4,
-      "unique_targets": 2,
-      "relationship_types": {
-        "editorial_link": 1,
-        "image_or_media_dependency": 1,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1
-      }
-    },
-    {
-      "domain": "rtr.at",
-      "observations": 2,
-      "unique_targets": 1,
-      "relationship_types": {
-        "script_dependency": 1,
-        "stylesheet_dependency": 1
-      }
-    },
-    {
-      "domain": "data.gv.at",
-      "observations": 2,
-      "unique_targets": 1,
-      "relationship_types": {
-        "script_dependency": 1,
-        "stylesheet_dependency": 1
-      }
-    },
-    {
-      "domain": "bka.gv.at",
-      "observations": 2,
-      "unique_targets": 1,
-      "relationship_types": {
-        "script_dependency": 1,
-        "stylesheet_dependency": 1
-      }
-    }
-  ],
-  "top_targets": [
-    {
-      "domain": "steiermark.at",
-      "observations": 540
-    },
-    {
-      "domain": "ooe.gv.at",
-      "observations": 397
-    },
-    {
-      "domain": "wien.gv.at",
-      "observations": 130
-    },
-    {
-      "domain": "facebook.com",
-      "observations": 103
-    },
-    {
-      "domain": "stmk.gv.at",
-      "observations": 99
-    },
-    {
-      "domain": "instagram.com",
-      "observations": 69
-    },
-    {
-      "domain": "youtube.com",
-      "observations": 64
-    },
-    {
-      "domain": "gem2go.at",
-      "observations": 58
-    },
-    {
-      "domain": "linkedin.com",
-      "observations": 51
-    },
-    {
-      "domain": "datareporter.eu",
-      "observations": 42
-    },
-    {
-      "domain": "readspeaker.com",
-      "observations": 40
-    },
-    {
-      "domain": "vorarlberg.at",
-      "observations": 36
-    },
-    {
-      "domain": "bmf.gv.at",
-      "observations": 27
-    },
-    {
-      "domain": "oesterreich.gv.at",
-      "observations": 26
-    },
-    {
-      "domain": "bka.gv.at",
-      "observations": 24
-    },
-    {
-      "domain": "bmbwf.gv.at",
-      "observations": 20
-    },
-    {
-      "domain": "statistik.at",
-      "observations": 20
-    },
-    {
-      "domain": "bundesheer.at",
-      "observations": 18
-    },
-    {
-      "domain": "kaernten.at",
-      "observations": 18
-    },
-    {
-      "domain": "noe.gv.at",
-      "observations": 18
-    },
-    {
-      "domain": "wko.at",
-      "observations": 16
-    },
-    {
-      "domain": "doris.at",
-      "observations": 15
-    },
-    {
-      "domain": "altstoffsammelzentrum.at",
-      "observations": 15
-    },
-    {
-      "domain": "salzburg.gv.at",
-      "observations": 15
-    },
-    {
-      "domain": "uwz.at",
-      "observations": 14
-    },
-    {
-      "domain": "land-oberoesterreich.gv.at",
-      "observations": 14
-    },
-    {
-      "domain": "salzkammergut.at",
-      "observations": 13
-    },
-    {
-      "domain": "tirol.gv.at",
-      "observations": 13
-    },
-    {
-      "domain": "dioezese-linz.at",
-      "observations": 12
-    },
-    {
-      "domain": "umweltprofis.at",
-      "observations": 12
-    },
-    {
-      "domain": "bmj.gv.at",
-      "observations": 12
-    },
-    {
-      "domain": "justiz.gv.at",
-      "observations": 12
-    },
-    {
-      "domain": "fundamt.gv.at",
-      "observations": 11
-    },
-    {
-      "domain": "standortooe.at",
-      "observations": 11
-    },
-    {
-      "domain": "flickr.com",
-      "observations": 10
-    },
-    {
-      "domain": "google.com",
-      "observations": 10
+      "count": 144
     },
     {
       "domain": "bmi.gv.at",
-      "observations": 10
+      "count": 128
     },
     {
-      "domain": "id-austria.gv.at",
-      "observations": 10
+      "domain": "bmbwf.gv.at",
+      "count": 122
     },
     {
-      "domain": "bfvff.at",
-      "observations": 9
+      "domain": "burgenland.at",
+      "count": 116
     },
     {
-      "domain": "bfvfb.at",
-      "observations": 9
-    },
-    {
-      "domain": "bvoe.at",
-      "observations": 9
-    },
-    {
-      "domain": "twitter.com",
-      "observations": 9
+      "domain": "statistik.at",
+      "count": 112
     },
     {
       "domain": "usp.gv.at",
-      "observations": 9
+      "count": 110
     },
     {
-      "domain": "zivilschutz-ooe.at",
-      "observations": 9
+      "domain": "bka.gv.at",
+      "count": 105
     },
     {
-      "domain": "bkms-system.net",
-      "observations": 9
+      "domain": "fma.gv.at",
+      "count": 86
+    },
+    {
+      "domain": "oesterreich.gv.at",
+      "count": 78
+    },
+    {
+      "domain": "gesundheit.gv.at",
+      "count": 78
+    },
+    {
+      "domain": "bmj.gv.at",
+      "count": 64
+    },
+    {
+      "domain": "polizei.gv.at",
+      "count": 50
+    },
+    {
+      "domain": "vfgh.gv.at",
+      "count": 48
+    },
+    {
+      "domain": "rechnungshof.gv.at",
+      "count": 48
+    },
+    {
+      "domain": "rtr.at",
+      "count": 40
+    },
+    {
+      "domain": "vwgh.gv.at",
+      "count": 36
+    },
+    {
+      "domain": "id-austria.gv.at",
+      "count": 30
+    },
+    {
+      "domain": "tiere-die-ins-leben-passen.at",
+      "count": 24
+    },
+    {
+      "domain": "parlament.gv.at",
+      "count": 22
+    },
+    {
+      "domain": "bmk.gv.at",
+      "count": 20
+    },
+    {
+      "domain": "data.gv.at",
+      "count": 8
+    }
+  ],
+  "top_target_domains": [
+    {
+      "domain": "steiermark.at",
+      "count": 4297
+    },
+    {
+      "domain": "ooe.gv.at",
+      "count": 2487
+    },
+    {
+      "domain": "wien.gv.at",
+      "count": 890
+    },
+    {
+      "domain": "facebook.com",
+      "count": 757
+    },
+    {
+      "domain": "stmk.gv.at",
+      "count": 664
+    },
+    {
+      "domain": "instagram.com",
+      "count": 536
+    },
+    {
+      "domain": "youtube.com",
+      "count": 501
+    },
+    {
+      "domain": "linkedin.com",
+      "count": 396
+    },
+    {
+      "domain": "gem2go.at",
+      "count": 360
+    },
+    {
+      "domain": "datareporter.eu",
+      "count": 324
+    },
+    {
+      "domain": "vorarlberg.at",
+      "count": 310
+    },
+    {
+      "domain": "readspeaker.com",
+      "count": 298
+    },
+    {
+      "domain": "bundesheer.at",
+      "count": 210
+    },
+    {
+      "domain": "bka.gv.at",
+      "count": 175
+    },
+    {
+      "domain": "ams.at",
+      "count": 166
+    },
+    {
+      "domain": "noe.gv.at",
+      "count": 156
+    },
+    {
+      "domain": "oesterreich.gv.at",
+      "count": 153
+    },
+    {
+      "domain": "bmf.gv.at",
+      "count": 150
+    },
+    {
+      "domain": "bgld.gv.at",
+      "count": 130
+    },
+    {
+      "domain": "uwz.at",
+      "count": 126
+    },
+    {
+      "domain": "kaernten.at",
+      "count": 114
+    },
+    {
+      "domain": "usp.gv.at",
+      "count": 110
+    },
+    {
+      "domain": "justiz.gv.at",
+      "count": 108
+    },
+    {
+      "domain": "salzburg.gv.at",
+      "count": 106
+    },
+    {
+      "domain": "statistik.at",
+      "count": 104
+    },
+    {
+      "domain": "bmbwf.gv.at",
+      "count": 96
+    },
+    {
+      "domain": "tirol.gv.at",
+      "count": 96
+    },
+    {
+      "domain": "bmi.gv.at",
+      "count": 95
+    },
+    {
+      "domain": "land-oberoesterreich.gv.at",
+      "count": 92
+    },
+    {
+      "domain": "doris.at",
+      "count": 88
+    },
+    {
+      "domain": "google.com",
+      "count": 86
+    },
+    {
+      "domain": "bfvff.at",
+      "count": 78
+    },
+    {
+      "domain": "bfvfb.at",
+      "count": 78
+    },
+    {
+      "domain": "wko.at",
+      "count": 78
+    },
+    {
+      "domain": "flickr.com",
+      "count": 74
+    },
+    {
+      "domain": "dioezese-linz.at",
+      "count": 72
+    },
+    {
+      "domain": "altstoffsammelzentrum.at",
+      "count": 70
+    },
+    {
+      "domain": "twitter.com",
+      "count": 68
+    },
+    {
+      "domain": "salzkammergut.at",
+      "count": 64
     },
     {
       "domain": "bmeia.gv.at",
-      "observations": 9
+      "count": 56
+    },
+    {
+      "domain": "fundamt.gv.at",
+      "count": 54
+    },
+    {
+      "domain": "fdisk.at",
+      "count": 54
+    },
+    {
+      "domain": "standortooe.at",
+      "count": 52
+    },
+    {
+      "domain": "polizei.gv.at",
+      "count": 52
+    },
+    {
+      "domain": "fma.gv.at",
+      "count": 52
+    },
+    {
+      "domain": "bkms-system.net",
+      "count": 50
     },
     {
       "domain": "gem2go.info",
-      "observations": 8
+      "count": 50
     },
     {
-      "domain": "microsoft.com",
-      "observations": 8
+      "domain": "umweltprofis.at",
+      "count": 50
     },
     {
-      "domain": "oastatic.com",
-      "observations": 8
+      "domain": "bmj.gv.at",
+      "count": 48
     },
     {
-      "domain": "panomax.com",
-      "observations": 7
+      "domain": "gesundheit.gv.at",
+      "count": 48
     }
   ],
-  "gov_to_gov_links": [
-    {
-      "source": "bundesheer.at",
-      "target": "bmlv.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "bundesheer.at",
-      "target": "jobboerse.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "ooe.gv.at",
-      "target": "fundamt.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "ooe.gv.at",
-      "target": "gem2go.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "ooe.gv.at",
-      "target": "obsthuegelland.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "ooe.gv.at",
-      "target": "eferdingerland.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "ooe.gv.at",
-      "target": "urlaubsregion-pyhrn-priel.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "ooe.gv.at",
-      "target": "oesterreich.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "ooe.gv.at",
-      "target": "land-oberoesterreich.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "ooe.gv.at",
-      "target": "bmi.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "bmbwf.gv.at",
-      "target": "bmb.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "ooe.gv.at",
-      "target": "dsb.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "ooe.gv.at",
-      "target": "bka.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "ooe.gv.at",
-      "target": "pramtal-museumsstrasse.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "ooe.gv.at",
-      "target": "linz-land.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "ooe.gv.at",
-      "target": "power-region.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "tirol.gv.at",
-      "target": "lvwg-tirol.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "tirol.gv.at",
-      "target": "oesterreich.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "tirol.gv.at",
-      "target": "landeszeitung.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "ooe.gv.at",
-      "target": "granitland.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "ooe.gv.at",
-      "target": "regionuwe.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "ooe.gv.at",
-      "target": "bioregion-muehlviertel.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "ooe.gv.at",
-      "target": "geoland.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "ooe.gv.at",
-      "target": "landesmusikschulen.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "ooe.gv.at",
-      "target": "muehlviertlerhochland.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "oesterreich.gv.at",
-      "target": "bundeskanzleramt.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "oesterreich.gv.at",
-      "target": "digitalaustria.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "ooe.gv.at",
-      "target": "familienkarte.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "noe.gv.at",
-      "target": "land-noe.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "noe.gv.at",
-      "target": "bka.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "noe.gv.at",
-      "target": "noel.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "noe.gv.at",
-      "target": "id-austria.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "noe.gv.at",
-      "target": "ida.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "noe.gv.at",
-      "target": "oesterreich.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "noe.gv.at",
-      "target": "noe-landtag.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "noe.gv.at",
-      "target": "krems.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "noe.gv.at",
-      "target": "st-poelten.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "noe.gv.at",
-      "target": "bmi.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "noe.gv.at",
-      "target": "wiener-neustadt.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "bmj.gv.at",
-      "target": "justiz.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "bmj.gv.at",
-      "target": "justizonline.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "ooe.gv.at",
-      "target": "klimaundenergiemodellregionen.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "ooe.gv.at",
-      "target": "riskommunal.net",
-      "target_country": "Unknown",
-      "cross_country": true
-    },
-    {
-      "source": "bmf.gv.at",
-      "target": "usp.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "wien.gv.at",
-      "target": "bildung-wien.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "bmeia.gv.at",
-      "target": "jobboerse.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "bmeia.gv.at",
-      "target": "auslandsservice.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "bmeia.gv.at",
-      "target": "oesterreich.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "ooe.gv.at",
-      "target": "furth-bei-landshut.de",
-      "target_country": "Germany",
-      "cross_country": true
-    },
-    {
-      "source": "ooe.gv.at",
-      "target": "donauregion.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "tirol.gv.at",
-      "target": "bka.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "tirol.gv.at",
-      "target": "europa.eu",
-      "target_country": "EU Institutions",
-      "cross_country": true
-    },
-    {
-      "source": "justiz.gv.at",
-      "target": "justizonline.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "justiz.gv.at",
-      "target": "bmj.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "justiz.gv.at",
-      "target": "hilfe-bei-gewalt.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "wien.gv.at",
-      "target": "bka.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "wien.gv.at",
-      "target": "magwien.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "ooe.gv.at",
-      "target": "sauwald-pramtal.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "ooe.gv.at",
-      "target": "help.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "ooe.gv.at",
-      "target": "klimaregion-inneres-salzkammergut.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "oesterreich.gv.at",
-      "target": "id-austria.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "ooe.gv.at",
-      "target": "bmf.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "ooe.gv.at",
-      "target": "salzburg.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "ooe.gv.at",
-      "target": "naturpark-bauernland.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "id-austria.gv.at",
-      "target": "bmf.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "id-austria.gv.at",
-      "target": "bka.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "id-austria.gv.at",
-      "target": "ida.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "burgenland.at",
-      "target": "bgld.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "burgenland.at",
-      "target": "gesundheit-burgenland.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "burgenland.at",
-      "target": "bgld-landtag.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "burgenland.at",
-      "target": "wirtschaftsagentur-burgenland.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "burgenland.at",
-      "target": "efre.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "burgenland.at",
-      "target": "familienland-bgld.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "burgenland.at",
-      "target": "oerok.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "burgenland.at",
-      "target": "kulturfoerderung-burgenland.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "burgenland.at",
-      "target": "kommunikation-burgenland.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "ooe.gv.at",
-      "target": "traunsteinregion.at",
-      "target_country": "Austria",
-      "cross_country": false
-    },
-    {
-      "source": "stmk.gv.at",
-      "target": "liland.cloud",
-      "target_country": "Unknown",
-      "cross_country": true
-    },
-    {
-      "source": "ooe.gv.at",
-      "target": "amtsweg.gv.at",
-      "target_country": "Austria",
-      "cross_country": false
-    }
-  ]
+  "relationship_types": {
+    "script_dependency": 384,
+    "stylesheet_dependency": 352,
+    "editorial_link": 1522,
+    "image_or_media_dependency": 341,
+    "form_destination": 294,
+    "font_or_preload_dependency": 35
+  },
+  "generated_at": "2026-07-18T17:13:16.620626+00:00"
 }
