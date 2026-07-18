@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T15:34:23.334274+00:00",
+  "generated_at": "2026-07-18T17:54:46.386487+00:00",
   "description": "Orphan domain detection report. Compares seed domain inventory against relationship scan data to find domains not linked from any scanned government site.",
   "countries": {
     "Albania": {
