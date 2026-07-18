@@ -1,696 +1,418 @@
 {
-  "country": "Germany",
-  "total_relationships": 2054,
-  "total_source_domains": 37,
-  "total_unique_targets": 489,
-  "gov_to_gov_pairs": 5,
-  "relationship_types": {
-    "editorial_link": 1181,
-    "script_dependency": 246,
-    "stylesheet_dependency": 211,
-    "image_or_media_dependency": 215,
-    "form_destination": 169,
-    "font_or_preload_dependency": 32
-  },
+  "country_code": "GERMANY",
+  "total_relationships": 9870,
+  "total_source_domains": 96,
   "top_source_domains": [
     {
       "domain": "sachsen.de",
-      "observations": 866,
-      "unique_targets": 21,
-      "relationship_types": {
-        "editorial_link": 130,
-        "script_dependency": 12,
-        "image_or_media_dependency": 16,
-        "form_destination": 19,
-        "stylesheet_dependency": 8,
-        "font_or_preload_dependency": 3
-      }
-    },
-    {
-      "domain": "bayern.de",
-      "observations": 467,
-      "unique_targets": 160,
-      "relationship_types": {
-        "editorial_link": 228,
-        "script_dependency": 30,
-        "stylesheet_dependency": 31,
-        "image_or_media_dependency": 29,
-        "form_destination": 22
-      }
+      "count": 27180
     },
     {
       "domain": "rlp.de",
-      "observations": 381,
-      "unique_targets": 28,
-      "relationship_types": {
-        "editorial_link": 104,
-        "script_dependency": 26,
-        "stylesheet_dependency": 24,
-        "image_or_media_dependency": 24,
-        "form_destination": 16,
-        "font_or_preload_dependency": 2
-      }
+      "count": 11462
     },
     {
       "domain": "niedersachsen.de",
-      "observations": 296,
-      "unique_targets": 25,
-      "relationship_types": {
-        "editorial_link": 65,
-        "script_dependency": 16,
-        "stylesheet_dependency": 14,
-        "image_or_media_dependency": 12,
-        "form_destination": 13
-      }
-    },
-    {
-      "domain": "nrw.de",
-      "observations": 281,
-      "unique_targets": 40,
-      "relationship_types": {
-        "editorial_link": 86,
-        "script_dependency": 36,
-        "stylesheet_dependency": 33,
-        "image_or_media_dependency": 32,
-        "form_destination": 30,
-        "font_or_preload_dependency": 2
-      }
-    },
-    {
-      "domain": "diplo.de",
-      "observations": 239,
-      "unique_targets": 19,
-      "relationship_types": {
-        "editorial_link": 50,
-        "script_dependency": 15,
-        "font_or_preload_dependency": 13,
-        "stylesheet_dependency": 14,
-        "image_or_media_dependency": 14,
-        "form_destination": 13
-      }
+      "count": 6483
     },
     {
       "domain": "hamburg.de",
-      "observations": 233,
-      "unique_targets": 32,
-      "relationship_types": {
-        "editorial_link": 59,
-        "script_dependency": 23,
-        "stylesheet_dependency": 19,
-        "image_or_media_dependency": 19,
-        "form_destination": 16,
-        "font_or_preload_dependency": 5
-      }
+      "count": 5017
+    },
+    {
+      "domain": "bayern.de",
+      "count": 2615
+    },
+    {
+      "domain": "nrw.de",
+      "count": 1468
+    },
+    {
+      "domain": "diplo.de",
+      "count": 650
     },
     {
       "domain": "hessen.de",
-      "observations": 196,
-      "unique_targets": 34,
-      "relationship_types": {
-        "editorial_link": 84,
-        "script_dependency": 17,
-        "stylesheet_dependency": 15,
-        "image_or_media_dependency": 12,
-        "form_destination": 4
-      }
-    },
-    {
-      "domain": "sachsen-anhalt.de",
-      "observations": 112,
-      "unique_targets": 31,
-      "relationship_types": {
-        "editorial_link": 56,
-        "script_dependency": 9,
-        "stylesheet_dependency": 6,
-        "image_or_media_dependency": 3,
-        "form_destination": 2
-      }
-    },
-    {
-      "domain": "bremen.de",
-      "observations": 79,
-      "unique_targets": 24,
-      "relationship_types": {
-        "editorial_link": 38,
-        "script_dependency": 11,
-        "stylesheet_dependency": 11,
-        "font_or_preload_dependency": 1,
-        "image_or_media_dependency": 10,
-        "form_destination": 8
-      }
-    },
-    {
-      "domain": "baden-wuerttemberg.de",
-      "observations": 59,
-      "unique_targets": 19,
-      "relationship_types": {
-        "editorial_link": 38,
-        "script_dependency": 2,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 4,
-        "form_destination": 3,
-        "font_or_preload_dependency": 1
-      }
-    },
-    {
-      "domain": "duesseldorf.de",
-      "observations": 50,
-      "unique_targets": 18,
-      "relationship_types": {
-        "editorial_link": 23,
-        "script_dependency": 5,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 4,
-        "form_destination": 2
-      }
-    },
-    {
-      "domain": "leitstellenspiel.de",
-      "observations": 42,
-      "unique_targets": 34,
-      "relationship_types": {
-        "editorial_link": 37,
-        "script_dependency": 2,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "bundeswehr.de",
-      "observations": 37,
-      "unique_targets": 17,
-      "relationship_types": {
-        "editorial_link": 30,
-        "script_dependency": 2,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
+      "count": 446
     },
     {
       "domain": "bund.de",
-      "observations": 35,
-      "unique_targets": 11,
-      "relationship_types": {
-        "editorial_link": 16,
-        "script_dependency": 3,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 3
-      }
+      "count": 248
     },
     {
-      "domain": "fruehe-chancen.de",
-      "observations": 28,
-      "unique_targets": 13,
-      "relationship_types": {
-        "editorial_link": 15,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
+      "domain": "thueringen.de",
+      "count": 232
     },
     {
-      "domain": "dguv.de",
-      "observations": 26,
-      "unique_targets": 20,
-      "relationship_types": {
-        "editorial_link": 17,
-        "script_dependency": 5,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
+      "domain": "bremen.de",
+      "count": 228
+    },
+    {
+      "domain": "sachsen-anhalt.de",
+      "count": 224
+    },
+    {
+      "domain": "baden-wuerttemberg.de",
+      "count": 221
     },
     {
       "domain": "berlin.de",
-      "observations": 24,
-      "unique_targets": 12,
-      "relationship_types": {
-        "editorial_link": 8,
-        "script_dependency": 5,
-        "font_or_preload_dependency": 4,
-        "stylesheet_dependency": 4,
-        "image_or_media_dependency": 3
-      }
-    },
-    {
-      "domain": "bundestag.de",
-      "observations": 22,
-      "unique_targets": 8,
-      "relationship_types": {
-        "editorial_link": 16,
-        "script_dependency": 2,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "rki.de",
-      "observations": 22,
-      "unique_targets": 6,
-      "relationship_types": {
-        "editorial_link": 7,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "verfassungsschutz.de",
-      "observations": 19,
-      "unique_targets": 9,
-      "relationship_types": {
-        "editorial_link": 10,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "aufstiegs-bafoeg.de",
-      "observations": 15,
-      "unique_targets": 10,
-      "relationship_types": {
-        "editorial_link": 10,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "bfn.de",
-      "observations": 12,
-      "unique_targets": 8,
-      "relationship_types": {
-        "editorial_link": 7,
-        "script_dependency": 2,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "leipzig.de",
-      "observations": 12,
-      "unique_targets": 5,
-      "relationship_types": {
-        "editorial_link": 6,
-        "script_dependency": 2,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "zim.de",
-      "observations": 11,
-      "unique_targets": 7,
-      "relationship_types": {
-        "editorial_link": 6,
-        "script_dependency": 2,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "hanisauland.de",
-      "observations": 10,
-      "unique_targets": 5,
-      "relationship_types": {
-        "editorial_link": 5,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "zanzu.de",
-      "observations": 10,
-      "unique_targets": 4,
-      "relationship_types": {
-        "editorial_link": 6,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "thueringen.de",
-      "observations": 9,
-      "unique_targets": 4,
-      "relationship_types": {
-        "editorial_link": 3,
-        "script_dependency": 2,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "muenchen.de",
-      "observations": 9,
-      "unique_targets": 4,
-      "relationship_types": {
-        "editorial_link": 2,
-        "script_dependency": 4,
-        "font_or_preload_dependency": 1,
-        "image_or_media_dependency": 2
-      }
-    },
-    {
-      "domain": "bundeskartellamt.de",
-      "observations": 8,
-      "unique_targets": 4,
-      "relationship_types": {
-        "editorial_link": 4,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "zusammenhalt-durch-teilhabe.de",
-      "observations": 8,
-      "unique_targets": 3,
-      "relationship_types": {
-        "editorial_link": 3,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "ptb.de",
-      "observations": 8,
-      "unique_targets": 3,
-      "relationship_types": {
-        "editorial_link": 4,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
+      "count": 159
     },
     {
       "domain": "brandenburg.de",
-      "observations": 7,
-      "unique_targets": 2,
-      "relationship_types": {
-        "editorial_link": 3,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "lba.de",
-      "observations": 5,
-      "unique_targets": 1,
-      "relationship_types": {
-        "editorial_link": 1,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "generalbundesanwalt.de",
-      "observations": 5,
-      "unique_targets": 1,
-      "relationship_types": {
-        "editorial_link": 1,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "stadt-koeln.de",
-      "observations": 5,
-      "unique_targets": 2,
-      "relationship_types": {
-        "editorial_link": 3,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1
-      }
-    },
-    {
-      "domain": "stuttgart.de",
-      "observations": 3,
-      "unique_targets": 1,
-      "relationship_types": {
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    }
-  ],
-  "top_targets": [
-    {
-      "domain": "sachsen.de",
-      "observations": 781
-    },
-    {
-      "domain": "rlp.de",
-      "observations": 312
-    },
-    {
-      "domain": "niedersachsen.de",
-      "observations": 262
-    },
-    {
-      "domain": "bayern.de",
-      "observations": 236
-    },
-    {
-      "domain": "nrw.de",
-      "observations": 190
-    },
-    {
-      "domain": "hamburg.de",
-      "observations": 163
-    },
-    {
-      "domain": "hessen.de",
-      "observations": 141
-    },
-    {
-      "domain": "diplo.de",
-      "observations": 112
-    },
-    {
-      "domain": "sachsen-anhalt.de",
-      "observations": 71
-    },
-    {
-      "domain": "facebook.com",
-      "observations": 66
-    },
-    {
-      "domain": "instagram.com",
-      "observations": 65
-    },
-    {
-      "domain": "bremen.de",
-      "observations": 53
-    },
-    {
-      "domain": "twitter.com",
-      "observations": 42
-    },
-    {
-      "domain": "youtube.com",
-      "observations": 39
-    },
-    {
-      "domain": "baden-wuerttemberg.de",
-      "observations": 39
-    },
-    {
-      "domain": "linkedin.com",
-      "observations": 37
-    },
-    {
-      "domain": "bund.de",
-      "observations": 33
-    },
-    {
-      "domain": "justiz.nrw",
-      "observations": 28
-    },
-    {
-      "domain": "auswaertiges-amt.de",
-      "observations": 28
-    },
-    {
-      "domain": "duesseldorf.de",
-      "observations": 28
-    },
-    {
-      "domain": "jsdelivr.net",
-      "observations": 19
-    },
-    {
-      "domain": "polyplanet.de",
-      "observations": 18
-    },
-    {
-      "domain": "etracker.com",
-      "observations": 18
-    },
-    {
-      "domain": "bundeswehr.de",
-      "observations": 18
-    },
-    {
-      "domain": "readspeaker.com",
-      "observations": 15
-    },
-    {
-      "domain": "bundestag.de",
-      "observations": 15
-    },
-    {
-      "domain": "wordpress.org",
-      "observations": 14
-    },
-    {
-      "domain": "zvg-portal.de",
-      "observations": 14
-    },
-    {
-      "domain": "lehrer-werden-in-sachsen.de",
-      "observations": 13
-    },
-    {
-      "domain": "enable-javascript.com",
-      "observations": 12
-    },
-    {
-      "domain": "rki.de",
-      "observations": 12
-    },
-    {
-      "domain": "fruehe-chancen.de",
-      "observations": 12
-    },
-    {
-      "domain": "usercentrics.eu",
-      "observations": 10
-    },
-    {
-      "domain": "verfassungsschutz.de",
-      "observations": 10
-    },
-    {
-      "domain": "deutschland.de",
-      "observations": 9
-    },
-    {
-      "domain": "dwd.de",
-      "observations": 9
-    },
-    {
-      "domain": "leitstellenspiel.de",
-      "observations": 9
-    },
-    {
-      "domain": "google.com",
-      "observations": 8
-    },
-    {
-      "domain": "googleapis.com",
-      "observations": 8
-    },
-    {
-      "domain": "justiz-karriere.nrw",
-      "observations": 8
+      "count": 60
     },
     {
       "domain": "dguv.de",
-      "observations": 8
+      "count": 56
     },
     {
-      "domain": "make-it-in-germany.com",
-      "observations": 7
+      "domain": "jena.de",
+      "count": 56
     },
     {
-      "domain": "xing.com",
-      "observations": 7
+      "domain": "schleswig-holstein.de",
+      "count": 42
+    },
+    {
+      "domain": "stadt-koeln.de",
+      "count": 40
+    },
+    {
+      "domain": "duesseldorf.de",
+      "count": 39
+    },
+    {
+      "domain": "muenchen.de",
+      "count": 35
+    },
+    {
+      "domain": "lechbruck.de",
+      "count": 33
+    },
+    {
+      "domain": "pfreimd.de",
+      "count": 31
+    },
+    {
+      "domain": "bundestag.de",
+      "count": 30
+    },
+    {
+      "domain": "saarland.de",
+      "count": 28
+    },
+    {
+      "domain": "neuharlingersiel.de",
+      "count": 28
+    },
+    {
+      "domain": "dwd.de",
+      "count": 25
+    },
+    {
+      "domain": "koeln.de",
+      "count": 25
+    },
+    {
+      "domain": "leipzig.de",
+      "count": 22
+    },
+    {
+      "domain": "essen.de",
+      "count": 22
+    },
+    {
+      "domain": "wolfsburg.de",
+      "count": 22
+    },
+    {
+      "domain": "bmvg.de",
+      "count": 22
+    },
+    {
+      "domain": "mvnet.de",
+      "count": 22
+    },
+    {
+      "domain": "bremerhaven.de",
+      "count": 21
+    },
+    {
+      "domain": "dortmund.de",
+      "count": 21
+    },
+    {
+      "domain": "weiterbildungsportal-rlp.de",
+      "count": 21
+    },
+    {
+      "domain": "landtag-bw.de",
+      "count": 20
+    },
+    {
+      "domain": "sifo.de",
+      "count": 19
+    },
+    {
+      "domain": "schwangau.de",
+      "count": 17
+    },
+    {
+      "domain": "justiz.de",
+      "count": 17
+    },
+    {
+      "domain": "bundesnetzagentur.de",
+      "count": 17
+    },
+    {
+      "domain": "dnb.de",
+      "count": 15
+    },
+    {
+      "domain": "bsh.de",
+      "count": 15
+    },
+    {
+      "domain": "hesel.de",
+      "count": 15
+    },
+    {
+      "domain": "pfronten.de",
+      "count": 15
+    },
+    {
+      "domain": "destatis.de",
+      "count": 15
+    },
+    {
+      "domain": "go-bio.de",
+      "count": 14
+    },
+    {
+      "domain": "bam.de",
+      "count": 14
+    },
+    {
+      "domain": "pei.de",
+      "count": 14
+    },
+    {
+      "domain": "landtag-mv.de",
+      "count": 13
+    }
+  ],
+  "top_target_domains": [
+    {
+      "domain": "sachsen.de",
+      "count": 23868
+    },
+    {
+      "domain": "rlp.de",
+      "count": 9041
+    },
+    {
+      "domain": "niedersachsen.de",
+      "count": 5816
+    },
+    {
+      "domain": "hamburg.de",
+      "count": 3198
+    },
+    {
+      "domain": "bayern.de",
+      "count": 1635
+    },
+    {
+      "domain": "nrw.de",
+      "count": 1013
+    },
+    {
+      "domain": "facebook.com",
+      "count": 666
+    },
+    {
+      "domain": "instagram.com",
+      "count": 600
+    },
+    {
+      "domain": "twitter.com",
+      "count": 452
+    },
+    {
+      "domain": "etracker.com",
+      "count": 427
+    },
+    {
+      "domain": "zvg-portal.de",
+      "count": 385
+    },
+    {
+      "domain": "enable-javascript.com",
+      "count": 379
+    },
+    {
+      "domain": "lehrer-werden-in-sachsen.de",
+      "count": 378
+    },
+    {
+      "domain": "youtube.com",
+      "count": 363
+    },
+    {
+      "domain": "hessen.de",
+      "count": 342
+    },
+    {
+      "domain": "linkedin.com",
+      "count": 330
+    },
+    {
+      "domain": "polyplanet.de",
+      "count": 325
+    },
+    {
+      "domain": "diplo.de",
+      "count": 291
+    },
+    {
+      "domain": "wordpress.org",
+      "count": 211
+    },
+    {
+      "domain": "bund.de",
+      "count": 210
+    },
+    {
+      "domain": "bremen.de",
+      "count": 200
     },
     {
       "domain": "thueringen.de",
-      "observations": 7
+      "count": 179
     },
     {
-      "domain": "brandenburg.de",
-      "observations": 7
+      "domain": "sachsen-anhalt.de",
+      "count": 173
     },
     {
-      "domain": "dw.com",
-      "observations": 6
+      "domain": "usercentrics.eu",
+      "count": 171
     },
     {
-      "domain": "tatsachen-ueber-deutschland.de",
-      "observations": 6
+      "domain": "baden-wuerttemberg.de",
+      "count": 126
+    },
+    {
+      "domain": "justiz.de",
+      "count": 108
+    },
+    {
+      "domain": "berlin.de",
+      "count": 106
+    },
+    {
+      "domain": "stark-fuer-gerechtigkeit.de",
+      "count": 97
     },
     {
       "domain": "tiktok.com",
-      "observations": 6
+      "count": 97
+    },
+    {
+      "domain": "google.com",
+      "count": 96
+    },
+    {
+      "domain": "elster.de",
+      "count": 96
+    },
+    {
+      "domain": "readspeaker.com",
+      "count": 94
+    },
+    {
+      "domain": "steuerchatbot.de",
+      "count": 78
+    },
+    {
+      "domain": "auswaertiges-amt.de",
+      "count": 75
+    },
+    {
+      "domain": "justiz.nrw",
+      "count": 74
+    },
+    {
+      "domain": "europa.eu",
+      "count": 66
+    },
+    {
+      "domain": "jsdelivr.net",
+      "count": 56
+    },
+    {
+      "domain": "bundesnetzagentur.de",
+      "count": 56
+    },
+    {
+      "domain": "brak.de",
+      "count": 56
+    },
+    {
+      "domain": "brandenburg.de",
+      "count": 51
+    },
+    {
+      "domain": "contentflow.net",
+      "count": 46
+    },
+    {
+      "domain": "cryoutcreations.eu",
+      "count": 46
+    },
+    {
+      "domain": "jena.de",
+      "count": 44
+    },
+    {
+      "domain": "xing.com",
+      "count": 43
+    },
+    {
+      "domain": "youtu.be",
+      "count": 43
+    },
+    {
+      "domain": "schuldock.de",
+      "count": 42
+    },
+    {
+      "domain": "lanu.de",
+      "count": 41
+    },
+    {
+      "domain": "dwd.de",
+      "count": 38
+    },
+    {
+      "domain": "bundestag.de",
+      "count": 36
     },
     {
       "domain": "x.com",
-      "observations": 6
-    },
-    {
-      "domain": "knastladen.de",
-      "observations": 6
+      "count": 35
     }
   ],
-  "gov_to_gov_links": [
-    {
-      "source": "hanisauland.de",
-      "target": "dieter-baacke-preis.de",
-      "target_country": "Germany",
-      "cross_country": false
-    },
-    {
-      "source": "bundeswehr.de",
-      "target": "bundeswehr-karriere.de",
-      "target_country": "Germany",
-      "cross_country": false
-    },
-    {
-      "source": "bundeswehr.de",
-      "target": "bund.de",
-      "target_country": "Germany",
-      "cross_country": false
-    },
-    {
-      "source": "bundestag.de",
-      "target": "bund.de",
-      "target_country": "Germany",
-      "cross_country": false
-    },
-    {
-      "source": "bund.de",
-      "target": "familienportal.de",
-      "target_country": "Germany",
-      "cross_country": false
-    }
-  ]
+  "relationship_types": {
+    "editorial_link": 5129,
+    "script_dependency": 1240,
+    "stylesheet_dependency": 1163,
+    "image_or_media_dependency": 1236,
+    "form_destination": 970,
+    "font_or_preload_dependency": 132
+  },
+  "generated_at": "2026-07-18T19:33:36.022087+00:00"
 }

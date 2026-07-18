@@ -1,56 +1,29 @@
 {
-  "BULGARIA": {
-    "total_urls": 291,
-    "attempted": 291,
-    "successful": 261,
-    "failed": 30,
-    "skipped": 0,
-    "never_scanned": 0,
-    "stale_28d": 0
-  },
-  "AUSTRIA": {
-    "total_urls": 821,
-    "attempted": 821,
-    "successful": 785,
-    "failed": 36,
-    "skipped": 0,
-    "never_scanned": 0,
-    "stale_28d": 0
-  },
-  "FRANCE": {
-    "total_urls": 10007,
-    "attempted": 2696,
-    "successful": 2657,
-    "failed": 39,
-    "skipped": 0,
-    "never_scanned": 7311,
-    "stale_28d": 0
-  },
   "CROATIA": {
     "total_urls": 233,
-    "attempted": 0,
-    "successful": 0,
-    "failed": 0,
+    "attempted": 233,
+    "successful": 230,
+    "failed": 3,
     "skipped": 0,
-    "never_scanned": 233,
+    "never_scanned": 0,
     "stale_28d": 0
   },
   "BELGIUM": {
     "total_urls": 1309,
-    "attempted": 0,
-    "successful": 0,
-    "failed": 0,
+    "attempted": 1309,
+    "successful": 1208,
+    "failed": 101,
     "skipped": 0,
-    "never_scanned": 1309,
+    "never_scanned": 0,
     "stale_28d": 0
   },
   "GERMANY": {
     "total_urls": 6555,
-    "attempted": 0,
-    "successful": 0,
-    "failed": 0,
+    "attempted": 1928,
+    "successful": 1901,
+    "failed": 27,
     "skipped": 0,
-    "never_scanned": 6555,
+    "never_scanned": 4627,
     "stale_28d": 0
   },
   "ESTONIA": {
@@ -264,6 +237,33 @@
     "failed": 0,
     "skipped": 0,
     "never_scanned": 200,
+    "stale_28d": 0
+  },
+  "AUSTRIA": {
+    "total_urls": 821,
+    "attempted": 821,
+    "successful": 785,
+    "failed": 36,
+    "skipped": 0,
+    "never_scanned": 0,
+    "stale_28d": 0
+  },
+  "FRANCE": {
+    "total_urls": 10007,
+    "attempted": 2696,
+    "successful": 2657,
+    "failed": 39,
+    "skipped": 0,
+    "never_scanned": 7311,
+    "stale_28d": 0
+  },
+  "BULGARIA": {
+    "total_urls": 291,
+    "attempted": 291,
+    "successful": 261,
+    "failed": 30,
+    "skipped": 0,
+    "never_scanned": 0,
     "stale_28d": 0
   }
 }
