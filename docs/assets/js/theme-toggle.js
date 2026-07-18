@@ -4,11 +4,16 @@
   var storageKey = "eu-gov-scans-theme";
   var root = document.documentElement;
   var mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+  var allowedModes = ["system", "light", "dark"];
+
+  function titleCase(value) {
+    return value.charAt(0).toUpperCase() + value.slice(1);
+  }
 
   function getStoredMode() {
     try {
       var value = localStorage.getItem(storageKey);
-      if (value === "light" || value === "dark") {
+      if (allowedModes.indexOf(value) !== -1) {
         return value;
       }
     } catch (error) {
@@ -36,19 +41,20 @@
     return mediaQuery.matches ? "dark" : "light";
   }
 
-  // Three-button control: System / Light / Dark, as rendered by _includes/header.html.
-  var modeButtons = document.querySelectorAll(".theme-mode-btn[data-theme-value]");
+  // Popover control: single trigger + System/Light/Dark radio panel,
+  // as rendered by _includes/header.html.
+  var trigger = document.getElementById("theme-trigger");
+  var triggerLabel = document.getElementById("theme-trigger-label");
+  var panel = document.getElementById("theme-panel");
+  var status = document.getElementById("theme-status");
+  var radios = panel
+    ? [].slice.call(panel.querySelectorAll('input[name="theme"]'))
+    : [];
 
   // Legacy single-button control, still used by the standalone network.html page.
   var legacyButton = document.querySelector("[data-theme-toggle]");
 
-  function updateModeButtons(mode) {
-    for (var i = 0; i < modeButtons.length; i++) {
-      var button = modeButtons[i];
-      var selected = button.getAttribute("data-theme-value") === mode;
-      button.setAttribute("aria-pressed", selected ? "true" : "false");
-    }
-  }
+  var selectedMode = "system";
 
   function updateLegacyButton(theme) {
     if (!legacyButton) {
@@ -72,42 +78,129 @@
     }
   }
 
-  function applyMode(mode) {
+  function updatePopoverInterface(announce) {
+    if (!trigger) {
+      return;
+    }
+
+    for (var i = 0; i < radios.length; i++) {
+      radios[i].checked = radios[i].value === selectedMode;
+    }
+
+    if (triggerLabel) {
+      triggerLabel.textContent =
+        "Theme: " + titleCase(selectedMode) + ". Choose colour theme.";
+    }
+
+    if (status && announce) {
+      status.textContent =
+        "Selected theme: " +
+        titleCase(selectedMode) +
+        ". Effective theme: " +
+        titleCase(resolveTheme(selectedMode)) +
+        ".";
+    }
+  }
+
+  function applyMode(mode, announce) {
     var theme = resolveTheme(mode);
     root.setAttribute("data-theme-mode", mode);
     root.setAttribute("data-theme", theme);
-    updateModeButtons(mode);
+    updatePopoverInterface(announce);
     updateLegacyButton(theme);
   }
 
-  function selectMode(mode) {
+  function selectMode(mode, announce) {
+    selectedMode = mode;
     saveMode(mode);
-    applyMode(mode);
+    applyMode(mode, announce);
+  }
+
+  function isPanelOpen() {
+    return !!panel && !panel.hidden;
+  }
+
+  function openPanel() {
+    panel.hidden = false;
+    trigger.setAttribute("aria-expanded", "true");
+    var checked = radios.filter(function (radio) {
+      return radio.checked;
+    })[0];
+    if (checked) {
+      checked.focus();
+    }
+  }
+
+  function closePanel(restoreFocus) {
+    panel.hidden = true;
+    trigger.setAttribute("aria-expanded", "false");
+    if (restoreFocus) {
+      trigger.focus();
+    }
   }
 
   function syncWithSystem() {
     // Only follow the OS when the user has not pinned an explicit preference.
     if (getStoredMode() === "system") {
-      applyMode("system");
+      applyMode("system", true);
     }
   }
 
   function init() {
-    if (!modeButtons.length && !legacyButton) {
+    if (!trigger && !legacyButton) {
       return;
     }
 
-    applyMode(getStoredMode());
+    selectedMode = getStoredMode();
+    applyMode(selectedMode, false);
 
-    for (var i = 0; i < modeButtons.length; i++) {
-      modeButtons[i].addEventListener("click", function (event) {
-        selectMode(event.currentTarget.getAttribute("data-theme-value"));
+    if (trigger && panel) {
+      trigger.addEventListener("click", function () {
+        if (isPanelOpen()) {
+          closePanel(true);
+        } else {
+          openPanel();
+        }
+      });
+
+      radios.forEach(function (radio) {
+        radio.addEventListener("change", function (event) {
+          selectMode(event.target.value, true);
+        });
+      });
+
+      document.addEventListener("click", function (event) {
+        if (
+          isPanelOpen() &&
+          !event.target.closest(".theme-control")
+        ) {
+          closePanel(false);
+        }
+      });
+
+      document.addEventListener("focusin", function (event) {
+        if (
+          isPanelOpen() &&
+          !event.target.closest(".theme-control")
+        ) {
+          closePanel(false);
+        }
+      });
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape" && isPanelOpen()) {
+          event.preventDefault();
+          closePanel(true);
+        }
       });
     }
 
     if (legacyButton) {
       legacyButton.addEventListener("click", function () {
-        selectMode(resolveTheme(getStoredMode()) === "dark" ? "light" : "dark");
+        selectMode(
+          resolveTheme(getStoredMode()) === "dark" ? "light" : "dark",
+          true
+        );
       });
     }
 
