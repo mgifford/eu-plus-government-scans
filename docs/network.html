@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
     <title>Government Web Relationship Data</title>
     <meta name="description" content="Explore relationships between European and allied government websites, including links, dependencies, and technical connections. Fully accessible HTML interface with detailed filtering and evidence-based data.">
     <script>
@@ -10,9 +11,12 @@
         var storageKey = "eu-gov-scans-theme";
         try {
           var stored = localStorage.getItem(storageKey);
-          if (stored === "light" || stored === "dark") {
-            document.documentElement.setAttribute("data-theme", stored);
-          }
+          var mode = (stored === "light" || stored === "dark") ? stored : "system";
+          var resolved = mode === "system"
+            ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")
+            : mode;
+          document.documentElement.setAttribute("data-theme-mode", mode);
+          document.documentElement.setAttribute("data-theme", resolved);
         } catch (error) {}
       })();
     </script>
@@ -22,6 +26,7 @@
     <style>
         /* Modern, accessible CSS based on project patterns */
         :root {
+            color-scheme: light;
             --color-bg: #ffffff;
             --color-bg-panel: #ffffff;
             --color-secondary-bg: #f8f9fa;
@@ -50,6 +55,7 @@
         }
 
         html[data-theme="dark"] {
+            color-scheme: dark;
             --color-bg: #1b1b1b;
             --color-bg-panel: #2d2d2d;
             --color-secondary-bg: #232323;
@@ -73,6 +79,33 @@
             --shadow-lg: 0 4px 12px rgba(0,0,0,0.3);
         }
 
+        @media (prefers-color-scheme: dark) {
+            html:not([data-theme]) {
+                color-scheme: dark;
+                --color-bg: #1b1b1b;
+                --color-bg-panel: #2d2d2d;
+                --color-secondary-bg: #232323;
+                --color-text: #e9e9e9;
+                --color-text-secondary: #c9c9c9;
+                --color-border: #5c5c5c;
+                --color-border-input: #8f8f8f;
+                --color-primary: #73b3e7;
+                --color-primary-text: #1b1b1b;
+                --color-link: #73b3e7;
+                --color-link-hover: #a9d8ff;
+                --color-heading: #e9e9e9;
+                --primary-color: #73b3e7;
+                --accent-color: #73b3e7;
+                --text-primary: #e9e9e9;
+                --text-secondary: #c9c9c9;
+                --border-color: #5c5c5c;
+                --light-bg: #232323;
+                --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+                --shadow-md: 0 2px 6px rgba(0,0,0,0.4);
+                --shadow-lg: 0 4px 12px rgba(0,0,0,0.3);
+            }
+        }
+
         * {
             box-sizing: border-box;
             margin: 0;
@@ -83,7 +116,7 @@
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             line-height: 1.6;
             color: var(--text-primary);
-            background-color: #fff;
+            background-color: var(--color-bg);
             max-width: 1200px;
             margin: 0 auto;
             padding: 0;
@@ -602,6 +635,20 @@
         .badge.cat-document { background-color: rgba(241, 196, 15, 1); color: #f39c12; }
         .badge.cat-commercial { background-color: rgba(26, 188, 156, 1); color: #16a085; }
 
+        html[data-theme="dark"] .badge.rel-editorial { background-color: rgba(115, 179, 231, 0.15); color: #73b3e7; }
+        html[data-theme="dark"] .badge.rel-script { background-color: rgba(253, 186, 116, 0.15); color: #fdba74; }
+        html[data-theme="dark"] .badge.rel-style { background-color: rgba(196, 181, 253, 0.15); color: #c4b5fd; }
+        html[data-theme="dark"] .badge.rel-font { background-color: rgba(134, 239, 172, 0.15); color: #86efac; }
+        html[data-theme="dark"] .badge.rel-image { background-color: rgba(252, 165, 165, 0.2); color: #fca5a5; }
+        html[data-theme="dark"] .badge.rel-form { background-color: rgba(94, 234, 212, 0.15); color: #5eead4; }
+        html[data-theme="dark"] .badge.cat-analytics { background-color: rgba(252, 165, 165, 0.15); color: #fca5a5; }
+        html[data-theme="dark"] .badge.cat-social { background-color: rgba(115, 179, 231, 0.2); color: #73b3e7; }
+        html[data-theme="dark"] .badge.cat-cdn { background-color: rgba(196, 181, 253, 0.2); color: #c4b5fd; }
+        html[data-theme="dark"] .badge.cat-identity { background-color: rgba(134, 239, 172, 0.2); color: #86efac; }
+        html[data-theme="dark"] .badge.cat-document { background-color: rgba(253, 186, 116, 0.2); color: #fdba74; }
+        html[data-theme="dark"] .badge.cat-commercial { background-color: rgba(94, 234, 212, 0.2); color: #5eead4; }
+        html[data-theme="dark"] .badge.type { background-color: rgba(196, 181, 253, 0.15); color: #c4b5fd; }
+
         /* Controls */
         .controls {
             display: flex;
@@ -613,11 +660,12 @@
         .btn {
             padding: 0.5rem 1rem;
             border: 1px solid var(--border-color);
-            background: white;
+            background: var(--color-bg-panel);
             border-radius: 4px;
             cursor: pointer;
             font-size: 0.875rem;
             font-weight: 500;
+            color: var(--text-primary);
             transition: all 0.2s;
         }
 
@@ -634,14 +682,14 @@
         }
 
         .btn-primary:hover, .btn-primary:focus {
-            background-color: #2980b9;
-            border-color: #2980b9;
+            background-color: var(--color-link-hover);
+            border-color: var(--color-link-hover);
         }
 
         .btn-secondary {
-            background-color: #6c757d;
+            background-color: var(--text-secondary);
             color: white;
-            border-color: #6c757d;
+            border-color: var(--text-secondary);
         }
 
         /* Live region for announcements */
@@ -697,7 +745,7 @@
         .error-message {
             background-color: rgba(231, 76, 60, 0.1);
             border: 1px solid rgba(231, 76, 60, 0.3);
-            color: #c0392b;
+            color: var(--danger-color);
             padding: 1rem;
             border-radius: 4px;
             margin: 1rem 0;
@@ -706,7 +754,7 @@
         .info-message {
             background-color: rgba(52, 152, 219, 0.1);
             border: 1px solid rgba(52, 152, 219, 0.3);
-            color: #2c3e50;
+            color: var(--color-primary);
             padding: 1rem;
             border-radius: 4px;
             margin: 1rem 0;
@@ -732,7 +780,7 @@
             align-items: center;
             gap: 0.5rem;
             padding: 0.75rem 1.5rem;
-            background: white;
+            background: var(--color-bg-panel);
             border: 1px solid var(--border-color);
             border-radius: 4px;
             text-decoration: none;
@@ -748,7 +796,7 @@
 
         /* Collapsible sections */
         .collapsible {
-            background: white;
+            background: var(--color-bg-panel);
             border: 1px solid var(--border-color);
             border-radius: 8px;
             margin: 1rem 0;
@@ -783,7 +831,7 @@
 
         /* Graph placeholder */
         .graph-container {
-            background: white;
+            background: var(--color-bg-panel);
             border: 2px dashed var(--border-color);
             border-radius: 8px;
             padding: 3rem;
@@ -894,7 +942,7 @@
             height: 500px;
             border: 1px solid var(--border-color);
             border-radius: 8px;
-            background: #fafbfc;
+            background: var(--light-bg);
         }
 
         .graph-container .node circle {
