@@ -1,0 +1,1930 @@
+{
+  "generated_at": "2026-07-17T22:21:21.616718+00:00",
+  "description": "Orphan domain detection report. Compares seed domain inventory against relationship scan data to find domains not linked from any scanned government site.",
+  "countries": {
+    "Albania": {
+      "seed_count": 584,
+      "active_count": 0,
+      "orphan_count": 584,
+      "active_rate": 0.0,
+      "active_domains": [],
+      "orphan_breakdown": {
+        "subdomains": 432,
+        "staging_test": 1,
+        "likely_dead": 0,
+        "other": 151
+      },
+      "orphan_sample": [
+        "absa.gov.al",
+        "administrata.gov.al",
+        "akad.gov.al",
+        "akbn.gov.al",
+        "akce.gov.al",
+        "akshi.gov.al",
+        "albarchive.gov.al",
+        "amf.gov.al",
+        "app.gov.al",
+        "aqtn.gov.al"
+      ],
+      "staging_sample": [
+        "bashkiadevoll.gov.al"
+      ]
+    },
+    "Andorra": {
+      "seed_count": 128,
+      "active_count": 0,
+      "orphan_count": 128,
+      "active_rate": 0.0,
+      "active_domains": [],
+      "orphan_breakdown": {
+        "subdomains": 18,
+        "staging_test": 2,
+        "likely_dead": 0,
+        "other": 108
+      },
+      "orphan_sample": [
+        "3c.govern.ad",
+        "acces-ec.govern.ad",
+        "aeoi-pre.govern.ad",
+        "aeoi.govern.ad",
+        "ajudeseo.govern.ad",
+        "alertes.govern.ad",
+        "aplicacions.govern.ad",
+        "appnotes.govern.ad",
+        "asterix.govern.ad",
+        "atol.govern.ad"
+      ],
+      "staging_sample": [
+        "test-cartografia.govern.ad",
+        "testduana.govern.ad"
+      ]
+    },
+    "Armenia": {
+      "seed_count": 225,
+      "active_count": 0,
+      "orphan_count": 225,
+      "active_rate": 0.0,
+      "active_domains": [],
+      "orphan_breakdown": {
+        "subdomains": 77,
+        "staging_test": 0,
+        "likely_dead": 0,
+        "other": 148
+      },
+      "orphan_sample": [
+        "adams.gov.am",
+        "ai.gov.am",
+        "anti-corruption.gov.am",
+        "api-ac19.gov.am",
+        "api-covid.gov.am",
+        "api-stayhome.gov.am",
+        "cadastre-zz.gov.am",
+        "cert.gov.am",
+        "cms-ogp.gov.am",
+        "covid19.gov.am"
+      ],
+      "staging_sample": []
+    },
+    "Austria": {
+      "seed_count": 2473,
+      "active_count": 7,
+      "orphan_count": 2464,
+      "active_rate": 0.3,
+      "active_domains": [
+        "bundesheer.at",
+        "burgenland.at",
+        "kaernten.at",
+        "rtr.at",
+        "statistik.at",
+        "steiermark.at",
+        "vorarlberg.at"
+      ],
+      "orphan_breakdown": {
+        "subdomains": 2146,
+        "staging_test": 0,
+        "likely_dead": 0,
+        "other": 318
+      },
+      "orphan_sample": [
+        "aba.gv.at",
+        "achau.gv.at",
+        "ada.gv.at",
+        "aflenz.gv.at",
+        "ainet.gv.at",
+        "allhartsberg.gv.at",
+        "amtsweg.gv.at",
+        "apf.gv.at",
+        "arbeitsinspektion.gv.at",
+        "ardagger.gv.at"
+      ],
+      "staging_sample": []
+    },
+    "Azerbaijan": {
+      "seed_count": 608,
+      "active_count": 0,
+      "orphan_count": 608,
+      "active_rate": 0.0,
+      "active_domains": [],
+      "orphan_breakdown": {
+        "subdomains": 376,
+        "staging_test": 0,
+        "likely_dead": 0,
+        "other": 232
+      },
+      "orphan_sample": [
+        "4sim.gov.az",
+        "aak.gov.az",
+        "abad.gov.az",
+        "accreditation.gov.az",
+        "acra.gov.az",
+        "adif.gov.az",
+        "adra.gov.az",
+        "aef.gov.az",
+        "afsi.gov.az",
+        "agro.gov.az"
+      ],
+      "staging_sample": []
+    },
+    "Belarus": {
+      "seed_count": 594,
+      "active_count": 0,
+      "orphan_count": 594,
+      "active_rate": 0.0,
+      "active_domains": [],
+      "orphan_breakdown": {
+        "subdomains": 509,
+        "staging_test": 0,
+        "likely_dead": 0,
+        "other": 85
+      },
+      "orphan_sample": [
+        "aor.gov.by",
+        "archives.gov.by",
+        "bankrot.gov.by",
+        "berestovitsa.gov.by",
+        "bks.gov.by",
+        "caa.gov.by",
+        "cherikov.gov.by",
+        "city-brest.gov.by",
+        "dyatlovo.gov.by",
+        "economy.gov.by"
+      ],
+      "staging_sample": []
+    },
+    "Belgium": {
+      "seed_count": 1011,
+      "active_count": 11,
+      "orphan_count": 985,
+      "active_rate": 1.1,
+      "active_domains": [
+        "antwerpen.be",
+        "belgium.be",
+        "fgov.be",
+        "hainaut.be",
+        "irisnet.be",
+        "liege.be",
+        "mechelen.be",
+        "mil.be",
+        "namur.be",
+        "vlaanderen.be",
+        "wallonie.be"
+      ],
+      "orphan_breakdown": {
+        "subdomains": 482,
+        "staging_test": 2,
+        "likely_dead": 0,
+        "other": 501
+      },
+      "orphan_sample": [
+        "14-18.bruxelles.be",
+        "1777.kortrijk.be",
+        "accbeconnected.belgium.be",
+        "accessibility.belgium.be",
+        "accessmanagement.irisnet.be",
+        "actionsociale.hainaut.be",
+        "actionsociale.wallonie.be",
+        "admissions-arba-esa.brussels.be",
+        "adviesraadouderen.belgium.be",
+        "afcn.fgov.be"
+      ],
+      "staging_sample": [
+        "old-bm.irisnet.be",
+        "smp-test.belgium.be"
+      ]
+    },
+    "Bosnia and Herzegovina": {
+      "seed_count": 479,
+      "active_count": 0,
+      "orphan_count": 479,
+      "active_rate": 0.0,
+      "active_domains": [],
+      "orphan_breakdown": {
+        "subdomains": 381,
+        "staging_test": 0,
+        "likely_dead": 0,
+        "other": 98
+      },
+      "orphan_sample": [
+        "ada.gov.ba",
+        "adsfbih.gov.ba",
+        "aeptm.gov.ba",
+        "agropedologija.gov.ba",
+        "almbih.gov.ba",
+        "aposo.gov.ba",
+        "arsbih.gov.ba",
+        "arz.gov.ba",
+        "banovici.gov.ba",
+        "bosanskipetrovac.gov.ba"
+      ],
+      "staging_sample": []
+    },
+    "Bulgaria": {
+      "seed_count": 198,
+      "active_count": 22,
+      "orphan_count": 174,
+      "active_rate": 11.1,
+      "active_domains": [
+        "bnb.bg",
+        "burgas.bg",
+        "dobrich.bg",
+        "gabrovo.bg",
+        "haskovo.bg",
+        "lovech.bg",
+        "mfa.bg",
+        "nra.bg",
+        "nsi.bg",
+        "ombudsman.bg",
+        "parliament.bg",
+        "pazardzhik.bg",
+        "pernik.bg",
+        "pleven.bg",
+        "plovdiv.bg",
+        "president.bg",
+        "shumen.bg",
+        "silistra.bg",
+        "sliven.bg",
+        "sofia.bg"
+      ],
+      "orphan_breakdown": {
+        "subdomains": 48,
+        "staging_test": 3,
+        "likely_dead": 0,
+        "other": 123
+      },
+      "orphan_sample": [
+        "address.sofia.bg",
+        "agup.varna.bg",
+        "apo.gov.bg",
+        "apostille.gov.bg",
+        "app.mfa.bg",
+        "architect.sofia.bg",
+        "auth-cixpbg.gov.bg",
+        "bgsl.sofia.bg",
+        "bs.gov.bg",
+        "call.sofia.bg"
+      ],
+      "staging_sample": [
+        "old.nsi.bg",
+        "old.pernik.bg",
+        "test-sipbg.gov.bg"
+      ]
+    },
+    "Croatia": {
+      "seed_count": 500,
+      "active_count": 22,
+      "orphan_count": 478,
+      "active_rate": 4.4,
+      "active_domains": [
+        "azop.hr",
+        "dubrovnik.hr",
+        "dzs.hr",
+        "hakom.hr",
+        "hzjz.hr",
+        "hzzo.hr",
+        "karlovac.hr",
+        "koprivnica.hr",
+        "osijek.hr",
+        "pozega.hr",
+        "predsjednik.hr",
+        "pula.hr",
+        "rijeka.hr",
+        "sabor.hr",
+        "sibenik.hr",
+        "sisak.hr",
+        "slavonski-brod.hr",
+        "split.hr",
+        "varazdin.hr",
+        "vukovar.hr"
+      ],
+      "orphan_breakdown": {
+        "subdomains": 320,
+        "staging_test": 2,
+        "likely_dead": 0,
+        "other": 156
+      },
+      "orphan_sample": [
+        "aktivnosti.zagreb.hr",
+        "app.hakom.hr",
+        "arcportal.zagreb.hr",
+        "arhiva.pozega.hr",
+        "businesscroatia.gov.hr",
+        "buswebshop.dubrovnik.hr",
+        "cdu.gov.hr",
+        "data.zagreb.hr",
+        "dzo.hzzo.hr",
+        "e-pisarnica.zagreb.hr"
+      ],
+      "staging_sample": [
+        "isstest.gov.hr",
+        "isznrtest.gov.hr"
+      ]
+    },
+    "Czechia": {
+      "seed_count": 1066,
+      "active_count": 24,
+      "orphan_count": 1037,
+      "active_rate": 2.3,
+      "active_domains": [
+        "brno.cz",
+        "cnb.cz",
+        "justice.cz",
+        "khk.cz",
+        "kraj-lbc.cz",
+        "liberec.cz",
+        "mdcr.cz",
+        "mfcr.cz",
+        "mpsv.cz",
+        "msmt.cz",
+        "mzcr.cz",
+        "mzp.cz",
+        "olomouc.eu",
+        "ostrava.cz",
+        "pardubice.eu",
+        "pardubickykraj.cz",
+        "plzen.eu",
+        "plzensky-kraj.cz",
+        "praha.eu",
+        "psp.cz"
+      ],
+      "orphan_breakdown": {
+        "subdomains": 438,
+        "staging_test": 45,
+        "likely_dead": 0,
+        "other": 554
+      },
+      "orphan_sample": [
+        "absolventi.gov.cz",
+        "adisspr.mfcr.cz",
+        "admin.gov.cz",
+        "akce.plzen.eu",
+        "akreditace-stage.gov.cz",
+        "akreditace.gov.cz",
+        "akreditace.mzcr.cz",
+        "akris.mpsv.cz",
+        "alicorn.gov.cz",
+        "aml.gov.cz"
+      ],
+      "staging_sample": [
+        "akreditace-dev.gov.cz",
+        "akreditace-test.gov.cz",
+        "caais-test-ext.gov.cz",
+        "chcidatovku-dev.gov.cz",
+        "chcidatovku-test.gov.cz"
+      ]
+    },
+    "Denmark": {
+      "seed_count": 710,
+      "active_count": 51,
+      "orphan_count": 639,
+      "active_rate": 7.2,
+      "active_domains": [
+        "aalborg.dk",
+        "aarhus.dk",
+        "albertslund.dk",
+        "ballerup.dk",
+        "bm.dk",
+        "borger.dk",
+        "digst.dk",
+        "dr.dk",
+        "dst.dk",
+        "em.dk",
+        "esbjerg.dk",
+        "fm.dk",
+        "forsvaret.dk",
+        "fredericia.dk",
+        "frederiksberg.dk",
+        "fvm.dk",
+        "gentofte.dk",
+        "gladsaxe.dk",
+        "helsingor.dk",
+        "herning.dk"
+      ],
+      "orphan_breakdown": {
+        "subdomains": 31,
+        "staging_test": 6,
+        "likely_dead": 0,
+        "other": 602
+      },
+      "orphan_sample": [
+        "aa.rm.dk",
+        "aabenskole.kk.dk",
+        "aabneaktivitetscentre.horsens.dk",
+        "aabyskole.aarhus.dk",
+        "aalborguh.rn.dk",
+        "admin.denmark.dk",
+        "aeldrecentre.hjoerring.dk",
+        "aeldremin.dk",
+        "affald.kk.dk",
+        "akbehandling.regionh.dk"
+      ],
+      "staging_sample": [
+        "musik.kolding.dk",
+        "parkering.kolding.dk",
+        "senioraktiviteter.kolding.dk",
+        "skjoldhoejskolen.aarhus.dk",
+        "udvalg.kolding.dk"
+      ]
+    },
+    "Estonia": {
+      "seed_count": 548,
+      "active_count": 25,
+      "orphan_count": 521,
+      "active_rate": 4.6,
+      "active_domains": [
+        "agri.ee",
+        "eesti.ee",
+        "fin.ee",
+        "hm.ee",
+        "just.ee",
+        "kaitseministeerium.ee",
+        "kliimaministeerium.ee",
+        "kul.ee",
+        "mkm.ee",
+        "narva.ee",
+        "parnu.ee",
+        "rakvere.ee",
+        "ria.ee",
+        "riigikantselei.ee",
+        "riigikogu.ee",
+        "riigikohus.ee",
+        "riigiteataja.ee",
+        "siseministeerium.ee",
+        "sm.ee",
+        "stat.ee"
+      ],
+      "orphan_breakdown": {
+        "subdomains": 332,
+        "staging_test": 17,
+        "likely_dead": 0,
+        "other": 172
+      },
+      "orphan_sample": [
+        "aastaraamat.prokuratuur.ee",
+        "aastaraamat.riigikohus.ee",
+        "abi.ria.ee",
+        "ahk.eesti.ee",
+        "alkoreg.agri.ee",
+        "andmed.eesti.ee",
+        "andmed.stat.ee",
+        "app.eesti.ee",
+        "arendus.eesti.ee",
+        "arno.parnu.ee"
+      ],
+      "staging_sample": [
+        "andmed-test.eesti.ee",
+        "atv-dev.eesti.ee",
+        "avaandmeddev.eesti.ee",
+        "avaandmedtest.eesti.ee",
+        "demo.eesti.ee"
+      ]
+    },
+    "Finland": {
+      "seed_count": 328,
+      "active_count": 26,
+      "orphan_count": 301,
+      "active_rate": 7.9,
+      "active_domains": [
+        "avi.fi",
+        "businessfinland.fi",
+        "defmin.fi",
+        "eduskunta.fi",
+        "fimea.fi",
+        "kela.fi",
+        "metsakeskus.fi",
+        "migri.fi",
+        "mmm.fi",
+        "oikeus.fi",
+        "oikeusministerio.fi",
+        "okm.fi",
+        "oph.fi",
+        "poliisi.fi",
+        "presidentti.fi",
+        "stat.fi",
+        "suomi.fi",
+        "syke.fi",
+        "tem.fi",
+        "thl.fi"
+      ],
+      "orphan_breakdown": {
+        "subdomains": 165,
+        "staging_test": 14,
+        "likely_dead": 0,
+        "other": 122
+      },
+      "orphan_sample": [
+        "admin.suomi.fi",
+        "ajanvaraus-hallinta.suomi.fi",
+        "ajanvaraus.suomi.fi",
+        "api.suomi.fi",
+        "asiointi.oikeus.fi",
+        "asiointi.okm.fi",
+        "asiointi.poliisi.fi",
+        "asiointi.tulli.fi",
+        "asiointitili.suomi.fi",
+        "asiointivaltuudet.suomi.fi"
+      ],
+      "staging_sample": [
+        "dev.suomi.fi",
+        "kommentit-dev.suomi.fi",
+        "kommentit-test.suomi.fi",
+        "koodistot-dev.suomi.fi",
+        "koodistot-test.suomi.fi"
+      ]
+    },
+    "France": {
+      "seed_count": 6688,
+      "active_count": 71,
+      "orphan_count": 6314,
+      "active_rate": 1.1,
+      "active_domains": [
+        "aisne.com",
+        "ameli.fr",
+        "amiens.fr",
+        "angers.fr",
+        "annecy.fr",
+        "aube.fr",
+        "aude.fr",
+        "auvergnerhonealpes.fr",
+        "banque-france.fr",
+        "bordeaux-metropole.fr",
+        "bordeaux.fr",
+        "bourgognefranchecomte.fr",
+        "cc-ballonsdeshautesvosges.fr",
+        "cc-dufrontonnais.fr",
+        "cc-garlin.fr",
+        "cc-lacqorthez.fr",
+        "cc-laseptaine.fr",
+        "cc-plateaupicard.fr",
+        "cc-rhin.fr",
+        "cc-salagou.fr"
+      ],
+      "orphan_breakdown": {
+        "subdomains": 4158,
+        "staging_test": 12,
+        "likely_dead": 0,
+        "other": 2144
+      },
+      "orphan_sample": [
+        "1000paysages.gouv.fr",
+        "17cyber.gouv.fr",
+        "2d.bordeaux.fr",
+        "aaa.dordogne.fr",
+        "abbaye-hambye.manche.fr",
+        "abonnementstationnement.annecy.fr",
+        "abonnes.cc-genevois.fr",
+        "abris-securises-velos.paris.fr",
+        "absences.haute-vienne.fr",
+        "abu.cnam.fr"
+      ],
+      "staging_sample": [
+        "atelierdevosidees.loiret.fr",
+        "contratdeville.montpellier3m.fr",
+        "getreadyforgold.normandie.fr",
+        "mediatheques-test.montpellier3m.fr",
+        "services-test.haute-garonne.fr"
+      ]
+    },
+    "Georgia": {
+      "seed_count": 604,
+      "active_count": 0,
+      "orphan_count": 604,
+      "active_rate": 0.0,
+      "active_domains": [],
+      "orphan_breakdown": {
+        "subdomains": 477,
+        "staging_test": 0,
+        "likely_dead": 0,
+        "other": 127
+      },
+      "orphan_sample": [
+        "5g.gov.ge",
+        "abkhazia.gov.ge",
+        "akhaltsikhe.gov.ge",
+        "apa.gov.ge",
+        "archival-services.gov.ge",
+        "archive.gov.ge",
+        "archives-ajara.gov.ge",
+        "aspindza.gov.ge",
+        "baghdati.gov.ge",
+        "bfd.gov.ge"
+      ],
+      "staging_sample": []
+    },
+    "Germany": {
+      "seed_count": 3243,
+      "active_count": 38,
+      "orphan_count": 3049,
+      "active_rate": 1.2,
+      "active_domains": [
+        "aufstiegs-bafoeg.de",
+        "baden-wuerttemberg.de",
+        "bayern.de",
+        "berlin.de",
+        "bfn.de",
+        "brandenburg.de",
+        "bremen.de",
+        "bund.de",
+        "bundeskartellamt.de",
+        "bundestag.de",
+        "bundeswehr.de",
+        "dainst.org",
+        "dguv.de",
+        "diplo.de",
+        "duesseldorf.de",
+        "fruehe-chancen.de",
+        "generalbundesanwalt.de",
+        "hamburg.de",
+        "hanisauland.de",
+        "hessen.de"
+      ],
+      "orphan_breakdown": {
+        "subdomains": 1524,
+        "staging_test": 19,
+        "likely_dead": 0,
+        "other": 1506
+      },
+      "orphan_sample": [
+        "110prozent.berlin.de",
+        "150.diplo.de",
+        "abb.rlp.de",
+        "abeg.essen.de",
+        "abfalldaten.brandenburg.de",
+        "abholung-personaldokumente.leipzig.de",
+        "abidjan.diplo.de",
+        "accra.diplo.de",
+        "actapro-benutzung.hamburg.de",
+        "add.rlp.de"
+      ],
+      "staging_sample": [
+        "amtsgericht-oldenburg.niedersachsen.de",
+        "demografie.sachsen-anhalt.de",
+        "demokratie-gewinnt.rlp.de",
+        "demokratie.niedersachsen.de",
+        "demokratiezentrum.rlp.de"
+      ]
+    },
+    "Greece": {
+      "seed_count": 1301,
+      "active_count": 14,
+      "orphan_count": 1275,
+      "active_rate": 1.1,
+      "active_domains": [
+        "aade.gr",
+        "cityofathens.gr",
+        "gsis.gr",
+        "hellenicparliament.gr",
+        "heraklion.gr",
+        "ioannina.gr",
+        "mfa.gr",
+        "minagric.gr",
+        "rethymno.gr",
+        "rhodes.gr",
+        "serres.gr",
+        "thessaloniki.gr",
+        "veria.gr",
+        "ypes.gr"
+      ],
+      "orphan_breakdown": {
+        "subdomains": 808,
+        "staging_test": 2,
+        "likely_dead": 0,
+        "other": 465
+      },
+      "orphan_sample": [
+        "112.gov.gr",
+        "1555.gov.gr",
+        "1click.minagric.gr",
+        "200years.mfa.gr",
+        "adae.gov.gr",
+        "adeies.rhodes.gr",
+        "adespota.cityofathens.gr",
+        "adoptastray.gov.gr",
+        "aftodioikisi.ypes.gr",
+        "agan.gov.gr"
+      ],
+      "staging_sample": [
+        "old.cityofathens.gr",
+        "test.gsis.gr"
+      ]
+    },
+    "Holy See": {
+      "seed_count": 18,
+      "active_count": 0,
+      "orphan_count": 18,
+      "active_rate": 0.0,
+      "active_domains": [],
+      "orphan_breakdown": {
+        "subdomains": 3,
+        "staging_test": 0,
+        "likely_dead": 0,
+        "other": 15
+      },
+      "orphan_sample": [
+        "autodiscover.vatican.va",
+        "email.vatican.va",
+        "m.vatican.va",
+        "mail.vatican.va",
+        "michele.vatican.va",
+        "mobile.vatican.va",
+        "owa.vatican.va",
+        "posta.vatican.va",
+        "press.vatican.va",
+        "rss.vatican.va"
+      ],
+      "staging_sample": []
+    },
+    "Hungary": {
+      "seed_count": 295,
+      "active_count": 25,
+      "orphan_count": 269,
+      "active_rate": 8.5,
+      "active_domains": [
+        "alkotmanybirosag.hu",
+        "bekescsaba.hu",
+        "birosag.hu",
+        "budapest.hu",
+        "debrecen.hu",
+        "eger.hu",
+        "gyor.hu",
+        "kaposvar.hu",
+        "kecskemet.hu",
+        "kormany.hu",
+        "kozbeszerzes.hu",
+        "ksh.hu",
+        "magyarorszag.hu",
+        "miskolc.hu",
+        "mnb.hu",
+        "nyiregyhaza.hu",
+        "parlament.hu",
+        "pecs.hu",
+        "police.hu",
+        "sopron.hu"
+      ],
+      "orphan_breakdown": {
+        "subdomains": 25,
+        "staging_test": 4,
+        "likely_dead": 0,
+        "other": 240
+      },
+      "orphan_sample": [
+        "1000fa.szombathely.hu",
+        "150.budapest.hu",
+        "2010-2014.kormany.hu",
+        "2015-2019.kormany.hu",
+        "2020-2025.kormany.hu",
+        "adatvedelem.police.hu",
+        "akr.kormany.hu",
+        "allamhaztartas.kormany.hu",
+        "allatvedelem.kormany.hu",
+        "archiv.budapest.hu"
+      ],
+      "staging_sample": [
+        "zold.kormany.hu",
+        "zoldenergia.kormany.hu",
+        "zoldorszem.debrecen.hu",
+        "zoldpenzugyek.mnb.hu"
+      ]
+    },
+    "Iceland": {
+      "seed_count": 88,
+      "active_count": 17,
+      "orphan_count": 70,
+      "active_rate": 19.3,
+      "active_domains": [
+        "akureyri.is",
+        "domstolar.is",
+        "forseti.is",
+        "gardabaer.is",
+        "hafnarfjordur.is",
+        "hagstofa.is",
+        "island.is",
+        "keflavik.is",
+        "kopavogur.is",
+        "landlaeknir.is",
+        "mos.is",
+        "reykjavik.is",
+        "samgongustofa.is",
+        "skatturinn.is",
+        "stjornarradid.is",
+        "vegagerdin.is",
+        "vinnumalastofnun.is"
+      ],
+      "orphan_breakdown": {
+        "subdomains": 2,
+        "staging_test": 1,
+        "likely_dead": 0,
+        "other": 67
+      },
+      "orphan_sample": [
+        "abendingar.hafnarfjordur.is",
+        "abendingar.reykjavik.is",
+        "arbaejarskoli.reykjavik.is",
+        "bifreidastaedasjodur.akureyri.is",
+        "bifreidatolur.samgongustofa.is",
+        "bilastaedasjodur.reykjavik.is",
+        "bokasafn.kopavogur.is",
+        "borgarvefsja.reykjavik.is",
+        "breidagerdisskoli.reykjavik.is",
+        "dalskoli.reykjavik.is"
+      ],
+      "staging_sample": [
+        "foldaskoli.reykjavik.is"
+      ]
+    },
+    "Ireland": {
+      "seed_count": 759,
+      "active_count": 46,
+      "orphan_count": 700,
+      "active_rate": 6.1,
+      "active_domains": [
+        "artscouncil.ie",
+        "britishcouncil.ie",
+        "cafelacoco.ie",
+        "carrentalcouncil.ie",
+        "cavancoco.ie",
+        "celbridgecommunitycouncil.ie",
+        "clarecoco.ie",
+        "climatecouncil.ie",
+        "corkcity.ie",
+        "corkcoco.ie",
+        "courts.ie",
+        "cso.ie",
+        "dlrcoco.ie",
+        "donegalcoco.ie",
+        "dublincity.ie",
+        "ecoco.ie",
+        "fairycouncil.ie",
+        "fingal.ie",
+        "fiscalcouncil.ie",
+        "galwaycity.ie"
+      ],
+      "orphan_breakdown": {
+        "subdomains": 426,
+        "staging_test": 9,
+        "likely_dead": 0,
+        "other": 265
+      },
+      "orphan_sample": [
+        "aai.gov.ie",
+        "about.hse.ie",
+        "accruedpensionliability.gov.ie",
+        "adforaffl.gov.ie",
+        "affordablehomes.dublincity.ie",
+        "agriculture.gov.ie",
+        "ahg.gov.ie",
+        "aim.gov.ie",
+        "alerts.corkcity.ie",
+        "alerts.dublincity.ie"
+      ],
+      "staging_sample": [
+        "cloudtesthostedapps.gov.ie",
+        "devassets.gov.ie",
+        "egovtest1.gov.ie",
+        "egovtest2.gov.ie",
+        "egovtest3.gov.ie"
+      ]
+    },
+    "Italy": {
+      "seed_count": 4822,
+      "active_count": 8,
+      "orphan_count": 4691,
+      "active_rate": 0.2,
+      "active_domains": [
+        "camera.it",
+        "corteconti.it",
+        "difesa.it",
+        "esteri.it",
+        "giustizia.it",
+        "governo.it",
+        "istat.it",
+        "plugandpay.it"
+      ],
+      "orphan_breakdown": {
+        "subdomains": 3051,
+        "staging_test": 20,
+        "likely_dead": 0,
+        "other": 1620
+      },
+      "orphan_sample": [
+        "22ddalbertomario.gov.it",
+        "31icborsellino.gov.it",
+        "33circolonapoli.gov.it",
+        "73michelangeloilioneo.gov.it",
+        "a-v.esteri.it",
+        "access.esteri.it",
+        "access.quirinale.it",
+        "accessportal.esteri.it",
+        "accreditamento.istruzione.it",
+        "accreditamentobor.esteri.it"
+      ],
+      "staging_sample": [
+        "alberghieromalatestarimini.gov.it",
+        "albielenchictutest.giustizia.it",
+        "alboctuelenchitest.giustizia.it",
+        "ambsantasedevaticano.esteri.it",
+        "demo.istat.it"
+      ]
+    },
+    "Latvia": {
+      "seed_count": 357,
+      "active_count": 7,
+      "orphan_count": 347,
+      "active_rate": 2.0,
+      "active_domains": [
+        "daugavpils.lv",
+        "jelgava.lv",
+        "liepaja.lv",
+        "riga.lv",
+        "rtu.lv",
+        "saeima.lv",
+        "ventspils.lv"
+      ],
+      "orphan_breakdown": {
+        "subdomains": 216,
+        "staging_test": 1,
+        "likely_dead": 0,
+        "other": 130
+      },
+      "orphan_sample": [
+        "akcmv.gov.lv",
+        "altona.riga.lv",
+        "apmekle.president.lv",
+        "apply.rtu.lv",
+        "apps.rtu.lv",
+        "apr.riga.lv",
+        "at.gov.lv",
+        "atbalsts.rtu.lv",
+        "atjauno.riga.lv",
+        "avesol.riga.lv"
+      ],
+      "staging_sample": [
+        "dev.liepaja.lv"
+      ]
+    },
+    "Liechtenstein": {
+      "seed_count": 12,
+      "active_count": 0,
+      "orphan_count": 12,
+      "active_rate": 0.0,
+      "active_domains": [],
+      "orphan_breakdown": {
+        "subdomains": 0,
+        "staging_test": 0,
+        "likely_dead": 0,
+        "other": 12
+      },
+      "orphan_sample": [
+        "autodiscover.regierung.li",
+        "bua.regierung.li",
+        "fototool.regierung.li",
+        "lyncdiscover.regierung.li",
+        "ma.regierung.li",
+        "medienportal.regierung.li",
+        "mg.regierung.li",
+        "mi.regierung.li",
+        "minf.regierung.li",
+        "mpf.regierung.li"
+      ],
+      "staging_sample": []
+    },
+    "Lithuania": {
+      "seed_count": 90,
+      "active_count": 12,
+      "orphan_count": 75,
+      "active_rate": 13.3,
+      "active_domains": [
+        "alytus.lt",
+        "finmin.lt",
+        "kaunas.lt",
+        "klaipeda.lt",
+        "lrs.lt",
+        "migracija.lt",
+        "panevezys.lt",
+        "siauliai.lt",
+        "smm.lt",
+        "sveikata.lt",
+        "vilnius.lt",
+        "vmi.lt"
+      ],
+      "orphan_breakdown": {
+        "subdomains": 16,
+        "staging_test": 2,
+        "likely_dead": 0,
+        "other": 57
+      },
+      "orphan_sample": [
+        "1863.siauliai.lt",
+        "archyvai.lrv.lt",
+        "atviri.siauliai.lt",
+        "avaz.vmi.lt",
+        "dalyvauk.alytus.lt",
+        "darzeliai.panevezys.lt",
+        "daugiabuciai.kaunas.lt",
+        "deklaravimas.vmi.lt",
+        "dms2014.finmin.lt",
+        "e-seimas.lrs.lt"
+      ],
+      "staging_sample": [
+        "imas-demo.vmi.lt",
+        "ppvistest.lrv.lt"
+      ]
+    },
+    "Luxembourg": {
+      "seed_count": 271,
+      "active_count": 32,
+      "orphan_count": 232,
+      "active_rate": 11.8,
+      "active_domains": [
+        "adem.lu",
+        "cfl.lu",
+        "chem.lu",
+        "chl.lu",
+        "cita.lu",
+        "differdange.lu",
+        "dudelange.lu",
+        "esch.lu",
+        "etat.lu",
+        "geoportail.lu",
+        "gouvernement.lu",
+        "ilr.lu",
+        "inll.lu",
+        "inondations.lu",
+        "lod.lu",
+        "mersch.lu",
+        "meteolux.lu",
+        "nationalmusee.lu",
+        "petange.lu",
+        "petitiounen.lu"
+      ],
+      "orphan_breakdown": {
+        "subdomains": 23,
+        "staging_test": 0,
+        "likely_dead": 0,
+        "other": 209
+      },
+      "orphan_sample": [
+        "123easy.public.lu",
+        "aaa.public.lu",
+        "accessibilite.public.lu",
+        "acd.gouvernement.lu",
+        "acf.gouvernement.lu",
+        "acme.uni.lu",
+        "act.public.lu",
+        "adem.gouvernement.lu",
+        "adem.public.lu",
+        "administration.esch.lu"
+      ],
+      "staging_sample": []
+    },
+    "Malta": {
+      "seed_count": 1179,
+      "active_count": 2,
+      "orphan_count": 1177,
+      "active_rate": 0.2,
+      "active_domains": [
+        "gov.mt",
+        "parlament.mt"
+      ],
+      "orphan_breakdown": {
+        "subdomains": 410,
+        "staging_test": 41,
+        "likely_dead": 0,
+        "other": 726
+      },
+      "orphan_sample": [
+        "112mt.gov.mt",
+        "aacbeta.gov.mt",
+        "aacc.gov.mt",
+        "aaccbeta.gov.mt",
+        "academybeta.gov.mt",
+        "accommodation.gov.mt",
+        "accountancyboard.gov.mt",
+        "activeageing.gov.mt",
+        "afm.gov.mt",
+        "afmbeta.gov.mt"
+      ],
+      "staging_sample": [
+        "consularplus-test.gov.mt",
+        "covidtest.gov.mt",
+        "ctmstest.gov.mt",
+        "digicerttest08032023.gov.mt",
+        "digicerttest11.gov.mt"
+      ]
+    },
+    "Moldova": {
+      "seed_count": 312,
+      "active_count": 0,
+      "orphan_count": 312,
+      "active_rate": 0.0,
+      "active_domains": [],
+      "orphan_breakdown": {
+        "subdomains": 129,
+        "staging_test": 9,
+        "likely_dead": 0,
+        "other": 174
+      },
+      "orphan_sample": [
+        "100.gov.md",
+        "100zile.gov.md",
+        "373.gov.md",
+        "aap.gov.md",
+        "actelocale.gov.md",
+        "actpermisiv.gov.md",
+        "adma.gov.md",
+        "adminbac.gov.md",
+        "adminevinieta.gov.md",
+        "aee.gov.md"
+      ],
+      "staging_sample": [
+        "dev-justice.gov.md",
+        "devecazier.gov.md",
+        "emoldovata.gov.md",
+        "essc-test.gov.md",
+        "essc-testpay.gov.md"
+      ]
+    },
+    "Monaco": {
+      "seed_count": 119,
+      "active_count": 0,
+      "orphan_count": 119,
+      "active_rate": 0.0,
+      "active_domains": [],
+      "orphan_breakdown": {
+        "subdomains": 31,
+        "staging_test": 4,
+        "likely_dead": 0,
+        "other": 84
+      },
+      "orphan_sample": [
+        "ambassade-en-chine.gouv.mc",
+        "ambassade-en-france.gouv.mc",
+        "amsn.gouv.mc",
+        "assets-freezing.gouv.mc",
+        "assetsfreezing.gouv.mc",
+        "autodiscover.gouv.mc",
+        "av.gouv.mc",
+        "carabiniers.gouv.mc",
+        "cavs.gouv.mc",
+        "ccd.gouv.mc"
+      ],
+      "staging_sample": [
+        "devenir-sapeur-pompier.gouv.mc",
+        "devenir-sapeurs-pompiers.gouv.mc",
+        "journaldemonaco.gouv.mc",
+        "test-icn.gouv.mc"
+      ]
+    },
+    "Montenegro": {
+      "seed_count": 255,
+      "active_count": 0,
+      "orphan_count": 255,
+      "active_rate": 0.0,
+      "active_domains": [],
+      "orphan_breakdown": {
+        "subdomains": 82,
+        "staging_test": 4,
+        "likely_dead": 0,
+        "other": 169
+      },
+      "orphan_sample": [
+        "3r-api-epa.gov.me",
+        "3r-auth-epa.gov.me",
+        "3r-epa.gov.me",
+        "adfs.gov.me",
+        "admin.gov.me",
+        "akvo.gov.me",
+        "anb.gov.me",
+        "antitrafficking.gov.me",
+        "api.gov.me",
+        "apivauceri.gov.me"
+      ],
+      "staging_sample": [
+        "fadntest.gov.me",
+        "testdms.gov.me",
+        "testjiisuip.gov.me",
+        "testorigamimob.gov.me"
+      ]
+    },
+    "Netherlands": {
+      "seed_count": 532,
+      "active_count": 49,
+      "orphan_count": 469,
+      "active_rate": 9.2,
+      "active_domains": [
+        "alkmaar.nl",
+        "almere.nl",
+        "alphenaandenrijn.nl",
+        "amersfoort.nl",
+        "amsterdam.nl",
+        "apeldoorn.nl",
+        "arnhem.nl",
+        "autoriteitpersoonsgegevens.nl",
+        "belastingdienst.nl",
+        "brabant.nl",
+        "breda.nl",
+        "cbs.nl",
+        "delft.nl",
+        "denhaag.nl",
+        "deventer.nl",
+        "dordrecht.nl",
+        "drenthe.nl",
+        "ede.nl",
+        "eerstekamer.nl",
+        "eindhoven.nl"
+      ],
+      "orphan_breakdown": {
+        "subdomains": 30,
+        "staging_test": 9,
+        "likely_dead": 0,
+        "other": 430
+      },
+      "orphan_sample": [
+        "3d.amsterdam.nl",
+        "a-feeds.government.nl",
+        "a-magazines.government.nl",
+        "a-magazinesintern.government.nl",
+        "a-newsletter.government.nl",
+        "a-opendata.government.nl",
+        "a-www.government.nl",
+        "aanmeldenparkeren.amsterdam.nl",
+        "aanvraagparkeren.groningen.nl",
+        "activiteiten.amsterdam.nl"
+      ],
+      "staging_sample": [
+        "developer.overheid.nl",
+        "developers.kvk.nl",
+        "dloket.deventer.nl",
+        "doemee.deventer.nl",
+        "gemeenteraad.deventer.nl"
+      ]
+    },
+    "North Macedonia": {
+      "seed_count": 703,
+      "active_count": 0,
+      "orphan_count": 703,
+      "active_rate": 0.0,
+      "active_domains": [],
+      "orphan_breakdown": {
+        "subdomains": 565,
+        "staging_test": 1,
+        "likely_dead": 0,
+        "other": 137
+      },
+      "orphan_sample": [
+        "aaipa.gov.mk",
+        "agencija.gov.mk",
+        "akazum.gov.mk",
+        "ams.gov.mk",
+        "aopz.gov.mk",
+        "arhiv.gov.mk",
+        "avrm.gov.mk",
+        "bitola.gov.mk",
+        "bogdanci.gov.mk",
+        "bro.gov.mk"
+      ],
+      "staging_sample": [
+        "cucersandevo.gov.mk"
+      ]
+    },
+    "Norway": {
+      "seed_count": 326,
+      "active_count": 24,
+      "orphan_count": 302,
+      "active_rate": 7.4,
+      "active_domains": [
+        "altinn.no",
+        "arbeidstilsynet.no",
+        "brreg.no",
+        "bufdir.no",
+        "dsa.no",
+        "fhi.no",
+        "forsvaret.no",
+        "helsenorge.no",
+        "kystverket.no",
+        "lovdata.no",
+        "mattilsynet.no",
+        "miljodirektoratet.no",
+        "nav.no",
+        "nkom.no",
+        "norges-bank.no",
+        "nupi.no",
+        "nve.no",
+        "regjeringen.no",
+        "skatteetaten.no",
+        "ssb.no"
+      ],
+      "orphan_breakdown": {
+        "subdomains": 152,
+        "staging_test": 7,
+        "likely_dead": 0,
+        "other": 143
+      },
+      "orphan_sample": [
+        "a3.kystverket.no",
+        "aksel.nav.no",
+        "analysebrettet.udir.no",
+        "antikorrupsjon.regjeringen.no",
+        "api.nve.no",
+        "arbeidogvelferd.nav.no",
+        "arbeidsmiljohjelpen.arbeidstilsynet.no",
+        "arbeidsplassen.nav.no",
+        "atcddd.fhi.no",
+        "atlas.nve.no"
+      ],
+      "staging_sample": [
+        "dev.regjeringen.no",
+        "rewritetest.regjeringen.no",
+        "test.regjeringen.no",
+        "testbeta.regjeringen.no",
+        "testrewrite.regjeringen.no"
+      ]
+    },
+    "Poland": {
+      "seed_count": 7926,
+      "active_count": 20,
+      "orphan_count": 7709,
+      "active_rate": 0.3,
+      "active_domains": [
+        "czestochowa.pl",
+        "gdansk.pl",
+        "gdynia.pl",
+        "gorzow.pl",
+        "kielce.eu",
+        "krakow.pl",
+        "lodz.pl",
+        "nowykorczyn.pl",
+        "plock.eu",
+        "powiatglubczycki.pl",
+        "powiatgora.pl",
+        "powiatlubaczowski.pl",
+        "powiatopolski.pl",
+        "powiatpleszewski.pl",
+        "powiatprzeworsk.pl",
+        "powiatslubicki.pl",
+        "poznan.pl",
+        "sopot.pl",
+        "tarnow.pl",
+        "torun.pl"
+      ],
+      "orphan_breakdown": {
+        "subdomains": 4279,
+        "staging_test": 9,
+        "likely_dead": 0,
+        "other": 3421
+      },
+      "orphan_sample": [
+        "13lo.szczecin.pl",
+        "1lo.bydgoszcz.pl",
+        "1lo.rzeszow.pl",
+        "2lo.gorzow.pl",
+        "2lo.radom.pl",
+        "2slo.bialystok.pl",
+        "2slo.bydgoszcz.pl",
+        "33.poznan.pl",
+        "37lo.poznan.pl",
+        "3lo.bialystok.pl"
+      ],
+      "staging_sample": [
+        "academos.krakow.pl",
+        "auto-test.szczecin.pl",
+        "bip.powiatgoldap.pl",
+        "goldmed.szczecin.pl",
+        "old.powiatgora.pl"
+      ]
+    },
+    "Portugal": {
+      "seed_count": 2833,
+      "active_count": 55,
+      "orphan_count": 2571,
+      "active_rate": 1.9,
+      "active_domains": [
+        "ana.pt",
+        "cm-alcoutim.pt",
+        "cm-aveiro.pt",
+        "cm-barcelos.pt",
+        "cm-barrancos.pt",
+        "cm-braga.pt",
+        "cm-carregal.pt",
+        "cm-cartaxo.pt",
+        "cm-castelobranco.pt",
+        "cm-castromarim.pt",
+        "cm-coimbra.pt",
+        "cm-covilha.pt",
+        "cm-elvas.pt",
+        "cm-estarreja.pt",
+        "cm-fafe.pt",
+        "cm-faro.pt",
+        "cm-feira.pt",
+        "cm-fronteira.pt",
+        "cm-fundao.pt",
+        "cm-gaia.pt"
+      ],
+      "orphan_breakdown": {
+        "subdomains": 1534,
+        "staging_test": 4,
+        "likely_dead": 0,
+        "other": 1033
+      },
+      "orphan_sample": [
+        "4maravilhas.cm-mealhada.pt",
+        "abrantes360.cm-abrantes.pt",
+        "academiaportuguesadahistoria.gov.pt",
+        "acesso.gov.pt",
+        "acm.gov.pt",
+        "acompanhamais.cm-tavira.pt",
+        "acordaosv22.tribunalconstitucional.pt",
+        "act.gov.pt",
+        "admintributaria.gov.pt",
+        "agenda.cm-abrantes.pt"
+      ],
+      "staging_sample": [
+        "old.cm-tondela.pt",
+        "recrutamentodev111122.cm-machico.pt",
+        "test.gov.pt",
+        "testcgr.gov.pt"
+      ]
+    },
+    "Republic of Cyprus": {
+      "seed_count": 489,
+      "active_count": 1,
+      "orphan_count": 486,
+      "active_rate": 0.2,
+      "active_domains": [
+        "centralbank.cy"
+      ],
+      "orphan_breakdown": {
+        "subdomains": 399,
+        "staging_test": 0,
+        "likely_dead": 0,
+        "other": 87
+      },
+      "orphan_sample": [
+        "1420.gov.cy",
+        "airquality.gov.cy",
+        "aradippou.org.cy",
+        "betterregulation.gov.cy",
+        "businessincyprus.gov.cy",
+        "capo.gov.cy",
+        "centralbank.gov.cy",
+        "chiefscientist.gov.cy",
+        "companies.gov.cy",
+        "connect2cy.gov.cy"
+      ],
+      "staging_sample": []
+    },
+    "Romania": {
+      "seed_count": 660,
+      "active_count": 4,
+      "orphan_count": 639,
+      "active_rate": 0.6,
+      "active_domains": [
+        "mapn.ro",
+        "ms.ro",
+        "pmb.ro",
+        "politiaromana.ro"
+      ],
+      "orphan_breakdown": {
+        "subdomains": 189,
+        "staging_test": 7,
+        "likely_dead": 0,
+        "other": 443
+      },
+      "orphan_sample": [
+        "aaas.gov.ro",
+        "ab.politiaromana.ro",
+        "abc.brasovcity.ro",
+        "abudhabi.mae.ro",
+        "abuja.mae.ro",
+        "accelerate.gov.ro",
+        "achizitiipublice.gov.ro",
+        "acteinterne.pmb.ro",
+        "activ.oradea.ro",
+        "addisabeba.mae.ro"
+      ],
+      "staging_sample": [
+        "old.ms.ro",
+        "oldeconomie.gov.ro",
+        "oldsite.ms.ro",
+        "statiuneabaltatesti.mapn.ro",
+        "test-aici.gov.ro"
+      ]
+    },
+    "Russia": {
+      "seed_count": 540,
+      "active_count": 0,
+      "orphan_count": 540,
+      "active_rate": 0.0,
+      "active_domains": [],
+      "orphan_breakdown": {
+        "subdomains": 452,
+        "staging_test": 0,
+        "likely_dead": 0,
+        "other": 88
+      },
+      "orphan_sample": [
+        "92.gov.ru",
+        "ac.gov.ru",
+        "ach.gov.ru",
+        "ar.gov.ru",
+        "arctic.gov.ru",
+        "atd.gov.ru",
+        "atr.gov.ru",
+        "audit.gov.ru",
+        "beta.gov.ru",
+        "budget.gov.ru"
+      ],
+      "staging_sample": []
+    },
+    "San Marino": {
+      "seed_count": 1,
+      "active_count": 0,
+      "orphan_count": 1,
+      "active_rate": 0.0,
+      "active_domains": [],
+      "orphan_breakdown": {
+        "subdomains": 0,
+        "staging_test": 0,
+        "likely_dead": 0,
+        "other": 1
+      },
+      "orphan_sample": [
+        "gov.sm"
+      ],
+      "staging_sample": []
+    },
+    "Serbia": {
+      "seed_count": 563,
+      "active_count": 0,
+      "orphan_count": 563,
+      "active_rate": 0.0,
+      "active_domains": [],
+      "orphan_breakdown": {
+        "subdomains": 476,
+        "staging_test": 1,
+        "likely_dead": 0,
+        "other": 86
+      },
+      "orphan_sample": [
+        "abs.gov.rs",
+        "akreditacija.gov.rs",
+        "alims.gov.rs",
+        "alsu.gov.rs",
+        "apr.gov.rs",
+        "aul.gov.rs",
+        "autodiscover.gov.rs",
+        "av.gov.rs",
+        "azus.gov.rs",
+        "cad.gov.rs"
+      ],
+      "staging_sample": [
+        "test-uzda.gov.rs"
+      ]
+    },
+    "Slovakia": {
+      "seed_count": 493,
+      "active_count": 13,
+      "orphan_count": 478,
+      "active_rate": 2.6,
+      "active_domains": [
+        "banskabystrica.sk",
+        "bratislava.sk",
+        "gov.sk",
+        "kosice.sk",
+        "martin.sk",
+        "minv.sk",
+        "nrsr.sk",
+        "poprad.sk",
+        "presov.sk",
+        "slovensko.sk",
+        "trencin.sk",
+        "trnava.sk",
+        "zilina.sk"
+      ],
+      "orphan_breakdown": {
+        "subdomains": 247,
+        "staging_test": 2,
+        "likely_dead": 0,
+        "other": 229
+      },
+      "orphan_sample": [
+        "adminer.gov.sk",
+        "amfik.trnava.sk",
+        "antimon.gov.sk",
+        "archivzverejnovanie.bratislava.sk",
+        "arvd.gov.sk",
+        "bajkujvmeste.trnava.sk",
+        "bojprotikorupcii.gov.sk",
+        "bokku.gov.sk",
+        "central2014.gov.sk",
+        "cert.gov.sk"
+      ],
+      "staging_sample": [
+        "korona-test.gov.sk",
+        "mydata-test.gov.sk"
+      ]
+    },
+    "Slovenia": {
+      "seed_count": 610,
+      "active_count": 12,
+      "orphan_count": 597,
+      "active_rate": 2.0,
+      "active_domains": [
+        "celje.si",
+        "ds-rs.si",
+        "gov.si",
+        "kamnik.si",
+        "koper.si",
+        "kranj.si",
+        "ljubljana.si",
+        "maribor.si",
+        "ptuj.si",
+        "slovenjgradec.si",
+        "trbovlje.si",
+        "vlada.si"
+      ],
+      "orphan_breakdown": {
+        "subdomains": 302,
+        "staging_test": 30,
+        "likely_dead": 0,
+        "other": 265
+      },
+      "orphan_sample": [
+        "acc.gov.si",
+        "am-sola.gov.si",
+        "am.gov.si",
+        "ankete.gov.si",
+        "arhiv-spletisc.gov.si",
+        "arr.gov.si",
+        "arrs.gov.si",
+        "ars.gov.si",
+        "arsktrp-mlkp.gov.si",
+        "arsktrp-mlkt.gov.si"
+      ],
+      "staging_sample": [
+        "acme-test.gov.si",
+        "acme-test.sigov.si",
+        "acme-test1.sigov.si",
+        "acme-test2.sigov.si",
+        "data-ppa-test.gov.si"
+      ]
+    },
+    "Spain": {
+      "seed_count": 2991,
+      "active_count": 24,
+      "orphan_count": 2877,
+      "active_rate": 0.8,
+      "active_domains": [
+        "aeat.es",
+        "aragon.es",
+        "asturias.es",
+        "ayto-caceres.es",
+        "ayto-fuenlabrada.es",
+        "ayto-losbarrios.es",
+        "ayuntamiento-espana.es",
+        "caib.es",
+        "carm.es",
+        "castillalamancha.es",
+        "cuenca.es",
+        "dgt.es",
+        "gencat.cat",
+        "gobiernodecanarias.org",
+        "gva.es",
+        "ine.es",
+        "jcyl.es",
+        "juntaex.es",
+        "madrid.es",
+        "malaga.eu"
+      ],
+      "orphan_breakdown": {
+        "subdomains": 1395,
+        "staging_test": 7,
+        "likely_dead": 0,
+        "other": 1475
+      },
+      "orphan_sample": [
+        "012.comunidad.madrid",
+        "012.xunta.gal",
+        "112.cantabria.es",
+        "112.castillalamancha.es",
+        "112.gencat.cat",
+        "112.jcyl.es",
+        "112aragon.aragon.es",
+        "28dejulio.cantabria.es",
+        "5g.madrid.es",
+        "abertos.xunta.gal"
+      ],
+      "staging_sample": [
+        "catalogoarchivodevilla.madrid.es",
+        "catalogoarchivodevillapre.madrid.es",
+        "idev.gva.es",
+        "memoriademocratica.asturias.es",
+        "retodemografico.castillalamancha.es"
+      ]
+    },
+    "Sweden": {
+      "seed_count": 844,
+      "active_count": 73,
+      "orphan_count": 726,
+      "active_rate": 8.6,
+      "active_domains": [
+        "1177.se",
+        "av.se",
+        "boras.se",
+        "boverket.se",
+        "brottsoffermyndigheten.se",
+        "domstol.se",
+        "ehalsomyndigheten.se",
+        "eskilstuna.se",
+        "folkhalsomyndigheten.se",
+        "forsvarsmakten.se",
+        "ftn.se",
+        "gavle.se",
+        "goliskait.se",
+        "goteborg.se",
+        "gotland.se",
+        "halmstad.se",
+        "havochvatten.se",
+        "helsingborg.se",
+        "huddinge.se",
+        "jonkoping.se"
+      ],
+      "orphan_breakdown": {
+        "subdomains": 69,
+        "staging_test": 1,
+        "likely_dead": 0,
+        "other": 656
+      },
+      "orphan_sample": [
+        "1177direkt.regionvastmanland.se",
+        "aad-mfa-reset.goteborg.se",
+        "aichatt.konsumentverket.se",
+        "alfresco7.svk.se",
+        "alkt.sodertalje.se",
+        "allaktivitetshus.uppsala.se",
+        "allis.uppsala.se",
+        "almtunaskolan.uppsala.se",
+        "anlaggningsregister.umea.se",
+        "anmalan.konsumentverket.se"
+      ],
+      "staging_sample": [
+        "toramaptest.riksarkivet.se"
+      ]
+    },
+    "Switzerland": {
+      "seed_count": 3701,
+      "active_count": 5,
+      "orphan_count": 3695,
+      "active_rate": 0.1,
+      "active_domains": [
+        "admin.ch",
+        "bfh.ch",
+        "epfl.ch",
+        "ethz.ch",
+        "unige.ch"
+      ],
+      "orphan_breakdown": {
+        "subdomains": 2506,
+        "staging_test": 14,
+        "likely_dead": 0,
+        "other": 1175
+      },
+      "orphan_sample": [
+        "a01vortex.admin.ch",
+        "abstimmungen.admin.ch",
+        "acc.admin.ch",
+        "acc2.admin.ch",
+        "acc4.admin.ch",
+        "ace.ethz.ch",
+        "actu.epfl.ch",
+        "adminsrv6.admin.ch",
+        "admissions.unige.ch",
+        "advanced-manufacturing.ethz.ch"
+      ],
+      "staging_sample": [
+        "accessibilityteststandardmandant.admin.ch",
+        "efk-test.admin.ch",
+        "fptest.admin.ch",
+        "mediathektest.admin.ch",
+        "metaslap-test.admin.ch"
+      ]
+    },
+    "Ukraine": {
+      "seed_count": 1304,
+      "active_count": 0,
+      "orphan_count": 1304,
+      "active_rate": 0.0,
+      "active_domains": [],
+      "orphan_breakdown": {
+        "subdomains": 840,
+        "staging_test": 1,
+        "likely_dead": 0,
+        "other": 463
+      },
+      "orphan_sample": [
+        "1551.gov.ua",
+        "adm-km.gov.ua",
+        "admincher.gov.ua",
+        "agrex.gov.ua",
+        "agro-id.gov.ua",
+        "agro.gov.ua",
+        "ak.gov.ua",
+        "akimorg.gov.ua",
+        "aku.gov.ua",
+        "andrrada.gov.ua"
+      ],
+      "staging_sample": [
+        "voldpss.gov.ua"
+      ]
+    },
+    "United Kingdom": {
+      "seed_count": 4247,
+      "active_count": 0,
+      "orphan_count": 4247,
+      "active_rate": 0.0,
+      "active_domains": [],
+      "orphan_breakdown": {
+        "subdomains": 3766,
+        "staging_test": 9,
+        "likely_dead": 0,
+        "other": 472
+      },
+      "orphan_sample": [
+        "aberdeencity.gov.uk",
+        "aberdeenshire.gov.uk",
+        "agma.gov.uk",
+        "ambervalley.gov.uk",
+        "amethyst.gov.uk",
+        "anglesey.gov.uk",
+        "angliarevenues.gov.uk",
+        "angus.gov.uk",
+        "animalhealthscotland.gov.uk",
+        "antrim.gov.uk"
+      ],
+      "staging_sample": [
+        "devon.gov.uk",
+        "devonjobs.gov.uk",
+        "devonline.gov.uk",
+        "devontenders.gov.uk",
+        "eastdevon.gov.uk"
+      ]
+    },
+    "United Kingdom (UK)": {
+      "seed_count": 8260,
+      "active_count": 5,
+      "orphan_count": 8246,
+      "active_rate": 0.1,
+      "active_domains": [
+        "gov.scot",
+        "gov.wales",
+        "llyw.cymru",
+        "parliament.uk",
+        "senedd.cymru"
+      ],
+      "orphan_breakdown": {
+        "subdomains": 7096,
+        "staging_test": 19,
+        "likely_dead": 0,
+        "other": 1131
+      },
+      "orphan_sample": [
+        "111.nhs.uk",
+        "306medicalcentre.nhs.uk",
+        "42kingsway.nhs.uk",
+        "aberdeenshire.gov.uk",
+        "abergavennytowncouncil.gov.uk",
+        "aberystwyth.gov.uk",
+        "academiwales.gov.wales",
+        "account.gov.uk",
+        "accurx.nhs.uk",
+        "acornmedicalcentre.nhs.uk"
+      ],
+      "staging_sample": [
+        "childrenandfamilyhealthdevon.nhs.uk",
+        "cotswold.gov.uk",
+        "cotswoldmedicalpractice.nhs.uk",
+        "devaneymedicalcentre.nhs.uk",
+        "devonandcornwall-pcc.gov.uk"
+      ]
+    }
+  }
+}

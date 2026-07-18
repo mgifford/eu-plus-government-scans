@@ -133,6 +133,38 @@ class UrlOverlayResult:
 
 
 @dataclass(slots=True)
+class RelationshipScanState:
+    """Per-URL progressive relationship scan state (updated in place)."""
+
+    url: str
+    country_code: str
+    source_domain: str = ""
+    last_attempted_at: str | None = None
+    last_successful_at: str | None = None
+    status: str = "pending"  # pending | processing | completed | failed | skipped
+    failure_count: int = 0
+    scan_duration_ms: int = 0
+    last_scan_id: str | None = None
+
+
+@dataclass(slots=True)
+class RelationshipScanResult:
+    """Per-scan relationship scan result (append-only history)."""
+
+    url: str
+    country_code: str
+    scan_id: str
+    status_code: int | None = None
+    error_message: str | None = None
+    is_reachable: int = 1
+    source_domain: str = ""
+    source_url: str = ""
+    relationships_found: int = 0
+    scan_duration_ms: int = 0
+    scanned_at: str | None = None
+
+
+@dataclass(slots=True)
 class ValidationBatchState:
     """Tracks progress of batch validation cycles."""
     cycle_id: str
@@ -326,6 +358,46 @@ CREATE TABLE IF NOT EXISTS url_overlay_results (
 CREATE INDEX IF NOT EXISTS idx_overlay_country ON url_overlay_results(country_code);
 CREATE INDEX IF NOT EXISTS idx_overlay_scan ON url_overlay_results(scan_id);
 CREATE INDEX IF NOT EXISTS idx_overlay_has_overlay ON url_overlay_results(overlay_count);
+
+-- Migration: Progressive relationship scanning — per-URL scan state
+-- One row per URL; updated in place each scan cycle.
+CREATE TABLE IF NOT EXISTS relationship_scan_state (
+    url TEXT NOT NULL,
+    country_code TEXT NOT NULL,
+    source_domain TEXT NOT NULL DEFAULT '',
+    last_attempted_at TEXT,
+    last_successful_at TEXT,
+    status TEXT NOT NULL DEFAULT 'pending',
+    failure_count INTEGER NOT NULL DEFAULT 0,
+    scan_duration_ms INTEGER NOT NULL DEFAULT 0,
+    last_scan_id TEXT,
+    PRIMARY KEY (url)
+);
+
+CREATE INDEX IF NOT EXISTS idx_rel_state_country ON relationship_scan_state(country_code);
+CREATE INDEX IF NOT EXISTS idx_rel_state_status ON relationship_scan_state(status);
+CREATE INDEX IF NOT EXISTS idx_rel_state_last_attempt ON relationship_scan_state(last_attempted_at);
+CREATE INDEX IF NOT EXISTS idx_rel_state_last_success ON relationship_scan_state(last_successful_at);
+
+-- Migration: Progressive relationship scanning — per-scan results (append-only)
+-- One row per URL per scan_id; preserves history for JSONL merge.
+CREATE TABLE IF NOT EXISTS relationship_scan_results (
+    url TEXT NOT NULL,
+    country_code TEXT NOT NULL,
+    scan_id TEXT NOT NULL,
+    status_code INTEGER,
+    error_message TEXT,
+    is_reachable INTEGER NOT NULL DEFAULT 1,
+    source_domain TEXT NOT NULL DEFAULT '',
+    source_url TEXT NOT NULL DEFAULT '',
+    relationships_found INTEGER NOT NULL DEFAULT 0,
+    scan_duration_ms INTEGER NOT NULL DEFAULT 0,
+    scanned_at TEXT,
+    PRIMARY KEY (url, scan_id)
+);
+
+CREATE INDEX IF NOT EXISTS idx_rel_results_country ON relationship_scan_results(country_code);
+CREATE INDEX IF NOT EXISTS idx_rel_results_scan ON relationship_scan_results(scan_id);
 """
 
 

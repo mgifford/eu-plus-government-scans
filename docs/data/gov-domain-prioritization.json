@@ -1,0 +1,5532 @@
+{
+  "generated_at": "2026-07-17T22:18:06.430113+00:00",
+  "methodology": "Network centrality from relationship scanning. Domains ranked by total observations (link appearances across scanned government sites). Tiers: critical (top 5%), high (top 15%), medium (top 30%).",
+  "countries": {
+    "Albania": {
+      "country_code": "",
+      "seed_count": 584,
+      "scanned_count": 0,
+      "active_count": 0,
+      "orphan_count": 584,
+      "scan_priority": {
+        "critical": [],
+        "high": [],
+        "medium": []
+      },
+      "hub_details": [],
+      "orphan_sample": [
+        "100vjet.bashkiakorce.gov.al",
+        "absa.gov.al",
+        "admin.drshdurres.gov.al",
+        "admin.qnk.gov.al",
+        "administrata.gov.al",
+        "akad.gov.al",
+        "akbn.gov.al",
+        "akce.gov.al",
+        "akreditim.dpa.gov.al",
+        "akshi.gov.al",
+        "albadentgroup.srd.gov.al",
+        "albarchive.gov.al",
+        "albis.justice.gov.al",
+        "amf.gov.al",
+        "amvv.qeverisjavendore.gov.al"
+      ]
+    },
+    "Andorra": {
+      "country_code": "",
+      "seed_count": 128,
+      "scanned_count": 0,
+      "active_count": 0,
+      "orphan_count": 128,
+      "scan_priority": {
+        "critical": [],
+        "high": [],
+        "medium": []
+      },
+      "hub_details": [],
+      "orphan_sample": [
+        "3c.govern.ad",
+        "acces-ec.govern.ad",
+        "admwifi1.local.govern.ad",
+        "admwifi2.local.govern.ad",
+        "aeoi-pre.govern.ad",
+        "aeoi.govern.ad",
+        "ajudeseo.govern.ad",
+        "alertes.govern.ad",
+        "api.bip.govern.ad",
+        "aplicacions.govern.ad",
+        "appnotes.govern.ad",
+        "asterix.govern.ad",
+        "atol.govern.ad",
+        "autenticacio-cert.govern.ad",
+        "autenticacio.ec.govern.ad"
+      ]
+    },
+    "Armenia": {
+      "country_code": "",
+      "seed_count": 225,
+      "scanned_count": 0,
+      "active_count": 0,
+      "orphan_count": 225,
+      "scan_priority": {
+        "critical": [],
+        "high": [],
+        "medium": []
+      },
+      "hub_details": [],
+      "orphan_sample": [
+        "adams.gov.am",
+        "admin.car.mia.gov.am",
+        "ai.gov.am",
+        "anti-corruption.gov.am",
+        "api-ac19.gov.am",
+        "api-covid.gov.am",
+        "api-stayhome.gov.am",
+        "api.car.mia.gov.am",
+        "auction.mia.gov.am",
+        "autodiscover.ai.gov.am",
+        "benefits.hightech.gov.am",
+        "bulletin.moj.gov.am",
+        "cadastre-zz.gov.am",
+        "car.mia.gov.am",
+        "cert.gov.am"
+      ]
+    },
+    "Austria": {
+      "country_code": "AT",
+      "seed_count": 2473,
+      "scanned_count": 9,
+      "active_count": 7,
+      "orphan_count": 2464,
+      "scan_priority": {
+        "critical": [
+          "steiermark.at"
+        ],
+        "high": [
+          "vorarlberg.at"
+        ],
+        "medium": [
+          "bundesheer.at",
+          "kaernten.at",
+          "statistik.at"
+        ]
+      },
+      "hub_details": [
+        {
+          "domain": "steiermark.at",
+          "observations": 535,
+          "unique_sources": 1,
+          "unique_hostnames": 87,
+          "tier": "critical"
+        },
+        {
+          "domain": "vorarlberg.at",
+          "observations": 36,
+          "unique_sources": 1,
+          "unique_hostnames": 10,
+          "tier": "high"
+        },
+        {
+          "domain": "bundesheer.at",
+          "observations": 18,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "medium"
+        },
+        {
+          "domain": "kaernten.at",
+          "observations": 18,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "medium"
+        },
+        {
+          "domain": "statistik.at",
+          "observations": 18,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "medium"
+        },
+        {
+          "domain": "burgenland.at",
+          "observations": 5,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "rtr.at",
+          "observations": 2,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        }
+      ],
+      "orphan_sample": [
+        "48ertandler-qm.wien.gv.at",
+        "48ertandler.wien.gv.at",
+        "aba.gv.at",
+        "abfall.gda.gv.at",
+        "abfallberatung.wien.gv.at",
+        "abfuhrtermine.gda.gv.at",
+        "access.ada.gv.at",
+        "access.bmvit.gv.at",
+        "access.opfb.bmvit.gv.at",
+        "accounts.citrix.wien.gv.at",
+        "accounts.wien.gv.at",
+        "accreditor-test.bka.gv.at",
+        "accreditor.bka.gv.at",
+        "achau.gv.at",
+        "ada.gv.at"
+      ]
+    },
+    "Azerbaijan": {
+      "country_code": "",
+      "seed_count": 608,
+      "scanned_count": 0,
+      "active_count": 0,
+      "orphan_count": 608,
+      "scan_priority": {
+        "critical": [],
+        "high": [],
+        "medium": []
+      },
+      "hub_details": [],
+      "orphan_sample": [
+        "4sim.gov.az",
+        "aak.gov.az",
+        "abad.gov.az",
+        "accreditation.gov.az",
+        "acra.gov.az",
+        "adif.gov.az",
+        "admin.anama.gov.az",
+        "admin.dtf.gov.az",
+        "adoption.mlspp.gov.az",
+        "adra.gov.az",
+        "aef.gov.az",
+        "afsi.gov.az",
+        "aghdam.azerenerji.gov.az",
+        "agro.gov.az",
+        "agrotrade.gov.az"
+      ]
+    },
+    "Belarus": {
+      "country_code": "",
+      "seed_count": 594,
+      "scanned_count": 0,
+      "active_count": 0,
+      "orphan_count": 594,
+      "scan_priority": {
+        "critical": [],
+        "high": [],
+        "medium": []
+      },
+      "hub_details": [],
+      "orphan_sample": [
+        "000.rooglub.gov.by",
+        "aor.gov.by",
+        "api.torgi.gov.by",
+        "archives.gov.by",
+        "autodiscover.aor.gov.by",
+        "autodiscover.archives.gov.by",
+        "autodiscover.berestovitsa.gov.by",
+        "autodiscover.beshenkovichi.vitebsk-region.gov.by",
+        "autodiscover.bks.gov.by",
+        "autodiscover.caa.gov.by",
+        "autodiscover.cherikov.gov.by",
+        "autodiscover.dokshitsy.vitebsk-region.gov.by",
+        "autodiscover.dyatlovo.gov.by",
+        "autodiscover.economy.gov.by",
+        "autodiscover.gki.gov.by"
+      ]
+    },
+    "Belgium": {
+      "country_code": "BE",
+      "seed_count": 1011,
+      "scanned_count": 26,
+      "active_count": 11,
+      "orphan_count": 985,
+      "scan_priority": {
+        "critical": [
+          "wallonie.be"
+        ],
+        "high": [
+          "vlaanderen.be"
+        ],
+        "medium": [
+          "mechelen.be",
+          "belgium.be"
+        ]
+      },
+      "hub_details": [
+        {
+          "domain": "wallonie.be",
+          "observations": 86,
+          "unique_sources": 1,
+          "unique_hostnames": 23,
+          "tier": "critical"
+        },
+        {
+          "domain": "vlaanderen.be",
+          "observations": 40,
+          "unique_sources": 1,
+          "unique_hostnames": 12,
+          "tier": "high"
+        },
+        {
+          "domain": "mechelen.be",
+          "observations": 27,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "medium"
+        },
+        {
+          "domain": "belgium.be",
+          "observations": 26,
+          "unique_sources": 1,
+          "unique_hostnames": 17,
+          "tier": "medium"
+        },
+        {
+          "domain": "irisnet.be",
+          "observations": 10,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "low"
+        },
+        {
+          "domain": "hainaut.be",
+          "observations": 7,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        },
+        {
+          "domain": "antwerpen.be",
+          "observations": 6,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "low"
+        },
+        {
+          "domain": "mil.be",
+          "observations": 6,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "namur.be",
+          "observations": 6,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "liege.be",
+          "observations": 5,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "fgov.be",
+          "observations": 2,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        }
+      ],
+      "orphan_sample": [
+        "14-18.bruxelles.be",
+        "1777.kortrijk.be",
+        "2012.jaarverslag.financien.belgium.be",
+        "2012.rapportannuel.finances.belgium.be",
+        "2013.jaarverslag.financien.belgium.be",
+        "2013.rapportannuel.finances.belgium.be",
+        "2014.jaarverslag.financien.belgium.be",
+        "2014.rapportannuel.finances.belgium.be",
+        "2015.jaarverslag.financien.belgium.be",
+        "2015.rapportannuel.finances.belgium.be",
+        "2016.jaarverslag.financien.belgium.be",
+        "2016.rapportannuel.finances.belgium.be",
+        "2017.jaarverslag.financien.belgium.be",
+        "2017.rapportannuel.finances.belgium.be",
+        "2018.jaarverslag.finances.belgium.be"
+      ]
+    },
+    "Bosnia and Herzegovina": {
+      "country_code": "",
+      "seed_count": 479,
+      "scanned_count": 0,
+      "active_count": 0,
+      "orphan_count": 479,
+      "scan_priority": {
+        "critical": [],
+        "high": [],
+        "medium": []
+      },
+      "hub_details": [],
+      "orphan_sample": [
+        "1107press.srebrenica.gov.ba",
+        "72h.doboj.gov.ba",
+        "access.almbih.gov.ba",
+        "ada.gov.ba",
+        "admin.adsfbih.gov.ba",
+        "adsfbih.gov.ba",
+        "aeptm.gov.ba",
+        "agropedologija.gov.ba",
+        "almbih.gov.ba",
+        "ankete.sanskimost.gov.ba",
+        "ap.ks.gov.ba",
+        "aposo.gov.ba",
+        "arhiva.sbk-ksb.gov.ba",
+        "arsbih.gov.ba",
+        "arz.gov.ba"
+      ]
+    },
+    "Bulgaria": {
+      "country_code": "BG",
+      "seed_count": 198,
+      "scanned_count": 24,
+      "active_count": 22,
+      "orphan_count": 174,
+      "scan_priority": {
+        "critical": [
+          "sofia.bg",
+          "varna.bg"
+        ],
+        "high": [
+          "pleven.bg",
+          "gabrovo.bg"
+        ],
+        "medium": [
+          "burgas.bg",
+          "nsi.bg",
+          "lovech.bg"
+        ]
+      },
+      "hub_details": [
+        {
+          "domain": "sofia.bg",
+          "observations": 171,
+          "unique_sources": 1,
+          "unique_hostnames": 22,
+          "tier": "critical"
+        },
+        {
+          "domain": "varna.bg",
+          "observations": 71,
+          "unique_sources": 1,
+          "unique_hostnames": 10,
+          "tier": "critical"
+        },
+        {
+          "domain": "pleven.bg",
+          "observations": 69,
+          "unique_sources": 1,
+          "unique_hostnames": 7,
+          "tier": "high"
+        },
+        {
+          "domain": "gabrovo.bg",
+          "observations": 63,
+          "unique_sources": 1,
+          "unique_hostnames": 10,
+          "tier": "high"
+        },
+        {
+          "domain": "burgas.bg",
+          "observations": 55,
+          "unique_sources": 1,
+          "unique_hostnames": 7,
+          "tier": "medium"
+        },
+        {
+          "domain": "nsi.bg",
+          "observations": 49,
+          "unique_sources": 1,
+          "unique_hostnames": 9,
+          "tier": "medium"
+        },
+        {
+          "domain": "lovech.bg",
+          "observations": 46,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "medium"
+        },
+        {
+          "domain": "sliven.bg",
+          "observations": 40,
+          "unique_sources": 1,
+          "unique_hostnames": 10,
+          "tier": "low"
+        },
+        {
+          "domain": "haskovo.bg",
+          "observations": 34,
+          "unique_sources": 1,
+          "unique_hostnames": 10,
+          "tier": "low"
+        },
+        {
+          "domain": "shumen.bg",
+          "observations": 29,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "low"
+        },
+        {
+          "domain": "president.bg",
+          "observations": 26,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "low"
+        },
+        {
+          "domain": "pernik.bg",
+          "observations": 24,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "low"
+        },
+        {
+          "domain": "silistra.bg",
+          "observations": 23,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "low"
+        },
+        {
+          "domain": "pazardzhik.bg",
+          "observations": 18,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "dobrich.bg",
+          "observations": 14,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "low"
+        },
+        {
+          "domain": "yambol.bg",
+          "observations": 12,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "bnb.bg",
+          "observations": 11,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "mfa.bg",
+          "observations": 10,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        },
+        {
+          "domain": "plovdiv.bg",
+          "observations": 6,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "parliament.bg",
+          "observations": 6,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "ombudsman.bg",
+          "observations": 5,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "nra.bg",
+          "observations": 4,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        }
+      ],
+      "orphan_sample": [
+        "address.sofia.bg",
+        "agup.varna.bg",
+        "apo.gov.bg",
+        "apostille.gov.bg",
+        "app.mfa.bg",
+        "architect.sofia.bg",
+        "auth-cixpbg.gov.bg",
+        "auth-stg.cixpbg.gov.bg",
+        "auth.cixpbg.gov.bg",
+        "autodiscover.sars.gov.bg",
+        "autodiscover.stz.riew.gov.bg",
+        "backend.cixpbg.gov.bg",
+        "bgsl.sofia.bg",
+        "bm.cixpbg.gov.bg",
+        "bm.mgt.cixpbg.gov.bg"
+      ]
+    },
+    "Croatia": {
+      "country_code": "HR",
+      "seed_count": 500,
+      "scanned_count": 22,
+      "active_count": 22,
+      "orphan_count": 478,
+      "scan_priority": {
+        "critical": [
+          "zagreb.hr",
+          "rijeka.hr"
+        ],
+        "high": [
+          "pozega.hr",
+          "hzjz.hr"
+        ],
+        "medium": [
+          "hzzo.hr",
+          "sabor.hr",
+          "dzs.hr"
+        ]
+      },
+      "hub_details": [
+        {
+          "domain": "zagreb.hr",
+          "observations": 268,
+          "unique_sources": 1,
+          "unique_hostnames": 36,
+          "tier": "critical"
+        },
+        {
+          "domain": "rijeka.hr",
+          "observations": 116,
+          "unique_sources": 1,
+          "unique_hostnames": 19,
+          "tier": "critical"
+        },
+        {
+          "domain": "pozega.hr",
+          "observations": 63,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "high"
+        },
+        {
+          "domain": "hzjz.hr",
+          "observations": 62,
+          "unique_sources": 1,
+          "unique_hostnames": 10,
+          "tier": "high"
+        },
+        {
+          "domain": "hzzo.hr",
+          "observations": 58,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "medium"
+        },
+        {
+          "domain": "sabor.hr",
+          "observations": 50,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "medium"
+        },
+        {
+          "domain": "dzs.hr",
+          "observations": 41,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "medium"
+        },
+        {
+          "domain": "vukovar.hr",
+          "observations": 38,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "dubrovnik.hr",
+          "observations": 37,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "low"
+        },
+        {
+          "domain": "koprivnica.hr",
+          "observations": 34,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "low"
+        },
+        {
+          "domain": "slavonski-brod.hr",
+          "observations": 32,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "sibenik.hr",
+          "observations": 30,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "varazdin.hr",
+          "observations": 24,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "low"
+        },
+        {
+          "domain": "hakom.hr",
+          "observations": 23,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "low"
+        },
+        {
+          "domain": "osijek.hr",
+          "observations": 18,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "low"
+        },
+        {
+          "domain": "azop.hr",
+          "observations": 18,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "split.hr",
+          "observations": 17,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "low"
+        },
+        {
+          "domain": "zadar.hr",
+          "observations": 15,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "pula.hr",
+          "observations": 15,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "sisak.hr",
+          "observations": 10,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "predsjednik.hr",
+          "observations": 6,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "karlovac.hr",
+          "observations": 6,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        }
+      ],
+      "orphan_sample": [
+        "addon.test.ozujak1203.cdu.gov.hr",
+        "addondomena.hr.webs004-demo.cdu.gov.hr",
+        "aktivnosti.zagreb.hr",
+        "app.fzo.gov.hr",
+        "app.hakom.hr",
+        "arcportal.zagreb.hr",
+        "arhiva.pozega.hr",
+        "autodiscover.mailtest4.cdu.gov.hr",
+        "autodiscover.test.cdu.gov.hr",
+        "businesscroatia.gov.hr",
+        "buswebshop.dubrovnik.hr",
+        "cdu.gov.hr",
+        "cdu001-test.cdu.gov.hr",
+        "crm.investcroatia.gov.hr",
+        "data.zagreb.hr"
+      ]
+    },
+    "Czechia": {
+      "country_code": "CZ",
+      "seed_count": 1066,
+      "scanned_count": 29,
+      "active_count": 24,
+      "orphan_count": 1037,
+      "scan_priority": {
+        "critical": [
+          "plzen.eu",
+          "ostrava.cz"
+        ],
+        "high": [
+          "justice.cz",
+          "brno.cz"
+        ],
+        "medium": [
+          "praha.eu",
+          "olomouc.eu",
+          "psp.cz",
+          "mzp.cz"
+        ]
+      },
+      "hub_details": [
+        {
+          "domain": "plzen.eu",
+          "observations": 434,
+          "unique_sources": 1,
+          "unique_hostnames": 64,
+          "tier": "critical"
+        },
+        {
+          "domain": "ostrava.cz",
+          "observations": 386,
+          "unique_sources": 1,
+          "unique_hostnames": 55,
+          "tier": "critical"
+        },
+        {
+          "domain": "justice.cz",
+          "observations": 109,
+          "unique_sources": 1,
+          "unique_hostnames": 22,
+          "tier": "high"
+        },
+        {
+          "domain": "brno.cz",
+          "observations": 90,
+          "unique_sources": 1,
+          "unique_hostnames": 20,
+          "tier": "high"
+        },
+        {
+          "domain": "praha.eu",
+          "observations": 66,
+          "unique_sources": 1,
+          "unique_hostnames": 16,
+          "tier": "medium"
+        },
+        {
+          "domain": "olomouc.eu",
+          "observations": 42,
+          "unique_sources": 1,
+          "unique_hostnames": 11,
+          "tier": "medium"
+        },
+        {
+          "domain": "psp.cz",
+          "observations": 41,
+          "unique_sources": 1,
+          "unique_hostnames": 8,
+          "tier": "medium"
+        },
+        {
+          "domain": "mzp.cz",
+          "observations": 28,
+          "unique_sources": 1,
+          "unique_hostnames": 7,
+          "tier": "medium"
+        },
+        {
+          "domain": "plzensky-kraj.cz",
+          "observations": 27,
+          "unique_sources": 1,
+          "unique_hostnames": 15,
+          "tier": "low"
+        },
+        {
+          "domain": "uzis.cz",
+          "observations": 25,
+          "unique_sources": 1,
+          "unique_hostnames": 12,
+          "tier": "low"
+        },
+        {
+          "domain": "kraj-lbc.cz",
+          "observations": 24,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "low"
+        },
+        {
+          "domain": "liberec.cz",
+          "observations": 21,
+          "unique_sources": 1,
+          "unique_hostnames": 7,
+          "tier": "low"
+        },
+        {
+          "domain": "mzcr.cz",
+          "observations": 17,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "low"
+        },
+        {
+          "domain": "cnb.cz",
+          "observations": 17,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "low"
+        },
+        {
+          "domain": "mpsv.cz",
+          "observations": 16,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "low"
+        },
+        {
+          "domain": "pardubickykraj.cz",
+          "observations": 15,
+          "unique_sources": 1,
+          "unique_hostnames": 11,
+          "tier": "low"
+        },
+        {
+          "domain": "pardubice.eu",
+          "observations": 12,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "low"
+        },
+        {
+          "domain": "usti.cz",
+          "observations": 10,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "khk.cz",
+          "observations": 6,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "msmt.cz",
+          "observations": 6,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        },
+        {
+          "domain": "mdcr.cz",
+          "observations": 5,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "uradprace.cz",
+          "observations": 5,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "vlada.cz",
+          "observations": 4,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "mfcr.cz",
+          "observations": 2,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        }
+      ],
+      "orphan_sample": [
+        "a.alicorn.gov.cz",
+        "absolventi.gov.cz",
+        "ac.mids.gov.cz",
+        "account.nukib.gov.cz",
+        "account.staging.nukib.gov.cz",
+        "adisspr.mfcr.cz",
+        "admin.gov.cz",
+        "admin.pruvodcepripojenim.gov.cz",
+        "admin.smlouvy.gov.cz",
+        "admin.testrs.gov.cz",
+        "adresy.ctu.gov.cz",
+        "ags.cuzk.gov.cz",
+        "aise-rpp-ais-test.egon.gov.cz",
+        "aisp-rpp-ais-test.egon.gov.cz",
+        "aisp1-rpp-ais-test.egon.gov.cz"
+      ]
+    },
+    "Denmark": {
+      "country_code": "DK",
+      "seed_count": 710,
+      "scanned_count": 71,
+      "active_count": 51,
+      "orphan_count": 639,
+      "scan_priority": {
+        "critical": [
+          "kk.dk",
+          "aarhus.dk",
+          "um.dk"
+        ],
+        "high": [
+          "rm.dk",
+          "herning.dk",
+          "rn.dk",
+          "vejle.dk",
+          "albertslund.dk"
+        ],
+        "medium": [
+          "viborg.dk",
+          "gentofte.dk",
+          "roskilde.dk",
+          "horsens.dk",
+          "frederiksberg.dk",
+          "randers.dk",
+          "borger.dk",
+          "hjoerring.dk",
+          "fredericia.dk"
+        ]
+      },
+      "hub_details": [
+        {
+          "domain": "kk.dk",
+          "observations": 308,
+          "unique_sources": 1,
+          "unique_hostnames": 66,
+          "tier": "critical"
+        },
+        {
+          "domain": "aarhus.dk",
+          "observations": 212,
+          "unique_sources": 1,
+          "unique_hostnames": 36,
+          "tier": "critical"
+        },
+        {
+          "domain": "um.dk",
+          "observations": 128,
+          "unique_sources": 1,
+          "unique_hostnames": 32,
+          "tier": "critical"
+        },
+        {
+          "domain": "rm.dk",
+          "observations": 110,
+          "unique_sources": 1,
+          "unique_hostnames": 22,
+          "tier": "high"
+        },
+        {
+          "domain": "herning.dk",
+          "observations": 54,
+          "unique_sources": 1,
+          "unique_hostnames": 12,
+          "tier": "high"
+        },
+        {
+          "domain": "rn.dk",
+          "observations": 54,
+          "unique_sources": 1,
+          "unique_hostnames": 14,
+          "tier": "high"
+        },
+        {
+          "domain": "vejle.dk",
+          "observations": 47,
+          "unique_sources": 1,
+          "unique_hostnames": 10,
+          "tier": "high"
+        },
+        {
+          "domain": "albertslund.dk",
+          "observations": 43,
+          "unique_sources": 1,
+          "unique_hostnames": 7,
+          "tier": "high"
+        },
+        {
+          "domain": "viborg.dk",
+          "observations": 33,
+          "unique_sources": 1,
+          "unique_hostnames": 7,
+          "tier": "medium"
+        },
+        {
+          "domain": "gentofte.dk",
+          "observations": 30,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "medium"
+        },
+        {
+          "domain": "roskilde.dk",
+          "observations": 29,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "medium"
+        },
+        {
+          "domain": "horsens.dk",
+          "observations": 28,
+          "unique_sources": 1,
+          "unique_hostnames": 7,
+          "tier": "medium"
+        },
+        {
+          "domain": "frederiksberg.dk",
+          "observations": 26,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "medium"
+        },
+        {
+          "domain": "randers.dk",
+          "observations": 22,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "medium"
+        },
+        {
+          "domain": "borger.dk",
+          "observations": 16,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "medium"
+        },
+        {
+          "domain": "hjoerring.dk",
+          "observations": 15,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "medium"
+        },
+        {
+          "domain": "fredericia.dk",
+          "observations": 15,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "medium"
+        },
+        {
+          "domain": "forsvaret.dk",
+          "observations": 14,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "low"
+        },
+        {
+          "domain": "slagelse.dk",
+          "observations": 12,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "low"
+        },
+        {
+          "domain": "skanderborg.dk",
+          "observations": 12,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "low"
+        },
+        {
+          "domain": "dr.dk",
+          "observations": 12,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "fvm.dk",
+          "observations": 12,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "koege.dk",
+          "observations": 12,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "uvm.dk",
+          "observations": 12,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "holbaek.dk",
+          "observations": 12,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        }
+      ],
+      "orphan_sample": [
+        "aa.rm.dk",
+        "aabenskole.kk.dk",
+        "aabneaktivitetscentre.horsens.dk",
+        "aabyskole.aarhus.dk",
+        "aalborguh.rn.dk",
+        "admin.denmark.dk",
+        "aeldrecentre.hjoerring.dk",
+        "aeldremin.dk",
+        "affald.kk.dk",
+        "akbehandling.regionh.dk",
+        "akbehandling.regionsjaelland.dk",
+        "aktiv.herning.dk",
+        "aktivferie.herning.dk",
+        "aktivsammen.vejle.dk",
+        "aktivsenior.kk.dk"
+      ]
+    },
+    "Estonia": {
+      "country_code": "EE",
+      "seed_count": 548,
+      "scanned_count": 27,
+      "active_count": 25,
+      "orphan_count": 521,
+      "scan_priority": {
+        "critical": [
+          "tartu.ee",
+          "tallinn.ee"
+        ],
+        "high": [
+          "parnu.ee",
+          "stat.ee"
+        ],
+        "medium": [
+          "agri.ee",
+          "vm.ee",
+          "ria.ee",
+          "sm.ee"
+        ]
+      },
+      "hub_details": [
+        {
+          "domain": "tartu.ee",
+          "observations": 246,
+          "unique_sources": 1,
+          "unique_hostnames": 43,
+          "tier": "critical"
+        },
+        {
+          "domain": "tallinn.ee",
+          "observations": 178,
+          "unique_sources": 1,
+          "unique_hostnames": 24,
+          "tier": "critical"
+        },
+        {
+          "domain": "parnu.ee",
+          "observations": 100,
+          "unique_sources": 1,
+          "unique_hostnames": 16,
+          "tier": "high"
+        },
+        {
+          "domain": "stat.ee",
+          "observations": 88,
+          "unique_sources": 1,
+          "unique_hostnames": 11,
+          "tier": "high"
+        },
+        {
+          "domain": "agri.ee",
+          "observations": 71,
+          "unique_sources": 1,
+          "unique_hostnames": 13,
+          "tier": "medium"
+        },
+        {
+          "domain": "vm.ee",
+          "observations": 53,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "medium"
+        },
+        {
+          "domain": "ria.ee",
+          "observations": 42,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "medium"
+        },
+        {
+          "domain": "sm.ee",
+          "observations": 42,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "medium"
+        },
+        {
+          "domain": "riigikogu.ee",
+          "observations": 41,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "low"
+        },
+        {
+          "domain": "kul.ee",
+          "observations": 36,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        },
+        {
+          "domain": "riigikantselei.ee",
+          "observations": 31,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "low"
+        },
+        {
+          "domain": "viljandi.ee",
+          "observations": 27,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "low"
+        },
+        {
+          "domain": "hm.ee",
+          "observations": 26,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "low"
+        },
+        {
+          "domain": "riigikohus.ee",
+          "observations": 24,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "mkm.ee",
+          "observations": 23,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "kliimaministeerium.ee",
+          "observations": 18,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "valitsus.ee",
+          "observations": 17,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        },
+        {
+          "domain": "kaitseministeerium.ee",
+          "observations": 16,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "fin.ee",
+          "observations": 12,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "narva.ee",
+          "observations": 11,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        },
+        {
+          "domain": "eesti.ee",
+          "observations": 10,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "rakvere.ee",
+          "observations": 10,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "siseministeerium.ee",
+          "observations": 8,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        },
+        {
+          "domain": "just.ee",
+          "observations": 5,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "riigiteataja.ee",
+          "observations": 4,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        }
+      ],
+      "orphan_sample": [
+        "aastaraamat.prokuratuur.ee",
+        "aastaraamat.riigikohus.ee",
+        "abi.ria.ee",
+        "admin.api.dev.app.eesti.ee",
+        "admin.buerokratt.eesti.ee",
+        "ahk.eesti.ee",
+        "alkoreg.agri.ee",
+        "andmed-test.eesti.ee",
+        "andmed.eesti.ee",
+        "andmed.stat.ee",
+        "api.app.eesti.ee",
+        "api.arva.dev.eesti.ee",
+        "api.arva.test.eesti.ee",
+        "api.dev.app.eesti.ee",
+        "api.test.app.eesti.ee"
+      ]
+    },
+    "Finland": {
+      "country_code": "FI",
+      "seed_count": 328,
+      "scanned_count": 27,
+      "active_count": 26,
+      "orphan_count": 301,
+      "scan_priority": {
+        "critical": [
+          "traficom.fi",
+          "syke.fi"
+        ],
+        "high": [
+          "suomi.fi",
+          "kela.fi"
+        ],
+        "medium": [
+          "tulli.fi",
+          "fimea.fi",
+          "stat.fi",
+          "vero.fi"
+        ]
+      },
+      "hub_details": [
+        {
+          "domain": "traficom.fi",
+          "observations": 98,
+          "unique_sources": 1,
+          "unique_hostnames": 8,
+          "tier": "critical"
+        },
+        {
+          "domain": "syke.fi",
+          "observations": 85,
+          "unique_sources": 1,
+          "unique_hostnames": 7,
+          "tier": "critical"
+        },
+        {
+          "domain": "suomi.fi",
+          "observations": 72,
+          "unique_sources": 1,
+          "unique_hostnames": 9,
+          "tier": "high"
+        },
+        {
+          "domain": "kela.fi",
+          "observations": 58,
+          "unique_sources": 1,
+          "unique_hostnames": 9,
+          "tier": "high"
+        },
+        {
+          "domain": "tulli.fi",
+          "observations": 51,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "medium"
+        },
+        {
+          "domain": "fimea.fi",
+          "observations": 47,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "medium"
+        },
+        {
+          "domain": "stat.fi",
+          "observations": 46,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "medium"
+        },
+        {
+          "domain": "vero.fi",
+          "observations": 38,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "medium"
+        },
+        {
+          "domain": "oph.fi",
+          "observations": 31,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "low"
+        },
+        {
+          "domain": "thl.fi",
+          "observations": 31,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "businessfinland.fi",
+          "observations": 26,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "low"
+        },
+        {
+          "domain": "migri.fi",
+          "observations": 25,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "low"
+        },
+        {
+          "domain": "oikeus.fi",
+          "observations": 21,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "eduskunta.fi",
+          "observations": 20,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        },
+        {
+          "domain": "tem.fi",
+          "observations": 18,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "defmin.fi",
+          "observations": 16,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "metsakeskus.fi",
+          "observations": 15,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "presidentti.fi",
+          "observations": 14,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        },
+        {
+          "domain": "mmm.fi",
+          "observations": 12,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "valtioneuvosto.fi",
+          "observations": 11,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "okm.fi",
+          "observations": 10,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "ym.fi",
+          "observations": 10,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "oikeusministerio.fi",
+          "observations": 10,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "poliisi.fi",
+          "observations": 8,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "um.fi",
+          "observations": 5,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        }
+      ],
+      "orphan_sample": [
+        "admin.qa.suomi.fi",
+        "admin.suomi.fi",
+        "admin.verkkopalvelu.suomi.fi",
+        "admin.www.dev.suomi.fi",
+        "admin.www.qa.suomi.fi",
+        "ajanvaraus-hallinta.suomi.fi",
+        "ajanvaraus.suomi.fi",
+        "api-gw.palvelutietovaranto.qa.suomi.fi",
+        "api-gw.palvelutietovaranto.suomi.fi",
+        "api-gw.palvelutietovaranto.trn.suomi.fi",
+        "api.laatutyokalut.dev.suomi.fi",
+        "api.laatutyokalut.qa.suomi.fi",
+        "api.laatutyokalut.suomi.fi",
+        "api.laatutyokalut.test.suomi.fi",
+        "api.laatutyokalut.trn.suomi.fi"
+      ]
+    },
+    "France": {
+      "country_code": "FR",
+      "seed_count": 6688,
+      "scanned_count": 374,
+      "active_count": 71,
+      "orphan_count": 6314,
+      "scan_priority": {
+        "critical": [
+          "auvergnerhonealpes.fr",
+          "paris.fr",
+          "toulouse.fr",
+          "haute-garonne.fr"
+        ],
+        "high": [
+          "cnam.fr",
+          "strasbourg.eu",
+          "bourgognefranchecomte.fr",
+          "cotesdarmor.fr",
+          "metropole-rouen-normandie.fr",
+          "departement06.fr",
+          "herault.fr",
+          "seine-et-marne.fr",
+          "bordeaux.fr",
+          "valdoise.fr"
+        ],
+        "medium": [
+          "haute-vienne.fr",
+          "nievre.fr",
+          "normandie.fr",
+          "aude.fr",
+          "lot.fr",
+          "nancy.fr",
+          "banque-france.fr",
+          "angers.fr"
+        ]
+      },
+      "hub_details": [
+        {
+          "domain": "auvergnerhonealpes.fr",
+          "observations": 281,
+          "unique_sources": 1,
+          "unique_hostnames": 39,
+          "tier": "critical"
+        },
+        {
+          "domain": "paris.fr",
+          "observations": 154,
+          "unique_sources": 1,
+          "unique_hostnames": 48,
+          "tier": "critical"
+        },
+        {
+          "domain": "toulouse.fr",
+          "observations": 42,
+          "unique_sources": 1,
+          "unique_hostnames": 21,
+          "tier": "critical"
+        },
+        {
+          "domain": "haute-garonne.fr",
+          "observations": 30,
+          "unique_sources": 1,
+          "unique_hostnames": 8,
+          "tier": "critical"
+        },
+        {
+          "domain": "cnam.fr",
+          "observations": 25,
+          "unique_sources": 1,
+          "unique_hostnames": 15,
+          "tier": "high"
+        },
+        {
+          "domain": "strasbourg.eu",
+          "observations": 25,
+          "unique_sources": 1,
+          "unique_hostnames": 21,
+          "tier": "high"
+        },
+        {
+          "domain": "bourgognefranchecomte.fr",
+          "observations": 18,
+          "unique_sources": 1,
+          "unique_hostnames": 9,
+          "tier": "high"
+        },
+        {
+          "domain": "cotesdarmor.fr",
+          "observations": 13,
+          "unique_sources": 1,
+          "unique_hostnames": 9,
+          "tier": "high"
+        },
+        {
+          "domain": "metropole-rouen-normandie.fr",
+          "observations": 12,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "high"
+        },
+        {
+          "domain": "departement06.fr",
+          "observations": 12,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "high"
+        },
+        {
+          "domain": "herault.fr",
+          "observations": 12,
+          "unique_sources": 1,
+          "unique_hostnames": 8,
+          "tier": "high"
+        },
+        {
+          "domain": "seine-et-marne.fr",
+          "observations": 12,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "high"
+        },
+        {
+          "domain": "bordeaux.fr",
+          "observations": 12,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "high"
+        },
+        {
+          "domain": "valdoise.fr",
+          "observations": 12,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "high"
+        },
+        {
+          "domain": "haute-vienne.fr",
+          "observations": 11,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "medium"
+        },
+        {
+          "domain": "nievre.fr",
+          "observations": 11,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "medium"
+        },
+        {
+          "domain": "normandie.fr",
+          "observations": 10,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "medium"
+        },
+        {
+          "domain": "aude.fr",
+          "observations": 9,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "medium"
+        },
+        {
+          "domain": "lot.fr",
+          "observations": 9,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "medium"
+        },
+        {
+          "domain": "nancy.fr",
+          "observations": 9,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "medium"
+        },
+        {
+          "domain": "banque-france.fr",
+          "observations": 8,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "medium"
+        },
+        {
+          "domain": "angers.fr",
+          "observations": 8,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "medium"
+        },
+        {
+          "domain": "puy-de-dome.fr",
+          "observations": 7,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        },
+        {
+          "domain": "amiens.fr",
+          "observations": 7,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "morbihan.fr",
+          "observations": 7,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "low"
+        }
+      ],
+      "orphan_sample": [
+        "1000jours.fabrique.social.gouv.fr",
+        "1000paysages.gouv.fr",
+        "110ans.sgdsn.gouv.fr",
+        "123-mad.pprod-consult.etalab.gouv.fr",
+        "125896349.pprod-consult.etalab.gouv.fr",
+        "17cyber.gouv.fr",
+        "1eleve1stage.education.gouv.fr",
+        "2.consultation.etalab.gouv.fr",
+        "21esiecle.justice.gouv.fr",
+        "21siecle.justice.gouv.fr",
+        "2d.bordeaux.fr",
+        "a-ldsd-app.sigp.aviation-civile.gouv.fr",
+        "a06-v7.apps.paris.fr",
+        "aaa.dordogne.fr",
+        "aai.dgfip.finances.gouv.fr"
+      ]
+    },
+    "Georgia": {
+      "country_code": "",
+      "seed_count": 604,
+      "scanned_count": 0,
+      "active_count": 0,
+      "orphan_count": 604,
+      "scan_priority": {
+        "critical": [],
+        "high": [],
+        "medium": []
+      },
+      "hub_details": [],
+      "orphan_sample": [
+        "1.marneuli.gov.ge",
+        "123.hrajara.gov.ge",
+        "4phouse.tsageri.gov.ge",
+        "5g.gov.ge",
+        "abkhazia.gov.ge",
+        "acc1.mfa.gov.ge",
+        "access.mrg.gov.ge",
+        "accreditation.mfa.gov.ge",
+        "addreg.reestri.gov.ge",
+        "adfs.mes.gov.ge",
+        "admin.bfd.gov.ge",
+        "admin.bsa.gov.ge",
+        "admin.test.ems.dea.gov.ge",
+        "ais-dashboard.archive.gov.ge",
+        "ais.archive.gov.ge"
+      ]
+    },
+    "Germany": {
+      "country_code": "DE",
+      "seed_count": 3243,
+      "scanned_count": 194,
+      "active_count": 38,
+      "orphan_count": 3049,
+      "scan_priority": {
+        "critical": [
+          "sachsen.de",
+          "rlp.de"
+        ],
+        "high": [
+          "niedersachsen.de",
+          "bayern.de",
+          "nrw.de",
+          "hamburg.de"
+        ],
+        "medium": [
+          "hessen.de",
+          "diplo.de",
+          "sachsen-anhalt.de",
+          "bremen.de",
+          "baden-wuerttemberg.de",
+          "duesseldorf.de"
+        ]
+      },
+      "hub_details": [
+        {
+          "domain": "sachsen.de",
+          "observations": 781,
+          "unique_sources": 1,
+          "unique_hostnames": 111,
+          "tier": "critical"
+        },
+        {
+          "domain": "rlp.de",
+          "observations": 312,
+          "unique_sources": 1,
+          "unique_hostnames": 76,
+          "tier": "critical"
+        },
+        {
+          "domain": "niedersachsen.de",
+          "observations": 262,
+          "unique_sources": 1,
+          "unique_hostnames": 44,
+          "tier": "high"
+        },
+        {
+          "domain": "bayern.de",
+          "observations": 235,
+          "unique_sources": 1,
+          "unique_hostnames": 73,
+          "tier": "high"
+        },
+        {
+          "domain": "nrw.de",
+          "observations": 189,
+          "unique_sources": 1,
+          "unique_hostnames": 48,
+          "tier": "high"
+        },
+        {
+          "domain": "hamburg.de",
+          "observations": 163,
+          "unique_sources": 1,
+          "unique_hostnames": 27,
+          "tier": "high"
+        },
+        {
+          "domain": "hessen.de",
+          "observations": 141,
+          "unique_sources": 1,
+          "unique_hostnames": 54,
+          "tier": "medium"
+        },
+        {
+          "domain": "diplo.de",
+          "observations": 112,
+          "unique_sources": 1,
+          "unique_hostnames": 30,
+          "tier": "medium"
+        },
+        {
+          "domain": "sachsen-anhalt.de",
+          "observations": 71,
+          "unique_sources": 1,
+          "unique_hostnames": 31,
+          "tier": "medium"
+        },
+        {
+          "domain": "bremen.de",
+          "observations": 53,
+          "unique_sources": 1,
+          "unique_hostnames": 16,
+          "tier": "medium"
+        },
+        {
+          "domain": "baden-wuerttemberg.de",
+          "observations": 38,
+          "unique_sources": 1,
+          "unique_hostnames": 21,
+          "tier": "medium"
+        },
+        {
+          "domain": "duesseldorf.de",
+          "observations": 28,
+          "unique_sources": 1,
+          "unique_hostnames": 7,
+          "tier": "medium"
+        },
+        {
+          "domain": "bund.de",
+          "observations": 20,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "low"
+        },
+        {
+          "domain": "bundeswehr.de",
+          "observations": 18,
+          "unique_sources": 1,
+          "unique_hostnames": 11,
+          "tier": "low"
+        },
+        {
+          "domain": "bundestag.de",
+          "observations": 15,
+          "unique_sources": 1,
+          "unique_hostnames": 11,
+          "tier": "low"
+        },
+        {
+          "domain": "rki.de",
+          "observations": 12,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "fruehe-chancen.de",
+          "observations": 12,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "verfassungsschutz.de",
+          "observations": 10,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "leitstellenspiel.de",
+          "observations": 9,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "low"
+        },
+        {
+          "domain": "thueringen.de",
+          "observations": 6,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        },
+        {
+          "domain": "leipzig.de",
+          "observations": 6,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "dainst.org",
+          "observations": 6,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "brandenburg.de",
+          "observations": 6,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "ptb.de",
+          "observations": 6,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        },
+        {
+          "domain": "dguv.de",
+          "observations": 6,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        }
+      ],
+      "orphan_sample": [
+        "110prozent.berlin.de",
+        "150.diplo.de",
+        "226.sixcms.schule.bremen.de",
+        "307.joomla.schule.bremen.de",
+        "309.sixcms.schule.bremen.de",
+        "417.sixcms.schule.bremen.de",
+        "abb.rlp.de",
+        "abeg.essen.de",
+        "abfalldaten.brandenburg.de",
+        "abholung-personaldokumente.leipzig.de",
+        "abidjan.diplo.de",
+        "accounts.dev.newscenter.bundesregierung.de",
+        "accounts.prod.newscenter.bundesregierung.de",
+        "accra.diplo.de",
+        "actapro-benutzung.hamburg.de"
+      ]
+    },
+    "Greece": {
+      "country_code": "GR",
+      "seed_count": 1301,
+      "scanned_count": 26,
+      "active_count": 14,
+      "orphan_count": 1275,
+      "scan_priority": {
+        "critical": [
+          "aade.gr"
+        ],
+        "high": [
+          "heraklion.gr",
+          "mfa.gr"
+        ],
+        "medium": [
+          "cityofathens.gr",
+          "veria.gr"
+        ]
+      },
+      "hub_details": [
+        {
+          "domain": "aade.gr",
+          "observations": 30,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "critical"
+        },
+        {
+          "domain": "heraklion.gr",
+          "observations": 27,
+          "unique_sources": 1,
+          "unique_hostnames": 9,
+          "tier": "high"
+        },
+        {
+          "domain": "mfa.gr",
+          "observations": 21,
+          "unique_sources": 1,
+          "unique_hostnames": 7,
+          "tier": "high"
+        },
+        {
+          "domain": "cityofathens.gr",
+          "observations": 14,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "medium"
+        },
+        {
+          "domain": "veria.gr",
+          "observations": 14,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "medium"
+        },
+        {
+          "domain": "minagric.gr",
+          "observations": 11,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        },
+        {
+          "domain": "hellenicparliament.gr",
+          "observations": 11,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "serres.gr",
+          "observations": 11,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "gsis.gr",
+          "observations": 9,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "low"
+        },
+        {
+          "domain": "thessaloniki.gr",
+          "observations": 9,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "low"
+        },
+        {
+          "domain": "ypes.gr",
+          "observations": 7,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        },
+        {
+          "domain": "ioannina.gr",
+          "observations": 7,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        },
+        {
+          "domain": "rhodes.gr",
+          "observations": 3,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "rethymno.gr",
+          "observations": 2,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        }
+      ],
+      "orphan_sample": [
+        "0260.syzefxis.gov.gr",
+        "0807.syzefxis.gov.gr",
+        "0890.syzefxis.gov.gr",
+        "112.gov.gr",
+        "1140.syzefxis.gov.gr",
+        "1555.gov.gr",
+        "1706.syzefxis.gov.gr",
+        "1click.minagric.gr",
+        "200years.mfa.gr",
+        "2013.anaptyxi.gov.gr",
+        "2015.dimosnestou.gov.gr",
+        "2023.php.gov.gr",
+        "2500years.culture.gov.gr",
+        "4821.syzefxis.gov.gr",
+        "academicid.minedu.gov.gr"
+      ]
+    },
+    "Holy See": {
+      "country_code": "",
+      "seed_count": 18,
+      "scanned_count": 0,
+      "active_count": 0,
+      "orphan_count": 18,
+      "scan_priority": {
+        "critical": [],
+        "high": [],
+        "medium": []
+      },
+      "hub_details": [],
+      "orphan_sample": [
+        "autodiscover.email.vatican.va",
+        "autodiscover.vatican.va",
+        "email.vatican.va",
+        "m.vatican.va",
+        "mail.email.vatican.va",
+        "mail.vatican.va",
+        "michele.vatican.va",
+        "mobile.vatican.va",
+        "owa.email.vatican.va",
+        "owa.vatican.va",
+        "posta.vatican.va",
+        "press.vatican.va",
+        "rss.vatican.va",
+        "supportoposta.vatican.va",
+        "vatican.va"
+      ]
+    },
+    "Hungary": {
+      "country_code": "HU",
+      "seed_count": 295,
+      "scanned_count": 26,
+      "active_count": 25,
+      "orphan_count": 269,
+      "scan_priority": {
+        "critical": [
+          "sopron.hu",
+          "mnb.hu"
+        ],
+        "high": [
+          "budapest.hu",
+          "kaposvar.hu",
+          "szombathely.hu"
+        ],
+        "medium": [
+          "kozbeszerzes.hu",
+          "miskolc.hu",
+          "nyiregyhaza.hu"
+        ]
+      },
+      "hub_details": [
+        {
+          "domain": "sopron.hu",
+          "observations": 83,
+          "unique_sources": 1,
+          "unique_hostnames": 16,
+          "tier": "critical"
+        },
+        {
+          "domain": "mnb.hu",
+          "observations": 81,
+          "unique_sources": 1,
+          "unique_hostnames": 17,
+          "tier": "critical"
+        },
+        {
+          "domain": "budapest.hu",
+          "observations": 80,
+          "unique_sources": 1,
+          "unique_hostnames": 13,
+          "tier": "high"
+        },
+        {
+          "domain": "kaposvar.hu",
+          "observations": 52,
+          "unique_sources": 1,
+          "unique_hostnames": 8,
+          "tier": "high"
+        },
+        {
+          "domain": "szombathely.hu",
+          "observations": 52,
+          "unique_sources": 1,
+          "unique_hostnames": 25,
+          "tier": "high"
+        },
+        {
+          "domain": "kozbeszerzes.hu",
+          "observations": 48,
+          "unique_sources": 1,
+          "unique_hostnames": 10,
+          "tier": "medium"
+        },
+        {
+          "domain": "miskolc.hu",
+          "observations": 46,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "medium"
+        },
+        {
+          "domain": "nyiregyhaza.hu",
+          "observations": 38,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "medium"
+        },
+        {
+          "domain": "szeged.hu",
+          "observations": 34,
+          "unique_sources": 1,
+          "unique_hostnames": 7,
+          "tier": "low"
+        },
+        {
+          "domain": "debrecen.hu",
+          "observations": 34,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "low"
+        },
+        {
+          "domain": "gyor.hu",
+          "observations": 32,
+          "unique_sources": 1,
+          "unique_hostnames": 7,
+          "tier": "low"
+        },
+        {
+          "domain": "police.hu",
+          "observations": 32,
+          "unique_sources": 1,
+          "unique_hostnames": 8,
+          "tier": "low"
+        },
+        {
+          "domain": "birosag.hu",
+          "observations": 28,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "low"
+        },
+        {
+          "domain": "kormany.hu",
+          "observations": 22,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "low"
+        },
+        {
+          "domain": "ksh.hu",
+          "observations": 20,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "low"
+        },
+        {
+          "domain": "alkotmanybirosag.hu",
+          "observations": 20,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "szekesfehervar.hu",
+          "observations": 15,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "low"
+        },
+        {
+          "domain": "valasztas.hu",
+          "observations": 13,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        },
+        {
+          "domain": "pecs.hu",
+          "observations": 12,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "low"
+        },
+        {
+          "domain": "tatabanya.hu",
+          "observations": 11,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "eger.hu",
+          "observations": 11,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "kecskemet.hu",
+          "observations": 10,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        },
+        {
+          "domain": "magyarorszag.hu",
+          "observations": 6,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        },
+        {
+          "domain": "bekescsaba.hu",
+          "observations": 5,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "parlament.hu",
+          "observations": 2,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        }
+      ],
+      "orphan_sample": [
+        "1000fa.szombathely.hu",
+        "150.budapest.hu",
+        "2010-2014.kormany.hu",
+        "2015-2019.kormany.hu",
+        "2020-2025.kormany.hu",
+        "adatvedelem.police.hu",
+        "akadalymentes.2010-2014.kormany.hu",
+        "akadalymentes.2015-2019.kormany.hu",
+        "akr.kormany.hu",
+        "allamhaztartas.kormany.hu",
+        "allatvedelem.kormany.hu",
+        "archiv.budapest.hu",
+        "archive2.szinhaz.szeged.hu",
+        "aszp.mnb.hu",
+        "augusztus20.kormany.hu"
+      ]
+    },
+    "Iceland": {
+      "country_code": "IS",
+      "seed_count": 88,
+      "scanned_count": 18,
+      "active_count": 17,
+      "orphan_count": 70,
+      "scan_priority": {
+        "critical": [
+          "reykjavik.is"
+        ],
+        "high": [
+          "kopavogur.is",
+          "akureyri.is"
+        ],
+        "medium": [
+          "keflavik.is",
+          "hagstofa.is",
+          "island.is"
+        ]
+      },
+      "hub_details": [
+        {
+          "domain": "reykjavik.is",
+          "observations": 317,
+          "unique_sources": 1,
+          "unique_hostnames": 23,
+          "tier": "critical"
+        },
+        {
+          "domain": "kopavogur.is",
+          "observations": 131,
+          "unique_sources": 1,
+          "unique_hostnames": 13,
+          "tier": "high"
+        },
+        {
+          "domain": "akureyri.is",
+          "observations": 86,
+          "unique_sources": 1,
+          "unique_hostnames": 7,
+          "tier": "high"
+        },
+        {
+          "domain": "keflavik.is",
+          "observations": 48,
+          "unique_sources": 1,
+          "unique_hostnames": 11,
+          "tier": "medium"
+        },
+        {
+          "domain": "hagstofa.is",
+          "observations": 38,
+          "unique_sources": 1,
+          "unique_hostnames": 8,
+          "tier": "medium"
+        },
+        {
+          "domain": "island.is",
+          "observations": 34,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "medium"
+        },
+        {
+          "domain": "vegagerdin.is",
+          "observations": 26,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        },
+        {
+          "domain": "gardabaer.is",
+          "observations": 20,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "landlaeknir.is",
+          "observations": 19,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        },
+        {
+          "domain": "hafnarfjordur.is",
+          "observations": 15,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "low"
+        },
+        {
+          "domain": "skatturinn.is",
+          "observations": 15,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "forseti.is",
+          "observations": 15,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "stjornarradid.is",
+          "observations": 8,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "domstolar.is",
+          "observations": 4,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "vinnumalastofnun.is",
+          "observations": 3,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "samgongustofa.is",
+          "observations": 3,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "mos.is",
+          "observations": 2,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        }
+      ],
+      "orphan_sample": [
+        "abendingar.hafnarfjordur.is",
+        "abendingar.reykjavik.is",
+        "arbaejarskoli.reykjavik.is",
+        "bifreidastaedasjodur.akureyri.is",
+        "bifreidatolur.samgongustofa.is",
+        "bilastaedasjodur.reykjavik.is",
+        "bokasafn.kopavogur.is",
+        "borgarvefsja.reykjavik.is",
+        "breidagerdisskoli.reykjavik.is",
+        "dalskoli.reykjavik.is",
+        "domstolasyslan.is",
+        "en.hafnarfjordur.is",
+        "fjarhagsadstod.reykjavik.is",
+        "foldaskoli.reykjavik.is",
+        "gagnahladbord.reykjavik.is"
+      ]
+    },
+    "Ireland": {
+      "country_code": "IE",
+      "seed_count": 759,
+      "scanned_count": 59,
+      "active_count": 46,
+      "orphan_count": 700,
+      "scan_priority": {
+        "critical": [
+          "fingal.ie",
+          "limerick.ie",
+          "hse.ie"
+        ],
+        "high": [
+          "artscouncil.ie",
+          "courts.ie",
+          "dublincity.ie",
+          "louthcoco.ie"
+        ],
+        "medium": [
+          "kilkennycoco.ie",
+          "kerrycoco.ie",
+          "dlrcoco.ie",
+          "wexfordcoco.ie",
+          "clarecoco.ie",
+          "cso.ie",
+          "teachingcouncil.ie",
+          "galwaycity.ie"
+        ]
+      },
+      "hub_details": [
+        {
+          "domain": "fingal.ie",
+          "observations": 45,
+          "unique_sources": 1,
+          "unique_hostnames": 8,
+          "tier": "critical"
+        },
+        {
+          "domain": "limerick.ie",
+          "observations": 44,
+          "unique_sources": 1,
+          "unique_hostnames": 7,
+          "tier": "critical"
+        },
+        {
+          "domain": "hse.ie",
+          "observations": 41,
+          "unique_sources": 1,
+          "unique_hostnames": 9,
+          "tier": "critical"
+        },
+        {
+          "domain": "artscouncil.ie",
+          "observations": 39,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "high"
+        },
+        {
+          "domain": "courts.ie",
+          "observations": 39,
+          "unique_sources": 1,
+          "unique_hostnames": 7,
+          "tier": "high"
+        },
+        {
+          "domain": "dublincity.ie",
+          "observations": 37,
+          "unique_sources": 1,
+          "unique_hostnames": 8,
+          "tier": "high"
+        },
+        {
+          "domain": "louthcoco.ie",
+          "observations": 31,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "high"
+        },
+        {
+          "domain": "kilkennycoco.ie",
+          "observations": 30,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "medium"
+        },
+        {
+          "domain": "kerrycoco.ie",
+          "observations": 27,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "medium"
+        },
+        {
+          "domain": "dlrcoco.ie",
+          "observations": 26,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "medium"
+        },
+        {
+          "domain": "wexfordcoco.ie",
+          "observations": 23,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "medium"
+        },
+        {
+          "domain": "clarecoco.ie",
+          "observations": 22,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "medium"
+        },
+        {
+          "domain": "cso.ie",
+          "observations": 21,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "medium"
+        },
+        {
+          "domain": "teachingcouncil.ie",
+          "observations": 20,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "medium"
+        },
+        {
+          "domain": "galwaycity.ie",
+          "observations": 20,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "medium"
+        },
+        {
+          "domain": "kildarecoco.ie",
+          "observations": 19,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        },
+        {
+          "domain": "cavancoco.ie",
+          "observations": 18,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "roscommoncoco.ie",
+          "observations": 18,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "rtb.ie",
+          "observations": 16,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        },
+        {
+          "domain": "donegalcoco.ie",
+          "observations": 15,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "waterfordcouncil.ie",
+          "observations": 14,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "corkcoco.ie",
+          "observations": 13,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "cafelacoco.ie",
+          "observations": 12,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "longfordcoco.ie",
+          "observations": 11,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "medicalcouncil.ie",
+          "observations": 11,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        }
+      ],
+      "orphan_sample": [
+        "aai.gov.ie",
+        "aai.irelandwebsite.com.aai.gov.ie",
+        "about.hse.ie",
+        "access.health.gov.ie",
+        "access.number23.gov.ie",
+        "accessdr.health.gov.ie",
+        "accruedpensionliability.gov.ie",
+        "adforaffl.gov.ie",
+        "adfs.number23.gov.ie",
+        "admin.chg.gov.ie",
+        "admin.ombudsman.gov.ie",
+        "admin.sipo.gov.ie",
+        "admin.supportingsmes.gov.ie",
+        "admin.taoiseach.gov.ie",
+        "admin1.bcp.gov.ie"
+      ]
+    },
+    "Italy": {
+      "country_code": "IT",
+      "seed_count": 4822,
+      "scanned_count": 131,
+      "active_count": 8,
+      "orphan_count": 4691,
+      "scan_priority": {
+        "critical": [
+          "esteri.it"
+        ],
+        "high": [
+          "giustizia.it"
+        ],
+        "medium": [
+          "governo.it",
+          "difesa.it"
+        ]
+      },
+      "hub_details": [
+        {
+          "domain": "esteri.it",
+          "observations": 177,
+          "unique_sources": 1,
+          "unique_hostnames": 46,
+          "tier": "critical"
+        },
+        {
+          "domain": "giustizia.it",
+          "observations": 107,
+          "unique_sources": 1,
+          "unique_hostnames": 23,
+          "tier": "high"
+        },
+        {
+          "domain": "governo.it",
+          "observations": 8,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "medium"
+        },
+        {
+          "domain": "difesa.it",
+          "observations": 8,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "medium"
+        },
+        {
+          "domain": "istat.it",
+          "observations": 3,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "corteconti.it",
+          "observations": 2,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "plugandpay.it",
+          "observations": 2,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "camera.it",
+          "observations": 1,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        }
+      ],
+      "orphan_sample": [
+        "060608.comune.roma.it",
+        "201617.cpiagallarate.gov.it",
+        "22ddalbertomario.gov.it",
+        "31icborsellino.gov.it",
+        "33circolonapoli.gov.it",
+        "4bts.aeronautica.difesa.it",
+        "730precompilato.agenziaentrate.gov.it",
+        "730precompilatocwd.agenziaentrate.gov.it",
+        "730precompilatofe.agenziaentrate.gov.it",
+        "730precompilatosc.agenziaentrate.gov.it",
+        "73michelangeloilioneo.gov.it",
+        "a-v.esteri.it",
+        "acamir.regione.campania.it",
+        "acc-capodimonte.cultura.gov.it",
+        "access-sip.inpdap.gov.it"
+      ]
+    },
+    "Latvia": {
+      "country_code": "LV",
+      "seed_count": 357,
+      "scanned_count": 10,
+      "active_count": 7,
+      "orphan_count": 347,
+      "scan_priority": {
+        "critical": [
+          "riga.lv"
+        ],
+        "high": [
+          "rtu.lv"
+        ],
+        "medium": [
+          "jelgava.lv"
+        ]
+      },
+      "hub_details": [
+        {
+          "domain": "riga.lv",
+          "observations": 95,
+          "unique_sources": 1,
+          "unique_hostnames": 30,
+          "tier": "critical"
+        },
+        {
+          "domain": "rtu.lv",
+          "observations": 71,
+          "unique_sources": 1,
+          "unique_hostnames": 19,
+          "tier": "high"
+        },
+        {
+          "domain": "jelgava.lv",
+          "observations": 38,
+          "unique_sources": 1,
+          "unique_hostnames": 9,
+          "tier": "medium"
+        },
+        {
+          "domain": "daugavpils.lv",
+          "observations": 35,
+          "unique_sources": 1,
+          "unique_hostnames": 7,
+          "tier": "low"
+        },
+        {
+          "domain": "liepaja.lv",
+          "observations": 30,
+          "unique_sources": 1,
+          "unique_hostnames": 7,
+          "tier": "low"
+        },
+        {
+          "domain": "saeima.lv",
+          "observations": 14,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "low"
+        },
+        {
+          "domain": "ventspils.lv",
+          "observations": 14,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "low"
+        }
+      ],
+      "orphan_sample": [
+        "ai.latak.gov.lv",
+        "akcmv.gov.lv",
+        "altona.riga.lv",
+        "apmekle.president.lv",
+        "apply.rtu.lv",
+        "apps.rtu.lv",
+        "apr.riga.lv",
+        "aptauja.mod.gov.lv",
+        "aptauja.spkc.gov.lv",
+        "aptauja.viaa.gov.lv",
+        "at.gov.lv",
+        "atbalsts.rtu.lv",
+        "atjauno.riga.lv",
+        "avesol.riga.lv",
+        "bakalaurastudijas.ievf.rtu.lv"
+      ]
+    },
+    "Liechtenstein": {
+      "country_code": "",
+      "seed_count": 12,
+      "scanned_count": 0,
+      "active_count": 0,
+      "orphan_count": 12,
+      "scan_priority": {
+        "critical": [],
+        "high": [],
+        "medium": []
+      },
+      "hub_details": [],
+      "orphan_sample": [
+        "autodiscover.regierung.li",
+        "bua.regierung.li",
+        "fototool.regierung.li",
+        "lyncdiscover.regierung.li",
+        "ma.regierung.li",
+        "medienportal.regierung.li",
+        "mg.regierung.li",
+        "mi.regierung.li",
+        "minf.regierung.li",
+        "mpf.regierung.li",
+        "regierung.li",
+        "sip.regierung.li"
+      ]
+    },
+    "Lithuania": {
+      "country_code": "LT",
+      "seed_count": 90,
+      "scanned_count": 15,
+      "active_count": 12,
+      "orphan_count": 75,
+      "scan_priority": {
+        "critical": [
+          "kaunas.lt"
+        ],
+        "high": [
+          "smm.lt"
+        ],
+        "medium": [
+          "vmi.lt",
+          "siauliai.lt",
+          "klaipeda.lt"
+        ]
+      },
+      "hub_details": [
+        {
+          "domain": "kaunas.lt",
+          "observations": 184,
+          "unique_sources": 1,
+          "unique_hostnames": 26,
+          "tier": "critical"
+        },
+        {
+          "domain": "smm.lt",
+          "observations": 90,
+          "unique_sources": 1,
+          "unique_hostnames": 15,
+          "tier": "high"
+        },
+        {
+          "domain": "vmi.lt",
+          "observations": 64,
+          "unique_sources": 1,
+          "unique_hostnames": 7,
+          "tier": "medium"
+        },
+        {
+          "domain": "siauliai.lt",
+          "observations": 42,
+          "unique_sources": 1,
+          "unique_hostnames": 13,
+          "tier": "medium"
+        },
+        {
+          "domain": "klaipeda.lt",
+          "observations": 42,
+          "unique_sources": 1,
+          "unique_hostnames": 9,
+          "tier": "medium"
+        },
+        {
+          "domain": "lrs.lt",
+          "observations": 32,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "low"
+        },
+        {
+          "domain": "sveikata.lt",
+          "observations": 10,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "alytus.lt",
+          "observations": 9,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        },
+        {
+          "domain": "panevezys.lt",
+          "observations": 7,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "migracija.lt",
+          "observations": 6,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "vilnius.lt",
+          "observations": 4,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "finmin.lt",
+          "observations": 3,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        }
+      ],
+      "orphan_sample": [
+        "1863.siauliai.lt",
+        "apklausos.stat.gov.lt",
+        "archyvai.lrv.lt",
+        "atviri-duomenys.stat.gov.lt",
+        "atviri.siauliai.lt",
+        "avaz.vmi.lt",
+        "dalyvauk.alytus.lt",
+        "darzeliai.panevezys.lt",
+        "daugiabuciai.kaunas.lt",
+        "deklaravimas.vmi.lt",
+        "dms2014.finmin.lt",
+        "e-seimas.lrs.lt",
+        "e-seimasx.lrs.lt",
+        "edtech.nsa.smm.lt",
+        "eksternams.nsa.smm.lt"
+      ]
+    },
+    "Luxembourg": {
+      "country_code": "LU",
+      "seed_count": 271,
+      "scanned_count": 39,
+      "active_count": 32,
+      "orphan_count": 232,
+      "scan_priority": {
+        "critical": [
+          "gouvernement.lu",
+          "public.lu"
+        ],
+        "high": [
+          "uni.lu",
+          "etat.lu",
+          "inll.lu"
+        ],
+        "medium": [
+          "esch.lu",
+          "vdl.lu",
+          "post.lu",
+          "remich.lu",
+          "differdange.lu"
+        ]
+      },
+      "hub_details": [
+        {
+          "domain": "gouvernement.lu",
+          "observations": 464,
+          "unique_sources": 1,
+          "unique_hostnames": 57,
+          "tier": "critical"
+        },
+        {
+          "domain": "public.lu",
+          "observations": 368,
+          "unique_sources": 1,
+          "unique_hostnames": 42,
+          "tier": "critical"
+        },
+        {
+          "domain": "uni.lu",
+          "observations": 106,
+          "unique_sources": 1,
+          "unique_hostnames": 28,
+          "tier": "high"
+        },
+        {
+          "domain": "etat.lu",
+          "observations": 48,
+          "unique_sources": 1,
+          "unique_hostnames": 9,
+          "tier": "high"
+        },
+        {
+          "domain": "inll.lu",
+          "observations": 44,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "high"
+        },
+        {
+          "domain": "esch.lu",
+          "observations": 35,
+          "unique_sources": 1,
+          "unique_hostnames": 7,
+          "tier": "medium"
+        },
+        {
+          "domain": "vdl.lu",
+          "observations": 31,
+          "unique_sources": 1,
+          "unique_hostnames": 11,
+          "tier": "medium"
+        },
+        {
+          "domain": "post.lu",
+          "observations": 30,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "medium"
+        },
+        {
+          "domain": "remich.lu",
+          "observations": 27,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "medium"
+        },
+        {
+          "domain": "differdange.lu",
+          "observations": 21,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "medium"
+        },
+        {
+          "domain": "cita.lu",
+          "observations": 13,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "sandweiler.lu",
+          "observations": 13,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "low"
+        },
+        {
+          "domain": "schifflange.lu",
+          "observations": 13,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        },
+        {
+          "domain": "chem.lu",
+          "observations": 13,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        },
+        {
+          "domain": "inondations.lu",
+          "observations": 12,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "chl.lu",
+          "observations": 10,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "wiltz.lu",
+          "observations": 10,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "snci.lu",
+          "observations": 8,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "strassen.lu",
+          "observations": 7,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        },
+        {
+          "domain": "dudelange.lu",
+          "observations": 7,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        },
+        {
+          "domain": "ilr.lu",
+          "observations": 6,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "cfl.lu",
+          "observations": 6,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "adem.lu",
+          "observations": 5,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "secu.lu",
+          "observations": 5,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "petitiounen.lu",
+          "observations": 5,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        }
+      ],
+      "orphan_sample": [
+        "123easy.public.lu",
+        "aaa.public.lu",
+        "accessibilite.public.lu",
+        "acd.gouvernement.lu",
+        "acf.gouvernement.lu",
+        "acme.uni.lu",
+        "act.public.lu",
+        "adem.gouvernement.lu",
+        "adem.public.lu",
+        "administration.esch.lu",
+        "aec.gouvernement.lu",
+        "aed.gouvernement.lu",
+        "aev.gouvernement.lu",
+        "agriculture.public.lu",
+        "alia.public.lu"
+      ]
+    },
+    "Malta": {
+      "country_code": "MT",
+      "seed_count": 1179,
+      "scanned_count": 2,
+      "active_count": 2,
+      "orphan_count": 1177,
+      "scan_priority": {
+        "critical": [
+          "gov.mt"
+        ],
+        "high": [],
+        "medium": []
+      },
+      "hub_details": [
+        {
+          "domain": "gov.mt",
+          "observations": 1493,
+          "unique_sources": 1,
+          "unique_hostnames": 271,
+          "tier": "critical"
+        },
+        {
+          "domain": "parlament.mt",
+          "observations": 1,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        }
+      ],
+      "orphan_sample": [
+        "112mt.gov.mt",
+        "aacbeta.gov.mt",
+        "aacc.gov.mt",
+        "aaccbeta.gov.mt",
+        "academybeta.gov.mt",
+        "accommodation.gov.mt",
+        "accomstat.nso.gov.mt",
+        "accountancyboard.gov.mt",
+        "activeageing.gov.mt",
+        "admin.consularplus-test.gov.mt",
+        "admin.consularplus.gov.mt",
+        "admin.staging.ncc-mita.gov.mt",
+        "adminhosting.s1.cloud.gov.mt",
+        "adminhosting.s2.cloud.gov.mt",
+        "adminhosting.s3.cloud.gov.mt"
+      ]
+    },
+    "Moldova": {
+      "country_code": "",
+      "seed_count": 312,
+      "scanned_count": 0,
+      "active_count": 0,
+      "orphan_count": 312,
+      "scan_priority": {
+        "critical": [],
+        "high": [],
+        "medium": []
+      },
+      "hub_details": [],
+      "orphan_sample": [
+        "100.gov.md",
+        "100zile.gov.md",
+        "373.gov.md",
+        "aap.gov.md",
+        "actelocale.gov.md",
+        "actpermisiv.gov.md",
+        "adma.gov.md",
+        "admin.compensatii.gov.md",
+        "admin.particip.gov.md",
+        "adminbac.gov.md",
+        "adminevinieta.gov.md",
+        "aee.gov.md",
+        "age.gov.md",
+        "agepi.gov.md",
+        "aipa.gov.md"
+      ]
+    },
+    "Monaco": {
+      "country_code": "",
+      "seed_count": 119,
+      "scanned_count": 0,
+      "active_count": 0,
+      "orphan_count": 119,
+      "scan_priority": {
+        "critical": [],
+        "high": [],
+        "medium": []
+      },
+      "hub_details": [],
+      "orphan_sample": [
+        "ab.dprn.gouv.mc",
+        "ambassade-en-chine.gouv.mc",
+        "ambassade-en-france.gouv.mc",
+        "amsn.gouv.mc",
+        "assets-freezing.gouv.mc",
+        "assetsfreezing.gouv.mc",
+        "autodiscover.alpha.gouv.mc",
+        "autodiscover.diplomatie.gouv.mc",
+        "autodiscover.gouv.mc",
+        "av.alpha.gouv.mc",
+        "av.diplomatie.gouv.mc",
+        "av.gouv.mc",
+        "carabiniers.gouv.mc",
+        "cavs.gouv.mc",
+        "ccd.gouv.mc"
+      ]
+    },
+    "Montenegro": {
+      "country_code": "",
+      "seed_count": 255,
+      "scanned_count": 0,
+      "active_count": 0,
+      "orphan_count": 255,
+      "scan_priority": {
+        "critical": [],
+        "high": [],
+        "medium": []
+      },
+      "hub_details": [],
+      "orphan_sample": [
+        "3r-api-epa.gov.me",
+        "3r-api.epa.gov.me",
+        "3r-auth-epa.gov.me",
+        "3r-auth.epa.gov.me",
+        "3r-epa.gov.me",
+        "3r.epa.gov.me",
+        "adfs.gov.me",
+        "admin.gov.me",
+        "akvo.gov.me",
+        "anb.gov.me",
+        "antitrafficking.gov.me",
+        "api.gov.me",
+        "api.mif-ipa.gov.me",
+        "api.vauceri.gov.me",
+        "apivauceri.gov.me"
+      ]
+    },
+    "Netherlands": {
+      "country_code": "NL",
+      "seed_count": 532,
+      "scanned_count": 63,
+      "active_count": 49,
+      "orphan_count": 469,
+      "scan_priority": {
+        "critical": [
+          "overheid.nl",
+          "amsterdam.nl",
+          "denhaag.nl"
+        ],
+        "high": [
+          "eindhoven.nl",
+          "nijmegen.nl",
+          "venlo.nl",
+          "rotterdam.nl",
+          "drenthe.nl"
+        ],
+        "medium": [
+          "breda.nl",
+          "utrecht.nl",
+          "belastingdienst.nl",
+          "zaanstad.nl",
+          "groningen.nl",
+          "rvo.nl",
+          "zoetermeer.nl"
+        ]
+      },
+      "hub_details": [
+        {
+          "domain": "overheid.nl",
+          "observations": 135,
+          "unique_sources": 1,
+          "unique_hostnames": 27,
+          "tier": "critical"
+        },
+        {
+          "domain": "amsterdam.nl",
+          "observations": 95,
+          "unique_sources": 1,
+          "unique_hostnames": 26,
+          "tier": "critical"
+        },
+        {
+          "domain": "denhaag.nl",
+          "observations": 81,
+          "unique_sources": 1,
+          "unique_hostnames": 17,
+          "tier": "critical"
+        },
+        {
+          "domain": "eindhoven.nl",
+          "observations": 52,
+          "unique_sources": 1,
+          "unique_hostnames": 7,
+          "tier": "high"
+        },
+        {
+          "domain": "nijmegen.nl",
+          "observations": 45,
+          "unique_sources": 1,
+          "unique_hostnames": 9,
+          "tier": "high"
+        },
+        {
+          "domain": "venlo.nl",
+          "observations": 44,
+          "unique_sources": 1,
+          "unique_hostnames": 7,
+          "tier": "high"
+        },
+        {
+          "domain": "rotterdam.nl",
+          "observations": 43,
+          "unique_sources": 1,
+          "unique_hostnames": 10,
+          "tier": "high"
+        },
+        {
+          "domain": "drenthe.nl",
+          "observations": 41,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "high"
+        },
+        {
+          "domain": "breda.nl",
+          "observations": 35,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "medium"
+        },
+        {
+          "domain": "utrecht.nl",
+          "observations": 32,
+          "unique_sources": 1,
+          "unique_hostnames": 9,
+          "tier": "medium"
+        },
+        {
+          "domain": "belastingdienst.nl",
+          "observations": 32,
+          "unique_sources": 1,
+          "unique_hostnames": 8,
+          "tier": "medium"
+        },
+        {
+          "domain": "zaanstad.nl",
+          "observations": 28,
+          "unique_sources": 1,
+          "unique_hostnames": 8,
+          "tier": "medium"
+        },
+        {
+          "domain": "groningen.nl",
+          "observations": 27,
+          "unique_sources": 1,
+          "unique_hostnames": 7,
+          "tier": "medium"
+        },
+        {
+          "domain": "rvo.nl",
+          "observations": 26,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "medium"
+        },
+        {
+          "domain": "zoetermeer.nl",
+          "observations": 26,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "medium"
+        },
+        {
+          "domain": "gelderland.nl",
+          "observations": 25,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "low"
+        },
+        {
+          "domain": "leeuwarden.nl",
+          "observations": 23,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "low"
+        },
+        {
+          "domain": "cbs.nl",
+          "observations": 22,
+          "unique_sources": 1,
+          "unique_hostnames": 7,
+          "tier": "low"
+        },
+        {
+          "domain": "brabant.nl",
+          "observations": 20,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "low"
+        },
+        {
+          "domain": "almere.nl",
+          "observations": 17,
+          "unique_sources": 1,
+          "unique_hostnames": 7,
+          "tier": "low"
+        },
+        {
+          "domain": "zuid-holland.nl",
+          "observations": 17,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        },
+        {
+          "domain": "apeldoorn.nl",
+          "observations": 17,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "low"
+        },
+        {
+          "domain": "ede.nl",
+          "observations": 16,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "low"
+        },
+        {
+          "domain": "alphenaandenrijn.nl",
+          "observations": 14,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "provincie-utrecht.nl",
+          "observations": 14,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        }
+      ],
+      "orphan_sample": [
+        "3d.amsterdam.nl",
+        "a-feeds.government.nl",
+        "a-magazines.government.nl",
+        "a-magazinesintern.government.nl",
+        "a-newsletter.government.nl",
+        "a-opendata.government.nl",
+        "a-www.government.nl",
+        "aanmeldenparkeren.amsterdam.nl",
+        "aanvraagparkeren.groningen.nl",
+        "acc.quarantinedeclaration.government.nl",
+        "activiteiten.amsterdam.nl",
+        "afspraakmaken.enschede.nl",
+        "afspraken.amersfoort.nl",
+        "afspraken.belastingdienst.nl",
+        "afspraken.zwolle.nl"
+      ]
+    },
+    "North Macedonia": {
+      "country_code": "",
+      "seed_count": 703,
+      "scanned_count": 0,
+      "active_count": 0,
+      "orphan_count": 703,
+      "scan_priority": {
+        "critical": [],
+        "high": [],
+        "medium": []
+      },
+      "hub_details": [],
+      "orphan_sample": [
+        "1000knigi.mon.gov.mk",
+        "aaipa.gov.mk",
+        "addressbook.interop.gov.mk",
+        "addressbookservice.interop.gov.mk",
+        "agencija.gov.mk",
+        "akazum.gov.mk",
+        "ams.gov.mk",
+        "aopz.gov.mk",
+        "api.malmed.gov.mk",
+        "api.zdravstvo.gov.mk",
+        "archive.bogdanci.gov.mk",
+        "arhiv.gov.mk",
+        "arsimi.gostivari.gov.mk",
+        "autodiscover.1000knigi.mon.gov.mk",
+        "autodiscover.agencija.gov.mk"
+      ]
+    },
+    "Norway": {
+      "country_code": "NO",
+      "seed_count": 326,
+      "scanned_count": 24,
+      "active_count": 24,
+      "orphan_count": 302,
+      "scan_priority": {
+        "critical": [
+          "udir.no",
+          "miljodirektoratet.no"
+        ],
+        "high": [
+          "vegvesen.no",
+          "brreg.no"
+        ],
+        "medium": [
+          "lovdata.no",
+          "nve.no",
+          "stortinget.no",
+          "arbeidstilsynet.no"
+        ]
+      },
+      "hub_details": [
+        {
+          "domain": "udir.no",
+          "observations": 123,
+          "unique_sources": 1,
+          "unique_hostnames": 23,
+          "tier": "critical"
+        },
+        {
+          "domain": "miljodirektoratet.no",
+          "observations": 121,
+          "unique_sources": 1,
+          "unique_hostnames": 22,
+          "tier": "critical"
+        },
+        {
+          "domain": "vegvesen.no",
+          "observations": 89,
+          "unique_sources": 1,
+          "unique_hostnames": 18,
+          "tier": "high"
+        },
+        {
+          "domain": "brreg.no",
+          "observations": 87,
+          "unique_sources": 1,
+          "unique_hostnames": 9,
+          "tier": "high"
+        },
+        {
+          "domain": "lovdata.no",
+          "observations": 85,
+          "unique_sources": 1,
+          "unique_hostnames": 9,
+          "tier": "medium"
+        },
+        {
+          "domain": "nve.no",
+          "observations": 74,
+          "unique_sources": 1,
+          "unique_hostnames": 14,
+          "tier": "medium"
+        },
+        {
+          "domain": "stortinget.no",
+          "observations": 55,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "medium"
+        },
+        {
+          "domain": "arbeidstilsynet.no",
+          "observations": 52,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "medium"
+        },
+        {
+          "domain": "nav.no",
+          "observations": 47,
+          "unique_sources": 1,
+          "unique_hostnames": 9,
+          "tier": "low"
+        },
+        {
+          "domain": "fhi.no",
+          "observations": 40,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "low"
+        },
+        {
+          "domain": "ssb.no",
+          "observations": 37,
+          "unique_sources": 1,
+          "unique_hostnames": 7,
+          "tier": "low"
+        },
+        {
+          "domain": "kystverket.no",
+          "observations": 37,
+          "unique_sources": 1,
+          "unique_hostnames": 10,
+          "tier": "low"
+        },
+        {
+          "domain": "forsvaret.no",
+          "observations": 36,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "low"
+        },
+        {
+          "domain": "bufdir.no",
+          "observations": 35,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        },
+        {
+          "domain": "skatteetaten.no",
+          "observations": 34,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "low"
+        },
+        {
+          "domain": "mattilsynet.no",
+          "observations": 32,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "low"
+        },
+        {
+          "domain": "altinn.no",
+          "observations": 28,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "low"
+        },
+        {
+          "domain": "dsa.no",
+          "observations": 25,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "low"
+        },
+        {
+          "domain": "helsenorge.no",
+          "observations": 23,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        },
+        {
+          "domain": "udi.no",
+          "observations": 22,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        },
+        {
+          "domain": "nkom.no",
+          "observations": 20,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "low"
+        },
+        {
+          "domain": "norges-bank.no",
+          "observations": 18,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "regjeringen.no",
+          "observations": 14,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "low"
+        },
+        {
+          "domain": "nupi.no",
+          "observations": 8,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        }
+      ],
+      "orphan_sample": [
+        "22juli.teststeder.regjeringen.no",
+        "a3.kystverket.no",
+        "aaa.teststeder.regjeringen.no",
+        "actionforequality.teststeder.regjeringen.no",
+        "aksel.nav.no",
+        "analysebrettet.udir.no",
+        "ansvarlignaringsliv2.teststeder.regjeringen.no",
+        "antikorrupsjon.regjeringen.no",
+        "api.nve.no",
+        "api.test.data.regjeringen.no",
+        "arbeidogvelferd.nav.no",
+        "arbeidsmiljohjelpen.arbeidstilsynet.no",
+        "arbeidsplassen.nav.no",
+        "asylumregulations.teststeder.regjeringen.no",
+        "atcddd.fhi.no"
+      ]
+    },
+    "Poland": {
+      "country_code": "PL",
+      "seed_count": 7926,
+      "scanned_count": 217,
+      "active_count": 20,
+      "orphan_count": 7709,
+      "scan_priority": {
+        "critical": [
+          "poznan.pl",
+          "krakow.pl"
+        ],
+        "high": [
+          "lodz.pl",
+          "gdansk.pl"
+        ],
+        "medium": [
+          "tarnow.pl",
+          "torun.pl",
+          "plock.eu"
+        ]
+      },
+      "hub_details": [
+        {
+          "domain": "poznan.pl",
+          "observations": 139,
+          "unique_sources": 1,
+          "unique_hostnames": 53,
+          "tier": "critical"
+        },
+        {
+          "domain": "krakow.pl",
+          "observations": 120,
+          "unique_sources": 1,
+          "unique_hostnames": 49,
+          "tier": "critical"
+        },
+        {
+          "domain": "lodz.pl",
+          "observations": 65,
+          "unique_sources": 1,
+          "unique_hostnames": 30,
+          "tier": "high"
+        },
+        {
+          "domain": "gdansk.pl",
+          "observations": 39,
+          "unique_sources": 1,
+          "unique_hostnames": 12,
+          "tier": "high"
+        },
+        {
+          "domain": "tarnow.pl",
+          "observations": 26,
+          "unique_sources": 1,
+          "unique_hostnames": 9,
+          "tier": "medium"
+        },
+        {
+          "domain": "torun.pl",
+          "observations": 22,
+          "unique_sources": 1,
+          "unique_hostnames": 10,
+          "tier": "medium"
+        },
+        {
+          "domain": "plock.eu",
+          "observations": 16,
+          "unique_sources": 1,
+          "unique_hostnames": 11,
+          "tier": "medium"
+        },
+        {
+          "domain": "gdynia.pl",
+          "observations": 15,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "low"
+        },
+        {
+          "domain": "sopot.pl",
+          "observations": 10,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "low"
+        },
+        {
+          "domain": "gorzow.pl",
+          "observations": 9,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "powiatpleszewski.pl",
+          "observations": 8,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "low"
+        },
+        {
+          "domain": "powiatslubicki.pl",
+          "observations": 8,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "low"
+        },
+        {
+          "domain": "powiatgora.pl",
+          "observations": 8,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        },
+        {
+          "domain": "powiatprzeworsk.pl",
+          "observations": 7,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        },
+        {
+          "domain": "kielce.eu",
+          "observations": 7,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        },
+        {
+          "domain": "powiatlubaczowski.pl",
+          "observations": 7,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        },
+        {
+          "domain": "powiatopolski.pl",
+          "observations": 6,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "powiatglubczycki.pl",
+          "observations": 5,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "nowykorczyn.pl",
+          "observations": 5,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "czestochowa.pl",
+          "observations": 4,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        }
+      ],
+      "orphan_sample": [
+        "100lat.uek.krakow.pl",
+        "13lo.szczecin.pl",
+        "18.lid.rzeszow.pl",
+        "1lo.bydgoszcz.pl",
+        "1lo.rzeszow.pl",
+        "2katwew.cm-uj.krakow.pl",
+        "2lo.gorzow.pl",
+        "2lo.radom.pl",
+        "2slo.bialystok.pl",
+        "2slo.bydgoszcz.pl",
+        "33.poznan.pl",
+        "360.mpu.lodz.pl",
+        "37lo.poznan.pl",
+        "3lo.bialystok.pl",
+        "3lo.gorzow.pl"
+      ]
+    },
+    "Portugal": {
+      "country_code": "PT",
+      "seed_count": 2833,
+      "scanned_count": 262,
+      "active_count": 55,
+      "orphan_count": 2571,
+      "scan_priority": {
+        "critical": [
+          "cm-portimao.pt",
+          "cm-braga.pt",
+          "cm-olhao.pt"
+        ],
+        "high": [
+          "cm-tvedras.pt",
+          "cm-castromarim.pt",
+          "cmjornal.pt",
+          "cm-porto.pt",
+          "cm-estarreja.pt",
+          "cm-fronteira.pt",
+          "cm-cartaxo.pt"
+        ],
+        "medium": [
+          "cm-moita.pt",
+          "cm-tabua.pt",
+          "cm-fundao.pt",
+          "cm-covilha.pt",
+          "cm-elvas.pt",
+          "cm-mira.pt",
+          "cm-coimbra.pt",
+          "cm-castelobranco.pt",
+          "cm-maia.pt",
+          "cm-gaia.pt",
+          "cm-vendasnovas.pt",
+          "cm-oliveiradohospital.pt"
+        ]
+      },
+      "hub_details": [
+        {
+          "domain": "cm-portimao.pt",
+          "observations": 22,
+          "unique_sources": 1,
+          "unique_hostnames": 7,
+          "tier": "critical"
+        },
+        {
+          "domain": "cm-braga.pt",
+          "observations": 20,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "critical"
+        },
+        {
+          "domain": "cm-olhao.pt",
+          "observations": 17,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "critical"
+        },
+        {
+          "domain": "cm-tvedras.pt",
+          "observations": 16,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "high"
+        },
+        {
+          "domain": "cm-castromarim.pt",
+          "observations": 12,
+          "unique_sources": 1,
+          "unique_hostnames": 8,
+          "tier": "high"
+        },
+        {
+          "domain": "cmjornal.pt",
+          "observations": 12,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "high"
+        },
+        {
+          "domain": "cm-porto.pt",
+          "observations": 12,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "high"
+        },
+        {
+          "domain": "cm-estarreja.pt",
+          "observations": 12,
+          "unique_sources": 1,
+          "unique_hostnames": 8,
+          "tier": "high"
+        },
+        {
+          "domain": "cm-fronteira.pt",
+          "observations": 11,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "high"
+        },
+        {
+          "domain": "cm-cartaxo.pt",
+          "observations": 11,
+          "unique_sources": 1,
+          "unique_hostnames": 7,
+          "tier": "high"
+        },
+        {
+          "domain": "cm-moita.pt",
+          "observations": 10,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "medium"
+        },
+        {
+          "domain": "cm-tabua.pt",
+          "observations": 10,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "medium"
+        },
+        {
+          "domain": "cm-fundao.pt",
+          "observations": 10,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "medium"
+        },
+        {
+          "domain": "cm-covilha.pt",
+          "observations": 10,
+          "unique_sources": 1,
+          "unique_hostnames": 7,
+          "tier": "medium"
+        },
+        {
+          "domain": "cm-elvas.pt",
+          "observations": 9,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "medium"
+        },
+        {
+          "domain": "cm-mira.pt",
+          "observations": 8,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "medium"
+        },
+        {
+          "domain": "cm-coimbra.pt",
+          "observations": 8,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "medium"
+        },
+        {
+          "domain": "cm-castelobranco.pt",
+          "observations": 8,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "medium"
+        },
+        {
+          "domain": "cm-maia.pt",
+          "observations": 8,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "medium"
+        },
+        {
+          "domain": "cm-gaia.pt",
+          "observations": 8,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "medium"
+        },
+        {
+          "domain": "cm-vendasnovas.pt",
+          "observations": 8,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "medium"
+        },
+        {
+          "domain": "cm-oliveiradohospital.pt",
+          "observations": 8,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "medium"
+        },
+        {
+          "domain": "cm-aveiro.pt",
+          "observations": 7,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "low"
+        },
+        {
+          "domain": "ana.pt",
+          "observations": 7,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "low"
+        },
+        {
+          "domain": "cm-carregal.pt",
+          "observations": 7,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        }
+      ],
+      "orphan_sample": [
+        "200anos.justica.gov.pt",
+        "4maravilhas.cm-mealhada.pt",
+        "a.rteste.mai.gov.pt",
+        "aaaa.madeira.gov.pt",
+        "abidjan.embaixadaportugal.mne.gov.pt",
+        "abm.madeira.gov.pt",
+        "abrantes360.cm-abrantes.pt",
+        "abudhabi.embaixadaportugal.mne.gov.pt",
+        "abuja.embaixadaportugal.mne.gov.pt",
+        "ac.dgrdn.gov.pt",
+        "academia.ama.gov.pt",
+        "academiaportuguesadahistoria.gov.pt",
+        "access.ceger.gov.pt",
+        "access.dgal.gov.pt",
+        "access.dgarq.gov.pt"
+      ]
+    },
+    "Republic of Cyprus": {
+      "country_code": "",
+      "seed_count": 489,
+      "scanned_count": 3,
+      "active_count": 1,
+      "orphan_count": 486,
+      "scan_priority": {
+        "critical": [
+          "centralbank.cy"
+        ],
+        "high": [],
+        "medium": []
+      },
+      "hub_details": [
+        {
+          "domain": "centralbank.cy",
+          "observations": 10,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "critical"
+        }
+      ],
+      "orphan_sample": [
+        "1420.gov.cy",
+        "25years.cysec.gov.cy",
+        "50chrona.moec.gov.cy",
+        "acc-api.eudcc.gov.cy",
+        "acc-helpdesk.eudcc.gov.cy",
+        "acc-issuer.eudcc.gov.cy",
+        "acc-issuersrv.eudcc.gov.cy",
+        "acc-verifier.eudcc.gov.cy",
+        "acc-wiki.eudcc.gov.cy",
+        "acc.eudcc.gov.cy",
+        "access.gdw.intranet.gov.cy",
+        "admin.cystat.gov.cy",
+        "adminbiblio.cypruslibrary.gov.cy",
+        "adminopac.cypruslibrary.gov.cy",
+        "aigli.nicosia.org.cy"
+      ]
+    },
+    "Romania": {
+      "country_code": "RO",
+      "seed_count": 660,
+      "scanned_count": 21,
+      "active_count": 4,
+      "orphan_count": 639,
+      "scan_priority": {
+        "critical": [
+          "politiaromana.ro"
+        ],
+        "high": [],
+        "medium": [
+          "mapn.ro"
+        ]
+      },
+      "hub_details": [
+        {
+          "domain": "politiaromana.ro",
+          "observations": 44,
+          "unique_sources": 1,
+          "unique_hostnames": 10,
+          "tier": "critical"
+        },
+        {
+          "domain": "mapn.ro",
+          "observations": 17,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "medium"
+        },
+        {
+          "domain": "ms.ro",
+          "observations": 8,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "low"
+        },
+        {
+          "domain": "pmb.ro",
+          "observations": 6,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        }
+      ],
+      "orphan_sample": [
+        "2021.uefiscdi.gov.ro",
+        "aaas.gov.ro",
+        "ab.politiaromana.ro",
+        "abc.brasovcity.ro",
+        "abudhabi.mae.ro",
+        "abuja.mae.ro",
+        "accelerate.gov.ro",
+        "achizitiicentralizate.onac.gov.ro",
+        "achizitiipublice.gov.ro",
+        "acteinterne.pmb.ro",
+        "activ.oradea.ro",
+        "addisabeba.mae.ro",
+        "aditransport.sibiu.ro",
+        "admin-sni.gov.ro",
+        "adr.gov.ro"
+      ]
+    },
+    "Russia": {
+      "country_code": "",
+      "seed_count": 540,
+      "scanned_count": 0,
+      "active_count": 0,
+      "orphan_count": 540,
+      "scan_priority": {
+        "critical": [],
+        "high": [],
+        "medium": []
+      },
+      "hub_details": [],
+      "orphan_sample": [
+        "10letie.edu.gov.ru",
+        "15years.fas.gov.ru",
+        "20.fskn.gov.ru",
+        "30.fskn.gov.ru",
+        "31.fskn.gov.ru",
+        "34.mchs.gov.ru",
+        "92.gov.ru",
+        "a.rgis.rk.gov.ru",
+        "a.rgistest.rk.gov.ru",
+        "a2nta.khv.gov.ru",
+        "abh.rs.gov.ru",
+        "ac.gov.ru",
+        "ach.gov.ru",
+        "admin.bp.minpromtorg.gov.ru",
+        "admin.budget.minpromtorg.gov.ru"
+      ]
+    },
+    "San Marino": {
+      "country_code": "",
+      "seed_count": 1,
+      "scanned_count": 0,
+      "active_count": 0,
+      "orphan_count": 1,
+      "scan_priority": {
+        "critical": [],
+        "high": [],
+        "medium": []
+      },
+      "hub_details": [],
+      "orphan_sample": [
+        "gov.sm"
+      ]
+    },
+    "Serbia": {
+      "country_code": "",
+      "seed_count": 563,
+      "scanned_count": 0,
+      "active_count": 0,
+      "orphan_count": 563,
+      "scan_priority": {
+        "critical": [],
+        "high": [],
+        "medium": []
+      },
+      "hub_details": [],
+      "orphan_sample": [
+        "abs.gov.rs",
+        "access.vojvodina.gov.rs",
+        "activesync.mpn.gov.rs",
+        "adfs.fppd.minrzs.gov.rs",
+        "akreditacija.gov.rs",
+        "alims.gov.rs",
+        "alsu.gov.rs",
+        "anketa.mup.gov.rs",
+        "aplikacija.birackispisak.gov.rs",
+        "app.beograd.gov.rs",
+        "app.mojdoktor.gov.rs",
+        "appc.fppd.minrzs.gov.rs",
+        "apps.ramrrs.gov.rs",
+        "apr.gov.rs",
+        "apv-visokoobrazovanje.vojvodina.gov.rs"
+      ]
+    },
+    "Slovakia": {
+      "country_code": "SK",
+      "seed_count": 493,
+      "scanned_count": 15,
+      "active_count": 13,
+      "orphan_count": 478,
+      "scan_priority": {
+        "critical": [
+          "gov.sk"
+        ],
+        "high": [
+          "slovensko.sk"
+        ],
+        "medium": [
+          "zilina.sk",
+          "bratislava.sk"
+        ]
+      },
+      "hub_details": [
+        {
+          "domain": "gov.sk",
+          "observations": 858,
+          "unique_sources": 1,
+          "unique_hostnames": 126,
+          "tier": "critical"
+        },
+        {
+          "domain": "slovensko.sk",
+          "observations": 85,
+          "unique_sources": 1,
+          "unique_hostnames": 13,
+          "tier": "high"
+        },
+        {
+          "domain": "zilina.sk",
+          "observations": 83,
+          "unique_sources": 1,
+          "unique_hostnames": 14,
+          "tier": "medium"
+        },
+        {
+          "domain": "bratislava.sk",
+          "observations": 65,
+          "unique_sources": 1,
+          "unique_hostnames": 9,
+          "tier": "medium"
+        },
+        {
+          "domain": "kosice.sk",
+          "observations": 60,
+          "unique_sources": 1,
+          "unique_hostnames": 12,
+          "tier": "low"
+        },
+        {
+          "domain": "trnava.sk",
+          "observations": 58,
+          "unique_sources": 1,
+          "unique_hostnames": 13,
+          "tier": "low"
+        },
+        {
+          "domain": "presov.sk",
+          "observations": 32,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "low"
+        },
+        {
+          "domain": "poprad.sk",
+          "observations": 29,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "low"
+        },
+        {
+          "domain": "banskabystrica.sk",
+          "observations": 24,
+          "unique_sources": 1,
+          "unique_hostnames": 8,
+          "tier": "low"
+        },
+        {
+          "domain": "minv.sk",
+          "observations": 18,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "low"
+        },
+        {
+          "domain": "martin.sk",
+          "observations": 18,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "low"
+        },
+        {
+          "domain": "trencin.sk",
+          "observations": 16,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "nrsr.sk",
+          "observations": 15,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "low"
+        }
+      ],
+      "orphan_sample": [
+        "adfs.culture.gov.sk",
+        "adfs.health.gov.sk",
+        "adfs.telecom.gov.sk",
+        "admin.telecom.gov.sk",
+        "adminer.gov.sk",
+        "amfik.trnava.sk",
+        "antimon.gov.sk",
+        "apsk01.eessi-acc.gov.sk",
+        "apsk01.eessi.gov.sk",
+        "archiv.vlada.gov.sk",
+        "archivzverejnovanie.bratislava.sk",
+        "arvd.gov.sk",
+        "aspr-report-test.finance.gov.sk",
+        "aspr-report-test.vicepremier.gov.sk",
+        "aspr-report.finance.gov.sk"
+      ]
+    },
+    "Slovenia": {
+      "country_code": "SI",
+      "seed_count": 610,
+      "scanned_count": 13,
+      "active_count": 12,
+      "orphan_count": 597,
+      "scan_priority": {
+        "critical": [
+          "gov.si"
+        ],
+        "high": [
+          "ljubljana.si"
+        ],
+        "medium": [
+          "maribor.si",
+          "ptuj.si"
+        ]
+      },
+      "hub_details": [
+        {
+          "domain": "gov.si",
+          "observations": 699,
+          "unique_sources": 1,
+          "unique_hostnames": 148,
+          "tier": "critical"
+        },
+        {
+          "domain": "ljubljana.si",
+          "observations": 57,
+          "unique_sources": 1,
+          "unique_hostnames": 9,
+          "tier": "high"
+        },
+        {
+          "domain": "maribor.si",
+          "observations": 50,
+          "unique_sources": 1,
+          "unique_hostnames": 9,
+          "tier": "medium"
+        },
+        {
+          "domain": "ptuj.si",
+          "observations": 48,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "medium"
+        },
+        {
+          "domain": "celje.si",
+          "observations": 43,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "low"
+        },
+        {
+          "domain": "ds-rs.si",
+          "observations": 35,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        },
+        {
+          "domain": "kamnik.si",
+          "observations": 33,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "trbovlje.si",
+          "observations": 16,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "koper.si",
+          "observations": 15,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "kranj.si",
+          "observations": 12,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "vlada.si",
+          "observations": 6,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "slovenjgradec.si",
+          "observations": 5,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        }
+      ],
+      "orphan_sample": [
+        "1ka.furs.gov.si",
+        "2445.obvestila.gov.si",
+        "4085.obvestila.gov.si",
+        "5125.obvestila.gov.si",
+        "5251.ess.gov.si",
+        "5251.obvestila.gov.si",
+        "acc.gov.si",
+        "acme-test.gov.si",
+        "acme-test.sigov.si",
+        "acme-test1.sigov.si",
+        "acme-test2.sigov.si",
+        "admin.muza.gov.si",
+        "aeoi.fu.gov.si",
+        "agromet.mkgp.gov.si",
+        "alerts.isl.gov.si"
+      ]
+    },
+    "Spain": {
+      "country_code": "ES",
+      "seed_count": 2991,
+      "scanned_count": 114,
+      "active_count": 24,
+      "orphan_count": 2877,
+      "scan_priority": {
+        "critical": [
+          "gencat.cat",
+          "castillalamancha.es"
+        ],
+        "high": [
+          "xunta.gal",
+          "gva.es"
+        ],
+        "medium": [
+          "jcyl.es",
+          "navarra.es",
+          "malaga.eu",
+          "asturias.es"
+        ]
+      },
+      "hub_details": [
+        {
+          "domain": "gencat.cat",
+          "observations": 139,
+          "unique_sources": 1,
+          "unique_hostnames": 62,
+          "tier": "critical"
+        },
+        {
+          "domain": "castillalamancha.es",
+          "observations": 75,
+          "unique_sources": 1,
+          "unique_hostnames": 15,
+          "tier": "critical"
+        },
+        {
+          "domain": "xunta.gal",
+          "observations": 66,
+          "unique_sources": 1,
+          "unique_hostnames": 21,
+          "tier": "high"
+        },
+        {
+          "domain": "gva.es",
+          "observations": 47,
+          "unique_sources": 1,
+          "unique_hostnames": 26,
+          "tier": "high"
+        },
+        {
+          "domain": "jcyl.es",
+          "observations": 35,
+          "unique_sources": 1,
+          "unique_hostnames": 8,
+          "tier": "medium"
+        },
+        {
+          "domain": "navarra.es",
+          "observations": 30,
+          "unique_sources": 1,
+          "unique_hostnames": 12,
+          "tier": "medium"
+        },
+        {
+          "domain": "malaga.eu",
+          "observations": 24,
+          "unique_sources": 1,
+          "unique_hostnames": 9,
+          "tier": "medium"
+        },
+        {
+          "domain": "asturias.es",
+          "observations": 20,
+          "unique_sources": 1,
+          "unique_hostnames": 7,
+          "tier": "medium"
+        },
+        {
+          "domain": "juntaex.es",
+          "observations": 16,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "low"
+        },
+        {
+          "domain": "carm.es",
+          "observations": 13,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "low"
+        },
+        {
+          "domain": "cuenca.es",
+          "observations": 10,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "low"
+        },
+        {
+          "domain": "caib.es",
+          "observations": 10,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "low"
+        },
+        {
+          "domain": "ayto-fuenlabrada.es",
+          "observations": 9,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "low"
+        },
+        {
+          "domain": "aragon.es",
+          "observations": 8,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "low"
+        },
+        {
+          "domain": "madrid.es",
+          "observations": 8,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "low"
+        },
+        {
+          "domain": "gobiernodecanarias.org",
+          "observations": 7,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        },
+        {
+          "domain": "ine.es",
+          "observations": 7,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "dgt.es",
+          "observations": 7,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        },
+        {
+          "domain": "osta.es",
+          "observations": 6,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "ayuntamiento-espana.es",
+          "observations": 6,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "ayto-losbarrios.es",
+          "observations": 5,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "ayto-caceres.es",
+          "observations": 5,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "seg-social.es",
+          "observations": 5,
+          "unique_sources": 1,
+          "unique_hostnames": 1,
+          "tier": "low"
+        },
+        {
+          "domain": "aeat.es",
+          "observations": 4,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        }
+      ],
+      "orphan_sample": [
+        "012.comunidad.madrid",
+        "012.xunta.gal",
+        "112.cantabria.es",
+        "112.castillalamancha.es",
+        "112.gencat.cat",
+        "112.jcyl.es",
+        "112aragon.aragon.es",
+        "28dejulio.cantabria.es",
+        "5g.madrid.es",
+        "aapl.academiasprocivil.aragon.es",
+        "aatesaurus.cultura.gencat.cat",
+        "abalarbox.edu.xunta.gal",
+        "abertos.xunta.gal",
+        "abiesweb.caib.es",
+        "absys.asturias.es"
+      ]
+    },
+    "Sweden": {
+      "country_code": "SE",
+      "seed_count": 844,
+      "scanned_count": 118,
+      "active_count": 73,
+      "orphan_count": 726,
+      "scan_priority": {
+        "critical": [
+          "uppsala.se",
+          "helsingborg.se",
+          "regionstockholm.se",
+          "vgregion.se"
+        ],
+        "high": [
+          "umea.se",
+          "norrkoping.se",
+          "jonkoping.se",
+          "vaxjo.se",
+          "goteborg.se",
+          "kalmar.se",
+          "regionhalland.se"
+        ],
+        "medium": [
+          "stockholm.se",
+          "smhi.se",
+          "regionorebrolan.se",
+          "lantmateriet.se",
+          "karlskrona.se",
+          "trafikverket.se",
+          "boverket.se",
+          "boras.se",
+          "gotland.se",
+          "orebro.se",
+          "socialstyrelsen.se",
+          "riksbank.se"
+        ]
+      },
+      "hub_details": [
+        {
+          "domain": "uppsala.se",
+          "observations": 142,
+          "unique_sources": 1,
+          "unique_hostnames": 25,
+          "tier": "critical"
+        },
+        {
+          "domain": "helsingborg.se",
+          "observations": 49,
+          "unique_sources": 1,
+          "unique_hostnames": 11,
+          "tier": "critical"
+        },
+        {
+          "domain": "regionstockholm.se",
+          "observations": 45,
+          "unique_sources": 1,
+          "unique_hostnames": 7,
+          "tier": "critical"
+        },
+        {
+          "domain": "vgregion.se",
+          "observations": 44,
+          "unique_sources": 1,
+          "unique_hostnames": 14,
+          "tier": "critical"
+        },
+        {
+          "domain": "umea.se",
+          "observations": 40,
+          "unique_sources": 1,
+          "unique_hostnames": 8,
+          "tier": "high"
+        },
+        {
+          "domain": "norrkoping.se",
+          "observations": 39,
+          "unique_sources": 1,
+          "unique_hostnames": 11,
+          "tier": "high"
+        },
+        {
+          "domain": "jonkoping.se",
+          "observations": 35,
+          "unique_sources": 1,
+          "unique_hostnames": 8,
+          "tier": "high"
+        },
+        {
+          "domain": "vaxjo.se",
+          "observations": 30,
+          "unique_sources": 1,
+          "unique_hostnames": 13,
+          "tier": "high"
+        },
+        {
+          "domain": "goteborg.se",
+          "observations": 29,
+          "unique_sources": 1,
+          "unique_hostnames": 9,
+          "tier": "high"
+        },
+        {
+          "domain": "kalmar.se",
+          "observations": 29,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "high"
+        },
+        {
+          "domain": "regionhalland.se",
+          "observations": 29,
+          "unique_sources": 1,
+          "unique_hostnames": 11,
+          "tier": "high"
+        },
+        {
+          "domain": "stockholm.se",
+          "observations": 27,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "medium"
+        },
+        {
+          "domain": "smhi.se",
+          "observations": 27,
+          "unique_sources": 1,
+          "unique_hostnames": 8,
+          "tier": "medium"
+        },
+        {
+          "domain": "regionorebrolan.se",
+          "observations": 26,
+          "unique_sources": 1,
+          "unique_hostnames": 9,
+          "tier": "medium"
+        },
+        {
+          "domain": "lantmateriet.se",
+          "observations": 25,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "medium"
+        },
+        {
+          "domain": "karlskrona.se",
+          "observations": 22,
+          "unique_sources": 1,
+          "unique_hostnames": 7,
+          "tier": "medium"
+        },
+        {
+          "domain": "trafikverket.se",
+          "observations": 21,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "medium"
+        },
+        {
+          "domain": "boverket.se",
+          "observations": 20,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "medium"
+        },
+        {
+          "domain": "boras.se",
+          "observations": 20,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "medium"
+        },
+        {
+          "domain": "gotland.se",
+          "observations": 18,
+          "unique_sources": 1,
+          "unique_hostnames": 9,
+          "tier": "medium"
+        },
+        {
+          "domain": "orebro.se",
+          "observations": 18,
+          "unique_sources": 1,
+          "unique_hostnames": 6,
+          "tier": "medium"
+        },
+        {
+          "domain": "socialstyrelsen.se",
+          "observations": 17,
+          "unique_sources": 1,
+          "unique_hostnames": 7,
+          "tier": "medium"
+        },
+        {
+          "domain": "riksbank.se",
+          "observations": 17,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "medium"
+        },
+        {
+          "domain": "regionkalmar.se",
+          "observations": 16,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "low"
+        },
+        {
+          "domain": "domstol.se",
+          "observations": 16,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "low"
+        }
+      ],
+      "orphan_sample": [
+        "1177direkt.regionvastmanland.se",
+        "aad-mfa-reset.goteborg.se",
+        "admin.jagarregistret.naturvardsverket.se",
+        "aichatt.konsumentverket.se",
+        "alfresco7.svk.se",
+        "alkt.sodertalje.se",
+        "allaktivitetshus.uppsala.se",
+        "allis.uppsala.se",
+        "almtunaskolan.uppsala.se",
+        "anlaggningsregister.umea.se",
+        "anmalan.konsumentverket.se",
+        "anpassad-grundskola.uppsala.se",
+        "apimanager.lantmateriet.se",
+        "aqua.smhi.se",
+        "archive.riksbank.se"
+      ]
+    },
+    "Switzerland": {
+      "country_code": "CH",
+      "seed_count": 3701,
+      "scanned_count": 6,
+      "active_count": 5,
+      "orphan_count": 3695,
+      "scan_priority": {
+        "critical": [
+          "ethz.ch"
+        ],
+        "high": [],
+        "medium": [
+          "admin.ch"
+        ]
+      },
+      "hub_details": [
+        {
+          "domain": "ethz.ch",
+          "observations": 3025,
+          "unique_sources": 1,
+          "unique_hostnames": 314,
+          "tier": "critical"
+        },
+        {
+          "domain": "admin.ch",
+          "observations": 523,
+          "unique_sources": 1,
+          "unique_hostnames": 118,
+          "tier": "medium"
+        },
+        {
+          "domain": "epfl.ch",
+          "observations": 167,
+          "unique_sources": 1,
+          "unique_hostnames": 55,
+          "tier": "low"
+        },
+        {
+          "domain": "unige.ch",
+          "observations": 164,
+          "unique_sources": 1,
+          "unique_hostnames": 57,
+          "tier": "low"
+        },
+        {
+          "domain": "bfh.ch",
+          "observations": 13,
+          "unique_sources": 1,
+          "unique_hostnames": 4,
+          "tier": "low"
+        }
+      ],
+      "orphan_sample": [
+        "2d.geo.admin.ch",
+        "3d.geo.admin.ch",
+        "4d.geo.admin.ch",
+        "a-vortex.ssz.admin.ch",
+        "a01vortex.admin.ch",
+        "a01vortex.bit.admin.ch",
+        "a02vortex.bit.admin.ch",
+        "aaa-a.ssltest.admin.ch",
+        "aaa-t.ssltest.admin.ch",
+        "aaa.isos.bak.admin.ch",
+        "aaa2-a.ssltest.admin.ch",
+        "abk-i.vbs.admin.ch",
+        "abk.vbs.admin.ch",
+        "abstimmungen.admin.ch",
+        "abz.inf.ethz.ch"
+      ]
+    },
+    "Ukraine": {
+      "country_code": "",
+      "seed_count": 1304,
+      "scanned_count": 0,
+      "active_count": 0,
+      "orphan_count": 1304,
+      "scan_priority": {
+        "critical": [],
+        "high": [],
+        "medium": []
+      },
+      "hub_details": [],
+      "orphan_sample": [
+        "1.imzo.gov.ua",
+        "123.dffd.gov.ua",
+        "1551.gov.ua",
+        "1551.kyivcity.gov.ua",
+        "1588-admin.mkrada.gov.ua",
+        "1588.mkrada.gov.ua",
+        "2.imzo.gov.ua",
+        "2016.bc-rada.gov.ua",
+        "272b5d7e2f4f52e3eae9294d82176faa.nais.gov.ua",
+        "3.imzo.gov.ua",
+        "300.cert.gov.ua",
+        "8253ec7b2a4bf6acf65732954f18a607.nais.gov.ua",
+        "9f22fecb2a798dd870ef499eaafb2a17.nais.gov.ua",
+        "accounts.kyivcity.gov.ua",
+        "ad.dzi.gov.ua"
+      ]
+    },
+    "United Kingdom": {
+      "country_code": "GB",
+      "seed_count": 4247,
+      "scanned_count": 0,
+      "active_count": 0,
+      "orphan_count": 4247,
+      "scan_priority": {
+        "critical": [],
+        "high": [],
+        "medium": []
+      },
+      "hub_details": [],
+      "orphan_sample": [
+        "1ngi.gateshead.gov.uk",
+        "3bwpoc.westminster.gov.uk",
+        "3g.thurrock.gov.uk",
+        "a1.manchester.gov.uk",
+        "abacus.essexcc.gov.uk",
+        "abacusextranet.liverpool.gov.uk",
+        "abacustest.essexcc.gov.uk",
+        "abacustest.liverpool.gov.uk",
+        "abacustraining.liverpool.gov.uk",
+        "abca.walsall.gov.uk",
+        "abcalculator.bis.gov.uk",
+        "aberdeencity.gov.uk",
+        "aberdeenshire.gov.uk",
+        "abs.bolton.gov.uk",
+        "absencereporting.greenwich.gov.uk"
+      ]
+    },
+    "United Kingdom (UK)": {
+      "country_code": "",
+      "seed_count": 8260,
+      "scanned_count": 14,
+      "active_count": 5,
+      "orphan_count": 8246,
+      "scan_priority": {
+        "critical": [
+          "llyw.cymru"
+        ],
+        "high": [],
+        "medium": [
+          "gov.wales"
+        ]
+      },
+      "hub_details": [
+        {
+          "domain": "llyw.cymru",
+          "observations": 21,
+          "unique_sources": 1,
+          "unique_hostnames": 8,
+          "tier": "critical"
+        },
+        {
+          "domain": "gov.wales",
+          "observations": 15,
+          "unique_sources": 1,
+          "unique_hostnames": 5,
+          "tier": "medium"
+        },
+        {
+          "domain": "gov.scot",
+          "observations": 9,
+          "unique_sources": 1,
+          "unique_hostnames": 3,
+          "tier": "low"
+        },
+        {
+          "domain": "parliament.uk",
+          "observations": 7,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        },
+        {
+          "domain": "senedd.cymru",
+          "observations": 5,
+          "unique_sources": 1,
+          "unique_hostnames": 2,
+          "tier": "low"
+        }
+      ],
+      "orphan_sample": [
+        "111.nhs.uk",
+        "111.wales.nhs.uk",
+        "111patient.secamb.nhs.uk",
+        "2yroldearlyeducation.stoke.gov.uk",
+        "306medicalcentre.nhs.uk",
+        "42kingsway.nhs.uk",
+        "4skin-health.alderhey.nhs.uk",
+        "aala.hse.gov.uk",
+        "abbhealthiertogether.cymru.nhs.uk",
+        "abcportal.ashford.gov.uk",
+        "aberdeenshire.gov.uk",
+        "abergavennytowncouncil.gov.uk",
+        "aberystwyth.gov.uk",
+        "academiwales.gov.wales",
+        "academy.cityoflondon.police.uk"
+      ]
+    }
+  }
+}
