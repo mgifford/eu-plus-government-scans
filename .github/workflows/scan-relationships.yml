@@ -1,109 +1,40 @@
 name: Scan Relationships
 
 on:
-  # Run weekly on Sundays at 04:00 UTC (same as Lighthouse)
+  # Run 4x daily (every 6 hours) for progressive scanning
   schedule:
-    - cron: '0 4 * * 0'
+    - cron: '0 */6 * * *'
 
-  # Allow manual trigger for a single country or all countries
+  # Allow manual trigger
   workflow_dispatch:
     inputs:
       country:
-        description: 'Country code to scan (e.g., ICELAND, FRANCE) — leave empty for all EU countries'
+        description: 'Country code to scan (leave empty for all countries)'
         required: false
         type: string
       rate_limit:
-        description: 'Maximum requests per second (keep low for polite crawling)'
+        description: 'Maximum requests per second'
         required: false
-        default: '1.0'
+        default: '2.0'
         type: string
       max_runtime:
-        description: 'Maximum runtime in minutes per country (0 = no limit)'
+        description: 'Maximum runtime in minutes (0 = no limit)'
         required: false
-        default: '30'
+        default: '100'
+        type: string
+      skip_recently_scanned_days:
+        description: 'Skip URLs scanned within N days (default: 28)'
+        required: false
+        default: '28'
         type: string
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
-  scan-country:
-    if: ${{ github.event.inputs.country == '' }}
+  scan-relationships:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
-    permissions:
-      contents: write
-      actions: read
-
-    strategy:
-      fail-fast: false
-      matrix:
-        country:
-          - AUSTRIA
-          - BELGIUM
-          - BULGARIA
-          - CROATIA
-          - CZECHIA
-          - DENMARK
-          - ESTONIA
-          - FINLAND
-          - FRANCE
-          - GERMANY
-          - GREECE
-          - HUNGARY
-          - ICELAND
-          - IRELAND
-          - ITALY
-          - LATVIA
-          - LITHUANIA
-          - LUXEMBOURG
-          - MALTA
-          - NETHERLANDS
-          - NORWAY
-          - POLAND
-          - PORTUGAL
-          - REPUBLIC_OF_CYPRUS
-          - ROMANIA
-          - SLOVAKIA
-          - SLOVENIA
-          - SPAIN
-          - SWEDEN
-          - SWITZERLAND
-          - UNITED_KINGDOM_UK
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v6
-
-      - name: Set up Python
-        uses: actions/setup-python@v6
-        with:
-          python-version: '3.12'
-          cache: 'pip'
-
-      - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
-
-      - name: Scan relationships
-        run: |
-          python -m src.cli.scan_relationships \
-            --country ${{ matrix.country }} \
-            --rate-limit ${{ inputs.rate_limit || '1.0' }} \
-            --max-runtime ${{ inputs.max_runtime || '30' }}
-
-      - name: Upload country relationship data
-        uses: actions/upload-artifact@v4
-        with:
-          name: relationship-data-${{ matrix.country }}
-          path: data/work/relationships
-          retention-days: 90
-
-  # Single-country manual trigger: skip the matrix and scan just one country
-  scan-single-country:
-    if: ${{ github.event.inputs.country != '' }}
-    runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 110
     permissions:
       contents: write
       actions: read
@@ -122,90 +53,94 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - name: Scan relationships
-        run: |
-          python -m src.cli.scan_relationships \
-            --country ${{ inputs.country }} \
-            --rate-limit ${{ inputs.rate_limit || '1.0' }} \
-            --max-runtime ${{ inputs.max_runtime || '30' }}
-
-      - name: Upload country relationship data
-        uses: actions/upload-artifact@v4
-        with:
-          name: relationship-data-${{ inputs.country }}
-          path: data/work/relationships
-          retention-days: 90
-
-  aggregate:
-    if: always() && (needs.scan-country.result != 'skipped' || needs.scan-single-country.result != 'skipped')
-    needs: [scan-country, scan-single-country]
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    permissions:
-      contents: write
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v6
-
-      - name: Download all country artifacts from this run
+      - name: Find latest relationship metadata artifact run ID
+        id: find-metadata
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          mkdir -p data/work/relationships
+          RUN_ID=$(gh api "/repos/${{ github.repository }}/actions/artifacts?name=relationship-scan-metadata&per_page=1" \
+            --jq '.artifacts[] | select(.expired == false) | .workflow_run.id' 2>/dev/null || echo "")
+          echo "run_id=${RUN_ID}" >> $GITHUB_OUTPUT
+          if [ -n "$RUN_ID" ]; then
+            echo "Found relationship-scan-metadata artifact from run $RUN_ID"
+          else
+            echo "No relationship-scan-metadata artifact found — will start with fresh database"
+          fi
 
-          # Download each country artifact that exists in this workflow run
-          ARTIFACTS=$(gh api --paginate "/repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts?per_page=100" \
-            --jq '.artifacts[] | select(.name | startswith("relationship-data-")) | .name' 2>/dev/null || echo "")
-
-          for artifact_name in $ARTIFACTS; do
-            echo "Downloading $artifact_name ..."
-            gh run download ${{ github.run_id }} \
-              --name "$artifact_name" \
-              --dir data/work/relationships/"$artifact_name" 2>&1
-          done
-
-          echo "Downloaded relationship data:"
-          find data/work/relationships -name "*.jsonl" -type f | head -50
-
-      - name: Aggregate relationship data
-        run: |
-          mkdir -p docs/data
-
-          # Combine all JSONL files (previous data + this run's per-country data)
-          find data/work/relationships -name "*.jsonl" -exec cat {} \; > docs/data/relationships.jsonl
-
-          echo "Aggregated relationship data:"
-          wc -l docs/data/relationships.jsonl
-          echo "Unique source domains:"
-          cut -d'"' -f4 docs/data/relationships.jsonl | sort -u | wc -l
-
-      - name: Upload aggregated relationship data artifact
-        uses: actions/upload-artifact@v4
+      - name: Download previous relationship scan metadata (if exists)
+        if: steps.find-metadata.outputs.run_id != ''
+        continue-on-error: true
+        uses: actions/download-artifact@v8
         with:
-          name: relationship-data
-          path: data/work/relationships
+          name: relationship-scan-metadata
+          path: data/
+          run-id: ${{ steps.find-metadata.outputs.run_id }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Run progressive relationship scan
+        run: |
+          if [ -n "${{ inputs.country }}" ]; then
+            python -m src.cli.scan_relationships \
+              --country ${{ inputs.country }} \
+              --rate-limit ${{ inputs.rate_limit || '2.0' }} \
+              --max-runtime ${{ inputs.max_runtime || '100' }} \
+              --skip-recently-scanned-days ${{ inputs.skip_recently_scanned_days || '28' }}
+          else
+            python -m src.cli.scan_relationships \
+              --all \
+              --rate-limit ${{ inputs.rate_limit || '2.0' }} \
+              --max-runtime ${{ inputs.max_runtime || '100' }} \
+              --skip-recently-scanned-days ${{ inputs.skip_recently_scanned_days || '28' }}
+          fi
+
+      - name: Guard against overwriting shared metadata with data-loss result
+        if: always()
+        id: db-guard
+        run: |
+          PREV_RUN_ID="${{ steps.find-metadata.outputs.run_id }}"
+          if [ -n "$PREV_RUN_ID" ] && [ ! -f "data/metadata.db" ]; then
+            echo "safe_to_upload=false" >> $GITHUB_OUTPUT
+            echo "WARNING: Previous artifact found (run $PREV_RUN_ID) but data/metadata.db is missing after download. Skipping overwrite to protect existing data."
+          else
+            echo "safe_to_upload=true" >> $GITHUB_OUTPUT
+            echo "Database present (or no prior artifact) — safe to update shared metadata."
+          fi
+
+      - name: Upload relationship scan metadata
+        if: always() && steps.db-guard.outputs.safe_to_upload == 'true'
+        uses: actions/upload-artifact@v7
+        with:
+          name: relationship-scan-metadata
+          path: data/metadata.db
           retention-days: 90
           overwrite: true
+          if-no-files-found: warn
+          compression-level: 0
 
-      - name: Upload aggregated data for GitHub Pages
-        uses: actions/upload-artifact@v4
-        with:
-          name: pages-data
-          path: docs/data/relationships.jsonl
-          retention-days: 365
-
-      - name: Commit updated relationship data
+      - name: Commit updated data files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Only commit if there are changes
-          if git diff --quiet docs/data/relationships.jsonl 2>/dev/null; then
+          git add docs/data/relationships.jsonl docs/data/summaries/ docs/data/coverage_report.json
+
+          if git diff --cached --quiet 2>/dev/null; then
             echo "No changes to commit"
           else
-            git add docs/data/relationships.jsonl
-            git commit -m "data: Update relationship scan results [skip ci]"
+            git commit -m "data: Progressive relationship scan update [skip ci]"
             git pull --rebase
             git push
           fi
+
+      - name: Upload relationship data artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: relationship-data
+          path: |
+            docs/data/relationships.jsonl
+            docs/data/summaries/
+            docs/data/coverage_report.json
+          retention-days: 90
+          overwrite: true
+          if-no-files-found: warn
+          compression-level: 0

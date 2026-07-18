@@ -1855,8 +1855,8 @@
                 return;
             }
 
-            // If country changed and we have JSONL, filter from JSONL
-            if (jsonlLoaded || !currentFilters.country) {
+            // If we have JSONL data, filter from the full dataset
+            if (jsonlLoaded) {
                 filteredRelationships = allRelationships.filter(r => {
                     const country = getCountry(r.source_domain);
                     if (currentFilters.country && country !== currentFilters.country) return false;
@@ -1882,6 +1882,47 @@
                     document.getElementById('gov-to-gov-section').style.display = 'none';
                 }
                 announceToScreenReader('Filters applied. Showing ' + filteredRelationships.length + ' relationships.');
+            } else if (summariesIndex && Object.keys(summariesIndex).length > 0) {
+                // No JSONL loaded yet — re-aggregate from the lightweight index
+                const countries = currentFilters.country ? [currentFilters.country] : Object.keys(summariesIndex);
+                let totalRels = 0, totalDomains = 0, totalTargets = 0, editorialLinks = 0, techDeps = 0;
+                countries.forEach(c => {
+                    const s = summariesIndex[c];
+                    if (!s) return;
+                    let rels = s.total_relationships;
+                    let domains = s.total_source_domains;
+                    let targets = s.total_unique_targets;
+                    let editorial = (s.relationship_types || {}).editorial_link || 0;
+                    let tech = ((s.relationship_types || {}).script_dependency || 0) +
+                        ((s.relationship_types || {}).stylesheet_dependency || 0) +
+                        ((s.relationship_types || {}).font_or_preload_dependency || 0) +
+                        ((s.relationship_types || {}).image_or_media_dependency || 0) +
+                        ((s.relationship_types || {}).form_destination || 0);
+                    if (currentFilters.type) {
+                        const typeCount = (s.relationship_types || {})[currentFilters.type] || 0;
+                        rels = typeCount;
+                        editorial = currentFilters.type === 'editorial_link' ? typeCount : 0;
+                        tech = currentFilters.type !== 'editorial_link' ? typeCount : 0;
+                    }
+                    if (currentFilters.govToGov) {
+                        rels = s.gov_to_gov_pairs || 0;
+                        editorial = rels;
+                        tech = 0;
+                    }
+                    totalRels += rels;
+                    totalDomains += domains;
+                    totalTargets += targets;
+                    editorialLinks += editorial;
+                    techDeps += tech;
+                });
+                document.getElementById('total-domains').textContent = totalDomains;
+                document.getElementById('total-relationships').textContent = totalRels;
+                document.getElementById('confirmed-domains').textContent = countries.length;
+                document.getElementById('candidate-domains').textContent = totalTargets;
+                document.getElementById('editorial-links').textContent = editorialLinks;
+                document.getElementById('technical-deps').textContent = techDeps;
+                document.getElementById('gov-to-gov-section').style.display = 'none';
+                announceToScreenReader('Filters applied. Showing ' + totalRels + ' relationships from summary data.');
             }
         }
 
@@ -2613,10 +2654,30 @@
                     const totalRels = Object.values(index).reduce((s, c) => s + c.total_relationships, 0);
                     const totalDomains = Object.values(index).reduce((s, c) => s + c.total_source_domains, 0);
                     const totalTargets = Object.values(index).reduce((s, c) => s + c.total_unique_targets, 0);
-                    document.getElementById('total-domains').textContent = totalDomains;
-                    document.getElementById('total-relationships').textContent = totalRels;
-                    document.getElementById('confirmed-domains').textContent = Object.keys(index).length;
-                    document.getElementById('candidate-domains').textContent = totalTargets;
+                    const editorialLinks = Object.values(index).reduce((s, c) => s + ((c.relationship_types || {}).editorial_link || 0), 0);
+                    const techDeps = Object.values(index).reduce((s, c) => s + ((c.relationship_types || {}).script_dependency || 0) +
+                        ((c.relationship_types || {}).stylesheet_dependency || 0) +
+                        ((c.relationship_types || {}).font_or_preload_dependency || 0) +
+                        ((c.relationship_types || {}).image_or_media_dependency || 0) +
+                        ((c.relationship_types || {}).form_destination || 0), 0);
+                    const govToGovPairs = Object.values(index).reduce((s, c) => s + (c.gov_to_gov_pairs || 0), 0);
+
+                    if (currentFilters.govToGov) {
+                        // Default view: show gov-to-gov pair counts
+                        document.getElementById('total-domains').textContent = totalDomains;
+                        document.getElementById('total-relationships').textContent = govToGovPairs;
+                        document.getElementById('confirmed-domains').textContent = Object.keys(index).length;
+                        document.getElementById('candidate-domains').textContent = totalTargets;
+                        document.getElementById('editorial-links').textContent = govToGovPairs;
+                        document.getElementById('technical-deps').textContent = 0;
+                    } else {
+                        document.getElementById('total-domains').textContent = totalDomains;
+                        document.getElementById('total-relationships').textContent = totalRels;
+                        document.getElementById('confirmed-domains').textContent = Object.keys(index).length;
+                        document.getElementById('candidate-domains').textContent = totalTargets;
+                        document.getElementById('editorial-links').textContent = editorialLinks;
+                        document.getElementById('technical-deps').textContent = techDeps;
+                    }
 
                     // Show country breakdown from index
                     renderCountryBreakdownFromIndex(index);
