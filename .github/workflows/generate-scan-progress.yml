@@ -184,7 +184,7 @@ jobs:
           # All four files are still uploaded as workflow artifacts above.
           # docs/technology-index.json is a compact cross-reference index that
           # IS committed so it can be served via GitHub Pages as a static API.
-          git add docs/scan-progress.md docs/domains.md docs/index.md \
+          git add docs/scan-progress.md docs/domains.md docs/domains/ docs/index.md \
                   docs/social-media.md \
                   docs/technology-scanning.md docs/technology-index.json \
                   docs/third-party-tools.md docs/third-party-tools-data.json \
@@ -207,6 +207,7 @@ jobs:
             docs/scan-progress.md
             docs/scan-progress-data.json
             docs/domains.md
+            docs/domains/
             docs/index.md
             docs/social-media.md
             docs/social-media-data.json

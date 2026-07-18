@@ -49,7 +49,7 @@ exclude = [
 # - kitty-specs/         : Feature spec/planning files with devcontainer-absolute paths
 #                          (/workspaces/...) that are only valid inside VS Code
 exclude_path = [
-    "docs/domains.md",
+    "docs/domains",
     "docs/scan-progress.md",
     "docs/lighthouse-results.md",
     "docs/accessibility-statements.md",
