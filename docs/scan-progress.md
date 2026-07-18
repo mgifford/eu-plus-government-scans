@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-07-18 22:59 UTC_
+_Generated: 2026-07-18 23:14 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -15,7 +15,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 |-----------|--------------|-----------|----------|---------|
 | **Combined Reachability** | **77,380 confirmed reachable** | 82,714 | **<span role="img" aria-label="93.6% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:112px;"></span></span><span class="sm-bar__label">93.6%</span></span>** | — |
 | Social Media | 82,714 scanned (77,380 reachable) | 82,714 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 25.4 days |
-| Technology | 69,679 scanned | 82,714 | <span role="img" aria-label="84.2% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:101px;"></span></span><span class="sm-bar__label">84.2%</span></span> | 24.7 days |
+| Technology | 69,679 scanned | 82,714 | <span role="img" aria-label="84.2% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:101px;"></span></span><span class="sm-bar__label">84.2%</span></span> | 24.6 days |
 | Lighthouse | 0 scanned | 82,714 | (manual scan) | — |
 | Accessibility Statements | 69,809 scanned | 82,714 | <span role="img" aria-label="84.4% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:101px;"></span></span><span class="sm-bar__label">84.4%</span></span> | 35.4 days |
 
@@ -103,7 +103,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Romania | 799 | 2026-07-17 |
 | Slovakia | 434 | 2026-07-17 |
 | Slovenia | 200 | 2026-07-18 |
-| Spain | 6,069 | 2026-07-16 |
+| Spain | 6,069 | 2026-07-18 |
 | Sweden | 1,558 | 2026-07-17 |
 | Switzerland | 2,117 | 2026-07-12 |
 | United Kingdom | 13,216 | 2026-07-16 |
