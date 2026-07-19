@@ -140,14 +140,14 @@
       "website": "https://www.lnb.lt/",
       "dissolved": null,
       "hostname": "lnb.lt",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Martynas Mažvydas National Library of Lithuania",
       "website": "https://www.lnb.lt/en/",
       "dissolved": null,
       "hostname": "lnb.lt",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Police Department of the Ministry of the Interior",
@@ -168,7 +168,7 @@
       "website": "http://www.investlithuania.com/en/",
       "dissolved": null,
       "hostname": "investlithuania.com",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Lithuanian Space Association",

@@ -1,8 +1,8 @@
 {
   "version":"0.1-seed",
   "country":"United Kingdom (UK)",
-  "domain_count":8250,
-  "page_count":19502,
+  "domain_count":8259,
+  "page_count":19511,
   "domains":[
     {
       "canonical_domain":"111.nhs.uk",
@@ -263533,6 +263533,105 @@
           "accessibility_score":"1",
           "best_practices_score":"0.74",
           "seo_score":"0.92"
+        }
+      ]
+    },
+    {
+      "canonical_domain":"investorsinpeople.com",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://investorsinpeople.com/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"caa.co.uk",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://caa.co.uk/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"hmcoastguard.uk",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://hmcoastguard.uk/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"ico.org.uk",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://ico.org.uk/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"fca.org.uk",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://fca.org.uk/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"optical.org",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://optical.org/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"hcpc-uk.org",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://hcpc-uk.org/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"thetakeoverpanel.org.uk",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://thetakeoverpanel.org.uk/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"gss.civilservice.gov.uk",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://gss.civilservice.gov.uk/",
+          "is_root_page":true
         }
       ]
     }

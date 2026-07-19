@@ -1,8 +1,8 @@
 {
   "version":"0.1-seed",
   "country":"Hungary",
-  "domain_count":177,
-  "page_count":390,
+  "domain_count":179,
+  "page_count":392,
   "domains":[
     {
       "canonical_domain":"1000fa.szombathely.hu",
@@ -5418,6 +5418,28 @@
           "accessibility_score":"0.7",
           "best_practices_score":"0.75",
           "seo_score":"0.82"
+        }
+      ]
+    },
+    {
+      "canonical_domain":"kuria-birosag.hu",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://kuria-birosag.hu/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"naih.hu",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://naih.hu/",
+          "is_root_page":true
         }
       ]
     }

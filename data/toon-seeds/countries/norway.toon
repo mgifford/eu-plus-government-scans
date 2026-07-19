@@ -1,8 +1,8 @@
 {
   "version":"0.1-seed",
   "country":"Norway",
-  "domain_count":125,
-  "page_count":239,
+  "domain_count":135,
+  "page_count":249,
   "domains":[
     {
       "canonical_domain":"a3.kystverket.no",
@@ -3537,6 +3537,116 @@
           "accessibility_score":"1",
           "best_practices_score":"0.79",
           "seo_score":"1"
+        }
+      ]
+    },
+    {
+      "canonical_domain":"datatilsynet.no",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://datatilsynet.no/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"domstol.no",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://domstol.no/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"pst.no",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://pst.no/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"riksmekleren.no",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://riksmekleren.no/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"patentstyret.no",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://patentstyret.no/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"koro.no",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://koro.no/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"generaladvokaten.no",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"http://generaladvokaten.no/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"riksadvokaten.no",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://riksadvokaten.no/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"tilsynet.no",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://tilsynet.no/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"advnemnda.no",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://advnemnda.no/",
+          "is_root_page":true
         }
       ]
     }

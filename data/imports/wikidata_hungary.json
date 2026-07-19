@@ -70,14 +70,14 @@
       "website": "https://kuria-birosag.hu/hu/splashify-splash",
       "dissolved": null,
       "hostname": "kuria-birosag.hu",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Hungarian National Authority for Data Protection and Freedom of Information",
       "website": "http://www.naih.hu/",
       "dissolved": null,
       "hostname": "naih.hu",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Cabinet Office of the Prime Minister",

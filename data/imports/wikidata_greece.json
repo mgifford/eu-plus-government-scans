@@ -77,7 +77,7 @@
       "website": "http://www.ypakp.gr/",
       "dissolved": null,
       "hostname": "ypakp.gr",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Macedonia and Thrace",
@@ -147,7 +147,7 @@
       "website": "https://www.dpa.gr/",
       "dissolved": null,
       "hostname": "dpa.gr",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Citizen Protection (Greece)",
@@ -196,7 +196,7 @@
       "website": "https://exteriors.gencat.cat/ca/ambits-dactuacio/afers_exteriors/delegacions_govern/sud-est-europa/index.html",
       "dissolved": null,
       "hostname": "exteriors.gencat.cat",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Justice (Greece)",
@@ -252,7 +252,7 @@
       "website": "http://www.minfin.gr/",
       "dissolved": "2023-07-31T00:00:00Z",
       "hostname": "minfin.gr",
-      "already_seeded": false
+      "already_seeded": true
     }
   ],
   "regional": {},

@@ -1,8 +1,8 @@
 {
   "version":"0.1-seed",
   "country":"Estonia",
-  "domain_count":168,
-  "page_count":396,
+  "domain_count":173,
+  "page_count":401,
   "domains":[
     {
       "canonical_domain":"aastaraamat.prokuratuur.ee",
@@ -5349,6 +5349,61 @@
           "accessibility_score":"0.95",
           "best_practices_score":"0.74",
           "seo_score":"1"
+        }
+      ]
+    },
+    {
+      "canonical_domain":"justdigi.ee",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://justdigi.ee/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"fi.ee",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://fi.ee/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"epa.ee",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://epa.ee/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"envir.ee",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://envir.ee/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"aki.ee",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://aki.ee/",
+          "is_root_page":true
         }
       ]
     }

@@ -7,7 +7,7 @@
       "website": "http://www.supremecourt.ie/",
       "dissolved": null,
       "hostname": "supremecourt.ie",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Special Criminal Court",
@@ -35,7 +35,7 @@
       "website": "https://www.ireland.ie/en/dfa/",
       "dissolved": null,
       "hostname": "ireland.ie",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Department of Foreign Affairs of Ireland",
@@ -56,14 +56,14 @@
       "website": "https://www.garda.ie/",
       "dissolved": null,
       "hostname": "garda.ie",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Health Products Regulatory Authority",
       "website": "https://www.hpra.ie/",
       "dissolved": null,
       "hostname": "hpra.ie",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Central Statistics Office",
@@ -77,7 +77,7 @@
       "website": "https://www.sfi.ie/",
       "dissolved": "2024-01-01T00:00:00Z",
       "hostname": "sfi.ie",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Department of Transport of Ireland",
@@ -91,7 +91,7 @@
       "website": "https://www.nama.ie",
       "dissolved": null,
       "hostname": "nama.ie",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Department of Public Expenditure, National Development Plan Delivery and Reform",
@@ -182,14 +182,14 @@
       "website": "http://www.failteireland.ie/",
       "dissolved": null,
       "hostname": "failteireland.ie",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Garda Technical Bureau",
       "website": "http://garda.ie/Controller.aspx?Page=32&Lang=1",
       "dissolved": null,
       "hostname": "garda.ie",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Irish Medical Council",
@@ -203,35 +203,35 @@
       "website": "http://garda.ie/Controller.aspx?Page=32&Lang=1",
       "dissolved": null,
       "hostname": "garda.ie",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Special Detective Unit",
       "website": "http://www.garda.ie/Controller.aspx?Page=40&Lang=1",
       "dissolved": null,
       "hostname": "garda.ie",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Garda National Economic Crime Bureau",
       "website": "https://www.garda.ie/en/about-us/organised-serious-crime/garda-national-economic-crime-bureau/",
       "dissolved": null,
       "hostname": "garda.ie",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "SOLAS",
       "website": "https://www.solas.ie/",
       "dissolved": null,
       "hostname": "solas.ie",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Electoral Commission",
       "website": "https://www.electoralcommission.ie/",
       "dissolved": null,
       "hostname": "electoralcommission.ie",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Data Protection Commission",
@@ -259,42 +259,42 @@
       "website": "https://www.garda.ie/ga/fuinn/coireacht-eagraithe-agus-tromchoireacht/cibearchoireachta/",
       "dissolved": null,
       "hostname": "garda.ie",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Garda National Cyber Crime Bureau",
       "website": "https://www.garda.ie/en/about-us/organised-serious-crime/garda-national-cyber-crime-bureau-gnccb-/",
       "dissolved": null,
       "hostname": "garda.ie",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Decision Support Service",
       "website": "https://decisionsupportservice.ie/",
       "dissolved": null,
       "hostname": "decisionsupportservice.ie",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Property Services Regulatory Authority",
       "website": "https://www.psr.ie/",
       "dissolved": null,
       "hostname": "psr.ie",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Financial Services and Pensions Ombudsman",
       "website": "https://www.fspo.ie/",
       "dissolved": null,
       "hostname": "fspo.ie",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "CORU",
       "website": "https://www.coru.ie/",
       "dissolved": null,
       "hostname": "coru.ie",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Teaching Council",
@@ -322,7 +322,7 @@
       "website": "https://www.labourcourt.ie/",
       "dissolved": null,
       "hostname": "labourcourt.ie",
-      "already_seeded": false
+      "already_seeded": true
     }
   ],
   "regional": {},

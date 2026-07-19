@@ -28,140 +28,140 @@
       "website": "https://www.usoud.cz/",
       "dissolved": null,
       "hostname": "usoud.cz",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Health of the Czech Republic",
       "website": "https://mzd.gov.cz/",
       "dissolved": null,
       "hostname": "mzd.gov.cz",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Justice of the Czech Republic",
       "website": "https://msp.gov.cz",
       "dissolved": null,
       "hostname": "msp.gov.cz",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Czech Statistical Office",
       "website": "https://csu.gov.cz/",
       "dissolved": null,
       "hostname": "csu.gov.cz",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Defence",
       "website": "https://mocr.mo.gov.cz",
       "dissolved": null,
       "hostname": "mocr.mo.gov.cz",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Government of the Czech Republic",
       "website": "https://vlada.gov.cz/",
       "dissolved": null,
       "hostname": "vlada.gov.cz",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Culture of the Czech Republic",
       "website": "https://mk.gov.cz",
       "dissolved": null,
       "hostname": "mk.gov.cz",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Finance of the Czech Republic",
       "website": "https://mf.gov.cz",
       "dissolved": null,
       "hostname": "mf.gov.cz",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Foreign Affairs",
       "website": "https://mzv.gov.cz",
       "dissolved": null,
       "hostname": "mzv.gov.cz",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Supreme Administrative Court of the Czech Republic",
       "website": "https://www.nssoud.cz/",
       "dissolved": null,
       "hostname": "nssoud.cz",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Supreme Court of the Czech Republic",
       "website": "https://www.nsoud.cz/",
       "dissolved": null,
       "hostname": "nsoud.cz",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Office for Personal Data Protection",
       "website": "https://uoou.gov.cz/",
       "dissolved": null,
       "hostname": "uoou.gov.cz",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Labour and Social Affairs",
       "website": "https://mpsv.gov.cz",
       "dissolved": null,
       "hostname": "mpsv.gov.cz",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Agriculture of Czech Republic",
       "website": "https://mze.gov.cz",
       "dissolved": null,
       "hostname": "mze.gov.cz",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of the Interior",
       "website": "https://mv.gov.cz",
       "dissolved": null,
       "hostname": "mv.gov.cz",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Education, Youth and Sports",
       "website": "https://msmt.gov.cz",
       "dissolved": null,
       "hostname": "msmt.gov.cz",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Transport of the Czech Republic",
       "website": "https://md.gov.cz",
       "dissolved": null,
       "hostname": "md.gov.cz",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Energy Regulatory Office",
       "website": "https://eru.gov.cz",
       "dissolved": null,
       "hostname": "eru.gov.cz",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "The Inspectorate General of the Security Forces of the Czech Republic",
       "website": "https://gibs.gov.cz",
       "dissolved": null,
       "hostname": "gibs.gov.cz",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Czech Science Foundation",
       "website": "https://gacr.cz",
       "dissolved": null,
       "hostname": "gacr.cz",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Informatics of the Czech Republic",
@@ -175,21 +175,21 @@
       "website": "https://mmr.gov.cz",
       "dissolved": null,
       "hostname": "mmr.gov.cz",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Industry and Trade",
       "website": "https://mpo.gov.cz/",
       "dissolved": null,
       "hostname": "mpo.gov.cz",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of the Environment of the Czech Republic",
       "website": "https://mzp.gov.cz",
       "dissolved": null,
       "hostname": "mzp.gov.cz",
-      "already_seeded": false
+      "already_seeded": true
     }
   ],
   "regional": {},

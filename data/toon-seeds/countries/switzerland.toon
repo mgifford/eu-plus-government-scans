@@ -1,8 +1,8 @@
 {
   "version":"0.1-seed",
   "country":"Switzerland",
-  "domain_count":941,
-  "page_count":2117,
+  "domain_count":947,
+  "page_count":2123,
   "domains":[
     {
       "canonical_domain":"abstimmungen.admin.ch",
@@ -29160,6 +29160,72 @@
           "accessibility_score":"0.93",
           "best_practices_score":"1",
           "seo_score":"1"
+        }
+      ]
+    },
+    {
+      "canonical_domain":"bstger.ch",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://bstger.ch/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"bger.ch",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://bger.ch/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"finma.ch",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://finma.ch/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"pfpdt.ch",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://pfpdt.ch/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"ifpdt.ch",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://ifpdt.ch/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"exteriors.gencat.cat",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://exteriors.gencat.cat/",
+          "is_root_page":true
         }
       ]
     }

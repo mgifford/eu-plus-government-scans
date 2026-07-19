@@ -1,8 +1,8 @@
 {
   "version":"0.1-seed",
   "country":"Slovakia",
-  "domain_count":184,
-  "page_count":434,
+  "domain_count":192,
+  "page_count":442,
   "domains":[
     {
       "canonical_domain":"amfik.trnava.sk",
@@ -5859,6 +5859,94 @@
           "accessibility_score":"0.76",
           "best_practices_score":"0.96",
           "seo_score":"0.91"
+        }
+      ]
+    },
+    {
+      "canonical_domain":"nbs.sk",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://nbs.sk/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"ustavnysud.sk",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://ustavnysud.sk/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"mindop.sk",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"http://mindop.sk/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"mpsr.sk",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://mpsr.sk/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"minzp.sk",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://minzp.sk/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"slovak.statistics.sk",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://slovak.statistics.sk/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"mfsr.sk",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://mfsr.sk/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"mincrs.sk",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://mincrs.sk/",
+          "is_root_page":true
         }
       ]
     }

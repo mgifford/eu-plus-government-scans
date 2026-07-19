@@ -49,7 +49,7 @@
       "website": "http://www.bstger.ch/",
       "dissolved": null,
       "hostname": "bstger.ch",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Federal Department of Finance",
@@ -91,7 +91,7 @@
       "website": "https://www.bger.ch/",
       "dissolved": null,
       "hostname": "bger.ch",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Federal Department of Justice and Police",
@@ -112,14 +112,14 @@
       "website": "https://www.finma.ch/de/finma-public/bewilligte-institute-personen-und-produkte/",
       "dissolved": null,
       "hostname": "finma.ch",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Financial Market Supervisory Authority",
       "website": "http://www.finma.ch",
       "dissolved": null,
       "hostname": "finma.ch",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Federal Department of Home Affairs",
@@ -133,14 +133,14 @@
       "website": "http://www.pfpdt.ch",
       "dissolved": null,
       "hostname": "pfpdt.ch",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Federal Data Protection and Information Commissioner",
       "website": "http://www.ifpdt.ch",
       "dissolved": null,
       "hostname": "ifpdt.ch",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Federal Data Protection and Information Commissioner",
@@ -175,7 +175,7 @@
       "website": "http://exteriors.gencat.cat/ca/ambits-dactuacio/afers_exteriors/delegacions_govern/suissa/",
       "dissolved": null,
       "hostname": "exteriors.gencat.cat",
-      "already_seeded": false
+      "already_seeded": true
     }
   ],
   "regional": {},

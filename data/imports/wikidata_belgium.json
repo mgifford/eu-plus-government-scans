@@ -21,7 +21,7 @@
       "website": "https://www.ibz.be/",
       "dissolved": null,
       "hostname": "ibz.be",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Federal Government of Belgium",
@@ -42,35 +42,35 @@
       "website": "https://www.ngi.be/",
       "dissolved": null,
       "hostname": "ngi.be",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Belgian Court of Cassation",
       "website": "https://cass.be/",
       "dissolved": null,
       "hostname": "cass.be",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Chamber of Representatives",
       "website": "https://www.lachambre.be/",
       "dissolved": null,
       "hostname": "lachambre.be",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Chamber of Representatives",
       "website": "https://www.dekamer.be/",
       "dissolved": null,
       "hostname": "dekamer.be",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Senate of Belgium",
       "website": "https://www.senate.be/",
       "dissolved": null,
       "hostname": "senate.be",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Federal Public Service Justice",
@@ -105,7 +105,7 @@
       "website": "https://www.const-court.be/",
       "dissolved": null,
       "hostname": "const-court.be",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Council of State",
@@ -119,35 +119,35 @@
       "website": "https://www.skeyes.be",
       "dissolved": null,
       "hostname": "skeyes.be",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Belgian Civil Protection",
       "website": "http://www.securitecivile.be/",
       "dissolved": null,
       "hostname": "securitecivile.be",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "ONDRAF",
       "website": "https://www.ondraf.be/",
       "dissolved": null,
       "hostname": "ondraf.be",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "ONDRAF",
       "website": "https://www.niras.be/",
       "dissolved": null,
       "hostname": "niras.be",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Belgian Institute for Postal services and Telecommunications",
       "website": "https://www.bipt.be/",
       "dissolved": null,
       "hostname": "bipt.be",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Defence",
@@ -182,70 +182,70 @@
       "website": "https://www.om-mp.be/nl/uw-om/federaal-parket/contact",
       "dissolved": null,
       "hostname": "om-mp.be",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Federal Prosecutor's Office",
       "website": "https://www.om-mp.be/fr/votre-mp/parquet-federal/contact",
       "dissolved": null,
       "hostname": "om-mp.be",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Council for Alien Disputes",
       "website": "https://www.rvv-cce.be/",
       "dissolved": null,
       "hostname": "rvv-cce.be",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of the German-speaking Community",
       "website": "http://www.dglive.be/",
       "dissolved": null,
       "hostname": "dglive.be",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Belgian Court of Arbitration for Sport",
       "website": "http://www.bas-cbas.be/",
       "dissolved": null,
       "hostname": "bas-cbas.be",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Labor Auditor",
       "website": "https://www.om-mp.be/fr/votre-mp/auditorats-travail",
       "dissolved": null,
       "hostname": "om-mp.be",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Labor Auditor",
       "website": "https://www.om-mp.be/nl/uw-om/arbeidsauditoraten",
       "dissolved": null,
       "hostname": "om-mp.be",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Data Protection Authority",
       "website": "https://www.gegevensbeschermingsautoriteit.be/",
       "dissolved": null,
       "hostname": "gegevensbeschermingsautoriteit.be",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Data Protection Authority",
       "website": "https://www.dataprotectionauthority.be/",
       "dissolved": null,
       "hostname": "dataprotectionauthority.be",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Data Protection Authority",
       "website": "https://www.autoriteprotectiondonnees.be/",
       "dissolved": null,
       "hostname": "autoriteprotectiondonnees.be",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Belgian Office for Intellectual Property",
@@ -266,7 +266,7 @@
       "website": "https://inspfin.be",
       "dissolved": null,
       "hostname": "inspfin.be",
-      "already_seeded": false
+      "already_seeded": true
     }
   ],
   "regional": {},

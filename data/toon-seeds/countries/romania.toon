@@ -1,8 +1,8 @@
 {
   "version":"0.1-seed",
   "country":"Romania",
-  "domain_count":349,
-  "page_count":799,
+  "domain_count":357,
+  "page_count":807,
   "domains":[
     {
       "canonical_domain":"ab.politiaromana.ro",
@@ -10907,6 +10907,94 @@
           "accessibility_score":"0.68",
           "best_practices_score":"0.7",
           "seo_score":"0.83"
+        }
+      ]
+    },
+    {
+      "canonical_domain":"mmediu.ro",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://mmediu.ro/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"mai.gov.ro",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://mai.gov.ro/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"edu.ro",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://edu.ro/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"mfinante.gov.ro",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://mfinante.gov.ro/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"asfromania.ro",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://asfromania.ro/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"dataprotection.ro",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://dataprotection.ro/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"onpcsb.ro",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://onpcsb.ro/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"exteriors.gencat.cat",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://exteriors.gencat.cat/",
+          "is_root_page":true
         }
       ]
     }

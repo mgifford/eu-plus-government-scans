@@ -1,8 +1,8 @@
 {
   "version":"0.1-seed",
   "country":"Netherlands",
-  "domain_count":454,
-  "page_count":937,
+  "domain_count":462,
+  "page_count":945,
   "domains":[
     {
       "canonical_domain":"3d.amsterdam.nl",
@@ -13388,6 +13388,94 @@
           "accessibility_score":"0.93",
           "best_practices_score":"0.75",
           "seo_score":"1"
+        }
+      ]
+    },
+    {
+      "canonical_domain":"government.nl",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://government.nl/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"hofvandiscipline.nl",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://hofvandiscipline.nl/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"prosecutionservice.nl",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://prosecutionservice.nl/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"om.nl",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://om.nl/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"tuchtcollege-gezondheidszorg.nl",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://tuchtcollege-gezondheidszorg.nl/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"afm.nl",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://afm.nl/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"accountantskamer.nl",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://accountantskamer.nl/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"kadaster.nl",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://kadaster.nl/",
+          "is_root_page":true
         }
       ]
     }

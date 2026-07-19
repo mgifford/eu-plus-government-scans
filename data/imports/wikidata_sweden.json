@@ -7,112 +7,112 @@
       "website": "https://www.lansstyrelsen.se/vastmanland",
       "dissolved": null,
       "hostname": "lansstyrelsen.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "The National Agency for Public Procurement",
       "website": "https://www.upphandlingsmyndigheten.se",
       "dissolved": null,
       "hostname": "upphandlingsmyndigheten.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Blekinge County Administrative Board",
       "website": "https://www.lansstyrelsen.se/blekinge",
       "dissolved": null,
       "hostname": "lansstyrelsen.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Dalarna County Administrative Board",
       "website": "https://www.lansstyrelsen.se/dalarna",
       "dissolved": null,
       "hostname": "lansstyrelsen.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Gotland County Administrative Board",
       "website": "https://www.lansstyrelsen.se/gotland",
       "dissolved": null,
       "hostname": "lansstyrelsen.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Halland County Administrative Board",
       "website": "https://www.lansstyrelsen.se/halland",
       "dissolved": null,
       "hostname": "lansstyrelsen.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Jämtland County Administrative Board",
       "website": "https://www.lansstyrelsen.se/jamtland",
       "dissolved": null,
       "hostname": "lansstyrelsen.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Jönköping County Administrative Board",
       "website": "https://www.lansstyrelsen.se/jonkoping",
       "dissolved": null,
       "hostname": "lansstyrelsen.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Kronoberg County Administrative Board",
       "website": "https://www.lansstyrelsen.se/kronoberg",
       "dissolved": null,
       "hostname": "lansstyrelsen.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Södermanland County Administrative Board",
       "website": "https://www.lansstyrelsen.se/sodermanland",
       "dissolved": null,
       "hostname": "lansstyrelsen.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Värmland County Administrative Board",
       "website": "https://www.lansstyrelsen.se/varmland",
       "dissolved": null,
       "hostname": "lansstyrelsen.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Västerbotten County Administrative Board",
       "website": "https://www.lansstyrelsen.se/vasterbotten",
       "dissolved": null,
       "hostname": "lansstyrelsen.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Örebro County Administrative Board",
       "website": "https://www.lansstyrelsen.se/orebro",
       "dissolved": null,
       "hostname": "lansstyrelsen.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Research Council for Health Working Life and Welfare",
       "website": "http://www.forte.se/en/",
       "dissolved": null,
       "hostname": "forte.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Research Council for Health Working Life and Welfare",
       "website": "http://www.forte.se/",
       "dissolved": null,
       "hostname": "forte.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Institute for Educational Research",
       "website": "https://www.skolfi.se",
       "dissolved": null,
       "hostname": "skolfi.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "The Delegation Against Segregation",
@@ -133,14 +133,14 @@
       "website": "https://www.etikprovning.se",
       "dissolved": null,
       "hostname": "etikprovning.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Gender Equality Agency",
       "website": "https://www.jamstalldhetsmyndigheten.se",
       "dissolved": null,
       "hostname": "jamstalldhetsmyndigheten.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Infrastructure",
@@ -154,21 +154,21 @@
       "website": "https://www.klimatpolitiskaradet.se",
       "dissolved": null,
       "hostname": "klimatpolitiskaradet.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish ILO Committee",
       "website": "https://www.svenskailo-kommitten.se",
       "dissolved": null,
       "hostname": "svenskailo-kommitten.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Agency for Work Environment Expertise",
       "website": "https://www.mynak.se",
       "dissolved": "2025-12-31T00:00:00Z",
       "hostname": "mynak.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Patent Attorneys Board",
@@ -182,7 +182,7 @@
       "website": "https://www.spv.se",
       "dissolved": null,
       "hostname": "spv.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "The Sami Foundation Board",
@@ -196,21 +196,21 @@
       "website": "https://www.svenskafaokommitten.se",
       "dissolved": null,
       "hostname": "svenskafaokommitten.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "The Ethics Review Appeals Board",
       "website": "https://www.onep.se/",
       "dissolved": null,
       "hostname": "onep.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Harpsund Committee",
       "website": "https://www.harpsund.se",
       "dissolved": null,
       "hostname": "harpsund.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "The Swedish National Board for Assessment of Research Misconduct",
@@ -224,7 +224,7 @@
       "website": "https://mrinstitutet.se/",
       "dissolved": null,
       "hostname": "mrinstitutet.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Agency for Defence Analysis",
@@ -245,35 +245,35 @@
       "website": "https://www.uu.se",
       "dissolved": null,
       "hostname": "uu.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Radiation Safety Authority",
       "website": "http://www.stralsakerhetsmyndigheten.se",
       "dissolved": null,
       "hostname": "stralsakerhetsmyndigheten.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Lund University",
       "website": "https://www.lu.se",
       "dissolved": null,
       "hostname": "lu.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Karolinska Institutet",
       "website": "https://ki.se",
       "dissolved": null,
       "hostname": "ki.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Stockholm University",
       "website": "https://su.se",
       "dissolved": null,
       "hostname": "su.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Parliament of Sweden",
@@ -287,63 +287,63 @@
       "website": "https://www.gu.se/en",
       "dissolved": null,
       "hostname": "gu.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "University of Gothenburg",
       "website": "https://www.gu.se",
       "dissolved": null,
       "hostname": "gu.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Nordic Africa Institute",
       "website": "http://www.nai.uu.se",
       "dissolved": null,
       "hostname": "nai.uu.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Geological Survey of Sweden",
       "website": "https://www.sgu.se/en/",
       "dissolved": null,
       "hostname": "sgu.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Geological Survey of Sweden",
       "website": "https://www.sgu.se",
       "dissolved": null,
       "hostname": "sgu.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Kristianstad University",
       "website": "https://www.hkr.se/",
       "dissolved": null,
       "hostname": "hkr.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Halmstad University College",
       "website": "http://www.hh.se/",
       "dissolved": null,
       "hostname": "hh.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Dalarna University",
       "website": "http://www.du.se/",
       "dissolved": null,
       "hostname": "du.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish National Heritage Board",
       "website": "http://www.raa.se",
       "dissolved": null,
       "hostname": "raa.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Supreme Court of Sweden",
@@ -357,7 +357,7 @@
       "website": "http://www.hogstaforvaltningsdomstolen.se",
       "dissolved": null,
       "hostname": "hogstaforvaltningsdomstolen.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry for Foreign Affairs of Sweden",
@@ -371,7 +371,7 @@
       "website": "https://liu.se",
       "dissolved": null,
       "hostname": "liu.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Armed Forces",
@@ -392,7 +392,7 @@
       "website": "http://www.nationalmuseum.se",
       "dissolved": null,
       "hostname": "nationalmuseum.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Lantmäteriet",
@@ -406,14 +406,14 @@
       "website": "https://www.kth.se/en",
       "dissolved": null,
       "hostname": "kth.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Royal Institute of Technology",
       "website": "https://www.kth.se",
       "dissolved": null,
       "hostname": "kth.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Companies Registration Office",
@@ -434,42 +434,42 @@
       "website": "http://www.sfv.se",
       "dissolved": null,
       "hostname": "sfv.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "National Library of Sweden",
       "website": "http://www.kb.se",
       "dissolved": null,
       "hostname": "kb.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Malmö University",
       "website": "https://www.mau.se",
       "dissolved": null,
       "hostname": "mau.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Umeå University",
       "website": "https://www.umu.se/en/",
       "dissolved": null,
       "hostname": "umu.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Umeå University",
       "website": "https://www.umu.se",
       "dissolved": null,
       "hostname": "umu.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Blekinge Institute of Technology",
       "website": "https://www.bth.se/",
       "dissolved": null,
       "hostname": "bth.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Authority for Privacy Protection",
@@ -490,14 +490,14 @@
       "website": "http://www.modernamuseet.se",
       "dissolved": null,
       "hostname": "modernamuseet.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish University of Agricultural Sciences",
       "website": "https://www.slu.se",
       "dissolved": null,
       "hostname": "slu.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Security Service",
@@ -518,21 +518,21 @@
       "website": "https://www.nrm.se",
       "dissolved": null,
       "hostname": "nrm.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Forum för levande historia",
       "website": "https://www.levandehistoria.se",
       "dissolved": null,
       "hostname": "levandehistoria.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "University of Skövde",
       "website": "https://www.his.se/",
       "dissolved": null,
       "hostname": "his.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Statistics Sweden",
@@ -553,42 +553,42 @@
       "website": "http://www.fra.se",
       "dissolved": null,
       "hostname": "fra.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Mälardalen University",
       "website": "https://www.mdu.se",
       "dissolved": null,
       "hostname": "mdu.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish School of Sport and Health Sciences",
       "website": "http://www.gih.se",
       "dissolved": null,
       "hostname": "gih.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "University of Borås",
       "website": "http://www.hb.se",
       "dissolved": null,
       "hostname": "hb.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish International Development Cooperation Agency",
       "website": "https://www.sida.se/en",
       "dissolved": null,
       "hostname": "sida.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish International Development Cooperation Agency",
       "website": "https://www.sida.se",
       "dissolved": null,
       "hostname": "sida.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Transport Administration",
@@ -616,7 +616,7 @@
       "website": "https://si.se",
       "dissolved": null,
       "hostname": "si.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Finance of Sweden",
@@ -651,7 +651,7 @@
       "website": "http://www.rymdstyrelsen.se",
       "dissolved": null,
       "hostname": "rymdstyrelsen.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Konstfack",
@@ -672,14 +672,14 @@
       "website": "http://www.kmh.se",
       "dissolved": null,
       "hostname": "kmh.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Karlstad University",
       "website": "https://www.kau.se",
       "dissolved": null,
       "hostname": "kau.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Medical Products Agency",
@@ -693,42 +693,42 @@
       "website": "https://www.miun.se/",
       "dissolved": null,
       "hostname": "miun.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Luleå University of Technology",
       "website": "https://www.ltu.se",
       "dissolved": null,
       "hostname": "ltu.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Örebro University",
       "website": "http://www.oru.se/",
       "dissolved": null,
       "hostname": "oru.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "National Agency for Education",
       "website": "http://www.skolverket.se/",
       "dissolved": null,
       "hostname": "skolverket.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "National Historical Museums of Sweden",
       "website": "http://www.shm.se",
       "dissolved": null,
       "hostname": "shm.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Defence Research Agency",
       "website": "https://www.foi.se",
       "dissolved": null,
       "hostname": "foi.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Sami Parliament of Sweden",
@@ -770,7 +770,7 @@
       "website": "https://www.do.se",
       "dissolved": null,
       "hostname": "do.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Election Authority",
@@ -791,7 +791,7 @@
       "website": "https://www.karnavfallsfonden.se",
       "dissolved": null,
       "hostname": "karnavfallsfonden.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Spelinspektionen",
@@ -805,7 +805,7 @@
       "website": "https://www.lansstyrelsen.se/ostergotland",
       "dissolved": null,
       "hostname": "lansstyrelsen.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "National Mediation Office",
@@ -819,21 +819,21 @@
       "website": "https://www.mfof.se",
       "dissolved": null,
       "hostname": "mfof.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Agency for Cultural Policy Analysis",
       "website": "https://www.kulturanalys.se",
       "dissolved": null,
       "hostname": "kulturanalys.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Agency for the Media",
       "website": "https://mediemyndigheten.se/",
       "dissolved": null,
       "hostname": "mediemyndigheten.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Agency for Growth Policy Analysis",
@@ -847,14 +847,14 @@
       "website": "https://www.vardanalys.se",
       "dissolved": null,
       "hostname": "vardanalys.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish National Agency for Higher Vocational Education",
       "website": "https://www.myh.se/",
       "dissolved": null,
       "hostname": "myh.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Law Clerks Board",
@@ -868,14 +868,14 @@
       "website": "https://www.nfh.se",
       "dissolved": null,
       "hostname": "nfh.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Agency for Support to Faith Communities",
       "website": "https://www.myndighetensst.se",
       "dissolved": "2026-01-01T00:00:00Z",
       "hostname": "myndighetensst.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Council for Employee Representation on Boards of Directors",
@@ -903,14 +903,14 @@
       "website": "https://www.polar.se/en/",
       "dissolved": null,
       "hostname": "polar.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Polar Research Secretariat",
       "website": "https://www.polar.se",
       "dissolved": null,
       "hostname": "polar.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Government Offices of Sweden",
@@ -931,14 +931,14 @@
       "website": "https://www.revisorsinspektionen.se",
       "dissolved": null,
       "hostname": "revisorsinspektionen.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "National Legal Aid Authority",
       "website": "http://www.rattshjalp.se/",
       "dissolved": null,
       "hostname": "rattshjalp.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Legal Aid Board",
@@ -959,105 +959,105 @@
       "website": "http://www.esf.se/",
       "dissolved": null,
       "hostname": "esf.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Sami Education Board",
       "website": "https://www.sameskolstyrelsen.se",
       "dissolved": null,
       "hostname": "sameskolstyrelsen.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Skatterättsnämnden",
       "website": "https://www.skatterattsnamnden.se",
       "dissolved": null,
       "hostname": "skatterattsnamnden.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Arbitration Tribunal for Occupational Injury Compensation",
       "website": "https://www.kammarkollegiet.se/om-oss/organisation/stod-till-andra-myndigheter/skiljenamnden-i-vissa-trygghetsfragor",
       "dissolved": null,
       "hostname": "kammarkollegiet.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Forest Agency",
       "website": "http://www.skogsstyrelsen.se",
       "dissolved": null,
       "hostname": "skogsstyrelsen.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "The Board of Appeal for Education",
       "website": "https://www.overklagandenamnden.se",
       "dissolved": null,
       "hostname": "overklagandenamnden.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "The National Agency for Special Needs Education and Schools",
       "website": "https://www.spsm.se",
       "dissolved": null,
       "hostname": "spsm.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "State Accountability Board",
       "website": "http://www.statensansvarsnamnd.se",
       "dissolved": null,
       "hostname": "statensansvarsnamnd.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Agency for Health Technology Assessment and Assessment of Social Services",
       "website": "http://www.sbu.se",
       "dissolved": null,
       "hostname": "sbu.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "National Swedish Museums of Military History",
       "website": "https://www.sfhm.se",
       "dissolved": "2025-12-31T00:00:00Z",
       "hostname": "sfhm.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Geotechnical Institute",
       "website": "http://www.swedgeo.se",
       "dissolved": null,
       "hostname": "swedgeo.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "The Swedish Foreign Intelligence Inspectorate",
       "website": "https://www.siun.se",
       "dissolved": null,
       "hostname": "siun.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "National Board of Institutional Care",
       "website": "https://www.stat-inst.se",
       "dissolved": null,
       "hostname": "stat-inst.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Arts Council",
       "website": "http://www.kulturradet.se",
       "dissolved": null,
       "hostname": "kulturradet.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish National Maritime, Transport and Military Museums",
       "website": "https://www.statensmuseermtf.se",
       "dissolved": null,
       "hostname": "statensmuseermtf.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Media Council",
@@ -1071,14 +1071,14 @@
       "website": "https://www.varldskulturmuseerna.se",
       "dissolved": null,
       "hostname": "varldskulturmuseerna.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "National Collections of Music, Theatre and Dance",
       "website": "https://www.musikverket.se",
       "dissolved": null,
       "hostname": "musikverket.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "National Advisory Board on Patent Rights and Compensation Settlements for Inventions at Work",
@@ -1113,14 +1113,14 @@
       "website": "http://www.spv.se",
       "dissolved": null,
       "hostname": "spv.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "National Veterinary Institute",
       "website": "http://www.sva.se",
       "dissolved": null,
       "hostname": "sva.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Agency for Public Management",
@@ -1134,35 +1134,35 @@
       "website": "https://www.sieps.se",
       "dissolved": null,
       "hostname": "sieps.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Commission on Security and Integrity Protection",
       "website": "https://www.msi.se",
       "dissolved": null,
       "hostname": "msi.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Agency for Accessible Media",
       "website": "http://www.mtm.se",
       "dissolved": null,
       "hostname": "mtm.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Dental and Pharmaceutical Benefits Agency",
       "website": "https://www.tlv.se/in-english.html",
       "dissolved": null,
       "hostname": "tlv.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Dental and Pharmaceutical Benefits Agency",
       "website": "https://www.tlv.se",
       "dissolved": null,
       "hostname": "tlv.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Transport Analysis",
@@ -1183,7 +1183,7 @@
       "website": "http://www.transportstyrelsen.se",
       "dissolved": null,
       "hostname": "transportstyrelsen.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "National Board for Youth Affairs",
@@ -1197,14 +1197,14 @@
       "website": "https://www.uhr.se",
       "dissolved": null,
       "hostname": "uhr.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "The Higher Education Appeals Board",
       "website": "https://www.onh.se",
       "dissolved": null,
       "hostname": "onh.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "The National Board of Appeal for Student Aid",
@@ -1232,14 +1232,14 @@
       "website": "https://www.uka.se",
       "dissolved": null,
       "hostname": "uka.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Stockholm University of the Arts",
       "website": "https://www.uniarts.se/",
       "dissolved": null,
       "hostname": "uniarts.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish eHealth Agency",
@@ -1260,84 +1260,84 @@
       "website": "https://www.han.se",
       "dissolved": null,
       "hostname": "han.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "The Swedish Agency for Participation",
       "website": "http://www.mfd.se/",
       "dissolved": null,
       "hostname": "mfd.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Fiscal Policy Council",
       "website": "https://www.fpr.se",
       "dissolved": null,
       "hostname": "fpr.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Authors’ Fund",
       "website": "https://www.svff.se",
       "dissolved": null,
       "hostname": "svff.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Uppsala County Administrative Board",
       "website": "https://www.lansstyrelsen.se/uppsala/",
       "dissolved": null,
       "hostname": "lansstyrelsen.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Stockholm County Administrative Board",
       "website": "https://www.lansstyrelsen.se/stockholm",
       "dissolved": null,
       "hostname": "lansstyrelsen.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Skåne County Administrative Board",
       "website": "https://www.lansstyrelsen.se/skane",
       "dissolved": null,
       "hostname": "lansstyrelsen.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Gävleborg County Administrative Board",
       "website": "https://www.lansstyrelsen.se/gavleborg",
       "dissolved": null,
       "hostname": "lansstyrelsen.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Kalmar County Administrative Board",
       "website": "https://www.lansstyrelsen.se/kalmar",
       "dissolved": null,
       "hostname": "lansstyrelsen.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Norrbotten County Administrative Board",
       "website": "https://www.lansstyrelsen.se/norrbotten",
       "dissolved": null,
       "hostname": "lansstyrelsen.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Västernorrland County Administrative Board",
       "website": "https://www.lansstyrelsen.se/vasternorrland",
       "dissolved": null,
       "hostname": "lansstyrelsen.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Västra Götaland County Administrative Board",
       "website": "https://www.lansstyrelsen.se/vastragotaland",
       "dissolved": null,
       "hostname": "lansstyrelsen.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Environmental Protection Agency",
@@ -1365,14 +1365,14 @@
       "website": "http://www.sh.se",
       "dissolved": null,
       "hostname": "sh.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Coast Guard",
       "website": "https://www.kustbevakningen.se/",
       "dissolved": null,
       "hostname": "kustbevakningen.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Rural Affairs and Infrastructure of Sweden",
@@ -1386,21 +1386,21 @@
       "website": "http://www.kkh.se",
       "dissolved": null,
       "hostname": "kkh.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Economic Crime Authority",
       "website": "https://www.ekobrottsmyndigheten.se/",
       "dissolved": null,
       "hostname": "ekobrottsmyndigheten.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Accident Investigation Authority",
       "website": "https://shk.se/",
       "dissolved": null,
       "hostname": "shk.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Agency for Economic and Regional Growth",
@@ -1442,35 +1442,35 @@
       "website": "https://www.mcf.se/en/",
       "dissolved": null,
       "hostname": "mcf.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Civil Defence and Resilience Agency",
       "website": "https://www.mcf.se/",
       "dissolved": null,
       "hostname": "mcf.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Public Employment Service",
       "website": "https://www.arbetsformedlingen.se",
       "dissolved": null,
       "hostname": "arbetsformedlingen.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish National Road and Transport Research Institute",
       "website": "https://www.vti.se/en",
       "dissolved": null,
       "hostname": "vti.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish National Road and Transport Research Institute",
       "website": "https://www.vti.se/",
       "dissolved": null,
       "hostname": "vti.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Council on Legislation",
@@ -1498,35 +1498,35 @@
       "website": "https://www.arkdes.se",
       "dissolved": "2026-01-01T00:00:00Z",
       "hostname": "arkdes.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Institute of Space Physics",
       "website": "https://www2.irf.se/",
       "dissolved": null,
       "hostname": "www2.irf.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Institute of Space Physics",
       "website": "https://www.irf.se/sv/",
       "dissolved": null,
       "hostname": "irf.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Institute of Space Physics",
       "website": "https://www.irf.se/en/",
       "dissolved": null,
       "hostname": "irf.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Agency for Non-Proliferation and Export Controls",
       "website": "http://www.isp.se/",
       "dissolved": null,
       "hostname": "isp.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Enforcement Authority",
@@ -1547,14 +1547,14 @@
       "website": "http://www.migrationsverket.se/",
       "dissolved": null,
       "hostname": "migrationsverket.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Estate Agents Inspectorate",
       "website": "https://www.fmi.se",
       "dissolved": null,
       "hostname": "fmi.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Crime Victim Compensation and Support Authority",
@@ -1568,56 +1568,56 @@
       "website": "https://www.fmv.se/english/",
       "dissolved": null,
       "hostname": "fmv.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Defence Materiel Administration",
       "website": "https://www.fmv.se/",
       "dissolved": null,
       "hostname": "fmv.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Financial Supervisory Authority",
       "website": "https://www.fi.se/en/",
       "dissolved": null,
       "hostname": "fi.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Financial Supervisory Authority",
       "website": "https://www.fi.se",
       "dissolved": null,
       "hostname": "fi.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Legal, Financial and Administrative Services Agency",
       "website": "https://www.kammarkollegiet.se/",
       "dissolved": null,
       "hostname": "kammarkollegiet.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "University of Gävle",
       "website": "http://www.hig.se/",
       "dissolved": null,
       "hostname": "hig.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ombudsman for Children in Sweden",
       "website": "https://www.barnombudsmannen.se",
       "dissolved": null,
       "hostname": "barnombudsmannen.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "The National Board for Consumer Disputes",
       "website": "http://www.arn.se/",
       "dissolved": null,
       "hostname": "arn.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "National Board of Health and Welfare",
@@ -1631,35 +1631,35 @@
       "website": "http://www.csn.se",
       "dissolved": null,
       "hostname": "csn.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Export Credits Guarantee Board",
       "website": "https://www.ekn.se/",
       "dissolved": null,
       "hostname": "ekn.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "National Food Agency",
       "website": "https://www.livsmedelsverket.se",
       "dissolved": null,
       "hostname": "livsmedelsverket.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "National Food Agency",
       "website": "http://www.slv.se",
       "dissolved": null,
       "hostname": "slv.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "National Institute of Economic Research",
       "website": "http://www.konj.se",
       "dissolved": null,
       "hostname": "konj.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Prison and Probation Service",
@@ -1680,35 +1680,35 @@
       "website": "https://www.swedac.se",
       "dissolved": null,
       "hostname": "swedac.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Board of Agriculture",
       "website": "http://www.jordbruksverket.se",
       "dissolved": null,
       "hostname": "jordbruksverket.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "National Fortifications Administration",
       "website": "https://www.fortifikationsverket.se",
       "dissolved": null,
       "hostname": "fortifikationsverket.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Institute for Language and Folklore",
       "website": "https://www.sprakochfolkminnen.se",
       "dissolved": null,
       "hostname": "sprakochfolkminnen.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Institute for Language and Folklore",
       "website": "https://www.isof.se/",
       "dissolved": null,
       "hostname": "isof.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "The Swedish Agency for Financial and Public Management",
@@ -1743,28 +1743,28 @@
       "website": "http://www.hv.se",
       "dissolved": null,
       "hostname": "hv.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "National Public Art Council",
       "website": "http://www.statenskonstrad.se/",
       "dissolved": "2026-01-01T00:00:00Z",
       "hostname": "statenskonstrad.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Alcoholic Beverages Product Range Board",
       "website": "https://www.kammarkollegiet.se/om-oss/organisation/stod-till-andra-myndigheter/alkoholsortimentsnamnden",
       "dissolved": null,
       "hostname": "kammarkollegiet.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Agency for Government Employers",
       "website": "http://www.arbetsgivarverket.se",
       "dissolved": null,
       "hostname": "arbetsgivarverket.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Work Environment Authority",
@@ -1778,14 +1778,14 @@
       "website": "https://www.bfn.se",
       "dissolved": null,
       "hostname": "bfn.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish National Council for Crime Prevention",
       "website": "http://www.bra.se/",
       "dissolved": null,
       "hostname": "bra.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish National board on research animal ethics",
@@ -1813,56 +1813,56 @@
       "website": "http://www.elsakerhetsverket.se",
       "dissolved": null,
       "hostname": "elsakerhetsverket.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Energy Agency",
       "website": "http://www.energimyndigheten.se",
       "dissolved": null,
       "hostname": "energimyndigheten.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Energy Markets Inspectorate",
       "website": "https://www.ei.se",
       "dissolved": null,
       "hostname": "ei.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Fideikommissnämnden",
       "website": "https://www.kammarkollegiet.se/namndmyndigheter/fideikommissnamnden",
       "dissolved": null,
       "hostname": "kammarkollegiet.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Folke Bernadotte Academy",
       "website": "https://www.fba.se",
       "dissolved": null,
       "hostname": "fba.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Formas",
       "website": "https://www.formas.se",
       "dissolved": null,
       "hostname": "formas.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "The Taxation of Research Workers Board",
       "website": "https://www.forskarskattenamnden.se",
       "dissolved": null,
       "hostname": "forskarskattenamnden.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Gene Technology Advisory Board",
       "website": "https://www.genteknik.se",
       "dissolved": null,
       "hostname": "genteknik.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Agency for Marine and Water Management",
@@ -1876,21 +1876,21 @@
       "website": "http://www.hsan.se/",
       "dissolved": null,
       "hostname": "hsan.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "The Swedish Unemployment Insurance Inspectorate",
       "website": "https://www.iaf.se",
       "dissolved": null,
       "hostname": "iaf.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Health and Social Care Inspectorate",
       "website": "https://www.ivo.se",
       "dissolved": null,
       "hostname": "ivo.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Swedish Social Insurance Inspectorate",
@@ -1911,14 +1911,14 @@
       "website": "http://www.kemi.se",
       "dissolved": null,
       "hostname": "kemi.se",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "National Board of Trade",
       "website": "https://www.kommerskollegium.se/",
       "dissolved": null,
       "hostname": "kommerskollegium.se",
-      "already_seeded": false
+      "already_seeded": true
     }
   ],
   "regional": {},

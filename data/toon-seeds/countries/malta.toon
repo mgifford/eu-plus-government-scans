@@ -1,8 +1,8 @@
 {
   "version":"0.1-seed",
   "country":"Malta",
-  "domain_count":265,
-  "page_count":608,
+  "domain_count":267,
+  "page_count":610,
   "domains":[
     {
       "canonical_domain":"aacc.gov.mt",
@@ -8310,6 +8310,28 @@
           "accessibility_score":"0.89",
           "best_practices_score":"0.96",
           "seo_score":"0.75"
+        }
+      ]
+    },
+    {
+      "canonical_domain":"mfin.gov.mt",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://mfin.gov.mt/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"idpc.org.mt",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://idpc.org.mt/",
+          "is_root_page":true
         }
       ]
     }

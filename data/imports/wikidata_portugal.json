@@ -14,7 +14,7 @@
       "website": "http://www.gnr.pt/",
       "dissolved": null,
       "hostname": "gnr.pt",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Foreign Affairs of Portugal",
@@ -77,7 +77,7 @@
       "website": "http://www.moptc.pt",
       "dissolved": null,
       "hostname": "moptc.pt",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Agriculture, Rural Development and Fisheries",
@@ -161,7 +161,7 @@
       "website": "https://www.stj.pt/",
       "dissolved": null,
       "hostname": "stj.pt",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Serviço de Estrangeiros e Fronteiras",
@@ -182,7 +182,7 @@
       "website": "http://www.ipq.pt/",
       "dissolved": null,
       "hostname": "ipq.pt",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of the Sea of Portugal",
@@ -196,7 +196,7 @@
       "website": "https://www.nav.pt/",
       "dissolved": null,
       "hostname": "nav.pt",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Environment, Spatial Planning and Energy",

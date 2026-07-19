@@ -28,21 +28,21 @@
       "website": "http://www.abw.gov.pl",
       "dissolved": null,
       "hostname": "abw.gov.pl",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Supreme Court of Poland",
       "website": "http://www.sn.pl",
       "dissolved": null,
       "hostname": "sn.pl",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Agencja Wywiadu",
       "website": "https://aw.gov.pl/en",
       "dissolved": null,
       "hostname": "aw.gov.pl",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of State Treasury",
@@ -56,14 +56,14 @@
       "website": "https://stat.gov.pl/en",
       "dissolved": null,
       "hostname": "stat.gov.pl",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Statistics Poland",
       "website": "https://stat.gov.pl",
       "dissolved": null,
       "hostname": "stat.gov.pl",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of National Defence of Poland",
@@ -147,7 +147,7 @@
       "website": "http://www.mg.gov.pl/",
       "dissolved": "2003-01-08T00:00:00Z",
       "hostname": "mg.gov.pl",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Justice",
@@ -189,7 +189,7 @@
       "website": "https://uprp.gov.pl/pl",
       "dissolved": null,
       "hostname": "uprp.gov.pl",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Inspector General for the Protection of Personal Data",
@@ -210,14 +210,14 @@
       "website": "http://www.uzp.gov.pl",
       "dissolved": null,
       "hostname": "uzp.gov.pl",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "National Water Management Authority",
       "website": "http://www.kzgw.gov.pl/",
       "dissolved": null,
       "hostname": "kzgw.gov.pl",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Transportation (Poland)",
@@ -252,7 +252,7 @@
       "website": "http://pkw.gov.pl/",
       "dissolved": null,
       "hostname": "pkw.gov.pl",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Infrastructure and Development",
@@ -287,7 +287,7 @@
       "website": "http://www.mr.gov.pl/",
       "dissolved": "2020-10-07T00:00:00Z",
       "hostname": "mr.gov.pl",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Infrastructure and Construction",
@@ -315,14 +315,14 @@
       "website": "http://www.mpit.gov.pl/",
       "dissolved": null,
       "hostname": "mpit.gov.pl",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Personal Data Protection Office",
       "website": "https://uodo.gov.pl/",
       "dissolved": null,
       "hostname": "uodo.gov.pl",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Climate",
@@ -336,7 +336,7 @@
       "website": "https://abm.gov.pl",
       "dissolved": null,
       "hostname": "abm.gov.pl",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of State Assets",

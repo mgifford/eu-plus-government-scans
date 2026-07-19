@@ -28,7 +28,7 @@
       "website": "http://mfin.gov.mt/en/Pages/default.aspx",
       "dissolved": null,
       "hostname": "mfin.gov.mt",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry for Health",
@@ -70,7 +70,7 @@
       "website": "https://idpc.org.mt",
       "dissolved": null,
       "hostname": "idpc.org.mt",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry for Gozo",

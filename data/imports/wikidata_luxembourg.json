@@ -7,14 +7,14 @@
       "website": "http://www.conseil-etat.public.lu/",
       "dissolved": null,
       "hostname": "conseil-etat.public.lu",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Chamber of Deputies",
       "website": "https://www.chd.lu/",
       "dissolved": null,
       "hostname": "chd.lu",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "National Commission for Data Protection",

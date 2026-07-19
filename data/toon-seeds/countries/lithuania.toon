@@ -1,8 +1,8 @@
 {
   "version":"0.1-seed",
   "country":"Lithuania",
-  "domain_count":64,
-  "page_count":120,
+  "domain_count":66,
+  "page_count":122,
   "domains":[
     {
       "canonical_domain":"1863.siauliai.lt",
@@ -1793,6 +1793,28 @@
           "accessibility_score":"0.97",
           "best_practices_score":"1",
           "seo_score":"0.92"
+        }
+      ]
+    },
+    {
+      "canonical_domain":"lnb.lt",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://lnb.lt/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"investlithuania.com",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://investlithuania.com/",
+          "is_root_page":true
         }
       ]
     }

@@ -21,14 +21,14 @@
       "website": "https://www.bmbfsfj.bund.de/bmbfsfj/meta/en",
       "dissolved": null,
       "hostname": "bmbfsfj.bund.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Federal Ministry for Education, Family Affairs, Senior Citizens, Women and Youth",
       "website": "https://www.bmbfsfj.bund.de/",
       "dissolved": null,
       "hostname": "bmbfsfj.bund.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Federal Labour Court of Germany",
@@ -42,7 +42,7 @@
       "website": "https://www.auslandsschulwesen.de/",
       "dissolved": null,
       "hostname": "auslandsschulwesen.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Federal Office for Information Security",
@@ -119,21 +119,21 @@
       "website": "https://www.bundespatentgericht.de/DE/Home/home_node.html",
       "dissolved": null,
       "hostname": "bundespatentgericht.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "German Federal Bureau of Aircraft Accidents Investigation",
       "website": "https://www.bfu-web.de/",
       "dissolved": null,
       "hostname": "bfu-web.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Federal Chancellery of Germany",
       "website": "http://www.bundeskanzleramt.de/",
       "dissolved": null,
       "hostname": "bundeskanzleramt.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Bundespräsidialamt",
@@ -154,14 +154,14 @@
       "website": "https://www.bundeswirtschaftsministerium.de/",
       "dissolved": null,
       "hostname": "bundeswirtschaftsministerium.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Federal Ministry of Health of Germany",
       "website": "https://www.bundesgesundheitsministerium.de/",
       "dissolved": null,
       "hostname": "bundesgesundheitsministerium.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Federal Ministry of Labour and Social Affairs of Germany",
@@ -175,28 +175,28 @@
       "website": "https://www.bmv.de/",
       "dissolved": null,
       "hostname": "bmv.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Federal Ministry of Research, Technology and Space",
       "website": "https://www.bmftr.bund.de/EN",
       "dissolved": null,
       "hostname": "bmftr.bund.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Federal Ministry of Research, Technology and Space",
       "website": "https://www.bmftr.bund.de/",
       "dissolved": null,
       "hostname": "bmftr.bund.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Federal Ministry for the Environment, Climate Protection, Nature Conservation and Nuclear Safety",
       "website": "https://www.bundesumweltministerium.de/",
       "dissolved": null,
       "hostname": "bundesumweltministerium.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Federal Ministry of Defence of Germany",
@@ -217,21 +217,21 @@
       "website": "https://www.bmjv.de/EN",
       "dissolved": null,
       "hostname": "bmjv.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Federal Ministry of Justice and Consumer Protection",
       "website": "https://www.bmjv.de/",
       "dissolved": null,
       "hostname": "bmjv.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Federal Ministry of Finance",
       "website": "https://www.bundesfinanzministerium.de",
       "dissolved": null,
       "hostname": "bundesfinanzministerium.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Federal Ministry of the Interior",
@@ -245,14 +245,14 @@
       "website": "https://www.bpb.de/",
       "dissolved": null,
       "hostname": "bpb.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Stasi Records Agency",
       "website": "https://www.bstu.de/",
       "dissolved": "2021-06-17T00:00:00Z",
       "hostname": "bstu.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Federal Social Court",
@@ -273,21 +273,21 @@
       "website": "https://www.bmz.de",
       "dissolved": null,
       "hostname": "bmz.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "German Federal Archives",
       "website": "https://www.bundesarchiv.de/EN/Navigation/Home/home.html",
       "dissolved": null,
       "hostname": "bundesarchiv.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "German Federal Archives",
       "website": "https://www.bundesarchiv.de/DE/Navigation/Home/home.html",
       "dissolved": null,
       "hostname": "bundesarchiv.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Federal Court of Justice of Germany",
@@ -343,7 +343,7 @@
       "website": "https://www.bundesrechnungshof.de/",
       "dissolved": null,
       "hostname": "bundesrechnungshof.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Federal Foreign Office",
@@ -378,14 +378,14 @@
       "website": "https://www.g-ba.de/english/",
       "dissolved": null,
       "hostname": "g-ba.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Federal Joint Committee",
       "website": "https://www.g-ba.de/",
       "dissolved": null,
       "hostname": "g-ba.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Luftfahrt-Bundesamt",
@@ -434,14 +434,14 @@
       "website": "https://www.kosit.de",
       "dissolved": null,
       "hostname": "kosit.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Bundesbau Baden-Württemberg",
       "website": "https://bundesbau-bw.de/",
       "dissolved": null,
       "hostname": "bundesbau-bw.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "German Federal Art Administration (Kunstverwaltung des Bundes)",
@@ -462,14 +462,14 @@
       "website": "https://md-bund.de/",
       "dissolved": null,
       "hostname": "md-bund.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Medizinischer Dienst",
       "website": "https://www.medizinischerdienst.de/",
       "dissolved": null,
       "hostname": "medizinischerdienst.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Bundesinstitut für Bau-, Stadt- und Raumforschung",
@@ -483,14 +483,14 @@
       "website": "https://www.apasbafa.bund.de/",
       "dissolved": null,
       "hostname": "apasbafa.bund.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Joint gambling authority of the federal states of Germany",
       "website": "https://www.gluecksspiel-behoerde.de/",
       "dissolved": null,
       "hostname": "gluecksspiel-behoerde.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Merz cabinet",
@@ -518,7 +518,7 @@
       "website": "https://www.bmleh.de/",
       "dissolved": null,
       "hostname": "bmleh.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Federal Fiscal Court",
@@ -560,14 +560,14 @@
       "website": "https://www.kulturstaatsministerin.de/",
       "dissolved": null,
       "hostname": "kulturstaatsministerin.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Federal Government Commissioner for Culture and Media",
       "website": "http://www.kulturstaatsminister.de/",
       "dissolved": null,
       "hostname": "kulturstaatsminister.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Joint Committee",
@@ -595,14 +595,14 @@
       "website": "https://www.bafza.de/english",
       "dissolved": null,
       "hostname": "bafza.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Federal Office of Family Affairs and Civil Society Functions",
       "website": "https://www.bafza.de/",
       "dissolved": null,
       "hostname": "bafza.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Bundesamt für Infrastruktur, Umweltschutz und Dienstleistungen der Bundeswehr",
@@ -616,7 +616,7 @@
       "website": "https://www.bundesjustizamt.de/",
       "dissolved": null,
       "hostname": "bundesjustizamt.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Federal Agency for Cartography and Geodesy",
@@ -700,14 +700,14 @@
       "website": "http://www.soffin.de",
       "dissolved": null,
       "hostname": "soffin.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Federal Agency for Financial Market Stabilisation",
       "website": "http://www.fmsa.de/",
       "dissolved": null,
       "hostname": "fmsa.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Federal Institute of Hydrology",
@@ -756,14 +756,14 @@
       "website": "http://www.bast.de/",
       "dissolved": null,
       "hostname": "bast.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Federal Waterways Engineering and Research Institute",
       "website": "http://www.baw.de/",
       "dissolved": null,
       "hostname": "baw.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Federal Agency for Public Safety Digital Radio",
@@ -784,14 +784,14 @@
       "website": "https://www.big-direkt.de",
       "dissolved": null,
       "hostname": "big-direkt.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Bundesinstitut für Kultur und Geschichte der Deutschen im östlichen Europa (Germany)",
       "website": "http://www.bkge.de/",
       "dissolved": null,
       "hostname": "bkge.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "German Federal Institute for Risk Assessment",
@@ -805,35 +805,35 @@
       "website": "http://www.bisp.de/",
       "dissolved": null,
       "hostname": "bisp.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Federal Plant Variety Office",
       "website": "http://www.bundessortenamt.de",
       "dissolved": null,
       "hostname": "bundessortenamt.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Bundessprachenamt",
       "website": "http://www.bundessprachenamt.de",
       "dissolved": null,
       "hostname": "bundessprachenamt.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Federal Bureau for Maritime Casualty Investigation",
       "website": "http://www.bsu-bund.de/",
       "dissolved": null,
       "hostname": "bsu-bund.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Bundesamt für Soziale Sicherung",
       "website": "https://www.bundesamtsozialesicherung.de/",
       "dissolved": null,
       "hostname": "bundesamtsozialesicherung.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Bundesverwaltungsamt",
@@ -861,21 +861,21 @@
       "website": "https://www.bzst.de/EN",
       "dissolved": null,
       "hostname": "bzst.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Federal Central Tax Office",
       "website": "https://www.bzst.de/",
       "dissolved": null,
       "hostname": "bzst.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Federal Institute of Public Health",
       "website": "https://www.bioeg.de/",
       "dissolved": null,
       "hostname": "bioeg.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Bundeszollverwaltung",
@@ -889,14 +889,14 @@
       "website": "https://www.deutsche-rentenversicherung.de/Bund/DE/Home/home_node.html",
       "dissolved": null,
       "hostname": "deutsche-rentenversicherung.de",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Federal Authority for Railway Accident Investigation",
       "website": "https://www.eisenbahn-unfalluntersuchung.de/",
       "dissolved": null,
       "hostname": "eisenbahn-unfalluntersuchung.de",
-      "already_seeded": false
+      "already_seeded": true
     }
   ],
   "regional": {},
