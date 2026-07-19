@@ -1,56 +1,29 @@
 {
-  "FINLAND": {
-    "total_urls": 180,
-    "attempted": 180,
-    "successful": 169,
-    "failed": 11,
-    "skipped": 0,
-    "never_scanned": 0,
-    "stale_28d": 0
-  },
-  "DENMARK": {
-    "total_urls": 1521,
-    "attempted": 1521,
-    "successful": 1492,
-    "failed": 29,
-    "skipped": 0,
-    "never_scanned": 0,
-    "stale_28d": 0
-  },
-  "ITALY": {
-    "total_urls": 5338,
-    "attempted": 1602,
-    "successful": 1464,
-    "failed": 138,
-    "skipped": 0,
-    "never_scanned": 3736,
-    "stale_28d": 0
-  },
   "HUNGARY": {
     "total_urls": 390,
-    "attempted": 0,
-    "successful": 0,
-    "failed": 0,
+    "attempted": 390,
+    "successful": 290,
+    "failed": 100,
     "skipped": 0,
-    "never_scanned": 390,
+    "never_scanned": 0,
     "stale_28d": 0
   },
   "IRELAND": {
     "total_urls": 522,
-    "attempted": 0,
-    "successful": 0,
-    "failed": 0,
+    "attempted": 522,
+    "successful": 485,
+    "failed": 37,
     "skipped": 0,
-    "never_scanned": 522,
+    "never_scanned": 0,
     "stale_28d": 0
   },
   "POLAND": {
     "total_urls": 14938,
-    "attempted": 0,
-    "successful": 0,
-    "failed": 0,
+    "attempted": 1884,
+    "successful": 1676,
+    "failed": 208,
     "skipped": 0,
-    "never_scanned": 14938,
+    "never_scanned": 13054,
     "stale_28d": 0
   },
   "ICELAND": {
@@ -262,6 +235,33 @@
     "attempted": 396,
     "successful": 379,
     "failed": 17,
+    "skipped": 0,
+    "never_scanned": 0,
+    "stale_28d": 0
+  },
+  "DENMARK": {
+    "total_urls": 1521,
+    "attempted": 1521,
+    "successful": 1492,
+    "failed": 29,
+    "skipped": 0,
+    "never_scanned": 0,
+    "stale_28d": 0
+  },
+  "ITALY": {
+    "total_urls": 5338,
+    "attempted": 1602,
+    "successful": 1464,
+    "failed": 138,
+    "skipped": 0,
+    "never_scanned": 3736,
+    "stale_28d": 0
+  },
+  "FINLAND": {
+    "total_urls": 180,
+    "attempted": 180,
+    "successful": 169,
+    "failed": 11,
     "skipped": 0,
     "never_scanned": 0,
     "stale_28d": 0
