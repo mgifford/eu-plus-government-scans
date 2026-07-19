@@ -5,36 +5,7 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-07-19 19:00 UTC — last scan: 2026-07-19_
-
-**6** scan batches run
-
-**4,122** of **83,227** available pages scanned (**5.0%** coverage)
-**3,917** of **4,122** scanned pages were reachable (**95.0%**)
-**2,231** of **3,917** reachable pages have an accessibility statement (**57.0%**)
-**2,097** pages have the statement link in the footer (**94.0%** of pages with a statement)
-
-📥 Machine-readable results are available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
-
-Each country entry in the JSON file includes page-level evidence for pages with and without accessibility statements, plus a per-domain summary you can share to validate the published counts.
-
-> Hover or focus any non-zero count in the country table to preview the matching pages. If there are 20 or fewer URLs, the preview shows all of them; otherwise it shows a short sample. Full machine-readable data is available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
-
----
-
-## Accessibility Statement Scan by Country
-
-| Country | Scanned | Available | Reachable | Has Statement | In Footer | Statement % | Scan Period |
-|---------|---------|-----------|-----------|--------------|-----------|------------|-------------|
-| Austria | 821 | 822 | 786 | 555 | 525 | 70.6% | Jul 2026 |
-| Belgium | 539 | 1,329 | 489 | 235 | 216 | 48.1% | Jul 2026 |
-| Bulgaria | 291 | 353 | 259 | 61 | 59 | 23.6% | Jul 2026 |
-| Croatia | 233 | 257 | 231 | 86 | 62 | 37.2% | Jul 2026 |
-| Czechia | 717 | 866 | 660 | 317 | 279 | 48.0% | Jul 2026 |
-| Denmark | 1,521 | 1,536 | 1,492 | 977 | 956 | 65.5% | Jul 2026 |
-| **Total** | **4,122** | **83,227** | **3,917** | **2,231** | **2,097** | **57.0%** | — |
-
-> **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
+_No scan data yet — stats update automatically after every scan run._
 
 <!-- ACCESSIBILITY_STATS_END -->
 
