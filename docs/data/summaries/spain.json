@@ -1,801 +1,418 @@
 {
-  "country": "Spain",
-  "total_relationships": 718,
-  "total_source_domains": 30,
-  "total_unique_targets": 186,
-  "gov_to_gov_pairs": 37,
-  "relationship_types": {
-    "editorial_link": 415,
-    "script_dependency": 101,
-    "stylesheet_dependency": 81,
-    "image_or_media_dependency": 62,
-    "form_destination": 48,
-    "font_or_preload_dependency": 11
-  },
+  "country_code": "SPAIN",
+  "total_relationships": 4126,
+  "total_source_domains": 66,
   "top_source_domains": [
     {
       "domain": "castillalamancha.es",
-      "observations": 148,
-      "unique_targets": 25,
-      "relationship_types": {
-        "editorial_link": 42,
-        "script_dependency": 13,
-        "stylesheet_dependency": 10,
-        "image_or_media_dependency": 8,
-        "form_destination": 8
-      }
+      "count": 9367
     },
     {
       "domain": "gva.es",
-      "observations": 100,
-      "unique_targets": 32,
-      "relationship_types": {
-        "stylesheet_dependency": 7,
-        "editorial_link": 48,
-        "script_dependency": 9,
-        "image_or_media_dependency": 6,
-        "form_destination": 4,
-        "font_or_preload_dependency": 2
-      }
-    },
-    {
-      "domain": "navarra.es",
-      "observations": 74,
-      "unique_targets": 28,
-      "relationship_types": {
-        "editorial_link": 39,
-        "script_dependency": 7,
-        "stylesheet_dependency": 7,
-        "font_or_preload_dependency": 1,
-        "image_or_media_dependency": 5,
-        "form_destination": 4
-      }
-    },
-    {
-      "domain": "juntaex.es",
-      "observations": 44,
-      "unique_targets": 21,
-      "relationship_types": {
-        "editorial_link": 28,
-        "script_dependency": 4,
-        "stylesheet_dependency": 4,
-        "image_or_media_dependency": 4,
-        "form_destination": 1
-      }
+      "count": 805
     },
     {
       "domain": "jcyl.es",
-      "observations": 42,
-      "unique_targets": 5,
-      "relationship_types": {
-        "editorial_link": 11,
-        "script_dependency": 6,
-        "stylesheet_dependency": 5,
-        "image_or_media_dependency": 5,
-        "form_destination": 5
-      }
+      "count": 665
     },
     {
-      "domain": "transparencialocal.gob.es",
-      "observations": 36,
-      "unique_targets": 7,
-      "relationship_types": {
-        "editorial_link": 6,
-        "script_dependency": 3,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 2
-      }
+      "domain": "navarra.es",
+      "count": 121
+    },
+    {
+      "domain": "aragon.es",
+      "count": 117
+    },
+    {
+      "domain": "sanidad.gob.es",
+      "count": 108
     },
     {
       "domain": "carm.es",
-      "observations": 28,
-      "unique_targets": 12,
-      "relationship_types": {
-        "editorial_link": 13,
-        "script_dependency": 3,
-        "stylesheet_dependency": 3,
-        "font_or_preload_dependency": 2,
-        "image_or_media_dependency": 2,
-        "form_destination": 2
-      }
+      "count": 99
+    },
+    {
+      "domain": "miteco.gob.es",
+      "count": 71
+    },
+    {
+      "domain": "ayto-alcaladehenares.es",
+      "count": 68
     },
     {
       "domain": "asturias.es",
-      "observations": 28,
-      "unique_targets": 9,
-      "relationship_types": {
-        "editorial_link": 13,
-        "script_dependency": 5,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 4,
-        "form_destination": 3
-      }
+      "count": 66
     },
     {
-      "domain": "exteriores.gob.es",
-      "observations": 26,
-      "unique_targets": 20,
-      "relationship_types": {
-        "editorial_link": 21,
-        "script_dependency": 2,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
+      "domain": "madrid.es",
+      "count": 56
     },
     {
-      "domain": "inclusion.gob.es",
-      "observations": 26,
-      "unique_targets": 17,
-      "relationship_types": {
-        "editorial_link": 21,
-        "script_dependency": 2,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
+      "domain": "digital.gob.es",
+      "count": 51
     },
     {
-      "domain": "comercio.gob.es",
-      "observations": 24,
-      "unique_targets": 9,
-      "relationship_types": {
-        "editorial_link": 8,
-        "script_dependency": 4,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 2,
-        "form_destination": 2
-      }
+      "domain": "hacienda.gob.es",
+      "count": 47
+    },
+    {
+      "domain": "ayto-fuenlabrada.es",
+      "count": 45
+    },
+    {
+      "domain": "consumo.gob.es",
+      "count": 45
     },
     {
       "domain": "sede.gob.es",
-      "observations": 23,
-      "unique_targets": 17,
-      "relationship_types": {
-        "editorial_link": 18,
-        "script_dependency": 2,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1
-      }
+      "count": 38
     },
     {
-      "domain": "cuenca.es",
-      "observations": 22,
-      "unique_targets": 11,
-      "relationship_types": {
-        "editorial_link": 11,
-        "script_dependency": 6,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "caib.es",
-      "observations": 21,
-      "unique_targets": 12,
-      "relationship_types": {
-        "editorial_link": 11,
-        "script_dependency": 4,
-        "stylesheet_dependency": 4,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "dsca.gob.es",
-      "observations": 20,
-      "unique_targets": 16,
-      "relationship_types": {
-        "editorial_link": 15,
-        "script_dependency": 2,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "ine.es",
-      "observations": 19,
-      "unique_targets": 13,
-      "relationship_types": {
-        "editorial_link": 13,
-        "script_dependency": 2,
-        "font_or_preload_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "madrid.es",
-      "observations": 19,
-      "unique_targets": 12,
-      "relationship_types": {
-        "editorial_link": 13,
-        "script_dependency": 2,
-        "stylesheet_dependency": 1,
-        "font_or_preload_dependency": 2,
-        "image_or_media_dependency": 1
-      }
-    },
-    {
-      "domain": "espanadigital.gob.es",
-      "observations": 18,
-      "unique_targets": 13,
-      "relationship_types": {
-        "editorial_link": 8,
-        "script_dependency": 5,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "sanidad.gob.es",
-      "observations": 17,
-      "unique_targets": 6,
-      "relationship_types": {
-        "editorial_link": 10,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 2,
-        "form_destination": 2,
-        "script_dependency": 1
-      }
-    },
-    {
-      "domain": "seg-social.es",
-      "observations": 17,
-      "unique_targets": 11,
-      "relationship_types": {
-        "editorial_link": 12,
-        "script_dependency": 2,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "aragon.es",
-      "observations": 16,
-      "unique_targets": 7,
-      "relationship_types": {
-        "editorial_link": 5,
-        "script_dependency": 2,
-        "font_or_preload_dependency": 2,
-        "stylesheet_dependency": 4,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "derechosdigitales.gob.es",
-      "observations": 15,
-      "unique_targets": 10,
-      "relationship_types": {
-        "editorial_link": 7,
-        "script_dependency": 3,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "ayto-losbarrios.es",
-      "observations": 15,
-      "unique_targets": 10,
-      "relationship_types": {
-        "editorial_link": 8,
-        "script_dependency": 3,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "dgt.es",
-      "observations": 14,
-      "unique_targets": 7,
-      "relationship_types": {
-        "editorial_link": 9,
-        "script_dependency": 2,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "ayto-fuenlabrada.es",
-      "observations": 14,
-      "unique_targets": 4,
-      "relationship_types": {
-        "editorial_link": 9,
-        "script_dependency": 1,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "ayuntamiento-espana.es",
-      "observations": 12,
-      "unique_targets": 7,
-      "relationship_types": {
-        "editorial_link": 3,
-        "script_dependency": 3,
-        "font_or_preload_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 3,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "ayto-caceres.es",
-      "observations": 11,
-      "unique_targets": 7,
-      "relationship_types": {
-        "editorial_link": 6,
-        "script_dependency": 1,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "osta.es",
-      "observations": 10,
-      "unique_targets": 4,
-      "relationship_types": {
-        "editorial_link": 4,
-        "script_dependency": 1,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "aeat.es",
-      "observations": 5,
-      "unique_targets": 2,
-      "relationship_types": {
-        "editorial_link": 3,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1
-      }
-    },
-    {
-      "domain": "ayto-mieres.es",
-      "observations": 1,
-      "unique_targets": 1,
-      "relationship_types": {
-        "form_destination": 1
-      }
-    }
-  ],
-  "top_targets": [
-    {
-      "domain": "castillalamancha.es",
-      "observations": 75
-    },
-    {
-      "domain": "gva.es",
-      "observations": 47
-    },
-    {
-      "domain": "jcyl.es",
-      "observations": 35
-    },
-    {
-      "domain": "navarra.es",
-      "observations": 30
-    },
-    {
-      "domain": "googleapis.com",
-      "observations": 26
-    },
-    {
-      "domain": "facebook.com",
-      "observations": 25
-    },
-    {
-      "domain": "youtube.com",
-      "observations": 23
-    },
-    {
-      "domain": "google.com",
-      "observations": 23
-    },
-    {
-      "domain": "twitter.com",
-      "observations": 21
-    },
-    {
-      "domain": "asturias.es",
-      "observations": 20
-    },
-    {
-      "domain": "redsara.es",
-      "observations": 16
-    },
-    {
-      "domain": "juntaex.es",
-      "observations": 16
-    },
-    {
-      "domain": "jccm.es",
-      "observations": 15
-    },
-    {
-      "domain": "googletagmanager.com",
-      "observations": 15
-    },
-    {
-      "domain": "instagram.com",
-      "observations": 14
-    },
-    {
-      "domain": "carm.es",
-      "observations": 13
-    },
-    {
-      "domain": "sanidad.gob.es",
-      "observations": 12
-    },
-    {
-      "domain": "inclusion.gob.es",
-      "observations": 11
-    },
-    {
-      "domain": "google.es",
-      "observations": 10
-    },
-    {
-      "domain": "comercio.gob.es",
-      "observations": 10
-    },
-    {
-      "domain": "cuenca.es",
-      "observations": 10
-    },
-    {
-      "domain": "caib.es",
-      "observations": 10
+      "domain": "valencia.es",
+      "count": 36
     },
     {
       "domain": "transparencialocal.gob.es",
-      "observations": 9
+      "count": 36
     },
     {
-      "domain": "ayto-fuenlabrada.es",
-      "observations": 9
+      "domain": "juntaex.es",
+      "count": 32
     },
     {
-      "domain": "aragon.es",
-      "observations": 8
+      "domain": "rpdiscapacidad.gob.es",
+      "count": 31
     },
     {
-      "domain": "ine.es",
-      "observations": 8
+      "domain": "mjusticia.gob.es",
+      "count": 30
     },
     {
-      "domain": "exteriores.gob.es",
-      "observations": 8
+      "domain": "caib.es",
+      "count": 28
+    },
+    {
+      "domain": "mintur.gob.es",
+      "count": 24
+    },
+    {
+      "domain": "juntadeandalucia.es",
+      "count": 23
+    },
+    {
+      "domain": "dgt.gob.es",
+      "count": 23
     },
     {
       "domain": "seg-social.es",
-      "observations": 8
-    },
-    {
-      "domain": "madrid.es",
-      "observations": 8
-    },
-    {
-      "domain": "europa.eu",
-      "observations": 7
-    },
-    {
-      "domain": "jsdelivr.net",
-      "observations": 7
-    },
-    {
-      "domain": "w3.org",
-      "observations": 7
-    },
-    {
-      "domain": "linkedin.com",
-      "observations": 7
+      "count": 23
     },
     {
       "domain": "dgt.es",
-      "observations": 7
+      "count": 22
     },
     {
-      "domain": "blogspot.com",
-      "observations": 7
+      "domain": "espanaenlibertad.gob.es",
+      "count": 22
     },
     {
-      "domain": "gstatic.com",
-      "observations": 6
+      "domain": "transportes.gob.es",
+      "count": 21
     },
     {
-      "domain": "espanadigital.gob.es",
-      "observations": 6
+      "domain": "cnmc.gob.es",
+      "count": 20
+    },
+    {
+      "domain": "datos.gob.es",
+      "count": 19
+    },
+    {
+      "domain": "educacion.gob.es",
+      "count": 19
+    },
+    {
+      "domain": "losyebenes.es",
+      "count": 19
+    },
+    {
+      "domain": "ayto-arganda.es",
+      "count": 17
+    },
+    {
+      "domain": "ayto-ribadesella.es",
+      "count": 16
+    },
+    {
+      "domain": "congreso.es",
+      "count": 16
+    },
+    {
+      "domain": "igualdad.gob.es",
+      "count": 15
+    },
+    {
+      "domain": "ayto-nava.es",
+      "count": 15
+    },
+    {
+      "domain": "comercio.gob.es",
+      "count": 14
+    },
+    {
+      "domain": "ayto-coriadelrio.es",
+      "count": 14
+    },
+    {
+      "domain": "ine.es",
+      "count": 14
+    },
+    {
+      "domain": "jccm.es",
+      "count": 14
+    },
+    {
+      "domain": "aemet.es",
+      "count": 13
+    },
+    {
+      "domain": "mojacar.es",
+      "count": 13
+    },
+    {
+      "domain": "estudiodesinstitucionalizacion.gob.es",
+      "count": 13
+    },
+    {
+      "domain": "ayto-elbosque.es",
+      "count": 12
+    },
+    {
+      "domain": "cantabria.es",
+      "count": 12
+    },
+    {
+      "domain": "ayto-pravia.es",
+      "count": 12
     },
     {
       "domain": "osta.es",
-      "observations": 6
+      "count": 12
     },
     {
-      "domain": "boe.es",
-      "observations": 6
+      "domain": "ayto-cnarcea.es",
+      "count": 11
+    }
+  ],
+  "top_target_domains": [
+    {
+      "domain": "castillalamancha.es",
+      "count": 4605
+    },
+    {
+      "domain": "jccm.es",
+      "count": 753
+    },
+    {
+      "domain": "facebook.com",
+      "count": 488
+    },
+    {
+      "domain": "google.com",
+      "count": 460
+    },
+    {
+      "domain": "twitter.com",
+      "count": 446
+    },
+    {
+      "domain": "youtube.com",
+      "count": 429
+    },
+    {
+      "domain": "gva.es",
+      "count": 406
+    },
+    {
+      "domain": "jcyl.es",
+      "count": 373
+    },
+    {
+      "domain": "googleapis.com",
+      "count": 347
+    },
+    {
+      "domain": "instagram.com",
+      "count": 285
+    },
+    {
+      "domain": "google.es",
+      "count": 154
+    },
+    {
+      "domain": "gstatic.com",
+      "count": 151
+    },
+    {
+      "domain": "fontawesome.com",
+      "count": 142
+    },
+    {
+      "domain": "blogspot.com",
+      "count": 136
+    },
+    {
+      "domain": "linkedin.com",
+      "count": 135
     },
     {
       "domain": "flickr.com",
-      "observations": 6
+      "count": 121
     },
     {
-      "domain": "microsoft.com",
-      "observations": 6
-    },
-    {
-      "domain": "gobex.es",
-      "observations": 6
-    },
-    {
-      "domain": "ayuntamiento-espana.es",
-      "observations": 6
-    },
-    {
-      "domain": "creativecommons.org",
-      "observations": 5
+      "domain": "sharethis.com",
+      "count": 120
     },
     {
       "domain": "insuit.net",
-      "observations": 5
+      "count": 118
+    },
+    {
+      "domain": "vimeo.com",
+      "count": 107
+    },
+    {
+      "domain": "pinterest.com",
+      "count": 106
+    },
+    {
+      "domain": "blogspot.com.es",
+      "count": 62
+    },
+    {
+      "domain": "aragon.es",
+      "count": 58
+    },
+    {
+      "domain": "navarra.es",
+      "count": 56
+    },
+    {
+      "domain": "carm.es",
+      "count": 53
+    },
+    {
+      "domain": "googletagmanager.com",
+      "count": 49
+    },
+    {
+      "domain": "w3.org",
+      "count": 47
+    },
+    {
+      "domain": "asturias.es",
+      "count": 46
+    },
+    {
+      "domain": "europa.eu",
+      "count": 45
+    },
+    {
+      "domain": "cloudflare.com",
+      "count": 38
+    },
+    {
+      "domain": "x.com",
+      "count": 37
+    },
+    {
+      "domain": "bootstrapcdn.com",
+      "count": 36
+    },
+    {
+      "domain": "educativa.com",
+      "count": 35
+    },
+    {
+      "domain": "sanidad.gob.es",
+      "count": 34
+    },
+    {
+      "domain": "jsdelivr.net",
+      "count": 34
+    },
+    {
+      "domain": "redsara.es",
+      "count": 30
+    },
+    {
+      "domain": "hacienda.gob.es",
+      "count": 30
+    },
+    {
+      "domain": "madrid.es",
+      "count": 26
+    },
+    {
+      "domain": "wordpress.com",
+      "count": 25
+    },
+    {
+      "domain": "boe.es",
+      "count": 24
+    },
+    {
+      "domain": "ayto-alcaladehenares.es",
+      "count": 24
+    },
+    {
+      "domain": "miteco.gob.es",
+      "count": 23
+    },
+    {
+      "domain": "whatsapp.com",
+      "count": 22
+    },
+    {
+      "domain": "weebly.com",
+      "count": 22
+    },
+    {
+      "domain": "tiktok.com",
+      "count": 21
+    },
+    {
+      "domain": "wixsite.com",
+      "count": 20
     },
     {
       "domain": "addtoany.com",
-      "observations": 5
+      "count": 20
     },
     {
       "domain": "unpkg.com",
-      "observations": 5
+      "count": 20
     },
     {
-      "domain": "mozilla.org",
-      "observations": 5
+      "domain": "turismocastillalamancha.es",
+      "count": 18
     },
     {
-      "domain": "derechosdigitales.gob.es",
-      "observations": 5
+      "domain": "consumo.gob.es",
+      "count": 18
     },
     {
-      "domain": "ayto-losbarrios.es",
-      "observations": 5
+      "domain": "juntaex.es",
+      "count": 17
     }
   ],
-  "gov_to_gov_links": [
-    {
-      "source": "espanadigital.gob.es",
-      "target": "europa.eu",
-      "target_country": "EU Institutions",
-      "cross_country": true
-    },
-    {
-      "source": "espanadigital.gob.es",
-      "target": "digital.gob.es",
-      "target_country": "Spain",
-      "cross_country": false
-    },
-    {
-      "source": "espanadigital.gob.es",
-      "target": "planderecuperacion.gob.es",
-      "target_country": "Spain",
-      "cross_country": false
-    },
-    {
-      "source": "espanadigital.gob.es",
-      "target": "lamoncloa.gob.es",
-      "target_country": "Spain",
-      "cross_country": false
-    },
-    {
-      "source": "espanadigital.gob.es",
-      "target": "mineco.gob.es",
-      "target_country": "Spain",
-      "cross_country": false
-    },
-    {
-      "source": "sanidad.gob.es",
-      "target": "europa.eu",
-      "target_country": "EU Institutions",
-      "cross_country": true
-    },
-    {
-      "source": "gva.es",
-      "target": "planderecuperacion.gob.es",
-      "target_country": "Spain",
-      "cross_country": false
-    },
-    {
-      "source": "gva.es",
-      "target": "miteco.gob.es",
-      "target_country": "Spain",
-      "cross_country": false
-    },
-    {
-      "source": "comercio.gob.es",
-      "target": "mpr.gob.es",
-      "target_country": "Spain",
-      "cross_country": false
-    },
-    {
-      "source": "comercio.gob.es",
-      "target": "mineco.gob.es",
-      "target_country": "Spain",
-      "cross_country": false
-    },
-    {
-      "source": "exteriores.gob.es",
-      "target": "maec.gob.es",
-      "target_country": "Spain",
-      "cross_country": false
-    },
-    {
-      "source": "exteriores.gob.es",
-      "target": "transparencia.gob.es",
-      "target_country": "Spain",
-      "cross_country": false
-    },
-    {
-      "source": "exteriores.gob.es",
-      "target": "administracion.gob.es",
-      "target_country": "Spain",
-      "cross_country": false
-    },
-    {
-      "source": "exteriores.gob.es",
-      "target": "lamoncloa.gob.es",
-      "target_country": "Spain",
-      "cross_country": false
-    },
-    {
-      "source": "inclusion.gob.es",
-      "target": "seg-social.gob.es",
-      "target_country": "Spain",
-      "cross_country": false
-    },
-    {
-      "source": "inclusion.gob.es",
-      "target": "emnspain.gob.es",
-      "target_country": "Spain",
-      "cross_country": false
-    },
-    {
-      "source": "inclusion.gob.es",
-      "target": "mpt.gob.es",
-      "target_country": "Spain",
-      "cross_country": false
-    },
-    {
-      "source": "inclusion.gob.es",
-      "target": "planderecuperacion.gob.es",
-      "target_country": "Spain",
-      "cross_country": false
-    },
-    {
-      "source": "inclusion.gob.es",
-      "target": "europa.eu",
-      "target_country": "EU Institutions",
-      "cross_country": true
-    },
-    {
-      "source": "comercio.gob.es",
-      "target": "exteriores.gob.es",
-      "target_country": "Spain",
-      "cross_country": false
-    },
-    {
-      "source": "comercio.gob.es",
-      "target": "inclusion.gob.es",
-      "target_country": "Spain",
-      "cross_country": false
-    },
-    {
-      "source": "sede.gob.es",
-      "target": "bonoculturajoven.gob.es",
-      "target_country": "Spain",
-      "cross_country": false
-    },
-    {
-      "source": "sede.gob.es",
-      "target": "firmaelectronica.gob.es",
-      "target_country": "Spain",
-      "cross_country": false
-    },
-    {
-      "source": "sede.gob.es",
-      "target": "minetur.gob.es",
-      "target_country": "Spain",
-      "cross_country": false
-    },
-    {
-      "source": "sede.gob.es",
-      "target": "europa.eu",
-      "target_country": "EU Institutions",
-      "cross_country": true
-    },
-    {
-      "source": "sede.gob.es",
-      "target": "planderecuperacion.gob.es",
-      "target_country": "Spain",
-      "cross_country": false
-    },
-    {
-      "source": "sede.gob.es",
-      "target": "espanadigital.gob.es",
-      "target_country": "Spain",
-      "cross_country": false
-    },
-    {
-      "source": "sede.gob.es",
-      "target": "clave.gob.es",
-      "target_country": "Spain",
-      "cross_country": false
-    },
-    {
-      "source": "sede.gob.es",
-      "target": "cultura.gob.es",
-      "target_country": "Spain",
-      "cross_country": false
-    },
-    {
-      "source": "sede.gob.es",
-      "target": "administracionelectronica.gob.es",
-      "target_country": "Spain",
-      "cross_country": false
-    },
-    {
-      "source": "sede.gob.es",
-      "target": "carpetaciudadana.gob.es",
-      "target_country": "Spain",
-      "cross_country": false
-    },
-    {
-      "source": "sede.gob.es",
-      "target": "transparencia.gob.es",
-      "target_country": "Spain",
-      "cross_country": false
-    },
-    {
-      "source": "dsca.gob.es",
-      "target": "transparencia.gob.es",
-      "target_country": "Spain",
-      "cross_country": false
-    },
-    {
-      "source": "dsca.gob.es",
-      "target": "ordenacionjuego.gob.es",
-      "target_country": "Spain",
-      "cross_country": false
-    },
-    {
-      "source": "dsca.gob.es",
-      "target": "aesan.gob.es",
-      "target_country": "Spain",
-      "cross_country": false
-    },
-    {
-      "source": "dsca.gob.es",
-      "target": "sede.gob.es",
-      "target_country": "Spain",
-      "cross_country": false
-    },
-    {
-      "source": "sanidad.gob.es",
-      "target": "mscbs.gob.es",
-      "target_country": "Spain",
-      "cross_country": false
-    }
-  ]
+  "relationship_types": {
+    "editorial_link": 2074,
+    "script_dependency": 630,
+    "stylesheet_dependency": 510,
+    "image_or_media_dependency": 501,
+    "form_destination": 371,
+    "font_or_preload_dependency": 40
+  },
+  "generated_at": "2026-07-19T19:59:47.809441+00:00"
 }
