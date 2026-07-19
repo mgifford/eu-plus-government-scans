@@ -28,21 +28,21 @@
       "website": "http://www.mnz.gov.si/",
       "dissolved": null,
       "hostname": "mnz.gov.si",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Defence of Slovenia",
       "website": "http://www.mo.gov.si/en/",
       "dissolved": null,
       "hostname": "mo.gov.si",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Commission for the Prevention of Corruption of the Republic of Slovenia",
       "website": "https://www.kpk-rs.si/",
       "dissolved": null,
       "hostname": "kpk-rs.si",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Foreign Affairs of Slovenia",
@@ -63,7 +63,7 @@
       "website": "https://www.sodisce.si",
       "dissolved": null,
       "hostname": "sodisce.si",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Agriculture, Forestry and Food",
@@ -77,28 +77,28 @@
       "website": "http://www.mju.gov.si/en/",
       "dissolved": null,
       "hostname": "mju.gov.si",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Higher Education Science, and Technology",
       "website": "http://www.arhiv.mvzt.gov.si/en/",
       "dissolved": null,
       "hostname": "arhiv.mvzt.gov.si",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Economic Development and Technology",
       "website": "http://www.mgrt.gov.si/",
       "dissolved": null,
       "hostname": "mgrt.gov.si",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Economic Development and Technology",
       "website": "http://www.mgrt.gov.si/en/",
       "dissolved": null,
       "hostname": "mgrt.gov.si",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Labour, Family, Social Affairs and Equal Opportunities",
@@ -112,49 +112,49 @@
       "website": "http://www.mizs.gov.si/en/",
       "dissolved": null,
       "hostname": "mizs.gov.si",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Culture of Slovenia",
       "website": "http://www.mk.gov.si/en/",
       "dissolved": null,
       "hostname": "mk.gov.si",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "State Election Commission",
       "website": "http://www.dvk-rs.si/",
       "dissolved": null,
       "hostname": "dvk-rs.si",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Infrastructure",
       "website": "http://www.mzi.gov.si/en/",
       "dissolved": null,
       "hostname": "mzi.gov.si",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of the Environment and Spatial Planning",
       "website": "http://www.mop.gov.si/en/",
       "dissolved": null,
       "hostname": "mop.gov.si",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Health",
       "website": "http://www.mz.gov.si/en/",
       "dissolved": null,
       "hostname": "mz.gov.si",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Information Commissioner of the Republic of Slovenia",
       "website": "https://www.ip-rs.si/",
       "dissolved": null,
       "hostname": "ip-rs.si",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Finance",

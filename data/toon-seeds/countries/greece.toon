@@ -1,8 +1,8 @@
 {
   "version":"0.1-seed",
   "country":"Greece",
-  "domain_count":822,
-  "page_count":1748,
+  "domain_count":826,
+  "page_count":1752,
   "domains":[
     {
       "canonical_domain":"0260.syzefxis.gov.gr",
@@ -24659,6 +24659,50 @@
           "accessibility_score":"0.9",
           "best_practices_score":"0.74",
           "seo_score":"0.92"
+        }
+      ]
+    },
+    {
+      "canonical_domain":"ypakp.gr",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://ypakp.gr/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"dpa.gr",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://dpa.gr/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"exteriors.gencat.cat",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://exteriors.gencat.cat/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"minfin.gr",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://minfin.gr/",
+          "is_root_page":true
         }
       ]
     }

@@ -7,7 +7,7 @@
       "website": "http://www.fsc.bg/en/",
       "dissolved": null,
       "hostname": "fsc.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Foreign Affairs of Bulgaria",
@@ -28,14 +28,14 @@
       "website": "http://www.constcourt.bg/",
       "dissolved": null,
       "hostname": "constcourt.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Council of Ministers of Bulgaria",
       "website": "http://www.government.bg/",
       "dissolved": null,
       "hostname": "government.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Interior of Bulgaria",
@@ -70,35 +70,35 @@
       "website": "https://www.mod.bg/",
       "dissolved": null,
       "hostname": "mod.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Agriculture, Food and Forestry",
       "website": "http://www.mzh.government.bg",
       "dissolved": null,
       "hostname": "mzh.government.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "State Intelligence Agency",
       "website": "https://www.dar.bg/en",
       "dissolved": null,
       "hostname": "dar.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "State Intelligence Agency",
       "website": "https://www.dar.bg/bg",
       "dissolved": null,
       "hostname": "dar.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "State aviation operator",
       "website": "http://www.avio28.com/",
       "dissolved": null,
       "hostname": "avio28.com",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Culture of Bulgaria",
@@ -119,21 +119,21 @@
       "website": "https://www.mi.government.bg/",
       "dissolved": "2021-12-13T00:00:00Z",
       "hostname": "mi.government.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Economy of Bulgaria",
       "website": "https://mi.government.bg/en",
       "dissolved": "2021-12-13T00:00:00Z",
       "hostname": "mi.government.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Economy of Bulgaria",
       "website": "https://mi.government.bg/bg",
       "dissolved": "2021-12-13T00:00:00Z",
       "hostname": "mi.government.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Transport, Information Technology and Communications",
@@ -154,7 +154,7 @@
       "website": "http://www.vks.bg",
       "dissolved": null,
       "hostname": "vks.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Employment Agency",
@@ -168,21 +168,21 @@
       "website": "https://www.aba.government.bg/",
       "dissolved": null,
       "hostname": "aba.government.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "State Agency for Child Protection",
       "website": "https://sacp.government.bg/",
       "dissolved": null,
       "hostname": "sacp.government.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Archives State Agency",
       "website": "http://www.archives.government.bg/",
       "dissolved": null,
       "hostname": "archives.government.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "State Agency for National Security",
@@ -196,14 +196,14 @@
       "website": "https://www.appd-bg.org/index-en",
       "dissolved": null,
       "hostname": "appd-bg.org",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Executive Agency for Exploration and Maintenance of the Danube River",
       "website": "https://www.appd-bg.org/",
       "dissolved": null,
       "hostname": "appd-bg.org",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Commission for Protection of Competition",
@@ -224,42 +224,42 @@
       "website": "http://www.kzd-nondiscrimination.com/",
       "dissolved": null,
       "hostname": "kzd-nondiscrimination.com",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Communications Regulation Commission",
       "website": "https://www.crc.bg/",
       "dissolved": null,
       "hostname": "crc.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Health of Bulgaria",
       "website": "https://www.mh.government.bg/en/",
       "dissolved": null,
       "hostname": "mh.government.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Health of Bulgaria",
       "website": "https://www.mh.government.bg/bg/",
       "dissolved": null,
       "hostname": "mh.government.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Environment and Water",
       "website": "https://www.moew.government.bg/en/?show=226&lang=en",
       "dissolved": null,
       "hostname": "moew.government.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Environment and Water",
       "website": "https://www.moew.government.bg/?show=226&lang=en",
       "dissolved": null,
       "hostname": "moew.government.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Justice",
@@ -273,42 +273,42 @@
       "website": "https://www.mrrb.bg/en/",
       "dissolved": null,
       "hostname": "mrrb.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Regional Development and Public Works",
       "website": "https://www.mrrb.bg/",
       "dissolved": null,
       "hostname": "mrrb.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Labour and Social Policy",
       "website": "https://www.mlsp.government.bg/",
       "dissolved": null,
       "hostname": "mlsp.government.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Youth and Sports of Bulgaria",
       "website": "http://mpes.government.bg/Default.aspx",
       "dissolved": null,
       "hostname": "mpes.government.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Youth and Sports of Bulgaria",
       "website": "http://mpes.government.bg/",
       "dissolved": null,
       "hostname": "mpes.government.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "National Social Security Institute",
       "website": "https://www.nssi.bg/",
       "dissolved": null,
       "hostname": "nssi.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "National Statistical Institute",
@@ -343,70 +343,70 @@
       "website": "http://www.nhif.bg/",
       "dissolved": null,
       "hostname": "nhif.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Executive Forest Agency",
       "website": "https://www.iag.bg/",
       "dissolved": null,
       "hostname": "iag.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Executive Forest Agency",
       "website": "http://www.iag.bg/lang/2/index",
       "dissolved": null,
       "hostname": "iag.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Council for electronic media",
       "website": "https://www.cem.bg/",
       "dissolved": null,
       "hostname": "cem.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Central Election Commission",
       "website": "https://www.cik.bg/",
       "dissolved": null,
       "hostname": "cik.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Energy and Water State Regulatory Commission",
       "website": "https://www.dker.bg",
       "dissolved": null,
       "hostname": "dker.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Commission for disclosing affiliation to the Bulgarian state security",
       "website": "https://comdos.bg",
       "dissolved": null,
       "hostname": "comdos.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Geodesy, Cartography and Cadastre Agency",
       "website": "https://www.cadastre.bg/",
       "dissolved": null,
       "hostname": "cadastre.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "State Agency for Refugees",
       "website": "https://aref.government.bg/",
       "dissolved": null,
       "hostname": "aref.government.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "InvestBulgaria Agency",
       "website": "https://investbg.government.bg/",
       "dissolved": null,
       "hostname": "investbg.government.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Railway Administration Executive Agency",
@@ -420,7 +420,7 @@
       "website": "https://www.nipa.bg/",
       "dissolved": null,
       "hostname": "nipa.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Supreme Administrative Court",
@@ -434,35 +434,35 @@
       "website": "https://eea.government.bg/",
       "dissolved": null,
       "hostname": "eea.government.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Executive Environment Agency",
       "website": "https://eea.government.bg/en",
       "dissolved": null,
       "hostname": "eea.government.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry for the Bulgarian Presidency of the Council of the European Union 2018",
       "website": "http://www.eu2018bg.bg/",
       "dissolved": "2019-01-01T00:00:00Z",
       "hostname": "eu2018bg.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Tourism",
       "website": "https://www.tourism.government.bg/en",
       "dissolved": null,
       "hostname": "tourism.government.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Tourism",
       "website": "http://www.tourism.government.bg/",
       "dissolved": null,
       "hostname": "tourism.government.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Executive Agency for Small and Medium Enterprises",
@@ -483,7 +483,7 @@
       "website": "https://kzp.bg/",
       "dissolved": null,
       "hostname": "kzp.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Executive Agency Maritime Administration",
@@ -497,28 +497,28 @@
       "website": "https://www.me.government.bg/en",
       "dissolved": null,
       "hostname": "me.government.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Energy of Bulgaria",
       "website": "https://www.me.government.bg/bg",
       "dissolved": null,
       "hostname": "me.government.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Government Delegation of the Generalitat, Zagreb",
       "website": "https://exteriors.gencat.cat/ca/ambits-dactuacio/afers_exteriors/delegacions_govern/sud-est-europa/index.html",
       "dissolved": null,
       "hostname": "exteriors.gencat.cat",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "State Agency for Metrological and Technical Surveillance",
       "website": "http://www.damtn.government.bg/index.php?lang=en",
       "dissolved": null,
       "hostname": "damtn.government.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Commission for Personal Data Protection",
@@ -532,21 +532,21 @@
       "website": "https://www.registryagency.bg/en/",
       "dissolved": null,
       "hostname": "registryagency.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Registry Agency",
       "website": "https://www.registryagency.bg/bg/",
       "dissolved": null,
       "hostname": "registryagency.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "National Film Center",
       "website": "https://www.nfc.bg/",
       "dissolved": null,
       "hostname": "nfc.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Finance",
@@ -567,28 +567,28 @@
       "website": "https://iara-iss.egov.bg/",
       "dissolved": null,
       "hostname": "iara-iss.egov.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Electronic Government",
       "website": "https://egov.government.bg/",
       "dissolved": null,
       "hostname": "egov.government.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Road Transport Administration Executive Agency",
       "website": "https://rta.government.bg/",
       "dissolved": null,
       "hostname": "rta.government.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Bulgarian Ministry of Economy and Energy",
       "website": "http://www.mi.government.bg",
       "dissolved": "2014-01-01T00:00:00Z",
       "hostname": "mi.government.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Commission for Anti-Corruption",
@@ -602,70 +602,70 @@
       "website": "https://www.statereserve.bg",
       "dissolved": null,
       "hostname": "statereserve.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Commision for public oversight of statutory auditors",
       "website": "https://www.cposa.bg",
       "dissolved": null,
       "hostname": "cposa.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "National Special Intelligence Devices Control Bureau",
       "website": "https://www.nbksrs.bg/",
       "dissolved": null,
       "hostname": "nbksrs.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "State Agency for Technical Operations",
       "website": "https://www.dato.bg",
       "dissolved": null,
       "hostname": "dato.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "State Agency for Road Safety",
       "website": "https://www.sars.gov.bg/",
       "dissolved": null,
       "hostname": "sars.gov.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Innovation and Growth",
       "website": "https://mig.government.bg/",
       "dissolved": null,
       "hostname": "mig.government.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Bulgarian Drug Agency",
       "website": "https://www.bda.bg/en/",
       "dissolved": null,
       "hostname": "bda.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Bulgarian Drug Agency",
       "website": "https://www.bda.bg",
       "dissolved": null,
       "hostname": "bda.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Economy and Industry",
       "website": "https://mi.government.bg/",
       "dissolved": null,
       "hostname": "mi.government.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Social Assistance Agency",
       "website": "http://www.asp.government.bg",
       "dissolved": null,
       "hostname": "asp.government.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Sustainable Energy Development Agency",
@@ -686,7 +686,7 @@
       "website": "https://iamn.bg/",
       "dissolved": null,
       "hostname": "iamn.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Agency for Persons with Disabilities",
@@ -700,56 +700,56 @@
       "website": "https://www.iasrj.eu/",
       "dissolved": null,
       "hostname": "iasrj.eu",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Executive Agency for Vine and Wine",
       "website": "https://eavw.com/",
       "dissolved": null,
       "hostname": "eavw.com",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Public Procurement Agency",
       "website": "https://www2.aop.bg/",
       "dissolved": null,
       "hostname": "www2.aop.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Executive Agency for Hail Suppression",
       "website": "https://iabg.government.bg/",
       "dissolved": null,
       "hostname": "iabg.government.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Bulgarian Accreditation Service Executive Agency",
       "website": "https://www.nab-bas.bg/",
       "dissolved": null,
       "hostname": "nab-bas.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Executive Agency for Military Clubs and Recreation",
       "website": "https://militaryclubs.bg/",
       "dissolved": null,
       "hostname": "militaryclubs.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "General Labour Inspectorate Executive Agency",
       "website": "https://www.gli.government.bg/bg",
       "dissolved": null,
       "hostname": "gli.government.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Executive Agency for Electronic Governance Infrastructure",
       "website": "https://iaieu.egov.bg/",
       "dissolved": null,
       "hostname": "iaieu.egov.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Executive Agency Audit of European Union Funds",
@@ -763,14 +763,14 @@
       "website": "https://www.caaf.bg/",
       "dissolved": null,
       "hostname": "caaf.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Executive Agency for Variety Testing, Field Inspection and Seed Control",
       "website": "https://www.iasas.government.bg/",
       "dissolved": null,
       "hostname": "iasas.government.bg",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Executive Agency Education Programme",

@@ -1,8 +1,8 @@
 {
   "version":"0.1-seed",
   "country":"Iceland",
-  "domain_count":68,
-  "page_count":139,
+  "domain_count":74,
+  "page_count":145,
   "domains":[
     {
       "canonical_domain":"abendingar.hafnarfjordur.is",
@@ -1997,6 +1997,72 @@
           "accessibility_score":"1",
           "best_practices_score":"1",
           "seo_score":"0.82"
+        }
+      ]
+    },
+    {
+      "canonical_domain":"haestirettur.is",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://haestirettur.is/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"government.is",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://government.is/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"statice.is",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://statice.is/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"mms.is",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://mms.is/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"customs.is",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://customs.is/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"heradsdomstolar.is",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://heradsdomstolar.is/",
+          "is_root_page":true
         }
       ]
     }

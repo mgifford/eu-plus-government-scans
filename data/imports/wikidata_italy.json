@@ -14,7 +14,7 @@
       "website": "http://www.protezionecivile.gov.it/",
       "dissolved": null,
       "hostname": "protezionecivile.gov.it",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Italian National Institute of Statistics",
@@ -77,7 +77,7 @@
       "website": "https://www.cortecostituzionale.it/default.do",
       "dissolved": null,
       "hostname": "cortecostituzionale.it",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Enterprises and Made in Italy",
@@ -105,28 +105,28 @@
       "website": "https://www.cortedicassazione.it",
       "dissolved": null,
       "hostname": "cortedicassazione.it",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Infrastructure and Transport",
       "website": "https://www.mit.gov.it/",
       "dissolved": null,
       "hostname": "mit.gov.it",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Dipartimento delle Informazioni per la Sicurezza",
       "website": "https://www.sicurezzanazionale.gov.it/",
       "dissolved": null,
       "hostname": "sicurezzanazionale.gov.it",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Education, Universities and Research",
       "website": "https://www.miur.gov.it/",
       "dissolved": "2020-01-01T00:00:00Z",
       "hostname": "miur.gov.it",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Culture",
@@ -161,7 +161,7 @@
       "website": "https://www.garanteprivacy.it/",
       "dissolved": null,
       "hostname": "garanteprivacy.it",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Department of Public Safety",
@@ -175,7 +175,7 @@
       "website": "https://www.arera.it/",
       "dissolved": null,
       "hostname": "arera.it",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Department of Family Policy of Italy",
@@ -189,14 +189,14 @@
       "website": "https://www.funzionepubblica.gov.it/",
       "dissolved": null,
       "hostname": "funzionepubblica.gov.it",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Unità per la semplificazione",
       "website": "https://www.funzionepubblica.gov.it/uffici/unita-la-semplificazione-e-la-qualita-della-regolazione",
       "dissolved": null,
       "hostname": "funzionepubblica.gov.it",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "dipartimento per le Riforme Istituzionali",
@@ -210,7 +210,7 @@
       "website": "https://www.mite.gov.it/",
       "dissolved": "2021-02-13T00:00:00Z",
       "hostname": "mite.gov.it",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Universities and Research",
@@ -238,7 +238,7 @@
       "website": "https://www.garanteinfanzia.org/",
       "dissolved": null,
       "hostname": "garanteinfanzia.org",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Department of Civil Liberties and Immigration",
@@ -252,21 +252,21 @@
       "website": "https://www.agenziaitaliameteo.it/",
       "dissolved": null,
       "hostname": "agenziaitaliameteo.it",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Tourism of Italy",
       "website": "https://www.ministeroturismo.gov.it",
       "dissolved": null,
       "hostname": "ministeroturismo.gov.it",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of the Ecological Transition",
       "website": "https://www.mite.gov.it",
       "dissolved": null,
       "hostname": "mite.gov.it",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Department for policies in support of persons with disabilities",

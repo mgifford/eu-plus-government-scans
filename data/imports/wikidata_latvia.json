@@ -28,7 +28,7 @@
       "website": "https://www.cvk.lv/",
       "dissolved": null,
       "hostname": "cvk.lv",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Defence of Latvia",

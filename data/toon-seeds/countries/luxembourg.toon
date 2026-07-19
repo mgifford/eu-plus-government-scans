@@ -1,8 +1,8 @@
 {
   "version":"0.1-seed",
   "country":"Luxembourg",
-  "domain_count":236,
-  "page_count":571,
+  "domain_count":238,
+  "page_count":573,
   "domains":[
     {
       "canonical_domain":"123easy.public.lu",
@@ -7635,6 +7635,28 @@
           "accessibility_score":"0.92",
           "best_practices_score":"1",
           "seo_score":"0.92"
+        }
+      ]
+    },
+    {
+      "canonical_domain":"conseil-etat.public.lu",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://conseil-etat.public.lu/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"chd.lu",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://chd.lu/",
+          "is_root_page":true
         }
       ]
     }

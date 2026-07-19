@@ -1,8 +1,8 @@
 {
   "version":"0.1-seed",
   "country":"France",
-  "domain_count":4324,
-  "page_count":10007,
+  "domain_count":4326,
+  "page_count":10009,
   "domains":[
     {
       "canonical_domain":"1000jours.fabrique.social.gouv.fr",
@@ -136169,6 +136169,28 @@
           "accessibility_score":"0.84",
           "best_practices_score":"0.96",
           "seo_score":"0.77"
+        }
+      ]
+    },
+    {
+      "canonical_domain":"ccomptes.fr",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://ccomptes.fr/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"courdecassation.fr",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://courdecassation.fr/",
+          "is_root_page":true
         }
       ]
     }

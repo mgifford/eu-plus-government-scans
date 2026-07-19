@@ -7,35 +7,35 @@
       "website": "http://www.nbs.sk",
       "dissolved": null,
       "hostname": "nbs.sk",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "National Bank of Slovakia",
       "website": "https://nbs.sk/en/",
       "dissolved": null,
       "hostname": "nbs.sk",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Constitutional Court of Slovakia",
       "website": "https://www.ustavnysud.sk/",
       "dissolved": null,
       "hostname": "ustavnysud.sk",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Transport and Construction of the Slovak Republic",
       "website": "https://www.mindop.sk/",
       "dissolved": null,
       "hostname": "mindop.sk",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Transport and Construction of the Slovak Republic",
       "website": "https://www.mindop.sk/en",
       "dissolved": null,
       "hostname": "mindop.sk",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Government of Slovakia",
@@ -98,14 +98,14 @@
       "website": "https://www.mpsr.sk/",
       "dissolved": null,
       "hostname": "mpsr.sk",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Agriculture and Rural Development of the Slovak Republic",
       "website": "https://www.mpsr.sk/en/",
       "dissolved": null,
       "hostname": "mpsr.sk",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Health of the Slovak Republic",
@@ -119,14 +119,14 @@
       "website": "https://www.minzp.sk/",
       "dissolved": null,
       "hostname": "minzp.sk",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Statistical Office of the Slovak Republic",
       "website": "https://slovak.statistics.sk/",
       "dissolved": null,
       "hostname": "slovak.statistics.sk",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Economy of the Slovak Republic",
@@ -168,14 +168,14 @@
       "website": "https://www.mfsr.sk/en/",
       "dissolved": null,
       "hostname": "mfsr.sk",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Finance of the Slovak Republic",
       "website": "https://www.mfsr.sk/sk/",
       "dissolved": null,
       "hostname": "mfsr.sk",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Civil Aviation Authority of the Slovak Republic",
@@ -210,7 +210,7 @@
       "website": "https://www.mincrs.sk/",
       "dissolved": null,
       "hostname": "mincrs.sk",
-      "already_seeded": false
+      "already_seeded": true
     }
   ],
   "regional": {},

@@ -1,8 +1,8 @@
 {
   "version":"0.1-seed",
   "country":"Portugal",
-  "domain_count":1545,
-  "page_count":3503,
+  "domain_count":1550,
+  "page_count":3508,
   "domains":[
     {
       "canonical_domain":"200anos.justica.gov.pt",
@@ -48054,6 +48054,61 @@
           "accessibility_score":"0.94",
           "best_practices_score":"1",
           "seo_score":"0.83"
+        }
+      ]
+    },
+    {
+      "canonical_domain":"gnr.pt",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://gnr.pt/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"moptc.pt",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"http://moptc.pt/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"stj.pt",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://stj.pt/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"ipq.pt",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://ipq.pt/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"nav.pt",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://nav.pt/",
+          "is_root_page":true
         }
       ]
     }

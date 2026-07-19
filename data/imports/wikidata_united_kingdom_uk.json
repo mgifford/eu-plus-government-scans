@@ -28,7 +28,7 @@
       "website": "https://www.investorsinpeople.com/",
       "dissolved": null,
       "hostname": "investorsinpeople.com",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "MI5",
@@ -119,7 +119,7 @@
       "website": "https://www.caa.co.uk/",
       "dissolved": null,
       "hostname": "caa.co.uk",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Department for Culture, Media and Sport",
@@ -175,14 +175,14 @@
       "website": "https://hmcoastguard.uk",
       "dissolved": null,
       "hostname": "hmcoastguard.uk",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Information Commissioner's Office",
       "website": "https://ico.org.uk/",
       "dissolved": null,
       "hostname": "ico.org.uk",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "United Kingdom Hydrographic Office",
@@ -280,21 +280,21 @@
       "website": "https://www.fca.org.uk/",
       "dissolved": null,
       "hostname": "fca.org.uk",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "General Optical Council",
       "website": "https://www.optical.org/",
       "dissolved": null,
       "hostname": "optical.org",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "General Optical Council",
       "website": "https://optical.org/",
       "dissolved": null,
       "hostname": "optical.org",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Crown Commercial Service",
@@ -308,7 +308,7 @@
       "website": "https://www.hcpc-uk.org/",
       "dissolved": null,
       "hostname": "hcpc-uk.org",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "His Majesty's Inspectorate of Constabulary and Fire & Rescue Services",
@@ -357,7 +357,7 @@
       "website": "https://www.thetakeoverpanel.org.uk/",
       "dissolved": null,
       "hostname": "thetakeoverpanel.org.uk",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Independent Parliamentary Standards Authority",
@@ -378,7 +378,7 @@
       "website": "https://gss.civilservice.gov.uk/",
       "dissolved": null,
       "hostname": "gss.civilservice.gov.uk",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Child Maintenance Group",

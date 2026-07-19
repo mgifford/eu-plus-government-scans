@@ -126,14 +126,14 @@
       "website": "https://www.ccomptes.fr/",
       "dissolved": null,
       "hostname": "ccomptes.fr",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Court of Cassation",
       "website": "http://www.courdecassation.fr/",
       "dissolved": null,
       "hostname": "courdecassation.fr",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Economics, Finance and Industrial and Digital Sovereignty",

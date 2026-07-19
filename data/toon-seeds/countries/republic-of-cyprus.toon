@@ -1,8 +1,8 @@
 {
   "version":"0.1-seed",
   "country":"Republic of Cyprus",
-  "domain_count":9,
-  "page_count":24,
+  "domain_count":14,
+  "page_count":29,
   "domains":[
     {
       "canonical_domain":"aigli.nicosia.org.cy",
@@ -310,6 +310,61 @@
           "accessibility_score":"0.8",
           "best_practices_score":"0.96",
           "seo_score":"0.92"
+        }
+      ]
+    },
+    {
+      "canonical_domain":"gov.cy",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://gov.cy/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"moec.gov.cy",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://moec.gov.cy/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"exteriors.gencat.cat",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://exteriors.gencat.cat/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"presidency.gov.cy",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://presidency.gov.cy/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"wikidata.org",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://wikidata.org/",
+          "is_root_page":true
         }
       ]
     }

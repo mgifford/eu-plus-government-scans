@@ -1,8 +1,8 @@
 {
   "version":"0.1-seed",
   "country":"Latvia",
-  "domain_count":341,
-  "page_count":802,
+  "domain_count":342,
+  "page_count":803,
   "domains":[
     {
       "canonical_domain":"ai.latak.gov.lv",
@@ -10846,6 +10846,17 @@
           "accessibility_score":"0.76",
           "best_practices_score":"0.96",
           "seo_score":"0.85"
+        }
+      ]
+    },
+    {
+      "canonical_domain":"cvk.lv",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://cvk.lv/",
+          "is_root_page":true
         }
       ]
     }

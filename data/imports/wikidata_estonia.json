@@ -49,21 +49,21 @@
       "website": "https://www.justdigi.ee",
       "dissolved": null,
       "hostname": "justdigi.ee",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Financial Supervision Authority",
       "website": "http://www.fi.ee/index.php?id=769",
       "dissolved": null,
       "hostname": "fi.ee",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Financial Supervision Authority",
       "website": "https://www.fi.ee/en",
       "dissolved": null,
       "hostname": "fi.ee",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Education and Research",
@@ -84,7 +84,7 @@
       "website": "http://www.epa.ee/",
       "dissolved": null,
       "hostname": "epa.ee",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Regional Affairs and Agriculture",
@@ -126,14 +126,14 @@
       "website": "https://envir.ee/",
       "dissolved": null,
       "hostname": "envir.ee",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Estonian Data Protection Inspectorate",
       "website": "http://www.aki.ee/",
       "dissolved": null,
       "hostname": "aki.ee",
-      "already_seeded": false
+      "already_seeded": true
     }
   ],
   "regional": {},

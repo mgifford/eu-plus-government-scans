@@ -49,21 +49,21 @@
       "website": "http://www.mmediu.ro",
       "dissolved": null,
       "hostname": "mmediu.ro",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Internal Affairs",
       "website": "http://www.mai.gov.ro/",
       "dissolved": null,
       "hostname": "mai.gov.ro",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Education of Romania",
       "website": "https://www.edu.ro",
       "dissolved": null,
       "hostname": "edu.ro",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Constitutional Court of Romania",
@@ -105,7 +105,7 @@
       "website": "http://www.mfinante.gov.ro",
       "dissolved": null,
       "hostname": "mfinante.gov.ro",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Communications and Information Society",
@@ -203,21 +203,21 @@
       "website": "https://www.asfromania.ro/",
       "dissolved": null,
       "hostname": "asfromania.ro",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "National Supervisory Authority for Personal Data Processing",
       "website": "http://www.dataprotection.ro/",
       "dissolved": null,
       "hostname": "dataprotection.ro",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Romanian Office for the Prevention and Combating of Money Laundering",
       "website": "https://www.onpcsb.ro/",
       "dissolved": null,
       "hostname": "onpcsb.ro",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Permanent Electoral Authority",
@@ -231,7 +231,7 @@
       "website": "https://exteriors.gencat.cat/ca/ambits-dactuacio/afers_exteriors/delegacions_govern/sud-est-europa/index.html",
       "dissolved": null,
       "hostname": "exteriors.gencat.cat",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Research, Innovation and Digitization (Romania)",

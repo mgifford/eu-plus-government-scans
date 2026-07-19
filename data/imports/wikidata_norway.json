@@ -7,21 +7,21 @@
       "website": "https://www.datatilsynet.no/en",
       "dissolved": null,
       "hostname": "datatilsynet.no",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "The Norwegian Data Protection Authority",
       "website": "https://www.datatilsynet.no/",
       "dissolved": null,
       "hostname": "datatilsynet.no",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Supreme Court of Norway",
       "website": "https://www.domstol.no/hoyesterett/",
       "dissolved": null,
       "hostname": "domstol.no",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Norway's Ministry of Local Government and Modernisation",
@@ -175,7 +175,7 @@
       "website": "https://pst.no",
       "dissolved": null,
       "hostname": "pst.no",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Norwegian Water Resources and Energy Directorate",
@@ -189,14 +189,14 @@
       "website": "https://www.riksmekleren.no/",
       "dissolved": null,
       "hostname": "riksmekleren.no",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Norwegian Patent Office",
       "website": "https://www.patentstyret.no/",
       "dissolved": null,
       "hostname": "patentstyret.no",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Norwegian Tax Administration",
@@ -252,7 +252,7 @@
       "website": "https://koro.no/",
       "dissolved": null,
       "hostname": "koro.no",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Ministry of Trade, Industry and Fisheries",
@@ -266,28 +266,28 @@
       "website": "https://generaladvokaten.no/",
       "dissolved": "2024-07-01T00:00:00Z",
       "hostname": "generaladvokaten.no",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Office of the Director of Public Prosecutions of Norway",
       "website": "http://www.riksadvokaten.no/",
       "dissolved": null,
       "hostname": "riksadvokaten.no",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Advokattilsynet",
       "website": "https://tilsynet.no/",
       "dissolved": null,
       "hostname": "tilsynet.no",
-      "already_seeded": false
+      "already_seeded": true
     },
     {
       "label": "Advokatnemnda",
       "website": "https://advnemnda.no/",
       "dissolved": null,
       "hostname": "advnemnda.no",
-      "already_seeded": false
+      "already_seeded": true
     }
   ],
   "regional": {},
