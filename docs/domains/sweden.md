@@ -6,7 +6,7 @@ permalink: /domains/sweden.html
 
 [← Back to all countries](../domains.html)
 
-**765 domains** · **1,558 pages**
+**909 domains** · **1,702 pages**
 
 | Domain | Pages |
 |--------|-------|
@@ -24,8 +24,12 @@ permalink: /domains/sweden.html
 | `anpassad-grundskola.uppsala.se` | [Visit anpassad-grundskola.uppsala.se homepage](https://anpassad-grundskola.uppsala.se/), [Visit anpassad-grundskola.uppsala.se/vara-anpassade-grundskolor/](https://anpassad-grundskola.uppsala.se/vara-anpassade-grundskolor/) |
 | `apimanager.lantmateriet.se` | [Visit apimanager.lantmateriet.se homepage](https://apimanager.lantmateriet.se/), [Visit apimanager.lantmateriet.se/devportal/apis/95a11ee8-fbe8-43e4-b299-7224307ddfec](https://apimanager.lantmateriet.se/devportal/apis/95a11ee8-fbe8-43e4-b299-7224307ddfec) |
 | `aqua.smhi.se` | [Visit aqua.smhi.se homepage](https://aqua.smhi.se/), [Visit aqua.smhi.se/aquademo](https://aqua.smhi.se/aquademo) |
+| `arbetsformedlingen.se` | [Visit arbetsformedlingen.se homepage](https://arbetsformedlingen.se/) |
+| `arbetsgivarverket.se` | [Visit arbetsgivarverket.se homepage](https://arbetsgivarverket.se/) |
 | `archive.riksbank.se` | [Visit archive.riksbank.se homepage](https://archive.riksbank.se/), [Visit archive.riksbank.se/sv/Webbarkiv/index.html](https://archive.riksbank.se/sv/Webbarkiv/index.html) |
 | `arenorochfastigheter.uppsala.se` | [Visit arenorochfastigheter.uppsala.se homepage](https://arenorochfastigheter.uppsala.se/), [Visit arenorochfastigheter.uppsala.se/link/3540bbb7b8fe41c5a3361d5e5657931a.aspx](https://arenorochfastigheter.uppsala.se/link/3540bbb7b8fe41c5a3361d5e5657931a.aspx?gpid=75882) |
+| `arkdes.se` | [Visit arkdes.se homepage](https://arkdes.se/) |
+| `arn.se` | [Visit arn.se homepage](https://arn.se/) |
 | `artvisemobile.borlange.se` | [Visit artvisemobile.borlange.se homepage](https://artvisemobile.borlange.se/) |
 | `asb.pts.se` | [Visit asb.pts.se homepage](https://asb.pts.se/), [Visit asb.pts.se/asben/create](https://asb.pts.se/asben/create) |
 | `auktion.kronofogden.se` | [Visit auktion.kronofogden.se homepage](https://auktion.kronofogden.se/), [Visit auktion.kronofogden.se/auk/w.ObjectList](https://auktion.kronofogden.se/auk/w.ObjectList?inC=KFM&inA=WEB) |
@@ -34,6 +38,7 @@ permalink: /domains/sweden.html
 | `authtoken.umea.se` | [Visit authtoken.umea.se homepage](https://authtoken.umea.se/), [Visit authtoken.umea.se/LoginStatusJsCommunicator](https://authtoken.umea.se/LoginStatusJsCommunicator) |
 | `avtalsnyheter.goteborg.se` | [Visit avtalsnyheter.goteborg.se homepage](https://avtalsnyheter.goteborg.se/) |
 | `bariumapp.vgregion.se` | [Visit bariumapp.vgregion.se homepage](https://bariumapp.vgregion.se/) |
+| `barnombudsmannen.se` | [Visit barnombudsmannen.se homepage](https://barnombudsmannen.se/) |
 | `batman.trafikverket.se` | [Visit batman.trafikverket.se homepage](https://batman.trafikverket.se/) |
 | `batplats.vasteras.se` | [Visit batplats.vasteras.se homepage](https://batplats.vasteras.se/), [Visit batplats.vasteras.se/BokaBetala](https://batplats.vasteras.se/BokaBetala) |
 | `batplatser.karlskrona.se` | [Visit batplatser.karlskrona.se homepage](https://batplatser.karlskrona.se/), [Visit batplatser.karlskrona.se/sv/Boka](https://batplatser.karlskrona.se/sv/Boka) |
@@ -42,6 +47,7 @@ permalink: /domains/sweden.html
 | `betala.etjanst.domstol.se` | [Visit betala.etjanst.domstol.se homepage](https://betala.etjanst.domstol.se/) |
 | `betalning.bolagsverket.se` | [Visit betalning.bolagsverket.se homepage](https://betalning.bolagsverket.se/) |
 | `bevaringsprogram.lund.se` | [Visit bevaringsprogram.lund.se homepage](https://bevaringsprogram.lund.se/), [Visit bevaringsprogram.lund.se/wiki/Inledning](https://bevaringsprogram.lund.se/wiki/Inledning), [Visit bevaringsprogram.lund.se/wiki/L%C3%A4sanvisningar](https://bevaringsprogram.lund.se/wiki/L%C3%A4sanvisningar) |
+| `bfn.se` | [Visit bfn.se homepage](https://bfn.se/) |
 | `bibblan.regionvarmland.se` | [Visit bibblan.regionvarmland.se homepage](https://bibblan.regionvarmland.se/), [Visit bibblan.regionvarmland.se/sommarlasning](https://bibblan.regionvarmland.se/sommarlasning) |
 | `bibliotek.eskilstuna.se` | [Visit bibliotek.eskilstuna.se homepage](https://bibliotek.eskilstuna.se/), [Visit bibliotek.eskilstuna.se/web/arena/%C3%B6ppettider](https://bibliotek.eskilstuna.se/web/arena/%C3%B6ppettider), [Visit bibliotek.eskilstuna.se/web/arena/-/skiftinge-bibliotek-tillfalligt-stangt](https://bibliotek.eskilstuna.se/web/arena/-/skiftinge-bibliotek-tillfalligt-stangt) |
 | `bibliotek.gotland.se` | [Visit bibliotek.gotland.se homepage](https://bibliotek.gotland.se/), [Visit bibliotek.gotland.se/aktuellt/ext/news/event/10662.html](https://bibliotek.gotland.se/aktuellt/ext/news/event/10662.html) |
@@ -77,10 +83,12 @@ permalink: /domains/sweden.html
 | `borgerligvigsel.uppsala.se` | [Visit borgerligvigsel.uppsala.se homepage](https://borgerligvigsel.uppsala.se/) |
 | `bostad.stockholm.se` | [Visit bostad.stockholm.se homepage](https://bostad.stockholm.se/), [Visit bostad.stockholm.se/bostad](https://bostad.stockholm.se/bostad) |
 | `bovit.trafikverket.se` | [Visit bovit.trafikverket.se homepage](https://bovit.trafikverket.se/), [Visit bovit.trafikverket.se/info-hjalp](https://bovit.trafikverket.se/info-hjalp) |
+| `bra.se` | [Visit bra.se homepage](https://bra.se/) |
 | `brandrisk-sverige.smhi.se` | [Visit brandrisk-sverige.smhi.se homepage](https://brandrisk-sverige.smhi.se/) |
 | `bransch.trafikverket.se` | [Visit bransch.trafikverket.se homepage](https://bransch.trafikverket.se/), [Visit bransch.trafikverket.se homepage](https://bransch.trafikverket.se/?expandid=global-area-43176), [Visit bransch.trafikverket.se/om-oss/aktuellt-for-dig-i-branschen3/aktuellt-for-dig-i-branschen/2025-06/jarnvagspodden-avsnitt-8-2025--samordnande-i-slaptag-av-elkraftsbyte/](https://bransch.trafikverket.se/om-oss/aktuellt-for-dig-i-branschen3/aktuellt-for-dig-i-branschen/2025-06/jarnvagspodden-avsnitt-8-2025--samordnande-i-slaptag-av-elkraftsbyte/) |
 | `bravalla.norrkoping.se` | [Visit bravalla.norrkoping.se homepage](https://bravalla.norrkoping.se/), [Visit bravalla.norrkoping.se/bravallagymnasiet](https://bravalla.norrkoping.se/bravallagymnasiet) |
 | `bredbandskartan.pts.se` | [Visit bredbandskartan.pts.se homepage](https://bredbandskartan.pts.se/) |
+| `bth.se` | [Visit bth.se homepage](https://bth.se/) |
 | `bygg.huddinge.se` | [Visit bygg.huddinge.se homepage](https://bygg.huddinge.se/), [Visit bygg.huddinge.se/MenuGroup2.aspx](https://bygg.huddinge.se/MenuGroup2.aspx?groupId=1), [Visit bygg.huddinge.se/MenuGroup2.aspx](https://bygg.huddinge.se/MenuGroup2.aspx?groupId=2) |
 | `bygg.norrkoping.se` | [Visit bygg.norrkoping.se homepage](https://bygg.norrkoping.se/), [Visit bygg.norrkoping.se/MenuGroup2.aspx](https://bygg.norrkoping.se/MenuGroup2.aspx?groupId=1), [Visit bygg.norrkoping.se/MenuGroup2.aspx](https://bygg.norrkoping.se/MenuGroup2.aspx?groupId=4) |
 | `bygg.uppsala.se` | [Visit bygg.uppsala.se homepage](https://bygg.uppsala.se/), [Visit bygg.uppsala.se/link/0b3aeec0362445edb4ebcfd29ca3cc78.aspx](https://bygg.uppsala.se/link/0b3aeec0362445edb4ebcfd29ca3cc78.aspx?gpid=75882), [Visit bygg.uppsala.se/samhallsbyggnad-utveckling/uppsala-vaxer/](https://bygg.uppsala.se/samhallsbyggnad-utveckling/uppsala-vaxer/) |
@@ -97,6 +105,7 @@ permalink: /domains/sweden.html
 | `citylinjen.regionorebrolan.se` | [Visit citylinjen.regionorebrolan.se homepage](https://citylinjen.regionorebrolan.se/), [Visit citylinjen.regionorebrolan.se/sv/hallbar-orebroare/](https://citylinjen.regionorebrolan.se/sv/hallbar-orebroare/) |
 | `cnwebb.scb.se` | [Visit cnwebb.scb.se homepage](https://cnwebb.scb.se/) |
 | `connect.vgregion.se` | [Visit connect.vgregion.se homepage](https://connect.vgregion.se/) |
+| `csn.se` | [Visit csn.se homepage](https://csn.se/) |
 | `dafi.lantmateriet.se` | [Visit dafi.lantmateriet.se homepage](https://dafi.lantmateriet.se/) |
 | `dalarna.direkt.1177.se` | [Visit dalarna.direkt.1177.se homepage](https://dalarna.direkt.1177.se/), [Visit dalarna.direkt.1177.se/privacyPolicy](https://dalarna.direkt.1177.se/privacyPolicy) |
 | `data.trafikverket.se` | [Visit data.trafikverket.se homepage](https://data.trafikverket.se/), [Visit data.trafikverket.se/get-started](https://data.trafikverket.se/get-started) |
@@ -112,9 +121,11 @@ permalink: /domains/sweden.html
 | `digitalhandling.etjanst.domstol.se` | [Visit digitalhandling.etjanst.domstol.se homepage](https://digitalhandling.etjanst.domstol.se/) |
 | `digitaltritningsarkiv.malmo.se` | [Visit digitaltritningsarkiv.malmo.se homepage](https://digitaltritningsarkiv.malmo.se/) |
 | `digitalvard.regionhalland.se` | [Visit digitalvard.regionhalland.se homepage](https://digitalvard.regionhalland.se/) |
+| `do.se` | [Visit do.se homepage](https://do.se/) |
 | `domarringensskola.uppsala.se` | [Visit domarringensskola.uppsala.se homepage](https://domarringensskola.uppsala.se/), [Visit domarringensskola.uppsala.se/link/b1a073d680564cf78166f53564630b5b.aspx](https://domarringensskola.uppsala.se/link/b1a073d680564cf78166f53564630b5b.aspx?gpid=75882), [Visit domarringensskola.uppsala.se/om-skolan/](https://domarringensskola.uppsala.se/om-skolan/) |
 | `donation.socialstyrelsen.se` | [Visit donation.socialstyrelsen.se homepage](https://donation.socialstyrelsen.se/) |
 | `drottningh.helsingborg.se` | [Visit drottningh.helsingborg.se homepage](https://drottningh.helsingborg.se/), [Visit drottningh.helsingborg.se/om-drottningh/vison-mal/](https://drottningh.helsingborg.se/om-drottningh/vison-mal/) |
+| `du.se` | [Visit du.se homepage](https://du.se/) |
 | `e-service.lakemedelsverket.se` | [Visit e-service.lakemedelsverket.se homepage](https://e-service.lakemedelsverket.se/) |
 | `e-tjanster.boverket.se` | [Visit e-tjanster.boverket.se homepage](https://e-tjanster.boverket.se/), [Visit e-tjanster.boverket.se/Citizen/MyPage2](https://e-tjanster.boverket.se/Citizen/MyPage2) |
 | `e-tjanster.eskilstuna.se` | [Visit e-tjanster.eskilstuna.se homepage](https://e-tjanster.eskilstuna.se/), [Visit e-tjanster.eskilstuna.se/c](https://e-tjanster.eskilstuna.se/c?categoryId=64f039639920843717ec4afb) |
@@ -130,21 +141,28 @@ permalink: /domains/sweden.html
 | `ebersteinska.norrkoping.se` | [Visit ebersteinska.norrkoping.se homepage](https://ebersteinska.norrkoping.se/), [Visit ebersteinska.norrkoping.se/ebersteinska-gymnasiet](https://ebersteinska.norrkoping.se/ebersteinska-gymnasiet) |
 | `efecte.uppsala.se` | [Visit efecte.uppsala.se homepage](https://efecte.uppsala.se/) |
 | `efr.havochvatten.se` | [Visit efr.havochvatten.se homepage](https://efr.havochvatten.se/), [Visit efr.havochvatten.se/information](https://efr.havochvatten.se/information) |
+| `ei.se` | [Visit ei.se homepage](https://ei.se/) |
 | `eid.bolagsverket.se` | [Visit eid.bolagsverket.se homepage](https://eid.bolagsverket.se/) |
 | `eid.pts.se` | [Visit eid.pts.se homepage](https://eid.pts.se/) |
+| `ekn.se` | [Visit ekn.se homepage](https://ekn.se/) |
+| `ekobrottsmyndigheten.se` | [Visit ekobrottsmyndigheten.se homepage](https://ekobrottsmyndigheten.se/) |
 | `elegitimation.boverket.se` | [Visit elegitimation.boverket.se homepage](https://elegitimation.boverket.se/) |
 | `ellenfriesgymnasium.uppsala.se` | [Visit ellenfriesgymnasium.uppsala.se homepage](https://ellenfriesgymnasium.uppsala.se/), [Visit ellenfriesgymnasium.uppsala.se/uppstart-augusti-2025/](https://ellenfriesgymnasium.uppsala.se/uppstart-augusti-2025/) |
+| `elsakerhetsverket.se` | [Visit elsakerhetsverket.se homepage](https://elsakerhetsverket.se/) |
 | `enak.lantmateriet.se` | [Visit enak.lantmateriet.se homepage](https://enak.lantmateriet.se/) |
 | `enbyggnadsliv.boverket.se` | [Visit enbyggnadsliv.boverket.se homepage](https://enbyggnadsliv.boverket.se/), [Visit enbyggnadsliv.boverket.se/post-list/index.html](https://enbyggnadsliv.boverket.se/post-list/index.html) |
 | `encore.gotlib.goteborg.se` | [Visit encore.gotlib.goteborg.se homepage](https://encore.gotlib.goteborg.se/) |
+| `energimyndigheten.se` | [Visit energimyndigheten.se homepage](https://energimyndigheten.se/) |
 | `enkater.goteborg.se` | [Visit enkater.goteborg.se homepage](https://enkater.goteborg.se/), [Visit enkater.goteborg.se/ListEnkater.aspx](https://enkater.goteborg.se/ListEnkater.aspx?kat=2023%5cUTF%c3%96RARE__IFOFH) |
 | `eservice.helsingborg.se` | [Visit eservice.helsingborg.se homepage](https://eservice.helsingborg.se/), [Visit eservice.helsingborg.se/MenuGroup2.aspx](https://eservice.helsingborg.se/MenuGroup2.aspx?groupId=30) |
 | `eservice.linkoping.se` | [Visit eservice.linkoping.se homepage](https://eservice.linkoping.se/) |
 | `eservice.ostersund.se` | [Visit eservice.ostersund.se homepage](https://eservice.ostersund.se/), [Visit eservice.ostersund.se/oversikt/overview/769](https://eservice.ostersund.se/oversikt/overview/769) |
 | `eservice.vasteras.se` | [Visit eservice.vasteras.se homepage](https://eservice.vasteras.se/), [Visit eservice.vasteras.se/MenuGroup2.aspx](https://eservice.vasteras.se/MenuGroup2.aspx?groupId=1), [Visit eservice.vasteras.se/MenuGroup2.aspx](https://eservice.vasteras.se/MenuGroup2.aspx?groupId=3) |
+| `esf.se` | [Visit esf.se homepage](https://esf.se/) |
 | `eskil.eskilstuna.se` | [Visit eskil.eskilstuna.se homepage](https://eskil.eskilstuna.se/), [Visit eskil.eskilstuna.se/st-eskils-gymnasium/studera-hos-oss/vara-elever-om-st-eskil](https://eskil.eskilstuna.se/st-eskils-gymnasium/studera-hos-oss/vara-elever-om-st-eskil) |
 | `eskilskallan.eskilstuna.se` | [Visit eskilskallan.eskilstuna.se homepage](https://eskilskallan.eskilstuna.se/), [Visit eskilskallan.eskilstuna.se/items](https://eskilskallan.eskilstuna.se/items?type%5B0%5D=2), [Visit eskilskallan.eskilstuna.se/terms/cookies-policy](https://eskilskallan.eskilstuna.se/terms/cookies-policy) |
 | `estetiska.uppsala.se` | [Visit estetiska.uppsala.se homepage](https://estetiska.uppsala.se/), [Visit estetiska.uppsala.se/blielev/](https://estetiska.uppsala.se/blielev/) |
+| `etikprovning.se` | [Visit etikprovning.se homepage](https://etikprovning.se/) |
 | `etjanst-bygglov.goteborg.se` | [Visit etjanst-bygglov.goteborg.se homepage](https://etjanst-bygglov.goteborg.se/) |
 | `etjanst.domstol.se` | [Visit etjanst.domstol.se homepage](https://etjanst.domstol.se/) |
 | `etjanst.gotland.se` | [Visit etjanst.gotland.se homepage](https://etjanst.gotland.se/), [Visit etjanst.gotland.se/oversikt/overview/1239](https://etjanst.gotland.se/oversikt/overview/1239), [Visit etjanst.gotland.se/oversikt/overview/769](https://etjanst.gotland.se/oversikt/overview/769) |
@@ -158,13 +176,18 @@ permalink: /domains/sweden.html
 | `fardtjansten.regionstockholm.se` | [Visit fardtjansten.regionstockholm.se homepage](https://fardtjansten.regionstockholm.se/), [Visit fardtjansten.regionstockholm.se/om-webbplatsen](https://fardtjansten.regionstockholm.se/om-webbplatsen) |
 | `fastighet.uppsala.se` | [Visit fastighet.uppsala.se homepage](https://fastighet.uppsala.se/), [Visit fastighet.uppsala.se/policy](https://fastighet.uppsala.se/policy) |
 | `fastighet.vgregion.se` | [Visit fastighet.vgregion.se homepage](https://fastighet.vgregion.se/), [Visit fastighet.vgregion.se/link/9ab65405a9044f348ab8b17b87b983d6.aspx](https://fastighet.vgregion.se/link/9ab65405a9044f348ab8b17b87b983d6.aspx), [Visit fastighet.vgregion.se/om-oss/kontakta-oss/](https://fastighet.vgregion.se/om-oss/kontakta-oss/) |
+| `fba.se` | [Visit fba.se homepage](https://fba.se/) |
 | `felanmalan.malmo.se` | [Visit felanmalan.malmo.se homepage](https://felanmalan.malmo.se/) |
+| `fi.se` | [Visit fi.se homepage](https://fi.se/) |
 | `filbornaskolan.helsingborg.se` | [Visit filbornaskolan.helsingborg.se homepage](https://filbornaskolan.helsingborg.se/), [Visit filbornaskolan.helsingborg.se/elevportratt-1/](https://filbornaskolan.helsingborg.se/elevportratt-1/), [Visit filbornaskolan.helsingborg.se/sa-gor-du-ditt-gymnasieval/](https://filbornaskolan.helsingborg.se/sa-gor-du-ditt-gymnasieval/) |
 | `fipogoaml.polisen.se` | [Visit fipogoaml.polisen.se homepage](https://fipogoaml.polisen.se/), [Visit fipogoaml.polisen.se/Account/LogOn](https://fipogoaml.polisen.se/Account/LogOn) |
 | `flexiteext.vasteras.se` | [Visit flexiteext.vasteras.se homepage](https://flexiteext.vasteras.se/) |
 | `flygkalkylatorn.konsumentverket.se` | [Visit flygkalkylatorn.konsumentverket.se homepage](https://flygkalkylatorn.konsumentverket.se/), [Visit flygkalkylatorn.konsumentverket.se/en](https://flygkalkylatorn.konsumentverket.se/en) |
+| `fmi.se` | [Visit fmi.se homepage](https://fmi.se/) |
 | `fmtk.forsvarsmakten.se` | [Visit fmtk.forsvarsmakten.se homepage](https://fmtk.forsvarsmakten.se/), [Visit fmtk.forsvarsmakten.se/cookies](https://fmtk.forsvarsmakten.se/cookies), [Visit fmtk.forsvarsmakten.se/traning/pyramiden](https://fmtk.forsvarsmakten.se/traning/pyramiden) |
+| `fmv.se` | [Visit fmv.se homepage](https://fmv.se/) |
 | `fohm-app.folkhalsomyndigheten.se` | [Visit fohm-app.folkhalsomyndigheten.se homepage](https://fohm-app.folkhalsomyndigheten.se/) |
+| `foi.se` | [Visit foi.se homepage](https://foi.se/) |
 | `folkbiblioteken.lund.se` | [Visit folkbiblioteken.lund.se homepage](https://folkbiblioteken.lund.se/), [Visit folkbiblioteken.lund.se/-/sommarlasning](https://folkbiblioteken.lund.se/-/sommarlasning), [Visit folkbiblioteken.lund.se/-/stadsbibliotekets-vuxenavdelning-stangs-av-tillfalligt](https://folkbiblioteken.lund.se/-/stadsbibliotekets-vuxenavdelning-stangs-av-tillfalligt) |
 | `folkhalsaochsjukvard.rjl.se` | [Visit folkhalsaochsjukvard.rjl.se homepage](https://folkhalsaochsjukvard.rjl.se/), [Visit folkhalsaochsjukvard.rjl.se/vardstod/fakta---allmant-kliniskt-kunskapsstod/](https://folkhalsaochsjukvard.rjl.se/vardstod/fakta---allmant-kliniskt-kunskapsstod/) |
 | `folktandvarden.vgregion.se` | [Visit folktandvarden.vgregion.se homepage](https://folktandvarden.vgregion.se/), [Visit folktandvarden.vgregion.se/jobb-och-utbildning/medarbetare-berattar/](https://folktandvarden.vgregion.se/jobb-och-utbildning/medarbetare-berattar/) |
@@ -174,10 +197,16 @@ permalink: /domains/sweden.html
 | `foretagsinfo.bolagsverket.se` | [Visit foretagsinfo.bolagsverket.se homepage](https://foretagsinfo.bolagsverket.se/), [Visit foretagsinfo.bolagsverket.se/sok-foretagsinformation-web/statistik](https://foretagsinfo.bolagsverket.se/sok-foretagsinformation-web/statistik) |
 | `foretagstjanster-eoriansokanhelp.tullverket.se` | [Visit foretagstjanster-eoriansokanhelp.tullverket.se homepage](https://foretagstjanster-eoriansokanhelp.tullverket.se/), [Visit foretagstjanster-eoriansokanhelp.tullverket.se/en/frontpage.html](https://foretagstjanster-eoriansokanhelp.tullverket.se/en/frontpage.html), [Visit foretagstjanster-eoriansokanhelp.tullverket.se/sv/startsida](https://foretagstjanster-eoriansokanhelp.tullverket.se/sv/startsida) |
 | `forfattningssamling.boverket.se` | [Visit forfattningssamling.boverket.se homepage](https://forfattningssamling.boverket.se/) |
+| `formas.se` | [Visit formas.se homepage](https://formas.se/) |
 | `forsakringsmedicin.socialstyrelsen.se` | [Visit forsakringsmedicin.socialstyrelsen.se homepage](https://forsakringsmedicin.socialstyrelsen.se/), [Visit forsakringsmedicin.socialstyrelsen.se/om-forsakringsmedicin/](https://forsakringsmedicin.socialstyrelsen.se/om-forsakringsmedicin/) |
+| `forskarskattenamnden.se` | [Visit forskarskattenamnden.se homepage](https://forskarskattenamnden.se/) |
+| `forte.se` | [Visit forte.se homepage](https://forte.se/) |
+| `fortifikationsverket.se` | [Visit fortifikationsverket.se homepage](https://fortifikationsverket.se/) |
 | `forum.norrtalje.se` | [Visit forum.norrtalje.se homepage](https://forum.norrtalje.se/), [Visit forum.norrtalje.se/committees/kommunstyrelsens-samhallsbyggnadsutskott](https://forum.norrtalje.se/committees/kommunstyrelsens-samhallsbyggnadsutskott), [Visit forum.norrtalje.se/committees/kultur-och-fritidsnamndens-arbetsutskott](https://forum.norrtalje.se/committees/kultur-och-fritidsnamndens-arbetsutskott) |
 | `fp.sparvagen.goteborg.se` | [Visit fp.sparvagen.goteborg.se homepage](https://fp.sparvagen.goteborg.se/), [Visit fp.sparvagen.goteborg.se/fp/](https://fp.sparvagen.goteborg.se/fp/?version=full) |
 | `fp.trafikverket.se` | [Visit fp.trafikverket.se homepage](https://fp.trafikverket.se/) |
+| `fpr.se` | [Visit fpr.se homepage](https://fpr.se/) |
+| `fra.se` | [Visit fra.se homepage](https://fra.se/) |
 | `fragor.lakemedelsverket.se` | [Visit fragor.lakemedelsverket.se homepage](https://fragor.lakemedelsverket.se/), [Visit fragor.lakemedelsverket.se/org/lakemedelsverket/d/hur-vet-man-om-ett-internetapotek-ar-seriost-eller/](https://fragor.lakemedelsverket.se/org/lakemedelsverket/d/hur-vet-man-om-ett-internetapotek-ar-seriost-eller/?src=popular), [Visit fragor.lakemedelsverket.se/org/lakemedelsverket/posts/handla-skicka-resa-med-medicin/](https://fragor.lakemedelsverket.se/org/lakemedelsverket/posts/handla-skicka-resa-med-medicin/) |
 | `fragor.riksbank.se` | [Visit fragor.riksbank.se homepage](https://fragor.riksbank.se/), [Visit fragor.riksbank.se/org/riksbank/d/hur-manga-jobbar-pa-riksbanken/](https://fragor.riksbank.se/org/riksbank/d/hur-manga-jobbar-pa-riksbanken/?src=popular), [Visit fragor.riksbank.se/org/riksbank/posts/about/](https://fragor.riksbank.se/org/riksbank/posts/about/) |
 | `fri.gavle.se` | [Visit fri.gavle.se homepage](https://fri.gavle.se/), [Visit fri.gavle.se/forening/kakorinfo.aspx](https://fri.gavle.se/forening/kakorinfo.aspx), [Visit fri.gavle.se/forening/visa.aspx](https://fri.gavle.se/forening/visa.aspx?id=AFGH) |
@@ -185,12 +214,14 @@ permalink: /domains/sweden.html
 | `ftvhalland.regionhalland.se` | [Visit ftvhalland.regionhalland.se homepage](https://ftvhalland.regionhalland.se/) |
 | `gamla.regionjh.se` | [Visit gamla.regionjh.se homepage](https://gamla.regionjh.se/), [Visit gamla.regionjh.se/2.69e2c44b1533b78136d191c.html](https://gamla.regionjh.se/2.69e2c44b1533b78136d191c.html) |
 | `gavstaskola.uppsala.se` | [Visit gavstaskola.uppsala.se homepage](https://gavstaskola.uppsala.se/), [Visit gavstaskola.uppsala.se/Information/](https://gavstaskola.uppsala.se/Information/) |
+| `genteknik.se` | [Visit genteknik.se homepage](https://genteknik.se/) |
 | `geo.gotland.se` | [Visit geo.gotland.se homepage](https://geo.gotland.se/) |
 | `geo.malmo.se` | [Visit geo.malmo.se homepage](https://geo.malmo.se/) |
 | `geodatakatalogen.naturvardsverket.se` | [Visit geodatakatalogen.naturvardsverket.se homepage](https://geodatakatalogen.naturvardsverket.se/), [Visit geodatakatalogen.naturvardsverket.se/geonetwork/srv/swe/catalog.signin](https://geodatakatalogen.naturvardsverket.se/geonetwork/srv/swe/catalog.signin?redirect=https%3A%2F%2Fgeodatakatalogen.naturvardsverket.se%2Fgeonetwork%2Fsrv%2Fswe%2Fcatalog.search%23%2Fhome) |
 | `geolex.lantmateriet.se` | [Visit geolex.lantmateriet.se homepage](https://geolex.lantmateriet.se/) |
 | `geotorget.lantmateriet.se` | [Visit geotorget.lantmateriet.se homepage](https://geotorget.lantmateriet.se/) |
 | `gi.karlstad.se` | [Visit gi.karlstad.se homepage](https://gi.karlstad.se/) |
+| `gih.se` | [Visit gih.se homepage](https://gih.se/) |
 | `gisportal.vasteras.se` | [Visit gisportal.vasteras.se homepage](https://gisportal.vasteras.se/), [Visit gisportal.vasteras.se/kp](https://gisportal.vasteras.se/kp) |
 | `godisfabriken.gavle.se` | [Visit godisfabriken.gavle.se homepage](https://godisfabriken.gavle.se/), [Visit godisfabriken.gavle.se/besok-godisfabriken/](https://godisfabriken.gavle.se/besok-godisfabriken/) |
 | `goteborg.se` | [Visit goteborg.se homepage](https://goteborg.se/), [Visit goteborg.se/wps/portal/start/forskola-och-utbildning](https://goteborg.se/wps/portal/start/forskola-och-utbildning), [Visit goteborg.se/wps/portal](https://goteborg.se/wps/portal?uri=gbglnk%3agbg.page.958c1144-4ba5-4a68-ada6-46b0484aa9c4) |
@@ -200,23 +231,35 @@ permalink: /domains/sweden.html
 | `government.se` | [Visit government.se homepage](https://government.se/), [Visit government.se/press-releases/2025/07/sweden-establishes-centre-for-injured-soldiers-in-ukraine/](https://government.se/press-releases/2025/07/sweden-establishes-centre-for-injured-soldiers-in-ukraine/), [Visit government.se/statements/2025/07/joint-statement-of-11-july-2025-by-the-foreign-ministers-of-belgium-czechia-denmark-estonia-finland-france-germany-iceland-ireland-latvia-lithuania-the-netherlands-norway-poland-spain-sweden-the-united-kingdom-and-the-high-representative-o/](https://government.se/statements/2025/07/joint-statement-of-11-july-2025-by-the-foreign-ministers-of-belgium-czechia-denmark-estonia-finland-france-germany-iceland-ireland-latvia-lithuania-the-netherlands-norway-poland-spain-sweden-the-united-kingdom-and-the-high-representative-o/) |
 | `granbyskolan.uppsala.se` | [Visit granbyskolan.uppsala.se homepage](https://granbyskolan.uppsala.se/), [Visit granbyskolan.uppsala.se/Omskolan/](https://granbyskolan.uppsala.se/Omskolan/), [Visit granbyskolan.uppsala.se/link/a9ce781815254fc3ba25bc427a20fa76.aspx](https://granbyskolan.uppsala.se/link/a9ce781815254fc3ba25bc427a20fa76.aspx?gpid=75882) |
 | `gripen.boverket.se` | [Visit gripen.boverket.se homepage](https://gripen.boverket.se/) |
+| `gu.se` | [Visit gu.se homepage](https://gu.se/) |
 | `guideochtips.uppsala.se` | [Visit guideochtips.uppsala.se homepage](https://guideochtips.uppsala.se/), [Visit guideochtips.uppsala.se/sv-se/article/1773527](https://guideochtips.uppsala.se/sv-se/article/1773527) |
 | `gymnasieantagning.vaxjo.se` | [Visit gymnasieantagning.vaxjo.se homepage](https://gymnasieantagning.vaxjo.se/), [Visit gymnasieantagning.vaxjo.se/gymnasieintagning/utbud.asp](https://gymnasieantagning.vaxjo.se/gymnasieintagning/utbud.asp) |
 | `gymnasiebiblioteket.stockholm.se` | [Visit gymnasiebiblioteket.stockholm.se homepage](https://gymnasiebiblioteket.stockholm.se/) |
 | `gymnasieval.jonkoping.se` | [Visit gymnasieval.jonkoping.se homepage](https://gymnasieval.jonkoping.se/), [Visit gymnasieval.jonkoping.se/infor-gymnasievalet.html](https://gymnasieval.jonkoping.se/infor-gymnasievalet.html), [Visit gymnasieval.jonkoping.se/om-webbplatsen.html](https://gymnasieval.jonkoping.se/om-webbplatsen.html) |
 | `gymnasieval.vaxjo.se` | [Visit gymnasieval.vaxjo.se homepage](https://gymnasieval.vaxjo.se/), [Visit gymnasieval.vaxjo.se/bra-att-veta/om-webbplatsen/om-cookies-kakor](https://gymnasieval.vaxjo.se/bra-att-veta/om-webbplatsen/om-cookies-kakor), [Visit gymnasieval.vaxjo.se/vara-gymnasieskolor/katedralskolan](https://gymnasieval.vaxjo.se/vara-gymnasieskolor/katedralskolan) |
 | `hagagymnasiet.norrkoping.se` | [Visit hagagymnasiet.norrkoping.se homepage](https://hagagymnasiet.norrkoping.se/), [Visit hagagymnasiet.norrkoping.se/hagagymnasiet](https://hagagymnasiet.norrkoping.se/hagagymnasiet) |
+| `han.se` | [Visit han.se homepage](https://han.se/) |
+| `harpsund.se` | [Visit harpsund.se homepage](https://harpsund.se/) |
+| `hb.se` | [Visit hb.se homepage](https://hb.se/) |
 | `hbglearns.helsingborg.se` | [Visit hbglearns.helsingborg.se homepage](https://hbglearns.helsingborg.se/) |
 | `helsingborg.se` | [Visit helsingborg.se homepage](https://helsingborg.se/), [Visit helsingborg.se/event/summercamp-helsingborgs-tennisklubb/](https://helsingborg.se/event/summercamp-helsingborgs-tennisklubb/?date=20250716090000), [Visit helsingborg.se/nyheter/spara-ditt-kort-for-resor-med-buss-eller-tag-till-skolan-2/](https://helsingborg.se/nyheter/spara-ditt-kort-for-resor-med-buss-eller-tag-till-skolan-2/) |
 | `heroma.borlange.se` | [Visit heroma.borlange.se homepage](https://heroma.borlange.se/) |
 | `heroma.vgregion.se` | [Visit heroma.vgregion.se homepage](https://heroma.vgregion.se/) |
 | `heromamobil.vgregion.se` | [Visit heromamobil.vgregion.se homepage](https://heromamobil.vgregion.se/), [Visit heromamobil.vgregion.se/HeromaMobile/](https://heromamobil.vgregion.se/HeromaMobile/) |
+| `hh.se` | [Visit hh.se homepage](https://hh.se/) |
+| `hig.se` | [Visit hig.se homepage](https://hig.se/) |
+| `his.se` | [Visit his.se homepage](https://his.se/) |
 | `historiskakartor.lantmateriet.se` | [Visit historiskakartor.lantmateriet.se homepage](https://historiskakartor.lantmateriet.se/) |
 | `historiskavandringar.stockholm.se` | [Visit historiskavandringar.stockholm.se homepage](https://historiskavandringar.stockholm.se/), [Visit historiskavandringar.stockholm.se/platstjanster](https://historiskavandringar.stockholm.se/platstjanster) |
 | `hitta.vgregion.se` | [Visit hitta.vgregion.se homepage](https://hitta.vgregion.se/), [Visit hitta.vgregion.se/sparade-sokningar/](https://hitta.vgregion.se/sparade-sokningar/?theme=) |
+| `hkr.se` | [Visit hkr.se homepage](http://hkr.se/) |
+| `hogstaforvaltningsdomstolen.se` | [Visit hogstaforvaltningsdomstolen.se homepage](https://hogstaforvaltningsdomstolen.se/) |
 | `hrschelpdesk.helsingborg.se` | [Visit hrschelpdesk.helsingborg.se homepage](https://hrschelpdesk.helsingborg.se/), [Visit hrschelpdesk.helsingborg.se/cgi-bin/AGS_Login.cgi](https://hrschelpdesk.helsingborg.se/cgi-bin/AGS_Login.cgi?ForgotPwd=1) |
 | `hrsupport.malmo.se` | [Visit hrsupport.malmo.se homepage](https://hrsupport.malmo.se/), [Visit hrsupport.malmo.se/cgi-bin/AGS_Login.cgi](https://hrsupport.malmo.se/cgi-bin/AGS_Login.cgi?ForgotPwd=1) |
+| `hsan.se` | [Visit hsan.se homepage](http://hsan.se/) |
+| `hv.se` | [Visit hv.se homepage](https://hv.se/) |
 | `hypeweb.smhi.se` | [Visit hypeweb.smhi.se homepage](https://hypeweb.smhi.se/), [Visit hypeweb.smhi.se/water-services/](https://hypeweb.smhi.se/water-services/) |
+| `iaf.se` | [Visit iaf.se homepage](https://iaf.se/) |
 | `idp.boras.se` | [Visit idp.boras.se homepage](https://idp.boras.se/) |
 | `idp.lulea.se` | [Visit idp.lulea.se homepage](https://idp.lulea.se/) |
 | `idp.malmo.se` | [Visit idp.malmo.se homepage](https://idp.malmo.se/) |
@@ -248,17 +291,25 @@ permalink: /domains/sweden.html
 | `interntelefonkatalog.linkoping.se` | [Visit interntelefonkatalog.linkoping.se homepage](https://interntelefonkatalog.linkoping.se/) |
 | `intranat.lulea.se` | [Visit intranat.lulea.se homepage](https://intranat.lulea.se/) |
 | `involvering.helsingborg.se` | [Visit involvering.helsingborg.se homepage](https://involvering.helsingborg.se/), [Visit involvering.helsingborg.se/sv-SE/pages/cookie-policy](https://involvering.helsingborg.se/sv-SE/pages/cookie-policy), [Visit involvering.helsingborg.se/sv-SE/projects/husrundan-helsingborg](https://involvering.helsingborg.se/sv-SE/projects/husrundan-helsingborg) |
+| `irf.se` | [Visit irf.se homepage](https://irf.se/) |
+| `isof.se` | [Visit isof.se homepage](https://isof.se/) |
+| `isp.se` | [Visit isp.se homepage](https://isp.se/) |
 | `isportal.dip.sl.se` | [Visit isportal.dip.sl.se homepage](https://isportal.dip.sl.se/) |
+| `ivo.se` | [Visit ivo.se homepage](https://ivo.se/) |
 | `jagarregistret.naturvardsverket.se` | [Visit jagarregistret.naturvardsverket.se homepage](https://jagarregistret.naturvardsverket.se/) |
+| `jamstalldhetsmyndigheten.se` | [Visit jamstalldhetsmyndigheten.se homepage](https://jamstalldhetsmyndigheten.se/) |
 | `jobb.bostader.boras.se` | [Visit jobb.bostader.boras.se homepage](https://jobb.bostader.boras.se/), [Visit jobb.bostader.boras.se/connect](https://jobb.bostader.boras.se/connect) |
 | `jobb.eskilstuna.se` | [Visit jobb.eskilstuna.se homepage](https://jobb.eskilstuna.se/), [Visit jobb.eskilstuna.se/jobb/lediga-jobb](https://jobb.eskilstuna.se/jobb/lediga-jobb) |
 | `jobb.forsvarsmakten.se` | [Visit jobb.forsvarsmakten.se homepage](https://jobb.forsvarsmakten.se/), [Visit jobb.forsvarsmakten.se/sv/ledigajobb/](https://jobb.forsvarsmakten.se/sv/ledigajobb/), [Visit jobb.forsvarsmakten.se/sv/utbildning/grundutbildning/](https://jobb.forsvarsmakten.se/sv/utbildning/grundutbildning/) |
 | `johannesbacksskolan.uppsala.se` | [Visit johannesbacksskolan.uppsala.se homepage](https://johannesbacksskolan.uppsala.se/), [Visit johannesbacksskolan.uppsala.se/omskolan/](https://johannesbacksskolan.uppsala.se/omskolan/) |
 | `join.videokonferens.rjl.se` | [Visit join.videokonferens.rjl.se homepage](https://join.videokonferens.rjl.se/) |
 | `jonkoping.direkt.1177.se` | [Visit jonkoping.direkt.1177.se homepage](https://jonkoping.direkt.1177.se/), [Visit jonkoping.direkt.1177.se/privacyPolicy](https://jonkoping.direkt.1177.se/privacyPolicy) |
+| `jordbruksverket.se` | [Visit jordbruksverket.se homepage](https://jordbruksverket.se/) |
 | `kalender.sodertalje.se` | [Visit kalender.sodertalje.se homepage](https://kalender.sodertalje.se/), [Visit kalender.sodertalje.se/events/sommarkul-pa-berget-MTYwODE0LDIwMjUtMDctMTQgMDg6MDA=](https://kalender.sodertalje.se/events/sommarkul-pa-berget-MTYwODE0LDIwMjUtMDctMTQgMDg6MDA=) |
 | `kalmar.se` | [Visit kalmar.se homepage](https://kalmar.se/), [Visit kalmar.se/arkiv/pagaende-arbete-och-driftstorningar.html](https://kalmar.se/arkiv/pagaende-arbete-och-driftstorningar.html), [Visit kalmar.se/utbildning-och-barnomsorg.html](https://kalmar.se/utbildning-och-barnomsorg.html) |
+| `kammarkollegiet.se` | [Visit kammarkollegiet.se homepage](https://kammarkollegiet.se/) |
 | `karlstad.se` | [Visit karlstad.se homepage](https://karlstad.se/), [Visit karlstad.se/bygga-bo-och-leva-hallbart/lantmateri-och-fastighetsfragor/servitut-ledningsratt-och-gemensamhetsanlaggning](https://karlstad.se/bygga-bo-och-leva-hallbart/lantmateri-och-fastighetsfragor/servitut-ledningsratt-och-gemensamhetsanlaggning), [Visit karlstad.se/om-webbplatsen/sprak-och-oversattning/language-and-translation](https://karlstad.se/om-webbplatsen/sprak-och-oversattning/language-and-translation) |
+| `karnavfallsfonden.se` | [Visit karnavfallsfonden.se homepage](https://karnavfallsfonden.se/) |
 | `karta.goteborg.se` | [Visit karta.goteborg.se homepage](https://karta.goteborg.se/) |
 | `karta.halmstad.se` | [Visit karta.halmstad.se homepage](https://karta.halmstad.se/) |
 | `karta.huddinge.se` | [Visit karta.huddinge.se homepage](https://karta.huddinge.se/) |
@@ -274,13 +325,22 @@ permalink: /domains/sweden.html
 | `kartutskrift.lantmateriet.se` | [Visit kartutskrift.lantmateriet.se homepage](https://kartutskrift.lantmateriet.se/) |
 | `katedralskolan.uppsala.se` | [Visit katedralskolan.uppsala.se homepage](https://katedralskolan.uppsala.se/), [Visit katedralskolan.uppsala.se/link/bd02efe5fb2d4919a3fe5c45a700284a.aspx](https://katedralskolan.uppsala.se/link/bd02efe5fb2d4919a3fe5c45a700284a.aspx?gpid=75882), [Visit katedralskolan.uppsala.se/oppet-hus-2023/](https://katedralskolan.uppsala.se/oppet-hus-2023/) |
 | `katrineberg.regionhalland.se` | [Visit katrineberg.regionhalland.se homepage](https://katrineberg.regionhalland.se/), [Visit katrineberg.regionhalland.se/informationomcookies.4.15a82e401876efd210eb8cf.html](https://katrineberg.regionhalland.se/informationomcookies.4.15a82e401876efd210eb8cf.html) |
+| `kau.se` | [Visit kau.se homepage](https://kau.se/) |
+| `kb.se` | [Visit kb.se homepage](https://kb.se/) |
+| `kemi.se` | [Visit kemi.se homepage](https://kemi.se/) |
 | `kfhalsingland.se` | [Visit kfhalsingland.se homepage](https://kfhalsingland.se/), [Visit kfhalsingland.se/ovrigt/om-kakor](https://kfhalsingland.se/ovrigt/om-kakor) |
+| `ki.se` | [Visit ki.se homepage](https://ki.se/) |
+| `kkh.se` | [Visit kkh.se homepage](https://kkh.se/) |
 | `klassifikationer.socialstyrelsen.se` | [Visit klassifikationer.socialstyrelsen.se homepage](https://klassifikationer.socialstyrelsen.se/) |
 | `klimatdatabasen.boverket.se` | [Visit klimatdatabasen.boverket.se homepage](https://klimatdatabasen.boverket.se/), [Visit klimatdatabasen.boverket.se/navigera/3](https://klimatdatabasen.boverket.se/navigera/3) |
+| `klimatpolitiskaradet.se` | [Visit klimatpolitiskaradet.se homepage](https://klimatpolitiskaradet.se/) |
+| `kmh.se` | [Visit kmh.se homepage](https://kmh.se/) |
+| `kommerskollegium.se` | [Visit kommerskollegium.se homepage](https://kommerskollegium.se/) |
 | `kommunsiffror.scb.se` | [Visit kommunsiffror.scb.se homepage](https://kommunsiffror.scb.se/) |
 | `komvux.helsingborg.se` | [Visit komvux.helsingborg.se homepage](https://komvux.helsingborg.se/), [Visit komvux.helsingborg.se/utbildningar-och-kurser/grundlaggande-vuxenutbildning/](https://komvux.helsingborg.se/utbildningar-och-kurser/grundlaggande-vuxenutbildning/), [Visit komvux.helsingborg.se/utbildningar-och-kurser/gymnasial-vuxenutbildning/](https://komvux.helsingborg.se/utbildningar-och-kurser/gymnasial-vuxenutbildning/) |
 | `komvux.norrkoping.se` | [Visit komvux.norrkoping.se homepage](https://komvux.norrkoping.se/), [Visit komvux.norrkoping.se/fragment-global/lankade-moduler-layouter/cookiepolicy](https://komvux.norrkoping.se/fragment-global/lankade-moduler-layouter/cookiepolicy), [Visit komvux.norrkoping.se/komvux](https://komvux.norrkoping.se/komvux) |
 | `komvuxmalmo.skola.malmo.se` | [Visit komvuxmalmo.skola.malmo.se homepage](https://komvuxmalmo.skola.malmo.se/), [Visit komvuxmalmo.skola.malmo.se/home](https://komvuxmalmo.skola.malmo.se/home) |
+| `konj.se` | [Visit konj.se homepage](https://konj.se/) |
 | `konstmuseet.eskilstuna.se` | [Visit konstmuseet.eskilstuna.se homepage](https://konstmuseet.eskilstuna.se/), [Visit konstmuseet.eskilstuna.se/besokswebbar/eskilstuna-konstmuseum/oppettider](https://konstmuseet.eskilstuna.se/besokswebbar/eskilstuna-konstmuseum/oppettider) |
 | `konstmuseum.uppsala.se` | [Visit konstmuseum.uppsala.se homepage](https://konstmuseum.uppsala.se/), [Visit konstmuseum.uppsala.se/link/71737c2b0c0a41afa0fda8d1e4d37b8b.aspx](https://konstmuseum.uppsala.se/link/71737c2b0c0a41afa0fda8d1e4d37b8b.aspx?gpid=75882), [Visit konstmuseum.uppsala.se/utstallningar/](https://konstmuseum.uppsala.se/utstallningar/) |
 | `konstwebben.ostersund.se` | [Visit konstwebben.ostersund.se homepage](https://konstwebben.ostersund.se/), [Visit konstwebben.ostersund.se/konsten-i-ostersund/](https://konstwebben.ostersund.se/konsten-i-ostersund/), [Visit konstwebben.ostersund.se/konstverk](https://konstwebben.ostersund.se/konstverk) |
@@ -289,19 +349,24 @@ permalink: /domains/sweden.html
 | `kontakt.stadsmiljo.goteborg.se` | [Visit kontakt.stadsmiljo.goteborg.se homepage](https://kontakt.stadsmiljo.goteborg.se/) |
 | `kronoberg.direkt.1177.se` | [Visit kronoberg.direkt.1177.se homepage](https://kronoberg.direkt.1177.se/), [Visit kronoberg.direkt.1177.se/privacyPolicy](https://kronoberg.direkt.1177.se/privacyPolicy) |
 | `kronofogden.se` | [Visit kronofogden.se homepage](https://kronofogden.se/), [Visit kronofogden.se/e-tjanster-och-blanketter](https://kronofogden.se/e-tjanster-och-blanketter), [Visit kronofogden.se/nagon-har-ett-krav-mot-dig](https://kronofogden.se/nagon-har-ett-krav-mot-dig) |
+| `kth.se` | [Visit kth.se homepage](https://kth.se/) |
 | `kubo.goteborg.se` | [Visit kubo.goteborg.se homepage](https://kubo.goteborg.se/), [Visit kubo.goteborg.se/Events/Details/1854](https://kubo.goteborg.se/Events/Details/1854), [Visit kubo.goteborg.se/Pages/Display/EducationalMaterial](https://kubo.goteborg.se/Pages/Display/EducationalMaterial) |
+| `kulturanalys.se` | [Visit kulturanalys.se homepage](https://kulturanalys.se/) |
 | `kulturfestivalen.stockholm.se` | [Visit kulturfestivalen.stockholm.se homepage](https://kulturfestivalen.stockholm.se/), [Visit kulturfestivalen.stockholm.se/en/home/](https://kulturfestivalen.stockholm.se/en/home/), [Visit kulturfestivalen.stockholm.se/program/](https://kulturfestivalen.stockholm.se/program/) |
 | `kulturkatalogen.regionstockholm.se` | [Visit kulturkatalogen.regionstockholm.se homepage](https://kulturkatalogen.regionstockholm.se/), [Visit kulturkatalogen.regionstockholm.se/aktiviteter/nina-grigorjeva/hej-hej](https://kulturkatalogen.regionstockholm.se/aktiviteter/nina-grigorjeva/hej-hej), [Visit kulturkatalogen.regionstockholm.se/aktiviteter/vidars-verkstad/slojdhopp-hopprepsverkstad-med-aterbruk](https://kulturkatalogen.regionstockholm.se/aktiviteter/vidars-verkstad/slojdhopp-hopprepsverkstad-med-aterbruk) |
 | `kulturkvarteret.orebro.se` | [Visit kulturkvarteret.orebro.se homepage](https://kulturkvarteret.orebro.se/), [Visit kulturkvarteret.orebro.se/kulturkvarteret.4.74aa99c17471d6226fc83e.html](https://kulturkvarteret.orebro.se/kulturkvarteret.4.74aa99c17471d6226fc83e.html) |
 | `kulturnatten.uppsala.se` | [Visit kulturnatten.uppsala.se homepage](https://kulturnatten.uppsala.se/), [Visit kulturnatten.uppsala.se/favoritsida/](https://kulturnatten.uppsala.se/favoritsida/), [Visit kulturnatten.uppsala.se/om-webbplatsen/kakor/](https://kulturnatten.uppsala.se/om-webbplatsen/kakor/) |
+| `kulturradet.se` | [Visit kulturradet.se homepage](https://kulturradet.se/) |
 | `kulturskola.uppsala.se` | [Visit kulturskola.uppsala.se homepage](https://kulturskola.uppsala.se/), [Visit kulturskola.uppsala.se/link/3a381b823b9645b68f82dfa62e6f1118.aspx](https://kulturskola.uppsala.se/link/3a381b823b9645b68f82dfa62e6f1118.aspx?gpid=75882), [Visit kulturskola.uppsala.se/uppsala-kulturskolas-kurskatalog/](https://kulturskola.uppsala.se/uppsala-kulturskolas-kurskatalog/) |
 | `kulturskolan.kalmar.se` | [Visit kulturskolan.kalmar.se/boka-kurs-avgifter-och-villkor.html](https://kulturskolan.kalmar.se/boka-kurs-avgifter-och-villkor.html) |
 | `kulturskolan.norrkoping.se` | [Visit kulturskolan.norrkoping.se homepage](https://kulturskolan.norrkoping.se/), [Visit kulturskolan.norrkoping.se/kulturskolan](https://kulturskolan.norrkoping.se/kulturskolan) |
 | `kulturstod.stockholm.se` | [Visit kulturstod.stockholm.se homepage](https://kulturstod.stockholm.se/) |
 | `kungsgard.norrkoping.se` | [Visit kungsgard.norrkoping.se homepage](https://kungsgard.norrkoping.se/), [Visit kungsgard.norrkoping.se/kungsgardsgymnasiet](https://kungsgard.norrkoping.se/kungsgardsgymnasiet) |
 | `kunskapsbank.umea.se` | [Visit kunskapsbank.umea.se homepage](https://kunskapsbank.umea.se/), [Visit kunskapsbank.umea.se/Home](https://kunskapsbank.umea.se/Home) |
+| `kustbevakningen.se` | [Visit kustbevakningen.se homepage](https://kustbevakningen.se/) |
 | `kvarngardesskolan.uppsala.se` | [Visit kvarngardesskolan.uppsala.se homepage](https://kvarngardesskolan.uppsala.se/), [Visit kvarngardesskolan.uppsala.se/omskolan/](https://kvarngardesskolan.uppsala.se/omskolan/) |
 | `labbutbud.vgregion.se` | [Visit labbutbud.vgregion.se homepage](https://labbutbud.vgregion.se/), [Visit labbutbud.vgregion.se/sok](https://labbutbud.vgregion.se/sok?laboratories=6) |
+| `lansstyrelsen.se` | [Visit lansstyrelsen.se homepage](https://lansstyrelsen.se/) |
 | `lapplands.se` | [Visit lapplands.se homepage](https://lapplands.se/), [Visit lapplands.se/sv/](https://lapplands.se/sv/) |
 | `larplattformen.sodertalje.se` | [Visit larplattformen.sodertalje.se homepage](https://larplattformen.sodertalje.se/) |
 | `larportal.halmstad.se` | [Visit larportal.halmstad.se homepage](https://larportal.halmstad.se/), [Visit larportal.halmstad.se/collections](https://larportal.halmstad.se/collections) |
@@ -310,7 +375,10 @@ permalink: /domains/sweden.html
 | `ledamotspub.huddinge.se` | [Visit ledamotspub.huddinge.se homepage](https://ledamotspub.huddinge.se/), [Visit ledamotspub.huddinge.se/BoardList.aspx](https://ledamotspub.huddinge.se/BoardList.aspx) |
 | `legitimation.socialstyrelsen.se` | [Visit legitimation.socialstyrelsen.se homepage](https://legitimation.socialstyrelsen.se/), [Visit legitimation.socialstyrelsen.se/skyddad-yrkestitel-for-underskoterska/](https://legitimation.socialstyrelsen.se/skyddad-yrkestitel-for-underskoterska/), [Visit legitimation.socialstyrelsen.se/specialistkompetens/](https://legitimation.socialstyrelsen.se/specialistkompetens/) |
 | `lektionsbanken.konsumentverket.se` | [Visit lektionsbanken.konsumentverket.se homepage](https://lektionsbanken.konsumentverket.se/), [Visit lektionsbanken.konsumentverket.se/lektionsbanken/lektion/rakna-hur-mycket-pengar-blir-det/](https://lektionsbanken.konsumentverket.se/lektionsbanken/lektion/rakna-hur-mycket-pengar-blir-det/) |
+| `levandehistoria.se` | [Visit levandehistoria.se homepage](https://levandehistoria.se/) |
 | `lindbackensskola.uppsala.se` | [Visit lindbackensskola.uppsala.se homepage](https://lindbackensskola.uppsala.se/), [Visit lindbackensskola.uppsala.se/om-skolan/](https://lindbackensskola.uppsala.se/om-skolan/) |
+| `liu.se` | [Visit liu.se homepage](https://liu.se/) |
+| `livsmedelsverket.se` | [Visit livsmedelsverket.se homepage](https://livsmedelsverket.se/) |
 | `loftadalen.regionhalland.se` | [Visit loftadalen.regionhalland.se homepage](https://loftadalen.regionhalland.se/), [Visit loftadalen.regionhalland.se/informationomcookies.4.15a82e401876efd210edd6e.html](https://loftadalen.regionhalland.se/informationomcookies.4.15a82e401876efd210edd6e.html) |
 | `login.norrtalje.se` | [Visit login.norrtalje.se homepage](https://login.norrtalje.se/), [Visit login.norrtalje.se/wa/auth](https://login.norrtalje.se/wa/auth?authmech=Anv%c3%a4ndarnamn%20och%20l%c3%b6senord) |
 | `login.prv.se` | [Visit login.prv.se homepage](https://login.prv.se/), [Visit login.prv.se/patent/](https://login.prv.se/patent/) |
@@ -321,6 +389,8 @@ permalink: /domains/sweden.html
 | `lokalidp.vgregion.se` | [Visit lokalidp.vgregion.se homepage](https://lokalidp.vgregion.se/) |
 | `lov.linkoping.se` | [Visit lov.linkoping.se homepage](https://lov.linkoping.se/), [Visit lov.linkoping.se/evenemang/Kom-och-hang-med-Linkopings-ungdomsombud](https://lov.linkoping.se/evenemang/Kom-och-hang-med-Linkopings-ungdomsombud) |
 | `lovskola.uppsala.se` | [Visit lovskola.uppsala.se homepage](https://lovskola.uppsala.se/), [Visit lovskola.uppsala.se/link/82a1822e494d4e9ba7a38aa68709fca9.aspx](https://lovskola.uppsala.se/link/82a1822e494d4e9ba7a38aa68709fca9.aspx?gpid=75882), [Visit lovskola.uppsala.se/om-lovskolan/](https://lovskola.uppsala.se/om-lovskolan/) |
+| `ltu.se` | [Visit ltu.se homepage](https://ltu.se/) |
+| `lu.se` | [Visit lu.se homepage](https://lu.se/) |
 | `lund.se` | [Visit lund.se homepage](https://lund.se/), [Visit lund.se/ovriga-sidor/om-webbplatsen/information-om-cookies](https://lund.se/ovriga-sidor/om-webbplatsen/information-om-cookies) |
 | `lundanamn.lund.se` | [Visit lundanamn.lund.se homepage](https://lundanamn.lund.se/), [Visit lundanamn.lund.se/wiki/Inledning](https://lundanamn.lund.se/wiki/Inledning), [Visit lundanamn.lund.se/wiki/Omr%C3%A5desindelning](https://lundanamn.lund.se/wiki/Omr%C3%A5desindelning) |
 | `m02-mg-local.e24.orebro.se` | [Visit m02-mg-local.e24.orebro.se homepage](https://m02-mg-local.e24.orebro.se/), [Visit m02-mg-local.e24.orebro.se homepage](https://m02-mg-local.e24.orebro.se/?mgvhostparam=vhavare.e24.orebro.se) |
@@ -334,15 +404,22 @@ permalink: /domains/sweden.html
 | `maltidsservice.uppsala.se` | [Visit maltidsservice.uppsala.se homepage](https://maltidsservice.uppsala.se/), [Visit maltidsservice.uppsala.se/link/4bedead058e742eb9633a7856cc1b047.aspx](https://maltidsservice.uppsala.se/link/4bedead058e742eb9633a7856cc1b047.aspx?gpid=75882), [Visit maltidsservice.uppsala.se/mat-och-menyer/](https://maltidsservice.uppsala.se/mat-och-menyer/) |
 | `matchmuseum.jonkoping.se` | [Visit matchmuseum.jonkoping.se homepage](https://matchmuseum.jonkoping.se/), [Visit matchmuseum.jonkoping.se/evenemangskalender/evenemang.html](https://matchmuseum.jonkoping.se/evenemangskalender/evenemang.html?id=5.585777ba197584bca3d706e), [Visit matchmuseum.jonkoping.se/om-webbplatsen.html](https://matchmuseum.jonkoping.se/om-webbplatsen.html) |
 | `matilda.regionvastmanland.se` | [Visit matilda.regionvastmanland.se homepage](https://matilda.regionvastmanland.se/) |
+| `mau.se` | [Visit mau.se homepage](https://mau.se/) |
+| `mcf.se` | [Visit mcf.se homepage](https://mcf.se/) |
+| `mdu.se` | [Visit mdu.se homepage](https://mdu.se/) |
 | `medborgarinflytande.goteborg.se` | [Visit medborgarinflytande.goteborg.se homepage](https://medborgarinflytande.goteborg.se/), [Visit medborgarinflytande.goteborg.se/users/sign_in](https://medborgarinflytande.goteborg.se/users/sign_in) |
 | `meddelande.norrtalje.se` | [Visit meddelande.norrtalje.se homepage](https://meddelande.norrtalje.se/) |
 | `meddelanden.karlstad.se` | [Visit meddelanden.karlstad.se homepage](https://meddelanden.karlstad.se/) |
 | `meddelanden.sodertalje.se` | [Visit meddelanden.sodertalje.se homepage](https://meddelanden.sodertalje.se/) |
 | `meddelanden.sollentuna.se` | [Visit meddelanden.sollentuna.se homepage](https://meddelanden.sollentuna.se/) |
+| `mediemyndigheten.se` | [Visit mediemyndigheten.se homepage](https://mediemyndigheten.se/) |
 | `medxshare.vgregion.se` | [Visit medxshare.vgregion.se homepage](https://medxshare.vgregion.se/) |
 | `meet.polisen.se` | [Visit meet.polisen.se homepage](https://meet.polisen.se/) |
 | `meetingspublic.stockholm.se` | [Visit meetingspublic.stockholm.se homepage](https://meetingspublic.stockholm.se/), [Visit meetingspublic.stockholm.se/committees/skonhetsradets-delegerade-i-plan-och-bygglovsarenden-naturvardsarenden-samt-kulturvardsarenden](https://meetingspublic.stockholm.se/committees/skonhetsradets-delegerade-i-plan-och-bygglovsarenden-naturvardsarenden-samt-kulturvardsarenden) |
+| `mfd.se` | [Visit mfd.se homepage](https://mfd.se/) |
+| `mfof.se` | [Visit mfof.se homepage](https://mfof.se/) |
 | `mg-local.login.solna.se` | [Visit mg-local.login.solna.se homepage](https://mg-local.login.solna.se/), [Visit mg-local.login.solna.se/mg-local/login](https://mg-local.login.solna.se/mg-local/login?type=webtoken) |
+| `migrationsverket.se` | [Visit migrationsverket.se homepage](https://migrationsverket.se/) |
 | `miljobarometern.malmo.se` | [Visit miljobarometern.malmo.se homepage](https://miljobarometern.malmo.se/), [Visit miljobarometern.malmo.se/hallbar-produktion-och-konsumtion/](https://miljobarometern.malmo.se/hallbar-produktion-och-konsumtion/), [Visit miljobarometern.malmo.se/klimat/](https://miljobarometern.malmo.se/klimat/) |
 | `miljobarometern.stockholm.se` | [Visit miljobarometern.stockholm.se homepage](https://miljobarometern.stockholm.se/), [Visit miljobarometern.stockholm.se/klimat/](https://miljobarometern.stockholm.se/klimat/) |
 | `mimer.svk.se` | [Visit mimer.svk.se homepage](https://mimer.svk.se/), [Visit mimer.svk.se/Header/NavigateBySortOrder](https://mimer.svk.se/Header/NavigateBySortOrder?parentSortOrder=1&itemSortOrder=1), [Visit mimer.svk.se/Start/](https://mimer.svk.se/Start/) |
@@ -360,24 +437,37 @@ permalink: /domains/sweden.html
 | `minut.uppsala.se` | [Visit minut.uppsala.se homepage](https://minut.uppsala.se/), [Visit minut.uppsala.se/MenuGroup2.aspx](https://minut.uppsala.se/MenuGroup2.aspx?groupId=1) |
 | `minvard.regiongavleborg.se` | [Visit minvard.regiongavleborg.se homepage](https://minvard.regiongavleborg.se/), [Visit minvard.regiongavleborg.se/privacyPolicy](https://minvard.regiongavleborg.se/privacyPolicy) |
 | `mitt.regionhalland.se` | [Visit mitt.regionhalland.se homepage](https://mitt.regionhalland.se/), [Visit mitt.regionhalland.se/vard](https://mitt.regionhalland.se/vard) |
+| `miun.se` | [Visit miun.se homepage](https://miun.se/) |
+| `modernamuseet.se` | [Visit modernamuseet.se homepage](https://modernamuseet.se/) |
 | `motenmedborgarportal.malmo.se` | [Visit motenmedborgarportal.malmo.se homepage](https://motenmedborgarportal.malmo.se/), [Visit motenmedborgarportal.malmo.se/AuthorizationServer/Account/login](https://motenmedborgarportal.malmo.se/AuthorizationServer/Account/login?client_id=IWP123&client_secret=IWP123&redirect_uri=https%3a%2f%2fmotenmedborgarportal.malmo.se%2f&language=sv), [Visit motenmedborgarportal.malmo.se/committees](https://motenmedborgarportal.malmo.se/committees) |
 | `motesportalen.regionstockholm.se` | [Visit motesportalen.regionstockholm.se homepage](https://motesportalen.regionstockholm.se/) |
+| `mrinstitutet.se` | [Visit mrinstitutet.se homepage](https://mrinstitutet.se/) |
+| `msi.se` | [Visit msi.se homepage](https://msi.se/) |
+| `mtm.se` | [Visit mtm.se homepage](https://mtm.se/) |
 | `multiaccessweb.boras.se` | [Visit multiaccessweb.boras.se homepage](https://multiaccessweb.boras.se/) |
 | `munkagard.regionhalland.se` | [Visit munkagard.regionhalland.se homepage](https://munkagard.regionhalland.se/), [Visit munkagard.regionhalland.se/informationomcookies.4.6db52af6187e6601a8412cf.html](https://munkagard.regionhalland.se/informationomcookies.4.6db52af6187e6601a8412cf.html) |
 | `museum.helsingborg.se` | [Visit museum.helsingborg.se homepage](https://museum.helsingborg.se/), [Visit museum.helsingborg.se/web/Front](https://museum.helsingborg.se/web/Front) |
+| `musikverket.se` | [Visit musikverket.se homepage](https://musikverket.se/) |
 | `mvpn1.boras.se` | [Visit mvpn1.boras.se homepage](https://mvpn1.boras.se/) |
+| `myh.se` | [Visit myh.se homepage](https://myh.se/) |
+| `mynak.se` | [Visit mynak.se homepage](http://mynak.se/) |
+| `myndighetensst.se` | [Visit myndighetensst.se homepage](https://myndighetensst.se/) |
 | `myndighetsregistret.scb.se` | [Visit myndighetsregistret.scb.se homepage](https://myndighetsregistret.scb.se/), [Visit myndighetsregistret.scb.se/Myndighet](https://myndighetsregistret.scb.se/Myndighet) |
+| `nai.uu.se` | [Visit nai.uu.se homepage](https://nai.uu.se/) |
 | `nannaskolan.uppsala.se` | [Visit nannaskolan.uppsala.se homepage](https://nannaskolan.uppsala.se/), [Visit nannaskolan.uppsala.se/gemensam-information/](https://nannaskolan.uppsala.se/gemensam-information/?gpid=328542), [Visit nannaskolan.uppsala.se/link/ffdc23911fe344eabb025ebaeda02af2.aspx](https://nannaskolan.uppsala.se/link/ffdc23911fe344eabb025ebaeda02af2.aspx?gpid=75882) |
 | `narhalsanonline.vgregion.se` | [Visit narhalsanonline.vgregion.se homepage](https://narhalsanonline.vgregion.se/), [Visit narhalsanonline.vgregion.se/terms](https://narhalsanonline.vgregion.se/terms) |
 | `naringsliv.kalmar.se` | [Visit naringsliv.kalmar.se homepage](https://naringsliv.kalmar.se/), [Visit naringsliv.kalmar.se/om-kalmar-kommuns-naringsliv.html](https://naringsliv.kalmar.se/om-kalmar-kommuns-naringsliv.html) |
+| `nationalmuseum.se` | [Visit nationalmuseum.se homepage](https://nationalmuseum.se/) |
 | `navet.umea.se` | [Visit navet.umea.se homepage](https://navet.umea.se/), [Visit navet.umea.se/sidor/infordittbesok.4.cfe8cf1192b3eb72212a07f.html](https://navet.umea.se/sidor/infordittbesok.4.cfe8cf1192b3eb72212a07f.html), [Visit navet.umea.se/sidor/infordittbesok/oppettider/avvikandeoppettider.4.cfe8cf1192b3eb72212a277.html](https://navet.umea.se/sidor/infordittbesok/oppettider/avvikandeoppettider.4.cfe8cf1192b3eb72212a277.html) |
 | `netloan.vasteras.se` | [Visit netloan.vasteras.se homepage](https://netloan.vasteras.se/), [Visit netloan.vasteras.se/Login.aspx](https://netloan.vasteras.se/Login.aspx) |
+| `nfh.se` | [Visit nfh.se homepage](https://nfh.se/) |
 | `nicolaiskolan.helsingborg.se` | [Visit nicolaiskolan.helsingborg.se homepage](https://nicolaiskolan.helsingborg.se/), [Visit nicolaiskolan.helsingborg.se/sa-gor-du-ditt-gymnasieval/](https://nicolaiskolan.helsingborg.se/sa-gor-du-ditt-gymnasieval/), [Visit nicolaiskolan.helsingborg.se/skugga-en-elev/](https://nicolaiskolan.helsingborg.se/skugga-en-elev/) |
 | `njdbwebb.trafikverket.se` | [Visit njdbwebb.trafikverket.se homepage](https://njdbwebb.trafikverket.se/), [Visit njdbwebb.trafikverket.se/SeTransportnatverket](https://njdbwebb.trafikverket.se/SeTransportnatverket) |
 | `norrbotten.se` | [Visit norrbotten.se homepage](https://norrbotten.se/), [Visit norrbotten.se/sv/generella-sidor/soksida/](https://norrbotten.se/sv/generella-sidor/soksida/), [Visit norrbotten.se/sv/region-norrbottens-nyhetsarkiv/miljosamordnaren-som-ror-sig---eva-britt-isaksson-kartlagger-avfall-och-hittar-eldsjalar-i-varden/](https://norrbotten.se/sv/region-norrbottens-nyhetsarkiv/miljosamordnaren-som-ror-sig---eva-britt-isaksson-kartlagger-avfall-och-hittar-eldsjalar-i-varden/) |
 | `norrkoping.se` | [Visit norrkoping.se homepage](https://norrkoping.se/), [Visit norrkoping.se homepage](https://norrkoping.se/?sv.target=12.5ff942e1184b3f255e2b8f4&sv.12.5ff942e1184b3f255e2b8f4.route=/settings), [Visit norrkoping.se/arbete-och-naringsliv](https://norrkoping.se/arbete-och-naringsliv) |
 | `norrtaljekarta.norrtalje.se` | [Visit norrtaljekarta.norrtalje.se homepage](https://norrtaljekarta.norrtalje.se/) |
 | `nova.halmstad.se` | [Visit nova.halmstad.se homepage](https://nova.halmstad.se/), [Visit nova.halmstad.se/protected/ansok-om-bibliotekskort](https://nova.halmstad.se/protected/ansok-om-bibliotekskort), [Visit nova.halmstad.se/startsida](https://nova.halmstad.se/startsida?p_p_id=listResult_WAR_arenaportlet_INSTANCE_WqYnXl0pAwJh&p_p_lifecycle=1&p_p_state=normal&p_p_mode=view&_listResult_WAR_arenaportlet_INSTANCE_WqYnXl0pAwJh__wu=%2FlistResult%2F%3Fwicket%3Ainterface%3D%3A0%3AsearchResultPanel%3AdataContainer%3AdataView%3A3%3AcontainerItem%3Aitem%3AindexedRecordPanel%3AcoverDecorPanel%3Acontent%3AcoverLink%3A%3AILinkListener%3A%3A) |
+| `nrm.se` | [Visit nrm.se homepage](https://nrm.se/) |
 | `nsauthotp04.linkoping.se` | [Visit nsauthotp04.linkoping.se homepage](https://nsauthotp04.linkoping.se/) |
 | `nummer.pts.se` | [Visit nummer.pts.se homepage](https://nummer.pts.se/), [Visit nummer.pts.se/NbrSearch](https://nummer.pts.se/NbrSearch) |
 | `nvdb2012.trafikverket.se` | [Visit nvdb2012.trafikverket.se homepage](https://nvdb2012.trafikverket.se/) |
@@ -386,6 +476,8 @@ permalink: /domains/sweden.html
 | `nyheter--vgregion--se.webbarkivet.vgregion.se` | [Visit nyheter--vgregion--se.webbarkivet.vgregion.se homepage](http://nyheter--vgregion--se.webbarkivet.vgregion.se/), [Visit nyheter--vgregion--se.webbarkivet.vgregion.se/nyheter.vgregion.se/sv/Nyheter/Vastra-Gotalandsregionen/Pressarkiv/index.html](http://nyheter--vgregion--se.webbarkivet.vgregion.se/nyheter.vgregion.se/sv/Nyheter/Vastra-Gotalandsregionen/Pressarkiv/index.html) |
 | `offentligkonst.uppsala.se` | [Visit offentligkonst.uppsala.se homepage](https://offentligkonst.uppsala.se/), [Visit offentligkonst.uppsala.se/offentlig-konst-i-uppsala/](https://offentligkonst.uppsala.se/offentlig-konst-i-uppsala/) |
 | `omsorgenshandbocker.vaxjo.se` | [Visit omsorgenshandbocker.vaxjo.se homepage](https://omsorgenshandbocker.vaxjo.se/), [Visit omsorgenshandbocker.vaxjo.se/ovrigt/om-webbplatsen.html](https://omsorgenshandbocker.vaxjo.se/ovrigt/om-webbplatsen.html), [Visit omsorgenshandbocker.vaxjo.se/sidor/handbok-for-avvikelsehantering-.html](https://omsorgenshandbocker.vaxjo.se/sidor/handbok-for-avvikelsehantering-.html) |
+| `onep.se` | [Visit onep.se homepage](https://onep.se/) |
+| `onh.se` | [Visit onh.se homepage](https://onh.se/) |
 | `opendata.smhi.se` | [Visit opendata.smhi.se homepage](https://opendata.smhi.se/), [Visit opendata.smhi.se/metobs/](https://opendata.smhi.se/metobs/) |
 | `opendata.umea.se` | [Visit opendata.umea.se homepage](https://opendata.umea.se/), [Visit opendata.umea.se/explore/dataset/bygglov-handlaggningstid-for-bygglov-marklov-och-rivningslov/](https://opendata.umea.se/explore/dataset/bygglov-handlaggningstid-for-bygglov-marklov-och-rivningslov/), [Visit opendata.umea.se/pages/teman/](https://opendata.umea.se/pages/teman/) |
 | `oppnasoc.helsingborg.se` | [Visit oppnasoc.helsingborg.se homepage](https://oppnasoc.helsingborg.se/), [Visit oppnasoc.helsingborg.se/mission-motesplats-ad/](https://oppnasoc.helsingborg.se/mission-motesplats-ad/), [Visit oppnasoc.helsingborg.se/sverigekonferensen-slog-klackarna-i-taket/](https://oppnasoc.helsingborg.se/sverigekonferensen-slog-klackarna-i-taket/) |
@@ -393,8 +485,10 @@ permalink: /domains/sweden.html
 | `orebro.direkt.1177.se` | [Visit orebro.direkt.1177.se homepage](https://orebro.direkt.1177.se/), [Visit orebro.direkt.1177.se/privacyPolicy](https://orebro.direkt.1177.se/privacyPolicy) |
 | `orebro.se` | [Visit orebro.se homepage](https://orebro.se/), [Visit orebro.se/kultur--fritid.html](https://orebro.se/kultur--fritid.html), [Visit orebro.se/omsorg--stod.html](https://orebro.se/omsorg--stod.html) |
 | `ortnamn.lantmateriet.se` | [Visit ortnamn.lantmateriet.se homepage](https://ortnamn.lantmateriet.se/) |
+| `oru.se` | [Visit oru.se homepage](https://oru.se/) |
 | `ostergotland.direkt.1177.se` | [Visit ostergotland.direkt.1177.se homepage](https://ostergotland.direkt.1177.se/), [Visit ostergotland.direkt.1177.se/privacyPolicy](https://ostergotland.direkt.1177.se/privacyPolicy) |
 | `ostersund.se` | [Visit ostersund.se homepage](https://ostersund.se/), [Visit ostersund.se/naringsliv-och-arbete/jobba-hos-oss.html](https://ostersund.se/naringsliv-och-arbete/jobba-hos-oss.html), [Visit ostersund.se/om-webbplatsen/nyhetsarkiv/nyhetsarkiv/2025-06-12-upptack-massor-av-roliga-aktiviteter-under-sommaren.html](https://ostersund.se/om-webbplatsen/nyhetsarkiv/nyhetsarkiv/2025-06-12-upptack-massor-av-roliga-aktiviteter-under-sommaren.html) |
+| `overklagandenamnden.se` | [Visit overklagandenamnden.se homepage](https://overklagandenamnden.se/) |
 | `owa.scb.se` | [Visit owa.scb.se homepage](https://owa.scb.se/) |
 | `palmbladsskolan.uppsala.se` | [Visit palmbladsskolan.uppsala.se homepage](https://palmbladsskolan.uppsala.se/), [Visit palmbladsskolan.uppsala.se/om-skolan/](https://palmbladsskolan.uppsala.se/om-skolan/) |
 | `parkeringstillstand.uppsala.se` | [Visit parkeringstillstand.uppsala.se homepage](https://parkeringstillstand.uppsala.se/) |
@@ -415,6 +509,7 @@ permalink: /domains/sweden.html
 | `pmobile.skelleftea.se` | [Visit pmobile.skelleftea.se homepage](https://pmobile.skelleftea.se/), [Visit pmobile.skelleftea.se/SKEEAK/Login/Cookies/About](https://pmobile.skelleftea.se/SKEEAK/Login/Cookies/About?useSso=False&wa=wsignin1.0&wtrealm=https%3A%2F%2Fpmobile.skelleftea.se%2FPMobile%2F&wctx=rm%3D0%26id%3Dpassive%26ru%3D%252fPMobile%252f&wct=2025-07-17T03%3A05%3A31Z&wreply=https%3A%2F%2Fpmobile.skelleftea.se%2FPMobile%2F) |
 | `pmsv4.trafikverket.se` | [Visit pmsv4.trafikverket.se homepage](https://pmsv4.trafikverket.se/), [Visit pmsv4.trafikverket.se/sok-strackor](https://pmsv4.trafikverket.se/sok-strackor) |
 | `poit.bolagsverket.se` | [Visit poit.bolagsverket.se homepage](https://poit.bolagsverket.se/), [Visit poit.bolagsverket.se/poit-app/sok-arsredovisning](https://poit.bolagsverket.se/poit-app/sok-arsredovisning) |
+| `polar.se` | [Visit polar.se homepage](http://polar.se/) |
 | `polisen.se` | [Visit polisen.se homepage](https://polisen.se/), [Visit polisen.se/om-polisen/om-webbplatsen/om-cookies--kakor/](https://polisen.se/om-polisen/om-webbplatsen/om-cookies--kakor/), [Visit polisen.se/om-polisen/uppdrag-och-mal/](https://polisen.se/om-polisen/uppdrag-och-mal/) |
 | `politiker.goteborg.se` | [Visit politiker.goteborg.se homepage](https://politiker.goteborg.se/), [Visit politiker.goteborg.se/organisation/6189f19a-a4e0-4bd8-874a-3c631a9ea6de](https://politiker.goteborg.se/organisation/6189f19a-a4e0-4bd8-874a-3c631a9ea6de), [Visit politiker.goteborg.se/organisationstyp/474dfb6d-9788-452b-a2dd-ca5bbe7c97cb](https://politiker.goteborg.se/organisationstyp/474dfb6d-9788-452b-a2dd-ca5bbe7c97cb) |
 | `portal.huddinge.se` | [Visit portal.huddinge.se homepage](https://portal.huddinge.se/), [Visit portal.huddinge.se/wa/auth](https://portal.huddinge.se/wa/auth?authmech=Anv%c3%a4ndare%20%26%20L%c3%b6senord) |
@@ -441,8 +536,10 @@ permalink: /domains/sweden.html
 | `public-wifi.stockholm.se` | [Visit public-wifi.stockholm.se homepage](https://public-wifi.stockholm.se/) |
 | `publikationer.konsumentverket.se` | [Visit publikationer.konsumentverket.se homepage](https://publikationer.konsumentverket.se/), [Visit publikationer.konsumentverket.se/barn-och-foralder](https://publikationer.konsumentverket.se/barn-och-foralder), [Visit publikationer.konsumentverket.se/privatekonomi/gar-din-ekonomi-inte-ihop-2](https://publikationer.konsumentverket.se/privatekonomi/gar-din-ekonomi-inte-ihop-2) |
 | `pwd.sodertalje.se` | [Visit pwd.sodertalje.se homepage](https://pwd.sodertalje.se/) |
+| `raa.se` | [Visit raa.se homepage](https://raa.se/) |
 | `raddsamf.jonkoping.se` | [Visit raddsamf.jonkoping.se homepage](https://raddsamf.jonkoping.se/), [Visit raddsamf.jonkoping.se/omraden/1storrehandelserflerasamtidigahandelser.4.65045ea5168bced68f67e67.html](https://raddsamf.jonkoping.se/omraden/1storrehandelserflerasamtidigahandelser.4.65045ea5168bced68f67e67.html), [Visit raddsamf.jonkoping.se/omraden/varendsrtjvaxjoalvesta/varendartiklar/brandibyggnadvilla.5.585777ba197584bca3dc37d0.html](https://raddsamf.jonkoping.se/omraden/varendsrtjvaxjoalvesta/varendartiklar/brandibyggnadvilla.5.585777ba197584bca3dc37d0.html) |
 | `rademachersmedjorna.eskilstuna.se` | [Visit rademachersmedjorna.eskilstuna.se homepage](https://rademachersmedjorna.eskilstuna.se/), [Visit rademachersmedjorna.eskilstuna.se/besokswebbar/rademachersmedjorna/hantverkare](https://rademachersmedjorna.eskilstuna.se/besokswebbar/rademachersmedjorna/hantverkare), [Visit rademachersmedjorna.eskilstuna.se/besokswebbar/rademachersmedjorna/oppettider](https://rademachersmedjorna.eskilstuna.se/besokswebbar/rademachersmedjorna/oppettider) |
+| `rattshjalp.se` | [Visit rattshjalp.se homepage](https://rattshjalp.se/) |
 | `referatsamling.brottsoffermyndigheten.se` | [Visit referatsamling.brottsoffermyndigheten.se homepage](https://referatsamling.brottsoffermyndigheten.se/), [Visit referatsamling.brottsoffermyndigheten.se/referat-till-och-med-den-30-juni-2022/](https://referatsamling.brottsoffermyndigheten.se/referat-till-och-med-den-30-juni-2022/), [Visit referatsamling.brottsoffermyndigheten.se/sok/](https://referatsamling.brottsoffermyndigheten.se/sok/) |
 | `referensmetodik.folkhalsomyndigheten.se` | [Visit referensmetodik.folkhalsomyndigheten.se homepage](https://referensmetodik.folkhalsomyndigheten.se/), [Visit referensmetodik.folkhalsomyndigheten.se/w/Huvudsida](https://referensmetodik.folkhalsomyndigheten.se/w/Huvudsida) |
 | `regeringen.se` | [Visit regeringen.se homepage](https://regeringen.se/), [Visit regeringen.se/regeringens-politik/militart-forsvar/](https://regeringen.se/regeringens-politik/militart-forsvar/), [Visit regeringen.se/tx/1291](https://regeringen.se/tx/1291) |
@@ -458,6 +555,7 @@ permalink: /domains/sweden.html
 | `rekarne.eskilstuna.se` | [Visit rekarne.eskilstuna.se homepage](https://rekarne.eskilstuna.se/), [Visit rekarne.eskilstuna.se/rekarnegymnasiet/for-elever-och-vardnadshavare/upprop](https://rekarne.eskilstuna.se/rekarnegymnasiet/for-elever-och-vardnadshavare/upprop), [Visit rekarne.eskilstuna.se/rekarnegymnasiet/studera-hos-oss/oppet-hus](https://rekarne.eskilstuna.se/rekarnegymnasiet/studera-hos-oss/oppet-hus) |
 | `reklistan.vgregion.se` | [Visit reklistan.vgregion.se homepage](https://reklistan.vgregion.se/) |
 | `resultat.val.se` | [Visit resultat.val.se homepage](https://resultat.val.se/), [Visit resultat.val.se/euval2024](https://resultat.val.se/euval2024) |
+| `revisorsinspektionen.se` | [Visit revisorsinspektionen.se homepage](https://revisorsinspektionen.se/) |
 | `riksarkivet.se` | [Visit riksarkivet.se homepage](https://riksarkivet.se/), [Visit riksarkivet.se/notiser/driftinformation](https://riksarkivet.se/notiser/driftinformation), [Visit riksarkivet.se/utforska-och-bestall/bestall-kopior-och-undersokningsuppdrag](https://riksarkivet.se/utforska-och-bestall/bestall-kopior-och-undersokningsuppdrag) |
 | `rinman.eskilstuna.se` | [Visit rinman.eskilstuna.se homepage](https://rinman.eskilstuna.se/), [Visit rinman.eskilstuna.se/rinmangymnasiet/program/el--och-energiprogrammet](https://rinman.eskilstuna.se/rinmangymnasiet/program/el--och-energiprogrammet) |
 | `rjl.se` | [Visit rjl.se homepage](https://rjl.se/), [Visit rjl.se/nyheter/nyheter-och-pressmeddelanden/susanne-almers-utsedd-till-direktor-for-vardcentralerna-bra-liv-444629](https://rjl.se/nyheter/nyheter-och-pressmeddelanden/susanne-almers-utsedd-till-direktor-for-vardcentralerna-bra-liv-444629), [Visit rjl.se/om-oss/pressrum/region-jonkopings-lan-i-almedalen-20242/](https://rjl.se/om-oss/pressrum/region-jonkopings-lan-i-almedalen-20242/) |
@@ -465,6 +563,7 @@ permalink: /domains/sweden.html
 | `ronnowskaskolan.helsingborg.se` | [Visit ronnowskaskolan.helsingborg.se homepage](https://ronnowskaskolan.helsingborg.se/), [Visit ronnowskaskolan.helsingborg.se/bageriet-sotbiten/](https://ronnowskaskolan.helsingborg.se/bageriet-sotbiten/) |
 | `rosendalsgymnasiet.uppsala.se` | [Visit rosendalsgymnasiet.uppsala.se homepage](https://rosendalsgymnasiet.uppsala.se/), [Visit rosendalsgymnasiet.uppsala.se/link/e56fcc84ef394f9eb4dd03f335e54798.aspx](https://rosendalsgymnasiet.uppsala.se/link/e56fcc84ef394f9eb4dd03f335e54798.aspx?gpid=75882) |
 | `rosendalsskola.uppsala.se` | [Visit rosendalsskola.uppsala.se homepage](https://rosendalsskola.uppsala.se/), [Visit rosendalsskola.uppsala.se/omskolan/](https://rosendalsskola.uppsala.se/omskolan/) |
+| `rymdstyrelsen.se` | [Visit rymdstyrelsen.se homepage](https://rymdstyrelsen.se/) |
 | `saccess.lantmateriet.se` | [Visit saccess.lantmateriet.se homepage](https://saccess.lantmateriet.se/), [Visit saccess.lantmateriet.se/portal/index.html](https://saccess.lantmateriet.se/portal/index.html) |
 | `safi.lantmateriet.se` | [Visit safi.lantmateriet.se homepage](https://safi.lantmateriet.se/) |
 | `sahlgrenska-klinkem-analyser.vgregion.se` | [Visit sahlgrenska-klinkem-analyser.vgregion.se homepage](https://sahlgrenska-klinkem-analyser.vgregion.se/) |
@@ -472,12 +571,14 @@ permalink: /domains/sweden.html
 | `sakrameddelanden.uppsala.se` | [Visit sakrameddelanden.uppsala.se homepage](https://sakrameddelanden.uppsala.se/) |
 | `samarbetswebb.gotland.se` | [Visit samarbetswebb.gotland.se homepage](https://samarbetswebb.gotland.se/), [Visit samarbetswebb.gotland.se/arkiv/infomeddelande/2025-07-02-stor-risk-for-vattenbrist](https://samarbetswebb.gotland.se/arkiv/infomeddelande/2025-07-02-stor-risk-for-vattenbrist), [Visit samarbetswebb.gotland.se/rg/samarbetswebb](https://samarbetswebb.gotland.se/rg/samarbetswebb) |
 | `samarbetsyta.ehalsomyndigheten.se` | [Visit samarbetsyta.ehalsomyndigheten.se homepage](https://samarbetsyta.ehalsomyndigheten.se/), [Visit samarbetsyta.ehalsomyndigheten.se/ss/samverkan-och-samarbete-224796537.html](https://samarbetsyta.ehalsomyndigheten.se/ss/samverkan-och-samarbete-224796537.html) |
+| `sameskolstyrelsen.se` | [Visit sameskolstyrelsen.se homepage](https://sameskolstyrelsen.se/) |
 | `sametinget.se` | [Visit sametinget.se homepage](https://sametinget.se/), [Visit sametinget.se/dokumentbank](https://sametinget.se/dokumentbank) |
 | `sammantraden.gotland.se` | [Visit sammantraden.gotland.se homepage](https://sammantraden.gotland.se/), [Visit sammantraden.gotland.se/committees/gymnasie-och-vuxenutbildningsnamndens-arbetsutskott](https://sammantraden.gotland.se/committees/gymnasie-och-vuxenutbildningsnamndens-arbetsutskott) |
 | `sammantraden.linkoping.se` | [Visit sammantraden.linkoping.se homepage](https://sammantraden.linkoping.se/), [Visit sammantraden.linkoping.se/committees/overformyndarnamnden](https://sammantraden.linkoping.se/committees/overformyndarnamnden) |
 | `samverkan.regionsormland.se` | [Visit samverkan.regionsormland.se homepage](https://samverkan.regionsormland.se/), [Visit samverkan.regionsormland.se/om-webbplatsen/](https://samverkan.regionsormland.se/om-webbplatsen/), [Visit samverkan.regionsormland.se/utveckling-och-samarbete/](https://samverkan.regionsormland.se/utveckling-och-samarbete/) |
 | `sas.vgregion.se` | [Visit sas.vgregion.se homepage](https://sas.vgregion.se/), [Visit sas.vgregion.se/avdelningar-och-mottagningar/](https://sas.vgregion.se/avdelningar-och-mottagningar/), [Visit sas.vgregion.se/kontakt/](https://sas.vgregion.se/kontakt/) |
 | `sbf.gotland.se` | [Visit sbf.gotland.se homepage](https://sbf.gotland.se/), [Visit sbf.gotland.se/MenuGroup2.aspx](https://sbf.gotland.se/MenuGroup2.aspx?groupId=2) |
+| `sbu.se` | [Visit sbu.se homepage](https://sbu.se/) |
 | `scensommar.vaxjo.se` | [Visit scensommar.vaxjo.se homepage](https://scensommar.vaxjo.se/), [Visit scensommar.vaxjo.se/bra-att-veta/om-upplev-vaxjo/om-cookies-kakor](https://scensommar.vaxjo.se/bra-att-veta/om-upplev-vaxjo/om-cookies-kakor) |
 | `secmail.naturvardsverket.se` | [Visit secmail.naturvardsverket.se homepage](https://secmail.naturvardsverket.se/) |
 | `secure.socialstyrelsen.se` | [Visit secure.socialstyrelsen.se homepage](https://secure.socialstyrelsen.se/) |
@@ -493,9 +594,19 @@ permalink: /domains/sweden.html
 | `serviceintern.orebro.se` | [Visit serviceintern.orebro.se homepage](https://serviceintern.orebro.se/), [Visit serviceintern.orebro.se/Citizen/MyPage2](https://serviceintern.orebro.se/Citizen/MyPage2) |
 | `serviceinternal.karlskrona.se` | [Visit serviceinternal.karlskrona.se homepage](https://serviceinternal.karlskrona.se/), [Visit serviceinternal.karlskrona.se/Citizen/MyPage2](https://serviceinternal.karlskrona.se/Citizen/MyPage2) |
 | `seservice.helsingborg.se` | [Visit seservice.helsingborg.se homepage](https://seservice.helsingborg.se/), [Visit seservice.helsingborg.se/MenuGroup2.aspx](https://seservice.helsingborg.se/MenuGroup2.aspx?groupId=100) |
+| `sfhm.se` | [Visit sfhm.se homepage](https://sfhm.se/) |
+| `sfv.se` | [Visit sfv.se homepage](https://sfv.se/) |
+| `sgu.se` | [Visit sgu.se homepage](https://sgu.se/) |
+| `sh.se` | [Visit sh.se homepage](https://sh.se/) |
 | `shb.umea.se` | [Visit shb.umea.se homepage](https://shb.umea.se/) |
+| `shk.se` | [Visit shk.se homepage](https://shk.se/) |
+| `shm.se` | [Visit shm.se homepage](https://shm.se/) |
+| `si.se` | [Visit si.se homepage](https://si.se/) |
+| `sida.se` | [Visit sida.se homepage](https://sida.se/) |
+| `sieps.se` | [Visit sieps.se homepage](https://sieps.se/) |
 | `sign.uppsala.se` | [Visit sign.uppsala.se homepage](https://sign.uppsala.se/), [Visit sign.uppsala.se/validate](https://sign.uppsala.se/validate) |
 | `sitrus-bhr.sl.se` | [Visit sitrus-bhr.sl.se homepage](https://sitrus-bhr.sl.se/) |
+| `siun.se` | [Visit siun.se homepage](https://siun.se/) |
 | `sjalvservice.boras.se` | [Visit sjalvservice.boras.se homepage](https://sjalvservice.boras.se/), [Visit sjalvservice.boras.se/formgroup](https://sjalvservice.boras.se/formgroup?groupToDisplay=5a2967b8cc80ba08e897f12b) |
 | `sjalvservice.gavle.se` | [Visit sjalvservice.gavle.se homepage](https://sjalvservice.gavle.se/), [Visit sjalvservice.gavle.se/oversikt/overview/1514](https://sjalvservice.gavle.se/oversikt/overview/1514), [Visit sjalvservice.gavle.se/oversikt/overview/727](https://sjalvservice.gavle.se/oversikt/overview/727) |
 | `sjalvservice.lulea.se` | [Visit sjalvservice.lulea.se homepage](https://sjalvservice.lulea.se/), [Visit sjalvservice.lulea.se/oversikt/overview/2640](https://sjalvservice.lulea.se/oversikt/overview/2640) |
@@ -506,9 +617,11 @@ permalink: /domains/sweden.html
 | `sjalvservice3.boras.se` | [Visit sjalvservice3.boras.se homepage](https://sjalvservice3.boras.se/), [Visit sjalvservice3.boras.se/c](https://sjalvservice3.boras.se/c?categoryId=63eca670603ea01b6ca23a86) |
 | `sjukresor.regionstockholm.se` | [Visit sjukresor.regionstockholm.se homepage](https://sjukresor.regionstockholm.se/), [Visit sjukresor.regionstockholm.se/om-sjukresor](https://sjukresor.regionstockholm.se/om-sjukresor), [Visit sjukresor.regionstockholm.se/om-webbplatsen/kakinstallningar](https://sjukresor.regionstockholm.se/om-webbplatsen/kakinstallningar) |
 | `skane.direkt.1177.se` | [Visit skane.direkt.1177.se homepage](https://skane.direkt.1177.se/), [Visit skane.direkt.1177.se/privacyPolicy](https://skane.direkt.1177.se/privacyPolicy) |
+| `skatterattsnamnden.se` | [Visit skatterattsnamnden.se homepage](https://skatterattsnamnden.se/) |
 | `skatteverket.se` | [Visit skatteverket.se homepage](https://skatteverket.se/), [Visit skatteverket.se/privat/etjansterochblanketter/allaetjanster.4.18e1b10334ebe8bc80009.html](https://skatteverket.se/privat/etjansterochblanketter/allaetjanster.4.18e1b10334ebe8bc80009.html) |
 | `skelleftea.se` | [Visit skelleftea.se homepage](https://skelleftea.se/), [Visit skelleftea.se/invanare/startsida/kommun-och-politik/press--och-informationsmaterial/om-webbplatsen](https://skelleftea.se/invanare/startsida/kommun-och-politik/press--och-informationsmaterial/om-webbplatsen), [Visit skelleftea.se/platsen/flytta-hit/flytta-hit/karriar-och-kompetens/studera](https://skelleftea.se/platsen/flytta-hit/flytta-hit/karriar-och-kompetens/studera) |
 | `skilsmassa.etjanst.domstol.se` | [Visit skilsmassa.etjanst.domstol.se homepage](https://skilsmassa.etjanst.domstol.se/) |
+| `skogsstyrelsen.se` | [Visit skogsstyrelsen.se homepage](https://skogsstyrelsen.se/) |
 | `skola.karlstad.se` | [Visit skola.karlstad.se homepage](https://skola.karlstad.se/), [Visit skola.karlstad.se/blog/nytt-matematikverktyg-tillgangligt/](https://skola.karlstad.se/blog/nytt-matematikverktyg-tillgangligt/) |
 | `skolbibliotek.malmo.se` | [Visit skolbibliotek.malmo.se homepage](https://skolbibliotek.malmo.se/) |
 | `skolfastigheter.uppsala.se` | [Visit skolfastigheter.uppsala.se homepage](https://skolfastigheter.uppsala.se/), [Visit skolfastigheter.uppsala.se/om-oss/aktuellt/vi-jobbar-pa-med-underhall-renoveringar-och-nyproduktion-i-sommar/](https://skolfastigheter.uppsala.se/om-oss/aktuellt/vi-jobbar-pa-med-underhall-renoveringar-och-nyproduktion-i-sommar/), [Visit skolfastigheter.uppsala.se/vara-fastigheter/](https://skolfastigheter.uppsala.se/vara-fastigheter/) |
@@ -519,15 +632,19 @@ permalink: /domains/sweden.html
 | `skolfederation.sodertalje.se` | [Visit skolfederation.sodertalje.se homepage](https://skolfederation.sodertalje.se/) |
 | `skolfederation.taby.se` | [Visit skolfederation.taby.se homepage](https://skolfederation.taby.se/) |
 | `skolfederation.uppsala.se` | [Visit skolfederation.uppsala.se homepage](https://skolfederation.uppsala.se/) |
+| `skolfi.se` | [Visit skolfi.se homepage](https://skolfi.se/) |
 | `skolinspektionen.se` | [Visit skolinspektionen.se homepage](https://skolinspektionen.se/), [Visit skolinspektionen.se/aktuellt/nyheter/skolinspektionens-arsrapport--iakttagelser-och-erfarenheter-fran-2024/](https://skolinspektionen.se/aktuellt/nyheter/skolinspektionens-arsrapport--iakttagelser-och-erfarenheter-fran-2024/), [Visit skolinspektionen.se/beslut-rapporter/teman-fran-var-inspektionen/](https://skolinspektionen.se/beslut-rapporter/teman-fran-var-inspektionen/) |
 | `skolnetidp.uppsala.se` | [Visit skolnetidp.uppsala.se homepage](https://skolnetidp.uppsala.se/) |
 | `skolportal.uppsala.se` | [Visit skolportal.uppsala.se homepage](https://skolportal.uppsala.se/) |
 | `skolportalen.helsingborg.se` | [Visit skolportalen.helsingborg.se homepage](https://skolportalen.helsingborg.se/), [Visit skolportalen.helsingborg.se/driftinformation/inga-driftstorningar-2/](https://skolportalen.helsingborg.se/driftinformation/inga-driftstorningar-2/) |
 | `skolskjuts.uppsala.se` | [Visit skolskjuts.uppsala.se homepage](https://skolskjuts.uppsala.se/) |
 | `skolstart.vaxjo.se` | [Visit skolstart.vaxjo.se homepage](https://skolstart.vaxjo.se/), [Visit skolstart.vaxjo.se/gymnasieskola/gymnasieskola.html](https://skolstart.vaxjo.se/gymnasieskola/gymnasieskola.html) |
+| `skolverket.se` | [Visit skolverket.se homepage](https://skolverket.se/) |
 | `skyddadnatur.naturvardsverket.se` | [Visit skyddadnatur.naturvardsverket.se homepage](https://skyddadnatur.naturvardsverket.se/) |
 | `sl.se` | [Visit sl.se homepage](https://sl.se/), [Visit sl.se/om-sl/om-sl/om-webbplatsen](https://sl.se/om-sl/om-sl/om-webbplatsen) |
 | `slottshistoriska.uppsala.se` | [Visit slottshistoriska.uppsala.se homepage](https://slottshistoriska.uppsala.se/), [Visit slottshistoriska.uppsala.se/sv/aktuellt/](https://slottshistoriska.uppsala.se/sv/aktuellt/), [Visit slottshistoriska.uppsala.se/sv/aktuellt/introduktionsvisningar/](https://slottshistoriska.uppsala.se/sv/aktuellt/introduktionsvisningar/) |
+| `slu.se` | [Visit slu.se homepage](https://slu.se/) |
+| `slv.se` | [Visit slv.se homepage](https://slv.se/) |
 | `snisok.scb.se` | [Visit snisok.scb.se homepage](https://snisok.scb.se/), [Visit snisok.scb.se/E](https://snisok.scb.se/E), [Visit snisok.scb.se/en](https://snisok.scb.se/en) |
 | `snr.bolagsverket.se` | [Visit snr.bolagsverket.se homepage](https://snr.bolagsverket.se/), [Visit snr.bolagsverket.se/snrgate/flik.do](https://snr.bolagsverket.se/snrgate/flik.do?flik=foretagsinfo) |
 | `snr4.bolagsverket.se` | [Visit snr4.bolagsverket.se homepage](https://snr4.bolagsverket.se/), [Visit snr4.bolagsverket.se/snrgate/flik.do](https://snr4.bolagsverket.se/snrgate/flik.do?flik=foretagsinfo) |
@@ -538,6 +655,9 @@ permalink: /domains/sweden.html
 | `sokenergideklaration.boverket.se` | [Visit sokenergideklaration.boverket.se homepage](https://sokenergideklaration.boverket.se/), [Visit sokenergideklaration.boverket.se/tillganglighetsredogorelse](https://sokenergideklaration.boverket.se/tillganglighetsredogorelse) |
 | `sommarjobb.vaxjo.se` | [Visit sommarjobb.vaxjo.se homepage](https://sommarjobb.vaxjo.se/) |
 | `sp.lulea.se` | [Visit sp.lulea.se homepage](https://sp.lulea.se/) |
+| `sprakochfolkminnen.se` | [Visit sprakochfolkminnen.se homepage](http://sprakochfolkminnen.se/) |
+| `spsm.se` | [Visit spsm.se homepage](https://spsm.se/) |
+| `spv.se` | [Visit spv.se homepage](https://spv.se/) |
 | `srmh.taby.se` | [Visit srmh.taby.se homepage](https://srmh.taby.se/) |
 | `sso.kronofogden.se` | [Visit sso.kronofogden.se homepage](https://sso.kronofogden.se/) |
 | `stadsatlas.malmo.se` | [Visit stadsatlas.malmo.se homepage](https://stadsatlas.malmo.se/) |
@@ -546,13 +666,25 @@ permalink: /domains/sweden.html
 | `stadsteatern.goteborg.se` | [Visit stadsteatern.goteborg.se homepage](https://stadsteatern.goteborg.se/), [Visit stadsteatern.goteborg.se/restaurang/](https://stadsteatern.goteborg.se/restaurang/), [Visit stadsteatern.goteborg.se/villkor/](https://stadsteatern.goteborg.se/villkor/) |
 | `stadsutveckling.eskilstuna.se` | [Visit stadsutveckling.eskilstuna.se homepage](https://stadsutveckling.eskilstuna.se/), [Visit stadsutveckling.eskilstuna.se/stadsutveckling/pagaende-projekt/ovriga/2025-07-02-eskilstunas-nyinstiftade-arkitekturpris-2025-har-tilldelats-kapellbackens-trygghetsboende](https://stadsutveckling.eskilstuna.se/stadsutveckling/pagaende-projekt/ovriga/2025-07-02-eskilstunas-nyinstiftade-arkitekturpris-2025-har-tilldelats-kapellbackens-trygghetsboende) |
 | `start.stockholm` | [Visit start.stockholm homepage](https://start.stockholm/), [Visit start.stockholm/om-webbplatsen/om-kakor-pa-webbplatsen/](https://start.stockholm/om-webbplatsen/om-kakor-pa-webbplatsen/), [Visit start.stockholm/sok/](https://start.stockholm/sok/) |
+| `stat-inst.se` | [Visit stat-inst.se homepage](https://stat-inst.se/) |
+| `statensansvarsnamnd.se` | [Visit statensansvarsnamnd.se homepage](https://statensansvarsnamnd.se/) |
+| `statenskonstrad.se` | [Visit statenskonstrad.se homepage](https://statenskonstrad.se/) |
+| `statensmuseermtf.se` | [Visit statensmuseermtf.se homepage](https://statensmuseermtf.se/) |
 | `statistik.pts.se` | [Visit statistik.pts.se homepage](https://statistik.pts.se/), [Visit statistik.pts.se/en](https://statistik.pts.se/en), [Visit statistik.pts.se/post/](https://statistik.pts.se/post/) |
 | `statsbidrag.socialstyrelsen.se` | [Visit statsbidrag.socialstyrelsen.se homepage](https://statsbidrag.socialstyrelsen.se/), [Visit statsbidrag.socialstyrelsen.se/om-statsbidrag/](https://statsbidrag.socialstyrelsen.se/om-statsbidrag/), [Visit statsbidrag.socialstyrelsen.se/om-webbplatsen/om-kakor/](https://statsbidrag.socialstyrelsen.se/om-webbplatsen/om-kakor/) |
 | `stockholmskallan.stockholm.se` | [Visit stockholmskallan.stockholm.se homepage](https://stockholmskallan.stockholm.se/), [Visit stockholmskallan.stockholm.se/link/4fcc4c16c3234e8d91907b1998ed4e42.aspx](https://stockholmskallan.stockholm.se/link/4fcc4c16c3234e8d91907b1998ed4e42.aspx), [Visit stockholmskallan.stockholm.se/teman/arkitektur/](https://stockholmskallan.stockholm.se/teman/arkitektur/) |
 | `stompunkt.lantmateriet.se` | [Visit stompunkt.lantmateriet.se homepage](https://stompunkt.lantmateriet.se/) |
 | `stordammen.uppsala.se` | [Visit stordammen.uppsala.se homepage](https://stordammen.uppsala.se/), [Visit stordammen.uppsala.se/omskolan/](https://stordammen.uppsala.se/omskolan/) |
+| `stralsakerhetsmyndigheten.se` | [Visit stralsakerhetsmyndigheten.se homepage](https://stralsakerhetsmyndigheten.se/) |
+| `su.se` | [Visit su.se homepage](https://su.se/) |
 | `sundsvall.se` | [Visit sundsvall.se homepage](https://sundsvall.se/), [Visit sundsvall.se/kommun-och-politik/om-webbplatsen/logga-in](https://sundsvall.se/kommun-och-politik/om-webbplatsen/logga-in), [Visit sundsvall.se/uppleva-och-gora/idrott-motion-och-friluftsliv](https://sundsvall.se/uppleva-och-gora/idrott-motion-och-friluftsliv) |
 | `supportguider.stockholm.se` | [Visit supportguider.stockholm.se homepage](https://supportguider.stockholm.se/), [Visit supportguider.stockholm.se/Home](https://supportguider.stockholm.se/Home) |
+| `sva.se` | [Visit sva.se homepage](https://sva.se/) |
+| `svenskafaokommitten.se` | [Visit svenskafaokommitten.se homepage](https://svenskafaokommitten.se/) |
+| `svenskailo-kommitten.se` | [Visit svenskailo-kommitten.se homepage](https://svenskailo-kommitten.se/) |
+| `svff.se` | [Visit svff.se homepage](https://svff.se/) |
+| `swedac.se` | [Visit swedac.se homepage](https://swedac.se/) |
+| `swedgeo.se` | [Visit swedgeo.se homepage](https://swedgeo.se/) |
 | `swepos.lantmateriet.se` | [Visit swepos.lantmateriet.se homepage](https://swepos.lantmateriet.se/), [Visit swepos.lantmateriet.se/services/iono.aspx](https://swepos.lantmateriet.se/services/iono.aspx), [Visit swepos.lantmateriet.se/services/order.aspx](https://swepos.lantmateriet.se/services/order.aspx) |
 | `taricdok.tullverket.se` | [Visit taricdok.tullverket.se homepage](https://taricdok.tullverket.se/), [Visit taricdok.tullverket.se/tulltaxan/vagledningklassificering/vagledningklassificering.4.1abad4c215373dfe25d124.html](https://taricdok.tullverket.se/tulltaxan/vagledningklassificering/vagledningklassificering.4.1abad4c215373dfe25d124.html) |
 | `tc.prv.se` | [Visit tc.prv.se homepage](https://tc.prv.se/) |
@@ -575,20 +707,27 @@ permalink: /domains/sweden.html
 | `timepool.skelleftea.se` | [Visit timepool.skelleftea.se homepage](https://timepool.skelleftea.se/) |
 | `timepoolweb.lulea.se` | [Visit timepoolweb.lulea.se homepage](https://timepoolweb.lulea.se/), [Visit timepoolweb.lulea.se/pages/start.aspx](https://timepoolweb.lulea.se/pages/start.aspx) |
 | `tiundaskolan.uppsala.se` | [Visit tiundaskolan.uppsala.se homepage](https://tiundaskolan.uppsala.se/), [Visit tiundaskolan.uppsala.se/2024-vinnare-sustainable-poetry/](https://tiundaskolan.uppsala.se/2024-vinnare-sustainable-poetry/), [Visit tiundaskolan.uppsala.se/gemensam-information/](https://tiundaskolan.uppsala.se/gemensam-information/?gpid=328542) |
+| `tlv.se` | [Visit tlv.se homepage](https://tlv.se/) |
 | `toramaptest.riksarkivet.se` | [Visit toramaptest.riksarkivet.se homepage](https://toramaptest.riksarkivet.se/) |
 | `trafikverksskolan.trafikverket.se` | [Visit trafikverksskolan.trafikverket.se homepage](https://trafikverksskolan.trafikverket.se/), [Visit trafikverksskolan.trafikverket.se/Login/registerlogin](https://trafikverksskolan.trafikverket.se/Login/registerlogin) |
+| `transportstyrelsen.se` | [Visit transportstyrelsen.se homepage](https://transportstyrelsen.se/) |
 | `trix.trafikverket.se` | [Visit trix.trafikverket.se homepage](https://trix.trafikverket.se/), [Visit trix.trafikverket.se/Default.aspx](https://trix.trafikverket.se/Default.aspx) |
 | `trvdokument.trafikverket.se` | [Visit trvdokument.trafikverket.se homepage](https://trvdokument.trafikverket.se/), [Visit trvdokument.trafikverket.se/Default.aspx](https://trvdokument.trafikverket.se/Default.aspx) |
 | `tulltaxan.tullverket.se` | [Visit tulltaxan.tullverket.se homepage](https://tulltaxan.tullverket.se/) |
 | `tychobraheskolan.helsingborg.se` | [Visit tychobraheskolan.helsingborg.se homepage](https://tychobraheskolan.helsingborg.se/), [Visit tychobraheskolan.helsingborg.se/sa-gor-du-ditt-gymnasieval/](https://tychobraheskolan.helsingborg.se/sa-gor-du-ditt-gymnasieval/), [Visit tychobraheskolan.helsingborg.se/skugga-en-elev/](https://tychobraheskolan.helsingborg.se/skugga-en-elev/) |
 | `ua.gotland.se` | [Visit ua.gotland.se homepage](https://ua.gotland.se:8443/) |
 | `ubm.se` | [Visit ubm.se homepage](https://ubm.se/), [Visit ubm.se/cookies](https://ubm.se/cookies) |
+| `uhr.se` | [Visit uhr.se homepage](https://uhr.se/) |
 | `ujc-komvux.uppsala.se` | [Visit ujc-komvux.uppsala.se homepage](https://ujc-komvux.uppsala.se/), [Visit ujc-komvux.uppsala.se/link/b78a57e58e284d439211ff249e7b1b7e.aspx](https://ujc-komvux.uppsala.se/link/b78a57e58e284d439211ff249e7b1b7e.aspx?gpid=75882), [Visit ujc-komvux.uppsala.se/om-utbildnings-och-jobbcenter-komvux/](https://ujc-komvux.uppsala.se/om-utbildnings-och-jobbcenter-komvux/) |
+| `uka.se` | [Visit uka.se homepage](https://uka.se/) |
 | `um.vgregion.se` | [Visit um.vgregion.se homepage](https://um.vgregion.se/), [Visit um.vgregion.se/privacyPolicy](https://um.vgregion.se/privacyPolicy) |
 | `umetur.umea.se` | [Visit umetur.umea.se homepage](https://umetur.umea.se/), [Visit umetur.umea.se/Projekt](https://umetur.umea.se/Projekt) |
+| `umu.se` | [Visit umu.se homepage](https://umu.se/) |
+| `uniarts.se` | [Visit uniarts.se homepage](https://uniarts.se/) |
 | `uppgift.skolinspektionen.se` | [Visit uppgift.skolinspektionen.se homepage](https://uppgift.skolinspektionen.se/) |
 | `upphandling.polisen.se` | [Visit upphandling.polisen.se homepage](https://upphandling.polisen.se/), [Visit upphandling.polisen.se/Info/Help/Account.aspx](https://upphandling.polisen.se/Info/Help/Account.aspx) |
 | `upphandling.trafikverket.se` | [Visit upphandling.trafikverket.se homepage](https://upphandling.trafikverket.se/), [Visit upphandling.trafikverket.se/Default.aspx](https://upphandling.trafikverket.se/Default.aspx), [Visit upphandling.trafikverket.se/Info/Help/Account.aspx](https://upphandling.trafikverket.se/Info/Help/Account.aspx) |
+| `upphandlingsmyndigheten.se` | [Visit upphandlingsmyndigheten.se homepage](https://upphandlingsmyndigheten.se/) |
 | `upplev.huddinge.se` | [Visit upplev.huddinge.se homepage](https://upplev.huddinge.se/), [Visit upplev.huddinge.se/natur-och-friluftsliv/naturreservat.html](https://upplev.huddinge.se/natur-och-friluftsliv/naturreservat.html) |
 | `upplev.vaxjo.se` | [Visit upplev.vaxjo.se homepage](https://upplev.vaxjo.se/), [Visit upplev.vaxjo.se/bra-att-veta/om-upplev-vaxjo/om-cookies-kakor](https://upplev.vaxjo.se/bra-att-veta/om-upplev-vaxjo/om-cookies-kakor) |
 | `uppsala.direkt.1177.se` | [Visit uppsala.direkt.1177.se homepage](https://uppsala.direkt.1177.se/), [Visit uppsala.direkt.1177.se/privacyPolicy](https://uppsala.direkt.1177.se/privacyPolicy) |
@@ -604,6 +743,7 @@ permalink: /domains/sweden.html
 | `utveckling.regionostergotland.se` | [Visit utveckling.regionostergotland.se homepage](https://utveckling.regionostergotland.se/) |
 | `utveckling.rjl.se` | [Visit utveckling.rjl.se homepage](https://utveckling.rjl.se/), [Visit utveckling.rjl.se/nyheter/446132](https://utveckling.rjl.se/nyheter/446132) |
 | `utveckling.skane.se` | [Visit utveckling.skane.se homepage](https://utveckling.skane.se/), [Visit utveckling.skane.se/kalender/regional-utveckling/2025/webbinarium-om-utlysningen-stod-for-stem-insatser-riktat-mot-barn-och-unga-i-skane/](https://utveckling.skane.se/kalender/regional-utveckling/2025/webbinarium-om-utlysningen-stod-for-stem-insatser-riktat-mot-barn-och-unga-i-skane/), [Visit utveckling.skane.se/nyheter/regional-utveckling/2025/region-skane-fortsatter-att-driva-pa-bredbandsutvecklingen-med-ny-finansiering/](https://utveckling.skane.se/nyheter/regional-utveckling/2025/region-skane-fortsatter-att-driva-pa-bredbandsutvecklingen-med-ny-finansiering/) |
+| `uu.se` | [Visit uu.se homepage](https://uu.se/) |
 | `vafabmiljo.se` | [Visit vafabmiljo.se homepage](https://vafabmiljo.se/), [Visit vafabmiljo.se/foretag/](https://vafabmiljo.se/foretag/), [Visit vafabmiljo.se/min-sophamtning/](https://vafabmiljo.se/min-sophamtning/) |
 | `vagnmansportalen.stadsmiljo.goteborg.se` | [Visit vagnmansportalen.stadsmiljo.goteborg.se homepage](https://vagnmansportalen.stadsmiljo.goteborg.se/) |
 | `vaksalaskolan.uppsala.se` | [Visit vaksalaskolan.uppsala.se homepage](https://vaksalaskolan.uppsala.se/), [Visit vaksalaskolan.uppsala.se/link/018f8709999f4a27bec8807a404fc633.aspx](https://vaksalaskolan.uppsala.se/link/018f8709999f4a27bec8807a404fc633.aspx?gpid=75882), [Visit vaksalaskolan.uppsala.se/skolan/](https://vaksalaskolan.uppsala.se/skolan/) |
@@ -611,6 +751,7 @@ permalink: /domains/sweden.html
 | `valsatraskolan.uppsala.se` | [Visit valsatraskolan.uppsala.se homepage](https://valsatraskolan.uppsala.se/), [Visit valsatraskolan.uppsala.se/gemensam-information/](https://valsatraskolan.uppsala.se/gemensam-information/?gpid=328542) |
 | `vara.ehalsomyndigheten.se` | [Visit vara.ehalsomyndigheten.se homepage](https://vara.ehalsomyndigheten.se/), [Visit vara.ehalsomyndigheten.se/vara-web](https://vara.ehalsomyndigheten.se/vara-web) |
 | `vard.skane.se` | [Visit vard.skane.se homepage](https://vard.skane.se/), [Visit vard.skane.se/supportsidor/om-cookies/](https://vard.skane.se/supportsidor/om-cookies/) |
+| `vardanalys.se` | [Visit vardanalys.se homepage](https://vardanalys.se/) |
 | `vardgivare.regionhalland.se` | [Visit vardgivare.regionhalland.se homepage](https://vardgivare.regionhalland.se/), [Visit vardgivare.regionhalland.se/behandlingsstod/styrda-dokument/](https://vardgivare.regionhalland.se/behandlingsstod/styrda-dokument/), [Visit vardgivare.regionhalland.se/organisation-och-uppdrag/kunskapsstyrning-2/om-1177-for-vardpersonal/](https://vardgivare.regionhalland.se/organisation-och-uppdrag/kunskapsstyrning-2/om-1177-for-vardpersonal/) |
 | `vardgivare.regionkalmar.se` | [Visit vardgivare.regionkalmar.se homepage](https://vardgivare.regionkalmar.se/), [Visit vardgivare.regionkalmar.se/nyheter/hjalp-patienten-till-ratt-vardniva--tillsammans-gor-vi-skillnad/](https://vardgivare.regionkalmar.se/nyheter/hjalp-patienten-till-ratt-vardniva--tillsammans-gor-vi-skillnad/), [Visit vardgivare.regionkalmar.se/nyheter/nytt-om-tbe-vaccination-langre-intervall-mellan-boosterdoser/](https://vardgivare.regionkalmar.se/nyheter/nytt-om-tbe-vaccination-langre-intervall-mellan-boosterdoser/) |
 | `vardgivare.regionorebrolan.se` | [Visit vardgivare.regionorebrolan.se homepage](https://vardgivare.regionorebrolan.se/), [Visit vardgivare.regionorebrolan.se/sv/vardriktlinjer-och-kunskapsstod/](https://vardgivare.regionorebrolan.se/sv/vardriktlinjer-och-kunskapsstod/), [Visit vardgivare.regionorebrolan.se/sv/vardriktlinjer-och-kunskapsstod/vardpraxis/](https://vardgivare.regionorebrolan.se/sv/vardriktlinjer-och-kunskapsstod/vardpraxis/) |
@@ -623,6 +764,7 @@ permalink: /domains/sweden.html
 | `vardochomsorg.helsingborg.se` | [Visit vardochomsorg.helsingborg.se homepage](https://vardochomsorg.helsingborg.se/), [Visit vardochomsorg.helsingborg.se/funktionsnedsattning/](https://vardochomsorg.helsingborg.se/funktionsnedsattning/), [Visit vardochomsorg.helsingborg.se/tillsynsinsats-uteblev-kund-blev-liggande/](https://vardochomsorg.helsingborg.se/tillsynsinsats-uteblev-kund-blev-liggande/) |
 | `vardochomsorg.uppsala.se` | [Visit vardochomsorg.uppsala.se homepage](https://vardochomsorg.uppsala.se/), [Visit vardochomsorg.uppsala.se/om-oss/](https://vardochomsorg.uppsala.se/om-oss/) |
 | `vardpersonal.1177.se` | [Visit vardpersonal.1177.se homepage](https://vardpersonal.1177.se/), [Visit vardpersonal.1177.se homepage](https://vardpersonal.1177.se/?globalregion=00), [Visit vardpersonal.1177.se homepage](https://vardpersonal.1177.se/?globalregion=10) |
+| `varldskulturmuseerna.se` | [Visit varldskulturmuseerna.se homepage](https://varldskulturmuseerna.se/) |
 | `vasternorrland.direkt.1177.se` | [Visit vasternorrland.direkt.1177.se homepage](https://vasternorrland.direkt.1177.se/), [Visit vasternorrland.direkt.1177.se/privacyPolicy](https://vasternorrland.direkt.1177.se/privacyPolicy) |
 | `vaxhuset.vasteras.se` | [Visit vaxhuset.vasteras.se homepage](https://vaxhuset.vasteras.se/), [Visit vaxhuset.vasteras.se/91/vaxhuset](https://vaxhuset.vasteras.se/91/vaxhuset), [Visit vaxhuset.vasteras.se/91/vaxhuset/evenemangskalender](https://vaxhuset.vasteras.se/91/vaxhuset/evenemangskalender) |
 | `vaxjo.se` | [Visit vaxjo.se homepage](https://vaxjo.se/), [Visit vaxjo.se/sidor/politik-och-demokrati/om-webbplatsen/cookies---kakor.html](https://vaxjo.se/sidor/politik-och-demokrati/om-webbplatsen/cookies---kakor.html), [Visit vaxjo.se/sidor/trafik-och-stadsplanering.html](https://vaxjo.se/sidor/trafik-och-stadsplanering.html) |
@@ -641,6 +783,7 @@ permalink: /domains/sweden.html
 | `vitec.huddinge.se` | [Visit vitec.huddinge.se homepage](https://vitec.huddinge.se/) |
 | `vonbahrsskola.uppsala.se` | [Visit vonbahrsskola.uppsala.se homepage](https://vonbahrsskola.uppsala.se/), [Visit vonbahrsskola.uppsala.se/link/3c17606e66084805a2edafc18cab09d1.aspx](https://vonbahrsskola.uppsala.se/link/3c17606e66084805a2edafc18cab09d1.aspx?gpid=75882), [Visit vonbahrsskola.uppsala.se/var-skola/](https://vonbahrsskola.uppsala.se/var-skola/) |
 | `vtf.trafikverket.se` | [Visit vtf.trafikverket.se homepage](https://vtf.trafikverket.se/), [Visit vtf.trafikverket.se/SeTrafikinformation](https://vtf.trafikverket.se/SeTrafikinformation) |
+| `vti.se` | [Visit vti.se homepage](https://vti.se/) |
 | `vux.regionorebrolan.se` | [Visit vux.regionorebrolan.se homepage](https://vux.regionorebrolan.se/), [Visit vux.regionorebrolan.se/hitta-din-utbildning/](https://vux.regionorebrolan.se/hitta-din-utbildning/?kategori=bygg-anlaggning-och-fastighet), [Visit vux.regionorebrolan.se/nyheter/stor-satsning-pa-nya-kurser-inom-yrkeshogskolan/](https://vux.regionorebrolan.se/nyheter/stor-satsning-pa-nya-kurser-inom-yrkeshogskolan/) |
 | `vux.solna.se` | [Visit vux.solna.se homepage](https://vux.solna.se/), [Visit vux.solna.se/hittakurser/sok](https://vux.solna.se/hittakurser/sok) |
 | `vuxenutbildning.sollentuna.se` | [Visit vuxenutbildning.sollentuna.se homepage](https://vuxenutbildning.sollentuna.se/), [Visit vuxenutbildning.sollentuna.se/hittakurser/sok](https://vuxenutbildning.sollentuna.se/hittakurser/sok), [Visit vuxenutbildning.sollentuna.se/nyhet/1523](https://vuxenutbildning.sollentuna.se/nyhet/1523) |
@@ -768,6 +911,7 @@ permalink: /domains/sweden.html
 | `www.vr.se` | [Visit www.vr.se homepage](https://www.vr.se/), [Visit www.vr.se/aktuellt/nyheter/nyhetsarkiv/2025-06-25-vetenskapsradet-inrattar-ett-program-for-strategisk-rekrytering-av-bitradande-lektorer.html](https://www.vr.se/aktuellt/nyheter/nyhetsarkiv/2025-06-25-vetenskapsradet-inrattar-ett-program-for-strategisk-rekrytering-av-bitradande-lektorer.html), [Visit www.vr.se/om-webbplatsen/om-kakor-pa-webbplatsen.html](https://www.vr.se/om-webbplatsen/om-kakor-pa-webbplatsen.html) |
 | `www1.skatteverket.se` | [Visit www1.skatteverket.se homepage](https://www1.skatteverket.se/) |
 | `www17.goteborg.se` | [Visit www17.goteborg.se homepage](https://www17.goteborg.se/) |
+| `www2.irf.se` | [Visit www2.irf.se homepage](https://www2.irf.se/) |
 | `www2.lantmateriet.se` | [Visit www2.lantmateriet.se homepage](https://www2.lantmateriet.se/), [Visit www2.lantmateriet.se/sv/](https://www2.lantmateriet.se/sv/) |
 | `www3.skatteverket.se` | [Visit www3.skatteverket.se homepage](https://www3.skatteverket.se/) |
 | `www4.skatteverket.se` | [Visit www4.skatteverket.se homepage](https://www4.skatteverket.se/), [Visit www4.skatteverket.se/rattsligvagledning/edition/2025.4/322222.html](https://www4.skatteverket.se/rattsligvagledning/edition/2025.4/322222.html), [Visit www4.skatteverket.se/rattsligvagledning/index.html](https://www4.skatteverket.se/rattsligvagledning/index.html) |

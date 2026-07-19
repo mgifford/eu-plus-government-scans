@@ -6,7 +6,7 @@ permalink: /domains/latvia.html
 
 [← Back to all countries](../domains.html)
 
-**341 domains** · **802 pages**
+**342 domains** · **803 pages**
 
 | Domain | Pages |
 |--------|-------|
@@ -35,6 +35,7 @@ permalink: /domains/latvia.html
 | `covid19.gov.lv` | [Visit covid19.gov.lv homepage](https://covid19.gov.lv/), [Visit covid19.gov.lv/vakcina](https://covid19.gov.lv/vakcina) |
 | `csimq-journals.rtu.lv` | [Visit csimq-journals.rtu.lv homepage](https://csimq-journals.rtu.lv/), [Visit csimq-journals.rtu.lv/csimq/index](https://csimq-journals.rtu.lv/csimq/index) |
 | `csn.vtua.gov.lv` | [Visit csn.vtua.gov.lv homepage](https://csn.vtua.gov.lv/) |
+| `cvk.lv` | [Visit cvk.lv homepage](https://cvk.lv/) |
 | `cvvp.nva.gov.lv` | [Visit cvvp.nva.gov.lv homepage](https://cvvp.nva.gov.lv/) |
 | `dabasmuzejs.gov.lv` | [Visit dabasmuzejs.gov.lv homepage](https://dabasmuzejs.gov.lv/), [Visit dabasmuzejs.gov.lv/lv/aktualitates/ekspresizstade-savvalas-dzivnieku-mazuli](https://dabasmuzejs.gov.lv/lv/aktualitates/ekspresizstade-savvalas-dzivnieku-mazuli), [Visit dabasmuzejs.gov.lv/lv/pakalpojumi/briviem-briziem](https://dabasmuzejs.gov.lv/lv/pakalpojumi/briviem-briziem) |
 | `data.gov.lv` | [Visit data.gov.lv homepage](https://data.gov.lv/), [Visit data.gov.lv/dati/lv/dataset](https://data.gov.lv/dati/lv/dataset), [Visit data.gov.lv/dati/lv/group/arlietas](https://data.gov.lv/dati/lv/group/arlietas) |

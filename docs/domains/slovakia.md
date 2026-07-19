@@ -6,7 +6,7 @@ permalink: /domains/slovakia.html
 
 [← Back to all countries](../domains.html)
 
-**184 domains** · **434 pages**
+**192 domains** · **442 pages**
 
 | Domain | Pages |
 |--------|-------|
@@ -73,9 +73,14 @@ permalink: /domains/slovakia.html
 | `mef.indprop.gov.sk` | [Visit mef.indprop.gov.sk homepage](https://mef.indprop.gov.sk/) |
 | `meid.minv.sk` | [Visit meid.minv.sk homepage](https://meid.minv.sk/), [Visit meid.minv.sk homepage](https://meid.minv.sk/?page=frequent-questions/) |
 | `metais.slovensko.sk` | [Visit metais.slovensko.sk homepage](https://metais.slovensko.sk/), [Visit metais.slovensko.sk/cookies/settings](https://metais.slovensko.sk/cookies/settings), [Visit metais.slovensko.sk/wiki/wiki/pk/view/V%C3%BDzvy%20programov%C3%A9ho%20obdobia%202021-2027](https://metais.slovensko.sk/wiki/wiki/pk/view/V%C3%BDzvy%20programov%C3%A9ho%20obdobia%202021-2027) |
+| `mfsr.sk` | [Visit mfsr.sk homepage](https://mfsr.sk/) |
+| `mincrs.sk` | [Visit mincrs.sk homepage](https://mincrs.sk/) |
+| `mindop.sk` | [Visit mindop.sk homepage](http://mindop.sk/) |
+| `minzp.sk` | [Visit minzp.sk homepage](https://minzp.sk/) |
 | `mirri.gov.sk` | [Visit mirri.gov.sk homepage](https://mirri.gov.sk/), [Visit mirri.gov.sk/aktuality/program-slovensko-2021-2027/velka-rekonstrukcia-radnice-obnovene-skoly-aj-mosty-mesta-a-obce-ziskali-dalsich-23-milionov-eur-z-eurofondov/](https://mirri.gov.sk/aktuality/program-slovensko-2021-2027/velka-rekonstrukcia-radnice-obnovene-skoly-aj-mosty-mesta-a-obce-ziskali-dalsich-23-milionov-eur-z-eurofondov/), [Visit mirri.gov.sk/ministerstvo/ochrana-osobnych-udajov/oznamenie-o-pouzivani-suborov-cookies/](https://mirri.gov.sk/ministerstvo/ochrana-osobnych-udajov/oznamenie-o-pouzivani-suborov-cookies/) |
 | `moje.kosice.sk` | [Visit moje.kosice.sk homepage](https://moje.kosice.sk/) |
 | `mpman.kosice.sk` | [Visit mpman.kosice.sk homepage](https://mpman.kosice.sk/), [Visit mpman.kosice.sk/Main/Login.asp](https://mpman.kosice.sk/Main/Login.asp?From=/Main/Login.asp) |
+| `mpsr.sk` | [Visit mpsr.sk homepage](https://mpsr.sk/) |
 | `msmt.trnava.sk` | [Visit msmt.trnava.sk homepage](https://msmt.trnava.sk/), [Visit msmt.trnava.sk/aktuality/cintorinske-sluzby/](https://msmt.trnava.sk/aktuality/cintorinske-sluzby/), [Visit msmt.trnava.sk/aktuality/zimna-udrzba-20242025/](https://msmt.trnava.sk/aktuality/zimna-udrzba-20242025/) |
 | `msp.presov.sk` | [Visit msp.presov.sk homepage](https://msp.presov.sk/), [Visit msp.presov.sk/-cookies-settings-.html](https://msp.presov.sk/-cookies-settings-.html) |
 | `mspetzvalova.zilina.sk` | [Visit mspetzvalova.zilina.sk homepage](https://mspetzvalova.zilina.sk/), [Visit mspetzvalova.zilina.sk/rozhodnutie-o-prijati-neprijati-do-ms](https://mspetzvalova.zilina.sk/rozhodnutie-o-prijati-neprijati-do-ms) |
@@ -84,6 +89,7 @@ permalink: /domains/slovakia.html
 | `muop.bratislava.sk` | [Visit muop.bratislava.sk homepage](https://muop.bratislava.sk/), [Visit muop.bratislava.sk/msp/id_osnovy=7093&p1=7093](https://muop.bratislava.sk/msp/id_osnovy=7093&p1=7093) |
 | `nadaciamesta.bratislava.sk` | [Visit nadaciamesta.bratislava.sk homepage](https://nadaciamesta.bratislava.sk/), [Visit nadaciamesta.bratislava.sk/projects/585](https://nadaciamesta.bratislava.sk/projects/585), [Visit nadaciamesta.bratislava.sk/projects/590](https://nadaciamesta.bratislava.sk/projects/590) |
 | `navody.slovensko.sk` | [Visit navody.slovensko.sk homepage](https://navody.slovensko.sk/), [Visit navody.slovensko.sk/en/som-chory](https://navody.slovensko.sk/en/som-chory), [Visit navody.slovensko.sk/en/sprievodca-pred-narodenim-dietata](https://navody.slovensko.sk/en/sprievodca-pred-narodenim-dietata) |
+| `nbs.sk` | [Visit nbs.sk homepage](https://nbs.sk/) |
 | `nis2.nbu.gov.sk` | [Visit nis2.nbu.gov.sk homepage](https://nis2.nbu.gov.sk/), [Visit nis2.nbu.gov.sk homepage](https://nis2.nbu.gov.sk/?csrt=16673828403300891896), [Visit nis2.nbu.gov.sk/indikativna-pomocka-na-urcenie-subjektu-ako-poskytovatela-zakladnej-sluzby/](https://nis2.nbu.gov.sk/indikativna-pomocka-na-urcenie-subjektu-ako-poskytovatela-zakladnej-sluzby/?csrt=16026265517031738034) |
 | `nks.gov.sk` | [Visit nks.gov.sk homepage](https://nks.gov.sk/), [Visit nks.gov.sk homepage](https://nks.gov.sk/?csrt=3016412632391561624), [Visit nks.gov.sk homepage](https://nks.gov.sk/?csrt=6605585269287437196) |
 | `obchodnyvestnik.justice.gov.sk` | [Visit obchodnyvestnik.justice.gov.sk homepage](https://obchodnyvestnik.justice.gov.sk/), [Visit obchodnyvestnik.justice.gov.sk/Zmluva/Web/MSSRZmluvaZoznam.aspx](https://obchodnyvestnik.justice.gov.sk/Zmluva/Web/MSSRZmluvaZoznam.aspx?csrt=1363614480797199698), [Visit obchodnyvestnik.justice.gov.sk/Zmluva/Web/MSSRZmluvaZoznam.aspx](https://obchodnyvestnik.justice.gov.sk/Zmluva/Web/MSSRZmluvaZoznam.aspx?csrt=14334678102580386036) |
@@ -103,6 +109,7 @@ permalink: /domains/slovakia.html
 | `rpi.gov.sk` | [Visit rpi.gov.sk homepage](https://rpi.gov.sk/), [Visit rpi.gov.sk/en/](https://rpi.gov.sk/en/), [Visit rpi.gov.sk/en/subjects](https://rpi.gov.sk/en/subjects) |
 | `rpvs.gov.sk` | [Visit rpvs.gov.sk homepage](https://rpvs.gov.sk/), [Visit rpvs.gov.sk/eSluzby](https://rpvs.gov.sk/eSluzby), [Visit rpvs.gov.sk/rpvs/Partner/Partner/VyhladavaniePartnera](https://rpvs.gov.sk/rpvs/Partner/Partner/VyhladavaniePartnera?zachovatFiltre=false) |
 | `sfrb.gov.sk` | [Visit sfrb.gov.sk homepage](https://sfrb.gov.sk/), [Visit sfrb.gov.sk/sfrb/ui/](https://sfrb.gov.sk/sfrb/ui/) |
+| `slovak.statistics.sk` | [Visit slovak.statistics.sk homepage](https://slovak.statistics.sk/) |
 | `sluzbyzamestnanosti.gov.sk` | [Visit sluzbyzamestnanosti.gov.sk homepage](https://sluzbyzamestnanosti.gov.sk/), [Visit sluzbyzamestnanosti.gov.sk/nastavenia-cookies](https://sluzbyzamestnanosti.gov.sk/nastavenia-cookies) |
 | `smart.trnava.sk` | [Visit smart.trnava.sk homepage](https://smart.trnava.sk/), [Visit smart.trnava.sk/bicycles](https://smart.trnava.sk/bicycles) |
 | `smartmobility.gov.sk` | [Visit smartmobility.gov.sk homepage](https://smartmobility.gov.sk/), [Visit smartmobility.gov.sk/slovensky-narodny-stanok-na-konferencii-smart-cities-summit-v-lisabone/](https://smartmobility.gov.sk/slovensky-narodny-stanok-na-konferencii-smart-cities-summit-v-lisabone/) |
@@ -119,6 +126,7 @@ permalink: /domains/slovakia.html
 | `uha.zilina.sk` | [Visit uha.zilina.sk homepage](https://uha.zilina.sk/), [Visit uha.zilina.sk/aktuality/galerie-tri-steny-sa-stahuje-do-pasaze/](https://uha.zilina.sk/aktuality/galerie-tri-steny-sa-stahuje-do-pasaze/), [Visit uha.zilina.sk/dokumenty/](https://uha.zilina.sk/dokumenty/) |
 | `ukf.sluzbyzamestnanosti.gov.sk` | [Visit ukf.sluzbyzamestnanosti.gov.sk homepage](https://ukf.sluzbyzamestnanosti.gov.sk/), [Visit ukf.sluzbyzamestnanosti.gov.sk/nastavenia-cookies](https://ukf.sluzbyzamestnanosti.gov.sk/nastavenia-cookies) |
 | `usmev.zilina.sk` | [Visit usmev.zilina.sk homepage](https://usmev.zilina.sk/), [Visit usmev.zilina.sk/navsteva-deti-z-ms-jarna/](https://usmev.zilina.sk/navsteva-deti-z-ms-jarna/), [Visit usmev.zilina.sk/profil/elektricka-polohovatelna-postel-s-hrazdou-a-matracom-kardiokresla-soft-lin-komfort/](https://usmev.zilina.sk/profil/elektricka-polohovatelna-postel-s-hrazdou-a-matracom-kardiokresla-soft-lin-komfort/) |
+| `ustavnysud.sk` | [Visit ustavnysud.sk homepage](https://ustavnysud.sk/) |
 | `utulok.poprad.sk` | [Visit utulok.poprad.sk homepage](https://utulok.poprad.sk/) |
 | `vaia.gov.sk` | [Visit vaia.gov.sk homepage](https://vaia.gov.sk/), [Visit vaia.gov.sk/sk](https://vaia.gov.sk/sk), [Visit vaia.gov.sk/sk/2025/07/vaialytics-2-zeny-tvoria-tretinu-absolventov-v-stem-odboroch-na-vysokych-skolach/](https://vaia.gov.sk/sk/2025/07/vaialytics-2-zeny-tvoria-tretinu-absolventov-v-stem-odboroch-na-vysokych-skolach/) |
 | `viacakonick.gov.sk` | [Visit viacakonick.gov.sk homepage](https://viacakonick.gov.sk/), [Visit viacakonick.gov.sk/ako-vymazem-historiu-prehliadania/](https://viacakonick.gov.sk/ako-vymazem-historiu-prehliadania/), [Visit viacakonick.gov.sk/mam-menej-ako-12-rokov/](https://viacakonick.gov.sk/mam-menej-ako-12-rokov/) |

@@ -6,7 +6,7 @@ permalink: /domains/hungary.html
 
 [← Back to all countries](../domains.html)
 
-**177 domains** · **390 pages**
+**179 domains** · **392 pages**
 
 | Domain | Pages |
 |--------|-------|
@@ -93,6 +93,7 @@ permalink: /domains/hungary.html
 | `kozzetetelek.mnb.hu` | [Visit kozzetetelek.mnb.hu homepage](https://kozzetetelek.mnb.hu/), [Visit kozzetetelek.mnb.hu/penztarak/beszamolo](https://kozzetetelek.mnb.hu/penztarak/beszamolo) |
 | `kph.kaposvar.hu` | [Visit kph.kaposvar.hu homepage](https://kph.kaposvar.hu/), [Visit kph.kaposvar.hu/eloterjesztesek/et20250527hno](https://kph.kaposvar.hu/eloterjesztesek/et20250527hno), [Visit kph.kaposvar.hu/eloterjesztesek/et20250527rno](https://kph.kaposvar.hu/eloterjesztesek/et20250527rno) |
 | `krudy.gyor.hu` | [Visit krudy.gyor.hu homepage](https://krudy.gyor.hu/), [Visit krudy.gyor.hu/hirek/beiratkozas](https://krudy.gyor.hu/hirek/beiratkozas), [Visit krudy.gyor.hu/kozerdeku](https://krudy.gyor.hu/kozerdeku) |
+| `kuria-birosag.hu` | [Visit kuria-birosag.hu homepage](https://kuria-birosag.hu/) |
 | `lakaslicit.szekesfehervar.hu` | [Visit lakaslicit.szekesfehervar.hu homepage](https://lakaslicit.szekesfehervar.hu/), [Visit lakaslicit.szekesfehervar.hu/auction/show/8285](https://lakaslicit.szekesfehervar.hu/auction/show/8285) |
 | `lakogyules.budapest.hu` | [Visit lakogyules.budapest.hu homepage](https://lakogyules.budapest.hu/), [Visit lakogyules.budapest.hu/1-parkvaros-vagy-mini-dubaj](https://lakogyules.budapest.hu/1-parkvaros-vagy-mini-dubaj), [Visit lakogyules.budapest.hu/mi-a-lakogyules](https://lakogyules.budapest.hu/mi-a-lakogyules) |
 | `m.onkormanyzat.gyor.hu` | [Visit m.onkormanyzat.gyor.hu homepage](http://m.onkormanyzat.gyor.hu/), [Visit m.onkormanyzat.gyor.hu/cikk/ne_hagyjak_el_otthonukat_a_70_even_feluliek.html](http://m.onkormanyzat.gyor.hu/cikk/ne_hagyjak_el_otthonukat_a_70_even_feluliek.html) |
@@ -103,6 +104,7 @@ permalink: /domains/hungary.html
 | `minositetthitel.mnb.hu` | [Visit minositetthitel.mnb.hu homepage](https://minositetthitel.mnb.hu/) |
 | `miskolc.hu` | [Visit miskolc.hu homepage](https://miskolc.hu/), [Visit miskolc.hu/aktualis](https://miskolc.hu/aktualis), [Visit miskolc.hu/varoshaza/ugyintezes](https://miskolc.hu/varoshaza/ugyintezes) |
 | `mnbpoll.mnb.hu` | [Visit mnbpoll.mnb.hu homepage](https://mnbpoll.mnb.hu/) |
+| `naih.hu` | [Visit naih.hu homepage](https://naih.hu/) |
 | `nemzetiklimavedelmihatosag.kormany.hu` | [Visit nemzetiklimavedelmihatosag.kormany.hu homepage](https://nemzetiklimavedelmihatosag.kormany.hu/), [Visit nemzetiklimavedelmihatosag.kormany.hu/v2/account/pre/company](https://nemzetiklimavedelmihatosag.kormany.hu/v2/account/pre/company), [Visit nemzetiklimavedelmihatosag.kormany.hu/v2/account/pre/person](https://nemzetiklimavedelmihatosag.kormany.hu/v2/account/pre/person) |
 | `nepszamlalas2022.ksh.hu` | [Visit nepszamlalas2022.ksh.hu/eredmenyek/statikus-tablak](https://nepszamlalas2022.ksh.hu/eredmenyek/statikus-tablak) |
 | `ngmszakmaiteruletek.kormany.hu` | [Visit ngmszakmaiteruletek.kormany.hu homepage](https://ngmszakmaiteruletek.kormany.hu/), [Visit ngmszakmaiteruletek.kormany.hu/index](https://ngmszakmaiteruletek.kormany.hu/index) |

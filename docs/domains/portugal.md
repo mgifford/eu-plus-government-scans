@@ -6,7 +6,7 @@ permalink: /domains/portugal.html
 
 [← Back to all countries](../domains.html)
 
-**1,545 domains** · **3,503 pages**
+**1,550 domains** · **3,508 pages**
 
 | Domain | Pages |
 |--------|-------|
@@ -569,6 +569,7 @@ permalink: /domains/portugal.html
 | `gesdis.madeira.gov.pt` | [Visit gesdis.madeira.gov.pt homepage](https://gesdis.madeira.gov.pt/), [Visit gesdis.madeira.gov.pt/Account/ForgotPassword](https://gesdis.madeira.gov.pt/Account/ForgotPassword) |
 | `gestpdr.azores.gov.pt` | [Visit gestpdr.azores.gov.pt homepage](https://gestpdr.azores.gov.pt/), [Visit gestpdr.azores.gov.pt/ContaAcesso/Login.aspx](https://gestpdr.azores.gov.pt/ContaAcesso/Login.aspx) |
 | `gihabita.cm-almada.pt` | [Visit gihabita.cm-almada.pt homepage](https://gihabita.cm-almada.pt/) |
+| `gnr.pt` | [Visit gnr.pt homepage](https://gnr.pt/) |
 | `goa.consuladoportugal.mne.gov.pt` | [Visit goa.consuladoportugal.mne.gov.pt homepage](https://goa.consuladoportugal.mne.gov.pt/), [Visit goa.consuladoportugal.mne.gov.pt/pt/o-consulado/noticias/1a-perman%C3%AAncia-consular-2025-diu-2](https://goa.consuladoportugal.mne.gov.pt/pt/o-consulado/noticias/1a-perman%C3%AAncia-consular-2025-diu-2) |
 | `gondomarinveste.cm-gondomar.pt` | [Visit gondomarinveste.cm-gondomar.pt homepage](https://gondomarinveste.cm-gondomar.pt/), [Visit gondomarinveste.cm-gondomar.pt/news_details.php](https://gondomarinveste.cm-gondomar.pt/news_details.php?newsID=53) |
 | `guias.mosaico.gov.pt` | [Visit guias.mosaico.gov.pt homepage](https://guias.mosaico.gov.pt/), [Visit guias.mosaico.gov.pt/plataformas-comuns-da-administracao-publica/servico-de-autenticacao](https://guias.mosaico.gov.pt/plataformas-comuns-da-administracao-publica/servico-de-autenticacao) |
@@ -609,6 +610,7 @@ permalink: /domains/portugal.html
 | `inqueritos.cm-lisboa.pt` | [Visit inqueritos.cm-lisboa.pt homepage](https://inqueritos.cm-lisboa.pt/), [Visit inqueritos.cm-lisboa.pt/461327](https://inqueritos.cm-lisboa.pt/461327?lang=pt) |
 | `inwebmude.cm-lisboa.pt` | [Visit inwebmude.cm-lisboa.pt homepage](https://inwebmude.cm-lisboa.pt/), [Visit inwebmude.cm-lisboa.pt/default.aspx](https://inwebmude.cm-lisboa.pt/default.aspx) |
 | `ipdj.gov.pt` | [Visit ipdj.gov.pt homepage](https://ipdj.gov.pt/), [Visit ipdj.gov.pt/-/programa-de-apoio-pontual-para-associacoes-juvenis-de-estudantes-e-de-carater-juvenil-candidaturas-abertas](https://ipdj.gov.pt/-/programa-de-apoio-pontual-para-associacoes-juvenis-de-estudantes-e-de-carater-juvenil-candidaturas-abertas), [Visit ipdj.gov.pt/candidaturas](https://ipdj.gov.pt/candidaturas) |
+| `ipq.pt` | [Visit ipq.pt homepage](https://ipq.pt/) |
 | `irc.portaldasfinancas.gov.pt` | [Visit irc.portaldasfinancas.gov.pt homepage](https://irc.portaldasfinancas.gov.pt/) |
 | `irig.madeira.gov.pt` | [Visit irig.madeira.gov.pt homepage](https://irig.madeira.gov.pt/), [Visit irig.madeira.gov.pt/geoportal](https://irig.madeira.gov.pt/geoportal) |
 | `irn.justica.gov.pt` | [Visit irn.justica.gov.pt homepage](https://irn.justica.gov.pt/), [Visit irn.justica.gov.pt/Resultados-de-pesquisa](https://irn.justica.gov.pt/Resultados-de-pesquisa), [Visit irn.justica.gov.pt/Sobre-o-IRN/Prevencao-e-Combate-ao-Branqueamento-de-Capitais-e-Financiamento-do-Terrorismo](https://irn.justica.gov.pt/Sobre-o-IRN/Prevencao-e-Combate-ao-Branqueamento-de-Capitais-e-Financiamento-do-Terrorismo) |
@@ -688,6 +690,7 @@ permalink: /domains/portugal.html
 | `montanhapico.azores.gov.pt` | [Visit montanhapico.azores.gov.pt homepage](https://montanhapico.azores.gov.pt/), [Visit montanhapico.azores.gov.pt/Default.aspx](https://montanhapico.azores.gov.pt/Default.aspx) |
 | `montevideu.embaixadaportugal.mne.gov.pt` | [Visit montevideu.embaixadaportugal.mne.gov.pt homepage](https://montevideu.embaixadaportugal.mne.gov.pt/), [Visit montevideu.embaixadaportugal.mne.gov.pt/pt/a-embaixada/noticias/contingente-especial-de-acesso-ao-ensino-superior-portugu%C3%AAs-para-candidatos-emigrantes-portugueses,-familiares-que-com-eles-residam-e-lusodescendentes](https://montevideu.embaixadaportugal.mne.gov.pt/pt/a-embaixada/noticias/contingente-especial-de-acesso-ao-ensino-superior-portugu%C3%AAs-para-candidatos-emigrantes-portugueses,-familiares-que-com-eles-residam-e-lusodescendentes) |
 | `montreal.consuladoportugal.mne.gov.pt` | [Visit montreal.consuladoportugal.mne.gov.pt homepage](https://montreal.consuladoportugal.mne.gov.pt/), [Visit montreal.consuladoportugal.mne.gov.pt/pt/o-consulado/noticias/consulado-em-casa](https://montreal.consuladoportugal.mne.gov.pt/pt/o-consulado/noticias/consulado-em-casa) |
+| `moptc.pt` | [Visit moptc.pt homepage](http://moptc.pt/) |
 | `moscovo.embaixadaportugal.mne.gov.pt` | [Visit moscovo.embaixadaportugal.mne.gov.pt homepage](https://moscovo.embaixadaportugal.mne.gov.pt/), [Visit moscovo.embaixadaportugal.mne.gov.pt/pt/a-embaixada/noticias/portugal-csnu-2027-2028](https://moscovo.embaixadaportugal.mne.gov.pt/pt/a-embaixada/noticias/portugal-csnu-2027-2028) |
 | `mosteiro.cm-odivelas.pt` | [Visit mosteiro.cm-odivelas.pt homepage](https://mosteiro.cm-odivelas.pt/), [Visit mosteiro.cm-odivelas.pt/projetos/700-anos-da-morte-de-d-dinis](https://mosteiro.cm-odivelas.pt/projetos/700-anos-da-morte-de-d-dinis) |
 | `movabatalha.cm-batalha.pt` | [Visit movabatalha.cm-batalha.pt homepage](https://movabatalha.cm-batalha.pt/), [Visit movabatalha.cm-batalha.pt/apoios_documentos](https://movabatalha.cm-batalha.pt/apoios_documentos) |
@@ -715,6 +718,7 @@ permalink: /domains/portugal.html
 | `nacionalidadeonline.justica.gov.pt` | [Visit nacionalidadeonline.justica.gov.pt homepage](https://nacionalidadeonline.justica.gov.pt/) |
 | `nairobi.embaixadaportugal.mne.gov.pt` | [Visit nairobi.embaixadaportugal.mne.gov.pt homepage](https://nairobi.embaixadaportugal.mne.gov.pt/), [Visit nairobi.embaixadaportugal.mne.gov.pt/pt/a-embaixada/noticias/procedimento-concursal-assistente-operacional-ata-n%C2%BA6](https://nairobi.embaixadaportugal.mne.gov.pt/pt/a-embaixada/noticias/procedimento-concursal-assistente-operacional-ata-n%C2%BA6) |
 | `naminharualx.cm-lisboa.pt` | [Visit naminharualx.cm-lisboa.pt homepage](https://naminharualx.cm-lisboa.pt/), [Visit naminharualx.cm-lisboa.pt/privacy.html](https://naminharualx.cm-lisboa.pt/privacy.html) |
+| `nav.pt` | [Visit nav.pt homepage](https://nav.pt/) |
 | `newark.consuladoportugal.mne.gov.pt` | [Visit newark.consuladoportugal.mne.gov.pt homepage](https://newark.consuladoportugal.mne.gov.pt/), [Visit newark.consuladoportugal.mne.gov.pt/pt/o-consulado/noticias/exclusivamente-por-correio-by-mail-only-consulado-em-casa-consulate-at-home](https://newark.consuladoportugal.mne.gov.pt/pt/o-consulado/noticias/exclusivamente-por-correio-by-mail-only-consulado-em-casa-consulate-at-home) |
 | `newbedford.consuladoportugal.mne.gov.pt` | [Visit newbedford.consuladoportugal.mne.gov.pt homepage](https://newbedford.consuladoportugal.mne.gov.pt/), [Visit newbedford.consuladoportugal.mne.gov.pt/pt/o-consulado/noticias/50-anos-do-25-de-abril-exibi%C3%A7%C3%A3o-de-document%C3%A1rio-no-consulado-de-portugal-em-new-bedford](https://newbedford.consuladoportugal.mne.gov.pt/pt/o-consulado/noticias/50-anos-do-25-de-abril-exibi%C3%A7%C3%A3o-de-document%C3%A1rio-no-consulado-de-portugal-em-new-bedford) |
 | `nicosia.embaixadaportugal.mne.gov.pt` | [Visit nicosia.embaixadaportugal.mne.gov.pt homepage](https://nicosia.embaixadaportugal.mne.gov.pt/), [Visit nicosia.embaixadaportugal.mne.gov.pt/pt/a-embaixada/noticias/importante-aviso-voto-antecipado-eleicao-para-a-assembleia-da-republica-2025](https://nicosia.embaixadaportugal.mne.gov.pt/pt/a-embaixada/noticias/importante-aviso-voto-antecipado-eleicao-para-a-assembleia-da-republica-2025) |
@@ -1099,6 +1103,7 @@ permalink: /domains/portugal.html
 | `srv-portais.cm-albufeira.pt` | [Visit srv-portais.cm-albufeira.pt homepage](https://srv-portais.cm-albufeira.pt/) |
 | `ssi.gov.pt` | [Visit ssi.gov.pt homepage](https://ssi.gov.pt/), [Visit ssi.gov.pt/comunicacao/noticias/secretario-geral-adjunto-assume-funcoes](https://ssi.gov.pt/comunicacao/noticias/secretario-geral-adjunto-assume-funcoes), [Visit ssi.gov.pt/direitos-schengen](https://ssi.gov.pt/direitos-schengen) |
 | `sso.cm-almada.pt` | [Visit sso.cm-almada.pt homepage](https://sso.cm-almada.pt/), [Visit sso.cm-almada.pt/user/password](https://sso.cm-almada.pt/user/password), [Visit sso.cm-almada.pt/user/register](https://sso.cm-almada.pt/user/register) |
+| `stj.pt` | [Visit stj.pt homepage](https://stj.pt/) |
 | `store.ana.pt` | [Visit store.ana.pt homepage](https://store.ana.pt/), [Visit store.ana.pt/pt_PT/page%20designer%20pages/cookies-policy.html](https://store.ana.pt/pt_PT/page%20designer%20pages/cookies-policy.html) |
 | `suporte-apps.bupi.gov.pt` | [Visit suporte-apps.bupi.gov.pt homepage](https://suporte-apps.bupi.gov.pt/) |
 | `sustainable.azores.gov.pt` | [Visit sustainable.azores.gov.pt homepage](https://sustainable.azores.gov.pt/), [Visit sustainable.azores.gov.pt/calculadora-carbonica/](https://sustainable.azores.gov.pt/calculadora-carbonica/) |

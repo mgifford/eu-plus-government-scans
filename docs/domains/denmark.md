@@ -6,7 +6,7 @@ permalink: /domains/denmark.html
 
 [← Back to all countries](../domains.html)
 
-**658 domains** · **1,521 pages**
+**673 domains** · **1,536 pages**
 
 | Domain | Pages |
 |--------|-------|
@@ -18,6 +18,7 @@ permalink: /domains/denmark.html
 | `aalborguh.rn.dk` | [Visit aalborguh.rn.dk homepage](https://aalborguh.rn.dk/), [Visit aalborguh.rn.dk/da/](https://aalborguh.rn.dk/da/), [Visit aalborguh.rn.dk/da/Praktisk-Information/Aalborg-Syd](https://aalborguh.rn.dk/da/Praktisk-Information/Aalborg-Syd) |
 | `aarhus.dk` | [Visit aarhus.dk homepage](https://aarhus.dk/), [Visit aarhus.dk/borger/borgerservice/akut-hjaelp](https://aarhus.dk/borger/borgerservice/akut-hjaelp) |
 | `aeldrecentre.hjoerring.dk` | [Visit aeldrecentre.hjoerring.dk homepage](https://aeldrecentre.hjoerring.dk/), [Visit aeldrecentre.hjoerring.dk/aeldrecentre](https://aeldrecentre.hjoerring.dk/aeldrecentre) |
+| `aeldremin.dk` | [Visit aeldremin.dk homepage](https://aeldremin.dk/) |
 | `affald.kk.dk` | [Visit affald.kk.dk homepage](https://affald.kk.dk/), [Visit affald.kk.dk/kalender](https://affald.kk.dk/kalender), [Visit affald.kk.dk/soeg](https://affald.kk.dk/soeg) |
 | `akbehandling.regionh.dk` | [Visit akbehandling.regionh.dk homepage](https://akbehandling.regionh.dk/) |
 | `akbehandling.regionsjaelland.dk` | [Visit akbehandling.regionsjaelland.dk homepage](https://akbehandling.regionsjaelland.dk/) |
@@ -113,6 +114,7 @@ permalink: /domains/denmark.html
 | `christianshavnslokaludvalg.kk.dk` | [Visit christianshavnslokaludvalg.kk.dk homepage](https://christianshavnslokaludvalg.kk.dk/), [Visit christianshavnslokaludvalg.kk.dk/cookiepolitik](https://christianshavnslokaludvalg.kk.dk/cookiepolitik), [Visit christianshavnslokaludvalg.kk.dk/nyheder/skal-din-boligforening-ogsaa-tage-del-i-den-groenne-omstilling](https://christianshavnslokaludvalg.kk.dk/nyheder/skal-din-boligforening-ogsaa-tage-del-i-den-groenne-omstilling) |
 | `circular.kk.dk` | [Visit circular.kk.dk homepage](https://circular.kk.dk/), [Visit circular.kk.dk/cookie-policy](https://circular.kk.dk/cookie-policy), [Visit circular.kk.dk/news/reusable-takeaway-pilot-launched-during-copenhagen-sprint](https://circular.kk.dk/news/reusable-takeaway-pilot-launched-during-copenhagen-sprint) |
 | `colombia.um.dk` | [Visit colombia.um.dk homepage](https://colombia.um.dk/), [Visit colombia.um.dk/eksportraadet](https://colombia.um.dk/eksportraadet) |
+| `consumerombudsman.dk` | [Visit consumerombudsman.dk homepage](http://consumerombudsman.dk/) |
 | `copenhagenfablab.kk.dk` | [Visit copenhagenfablab.kk.dk homepage](https://copenhagenfablab.kk.dk/), [Visit copenhagenfablab.kk.dk/cookiepolitik](https://copenhagenfablab.kk.dk/cookiepolitik), [Visit copenhagenfablab.kk.dk/copenhagen-fablab](https://copenhagenfablab.kk.dk/copenhagen-fablab?language=da) |
 | `cphjobguide.kk.dk` | [Visit cphjobguide.kk.dk homepage](https://cphjobguide.kk.dk/), [Visit cphjobguide.kk.dk/job-tips/getting-started-with-unsolicited-job-applications](https://cphjobguide.kk.dk/job-tips/getting-started-with-unsolicited-job-applications), [Visit cphjobguide.kk.dk/node/8](https://cphjobguide.kk.dk/node/8) |
 | `cphmuseum.kk.dk` | [Visit cphmuseum.kk.dk homepage](https://cphmuseum.kk.dk/), [Visit cphmuseum.kk.dk/besoeg-os/koebenhavns-museum](https://cphmuseum.kk.dk/besoeg-os/koebenhavns-museum?language=da), [Visit cphmuseum.kk.dk/cookiepolitik](https://cphmuseum.kk.dk/cookiepolitik) |
@@ -155,6 +157,7 @@ permalink: /domains/denmark.html
 | `danskebank.mitid.dk` | [Visit danskebank.mitid.dk homepage](https://danskebank.mitid.dk/) |
 | `danskerlisten.um.dk` | [Visit danskerlisten.um.dk homepage](https://danskerlisten.um.dk/) |
 | `dataetiskraad.dk` | [Visit dataetiskraad.dk homepage](https://dataetiskraad.dk/), [Visit dataetiskraad.dk/dataetiske-temaer/hvad-er-dataetik-](https://dataetiskraad.dk/dataetiske-temaer/hvad-er-dataetik-) |
+| `datatilsynet.dk` | [Visit datatilsynet.dk homepage](https://datatilsynet.dk/) |
 | `deaabneraadgivninger.vejle.dk` | [Visit deaabneraadgivninger.vejle.dk homepage](https://deaabneraadgivninger.vejle.dk/), [Visit deaabneraadgivninger.vejle.dk/tilbud-til-foraeldre-parraadgivning-eller-naar-vejene-skilles/](https://deaabneraadgivninger.vejle.dk/tilbud-til-foraeldre-parraadgivning-eller-naar-vejene-skilles/) |
 | `deltag.aarhus.dk` | [Visit deltag.aarhus.dk homepage](https://deltag.aarhus.dk/), [Visit deltag.aarhus.dk/hoering/forslag-til-lokalplan-nr-1238-atletikstadion-og-sportens-hus](https://deltag.aarhus.dk/hoering/forslag-til-lokalplan-nr-1238-atletikstadion-og-sportens-hus), [Visit deltag.aarhus.dk/hoering/forslag-til-tillaeg-nr-7-til-spildevandsplan-2021-2026-fastsaettelse-af-serviceniveau](https://deltag.aarhus.dk/hoering/forslag-til-tillaeg-nr-7-til-spildevandsplan-2021-2026-fastsaettelse-af-serviceniveau) |
 | `deltag.holbaek.dk` | [Visit deltag.holbaek.dk homepage](https://deltag.holbaek.dk/), [Visit deltag.holbaek.dk/da-DK/pages/cookie-policy](https://deltag.holbaek.dk/da-DK/pages/cookie-policy), [Visit deltag.holbaek.dk/da-DK/projects/kystbeskyttelse-kisserup](https://deltag.holbaek.dk/da-DK/projects/kystbeskyttelse-kisserup) |
@@ -187,6 +190,7 @@ permalink: /domains/denmark.html
 | `en.stps.dk` | [Visit en.stps.dk homepage](https://en.stps.dk/), [Visit en.stps.dk/cookies](https://en.stps.dk/cookies), [Visit en.stps.dk/health-professionals-and-authorities](https://en.stps.dk/health-professionals-and-authorities) |
 | `eng.uvm.dk` | [Visit eng.uvm.dk homepage](https://eng.uvm.dk/), [Visit eng.uvm.dk/general-overview-the-danish-education-system/overview-of-the-danish-education-system](https://eng.uvm.dk/general-overview-the-danish-education-system/overview-of-the-danish-education-system) |
 | `engdalskolen.aarhus.dk` | [Visit engdalskolen.aarhus.dk homepage](https://engdalskolen.aarhus.dk/), [Visit engdalskolen.aarhus.dk/samarbejde-med-foraeldre](https://engdalskolen.aarhus.dk/samarbejde-med-foraeldre), [Visit engdalskolen.aarhus.dk/vores-skole](https://engdalskolen.aarhus.dk/vores-skole) |
+| `english.aeldremin.dk` | [Visit english.aeldremin.dk homepage](https://english.aeldremin.dk/) |
 | `english.odense.dk` | [Visit english.odense.dk homepage](https://english.odense.dk/), [Visit english.odense.dk/working](https://english.odense.dk/working) |
 | `english.stm.dk` | [Visit english.stm.dk homepage](https://english.stm.dk/), [Visit english.stm.dk/the-prime-minister/speeches/prime-minister-mette-frederiksens-presentation-of-the-danish-presidency-priorities-in-strasbourg/](https://english.stm.dk/the-prime-minister/speeches/prime-minister-mette-frederiksens-presentation-of-the-danish-presidency-priorities-in-strasbourg/), [Visit english.stm.dk/the-prime-ministers-office/](https://english.stm.dk/the-prime-ministers-office/) |
 | `erhvervsdag-for-skoler.kk.dk` | [Visit erhvervsdag-for-skoler.kk.dk homepage](https://erhvervsdag-for-skoler.kk.dk/), [Visit erhvervsdag-for-skoler.kk.dk/for-virksomheder/vi-deltager-i-erhvervsdagen](https://erhvervsdag-for-skoler.kk.dk/for-virksomheder/vi-deltager-i-erhvervsdagen), [Visit erhvervsdag-for-skoler.kk.dk/om-erhvervsdagen](https://erhvervsdag-for-skoler.kk.dk/om-erhvervsdagen) |
@@ -213,6 +217,7 @@ permalink: /domains/denmark.html
 | `folkeskoleniholstebroby.holstebro.dk` | [Visit folkeskoleniholstebroby.holstebro.dk homepage](https://folkeskoleniholstebroby.holstebro.dk/), [Visit folkeskoleniholstebroby.holstebro.dk/kontakt](https://folkeskoleniholstebroby.holstebro.dk/kontakt) |
 | `folkestedet.aarhus.dk` | [Visit folkestedet.aarhus.dk homepage](https://folkestedet.aarhus.dk/), [Visit folkestedet.aarhus.dk/kalender](https://folkestedet.aarhus.dk/kalender) |
 | `folkesundhed.aarhus.dk` | [Visit folkesundhed.aarhus.dk homepage](https://folkesundhed.aarhus.dk/), [Visit folkesundhed.aarhus.dk/sundhedsforloeb](https://folkesundhed.aarhus.dk/sundhedsforloeb) |
+| `forbrugerombudsmanden.dk` | [Visit forbrugerombudsmanden.dk homepage](https://forbrugerombudsmanden.dk/) |
 | `foreningsportalen.roskilde.dk` | [Visit foreningsportalen.roskilde.dk homepage](https://foreningsportalen.roskilde.dk/), [Visit foreningsportalen.roskilde.dk/blog.asp](https://foreningsportalen.roskilde.dk/blog.asp?pid=21), [Visit foreningsportalen.roskilde.dk/blog.asp](https://foreningsportalen.roskilde.dk/blog.asp?pid=6) |
 | `forms.skanderborg.dk` | [Visit forms.skanderborg.dk homepage](https://forms.skanderborg.dk/), [Visit forms.skanderborg.dk/formularer](https://forms.skanderborg.dk/formularer?title=&field_fagomraade_value=All&field_anvendelse_value=intern) |
 | `forsyning.albertslund.dk` | [Visit forsyning.albertslund.dk homepage](https://forsyning.albertslund.dk/), [Visit forsyning.albertslund.dk/fjernvarme/tao-ordningen](https://forsyning.albertslund.dk/fjernvarme/tao-ordningen), [Visit forsyning.albertslund.dk/nyheder/varsling-om-lukning-af-fjernvarmen-mellem-mandag-d-7-og-tirsdag-d-8-2025](https://forsyning.albertslund.dk/nyheder/varsling-om-lukning-af-fjernvarmen-mellem-mandag-d-7-og-tirsdag-d-8-2025) |
@@ -275,6 +280,7 @@ permalink: /domains/denmark.html
 | `iran.um.dk` | [Visit iran.um.dk homepage](https://iran.um.dk/), [Visit iran.um.dk/nyheder](https://iran.um.dk/nyheder), [Visit iran.um.dk/nyheder/telefon-ude-af-drift](https://iran.um.dk/nyheder/telefon-ude-af-drift) |
 | `irland.um.dk` | [Visit irland.um.dk homepage](https://irland.um.dk/), [Visit irland.um.dk/da/eksportraadet/](https://irland.um.dk/da/eksportraadet/) |
 | `island.um.dk` | [Visit island.um.dk homepage](https://island.um.dk/), [Visit island.um.dk/nyheder/news-page](https://island.um.dk/nyheder/news-page) |
+| `ism.dk` | [Visit ism.dk homepage](https://ism.dk/) |
 | `israel.um.dk` | [Visit israel.um.dk homepage](https://israel.um.dk/), [Visit israel.um.dk/en/news/possibility-of-reopening-certain-cases-on-the-forfeiture-of-danish-citizenship](https://israel.um.dk/en/news/possibility-of-reopening-certain-cases-on-the-forfeiture-of-danish-citizenship) |
 | `italien.um.dk` | [Visit italien.um.dk homepage](https://italien.um.dk/), [Visit italien.um.dk/nyheder/kalaallit-nunaanni-qinersineq-valg-i-groenland](https://italien.um.dk/nyheder/kalaallit-nunaanni-qinersineq-valg-i-groenland), [Visit italien.um.dk/rejse-og-ophold/pas](https://italien.um.dk/rejse-og-ophold/pas) |
 | `itk.aarhus.dk` | [Visit itk.aarhus.dk homepage](https://itk.aarhus.dk/), [Visit itk.aarhus.dk/nyheder/projektnyheder/itk-skifter-til-europaeisk-cloud-hosting-leverandoer](https://itk.aarhus.dk/nyheder/projektnyheder/itk-skifter-til-europaeisk-cloud-hosting-leverandoer), [Visit itk.aarhus.dk/om-itk](https://itk.aarhus.dk/om-itk) |
@@ -287,6 +293,7 @@ permalink: /domains/denmark.html
 | `jobcenter.herning.dk` | [Visit jobcenter.herning.dk homepage](https://jobcenter.herning.dk/), [Visit jobcenter.herning.dk/borger](https://jobcenter.herning.dk/borger), [Visit jobcenter.herning.dk/virksomheder](https://jobcenter.herning.dk/virksomheder) |
 | `jobigen.viborg.dk` | [Visit jobigen.viborg.dk homepage](https://jobigen.viborg.dk/), [Visit jobigen.viborg.dk/trepas-og-noerremarken/](https://jobigen.viborg.dk/trepas-og-noerremarken/) |
 | `jobmesse.aarhus.dk` | [Visit jobmesse.aarhus.dk homepage](https://jobmesse.aarhus.dk/), [Visit jobmesse.aarhus.dk/events/find-job-nu-live-koekken-og-restauration](https://jobmesse.aarhus.dk/events/find-job-nu-live-koekken-og-restauration), [Visit jobmesse.aarhus.dk/events/international-company-day](https://jobmesse.aarhus.dk/events/international-company-day) |
+| `justitsministeriet.dk` | [Visit justitsministeriet.dk homepage](https://justitsministeriet.dk/) |
 | `karriere.forsvaret.dk` | [Visit karriere.forsvaret.dk homepage](https://karriere.forsvaret.dk/), [Visit karriere.forsvaret.dk/karriereveje/ansigt-til-ansigt/](https://karriere.forsvaret.dk/karriereveje/ansigt-til-ansigt/), [Visit karriere.forsvaret.dk/uddannelse/](https://karriere.forsvaret.dk/uddannelse/) |
 | `katrinebjergskolen.aarhus.dk` | [Visit katrinebjergskolen.aarhus.dk homepage](https://katrinebjergskolen.aarhus.dk/), [Visit katrinebjergskolen.aarhus.dk/samarbejde-med-foraeldre](https://katrinebjergskolen.aarhus.dk/samarbejde-med-foraeldre), [Visit katrinebjergskolen.aarhus.dk/vores-skole/om-skolen](https://katrinebjergskolen.aarhus.dk/vores-skole/om-skolen) |
 | `kbhijob.kk.dk` | [Visit kbhijob.kk.dk homepage](https://kbhijob.kk.dk/), [Visit kbhijob.kk.dk/dit-forloeb-i-jobcentret](https://kbhijob.kk.dk/dit-forloeb-i-jobcentret), [Visit kbhijob.kk.dk/jobtips/uopfordret-kontakt](https://kbhijob.kk.dk/jobtips/uopfordret-kontakt) |
@@ -352,6 +359,7 @@ permalink: /domains/denmark.html
 | `malaysia.um.dk` | [Visit malaysia.um.dk homepage](https://malaysia.um.dk/), [Visit malaysia.um.dk/en/travel-and-residence](https://malaysia.um.dk/en/travel-and-residence) |
 | `mali.um.dk` | [Visit mali.um.dk homepage](https://mali.um.dk/), [Visit mali.um.dk/nyheder/restrukturering-ophoer-af-visa](https://mali.um.dk/nyheder/restrukturering-ophoer-af-visa) |
 | `marokko.um.dk` | [Visit marokko.um.dk homepage](https://marokko.um.dk/), [Visit marokko.um.dk/nyheder/longer-processing-time-in-visa-cases](https://marokko.um.dk/nyheder/longer-processing-time-in-visa-cases) |
+| `mbbl.dk` | [Visit mbbl.dk homepage](https://mbbl.dk/) |
 | `medarbejder.forsvaret.dk` | [Visit medarbejder.forsvaret.dk homepage](https://medarbejder.forsvaret.dk/), [Visit medarbejder.forsvaret.dk/da/](https://medarbejder.forsvaret.dk/da/), [Visit medarbejder.forsvaret.dk/da/servicemappe/cookiepolitik/](https://medarbejder.forsvaret.dk/da/servicemappe/cookiepolitik/) |
 | `medarbejder.kk.dk` | [Visit medarbejder.kk.dk homepage](https://medarbejder.kk.dk/), [Visit medarbejder.kk.dk/medarbejderfordele/copenhagen-pride](https://medarbejder.kk.dk/medarbejderfordele/copenhagen-pride) |
 | `mentalsundhed.kk.dk` | [Visit mentalsundhed.kk.dk homepage](https://mentalsundhed.kk.dk/), [Visit mentalsundhed.kk.dk/om-os/kontakt-os/borgerbooking](https://mentalsundhed.kk.dk/om-os/kontakt-os/borgerbooking), [Visit mentalsundhed.kk.dk/vores-tilbud](https://mentalsundhed.kk.dk/vores-tilbud) |
@@ -360,6 +368,8 @@ permalink: /domains/denmark.html
 | `metronomen.frederiksberg.dk` | [Visit metronomen.frederiksberg.dk homepage](https://metronomen.frederiksberg.dk/), [Visit metronomen.frederiksberg.dk/om-metronomen](https://metronomen.frederiksberg.dk/om-metronomen) |
 | `mexico.um.dk` | [Visit mexico.um.dk homepage](https://mexico.um.dk/), [Visit mexico.um.dk/nyheder/brevstemmeafgivning-i-udlandet-til-valg-i-groenland](https://mexico.um.dk/nyheder/brevstemmeafgivning-i-udlandet-til-valg-i-groenland), [Visit mexico.um.dk/rejse-og-ophold/rejsevejledning-til-mexico](https://mexico.um.dk/rejse-og-ophold/rejsevejledning-til-mexico) |
 | `mfa.horsens.dk` | [Visit mfa.horsens.dk homepage](https://mfa.horsens.dk/), [Visit mfa.horsens.dk/sib/sibpwd/sibpwdsoloidlogin.aspx](https://mfa.horsens.dk/sib/sibpwd/sibpwdsoloidlogin.aspx) |
+| `mfvm.dk` | [Visit mfvm.dk homepage](http://mfvm.dk/) |
+| `mgtp.dk` | [Visit mgtp.dk homepage](https://mgtp.dk/) |
 | `midtbyensdagtilbud.aarhus.dk` | [Visit midtbyensdagtilbud.aarhus.dk homepage](https://midtbyensdagtilbud.aarhus.dk/), [Visit midtbyensdagtilbud.aarhus.dk/kontakt/kontakt-en-afdeling-eller-en-paedagogisk-leder](https://midtbyensdagtilbud.aarhus.dk/kontakt/kontakt-en-afdeling-eller-en-paedagogisk-leder), [Visit midtbyensdagtilbud.aarhus.dk/vores-afdelinger](https://midtbyensdagtilbud.aarhus.dk/vores-afdelinger) |
 | `minesvar.rm.dk` | [Visit minesvar.rm.dk homepage](https://minesvar.rm.dk/) |
 | `minmenu.rm.dk` | [Visit minmenu.rm.dk homepage](https://minmenu.rm.dk/) |
@@ -377,6 +387,7 @@ permalink: /domains/denmark.html
 | `musikskolen.kk.dk` | [Visit musikskolen.kk.dk homepage](https://musikskolen.kk.dk/), [Visit musikskolen.kk.dk/cookiepolitik](https://musikskolen.kk.dk/cookiepolitik) |
 | `musikskolen.svendborg.dk` | [Visit musikskolen.svendborg.dk homepage](https://musikskolen.svendborg.dk/), [Visit musikskolen.svendborg.dk/da/hvad-kan-jeg-gaa-til/](https://musikskolen.svendborg.dk/da/hvad-kan-jeg-gaa-til/) |
 | `naas.rm.dk` | [Visit naas.rm.dk homepage](https://naas.rm.dk/) |
+| `naevneneshus.dk` | [Visit naevneneshus.dk homepage](https://naevneneshus.dk/) |
 | `naturcenteramagerstrand.kk.dk` | [Visit naturcenteramagerstrand.kk.dk homepage](https://naturcenteramagerstrand.kk.dk/), [Visit naturcenteramagerstrand.kk.dk/cookiepolitik](https://naturcenteramagerstrand.kk.dk/cookiepolitik), [Visit naturcenteramagerstrand.kk.dk/kalender/aabent-hus-i-sommerferien-paa-naturcenter-amager-strand-0](https://naturcenteramagerstrand.kk.dk/kalender/aabent-hus-i-sommerferien-paa-naturcenter-amager-strand-0) |
 | `nederlandene.um.dk` | [Visit nederlandene.um.dk homepage](https://nederlandene.um.dk/), [Visit nederlandene.um.dk/nyheder/the-danish-embassy-is-looking-for-a-student-assistant-at-the-political-department](https://nederlandene.um.dk/nyheder/the-danish-embassy-is-looking-for-a-student-assistant-at-the-political-department), [Visit nederlandene.um.dk/rejse-og-ophold-dk/faq](https://nederlandene.um.dk/rejse-og-ophold-dk/faq) |
 | `nemaffaldsservice.kk.dk` | [Visit nemaffaldsservice.kk.dk homepage](https://nemaffaldsservice.kk.dk/) |
@@ -394,6 +405,7 @@ permalink: /domains/denmark.html
 | `oesterbrolokaludvalg.kk.dk` | [Visit oesterbrolokaludvalg.kk.dk homepage](https://oesterbrolokaludvalg.kk.dk/), [Visit oesterbrolokaludvalg.kk.dk/cookiepolitik](https://oesterbrolokaludvalg.kk.dk/cookiepolitik), [Visit oesterbrolokaludvalg.kk.dk/vores-arbejde/dit-lokaludvalg/oesterbro-lokaludvalg](https://oesterbrolokaludvalg.kk.dk/vores-arbejde/dit-lokaludvalg/oesterbro-lokaludvalg?language=da) |
 | `oestrig.um.dk` | [Visit oestrig.um.dk homepage](https://oestrig.um.dk/), [Visit oestrig.um.dk/om-os/ambassadoerens-velkomsthilsen](https://oestrig.um.dk/om-os/ambassadoerens-velkomsthilsen) |
 | `offshore.at.dk` | [Visit offshore.at.dk homepage](https://offshore.at.dk/), [Visit offshore.at.dk/arbejdstilsynets-arbejdsomraader](https://offshore.at.dk/arbejdstilsynets-arbejdsomraader), [Visit offshore.at.dk/godkendelser-og-tilladelser/faste-anlaeg](https://offshore.at.dk/godkendelser-og-tilladelser/faste-anlaeg) |
+| `oim.dk` | [Visit oim.dk homepage](https://oim.dk/) |
 | `onkeldannysplads.kk.dk` | [Visit onkeldannysplads.kk.dk homepage](https://onkeldannysplads.kk.dk/), [Visit onkeldannysplads.kk.dk/cookiepolitik](https://onkeldannysplads.kk.dk/cookiepolitik), [Visit onkeldannysplads.kk.dk/kalender/alternative-pride-cinewine](https://onkeldannysplads.kk.dk/kalender/alternative-pride-cinewine) |
 | `opdag.aarhus.dk` | [Visit opdag.aarhus.dk homepage](https://opdag.aarhus.dk/), [Visit opdag.aarhus.dk/kunst-og-kultur](https://opdag.aarhus.dk/kunst-og-kultur), [Visit opdag.aarhus.dk/natur](https://opdag.aarhus.dk/natur) |
 | `open.rsyd.dk` | [Visit open.rsyd.dk homepage](https://open.rsyd.dk/), [Visit open.rsyd.dk/nyheder/open-arsrapport-2024](https://open.rsyd.dk/nyheder/open-arsrapport-2024), [Visit open.rsyd.dk/opens-faciliteter](https://open.rsyd.dk/opens-faciliteter) |
@@ -436,6 +448,7 @@ permalink: /domains/denmark.html
 | `research.regionh.dk` | [Visit research.regionh.dk homepage](https://research.regionh.dk/), [Visit research.regionh.dk/da/](https://research.regionh.dk/da/) |
 | `ressourcer.borger.dk` | [Visit ressourcer.borger.dk homepage](https://ressourcer.borger.dk/), [Visit ressourcer.borger.dk/anmeld-flytning.html](https://ressourcer.borger.dk/anmeld-flytning.html) |
 | `rhnordjylland.rn.dk` | [Visit rhnordjylland.rn.dk homepage](https://rhnordjylland.rn.dk/), [Visit rhnordjylland.rn.dk/da/](https://rhnordjylland.rn.dk/da/) |
+| `rigsrevisionen.dk` | [Visit rigsrevisionen.dk homepage](https://rigsrevisionen.dk/) |
 | `ripabooking.rsyd.dk` | [Visit ripabooking.rsyd.dk homepage](https://ripabooking.rsyd.dk/) |
 | `risskovdagtilbud.aarhus.dk` | [Visit risskovdagtilbud.aarhus.dk homepage](https://risskovdagtilbud.aarhus.dk/), [Visit risskovdagtilbud.aarhus.dk/faelles-i-dagtilbuddet/hvem-er-vi](https://risskovdagtilbud.aarhus.dk/faelles-i-dagtilbuddet/hvem-er-vi), [Visit risskovdagtilbud.aarhus.dk/kontakt/kontakt-en-afdeling-eller-en-leder](https://risskovdagtilbud.aarhus.dk/kontakt/kontakt-en-afdeling-eller-en-leder) |
 | `risskovskole.aarhus.dk` | [Visit risskovskole.aarhus.dk homepage](https://risskovskole.aarhus.dk/), [Visit risskovskole.aarhus.dk/kontakt/kontakt-os](https://risskovskole.aarhus.dk/kontakt/kontakt-os), [Visit risskovskole.aarhus.dk/vores-skole/om-skolen](https://risskovskole.aarhus.dk/vores-skole/om-skolen) |
@@ -502,6 +515,7 @@ permalink: /domains/denmark.html
 | `studieby.kk.dk` | [Visit studieby.kk.dk homepage](https://studieby.kk.dk/), [Visit studieby.kk.dk/din-studieby](https://studieby.kk.dk/din-studieby), [Visit studieby.kk.dk/din-studieby/projektsamarbejde](https://studieby.kk.dk/din-studieby/projektsamarbejde) |
 | `studieweb.politi.dk` | [Visit studieweb.politi.dk homepage](https://studieweb.politi.dk/), [Visit studieweb.politi.dk/ssf/a/c/p_name/ss_forum/p_action/1/binderId/275637/entityType/workspace/action/view_permalink/novl_url/1](https://studieweb.politi.dk/ssf/a/c/p_name/ss_forum/p_action/1/binderId/275637/entityType/workspace/action/view_permalink/novl_url/1) |
 | `sub.slagelse.dk` | [Visit sub.slagelse.dk homepage](https://sub.slagelse.dk/), [Visit sub.slagelse.dk/da/](https://sub.slagelse.dk/da/), [Visit sub.slagelse.dk/da/nyheder/sommerferie/](https://sub.slagelse.dk/da/nyheder/sommerferie/) |
+| `sum.dk` | [Visit sum.dk homepage](https://sum.dk/) |
 | `sund.frederiksberg.dk` | [Visit sund.frederiksberg.dk homepage](https://sund.frederiksberg.dk/), [Visit sund.frederiksberg.dk/ambulant-genoptraening-og-rehabilitering](https://sund.frederiksberg.dk/ambulant-genoptraening-og-rehabilitering), [Visit sund.frederiksberg.dk/nyheder-16/kom-til-lungecafe-den-3-september-for-lungesyge-og-paaroerende](https://sund.frederiksberg.dk/nyheder-16/kom-til-lungecafe-den-3-september-for-lungesyge-og-paaroerende) |
 | `sundhedscenter.viborg.dk` | [Visit sundhedscenter.viborg.dk homepage](https://sundhedscenter.viborg.dk/), [Visit sundhedscenter.viborg.dk/soeg/](https://sundhedscenter.viborg.dk/soeg/?prevPageId=9426), [Visit sundhedscenter.viborg.dk/sundhedscenter-og-satellitter/](https://sundhedscenter.viborg.dk/sundhedscenter-og-satellitter/) |
 | `sundhedshus.helsingor.dk` | [Visit sundhedshus.helsingor.dk homepage](https://sundhedshus.helsingor.dk/), [Visit sundhedshus.helsingor.dk/sundhedstilbud-i-sundhedshuset](https://sundhedshus.helsingor.dk/sundhedstilbud-i-sundhedshuset) |
@@ -557,6 +571,7 @@ permalink: /domains/denmark.html
 | `ufm.dk` | [Visit ufm.dk homepage](https://ufm.dk/), [Visit ufm.dk/aktuelt/pressemeddelelser/2025/christina-egelund-vi-har-glemt-betydningen-af-de-sproglige-kompetencer](https://ufm.dk/aktuelt/pressemeddelelser/2025/christina-egelund-vi-har-glemt-betydningen-af-de-sproglige-kompetencer) |
 | `uganda.um.dk` | [Visit uganda.um.dk homepage](https://uganda.um.dk/) |
 | `uim.dk` | [Visit uim.dk homepage](https://uim.dk/), [Visit uim.dk/nyhedsarkiv/2025/marts/regeringen-vil-straksudsende-flere-kriminelle-udlaendinge/](https://uim.dk/nyhedsarkiv/2025/marts/regeringen-vil-straksudsende-flere-kriminelle-udlaendinge/) |
+| `uk.rigsrevisionen.dk` | [Visit uk.rigsrevisionen.dk homepage](https://uk.rigsrevisionen.dk/) |
 | `ukraine.um.dk` | [Visit ukraine.um.dk homepage](https://ukraine.um.dk/), [Visit ukraine.um.dk/defence-industry-hub](https://ukraine.um.dk/defence-industry-hub), [Visit ukraine.um.dk/en/news](https://ukraine.um.dk/en/news) |
 | `um.dk` | [Visit um.dk homepage](https://um.dk/), [Visit um.dk/udenrigspolitik/danmark-i-fns-sikkerhedsraad](https://um.dk/udenrigspolitik/danmark-i-fns-sikkerhedsraad) |
 | `ungarn.um.dk` | [Visit ungarn.um.dk homepage](https://ungarn.um.dk/), [Visit ungarn.um.dk/nyheder/joint-statement](https://ungarn.um.dk/nyheder/joint-statement) |

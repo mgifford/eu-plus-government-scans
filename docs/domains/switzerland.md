@@ -6,7 +6,7 @@ permalink: /domains/switzerland.html
 
 [← Back to all countries](../domains.html)
 
-**941 domains** · **2,117 pages**
+**947 domains** · **2,123 pages**
 
 | Domain | Pages |
 |--------|-------|
@@ -71,6 +71,7 @@ permalink: /domains/switzerland.html
 | `bernoulli.epfl.ch` | [Visit bernoulli.epfl.ch homepage](https://bernoulli.epfl.ch/), [Visit bernoulli.epfl.ch/programs/new-trends-and-applications-around-generalized-fokker-planck-operators/](https://bernoulli.epfl.ch/programs/new-trends-and-applications-around-generalized-fokker-planck-operators/) |
 | `bescheinigungen.estv.admin.ch` | [Visit bescheinigungen.estv.admin.ch homepage](https://bescheinigungen.estv.admin.ch/), [Visit bescheinigungen.estv.admin.ch/accessibility-statement](https://bescheinigungen.estv.admin.ch/accessibility-statement) |
 | `bezdek.ethz.ch` | [Visit bezdek.ethz.ch homepage](https://bezdek.ethz.ch/), [Visit bezdek.ethz.ch/research/synthetic-inorganic---organometallic-chemistry.html](https://bezdek.ethz.ch/research/synthetic-inorganic---organometallic-chemistry.html) |
+| `bger.ch` | [Visit bger.ch homepage](https://bger.ch/) |
 | `bigwww.epfl.ch` | [Visit bigwww.epfl.ch homepage](https://bigwww.epfl.ch/) |
 | `biofabrication.ethz.ch` | [Visit biofabrication.ethz.ch homepage](https://biofabrication.ethz.ch/), [Visit biofabrication.ethz.ch/student-projects.html](https://biofabrication.ethz.ch/student-projects.html), [Visit biofabrication.ethz.ch/utils/search.html](https://biofabrication.ethz.ch/utils/search.html) |
 | `biogeme.epfl.ch` | [Visit biogeme.epfl.ch homepage](https://biogeme.epfl.ch/), [Visit biogeme.epfl.ch/sphinx/examples.html](https://biogeme.epfl.ch/sphinx/examples.html) |
@@ -92,6 +93,7 @@ permalink: /domains/switzerland.html
 | `brbiclab.epfl.ch` | [Visit brbiclab.epfl.ch homepage](https://brbiclab.epfl.ch/), [Visit brbiclab.epfl.ch/publications/](https://brbiclab.epfl.ch/publications/) |
 | `brg.ethz.ch` | [Visit brg.ethz.ch homepage](https://brg.ethz.ch/), [Visit brg.ethz.ch/news](https://brg.ethz.ch/news) |
 | `bsse.ethz.ch` | [Visit bsse.ethz.ch homepage](https://bsse.ethz.ch/), [Visit bsse.ethz.ch/news-and-events.html](https://bsse.ethz.ch/news-and-events.html), [Visit bsse.ethz.ch/research/research-groups.html](https://bsse.ethz.ch/research/research-groups.html) |
+| `bstger.ch` | [Visit bstger.ch homepage](https://bstger.ch/) |
 | `btsd.ethz.ch` | [Visit btsd.ethz.ch homepage](https://btsd.ethz.ch/), [Visit btsd.ethz.ch/shareddata/index.html](https://btsd.ethz.ch/shareddata/index.html) |
 | `c2sm.ethz.ch` | [Visit c2sm.ethz.ch homepage](https://c2sm.ethz.ch/), [Visit c2sm.ethz.ch/education/summer-school-2025.html](https://c2sm.ethz.ch/education/summer-school-2025.html), [Visit c2sm.ethz.ch/research.html](https://c2sm.ethz.ch/research.html) |
 | `cadd.ethz.ch` | [Visit cadd.ethz.ch homepage](https://cadd.ethz.ch/), [Visit cadd.ethz.ch/research/de_novo_drug_design.html](https://cadd.ethz.ch/research/de_novo_drug_design.html), [Visit cadd.ethz.ch/research/natural_products.html](https://cadd.ethz.ch/research/natural_products.html) |
@@ -238,6 +240,7 @@ permalink: /domains/switzerland.html
 | `exams.vmp.ethz.ch` | [Visit exams.vmp.ethz.ch homepage](https://exams.vmp.ethz.ch/), [Visit exams.vmp.ethz.ch/category/StatisticalPhysics](https://exams.vmp.ethz.ch/category/StatisticalPhysics) |
 | `exclaim-symposium.ethz.ch` | [Visit exclaim-symposium.ethz.ch homepage](https://exclaim-symposium.ethz.ch/), [Visit exclaim-symposium.ethz.ch/public-keynote.html](https://exclaim-symposium.ethz.ch/public-keynote.html), [Visit exclaim-symposium.ethz.ch/utils/search.html](https://exclaim-symposium.ethz.ch/utils/search.html) |
 | `expert.ethz.ch` | [Visit expert.ethz.ch homepage](https://expert.ethz.ch/), [Visit expert.ethz.ch/login](https://expert.ethz.ch/login) |
+| `exteriors.gencat.cat` | [Visit exteriors.gencat.cat homepage](https://exteriors.gencat.cat/) |
 | `farma-unites.unige.ch` | [Visit farma-unites.unige.ch homepage](https://farma-unites.unige.ch/), [Visit farma-unites.unige.ch/fr/adhesion-et-interprofessionnalite](https://farma-unites.unige.ch/fr/adhesion-et-interprofessionnalite) |
 | `fcl.ethz.ch` | [Visit fcl.ethz.ch homepage](https://fcl.ethz.ch/) |
 | `fe.ethz.ch` | [Visit fe.ethz.ch homepage](https://fe.ethz.ch/), [Visit fe.ethz.ch/news-und-veranstaltungen.html](https://fe.ethz.ch/news-und-veranstaltungen.html), [Visit fe.ethz.ch/utils/search.html](https://fe.ethz.ch/utils/search.html) |
@@ -250,6 +253,7 @@ permalink: /domains/switzerland.html
 | `finfo.zas.admin.ch` | [Visit finfo.zas.admin.ch homepage](https://finfo.zas.admin.ch/) |
 | `finfo01.zas.admin.ch` | [Visit finfo01.zas.admin.ch homepage](https://finfo01.zas.admin.ch/) |
 | `finfo02.zas.admin.ch` | [Visit finfo02.zas.admin.ch homepage](https://finfo02.zas.admin.ch/) |
+| `finma.ch` | [Visit finma.ch homepage](https://finma.ch/) |
 | `first.ethz.ch` | [Visit first.ethz.ch homepage](https://first.ethz.ch/), [Visit first.ethz.ch/equipment/first-equipment/mbe.html](https://first.ethz.ch/equipment/first-equipment/mbe.html) |
 | `fiteoweb.unige.ch` | [Visit fiteoweb.unige.ch homepage](https://fiteoweb.unige.ch/) |
 | `fml.ethz.ch` | [Visit fml.ethz.ch homepage](https://fml.ethz.ch/), [Visit fml.ethz.ch/people.html](https://fml.ethz.ch/people.html) |
@@ -318,6 +322,7 @@ permalink: /domains/switzerland.html
 | `ifd.ethz.ch` | [Visit ifd.ethz.ch homepage](https://ifd.ethz.ch/), [Visit ifd.ethz.ch/research/group-jenny/projects-turbulence/data-assimilation.html](https://ifd.ethz.ch/research/group-jenny/projects-turbulence/data-assimilation.html) |
 | `ife.ee.ethz.ch` | [Visit ife.ee.ethz.ch homepage](https://ife.ee.ethz.ch/), [Visit ife.ee.ethz.ch/media.html](https://ife.ee.ethz.ch/media.html), [Visit ife.ee.ethz.ch/utils/search.html](https://ife.ee.ethz.ch/utils/search.html) |
 | `ifnh.ethz.ch` | [Visit ifnh.ethz.ch homepage](https://ifnh.ethz.ch/), [Visit ifnh.ethz.ch/the-institute.html](https://ifnh.ethz.ch/the-institute.html), [Visit ifnh.ethz.ch/utils/search.html](https://ifnh.ethz.ch/utils/search.html) |
+| `ifpdt.ch` | [Visit ifpdt.ch homepage](https://ifpdt.ch/) |
 | `ifu.ethz.ch` | [Visit ifu.ethz.ch homepage](https://ifu.ethz.ch/), [Visit ifu.ethz.ch/news-and-events.html](https://ifu.ethz.ch/news-and-events.html), [Visit ifu.ethz.ch/utils/search.html](https://ifu.ethz.ch/utils/search.html) |
 | `igl.ethz.ch` | [Visit igl.ethz.ch homepage](https://igl.ethz.ch/), [Visit igl.ethz.ch/publications](https://igl.ethz.ch/publications) |
 | `igp.ethz.ch` | [Visit igp.ethz.ch homepage](https://igp.ethz.ch/), [Visit igp.ethz.ch/the-institute.html](https://igp.ethz.ch/the-institute.html), [Visit igp.ethz.ch/utils/search.html](https://igp.ethz.ch/utils/search.html) |
@@ -517,6 +522,7 @@ permalink: /domains/switzerland.html
 | `people.phys.ethz.ch` | [Visit people.phys.ethz.ch homepage](https://people.phys.ethz.ch/) |
 | `peptide-discovery.ethz.ch` | [Visit peptide-discovery.ethz.ch homepage](https://peptide-discovery.ethz.ch/), [Visit peptide-discovery.ethz.ch/research/peptide-therapeutics-and-their-typical-roadblocks.html](https://peptide-discovery.ethz.ch/research/peptide-therapeutics-and-their-typical-roadblocks.html), [Visit peptide-discovery.ethz.ch/research/protein-protein-interactions-as-targets-for-therapeutic-interven.html](https://peptide-discovery.ethz.ch/research/protein-protein-interactions-as-targets-for-therapeutic-interven.html) |
 | `pes.ee.ethz.ch` | [Visit pes.ee.ethz.ch homepage](https://pes.ee.ethz.ch/), [Visit pes.ee.ethz.ch/the-institute.html](https://pes.ee.ethz.ch/the-institute.html), [Visit pes.ee.ethz.ch/utils/search.html](https://pes.ee.ethz.ch/utils/search.html) |
+| `pfpdt.ch` | [Visit pfpdt.ch homepage](https://pfpdt.ch/) |
 | `pgc.unige.ch` | [Visit pgc.unige.ch homepage](https://pgc.unige.ch/), [Visit pgc.unige.ch/main/](https://pgc.unige.ch/main/) |
 | `pharmaceutical-chemistry.ethz.ch` | [Visit pharmaceutical-chemistry.ethz.ch homepage](https://pharmaceutical-chemistry.ethz.ch/), [Visit pharmaceutical-chemistry.ethz.ch/publications.html](https://pharmaceutical-chemistry.ethz.ch/publications.html) |
 | `pharmaceutical-immunology.ethz.ch` | [Visit pharmaceutical-immunology.ethz.ch homepage](https://pharmaceutical-immunology.ethz.ch/), [Visit pharmaceutical-immunology.ethz.ch/research/inflammatory_response.html](https://pharmaceutical-immunology.ethz.ch/research/inflammatory_response.html) |

@@ -6,7 +6,7 @@ permalink: /domains/croatia.html
 
 [← Back to all countries](../domains.html)
 
-**139 domains** · **233 pages**
+**163 domains** · **257 pages**
 
 | Domain | Pages |
 |--------|-------|
@@ -15,7 +15,9 @@ permalink: /domains/croatia.html
 | `arcportal.zagreb.hr` | [Visit arcportal.zagreb.hr homepage](https://arcportal.zagreb.hr/) |
 | `arhiva.pozega.hr` | [Visit arhiva.pozega.hr homepage](https://arhiva.pozega.hr/), [Visit arhiva.pozega.hr/index.php](https://arhiva.pozega.hr/index.php?option=com_k2&view=item&id=5846:cestitka-gradonacelnika-u-prigodi-obiljezavanja-dana-drzavnosti-republike-hrvatske&Itemid=323) |
 | `azop.hr` | [Visit azop.hr homepage](https://azop.hr/), [Visit azop.hr/djelokrug/](https://azop.hr/djelokrug/), [Visit azop.hr/en/naslovna-english/](https://azop.hr/en/naslovna-english/) |
+| `branitelji.gov.hr` | [Visit branitelji.gov.hr homepage](https://branitelji.gov.hr/) |
 | `buswebshop.dubrovnik.hr` | [Visit buswebshop.dubrovnik.hr homepage](https://buswebshop.dubrovnik.hr/), [Visit buswebshop.dubrovnik.hr/en/disembarkationboarding-time-change](https://buswebshop.dubrovnik.hr/en/disembarkationboarding-time-change), [Visit buswebshop.dubrovnik.hr/en/privacy-policy](https://buswebshop.dubrovnik.hr/en/privacy-policy) |
+| `civilna-zastita.gov.hr` | [Visit civilna-zastita.gov.hr homepage](https://civilna-zastita.gov.hr/) |
 | `data.zagreb.hr` | [Visit data.zagreb.hr homepage](https://data.zagreb.hr/), [Visit data.zagreb.hr/dataset/](https://data.zagreb.hr/dataset/), [Visit data.zagreb.hr/dataset](https://data.zagreb.hr/dataset?tags=grad+zagreb) |
 | `dzo.hzzo.hr` | [Visit dzo.hzzo.hr homepage](https://dzo.hzzo.hr/), [Visit dzo.hzzo.hr/najcesca-pitanja](https://dzo.hzzo.hr/najcesca-pitanja), [Visit dzo.hzzo.hr/obrasci](https://dzo.hzzo.hr/obrasci) |
 | `e-pisarnica.zagreb.hr` | [Visit e-pisarnica.zagreb.hr homepage](https://e-pisarnica.zagreb.hr/) |
@@ -25,6 +27,7 @@ permalink: /domains/croatia.html
 | `ejednostavnanabava.zagreb.hr` | [Visit ejednostavnanabava.zagreb.hr homepage](https://ejednostavnanabava.zagreb.hr/), [Visit ejednostavnanabava.zagreb.hr/Nabava](https://ejednostavnanabava.zagreb.hr/Nabava?) |
 | `eko.zagreb.hr` | [Visit eko.zagreb.hr homepage](https://eko.zagreb.hr/), [Visit eko.zagreb.hr/na-mjernim-postajama-zagreb-4-i-ksaverska-cesta-za/5659](https://eko.zagreb.hr/na-mjernim-postajama-zagreb-4-i-ksaverska-cesta-za/5659), [Visit eko.zagreb.hr/natjecaji/17](https://eko.zagreb.hr/natjecaji/17) |
 | `enter.rijeka.hr` | [Visit enter.rijeka.hr homepage](https://enter.rijeka.hr/), [Visit enter.rijeka.hr/kontakt/](https://enter.rijeka.hr/kontakt/) |
+| `exteriors.gencat.cat` | [Visit exteriors.gencat.cat homepage](https://exteriors.gencat.cat/) |
 | `ezdravstveno.hzzo.hr` | [Visit ezdravstveno.hzzo.hr homepage](https://ezdravstveno.hzzo.hr/) |
 | `geoportal.zagreb.hr` | [Visit geoportal.zagreb.hr homepage](https://geoportal.zagreb.hr/), [Visit geoportal.zagreb.hr/Karta](https://geoportal.zagreb.hr/Karta) |
 | `geostat.dzs.hr` | [Visit geostat.dzs.hr homepage](https://geostat.dzs.hr/), [Visit geostat.dzs.hr/geonetwork](https://geostat.dzs.hr/geonetwork) |
@@ -33,19 +36,35 @@ permalink: /domains/croatia.html
 | `gradske-nekretnine.zagreb.hr` | [Visit gradske-nekretnine.zagreb.hr homepage](https://gradske-nekretnine.zagreb.hr/), [Visit gradske-nekretnine.zagreb.hr/search](https://gradske-nekretnine.zagreb.hr/search?collection=appAndMap) |
 | `hakometarplus.hakom.hr` | [Visit hakometarplus.hakom.hr homepage](https://hakometarplus.hakom.hr/), [Visit hakometarplus.hakom.hr/tc](https://hakometarplus.hakom.hr/tc) |
 | `hana.hzjz.hr` | [Visit hana.hzjz.hr homepage](https://hana.hzjz.hr/), [Visit hana.hzjz.hr/docs-public/](https://hana.hzjz.hr/docs-public/) |
+| `hnb.hr` | [Visit hnb.hr homepage](https://hnb.hr/) |
+| `hrvatiizvanrh.gov.hr` | [Visit hrvatiizvanrh.gov.hr homepage](https://hrvatiizvanrh.gov.hr/) |
 | `hzzo.hr` | [Visit hzzo.hr homepage](https://hzzo.hr/), [Visit hzzo.hr/novosti/natjecaj-za-sklapanje-ugovora-o-provodenju-specificne-zdravstvene-zastite-iz-obveznog-2](https://hzzo.hr/novosti/natjecaj-za-sklapanje-ugovora-o-provodenju-specificne-zdravstvene-zastite-iz-obveznog-2), [Visit hzzo.hr/zdravstvena-zastita/objavljene-liste-lijekova](https://hzzo.hr/zdravstvena-zastita/objavljene-liste-lijekova) |
+| `icty.org` | [Visit icty.org homepage](https://icty.org/) |
+| `imovina.gov.hr` | [Visit imovina.gov.hr homepage](https://imovina.gov.hr/) |
 | `integracija.zagreb.hr` | [Visit integracija.zagreb.hr homepage](https://integracija.zagreb.hr/), [Visit integracija.zagreb.hr/vazno-besplatni-tecaj-hrvatskog-jezika/134726](https://integracija.zagreb.hr/vazno-besplatni-tecaj-hrvatskog-jezika/134726) |
 | `kalendar.dubrovnik.hr` | [Visit kalendar.dubrovnik.hr homepage](https://kalendar.dubrovnik.hr/), [Visit kalendar.dubrovnik.hr/event/good-food-festival-2025/](https://kalendar.dubrovnik.hr/event/good-food-festival-2025/?lang=en) |
 | `koprivnica.hr` | [Visit koprivnica.hr homepage](https://koprivnica.hr/), [Visit koprivnica.hr/novosti/program-ljeto-na-zrinskom-2025/](https://koprivnica.hr/novosti/program-ljeto-na-zrinskom-2025/), [Visit koprivnica.hr/uprava/](https://koprivnica.hr/uprava/) |
 | `mentalnozdravlje.zagreb.hr` | [Visit mentalnozdravlje.zagreb.hr homepage](https://mentalnozdravlje.zagreb.hr/), [Visit mentalnozdravlje.zagreb.hr/ustanove/](https://mentalnozdravlje.zagreb.hr/ustanove/) |
+| `min-kulture.gov.hr` | [Visit min-kulture.gov.hr homepage](https://min-kulture.gov.hr/) |
+| `mingo.gov.hr` | [Visit mingo.gov.hr homepage](https://mingo.gov.hr/) |
 | `moj.zagreb.hr` | [Visit moj.zagreb.hr homepage](https://moj.zagreb.hr/) |
+| `morh.hr` | [Visit morh.hr homepage](https://morh.hr/) |
+| `mpgi.gov.hr` | [Visit mpgi.gov.hr homepage](https://mpgi.gov.hr/) |
+| `mps.hr` | [Visit mps.hr homepage](http://mps.hr/) |
+| `mpudt.gov.hr` | [Visit mpudt.gov.hr homepage](https://mpudt.gov.hr/) |
+| `mrms.hr` | [Visit mrms.hr homepage](https://mrms.hr/) |
+| `mup.hr` | [Visit mup.hr homepage](https://mup.hr/) |
+| `mvep.gov.hr` | [Visit mvep.gov.hr homepage](https://mvep.gov.hr/) |
+| `mzozt.gov.hr` | [Visit mzozt.gov.hr homepage](https://mzozt.gov.hr/) |
 | `necurak.hzjz.hr` | [Visit necurak.hzjz.hr homepage](https://necurak.hzjz.hr/), [Visit necurak.hzjz.hr/o-programu/](https://necurak.hzjz.hr/o-programu/) |
 | `obrasci.dzs.hr` | [Visit obrasci.dzs.hr homepage](https://obrasci.dzs.hr/), [Visit obrasci.dzs.hr/documents](https://obrasci.dzs.hr/documents) |
 | `ovisnosti.hzjz.hr` | [Visit ovisnosti.hzjz.hr homepage](https://ovisnosti.hzjz.hr/), [Visit ovisnosti.hzjz.hr/2024/07/04/europski-centar-za-pracenje-droga-i-ovisnosti-o-drogama-emcdda-je-sluzbeno-postao-agencija-europske-unije-za-droge-euda/](https://ovisnosti.hzjz.hr/2024/07/04/europski-centar-za-pracenje-droga-i-ovisnosti-o-drogama-emcdda-je-sluzbeno-postao-agencija-europske-unije-za-droge-euda/), [Visit ovisnosti.hzjz.hr/alkohol/](https://ovisnosti.hzjz.hr/alkohol/) |
 | `owa.rijeka.hr` | [Visit owa.rijeka.hr homepage](https://owa.rijeka.hr/) |
 | `penzici.rijeka.hr` | [Visit penzici.rijeka.hr homepage](https://penzici.rijeka.hr/), [Visit penzici.rijeka.hr/rekreativne-aktivnosti-za-umirovljenike/](https://penzici.rijeka.hr/rekreativne-aktivnosti-za-umirovljenike/) |
 | `podaci.dzs.hr` | [Visit podaci.dzs.hr homepage](https://podaci.dzs.hr/), [Visit podaci.dzs.hr/hr/](https://podaci.dzs.hr/hr/) |
+| `policija.hr` | [Visit policija.hr homepage](http://policija.hr/) |
 | `pozega.hr` | [Visit pozega.hr homepage](https://pozega.hr/), [Visit pozega.hr/novosti](https://pozega.hr/novosti), [Visit pozega.hr/novosti/komunalac-pozega-natjecaj-za-rezervaciju-prodajnih-mjesta-na-gradskoj-trznici](https://pozega.hr/novosti/komunalac-pozega-natjecaj-za-rezervaciju-prodajnih-mjesta-na-gradskoj-trznici) |
+| `pravosudje.gov.hr` | [Visit pravosudje.gov.hr homepage](https://pravosudje.gov.hr/) |
 | `promet.koprivnica.hr` | [Visit promet.koprivnica.hr homepage](https://promet.koprivnica.hr/), [Visit promet.koprivnica.hr/bicko](https://promet.koprivnica.hr/bicko) |
 | `propusnice.dubrovnik.hr` | [Visit propusnice.dubrovnik.hr homepage](https://propusnice.dubrovnik.hr/) |
 | `ranaintervencija.zagreb.hr` | [Visit ranaintervencija.zagreb.hr homepage](https://ranaintervencija.zagreb.hr/), [Visit ranaintervencija.zagreb.hr/besplatna-komunikacijska-ploca-s-temom-odlaska-na-more/](https://ranaintervencija.zagreb.hr/besplatna-komunikacijska-ploca-s-temom-odlaska-na-more/) |
@@ -58,15 +77,19 @@ permalink: /domains/croatia.html
 | `skupstina.zagreb.hr` | [Visit skupstina.zagreb.hr homepage](https://skupstina.zagreb.hr/), [Visit skupstina.zagreb.hr homepage](https://skupstina.zagreb.hr/?impaired=1), [Visit skupstina.zagreb.hr/skup-u-povodu-proboja-logorasa-iz-kerestineckog-logora-prije-84-godine/8233](https://skupstina.zagreb.hr/skup-u-povodu-proboja-logorasa-iz-kerestineckog-logora-prije-84-godine/8233) |
 | `slavonski-brod.hr` | [Visit slavonski-brod.hr homepage](https://slavonski-brod.hr/), [Visit slavonski-brod.hr/index.php](https://slavonski-brod.hr/index.php), [Visit slavonski-brod.hr/vijesti/15912-ddd-mjere-2025-godine-izvrsen-8-osmi-larvicidni-tretman-te-monitoring-licinki-i-adulta-komaraca](https://slavonski-brod.hr/vijesti/15912-ddd-mjere-2025-godine-izvrsen-8-osmi-larvicidni-tretman-te-monitoring-licinki-i-adulta-komaraca) |
 | `sn.rijeka.hr` | [Visit sn.rijeka.hr homepage](https://sn.rijeka.hr/), [Visit sn.rijeka.hr/2025/07/odluka-o-imenovanju-predstavnika-grada-rijeke-u-skupstini-gradske-vatrogasne-zajednice-rijeka/](https://sn.rijeka.hr/2025/07/odluka-o-imenovanju-predstavnika-grada-rijeke-u-skupstini-gradske-vatrogasne-zajednice-rijeka/), [Visit sn.rijeka.hr/2025/07/odluka-o-izmjeni-odluke-o-osnivanju-koordinacijskog-vijeca-urbane-aglomeracije-rijeka-za-financijsko-razdoblje-2021-2027-godine/](https://sn.rijeka.hr/2025/07/odluka-o-izmjeni-odluke-o-osnivanju-koordinacijskog-vijeca-urbane-aglomeracije-rijeka-za-financijsko-razdoblje-2021-2027-godine/) |
+| `soa.hr` | [Visit soa.hr homepage](https://soa.hr/) |
 | `split.hr` | [Visit split.hr homepage](https://split.hr/), [Visit split.hr/kalendar](https://split.hr/kalendar) |
 | `spremnici.zagreb.hr` | [Visit spremnici.zagreb.hr homepage](https://spremnici.zagreb.hr/), [Visit spremnici.zagreb.hr/search](https://spremnici.zagreb.hr/search?collection=appAndMap) |
 | `startup.rijeka.hr` | [Visit startup.rijeka.hr homepage](https://startup.rijeka.hr/), [Visit startup.rijeka.hr/HR/prijava](https://startup.rijeka.hr/HR/prijava) |
 | `stsbaza.dzs.hr` | [Visit stsbaza.dzs.hr homepage](https://stsbaza.dzs.hr/), [Visit stsbaza.dzs.hr/Report/StsChart](https://stsbaza.dzs.hr/Report/StsChart?id=152&datatypeid=24&indicatorid=16&seasonaladjustmentid=1&baseyearid=8&TimeIdFrom=&detailIds=392), [Visit stsbaza.dzs.hr/Search](https://stsbaza.dzs.hr/Search) |
+| `sudovi.hr` | [Visit sudovi.hr homepage](https://sudovi.hr/) |
 | `survey.hzjz.hr` | [Visit survey.hzjz.hr homepage](https://survey.hzjz.hr/) |
 | `tjedanmobilnosti.zagreb.hr` | [Visit tjedanmobilnosti.zagreb.hr homepage](https://tjedanmobilnosti.zagreb.hr/), [Visit tjedanmobilnosti.zagreb.hr homepage](https://tjedanmobilnosti.zagreb.hr/?id=134781) |
 | `transparentnost.zagreb.hr` | [Visit transparentnost.zagreb.hr homepage](https://transparentnost.zagreb.hr/) |
+| `usud.hr` | [Visit usud.hr homepage](https://usud.hr/) |
 | `varazdin.hr` | [Visit varazdin.hr homepage](https://varazdin.hr/), [Visit varazdin.hr/kalendar-dogadanja/](https://varazdin.hr/kalendar-dogadanja/), [Visit varazdin.hr/virtualna-setnja/](https://varazdin.hr/virtualna-setnja/) |
 | `vatrogasci.zagreb.hr` | [Visit vatrogasci.zagreb.hr homepage](https://vatrogasci.zagreb.hr/), [Visit vatrogasci.zagreb.hr/default.aspx](https://vatrogasci.zagreb.hr/default.aspx?id=1458) |
+| `vlada.gov.hr` | [Visit vlada.gov.hr homepage](https://vlada.gov.hr/) |
 | `vrtic-bajka.zagreb.hr` | [Visit vrtic-bajka.zagreb.hr homepage](https://vrtic-bajka.zagreb.hr/), [Visit vrtic-bajka.zagreb.hr/default.aspx](https://vrtic-bajka.zagreb.hr/default.aspx?id=37) |
 | `vrtic-botinec.zagreb.hr` | [Visit vrtic-botinec.zagreb.hr homepage](https://vrtic-botinec.zagreb.hr/) |
 | `vrtic-buducnost.zagreb.hr` | [Visit vrtic-buducnost.zagreb.hr homepage](https://vrtic-buducnost.zagreb.hr/) |
@@ -149,3 +172,4 @@ permalink: /domains/croatia.html
 | `www.zadar.hr` | [Visit www.zadar.hr homepage](https://www.zadar.hr/), [Visit www.zadar.hr/en/destinations/zadar](https://www.zadar.hr/en/destinations/zadar), [Visit www.zadar.hr/en/experience/national-nature-parks](https://www.zadar.hr/en/experience/national-nature-parks) |
 | `www.zagreb.hr` | [Visit www.zagreb.hr homepage](https://www.zagreb.hr/), [Visit www.zagreb.hr/gradski-projekti-i-aktivnosti/185018](https://www.zagreb.hr/gradski-projekti-i-aktivnosti/185018), [Visit www.zagreb.hr/konferencije-za-novinare-gradonacelnika-i-zamjenik/200987](https://www.zagreb.hr/konferencije-za-novinare-gradonacelnika-i-zamjenik/200987) |
 | `zagreb.hr` | [Visit zagreb.hr homepage](https://zagreb.hr/), [Visit zagreb.hr/skupstina-grada-zagreba-odlucuje-o-projektima-vrij/210040](https://zagreb.hr/skupstina-grada-zagreba-odlucuje-o-projektima-vrij/210040) |
+| `zdravlje.gov.hr` | [Visit zdravlje.gov.hr homepage](https://zdravlje.gov.hr/) |

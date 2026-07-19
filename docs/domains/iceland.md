@@ -6,7 +6,7 @@ permalink: /domains/iceland.html
 
 [← Back to all countries](../domains.html)
 
-**68 domains** · **139 pages**
+**74 domains** · **145 pages**
 
 | Domain | Pages |
 |--------|-------|
@@ -19,6 +19,7 @@ permalink: /domains/iceland.html
 | `bokasafn.kopavogur.is` | [Visit bokasafn.kopavogur.is homepage](https://bokasafn.kopavogur.is/), [Visit bokasafn.kopavogur.is/2025/07/14/metadsokn-i-midri-viku-i-barnadeildinni/](https://bokasafn.kopavogur.is/2025/07/14/metadsokn-i-midri-viku-i-barnadeildinni/), [Visit bokasafn.kopavogur.is/ungmennastarf/](https://bokasafn.kopavogur.is/ungmennastarf/) |
 | `borgarvefsja.reykjavik.is` | [Visit borgarvefsja.reykjavik.is homepage](https://borgarvefsja.reykjavik.is/) |
 | `breidagerdisskoli.reykjavik.is` | [Visit breidagerdisskoli.reykjavik.is homepage](https://breidagerdisskoli.reykjavik.is/), [Visit breidagerdisskoli.reykjavik.is/en/breidagerdisskoli](https://breidagerdisskoli.reykjavik.is/en/breidagerdisskoli), [Visit breidagerdisskoli.reykjavik.is/starfsfolk](https://breidagerdisskoli.reykjavik.is/starfsfolk) |
+| `customs.is` | [Visit customs.is homepage](https://customs.is/) |
 | `dalskoli.reykjavik.is` | [Visit dalskoli.reykjavik.is homepage](https://dalskoli.reykjavik.is/), [Visit dalskoli.reykjavik.is/en/dalskoli](https://dalskoli.reykjavik.is/en/dalskoli), [Visit dalskoli.reykjavik.is/frettir/2025/skolasetning-dalskola-2025](https://dalskoli.reykjavik.is/frettir/2025/skolasetning-dalskola-2025) |
 | `domstolar.is` | [Visit domstolar.is homepage](https://domstolar.is/), [Visit domstolar.is/domstolasyslan/um-domstolasysluna/](https://domstolar.is/domstolasyslan/um-domstolasysluna/), [Visit domstolar.is/domstolasyslan/um-domstolasysluna/frettir/frett/2025/06/04/Arsskyrsla-2024-er-komin-ut/](https://domstolar.is/domstolasyslan/um-domstolasysluna/frettir/frett/2025/06/04/Arsskyrsla-2024-er-komin-ut/) |
 | `en.hafnarfjordur.is` | [Visit en.hafnarfjordur.is homepage](https://en.hafnarfjordur.is/), [Visit en.hafnarfjordur.is/governance/](https://en.hafnarfjordur.is/governance/), [Visit en.hafnarfjordur.is/open-house-at-cisv-international-summer-camp-at-hraunvallaskoli/](https://en.hafnarfjordur.is/open-house-at-cisv-international-summer-camp-at-hraunvallaskoli/) |
@@ -27,10 +28,13 @@ permalink: /domains/iceland.html
 | `gagnahladbord.reykjavik.is` | [Visit gagnahladbord.reykjavik.is homepage](https://gagnahladbord.reykjavik.is/), [Visit gagnahladbord.reykjavik.is/malaflokkur/regnbogavottun](https://gagnahladbord.reykjavik.is/malaflokkur/regnbogavottun) |
 | `gamli.akureyri.is` | [Visit gamli.akureyri.is homepage](https://gamli.akureyri.is/), [Visit gamli.akureyri.is/is](https://gamli.akureyri.is/is), [Visit gamli.akureyri.is/is/frettir](https://gamli.akureyri.is/is/frettir) |
 | `gerdarsafn.kopavogur.is` | [Visit gerdarsafn.kopavogur.is homepage](https://gerdarsafn.kopavogur.is/), [Visit gerdarsafn.kopavogur.is/event/gerdur-grunnsyning/](https://gerdarsafn.kopavogur.is/event/gerdur-grunnsyning/), [Visit gerdarsafn.kopavogur.is/event/gudrun-bergsdottir/](https://gerdarsafn.kopavogur.is/event/gudrun-bergsdottir/) |
+| `government.is` | [Visit government.is homepage](https://government.is/) |
 | `gudni.forseti.is` | [Visit gudni.forseti.is homepage](https://gudni.forseti.is/), [Visit gudni.forseti.is/fr%C3%A9ttir/2024-07-31-funda%C3%B0-%C3%AD-r%C3%ADkisr%C3%A1%C3%B0i/](https://gudni.forseti.is/fr%C3%A9ttir/2024-07-31-funda%C3%B0-%C3%AD-r%C3%ADkisr%C3%A1%C3%B0i/) |
+| `haestirettur.is` | [Visit haestirettur.is homepage](https://haestirettur.is/) |
 | `hafnarfjordur.is` | [Visit hafnarfjordur.is homepage](https://hafnarfjordur.is/), [Visit hafnarfjordur.is/althjodleg-hatidarstemning-i-hraunvallaskola/](https://hafnarfjordur.is/althjodleg-hatidarstemning-i-hraunvallaskola/), [Visit hafnarfjordur.is/framkvaemdir/](https://hafnarfjordur.is/framkvaemdir/) |
 | `hagaskoli.reykjavik.is` | [Visit hagaskoli.reykjavik.is homepage](https://hagaskoli.reykjavik.is/), [Visit hagaskoli.reykjavik.is/en/hagaskoli](https://hagaskoli.reykjavik.is/en/hagaskoli), [Visit hagaskoli.reykjavik.is/frettir/2025/skoladagatal-2025-2026-samthykkt](https://hagaskoli.reykjavik.is/frettir/2025/skoladagatal-2025-2026-samthykkt) |
 | `hagstofa.is` | [Visit hagstofa.is homepage](https://hagstofa.is/), [Visit hagstofa.is/utgafur/frettasafn/laun-og-tekjur/tekjur-skattframtol-2024/](https://hagstofa.is/utgafur/frettasafn/laun-og-tekjur/tekjur-skattframtol-2024/) |
+| `heradsdomstolar.is` | [Visit heradsdomstolar.is homepage](https://heradsdomstolar.is/) |
 | `innri.reykjavik.is` | [Visit innri.reykjavik.is homepage](https://innri.reykjavik.is/), [Visit innri.reykjavik.is/is](https://innri.reykjavik.is/is) |
 | `island.is` | [Visit island.is homepage](https://island.is/), [Visit island.is/innskraning-umbod-og-adgangsstyring-a-island-is](https://island.is/innskraning-umbod-og-adgangsstyring-a-island-is) |
 | `knattspyrna.keflavik.is` | [Visit knattspyrna.keflavik.is homepage](https://knattspyrna.keflavik.is/) |
@@ -45,6 +49,7 @@ permalink: /domains/iceland.html
 | `minarsidur.reykjavik.is` | [Visit minarsidur.reykjavik.is homepage](https://minarsidur.reykjavik.is/), [Visit minarsidur.reykjavik.is/bug-report](https://minarsidur.reykjavik.is/bug-report) |
 | `mitt.samgongustofa.is` | [Visit mitt.samgongustofa.is homepage](https://mitt.samgongustofa.is/) |
 | `mml.reykjavik.is` | [Visit mml.reykjavik.is homepage](https://mml.reykjavik.is/), [Visit mml.reykjavik.is homepage](https://mml.reykjavik.is/?s=), [Visit mml.reykjavik.is/starfsthroun/](https://mml.reykjavik.is/starfsthroun/) |
+| `mms.is` | [Visit mms.is homepage](https://mms.is/) |
 | `mos.is` | [Visit mos.is homepage](https://mos.is/), [Visit mos.is/mannlif/vidburdir/sumarlestur-2025/](https://mos.is/mannlif/vidburdir/sumarlestur-2025/), [Visit mos.is/stjornsysla/baejarstjorn-rad-og-nefndir/fundargerdir](https://mos.is/stjornsysla/baejarstjorn-rad-og-nefndir/fundargerdir) |
 | `nyr.minarsidur.vinnumalastofnun.is` | [Visit nyr.minarsidur.vinnumalastofnun.is homepage](https://nyr.minarsidur.vinnumalastofnun.is/) |
 | `px.hagstofa.is` | [Visit px.hagstofa.is homepage](https://px.hagstofa.is/), [Visit px.hagstofa.is/pxen/](https://px.hagstofa.is/pxen/) |
@@ -55,6 +60,7 @@ permalink: /domains/iceland.html
 | `skjalasafn.reykjavik.is` | [Visit skjalasafn.reykjavik.is homepage](https://skjalasafn.reykjavik.is/), [Visit skjalasafn.reykjavik.is/fotoweb/archives/5000-A%C3%B0aluppdr%C3%A6ttir/](https://skjalasafn.reykjavik.is/fotoweb/archives/5000-A%C3%B0aluppdr%C3%A6ttir/) |
 | `starf.gardabaer.is` | [Visit starf.gardabaer.is homepage](https://starf.gardabaer.is/), [Visit starf.gardabaer.is/rcf3/Login.aspx](https://starf.gardabaer.is/rcf3/Login.aspx?action=login) |
 | `starfsmenn.akureyri.is` | [Visit starfsmenn.akureyri.is homepage](https://starfsmenn.akureyri.is/), [Visit starfsmenn.akureyri.is/starfsmannahandbok/moya/news/brekkuskoli-og-siduskoli-bestir-a-landinu-i-hjolad-i-vinnuna](https://starfsmenn.akureyri.is/starfsmannahandbok/moya/news/brekkuskoli-og-siduskoli-bestir-a-landinu-i-hjolad-i-vinnuna), [Visit starfsmenn.akureyri.is/starfsmannahandbok/moya/news/urslit-norak-2025](https://starfsmenn.akureyri.is/starfsmannahandbok/moya/news/urslit-norak-2025) |
+| `statice.is` | [Visit statice.is homepage](https://statice.is/) |
 | `stimplun.gardabaer.is` | [Visit stimplun.gardabaer.is homepage](https://stimplun.gardabaer.is/) |
 | `stund.gardabaer.is` | [Visit stund.gardabaer.is homepage](https://stund.gardabaer.is/), [Visit stund.gardabaer.is/Vinnustund/](https://stund.gardabaer.is/Vinnustund/) |
 | `thjonustugatt.kopavogur.is` | [Visit thjonustugatt.kopavogur.is homepage](https://thjonustugatt.kopavogur.is/) |

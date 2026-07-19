@@ -5,11 +5,11 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-07-19 16:33 UTC — last scan: 2026-07-19_
+_Stats as of 2026-07-19 18:07 UTC — last scan: 2026-07-19_
 
 **7** scan batches run
 
-**3,104** of **82,736** available pages scanned (**3.8%** coverage)
+**3,104** of **83,227** available pages scanned (**3.7%** coverage)
 **2,762** of **3,104** scanned pages were reachable (**89.0%**)
 **1,241** reachable pages loaded at least one third-party script (**44.9%** of reachable)
 **1,297** known third-party service loads identified
@@ -21,13 +21,13 @@ _Stats as of 2026-07-19 16:33 UTC — last scan: 2026-07-19_
 
 | Country | Scanned | Available | Reachable | URLs with 3rd-Party JS | Known Service Loads | JS URLs /100 Reachable | Known Loads /100 Reachable | Last Scan |
 |---------|---------|-----------|-----------|------------------------|--------------------|------------------------|---------------------------|----------|
-| Austria | 821 | 821 | 784 | 273 | 52 | 34.8 | 6.6 | 2026-07-19 |
-| Belgium | 342 | 1,309 | 216 | 111 | 114 | 51.4 | 52.8 | 2026-07-19 |
-| Bulgaria | 291 | 291 | 260 | 102 | 124 | 39.2 | 47.7 | 2026-07-19 |
-| Croatia | 233 | 233 | 231 | 108 | 149 | 46.8 | 64.5 | 2026-07-19 |
-| Czechia | 783 | 843 | 715 | 427 | 719 | 59.7 | 100.6 | 2026-07-19 |
-| Estonia | 396 | 396 | 352 | 112 | 94 | 31.8 | 26.7 | 2026-07-19 |
-| France | 238 | 10,007 | 204 | 108 | 45 | 52.9 | 22.1 | 2026-07-19 |
+| Austria | 821 | 822 | 784 | 273 | 52 | 34.8 | 6.6 | 2026-07-19 |
+| Belgium | 342 | 1,329 | 216 | 111 | 114 | 51.4 | 52.8 | 2026-07-19 |
+| Bulgaria | 291 | 353 | 260 | 102 | 124 | 39.2 | 47.7 | 2026-07-19 |
+| Croatia | 233 | 257 | 231 | 108 | 149 | 46.8 | 64.5 | 2026-07-19 |
+| Czechia | 783 | 866 | 715 | 427 | 719 | 59.7 | 100.6 | 2026-07-19 |
+| Estonia | 396 | 401 | 352 | 112 | 94 | 31.8 | 26.7 | 2026-07-19 |
+| France | 238 | 10,009 | 204 | 108 | 45 | 52.9 | 22.1 | 2026-07-19 |
 
 > Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and metric from [Download machine-readable third-party tools data (JSON)](third-party-tools-data.json).
 

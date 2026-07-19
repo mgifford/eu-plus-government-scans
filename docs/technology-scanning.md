@@ -5,11 +5,11 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-07-19 16:33 UTC — last scan: 2026-07-19_
+_Stats as of 2026-07-19 18:07 UTC — last scan: 2026-07-19_
 
 **3** scan batches run
 
-**1,127** of **82,736** available pages scanned (**1.4%** coverage)
+**1,127** of **83,227** available pages scanned (**1.4%** coverage)
 **1,041** pages with technology detections (**92.4%** of scanned)
 **128** unique technologies identified
 
@@ -19,9 +19,9 @@ _Stats as of 2026-07-19 16:33 UTC — last scan: 2026-07-19_
 
 | Country | URLs Scanned | Pages with Detections | Available | Last Scan |
 |---------|-------------|----------------------|-----------|----------|
-| Austria | 512 | 489 | 821 | 2026-07-19 |
-| Belgium | 324 | 292 | 1,309 | 2026-07-19 |
-| Bulgaria | 291 | 260 | 291 | 2026-07-19 |
+| Austria | 512 | 489 | 822 | 2026-07-19 |
+| Belgium | 324 | 292 | 1,329 | 2026-07-19 |
+| Bulgaria | 291 | 260 | 353 | 2026-07-19 |
 
 > Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and metric from [Download machine-readable technology data (JSON)](technology-data.json).
 
