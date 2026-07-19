@@ -1,8 +1,8 @@
 {
   "version":"0.1-seed",
   "country":"Spain",
-  "domain_count":2868,
-  "page_count":6069,
+  "domain_count":2870,
+  "page_count":6071,
   "domains":[
     {
       "canonical_domain":"012.comunidad.madrid",
@@ -95914,6 +95914,28 @@
           "accessibility_score":"0.83",
           "best_practices_score":"0.79",
           "seo_score":"0.85"
+        }
+      ]
+    },
+    {
+      "canonical_domain":"consejo-estado.es",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://consejo-estado.es/",
+          "is_root_page":true
+        }
+      ]
+    },
+    {
+      "canonical_domain":"mptfp.gob.es",
+      "subnational":[],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://mptfp.gob.es/",
+          "is_root_page":true
         }
       ]
     }
