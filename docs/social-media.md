@@ -25,11 +25,11 @@ layout: page
 <p style="text-align:center;font-size:0.75em;margin:0.3rem 0 0;color:#555;font-style:italic;">Social media tier distribution</p>
 </div>
 
-_Stats as of 2026-07-19 15:16 UTC — last scan: 2026-07-19_
+_Stats as of 2026-07-19 16:33 UTC — last scan: 2026-07-19_
 
 **14** scan batches run
 
-**13,145** of **82,716** available pages scanned (**15.9%** coverage)
+**13,145** of **82,736** available pages scanned (**15.9%** coverage)
 **12,324** of **13,145** scanned pages were reachable (**93.8%**)
 
 **Legacy social media** (older, centralised platforms):
@@ -97,7 +97,7 @@ Countries ranked by **Digital Sovereignty Score** — the percentage of reachabl
 | Hungary | 390 | 390 | 290 | 52.1% | 150 | 115 | 26 | 0 | 135 | 12 | 1 | 24 | 0 | 25 | Jul 2026 |
 | Iceland | 139 | 139 | 137 | 60.6% | 83 | 39 | 8 | 5 | 54 | 6 | 0 | 15 | 0 | 15 | Jul 2026 |
 | Ireland | 280 | 522 | 257 | 57.6% | 148 | 91 | 71 | 17 | 100 | 42 | 0 | 18 | 0 | 18 | Jul 2026 |
-| **Total** | **13,145** | **82,716** | **12,324** | **65.1%** | **7,969** | **3,636** | **1,713** | **322** | **3,802** | **1,680** | **50** | **669** | **130** | **648** | — |
+| **Total** | **13,145** | **82,736** | **12,324** | **65.1%** | **7,969** | **3,636** | **1,713** | **322** | **3,802** | **1,680** | **50** | **669** | **130** | **648** | — |
 
 > Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open. Full machine-readable data is available as the [social-media-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
 

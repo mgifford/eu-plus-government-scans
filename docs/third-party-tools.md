@@ -5,11 +5,11 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-07-19 15:16 UTC — last scan: 2026-07-19_
+_Stats as of 2026-07-19 16:33 UTC — last scan: 2026-07-19_
 
 **7** scan batches run
 
-**3,104** of **82,716** available pages scanned (**3.8%** coverage)
+**3,104** of **82,736** available pages scanned (**3.8%** coverage)
 **2,762** of **3,104** scanned pages were reachable (**89.0%**)
 **1,241** reachable pages loaded at least one third-party script (**44.9%** of reachable)
 **1,297** known third-party service loads identified

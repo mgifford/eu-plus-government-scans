@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-19 15:16 UTC",
+  "generated_at": "2026-07-19 16:33 UTC",
   "summary": {
     "total_batches": 7,
     "total_scanned": 3104,
     "total_reachable": 2762,
     "urls_with_scripts": 1241,
-    "total_available": 82716,
+    "total_available": 82736,
     "identified_service_loads": 1297,
     "unique_services": 16,
     "unique_categories": 12,

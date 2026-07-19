@@ -5,11 +5,11 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-07-19 15:16 UTC — last scan: 2026-07-19_
+_Stats as of 2026-07-19 16:33 UTC — last scan: 2026-07-19_
 
 **3** scan batches run
 
-**1,127** of **82,716** available pages scanned (**1.4%** coverage)
+**1,127** of **82,736** available pages scanned (**1.4%** coverage)
 **1,041** pages with technology detections (**92.4%** of scanned)
 **128** unique technologies identified
 
