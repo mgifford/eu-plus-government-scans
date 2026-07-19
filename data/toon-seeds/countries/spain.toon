@@ -77662,7 +77662,12 @@
     },
     {
       "canonical_domain":"sede.gobiernodecanarias.org",
-      "subnational":[],
+      "subnational":[
+        {
+          "code":"ES-CN",
+          "name":"Canary Islands"
+        }
+      ],
       "source_tabs":[
         {
           "sheet_id":"1BSFTiUXaOnYiaD819AdD5bBDYmyql8pm46QOZyAjEo0",
@@ -91839,7 +91844,12 @@
     },
     {
       "canonical_domain":"www.gobiernodecanarias.org",
-      "subnational":[],
+      "subnational":[
+        {
+          "code":"ES-CN",
+          "name":"Canary Islands"
+        }
+      ],
       "source_tabs":[
         {
           "sheet_id":"1BSFTiUXaOnYiaD819AdD5bBDYmyql8pm46QOZyAjEo0",
