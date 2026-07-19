@@ -1,17 +1,17 @@
 {
-  "ESTONIA": {
-    "total_relationships": 1510,
-    "total_source_domains": 28,
-    "file": "estonia.json"
+  "FINLAND": {
+    "total_relationships": 697,
+    "total_source_domains": 27,
+    "file": "finland.json"
   },
-  "CZECHIA": {
-    "total_relationships": 2007,
-    "total_source_domains": 34,
-    "file": "czechia.json"
+  "DENMARK": {
+    "total_relationships": 4143,
+    "total_source_domains": 71,
+    "file": "denmark.json"
   },
-  "GREECE": {
-    "total_relationships": 7820,
-    "total_source_domains": 348,
-    "file": "greece.json"
+  "ITALY": {
+    "total_relationships": 6133,
+    "total_source_domains": 82,
+    "file": "italy.json"
   }
 }
