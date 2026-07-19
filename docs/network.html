@@ -1,419 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="color-scheme" content="light dark">
-    <title>Government Web Relationship Data</title>
-    <meta name="description" content="Explore relationships between European and allied government websites, including links, dependencies, and technical connections. Fully accessible HTML interface with detailed filtering and evidence-based data.">
-    <script>
-      (function () {
-        var storageKey = "eu-gov-scans-theme";
-        try {
-          var stored = localStorage.getItem(storageKey);
-          var mode = (stored === "light" || stored === "dark") ? stored : "system";
-          var resolved = mode === "system"
-            ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")
-            : mode;
-          document.documentElement.setAttribute("data-theme-mode", mode);
-          document.documentElement.setAttribute("data-theme", resolved);
-        } catch (error) {}
-      })();
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+---
+title: Government Web Relationship Data
+description: >-
+  Explore relationships between European and allied government websites,
+  including links, dependencies, and technical connections. Fully accessible
+  HTML interface with detailed filtering and evidence-based data.
+layout: page
+---
+
     <style>
-        /* Modern, accessible CSS based on project patterns */
         :root {
-            color-scheme: light;
-            --color-bg: #ffffff;
-            --color-bg-panel: #ffffff;
-            --color-secondary-bg: #f8f9fa;
-            --color-text: #212529;
-            --color-text-secondary: #6c757d;
-            --color-border: #dee2e6;
-            --color-border-input: #adb5bd;
-            --color-primary: #2c3e50;
-            --color-primary-text: #ffffff;
-            --color-accent: #3498db;
-            --color-link: #2c3e50;
-            --color-link-hover: #1a252f;
-            --color-heading: #2c3e50;
-            --primary-color: #2c3e50;
-            --accent-color: #3498db;
-            --text-primary: #212529;
-            --text-secondary: #6c757d;
-            --border-color: #dee2e6;
-            --light-bg: #f8f9fa;
-            --success-color: #27ae60;
-            --warning-color: #f39c12;
-            --danger-color: #e74c3c;
-            --shadow-sm: 0 1px 3px rgba(0,0,0,0.12);
-            --shadow-md: 0 2px 6px rgba(0,0,0,0.15);
-            --shadow-lg: 0 4px 12px rgba(0,0,0,0.1);
+            --network-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
+            --network-shadow-md: 0 2px 6px rgba(0, 0, 0, 0.15);
+            --network-shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
 
         html[data-theme="dark"] {
-            color-scheme: dark;
-            --color-bg: #1b1b1b;
-            --color-bg-panel: #2d2d2d;
-            --color-secondary-bg: #232323;
-            --color-text: #e9e9e9;
-            --color-text-secondary: #c9c9c9;
-            --color-border: #5c5c5c;
-            --color-border-input: #8f8f8f;
-            --color-primary: #73b3e7;
-            --color-primary-text: #1b1b1b;
-            --color-link: #73b3e7;
-            --color-link-hover: #a9d8ff;
-            --color-heading: #e9e9e9;
-            --primary-color: #73b3e7;
-            --accent-color: #73b3e7;
-            --text-primary: #e9e9e9;
-            --text-secondary: #c9c9c9;
-            --border-color: #5c5c5c;
-            --light-bg: #232323;
-            --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
-            --shadow-md: 0 2px 6px rgba(0,0,0,0.4);
-            --shadow-lg: 0 4px 12px rgba(0,0,0,0.3);
-        }
-
-        @media (prefers-color-scheme: dark) {
-            html:not([data-theme]) {
-                color-scheme: dark;
-                --color-bg: #1b1b1b;
-                --color-bg-panel: #2d2d2d;
-                --color-secondary-bg: #232323;
-                --color-text: #e9e9e9;
-                --color-text-secondary: #c9c9c9;
-                --color-border: #5c5c5c;
-                --color-border-input: #8f8f8f;
-                --color-primary: #73b3e7;
-                --color-primary-text: #1b1b1b;
-                --color-link: #73b3e7;
-                --color-link-hover: #a9d8ff;
-                --color-heading: #e9e9e9;
-                --primary-color: #73b3e7;
-                --accent-color: #73b3e7;
-                --text-primary: #e9e9e9;
-                --text-secondary: #c9c9c9;
-                --border-color: #5c5c5c;
-                --light-bg: #232323;
-                --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
-                --shadow-md: 0 2px 6px rgba(0,0,0,0.4);
-                --shadow-lg: 0 4px 12px rgba(0,0,0,0.3);
-            }
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            line-height: 1.6;
-            color: var(--text-primary);
-            background-color: var(--color-bg);
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0;
-            font-size: 16px;
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            * {
-                animation-duration: 0.01ms !important;
-                animation-iteration-count: 1 !important;
-                transition-duration: 0.01ms !important;
-            }
-        }
-
-        /* Skip navigation */
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 6px;
-            background: var(--primary-color);
-            color: white;
-            padding: 8px;
-            text-decoration: none;
-            z-index: 1000;
-        }
-        .skip-link:focus {
-            top: 6px;
-        }
-
-        /* Wrapper - matches Jekyll site */
-        .wrapper {
-            max-width: 64rem;
-            margin-left: auto;
-            margin-right: auto;
-            padding-left: 1rem;
-            padding-right: 1rem;
-        }
-
-        /* Header - matches Jekyll site structure */
-        .site-header {
-            background: var(--color-bg);
-            border-bottom: 1px solid var(--color-border);
-            min-height: 4.5rem;
-            padding-bottom: 0.75rem;
-            padding-top: 0.75rem;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: var(--shadow-sm);
-        }
-
-        .site-header-inner {
-            display: flex;
-            align-items: center;
-            gap: 1.5rem;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        .site-brand {
-            display: flex;
-            flex-direction: column;
-            gap: 0.2rem;
-            min-width: 0;
-        }
-
-        .site-title,
-        .site-title:visited {
-            color: var(--color-heading);
-            font-size: 1.2rem;
-            font-weight: 800;
-            letter-spacing: -0.01em;
-            line-height: 1.15;
-            text-decoration: none;
-        }
-
-        .site-tagline {
-            color: var(--color-text-secondary);
-            font-size: 0.88rem;
-            line-height: 1.35;
-            margin: 0;
-            max-width: 32rem;
-        }
-
-        .site-header-actions {
-            align-items: center;
-            display: flex;
-            gap: 0.75rem;
-            justify-content: flex-end;
-            margin-left: auto;
-        }
-
-        .sr-only {
-            border: 0;
-            clip: rect(0 0 0 0);
-            height: 1px;
-            margin: -1px;
-            overflow: hidden;
-            padding: 0;
-            position: absolute;
-            white-space: nowrap;
-            width: 1px;
-        }
-
-        .theme-toggle {
-            align-items: center;
-            background: var(--color-bg-panel);
-            border: 1px solid var(--color-border-input);
-            border-radius: 999px;
-            box-sizing: border-box;
-            color: var(--color-text);
-            cursor: pointer;
-            display: inline-flex;
-            flex: 0 0 auto;
-            font: inherit;
-            height: 2.75rem;
-            justify-content: center;
-            padding: 0;
-            transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
-            width: 2.75rem;
-        }
-
-        .theme-toggle:hover {
-            background: var(--color-secondary-bg);
-            border-color: var(--color-primary);
-        }
-
-        .theme-toggle__icon {
-            display: inline-flex;
-            font-size: 1.15rem;
-            line-height: 1;
-        }
-
-        .site-nav {
-            position: relative;
-        }
-
-        .nav-trigger {
-            display: none;
-        }
-
-        .nav-toggle-label {
-            align-items: center;
-            background: var(--color-bg-panel);
-            border: 1px solid var(--color-border-input);
-            border-radius: 999px;
-            color: var(--color-text);
-            cursor: pointer;
-            display: none;
-            gap: 0.55rem;
-            min-height: 2.75rem;
-            padding: 0.55rem 0.9rem;
-        }
-
-        .nav-toggle-label:hover {
-            background: var(--color-secondary-bg);
-            border-color: var(--color-primary);
-        }
-
-        .menu-icon {
-            display: inline-flex;
-            line-height: 0;
-        }
-
-        .menu-icon svg {
-            fill: currentColor;
-        }
-
-        .nav-toggle-text {
-            font-size: 0.95rem;
-            font-weight: 700;
-        }
-
-        .site-nav .trigger {
-            align-items: center;
-            display: flex;
-            gap: 0.75rem;
-        }
-
-        .nav-group {
-            align-items: center;
-            display: flex;
-            gap: 0.35rem;
-        }
-
-        .site-nav .page-link,
-        .site-nav .page-link:visited {
-            background: transparent;
-            border: 1px solid transparent;
-            border-radius: 999px;
-            color: var(--color-link);
-            display: inline-flex;
-            font-size: 0.94rem;
-            font-weight: 600;
-            margin-left: 0;
-            min-height: 2.5rem;
-            padding: 0.45rem 0.8rem;
-            text-decoration: none;
-            text-decoration-thickness: 0.08em;
-            text-underline-offset: 0.18em;
-        }
-
-        .site-nav .page-link:hover,
-        .site-nav .page-link:focus-visible {
-            background: var(--color-secondary-bg);
-            border-color: var(--color-border);
-            color: var(--color-link-hover);
-        }
-
-        .nav-group--reports,
-        .nav-group--tools {
-            position: relative;
-        }
-
-        .nav-summary {
-            align-items: center;
-            cursor: pointer;
-            list-style: none;
-        }
-
-        .nav-summary::-webkit-details-marker {
-            display: none;
-        }
-
-        .nav-summary::after {
-            content: "▾";
-            font-size: 0.8rem;
-            margin-left: 0.45rem;
-        }
-
-        .nav-group--reports[open] .nav-summary,
-        .nav-group--tools[open] .nav-summary {
-            background: var(--color-secondary-bg);
-            border-color: var(--color-border);
-        }
-
-        .nav-submenu {
-            background: var(--color-bg-panel);
-            border: 1px solid var(--color-border);
-            border-radius: 1rem;
-            box-shadow: 0 1rem 2rem rgba(22, 46, 81, 0.12);
-            display: grid;
-            gap: 0.25rem;
-            min-width: 14rem;
-            padding: 0.45rem;
-            position: absolute;
-            right: 0;
-            top: calc(100% + 0.5rem);
-            z-index: 30;
-        }
-
-        .nav-sublink,
-        .nav-sublink:visited {
-            border-radius: 0.75rem;
-            justify-content: flex-start;
-            width: 100%;
-        }
-            font-size: 0.9rem;
-            padding: 0.35rem 0.75rem;
-        }
-
-        /* Main content */
-        main {
-            padding: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        /* Section headers */
-        h1, h2, h3, h4 {
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-            line-height: 1.3;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-            text-align: center;
-        }
-
-        h2 {
-            font-size: 2rem;
-            border-bottom: 2px solid var(--accent-color);
-            padding-bottom: 0.5rem;
-            margin-top: 2rem;
-        }
-
-        h3 {
-            font-size: 1.5rem;
-            margin-top: 2rem;
+            --network-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+            --network-shadow-md: 0 2px 6px rgba(0, 0, 0, 0.4);
+            --network-shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.3);
         }
 
         /* About section */
         .about-section {
-            background: var(--light-bg);
+            background: var(--color-secondary-bg);
             padding: 2rem;
             border-radius: 8px;
             margin: 2rem 0;
@@ -425,12 +34,12 @@
 
         /* Filter controls */
         .filter-controls {
-            background: white;
-            border: 1px solid var(--border-color);
+            background: var(--color-bg-panel);
+            border: 1px solid var(--color-border);
             border-radius: 8px;
             padding: 1.5rem;
             margin: 1.5rem 0;
-            box-shadow: var(--shadow-sm);
+            box-shadow: var(--network-shadow-sm);
         }
 
         .filters-grid {
@@ -448,17 +57,18 @@
 
         .filter-group label {
             font-weight: 600;
-            color: var(--text-secondary);
+            color: var(--color-text-secondary);
             font-size: 0.875rem;
         }
 
         .filter-group select,
         .filter-group input {
             padding: 0.5rem;
-            border: 1px solid var(--border-color);
+            border: 1px solid var(--color-border);
             border-radius: 4px;
             font-size: 0.875rem;
-            background-color: white;
+            background-color: var(--color-bg-panel);
+            color: var(--color-text);
         }
 
         .filter-group input[type="text"] {
@@ -475,8 +85,8 @@
         }
 
         .summary-card {
-            background: white;
-            border: 1px solid var(--border-color);
+            background: var(--color-bg-panel);
+            border: 1px solid var(--color-border);
             border-radius: 8px;
             padding: 1.5rem;
             text-align: center;
@@ -485,11 +95,11 @@
 
         .summary-card:hover {
             transform: translateY(-2px);
-            box-shadow: var(--shadow-md);
+            box-shadow: var(--network-shadow-md);
         }
 
         .summary-card h4 {
-            color: var(--text-secondary);
+            color: var(--color-text-secondary);
             font-size: 0.875rem;
             margin-bottom: 0.5rem;
             text-transform: uppercase;
@@ -499,7 +109,7 @@
         .summary-card .value {
             font-size: 2rem;
             font-weight: 700;
-            color: var(--primary-color);
+            color: var(--color-primary);
         }
 
         .summary-card .value.small {
@@ -512,21 +122,21 @@
         }
 
         .change.positive {
-            color: var(--success-color);
+            color: var(--color-success-border);
         }
 
         .change.negative {
-            color: var(--danger-color);
+            color: var(--color-error-text);
         }
 
         /* Tables */
         .table-container {
-            background: white;
-            border: 1px solid var(--border-color);
+            background: var(--color-bg-panel);
+            border: 1px solid var(--color-border);
             border-radius: 8px;
             overflow: hidden;
             margin: 1.5rem 0;
-            box-shadow: var(--shadow-sm);
+            box-shadow: var(--network-shadow-sm);
         }
 
         table {
@@ -536,29 +146,29 @@
         }
 
         thead {
-            background-color: var(--light-bg);
+            background-color: var(--color-secondary-bg);
         }
 
         th, td {
             padding: 1rem;
             text-align: left;
-            border-bottom: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--color-border);
         }
 
         th {
             font-weight: 600;
-            color: var(--text-secondary);
+            color: var(--color-text-secondary);
             cursor: pointer;
             user-select: none;
             position: relative;
         }
 
         th:hover {
-            background-color: rgba(52, 152, 219, 0.05);
+            background-color: var(--color-secondary-bg);
         }
 
         tr:hover {
-            background-color: var(--light-bg);
+            background-color: var(--color-secondary-bg);
         }
 
         td {
@@ -570,7 +180,7 @@
 
         .domain-cell {
             font-weight: 500;
-            color: var(--accent-color);
+            color: var(--color-link);
             text-decoration: none;
         }
 
@@ -591,17 +201,17 @@
 
         .badge.country {
             background-color: rgba(52, 152, 219, 0.1);
-            color: var(--accent-color);
+            color: var(--color-link);
         }
 
         .badge.level {
             background-color: rgba(46, 204, 113, 0.1);
-            color: var(--success-color);
+            color: var(--color-success-border);
         }
 
         .badge.status {
             background-color: rgba(241, 196, 15, 0.1);
-            color: var(--warning-color);
+            color: var(--color-warning-text);
         }
 
         .badge.type {
@@ -611,7 +221,7 @@
 
         .badge.editable {
             background-color: rgba(231, 76, 60, 0.1);
-            color: var(--danger-color);
+            color: var(--color-error-text);
             cursor: pointer;
         }
 
@@ -659,26 +269,26 @@
 
         .btn {
             padding: 0.5rem 1rem;
-            border: 1px solid var(--border-color);
+            border: 1px solid var(--color-border);
             background: var(--color-bg-panel);
             border-radius: 4px;
             cursor: pointer;
             font-size: 0.875rem;
             font-weight: 500;
-            color: var(--text-primary);
+            color: var(--color-text);
             transition: all 0.2s;
         }
 
         .btn:hover, .btn:focus {
-            background-color: var(--light-bg);
-            border-color: var(--accent-color);
-            color: var(--accent-color);
+            background-color: var(--color-secondary-bg);
+            border-color: var(--color-primary);
+            color: var(--color-primary);
         }
 
         .btn-primary {
-            background-color: var(--accent-color);
-            color: white;
-            border-color: var(--accent-color);
+            background-color: var(--color-primary);
+            color: var(--color-primary-text);
+            border-color: var(--color-primary);
         }
 
         .btn-primary:hover, .btn-primary:focus {
@@ -687,22 +297,9 @@
         }
 
         .btn-secondary {
-            background-color: var(--text-secondary);
-            color: white;
-            border-color: var(--text-secondary);
-        }
-
-        /* Live region for announcements */
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border: 0;
+            background-color: var(--color-text-secondary);
+            color: var(--color-bg);
+            border-color: var(--color-text-secondary);
         }
 
         #live-region {
@@ -719,8 +316,8 @@
             display: inline-block;
             width: 20px;
             height: 20px;
-            border: 2px solid var(--border-color);
-            border-top-color: var(--accent-color);
+            border: 2px solid var(--color-border);
+            border-top-color: var(--color-primary);
             border-radius: 50%;
             animation: spin 0.8s linear infinite;
             margin-left: 0.5rem;
@@ -734,7 +331,7 @@
         .empty-state {
             text-align: center;
             padding: 3rem;
-            color: var(--text-secondary);
+            color: var(--color-text-secondary);
         }
 
         .empty-state h3 {
@@ -743,18 +340,18 @@
 
         /* Error message */
         .error-message {
-            background-color: rgba(231, 76, 60, 0.1);
-            border: 1px solid rgba(231, 76, 60, 0.3);
-            color: var(--danger-color);
+            background-color: var(--color-error-bg);
+            border: 1px solid var(--color-error-text);
+            color: var(--color-error-text);
             padding: 1rem;
             border-radius: 4px;
             margin: 1rem 0;
         }
 
         .info-message {
-            background-color: rgba(52, 152, 219, 0.1);
-            border: 1px solid rgba(52, 152, 219, 0.3);
-            color: var(--color-primary);
+            background-color: var(--color-info-bg);
+            border: 1px solid var(--color-primary);
+            color: var(--color-info-text);
             padding: 1rem;
             border-radius: 4px;
             margin: 1rem 0;
@@ -762,7 +359,7 @@
 
         /* Download section */
         .download-section {
-            background: var(--light-bg);
+            background: var(--color-secondary-bg);
             padding: 1.5rem;
             border-radius: 8px;
             margin: 2rem 0;
@@ -781,23 +378,23 @@
             gap: 0.5rem;
             padding: 0.75rem 1.5rem;
             background: var(--color-bg-panel);
-            border: 1px solid var(--border-color);
+            border: 1px solid var(--color-border);
             border-radius: 4px;
             text-decoration: none;
-            color: var(--text-primary);
+            color: var(--color-text);
             transition: all 0.2s;
         }
 
         .download-link:hover, .download-link:focus {
-            background-color: var(--accent-color);
-            color: white;
-            border-color: var(--accent-color);
+            background-color: var(--color-primary);
+            color: var(--color-primary-text);
+            border-color: var(--color-primary);
         }
 
         /* Collapsible sections */
         .collapsible {
             background: var(--color-bg-panel);
-            border: 1px solid var(--border-color);
+            border: 1px solid var(--color-border);
             border-radius: 8px;
             margin: 1rem 0;
             overflow: hidden;
@@ -805,7 +402,7 @@
 
         .collapsible-header {
             padding: 1rem;
-            background-color: var(--light-bg);
+            background-color: var(--color-secondary-bg);
             cursor: pointer;
             display: flex;
             justify-content: space-between;
@@ -814,7 +411,8 @@
         }
 
         .collapsible-header:hover {
-            background-color: rgba(52, 152, 219, 0.05);
+            background-color: var(--color-secondary-bg);
+            filter: brightness(0.97);
         }
 
         .collapsible-content {
@@ -832,11 +430,11 @@
         /* Graph placeholder */
         .graph-container {
             background: var(--color-bg-panel);
-            border: 2px dashed var(--border-color);
+            border: 2px dashed var(--color-border);
             border-radius: 8px;
             padding: 3rem;
             text-align: center;
-            color: var(--text-secondary);
+            color: var(--color-text-secondary);
             margin: 1.5rem 0;
         }
 
@@ -869,14 +467,15 @@
         }
 
         .modal-content {
-            background: white;
+            background: var(--color-bg-panel);
+            color: var(--color-text);
             border-radius: 8px;
             padding: 2rem;
             max-width: 600px;
             width: 90%;
             max-height: 80vh;
             overflow-y: auto;
-            box-shadow: var(--shadow-lg);
+            box-shadow: var(--network-shadow-lg);
         }
 
         .modal-header {
@@ -885,7 +484,7 @@
             align-items: center;
             margin-bottom: 1.5rem;
             padding-bottom: 1rem;
-            border-bottom: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--color-border);
         }
 
         .close-modal {
@@ -893,11 +492,11 @@
             border: none;
             font-size: 1.5rem;
             cursor: pointer;
-            color: var(--text-secondary);
+            color: var(--color-text-secondary);
         }
 
         .close-modal:hover {
-            color: var(--danger-color);
+            color: var(--color-error-text);
         }
 
         .modal-body {
@@ -920,8 +519,8 @@
         /* Tooltip */
         .tooltip {
             position: absolute;
-            background: var(--primary-color);
-            color: white;
+            background: var(--color-primary);
+            color: var(--color-primary-text);
             padding: 0.5rem;
             border-radius: 4px;
             font-size: 0.75rem;
@@ -940,25 +539,25 @@
         .graph-container svg {
             width: 100%;
             height: 500px;
-            border: 1px solid var(--border-color);
+            border: 1px solid var(--color-border);
             border-radius: 8px;
-            background: var(--light-bg);
+            background: var(--color-secondary-bg);
         }
 
         .graph-container .node circle {
-            stroke: #fff;
+            stroke: var(--color-bg-panel);
             stroke-width: 1.5px;
             cursor: pointer;
         }
 
         .graph-container .node text {
             font-size: 10px;
-            fill: var(--text-primary);
+            fill: var(--color-text);
             pointer-events: none;
         }
 
         .graph-container .link {
-            stroke: #999;
+            stroke: var(--color-text-secondary);
             stroke-opacity: 0.6;
         }
 
@@ -972,9 +571,11 @@
 
         .graph-container .graph-controls select {
             padding: 0.5rem;
-            border: 1px solid var(--border-color);
+            border: 1px solid var(--color-border);
             border-radius: 4px;
             font-size: 0.875rem;
+            background: var(--color-bg-panel);
+            color: var(--color-text);
         }
 
         .graph-container .graph-legend {
@@ -1020,14 +621,14 @@
         .country-bar .bar-track {
             flex: 1;
             height: 20px;
-            background: var(--light-bg);
+            background: var(--color-secondary-bg);
             border-radius: 4px;
             overflow: hidden;
         }
 
         .country-bar .bar-fill {
             height: 100%;
-            background: var(--accent-color);
+            background: var(--color-primary);
             border-radius: 4px;
             transition: width 0.3s ease;
         }
@@ -1035,7 +636,7 @@
         .country-bar .bar-count {
             min-width: 60px;
             font-size: 0.8rem;
-            color: var(--text-secondary);
+            color: var(--color-text-secondary);
         }
 
         .country-detail-header {
@@ -1057,27 +658,27 @@
         .country-detail-stat {
             text-align: center;
             padding: 0.75rem;
-            background: var(--light-bg);
+            background: var(--color-secondary-bg);
             border-radius: 6px;
         }
 
         .country-detail-stat .stat-value {
             font-size: 1.5rem;
             font-weight: 700;
-            color: var(--accent-color);
+            color: var(--color-primary);
         }
 
         .country-detail-stat .stat-label {
             font-size: 0.75rem;
-            color: var(--text-secondary);
+            color: var(--color-text-secondary);
             text-transform: uppercase;
         }
 
         /* Tooltip for graph */
         .graph-tooltip {
             position: absolute;
-            background: var(--primary-color);
-            color: white;
+            background: var(--color-primary);
+            color: var(--color-primary-text);
             padding: 0.5rem 0.75rem;
             border-radius: 4px;
             font-size: 0.8rem;
@@ -1086,83 +687,14 @@
             transition: opacity 0.15s;
             z-index: 200;
             max-width: 300px;
-            box-shadow: var(--shadow-md);
+            box-shadow: var(--network-shadow-md);
         }
 
         .graph-tooltip.visible {
             opacity: 1;
         }
 
-        /* Responsive design */
         @media (max-width: 768px) {
-            body {
-                padding: 0;
-            }
-
-            .site-header-inner {
-                flex-wrap: wrap;
-                padding: 0 1rem;
-            }
-
-            .site-header-actions {
-                width: 100%;
-                justify-content: space-between;
-            }
-
-            .nav-toggle-label {
-                display: inline-flex;
-            }
-
-            .site-nav .trigger {
-                display: none;
-                gap: 0.75rem;
-            }
-
-            .nav-trigger:checked ~ .trigger {
-                display: grid;
-                gap: 0.75rem;
-            }
-
-            .nav-group,
-            .nav-group--primary {
-                align-items: stretch;
-                display: grid;
-                gap: 0.4rem;
-            }
-
-            .site-nav .page-link,
-            .site-nav .page-link:visited,
-            .nav-summary {
-                justify-content: space-between;
-                width: 100%;
-            }
-
-            .nav-group--reports,
-            .nav-group--tools {
-                display: block;
-            }
-
-            .nav-submenu {
-                box-shadow: none;
-                margin-top: 0.35rem;
-                min-width: 0;
-                padding: 0.35rem 0 0;
-                position: static;
-            }
-
-            .nav-sublink,
-            .nav-sublink:visited {
-                padding-left: 1rem;
-            }
-
-            main {
-                padding: 1rem;
-            }
-
-            h1 {
-                font-size: 2rem;
-            }
-
             .filters-grid {
                 grid-template-columns: 1fr;
             }
@@ -1181,135 +713,8 @@
                 font-size: 0.75rem;
             }
         }
-
-        /* Footer - matches Jekyll site */
-        .site-footer {
-            background: var(--color-secondary-bg);
-            border-top: 1px solid var(--color-border);
-            color: var(--color-text-secondary);
-            padding: 2rem 0;
-            margin-top: 3rem;
-        }
-
-        .site-footer a,
-        .site-footer a:visited {
-            color: var(--color-link);
-            text-decoration-line: underline;
-        }
-
-        .site-footer .footer-heading,
-        .site-footer .contact-list,
-        .site-footer p,
-        .site-footer .p-name {
-            color: var(--color-text-secondary);
-        }
-
-        .site-footer .p-name {
-            color: var(--color-text) !important;
-        }
-
-        .footer-col-wrapper {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        .site-footer .footer-cta {
-            border-top: 1px solid var(--color-border);
-            margin-top: 1rem;
-            padding-top: 1rem;
-        }
-
-        .site-footer .footer-cta p {
-            color: var(--color-text-secondary);
-        }
-
-        .contact-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .contact-list li {
-            margin-bottom: 0.25rem;
-        }
     </style>
-</head>
-<body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-
-    <header class="site-header" role="banner">
-        <div class="wrapper site-header-inner">
-            <div class="site-brand">
-                <a class="site-title" rel="author" href="/eu-plus-government-scans/">
-                    EU Government Website Scans
-                </a>
-                <p class="site-tagline">EU-wide scans for accessibility, technology, and digital presence</p>
-            </div>
-
-            <div class="site-header-actions">
-                <button
-                    class="theme-toggle"
-                    type="button"
-                    data-theme-toggle
-                    aria-label="Switch to dark mode"
-                    title="Switch to dark mode">
-                    <span class="theme-toggle__icon" aria-hidden="true" data-theme-toggle-icon>☾</span>
-                    <span class="sr-only" data-theme-toggle-text>Switch to dark mode</span>
-                </button>
-
-                <nav class="site-nav" aria-label="Primary">
-                    <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-                    <label for="nav-trigger" class="nav-toggle-label">
-                        <span class="menu-icon" aria-hidden="true">
-                            <svg viewBox="0 0 18 15" width="18" height="15">
-                                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0
-                                    C0,0.665,0.665,0,1.484,0h15.031C17.335,0,18,0.665,18,1.484L18,1.484z
-                                    M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0
-                                    c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z
-                                    M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0
-                                    c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z" />
-                            </svg>
-                        </span>
-                        <span class="nav-toggle-text">Menu</span>
-                    </label>
-
-                    <div class="trigger">
-                        <div class="nav-group nav-group--primary">
-                            <a class="page-link" href="/eu-plus-government-scans/">Overview</a>
-                            <a class="page-link" href="/eu-plus-government-scans/scan-progress.html">Progress</a>
-                            <a class="page-link" href="/eu-plus-government-scans/domains.html">Domains</a>
-                        </div>
-
-                        <details class="nav-group nav-group--reports">
-                            <summary class="page-link nav-summary">Reports</summary>
-                            <div class="nav-submenu">
-                                <a class="page-link nav-sublink" href="/eu-plus-government-scans/social-media.html">Social Media</a>
-                                <a class="page-link nav-sublink" href="/eu-plus-government-scans/accessibility-statements.html">Accessibility</a>
-                                <a class="page-link nav-sublink" href="/eu-plus-government-scans/technology-scanning.html">Technology</a>
-                                <a class="page-link nav-sublink" href="/eu-plus-government-scans/third-party-tools.html">Third-Party JS</a>
-                                <a class="page-link nav-sublink" href="/eu-plus-government-scans/lighthouse-scanning.html">Lighthouse Methodology</a>
-                                <a class="page-link nav-sublink" href="/eu-plus-government-scans/lighthouse-results.html">Lighthouse Results</a>
-                            </div>
-                        </details>
-
-                        <details class="nav-group nav-group--tools" open>
-                            <summary class="page-link nav-summary">Tools</summary>
-                            <div class="nav-submenu">
-                                <a class="page-link nav-sublink" href="/eu-plus-government-scans/network.html" style="font-weight:700">Network Explorer</a>
-                                <a class="page-link nav-sublink" href="/eu-plus-government-scans/api.html">Data API</a>
-                            </div>
-                        </details>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </header>
-
-    <main id="main-content">
         <section class="about-section">
-            <h1>Government Web Relationship Data</h1>
             <p>This page provides comprehensive insights into the web relationships between European and allied government websites. We analyze links, scripts, styles, forms, and media dependencies to understand how government sites connect and interact with each other and third-party services.</p>
             
             <div class="collapsible">
@@ -1546,7 +951,7 @@
 
         <section id="gov-to-gov-section" style="display:none;margin:24px 0">
             <h2 style="margin-bottom:12px">Government-to-Government Links</h2>
-            <p style="color:var(--text-secondary);margin-bottom:16px">Editorial links where both source and target are government domains (excluding self-links). Use the "Gov-to-Gov Links Only" filter above to activate.</p>
+            <p style="color:var(--color-text-secondary);margin-bottom:16px">Editorial links where both source and target are government domains (excluding self-links). Use the "Gov-to-Gov Links Only" filter above to activate.</p>
             <div id="gov-to-gov-summary"></div>
             <div style="margin:16px 0;display:flex;gap:12px;align-items:center;flex-wrap:wrap">
                 <label for="gov-to-gov-country-filter"><strong>Filter by country:</strong></label>
@@ -1656,42 +1061,6 @@
                 <strong>Last Updated:</strong> 2026-07-15</p>
             </div>
         </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="wrapper">
-            <h2 class="footer-heading">EU Government Website Scans</h2>
-
-            <div class="footer-col-wrapper">
-                <div class="footer-col footer-col-1">
-                    <ul class="contact-list">
-                        <li class="p-name">EU Government Website Scans</li>
-                    </ul>
-                </div>
-
-                <div class="footer-col footer-col-2">
-                    <p>
-                        <a href="https://github.com/mgifford/eu-plus-government-scans">GitHub</a>
-                    </p>
-                </div>
-
-                <div class="footer-col footer-col-3">
-                    <p>Accessibility statement discovery and social media usage tracking for European (and allied) government websites.</p>
-                </div>
-            </div>
-
-            <div class="footer-col-wrapper footer-cta">
-                <p>
-                    Want to contribute? Visit the
-                    <a href="https://github.com/mgifford/eu-plus-government-scans">
-                        eu-plus-government-scans project on GitHub
-                    </a>
-                    to report issues, suggest new countries, or submit pull requests.
-                </p>
-            </div>
-        </div>
-    </footer>
-
     <!-- Modal for detailed node information -->
     <div class="modal" id="node-modal">
         <div class="modal-content">
@@ -1707,7 +1076,6 @@
             </div>
         </div>
     </div>
-
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script>
         const TLD_TO_COUNTRY = {
@@ -2081,14 +1449,14 @@
                 <div class="country-bar" style="margin-bottom:8px">
                     <span class="country-label" style="min-width:120px;font-weight:600">${escapeHtml(summary.country)}</span>
                     <div class="bar-container">
-                        <div class="bar" style="width:100%;background:var(--accent-color)"></div>
+                        <div class="bar" style="width:100%;background:var(--color-primary)"></div>
                     </div>
                     <span class="country-count">${summary.total_relationships}</span>
                 </div>
-                <p style="color:var(--text-secondary);font-size:0.9rem;margin-top:8px">
+                <p style="color:var(--color-text-secondary);font-size:0.9rem;margin-top:8px">
                     ${summary.total_source_domains} source domains · ${summary.total_unique_targets} unique targets · ${summary.gov_to_gov_pairs} gov-to-gov links
                 </p>
-                <p style="color:var(--text-secondary);font-size:0.85rem;margin-top:4px">
+                <p style="color:var(--color-text-secondary);font-size:0.85rem;margin-top:4px">
                     <a href="#" id="load-all-countries">Load all countries (full JSONL)</a> for comparison and D3 graph.
                 </p>
             `;
@@ -2239,7 +1607,7 @@
                     <td><a href="https://${escapeHtml(p.target)}" target="_blank" rel="noopener">${escapeHtml(p.target)}</a></td>
                     <td>${escapeHtml(p.tgtCountry)}</td>
                     <td>${p.observations}</td>
-                    <td>${cross ? '<span style="color:var(--accent-color);font-weight:600">Yes</span>' : 'No (same country)'}</td>
+                    <td>${cross ? '<span style="color:var(--color-primary);font-weight:600">Yes</span>' : 'No (same country)'}</td>
                 </tr>`;
             });
 
@@ -2403,7 +1771,7 @@
         function renderGraph() {
             if (!jsonlLoaded) {
                 document.getElementById('graph-svg-container').innerHTML =
-                    '<p style="color:var(--text-secondary);padding:2rem;text-align:center">' +
+                    '<p style="color:var(--color-text-secondary);padding:2rem;text-align:center">' +
                     'D3 graph requires the full dataset. <a href="#" id="load-jsonl-for-graph">Load full JSONL (12.5 MB)</a></p>';
                 document.getElementById('load-jsonl-for-graph')?.addEventListener('click', (e) => {
                     e.preventDefault();
@@ -2781,7 +2149,7 @@
                     <div class="country-bar" style="margin-bottom:6px;cursor:pointer" data-country="${escapeHtml(country)}" tabindex="0" role="button" aria-label="Load ${escapeHtml(country)} data">
                         <span class="country-label" style="min-width:120px">${escapeHtml(country)}</span>
                         <div class="bar-container">
-                            <div class="bar" style="width:${pct}%;background:var(--accent-color)"></div>
+                            <div class="bar" style="width:${pct}%;background:var(--color-primary)"></div>
                         </div>
                         <span class="country-count">${stats.total_relationships}</span>
                     </div>
@@ -2800,6 +2168,3 @@
             });
         }
     </script>
-    <script src="/eu-plus-government-scans/assets/js/theme-toggle.js" defer></script>
-</body>
-</html>
