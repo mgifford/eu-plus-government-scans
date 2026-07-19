@@ -174,6 +174,24 @@ def test_build_report_includes_review_note(
     assert "not merged" in report["note"].lower()
 
 
+def test_build_report_national_only_skips_regional_query(
+    mock_national_results, monkeypatch
+):
+    """Regional coverage depends on a country-specific subdivision class
+    (Q10742 works for Spain, not Germany/France) -- national_only=True must
+    not call query_regional_domains at all, not just discard its result."""
+    def fail_if_called(country_qid):
+        raise AssertionError("query_regional_domains should not be called")
+
+    monkeypatch.setattr(
+        "src.cli.query_wikidata_gov_domains.query_regional_domains", fail_if_called
+    )
+
+    report = build_report("Germany", "Q183", set(), national_only=True)
+    assert report["regional"] == {}
+    assert len(report["national"]) == 2
+
+
 # ---------------------------------------------------------------------------
 # save_report
 # ---------------------------------------------------------------------------
@@ -208,6 +226,12 @@ def test_parse_args_defaults():
     assert args.country == "Spain"
     assert args.output_dir == "data/imports"
     assert args.dry_run is False
+    assert args.national_only is False
+
+
+def test_parse_args_national_only_flag():
+    args = parse_args(["--country", "Germany", "--national-only"])
+    assert args.national_only is True
 
 
 def test_parse_args_dry_run_flag():

@@ -273,15 +273,35 @@ def _hostname_from_url(url: str) -> str:
     return host
 
 
-def build_report(country: str, country_qid: str, existing_domains: set[str]) -> dict[str, Any]:
-    """Query Wikidata and build a structured candidate report for one country."""
+def build_report(
+    country: str,
+    country_qid: str,
+    existing_domains: set[str],
+    national_only: bool = False,
+) -> dict[str, Any]:
+    """Query Wikidata and build a structured candidate report for one country.
+
+    The national query (government agency + P1001 jurisdiction) generalizes
+    well across countries -- verified against Spain (79 candidates), Germany
+    (252), and Hungary (32). The regional query does not: it depends on
+    Q10742 ("first-level administrative country subdivision") actually
+    classifying that country's subdivisions, which is true for Spain but not
+    Germany (whose states are Q1221156, "federated state of Germany") or
+    France (0 results under Q10742). Regional coverage needs the correct
+    subdivision class identified per country before it's worth running --
+    pass national_only=True to skip it rather than get a silently empty or
+    wrong regional section.
+    """
     print(f"Querying national-level government domains for {country}...")
     national = query_national_domains(country_qid)
     print(f"  {len(national)} candidates")
 
-    print(f"Querying regional government domains for {country}...")
-    regional = query_regional_domains(country_qid)
-    print(f"  {len(regional)} subdivisions")
+    if national_only:
+        regional: dict[str, dict[str, Any]] = {}
+    else:
+        print(f"Querying regional government domains for {country}...")
+        regional = query_regional_domains(country_qid)
+        print(f"  {len(regional)} subdivisions")
 
     def is_new(website: str) -> bool:
         host = _hostname_from_url(website)
@@ -384,7 +404,9 @@ def main(args: list[str] | None = None) -> int:
     print(f"  {len(existing_domains)} existing domains\n")
 
     try:
-        report = build_report(parsed.country, country_qid, existing_domains)
+        report = build_report(
+            parsed.country, country_qid, existing_domains, national_only=parsed.national_only
+        )
     except Exception as exc:
         print(f"Error querying Wikidata: {exc}", file=sys.stderr)
         return 1
@@ -420,6 +442,17 @@ def parse_args(args: list[str] | None = None) -> argparse.Namespace:
         "--dry-run",
         action="store_true",
         help="Query and print results without saving the report file",
+    )
+    parser.add_argument(
+        "--national-only",
+        action="store_true",
+        help=(
+            "Skip the regional/subnational query. The regional query depends "
+            "on Q10742 correctly classifying the country's subdivisions, "
+            "which is true for some countries (Spain) and not others "
+            "(Germany, France) -- use this flag until the correct "
+            "subdivision class for a country has been identified."
+        ),
     )
     return parser.parse_args(args)
 
