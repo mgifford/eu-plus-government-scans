@@ -6,7 +6,7 @@ permalink: /domains/spain.html
 
 [← Back to all countries](../domains.html)
 
-**2,868 domains** · **6,069 pages**
+**2,870 domains** · **6,071 pages**
 
 | Domain | Pages |
 |--------|-------|
@@ -779,6 +779,7 @@ permalink: /domains/spain.html
 | `connecta.edu.gva.es` | [Visit connecta.edu.gva.es homepage](https://connecta.edu.gva.es/), [Visit connecta.edu.gva.es/guest/Invitados_Login.php](https://connecta.edu.gva.es/guest/Invitados_Login.php) |
 | `connectat.voluntariat.gencat.cat` | [Visit connectat.voluntariat.gencat.cat homepage](https://connectat.voluntariat.gencat.cat/), [Visit connectat.voluntariat.gencat.cat/registrarse](https://connectat.voluntariat.gencat.cat/registrarse) |
 | `conocecastillayleon.jcyl.es` | [Visit conocecastillayleon.jcyl.es homepage](https://conocecastillayleon.jcyl.es/), [Visit conocecastillayleon.jcyl.es/web/es/contacta-nosotros.html](https://conocecastillayleon.jcyl.es/web/es/contacta-nosotros.html) |
+| `consejo-estado.es` | [Visit consejo-estado.es homepage](https://consejo-estado.es/) |
 | `consejoconsultivo.castillalamancha.es` | [Visit consejoconsultivo.castillalamancha.es homepage](https://consejoconsultivo.castillalamancha.es/) |
 | `consejoescolar.educacion.navarra.es` | [Visit consejoescolar.educacion.navarra.es homepage](https://consejoescolar.educacion.navarra.es/), [Visit consejoescolar.educacion.navarra.es/web1/2025/05/22/jornadas-educacion-emocional-y-habitos-saludables-prevencion-y-sensibilizacion-para-superar-el-bullying/](https://consejoescolar.educacion.navarra.es/web1/2025/05/22/jornadas-educacion-emocional-y-habitos-saludables-prevencion-y-sensibilizacion-para-superar-el-bullying/), [Visit consejoescolar.educacion.navarra.es/web1/2025/07/04/proyecto-etwinning-european-voices-documentaries-on-unity-and-change-del-colegio-jesuitinas-de-pamplona/](https://consejoescolar.educacion.navarra.es/web1/2025/07/04/proyecto-etwinning-european-voices-documentaries-on-unity-and-change-del-colegio-jesuitinas-de-pamplona/) |
 | `consell.sedelectronica.es` | [Visit consell.sedelectronica.es homepage](https://consell.sedelectronica.es/), [Visit consell.sedelectronica.es/enotifications](https://consell.sedelectronica.es/enotifications), [Visit consell.sedelectronica.es/info.0](https://consell.sedelectronica.es/info.0?x=dgDQTKtPVhBKZS3j5bXO3zxlceeGWyKWRuc3HhU03oiRPpu-rHYoLPUYyLpAzwRRFho1g5cScDw) |
@@ -1919,6 +1920,7 @@ permalink: /domains/spain.html
 | `movilidad.malaga.eu` | [Visit movilidad.malaga.eu homepage](https://movilidad.malaga.eu/), [Visit movilidad.malaga.eu/es/modos-de-movilidad/](https://movilidad.malaga.eu/es/modos-de-movilidad/), [Visit movilidad.malaga.eu/es/servicios/zona-bajas-emisiones/](https://movilidad.malaga.eu/es/servicios/zona-bajas-emisiones/) |
 | `mpr.sede.gob.es` | [Visit mpr.sede.gob.es homepage](https://mpr.sede.gob.es/), [Visit mpr.sede.gob.es/pagina/index/directorio/datos_abiertos](https://mpr.sede.gob.es/pagina/index/directorio/datos_abiertos) |
 | `mpt.gob.es` | [Visit mpt.gob.es homepage](https://mpt.gob.es/), [Visit mpt.gob.es/ministerio/comisionado-especial-dana.html](https://mpt.gob.es/ministerio/comisionado-especial-dana.html), [Visit mpt.gob.es/prensa/actualidad/noticias/2025/Julio/20250703.html](https://mpt.gob.es/prensa/actualidad/noticias/2025/Julio/20250703.html) |
+| `mptfp.gob.es` | [Visit mptfp.gob.es homepage](https://mptfp.gob.es/) |
 | `muface.sede.gob.es` | [Visit muface.sede.gob.es homepage](https://muface.sede.gob.es/), [Visit muface.sede.gob.es/procedimientos/choose-ambit/idp/416](https://muface.sede.gob.es/procedimientos/choose-ambit/idp/416), [Visit muface.sede.gob.es/procedimientos/index/categoria/1136](https://muface.sede.gob.es/procedimientos/index/categoria/1136) |
 | `mugiment.euskadi.eus` | [Visit mugiment.euskadi.eus homepage](https://mugiment.euskadi.eus/), [Visit mugiment.euskadi.eus/albistea/2025/eusfit-mugiment-2024-25-amaiera-bilera/webmug00-content/eu/](https://mugiment.euskadi.eus/albistea/2025/eusfit-mugiment-2024-25-amaiera-bilera/webmug00-content/eu/), [Visit mugiment.euskadi.eus/nola-parte-hartu/](https://mugiment.euskadi.eus/nola-parte-hartu/) |
 | `mui.carm.es` | [Visit mui.carm.es homepage](https://mui.carm.es/), [Visit mui.carm.es/web/mui](https://mui.carm.es/web/mui) |
