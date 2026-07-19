@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-07-19 04:56 UTC_
+_Generated: 2026-07-19 05:10 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -15,7 +15,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 |-----------|--------------|-----------|----------|---------|
 | **Combined Reachability** | **5,077 confirmed reachable** | 82,714 | **<span role="img" aria-label="6.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:7px;"></span></span><span class="sm-bar__label">6.1%</span></span>** | — |
 | Social Media | 5,372 scanned (5,077 reachable) | 82,714 | <span role="img" aria-label="6.5% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:8px;"></span></span><span class="sm-bar__label">6.5%</span></span> | 2 h |
-| Technology | 0 scanned | 82,714 | (manual scan) | — |
+| Technology | 512 scanned | 82,714 | <span role="img" aria-label="0.6% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:1px;"></span></span><span class="sm-bar__label">0.6%</span></span> | 0 h |
 | Lighthouse | 19,034 scanned | 82,714 | <span role="img" aria-label="23.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:28px;"></span></span><span class="sm-bar__label">23.0%</span></span> | 41.7 days |
 | Accessibility Statements | 0 scanned | 82,714 | <span role="img" aria-label="0.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:0px;"></span></span><span class="sm-bar__label">0.0%</span></span> | — |
 
@@ -38,9 +38,11 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 
 > Hover or focus any non-zero platform count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and platform from [social-media-data.json](social-media-data.json).
 
-## Technology Scan
+## Technology Scan by Country
 
-_No technology scans have been run yet. Trigger the **Scan Technology Stack** workflow manually._
+| Country | URLs Scanned | Last Scan |
+|---------|-------------|----------|
+| Austria | 512 | 2026-07-19 |
 
 ## Lighthouse Scan by Country
 
