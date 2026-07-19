@@ -674,6 +674,77 @@ layout: page
             text-transform: uppercase;
         }
 
+        /* Most connected domains list */
+        .most-connected-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+
+        .most-connected-item {
+            align-items: center;
+            background: var(--color-bg-panel);
+            border: 1px solid var(--color-border);
+            border-radius: 6px;
+            color: var(--color-text);
+            cursor: pointer;
+            display: grid;
+            font: inherit;
+            gap: 0.75rem;
+            grid-template-columns: 1.75rem minmax(0, 1fr) minmax(80px, 20%) 5rem;
+            padding: 0.6rem 0.9rem;
+            text-align: left;
+            width: 100%;
+        }
+
+        .most-connected-item:hover,
+        .most-connected-item:focus-visible {
+            background: var(--color-secondary-bg);
+            border-color: var(--color-primary);
+        }
+
+        .most-connected-rank {
+            color: var(--color-text-secondary);
+            font-size: 0.85rem;
+            font-weight: 700;
+        }
+
+        .most-connected-name {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .most-connected-bar-track {
+            background: var(--color-secondary-bg);
+            border-radius: 4px;
+            display: block;
+            height: 8px;
+            overflow: hidden;
+        }
+
+        .most-connected-bar-fill {
+            background: var(--color-primary);
+            display: block;
+            height: 100%;
+        }
+
+        .most-connected-count {
+            color: var(--color-text-secondary);
+            font-size: 0.85rem;
+            text-align: right;
+        }
+
+        @media (max-width: 768px) {
+            .most-connected-item {
+                grid-template-columns: 1.5rem minmax(0, 1fr) 3.5rem;
+            }
+
+            .most-connected-bar-track {
+                display: none;
+            }
+        }
+
         /* Tooltip for graph */
         .graph-tooltip {
             position: absolute;
@@ -947,6 +1018,12 @@ layout: page
                     <div id="country-domains-list"></div>
                 </div>
             </div>
+        </section>
+
+        <section id="most-connected-section" style="display:none;margin:24px 0">
+            <h2 style="margin-bottom:8px">Most Connected Government Domains</h2>
+            <p style="color:var(--color-text-secondary);margin-bottom:16px">Ranked by total observed connections for the selected country. Select a country above to see its ranking; select a domain to render its network in the graph below.</p>
+            <div id="most-connected-domains" class="most-connected-list"></div>
         </section>
 
         <section id="gov-to-gov-section" style="display:none;margin:24px 0">
@@ -1378,6 +1455,7 @@ layout: page
             }
             document.getElementById('gov-to-gov-section').style.display = 'none';
             document.getElementById('gov-to-gov-country-filter').innerHTML = '<option value="">All Countries</option>';
+            document.getElementById('most-connected-section').style.display = 'none';
             if (jsonlLoaded) {
                 renderAll();
             } else {
@@ -1413,11 +1491,17 @@ layout: page
         }
 
         function renderFromSummary(summary) {
-            // Render summary cards from pre-aggregated data
+            const country = getCountryDisplayName(summary.country_code);
+
+            // Render summary cards from pre-aggregated data. This summary is the
+            // lightweight per-country JSON (top_source_domains/top_target_domains,
+            // domain+count only) -- it has no per-domain unique-target or gov-to-gov
+            // pair data, so those figures are only available after loading the full
+            // JSONL dataset.
             document.getElementById('total-domains').textContent = summary.total_source_domains;
             document.getElementById('total-relationships').textContent = summary.total_relationships;
             document.getElementById('confirmed-domains').textContent = '1';
-            document.getElementById('candidate-domains').textContent = summary.total_unique_targets;
+            document.getElementById('candidate-domains').textContent = (summary.top_target_domains || []).length;
 
             const types = summary.relationship_types || {};
             document.getElementById('editorial-links').textContent = types.editorial_link || 0;
@@ -1431,37 +1515,38 @@ layout: page
             tbody.innerHTML = (summary.top_source_domains || []).map(d => `
                 <tr>
                     <td><a href="https://${escapeHtml(d.domain)}" target="_blank" rel="noopener">${escapeHtml(d.domain)}</a></td>
-                    <td>${escapeHtml(summary.country)}</td>
-                    <td>${d.unique_targets}</td>
-                    <td>${d.observations}</td>
+                    <td>${escapeHtml(country)}</td>
+                    <td>—</td>
+                    <td>${d.count}</td>
                 </tr>
             `).join('');
 
-            // Relationships table: show top targets as a proxy
+            // Relationships table: show top targets as a proxy (source-level detail
+            // requires the full dataset)
             const relTbody = document.getElementById('relationships-table-body');
-            relTbody.innerHTML = (summary.top_targets || []).slice(0, 50).map(t => `
+            relTbody.innerHTML = (summary.top_target_domains || []).slice(0, 50).map(t => `
                 <tr>
-                    <td>${escapeHtml(summary.country)} sources</td>
+                    <td>${escapeHtml(country)} sources</td>
                     <td><a href="https://${escapeHtml(t.domain)}" target="_blank" rel="noopener">${escapeHtml(t.domain)}</a></td>
-                    <td>editorial_link</td>
-                    <td>${t.observations}</td>
+                    <td>—</td>
+                    <td>${t.count}</td>
                 </tr>
             `).join('');
 
             // Country breakdown: just this country
             document.getElementById('country-breakdown').innerHTML = `
                 <div class="country-bar" style="margin-bottom:8px">
-                    <span class="country-label" style="min-width:120px;font-weight:600">${escapeHtml(summary.country)}</span>
+                    <span class="country-label" style="min-width:120px;font-weight:600">${escapeHtml(country)}</span>
                     <div class="bar-container">
                         <div class="bar" style="width:100%;background:var(--color-primary)"></div>
                     </div>
                     <span class="country-count">${summary.total_relationships}</span>
                 </div>
                 <p style="color:var(--color-text-secondary);font-size:0.9rem;margin-top:8px">
-                    ${summary.total_source_domains} source domains · ${summary.total_unique_targets} unique targets · ${summary.gov_to_gov_pairs} gov-to-gov links
+                    ${summary.total_source_domains} source domains · ${(summary.top_target_domains || []).length} top targets
                 </p>
                 <p style="color:var(--color-text-secondary);font-size:0.85rem;margin-top:4px">
-                    <a href="#" id="load-all-countries">Load all countries (full JSONL)</a> for comparison and D3 graph.
+                    <a href="#" id="load-all-countries">Load all countries (full JSONL)</a> for the gov-to-gov table and D3 graph.
                 </p>
             `;
             document.getElementById('load-all-countries')?.addEventListener('click', (e) => {
@@ -1469,33 +1554,68 @@ layout: page
                 loadFullJSONL();
             });
 
-            // Gov-to-gov from summary
-            if (summary.gov_to_gov_links && summary.gov_to_gov_links.length > 0) {
-                govToGovPairs = summary.gov_to_gov_links.map(g => ({
-                    source: g.source,
-                    target: g.target,
-                    srcCountry: summary.country,
-                    tgtCountry: g.target_country,
-                    observations: 0
-                }));
-                const section = document.getElementById('gov-to-gov-section');
-                const summaryDiv = document.getElementById('gov-to-gov-summary');
-                const tableDiv = document.getElementById('gov-to-gov-table-container');
-                const countrySelect = document.getElementById('gov-to-gov-country-filter');
-                const details = document.getElementById('gov-to-gov-details');
-                section.style.display = 'block';
+            renderMostConnectedDomains(summary, country);
+        }
 
-                const crossCountry = govToGovPairs.filter(p => p.srcCountry !== p.tgtCountry);
-                summaryDiv.innerHTML = `
-                    <div style="display:flex;gap:24px;flex-wrap:wrap;margin-bottom:20px">
-                        <div class="summary-card"><h4>Cross-Gov Links</h4><div class="value">${govToGovPairs.length}</div></div>
-                        <div class="summary-card"><h4>Cross-Country</h4><div class="value">${crossCountry.length}</div></div>
-                    </div>
-                `;
-                details.querySelector('summary').textContent = `Show full link table (${govToGovPairs.length} pairs)`;
-                renderGovToGovTable(govToGovPairs, tableDiv);
-                countrySelect.innerHTML = '<option value="">All Countries</option>';
+        function getCountryDisplayName(countryCode) {
+            if (!countryCode) return 'Unknown';
+            return countryCode.charAt(0) + countryCode.slice(1).toLowerCase();
+        }
+
+        function renderMostConnectedDomains(summary, country) {
+            const container = document.getElementById('most-connected-domains');
+            const section = document.getElementById('most-connected-section');
+            if (!container) return;
+            section.style.display = 'block';
+
+            const domains = (summary.top_source_domains || []).slice(0, 15);
+            if (domains.length === 0) {
+                container.innerHTML = '<p style="color:var(--color-text-secondary)">No domain data for ' + escapeHtml(country) + '.</p>';
+                return;
             }
+
+            const maxCount = domains[0].count || 1;
+            container.innerHTML = domains.map((d, i) => `
+                <button type="button" class="most-connected-item" data-domain="${escapeHtml(d.domain)}">
+                    <span class="most-connected-rank">${i + 1}</span>
+                    <span class="most-connected-name">${escapeHtml(d.domain)}</span>
+                    <span class="most-connected-bar-track">
+                        <span class="most-connected-bar-fill" style="width:${Math.round(d.count / maxCount * 100)}%"></span>
+                    </span>
+                    <span class="most-connected-count">${d.count.toLocaleString()}</span>
+                </button>
+            `).join('');
+
+            container.querySelectorAll('.most-connected-item').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    focusDomainInGraph(country, btn.dataset.domain);
+                });
+            });
+        }
+
+        function focusDomainInGraph(country, domain) {
+            const gc = document.getElementById('graph-container');
+            gc.classList.add('active');
+            gc.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+            if (!jsonlLoaded) {
+                announceToScreenReader('Loading full dataset to show connections for ' + domain + '…');
+                const check = setInterval(() => {
+                    if (jsonlLoaded) {
+                        clearInterval(check);
+                        // populateCountryFilter() (called from inside loadFullJSONL's
+                        // completion handler) only just added this option, so the
+                        // select's value must be set after the dataset -- not before.
+                        document.getElementById('graph-country-select').value = country;
+                        renderGraph(domain);
+                    }
+                }, 200);
+                loadFullJSONL();
+                return;
+            }
+
+            document.getElementById('graph-country-select').value = country;
+            renderGraph(domain);
         }
 
         function loadFullJSONL() {
@@ -1774,7 +1894,7 @@ layout: page
 
         const GRAPH_MAX_LINKS = 150;
 
-        function renderGraph() {
+        function renderGraph(focusDomain) {
             const summaryNote = document.getElementById('graph-summary-note');
             const container = document.getElementById('graph-svg-container');
 
@@ -1815,14 +1935,24 @@ layout: page
                 );
             }
 
+            // Ego-network mode: only this domain's direct connections, so the graph
+            // stays small and readable regardless of how big the country's full
+            // network is.
+            if (focusDomain) {
+                rels = rels.filter(r => r.source_domain === focusDomain || r.target_domain === focusDomain);
+            }
+
             const totalMatched = rels.length;
             const topRels = rels.sort((a, b) => b.observations - a.observations).slice(0, GRAPH_MAX_LINKS);
 
             summaryNote.textContent = totalMatched === 0
                 ? ''
-                : totalMatched > topRels.length
-                    ? 'Showing the top ' + topRels.length + ' of ' + totalMatched + ' matching links (ranked by observation count). Narrow the filters above to see the rest.'
-                    : 'Showing all ' + topRels.length + ' matching link' + (topRels.length === 1 ? '' : 's') + '.';
+                : focusDomain
+                    ? 'Showing ' + topRels.length + ' direct connection' + (topRels.length === 1 ? '' : 's') + ' for ' + focusDomain + '.' +
+                      (totalMatched > topRels.length ? ' (' + (totalMatched - topRels.length) + ' more not shown.)' : '')
+                    : totalMatched > topRels.length
+                        ? 'Showing the top ' + topRels.length + ' of ' + totalMatched + ' matching links (ranked by observation count). Narrow the filters above to see the rest.'
+                        : 'Showing all ' + topRels.length + ' matching link' + (topRels.length === 1 ? '' : 's') + '.';
 
             const nodeMap = {};
             const links = [];
@@ -1851,7 +1981,11 @@ layout: page
 
             container.innerHTML = '';
             if (nodes.length === 0) {
-                container.innerHTML = '<p style="text-align:center;padding:2rem;color:var(--color-text-secondary);">No links match the current filters for ' + escapeHtml(country) + '. Try including third-party services, or pick a different country.</p>';
+                container.innerHTML = '<p style="text-align:center;padding:2rem;color:var(--color-text-secondary);">' +
+                    (focusDomain
+                        ? 'No connections found for ' + escapeHtml(focusDomain) + ' with the current filters. Try including third-party services.'
+                        : 'No links match the current filters for ' + escapeHtml(country) + '. Try including third-party services, or pick a different country.') +
+                    '</p>';
                 summaryNote.textContent = '';
                 document.getElementById('graph-legend').innerHTML = '';
                 return;
@@ -2047,7 +2181,7 @@ layout: page
                 if (gc.classList.contains('active')) renderGraph();
             });
 
-            document.getElementById('render-graph').addEventListener('click', renderGraph);
+            document.getElementById('render-graph').addEventListener('click', () => renderGraph());
 
             document.getElementById('graph-include-third-party').addEventListener('change', (e) => {
                 document.getElementById('graph-type-select').disabled = !e.target.checked;
