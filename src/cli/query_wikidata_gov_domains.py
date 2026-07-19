@@ -85,8 +85,28 @@ COUNTRY_QIDS: dict[str, str] = {
 # Q327333 = "government agency" (broad class, includes courts/agencies/etc).
 GOV_AGENCY_CLASS = "Q327333"
 
-# Q10742 = "first-level administrative country subdivision".
-SUBDIVISION_CLASS = "Q10742"
+# Wikidata does not classify every country's first-level administrative
+# subdivisions the same way. Q10742 ("first-level administrative country
+# subdivision") works for Spain's autonomous communities, but returns ZERO
+# results for Germany and France; Germany's states are Q1221156 ("federated
+# state of Germany"), Austria's are Q261543 ("federal state of Austria") --
+# confirmed for each by querying a known subdivision (Bavaria, Styria)
+# directly for its P31 value rather than assuming. A country with no entry
+# here has not had its subdivision class identified yet; the regional query
+# should not be attempted for it (use --national-only).
+#
+# has_reliable_gov_institutions: whether P1001-linked institution entities
+# for this country's subdivisions reliably represent the region's actual
+# government (verified true for Spain: "Government of X"/"Parliament of X"
+# entities exist and have real websites). False means institution-linking
+# was checked and found unreliable -- e.g. Austria's regional executives
+# are modelled as one Wikidata entity per legislative term (e.g. "State
+# Government Schuetzenhoefer II"), none of which have a website set, so
+# only the subdivision's own direct P856 is trustworthy there.
+REGIONAL_SUBDIVISION_CONFIG: dict[str, dict[str, Any]] = {
+    "Spain": {"class_qid": "Q10742", "has_reliable_gov_institutions": True},
+    "Austria": {"class_qid": "Q261543", "has_reliable_gov_institutions": False},
+}
 
 # Q213283 = "diplomatic mission" (embassies, consulates, nunciatures, high
 # commissions). A P1001-to-country query otherwise pulls in every foreign
@@ -108,10 +128,10 @@ SELECT ?govBodyLabel ?website ?dissolved WHERE {{
 }}
 """ % {"agency": GOV_AGENCY_CLASS, "mission": DIPLOMATIC_MISSION_CLASS}
 
-REGIONAL_QUERY_TEMPLATE = """
+REGIONAL_QUERY_WITH_INSTITUTIONS_TEMPLATE = """
 SELECT ?subdivisionLabel ?isoCode ?placeWebsite ?govBodyLabel ?govWebsite ?dissolved WHERE {{
   ?subdivision wdt:P17 wd:{qid}.
-  ?subdivision wdt:P31 wd:%s.
+  ?subdivision wdt:P31 wd:{class_qid}.
   OPTIONAL {{ ?subdivision wdt:P300 ?isoCode. }}
   OPTIONAL {{ ?subdivision wdt:P856 ?placeWebsite. }}
   OPTIONAL {{
@@ -122,7 +142,25 @@ SELECT ?subdivisionLabel ?isoCode ?placeWebsite ?govBodyLabel ?govWebsite ?disso
   SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
 }}
 ORDER BY ?subdivisionLabel
-""" % SUBDIVISION_CLASS
+"""
+
+# Used when has_reliable_gov_institutions is False: only the subdivision's
+# own direct P856, no P1001-linked institution search. Verified necessary
+# for Austria (2026-07-19): its regional-executive entities are modelled one
+# per legislative term (e.g. "State Government Schuetzenhoefer II") and none
+# carry a website, while P1001-linking sweeps in political parties, courts,
+# and chambers of agriculture that a Spain-tuned label filter would not
+# reliably exclude for Austrian naming conventions.
+REGIONAL_QUERY_PLACE_ONLY_TEMPLATE = """
+SELECT ?subdivisionLabel ?isoCode ?placeWebsite WHERE {{
+  ?subdivision wdt:P17 wd:{qid}.
+  ?subdivision wdt:P31 wd:{class_qid}.
+  OPTIONAL {{ ?subdivision wdt:P300 ?isoCode. }}
+  OPTIONAL {{ ?subdivision wdt:P856 ?placeWebsite. }}
+  SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
+}}
+ORDER BY ?subdivisionLabel
+"""
 
 # Entities that legitimately match a government-institution label pattern
 # (see GOV_LABEL_PATTERNS) but are not government bodies -- caught by manual
@@ -210,17 +248,42 @@ def query_national_domains(country_qid: str) -> list[dict[str, Any]]:
     return entries
 
 
-def query_regional_domains(country_qid: str) -> dict[str, dict[str, Any]]:
+def query_regional_domains(country: str, country_qid: str) -> dict[str, dict[str, Any]]:
     """Query regional/subnational government domains for a country.
+
+    Requires an entry in REGIONAL_SUBDIVISION_CONFIG for `country` -- there
+    is no safe generic fallback, since Wikidata classifies different
+    countries' subdivisions under different, non-interchangeable classes
+    (see REGIONAL_SUBDIVISION_CONFIG's docstring comment). Raises KeyError
+    for a country with no config entry rather than silently returning
+    nothing or guessing a class.
 
     Returns:
         Dict keyed by subdivision name, each value containing:
           - iso_code: ISO 3166-2 code if Wikidata has it (P300)
           - place_website: the subdivision's own direct P856, if set
           - institutions: list of {label, website, dissolved} for
-            government-labelled institutions linked via P1001
+            government-labelled institutions linked via P1001. Always empty
+            when the country's config has has_reliable_gov_institutions=False.
     """
-    query = REGIONAL_QUERY_TEMPLATE.format(qid=country_qid)
+    if country not in REGIONAL_SUBDIVISION_CONFIG:
+        raise KeyError(
+            f"No regional subdivision class configured for {country!r}. "
+            "Identify it first (query a known subdivision's P31 value "
+            "directly) and add an entry to REGIONAL_SUBDIVISION_CONFIG "
+            "before calling this function -- do not guess Q10742."
+        )
+    config = REGIONAL_SUBDIVISION_CONFIG[country]
+    class_qid = config["class_qid"]
+
+    if config["has_reliable_gov_institutions"]:
+        query = REGIONAL_QUERY_WITH_INSTITUTIONS_TEMPLATE.format(
+            qid=country_qid, class_qid=class_qid
+        )
+    else:
+        query = REGIONAL_QUERY_PLACE_ONLY_TEMPLATE.format(
+            qid=country_qid, class_qid=class_qid
+        )
     result = run_sparql(query)
 
     regions: dict[str, dict[str, Any]] = {}
@@ -296,11 +359,11 @@ def build_report(
     national = query_national_domains(country_qid)
     print(f"  {len(national)} candidates")
 
-    if national_only:
+    if national_only or country not in REGIONAL_SUBDIVISION_CONFIG:
         regional: dict[str, dict[str, Any]] = {}
     else:
         print(f"Querying regional government domains for {country}...")
-        regional = query_regional_domains(country_qid)
+        regional = query_regional_domains(country, country_qid)
         print(f"  {len(regional)} subdivisions")
 
     def is_new(website: str) -> bool:

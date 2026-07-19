@@ -14,12 +14,14 @@ from pathlib import Path
 import pytest
 
 from src.cli.query_wikidata_gov_domains import (
+    REGIONAL_SUBDIVISION_CONFIG,
     _hostname_from_url,
     _looks_like_government,
     _looks_like_non_government,
     build_report,
     load_existing_domains,
     parse_args,
+    query_regional_domains,
     save_report,
 )
 
@@ -131,7 +133,7 @@ def mock_national_results(monkeypatch):
 @pytest.fixture
 def mock_regional_results(monkeypatch):
     """Patch query_regional_domains to return fixture data instead of a live call."""
-    def fake(country_qid):
+    def fake(country, country_qid):
         return {
             "Catalonia": {
                 "iso_code": "ES-CT",
@@ -180,7 +182,7 @@ def test_build_report_national_only_skips_regional_query(
     """Regional coverage depends on a country-specific subdivision class
     (Q10742 works for Spain, not Germany/France) -- national_only=True must
     not call query_regional_domains at all, not just discard its result."""
-    def fail_if_called(country_qid):
+    def fail_if_called(country, country_qid):
         raise AssertionError("query_regional_domains should not be called")
 
     monkeypatch.setattr(
@@ -190,6 +192,32 @@ def test_build_report_national_only_skips_regional_query(
     report = build_report("Germany", "Q183", set(), national_only=True)
     assert report["regional"] == {}
     assert len(report["national"]) == 2
+
+
+def test_build_report_skips_regional_for_unconfigured_country(
+    mock_national_results, monkeypatch
+):
+    """A country with no REGIONAL_SUBDIVISION_CONFIG entry (i.e. its
+    subdivision class hasn't been identified yet) must be skipped
+    automatically, without national_only being passed explicitly -- prevents
+    accidentally querying Q10742 (or nothing at all) for an unverified
+    country."""
+    def fail_if_called(country, country_qid):
+        raise AssertionError("query_regional_domains should not be called")
+
+    monkeypatch.setattr(
+        "src.cli.query_wikidata_gov_domains.query_regional_domains", fail_if_called
+    )
+
+    assert "France" not in REGIONAL_SUBDIVISION_CONFIG
+    report = build_report("France", "Q142", set())
+    assert report["regional"] == {}
+
+
+def test_query_regional_domains_raises_for_unconfigured_country():
+    assert "France" not in REGIONAL_SUBDIVISION_CONFIG
+    with pytest.raises(KeyError):
+        query_regional_domains("France", "Q142")
 
 
 # ---------------------------------------------------------------------------
