@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-07-19 12:19 UTC_
+_Generated: 2026-07-19 12:33 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -17,7 +17,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 | Social Media | 10,588 scanned (10,025 reachable) | 82,714 | <span role="img" aria-label="12.8% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:15px;"></span></span><span class="sm-bar__label">12.8%</span></span> | 6 h |
 | Technology | 836 scanned | 82,714 | <span role="img" aria-label="1.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:1px;"></span></span><span class="sm-bar__label">1.0%</span></span> | 7 h |
 | Lighthouse | 19,034 scanned | 82,714 | <span role="img" aria-label="23.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:28px;"></span></span><span class="sm-bar__label">23.0%</span></span> | 42.0 days |
-| Accessibility Statements | 2,601 scanned | 82,714 | <span role="img" aria-label="3.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:4px;"></span></span><span class="sm-bar__label">3.1%</span></span> | 4 h |
+| Accessibility Statements | 2,601 scanned | 82,714 | <span role="img" aria-label="3.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:4px;"></span></span><span class="sm-bar__label">3.1%</span></span> | 5 h |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by any scan type. **Avg Age** shows the mean number of days (or hours) since each URL in that scan type was last scanned — lower is fresher.
 
