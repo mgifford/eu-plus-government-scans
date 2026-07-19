@@ -1,1070 +1,418 @@
 {
-  "country": "Portugal",
-  "total_relationships": 1423,
-  "total_source_domains": 83,
-  "total_unique_targets": 374,
-  "gov_to_gov_pairs": 41,
-  "relationship_types": {
-    "editorial_link": 797,
-    "script_dependency": 230,
-    "stylesheet_dependency": 167,
-    "font_or_preload_dependency": 47,
-    "image_or_media_dependency": 117,
-    "form_destination": 65
-  },
+  "country_code": "PORTUGAL",
+  "total_relationships": 8081,
+  "total_source_domains": 266,
   "top_source_domains": [
     {
       "domain": "azores.gov.pt",
-      "observations": 193,
-      "unique_targets": 45,
-      "relationship_types": {
-        "editorial_link": 71,
-        "script_dependency": 23,
-        "font_or_preload_dependency": 5,
-        "stylesheet_dependency": 21,
-        "image_or_media_dependency": 15,
-        "form_destination": 9
-      }
-    },
-    {
-      "domain": "cm-tvedras.pt",
-      "observations": 58,
-      "unique_targets": 39,
-      "relationship_types": {
-        "editorial_link": 39,
-        "script_dependency": 7,
-        "stylesheet_dependency": 5,
-        "font_or_preload_dependency": 1,
-        "image_or_media_dependency": 3,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "cm-portimao.pt",
-      "observations": 54,
-      "unique_targets": 28,
-      "relationship_types": {
-        "editorial_link": 37,
-        "script_dependency": 4,
-        "stylesheet_dependency": 4,
-        "font_or_preload_dependency": 1,
-        "image_or_media_dependency": 3,
-        "form_destination": 2
-      }
-    },
-    {
-      "domain": "cmjornal.pt",
-      "observations": 53,
-      "unique_targets": 25,
-      "relationship_types": {
-        "editorial_link": 21,
-        "script_dependency": 11,
-        "font_or_preload_dependency": 5,
-        "stylesheet_dependency": 4,
-        "image_or_media_dependency": 4,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "cm-braga.pt",
-      "observations": 50,
-      "unique_targets": 18,
-      "relationship_types": {
-        "script_dependency": 11,
-        "font_or_preload_dependency": 4,
-        "stylesheet_dependency": 7,
-        "editorial_link": 12,
-        "image_or_media_dependency": 3,
-        "form_destination": 2
-      }
+      "count": 1956
     },
     {
       "domain": "madeira.gov.pt",
-      "observations": 46,
-      "unique_targets": 19,
-      "relationship_types": {
-        "script_dependency": 8,
-        "font_or_preload_dependency": 1,
-        "stylesheet_dependency": 5,
-        "editorial_link": 24,
-        "image_or_media_dependency": 3,
-        "form_destination": 2
-      }
-    },
-    {
-      "domain": "dgeg.gov.pt",
-      "observations": 43,
-      "unique_targets": 12,
-      "relationship_types": {
-        "editorial_link": 10,
-        "script_dependency": 7,
-        "stylesheet_dependency": 5,
-        "image_or_media_dependency": 2,
-        "form_destination": 2
-      }
-    },
-    {
-      "domain": "cm-olhao.pt",
-      "observations": 42,
-      "unique_targets": 15,
-      "relationship_types": {
-        "editorial_link": 13,
-        "script_dependency": 5,
-        "font_or_preload_dependency": 2,
-        "stylesheet_dependency": 5,
-        "image_or_media_dependency": 2
-      }
-    },
-    {
-      "domain": "espap.gov.pt",
-      "observations": 36,
-      "unique_targets": 21,
-      "relationship_types": {
-        "editorial_link": 28,
-        "script_dependency": 3,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "digital.gov.pt",
-      "observations": 33,
-      "unique_targets": 22,
-      "relationship_types": {
-        "script_dependency": 8,
-        "font_or_preload_dependency": 1,
-        "stylesheet_dependency": 4,
-        "editorial_link": 19,
-        "image_or_media_dependency": 1
-      }
-    },
-    {
-      "domain": "cm-fronteira.pt",
-      "observations": 31,
-      "unique_targets": 10,
-      "relationship_types": {
-        "editorial_link": 10,
-        "script_dependency": 4,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "cm-aveiro.pt",
-      "observations": 30,
-      "unique_targets": 24,
-      "relationship_types": {
-        "editorial_link": 23,
-        "script_dependency": 5,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1
-      }
-    },
-    {
-      "domain": "cm-tabua.pt",
-      "observations": 29,
-      "unique_targets": 18,
-      "relationship_types": {
-        "editorial_link": 21,
-        "script_dependency": 3,
-        "font_or_preload_dependency": 1,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "edu.gov.pt",
-      "observations": 29,
-      "unique_targets": 9,
-      "relationship_types": {
-        "editorial_link": 10,
-        "script_dependency": 2,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 3,
-        "form_destination": 2
-      }
-    },
-    {
-      "domain": "cm-vendasnovas.pt",
-      "observations": 26,
-      "unique_targets": 19,
-      "relationship_types": {
-        "editorial_link": 17,
-        "script_dependency": 3,
-        "font_or_preload_dependency": 2,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "ana.pt",
-      "observations": 25,
-      "unique_targets": 19,
-      "relationship_types": {
-        "editorial_link": 21,
-        "script_dependency": 2,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1
-      }
-    },
-    {
-      "domain": "cm-pontadelgada.pt",
-      "observations": 25,
-      "unique_targets": 17,
-      "relationship_types": {
-        "editorial_link": 15,
-        "script_dependency": 6,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "cm-estarreja.pt",
-      "observations": 25,
-      "unique_targets": 14,
-      "relationship_types": {
-        "editorial_link": 18,
-        "script_dependency": 3,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "cm-castromarim.pt",
-      "observations": 24,
-      "unique_targets": 12,
-      "relationship_types": {
-        "editorial_link": 17,
-        "script_dependency": 3,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "dgadr.gov.pt",
-      "observations": 24,
-      "unique_targets": 10,
-      "relationship_types": {
-        "editorial_link": 19,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "cm-coimbra.pt",
-      "observations": 23,
-      "unique_targets": 15,
-      "relationship_types": {
-        "editorial_link": 17,
-        "script_dependency": 2,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "cm-fundao.pt",
-      "observations": 23,
-      "unique_targets": 14,
-      "relationship_types": {
-        "editorial_link": 18,
-        "script_dependency": 2,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "cm-vianadoalentejo.pt",
-      "observations": 23,
-      "unique_targets": 18,
-      "relationship_types": {
-        "editorial_link": 17,
-        "script_dependency": 1,
-        "font_or_preload_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "cm-oliveiradohospital.pt",
-      "observations": 22,
-      "unique_targets": 15,
-      "relationship_types": {
-        "editorial_link": 16,
-        "script_dependency": 2,
-        "font_or_preload_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "cm-moita.pt",
-      "observations": 21,
-      "unique_targets": 10,
-      "relationship_types": {
-        "editorial_link": 11,
-        "script_dependency": 4,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "cm-faro.pt",
-      "observations": 21,
-      "unique_targets": 15,
-      "relationship_types": {
-        "editorial_link": 14,
-        "script_dependency": 2,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "emgfa.gov.pt",
-      "observations": 21,
-      "unique_targets": 17,
-      "relationship_types": {
-        "editorial_link": 15,
-        "script_dependency": 1,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "cm-cartaxo.pt",
-      "observations": 20,
-      "unique_targets": 9,
-      "relationship_types": {
-        "editorial_link": 13,
-        "script_dependency": 3,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "cm-covilha.pt",
-      "observations": 19,
-      "unique_targets": 10,
-      "relationship_types": {
-        "editorial_link": 15,
-        "script_dependency": 1,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1
-      }
-    },
-    {
-      "domain": "panteaonacional.gov.pt",
-      "observations": 18,
-      "unique_targets": 6,
-      "relationship_types": {
-        "editorial_link": 6,
-        "script_dependency": 1,
-        "font_or_preload_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1
-      }
-    },
-    {
-      "domain": "cm-mira.pt",
-      "observations": 18,
-      "unique_targets": 10,
-      "relationship_types": {
-        "editorial_link": 12,
-        "script_dependency": 2,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "cm-maia.pt",
-      "observations": 17,
-      "unique_targets": 8,
-      "relationship_types": {
-        "script_dependency": 7,
-        "stylesheet_dependency": 4,
-        "image_or_media_dependency": 2,
-        "editorial_link": 4
-      }
-    },
-    {
-      "domain": "cm-elvas.pt",
-      "observations": 17,
-      "unique_targets": 8,
-      "relationship_types": {
-        "editorial_link": 10,
-        "script_dependency": 1,
-        "stylesheet_dependency": 2,
-        "font_or_preload_dependency": 1,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "cm-vidigueira.pt",
-      "observations": 16,
-      "unique_targets": 12,
-      "relationship_types": {
-        "editorial_link": 8,
-        "script_dependency": 3,
-        "font_or_preload_dependency": 1,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 1
-      }
-    },
-    {
-      "domain": "pnl2027.gov.pt",
-      "observations": 16,
-      "unique_targets": 11,
-      "relationship_types": {
-        "editorial_link": 8,
-        "script_dependency": 4,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "portaldasfinancas.gov.pt",
-      "observations": 15,
-      "unique_targets": 8,
-      "relationship_types": {
-        "editorial_link": 11,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "cm-viladoconde.pt",
-      "observations": 15,
-      "unique_targets": 8,
-      "relationship_types": {
-        "editorial_link": 6,
-        "script_dependency": 1,
-        "font_or_preload_dependency": 4,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "cm-penamacor.pt",
-      "observations": 15,
-      "unique_targets": 11,
-      "relationship_types": {
-        "editorial_link": 9,
-        "script_dependency": 3,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 2
-      }
-    },
-    {
-      "domain": "cm-vizela.pt",
-      "observations": 15,
-      "unique_targets": 10,
-      "relationship_types": {
-        "editorial_link": 10,
-        "script_dependency": 1,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "cm-castelobranco.pt",
-      "observations": 14,
-      "unique_targets": 4,
-      "relationship_types": {
-        "script_dependency": 3,
-        "font_or_preload_dependency": 1,
-        "stylesheet_dependency": 3,
-        "editorial_link": 1,
-        "image_or_media_dependency": 2
-      }
-    },
-    {
-      "domain": "cm-sjm.pt",
-      "observations": 14,
-      "unique_targets": 8,
-      "relationship_types": {
-        "editorial_link": 10,
-        "script_dependency": 1,
-        "font_or_preload_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
+      "count": 1132
     },
     {
       "domain": "justica.gov.pt",
-      "observations": 13,
-      "unique_targets": 8,
-      "relationship_types": {
-        "editorial_link": 7,
-        "script_dependency": 2,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
+      "count": 785
     },
     {
-      "domain": "conventocristo.gov.pt",
-      "observations": 13,
-      "unique_targets": 9,
-      "relationship_types": {
-        "editorial_link": 7,
-        "script_dependency": 1,
-        "font_or_preload_dependency": 2,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1
-      }
-    },
-    {
-      "domain": "dgterritorio.gov.pt",
-      "observations": 12,
-      "unique_targets": 5,
-      "relationship_types": {
-        "editorial_link": 2,
-        "script_dependency": 5,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 1
-      }
+      "domain": "cm-porto.pt",
+      "count": 695
     },
     {
       "domain": "ipdj.gov.pt",
-      "observations": 12,
-      "unique_targets": 7,
-      "relationship_types": {
-        "editorial_link": 8,
-        "script_dependency": 2,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1
-      }
-    },
-    {
-      "domain": "cm-gaia.pt",
-      "observations": 12,
-      "unique_targets": 5,
-      "relationship_types": {
-        "script_dependency": 4,
-        "stylesheet_dependency": 2,
-        "editorial_link": 4,
-        "font_or_preload_dependency": 1,
-        "image_or_media_dependency": 1
-      }
-    },
-    {
-      "domain": "cm-porto.pt",
-      "observations": 12,
-      "unique_targets": 1,
-      "relationship_types": {
-        "editorial_link": 2,
-        "script_dependency": 3,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 2,
-        "form_destination": 2
-      }
-    },
-    {
-      "domain": "cm-guimaraes.pt",
-      "observations": 12,
-      "unique_targets": 5,
-      "relationship_types": {
-        "editorial_link": 4,
-        "script_dependency": 4,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "cm-tarouca.pt",
-      "observations": 11,
-      "unique_targets": 7,
-      "relationship_types": {
-        "editorial_link": 6,
-        "script_dependency": 3,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1
-      }
-    },
-    {
-      "domain": "cm-mealhada.pt",
-      "observations": 11,
-      "unique_targets": 6,
-      "relationship_types": {
-        "editorial_link": 5,
-        "script_dependency": 3,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 2
-      }
-    }
-  ],
-  "top_targets": [
-    {
-      "domain": "azores.gov.pt",
-      "observations": 107
-    },
-    {
-      "domain": "googleapis.com",
-      "observations": 60
-    },
-    {
-      "domain": "facebook.com",
-      "observations": 56
-    },
-    {
-      "domain": "instagram.com",
-      "observations": 44
-    },
-    {
-      "domain": "youtube.com",
-      "observations": 40
-    },
-    {
-      "domain": "googletagmanager.com",
-      "observations": 36
-    },
-    {
-      "domain": "google.com",
-      "observations": 33
-    },
-    {
-      "domain": "madeira.gov.pt",
-      "observations": 24
-    },
-    {
-      "domain": "cm-portimao.pt",
-      "observations": 22
-    },
-    {
-      "domain": "livroreclamacoes.pt",
-      "observations": 21
-    },
-    {
-      "domain": "jsdelivr.net",
-      "observations": 21
-    },
-    {
-      "domain": "cloudflare.com",
-      "observations": 20
-    },
-    {
-      "domain": "cm-braga.pt",
-      "observations": 20
-    },
-    {
-      "domain": "twitter.com",
-      "observations": 17
-    },
-    {
-      "domain": "cm-olhao.pt",
-      "observations": 17
-    },
-    {
-      "domain": "cm-tvedras.pt",
-      "observations": 16
-    },
-    {
-      "domain": "dgeg.gov.pt",
-      "observations": 15
-    },
-    {
-      "domain": "dgadr.gov.pt",
-      "observations": 14
+      "count": 472
     },
     {
       "domain": "edu.gov.pt",
-      "observations": 14
-    },
-    {
-      "domain": "europa.eu",
-      "observations": 13
-    },
-    {
-      "domain": "gstatic.com",
-      "observations": 13
-    },
-    {
-      "domain": "linkedin.com",
-      "observations": 13
-    },
-    {
-      "domain": "cm-castromarim.pt",
-      "observations": 12
+      "count": 440
     },
     {
       "domain": "cmjornal.pt",
-      "observations": 12
+      "count": 431
     },
     {
-      "domain": "cm-porto.pt",
-      "observations": 12
+      "domain": "cm-tvedras.pt",
+      "count": 389
+    },
+    {
+      "domain": "cm-ob.pt",
+      "count": 324
+    },
+    {
+      "domain": "cm-olhao.pt",
+      "count": 312
     },
     {
       "domain": "cm-estarreja.pt",
-      "observations": 12
+      "count": 266
     },
     {
-      "domain": "portugal.gov.pt",
-      "observations": 11
+      "domain": "cm-alcobaca.pt",
+      "count": 252
     },
     {
-      "domain": "wiremaze.com",
-      "observations": 11
+      "domain": "cm-portimao.pt",
+      "count": 242
     },
     {
-      "domain": "cm-fronteira.pt",
-      "observations": 11
+      "domain": "parlamento.pt",
+      "count": 241
     },
     {
-      "domain": "cm-cartaxo.pt",
-      "observations": 11
-    },
-    {
-      "domain": "espap.gov.pt",
-      "observations": 11
-    },
-    {
-      "domain": "panteaonacional.gov.pt",
-      "observations": 10
-    },
-    {
-      "domain": "cm-moita.pt",
-      "observations": 10
-    },
-    {
-      "domain": "dgterritorio.gov.pt",
-      "observations": 10
-    },
-    {
-      "domain": "cm-tabua.pt",
-      "observations": 10
-    },
-    {
-      "domain": "cm-fundao.pt",
-      "observations": 10
-    },
-    {
-      "domain": "cm-covilha.pt",
-      "observations": 10
-    },
-    {
-      "domain": "digital.gov.pt",
-      "observations": 9
-    },
-    {
-      "domain": "cm-elvas.pt",
-      "observations": 9
-    },
-    {
-      "domain": "fontawesome.com",
-      "observations": 8
-    },
-    {
-      "domain": "cm-mira.pt",
-      "observations": 8
-    },
-    {
-      "domain": "cm-coimbra.pt",
-      "observations": 8
-    },
-    {
-      "domain": "cm-castelobranco.pt",
-      "observations": 8
-    },
-    {
-      "domain": "w3.org",
-      "observations": 8
+      "domain": "cm-pontedelima.pt",
+      "count": 238
     },
     {
       "domain": "portaldasfinancas.gov.pt",
-      "observations": 8
+      "count": 231
+    },
+    {
+      "domain": "cm-braga.pt",
+      "count": 229
+    },
+    {
+      "domain": "cm-fundao.pt",
+      "count": 224
+    },
+    {
+      "domain": "cm-sintra.pt",
+      "count": 224
+    },
+    {
+      "domain": "cm-vfxira.pt",
+      "count": 216
+    },
+    {
+      "domain": "cm-feira.pt",
+      "count": 199
+    },
+    {
+      "domain": "cm-moncao.pt",
+      "count": 193
+    },
+    {
+      "domain": "cm-castromarim.pt",
+      "count": 192
+    },
+    {
+      "domain": "bnportugal.gov.pt",
+      "count": 190
+    },
+    {
+      "domain": "arte.gov.pt",
+      "count": 184
+    },
+    {
+      "domain": "cm-ovar.pt",
+      "count": 176
     },
     {
       "domain": "cm-maia.pt",
-      "observations": 8
+      "count": 176
     },
     {
-      "domain": "cm-gaia.pt",
-      "observations": 8
+      "domain": "cm-castelobranco.pt",
+      "count": 171
+    },
+    {
+      "domain": "cm-loule.pt",
+      "count": 170
+    },
+    {
+      "domain": "cm-tavira.pt",
+      "count": 164
+    },
+    {
+      "domain": "cm-moita.pt",
+      "count": 148
+    },
+    {
+      "domain": "cm-barcelos.pt",
+      "count": 146
+    },
+    {
+      "domain": "dgterritorio.gov.pt",
+      "count": 144
+    },
+    {
+      "domain": "bupi.gov.pt",
+      "count": 141
+    },
+    {
+      "domain": "dglab.gov.pt",
+      "count": 140
     },
     {
       "domain": "cm-vendasnovas.pt",
-      "observations": 8
+      "count": 136
     },
     {
-      "domain": "cm-oliveiradohospital.pt",
-      "observations": 8
+      "domain": "dgeg.gov.pt",
+      "count": 131
     },
     {
-      "domain": "x.com",
-      "observations": 7
+      "domain": "cm-gondomar.pt",
+      "count": 130
+    },
+    {
+      "domain": "cm-gaia.pt",
+      "count": 129
+    },
+    {
+      "domain": "dgrdn.gov.pt",
+      "count": 129
+    },
+    {
+      "domain": "cm-faro.pt",
+      "count": 124
+    },
+    {
+      "domain": "cm-loures.pt",
+      "count": 123
+    },
+    {
+      "domain": "cm-covilha.pt",
+      "count": 118
+    },
+    {
+      "domain": "espap.gov.pt",
+      "count": 115
+    },
+    {
+      "domain": "cm-agueda.pt",
+      "count": 111
+    },
+    {
+      "domain": "cm-baiao.pt",
+      "count": 111
+    },
+    {
+      "domain": "cm-sardoal.pt",
+      "count": 105
+    },
+    {
+      "domain": "cm-cinfaes.pt",
+      "count": 102
+    },
+    {
+      "domain": "cm-sjm.pt",
+      "count": 101
+    },
+    {
+      "domain": "cm-pombal.pt",
+      "count": 96
     }
   ],
-  "gov_to_gov_links": [
+  "top_target_domains": [
     {
-      "source": "panteaonacional.gov.pt",
-      "target": "portugal.gov.pt",
-      "target_country": "Portugal",
-      "cross_country": false
+      "domain": "azores.gov.pt",
+      "count": 1123
     },
     {
-      "source": "dgeg.gov.pt",
-      "target": "portugal.gov.pt",
-      "target_country": "Portugal",
-      "cross_country": false
+      "domain": "googleapis.com",
+      "count": 835
     },
     {
-      "source": "azores.gov.pt",
-      "target": "act.gov.pt",
-      "target_country": "Portugal",
-      "cross_country": false
+      "domain": "facebook.com",
+      "count": 664
     },
     {
-      "source": "azores.gov.pt",
-      "target": "europa.eu",
-      "target_country": "EU Institutions",
-      "cross_country": true
+      "domain": "madeira.gov.pt",
+      "count": 590
     },
     {
-      "source": "portaldasfinancas.gov.pt",
-      "target": "europa.eu",
-      "target_country": "EU Institutions",
-      "cross_country": true
+      "domain": "youtube.com",
+      "count": 511
     },
     {
-      "source": "justica.gov.pt",
-      "target": "portugal.gov.pt",
-      "target_country": "Portugal",
-      "cross_country": false
+      "domain": "instagram.com",
+      "count": 507
     },
     {
-      "source": "justica.gov.pt",
-      "target": "www.gov.pt",
-      "target_country": "Portugal",
-      "cross_country": false
+      "domain": "google.com",
+      "count": 499
     },
     {
-      "source": "justica.gov.pt",
-      "target": "compete2020.gov.pt",
-      "target_country": "Portugal",
-      "cross_country": false
+      "domain": "googletagmanager.com",
+      "count": 465
     },
     {
-      "source": "justica.gov.pt",
-      "target": "recuperarportugal.gov.pt",
-      "target_country": "Portugal",
-      "cross_country": false
+      "domain": "justica.gov.pt",
+      "count": 362
     },
     {
-      "source": "justica.gov.pt",
-      "target": "europa.eu",
-      "target_country": "EU Institutions",
-      "cross_country": true
+      "domain": "cloudflare.com",
+      "count": 335
     },
     {
-      "source": "emgfa.gov.pt",
-      "target": "defesa.gov.pt",
-      "target_country": "Portugal",
-      "cross_country": false
+      "domain": "cm-porto.pt",
+      "count": 325
     },
     {
-      "source": "emgfa.gov.pt",
-      "target": "bud.gov.pt",
-      "target_country": "Portugal",
-      "cross_country": false
+      "domain": "jsdelivr.net",
+      "count": 312
     },
     {
-      "source": "emgfa.gov.pt",
-      "target": "un.org",
-      "target_country": "Unknown",
-      "cross_country": true
+      "domain": "twitter.com",
+      "count": 262
     },
     {
-      "source": "emgfa.gov.pt",
-      "target": "europa.eu",
-      "target_country": "EU Institutions",
-      "cross_country": true
+      "domain": "livroreclamacoes.pt",
+      "count": 245
     },
     {
-      "source": "emgfa.gov.pt",
-      "target": "usabilidade.gov.pt",
-      "target_country": "Portugal",
-      "cross_country": false
+      "domain": "gstatic.com",
+      "count": 201
     },
     {
-      "source": "ipdj.gov.pt",
-      "target": "portugal.gov.pt",
-      "target_country": "Portugal",
-      "cross_country": false
+      "domain": "parlamento.pt",
+      "count": 195
     },
     {
-      "source": "ipdj.gov.pt",
-      "target": "azores.gov.pt",
-      "target_country": "Portugal",
-      "cross_country": false
+      "domain": "edu.gov.pt",
+      "count": 172
     },
     {
-      "source": "ipdj.gov.pt",
-      "target": "madeira.gov.pt",
-      "target_country": "Portugal",
-      "cross_country": false
+      "domain": "portaldasfinancas.gov.pt",
+      "count": 165
     },
     {
-      "source": "dgadr.gov.pt",
-      "target": "rederural.gov.pt",
-      "target_country": "Portugal",
-      "cross_country": false
+      "domain": "linkedin.com",
+      "count": 164
     },
     {
-      "source": "dgadr.gov.pt",
-      "target": "agricultura.gov.pt",
-      "target_country": "Portugal",
-      "cross_country": false
+      "domain": "cm-ob.pt",
+      "count": 164
     },
     {
-      "source": "bnportugal.gov.pt",
-      "target": "portugal.gov.pt",
-      "target_country": "Portugal",
-      "cross_country": false
+      "domain": "europa.eu",
+      "count": 162
     },
     {
-      "source": "madeira.gov.pt",
-      "target": "rederural.gov.pt",
-      "target_country": "Portugal",
-      "cross_country": false
+      "domain": "ipdj.gov.pt",
+      "count": 145
     },
     {
-      "source": "madeira.gov.pt",
-      "target": "europa.eu",
-      "target_country": "EU Institutions",
-      "cross_country": true
+      "domain": "cm-sintra.pt",
+      "count": 139
     },
     {
-      "source": "digital.gov.pt",
-      "target": "ama.gov.pt",
-      "target_country": "Portugal",
-      "cross_country": false
+      "domain": "cm-olhao.pt",
+      "count": 136
     },
     {
-      "source": "digital.gov.pt",
-      "target": "portugal.gov.pt",
-      "target_country": "Portugal",
-      "cross_country": false
+      "domain": "portugal.gov.pt",
+      "count": 134
     },
     {
-      "source": "digital.gov.pt",
-      "target": "usabilidade.gov.pt",
-      "target_country": "Portugal",
-      "cross_country": false
+      "domain": "w3.org",
+      "count": 130
     },
     {
-      "source": "digital.gov.pt",
-      "target": "recuperarportugal.gov.pt",
-      "target_country": "Portugal",
-      "cross_country": false
+      "domain": "cm-alcobaca.pt",
+      "count": 125
     },
     {
-      "source": "digital.gov.pt",
-      "target": "europa.eu",
-      "target_country": "EU Institutions",
-      "cross_country": true
+      "domain": "cm-portimao.pt",
+      "count": 121
     },
     {
-      "source": "digital.gov.pt",
-      "target": "arte.gov.pt",
-      "target_country": "Portugal",
-      "cross_country": false
+      "domain": "wiremaze.com",
+      "count": 117
     },
     {
-      "source": "digital.gov.pt",
-      "target": "mosaico.gov.pt",
-      "target_country": "Portugal",
-      "cross_country": false
+      "domain": "unpkg.com",
+      "count": 114
     },
     {
-      "source": "digital.gov.pt",
-      "target": "www.gov.pt",
-      "target_country": "Portugal",
-      "cross_country": false
+      "domain": "bnportugal.gov.pt",
+      "count": 111
     },
     {
-      "source": "espap.gov.pt",
-      "target": "feap.gov.pt",
-      "target_country": "Portugal",
-      "cross_country": false
+      "domain": "cm-fundao.pt",
+      "count": 110
     },
     {
-      "source": "espap.gov.pt",
-      "target": "b2ap.gov.pt",
-      "target_country": "Portugal",
-      "cross_country": false
+      "domain": "cm-vfxira.pt",
+      "count": 104
     },
     {
-      "source": "espap.gov.pt",
-      "target": "sigo.gov.pt",
-      "target_country": "Portugal",
-      "cross_country": false
+      "domain": "cm-estarreja.pt",
+      "count": 103
     },
     {
-      "source": "espap.gov.pt",
-      "target": "sigoram.gov.pt",
-      "target_country": "Portugal",
-      "cross_country": false
+      "domain": "cm-tvedras.pt",
+      "count": 103
     },
     {
-      "source": "espap.gov.pt",
-      "target": "sigoraa.gov.pt",
-      "target_country": "Portugal",
-      "cross_country": false
+      "domain": "bootstrapcdn.com",
+      "count": 99
     },
     {
-      "source": "espap.gov.pt",
-      "target": "geadap.gov.pt",
-      "target_country": "Portugal",
-      "cross_country": false
+      "domain": "cm-braga.pt",
+      "count": 98
     },
     {
-      "source": "espap.gov.pt",
-      "target": "bep.gov.pt",
-      "target_country": "Portugal",
-      "cross_country": false
+      "domain": "cm-pontedelima.pt",
+      "count": 94
     },
     {
-      "source": "espap.gov.pt",
-      "target": "pec.gov.pt",
-      "target_country": "Portugal",
-      "cross_country": false
+      "domain": "cmjornal.pt",
+      "count": 93
     },
     {
-      "source": "espap.gov.pt",
-      "target": "saf.gov.pt",
-      "target_country": "Portugal",
-      "cross_country": false
+      "domain": "cm-loule.pt",
+      "count": 93
     },
     {
-      "source": "espap.gov.pt",
-      "target": "recuperarportugal.gov.pt",
-      "target_country": "Portugal",
-      "cross_country": false
+      "domain": "cm-feira.pt",
+      "count": 93
+    },
+    {
+      "domain": "cm-castromarim.pt",
+      "count": 91
+    },
+    {
+      "domain": "jquery.com",
+      "count": 87
+    },
+    {
+      "domain": "dgterritorio.gov.pt",
+      "count": 87
+    },
+    {
+      "domain": "cm-castelobranco.pt",
+      "count": 84
+    },
+    {
+      "domain": "fontawesome.com",
+      "count": 81
+    },
+    {
+      "domain": "autarquia360.com",
+      "count": 79
+    },
+    {
+      "domain": "cm-tavira.pt",
+      "count": 79
+    },
+    {
+      "domain": "cm-maia.pt",
+      "count": 78
+    },
+    {
+      "domain": "presidencia.pt",
+      "count": 74
     }
-  ]
+  ],
+  "relationship_types": {
+    "editorial_link": 4363,
+    "script_dependency": 1336,
+    "font_or_preload_dependency": 258,
+    "stylesheet_dependency": 986,
+    "image_or_media_dependency": 702,
+    "form_destination": 436
+  },
+  "generated_at": "2026-07-19T14:00:13.190542+00:00"
 }
