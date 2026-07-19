@@ -269,6 +269,61 @@
       "already_seeded": false
     }
   ],
-  "regional": {},
+  "regional": {
+    "Burgenland": {
+      "iso_code": "AT-1",
+      "place_website": "https://www.burgenland.at/",
+      "place_website_new": false,
+      "institutions": []
+    },
+    "Carinthia": {
+      "iso_code": "AT-2",
+      "place_website": "https://www.ktn.gv.at",
+      "place_website_new": true,
+      "institutions": []
+    },
+    "Lower Austria": {
+      "iso_code": "AT-3",
+      "place_website": "https://www.noe.gv.at/",
+      "place_website_new": false,
+      "institutions": []
+    },
+    "Salzburg": {
+      "iso_code": "AT-5",
+      "place_website": "https://www.salzburg.gv.at/",
+      "place_website_new": false,
+      "institutions": []
+    },
+    "Styria": {
+      "iso_code": "AT-6",
+      "place_website": "https://www.verwaltung.steiermark.at/",
+      "place_website_new": false,
+      "institutions": []
+    },
+    "Tyrol": {
+      "iso_code": "AT-7",
+      "place_website": "https://www.tirol.gv.at/",
+      "place_website_new": false,
+      "institutions": []
+    },
+    "Upper Austria": {
+      "iso_code": "AT-4",
+      "place_website": "https://www.land-oberoesterreich.gv.at/",
+      "place_website_new": false,
+      "institutions": []
+    },
+    "Vienna": {
+      "iso_code": "AT-9",
+      "place_website": "https://www.wien.gv.at/",
+      "place_website_new": false,
+      "institutions": []
+    },
+    "Vorarlberg": {
+      "iso_code": "AT-8",
+      "place_website": "https://vorarlberg.at/",
+      "place_website_new": false,
+      "institutions": []
+    }
+  },
   "note": "Candidate list only -- not merged into any TOON seed. Verify liveness (DNS/HTTP) and currency before adding any domain; 'dissolved' being empty does not guarantee an entity is still active, and 'already_seeded' is a hostname-suffix match, not a guarantee of exact equivalence."
 }
