@@ -1,436 +1,290 @@
 {
-  "country": "Iceland",
-  "total_relationships": 496,
+  "country_code": "ICELAND",
+  "total_relationships": 513,
   "total_source_domains": 18,
-  "total_unique_targets": 164,
-  "gov_to_gov_pairs": 0,
-  "relationship_types": {
-    "editorial_link": 247,
-    "script_dependency": 82,
-    "stylesheet_dependency": 65,
-    "image_or_media_dependency": 49,
-    "form_destination": 26,
-    "font_or_preload_dependency": 27
-  },
   "top_source_domains": [
     {
       "domain": "reykjavik.is",
-      "observations": 529,
-      "unique_targets": 38,
-      "relationship_types": {
-        "editorial_link": 48,
-        "script_dependency": 23,
-        "stylesheet_dependency": 18,
-        "image_or_media_dependency": 15,
-        "font_or_preload_dependency": 5,
-        "form_destination": 2
-      }
+      "count": 909
     },
     {
       "domain": "akureyri.is",
-      "observations": 187,
-      "unique_targets": 34,
-      "relationship_types": {
-        "editorial_link": 37,
-        "script_dependency": 10,
-        "stylesheet_dependency": 7,
-        "image_or_media_dependency": 7,
-        "form_destination": 5,
-        "font_or_preload_dependency": 2
-      }
+      "count": 374
     },
     {
       "domain": "kopavogur.is",
-      "observations": 186,
-      "unique_targets": 20,
-      "relationship_types": {
-        "editorial_link": 29,
-        "script_dependency": 8,
-        "font_or_preload_dependency": 7,
-        "stylesheet_dependency": 7,
-        "image_or_media_dependency": 6,
-        "form_destination": 5
-      }
+      "count": 372
     },
     {
       "domain": "keflavik.is",
-      "observations": 130,
-      "unique_targets": 50,
-      "relationship_types": {
-        "editorial_link": 59,
-        "script_dependency": 3,
-        "stylesheet_dependency": 3,
-        "font_or_preload_dependency": 2,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
+      "count": 260
     },
     {
       "domain": "hagstofa.is",
-      "observations": 105,
-      "unique_targets": 14,
-      "relationship_types": {
-        "editorial_link": 18,
-        "image_or_media_dependency": 4,
-        "script_dependency": 3,
-        "stylesheet_dependency": 5,
-        "form_destination": 1
-      }
+      "count": 210
     },
     {
       "domain": "skatturinn.is",
-      "observations": 55,
-      "unique_targets": 12,
-      "relationship_types": {
-        "editorial_link": 14,
-        "script_dependency": 4,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
+      "count": 110
     },
     {
       "domain": "vegagerdin.is",
-      "observations": 51,
-      "unique_targets": 9,
-      "relationship_types": {
-        "editorial_link": 10,
-        "script_dependency": 3,
-        "font_or_preload_dependency": 1,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 2
-      }
+      "count": 102
     },
     {
       "domain": "island.is",
-      "observations": 47,
-      "unique_targets": 4,
-      "relationship_types": {
-        "editorial_link": 2,
-        "script_dependency": 3,
-        "font_or_preload_dependency": 1,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1
-      }
+      "count": 94
     },
     {
       "domain": "gardabaer.is",
-      "observations": 37,
-      "unique_targets": 8,
-      "relationship_types": {
-        "script_dependency": 2,
-        "form_destination": 2,
-        "editorial_link": 7,
-        "stylesheet_dependency": 1,
-        "font_or_preload_dependency": 2,
-        "image_or_media_dependency": 1
-      }
+      "count": 74
     },
     {
       "domain": "forseti.is",
-      "observations": 30,
-      "unique_targets": 9,
-      "relationship_types": {
-        "editorial_link": 7,
-        "script_dependency": 3,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 3,
-        "font_or_preload_dependency": 3
-      }
+      "count": 60
     },
     {
       "domain": "hafnarfjordur.is",
-      "observations": 29,
-      "unique_targets": 4,
-      "relationship_types": {
-        "stylesheet_dependency": 3,
-        "editorial_link": 3,
-        "script_dependency": 4,
-        "image_or_media_dependency": 1,
-        "form_destination": 2
-      }
+      "count": 58
     },
     {
       "domain": "landlaeknir.is",
-      "observations": 26,
-      "unique_targets": 3,
-      "relationship_types": {
-        "editorial_link": 4,
-        "script_dependency": 4,
-        "stylesheet_dependency": 2,
-        "form_destination": 3,
-        "image_or_media_dependency": 1
-      }
+      "count": 52
     },
     {
       "domain": "stjornarradid.is",
-      "observations": 18,
-      "unique_targets": 9,
-      "relationship_types": {
-        "script_dependency": 6,
-        "font_or_preload_dependency": 4,
-        "stylesheet_dependency": 3,
-        "editorial_link": 3,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
+      "count": 36
     },
     {
       "domain": "vinnustund.is",
-      "observations": 14,
-      "unique_targets": 2,
-      "relationship_types": {
-        "editorial_link": 1,
-        "script_dependency": 2,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 2,
-        "form_destination": 2
-      }
+      "count": 28
     },
     {
       "domain": "mos.is",
-      "observations": 8,
-      "unique_targets": 3,
-      "relationship_types": {
-        "stylesheet_dependency": 2,
-        "script_dependency": 1,
-        "form_destination": 1
-      }
+      "count": 16
     },
     {
       "domain": "domstolar.is",
-      "observations": 5,
-      "unique_targets": 2,
-      "relationship_types": {
-        "editorial_link": 2,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1
-      }
+      "count": 10
     },
     {
       "domain": "samgongustofa.is",
-      "observations": 5,
-      "unique_targets": 3,
-      "relationship_types": {
-        "editorial_link": 2,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1
-      }
+      "count": 10
     },
     {
       "domain": "vinnumalastofnun.is",
-      "observations": 3,
-      "unique_targets": 1,
-      "relationship_types": {
-        "editorial_link": 1,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1
-      }
+      "count": 6
     }
   ],
-  "top_targets": [
+  "top_target_domains": [
     {
       "domain": "reykjavik.is",
-      "observations": 317
+      "count": 614
     },
     {
       "domain": "kopavogur.is",
-      "observations": 131
+      "count": 262
     },
     {
       "domain": "akureyri.is",
-      "observations": 86
+      "count": 172
     },
     {
       "domain": "facebook.com",
-      "observations": 64
+      "count": 117
     },
     {
       "domain": "googleapis.com",
-      "observations": 48
+      "count": 97
     },
     {
       "domain": "keflavik.is",
-      "observations": 48
+      "count": 96
     },
     {
       "domain": "island.is",
-      "observations": 47
+      "count": 94
     },
     {
       "domain": "hagstofa.is",
-      "observations": 38
+      "count": 76
     },
     {
       "domain": "instagram.com",
-      "observations": 28
+      "count": 56
     },
     {
       "domain": "vegagerdin.is",
-      "observations": 26
+      "count": 52
     },
     {
       "domain": "readspeaker.com",
-      "observations": 22
-    },
-    {
-      "domain": "borgarbokasafn.is",
-      "observations": 21
-    },
-    {
-      "domain": "reykjavikcitymuseum.is",
-      "observations": 21
-    },
-    {
-      "domain": "visitreykjavik.is",
-      "observations": 21
-    },
-    {
-      "domain": "fristund.is",
-      "observations": 21
-    },
-    {
-      "domain": "listasafnreykjavikur.is",
-      "observations": 21
+      "count": 43
     },
     {
       "domain": "gardabaer.is",
-      "observations": 20
+      "count": 40
+    },
+    {
+      "domain": "shs.is",
+      "count": 40
     },
     {
       "domain": "landlaeknir.is",
-      "observations": 19
+      "count": 38
     },
     {
       "domain": "youtube.com",
-      "observations": 17
-    },
-    {
-      "domain": "hafnarfjordur.is",
-      "observations": 15
-    },
-    {
-      "domain": "skatturinn.is",
-      "observations": 15
-    },
-    {
-      "domain": "tollur.is",
-      "observations": 15
+      "count": 34
     },
     {
       "domain": "forseti.is",
-      "observations": 15
+      "count": 30
+    },
+    {
+      "domain": "skatturinn.is",
+      "count": 30
+    },
+    {
+      "domain": "tollur.is",
+      "count": 30
+    },
+    {
+      "domain": "hafnarfjordur.is",
+      "count": 30
     },
     {
       "domain": "vinnustund.is",
-      "observations": 14
+      "count": 28
     },
     {
       "domain": "googletagmanager.com",
-      "observations": 12
+      "count": 24
     },
     {
       "domain": "fontawesome.com",
-      "observations": 12
+      "count": 24
     },
     {
       "domain": "siteimproveanalytics.com",
-      "observations": 11
+      "count": 23
     },
     {
       "domain": "google.com",
-      "observations": 10
+      "count": 20
     },
     {
       "domain": "cludo.com",
-      "observations": 9
-    },
-    {
-      "domain": "cloudflare.com",
-      "observations": 8
-    },
-    {
-      "domain": "stjornarradid.is",
-      "observations": 8
-    },
-    {
-      "domain": "linkedin.com",
-      "observations": 8
+      "count": 18
     },
     {
       "domain": "twitter.com",
-      "observations": 8
+      "count": 16
+    },
+    {
+      "domain": "linkedin.com",
+      "count": 16
     },
     {
       "domain": "plausible.io",
-      "observations": 8
+      "count": 16
+    },
+    {
+      "domain": "cloudflare.com",
+      "count": 16
+    },
+    {
+      "domain": "stjornarradid.is",
+      "count": 16
     },
     {
       "domain": "visitakureyri.is",
-      "observations": 7
+      "count": 14
     },
     {
       "domain": "typekit.net",
-      "observations": 7
-    },
-    {
-      "domain": "oracle.com",
-      "observations": 6
-    },
-    {
-      "domain": "stillingar.is",
-      "observations": 6
+      "count": 14
     },
     {
       "domain": "arcgis.com",
-      "observations": 6
+      "count": 14
     },
     {
       "domain": "tiktok.com",
-      "observations": 6
+      "count": 12
     },
     {
-      "domain": "stefna.is",
-      "observations": 5
+      "domain": "oracle.com",
+      "count": 12
+    },
+    {
+      "domain": "stillingar.is",
+      "count": 12
+    },
+    {
+      "domain": "in-tend.co.uk",
+      "count": 12
     },
     {
       "domain": "statice.is",
-      "observations": 5
+      "count": 10
     },
     {
       "domain": "x.com",
-      "observations": 5
+      "count": 10
     },
     {
       "domain": "isi.is",
-      "observations": 5
+      "count": 10
     },
     {
-      "domain": "vedur.is",
-      "observations": 4
-    },
-    {
-      "domain": "loftgaedi.is",
-      "observations": 4
-    },
-    {
-      "domain": "domstolar.is",
-      "observations": 4
+      "domain": "stefna.is",
+      "count": 10
     },
     {
       "domain": "jsdelivr.net",
-      "observations": 4
+      "count": 10
     },
     {
-      "domain": "menntastefna.is",
-      "observations": 4
+      "domain": "loftgaedi.is",
+      "count": 8
+    },
+    {
+      "domain": "vedur.is",
+      "count": 8
+    },
+    {
+      "domain": "domstolar.is",
+      "count": 8
     },
     {
       "domain": "mailchi.mp",
-      "observations": 4
+      "count": 8
+    },
+    {
+      "domain": "ctfassets.net",
+      "count": 8
+    },
+    {
+      "domain": "menntastefna.is",
+      "count": 8
+    },
+    {
+      "domain": "samgongustofa.is",
+      "count": 8
+    },
+    {
+      "domain": "borgarbokasafn.is",
+      "count": 7
     }
   ],
-  "gov_to_gov_links": []
+  "relationship_types": {
+    "editorial_link": 250,
+    "script_dependency": 87,
+    "stylesheet_dependency": 68,
+    "font_or_preload_dependency": 27,
+    "image_or_media_dependency": 53,
+    "form_destination": 28
+  },
+  "generated_at": "2026-07-19T14:00:13.121356+00:00"
 }
