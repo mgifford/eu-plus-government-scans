@@ -1,8 +1,8 @@
 {
   "version":"0.1-seed",
   "country":"Austria",
-  "domain_count":376,
-  "page_count":821,
+  "domain_count":377,
+  "page_count":822,
   "domains":[
     {
       "canonical_domain":"48ertandler.wien.gv.at",
@@ -11448,6 +11448,22 @@
           "accessibility_score":"0.93",
           "best_practices_score":"0.71",
           "seo_score":"0.92"
+        }
+      ]
+    },
+    {
+      "canonical_domain":"land-oberoesterreich.gv.at",
+      "subnational":[
+        {
+          "code":"AT-4",
+          "name":"Upper Austria"
+        }
+      ],
+      "source_tabs":[],
+      "pages":[
+        {
+          "url":"https://www.land-oberoesterreich.gv.at/",
+          "is_root_page":true
         }
       ]
     }
