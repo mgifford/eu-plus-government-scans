@@ -1,0 +1,274 @@
+{
+  "country": "Austria",
+  "wikidata_qid": "Q40",
+  "national": [
+    {
+      "label": "Federal Ministry of the Interior",
+      "website": "https://www.bmi.gv.at",
+      "dissolved": null,
+      "hostname": "bmi.gv.at",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Ministry of the Interior",
+      "website": "http://www.bmi.gv.at",
+      "dissolved": null,
+      "hostname": "bmi.gv.at",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Council of Austria",
+      "website": "https://parlament.gv.at/en",
+      "dissolved": null,
+      "hostname": "parlament.gv.at",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Council of Austria",
+      "website": "https://parlament.gv.at",
+      "dissolved": null,
+      "hostname": "parlament.gv.at",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Ministry of Education",
+      "website": "https://www.bmbwf.gv.at/",
+      "dissolved": null,
+      "hostname": "bmbwf.gv.at",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Ministry for European and International Affairs",
+      "website": "https://www.bmeia.gv.at/",
+      "dissolved": null,
+      "hostname": "bmeia.gv.at",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Chancellery of Austria",
+      "website": "https://www.bundeskanzleramt.gv.at/",
+      "dissolved": null,
+      "hostname": "bundeskanzleramt.gv.at",
+      "already_seeded": false
+    },
+    {
+      "label": "Austrian Federal Government",
+      "website": "https://www.bundeskanzleramt.gv.at/",
+      "dissolved": null,
+      "hostname": "bundeskanzleramt.gv.at",
+      "already_seeded": false
+    },
+    {
+      "label": "National Council of Austria",
+      "website": "https://www.parlament.gv.at/",
+      "dissolved": null,
+      "hostname": "parlament.gv.at",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Ministry for Climate Action, Environment, Energy, Mobility, Innovation and Technology",
+      "website": "https://www.bmk.gv.at",
+      "dissolved": null,
+      "hostname": "bmk.gv.at",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Ministry of Defence",
+      "website": "https://www.bmlvs.gv.at/",
+      "dissolved": null,
+      "hostname": "bmlvs.gv.at",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Ministry of Defence",
+      "website": "http://www.bmlvs.gv.at/",
+      "dissolved": null,
+      "hostname": "bmlvs.gv.at",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Ministry of Justice",
+      "website": "https://www.justiz.gv.at/",
+      "dissolved": null,
+      "hostname": "justiz.gv.at",
+      "already_seeded": true
+    },
+    {
+      "label": "Constitutional Court of Austria",
+      "website": "http://www.vfgh.gv.at/",
+      "dissolved": null,
+      "hostname": "vfgh.gv.at",
+      "already_seeded": true
+    },
+    {
+      "label": "Supreme Court of Justice",
+      "website": "https://www.ogh.gv.at/",
+      "dissolved": null,
+      "hostname": "ogh.gv.at",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Ministry of Finance",
+      "website": "https://www.bmf.gv.at/",
+      "dissolved": null,
+      "hostname": "bmf.gv.at",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Ministry of Labour, Social Affairs, Health, Care and Consumer Protection",
+      "website": "https://www.sozialministerium.at/",
+      "dissolved": null,
+      "hostname": "sozialministerium.at",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Ministry of Health",
+      "website": "http://www.bmgf.gv.at/",
+      "dissolved": null,
+      "hostname": "bmgf.gv.at",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Ministry of Agriculture, Forestry, Environment, Regions and Water Management",
+      "website": "https://www.bmlfuw.gv.at/",
+      "dissolved": null,
+      "hostname": "bmlfuw.gv.at",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Ministry of Agriculture, Forestry, Environment, Regions and Water Management",
+      "website": "https://www.bml.gv.at",
+      "dissolved": null,
+      "hostname": "bml.gv.at",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Ministry of Digital and Economic Affairs",
+      "website": "https://www.bmdw.gv.at/",
+      "dissolved": "2022-07-18T00:00:00Z",
+      "hostname": "bmdw.gv.at",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Ministry for Science and Research",
+      "website": "http://www.bmwf.gv.at/",
+      "dissolved": "2014-03-01T00:00:00Z",
+      "hostname": "bmwf.gv.at",
+      "already_seeded": false
+    },
+    {
+      "label": "Datenschutzbehörde",
+      "website": "https://dsb.gv.at",
+      "dissolved": null,
+      "hostname": "dsb.gv.at",
+      "already_seeded": false
+    },
+    {
+      "label": "Datenschutzbehörde",
+      "website": "https://www.dsb.gv.at/",
+      "dissolved": null,
+      "hostname": "dsb.gv.at",
+      "already_seeded": false
+    },
+    {
+      "label": "Kommunikationsbehörde Austria",
+      "website": "http://www.kommaustria.at/",
+      "dissolved": null,
+      "hostname": "kommaustria.at",
+      "already_seeded": false
+    },
+    {
+      "label": "Kommunikationsbehörde Austria",
+      "website": "https://senderkataster.rtr.at/",
+      "dissolved": null,
+      "hostname": "senderkataster.rtr.at",
+      "already_seeded": false
+    },
+    {
+      "label": "Magistrate of the city of Vienna",
+      "website": "https://www.wien.gv.at",
+      "dissolved": null,
+      "hostname": "wien.gv.at",
+      "already_seeded": true
+    },
+    {
+      "label": "Court of Audit",
+      "website": "http://www.rechnungshof.gv.at/",
+      "dissolved": null,
+      "hostname": "rechnungshof.gv.at",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Administrative Court",
+      "website": "https://www.bvwg.gv.at/",
+      "dissolved": null,
+      "hostname": "bvwg.gv.at",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Ministry of Families and Youth",
+      "website": "https://www.bmfj.gv.at/",
+      "dissolved": null,
+      "hostname": "bmfj.gv.at",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Ministry of Families and Youth",
+      "website": "http://www.bmfj.gv.at",
+      "dissolved": null,
+      "hostname": "bmfj.gv.at",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Ministry of Families and Youth",
+      "website": "http://en.bmfj.gv.at/",
+      "dissolved": null,
+      "hostname": "en.bmfj.gv.at",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Ministry for Economic Affairs, Family and Youth",
+      "website": "http://www.bmwfj.gv.at/",
+      "dissolved": null,
+      "hostname": "bmwfj.gv.at",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Ministry for Education and Women",
+      "website": "https://www.bmbf.gv.at/enfr/index.html",
+      "dissolved": "2016-01-01T00:00:00Z",
+      "hostname": "bmbf.gv.at",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Ministry for Arts, Culture, the Civil Service and Sport",
+      "website": "https://www.bmkoes.gv.at/",
+      "dissolved": null,
+      "hostname": "bmkoes.gv.at",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Ministry of Sustainability and Tourism",
+      "website": "https://www.bmnt.gv.at/",
+      "dissolved": null,
+      "hostname": "bmnt.gv.at",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Ministry of Economy, Energy and Tourism",
+      "website": "https://www.bmaw.gv.at/",
+      "dissolved": null,
+      "hostname": "bmaw.gv.at",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry for Housing, Arts, Culture, Media and Sport",
+      "website": "https://www.bmwkms.gv.at/",
+      "dissolved": null,
+      "hostname": "bmwkms.gv.at",
+      "already_seeded": false
+    }
+  ],
+  "regional": {},
+  "note": "Candidate list only -- not merged into any TOON seed. Verify liveness (DNS/HTTP) and currency before adding any domain; 'dissolved' being empty does not guarantee an entity is still active, and 'already_seeded' is a hostname-suffix match, not a guarantee of exact equivalence."
+}

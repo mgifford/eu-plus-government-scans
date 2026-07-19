@@ -1,0 +1,141 @@
+{
+  "country": "Estonia",
+  "wikidata_qid": "Q191",
+  "national": [
+    {
+      "label": "Supreme Court of Estonia",
+      "website": "https://www.riigikohus.ee/",
+      "dissolved": null,
+      "hostname": "riigikohus.ee",
+      "already_seeded": true
+    },
+    {
+      "label": "Statistics Estonia",
+      "website": "https://www.stat.ee/",
+      "dissolved": null,
+      "hostname": "stat.ee",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of the Interior",
+      "website": "https://www.siseministeerium.ee/",
+      "dissolved": null,
+      "hostname": "siseministeerium.ee",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Defence",
+      "website": "https://kaitseministeerium.ee/",
+      "dissolved": null,
+      "hostname": "kaitseministeerium.ee",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Economic Affairs and Communications",
+      "website": "https://www.mkm.ee/",
+      "dissolved": null,
+      "hostname": "mkm.ee",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Foreign Affairs",
+      "website": "http://www.vm.ee",
+      "dissolved": null,
+      "hostname": "vm.ee",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Justice and Digital Affairs",
+      "website": "https://www.justdigi.ee",
+      "dissolved": null,
+      "hostname": "justdigi.ee",
+      "already_seeded": false
+    },
+    {
+      "label": "Financial Supervision Authority",
+      "website": "http://www.fi.ee/index.php?id=769",
+      "dissolved": null,
+      "hostname": "fi.ee",
+      "already_seeded": false
+    },
+    {
+      "label": "Financial Supervision Authority",
+      "website": "https://www.fi.ee/en",
+      "dissolved": null,
+      "hostname": "fi.ee",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Education and Research",
+      "website": "https://www.hm.ee/",
+      "dissolved": null,
+      "hostname": "hm.ee",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Culture",
+      "website": "http://www.kul.ee",
+      "dissolved": null,
+      "hostname": "kul.ee",
+      "already_seeded": true
+    },
+    {
+      "label": "Estonian Patent Office",
+      "website": "http://www.epa.ee/",
+      "dissolved": null,
+      "hostname": "epa.ee",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Regional Affairs and Agriculture",
+      "website": "http://www.agri.ee/",
+      "dissolved": null,
+      "hostname": "agri.ee",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Finance",
+      "website": "http://www.fin.ee",
+      "dissolved": null,
+      "hostname": "fin.ee",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Finance",
+      "website": "https://www.fin.ee/en",
+      "dissolved": null,
+      "hostname": "fin.ee",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Finance",
+      "website": "https://www.fin.ee/ru",
+      "dissolved": null,
+      "hostname": "fin.ee",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Social Affairs",
+      "website": "http://www.sm.ee",
+      "dissolved": null,
+      "hostname": "sm.ee",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Climate",
+      "website": "https://envir.ee/",
+      "dissolved": null,
+      "hostname": "envir.ee",
+      "already_seeded": false
+    },
+    {
+      "label": "Estonian Data Protection Inspectorate",
+      "website": "http://www.aki.ee/",
+      "dissolved": null,
+      "hostname": "aki.ee",
+      "already_seeded": false
+    }
+  ],
+  "regional": {},
+  "note": "Candidate list only -- not merged into any TOON seed. Verify liveness (DNS/HTTP) and currency before adding any domain; 'dissolved' being empty does not guarantee an entity is still active, and 'already_seeded' is a hostname-suffix match, not a guarantee of exact equivalence."
+}

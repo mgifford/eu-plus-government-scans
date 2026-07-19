@@ -1,0 +1,218 @@
+{
+  "country": "Denmark",
+  "wikidata_qid": "Q35",
+  "national": [
+    {
+      "label": "Statistics Denmark",
+      "website": "http://www.dst.dk/",
+      "dissolved": null,
+      "hostname": "dst.dk",
+      "already_seeded": true
+    },
+    {
+      "label": "Danish Data Protection Agency",
+      "website": "https://www.datatilsynet.dk/english",
+      "dissolved": null,
+      "hostname": "datatilsynet.dk",
+      "already_seeded": false
+    },
+    {
+      "label": "Danish Data Protection Agency",
+      "website": "https://www.datatilsynet.dk",
+      "dissolved": null,
+      "hostname": "datatilsynet.dk",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Culture",
+      "website": "https://kum.dk/",
+      "dissolved": null,
+      "hostname": "kum.dk",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Justice",
+      "website": "https://www.justitsministeriet.dk/",
+      "dissolved": null,
+      "hostname": "justitsministeriet.dk",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of the State of Denmark",
+      "website": "http://stm.dk/",
+      "dissolved": null,
+      "hostname": "stm.dk",
+      "already_seeded": true
+    },
+    {
+      "label": "Tax Ministry of Denmark",
+      "website": "https://www.skm.dk/",
+      "dissolved": null,
+      "hostname": "skm.dk",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Defence of Denmark",
+      "website": "https://www.fmn.dk/",
+      "dissolved": null,
+      "hostname": "fmn.dk",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Energy, Utilities, and Climate",
+      "website": "https://kefm.dk/",
+      "dissolved": null,
+      "hostname": "kefm.dk",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Finance of Denmark",
+      "website": "https://fm.dk/",
+      "dissolved": null,
+      "hostname": "fm.dk",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Economic Affairs and Interior",
+      "website": "http://www.oim.dk",
+      "dissolved": "2019-06-27T00:00:00Z",
+      "hostname": "oim.dk",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Interior and Health",
+      "website": "https://www.ism.dk/",
+      "dissolved": "2026-06-03T00:00:00Z",
+      "hostname": "ism.dk",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Food, Agriculture and Fisheries of Denmark",
+      "website": "https://fvm.dk/",
+      "dissolved": "2015-01-01T00:00:00Z",
+      "hostname": "fvm.dk",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Business and Growth",
+      "website": "https://em.dk/",
+      "dissolved": "2016-11-28T00:00:00Z",
+      "hostname": "em.dk",
+      "already_seeded": true
+    },
+    {
+      "label": "Rigsrevisionen",
+      "website": "https://uk.rigsrevisionen.dk",
+      "dissolved": null,
+      "hostname": "uk.rigsrevisionen.dk",
+      "already_seeded": false
+    },
+    {
+      "label": "Rigsrevisionen",
+      "website": "https://rigsrevisionen.dk",
+      "dissolved": null,
+      "hostname": "rigsrevisionen.dk",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Town, Housing and Rural Affairs of Denmark",
+      "website": "http://www.mbbl.dk/",
+      "dissolved": "2015-06-28T00:00:00Z",
+      "hostname": "mbbl.dk",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Labour",
+      "website": "https://bm.dk/",
+      "dissolved": "2026-06-03T00:00:00Z",
+      "hostname": "bm.dk",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Industry, Business and Financial Affairs",
+      "website": "https://em.dk/english",
+      "dissolved": null,
+      "hostname": "em.dk",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Industry, Business and Financial Affairs",
+      "website": "https://em.dk/",
+      "dissolved": null,
+      "hostname": "em.dk",
+      "already_seeded": true
+    },
+    {
+      "label": "Danish Consumer Ombudsman institution",
+      "website": "https://www.forbrugerombudsmanden.dk",
+      "dissolved": null,
+      "hostname": "forbrugerombudsmanden.dk",
+      "already_seeded": false
+    },
+    {
+      "label": "Danish Consumer Ombudsman institution",
+      "website": "https://www.consumerombudsman.dk",
+      "dissolved": null,
+      "hostname": "consumerombudsman.dk",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Health",
+      "website": "https://sum.dk/",
+      "dissolved": "2001-01-01T00:00:00Z",
+      "hostname": "sum.dk",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Environment and Food of Denmark",
+      "website": "http://mfvm.dk/",
+      "dissolved": "2020-11-19T00:00:00Z",
+      "hostname": "mfvm.dk",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Transport of Denmark",
+      "website": "https://www.trm.dk/",
+      "dissolved": null,
+      "hostname": "trm.dk",
+      "already_seeded": true
+    },
+    {
+      "label": "Danish Appeals Boards Authority",
+      "website": "https://naevneneshus.dk",
+      "dissolved": null,
+      "hostname": "naevneneshus.dk",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Children, Senior Citizens & Housing",
+      "website": "https://english.aeldremin.dk",
+      "dissolved": null,
+      "hostname": "english.aeldremin.dk",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Children, Senior Citizens & Housing",
+      "website": "https://aeldremin.dk",
+      "dissolved": null,
+      "hostname": "aeldremin.dk",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Societal Safety and Emergency Management",
+      "website": "https://mssb.dk/",
+      "dissolved": null,
+      "hostname": "mssb.dk",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of the Implementation of the Green Three-Partite Agreement",
+      "website": "https://mgtp.dk",
+      "dissolved": null,
+      "hostname": "mgtp.dk",
+      "already_seeded": false
+    }
+  ],
+  "regional": {},
+  "note": "Candidate list only -- not merged into any TOON seed. Verify liveness (DNS/HTTP) and currency before adding any domain; 'dissolved' being empty does not guarantee an entity is still active, and 'already_seeded' is a hostname-suffix match, not a guarantee of exact equivalence."
+}

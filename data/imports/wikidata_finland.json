@@ -1,0 +1,435 @@
+{
+  "country": "Finland",
+  "wikidata_qid": "Q33",
+  "national": [
+    {
+      "label": "Ministry of the Environment",
+      "website": "http://www.ym.fi/",
+      "dissolved": null,
+      "hostname": "ym.fi",
+      "already_seeded": true
+    },
+    {
+      "label": "Office of the Prosecutor General of Finland",
+      "website": "http://www.vksv.oikeus.fi/",
+      "dissolved": null,
+      "hostname": "vksv.oikeus.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Economic Affairs and Employment",
+      "website": "https://www.tem.fi/",
+      "dissolved": null,
+      "hostname": "tem.fi",
+      "already_seeded": true
+    },
+    {
+      "label": "Legal Register Centre",
+      "website": "http://www.oikeusrekisterikeskus.fi/",
+      "dissolved": null,
+      "hostname": "oikeusrekisterikeskus.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Government Situation Centre",
+      "website": "https://vnk.fi/turvallisuus-ja-varautuminen/tilannekeskustoiminta",
+      "dissolved": null,
+      "hostname": "vnk.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Government Situation Centre",
+      "website": "https://vnk.fi/en/situation-centre",
+      "dissolved": null,
+      "hostname": "vnk.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Office of the Data Protection Ombudsman",
+      "website": "https://tietosuoja.fi/smn/anaraskiela",
+      "dissolved": null,
+      "hostname": "tietosuoja.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Office of the Data Protection Ombudsman",
+      "website": "https://tietosuoja.fi/se/davvisamegiella",
+      "dissolved": null,
+      "hostname": "tietosuoja.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Office of the Data Protection Ombudsman",
+      "website": "https://tietosuoja.fi/",
+      "dissolved": null,
+      "hostname": "tietosuoja.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Office of the Data Protection Ombudsman",
+      "website": "https://tietosuoja.fi/sms/nuorttsaam",
+      "dissolved": null,
+      "hostname": "tietosuoja.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Finnish Arts and Culture Agency",
+      "website": "https://kuvi.fi/en/",
+      "dissolved": null,
+      "hostname": "kuvi.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Finnish Arts and Culture Agency",
+      "website": "https://kuvi.fi/sv/",
+      "dissolved": null,
+      "hostname": "kuvi.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Finnish Arts and Culture Agency",
+      "website": "https://kuvi.fi/",
+      "dissolved": null,
+      "hostname": "kuvi.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Finnish Supervisory Agency",
+      "website": "https://lvv.fi/",
+      "dissolved": null,
+      "hostname": "lvv.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Finnish Supervisory Agency",
+      "website": "https://lvv.fi/en/frontpage",
+      "dissolved": null,
+      "hostname": "lvv.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Finnish Supervisory Agency",
+      "website": "https://lvv.fi/sv/startsida",
+      "dissolved": null,
+      "hostname": "lvv.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Bank of Finland",
+      "website": "https://www.suomenpankki.fi/",
+      "dissolved": null,
+      "hostname": "suomenpankki.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Supreme Court of Finland",
+      "website": "https://korkeinoikeus.fi/",
+      "dissolved": null,
+      "hostname": "korkeinoikeus.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Finnish Security and Intelligence Service",
+      "website": "https://supo.fi/etusivu",
+      "dissolved": null,
+      "hostname": "supo.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Parliament of Finland",
+      "website": "https://www.eduskunta.fi/",
+      "dissolved": null,
+      "hostname": "eduskunta.fi",
+      "already_seeded": true
+    },
+    {
+      "label": "Statistics Finland",
+      "website": "https://www.stat.fi/",
+      "dissolved": null,
+      "hostname": "stat.fi",
+      "already_seeded": true
+    },
+    {
+      "label": "Statistics Finland",
+      "website": "https://tilastokeskus.fi/",
+      "dissolved": null,
+      "hostname": "tilastokeskus.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Supreme Administrative Court of Finland",
+      "website": "https://www.kho.fi",
+      "dissolved": null,
+      "hostname": "kho.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Foreign Affairs of Finland",
+      "website": "https://um.fi/",
+      "dissolved": null,
+      "hostname": "um.fi",
+      "already_seeded": true
+    },
+    {
+      "label": "Radiation and Nuclear Safety Authority",
+      "website": "https://www.stuk.fi/",
+      "dissolved": null,
+      "hostname": "stuk.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "National Bureau of Investigation",
+      "website": "https://www.poliisi.fi/en/national_bureau_of_investigation",
+      "dissolved": null,
+      "hostname": "poliisi.fi",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Education and Culture",
+      "website": "https://okm.fi/",
+      "dissolved": null,
+      "hostname": "okm.fi",
+      "already_seeded": true
+    },
+    {
+      "label": "Safety Investigation Authority",
+      "website": "https://turvallisuustutkinta.fi/sv/",
+      "dissolved": null,
+      "hostname": "turvallisuustutkinta.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Safety Investigation Authority",
+      "website": "https://turvallisuustutkinta.fi/fi/",
+      "dissolved": null,
+      "hostname": "turvallisuustutkinta.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Safety Investigation Authority",
+      "website": "https://turvallisuustutkinta.fi/en/",
+      "dissolved": null,
+      "hostname": "turvallisuustutkinta.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Safety Investigation Authority",
+      "website": "https://turvallisuustutkinta.fi/",
+      "dissolved": null,
+      "hostname": "turvallisuustutkinta.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of the Interior of Finland",
+      "website": "https://intermin.fi/etusivu",
+      "dissolved": null,
+      "hostname": "intermin.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of the Interior of Finland",
+      "website": "https://intermin.fi./en",
+      "dissolved": null,
+      "hostname": "intermin.fi.",
+      "already_seeded": false
+    },
+    {
+      "label": "Finnish Transport Infrastructure Agency",
+      "website": "https://vayla.fi/web/sv",
+      "dissolved": null,
+      "hostname": "vayla.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Finnish Transport Infrastructure Agency",
+      "website": "https://vayla.fi/web/en",
+      "dissolved": null,
+      "hostname": "vayla.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Finnish Transport Infrastructure Agency",
+      "website": "https://vayla.fi/",
+      "dissolved": null,
+      "hostname": "vayla.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Defence of Finland",
+      "website": "https://www.defmin.fi/sv",
+      "dissolved": null,
+      "hostname": "defmin.fi",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Defence of Finland",
+      "website": "https://www.defmin.fi/en",
+      "dissolved": null,
+      "hostname": "defmin.fi",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Defence of Finland",
+      "website": "http://www.defmin.fi/",
+      "dissolved": null,
+      "hostname": "defmin.fi",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Transport and Communications",
+      "website": "https://www.lvm.fi/sv/framsida",
+      "dissolved": null,
+      "hostname": "lvm.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Transport and Communications",
+      "website": "https://www.lvm.fi/en/home",
+      "dissolved": null,
+      "hostname": "lvm.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Transport and Communications",
+      "website": "https://lvm.fi/",
+      "dissolved": null,
+      "hostname": "lvm.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Justice",
+      "website": "https://oikeusministerio.fi/sv/framsida",
+      "dissolved": null,
+      "hostname": "oikeusministerio.fi",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Justice",
+      "website": "https://oikeusministerio.fi/se/ovdasiidu",
+      "dissolved": null,
+      "hostname": "oikeusministerio.fi",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Justice",
+      "website": "https://oikeusministerio.fi/ru/glavnaa-stranica",
+      "dissolved": null,
+      "hostname": "oikeusministerio.fi",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Justice",
+      "website": "https://oikeusministerio.fi/en/frontpage",
+      "dissolved": null,
+      "hostname": "oikeusministerio.fi",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Justice",
+      "website": "http://www.oikeusministerio.fi/",
+      "dissolved": null,
+      "hostname": "oikeusministerio.fi",
+      "already_seeded": true
+    },
+    {
+      "label": "Finnish Defence Intelligence Agency",
+      "website": "http://puolustusvoimat.fi/en/about-us/finnish-defence-intelligence-agency",
+      "dissolved": null,
+      "hostname": "puolustusvoimat.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Finance",
+      "website": "https://vm.fi/sv/framsida",
+      "dissolved": null,
+      "hostname": "vm.fi",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Finance",
+      "website": "https://vm.fi/etusivu",
+      "dissolved": null,
+      "hostname": "vm.fi",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Finance",
+      "website": "https://vm.fi/en/frontpage",
+      "dissolved": null,
+      "hostname": "vm.fi",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Social Affairs and Health",
+      "website": "https://stm.fi/sv/framsida",
+      "dissolved": null,
+      "hostname": "stm.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Social Affairs and Health",
+      "website": "https://stm.fi/se/aigeguovdil",
+      "dissolved": null,
+      "hostname": "stm.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Social Affairs and Health",
+      "website": "https://stm.fi/ru/pervaa-stranica",
+      "dissolved": null,
+      "hostname": "stm.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Social Affairs and Health",
+      "website": "https://stm.fi/etusivu",
+      "dissolved": null,
+      "hostname": "stm.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Social Affairs and Health",
+      "website": "http://stm.fi/",
+      "dissolved": null,
+      "hostname": "stm.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Prime Minister's Office",
+      "website": "https://vnk.fi/sv/forstasidan",
+      "dissolved": null,
+      "hostname": "vnk.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Prime Minister's Office",
+      "website": "https://vnk.fi/en/frontpage",
+      "dissolved": null,
+      "hostname": "vnk.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Prime Minister's Office",
+      "website": "https://vnk.fi/",
+      "dissolved": null,
+      "hostname": "vnk.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Finnish Transport Safety Agency",
+      "website": "https://www.trafi.fi/",
+      "dissolved": "2018-12-31T00:00:00Z",
+      "hostname": "trafi.fi",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Agriculture and Forestry",
+      "website": "https://mmm.fi/",
+      "dissolved": null,
+      "hostname": "mmm.fi",
+      "already_seeded": true
+    }
+  ],
+  "regional": {},
+  "note": "Candidate list only -- not merged into any TOON seed. Verify liveness (DNS/HTTP) and currency before adding any domain; 'dissolved' being empty does not guarantee an entity is still active, and 'already_seeded' is a hostname-suffix match, not a guarantee of exact equivalence."
+}

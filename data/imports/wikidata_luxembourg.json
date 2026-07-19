@@ -1,0 +1,295 @@
+{
+  "country": "Luxembourg",
+  "wikidata_qid": "Q32",
+  "national": [
+    {
+      "label": "Council of State of Luxembourg",
+      "website": "http://www.conseil-etat.public.lu/",
+      "dissolved": null,
+      "hostname": "conseil-etat.public.lu",
+      "already_seeded": false
+    },
+    {
+      "label": "Chamber of Deputies",
+      "website": "https://www.chd.lu/",
+      "dissolved": null,
+      "hostname": "chd.lu",
+      "already_seeded": false
+    },
+    {
+      "label": "National Commission for Data Protection",
+      "website": "https://cnpd.public.lu",
+      "dissolved": null,
+      "hostname": "cnpd.public.lu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Foreign and European Affairs",
+      "website": "https://maee.gouvernement.lu/",
+      "dissolved": "2023-11-17T00:00:00Z",
+      "hostname": "maee.gouvernement.lu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of the Environment, Climate and Biodiversity",
+      "website": "https://mecb.gouvernement.lu/",
+      "dissolved": null,
+      "hostname": "mecb.gouvernement.lu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry for the Interior of Luxembourg",
+      "website": "https://maint.gouvernement.lu/",
+      "dissolved": null,
+      "hostname": "maint.gouvernement.lu",
+      "already_seeded": true
+    },
+    {
+      "label": "STATEC",
+      "website": "https://statistiques.public.lu/en/index.html",
+      "dissolved": null,
+      "hostname": "statistiques.public.lu",
+      "already_seeded": true
+    },
+    {
+      "label": "STATEC",
+      "website": "https://statistiques.public.lu/fr/index.html",
+      "dissolved": null,
+      "hostname": "statistiques.public.lu",
+      "already_seeded": true
+    },
+    {
+      "label": "Superior Court of Justice of the Grand-Duchy of Luxembourg",
+      "website": "https://justice.public.lu/fr/organisation-justice/juridictions-judiciaires/cour-superieure-justice.html",
+      "dissolved": null,
+      "hostname": "justice.public.lu",
+      "already_seeded": true
+    },
+    {
+      "label": "Nature and Forest Agency",
+      "website": "https://anf.gouvernement.lu/en.html",
+      "dissolved": null,
+      "hostname": "anf.gouvernement.lu",
+      "already_seeded": true
+    },
+    {
+      "label": "Nature and Forest Agency",
+      "website": "https://anf.gouvernement.lu/de.html",
+      "dissolved": null,
+      "hostname": "anf.gouvernement.lu",
+      "already_seeded": true
+    },
+    {
+      "label": "Nature and Forest Agency",
+      "website": "https://anf.gouvernement.lu/fr.html",
+      "dissolved": null,
+      "hostname": "anf.gouvernement.lu",
+      "already_seeded": true
+    },
+    {
+      "label": "Nature and Forest Agency",
+      "website": "https://anf.gouvernement.lu/lb.html",
+      "dissolved": null,
+      "hostname": "anf.gouvernement.lu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Economy of Luxembourg",
+      "website": "https://meco.gouvernement.lu/",
+      "dissolved": null,
+      "hostname": "meco.gouvernement.lu",
+      "already_seeded": true
+    },
+    {
+      "label": "Government of Luxembourg",
+      "website": "https://gouvernement.lu/",
+      "dissolved": null,
+      "hostname": "gouvernement.lu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of State",
+      "website": "https://me.gouvernement.lu/",
+      "dissolved": null,
+      "hostname": "me.gouvernement.lu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Education, Children and Youth",
+      "website": "http://www.men.public.lu/fr/index.html",
+      "dissolved": null,
+      "hostname": "men.public.lu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Education, Children and Youth",
+      "website": "https://menej.gouvernement.lu/",
+      "dissolved": null,
+      "hostname": "menej.gouvernement.lu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Culture of Luxembourg",
+      "website": "https://mcult.gouvernement.lu/",
+      "dissolved": null,
+      "hostname": "mcult.gouvernement.lu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Research and Higher Education",
+      "website": "https://mesr.gouvernement.lu/",
+      "dissolved": null,
+      "hostname": "mesr.gouvernement.lu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Agriculture, Food and Viticulture",
+      "website": "https://ma.gouvernement.lu/",
+      "dissolved": null,
+      "hostname": "ma.gouvernement.lu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Health and Social security",
+      "website": "https://msss.gouvernement.lu/",
+      "dissolved": null,
+      "hostname": "msss.gouvernement.lu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Labour",
+      "website": "https://mt.gouvernement.lu/",
+      "dissolved": null,
+      "hostname": "mt.gouvernement.lu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Family Affairs, Integration and the Greater Region",
+      "website": "https://mfamigr.gouvernement.lu/",
+      "dissolved": "2023-11-17T00:00:00Z",
+      "hostname": "mfamigr.gouvernement.lu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Equality between Women and Men",
+      "website": "https://mega.gouvernement.lu/",
+      "dissolved": "2023-11-17T00:00:00Z",
+      "hostname": "mega.gouvernement.lu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Finance of Luxembourg",
+      "website": "https://mfin.gouvernement.lu/",
+      "dissolved": null,
+      "hostname": "mfin.gouvernement.lu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Justice",
+      "website": "https://mjust.gouvernement.lu/",
+      "dissolved": null,
+      "hostname": "mjust.gouvernement.lu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of the Civil Service",
+      "website": "https://mfp.gouvernement.lu/",
+      "dissolved": null,
+      "hostname": "mfp.gouvernement.lu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Housing",
+      "website": "https://mlog.gouvernement.lu/",
+      "dissolved": "2023-11-17T00:00:00Z",
+      "hostname": "mlog.gouvernement.lu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Internal Security",
+      "website": "https://msi.gouvernement.lu/",
+      "dissolved": "2023-11-17T00:00:00Z",
+      "hostname": "msi.gouvernement.lu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Social Security",
+      "website": "https://mss.gouvernement.lu/",
+      "dissolved": "2023-11-17T00:00:00Z",
+      "hostname": "mss.gouvernement.lu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Sport",
+      "website": "https://msp.gouvernement.lu/",
+      "dissolved": null,
+      "hostname": "msp.gouvernement.lu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Mobility and Public Works",
+      "website": "https://mmtp.gouvernement.lu/",
+      "dissolved": null,
+      "hostname": "mmtp.gouvernement.lu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Consumer Protection",
+      "website": "https://mpc.gouvernement.lu/",
+      "dissolved": "2023-11-17T00:00:00Z",
+      "hostname": "mpc.gouvernement.lu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Digitalisation",
+      "website": "https://MinDigital.gouvernement.lu/",
+      "dissolved": null,
+      "hostname": "mindigital.gouvernement.lu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry for Energy and Spatial Planning",
+      "website": "https://mea.gouvernement.lu/fr.html",
+      "dissolved": "2023-11-17T00:00:00Z",
+      "hostname": "mea.gouvernement.lu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry for Energy and Spatial Planning",
+      "website": "https://mea.gouvernement.lu/de.html",
+      "dissolved": "2023-11-17T00:00:00Z",
+      "hostname": "mea.gouvernement.lu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry for Energy and Spatial Planning",
+      "website": "https://mea.gouvernement.lu/en.html",
+      "dissolved": "2023-11-17T00:00:00Z",
+      "hostname": "mea.gouvernement.lu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry for Energy and Spatial Planning",
+      "website": "https://mea.gouvernement.lu/lb.html",
+      "dissolved": "2023-11-17T00:00:00Z",
+      "hostname": "mea.gouvernement.lu",
+      "already_seeded": true
+    },
+    {
+      "label": "Frieden-Bettel Government",
+      "website": "https://gouvernement.lu/",
+      "dissolved": null,
+      "hostname": "gouvernement.lu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry for Gender Equality and Diversity",
+      "website": "https://mega.gouvernement.lu/",
+      "dissolved": null,
+      "hostname": "mega.gouvernement.lu",
+      "already_seeded": true
+    }
+  ],
+  "regional": {},
+  "note": "Candidate list only -- not merged into any TOON seed. Verify liveness (DNS/HTTP) and currency before adding any domain; 'dissolved' being empty does not guarantee an entity is still active, and 'already_seeded' is a hostname-suffix match, not a guarantee of exact equivalence."
+}

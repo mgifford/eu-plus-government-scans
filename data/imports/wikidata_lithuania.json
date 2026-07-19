@@ -1,0 +1,218 @@
+{
+  "country": "Lithuania",
+  "wikidata_qid": "Q37",
+  "national": [
+    {
+      "label": "Government of Lithuania",
+      "website": "https://lrv.lt/en/",
+      "dissolved": null,
+      "hostname": "lrv.lt",
+      "already_seeded": false
+    },
+    {
+      "label": "Government of Lithuania",
+      "website": "https://lrv.lt/lt/",
+      "dissolved": null,
+      "hostname": "lrv.lt",
+      "already_seeded": false
+    },
+    {
+      "label": "Supreme Court of Lithuania",
+      "website": "https://www.lat.lt/",
+      "dissolved": null,
+      "hostname": "lat.lt",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of National Defence of Lithuania",
+      "website": "http://www.kam.lt",
+      "dissolved": null,
+      "hostname": "kam.lt",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Transport and Communications",
+      "website": "https://sumin.lrv.lt/",
+      "dissolved": null,
+      "hostname": "sumin.lrv.lt",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Energy of Lithuania",
+      "website": "https://enmin.lrv.lt/",
+      "dissolved": null,
+      "hostname": "enmin.lrv.lt",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Justice of Lithuania",
+      "website": "https://tm.lrv.lt/",
+      "dissolved": null,
+      "hostname": "tm.lrv.lt",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Social Security and Labour of Lithuania",
+      "website": "https://socmin.lrv.lt/",
+      "dissolved": null,
+      "hostname": "socmin.lrv.lt",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Culture of Lithuania",
+      "website": "https://lrkm.lrv.lt/lt/",
+      "dissolved": null,
+      "hostname": "lrkm.lrv.lt",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Agriculture of Lithuania",
+      "website": "https://zum.lrv.lt/",
+      "dissolved": null,
+      "hostname": "zum.lrv.lt",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of the Interior of Lithuania",
+      "website": "https://vrm.lrv.lt/",
+      "dissolved": null,
+      "hostname": "vrm.lrv.lt",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Environment",
+      "website": "https://am.lrv.lt/",
+      "dissolved": null,
+      "hostname": "am.lrv.lt",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of the Economy and Innovation of the Republic of Lithuania",
+      "website": "http://eimin.lrv.lt/",
+      "dissolved": null,
+      "hostname": "eimin.lrv.lt",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Education, Science and Sport",
+      "website": "http://www.smm.lt",
+      "dissolved": null,
+      "hostname": "smm.lt",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Health of Lithuania",
+      "website": "http://www.sam.lt/",
+      "dissolved": null,
+      "hostname": "sam.lt",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Finance (Lithuania)",
+      "website": "http://www.finmin.lt/",
+      "dissolved": null,
+      "hostname": "finmin.lt",
+      "already_seeded": true
+    },
+    {
+      "label": "Financial Crime Investigation Service",
+      "website": "https://fntt.lrv.lt",
+      "dissolved": null,
+      "hostname": "fntt.lrv.lt",
+      "already_seeded": false
+    },
+    {
+      "label": "Constitutional Court of Lithuania",
+      "website": "https://www.lrkt.lt",
+      "dissolved": null,
+      "hostname": "lrkt.lt",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Foreign Affairs of Lithuania",
+      "website": "https://www.urm.lt/",
+      "dissolved": null,
+      "hostname": "urm.lt",
+      "already_seeded": false
+    },
+    {
+      "label": "Martynas Mažvydas National Library of Lithuania",
+      "website": "https://www.lnb.lt/",
+      "dissolved": null,
+      "hostname": "lnb.lt",
+      "already_seeded": false
+    },
+    {
+      "label": "Martynas Mažvydas National Library of Lithuania",
+      "website": "https://www.lnb.lt/en/",
+      "dissolved": null,
+      "hostname": "lnb.lt",
+      "already_seeded": false
+    },
+    {
+      "label": "Police Department of the Ministry of the Interior",
+      "website": "https://policija.lrv.lt",
+      "dissolved": null,
+      "hostname": "policija.lrv.lt",
+      "already_seeded": false
+    },
+    {
+      "label": "Supreme Administrative Court of Lithuania",
+      "website": "https://www.lvat.lt",
+      "dissolved": null,
+      "hostname": "lvat.lt",
+      "already_seeded": false
+    },
+    {
+      "label": "Invest Lithuania",
+      "website": "http://www.investlithuania.com/en/",
+      "dissolved": null,
+      "hostname": "investlithuania.com",
+      "already_seeded": false
+    },
+    {
+      "label": "Lithuanian Space Association",
+      "website": "http://www.space-lt.eu",
+      "dissolved": null,
+      "hostname": "space-lt.eu",
+      "already_seeded": false
+    },
+    {
+      "label": "State Data Agency of Lithuania",
+      "website": "http://www.stat.gov.lt",
+      "dissolved": null,
+      "hostname": "stat.gov.lt",
+      "already_seeded": true
+    },
+    {
+      "label": "Central Electoral Committee of Lithuania",
+      "website": "https://www.vrk.lt/",
+      "dissolved": null,
+      "hostname": "vrk.lt",
+      "already_seeded": false
+    },
+    {
+      "label": "National Cyber Security Centre of Lithuania",
+      "website": "https://www.nksc.lt/",
+      "dissolved": null,
+      "hostname": "nksc.lt",
+      "already_seeded": false
+    },
+    {
+      "label": "State Data Protection Inspectorate",
+      "website": "https://ada.lt",
+      "dissolved": null,
+      "hostname": "ada.lt",
+      "already_seeded": false
+    },
+    {
+      "label": "The National Energy Regulatory Council",
+      "website": "https://www.vert.lt",
+      "dissolved": null,
+      "hostname": "vert.lt",
+      "already_seeded": false
+    }
+  ],
+  "regional": {},
+  "note": "Candidate list only -- not merged into any TOON seed. Verify liveness (DNS/HTTP) and currency before adding any domain; 'dissolved' being empty does not guarantee an entity is still active, and 'already_seeded' is a hostname-suffix match, not a guarantee of exact equivalence."
+}

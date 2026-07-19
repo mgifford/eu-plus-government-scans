@@ -1,0 +1,904 @@
+{
+  "country": "Germany",
+  "wikidata_qid": "Q183",
+  "national": [
+    {
+      "label": "Bundesrat",
+      "website": "https://www.bundesrat.de/",
+      "dissolved": null,
+      "hostname": "bundesrat.de",
+      "already_seeded": true
+    },
+    {
+      "label": "German Bundestag",
+      "website": "https://www.bundestag.de/",
+      "dissolved": null,
+      "hostname": "bundestag.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Ministry for Education, Family Affairs, Senior Citizens, Women and Youth",
+      "website": "https://www.bmbfsfj.bund.de/bmbfsfj/meta/en",
+      "dissolved": null,
+      "hostname": "bmbfsfj.bund.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Ministry for Education, Family Affairs, Senior Citizens, Women and Youth",
+      "website": "https://www.bmbfsfj.bund.de/",
+      "dissolved": null,
+      "hostname": "bmbfsfj.bund.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Labour Court of Germany",
+      "website": "https://www.bundesarbeitsgericht.de/",
+      "dissolved": null,
+      "hostname": "bundesarbeitsgericht.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Zentralstelle für das Auslandsschulwesen",
+      "website": "https://www.auslandsschulwesen.de/",
+      "dissolved": null,
+      "hostname": "auslandsschulwesen.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Office for Information Security",
+      "website": "https://www.bsi.bund.de/EN",
+      "dissolved": null,
+      "hostname": "bsi.bund.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Office for Information Security",
+      "website": "https://www.bsi.bund.de/",
+      "dissolved": null,
+      "hostname": "bsi.bund.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Railway Authority",
+      "website": "https://www.eba.bund.de/",
+      "dissolved": null,
+      "hostname": "eba.bund.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Network Agency",
+      "website": "https://www.bundesnetzagentur.de/",
+      "dissolved": null,
+      "hostname": "bundesnetzagentur.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Intelligence Service",
+      "website": "https://www.bnd.bund.de/",
+      "dissolved": null,
+      "hostname": "bnd.bund.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Office for the Protection of the Constitution",
+      "website": "https://www.verfassungsschutz.de/",
+      "dissolved": null,
+      "hostname": "verfassungsschutz.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Government of the Federal Republic of Germany",
+      "website": "https://www.bundesregierung.de/breg-de",
+      "dissolved": null,
+      "hostname": "bundesregierung.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Financial Supervisory Authority",
+      "website": "https://www.bafin.de/EN/",
+      "dissolved": null,
+      "hostname": "bafin.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Financial Supervisory Authority",
+      "website": "https://www.bafin.de/DE/",
+      "dissolved": null,
+      "hostname": "bafin.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Financial Supervisory Authority",
+      "website": "https://www.bafin.de/",
+      "dissolved": null,
+      "hostname": "bafin.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Patent Court of Germany",
+      "website": "https://www.bundespatentgericht.de/DE/Home/home_node.html",
+      "dissolved": null,
+      "hostname": "bundespatentgericht.de",
+      "already_seeded": false
+    },
+    {
+      "label": "German Federal Bureau of Aircraft Accidents Investigation",
+      "website": "https://www.bfu-web.de/",
+      "dissolved": null,
+      "hostname": "bfu-web.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Chancellery of Germany",
+      "website": "http://www.bundeskanzleramt.de/",
+      "dissolved": null,
+      "hostname": "bundeskanzleramt.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Bundespräsidialamt",
+      "website": "http://www.bundespraesident.de/",
+      "dissolved": null,
+      "hostname": "bundespraesident.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Military Counterintelligence Service",
+      "website": "https://www.bundeswehr.de/de/organisation/mad-bundesamt-fuer-den-militaerischen-abschirmdienst",
+      "dissolved": null,
+      "hostname": "bundeswehr.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Ministry for Economic Affairs and Energy",
+      "website": "https://www.bundeswirtschaftsministerium.de/",
+      "dissolved": null,
+      "hostname": "bundeswirtschaftsministerium.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Ministry of Health of Germany",
+      "website": "https://www.bundesgesundheitsministerium.de/",
+      "dissolved": null,
+      "hostname": "bundesgesundheitsministerium.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Ministry of Labour and Social Affairs of Germany",
+      "website": "https://www.bmas.de/",
+      "dissolved": null,
+      "hostname": "bmas.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Ministry for Transport",
+      "website": "https://www.bmv.de/",
+      "dissolved": null,
+      "hostname": "bmv.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Ministry of Research, Technology and Space",
+      "website": "https://www.bmftr.bund.de/EN",
+      "dissolved": null,
+      "hostname": "bmftr.bund.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Ministry of Research, Technology and Space",
+      "website": "https://www.bmftr.bund.de/",
+      "dissolved": null,
+      "hostname": "bmftr.bund.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Ministry for the Environment, Climate Protection, Nature Conservation and Nuclear Safety",
+      "website": "https://www.bundesumweltministerium.de/",
+      "dissolved": null,
+      "hostname": "bundesumweltministerium.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Ministry of Defence of Germany",
+      "website": "https://www.bmvg.de/en",
+      "dissolved": null,
+      "hostname": "bmvg.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Ministry of Defence of Germany",
+      "website": "https://www.bmvg.de/",
+      "dissolved": null,
+      "hostname": "bmvg.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Ministry of Justice and Consumer Protection",
+      "website": "https://www.bmjv.de/EN",
+      "dissolved": null,
+      "hostname": "bmjv.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Ministry of Justice and Consumer Protection",
+      "website": "https://www.bmjv.de/",
+      "dissolved": null,
+      "hostname": "bmjv.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Ministry of Finance",
+      "website": "https://www.bundesfinanzministerium.de",
+      "dissolved": null,
+      "hostname": "bundesfinanzministerium.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Ministry of the Interior",
+      "website": "https://www.bmi.bund.de/",
+      "dissolved": null,
+      "hostname": "bmi.bund.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Agency for Civic Education",
+      "website": "https://www.bpb.de/",
+      "dissolved": null,
+      "hostname": "bpb.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Stasi Records Agency",
+      "website": "https://www.bstu.de/",
+      "dissolved": "2021-06-17T00:00:00Z",
+      "hostname": "bstu.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Social Court",
+      "website": "https://www.bsg.bund.de",
+      "dissolved": null,
+      "hostname": "bsg.bund.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Social Court",
+      "website": "https://www.bsg.bund.de/EN",
+      "dissolved": null,
+      "hostname": "bsg.bund.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Ministry for Economic Cooperation and Development",
+      "website": "https://www.bmz.de",
+      "dissolved": null,
+      "hostname": "bmz.de",
+      "already_seeded": false
+    },
+    {
+      "label": "German Federal Archives",
+      "website": "https://www.bundesarchiv.de/EN/Navigation/Home/home.html",
+      "dissolved": null,
+      "hostname": "bundesarchiv.de",
+      "already_seeded": false
+    },
+    {
+      "label": "German Federal Archives",
+      "website": "https://www.bundesarchiv.de/DE/Navigation/Home/home.html",
+      "dissolved": null,
+      "hostname": "bundesarchiv.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Court of Justice of Germany",
+      "website": "https://www.bundesgerichtshof.de/",
+      "dissolved": null,
+      "hostname": "bundesgerichtshof.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Court of Justice of Germany",
+      "website": "https://www.bundesgerichtshof.de/DE/Home/home_node.html",
+      "dissolved": null,
+      "hostname": "bundesgerichtshof.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Court of Justice of Germany",
+      "website": "https://www.bundesgerichtshof.de/FR/Home/home_node.html",
+      "dissolved": null,
+      "hostname": "bundesgerichtshof.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Office for Logistics and Mobility",
+      "website": "https://www.balm.bund.de/",
+      "dissolved": null,
+      "hostname": "balm.bund.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Constitutional Court",
+      "website": "https://www.bundesverfassungsgericht.de/",
+      "dissolved": null,
+      "hostname": "bundesverfassungsgericht.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Police of Germany",
+      "website": "https://www.bundespolizei.de/",
+      "dissolved": null,
+      "hostname": "bundespolizei.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Criminal Police Office",
+      "website": "https://www.bka.de/",
+      "dissolved": null,
+      "hostname": "bka.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Bundesrechnungshof",
+      "website": "https://www.bundesrechnungshof.de/",
+      "dissolved": null,
+      "hostname": "bundesrechnungshof.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Foreign Office",
+      "website": "https://www.auswaertiges-amt.de/",
+      "dissolved": null,
+      "hostname": "auswaertiges-amt.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Bundesagentur für Arbeit",
+      "website": "https://www.arbeitsagentur.de/en",
+      "dissolved": null,
+      "hostname": "arbeitsagentur.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Bundesagentur für Arbeit",
+      "website": "https://www.arbeitsagentur.de/ar/homepage",
+      "dissolved": null,
+      "hostname": "arbeitsagentur.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Bundesagentur für Arbeit",
+      "website": "https://www.arbeitsagentur.de/",
+      "dissolved": null,
+      "hostname": "arbeitsagentur.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Joint Committee",
+      "website": "https://www.g-ba.de/english/",
+      "dissolved": null,
+      "hostname": "g-ba.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Joint Committee",
+      "website": "https://www.g-ba.de/",
+      "dissolved": null,
+      "hostname": "g-ba.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Luftfahrt-Bundesamt",
+      "website": "http://www.lba.de/",
+      "dissolved": null,
+      "hostname": "lba.de",
+      "already_seeded": true
+    },
+    {
+      "label": "German Parliament Police",
+      "website": "https://www.bundestag.de/polizei",
+      "dissolved": null,
+      "hostname": "bundestag.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Third Merkel cabinet",
+      "website": "http://www.bundesregierung.de/Webs/Breg/DE/Homepage/home.html",
+      "dissolved": "2018-03-14T00:00:00Z",
+      "hostname": "bundesregierung.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Office for the Safety of Nuclear Waste Management",
+      "website": "https://www.base.bund.de/",
+      "dissolved": null,
+      "hostname": "base.bund.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Agency for Administrative Services",
+      "website": "http://www.bav.bund.de/",
+      "dissolved": null,
+      "hostname": "bav.bund.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Office of Consumer Protection and Food Safety",
+      "website": "https://www.bvl.bund.de/",
+      "dissolved": null,
+      "hostname": "bvl.bund.de",
+      "already_seeded": true
+    },
+    {
+      "label": "KoSIT",
+      "website": "https://www.kosit.de",
+      "dissolved": null,
+      "hostname": "kosit.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Bundesbau Baden-Württemberg",
+      "website": "https://bundesbau-bw.de/",
+      "dissolved": null,
+      "hostname": "bundesbau-bw.de",
+      "already_seeded": false
+    },
+    {
+      "label": "German Federal Art Administration (Kunstverwaltung des Bundes)",
+      "website": "https://kunstverwaltung.bund.de/",
+      "dissolved": null,
+      "hostname": "kunstverwaltung.bund.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Ministry for Housing, Urban Development and Building",
+      "website": "https://www.bmwsb.bund.de/",
+      "dissolved": null,
+      "hostname": "bmwsb.bund.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Medizinischer Dienst Bund",
+      "website": "https://md-bund.de/",
+      "dissolved": null,
+      "hostname": "md-bund.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Medizinischer Dienst",
+      "website": "https://www.medizinischerdienst.de/",
+      "dissolved": null,
+      "hostname": "medizinischerdienst.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Bundesinstitut für Bau-, Stadt- und Raumforschung",
+      "website": "https://www.bbsr.bund.de/",
+      "dissolved": null,
+      "hostname": "bbsr.bund.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Auditor Oversight Body",
+      "website": "https://www.apasbafa.bund.de/",
+      "dissolved": null,
+      "hostname": "apasbafa.bund.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Joint gambling authority of the federal states of Germany",
+      "website": "https://www.gluecksspiel-behoerde.de/",
+      "dissolved": null,
+      "hostname": "gluecksspiel-behoerde.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Merz cabinet",
+      "website": "https://www.bundesregierung.de/",
+      "dissolved": null,
+      "hostname": "bundesregierung.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Ministry for Digital Transformation and Government Modernisation",
+      "website": "https://bmds.bund.de/",
+      "dissolved": null,
+      "hostname": "bmds.bund.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Court of Justice of Germany",
+      "website": "https://www.bundesgerichtshof.de/EN/Home/homeBGH_node.html",
+      "dissolved": null,
+      "hostname": "bundesgerichtshof.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Ministry of Agriculture, Food and Regional Identity",
+      "website": "https://www.bmleh.de/",
+      "dissolved": null,
+      "hostname": "bmleh.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Fiscal Court",
+      "website": "http://www.bundesfinanzhof.de/",
+      "dissolved": null,
+      "hostname": "bundesfinanzhof.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Administrative Court",
+      "website": "https://www.bverwg.de/fr",
+      "dissolved": null,
+      "hostname": "bverwg.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Administrative Court",
+      "website": "https://www.bverwg.de/en",
+      "dissolved": null,
+      "hostname": "bverwg.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Administrative Court",
+      "website": "https://www.bverwg.de/",
+      "dissolved": null,
+      "hostname": "bverwg.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Statistical Office of Germany",
+      "website": "https://www.destatis.de",
+      "dissolved": null,
+      "hostname": "destatis.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Government Commissioner for Culture and Media",
+      "website": "https://www.kulturstaatsministerin.de/",
+      "dissolved": null,
+      "hostname": "kulturstaatsministerin.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Government Commissioner for Culture and Media",
+      "website": "http://www.kulturstaatsminister.de/",
+      "dissolved": null,
+      "hostname": "kulturstaatsminister.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Joint Committee",
+      "website": "http://www.bundestag.de/htdocs_e/bundestag/committees/joint/index.html",
+      "dissolved": null,
+      "hostname": "bundestag.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Bundesamt für Bevölkerungsschutz und Katastrophenhilfe",
+      "website": "https://www.bbk.bund.de/",
+      "dissolved": null,
+      "hostname": "bbk.bund.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Office for Building and Regional Planning",
+      "website": "https://www.bbr.bund.de/",
+      "dissolved": null,
+      "hostname": "bbr.bund.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Office of Family Affairs and Civil Society Functions",
+      "website": "https://www.bafza.de/english",
+      "dissolved": null,
+      "hostname": "bafza.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Office of Family Affairs and Civil Society Functions",
+      "website": "https://www.bafza.de/",
+      "dissolved": null,
+      "hostname": "bafza.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Bundesamt für Infrastruktur, Umweltschutz und Dienstleistungen der Bundeswehr",
+      "website": "https://www.bundeswehr.de/de/organisation/infrastruktur-umweltschutz-und-dienstleistungen/organisation-iud/baiudbw",
+      "dissolved": null,
+      "hostname": "bundeswehr.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Office of Justice",
+      "website": "https://www.bundesjustizamt.de/",
+      "dissolved": null,
+      "hostname": "bundesjustizamt.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Agency for Cartography and Geodesy",
+      "website": "https://www.bkg.bund.de/",
+      "dissolved": null,
+      "hostname": "bkg.bund.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Bundesamt für Migration und Flüchtlinge",
+      "website": "https://www.bamf.de/",
+      "dissolved": null,
+      "hostname": "bamf.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Office of Personnel Management of the Bundeswehr",
+      "website": "https://www.bundeswehr.de/de/organisation/personal/bundesamt-fuer-das-personalmanagement-der-bundeswehr-",
+      "dissolved": null,
+      "hostname": "bundeswehr.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Agency for Nature Conservation",
+      "website": "https://www.bfn.de/",
+      "dissolved": null,
+      "hostname": "bfn.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Maritime and Hydrographic Agency of Germany",
+      "website": "https://www.bsh.de/",
+      "dissolved": null,
+      "hostname": "bsh.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Office for Radiation Protection",
+      "website": "https://www.bfs.de/",
+      "dissolved": null,
+      "hostname": "bfs.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Office of Economics and Export Control",
+      "website": "https://www.bafa.de/",
+      "dissolved": null,
+      "hostname": "bafa.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Office for Central Services and Unresolved Property Issues",
+      "website": "https://www.badv.bund.de/",
+      "dissolved": null,
+      "hostname": "badv.bund.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Office for Central Services and Unresolved Property Issues",
+      "website": "http://www.badv.bund.de",
+      "dissolved": null,
+      "hostname": "badv.bund.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Institute for Occupational Safety and Health",
+      "website": "http://www.baua.de/",
+      "dissolved": null,
+      "hostname": "baua.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Institute for Geosciences and Natural Resources",
+      "website": "http://www.bgr.bund.de/",
+      "dissolved": null,
+      "hostname": "bgr.bund.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Agency for Financial Market Stabilisation",
+      "website": "http://www.soffin.de",
+      "dissolved": null,
+      "hostname": "soffin.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Agency for Financial Market Stabilisation",
+      "website": "http://www.fmsa.de/",
+      "dissolved": null,
+      "hostname": "fmsa.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Institute of Hydrology",
+      "website": "https://www.bafg.de/",
+      "dissolved": null,
+      "hostname": "bafg.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Office for Food and Agriculture",
+      "website": "https://www.ble.de",
+      "dissolved": null,
+      "hostname": "ble.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Institute for Federal Real Estate",
+      "website": "https://www.bundesimmobilien.de/",
+      "dissolved": null,
+      "hostname": "bundesimmobilien.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Institute for Materials Research and Testing",
+      "website": "https://www.bam.de/Navigation/EN/Home/home.html",
+      "dissolved": null,
+      "hostname": "bam.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Institute for Materials Research and Testing",
+      "website": "https://www.bam.de/Navigation/DE/Home/home.html",
+      "dissolved": null,
+      "hostname": "bam.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Institute for Materials Research and Testing",
+      "website": "https://www.bam.de/",
+      "dissolved": null,
+      "hostname": "bam.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Highway and Transport Research Institute",
+      "website": "http://www.bast.de/",
+      "dissolved": null,
+      "hostname": "bast.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Waterways Engineering and Research Institute",
+      "website": "http://www.baw.de/",
+      "dissolved": null,
+      "hostname": "baw.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Agency for Public Safety Digital Radio",
+      "website": "https://www.bdbos.bund.de/",
+      "dissolved": null,
+      "hostname": "bdbos.bund.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Bundesausgleichsamt",
+      "website": "http://www.bundesausgleichsamt.de",
+      "dissolved": null,
+      "hostname": "bundesausgleichsamt.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Bundesinnungskrankenkasse Gesundheit",
+      "website": "https://www.big-direkt.de",
+      "dissolved": null,
+      "hostname": "big-direkt.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Bundesinstitut für Kultur und Geschichte der Deutschen im östlichen Europa (Germany)",
+      "website": "http://www.bkge.de/",
+      "dissolved": null,
+      "hostname": "bkge.de",
+      "already_seeded": false
+    },
+    {
+      "label": "German Federal Institute for Risk Assessment",
+      "website": "https://www.bfr.bund.de/",
+      "dissolved": null,
+      "hostname": "bfr.bund.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Bundesinstitut für Sportwissenschaft",
+      "website": "http://www.bisp.de/",
+      "dissolved": null,
+      "hostname": "bisp.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Plant Variety Office",
+      "website": "http://www.bundessortenamt.de",
+      "dissolved": null,
+      "hostname": "bundessortenamt.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Bundessprachenamt",
+      "website": "http://www.bundessprachenamt.de",
+      "dissolved": null,
+      "hostname": "bundessprachenamt.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Bureau for Maritime Casualty Investigation",
+      "website": "http://www.bsu-bund.de/",
+      "dissolved": null,
+      "hostname": "bsu-bund.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Bundesamt für Soziale Sicherung",
+      "website": "https://www.bundesamtsozialesicherung.de/",
+      "dissolved": null,
+      "hostname": "bundesamtsozialesicherung.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Bundesverwaltungsamt",
+      "website": "https://www.bva.bund.de/EN/",
+      "dissolved": null,
+      "hostname": "bva.bund.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Bundesverwaltungsamt",
+      "website": "https://www.bva.bund.de/",
+      "dissolved": null,
+      "hostname": "bva.bund.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Bundesverwaltungsamt",
+      "website": "http://www.bva.bund.de/DE/",
+      "dissolved": null,
+      "hostname": "bva.bund.de",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Central Tax Office",
+      "website": "https://www.bzst.de/EN",
+      "dissolved": null,
+      "hostname": "bzst.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Central Tax Office",
+      "website": "https://www.bzst.de/",
+      "dissolved": null,
+      "hostname": "bzst.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Institute of Public Health",
+      "website": "https://www.bioeg.de/",
+      "dissolved": null,
+      "hostname": "bioeg.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Bundeszollverwaltung",
+      "website": "https://www.zoll.de/",
+      "dissolved": null,
+      "hostname": "zoll.de",
+      "already_seeded": true
+    },
+    {
+      "label": "German Federal Pension Insurance",
+      "website": "https://www.deutsche-rentenversicherung.de/Bund/DE/Home/home_node.html",
+      "dissolved": null,
+      "hostname": "deutsche-rentenversicherung.de",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Authority for Railway Accident Investigation",
+      "website": "https://www.eisenbahn-unfalluntersuchung.de/",
+      "dissolved": null,
+      "hostname": "eisenbahn-unfalluntersuchung.de",
+      "already_seeded": false
+    }
+  ],
+  "regional": {},
+  "note": "Candidate list only -- not merged into any TOON seed. Verify liveness (DNS/HTTP) and currency before adding any domain; 'dissolved' being empty does not guarantee an entity is still active, and 'already_seeded' is a hostname-suffix match, not a guarantee of exact equivalence."
+}

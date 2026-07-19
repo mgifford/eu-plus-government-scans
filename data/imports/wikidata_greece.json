@@ -1,0 +1,260 @@
+{
+  "country": "Greece",
+  "wikidata_qid": "Q41",
+  "national": [
+    {
+      "label": "Court of Cassation",
+      "website": "http://www.areiospagos.gr/",
+      "dissolved": null,
+      "hostname": "areiospagos.gr",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Infrastructure and Transport (Greece)",
+      "website": "https://www.yme.gr",
+      "dissolved": null,
+      "hostname": "yme.gr",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of National Economy and Finance (Greece)",
+      "website": "https://minfin.gov.gr",
+      "dissolved": null,
+      "hostname": "minfin.gov.gr",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Health (Greece)",
+      "website": "https://www.moh.gov.gr",
+      "dissolved": null,
+      "hostname": "moh.gov.gr",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Public Order and Citizen Protection",
+      "website": "http://www.mopocp.gov.gr",
+      "dissolved": null,
+      "hostname": "mopocp.gov.gr",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of National Defence (Greece)",
+      "website": "https://www.mod.mil.gr",
+      "dissolved": null,
+      "hostname": "mod.mil.gr",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Foreign Affairs of Greece",
+      "website": "https://www.mfa.gr",
+      "dissolved": null,
+      "hostname": "mfa.gr",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of the Interior (Greece)",
+      "website": "https://www.ypes.gr",
+      "dissolved": null,
+      "hostname": "ypes.gr",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Rural Development and Food (Greece)",
+      "website": "https://minagric.gr",
+      "dissolved": null,
+      "hostname": "minagric.gr",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Development, Competitiveness and Shipping",
+      "website": "http://www.mindev.gov.gr/",
+      "dissolved": null,
+      "hostname": "mindev.gov.gr",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Labour and Social Security",
+      "website": "http://www.ypakp.gr/",
+      "dissolved": null,
+      "hostname": "ypakp.gr",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Macedonia and Thrace",
+      "website": "http://www.mathra.gr/",
+      "dissolved": "2015-01-27T00:00:00Z",
+      "hostname": "mathra.gr",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Justice, Transparency and Human Rights",
+      "website": "http://www.ministryofjustice.gr/",
+      "dissolved": "2019-07-08T00:00:00Z",
+      "hostname": "ministryofjustice.gr",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Shipping and Island Policy (Greece)",
+      "website": "https://www.ynanp.gr",
+      "dissolved": null,
+      "hostname": "ynanp.gr",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of the Environment and Energy (Greece)",
+      "website": "https://ypen.gov.gr",
+      "dissolved": null,
+      "hostname": "ypen.gov.gr",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Education, Lifelong Learning and Religious Affairs",
+      "website": "http://www.minedu.gov.gr",
+      "dissolved": "2012-06-21T00:00:00Z",
+      "hostname": "minedu.gov.gr",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Development (Greece)",
+      "website": "https://www.mindev.gov.gr",
+      "dissolved": null,
+      "hostname": "mindev.gov.gr",
+      "already_seeded": true
+    },
+    {
+      "label": "Hellenic Capital Market Commission",
+      "website": "http://www.hcmc.gr/en_US/web/portal/foreis",
+      "dissolved": null,
+      "hostname": "hcmc.gr",
+      "already_seeded": false
+    },
+    {
+      "label": "Hellenic Capital Market Commission",
+      "website": "http://www.hcmc.gr/",
+      "dissolved": null,
+      "hostname": "hcmc.gr",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Tourism (Greece)",
+      "website": "https://mintour.gov.gr",
+      "dissolved": null,
+      "hostname": "mintour.gov.gr",
+      "already_seeded": true
+    },
+    {
+      "label": "Hellenic Data Protection Authority",
+      "website": "https://www.dpa.gr/",
+      "dissolved": null,
+      "hostname": "dpa.gr",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Citizen Protection (Greece)",
+      "website": "https://www.minocp.gov.gr",
+      "dissolved": null,
+      "hostname": "minocp.gov.gr",
+      "already_seeded": false
+    },
+    {
+      "label": "Government of Greece",
+      "website": "https://www.government.gov.gr",
+      "dissolved": null,
+      "hostname": "government.gov.gr",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Education, Religious Affairs and Sports",
+      "website": "https://www.minedu.gov.gr",
+      "dissolved": null,
+      "hostname": "minedu.gov.gr",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Culture, Education and Religious Affairs",
+      "website": "http://www.minedu.gov.gr/english",
+      "dissolved": "2015-09-01T00:00:00Z",
+      "hostname": "minedu.gov.gr",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Culture (Greece)",
+      "website": "https://culture.gov.gr/el/SitePages/default.aspx",
+      "dissolved": null,
+      "hostname": "culture.gov.gr",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Economy, Development and Tourism",
+      "website": "http://www.mnec.gr/",
+      "dissolved": null,
+      "hostname": "mnec.gr",
+      "already_seeded": false
+    },
+    {
+      "label": "Government Delegation of the Generalitat, Zagreb",
+      "website": "https://exteriors.gencat.cat/ca/ambits-dactuacio/afers_exteriors/delegacions_govern/sud-est-europa/index.html",
+      "dissolved": null,
+      "hostname": "exteriors.gencat.cat",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Justice (Greece)",
+      "website": "https://ministryofjustice.gr",
+      "dissolved": null,
+      "hostname": "ministryofjustice.gr",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Labour and Social Security (Greece)",
+      "website": "https://ypergasias.gov.gr",
+      "dissolved": null,
+      "hostname": "ypergasias.gov.gr",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Digital Governance (Greece)",
+      "website": "https://mindigital.gr",
+      "dissolved": null,
+      "hostname": "mindigital.gr",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Migration and Asylum",
+      "website": "https://migration.gov.gr",
+      "dissolved": null,
+      "hostname": "migration.gov.gr",
+      "already_seeded": true
+    },
+    {
+      "label": "Deputy Minister for Macedonia and Thrace",
+      "website": "https://www.mathra.gr",
+      "dissolved": null,
+      "hostname": "mathra.gr",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Climate Crisis and Civil Protection",
+      "website": "https://civilprotection.gov.gr",
+      "dissolved": null,
+      "hostname": "civilprotection.gov.gr",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Social Cohesion and Family",
+      "website": "https://minscfa.gov.gr",
+      "dissolved": null,
+      "hostname": "minscfa.gov.gr",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Finance of Greece",
+      "website": "http://www.minfin.gr/",
+      "dissolved": "2023-07-31T00:00:00Z",
+      "hostname": "minfin.gr",
+      "already_seeded": false
+    }
+  ],
+  "regional": {},
+  "note": "Candidate list only -- not merged into any TOON seed. Verify liveness (DNS/HTTP) and currency before adding any domain; 'dissolved' being empty does not guarantee an entity is still active, and 'already_seeded' is a hostname-suffix match, not a guarantee of exact equivalence."
+}

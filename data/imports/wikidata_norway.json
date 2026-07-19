@@ -1,0 +1,295 @@
+{
+  "country": "Norway",
+  "wikidata_qid": "Q20",
+  "national": [
+    {
+      "label": "The Norwegian Data Protection Authority",
+      "website": "https://www.datatilsynet.no/en",
+      "dissolved": null,
+      "hostname": "datatilsynet.no",
+      "already_seeded": false
+    },
+    {
+      "label": "The Norwegian Data Protection Authority",
+      "website": "https://www.datatilsynet.no/",
+      "dissolved": null,
+      "hostname": "datatilsynet.no",
+      "already_seeded": false
+    },
+    {
+      "label": "Supreme Court of Norway",
+      "website": "https://www.domstol.no/hoyesterett/",
+      "dissolved": null,
+      "hostname": "domstol.no",
+      "already_seeded": false
+    },
+    {
+      "label": "Norway's Ministry of Local Government and Modernisation",
+      "website": "https://regjeringen.no/kdd/",
+      "dissolved": null,
+      "hostname": "regjeringen.no",
+      "already_seeded": true
+    },
+    {
+      "label": "Norwegian Ministry of Health and Care Services",
+      "website": "https://www.regjeringen.no/dep/hod/",
+      "dissolved": null,
+      "hostname": "regjeringen.no",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Finance of Norway",
+      "website": "https://www.regjeringen.no/no/dep/fin/id216/",
+      "dissolved": null,
+      "hostname": "regjeringen.no",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Culture of Norway",
+      "website": "https://www.regjeringen.no/no/dep/kud/",
+      "dissolved": null,
+      "hostname": "regjeringen.no",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Justice and Public Security of Norway",
+      "website": "https://www.regjeringen.no/se/dep/jd/id463/",
+      "dissolved": null,
+      "hostname": "regjeringen.no",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Justice and Public Security of Norway",
+      "website": "https://www.regjeringen.no/no/dep/jd/id463/",
+      "dissolved": null,
+      "hostname": "regjeringen.no",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Justice and Public Security of Norway",
+      "website": "https://www.regjeringen.no/en/dep/jd/id463/",
+      "dissolved": null,
+      "hostname": "regjeringen.no",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Justice and Public Security of Norway",
+      "website": "http://www.regjeringen.no/jd",
+      "dissolved": null,
+      "hostname": "regjeringen.no",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Fisheries and Coastal Affairs",
+      "website": "http://www.regjeringen.no/en/dep/fkd.html?id=257",
+      "dissolved": "2013-12-31T00:00:00Z",
+      "hostname": "regjeringen.no",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Government Administration, Reform and Church Affairs",
+      "website": "http://www.regjeringen.no/en/dep/fad.html?id=339",
+      "dissolved": "2013-12-31T00:00:00Z",
+      "hostname": "regjeringen.no",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Climate and Environment",
+      "website": "https://www.regjeringen.no/no/dep/kld/id668/",
+      "dissolved": null,
+      "hostname": "regjeringen.no",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Education and Research of Norway",
+      "website": "http://kunnskapsdepartementet.no",
+      "dissolved": null,
+      "hostname": "kunnskapsdepartementet.no",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Transport and Communications",
+      "website": "http://www.regjeringen.no/nb/dep/sd.html?id=791",
+      "dissolved": null,
+      "hostname": "regjeringen.no",
+      "already_seeded": true
+    },
+    {
+      "label": "Bondevik's Second Cabinet",
+      "website": "https://www.regjeringen.no/no/om-regjeringa/tidligere-regjeringer-og-historie/sok-i-regjeringer-siden-1814/historiske-regjeringer/regjeringer/kjell-magne-bondeviks-andre-regjering-20/id438739/",
+      "dissolved": "2005-10-17T00:00:00Z",
+      "hostname": "regjeringen.no",
+      "already_seeded": true
+    },
+    {
+      "label": "Statistics Norway",
+      "website": "https://ssb.no/",
+      "dissolved": null,
+      "hostname": "ssb.no",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Energy of Norway",
+      "website": "https://www.regjeringen.no/no/dep/ed/id750/",
+      "dissolved": null,
+      "hostname": "regjeringen.no",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Children and Families",
+      "website": "https://www.regjeringen.no/no/dep/bfd/id298/",
+      "dissolved": null,
+      "hostname": "regjeringen.no",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Agriculture and Food",
+      "website": "https://www.regjeringen.no/no/dep/lmd/id627/",
+      "dissolved": null,
+      "hostname": "regjeringen.no",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Labour and Social Inclusion of Norway",
+      "website": "https://regjeringen.no/aid/",
+      "dissolved": null,
+      "hostname": "regjeringen.no",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Foreign Affairs of Norway",
+      "website": "https://www.regjeringen.no/no/dep/ud/id833/",
+      "dissolved": null,
+      "hostname": "regjeringen.no",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Defence of Norway",
+      "website": "http://www.regjeringen.no/en/dep/fd.html?id=380",
+      "dissolved": null,
+      "hostname": "regjeringen.no",
+      "already_seeded": true
+    },
+    {
+      "label": "Norwegian Police Security Service",
+      "website": "https://pst.no",
+      "dissolved": null,
+      "hostname": "pst.no",
+      "already_seeded": false
+    },
+    {
+      "label": "Norwegian Water Resources and Energy Directorate",
+      "website": "https://www.nve.no/",
+      "dissolved": null,
+      "hostname": "nve.no",
+      "already_seeded": true
+    },
+    {
+      "label": "State Conciliator of Norway",
+      "website": "https://www.riksmekleren.no/",
+      "dissolved": null,
+      "hostname": "riksmekleren.no",
+      "already_seeded": false
+    },
+    {
+      "label": "Norwegian Patent Office",
+      "website": "https://www.patentstyret.no/",
+      "dissolved": null,
+      "hostname": "patentstyret.no",
+      "already_seeded": false
+    },
+    {
+      "label": "Norwegian Tax Administration",
+      "website": "https://www.skatteetaten.no/nn",
+      "dissolved": null,
+      "hostname": "skatteetaten.no",
+      "already_seeded": true
+    },
+    {
+      "label": "Norwegian Tax Administration",
+      "website": "https://www.skatteetaten.no/en",
+      "dissolved": null,
+      "hostname": "skatteetaten.no",
+      "already_seeded": true
+    },
+    {
+      "label": "Norwegian Tax Administration",
+      "website": "https://www.skatteetaten.no/",
+      "dissolved": null,
+      "hostname": "skatteetaten.no",
+      "already_seeded": true
+    },
+    {
+      "label": "Office of the Prime Minister",
+      "website": "https://www.regjeringen.no/se/dep/smk/id875/",
+      "dissolved": null,
+      "hostname": "regjeringen.no",
+      "already_seeded": true
+    },
+    {
+      "label": "Office of the Prime Minister",
+      "website": "https://www.regjeringen.no/en/dep/smk/id875/",
+      "dissolved": null,
+      "hostname": "regjeringen.no",
+      "already_seeded": true
+    },
+    {
+      "label": "Office of the Prime Minister",
+      "website": "https://www.regjeringen.no/no/dep/smk/id875/",
+      "dissolved": null,
+      "hostname": "regjeringen.no",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Children and Families of Norway",
+      "website": "http://odin.dep.no/bfd/",
+      "dissolved": "2005-12-31T00:00:00Z",
+      "hostname": "odin.dep.no",
+      "already_seeded": false
+    },
+    {
+      "label": "KORO - Public Art Norway",
+      "website": "https://koro.no/",
+      "dissolved": null,
+      "hostname": "koro.no",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Trade, Industry and Fisheries",
+      "website": "https://www.regjeringen.no/no/dep/nfd/id709/",
+      "dissolved": null,
+      "hostname": "regjeringen.no",
+      "already_seeded": true
+    },
+    {
+      "label": "Office of the Chief Military Prosecutor of Norway",
+      "website": "https://generaladvokaten.no/",
+      "dissolved": "2024-07-01T00:00:00Z",
+      "hostname": "generaladvokaten.no",
+      "already_seeded": false
+    },
+    {
+      "label": "Office of the Director of Public Prosecutions of Norway",
+      "website": "http://www.riksadvokaten.no/",
+      "dissolved": null,
+      "hostname": "riksadvokaten.no",
+      "already_seeded": false
+    },
+    {
+      "label": "Advokattilsynet",
+      "website": "https://tilsynet.no/",
+      "dissolved": null,
+      "hostname": "tilsynet.no",
+      "already_seeded": false
+    },
+    {
+      "label": "Advokatnemnda",
+      "website": "https://advnemnda.no/",
+      "dissolved": null,
+      "hostname": "advnemnda.no",
+      "already_seeded": false
+    }
+  ],
+  "regional": {},
+  "note": "Candidate list only -- not merged into any TOON seed. Verify liveness (DNS/HTTP) and currency before adding any domain; 'dissolved' being empty does not guarantee an entity is still active, and 'already_seeded' is a hostname-suffix match, not a guarantee of exact equivalence."
+}

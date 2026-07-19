@@ -1,0 +1,253 @@
+{
+  "country": "Romania",
+  "wikidata_qid": "Q218",
+  "national": [
+    {
+      "label": "Chamber of Deputies of Romania",
+      "website": "http://www.cdep.ro",
+      "dissolved": null,
+      "hostname": "cdep.ro",
+      "already_seeded": true
+    },
+    {
+      "label": "Romanian Police",
+      "website": "https://www.politiaromana.ro/",
+      "dissolved": null,
+      "hostname": "politiaromana.ro",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Culture",
+      "website": "http://www.cultura.ro/",
+      "dissolved": null,
+      "hostname": "cultura.ro",
+      "already_seeded": false
+    },
+    {
+      "label": "Senate",
+      "website": "https://www.senat.ro",
+      "dissolved": null,
+      "hostname": "senat.ro",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Labour, Family, Youth and Social Solidarity",
+      "website": "http://www.mmuncii.ro",
+      "dissolved": null,
+      "hostname": "mmuncii.ro",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry for Development, Public Works and Administration",
+      "website": "https://www.mdlpa.ro/",
+      "dissolved": null,
+      "hostname": "mdlpa.ro",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Environment, Water and Forests",
+      "website": "http://www.mmediu.ro",
+      "dissolved": null,
+      "hostname": "mmediu.ro",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Internal Affairs",
+      "website": "http://www.mai.gov.ro/",
+      "dissolved": null,
+      "hostname": "mai.gov.ro",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Education of Romania",
+      "website": "https://www.edu.ro",
+      "dissolved": null,
+      "hostname": "edu.ro",
+      "already_seeded": false
+    },
+    {
+      "label": "Constitutional Court of Romania",
+      "website": "https://www.ccr.ro/",
+      "dissolved": null,
+      "hostname": "ccr.ro",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Economy, Entrepreneurship and Tourism of Romania",
+      "website": "http://economie.gov.ro",
+      "dissolved": null,
+      "hostname": "economie.gov.ro",
+      "already_seeded": false
+    },
+    {
+      "label": "Government of Romania",
+      "website": "http://gov.ro/",
+      "dissolved": null,
+      "hostname": "gov.ro",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of National Defense",
+      "website": "https://mapn.ro",
+      "dissolved": null,
+      "hostname": "mapn.ro",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Health",
+      "website": "http://www.ms.ro/",
+      "dissolved": null,
+      "hostname": "ms.ro",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Finance",
+      "website": "http://www.mfinante.gov.ro",
+      "dissolved": null,
+      "hostname": "mfinante.gov.ro",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Communications and Information Society",
+      "website": "http://www.mcsi.ro",
+      "dissolved": null,
+      "hostname": "mcsi.ro",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Agriculture and Rural Development of Romania",
+      "website": "https://www.madr.ro/",
+      "dissolved": null,
+      "hostname": "madr.ro",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Transport and Infrastructure of Romania",
+      "website": "http://mt.gov.ro/",
+      "dissolved": null,
+      "hostname": "mt.gov.ro",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Justice",
+      "website": "https://www.just.ro/",
+      "dissolved": null,
+      "hostname": "just.ro",
+      "already_seeded": true
+    },
+    {
+      "label": "High Court of Cassation and Justice",
+      "website": "http://www.scj.ro/monogr_en.asp",
+      "dissolved": null,
+      "hostname": "scj.ro",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Youth and Sport",
+      "website": "http://www.mts.ro",
+      "dissolved": "2023-06-15T00:00:00Z",
+      "hostname": "mts.ro",
+      "already_seeded": false
+    },
+    {
+      "label": "National Institute of Statistics",
+      "website": "http://www.insse.ro/",
+      "dissolved": null,
+      "hostname": "insse.ro",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Research and Inovation",
+      "website": "http://www.research.gov.ro/",
+      "dissolved": "2019-11-04T00:00:00Z",
+      "hostname": "research.gov.ro",
+      "already_seeded": false
+    },
+    {
+      "label": "Authority for State Assets Management",
+      "website": "http://www.avas.gov.ro",
+      "dissolved": null,
+      "hostname": "avas.gov.ro",
+      "already_seeded": false
+    },
+    {
+      "label": "Directorate for Investigating Organized Crime and Terrorism",
+      "website": "https://www.diicot.ro/",
+      "dissolved": null,
+      "hostname": "diicot.ro",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of European Investments and Projects",
+      "website": "https://mfe.gov.ro/",
+      "dissolved": null,
+      "hostname": "mfe.gov.ro",
+      "already_seeded": false
+    },
+    {
+      "label": "General Secretariat of the Government",
+      "website": "https://sgg.gov.ro",
+      "dissolved": null,
+      "hostname": "sgg.gov.ro",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Foreign Affairs of Romania",
+      "website": "http://www.mae.ro",
+      "dissolved": null,
+      "hostname": "mae.ro",
+      "already_seeded": true
+    },
+    {
+      "label": "Romanian Financial Supervisory Authority",
+      "website": "https://www.asfromania.ro/",
+      "dissolved": null,
+      "hostname": "asfromania.ro",
+      "already_seeded": false
+    },
+    {
+      "label": "National Supervisory Authority for Personal Data Processing",
+      "website": "http://www.dataprotection.ro/",
+      "dissolved": null,
+      "hostname": "dataprotection.ro",
+      "already_seeded": false
+    },
+    {
+      "label": "Romanian Office for the Prevention and Combating of Money Laundering",
+      "website": "https://www.onpcsb.ro/",
+      "dissolved": null,
+      "hostname": "onpcsb.ro",
+      "already_seeded": false
+    },
+    {
+      "label": "Permanent Electoral Authority",
+      "website": "https://www.roaep.ro/",
+      "dissolved": null,
+      "hostname": "roaep.ro",
+      "already_seeded": true
+    },
+    {
+      "label": "Government Delegation of the Generalitat, Zagreb",
+      "website": "https://exteriors.gencat.cat/ca/ambits-dactuacio/afers_exteriors/delegacions_govern/sud-est-europa/index.html",
+      "dissolved": null,
+      "hostname": "exteriors.gencat.cat",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Research, Innovation and Digitization (Romania)",
+      "website": "https://www.research.gov.ro/",
+      "dissolved": null,
+      "hostname": "research.gov.ro",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Energy (Romania)",
+      "website": "http://energie.gov.ro/",
+      "dissolved": null,
+      "hostname": "energie.gov.ro",
+      "already_seeded": false
+    }
+  ],
+  "regional": {},
+  "note": "Candidate list only -- not merged into any TOON seed. Verify liveness (DNS/HTTP) and currency before adding any domain; 'dissolved' being empty does not guarantee an entity is still active, and 'already_seeded' is a hostname-suffix match, not a guarantee of exact equivalence."
+}

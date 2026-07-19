@@ -1,0 +1,176 @@
+{
+  "country": "Slovenia",
+  "wikidata_qid": "Q215",
+  "national": [
+    {
+      "label": "National Council of Slovenia",
+      "website": "http://www.ds-rs.si",
+      "dissolved": null,
+      "hostname": "ds-rs.si",
+      "already_seeded": true
+    },
+    {
+      "label": "National Assembly",
+      "website": "https://www.dz-rs.si",
+      "dissolved": null,
+      "hostname": "dz-rs.si",
+      "already_seeded": false
+    },
+    {
+      "label": "Statistical Office of the Republic of Slovenia",
+      "website": "http://www.stat.si/",
+      "dissolved": null,
+      "hostname": "stat.si",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of the Interior",
+      "website": "http://www.mnz.gov.si/",
+      "dissolved": null,
+      "hostname": "mnz.gov.si",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Defence of Slovenia",
+      "website": "http://www.mo.gov.si/en/",
+      "dissolved": null,
+      "hostname": "mo.gov.si",
+      "already_seeded": false
+    },
+    {
+      "label": "Commission for the Prevention of Corruption of the Republic of Slovenia",
+      "website": "https://www.kpk-rs.si/",
+      "dissolved": null,
+      "hostname": "kpk-rs.si",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Foreign Affairs of Slovenia",
+      "website": "http://www.mzz.gov.si/",
+      "dissolved": null,
+      "hostname": "mzz.gov.si",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Foreign Affairs of Slovenia",
+      "website": "http://www.mzz.gov.si/en/",
+      "dissolved": null,
+      "hostname": "mzz.gov.si",
+      "already_seeded": true
+    },
+    {
+      "label": "Supreme Court of the Republic of Slovenia",
+      "website": "https://www.sodisce.si",
+      "dissolved": null,
+      "hostname": "sodisce.si",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Agriculture, Forestry and Food",
+      "website": "http://www.mkgp.gov.si/",
+      "dissolved": null,
+      "hostname": "mkgp.gov.si",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Public Administration",
+      "website": "http://www.mju.gov.si/en/",
+      "dissolved": null,
+      "hostname": "mju.gov.si",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Higher Education Science, and Technology",
+      "website": "http://www.arhiv.mvzt.gov.si/en/",
+      "dissolved": null,
+      "hostname": "arhiv.mvzt.gov.si",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Economic Development and Technology",
+      "website": "http://www.mgrt.gov.si/",
+      "dissolved": null,
+      "hostname": "mgrt.gov.si",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Economic Development and Technology",
+      "website": "http://www.mgrt.gov.si/en/",
+      "dissolved": null,
+      "hostname": "mgrt.gov.si",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Labour, Family, Social Affairs and Equal Opportunities",
+      "website": "http://www.mddsz.gov.si/en/",
+      "dissolved": null,
+      "hostname": "mddsz.gov.si",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Education Science and Sport",
+      "website": "http://www.mizs.gov.si/en/",
+      "dissolved": null,
+      "hostname": "mizs.gov.si",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Culture of Slovenia",
+      "website": "http://www.mk.gov.si/en/",
+      "dissolved": null,
+      "hostname": "mk.gov.si",
+      "already_seeded": false
+    },
+    {
+      "label": "State Election Commission",
+      "website": "http://www.dvk-rs.si/",
+      "dissolved": null,
+      "hostname": "dvk-rs.si",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Infrastructure",
+      "website": "http://www.mzi.gov.si/en/",
+      "dissolved": null,
+      "hostname": "mzi.gov.si",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of the Environment and Spatial Planning",
+      "website": "http://www.mop.gov.si/en/",
+      "dissolved": null,
+      "hostname": "mop.gov.si",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Health",
+      "website": "http://www.mz.gov.si/en/",
+      "dissolved": null,
+      "hostname": "mz.gov.si",
+      "already_seeded": false
+    },
+    {
+      "label": "Information Commissioner of the Republic of Slovenia",
+      "website": "https://www.ip-rs.si/",
+      "dissolved": null,
+      "hostname": "ip-rs.si",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Finance",
+      "website": "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-finance/",
+      "dissolved": null,
+      "hostname": "gov.si",
+      "already_seeded": true
+    },
+    {
+      "label": "Slovenian Water Agency",
+      "website": "https://www.gov.si/drzavni-organi/organi-v-sestavi/direkcija-za-vode/",
+      "dissolved": null,
+      "hostname": "gov.si",
+      "already_seeded": true
+    }
+  ],
+  "regional": {},
+  "note": "Candidate list only -- not merged into any TOON seed. Verify liveness (DNS/HTTP) and currency before adding any domain; 'dissolved' being empty does not guarantee an entity is still active, and 'already_seeded' is a hostname-suffix match, not a guarantee of exact equivalence."
+}

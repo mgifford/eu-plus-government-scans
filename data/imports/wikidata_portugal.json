@@ -1,0 +1,246 @@
+{
+  "country": "Portugal",
+  "wikidata_qid": "Q45",
+  "national": [
+    {
+      "label": "Government of Portugal",
+      "website": "http://www.portugal.gov.pt/en.aspx",
+      "dissolved": null,
+      "hostname": "portugal.gov.pt",
+      "already_seeded": true
+    },
+    {
+      "label": "National Republican Guard",
+      "website": "http://www.gnr.pt/",
+      "dissolved": null,
+      "hostname": "gnr.pt",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Foreign Affairs of Portugal",
+      "website": "https://portaldiplomatico.mne.gov.pt/",
+      "dissolved": null,
+      "hostname": "portaldiplomatico.mne.gov.pt",
+      "already_seeded": true
+    },
+    {
+      "label": "National Institute of Statistics",
+      "website": "https://www.ine.pt/",
+      "dissolved": null,
+      "hostname": "ine.pt",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Education of Portugal",
+      "website": "https://www.min-edu.pt",
+      "dissolved": null,
+      "hostname": "min-edu.pt",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Education of Portugal",
+      "website": "http://www.min-edu.pt",
+      "dissolved": null,
+      "hostname": "min-edu.pt",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of the Internal Administration",
+      "website": "https://www.portugal.gov.pt/en/gc21/ministries/internal-administration",
+      "dissolved": null,
+      "hostname": "portugal.gov.pt",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Health of Portugal",
+      "website": "https://www.sns.gov.pt/institucional/ministerio-da-saude/",
+      "dissolved": null,
+      "hostname": "sns.gov.pt",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Culture of Portugal",
+      "website": "https://www.portugal.gov.pt/pt/ministerios/mc.aspx",
+      "dissolved": null,
+      "hostname": "portugal.gov.pt",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Culture of Portugal",
+      "website": "http://www.portugal.gov.pt/pt/ministerios/mc.aspx",
+      "dissolved": null,
+      "hostname": "portugal.gov.pt",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Public Works, Transport and Communications",
+      "website": "http://www.moptc.pt",
+      "dissolved": null,
+      "hostname": "moptc.pt",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Agriculture, Rural Development and Fisheries",
+      "website": "https://www.min-agricultura.pt/",
+      "dissolved": null,
+      "hostname": "min-agricultura.pt",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Agriculture, Rural Development and Fisheries",
+      "website": "http://www.min-agricultura.pt/",
+      "dissolved": null,
+      "hostname": "min-agricultura.pt",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Labour and Social Solidarity",
+      "website": "http://www.mtss.gov.pt/",
+      "dissolved": "2011-01-01T00:00:00Z",
+      "hostname": "mtss.gov.pt",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Finance of Portugal",
+      "website": "https://www.min-financas.pt/",
+      "dissolved": null,
+      "hostname": "min-financas.pt",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Finance of Portugal",
+      "website": "http://www.min-financas.pt/",
+      "dissolved": null,
+      "hostname": "min-financas.pt",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Economy, Innovation and Development",
+      "website": "http://www.min-economia.pt",
+      "dissolved": "2011-01-01T00:00:00Z",
+      "hostname": "min-economia.pt",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Justice",
+      "website": "https://www.portugal.gov.pt/pt/ministerios/mj.aspx",
+      "dissolved": null,
+      "hostname": "portugal.gov.pt",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Justice",
+      "website": "http://www.portugal.gov.pt/pt/ministerios/mj.aspx",
+      "dissolved": null,
+      "hostname": "portugal.gov.pt",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry for Environment and Spatial Planning",
+      "website": "http://www.portugal.gov.pt/pt/ministerios/mamb.aspx",
+      "dissolved": "2011-01-01T00:00:00Z",
+      "hostname": "portugal.gov.pt",
+      "already_seeded": true
+    },
+    {
+      "label": "Securities Market Commission",
+      "website": "http://www.cmvm.pt/en",
+      "dissolved": null,
+      "hostname": "cmvm.pt",
+      "already_seeded": false
+    },
+    {
+      "label": "Securities Market Commission",
+      "website": "http://www.cmvm.pt/",
+      "dissolved": null,
+      "hostname": "cmvm.pt",
+      "already_seeded": false
+    },
+    {
+      "label": "Portuguese Supreme Court of Justice",
+      "website": "https://www.stj.pt/",
+      "dissolved": null,
+      "hostname": "stj.pt",
+      "already_seeded": false
+    },
+    {
+      "label": "Serviço de Estrangeiros e Fronteiras",
+      "website": "http://www.sef.pt/",
+      "dissolved": "2023-10-29T00:00:00Z",
+      "hostname": "sef.pt",
+      "already_seeded": false
+    },
+    {
+      "label": "Tax and Customs Authority (Portugal)",
+      "website": "https://www.portaldasfinancas.gov.pt/at/html/index.html",
+      "dissolved": null,
+      "hostname": "portaldasfinancas.gov.pt",
+      "already_seeded": true
+    },
+    {
+      "label": "Portuguese Institute for Quality",
+      "website": "http://www.ipq.pt/",
+      "dissolved": null,
+      "hostname": "ipq.pt",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of the Sea of Portugal",
+      "website": "https://www.portugal.gov.pt/pt/gc21/area-de-governo/mar",
+      "dissolved": null,
+      "hostname": "portugal.gov.pt",
+      "already_seeded": true
+    },
+    {
+      "label": "NAV Portugal",
+      "website": "https://www.nav.pt/",
+      "dissolved": null,
+      "hostname": "nav.pt",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Environment, Spatial Planning and Energy",
+      "website": "http://www.igamaot.gov.pt/",
+      "dissolved": "2015-01-01T00:00:00Z",
+      "hostname": "igamaot.gov.pt",
+      "already_seeded": true
+    },
+    {
+      "label": "Comissão Nacional de Protecção de Dados",
+      "website": "https://www.cnpd.pt",
+      "dissolved": null,
+      "hostname": "cnpd.pt",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Economy of Portugal",
+      "website": "http://www.min-economia.pt",
+      "dissolved": "2019-01-01T00:00:00Z",
+      "hostname": "min-economia.pt",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Labour, Solidarity and Social Protection of Portugal",
+      "website": "https://www.portugal.gov.pt/pt/gc21/area-de-governo/trabalho-solidariedade-e-seguranca-social",
+      "dissolved": null,
+      "hostname": "portugal.gov.pt",
+      "already_seeded": true
+    },
+    {
+      "label": "XXIV Constitutional Government of Portugal",
+      "website": "https://www.portugal.gov.pt/pt/gc24",
+      "dissolved": "2025-06-05T00:00:00Z",
+      "hostname": "portugal.gov.pt",
+      "already_seeded": true
+    },
+    {
+      "label": "XXV Constitutional Government of Portugal",
+      "website": "https://www.portugal.gov.pt/pt/gc25",
+      "dissolved": null,
+      "hostname": "portugal.gov.pt",
+      "already_seeded": true
+    }
+  ],
+  "regional": {},
+  "note": "Candidate list only -- not merged into any TOON seed. Verify liveness (DNS/HTTP) and currency before adding any domain; 'dissolved' being empty does not guarantee an entity is still active, and 'already_seeded' is a hostname-suffix match, not a guarantee of exact equivalence."
+}

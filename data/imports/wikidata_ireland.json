@@ -1,0 +1,330 @@
+{
+  "country": "Ireland",
+  "wikidata_qid": "Q27",
+  "national": [
+    {
+      "label": "Supreme Court of Ireland",
+      "website": "http://www.supremecourt.ie/",
+      "dissolved": null,
+      "hostname": "supremecourt.ie",
+      "already_seeded": false
+    },
+    {
+      "label": "Special Criminal Court",
+      "website": "http://www.courts.ie/Courts.ie/Library3.nsf/pagecurrent/41C06A30E5FEDA7B80256D870050508C",
+      "dissolved": null,
+      "hostname": "courts.ie",
+      "already_seeded": true
+    },
+    {
+      "label": "Dáil Éireann",
+      "website": "https://www.oireachtas.ie/",
+      "dissolved": null,
+      "hostname": "oireachtas.ie",
+      "already_seeded": true
+    },
+    {
+      "label": "Department of Finance of Ireland",
+      "website": "https://www.gov.ie/en/organisation/department-of-finance/",
+      "dissolved": null,
+      "hostname": "gov.ie",
+      "already_seeded": true
+    },
+    {
+      "label": "Department of Foreign Affairs of Ireland",
+      "website": "https://www.ireland.ie/en/dfa/",
+      "dissolved": null,
+      "hostname": "ireland.ie",
+      "already_seeded": false
+    },
+    {
+      "label": "Department of Foreign Affairs of Ireland",
+      "website": "https://www.gov.ie/en/organisation/department-of-foreign-affairs/",
+      "dissolved": null,
+      "hostname": "gov.ie",
+      "already_seeded": true
+    },
+    {
+      "label": "Seanad Éireann",
+      "website": "https://www.oireachtas.ie/",
+      "dissolved": null,
+      "hostname": "oireachtas.ie",
+      "already_seeded": true
+    },
+    {
+      "label": "Garda Síochána",
+      "website": "https://www.garda.ie/",
+      "dissolved": null,
+      "hostname": "garda.ie",
+      "already_seeded": false
+    },
+    {
+      "label": "Health Products Regulatory Authority",
+      "website": "https://www.hpra.ie/",
+      "dissolved": null,
+      "hostname": "hpra.ie",
+      "already_seeded": false
+    },
+    {
+      "label": "Central Statistics Office",
+      "website": "https://www.cso.ie/",
+      "dissolved": null,
+      "hostname": "cso.ie",
+      "already_seeded": true
+    },
+    {
+      "label": "Science Foundation Ireland",
+      "website": "https://www.sfi.ie/",
+      "dissolved": "2024-01-01T00:00:00Z",
+      "hostname": "sfi.ie",
+      "already_seeded": false
+    },
+    {
+      "label": "Department of Transport of Ireland",
+      "website": "https://www.gov.ie/en/organisation/department-of-transport/",
+      "dissolved": null,
+      "hostname": "gov.ie",
+      "already_seeded": true
+    },
+    {
+      "label": "National Asset Management Agency",
+      "website": "https://www.nama.ie",
+      "dissolved": null,
+      "hostname": "nama.ie",
+      "already_seeded": false
+    },
+    {
+      "label": "Department of Public Expenditure, National Development Plan Delivery and Reform",
+      "website": "https://www.gov.ie/en/organisation/department-of-public-expenditure-and-reform/",
+      "dissolved": null,
+      "hostname": "gov.ie",
+      "already_seeded": true
+    },
+    {
+      "label": "Department of Health of Ireland",
+      "website": "https://www.gov.ie/en/organisation/department-of-health/",
+      "dissolved": null,
+      "hostname": "gov.ie",
+      "already_seeded": true
+    },
+    {
+      "label": "Department of Culture, Communications and Sport",
+      "website": "https://www.gov.ie/en/department-of-culture-communications-and-sport/",
+      "dissolved": null,
+      "hostname": "gov.ie",
+      "already_seeded": true
+    },
+    {
+      "label": "Department of Defence of Ireland",
+      "website": "https://www.gov.ie/en/organisation/department-of-defence/",
+      "dissolved": null,
+      "hostname": "gov.ie",
+      "already_seeded": true
+    },
+    {
+      "label": "Department of Education of Ireland",
+      "website": "https://www.gov.ie/en/organisation/department-of-education/",
+      "dissolved": null,
+      "hostname": "gov.ie",
+      "already_seeded": true
+    },
+    {
+      "label": "Department of Children, Disability and Equality",
+      "website": "https://www.gov.ie/en/department-of-children-disability-and-equality/",
+      "dissolved": null,
+      "hostname": "gov.ie",
+      "already_seeded": true
+    },
+    {
+      "label": "Department of the Taoiseach",
+      "website": "https://www.gov.ie/en/organisation/department-of-the-taoiseach/",
+      "dissolved": null,
+      "hostname": "gov.ie",
+      "already_seeded": true
+    },
+    {
+      "label": "Department of Climate, Energy and the Environment",
+      "website": "https://www.gov.ie/en/department-of-climate-energy-and-the-environment/",
+      "dissolved": null,
+      "hostname": "gov.ie",
+      "already_seeded": true
+    },
+    {
+      "label": "Department of Social Protection",
+      "website": "https://www.gov.ie/en/organisation/department-of-social-protection/",
+      "dissolved": null,
+      "hostname": "gov.ie",
+      "already_seeded": true
+    },
+    {
+      "label": "Department of Justice of Ireland",
+      "website": "https://www.gov.ie/en/organisation/department-of-justice/",
+      "dissolved": null,
+      "hostname": "gov.ie",
+      "already_seeded": true
+    },
+    {
+      "label": "Department of Rural and Community Development",
+      "website": "https://www.gov.ie/en/organisation/department-of-rural-and-community-development/",
+      "dissolved": null,
+      "hostname": "gov.ie",
+      "already_seeded": true
+    },
+    {
+      "label": "Foras Áiseanna Saothair",
+      "website": "http://www.fas.ie/en/",
+      "dissolved": "2013-07-01T00:00:00Z",
+      "hostname": "fas.ie",
+      "already_seeded": false
+    },
+    {
+      "label": "Fáilte Ireland",
+      "website": "http://www.failteireland.ie/",
+      "dissolved": null,
+      "hostname": "failteireland.ie",
+      "already_seeded": false
+    },
+    {
+      "label": "Garda Technical Bureau",
+      "website": "http://garda.ie/Controller.aspx?Page=32&Lang=1",
+      "dissolved": null,
+      "hostname": "garda.ie",
+      "already_seeded": false
+    },
+    {
+      "label": "Irish Medical Council",
+      "website": "https://www.medicalcouncil.ie/",
+      "dissolved": null,
+      "hostname": "medicalcouncil.ie",
+      "already_seeded": true
+    },
+    {
+      "label": "National Bureau of Criminal Investigation",
+      "website": "http://garda.ie/Controller.aspx?Page=32&Lang=1",
+      "dissolved": null,
+      "hostname": "garda.ie",
+      "already_seeded": false
+    },
+    {
+      "label": "Special Detective Unit",
+      "website": "http://www.garda.ie/Controller.aspx?Page=40&Lang=1",
+      "dissolved": null,
+      "hostname": "garda.ie",
+      "already_seeded": false
+    },
+    {
+      "label": "Garda National Economic Crime Bureau",
+      "website": "https://www.garda.ie/en/about-us/organised-serious-crime/garda-national-economic-crime-bureau/",
+      "dissolved": null,
+      "hostname": "garda.ie",
+      "already_seeded": false
+    },
+    {
+      "label": "SOLAS",
+      "website": "https://www.solas.ie/",
+      "dissolved": null,
+      "hostname": "solas.ie",
+      "already_seeded": false
+    },
+    {
+      "label": "Electoral Commission",
+      "website": "https://www.electoralcommission.ie/",
+      "dissolved": null,
+      "hostname": "electoralcommission.ie",
+      "already_seeded": false
+    },
+    {
+      "label": "Data Protection Commission",
+      "website": "https://www.dataprotection.ie/",
+      "dissolved": null,
+      "hostname": "dataprotection.ie",
+      "already_seeded": false
+    },
+    {
+      "label": "General Register Office of Ireland",
+      "website": "http://www.groireland.ie",
+      "dissolved": null,
+      "hostname": "groireland.ie",
+      "already_seeded": false
+    },
+    {
+      "label": "Department of Further and Higher Education, Research, Innovation and Science",
+      "website": "https://www.gov.ie/en/organisation/department-of-higher-education-innovation-and-science/",
+      "dissolved": null,
+      "hostname": "gov.ie",
+      "already_seeded": true
+    },
+    {
+      "label": "Garda National Cyber Crime Bureau",
+      "website": "https://www.garda.ie/ga/fuinn/coireacht-eagraithe-agus-tromchoireacht/cibearchoireachta/",
+      "dissolved": null,
+      "hostname": "garda.ie",
+      "already_seeded": false
+    },
+    {
+      "label": "Garda National Cyber Crime Bureau",
+      "website": "https://www.garda.ie/en/about-us/organised-serious-crime/garda-national-cyber-crime-bureau-gnccb-/",
+      "dissolved": null,
+      "hostname": "garda.ie",
+      "already_seeded": false
+    },
+    {
+      "label": "Decision Support Service",
+      "website": "https://decisionsupportservice.ie/",
+      "dissolved": null,
+      "hostname": "decisionsupportservice.ie",
+      "already_seeded": false
+    },
+    {
+      "label": "Property Services Regulatory Authority",
+      "website": "https://www.psr.ie/",
+      "dissolved": null,
+      "hostname": "psr.ie",
+      "already_seeded": false
+    },
+    {
+      "label": "Financial Services and Pensions Ombudsman",
+      "website": "https://www.fspo.ie/",
+      "dissolved": null,
+      "hostname": "fspo.ie",
+      "already_seeded": false
+    },
+    {
+      "label": "CORU",
+      "website": "https://www.coru.ie/",
+      "dissolved": null,
+      "hostname": "coru.ie",
+      "already_seeded": false
+    },
+    {
+      "label": "Teaching Council",
+      "website": "https://www.teachingcouncil.ie/",
+      "dissolved": null,
+      "hostname": "teachingcouncil.ie",
+      "already_seeded": true
+    },
+    {
+      "label": "Dental Council",
+      "website": "https://www.dentalcouncil.ie/",
+      "dissolved": null,
+      "hostname": "dentalcouncil.ie",
+      "already_seeded": true
+    },
+    {
+      "label": "National Driver Licence Service",
+      "website": "https://www.ndls.ie/",
+      "dissolved": null,
+      "hostname": "ndls.ie",
+      "already_seeded": false
+    },
+    {
+      "label": "Labour Court",
+      "website": "https://www.labourcourt.ie/",
+      "dissolved": null,
+      "hostname": "labourcourt.ie",
+      "already_seeded": false
+    }
+  ],
+  "regional": {},
+  "note": "Candidate list only -- not merged into any TOON seed. Verify liveness (DNS/HTTP) and currency before adding any domain; 'dissolved' being empty does not guarantee an entity is still active, and 'already_seeded' is a hostname-suffix match, not a guarantee of exact equivalence."
+}

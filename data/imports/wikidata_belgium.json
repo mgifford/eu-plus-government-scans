@@ -1,0 +1,274 @@
+{
+  "country": "Belgium",
+  "wikidata_qid": "Q31",
+  "national": [
+    {
+      "label": "Statbel",
+      "website": "https://statbel.fgov.be/",
+      "dissolved": null,
+      "hostname": "statbel.fgov.be",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Public Service Foreign Affairs",
+      "website": "https://diplomatie.belgium.be",
+      "dissolved": null,
+      "hostname": "diplomatie.belgium.be",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Public Service Interior",
+      "website": "https://www.ibz.be/",
+      "dissolved": null,
+      "hostname": "ibz.be",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Government of Belgium",
+      "website": "https://www.gouvernement-federal.be/",
+      "dissolved": null,
+      "hostname": "gouvernement-federal.be",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Government of Belgium",
+      "website": "https://www.federale-regering.be/",
+      "dissolved": null,
+      "hostname": "federale-regering.be",
+      "already_seeded": false
+    },
+    {
+      "label": "National Geographic Institute",
+      "website": "https://www.ngi.be/",
+      "dissolved": null,
+      "hostname": "ngi.be",
+      "already_seeded": false
+    },
+    {
+      "label": "Belgian Court of Cassation",
+      "website": "https://cass.be/",
+      "dissolved": null,
+      "hostname": "cass.be",
+      "already_seeded": false
+    },
+    {
+      "label": "Chamber of Representatives",
+      "website": "https://www.lachambre.be/",
+      "dissolved": null,
+      "hostname": "lachambre.be",
+      "already_seeded": false
+    },
+    {
+      "label": "Chamber of Representatives",
+      "website": "https://www.dekamer.be/",
+      "dissolved": null,
+      "hostname": "dekamer.be",
+      "already_seeded": false
+    },
+    {
+      "label": "Senate of Belgium",
+      "website": "https://www.senate.be/",
+      "dissolved": null,
+      "hostname": "senate.be",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Public Service Justice",
+      "website": "https://justice.belgium.be/",
+      "dissolved": null,
+      "hostname": "justice.belgium.be",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Public Service Finance",
+      "website": "https://fin.belgium.be",
+      "dissolved": null,
+      "hostname": "fin.belgium.be",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Public Service Social Security",
+      "website": "http://socialsecurity.belgium.be/",
+      "dissolved": null,
+      "hostname": "socialsecurity.belgium.be",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Public Service Economy",
+      "website": "http://economie.fgov.be",
+      "dissolved": null,
+      "hostname": "economie.fgov.be",
+      "already_seeded": true
+    },
+    {
+      "label": "Constitutional Court of Belgium",
+      "website": "https://www.const-court.be/",
+      "dissolved": null,
+      "hostname": "const-court.be",
+      "already_seeded": false
+    },
+    {
+      "label": "Council of State",
+      "website": "http://www.raadvst-consetat.be/",
+      "dissolved": null,
+      "hostname": "raadvst-consetat.be",
+      "already_seeded": false
+    },
+    {
+      "label": "skeyes",
+      "website": "https://www.skeyes.be",
+      "dissolved": null,
+      "hostname": "skeyes.be",
+      "already_seeded": false
+    },
+    {
+      "label": "Belgian Civil Protection",
+      "website": "http://www.securitecivile.be/",
+      "dissolved": null,
+      "hostname": "securitecivile.be",
+      "already_seeded": false
+    },
+    {
+      "label": "ONDRAF",
+      "website": "https://www.ondraf.be/",
+      "dissolved": null,
+      "hostname": "ondraf.be",
+      "already_seeded": false
+    },
+    {
+      "label": "ONDRAF",
+      "website": "https://www.niras.be/",
+      "dissolved": null,
+      "hostname": "niras.be",
+      "already_seeded": false
+    },
+    {
+      "label": "Belgian Institute for Postal services and Telecommunications",
+      "website": "https://www.bipt.be/",
+      "dissolved": null,
+      "hostname": "bipt.be",
+      "already_seeded": false
+    },
+    {
+      "label": "Defence",
+      "website": "https://www.mil.be/fr/",
+      "dissolved": null,
+      "hostname": "mil.be",
+      "already_seeded": true
+    },
+    {
+      "label": "Defence",
+      "website": "http://www.mil.be/",
+      "dissolved": null,
+      "hostname": "mil.be",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Public Service Transport",
+      "website": "https://mobilit.belgium.be",
+      "dissolved": null,
+      "hostname": "mobilit.belgium.be",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Public Service Employment",
+      "website": "https://employment.belgium.be",
+      "dissolved": null,
+      "hostname": "employment.belgium.be",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Prosecutor's Office",
+      "website": "https://www.om-mp.be/nl/uw-om/federaal-parket/contact",
+      "dissolved": null,
+      "hostname": "om-mp.be",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Prosecutor's Office",
+      "website": "https://www.om-mp.be/fr/votre-mp/parquet-federal/contact",
+      "dissolved": null,
+      "hostname": "om-mp.be",
+      "already_seeded": false
+    },
+    {
+      "label": "Council for Alien Disputes",
+      "website": "https://www.rvv-cce.be/",
+      "dissolved": null,
+      "hostname": "rvv-cce.be",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of the German-speaking Community",
+      "website": "http://www.dglive.be/",
+      "dissolved": null,
+      "hostname": "dglive.be",
+      "already_seeded": false
+    },
+    {
+      "label": "Belgian Court of Arbitration for Sport",
+      "website": "http://www.bas-cbas.be/",
+      "dissolved": null,
+      "hostname": "bas-cbas.be",
+      "already_seeded": false
+    },
+    {
+      "label": "Labor Auditor",
+      "website": "https://www.om-mp.be/fr/votre-mp/auditorats-travail",
+      "dissolved": null,
+      "hostname": "om-mp.be",
+      "already_seeded": false
+    },
+    {
+      "label": "Labor Auditor",
+      "website": "https://www.om-mp.be/nl/uw-om/arbeidsauditoraten",
+      "dissolved": null,
+      "hostname": "om-mp.be",
+      "already_seeded": false
+    },
+    {
+      "label": "Data Protection Authority",
+      "website": "https://www.gegevensbeschermingsautoriteit.be/",
+      "dissolved": null,
+      "hostname": "gegevensbeschermingsautoriteit.be",
+      "already_seeded": false
+    },
+    {
+      "label": "Data Protection Authority",
+      "website": "https://www.dataprotectionauthority.be/",
+      "dissolved": null,
+      "hostname": "dataprotectionauthority.be",
+      "already_seeded": false
+    },
+    {
+      "label": "Data Protection Authority",
+      "website": "https://www.autoriteprotectiondonnees.be/",
+      "dissolved": null,
+      "hostname": "autoriteprotectiondonnees.be",
+      "already_seeded": false
+    },
+    {
+      "label": "Belgian Office for Intellectual Property",
+      "website": "https://economie.fgov.be/en/themes/intellectual-property/patents/belgian-patents",
+      "dissolved": null,
+      "hostname": "economie.fgov.be",
+      "already_seeded": true
+    },
+    {
+      "label": "De Wever Government",
+      "website": "https://federale-regering.be/",
+      "dissolved": null,
+      "hostname": "federale-regering.be",
+      "already_seeded": false
+    },
+    {
+      "label": "Inspectorate of Finance",
+      "website": "https://inspfin.be",
+      "dissolved": null,
+      "hostname": "inspfin.be",
+      "already_seeded": false
+    }
+  ],
+  "regional": {},
+  "note": "Candidate list only -- not merged into any TOON seed. Verify liveness (DNS/HTTP) and currency before adding any domain; 'dissolved' being empty does not guarantee an entity is still active, and 'already_seeded' is a hostname-suffix match, not a guarantee of exact equivalence."
+}

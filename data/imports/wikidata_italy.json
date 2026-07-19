@@ -1,0 +1,288 @@
+{
+  "country": "Italy",
+  "wikidata_qid": "Q38",
+  "national": [
+    {
+      "label": "Carabinieri",
+      "website": "https://www.carabinieri.it/",
+      "dissolved": null,
+      "hostname": "carabinieri.it",
+      "already_seeded": false
+    },
+    {
+      "label": "Protezione Civile",
+      "website": "http://www.protezionecivile.gov.it/",
+      "dissolved": null,
+      "hostname": "protezionecivile.gov.it",
+      "already_seeded": false
+    },
+    {
+      "label": "Italian National Institute of Statistics",
+      "website": "https://www.istat.it",
+      "dissolved": null,
+      "hostname": "istat.it",
+      "already_seeded": true
+    },
+    {
+      "label": "Italian National Institute of Statistics",
+      "website": "http://demo.istat.it",
+      "dissolved": null,
+      "hostname": "demo.istat.it",
+      "already_seeded": true
+    },
+    {
+      "label": "Italian Agency of Revenue",
+      "website": "https://www.agenziaentrate.gov.it",
+      "dissolved": null,
+      "hostname": "agenziaentrate.gov.it",
+      "already_seeded": true
+    },
+    {
+      "label": "Senate of the Republic",
+      "website": "https://senato.it",
+      "dissolved": null,
+      "hostname": "senato.it",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Health of Italy",
+      "website": "https://www.salute.gov.it/",
+      "dissolved": null,
+      "hostname": "salute.gov.it",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Agricultural, Food and Forest Policies",
+      "website": "https://www.politicheagricole.it/",
+      "dissolved": null,
+      "hostname": "politicheagricole.it",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Foreign Affairs and International Cooperation",
+      "website": "https://www.esteri.it/",
+      "dissolved": null,
+      "hostname": "esteri.it",
+      "already_seeded": true
+    },
+    {
+      "label": "Chamber of Deputies of Italy",
+      "website": "http://www.camera.it",
+      "dissolved": null,
+      "hostname": "camera.it",
+      "already_seeded": true
+    },
+    {
+      "label": "Constitutional Court of Italy",
+      "website": "https://www.cortecostituzionale.it/default.do",
+      "dissolved": null,
+      "hostname": "cortecostituzionale.it",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Enterprises and Made in Italy",
+      "website": "https://www.mimit.gov.it",
+      "dissolved": null,
+      "hostname": "mimit.gov.it",
+      "already_seeded": false
+    },
+    {
+      "label": "The Italian Companies and Stock Exchange Commission",
+      "website": "http://www.consob.it/",
+      "dissolved": null,
+      "hostname": "consob.it",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Economy and Finance",
+      "website": "https://www.mef.gov.it/",
+      "dissolved": null,
+      "hostname": "mef.gov.it",
+      "already_seeded": true
+    },
+    {
+      "label": "Supreme Court of Cassation",
+      "website": "https://www.cortedicassazione.it",
+      "dissolved": null,
+      "hostname": "cortedicassazione.it",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Infrastructure and Transport",
+      "website": "https://www.mit.gov.it/",
+      "dissolved": null,
+      "hostname": "mit.gov.it",
+      "already_seeded": false
+    },
+    {
+      "label": "Dipartimento delle Informazioni per la Sicurezza",
+      "website": "https://www.sicurezzanazionale.gov.it/",
+      "dissolved": null,
+      "hostname": "sicurezzanazionale.gov.it",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Education, Universities and Research",
+      "website": "https://www.miur.gov.it/",
+      "dissolved": "2020-01-01T00:00:00Z",
+      "hostname": "miur.gov.it",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Culture",
+      "website": "https://www.cultura.gov.it/",
+      "dissolved": null,
+      "hostname": "cultura.gov.it",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of the Interior of Italy",
+      "website": "https://www.interno.gov.it/",
+      "dissolved": null,
+      "hostname": "interno.gov.it",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Justice",
+      "website": "https://www.giustizia.it/",
+      "dissolved": null,
+      "hostname": "giustizia.it",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Defence of Italy",
+      "website": "https://www.difesa.it/",
+      "dissolved": null,
+      "hostname": "difesa.it",
+      "already_seeded": true
+    },
+    {
+      "label": "Italian Data Protection Authority",
+      "website": "https://www.garanteprivacy.it/",
+      "dissolved": null,
+      "hostname": "garanteprivacy.it",
+      "already_seeded": false
+    },
+    {
+      "label": "Department of Public Safety",
+      "website": "http://www.interno.gov.it/it/ministero/dipartimenti/dipartimento-pubblica-sicurezza",
+      "dissolved": null,
+      "hostname": "interno.gov.it",
+      "already_seeded": true
+    },
+    {
+      "label": "Autorità di Regolazione per Energia Reti e Ambiente",
+      "website": "https://www.arera.it/",
+      "dissolved": null,
+      "hostname": "arera.it",
+      "already_seeded": false
+    },
+    {
+      "label": "Department of Family Policy of Italy",
+      "website": "http://www.politichefamiglia.it/home.aspx",
+      "dissolved": null,
+      "hostname": "politichefamiglia.it",
+      "already_seeded": false
+    },
+    {
+      "label": "Dipartimento della funzione pubblica",
+      "website": "https://www.funzionepubblica.gov.it/",
+      "dissolved": null,
+      "hostname": "funzionepubblica.gov.it",
+      "already_seeded": false
+    },
+    {
+      "label": "Unità per la semplificazione",
+      "website": "https://www.funzionepubblica.gov.it/uffici/unita-la-semplificazione-e-la-qualita-della-regolazione",
+      "dissolved": null,
+      "hostname": "funzionepubblica.gov.it",
+      "already_seeded": false
+    },
+    {
+      "label": "dipartimento per le Riforme Istituzionali",
+      "website": "https://www.riformeistituzionali.gov.it/",
+      "dissolved": null,
+      "hostname": "riformeistituzionali.gov.it",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of the Environment",
+      "website": "https://www.mite.gov.it/",
+      "dissolved": "2021-02-13T00:00:00Z",
+      "hostname": "mite.gov.it",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Universities and Research",
+      "website": "https://www.mur.gov.it/",
+      "dissolved": "2001-06-11T00:00:00Z",
+      "hostname": "mur.gov.it",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Education and Merit",
+      "website": "https://www.istruzione.it/",
+      "dissolved": null,
+      "hostname": "istruzione.it",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Labour and Social Policies",
+      "website": "https://www.lavoro.gov.it/",
+      "dissolved": null,
+      "hostname": "lavoro.gov.it",
+      "already_seeded": true
+    },
+    {
+      "label": "Autorità Garante per l'Infanzia e l'Adolescenza",
+      "website": "https://www.garanteinfanzia.org/",
+      "dissolved": null,
+      "hostname": "garanteinfanzia.org",
+      "already_seeded": false
+    },
+    {
+      "label": "Department of Civil Liberties and Immigration",
+      "website": "https://www.interno.gov.it/it/ministero/dipartimenti/dipartimento-liberta-civili-e-limmigrazione",
+      "dissolved": null,
+      "hostname": "interno.gov.it",
+      "already_seeded": true
+    },
+    {
+      "label": "ItaliaMeteo",
+      "website": "https://www.agenziaitaliameteo.it/",
+      "dissolved": null,
+      "hostname": "agenziaitaliameteo.it",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Tourism of Italy",
+      "website": "https://www.ministeroturismo.gov.it",
+      "dissolved": null,
+      "hostname": "ministeroturismo.gov.it",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of the Ecological Transition",
+      "website": "https://www.mite.gov.it",
+      "dissolved": null,
+      "hostname": "mite.gov.it",
+      "already_seeded": false
+    },
+    {
+      "label": "Department for policies in support of persons with disabilities",
+      "website": "https://www.disabilita.governo.it/it/",
+      "dissolved": null,
+      "hostname": "disabilita.governo.it",
+      "already_seeded": true
+    },
+    {
+      "label": "Department for sea politics",
+      "website": "https://www.dipartimentopolitichemare.gov.it/it/",
+      "dissolved": null,
+      "hostname": "dipartimentopolitichemare.gov.it",
+      "already_seeded": false
+    }
+  ],
+  "regional": {},
+  "note": "Candidate list only -- not merged into any TOON seed. Verify liveness (DNS/HTTP) and currency before adding any domain; 'dissolved' being empty does not guarantee an entity is still active, and 'already_seeded' is a hostname-suffix match, not a guarantee of exact equivalence."
+}

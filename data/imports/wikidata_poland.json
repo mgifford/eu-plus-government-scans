@@ -1,0 +1,393 @@
+{
+  "country": "Poland",
+  "wikidata_qid": "Q36",
+  "national": [
+    {
+      "label": "Sejm of the Republic of Poland",
+      "website": "https://sejm.gov.pl",
+      "dissolved": null,
+      "hostname": "sejm.gov.pl",
+      "already_seeded": false
+    },
+    {
+      "label": "Senate of Poland",
+      "website": "https://senat.gov.pl",
+      "dissolved": null,
+      "hostname": "senat.gov.pl",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Foreign Affairs of Poland",
+      "website": "http://www.gov.pl/dyplomacja",
+      "dissolved": null,
+      "hostname": "gov.pl",
+      "already_seeded": true
+    },
+    {
+      "label": "The Internal Security Agency",
+      "website": "http://www.abw.gov.pl",
+      "dissolved": null,
+      "hostname": "abw.gov.pl",
+      "already_seeded": false
+    },
+    {
+      "label": "Supreme Court of Poland",
+      "website": "http://www.sn.pl",
+      "dissolved": null,
+      "hostname": "sn.pl",
+      "already_seeded": false
+    },
+    {
+      "label": "Agencja Wywiadu",
+      "website": "https://aw.gov.pl/en",
+      "dissolved": null,
+      "hostname": "aw.gov.pl",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of State Treasury",
+      "website": "http://www.msp.gov.pl/",
+      "dissolved": "2017-03-31T00:00:00Z",
+      "hostname": "msp.gov.pl",
+      "already_seeded": false
+    },
+    {
+      "label": "Statistics Poland",
+      "website": "https://stat.gov.pl/en",
+      "dissolved": null,
+      "hostname": "stat.gov.pl",
+      "already_seeded": false
+    },
+    {
+      "label": "Statistics Poland",
+      "website": "https://stat.gov.pl",
+      "dissolved": null,
+      "hostname": "stat.gov.pl",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of National Defence of Poland",
+      "website": "https://www.gov.pl/web/obrona-narodowa",
+      "dissolved": null,
+      "hostname": "gov.pl",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Interior and Administration",
+      "website": "https://www.gov.pl/web/mswia",
+      "dissolved": null,
+      "hostname": "gov.pl",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Health of Poland",
+      "website": "https://www.gov.pl/web/zdrowie",
+      "dissolved": null,
+      "hostname": "gov.pl",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Culture and National Heritage",
+      "website": "http://www.gov.pl/kultura",
+      "dissolved": null,
+      "hostname": "gov.pl",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Science and Higher Education",
+      "website": "https://www.gov.pl/web/nauka",
+      "dissolved": null,
+      "hostname": "gov.pl",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of National Education",
+      "website": "https://www.gov.pl/web/edukacja",
+      "dissolved": null,
+      "hostname": "gov.pl",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Environment",
+      "website": "https://www.gov.pl/web/srodowisko",
+      "dissolved": "2020-10-06T00:00:00Z",
+      "hostname": "gov.pl",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Regional Development",
+      "website": "http://www.mrr.gov.pl/",
+      "dissolved": "2013-01-01T00:00:00Z",
+      "hostname": "mrr.gov.pl",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Sport and Tourism",
+      "website": "https://www.gov.pl/web/sport",
+      "dissolved": null,
+      "hostname": "gov.pl",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Family, Labour and Social Policy",
+      "website": "https://www.gov.pl/web/rodzina",
+      "dissolved": null,
+      "hostname": "gov.pl",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Finance of Poland",
+      "website": "https://www.gov.pl/web/finanse",
+      "dissolved": null,
+      "hostname": "gov.pl",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Economy of Poland",
+      "website": "http://www.mg.gov.pl/",
+      "dissolved": "2003-01-08T00:00:00Z",
+      "hostname": "mg.gov.pl",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Justice",
+      "website": "https://www.gov.pl/web/sprawiedliwosc/",
+      "dissolved": null,
+      "hostname": "gov.pl",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Agriculture and Rural Development",
+      "website": "https://www.gov.pl/web/rolnictwo/",
+      "dissolved": null,
+      "hostname": "gov.pl",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Administration and Digitization (Poland)",
+      "website": "http://mac.gov.pl/",
+      "dissolved": "2015-11-16T00:00:00Z",
+      "hostname": "mac.gov.pl",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Infrastructure of Poland",
+      "website": "https://www.gov.pl/web/infrastruktura",
+      "dissolved": null,
+      "hostname": "gov.pl",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Interior",
+      "website": "http://www.msw.gov.pl/",
+      "dissolved": "2015-11-24T00:00:00Z",
+      "hostname": "msw.gov.pl",
+      "already_seeded": false
+    },
+    {
+      "label": "Polish Patent Office",
+      "website": "https://uprp.gov.pl/pl",
+      "dissolved": null,
+      "hostname": "uprp.gov.pl",
+      "already_seeded": false
+    },
+    {
+      "label": "Inspector General for the Protection of Personal Data",
+      "website": "http://www.giodo.gov.pl/",
+      "dissolved": "2018-05-24T00:00:00Z",
+      "hostname": "giodo.gov.pl",
+      "already_seeded": false
+    },
+    {
+      "label": "Chief Inspector of Environmental Protection",
+      "website": "http://www.gios.gov.pl",
+      "dissolved": null,
+      "hostname": "gios.gov.pl",
+      "already_seeded": false
+    },
+    {
+      "label": "Public Procurement Office",
+      "website": "http://www.uzp.gov.pl",
+      "dissolved": null,
+      "hostname": "uzp.gov.pl",
+      "already_seeded": false
+    },
+    {
+      "label": "National Water Management Authority",
+      "website": "http://www.kzgw.gov.pl/",
+      "dissolved": null,
+      "hostname": "kzgw.gov.pl",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Transportation (Poland)",
+      "website": "https://www.gov.pl/",
+      "dissolved": "2007-11-16T00:00:00Z",
+      "hostname": "gov.pl",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Transport, Construction and Marine Economy",
+      "website": "http://www.transport.gov.pl/",
+      "dissolved": "2013-11-27T00:00:00Z",
+      "hostname": "transport.gov.pl",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Transportation and Construction (Poland)",
+      "website": "http://www.mt.gov.pl",
+      "dissolved": "2006-05-05T00:00:00Z",
+      "hostname": "mt.gov.pl",
+      "already_seeded": false
+    },
+    {
+      "label": "National Science Centre Poland",
+      "website": "http://www.ncn.gov.pl/",
+      "dissolved": null,
+      "hostname": "ncn.gov.pl",
+      "already_seeded": false
+    },
+    {
+      "label": "National Electoral Commission (Poland)",
+      "website": "http://pkw.gov.pl/",
+      "dissolved": null,
+      "hostname": "pkw.gov.pl",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Infrastructure and Development",
+      "website": "http://www.mir.gov.pl",
+      "dissolved": "2015-01-01T00:00:00Z",
+      "hostname": "mir.gov.pl",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Digital Affairs",
+      "website": "https://www.gov.pl/web/cyfryzacja",
+      "dissolved": null,
+      "hostname": "gov.pl",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Energy",
+      "website": "https://www.gov.pl/web/energia",
+      "dissolved": "2019-11-15T00:00:00Z",
+      "hostname": "gov.pl",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Marine Economy and Inland Navigation",
+      "website": "https://www.mgm.gov.pl/",
+      "dissolved": "2020-01-01T00:00:00Z",
+      "hostname": "mgm.gov.pl",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Development of Poland",
+      "website": "http://www.mr.gov.pl/",
+      "dissolved": "2020-10-07T00:00:00Z",
+      "hostname": "mr.gov.pl",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Infrastructure and Construction",
+      "website": "http://mib.gov.pl/",
+      "dissolved": "2018-01-01T00:00:00Z",
+      "hostname": "mib.gov.pl",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Investment and Economic Development",
+      "website": "http://www.miir.gov.pl/",
+      "dissolved": "2019-01-01T00:00:00Z",
+      "hostname": "miir.gov.pl",
+      "already_seeded": false
+    },
+    {
+      "label": "State Water Holding \"Polish Waters\"",
+      "website": "https://www.gov.pl/wody-polskie/",
+      "dissolved": null,
+      "hostname": "gov.pl",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Entrepreneurship and Technology",
+      "website": "http://www.mpit.gov.pl/",
+      "dissolved": null,
+      "hostname": "mpit.gov.pl",
+      "already_seeded": false
+    },
+    {
+      "label": "Personal Data Protection Office",
+      "website": "https://uodo.gov.pl/",
+      "dissolved": null,
+      "hostname": "uodo.gov.pl",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Climate",
+      "website": "https://www.gov.pl/web/klimat",
+      "dissolved": "2020-10-06T00:00:00Z",
+      "hostname": "gov.pl",
+      "already_seeded": true
+    },
+    {
+      "label": "Medical Research Agency of Poland",
+      "website": "https://abm.gov.pl",
+      "dissolved": null,
+      "hostname": "abm.gov.pl",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of State Assets",
+      "website": "https://www.gov.pl/web/aktywa-panstwowe",
+      "dissolved": null,
+      "hostname": "gov.pl",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Development Funds and Regional Policy",
+      "website": "https://www.gov.pl/web/fundusze-regiony",
+      "dissolved": null,
+      "hostname": "gov.pl",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Climate and Environment",
+      "website": "https://www.gov.pl/web/klimat",
+      "dissolved": null,
+      "hostname": "gov.pl",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Development and Technology",
+      "website": "https://www.gov.pl/web/rozwoj-technologia",
+      "dissolved": null,
+      "hostname": "gov.pl",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Industry",
+      "website": "https://www.gov.pl/web/przemysl",
+      "dissolved": "2025-01-01T00:00:00Z",
+      "hostname": "gov.pl",
+      "already_seeded": true
+    },
+    {
+      "label": "Bureau for Chemical Substance",
+      "website": "https://www.gov.pl/web/chemikalia",
+      "dissolved": null,
+      "hostname": "gov.pl",
+      "already_seeded": true
+    },
+    {
+      "label": "Main Inspectorate of Marine Fisheries",
+      "website": "https://www.gov.pl/web/girm",
+      "dissolved": null,
+      "hostname": "gov.pl",
+      "already_seeded": true
+    }
+  ],
+  "regional": {},
+  "note": "Candidate list only -- not merged into any TOON seed. Verify liveness (DNS/HTTP) and currency before adding any domain; 'dissolved' being empty does not guarantee an entity is still active, and 'already_seeded' is a hostname-suffix match, not a guarantee of exact equivalence."
+}
