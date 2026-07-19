@@ -6,7 +6,7 @@ permalink: /domains/malta.html
 
 [← Back to all countries](../domains.html)
 
-**265 domains** · **608 pages**
+**267 domains** · **610 pages**
 
 | Domain | Pages |
 |--------|-------|
@@ -110,6 +110,7 @@ permalink: /domains/malta.html
 | `humanrights.gov.mt` | [Visit humanrights.gov.mt homepage](https://humanrights.gov.mt/), [Visit humanrights.gov.mt/about-us](https://humanrights.gov.mt/about-us), [Visit humanrights.gov.mt/mt/](https://humanrights.gov.mt/mt/) |
 | `icis.gov.mt` | [Visit icis.gov.mt homepage](https://icis.gov.mt/) |
 | `identita.gov.mt` | [Visit identita.gov.mt homepage](https://identita.gov.mt/), [Visit identita.gov.mt/media-news/](https://identita.gov.mt/media-news/), [Visit identita.gov.mt/privacy-statement/](https://identita.gov.mt/privacy-statement/) |
+| `idpc.org.mt` | [Visit idpc.org.mt homepage](https://idpc.org.mt/) |
 | `ife.portal.gov.mt` | [Visit ife.portal.gov.mt homepage](https://ife.portal.gov.mt/) |
 | `ildmalta.gov.mt` | [Visit ildmalta.gov.mt homepage](https://ildmalta.gov.mt/), [Visit ildmalta.gov.mt/about/](https://ildmalta.gov.mt/about/), [Visit ildmalta.gov.mt/events/first-conference-as-a-directorate/](https://ildmalta.gov.mt/events/first-conference-as-a-directorate/) |
 | `inclusion.gov.mt` | [Visit inclusion.gov.mt homepage](https://inclusion.gov.mt/), [Visit inclusion.gov.mt/protection-of-adults-in-situations-of-vulnerability-act-pasva/](https://inclusion.gov.mt/protection-of-adults-in-situations-of-vulnerability-act-pasva/), [Visit inclusion.gov.mt/subsidized-taxi-service/](https://inclusion.gov.mt/subsidized-taxi-service/) |
@@ -148,6 +149,7 @@ permalink: /domains/malta.html
 | `medicinesauthority.gov.mt` | [Visit medicinesauthority.gov.mt homepage](https://medicinesauthority.gov.mt/), [Visit medicinesauthority.gov.mt/form-details](https://medicinesauthority.gov.mt/form-details?surID=37&cat=3) |
 | `melliehalc.gov.mt` | [Visit melliehalc.gov.mt homepage](https://melliehalc.gov.mt/), [Visit melliehalc.gov.mt/live-streaming/](https://melliehalc.gov.mt/live-streaming/) |
 | `mentalhealthservices.gov.mt` | [Visit mentalhealthservices.gov.mt homepage](https://mentalhealthservices.gov.mt/), [Visit mentalhealthservices.gov.mt/en/](https://mentalhealthservices.gov.mt/en/), [Visit mentalhealthservices.gov.mt/ikkuntattjana/](https://mentalhealthservices.gov.mt/ikkuntattjana/) |
+| `mfin.gov.mt` | [Visit mfin.gov.mt homepage](https://mfin.gov.mt/) |
 | `mikielantonvassallicollege.gov.mt` | [Visit mikielantonvassallicollege.gov.mt homepage](https://mikielantonvassallicollege.gov.mt/), [Visit mikielantonvassallicollege.gov.mt/about-mavc/](https://mikielantonvassallicollege.gov.mt/about-mavc/), [Visit mikielantonvassallicollege.gov.mt/category/mikiel-anton-vassalli-college/](https://mikielantonvassallicollege.gov.mt/category/mikiel-anton-vassalli-college/) |
 | `missions.foreign.gov.mt` | [Visit missions.foreign.gov.mt homepage](https://missions.foreign.gov.mt/), [Visit missions.foreign.gov.mt/permanent-representations/](https://missions.foreign.gov.mt/permanent-representations/), [Visit missions.foreign.gov.mt/press/eu-jeel-connect-event-entitled-building-bridges-through-time-preserving-heritage-for-a-sustainable-future/](https://missions.foreign.gov.mt/press/eu-jeel-connect-event-entitled-building-bridges-through-time-preserving-heritage-for-a-sustainable-future/) |
 | `mita.gov.mt` | [Visit mita.gov.mt homepage](https://mita.gov.mt/), [Visit mita.gov.mt/careers/](https://mita.gov.mt/careers/), [Visit mita.gov.mt/terms-of-use/](https://mita.gov.mt/terms-of-use/) |

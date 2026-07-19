@@ -6,7 +6,7 @@ permalink: /domains/czechia.html
 
 [← Back to all countries](../domains.html)
 
-**371 domains** · **843 pages**
+**394 domains** · **866 pages**
 
 | Domain | Pages |
 |--------|-------|
@@ -41,6 +41,7 @@ permalink: /domains/czechia.html
 | `cro.justice.cz` | [Visit cro.justice.cz homepage](https://cro.justice.cz/) |
 | `crzp.mzp.cz` | [Visit crzp.mzp.cz homepage](https://crzp.mzp.cz/), [Visit crzp.mzp.cz/portal/provozni-doba-telefonicke-podpory-v-cervenci-a-srpnu/](https://crzp.mzp.cz/portal/provozni-doba-telefonicke-podpory-v-cervenci-a-srpnu/), [Visit crzp.mzp.cz/registrace](https://crzp.mzp.cz/registrace) |
 | `css.brno.cz` | [Visit css.brno.cz homepage](https://css.brno.cz/), [Visit css.brno.cz/dozp/hlavni-strana-sluzby-pro-osoby-s-potrebou-pomoci](https://css.brno.cz/dozp/hlavni-strana-sluzby-pro-osoby-s-potrebou-pomoci) |
+| `csu.gov.cz` | [Visit csu.gov.cz homepage](https://csu.gov.cz/) |
 | `data.brno.cz` | [Visit data.brno.cz homepage](https://data.brno.cz/), [Visit data.brno.cz/pages/obyvatelstvo-a-bydleni](https://data.brno.cz/pages/obyvatelstvo-a-bydleni), [Visit data.brno.cz/search](https://data.brno.cz/search?collection=Dataset) |
 | `data.mpsv.cz` | [Visit data.mpsv.cz homepage](https://data.mpsv.cz/), [Visit data.mpsv.cz/web/data/kolektivni-vyjednavani](https://data.mpsv.cz/web/data/kolektivni-vyjednavani) |
 | `data.praha.eu` | [Visit data.praha.eu homepage](https://data.praha.eu/), [Visit data.praha.eu/praha-v-cislech](https://data.praha.eu/praha-v-cislech), [Visit data.praha.eu/praha-v-cislech/delka-cyklotras-v-praze](https://data.praha.eu/praha-v-cislech/delka-cyklotras-v-praze) |
@@ -81,6 +82,7 @@ permalink: /domains/czechia.html
 | `envis.praha.eu` | [Visit envis.praha.eu homepage](https://envis.praha.eu/) |
 | `epo.plzen.eu` | [Visit epo.plzen.eu homepage](https://epo.plzen.eu/), [Visit epo.plzen.eu/irj/portal/anonymous](https://epo.plzen.eu/irj/portal/anonymous?NavigationTarget=ROLES://portal_content/IUO/Role/IUO_Anonymni/IUO_Login), [Visit epo.plzen.eu/irj/portal/anonymous](https://epo.plzen.eu/irj/portal/anonymous?NavigationTarget=zivotni_situace&id=vydani-ridicskeho-prukazu) |
 | `epodatelna.justice.cz` | [Visit epodatelna.justice.cz homepage](https://epodatelna.justice.cz/), [Visit epodatelna.justice.cz/ePodatelna/info-el-podani](https://epodatelna.justice.cz/ePodatelna/info-el-podani) |
+| `eru.gov.cz` | [Visit eru.gov.cz homepage](https://eru.gov.cz/) |
 | `esf.justice.cz` | [Visit esf.justice.cz homepage](https://esf.justice.cz/), [Visit esf.justice.cz/ias/isesf/rejstrik](https://esf.justice.cz/ias/isesf/rejstrik;jsessionid=7Pqnd51vQFqxtcPMSxEqIiGv?-1.ILinkListener-htmlContainer-logo) |
 | `eshop.olomouc.eu` | [Visit eshop.olomouc.eu homepage](https://eshop.olomouc.eu/), [Visit eshop.olomouc.eu/kniha-svata-pavlina-patronka-olomouce/](https://eshop.olomouc.eu/kniha-svata-pavlina-patronka-olomouce/) |
 | `esm.justice.cz` | [Visit esm.justice.cz homepage](https://esm.justice.cz/), [Visit esm.justice.cz/ias/issm/prirucka](https://esm.justice.cz/ias/issm/prirucka), [Visit esm.justice.cz/ias/issm/rejstrik](https://esm.justice.cz/ias/issm/rejstrik;jsessionid=PGxFe5nPu712dmGvJAHQx+vt?-1.ILinkListener-htmlContainer-logo) |
@@ -95,8 +97,10 @@ permalink: /domains/czechia.html
 | `ezp.mzcr.cz` | [Visit ezp.mzcr.cz homepage](https://ezp.mzcr.cz/), [Visit ezp.mzcr.cz/Request/DotazStav](https://ezp.mzcr.cz/Request/DotazStav) |
 | `financnigramotnost.mfcr.cz` | [Visit financnigramotnost.mfcr.cz homepage](https://financnigramotnost.mfcr.cz/), [Visit financnigramotnost.mfcr.cz/cs/popis-financniho-trhu](https://financnigramotnost.mfcr.cz/cs/popis-financniho-trhu) |
 | `fulltext.psp.cz` | [Visit fulltext.psp.cz homepage](https://fulltext.psp.cz/), [Visit fulltext.psp.cz/stenozaznamy](https://fulltext.psp.cz/stenozaznamy) |
+| `gacr.cz` | [Visit gacr.cz homepage](https://gacr.cz/) |
 | `geoportal.kraj-lbc.cz` | [Visit geoportal.kraj-lbc.cz homepage](https://geoportal.kraj-lbc.cz/), [Visit geoportal.kraj-lbc.cz/sucho-retence](https://geoportal.kraj-lbc.cz/sucho-retence), [Visit geoportal.kraj-lbc.cz/zivotni-prostredi](https://geoportal.kraj-lbc.cz/zivotni-prostredi) |
 | `geoportal.plzensky-kraj.cz` | [Visit geoportal.plzensky-kraj.cz homepage](https://geoportal.plzensky-kraj.cz/), [Visit geoportal.plzensky-kraj.cz/portal/Contents/ContentItems/4m0wywkdbctbv1xrt7mhpwhtwp](https://geoportal.plzensky-kraj.cz/portal/Contents/ContentItems/4m0wywkdbctbv1xrt7mhpwhtwp), [Visit geoportal.plzensky-kraj.cz/portal/digitalni-technicka-mapa-kraje](https://geoportal.plzensky-kraj.cz/portal/digitalni-technicka-mapa-kraje) |
+| `gibs.gov.cz` | [Visit gibs.gov.cz homepage](https://gibs.gov.cz/) |
 | `gis.brno.cz` | [Visit gis.brno.cz homepage](https://gis.brno.cz/), [Visit gis.brno.cz/mapa/historicka-ortofota/](https://gis.brno.cz/mapa/historicka-ortofota/), [Visit gis.brno.cz/mapa/upd-prikop-koliste/](https://gis.brno.cz/mapa/upd-prikop-koliste/) |
 | `granty.praha.eu` | [Visit granty.praha.eu homepage](https://granty.praha.eu/), [Visit granty.praha.eu/GrantyPortal/LW/Views/Core/Detail](https://granty.praha.eu/GrantyPortal/LW/Views/Core/Detail?action=get&id=762bc1d0-2536-4b83-aea1-d7f75032cd04&idForm=132b1055-5fb5-4b2a-ae4d-ba89ac52f278&idbo=8fc181a5-8096-41f0-a818-697fca0b4cbf) |
 | `hostalkovice.ostrava.cz` | [Visit hostalkovice.ostrava.cz homepage](https://hostalkovice.ostrava.cz/), [Visit hostalkovice.ostrava.cz/cs/resolveuid/7f733d7d0b08269269b44ff9bf043234](https://hostalkovice.ostrava.cz/cs/resolveuid/7f733d7d0b08269269b44ff9bf043234) |
@@ -151,14 +155,21 @@ permalink: /domains/czechia.html
 | `martinov.ostrava.cz` | [Visit martinov.ostrava.cz homepage](https://martinov.ostrava.cz/), [Visit martinov.ostrava.cz/cs/frontpage](https://martinov.ostrava.cz/cs/frontpage) |
 | `marushkapub.liberec.cz` | [Visit marushkapub.liberec.cz homepage](https://marushkapub.liberec.cz/) |
 | `matrika.msmt.cz` | [Visit matrika.msmt.cz homepage](https://matrika.msmt.cz/) |
+| `md.gov.cz` | [Visit md.gov.cz homepage](https://md.gov.cz/) |
 | `mdcr.cz` | [Visit mdcr.cz homepage](https://mdcr.cz/), [Visit mdcr.cz/Media/Media-a-tiskove-zpravy/Prodlouzena-platnost-evidencni-kontroly-osobnich-a](https://mdcr.cz/Media/Media-a-tiskove-zpravy/Prodlouzena-platnost-evidencni-kontroly-osobnich-a) |
 | `mediace.justice.cz` | [Visit mediace.justice.cz homepage](https://mediace.justice.cz/), [Visit mediace.justice.cz/soud-mi-naridil-prvni-setkani-s-mediatorem/](https://mediace.justice.cz/soud-mi-naridil-prvni-setkani-s-mediatorem/) |
 | `mediatori.justice.cz` | [Visit mediatori.justice.cz homepage](https://mediatori.justice.cz/), [Visit mediatori.justice.cz/MediatorPublic/Default.aspx](https://mediatori.justice.cz/MediatorPublic/Default.aspx) |
 | `medlanky.brno.cz` | [Visit medlanky.brno.cz homepage](https://medlanky.brno.cz/), [Visit medlanky.brno.cz/kalendar-akci](https://medlanky.brno.cz/kalendar-akci) |
 | `metropolitni.brno.cz` | [Visit metropolitni.brno.cz homepage](https://metropolitni.brno.cz/), [Visit metropolitni.brno.cz/o-bmo/strategie/](https://metropolitni.brno.cz/o-bmo/strategie/) |
+| `mf.gov.cz` | [Visit mf.gov.cz homepage](https://mf.gov.cz/) |
 | `mfcr.cz` | [Visit mfcr.cz homepage](https://mfcr.cz/), [Visit mfcr.cz/cs/ministerstvo/media/tiskove-zpravy/2025/celnicky-balicek-60073](https://mfcr.cz/cs/ministerstvo/media/tiskove-zpravy/2025/celnicky-balicek-60073), [Visit mfcr.cz/cs/ministerstvo/media/tiskove-zpravy/2025/zakon-o-rizeni-a-kontrole-verejnych-financi-schval-60079](https://mfcr.cz/cs/ministerstvo/media/tiskove-zpravy/2025/zakon-o-rizeni-a-kontrole-verejnych-financi-schval-60079) |
 | `michalkovice.ostrava.cz` | [Visit michalkovice.ostrava.cz homepage](https://michalkovice.ostrava.cz/), [Visit michalkovice.ostrava.cz/cs/resolveuid/d8b86166137aa028709a9841da8fd273](https://michalkovice.ostrava.cz/cs/resolveuid/d8b86166137aa028709a9841da8fd273) |
+| `mk.gov.cz` | [Visit mk.gov.cz homepage](https://mk.gov.cz/) |
+| `mmr.gov.cz` | [Visit mmr.gov.cz homepage](https://mmr.gov.cz/) |
 | `moap.ostrava.cz` | [Visit moap.ostrava.cz homepage](https://moap.ostrava.cz/), [Visit moap.ostrava.cz/cs/resolveuid/48f7f834cbc16cbdb6b2aff018e2f59c](https://moap.ostrava.cz/cs/resolveuid/48f7f834cbc16cbdb6b2aff018e2f59c) |
+| `mocr.mo.gov.cz` | [Visit mocr.mo.gov.cz homepage](https://mocr.mo.gov.cz/) |
+| `mpo.gov.cz` | [Visit mpo.gov.cz homepage](https://mpo.gov.cz/) |
+| `mpsv.gov.cz` | [Visit mpsv.gov.cz homepage](https://mpsv.gov.cz/) |
 | `ms.ostrava.cz` | [Visit ms.ostrava.cz homepage](https://ms.ostrava.cz/), [Visit ms.ostrava.cz/catalog/](https://ms.ostrava.cz/catalog/) |
 | `ms17.plzen.eu` | [Visit ms17.plzen.eu homepage](https://ms17.plzen.eu/), [Visit ms17.plzen.eu/tridy/slunicka/](https://ms17.plzen.eu/tridy/slunicka/) |
 | `ms21.plzen.eu` | [Visit ms21.plzen.eu homepage](https://ms21.plzen.eu/), [Visit ms21.plzen.eu/nase-tridy/u-zvidavych-motylku/](https://ms21.plzen.eu/nase-tridy/u-zvidavych-motylku/) |
@@ -180,7 +191,14 @@ permalink: /domains/czechia.html
 | `ms87.plzen.eu` | [Visit ms87.plzen.eu homepage](https://ms87.plzen.eu/), [Visit ms87.plzen.eu/aktuality/cela-skola/pozvanka-na-popletene-odpoledne/](https://ms87.plzen.eu/aktuality/cela-skola/pozvanka-na-popletene-odpoledne/) |
 | `ms89.plzen.eu` | [Visit ms89.plzen.eu homepage](https://ms89.plzen.eu/), [Visit ms89.plzen.eu/nase-tridy/berusky/](https://ms89.plzen.eu/nase-tridy/berusky/) |
 | `ms91.plzen.eu` | [Visit ms91.plzen.eu homepage](https://ms91.plzen.eu/), [Visit ms91.plzen.eu/zacit-spolu/](https://ms91.plzen.eu/zacit-spolu/) |
+| `msmt.gov.cz` | [Visit msmt.gov.cz homepage](https://msmt.gov.cz/) |
+| `msp.gov.cz` | [Visit msp.gov.cz homepage](https://msp.gov.cz/) |
 | `muss.plzen.eu` | [Visit muss.plzen.eu homepage](https://muss.plzen.eu/), [Visit muss.plzen.eu/sluzby/pobytove-sluzby-pro-seniory/](https://muss.plzen.eu/sluzby/pobytove-sluzby-pro-seniory/) |
+| `mv.gov.cz` | [Visit mv.gov.cz homepage](https://mv.gov.cz/) |
+| `mzd.gov.cz` | [Visit mzd.gov.cz homepage](https://mzd.gov.cz/) |
+| `mze.gov.cz` | [Visit mze.gov.cz homepage](https://mze.gov.cz/) |
+| `mzp.gov.cz` | [Visit mzp.gov.cz homepage](https://mzp.gov.cz/) |
+| `mzv.gov.cz` | [Visit mzv.gov.cz homepage](https://mzv.gov.cz/) |
 | `nadalku.msmt.cz` | [Visit nadalku.msmt.cz homepage](https://nadalku.msmt.cz/), [Visit nadalku.msmt.cz/cs/15-zasad-on-line-pedagogiky](https://nadalku.msmt.cz/cs/15-zasad-on-line-pedagogiky) |
 | `najemniagentura.praha.eu` | [Visit najemniagentura.praha.eu homepage](https://najemniagentura.praha.eu/), [Visit najemniagentura.praha.eu/mna-vydava-vlastni-prirucku-pro-najemniky/](https://najemniagentura.praha.eu/mna-vydava-vlastni-prirucku-pro-najemniky/), [Visit najemniagentura.praha.eu/zasady-cookies-eu/](https://najemniagentura.praha.eu/zasady-cookies-eu/) |
 | `nalezy.ostrava.cz` | [Visit nalezy.ostrava.cz homepage](https://nalezy.ostrava.cz/), [Visit nalezy.ostrava.cz homepage](https://nalezy.ostrava.cz/?Myid=5599&do=modaldetail) |
@@ -193,6 +211,8 @@ permalink: /domains/czechia.html
 | `nistp.mdcr.cz` | [Visit nistp.mdcr.cz homepage](https://nistp.mdcr.cz/), [Visit nistp.mdcr.cz/Account/index.html](https://nistp.mdcr.cz/Account/index.html) |
 | `novaves.ostrava.cz` | [Visit novaves.ostrava.cz homepage](https://novaves.ostrava.cz/), [Visit novaves.ostrava.cz/cs/resolveuid/99da70466f462b0af69a0b2e8fca9d0f](https://novaves.ostrava.cz/cs/resolveuid/99da70466f462b0af69a0b2e8fca9d0f) |
 | `novebazaly.ostrava.cz` | [Visit novebazaly.ostrava.cz homepage](https://novebazaly.ostrava.cz/), [Visit novebazaly.ostrava.cz/architektura/](https://novebazaly.ostrava.cz/architektura/) |
+| `nsoud.cz` | [Visit nsoud.cz homepage](https://nsoud.cz/) |
+| `nssoud.cz` | [Visit nssoud.cz homepage](https://nssoud.cz/) |
 | `objednavky.ostrava.cz` | [Visit objednavky.ostrava.cz homepage](https://objednavky.ostrava.cz/) |
 | `objednavky.uradprace.cz` | [Visit objednavky.uradprace.cz homepage](https://objednavky.uradprace.cz/), [Visit objednavky.uradprace.cz homepage](https://objednavky.uradprace.cz/?IDA=10) |
 | `ochranaobyvatel.olomouc.eu` | [Visit ochranaobyvatel.olomouc.eu homepage](https://ochranaobyvatel.olomouc.eu/), [Visit ochranaobyvatel.olomouc.eu/aktuality/vystrahy-chmu/30197](https://ochranaobyvatel.olomouc.eu/aktuality/vystrahy-chmu/30197) |
@@ -295,12 +315,14 @@ permalink: /domains/czechia.html
 | `umo8.plzen.eu` | [Visit umo8.plzen.eu homepage](https://umo8.plzen.eu/), [Visit umo8.plzen.eu/promo/kulturni-stredy-v-purkmistru-v1/](https://umo8.plzen.eu/promo/kulturni-stredy-v-purkmistru-v1/) |
 | `umo9.plzen.eu` | [Visit umo9.plzen.eu homepage](https://umo9.plzen.eu/), [Visit umo9.plzen.eu/promo/setkani-senioru-a-jubilantu-12-6-2025/](https://umo9.plzen.eu/promo/setkani-senioru-a-jubilantu-12-6-2025/), [Visit umo9.plzen.eu/urad-a-samosprava/potrebuji-si-vyridit/](https://umo9.plzen.eu/urad-a-samosprava/potrebuji-si-vyridit/) |
 | `uok.msmt.cz` | [Visit uok.msmt.cz homepage](https://uok.msmt.cz/), [Visit uok.msmt.cz/uok/home.php](https://uok.msmt.cz/uok/home.php?sec=cr&w=1) |
+| `uoou.gov.cz` | [Visit uoou.gov.cz homepage](https://uoou.gov.cz/) |
 | `up.khk.cz` | [Visit up.khk.cz homepage](https://up.khk.cz/) |
 | `upadci.justice.cz` | [Visit upadci.justice.cz homepage](https://upadci.justice.cz/), [Visit upadci.justice.cz/kontakt.php](https://upadci.justice.cz/kontakt.php) |
 | `upmb.brno.cz` | [Visit upmb.brno.cz homepage](https://upmb.brno.cz/), [Visit upmb.brno.cz/uzemne-analyticke-podklady/](https://upmb.brno.cz/uzemne-analyticke-podklady/), [Visit upmb.brno.cz/uzemni-plan-mesta-brna/vydany/](https://upmb.brno.cz/uzemni-plan-mesta-brna/vydany/) |
 | `urbancentrum.brno.cz` | [Visit urbancentrum.brno.cz homepage](https://urbancentrum.brno.cz/), [Visit urbancentrum.brno.cz homepage](https://urbancentrum.brno.cz/?s=), [Visit urbancentrum.brno.cz/udalosti/](https://urbancentrum.brno.cz/udalosti/) |
 | `urednideska.plzen.eu` | [Visit urednideska.plzen.eu homepage](https://urednideska.plzen.eu/), [Visit urednideska.plzen.eu/mmp/](https://urednideska.plzen.eu/mmp/) |
 | `usneseni.plzen.eu` | [Visit usneseni.plzen.eu homepage](https://usneseni.plzen.eu/), [Visit usneseni.plzen.eu/ground/ground/dashboard](https://usneseni.plzen.eu/ground/ground/dashboard) |
+| `usoud.cz` | [Visit usoud.cz homepage](https://usoud.cz/) |
 | `utulek.ostrava.cz` | [Visit utulek.ostrava.cz homepage](https://utulek.ostrava.cz/), [Visit utulek.ostrava.cz/index.php/dog-detail/](https://utulek.ostrava.cz/index.php/dog-detail/?dogID=661dbdc0-55fb-4f0d-a7fe-4b6814f279b0), [Visit utulek.ostrava.cz/index.php/nabidka-psu/](https://utulek.ostrava.cz/index.php/nabidka-psu/) |
 | `verejnyprostor.praha.eu` | [Visit verejnyprostor.praha.eu homepage](https://verejnyprostor.praha.eu/), [Visit verejnyprostor.praha.eu/jak-si-vypujcit-ulici-nebo-namesti](https://verejnyprostor.praha.eu/jak-si-vypujcit-ulici-nebo-namesti), [Visit verejnyprostor.praha.eu/o-manualu](https://verejnyprostor.praha.eu/o-manualu) |
 | `vesta.justice.cz` | [Visit vesta.justice.cz homepage](https://vesta.justice.cz/), [Visit vesta.justice.cz/debt_relief_entities/255](https://vesta.justice.cz/debt_relief_entities/255), [Visit vesta.justice.cz/debt_relief_entities/398](https://vesta.justice.cz/debt_relief_entities/398) |
@@ -308,6 +330,7 @@ permalink: /domains/czechia.html
 | `virtualni.praha.eu` | [Visit virtualni.praha.eu homepage](https://virtualni.praha.eu/), [Visit virtualni.praha.eu/namesti/index](https://virtualni.praha.eu/namesti/index), [Visit virtualni.praha.eu/veze/index](https://virtualni.praha.eu/veze/index) |
 | `visoh2.mzp.cz` | [Visit visoh2.mzp.cz homepage](https://visoh2.mzp.cz/), [Visit visoh2.mzp.cz/Portal/Knihovna/DetailClanku/7baa6479f2b14a47bac2e3eca915dd8f](https://visoh2.mzp.cz/Portal/Knihovna/DetailClanku/7baa6479f2b14a47bac2e3eca915dd8f?jenPublikovane=True) |
 | `vitkovice.ostrava.cz` | [Visit vitkovice.ostrava.cz homepage](https://vitkovice.ostrava.cz/), [Visit vitkovice.ostrava.cz/cs/frontpage](https://vitkovice.ostrava.cz/cs/frontpage), [Visit vitkovice.ostrava.cz/cs/resolveuid/8a561a249290fc5dc84554a5f1e21538](https://vitkovice.ostrava.cz/cs/resolveuid/8a561a249290fc5dc84554a5f1e21538) |
+| `vlada.gov.cz` | [Visit vlada.gov.cz homepage](https://vlada.gov.cz/) |
 | `vlaky.pardubickykraj.cz` | [Visit vlaky.pardubickykraj.cz homepage](https://vlaky.pardubickykraj.cz/), [Visit vlaky.pardubickykraj.cz/cim-se-svezete/](https://vlaky.pardubickykraj.cz/cim-se-svezete/), [Visit vlaky.pardubickykraj.cz/parni-vlaky-zavitaji-letos-krome-kralicka-take-do-svitav-pardubic-ci-hradce-kralove/](https://vlaky.pardubickykraj.cz/parni-vlaky-zavitaji-letos-krome-kralicka-take-do-svitav-pardubic-ci-hradce-kralove/) |
 | `voda.brno.cz` | [Visit voda.brno.cz homepage](https://voda.brno.cz/), [Visit voda.brno.cz/aktuality/](https://voda.brno.cz/aktuality/), [Visit voda.brno.cz/multimedia/](https://voda.brno.cz/multimedia/) |
 | `vs.liberec.cz` | [Visit vs.liberec.cz homepage](https://vs.liberec.cz/) |

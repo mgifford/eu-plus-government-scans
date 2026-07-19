@@ -6,7 +6,7 @@ permalink: /domains/poland.html
 
 [← Back to all countries](../domains.html)
 
-**6,584 domains** · **14,938 pages**
+**6,597 domains** · **14,951 pages**
 
 | Domain | Pages |
 |--------|-------|
@@ -51,9 +51,11 @@ permalink: /domains/poland.html
 | `aba.wroclaw.pl` | [Visit aba.wroclaw.pl homepage](https://aba.wroclaw.pl/), [Visit aba.wroclaw.pl/zamowienie](https://aba.wroclaw.pl/zamowienie) |
 | `abis.krakow.pl` | [Visit abis.krakow.pl homepage](https://abis.krakow.pl/), [Visit abis.krakow.pl/oferta/automatyka-maszynowa/](https://abis.krakow.pl/oferta/automatyka-maszynowa/), [Visit abis.krakow.pl/oferta/projektowanie-i-budowa-maszyn/](https://abis.krakow.pl/oferta/projektowanie-i-budowa-maszyn/) |
 | `abk.po.opole.pl` | [Visit abk.po.opole.pl homepage](https://abk.po.opole.pl/), [Visit abk.po.opole.pl/page.php](https://abk.po.opole.pl/page.php?mod=viewpage;889), [Visit abk.po.opole.pl/page.php](https://abk.po.opole.pl/page.php?mod=viewpage;96) |
+| `abm.gov.pl` | [Visit abm.gov.pl homepage](https://abm.gov.pl/) |
 | `abovo.bialystok.pl` | [Visit abovo.bialystok.pl homepage](https://abovo.bialystok.pl/), [Visit abovo.bialystok.pl/oferta/](https://abovo.bialystok.pl/oferta/) |
 | `absolutoria.ppnt.poznan.pl` | [Visit absolutoria.ppnt.poznan.pl homepage](https://absolutoria.ppnt.poznan.pl/), [Visit absolutoria.ppnt.poznan.pl/przebieg-uroczystosci/](https://absolutoria.ppnt.poznan.pl/przebieg-uroczystosci/) |
 | `absolwenci.uken.krakow.pl` | [Visit absolwenci.uken.krakow.pl homepage](https://absolwenci.uken.krakow.pl/), [Visit absolwenci.uken.krakow.pl/2025/05/05/krajowa-szkola-administracji-publicznej-ksap-oglasza-nabor-do-programu-ksztalcenia-na-urzednika-mianowanego/](https://absolwenci.uken.krakow.pl/2025/05/05/krajowa-szkola-administracji-publicznej-ksap-oglasza-nabor-do-programu-ksztalcenia-na-urzednika-mianowanego/) |
+| `abw.gov.pl` | [Visit abw.gov.pl homepage](https://abw.gov.pl/) |
 | `academos.krakow.pl` | [Visit academos.krakow.pl homepage](https://academos.krakow.pl/), [Visit academos.krakow.pl/kontakt/](https://academos.krakow.pl/kontakt/) |
 | `acca.uek.krakow.pl` | [Visit acca.uek.krakow.pl homepage](https://acca.uek.krakow.pl/), [Visit acca.uek.krakow.pl/accaprof.html](https://acca.uek.krakow.pl/accaprof.html), [Visit acca.uek.krakow.pl/index.html](https://acca.uek.krakow.pl/index.html) |
 | `ach.uken.krakow.pl` | [Visit ach.uken.krakow.pl homepage](https://ach.uken.krakow.pl/), [Visit ach.uken.krakow.pl/en/home/](https://ach.uken.krakow.pl/en/home/), [Visit ach.uken.krakow.pl/hotel/](https://ach.uken.krakow.pl/hotel/) |
@@ -277,6 +279,7 @@ permalink: /domains/poland.html
 | `autyzm.krakow.pl` | [Visit autyzm.krakow.pl homepage](https://autyzm.krakow.pl/), [Visit autyzm.krakow.pl/konferencja-3-r-spektrum-mozliwosci/](https://autyzm.krakow.pl/konferencja-3-r-spektrum-mozliwosci/), [Visit autyzm.krakow.pl/oferta/filia-oddzialu-dziennego/](https://autyzm.krakow.pl/oferta/filia-oddzialu-dziennego/) |
 | `avant.rzeszow.pl` | [Visit avant.rzeszow.pl homepage](https://avant.rzeszow.pl/), [Visit avant.rzeszow.pl/szkolenia/](https://avant.rzeszow.pl/szkolenia/) |
 | `avanti.poznan.pl` | [Visit avanti.poznan.pl homepage](https://avanti.poznan.pl/), [Visit avanti.poznan.pl/klauzula-informacyjna/](https://avanti.poznan.pl/klauzula-informacyjna/) |
+| `aw.gov.pl` | [Visit aw.gov.pl homepage](https://aw.gov.pl/) |
 | `aw.poznan.pl` | [Visit aw.poznan.pl homepage](https://aw.poznan.pl/), [Visit aw.poznan.pl/aktualnosci/04-07-09-2025-51-poznanski-miedzynarodowy-rajd-pojazdow-zabytkowych](https://aw.poznan.pl/aktualnosci/04-07-09-2025-51-poznanski-miedzynarodowy-rajd-pojazdow-zabytkowych) |
 | `awanse.uni.opole.pl` | [Visit awanse.uni.opole.pl homepage](https://awanse.uni.opole.pl/), [Visit awanse.uni.opole.pl/kontakt/](https://awanse.uni.opole.pl/kontakt/) |
 | `awf.poznan.pl` | [Visit awf.poznan.pl homepage](https://awf.poznan.pl/), [Visit awf.poznan.pl/polityka-plikow-cookies-eu/](https://awf.poznan.pl/polityka-plikow-cookies-eu/), [Visit awf.poznan.pl/wydzialy/filia-awf-poznan-w-gorzowie-wlkp/](https://awf.poznan.pl/wydzialy/filia-awf-poznan-w-gorzowie-wlkp/) |
@@ -1969,6 +1972,7 @@ permalink: /domains/poland.html
 | `kyokushin.bialystok.pl` | [Visit kyokushin.bialystok.pl homepage](https://kyokushin.bialystok.pl/), [Visit kyokushin.bialystok.pl/aktualnosci-klubowe/martyna-luka-w-swiatowym-rankingu-karate-kyokushin/](https://kyokushin.bialystok.pl/aktualnosci-klubowe/martyna-luka-w-swiatowym-rankingu-karate-kyokushin/), [Visit kyokushin.bialystok.pl/aktualnosci-klubowe/trening-noworoczny-kagami-biraki-5-01-2025r/](https://kyokushin.bialystok.pl/aktualnosci-klubowe/trening-noworoczny-kagami-biraki-5-01-2025r/) |
 | `kyokushin.poznan.pl` | [Visit kyokushin.poznan.pl homepage](http://kyokushin.poznan.pl/), [Visit kyokushin.poznan.pl/2025/06/30/zakonczenie-sezonu-treningowego-zapisy-wrzesien-2025/](http://kyokushin.poznan.pl/2025/06/30/zakonczenie-sezonu-treningowego-zapisy-wrzesien-2025/) |
 | `kza.krakow.pl` | [Visit kza.krakow.pl homepage](https://kza.krakow.pl/), [Visit kza.krakow.pl/polityka-prywatnosci](https://kza.krakow.pl/polityka-prywatnosci), [Visit kza.krakow.pl/realizacje/](https://kza.krakow.pl/realizacje/) |
+| `kzgw.gov.pl` | [Visit kzgw.gov.pl homepage](https://kzgw.gov.pl/) |
 | `l-mot.radom.pl` | [Visit l-mot.radom.pl homepage](https://l-mot.radom.pl/), [Visit l-mot.radom.pl/aktualnosci/](https://l-mot.radom.pl/aktualnosci/), [Visit l-mot.radom.pl/zapisz-sie/](https://l-mot.radom.pl/zapisz-sie/) |
 | `laboratoria.medyk.rzeszow.pl` | [Visit laboratoria.medyk.rzeszow.pl homepage](https://laboratoria.medyk.rzeszow.pl/), [Visit laboratoria.medyk.rzeszow.pl/polityka-prywatnosci/](https://laboratoria.medyk.rzeszow.pl/polityka-prywatnosci/), [Visit laboratoria.medyk.rzeszow.pl/punkty-pobran/](https://laboratoria.medyk.rzeszow.pl/punkty-pobran/) |
 | `laboratorium.awf.poznan.pl` | [Visit laboratorium.awf.poznan.pl/pliki-do-pobrania/](https://laboratorium.awf.poznan.pl/pliki-do-pobrania/) |
@@ -2243,6 +2247,7 @@ permalink: /domains/poland.html
 | `metrol.radom.pl` | [Visit metrol.radom.pl homepage](https://metrol.radom.pl/), [Visit metrol.radom.pl/o-firmie/](https://metrol.radom.pl/o-firmie/) |
 | `metron.torun.pl` | [Visit metron.torun.pl homepage](https://metron.torun.pl/), [Visit metron.torun.pl/3/porady-ekspertow](https://metron.torun.pl/3/porady-ekspertow), [Visit metron.torun.pl/art/dobor/](https://metron.torun.pl/art/dobor/) |
 | `mfi.ug.edu.pl` | [Visit mfi.ug.edu.pl homepage](https://mfi.ug.edu.pl/), [Visit mfi.ug.edu.pl/news/112378/akademia-przedsiebiorczosci-i-innowacyjnosci-w-technologii-hertechventure](https://mfi.ug.edu.pl/news/112378/akademia-przedsiebiorczosci-i-innowacyjnosci-w-technologii-hertechventure) |
+| `mg.gov.pl` | [Visit mg.gov.pl homepage](https://mg.gov.pl/) |
 | `mhki.kielce.eu` | [Visit mhki.kielce.eu homepage](https://mhki.kielce.eu/), [Visit mhki.kielce.eu/niebieska-strefa](https://mhki.kielce.eu/niebieska-strefa), [Visit mhki.kielce.eu/studia-muzealno-historyczne](https://mhki.kielce.eu/studia-muzealno-historyczne) |
 | `mhmr.muzeum.rzeszow.pl` | [Visit mhmr.muzeum.rzeszow.pl homepage](https://mhmr.muzeum.rzeszow.pl/), [Visit mhmr.muzeum.rzeszow.pl/2025/06/20/szanowni-panstwo-13/](https://mhmr.muzeum.rzeszow.pl/2025/06/20/szanowni-panstwo-13/), [Visit mhmr.muzeum.rzeszow.pl/polityka-prywatnosci/](https://mhmr.muzeum.rzeszow.pl/polityka-prywatnosci/) |
 | `miasto.radom.pl` | [Visit miasto.radom.pl homepage](https://miasto.radom.pl/), [Visit miasto.radom.pl/o-stronie](https://miasto.radom.pl/o-stronie) |
@@ -2345,6 +2350,7 @@ permalink: /domains/poland.html
 | `mpec.tarnow.pl` | [Visit mpec.tarnow.pl homepage](https://mpec.tarnow.pl/), [Visit mpec.tarnow.pl/oferta/centralne-ogrzewanie/](https://mpec.tarnow.pl/oferta/centralne-ogrzewanie/) |
 | `mpgk.tarnow.pl` | [Visit mpgk.tarnow.pl homepage](https://mpgk.tarnow.pl/), [Visit mpgk.tarnow.pl/harmonogram-odbioru-odpadow/](https://mpgk.tarnow.pl/harmonogram-odbioru-odpadow/), [Visit mpgk.tarnow.pl/polityka-prywatnosci/](https://mpgk.tarnow.pl/polityka-prywatnosci/) |
 | `mpgm.poznan.pl` | [Visit mpgm.poznan.pl homepage](https://mpgm.poznan.pl/), [Visit mpgm.poznan.pl/oferta/zarzadzanie-nieruchomosciami](https://mpgm.poznan.pl/oferta/zarzadzanie-nieruchomosciami) |
+| `mpit.gov.pl` | [Visit mpit.gov.pl homepage](https://mpit.gov.pl/) |
 | `mpk.krakow.pl` | [Visit mpk.krakow.pl homepage](https://mpk.krakow.pl/), [Visit mpk.krakow.pl/artykul/2551/nowa-strona-internetowa-mpk-w-krakowie-z-mysla-o-wszystkich-pasazerach](https://mpk.krakow.pl/artykul/2551/nowa-strona-internetowa-mpk-w-krakowie-z-mysla-o-wszystkich-pasazerach) |
 | `mpk.lodz.pl` | [Visit mpk.lodz.pl homepage](https://mpk.lodz.pl/), [Visit mpk.lodz.pl/rozklady/linie.jsp](https://mpk.lodz.pl/rozklady/linie.jsp) |
 | `mpk.radom.pl` | [Visit mpk.radom.pl homepage](https://mpk.radom.pl/), [Visit mpk.radom.pl/o-spolce/](https://mpk.radom.pl/o-spolce/), [Visit mpk.radom.pl/polityka-plikow-cookie/](https://mpk.radom.pl/polityka-plikow-cookie/) |
@@ -2356,6 +2362,7 @@ permalink: /domains/poland.html
 | `mpu.lodz.pl` | [Visit mpu.lodz.pl homepage](https://mpu.lodz.pl/), [Visit mpu.lodz.pl/komunikaty/wydarzenia/artykul/przyjmowanie-wnioskow-do-planu-ogolnego-miasta-lodzi-id75003/2024/03/18/](https://mpu.lodz.pl/komunikaty/wydarzenia/artykul/przyjmowanie-wnioskow-do-planu-ogolnego-miasta-lodzi-id75003/2024/03/18/) |
 | `mpu.radom.pl` | [Visit mpu.radom.pl homepage](https://mpu.radom.pl/) |
 | `mpwik.rzeszow.pl` | [Visit mpwik.rzeszow.pl homepage](https://mpwik.rzeszow.pl/), [Visit mpwik.rzeszow.pl/category/przerwy-w-dostawie-wody/](https://mpwik.rzeszow.pl/category/przerwy-w-dostawie-wody/) |
+| `mr.gov.pl` | [Visit mr.gov.pl homepage](https://mr.gov.pl/) |
 | `mrmw.um.wroc.pl` | [Visit mrmw.um.wroc.pl homepage](https://mrmw.um.wroc.pl/), [Visit mrmw.um.wroc.pl/targi-wroclawskch-szkol-srednich-2025/](https://mrmw.um.wroc.pl/targi-wroclawskch-szkol-srednich-2025/) |
 | `ms.bielsko-biala.pl` | [Visit ms.bielsko-biala.pl homepage](https://ms.bielsko-biala.pl/), [Visit ms.bielsko-biala.pl/aktualnosci/1/bylo-elegancko](https://ms.bielsko-biala.pl/aktualnosci/1/bylo-elegancko) |
 | `msap.uek.krakow.pl` | [Visit msap.uek.krakow.pl homepage](https://msap.uek.krakow.pl/), [Visit msap.uek.krakow.pl/referencje/](https://msap.uek.krakow.pl/referencje/), [Visit msap.uek.krakow.pl/studia-podyplomowe/](https://msap.uek.krakow.pl/studia-podyplomowe/) |
@@ -2825,6 +2832,7 @@ permalink: /domains/poland.html
 | `pks.poznan.pl` | [Visit pks.poznan.pl homepage](https://pks.poznan.pl/), [Visit pks.poznan.pl/wynajem-autobusow/](https://pks.poznan.pl/wynajem-autobusow/) |
 | `pks.rzeszow.pl` | [Visit pks.rzeszow.pl homepage](https://pks.rzeszow.pl/), [Visit pks.rzeszow.pl/okregowa-stacja-kontroli-pojazdow,261](https://pks.rzeszow.pl/okregowa-stacja-kontroli-pojazdow,261) |
 | `pks.szczecin.pl` | [Visit pks.szczecin.pl homepage](https://pks.szczecin.pl/), [Visit pks.szczecin.pl/przewozy-pracownicze/](https://pks.szczecin.pl/przewozy-pracownicze/) |
+| `pkw.gov.pl` | [Visit pkw.gov.pl homepage](https://pkw.gov.pl/) |
 | `plan.sp26.bialystok.pl` | [Visit plan.sp26.bialystok.pl homepage](http://plan.sp26.bialystok.pl/) |
 | `plan.staszic.opole.pl` | [Visit plan.staszic.opole.pl homepage](https://plan.staszic.opole.pl/) |
 | `plan.zse.bydgoszcz.pl` | [Visit plan.zse.bydgoszcz.pl homepage](https://plan.zse.bydgoszcz.pl/) |
@@ -3689,6 +3697,7 @@ permalink: /domains/poland.html
 | `sms.rzeszow.pl` | [Visit sms.rzeszow.pl homepage](http://sms.rzeszow.pl/), [Visit sms.rzeszow.pl/69-dok.html](http://sms.rzeszow.pl/69-dok.html), [Visit sms.rzeszow.pl/rezygnacjuslugneostradatp_powodu_wygasnieciumowy.,124201,did.html](http://sms.rzeszow.pl/rezygnacjuslugneostradatp_powodu_wygasnieciumowy.,124201,did.html) |
 | `smsrodmiescie.szczecin.pl` | [Visit smsrodmiescie.szczecin.pl homepage](https://smsrodmiescie.szczecin.pl/), [Visit smsrodmiescie.szczecin.pl/aktualnosci/197/przetarg](https://smsrodmiescie.szczecin.pl/aktualnosci/197/przetarg) |
 | `smts.lublin.eu` | [Visit smts.lublin.eu homepage](https://smts.lublin.eu/), [Visit smts.lublin.eu/szczegoly-aktualnosci/wakacyjna-praca-sekretariatu-30754](https://smts.lublin.eu/szczegoly-aktualnosci/wakacyjna-praca-sekretariatu-30754?parent_way=6828) |
+| `sn.pl` | [Visit sn.pl homepage](https://sn.pl/) |
 | `sndlib.put.poznan.pl` | [Visit sndlib.put.poznan.pl homepage](https://sndlib.put.poznan.pl/) |
 | `snjp.uken.krakow.pl` | [Visit snjp.uken.krakow.pl homepage](https://snjp.uken.krakow.pl/), [Visit snjp.uken.krakow.pl/kursy-roczne/](https://snjp.uken.krakow.pl/kursy-roczne/), [Visit snjp.uken.krakow.pl/oferta/](https://snjp.uken.krakow.pl/oferta/) |
 | `sobolow.diecezja.tarnow.pl` | [Visit sobolow.diecezja.tarnow.pl homepage](https://sobolow.diecezja.tarnow.pl/), [Visit sobolow.diecezja.tarnow.pl/oswiadczenie-dyrektorow-wydzialow-katechetycznych-stanowczy-sprzeciw-wobec-dzialan-men/](https://sobolow.diecezja.tarnow.pl/oswiadczenie-dyrektorow-wydzialow-katechetycznych-stanowczy-sprzeciw-wobec-dzialan-men/) |
@@ -4085,6 +4094,7 @@ permalink: /domains/poland.html
 | `startupspark.sse.lodz.pl` | [Visit startupspark.sse.lodz.pl homepage](https://startupspark.sse.lodz.pl/), [Visit startupspark.sse.lodz.pl/zespol/](https://startupspark.sse.lodz.pl/zespol/) |
 | `starysacz.um.gov.pl` | [Visit starysacz.um.gov.pl homepage](https://starysacz.um.gov.pl/), [Visit starysacz.um.gov.pl/22552/nagrody-sadecczyzna-im-szczesnego-morawskiego-przyznane/](https://starysacz.um.gov.pl/22552/nagrody-sadecczyzna-im-szczesnego-morawskiego-przyznane/) |
 | `staszic.opole.pl` | [Visit staszic.opole.pl homepage](https://staszic.opole.pl/), [Visit staszic.opole.pl/aktualnosci/](https://staszic.opole.pl/aktualnosci/), [Visit staszic.opole.pl/kierunki-ksztalcenia/technikum/technik-ochrony-srodowiska/](https://staszic.opole.pl/kierunki-ksztalcenia/technikum/technik-ochrony-srodowiska/) |
+| `stat.gov.pl` | [Visit stat.gov.pl homepage](https://stat.gov.pl/) |
 | `static.nbp.pl` | [Visit static.nbp.pl homepage](https://static.nbp.pl/) |
 | `statystyka.policja.pl` | [Visit statystyka.policja.pl homepage](https://statystyka.policja.pl/), [Visit statystyka.policja.pl/st/mapa](https://statystyka.policja.pl/st/mapa), [Visit statystyka.policja.pl/st/przestepstwa-ogolem](https://statystyka.policja.pl/st/przestepstwa-ogolem) |
 | `stilon.gorzow.pl` | [Visit stilon.gorzow.pl homepage](https://stilon.gorzow.pl/), [Visit stilon.gorzow.pl/kontakt/](https://stilon.gorzow.pl/kontakt/) |
@@ -4375,9 +4385,11 @@ permalink: /domains/poland.html
 | `unitech.rzeszow.pl` | [Visit unitech.rzeszow.pl homepage](https://unitech.rzeszow.pl/), [Visit unitech.rzeszow.pl/darmowa-dostawa/](https://unitech.rzeszow.pl/darmowa-dostawa/), [Visit unitech.rzeszow.pl/kategoria-produktu/zmywacze-i-przygotowanie-powierzchni/podklady/](https://unitech.rzeszow.pl/kategoria-produktu/zmywacze-i-przygotowanie-powierzchni/podklady/) |
 | `unloc.uken.krakow.pl` | [Visit unloc.uken.krakow.pl homepage](https://unloc.uken.krakow.pl/), [Visit unloc.uken.krakow.pl/open-call-creative-research-lab-warszawa/](https://unloc.uken.krakow.pl/open-call-creative-research-lab-warszawa/), [Visit unloc.uken.krakow.pl/the-smart-cities-international-conference/](https://unloc.uken.krakow.pl/the-smart-cities-international-conference/) |
 | `uns.lodz.pl` | [Visit uns.lodz.pl homepage](https://uns.lodz.pl/), [Visit uns.lodz.pl/dla-kandydata/uns-international/](https://uns.lodz.pl/dla-kandydata/uns-international/), [Visit uns.lodz.pl/uczelnia/projekty/ludzka-uczelnia-nauk-spolecznych/](https://uns.lodz.pl/uczelnia/projekty/ludzka-uczelnia-nauk-spolecznych/) |
+| `uodo.gov.pl` | [Visit uodo.gov.pl homepage](https://uodo.gov.pl/) |
 | `uonetplus-uczen.edu.lublin.eu` | [Visit uonetplus-uczen.edu.lublin.eu homepage](https://uonetplus-uczen.edu.lublin.eu/) |
 | `uonetplus-uczen.umt.tarnow.pl` | [Visit uonetplus-uczen.umt.tarnow.pl homepage](https://uonetplus-uczen.umt.tarnow.pl/) |
 | `up.poznan.pl` | [Visit up.poznan.pl homepage](https://up.poznan.pl/), [Visit up.poznan.pl/kandydat/stopien-1](https://up.poznan.pl/kandydat/stopien-1), [Visit up.poznan.pl/nowa-strona-upp](https://up.poznan.pl/nowa-strona-upp) |
+| `uprp.gov.pl` | [Visit uprp.gov.pl homepage](https://uprp.gov.pl/) |
 | `urbanlab.gdynia.pl` | [Visit urbanlab.gdynia.pl homepage](https://urbanlab.gdynia.pl/), [Visit urbanlab.gdynia.pl/artykuly/europejscy-naukowcy-przyjrza-sie-gdyni/](https://urbanlab.gdynia.pl/artykuly/europejscy-naukowcy-przyjrza-sie-gdyni/), [Visit urbanlab.gdynia.pl/artykuly/twarze-pomagania-alez-babki-koncertuja-i-niosa-odrobine-radosci/](https://urbanlab.gdynia.pl/artykuly/twarze-pomagania-alez-babki-koncertuja-i-niosa-odrobine-radosci/) |
 | `uriasz.am.szczecin.pl` | [Visit uriasz.am.szczecin.pl homepage](http://uriasz.am.szczecin.pl/) |
 | `urodziny.krakow.pl` | [Visit urodziny.krakow.pl homepage](https://urodziny.krakow.pl/) |
@@ -4418,6 +4430,7 @@ permalink: /domains/poland.html
 | `utw.uken.krakow.pl` | [Visit utw.uken.krakow.pl homepage](https://utw.uken.krakow.pl/), [Visit utw.uken.krakow.pl/2025/06/19/uroczyste-zakonczenie-roku-akademickiego-utw-uken-2024-2025-16-czerwca-2025/](https://utw.uken.krakow.pl/2025/06/19/uroczyste-zakonczenie-roku-akademickiego-utw-uken-2024-2025-16-czerwca-2025/) |
 | `utwpl.p.lodz.pl` | [Visit utwpl.p.lodz.pl homepage](https://utwpl.p.lodz.pl/), [Visit utwpl.p.lodz.pl/aktualnosci/glosowanie-w-budzecie-obywatelskim](https://utwpl.p.lodz.pl/aktualnosci/glosowanie-w-budzecie-obywatelskim) |
 | `uzdrowisko.krakow.pl` | [Visit uzdrowisko.krakow.pl homepage](https://uzdrowisko.krakow.pl/), [Visit uzdrowisko.krakow.pl/leczenie-w-ramach-nfz/najczesciej-zadawane-pytania/](https://uzdrowisko.krakow.pl/leczenie-w-ramach-nfz/najczesciej-zadawane-pytania/), [Visit uzdrowisko.krakow.pl/oferta/cennik-uslug-i-zabiegow/](https://uzdrowisko.krakow.pl/oferta/cennik-uslug-i-zabiegow/) |
+| `uzp.gov.pl` | [Visit uzp.gov.pl homepage](https://uzp.gov.pl/) |
 | `uzywane.karlik.poznan.pl` | [Visit uzywane.karlik.poznan.pl homepage](https://uzywane.karlik.poznan.pl/), [Visit uzywane.karlik.poznan.pl/pl/web/search/index](https://uzywane.karlik.poznan.pl/pl/web/search/index) |
 | `uzywane.toyota.bydgoszcz.pl` | [Visit uzywane.toyota.bydgoszcz.pl homepage](https://uzywane.toyota.bydgoszcz.pl/), [Visit uzywane.toyota.bydgoszcz.pl/pliki-cookie](https://uzywane.toyota.bydgoszcz.pl/pliki-cookie) |
 | `uzywane.toyota.opole.pl` | [Visit uzywane.toyota.opole.pl homepage](https://uzywane.toyota.opole.pl/), [Visit uzywane.toyota.opole.pl/oferty](https://uzywane.toyota.opole.pl/oferty), [Visit uzywane.toyota.opole.pl/pliki-cookie](https://uzywane.toyota.opole.pl/pliki-cookie) |

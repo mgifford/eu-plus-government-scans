@@ -6,15 +6,17 @@ permalink: /domains/slovenia.html
 
 [← Back to all countries](../domains.html)
 
-**100 domains** · **200 pages**
+**114 domains** · **214 pages**
 
 | Domain | Pages |
 |--------|-------|
 | `agromet.mkgp.gov.si` | [Visit agromet.mkgp.gov.si homepage](https://agromet.mkgp.gov.si/), [Visit agromet.mkgp.gov.si/APP2/sl/Content/plant-health](https://agromet.mkgp.gov.si/APP2/sl/Content/plant-health) |
+| `arhiv.mvzt.gov.si` | [Visit arhiv.mvzt.gov.si homepage](http://arhiv.mvzt.gov.si/) |
 | `centralka.celje.si` | [Visit centralka.celje.si homepage](https://centralka.celje.si/), [Visit centralka.celje.si/storitve/celebus](https://centralka.celje.si/storitve/celebus) |
 | `cip.gov.si` | [Visit cip.gov.si homepage](https://cip.gov.si/), [Visit cip.gov.si/aktivnosti/](https://cip.gov.si/aktivnosti/?Tag=470) |
 | `dovolilnice.ljubljana.si` | [Visit dovolilnice.ljubljana.si homepage](https://dovolilnice.ljubljana.si/) |
 | `ds-rs.si` | [Visit ds-rs.si homepage](https://ds-rs.si/), [Visit ds-rs.si/sl/novice/lotric-predlaga-okrepitev-varnosti-drzavljank-drzavljanov-ter-njihovega-imetja-na-dolenjskem](https://ds-rs.si/sl/novice/lotric-predlaga-okrepitev-varnosti-drzavljank-drzavljanov-ter-njihovega-imetja-na-dolenjskem), [Visit ds-rs.si/sl/novice/predsednik-drzavnega-sveta-marko-lotric-na-slavnostni-seji-ob-27-obcinskem-prazniku-obcine](https://ds-rs.si/sl/novice/predsednik-drzavnega-sveta-marko-lotric-na-slavnostni-seji-ob-27-obcinskem-prazniku-obcine) |
+| `dvk-rs.si` | [Visit dvk-rs.si homepage](https://dvk-rs.si/) |
 | `e-uprava.gov.si` | [Visit e-uprava.gov.si homepage](https://e-uprava.gov.si/), [Visit e-uprava.gov.si/si/podrocja/osebni-dokumenti-potrdila-selitev/selitev-prijava-odjava-prebivalisca/prijava-odjava-zacasnega-prebivalisca-zacasnega-naslova-v-tujini.html](https://e-uprava.gov.si/si/podrocja/osebni-dokumenti-potrdila-selitev/selitev-prijava-odjava-prebivalisca/prijava-odjava-zacasnega-prebivalisca-zacasnega-naslova-v-tujini.html) |
 | `ecarina.fu.gov.si` | [Visit ecarina.fu.gov.si homepage](https://ecarina.fu.gov.si/) |
 | `ecrp.gov.si` | [Visit ecrp.gov.si homepage](https://ecrp.gov.si/), [Visit ecrp.gov.si/katalogPodatkovCRP.html](https://ecrp.gov.si/katalogPodatkovCRP.html) |
@@ -34,19 +36,30 @@ permalink: /domains/slovenia.html
 | `gea.arso.gov.si` | [Visit gea.arso.gov.si homepage](https://gea.arso.gov.si/) |
 | `gis.arso.gov.si` | [Visit gis.arso.gov.si homepage](https://gis.arso.gov.si/), [Visit gis.arso.gov.si/related/ARSO_WFS/](https://gis.arso.gov.si/related/ARSO_WFS/) |
 | `hmljn.arso.gov.si` | [Visit hmljn.arso.gov.si homepage](http://hmljn.arso.gov.si/), [Visit hmljn.arso.gov.si/vreme/](http://hmljn.arso.gov.si/vreme/) |
+| `ip-rs.si` | [Visit ip-rs.si homepage](https://ip-rs.si/) |
 | `ipi.eprostor.gov.si` | [Visit ipi.eprostor.gov.si homepage](https://ipi.eprostor.gov.si/) |
 | `isl.gov.si` | [Visit isl.gov.si homepage](https://isl.gov.si/), [Visit isl.gov.si/users/custom/mju2_navodila.html](https://isl.gov.si/users/custom/mju2_navodila.html) |
 | `jnplacila.ujp.gov.si` | [Visit jnplacila.ujp.gov.si homepage](https://jnplacila.ujp.gov.si/) |
 | `jodp.mf.gov.si` | [Visit jodp.mf.gov.si homepage](https://jodp.mf.gov.si/), [Visit jodp.mf.gov.si/Kontakt](https://jodp.mf.gov.si/Kontakt) |
 | `kamnik.si` | [Visit kamnik.si homepage](https://kamnik.si/), [Visit kamnik.si/objava/1134892](https://kamnik.si/objava/1134892), [Visit kamnik.si/prijava](https://kamnik.si/prijava?ReturnUrl=/) |
 | `kazalci.arso.gov.si` | [Visit kazalci.arso.gov.si homepage](https://kazalci.arso.gov.si/), [Visit kazalci.arso.gov.si/sites/default/zgibanka/vhodna.html](https://kazalci.arso.gov.si/sites/default/zgibanka/vhodna.html), [Visit kazalci.arso.gov.si/sl/content/delez-ove-v-energiji-goriv-za-pogon-vozil-3](https://kazalci.arso.gov.si/sl/content/delez-ove-v-energiji-goriv-za-pogon-vozil-3) |
+| `kpk-rs.si` | [Visit kpk-rs.si homepage](https://kpk-rs.si/) |
 | `kultura.maribor.si` | [Visit kultura.maribor.si homepage](https://kultura.maribor.si/), [Visit kultura.maribor.si/napovednik](https://kultura.maribor.si/napovednik), [Visit kultura.maribor.si/pravno-obvestilo/](https://kultura.maribor.si/pravno-obvestilo/) |
 | `maribor.si` | [Visit maribor.si homepage](https://maribor.si/), [Visit maribor.si/mestna-obcina/](https://maribor.si/mestna-obcina/), [Visit maribor.si/varstvo-osebnih-podatkov/](https://maribor.si/varstvo-osebnih-podatkov/) |
 | `meteo.arso.gov.si` | [Visit meteo.arso.gov.si homepage](https://meteo.arso.gov.si/), [Visit meteo.arso.gov.si/met/sl/warning](https://meteo.arso.gov.si/met/sl/warning) |
 | `mferac.gov.si` | [Visit mferac.gov.si homepage](https://mferac.gov.si/) |
+| `mgrt.gov.si` | [Visit mgrt.gov.si homepage](http://mgrt.gov.si/) |
+| `mizs.gov.si` | [Visit mizs.gov.si homepage](http://mizs.gov.si/) |
+| `mju.gov.si` | [Visit mju.gov.si homepage](http://mju.gov.si/) |
+| `mk.gov.si` | [Visit mk.gov.si homepage](http://mk.gov.si/) |
+| `mnz.gov.si` | [Visit mnz.gov.si homepage](http://mnz.gov.si/) |
+| `mo.gov.si` | [Visit mo.gov.si homepage](http://mo.gov.si/) |
 | `moc.celje.si` | [Visit moc.celje.si homepage](https://moc.celje.si/), [Visit moc.celje.si/krajevne-skupnosti-in-mestne-cetrti-3](https://moc.celje.si/krajevne-skupnosti-in-mestne-cetrti-3), [Visit moc.celje.si/projekti-moc](https://moc.celje.si/projekti-moc) |
 | `moja.e-kmetija.gov.si` | [Visit moja.e-kmetija.gov.si homepage](https://moja.e-kmetija.gov.si/), [Visit moja.e-kmetija.gov.si/app/portal/](https://moja.e-kmetija.gov.si/app/portal/) |
+| `mop.gov.si` | [Visit mop.gov.si homepage](http://mop.gov.si/) |
 | `mrrsp.gov.si` | [Visit mrrsp.gov.si homepage](http://mrrsp.gov.si/) |
+| `mz.gov.si` | [Visit mz.gov.si homepage](http://mz.gov.si/) |
+| `mzi.gov.si` | [Visit mzi.gov.si homepage](http://mzi.gov.si/) |
 | `narcis.gov.si` | [Visit narcis.gov.si homepage](https://narcis.gov.si/), [Visit narcis.gov.si/ords/r/narcis/narcis/novicka-post](https://narcis.gov.si/ords/r/narcis/narcis/novicka-post?p2030_novicka=2661&clear=2030&session=10403214558692), [Visit narcis.gov.si/ords/r/narcis/narcis/o-life-narcis](https://narcis.gov.si/ords/r/narcis/narcis/o-life-narcis) |
 | `nato.gov.si` | [Visit nato.gov.si homepage](http://nato.gov.si/), [Visit nato.gov.si/slo/slovenija-nato/](http://nato.gov.si/slo/slovenija-nato/) |
 | `natura2000.gov.si` | [Visit natura2000.gov.si homepage](https://natura2000.gov.si/), [Visit natura2000.gov.si/narava/obmocja/](https://natura2000.gov.si/narava/obmocja/) |
@@ -73,6 +86,7 @@ permalink: /domains/slovenia.html
 | `sicas.gov.si` | [Visit sicas.gov.si homepage](https://sicas.gov.si/) |
 | `sicev.gov.si` | [Visit sicev.gov.si homepage](https://sicev.gov.si/) |
 | `sipeps.gov.si` | [Visit sipeps.gov.si homepage](https://sipeps.gov.si/) |
+| `sodisce.si` | [Visit sodisce.si homepage](https://sodisce.si/) |
 | `sovd-prenos.gov.si` | [Visit sovd-prenos.gov.si homepage](https://sovd-prenos.gov.si/), [Visit sovd-prenos.gov.si/vsebina/sovd](https://sovd-prenos.gov.si/vsebina/sovd) |
 | `spletni2.furs.gov.si` | [Visit spletni2.furs.gov.si homepage](https://spletni2.furs.gov.si/), [Visit spletni2.furs.gov.si/FFS/REGSR/EN/index.htm](https://spletni2.furs.gov.si/FFS/REGSR/EN/index.htm) |
 | `spot.gov.si` | [Visit spot.gov.si homepage](https://spot.gov.si/), [Visit spot.gov.si/sl](https://spot.gov.si/sl), [Visit spot.gov.si/sl/portal-in-tocke-spot/o-portalu-spot/portal-spot-skozi-stevilke](https://spot.gov.si/sl/portal-in-tocke-spot/o-portalu-spot/portal-spot-skozi-stevilke) |

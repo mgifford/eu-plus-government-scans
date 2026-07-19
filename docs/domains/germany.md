@@ -6,7 +6,7 @@ permalink: /domains/germany.html
 
 [← Back to all countries](../domains.html)
 
-**2,947 domains** · **6,555 pages**
+**2,991 domains** · **6,599 pages**
 
 | Domain | Pages |
 |--------|-------|
@@ -163,6 +163,7 @@ permalink: /domains/germany.html
 | `antrago-online.idf.nrw.de` | [Visit antrago-online.idf.nrw.de homepage](https://antrago-online.idf.nrw.de/), [Visit antrago-online.idf.nrw.de/firmenportal](https://antrago-online.idf.nrw.de/firmenportal) |
 | `anw.bfd.bundeswehr.de` | [Visit anw.bfd.bundeswehr.de homepage](https://anw.bfd.bundeswehr.de/) |
 | `anwendungen.pharmnet-bund.de` | [Visit anwendungen.pharmnet-bund.de homepage](https://anwendungen.pharmnet-bund.de/) |
+| `apasbafa.bund.de` | [Visit apasbafa.bund.de homepage](https://apasbafa.bund.de/) |
 | `apertus.rlp.de` | [Visit apertus.rlp.de homepage](https://apertus.rlp.de/), [Visit apertus.rlp.de/slogin.php](https://apertus.rlp.de/slogin.php?ID=1) |
 | `app.digital.diplo.de` | [Visit app.digital.diplo.de homepage](https://app.digital.diplo.de/) |
 | `apps.gesunde.sachsen.de` | [Visit apps.gesunde.sachsen.de homepage](https://apps.gesunde.sachsen.de/), [Visit apps.gesunde.sachsen.de/impressum/index.html](https://apps.gesunde.sachsen.de/impressum/index.html), [Visit apps.gesunde.sachsen.de/trinkwasser.php](https://apps.gesunde.sachsen.de/trinkwasser.php) |
@@ -191,6 +192,7 @@ permalink: /domains/germany.html
 | `aufarbeitung.brandenburg.de` | [Visit aufarbeitung.brandenburg.de homepage](https://aufarbeitung.brandenburg.de/), [Visit aufarbeitung.brandenburg.de/stellenausschreibung-sachbearbeitung-im-bereich-medien-und-oeffentlichkeitsarbeit/](https://aufarbeitung.brandenburg.de/stellenausschreibung-sachbearbeitung-im-bereich-medien-und-oeffentlichkeitsarbeit/) |
 | `aug.dguv.de` | [Visit aug.dguv.de homepage](https://aug.dguv.de/), [Visit aug.dguv.de/arbeitssicherheit/interview-lasten-sicher-greifen-halten-transportieren/](https://aug.dguv.de/arbeitssicherheit/interview-lasten-sicher-greifen-halten-transportieren/), [Visit aug.dguv.de/verkehrssicherheit/wettbewerb-verbesserung-der-betrieblichen-verkehrssicherheit/](https://aug.dguv.de/verkehrssicherheit/wettbewerb-verbesserung-der-betrieblichen-verkehrssicherheit/) |
 | `ausbildung.duesseldorf.de` | [Visit ausbildung.duesseldorf.de homepage](https://ausbildung.duesseldorf.de/), [Visit ausbildung.duesseldorf.de/datenschutz.html](https://ausbildung.duesseldorf.de/datenschutz.html), [Visit ausbildung.duesseldorf.de/stellenangebote.html](https://ausbildung.duesseldorf.de/stellenangebote.html?filter[taetigkeit_id][]=8) |
+| `auslandsschulwesen.de` | [Visit auslandsschulwesen.de homepage](https://auslandsschulwesen.de/) |
 | `australien.diplo.de` | [Visit australien.diplo.de homepage](https://australien.diplo.de/), [Visit australien.diplo.de/au-de/nauru-salomonen-png-vanuatu](https://australien.diplo.de/au-de/nauru-salomonen-png-vanuatu), [Visit australien.diplo.de/au-en](https://australien.diplo.de/au-en) |
 | `auth.bfarm.de` | [Visit auth.bfarm.de homepage](https://auth.bfarm.de/) |
 | `auth.grippeweb.bund.de` | [Visit auth.grippeweb.bund.de homepage](https://auth.grippeweb.bund.de/) |
@@ -201,6 +203,7 @@ permalink: /domains/germany.html
 | `babrechner.arbeitsagentur.de` | [Visit babrechner.arbeitsagentur.de homepage](https://babrechner.arbeitsagentur.de/) |
 | `baeder.stadt.wolfsburg.de` | [Visit baeder.stadt.wolfsburg.de homepage](https://baeder.stadt.wolfsburg.de/), [Visit baeder.stadt.wolfsburg.de/de/eticket_applications/](https://baeder.stadt.wolfsburg.de/de/eticket_applications/) |
 | `baedertickets.essen.de` | [Visit baedertickets.essen.de homepage](https://baedertickets.essen.de/), [Visit baedertickets.essen.de/de/privacyinfo](https://baedertickets.essen.de/de/privacyinfo) |
+| `bafza.de` | [Visit bafza.de homepage](https://bafza.de/) |
 | `bahnfahren.bundeswehr.de` | [Visit bahnfahren.bundeswehr.de homepage](https://bahnfahren.bundeswehr.de/) |
 | `bak.hessen.de` | [Visit bak.hessen.de homepage](https://bak.hessen.de/), [Visit bak.hessen.de/Themen-A-Z](https://bak.hessen.de/Themen-A-Z), [Visit bak.hessen.de/suche/seite](https://bak.hessen.de/suche/seite) |
 | `baku.diplo.de` | [Visit baku.diplo.de homepage](https://baku.diplo.de/), [Visit baku.diplo.de/az-de/konsularservice/05-visaeinreise/2717810-2717810](https://baku.diplo.de/az-de/konsularservice/05-visaeinreise/2717810-2717810) |
@@ -210,11 +213,13 @@ permalink: /domains/germany.html
 | `banjul.diplo.de` | [Visit banjul.diplo.de homepage](https://banjul.diplo.de/), [Visit banjul.diplo.de/gm-de](https://banjul.diplo.de/gm-de) |
 | `barkhof.schule.bremen.de` | [Visit barkhof.schule.bremen.de homepage](https://barkhof.schule.bremen.de/), [Visit barkhof.schule.bremen.de/sixcms/detail.php](https://barkhof.schule.bremen.de/sixcms/detail.php?gsid=bremen377.c.14674.de) |
 | `barrierefrei.bremen.de` | [Visit barrierefrei.bremen.de homepage](https://barrierefrei.bremen.de/), [Visit barrierefrei.bremen.de/leichte-sprache](https://barrierefrei.bremen.de/leichte-sprache), [Visit barrierefrei.bremen.de/parks](https://barrierefrei.bremen.de/parks) |
+| `bast.de` | [Visit bast.de homepage](https://bast.de/) |
 | `bau-verkehr.thueringen.de` | [Visit bau-verkehr.thueringen.de homepage](https://bau-verkehr.thueringen.de/), [Visit bau-verkehr.thueringen.de/bau](https://bau-verkehr.thueringen.de/bau) |
 | `bau.bremen.de` | [Visit bau.bremen.de homepage](https://bau.bremen.de/), [Visit bau.bremen.de/impressum/datenschutzerklaerung-4349](https://bau.bremen.de/impressum/datenschutzerklaerung-4349), [Visit bau.bremen.de/ressort-1464](https://bau.bremen.de/ressort-1464) |
 | `bauleitplanung.hamburg.de` | [Visit bauleitplanung.hamburg.de homepage](https://bauleitplanung.hamburg.de/), [Visit bauleitplanung.hamburg.de/datenschutz](https://bauleitplanung.hamburg.de/datenschutz), [Visit bauleitplanung.hamburg.de/informationen](https://bauleitplanung.hamburg.de/informationen) |
 | `bauleitplanung.hessen.de` | [Visit bauleitplanung.hessen.de homepage](https://bauleitplanung.hessen.de/), [Visit bauleitplanung.hessen.de/medienraum](https://bauleitplanung.hessen.de/medienraum), [Visit bauleitplanung.hessen.de/suche/seite](https://bauleitplanung.hessen.de/suche/seite) |
 | `baustelleninfo.rlp.de` | [Visit baustelleninfo.rlp.de homepage](https://baustelleninfo.rlp.de/), [Visit baustelleninfo.rlp.de/das-projekt](https://baustelleninfo.rlp.de/das-projekt), [Visit baustelleninfo.rlp.de/schulungen](https://baustelleninfo.rlp.de/schulungen) |
+| `baw.de` | [Visit baw.de homepage](https://baw.de/) |
 | `baykibig.bayern.de` | [Visit baykibig.bayern.de homepage](https://baykibig.bayern.de/) |
 | `bayrms.lff.bayern.de` | [Visit bayrms.lff.bayern.de homepage](https://bayrms.lff.bayern.de/), [Visit bayrms.lff.bayern.de/console](https://bayrms.lff.bayern.de/console) |
 | `bbs.rlp.de` | [Visit bbs.rlp.de homepage](https://bbs.rlp.de/) |
@@ -242,8 +247,10 @@ permalink: /domains/germany.html
 | `bewerbung.bka.de` | [Visit bewerbung.bka.de homepage](https://bewerbung.bka.de/), [Visit bewerbung.bka.de/job-offer/index](https://bewerbung.bka.de/job-offer/index) |
 | `bewerbung.polizei.rlp.de` | [Visit bewerbung.polizei.rlp.de homepage](https://bewerbung.polizei.rlp.de/), [Visit bewerbung.polizei.rlp.de/Bewerbung.aspx](https://bewerbung.polizei.rlp.de/Bewerbung.aspx) |
 | `bfaa.diplo.de` | [Visit bfaa.diplo.de homepage](https://bfaa.diplo.de/), [Visit bfaa.diplo.de/bfaa-de/aktuelles](https://bfaa.diplo.de/bfaa-de/aktuelles), [Visit bfaa.diplo.de/bfaa-de/stellenangebote](https://bfaa.diplo.de/bfaa-de/stellenangebote) |
+| `bfu-web.de` | [Visit bfu-web.de homepage](https://bfu-web.de/) |
 | `bg-stelle.bremen.de` | [Visit bg-stelle.bremen.de homepage](https://bg-stelle.bremen.de/) |
 | `bibliothek.dguv.de` | [Visit bibliothek.dguv.de homepage](https://bibliothek.dguv.de/), [Visit bibliothek.dguv.de/Login-Erstnutzer](https://bibliothek.dguv.de/Login-Erstnutzer), [Visit bibliothek.dguv.de/Login](https://bibliothek.dguv.de/Login?returnurl=%2f) |
+| `big-direkt.de` | [Visit big-direkt.de homepage](https://big-direkt.de/) |
 | `bigbluebutton.bayern.de` | [Visit bigbluebutton.bayern.de homepage](https://bigbluebutton.bayern.de/), [Visit bigbluebutton.bayern.de/b/signin](https://bigbluebutton.bayern.de/b/signin) |
 | `bilddatenbank.bundestag.de` | [Visit bilddatenbank.bundestag.de homepage](https://bilddatenbank.bundestag.de/), [Visit bilddatenbank.bundestag.de/search/picture-result](https://bilddatenbank.bundestag.de/search/picture-result?query=&filterQuery%5Bort%5D%5B0%5D=Reichstagsgeb%C3%A4ude%2C+Plenarsaal&sortVal=3) |
 | `bildung-international.hamburg.de` | [Visit bildung-international.hamburg.de homepage](https://bildung-international.hamburg.de/), [Visit bildung-international.hamburg.de/beratung/](https://bildung-international.hamburg.de/beratung/), [Visit bildung-international.hamburg.de/fsa/](https://bildung-international.hamburg.de/fsa/) |
@@ -259,17 +266,27 @@ permalink: /domains/germany.html
 | `bim.hamburg.de` | [Visit bim.hamburg.de homepage](https://bim.hamburg.de/), [Visit bim.hamburg.de/erfolgreicher-workshop-zum-digitalen-zwilling-im-erhaltungsmanagement-1072780](https://bim.hamburg.de/erfolgreicher-workshop-zum-digitalen-zwilling-im-erhaltungsmanagement-1072780) |
 | `bimf.thueringen.de` | [Visit bimf.thueringen.de homepage](https://bimf.thueringen.de/), [Visit bimf.thueringen.de/beauftragte](https://bimf.thueringen.de/beauftragte), [Visit bimf.thueringen.de/beauftragte/veranstaltungen/interkulturelle-woche-thueringen](https://bimf.thueringen.de/beauftragte/veranstaltungen/interkulturelle-woche-thueringen) |
 | `bio.nrw.de` | [Visit bio.nrw.de homepage](https://bio.nrw.de/), [Visit bio.nrw.de/en/](https://bio.nrw.de/en/), [Visit bio.nrw.de/newsletter/](https://bio.nrw.de/newsletter/) |
+| `bioeg.de` | [Visit bioeg.de homepage](https://bioeg.de/) |
 | `biooekonomie.baden-wuerttemberg.de` | [Visit biooekonomie.baden-wuerttemberg.de homepage](https://biooekonomie.baden-wuerttemberg.de/), [Visit biooekonomie.baden-wuerttemberg.de/,Lde/Startseite](https://biooekonomie.baden-wuerttemberg.de/,Lde/Startseite), [Visit biooekonomie.baden-wuerttemberg.de/,Lde/Startseite/datenschutz](https://biooekonomie.baden-wuerttemberg.de/,Lde/Startseite/datenschutz) |
 | `bischkek.diplo.de` | [Visit bischkek.diplo.de homepage](https://bischkek.diplo.de/), [Visit bischkek.diplo.de/kg-ru/service/2723212-2723212](https://bischkek.diplo.de/kg-ru/service/2723212-2723212) |
+| `bisp.de` | [Visit bisp.de homepage](https://bisp.de/) |
+| `bkge.de` | [Visit bkge.de homepage](https://bkge.de/) |
 | `bks-portal.rlp.de` | [Visit bks-portal.rlp.de homepage](https://bks-portal.rlp.de/), [Visit bks-portal.rlp.de/organisation/mdi/aktuelles/anwenderinfo-juli-2025-%E2%80%93-freischaltung-anmeldefenster-f%C3%BCr-portalworkshop](https://bks-portal.rlp.de/organisation/mdi/aktuelles/anwenderinfo-juli-2025-%E2%80%93-freischaltung-anmeldefenster-f%C3%BCr-portalworkshop) |
 | `blog.dnb.de` | [Visit blog.dnb.de homepage](https://blog.dnb.de/), [Visit blog.dnb.de/laudatio-haifisch/](https://blog.dnb.de/laudatio-haifisch/) |
 | `blsa.sachsen-anhalt.de` | [Visit blsa.sachsen-anhalt.de homepage](https://blsa.sachsen-anhalt.de/) |
 | `bltu.bvl.bund.de` | [Visit bltu.bvl.bund.de homepage](https://bltu.bvl.bund.de/) |
 | `bm.rlp.de` | [Visit bm.rlp.de homepage](https://bm.rlp.de/), [Visit bm.rlp.de/service/pressemitteilungen/detail/mehr-verlaesslichkeit-in-der-kinderbetreuung-kita-windmacher-in-neuhemsbach-erhaelt-foerderung-in-hoehe-von-442000-euro](https://bm.rlp.de/service/pressemitteilungen/detail/mehr-verlaesslichkeit-in-der-kinderbetreuung-kita-windmacher-in-neuhemsbach-erhaelt-foerderung-in-hoehe-von-442000-euro), [Visit bm.rlp.de/unsere-schwerpunkte](https://bm.rlp.de/unsere-schwerpunkte) |
+| `bmbfsfj.bund.de` | [Visit bmbfsfj.bund.de homepage](https://bmbfsfj.bund.de/) |
 | `bmds.bund.de` | [Visit bmds.bund.de homepage](https://bmds.bund.de/), [Visit bmds.bund.de/aktuelles/aktuelle-meldungen/14072025-bundespraesident-initiative-handlungsfaehiger-staat](https://bmds.bund.de/aktuelles/aktuelle-meldungen/14072025-bundespraesident-initiative-handlungsfaehiger-staat) |
+| `bmftr.bund.de` | [Visit bmftr.bund.de homepage](https://bmftr.bund.de/) |
+| `bmjv.de` | [Visit bmjv.de homepage](https://bmjv.de/) |
+| `bmleh.de` | [Visit bmleh.de homepage](https://bmleh.de/) |
+| `bmv.de` | [Visit bmv.de homepage](https://bmv.de/) |
+| `bmz.de` | [Visit bmz.de homepage](https://bmz.de/) |
 | `bodenviewer.hessen.de` | [Visit bodenviewer.hessen.de homepage](https://bodenviewer.hessen.de/) |
 | `bogota.diplo.de` | [Visit bogota.diplo.de homepage](https://bogota.diplo.de/), [Visit bogota.diplo.de/co-de](https://bogota.diplo.de/co-de) |
 | `boris.brandenburg.de` | [Visit boris.brandenburg.de homepage](https://boris.brandenburg.de/) |
+| `bpb.de` | [Visit bpb.de homepage](https://bpb.de/) |
 | `brandenburg.de` | [Visit brandenburg.de homepage](https://brandenburg.de/), [Visit brandenburg.de/alias/bb1.c.473964.de](https://brandenburg.de/alias/bb1.c.473964.de), [Visit brandenburg.de/sixcms/detail.php](https://brandenburg.de/sixcms/detail.php?gsid=brandenburg_06.c.869359.de) |
 | `brasil.diplo.de` | [Visit brasil.diplo.de homepage](https://brasil.diplo.de/), [Visit brasil.diplo.de/br-pt](https://brasil.diplo.de/br-pt) |
 | `brazzaville.diplo.de` | [Visit brazzaville.diplo.de homepage](https://brazzaville.diplo.de/), [Visit brazzaville.diplo.de/cg-de](https://brazzaville.diplo.de/cg-de), [Visit brazzaville.diplo.de/cg-fr/1507190-1507190](https://brazzaville.diplo.de/cg-fr/1507190-1507190) |
@@ -285,6 +302,8 @@ permalink: /domains/germany.html
 | `bs11.hamburg.de` | [Visit bs11.hamburg.de homepage](https://bs11.hamburg.de/), [Visit bs11.hamburg.de/berufliches-gymnasium/](https://bs11.hamburg.de/berufliches-gymnasium/) |
 | `bs24.hamburg.de` | [Visit bs24.hamburg.de homepage](https://bs24.hamburg.de/), [Visit bs24.hamburg.de/start/bvb/](https://bs24.hamburg.de/start/bvb/) |
 | `bscw.bund.de` | [Visit bscw.bund.de homepage](https://bscw.bund.de/), [Visit bscw.bund.de/pub/bscw.cgi/](https://bscw.bund.de/pub/bscw.cgi/?op=chpwd), [Visit bscw.bund.de/pub/bscw.cgi/d68263632-2/*/*/Nutzungsbedingungen.html](https://bscw.bund.de/pub/bscw.cgi/d68263632-2/*/*/Nutzungsbedingungen.html?op=WebFolder.getweb) |
+| `bstu.de` | [Visit bstu.de homepage](https://bstu.de/) |
+| `bsu-bund.de` | [Visit bsu-bund.de homepage](https://bsu-bund.de/) |
 | `bua-umfrage.service.berlin.de` | [Visit bua-umfrage.service.berlin.de homepage](https://bua-umfrage.service.berlin.de/) |
 | `budapest.diplo.de` | [Visit budapest.diplo.de homepage](https://budapest.diplo.de/), [Visit budapest.diplo.de/hu-de](https://budapest.diplo.de/hu-de) |
 | `buel.bmel.de` | [Visit buel.bmel.de homepage](https://buel.bmel.de/), [Visit buel.bmel.de/index.php/buel/announcement/view/234](https://buel.bmel.de/index.php/buel/announcement/view/234), [Visit buel.bmel.de/index.php/buel/index](https://buel.bmel.de/index.php/buel/index) |
@@ -293,8 +312,21 @@ permalink: /domains/germany.html
 | `buerger.sachsen-anhalt.de` | [Visit buerger.sachsen-anhalt.de homepage](https://buerger.sachsen-anhalt.de/), [Visit buerger.sachsen-anhalt.de/info](https://buerger.sachsen-anhalt.de/info?areaId=&searchtext=&infotype=0&area=&pstId=&pstCatId=&letter=A&pstGroupId=&bcolCatId=) |
 | `buergerbeteiligung.sachsen.de` | [Visit buergerbeteiligung.sachsen.de homepage](https://buergerbeteiligung.sachsen.de/), [Visit buergerbeteiligung.sachsen.de/portal/sachsen/beteiligung/themen](https://buergerbeteiligung.sachsen.de/portal/sachsen/beteiligung/themen?format=Dialog), [Visit buergerbeteiligung.sachsen.de/portal/zefas/beteiligung/themen/1055213](https://buergerbeteiligung.sachsen.de/portal/zefas/beteiligung/themen/1055213) |
 | `buergerinfo.stadt-koeln.de` | [Visit buergerinfo.stadt-koeln.de homepage](https://buergerinfo.stadt-koeln.de/), [Visit buergerinfo.stadt-koeln.de/info.asp](https://buergerinfo.stadt-koeln.de/info.asp) |
+| `bundesamtsozialesicherung.de` | [Visit bundesamtsozialesicherung.de homepage](https://bundesamtsozialesicherung.de/) |
+| `bundesarchiv.de` | [Visit bundesarchiv.de homepage](https://bundesarchiv.de/) |
+| `bundesbau-bw.de` | [Visit bundesbau-bw.de homepage](https://bundesbau-bw.de/) |
+| `bundesfinanzministerium.de` | [Visit bundesfinanzministerium.de homepage](https://bundesfinanzministerium.de/) |
+| `bundesgesundheitsministerium.de` | [Visit bundesgesundheitsministerium.de homepage](https://bundesgesundheitsministerium.de/) |
+| `bundesjustizamt.de` | [Visit bundesjustizamt.de homepage](https://bundesjustizamt.de/) |
+| `bundeskanzleramt.de` | [Visit bundeskanzleramt.de homepage](http://bundeskanzleramt.de/) |
+| `bundespatentgericht.de` | [Visit bundespatentgericht.de homepage](https://bundespatentgericht.de/) |
 | `bundespolizei.de` | [Visit bundespolizei.de homepage](https://bundespolizei.de/), [Visit bundespolizei.de/unsere-aufgaben/bahnpolizei](https://bundespolizei.de/unsere-aufgaben/bahnpolizei), [Visit bundespolizei.de/unsere-aufgaben/grenzschutz](https://bundespolizei.de/unsere-aufgaben/grenzschutz) |
+| `bundesrechnungshof.de` | [Visit bundesrechnungshof.de homepage](https://bundesrechnungshof.de/) |
+| `bundessortenamt.de` | [Visit bundessortenamt.de homepage](https://bundessortenamt.de/) |
+| `bundessprachenamt.de` | [Visit bundessprachenamt.de homepage](https://bundessprachenamt.de/) |
 | `bundestagswahl2025.bayern.de` | [Visit bundestagswahl2025.bayern.de homepage](https://bundestagswahl2025.bayern.de/), [Visit bundestagswahl2025.bayern.de/index.html](https://bundestagswahl2025.bayern.de/index.html) |
+| `bundesumweltministerium.de` | [Visit bundesumweltministerium.de homepage](https://bundesumweltministerium.de/) |
+| `bundeswirtschaftsministerium.de` | [Visit bundeswirtschaftsministerium.de homepage](https://bundeswirtschaftsministerium.de/) |
 | `bvlb.nrw.de` | [Visit bvlb.nrw.de homepage](https://bvlb.nrw.de/), [Visit bvlb.nrw.de/bvlb/pages/bibliotheken.html](https://bvlb.nrw.de/bvlb/pages/bibliotheken.html) |
 | `bvv-friedrichshain-kreuzberg.berlin.de` | [Visit bvv-friedrichshain-kreuzberg.berlin.de homepage](https://bvv-friedrichshain-kreuzberg.berlin.de/), [Visit bvv-friedrichshain-kreuzberg.berlin.de/pi-r/kp020_r.asp](https://bvv-friedrichshain-kreuzberg.berlin.de/pi-r/kp020_r.asp?KPLFDNR=267), [Visit bvv-friedrichshain-kreuzberg.berlin.de/pi-r/si018_r.asp](https://bvv-friedrichshain-kreuzberg.berlin.de/pi-r/si018_r.asp?GRA=25) |
 | `bvv-lichtenberg.berlin.de` | [Visit bvv-lichtenberg.berlin.de homepage](https://bvv-lichtenberg.berlin.de/), [Visit bvv-lichtenberg.berlin.de/pi-r/kp020_r.asp](https://bvv-lichtenberg.berlin.de/pi-r/kp020_r.asp?KPLFDNR=430) |
@@ -304,6 +336,7 @@ permalink: /domains/germany.html
 | `bvv-pankow.berlin.de` | [Visit bvv-pankow.berlin.de homepage](https://bvv-pankow.berlin.de/), [Visit bvv-pankow.berlin.de/pi-r/kp020_r.asp](https://bvv-pankow.berlin.de/pi-r/kp020_r.asp?KPLFDNR=692) |
 | `bvv-treptow-koepenick.berlin.de` | [Visit bvv-treptow-koepenick.berlin.de homepage](https://bvv-treptow-koepenick.berlin.de/), [Visit bvv-treptow-koepenick.berlin.de/pi-r/kp020_r.asp](https://bvv-treptow-koepenick.berlin.de/pi-r/kp020_r.asp?KPLFDNR=656) |
 | `bzbs.hamburg.de` | [Visit bzbs.hamburg.de homepage](https://bzbs.hamburg.de/), [Visit bzbs.hamburg.de/fsj-bfd/](https://bzbs.hamburg.de/fsj-bfd/) |
+| `bzst.de` | [Visit bzst.de homepage](https://bzst.de/) |
 | `ca2b.hamburg.de` | [Visit ca2b.hamburg.de homepage](https://ca2b.hamburg.de/), [Visit ca2b.hamburg.de/bildungsgaenge/](https://ca2b.hamburg.de/bildungsgaenge/), [Visit ca2b.hamburg.de/bildungsgaenge/esa/](https://ca2b.hamburg.de/bildungsgaenge/esa/) |
 | `campuskielerstrasse.hamburg.de` | [Visit campuskielerstrasse.hamburg.de homepage](https://campuskielerstrasse.hamburg.de/), [Visit campuskielerstrasse.hamburg.de/schul-organisation/](https://campuskielerstrasse.hamburg.de/schul-organisation/) |
 | `canada.diplo.de` | [Visit canada.diplo.de homepage](https://canada.diplo.de/), [Visit canada.diplo.de/ca-de](https://canada.diplo.de/ca-de) |
@@ -343,6 +376,7 @@ permalink: /domains/germany.html
 | `denkmalliste.denkmalpflege.sachsen.de` | [Visit denkmalliste.denkmalpflege.sachsen.de homepage](https://denkmalliste.denkmalpflege.sachsen.de/) |
 | `denkmalpflege.niedersachsen.de` | [Visit denkmalpflege.niedersachsen.de homepage](https://denkmalpflege.niedersachsen.de/), [Visit denkmalpflege.niedersachsen.de/aktuelles/nachrichten/denkmalpflege-als-klimaschutzerin-identitatsstifterin-und-innovationstreiberin-241249.html](https://denkmalpflege.niedersachsen.de/aktuelles/nachrichten/denkmalpflege-als-klimaschutzerin-identitatsstifterin-und-innovationstreiberin-241249.html) |
 | `denkmalpflege.thueringen.de` | [Visit denkmalpflege.thueringen.de homepage](https://denkmalpflege.thueringen.de/), [Visit denkmalpflege.thueringen.de/wir-ueber-uns](https://denkmalpflege.thueringen.de/wir-ueber-uns) |
+| `deutsche-rentenversicherung.de` | [Visit deutsche-rentenversicherung.de homepage](https://deutsche-rentenversicherung.de/) |
 | `dez46.bezreg-duesseldorf.nrw.de` | [Visit dez46.bezreg-duesseldorf.nrw.de homepage](https://dez46.bezreg-duesseldorf.nrw.de/), [Visit dez46.bezreg-duesseldorf.nrw.de/signup](https://dez46.bezreg-duesseldorf.nrw.de/signup) |
 | `dfg-lfa.hamburg.de` | [Visit dfg-lfa.hamburg.de homepage](https://dfg-lfa.hamburg.de/), [Visit dfg-lfa.hamburg.de/2025/07/06/abiturentlassungsfeier-herzlichen-glueckwunsch/](https://dfg-lfa.hamburg.de/2025/07/06/abiturentlassungsfeier-herzlichen-glueckwunsch/), [Visit dfg-lfa.hamburg.de/2025/07/11/lernen-mit-allen-sinnen-ein-suesser-tag-im-schokoladenmuseum/](https://dfg-lfa.hamburg.de/2025/07/11/lernen-mit-allen-sinnen-ein-suesser-tag-im-schokoladenmuseum/) |
 | `dguv.de` | [Visit dguv.de homepage](https://dguv.de/), [Visit dguv.de/de/mediencenter/hintergrund/warnung-vor-betrugsversuchen/index.jsp](https://dguv.de/de/mediencenter/hintergrund/warnung-vor-betrugsversuchen/index.jsp), [Visit dguv.de/de/mediencenter/pm/betrugsversuch.jsp](https://dguv.de/de/mediencenter/pm/betrugsversuch.jsp) |
@@ -397,6 +431,7 @@ permalink: /domains/germany.html
 | `einbuergerung.rlp.de` | [Visit einbuergerung.rlp.de homepage](https://einbuergerung.rlp.de/), [Visit einbuergerung.rlp.de/themen/voraussetzungen](https://einbuergerung.rlp.de/themen/voraussetzungen), [Visit einbuergerung.rlp.de/ueber-uns/leichte-sprache](https://einbuergerung.rlp.de/ueber-uns/leichte-sprache) |
 | `einbuergerung.sachsen-anhalt.de` | [Visit einbuergerung.sachsen-anhalt.de homepage](https://einbuergerung.sachsen-anhalt.de/) |
 | `einsatznachbearbeitung.bayern.de` | [Visit einsatznachbearbeitung.bayern.de homepage](https://einsatznachbearbeitung.bayern.de/), [Visit einsatznachbearbeitung.bayern.de/rstpwt](https://einsatznachbearbeitung.bayern.de/rstpwt?login=) |
+| `eisenbahn-unfalluntersuchung.de` | [Visit eisenbahn-unfalluntersuchung.de homepage](https://eisenbahn-unfalluntersuchung.de/) |
 | `ejustice.rlp.de` | [Visit ejustice.rlp.de homepage](https://ejustice.rlp.de/), [Visit ejustice.rlp.de/digitale-serviceangebote](https://ejustice.rlp.de/digitale-serviceangebote), [Visit ejustice.rlp.de/news/detail/digitalisierung-der-justiz-elektronische-akte-nun-an-allen-fachgerichten-des-landes](https://ejustice.rlp.de/news/detail/digitalisierung-der-justiz-elektronische-akte-nun-an-allen-fachgerichten-des-landes) |
 | `elbinselschule.hamburg.de` | [Visit elbinselschule.hamburg.de homepage](https://elbinselschule.hamburg.de/), [Visit elbinselschule.hamburg.de/2022/06/16/anmeldung-einschulung/](https://elbinselschule.hamburg.de/2022/06/16/anmeldung-einschulung/), [Visit elbinselschule.hamburg.de/2025/06/06/grundschulliga-finale-2025/](https://elbinselschule.hamburg.de/2025/06/06/grundschulliga-finale-2025/) |
 | `elbschule.hamburg.de` | [Visit elbschule.hamburg.de homepage](https://elbschule.hamburg.de/), [Visit elbschule.hamburg.de homepage](https://elbschule.hamburg.de/?p=4998), [Visit elbschule.hamburg.de homepage](https://elbschule.hamburg.de/?page_id=5061) |
@@ -488,6 +523,7 @@ permalink: /domains/germany.html
 | `fm.rlp.de` | [Visit fm.rlp.de homepage](https://fm.rlp.de/), [Visit fm.rlp.de/ministerium](https://fm.rlp.de/ministerium), [Visit fm.rlp.de/service/presse/detail/bundesrat-stimmt-investitionsbooster-zu-faire-lastenverteilung-zwischen-bund-und-laendern-2](https://fm.rlp.de/service/presse/detail/bundesrat-stimmt-investitionsbooster-zu-faire-lastenverteilung-zwischen-bund-und-laendern-2) |
 | `fms.bfv.bund.de` | [Visit fms.bfv.bund.de homepage](https://fms.bfv.bund.de/), [Visit fms.bfv.bund.de/sueg/](https://fms.bfv.bund.de/sueg/) |
 | `fms.portal.bafa.de` | [Visit fms.portal.bafa.de homepage](https://fms.portal.bafa.de/), [Visit fms.portal.bafa.de/home](https://fms.portal.bafa.de/home) |
+| `fmsa.de` | [Visit fmsa.de homepage](https://fmsa.de/) |
 | `fns.hamburg.de` | [Visit fns.hamburg.de homepage](https://fns.hamburg.de/), [Visit fns.hamburg.de/category/aktuelles/](https://fns.hamburg.de/category/aktuelles/), [Visit fns.hamburg.de/streitschlichter/](https://fns.hamburg.de/streitschlichter/) |
 | `foerdermittel.stadt-koeln.de` | [Visit foerdermittel.stadt-koeln.de homepage](https://foerdermittel.stadt-koeln.de/) |
 | `foerderportal.bund.de` | [Visit foerderportal.bund.de homepage](https://foerderportal.bund.de/), [Visit foerderportal.bund.de/easyonline/](https://foerderportal.bund.de/easyonline/) |
@@ -510,6 +546,7 @@ permalink: /domains/germany.html
 | `freetown.diplo.de` | [Visit freetown.diplo.de homepage](https://freetown.diplo.de/), [Visit freetown.diplo.de/sl-de](https://freetown.diplo.de/sl-de) |
 | `freibetragsrechner.justiz.nrw.de` | [Visit freibetragsrechner.justiz.nrw.de homepage](https://freibetragsrechner.justiz.nrw.de/) |
 | `fsj.saarland.de` | [Visit fsj.saarland.de homepage](https://fsj.saarland.de/), [Visit fsj.saarland.de/einsatzstellendatenbank/](https://fsj.saarland.de/einsatzstellendatenbank/) |
+| `g-ba.de` | [Visit g-ba.de homepage](https://g-ba.de/) |
 | `gaborone.diplo.de` | [Visit gaborone.diplo.de homepage](https://gaborone.diplo.de/), [Visit gaborone.diplo.de/bw-en/datenschutz](https://gaborone.diplo.de/bw-en/datenschutz) |
 | `gah.hamburg.de` | [Visit gah.hamburg.de homepage](https://gah.hamburg.de/), [Visit gah.hamburg.de/img_8146/](https://gah.hamburg.de/img_8146/), [Visit gah.hamburg.de/lernen-unterricht/](https://gah.hamburg.de/lernen-unterricht/) |
 | `games.koeln.de` | [Visit games.koeln.de homepage](https://games.koeln.de/), [Visit games.koeln.de/bubble-shooter/](https://games.koeln.de/bubble-shooter/) |
@@ -583,6 +620,7 @@ permalink: /domains/germany.html
 | `gis.bvl.bund.de` | [Visit gis.bvl.bund.de homepage](https://gis.bvl.bund.de/), [Visit gis.bvl.bund.de/datenportal/logout](https://gis.bvl.bund.de/datenportal/logout;jsessionid=ED6956551F42FF6124587A33BF116238), [Visit gis.bvl.bund.de/datenportal/logout](https://gis.bvl.bund.de/datenportal/logout;jsessionid=FDC3287656990DC358A14ACACA4EE7AD) |
 | `gis7.stuttgart.de` | [Visit gis7.stuttgart.de homepage](https://gis7.stuttgart.de/), [Visit gis7.stuttgart.de/about](https://gis7.stuttgart.de/about) |
 | `gitlab1.ptb.de` | [Visit gitlab1.ptb.de homepage](https://gitlab1.ptb.de/), [Visit gitlab1.ptb.de/users/password/new](https://gitlab1.ptb.de/users/password/new) |
+| `gluecksspiel-behoerde.de` | [Visit gluecksspiel-behoerde.de homepage](https://gluecksspiel-behoerde.de/) |
 | `goaml.fiu.bund.de` | [Visit goaml.fiu.bund.de homepage](https://goaml.fiu.bund.de/), [Visit goaml.fiu.bund.de/Public_Documents/Impressum/impressum.html](https://goaml.fiu.bund.de/Public_Documents/Impressum/impressum.html) |
 | `goethe-schule-harburg.hamburg.de` | [Visit goethe-schule-harburg.hamburg.de homepage](https://goethe-schule-harburg.hamburg.de/), [Visit goethe-schule-harburg.hamburg.de homepage](https://goethe-schule-harburg.hamburg.de/?page_id=11620) |
 | `gofrankfurttax.hessen.de` | [Visit gofrankfurttax.hessen.de homepage](https://gofrankfurttax.hessen.de/), [Visit gofrankfurttax.hessen.de/financial-centre-frankfurt](https://gofrankfurttax.hessen.de/financial-centre-frankfurt) |
@@ -828,6 +866,7 @@ permalink: /domains/germany.html
 | `kontakte.polizei.bayern.de` | [Visit kontakte.polizei.bayern.de homepage](https://kontakte.polizei.bayern.de/), [Visit kontakte.polizei.bayern.de/faq/index.html](https://kontakte.polizei.bayern.de/faq/index.html) |
 | `kontenvergleich.bafin.de` | [Visit kontenvergleich.bafin.de homepage](https://kontenvergleich.bafin.de/), [Visit kontenvergleich.bafin.de/de-simple](https://kontenvergleich.bafin.de/de-simple), [Visit kontenvergleich.bafin.de/de/gut-zu-wissen](https://kontenvergleich.bafin.de/de/gut-zu-wissen) |
 | `kopenhagen.diplo.de` | [Visit kopenhagen.diplo.de homepage](https://kopenhagen.diplo.de/), [Visit kopenhagen.diplo.de/dk-da](https://kopenhagen.diplo.de/dk-da), [Visit kopenhagen.diplo.de/dk-de/botschaft/kontakt](https://kopenhagen.diplo.de/dk-de/botschaft/kontakt) |
+| `kosit.de` | [Visit kosit.de homepage](https://kosit.de/) |
 | `kostenrechner.justiz.nrw.de` | [Visit kostenrechner.justiz.nrw.de homepage](https://kostenrechner.justiz.nrw.de/) |
 | `kriegsgraeber.sachsen-anhalt.de` | [Visit kriegsgraeber.sachsen-anhalt.de homepage](https://kriegsgraeber.sachsen-anhalt.de/) |
 | `krisenvorsorgeliste.diplo.de` | [Visit krisenvorsorgeliste.diplo.de homepage](https://krisenvorsorgeliste.diplo.de/), [Visit krisenvorsorgeliste.diplo.de/account/reset-password/request](https://krisenvorsorgeliste.diplo.de/account/reset-password/request), [Visit krisenvorsorgeliste.diplo.de/home](https://krisenvorsorgeliste.diplo.de/home) |
@@ -836,6 +875,8 @@ permalink: /domains/germany.html
 | `kulturerbe.niedersachsen.de` | [Visit kulturerbe.niedersachsen.de homepage](https://kulturerbe.niedersachsen.de/), [Visit kulturerbe.niedersachsen.de/start](https://kulturerbe.niedersachsen.de/start) |
 | `kulturerleben.rlp.de` | [Visit kulturerleben.rlp.de homepage](https://kulturerleben.rlp.de/), [Visit kulturerleben.rlp.de/service/presse/detail/neues-pixi-buch-paula-und-mika-und-das-abenteuer-am-limes-spannende-entdeckungsreise-durch-die-roemische-geschichte-in-rheinland-pfalz](https://kulturerleben.rlp.de/service/presse/detail/neues-pixi-buch-paula-und-mika-und-das-abenteuer-am-limes-spannende-entdeckungsreise-durch-die-roemische-geschichte-in-rheinland-pfalz), [Visit kulturerleben.rlp.de/ueber-rlpde/leichte-sprache](https://kulturerleben.rlp.de/ueber-rlpde/leichte-sprache) |
 | `kulturland.rlp.de` | [Visit kulturland.rlp.de homepage](https://kulturland.rlp.de/), [Visit kulturland.rlp.de/aktuelles/detail/internationale-sichtbarkeit-fuer-zeitgenoessische-kunst-aus-deutschland](https://kulturland.rlp.de/aktuelles/detail/internationale-sichtbarkeit-fuer-zeitgenoessische-kunst-aus-deutschland), [Visit kulturland.rlp.de/kultur-entwickeln](https://kulturland.rlp.de/kultur-entwickeln) |
+| `kulturstaatsminister.de` | [Visit kulturstaatsminister.de homepage](https://kulturstaatsminister.de/) |
+| `kulturstaatsministerin.de` | [Visit kulturstaatsministerin.de homepage](https://kulturstaatsministerin.de/) |
 | `kultus.hessen.de` | [Visit kultus.hessen.de homepage](https://kultus.hessen.de/), [Visit kultus.hessen.de/unterricht/bildungssprache-deutsch](https://kultus.hessen.de/unterricht/bildungssprache-deutsch) |
 | `kunden.dwd.de` | [Visit kunden.dwd.de homepage](https://kunden.dwd.de/), [Visit kunden.dwd.de/impressum.html](https://kunden.dwd.de/impressum.html) |
 | `kunstundbau.rlp.de` | [Visit kunstundbau.rlp.de homepage](https://kunstundbau.rlp.de/), [Visit kunstundbau.rlp.de/informationen](https://kunstundbau.rlp.de/informationen) |
@@ -1012,6 +1053,7 @@ permalink: /domains/germany.html
 | `mauswiesel.bildung.hessen.de` | [Visit mauswiesel.bildung.hessen.de homepage](https://mauswiesel.bildung.hessen.de/), [Visit mauswiesel.bildung.hessen.de/wissen](https://mauswiesel.bildung.hessen.de/wissen) |
 | `mb.sachsen-anhalt.de` | [Visit mb.sachsen-anhalt.de homepage](https://mb.sachsen-anhalt.de/) |
 | `mbjs.brandenburg.de` | [Visit mbjs.brandenburg.de homepage](https://mbjs.brandenburg.de/) |
+| `md-bund.de` | [Visit md-bund.de homepage](https://md-bund.de/) |
 | `mdi.rlp.de` | [Visit mdi.rlp.de homepage](https://mdi.rlp.de/), [Visit mdi.rlp.de/ministerium](https://mdi.rlp.de/ministerium), [Visit mdi.rlp.de/service/pressemitteilungen/detail/tus-germania-bitzen-erhaelt-182000-euro-fuer-kunstrasenplatz](https://mdi.rlp.de/service/pressemitteilungen/detail/tus-germania-bitzen-erhaelt-182000-euro-fuer-kunstrasenplatz) |
 | `mdjd.video.brandenburg.de` | [Visit mdjd.video.brandenburg.de homepage](https://mdjd.video.brandenburg.de/), [Visit mdjd.video.brandenburg.de/forgot-password](https://mdjd.video.brandenburg.de/forgot-password), [Visit mdjd.video.brandenburg.de/requirements](https://mdjd.video.brandenburg.de/requirements) |
 | `medien.bildung.hessen.de` | [Visit medien.bildung.hessen.de homepage](https://medien.bildung.hessen.de/), [Visit medien.bildung.hessen.de/index.html](https://medien.bildung.hessen.de/index.html), [Visit medien.bildung.hessen.de/tagung/index.html](https://medien.bildung.hessen.de/tagung/index.html) |
@@ -1019,6 +1061,7 @@ permalink: /domains/germany.html
 | `mediengeschichte.dnb.de` | [Visit mediengeschichte.dnb.de homepage](https://mediengeschichte.dnb.de/), [Visit mediengeschichte.dnb.de/DBSMZBN/Web/DE/Navigation/Lesewelten/lesewelten_doorpage.html](https://mediengeschichte.dnb.de/DBSMZBN/Web/DE/Navigation/Lesewelten/lesewelten_doorpage.html), [Visit mediengeschichte.dnb.de/DBSMZBN/Web/DE/Navigation/ZeichenSetzen/zeichen_setzen_doorpage.html](https://mediengeschichte.dnb.de/DBSMZBN/Web/DE/Navigation/ZeichenSetzen/zeichen_setzen_doorpage.html) |
 | `medienservice.sachsen.de` | [Visit medienservice.sachsen.de homepage](https://medienservice.sachsen.de/), [Visit medienservice.sachsen.de/medien/account](https://medienservice.sachsen.de/medien/account), [Visit medienservice.sachsen.de/medien/news/1088948](https://medienservice.sachsen.de/medien/news/1088948) |
 | `medienzentren.bildung.hessen.de` | [Visit medienzentren.bildung.hessen.de homepage](https://medienzentren.bildung.hessen.de/), [Visit medienzentren.bildung.hessen.de homepage](https://medienzentren.bildung.hessen.de/?rCH=2), [Visit medienzentren.bildung.hessen.de/index.php/fortbildungen](https://medienzentren.bildung.hessen.de/index.php/fortbildungen) |
+| `medizinischerdienst.de` | [Visit medizinischerdienst.de homepage](https://medizinischerdienst.de/) |
 | `meet-la.bildung.hessen.de` | [Visit meet-la.bildung.hessen.de homepage](https://meet-la.bildung.hessen.de/) |
 | `meet.bdbos.bund.de` | [Visit meet.bdbos.bund.de homepage](https://meet.bdbos.bund.de/) |
 | `meet.bundeswehr.de` | [Visit meet.bundeswehr.de homepage](https://meet.bundeswehr.de/) |
@@ -1379,6 +1422,7 @@ permalink: /domains/germany.html
 | `snu.rlp.de` | [Visit snu.rlp.de homepage](https://snu.rlp.de/), [Visit snu.rlp.de/foerderungen](https://snu.rlp.de/foerderungen), [Visit snu.rlp.de/service/presse/detail/katrin-eder-wilde-wiesen-bieten-vielfaeltigen-lebensraum-fuer-schmetterlinge](https://snu.rlp.de/service/presse/detail/katrin-eder-wilde-wiesen-bieten-vielfaeltigen-lebensraum-fuer-schmetterlinge) |
 | `social.bscw.bund.de` | [Visit social.bscw.bund.de homepage](https://social.bscw.bund.de/), [Visit social.bscw.bund.de/pub/bscw.cgi/](https://social.bscw.bund.de/pub/bscw.cgi/?op=chpwd) |
 | `social.bund.de` | [Visit social.bund.de homepage](https://social.bund.de/), [Visit social.bund.de/@DeutscherWetterdienst](https://social.bund.de/@DeutscherWetterdienst), [Visit social.bund.de/about](https://social.bund.de/about) |
+| `soffin.de` | [Visit soffin.de homepage](https://soffin.de/) |
 | `sofia.diplo.de` | [Visit sofia.diplo.de homepage](https://sofia.diplo.de/), [Visit sofia.diplo.de/bg-bg](https://sofia.diplo.de/bg-bg) |
 | `southafrica.diplo.de` | [Visit southafrica.diplo.de homepage](https://southafrica.diplo.de/), [Visit southafrica.diplo.de/sa-de](https://southafrica.diplo.de/sa-de), [Visit southafrica.diplo.de/sa-en/04-news](https://southafrica.diplo.de/sa-en/04-news) |
 | `sowon.muenchen.de` | [Visit sowon.muenchen.de homepage](https://sowon.muenchen.de/) |

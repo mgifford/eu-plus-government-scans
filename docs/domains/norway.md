@@ -6,11 +6,12 @@ permalink: /domains/norway.html
 
 [← Back to all countries](../domains.html)
 
-**125 domains** · **239 pages**
+**135 domains** · **249 pages**
 
 | Domain | Pages |
 |--------|-------|
 | `a3.kystverket.no` | [Visit a3.kystverket.no homepage](https://a3.kystverket.no/) |
+| `advnemnda.no` | [Visit advnemnda.no homepage](https://advnemnda.no/) |
 | `aksel.nav.no` | [Visit aksel.nav.no homepage](https://aksel.nav.no/), [Visit aksel.nav.no/designsystemet](https://aksel.nav.no/designsystemet) |
 | `analysebrettet.udir.no` | [Visit analysebrettet.udir.no homepage](https://analysebrettet.udir.no/) |
 | `api.nve.no` | [Visit api.nve.no homepage](https://api.nve.no/), [Visit api.nve.no/doc/elsertifikater/](https://api.nve.no/doc/elsertifikater/), [Visit api.nve.no/doc/kulturminner-i-vassdrags-og-energisektoren/](https://api.nve.no/doc/kulturminner-i-vassdrags-og-energisektoren/) |
@@ -23,10 +24,12 @@ permalink: /domains/norway.html
 | `barnehagefakta.udir.no` | [Visit barnehagefakta.udir.no homepage](https://barnehagefakta.udir.no/), [Visit barnehagefakta.udir.no/sok/kart](https://barnehagefakta.udir.no/sok/kart) |
 | `bestill.bufdir.no` | [Visit bestill.bufdir.no homepage](https://bestill.bufdir.no/), [Visit bestill.bufdir.no/pub/foreldreveiledning-1](https://bestill.bufdir.no/pub/foreldreveiledning-1), [Visit bestill.bufdir.no/pub/likestilling-og-inkludering](https://bestill.bufdir.no/pub/likestilling-og-inkludering) |
 | `datafangst.vegvesen.no` | [Visit datafangst.vegvesen.no homepage](https://datafangst.vegvesen.no/), [Visit datafangst.vegvesen.no/noauth/](https://datafangst.vegvesen.no/noauth/) |
+| `datatilsynet.no` | [Visit datatilsynet.no homepage](https://datatilsynet.no/) |
 | `dataut.vegvesen.no` | [Visit dataut.vegvesen.no homepage](https://dataut.vegvesen.no/), [Visit dataut.vegvesen.no/dataset/](https://dataut.vegvesen.no/dataset/), [Visit dataut.vegvesen.no/user/login](https://dataut.vegvesen.no/user/login) |
 | `dekningskart.nkom.no` | [Visit dekningskart.nkom.no homepage](https://dekningskart.nkom.no/) |
 | `deltager.eps.udir.no` | [Visit deltager.eps.udir.no homepage](https://deltager.eps.udir.no/) |
 | `digitaleksamen.lovdata.no` | [Visit digitaleksamen.lovdata.no homepage](https://digitaleksamen.lovdata.no/) |
+| `domstol.no` | [Visit domstol.no homepage](https://domstol.no/) |
 | `edialog.udi.no` | [Visit edialog.udi.no homepage](https://edialog.udi.no/) |
 | `eksamen.lovdata.no` | [Visit eksamen.lovdata.no homepage](http://eksamen.lovdata.no/), [Visit eksamen.lovdata.no/artikkel/her_er_regelendringene_som_gjelder_fra_1__juli_2025/5131](http://eksamen.lovdata.no/artikkel/her_er_regelendringene_som_gjelder_fra_1__juli_2025/5131) |
 | `eksamensplan.udir.no` | [Visit eksamensplan.udir.no homepage](https://eksamensplan.udir.no/) |
@@ -36,6 +39,7 @@ permalink: /domains/norway.html
 | `finnhjelpemiddel.nav.no` | [Visit finnhjelpemiddel.nav.no homepage](https://finnhjelpemiddel.nav.no/), [Visit finnhjelpemiddel.nav.no/personvern](https://finnhjelpemiddel.nav.no/personvern), [Visit finnhjelpemiddel.nav.no/rammeavtale/hjelpemidler/b062ea46-9cec-4503-982c-943c1734120d](https://finnhjelpemiddel.nav.no/rammeavtale/hjelpemidler/b062ea46-9cec-4503-982c-943c1734120d) |
 | `fiskeravgift.miljodirektoratet.no` | [Visit fiskeravgift.miljodirektoratet.no homepage](https://fiskeravgift.miljodirektoratet.no/), [Visit fiskeravgift.miljodirektoratet.no/betal](https://fiskeravgift.miljodirektoratet.no/betal?Length=4) |
 | `frekvens.nkom.no` | [Visit frekvens.nkom.no homepage](https://frekvens.nkom.no/) |
+| `generaladvokaten.no` | [Visit generaladvokaten.no homepage](http://generaladvokaten.no/) |
 | `geocortex02.miljodirektoratet.no` | [Visit geocortex02.miljodirektoratet.no homepage](https://geocortex02.miljodirektoratet.no/) |
 | `grunnforurensning.miljodirektoratet.no` | [Visit grunnforurensning.miljodirektoratet.no homepage](https://grunnforurensning.miljodirektoratet.no/) |
 | `gsi.udir.no` | [Visit gsi.udir.no homepage](https://gsi.udir.no/), [Visit gsi.udir.no/informasjon/apne/](https://gsi.udir.no/informasjon/apne/) |
@@ -53,6 +57,7 @@ permalink: /domains/norway.html
 | `komp.udir.no` | [Visit komp.udir.no homepage](https://komp.udir.no/) |
 | `kontaktskjema.arbeidsgiver.nav.no` | [Visit kontaktskjema.arbeidsgiver.nav.no homepage](https://kontaktskjema.arbeidsgiver.nav.no/) |
 | `kontor.vegvesen.no` | [Visit kontor.vegvesen.no homepage](https://kontor.vegvesen.no/) |
+| `koro.no` | [Visit koro.no homepage](https://koro.no/) |
 | `kultur.forsvaret.no` | [Visit kultur.forsvaret.no homepage](https://kultur.forsvaret.no/), [Visit kultur.forsvaret.no/nyheter/vaktparader](https://kultur.forsvaret.no/nyheter/vaktparader) |
 | `kurskomp.vegvesen.no` | [Visit kurskomp.vegvesen.no homepage](https://kurskomp.vegvesen.no/), [Visit kurskomp.vegvesen.no/Portal](https://kurskomp.vegvesen.no/Portal), [Visit kurskomp.vegvesen.no/Portal/RoadworkMenu](https://kurskomp.vegvesen.no/Portal/RoadworkMenu) |
 | `kyvreports.kystverket.no` | [Visit kyvreports.kystverket.no homepage](https://kyvreports.kystverket.no/) |
@@ -74,13 +79,17 @@ permalink: /domains/norway.html
 | `nsr.udir.no` | [Visit nsr.udir.no homepage](https://nsr.udir.no/), [Visit nsr.udir.no/fylker/56](https://nsr.udir.no/fylker/56) |
 | `nvdbstatus.atlas.vegvesen.no` | [Visit nvdbstatus.atlas.vegvesen.no homepage](https://nvdbstatus.atlas.vegvesen.no/) |
 | `orders.atcddd.fhi.no` | [Visit orders.atcddd.fhi.no homepage](https://orders.atcddd.fhi.no/), [Visit orders.atcddd.fhi.no/authentication/register](https://orders.atcddd.fhi.no/authentication/register) |
+| `patentstyret.no` | [Visit patentstyret.no homepage](https://patentstyret.no/) |
 | `plannett.nve.no` | [Visit plannett.nve.no homepage](https://plannett.nve.no/), [Visit plannett.nve.no/konseptvalgutredning](https://plannett.nve.no/konseptvalgutredning), [Visit plannett.nve.no/omraadestudie](https://plannett.nve.no/omraadestudie) |
 | `plantevernmidler.mattilsynet.no` | [Visit plantevernmidler.mattilsynet.no homepage](https://plantevernmidler.mattilsynet.no/), [Visit plantevernmidler.mattilsynet.no/godkjente_kjemiske_mikrobiologiske_preparater](https://plantevernmidler.mattilsynet.no/godkjente_kjemiske_mikrobiologiske_preparater) |
 | `pro.lovdata.no` | [Visit pro.lovdata.no homepage](https://pro.lovdata.no/), [Visit pro.lovdata.no/priser-og-vilkar/undervisningsinstitusjoner/](https://pro.lovdata.no/priser-og-vilkar/undervisningsinstitusjoner/), [Visit pro.lovdata.no/prov-gratis/](https://pro.lovdata.no/prov-gratis/) |
 | `pro2.lovdata.no` | [Visit pro2.lovdata.no homepage](https://pro2.lovdata.no/) |
 | `prod.arbeidstilsynet.no` | [Visit prod.arbeidstilsynet.no homepage](https://prod.arbeidstilsynet.no/), [Visit prod.arbeidstilsynet.no/lonn-og-ansettelse/arbeidsavtale/](https://prod.arbeidstilsynet.no/lonn-og-ansettelse/arbeidsavtale/) |
+| `pst.no` | [Visit pst.no homepage](https://pst.no/) |
 | `regbok.udir.no` | [Visit regbok.udir.no homepage](https://regbok.udir.no/), [Visit regbok.udir.no/bakgrunn](https://regbok.udir.no/bakgrunn) |
 | `rettsstiftelser.brreg.no` | [Visit rettsstiftelser.brreg.no homepage](https://rettsstiftelser.brreg.no/) |
+| `riksadvokaten.no` | [Visit riksadvokaten.no homepage](https://riksadvokaten.no/) |
+| `riksmekleren.no` | [Visit riksmekleren.no homepage](https://riksmekleren.no/) |
 | `rovbase30.miljodirektoratet.no` | [Visit rovbase30.miljodirektoratet.no homepage](https://rovbase30.miljodirektoratet.no/), [Visit rovbase30.miljodirektoratet.no/Default.aspx](https://rovbase30.miljodirektoratet.no/Default.aspx), [Visit rovbase30.miljodirektoratet.no/Public/Om.aspx](https://rovbase30.miljodirektoratet.no/Public/Om.aspx) |
 | `sildre.nve.no` | [Visit sildre.nve.no homepage](https://sildre.nve.no/), [Visit sildre.nve.no/help](https://sildre.nve.no/help) |
 | `sismo.skatteetaten.no` | [Visit sismo.skatteetaten.no homepage](https://sismo.skatteetaten.no/), [Visit sismo.skatteetaten.no/person/min-side/](https://sismo.skatteetaten.no/person/min-side/), [Visit sismo.skatteetaten.no/person/ubetalte-krav/](https://sismo.skatteetaten.no/person/ubetalte-krav/) |
@@ -102,6 +111,7 @@ permalink: /domains/norway.html
 | `tavla.udir.no` | [Visit tavla.udir.no homepage](https://tavla.udir.no/) |
 | `temakart.nve.no` | [Visit temakart.nve.no homepage](https://temakart.nve.no/) |
 | `tilsyn.udir.no` | [Visit tilsyn.udir.no homepage](https://tilsyn.udir.no/), [Visit tilsyn.udir.no/oversikt/barnehage](https://tilsyn.udir.no/oversikt/barnehage), [Visit tilsyn.udir.no/tidligererapport](https://tilsyn.udir.no/tidligererapport) |
+| `tilsynet.no` | [Visit tilsynet.no homepage](https://tilsynet.no/) |
 | `tiltak-refusjon.nav.no` | [Visit tiltak-refusjon.nav.no homepage](https://tiltak-refusjon.nav.no/) |
 | `tips.arbeidstilsynet.no` | [Visit tips.arbeidstilsynet.no homepage](https://tips.arbeidstilsynet.no/) |
 | `tips.skatteetaten.no` | [Visit tips.skatteetaten.no homepage](https://tips.skatteetaten.no/) |

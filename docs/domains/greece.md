@@ -6,7 +6,7 @@ permalink: /domains/greece.html
 
 [← Back to all countries](../domains.html)
 
-**822 domains** · **1,748 pages**
+**826 domains** · **1,752 pages**
 
 | Domain | Pages |
 |--------|-------|
@@ -181,6 +181,7 @@ permalink: /domains/greece.html
 | `docs.necca.gov.gr` | [Visit docs.necca.gov.gr homepage](https://docs.necca.gov.gr/), [Visit docs.necca.gov.gr/el/List](https://docs.necca.gov.gr/el/List) |
 | `doctor.ehealthrecord.gov.gr` | [Visit doctor.ehealthrecord.gov.gr homepage](https://doctor.ehealthrecord.gov.gr/) |
 | `dokappam.malevizi.gov.gr` | [Visit dokappam.malevizi.gov.gr homepage](https://dokappam.malevizi.gov.gr/), [Visit dokappam.malevizi.gov.gr/events/](https://dokappam.malevizi.gov.gr/events/) |
+| `dpa.gr` | [Visit dpa.gr homepage](https://dpa.gr/) |
 | `dpa.moj.gov.gr` | [Visit dpa.moj.gov.gr homepage](https://dpa.moj.gov.gr/) |
 | `dpapxol.gov.gr` | [Visit dpapxol.gov.gr homepage](https://dpapxol.gov.gr/), [Visit dpapxol.gov.gr/e-politis/2015-07-30-06-35-07/zoume-mazi.html](https://dpapxol.gov.gr/e-politis/2015-07-30-06-35-07/zoume-mazi.html), [Visit dpapxol.gov.gr/index.php](https://dpapxol.gov.gr/index.php?option=com_sppagebuilder&view=page&id=9201) |
 | `dpe.damt.gov.gr` | [Visit dpe.damt.gov.gr homepage](http://dpe.damt.gov.gr/), [Visit dpe.damt.gov.gr/index.php](http://dpe.damt.gov.gr/index.php) |
@@ -313,6 +314,7 @@ permalink: /domains/greece.html
 | `exoikonomoepixeiro.energy-invest.gov.gr` | [Visit exoikonomoepixeiro.energy-invest.gov.gr homepage](https://exoikonomoepixeiro.energy-invest.gov.gr/), [Visit exoikonomoepixeiro.energy-invest.gov.gr/app/login](https://exoikonomoepixeiro.energy-invest.gov.gr/app/login), [Visit exoikonomoepixeiro.energy-invest.gov.gr/tropopoiisi-tou-programmatos-veltiosi-tis-energeiakis-apodosis-ton-epicheiriseon-tou-tritogenous-tomea/](https://exoikonomoepixeiro.energy-invest.gov.gr/tropopoiisi-tou-programmatos-veltiosi-tis-energeiakis-apodosis-ton-epicheiriseon-tou-tritogenous-tomea/) |
 | `exoikonomoneon.gov.gr` | [Visit exoikonomoneon.gov.gr homepage](https://exoikonomoneon.gov.gr/), [Visit exoikonomoneon.gov.gr/web/symbouloi/login](https://exoikonomoneon.gov.gr/web/symbouloi/login), [Visit exoikonomoneon.gov.gr/welcome](https://exoikonomoneon.gov.gr/welcome) |
 | `extapps.solon.gov.gr` | [Visit extapps.solon.gov.gr homepage](https://extapps.solon.gov.gr/) |
+| `exteriors.gencat.cat` | [Visit exteriors.gencat.cat homepage](https://exteriors.gencat.cat/) |
 | `eyde.ypes.gr` | [Visit eyde.ypes.gr homepage](https://eyde.ypes.gr/), [Visit eyde.ypes.gr/page/xartis-ergon](https://eyde.ypes.gr/page/xartis-ergon) |
 | `festival.dpapxol.gov.gr` | [Visit festival.dpapxol.gov.gr homepage](https://festival.dpapxol.gov.gr/), [Visit festival.dpapxol.gov.gr homepage](https://festival.dpapxol.gov.gr/?page_id=249) |
 | `filmoffice.pdm.gov.gr` | [Visit filmoffice.pdm.gov.gr homepage](https://filmoffice.pdm.gov.gr/), [Visit filmoffice.pdm.gov.gr/politiki-aporritoy/](https://filmoffice.pdm.gov.gr/politiki-aporritoy/) |
@@ -443,6 +445,7 @@ permalink: /domains/greece.html
 | `migration.gov.gr` | [Visit migration.gov.gr homepage](https://migration.gov.gr/), [Visit migration.gov.gr/ukraine](https://migration.gov.gr/ukraine) |
 | `minagric.gr` | [Visit minagric.gr homepage](https://minagric.gr/), [Visit minagric.gr/2013-04-05-10-13-09/ministry-example/ypaat-grafeio-typou/deltiatypou/18154-dt080725](https://minagric.gr/2013-04-05-10-13-09/ministry-example/ypaat-grafeio-typou/deltiatypou/18154-dt080725) |
 | `minfin.gov.gr` | [Visit minfin.gov.gr homepage](https://minfin.gov.gr/), [Visit minfin.gov.gr/diacheirisi-idiotikou-xreous/](https://minfin.gov.gr/diacheirisi-idiotikou-xreous/), [Visit minfin.gov.gr/oroi-chrisis/](https://minfin.gov.gr/oroi-chrisis/) |
+| `minfin.gr` | [Visit minfin.gr homepage](https://minfin.gr/) |
 | `minscfa.gov.gr` | [Visit minscfa.gov.gr homepage](https://minscfa.gov.gr/), [Visit minscfa.gov.gr/isotita-ton-fylon/](https://minscfa.gov.gr/isotita-ton-fylon/), [Visit minscfa.gov.gr/oroi-chrisis-politiki-aporritou/](https://minscfa.gov.gr/oroi-chrisis-politiki-aporritou/) |
 | `minsports.gov.gr` | [Visit minsports.gov.gr homepage](https://minsports.gov.gr/), [Visit minsports.gov.gr/apodotiki-i-politiki-gia-tin-antimetopisi-tis-opadikis-vias-me-orata-apotelesmata/](https://minsports.gov.gr/apodotiki-i-politiki-gia-tin-antimetopisi-tis-opadikis-vias-me-orata-apotelesmata/), [Visit minsports.gov.gr/parochi-technognosias-apo-tin-ellada-stin-kypro-gia-to-e-kouros-kai-steni-synergasia-sto-programma-dimitris-vikelas/](https://minsports.gov.gr/parochi-technognosias-apo-tin-ellada-stin-kypro-gia-to-e-kouros-kai-steni-synergasia-sto-programma-dimitris-vikelas/) |
 | `mint.bankofgreece.gr` | [Visit mint.bankofgreece.gr homepage](https://mint.bankofgreece.gr/) |
@@ -830,5 +833,6 @@ permalink: /domains/greece.html
 | `ydom.dpapxol.gov.gr` | [Visit ydom.dpapxol.gov.gr homepage](https://ydom.dpapxol.gov.gr/), [Visit ydom.dpapxol.gov.gr/contact/](https://ydom.dpapxol.gov.gr/contact/) |
 | `ydra.gov.gr` | [Visit ydra.gov.gr homepage](https://ydra.gov.gr/), [Visit ydra.gov.gr/articles/details/](https://ydra.gov.gr/articles/details/?id=3995), [Visit ydra.gov.gr/dikaiologitikadioton.html](https://ydra.gov.gr/dikaiologitikadioton.html) |
 | `yme.gov.gr` | [Visit yme.gov.gr homepage](http://yme.gov.gr/) |
+| `ypakp.gr` | [Visit ypakp.gr homepage](https://ypakp.gr/) |
 | `ypen.gov.gr` | [Visit ypen.gov.gr homepage](https://ypen.gov.gr/) |
 | `ypergasias.gov.gr` | [Visit ypergasias.gov.gr homepage](https://ypergasias.gov.gr/), [Visit ypergasias.gov.gr/politiki-aporritou/](https://ypergasias.gov.gr/politiki-aporritou/), [Visit ypergasias.gov.gr/ypourgeio/](https://ypergasias.gov.gr/ypourgeio/) |

@@ -3,44 +3,44 @@ title: Government Domains
 layout: page
 ---
 
-_Generated: 2026-07-19 16:33 UTC_
+_Generated: 2026-07-19 18:07 UTC_
 
 This page lists all government domains tracked in the dataset, grouped by country. Data is sourced from the [TOON seed files](https://github.com/mgifford/eu-plus-government-scans/tree/main/data/toon-seeds/countries) in the repository. Each country's full domain list is on its own page to keep page size manageable.
 
-**31 countries** · **36,777 domains** · **82,736 pages**
+**31 countries** · **37,268 domains** · **83,227 pages**
 
 ## Countries
 
 | Country | Domains | Pages |
 |---------|---------|-------|
-| [Austria](domains/austria.html) | 376 | 821 |
-| [Belgium](domains/belgium.html) | 614 | 1,309 |
-| [Bulgaria](domains/bulgaria.html) | 125 | 291 |
-| [Croatia](domains/croatia.html) | 139 | 233 |
-| [Czechia](domains/czechia.html) | 371 | 843 |
-| [Denmark](domains/denmark.html) | 658 | 1,521 |
-| [Estonia](domains/estonia.html) | 168 | 396 |
-| [Finland](domains/finland.html) | 87 | 180 |
-| [France](domains/france.html) | 4,324 | 10,007 |
-| [Germany](domains/germany.html) | 2,947 | 6,555 |
-| [Greece](domains/greece.html) | 822 | 1,748 |
-| [Hungary](domains/hungary.html) | 177 | 390 |
-| [Iceland](domains/iceland.html) | 68 | 139 |
-| [Ireland](domains/ireland.html) | 228 | 522 |
-| [Italy](domains/italy.html) | 2,571 | 5,338 |
-| [Latvia](domains/latvia.html) | 341 | 802 |
-| [Lithuania](domains/lithuania.html) | 64 | 120 |
-| [Luxembourg](domains/luxembourg.html) | 236 | 571 |
-| [Malta](domains/malta.html) | 265 | 608 |
-| [Netherlands](domains/netherlands.html) | 454 | 937 |
-| [Norway](domains/norway.html) | 125 | 239 |
-| [Poland](domains/poland.html) | 6,584 | 14,938 |
-| [Portugal](domains/portugal.html) | 1,545 | 3,503 |
-| [Republic of Cyprus](domains/republic-of-cyprus.html) | 9 | 24 |
-| [Romania](domains/romania.html) | 349 | 799 |
-| [Slovakia](domains/slovakia.html) | 184 | 434 |
-| [Slovenia](domains/slovenia.html) | 100 | 200 |
+| [Austria](domains/austria.html) | 377 | 822 |
+| [Belgium](domains/belgium.html) | 634 | 1,329 |
+| [Bulgaria](domains/bulgaria.html) | 187 | 353 |
+| [Croatia](domains/croatia.html) | 163 | 257 |
+| [Czechia](domains/czechia.html) | 394 | 866 |
+| [Denmark](domains/denmark.html) | 673 | 1,536 |
+| [Estonia](domains/estonia.html) | 173 | 401 |
+| [Finland](domains/finland.html) | 106 | 199 |
+| [France](domains/france.html) | 4,326 | 10,009 |
+| [Germany](domains/germany.html) | 2,991 | 6,599 |
+| [Greece](domains/greece.html) | 826 | 1,752 |
+| [Hungary](domains/hungary.html) | 179 | 392 |
+| [Iceland](domains/iceland.html) | 74 | 145 |
+| [Ireland](domains/ireland.html) | 242 | 536 |
+| [Italy](domains/italy.html) | 2,584 | 5,351 |
+| [Latvia](domains/latvia.html) | 342 | 803 |
+| [Lithuania](domains/lithuania.html) | 66 | 122 |
+| [Luxembourg](domains/luxembourg.html) | 238 | 573 |
+| [Malta](domains/malta.html) | 267 | 610 |
+| [Netherlands](domains/netherlands.html) | 462 | 945 |
+| [Norway](domains/norway.html) | 135 | 249 |
+| [Poland](domains/poland.html) | 6,597 | 14,951 |
+| [Portugal](domains/portugal.html) | 1,550 | 3,508 |
+| [Republic of Cyprus](domains/republic-of-cyprus.html) | 14 | 29 |
+| [Romania](domains/romania.html) | 357 | 807 |
+| [Slovakia](domains/slovakia.html) | 192 | 442 |
+| [Slovenia](domains/slovenia.html) | 114 | 214 |
 | [Spain](domains/spain.html) | 2,890 | 6,091 |
-| [Sweden](domains/sweden.html) | 765 | 1,558 |
-| [Switzerland](domains/switzerland.html) | 941 | 2,117 |
-| [United Kingdom (UK)](domains/united-kingdom-uk.html) | 8,250 | 19,502 |
+| [Sweden](domains/sweden.html) | 909 | 1,702 |
+| [Switzerland](domains/switzerland.html) | 947 | 2,123 |
+| [United Kingdom (UK)](domains/united-kingdom-uk.html) | 8,259 | 19,511 |

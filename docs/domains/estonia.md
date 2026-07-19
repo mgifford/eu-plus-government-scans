@@ -6,7 +6,7 @@ permalink: /domains/estonia.html
 
 [← Back to all countries](../domains.html)
 
-**168 domains** · **396 pages**
+**173 domains** · **401 pages**
 
 | Domain | Pages |
 |--------|-------|
@@ -14,6 +14,7 @@ permalink: /domains/estonia.html
 | `aastaraamat.riigikohus.ee` | [Visit aastaraamat.riigikohus.ee homepage](https://aastaraamat.riigikohus.ee/), [Visit aastaraamat.riigikohus.ee/category/aasta-2024/ii-paevakajalised-oigusteemad-2024/](https://aastaraamat.riigikohus.ee/category/aasta-2024/ii-paevakajalised-oigusteemad-2024/), [Visit aastaraamat.riigikohus.ee/kultuurne-tagasiside-ja-tagasisidekultuur/](https://aastaraamat.riigikohus.ee/kultuurne-tagasiside-ja-tagasisidekultuur/) |
 | `abi.ria.ee` | [Visit abi.ria.ee homepage](https://abi.ria.ee/), [Visit abi.ria.ee homepage](https://abi.ria.ee/?l=et) |
 | `agri.ee` | [Visit agri.ee homepage](https://agri.ee/), [Visit agri.ee/uudised/minister-terras-toetame-ukraina-kiiret-loimimist-euroopa-liidu-uhisturuga](https://agri.ee/uudised/minister-terras-toetame-ukraina-kiiret-loimimist-euroopa-liidu-uhisturuga), [Visit agri.ee/uudised/regionaal-ja-pollumajandusministeerium-panustab-taas-ida-virumaa-iduettevotluskeskkonda](https://agri.ee/uudised/regionaal-ja-pollumajandusministeerium-panustab-taas-ida-virumaa-iduettevotluskeskkonda) |
+| `aki.ee` | [Visit aki.ee homepage](https://aki.ee/) |
 | `alkoreg.agri.ee` | [Visit alkoreg.agri.ee homepage](https://alkoreg.agri.ee/) |
 | `andmed.eesti.ee` | [Visit andmed.eesti.ee homepage](https://andmed.eesti.ee/), [Visit andmed.eesti.ee/accessibility](https://andmed.eesti.ee/accessibility), [Visit andmed.eesti.ee/datasets](https://andmed.eesti.ee/datasets?hvd=true&type=ALL) |
 | `andmed.stat.ee` | [Visit andmed.stat.ee homepage](https://andmed.stat.ee/), [Visit andmed.stat.ee/et/statsql](https://andmed.stat.ee/et/statsql) |
@@ -29,7 +30,10 @@ permalink: /domains/estonia.html
 | `eelnoud.valitsus.ee` | [Visit eelnoud.valitsus.ee homepage](https://eelnoud.valitsus.ee/), [Visit eelnoud.valitsus.ee/main/mount/share/home](https://eelnoud.valitsus.ee/main/mount/share/home) |
 | `eelviisataotlus.vm.ee` | [Visit eelviisataotlus.vm.ee homepage](https://eelviisataotlus.vm.ee/), [Visit eelviisataotlus.vm.ee/c/rus/page/1/13h9g9pp7ee5qfvab4yq9ktmqxjkmykz8rhmpvrkyt2he11ppc2q9hblrn0b3xlwl9gyg4hs5zekc3d4ywd927ju54bt6b6tr3ay](https://eelviisataotlus.vm.ee/c/rus/page/1/13h9g9pp7ee5qfvab4yq9ktmqxjkmykz8rhmpvrkyt2he11ppc2q9hblrn0b3xlwl9gyg4hs5zekc3d4ywd927ju54bt6b6tr3ay), [Visit eelviisataotlus.vm.ee/c/rus/page/1/13o0tmpdrete5756bwc1s33471vi6uqg75z2vaj7yg8zsnyd5c05qmec63phokt25efrv1lzbmb1itr5ftuwn5q0i8bznm365gmo](https://eelviisataotlus.vm.ee/c/rus/page/1/13o0tmpdrete5756bwc1s33471vi6uqg75z2vaj7yg8zsnyd5c05qmec63phokt25efrv1lzbmb1itr5ftuwn5q0i8bznm365gmo) |
 | `eits.ria.ee` | [Visit eits.ria.ee homepage](https://eits.ria.ee/), [Visit eits.ria.ee/et/versioon/2023/eits-poohidokumendid/eits-noouded-infoturbe-halduse-suesteemile](https://eits.ria.ee/et/versioon/2023/eits-poohidokumendid/eits-noouded-infoturbe-halduse-suesteemile) |
+| `envir.ee` | [Visit envir.ee homepage](https://envir.ee/) |
+| `epa.ee` | [Visit epa.ee homepage](https://epa.ee/) |
 | `estat.stat.ee` | [Visit estat.stat.ee homepage](https://estat.stat.ee/), [Visit estat.stat.ee/sa-auth/login](https://estat.stat.ee/sa-auth/login?TARGET=https%3A%2F%2Festat.stat.ee%2Fvalisportaal%2Flogin%2Fcas&language=ru) |
+| `fi.ee` | [Visit fi.ee homepage](https://fi.ee/) |
 | `fin.ee` | [Visit fin.ee homepage](https://fin.ee/), [Visit fin.ee/uudised/riik-uuendas-omaniku-ootusi-eesti-energia-ile](https://fin.ee/uudised/riik-uuendas-omaniku-ootusi-eesti-energia-ile) |
 | `fotoarhiiv.riigikogu.ee` | [Visit fotoarhiiv.riigikogu.ee homepage](https://fotoarhiiv.riigikogu.ee/), [Visit fotoarhiiv.riigikogu.ee/xv-riigikogu/xv-riigikogu-komisjonid/valiskomisjon-xv/kohtumine-palestiina-omavalitsuse-valisasjade-riigiministri-varsen-ohannes-vartan-aghabekianiga/](https://fotoarhiiv.riigikogu.ee/xv-riigikogu/xv-riigikogu-komisjonid/valiskomisjon-xv/kohtumine-palestiina-omavalitsuse-valisasjade-riigiministri-varsen-ohannes-vartan-aghabekianiga/), [Visit fotoarhiiv.riigikogu.ee/xv-riigikogu/xv-riigikogu-sundmused/xxviii-laulu-ja-xxi-tantsupeole-iseoma-puhendatud-riigilipu-heiskamise-tseremoonia-kuberneri-aias/](https://fotoarhiiv.riigikogu.ee/xv-riigikogu/xv-riigikogu-sundmused/xxviii-laulu-ja-xxi-tantsupeole-iseoma-puhendatud-riigilipu-heiskamise-tseremoonia-kuberneri-aias/) |
 | `geoveeb.tallinn.ee` | [Visit geoveeb.tallinn.ee homepage](https://geoveeb.tallinn.ee/), [Visit geoveeb.tallinn.ee/kaart](https://geoveeb.tallinn.ee/kaart) |
@@ -45,6 +49,7 @@ permalink: /domains/estonia.html
 | `jaga.hm.ee` | [Visit jaga.hm.ee homepage](https://jaga.hm.ee/), [Visit jaga.hm.ee/Account/Login](https://jaga.hm.ee/Account/Login) |
 | `jpg.tartu.ee` | [Visit jpg.tartu.ee homepage](https://jpg.tartu.ee/), [Visit jpg.tartu.ee/uudised/xiv-lennu-lopuaktus/](https://jpg.tartu.ee/uudised/xiv-lennu-lopuaktus/) |
 | `juhtimislauad.stat.ee` | [Visit juhtimislauad.stat.ee homepage](https://juhtimislauad.stat.ee/) |
+| `justdigi.ee` | [Visit justdigi.ee homepage](https://justdigi.ee/) |
 | `jvis.agri.ee` | [Visit jvis.agri.ee homepage](https://jvis.agri.ee/), [Visit jvis.agri.ee/jvis/avalik.html](https://jvis.agri.ee/jvis/avalik.html) |
 | `kaitseministeerium.ee` | [Visit kaitseministeerium.ee homepage](https://kaitseministeerium.ee/), [Visit kaitseministeerium.ee/et/uudised/kaitseminister-hanno-pevkur-tunnustas-rkik-i-lahkuvat-juhti-magnus-valdemar-saart](https://kaitseministeerium.ee/et/uudised/kaitseminister-hanno-pevkur-tunnustas-rkik-i-lahkuvat-juhti-magnus-valdemar-saart), [Visit kaitseministeerium.ee/et/uudised/uhendkuningriigi-brigaadikindral-harris-sai-kaitseministeeriumi-teeneteristi](https://kaitseministeerium.ee/et/uudised/uhendkuningriigi-brigaadikindral-harris-sai-kaitseministeeriumi-teeneteristi) |
 | `kannike.tartu.ee` | [Visit kannike.tartu.ee homepage](https://kannike.tartu.ee/), [Visit kannike.tartu.ee/kannikese-lasteaias-avatud-jargmised-ruhmad/](https://kannike.tartu.ee/kannikese-lasteaias-avatud-jargmised-ruhmad/) |

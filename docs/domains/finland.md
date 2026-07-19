@@ -6,7 +6,7 @@ permalink: /domains/finland.html
 
 [← Back to all countries](../domains.html)
 
-**87 domains** · **180 pages**
+**106 domains** · **199 pages**
 
 | Domain | Pages |
 |--------|-------|
@@ -21,25 +21,34 @@ permalink: /domains/finland.html
 | `fimea.fi` | [Visit fimea.fi homepage](https://fimea.fi/), [Visit fimea.fi/-/apteekkilupien-sahkoinen-haku-uudistuu-pian-siirtymaaikana-hakemukset-toimitetaan-kirjaamoon](https://fimea.fi/-/apteekkilupien-sahkoinen-haku-uudistuu-pian-siirtymaaikana-hakemukset-toimitetaan-kirjaamoon), [Visit fimea.fi/laakehaut_ja_luettelot/saatavuushairio-uusi](https://fimea.fi/laakehaut_ja_luettelot/saatavuushairio-uusi) |
 | `hiilineutraalisuomi.syke.fi` | [Visit hiilineutraalisuomi.syke.fi homepage](https://hiilineutraalisuomi.syke.fi/), [Visit hiilineutraalisuomi.syke.fi/anna-palautetta/](https://hiilineutraalisuomi.syke.fi/anna-palautetta/), [Visit hiilineutraalisuomi.syke.fi/ota-paastotiedot-haltuun-uusien-ohjemateriaalien-avulla/](https://hiilineutraalisuomi.syke.fi/ota-paastotiedot-haltuun-uusien-ohjemateriaalien-avulla/) |
 | `id.businessfinland.fi` | [Visit id.businessfinland.fi homepage](https://id.businessfinland.fi/) |
+| `intermin.fi` | [Visit intermin.fi homepage](https://intermin.fi/) |
+| `intermin.fi.` | [Visit intermin.fi. homepage](http://intermin.fi./) |
 | `kala-asiointi.mmm.fi` | [Visit kala-asiointi.mmm.fi homepage](https://kala-asiointi.mmm.fi/) |
 | `kartat-tieto.traficom.fi` | [Visit kartat-tieto.traficom.fi homepage](https://kartat-tieto.traficom.fi/) |
 | `kehittajille.suomi.fi` | [Visit kehittajille.suomi.fi homepage](https://kehittajille.suomi.fi/), [Visit kehittajille.suomi.fi/oppaat/kokonaisarkkitehtuuri](https://kehittajille.suomi.fi/oppaat/kokonaisarkkitehtuuri), [Visit kehittajille.suomi.fi/oppaat/vastuullinen-tekoaly](https://kehittajille.suomi.fi/oppaat/vastuullinen-tekoaly) |
+| `kho.fi` | [Visit kho.fi homepage](https://kho.fi/) |
 | `kiertotalousratkaisuja.syke.fi` | [Visit kiertotalousratkaisuja.syke.fi homepage](https://kiertotalousratkaisuja.syke.fi/), [Visit kiertotalousratkaisuja.syke.fi/muovipakkausten-ja-tuotteiden-uudelleenkaytto-yhteiskehittamisella-kiertotalouteen/](https://kiertotalousratkaisuja.syke.fi/muovipakkausten-ja-tuotteiden-uudelleenkaytto-yhteiskehittamisella-kiertotalouteen/), [Visit kiertotalousratkaisuja.syke.fi/tietoa-meista/yhteystiedot/](https://kiertotalousratkaisuja.syke.fi/tietoa-meista/yhteystiedot/) |
 | `kiinteistovalvonta.defmin.fi` | [Visit kiinteistovalvonta.defmin.fi homepage](https://kiinteistovalvonta.defmin.fi/), [Visit kiinteistovalvonta.defmin.fi/select-service](https://kiinteistovalvonta.defmin.fi/select-service) |
 | `koodistot.suomi.fi` | [Visit koodistot.suomi.fi homepage](https://koodistot.suomi.fi/), [Visit koodistot.suomi.fi/codescheme](https://koodistot.suomi.fi/codescheme;registryCode=kunta-yhtet;schemeCode=ipvsToimijoidenPalveluroolit), [Visit koodistot.suomi.fi/codescheme](https://koodistot.suomi.fi/codescheme;registryCode=ptv;schemeCode=3X10D) |
+| `korkeinoikeus.fi` | [Visit korkeinoikeus.fi homepage](https://korkeinoikeus.fi/) |
 | `kumppanit.kela.fi` | [Visit kumppanit.kela.fi homepage](https://kumppanit.kela.fi/) |
+| `kuvi.fi` | [Visit kuvi.fi homepage](https://kuvi.fi/) |
 | `laatutyokalut.suomi.fi` | [Visit laatutyokalut.suomi.fi homepage](https://laatutyokalut.suomi.fi/), [Visit laatutyokalut.suomi.fi/feedback/5f33ba81-8909-4d4b-96bc-9d30fe401988](https://laatutyokalut.suomi.fi/feedback/5f33ba81-8909-4d4b-96bc-9d30fe401988) |
 | `laskurit.kela.fi` | [Visit laskurit.kela.fi homepage](https://laskurit.kela.fi/), [Visit laskurit.kela.fi/raskaus-ja-vanhempainrahapaivien-laskuri](https://laskurit.kela.fi/raskaus-ja-vanhempainrahapaivien-laskuri) |
+| `lvm.fi` | [Visit lvm.fi homepage](https://lvm.fi/) |
+| `lvv.fi` | [Visit lvv.fi homepage](https://lvv.fi/) |
 | `metsavarasuostumus.metsakeskus.fi` | [Visit metsavarasuostumus.metsakeskus.fi homepage](https://metsavarasuostumus.metsakeskus.fi/) |
 | `migri.fi` | [Visit migri.fi homepage](https://migri.fi/), [Visit migri.fi/fi](https://migri.fi/fi), [Visit migri.fi/sv/start](https://migri.fi/sv/start) |
 | `mmm.fi` | [Visit mmm.fi homepage](https://mmm.fi/), [Visit mmm.fi/fi](https://mmm.fi/fi) |
 | `my-beta.businessfinland.fi` | [Visit my-beta.businessfinland.fi homepage](https://my-beta.businessfinland.fi/), [Visit my-beta.businessfinland.fi/fi/portal](https://my-beta.businessfinland.fi/fi/portal) |
 | `oikeusministerio.fi` | [Visit oikeusministerio.fi homepage](https://oikeusministerio.fi/), [Visit oikeusministerio.fi/-/komission-oikeusvaltiokertomus-kansalaisten-luottamus-oikeuslaitoksen-riippumattomuuteen-suomessa-eu-n-korkein-](https://oikeusministerio.fi/-/komission-oikeusvaltiokertomus-kansalaisten-luottamus-oikeuslaitoksen-riippumattomuuteen-suomessa-eu-n-korkein-) |
+| `oikeusrekisterikeskus.fi` | [Visit oikeusrekisterikeskus.fi homepage](https://oikeusrekisterikeskus.fi/) |
 | `otos.stat.fi` | [Visit otos.stat.fi homepage](https://otos.stat.fi/), [Visit otos.stat.fi/collections/fa910fa4-0f6f-4bd9-aafd-c0f064cf52ae](https://otos.stat.fi/collections/fa910fa4-0f6f-4bd9-aafd-c0f064cf52ae), [Visit otos.stat.fi/communities/6f393d6e-2dbd-46cc-81a8-e42840930542/subcoms-cols](https://otos.stat.fi/communities/6f393d6e-2dbd-46cc-81a8-e42840930542/subcoms-cols) |
 | `palaute.kela.fi` | [Visit palaute.kela.fi homepage](https://palaute.kela.fi/) |
 | `palveluhallinta.suomi.fi` | [Visit palveluhallinta.suomi.fi homepage](https://palveluhallinta.suomi.fi/) |
 | `perhevapaavertailu.kela.fi` | [Visit perhevapaavertailu.kela.fi homepage](https://perhevapaavertailu.kela.fi/) |
 | `pouta.poliisi.fi` | [Visit pouta.poliisi.fi homepage](https://pouta.poliisi.fi/) |
+| `puolustusvoimat.fi` | [Visit puolustusvoimat.fi homepage](https://puolustusvoimat.fi/) |
 | `ryhti.syke.fi` | [Visit ryhti.syke.fi homepage](https://ryhti.syke.fi/), [Visit ryhti.syke.fi homepage](https://ryhti.syke.fi/?s), [Visit ryhti.syke.fi/palvelut/palvelut-tiedon-hyodyntajille/](https://ryhti.syke.fi/palvelut/palvelut-tiedon-hyodyntajille/) |
 | `sampo.thl.fi` | [Visit sampo.thl.fi homepage](https://sampo.thl.fi/) |
 | `sanastot.suomi.fi` | [Visit sanastot.suomi.fi homepage](https://sanastot.suomi.fi/), [Visit sanastot.suomi.fi/terminology/dac7](https://sanastot.suomi.fi/terminology/dac7), [Visit sanastot.suomi.fi/terminology/meluntorjunta](https://sanastot.suomi.fi/terminology/meluntorjunta) |
@@ -55,16 +64,24 @@ permalink: /domains/finland.html
 | `stat.fi` | [Visit stat.fi homepage](https://stat.fi/), [Visit stat.fi/kyselyt](https://stat.fi/kyselyt), [Visit stat.fi/org/tietoa_sivustosta.html](https://stat.fi/org/tietoa_sivustosta.html) |
 | `static.traficom.fi` | [Visit static.traficom.fi homepage](https://static.traficom.fi/), [Visit static.traficom.fi/fi/kyberturvallisuuskeskus](https://static.traficom.fi/fi/kyberturvallisuuskeskus) |
 | `statistics.migri.fi` | [Visit statistics.migri.fi homepage](https://statistics.migri.fi/) |
+| `stm.fi` | [Visit stm.fi homepage](https://stm.fi/) |
+| `stuk.fi` | [Visit stuk.fi homepage](https://stuk.fi/) |
+| `suomenpankki.fi` | [Visit suomenpankki.fi homepage](https://suomenpankki.fi/) |
+| `supo.fi` | [Visit supo.fi homepage](https://supo.fi/) |
 | `takaisinkutsut.traficom.fi` | [Visit takaisinkutsut.traficom.fi homepage](https://takaisinkutsut.traficom.fi/), [Visit takaisinkutsut.traficom.fi/recall/17823](https://takaisinkutsut.traficom.fi/recall/17823), [Visit takaisinkutsut.traficom.fi/recall/about](https://takaisinkutsut.traficom.fi/recall/about) |
 | `tarkka.syke.fi` | [Visit tarkka.syke.fi homepage](https://tarkka.syke.fi/), [Visit tarkka.syke.fi/eo-tarkka/map/](https://tarkka.syke.fi/eo-tarkka/map/?ver=0&time=2025-07-01&bbox=18.81102,57.81719,26.76286,61.14310&style=opt&data=d-lc,d-bm-esriblack,d-s2,d-s3&coll=call&lang=fi), [Visit tarkka.syke.fi/map/](https://tarkka.syke.fi/map/?ver=0&time=2025-07-14&bbox=25.83975,59.84944,27.85808,60.54602&style=opt&data=d-bm-esri,d-s2,d-lc,d-s3&coll=call&lang=fi) |
 | `tem.fi` | [Visit tem.fi homepage](https://tem.fi/), [Visit tem.fi/-/energia-ja-ilmastostrategia-lausuntokierrokselle](https://tem.fi/-/energia-ja-ilmastostrategia-lausuntokierrokselle), [Visit tem.fi/tyoelaman-kehittamisstrategia](https://tem.fi/tyoelaman-kehittamisstrategia) |
 | `thl.fi` | [Visit thl.fi homepage](https://thl.fi/), [Visit thl.fi/-/euroopan-uimavesiraportti-suomen-uimavesista-93-prosenttia-on-laadultaan-hyvia-tai-erinomaisia](https://thl.fi/-/euroopan-uimavesiraportti-suomen-uimavesista-93-prosenttia-on-laadultaan-hyvia-tai-erinomaisia), [Visit thl.fi/-/muiden-maiden-sote-jarjestelmat-eivat-tarjoa-pikaratkaisuja-suomen-sote-mallin-kehittamiseen-tyo-vaatii-parlamentaarista-yhteistyota](https://thl.fi/-/muiden-maiden-sote-jarjestelmat-eivat-tarjoa-pikaratkaisuja-suomen-sote-mallin-kehittamiseen-tyo-vaatii-parlamentaarista-yhteistyota) |
 | `tieto.traficom.fi` | [Visit tieto.traficom.fi homepage](https://tieto.traficom.fi/), [Visit tieto.traficom.fi/fi/node/11401](https://tieto.traficom.fi/fi/node/11401?group=initial&limit=20&offset=0&query=&sort=created), [Visit tieto.traficom.fi/fi/search](https://tieto.traficom.fi/fi/search) |
+| `tietosuoja.fi` | [Visit tietosuoja.fi homepage](https://tietosuoja.fi/) |
+| `tilastokeskus.fi` | [Visit tilastokeskus.fi homepage](https://tilastokeskus.fi/) |
 | `tilastot.migri.fi` | [Visit tilastot.migri.fi homepage](https://tilastot.migri.fi/) |
 | `tilastot.tulli.fi` | [Visit tilastot.tulli.fi homepage](https://tilastot.tulli.fi/), [Visit tilastot.tulli.fi/-/tavaroiden-ulkomaankaupan-ennakkotilasto-toukokuussa-2025](https://tilastot.tulli.fi/-/tavaroiden-ulkomaankaupan-ennakkotilasto-toukokuussa-2025), [Visit tilastot.tulli.fi/ajankohtaista-tilastoista](https://tilastot.tulli.fi/ajankohtaista-tilastoista) |
+| `trafi.fi` | [Visit trafi.fi homepage](https://trafi.fi/) |
 | `traficom.fi` | [Visit traficom.fi homepage](https://traficom.fi/), [Visit traficom.fi/fi/kyberturvallisuuskeskus](https://traficom.fi/fi/kyberturvallisuuskeskus), [Visit traficom.fi/fi/search](https://traficom.fi/fi/search) |
 | `tulli.fi` | [Visit tulli.fi homepage](https://tulli.fi/), [Visit tulli.fi/tullaa-pakettisi](https://tulli.fi/tullaa-pakettisi) |
 | `tunnistautuminen.suomi.fi` | [Visit tunnistautuminen.suomi.fi homepage](https://tunnistautuminen.suomi.fi/), [Visit tunnistautuminen.suomi.fi/sivut/info/virhepalaute/](https://tunnistautuminen.suomi.fi/sivut/info/virhepalaute/) |
+| `turvallisuustutkinta.fi` | [Visit turvallisuustutkinta.fi homepage](https://turvallisuustutkinta.fi/) |
 | `turvaviesti.avi.fi` | [Visit turvaviesti.avi.fi homepage](https://turvaviesti.avi.fi/) |
 | `turvaviesti.eduskunta.fi` | [Visit turvaviesti.eduskunta.fi homepage](https://turvaviesti.eduskunta.fi/) |
 | `turvaviesti.tulli.fi` | [Visit turvaviesti.tulli.fi homepage](https://turvaviesti.tulli.fi/) |
@@ -76,11 +93,13 @@ permalink: /domains/finland.html
 | `uutiskirjeet.traficom.fi` | [Visit uutiskirjeet.traficom.fi homepage](https://uutiskirjeet.traficom.fi/) |
 | `varmennepalvelu.vero.fi` | [Visit varmennepalvelu.vero.fi homepage](https://varmennepalvelu.vero.fi/) |
 | `vatuit2025.kela.fi` | [Visit vatuit2025.kela.fi homepage](https://vatuit2025.kela.fi/) |
+| `vayla.fi` | [Visit vayla.fi homepage](https://vayla.fi/) |
 | `verkkokauppa.oph.fi` | [Visit verkkokauppa.oph.fi homepage](https://verkkokauppa.oph.fi/), [Visit verkkokauppa.oph.fi/sivu/tuote/kinos-2-digikirja-uo2-lisenssi-yhdelle-opiskelijalle-1-8-31-7-/5413220](https://verkkokauppa.oph.fi/sivu/tuote/kinos-2-digikirja-uo2-lisenssi-yhdelle-opiskelijalle-1-8-31-7-/5413220) |
 | `verkkolahetys.eduskunta.fi` | [Visit verkkolahetys.eduskunta.fi homepage](https://verkkolahetys.eduskunta.fi/), [Visit verkkolahetys.eduskunta.fi/fi/taysistunnot/taysistunto-70-2025](https://verkkolahetys.eduskunta.fi/fi/taysistunnot/taysistunto-70-2025) |
 | `vero.fi` | [Visit vero.fi homepage](https://vero.fi/), [Visit vero.fi/henkiloasiakkaat/verokortti-ja-veroilmoitus/verokortti/](https://vero.fi/henkiloasiakkaat/verokortti-ja-veroilmoitus/verokortti/), [Visit vero.fi/tietoa-verohallinnosta/yhteystiedot-ja-asiointi/asioi-verkossa/tietoa-s%C3%A4hk%C3%B6isest%C3%A4-asioinnista/tietoa-huijauksista/](https://vero.fi/tietoa-verohallinnosta/yhteystiedot-ja-asiointi/asioi-verkossa/tietoa-s%C3%A4hk%C3%B6isest%C3%A4-asioinnista/tietoa-huijauksista/) |
 | `video.valtioneuvosto.fi` | [Visit video.valtioneuvosto.fi homepage](https://video.valtioneuvosto.fi/), [Visit video.valtioneuvosto.fi/v/tem-ydinenergialain-uudistaminen-260625](https://video.valtioneuvosto.fi/v/tem-ydinenergialain-uudistaminen-260625) |
 | `viestilomake.suomi.fi` | [Visit viestilomake.suomi.fi homepage](https://viestilomake.suomi.fi/) |
+| `vnk.fi` | [Visit vnk.fi homepage](https://vnk.fi/) |
 | `vos.oph.fi` | [Visit vos.oph.fi homepage](https://vos.oph.fi/) |
 | `webkeruu1.stat.fi` | [Visit webkeruu1.stat.fi homepage](https://webkeruu1.stat.fi/) |
 | `www.businessfinland.fi` | [Visit www.businessfinland.fi homepage](https://www.businessfinland.fi/), [Visit www.businessfinland.fi/kampanjasivut/ukrainan-ja-venajan-tilannetietoa](https://www.businessfinland.fi/kampanjasivut/ukrainan-ja-venajan-tilannetietoa), [Visit www.businessfinland.fi/suomalaisille-asiakkaille/palvelut/pk-yritys/pk-yritys](https://www.businessfinland.fi/suomalaisille-asiakkaille/palvelut/pk-yritys/pk-yritys) |

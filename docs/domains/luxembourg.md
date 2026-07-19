@@ -6,7 +6,7 @@ permalink: /domains/luxembourg.html
 
 [← Back to all countries](../domains.html)
 
-**236 domains** · **571 pages**
+**238 domains** · **573 pages**
 
 | Domain | Pages |
 |--------|-------|
@@ -47,6 +47,7 @@ permalink: /domains/luxembourg.html
 | `centre.chl.lu` | [Visit centre.chl.lu homepage](https://centre.chl.lu/), [Visit centre.chl.lu/fr/rendez-vous](https://centre.chl.lu/fr/rendez-vous) |
 | `cepas.public.lu` | [Visit cepas.public.lu homepage](https://cepas.public.lu/), [Visit cepas.public.lu/fr.html](https://cepas.public.lu/fr.html) |
 | `cgpo.gouvernement.lu` | [Visit cgpo.gouvernement.lu homepage](https://cgpo.gouvernement.lu/), [Visit cgpo.gouvernement.lu/fr/support/aspects-legaux.html](https://cgpo.gouvernement.lu/fr/support/aspects-legaux.html) |
+| `chd.lu` | [Visit chd.lu homepage](https://chd.lu/) |
 | `chem.lu` | [Visit chem.lu homepage](https://chem.lu/) |
 | `cita.lu` | [Visit cita.lu homepage](https://cita.lu/), [Visit cita.lu/fr/news/a6-chantier-entre-l-echangeur-bridel-et-l-echangeur-steinfort-11-14-07-2025.html](https://cita.lu/fr/news/a6-chantier-entre-l-echangeur-bridel-et-l-echangeur-steinfort-11-14-07-2025.html), [Visit cita.lu/fr/webcam/a1.html](https://cita.lu/fr/webcam/a1.html) |
 | `citylife.esch.lu` | [Visit citylife.esch.lu homepage](https://citylife.esch.lu/), [Visit citylife.esch.lu/agenda/visite-guidee-parcours-de-la-memoire-a-esch-sur-alzette/](https://citylife.esch.lu/agenda/visite-guidee-parcours-de-la-memoire-a-esch-sur-alzette/), [Visit citylife.esch.lu/revitalisation-commerciale-claire/](https://citylife.esch.lu/revitalisation-commerciale-claire/) |
@@ -57,6 +58,7 @@ permalink: /domains/luxembourg.html
 | `cnpd.public.lu` | [Visit cnpd.public.lu homepage](https://cnpd.public.lu/), [Visit cnpd.public.lu/fr/actualites/national/2025/07/daaz-anniversaire.html](https://cnpd.public.lu/fr/actualites/national/2025/07/daaz-anniversaire.html) |
 | `cns.public.lu` | [Visit cns.public.lu homepage](https://cns.public.lu/), [Visit cns.public.lu/fr.html](https://cns.public.lu/fr.html) |
 | `concurrence.public.lu` | [Visit concurrence.public.lu homepage](https://concurrence.public.lu/), [Visit concurrence.public.lu/fr/support/aspects-legaux.html](https://concurrence.public.lu/fr/support/aspects-legaux.html) |
+| `conseil-etat.public.lu` | [Visit conseil-etat.public.lu homepage](https://conseil-etat.public.lu/) |
 | `conservatoire.esch.lu` | [Visit conservatoire.esch.lu homepage](https://conservatoire.esch.lu/), [Visit conservatoire.esch.lu/programme/](https://conservatoire.esch.lu/programme/) |
 | `cooperation.gouvernement.lu` | [Visit cooperation.gouvernement.lu homepage](https://cooperation.gouvernement.lu/), [Visit cooperation.gouvernement.lu/fr/actualites.gouvernement2024%2Bfr%2Bactualites%2Btoutes_actualites%2Bcommuniques%2B2025%2B07-juillet%2B09-bettel-cicr.html](https://cooperation.gouvernement.lu/fr/actualites.gouvernement2024%2Bfr%2Bactualites%2Btoutes_actualites%2Bcommuniques%2B2025%2B07-juillet%2B09-bettel-cicr.html), [Visit cooperation.gouvernement.lu/fr/support/aspects-legaux.html](https://cooperation.gouvernement.lu/fr/support/aspects-legaux.html) |
 | `cours-aquatiques.esch.lu` | [Visit cours-aquatiques.esch.lu homepage](https://cours-aquatiques.esch.lu/), [Visit cours-aquatiques.esch.lu/fr/](https://cours-aquatiques.esch.lu/fr/) |

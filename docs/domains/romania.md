@@ -6,7 +6,7 @@ permalink: /domains/romania.html
 
 [← Back to all countries](../domains.html)
 
-**349 domains** · **799 pages**
+**357 domains** · **807 pages**
 
 | Domain | Pages |
 |--------|-------|
@@ -32,6 +32,7 @@ permalink: /domains/romania.html
 | `arges.insse.ro` | [Visit arges.insse.ro homepage](https://arges.insse.ro/), [Visit arges.insse.ro/arges.insse.ro/produse-si-servicii/statistici-judetene/populatia/](https://arges.insse.ro/arges.insse.ro/produse-si-servicii/statistici-judetene/populatia/), [Visit arges.insse.ro/termeni-si-conditii/](https://arges.insse.ro/termeni-si-conditii/) |
 | `arhiva.presidency.ro` | [Visit arhiva.presidency.ro homepage](https://arhiva.presidency.ro/), [Visit arhiva.presidency.ro/html/date0/Discursuri/2003/2003-02-01_4063.html](https://arhiva.presidency.ro/html/date0/Discursuri/2003/2003-02-01_4063.html), [Visit arhiva.presidency.ro/html/date0/Discursuri/2003/2003-02-14_3071.html](https://arhiva.presidency.ro/html/date0/Discursuri/2003/2003-02-14_3071.html) |
 | `armed.mapn.ro` | [Visit armed.mapn.ro homepage](https://armed.mapn.ro/), [Visit armed.mapn.ro/emisiunea-pro-patria-din-data-13.07.2025-6081-21](https://armed.mapn.ro/emisiunea-pro-patria-din-data-13.07.2025-6081-21), [Visit armed.mapn.ro/index.php](https://armed.mapn.ro/index.php) |
+| `asfromania.ro` | [Visit asfromania.ro homepage](https://asfromania.ro/) |
 | `ashgabat.mae.ro` | [Visit ashgabat.mae.ro homepage](https://ashgabat.mae.ro/), [Visit ashgabat.mae.ro/local-news/952](https://ashgabat.mae.ro/local-news/952), [Visit ashgabat.mae.ro/romania-news/7813](https://ashgabat.mae.ro/romania-news/7813) |
 | `asistentasociala.sibiu.ro` | [Visit asistentasociala.sibiu.ro homepage](https://asistentasociala.sibiu.ro/), [Visit asistentasociala.sibiu.ro/index.php/site/cookies](https://asistentasociala.sibiu.ro/index.php/site/cookies), [Visit asistentasociala.sibiu.ro/index.php/ucraina](https://asistentasociala.sibiu.ro/index.php/ucraina) |
 | `astana.mae.ro` | [Visit astana.mae.ro homepage](https://astana.mae.ro/), [Visit astana.mae.ro/romania-news/7813](https://astana.mae.ro/romania-news/7813) |
@@ -129,6 +130,7 @@ permalink: /domains/romania.html
 | `dakar.mae.ro` | [Visit dakar.mae.ro homepage](https://dakar.mae.ro/), [Visit dakar.mae.ro/romania-news/7813](https://dakar.mae.ro/romania-news/7813) |
 | `damasc.mae.ro` | [Visit damasc.mae.ro homepage](https://damasc.mae.ro/), [Visit damasc.mae.ro/romania-news/7813](https://damasc.mae.ro/romania-news/7813) |
 | `dambovita.insse.ro` | [Visit dambovita.insse.ro homepage](https://dambovita.insse.ro/), [Visit dambovita.insse.ro/termeni-si-conditii/](https://dambovita.insse.ro/termeni-si-conditii/) |
+| `dataprotection.ro` | [Visit dataprotection.ro homepage](https://dataprotection.ro/) |
 | `db.politiaromana.ro` | [Visit db.politiaromana.ro homepage](https://db.politiaromana.ro/), [Visit db.politiaromana.ro/ro/](https://db.politiaromana.ro/ro/), [Visit db.politiaromana.ro/ro/stiri-si-media/stiri](https://db.politiaromana.ro/ro/stiri-si-media/stiri) |
 | `dcvp.mapn.ro` | [Visit dcvp.mapn.ro homepage](https://dcvp.mapn.ro/), [Visit dcvp.mapn.ro/events/301](https://dcvp.mapn.ro/events/301) |
 | `ddi.mapn.ro` | [Visit ddi.mapn.ro homepage](https://ddi.mapn.ro/), [Visit ddi.mapn.ro/pages/comunicate--evenimente-](https://ddi.mapn.ro/pages/comunicate--evenimente-), [Visit ddi.mapn.ro/pages/gdpr](https://ddi.mapn.ro/pages/gdpr) |
@@ -150,6 +152,7 @@ permalink: /domains/romania.html
 | `e-administratie.sibiu.ro` | [Visit e-administratie.sibiu.ro homepage](https://e-administratie.sibiu.ro/), [Visit e-administratie.sibiu.ro/cmsSE/categories](https://e-administratie.sibiu.ro/cmsSE/categories), [Visit e-administratie.sibiu.ro/cmsSE/programare-online](https://e-administratie.sibiu.ro/cmsSE/programare-online) |
 | `e-plati.sibiu.ro` | [Visit e-plati.sibiu.ro homepage](https://e-plati.sibiu.ro/), [Visit e-plati.sibiu.ro/payment/categories-2](https://e-plati.sibiu.ro/payment/categories-2), [Visit e-plati.sibiu.ro/payment/categories/plata-amenzi-persoane-fizice](https://e-plati.sibiu.ro/payment/categories/plata-amenzi-persoane-fizice) |
 | `edinburgh.mae.ro` | [Visit edinburgh.mae.ro homepage](https://edinburgh.mae.ro/), [Visit edinburgh.mae.ro/romania-news/7813](https://edinburgh.mae.ro/romania-news/7813) |
+| `edu.ro` | [Visit edu.ro homepage](https://edu.ro/) |
 | `english.mapn.ro` | [Visit english.mapn.ro homepage](https://english.mapn.ro/), [Visit english.mapn.ro/about_mond/index.php](https://english.mapn.ro/about_mond/index.php), [Visit english.mapn.ro/cpresa/6541_romania-has-handed-over-the-secretariat-of-the-chairmanship-of-the-south-eastern-europe-defence-ministerial-(sedm)-to-greece](https://english.mapn.ro/cpresa/6541_romania-has-handed-over-the-secretariat-of-the-chairmanship-of-the-south-eastern-europe-defence-ministerial-(sedm)-to-greece) |
 | `epatrim.anaf.ro` | [Visit epatrim.anaf.ro homepage](https://epatrim.anaf.ro/), [Visit epatrim.anaf.ro/public/specificatii_tehnice.html](https://epatrim.anaf.ro/public/specificatii_tehnice.html) |
 | `eportal.sibiu.ro` | [Visit eportal.sibiu.ro homepage](https://eportal.sibiu.ro/), [Visit eportal.sibiu.ro/assets/cookie.html](https://eportal.sibiu.ro/assets/cookie.html) |
@@ -157,6 +160,7 @@ permalink: /domains/romania.html
 | `evenimente.brasovcity.ro` | [Visit evenimente.brasovcity.ro homepage](https://evenimente.brasovcity.ro/), [Visit evenimente.brasovcity.ro/proceduri](https://evenimente.brasovcity.ro/proceduri) |
 | `evisa.mae.ro` | [Visit evisa.mae.ro homepage](https://evisa.mae.ro/) |
 | `eviza.mae.ro` | [Visit eviza.mae.ro homepage](https://eviza.mae.ro/), [Visit eviza.mae.ro/AboutWebsite](https://eviza.mae.ro/AboutWebsite) |
+| `exteriors.gencat.cat` | [Visit exteriors.gencat.cat homepage](https://exteriors.gencat.cat/) |
 | `financiar.anaf.ro` | [Visit financiar.anaf.ro homepage](https://financiar.anaf.ro/) |
 | `formulare.sts.ro` | [Visit formulare.sts.ro homepage](https://formulare.sts.ro/) |
 | `formularespv-pf.anaf.ro` | [Visit formularespv-pf.anaf.ro homepage](https://formularespv-pf.anaf.ro/) |
@@ -212,6 +216,7 @@ permalink: /domains/romania.html
 | `lyon.mae.ro` | [Visit lyon.mae.ro homepage](https://lyon.mae.ro/), [Visit lyon.mae.ro/romania-news/7813](https://lyon.mae.ro/romania-news/7813) |
 | `madrid.mae.ro` | [Visit madrid.mae.ro homepage](https://madrid.mae.ro/), [Visit madrid.mae.ro/romania-news/7813](https://madrid.mae.ro/romania-news/7813) |
 | `mae.ro` | [Visit mae.ro homepage](https://mae.ro/), [Visit mae.ro/node/67013](https://mae.ro/node/67013), [Visit mae.ro/romanian-missions](https://mae.ro/romanian-missions) |
+| `mai.gov.ro` | [Visit mai.gov.ro homepage](https://mai.gov.ro/) |
 | `mail.senat.ro` | [Visit mail.senat.ro homepage](https://mail.senat.ro/) |
 | `manchester.mae.ro` | [Visit manchester.mae.ro homepage](https://manchester.mae.ro/), [Visit manchester.mae.ro/romania-news/7813](https://manchester.mae.ro/romania-news/7813) |
 | `manila.mae.ro` | [Visit manila.mae.ro homepage](https://manila.mae.ro/), [Visit manila.mae.ro/romania-news/7813](https://manila.mae.ro/romania-news/7813) |
@@ -222,11 +227,13 @@ permalink: /domains/romania.html
 | `membersbikecity.sibiu.ro` | [Visit membersbikecity.sibiu.ro homepage](https://membersbikecity.sibiu.ro/), [Visit membersbikecity.sibiu.ro/password/forget](https://membersbikecity.sibiu.ro/password/forget) |
 | `mentenanta.anaf.ro` | [Visit mentenanta.anaf.ro homepage](https://mentenanta.anaf.ro/) |
 | `mexico.mae.ro` | [Visit mexico.mae.ro homepage](https://mexico.mae.ro/), [Visit mexico.mae.ro/romania-news/7813](https://mexico.mae.ro/romania-news/7813) |
+| `mfinante.gov.ro` | [Visit mfinante.gov.ro homepage](https://mfinante.gov.ro/) |
 | `mh.politiaromana.ro` | [Visit mh.politiaromana.ro homepage](https://mh.politiaromana.ro/), [Visit mh.politiaromana.ro/ro/stiri-si-media/comunicate/comunicat-de-presa-13-06-2024](https://mh.politiaromana.ro/ro/stiri-si-media/comunicate/comunicat-de-presa-13-06-2024) |
 | `miami.mae.ro` | [Visit miami.mae.ro homepage](https://miami.mae.ro/), [Visit miami.mae.ro/romania-news/7813](https://miami.mae.ro/romania-news/7813) |
 | `milano.mae.ro` | [Visit milano.mae.ro homepage](https://milano.mae.ro/), [Visit milano.mae.ro/local-news/2782](https://milano.mae.ro/local-news/2782), [Visit milano.mae.ro/romania-news/7813](https://milano.mae.ro/romania-news/7813) |
 | `minsk.mae.ro` | [Visit minsk.mae.ro homepage](https://minsk.mae.ro/), [Visit minsk.mae.ro/romania-news/7813](https://minsk.mae.ro/romania-news/7813) |
 | `mm.politiaromana.ro` | [Visit mm.politiaromana.ro homepage](https://mm.politiaromana.ro/), [Visit mm.politiaromana.ro/ro/stiri-si-media/comunicate/mesajul-sefului-inspectoratului-de-politie-judetean-maramures-cu-ocazia-zilei-politiei-romane](https://mm.politiaromana.ro/ro/stiri-si-media/comunicate/mesajul-sefului-inspectoratului-de-politie-judetean-maramures-cu-ocazia-zilei-politiei-romane) |
+| `mmediu.ro` | [Visit mmediu.ro homepage](https://mmediu.ro/) |
 | `mol.oradea.ro` | [Visit mol.oradea.ro homepage](https://mol.oradea.ro/), [Visit mol.oradea.ro/assets/login](https://mol.oradea.ro/assets/login) |
 | `montreal.mae.ro` | [Visit montreal.mae.ro homepage](https://montreal.mae.ro/), [Visit montreal.mae.ro/romania-news/7813](https://montreal.mae.ro/romania-news/7813) |
 | `moscova.mae.ro` | [Visit moscova.mae.ro homepage](https://moscova.mae.ro/), [Visit moscova.mae.ro/romania-news/7813](https://moscova.mae.ro/romania-news/7813) |
@@ -250,6 +257,7 @@ permalink: /domains/romania.html
 | `olt.insse.ro` | [Visit olt.insse.ro homepage](https://olt.insse.ro/), [Visit olt.insse.ro/comunicate-de-presa/anunturi/atentionare-agenti-economici-campanie-inselatoare-colectare-date-2/](https://olt.insse.ro/comunicate-de-presa/anunturi/atentionare-agenti-economici-campanie-inselatoare-colectare-date-2/), [Visit olt.insse.ro/integritate-institutionala/](https://olt.insse.ro/integritate-institutionala/) |
 | `once.mapn.ro` | [Visit once.mapn.ro homepage](https://once.mapn.ro/), [Visit once.mapn.ro/news/30](https://once.mapn.ro/news/30), [Visit once.mapn.ro/webroot/HartaInteractiva/harta.html](https://once.mapn.ro/webroot/HartaInteractiva/harta.html) |
 | `online.senat.ro` | [Visit online.senat.ro homepage](https://online.senat.ro/), [Visit online.senat.ro/portal](https://online.senat.ro/portal) |
+| `onpcsb.ro` | [Visit onpcsb.ro homepage](https://onpcsb.ro/) |
 | `oradea.ro` | [Visit oradea.ro homepage](https://oradea.ro/), [Visit oradea.ro/pentru-cetateni/pentru-comunitate/](https://oradea.ro/pentru-cetateni/pentru-comunitate/), [Visit oradea.ro/stiri/incep-lucrarile-de-modernizare-a-parcului-1-decembrie/](https://oradea.ro/stiri/incep-lucrarile-de-modernizare-a-parcului-1-decembrie/) |
 | `oslo.mae.ro` | [Visit oslo.mae.ro homepage](https://oslo.mae.ro/), [Visit oslo.mae.ro/romania-news/7813](https://oslo.mae.ro/romania-news/7813) |
 | `ot.politiaromana.ro` | [Visit ot.politiaromana.ro homepage](https://ot.politiaromana.ro/), [Visit ot.politiaromana.ro/copiii-sunt-de-partea-legii](https://ot.politiaromana.ro/copiii-sunt-de-partea-legii) |
