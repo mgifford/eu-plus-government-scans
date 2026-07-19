@@ -1,1434 +1,418 @@
 {
-  "country": "Greece",
-  "total_relationships": 1996,
-  "total_source_domains": 115,
-  "total_unique_targets": 535,
-  "gov_to_gov_pairs": 230,
-  "relationship_types": {
-    "editorial_link": 1135,
-    "script_dependency": 298,
-    "stylesheet_dependency": 255,
-    "image_or_media_dependency": 151,
-    "form_destination": 97,
-    "font_or_preload_dependency": 60
-  },
+  "country_code": "GREECE",
+  "total_relationships": 7820,
+  "total_source_domains": 348,
   "top_source_domains": [
     {
-      "domain": "pde.gov.gr",
-      "observations": 115,
-      "unique_targets": 25,
-      "relationship_types": {
-        "editorial_link": 26,
-        "font_or_preload_dependency": 2,
-        "stylesheet_dependency": 3,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "php.gov.gr",
-      "observations": 74,
-      "unique_targets": 66,
-      "relationship_types": {
-        "editorial_link": 70,
-        "script_dependency": 1,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1
-      }
-    },
-    {
-      "domain": "vvv.gov.gr",
-      "observations": 72,
-      "unique_targets": 15,
-      "relationship_types": {
-        "editorial_link": 15,
-        "script_dependency": 7,
-        "stylesheet_dependency": 4,
-        "image_or_media_dependency": 3,
-        "form_destination": 3
-      }
-    },
-    {
-      "domain": "mfa.gr",
-      "observations": 62,
-      "unique_targets": 33,
-      "relationship_types": {
-        "editorial_link": 34,
-        "script_dependency": 7,
-        "stylesheet_dependency": 5,
-        "image_or_media_dependency": 3,
-        "form_destination": 3
-      }
-    },
-    {
-      "domain": "heraklion.gr",
-      "observations": 62,
-      "unique_targets": 27,
-      "relationship_types": {
-        "editorial_link": 31,
-        "script_dependency": 7,
-        "stylesheet_dependency": 7,
-        "image_or_media_dependency": 3,
-        "form_destination": 3
-      }
-    },
-    {
       "domain": "minedu.gov.gr",
-      "observations": 60,
-      "unique_targets": 22,
-      "relationship_types": {
-        "editorial_link": 22,
-        "script_dependency": 9,
-        "stylesheet_dependency": 11,
-        "font_or_preload_dependency": 3,
-        "image_or_media_dependency": 5,
-        "form_destination": 3
-      }
-    },
-    {
-      "domain": "aade.gr",
-      "observations": 56,
-      "unique_targets": 10,
-      "relationship_types": {
-        "editorial_link": 12,
-        "script_dependency": 5,
-        "stylesheet_dependency": 2,
-        "font_or_preload_dependency": 2,
-        "image_or_media_dependency": 2,
-        "form_destination": 2
-      }
-    },
-    {
-      "domain": "loutraki.gov.gr",
-      "observations": 42,
-      "unique_targets": 27,
-      "relationship_types": {
-        "editorial_link": 28,
-        "script_dependency": 5,
-        "stylesheet_dependency": 4,
-        "image_or_media_dependency": 4,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "apdkritis.gov.gr",
-      "observations": 42,
-      "unique_targets": 21,
-      "relationship_types": {
-        "editorial_link": 22,
-        "script_dependency": 5,
-        "stylesheet_dependency": 4,
-        "image_or_media_dependency": 2,
-        "form_destination": 2
-      }
-    },
-    {
-      "domain": "chios.gov.gr",
-      "observations": 41,
-      "unique_targets": 16,
-      "relationship_types": {
-        "editorial_link": 14,
-        "script_dependency": 4,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "lefkada.gov.gr",
-      "observations": 41,
-      "unique_targets": 28,
-      "relationship_types": {
-        "editorial_link": 28,
-        "script_dependency": 6,
-        "stylesheet_dependency": 4,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "minagric.gr",
-      "observations": 38,
-      "unique_targets": 23,
-      "relationship_types": {
-        "editorial_link": 25,
-        "script_dependency": 3,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 3,
-        "form_destination": 2
-      }
-    },
-    {
-      "domain": "skopelos.gov.gr",
-      "observations": 38,
-      "unique_targets": 19,
-      "relationship_types": {
-        "editorial_link": 17,
-        "script_dependency": 3,
-        "font_or_preload_dependency": 2,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "cityofkozani.gov.gr",
-      "observations": 38,
-      "unique_targets": 32,
-      "relationship_types": {
-        "editorial_link": 29,
-        "script_dependency": 4,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "anaptyxi.gov.gr",
-      "observations": 36,
-      "unique_targets": 24,
-      "relationship_types": {
-        "editorial_link": 19,
-        "script_dependency": 5,
-        "stylesheet_dependency": 5,
-        "image_or_media_dependency": 3,
-        "form_destination": 2
-      }
-    },
-    {
-      "domain": "veria.gr",
-      "observations": 34,
-      "unique_targets": 10,
-      "relationship_types": {
-        "editorial_link": 9,
-        "script_dependency": 2,
-        "font_or_preload_dependency": 2,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "pdm.gov.gr",
-      "observations": 32,
-      "unique_targets": 18,
-      "relationship_types": {
-        "editorial_link": 25,
-        "script_dependency": 3,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
+      "count": 601
     },
     {
       "domain": "thessaloniki.gr",
-      "observations": 31,
-      "unique_targets": 22,
-      "relationship_types": {
-        "editorial_link": 21,
-        "script_dependency": 4,
-        "font_or_preload_dependency": 2,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "ypes.gr",
-      "observations": 30,
-      "unique_targets": 22,
-      "relationship_types": {
-        "editorial_link": 19,
-        "script_dependency": 6,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "1dype.gov.gr",
-      "observations": 28,
-      "unique_targets": 19,
-      "relationship_types": {
-        "editorial_link": 21,
-        "script_dependency": 2,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "fortizopantou.gov.gr",
-      "observations": 26,
-      "unique_targets": 17,
-      "relationship_types": {
-        "editorial_link": 13,
-        "script_dependency": 6,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 2
-      }
-    },
-    {
-      "domain": "mindev.gov.gr",
-      "observations": 26,
-      "unique_targets": 7,
-      "relationship_types": {
-        "script_dependency": 5,
-        "stylesheet_dependency": 7,
-        "editorial_link": 7,
-        "image_or_media_dependency": 3,
-        "form_destination": 1,
-        "font_or_preload_dependency": 1
-      }
-    },
-    {
-      "domain": "gnto.gov.gr",
-      "observations": 26,
-      "unique_targets": 10,
-      "relationship_types": {
-        "editorial_link": 8,
-        "script_dependency": 1,
-        "stylesheet_dependency": 2,
-        "font_or_preload_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "gnfiliaton.gov.gr",
-      "observations": 25,
-      "unique_targets": 21,
-      "relationship_types": {
-        "editorial_link": 17,
-        "script_dependency": 1,
-        "font_or_preload_dependency": 1,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 3,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "gsis.gr",
-      "observations": 25,
-      "unique_targets": 15,
-      "relationship_types": {
-        "editorial_link": 19,
-        "script_dependency": 1,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "attica.gov.gr",
-      "observations": 25,
-      "unique_targets": 12,
-      "relationship_types": {
-        "editorial_link": 10,
-        "script_dependency": 6,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "serres.gr",
-      "observations": 25,
-      "unique_targets": 8,
-      "relationship_types": {
-        "editorial_link": 3,
-        "script_dependency": 3,
-        "font_or_preload_dependency": 4,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "kos.gov.gr",
-      "observations": 24,
-      "unique_targets": 11,
-      "relationship_types": {
-        "editorial_link": 10,
-        "script_dependency": 5,
-        "stylesheet_dependency": 3,
-        "font_or_preload_dependency": 1,
-        "image_or_media_dependency": 2,
-        "form_destination": 2
-      }
-    },
-    {
-      "domain": "mitos.gov.gr",
-      "observations": 24,
-      "unique_targets": 14,
-      "relationship_types": {
-        "editorial_link": 18,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 3,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "minscfa.gov.gr",
-      "observations": 23,
-      "unique_targets": 18,
-      "relationship_types": {
-        "editorial_link": 15,
-        "script_dependency": 2,
-        "stylesheet_dependency": 2,
-        "font_or_preload_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "ioannina.gr",
-      "observations": 23,
-      "unique_targets": 14,
-      "relationship_types": {
-        "editorial_link": 15,
-        "script_dependency": 1,
-        "font_or_preload_dependency": 2,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "pnai.gov.gr",
-      "observations": 23,
-      "unique_targets": 16,
-      "relationship_types": {
-        "editorial_link": 8,
-        "script_dependency": 6,
-        "stylesheet_dependency": 7,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "argostoli.gov.gr",
-      "observations": 22,
-      "unique_targets": 18,
-      "relationship_types": {
-        "editorial_link": 16,
-        "script_dependency": 2,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "kiato.gov.gr",
-      "observations": 22,
-      "unique_targets": 13,
-      "relationship_types": {
-        "editorial_link": 10,
-        "script_dependency": 5,
-        "font_or_preload_dependency": 2,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "apd-depin.gov.gr",
-      "observations": 21,
-      "unique_targets": 15,
-      "relationship_types": {
-        "editorial_link": 13,
-        "script_dependency": 4,
-        "font_or_preload_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "pin.gov.gr",
-      "observations": 21,
-      "unique_targets": 16,
-      "relationship_types": {
-        "editorial_link": 13,
-        "script_dependency": 4,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "philothei-psychiko.gov.gr",
-      "observations": 21,
-      "unique_targets": 17,
-      "relationship_types": {
-        "editorial_link": 12,
-        "script_dependency": 3,
-        "stylesheet_dependency": 2,
-        "font_or_preload_dependency": 1,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "cityofathens.gr",
-      "observations": 20,
-      "unique_targets": 7,
-      "relationship_types": {
-        "editorial_link": 7,
-        "script_dependency": 4,
-        "stylesheet_dependency": 4,
-        "image_or_media_dependency": 2,
-        "font_or_preload_dependency": 1,
-        "form_destination": 2
-      }
-    },
-    {
-      "domain": "dromokaiteio.gov.gr",
-      "observations": 20,
-      "unique_targets": 14,
-      "relationship_types": {
-        "editorial_link": 13,
-        "script_dependency": 1,
-        "stylesheet_dependency": 2,
-        "font_or_preload_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "pamth.gov.gr",
-      "observations": 20,
-      "unique_targets": 14,
-      "relationship_types": {
-        "editorial_link": 14,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 3,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "data.gov.gr",
-      "observations": 20,
-      "unique_targets": 14,
-      "relationship_types": {
-        "editorial_link": 9,
-        "script_dependency": 4,
-        "stylesheet_dependency": 3,
-        "font_or_preload_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "apokoronas.gov.gr",
-      "observations": 20,
-      "unique_targets": 12,
-      "relationship_types": {
-        "editorial_link": 9,
-        "script_dependency": 3,
-        "font_or_preload_dependency": 3,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "ydra.gov.gr",
-      "observations": 19,
-      "unique_targets": 12,
-      "relationship_types": {
-        "editorial_link": 13,
-        "script_dependency": 3,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 2
-      }
-    },
-    {
-      "domain": "howto.gov.gr",
-      "observations": 19,
-      "unique_targets": 15,
-      "relationship_types": {
-        "editorial_link": 13,
-        "script_dependency": 1,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 2
-      }
-    },
-    {
-      "domain": "eody.gov.gr",
-      "observations": 19,
-      "unique_targets": 12,
-      "relationship_types": {
-        "editorial_link": 6,
-        "script_dependency": 7,
-        "stylesheet_dependency": 4,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "digitalawards.gov.gr",
-      "observations": 18,
-      "unique_targets": 14,
-      "relationship_types": {
-        "editorial_link": 8,
-        "script_dependency": 6,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 1
-      }
-    },
-    {
-      "domain": "gnartas.gov.gr",
-      "observations": 18,
-      "unique_targets": 11,
-      "relationship_types": {
-        "editorial_link": 11,
-        "script_dependency": 1,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 4
-      }
-    },
-    {
-      "domain": "amea.gov.gr",
-      "observations": 18,
-      "unique_targets": 13,
-      "relationship_types": {
-        "editorial_link": 11,
-        "script_dependency": 1,
-        "font_or_preload_dependency": 3,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "ekapy.gov.gr",
-      "observations": 18,
-      "unique_targets": 14,
-      "relationship_types": {
-        "editorial_link": 14,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "zitsa.gov.gr",
-      "observations": 18,
-      "unique_targets": 12,
-      "relationship_types": {
-        "editorial_link": 14,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    }
-  ],
-  "top_targets": [
-    {
-      "domain": "googleapis.com",
-      "observations": 112
-    },
-    {
-      "domain": "facebook.com",
-      "observations": 68
-    },
-    {
-      "domain": "diavgeia.gov.gr",
-      "observations": 57
-    },
-    {
-      "domain": "googletagmanager.com",
-      "observations": 50
-    },
-    {
-      "domain": "youtube.com",
-      "observations": 45
-    },
-    {
-      "domain": "google.com",
-      "observations": 44
-    },
-    {
-      "domain": "twitter.com",
-      "observations": 35
-    },
-    {
-      "domain": "www.gov.gr",
-      "observations": 35
-    },
-    {
-      "domain": "europa.eu",
-      "observations": 35
-    },
-    {
-      "domain": "minedu.gov.gr",
-      "observations": 35
-    },
-    {
-      "domain": "instagram.com",
-      "observations": 34
-    },
-    {
-      "domain": "cloudflare.com",
-      "observations": 34
-    },
-    {
-      "domain": "aade.gr",
-      "observations": 33
-    },
-    {
-      "domain": "userway.org",
-      "observations": 30
-    },
-    {
-      "domain": "gstatic.com",
-      "observations": 29
-    },
-    {
-      "domain": "vvv.gov.gr",
-      "observations": 29
-    },
-    {
-      "domain": "heraklion.gr",
-      "observations": 27
-    },
-    {
-      "domain": "jsdelivr.net",
-      "observations": 26
-    },
-    {
-      "domain": "pde.gov.gr",
-      "observations": 25
-    },
-    {
-      "domain": "mfa.gr",
-      "observations": 21
-    },
-    {
-      "domain": "mindev.gov.gr",
-      "observations": 20
-    },
-    {
-      "domain": "linkedin.com",
-      "observations": 18
-    },
-    {
-      "domain": "fontawesome.com",
-      "observations": 16
-    },
-    {
-      "domain": "unpkg.com",
-      "observations": 16
-    },
-    {
-      "domain": "gsis.gr",
-      "observations": 16
+      "count": 588
     },
     {
       "domain": "pdm.gov.gr",
-      "observations": 16
+      "count": 549
     },
     {
-      "domain": "apdkritis.gov.gr",
-      "observations": 15
+      "domain": "crete.gov.gr",
+      "count": 392
     },
     {
-      "domain": "cityofathens.gr",
-      "observations": 14
+      "domain": "mindev.gov.gr",
+      "count": 366
     },
     {
-      "domain": "moh.gov.gr",
-      "observations": 14
+      "domain": "mfa.gr",
+      "count": 323
     },
     {
-      "domain": "veria.gr",
-      "observations": 14
-    },
-    {
-      "domain": "data.gov.gr",
-      "observations": 13
-    },
-    {
-      "domain": "ypen.gov.gr",
-      "observations": 13
+      "domain": "pde.gov.gr",
+      "count": 313
     },
     {
       "domain": "minagric.gr",
-      "observations": 12
-    },
-    {
-      "domain": "kos.gov.gr",
-      "observations": 12
-    },
-    {
-      "domain": "espa.gr",
-      "observations": 11
+      "count": 279
     },
     {
       "domain": "services.gov.gr",
-      "observations": 11
+      "count": 275
     },
     {
-      "domain": "eopyy.gov.gr",
-      "observations": 11
+      "domain": "attica.gov.gr",
+      "count": 272
     },
     {
-      "domain": "hellenicparliament.gr",
-      "observations": 11
+      "domain": "dypa.gov.gr",
+      "count": 265
     },
     {
-      "domain": "chios.gov.gr",
-      "observations": 11
+      "domain": "culture.gov.gr",
+      "count": 244
     },
     {
-      "domain": "serres.gr",
-      "observations": 11
+      "domain": "heraklion.gr",
+      "count": 237
     },
     {
-      "domain": "moires.gov.gr",
-      "observations": 10
-    },
-    {
-      "domain": "ypes.gr",
-      "observations": 10
-    },
-    {
-      "domain": "greece20.gov.gr",
-      "observations": 10
+      "domain": "cityofathens.gr",
+      "count": 210
     },
     {
       "domain": "necca.gov.gr",
-      "observations": 10
+      "count": 177
     },
     {
-      "domain": "gnto.gov.gr",
-      "observations": 10
+      "domain": "lefkada.gov.gr",
+      "count": 175
+    },
+    {
+      "domain": "yme.gov.gr",
+      "count": 175
+    },
+    {
+      "domain": "7ype.gov.gr",
+      "count": 174
+    },
+    {
+      "domain": "php.gov.gr",
+      "count": 171
+    },
+    {
+      "domain": "pnai.gov.gr",
+      "count": 169
+    },
+    {
+      "domain": "ypen.gov.gr",
+      "count": 160
+    },
+    {
+      "domain": "apdattikis.gov.gr",
+      "count": 160
+    },
+    {
+      "domain": "eopyy.gov.gr",
+      "count": 157
+    },
+    {
+      "domain": "vvv.gov.gr",
+      "count": 155
+    },
+    {
+      "domain": "serres.gr",
+      "count": 153
+    },
+    {
+      "domain": "cityofkozani.gov.gr",
+      "count": 152
+    },
+    {
+      "domain": "malevizi.gov.gr",
+      "count": 150
+    },
+    {
+      "domain": "mitos.gov.gr",
+      "count": 149
     },
     {
       "domain": "anaptyxi.gov.gr",
-      "observations": 10
+      "count": 148
     },
     {
-      "domain": "gga.gov.gr",
-      "observations": 10
+      "domain": "pste.gov.gr",
+      "count": 144
+    },
+    {
+      "domain": "paiania.gov.gr",
+      "count": 140
+    },
+    {
+      "domain": "1555.gov.gr",
+      "count": 139
+    },
+    {
+      "domain": "migration.gov.gr",
+      "count": 138
+    },
+    {
+      "domain": "ehealthrecord.gov.gr",
+      "count": 137
+    },
+    {
+      "domain": "agrinio.gov.gr",
+      "count": 128
+    },
+    {
+      "domain": "chios.gov.gr",
+      "count": 123
+    },
+    {
+      "domain": "dafni-ymittos.gov.gr",
+      "count": 123
+    },
+    {
+      "domain": "bankofgreece.gr",
+      "count": 122
+    },
+    {
+      "domain": "sami.gov.gr",
+      "count": 121
+    },
+    {
+      "domain": "chania.gr",
+      "count": 120
+    },
+    {
+      "domain": "diavgeia.gov.gr",
+      "count": 119
+    },
+    {
+      "domain": "digitalsme.gov.gr",
+      "count": 117
+    },
+    {
+      "domain": "gsis.gr",
+      "count": 116
+    },
+    {
+      "domain": "evrotas.gov.gr",
+      "count": 116
+    },
+    {
+      "domain": "minsports.gov.gr",
+      "count": 116
+    },
+    {
+      "domain": "loutraki.gov.gr",
+      "count": 116
+    },
+    {
+      "domain": "dimos-lokron.gov.gr",
+      "count": 114
+    },
+    {
+      "domain": "minfin.gov.gr",
+      "count": 113
+    },
+    {
+      "domain": "aade.gr",
+      "count": 113
+    },
+    {
+      "domain": "sparti.gov.gr",
+      "count": 112
+    }
+  ],
+  "top_target_domains": [
+    {
+      "domain": "googleapis.com",
+      "count": 1239
+    },
+    {
+      "domain": "facebook.com",
+      "count": 623
+    },
+    {
+      "domain": "diavgeia.gov.gr",
+      "count": 498
+    },
+    {
+      "domain": "googletagmanager.com",
+      "count": 466
+    },
+    {
+      "domain": "google.com",
+      "count": 411
+    },
+    {
+      "domain": "youtube.com",
+      "count": 407
+    },
+    {
+      "domain": "minedu.gov.gr",
+      "count": 367
+    },
+    {
+      "domain": "gstatic.com",
+      "count": 343
+    },
+    {
+      "domain": "www.gov.gr",
+      "count": 321
+    },
+    {
+      "domain": "europa.eu",
+      "count": 318
+    },
+    {
+      "domain": "twitter.com",
+      "count": 276
+    },
+    {
+      "domain": "jsdelivr.net",
+      "count": 272
+    },
+    {
+      "domain": "userway.org",
+      "count": 271
+    },
+    {
+      "domain": "instagram.com",
+      "count": 271
+    },
+    {
+      "domain": "pdm.gov.gr",
+      "count": 244
+    },
+    {
+      "domain": "thessaloniki.gr",
+      "count": 242
+    },
+    {
+      "domain": "cloudflare.com",
+      "count": 241
+    },
+    {
+      "domain": "services.gov.gr",
+      "count": 201
+    },
+    {
+      "domain": "crete.gov.gr",
+      "count": 171
+    },
+    {
+      "domain": "linkedin.com",
+      "count": 169
+    },
+    {
+      "domain": "mindev.gov.gr",
+      "count": 157
+    },
+    {
+      "domain": "mfa.gr",
+      "count": 142
+    },
+    {
+      "domain": "ypen.gov.gr",
+      "count": 134
+    },
+    {
+      "domain": "minagric.gr",
+      "count": 133
+    },
+    {
+      "domain": "cityofathens.gr",
+      "count": 131
+    },
+    {
+      "domain": "gsis.gr",
+      "count": 126
+    },
+    {
+      "domain": "heraklion.gr",
+      "count": 125
+    },
+    {
+      "domain": "unpkg.com",
+      "count": 121
+    },
+    {
+      "domain": "eopyy.gov.gr",
+      "count": 116
+    },
+    {
+      "domain": "dypa.gov.gr",
+      "count": 112
+    },
+    {
+      "domain": "mindigital.gr",
+      "count": 104
+    },
+    {
+      "domain": "attica.gov.gr",
+      "count": 104
+    },
+    {
+      "domain": "greece20.gov.gr",
+      "count": 103
+    },
+    {
+      "domain": "ypes.gr",
+      "count": 102
+    },
+    {
+      "domain": "culture.gov.gr",
+      "count": 100
+    },
+    {
+      "domain": "grnet.gr",
+      "count": 96
     },
     {
       "domain": "bootstrapcdn.com",
-      "observations": 9
+      "count": 95
     },
     {
-      "domain": "apd-depin.gov.gr",
-      "observations": 9
+      "domain": "fontawesome.com",
+      "count": 90
     },
     {
-      "domain": "cookiedatabase.org",
-      "observations": 9
+      "domain": "aade.gr",
+      "count": 90
+    },
+    {
+      "domain": "espa.gr",
+      "count": 88
+    },
+    {
+      "domain": "necca.gov.gr",
+      "count": 87
+    },
+    {
+      "domain": "pde.gov.gr",
+      "count": 83
+    },
+    {
+      "domain": "wp.com",
+      "count": 81
+    },
+    {
+      "domain": "bankofgreece.gr",
+      "count": 79
+    },
+    {
+      "domain": "statistics.gr",
+      "count": 79
+    },
+    {
+      "domain": "mitos.gov.gr",
+      "count": 70
+    },
+    {
+      "domain": "x.com",
+      "count": 69
+    },
+    {
+      "domain": "vvv.gov.gr",
+      "count": 69
+    },
+    {
+      "domain": "moh.gov.gr",
+      "count": 67
+    },
+    {
+      "domain": "efka.gov.gr",
+      "count": 66
     }
   ],
-  "gov_to_gov_links": [
-    {
-      "source": "digitalawards.gov.gr",
-      "target": "www.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "apd-depin.gov.gr",
-      "target": "syzefxis.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "apd-depin.gov.gr",
-      "target": "diavgeia.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "apd-depin.gov.gr",
-      "target": "data.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "apd-depin.gov.gr",
-      "target": "migration.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "megalopoli.gov.gr",
-      "target": "diavgeia.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "megalopoli.gov.gr",
-      "target": "ppel.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "megalopoli.gov.gr",
-      "target": "services.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "minedu.gov.gr",
-      "target": "europa.eu",
-      "target_country": "EU Institutions",
-      "cross_country": true
-    },
-    {
-      "source": "fortizopantou.gov.gr",
-      "target": "www.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "fortizopantou.gov.gr",
-      "target": "greece20.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "fortizopantou.gov.gr",
-      "target": "kinoumeilektrika.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "fortizopantou.gov.gr",
-      "target": "kinoumeilektrika2.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "fortizopantou.gov.gr",
-      "target": "e-astypalea.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "fortizopantou.gov.gr",
-      "target": "prasinataxi.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "fortizopantou.gov.gr",
-      "target": "support.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "fortizopantou.gov.gr",
-      "target": "ypen.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "minedu.gov.gr",
-      "target": "diavgeia.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "minedu.gov.gr",
-      "target": "empedu.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "gnfiliaton.gov.gr",
-      "target": "eopyy.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "gnfiliaton.gov.gr",
-      "target": "www.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "gnfiliaton.gov.gr",
-      "target": "moh.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "gnfiliaton.gov.gr",
-      "target": "eody.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "gnfiliaton.gov.gr",
-      "target": "diavgeia.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "gnfiliaton.gov.gr",
-      "target": "ekapy.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "gnfiliaton.gov.gr",
-      "target": "mastografia.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "gnfiliaton.gov.gr",
-      "target": "europa.eu",
-      "target_country": "EU Institutions",
-      "cross_country": true
-    },
-    {
-      "source": "gnfiliaton.gov.gr",
-      "target": "greece20.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "vvv.gov.gr",
-      "target": "vvvgovpoleodomia.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "ypen.gov.gr",
-      "target": "europa.eu",
-      "target_country": "EU Institutions",
-      "cross_country": true
-    },
-    {
-      "source": "ypen.gov.gr",
-      "target": "ypergasias.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "protodikeio-samou.gov.gr",
-      "target": "ministryofjustice.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "protodikeio-samou.gov.gr",
-      "target": "eprocurement.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "protodikeio-samou.gov.gr",
-      "target": "www.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "protodikeio-samou.gov.gr",
-      "target": "diavgeia.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "protodikeio-samou.gov.gr",
-      "target": "ncris.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "argostoli.gov.gr",
-      "target": "visitkefaloniaisland.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "argostoli.gov.gr",
-      "target": "mysafetyplan.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "argostoli.gov.gr",
-      "target": "civilprotection.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "argostoli.gov.gr",
-      "target": "diavgeia.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "argostoli.gov.gr",
-      "target": "www.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "argostoli.gov.gr",
-      "target": "europa.eu",
-      "target_country": "EU Institutions",
-      "cross_country": true
-    },
-    {
-      "source": "argostoli.gov.gr",
-      "target": "eugo.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "pde.gov.gr",
-      "target": "diavgeia.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "pde.gov.gr",
-      "target": "data.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "pde.gov.gr",
-      "target": "olympianland.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "pde.gov.gr",
-      "target": "civilprotection.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "pde.gov.gr",
-      "target": "erga.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "pde.gov.gr",
-      "target": "enterprisegreece.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "pde.gov.gr",
-      "target": "ypen.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "pde.gov.gr",
-      "target": "apd-depin.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "gnartas.gov.gr",
-      "target": "moh.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "gnartas.gov.gr",
-      "target": "eody.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "gnartas.gov.gr",
-      "target": "eopyy.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "gnartas.gov.gr",
-      "target": "diavgeia.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "businessportal.gov.gr",
-      "target": "www.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "alonissos.gov.gr",
-      "target": "diavgeia.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "minfin.gov.gr",
-      "target": "europa.eu",
-      "target_country": "EU Institutions",
-      "cross_country": true
-    },
-    {
-      "source": "minfin.gov.gr",
-      "target": "diavgeia.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "minfin.gov.gr",
-      "target": "greece20.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "www.gov.gr",
-      "target": "mitos.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "www.gov.gr",
-      "target": "eugo.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "www.gov.gr",
-      "target": "howto.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "www.gov.gr",
-      "target": "digitalstrategy.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "www.gov.gr",
-      "target": "government.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "dromokaiteio.gov.gr",
-      "target": "diavgeia.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "dromokaiteio.gov.gr",
-      "target": "2dype.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "dromokaiteio.gov.gr",
-      "target": "eopyy.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "dromokaiteio.gov.gr",
-      "target": "moh.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "eopyy.gov.gr",
-      "target": "www.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "eopyy.gov.gr",
-      "target": "services.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "pamth.gov.gr",
-      "target": "diavgeia.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "pamth.gov.gr",
-      "target": "civilprotection.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "pamth.gov.gr",
-      "target": "www.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "pamth.gov.gr",
-      "target": "europa.eu",
-      "target_country": "EU Institutions",
-      "cross_country": true
-    },
-    {
-      "source": "2dype.gov.gr",
-      "target": "moh.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "chios.gov.gr",
-      "target": "diavgeia.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "chios.gov.gr",
-      "target": "www.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "chios.gov.gr",
-      "target": "ermis.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "chios.gov.gr",
-      "target": "kep.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "attica.gov.gr",
-      "target": "patt.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "hcg.gov.gr",
-      "target": "www.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "ydra.gov.gr",
-      "target": "diavgeia.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "cityofkozani.gov.gr",
-      "target": "www.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "cityofkozani.gov.gr",
-      "target": "diavgeia.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "cityofkozani.gov.gr",
-      "target": "europa.eu",
-      "target_country": "EU Institutions",
-      "cross_country": true
-    },
-    {
-      "source": "cityofkozani.gov.gr",
-      "target": "ypen.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "mysafetyplan.gov.gr",
-      "target": "www.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "gnto.gov.gr",
-      "target": "diavgeia.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "data.gov.gr",
-      "target": "europa.eu",
-      "target_country": "EU Institutions",
-      "cross_country": true
-    },
-    {
-      "source": "data.gov.gr",
-      "target": "www.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "data.gov.gr",
-      "target": "greece20.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "erymanthou.gov.gr",
-      "target": "civilprotection.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "erymanthou.gov.gr",
-      "target": "ypen.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "erymanthou.gov.gr",
-      "target": "diavgeia.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "erymanthou.gov.gr",
-      "target": "europa.eu",
-      "target_country": "EU Institutions",
-      "cross_country": true
-    },
-    {
-      "source": "eirinodikeio-kerkyras.gov.gr",
-      "target": "moj.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "apokoronas.gov.gr",
-      "target": "syzefxis.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    },
-    {
-      "source": "yna.gov.gr",
-      "target": "europa.eu",
-      "target_country": "EU Institutions",
-      "cross_country": true
-    },
-    {
-      "source": "metaxa-hospital.gov.gr",
-      "target": "finddoctors.gov.gr",
-      "target_country": "Greece",
-      "cross_country": false
-    }
-  ]
+  "relationship_types": {
+    "editorial_link": 4450,
+    "script_dependency": 1172,
+    "stylesheet_dependency": 981,
+    "image_or_media_dependency": 612,
+    "form_destination": 341,
+    "font_or_preload_dependency": 264
+  },
+  "generated_at": "2026-07-19T00:13:28.601358+00:00"
 }
