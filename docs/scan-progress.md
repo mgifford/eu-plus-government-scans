@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-07-19 18:34 UTC_
+_Generated: 2026-07-19 19:00 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -17,7 +17,7 @@ Coverage is measured as pages scanned out of **83,227** pages available in the s
 | Social Media | 15,175 scanned (14,157 reachable) | 83,227 | <span role="img" aria-label="18.2% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:22px;"></span></span><span class="sm-bar__label">18.2%</span></span> | 10 h |
 | Technology | 1,127 scanned | 83,227 | <span role="img" aria-label="1.4% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:2px;"></span></span><span class="sm-bar__label">1.4%</span></span> | 11 h |
 | Lighthouse | 19,034 scanned | 83,227 | <span role="img" aria-label="22.9% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:27px;"></span></span><span class="sm-bar__label">22.9%</span></span> | 42.3 days |
-| Accessibility Statements | 2,601 scanned | 83,227 | <span role="img" aria-label="3.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:4px;"></span></span><span class="sm-bar__label">3.1%</span></span> | 11 h |
+| Accessibility Statements | 4,122 scanned | 83,227 | <span role="img" aria-label="5.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:6px;"></span></span><span class="sm-bar__label">5.0%</span></span> | 7 h |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by any scan type. **Avg Age** shows the mean number of days (or hours) since each URL in that scan type was last scanned — lower is fresher.
 
@@ -102,6 +102,7 @@ Checks whether each government page links to an accessibility statement as requi
 | Bulgaria | 291 | 259 | 61 | 59 | 24% | Jul 2026 |
 | Croatia | 233 | 231 | 86 | 62 | 37% | Jul 2026 |
 | Czechia | 717 | 660 | 317 | 279 | 48% | Jul 2026 |
+| Denmark | 1,521 | 1,492 | 977 | 956 | 65% | Jul 2026 |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
