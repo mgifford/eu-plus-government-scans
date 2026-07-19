@@ -1,0 +1,162 @@
+{
+  "country": "Hungary",
+  "wikidata_qid": "Q28",
+  "national": [
+    {
+      "label": "Ministry of Interior",
+      "website": "https://kormany.hu/belugyminiszterium",
+      "dissolved": null,
+      "hostname": "kormany.hu",
+      "already_seeded": true
+    },
+    {
+      "label": "Constitutional Court of Hungary",
+      "website": "https://alkotmanybirosag.hu/",
+      "dissolved": null,
+      "hostname": "alkotmanybirosag.hu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Human Capacities",
+      "website": "http://www.kormany.hu/hu/emberi-eroforrasok-miniszteriuma",
+      "dissolved": "2022-05-24T00:00:00Z",
+      "hostname": "kormany.hu",
+      "already_seeded": true
+    },
+    {
+      "label": "Hungarian Central Statistical Office",
+      "website": "http://www.ksh.hu/",
+      "dissolved": null,
+      "hostname": "ksh.hu",
+      "already_seeded": true
+    },
+    {
+      "label": "Government of Hungary",
+      "website": "https://kormany.hu/",
+      "dissolved": null,
+      "hostname": "kormany.hu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry for National Economy",
+      "website": "http://www.kormany.hu/hu/nemzetgazdasagi-miniszterium",
+      "dissolved": "2018-05-18T00:00:00Z",
+      "hostname": "kormany.hu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of National Development",
+      "website": "http://www.kormany.hu/hu/nemzeti-fejlesztesi-miniszterium",
+      "dissolved": "2018-05-01T00:00:00Z",
+      "hostname": "kormany.hu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Finance",
+      "website": "https://kormany.hu/pm",
+      "dissolved": "2010-05-29T00:00:00Z",
+      "hostname": "kormany.hu",
+      "already_seeded": true
+    },
+    {
+      "label": "The Public Procurement Authority of Hungary",
+      "website": "https://www.kozbeszerzes.hu/",
+      "dissolved": null,
+      "hostname": "kozbeszerzes.hu",
+      "already_seeded": true
+    },
+    {
+      "label": "Supreme Court of Hungary",
+      "website": "https://kuria-birosag.hu/hu/splashify-splash",
+      "dissolved": null,
+      "hostname": "kuria-birosag.hu",
+      "already_seeded": false
+    },
+    {
+      "label": "Hungarian National Authority for Data Protection and Freedom of Information",
+      "website": "http://www.naih.hu/",
+      "dissolved": null,
+      "hostname": "naih.hu",
+      "already_seeded": false
+    },
+    {
+      "label": "Cabinet Office of the Prime Minister",
+      "website": "https://kormany.hu/miniszterelnoki-kabinetiroda",
+      "dissolved": "2026-05-13T00:00:00Z",
+      "hostname": "kormany.hu",
+      "already_seeded": true
+    },
+    {
+      "label": "Office of the Prime Minister of Hungary",
+      "website": "http://www.kormany.hu/hu/miniszterelnokseg",
+      "dissolved": null,
+      "hostname": "kormany.hu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Defence",
+      "website": "http://www.kormany.hu/hu/honvedelmi-miniszterium",
+      "dissolved": null,
+      "hostname": "kormany.hu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Agriculture",
+      "website": "https://kormany.hu/agrarminiszterium",
+      "dissolved": null,
+      "hostname": "kormany.hu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Agriculture",
+      "website": "http://www.kormany.hu/hu/foldmuvelesugyi-miniszterium",
+      "dissolved": null,
+      "hostname": "kormany.hu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Justice",
+      "website": "http://www.kormany.hu/hu/igazsagugyi-miniszterium",
+      "dissolved": null,
+      "hostname": "kormany.hu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry for Innovation and Technology",
+      "website": "http://www.kormany.hu/hu/innovacios-es-technologiai-miniszterium",
+      "dissolved": "2022-05-24T00:00:00Z",
+      "hostname": "kormany.hu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Information Technology and Communications",
+      "website": "http://www.ihm.gov.hu/",
+      "dissolved": "2006-06-09T00:00:00Z",
+      "hostname": "ihm.gov.hu",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Technology and Industry",
+      "website": "https://kormany.hu/tim",
+      "dissolved": "2022-12-01T00:00:00Z",
+      "hostname": "kormany.hu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Construction and Transport",
+      "website": "http://kormany.hu/epitesi-es-kozlekedesi-miniszterium",
+      "dissolved": "2026-05-12T00:00:00Z",
+      "hostname": "kormany.hu",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Culture and Innovation",
+      "website": "https://kormany.hu/kulturalis-es-innovacios-miniszterium",
+      "dissolved": "2026-05-13T00:00:00Z",
+      "hostname": "kormany.hu",
+      "already_seeded": true
+    }
+  ],
+  "regional": {},
+  "note": "Candidate list only -- not merged into any TOON seed. Verify liveness (DNS/HTTP) and currency before adding any domain; 'dissolved' being empty does not guarantee an entity is still active, and 'already_seeded' is a hostname-suffix match, not a guarantee of exact equivalence."
+}

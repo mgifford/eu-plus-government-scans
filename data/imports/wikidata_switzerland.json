@@ -1,0 +1,183 @@
+{
+  "country": "Switzerland",
+  "wikidata_qid": "Q39",
+  "national": [
+    {
+      "label": "Swiss Federal Council",
+      "website": "https://www.admin.ch/gov/rm/pagina-iniziala/cussegl-federal.html",
+      "dissolved": null,
+      "hostname": "admin.ch",
+      "already_seeded": true
+    },
+    {
+      "label": "Swiss Federal Council",
+      "website": "https://www.admin.ch/gov/it/pagina-iniziale/consiglio-federale.html",
+      "dissolved": null,
+      "hostname": "admin.ch",
+      "already_seeded": true
+    },
+    {
+      "label": "Swiss Federal Council",
+      "website": "https://www.admin.ch/gov/fr/accueil/conseil-federal.html",
+      "dissolved": null,
+      "hostname": "admin.ch",
+      "already_seeded": true
+    },
+    {
+      "label": "Swiss Federal Council",
+      "website": "https://www.admin.ch/gov/en/start/federal-council.html",
+      "dissolved": null,
+      "hostname": "admin.ch",
+      "already_seeded": true
+    },
+    {
+      "label": "Swiss Federal Council",
+      "website": "https://www.admin.ch/gov/de/start/bundesrat.html",
+      "dissolved": null,
+      "hostname": "admin.ch",
+      "already_seeded": true
+    },
+    {
+      "label": "Council of States of Switzerland",
+      "website": "https://parlament.ch",
+      "dissolved": null,
+      "hostname": "parlament.ch",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Criminal Court of Switzerland",
+      "website": "http://www.bstger.ch/",
+      "dissolved": null,
+      "hostname": "bstger.ch",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Department of Finance",
+      "website": "https://www.efd.admin.ch",
+      "dissolved": null,
+      "hostname": "efd.admin.ch",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Department of Economic Affairs, Education and Research",
+      "website": "https://www.wbf.admin.ch/",
+      "dissolved": null,
+      "hostname": "wbf.admin.ch",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Department of Defence, Civil Protection and Sports",
+      "website": "https://www.vbs.admin.ch/",
+      "dissolved": null,
+      "hostname": "vbs.admin.ch",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Department of Foreign Affairs",
+      "website": "https://www.eda.admin.ch/",
+      "dissolved": null,
+      "hostname": "eda.admin.ch",
+      "already_seeded": true
+    },
+    {
+      "label": "National Council of Switzerland",
+      "website": "https://www.parlament.ch/",
+      "dissolved": null,
+      "hostname": "parlament.ch",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Supreme Court of Switzerland",
+      "website": "https://www.bger.ch/",
+      "dissolved": null,
+      "hostname": "bger.ch",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Department of Justice and Police",
+      "website": "http://www.ejpd.admin.ch/ejpd/en/home.html",
+      "dissolved": null,
+      "hostname": "ejpd.admin.ch",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Department of Environment, Transport, Energy and Communications",
+      "website": "https://www.uvek.admin.ch",
+      "dissolved": null,
+      "hostname": "uvek.admin.ch",
+      "already_seeded": true
+    },
+    {
+      "label": "Financial Market Supervisory Authority",
+      "website": "https://www.finma.ch/de/finma-public/bewilligte-institute-personen-und-produkte/",
+      "dissolved": null,
+      "hostname": "finma.ch",
+      "already_seeded": false
+    },
+    {
+      "label": "Financial Market Supervisory Authority",
+      "website": "http://www.finma.ch",
+      "dissolved": null,
+      "hostname": "finma.ch",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Department of Home Affairs",
+      "website": "https://www.edi.admin.ch/",
+      "dissolved": null,
+      "hostname": "edi.admin.ch",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Data Protection and Information Commissioner",
+      "website": "http://www.pfpdt.ch",
+      "dissolved": null,
+      "hostname": "pfpdt.ch",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Data Protection and Information Commissioner",
+      "website": "http://www.ifpdt.ch",
+      "dissolved": null,
+      "hostname": "ifpdt.ch",
+      "already_seeded": false
+    },
+    {
+      "label": "Federal Data Protection and Information Commissioner",
+      "website": "http://www.edoeb.admin.ch",
+      "dissolved": null,
+      "hostname": "edoeb.admin.ch",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Office for Customs and Border Security",
+      "website": "https://www.bazg.admin.ch/bazg/it/home.html",
+      "dissolved": null,
+      "hostname": "bazg.admin.ch",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Office for Customs and Border Security",
+      "website": "https://www.bazg.admin.ch/bazg/fr/home.html",
+      "dissolved": null,
+      "hostname": "bazg.admin.ch",
+      "already_seeded": true
+    },
+    {
+      "label": "Federal Office for Customs and Border Security",
+      "website": "https://www.bazg.admin.ch/bazg/de/home.html",
+      "dissolved": null,
+      "hostname": "bazg.admin.ch",
+      "already_seeded": true
+    },
+    {
+      "label": "Government Delegation of the Generalitat, Geneva",
+      "website": "http://exteriors.gencat.cat/ca/ambits-dactuacio/afers_exteriors/delegacions_govern/suissa/",
+      "dissolved": null,
+      "hostname": "exteriors.gencat.cat",
+      "already_seeded": false
+    }
+  ],
+  "regional": {},
+  "note": "Candidate list only -- not merged into any TOON seed. Verify liveness (DNS/HTTP) and currency before adding any domain; 'dissolved' being empty does not guarantee an entity is still active, and 'already_seeded' is a hostname-suffix match, not a guarantee of exact equivalence."
+}

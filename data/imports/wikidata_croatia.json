@@ -1,0 +1,253 @@
+{
+  "country": "Croatia",
+  "wikidata_qid": "Q224",
+  "national": [
+    {
+      "label": "International Criminal Tribunal for the former Yugoslavia",
+      "website": "http://www.icty.org/",
+      "dissolved": "2017-12-31T00:00:00Z",
+      "hostname": "icty.org",
+      "already_seeded": false
+    },
+    {
+      "label": "Croatian National Bank",
+      "website": "https://www.hnb.hr",
+      "dissolved": null,
+      "hostname": "hnb.hr",
+      "already_seeded": false
+    },
+    {
+      "label": "Government of Croatia",
+      "website": "https://vlada.gov.hr/",
+      "dissolved": null,
+      "hostname": "vlada.gov.hr",
+      "already_seeded": false
+    },
+    {
+      "label": "Government of Croatia",
+      "website": "https://vlada.gov.hr/en",
+      "dissolved": null,
+      "hostname": "vlada.gov.hr",
+      "already_seeded": false
+    },
+    {
+      "label": "Constitutional Court of Croatia",
+      "website": "https://www.usud.hr/",
+      "dissolved": null,
+      "hostname": "usud.hr",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Foreign and European Affairs",
+      "website": "https://mvep.gov.hr/",
+      "dissolved": null,
+      "hostname": "mvep.gov.hr",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Defence",
+      "website": "http://www.morh.hr",
+      "dissolved": null,
+      "hostname": "morh.hr",
+      "already_seeded": false
+    },
+    {
+      "label": "Security and Intelligence Agency",
+      "website": "https://www.soa.hr/",
+      "dissolved": null,
+      "hostname": "soa.hr",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of the Interior of Croatia",
+      "website": "http://www.mup.hr",
+      "dissolved": null,
+      "hostname": "mup.hr",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Veterans' Affairs",
+      "website": "http://www.branitelji.hr",
+      "dissolved": "2011-01-01T00:00:00Z",
+      "hostname": "branitelji.hr",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Maritime Affairs, Transport and Infrastructure",
+      "website": "http://www.mmpi.hr",
+      "dissolved": null,
+      "hostname": "mmpi.hr",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Health of Croatia",
+      "website": "https://zdravlje.gov.hr/",
+      "dissolved": null,
+      "hostname": "zdravlje.gov.hr",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Culture and Media of the Republic of Croatia",
+      "website": "https://min-kulture.gov.hr/",
+      "dissolved": null,
+      "hostname": "min-kulture.gov.hr",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Tourism and Sports",
+      "website": "http://www.mint.hr/",
+      "dissolved": null,
+      "hostname": "mint.hr",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Economy",
+      "website": "https://mingo.gov.hr/",
+      "dissolved": null,
+      "hostname": "mingo.gov.hr",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Finance of the Republic of Croatia",
+      "website": "http://www.minfin.hr/",
+      "dissolved": null,
+      "hostname": "minfin.hr",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Science and Education",
+      "website": "http://www.public.mzos.hr/",
+      "dissolved": null,
+      "hostname": "public.mzos.hr",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Construction and Spatial Planning",
+      "website": "https://mpgi.gov.hr/",
+      "dissolved": null,
+      "hostname": "mpgi.gov.hr",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Justice, Public Administration and Digital Transformation",
+      "website": "https://mpudt.gov.hr/",
+      "dissolved": null,
+      "hostname": "mpudt.gov.hr",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Agriculture of Croatia",
+      "website": "http://www.mps.hr/",
+      "dissolved": null,
+      "hostname": "mps.hr",
+      "already_seeded": false
+    },
+    {
+      "label": "Croatian Bureau of Statistics",
+      "website": "http://www.dzs.hr/",
+      "dissolved": null,
+      "hostname": "dzs.hr",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Public Administration",
+      "website": "http://www.uprava.hr/",
+      "dissolved": null,
+      "hostname": "uprava.hr",
+      "already_seeded": false
+    },
+    {
+      "label": "Military Security and Intelligence Agency",
+      "website": "http://www.soa.hr",
+      "dissolved": null,
+      "hostname": "soa.hr",
+      "already_seeded": false
+    },
+    {
+      "label": "Law enforcement in Croatia",
+      "website": "http://www.policija.hr/",
+      "dissolved": null,
+      "hostname": "policija.hr",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Environmental and Nature Protection",
+      "website": "https://mzozt.gov.hr/",
+      "dissolved": null,
+      "hostname": "mzozt.gov.hr",
+      "already_seeded": false
+    },
+    {
+      "label": "Central State office for Croats Abroad",
+      "website": "https://hrvatiizvanrh.gov.hr/",
+      "dissolved": null,
+      "hostname": "hrvatiizvanrh.gov.hr",
+      "already_seeded": false
+    },
+    {
+      "label": "High administrative Court of Croatia",
+      "website": "https://sudovi.hr/hr/vusrh",
+      "dissolved": null,
+      "hostname": "sudovi.hr",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Labour and Pension System (Croatia)",
+      "website": "http://www.mrms.hr/",
+      "dissolved": null,
+      "hostname": "mrms.hr",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Regional Development and EU Funds",
+      "website": "http://www.mrrfeu.hr/",
+      "dissolved": null,
+      "hostname": "mrrfeu.hr",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of State Property",
+      "website": "https://imovina.gov.hr",
+      "dissolved": null,
+      "hostname": "imovina.gov.hr",
+      "already_seeded": false
+    },
+    {
+      "label": "Government Delegation of the Generalitat, Zagreb",
+      "website": "https://exteriors.gencat.cat/ca/ambits-dactuacio/afers_exteriors/delegacions_govern/sud-est-europa/index.html",
+      "dissolved": null,
+      "hostname": "exteriors.gencat.cat",
+      "already_seeded": false
+    },
+    {
+      "label": "Croatian Personal Data Protection Agency",
+      "website": "http://www.azop.hr/",
+      "dissolved": null,
+      "hostname": "azop.hr",
+      "already_seeded": true
+    },
+    {
+      "label": "Civil Protection Directorate",
+      "website": "https://civilna-zastita.gov.hr/",
+      "dissolved": null,
+      "hostname": "civilna-zastita.gov.hr",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Veteran Affairs",
+      "website": "https://branitelji.gov.hr/",
+      "dissolved": null,
+      "hostname": "branitelji.gov.hr",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Justice, Administration and Local Government: Prison Administration (HR)",
+      "website": "https://pravosudje.gov.hr",
+      "dissolved": null,
+      "hostname": "pravosudje.gov.hr",
+      "already_seeded": false
+    }
+  ],
+  "regional": {},
+  "note": "Candidate list only -- not merged into any TOON seed. Verify liveness (DNS/HTTP) and currency before adding any domain; 'dissolved' being empty does not guarantee an entity is still active, and 'already_seeded' is a hostname-suffix match, not a guarantee of exact equivalence."
+}

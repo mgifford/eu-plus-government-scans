@@ -1,0 +1,442 @@
+{
+  "country": "United Kingdom (UK)",
+  "wikidata_qid": "Q145",
+  "national": [
+    {
+      "label": "Cabinet Office",
+      "website": "https://www.gov.uk/government/organisations/cabinet-office",
+      "dissolved": null,
+      "hostname": "gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "House of Commons",
+      "website": "https://www.parliament.uk/business/commons/",
+      "dissolved": null,
+      "hostname": "parliament.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "House of Lords",
+      "website": "http://www.parliament.uk/lords/",
+      "dissolved": null,
+      "hostname": "parliament.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "Investors in People",
+      "website": "https://www.investorsinpeople.com/",
+      "dissolved": null,
+      "hostname": "investorsinpeople.com",
+      "already_seeded": false
+    },
+    {
+      "label": "MI5",
+      "website": "https://www.mi5.gov.uk",
+      "dissolved": null,
+      "hostname": "mi5.gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "Northern Ireland Office",
+      "website": "https://www.gov.uk/government/organisations/northern-ireland-office",
+      "dissolved": null,
+      "hostname": "gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "Government Communications Headquarters",
+      "website": "https://www.gchq.gov.uk/",
+      "dissolved": null,
+      "hostname": "gchq.gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "Companies House",
+      "website": "https://www.gov.uk/government/organisations/companies-house",
+      "dissolved": null,
+      "hostname": "gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "Scotland Office",
+      "website": "https://www.gov.uk/government/organisations/scotland-office",
+      "dissolved": null,
+      "hostname": "gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "Wales Office",
+      "website": "https://www.gov.uk/government/organisations/wales-office",
+      "dissolved": null,
+      "hostname": "gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "Foreign, Commonwealth and Development Office",
+      "website": "https://www.gov.uk/government/organisations/foreign-commonwealth-development-office",
+      "dissolved": null,
+      "hostname": "gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "Office for Equality and Opportunity",
+      "website": "https://www.gov.uk/government/organisations/office-for-equality-and-opportunity",
+      "dissolved": null,
+      "hostname": "gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "HM Treasury",
+      "website": "https://gov.uk/hm-treasury",
+      "dissolved": null,
+      "hostname": "gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Housing, Communities, and Local Government",
+      "website": "https://www.gov.uk/government/organisations/ministry-of-housing-communities-local-government",
+      "dissolved": null,
+      "hostname": "gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "Financial Services Authority",
+      "website": "http://www.fsa.gov.uk",
+      "dissolved": "2013-04-01T00:00:00Z",
+      "hostname": "fsa.gov.uk",
+      "already_seeded": false
+    },
+    {
+      "label": "Home Office",
+      "website": "https://www.gov.uk/home-office",
+      "dissolved": null,
+      "hostname": "gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "Civil Aviation Authority",
+      "website": "https://www.caa.co.uk/",
+      "dissolved": null,
+      "hostname": "caa.co.uk",
+      "already_seeded": false
+    },
+    {
+      "label": "Department for Culture, Media and Sport",
+      "website": "https://www.gov.uk/dcms",
+      "dissolved": null,
+      "hostname": "gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "Supreme Court of the United Kingdom",
+      "website": "https://supremecourt.uk/cymraeg.html",
+      "dissolved": null,
+      "hostname": "supremecourt.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "Supreme Court of the United Kingdom",
+      "website": "https://supremecourt.uk/",
+      "dissolved": null,
+      "hostname": "supremecourt.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Defence",
+      "website": "https://gov.uk/mod",
+      "dissolved": null,
+      "hostname": "gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "Department for Work and Pensions",
+      "website": "https://www.gov.uk/government/organisations/department-for-work-pensions",
+      "dissolved": null,
+      "hostname": "gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "Office for National Statistics",
+      "website": "https://cy.ons.gov.uk/",
+      "dissolved": null,
+      "hostname": "cy.ons.gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "Office for National Statistics",
+      "website": "https://www.ons.gov.uk/",
+      "dissolved": null,
+      "hostname": "ons.gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "His Majesty's Coastguard",
+      "website": "https://hmcoastguard.uk",
+      "dissolved": null,
+      "hostname": "hmcoastguard.uk",
+      "already_seeded": false
+    },
+    {
+      "label": "Information Commissioner's Office",
+      "website": "https://ico.org.uk/",
+      "dissolved": null,
+      "hostname": "ico.org.uk",
+      "already_seeded": false
+    },
+    {
+      "label": "United Kingdom Hydrographic Office",
+      "website": "https://gov.uk/ukho",
+      "dissolved": null,
+      "hostname": "gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "Department for Education",
+      "website": "https://www.gov.uk/government/organisations/department-for-education",
+      "dissolved": null,
+      "hostname": "gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "Department for International Development",
+      "website": "https://gov.uk/dfid",
+      "dissolved": "2020-09-02T00:00:00Z",
+      "hostname": "gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "Serious Organised Crime Agency",
+      "website": "http://www.soca.gov.uk",
+      "dissolved": "2013-10-07T00:00:00Z",
+      "hostname": "soca.gov.uk",
+      "already_seeded": false
+    },
+    {
+      "label": "Attorney General's Office",
+      "website": "https://www.gov.uk/government/organisations/attorney-generals-office",
+      "dissolved": null,
+      "hostname": "gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "Department for Transport",
+      "website": "https://www.gov.uk/dft",
+      "dissolved": null,
+      "hostname": "gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Justice",
+      "website": "https://www.gov.uk/government/organisations/ministry-of-justice",
+      "dissolved": null,
+      "hostname": "gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "Department for Environment, Food and Rural Affairs",
+      "website": "http://www.gov.uk/defra",
+      "dissolved": null,
+      "hostname": "gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "Department of Energy and Climate Change",
+      "website": "https://www.gov.uk/decc",
+      "dissolved": "2016-07-14T00:00:00Z",
+      "hostname": "gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "Department of Health and Social Care",
+      "website": "https://www.gov.uk/government/organisations/department-of-health-and-social-care",
+      "dissolved": null,
+      "hostname": "gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "UK Export Finance",
+      "website": "https://www.gov.uk/government/organisations/uk-export-finance",
+      "dissolved": null,
+      "hostname": "gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "Defence Science and Technology Laboratory",
+      "website": "https://www.gov.uk/government/organisations/defence-science-and-technology-laboratory",
+      "dissolved": null,
+      "hostname": "gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "Electoral Commission",
+      "website": "https://www.electoralcommission.org.uk/",
+      "dissolved": null,
+      "hostname": "electoralcommission.org.uk",
+      "already_seeded": false
+    },
+    {
+      "label": "Financial Conduct Authority",
+      "website": "https://www.fca.org.uk/",
+      "dissolved": null,
+      "hostname": "fca.org.uk",
+      "already_seeded": false
+    },
+    {
+      "label": "General Optical Council",
+      "website": "https://www.optical.org/",
+      "dissolved": null,
+      "hostname": "optical.org",
+      "already_seeded": false
+    },
+    {
+      "label": "General Optical Council",
+      "website": "https://optical.org/",
+      "dissolved": null,
+      "hostname": "optical.org",
+      "already_seeded": false
+    },
+    {
+      "label": "Crown Commercial Service",
+      "website": "https://www.crowncommercial.gov.uk/",
+      "dissolved": null,
+      "hostname": "crowncommercial.gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "Health and Care Professions Council",
+      "website": "https://www.hcpc-uk.org/",
+      "dissolved": null,
+      "hostname": "hcpc-uk.org",
+      "already_seeded": false
+    },
+    {
+      "label": "His Majesty's Inspectorate of Constabulary and Fire & Rescue Services",
+      "website": "https://hmicfrs.justiceinspectorates.gov.uk/",
+      "dissolved": null,
+      "hostname": "hmicfrs.justiceinspectorates.gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "Jobcentre Plus",
+      "website": "https://www.gov.uk/contact-jobcentre-plus",
+      "dissolved": null,
+      "hostname": "gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "Military Aviation Authority",
+      "website": "https://www.gov.uk/government/organisations/military-aviation-authority",
+      "dissolved": null,
+      "hostname": "gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "National Cancer Intelligence Network",
+      "website": "http://www.ncin.org.uk/home",
+      "dissolved": null,
+      "hostname": "ncin.org.uk",
+      "already_seeded": false
+    },
+    {
+      "label": "National Fraud Authority",
+      "website": "http://www.gov.uk/nfa/",
+      "dissolved": null,
+      "hostname": "gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "Office of the Leader of the House of Commons",
+      "website": "https://www.gov.uk/government/organisations/the-office-of-the-leader-of-the-house-of-commons",
+      "dissolved": null,
+      "hostname": "gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "Panel on Takeovers and Mergers",
+      "website": "https://www.thetakeoverpanel.org.uk/",
+      "dissolved": null,
+      "hostname": "thetakeoverpanel.org.uk",
+      "already_seeded": false
+    },
+    {
+      "label": "Independent Parliamentary Standards Authority",
+      "website": "http://www.parliamentarystandards.org.uk/",
+      "dissolved": null,
+      "hostname": "parliamentarystandards.org.uk",
+      "already_seeded": false
+    },
+    {
+      "label": "Office of the Leader of the House of Lords",
+      "website": "https://gov.uk/leader-lords",
+      "dissolved": null,
+      "hostname": "gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "Government Statistical Service",
+      "website": "https://gss.civilservice.gov.uk/",
+      "dissolved": null,
+      "hostname": "gss.civilservice.gov.uk",
+      "already_seeded": false
+    },
+    {
+      "label": "Child Maintenance Group",
+      "website": "https://www.gov.uk/child-maintenance/overview",
+      "dissolved": null,
+      "hostname": "gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "National Cyber Security Centre",
+      "website": "https://www.ncsc.gov.uk/",
+      "dissolved": null,
+      "hostname": "ncsc.gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "Infrastructure and Projects Authority",
+      "website": "https://www.gov.uk/government/organisations/infrastructure-and-projects-authority",
+      "dissolved": "2025-04-01T00:00:00Z",
+      "hostname": "gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "Department for Exiting the European Union",
+      "website": "https://www.gov.uk/government/organisations/department-for-exiting-the-european-union",
+      "dissolved": "2020-01-31T00:00:00Z",
+      "hostname": "gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "Department for Business, Energy and Industrial Strategy",
+      "website": "https://www.gov.uk/government/organisations/department-for-business-energy-and-industrial-strategy",
+      "dissolved": "2023-02-07T00:00:00Z",
+      "hostname": "gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "Department for International Trade",
+      "website": "https://www.gov.uk/government/organisations/department-for-international-trade",
+      "dissolved": "2023-02-07T00:00:00Z",
+      "hostname": "gov.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "Sunak ministry",
+      "website": "https://members.parliament.uk/government/cabinet",
+      "dissolved": "2024-07-05T00:00:00Z",
+      "hostname": "members.parliament.uk",
+      "already_seeded": true
+    },
+    {
+      "label": "Department for Business and Trade",
+      "website": "https://www.gov.uk/government/organisations/department-for-business-and-trade",
+      "dissolved": null,
+      "hostname": "gov.uk",
+      "already_seeded": true
+    }
+  ],
+  "regional": {},
+  "note": "Candidate list only -- not merged into any TOON seed. Verify liveness (DNS/HTTP) and currency before adding any domain; 'dissolved' being empty does not guarantee an entity is still active, and 'already_seeded' is a hostname-suffix match, not a guarantee of exact equivalence."
+}

@@ -1,0 +1,239 @@
+{
+  "country": "Iceland",
+  "wikidata_qid": "Q189",
+  "national": [
+    {
+      "label": "Supreme Court of Iceland",
+      "website": "https://www.haestirettur.is/",
+      "dissolved": null,
+      "hostname": "haestirettur.is",
+      "already_seeded": false
+    },
+    {
+      "label": "Supreme Court of Iceland",
+      "website": "https://www.haestirettur.is/en/",
+      "dissolved": null,
+      "hostname": "haestirettur.is",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Justice and Human Rights",
+      "website": "http://eng.domsmalaraduneyti.is/",
+      "dissolved": "2017-05-01T00:00:00Z",
+      "hostname": "eng.domsmalaraduneyti.is",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Industry, Energy and Tourism",
+      "website": "http://eng.idnadarraduneyti.is",
+      "dissolved": "2021-01-01T00:00:00Z",
+      "hostname": "eng.idnadarraduneyti.is",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Health",
+      "website": "https://www.government.is/ministries/ministry-of-health/",
+      "dissolved": null,
+      "hostname": "government.is",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Welfare",
+      "website": "http://eng.felagsmalaraduneyti.is/",
+      "dissolved": "2019-01-01T00:00:00Z",
+      "hostname": "eng.felagsmalaraduneyti.is",
+      "already_seeded": false
+    },
+    {
+      "label": "Icelandic Naming Committee",
+      "website": "https://island.is/en/search-in-icelandic-names",
+      "dissolved": null,
+      "hostname": "island.is",
+      "already_seeded": true
+    },
+    {
+      "label": "Icelandic Naming Committee",
+      "website": "https://island.is/leit-i-mannanafnaskra",
+      "dissolved": null,
+      "hostname": "island.is",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Communications",
+      "website": "http://eng.samgonguraduneyti.is/",
+      "dissolved": "2011-01-01T00:00:00Z",
+      "hostname": "eng.samgonguraduneyti.is",
+      "already_seeded": false
+    },
+    {
+      "label": "Statistics Iceland",
+      "website": "http://www.statice.is/",
+      "dissolved": null,
+      "hostname": "statice.is",
+      "already_seeded": false
+    },
+    {
+      "label": "Statistics Iceland",
+      "website": "https://hagstofa.is/",
+      "dissolved": null,
+      "hostname": "hagstofa.is",
+      "already_seeded": true
+    },
+    {
+      "label": "Icelandic government agency",
+      "website": "https://www.government.is/ministries/agencies/",
+      "dissolved": null,
+      "hostname": "government.is",
+      "already_seeded": false
+    },
+    {
+      "label": "Directorate of Education",
+      "website": "https://mms.is/",
+      "dissolved": null,
+      "hostname": "mms.is",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Foreign Affairs of Iceland",
+      "website": "https://www.government.is/ministries/ministry-for-foreign-affairs/",
+      "dissolved": null,
+      "hostname": "government.is",
+      "already_seeded": false
+    },
+    {
+      "label": "Directorate of Customs",
+      "website": "http://customs.is/",
+      "dissolved": null,
+      "hostname": "customs.is",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Industries and Innovation",
+      "website": "https://eng.atvinnuvegaraduneyti.is/",
+      "dissolved": "2021-01-01T00:00:00Z",
+      "hostname": "eng.atvinnuvegaraduneyti.is",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Finance and Economic Affairs",
+      "website": "https://www.government.is/ministries/ministry-of-finance-and-economic-affairs/",
+      "dissolved": null,
+      "hostname": "government.is",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Justice",
+      "website": "https://www.government.is/ministries/ministry-of-justice/",
+      "dissolved": null,
+      "hostname": "government.is",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Culture and Business Affairs",
+      "website": "https://www.government.is/ministries/ministry-of-culture-and-business-affairs/",
+      "dissolved": null,
+      "hostname": "government.is",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Higher Education, Science and Innovation",
+      "website": "https://www.government.is/ministries/ministry-of-higher-education-science-and-innovation/",
+      "dissolved": null,
+      "hostname": "government.is",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Food, Agriculture and Fisheries",
+      "website": "https://www.government.is/ministries/ministry-of-food-agriculture-and-fisheries/",
+      "dissolved": null,
+      "hostname": "government.is",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Infrastructure",
+      "website": "https://www.government.is/ministries/ministry-of-infrastructure/",
+      "dissolved": null,
+      "hostname": "government.is",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Education and Children",
+      "website": "https://www.government.is/ministries/ministry-of-education-and-children/",
+      "dissolved": null,
+      "hostname": "government.is",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Social Affairs and Labour",
+      "website": "https://www.government.is/ministries/ministry-of-social-affairs-and-labour/",
+      "dissolved": null,
+      "hostname": "government.is",
+      "already_seeded": false
+    },
+    {
+      "label": "Prime Minister’s Office",
+      "website": "https://www.stjornarradid.is/raduneyti/forsaetisraduneytid/",
+      "dissolved": null,
+      "hostname": "stjornarradid.is",
+      "already_seeded": true
+    },
+    {
+      "label": "Reykjavík District Court (Iceland)",
+      "website": "https://www.heradsdomstolar.is/heradsdomstolar/reykjavik/um-domstolinn/",
+      "dissolved": null,
+      "hostname": "heradsdomstolar.is",
+      "already_seeded": false
+    },
+    {
+      "label": "Vesturlands District Court (Iceland)",
+      "website": "https://www.heradsdomstolar.is/heradsdomstolar/vesturland/yfirlit/",
+      "dissolved": null,
+      "hostname": "heradsdomstolar.is",
+      "already_seeded": false
+    },
+    {
+      "label": "Vestfjarða District Court (Iceland)",
+      "website": "https://www.heradsdomstolar.is/heradsdomstolar/vestfirdir/yfirlit/",
+      "dissolved": null,
+      "hostname": "heradsdomstolar.is",
+      "already_seeded": false
+    },
+    {
+      "label": "Norðurlands vestra District Court (Iceland)",
+      "website": "https://www.heradsdomstolar.is/heradsdomstolar/nordurland-vestra/yfirlit/",
+      "dissolved": null,
+      "hostname": "heradsdomstolar.is",
+      "already_seeded": false
+    },
+    {
+      "label": "Norðurlands eystra District Court (Iceland)",
+      "website": "https://www.heradsdomstolar.is/heradsdomstolar/nordurland-eystra/yfirlit/",
+      "dissolved": null,
+      "hostname": "heradsdomstolar.is",
+      "already_seeded": false
+    },
+    {
+      "label": "Austurlands District Court (Iceland)",
+      "website": "https://www.heradsdomstolar.is/heradsdomstolar/austurland/yfirlit/",
+      "dissolved": null,
+      "hostname": "heradsdomstolar.is",
+      "already_seeded": false
+    },
+    {
+      "label": "Suðurlands District Court (Iceland)",
+      "website": "https://www.heradsdomstolar.is/heradsdomstolar/sudurland/yfirlit/",
+      "dissolved": null,
+      "hostname": "heradsdomstolar.is",
+      "already_seeded": false
+    },
+    {
+      "label": "Reykjaness District Court (Iceland)",
+      "website": "https://www.heradsdomstolar.is/heradsdomstolar/reykjanes/yfirlit/",
+      "dissolved": null,
+      "hostname": "heradsdomstolar.is",
+      "already_seeded": false
+    }
+  ],
+  "regional": {},
+  "note": "Candidate list only -- not merged into any TOON seed. Verify liveness (DNS/HTTP) and currency before adding any domain; 'dissolved' being empty does not guarantee an entity is still active, and 'already_seeded' is a hostname-suffix match, not a guarantee of exact equivalence."
+}

@@ -1,0 +1,183 @@
+{
+  "country": "Malta",
+  "wikidata_qid": "Q233",
+  "national": [
+    {
+      "label": "Ministry of Foreign Affairs of the Republic of Malta",
+      "website": "http://www.foreign.gov.mt/",
+      "dissolved": null,
+      "hostname": "foreign.gov.mt",
+      "already_seeded": true
+    },
+    {
+      "label": "Malta Financial Service Authority",
+      "website": "https://www.mfsa.mt/",
+      "dissolved": null,
+      "hostname": "mfsa.mt",
+      "already_seeded": false
+    },
+    {
+      "label": "Malta Financial Service Authority",
+      "website": "http://www.mfsa.com.mt",
+      "dissolved": null,
+      "hostname": "mfsa.com.mt",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry for Finance",
+      "website": "http://mfin.gov.mt/en/Pages/default.aspx",
+      "dissolved": null,
+      "hostname": "mfin.gov.mt",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry for Health",
+      "website": "https://health.gov.mt/",
+      "dissolved": null,
+      "hostname": "health.gov.mt",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry for Health",
+      "website": "https://sahha.gov.mt/",
+      "dissolved": null,
+      "hostname": "sahha.gov.mt",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry for Tourism",
+      "website": "https://tourism.gov.mt/",
+      "dissolved": null,
+      "hostname": "tourism.gov.mt",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry for Transport, Infrastructure and Capital Projects",
+      "website": "https://mtip.gov.mt",
+      "dissolved": null,
+      "hostname": "mtip.gov.mt",
+      "already_seeded": false
+    },
+    {
+      "label": "National Statistics Office",
+      "website": "http://www.nso.gov.mt/",
+      "dissolved": null,
+      "hostname": "nso.gov.mt",
+      "already_seeded": true
+    },
+    {
+      "label": "Office of the Information and Data Protection Commissioner",
+      "website": "https://idpc.org.mt",
+      "dissolved": null,
+      "hostname": "idpc.org.mt",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry for Gozo",
+      "website": "https://gozo.gov.mt/",
+      "dissolved": null,
+      "hostname": "gozo.gov.mt",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry for the economy, european funds and lands",
+      "website": "https://economy.gov.mt/",
+      "dissolved": null,
+      "hostname": "economy.gov.mt",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry for the National Heritage, The Arts and Local Government",
+      "website": "https://culture.gov.mt/",
+      "dissolved": null,
+      "hostname": "culture.gov.mt",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry for Foreign and European Affairs and Trade",
+      "website": "https://foreign.gov.mt/",
+      "dissolved": null,
+      "hostname": "foreign.gov.mt",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry for inclusion, voluntary organisations and consumer rights",
+      "website": "https://inclusion.gov.mt/",
+      "dissolved": null,
+      "hostname": "inclusion.gov.mt",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry for Social Policy and Children's Rights",
+      "website": "https://family.gov.mt/",
+      "dissolved": null,
+      "hostname": "family.gov.mt",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry for home affairs, security, reforms and equality",
+      "website": "https://homeaffairs.gov.mt/",
+      "dissolved": null,
+      "hostname": "homeaffairs.gov.mt",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry for Agriculture, Fisheries and Animal Rights",
+      "website": "https://agriculture.gov.mt/",
+      "dissolved": null,
+      "hostname": "agriculture.gov.mt",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry for Social and Affordable Accommodation",
+      "website": "https://accommodation.gov.mt/",
+      "dissolved": null,
+      "hostname": "accommodation.gov.mt",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry For The Environment, Energy And Enterprise",
+      "website": "https://sustainability.gov.mt/",
+      "dissolved": null,
+      "hostname": "sustainability.gov.mt",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry For Finance And Employment",
+      "website": "https://finance.gov.mt/",
+      "dissolved": null,
+      "hostname": "finance.gov.mt",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry For Education, Sport, Youth, Research And Innovation",
+      "website": "https://education.gov.mt/",
+      "dissolved": null,
+      "hostname": "education.gov.mt",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry For Public Works And Planning",
+      "website": "https://publicworks.gov.mt/",
+      "dissolved": null,
+      "hostname": "publicworks.gov.mt",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry For Justice",
+      "website": "https://justice.gov.mt/",
+      "dissolved": null,
+      "hostname": "justice.gov.mt",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry For Active Ageing",
+      "website": "https://activeageing.gov.mt/",
+      "dissolved": null,
+      "hostname": "activeageing.gov.mt",
+      "already_seeded": true
+    }
+  ],
+  "regional": {},
+  "note": "Candidate list only -- not merged into any TOON seed. Verify liveness (DNS/HTTP) and currency before adding any domain; 'dissolved' being empty does not guarantee an entity is still active, and 'already_seeded' is a hostname-suffix match, not a guarantee of exact equivalence."
+}

@@ -1,0 +1,225 @@
+{
+  "country": "Republic of Cyprus",
+  "wikidata_qid": "Q229",
+  "national": [
+    {
+      "label": "House of Representatives",
+      "website": "https://www.parliament.cy/",
+      "dissolved": null,
+      "hostname": "parliament.cy",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Foreign Affairs of Cyprus",
+      "website": "https://www.gov.cy/mfa/",
+      "dissolved": null,
+      "hostname": "gov.cy",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Transport, Communications and Works",
+      "website": "https://www.gov.cy/mtcw/",
+      "dissolved": null,
+      "hostname": "gov.cy",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Education, Sports and Youth",
+      "website": "http://www.moec.gov.cy/",
+      "dissolved": null,
+      "hostname": "moec.gov.cy",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Education, Sports and Youth",
+      "website": "http://www.moec.gov.cy/en/",
+      "dissolved": null,
+      "hostname": "moec.gov.cy",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Justice and Public Order",
+      "website": "https://www.gov.cy/mjpo/",
+      "dissolved": null,
+      "hostname": "gov.cy",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Defense",
+      "website": "https://www.gov.cy/mod/",
+      "dissolved": null,
+      "hostname": "gov.cy",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of the Interior",
+      "website": "https://www.gov.cy/moi/",
+      "dissolved": null,
+      "hostname": "gov.cy",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Health of Cyprus",
+      "website": "https://www.gov.cy/moh/",
+      "dissolved": null,
+      "hostname": "gov.cy",
+      "already_seeded": false
+    },
+    {
+      "label": "Council of Ministers of Cyprus",
+      "website": "https://www.cm.gov.cy/",
+      "dissolved": null,
+      "hostname": "cm.gov.cy",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Labour, Welfare and Social Insurance",
+      "website": "https://www.mlsi.gov.cy/",
+      "dissolved": null,
+      "hostname": "mlsi.gov.cy",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Energy, Commerce and Industry",
+      "website": "https://www.gov.cy/meci/",
+      "dissolved": null,
+      "hostname": "gov.cy",
+      "already_seeded": false
+    },
+    {
+      "label": "The Supreme Court of Cyprus",
+      "website": "https://www.supremecourt.gov.cy/",
+      "dissolved": null,
+      "hostname": "supremecourt.gov.cy",
+      "already_seeded": false
+    },
+    {
+      "label": "CYSTAT",
+      "website": "http://www.cystat.gov.cy/",
+      "dissolved": null,
+      "hostname": "cystat.gov.cy",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Agriculture, Rural Development and Environment",
+      "website": "https://www.gov.cy/moa/",
+      "dissolved": null,
+      "hostname": "gov.cy",
+      "already_seeded": false
+    },
+    {
+      "label": "Government Delegation of the Generalitat, Zagreb",
+      "website": "https://exteriors.gencat.cat/ca/ambits-dactuacio/afers_exteriors/delegacions_govern/sud-est-europa/index.html",
+      "dissolved": null,
+      "hostname": "exteriors.gencat.cat",
+      "already_seeded": false
+    },
+    {
+      "label": "Commissioner for Personal Data Protection",
+      "website": "https://www.dataprotection.gov.cy/",
+      "dissolved": null,
+      "hostname": "dataprotection.gov.cy",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Finance",
+      "website": "https://www.gov.cy/mof/",
+      "dissolved": null,
+      "hostname": "gov.cy",
+      "already_seeded": false
+    },
+    {
+      "label": "Deputy Ministry of Shipping (Cyprus)",
+      "website": "https://www.dms.gov.cy",
+      "dissolved": null,
+      "hostname": "dms.gov.cy",
+      "already_seeded": false
+    },
+    {
+      "label": "Deputy Ministry of Shipping (Cyprus)",
+      "website": "https://www.gov.cy/dms/",
+      "dissolved": null,
+      "hostname": "gov.cy",
+      "already_seeded": false
+    },
+    {
+      "label": "Deputy Ministry Of Tourism (Cyprus)",
+      "website": "https://www.gov.cy/tourism/",
+      "dissolved": null,
+      "hostname": "gov.cy",
+      "already_seeded": false
+    },
+    {
+      "label": "Deputy Ministry of Research, Innovation and Digital Policy (Cyprus)",
+      "website": "https://www.dmrid.gov.cy/",
+      "dissolved": null,
+      "hostname": "dmrid.gov.cy",
+      "already_seeded": false
+    },
+    {
+      "label": "Deputy Ministry of Research, Innovation and Digital Policy (Cyprus)",
+      "website": "https://www.dmrid.gov.cy/dmrid/research.nsf/home_en/home_en?opendocument",
+      "dissolved": null,
+      "hostname": "dmrid.gov.cy",
+      "already_seeded": false
+    },
+    {
+      "label": "Deputy Ministry of Research, Innovation and Digital Policy (Cyprus)",
+      "website": "https://www.gov.cy/dmrid/",
+      "dissolved": null,
+      "hostname": "gov.cy",
+      "already_seeded": false
+    },
+    {
+      "label": "Presidency of Ministry",
+      "website": "https://www.presidency.gov.cy/cypresidency/cypresidency.nsf/home/home?openform",
+      "dissolved": null,
+      "hostname": "presidency.gov.cy",
+      "already_seeded": false
+    },
+    {
+      "label": "The Law Office of Cyprus",
+      "website": "https://www.law.gov.cy/",
+      "dissolved": null,
+      "hostname": "law.gov.cy",
+      "already_seeded": false
+    },
+    {
+      "label": "Deputy Ministry of Social Welfare (Cyprus)",
+      "website": "http://www.dmsw.gov.cy",
+      "dissolved": null,
+      "hostname": "dmsw.gov.cy",
+      "already_seeded": false
+    },
+    {
+      "label": "Deputy Ministry of Social Welfare (Cyprus)",
+      "website": "https://www.gov.cy/dmsw/",
+      "dissolved": null,
+      "hostname": "gov.cy",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Labour and Social Insurance of Cyprus",
+      "website": "https://www.gov.cy/mlsi/",
+      "dissolved": null,
+      "hostname": "gov.cy",
+      "already_seeded": false
+    },
+    {
+      "label": "Deputy Ministry of Culture of Cyprus",
+      "website": "https://www.gov.cy/culture",
+      "dissolved": null,
+      "hostname": "gov.cy",
+      "already_seeded": false
+    },
+    {
+      "label": "Deputy Ministry of Culture of Cyprus",
+      "website": "http://www.wikidata.org/.well-known/genid/60eedd5d8f3a3c9c0f9d627bb7859c46",
+      "dissolved": null,
+      "hostname": "wikidata.org",
+      "already_seeded": false
+    }
+  ],
+  "regional": {},
+  "note": "Candidate list only -- not merged into any TOON seed. Verify liveness (DNS/HTTP) and currency before adding any domain; 'dissolved' being empty does not guarantee an entity is still active, and 'already_seeded' is a hostname-suffix match, not a guarantee of exact equivalence."
+}

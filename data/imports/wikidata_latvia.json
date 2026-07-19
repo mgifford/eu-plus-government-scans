@@ -1,0 +1,155 @@
+{
+  "country": "Latvia",
+  "wikidata_qid": "Q211",
+  "national": [
+    {
+      "label": "Ministry of Foreign Affairs",
+      "website": "http://www.mfa.gov.lv/",
+      "dissolved": null,
+      "hostname": "mfa.gov.lv",
+      "already_seeded": true
+    },
+    {
+      "label": "Latvian Civil Aviation Agency",
+      "website": "https://www.caa.gov.lv/lv",
+      "dissolved": null,
+      "hostname": "caa.gov.lv",
+      "already_seeded": true
+    },
+    {
+      "label": "Constitutional Court of the Republic of Latvia",
+      "website": "http://www.satv.tiesa.gov.lv",
+      "dissolved": null,
+      "hostname": "satv.tiesa.gov.lv",
+      "already_seeded": true
+    },
+    {
+      "label": "Central Election Commission",
+      "website": "https://www.cvk.lv/",
+      "dissolved": null,
+      "hostname": "cvk.lv",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Defence of Latvia",
+      "website": "https://www.mod.gov.lv/",
+      "dissolved": null,
+      "hostname": "mod.gov.lv",
+      "already_seeded": true
+    },
+    {
+      "label": "Supreme Court of Latvia",
+      "website": "http://at.gov.lv/",
+      "dissolved": null,
+      "hostname": "at.gov.lv",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Finance",
+      "website": "https://www.fm.gov.lv/",
+      "dissolved": null,
+      "hostname": "fm.gov.lv",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Justice",
+      "website": "https://www.tm.gov.lv/",
+      "dissolved": null,
+      "hostname": "tm.gov.lv",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Economics",
+      "website": "https://www.em.gov.lv/",
+      "dissolved": null,
+      "hostname": "em.gov.lv",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Transport",
+      "website": "http://sam.gov.lv/",
+      "dissolved": null,
+      "hostname": "sam.gov.lv",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Agriculture",
+      "website": "https://www.zm.gov.lv/",
+      "dissolved": null,
+      "hostname": "zm.gov.lv",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Education and Science",
+      "website": "https://www.izm.gov.lv/",
+      "dissolved": null,
+      "hostname": "izm.gov.lv",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Culture of the Republic of Latvia",
+      "website": "http://www.km.gov.lv/en/",
+      "dissolved": null,
+      "hostname": "km.gov.lv",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Culture of the Republic of Latvia",
+      "website": "http://www.km.gov.lv/lv/",
+      "dissolved": null,
+      "hostname": "km.gov.lv",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Welfare",
+      "website": "https://www.lm.gov.lv/",
+      "dissolved": null,
+      "hostname": "lm.gov.lv",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Health",
+      "website": "https://www.vm.gov.lv/",
+      "dissolved": null,
+      "hostname": "vm.gov.lv",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Environmental Protection and Regional Development",
+      "website": "https://www.varam.gov.lv/",
+      "dissolved": null,
+      "hostname": "varam.gov.lv",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of the Interior of the Republic of Latvia",
+      "website": "https://www.iem.gov.lv/",
+      "dissolved": null,
+      "hostname": "iem.gov.lv",
+      "already_seeded": true
+    },
+    {
+      "label": "Central Statistical Bureau of Latvia",
+      "website": "http://www.csb.gov.lv",
+      "dissolved": null,
+      "hostname": "csb.gov.lv",
+      "already_seeded": true
+    },
+    {
+      "label": "Data State Inspectorate",
+      "website": "http://www.dvi.gov.lv/",
+      "dissolved": null,
+      "hostname": "dvi.gov.lv",
+      "already_seeded": true
+    },
+    {
+      "label": "Public Utilities Commission",
+      "website": "http://www.sprk.gov.lv",
+      "dissolved": null,
+      "hostname": "sprk.gov.lv",
+      "already_seeded": true
+    }
+  ],
+  "regional": {},
+  "note": "Candidate list only -- not merged into any TOON seed. Verify liveness (DNS/HTTP) and currency before adding any domain; 'dissolved' being empty does not guarantee an entity is still active, and 'already_seeded' is a hostname-suffix match, not a guarantee of exact equivalence."
+}

@@ -1,0 +1,337 @@
+{
+  "country": "France",
+  "wikidata_qid": "Q142",
+  "national": [
+    {
+      "label": "Ministry of the Armed Forces",
+      "website": "https://www.defense.gouv.fr",
+      "dissolved": null,
+      "hostname": "defense.gouv.fr",
+      "already_seeded": true
+    },
+    {
+      "label": "National Institute of Statistics and Economic Studies",
+      "website": "https://www.insee.fr/",
+      "dissolved": null,
+      "hostname": "insee.fr",
+      "already_seeded": true
+    },
+    {
+      "label": "First Ayrault government",
+      "website": "http://www.gouvernement.fr/",
+      "dissolved": "2014-03-09T00:00:00Z",
+      "hostname": "gouvernement.fr",
+      "already_seeded": false
+    },
+    {
+      "label": "National Assembly",
+      "website": "https://www.assemblee-nationale.fr/",
+      "dissolved": null,
+      "hostname": "assemblee-nationale.fr",
+      "already_seeded": true
+    },
+    {
+      "label": "Senate",
+      "website": "https://www.senat.fr/",
+      "dissolved": null,
+      "hostname": "senat.fr",
+      "already_seeded": true
+    },
+    {
+      "label": "Directorate-General for External Security",
+      "website": "http://www.defense.gouv.fr/dgse",
+      "dissolved": null,
+      "hostname": "defense.gouv.fr",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Culture of France",
+      "website": "https://www.culture.gouv.fr/",
+      "dissolved": null,
+      "hostname": "culture.gouv.fr",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Justice of France",
+      "website": "https://www.justice.gouv.fr/",
+      "dissolved": null,
+      "hostname": "justice.gouv.fr",
+      "already_seeded": true
+    },
+    {
+      "label": "Conseil d'État",
+      "website": "http://www.conseil-etat.fr",
+      "dissolved": null,
+      "hostname": "conseil-etat.fr",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry for Europe and Foreign Affairs",
+      "website": "https://www.diplomatie.gouv.fr/ru/",
+      "dissolved": null,
+      "hostname": "diplomatie.gouv.fr",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry for Europe and Foreign Affairs",
+      "website": "https://www.diplomatie.gouv.fr/es/",
+      "dissolved": null,
+      "hostname": "diplomatie.gouv.fr",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry for Europe and Foreign Affairs",
+      "website": "https://www.diplomatie.gouv.fr/en/",
+      "dissolved": null,
+      "hostname": "diplomatie.gouv.fr",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry for Europe and Foreign Affairs",
+      "website": "https://www.diplomatie.gouv.fr/de/",
+      "dissolved": null,
+      "hostname": "diplomatie.gouv.fr",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry for Europe and Foreign Affairs",
+      "website": "https://www.diplomatie.gouv.fr/ar/",
+      "dissolved": null,
+      "hostname": "diplomatie.gouv.fr",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry for Europe and Foreign Affairs",
+      "website": "https://www.diplomatie.gouv.fr",
+      "dissolved": null,
+      "hostname": "diplomatie.gouv.fr",
+      "already_seeded": true
+    },
+    {
+      "label": "National Commission on Informatics and Liberty",
+      "website": "https://www.cnil.fr/",
+      "dissolved": null,
+      "hostname": "cnil.fr",
+      "already_seeded": true
+    },
+    {
+      "label": "Constitutional Council of France",
+      "website": "http://www.conseil-constitutionnel.fr/",
+      "dissolved": null,
+      "hostname": "conseil-constitutionnel.fr",
+      "already_seeded": true
+    },
+    {
+      "label": "Court of Audit",
+      "website": "https://www.ccomptes.fr/",
+      "dissolved": null,
+      "hostname": "ccomptes.fr",
+      "already_seeded": false
+    },
+    {
+      "label": "Court of Cassation",
+      "website": "http://www.courdecassation.fr/",
+      "dissolved": null,
+      "hostname": "courdecassation.fr",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Economics, Finance and Industrial and Digital Sovereignty",
+      "website": "https://www.economie.gouv.fr/",
+      "dissolved": null,
+      "hostname": "economie.gouv.fr",
+      "already_seeded": true
+    },
+    {
+      "label": "National Gendarmerie",
+      "website": "http://www.gendarmerie.interieur.gouv.fr/",
+      "dissolved": null,
+      "hostname": "gendarmerie.interieur.gouv.fr",
+      "already_seeded": true
+    },
+    {
+      "label": "National Gendarmerie",
+      "website": "http://www.defense.gouv.fr/gendarmerie",
+      "dissolved": null,
+      "hostname": "defense.gouv.fr",
+      "already_seeded": true
+    },
+    {
+      "label": "Government of the French Republic",
+      "website": "https://www.info.gouv.fr",
+      "dissolved": null,
+      "hostname": "info.gouv.fr",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of the Interior",
+      "website": "https://www.interieur.gouv.fr/",
+      "dissolved": null,
+      "hostname": "interieur.gouv.fr",
+      "already_seeded": true
+    },
+    {
+      "label": "French Ministry of education",
+      "website": "https://www.education.gouv.fr/",
+      "dissolved": null,
+      "hostname": "education.gouv.fr",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of the Ecological Transition",
+      "website": "https://www.ecologie.gouv.fr/",
+      "dissolved": null,
+      "hostname": "ecologie.gouv.fr",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Higher Education and Research",
+      "website": "https://www.enseignementsup-recherche.gouv.fr/",
+      "dissolved": null,
+      "hostname": "enseignementsup-recherche.gouv.fr",
+      "already_seeded": true
+    },
+    {
+      "label": "Council of Ministers",
+      "website": "http://www.gouvernement.fr/comptes-rendus-du-conseil-des-ministres",
+      "dissolved": null,
+      "hostname": "gouvernement.fr",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Industry",
+      "website": "http://www.redressement-productif.gouv.fr/",
+      "dissolved": null,
+      "hostname": "redressement-productif.gouv.fr",
+      "already_seeded": false
+    },
+    {
+      "label": "ministère de la Coopération",
+      "website": "http://www.cooperation.gouv.fr/",
+      "dissolved": "1998-12-31T00:00:00Z",
+      "hostname": "cooperation.gouv.fr",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Public Sector Transformation and the Civil Service",
+      "website": "https://www.fonction-publique.gouv.fr/",
+      "dissolved": null,
+      "hostname": "fonction-publique.gouv.fr",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of City Affairs",
+      "website": "http://www.ville.gouv.fr/",
+      "dissolved": null,
+      "hostname": "ville.gouv.fr",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of People with Disabilities and the Fight against Exclusion",
+      "website": "http://www.social-sante.gouv.fr/espaces,770/handicap,775/",
+      "dissolved": null,
+      "hostname": "social-sante.gouv.fr",
+      "already_seeded": true
+    },
+    {
+      "label": "Interregional Tribunal for Health and Social Services Rates",
+      "website": "http://titss-cntss.fr/",
+      "dissolved": "2024-12-31T00:00:00Z",
+      "hostname": "titss-cntss.fr",
+      "already_seeded": false
+    },
+    {
+      "label": "French Ministry of Immigration, Integration, National Identity and Codevelopment",
+      "website": "https://www.immigration.interieur.gouv.fr",
+      "dissolved": "2010-01-01T00:00:00Z",
+      "hostname": "immigration.interieur.gouv.fr",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Commerce",
+      "website": "https://www.economie.gouv.fr/",
+      "dissolved": null,
+      "hostname": "economie.gouv.fr",
+      "already_seeded": true
+    },
+    {
+      "label": "First Valls government",
+      "website": "http://www.gouvernement.fr/",
+      "dissolved": "2014-08-25T00:00:00Z",
+      "hostname": "gouvernement.fr",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Health and Sport of France",
+      "website": "http://www.sante-sports.gouv.fr",
+      "dissolved": null,
+      "hostname": "sante-sports.gouv.fr",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of the Family of France",
+      "website": "http://www.familles-enfance-droitsdesfemmes.gouv.fr/",
+      "dissolved": null,
+      "hostname": "familles-enfance-droitsdesfemmes.gouv.fr",
+      "already_seeded": false
+    },
+    {
+      "label": "Cazeneuve government",
+      "website": "http://www.gouvernement.fr/",
+      "dissolved": "2017-05-15T00:00:00Z",
+      "hostname": "gouvernement.fr",
+      "already_seeded": false
+    },
+    {
+      "label": "CEA-List: Laboratory for Integration of Systems and Technology",
+      "website": "https://list.cea.fr",
+      "dissolved": null,
+      "hostname": "list.cea.fr",
+      "already_seeded": false
+    },
+    {
+      "label": "Second Philippe Government",
+      "website": "https://www.gouvernement.fr/composition-du-gouvernement",
+      "dissolved": "2020-07-03T00:00:00Z",
+      "hostname": "gouvernement.fr",
+      "already_seeded": false
+    },
+    {
+      "label": "National Court for Health and Social Services Rates",
+      "website": "http://titss-cntss.fr/",
+      "dissolved": null,
+      "hostname": "titss-cntss.fr",
+      "already_seeded": false
+    },
+    {
+      "label": "Pharos",
+      "website": "https://www.internet-signalement.gouv.fr/",
+      "dissolved": null,
+      "hostname": "internet-signalement.gouv.fr",
+      "already_seeded": true
+    },
+    {
+      "label": "Castex government",
+      "website": "https://www.gouvernement.fr/composition-du-gouvernement",
+      "dissolved": "2022-05-16T00:00:00Z",
+      "hostname": "gouvernement.fr",
+      "already_seeded": false
+    },
+    {
+      "label": "Civil defense of France",
+      "website": "https://www.securite-civile.interieur.gouv.fr/",
+      "dissolved": null,
+      "hostname": "securite-civile.interieur.gouv.fr",
+      "already_seeded": true
+    },
+    {
+      "label": "General Inspectorate for Civil Protection",
+      "website": "https://www.interieur.gouv.fr/le-ministere/securite-civile/inspection-generale-de-la-securite-civile",
+      "dissolved": null,
+      "hostname": "interieur.gouv.fr",
+      "already_seeded": true
+    }
+  ],
+  "regional": {},
+  "note": "Candidate list only -- not merged into any TOON seed. Verify liveness (DNS/HTTP) and currency before adding any domain; 'dissolved' being empty does not guarantee an entity is still active, and 'already_seeded' is a hostname-suffix match, not a guarantee of exact equivalence."
+}
