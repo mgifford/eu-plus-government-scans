@@ -1,0 +1,824 @@
+{
+  "country": "Spain",
+  "wikidata_qid": "Q29",
+  "national": [
+    {
+      "label": "Spanish Data Protection Agency",
+      "website": "https://www.aepd.es/",
+      "dissolved": null,
+      "hostname": "aepd.es",
+      "already_seeded": false
+    },
+    {
+      "label": "Congress of Deputies",
+      "website": "https://www.congreso.es/",
+      "dissolved": null,
+      "hostname": "congreso.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Senate of Spain",
+      "website": "http://www.senado.es",
+      "dissolved": null,
+      "hostname": "senado.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry for the Presidency and the Territorial Administrations",
+      "website": "http://www.mpr.gob.es",
+      "dissolved": null,
+      "hostname": "mpr.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Civil Guard",
+      "website": "http://www.guardiacivil.es/",
+      "dissolved": null,
+      "hostname": "guardiacivil.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Spanish National Research Council",
+      "website": "http://www.csic.es/",
+      "dissolved": null,
+      "hostname": "csic.es",
+      "already_seeded": false
+    },
+    {
+      "label": "National Police Corps of Spain",
+      "website": "https://www.policia.es/_gl/index.php?idiomaActual=gl",
+      "dissolved": null,
+      "hostname": "policia.es",
+      "already_seeded": true
+    },
+    {
+      "label": "National Police Corps of Spain",
+      "website": "https://www.policia.es/",
+      "dissolved": null,
+      "hostname": "policia.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Government of Spain",
+      "website": "http://www.lamoncloa.gob.es/",
+      "dissolved": null,
+      "hostname": "lamoncloa.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Constitutional Court of Spain",
+      "website": "https://www.tribunalconstitucional.es/es/Paginas/default.aspx",
+      "dissolved": null,
+      "hostname": "tribunalconstitucional.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Development",
+      "website": "https://www.transportes.gob.es/",
+      "dissolved": null,
+      "hostname": "transportes.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Council of State",
+      "website": "https://www.consejo-estado.es/",
+      "dissolved": null,
+      "hostname": "consejo-estado.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Foreign Affairs, European Union and Cooperation of Spain",
+      "website": "http://www.exteriores.gob.es/",
+      "dissolved": null,
+      "hostname": "exteriores.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Agriculture, Fisheries and Food",
+      "website": "https://www.mapa.gob.es/",
+      "dissolved": null,
+      "hostname": "mapa.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Housing",
+      "website": "https://www.mivau.gob.es/",
+      "dissolved": "2010-01-01T00:00:00Z",
+      "hostname": "mivau.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Industry, Energy, and Tourism",
+      "website": "http://www.minetur.gob.es",
+      "dissolved": "2016-11-04T00:00:00Z",
+      "hostname": "minetur.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Labour of Spain",
+      "website": "http://www.mitramiss.gob.es/",
+      "dissolved": null,
+      "hostname": "mitramiss.gob.es",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Health",
+      "website": "https://www.sanidad.gob.es/",
+      "dissolved": null,
+      "hostname": "sanidad.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of the Interior",
+      "website": "http://www.interior.gob.es/",
+      "dissolved": null,
+      "hostname": "interior.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Culture of Spain",
+      "website": "https://www.cultura.gob.es/",
+      "dissolved": null,
+      "hostname": "cultura.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Culture of Spain",
+      "website": "http://www.mcu.es",
+      "dissolved": null,
+      "hostname": "mcu.es",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of the Economy and Finance (2004–2011)",
+      "website": "http://www.meh.es/",
+      "dissolved": "2011-12-22T00:00:00Z",
+      "hostname": "meh.es",
+      "already_seeded": false
+    },
+    {
+      "label": "Instituto Geográfico Nacional",
+      "website": "http://www.ign.es/ign/main/index.do",
+      "dissolved": null,
+      "hostname": "ign.es",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Defence of Spain",
+      "website": "https://www.defensa.gob.es/",
+      "dissolved": null,
+      "hostname": "defensa.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Justice of Spain",
+      "website": "https://www.mjusticia.gob.es/",
+      "dissolved": null,
+      "hostname": "mjusticia.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Education, Culture and Sport",
+      "website": "http://www.mecd.gob.es/",
+      "dissolved": "2018-06-06T00:00:00Z",
+      "hostname": "mecd.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Territorial Policy",
+      "website": "https://www.mptfp.gob.es/",
+      "dissolved": null,
+      "hostname": "mptfp.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Science of Spain",
+      "website": "https://www.ciencia.gob.es/",
+      "dissolved": null,
+      "hostname": "ciencia.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Red.es",
+      "website": "https://www.red.es",
+      "dissolved": null,
+      "hostname": "red.es",
+      "already_seeded": false
+    },
+    {
+      "label": "Consejo Superior de Deportes",
+      "website": "http://www.csd.gob.es",
+      "dissolved": null,
+      "hostname": "csd.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Consejo Superior de Deportes",
+      "website": "http://csd.es/",
+      "dissolved": null,
+      "hostname": "csd.es",
+      "already_seeded": false
+    },
+    {
+      "label": "Secretariat of State for Communication",
+      "website": "http://www.lamoncloa.gob.es/Paginas/index.aspx",
+      "dissolved": null,
+      "hostname": "lamoncloa.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Education and Culture (Spain, 1996-2000)",
+      "website": "http://www.educacion.es",
+      "dissolved": "2000-04-27T00:00:00Z",
+      "hostname": "educacion.es",
+      "already_seeded": false
+    },
+    {
+      "label": "Secretariat of State Secretary of State for Trade",
+      "website": "http://www.comercio.gob.es",
+      "dissolved": null,
+      "hostname": "comercio.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Economy and Finance",
+      "website": "http://www.mineco.gob.es/portal/site/mineco/",
+      "dissolved": "2016-11-04T00:00:00Z",
+      "hostname": "mineco.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Social Affairs",
+      "website": "https://www.dsca.gob.es/",
+      "dissolved": null,
+      "hostname": "dsca.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Social Affairs",
+      "website": "https://www.mdsocialesa2030.gob.es/",
+      "dissolved": null,
+      "hostname": "mdsocialesa2030.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Secretariat of State of Defence of Spain",
+      "website": "http://www.defensa.gob.es/",
+      "dissolved": null,
+      "hostname": "defensa.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "General Secretariat for Penitentiary Institutions",
+      "website": "http://www.institucionpenitenciaria.es/web/portal/index.html",
+      "dissolved": null,
+      "hostname": "institucionpenitenciaria.es",
+      "already_seeded": false
+    },
+    {
+      "label": "Department of National Security",
+      "website": "https://www.dsn.gob.es/",
+      "dissolved": null,
+      "hostname": "dsn.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Independent Authority for Fiscal Responsibility",
+      "website": "https://www.airef.es/es",
+      "dissolved": null,
+      "hostname": "airef.es",
+      "already_seeded": false
+    },
+    {
+      "label": "Coordination Center for Health Alerts and Emergencies",
+      "website": "https://www.sanidad.gob.es/areas/alertasEmergenciasSanitarias/home.htm",
+      "dissolved": null,
+      "hostname": "sanidad.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Economy, Industry and Competitiveness",
+      "website": "http://www.mineco.gob.es/",
+      "dissolved": "2018-06-07T00:00:00Z",
+      "hostname": "mineco.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Agriculture, Food and Environment",
+      "website": "http://www.magrama.gob.es",
+      "dissolved": "2016-11-04T00:00:00Z",
+      "hostname": "magrama.gob.es",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Agriculture and Fisheries, Food and Environment",
+      "website": "http://www.mapama.gob.es/",
+      "dissolved": null,
+      "hostname": "mapama.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Finance and Public Function",
+      "website": "http://www.minhafp.gob.es/",
+      "dissolved": null,
+      "hostname": "minhafp.gob.es",
+      "already_seeded": false
+    },
+    {
+      "label": "Secretaría de Estado para las Administraciones Territoriales",
+      "website": "http://www.seat.mpr.gob.es",
+      "dissolved": null,
+      "hostname": "seat.mpr.gob.es",
+      "already_seeded": false
+    },
+    {
+      "label": "Secretariat of State for Justice",
+      "website": "https://www.mjusticia.gob.es/es",
+      "dissolved": null,
+      "hostname": "mjusticia.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Secretariat of State for Social Security",
+      "website": "https://www.seg-social.es/",
+      "dissolved": null,
+      "hostname": "seg-social.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Supreme Court of Spain",
+      "website": "http://www.poderjudicial.es/cgpj/es/Poder_Judicial/Tribunal_Supremo",
+      "dissolved": null,
+      "hostname": "poderjudicial.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Secretariat of State for Tourism",
+      "website": "https://turismo.gob.es/es-es/Paginas/Index.aspx",
+      "dissolved": null,
+      "hostname": "turismo.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Directorate-General of the Police",
+      "website": "https://www.policia.es/",
+      "dissolved": null,
+      "hostname": "policia.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Directorate-General of the Civil Guard",
+      "website": "http://www.guardiacivil.es/en/institucional/Conocenos/estructuraorganizacion/director/index.html",
+      "dissolved": null,
+      "hostname": "guardiacivil.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Directorate-General for Civil Protection and Emergencies",
+      "website": "http://www.proteccioncivil.es",
+      "dissolved": null,
+      "hostname": "proteccioncivil.es",
+      "already_seeded": false
+    },
+    {
+      "label": "Directorate-General for Rationalization and Centralization of Procurement",
+      "website": "https://contratacioncentralizada.gob.es/",
+      "dissolved": null,
+      "hostname": "contratacioncentralizada.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Directorate-General for the Cadastre",
+      "website": "https://www.catastro.hacienda.gob.es/",
+      "dissolved": null,
+      "hostname": "catastro.hacienda.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Dirección General de Ordenación del Juego",
+      "website": "https://www.ordenacionjuego.es/",
+      "dissolved": null,
+      "hostname": "ordenacionjuego.es",
+      "already_seeded": false
+    },
+    {
+      "label": "Dirección General de Ordenación del Juego",
+      "website": "http://www.ordenacionjuego.es/es",
+      "dissolved": null,
+      "hostname": "ordenacionjuego.es",
+      "already_seeded": false
+    },
+    {
+      "label": "Directorate-General for Fine Arts",
+      "website": "http://www.culturaydeporte.gob.es/cultura/mc/bellasartes/presentacion.html",
+      "dissolved": null,
+      "hostname": "culturaydeporte.gob.es",
+      "already_seeded": false
+    },
+    {
+      "label": "General Secretariat of the Treasury and Financial Policy",
+      "website": "https://portal.mineco.gob.es/es-es/ministerio/Paginas/Organigrama.aspx",
+      "dissolved": null,
+      "hostname": "portal.mineco.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Directorate-General for the Treasury",
+      "website": "https://www.tesoro.es/",
+      "dissolved": null,
+      "hostname": "tesoro.es",
+      "already_seeded": false
+    },
+    {
+      "label": "Directorate-General for Economic and Trade Intelligence",
+      "website": "http://www.comercio.es/es-ES/Paginas/contactenos.aspx",
+      "dissolved": null,
+      "hostname": "comercio.es",
+      "already_seeded": false
+    },
+    {
+      "label": "General Direction of for Trade Policy and Competitiveness of Spain",
+      "website": "http://www.comercio.gob.es/es-ES/comercio-interior/Paginas/Comercio-Interior.aspx",
+      "dissolved": null,
+      "hostname": "comercio.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Government Delegation for Gender Violence",
+      "website": "http://www.violenciagenero.igualdad.mpr.gob.es/instituciones/delegacionGobierno/home.htm",
+      "dissolved": null,
+      "hostname": "violenciagenero.igualdad.mpr.gob.es",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Science, Innovation and Universities",
+      "website": "https://www.ciencia.gob.es/",
+      "dissolved": null,
+      "hostname": "ciencia.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Secretariat of State for Migration",
+      "website": "http://extranjeros.mitramiss.gob.es/",
+      "dissolved": null,
+      "hostname": "extranjeros.mitramiss.gob.es",
+      "already_seeded": false
+    },
+    {
+      "label": "Ministry of Finance",
+      "website": "https://www.hacienda.gob.es/",
+      "dissolved": null,
+      "hostname": "hacienda.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Foreign Affairs and Cooperation of Spain",
+      "website": "http://www.exteriores.gob.es/",
+      "dissolved": "2018-06-07T00:00:00Z",
+      "hostname": "exteriores.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Industry, Trade, and Tourism",
+      "website": "https://www.mintur.gob.es/",
+      "dissolved": null,
+      "hostname": "mintur.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Economy",
+      "website": "http://www.mineco.gob.es/",
+      "dissolved": "2020-01-13T00:00:00Z",
+      "hostname": "mineco.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Education of Spain",
+      "website": "https://www.educacionfpydeportes.gob.es/",
+      "dissolved": null,
+      "hostname": "educacionfpydeportes.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Executive Service of the Commission for the Prevention of Money Laundering and Monetary Offences",
+      "website": "https://www.sepblac.es",
+      "dissolved": null,
+      "hostname": "sepblac.es",
+      "already_seeded": false
+    },
+    {
+      "label": "Agency for Food Information and Control",
+      "website": "http://www.aica.gob.es/",
+      "dissolved": null,
+      "hostname": "aica.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Universities",
+      "website": "https://www.universidades.gob.es/",
+      "dissolved": "2023-11-20T00:00:00Z",
+      "hostname": "universidades.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Economy of Spain",
+      "website": "https://www.mineco.gob.es/",
+      "dissolved": null,
+      "hostname": "mineco.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Social Rights and 2030 Agenda",
+      "website": "https://www.mdsocialesa2030.gob.es/",
+      "dissolved": "2023-11-21T00:00:00Z",
+      "hostname": "mdsocialesa2030.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Inclusion, Social Security and Migration",
+      "website": "http://www.inclusion.gob.es/",
+      "dissolved": null,
+      "hostname": "inclusion.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of the Presidency, Justice and Relations with the Courts",
+      "website": "https://www.mjusticia.gob.es/",
+      "dissolved": null,
+      "hostname": "mjusticia.gob.es",
+      "already_seeded": true
+    },
+    {
+      "label": "Ministry of Territorial Policy and Democratic Memory",
+      "website": "https://mpt.gob.es/index.html",
+      "dissolved": null,
+      "hostname": "mpt.gob.es",
+      "already_seeded": true
+    }
+  ],
+  "regional": {
+    "Andalusia": {
+      "iso_code": "ES-AN",
+      "place_website": "http://www.juntadeandalucia.es",
+      "place_website_new": false,
+      "institutions": [
+        {
+          "label": "Government of Andalusia",
+          "website": "https://www.juntadeandalucia.es",
+          "dissolved": null,
+          "hostname": "juntadeandalucia.es",
+          "already_seeded": true
+        },
+        {
+          "label": "Parliament of Andalusia",
+          "website": "http://www.parlamentodeandalucia.es",
+          "dissolved": null,
+          "hostname": "parlamentodeandalucia.es",
+          "already_seeded": false
+        },
+        {
+          "label": "President of the Junta of Andalusia",
+          "website": "https://www.juntadeandalucia.es/organismos/presidente.html",
+          "dissolved": null,
+          "hostname": "juntadeandalucia.es",
+          "already_seeded": true
+        },
+        {
+          "label": "President of the Parliament of Andalusia",
+          "website": "http://www.parlamentodeandalucia.es/webdinamica/portal-web-parlamento/destacadospresidencia.do",
+          "dissolved": null,
+          "hostname": "parlamentodeandalucia.es",
+          "already_seeded": false
+        }
+      ]
+    },
+    "Aragon": {
+      "iso_code": "ES-AR",
+      "place_website": "https://aragon.es",
+      "place_website_new": false,
+      "institutions": [
+        {
+          "label": "President of the Aragonese Corts",
+          "website": "https://www.cortesaragon.es/Presidenta-de-las-Cortes.381.0.html",
+          "dissolved": null,
+          "hostname": "cortesaragon.es",
+          "already_seeded": false
+        }
+      ]
+    },
+    "Asturias": {
+      "iso_code": "ES-AS",
+      "place_website": "https://asturias.es",
+      "place_website_new": false,
+      "institutions": [
+        {
+          "label": "Government of the Principality of Asturias",
+          "website": "http://www.asturias.es",
+          "dissolved": null,
+          "hostname": "asturias.es",
+          "already_seeded": true
+        }
+      ]
+    },
+    "Balearic Islands": {
+      "iso_code": "ES-IB",
+      "place_website": "https://www.caib.es",
+      "place_website_new": false,
+      "institutions": [
+        {
+          "label": "Parliament of the Balearic Islands",
+          "website": "http://www.parlamentib.es/",
+          "dissolved": null,
+          "hostname": "parlamentib.es",
+          "already_seeded": false
+        }
+      ]
+    },
+    "Basque Country": {
+      "iso_code": "ES-PV",
+      "place_website": "http://www.euskadi.eus/",
+      "place_website_new": false,
+      "institutions": [
+        {
+          "label": "President of the Basque Autonomous Community",
+          "website": "http://www.euskadi.eus/eusko-jaurlaritza/lehendakaritza/hasiera/",
+          "dissolved": null,
+          "hostname": "euskadi.eus",
+          "already_seeded": true
+        }
+      ]
+    },
+    "Canary Islands": {
+      "iso_code": "ES-CN",
+      "place_website": "https://www.gobiernodecanarias.org/",
+      "place_website_new": false,
+      "institutions": []
+    },
+    "Cantabria": {
+      "iso_code": "ES-CB",
+      "place_website": "https://www.cantabria.es",
+      "place_website_new": false,
+      "institutions": [
+        {
+          "label": "President of Cantabria",
+          "website": "http://www.cantabria.es/",
+          "dissolved": null,
+          "hostname": "cantabria.es",
+          "already_seeded": true
+        },
+        {
+          "label": "Government of Cantabria",
+          "website": "http://www.cantabria.es/",
+          "dissolved": null,
+          "hostname": "cantabria.es",
+          "already_seeded": true
+        },
+        {
+          "label": "Parliament of Cantabria",
+          "website": "http://parlamento-cantabria.es",
+          "dissolved": null,
+          "hostname": "parlamento-cantabria.es",
+          "already_seeded": false
+        }
+      ]
+    },
+    "Castile and León": {
+      "iso_code": "ES-CL",
+      "place_website": "http://www.jcyl.es/",
+      "place_website_new": false,
+      "institutions": [
+        {
+          "label": "President of the Cortes of Castile and León",
+          "website": "http://www.ccyl.es/Parlamento/Presidencia",
+          "dissolved": null,
+          "hostname": "ccyl.es",
+          "already_seeded": false
+        }
+      ]
+    },
+    "Castile–La Mancha": {
+      "iso_code": "ES-CM",
+      "place_website": "http://www.castillalamancha.es/",
+      "place_website_new": false,
+      "institutions": [
+        {
+          "label": "Regional Government of Castilla–La Mancha",
+          "website": "http://www.castillalamancha.es",
+          "dissolved": null,
+          "hostname": "castillalamancha.es",
+          "already_seeded": true
+        }
+      ]
+    },
+    "Catalonia": {
+      "iso_code": "ES-CT",
+      "place_website": "https://web.gencat.cat/",
+      "place_website_new": false,
+      "institutions": [
+        {
+          "label": "Parliament of Catalonia",
+          "website": "http://www.parlament.cat/",
+          "dissolved": null,
+          "hostname": "parlament.cat",
+          "already_seeded": false
+        },
+        {
+          "label": "Government of Catalonia",
+          "website": "http://www.govern.cat",
+          "dissolved": null,
+          "hostname": "govern.cat",
+          "already_seeded": false
+        },
+        {
+          "label": "President of the Generalitat of Catalonia",
+          "website": "https://president.cat/",
+          "dissolved": null,
+          "hostname": "president.cat",
+          "already_seeded": false
+        },
+        {
+          "label": "President of the Parliament of Catalonia",
+          "website": "https://www.parlament.cat/presidencia/",
+          "dissolved": null,
+          "hostname": "parlament.cat",
+          "already_seeded": false
+        }
+      ]
+    },
+    "Community of Madrid": {
+      "iso_code": "ES-MD",
+      "place_website": "http://www.madrid.org/",
+      "place_website_new": true,
+      "institutions": [
+        {
+          "label": "Government of the Community of Madrid",
+          "website": "http://www.madrid.org",
+          "dissolved": null,
+          "hostname": "madrid.org",
+          "already_seeded": false
+        },
+        {
+          "label": "President of the Community of Madrid",
+          "website": "http://www.madrid.org/lapresidencia/",
+          "dissolved": null,
+          "hostname": "madrid.org",
+          "already_seeded": false
+        }
+      ]
+    },
+    "Extremadura": {
+      "iso_code": "ES-EX",
+      "place_website": "http://www.juntaex.es/",
+      "place_website_new": false,
+      "institutions": []
+    },
+    "Galicia": {
+      "iso_code": "ES-GA",
+      "place_website": "https://www.xunta.gal/",
+      "place_website_new": false,
+      "institutions": [
+        {
+          "label": "Parliament of Galicia",
+          "website": "https://www.parlamentodegalicia.gal/",
+          "dissolved": null,
+          "hostname": "parlamentodegalicia.gal",
+          "already_seeded": false
+        },
+        {
+          "label": "President of the Xunta of Galicia",
+          "website": "https://www.presidente.gal",
+          "dissolved": null,
+          "hostname": "presidente.gal",
+          "already_seeded": false
+        }
+      ]
+    },
+    "La Rioja": {
+      "iso_code": "ES-RI",
+      "place_website": "http://www.larioja.org/",
+      "place_website_new": false,
+      "institutions": [
+        {
+          "label": "Government of La Rioja",
+          "website": "https://www.larioja.org/en",
+          "dissolved": null,
+          "hostname": "larioja.org",
+          "already_seeded": true
+        }
+      ]
+    },
+    "Region of Murcia": {
+      "iso_code": "ES-MC",
+      "place_website": "https://www.carm.es/",
+      "place_website_new": false,
+      "institutions": []
+    },
+    "Valencian Community": {
+      "iso_code": "ES-VC",
+      "place_website": null,
+      "place_website_new": false,
+      "institutions": []
+    }
+  },
+  "note": "Candidate list only -- not merged into any TOON seed. Verify liveness (DNS/HTTP) and currency before adding any domain; 'dissolved' being empty does not guarantee an entity is still active, and 'already_seeded' is a hostname-suffix match, not a guarantee of exact equivalence."
+}
