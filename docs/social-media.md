@@ -25,7 +25,7 @@ layout: page
 <p style="text-align:center;font-size:0.75em;margin:0.3rem 0 0;color:#555;font-style:italic;">Social media tier distribution</p>
 </div>
 
-_Stats as of 2026-07-19 18:34 UTC — last scan: 2026-07-19_
+_Stats as of 2026-07-19 19:00 UTC — last scan: 2026-07-19_
 
 **15** scan batches run
 
