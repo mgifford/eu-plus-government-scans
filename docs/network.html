@@ -969,12 +969,14 @@ layout: page
             <div class="graph-controls">
                 <label for="graph-country-select"><strong>Country:</strong></label>
                 <select id="graph-country-select">
-                    <option value="">All Countries</option>
+                    <option value="">Select a country…</option>
                 </select>
-                <label for="graph-type-select"><strong>Type:</strong></label>
-                <select id="graph-type-select">
-                    <option value="">All Types</option>
-                    <option value="editorial_link">Editorial Links</option>
+                <label for="graph-include-third-party" style="display:flex;align-items:center;gap:6px;cursor:pointer">
+                    <input type="checkbox" id="graph-include-third-party" style="width:16px;height:16px">
+                    Include third-party services
+                </label>
+                <select id="graph-type-select" disabled>
+                    <option value="">All third-party types</option>
                     <option value="script_dependency">Scripts</option>
                     <option value="stylesheet_dependency">Stylesheets</option>
                     <option value="font_or_preload_dependency">Fonts</option>
@@ -983,6 +985,8 @@ layout: page
                 </select>
                 <button class="btn btn-primary" id="render-graph">Render Graph</button>
             </div>
+            <p class="graph-scope-note" id="graph-scope-note"><small>By default this shows <strong>government-to-government editorial links only</strong> for the selected country — no analytics, CDNs, or other third-party services. Pick a country above and select "Include third-party services" to see the rest.</small></p>
+            <div id="graph-summary-note" role="status"></div>
             <div class="graph-legend" id="graph-legend"></div>
             <div id="graph-svg-container"></div>
             <div class="graph-tooltip" id="graph-tooltip"></div>
@@ -1768,9 +1772,16 @@ layout: page
             announceToScreenReader('Showing details for ' + country);
         }
 
+        const GRAPH_MAX_LINKS = 150;
+
         function renderGraph() {
+            const summaryNote = document.getElementById('graph-summary-note');
+            const container = document.getElementById('graph-svg-container');
+
             if (!jsonlLoaded) {
-                document.getElementById('graph-svg-container').innerHTML =
+                container.innerHTML = '';
+                summaryNote.textContent = '';
+                container.innerHTML =
                     '<p style="color:var(--color-text-secondary);padding:2rem;text-align:center">' +
                     'D3 graph requires the full dataset. <a href="#" id="load-jsonl-for-graph">Load full JSONL (12.5 MB)</a></p>';
                 document.getElementById('load-jsonl-for-graph')?.addEventListener('click', (e) => {
@@ -1781,13 +1792,37 @@ layout: page
             }
 
             const country = document.getElementById('graph-country-select').value;
+            const includeThirdParty = document.getElementById('graph-include-third-party').checked;
             const type = document.getElementById('graph-type-select').value;
 
-            let rels = filteredRelationships;
-            if (country) rels = rels.filter(r => getCountry(r.source_domain) === country);
-            if (type) rels = rels.filter(r => r.relationship_type === type);
+            if (!country) {
+                container.innerHTML = '<p style="text-align:center;padding:2rem;color:var(--color-text-secondary);">Select a country above to render its network — the graph does not show all countries at once as the dataset would be unreadable.</p>';
+                summaryNote.textContent = '';
+                document.getElementById('graph-legend').innerHTML = '';
+                return;
+            }
 
-            const topRels = rels.sort((a, b) => b.observations - a.observations).slice(0, 300);
+            let rels = filteredRelationships.filter(r => getCountry(r.source_domain) === country);
+
+            if (includeThirdParty) {
+                if (type) rels = rels.filter(r => r.relationship_type === type);
+            } else {
+                rels = rels.filter(r =>
+                    r.relationship_type === 'editorial_link' &&
+                    isGovernmentDomain(r.source_domain) &&
+                    isGovernmentDomain(r.target_domain) &&
+                    r.source_domain !== r.target_domain
+                );
+            }
+
+            const totalMatched = rels.length;
+            const topRels = rels.sort((a, b) => b.observations - a.observations).slice(0, GRAPH_MAX_LINKS);
+
+            summaryNote.textContent = totalMatched === 0
+                ? ''
+                : totalMatched > topRels.length
+                    ? 'Showing the top ' + topRels.length + ' of ' + totalMatched + ' matching links (ranked by observation count). Narrow the filters above to see the rest.'
+                    : 'Showing all ' + topRels.length + ' matching link' + (topRels.length === 1 ? '' : 's') + '.';
 
             const nodeMap = {};
             const links = [];
@@ -1800,8 +1835,13 @@ layout: page
                 'form_destination': '#1abc9c'
             };
             topRels.forEach(r => {
+                // In gov-to-gov mode both ends were already verified as government domains
+                // above; use that verdict rather than the dataset's independent
+                // target_category classifier, which can disagree (e.g. label a
+                // confirmed government domain "unknown_external").
+                const targetCategory = includeThirdParty ? r.target_category : 'known_government';
                 if (!nodeMap[r.source_domain]) nodeMap[r.source_domain] = { id: r.source_domain, country: getCountry(r.source_domain), category: 'known_government', degree: 0 };
-                if (!nodeMap[r.target_domain]) nodeMap[r.target_domain] = { id: r.target_domain, country: getCountry(r.target_domain), category: r.target_category, degree: 0 };
+                if (!nodeMap[r.target_domain]) nodeMap[r.target_domain] = { id: r.target_domain, country: getCountry(r.target_domain), category: targetCategory, degree: 0 };
                 nodeMap[r.source_domain].degree++;
                 nodeMap[r.target_domain].degree++;
                 links.push({ source: r.source_domain, target: r.target_domain, weight: r.observations, type: r.relationship_type });
@@ -1809,10 +1849,11 @@ layout: page
 
             const nodes = Object.values(nodeMap);
 
-            const container = document.getElementById('graph-svg-container');
             container.innerHTML = '';
             if (nodes.length === 0) {
-                container.innerHTML = '<p style="text-align:center;padding:2rem;color:#6c757d;">No data to display. Try different filters.</p>';
+                container.innerHTML = '<p style="text-align:center;padding:2rem;color:var(--color-text-secondary);">No links match the current filters for ' + escapeHtml(country) + '. Try including third-party services, or pick a different country.</p>';
+                summaryNote.textContent = '';
+                document.getElementById('graph-legend').innerHTML = '';
                 return;
             }
 
@@ -1914,23 +1955,35 @@ layout: page
                 node.attr('transform', d => 'translate(' + d.x + ',' + d.y + ')');
             });
 
-            renderGraphLegend();
+            renderGraphLegend(nodes, links);
         }
 
-        function renderGraphLegend() {
+        const LINK_TYPE_LABELS = {
+            'editorial_link': ['#3498db', 'Editorial'],
+            'script_dependency': ['#e74c3c', 'Scripts'],
+            'stylesheet_dependency': ['#9b59b6', 'Styles'],
+            'font_or_preload_dependency': ['#27ae60', 'Fonts'],
+            'image_or_media_dependency': ['#f39c12', 'Images'],
+            'form_destination': ['#1abc9c', 'Forms']
+        };
+
+        function renderGraphLegend(nodes, links) {
             const legend = document.getElementById('graph-legend');
+            const usedCategories = new Set(nodes.map(n => n.category));
+            const usedTypes = new Set(links.map(l => l.type));
+
             const nodeLegend = Object.entries(CATEGORY_COLORS)
+                .filter(([cat]) => usedCategories.has(cat))
                 .map(([cat, color]) => '<span class="legend-item"><span class="legend-dot" style="background:' + color + '"></span>' + cat.replace(/_/g, ' ') + '</span>')
                 .join('');
-            const linkLegend = [
-                ['editorial_link', '#3498db', 'Editorial'],
-                ['script_dependency', '#e74c3c', 'Scripts'],
-                ['stylesheet_dependency', '#9b59b6', 'Styles'],
-                ['font_or_preload_dependency', '#27ae60', 'Fonts'],
-                ['image_or_media_dependency', '#f39c12', 'Images'],
-                ['form_destination', '#1abc9c', 'Forms']
-            ].map(([t, c, l]) => '<span class="legend-item"><span class="legend-dot" style="background:' + c + ';border-radius:0;width:16px;height:4px"></span>' + l + '</span>').join('');
-            legend.innerHTML = '<strong>Nodes:</strong> ' + nodeLegend + ' &nbsp;&nbsp; <strong>Edges:</strong> ' + linkLegend;
+
+            const linkLegend = Object.entries(LINK_TYPE_LABELS)
+                .filter(([type]) => usedTypes.has(type))
+                .map(([type, [c, l]]) => '<span class="legend-item"><span class="legend-dot" style="background:' + c + ';border-radius:0;width:16px;height:4px"></span>' + l + '</span>')
+                .join('');
+
+            legend.innerHTML = (nodeLegend ? '<strong>Nodes:</strong> ' + nodeLegend + ' &nbsp;&nbsp; ' : '') +
+                (linkLegend ? '<strong>Edges:</strong> ' + linkLegend : '');
         }
 
         function exportJSON(data, filename) {
@@ -1995,6 +2048,10 @@ layout: page
             });
 
             document.getElementById('render-graph').addEventListener('click', renderGraph);
+
+            document.getElementById('graph-include-third-party').addEventListener('change', (e) => {
+                document.getElementById('graph-type-select').disabled = !e.target.checked;
+            });
 
             document.getElementById('back-to-overview').addEventListener('click', () => {
                 document.getElementById('country-detail').style.display = 'none';
