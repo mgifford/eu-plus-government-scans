@@ -1,593 +1,326 @@
 {
-  "country": "Finland",
+  "country_code": "FINLAND",
   "total_relationships": 697,
   "total_source_domains": 27,
-  "total_unique_targets": 167,
-  "gov_to_gov_pairs": 7,
-  "relationship_types": {
-    "editorial_link": 405,
-    "script_dependency": 95,
-    "stylesheet_dependency": 78,
-    "image_or_media_dependency": 59,
-    "font_or_preload_dependency": 21,
-    "form_destination": 39
-  },
   "top_source_domains": [
     {
       "domain": "syke.fi",
-      "observations": 171,
-      "unique_targets": 26,
-      "relationship_types": {
-        "editorial_link": 35,
-        "script_dependency": 6,
-        "font_or_preload_dependency": 4,
-        "stylesheet_dependency": 6,
-        "image_or_media_dependency": 4,
-        "form_destination": 4
-      }
+      "count": 342
     },
     {
       "domain": "traficom.fi",
-      "observations": 121,
-      "unique_targets": 7,
-      "relationship_types": {
-        "editorial_link": 12,
-        "script_dependency": 7,
-        "font_or_preload_dependency": 4,
-        "stylesheet_dependency": 7,
-        "image_or_media_dependency": 6,
-        "form_destination": 2
-      }
+      "count": 242
     },
     {
       "domain": "kela.fi",
-      "observations": 110,
-      "unique_targets": 17,
-      "relationship_types": {
-        "editorial_link": 21,
-        "script_dependency": 10,
-        "stylesheet_dependency": 8,
-        "image_or_media_dependency": 6,
-        "form_destination": 4,
-        "font_or_preload_dependency": 1
-      }
+      "count": 220
     },
     {
       "domain": "suomi.fi",
-      "observations": 95,
-      "unique_targets": 9,
-      "relationship_types": {
-        "script_dependency": 7,
-        "stylesheet_dependency": 7,
-        "editorial_link": 14,
-        "font_or_preload_dependency": 3,
-        "image_or_media_dependency": 4
-      }
+      "count": 190
     },
     {
       "domain": "tulli.fi",
-      "observations": 84,
-      "unique_targets": 14,
-      "relationship_types": {
-        "script_dependency": 4,
-        "stylesheet_dependency": 4,
-        "editorial_link": 19,
-        "image_or_media_dependency": 3,
-        "form_destination": 3
-      }
+      "count": 168
     },
     {
       "domain": "stat.fi",
-      "observations": 75,
-      "unique_targets": 12,
-      "relationship_types": {
-        "editorial_link": 15,
-        "script_dependency": 2,
-        "stylesheet_dependency": 4,
-        "image_or_media_dependency": 3,
-        "form_destination": 1,
-        "font_or_preload_dependency": 3
-      }
+      "count": 150
     },
     {
       "domain": "tem.fi",
-      "observations": 74,
-      "unique_targets": 27,
-      "relationship_types": {
-        "editorial_link": 31,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
+      "count": 148
     },
     {
       "domain": "thl.fi",
-      "observations": 69,
-      "unique_targets": 13,
-      "relationship_types": {
-        "editorial_link": 12,
-        "script_dependency": 4,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 2,
-        "form_destination": 2
-      }
-    },
-    {
-      "domain": "oph.fi",
-      "observations": 63,
-      "unique_targets": 15,
-      "relationship_types": {
-        "editorial_link": 14,
-        "script_dependency": 9,
-        "font_or_preload_dependency": 1,
-        "stylesheet_dependency": 4,
-        "image_or_media_dependency": 3,
-        "form_destination": 3
-      }
+      "count": 138
     },
     {
       "domain": "businessfinland.fi",
-      "observations": 63,
-      "unique_targets": 14,
-      "relationship_types": {
-        "editorial_link": 13,
-        "script_dependency": 4,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 2,
-        "form_destination": 1,
-        "font_or_preload_dependency": 1
-      }
+      "count": 126
+    },
+    {
+      "domain": "oph.fi",
+      "count": 126
     },
     {
       "domain": "vero.fi",
-      "observations": 59,
-      "unique_targets": 9,
-      "relationship_types": {
-        "editorial_link": 10,
-        "script_dependency": 6,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 3,
-        "form_destination": 3
-      }
-    },
-    {
-      "domain": "fimea.fi",
-      "observations": 58,
-      "unique_targets": 7,
-      "relationship_types": {
-        "editorial_link": 12,
-        "script_dependency": 3,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 3,
-        "form_destination": 3
-      }
+      "count": 118
     },
     {
       "domain": "oikeusministerio.fi",
-      "observations": 58,
-      "unique_targets": 30,
-      "relationship_types": {
-        "editorial_link": 31,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
+      "count": 116
+    },
+    {
+      "domain": "fimea.fi",
+      "count": 116
     },
     {
       "domain": "migri.fi",
-      "observations": 51,
-      "unique_targets": 11,
-      "relationship_types": {
-        "editorial_link": 11,
-        "script_dependency": 5,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 2,
-        "form_destination": 2
-      }
+      "count": 102
     },
     {
       "domain": "metsakeskus.fi",
-      "observations": 48,
-      "unique_targets": 10,
-      "relationship_types": {
-        "editorial_link": 7,
-        "script_dependency": 4,
-        "stylesheet_dependency": 4,
-        "image_or_media_dependency": 1
-      }
+      "count": 96
     },
     {
       "domain": "oikeus.fi",
-      "observations": 47,
-      "unique_targets": 13,
-      "relationship_types": {
-        "script_dependency": 2,
-        "font_or_preload_dependency": 1,
-        "stylesheet_dependency": 2,
-        "editorial_link": 14,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
+      "count": 94
     },
     {
       "domain": "ym.fi",
-      "observations": 46,
-      "unique_targets": 19,
-      "relationship_types": {
-        "editorial_link": 20,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
+      "count": 92
     },
     {
       "domain": "mmm.fi",
-      "observations": 44,
-      "unique_targets": 16,
-      "relationship_types": {
-        "editorial_link": 17,
-        "script_dependency": 2,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
+      "count": 88
     },
     {
       "domain": "eduskunta.fi",
-      "observations": 42,
-      "unique_targets": 13,
-      "relationship_types": {
-        "script_dependency": 3,
-        "stylesheet_dependency": 3,
-        "editorial_link": 14,
-        "image_or_media_dependency": 2,
-        "form_destination": 1,
-        "font_or_preload_dependency": 1
-      }
-    },
-    {
-      "domain": "presidentti.fi",
-      "observations": 38,
-      "unique_targets": 11,
-      "relationship_types": {
-        "editorial_link": 12,
-        "script_dependency": 2,
-        "font_or_preload_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 2
-      }
+      "count": 84
     },
     {
       "domain": "okm.fi",
-      "observations": 38,
-      "unique_targets": 14,
-      "relationship_types": {
-        "editorial_link": 15,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
+      "count": 76
+    },
+    {
+      "domain": "presidentti.fi",
+      "count": 76
     },
     {
       "domain": "lvv.fi",
-      "observations": 33,
-      "unique_targets": 7,
-      "relationship_types": {
-        "editorial_link": 7,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
+      "count": 66
     },
     {
       "domain": "defmin.fi",
-      "observations": 31,
-      "unique_targets": 6,
-      "relationship_types": {
-        "editorial_link": 7,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
+      "count": 62
     },
     {
       "domain": "um.fi",
-      "observations": 29,
-      "unique_targets": 25,
-      "relationship_types": {
-        "editorial_link": 25,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
+      "count": 58
     },
     {
       "domain": "valtioneuvosto.fi",
-      "observations": 23,
-      "unique_targets": 7,
-      "relationship_types": {
-        "editorial_link": 7,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "font_or_preload_dependency": 1,
-        "image_or_media_dependency": 2
-      }
+      "count": 46
     },
     {
       "domain": "avi.fi",
-      "observations": 17,
-      "unique_targets": 13,
-      "relationship_types": {
-        "editorial_link": 8,
-        "script_dependency": 5,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 1
-      }
+      "count": 34
     },
     {
       "domain": "poliisi.fi",
-      "observations": 9,
-      "unique_targets": 2,
-      "relationship_types": {
-        "editorial_link": 2,
-        "script_dependency": 2,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
+      "count": 18
     }
   ],
-  "top_targets": [
+  "top_target_domains": [
     {
       "domain": "traficom.fi",
-      "observations": 98
+      "count": 196
     },
     {
       "domain": "syke.fi",
-      "observations": 85
+      "count": 170
     },
     {
       "domain": "suomi.fi",
-      "observations": 73
+      "count": 146
     },
     {
       "domain": "linkedin.com",
-      "observations": 58
+      "count": 116
     },
     {
       "domain": "kela.fi",
-      "observations": 58
+      "count": 116
     },
     {
       "domain": "tulli.fi",
-      "observations": 51
+      "count": 102
     },
     {
       "domain": "facebook.com",
-      "observations": 50
+      "count": 100
     },
     {
       "domain": "stat.fi",
-      "observations": 49
+      "count": 98
     },
     {
       "domain": "instagram.com",
-      "observations": 48
+      "count": 96
     },
     {
       "domain": "fimea.fi",
-      "observations": 47
-    },
-    {
-      "domain": "vero.fi",
-      "observations": 40
+      "count": 94
     },
     {
       "domain": "valtioneuvosto.fi",
-      "observations": 40
+      "count": 80
+    },
+    {
+      "domain": "vero.fi",
+      "count": 80
     },
     {
       "domain": "youtube.com",
-      "observations": 39
-    },
-    {
-      "domain": "oph.fi",
-      "observations": 31
+      "count": 78
     },
     {
       "domain": "thl.fi",
-      "observations": 31
+      "count": 62
+    },
+    {
+      "domain": "oph.fi",
+      "count": 62
     },
     {
       "domain": "defmin.fi",
-      "observations": 28
+      "count": 56
     },
     {
       "domain": "tem.fi",
-      "observations": 27
+      "count": 54
     },
     {
       "domain": "ym.fi",
-      "observations": 26
+      "count": 52
     },
     {
       "domain": "businessfinland.fi",
-      "observations": 26
+      "count": 52
     },
     {
       "domain": "migri.fi",
-      "observations": 25
+      "count": 50
     },
     {
       "domain": "twitter.com",
-      "observations": 24
-    },
-    {
-      "domain": "oikeus.fi",
-      "observations": 22
+      "count": 48
     },
     {
       "domain": "mmm.fi",
-      "observations": 22
+      "count": 44
+    },
+    {
+      "domain": "oikeus.fi",
+      "count": 44
     },
     {
       "domain": "oikeusministerio.fi",
-      "observations": 20
+      "count": 40
     },
     {
       "domain": "okm.fi",
-      "observations": 20
+      "count": 40
     },
     {
       "domain": "eduskunta.fi",
-      "observations": 20
+      "count": 40
     },
     {
       "domain": "bunny.net",
-      "observations": 18
+      "count": 36
     },
     {
       "domain": "um.fi",
-      "observations": 16
+      "count": 32
     },
     {
       "domain": "metsakeskus.fi",
-      "observations": 15
+      "count": 30
     },
     {
       "domain": "lvv.fi",
-      "observations": 15
+      "count": 30
     },
     {
       "domain": "presidentti.fi",
-      "observations": 14
+      "count": 28
     },
     {
       "domain": "stm.fi",
-      "observations": 13
-    },
-    {
-      "domain": "cludo.com",
-      "observations": 12
+      "count": 26
     },
     {
       "domain": "vnk.fi",
-      "observations": 12
+      "count": 24
     },
     {
       "domain": "lvm.fi",
-      "observations": 12
+      "count": 24
     },
     {
       "domain": "vm.fi",
-      "observations": 12
+      "count": 24
     },
     {
       "domain": "intermin.fi",
-      "observations": 12
+      "count": 24
+    },
+    {
+      "domain": "cludo.com",
+      "count": 24
     },
     {
       "domain": "webropolsurveys.com",
-      "observations": 11
-    },
-    {
-      "domain": "poliisi.fi",
-      "observations": 10
+      "count": 22
     },
     {
       "domain": "ymparisto.fi",
-      "observations": 10
+      "count": 20
     },
     {
-      "domain": "cloudflare.com",
-      "observations": 9
-    },
-    {
-      "domain": "luonnontila.fi",
-      "observations": 9
-    },
-    {
-      "domain": "cookiebot.com",
-      "observations": 9
-    },
-    {
-      "domain": "googleapis.com",
-      "observations": 9
+      "domain": "poliisi.fi",
+      "count": 20
     },
     {
       "domain": "saavutettavuusvaatimukset.fi",
-      "observations": 9
+      "count": 18
+    },
+    {
+      "domain": "luonnontila.fi",
+      "count": 18
+    },
+    {
+      "domain": "cloudflare.com",
+      "count": 18
     },
     {
       "domain": "dynamics.com",
-      "observations": 9
+      "count": 18
     },
     {
-      "domain": "google.com",
-      "observations": 8
+      "domain": "cookiebot.com",
+      "count": 18
+    },
+    {
+      "domain": "googleapis.com",
+      "count": 18
     },
     {
       "domain": "webropol.com",
-      "observations": 8
+      "count": 16
+    },
+    {
+      "domain": "google.com",
+      "count": 16
     },
     {
       "domain": "azureedge.net",
-      "observations": 8
+      "count": 16
     },
     {
       "domain": "jsdelivr.net",
-      "observations": 7
+      "count": 14
     }
   ],
-  "gov_to_gov_links": [
-    {
-      "source": "businessfinland.fi",
-      "target": "investinfinland.com",
-      "target_country": "Unknown",
-      "cross_country": true
-    },
-    {
-      "source": "businessfinland.fi",
-      "target": "visitfinland.fi",
-      "target_country": "Finland",
-      "cross_country": false
-    },
-    {
-      "source": "businessfinland.fi",
-      "target": "workinfinland.com",
-      "target_country": "Unknown",
-      "cross_country": true
-    },
-    {
-      "source": "businessfinland.fi",
-      "target": "businessfinland.com",
-      "target_country": "Unknown",
-      "cross_country": true
-    },
-    {
-      "source": "businessfinland.fi",
-      "target": "startupinfinland.com",
-      "target_country": "Unknown",
-      "cross_country": true
-    },
-    {
-      "source": "businessfinland.fi",
-      "target": "team-finland.fi",
-      "target_country": "Finland",
-      "cross_country": false
-    },
-    {
-      "source": "businessfinland.fi",
-      "target": "visitfinland.com",
-      "target_country": "Unknown",
-      "cross_country": true
-    }
-  ]
+  "relationship_types": {
+    "editorial_link": 405,
+    "script_dependency": 95,
+    "font_or_preload_dependency": 21,
+    "stylesheet_dependency": 78,
+    "image_or_media_dependency": 59,
+    "form_destination": 39
+  },
+  "generated_at": "2026-07-19T02:16:24.517976+00:00"
 }

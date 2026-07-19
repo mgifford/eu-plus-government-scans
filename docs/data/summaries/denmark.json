@@ -1,840 +1,418 @@
 {
-  "country": "Denmark",
-  "total_relationships": 1640,
-  "total_source_domains": 51,
-  "total_unique_targets": 343,
-  "gov_to_gov_pairs": 4,
-  "relationship_types": {
-    "script_dependency": 299,
-    "stylesheet_dependency": 215,
-    "editorial_link": 789,
-    "font_or_preload_dependency": 47,
-    "image_or_media_dependency": 159,
-    "form_destination": 131
-  },
+  "country_code": "DENMARK",
+  "total_relationships": 4143,
+  "total_source_domains": 71,
   "top_source_domains": [
     {
-      "domain": "aarhus.dk",
-      "observations": 459,
-      "unique_targets": 25,
-      "relationship_types": {
-        "editorial_link": 60,
-        "script_dependency": 35,
-        "stylesheet_dependency": 30,
-        "image_or_media_dependency": 30,
-        "form_destination": 29
-      }
+      "domain": "kk.dk",
+      "count": 4918
     },
     {
-      "domain": "kk.dk",
-      "observations": 440,
-      "unique_targets": 44,
-      "relationship_types": {
-        "editorial_link": 117,
-        "script_dependency": 50,
-        "stylesheet_dependency": 49,
-        "image_or_media_dependency": 31,
-        "form_destination": 46,
-        "font_or_preload_dependency": 1
-      }
+      "domain": "aarhus.dk",
+      "count": 4097
     },
     {
       "domain": "um.dk",
-      "observations": 438,
-      "unique_targets": 80,
-      "relationship_types": {
-        "editorial_link": 108,
-        "script_dependency": 8,
-        "font_or_preload_dependency": 4,
-        "image_or_media_dependency": 2,
-        "form_destination": 2,
-        "stylesheet_dependency": 1
-      }
+      "count": 2985
     },
     {
       "domain": "rm.dk",
-      "observations": 226,
-      "unique_targets": 25,
-      "relationship_types": {
-        "script_dependency": 14,
-        "stylesheet_dependency": 12,
-        "editorial_link": 45,
-        "image_or_media_dependency": 9,
-        "form_destination": 1
-      }
+      "count": 1545
     },
     {
       "domain": "vejle.dk",
-      "observations": 145,
-      "unique_targets": 26,
-      "relationship_types": {
-        "editorial_link": 32,
-        "script_dependency": 10,
-        "font_or_preload_dependency": 3,
-        "stylesheet_dependency": 9,
-        "image_or_media_dependency": 6,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "rn.dk",
-      "observations": 99,
-      "unique_targets": 24,
-      "relationship_types": {
-        "editorial_link": 34,
-        "script_dependency": 11,
-        "stylesheet_dependency": 9,
-        "image_or_media_dependency": 8,
-        "form_destination": 8
-      }
-    },
-    {
-      "domain": "albertslund.dk",
-      "observations": 92,
-      "unique_targets": 13,
-      "relationship_types": {
-        "editorial_link": 16,
-        "script_dependency": 10,
-        "stylesheet_dependency": 6,
-        "image_or_media_dependency": 6,
-        "form_destination": 4
-      }
-    },
-    {
-      "domain": "herning.dk",
-      "observations": 83,
-      "unique_targets": 14,
-      "relationship_types": {
-        "editorial_link": 26,
-        "script_dependency": 9,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 3,
-        "form_destination": 6
-      }
+      "count": 982
     },
     {
       "domain": "horsens.dk",
-      "observations": 70,
-      "unique_targets": 13,
-      "relationship_types": {
-        "editorial_link": 16,
-        "script_dependency": 10,
-        "stylesheet_dependency": 5,
-        "image_or_media_dependency": 5,
-        "form_destination": 1
-      }
+      "count": 775
     },
     {
-      "domain": "viborg.dk",
-      "observations": 70,
-      "unique_targets": 16,
-      "relationship_types": {
-        "editorial_link": 15,
-        "script_dependency": 11,
-        "font_or_preload_dependency": 4,
-        "stylesheet_dependency": 7,
-        "image_or_media_dependency": 6,
-        "form_destination": 1
-      }
+      "domain": "rn.dk",
+      "count": 708
     },
     {
       "domain": "gentofte.dk",
-      "observations": 66,
-      "unique_targets": 10,
-      "relationship_types": {
-        "editorial_link": 12,
-        "script_dependency": 8,
-        "font_or_preload_dependency": 5,
-        "stylesheet_dependency": 6,
-        "image_or_media_dependency": 5
-      }
-    },
-    {
-      "domain": "randers.dk",
-      "observations": 58,
-      "unique_targets": 13,
-      "relationship_types": {
-        "editorial_link": 11,
-        "script_dependency": 7,
-        "font_or_preload_dependency": 1,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 3,
-        "form_destination": 1
-      }
+      "count": 673
     },
     {
       "domain": "frederiksberg.dk",
-      "observations": 58,
-      "unique_targets": 16,
-      "relationship_types": {
-        "editorial_link": 16,
-        "script_dependency": 9,
-        "stylesheet_dependency": 4,
-        "image_or_media_dependency": 3,
-        "form_destination": 2
-      }
-    },
-    {
-      "domain": "roskilde.dk",
-      "observations": 58,
-      "unique_targets": 13,
-      "relationship_types": {
-        "editorial_link": 12,
-        "script_dependency": 10,
-        "font_or_preload_dependency": 1,
-        "stylesheet_dependency": 9,
-        "image_or_media_dependency": 4,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "fredericia.dk",
-      "observations": 48,
-      "unique_targets": 17,
-      "relationship_types": {
-        "editorial_link": 11,
-        "script_dependency": 8,
-        "stylesheet_dependency": 5,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "holbaek.dk",
-      "observations": 40,
-      "unique_targets": 11,
-      "relationship_types": {
-        "editorial_link": 11,
-        "script_dependency": 4,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 2
-      }
-    },
-    {
-      "domain": "forsvaret.dk",
-      "observations": 37,
-      "unique_targets": 20,
-      "relationship_types": {
-        "editorial_link": 24,
-        "script_dependency": 2,
-        "stylesheet_dependency": 2,
-        "font_or_preload_dependency": 2,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "uvm.dk",
-      "observations": 37,
-      "unique_targets": 16,
-      "relationship_types": {
-        "editorial_link": 15,
-        "script_dependency": 5,
-        "font_or_preload_dependency": 2,
-        "image_or_media_dependency": 2,
-        "form_destination": 2,
-        "stylesheet_dependency": 1
-      }
-    },
-    {
-      "domain": "borger.dk",
-      "observations": 35,
-      "unique_targets": 19,
-      "relationship_types": {
-        "editorial_link": 22,
-        "script_dependency": 3,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 2,
-        "form_destination": 2
-      }
-    },
-    {
-      "domain": "fvm.dk",
-      "observations": 30,
-      "unique_targets": 12,
-      "relationship_types": {
-        "editorial_link": 12,
-        "script_dependency": 4,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 2,
-        "form_destination": 2
-      }
+      "count": 651
     },
     {
       "domain": "slagelse.dk",
-      "observations": 29,
-      "unique_targets": 11,
-      "relationship_types": {
-        "editorial_link": 10,
-        "script_dependency": 3,
-        "font_or_preload_dependency": 4,
-        "stylesheet_dependency": 4
-      }
+      "count": 576
+    },
+    {
+      "domain": "herning.dk",
+      "count": 466
+    },
+    {
+      "domain": "viborg.dk",
+      "count": 449
+    },
+    {
+      "domain": "albertslund.dk",
+      "count": 429
+    },
+    {
+      "domain": "roskilde.dk",
+      "count": 420
+    },
+    {
+      "domain": "randers.dk",
+      "count": 362
+    },
+    {
+      "domain": "holbaek.dk",
+      "count": 359
     },
     {
       "domain": "ballerup.dk",
-      "observations": 29,
-      "unique_targets": 13,
-      "relationship_types": {
-        "editorial_link": 10,
-        "script_dependency": 5,
-        "stylesheet_dependency": 4,
-        "image_or_media_dependency": 2,
-        "form_destination": 2
-      }
+      "count": 357
     },
     {
       "domain": "hjoerring.dk",
-      "observations": 27,
-      "unique_targets": 10,
-      "relationship_types": {
-        "editorial_link": 12,
-        "script_dependency": 4,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 2
-      }
-    },
-    {
-      "domain": "dr.dk",
-      "observations": 25,
-      "unique_targets": 8,
-      "relationship_types": {
-        "editorial_link": 6,
-        "script_dependency": 1,
-        "font_or_preload_dependency": 4,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1
-      }
-    },
-    {
-      "domain": "rsyd.dk",
-      "observations": 25,
-      "unique_targets": 9,
-      "relationship_types": {
-        "editorial_link": 5,
-        "script_dependency": 3,
-        "stylesheet_dependency": 3,
-        "font_or_preload_dependency": 1,
-        "image_or_media_dependency": 1
-      }
-    },
-    {
-      "domain": "holstebro.dk",
-      "observations": 24,
-      "unique_targets": 15,
-      "relationship_types": {
-        "editorial_link": 13,
-        "script_dependency": 4,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 2,
-        "font_or_preload_dependency": 2
-      }
-    },
-    {
-      "domain": "dst.dk",
-      "observations": 22,
-      "unique_targets": 8,
-      "relationship_types": {
-        "editorial_link": 7,
-        "script_dependency": 2,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "digst.dk",
-      "observations": 20,
-      "unique_targets": 11,
-      "relationship_types": {
-        "editorial_link": 10,
-        "script_dependency": 3,
-        "font_or_preload_dependency": 3,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "fm.dk",
-      "observations": 20,
-      "unique_targets": 14,
-      "relationship_types": {
-        "editorial_link": 12,
-        "script_dependency": 4,
-        "font_or_preload_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "koege.dk",
-      "observations": 18,
-      "unique_targets": 4,
-      "relationship_types": {
-        "editorial_link": 4,
-        "script_dependency": 2,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "skat.dk",
-      "observations": 17,
-      "unique_targets": 8,
-      "relationship_types": {
-        "editorial_link": 11,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1,
-        "script_dependency": 2,
-        "font_or_preload_dependency": 1
-      }
-    },
-    {
-      "domain": "skanderborg.dk",
-      "observations": 16,
-      "unique_targets": 5,
-      "relationship_types": {
-        "editorial_link": 7,
-        "script_dependency": 3,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 2,
-        "font_or_preload_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "em.dk",
-      "observations": 15,
-      "unique_targets": 10,
-      "relationship_types": {
-        "editorial_link": 11,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "aalborg.dk",
-      "observations": 13,
-      "unique_targets": 4,
-      "relationship_types": {
-        "editorial_link": 2,
-        "script_dependency": 4,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 2,
-        "form_destination": 2
-      }
-    },
-    {
-      "domain": "esbjerg.dk",
-      "observations": 13,
-      "unique_targets": 9,
-      "relationship_types": {
-        "editorial_link": 5,
-        "script_dependency": 2,
-        "font_or_preload_dependency": 2,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 1
-      }
-    },
-    {
-      "domain": "nemkonto.dk",
-      "observations": 12,
-      "unique_targets": 4,
-      "relationship_types": {
-        "script_dependency": 3,
-        "stylesheet_dependency": 3,
-        "font_or_preload_dependency": 2
-      }
-    },
-    {
-      "domain": "odense.dk",
-      "observations": 12,
-      "unique_targets": 4,
-      "relationship_types": {
-        "editorial_link": 6,
-        "script_dependency": 2,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1,
-        "font_or_preload_dependency": 1
-      }
-    },
-    {
-      "domain": "bm.dk",
-      "observations": 12,
-      "unique_targets": 8,
-      "relationship_types": {
-        "editorial_link": 7,
-        "script_dependency": 2,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "sonderborg.dk",
-      "observations": 11,
-      "unique_targets": 6,
-      "relationship_types": {
-        "editorial_link": 5,
-        "script_dependency": 2,
-        "font_or_preload_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "stm.dk",
-      "observations": 11,
-      "unique_targets": 6,
-      "relationship_types": {
-        "editorial_link": 6,
-        "script_dependency": 2,
-        "font_or_preload_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "helsingor.dk",
-      "observations": 10,
-      "unique_targets": 5,
-      "relationship_types": {
-        "editorial_link": 4,
-        "script_dependency": 3,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "svendborg.dk",
-      "observations": 10,
-      "unique_targets": 6,
-      "relationship_types": {
-        "editorial_link": 6,
-        "script_dependency": 2,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1
-      }
-    },
-    {
-      "domain": "gladsaxe.dk",
-      "observations": 8,
-      "unique_targets": 1,
-      "relationship_types": {
-        "editorial_link": 1,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1
-      }
-    },
-    {
-      "domain": "politi.dk",
-      "observations": 8,
-      "unique_targets": 3,
-      "relationship_types": {
-        "editorial_link": 4,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "sundhed.dk",
-      "observations": 8,
-      "unique_targets": 3,
-      "relationship_types": {
-        "script_dependency": 3,
-        "stylesheet_dependency": 1
-      }
-    },
-    {
-      "domain": "sikkerdigital.dk",
-      "observations": 8,
-      "unique_targets": 4,
-      "relationship_types": {
-        "editorial_link": 5,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "naestved.dk",
-      "observations": 6,
-      "unique_targets": 2,
-      "relationship_types": {
-        "editorial_link": 3,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1
-      }
-    },
-    {
-      "domain": "regionh.dk",
-      "observations": 4,
-      "unique_targets": 1,
-      "relationship_types": {
-        "editorial_link": 1,
-        "script_dependency": 2,
-        "stylesheet_dependency": 1
-      }
-    },
-    {
-      "domain": "ufm.dk",
-      "observations": 4,
-      "unique_targets": 1,
-      "relationship_types": {
-        "script_dependency": 1,
-        "stylesheet_dependency": 1
-      }
-    },
-    {
-      "domain": "silkeborg.dk",
-      "observations": 3,
-      "unique_targets": 2,
-      "relationship_types": {
-        "editorial_link": 1,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1
-      }
-    }
-  ],
-  "top_targets": [
-    {
-      "domain": "kk.dk",
-      "observations": 309
-    },
-    {
-      "domain": "aarhus.dk",
-      "observations": 213
-    },
-    {
-      "domain": "digst.dk",
-      "observations": 173
-    },
-    {
-      "domain": "um.dk",
-      "observations": 128
-    },
-    {
-      "domain": "rm.dk",
-      "observations": 111
-    },
-    {
-      "domain": "cookieinformation.com",
-      "observations": 102
-    },
-    {
-      "domain": "facebook.com",
-      "observations": 96
-    },
-    {
-      "domain": "cloudflare.com",
-      "observations": 81
-    },
-    {
-      "domain": "cludo.com",
-      "observations": 72
-    },
-    {
-      "domain": "linkedin.com",
-      "observations": 72
-    },
-    {
-      "domain": "borger.dk",
-      "observations": 61
-    },
-    {
-      "domain": "herning.dk",
-      "observations": 54
-    },
-    {
-      "domain": "rn.dk",
-      "observations": 54
-    },
-    {
-      "domain": "aspnetcdn.com",
-      "observations": 52
-    },
-    {
-      "domain": "dreambroker.com",
-      "observations": 52
-    },
-    {
-      "domain": "vejle.dk",
-      "observations": 47
-    },
-    {
-      "domain": "cookiebot.com",
-      "observations": 44
-    },
-    {
-      "domain": "albertslund.dk",
-      "observations": 43
-    },
-    {
-      "domain": "instagram.com",
-      "observations": 40
-    },
-    {
-      "domain": "googleapis.com",
-      "observations": 38
-    },
-    {
-      "domain": "viborg.dk",
-      "observations": 36
-    },
-    {
-      "domain": "google.com",
-      "observations": 35
-    },
-    {
-      "domain": "gentofte.dk",
-      "observations": 30
-    },
-    {
-      "domain": "roskilde.dk",
-      "observations": 29
-    },
-    {
-      "domain": "twitter.com",
-      "observations": 28
-    },
-    {
-      "domain": "horsens.dk",
-      "observations": 28
-    },
-    {
-      "domain": "typekit.net",
-      "observations": 27
-    },
-    {
-      "domain": "cookiebot.eu",
-      "observations": 27
-    },
-    {
-      "domain": "frederiksberg.dk",
-      "observations": 26
-    },
-    {
-      "domain": "silktide.com",
-      "observations": 24
-    },
-    {
-      "domain": "randers.dk",
-      "observations": 22
-    },
-    {
-      "domain": "gstatic.com",
-      "observations": 22
-    },
-    {
-      "domain": "apple.com",
-      "observations": 21
-    },
-    {
-      "domain": "monsido.com",
-      "observations": 20
-    },
-    {
-      "domain": "siteimproveanalytics.com",
-      "observations": 19
-    },
-    {
-      "domain": "unpkg.com",
-      "observations": 18
-    },
-    {
-      "domain": "hjoerring.dk",
-      "observations": 15
-    },
-    {
-      "domain": "fredericia.dk",
-      "observations": 15
+      "count": 344
     },
     {
       "domain": "forsvaret.dk",
-      "observations": 14
+      "count": 331
     },
     {
-      "domain": "uvm.dk",
-      "observations": 13
+      "domain": "sonderborg.dk",
+      "count": 217
     },
     {
-      "domain": "denmark.dk",
-      "observations": 12
-    },
-    {
-      "domain": "slagelse.dk",
-      "observations": 12
+      "domain": "digst.dk",
+      "count": 214
     },
     {
       "domain": "skanderborg.dk",
-      "observations": 12
+      "count": 197
     },
     {
-      "domain": "dr.dk",
-      "observations": 12
+      "domain": "politi.dk",
+      "count": 184
     },
     {
-      "domain": "fvm.dk",
-      "observations": 12
+      "domain": "fredericia.dk",
+      "count": 166
     },
     {
-      "domain": "koege.dk",
-      "observations": 12
+      "domain": "em.dk",
+      "count": 162
     },
     {
-      "domain": "holbaek.dk",
-      "observations": 12
+      "domain": "uvm.dk",
+      "count": 161
     },
     {
-      "domain": "aula.dk",
-      "observations": 11
+      "domain": "skat.dk",
+      "count": 146
+    },
+    {
+      "domain": "holstebro.dk",
+      "count": 142
+    },
+    {
+      "domain": "borger.dk",
+      "count": 128
+    },
+    {
+      "domain": "svendborg.dk",
+      "count": 126
+    },
+    {
+      "domain": "rsyd.dk",
+      "count": 120
+    },
+    {
+      "domain": "at.dk",
+      "count": 118
+    },
+    {
+      "domain": "fm.dk",
+      "count": 118
+    },
+    {
+      "domain": "bm.dk",
+      "count": 115
+    },
+    {
+      "domain": "fmn.dk",
+      "count": 115
     },
     {
       "domain": "aalborg.dk",
-      "observations": 11
+      "count": 110
+    },
+    {
+      "domain": "naestved.dk",
+      "count": 108
+    },
+    {
+      "domain": "fvm.dk",
+      "count": 106
+    },
+    {
+      "domain": "trm.dk",
+      "count": 105
+    },
+    {
+      "domain": "stm.dk",
+      "count": 103
+    },
+    {
+      "domain": "stps.dk",
+      "count": 102
     },
     {
       "domain": "odense.dk",
-      "observations": 10
+      "count": 100
+    },
+    {
+      "domain": "koege.dk",
+      "count": 92
+    },
+    {
+      "domain": "nemkonto.dk",
+      "count": 92
+    },
+    {
+      "domain": "skm.dk",
+      "count": 92
+    },
+    {
+      "domain": "kefm.dk",
+      "count": 90
+    },
+    {
+      "domain": "esbjerg.dk",
+      "count": 89
+    },
+    {
+      "domain": "regionsjaelland.dk",
+      "count": 88
+    },
+    {
+      "domain": "sm.dk",
+      "count": 86
+    },
+    {
+      "domain": "kum.dk",
+      "count": 86
     }
   ],
-  "gov_to_gov_links": [
+  "top_target_domains": [
     {
-      "source": "borger.dk",
-      "target": "lolland.dk",
-      "target_country": "Denmark",
-      "cross_country": false
+      "domain": "kk.dk",
+      "count": 2808
     },
     {
-      "source": "borger.dk",
-      "target": "sonderborgkommune.dk",
-      "target_country": "Denmark",
-      "cross_country": false
+      "domain": "aarhus.dk",
+      "count": 1866
     },
     {
-      "source": "borger.dk",
-      "target": "foedevarestyrelsen.dk",
-      "target_country": "Denmark",
-      "cross_country": false
+      "domain": "digst.dk",
+      "count": 1530
     },
     {
-      "source": "digst.dk",
-      "target": "regioner.dk",
-      "target_country": "Denmark",
-      "cross_country": false
+      "domain": "um.dk",
+      "count": 975
+    },
+    {
+      "domain": "facebook.com",
+      "count": 852
+    },
+    {
+      "domain": "rm.dk",
+      "count": 818
+    },
+    {
+      "domain": "cookieinformation.com",
+      "count": 807
+    },
+    {
+      "domain": "linkedin.com",
+      "count": 654
+    },
+    {
+      "domain": "cloudflare.com",
+      "count": 602
+    },
+    {
+      "domain": "cludo.com",
+      "count": 549
+    },
+    {
+      "domain": "borger.dk",
+      "count": 467
+    },
+    {
+      "domain": "aspnetcdn.com",
+      "count": 438
+    },
+    {
+      "domain": "dreambroker.com",
+      "count": 421
+    },
+    {
+      "domain": "rn.dk",
+      "count": 416
+    },
+    {
+      "domain": "instagram.com",
+      "count": 407
+    },
+    {
+      "domain": "vejle.dk",
+      "count": 386
+    },
+    {
+      "domain": "googleapis.com",
+      "count": 381
+    },
+    {
+      "domain": "horsens.dk",
+      "count": 368
+    },
+    {
+      "domain": "google.com",
+      "count": 340
+    },
+    {
+      "domain": "cookiebot.com",
+      "count": 326
+    },
+    {
+      "domain": "frederiksberg.dk",
+      "count": 316
+    },
+    {
+      "domain": "gentofte.dk",
+      "count": 304
+    },
+    {
+      "domain": "herning.dk",
+      "count": 297
+    },
+    {
+      "domain": "twitter.com",
+      "count": 281
+    },
+    {
+      "domain": "slagelse.dk",
+      "count": 280
+    },
+    {
+      "domain": "viborg.dk",
+      "count": 260
+    },
+    {
+      "domain": "hjoerring.dk",
+      "count": 223
+    },
+    {
+      "domain": "cookiebot.eu",
+      "count": 221
+    },
+    {
+      "domain": "gstatic.com",
+      "count": 213
+    },
+    {
+      "domain": "roskilde.dk",
+      "count": 198
+    },
+    {
+      "domain": "albertslund.dk",
+      "count": 197
+    },
+    {
+      "domain": "typekit.net",
+      "count": 196
+    },
+    {
+      "domain": "apple.com",
+      "count": 192
+    },
+    {
+      "domain": "silktide.com",
+      "count": 184
+    },
+    {
+      "domain": "randers.dk",
+      "count": 167
+    },
+    {
+      "domain": "ballerup.dk",
+      "count": 160
+    },
+    {
+      "domain": "siteimproveanalytics.com",
+      "count": 139
+    },
+    {
+      "domain": "monsido.com",
+      "count": 138
+    },
+    {
+      "domain": "forsvaret.dk",
+      "count": 137
+    },
+    {
+      "domain": "twentythree.com",
+      "count": 125
+    },
+    {
+      "domain": "holbaek.dk",
+      "count": 125
+    },
+    {
+      "domain": "unpkg.com",
+      "count": 121
+    },
+    {
+      "domain": "aula.dk",
+      "count": 103
+    },
+    {
+      "domain": "gopublic.dk",
+      "count": 99
+    },
+    {
+      "domain": "skat.dk",
+      "count": 96
+    },
+    {
+      "domain": "denmark.dk",
+      "count": 92
+    },
+    {
+      "domain": "virk.dk",
+      "count": 86
+    },
+    {
+      "domain": "skanderborg.dk",
+      "count": 85
+    },
+    {
+      "domain": "siteimprove.com",
+      "count": 81
+    },
+    {
+      "domain": "politi.dk",
+      "count": 81
     }
-  ]
+  ],
+  "relationship_types": {
+    "editorial_link": 1982,
+    "script_dependency": 718,
+    "font_or_preload_dependency": 114,
+    "image_or_media_dependency": 450,
+    "stylesheet_dependency": 552,
+    "form_destination": 327
+  },
+  "generated_at": "2026-07-19T02:16:24.547077+00:00"
 }
