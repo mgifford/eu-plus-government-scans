@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-07-19 00:56 UTC_
+_Generated: 2026-07-19 01:42 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -15,7 +15,7 @@ Coverage is measured as pages scanned out of **82,714** pages available in the s
 |-----------|--------------|-----------|----------|---------|
 | Social Media | 0 scanned (0 reachable) | 82,714 | <span role="img" aria-label="0.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:0px;"></span></span><span class="sm-bar__label">0.0%</span></span> | — |
 | Technology | 0 scanned | 82,714 | (manual scan) | — |
-| Lighthouse | 19,034 scanned | 82,714 | <span role="img" aria-label="23.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:28px;"></span></span><span class="sm-bar__label">23.0%</span></span> | 41.5 days |
+| Lighthouse | 19,036 scanned | 82,714 | <span role="img" aria-label="23.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:28px;"></span></span><span class="sm-bar__label">23.0%</span></span> | 41.5 days |
 | Accessibility Statements | 0 scanned | 82,714 | <span role="img" aria-label="0.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:0px;"></span></span><span class="sm-bar__label">0.0%</span></span> | — |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by any scan type. **Avg Age** shows the mean number of days (or hours) since each URL in that scan type was last scanned — lower is fresher.
@@ -41,7 +41,7 @@ _No technology scans have been run yet. Trigger the **Scan Technology Stack** wo
 | Greece | 1,148 | 87 | 86 | 91 | 88 | 2026-07-17 |
 | Hungary | 387 | 88 | 76 | 81 | 86 | 2026-07-04 |
 | Iceland | 127 | 90 | 91 | 91 | 91 | 2026-07-04 |
-| Ireland | 481 | 91 | 91 | 90 | 87 | 2026-07-11 |
+| Ireland | 483 | 91 | 91 | 90 | 87 | 2026-07-19 |
 | Italy | 880 | 87 | 88 | 94 | 88 | 2026-07-17 |
 | Latvia | 767 | 83 | 87 | 89 | 88 | 2026-07-17 |
 | Lithuania | 109 | 88 | 81 | 87 | 85 | 2026-07-05 |
@@ -56,7 +56,7 @@ _No technology scans have been run yet. Trigger the **Scan Technology Stack** wo
 | Slovakia | 415 | 86 | 87 | 90 | 88 | 2026-07-03 |
 | Slovenia | 195 | 88 | 79 | 89 | 85 | 2026-07-03 |
 | Spain | 346 | 86 | 87 | 87 | 87 | 2026-07-18 |
-| Sweden | 760 | 89 | 92 | 92 | 85 | 2026-07-14 |
+| Sweden | 760 | 89 | 91 | 92 | 85 | 2026-07-19 |
 | Switzerland | 617 | 86 | 89 | 96 | 88 | 2026-07-14 |
 | United Kingdom | 490 | 91 | 93 | 91 | 86 | 2026-07-15 |
 
