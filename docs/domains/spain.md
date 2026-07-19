@@ -6,7 +6,7 @@ permalink: /domains/spain.html
 
 [← Back to all countries](../domains.html)
 
-**2,870 domains** · **6,071 pages**
+**2,890 domains** · **6,091 pages**
 
 | Domain | Pages |
 |--------|-------|
@@ -54,6 +54,7 @@ permalink: /domains/spain.html
 | `administracionlocal.cantabria.es` | [Visit administracionlocal.cantabria.es homepage](https://administracionlocal.cantabria.es/), [Visit administracionlocal.cantabria.es/detalle/-/journal_content/56_INSTANCE_DETALLE/7197707/81353987](https://administracionlocal.cantabria.es/detalle/-/journal_content/56_INSTANCE_DETALLE/7197707/81353987) |
 | `administracionlocal.navarra.es` | [Visit administracionlocal.navarra.es homepage](https://administracionlocal.navarra.es/) |
 | `administraciopublica.gencat.cat` | [Visit administraciopublica.gencat.cat homepage](https://administraciopublica.gencat.cat/), [Visit administraciopublica.gencat.cat/ca/treballar-a-la-generalitat/catalunya-futur/index.html](https://administraciopublica.gencat.cat/ca/treballar-a-la-generalitat/catalunya-futur/index.html), [Visit administraciopublica.gencat.cat/ca/treballar-a-la-generalitat/oposicions/](https://administraciopublica.gencat.cat/ca/treballar-a-la-generalitat/oposicions/) |
+| `aepd.es` | [Visit aepd.es homepage](https://aepd.es/) |
 | `aeroports.gencat.cat` | [Visit aeroports.gencat.cat homepage](https://aeroports.gencat.cat/), [Visit aeroports.gencat.cat/ca/](https://aeroports.gencat.cat/ca/), [Visit aeroports.gencat.cat/ca/contacte/](https://aeroports.gencat.cat/ca/contacte/) |
 | `aesia.digital.gob.es` | [Visit aesia.digital.gob.es homepage](https://aesia.digital.gob.es/), [Visit aesia.digital.gob.es/es/ofertas-funcionarios/concurso-especifico-1e2025](https://aesia.digital.gob.es/es/ofertas-funcionarios/concurso-especifico-1e2025) |
 | `afersreligiosos.gencat.cat` | [Visit afersreligiosos.gencat.cat homepage](https://afersreligiosos.gencat.cat/), [Visit afersreligiosos.gencat.cat/ca/actualitat/butlleti-dafers-religiosos/135-juny-2025/](https://afersreligiosos.gencat.cat/ca/actualitat/butlleti-dafers-religiosos/135-juny-2025/) |
@@ -377,6 +378,7 @@ permalink: /domains/spain.html
 | `cauclmeducativo.castillalamancha.es` | [Visit cauclmeducativo.castillalamancha.es homepage](https://cauclmeducativo.castillalamancha.es/), [Visit cauclmeducativo.castillalamancha.es/articulos/400](https://cauclmeducativo.castillalamancha.es/articulos/400) |
 | `cazaypesca.carm.es` | [Visit cazaypesca.carm.es homepage](https://cazaypesca.carm.es/), [Visit cazaypesca.carm.es/web/cazaypesca](https://cazaypesca.carm.es/web/cazaypesca) |
 | `ccam.gencat.cat` | [Visit ccam.gencat.cat homepage](https://ccam.gencat.cat/), [Visit ccam.gencat.cat/ca/detalls/noticia/20250311_formacio_arquitectura_artesania](https://ccam.gencat.cat/ca/detalls/noticia/20250311_formacio_arquitectura_artesania), [Visit ccam.gencat.cat/ca/serveis/publicacions/pla-competitivitat-ccam-2024-2028/](https://ccam.gencat.cat/ca/serveis/publicacions/pla-competitivitat-ccam-2024-2028/) |
+| `ccyl.es` | [Visit ccyl.es homepage](https://ccyl.es/) |
 | `cd-conservatoriodanzapuertollano.centros.castillalamancha.es` | [Visit cd-conservatoriodanzapuertollano.centros.castillalamancha.es homepage](https://cd-conservatoriodanzapuertollano.centros.castillalamancha.es/) |
 | `cddigital.castillalamancha.es` | [Visit cddigital.castillalamancha.es/accesibilidad](https://cddigital.castillalamancha.es/accesibilidad) |
 | `cdn.inaem.gob.es` | [Visit cdn.inaem.gob.es homepage](https://cdn.inaem.gob.es/), [Visit cdn.inaem.gob.es/espectaculo/los-dias-felices/](https://cdn.inaem.gob.es/espectaculo/los-dias-felices/) |
@@ -756,6 +758,7 @@ permalink: /domains/spain.html
 | `comerciante.jcyl.es` | [Visit comerciante.jcyl.es homepage](https://comerciante.jcyl.es/), [Visit comerciante.jcyl.es/web/es/emprendedor/sucesion-empresarial.html](https://comerciante.jcyl.es/web/es/emprendedor/sucesion-empresarial.html), [Visit comerciante.jcyl.es/web/jcyl/Comercio/es/Plantilla100/1284753309713/_/_/_](https://comerciante.jcyl.es/web/jcyl/Comercio/es/Plantilla100/1284753309713/_/_/_) |
 | `comercio.ayto-alcaladehenares.es` | [Visit comercio.ayto-alcaladehenares.es homepage](https://comercio.ayto-alcaladehenares.es/), [Visit comercio.ayto-alcaladehenares.es/concurso-de-iluminacion-de-escaparates-noche-en-blanco-2025/](https://comercio.ayto-alcaladehenares.es/concurso-de-iluminacion-de-escaparates-noche-en-blanco-2025/) |
 | `comercio.castillalamancha.es` | [Visit comercio.castillalamancha.es homepage](https://comercio.castillalamancha.es/), [Visit comercio.castillalamancha.es/procedimientos-administrativos](https://comercio.castillalamancha.es/procedimientos-administrativos) |
+| `comercio.es` | [Visit comercio.es homepage](https://comercio.es/) |
 | `comercio.gob.es` | [Visit comercio.gob.es homepage](https://comercio.gob.es/), [Visit comercio.gob.es/en-us/paginas/politica-cookies.aspx](https://comercio.gob.es/en-us/paginas/politica-cookies.aspx), [Visit comercio.gob.es/en-us/prtr-comercio/Paginas/Plan-de-Recuperacion-Comercio.aspx](https://comercio.gob.es/en-us/prtr-comercio/Paginas/Plan-de-Recuperacion-Comercio.aspx) |
 | `comercio.xunta.gal` | [Visit comercio.xunta.gal homepage](https://comercio.xunta.gal/), [Visit comercio.xunta.gal/aviso-legal](https://comercio.xunta.gal/aviso-legal) |
 | `comercioconectado.gob.es` | [Visit comercioconectado.gob.es homepage](https://comercioconectado.gob.es/), [Visit comercioconectado.gob.es/en-us/Impulsa/Paginas/default.aspx](https://comercioconectado.gob.es/en-us/Impulsa/Paginas/default.aspx), [Visit comercioconectado.gob.es/en-us/Paginas/Login.aspx](https://comercioconectado.gob.es/en-us/Paginas/Login.aspx) |
@@ -845,6 +848,7 @@ permalink: /domains/spain.html
 | `correu5.caib.es` | [Visit correu5.caib.es homepage](https://correu5.caib.es/) |
 | `correu6.caib.es` | [Visit correu6.caib.es homepage](https://correu6.caib.es/) |
 | `correu9.caib.es` | [Visit correu9.caib.es homepage](https://correu9.caib.es/) |
+| `cortesaragon.es` | [Visit cortesaragon.es homepage](https://cortesaragon.es/) |
 | `coteja.malaga.eu` | [Visit coteja.malaga.eu homepage](https://coteja.malaga.eu/) |
 | `cp-migueldelibes.centros.educa.jcyl.es` | [Visit cp-migueldelibes.centros.educa.jcyl.es homepage](http://cp-migueldelibes.centros.educa.jcyl.es/), [Visit cp-migueldelibes.centros.educa.jcyl.es/sitio/index.cgi](http://cp-migueldelibes.centros.educa.jcyl.es/sitio/index.cgi) |
 | `cpablitas.educacion.navarra.es` | [Visit cpablitas.educacion.navarra.es homepage](https://cpablitas.educacion.navarra.es/), [Visit cpablitas.educacion.navarra.es/web/blog/2025/03/11/preinscripciones-y-matriculacion/](https://cpablitas.educacion.navarra.es/web/blog/2025/03/11/preinscripciones-y-matriculacion/), [Visit cpablitas.educacion.navarra.es/web/blog/2025/05/14/somos-cientificas/](https://cpablitas.educacion.navarra.es/web/blog/2025/05/14/somos-cientificas/) |
@@ -919,6 +923,7 @@ permalink: /domains/spain.html
 | `crnquimica.carm.es` | [Visit crnquimica.carm.es homepage](https://crnquimica.carm.es/), [Visit crnquimica.carm.es/formacion/oferta-formativa/](https://crnquimica.carm.es/formacion/oferta-formativa/) |
 | `csed.csd.gob.es` | [Visit csed.csd.gob.es homepage](https://csed.csd.gob.es/), [Visit csed.csd.gob.es/proyectos/actualidad/538-final-ciclo-superior-tenis](https://csed.csd.gob.es/proyectos/actualidad/538-final-ciclo-superior-tenis), [Visit csed.csd.gob.es/quienes-somos/csed](https://csed.csd.gob.es/quienes-somos/csed) |
 | `csfp.centros.educa.jcyl.es` | [Visit csfp.centros.educa.jcyl.es homepage](http://csfp.centros.educa.jcyl.es/), [Visit csfp.centros.educa.jcyl.es/sitio/index.cgi](http://csfp.centros.educa.jcyl.es/sitio/index.cgi) |
+| `csic.es` | [Visit csic.es homepage](https://csic.es/) |
 | `csirtcv.gva.es` | [Visit csirtcv.gva.es homepage](https://csirtcv.gva.es/), [Visit csirtcv.gva.es/hemeroteca.html](https://csirtcv.gva.es/hemeroteca.html) |
 | `csscovid19.aragon.es` | [Visit csscovid19.aragon.es homepage](https://csscovid19.aragon.es/) |
 | `csv.caib.es` | [Visit csv.caib.es homepage](https://csv.caib.es/), [Visit csv.caib.es/concsvfront/a11y](https://csv.caib.es/concsvfront/a11y) |
@@ -938,6 +943,7 @@ permalink: /domains/spain.html
 | `culturaelingua.xunta.gal` | [Visit culturaelingua.xunta.gal homepage](https://culturaelingua.xunta.gal/), [Visit culturaelingua.xunta.gal/aviso-legal](https://culturaelingua.xunta.gal/aviso-legal) |
 | `culturaonline.consorcimuseus.gva.es` | [Visit culturaonline.consorcimuseus.gva.es homepage](https://culturaonline.consorcimuseus.gva.es/), [Visit culturaonline.consorcimuseus.gva.es/manuel-ferrer-hernandez/](https://culturaonline.consorcimuseus.gva.es/manuel-ferrer-hernandez/) |
 | `culturayciudadania.cultura.gob.es` | [Visit culturayciudadania.cultura.gob.es homepage](https://culturayciudadania.cultura.gob.es/), [Visit culturayciudadania.cultura.gob.es/ayudas.html](https://culturayciudadania.cultura.gob.es/ayudas.html) |
+| `culturaydeporte.gob.es` | [Visit culturaydeporte.gob.es homepage](https://culturaydeporte.gob.es/) |
 | `curtcreixent.ivc.gva.es` | [Visit curtcreixent.ivc.gva.es homepage](https://curtcreixent.ivc.gva.es/), [Visit curtcreixent.ivc.gva.es/contacto/](https://curtcreixent.ivc.gva.es/contacto/) |
 | `cvd-cc.sanidad.gob.es` | [Visit cvd-cc.sanidad.gob.es homepage](https://cvd-cc.sanidad.gob.es/) |
 | `cvd.sanidad.gob.es` | [Visit cvd.sanidad.gob.es homepage](https://cvd.sanidad.gob.es/), [Visit cvd.sanidad.gob.es/cvdcovid/cvdcovid-formulario/contact.xhtml](https://cvd.sanidad.gob.es/cvdcovid/cvdcovid-formulario/contact.xhtml) |
@@ -1343,6 +1349,7 @@ permalink: /domains/spain.html
 | `gobiernoabierto.ayto-pinto.es` | [Visit gobiernoabierto.ayto-pinto.es homepage](https://gobiernoabierto.ayto-pinto.es/), [Visit gobiernoabierto.ayto-pinto.es/detalle-novedades/-/asset_publisher/0jTpiT6riwMd/content/informaci%25C3%25B3n-convocatoria-obras-edificios-2024](https://gobiernoabierto.ayto-pinto.es/detalle-novedades/-/asset_publisher/0jTpiT6riwMd/content/informaci%25C3%25B3n-convocatoria-obras-edificios-2024) |
 | `gobiernoabierto.jcyl.es` | [Visit gobiernoabierto.jcyl.es homepage](https://gobiernoabierto.jcyl.es/), [Visit gobiernoabierto.jcyl.es/web/es/gobierno-abierto-contacta.html](https://gobiernoabierto.jcyl.es/web/es/gobierno-abierto-contacta.html), [Visit gobiernoabierto.jcyl.es/web/es/transparencia/derecho-informacion-publica.html](https://gobiernoabierto.jcyl.es/web/es/transparencia/derecho-informacion-publica.html) |
 | `gobiernoabierto.navarra.es` | [Visit gobiernoabierto.navarra.es homepage](https://gobiernoabierto.navarra.es/), [Visit gobiernoabierto.navarra.es/es/gobierno-abierto-de-navarra](https://gobiernoabierto.navarra.es/es/gobierno-abierto-de-navarra) |
+| `govern.cat` | [Visit govern.cat homepage](https://govern.cat/) |
 | `governobert.gencat.cat` | [Visit governobert.gencat.cat homepage](https://governobert.gencat.cat/), [Visit governobert.gencat.cat/ca/bon-govern/](https://governobert.gencat.cat/ca/bon-govern/), [Visit governobert.gencat.cat/ca/inici/](https://governobert.gencat.cat/ca/inici/) |
 | `gruamunicipal.ajuntament.barcelona.cat` | [Visit gruamunicipal.ajuntament.barcelona.cat homepage](https://gruamunicipal.ajuntament.barcelona.cat/), [Visit gruamunicipal.ajuntament.barcelona.cat/ca](https://gruamunicipal.ajuntament.barcelona.cat/ca) |
 | `guc.actic.gencat.cat` | [Visit guc.actic.gencat.cat homepage](https://guc.actic.gencat.cat/), [Visit guc.actic.gencat.cat/check-certificate](https://guc.actic.gencat.cat/check-certificate) |
@@ -1675,6 +1682,7 @@ permalink: /domains/spain.html
 | `ieszorrilla.centros.educa.jcyl.es` | [Visit ieszorrilla.centros.educa.jcyl.es homepage](http://ieszorrilla.centros.educa.jcyl.es/), [Visit ieszorrilla.centros.educa.jcyl.es/sitio/index.cgi](http://ieszorrilla.centros.educa.jcyl.es/sitio/index.cgi) |
 | `ig.carm.es` | [Visit ig.carm.es homepage](https://ig.carm.es/), [Visit ig.carm.es/contabilidad](https://ig.carm.es/contabilidad) |
 | `igafa.xunta.gal` | [Visit igafa.xunta.gal homepage](https://igafa.xunta.gal/), [Visit igafa.xunta.gal/gl/aviso-legal](https://igafa.xunta.gal/gl/aviso-legal), [Visit igafa.xunta.gal/gl/novas](https://igafa.xunta.gal/gl/novas) |
+| `ign.es` | [Visit ign.es homepage](https://ign.es/) |
 | `iguala.madrid.es` | [Visit iguala.madrid.es homepage](https://iguala.madrid.es/), [Visit iguala.madrid.es/pages/distritos-y-barrios](https://iguala.madrid.es/pages/distritos-y-barrios), [Visit iguala.madrid.es/search](https://iguala.madrid.es/search?collection=appAndMap) |
 | `igualdad.ayto-alcaladehenares.es` | [Visit igualdad.ayto-alcaladehenares.es homepage](https://igualdad.ayto-alcaladehenares.es/), [Visit igualdad.ayto-alcaladehenares.es/25-de-noviembre-dia-internacional-para-la-eliminacion-de-la-violencia-contra-las-mujeres/](https://igualdad.ayto-alcaladehenares.es/25-de-noviembre-dia-internacional-para-la-eliminacion-de-la-violencia-contra-las-mujeres/) |
 | `igualdad.sede.gob.es` | [Visit igualdad.sede.gob.es homepage](https://igualdad.sede.gob.es/) |
@@ -1837,6 +1845,7 @@ permalink: /domains/spain.html
 | `lse.060.gob.es` | [Visit lse.060.gob.es homepage](https://lse.060.gob.es/), [Visit lse.060.gob.es/pag_Home/espanaAdmon/directorioOrganigramas/quienEsQuien/gobiernoDelEstado/OrganigramasMinisterios-2023.html](https://lse.060.gob.es/pag_Home/espanaAdmon/directorioOrganigramas/quienEsQuien/gobiernoDelEstado/OrganigramasMinisterios-2023.html) |
 | `lssi.digital.gob.es` | [Visit lssi.digital.gob.es homepage](https://lssi.digital.gob.es/), [Visit lssi.digital.gob.es/la-ley/informacion-practica](https://lssi.digital.gob.es/la-ley/informacion-practica), [Visit lssi.digital.gob.es/proveedores-de-servicios](https://lssi.digital.gob.es/proveedores-de-servicios) |
 | `mab.ivc.gva.es` | [Visit mab.ivc.gva.es homepage](https://mab.ivc.gva.es/), [Visit mab.ivc.gva.es/es/](https://mab.ivc.gva.es/es/), [Visit mab.ivc.gva.es/informacio-util/](https://mab.ivc.gva.es/informacio-util/) |
+| `madrid.org` | [Visit madrid.org homepage](https://madrid.org/) |
 | `mailing.ivc.gva.es` | [Visit mailing.ivc.gva.es homepage](https://mailing.ivc.gva.es/) |
 | `malaga.formacion.sspa.juntadeandalucia.es` | [Visit malaga.formacion.sspa.juntadeandalucia.es homepage](https://malaga.formacion.sspa.juntadeandalucia.es/), [Visit malaga.formacion.sspa.juntadeandalucia.es homepage](https://malaga.formacion.sspa.juntadeandalucia.es/?redirect=0) |
 | `manises.san.gva.es` | [Visit manises.san.gva.es homepage](https://manises.san.gva.es/), [Visit manises.san.gva.es/web/manises/gestion-de-citas](https://manises.san.gva.es/web/manises/gestion-de-citas) |
@@ -1994,6 +2003,7 @@ permalink: /domains/spain.html
 | `opendata.euskadi.eus` | [Visit opendata.euskadi.eus homepage](https://opendata.euskadi.eus/), [Visit opendata.euskadi.eus/datu-katalogoa/](https://opendata.euskadi.eus/datu-katalogoa/?r01kQry=tC:euskadi;tT:estadistica,ds_geograficos,ds_recursos_turisticos,ds_localizaciones,ds_ayudas_subvenciones,ds_contrataciones,ds_recursos_linguisticos,ds_economicos,ds_informes_estudios,ds_meteorologicos,ds_registros,ds_rrhh,ds_eventos,ds_elecciones,ds_juridicos,ds_noticias,ds_aplicaciones,ds_autorizaciones,ds_premios_concursos,ds_procedimientos_otros,ds_general;m:documentLanguage.EQ.eu,OpendataEstadistic.IN.(0,1);cA:r01e00000ff26d46260a470b82043400c8af39732;pp:r01PageSize.10;p:Inter_portal,Inter&r01SearchEngine=meta) |
 | `opendata.jcyl.es` | [Visit opendata.jcyl.es homepage](https://opendata.jcyl.es/) |
 | `opevvmm.bilbao.eus` | [Visit opevvmm.bilbao.eus homepage](https://opevvmm.bilbao.eus/), [Visit opevvmm.bilbao.eus/OPEM/idm0/Avisos/ListadoAvisos.jsp](https://opevvmm.bilbao.eus/OPEM/idm0/Avisos/ListadoAvisos.jsp?nAviso=431), [Visit opevvmm.bilbao.eus/OPEM/idm0/ayuda.jsp](https://opevvmm.bilbao.eus/OPEM/idm0/ayuda.jsp) |
+| `ordenacionjuego.es` | [Visit ordenacionjuego.es homepage](https://ordenacionjuego.es/) |
 | `ordezkabidea.euskadi.eus` | [Visit ordezkabidea.euskadi.eus homepage](https://ordezkabidea.euskadi.eus/) |
 | `ordezkagunea.euskadi.eus` | [Visit ordezkagunea.euskadi.eus homepage](https://ordezkagunea.euskadi.eus/), [Visit ordezkagunea.euskadi.eus/login](https://ordezkagunea.euskadi.eus/login) |
 | `orgullosos.carm.es` | [Visit orgullosos.carm.es homepage](https://orgullosos.carm.es/), [Visit orgullosos.carm.es/proteccion-de-datos/](https://orgullosos.carm.es/proteccion-de-datos/) |
@@ -2025,6 +2035,11 @@ permalink: /domains/spain.html
 | `parapnte.educacion.navarra.es` | [Visit parapnte.educacion.navarra.es/2021/11/26/nueva-pagina-web/](https://parapnte.educacion.navarra.es/2021/11/26/nueva-pagina-web/) |
 | `parcsnaturals.gencat.cat` | [Visit parcsnaturals.gencat.cat homepage](https://parcsnaturals.gencat.cat/), [Visit parcsnaturals.gencat.cat/ca/inici/](https://parcsnaturals.gencat.cat/ca/inici/) |
 | `pares.cultura.gob.es` | [Visit pares.cultura.gob.es homepage](https://pares.cultura.gob.es/), [Visit pares.cultura.gob.es/comunes/politica-cookies.html](https://pares.cultura.gob.es/comunes/politica-cookies.html), [Visit pares.cultura.gob.es/micrositios-pares.html](https://pares.cultura.gob.es/micrositios-pares.html) |
+| `parlament.cat` | [Visit parlament.cat homepage](https://parlament.cat/) |
+| `parlamentib.es` | [Visit parlamentib.es homepage](https://parlamentib.es/) |
+| `parlamento-cantabria.es` | [Visit parlamento-cantabria.es homepage](https://parlamento-cantabria.es/) |
+| `parlamentodeandalucia.es` | [Visit parlamentodeandalucia.es homepage](https://parlamentodeandalucia.es/) |
+| `parlamentodegalicia.gal` | [Visit parlamentodegalicia.gal homepage](https://parlamentodegalicia.gal/) |
 | `parqueeuropa.ayto-torrejon.es` | [Visit parqueeuropa.ayto-torrejon.es homepage](https://parqueeuropa.ayto-torrejon.es/), [Visit parqueeuropa.ayto-torrejon.es/como-llegar-al-parque-europa](https://parqueeuropa.ayto-torrejon.es/como-llegar-al-parque-europa) |
 | `parquemobil.xunta.gal` | [Visit parquemobil.xunta.gal homepage](https://parquemobil.xunta.gal/) |
 | `parquesnaturales.gva.es` | [Visit parquesnaturales.gva.es homepage](https://parquesnaturales.gva.es/), [Visit parquesnaturales.gva.es/web/pn-penyal-d-ifac](https://parquesnaturales.gva.es/web/pn-penyal-d-ifac) |
@@ -2149,7 +2164,9 @@ permalink: /domains/spain.html
 | `presidencia.gencat.cat` | [Visit presidencia.gencat.cat homepage](https://presidencia.gencat.cat/), [Visit presidencia.gencat.cat/ca/ambits_d_actuacio/palau-de-la-generalitat/](https://presidencia.gencat.cat/ca/ambits_d_actuacio/palau-de-la-generalitat/) |
 | `presidencia.gva.es` | [Visit presidencia.gva.es homepage](https://presidencia.gva.es/), [Visit presidencia.gva.es/ca/web/presidencia](https://presidencia.gva.es/ca/web/presidencia) |
 | `presidencia.jcyl.es` | [Visit presidencia.jcyl.es homepage](https://presidencia.jcyl.es/) |
+| `president.cat` | [Visit president.cat homepage](https://president.cat/) |
 | `president.gva.es` | [Visit president.gva.es homepage](https://president.gva.es/), [Visit president.gva.es/web/president/saluda](https://president.gva.es/web/president/saluda) |
+| `presidente.gal` | [Visit presidente.gal homepage](https://presidente.gal/) |
 | `prestaciones.seg-social.es` | [Visit prestaciones.seg-social.es homepage](https://prestaciones.seg-social.es/), [Visit prestaciones.seg-social.es/fallecimientos-viudedad-orfandad.html](https://prestaciones.seg-social.es/fallecimientos-viudedad-orfandad.html), [Visit prestaciones.seg-social.es/gestion-prestaciones-reconocidas.html](https://prestaciones.seg-social.es/gestion-prestaciones-reconocidas.html) |
 | `presupuesto.aragon.es` | [Visit presupuesto.aragon.es homepage](https://presupuesto.aragon.es/), [Visit presupuesto.aragon.es/recibo](https://presupuesto.aragon.es/recibo) |
 | `presupuestosabiertos.madrid.es` | [Visit presupuestosabiertos.madrid.es homepage](https://presupuestosabiertos.madrid.es/), [Visit presupuestosabiertos.madrid.es/en/inversiones](https://presupuestosabiertos.madrid.es/en/inversiones), [Visit presupuestosabiertos.madrid.es/en/politicas](https://presupuestosabiertos.madrid.es/en/politicas) |
@@ -2202,6 +2219,7 @@ permalink: /domains/spain.html
 | `recuperacio.gva.es` | [Visit recuperacio.gva.es homepage](https://recuperacio.gva.es/), [Visit recuperacio.gva.es/ca/web/vicepresidencia-segunda-y-conselleria-para-la-recuperacion](https://recuperacio.gva.es/ca/web/vicepresidencia-segunda-y-conselleria-para-la-recuperacion), [Visit recuperacio.gva.es/va/convocatoria-ajudes-dana](https://recuperacio.gva.es/va/convocatoria-ajudes-dana) |
 | `recursos.edu.xunta.gal` | [Visit recursos.edu.xunta.gal homepage](https://recursos.edu.xunta.gal/), [Visit recursos.edu.xunta.gal/recurso/ciberagentes-en-accion](https://recursos.edu.xunta.gal/recurso/ciberagentes-en-accion) |
 | `recursoshumanos.ayto-alcaladehenares.es` | [Visit recursoshumanos.ayto-alcaladehenares.es homepage](https://recursoshumanos.ayto-alcaladehenares.es/), [Visit recursoshumanos.ayto-alcaladehenares.es/relacion-de-puestos-de-trabajo/](https://recursoshumanos.ayto-alcaladehenares.es/relacion-de-puestos-de-trabajo/) |
+| `red.es` | [Visit red.es homepage](https://red.es/) |
 | `redcap.salut.gencat.cat` | [Visit redcap.salut.gencat.cat homepage](https://redcap.salut.gencat.cat/), [Visit redcap.salut.gencat.cat/redcap_v13.6.0/Authentication/password_recovery.php](https://redcap.salut.gencat.cat/redcap_v13.6.0/Authentication/password_recovery.php) |
 | `reddebibliotecas.castillalamancha.es` | [Visit reddebibliotecas.castillalamancha.es homepage](https://reddebibliotecas.castillalamancha.es/), [Visit reddebibliotecas.castillalamancha.es/servicios/libros-electronicos-ebiblio-clm](https://reddebibliotecas.castillalamancha.es/servicios/libros-electronicos-ebiblio-clm) |
 | `redets.sanidad.gob.es` | [Visit redets.sanidad.gob.es homepage](https://redets.sanidad.gob.es/), [Visit redets.sanidad.gob.es/home.htm](https://redets.sanidad.gob.es/home.htm), [Visit redets.sanidad.gob.es/productos/buscarProductos.do](https://redets.sanidad.gob.es/productos/buscarProductos.do?metodo=buscaTipos&tipoId=1) |
@@ -2395,6 +2413,7 @@ permalink: /domains/spain.html
 | `senadocultural.senado.es` | [Visit senadocultural.senado.es homepage](https://senadocultural.senado.es/), [Visit senadocultural.senado.es/area-educativa](https://senadocultural.senado.es/area-educativa) |
 | `seneca.juntadeandalucia.es` | [Visit seneca.juntadeandalucia.es homepage](https://seneca.juntadeandalucia.es/), [Visit seneca.juntadeandalucia.es/seneca/jsp/portalpasen/](https://seneca.juntadeandalucia.es/seneca/jsp/portalpasen/) |
 | `sensso.senado.es` | [Visit sensso.senado.es homepage](https://sensso.senado.es/) |
+| `sepblac.es` | [Visit sepblac.es homepage](https://sepblac.es/) |
 | `sepie.gob.es` | [Visit sepie.gob.es homepage](https://sepie.gob.es/) |
 | `sequera.gencat.cat` | [Visit sequera.gencat.cat homepage](https://sequera.gencat.cat/), [Visit sequera.gencat.cat/ca/estat-actual/estat-de-les-reserves-daigua-als-embassaments/](https://sequera.gencat.cat/ca/estat-actual/estat-de-les-reserves-daigua-als-embassaments/), [Visit sequera.gencat.cat/ca/la-sequera/preguntes-frequeents/](https://sequera.gencat.cat/ca/la-sequera/preguntes-frequeents/) |
 | `serida.asturias.es` | [Visit serida.asturias.es homepage](https://serida.asturias.es/), [Visit serida.asturias.es/es/inicio](https://serida.asturias.es/es/inicio) |
@@ -2496,6 +2515,7 @@ permalink: /domains/spain.html
 | `termcat.blog.gencat.cat` | [Visit termcat.blog.gencat.cat homepage](https://termcat.blog.gencat.cat/), [Visit termcat.blog.gencat.cat/2025/07/02/termedelasetmana-lluerna/](https://termcat.blog.gencat.cat/2025/07/02/termedelasetmana-lluerna/) |
 | `territori.gencat.cat` | [Visit territori.gencat.cat homepage](https://territori.gencat.cat/), [Visit territori.gencat.cat/ca/](https://territori.gencat.cat/ca/), [Visit territori.gencat.cat/ca/03_infraestructures_i_mobilitat/carreteres/peatges-tarifes-descomptes/gratuitat-tunel-cadi/](https://territori.gencat.cat/ca/03_infraestructures_i_mobilitat/carreteres/peatges-tarifes-descomptes/gratuitat-tunel-cadi/) |
 | `territorioeurbanismo.xunta.gal` | [Visit territorioeurbanismo.xunta.gal homepage](https://territorioeurbanismo.xunta.gal/), [Visit territorioeurbanismo.xunta.gal/gl/territorio-e-urbanismo/directrices-de-ordenacion-do-territorio](https://territorioeurbanismo.xunta.gal/gl/territorio-e-urbanismo/directrices-de-ordenacion-do-territorio), [Visit territorioeurbanismo.xunta.gal/gl/territorio-e-urbanismo/rexistro-de-ordenacion-do-territorio-e-urbanismo](https://territorioeurbanismo.xunta.gal/gl/territorio-e-urbanismo/rexistro-de-ordenacion-do-territorio-e-urbanismo) |
+| `tesoro.es` | [Visit tesoro.es homepage](https://tesoro.es/) |
 | `testlink.navarra.es` | [Visit testlink.navarra.es homepage](https://testlink.navarra.es/), [Visit testlink.navarra.es/privacidad.php](https://testlink.navarra.es/privacidad.php) |
 | `tgss.ovac.seg-social.es` | [Visit tgss.ovac.seg-social.es homepage](https://tgss.ovac.seg-social.es/), [Visit tgss.ovac.seg-social.es/forgetPwd](https://tgss.ovac.seg-social.es/forgetPwd) |
 | `tienda.boe.es` | [Visit tienda.boe.es/detail.php](https://tienda.boe.es/detail.php?id=9788474711653), [Visit tienda.boe.es/detail.php](https://tienda.boe.es/detail.php?id=9788492546671) |
