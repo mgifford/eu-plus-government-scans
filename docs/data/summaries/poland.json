@@ -1,872 +1,418 @@
 {
-  "country": "Poland",
-  "total_relationships": 1752,
-  "total_source_domains": 82,
-  "total_unique_targets": 506,
-  "gov_to_gov_pairs": 8,
-  "relationship_types": {
-    "editorial_link": 1011,
-    "script_dependency": 242,
-    "stylesheet_dependency": 216,
-    "image_or_media_dependency": 162,
-    "form_destination": 81,
-    "font_or_preload_dependency": 40
-  },
+  "country_code": "POLAND",
+  "total_relationships": 9737,
+  "total_source_domains": 219,
   "top_source_domains": [
     {
       "domain": "krakow.pl",
-      "observations": 303,
-      "unique_targets": 76,
-      "relationship_types": {
-        "editorial_link": 149,
-        "script_dependency": 33,
-        "stylesheet_dependency": 25,
-        "image_or_media_dependency": 27,
-        "form_destination": 9,
-        "font_or_preload_dependency": 7
-      }
+      "count": 14041
     },
     {
       "domain": "poznan.pl",
-      "observations": 259,
-      "unique_targets": 58,
-      "relationship_types": {
-        "editorial_link": 111,
-        "script_dependency": 26,
-        "stylesheet_dependency": 22,
-        "image_or_media_dependency": 18,
-        "form_destination": 12,
-        "font_or_preload_dependency": 4
-      }
+      "count": 8884
     },
     {
       "domain": "lodz.pl",
-      "observations": 119,
-      "unique_targets": 42,
-      "relationship_types": {
-        "editorial_link": 63,
-        "script_dependency": 14,
-        "stylesheet_dependency": 11,
-        "image_or_media_dependency": 9,
-        "form_destination": 6,
-        "font_or_preload_dependency": 2
-      }
-    },
-    {
-      "domain": "ug.edu.pl",
-      "observations": 77,
-      "unique_targets": 15,
-      "relationship_types": {
-        "editorial_link": 44,
-        "script_dependency": 8,
-        "stylesheet_dependency": 7,
-        "image_or_media_dependency": 6,
-        "form_destination": 3
-      }
+      "count": 383
     },
     {
       "domain": "gdansk.pl",
-      "observations": 56,
-      "unique_targets": 9,
-      "relationship_types": {
-        "editorial_link": 18,
-        "script_dependency": 5,
-        "stylesheet_dependency": 6,
-        "image_or_media_dependency": 4,
-        "form_destination": 3,
-        "font_or_preload_dependency": 1
-      }
+      "count": 244
     },
     {
       "domain": "tarnow.pl",
-      "observations": 51,
-      "unique_targets": 20,
-      "relationship_types": {
-        "editorial_link": 24,
-        "script_dependency": 6,
-        "font_or_preload_dependency": 1,
-        "image_or_media_dependency": 6,
-        "form_destination": 3,
-        "stylesheet_dependency": 6
-      }
-    },
-    {
-      "domain": "powiatgora.pl",
-      "observations": 45,
-      "unique_targets": 35,
-      "relationship_types": {
-        "editorial_link": 38,
-        "script_dependency": 2,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "gdynia.pl",
-      "observations": 41,
-      "unique_targets": 22,
-      "relationship_types": {
-        "editorial_link": 21,
-        "script_dependency": 6,
-        "stylesheet_dependency": 5,
-        "image_or_media_dependency": 4,
-        "form_destination": 3
-      }
+      "count": 117
     },
     {
       "domain": "torun.pl",
-      "observations": 35,
-      "unique_targets": 13,
-      "relationship_types": {
-        "editorial_link": 19,
-        "script_dependency": 4,
-        "stylesheet_dependency": 4,
-        "image_or_media_dependency": 4,
-        "form_destination": 3
-      }
-    },
-    {
-      "domain": "edu.bialystok.pl",
-      "observations": 31,
-      "unique_targets": 17,
-      "relationship_types": {
-        "editorial_link": 19,
-        "script_dependency": 2,
-        "stylesheet_dependency": 3,
-        "font_or_preload_dependency": 1,
-        "image_or_media_dependency": 2,
-        "form_destination": 2
-      }
-    },
-    {
-      "domain": "1lo.rzeszow.pl",
-      "observations": 26,
-      "unique_targets": 18,
-      "relationship_types": {
-        "editorial_link": 18,
-        "script_dependency": 1,
-        "font_or_preload_dependency": 2,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "powiatlubaczowski.pl",
-      "observations": 24,
-      "unique_targets": 16,
-      "relationship_types": {
-        "editorial_link": 20,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "um.cieszyn.pl",
-      "observations": 23,
-      "unique_targets": 14,
-      "relationship_types": {
-        "editorial_link": 16,
-        "script_dependency": 1,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 3,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "grot.bialystok.pl",
-      "observations": 22,
-      "unique_targets": 15,
-      "relationship_types": {
-        "editorial_link": 9,
-        "script_dependency": 7,
-        "font_or_preload_dependency": 1,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "mlodzi.rzeszow.pl",
-      "observations": 21,
-      "unique_targets": 17,
-      "relationship_types": {
-        "editorial_link": 13,
-        "script_dependency": 3,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "sopot.pl",
-      "observations": 21,
-      "unique_targets": 11,
-      "relationship_types": {
-        "editorial_link": 15,
-        "script_dependency": 2,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "skps.wroclaw.pl",
-      "observations": 21,
-      "unique_targets": 10,
-      "relationship_types": {
-        "editorial_link": 11,
-        "script_dependency": 3,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 2,
-        "form_destination": 2
-      }
-    },
-    {
-      "domain": "akp.bydgoszcz.pl",
-      "observations": 21,
-      "unique_targets": 11,
-      "relationship_types": {
-        "editorial_link": 12,
-        "script_dependency": 3,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "mbp.opole.pl",
-      "observations": 21,
-      "unique_targets": 15,
-      "relationship_types": {
-        "editorial_link": 13,
-        "script_dependency": 4,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "konarski.radom.pl",
-      "observations": 21,
-      "unique_targets": 16,
-      "relationship_types": {
-        "editorial_link": 16,
-        "script_dependency": 1,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "powiatslubicki.pl",
-      "observations": 20,
-      "unique_targets": 13,
-      "relationship_types": {
-        "editorial_link": 13,
-        "script_dependency": 3,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "brodnica.ug.gov.pl",
-      "observations": 20,
-      "unique_targets": 12,
-      "relationship_types": {
-        "editorial_link": 12,
-        "script_dependency": 1,
-        "font_or_preload_dependency": 3,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "rawam.ug.gov.pl",
-      "observations": 20,
-      "unique_targets": 13,
-      "relationship_types": {
-        "editorial_link": 16,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "pnt.opole.pl",
-      "observations": 19,
-      "unique_targets": 9,
-      "relationship_types": {
-        "editorial_link": 14,
-        "script_dependency": 1,
-        "font_or_preload_dependency": 2,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1
-      }
-    },
-    {
-      "domain": "szkolykatolickie.opole.pl",
-      "observations": 19,
-      "unique_targets": 14,
-      "relationship_types": {
-        "editorial_link": 14,
-        "script_dependency": 1,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 1
-      }
-    },
-    {
-      "domain": "ug.lubin.pl",
-      "observations": 19,
-      "unique_targets": 11,
-      "relationship_types": {
-        "editorial_link": 11,
-        "script_dependency": 2,
-        "stylesheet_dependency": 2,
-        "font_or_preload_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "powiatglubczycki.pl",
-      "observations": 18,
-      "unique_targets": 12,
-      "relationship_types": {
-        "editorial_link": 14,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "zcemip.szczecin.pl",
-      "observations": 17,
-      "unique_targets": 10,
-      "relationship_types": {
-        "editorial_link": 10,
-        "script_dependency": 3,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 2
-      }
-    },
-    {
-      "domain": "powiatpleszewski.pl",
-      "observations": 16,
-      "unique_targets": 8,
-      "relationship_types": {
-        "editorial_link": 11,
-        "script_dependency": 1,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "wiih.rzeszow.pl",
-      "observations": 16,
-      "unique_targets": 9,
-      "relationship_types": {
-        "editorial_link": 13,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1
-      }
-    },
-    {
-      "domain": "panteon.bialystok.pl",
-      "observations": 16,
-      "unique_targets": 11,
-      "relationship_types": {
-        "editorial_link": 6,
-        "script_dependency": 3,
-        "font_or_preload_dependency": 3,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 1
-      }
-    },
-    {
-      "domain": "psp33.opole.pl",
-      "observations": 15,
-      "unique_targets": 10,
-      "relationship_types": {
-        "editorial_link": 8,
-        "script_dependency": 1,
-        "stylesheet_dependency": 3,
-        "font_or_preload_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
+      "count": 99
     },
     {
       "domain": "gorzow.pl",
-      "observations": 15,
-      "unique_targets": 7,
-      "relationship_types": {
-        "editorial_link": 5,
-        "script_dependency": 4,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
+      "count": 86
     },
     {
-      "domain": "ginekologia.opole.pl",
-      "observations": 15,
-      "unique_targets": 8,
-      "relationship_types": {
-        "editorial_link": 11,
-        "script_dependency": 1,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1
-      }
+      "domain": "edu.bialystok.pl",
+      "count": 63
     },
     {
-      "domain": "zst.bialystok.pl",
-      "observations": 14,
-      "unique_targets": 9,
-      "relationship_types": {
-        "editorial_link": 7,
-        "script_dependency": 3,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 2
-      }
-    },
-    {
-      "domain": "neurologopeda.bydgoszcz.pl",
-      "observations": 14,
-      "unique_targets": 10,
-      "relationship_types": {
-        "editorial_link": 7,
-        "script_dependency": 3,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "btl.bialystok.pl",
-      "observations": 14,
-      "unique_targets": 9,
-      "relationship_types": {
-        "editorial_link": 8,
-        "script_dependency": 1,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "edu.bydgoszcz.pl",
-      "observations": 14,
-      "unique_targets": 9,
-      "relationship_types": {
-        "editorial_link": 9,
-        "script_dependency": 2,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "sms.rzeszow.pl",
-      "observations": 14,
-      "unique_targets": 8,
-      "relationship_types": {
-        "editorial_link": 8,
-        "script_dependency": 2,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "cud.rzeszow.pl",
-      "observations": 13,
-      "unique_targets": 9,
-      "relationship_types": {
-        "editorial_link": 5,
-        "script_dependency": 3,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 2,
-        "form_destination": 1
-      }
-    },
-    {
-      "domain": "diecezja.opole.pl",
-      "observations": 13,
-      "unique_targets": 8,
-      "relationship_types": {
-        "editorial_link": 9,
-        "script_dependency": 1,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
+      "domain": "zs32.bydgoszcz.pl",
+      "count": 50
     },
     {
       "domain": "powiatprzeworsk.pl",
-      "observations": 13,
-      "unique_targets": 6,
-      "relationship_types": {
-        "editorial_link": 7,
-        "script_dependency": 3,
-        "stylesheet_dependency": 1,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
+      "count": 48
     },
     {
-      "domain": "powiatopolski.pl",
-      "observations": 13,
-      "unique_targets": 8,
-      "relationship_types": {
-        "editorial_link": 8,
-        "script_dependency": 1,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
+      "domain": "pm.szczecin.pl",
+      "count": 45
     },
     {
-      "domain": "katecheza.bydgoszcz.pl",
-      "observations": 13,
-      "unique_targets": 9,
-      "relationship_types": {
-        "editorial_link": 7,
-        "script_dependency": 2,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
+      "domain": "ug.edu.pl",
+      "count": 44
     },
     {
-      "domain": "jawor-parkiet.warszawa.pl",
-      "observations": 12,
-      "unique_targets": 7,
-      "relationship_types": {
-        "editorial_link": 5,
-        "script_dependency": 2,
-        "font_or_preload_dependency": 1,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
+      "domain": "edu.bydgoszcz.pl",
+      "count": 44
     },
     {
-      "domain": "olimp.wroclaw.pl",
-      "observations": 12,
-      "unique_targets": 7,
-      "relationship_types": {
-        "editorial_link": 6,
-        "script_dependency": 2,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1,
-        "form_destination": 1
-      }
+      "domain": "if-pan.edu.pl",
+      "count": 43
     },
     {
-      "domain": "strefamocy.bialystok.pl",
-      "observations": 12,
-      "unique_targets": 7,
-      "relationship_types": {
-        "editorial_link": 3,
-        "script_dependency": 6,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1
-      }
+      "domain": "wbp.opole.pl",
+      "count": 39
     },
     {
-      "domain": "zdz.rzeszow.pl",
-      "observations": 11,
-      "unique_targets": 7,
-      "relationship_types": {
-        "editorial_link": 3,
-        "script_dependency": 4,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 1
-      }
+      "domain": "powiatwlodawski.pl",
+      "count": 36
     },
     {
-      "domain": "internatzs3.rzeszow.pl",
-      "observations": 11,
-      "unique_targets": 7,
-      "relationship_types": {
-        "editorial_link": 7,
-        "script_dependency": 1,
-        "stylesheet_dependency": 2,
-        "image_or_media_dependency": 1
-      }
+      "domain": "bielsko-biala.pl",
+      "count": 34
     },
     {
-      "domain": "fizjomedica.radom.pl",
-      "observations": 11,
-      "unique_targets": 7,
-      "relationship_types": {
-        "editorial_link": 3,
-        "script_dependency": 4,
-        "stylesheet_dependency": 3,
-        "image_or_media_dependency": 1
-      }
+      "domain": "ekodak.pl",
+      "count": 34
+    },
+    {
+      "domain": "ursynow.warszawa.pl",
+      "count": 33
+    },
+    {
+      "domain": "mbj.szczecin.pl",
+      "count": 33
+    },
+    {
+      "domain": "powiatgizycki.pl",
+      "count": 32
+    },
+    {
+      "domain": "milosierdzie.szczecin.pl",
+      "count": 31
+    },
+    {
+      "domain": "przasnysz.um.gov.pl",
+      "count": 30
+    },
+    {
+      "domain": "wroc.pl",
+      "count": 27
+    },
+    {
+      "domain": "zsb.bydgoszcz.pl",
+      "count": 27
+    },
+    {
+      "domain": "powiatkrapkowicki.pl",
+      "count": 26
+    },
+    {
+      "domain": "gdynia.pl",
+      "count": 25
+    },
+    {
+      "domain": "aktywna.bydgoszcz.pl",
+      "count": 24
+    },
+    {
+      "domain": "psp34.radom.pl",
+      "count": 22
+    },
+    {
+      "domain": "edu.wroclaw.pl",
+      "count": 22
+    },
+    {
+      "domain": "klo.radom.pl",
+      "count": 22
+    },
+    {
+      "domain": "powiatjanowski.pl",
+      "count": 22
+    },
+    {
+      "domain": "komunikacja.bialystok.pl",
+      "count": 21
+    },
+    {
+      "domain": "powiatsuski.pl",
+      "count": 21
+    },
+    {
+      "domain": "niwelator.wroclaw.pl",
+      "count": 21
+    },
+    {
+      "domain": "fakty.bialystok.pl",
+      "count": 21
+    },
+    {
+      "domain": "usk2.szczecin.pl",
+      "count": 21
+    },
+    {
+      "domain": "psp20.opole.pl",
+      "count": 21
+    },
+    {
+      "domain": "dkkrakow.pl",
+      "count": 21
+    },
+    {
+      "domain": "dygowo.pl",
+      "count": 20
+    },
+    {
+      "domain": "skm.szczecin.pl",
+      "count": 20
+    },
+    {
+      "domain": "implantologia.szczecin.pl",
+      "count": 19
+    },
+    {
+      "domain": "powiatwalbrzyski.pl",
+      "count": 19
+    },
+    {
+      "domain": "zus.pl",
+      "count": 19
+    },
+    {
+      "domain": "szpital.opole.pl",
+      "count": 19
+    },
+    {
+      "domain": "powiatsredzki.pl",
+      "count": 19
+    },
+    {
+      "domain": "powiatkamienski.pl",
+      "count": 19
+    },
+    {
+      "domain": "osiedla.szczecin.pl",
+      "count": 18
+    },
+    {
+      "domain": "prawospadkowe.opole.pl",
+      "count": 18
+    },
+    {
+      "domain": "word.bydgoszcz.pl",
+      "count": 18
     }
   ],
-  "top_targets": [
-    {
-      "domain": "poznan.pl",
-      "observations": 139
-    },
+  "top_target_domains": [
     {
       "domain": "krakow.pl",
-      "observations": 121
+      "count": 7132
+    },
+    {
+      "domain": "poznan.pl",
+      "count": 4575
     },
     {
       "domain": "googleapis.com",
-      "observations": 97
+      "count": 1359
     },
     {
       "domain": "facebook.com",
-      "observations": 86
-    },
-    {
-      "domain": "lodz.pl",
-      "observations": 65
-    },
-    {
-      "domain": "ug.edu.pl",
-      "observations": 55
-    },
-    {
-      "domain": "googletagmanager.com",
-      "observations": 40
-    },
-    {
-      "domain": "gdansk.pl",
-      "observations": 39
-    },
-    {
-      "domain": "repertuary.pl",
-      "observations": 39
+      "count": 1178
     },
     {
       "domain": "google.com",
-      "observations": 35
-    },
-    {
-      "domain": "youtube.com",
-      "observations": 29
+      "count": 475
     },
     {
       "domain": "instagram.com",
-      "observations": 28
+      "count": 467
     },
     {
-      "domain": "tarnow.pl",
-      "observations": 26
+      "domain": "googletagmanager.com",
+      "count": 447
     },
     {
-      "domain": "torun.pl",
-      "observations": 22
-    },
-    {
-      "domain": "jsdelivr.net",
-      "observations": 20
-    },
-    {
-      "domain": "cloudflare.com",
-      "observations": 19
+      "domain": "youtube.com",
+      "count": 403
     },
     {
       "domain": "gstatic.com",
-      "observations": 18
+      "count": 327
     },
     {
       "domain": "bootstrapcdn.com",
-      "observations": 16
+      "count": 308
     },
     {
-      "domain": "gdynia.pl",
-      "observations": 15
+      "domain": "repertuary.pl",
+      "count": 275
     },
     {
-      "domain": "edu.bialystok.pl",
-      "observations": 13
+      "domain": "cloudflare.com",
+      "count": 267
     },
     {
-      "domain": "epuap.gov.pl",
-      "observations": 13
-    },
-    {
-      "domain": "fontawesome.com",
-      "observations": 13
-    },
-    {
-      "domain": "bip.gov.pl",
-      "observations": 12
-    },
-    {
-      "domain": "www.gov.pl",
-      "observations": 12
-    },
-    {
-      "domain": "pnt.opole.pl",
-      "observations": 11
-    },
-    {
-      "domain": "vulcan.net.pl",
-      "observations": 10
-    },
-    {
-      "domain": "sopot.pl",
-      "observations": 10
-    },
-    {
-      "domain": "twitter.com",
-      "observations": 9
-    },
-    {
-      "domain": "gorzow.pl",
-      "observations": 9
-    },
-    {
-      "domain": "powiatpleszewski.pl",
-      "observations": 8
-    },
-    {
-      "domain": "powiatslubicki.pl",
-      "observations": 8
-    },
-    {
-      "domain": "powiatgora.pl",
-      "observations": 8
-    },
-    {
-      "domain": "brodnica.ug.gov.pl",
-      "observations": 8
-    },
-    {
-      "domain": "um.cieszyn.pl",
-      "observations": 8
-    },
-    {
-      "domain": "ug.lubin.pl",
-      "observations": 8
-    },
-    {
-      "domain": "ginekologia.opole.pl",
-      "observations": 8
-    },
-    {
-      "domain": "powiatprzeworsk.pl",
-      "observations": 7
-    },
-    {
-      "domain": "edu.bydgoszcz.pl",
-      "observations": 7
-    },
-    {
-      "domain": "wp.com",
-      "observations": 7
-    },
-    {
-      "domain": "zcemip.szczecin.pl",
-      "observations": 7
-    },
-    {
-      "domain": "powiatlubaczowski.pl",
-      "observations": 7
-    },
-    {
-      "domain": "um.opole.pl",
-      "observations": 7
-    },
-    {
-      "domain": "librus.pl",
-      "observations": 6
-    },
-    {
-      "domain": "wiih.rzeszow.pl",
-      "observations": 6
+      "domain": "jsdelivr.net",
+      "count": 260
     },
     {
       "domain": "linkedin.com",
-      "observations": 6
+      "count": 219
     },
     {
-      "domain": "diecezja.opole.pl",
-      "observations": 6
+      "domain": "lodz.pl",
+      "count": 211
     },
     {
-      "domain": "jawor-parkiet.warszawa.pl",
-      "observations": 6
+      "domain": "twitter.com",
+      "count": 154
     },
     {
-      "domain": "olimp.wroclaw.pl",
-      "observations": 6
+      "domain": "uj.edu.pl",
+      "count": 143
     },
     {
-      "domain": "btl.bialystok.pl",
-      "observations": 6
+      "domain": "gdansk.pl",
+      "count": 141
     },
     {
-      "domain": "1lo.rzeszow.pl",
-      "observations": 6
+      "domain": "www.gov.pl",
+      "count": 112
+    },
+    {
+      "domain": "wordpress.org",
+      "count": 98
+    },
+    {
+      "domain": "fontawesome.com",
+      "count": 96
+    },
+    {
+      "domain": "jquery.com",
+      "count": 95
+    },
+    {
+      "domain": "cookiedatabase.org",
+      "count": 81
+    },
+    {
+      "domain": "x.com",
+      "count": 68
+    },
+    {
+      "domain": "unpkg.com",
+      "count": 61
+    },
+    {
+      "domain": "wp.com",
+      "count": 57
+    },
+    {
+      "domain": "tarnow.pl",
+      "count": 56
+    },
+    {
+      "domain": "accessibility-helper.co.il",
+      "count": 51
+    },
+    {
+      "domain": "goo.gl",
+      "count": 50
+    },
+    {
+      "domain": "dj-extensions.com",
+      "count": 50
+    },
+    {
+      "domain": "tiktok.com",
+      "count": 48
+    },
+    {
+      "domain": "afera.com.pl",
+      "count": 47
+    },
+    {
+      "domain": "epuap.gov.pl",
+      "count": 45
+    },
+    {
+      "domain": "torun.pl",
+      "count": 44
+    },
+    {
+      "domain": "bip.gov.pl",
+      "count": 42
+    },
+    {
+      "domain": "cdn-cookieyes.com",
+      "count": 42
+    },
+    {
+      "domain": "google.pl",
+      "count": 41
+    },
+    {
+      "domain": "apple.com",
+      "count": 40
+    },
+    {
+      "domain": "librus.pl",
+      "count": 37
+    },
+    {
+      "domain": "edu.bialystok.pl",
+      "count": 35
+    },
+    {
+      "domain": "gorzow.pl",
+      "count": 33
+    },
+    {
+      "domain": "userway.org",
+      "count": 33
+    },
+    {
+      "domain": "edu.bydgoszcz.pl",
+      "count": 29
+    },
+    {
+      "domain": "krakow.plhttp",
+      "count": 29
+    },
+    {
+      "domain": "vulcan.net.pl",
+      "count": 28
+    },
+    {
+      "domain": "microsoft.com",
+      "count": 28
+    },
+    {
+      "domain": "addtoany.com",
+      "count": 28
+    },
+    {
+      "domain": "umww.pl",
+      "count": 27
+    },
+    {
+      "domain": "pcss.pl",
+      "count": 26
+    },
+    {
+      "domain": "w3.org",
+      "count": 24
     }
   ],
-  "gov_to_gov_links": [
-    {
-      "source": "brodnica.ug.gov.pl",
-      "target": "epuap.gov.pl",
-      "target_country": "Poland",
-      "cross_country": false
-    },
-    {
-      "source": "brodnica.ug.gov.pl",
-      "target": "www.gov.pl",
-      "target_country": "Poland",
-      "cross_country": false
-    },
-    {
-      "source": "brodnica.ug.gov.pl",
-      "target": "rcl.gov.pl",
-      "target_country": "Poland",
-      "cross_country": false
-    },
-    {
-      "source": "brodnica.ug.gov.pl",
-      "target": "bip.gov.pl",
-      "target_country": "Poland",
-      "cross_country": false
-    },
-    {
-      "source": "brodnica.ug.gov.pl",
-      "target": "sejm.gov.pl",
-      "target_country": "Poland",
-      "cross_country": false
-    },
-    {
-      "source": "brodnica.ug.gov.pl",
-      "target": "senat.gov.pl",
-      "target_country": "Poland",
-      "cross_country": false
-    },
-    {
-      "source": "brodnica.ug.gov.pl",
-      "target": "premier.gov.pl",
-      "target_country": "Poland",
-      "cross_country": false
-    },
-    {
-      "source": "rawam.ug.gov.pl",
-      "target": "epuap.gov.pl",
-      "target_country": "Poland",
-      "cross_country": false
-    }
-  ]
+  "relationship_types": {
+    "editorial_link": 5201,
+    "script_dependency": 1346,
+    "stylesheet_dependency": 1219,
+    "image_or_media_dependency": 1163,
+    "form_destination": 580,
+    "font_or_preload_dependency": 228
+  },
+  "generated_at": "2026-07-19T08:34:11.671595+00:00"
 }
