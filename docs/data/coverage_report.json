@@ -1,56 +1,29 @@
 {
-  "ESTONIA": {
-    "total_urls": 401,
-    "attempted": 401,
-    "successful": 377,
-    "failed": 24,
-    "skipped": 0,
-    "never_scanned": 0,
-    "stale_28d": 0
-  },
-  "CZECHIA": {
-    "total_urls": 866,
-    "attempted": 866,
-    "successful": 796,
-    "failed": 70,
-    "skipped": 0,
-    "never_scanned": 0,
-    "stale_28d": 0
-  },
-  "GERMANY": {
-    "total_urls": 6599,
-    "attempted": 2351,
-    "successful": 2325,
-    "failed": 26,
-    "skipped": 0,
-    "never_scanned": 4248,
-    "stale_28d": 0
-  },
   "FINLAND": {
     "total_urls": 199,
-    "attempted": 0,
-    "successful": 0,
-    "failed": 0,
+    "attempted": 199,
+    "successful": 188,
+    "failed": 11,
     "skipped": 0,
-    "never_scanned": 199,
+    "never_scanned": 0,
     "stale_28d": 0
   },
   "DENMARK": {
     "total_urls": 1536,
-    "attempted": 0,
-    "successful": 0,
-    "failed": 0,
+    "attempted": 1536,
+    "successful": 1507,
+    "failed": 29,
     "skipped": 0,
-    "never_scanned": 1536,
+    "never_scanned": 0,
     "stale_28d": 0
   },
   "GREECE": {
     "total_urls": 1752,
-    "attempted": 1,
-    "successful": 1,
-    "failed": 0,
+    "attempted": 1497,
+    "successful": 1383,
+    "failed": 114,
     "skipped": 0,
-    "never_scanned": 1751,
+    "never_scanned": 255,
     "stale_28d": 0
   },
   "HUNGARY": {
@@ -271,6 +244,33 @@
     "attempted": 1329,
     "successful": 1232,
     "failed": 97,
+    "skipped": 0,
+    "never_scanned": 0,
+    "stale_28d": 0
+  },
+  "GERMANY": {
+    "total_urls": 6599,
+    "attempted": 2286,
+    "successful": 2259,
+    "failed": 27,
+    "skipped": 0,
+    "never_scanned": 4313,
+    "stale_28d": 0
+  },
+  "ESTONIA": {
+    "total_urls": 401,
+    "attempted": 401,
+    "successful": 382,
+    "failed": 19,
+    "skipped": 0,
+    "never_scanned": 0,
+    "stale_28d": 0
+  },
+  "CZECHIA": {
+    "total_urls": 866,
+    "attempted": 866,
+    "successful": 796,
+    "failed": 70,
     "skipped": 0,
     "never_scanned": 0,
     "stale_28d": 0
