@@ -183,6 +183,65 @@ jobs:
             --seeds-dir data/toon-seeds/countries \
             2>&1 | tee lighthouse-report-output.txt
 
+      - name: Generate scan cycle pace report
+        run: |
+          set -o pipefail
+          # Lighthouse keeps its own metadata artifact (data/lighthouse/
+          # metadata.db) separate from the shared validation-metadata DB
+          # used by every other scanner, so it's evaluated separately and
+          # the two tables are combined into one report. See
+          # WORKFLOW_ORCHESTRATION_AUDIT.md Section 11 (pulled forward from
+          # Phase 5) for the on-pace methodology. --table-only avoids any
+          # shell-side text surgery (e.g. tail/head line-trimming, which
+          # isn't portable -- BSD head doesn't support negative counts).
+          python3 -m src.cli.generate_pace_report \
+            --db data/metadata.db \
+            --seeds-dir data/toon-seeds/countries \
+            --scanner accessibility --scanner social_media \
+            --scanner technology --scanner third_party_js --scanner overlays \
+            --format markdown --table-only \
+            --output /tmp/pace-table-main.md \
+            2>&1 | tee pace-report-output.txt
+
+          LIGHTHOUSE_DB="data/lighthouse/metadata.db"
+          if [ ! -f "$LIGHTHOUSE_DB" ]; then
+            LIGHTHOUSE_DB="data/metadata.db"
+          fi
+          python3 -m src.cli.generate_pace_report \
+            --db "$LIGHTHOUSE_DB" \
+            --seeds-dir data/toon-seeds/countries \
+            --scanner lighthouse \
+            --format markdown --table-only \
+            --output /tmp/pace-table-lighthouse.md \
+            2>&1 | tee -a pace-report-output.txt
+
+          {
+            echo "---"
+            echo "title: Scanner Cycle Pace Report"
+            echo "layout: page"
+            echo "---"
+            echo ""
+            echo "_Generated: $(date -u +'%Y-%m-%d %H:%M UTC')_"
+            echo ""
+            echo "Whether each scanner is on pace to complete its target cycle (30 days for most"
+            echo "scanners, 60 days for Lighthouse and Relationships), based on distinct URLs scanned"
+            echo "in the last 7 days projected forward against the full eligible corpus. See"
+            echo "[WORKFLOW_ORCHESTRATION_AUDIT.md](https://github.com/${{ github.repository }}/blob/main/WORKFLOW_ORCHESTRATION_AUDIT.md)"
+            echo "Section 11 for the methodology."
+            echo ""
+            cat /tmp/pace-table-main.md
+            # Lighthouse's table has its own header row; drop it so the two
+            # tables render as one continuous table under a single header.
+            tail -n +3 /tmp/pace-table-lighthouse.md
+            echo ""
+            echo "_Projection method: \`effective daily throughput = distinct URLs scanned in the last 7 days ÷ 7\`;"
+            echo "\`projected cycle days = eligible URLs ÷ effective daily throughput\`. The 7-day measurement"
+            echo "window reflects recent scan velocity and is independent of each scanner's own target cycle"
+            echo "length -- see src/services/cycle_pace_tracker.py's module docstring for why. 'No data' means"
+            echo "the scanner has no rows in its metadata.db within the window (never run against this database,"
+            echo "or the database doesn't cover this scanner)._"
+          } > docs/pace-report.md
+
       - name: Commit progress report to repository
         run: |
           # docs/social-media-data.json, docs/accessibility-data.json,
@@ -199,7 +258,8 @@ jobs:
                   docs/third-party-tools.md docs/third-party-tools-data.json \
                   docs/accessibility-statements.md \
                   docs/lighthouse-results.md \
-                  docs/data/gov-domains.json
+                  docs/data/gov-domains.json \
+                  docs/pace-report.md
           if git diff --staged --quiet; then
             echo "No changes to commit — reports are up to date."
           else
@@ -238,6 +298,8 @@ jobs:
             third-party-js-report-output.txt
             accessibility-report-output.txt
             lighthouse-report-output.txt
+            docs/pace-report.md
+            pace-report-output.txt
           retention-days: 30
           if-no-files-found: warn
           compression-level: 0
@@ -251,6 +313,10 @@ jobs:
             cat docs/scan-progress.md >> $GITHUB_STEP_SUMMARY
           else
             echo "_No progress data available yet._" >> $GITHUB_STEP_SUMMARY
+          fi
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ -f docs/pace-report.md ]; then
+            tail -n +5 docs/pace-report.md >> $GITHUB_STEP_SUMMARY
           fi
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "- Workflow Run: [\#${{ github.run_number }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})" >> $GITHUB_STEP_SUMMARY

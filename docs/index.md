@@ -31,6 +31,7 @@ _Progress as of 2026-07-20 19:39 UTC_
 - **[Third-Party JavaScript](third-party-tools.md)** — External scripts, services, and hosted dependencies loaded by government pages.
 - **[Lighthouse Scanning](lighthouse-scanning.md)** — Google Lighthouse methodology, workflow details, and page-level quality scores as they are collected.
 - **[Government Domains](domains.md)** — The tracked source dataset: government domains and page URLs used as the input for scans, grouped by country.
+- **[Scan Cycle Pace](pace-report.md)** — Whether each scanner is on pace to finish its target cycle (30 or 60 days), based on recent scan velocity.
 
 ## What We Track
 
