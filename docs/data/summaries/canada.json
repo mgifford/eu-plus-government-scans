@@ -1,0 +1,418 @@
+{
+  "country_code": "CANADA",
+  "total_relationships": 11673,
+  "total_source_domains": 206,
+  "top_source_domains": [
+    {
+      "domain": "gouv.qc.ca",
+      "count": 14500
+    },
+    {
+      "domain": "steiermark.at",
+      "count": 3951
+    },
+    {
+      "domain": "ooe.gv.at",
+      "count": 3377
+    },
+    {
+      "domain": "canada.ca",
+      "count": 1788
+    },
+    {
+      "domain": "alberta.ca",
+      "count": 969
+    },
+    {
+      "domain": "gov.bc.ca",
+      "count": 808
+    },
+    {
+      "domain": "wien.gv.at",
+      "count": 665
+    },
+    {
+      "domain": "sofia.bg",
+      "count": 495
+    },
+    {
+      "domain": "novascotia.ca",
+      "count": 443
+    },
+    {
+      "domain": "government.bg",
+      "count": 389
+    },
+    {
+      "domain": "gov.mb.ca",
+      "count": 315
+    },
+    {
+      "domain": "gabrovo.bg",
+      "count": 294
+    },
+    {
+      "domain": "varna.bg",
+      "count": 291
+    },
+    {
+      "domain": "calgary.ca",
+      "count": 265
+    },
+    {
+      "domain": "noe.gv.at",
+      "count": 259
+    },
+    {
+      "domain": "gov.on.ca",
+      "count": 255
+    },
+    {
+      "domain": "kaernten.at",
+      "count": 233
+    },
+    {
+      "domain": "edmonton.ca",
+      "count": 222
+    },
+    {
+      "domain": "vorarlberg.at",
+      "count": 216
+    },
+    {
+      "domain": "burgas.bg",
+      "count": 202
+    },
+    {
+      "domain": "bundesheer.at",
+      "count": 199
+    },
+    {
+      "domain": "pleven.bg",
+      "count": 194
+    },
+    {
+      "domain": "quebec.qc.ca",
+      "count": 182
+    },
+    {
+      "domain": "richmond.ca",
+      "count": 166
+    },
+    {
+      "domain": "justice.gc.ca",
+      "count": 158
+    },
+    {
+      "domain": "winnipeg.ca",
+      "count": 158
+    },
+    {
+      "domain": "nsi.bg",
+      "count": 150
+    },
+    {
+      "domain": "gnb.ca",
+      "count": 142
+    },
+    {
+      "domain": "pernik.bg",
+      "count": 139
+    },
+    {
+      "domain": "london.ca",
+      "count": 137
+    },
+    {
+      "domain": "montreal.ca",
+      "count": 133
+    },
+    {
+      "domain": "ottawa.ca",
+      "count": 131
+    },
+    {
+      "domain": "regina.ca",
+      "count": 125
+    },
+    {
+      "domain": "nrcan-rncan.gc.ca",
+      "count": 123
+    },
+    {
+      "domain": "saskatchewan.ca",
+      "count": 122
+    },
+    {
+      "domain": "shumen.bg",
+      "count": 119
+    },
+    {
+      "domain": "sliven.bg",
+      "count": 116
+    },
+    {
+      "domain": "ams.at",
+      "count": 111
+    },
+    {
+      "domain": "ec.gc.ca",
+      "count": 110
+    },
+    {
+      "domain": "mississauga.ca",
+      "count": 110
+    },
+    {
+      "domain": "bmf.gv.at",
+      "count": 108
+    },
+    {
+      "domain": "stjohns.ca",
+      "count": 107
+    },
+    {
+      "domain": "radio-canada.ca",
+      "count": 106
+    },
+    {
+      "domain": "hc-sc.gc.ca",
+      "count": 104
+    },
+    {
+      "domain": "dfo-mpo.gc.ca",
+      "count": 104
+    },
+    {
+      "domain": "gov.sk.ca",
+      "count": 100
+    },
+    {
+      "domain": "burnaby.ca",
+      "count": 96
+    },
+    {
+      "domain": "stmk.gv.at",
+      "count": 91
+    },
+    {
+      "domain": "lovech.bg",
+      "count": 89
+    },
+    {
+      "domain": "justiz.gv.at",
+      "count": 89
+    }
+  ],
+  "top_target_domains": [
+    {
+      "domain": "gouv.qc.ca",
+      "count": 7760
+    },
+    {
+      "domain": "steiermark.at",
+      "count": 2154
+    },
+    {
+      "domain": "facebook.com",
+      "count": 1286
+    },
+    {
+      "domain": "ooe.gv.at",
+      "count": 1251
+    },
+    {
+      "domain": "canada.ca",
+      "count": 1201
+    },
+    {
+      "domain": "googleapis.com",
+      "count": 1039
+    },
+    {
+      "domain": "instagram.com",
+      "count": 690
+    },
+    {
+      "domain": "youtube.com",
+      "count": 686
+    },
+    {
+      "domain": "alberta.ca",
+      "count": 631
+    },
+    {
+      "domain": "linkedin.com",
+      "count": 614
+    },
+    {
+      "domain": "googletagmanager.com",
+      "count": 591
+    },
+    {
+      "domain": "gov.bc.ca",
+      "count": 583
+    },
+    {
+      "domain": "google.com",
+      "count": 496
+    },
+    {
+      "domain": "wien.gv.at",
+      "count": 446
+    },
+    {
+      "domain": "portailparents.ca",
+      "count": 399
+    },
+    {
+      "domain": "gstatic.com",
+      "count": 347
+    },
+    {
+      "domain": "stmk.gv.at",
+      "count": 332
+    },
+    {
+      "domain": "jsdelivr.net",
+      "count": 306
+    },
+    {
+      "domain": "twitter.com",
+      "count": 274
+    },
+    {
+      "domain": "novascotia.ca",
+      "count": 252
+    },
+    {
+      "domain": "cloudflare.com",
+      "count": 251
+    },
+    {
+      "domain": "sofia.bg",
+      "count": 225
+    },
+    {
+      "domain": "fontawesome.com",
+      "count": 217
+    },
+    {
+      "domain": "csdps.qc.ca",
+      "count": 217
+    },
+    {
+      "domain": "government.bg",
+      "count": 201
+    },
+    {
+      "domain": "quebec.ca",
+      "count": 190
+    },
+    {
+      "domain": "jquery.com",
+      "count": 185
+    },
+    {
+      "domain": "gem2go.at",
+      "count": 180
+    },
+    {
+      "domain": "office.com",
+      "count": 179
+    },
+    {
+      "domain": "international.gc.ca",
+      "count": 174
+    },
+    {
+      "domain": "cdn-cookieyes.com",
+      "count": 167
+    },
+    {
+      "domain": "datareporter.eu",
+      "count": 162
+    },
+    {
+      "domain": "gov.mb.ca",
+      "count": 159
+    },
+    {
+      "domain": "vorarlberg.at",
+      "count": 155
+    },
+    {
+      "domain": "readspeaker.com",
+      "count": 149
+    },
+    {
+      "domain": "sharepoint.com",
+      "count": 145
+    },
+    {
+      "domain": "gabrovo.bg",
+      "count": 140
+    },
+    {
+      "domain": "varna.bg",
+      "count": 138
+    },
+    {
+      "domain": "gov.on.ca",
+      "count": 132
+    },
+    {
+      "domain": "lesaint.ca",
+      "count": 120
+    },
+    {
+      "domain": "gnb.ca",
+      "count": 119
+    },
+    {
+      "domain": "mozaikportail.ca",
+      "count": 114
+    },
+    {
+      "domain": "typekit.net",
+      "count": 113
+    },
+    {
+      "domain": "edmonton.ca",
+      "count": 113
+    },
+    {
+      "domain": "pleven.bg",
+      "count": 110
+    },
+    {
+      "domain": "richmond.ca",
+      "count": 107
+    },
+    {
+      "domain": "arcgis.com",
+      "count": 106
+    },
+    {
+      "domain": "ontario.ca",
+      "count": 106
+    },
+    {
+      "domain": "bundesheer.at",
+      "count": 105
+    },
+    {
+      "domain": "calgary.ca",
+      "count": 100
+    }
+  ],
+  "relationship_types": {
+    "editorial_link": 5465,
+    "script_dependency": 1935,
+    "stylesheet_dependency": 1680,
+    "image_or_media_dependency": 1370,
+    "form_destination": 993,
+    "font_or_preload_dependency": 230
+  },
+  "generated_at": "2026-07-20T04:47:29.440509+00:00"
+}
