@@ -18,9 +18,12 @@ from typing import Any
 from uuid import uuid4
 
 from src.lib.country_utils import country_filename_to_code
+from src.lib.gov_domain_registry import GovernmentDomainRegistry
 from src.lib.settings import Settings
 from src.services.multi_scanner import MultiScanner, MultiScanResult
 from src.storage.schema import initialize_schema
+
+_GOV_REGISTRY = GovernmentDomainRegistry()
 
 # ---------------------------------------------------------------------------
 # Constants
@@ -103,23 +106,25 @@ def _backoff_days(failure_count: int) -> int:
 
 
 def _derive_country_from_tld(url: str) -> str:
-    """Best-effort country code from URL host TLD."""
+    """Country code for a URL's host, looked up against the government domain
+    registry (built from the TOON seed files) rather than a hardcoded TLD
+    table. Falls back to "UNKNOWN" for a host that isn't a known government
+    domain -- previously this also silently mis-mapped any country outside a
+    fixed 30-entry TLD list (e.g. Canada) to "UNKNOWN" even when the domain
+    was a correctly-seeded government domain, since the table was never kept
+    in sync with the TOON seed set."""
+    from urllib.parse import urlparse
+
     from tldextract import extract as tld_extract
 
-    ext = tld_extract(url)
-    tld = ext.suffix.lower()
-    _TLD_TO_COUNTRY: dict[str, str] = {
-        "is": "ICELAND", "fr": "FRANCE", "de": "GERMANY", "uk": "UNITED_KINGDOM",
-        "gov.uk": "UNITED_KINGDOM", "ie": "IRELAND", "es": "SPAIN", "pt": "PORTUGAL",
-        "it": "ITALY", "nl": "NETHERLANDS", "be": "BELGIUM", "at": "AUSTRIA",
-        "ch": "SWITZERLAND", "no": "NORWAY", "se": "SWEDEN", "fi": "FINLAND",
-        "dk": "DENMARK", "pl": "POLAND", "cz": "CZECHIA", "sk": "SLOVAKIA",
-        "hu": "HUNGARY", "ro": "ROMANIA", "bg": "BULGARIA", "hr": "CROATIA",
-        "si": "SLOVENIA", "ee": "ESTONIA", "lv": "LATVIA", "lt": "LITHUANIA",
-        "cy": "CYPRUS", "mt": "MALTA", "lu": "LUXEMBOURG", "gr": "GREECE",
-        "eu": "EU_INSTITUTIONS",
-    }
-    return _TLD_TO_COUNTRY.get(tld, "UNKNOWN")
+    hostname = urlparse(url).hostname or ""
+    if not hostname:
+        return "UNKNOWN"
+    # registered_domain can be empty for hosts entirely under a multi-label
+    # public suffix (e.g. "gob.es" itself, per the Public Suffix List) --
+    # fall back to the raw hostname so those still match a seeded domain.
+    registered_domain = tld_extract(url).registered_domain or hostname
+    return _GOV_REGISTRY.country_for_domain(registered_domain) or "UNKNOWN"
 
 
 # ---------------------------------------------------------------------------

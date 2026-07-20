@@ -1182,87 +1182,26 @@ layout: page
             'identity': '#27ae60'
         };
 
+        // Populated at startup from data/gov-domains.json, generated from the
+        // curated TOON seed files (data/toon-seeds/countries/*.toon) via
+        // src/cli/generate_gov_domains_manifest.py. This is the same
+        // per-domain dataset the Python scanning/relationship pipeline uses
+        // (src/lib/gov_domain_registry.py) -- replaces the previous
+        // independent regex/suffix heuristic, which had known gaps and no
+        // connection to the actual reviewed domain data.
+        let govDomainManifest = null;
+
         function isGovernmentDomain(domain) {
+            if (!govDomainManifest) return false;
             const d = domain.toLowerCase();
+            if (govDomainManifest[d]) return true;
+            // Fall back to registrable-domain match for a subdomain of a
+            // seeded domain (e.g. sub.example.gov when example.gov is seeded).
             const parts = d.split('.');
-            const tld = parts[parts.length - 1] || '';
-            const sld = parts[parts.length - 2] || '';
-
-            // Exact TLD matches for government
-            if (['gov', 'mil', 'gouv', 'gob', 'gc', 'gub'].includes(tld)) return true;
-
-            // ccTLD + government SLD patterns
-            const govSlds = ['gov', 'gouv', 'gv', 'gob', 'mil', 'parliament', 'assembly',
-                'council', 'ministry', 'staat', 'bundes', 'land', 'region', 'departement',
-                'comune', 'municipio', 'ayuntamiento', 'kommune', 'kommun', 'amt',
-                'forvaltning', 'direktorat', 'styrelse', 'regering', 'riksdag',
-                'eduskunta', 'storting', 'diet', 'sejm', 'senat', 'cortes',
-                'parlament', 'natsys', 'govt', 'state'];
-            if (govSlds.some(p => sld.includes(p))) return true;
-
-            // Known government second-level domains under ccTLDs
-            const govSldExact = [
-                'gov', 'gouv', 'gv', 'gob', 'gub', 'gc', 'gouv', 'gob',
-                'kommune', 'kommun', 'municipality', 'county', 'prefecture',
-                'canton', 'province', 'shire', 'borough', 'district',
-                'regierung', 'ministerium', 'agentur', 'amt', 'behörde',
-                'direktion', 'institut', 'stiftung', 'anstalt'
-            ];
-            if (govSldExact.includes(sld)) return true;
-
-            // Known government domains that don't follow TLD patterns
-            const knownGov = [
-                'europa.eu', 'un.org', 'who.int', 'worldbank.org', 'imf.org',
-                'oecd.org', 'nato.int', 'coe.int', 'echr.coe.int',
-                'ebanking.nordea.dk', 'medarbetarportalen.gu.se',
-                'digst.dk', 'uustatus.no', 'borger.dk', 'sundhed.dk',
-                'skole.hr', 'nhs.uk', 'nhs.net', 'gov.uk',
-                'slovensko.sk', 'gem2go.at', 'public.lu',
-                'vergleich.org', 'bmi.gv.at', 'help.gv.at',
-                'meinestadt.de', 'bund.de', 'bmbf.de', 'bmvi.de',
-                'bmz.de', 'bmj.de', 'bmwi.de', 'bmfg.bund.de',
-                'arbeitsagentur.de', 'bundesregierung.de',
-                'gouvernement.fr', 'service-public.fr', 'ameli.fr',
-                'data.gouv.fr', 'etalab.github.io',
-                'gov.it', 'agenziaentrate.gov.it', 'inps.it',
-                'gov.ie', 'revenue.ie', 'citizensinformation.ie',
-                'gov.nl', 'rijksoverheid.nl', 'overheid.nl',
-                'gov.pt', 'portaldasfinancas.gov.pt',
-                'gov.es', 'sedelectronica.gob.es', 'ingresos.gob.es',
-                'gov.gr', 'gov.cy', 'gov.mt', 'gov.ee', 'gov.lv',
-                'gov.lt', 'gov.si', 'gov.sk', 'gov.hu', 'gov.pl',
-                'gov.cz', 'gov.bg', 'gov.ro', 'gov.hr', 'gov.rs',
-                'gov.ba', 'gov.me', 'gov.mk', 'gov.al', 'gov.md',
-                'admin.ch', 'admin.ch', 'bundesverwaltung.ch',
-                'riksdag.se', 'regeringen.se',
-                'storting.no', 'regjeringen.no',
-                'eduskunta.fi', 'gov.fi',
-                'parlament.gv.at', 'bundeskanzler.gv.at',
-                'gov.gg', 'gov.je', 'gov.im',
-                'gov.cy', 'gov.by',
-                'digital.gov', 'usa.gov', 'whitehouse.gov',
-                'canada.ca', 'gc.ca', 'gov.bc.ca', 'gov.on.ca',
-                'gov.au', 'gov.nz', 'gov.za',
-                'gov.sg', 'gov.hk', 'gov.tw',
-                'gov.in', 'gov.br', 'gov.ar', 'gov.cl', 'gov.co',
-                'gov.ru', 'gov.ua', 'gov.ge', 'gov.am', 'gov.az',
-                'gov.kz', 'gov.uz', 'gov.tj', 'gov.kg', 'gov.tm',
-                'gov.tr', 'gov.il', 'gov.jo', 'gov.lb', 'gov.eg',
-                'gov.sa', 'gov.ae', 'gov.qa', 'gov.bh', 'gov.kw',
-                'gov.om', 'gov.ye', 'gov.iq', 'gov.ir',
-                'gov.cn', 'gov.jp', 'gov.kr', 'gov.th', 'gov.vn',
-                'gov.ph', 'gov.my', 'gov.id', 'gov.mm',
-                'gov.na', 'gov.ng', 'gov.ke', 'gov.gh', 'gov.tz',
-                'gov.zw', 'gov.mw', 'gov.ug', 'gov.rw', 'gov.bw',
-                'gov.sz', 'gov.ls', 'gov.mg'
-            ];
-            if (knownGov.includes(d)) return true;
-
-            // Check if domain ends with known government domain
-            for (const g of knownGov) {
-                if (d.endsWith('.' + g) || d === g) return true;
+            for (let i = 1; i < parts.length - 1; i++) {
+                const candidate = parts.slice(i).join('.');
+                if (govDomainManifest[candidate]) return true;
             }
-
             return false;
         }
 
@@ -2251,8 +2190,22 @@ layout: page
                 document.getElementById('gov-to-gov-filter').checked = true;
             }
 
+            // Load the government-domain manifest (curated TOON seed data)
+            // used by isGovernmentDomain() for gov-to-gov filtering. Awaited
+            // before the index.json chain below runs so nothing calls
+            // isGovernmentDomain() while the manifest is still null.
+            const govDomainManifestReady = fetch('data/gov-domains.json')
+                .then(r => r.json())
+                .then(manifest => {
+                    govDomainManifest = manifest.domains || {};
+                })
+                .catch(err => {
+                    console.warn('Could not load gov-domains.json, gov-to-gov filtering will be unavailable:', err);
+                    govDomainManifest = {};
+                });
+
             // Load index.json for fast initial render
-            fetch('data/summaries/index.json')
+            govDomainManifestReady.then(() => fetch('data/summaries/index.json'))
                 .then(r => r.json())
                 .then(index => {
                     summariesIndex = index;

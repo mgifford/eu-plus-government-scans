@@ -12,6 +12,8 @@ from urllib.parse import urljoin, urlparse
 import tldextract
 from bs4 import BeautifulSoup
 
+from src.lib.gov_domain_registry import GovernmentDomainRegistry
+
 
 @dataclass
 class RelationshipEdge:
@@ -43,11 +45,13 @@ class RelationshipScanner:
     def __init__(
         self,
         categories_file: Path | None = None,
+        gov_registry: GovernmentDomainRegistry | None = None,
     ):
         if categories_file is None:
             categories_file = Path("data/relationship_categories.json")
 
         self.categories = self._load_categories(categories_file)
+        self.gov_registry = gov_registry or GovernmentDomainRegistry()
         self.tld_extract = tldextract.TLDExtract()
 
     def _load_categories(self, path: Path) -> dict[str, str]:
@@ -66,7 +70,16 @@ class RelationshipScanner:
         return mapping
 
     def _get_category(self, registrable_domain: str) -> str:
-        """Assign preliminary category based on rules."""
+        """Assign a category to a target domain.
+
+        Checks the government domain registry first (built from the TOON seed
+        files) so a link to a *different* known government domain -- e.g. a
+        Spanish ministry linking to govern.cat -- is correctly categorized as
+        government rather than falling through to unknown_external. Falls
+        back to the curated third-party rules, then unknown_external.
+        """
+        if self.gov_registry.is_government_domain(registrable_domain):
+            return "known_government"
         return self.categories.get(registrable_domain, "unknown_external")
 
     def _determine_region(self, element: Any) -> str:
@@ -162,7 +175,7 @@ class RelationshipScanner:
                     
                 target_url, target_hostname, target_domain = normalized
                 is_external = source_domain != target_domain
-                category = self._get_category(target_domain) if is_external else "known_government"
+                category = self._get_category(target_domain)
                 
                 # Deduplicate identical target relationships within each source page
                 dedup_key = (target_domain, target_hostname, rel_type)
