@@ -130,6 +130,13 @@ jobs:
             --output docs/domains.md \
             2>&1 | tee domains-report-output.txt
 
+      - name: Generate government domain manifest
+        run: |
+          set -o pipefail
+          python3 -m src.cli.generate_gov_domains_manifest \
+            --output docs/data/gov-domains.json \
+            2>&1 | tee gov-domains-manifest-output.txt
+
       - name: Generate technology stats page
         run: |
           set -o pipefail
@@ -184,12 +191,15 @@ jobs:
           # All four files are still uploaded as workflow artifacts above.
           # docs/technology-index.json is a compact cross-reference index that
           # IS committed so it can be served via GitHub Pages as a static API.
+          # docs/data/gov-domains.json is the same kind of static-API file --
+          # network.html fetches it to check government-domain membership.
           git add docs/scan-progress.md docs/domains.md docs/domains/ docs/index.md \
                   docs/social-media.md \
                   docs/technology-scanning.md docs/technology-index.json \
                   docs/third-party-tools.md docs/third-party-tools-data.json \
                   docs/accessibility-statements.md \
-                  docs/lighthouse-results.md
+                  docs/lighthouse-results.md \
+                  docs/data/gov-domains.json
           if git diff --staged --quiet; then
             echo "No changes to commit — reports are up to date."
           else

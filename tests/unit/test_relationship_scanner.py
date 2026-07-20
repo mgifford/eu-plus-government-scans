@@ -1,10 +1,18 @@
 import pytest
+from src.lib.gov_domain_registry import GovernmentDomainRegistry
 from src.services.relationship_scanner import RelationshipScanner
 
 
 @pytest.fixture
 def scanner():
     return RelationshipScanner()
+
+
+class _FakeRegistry(GovernmentDomainRegistry):
+    """A registry pre-seeded with fixed domains, bypassing disk I/O."""
+
+    def __init__(self, domains: dict[str, str]):
+        self._domain_to_country = {d.lower(): c for d, c in domains.items()}
 
 
 def test_normalize_url_basic(scanner):
@@ -49,6 +57,42 @@ def test_get_category_known(scanner):
     # Mock category
     scanner.categories["google-analytics.com"] = "analytics"
     assert scanner._get_category("google-analytics.com") == "analytics"
+
+
+def test_get_category_cross_country_government_link():
+    """A link to a *different* known government domain (e.g. a Spanish
+    ministry linking to govern.cat) must be categorized as known_government,
+    not fall through to unknown_external -- this was the target_category
+    mislabeling bug: 'known_government' previously just meant same-origin."""
+    registry = _FakeRegistry({"govern.cat": "SPAIN", "gob.es": "SPAIN"})
+    scanner = RelationshipScanner(gov_registry=registry)
+    assert scanner._get_category("govern.cat") == "known_government"
+
+
+def test_get_category_same_origin_not_in_registry_is_not_government():
+    """Same-origin alone must no longer be sufficient to label a domain as
+    government -- only registry membership should. (Regression guard for the
+    'is_external else known_government' bug.)"""
+    registry = _FakeRegistry({"gob.es": "SPAIN"})
+    scanner = RelationshipScanner(gov_registry=registry)
+    assert scanner._get_category("not-in-registry.com") == "unknown_external"
+
+
+def test_get_category_prefers_registry_over_third_party_rules():
+    registry = _FakeRegistry({"gob.es": "SPAIN"})
+    scanner = RelationshipScanner(gov_registry=registry)
+    scanner.categories["gob.es"] = "cdn"  # should never happen, but registry wins
+    assert scanner._get_category("gob.es") == "known_government"
+
+
+def test_scan_html_cross_domain_government_link_categorized_correctly():
+    registry = _FakeRegistry({"source.gov": "SPAIN", "target.gov": "SPAIN"})
+    scanner = RelationshipScanner(gov_registry=registry)
+    html = '<html><body><a href="https://target.gov/page">Link</a></body></html>'
+    result = scanner.scan_html("https://source.gov", html)
+    assert len(result.relationships) == 1
+    assert result.relationships[0].target_category == "known_government"
+    assert result.relationships[0].is_external is True
 
 
 def test_scan_html_deduplication(scanner):
