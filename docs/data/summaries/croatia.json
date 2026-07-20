@@ -1,0 +1,338 @@
+{
+  "country_code": "CROATIA",
+  "total_relationships": 1312,
+  "total_source_domains": 30,
+  "top_source_domains": [
+    {
+      "domain": "zagreb.hr",
+      "count": 544
+    },
+    {
+      "domain": "gov.hr",
+      "count": 462
+    },
+    {
+      "domain": "rijeka.hr",
+      "count": 292
+    },
+    {
+      "domain": "slavonski-brod.hr",
+      "count": 244
+    },
+    {
+      "domain": "vukovar.hr",
+      "count": 241
+    },
+    {
+      "domain": "hzjz.hr",
+      "count": 135
+    },
+    {
+      "domain": "pozega.hr",
+      "count": 133
+    },
+    {
+      "domain": "dubrovnik.hr",
+      "count": 120
+    },
+    {
+      "domain": "varazdin.hr",
+      "count": 116
+    },
+    {
+      "domain": "sabor.hr",
+      "count": 102
+    },
+    {
+      "domain": "sibenik.hr",
+      "count": 85
+    },
+    {
+      "domain": "dzs.hr",
+      "count": 76
+    },
+    {
+      "domain": "azop.hr",
+      "count": 62
+    },
+    {
+      "domain": "koprivnica.hr",
+      "count": 58
+    },
+    {
+      "domain": "osijek.hr",
+      "count": 58
+    },
+    {
+      "domain": "hzzo.hr",
+      "count": 56
+    },
+    {
+      "domain": "split.hr",
+      "count": 53
+    },
+    {
+      "domain": "karlovac.hr",
+      "count": 52
+    },
+    {
+      "domain": "zadar.hr",
+      "count": 50
+    },
+    {
+      "domain": "sisak.hr",
+      "count": 38
+    },
+    {
+      "domain": "pula.hr",
+      "count": 37
+    },
+    {
+      "domain": "sudovi.hr",
+      "count": 34
+    },
+    {
+      "domain": "morh.hr",
+      "count": 33
+    },
+    {
+      "domain": "hakom.hr",
+      "count": 31
+    },
+    {
+      "domain": "hnb.hr",
+      "count": 17
+    },
+    {
+      "domain": "predsjednik.hr",
+      "count": 13
+    },
+    {
+      "domain": "usud.hr",
+      "count": 9
+    },
+    {
+      "domain": "soa.hr",
+      "count": 6
+    },
+    {
+      "domain": "mps.hr",
+      "count": 2
+    },
+    {
+      "domain": "policija.hr",
+      "count": 2
+    }
+  ],
+  "top_target_domains": [
+    {
+      "domain": "zagreb.hr",
+      "count": 268
+    },
+    {
+      "domain": "gov.hr",
+      "count": 251
+    },
+    {
+      "domain": "rijeka.hr",
+      "count": 116
+    },
+    {
+      "domain": "facebook.com",
+      "count": 107
+    },
+    {
+      "domain": "googletagmanager.com",
+      "count": 98
+    },
+    {
+      "domain": "skole.hr",
+      "count": 92
+    },
+    {
+      "domain": "googleapis.com",
+      "count": 73
+    },
+    {
+      "domain": "youtube.com",
+      "count": 69
+    },
+    {
+      "domain": "hzjz.hr",
+      "count": 66
+    },
+    {
+      "domain": "pozega.hr",
+      "count": 63
+    },
+    {
+      "domain": "sabor.hr",
+      "count": 57
+    },
+    {
+      "domain": "instagram.com",
+      "count": 55
+    },
+    {
+      "domain": "twitter.com",
+      "count": 50
+    },
+    {
+      "domain": "europa.eu",
+      "count": 43
+    },
+    {
+      "domain": "arcgis.com",
+      "count": 41
+    },
+    {
+      "domain": "dzs.hr",
+      "count": 41
+    },
+    {
+      "domain": "google.com",
+      "count": 40
+    },
+    {
+      "domain": "hzzo.hr",
+      "count": 39
+    },
+    {
+      "domain": "jsdelivr.net",
+      "count": 38
+    },
+    {
+      "domain": "vukovar.hr",
+      "count": 38
+    },
+    {
+      "domain": "dubrovnik.hr",
+      "count": 37
+    },
+    {
+      "domain": "linkedin.com",
+      "count": 36
+    },
+    {
+      "domain": "koprivnica.hr",
+      "count": 34
+    },
+    {
+      "domain": "slavonski-brod.hr",
+      "count": 32
+    },
+    {
+      "domain": "sibenik.hr",
+      "count": 30
+    },
+    {
+      "domain": "cloudflare.com",
+      "count": 25
+    },
+    {
+      "domain": "hakom.hr",
+      "count": 24
+    },
+    {
+      "domain": "varazdin.hr",
+      "count": 24
+    },
+    {
+      "domain": "karlovac.hr",
+      "count": 19
+    },
+    {
+      "domain": "fontawesome.com",
+      "count": 18
+    },
+    {
+      "domain": "azop.hr",
+      "count": 18
+    },
+    {
+      "domain": "osijek.hr",
+      "count": 18
+    },
+    {
+      "domain": "split.hr",
+      "count": 17
+    },
+    {
+      "domain": "pula.hr",
+      "count": 15
+    },
+    {
+      "domain": "zadar.hr",
+      "count": 15
+    },
+    {
+      "domain": "tiktok.com",
+      "count": 14
+    },
+    {
+      "domain": "addtoany.com",
+      "count": 14
+    },
+    {
+      "domain": "usud.hr",
+      "count": 13
+    },
+    {
+      "domain": "nn.hr",
+      "count": 12
+    },
+    {
+      "domain": "flickr.com",
+      "count": 12
+    },
+    {
+      "domain": "termsfeed.com",
+      "count": 12
+    },
+    {
+      "domain": "gstatic.com",
+      "count": 11
+    },
+    {
+      "domain": "mingo.hr",
+      "count": 11
+    },
+    {
+      "domain": "gtranslate.net",
+      "count": 11
+    },
+    {
+      "domain": "omoguru.com",
+      "count": 11
+    },
+    {
+      "domain": "pravosudje.hr",
+      "count": 11
+    },
+    {
+      "domain": "globaldizajn.hr",
+      "count": 10
+    },
+    {
+      "domain": "mojarijeka.hr",
+      "count": 10
+    },
+    {
+      "domain": "sisak.hr",
+      "count": 10
+    },
+    {
+      "domain": "turizamvukovar.hr",
+      "count": 10
+    }
+  ],
+  "relationship_types": {
+    "editorial_link": 850,
+    "script_dependency": 166,
+    "stylesheet_dependency": 120,
+    "image_or_media_dependency": 98,
+    "form_destination": 62,
+    "font_or_preload_dependency": 16
+  },
+  "generated_at": "2026-07-20T08:48:52.768316+00:00"
+}
