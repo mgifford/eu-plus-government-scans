@@ -19,6 +19,12 @@
       "page_count": 291
     },
     {
+      "country": "Canada",
+      "file": "data/toon-seeds/countries/canada.toon",
+      "domain_count": 2171,
+      "page_count": 4469
+    },
+    {
       "country": "Croatia",
       "file": "data/toon-seeds/countries/croatia.toon",
       "domain_count": 139,

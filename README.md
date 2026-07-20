@@ -6,7 +6,7 @@
 [![Check Documentation Links](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/check-links.yml/badge.svg)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/check-links.yml)
 
 Scans and seed datasets for finding accessibility statements on government websites,
-with a Europe-first scope (plus selected non-EU countries like UK and Switzerland).
+with a Europe-first scope (plus selected non-EU countries like UK, Switzerland, and Canada).
 
 ## Table of contents
 
