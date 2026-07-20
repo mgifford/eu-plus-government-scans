@@ -5,73 +5,7 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-07-20 19:13 UTC — last scan: 2026-07-20_
-
-**2** scan batches run
-
-**842** of **87,696** available pages scanned (**1.0%** coverage)
-**787** pages with technology detections (**93.5%** of scanned)
-**111** unique technologies identified
-
----
-
-## Technology Scan by Country
-
-| Country | URLs Scanned | Pages with Detections | Available | Last Scan |
-|---------|-------------|----------------------|-----------|----------|
-| Austria | 505 | 482 | 822 | 2026-07-20 |
-| Belgium | 337 | 305 | 1,329 | 2026-07-20 |
-
-> Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and metric from [Download machine-readable technology data (JSON)](technology-data.json).
-
----
-
-### Top Technologies
-
-| # | Technology | Pages | Categories |
-|--:|-----------|------:|-----------|
-| 1 | jQuery | **456** | JavaScript libraries |
-| 2 | Font Awesome | **319** | Font scripts |
-| 3 | jQuery UI | **215** | JavaScript libraries |
-| 4 | PHP | **189** | Programming languages |
-| 5 | Bootstrap | **179** | UI frameworks |
-| 6 | IIS | **149** | Web servers |
-| 7 | Windows Server | **149** | Operating systems |
-| 8 | Microsoft ASP.NET | **147** | Web frameworks |
-| 9 | Nginx | **141** | Reverse proxies, Web servers |
-| 10 | Apache | **123** | Web servers |
-| 11 | Drupal | **106** | CMS |
-| 12 | Google Font API | **103** | Font scripts |
-| 13 | Lightbox | **90** | JavaScript libraries |
-| 14 | Slick | **77** | JavaScript libraries |
-| 15 | Leaflet | **56** | Maps |
-| 16 | jsDelivr | **45** | CDN |
-| 17 | jQuery Migrate | **41** | JavaScript libraries |
-| 18 | prettyPhoto | **39** | JavaScript libraries |
-| 19 | SWFObject | **39** | Miscellaneous |
-| 20 | WordPress | **33** | Blogs, CMS |
-
-### Top Technology Categories
-
-| # | Category | Pages |
-|--:|---------|------:|
-| 1 | JavaScript libraries | **1,017** |
-| 2 | Web servers | **435** |
-| 3 | Font scripts | **425** |
-| 4 | Programming languages | **227** |
-| 5 | UI frameworks | **204** |
-| 6 | CMS | **196** |
-| 7 | Operating systems | **163** |
-| 8 | Web frameworks | **158** |
-| 9 | Reverse proxies | **142** |
-| 10 | CDN | **80** |
-| 11 | JavaScript frameworks | **72** |
-| 12 | Maps | **66** |
-| 13 | Miscellaneous | **64** |
-| 14 | Blogs | **33** |
-| 15 | Databases | **33** |
-
-📥 Machine-readable results: [Download machine-readable technology data (JSON)](technology-data.json)
+_No scan data yet — stats update automatically after every scan run._
 
 <!-- TECH_STATS_END -->
 
