@@ -1,71 +1,75 @@
 {
   "country_code": "FRANCE",
-  "total_relationships": 9032,
+  "total_relationships": 9035,
   "total_source_domains": 196,
   "top_source_domains": [
     {
       "domain": "auvergnerhonealpes.fr",
-      "count": 21514
+      "count": 41992
     },
     {
       "domain": "haute-garonne.fr",
-      "count": 3979
+      "count": 7786
     },
     {
       "domain": "paris.fr",
-      "count": 3837
+      "count": 7472
     },
     {
       "domain": "cnam.fr",
-      "count": 1839
+      "count": 3539
     },
     {
       "domain": "toulouse.fr",
-      "count": 1224
+      "count": 2405
     },
     {
       "domain": "herault.fr",
-      "count": 310
+      "count": 589
     },
     {
       "domain": "bourgognefranchecomte.fr",
-      "count": 245
+      "count": 489
+    },
+    {
+      "domain": "departement06.fr",
+      "count": 324
+    },
+    {
+      "domain": "bordeaux.fr",
+      "count": 270
+    },
+    {
+      "domain": "seine-et-marne.fr",
+      "count": 226
+    },
+    {
+      "domain": "cotesdarmor.fr",
+      "count": 214
+    },
+    {
+      "domain": "valdoise.fr",
+      "count": 208
     },
     {
       "domain": "developpement-durable.gouv.fr",
       "count": 203
     },
     {
-      "domain": "departement06.fr",
-      "count": 177
+      "domain": "metropole-rouen-normandie.fr",
+      "count": 192
     },
     {
-      "domain": "bordeaux.fr",
-      "count": 149
-    },
-    {
-      "domain": "seine-et-marne.fr",
-      "count": 122
+      "domain": "laregionvoustransporte.fr",
+      "count": 120
     },
     {
       "domain": "bordeaux-metropole.fr",
       "count": 112
     },
     {
-      "domain": "cotesdarmor.fr",
-      "count": 107
-    },
-    {
       "domain": "culture.gouv.fr",
       "count": 106
-    },
-    {
-      "domain": "valdoise.fr",
-      "count": 104
-    },
-    {
-      "domain": "metropole-rouen-normandie.fr",
-      "count": 96
     },
     {
       "domain": "anct.gouv.fr",
@@ -82,10 +86,6 @@
     {
       "domain": "montpellier.fr",
       "count": 63
-    },
-    {
-      "domain": "laregionvoustransporte.fr",
-      "count": 60
     },
     {
       "domain": "lenord.fr",
@@ -207,212 +207,212 @@
   "top_target_domains": [
     {
       "domain": "auvergnerhonealpes.fr",
-      "count": 16074
+      "count": 31391
     },
     {
       "domain": "haute-garonne.fr",
-      "count": 2990
+      "count": 5849
     },
     {
       "domain": "paris.fr",
-      "count": 2677
+      "count": 5215
     },
     {
       "domain": "skolengo.com",
-      "count": 2015
+      "count": 3935
     },
     {
       "domain": "cnam.fr",
-      "count": 1261
+      "count": 2414
     },
     {
       "domain": "ac-grenoble.fr",
-      "count": 758
+      "count": 1481
     },
     {
       "domain": "toulouse.fr",
-      "count": 543
+      "count": 1072
     },
     {
       "domain": "ac-lyon.fr",
-      "count": 515
+      "count": 1004
     },
     {
       "domain": "ac-clermont.fr",
-      "count": 492
+      "count": 960
     },
     {
       "domain": "facebook.com",
-      "count": 485
-    },
-    {
-      "domain": "instagram.com",
-      "count": 312
-    },
-    {
-      "domain": "twitter.com",
-      "count": 304
-    },
-    {
-      "domain": "linkedin.com",
-      "count": 290
+      "count": 807
     },
     {
       "domain": "ac-toulouse.fr",
-      "count": 288
+      "count": 563
     },
     {
       "domain": "europe-en-occitanie.eu",
-      "count": 283
+      "count": 553
+    },
+    {
+      "domain": "instagram.com",
+      "count": 530
+    },
+    {
+      "domain": "twitter.com",
+      "count": 520
+    },
+    {
+      "domain": "linkedin.com",
+      "count": 466
     },
     {
       "domain": "isere.fr",
-      "count": 237
-    },
-    {
-      "domain": "googleapis.com",
-      "count": 199
-    },
-    {
-      "domain": "youtube.com",
-      "count": 194
+      "count": 462
     },
     {
       "domain": "herault.fr",
-      "count": 183
+      "count": 347
+    },
+    {
+      "domain": "googleapis.com",
+      "count": 336
+    },
+    {
+      "domain": "youtube.com",
+      "count": 322
     },
     {
       "domain": "puy-de-dome.fr",
-      "count": 170
-    },
-    {
-      "domain": "unpkg.com",
-      "count": 149
-    },
-    {
-      "domain": "hautesavoie.fr",
-      "count": 144
+      "count": 315
     },
     {
       "domain": "ain.fr",
-      "count": 144
+      "count": 283
+    },
+    {
+      "domain": "hautesavoie.fr",
+      "count": 279
+    },
+    {
+      "domain": "unpkg.com",
+      "count": 277
     },
     {
       "domain": "education.gouv.fr",
-      "count": 131
-    },
-    {
-      "domain": "data.gouv.fr",
-      "count": 117
+      "count": 229
     },
     {
       "domain": "savoie.fr",
-      "count": 113
-    },
-    {
-      "domain": "google.com",
-      "count": 110
+      "count": 218
     },
     {
       "domain": "defenseurdesdroits.fr",
-      "count": 105
-    },
-    {
-      "domain": "allier.fr",
-      "count": 102
+      "count": 203
     },
     {
       "domain": "bourgognefranchecomte.fr",
-      "count": 101
+      "count": 201
     },
     {
-      "domain": "legifrance.gouv.fr",
-      "count": 99
+      "domain": "allier.fr",
+      "count": 197
     },
     {
-      "domain": "departement06.fr",
-      "count": 94
-    },
-    {
-      "domain": "developpement-durable.gouv.fr",
-      "count": 93
+      "domain": "google.com",
+      "count": 186
     },
     {
       "domain": "rhone.fr",
-      "count": 90
+      "count": 177
+    },
+    {
+      "domain": "departement06.fr",
+      "count": 176
     },
     {
       "domain": "toulouse-metropole.fr",
-      "count": 84
+      "count": 167
     },
     {
       "domain": "bordeaux.fr",
-      "count": 83
-    },
-    {
-      "domain": "github.com",
-      "count": 76
-    },
-    {
-      "domain": "numerique.gouv.fr",
-      "count": 76
+      "count": 145
     },
     {
       "domain": "seine-et-marne.fr",
-      "count": 73
+      "count": 135
     },
     {
-      "domain": "jsdelivr.net",
-      "count": 72
-    },
-    {
-      "domain": "info.gouv.fr",
-      "count": 65
-    },
-    {
-      "domain": "gstatic.com",
-      "count": 65
-    },
-    {
-      "domain": "service-public.gouv.fr",
-      "count": 63
+      "domain": "numerique.gouv.fr",
+      "count": 125
     },
     {
       "domain": "metropole-rouen-normandie.fr",
-      "count": 62
+      "count": 124
     },
     {
-      "domain": "agriculture.gouv.fr",
-      "count": 59
-    },
-    {
-      "domain": "culture.gouv.fr",
-      "count": 59
-    },
-    {
-      "domain": "cloudflare.com",
-      "count": 58
-    },
-    {
-      "domain": "tarteaucitron.io",
-      "count": 58
+      "domain": "data.gouv.fr",
+      "count": 118
     },
     {
       "domain": "cotesdarmor.fr",
-      "count": 56
+      "count": 112
+    },
+    {
+      "domain": "gstatic.com",
+      "count": 111
     },
     {
       "domain": "hauteloire.fr",
-      "count": 55
+      "count": 110
+    },
+    {
+      "domain": "legifrance.gouv.fr",
+      "count": 105
+    },
+    {
+      "domain": "jsdelivr.net",
+      "count": 100
+    },
+    {
+      "domain": "tarteaucitron.io",
+      "count": 98
+    },
+    {
+      "domain": "cantal.fr",
+      "count": 98
+    },
+    {
+      "domain": "europeenauvergnerhonealpes.fr",
+      "count": 98
+    },
+    {
+      "domain": "developpement-durable.gouv.fr",
+      "count": 94
+    },
+    {
+      "domain": "culture.gouv.fr",
+      "count": 94
+    },
+    {
+      "domain": "valdoise.fr",
+      "count": 92
+    },
+    {
+      "domain": "agriculture.gouv.fr",
+      "count": 89
+    },
+    {
+      "domain": "cloudflare.com",
+      "count": 88
     }
   ],
   "relationship_types": {
-    "editorial_link": 4257,
+    "editorial_link": 4258,
     "script_dependency": 1532,
-    "stylesheet_dependency": 1435,
+    "stylesheet_dependency": 1436,
     "image_or_media_dependency": 1338,
     "form_destination": 352,
-    "font_or_preload_dependency": 118
+    "font_or_preload_dependency": 119
   },
-  "generated_at": "2026-07-18T17:13:16.648374+00:00"
+  "generated_at": "2026-07-20T02:17:49.727496+00:00"
 }

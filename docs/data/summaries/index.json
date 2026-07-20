@@ -1,17 +1,17 @@
 {
-  "LITHUANIA": {
-    "total_relationships": 535,
-    "total_source_domains": 15,
-    "file": "lithuania.json"
+  "BULGARIA": {
+    "total_relationships": 1744,
+    "total_source_domains": 51,
+    "file": "bulgaria.json"
   },
-  "LUXEMBOURG": {
-    "total_relationships": 1808,
-    "total_source_domains": 41,
-    "file": "luxembourg.json"
+  "AUSTRIA": {
+    "total_relationships": 2946,
+    "total_source_domains": 36,
+    "file": "austria.json"
   },
-  "SPAIN": {
-    "total_relationships": 4126,
-    "total_source_domains": 66,
-    "file": "spain.json"
+  "FRANCE": {
+    "total_relationships": 9035,
+    "total_source_domains": 196,
+    "file": "france.json"
   }
 }
