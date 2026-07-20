@@ -3,11 +3,11 @@ title: Government Domains
 layout: page
 ---
 
-_Generated: 2026-07-19 23:14 UTC_
+_Generated: 2026-07-20 00:57 UTC_
 
 This page lists all government domains tracked in the dataset, grouped by country. Data is sourced from the [TOON seed files](https://github.com/mgifford/eu-plus-government-scans/tree/main/data/toon-seeds/countries) in the repository. Each country's full domain list is on its own page to keep page size manageable.
 
-**31 countries** · **37,268 domains** · **83,227 pages**
+**32 countries** · **39,439 domains** · **87,696 pages**
 
 ## Countries
 
@@ -16,6 +16,7 @@ This page lists all government domains tracked in the dataset, grouped by countr
 | [Austria](domains/austria.html) | 377 | 822 |
 | [Belgium](domains/belgium.html) | 634 | 1,329 |
 | [Bulgaria](domains/bulgaria.html) | 187 | 353 |
+| [Canada](domains/canada.html) | 2,171 | 4,469 |
 | [Croatia](domains/croatia.html) | 163 | 257 |
 | [Czechia](domains/czechia.html) | 394 | 866 |
 | [Denmark](domains/denmark.html) | 673 | 1,536 |
