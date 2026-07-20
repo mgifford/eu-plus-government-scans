@@ -1,0 +1,17 @@
+{
+  "BULGARIA": {
+    "total_relationships": 1707,
+    "total_source_domains": 50,
+    "file": "bulgaria.json"
+  },
+  "AUSTRIA": {
+    "total_relationships": 2942,
+    "total_source_domains": 36,
+    "file": "austria.json"
+  },
+  "CANADA": {
+    "total_relationships": 11673,
+    "total_source_domains": 206,
+    "file": "canada.json"
+  }
+}
