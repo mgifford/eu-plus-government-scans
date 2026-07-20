@@ -5,18 +5,18 @@ layout: page
 
 <!-- LIGHTHOUSE_STATS_START -->
 
-_Stats as of 2026-07-20 07:21 UTC — last scan: 2026-07-20_
+_Stats as of 2026-07-20 08:09 UTC — last scan: 2026-07-20_
 
-**1** scan batches run
+**3** scan batches run
 
-**240** of **87,696** available pages audited (**0.3%** coverage)
-**215** successful audits (**89.6%** of audited)
+**574** of **87,696** available pages audited (**0.7%** coverage)
+**536** successful audits (**93.4%** of audited)
 
 **Overall average Lighthouse scores** (0–100 scale):
 
 | Performance | Accessibility | Best Practices | SEO |
 |:-----------:|:-------------:|:--------------:|:---:|
-| 91 | 79 | 88 | 86 |
+| 91 | 77 | 90 | 87 |
 
 ---
 
@@ -24,7 +24,9 @@ _Stats as of 2026-07-20 07:21 UTC — last scan: 2026-07-20_
 
 | Country | Audited | Available | Perf | A11y | Best Practices | SEO | Last Scan |
 |---------|--------:|----------:|:----:|:----:|:--------------:|:---:|-----------|
+| Austria | 77 | 822 | 89 | 89 | 91 | 85 | 2026-07-20 |
 | Bulgaria | 240 | 353 | 91 | 79 | 88 | 86 | 2026-07-20 |
+| Croatia | 257 | 257 | 92 | 72 | 92 | 89 | 2026-07-20 |
 
 > Scores are averages across all successfully audited URLs, displayed as 0–100 (Lighthouse stores scores as 0.0–1.0 internally).
 
