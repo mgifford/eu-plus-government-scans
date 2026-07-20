@@ -44,6 +44,14 @@ jobs:
       actions: read
 
     steps:
+      - name: Record scheduled vs actual start time
+        id: timing
+        run: |
+          # github.event.schedule is only set for schedule-triggered runs; for
+          # workflow_dispatch there is no "intended" time to compare against.
+          echo "actual_start=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_OUTPUT"
+          echo "scheduled_cron=${{ github.event.schedule || 'n/a (manual dispatch)' }}" >> "$GITHUB_OUTPUT"
+
       - name: Checkout repository
         uses: actions/checkout@v7
 
@@ -82,8 +90,10 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run accessibility scan (specific country)
+        id: scan-country
         if: ${{ github.event.inputs.country != '' }}
         run: |
+          echo "scan_start=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_OUTPUT"
           set -o pipefail
           SKIP_DAYS="${{ github.event.inputs.skip_recently_scanned_days || '7' }}"
           python3 -m src.cli.scan_accessibility \
@@ -91,10 +101,13 @@ jobs:
             --rate-limit "${{ github.event.inputs.rate_limit }}" \
             --skip-recently-scanned-days "$SKIP_DAYS" \
             2>&1 | tee accessibility-scan-output.txt
+          echo "scan_end=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_OUTPUT"
 
       - name: Run accessibility scan (all countries)
+        id: scan-all
         if: ${{ github.event.inputs.country == '' || github.event_name == 'schedule' }}
         run: |
+          echo "scan_start=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_OUTPUT"
           set -o pipefail
           SKIP_DAYS="${{ github.event.inputs.skip_recently_scanned_days || '7' }}"
           python3 -m src.cli.scan_accessibility \
@@ -103,6 +116,7 @@ jobs:
             --rate-limit "${{ github.event.inputs.rate_limit || '1.0' }}" \
             --skip-recently-scanned-days "$SKIP_DAYS" \
             2>&1 | tee accessibility-scan-output.txt
+          echo "scan_end=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_OUTPUT"
 
       - name: Upload scan results
         if: always()
@@ -142,17 +156,58 @@ jobs:
           if-no-files-found: warn
           compression-level: 0
 
-      - name: Display scan summary
+      - name: Write operational summary
         if: always()
         run: |
-          echo "## Accessibility Statement Scan Summary" >> $GITHUB_STEP_SUMMARY
+          # Phase 1 instrumentation (WORKFLOW_ORCHESTRATION_AUDIT.md Section 12).
+          # Parses the "Reachable: N" / "Unreachable: N" lines already emitted
+          # by AccessibilityScannerJob for each country processed this run and
+          # sums them, since a single --all invocation covers multiple
+          # countries. Throughput/cycle-projection fields land in Phase 5 once
+          # the capacity-tracking logic in the audit doc is implemented.
+          SCAN_START="${{ steps.scan-country.outputs.scan_start || steps.scan-all.outputs.scan_start }}"
+          SCAN_END="${{ steps.scan-country.outputs.scan_end || steps.scan-all.outputs.scan_end }}"
+
+          ATTEMPTED="unknown"
+          FAILED="unknown"
+          if [ -f accessibility-scan-output.txt ]; then
+            # Line-anchored (not just a "Reachable:" substring match) so this
+            # can never accidentally pick up the "Unreachable:" line too, and
+            # uses portable POSIX grep -E instead of GNU-only -P/\K.
+            SUM_REACHABLE=$(grep -oE '^[[:space:]]*Reachable:[[:space:]]+[0-9]+' accessibility-scan-output.txt \
+              | awk -F: '{sum+=$2} END {print sum+0}')
+            SUM_UNREACHABLE=$(grep -oE '^[[:space:]]*Unreachable:[[:space:]]+[0-9]+' accessibility-scan-output.txt \
+              | awk -F: '{sum+=$2} END {print sum+0}')
+            [ -n "$SUM_REACHABLE" ] && ATTEMPTED="$SUM_REACHABLE"
+            [ -n "$SUM_UNREACHABLE" ] && FAILED="$SUM_UNREACHABLE"
+          fi
+
+          {
+            echo "## Accessibility Scan — Operational Summary"
+            echo ""
+            echo "| Field | Value |"
+            echo "|---|---|"
+            echo "| Scanner | accessibility |"
+            echo "| Scheduled start (cron) | ${{ steps.timing.outputs.scheduled_cron }} |"
+            echo "| Actual job start | ${{ steps.timing.outputs.actual_start }} |"
+            echo "| Scan step start | $SCAN_START |"
+            echo "| Scan step end | $SCAN_END |"
+            echo "| URLs reachable (attempted successfully) | $ATTEMPTED |"
+            echo "| URLs unreachable (attempted, failed) | $FAILED |"
+            echo "| Rate limit | ${{ github.event.inputs.rate_limit || '1.0' }} req/sec |"
+            echo "| Skip-recently-scanned window | ${{ github.event.inputs.skip_recently_scanned_days || '7' }} days |"
+            echo "| Run conclusion | ${{ job.status }} |"
+            echo "| Workflow run | [#${{ github.run_number }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) |"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Display raw scan log tail
+        if: always()
+        run: |
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "## Raw Scan Log (last 50 lines)" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           if [ -f accessibility-scan-output.txt ]; then
             echo '```' >> $GITHUB_STEP_SUMMARY
             tail -50 accessibility-scan-output.txt >> $GITHUB_STEP_SUMMARY
             echo '```' >> $GITHUB_STEP_SUMMARY
           fi
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "- Rate Limit: ${{ github.event.inputs.rate_limit || '1.0' }} req/sec" >> $GITHUB_STEP_SUMMARY
-          echo "- Skip Recently Scanned: ${{ github.event.inputs.skip_recently_scanned_days || '7' }} days" >> $GITHUB_STEP_SUMMARY
-          echo "- Workflow Run: [\#${{ github.run_number }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})" >> $GITHUB_STEP_SUMMARY
