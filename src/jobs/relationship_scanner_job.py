@@ -105,6 +105,21 @@ def _backoff_days(failure_count: int) -> int:
     return min(BACKOFF_BASE_DAYS * (2 ** (failure_count - 1)), BACKOFF_MAX_DAYS)
 
 
+def _registered_domain_from_url(url: str) -> str:
+    """The registrable domain for a URL's host (e.g. "mjusticia.gob.es"),
+    falling back to the raw hostname for hosts entirely under a multi-label
+    public suffix (e.g. bare "gob.es" itself, per the Public Suffix List --
+    tldextract's registered_domain is empty for those)."""
+    from urllib.parse import urlparse
+
+    from tldextract import extract as tld_extract
+
+    hostname = urlparse(url).hostname or ""
+    if not hostname:
+        return ""
+    return tld_extract(url).registered_domain or hostname
+
+
 def _derive_country_from_tld(url: str) -> str:
     """Country code for a URL's host, looked up against the government domain
     registry (built from the TOON seed files) rather than a hardcoded TLD
@@ -113,17 +128,9 @@ def _derive_country_from_tld(url: str) -> str:
     fixed 30-entry TLD list (e.g. Canada) to "UNKNOWN" even when the domain
     was a correctly-seeded government domain, since the table was never kept
     in sync with the TOON seed set."""
-    from urllib.parse import urlparse
-
-    from tldextract import extract as tld_extract
-
-    hostname = urlparse(url).hostname or ""
-    if not hostname:
+    registered_domain = _registered_domain_from_url(url)
+    if not registered_domain:
         return "UNKNOWN"
-    # registered_domain can be empty for hosts entirely under a multi-label
-    # public suffix (e.g. "gob.es" itself, per the Public Suffix List) --
-    # fall back to the raw hostname so those still match a seeded domain.
-    registered_domain = tld_extract(url).registered_domain or hostname
     return _GOV_REGISTRY.country_for_domain(registered_domain) or "UNKNOWN"
 
 
@@ -271,7 +278,7 @@ class RelationshipScannerJob:
                 eligible.append(UrlEligibility(
                     url=url,
                     country_code=country_code,
-                    source_domain=_derive_country_from_tld(url),
+                    source_domain=_registered_domain_from_url(url),
                     priority=0,
                     last_attempted=None,
                     failure_count=0,
@@ -802,7 +809,7 @@ class RelationshipScannerJob:
             self._update_scan_state(
                 url=result.url,
                 country_code=country_code,
-                source_domain=_derive_country_from_tld(result.url),
+                source_domain=_registered_domain_from_url(result.url),
                 scan_id=scan_id,
                 success=success,
                 scan_duration_ms=int((time.monotonic() - scan_start) * 1000),
@@ -813,7 +820,7 @@ class RelationshipScannerJob:
                 url=result.url,
                 country_code=country_code,
                 scan_id=scan_id,
-                source_domain=_derive_country_from_tld(result.url),
+                source_domain=_registered_domain_from_url(result.url),
                 source_url=result.url,
                 relationships_found=rel_count,
                 scan_duration_ms=int((time.monotonic() - scan_start) * 1000),
