@@ -5,7 +5,72 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_No scan data yet — stats update automatically after every scan run._
+_Stats as of 2026-07-20 03:24 UTC — last scan: 2026-07-20_
+
+**1** scan batches run
+
+**504** of **87,696** available pages scanned (**0.6%** coverage)
+**481** pages with technology detections (**95.4%** of scanned)
+**79** unique technologies identified
+
+---
+
+## Technology Scan by Country
+
+| Country | URLs Scanned | Pages with Detections | Available | Last Scan |
+|---------|-------------|----------------------|-----------|----------|
+| Austria | 504 | 481 | 822 | 2026-07-20 |
+
+> Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and metric from [Download machine-readable technology data (JSON)](technology-data.json).
+
+---
+
+### Top Technologies
+
+| # | Technology | Pages | Categories |
+|--:|-----------|------:|-----------|
+| 1 | jQuery | **305** | JavaScript libraries |
+| 2 | jQuery UI | **207** | JavaScript libraries |
+| 3 | Font Awesome | **196** | Font scripts |
+| 4 | IIS | **135** | Web servers |
+| 5 | Windows Server | **135** | Operating systems |
+| 6 | Bootstrap | **134** | UI frameworks |
+| 7 | Microsoft ASP.NET | **133** | Web frameworks |
+| 8 | Nginx | **107** | Reverse proxies, Web servers |
+| 9 | Apache | **99** | Web servers |
+| 10 | Lightbox | **89** | JavaScript libraries |
+| 11 | PHP | **61** | Programming languages |
+| 12 | Slick | **55** | JavaScript libraries |
+| 13 | Leaflet | **50** | Maps |
+| 14 | prettyPhoto | **39** | JavaScript libraries |
+| 15 | SWFObject | **39** | Miscellaneous |
+| 16 | TYPO3 CMS | **31** | CMS |
+| 17 | jQuery Migrate | **24** | JavaScript libraries |
+| 18 | AddThis | **22** | Widgets |
+| 19 | WordPress | **20** | Blogs, CMS |
+| 20 | MySQL | **20** | Databases |
+
+### Top Technology Categories
+
+| # | Category | Pages |
+|--:|---------|------:|
+| 1 | JavaScript libraries | **770** |
+| 2 | Web servers | **351** |
+| 3 | Font scripts | **207** |
+| 4 | Operating systems | **140** |
+| 5 | UI frameworks | **139** |
+| 6 | Web frameworks | **138** |
+| 7 | Reverse proxies | **107** |
+| 8 | Programming languages | **78** |
+| 9 | CMS | **62** |
+| 10 | Maps | **50** |
+| 11 | Miscellaneous | **49** |
+| 12 | JavaScript frameworks | **31** |
+| 13 | Widgets | **27** |
+| 14 | CDN | **22** |
+| 15 | Blogs | **20** |
+
+📥 Machine-readable results: [Download machine-readable technology data (JSON)](technology-data.json)
 
 <!-- TECH_STATS_END -->
 
