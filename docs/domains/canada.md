@@ -1023,7 +1023,7 @@ permalink: /domains/canada.html
 | `map.toronto.ca` | [Visit map.toronto.ca homepage](https://map.toronto.ca/) |
 | `mapgallery.calgary.ca` | [Visit mapgallery.calgary.ca homepage](https://mapgallery.calgary.ca/), [Visit mapgallery.calgary.ca/pages/environment](https://mapgallery.calgary.ca/pages/environment), [Visit mapgallery.calgary.ca/pages/featuredmaps](https://mapgallery.calgary.ca/pages/featuredmaps) |
 | `mapropriete.laval.ca` | [Visit mapropriete.laval.ca homepage](https://mapropriete.laval.ca/), [Visit mapropriete.laval.ca/confidentialite](https://mapropriete.laval.ca/confidentialite) |
-| `maps.edmonton.ca` | [Visit maps.edmonton.ca homepage](https://maps.edmonton.ca/), [Visit maps.edmonton.ca/map.aspx](https://maps.edmonton.ca/map.aspx), [Visit maps.edmonton.ca/zoning/](https://maps.edmonton.ca/zoning/?app=d336380a311647a6977a511aca6ef869&workflow=9577e24b-30c3-4870-aace-994b8ce4d713&workflowParams={%22mapType%22:%22devapps%22}) |
+| `maps.edmonton.ca` | [Visit maps.edmonton.ca homepage](https://maps.edmonton.ca/), [Visit maps.edmonton.ca/map.aspx](https://maps.edmonton.ca/map.aspx), [Visit maps.edmonton.ca/zoning/](https://maps.edmonton.ca/zoning/?app=d336380a311647a6977a511aca6ef869&workflow=9577e24b-30c3-4870-aace-994b8ce4d713&workflowParams=%7B%22mapType%22:%22devapps%22%7D) |
 | `maps.kitchener.ca` | [Visit maps.kitchener.ca homepage](https://maps.kitchener.ca/) |
 | `maps.markham.ca` | [Visit maps.markham.ca homepage](https://maps.markham.ca/) |
 | `maps.ottawa.ca` | [Visit maps.ottawa.ca homepage](https://maps.ottawa.ca/), [Visit maps.ottawa.ca/geoottawa/index_fr.html](https://maps.ottawa.ca/geoottawa/index_fr.html?config=config_fr.json&locale=fr) |

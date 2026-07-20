@@ -7,7 +7,7 @@ from pathlib import Path
 
 import pytest
 
-from src.cli.generate_domains_report import generate_domains_report
+from src.cli.generate_domains_report import _liquid_safe_url, generate_domains_report
 
 
 # ---------------------------------------------------------------------------
@@ -264,3 +264,57 @@ def test_generate_domains_report_many_pages_truncated(
 
     # Should mention "+7 more" (10 pages - 3 shown = 7)
     assert "+7 more" in content
+
+
+# ---------------------------------------------------------------------------
+# Liquid-tag-breaking URL regression (real Canada CSV data, GitHub Actions
+# run 29713686941: "Tag '{%' was not properly terminated")
+# ---------------------------------------------------------------------------
+
+def test_liquid_safe_url_escapes_braces():
+    url = "https://maps.edmonton.ca/zoning/?workflowParams={%22mapType%22:%22devapps%22}"
+    safe = _liquid_safe_url(url)
+    assert "{" not in safe
+    assert "}" not in safe
+    assert safe == (
+        "https://maps.edmonton.ca/zoning/?workflowParams=%7B%22mapType%22:%22devapps%22%7D"
+    )
+
+
+def test_liquid_safe_url_leaves_normal_urls_unchanged():
+    url = "https://example.gov/about?ref=123"
+    assert _liquid_safe_url(url) == url
+
+
+def test_generate_domains_report_escapes_liquid_tag_url(tmp_path: Path):
+    """A page URL containing a literal '{%...%}'-shaped substring (e.g.
+    URL-encoded JSON in a query string) must not break Jekyll's Liquid
+    parser when the generated Markdown is built -- reproduces the real
+    maps.edmonton.ca URL from Canada's seed data that broke the site build."""
+    countries_dir = tmp_path / "countries"
+    countries_dir.mkdir()
+    bad_url = (
+        "https://maps.edmonton.ca/zoning/?workflow=abc"
+        "&workflowParams={%22mapType%22:%22devapps%22}"
+    )
+    toon = {
+        "version": "0.1-seed",
+        "country": "Canada",
+        "domain_count": 1,
+        "page_count": 1,
+        "domains": [
+            {
+                "canonical_domain": "maps.edmonton.ca",
+                "pages": [{"url": bad_url, "is_root_page": True}],
+            }
+        ],
+    }
+    (countries_dir / "canada.toon").write_text(json.dumps(toon), encoding="utf-8")
+
+    output_path = tmp_path / "domains.md"
+    generate_domains_report(countries_dir, output_path)
+    content = (tmp_path / "domains" / "canada.md").read_text()
+
+    assert "{%" not in content
+    assert "%}" not in content
+    assert "%7B%22mapType%22:%22devapps%22%7D" in content
