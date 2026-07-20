@@ -99,7 +99,7 @@ jobs:
             --skip-recently-scanned-days "$SKIP_DAYS"
           )
           if [ -n "${{ github.event.inputs.limit }}" ]; then
-            ARGS+=(--limit "${{ github.event.inputs.limit }}")
+            ARGS+=(--max-urls "${{ github.event.inputs.limit }}")
           fi
           
           python3 -m src.cli.scan_technology "${ARGS[@]}" 2>&1 | tee tech-scan-output.txt
@@ -118,7 +118,7 @@ jobs:
             --skip-recently-scanned-days "$SKIP_DAYS"
           )
           if [ -n "${{ github.event.inputs.limit }}" ]; then
-            ARGS+=(--limit "${{ github.event.inputs.limit }}")
+            ARGS+=(--max-urls "${{ github.event.inputs.limit }}")
           fi
           
           python3 -m src.cli.scan_technology "${ARGS[@]}" 2>&1 | tee tech-scan-output.txt

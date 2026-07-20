@@ -1,21 +1,23 @@
 # Batched URL Validation System
 
-This document explains the batched URL validation system designed to handle ~80k+ government URLs across 60 countries without exceeding GitHub Actions' 2-hour timeout limit.
+This document explains the batched URL validation system designed to handle a large, growing
+corpus of government URLs (see `data/toon-seeds/index.json` for the current domain/page/country
+counts) without exceeding the GitHub Actions job's 60-minute timeout.
 
 ## Problem
 
 The original implementation attempted to validate all URLs in a single GitHub Actions run, which:
-- Exceeded the 2-hour timeout limit
+- Exceeded the job timeout
 - Was not resumable if it failed partway through
 - Couldn't track progress across multiple runs
 
 ## Solution
 
 The batched validation system breaks the work into small chunks that can be:
-- Executed within the 2-hour timeout
+- Executed within the 60-minute job timeout
 - Tracked across multiple workflow runs
 - Monitored via GitHub Issues
-- Automatically resumed every 2 hours via cron
+- Automatically resumed twice daily via cron (01:00 and 13:00 UTC)
 
 ## Architecture
 
@@ -37,7 +39,7 @@ The batched validation system breaks the work into small chunks that can be:
    - Integrates with coordinator and issue manager
 
 4. **Workflow Files**
-   - `.github/workflows/validate-urls-batch.yml` - Runs every 2 hours
+   - `.github/workflows/validate-urls-batch.yml` - Runs twice daily (01:00 and 13:00 UTC)
    - `.github/workflows/reopen-validation-cycle.yml` - Starts new cycles quarterly
 
 ### Database Schema
@@ -93,7 +95,7 @@ python3 -m src.cli.validate_urls_batch \
 ### Automatic Batch Processing
 
 The system automatically:
-1. **Every 2 hours**: Processes next batch via cron workflow
+1. **Twice daily (01:00 and 13:00 UTC)**: Processes next batch via cron workflow
 2. **Quarterly**: Starts new validation cycles (Jan 1, Apr 1, Jul 1, Oct 1)
 
 ## Workflow
@@ -107,10 +109,10 @@ When a new cycle starts:
 
 ### 2. Batch Processing
 
-Every 2 hours:
+Twice daily (01:00 and 13:00 UTC):
 - Workflow runs via cron trigger
 - Downloads previous metadata DB from artifacts
-- Gets next N countries (default: 5) with `status = 'pending'`
+- Gets next N countries (default: 4) with `status = 'pending'`
 - Marks them as `status = 'processing'`
 - Validates URLs for each country
 - Updates status to `completed` or `failed`
@@ -191,30 +193,33 @@ Find open issues: https://github.com/mgifford/eu-plus-government-scans/issues?q=
 The system is fully resumable:
 
 - **State persists** in database artifact
-- **Workflow restarts** automatically every 2 hours
+- **Workflow restarts** automatically twice daily (01:00 and 13:00 UTC)
 - **Progress tracked** in GitHub issue
 - **Failed countries** can be retried in next cycle
 
 ## Cost Optimization
 
 - **Artifact storage**: Only metadata DB (~1 MB) uploaded
-- **Workflow minutes**: ~2 hours per batch, spread over days
+- **Workflow minutes**: typically well under 10 minutes per batch (batch runs are usually much
+  shorter than the 60-minute job timeout), spread over days
 - **Rate limiting**: Respects server limits, prevents blocks
 
 ## Example Timeline
 
-For 60 countries with batch size 5:
+For 32 countries with batch size 4, running twice daily (every 12 hours):
 
 | Time | Batch | Countries | Status |
 |------|-------|-----------|--------|
-| T+0h | 1 | 5 | ✅ Completed |
-| T+2h | 2 | 5 | ✅ Completed |
-| T+4h | 3 | 5 | ✅ Completed |
+| T+0h | 1 | 4 | ✅ Completed |
+| T+12h | 2 | 4 | ✅ Completed |
+| T+24h | 3 | 4 | ✅ Completed |
 | ... | ... | ... | ... |
-| T+22h | 12 | 5 | ✅ Completed |
-| T+24h | - | 60 | 🟢 Cycle Complete |
+| T+84h | 8 | 4 | ✅ Completed |
+| T+96h | - | 32 | 🟢 Cycle Complete |
 
-**Total time**: ~24 hours to validate all 60 countries
+**Total time**: ~4 days to validate all 32 countries. Country/batch-size figures should be
+re-checked against `data/toon-seeds/index.json` and the workflow's actual `batch_size` default
+before relying on this table, since both the corpus and the configuration can change.
 
 ## Troubleshooting
 
