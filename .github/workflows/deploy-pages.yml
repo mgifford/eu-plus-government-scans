@@ -42,12 +42,12 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Setup GitHub Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
       - name: Download scan-progress artifact from triggering workflow run
         if: github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success'
         continue-on-error: true
-        uses: actions/download-artifact@v8
+        uses: actions/download-artifact@v8.0.1
         with:
           pattern: scan-progress-report-*
           path: /tmp/scan-progress-artifact
@@ -75,7 +75,7 @@ jobs:
       - name: Download latest scan-progress artifact
         if: github.event_name != 'workflow_run' && steps.find-scan-progress-artifact.outputs.run_id != ''
         continue-on-error: true
-        uses: actions/download-artifact@v8
+        uses: actions/download-artifact@v8.0.1
         with:
           pattern: scan-progress-report-*
           path: /tmp/scan-progress-artifact
