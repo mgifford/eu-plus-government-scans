@@ -5,7 +5,34 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_No scan data yet — stats update automatically after every scan run._
+_Stats as of 2026-07-20 14:07 UTC — last scan: 2026-07-20_
+
+**4** scan batches run
+
+**2,552** of **87,696** available pages scanned (**2.9%** coverage)
+**2,339** of **2,552** scanned pages were reachable (**91.7%**)
+**1,080** of **2,339** reachable pages have an accessibility statement (**46.2%**)
+**983** pages have the statement link in the footer (**91.0%** of pages with a statement)
+
+📥 Machine-readable results are available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
+
+Each country entry in the JSON file includes page-level evidence for pages with and without accessibility statements, plus a per-domain summary you can share to validate the published counts.
+
+> Hover or focus any non-zero count in the country table to preview the matching pages. If there are 20 or fewer URLs, the preview shows all of them; otherwise it shows a short sample. Full machine-readable data is available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
+
+---
+
+## Accessibility Statement Scan by Country
+
+| Country | Scanned | Available | Reachable | Has Statement | In Footer | Statement % | Scan Period |
+|---------|---------|-----------|-----------|--------------|-----------|------------|-------------|
+| Austria | 822 | 822 | 787 | 556 | 525 | 70.6% | Jul 2026 |
+| Belgium | 712 | 1,329 | 653 | 306 | 280 | 46.9% | Jul 2026 |
+| Bulgaria | 353 | 353 | 316 | 98 | 87 | 31.0% | Jul 2026 |
+| Canada | 665 | 4,469 | 583 | 120 | 91 | 20.6% | Jul 2026 |
+| **Total** | **2,552** | **87,696** | **2,339** | **1,080** | **983** | **46.2%** | — |
+
+> **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
 <!-- ACCESSIBILITY_STATS_END -->
 
