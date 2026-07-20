@@ -65,6 +65,16 @@ def main():
         default=0,
         dest="skip_recently_scanned_days",
     )
+    parser.add_argument(
+        "--max-urls",
+        help=(
+            "Stop after scanning this many URLs in total across all countries. "
+            "0 = no limit (default).  Useful for a small manual test run."
+        ),
+        type=int,
+        default=0,
+        dest="max_urls",
+    )
 
     args = parser.parse_args()
 
@@ -81,6 +91,7 @@ def main():
     scanner = TechScanner(settings)
 
     max_runtime_seconds = args.max_runtime * 60 if args.max_runtime > 0 else None
+    max_urls = args.max_urls if args.max_urls > 0 else None
 
     try:
         if args.all:
@@ -97,6 +108,7 @@ def main():
                     rate_limit_per_second=args.rate_limit,
                     max_runtime_seconds=max_runtime_seconds,
                     skip_recently_scanned_days=args.skip_recently_scanned_days,
+                    max_urls=max_urls,
                 )
             )
 
@@ -133,6 +145,7 @@ def main():
                     rate_limit_per_second=args.rate_limit,
                     max_runtime_seconds=max_runtime_seconds,
                     skip_recently_scanned_days=args.skip_recently_scanned_days,
+                    max_urls=max_urls,
                 )
             )
 

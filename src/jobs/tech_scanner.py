@@ -168,6 +168,7 @@ class TechScanner:
         max_runtime_seconds: Optional[float] = None,
         start_time: Optional[float] = None,
         skip_recently_scanned_days: int = 0,
+        max_urls: Optional[int] = None,
     ) -> Dict[str, Any]:
         """
         Detect technologies for all URLs in a country's TOON file.
@@ -189,6 +190,8 @@ class TechScanner:
                 by this scanner within the last N days.  0 = always re-scan.
                 Setting this to 7 makes each run focus on stale/new URLs so
                 the full domain list is covered progressively across runs.
+            max_urls: Stop after scanning this many URLs for this country.
+                ``None`` = unlimited.
 
         Returns:
             Scan statistics dictionary.
@@ -219,6 +222,8 @@ class TechScanner:
                 )
 
         urls = [u for u in all_urls if u not in recently_scanned]
+        if max_urls is not None:
+            urls = urls[:max_urls]
         if not urls:
             print(f"All {len(all_urls)} URLs were recently scanned — nothing to do")
             return {
@@ -309,6 +314,7 @@ class TechScanner:
         rate_limit_per_second: float = 2.0,
         max_runtime_seconds: Optional[float] = None,
         skip_recently_scanned_days: int = 0,
+        max_urls: Optional[int] = None,
     ) -> List[Dict[str, Any]]:
         """
         Scan all TOON files in a directory for technologies.
@@ -328,6 +334,8 @@ class TechScanner:
                 last N days.  0 = always re-scan all URLs.  Setting this to 7
                 means each run only scans URLs that haven't been seen recently,
                 allowing the full list to be covered progressively across runs.
+            max_urls: Stop after scanning this many URLs in total across all
+                countries.  ``None`` = unlimited.
 
         Returns:
             List of scan statistics for each country.
@@ -356,6 +364,7 @@ class TechScanner:
         # Reserve this many seconds at the end so we don't attempt to start a
         # fresh country scan when there is not enough time left.
         _country_start_buffer = 5 * 60  # 5 minutes
+        urls_remaining = max_urls  # None = unlimited
 
         for toon_path in toon_files:
             country_code = country_filename_to_code(toon_path.stem)
@@ -373,6 +382,13 @@ class TechScanner:
                     )
                     break
 
+            if urls_remaining is not None and urls_remaining <= 0:
+                print(
+                    f"🎯 Global URL target reached — "
+                    f"skipping remaining countries starting with {country_code}"
+                )
+                break
+
             try:
                 stats = await self.scan_country(
                     country_code,
@@ -381,8 +397,11 @@ class TechScanner:
                     max_runtime_seconds=max_runtime_seconds,
                     start_time=start_time,
                     skip_recently_scanned_days=skip_recently_scanned_days,
+                    max_urls=urls_remaining,
                 )
                 all_stats.append(stats)
+                if urls_remaining is not None:
+                    urls_remaining -= stats.get("urls_scanned", 0)
             except Exception as exc:
                 print(f"Error scanning {toon_path}: {exc}")
                 all_stats.append({"country_code": country_code, "error": str(exc)})
