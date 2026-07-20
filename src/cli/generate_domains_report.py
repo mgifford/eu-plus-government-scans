@@ -42,6 +42,21 @@ def _country_sort_key(entry: tuple[str, dict]) -> str:
     return data.get("country", "").lower()
 
 
+def _liquid_safe_url(url: str) -> str:
+    """Percent-encode literal `{` and `}` in a URL before embedding it in
+    generated Markdown.
+
+    Jekyll's Liquid template engine treats any `{%` ... `%}` substring as a
+    tag, even inside a Markdown link -- a real source URL containing
+    URL-encoded JSON in a query string (e.g.
+    `...?workflowParams={%22mapType%22:%22devapps%22}`) breaks the site
+    build with "Tag '{%' was not properly terminated". `%7B`/`%7D` are the
+    standard percent-encoded forms of `{`/`}` and are handled identically by
+    HTTP clients, so this doesn't change where the link goes.
+    """
+    return url.replace("{", "%7B").replace("}", "%7D")
+
+
 def _page_link_label(url: str) -> str:
     """Build descriptive anchor text for page URLs.
 
@@ -90,7 +105,7 @@ def _write_country_page(
                 canonical = domain_entry.get("canonical_domain", "")
                 pages = domain_entry.get("pages", [])
                 page_links = ", ".join(
-                    f"[{_page_link_label(p['url'])}]({p['url']})"
+                    f"[{_page_link_label(p['url'])}]({_liquid_safe_url(p['url'])})"
                     for p in pages[:3]
                 )
                 if len(pages) > 3:
