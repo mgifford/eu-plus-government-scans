@@ -1,0 +1,398 @@
+{
+  "country_code": "BELGIUM",
+  "total_relationships": 3808,
+  "total_source_domains": 45,
+  "top_source_domains": [
+    {
+      "domain": "belgium.be",
+      "count": 3629
+    },
+    {
+      "domain": "wallonie.be",
+      "count": 2681
+    },
+    {
+      "domain": "fgov.be",
+      "count": 844
+    },
+    {
+      "domain": "vlaanderen.be",
+      "count": 812
+    },
+    {
+      "domain": "mechelen.be",
+      "count": 748
+    },
+    {
+      "domain": "antwerpen.be",
+      "count": 697
+    },
+    {
+      "domain": "hainaut.be",
+      "count": 454
+    },
+    {
+      "domain": "namur.be",
+      "count": 372
+    },
+    {
+      "domain": "irisnet.be",
+      "count": 328
+    },
+    {
+      "domain": "liege.be",
+      "count": 261
+    },
+    {
+      "domain": "gent.be",
+      "count": 209
+    },
+    {
+      "domain": "leuven.be",
+      "count": 147
+    },
+    {
+      "domain": "brussel.be",
+      "count": 143
+    },
+    {
+      "domain": "oost-vlaanderen.be",
+      "count": 133
+    },
+    {
+      "domain": "bruxelles.be",
+      "count": 133
+    },
+    {
+      "domain": "mil.be",
+      "count": 126
+    },
+    {
+      "domain": "kortrijk.be",
+      "count": 110
+    },
+    {
+      "domain": "brugge.be",
+      "count": 101
+    },
+    {
+      "domain": "hasselt.be",
+      "count": 88
+    },
+    {
+      "domain": "mons.be",
+      "count": 86
+    },
+    {
+      "domain": "visitmechelen.be",
+      "count": 82
+    },
+    {
+      "domain": "brussels.be",
+      "count": 79
+    },
+    {
+      "domain": "limburg.be",
+      "count": 34
+    },
+    {
+      "domain": "charleroi.be",
+      "count": 30
+    },
+    {
+      "domain": "socialsecurity.be",
+      "count": 22
+    },
+    {
+      "domain": "parlement-wallonie.be",
+      "count": 22
+    },
+    {
+      "domain": "skeyes.be",
+      "count": 21
+    },
+    {
+      "domain": "west-vlaanderen.be",
+      "count": 20
+    },
+    {
+      "domain": "ngi.be",
+      "count": 18
+    },
+    {
+      "domain": "autoriteprotectiondonnees.be",
+      "count": 16
+    },
+    {
+      "domain": "dekamer.be",
+      "count": 16
+    },
+    {
+      "domain": "gegevensbeschermingsautoriteit.be",
+      "count": 16
+    },
+    {
+      "domain": "lachambre.be",
+      "count": 16
+    },
+    {
+      "domain": "bipt.be",
+      "count": 14
+    },
+    {
+      "domain": "dataprotectionauthority.be",
+      "count": 13
+    },
+    {
+      "domain": "niras.be",
+      "count": 12
+    },
+    {
+      "domain": "ondraf.be",
+      "count": 12
+    },
+    {
+      "domain": "securitecivile.be",
+      "count": 11
+    },
+    {
+      "domain": "cass.be",
+      "count": 8
+    },
+    {
+      "domain": "senate.be",
+      "count": 7
+    },
+    {
+      "domain": "rvv-cce.be",
+      "count": 6
+    },
+    {
+      "domain": "bas-cbas.be",
+      "count": 5
+    },
+    {
+      "domain": "inspfin.be",
+      "count": 5
+    },
+    {
+      "domain": "om-mp.be",
+      "count": 5
+    },
+    {
+      "domain": "const-court.be",
+      "count": 4
+    }
+  ],
+  "top_target_domains": [
+    {
+      "domain": "belgium.be",
+      "count": 2056
+    },
+    {
+      "domain": "wallonie.be",
+      "count": 1810
+    },
+    {
+      "domain": "vlaanderen.be",
+      "count": 596
+    },
+    {
+      "domain": "fgov.be",
+      "count": 530
+    },
+    {
+      "domain": "facebook.com",
+      "count": 471
+    },
+    {
+      "domain": "googleapis.com",
+      "count": 422
+    },
+    {
+      "domain": "linkedin.com",
+      "count": 374
+    },
+    {
+      "domain": "antwerpen.be",
+      "count": 373
+    },
+    {
+      "domain": "instagram.com",
+      "count": 349
+    },
+    {
+      "domain": "mechelen.be",
+      "count": 309
+    },
+    {
+      "domain": "enable-javascript.com",
+      "count": 275
+    },
+    {
+      "domain": "jsdelivr.net",
+      "count": 262
+    },
+    {
+      "domain": "youtube.com",
+      "count": 241
+    },
+    {
+      "domain": "hainaut.be",
+      "count": 227
+    },
+    {
+      "domain": "unpkg.com",
+      "count": 207
+    },
+    {
+      "domain": "irisnet.be",
+      "count": 174
+    },
+    {
+      "domain": "twitter.com",
+      "count": 172
+    },
+    {
+      "domain": "namur.be",
+      "count": 164
+    },
+    {
+      "domain": "liege.be",
+      "count": 128
+    },
+    {
+      "domain": "cloudflare.com",
+      "count": 104
+    },
+    {
+      "domain": "google.com",
+      "count": 99
+    },
+    {
+      "domain": "gstatic.com",
+      "count": 95
+    },
+    {
+      "domain": "leuven.be",
+      "count": 88
+    },
+    {
+      "domain": "gent.be",
+      "count": 79
+    },
+    {
+      "domain": "x.com",
+      "count": 76
+    },
+    {
+      "domain": "fontawesome.com",
+      "count": 76
+    },
+    {
+      "domain": "mil.be",
+      "count": 70
+    },
+    {
+      "domain": "bootstrapcdn.com",
+      "count": 69
+    },
+    {
+      "domain": "bruxelles.be",
+      "count": 53
+    },
+    {
+      "domain": "hasselt.be",
+      "count": 50
+    },
+    {
+      "domain": "googletagmanager.com",
+      "count": 49
+    },
+    {
+      "domain": "prezly.com",
+      "count": 49
+    },
+    {
+      "domain": "oost-vlaanderen.be",
+      "count": 48
+    },
+    {
+      "domain": "kortrijk.be",
+      "count": 46
+    },
+    {
+      "domain": "tarteaucitron.io",
+      "count": 44
+    },
+    {
+      "domain": "visitmechelen.be",
+      "count": 40
+    },
+    {
+      "domain": "brussel.be",
+      "count": 39
+    },
+    {
+      "domain": "brugge.be",
+      "count": 37
+    },
+    {
+      "domain": "mons.be",
+      "count": 36
+    },
+    {
+      "domain": "europa.eu",
+      "count": 35
+    },
+    {
+      "domain": "matomo.cloud",
+      "count": 35
+    },
+    {
+      "domain": "socialsecurity.be",
+      "count": 33
+    },
+    {
+      "domain": "amazonaws.com",
+      "count": 28
+    },
+    {
+      "domain": "bsky.app",
+      "count": 28
+    },
+    {
+      "domain": "cloudfront.net",
+      "count": 28
+    },
+    {
+      "domain": "tobania.be",
+      "count": 25
+    },
+    {
+      "domain": "tiny.cloud",
+      "count": 25
+    },
+    {
+      "domain": "federation-wallonie-bruxelles.be",
+      "count": 24
+    },
+    {
+      "domain": "parlement-wallonie.be",
+      "count": 24
+    },
+    {
+      "domain": "imio.be",
+      "count": 24
+    }
+  ],
+  "relationship_types": {
+    "editorial_link": 1644,
+    "script_dependency": 697,
+    "font_or_preload_dependency": 88,
+    "stylesheet_dependency": 615,
+    "image_or_media_dependency": 448,
+    "form_destination": 316
+  },
+  "generated_at": "2026-07-20T08:48:52.773253+00:00"
+}

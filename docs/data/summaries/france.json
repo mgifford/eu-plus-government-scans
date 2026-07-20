@@ -1,0 +1,242 @@
+{
+  "country_code": "FRANCE",
+  "total_relationships": 3908,
+  "total_source_domains": 6,
+  "top_source_domains": [
+    {
+      "domain": "auvergnerhonealpes.fr",
+      "count": 17477
+    },
+    {
+      "domain": "haute-garonne.fr",
+      "count": 3224
+    },
+    {
+      "domain": "paris.fr",
+      "count": 1740
+    },
+    {
+      "domain": "toulouse.fr",
+      "count": 979
+    },
+    {
+      "domain": "laregionvoustransporte.fr",
+      "count": 60
+    },
+    {
+      "domain": "cd31.fr",
+      "count": 2
+    }
+  ],
+  "top_target_domains": [
+    {
+      "domain": "auvergnerhonealpes.fr",
+      "count": 13011
+    },
+    {
+      "domain": "haute-garonne.fr",
+      "count": 2434
+    },
+    {
+      "domain": "skolengo.com",
+      "count": 1657
+    },
+    {
+      "domain": "paris.fr",
+      "count": 1123
+    },
+    {
+      "domain": "ac-grenoble.fr",
+      "count": 624
+    },
+    {
+      "domain": "toulouse.fr",
+      "count": 444
+    },
+    {
+      "domain": "ac-lyon.fr",
+      "count": 412
+    },
+    {
+      "domain": "ac-clermont.fr",
+      "count": 409
+    },
+    {
+      "domain": "ac-toulouse.fr",
+      "count": 241
+    },
+    {
+      "domain": "europe-en-occitanie.eu",
+      "count": 236
+    },
+    {
+      "domain": "isere.fr",
+      "count": 182
+    },
+    {
+      "domain": "facebook.com",
+      "count": 139
+    },
+    {
+      "domain": "puy-de-dome.fr",
+      "count": 126
+    },
+    {
+      "domain": "instagram.com",
+      "count": 120
+    },
+    {
+      "domain": "hautesavoie.fr",
+      "count": 118
+    },
+    {
+      "domain": "twitter.com",
+      "count": 107
+    },
+    {
+      "domain": "googleapis.com",
+      "count": 98
+    },
+    {
+      "domain": "ain.fr",
+      "count": 98
+    },
+    {
+      "domain": "savoie.fr",
+      "count": 94
+    },
+    {
+      "domain": "allier.fr",
+      "count": 91
+    },
+    {
+      "domain": "education.gouv.fr",
+      "count": 87
+    },
+    {
+      "domain": "rhone.fr",
+      "count": 76
+    },
+    {
+      "domain": "toulouse-metropole.fr",
+      "count": 73
+    },
+    {
+      "domain": "linkedin.com",
+      "count": 62
+    },
+    {
+      "domain": "youtube.com",
+      "count": 53
+    },
+    {
+      "domain": "unpkg.com",
+      "count": 51
+    },
+    {
+      "domain": "hauteloire.fr",
+      "count": 48
+    },
+    {
+      "domain": "cantal.fr",
+      "count": 46
+    },
+    {
+      "domain": "europeenauvergnerhonealpes.fr",
+      "count": 46
+    },
+    {
+      "domain": "google.com",
+      "count": 42
+    },
+    {
+      "domain": "gstatic.com",
+      "count": 41
+    },
+    {
+      "domain": "esidoc.fr",
+      "count": 36
+    },
+    {
+      "domain": "secutix.com",
+      "count": 35
+    },
+    {
+      "domain": "tarteaucitron.io",
+      "count": 30
+    },
+    {
+      "domain": "index-education.net",
+      "count": 25
+    },
+    {
+      "domain": "browsehappy.com",
+      "count": 23
+    },
+    {
+      "domain": "agriculture.gouv.fr",
+      "count": 21
+    },
+    {
+      "domain": "openstreetmap.org",
+      "count": 18
+    },
+    {
+      "domain": "laregionvoustransporte.fr",
+      "count": 18
+    },
+    {
+      "domain": "education.fr",
+      "count": 16
+    },
+    {
+      "domain": "toulouse-tourisme.com",
+      "count": 14
+    },
+    {
+      "domain": "culture.gouv.fr",
+      "count": 14
+    },
+    {
+      "domain": "calameo.com",
+      "count": 13
+    },
+    {
+      "domain": "padlet.com",
+      "count": 12
+    },
+    {
+      "domain": "turbo-self.com",
+      "count": 11
+    },
+    {
+      "domain": "bsky.app",
+      "count": 11
+    },
+    {
+      "domain": "jsdelivr.net",
+      "count": 10
+    },
+    {
+      "domain": "youtu.be",
+      "count": 9
+    },
+    {
+      "domain": "theatreducapitole.fr",
+      "count": 9
+    },
+    {
+      "domain": "bootstrapcdn.com",
+      "count": 9
+    }
+  ],
+  "relationship_types": {
+    "editorial_link": 1509,
+    "script_dependency": 791,
+    "stylesheet_dependency": 773,
+    "image_or_media_dependency": 771,
+    "form_destination": 50,
+    "font_or_preload_dependency": 14
+  },
+  "generated_at": "2026-07-20T08:48:52.778079+00:00"
+}
