@@ -1,0 +1,254 @@
+{
+  "country_code": "GERMANY",
+  "total_relationships": 7325,
+  "total_source_domains": 9,
+  "top_source_domains": [
+    {
+      "domain": "sachsen.de",
+      "count": 23875
+    },
+    {
+      "domain": "rlp.de",
+      "count": 10997
+    },
+    {
+      "domain": "niedersachsen.de",
+      "count": 5339
+    },
+    {
+      "domain": "hamburg.de",
+      "count": 4782
+    },
+    {
+      "domain": "nrw.de",
+      "count": 3108
+    },
+    {
+      "domain": "bayern.de",
+      "count": 2946
+    },
+    {
+      "domain": "weiterbildungsportal-rlp.de",
+      "count": 21
+    },
+    {
+      "domain": "bksportal.de",
+      "count": 9
+    },
+    {
+      "domain": "geoplex.de",
+      "count": 3
+    }
+  ],
+  "top_target_domains": [
+    {
+      "domain": "sachsen.de",
+      "count": 20946
+    },
+    {
+      "domain": "rlp.de",
+      "count": 8774
+    },
+    {
+      "domain": "niedersachsen.de",
+      "count": 4790
+    },
+    {
+      "domain": "hamburg.de",
+      "count": 3043
+    },
+    {
+      "domain": "nrw.de",
+      "count": 2282
+    },
+    {
+      "domain": "bayern.de",
+      "count": 2093
+    },
+    {
+      "domain": "facebook.com",
+      "count": 553
+    },
+    {
+      "domain": "instagram.com",
+      "count": 476
+    },
+    {
+      "domain": "zvg-portal.de",
+      "count": 376
+    },
+    {
+      "domain": "etracker.com",
+      "count": 365
+    },
+    {
+      "domain": "enable-javascript.com",
+      "count": 332
+    },
+    {
+      "domain": "lehrer-werden-in-sachsen.de",
+      "count": 330
+    },
+    {
+      "domain": "twitter.com",
+      "count": 318
+    },
+    {
+      "domain": "youtube.com",
+      "count": 318
+    },
+    {
+      "domain": "polyplanet.de",
+      "count": 309
+    },
+    {
+      "domain": "justiz.nrw",
+      "count": 295
+    },
+    {
+      "domain": "linkedin.com",
+      "count": 232
+    },
+    {
+      "domain": "wordpress.org",
+      "count": 200
+    },
+    {
+      "domain": "usercentrics.eu",
+      "count": 148
+    },
+    {
+      "domain": "justiz-karriere.nrw",
+      "count": 130
+    },
+    {
+      "domain": "knastladen.de",
+      "count": 127
+    },
+    {
+      "domain": "google.com",
+      "count": 94
+    },
+    {
+      "domain": "elster.de",
+      "count": 82
+    },
+    {
+      "domain": "tiktok.com",
+      "count": 80
+    },
+    {
+      "domain": "stark-fuer-gerechtigkeit.de",
+      "count": 78
+    },
+    {
+      "domain": "justiz.de",
+      "count": 77
+    },
+    {
+      "domain": "steuerchatbot.de",
+      "count": 66
+    },
+    {
+      "domain": "brak.de",
+      "count": 50
+    },
+    {
+      "domain": "europa.eu",
+      "count": 47
+    },
+    {
+      "domain": "contentflow.net",
+      "count": 46
+    },
+    {
+      "domain": "bundesnetzagentur.de",
+      "count": 45
+    },
+    {
+      "domain": "cryoutcreations.eu",
+      "count": 45
+    },
+    {
+      "domain": "readspeaker.com",
+      "count": 44
+    },
+    {
+      "domain": "schuldock.de",
+      "count": 43
+    },
+    {
+      "domain": "datenschutz-bayern.de",
+      "count": 41
+    },
+    {
+      "domain": "bund.de",
+      "count": 40
+    },
+    {
+      "domain": "lanu.de",
+      "count": 33
+    },
+    {
+      "domain": "wolterskluwer-online.de",
+      "count": 33
+    },
+    {
+      "domain": "youtu.be",
+      "count": 30
+    },
+    {
+      "domain": "saechsische-gestuetsverwaltung.de",
+      "count": 29
+    },
+    {
+      "domain": "bbs-landwirtschaft.de",
+      "count": 29
+    },
+    {
+      "domain": "webuntis.com",
+      "count": 28
+    },
+    {
+      "domain": "easy-feedback.de",
+      "count": 26
+    },
+    {
+      "domain": "googleapis.com",
+      "count": 23
+    },
+    {
+      "domain": "lernen.hamburg",
+      "count": 23
+    },
+    {
+      "domain": "goo.gl",
+      "count": 22
+    },
+    {
+      "domain": "gesetze-im-internet.de",
+      "count": 22
+    },
+    {
+      "domain": "rlp-umwelt.de",
+      "count": 22
+    },
+    {
+      "domain": "xing.com",
+      "count": 21
+    },
+    {
+      "domain": "statistikportal.de",
+      "count": 18
+    }
+  ],
+  "relationship_types": {
+    "editorial_link": 3702,
+    "script_dependency": 899,
+    "stylesheet_dependency": 876,
+    "image_or_media_dependency": 971,
+    "form_destination": 814,
+    "font_or_preload_dependency": 63
+  },
+  "generated_at": "2026-07-20T13:34:40.739229+00:00"
+}

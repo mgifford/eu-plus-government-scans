@@ -1,17 +1,17 @@
 {
-  "CROATIA": {
-    "total_relationships": 1312,
-    "total_source_domains": 30,
-    "file": "croatia.json"
+  "ESTONIA": {
+    "total_relationships": 1577,
+    "total_source_domains": 32,
+    "file": "estonia.json"
   },
-  "BELGIUM": {
-    "total_relationships": 3808,
-    "total_source_domains": 45,
-    "file": "belgium.json"
+  "CZECHIA": {
+    "total_relationships": 2449,
+    "total_source_domains": 54,
+    "file": "czechia.json"
   },
-  "FRANCE": {
-    "total_relationships": 3908,
-    "total_source_domains": 6,
-    "file": "france.json"
+  "GERMANY": {
+    "total_relationships": 7325,
+    "total_source_domains": 9,
+    "file": "germany.json"
   }
 }
