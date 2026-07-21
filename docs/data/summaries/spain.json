@@ -1,0 +1,226 @@
+{
+  "country_code": "SPAIN",
+  "total_relationships": 2331,
+  "total_source_domains": 2,
+  "top_source_domains": [
+    {
+      "domain": "castillalamancha.es",
+      "count": 8609
+    },
+    {
+      "domain": "gva.es",
+      "count": 1058
+    }
+  ],
+  "top_target_domains": [
+    {
+      "domain": "castillalamancha.es",
+      "count": 4235
+    },
+    {
+      "domain": "jccm.es",
+      "count": 687
+    },
+    {
+      "domain": "gva.es",
+      "count": 632
+    },
+    {
+      "domain": "facebook.com",
+      "count": 404
+    },
+    {
+      "domain": "google.com",
+      "count": 398
+    },
+    {
+      "domain": "twitter.com",
+      "count": 357
+    },
+    {
+      "domain": "youtube.com",
+      "count": 351
+    },
+    {
+      "domain": "googleapis.com",
+      "count": 266
+    },
+    {
+      "domain": "instagram.com",
+      "count": 222
+    },
+    {
+      "domain": "google.es",
+      "count": 135
+    },
+    {
+      "domain": "fontawesome.com",
+      "count": 127
+    },
+    {
+      "domain": "gstatic.com",
+      "count": 120
+    },
+    {
+      "domain": "flickr.com",
+      "count": 109
+    },
+    {
+      "domain": "linkedin.com",
+      "count": 107
+    },
+    {
+      "domain": "sharethis.com",
+      "count": 106
+    },
+    {
+      "domain": "insuit.net",
+      "count": 99
+    },
+    {
+      "domain": "blogspot.com",
+      "count": 93
+    },
+    {
+      "domain": "pinterest.com",
+      "count": 92
+    },
+    {
+      "domain": "vimeo.com",
+      "count": 92
+    },
+    {
+      "domain": "blogspot.com.es",
+      "count": 53
+    },
+    {
+      "domain": "w3.org",
+      "count": 30
+    },
+    {
+      "domain": "bootstrapcdn.com",
+      "count": 30
+    },
+    {
+      "domain": "europa.eu",
+      "count": 28
+    },
+    {
+      "domain": "weebly.com",
+      "count": 21
+    },
+    {
+      "domain": "x.com",
+      "count": 19
+    },
+    {
+      "domain": "unpkg.com",
+      "count": 18
+    },
+    {
+      "domain": "wordpress.com",
+      "count": 18
+    },
+    {
+      "domain": "whatsapp.com",
+      "count": 17
+    },
+    {
+      "domain": "turismocastillalamancha.es",
+      "count": 16
+    },
+    {
+      "domain": "cloudflare.com",
+      "count": 15
+    },
+    {
+      "domain": "tiktok.com",
+      "count": 14
+    },
+    {
+      "domain": "addtoany.com",
+      "count": 14
+    },
+    {
+      "domain": "youtu.be",
+      "count": 14
+    },
+    {
+      "domain": "googletagmanager.com",
+      "count": 14
+    },
+    {
+      "domain": "jsdelivr.net",
+      "count": 13
+    },
+    {
+      "domain": "padlet.com",
+      "count": 12
+    },
+    {
+      "domain": "wixsite.com",
+      "count": 11
+    },
+    {
+      "domain": "orientaline.es",
+      "count": 11
+    },
+    {
+      "domain": "arcgis.com",
+      "count": 10
+    },
+    {
+      "domain": "ebiblio.es",
+      "count": 10
+    },
+    {
+      "domain": "uclm.es",
+      "count": 10
+    },
+    {
+      "domain": "elorienta.com",
+      "count": 10
+    },
+    {
+      "domain": "campoyalma.com",
+      "count": 9
+    },
+    {
+      "domain": "genially.com",
+      "count": 8
+    },
+    {
+      "domain": "google-analytics.com",
+      "count": 8
+    },
+    {
+      "domain": "adobedtm.com",
+      "count": 7
+    },
+    {
+      "domain": "spotify.com",
+      "count": 7
+    },
+    {
+      "domain": "boe.es",
+      "count": 7
+    },
+    {
+      "domain": "sepie.es",
+      "count": 7
+    },
+    {
+      "domain": "educacionyfp.gob.es",
+      "count": 7
+    }
+  ],
+  "relationship_types": {
+    "editorial_link": 1097,
+    "script_dependency": 360,
+    "stylesheet_dependency": 300,
+    "font_or_preload_dependency": 6,
+    "image_or_media_dependency": 300,
+    "form_destination": 268
+  },
+  "generated_at": "2026-07-21T20:10:29.498649+00:00"
+}
