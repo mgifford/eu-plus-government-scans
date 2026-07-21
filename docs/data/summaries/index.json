@@ -1,17 +1,17 @@
 {
-  "ICELAND": {
-    "total_relationships": 547,
-    "total_source_domains": 20,
-    "file": "iceland.json"
+  "LITHUANIA": {
+    "total_relationships": 533,
+    "total_source_domains": 15,
+    "file": "lithuania.json"
   },
-  "LATVIA": {
-    "total_relationships": 3318,
-    "total_source_domains": 143,
-    "file": "latvia.json"
+  "LUXEMBOURG": {
+    "total_relationships": 1800,
+    "total_source_domains": 41,
+    "file": "luxembourg.json"
   },
-  "POLAND": {
-    "total_relationships": 5631,
-    "total_source_domains": 5,
-    "file": "poland.json"
+  "PORTUGAL": {
+    "total_relationships": 7178,
+    "total_source_domains": 231,
+    "file": "portugal.json"
   }
 }
