@@ -1,130 +1,142 @@
 {
-  "generated_at": "2026-07-21 02:13 UTC",
+  "generated_at": "2026-07-21 03:22 UTC",
   "base_url": "https://mgifford.github.io/eu-plus-government-scans/",
   "note": "Compact cross-reference index: technology → page count, categories, and per-country page counts. For full per-URL drilldown data see the technology-data.json workflow artifact.",
   "by_technology": {
     "jQuery": {
-      "pages": 636,
+      "pages": 782,
       "categories": [
         "JavaScript libraries"
       ],
       "by_country": {
         "AUSTRIA": 306,
         "BELGIUM": 150,
-        "BULGARIA": 180
+        "BULGARIA": 180,
+        "CANADA": 146
       }
     },
     "Font Awesome": {
-      "pages": 392,
+      "pages": 458,
       "categories": [
         "Font scripts"
       ],
       "by_country": {
         "AUSTRIA": 197,
         "BELGIUM": 122,
-        "BULGARIA": 73
+        "BULGARIA": 73,
+        "CANADA": 66
       }
     },
     "Bootstrap": {
-      "pages": 295,
+      "pages": 370,
       "categories": [
         "UI frameworks"
       ],
       "by_country": {
         "AUSTRIA": 135,
         "BELGIUM": 44,
-        "BULGARIA": 116
-      }
-    },
-    "jQuery UI": {
-      "pages": 254,
-      "categories": [
-        "JavaScript libraries"
-      ],
-      "by_country": {
-        "AUSTRIA": 208,
-        "BELGIUM": 7,
-        "BULGARIA": 39
+        "BULGARIA": 116,
+        "CANADA": 75
       }
     },
     "PHP": {
-      "pages": 252,
+      "pages": 342,
       "categories": [
         "Programming languages"
       ],
       "by_country": {
         "AUSTRIA": 61,
         "BELGIUM": 128,
-        "BULGARIA": 63
+        "BULGARIA": 63,
+        "CANADA": 90
+      }
+    },
+    "jQuery UI": {
+      "pages": 266,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "AUSTRIA": 208,
+        "BELGIUM": 7,
+        "BULGARIA": 39,
+        "CANADA": 12
       }
     },
     "Apache": {
-      "pages": 218,
+      "pages": 251,
       "categories": [
         "Web servers"
       ],
       "by_country": {
         "AUSTRIA": 99,
         "BELGIUM": 24,
-        "BULGARIA": 95
-      }
-    },
-    "IIS": {
-      "pages": 168,
-      "categories": [
-        "Web servers"
-      ],
-      "by_country": {
-        "AUSTRIA": 136,
-        "BELGIUM": 13,
-        "BULGARIA": 19
-      }
-    },
-    "Windows Server": {
-      "pages": 168,
-      "categories": [
-        "Operating systems"
-      ],
-      "by_country": {
-        "AUSTRIA": 136,
-        "BELGIUM": 13,
-        "BULGARIA": 19
-      }
-    },
-    "Microsoft ASP.NET": {
-      "pages": 166,
-      "categories": [
-        "Web frameworks"
-      ],
-      "by_country": {
-        "AUSTRIA": 134,
-        "BELGIUM": 13,
-        "BULGARIA": 19
+        "BULGARIA": 95,
+        "CANADA": 33
       }
     },
     "Google Font API": {
-      "pages": 155,
+      "pages": 217,
       "categories": [
         "Font scripts"
       ],
       "by_country": {
         "AUSTRIA": 8,
         "BELGIUM": 95,
-        "BULGARIA": 52
+        "BULGARIA": 52,
+        "CANADA": 62
       }
     },
-    "Lightbox": {
-      "pages": 154,
+    "IIS": {
+      "pages": 215,
       "categories": [
-        "JavaScript libraries"
+        "Web servers"
       ],
       "by_country": {
-        "AUSTRIA": 90,
-        "BULGARIA": 64
+        "AUSTRIA": 136,
+        "BELGIUM": 13,
+        "BULGARIA": 19,
+        "CANADA": 47
+      }
+    },
+    "Windows Server": {
+      "pages": 215,
+      "categories": [
+        "Operating systems"
+      ],
+      "by_country": {
+        "AUSTRIA": 136,
+        "BELGIUM": 13,
+        "BULGARIA": 19,
+        "CANADA": 47
+      }
+    },
+    "Microsoft ASP.NET": {
+      "pages": 210,
+      "categories": [
+        "Web frameworks"
+      ],
+      "by_country": {
+        "AUSTRIA": 134,
+        "BELGIUM": 13,
+        "BULGARIA": 19,
+        "CANADA": 44
+      }
+    },
+    "Cloudflare": {
+      "pages": 188,
+      "categories": [
+        "CDN"
+      ],
+      "by_country": {
+        "AUSTRIA": 10,
+        "BELGIUM": 20,
+        "BULGARIA": 86,
+        "CANADA": 72
       }
     },
     "Nginx": {
-      "pages": 145,
+      "pages": 173,
       "categories": [
         "Reverse proxies",
         "Web servers"
@@ -132,65 +144,58 @@
       "by_country": {
         "AUSTRIA": 107,
         "BELGIUM": 34,
-        "BULGARIA": 4
+        "BULGARIA": 4,
+        "CANADA": 28
       }
     },
-    "Cloudflare": {
-      "pages": 116,
+    "Lightbox": {
+      "pages": 156,
       "categories": [
-        "CDN"
+        "JavaScript libraries"
       ],
       "by_country": {
-        "AUSTRIA": 10,
-        "BELGIUM": 20,
-        "BULGARIA": 86
+        "AUSTRIA": 90,
+        "BULGARIA": 64,
+        "CANADA": 2
+      }
+    },
+    "Drupal": {
+      "pages": 121,
+      "categories": [
+        "CMS"
+      ],
+      "by_country": {
+        "BELGIUM": 106,
+        "BULGARIA": 3,
+        "CANADA": 12
       }
     },
     "Slick": {
-      "pages": 110,
+      "pages": 119,
       "categories": [
         "JavaScript libraries"
       ],
       "by_country": {
         "AUSTRIA": 55,
         "BELGIUM": 22,
-        "BULGARIA": 33
-      }
-    },
-    "Drupal": {
-      "pages": 109,
-      "categories": [
-        "CMS"
-      ],
-      "by_country": {
-        "BELGIUM": 106,
-        "BULGARIA": 3
-      }
-    },
-    "jQuery Migrate": {
-      "pages": 84,
-      "categories": [
-        "JavaScript libraries"
-      ],
-      "by_country": {
-        "AUSTRIA": 24,
-        "BELGIUM": 17,
-        "BULGARIA": 43
+        "BULGARIA": 33,
+        "CANADA": 9
       }
     },
     "MySQL": {
-      "pages": 77,
+      "pages": 118,
       "categories": [
         "Databases"
       ],
       "by_country": {
         "AUSTRIA": 20,
         "BELGIUM": 13,
-        "BULGARIA": 44
+        "BULGARIA": 44,
+        "CANADA": 41
       }
     },
     "WordPress": {
-      "pages": 77,
+      "pages": 118,
       "categories": [
         "Blogs",
         "CMS"
@@ -198,18 +203,44 @@
       "by_country": {
         "AUSTRIA": 20,
         "BELGIUM": 13,
-        "BULGARIA": 44
+        "BULGARIA": 44,
+        "CANADA": 41
+      }
+    },
+    "jQuery Migrate": {
+      "pages": 115,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "AUSTRIA": 24,
+        "BELGIUM": 17,
+        "BULGARIA": 43,
+        "CANADA": 31
       }
     },
     "jsDelivr": {
-      "pages": 62,
+      "pages": 103,
       "categories": [
         "CDN"
       ],
       "by_country": {
         "AUSTRIA": 9,
         "BELGIUM": 36,
-        "BULGARIA": 17
+        "BULGARIA": 17,
+        "CANADA": 41
+      }
+    },
+    "Google Tag Manager": {
+      "pages": 73,
+      "categories": [
+        "Tag managers"
+      ],
+      "by_country": {
+        "AUSTRIA": 3,
+        "BELGIUM": 14,
+        "BULGARIA": 5,
+        "CANADA": 51
       }
     },
     "Leaflet": {
@@ -224,13 +255,47 @@
       }
     },
     "OWL Carousel": {
-      "pages": 50,
+      "pages": 55,
       "categories": [
         "Widgets"
       ],
       "by_country": {
         "AUSTRIA": 3,
-        "BULGARIA": 47
+        "BULGARIA": 47,
+        "CANADA": 5
+      }
+    },
+    "Varnish": {
+      "pages": 54,
+      "categories": [
+        "Caching"
+      ],
+      "by_country": {
+        "AUSTRIA": 2,
+        "BELGIUM": 21,
+        "CANADA": 31
+      }
+    },
+    "TYPO3 CMS": {
+      "pages": 51,
+      "categories": [
+        "CMS"
+      ],
+      "by_country": {
+        "AUSTRIA": 31,
+        "CANADA": 20
+      }
+    },
+    "Modernizr": {
+      "pages": 47,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "AUSTRIA": 11,
+        "BELGIUM": 3,
+        "BULGARIA": 6,
+        "CANADA": 27
       }
     },
     "prettyPhoto": {
@@ -241,6 +306,17 @@
       "by_country": {
         "AUSTRIA": 39,
         "BULGARIA": 5
+      }
+    },
+    "reCAPTCHA": {
+      "pages": 44,
+      "categories": [
+        "Security"
+      ],
+      "by_country": {
+        "AUSTRIA": 4,
+        "BULGARIA": 23,
+        "CANADA": 17
       }
     },
     "DataTables": {
@@ -265,14 +341,37 @@
       }
     },
     "animate.css": {
-      "pages": 37,
+      "pages": 40,
       "categories": [
         "UI frameworks"
       ],
       "by_country": {
         "AUSTRIA": 2,
         "BELGIUM": 3,
-        "BULGARIA": 32
+        "BULGARIA": 32,
+        "CANADA": 3
+      }
+    },
+    "Cart Functionality": {
+      "pages": 39,
+      "categories": [
+        "Ecommerce"
+      ],
+      "by_country": {
+        "BELGIUM": 18,
+        "BULGARIA": 9,
+        "CANADA": 12
+      }
+    },
+    "Moment.js": {
+      "pages": 36,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "AUSTRIA": 5,
+        "BULGARIA": 27,
+        "CANADA": 4
       }
     },
     "Select2": {
@@ -286,54 +385,51 @@
         "BULGARIA": 15
       }
     },
-    "Moment.js": {
-      "pages": 32,
-      "categories": [
-        "JavaScript libraries"
-      ],
-      "by_country": {
-        "AUSTRIA": 5,
-        "BULGARIA": 27
-      }
-    },
-    "TYPO3 CMS": {
-      "pages": 31,
-      "categories": [
-        "CMS"
-      ],
-      "by_country": {
-        "AUSTRIA": 31
-      }
-    },
-    "Cart Functionality": {
-      "pages": 27,
-      "categories": [
-        "Ecommerce"
-      ],
-      "by_country": {
-        "BELGIUM": 18,
-        "BULGARIA": 9
-      }
-    },
-    "reCAPTCHA": {
-      "pages": 27,
-      "categories": [
-        "Security"
-      ],
-      "by_country": {
-        "AUSTRIA": 4,
-        "BULGARIA": 23
-      }
-    },
     "Underscore.js": {
-      "pages": 26,
+      "pages": 31,
       "categories": [
         "JavaScript libraries"
       ],
       "by_country": {
         "AUSTRIA": 6,
         "BELGIUM": 17,
-        "BULGARIA": 3
+        "BULGARIA": 3,
+        "CANADA": 5
+      }
+    },
+    "YouTube": {
+      "pages": 28,
+      "categories": [
+        "Video players"
+      ],
+      "by_country": {
+        "AUSTRIA": 6,
+        "BELGIUM": 10,
+        "BULGARIA": 9,
+        "CANADA": 3
+      }
+    },
+    "Yoast SEO": {
+      "pages": 26,
+      "categories": [
+        "SEO"
+      ],
+      "by_country": {
+        "AUSTRIA": 2,
+        "BULGARIA": 9,
+        "CANADA": 15
+      }
+    },
+    "ZURB Foundation": {
+      "pages": 26,
+      "categories": [
+        "UI frameworks"
+      ],
+      "by_country": {
+        "AUSTRIA": 3,
+        "BELGIUM": 12,
+        "BULGARIA": 3,
+        "CANADA": 8
       }
     },
     "AddThis": {
@@ -346,69 +442,91 @@
         "BULGARIA": 3
       }
     },
-    "YouTube": {
+    "Java": {
       "pages": 25,
       "categories": [
-        "Video players"
+        "Programming languages"
       ],
       "by_country": {
-        "AUSTRIA": 6,
-        "BELGIUM": 10,
-        "BULGARIA": 9
+        "AUSTRIA": 12,
+        "CANADA": 13
       }
     },
-    "Varnish": {
-      "pages": 23,
-      "categories": [
-        "Caching"
-      ],
-      "by_country": {
-        "AUSTRIA": 2,
-        "BELGIUM": 21
-      }
-    },
-    "Google Tag Manager": {
+    "Elementor": {
       "pages": 22,
       "categories": [
-        "Tag managers"
+        "Page builders"
       ],
       "by_country": {
-        "AUSTRIA": 3,
-        "BELGIUM": 14,
-        "BULGARIA": 5
+        "BELGIUM": 2,
+        "BULGARIA": 9,
+        "CANADA": 11
       }
     },
-    "Modernizr": {
-      "pages": 20,
+    "Swiper Slider": {
+      "pages": 21,
       "categories": [
-        "JavaScript libraries"
+        "Miscellaneous"
       ],
       "by_country": {
-        "AUSTRIA": 11,
-        "BELGIUM": 3,
-        "BULGARIA": 6
+        "BELGIUM": 4,
+        "BULGARIA": 7,
+        "CANADA": 10
       }
     },
     "Vue.js": {
-      "pages": 19,
+      "pages": 21,
       "categories": [
         "JavaScript frameworks"
       ],
       "by_country": {
         "AUSTRIA": 8,
         "BELGIUM": 8,
-        "BULGARIA": 3
+        "BULGARIA": 3,
+        "CANADA": 2
       }
     },
-    "ZURB Foundation": {
-      "pages": 18,
+    "Amazon Cloudfront": {
+      "pages": 20,
       "categories": [
-        "UI frameworks"
+        "CDN"
       ],
       "by_country": {
         "AUSTRIA": 3,
-        "BELGIUM": 12,
-        "BULGARIA": 3
+        "BELGIUM": 2,
+        "CANADA": 15
+      }
+    },
+    "Amazon Web Services": {
+      "pages": 20,
+      "categories": [
+        "PaaS"
+      ],
+      "by_country": {
+        "AUSTRIA": 3,
+        "BELGIUM": 2,
+        "CANADA": 15
+      }
+    },
+    "Node.js": {
+      "pages": 16,
+      "categories": [
+        "Programming languages"
+      ],
+      "by_country": {
+        "AUSTRIA": 5,
+        "BELGIUM": 8,
+        "CANADA": 3
+      }
+    },
+    "Adobe Experience Manager": {
+      "pages": 15,
+      "categories": [
+        "CMS"
+      ],
+      "by_country": {
+        "AUSTRIA": 5,
+        "CANADA": 10
       }
     },
     "Cookiebot": {
@@ -421,14 +539,48 @@
         "BELGIUM": 6
       }
     },
-    "Node.js": {
+    "Google Maps": {
+      "pages": 14,
+      "categories": [
+        "Maps"
+      ],
+      "by_country": {
+        "BELGIUM": 3,
+        "BULGARIA": 2,
+        "CANADA": 9
+      }
+    },
+    "Ruby": {
       "pages": 13,
       "categories": [
         "Programming languages"
       ],
       "by_country": {
-        "AUSTRIA": 5,
-        "BELGIUM": 8
+        "BELGIUM": 2,
+        "BULGARIA": 2,
+        "CANADA": 9
+      }
+    },
+    "Ruby on Rails": {
+      "pages": 13,
+      "categories": [
+        "Web frameworks"
+      ],
+      "by_country": {
+        "BELGIUM": 2,
+        "BULGARIA": 2,
+        "CANADA": 9
+      }
+    },
+    "AngularJS": {
+      "pages": 12,
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "by_country": {
+        "AUSTRIA": 6,
+        "BELGIUM": 4,
+        "CANADA": 2
       }
     },
     "F5 BigIP": {
@@ -438,15 +590,6 @@
       ],
       "by_country": {
         "BULGARIA": 12
-      }
-    },
-    "Java": {
-      "pages": 12,
-      "categories": [
-        "Programming languages"
-      ],
-      "by_country": {
-        "AUSTRIA": 12
       }
     },
     "Joomla": {
@@ -470,6 +613,28 @@
         "BULGARIA": 5
       }
     },
+    "React": {
+      "pages": 12,
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "by_country": {
+        "AUSTRIA": 3,
+        "BELGIUM": 5,
+        "CANADA": 4
+      }
+    },
+    "RequireJS": {
+      "pages": 12,
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "by_country": {
+        "AUSTRIA": 7,
+        "BELGIUM": 2,
+        "CANADA": 3
+      }
+    },
     "TinyMCE": {
       "pages": 12,
       "categories": [
@@ -479,24 +644,35 @@
         "BELGIUM": 12
       }
     },
-    "Elementor": {
+    "Kinsta": {
       "pages": 11,
       "categories": [
-        "Page builders"
+        "PaaS"
       ],
       "by_country": {
-        "BELGIUM": 2,
-        "BULGARIA": 9
+        "CANADA": 11
       }
     },
-    "Swiper Slider": {
+    "OpenSSL": {
       "pages": 11,
       "categories": [
-        "Miscellaneous"
+        "Web server extensions"
       ],
       "by_country": {
-        "BELGIUM": 4,
-        "BULGARIA": 7
+        "AUSTRIA": 1,
+        "BELGIUM": 2,
+        "BULGARIA": 3,
+        "CANADA": 5
+      }
+    },
+    "Python": {
+      "pages": 11,
+      "categories": [
+        "Programming languages"
+      ],
+      "by_country": {
+        "BELGIUM": 9,
+        "CANADA": 2
       }
     },
     "UIKit": {
@@ -509,24 +685,15 @@
         "BULGARIA": 8
       }
     },
-    "Yoast SEO": {
-      "pages": 11,
-      "categories": [
-        "SEO"
-      ],
-      "by_country": {
-        "AUSTRIA": 2,
-        "BULGARIA": 9
-      }
-    },
-    "AngularJS": {
+    "LiteSpeed": {
       "pages": 10,
       "categories": [
-        "JavaScript frameworks"
+        "Web servers"
       ],
       "by_country": {
-        "AUSTRIA": 6,
-        "BELGIUM": 4
+        "BELGIUM": 3,
+        "BULGARIA": 3,
+        "CANADA": 4
       }
     },
     "Mustache": {
@@ -536,6 +703,37 @@
       ],
       "by_country": {
         "BELGIUM": 10
+      }
+    },
+    "Nuxt.js": {
+      "pages": 10,
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "by_country": {
+        "AUSTRIA": 2,
+        "BELGIUM": 6,
+        "CANADA": 2
+      }
+    },
+    "Stimulus": {
+      "pages": 10,
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "by_country": {
+        "AUSTRIA": 2,
+        "BULGARIA": 6,
+        "CANADA": 2
+      }
+    },
+    "Concrete5": {
+      "pages": 9,
+      "categories": [
+        "CMS"
+      ],
+      "by_country": {
+        "CANADA": 9
       }
     },
     "Prism": {
@@ -548,25 +746,6 @@
         "BULGARIA": 2
       }
     },
-    "Python": {
-      "pages": 9,
-      "categories": [
-        "Programming languages"
-      ],
-      "by_country": {
-        "BELGIUM": 9
-      }
-    },
-    "RequireJS": {
-      "pages": 9,
-      "categories": [
-        "JavaScript frameworks"
-      ],
-      "by_country": {
-        "AUSTRIA": 7,
-        "BELGIUM": 2
-      }
-    },
     "WP Rocket": {
       "pages": 9,
       "categories": [
@@ -577,24 +756,35 @@
         "BELGIUM": 7
       }
     },
-    "Nuxt.js": {
-      "pages": 8,
+    "webpack": {
+      "pages": 9,
       "categories": [
-        "JavaScript frameworks"
-      ],
-      "by_country": {
-        "AUSTRIA": 2,
-        "BELGIUM": 6
-      }
-    },
-    "React": {
-      "pages": 8,
-      "categories": [
-        "JavaScript frameworks"
+        "Miscellaneous"
       ],
       "by_country": {
         "AUSTRIA": 3,
-        "BELGIUM": 5
+        "BELGIUM": 5,
+        "CANADA": 1
+      }
+    },
+    "Lodash": {
+      "pages": 8,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "CANADA": 8
+      }
+    },
+    "Moodle": {
+      "pages": 8,
+      "categories": [
+        "LMS"
+      ],
+      "by_country": {
+        "AUSTRIA": 4,
+        "BELGIUM": 2,
+        "CANADA": 2
       }
     },
     "Revslider": {
@@ -606,24 +796,25 @@
         "BULGARIA": 8
       }
     },
-    "Stimulus": {
+    "Ubuntu": {
       "pages": 8,
       "categories": [
-        "JavaScript frameworks"
+        "Operating systems"
       ],
       "by_country": {
         "AUSTRIA": 2,
-        "BULGARIA": 6
+        "BULGARIA": 5,
+        "CANADA": 1
       }
     },
-    "webpack": {
-      "pages": 8,
+    "Flickity": {
+      "pages": 7,
       "categories": [
-        "Miscellaneous"
+        "JavaScript libraries"
       ],
       "by_country": {
-        "AUSTRIA": 3,
-        "BELGIUM": 5
+        "BULGARIA": 3,
+        "CANADA": 4
       }
     },
     "Plone": {
@@ -633,16 +824,6 @@
       ],
       "by_country": {
         "BELGIUM": 7
-      }
-    },
-    "Ubuntu": {
-      "pages": 7,
-      "categories": [
-        "Operating systems"
-      ],
-      "by_country": {
-        "AUSTRIA": 2,
-        "BULGARIA": 5
       }
     },
     "particles.js": {
@@ -683,35 +864,46 @@
         "BELGIUM": 4
       }
     },
-    "LiteSpeed": {
+    "Gravity Forms": {
       "pages": 6,
       "categories": [
-        "Web servers"
+        "Miscellaneous"
       ],
       "by_country": {
-        "BELGIUM": 3,
-        "BULGARIA": 3
+        "BELGIUM": 4,
+        "BULGARIA": 1,
+        "CANADA": 1
       }
     },
-    "Moodle": {
+    "MariaDB": {
       "pages": 6,
       "categories": [
-        "LMS"
+        "Databases"
+      ],
+      "by_country": {
+        "CANADA": 6
+      }
+    },
+    "MathJax": {
+      "pages": 6,
+      "categories": [
+        "JavaScript graphics"
       ],
       "by_country": {
         "AUSTRIA": 4,
-        "BELGIUM": 2
+        "CANADA": 2
       }
     },
-    "OpenSSL": {
+    "Next.js": {
       "pages": 6,
       "categories": [
-        "Web server extensions"
+        "Web frameworks",
+        "Web servers"
       ],
       "by_country": {
-        "AUSTRIA": 1,
+        "AUSTRIA": 3,
         "BELGIUM": 2,
-        "BULGARIA": 3
+        "CANADA": 1
       }
     },
     "Osano": {
@@ -723,33 +915,13 @@
         "BULGARIA": 6
       }
     },
-    "Adobe Experience Manager": {
-      "pages": 5,
-      "categories": [
-        "CMS"
-      ],
-      "by_country": {
-        "AUSTRIA": 5
-      }
-    },
-    "Amazon Cloudfront": {
-      "pages": 5,
-      "categories": [
-        "CDN"
-      ],
-      "by_country": {
-        "AUSTRIA": 3,
-        "BELGIUM": 2
-      }
-    },
-    "Amazon Web Services": {
-      "pages": 5,
+    "Pantheon": {
+      "pages": 6,
       "categories": [
         "PaaS"
       ],
       "by_country": {
-        "AUSTRIA": 3,
-        "BELGIUM": 2
+        "CANADA": 6
       }
     },
     "Awesomplete": {
@@ -762,44 +934,74 @@
         "BULGARIA": 2
       }
     },
-    "Google Maps": {
+    "CentOS": {
       "pages": 5,
       "categories": [
-        "Maps"
+        "Operating systems"
       ],
       "by_country": {
-        "BELGIUM": 3,
-        "BULGARIA": 2
+        "BELGIUM": 2,
+        "CANADA": 3
       }
     },
-    "Gravity Forms": {
+    "Fastly": {
       "pages": 5,
       "categories": [
-        "Miscellaneous"
+        "CDN"
       ],
       "by_country": {
-        "BELGIUM": 4,
-        "BULGARIA": 1
+        "CANADA": 5
       }
     },
-    "Next.js": {
+    "GitHub Pages": {
       "pages": 5,
       "categories": [
-        "Web frameworks",
-        "Web servers"
+        "PaaS"
       ],
       "by_country": {
-        "AUSTRIA": 3,
-        "BELGIUM": 2
+        "CANADA": 5
       }
     },
-    "MathJax": {
+    "Backbone.js": {
       "pages": 4,
       "categories": [
-        "JavaScript graphics"
+        "JavaScript frameworks"
       ],
       "by_country": {
-        "AUSTRIA": 4
+        "BELGIUM": 1,
+        "BULGARIA": 2,
+        "CANADA": 1
+      }
+    },
+    "Django": {
+      "pages": 4,
+      "categories": [
+        "Web frameworks"
+      ],
+      "by_country": {
+        "BELGIUM": 2,
+        "CANADA": 2
+      }
+    },
+    "Envoy": {
+      "pages": 4,
+      "categories": [
+        "Reverse proxies"
+      ],
+      "by_country": {
+        "BELGIUM": 1,
+        "CANADA": 3
+      }
+    },
+    "MailChimp": {
+      "pages": 4,
+      "categories": [
+        "Marketing automation"
+      ],
+      "by_country": {
+        "BELGIUM": 1,
+        "BULGARIA": 1,
+        "CANADA": 2
       }
     },
     "MooTools": {
@@ -821,46 +1023,36 @@
         "BELGIUM": 3
       }
     },
-    "Ruby": {
+    "W3 Total Cache": {
       "pages": 4,
       "categories": [
-        "Programming languages"
+        "Caching"
       ],
       "by_country": {
-        "BELGIUM": 2,
-        "BULGARIA": 2
+        "BULGARIA": 2,
+        "CANADA": 2
       }
     },
-    "Ruby on Rails": {
-      "pages": 4,
-      "categories": [
-        "Web frameworks"
-      ],
-      "by_country": {
-        "BELGIUM": 2,
-        "BULGARIA": 2
-      }
-    },
-    "Backbone.js": {
+    "Amazon S3": {
       "pages": 3,
       "categories": [
-        "JavaScript frameworks"
+        "Miscellaneous"
       ],
       "by_country": {
-        "BELGIUM": 1,
-        "BULGARIA": 2
+        "BELGIUM": 2,
+        "CANADA": 1
+      }
+    },
+    "Clipboard.js": {
+      "pages": 3,
+      "categories": [
+        "Miscellaneous"
+      ],
+      "by_country": {
+        "CANADA": 3
       }
     },
     "FancyBox": {
-      "pages": 3,
-      "categories": [
-        "JavaScript libraries"
-      ],
-      "by_country": {
-        "BULGARIA": 3
-      }
-    },
-    "Flickity": {
       "pages": 3,
       "categories": [
         "JavaScript libraries"
@@ -897,6 +1089,33 @@
         "BULGARIA": 3
       }
     },
+    "Imperva": {
+      "pages": 3,
+      "categories": [
+        "Security"
+      ],
+      "by_country": {
+        "CANADA": 3
+      }
+    },
+    "Java Servlet": {
+      "pages": 3,
+      "categories": [
+        "Web frameworks"
+      ],
+      "by_country": {
+        "CANADA": 3
+      }
+    },
+    "Jekyll": {
+      "pages": 3,
+      "categories": [
+        "Static site generator"
+      ],
+      "by_country": {
+        "CANADA": 3
+      }
+    },
     "Lotus Domino": {
       "pages": 3,
       "categories": [
@@ -906,6 +1125,16 @@
         "AUSTRIA": 3
       }
     },
+    "Lua": {
+      "pages": 3,
+      "categories": [
+        "Programming languages"
+      ],
+      "by_country": {
+        "BELGIUM": 2,
+        "CANADA": 1
+      }
+    },
     "MediaWiki": {
       "pages": 3,
       "categories": [
@@ -913,6 +1142,36 @@
       ],
       "by_country": {
         "AUSTRIA": 3
+      }
+    },
+    "Netlify": {
+      "pages": 3,
+      "categories": [
+        "CDN",
+        "PaaS"
+      ],
+      "by_country": {
+        "CANADA": 3
+      }
+    },
+    "OpenResty": {
+      "pages": 3,
+      "categories": [
+        "Web servers"
+      ],
+      "by_country": {
+        "BELGIUM": 2,
+        "CANADA": 1
+      }
+    },
+    "Polyfill": {
+      "pages": 3,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "AUSTRIA": 1,
+        "CANADA": 2
       }
     },
     "Riot": {
@@ -933,6 +1192,24 @@
         "AUSTRIA": 3
       }
     },
+    "TrackJs": {
+      "pages": 3,
+      "categories": [
+        "Analytics"
+      ],
+      "by_country": {
+        "CANADA": 3
+      }
+    },
+    "Umbraco": {
+      "pages": 3,
+      "categories": [
+        "CMS"
+      ],
+      "by_country": {
+        "CANADA": 3
+      }
+    },
     "Vercel": {
       "pages": 3,
       "categories": [
@@ -951,15 +1228,6 @@
         "BULGARIA": 2
       }
     },
-    "Amazon S3": {
-      "pages": 2,
-      "categories": [
-        "Miscellaneous"
-      ],
-      "by_country": {
-        "BELGIUM": 2
-      }
-    },
     "Apache Tomcat": {
       "pages": 2,
       "categories": [
@@ -969,28 +1237,10 @@
         "AUSTRIA": 2
       }
     },
-    "CentOS": {
-      "pages": 2,
-      "categories": [
-        "Operating systems"
-      ],
-      "by_country": {
-        "BELGIUM": 2
-      }
-    },
     "Contentful": {
       "pages": 2,
       "categories": [
         "CMS"
-      ],
-      "by_country": {
-        "BELGIUM": 2
-      }
-    },
-    "Django": {
-      "pages": 2,
-      "categories": [
-        "Web frameworks"
       ],
       "by_country": {
         "BELGIUM": 2
@@ -1012,6 +1262,16 @@
       ],
       "by_country": {
         "BELGIUM": 2
+      }
+    },
+    "Facebook": {
+      "pages": 2,
+      "categories": [
+        "Widgets"
+      ],
+      "by_country": {
+        "BULGARIA": 1,
+        "CANADA": 1
       }
     },
     "FlexSlider": {
@@ -1050,23 +1310,13 @@
         "BULGARIA": 2
       }
     },
-    "Lua": {
+    "Litespeed Cache": {
       "pages": 2,
       "categories": [
-        "Programming languages"
+        "Caching"
       ],
       "by_country": {
-        "BELGIUM": 2
-      }
-    },
-    "MailChimp": {
-      "pages": 2,
-      "categories": [
-        "Marketing automation"
-      ],
-      "by_country": {
-        "BELGIUM": 1,
-        "BULGARIA": 1
+        "CANADA": 2
       }
     },
     "Material Design Lite": {
@@ -1087,13 +1337,23 @@
         "AUSTRIA": 2
       }
     },
-    "OpenResty": {
+    "Microsoft Word": {
       "pages": 2,
       "categories": [
-        "Web servers"
+        "Editors"
       ],
       "by_country": {
-        "BELGIUM": 2
+        "AUSTRIA": 1,
+        "CANADA": 1
+      }
+    },
+    "Prototype": {
+      "pages": 2,
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "by_country": {
+        "CANADA": 2
       }
     },
     "Twitter typeahead.js": {
@@ -1105,19 +1365,19 @@
         "AUSTRIA": 2
       }
     },
+    "UNIX": {
+      "pages": 2,
+      "categories": [
+        "Operating systems"
+      ],
+      "by_country": {
+        "CANADA": 2
+      }
+    },
     "UserWay": {
       "pages": 2,
       "categories": [
         "Accessibility"
-      ],
-      "by_country": {
-        "BULGARIA": 2
-      }
-    },
-    "W3 Total Cache": {
-      "pages": 2,
-      "categories": [
-        "Caching"
       ],
       "by_country": {
         "BULGARIA": 2
@@ -1150,6 +1410,15 @@
         "BELGIUM": 1
       }
     },
+    "Akamai": {
+      "pages": 1,
+      "categories": [
+        "CDN"
+      ],
+      "by_country": {
+        "CANADA": 1
+      }
+    },
     "All in One SEO Pack": {
       "pages": 1,
       "categories": [
@@ -1159,22 +1428,40 @@
         "BULGARIA": 1
       }
     },
-    "Envoy": {
+    "Angular Material": {
       "pages": 1,
       "categories": [
-        "Reverse proxies"
+        "UI frameworks"
       ],
       "by_country": {
-        "BELGIUM": 1
+        "CANADA": 1
       }
     },
-    "Facebook": {
+    "ArcGIS API for JavaScript": {
       "pages": 1,
       "categories": [
-        "Widgets"
+        "Maps"
       ],
       "by_country": {
-        "BULGARIA": 1
+        "CANADA": 1
+      }
+    },
+    "Caddy": {
+      "pages": 1,
+      "categories": [
+        "Web servers"
+      ],
+      "by_country": {
+        "CANADA": 1
+      }
+    },
+    "Go": {
+      "pages": 1,
+      "categories": [
+        "Programming languages"
+      ],
+      "by_country": {
+        "CANADA": 1
       }
     },
     "Google Plus": {
@@ -1222,15 +1509,6 @@
         "BELGIUM": 1
       }
     },
-    "Microsoft Word": {
-      "pages": 1,
-      "categories": [
-        "Editors"
-      ],
-      "by_country": {
-        "AUSTRIA": 1
-      }
-    },
     "Oracle Dynamic Monitoring Service": {
       "pages": 1,
       "categories": [
@@ -1249,15 +1527,6 @@
         "BELGIUM": 1
       }
     },
-    "Polyfill": {
-      "pages": 1,
-      "categories": [
-        "JavaScript libraries"
-      ],
-      "by_country": {
-        "AUSTRIA": 1
-      }
-    },
     "Vaadin": {
       "pages": 1,
       "categories": [
@@ -1270,7 +1539,7 @@
   },
   "by_category": {
     "JavaScript libraries": {
-      "pages": 1457,
+      "pages": 1707,
       "technologies": [
         "DataTables",
         "Dojo",
@@ -1278,6 +1547,7 @@
         "Flickity",
         "Hammer.js",
         "Lightbox",
+        "Lodash",
         "Marked",
         "Modernizr",
         "Moment.js",
@@ -1294,11 +1564,20 @@
         "prettyPhoto"
       ]
     },
+    "Font scripts": {
+      "pages": 678,
+      "technologies": [
+        "Font Awesome",
+        "Glyphicons",
+        "Google Font API"
+      ]
+    },
     "Web servers": {
-      "pages": 556,
+      "pages": 671,
       "technologies": [
         "Apache",
         "Apache Tomcat",
+        "Caddy",
         "IIS",
         "Kestrel",
         "LiteSpeed",
@@ -1310,17 +1589,10 @@
         "Vercel"
       ]
     },
-    "Font scripts": {
-      "pages": 550,
-      "technologies": [
-        "Font Awesome",
-        "Glyphicons",
-        "Google Font API"
-      ]
-    },
     "UI frameworks": {
-      "pages": 363,
+      "pages": 450,
       "technologies": [
+        "Angular Material",
         "Bootstrap",
         "Material Design Lite",
         "UIKit",
@@ -1329,8 +1601,9 @@
       ]
     },
     "Programming languages": {
-      "pages": 292,
+      "pages": 411,
       "technologies": [
+        "Go",
         "Java",
         "Lua",
         "Node.js",
@@ -1340,41 +1613,48 @@
       ]
     },
     "CMS": {
-      "pages": 249,
+      "pages": 344,
       "technologies": [
         "Adobe Experience Manager",
+        "Concrete5",
         "Contentful",
         "DNN",
         "Drupal",
         "Joomla",
         "Plone",
         "TYPO3 CMS",
+        "Umbraco",
         "WordPress"
       ]
     },
+    "CDN": {
+      "pages": 323,
+      "technologies": [
+        "Akamai",
+        "Amazon Cloudfront",
+        "Cloudflare",
+        "Fastly",
+        "Google Cloud",
+        "Netlify",
+        "jsDelivr"
+      ]
+    },
     "Operating systems": {
-      "pages": 187,
+      "pages": 240,
       "technologies": [
         "CentOS",
         "Debian",
         "Red Hat",
+        "UNIX",
         "Ubuntu",
         "Windows Server"
       ]
     },
-    "CDN": {
-      "pages": 186,
-      "technologies": [
-        "Amazon Cloudfront",
-        "Cloudflare",
-        "Google Cloud",
-        "jsDelivr"
-      ]
-    },
     "Web frameworks": {
-      "pages": 179,
+      "pages": 238,
       "technologies": [
         "Django",
+        "Java Servlet",
         "JavaServer Pages",
         "Microsoft ASP.NET",
         "Next.js",
@@ -1383,15 +1663,28 @@
       ]
     },
     "Reverse proxies": {
-      "pages": 158,
+      "pages": 189,
       "technologies": [
         "Envoy",
         "F5 BigIP",
         "Nginx"
       ]
     },
+    "Databases": {
+      "pages": 124,
+      "technologies": [
+        "MariaDB",
+        "MySQL"
+      ]
+    },
+    "Blogs": {
+      "pages": 118,
+      "technologies": [
+        "WordPress"
+      ]
+    },
     "JavaScript frameworks": {
-      "pages": 89,
+      "pages": 107,
       "technologies": [
         "Alpine.js",
         "AngularJS",
@@ -1401,6 +1694,7 @@
         "MooTools",
         "Mustache",
         "Nuxt.js",
+        "Prototype",
         "React",
         "RequireJS",
         "Riot",
@@ -1409,9 +1703,10 @@
       ]
     },
     "Miscellaneous": {
-      "pages": 87,
+      "pages": 103,
       "technologies": [
         "Amazon S3",
+        "Clipboard.js",
         "Gravatar",
         "Gravity Forms",
         "Oracle Dynamic Monitoring Service",
@@ -1423,7 +1718,7 @@
       ]
     },
     "Widgets": {
-      "pages": 82,
+      "pages": 88,
       "technologies": [
         "AddThis",
         "AddToAny",
@@ -1434,56 +1729,70 @@
         "OWL Carousel"
       ]
     },
-    "Blogs": {
-      "pages": 77,
-      "technologies": [
-        "WordPress"
-      ]
-    },
-    "Databases": {
-      "pages": 77,
-      "technologies": [
-        "MySQL"
-      ]
-    },
     "Maps": {
-      "pages": 77,
+      "pages": 87,
       "technologies": [
+        "ArcGIS API for JavaScript",
         "Google Maps",
         "Leaflet",
         "OpenLayers"
       ]
     },
-    "Caching": {
-      "pages": 34,
+    "Tag managers": {
+      "pages": 73,
       "technologies": [
+        "Google Tag Manager"
+      ]
+    },
+    "Caching": {
+      "pages": 69,
+      "technologies": [
+        "Litespeed Cache",
         "Varnish",
         "W3 Total Cache",
         "WP Rocket"
       ]
     },
+    "Security": {
+      "pages": 47,
+      "technologies": [
+        "Imperva",
+        "reCAPTCHA"
+      ]
+    },
+    "PaaS": {
+      "pages": 45,
+      "technologies": [
+        "Amazon Web Services",
+        "GitHub Pages",
+        "Kinsta",
+        "Netlify",
+        "Pantheon"
+      ]
+    },
     "Ecommerce": {
-      "pages": 27,
+      "pages": 39,
       "technologies": [
         "Cart Functionality"
       ]
     },
-    "Security": {
-      "pages": 27,
-      "technologies": [
-        "reCAPTCHA"
-      ]
-    },
     "Video players": {
-      "pages": 25,
+      "pages": 28,
       "technologies": [
         "YouTube"
       ]
     },
-    "Tag managers": {
+    "SEO": {
+      "pages": 27,
+      "technologies": [
+        "All in One SEO Pack",
+        "Yoast SEO"
+      ]
+    },
+    "Page builders": {
       "pages": 22,
       "technologies": [
-        "Google Tag Manager"
+        "Elementor"
       ]
     },
     "Cookie compliance": {
@@ -1494,7 +1803,7 @@
       ]
     },
     "JavaScript graphics": {
-      "pages": 17,
+      "pages": 19,
       "technologies": [
         "Chart.js",
         "MathJax",
@@ -1507,35 +1816,23 @@
         "TinyMCE"
       ]
     },
-    "SEO": {
-      "pages": 12,
-      "technologies": [
-        "All in One SEO Pack",
-        "Yoast SEO"
-      ]
-    },
-    "Page builders": {
-      "pages": 11,
-      "technologies": [
-        "Elementor"
-      ]
-    },
-    "LMS": {
-      "pages": 6,
-      "technologies": [
-        "Moodle"
-      ]
-    },
     "Web server extensions": {
-      "pages": 6,
+      "pages": 11,
       "technologies": [
         "OpenSSL"
       ]
     },
-    "PaaS": {
-      "pages": 5,
+    "LMS": {
+      "pages": 8,
       "technologies": [
-        "Amazon Web Services"
+        "Moodle"
+      ]
+    },
+    "Static site generator": {
+      "pages": 6,
+      "technologies": [
+        "Gatsby",
+        "Jekyll"
       ]
     },
     "Search engines": {
@@ -1544,10 +1841,16 @@
         "Awesomplete"
       ]
     },
-    "Static site generator": {
+    "Marketing automation": {
+      "pages": 4,
+      "technologies": [
+        "MailChimp"
+      ]
+    },
+    "Analytics": {
       "pages": 3,
       "technologies": [
-        "Gatsby"
+        "TrackJs"
       ]
     },
     "Wikis": {
@@ -1562,22 +1865,16 @@
         "UserWay"
       ]
     },
-    "Marketing automation": {
+    "Editors": {
       "pages": 2,
       "technologies": [
-        "MailChimp"
+        "Microsoft Word"
       ]
     },
     "Mobile frameworks": {
       "pages": 2,
       "technologies": [
         "jQuery Mobile"
-      ]
-    },
-    "Editors": {
-      "pages": 1,
-      "technologies": [
-        "Microsoft Word"
       ]
     },
     "Hosting panels": {
