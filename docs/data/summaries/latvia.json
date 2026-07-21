@@ -1,0 +1,418 @@
+{
+  "country_code": "LATVIA",
+  "total_relationships": 3318,
+  "total_source_domains": 143,
+  "top_source_domains": [
+    {
+      "domain": "riga.lv",
+      "count": 1196
+    },
+    {
+      "domain": "rtu.lv",
+      "count": 454
+    },
+    {
+      "domain": "daugavpils.lv",
+      "count": 326
+    },
+    {
+      "domain": "jelgava.lv",
+      "count": 303
+    },
+    {
+      "domain": "viaa.gov.lv",
+      "count": 201
+    },
+    {
+      "domain": "liepaja.lv",
+      "count": 189
+    },
+    {
+      "domain": "iem.gov.lv",
+      "count": 183
+    },
+    {
+      "domain": "kem.gov.lv",
+      "count": 128
+    },
+    {
+      "domain": "valic.gov.lv",
+      "count": 104
+    },
+    {
+      "domain": "vugd.gov.lv",
+      "count": 102
+    },
+    {
+      "domain": "vid.gov.lv",
+      "count": 101
+    },
+    {
+      "domain": "fid.gov.lv",
+      "count": 99
+    },
+    {
+      "domain": "lnkc.gov.lv",
+      "count": 99
+    },
+    {
+      "domain": "pmlp.gov.lv",
+      "count": 98
+    },
+    {
+      "domain": "daba.gov.lv",
+      "count": 97
+    },
+    {
+      "domain": "mk.gov.lv",
+      "count": 94
+    },
+    {
+      "domain": "jc.gov.lv",
+      "count": 92
+    },
+    {
+      "domain": "csp.gov.lv",
+      "count": 91
+    },
+    {
+      "domain": "saeima.lv",
+      "count": 90
+    },
+    {
+      "domain": "kase.gov.lv",
+      "count": 88
+    },
+    {
+      "domain": "lrvk.gov.lv",
+      "count": 88
+    },
+    {
+      "domain": "lgia.gov.lv",
+      "count": 85
+    },
+    {
+      "domain": "stars.gov.lv",
+      "count": 81
+    },
+    {
+      "domain": "dabasmuzejs.gov.lv",
+      "count": 80
+    },
+    {
+      "domain": "mod.gov.lv",
+      "count": 80
+    },
+    {
+      "domain": "ptac.gov.lv",
+      "count": 77
+    },
+    {
+      "domain": "lad.gov.lv",
+      "count": 73
+    },
+    {
+      "domain": "knab.gov.lv",
+      "count": 70
+    },
+    {
+      "domain": "spkc.gov.lv",
+      "count": 68
+    },
+    {
+      "domain": "ta.gov.lv",
+      "count": 66
+    },
+    {
+      "domain": "vvd.gov.lv",
+      "count": 65
+    },
+    {
+      "domain": "caa.gov.lv",
+      "count": 64
+    },
+    {
+      "domain": "rs.gov.lv",
+      "count": 63
+    },
+    {
+      "domain": "ventspils.lv",
+      "count": 62
+    },
+    {
+      "domain": "zva.gov.lv",
+      "count": 62
+    },
+    {
+      "domain": "siva.gov.lv",
+      "count": 61
+    },
+    {
+      "domain": "zm.gov.lv",
+      "count": 60
+    },
+    {
+      "domain": "likumi.lv",
+      "count": 60
+    },
+    {
+      "domain": "lnmm.gov.lv",
+      "count": 60
+    },
+    {
+      "domain": "nva.gov.lv",
+      "count": 59
+    },
+    {
+      "domain": "vm.gov.lv",
+      "count": 58
+    },
+    {
+      "domain": "lm.gov.lv",
+      "count": 57
+    },
+    {
+      "domain": "izm.gov.lv",
+      "count": 55
+    },
+    {
+      "domain": "iub.gov.lv",
+      "count": 54
+    },
+    {
+      "domain": "cfla.gov.lv",
+      "count": 54
+    },
+    {
+      "domain": "researchlatvia.gov.lv",
+      "count": 54
+    },
+    {
+      "domain": "lzp.gov.lv",
+      "count": 52
+    },
+    {
+      "domain": "mfa.gov.lv",
+      "count": 52
+    },
+    {
+      "domain": "vtua.gov.lv",
+      "count": 52
+    },
+    {
+      "domain": "vamoic.gov.lv",
+      "count": 51
+    }
+  ],
+  "top_target_domains": [
+    {
+      "domain": "riga.lv",
+      "count": 589
+    },
+    {
+      "domain": "facebook.com",
+      "count": 470
+    },
+    {
+      "domain": "youtube.com",
+      "count": 334
+    },
+    {
+      "domain": "latvija.gov.lv",
+      "count": 305
+    },
+    {
+      "domain": "twitter.com",
+      "count": 282
+    },
+    {
+      "domain": "instagram.com",
+      "count": 266
+    },
+    {
+      "domain": "rtu.lv",
+      "count": 221
+    },
+    {
+      "domain": "googleapis.com",
+      "count": 203
+    },
+    {
+      "domain": "linkedin.com",
+      "count": 199
+    },
+    {
+      "domain": "flickr.com",
+      "count": 120
+    },
+    {
+      "domain": "daugavpils.lv",
+      "count": 120
+    },
+    {
+      "domain": "jelgava.lv",
+      "count": 111
+    },
+    {
+      "domain": "google.com",
+      "count": 99
+    },
+    {
+      "domain": "iem.gov.lv",
+      "count": 99
+    },
+    {
+      "domain": "googletagmanager.com",
+      "count": 97
+    },
+    {
+      "domain": "liepaja.lv",
+      "count": 87
+    },
+    {
+      "domain": "likumi.lv",
+      "count": 84
+    },
+    {
+      "domain": "latvija.lv",
+      "count": 72
+    },
+    {
+      "domain": "jsdelivr.net",
+      "count": 72
+    },
+    {
+      "domain": "vugd.gov.lv",
+      "count": 66
+    },
+    {
+      "domain": "mk.gov.lv",
+      "count": 64
+    },
+    {
+      "domain": "knab.gov.lv",
+      "count": 60
+    },
+    {
+      "domain": "pmlp.gov.lv",
+      "count": 59
+    },
+    {
+      "domain": "europa.eu",
+      "count": 58
+    },
+    {
+      "domain": "readspeaker.com",
+      "count": 56
+    },
+    {
+      "domain": "vid.gov.lv",
+      "count": 56
+    },
+    {
+      "domain": "x.com",
+      "count": 55
+    },
+    {
+      "domain": "cloudflare.com",
+      "count": 49
+    },
+    {
+      "domain": "fid.gov.lv",
+      "count": 49
+    },
+    {
+      "domain": "lgia.gov.lv",
+      "count": 47
+    },
+    {
+      "domain": "kem.gov.lv",
+      "count": 46
+    },
+    {
+      "domain": "viaa.gov.lv",
+      "count": 44
+    },
+    {
+      "domain": "lad.gov.lv",
+      "count": 44
+    },
+    {
+      "domain": "ptac.gov.lv",
+      "count": 42
+    },
+    {
+      "domain": "stat.gov.lv",
+      "count": 42
+    },
+    {
+      "domain": "caa.gov.lv",
+      "count": 42
+    },
+    {
+      "domain": "csp.gov.lv",
+      "count": 42
+    },
+    {
+      "domain": "saeima.lv",
+      "count": 42
+    },
+    {
+      "domain": "spkc.gov.lv",
+      "count": 40
+    },
+    {
+      "domain": "ta.gov.lv",
+      "count": 39
+    },
+    {
+      "domain": "dreamapply.com",
+      "count": 38
+    },
+    {
+      "domain": "izm.gov.lv",
+      "count": 38
+    },
+    {
+      "domain": "eveseliba.gov.lv",
+      "count": 38
+    },
+    {
+      "domain": "daba.gov.lv",
+      "count": 36
+    },
+    {
+      "domain": "varam.gov.lv",
+      "count": 36
+    },
+    {
+      "domain": "iub.gov.lv",
+      "count": 36
+    },
+    {
+      "domain": "siva.gov.lv",
+      "count": 36
+    },
+    {
+      "domain": "ldc.gov.lv",
+      "count": 35
+    },
+    {
+      "domain": "mod.gov.lv",
+      "count": 35
+    },
+    {
+      "domain": "rs.gov.lv",
+      "count": 35
+    }
+  ],
+  "relationship_types": {
+    "editorial_link": 1911,
+    "script_dependency": 424,
+    "stylesheet_dependency": 359,
+    "image_or_media_dependency": 287,
+    "form_destination": 203,
+    "font_or_preload_dependency": 134
+  },
+  "generated_at": "2026-07-21T08:34:12.302323+00:00"
+}

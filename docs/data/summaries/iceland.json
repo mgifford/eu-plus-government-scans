@@ -1,0 +1,298 @@
+{
+  "country_code": "ICELAND",
+  "total_relationships": 547,
+  "total_source_domains": 20,
+  "top_source_domains": [
+    {
+      "domain": "reykjavik.is",
+      "count": 436
+    },
+    {
+      "domain": "akureyri.is",
+      "count": 187
+    },
+    {
+      "domain": "kopavogur.is",
+      "count": 186
+    },
+    {
+      "domain": "keflavik.is",
+      "count": 130
+    },
+    {
+      "domain": "hagstofa.is",
+      "count": 105
+    },
+    {
+      "domain": "island.is",
+      "count": 78
+    },
+    {
+      "domain": "skatturinn.is",
+      "count": 65
+    },
+    {
+      "domain": "vegagerdin.is",
+      "count": 51
+    },
+    {
+      "domain": "gardabaer.is",
+      "count": 36
+    },
+    {
+      "domain": "forseti.is",
+      "count": 30
+    },
+    {
+      "domain": "hafnarfjordur.is",
+      "count": 29
+    },
+    {
+      "domain": "landlaeknir.is",
+      "count": 26
+    },
+    {
+      "domain": "stjornarradid.is",
+      "count": 18
+    },
+    {
+      "domain": "statice.is",
+      "count": 15
+    },
+    {
+      "domain": "government.is",
+      "count": 14
+    },
+    {
+      "domain": "vinnustund.is",
+      "count": 14
+    },
+    {
+      "domain": "mos.is",
+      "count": 8
+    },
+    {
+      "domain": "samgongustofa.is",
+      "count": 5
+    },
+    {
+      "domain": "domstolar.is",
+      "count": 5
+    },
+    {
+      "domain": "vinnumalastofnun.is",
+      "count": 3
+    }
+  ],
+  "top_target_domains": [
+    {
+      "domain": "reykjavik.is",
+      "count": 299
+    },
+    {
+      "domain": "kopavogur.is",
+      "count": 131
+    },
+    {
+      "domain": "akureyri.is",
+      "count": 86
+    },
+    {
+      "domain": "island.is",
+      "count": 61
+    },
+    {
+      "domain": "facebook.com",
+      "count": 51
+    },
+    {
+      "domain": "googleapis.com",
+      "count": 51
+    },
+    {
+      "domain": "keflavik.is",
+      "count": 48
+    },
+    {
+      "domain": "hagstofa.is",
+      "count": 43
+    },
+    {
+      "domain": "instagram.com",
+      "count": 30
+    },
+    {
+      "domain": "vegagerdin.is",
+      "count": 26
+    },
+    {
+      "domain": "readspeaker.com",
+      "count": 23
+    },
+    {
+      "domain": "shs.is",
+      "count": 20
+    },
+    {
+      "domain": "skatturinn.is",
+      "count": 20
+    },
+    {
+      "domain": "gardabaer.is",
+      "count": 20
+    },
+    {
+      "domain": "landlaeknir.is",
+      "count": 19
+    },
+    {
+      "domain": "youtube.com",
+      "count": 18
+    },
+    {
+      "domain": "hafnarfjordur.is",
+      "count": 15
+    },
+    {
+      "domain": "forseti.is",
+      "count": 15
+    },
+    {
+      "domain": "tollur.is",
+      "count": 15
+    },
+    {
+      "domain": "vinnustund.is",
+      "count": 14
+    },
+    {
+      "domain": "googletagmanager.com",
+      "count": 12
+    },
+    {
+      "domain": "fontawesome.com",
+      "count": 12
+    },
+    {
+      "domain": "siteimproveanalytics.com",
+      "count": 11
+    },
+    {
+      "domain": "plausible.io",
+      "count": 11
+    },
+    {
+      "domain": "google.com",
+      "count": 10
+    },
+    {
+      "domain": "cloudflare.com",
+      "count": 10
+    },
+    {
+      "domain": "cludo.com",
+      "count": 9
+    },
+    {
+      "domain": "linkedin.com",
+      "count": 9
+    },
+    {
+      "domain": "stjornarradid.is",
+      "count": 9
+    },
+    {
+      "domain": "typekit.net",
+      "count": 8
+    },
+    {
+      "domain": "twitter.com",
+      "count": 8
+    },
+    {
+      "domain": "visitakureyri.is",
+      "count": 7
+    },
+    {
+      "domain": "ctfassets.net",
+      "count": 7
+    },
+    {
+      "domain": "arcgis.com",
+      "count": 6
+    },
+    {
+      "domain": "in-tend.co.uk",
+      "count": 6
+    },
+    {
+      "domain": "tiktok.com",
+      "count": 6
+    },
+    {
+      "domain": "stillingar.is",
+      "count": 6
+    },
+    {
+      "domain": "statice.is",
+      "count": 6
+    },
+    {
+      "domain": "mailchi.mp",
+      "count": 6
+    },
+    {
+      "domain": "x.com",
+      "count": 6
+    },
+    {
+      "domain": "government.is",
+      "count": 6
+    },
+    {
+      "domain": "oracle.com",
+      "count": 6
+    },
+    {
+      "domain": "stefna.is",
+      "count": 5
+    },
+    {
+      "domain": "isi.is",
+      "count": 5
+    },
+    {
+      "domain": "borgarbokasafn.is",
+      "count": 4
+    },
+    {
+      "domain": "reykjavikcitymuseum.is",
+      "count": 4
+    },
+    {
+      "domain": "visitreykjavik.is",
+      "count": 4
+    },
+    {
+      "domain": "fristund.is",
+      "count": 4
+    },
+    {
+      "domain": "listasafnreykjavikur.is",
+      "count": 4
+    },
+    {
+      "domain": "menntastefna.is",
+      "count": 4
+    }
+  ],
+  "relationship_types": {
+    "editorial_link": 278,
+    "stylesheet_dependency": 71,
+    "image_or_media_dependency": 54,
+    "script_dependency": 87,
+    "font_or_preload_dependency": 31,
+    "form_destination": 26
+  },
+  "generated_at": "2026-07-21T08:34:12.278890+00:00"
+}
