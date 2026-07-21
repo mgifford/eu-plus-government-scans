@@ -11,16 +11,16 @@ power them, including which third-party JavaScript services they rely on.
 
 <!-- SCAN_PROGRESS_START -->
 
-_Progress as of 2026-07-21 10:56 UTC_
+_Progress as of 2026-07-21 12:31 UTC_
 
 | Scan Type | Pages Scanned | Coverage | Avg Age |
 |-----------|--------------|----------|---------|
-| **Combined Reachability** | **19,909 confirmed reachable** | **<span role="img" aria-label="22.7% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:27px;"></span></span><span class="sm-bar__label">22.7%</span></span>** | — |
-| Social Media | 22,001 scanned (19,898 reachable) | <span role="img" aria-label="25.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:30px;"></span></span><span class="sm-bar__label">25.1%</span></span> | 16 h |
-| Technology | 1,447 scanned | <span role="img" aria-label="1.7% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:2px;"></span></span><span class="sm-bar__label">1.7%</span></span> | 16 h |
-| Accessibility Statements | 5,984 scanned | <span role="img" aria-label="6.8% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:8px;"></span></span><span class="sm-bar__label">6.8%</span></span> | 16 h |
+| **Combined Reachability** | **20,144 confirmed reachable** | **<span role="img" aria-label="23.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:28px;"></span></span><span class="sm-bar__label">23.0%</span></span>** | — |
+| Social Media | 22,537 scanned (20,133 reachable) | <span role="img" aria-label="25.7% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:31px;"></span></span><span class="sm-bar__label">25.7%</span></span> | 18 h |
+| Technology | 1,447 scanned | <span role="img" aria-label="1.7% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:2px;"></span></span><span class="sm-bar__label">1.7%</span></span> | 18 h |
+| Accessibility Statements | 5,984 scanned | <span role="img" aria-label="6.8% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:8px;"></span></span><span class="sm-bar__label">6.8%</span></span> | 18 h |
 
-**24 countries** with scan data · **19,909** of **87,696** available pages confirmed reachable. See the [Scan Progress Report](scan-progress.md) for full details.
+**26 countries** with scan data · **20,144** of **87,696** available pages confirmed reachable. See the [Scan Progress Report](scan-progress.md) for full details.
 
 <!-- SCAN_PROGRESS_END -->
 
