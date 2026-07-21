@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-07-21 14:21 UTC_
+_Generated: 2026-07-21 14:56 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -13,11 +13,11 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
-| **Combined Reachability** | **21,765 confirmed reachable** | 87,696 | **<span role="img" aria-label="24.8% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:30px;"></span></span><span class="sm-bar__label">24.8%</span></span>** | — |
-| Social Media | 24,402 scanned (21,754 reachable) | 87,696 | <span role="img" aria-label="27.8% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:33px;"></span></span><span class="sm-bar__label">27.8%</span></span> | 18 h |
+| **Combined Reachability** | **20,665 confirmed reachable** | 87,696 | **<span role="img" aria-label="23.6% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:28px;"></span></span><span class="sm-bar__label">23.6%</span></span>** | — |
+| Social Media | 22,537 scanned (20,133 reachable) | 87,696 | <span role="img" aria-label="25.7% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:31px;"></span></span><span class="sm-bar__label">25.7%</span></span> | 20 h |
 | Technology | 1,447 scanned | 87,696 | <span role="img" aria-label="1.7% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:2px;"></span></span><span class="sm-bar__label">1.7%</span></span> | 20 h |
 | Lighthouse | 0 scanned | 87,696 | (manual scan) | — |
-| Accessibility Statements | 5,984 scanned | 87,696 | <span role="img" aria-label="6.8% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:8px;"></span></span><span class="sm-bar__label">6.8%</span></span> | 19 h |
+| Accessibility Statements | 5,984 scanned | 87,696 | <span role="img" aria-label="6.8% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:8px;"></span></span><span class="sm-bar__label">6.8%</span></span> | 20 h |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by any scan type. **Avg Age** shows the mean number of days (or hours) since each URL in that scan type was last scanned — lower is fresher.
 
@@ -30,6 +30,8 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Croatia | 257 | 248 | 9 | Jul 2026 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:90px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:90px;"></span></span><span class="sm-bar__label">100.0%</span></span> |
 | Czechia | 866 | 775 | 91 | Jul 2026 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:90px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:90px;"></span></span><span class="sm-bar__label">100.0%</span></span> |
 | Denmark | 1,384 | 1,200 | 184 | Jul 2026 | <span role="img" aria-label="90.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:90px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:81px;"></span></span><span class="sm-bar__label">90.1%</span></span> |
+| Finland | 104 | 81 | 23 | Jul 2026 | <span role="img" aria-label="52.3% complete" class="sm-bar"><span class="sm-bar__track" style="width:90px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:47px;"></span></span><span class="sm-bar__label">52.3%</span></span> |
+| France | 702 | 440 | 262 | Jul 2026 | <span role="img" aria-label="7.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:90px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:6px;"></span></span><span class="sm-bar__label">7.0%</span></span> |
 
 > Hover or focus any non-zero **Total**, **Valid**, or **Invalid** count to preview matching URLs. **Valid** and **Invalid** can overlap because a URL may have passed in one validation run and failed in another during the same scan period; download the CSV for the underlying evidence from [scan-progress-data.json](scan-progress-data.json).
 
@@ -63,9 +65,6 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Portugal | 2,258 | 3,508 | 1,690 | 463 | 3 | 76 | 1,148 | 167 | 30 | 0 | 79 | Jul 2026 |
 | Cyprus | 29 | 29 | 28 | 14 | 0 | 0 | 14 | 8 | 1 | 0 | 0 | Jul 2026 |
 | Romania | 507 | 807 | 207 | 69 | 0 | 6 | 132 | 21 | 1 | 0 | 6 | Jul 2026 |
-| Slovakia | 442 | 442 | 416 | 132 | 0 | 27 | 257 | 19 | 12 | 1 | 26 | Jul 2026 |
-| Slovenia | 214 | 214 | 201 | 55 | 0 | 10 | 136 | 24 | 7 | 1 | 10 | Jul 2026 |
-| Spain | 1,209 | 6,091 | 1,004 | 396 | 2 | 62 | 544 | 326 | 104 | 11 | 55 | Jul 2026 |
 
 > **Tier columns** (Twitter-only / Modern / Mixed / No Social) classify each page by its overall social media presence. **Platform columns** (Twitter / X / Bluesky / Mastodon) count pages with at least one link to that platform — a page may appear in more than one platform column.
 
@@ -108,7 +107,7 @@ Checks whether each government page links to an accessibility statement as requi
 
 These countries have social media scan data but no URL validation data (URL validation may have been skipped because the social scan already confirmed reachability):
 
-`BULGARIA`, `CANADA`, `ESTONIA`, `FINLAND`, `FRANCE`, `GERMANY`, `GREECE`, `HUNGARY`, `ICELAND`, `IRELAND`, `ITALY`, `LATVIA`, `LITHUANIA`, `LUXEMBOURG`, `MALTA`, `NETHERLANDS`, `NORWAY`, `POLAND`, `PORTUGAL`, `REPUBLIC_OF_CYPRUS`, `ROMANIA`, `SLOVAKIA`, `SLOVENIA`, `SPAIN`
+`BULGARIA`, `CANADA`, `ESTONIA`, `GERMANY`, `GREECE`, `HUNGARY`, `ICELAND`, `IRELAND`, `ITALY`, `LATVIA`, `LITHUANIA`, `LUXEMBOURG`, `MALTA`, `NETHERLANDS`, `NORWAY`, `POLAND`, `PORTUGAL`, `REPUBLIC_OF_CYPRUS`, `ROMANIA`
 
 ## Scan Priority Guide
 
