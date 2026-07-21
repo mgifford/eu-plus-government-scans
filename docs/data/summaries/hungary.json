@@ -1,0 +1,330 @@
+{
+  "country_code": "HUNGARY",
+  "total_relationships": 1386,
+  "total_source_domains": 28,
+  "top_source_domains": [
+    {
+      "domain": "budapest.hu",
+      "count": 315
+    },
+    {
+      "domain": "miskolc.hu",
+      "count": 312
+    },
+    {
+      "domain": "mnb.hu",
+      "count": 304
+    },
+    {
+      "domain": "sopron.hu",
+      "count": 270
+    },
+    {
+      "domain": "debrecen.hu",
+      "count": 269
+    },
+    {
+      "domain": "gyor.hu",
+      "count": 268
+    },
+    {
+      "domain": "szekesfehervar.hu",
+      "count": 267
+    },
+    {
+      "domain": "nyiregyhaza.hu",
+      "count": 231
+    },
+    {
+      "domain": "szeged.hu",
+      "count": 207
+    },
+    {
+      "domain": "kozbeszerzes.hu",
+      "count": 165
+    },
+    {
+      "domain": "szombathely.hu",
+      "count": 164
+    },
+    {
+      "domain": "police.hu",
+      "count": 159
+    },
+    {
+      "domain": "kaposvar.hu",
+      "count": 130
+    },
+    {
+      "domain": "pecs.hu",
+      "count": 106
+    },
+    {
+      "domain": "eger.hu",
+      "count": 105
+    },
+    {
+      "domain": "tatabanya.hu",
+      "count": 104
+    },
+    {
+      "domain": "kormany.hu",
+      "count": 98
+    },
+    {
+      "domain": "alkotmanybirosag.hu",
+      "count": 54
+    },
+    {
+      "domain": "birosag.hu",
+      "count": 52
+    },
+    {
+      "domain": "ksh.hu",
+      "count": 52
+    },
+    {
+      "domain": "kecskemet.hu",
+      "count": 47
+    },
+    {
+      "domain": "bekescsaba.hu",
+      "count": 46
+    },
+    {
+      "domain": "naih.hu",
+      "count": 23
+    },
+    {
+      "domain": "hunyadisopron.hu",
+      "count": 22
+    },
+    {
+      "domain": "valasztas.hu",
+      "count": 16
+    },
+    {
+      "domain": "parlament.hu",
+      "count": 12
+    },
+    {
+      "domain": "magyarorszag.hu",
+      "count": 9
+    },
+    {
+      "domain": "kuria-birosag.hu",
+      "count": 5
+    }
+  ],
+  "top_target_domains": [
+    {
+      "domain": "mnb.hu",
+      "count": 189
+    },
+    {
+      "domain": "budapest.hu",
+      "count": 165
+    },
+    {
+      "domain": "facebook.com",
+      "count": 158
+    },
+    {
+      "domain": "googleapis.com",
+      "count": 129
+    },
+    {
+      "domain": "debrecen.hu",
+      "count": 127
+    },
+    {
+      "domain": "kozbeszerzes.hu",
+      "count": 118
+    },
+    {
+      "domain": "sopron.hu",
+      "count": 115
+    },
+    {
+      "domain": "szombathely.hu",
+      "count": 110
+    },
+    {
+      "domain": "gyor.hu",
+      "count": 108
+    },
+    {
+      "domain": "szeged.hu",
+      "count": 100
+    },
+    {
+      "domain": "nyiregyhaza.hu",
+      "count": 90
+    },
+    {
+      "domain": "youtube.com",
+      "count": 84
+    },
+    {
+      "domain": "instagram.com",
+      "count": 76
+    },
+    {
+      "domain": "kaposvar.hu",
+      "count": 73
+    },
+    {
+      "domain": "gov.hu",
+      "count": 71
+    },
+    {
+      "domain": "szekesfehervar.hu",
+      "count": 70
+    },
+    {
+      "domain": "miskolc.hu",
+      "count": 64
+    },
+    {
+      "domain": "googletagmanager.com",
+      "count": 61
+    },
+    {
+      "domain": "kormany.hu",
+      "count": 59
+    },
+    {
+      "domain": "uni-miskolc.hu",
+      "count": 57
+    },
+    {
+      "domain": "eger.hu",
+      "count": 51
+    },
+    {
+      "domain": "police.hu",
+      "count": 49
+    },
+    {
+      "domain": "valasztas.hu",
+      "count": 47
+    },
+    {
+      "domain": "birosag.hu",
+      "count": 47
+    },
+    {
+      "domain": "google.com",
+      "count": 43
+    },
+    {
+      "domain": "cloudflare.com",
+      "count": 43
+    },
+    {
+      "domain": "alkotmanybirosag.hu",
+      "count": 42
+    },
+    {
+      "domain": "ksh.hu",
+      "count": 38
+    },
+    {
+      "domain": "jsdelivr.net",
+      "count": 35
+    },
+    {
+      "domain": "pecs.hu",
+      "count": 34
+    },
+    {
+      "domain": "magyarorszag.hu",
+      "count": 32
+    },
+    {
+      "domain": "tatabanya.hu",
+      "count": 31
+    },
+    {
+      "domain": "twitter.com",
+      "count": 28
+    },
+    {
+      "domain": "edir.hu",
+      "count": 27
+    },
+    {
+      "domain": "gstatic.com",
+      "count": 22
+    },
+    {
+      "domain": "linkedin.com",
+      "count": 21
+    },
+    {
+      "domain": "kozadat.hu",
+      "count": 19
+    },
+    {
+      "domain": "tiktok.com",
+      "count": 18
+    },
+    {
+      "domain": "nmhh.hu",
+      "count": 17
+    },
+    {
+      "domain": "kecskemet.hu",
+      "count": 17
+    },
+    {
+      "domain": "njt.hu",
+      "count": 15
+    },
+    {
+      "domain": "e-kreta.hu",
+      "count": 14
+    },
+    {
+      "domain": "europa.eu",
+      "count": 13
+    },
+    {
+      "domain": "jogtar.hu",
+      "count": 13
+    },
+    {
+      "domain": "gyor.eu",
+      "count": 13
+    },
+    {
+      "domain": "parlament.hu",
+      "count": 13
+    },
+    {
+      "domain": "hunyadisopron.hu",
+      "count": 12
+    },
+    {
+      "domain": "google.hu",
+      "count": 12
+    },
+    {
+      "domain": "embedly.com",
+      "count": 11
+    },
+    {
+      "domain": "ikk.hu",
+      "count": 10
+    }
+  ],
+  "relationship_types": {
+    "editorial_link": 822,
+    "stylesheet_dependency": 151,
+    "image_or_media_dependency": 131,
+    "script_dependency": 170,
+    "font_or_preload_dependency": 44,
+    "form_destination": 68
+  },
+  "generated_at": "2026-07-21T02:15:08.947558+00:00"
+}

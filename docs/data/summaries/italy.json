@@ -1,0 +1,302 @@
+{
+  "country_code": "ITALY",
+  "total_relationships": 3953,
+  "total_source_domains": 21,
+  "top_source_domains": [
+    {
+      "domain": "esteri.it",
+      "count": 13223
+    },
+    {
+      "domain": "giustizia.it",
+      "count": 7339
+    },
+    {
+      "domain": "governo.it",
+      "count": 562
+    },
+    {
+      "domain": "difesa.it",
+      "count": 450
+    },
+    {
+      "domain": "comune.torino.it",
+      "count": 96
+    },
+    {
+      "domain": "comune.lecce.it",
+      "count": 53
+    },
+    {
+      "domain": "regione.toscana.it",
+      "count": 43
+    },
+    {
+      "domain": "comune.livorno.it",
+      "count": 25
+    },
+    {
+      "domain": "comune.frosinone.it",
+      "count": 24
+    },
+    {
+      "domain": "regione.campania.it",
+      "count": 24
+    },
+    {
+      "domain": "comune.bologna.it",
+      "count": 23
+    },
+    {
+      "domain": "comune.venezia.it",
+      "count": 21
+    },
+    {
+      "domain": "comune.verbania.it",
+      "count": 16
+    },
+    {
+      "domain": "regione.emilia-romagna.it",
+      "count": 16
+    },
+    {
+      "domain": "parlamento.it",
+      "count": 10
+    },
+    {
+      "domain": "comune.trieste.it",
+      "count": 6
+    },
+    {
+      "domain": "istat.it",
+      "count": 6
+    },
+    {
+      "domain": "comune.piacenza.it",
+      "count": 4
+    },
+    {
+      "domain": "pcm.gov.it",
+      "count": 2
+    },
+    {
+      "domain": "comune.lucca.it",
+      "count": 2
+    },
+    {
+      "domain": "comune.rieti.it",
+      "count": 2
+    }
+  ],
+  "top_target_domains": [
+    {
+      "domain": "esteri.it",
+      "count": 5749
+    },
+    {
+      "domain": "giustizia.it",
+      "count": 3817
+    },
+    {
+      "domain": "facebook.com",
+      "count": 1203
+    },
+    {
+      "domain": "twitter.com",
+      "count": 1191
+    },
+    {
+      "domain": "governo.it",
+      "count": 1011
+    },
+    {
+      "domain": "youtube.com",
+      "count": 967
+    },
+    {
+      "domain": "agid.gov.it",
+      "count": 740
+    },
+    {
+      "domain": "europa.eu",
+      "count": 719
+    },
+    {
+      "domain": "viaggiaresicuri.it",
+      "count": 692
+    },
+    {
+      "domain": "dovesiamonelmondo.it",
+      "count": 691
+    },
+    {
+      "domain": "instagram.com",
+      "count": 638
+    },
+    {
+      "domain": "whatsapp.com",
+      "count": 378
+    },
+    {
+      "domain": "csm.it",
+      "count": 341
+    },
+    {
+      "domain": "difesa.it",
+      "count": 231
+    },
+    {
+      "domain": "googletagmanager.com",
+      "count": 210
+    },
+    {
+      "domain": "scuolamagistratura.it",
+      "count": 184
+    },
+    {
+      "domain": "italea.com",
+      "count": 181
+    },
+    {
+      "domain": "opportunitaly.gov.it",
+      "count": 165
+    },
+    {
+      "domain": "spreaker.com",
+      "count": 155
+    },
+    {
+      "domain": "cortedicassazione.it",
+      "count": 147
+    },
+    {
+      "domain": "quirinale.it",
+      "count": 131
+    },
+    {
+      "domain": "linkedin.com",
+      "count": 127
+    },
+    {
+      "domain": "consiglionazionaleforense.it",
+      "count": 125
+    },
+    {
+      "domain": "sitiwebgiustizia.it",
+      "count": 84
+    },
+    {
+      "domain": "infomercatiesteri.it",
+      "count": 82
+    },
+    {
+      "domain": "astegiudiziarie.it",
+      "count": 58
+    },
+    {
+      "domain": "italia.it",
+      "count": 46
+    },
+    {
+      "domain": "googleapis.com",
+      "count": 46
+    },
+    {
+      "domain": "x.com",
+      "count": 44
+    },
+    {
+      "domain": "comune.torino.it",
+      "count": 44
+    },
+    {
+      "domain": "italyexpo2025osaka.it",
+      "count": 41
+    },
+    {
+      "domain": "madeinitaly.gov.it",
+      "count": 37
+    },
+    {
+      "domain": "export.gov.it",
+      "count": 35
+    },
+    {
+      "domain": "ice.it",
+      "count": 30
+    },
+    {
+      "domain": "regione.toscana.it",
+      "count": 27
+    },
+    {
+      "domain": "flickr.com",
+      "count": 23
+    },
+    {
+      "domain": "fontawesome.com",
+      "count": 20
+    },
+    {
+      "domain": "jsdelivr.net",
+      "count": 19
+    },
+    {
+      "domain": "normattiva.it",
+      "count": 18
+    },
+    {
+      "domain": "comune.venezia.it",
+      "count": 18
+    },
+    {
+      "domain": "comune.lecce.it",
+      "count": 18
+    },
+    {
+      "domain": "regione.campania.it",
+      "count": 18
+    },
+    {
+      "domain": "t.me",
+      "count": 17
+    },
+    {
+      "domain": "google.com",
+      "count": 16
+    },
+    {
+      "domain": "w3.org",
+      "count": 16
+    },
+    {
+      "domain": "cgieonline.it",
+      "count": 15
+    },
+    {
+      "domain": "1522.eu",
+      "count": 15
+    },
+    {
+      "domain": "asteannunci.it",
+      "count": 15
+    },
+    {
+      "domain": "giustizia.palermo.it",
+      "count": 15
+    },
+    {
+      "domain": "comune.bologna.it",
+      "count": 15
+    }
+  ],
+  "relationship_types": {
+    "editorial_link": 1453,
+    "script_dependency": 640,
+    "stylesheet_dependency": 639,
+    "image_or_media_dependency": 624,
+    "form_destination": 579,
+    "font_or_preload_dependency": 18
+  },
+  "generated_at": "2026-07-21T02:15:08.973246+00:00"
+}
