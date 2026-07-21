@@ -1,0 +1,278 @@
+{
+  "country_code": "LITHUANIA",
+  "total_relationships": 533,
+  "total_source_domains": 15,
+  "top_source_domains": [
+    {
+      "domain": "kaunas.lt",
+      "count": 380
+    },
+    {
+      "domain": "smm.lt",
+      "count": 150
+    },
+    {
+      "domain": "klaipeda.lt",
+      "count": 139
+    },
+    {
+      "domain": "siauliai.lt",
+      "count": 107
+    },
+    {
+      "domain": "vmi.lt",
+      "count": 85
+    },
+    {
+      "domain": "lrs.lt",
+      "count": 63
+    },
+    {
+      "domain": "kaunasin.lt",
+      "count": 45
+    },
+    {
+      "domain": "alytus.lt",
+      "count": 21
+    },
+    {
+      "domain": "panevezys.lt",
+      "count": 20
+    },
+    {
+      "domain": "lnb.lt",
+      "count": 19
+    },
+    {
+      "domain": "sveikata.lt",
+      "count": 14
+    },
+    {
+      "domain": "migracija.lt",
+      "count": 12
+    },
+    {
+      "domain": "stat.gov.lt",
+      "count": 6
+    },
+    {
+      "domain": "finmin.lt",
+      "count": 4
+    },
+    {
+      "domain": "vilnius.lt",
+      "count": 4
+    }
+  ],
+  "top_target_domains": [
+    {
+      "domain": "kaunas.lt",
+      "count": 184
+    },
+    {
+      "domain": "smm.lt",
+      "count": 90
+    },
+    {
+      "domain": "vmi.lt",
+      "count": 64
+    },
+    {
+      "domain": "googleapis.com",
+      "count": 52
+    },
+    {
+      "domain": "siauliai.lt",
+      "count": 42
+    },
+    {
+      "domain": "klaipeda.lt",
+      "count": 42
+    },
+    {
+      "domain": "lrs.lt",
+      "count": 38
+    },
+    {
+      "domain": "facebook.com",
+      "count": 33
+    },
+    {
+      "domain": "instagram.com",
+      "count": 23
+    },
+    {
+      "domain": "youtube.com",
+      "count": 21
+    },
+    {
+      "domain": "googletagmanager.com",
+      "count": 21
+    },
+    {
+      "domain": "cloudflare.com",
+      "count": 20
+    },
+    {
+      "domain": "jsdelivr.net",
+      "count": 20
+    },
+    {
+      "domain": "google.com",
+      "count": 19
+    },
+    {
+      "domain": "linkedin.com",
+      "count": 19
+    },
+    {
+      "domain": "kaunasin.lt",
+      "count": 18
+    },
+    {
+      "domain": "panevezys.lt",
+      "count": 15
+    },
+    {
+      "domain": "bootstrapcdn.com",
+      "count": 14
+    },
+    {
+      "domain": "arcgis.com",
+      "count": 14
+    },
+    {
+      "domain": "gstatic.com",
+      "count": 10
+    },
+    {
+      "domain": "sveikata.lt",
+      "count": 10
+    },
+    {
+      "domain": "alytus.lt",
+      "count": 9
+    },
+    {
+      "domain": "jquery.com",
+      "count": 8
+    },
+    {
+      "domain": "spis.lt",
+      "count": 7
+    },
+    {
+      "domain": "emokykla.lt",
+      "count": 7
+    },
+    {
+      "domain": "heyzine.com",
+      "count": 6
+    },
+    {
+      "domain": "planuojustatau.lt",
+      "count": 6
+    },
+    {
+      "domain": "fontawesome.com",
+      "count": 6
+    },
+    {
+      "domain": "e-tar.lt",
+      "count": 6
+    },
+    {
+      "domain": "lrv.lt",
+      "count": 6
+    },
+    {
+      "domain": "sodra.lt",
+      "count": 6
+    },
+    {
+      "domain": "migracija.lt",
+      "count": 6
+    },
+    {
+      "domain": "twitter.com",
+      "count": 5
+    },
+    {
+      "domain": "lnb.lt",
+      "count": 5
+    },
+    {
+      "domain": "epaslaugos.lt",
+      "count": 4
+    },
+    {
+      "domain": "europa.eu",
+      "count": 4
+    },
+    {
+      "domain": "vilnius.lt",
+      "count": 4
+    },
+    {
+      "domain": "sharethis.com",
+      "count": 3
+    },
+    {
+      "domain": "registrucentras.lt",
+      "count": 3
+    },
+    {
+      "domain": "vienasaskaita.lt",
+      "count": 3
+    },
+    {
+      "domain": "kaunastika.lt",
+      "count": 3
+    },
+    {
+      "domain": "itsneat.digital",
+      "count": 3
+    },
+    {
+      "domain": "cookiebot.com",
+      "count": 3
+    },
+    {
+      "domain": "userway.org",
+      "count": 3
+    },
+    {
+      "domain": "kaunaspilnasrenginiu.lt",
+      "count": 3
+    },
+    {
+      "domain": "redcross.lt",
+      "count": 3
+    },
+    {
+      "domain": "esinvesticijos.lt",
+      "count": 3
+    },
+    {
+      "domain": "spotify.com",
+      "count": 3
+    },
+    {
+      "domain": "finmin.lt",
+      "count": 3
+    },
+    {
+      "domain": "flickr.com",
+      "count": 3
+    }
+  ],
+  "relationship_types": {
+    "editorial_link": 277,
+    "script_dependency": 95,
+    "stylesheet_dependency": 70,
+    "image_or_media_dependency": 50,
+    "form_destination": 31,
+    "font_or_preload_dependency": 10
+  },
+  "generated_at": "2026-07-21T14:14:45.671989+00:00"
+}

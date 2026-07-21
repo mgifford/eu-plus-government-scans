@@ -1,0 +1,382 @@
+{
+  "country_code": "LUXEMBOURG",
+  "total_relationships": 1800,
+  "total_source_domains": 41,
+  "top_source_domains": [
+    {
+      "domain": "gouvernement.lu",
+      "count": 2223
+    },
+    {
+      "domain": "public.lu",
+      "count": 1017
+    },
+    {
+      "domain": "uni.lu",
+      "count": 353
+    },
+    {
+      "domain": "education.lu",
+      "count": 214
+    },
+    {
+      "domain": "etat.lu",
+      "count": 120
+    },
+    {
+      "domain": "inll.lu",
+      "count": 110
+    },
+    {
+      "domain": "vdl.lu",
+      "count": 93
+    },
+    {
+      "domain": "petange.lu",
+      "count": 91
+    },
+    {
+      "domain": "post.lu",
+      "count": 88
+    },
+    {
+      "domain": "philharmonie.lu",
+      "count": 88
+    },
+    {
+      "domain": "remich.lu",
+      "count": 87
+    },
+    {
+      "domain": "differdange.lu",
+      "count": 78
+    },
+    {
+      "domain": "strassen.lu",
+      "count": 78
+    },
+    {
+      "domain": "esch.lu",
+      "count": 74
+    },
+    {
+      "domain": "mersch.lu",
+      "count": 73
+    },
+    {
+      "domain": "wiltz.lu",
+      "count": 63
+    },
+    {
+      "domain": "sandweiler.lu",
+      "count": 57
+    },
+    {
+      "domain": "dudelange.lu",
+      "count": 52
+    },
+    {
+      "domain": "schifflange.lu",
+      "count": 51
+    },
+    {
+      "domain": "cfl.lu",
+      "count": 44
+    },
+    {
+      "domain": "chem.lu",
+      "count": 44
+    },
+    {
+      "domain": "cita.lu",
+      "count": 41
+    },
+    {
+      "domain": "bettembourg.lu",
+      "count": 40
+    },
+    {
+      "domain": "inondations.lu",
+      "count": 40
+    },
+    {
+      "domain": "nationalmusee.lu",
+      "count": 35
+    },
+    {
+      "domain": "ettelbruck.lu",
+      "count": 30
+    },
+    {
+      "domain": "rgtr.lu",
+      "count": 30
+    },
+    {
+      "domain": "secu.lu",
+      "count": 30
+    },
+    {
+      "domain": "snci.lu",
+      "count": 28
+    },
+    {
+      "domain": "ilr.lu",
+      "count": 26
+    },
+    {
+      "domain": "petitiounen.lu",
+      "count": 26
+    },
+    {
+      "domain": "adem.lu",
+      "count": 22
+    },
+    {
+      "domain": "meteolux.lu",
+      "count": 22
+    },
+    {
+      "domain": "chl.lu",
+      "count": 13
+    },
+    {
+      "domain": "chd.lu",
+      "count": 10
+    },
+    {
+      "domain": "monarchie.lu",
+      "count": 10
+    },
+    {
+      "domain": "lod.lu",
+      "count": 6
+    },
+    {
+      "domain": "services-publics.lu",
+      "count": 4
+    },
+    {
+      "domain": "statec.lu",
+      "count": 3
+    },
+    {
+      "domain": "geoportail.lu",
+      "count": 3
+    },
+    {
+      "domain": "itm.lu",
+      "count": 1
+    }
+  ],
+  "top_target_domains": [
+    {
+      "domain": "public.lu",
+      "count": 1328
+    },
+    {
+      "domain": "gouvernement.lu",
+      "count": 973
+    },
+    {
+      "domain": "facebook.com",
+      "count": 229
+    },
+    {
+      "domain": "uni.lu",
+      "count": 214
+    },
+    {
+      "domain": "linkedin.com",
+      "count": 209
+    },
+    {
+      "domain": "twitter.com",
+      "count": 168
+    },
+    {
+      "domain": "bsky.app",
+      "count": 138
+    },
+    {
+      "domain": "instagram.com",
+      "count": 114
+    },
+    {
+      "domain": "etat.lu",
+      "count": 98
+    },
+    {
+      "domain": "youtube.com",
+      "count": 73
+    },
+    {
+      "domain": "googleapis.com",
+      "count": 67
+    },
+    {
+      "domain": "europa.eu",
+      "count": 64
+    },
+    {
+      "domain": "esch.lu",
+      "count": 57
+    },
+    {
+      "domain": "inll.lu",
+      "count": 56
+    },
+    {
+      "domain": "jsdelivr.net",
+      "count": 47
+    },
+    {
+      "domain": "remich.lu",
+      "count": 41
+    },
+    {
+      "domain": "post.lu",
+      "count": 40
+    },
+    {
+      "domain": "vdl.lu",
+      "count": 39
+    },
+    {
+      "domain": "philharmonie.lu",
+      "count": 35
+    },
+    {
+      "domain": "google.com",
+      "count": 29
+    },
+    {
+      "domain": "education.lu",
+      "count": 29
+    },
+    {
+      "domain": "cita.lu",
+      "count": 29
+    },
+    {
+      "domain": "gstatic.com",
+      "count": 28
+    },
+    {
+      "domain": "chem.lu",
+      "count": 25
+    },
+    {
+      "domain": "adobedtm.com",
+      "count": 23
+    },
+    {
+      "domain": "cloudflare.com",
+      "count": 22
+    },
+    {
+      "domain": "quilium.io",
+      "count": 22
+    },
+    {
+      "domain": "differdange.lu",
+      "count": 21
+    },
+    {
+      "domain": "cgie.lu",
+      "count": 21
+    },
+    {
+      "domain": "typekit.net",
+      "count": 20
+    },
+    {
+      "domain": "schifflange.lu",
+      "count": 19
+    },
+    {
+      "domain": "dudelange.lu",
+      "count": 19
+    },
+    {
+      "domain": "geoportail.lu",
+      "count": 18
+    },
+    {
+      "domain": "unpkg.com",
+      "count": 18
+    },
+    {
+      "domain": "bettembourg.lu",
+      "count": 18
+    },
+    {
+      "domain": "fontawesome.com",
+      "count": 18
+    },
+    {
+      "domain": "cfl.lu",
+      "count": 18
+    },
+    {
+      "domain": "sandweiler.lu",
+      "count": 18
+    },
+    {
+      "domain": "inondations.lu",
+      "count": 17
+    },
+    {
+      "domain": "guichet.lu",
+      "count": 17
+    },
+    {
+      "domain": "tiktok.com",
+      "count": 17
+    },
+    {
+      "domain": "mersch.lu",
+      "count": 15
+    },
+    {
+      "domain": "strassen.lu",
+      "count": 15
+    },
+    {
+      "domain": "wiltz.lu",
+      "count": 15
+    },
+    {
+      "domain": "apple.com",
+      "count": 14
+    },
+    {
+      "domain": "petitiounen.lu",
+      "count": 14
+    },
+    {
+      "domain": "luxembourg.lu",
+      "count": 13
+    },
+    {
+      "domain": "snj.lu",
+      "count": 13
+    },
+    {
+      "domain": "meteolux.lu",
+      "count": 13
+    },
+    {
+      "domain": "petange.lu",
+      "count": 13
+    }
+  ],
+  "relationship_types": {
+    "editorial_link": 1010,
+    "script_dependency": 246,
+    "stylesheet_dependency": 208,
+    "image_or_media_dependency": 172,
+    "form_destination": 136,
+    "font_or_preload_dependency": 28
+  },
+  "generated_at": "2026-07-21T14:14:45.691477+00:00"
+}
