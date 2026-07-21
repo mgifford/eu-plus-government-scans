@@ -1,17 +1,17 @@
 {
-  "FINLAND": {
-    "total_relationships": 958,
-    "total_source_domains": 41,
-    "file": "finland.json"
+  "HUNGARY": {
+    "total_relationships": 1386,
+    "total_source_domains": 28,
+    "file": "hungary.json"
   },
-  "DENMARK": {
-    "total_relationships": 4256,
-    "total_source_domains": 81,
-    "file": "denmark.json"
+  "IRELAND": {
+    "total_relationships": 2069,
+    "total_source_domains": 104,
+    "file": "ireland.json"
   },
-  "GREECE": {
-    "total_relationships": 7071,
-    "total_source_domains": 317,
-    "file": "greece.json"
+  "ITALY": {
+    "total_relationships": 3953,
+    "total_source_domains": 21,
+    "file": "italy.json"
   }
 }
