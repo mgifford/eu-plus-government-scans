@@ -1,56 +1,29 @@
 {
-  "HUNGARY": {
-    "total_urls": 392,
-    "attempted": 392,
-    "successful": 293,
-    "failed": 99,
-    "skipped": 0,
-    "never_scanned": 0,
-    "stale_28d": 0
-  },
-  "IRELAND": {
-    "total_urls": 536,
-    "attempted": 536,
-    "successful": 498,
-    "failed": 38,
-    "skipped": 0,
-    "never_scanned": 0,
-    "stale_28d": 0
-  },
-  "ITALY": {
-    "total_urls": 5351,
-    "attempted": 1755,
-    "successful": 1586,
-    "failed": 169,
-    "skipped": 0,
-    "never_scanned": 3596,
-    "stale_28d": 0
-  },
   "ICELAND": {
     "total_urls": 145,
-    "attempted": 0,
-    "successful": 0,
-    "failed": 0,
+    "attempted": 145,
+    "successful": 143,
+    "failed": 2,
     "skipped": 0,
-    "never_scanned": 145,
+    "never_scanned": 0,
     "stale_28d": 0
   },
   "LATVIA": {
     "total_urls": 803,
-    "attempted": 0,
-    "successful": 0,
-    "failed": 0,
+    "attempted": 803,
+    "successful": 760,
+    "failed": 43,
     "skipped": 0,
-    "never_scanned": 803,
+    "never_scanned": 0,
     "stale_28d": 0
   },
   "POLAND": {
     "total_urls": 14951,
-    "attempted": 0,
-    "successful": 0,
-    "failed": 0,
+    "attempted": 1708,
+    "successful": 1523,
+    "failed": 185,
     "skipped": 0,
-    "never_scanned": 14951,
+    "never_scanned": 13243,
     "stale_28d": 0
   },
   "LITHUANIA": {
@@ -271,6 +244,33 @@
     "attempted": 1536,
     "successful": 1507,
     "failed": 29,
+    "skipped": 0,
+    "never_scanned": 0,
+    "stale_28d": 0
+  },
+  "ITALY": {
+    "total_urls": 5351,
+    "attempted": 1755,
+    "successful": 1586,
+    "failed": 169,
+    "skipped": 0,
+    "never_scanned": 3596,
+    "stale_28d": 0
+  },
+  "HUNGARY": {
+    "total_urls": 392,
+    "attempted": 392,
+    "successful": 293,
+    "failed": 99,
+    "skipped": 0,
+    "never_scanned": 0,
+    "stale_28d": 0
+  },
+  "IRELAND": {
+    "total_urls": 536,
+    "attempted": 536,
+    "successful": 498,
+    "failed": 38,
     "skipped": 0,
     "never_scanned": 0,
     "stale_28d": 0

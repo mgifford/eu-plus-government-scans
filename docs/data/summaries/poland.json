@@ -1,0 +1,238 @@
+{
+  "country_code": "POLAND",
+  "total_relationships": 5631,
+  "total_source_domains": 5,
+  "top_source_domains": [
+    {
+      "domain": "krakow.pl",
+      "count": 12664
+    },
+    {
+      "domain": "poznan.pl",
+      "count": 7346
+    },
+    {
+      "domain": "if-pan.edu.pl",
+      "count": 43
+    },
+    {
+      "domain": "ekodak.pl",
+      "count": 34
+    },
+    {
+      "domain": "gymteam.pl",
+      "count": 8
+    }
+  ],
+  "top_target_domains": [
+    {
+      "domain": "krakow.pl",
+      "count": 6450
+    },
+    {
+      "domain": "poznan.pl",
+      "count": 3785
+    },
+    {
+      "domain": "googleapis.com",
+      "count": 990
+    },
+    {
+      "domain": "facebook.com",
+      "count": 895
+    },
+    {
+      "domain": "google.com",
+      "count": 380
+    },
+    {
+      "domain": "instagram.com",
+      "count": 362
+    },
+    {
+      "domain": "googletagmanager.com",
+      "count": 346
+    },
+    {
+      "domain": "youtube.com",
+      "count": 287
+    },
+    {
+      "domain": "bootstrapcdn.com",
+      "count": 259
+    },
+    {
+      "domain": "repertuary.pl",
+      "count": 236
+    },
+    {
+      "domain": "gstatic.com",
+      "count": 223
+    },
+    {
+      "domain": "cloudflare.com",
+      "count": 212
+    },
+    {
+      "domain": "jsdelivr.net",
+      "count": 190
+    },
+    {
+      "domain": "linkedin.com",
+      "count": 180
+    },
+    {
+      "domain": "twitter.com",
+      "count": 122
+    },
+    {
+      "domain": "uj.edu.pl",
+      "count": 120
+    },
+    {
+      "domain": "wordpress.org",
+      "count": 85
+    },
+    {
+      "domain": "www.gov.pl",
+      "count": 72
+    },
+    {
+      "domain": "cookiedatabase.org",
+      "count": 69
+    },
+    {
+      "domain": "jquery.com",
+      "count": 67
+    },
+    {
+      "domain": "fontawesome.com",
+      "count": 62
+    },
+    {
+      "domain": "wp.com",
+      "count": 51
+    },
+    {
+      "domain": "x.com",
+      "count": 46
+    },
+    {
+      "domain": "accessibility-helper.co.il",
+      "count": 45
+    },
+    {
+      "domain": "dj-extensions.com",
+      "count": 44
+    },
+    {
+      "domain": "unpkg.com",
+      "count": 43
+    },
+    {
+      "domain": "afera.com.pl",
+      "count": 42
+    },
+    {
+      "domain": "goo.gl",
+      "count": 37
+    },
+    {
+      "domain": "apple.com",
+      "count": 36
+    },
+    {
+      "domain": "tiktok.com",
+      "count": 33
+    },
+    {
+      "domain": "google.pl",
+      "count": 29
+    },
+    {
+      "domain": "cdn-cookieyes.com",
+      "count": 26
+    },
+    {
+      "domain": "microsoft.com",
+      "count": 25
+    },
+    {
+      "domain": "krakow.plhttp",
+      "count": 25
+    },
+    {
+      "domain": "pcss.pl",
+      "count": 23
+    },
+    {
+      "domain": "userway.org",
+      "count": 23
+    },
+    {
+      "domain": "umww.pl",
+      "count": 21
+    },
+    {
+      "domain": "amu.edu.pl",
+      "count": 21
+    },
+    {
+      "domain": "cookiebot.com",
+      "count": 21
+    },
+    {
+      "domain": "sowa.pl",
+      "count": 21
+    },
+    {
+      "domain": "addtoany.com",
+      "count": 20
+    },
+    {
+      "domain": "themeisle.com",
+      "count": 19
+    },
+    {
+      "domain": "trustindex.io",
+      "count": 19
+    },
+    {
+      "domain": "epuap.gov.pl",
+      "count": 19
+    },
+    {
+      "domain": "doubleclick.net",
+      "count": 18
+    },
+    {
+      "domain": "wkraj.pl",
+      "count": 18
+    },
+    {
+      "domain": "google-analytics.com",
+      "count": 18
+    },
+    {
+      "domain": "creativecommons.org",
+      "count": 17
+    },
+    {
+      "domain": "bip.gov.pl",
+      "count": 17
+    },
+    {
+      "domain": "mozilla.org",
+      "count": 17
+    }
+  ],
+  "relationship_types": {
+    "editorial_link": 3047,
+    "script_dependency": 739,
+    "stylesheet_dependency": 653,
+    "image_or_media_dependency": 724,
+    "form_destination": 357,
+    "font_or_preload_dependency": 111
+  },
+  "generated_at": "2026-07-21T08:34:12.327144+00:00"
+}
