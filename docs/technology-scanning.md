@@ -5,77 +5,7 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-07-21 23:10 UTC — last scan: 2026-07-21_
-
-**6** scan batches run
-
-**1,931** of **87,696** available pages scanned (**2.2%** coverage)
-**1,788** pages with technology detections (**92.6%** of scanned)
-**183** unique technologies identified
-
----
-
-## Technology Scan by Country
-
-| Country | URLs Scanned | Pages with Detections | Available | Last Scan |
-|---------|-------------|----------------------|-----------|----------|
-| Austria | 505 | 482 | 822 | 2026-07-20 |
-| Belgium | 337 | 305 | 1,329 | 2026-07-20 |
-| Bulgaria | 292 | 261 | 353 | 2026-07-21 |
-| Canada | 313 | 279 | 4,469 | 2026-07-21 |
-| Croatia | 257 | 253 | 257 | 2026-07-21 |
-| Czechia | 227 | 208 | 866 | 2026-07-21 |
-
-> Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and metric from [Download machine-readable technology data (JSON)](technology-data.json).
-
----
-
-### Top Technologies
-
-| # | Technology | Pages | Categories |
-|--:|-----------|------:|-----------|
-| 1 | jQuery | **1,039** | JavaScript libraries |
-| 2 | Font Awesome | **541** | Font scripts |
-| 3 | Bootstrap | **512** | UI frameworks |
-| 4 | PHP | **497** | Programming languages |
-| 5 | Apache | **356** | Web servers |
-| 6 | Google Font API | **335** | Font scripts |
-| 7 | jQuery UI | **298** | JavaScript libraries |
-| 8 | Windows Server | **290** | Operating systems |
-| 9 | IIS | **288** | Web servers |
-| 10 | Microsoft ASP.NET | **270** | Web frameworks |
-| 11 | Nginx | **254** | Reverse proxies, Web servers |
-| 12 | WordPress | **216** | Blogs, CMS |
-| 13 | MySQL | **216** | Databases |
-| 14 | Cloudflare | **201** | CDN |
-| 15 | jQuery Migrate | **196** | JavaScript libraries |
-| 16 | Lightbox | **189** | JavaScript libraries |
-| 17 | Slick | **176** | JavaScript libraries |
-| 18 | Drupal | **135** | CMS |
-| 19 | jsDelivr | **131** | CDN |
-| 20 | Google Tag Manager | **109** | Tag managers |
-
-### Top Technology Categories
-
-| # | Category | Pages |
-|--:|---------|------:|
-| 1 | JavaScript libraries | **2,254** |
-| 2 | Web servers | **949** |
-| 3 | Font scripts | **889** |
-| 4 | UI frameworks | **610** |
-| 5 | Programming languages | **594** |
-| 6 | CMS | **486** |
-| 7 | CDN | **367** |
-| 8 | Operating systems | **332** |
-| 9 | Web frameworks | **320** |
-| 10 | Reverse proxies | **273** |
-| 11 | Databases | **232** |
-| 12 | Blogs | **216** |
-| 13 | Miscellaneous | **130** |
-| 14 | Widgets | **127** |
-| 15 | JavaScript frameworks | **120** |
-
-📥 Machine-readable results: [Download machine-readable technology data (JSON)](technology-data.json)
+_No scan data yet — stats update automatically after every scan run._
 
 <!-- TECH_STATS_END -->
 
