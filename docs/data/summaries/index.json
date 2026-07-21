@@ -1,17 +1,27 @@
 {
-  "NORWAY": {
-    "total_relationships": 868,
-    "total_source_domains": 34,
-    "file": "norway.json"
+  "REPUBLIC_OF_CYPRUS": {
+    "total_relationships": 91104,
+    "total_source_domains": 1605,
+    "file": "republic_of_cyprus.json"
   },
-  "MALTA": {
-    "total_relationships": 1747,
-    "total_source_domains": 3,
-    "file": "malta.json"
+  "NETHERLANDS": {
+    "total_relationships": 2881,
+    "total_source_domains": 73,
+    "file": "netherlands.json"
   },
-  "SPAIN": {
-    "total_relationships": 2331,
-    "total_source_domains": 2,
-    "file": "spain.json"
+  "SWITZERLAND": {
+    "total_relationships": 6716,
+    "total_source_domains": 9,
+    "file": "switzerland.json"
+  },
+  "SLOVAKIA": {
+    "total_relationships": 1640,
+    "total_source_domains": 21,
+    "file": "slovakia.json"
+  },
+  "ROMANIA": {
+    "total_relationships": 721,
+    "total_source_domains": 7,
+    "file": "romania.json"
   }
 }

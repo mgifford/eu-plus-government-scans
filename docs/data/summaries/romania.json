@@ -1,0 +1,246 @@
+{
+  "country_code": "ROMANIA",
+  "total_relationships": 721,
+  "total_source_domains": 7,
+  "top_source_domains": [
+    {
+      "domain": "politiaromana.ro",
+      "count": 1876
+    },
+    {
+      "domain": "mapn.ro",
+      "count": 1203
+    },
+    {
+      "domain": "pmb.ro",
+      "count": 37
+    },
+    {
+      "domain": "just.ro",
+      "count": 36
+    },
+    {
+      "domain": "sibiu.ro",
+      "count": 25
+    },
+    {
+      "domain": "oradea.ro",
+      "count": 16
+    },
+    {
+      "domain": "ms.ro",
+      "count": 9
+    }
+  ],
+  "top_target_domains": [
+    {
+      "domain": "politiaromana.ro",
+      "count": 653
+    },
+    {
+      "domain": "gov.ro",
+      "count": 498
+    },
+    {
+      "domain": "mapn.ro",
+      "count": 397
+    },
+    {
+      "domain": "googletagmanager.com",
+      "count": 120
+    },
+    {
+      "domain": "facebook.com",
+      "count": 94
+    },
+    {
+      "domain": "sri.ro",
+      "count": 73
+    },
+    {
+      "domain": "presidency.ro",
+      "count": 65
+    },
+    {
+      "domain": "google.com",
+      "count": 62
+    },
+    {
+      "domain": "nato.int",
+      "count": 59
+    },
+    {
+      "domain": "just.ro",
+      "count": 56
+    },
+    {
+      "domain": "fiipregatit.ro",
+      "count": 55
+    },
+    {
+      "domain": "certmil.ro",
+      "count": 50
+    },
+    {
+      "domain": "mae.ro",
+      "count": 45
+    },
+    {
+      "domain": "senat.ro",
+      "count": 43
+    },
+    {
+      "domain": "cdep.ro",
+      "count": 43
+    },
+    {
+      "domain": "sts.ro",
+      "count": 42
+    },
+    {
+      "domain": "europa.eu",
+      "count": 40
+    },
+    {
+      "domain": "mai-dga.ro",
+      "count": 37
+    },
+    {
+      "domain": "mfinante.ro",
+      "count": 35
+    },
+    {
+      "domain": "112.ro",
+      "count": 31
+    },
+    {
+      "domain": "pmb.ro",
+      "count": 30
+    },
+    {
+      "domain": "infocons.ro",
+      "count": 21
+    },
+    {
+      "domain": "igpr.ro",
+      "count": 21
+    },
+    {
+      "domain": "politiadefrontiera.ro",
+      "count": 18
+    },
+    {
+      "domain": "igsu.ro",
+      "count": 17
+    },
+    {
+      "domain": "youtube.com",
+      "count": 16
+    },
+    {
+      "domain": "instagram.com",
+      "count": 15
+    },
+    {
+      "domain": "sibiu.ro",
+      "count": 15
+    },
+    {
+      "domain": "twitter.com",
+      "count": 14
+    },
+    {
+      "domain": "oradea.ro",
+      "count": 13
+    },
+    {
+      "domain": "ms.ro",
+      "count": 12
+    },
+    {
+      "domain": "mpublic.ro",
+      "count": 11
+    },
+    {
+      "domain": "interpol.int",
+      "count": 10
+    },
+    {
+      "domain": "googleapis.com",
+      "count": 10
+    },
+    {
+      "domain": "trafic.ro",
+      "count": 9
+    },
+    {
+      "domain": "defense.ro",
+      "count": 9
+    },
+    {
+      "domain": "statcounter.com",
+      "count": 9
+    },
+    {
+      "domain": "drpciv.ro",
+      "count": 8
+    },
+    {
+      "domain": "recensamantromania.ro",
+      "count": 7
+    },
+    {
+      "domain": "armataromaniei.ro",
+      "count": 7
+    },
+    {
+      "domain": "natohcoe.org",
+      "count": 7
+    },
+    {
+      "domain": "un.org",
+      "count": 7
+    },
+    {
+      "domain": "dataprotection.ro",
+      "count": 6
+    },
+    {
+      "domain": "alertarapirecopil.ro",
+      "count": 6
+    },
+    {
+      "domain": "apple.com",
+      "count": 6
+    },
+    {
+      "domain": "cissb.ro",
+      "count": 6
+    },
+    {
+      "domain": "coemed.org",
+      "count": 5
+    },
+    {
+      "domain": "linkedin.com",
+      "count": 5
+    },
+    {
+      "domain": "telefonulcopilului.ro",
+      "count": 4
+    },
+    {
+      "domain": "anagov.ro",
+      "count": 4
+    }
+  ],
+  "relationship_types": {
+    "editorial_link": 393,
+    "script_dependency": 94,
+    "stylesheet_dependency": 88,
+    "image_or_media_dependency": 87,
+    "form_destination": 57,
+    "font_or_preload_dependency": 2
+  },
+  "generated_at": "2026-07-21T23:59:17.267214+00:00"
+}

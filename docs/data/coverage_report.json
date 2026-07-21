@@ -1,68 +1,41 @@
 {
-  "NORWAY": {
-    "total_urls": 249,
-    "attempted": 249,
-    "successful": 242,
-    "failed": 7,
-    "skipped": 0,
-    "never_scanned": 0,
-    "stale_28d": 0
-  },
-  "MALTA": {
-    "total_urls": 610,
-    "attempted": 610,
-    "successful": 592,
-    "failed": 18,
-    "skipped": 0,
-    "never_scanned": 0,
-    "stale_28d": 0
-  },
-  "SPAIN": {
-    "total_urls": 6091,
-    "attempted": 1348,
-    "successful": 1213,
-    "failed": 135,
-    "skipped": 0,
-    "never_scanned": 4743,
-    "stale_28d": 0
-  },
   "REPUBLIC_OF_CYPRUS": {
     "error": "TOON file not found"
   },
   "NETHERLANDS": {
     "total_urls": 945,
-    "attempted": 0,
-    "successful": 0,
-    "failed": 0,
+    "attempted": 945,
+    "successful": 900,
+    "failed": 45,
     "skipped": 0,
-    "never_scanned": 945,
+    "never_scanned": 0,
     "stale_28d": 0
   },
   "SWITZERLAND": {
     "total_urls": 2123,
-    "attempted": 1,
-    "successful": 1,
-    "failed": 0,
+    "attempted": 2123,
+    "successful": 2074,
+    "failed": 49,
     "skipped": 0,
-    "never_scanned": 2122,
+    "never_scanned": 0,
     "stale_28d": 0
   },
   "SLOVAKIA": {
     "total_urls": 442,
-    "attempted": 0,
-    "successful": 0,
-    "failed": 0,
+    "attempted": 442,
+    "successful": 412,
+    "failed": 30,
     "skipped": 0,
-    "never_scanned": 442,
+    "never_scanned": 0,
     "stale_28d": 0
   },
   "ROMANIA": {
     "total_urls": 807,
-    "attempted": 1,
-    "successful": 1,
-    "failed": 0,
+    "attempted": 241,
+    "successful": 199,
+    "failed": 42,
     "skipped": 0,
-    "never_scanned": 806,
+    "never_scanned": 566,
     "stale_28d": 0
   },
   "UNITED_KINGDOM_UK": {
@@ -271,6 +244,33 @@
     "attempted": 573,
     "successful": 446,
     "failed": 127,
+    "skipped": 0,
+    "never_scanned": 0,
+    "stale_28d": 0
+  },
+  "SPAIN": {
+    "total_urls": 6091,
+    "attempted": 1348,
+    "successful": 1213,
+    "failed": 135,
+    "skipped": 0,
+    "never_scanned": 4743,
+    "stale_28d": 0
+  },
+  "NORWAY": {
+    "total_urls": 249,
+    "attempted": 249,
+    "successful": 242,
+    "failed": 7,
+    "skipped": 0,
+    "never_scanned": 0,
+    "stale_28d": 0
+  },
+  "MALTA": {
+    "total_urls": 610,
+    "attempted": 610,
+    "successful": 592,
+    "failed": 18,
     "skipped": 0,
     "never_scanned": 0,
     "stale_28d": 0
