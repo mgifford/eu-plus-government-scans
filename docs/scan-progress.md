@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-07-21 18:18 UTC_
+_Generated: 2026-07-21 18:44 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -15,9 +15,9 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 |-----------|--------------|-----------|----------|---------|
 | **Combined Reachability** | **24,530 confirmed reachable** | 87,696 | **<span role="img" aria-label="28.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:34px;"></span></span><span class="sm-bar__label">28.0%</span></span>** | — |
 | Social Media | 27,277 scanned (24,519 reachable) | 87,696 | <span role="img" aria-label="31.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:37px;"></span></span><span class="sm-bar__label">31.1%</span></span> | 20 h |
-| Technology | 1,931 scanned | 87,696 | <span role="img" aria-label="2.2% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:3px;"></span></span><span class="sm-bar__label">2.2%</span></span> | 18 h |
+| Technology | 1,931 scanned | 87,696 | <span role="img" aria-label="2.2% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:3px;"></span></span><span class="sm-bar__label">2.2%</span></span> | 19 h |
 | Lighthouse | 0 scanned | 87,696 | (manual scan) | — |
-| Accessibility Statements | 5,984 scanned | 87,696 | <span role="img" aria-label="6.8% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:8px;"></span></span><span class="sm-bar__label">6.8%</span></span> | 23 h |
+| Accessibility Statements | 5,984 scanned | 87,696 | <span role="img" aria-label="6.8% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:8px;"></span></span><span class="sm-bar__label">6.8%</span></span> | 24 h |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by any scan type. **Avg Age** shows the mean number of days (or hours) since each URL in that scan type was last scanned — lower is fresher.
 
