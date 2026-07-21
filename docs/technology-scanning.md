@@ -5,13 +5,13 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-07-21 00:09 UTC — last scan: 2026-07-20_
+_Stats as of 2026-07-21 00:23 UTC — last scan: 2026-07-21_
 
-**2** scan batches run
+**3** scan batches run
 
-**842** of **87,696** available pages scanned (**1.0%** coverage)
-**787** pages with technology detections (**93.5%** of scanned)
-**111** unique technologies identified
+**1,134** of **87,696** available pages scanned (**1.3%** coverage)
+**1,048** pages with technology detections (**92.4%** of scanned)
+**129** unique technologies identified
 
 ---
 
@@ -21,6 +21,7 @@ _Stats as of 2026-07-21 00:09 UTC — last scan: 2026-07-20_
 |---------|-------------|----------------------|-----------|----------|
 | Austria | 505 | 482 | 822 | 2026-07-20 |
 | Belgium | 337 | 305 | 1,329 | 2026-07-20 |
+| Bulgaria | 292 | 261 | 353 | 2026-07-21 |
 
 > Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and metric from [Download machine-readable technology data (JSON)](technology-data.json).
 
@@ -30,46 +31,46 @@ _Stats as of 2026-07-21 00:09 UTC — last scan: 2026-07-20_
 
 | # | Technology | Pages | Categories |
 |--:|-----------|------:|-----------|
-| 1 | jQuery | **456** | JavaScript libraries |
-| 2 | Font Awesome | **319** | Font scripts |
-| 3 | jQuery UI | **215** | JavaScript libraries |
-| 4 | PHP | **189** | Programming languages |
-| 5 | Bootstrap | **179** | UI frameworks |
-| 6 | IIS | **149** | Web servers |
-| 7 | Windows Server | **149** | Operating systems |
-| 8 | Microsoft ASP.NET | **147** | Web frameworks |
-| 9 | Nginx | **141** | Reverse proxies, Web servers |
-| 10 | Apache | **123** | Web servers |
-| 11 | Drupal | **106** | CMS |
-| 12 | Google Font API | **103** | Font scripts |
-| 13 | Lightbox | **90** | JavaScript libraries |
-| 14 | Slick | **77** | JavaScript libraries |
-| 15 | Leaflet | **56** | Maps |
-| 16 | jsDelivr | **45** | CDN |
-| 17 | jQuery Migrate | **41** | JavaScript libraries |
-| 18 | prettyPhoto | **39** | JavaScript libraries |
-| 19 | SWFObject | **39** | Miscellaneous |
-| 20 | WordPress | **33** | Blogs, CMS |
+| 1 | jQuery | **636** | JavaScript libraries |
+| 2 | Font Awesome | **392** | Font scripts |
+| 3 | Bootstrap | **295** | UI frameworks |
+| 4 | jQuery UI | **254** | JavaScript libraries |
+| 5 | PHP | **252** | Programming languages |
+| 6 | Apache | **218** | Web servers |
+| 7 | IIS | **168** | Web servers |
+| 8 | Windows Server | **168** | Operating systems |
+| 9 | Microsoft ASP.NET | **166** | Web frameworks |
+| 10 | Google Font API | **155** | Font scripts |
+| 11 | Lightbox | **154** | JavaScript libraries |
+| 12 | Nginx | **145** | Reverse proxies, Web servers |
+| 13 | Cloudflare | **116** | CDN |
+| 14 | Slick | **110** | JavaScript libraries |
+| 15 | Drupal | **109** | CMS |
+| 16 | jQuery Migrate | **84** | JavaScript libraries |
+| 17 | WordPress | **77** | Blogs, CMS |
+| 18 | MySQL | **77** | Databases |
+| 19 | jsDelivr | **62** | CDN |
+| 20 | Leaflet | **60** | Maps |
 
 ### Top Technology Categories
 
 | # | Category | Pages |
 |--:|---------|------:|
-| 1 | JavaScript libraries | **1,017** |
-| 2 | Web servers | **435** |
-| 3 | Font scripts | **425** |
-| 4 | Programming languages | **227** |
-| 5 | UI frameworks | **204** |
-| 6 | CMS | **196** |
-| 7 | Operating systems | **163** |
-| 8 | Web frameworks | **158** |
-| 9 | Reverse proxies | **142** |
-| 10 | CDN | **80** |
-| 11 | JavaScript frameworks | **72** |
-| 12 | Maps | **66** |
-| 13 | Miscellaneous | **64** |
-| 14 | Blogs | **33** |
-| 15 | Databases | **33** |
+| 1 | JavaScript libraries | **1,457** |
+| 2 | Web servers | **556** |
+| 3 | Font scripts | **550** |
+| 4 | UI frameworks | **363** |
+| 5 | Programming languages | **292** |
+| 6 | CMS | **249** |
+| 7 | Operating systems | **187** |
+| 8 | CDN | **186** |
+| 9 | Web frameworks | **179** |
+| 10 | Reverse proxies | **158** |
+| 11 | JavaScript frameworks | **89** |
+| 12 | Miscellaneous | **87** |
+| 13 | Widgets | **82** |
+| 14 | Blogs | **77** |
+| 15 | Databases | **77** |
 
 📥 Machine-readable results: [Download machine-readable technology data (JSON)](technology-data.json)
 

@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-07-21 00:09 UTC_
+_Generated: 2026-07-21 00:23 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -15,7 +15,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 |-----------|--------------|-----------|----------|---------|
 | **Combined Reachability** | **13,743 confirmed reachable** | 87,696 | **<span role="img" aria-label="15.7% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:19px;"></span></span><span class="sm-bar__label">15.7%</span></span>** | — |
 | Social Media | 14,873 scanned (13,732 reachable) | 87,696 | <span role="img" aria-label="17.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:20px;"></span></span><span class="sm-bar__label">17.0%</span></span> | 11 h |
-| Technology | 842 scanned | 87,696 | <span role="img" aria-label="1.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:1px;"></span></span><span class="sm-bar__label">1.0%</span></span> | 10 h |
+| Technology | 1,134 scanned | 87,696 | <span role="img" aria-label="1.3% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:2px;"></span></span><span class="sm-bar__label">1.3%</span></span> | 8 h |
 | Lighthouse | 0 scanned | 87,696 | (manual scan) | — |
 | Accessibility Statements | 4,754 scanned | 87,696 | <span role="img" aria-label="5.4% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:7px;"></span></span><span class="sm-bar__label">5.4%</span></span> | 9 h |
 
@@ -64,6 +64,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 |---------|-------------|----------|
 | Austria | 505 | 2026-07-20 |
 | Belgium | 337 | 2026-07-20 |
+| Bulgaria | 292 | 2026-07-21 |
 
 ## Lighthouse Scan
 
