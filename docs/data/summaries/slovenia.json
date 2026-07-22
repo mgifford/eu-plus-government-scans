@@ -1,0 +1,282 @@
+{
+  "country_code": "SLOVENIA",
+  "total_relationships": 872,
+  "total_source_domains": 16,
+  "top_source_domains": [
+    {
+      "domain": "gov.si",
+      "count": 1148
+    },
+    {
+      "domain": "ptuj.si",
+      "count": 126
+    },
+    {
+      "domain": "ds-rs.si",
+      "count": 123
+    },
+    {
+      "domain": "kamnik.si",
+      "count": 117
+    },
+    {
+      "domain": "maribor.si",
+      "count": 112
+    },
+    {
+      "domain": "ljubljana.si",
+      "count": 111
+    },
+    {
+      "domain": "celje.si",
+      "count": 109
+    },
+    {
+      "domain": "trbovlje.si",
+      "count": 48
+    },
+    {
+      "domain": "slovenjgradec.si",
+      "count": 35
+    },
+    {
+      "domain": "koper.si",
+      "count": 34
+    },
+    {
+      "domain": "kranj.si",
+      "count": 24
+    },
+    {
+      "domain": "sodisce.si",
+      "count": 20
+    },
+    {
+      "domain": "vlada.si",
+      "count": 18
+    },
+    {
+      "domain": "kpk-rs.si",
+      "count": 14
+    },
+    {
+      "domain": "dvk-rs.si",
+      "count": 10
+    },
+    {
+      "domain": "ip-rs.si",
+      "count": 1
+    }
+  ],
+  "top_target_domains": [
+    {
+      "domain": "gov.si",
+      "count": 798
+    },
+    {
+      "domain": "facebook.com",
+      "count": 62
+    },
+    {
+      "domain": "ljubljana.si",
+      "count": 57
+    },
+    {
+      "domain": "maribor.si",
+      "count": 50
+    },
+    {
+      "domain": "ptuj.si",
+      "count": 48
+    },
+    {
+      "domain": "youtube.com",
+      "count": 44
+    },
+    {
+      "domain": "googleapis.com",
+      "count": 43
+    },
+    {
+      "domain": "celje.si",
+      "count": 43
+    },
+    {
+      "domain": "google.com",
+      "count": 42
+    },
+    {
+      "domain": "ds-rs.si",
+      "count": 37
+    },
+    {
+      "domain": "kamnik.si",
+      "count": 33
+    },
+    {
+      "domain": "instagram.com",
+      "count": 29
+    },
+    {
+      "domain": "europa.eu",
+      "count": 26
+    },
+    {
+      "domain": "twitter.com",
+      "count": 24
+    },
+    {
+      "domain": "pisrs.si",
+      "count": 23
+    },
+    {
+      "domain": "vlada.si",
+      "count": 19
+    },
+    {
+      "domain": "googletagmanager.com",
+      "count": 17
+    },
+    {
+      "domain": "trbovlje.si",
+      "count": 16
+    },
+    {
+      "domain": "koper.si",
+      "count": 15
+    },
+    {
+      "domain": "jsdelivr.net",
+      "count": 13
+    },
+    {
+      "domain": "geoprostor.net",
+      "count": 13
+    },
+    {
+      "domain": "dz-rs.si",
+      "count": 12
+    },
+    {
+      "domain": "sodisce.si",
+      "count": 12
+    },
+    {
+      "domain": "linkedin.com",
+      "count": 12
+    },
+    {
+      "domain": "dvk-rs.si",
+      "count": 12
+    },
+    {
+      "domain": "kranj.si",
+      "count": 12
+    },
+    {
+      "domain": "cloudflare.com",
+      "count": 10
+    },
+    {
+      "domain": "ip-rs.si",
+      "count": 9
+    },
+    {
+      "domain": "arcgis.com",
+      "count": 9
+    },
+    {
+      "domain": "e-obcina.si",
+      "count": 9
+    },
+    {
+      "domain": "kpk-rs.si",
+      "count": 9
+    },
+    {
+      "domain": "up-rs.si",
+      "count": 8
+    },
+    {
+      "domain": "us-rs.si",
+      "count": 8
+    },
+    {
+      "domain": "rs-rs.si",
+      "count": 8
+    },
+    {
+      "domain": "evropskasredstva.si",
+      "count": 8
+    },
+    {
+      "domain": "osmrtnice.si",
+      "count": 8
+    },
+    {
+      "domain": "zmos.si",
+      "count": 8
+    },
+    {
+      "domain": "visitkamnik.com",
+      "count": 8
+    },
+    {
+      "domain": "x.com",
+      "count": 7
+    },
+    {
+      "domain": "wa.me",
+      "count": 6
+    },
+    {
+      "domain": "bootstrapcdn.com",
+      "count": 6
+    },
+    {
+      "domain": "fontawesome.com",
+      "count": 6
+    },
+    {
+      "domain": "sitranet.si",
+      "count": 6
+    },
+    {
+      "domain": "europeanbestdestinations.com",
+      "count": 6
+    },
+    {
+      "domain": "skupnostobcin.si",
+      "count": 6
+    },
+    {
+      "domain": "visitptuj.eu",
+      "count": 6
+    },
+    {
+      "domain": "ekosklad.si",
+      "count": 6
+    },
+    {
+      "domain": "zlatikamen.si",
+      "count": 6
+    },
+    {
+      "domain": "traffistat.si",
+      "count": 6
+    },
+    {
+      "domain": "varuh-rs.si",
+      "count": 6
+    }
+  ],
+  "relationship_types": {
+    "editorial_link": 512,
+    "script_dependency": 112,
+    "stylesheet_dependency": 94,
+    "image_or_media_dependency": 95,
+    "form_destination": 43,
+    "font_or_preload_dependency": 16
+  },
+  "generated_at": "2026-07-22T02:04:02.804221+00:00"
+}
