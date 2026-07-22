@@ -5,14 +5,14 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-07-22 22:37 UTC — last scan: 2026-07-22_
+_Stats as of 2026-07-22 23:07 UTC — last scan: 2026-07-22_
 
-**23** scan batches run
+**24** scan batches run
 
-**12,209** of **87,696** available pages scanned (**13.9%** coverage)
-**11,315** of **12,209** scanned pages were reachable (**92.7%**)
-**5,293** of **11,315** reachable pages have an accessibility statement (**46.8%**)
-**4,769** pages have the statement link in the footer (**90.1%** of pages with a statement)
+**13,296** of **87,696** available pages scanned (**15.2%** coverage)
+**12,222** of **13,296** scanned pages were reachable (**91.9%**)
+**5,460** of **12,222** reachable pages have an accessibility statement (**44.7%**)
+**4,902** pages have the statement link in the footer (**89.8%** of pages with a statement)
 
 📥 Machine-readable results are available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
 
@@ -49,7 +49,8 @@ Each country entry in the JSON file includes page-level evidence for pages with 
 | Netherlands | 945 | 945 | 899 | 414 | 406 | 46.1% | Jul 2026 |
 | Norway | 249 | 249 | 242 | 109 | 101 | 45.0% | Jul 2026 |
 | Poland | 353 | 14,951 | 340 | 76 | 45 | 22.4% | Jul 2026 |
-| **Total** | **12,210** | **87,696** | **11,316** | **5,294** | **4,770** | **46.8%** | — |
+| Portugal | 1,087 | 3,508 | 907 | 167 | 133 | 18.4% | Jul 2026 |
+| **Total** | **13,297** | **87,696** | **12,223** | **5,461** | **4,903** | **44.7%** | — |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
