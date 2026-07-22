@@ -1,7 +1,7 @@
 {
   "country_code": "BULGARIA",
-  "total_relationships": 1707,
-  "total_source_domains": 50,
+  "total_relationships": 1719,
+  "total_source_domains": 51,
   "top_source_domains": [
     {
       "domain": "sofia.bg",
@@ -160,6 +160,10 @@
       "count": 12
     },
     {
+      "domain": "dker.bg",
+      "count": 12
+    },
+    {
       "domain": "dato.bg",
       "count": 11
     },
@@ -198,10 +202,6 @@
     {
       "domain": "comdos.bg",
       "count": 5
-    },
-    {
-      "domain": "vks.bg",
-      "count": 1
     }
   ],
   "top_target_domains": [
@@ -231,7 +231,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 104
+      "count": 105
     },
     {
       "domain": "nsi.bg",
@@ -402,17 +402,17 @@
       "count": 11
     },
     {
-      "domain": "smartburgas.eu",
-      "count": 10
+      "domain": "dker.bg",
+      "count": 11
     }
   ],
   "relationship_types": {
-    "editorial_link": 1009,
-    "script_dependency": 228,
-    "stylesheet_dependency": 194,
-    "image_or_media_dependency": 153,
-    "form_destination": 104,
+    "editorial_link": 1013,
+    "script_dependency": 230,
+    "stylesheet_dependency": 197,
+    "image_or_media_dependency": 155,
+    "form_destination": 105,
     "font_or_preload_dependency": 19
   },
-  "generated_at": "2026-07-20T04:47:29.427547+00:00"
+  "generated_at": "2026-07-22T08:35:18.565575+00:00"
 }
