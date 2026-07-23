@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-07-23 09:09 UTC — last scan: 2026-07-23_
+_Stats as of 2026-07-23 10:31 UTC — last scan: 2026-07-23_
 
-**31** scan batches run
+**33** scan batches run
 
 **14,387** of **87,696** available pages scanned (**16.4%** coverage)
 **13,333** of **14,387** scanned pages were reachable (**92.7%**)
 **6,244** reachable pages loaded at least one third-party script (**46.8%** of reachable)
-**8,886** known third-party service loads identified
+**8,876** known third-party service loads identified
 **22** unique known services across **14** categories
 
 ---
@@ -22,10 +22,10 @@ _Stats as of 2026-07-23 09:09 UTC — last scan: 2026-07-23_
 | Country | Scanned | Available | Reachable | URLs with 3rd-Party JS | Known Service Loads | JS URLs /100 Reachable | Known Loads /100 Reachable | Last Scan |
 |---------|---------|-----------|-----------|------------------------|--------------------|------------------------|---------------------------|----------|
 | Austria | 822 | 822 | 787 | 273 | 52 | 34.7 | 6.6 | 2026-07-23 |
-| Belgium | 1,181 | 1,329 | 1,090 | 572 | 660 | 52.5 | 60.6 | 2026-07-20 |
+| Belgium | 1,181 | 1,329 | 1,090 | 572 | 660 | 52.5 | 60.6 | 2026-07-23 |
 | Bulgaria | 353 | 353 | 320 | 128 | 163 | 40.0 | 50.9 | 2026-07-23 |
 | Canada | 369 | 4,469 | 354 | 186 | 310 | 52.5 | 87.6 | 2026-07-20 |
-| Croatia | 257 | 257 | 254 | 140 | 194 | 55.1 | 76.4 | 2026-07-20 |
+| Croatia | 257 | 257 | 254 | 140 | 184 | 55.1 | 72.4 | 2026-07-23 |
 | Czechia | 866 | 866 | 796 | 491 | 832 | 61.7 | 104.5 | 2026-07-20 |
 | Denmark | 1,492 | 1,536 | 1,461 | 810 | 2,074 | 55.4 | 142.0 | 2026-07-21 |
 | Estonia | 401 | 401 | 382 | 132 | 111 | 34.6 | 29.1 | 2026-07-20 |
@@ -60,8 +60,8 @@ _Stats as of 2026-07-23 09:09 UTC — last scan: 2026-07-23_
 | # | Service | Loads |
 |--:|---------|------:|
 | 1 | cdnjs (Cloudflare CDN) | **1,923** |
-| 2 | jsDelivr CDN | **1,664** |
-| 3 | Google Analytics (GA4) | **1,199** |
+| 2 | jsDelivr CDN | **1,659** |
+| 3 | Google Analytics (GA4) | **1,194** |
 | 4 | jQuery | **787** |
 | 5 | Google reCAPTCHA | **566** |
 | 6 | unpkg CDN | **551** |
@@ -84,8 +84,8 @@ _Stats as of 2026-07-23 09:09 UTC — last scan: 2026-07-23_
 
 | # | Service | Reachable Pages | Prevalence of Reachable Pages |
 |--:|---------|----------------:|------------------------------:|
-| 1 | Google Analytics (GA4) | **1,175** | **105.2%** |
-| 2 | jsDelivr CDN | **894** | **80.0%** |
+| 1 | Google Analytics (GA4) | **1,170** | **104.7%** |
+| 2 | jsDelivr CDN | **889** | **79.6%** |
 | 3 | cdnjs (Cloudflare CDN) | **696** | **62.3%** |
 | 4 | Google reCAPTCHA | **550** | **49.2%** |
 | 5 | jQuery | **524** | **46.9%** |
@@ -109,8 +109,8 @@ _Stats as of 2026-07-23 09:09 UTC — last scan: 2026-07-23_
 
 | # | Category | Loads |
 |--:|----------|------:|
-| 1 | CDN | **4,619** |
-| 2 | Analytics | **1,322** |
+| 1 | CDN | **4,614** |
+| 2 | Analytics | **1,317** |
 | 3 | JavaScript Library | **1,268** |
 | 4 | Cookie Consent | **851** |
 | 5 | Security | **583** |
@@ -130,7 +130,7 @@ Infrastructure-heavy categories (CDNs, core libraries, and UI assets):
 
 | # | Infrastructure Category | Loads |
 |--:|--------------------------|------:|
-| 1 | CDN | **4,619** |
+| 1 | CDN | **4,614** |
 | 2 | JavaScript Library | **1,268** |
 | 3 | Icon Library | **117** |
 | 4 | UI Framework | **96** |
@@ -139,7 +139,7 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 
 | # | Policy-Relevant Category | Loads |
 |--:|--------------------------|------:|
-| 1 | Analytics | **1,322** |
+| 1 | Analytics | **1,317** |
 | 2 | Cookie Consent | **851** |
 | 3 | Security | **583** |
 | 4 | CAPTCHA | **566** |
@@ -164,7 +164,7 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 | 8 | `dreambroker.com` | **243** | **243** |
 | 9 | `cdn.herning.dk` | **237** | **24** |
 | 10 | `www.youtube.com` | **211** | **211** |
-| 11 | `maps.googleapis.com` | **190** | **175** |
+| 11 | `maps.googleapis.com` | **189** | **174** |
 | 12 | `cdn.hjoerring.dk` | **188** | **17** |
 | 13 | `siteimproveanalytics.com` | **185** | **185** |
 | 14 | `cdn.nav.no` | **178** | **7** |
