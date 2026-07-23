@@ -1,11 +1,11 @@
 {
   "country_code": "SWITZERLAND",
-  "total_relationships": 6716,
+  "total_relationships": 6719,
   "total_source_domains": 9,
   "top_source_domains": [
     {
       "domain": "ethz.ch",
-      "count": 24037
+      "count": 24050
     },
     {
       "domain": "admin.ch",
@@ -43,7 +43,7 @@
   "top_target_domains": [
     {
       "domain": "ethz.ch",
-      "count": 20353
+      "count": 20360
     },
     {
       "domain": "admin.ch",
@@ -63,11 +63,11 @@
     },
     {
       "domain": "youtube.com",
-      "count": 454
+      "count": 455
     },
     {
       "domain": "instagram.com",
-      "count": 385
+      "count": 386
     },
     {
       "domain": "github.io",
@@ -243,12 +243,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 3502,
+    "editorial_link": 3503,
     "image_or_media_dependency": 795,
-    "script_dependency": 901,
-    "stylesheet_dependency": 887,
+    "script_dependency": 902,
+    "stylesheet_dependency": 888,
     "form_destination": 469,
     "font_or_preload_dependency": 162
   },
-  "generated_at": "2026-07-21T23:59:17.215123+00:00"
+  "generated_at": "2026-07-23T20:09:33.635715+00:00"
 }
