@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-07-23 23:06 UTC_
+_Generated: 2026-07-23 23:21 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -15,7 +15,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 |-----------|--------------|-----------|----------|---------|
 | **Combined Reachability** | **56,995 confirmed reachable** | 87,696 | **<span role="img" aria-label="65.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:78px;"></span></span><span class="sm-bar__label">65.0%</span></span>** | — |
 | Social Media | 62,736 scanned (56,984 reachable) | 87,696 | <span role="img" aria-label="71.5% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:86px;"></span></span><span class="sm-bar__label">71.5%</span></span> | 2.0 days |
-| Technology | 4,460 scanned | 87,696 | <span role="img" aria-label="5.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:6px;"></span></span><span class="sm-bar__label">5.1%</span></span> | 2.0 days |
+| Technology | 4,918 scanned | 87,696 | <span role="img" aria-label="5.6% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:7px;"></span></span><span class="sm-bar__label">5.6%</span></span> | 1.9 days |
 | Lighthouse | 0 scanned | 87,696 | (manual scan) | — |
 | Accessibility Statements | 15,840 scanned | 87,696 | <span role="img" aria-label="18.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:22px;"></span></span><span class="sm-bar__label">18.1%</span></span> | 2.0 days |
 
@@ -91,6 +91,8 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Germany | 481 | 2026-07-22 |
 | Greece | 319 | 2026-07-23 |
 | Hungary | 392 | 2026-07-23 |
+| Iceland | 145 | 2026-07-23 |
+| Ireland | 313 | 2026-07-23 |
 
 ## Lighthouse Scan
 
