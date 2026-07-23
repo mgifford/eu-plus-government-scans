@@ -1,15 +1,31 @@
 {
   "country_code": "POLAND",
-  "total_relationships": 5631,
-  "total_source_domains": 5,
+  "total_relationships": 12761,
+  "total_source_domains": 14,
   "top_source_domains": [
     {
       "domain": "krakow.pl",
-      "count": 12664
+      "count": 22621
     },
     {
       "domain": "poznan.pl",
-      "count": 7346
+      "count": 15470
+    },
+    {
+      "domain": "lodz.pl",
+      "count": 8374
+    },
+    {
+      "domain": "gdansk.pl",
+      "count": 4094
+    },
+    {
+      "domain": "ztgk.pl",
+      "count": 128
+    },
+    {
+      "domain": "umed.pl",
+      "count": 76
     },
     {
       "domain": "if-pan.edu.pl",
@@ -20,219 +36,239 @@
       "count": 34
     },
     {
+      "domain": "wodazrodelko.pl",
+      "count": 26
+    },
+    {
+      "domain": "zeta.pl",
+      "count": 20
+    },
+    {
+      "domain": "uj.edu.pl",
+      "count": 13
+    },
+    {
       "domain": "gymteam.pl",
       "count": 8
+    },
+    {
+      "domain": "obozygestalt.pl",
+      "count": 8
+    },
+    {
+      "domain": "odpn.pl",
+      "count": 6
     }
   ],
   "top_target_domains": [
     {
       "domain": "krakow.pl",
-      "count": 6450
+      "count": 11037
     },
     {
       "domain": "poznan.pl",
-      "count": 3785
+      "count": 7706
+    },
+    {
+      "domain": "lodz.pl",
+      "count": 4324
     },
     {
       "domain": "googleapis.com",
-      "count": 990
+      "count": 2498
+    },
+    {
+      "domain": "gdansk.pl",
+      "count": 2466
     },
     {
       "domain": "facebook.com",
-      "count": 895
-    },
-    {
-      "domain": "google.com",
-      "count": 380
+      "count": 2266
     },
     {
       "domain": "instagram.com",
-      "count": 362
-    },
-    {
-      "domain": "googletagmanager.com",
-      "count": 346
+      "count": 944
     },
     {
       "domain": "youtube.com",
-      "count": 287
+      "count": 881
     },
     {
-      "domain": "bootstrapcdn.com",
-      "count": 259
+      "domain": "googletagmanager.com",
+      "count": 814
     },
     {
-      "domain": "repertuary.pl",
-      "count": 236
-    },
-    {
-      "domain": "gstatic.com",
-      "count": 223
-    },
-    {
-      "domain": "cloudflare.com",
-      "count": 212
+      "domain": "google.com",
+      "count": 811
     },
     {
       "domain": "jsdelivr.net",
-      "count": 190
+      "count": 586
+    },
+    {
+      "domain": "gstatic.com",
+      "count": 549
     },
     {
       "domain": "linkedin.com",
-      "count": 180
+      "count": 481
+    },
+    {
+      "domain": "repertuary.pl",
+      "count": 473
+    },
+    {
+      "domain": "cloudflare.com",
+      "count": 446
+    },
+    {
+      "domain": "bootstrapcdn.com",
+      "count": 426
     },
     {
       "domain": "twitter.com",
-      "count": 122
-    },
-    {
-      "domain": "uj.edu.pl",
-      "count": 120
-    },
-    {
-      "domain": "wordpress.org",
-      "count": 85
-    },
-    {
-      "domain": "www.gov.pl",
-      "count": 72
-    },
-    {
-      "domain": "cookiedatabase.org",
-      "count": 69
-    },
-    {
-      "domain": "jquery.com",
-      "count": 67
+      "count": 381
     },
     {
       "domain": "fontawesome.com",
-      "count": 62
+      "count": 343
     },
     {
-      "domain": "wp.com",
-      "count": 51
+      "domain": "www.gov.pl",
+      "count": 210
     },
     {
-      "domain": "x.com",
-      "count": 46
+      "domain": "witkac.pl",
+      "count": 207
     },
     {
-      "domain": "accessibility-helper.co.il",
-      "count": 45
-    },
-    {
-      "domain": "dj-extensions.com",
-      "count": 44
+      "domain": "uj.edu.pl",
+      "count": 186
     },
     {
       "domain": "unpkg.com",
-      "count": 43
+      "count": 184
     },
     {
-      "domain": "afera.com.pl",
-      "count": 42
-    },
-    {
-      "domain": "goo.gl",
-      "count": 37
-    },
-    {
-      "domain": "apple.com",
-      "count": 36
+      "domain": "wordpress.org",
+      "count": 164
     },
     {
       "domain": "tiktok.com",
-      "count": 33
+      "count": 159
     },
     {
-      "domain": "google.pl",
-      "count": 29
+      "domain": "umed.pl",
+      "count": 148
     },
     {
-      "domain": "cdn-cookieyes.com",
-      "count": 26
+      "domain": "librus.pl",
+      "count": 146
     },
     {
-      "domain": "microsoft.com",
-      "count": 25
+      "domain": "goo.gl",
+      "count": 143
     },
     {
-      "domain": "krakow.plhttp",
-      "count": 25
+      "domain": "jquery.com",
+      "count": 141
     },
     {
-      "domain": "pcss.pl",
-      "count": 23
+      "domain": "wsparciewgdansku.pl",
+      "count": 132
     },
     {
-      "domain": "userway.org",
-      "count": 23
+      "domain": "cookiedatabase.org",
+      "count": 127
     },
     {
-      "domain": "umww.pl",
-      "count": 21
+      "domain": "x.com",
+      "count": 105
     },
     {
-      "domain": "amu.edu.pl",
-      "count": 21
+      "domain": "researchgate.net",
+      "count": 97
     },
     {
-      "domain": "cookiebot.com",
-      "count": 21
-    },
-    {
-      "domain": "sowa.pl",
-      "count": 21
-    },
-    {
-      "domain": "addtoany.com",
-      "count": 20
-    },
-    {
-      "domain": "themeisle.com",
-      "count": 19
-    },
-    {
-      "domain": "trustindex.io",
-      "count": 19
-    },
-    {
-      "domain": "epuap.gov.pl",
-      "count": 19
-    },
-    {
-      "domain": "doubleclick.net",
-      "count": 18
-    },
-    {
-      "domain": "wkraj.pl",
-      "count": 18
-    },
-    {
-      "domain": "google-analytics.com",
-      "count": 18
-    },
-    {
-      "domain": "creativecommons.org",
-      "count": 17
+      "domain": "migam.org",
+      "count": 91
     },
     {
       "domain": "bip.gov.pl",
-      "count": 17
+      "count": 80
     },
     {
-      "domain": "mozilla.org",
-      "count": 17
+      "domain": "wp.com",
+      "count": 80
+    },
+    {
+      "domain": "google.pl",
+      "count": 75
+    },
+    {
+      "domain": "dj-extensions.com",
+      "count": 75
+    },
+    {
+      "domain": "wikom.pl",
+      "count": 73
+    },
+    {
+      "domain": "spotify.com",
+      "count": 71
+    },
+    {
+      "domain": "accessibility-helper.co.il",
+      "count": 66
+    },
+    {
+      "domain": "pcss.pl",
+      "count": 64
+    },
+    {
+      "domain": "edupage.org",
+      "count": 64
+    },
+    {
+      "domain": "afera.com.pl",
+      "count": 61
+    },
+    {
+      "domain": "epuap.gov.pl",
+      "count": 61
+    },
+    {
+      "domain": "office.com",
+      "count": 60
+    },
+    {
+      "domain": "microsoft.com",
+      "count": 56
+    },
+    {
+      "domain": "cdn-cookieyes.com",
+      "count": 56
+    },
+    {
+      "domain": "vk.com",
+      "count": 56
+    },
+    {
+      "domain": "apple.com",
+      "count": 55
+    },
+    {
+      "domain": "addtoany.com",
+      "count": 54
     }
   ],
   "relationship_types": {
-    "editorial_link": 3047,
-    "script_dependency": 739,
-    "stylesheet_dependency": 653,
-    "image_or_media_dependency": 724,
-    "form_destination": 357,
-    "font_or_preload_dependency": 111
+    "editorial_link": 6575,
+    "script_dependency": 1739,
+    "stylesheet_dependency": 1563,
+    "image_or_media_dependency": 1702,
+    "form_destination": 939,
+    "font_or_preload_dependency": 243
   },
-  "generated_at": "2026-07-21T08:34:12.327144+00:00"
+  "generated_at": "2026-07-23T08:33:45.014274+00:00"
 }
