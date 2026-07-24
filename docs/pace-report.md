@@ -3,7 +3,7 @@ title: Scanner Cycle Pace Report
 layout: page
 ---
 
-_Generated: 2026-07-24 19:30 UTC_
+_Generated: 2026-07-24 20:43 UTC_
 
 Whether each scanner is on pace to complete its target cycle (30 days for most
 scanners, 60 days for Lighthouse and Relationships), based on distinct URLs scanned
@@ -13,10 +13,10 @@ Section 11 for the methodology.
 
 | Scanner | Target cycle | Eligible URLs | Scanned (window) | Daily throughput | Projected cycle | Status |
 |---|---|---|---|---|---|---|
-| accessibility | 30d | 87,696 | 0 (last 7d) | 0.0/day | —d | ⚪ No data |
-| social_media | 30d | 87,696 | 0 (last 7d) | 0.0/day | —d | ⚪ No data |
-| technology | 30d | 87,696 | 0 (last 7d) | 0.0/day | —d | ⚪ No data |
-| third_party_js | 30d | 87,696 | 0 (last 7d) | 0.0/day | —d | ⚪ No data |
+| accessibility | 30d | 87,696 | 20,596 (last 7d) | 2,942.3/day | 29.8d | 🟢 On pace |
+| social_media | 30d | 87,696 | 74,938 (last 7d) | 10,705.4/day | 8.2d | 🟢 Ahead |
+| technology | 30d | 87,696 | 6,007 (last 7d) | 858.1/day | 102.2d | 🔴 Behind |
+| third_party_js | 30d | 87,696 | 16,210 (last 7d) | 2,315.7/day | 37.9d | 🟡 Marginal |
 | overlays | 30d | 87,696 | 0 (last 7d) | 0.0/day | —d | ⚪ No data |
 | lighthouse | 60d | 87,696 | 5,113 (last 7d) | 730.4/day | 120.1d | 🔴 Behind |
 
