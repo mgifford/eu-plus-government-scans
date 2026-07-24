@@ -9,10 +9,10 @@
     "total_source_domains": 36,
     "file": "austria.json"
   },
-  "CANADA": {
-    "total_relationships": 153743,
-    "total_source_domains": 3229,
-    "file": "canada.json"
+  "GERMANY": {
+    "total_relationships": 21672,
+    "total_source_domains": 222,
+    "file": "germany.json"
   },
   "HUNGARY": {
     "total_relationships": 1386,
@@ -24,9 +24,9 @@
     "total_source_domains": 45,
     "file": "belgium.json"
   },
-  "FRANCE": {
-    "total_relationships": 13748,
-    "total_source_domains": 270,
-    "file": "france.json"
+  "SPAIN": {
+    "total_relationships": 7858,
+    "total_source_domains": 31,
+    "file": "spain.json"
   }
 }
