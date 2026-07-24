@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-07-24 20:42 UTC_
+_Generated: 2026-07-24 22:18 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -13,11 +13,11 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
-| **Combined Reachability** | **67,683 confirmed reachable** | 87,696 | **<span role="img" aria-label="77.2% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:93px;"></span></span><span class="sm-bar__label">77.2%</span></span>** | — |
-| Social Media | 74,944 scanned (67,672 reachable) | 87,696 | <span role="img" aria-label="85.5% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:103px;"></span></span><span class="sm-bar__label">85.5%</span></span> | 2.5 days |
-| Technology | 6,007 scanned | 87,696 | <span role="img" aria-label="6.8% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:8px;"></span></span><span class="sm-bar__label">6.8%</span></span> | 2.3 days |
+| **Combined Reachability** | **70,659 confirmed reachable** | 87,696 | **<span role="img" aria-label="80.6% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:97px;"></span></span><span class="sm-bar__label">80.6%</span></span>** | — |
+| Social Media | 78,010 scanned (70,648 reachable) | 87,696 | <span role="img" aria-label="89.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:107px;"></span></span><span class="sm-bar__label">89.0%</span></span> | 2.4 days |
+| Technology | 6,007 scanned | 87,696 | <span role="img" aria-label="6.8% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:8px;"></span></span><span class="sm-bar__label">6.8%</span></span> | 2.4 days |
 | Lighthouse | 0 scanned | 87,696 | (manual scan) | — |
-| Accessibility Statements | 20,598 scanned | 87,696 | <span role="img" aria-label="23.5% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:28px;"></span></span><span class="sm-bar__label">23.5%</span></span> | 2.3 days |
+| Accessibility Statements | 20,598 scanned | 87,696 | <span role="img" aria-label="23.5% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:28px;"></span></span><span class="sm-bar__label">23.5%</span></span> | 2.4 days |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by any scan type. **Avg Age** shows the mean number of days (or hours) since each URL in that scan type was last scanned — lower is fresher.
 
@@ -68,7 +68,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Spain | 6,091 | 6,091 | 4,933 | 1,693 | 11 | 316 | 2,913 | 1,448 | 404 | 58 | 287 | Jul 2026 |
 | Sweden | 1,702 | 1,702 | 1,624 | 556 | 4 | 53 | 1,011 | 88 | 21 | 14 | 44 | Jul 2026 |
 | Switzerland | 2,123 | 2,123 | 2,072 | 558 | 28 | 149 | 1,337 | 226 | 227 | 52 | 139 | Jul 2026 |
-| United Kingdom | 11,898 | 19,511 | 11,059 | 3,631 | 14 | 365 | 7,049 | 2,362 | 537 | 47 | 350 | Jul 2026 |
+| United Kingdom | 14,964 | 19,511 | 14,035 | 4,754 | 22 | 473 | 8,786 | 2,962 | 735 | 75 | 446 | Jul 2026 |
 
 > **Tier columns** (Twitter-only / Modern / Mixed / No Social) classify each page by its overall social media presence. **Platform columns** (Twitter / X / Bluesky / Mastodon) count pages with at least one link to that platform — a page may appear in more than one platform column.
 
