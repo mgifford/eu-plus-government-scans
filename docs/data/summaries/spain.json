@@ -1,226 +1,342 @@
 {
   "country_code": "SPAIN",
-  "total_relationships": 2331,
-  "total_source_domains": 2,
+  "total_relationships": 7858,
+  "total_source_domains": 31,
   "top_source_domains": [
     {
       "domain": "castillalamancha.es",
-      "count": 8609
+      "count": 8649
+    },
+    {
+      "domain": "jcyl.es",
+      "count": 6622
     },
     {
       "domain": "gva.es",
-      "count": 1058
+      "count": 3266
+    },
+    {
+      "domain": "navarra.es",
+      "count": 2944
+    },
+    {
+      "domain": "asturias.es",
+      "count": 451
+    },
+    {
+      "domain": "juntaex.es",
+      "count": 333
+    },
+    {
+      "domain": "aragon.es",
+      "count": 247
+    },
+    {
+      "domain": "ayto-meco.es",
+      "count": 200
+    },
+    {
+      "domain": "jccm.es",
+      "count": 162
+    },
+    {
+      "domain": "madrid.es",
+      "count": 142
+    },
+    {
+      "domain": "ayto-alcaladehenares.es",
+      "count": 91
+    },
+    {
+      "domain": "administracion.gob.es",
+      "count": 88
+    },
+    {
+      "domain": "cantabria.es",
+      "count": 54
+    },
+    {
+      "domain": "caib.es",
+      "count": 47
+    },
+    {
+      "domain": "algoritmosverdes.gob.es",
+      "count": 41
+    },
+    {
+      "domain": "aemet.es",
+      "count": 34
+    },
+    {
+      "domain": "carm.es",
+      "count": 33
+    },
+    {
+      "domain": "defensa.gob.es",
+      "count": 32
+    },
+    {
+      "domain": "digital.gob.es",
+      "count": 27
+    },
+    {
+      "domain": "educacionfpydeportes.gob.es",
+      "count": 27
+    },
+    {
+      "domain": "transparencialocal.gob.es",
+      "count": 24
+    },
+    {
+      "domain": "aepd.es",
+      "count": 19
+    },
+    {
+      "domain": "valencia.es",
+      "count": 14
+    },
+    {
+      "domain": "erasmusplus.gob.es",
+      "count": 13
+    },
+    {
+      "domain": "dgt.es",
+      "count": 10
+    },
+    {
+      "domain": "ayto-murcia.es",
+      "count": 8
+    },
+    {
+      "domain": "sede.gob.es",
+      "count": 6
+    },
+    {
+      "domain": "policia.es",
+      "count": 4
+    },
+    {
+      "domain": "mitma.gob.es",
+      "count": 4
+    },
+    {
+      "domain": "ayto-salobrena.es",
+      "count": 2
+    },
+    {
+      "domain": "ayto-corvera.es",
+      "count": 1
     }
   ],
   "top_target_domains": [
     {
       "domain": "castillalamancha.es",
-      "count": 4235
+      "count": 4267
     },
     {
-      "domain": "jccm.es",
-      "count": 687
+      "domain": "jcyl.es",
+      "count": 3633
     },
     {
       "domain": "gva.es",
-      "count": 632
+      "count": 1884
     },
     {
-      "domain": "facebook.com",
-      "count": 404
+      "domain": "navarra.es",
+      "count": 1244
+    },
+    {
+      "domain": "jccm.es",
+      "count": 769
     },
     {
       "domain": "google.com",
-      "count": 398
+      "count": 758
+    },
+    {
+      "domain": "facebook.com",
+      "count": 724
     },
     {
       "domain": "twitter.com",
-      "count": 357
+      "count": 656
     },
     {
       "domain": "youtube.com",
-      "count": 351
+      "count": 611
     },
     {
       "domain": "googleapis.com",
-      "count": 266
+      "count": 587
     },
     {
       "domain": "instagram.com",
-      "count": 222
+      "count": 532
     },
     {
-      "domain": "google.es",
-      "count": 135
+      "domain": "educativa.com",
+      "count": 418
     },
     {
-      "domain": "fontawesome.com",
-      "count": 127
+      "domain": "blogspot.com",
+      "count": 329
+    },
+    {
+      "domain": "asturias.es",
+      "count": 283
     },
     {
       "domain": "gstatic.com",
-      "count": 120
-    },
-    {
-      "domain": "flickr.com",
-      "count": 109
+      "count": 235
     },
     {
       "domain": "linkedin.com",
-      "count": 107
+      "count": 200
+    },
+    {
+      "domain": "flickr.com",
+      "count": 179
+    },
+    {
+      "domain": "google.es",
+      "count": 170
+    },
+    {
+      "domain": "juntaex.es",
+      "count": 164
+    },
+    {
+      "domain": "blogspot.com.es",
+      "count": 163
+    },
+    {
+      "domain": "fontawesome.com",
+      "count": 148
+    },
+    {
+      "domain": "googletagmanager.com",
+      "count": 144
+    },
+    {
+      "domain": "aragon.es",
+      "count": 136
+    },
+    {
+      "domain": "wordpress.org",
+      "count": 129
+    },
+    {
+      "domain": "studiopress.com",
+      "count": 116
+    },
+    {
+      "domain": "x.com",
+      "count": 106
+    },
+    {
+      "domain": "insuit.net",
+      "count": 106
     },
     {
       "domain": "sharethis.com",
       "count": 106
     },
     {
-      "domain": "insuit.net",
-      "count": 99
-    },
-    {
-      "domain": "blogspot.com",
-      "count": 93
-    },
-    {
-      "domain": "pinterest.com",
-      "count": 92
+      "domain": "widgetlogic.org",
+      "count": 105
     },
     {
       "domain": "vimeo.com",
-      "count": 92
+      "count": 103
     },
     {
-      "domain": "blogspot.com.es",
-      "count": 53
+      "domain": "pinterest.com",
+      "count": 99
     },
     {
       "domain": "w3.org",
-      "count": 30
+      "count": 85
     },
     {
-      "domain": "bootstrapcdn.com",
-      "count": 30
-    },
-    {
-      "domain": "europa.eu",
-      "count": 28
-    },
-    {
-      "domain": "weebly.com",
-      "count": 21
-    },
-    {
-      "domain": "x.com",
-      "count": 19
-    },
-    {
-      "domain": "unpkg.com",
-      "count": 18
+      "domain": "madrid.es",
+      "count": 82
     },
     {
       "domain": "wordpress.com",
-      "count": 18
-    },
-    {
-      "domain": "whatsapp.com",
-      "count": 17
-    },
-    {
-      "domain": "turismocastillalamancha.es",
-      "count": 16
-    },
-    {
-      "domain": "cloudflare.com",
-      "count": 15
-    },
-    {
-      "domain": "tiktok.com",
-      "count": 14
-    },
-    {
-      "domain": "addtoany.com",
-      "count": 14
+      "count": 73
     },
     {
       "domain": "youtu.be",
-      "count": 14
+      "count": 72
     },
     {
-      "domain": "googletagmanager.com",
-      "count": 14
+      "domain": "europa.eu",
+      "count": 71
     },
     {
-      "domain": "jsdelivr.net",
-      "count": 13
-    },
-    {
-      "domain": "padlet.com",
-      "count": 12
-    },
-    {
-      "domain": "wixsite.com",
-      "count": 11
-    },
-    {
-      "domain": "orientaline.es",
-      "count": 11
-    },
-    {
-      "domain": "arcgis.com",
-      "count": 10
-    },
-    {
-      "domain": "ebiblio.es",
-      "count": 10
-    },
-    {
-      "domain": "uclm.es",
-      "count": 10
+      "domain": "sharepoint.com",
+      "count": 68
     },
     {
       "domain": "elorienta.com",
-      "count": 10
+      "count": 57
     },
     {
-      "domain": "campoyalma.com",
-      "count": 9
+      "domain": "whatsapp.com",
+      "count": 55
     },
     {
-      "domain": "genially.com",
-      "count": 8
+      "domain": "wixsite.com",
+      "count": 53
     },
     {
-      "domain": "google-analytics.com",
-      "count": 8
+      "domain": "jsdelivr.net",
+      "count": 49
     },
     {
-      "domain": "adobedtm.com",
-      "count": 7
+      "domain": "canva.com",
+      "count": 48
     },
     {
-      "domain": "spotify.com",
-      "count": 7
+      "domain": "goo.gl",
+      "count": 47
     },
     {
-      "domain": "boe.es",
-      "count": 7
+      "domain": "bootstrapcdn.com",
+      "count": 45
+    },
+    {
+      "domain": "office.com",
+      "count": 44
+    },
+    {
+      "domain": "genial.ly",
+      "count": 43
     },
     {
       "domain": "sepie.es",
-      "count": 7
+      "count": 42
     },
     {
-      "domain": "educacionyfp.gob.es",
-      "count": 7
+      "domain": "aemet.es",
+      "count": 41
+    },
+    {
+      "domain": "addthis.com",
+      "count": 40
+    },
+    {
+      "domain": "addtoany.com",
+      "count": 38
     }
   ],
   "relationship_types": {
-    "editorial_link": 1097,
-    "script_dependency": 360,
-    "stylesheet_dependency": 300,
-    "font_or_preload_dependency": 6,
-    "image_or_media_dependency": 300,
-    "form_destination": 268
+    "editorial_link": 3676,
+    "script_dependency": 1125,
+    "stylesheet_dependency": 1005,
+    "font_or_preload_dependency": 24,
+    "image_or_media_dependency": 1166,
+    "form_destination": 862
   },
-  "generated_at": "2026-07-21T20:10:29.498649+00:00"
+  "generated_at": "2026-07-24T08:34:17.180974+00:00"
 }
