@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-07-24 10:26 UTC_
+_Generated: 2026-07-24 10:56 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -14,7 +14,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
 | **Combined Reachability** | **61,681 confirmed reachable** | 87,696 | **<span role="img" aria-label="70.3% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:84px;"></span></span><span class="sm-bar__label">70.3%</span></span>** | — |
-| Social Media | 68,299 scanned (61,670 reachable) | 87,696 | <span role="img" aria-label="77.9% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:93px;"></span></span><span class="sm-bar__label">77.9%</span></span> | 2.2 days |
+| Social Media | 68,299 scanned (61,670 reachable) | 87,696 | <span role="img" aria-label="77.9% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:93px;"></span></span><span class="sm-bar__label">77.9%</span></span> | 2.3 days |
 | Technology | 5,575 scanned | 87,696 | <span role="img" aria-label="6.4% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:8px;"></span></span><span class="sm-bar__label">6.4%</span></span> | 2.1 days |
 | Lighthouse | 0 scanned | 87,696 | (manual scan) | — |
 | Accessibility Statements | 19,295 scanned | 87,696 | <span role="img" aria-label="22.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:26px;"></span></span><span class="sm-bar__label">22.0%</span></span> | 2.0 days |
