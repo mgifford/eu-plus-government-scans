@@ -5,13 +5,13 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-07-24 05:10 UTC — last scan: 2026-07-24_
+_Stats as of 2026-07-24 05:24 UTC — last scan: 2026-07-24_
 
-**16** scan batches run
+**17** scan batches run
 
-**5,270** of **87,696** available pages scanned (**6.0%** coverage)
-**4,883** pages with technology detections (**92.7%** of scanned)
-**224** unique technologies identified
+**5,575** of **87,696** available pages scanned (**6.4%** coverage)
+**5,163** pages with technology detections (**92.6%** of scanned)
+**230** unique technologies identified
 
 ---
 
@@ -35,6 +35,7 @@ _Stats as of 2026-07-24 05:10 UTC — last scan: 2026-07-24_
 | Iceland | 145 | 143 | 145 | 2026-07-23 |
 | Ireland | 313 | 286 | 536 | 2026-07-23 |
 | Italy | 352 | 332 | 5,351 | 2026-07-24 |
+| Latvia | 305 | 280 | 803 | 2026-07-24 |
 
 > Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and metric from [Download machine-readable technology data (JSON)](technology-data.json).
 
@@ -44,46 +45,46 @@ _Stats as of 2026-07-24 05:10 UTC — last scan: 2026-07-24_
 
 | # | Technology | Pages | Categories |
 |--:|-----------|------:|-----------|
-| 1 | jQuery | **2,767** | JavaScript libraries |
-| 2 | PHP | **1,801** | Programming languages |
-| 3 | Bootstrap | **1,383** | UI frameworks |
-| 4 | Apache | **1,198** | Web servers |
-| 5 | Font Awesome | **1,021** | Font scripts |
-| 6 | Nginx | **989** | Reverse proxies, Web servers |
-| 7 | Google Font API | **825** | Font scripts |
-| 8 | WordPress | **817** | Blogs, CMS |
-| 9 | MySQL | **817** | Databases |
-| 10 | Windows Server | **667** | Operating systems |
-| 11 | IIS | **661** | Web servers |
-| 12 | Drupal | **597** | CMS |
-| 13 | Microsoft ASP.NET | **596** | Web frameworks |
-| 14 | jQuery UI | **561** | JavaScript libraries |
-| 15 | jQuery Migrate | **543** | JavaScript libraries |
-| 16 | Cloudflare | **536** | CDN |
-| 17 | reCAPTCHA | **381** | Security |
-| 18 | Varnish | **355** | Caching |
-| 19 | Ubuntu | **343** | Operating systems |
-| 20 | Lightbox | **341** | JavaScript libraries |
+| 1 | jQuery | **2,926** | JavaScript libraries |
+| 2 | PHP | **1,908** | Programming languages |
+| 3 | Bootstrap | **1,440** | UI frameworks |
+| 4 | Apache | **1,275** | Web servers |
+| 5 | Nginx | **1,077** | Reverse proxies, Web servers |
+| 6 | Font Awesome | **1,065** | Font scripts |
+| 7 | Google Font API | **915** | Font scripts |
+| 8 | WordPress | **883** | Blogs, CMS |
+| 9 | MySQL | **883** | Databases |
+| 10 | Windows Server | **684** | Operating systems |
+| 11 | IIS | **678** | Web servers |
+| 12 | jQuery UI | **617** | JavaScript libraries |
+| 13 | Drupal | **613** | CMS |
+| 14 | Microsoft ASP.NET | **612** | Web frameworks |
+| 15 | jQuery Migrate | **593** | JavaScript libraries |
+| 16 | Cloudflare | **571** | CDN |
+| 17 | reCAPTCHA | **392** | Security |
+| 18 | Ubuntu | **366** | Operating systems |
+| 19 | Varnish | **355** | Caching |
+| 20 | Lightbox | **352** | JavaScript libraries |
 
 ### Top Technology Categories
 
 | # | Category | Pages |
 |--:|---------|------:|
-| 1 | JavaScript libraries | **5,476** |
-| 2 | Web servers | **3,098** |
-| 3 | Programming languages | **2,111** |
-| 4 | Font scripts | **1,878** |
-| 5 | CMS | **1,792** |
-| 6 | UI frameworks | **1,572** |
-| 7 | Operating systems | **1,072** |
-| 8 | Reverse proxies | **1,026** |
-| 9 | CDN | **991** |
-| 10 | Databases | **876** |
-| 11 | Blogs | **817** |
-| 12 | Web frameworks | **763** |
-| 13 | JavaScript frameworks | **479** |
-| 14 | Caching | **442** |
-| 15 | Security | **386** |
+| 1 | JavaScript libraries | **5,827** |
+| 2 | Web servers | **3,299** |
+| 3 | Programming languages | **2,251** |
+| 4 | Font scripts | **2,013** |
+| 5 | CMS | **1,881** |
+| 6 | UI frameworks | **1,634** |
+| 7 | Reverse proxies | **1,117** |
+| 8 | Operating systems | **1,115** |
+| 9 | CDN | **1,053** |
+| 10 | Databases | **954** |
+| 11 | Blogs | **883** |
+| 12 | Web frameworks | **791** |
+| 13 | JavaScript frameworks | **509** |
+| 14 | Caching | **461** |
+| 15 | Security | **397** |
 
 📥 Machine-readable results: [Download machine-readable technology data (JSON)](technology-data.json)
 
