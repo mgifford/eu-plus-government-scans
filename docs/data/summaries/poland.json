@@ -1,274 +1,418 @@
 {
   "country_code": "POLAND",
-  "total_relationships": 12761,
-  "total_source_domains": 14,
+  "total_relationships": 22267,
+  "total_source_domains": 405,
   "top_source_domains": [
     {
       "domain": "krakow.pl",
       "count": 22621
     },
     {
+      "domain": "lodz.pl",
+      "count": 15776
+    },
+    {
       "domain": "poznan.pl",
       "count": 15470
     },
     {
-      "domain": "lodz.pl",
-      "count": 8374
+      "domain": "gdansk.pl",
+      "count": 5654
     },
     {
-      "domain": "gdansk.pl",
-      "count": 4094
+      "domain": "torun.pl",
+      "count": 4571
+    },
+    {
+      "domain": "tarnow.pl",
+      "count": 4211
+    },
+    {
+      "domain": "gorzow.pl",
+      "count": 412
+    },
+    {
+      "domain": "gdynia.pl",
+      "count": 224
+    },
+    {
+      "domain": "diecezjatarnow.pl",
+      "count": 176
+    },
+    {
+      "domain": "czestochowa.pl",
+      "count": 133
     },
     {
       "domain": "ztgk.pl",
       "count": 128
     },
     {
+      "domain": "rajd.rzeszow.pl",
+      "count": 106
+    },
+    {
+      "domain": "wodip.opole.pl",
+      "count": 101
+    },
+    {
+      "domain": "diecezja.bydgoszcz.pl",
+      "count": 99
+    },
+    {
+      "domain": "stal.rzeszow.pl",
+      "count": 95
+    },
+    {
+      "domain": "diecezja.opole.pl",
+      "count": 93
+    },
+    {
+      "domain": "lo2.szczecin.pl",
+      "count": 92
+    },
+    {
+      "domain": "amuz.bydgoszcz.pl",
+      "count": 92
+    },
+    {
+      "domain": "seirp.rzeszow.pl",
+      "count": 87
+    },
+    {
+      "domain": "zsp6.rzeszow.pl",
+      "count": 81
+    },
+    {
+      "domain": "boronow.pl",
+      "count": 79
+    },
+    {
+      "domain": "um.lomza.pl",
+      "count": 77
+    },
+    {
+      "domain": "sopot.pl",
+      "count": 77
+    },
+    {
+      "domain": "powiatlobeski.pl",
+      "count": 77
+    },
+    {
       "domain": "umed.pl",
       "count": 76
     },
     {
-      "domain": "if-pan.edu.pl",
-      "count": 43
+      "domain": "pzg.szczecin.pl",
+      "count": 74
     },
     {
-      "domain": "ekodak.pl",
-      "count": 34
+      "domain": "opatowiec.pl",
+      "count": 74
     },
     {
-      "domain": "wodazrodelko.pl",
-      "count": 26
+      "domain": "powiatlomzynski.pl",
+      "count": 72
     },
     {
-      "domain": "zeta.pl",
-      "count": 20
+      "domain": "katedra.szczecin.pl",
+      "count": 70
     },
     {
-      "domain": "uj.edu.pl",
-      "count": 13
+      "domain": "zs2.szczecin.pl",
+      "count": 65
     },
     {
-      "domain": "gymteam.pl",
-      "count": 8
+      "domain": "ekonomik.rzeszow.pl",
+      "count": 63
     },
     {
-      "domain": "obozygestalt.pl",
-      "count": 8
+      "domain": "polger.wroclaw.pl",
+      "count": 63
     },
     {
-      "domain": "odpn.pl",
-      "count": 6
+      "domain": "poradnia.bialystok.pl",
+      "count": 63
+    },
+    {
+      "domain": "kocmyrzow-luborzyca.ug.gov.pl",
+      "count": 62
+    },
+    {
+      "domain": "1lo.rzeszow.pl",
+      "count": 61
+    },
+    {
+      "domain": "13lo.szczecin.pl",
+      "count": 60
+    },
+    {
+      "domain": "osiedla.szczecin.pl",
+      "count": 60
+    },
+    {
+      "domain": "aglomeracja.wroclaw.pl",
+      "count": 58
+    },
+    {
+      "domain": "powiatskarzyski.pl",
+      "count": 55
+    },
+    {
+      "domain": "streetview.warszawa.pl",
+      "count": 54
+    },
+    {
+      "domain": "powiatbrodnicki.pl",
+      "count": 54
+    },
+    {
+      "domain": "2lo.radom.pl",
+      "count": 52
+    },
+    {
+      "domain": "cit.radom.pl",
+      "count": 52
+    },
+    {
+      "domain": "aktywna.bydgoszcz.pl",
+      "count": 50
+    },
+    {
+      "domain": "nszzp.radom.pl",
+      "count": 48
+    },
+    {
+      "domain": "powiatkrapkowicki.pl",
+      "count": 47
+    },
+    {
+      "domain": "ug.lubin.pl",
+      "count": 46
+    },
+    {
+      "domain": "5lo.opole.pl",
+      "count": 46
+    },
+    {
+      "domain": "press.warszawa.pl",
+      "count": 45
+    },
+    {
+      "domain": "akp.bydgoszcz.pl",
+      "count": 45
     }
   ],
   "top_target_domains": [
     {
       "domain": "krakow.pl",
-      "count": 11037
-    },
-    {
-      "domain": "poznan.pl",
-      "count": 7706
+      "count": 11077
     },
     {
       "domain": "lodz.pl",
-      "count": 4324
+      "count": 9084
+    },
+    {
+      "domain": "poznan.pl",
+      "count": 7721
     },
     {
       "domain": "googleapis.com",
-      "count": 2498
-    },
-    {
-      "domain": "gdansk.pl",
-      "count": 2466
+      "count": 3919
     },
     {
       "domain": "facebook.com",
-      "count": 2266
+      "count": 3413
+    },
+    {
+      "domain": "gdansk.pl",
+      "count": 3393
+    },
+    {
+      "domain": "torun.pl",
+      "count": 2042
+    },
+    {
+      "domain": "tarnow.pl",
+      "count": 1711
     },
     {
       "domain": "instagram.com",
-      "count": 944
+      "count": 1339
     },
     {
       "domain": "youtube.com",
-      "count": 881
+      "count": 1326
     },
     {
       "domain": "googletagmanager.com",
-      "count": 814
+      "count": 1268
     },
     {
       "domain": "google.com",
-      "count": 811
-    },
-    {
-      "domain": "jsdelivr.net",
-      "count": 586
+      "count": 1224
     },
     {
       "domain": "gstatic.com",
-      "count": 549
+      "count": 796
+    },
+    {
+      "domain": "jsdelivr.net",
+      "count": 767
+    },
+    {
+      "domain": "cloudflare.com",
+      "count": 663
     },
     {
       "domain": "linkedin.com",
-      "count": 481
+      "count": 592
+    },
+    {
+      "domain": "twitter.com",
+      "count": 541
+    },
+    {
+      "domain": "bootstrapcdn.com",
+      "count": 527
+    },
+    {
+      "domain": "fontawesome.com",
+      "count": 482
     },
     {
       "domain": "repertuary.pl",
       "count": 473
     },
     {
-      "domain": "cloudflare.com",
-      "count": 446
-    },
-    {
-      "domain": "bootstrapcdn.com",
-      "count": 426
-    },
-    {
-      "domain": "twitter.com",
-      "count": 381
-    },
-    {
-      "domain": "fontawesome.com",
-      "count": 343
-    },
-    {
       "domain": "www.gov.pl",
-      "count": 210
+      "count": 384
     },
     {
       "domain": "witkac.pl",
-      "count": 207
-    },
-    {
-      "domain": "uj.edu.pl",
-      "count": 186
-    },
-    {
-      "domain": "unpkg.com",
-      "count": 184
+      "count": 274
     },
     {
       "domain": "wordpress.org",
-      "count": 164
+      "count": 267
     },
     {
       "domain": "tiktok.com",
-      "count": 159
+      "count": 257
     },
     {
-      "domain": "umed.pl",
-      "count": 148
-    },
-    {
-      "domain": "librus.pl",
-      "count": 146
+      "domain": "unpkg.com",
+      "count": 232
     },
     {
       "domain": "goo.gl",
-      "count": 143
-    },
-    {
-      "domain": "jquery.com",
-      "count": 141
-    },
-    {
-      "domain": "wsparciewgdansku.pl",
-      "count": 132
-    },
-    {
-      "domain": "cookiedatabase.org",
-      "count": 127
-    },
-    {
-      "domain": "x.com",
-      "count": 105
-    },
-    {
-      "domain": "researchgate.net",
-      "count": 97
+      "count": 218
     },
     {
       "domain": "migam.org",
-      "count": 91
+      "count": 213
+    },
+    {
+      "domain": "jquery.com",
+      "count": 202
     },
     {
       "domain": "bip.gov.pl",
-      "count": 80
+      "count": 191
     },
     {
-      "domain": "wp.com",
-      "count": 80
+      "domain": "uj.edu.pl",
+      "count": 188
     },
     {
-      "domain": "google.pl",
-      "count": 75
+      "domain": "gorzow.pl",
+      "count": 182
     },
     {
-      "domain": "dj-extensions.com",
-      "count": 75
+      "domain": "librus.pl",
+      "count": 177
     },
     {
-      "domain": "wikom.pl",
-      "count": 73
+      "domain": "vulcan.net.pl",
+      "count": 176
     },
     {
-      "domain": "spotify.com",
-      "count": 71
+      "domain": "wsparciewgdansku.pl",
+      "count": 172
     },
     {
-      "domain": "accessibility-helper.co.il",
-      "count": 66
+      "domain": "bip.malopolska.pl",
+      "count": 162
     },
     {
-      "domain": "pcss.pl",
-      "count": 64
+      "domain": "umed.pl",
+      "count": 162
     },
     {
-      "domain": "edupage.org",
-      "count": 64
+      "domain": "cookiedatabase.org",
+      "count": 154
     },
     {
-      "domain": "afera.com.pl",
-      "count": 61
+      "domain": "x.com",
+      "count": 133
     },
     {
       "domain": "epuap.gov.pl",
-      "count": 61
+      "count": 130
+    },
+    {
+      "domain": "wp.com",
+      "count": 127
+    },
+    {
+      "domain": "europa.eu",
+      "count": 117
+    },
+    {
+      "domain": "researchgate.net",
+      "count": 117
+    },
+    {
+      "domain": "google.pl",
+      "count": 107
     },
     {
       "domain": "office.com",
-      "count": 60
+      "count": 94
     },
     {
-      "domain": "microsoft.com",
-      "count": 56
+      "domain": "spotify.com",
+      "count": 94
     },
     {
-      "domain": "cdn-cookieyes.com",
-      "count": 56
+      "domain": "userway.org",
+      "count": 92
     },
     {
-      "domain": "vk.com",
-      "count": 56
+      "domain": "wikom.pl",
+      "count": 90
     },
     {
       "domain": "apple.com",
-      "count": 55
+      "count": 89
     },
     {
-      "domain": "addtoany.com",
-      "count": 54
+      "domain": "funduszeeuropejskie.gov.pl",
+      "count": 86
+    },
+    {
+      "domain": "diecezjatarnow.pl",
+      "count": 82
     }
   ],
   "relationship_types": {
-    "editorial_link": 6575,
-    "script_dependency": 1739,
-    "stylesheet_dependency": 1563,
-    "image_or_media_dependency": 1702,
-    "form_destination": 939,
-    "font_or_preload_dependency": 243
+    "editorial_link": 11775,
+    "script_dependency": 3067,
+    "stylesheet_dependency": 2768,
+    "image_or_media_dependency": 2781,
+    "form_destination": 1456,
+    "font_or_preload_dependency": 420
   },
-  "generated_at": "2026-07-23T08:33:45.014274+00:00"
+  "generated_at": "2026-07-24T19:09:00.874439+00:00"
 }
