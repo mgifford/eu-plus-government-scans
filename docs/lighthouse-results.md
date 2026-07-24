@@ -5,12 +5,12 @@ layout: page
 
 <!-- LIGHTHOUSE_STATS_START -->
 
-_Stats as of 2026-07-24 07:09 UTC — last scan: 2026-07-24_
+_Stats as of 2026-07-24 07:53 UTC — last scan: 2026-07-24_
 
-**31** scan batches run
+**32** scan batches run
 
-**4,297** of **87,696** available pages audited (**4.9%** coverage)
-**3,969** successful audits (**92.4%** of audited)
+**4,579** of **87,696** available pages audited (**5.2%** coverage)
+**4,233** successful audits (**92.4%** of audited)
 
 **Overall average Lighthouse scores** (0–100 scale):
 
@@ -28,7 +28,7 @@ _Stats as of 2026-07-24 07:09 UTC — last scan: 2026-07-24_
 | Belgium | 134 | 1,329 | 86 | 89 | 91 | 90 | 2026-07-24 |
 | Bulgaria | 352 | 353 | 87 | 81 | 88 | 87 | 2026-07-22 |
 | Croatia | 257 | 257 | 92 | 72 | 92 | 89 | 2026-07-22 |
-| Czechia | 167 | 866 | 90 | 87 | 92 | 87 | 2026-07-21 |
+| Czechia | 449 | 866 | 91 | 86 | 91 | 87 | 2026-07-24 |
 | Denmark | 159 | 1,536 | 86 | 93 | 96 | 91 | 2026-07-21 |
 | Estonia | 401 | 401 | 91 | 87 | 86 | 89 | 2026-07-23 |
 | Finland | 199 | 199 | 86 | 94 | 96 | 87 | 2026-07-23 |
