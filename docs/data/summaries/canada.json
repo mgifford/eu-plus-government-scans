@@ -1,418 +1,418 @@
 {
   "country_code": "CANADA",
-  "total_relationships": 11673,
-  "total_source_domains": 206,
+  "total_relationships": 153743,
+  "total_source_domains": 3229,
   "top_source_domains": [
+    {
+      "domain": "ethz.ch",
+      "count": 24050
+    },
+    {
+      "domain": "sachsen.de",
+      "count": 23875
+    },
+    {
+      "domain": "krakow.pl",
+      "count": 22621
+    },
+    {
+      "domain": "auvergnerhonealpes.fr",
+      "count": 20471
+    },
+    {
+      "domain": "poznan.pl",
+      "count": 15470
+    },
     {
       "domain": "gouv.qc.ca",
       "count": 14500
+    },
+    {
+      "domain": "esteri.it",
+      "count": 13223
+    },
+    {
+      "domain": "niedersachsen.de",
+      "count": 11540
+    },
+    {
+      "domain": "rlp.de",
+      "count": 10997
+    },
+    {
+      "domain": "bayern.de",
+      "count": 10666
+    },
+    {
+      "domain": "castillalamancha.es",
+      "count": 8609
+    },
+    {
+      "domain": "nrw.de",
+      "count": 8571
+    },
+    {
+      "domain": "gencat.cat",
+      "count": 8478
+    },
+    {
+      "domain": "lodz.pl",
+      "count": 8374
+    },
+    {
+      "domain": "gov.mt",
+      "count": 8335
+    },
+    {
+      "domain": "giustizia.it",
+      "count": 7339
+    },
+    {
+      "domain": "jcyl.es",
+      "count": 6156
+    },
+    {
+      "domain": "diplo.de",
+      "count": 5674
+    },
+    {
+      "domain": "admin.ch",
+      "count": 5017
+    },
+    {
+      "domain": "hamburg.de",
+      "count": 4859
+    },
+    {
+      "domain": "xunta.gal",
+      "count": 4527
+    },
+    {
+      "domain": "hessen.de",
+      "count": 4279
+    },
+    {
+      "domain": "gdansk.pl",
+      "count": 4094
     },
     {
       "domain": "steiermark.at",
       "count": 3951
     },
     {
+      "domain": "haute-garonne.fr",
+      "count": 3777
+    },
+    {
+      "domain": "paris.fr",
+      "count": 3683
+    },
+    {
+      "domain": "belgium.be",
+      "count": 3629
+    },
+    {
       "domain": "ooe.gv.at",
       "count": 3377
     },
     {
+      "domain": "gva.es",
+      "count": 3266
+    },
+    {
+      "domain": "kk.dk",
+      "count": 3007
+    },
+    {
+      "domain": "sachsen-anhalt.de",
+      "count": 2996
+    },
+    {
+      "domain": "plzen.eu",
+      "count": 2916
+    },
+    {
+      "domain": "gov.sk",
+      "count": 2688
+    },
+    {
+      "domain": "wallonie.be",
+      "count": 2681
+    },
+    {
+      "domain": "cnam.fr",
+      "count": 2531
+    },
+    {
+      "domain": "aarhus.dk",
+      "count": 2462
+    },
+    {
+      "domain": "azores.gov.pt",
+      "count": 2338
+    },
+    {
+      "domain": "epfl.ch",
+      "count": 2257
+    },
+    {
+      "domain": "gouvernement.lu",
+      "count": 2223
+    },
+    {
+      "domain": "ostrava.cz",
+      "count": 2137
+    },
+    {
       "domain": "canada.ca",
-      "count": 1788
+      "count": 1940
     },
     {
-      "domain": "alberta.ca",
-      "count": 969
+      "domain": "politiaromana.ro",
+      "count": 1876
     },
     {
-      "domain": "gov.bc.ca",
-      "count": 808
+      "domain": "um.dk",
+      "count": 1810
     },
     {
-      "domain": "wien.gv.at",
-      "count": 665
+      "domain": "bremen.de",
+      "count": 1805
     },
     {
-      "domain": "sofia.bg",
-      "count": 495
+      "domain": "unige.ch",
+      "count": 1801
     },
     {
-      "domain": "novascotia.ca",
-      "count": 443
+      "domain": "gov.wales",
+      "count": 1761
     },
     {
-      "domain": "government.bg",
-      "count": 389
+      "domain": "blog.gov.uk",
+      "count": 1532
     },
     {
-      "domain": "gov.mb.ca",
-      "count": 315
+      "domain": "baden-wuerttemberg.de",
+      "count": 1455
     },
     {
-      "domain": "gabrovo.bg",
-      "count": 294
+      "domain": "madeira.gov.pt",
+      "count": 1408
     },
     {
-      "domain": "varna.bg",
-      "count": 291
-    },
-    {
-      "domain": "calgary.ca",
-      "count": 265
-    },
-    {
-      "domain": "noe.gv.at",
-      "count": 259
-    },
-    {
-      "domain": "gov.on.ca",
-      "count": 255
-    },
-    {
-      "domain": "kaernten.at",
-      "count": 233
-    },
-    {
-      "domain": "edmonton.ca",
-      "count": 222
-    },
-    {
-      "domain": "vorarlberg.at",
-      "count": 216
-    },
-    {
-      "domain": "burgas.bg",
-      "count": 202
-    },
-    {
-      "domain": "bundesheer.at",
-      "count": 199
-    },
-    {
-      "domain": "pleven.bg",
-      "count": 194
-    },
-    {
-      "domain": "quebec.qc.ca",
-      "count": 182
-    },
-    {
-      "domain": "richmond.ca",
-      "count": 166
-    },
-    {
-      "domain": "justice.gc.ca",
-      "count": 158
-    },
-    {
-      "domain": "winnipeg.ca",
-      "count": 158
-    },
-    {
-      "domain": "nsi.bg",
-      "count": 150
-    },
-    {
-      "domain": "gnb.ca",
-      "count": 142
-    },
-    {
-      "domain": "pernik.bg",
-      "count": 139
-    },
-    {
-      "domain": "london.ca",
-      "count": 137
-    },
-    {
-      "domain": "montreal.ca",
-      "count": 133
-    },
-    {
-      "domain": "ottawa.ca",
-      "count": 131
-    },
-    {
-      "domain": "regina.ca",
-      "count": 125
-    },
-    {
-      "domain": "nrcan-rncan.gc.ca",
-      "count": 123
-    },
-    {
-      "domain": "saskatchewan.ca",
-      "count": 122
-    },
-    {
-      "domain": "shumen.bg",
-      "count": 119
-    },
-    {
-      "domain": "sliven.bg",
-      "count": 116
-    },
-    {
-      "domain": "ams.at",
-      "count": 111
-    },
-    {
-      "domain": "ec.gc.ca",
-      "count": 110
-    },
-    {
-      "domain": "mississauga.ca",
-      "count": 110
-    },
-    {
-      "domain": "bmf.gv.at",
-      "count": 108
-    },
-    {
-      "domain": "stjohns.ca",
-      "count": 107
-    },
-    {
-      "domain": "radio-canada.ca",
-      "count": 106
-    },
-    {
-      "domain": "hc-sc.gc.ca",
-      "count": 104
-    },
-    {
-      "domain": "dfo-mpo.gc.ca",
-      "count": 104
-    },
-    {
-      "domain": "gov.sk.ca",
-      "count": 100
-    },
-    {
-      "domain": "burnaby.ca",
-      "count": 96
-    },
-    {
-      "domain": "stmk.gv.at",
-      "count": 91
-    },
-    {
-      "domain": "lovech.bg",
-      "count": 89
-    },
-    {
-      "domain": "justiz.gv.at",
-      "count": 89
+      "domain": "uppsala.se",
+      "count": 1257
     }
   ],
   "top_target_domains": [
     {
+      "domain": "sachsen.de",
+      "count": 20949
+    },
+    {
+      "domain": "ethz.ch",
+      "count": 20360
+    },
+    {
+      "domain": "facebook.com",
+      "count": 16047
+    },
+    {
+      "domain": "auvergnerhonealpes.fr",
+      "count": 15320
+    },
+    {
+      "domain": "googleapis.com",
+      "count": 11867
+    },
+    {
+      "domain": "krakow.pl",
+      "count": 11037
+    },
+    {
+      "domain": "niedersachsen.de",
+      "count": 10347
+    },
+    {
+      "domain": "instagram.com",
+      "count": 10037
+    },
+    {
+      "domain": "youtube.com",
+      "count": 9535
+    },
+    {
+      "domain": "rlp.de",
+      "count": 8776
+    },
+    {
+      "domain": "twitter.com",
+      "count": 8038
+    },
+    {
       "domain": "gouv.qc.ca",
-      "count": 7760
+      "count": 7763
+    },
+    {
+      "domain": "poznan.pl",
+      "count": 7706
+    },
+    {
+      "domain": "linkedin.com",
+      "count": 7209
+    },
+    {
+      "domain": "bayern.de",
+      "count": 6767
+    },
+    {
+      "domain": "google.com",
+      "count": 6331
+    },
+    {
+      "domain": "esteri.it",
+      "count": 5752
+    },
+    {
+      "domain": "googletagmanager.com",
+      "count": 5576
+    },
+    {
+      "domain": "nrw.de",
+      "count": 5498
+    },
+    {
+      "domain": "gencat.cat",
+      "count": 4978
+    },
+    {
+      "domain": "jsdelivr.net",
+      "count": 4429
+    },
+    {
+      "domain": "gov.mt",
+      "count": 4336
+    },
+    {
+      "domain": "lodz.pl",
+      "count": 4325
+    },
+    {
+      "domain": "castillalamancha.es",
+      "count": 4236
+    },
+    {
+      "domain": "giustizia.it",
+      "count": 3817
+    },
+    {
+      "domain": "admin.ch",
+      "count": 3658
+    },
+    {
+      "domain": "cloudflare.com",
+      "count": 3430
+    },
+    {
+      "domain": "jcyl.es",
+      "count": 3323
+    },
+    {
+      "domain": "hessen.de",
+      "count": 3214
+    },
+    {
+      "domain": "gstatic.com",
+      "count": 3124
+    },
+    {
+      "domain": "hamburg.de",
+      "count": 3085
+    },
+    {
+      "domain": "haute-garonne.fr",
+      "count": 2839
+    },
+    {
+      "domain": "diplo.de",
+      "count": 2642
+    },
+    {
+      "domain": "xunta.gal",
+      "count": 2583
+    },
+    {
+      "domain": "paris.fr",
+      "count": 2575
+    },
+    {
+      "domain": "gdansk.pl",
+      "count": 2466
+    },
+    {
+      "domain": "europa.eu",
+      "count": 2314
     },
     {
       "domain": "steiermark.at",
       "count": 2154
     },
     {
-      "domain": "facebook.com",
-      "count": 1286
+      "domain": "sachsen-anhalt.de",
+      "count": 2082
     },
     {
-      "domain": "ooe.gv.at",
-      "count": 1251
+      "domain": "belgium.be",
+      "count": 2056
     },
     {
-      "domain": "canada.ca",
-      "count": 1201
+      "domain": "skolengo.com",
+      "count": 1919
     },
     {
-      "domain": "googleapis.com",
-      "count": 1039
+      "domain": "gva.es",
+      "count": 1883
     },
     {
-      "domain": "instagram.com",
-      "count": 690
-    },
-    {
-      "domain": "youtube.com",
-      "count": 686
-    },
-    {
-      "domain": "alberta.ca",
-      "count": 631
-    },
-    {
-      "domain": "linkedin.com",
-      "count": 614
-    },
-    {
-      "domain": "googletagmanager.com",
-      "count": 591
-    },
-    {
-      "domain": "gov.bc.ca",
-      "count": 583
-    },
-    {
-      "domain": "google.com",
-      "count": 496
-    },
-    {
-      "domain": "wien.gv.at",
-      "count": 446
-    },
-    {
-      "domain": "portailparents.ca",
-      "count": 399
-    },
-    {
-      "domain": "gstatic.com",
-      "count": 347
-    },
-    {
-      "domain": "stmk.gv.at",
-      "count": 332
-    },
-    {
-      "domain": "jsdelivr.net",
-      "count": 306
-    },
-    {
-      "domain": "twitter.com",
-      "count": 274
-    },
-    {
-      "domain": "novascotia.ca",
-      "count": 252
-    },
-    {
-      "domain": "cloudflare.com",
-      "count": 251
-    },
-    {
-      "domain": "sofia.bg",
-      "count": 225
+      "domain": "wallonie.be",
+      "count": 1810
     },
     {
       "domain": "fontawesome.com",
-      "count": 217
+      "count": 1767
     },
     {
-      "domain": "csdps.qc.ca",
-      "count": 217
+      "domain": "kk.dk",
+      "count": 1736
     },
     {
-      "domain": "government.bg",
-      "count": 201
+      "domain": "cnam.fr",
+      "count": 1663
     },
     {
-      "domain": "quebec.ca",
-      "count": 190
+      "domain": "x.com",
+      "count": 1598
+    },
+    {
+      "domain": "unpkg.com",
+      "count": 1520
     },
     {
       "domain": "jquery.com",
-      "count": 185
+      "count": 1520
     },
     {
-      "domain": "gem2go.at",
-      "count": 180
-    },
-    {
-      "domain": "office.com",
-      "count": 179
-    },
-    {
-      "domain": "international.gc.ca",
-      "count": 174
-    },
-    {
-      "domain": "cdn-cookieyes.com",
-      "count": 167
-    },
-    {
-      "domain": "datareporter.eu",
-      "count": 162
-    },
-    {
-      "domain": "gov.mb.ca",
-      "count": 159
-    },
-    {
-      "domain": "vorarlberg.at",
-      "count": 155
-    },
-    {
-      "domain": "readspeaker.com",
-      "count": 149
-    },
-    {
-      "domain": "sharepoint.com",
-      "count": 145
-    },
-    {
-      "domain": "gabrovo.bg",
-      "count": 140
-    },
-    {
-      "domain": "varna.bg",
-      "count": 138
-    },
-    {
-      "domain": "gov.on.ca",
-      "count": 132
-    },
-    {
-      "domain": "lesaint.ca",
-      "count": 120
-    },
-    {
-      "domain": "gnb.ca",
-      "count": 119
-    },
-    {
-      "domain": "mozaikportail.ca",
-      "count": 114
-    },
-    {
-      "domain": "typekit.net",
-      "count": 113
-    },
-    {
-      "domain": "edmonton.ca",
-      "count": 113
-    },
-    {
-      "domain": "pleven.bg",
-      "count": 110
-    },
-    {
-      "domain": "richmond.ca",
-      "count": 107
-    },
-    {
-      "domain": "arcgis.com",
-      "count": 106
-    },
-    {
-      "domain": "ontario.ca",
-      "count": 106
-    },
-    {
-      "domain": "bundesheer.at",
-      "count": 105
-    },
-    {
-      "domain": "calgary.ca",
-      "count": 100
+      "domain": "bootstrapcdn.com",
+      "count": 1487
     }
   ],
   "relationship_types": {
-    "editorial_link": 5465,
-    "script_dependency": 1935,
-    "stylesheet_dependency": 1680,
-    "image_or_media_dependency": 1370,
-    "form_destination": 993,
-    "font_or_preload_dependency": 230
+    "editorial_link": 76761,
+    "script_dependency": 24078,
+    "stylesheet_dependency": 20447,
+    "image_or_media_dependency": 17520,
+    "form_destination": 11446,
+    "font_or_preload_dependency": 3491
   },
-  "generated_at": "2026-07-20T04:47:29.440509+00:00"
+  "generated_at": "2026-07-24T02:13:37.774865+00:00"
 }
