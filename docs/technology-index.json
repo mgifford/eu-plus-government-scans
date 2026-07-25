@@ -1,7 +1,3935 @@
 {
-  "generated_at": "2026-07-25 01:42 UTC",
+  "generated_at": "2026-07-25 02:14 UTC",
   "base_url": "https://mgifford.github.io/eu-plus-government-scans/",
   "note": "Compact cross-reference index: technology → page count, categories, and per-country page counts. For full per-URL drilldown data see the technology-data.json workflow artifact.",
-  "by_technology": {},
-  "by_category": {}
+  "by_technology": {
+    "jQuery": {
+      "pages": 3426,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "AUSTRIA": 306,
+        "BELGIUM": 150,
+        "BULGARIA": 180,
+        "CANADA": 146,
+        "CROATIA": 136,
+        "CZECHIA": 121,
+        "DENMARK": 231,
+        "ESTONIA": 253,
+        "FINLAND": 88,
+        "FRANCE": 41,
+        "GERMANY": 188,
+        "GREECE": 204,
+        "HUNGARY": 150,
+        "ICELAND": 72,
+        "IRELAND": 194,
+        "ITALY": 307,
+        "LATVIA": 159,
+        "LITHUANIA": 67,
+        "LUXEMBOURG": 90,
+        "MALTA": 343
+      }
+    },
+    "PHP": {
+      "pages": 2242,
+      "categories": [
+        "Programming languages"
+      ],
+      "by_country": {
+        "AUSTRIA": 61,
+        "BELGIUM": 128,
+        "BULGARIA": 63,
+        "CANADA": 90,
+        "CROATIA": 82,
+        "CZECHIA": 73,
+        "DENMARK": 152,
+        "ESTONIA": 244,
+        "FINLAND": 31,
+        "FRANCE": 27,
+        "GERMANY": 198,
+        "GREECE": 140,
+        "HUNGARY": 78,
+        "ICELAND": 40,
+        "IRELAND": 108,
+        "ITALY": 286,
+        "LATVIA": 107,
+        "LITHUANIA": 33,
+        "LUXEMBOURG": 19,
+        "MALTA": 282
+      }
+    },
+    "Bootstrap": {
+      "pages": 1643,
+      "categories": [
+        "UI frameworks"
+      ],
+      "by_country": {
+        "AUSTRIA": 135,
+        "BELGIUM": 44,
+        "BULGARIA": 116,
+        "CANADA": 75,
+        "CROATIA": 88,
+        "CZECHIA": 54,
+        "DENMARK": 100,
+        "ESTONIA": 50,
+        "FINLAND": 60,
+        "FRANCE": 17,
+        "GERMANY": 47,
+        "GREECE": 88,
+        "HUNGARY": 62,
+        "ICELAND": 17,
+        "IRELAND": 130,
+        "ITALY": 300,
+        "LATVIA": 57,
+        "LITHUANIA": 41,
+        "LUXEMBOURG": 13,
+        "MALTA": 149
+      }
+    },
+    "Font Awesome": {
+      "pages": 1353,
+      "categories": [
+        "Font scripts"
+      ],
+      "by_country": {
+        "AUSTRIA": 197,
+        "BELGIUM": 122,
+        "BULGARIA": 73,
+        "CANADA": 66,
+        "CROATIA": 60,
+        "CZECHIA": 23,
+        "DENMARK": 12,
+        "ESTONIA": 84,
+        "FINLAND": 56,
+        "FRANCE": 16,
+        "GERMANY": 40,
+        "GREECE": 94,
+        "HUNGARY": 41,
+        "ICELAND": 20,
+        "IRELAND": 97,
+        "ITALY": 20,
+        "LATVIA": 44,
+        "LITHUANIA": 32,
+        "LUXEMBOURG": 7,
+        "MALTA": 249
+      }
+    },
+    "Apache": {
+      "pages": 1341,
+      "categories": [
+        "Web servers"
+      ],
+      "by_country": {
+        "AUSTRIA": 99,
+        "BELGIUM": 24,
+        "BULGARIA": 95,
+        "CANADA": 33,
+        "CROATIA": 78,
+        "CZECHIA": 27,
+        "DENMARK": 8,
+        "ESTONIA": 154,
+        "FINLAND": 17,
+        "FRANCE": 24,
+        "GERMANY": 184,
+        "GREECE": 51,
+        "HUNGARY": 89,
+        "ICELAND": 5,
+        "IRELAND": 31,
+        "ITALY": 279,
+        "LATVIA": 77,
+        "LITHUANIA": 8,
+        "LUXEMBOURG": 41,
+        "MALTA": 17
+      }
+    },
+    "MySQL": {
+      "pages": 1199,
+      "categories": [
+        "Databases"
+      ],
+      "by_country": {
+        "AUSTRIA": 20,
+        "BELGIUM": 13,
+        "BULGARIA": 44,
+        "CANADA": 41,
+        "CROATIA": 46,
+        "CZECHIA": 52,
+        "DENMARK": 2,
+        "ESTONIA": 71,
+        "FINLAND": 23,
+        "FRANCE": 10,
+        "GERMANY": 27,
+        "GREECE": 113,
+        "HUNGARY": 28,
+        "ICELAND": 13,
+        "IRELAND": 38,
+        "ITALY": 276,
+        "LATVIA": 66,
+        "LITHUANIA": 28,
+        "LUXEMBOURG": 14,
+        "MALTA": 274
+      }
+    },
+    "WordPress": {
+      "pages": 1199,
+      "categories": [
+        "Blogs",
+        "CMS"
+      ],
+      "by_country": {
+        "AUSTRIA": 20,
+        "BELGIUM": 13,
+        "BULGARIA": 44,
+        "CANADA": 41,
+        "CROATIA": 46,
+        "CZECHIA": 52,
+        "DENMARK": 2,
+        "ESTONIA": 71,
+        "FINLAND": 23,
+        "FRANCE": 10,
+        "GERMANY": 27,
+        "GREECE": 113,
+        "HUNGARY": 28,
+        "ICELAND": 13,
+        "IRELAND": 38,
+        "ITALY": 276,
+        "LATVIA": 66,
+        "LITHUANIA": 28,
+        "LUXEMBOURG": 14,
+        "MALTA": 274
+      }
+    },
+    "Google Font API": {
+      "pages": 1198,
+      "categories": [
+        "Font scripts"
+      ],
+      "by_country": {
+        "AUSTRIA": 8,
+        "BELGIUM": 95,
+        "BULGARIA": 52,
+        "CANADA": 62,
+        "CROATIA": 62,
+        "CZECHIA": 56,
+        "DENMARK": 44,
+        "ESTONIA": 79,
+        "FINLAND": 6,
+        "FRANCE": 9,
+        "GERMANY": 24,
+        "GREECE": 133,
+        "HUNGARY": 77,
+        "ICELAND": 34,
+        "IRELAND": 73,
+        "ITALY": 11,
+        "LATVIA": 90,
+        "LITHUANIA": 32,
+        "LUXEMBOURG": 11,
+        "MALTA": 240
+      }
+    },
+    "Nginx": {
+      "pages": 1114,
+      "categories": [
+        "Reverse proxies",
+        "Web servers"
+      ],
+      "by_country": {
+        "AUSTRIA": 107,
+        "BELGIUM": 34,
+        "BULGARIA": 4,
+        "CANADA": 28,
+        "CROATIA": 21,
+        "CZECHIA": 60,
+        "DENMARK": 149,
+        "ESTONIA": 25,
+        "FINLAND": 33,
+        "FRANCE": 40,
+        "GERMANY": 157,
+        "GREECE": 141,
+        "HUNGARY": 83,
+        "ICELAND": 29,
+        "IRELAND": 64,
+        "ITALY": 14,
+        "LATVIA": 88,
+        "LITHUANIA": 9,
+        "LUXEMBOURG": 11,
+        "MALTA": 17
+      }
+    },
+    "Cloudflare": {
+      "pages": 955,
+      "categories": [
+        "CDN"
+      ],
+      "by_country": {
+        "AUSTRIA": 10,
+        "BELGIUM": 20,
+        "BULGARIA": 86,
+        "CANADA": 72,
+        "CROATIA": 10,
+        "CZECHIA": 3,
+        "DENMARK": 64,
+        "ESTONIA": 144,
+        "FINLAND": 50,
+        "FRANCE": 3,
+        "GERMANY": 3,
+        "GREECE": 14,
+        "HUNGARY": 2,
+        "ICELAND": 13,
+        "IRELAND": 42,
+        "LATVIA": 35,
+        "LITHUANIA": 68,
+        "LUXEMBOURG": 1,
+        "MALTA": 315
+      }
+    },
+    "jQuery Migrate": {
+      "pages": 903,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "AUSTRIA": 24,
+        "BELGIUM": 17,
+        "BULGARIA": 43,
+        "CANADA": 31,
+        "CROATIA": 36,
+        "CZECHIA": 45,
+        "DENMARK": 2,
+        "ESTONIA": 65,
+        "FINLAND": 18,
+        "FRANCE": 10,
+        "GERMANY": 30,
+        "GREECE": 87,
+        "HUNGARY": 27,
+        "ICELAND": 16,
+        "IRELAND": 84,
+        "ITALY": 8,
+        "LATVIA": 50,
+        "LITHUANIA": 20,
+        "LUXEMBOURG": 14,
+        "MALTA": 276
+      }
+    },
+    "Windows Server": {
+      "pages": 746,
+      "categories": [
+        "Operating systems"
+      ],
+      "by_country": {
+        "AUSTRIA": 136,
+        "BELGIUM": 13,
+        "BULGARIA": 19,
+        "CANADA": 47,
+        "CROATIA": 42,
+        "CZECHIA": 33,
+        "DENMARK": 205,
+        "ESTONIA": 13,
+        "FINLAND": 2,
+        "FRANCE": 2,
+        "GERMANY": 9,
+        "GREECE": 34,
+        "HUNGARY": 7,
+        "ICELAND": 22,
+        "IRELAND": 66,
+        "ITALY": 17,
+        "LATVIA": 17,
+        "LITHUANIA": 11,
+        "MALTA": 51
+      }
+    },
+    "IIS": {
+      "pages": 740,
+      "categories": [
+        "Web servers"
+      ],
+      "by_country": {
+        "AUSTRIA": 136,
+        "BELGIUM": 13,
+        "BULGARIA": 19,
+        "CANADA": 47,
+        "CROATIA": 42,
+        "CZECHIA": 31,
+        "DENMARK": 204,
+        "ESTONIA": 13,
+        "FINLAND": 2,
+        "FRANCE": 2,
+        "GERMANY": 8,
+        "GREECE": 33,
+        "HUNGARY": 7,
+        "ICELAND": 22,
+        "IRELAND": 65,
+        "ITALY": 17,
+        "LATVIA": 17,
+        "LITHUANIA": 11,
+        "MALTA": 51
+      }
+    },
+    "Microsoft ASP.NET": {
+      "pages": 672,
+      "categories": [
+        "Web frameworks"
+      ],
+      "by_country": {
+        "AUSTRIA": 134,
+        "BELGIUM": 13,
+        "BULGARIA": 19,
+        "CANADA": 44,
+        "CROATIA": 42,
+        "CZECHIA": 18,
+        "DENMARK": 177,
+        "ESTONIA": 12,
+        "FINLAND": 2,
+        "FRANCE": 2,
+        "GERMANY": 2,
+        "GREECE": 29,
+        "HUNGARY": 7,
+        "ICELAND": 20,
+        "IRELAND": 58,
+        "ITALY": 17,
+        "LATVIA": 16,
+        "LITHUANIA": 9,
+        "MALTA": 51
+      }
+    },
+    "jQuery UI": {
+      "pages": 640,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "AUSTRIA": 208,
+        "BELGIUM": 7,
+        "BULGARIA": 39,
+        "CANADA": 12,
+        "CROATIA": 18,
+        "CZECHIA": 14,
+        "DENMARK": 6,
+        "ESTONIA": 51,
+        "FINLAND": 13,
+        "FRANCE": 6,
+        "GERMANY": 29,
+        "GREECE": 24,
+        "HUNGARY": 38,
+        "ICELAND": 16,
+        "IRELAND": 71,
+        "ITALY": 9,
+        "LATVIA": 56,
+        "LITHUANIA": 5,
+        "LUXEMBOURG": 2,
+        "MALTA": 16
+      }
+    },
+    "Drupal": {
+      "pages": 628,
+      "categories": [
+        "CMS"
+      ],
+      "by_country": {
+        "BELGIUM": 106,
+        "BULGARIA": 3,
+        "CANADA": 12,
+        "CROATIA": 14,
+        "DENMARK": 145,
+        "ESTONIA": 165,
+        "FINLAND": 8,
+        "FRANCE": 13,
+        "GERMANY": 16,
+        "GREECE": 12,
+        "HUNGARY": 17,
+        "ICELAND": 27,
+        "IRELAND": 52,
+        "ITALY": 7,
+        "LATVIA": 16,
+        "LUXEMBOURG": 5,
+        "MALTA": 10
+      }
+    },
+    "jsDelivr": {
+      "pages": 520,
+      "categories": [
+        "CDN"
+      ],
+      "by_country": {
+        "AUSTRIA": 9,
+        "BELGIUM": 36,
+        "BULGARIA": 17,
+        "CANADA": 41,
+        "CROATIA": 20,
+        "CZECHIA": 8,
+        "DENMARK": 5,
+        "ESTONIA": 12,
+        "FINLAND": 4,
+        "FRANCE": 5,
+        "GERMANY": 55,
+        "GREECE": 27,
+        "HUNGARY": 20,
+        "ICELAND": 7,
+        "IRELAND": 21,
+        "ITALY": 4,
+        "LATVIA": 27,
+        "LITHUANIA": 20,
+        "LUXEMBOURG": 12,
+        "MALTA": 170
+      }
+    },
+    "Lightbox": {
+      "pages": 514,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "AUSTRIA": 90,
+        "BULGARIA": 64,
+        "CANADA": 2,
+        "CROATIA": 21,
+        "CZECHIA": 12,
+        "DENMARK": 34,
+        "ESTONIA": 22,
+        "FINLAND": 4,
+        "GERMANY": 26,
+        "GREECE": 15,
+        "HUNGARY": 10,
+        "ICELAND": 13,
+        "IRELAND": 3,
+        "ITALY": 25,
+        "LATVIA": 11,
+        "LITHUANIA": 10,
+        "LUXEMBOURG": 3,
+        "MALTA": 149
+      }
+    },
+    "Yoast SEO": {
+      "pages": 487,
+      "categories": [
+        "SEO"
+      ],
+      "by_country": {
+        "AUSTRIA": 2,
+        "BULGARIA": 9,
+        "CANADA": 15,
+        "CROATIA": 26,
+        "CZECHIA": 10,
+        "ESTONIA": 32,
+        "FINLAND": 10,
+        "FRANCE": 7,
+        "GERMANY": 13,
+        "GREECE": 48,
+        "HUNGARY": 14,
+        "IRELAND": 22,
+        "ITALY": 4,
+        "LATVIA": 25,
+        "LITHUANIA": 4,
+        "LUXEMBOURG": 9,
+        "MALTA": 237
+      }
+    },
+    "reCAPTCHA": {
+      "pages": 420,
+      "categories": [
+        "Security"
+      ],
+      "by_country": {
+        "AUSTRIA": 4,
+        "BULGARIA": 23,
+        "CANADA": 17,
+        "CROATIA": 15,
+        "CZECHIA": 17,
+        "DENMARK": 3,
+        "ESTONIA": 8,
+        "GREECE": 29,
+        "HUNGARY": 13,
+        "IRELAND": 13,
+        "ITALY": 239,
+        "LATVIA": 11,
+        "LITHUANIA": 12,
+        "LUXEMBOURG": 1,
+        "MALTA": 15
+      }
+    },
+    "Ubuntu": {
+      "pages": 377,
+      "categories": [
+        "Operating systems"
+      ],
+      "by_country": {
+        "AUSTRIA": 2,
+        "BULGARIA": 5,
+        "CANADA": 1,
+        "CROATIA": 6,
+        "CZECHIA": 5,
+        "ESTONIA": 13,
+        "GERMANY": 2,
+        "GREECE": 19,
+        "HUNGARY": 16,
+        "IRELAND": 7,
+        "ITALY": 267,
+        "LATVIA": 23,
+        "LITHUANIA": 1,
+        "LUXEMBOURG": 8,
+        "MALTA": 2
+      }
+    },
+    "Varnish": {
+      "pages": 357,
+      "categories": [
+        "Caching"
+      ],
+      "by_country": {
+        "AUSTRIA": 2,
+        "BELGIUM": 21,
+        "CANADA": 31,
+        "CROATIA": 5,
+        "DENMARK": 124,
+        "ESTONIA": 8,
+        "FINLAND": 2,
+        "GERMANY": 123,
+        "GREECE": 3,
+        "ICELAND": 23,
+        "IRELAND": 2,
+        "ITALY": 11,
+        "LUXEMBOURG": 2
+      }
+    },
+    "Elementor": {
+      "pages": 347,
+      "categories": [
+        "Page builders"
+      ],
+      "by_country": {
+        "BELGIUM": 2,
+        "BULGARIA": 9,
+        "CANADA": 11,
+        "CROATIA": 10,
+        "ESTONIA": 14,
+        "FINLAND": 1,
+        "GERMANY": 3,
+        "GREECE": 35,
+        "HUNGARY": 4,
+        "ICELAND": 10,
+        "IRELAND": 2,
+        "ITALY": 1,
+        "LATVIA": 11,
+        "LITHUANIA": 4,
+        "MALTA": 230
+      }
+    },
+    "Slick": {
+      "pages": 321,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "AUSTRIA": 55,
+        "BELGIUM": 22,
+        "BULGARIA": 33,
+        "CANADA": 9,
+        "CROATIA": 23,
+        "CZECHIA": 34,
+        "DENMARK": 4,
+        "ESTONIA": 1,
+        "FINLAND": 3,
+        "FRANCE": 1,
+        "GERMANY": 90,
+        "GREECE": 12,
+        "HUNGARY": 8,
+        "IRELAND": 5,
+        "LATVIA": 3,
+        "LITHUANIA": 5,
+        "LUXEMBOURG": 3,
+        "MALTA": 10
+      }
+    },
+    "OWL Carousel": {
+      "pages": 305,
+      "categories": [
+        "Widgets"
+      ],
+      "by_country": {
+        "AUSTRIA": 3,
+        "BULGARIA": 47,
+        "CANADA": 5,
+        "CROATIA": 13,
+        "CZECHIA": 5,
+        "ESTONIA": 12,
+        "FINLAND": 28,
+        "GERMANY": 3,
+        "GREECE": 11,
+        "HUNGARY": 9,
+        "IRELAND": 3,
+        "ITALY": 4,
+        "LATVIA": 1,
+        "LITHUANIA": 5,
+        "LUXEMBOURG": 2,
+        "MALTA": 154
+      }
+    },
+    "Google Tag Manager": {
+      "pages": 247,
+      "categories": [
+        "Tag managers"
+      ],
+      "by_country": {
+        "AUSTRIA": 3,
+        "BELGIUM": 14,
+        "BULGARIA": 5,
+        "CANADA": 51,
+        "CROATIA": 23,
+        "CZECHIA": 13,
+        "DENMARK": 2,
+        "ESTONIA": 41,
+        "FINLAND": 15,
+        "FRANCE": 2,
+        "HUNGARY": 12,
+        "ICELAND": 6,
+        "IRELAND": 34,
+        "LATVIA": 8,
+        "LITHUANIA": 6,
+        "LUXEMBOURG": 1,
+        "MALTA": 11
+      }
+    },
+    "Swiper Slider": {
+      "pages": 238,
+      "categories": [
+        "Miscellaneous"
+      ],
+      "by_country": {
+        "BELGIUM": 4,
+        "BULGARIA": 7,
+        "CANADA": 10,
+        "CROATIA": 12,
+        "ESTONIA": 25,
+        "GERMANY": 2,
+        "GREECE": 18,
+        "HUNGARY": 8,
+        "ICELAND": 10,
+        "ITALY": 6,
+        "LATVIA": 4,
+        "LITHUANIA": 3,
+        "MALTA": 129
+      }
+    },
+    "Modernizr": {
+      "pages": 209,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "AUSTRIA": 11,
+        "BELGIUM": 3,
+        "BULGARIA": 6,
+        "CANADA": 27,
+        "CROATIA": 29,
+        "CZECHIA": 7,
+        "DENMARK": 3,
+        "ESTONIA": 13,
+        "FINLAND": 5,
+        "FRANCE": 3,
+        "GERMANY": 14,
+        "GREECE": 10,
+        "HUNGARY": 16,
+        "ICELAND": 6,
+        "IRELAND": 19,
+        "ITALY": 5,
+        "LATVIA": 10,
+        "LUXEMBOURG": 6,
+        "MALTA": 16
+      }
+    },
+    "TYPO3 CMS": {
+      "pages": 206,
+      "categories": [
+        "CMS"
+      ],
+      "by_country": {
+        "AUSTRIA": 31,
+        "CANADA": 20,
+        "FRANCE": 1,
+        "GERMANY": 154
+      }
+    },
+    "DataTables": {
+      "pages": 202,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "AUSTRIA": 14,
+        "BELGIUM": 10,
+        "BULGARIA": 19,
+        "CROATIA": 10,
+        "ESTONIA": 24,
+        "FINLAND": 1,
+        "GERMANY": 86,
+        "GREECE": 13,
+        "HUNGARY": 3,
+        "ICELAND": 2,
+        "IRELAND": 3,
+        "LITHUANIA": 5,
+        "LUXEMBOURG": 1,
+        "MALTA": 11
+      }
+    },
+    "ZURB Foundation": {
+      "pages": 194,
+      "categories": [
+        "UI frameworks"
+      ],
+      "by_country": {
+        "AUSTRIA": 3,
+        "BELGIUM": 12,
+        "BULGARIA": 3,
+        "CANADA": 8,
+        "CROATIA": 6,
+        "ESTONIA": 5,
+        "FINLAND": 1,
+        "GERMANY": 2,
+        "HUNGARY": 4,
+        "IRELAND": 2,
+        "LITHUANIA": 1,
+        "MALTA": 147
+      }
+    },
+    "AddToAny": {
+      "pages": 193,
+      "categories": [
+        "Widgets"
+      ],
+      "by_country": {
+        "BELGIUM": 1,
+        "CROATIA": 9,
+        "ESTONIA": 11,
+        "FINLAND": 5,
+        "GREECE": 6,
+        "IRELAND": 6,
+        "LATVIA": 7,
+        "MALTA": 148
+      }
+    },
+    "Java": {
+      "pages": 193,
+      "categories": [
+        "Programming languages"
+      ],
+      "by_country": {
+        "AUSTRIA": 12,
+        "CANADA": 13,
+        "CROATIA": 5,
+        "CZECHIA": 5,
+        "DENMARK": 3,
+        "FINLAND": 1,
+        "GREECE": 7,
+        "HUNGARY": 4,
+        "IRELAND": 10,
+        "ITALY": 4,
+        "LATVIA": 8,
+        "LITHUANIA": 4,
+        "LUXEMBOURG": 116,
+        "MALTA": 1
+      }
+    },
+    "FancyBox": {
+      "pages": 151,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "BULGARIA": 3,
+        "CROATIA": 2,
+        "CZECHIA": 4,
+        "ESTONIA": 3,
+        "FRANCE": 1,
+        "GERMANY": 86,
+        "GREECE": 6,
+        "HUNGARY": 9,
+        "IRELAND": 9,
+        "LATVIA": 24,
+        "LITHUANIA": 4
+      }
+    },
+    "prettyPhoto": {
+      "pages": 150,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "AUSTRIA": 39,
+        "BULGARIA": 5,
+        "CROATIA": 2,
+        "ESTONIA": 6,
+        "GREECE": 1,
+        "HUNGARY": 3,
+        "LATVIA": 1,
+        "MALTA": 93
+      }
+    },
+    "Node.js": {
+      "pages": 142,
+      "categories": [
+        "Programming languages"
+      ],
+      "by_country": {
+        "AUSTRIA": 5,
+        "BELGIUM": 8,
+        "CANADA": 3,
+        "DENMARK": 36,
+        "ESTONIA": 6,
+        "FINLAND": 9,
+        "FRANCE": 3,
+        "GREECE": 6,
+        "HUNGARY": 32,
+        "ICELAND": 18,
+        "IRELAND": 4,
+        "ITALY": 2,
+        "LATVIA": 3,
+        "LITHUANIA": 3,
+        "LUXEMBOURG": 1,
+        "MALTA": 3
+      }
+    },
+    "Moment.js": {
+      "pages": 132,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "AUSTRIA": 5,
+        "BULGARIA": 27,
+        "CANADA": 4,
+        "CROATIA": 3,
+        "CZECHIA": 5,
+        "ESTONIA": 18,
+        "FRANCE": 2,
+        "GERMANY": 3,
+        "GREECE": 19,
+        "HUNGARY": 6,
+        "ICELAND": 11,
+        "IRELAND": 13,
+        "ITALY": 3,
+        "LATVIA": 7,
+        "LITHUANIA": 3,
+        "MALTA": 3
+      }
+    },
+    "WordPress Super Cache": {
+      "pages": 131,
+      "categories": [
+        "Caching"
+      ],
+      "by_country": {
+        "ESTONIA": 4,
+        "GERMANY": 2,
+        "GREECE": 11,
+        "HUNGARY": 1,
+        "ICELAND": 3,
+        "ITALY": 1,
+        "LATVIA": 2,
+        "LITHUANIA": 1,
+        "LUXEMBOURG": 8,
+        "MALTA": 98
+      }
+    },
+    "Select2": {
+      "pages": 129,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "AUSTRIA": 4,
+        "BELGIUM": 17,
+        "BULGARIA": 15,
+        "CROATIA": 7,
+        "CZECHIA": 3,
+        "DENMARK": 1,
+        "ESTONIA": 22,
+        "FRANCE": 1,
+        "GERMANY": 4,
+        "GREECE": 10,
+        "HUNGARY": 5,
+        "ICELAND": 2,
+        "IRELAND": 10,
+        "ITALY": 4,
+        "LATVIA": 10,
+        "LITHUANIA": 5,
+        "LUXEMBOURG": 2,
+        "MALTA": 7
+      }
+    },
+    "Cookiebot": {
+      "pages": 126,
+      "categories": [
+        "Cookie compliance"
+      ],
+      "by_country": {
+        "AUSTRIA": 8,
+        "BELGIUM": 6,
+        "CZECHIA": 2,
+        "DENMARK": 62,
+        "FINLAND": 6,
+        "GERMANY": 1,
+        "IRELAND": 21,
+        "LATVIA": 11,
+        "LITHUANIA": 3,
+        "MALTA": 6
+      }
+    },
+    "Underscore.js": {
+      "pages": 121,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "AUSTRIA": 6,
+        "BELGIUM": 17,
+        "BULGARIA": 3,
+        "CANADA": 5,
+        "CROATIA": 6,
+        "CZECHIA": 1,
+        "ESTONIA": 4,
+        "FRANCE": 1,
+        "GERMANY": 9,
+        "GREECE": 13,
+        "HUNGARY": 3,
+        "ICELAND": 1,
+        "IRELAND": 21,
+        "ITALY": 2,
+        "LATVIA": 17,
+        "LITHUANIA": 3,
+        "MALTA": 9
+      }
+    },
+    "animate.css": {
+      "pages": 121,
+      "categories": [
+        "UI frameworks"
+      ],
+      "by_country": {
+        "AUSTRIA": 2,
+        "BELGIUM": 3,
+        "BULGARIA": 32,
+        "CANADA": 3,
+        "CROATIA": 7,
+        "CZECHIA": 2,
+        "ESTONIA": 6,
+        "GREECE": 13,
+        "HUNGARY": 15,
+        "ICELAND": 3,
+        "IRELAND": 6,
+        "ITALY": 5,
+        "LATVIA": 5,
+        "LITHUANIA": 5,
+        "MALTA": 14
+      }
+    },
+    "Adobe Experience Manager": {
+      "pages": 120,
+      "categories": [
+        "CMS"
+      ],
+      "by_country": {
+        "AUSTRIA": 5,
+        "CANADA": 10,
+        "LUXEMBOURG": 105
+      }
+    },
+    "Leaflet": {
+      "pages": 118,
+      "categories": [
+        "Maps"
+      ],
+      "by_country": {
+        "AUSTRIA": 48,
+        "BELGIUM": 8,
+        "BULGARIA": 4,
+        "CZECHIA": 5,
+        "ESTONIA": 2,
+        "FRANCE": 6,
+        "GERMANY": 6,
+        "GREECE": 10,
+        "HUNGARY": 2,
+        "IRELAND": 5,
+        "ITALY": 6,
+        "LATVIA": 15,
+        "MALTA": 1
+      }
+    },
+    "Amazon Cloudfront": {
+      "pages": 114,
+      "categories": [
+        "CDN"
+      ],
+      "by_country": {
+        "AUSTRIA": 3,
+        "BELGIUM": 2,
+        "CANADA": 15,
+        "CROATIA": 2,
+        "DENMARK": 11,
+        "ESTONIA": 2,
+        "FINLAND": 19,
+        "FRANCE": 3,
+        "GREECE": 10,
+        "HUNGARY": 8,
+        "ICELAND": 22,
+        "IRELAND": 15,
+        "ITALY": 1,
+        "MALTA": 1
+      }
+    },
+    "Amazon Web Services": {
+      "pages": 114,
+      "categories": [
+        "PaaS"
+      ],
+      "by_country": {
+        "AUSTRIA": 3,
+        "BELGIUM": 2,
+        "CANADA": 15,
+        "CROATIA": 2,
+        "DENMARK": 11,
+        "ESTONIA": 2,
+        "FINLAND": 19,
+        "FRANCE": 3,
+        "GREECE": 10,
+        "HUNGARY": 8,
+        "ICELAND": 22,
+        "IRELAND": 15,
+        "ITALY": 1,
+        "MALTA": 1
+      }
+    },
+    "React": {
+      "pages": 106,
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "by_country": {
+        "AUSTRIA": 3,
+        "BELGIUM": 5,
+        "CANADA": 4,
+        "DENMARK": 6,
+        "ESTONIA": 9,
+        "FINLAND": 9,
+        "FRANCE": 6,
+        "GREECE": 6,
+        "HUNGARY": 23,
+        "ICELAND": 18,
+        "IRELAND": 3,
+        "ITALY": 9,
+        "LATVIA": 5
+      }
+    },
+    "Vue.js": {
+      "pages": 104,
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "by_country": {
+        "AUSTRIA": 8,
+        "BELGIUM": 8,
+        "BULGARIA": 3,
+        "CANADA": 2,
+        "DENMARK": 33,
+        "ESTONIA": 5,
+        "FRANCE": 1,
+        "GREECE": 4,
+        "HUNGARY": 11,
+        "IRELAND": 25,
+        "LITHUANIA": 3,
+        "LUXEMBOURG": 1
+      }
+    },
+    "YouTube": {
+      "pages": 97,
+      "categories": [
+        "Video players"
+      ],
+      "by_country": {
+        "AUSTRIA": 6,
+        "BELGIUM": 10,
+        "BULGARIA": 9,
+        "CANADA": 3,
+        "CROATIA": 5,
+        "CZECHIA": 1,
+        "DENMARK": 2,
+        "ESTONIA": 5,
+        "FINLAND": 3,
+        "GERMANY": 2,
+        "GREECE": 14,
+        "HUNGARY": 15,
+        "IRELAND": 5,
+        "ITALY": 5,
+        "LATVIA": 6,
+        "LITHUANIA": 2,
+        "MALTA": 4
+      }
+    },
+    "Cart Functionality": {
+      "pages": 92,
+      "categories": [
+        "Ecommerce"
+      ],
+      "by_country": {
+        "BELGIUM": 18,
+        "BULGARIA": 9,
+        "CANADA": 12,
+        "CROATIA": 8,
+        "DENMARK": 4,
+        "FRANCE": 4,
+        "GERMANY": 7,
+        "GREECE": 1,
+        "ICELAND": 2,
+        "IRELAND": 3,
+        "ITALY": 5,
+        "LUXEMBOURG": 13,
+        "MALTA": 6
+      }
+    },
+    "RequireJS": {
+      "pages": 87,
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "by_country": {
+        "AUSTRIA": 7,
+        "BELGIUM": 2,
+        "CANADA": 3,
+        "CROATIA": 1,
+        "CZECHIA": 3,
+        "DENMARK": 2,
+        "ESTONIA": 1,
+        "GERMANY": 1,
+        "GREECE": 6,
+        "HUNGARY": 3,
+        "LATVIA": 10,
+        "LITHUANIA": 5,
+        "LUXEMBOURG": 36,
+        "MALTA": 7
+      }
+    },
+    "Google Maps": {
+      "pages": 82,
+      "categories": [
+        "Maps"
+      ],
+      "by_country": {
+        "BELGIUM": 3,
+        "BULGARIA": 2,
+        "CANADA": 9,
+        "CROATIA": 4,
+        "CZECHIA": 4,
+        "DENMARK": 3,
+        "ESTONIA": 3,
+        "GREECE": 12,
+        "HUNGARY": 10,
+        "ICELAND": 1,
+        "IRELAND": 10,
+        "LATVIA": 9,
+        "LITHUANIA": 2,
+        "LUXEMBOURG": 5,
+        "MALTA": 5
+      }
+    },
+    "webpack": {
+      "pages": 82,
+      "categories": [
+        "Miscellaneous"
+      ],
+      "by_country": {
+        "AUSTRIA": 3,
+        "BELGIUM": 5,
+        "CANADA": 1,
+        "DENMARK": 3,
+        "ESTONIA": 9,
+        "FINLAND": 6,
+        "FRANCE": 3,
+        "GREECE": 6,
+        "HUNGARY": 21,
+        "ICELAND": 18,
+        "IRELAND": 3,
+        "ITALY": 2,
+        "LATVIA": 2
+      }
+    },
+    "Python": {
+      "pages": 75,
+      "categories": [
+        "Programming languages"
+      ],
+      "by_country": {
+        "BELGIUM": 9,
+        "CANADA": 2,
+        "CROATIA": 6,
+        "CZECHIA": 10,
+        "FRANCE": 2,
+        "GERMANY": 12,
+        "GREECE": 2,
+        "IRELAND": 13,
+        "ITALY": 9,
+        "LATVIA": 4,
+        "LUXEMBOURG": 3,
+        "MALTA": 3
+      }
+    },
+    "Next.js": {
+      "pages": 74,
+      "categories": [
+        "Web frameworks",
+        "Web servers"
+      ],
+      "by_country": {
+        "AUSTRIA": 3,
+        "BELGIUM": 2,
+        "CANADA": 1,
+        "DENMARK": 3,
+        "ESTONIA": 6,
+        "FINLAND": 6,
+        "FRANCE": 3,
+        "GREECE": 6,
+        "HUNGARY": 21,
+        "ICELAND": 18,
+        "IRELAND": 3,
+        "ITALY": 2
+      }
+    },
+    "Joomla": {
+      "pages": 66,
+      "categories": [
+        "CMS"
+      ],
+      "by_country": {
+        "AUSTRIA": 3,
+        "BELGIUM": 3,
+        "BULGARIA": 6,
+        "CROATIA": 19,
+        "ESTONIA": 7,
+        "GREECE": 5,
+        "HUNGARY": 8,
+        "IRELAND": 13,
+        "LATVIA": 2
+      }
+    },
+    "Revslider": {
+      "pages": 65,
+      "categories": [
+        "Miscellaneous"
+      ],
+      "by_country": {
+        "BULGARIA": 8,
+        "CROATIA": 2,
+        "ESTONIA": 8,
+        "GREECE": 12,
+        "HUNGARY": 4,
+        "IRELAND": 3,
+        "MALTA": 28
+      }
+    },
+    "Nuxt.js": {
+      "pages": 58,
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "by_country": {
+        "AUSTRIA": 2,
+        "BELGIUM": 6,
+        "CANADA": 2,
+        "DENMARK": 33,
+        "HUNGARY": 11,
+        "LITHUANIA": 3,
+        "LUXEMBOURG": 1
+      }
+    },
+    "Kestrel": {
+      "pages": 57,
+      "categories": [
+        "Web servers"
+      ],
+      "by_country": {
+        "BELGIUM": 2,
+        "CZECHIA": 2,
+        "DENMARK": 35,
+        "ESTONIA": 3,
+        "HUNGARY": 2,
+        "ICELAND": 1,
+        "IRELAND": 7,
+        "LATVIA": 5
+      }
+    },
+    "AngularJS": {
+      "pages": 53,
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "by_country": {
+        "AUSTRIA": 6,
+        "BELGIUM": 4,
+        "CANADA": 2,
+        "CROATIA": 1,
+        "DENMARK": 1,
+        "ESTONIA": 6,
+        "FRANCE": 4,
+        "GERMANY": 2,
+        "GREECE": 10,
+        "IRELAND": 7,
+        "ITALY": 4,
+        "LITHUANIA": 5,
+        "MALTA": 1
+      }
+    },
+    "OpenSSL": {
+      "pages": 53,
+      "categories": [
+        "Web server extensions"
+      ],
+      "by_country": {
+        "AUSTRIA": 1,
+        "BELGIUM": 2,
+        "BULGARIA": 3,
+        "CANADA": 5,
+        "CROATIA": 7,
+        "CZECHIA": 2,
+        "DENMARK": 4,
+        "ESTONIA": 8,
+        "GERMANY": 3,
+        "GREECE": 4,
+        "HUNGARY": 2,
+        "IRELAND": 2,
+        "ITALY": 8,
+        "LATVIA": 2
+      }
+    },
+    "SWFObject": {
+      "pages": 53,
+      "categories": [
+        "Miscellaneous"
+      ],
+      "by_country": {
+        "AUSTRIA": 39,
+        "BULGARIA": 2,
+        "CROATIA": 1,
+        "GREECE": 2,
+        "IRELAND": 3,
+        "LATVIA": 4,
+        "LITHUANIA": 2
+      }
+    },
+    "Alpine.js": {
+      "pages": 43,
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "by_country": {
+        "BULGARIA": 2,
+        "CROATIA": 2,
+        "DENMARK": 22,
+        "GREECE": 4,
+        "HUNGARY": 3,
+        "LITHUANIA": 3,
+        "LUXEMBOURG": 5,
+        "MALTA": 2
+      }
+    },
+    "Osano": {
+      "pages": 43,
+      "categories": [
+        "Cookie compliance"
+      ],
+      "by_country": {
+        "BULGARIA": 6,
+        "CROATIA": 3,
+        "ESTONIA": 3,
+        "HUNGARY": 11,
+        "IRELAND": 13,
+        "LATVIA": 7
+      }
+    },
+    "Chart.js": {
+      "pages": 42,
+      "categories": [
+        "JavaScript graphics"
+      ],
+      "by_country": {
+        "AUSTRIA": 6,
+        "CROATIA": 3,
+        "CZECHIA": 2,
+        "ESTONIA": 5,
+        "FINLAND": 3,
+        "GERMANY": 2,
+        "GREECE": 3,
+        "HUNGARY": 4,
+        "IRELAND": 3,
+        "ITALY": 3,
+        "LATVIA": 6,
+        "LITHUANIA": 1,
+        "MALTA": 1
+      }
+    },
+    "Ruby": {
+      "pages": 42,
+      "categories": [
+        "Programming languages"
+      ],
+      "by_country": {
+        "BELGIUM": 2,
+        "BULGARIA": 2,
+        "CANADA": 9,
+        "ESTONIA": 2,
+        "FRANCE": 10,
+        "HUNGARY": 3,
+        "LATVIA": 7,
+        "LITHUANIA": 2,
+        "LUXEMBOURG": 2,
+        "MALTA": 3
+      }
+    },
+    "Ruby on Rails": {
+      "pages": 42,
+      "categories": [
+        "Web frameworks"
+      ],
+      "by_country": {
+        "BELGIUM": 2,
+        "BULGARIA": 2,
+        "CANADA": 9,
+        "ESTONIA": 2,
+        "FRANCE": 10,
+        "HUNGARY": 3,
+        "LATVIA": 7,
+        "LITHUANIA": 2,
+        "LUXEMBOURG": 2,
+        "MALTA": 3
+      }
+    },
+    "Mautic": {
+      "pages": 39,
+      "categories": [
+        "Marketing automation"
+      ],
+      "by_country": {
+        "DENMARK": 1,
+        "ESTONIA": 2,
+        "IRELAND": 34,
+        "MALTA": 2
+      }
+    },
+    "Sucuri": {
+      "pages": 36,
+      "categories": [
+        "CDN"
+      ],
+      "by_country": {
+        "GREECE": 2,
+        "IRELAND": 31,
+        "MALTA": 3
+      }
+    },
+    "WP Rocket": {
+      "pages": 36,
+      "categories": [
+        "Caching"
+      ],
+      "by_country": {
+        "AUSTRIA": 2,
+        "BELGIUM": 7,
+        "CROATIA": 3,
+        "ESTONIA": 3,
+        "GREECE": 7,
+        "HUNGARY": 2,
+        "IRELAND": 3,
+        "LATVIA": 3,
+        "LITHUANIA": 3,
+        "MALTA": 3
+      }
+    },
+    "AddThis": {
+      "pages": 35,
+      "categories": [
+        "Widgets"
+      ],
+      "by_country": {
+        "AUSTRIA": 22,
+        "BULGARIA": 3,
+        "CROATIA": 1,
+        "ESTONIA": 2,
+        "GREECE": 4,
+        "IRELAND": 3
+      }
+    },
+    "Stimulus": {
+      "pages": 34,
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "by_country": {
+        "AUSTRIA": 2,
+        "BULGARIA": 6,
+        "CANADA": 2,
+        "ESTONIA": 11,
+        "FRANCE": 5,
+        "GREECE": 2,
+        "LATVIA": 3,
+        "LITHUANIA": 2,
+        "LUXEMBOURG": 1
+      }
+    },
+    "Flickity": {
+      "pages": 33,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "BULGARIA": 3,
+        "CANADA": 4,
+        "CZECHIA": 2,
+        "FINLAND": 12,
+        "GREECE": 4,
+        "HUNGARY": 3,
+        "IRELAND": 3,
+        "MALTA": 2
+      }
+    },
+    "Debian": {
+      "pages": 31,
+      "categories": [
+        "Operating systems"
+      ],
+      "by_country": {
+        "AUSTRIA": 2,
+        "BELGIUM": 4,
+        "CZECHIA": 3,
+        "DENMARK": 3,
+        "FRANCE": 6,
+        "GREECE": 6,
+        "HUNGARY": 4,
+        "LATVIA": 1,
+        "LITHUANIA": 2
+      }
+    },
+    "Django": {
+      "pages": 29,
+      "categories": [
+        "Web frameworks"
+      ],
+      "by_country": {
+        "BELGIUM": 2,
+        "CANADA": 2,
+        "CROATIA": 3,
+        "CZECHIA": 1,
+        "FRANCE": 2,
+        "GERMANY": 9,
+        "IRELAND": 5,
+        "LATVIA": 2,
+        "LUXEMBOURG": 3
+      }
+    },
+    "LiteSpeed": {
+      "pages": 29,
+      "categories": [
+        "Web servers"
+      ],
+      "by_country": {
+        "BELGIUM": 3,
+        "BULGARIA": 3,
+        "CANADA": 4,
+        "DENMARK": 2,
+        "GREECE": 8,
+        "HUNGARY": 4,
+        "IRELAND": 3,
+        "LITHUANIA": 2
+      }
+    },
+    "TinyMCE": {
+      "pages": 29,
+      "categories": [
+        "Rich text editors"
+      ],
+      "by_country": {
+        "BELGIUM": 12,
+        "ESTONIA": 5,
+        "FRANCE": 1,
+        "GERMANY": 2,
+        "GREECE": 3,
+        "HUNGARY": 3,
+        "IRELAND": 3
+      }
+    },
+    "UIKit": {
+      "pages": 29,
+      "categories": [
+        "UI frameworks"
+      ],
+      "by_country": {
+        "BELGIUM": 3,
+        "BULGARIA": 8,
+        "ESTONIA": 2,
+        "GREECE": 3,
+        "IRELAND": 13
+      }
+    },
+    "Redis": {
+      "pages": 28,
+      "categories": [
+        "Databases"
+      ],
+      "by_country": {
+        "CROATIA": 1,
+        "ESTONIA": 3,
+        "GERMANY": 2,
+        "GREECE": 3,
+        "IRELAND": 3,
+        "LATVIA": 6,
+        "MALTA": 10
+      }
+    },
+    "Redis Object Cache": {
+      "pages": 28,
+      "categories": [
+        "Caching"
+      ],
+      "by_country": {
+        "CROATIA": 1,
+        "ESTONIA": 3,
+        "GERMANY": 2,
+        "GREECE": 3,
+        "IRELAND": 3,
+        "LATVIA": 6,
+        "MALTA": 10
+      }
+    },
+    "Envoy": {
+      "pages": 27,
+      "categories": [
+        "Reverse proxies"
+      ],
+      "by_country": {
+        "BELGIUM": 1,
+        "CANADA": 3,
+        "DENMARK": 4,
+        "FINLAND": 5,
+        "FRANCE": 3,
+        "GERMANY": 2,
+        "GREECE": 2,
+        "IRELAND": 1,
+        "LATVIA": 3,
+        "MALTA": 3
+      }
+    },
+    "UserWay": {
+      "pages": 25,
+      "categories": [
+        "Accessibility"
+      ],
+      "by_country": {
+        "BULGARIA": 2,
+        "GREECE": 17,
+        "HUNGARY": 3,
+        "LITHUANIA": 3
+      }
+    },
+    "Lua": {
+      "pages": 23,
+      "categories": [
+        "Programming languages"
+      ],
+      "by_country": {
+        "BELGIUM": 2,
+        "CANADA": 1,
+        "CZECHIA": 2,
+        "FRANCE": 2,
+        "LATVIA": 11,
+        "LITHUANIA": 5
+      }
+    },
+    "OpenResty": {
+      "pages": 23,
+      "categories": [
+        "Web servers"
+      ],
+      "by_country": {
+        "BELGIUM": 2,
+        "CANADA": 1,
+        "CZECHIA": 2,
+        "FRANCE": 2,
+        "LATVIA": 11,
+        "LITHUANIA": 5
+      }
+    },
+    "Plone": {
+      "pages": 23,
+      "categories": [
+        "CMS"
+      ],
+      "by_country": {
+        "BELGIUM": 7,
+        "CZECHIA": 4,
+        "GERMANY": 3,
+        "ITALY": 9
+      }
+    },
+    "Gravity Forms": {
+      "pages": 22,
+      "categories": [
+        "Miscellaneous"
+      ],
+      "by_country": {
+        "BELGIUM": 4,
+        "BULGARIA": 1,
+        "CANADA": 1,
+        "ESTONIA": 2,
+        "FINLAND": 1,
+        "HUNGARY": 4,
+        "IRELAND": 3,
+        "LUXEMBOURG": 3,
+        "MALTA": 3
+      }
+    },
+    "W3 Total Cache": {
+      "pages": 22,
+      "categories": [
+        "Caching"
+      ],
+      "by_country": {
+        "BULGARIA": 2,
+        "CANADA": 2,
+        "CROATIA": 5,
+        "HUNGARY": 2,
+        "LATVIA": 6,
+        "MALTA": 5
+      }
+    },
+    "OneTrust": {
+      "pages": 21,
+      "categories": [
+        "Cookie compliance"
+      ],
+      "by_country": {
+        "DENMARK": 13,
+        "IRELAND": 5,
+        "MALTA": 3
+      }
+    },
+    "OpenLayers": {
+      "pages": 21,
+      "categories": [
+        "Maps"
+      ],
+      "by_country": {
+        "BELGIUM": 7,
+        "BULGARIA": 5,
+        "CROATIA": 2,
+        "DENMARK": 2,
+        "GREECE": 3,
+        "ITALY": 2
+      }
+    },
+    "Lodash": {
+      "pages": 20,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "CANADA": 8,
+        "CZECHIA": 2,
+        "ESTONIA": 1,
+        "GERMANY": 1,
+        "IRELAND": 7,
+        "LATVIA": 1
+      }
+    },
+    "Apache Tomcat": {
+      "pages": 19,
+      "categories": [
+        "Web servers"
+      ],
+      "by_country": {
+        "AUSTRIA": 2,
+        "CZECHIA": 5,
+        "GREECE": 4,
+        "HUNGARY": 4,
+        "ITALY": 2,
+        "LITHUANIA": 1,
+        "MALTA": 1
+      }
+    },
+    "Kinsta": {
+      "pages": 19,
+      "categories": [
+        "PaaS"
+      ],
+      "by_country": {
+        "CANADA": 11,
+        "IRELAND": 2,
+        "LATVIA": 3,
+        "MALTA": 3
+      }
+    },
+    "Moodle": {
+      "pages": 19,
+      "categories": [
+        "LMS"
+      ],
+      "by_country": {
+        "AUSTRIA": 4,
+        "BELGIUM": 2,
+        "CANADA": 2,
+        "DENMARK": 1,
+        "ESTONIA": 1,
+        "LATVIA": 9
+      }
+    },
+    "Vercel": {
+      "pages": 19,
+      "categories": [
+        "Web servers"
+      ],
+      "by_country": {
+        "BELGIUM": 3,
+        "CZECHIA": 2,
+        "DENMARK": 2,
+        "GREECE": 1,
+        "ICELAND": 11
+      }
+    },
+    "Backbone.js": {
+      "pages": 18,
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "by_country": {
+        "BELGIUM": 1,
+        "BULGARIA": 2,
+        "CANADA": 1,
+        "GERMANY": 1,
+        "GREECE": 1,
+        "IRELAND": 5,
+        "LATVIA": 4,
+        "MALTA": 3
+      }
+    },
+    "Facebook": {
+      "pages": 18,
+      "categories": [
+        "Widgets"
+      ],
+      "by_country": {
+        "BULGARIA": 1,
+        "CANADA": 1,
+        "CROATIA": 3,
+        "CZECHIA": 2,
+        "ESTONIA": 5,
+        "GREECE": 1,
+        "ITALY": 3,
+        "LITHUANIA": 2
+      }
+    },
+    "Highcharts": {
+      "pages": 18,
+      "categories": [
+        "JavaScript graphics"
+      ],
+      "by_country": {
+        "CZECHIA": 4,
+        "ESTONIA": 9,
+        "GREECE": 3,
+        "HUNGARY": 2
+      }
+    },
+    "Ionicons": {
+      "pages": 18,
+      "categories": [
+        "Font scripts"
+      ],
+      "by_country": {
+        "CROATIA": 10,
+        "ESTONIA": 4,
+        "GREECE": 1,
+        "LATVIA": 1,
+        "LITHUANIA": 2
+      }
+    },
+    "Java Servlet": {
+      "pages": 18,
+      "categories": [
+        "Web frameworks"
+      ],
+      "by_country": {
+        "CANADA": 3,
+        "HUNGARY": 4,
+        "LATVIA": 1,
+        "LUXEMBOURG": 10
+      }
+    },
+    "Litespeed Cache": {
+      "pages": 18,
+      "categories": [
+        "Caching"
+      ],
+      "by_country": {
+        "CANADA": 2,
+        "DENMARK": 2,
+        "GREECE": 6,
+        "IRELAND": 3,
+        "LITHUANIA": 2,
+        "MALTA": 3
+      }
+    },
+    "PostgreSQL": {
+      "pages": 18,
+      "categories": [
+        "Databases"
+      ],
+      "by_country": {
+        "CROATIA": 3,
+        "GREECE": 2,
+        "IRELAND": 8,
+        "LATVIA": 2,
+        "MALTA": 3
+      }
+    },
+    "Glyphicons": {
+      "pages": 17,
+      "categories": [
+        "Font scripts"
+      ],
+      "by_country": {
+        "AUSTRIA": 3,
+        "DENMARK": 2,
+        "ESTONIA": 1,
+        "GREECE": 8,
+        "HUNGARY": 3
+      }
+    },
+    "Amazon S3": {
+      "pages": 16,
+      "categories": [
+        "Miscellaneous"
+      ],
+      "by_country": {
+        "BELGIUM": 2,
+        "CANADA": 1,
+        "CROATIA": 2,
+        "FINLAND": 2,
+        "GREECE": 5,
+        "ICELAND": 1,
+        "IRELAND": 2,
+        "ITALY": 1
+      }
+    },
+    "CentOS": {
+      "pages": 16,
+      "categories": [
+        "Operating systems"
+      ],
+      "by_country": {
+        "BELGIUM": 2,
+        "CANADA": 3,
+        "CZECHIA": 1,
+        "GREECE": 1,
+        "HUNGARY": 4,
+        "ITALY": 3,
+        "LATVIA": 2
+      }
+    },
+    "Element UI": {
+      "pages": 16,
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "by_country": {
+        "BELGIUM": 2,
+        "ESTONIA": 1,
+        "FRANCE": 1,
+        "IRELAND": 12
+      }
+    },
+    "MathJax": {
+      "pages": 16,
+      "categories": [
+        "JavaScript graphics"
+      ],
+      "by_country": {
+        "AUSTRIA": 4,
+        "CANADA": 2,
+        "LATVIA": 4,
+        "LUXEMBOURG": 2,
+        "MALTA": 4
+      }
+    },
+    "TrackJs": {
+      "pages": 16,
+      "categories": [
+        "Analytics"
+      ],
+      "by_country": {
+        "CANADA": 3,
+        "ESTONIA": 2,
+        "HUNGARY": 2,
+        "ITALY": 1,
+        "LATVIA": 5,
+        "LITHUANIA": 1,
+        "MALTA": 2
+      }
+    },
+    "Caddy": {
+      "pages": 15,
+      "categories": [
+        "Web servers"
+      ],
+      "by_country": {
+        "CANADA": 1,
+        "ICELAND": 10,
+        "LITHUANIA": 4
+      }
+    },
+    "Ckan": {
+      "pages": 15,
+      "categories": [
+        "CMS"
+      ],
+      "by_country": {
+        "CROATIA": 3,
+        "GREECE": 2,
+        "IRELAND": 8,
+        "LATVIA": 2
+      }
+    },
+    "Go": {
+      "pages": 15,
+      "categories": [
+        "Programming languages"
+      ],
+      "by_country": {
+        "CANADA": 1,
+        "ICELAND": 10,
+        "LITHUANIA": 4
+      }
+    },
+    "Lucene": {
+      "pages": 15,
+      "categories": [
+        "Databases"
+      ],
+      "by_country": {
+        "CROATIA": 3,
+        "GREECE": 2,
+        "IRELAND": 8,
+        "LATVIA": 2
+      }
+    },
+    "Solr": {
+      "pages": 15,
+      "categories": [
+        "Databases"
+      ],
+      "by_country": {
+        "CROATIA": 3,
+        "GREECE": 2,
+        "IRELAND": 8,
+        "LATVIA": 2
+      }
+    },
+    "Awesomplete": {
+      "pages": 14,
+      "categories": [
+        "Search engines"
+      ],
+      "by_country": {
+        "AUSTRIA": 3,
+        "BULGARIA": 2,
+        "GREECE": 1,
+        "HUNGARY": 7,
+        "LITHUANIA": 1
+      }
+    },
+    "DNN": {
+      "pages": 14,
+      "categories": [
+        "CMS"
+      ],
+      "by_country": {
+        "AUSTRIA": 3,
+        "BELGIUM": 3,
+        "CROATIA": 2,
+        "GREECE": 3,
+        "IRELAND": 3
+      }
+    },
+    "Hammer.js": {
+      "pages": 14,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "AUSTRIA": 1,
+        "CZECHIA": 2,
+        "FINLAND": 1,
+        "GERMANY": 1,
+        "GREECE": 2,
+        "ICELAND": 3,
+        "IRELAND": 3,
+        "LATVIA": 1
+      }
+    },
+    "Prism": {
+      "pages": 14,
+      "categories": [
+        "Miscellaneous"
+      ],
+      "by_country": {
+        "AUSTRIA": 7,
+        "BULGARIA": 2,
+        "CROATIA": 2,
+        "IRELAND": 3
+      }
+    },
+    "particles.js": {
+      "pages": 14,
+      "categories": [
+        "JavaScript graphics"
+      ],
+      "by_country": {
+        "BULGARIA": 7,
+        "CROATIA": 3,
+        "GREECE": 1,
+        "MALTA": 3
+      }
+    },
+    "F5 BigIP": {
+      "pages": 13,
+      "categories": [
+        "Reverse proxies"
+      ],
+      "by_country": {
+        "BULGARIA": 12,
+        "FRANCE": 1
+      }
+    },
+    "Handlebars": {
+      "pages": 13,
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "by_country": {
+        "DENMARK": 2,
+        "FINLAND": 2,
+        "GERMANY": 1,
+        "GREECE": 4,
+        "IRELAND": 2,
+        "LATVIA": 2
+      }
+    },
+    "Nette Framework": {
+      "pages": 13,
+      "categories": [
+        "Web frameworks"
+      ],
+      "by_country": {
+        "CZECHIA": 13
+      }
+    },
+    "Clipboard.js": {
+      "pages": 12,
+      "categories": [
+        "Miscellaneous"
+      ],
+      "by_country": {
+        "CANADA": 3,
+        "CROATIA": 2,
+        "GERMANY": 1,
+        "GREECE": 1,
+        "IRELAND": 3,
+        "LATVIA": 2
+      }
+    },
+    "FlexSlider": {
+      "pages": 12,
+      "categories": [
+        "Widgets"
+      ],
+      "by_country": {
+        "AUSTRIA": 2,
+        "ESTONIA": 1,
+        "GREECE": 2,
+        "HUNGARY": 3,
+        "IRELAND": 3,
+        "MALTA": 1
+      }
+    },
+    "Liferay": {
+      "pages": 12,
+      "categories": [
+        "CMS"
+      ],
+      "by_country": {
+        "GERMANY": 3,
+        "GREECE": 3,
+        "ITALY": 3,
+        "LITHUANIA": 2,
+        "MALTA": 1
+      }
+    },
+    "Red Hat": {
+      "pages": 12,
+      "categories": [
+        "Operating systems"
+      ],
+      "by_country": {
+        "AUSTRIA": 1,
+        "BELGIUM": 3,
+        "CZECHIA": 2,
+        "GERMANY": 4,
+        "IRELAND": 2
+      }
+    },
+    "Seravo": {
+      "pages": 12,
+      "categories": [
+        "PaaS"
+      ],
+      "by_country": {
+        "FINLAND": 12
+      }
+    },
+    "Lotus Domino": {
+      "pages": 11,
+      "categories": [
+        "Web servers"
+      ],
+      "by_country": {
+        "AUSTRIA": 3,
+        "CROATIA": 2,
+        "DENMARK": 3,
+        "IRELAND": 2,
+        "ITALY": 1
+      }
+    },
+    "Mustache": {
+      "pages": 11,
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "by_country": {
+        "BELGIUM": 10,
+        "ESTONIA": 1
+      }
+    },
+    "Plesk": {
+      "pages": 11,
+      "categories": [
+        "Hosting panels"
+      ],
+      "by_country": {
+        "BELGIUM": 1,
+        "GREECE": 9,
+        "IRELAND": 1
+      }
+    },
+    "SweetAlert2": {
+      "pages": 11,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "AUSTRIA": 3,
+        "ESTONIA": 8
+      }
+    },
+    "WooCommerce": {
+      "pages": 11,
+      "categories": [
+        "Ecommerce"
+      ],
+      "by_country": {
+        "GREECE": 2,
+        "IRELAND": 3,
+        "LITHUANIA": 3,
+        "MALTA": 3
+      }
+    },
+    "Contentful": {
+      "pages": 10,
+      "categories": [
+        "CMS"
+      ],
+      "by_country": {
+        "BELGIUM": 2,
+        "ICELAND": 7,
+        "IRELAND": 1
+      }
+    },
+    "D3": {
+      "pages": 10,
+      "categories": [
+        "JavaScript graphics"
+      ],
+      "by_country": {
+        "CROATIA": 4,
+        "GERMANY": 1,
+        "LUXEMBOURG": 2,
+        "MALTA": 3
+      }
+    },
+    "Google Analytics": {
+      "pages": 10,
+      "categories": [
+        "Analytics"
+      ],
+      "by_country": {
+        "CZECHIA": 2,
+        "GREECE": 3,
+        "HUNGARY": 3,
+        "ITALY": 2
+      }
+    },
+    "MailChimp": {
+      "pages": 10,
+      "categories": [
+        "Marketing automation"
+      ],
+      "by_country": {
+        "BELGIUM": 1,
+        "BULGARIA": 1,
+        "CANADA": 2,
+        "GREECE": 2,
+        "HUNGARY": 1,
+        "IRELAND": 1,
+        "MALTA": 2
+      }
+    },
+    "jQuery Mobile": {
+      "pages": 10,
+      "categories": [
+        "Mobile frameworks"
+      ],
+      "by_country": {
+        "BULGARIA": 2,
+        "CROATIA": 2,
+        "GREECE": 4,
+        "MALTA": 2
+      }
+    },
+    "Concrete5": {
+      "pages": 9,
+      "categories": [
+        "CMS"
+      ],
+      "by_country": {
+        "CANADA": 9
+      }
+    },
+    "Microsoft SharePoint": {
+      "pages": 9,
+      "categories": [
+        "CMS"
+      ],
+      "by_country": {
+        "CZECHIA": 2,
+        "GREECE": 2,
+        "HUNGARY": 3,
+        "LITHUANIA": 2
+      }
+    },
+    "Sitefinity": {
+      "pages": 9,
+      "categories": [
+        "CMS"
+      ],
+      "by_country": {
+        "IRELAND": 3,
+        "LATVIA": 3,
+        "MALTA": 3
+      }
+    },
+    "Twitter typeahead.js": {
+      "pages": 9,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "AUSTRIA": 2,
+        "FINLAND": 2,
+        "GREECE": 2,
+        "LUXEMBOURG": 3
+      }
+    },
+    "Weglot": {
+      "pages": 9,
+      "categories": [
+        "Miscellaneous"
+      ],
+      "by_country": {
+        "ESTONIA": 3,
+        "MALTA": 6
+      }
+    },
+    "Gatsby": {
+      "pages": 8,
+      "categories": [
+        "JavaScript frameworks",
+        "Static site generator"
+      ],
+      "by_country": {
+        "BELGIUM": 3,
+        "ESTONIA": 3,
+        "LATVIA": 2
+      }
+    },
+    "Google Cloud": {
+      "pages": 8,
+      "categories": [
+        "CDN"
+      ],
+      "by_country": {
+        "BULGARIA": 3,
+        "GREECE": 2,
+        "ITALY": 3
+      }
+    },
+    "Highlight.js": {
+      "pages": 8,
+      "categories": [
+        "Miscellaneous"
+      ],
+      "by_country": {
+        "CROATIA": 3,
+        "GERMANY": 1,
+        "IRELAND": 2,
+        "LATVIA": 2
+      }
+    },
+    "Lagoon": {
+      "pages": 8,
+      "categories": [
+        "PaaS"
+      ],
+      "by_country": {
+        "DENMARK": 8
+      }
+    },
+    "MariaDB": {
+      "pages": 8,
+      "categories": [
+        "Databases"
+      ],
+      "by_country": {
+        "CANADA": 6,
+        "IRELAND": 2
+      }
+    },
+    "Microsoft Word": {
+      "pages": 8,
+      "categories": [
+        "Editors"
+      ],
+      "by_country": {
+        "AUSTRIA": 1,
+        "CANADA": 1,
+        "CZECHIA": 1,
+        "GERMANY": 1,
+        "HUNGARY": 1,
+        "IRELAND": 1,
+        "LATVIA": 1,
+        "LITHUANIA": 1
+      }
+    },
+    "MooTools": {
+      "pages": 8,
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "by_country": {
+        "BULGARIA": 4,
+        "CROATIA": 1,
+        "GREECE": 2,
+        "LATVIA": 1
+      }
+    },
+    "Open Journal Systems": {
+      "pages": 8,
+      "categories": [
+        "DMS"
+      ],
+      "by_country": {
+        "LATVIA": 8
+      }
+    },
+    "Oracle Dynamic Monitoring Service": {
+      "pages": 8,
+      "categories": [
+        "Miscellaneous"
+      ],
+      "by_country": {
+        "BULGARIA": 1,
+        "FINLAND": 3,
+        "GREECE": 1,
+        "ICELAND": 2,
+        "LATVIA": 1
+      }
+    },
+    "Pantheon": {
+      "pages": 8,
+      "categories": [
+        "PaaS"
+      ],
+      "by_country": {
+        "CANADA": 6,
+        "IRELAND": 2
+      }
+    },
+    "Phusion Passenger": {
+      "pages": 8,
+      "categories": [
+        "Web servers"
+      ],
+      "by_country": {
+        "FRANCE": 6,
+        "LATVIA": 2
+      }
+    },
+    "Twitter": {
+      "pages": 8,
+      "categories": [
+        "Widgets"
+      ],
+      "by_country": {
+        "CROATIA": 1,
+        "CZECHIA": 2,
+        "HUNGARY": 2,
+        "ITALY": 3
+      }
+    },
+    "Fastly": {
+      "pages": 7,
+      "categories": [
+        "CDN"
+      ],
+      "by_country": {
+        "CANADA": 5,
+        "LUXEMBOURG": 2
+      }
+    },
+    "GitHub Pages": {
+      "pages": 7,
+      "categories": [
+        "PaaS"
+      ],
+      "by_country": {
+        "CANADA": 5,
+        "LUXEMBOURG": 2
+      }
+    },
+    "Material Design Lite": {
+      "pages": 7,
+      "categories": [
+        "UI frameworks"
+      ],
+      "by_country": {
+        "BELGIUM": 2,
+        "GREECE": 5
+      }
+    },
+    "Microsoft HTTPAPI": {
+      "pages": 7,
+      "categories": [
+        "Web servers"
+      ],
+      "by_country": {
+        "AUSTRIA": 2,
+        "CROATIA": 1,
+        "FINLAND": 1,
+        "GREECE": 2,
+        "LATVIA": 1
+      }
+    },
+    "Prototype": {
+      "pages": 7,
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "by_country": {
+        "CANADA": 2,
+        "ESTONIA": 2,
+        "GERMANY": 1,
+        "HUNGARY": 2
+      }
+    },
+    "Yii": {
+      "pages": 7,
+      "categories": [
+        "Web frameworks"
+      ],
+      "by_country": {
+        "CZECHIA": 3,
+        "GREECE": 1,
+        "HUNGARY": 3
+      }
+    },
+    "Angular": {
+      "pages": 6,
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "by_country": {
+        "FINLAND": 3,
+        "GERMANY": 1,
+        "HUNGARY": 2
+      }
+    },
+    "GSAP": {
+      "pages": 6,
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "by_country": {
+        "CZECHIA": 2,
+        "GREECE": 3,
+        "MALTA": 1
+      }
+    },
+    "Google AdSense": {
+      "pages": 6,
+      "categories": [
+        "Advertising"
+      ],
+      "by_country": {
+        "HUNGARY": 6
+      }
+    },
+    "JavaServer Pages": {
+      "pages": 6,
+      "categories": [
+        "Web frameworks"
+      ],
+      "by_country": {
+        "AUSTRIA": 1,
+        "GREECE": 1,
+        "ITALY": 1,
+        "LATVIA": 1,
+        "LUXEMBOURG": 2
+      }
+    },
+    "Polyfill": {
+      "pages": 6,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "AUSTRIA": 1,
+        "CANADA": 2,
+        "IRELAND": 3
+      }
+    },
+    "CookieHub": {
+      "pages": 5,
+      "categories": [
+        "Cookie compliance"
+      ],
+      "by_country": {
+        "FINLAND": 2,
+        "GREECE": 3
+      }
+    },
+    "ExtJS": {
+      "pages": 5,
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "by_country": {
+        "CZECHIA": 3,
+        "HUNGARY": 1,
+        "LUXEMBOURG": 1
+      }
+    },
+    "FreeBSD": {
+      "pages": 5,
+      "categories": [
+        "Operating systems"
+      ],
+      "by_country": {
+        "ESTONIA": 3,
+        "ITALY": 2
+      }
+    },
+    "Google Sign-in": {
+      "pages": 5,
+      "categories": [
+        "Social login"
+      ],
+      "by_country": {
+        "CZECHIA": 2,
+        "HUNGARY": 3
+      }
+    },
+    "Imperva": {
+      "pages": 5,
+      "categories": [
+        "Security"
+      ],
+      "by_country": {
+        "CANADA": 3,
+        "FRANCE": 2
+      }
+    },
+    "Orchard CMS": {
+      "pages": 5,
+      "categories": [
+        "CMS"
+      ],
+      "by_country": {
+        "MALTA": 5
+      }
+    },
+    "Platform.sh": {
+      "pages": 5,
+      "categories": [
+        "PaaS"
+      ],
+      "by_country": {
+        "FINLAND": 2,
+        "IRELAND": 3
+      }
+    },
+    "ZK": {
+      "pages": 5,
+      "categories": [
+        "Web frameworks"
+      ],
+      "by_country": {
+        "GREECE": 1,
+        "LITHUANIA": 4
+      }
+    },
+    "decimal.js": {
+      "pages": 5,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "AUSTRIA": 2,
+        "ESTONIA": 1,
+        "LATVIA": 1,
+        "MALTA": 1
+      }
+    },
+    "gunicorn": {
+      "pages": 5,
+      "categories": [
+        "Web servers"
+      ],
+      "by_country": {
+        "CZECHIA": 3,
+        "GREECE": 2
+      }
+    },
+    "ArcGIS API for JavaScript": {
+      "pages": 4,
+      "categories": [
+        "Maps"
+      ],
+      "by_country": {
+        "CANADA": 1,
+        "GREECE": 1,
+        "ICELAND": 2
+      }
+    },
+    "Atlassian Jira": {
+      "pages": 4,
+      "categories": [
+        "Issue trackers"
+      ],
+      "by_country": {
+        "LATVIA": 4
+      }
+    },
+    "Express": {
+      "pages": 4,
+      "categories": [
+        "Web frameworks",
+        "Web servers"
+      ],
+      "by_country": {
+        "FINLAND": 3,
+        "IRELAND": 1
+      }
+    },
+    "JBoss Application Server": {
+      "pages": 4,
+      "categories": [
+        "Web servers"
+      ],
+      "by_country": {
+        "HUNGARY": 4
+      }
+    },
+    "Marked": {
+      "pages": 4,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "BELGIUM": 1,
+        "ICELAND": 3
+      }
+    },
+    "Materialize CSS": {
+      "pages": 4,
+      "categories": [
+        "UI frameworks"
+      ],
+      "by_country": {
+        "GREECE": 1,
+        "HUNGARY": 2,
+        "ITALY": 1
+      }
+    },
+    "Moment Timezone": {
+      "pages": 4,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "ESTONIA": 1,
+        "GREECE": 1,
+        "ICELAND": 2
+      }
+    },
+    "SiteGround": {
+      "pages": 4,
+      "categories": [
+        "PaaS"
+      ],
+      "by_country": {
+        "MALTA": 4
+      }
+    },
+    "Spring": {
+      "pages": 4,
+      "categories": [
+        "Web frameworks"
+      ],
+      "by_country": {
+        "LITHUANIA": 4
+      }
+    },
+    "Zend": {
+      "pages": 4,
+      "categories": [
+        "Web servers"
+      ],
+      "by_country": {
+        "HUNGARY": 4
+      }
+    },
+    "amCharts": {
+      "pages": 4,
+      "categories": [
+        "JavaScript graphics"
+      ],
+      "by_country": {
+        "CZECHIA": 2,
+        "LITHUANIA": 2
+      }
+    },
+    "BugSnag": {
+      "pages": 3,
+      "categories": [
+        "Analytics"
+      ],
+      "by_country": {
+        "LUXEMBOURG": 3
+      }
+    },
+    "Dojo": {
+      "pages": 3,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "AUSTRIA": 2,
+        "CZECHIA": 1
+      }
+    },
+    "Flask": {
+      "pages": 3,
+      "categories": [
+        "Web frameworks",
+        "Web servers"
+      ],
+      "by_country": {
+        "MALTA": 3
+      }
+    },
+    "Google PageSpeed": {
+      "pages": 3,
+      "categories": [
+        "Caching",
+        "Web server extensions"
+      ],
+      "by_country": {
+        "ESTONIA": 2,
+        "LITHUANIA": 1
+      }
+    },
+    "Google Plus": {
+      "pages": 3,
+      "categories": [
+        "Widgets"
+      ],
+      "by_country": {
+        "BULGARIA": 1,
+        "CZECHIA": 2
+      }
+    },
+    "Gravatar": {
+      "pages": 3,
+      "categories": [
+        "Miscellaneous"
+      ],
+      "by_country": {
+        "BULGARIA": 2,
+        "CROATIA": 1
+      }
+    },
+    "IBM DataPower": {
+      "pages": 3,
+      "categories": [
+        "Reverse proxies"
+      ],
+      "by_country": {
+        "CZECHIA": 3
+      }
+    },
+    "Jekyll": {
+      "pages": 3,
+      "categories": [
+        "Static site generator"
+      ],
+      "by_country": {
+        "CANADA": 3
+      }
+    },
+    "Less": {
+      "pages": 3,
+      "categories": [
+        "Miscellaneous"
+      ],
+      "by_country": {
+        "MALTA": 3
+      }
+    },
+    "Linkedin": {
+      "pages": 3,
+      "categories": [
+        "Widgets"
+      ],
+      "by_country": {
+        "BULGARIA": 2,
+        "CROATIA": 1
+      }
+    },
+    "MediaWiki": {
+      "pages": 3,
+      "categories": [
+        "Wikis"
+      ],
+      "by_country": {
+        "AUSTRIA": 3
+      }
+    },
+    "Netlify": {
+      "pages": 3,
+      "categories": [
+        "CDN",
+        "PaaS"
+      ],
+      "by_country": {
+        "CANADA": 3
+      }
+    },
+    "NextGEN Gallery": {
+      "pages": 3,
+      "categories": [
+        "Photo galleries"
+      ],
+      "by_country": {
+        "LATVIA": 3
+      }
+    },
+    "Odoo": {
+      "pages": 3,
+      "categories": [
+        "CMS",
+        "Ecommerce"
+      ],
+      "by_country": {
+        "MALTA": 3
+      }
+    },
+    "Paths.js": {
+      "pages": 3,
+      "categories": [
+        "JavaScript graphics"
+      ],
+      "by_country": {
+        "ESTONIA": 3
+      }
+    },
+    "Perl": {
+      "pages": 3,
+      "categories": [
+        "Programming languages"
+      ],
+      "by_country": {
+        "DENMARK": 3
+      }
+    },
+    "Riot": {
+      "pages": 3,
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "by_country": {
+        "AUSTRIA": 3
+      }
+    },
+    "Semantic-ui": {
+      "pages": 3,
+      "categories": [
+        "UI frameworks"
+      ],
+      "by_country": {
+        "CZECHIA": 3
+      }
+    },
+    "ShareThis": {
+      "pages": 3,
+      "categories": [
+        "Widgets"
+      ],
+      "by_country": {
+        "IRELAND": 3
+      }
+    },
+    "Socket.io": {
+      "pages": 3,
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "by_country": {
+        "LATVIA": 3
+      }
+    },
+    "SweetAlert": {
+      "pages": 3,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "GREECE": 3
+      }
+    },
+    "Umbraco": {
+      "pages": 3,
+      "categories": [
+        "CMS"
+      ],
+      "by_country": {
+        "CANADA": 3
+      }
+    },
+    "Vaadin": {
+      "pages": 3,
+      "categories": [
+        "Web frameworks"
+      ],
+      "by_country": {
+        "AUSTRIA": 1,
+        "FINLAND": 1,
+        "LUXEMBOURG": 1
+      }
+    },
+    "jqPlot": {
+      "pages": 3,
+      "categories": [
+        "JavaScript graphics"
+      ],
+      "by_country": {
+        "LITHUANIA": 3
+      }
+    },
+    "mod_perl": {
+      "pages": 3,
+      "categories": [
+        "Web server extensions"
+      ],
+      "by_country": {
+        "DENMARK": 3
+      }
+    },
+    "mod_wsgi": {
+      "pages": 3,
+      "categories": [
+        "Web server extensions"
+      ],
+      "by_country": {
+        "CZECHIA": 3
+      }
+    },
+    "Akamai": {
+      "pages": 2,
+      "categories": [
+        "CDN"
+      ],
+      "by_country": {
+        "CANADA": 1,
+        "CROATIA": 1
+      }
+    },
+    "Blazor": {
+      "pages": 2,
+      "categories": [
+        "Web frameworks"
+      ],
+      "by_country": {
+        "GREECE": 1,
+        "ICELAND": 1
+      }
+    },
+    "Bulma": {
+      "pages": 2,
+      "categories": [
+        "UI frameworks"
+      ],
+      "by_country": {
+        "DENMARK": 2
+      }
+    },
+    "CherryPy": {
+      "pages": 2,
+      "categories": [
+        "Web frameworks",
+        "Web servers"
+      ],
+      "by_country": {
+        "CZECHIA": 2
+      }
+    },
+    "ImpressPages": {
+      "pages": 2,
+      "categories": [
+        "CMS"
+      ],
+      "by_country": {
+        "LITHUANIA": 2
+      }
+    },
+    "K2": {
+      "pages": 2,
+      "categories": [
+        "Miscellaneous"
+      ],
+      "by_country": {
+        "CROATIA": 2
+      }
+    },
+    "MkDocs": {
+      "pages": 2,
+      "categories": [
+        "Documentation"
+      ],
+      "by_country": {
+        "LUXEMBOURG": 2
+      }
+    },
+    "Open Web Analytics": {
+      "pages": 2,
+      "categories": [
+        "Analytics"
+      ],
+      "by_country": {
+        "ICELAND": 2
+      }
+    },
+    "Pagekit": {
+      "pages": 2,
+      "categories": [
+        "CMS"
+      ],
+      "by_country": {
+        "ESTONIA": 2
+      }
+    },
+    "RackCache": {
+      "pages": 2,
+      "categories": [
+        "Caching"
+      ],
+      "by_country": {
+        "LATVIA": 2
+      }
+    },
+    "Shoptet": {
+      "pages": 2,
+      "categories": [
+        "Ecommerce"
+      ],
+      "by_country": {
+        "CZECHIA": 2
+      }
+    },
+    "Snoobi": {
+      "pages": 2,
+      "categories": [
+        "Analytics"
+      ],
+      "by_country": {
+        "FINLAND": 2
+      }
+    },
+    "Statcounter": {
+      "pages": 2,
+      "categories": [
+        "Analytics"
+      ],
+      "by_country": {
+        "CROATIA": 2
+      }
+    },
+    "UNIX": {
+      "pages": 2,
+      "categories": [
+        "Operating systems"
+      ],
+      "by_country": {
+        "CANADA": 2
+      }
+    },
+    "mod_jk": {
+      "pages": 2,
+      "categories": [
+        "Web server extensions"
+      ],
+      "by_country": {
+        "ITALY": 2
+      }
+    },
+    "script.aculo.us": {
+      "pages": 2,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "HUNGARY": 2
+      }
+    },
+    "xCharts": {
+      "pages": 2,
+      "categories": [
+        "JavaScript graphics"
+      ],
+      "by_country": {
+        "CROATIA": 2
+      }
+    },
+    "All in One SEO Pack": {
+      "pages": 1,
+      "categories": [
+        "SEO"
+      ],
+      "by_country": {
+        "BULGARIA": 1
+      }
+    },
+    "Angular Material": {
+      "pages": 1,
+      "categories": [
+        "UI frameworks"
+      ],
+      "by_country": {
+        "CANADA": 1
+      }
+    },
+    "Bootstrap Table": {
+      "pages": 1,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "CROATIA": 1
+      }
+    },
+    "FrontPage": {
+      "pages": 1,
+      "categories": [
+        "Editors"
+      ],
+      "by_country": {
+        "CROATIA": 1
+      }
+    },
+    "Google Web Toolkit": {
+      "pages": 1,
+      "categories": [
+        "Web frameworks"
+      ],
+      "by_country": {
+        "LATVIA": 1
+      }
+    },
+    "Jitsi": {
+      "pages": 1,
+      "categories": [
+        "Live chat"
+      ],
+      "by_country": {
+        "AUSTRIA": 1
+      }
+    },
+    "NVD3": {
+      "pages": 1,
+      "categories": [
+        "JavaScript graphics"
+      ],
+      "by_country": {
+        "CROATIA": 1
+      }
+    },
+    "Oracle HTTP Server": {
+      "pages": 1,
+      "categories": [
+        "Web servers"
+      ],
+      "by_country": {
+        "IRELAND": 1
+      }
+    },
+    "PayPal": {
+      "pages": 1,
+      "categories": [
+        "Payment processors"
+      ],
+      "by_country": {
+        "IRELAND": 1
+      }
+    },
+    "SUSE": {
+      "pages": 1,
+      "categories": [
+        "Operating systems"
+      ],
+      "by_country": {
+        "HUNGARY": 1
+      }
+    },
+    "Webflow": {
+      "pages": 1,
+      "categories": [
+        "Page builders"
+      ],
+      "by_country": {
+        "CZECHIA": 1
+      }
+    },
+    "Zipkin": {
+      "pages": 1,
+      "categories": [
+        "Analytics"
+      ],
+      "by_country": {
+        "DENMARK": 1
+      }
+    },
+    "basket.js": {
+      "pages": 1,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "GERMANY": 1
+      }
+    }
+  },
+  "by_category": {
+    "JavaScript libraries": {
+      "pages": 7014,
+      "technologies": [
+        "Bootstrap Table",
+        "DataTables",
+        "Dojo",
+        "FancyBox",
+        "Flickity",
+        "Hammer.js",
+        "Lightbox",
+        "Lodash",
+        "Marked",
+        "Modernizr",
+        "Moment Timezone",
+        "Moment.js",
+        "Polyfill",
+        "Select2",
+        "Slick",
+        "SweetAlert",
+        "SweetAlert2",
+        "Twitter typeahead.js",
+        "Underscore.js",
+        "basket.js",
+        "decimal.js",
+        "jQuery",
+        "jQuery Migrate",
+        "jQuery UI",
+        "prettyPhoto",
+        "script.aculo.us"
+      ]
+    },
+    "Web servers": {
+      "pages": 3480,
+      "technologies": [
+        "Apache",
+        "Apache Tomcat",
+        "Caddy",
+        "CherryPy",
+        "Express",
+        "Flask",
+        "IIS",
+        "JBoss Application Server",
+        "Kestrel",
+        "LiteSpeed",
+        "Lotus Domino",
+        "Microsoft HTTPAPI",
+        "Next.js",
+        "Nginx",
+        "OpenResty",
+        "Oracle HTTP Server",
+        "Phusion Passenger",
+        "Vercel",
+        "Zend",
+        "gunicorn"
+      ]
+    },
+    "Programming languages": {
+      "pages": 2735,
+      "technologies": [
+        "Go",
+        "Java",
+        "Lua",
+        "Node.js",
+        "PHP",
+        "Perl",
+        "Python",
+        "Ruby"
+      ]
+    },
+    "Font scripts": {
+      "pages": 2586,
+      "technologies": [
+        "Font Awesome",
+        "Glyphicons",
+        "Google Font API",
+        "Ionicons"
+      ]
+    },
+    "CMS": {
+      "pages": 2335,
+      "technologies": [
+        "Adobe Experience Manager",
+        "Ckan",
+        "Concrete5",
+        "Contentful",
+        "DNN",
+        "Drupal",
+        "ImpressPages",
+        "Joomla",
+        "Liferay",
+        "Microsoft SharePoint",
+        "Odoo",
+        "Orchard CMS",
+        "Pagekit",
+        "Plone",
+        "Sitefinity",
+        "TYPO3 CMS",
+        "Umbraco",
+        "WordPress"
+      ]
+    },
+    "UI frameworks": {
+      "pages": 2004,
+      "technologies": [
+        "Angular Material",
+        "Bootstrap",
+        "Bulma",
+        "Material Design Lite",
+        "Materialize CSS",
+        "Semantic-ui",
+        "UIKit",
+        "ZURB Foundation",
+        "animate.css"
+      ]
+    },
+    "CDN": {
+      "pages": 1645,
+      "technologies": [
+        "Akamai",
+        "Amazon Cloudfront",
+        "Cloudflare",
+        "Fastly",
+        "Google Cloud",
+        "Netlify",
+        "Sucuri",
+        "jsDelivr"
+      ]
+    },
+    "Databases": {
+      "pages": 1283,
+      "technologies": [
+        "Lucene",
+        "MariaDB",
+        "MySQL",
+        "PostgreSQL",
+        "Redis",
+        "Solr"
+      ]
+    },
+    "Blogs": {
+      "pages": 1199,
+      "technologies": [
+        "WordPress"
+      ]
+    },
+    "Operating systems": {
+      "pages": 1190,
+      "technologies": [
+        "CentOS",
+        "Debian",
+        "FreeBSD",
+        "Red Hat",
+        "SUSE",
+        "UNIX",
+        "Ubuntu",
+        "Windows Server"
+      ]
+    },
+    "Reverse proxies": {
+      "pages": 1157,
+      "technologies": [
+        "Envoy",
+        "F5 BigIP",
+        "IBM DataPower",
+        "Nginx"
+      ]
+    },
+    "Web frameworks": {
+      "pages": 885,
+      "technologies": [
+        "Blazor",
+        "CherryPy",
+        "Django",
+        "Express",
+        "Flask",
+        "Google Web Toolkit",
+        "Java Servlet",
+        "JavaServer Pages",
+        "Microsoft ASP.NET",
+        "Nette Framework",
+        "Next.js",
+        "Ruby on Rails",
+        "Spring",
+        "Vaadin",
+        "Yii",
+        "ZK"
+      ]
+    },
+    "Caching": {
+      "pages": 597,
+      "technologies": [
+        "Google PageSpeed",
+        "Litespeed Cache",
+        "RackCache",
+        "Redis Object Cache",
+        "Varnish",
+        "W3 Total Cache",
+        "WP Rocket",
+        "WordPress Super Cache"
+      ]
+    },
+    "JavaScript frameworks": {
+      "pages": 589,
+      "technologies": [
+        "Alpine.js",
+        "Angular",
+        "AngularJS",
+        "Backbone.js",
+        "Element UI",
+        "ExtJS",
+        "GSAP",
+        "Gatsby",
+        "Handlebars",
+        "MooTools",
+        "Mustache",
+        "Nuxt.js",
+        "Prototype",
+        "React",
+        "RequireJS",
+        "Riot",
+        "Socket.io",
+        "Stimulus",
+        "Vue.js"
+      ]
+    },
+    "Widgets": {
+      "pages": 580,
+      "technologies": [
+        "AddThis",
+        "AddToAny",
+        "Facebook",
+        "FlexSlider",
+        "Google Plus",
+        "Linkedin",
+        "OWL Carousel",
+        "ShareThis",
+        "Twitter"
+      ]
+    },
+    "Miscellaneous": {
+      "pages": 535,
+      "technologies": [
+        "Amazon S3",
+        "Clipboard.js",
+        "Gravatar",
+        "Gravity Forms",
+        "Highlight.js",
+        "K2",
+        "Less",
+        "Oracle Dynamic Monitoring Service",
+        "Prism",
+        "Revslider",
+        "SWFObject",
+        "Swiper Slider",
+        "Weglot",
+        "webpack"
+      ]
+    },
+    "SEO": {
+      "pages": 488,
+      "technologies": [
+        "All in One SEO Pack",
+        "Yoast SEO"
+      ]
+    },
+    "Security": {
+      "pages": 425,
+      "technologies": [
+        "Imperva",
+        "reCAPTCHA"
+      ]
+    },
+    "Page builders": {
+      "pages": 348,
+      "technologies": [
+        "Elementor",
+        "Webflow"
+      ]
+    },
+    "Tag managers": {
+      "pages": 247,
+      "technologies": [
+        "Google Tag Manager"
+      ]
+    },
+    "Maps": {
+      "pages": 225,
+      "technologies": [
+        "ArcGIS API for JavaScript",
+        "Google Maps",
+        "Leaflet",
+        "OpenLayers"
+      ]
+    },
+    "Cookie compliance": {
+      "pages": 195,
+      "technologies": [
+        "CookieHub",
+        "Cookiebot",
+        "OneTrust",
+        "Osano"
+      ]
+    },
+    "PaaS": {
+      "pages": 180,
+      "technologies": [
+        "Amazon Web Services",
+        "GitHub Pages",
+        "Kinsta",
+        "Lagoon",
+        "Netlify",
+        "Pantheon",
+        "Platform.sh",
+        "Seravo",
+        "SiteGround"
+      ]
+    },
+    "JavaScript graphics": {
+      "pages": 113,
+      "technologies": [
+        "Chart.js",
+        "D3",
+        "Highcharts",
+        "MathJax",
+        "NVD3",
+        "Paths.js",
+        "amCharts",
+        "jqPlot",
+        "particles.js",
+        "xCharts"
+      ]
+    },
+    "Ecommerce": {
+      "pages": 108,
+      "technologies": [
+        "Cart Functionality",
+        "Odoo",
+        "Shoptet",
+        "WooCommerce"
+      ]
+    },
+    "Video players": {
+      "pages": 97,
+      "technologies": [
+        "YouTube"
+      ]
+    },
+    "Web server extensions": {
+      "pages": 64,
+      "technologies": [
+        "Google PageSpeed",
+        "OpenSSL",
+        "mod_jk",
+        "mod_perl",
+        "mod_wsgi"
+      ]
+    },
+    "Marketing automation": {
+      "pages": 49,
+      "technologies": [
+        "MailChimp",
+        "Mautic"
+      ]
+    },
+    "Analytics": {
+      "pages": 36,
+      "technologies": [
+        "BugSnag",
+        "Google Analytics",
+        "Open Web Analytics",
+        "Snoobi",
+        "Statcounter",
+        "TrackJs",
+        "Zipkin"
+      ]
+    },
+    "Rich text editors": {
+      "pages": 29,
+      "technologies": [
+        "TinyMCE"
+      ]
+    },
+    "Accessibility": {
+      "pages": 25,
+      "technologies": [
+        "UserWay"
+      ]
+    },
+    "LMS": {
+      "pages": 19,
+      "technologies": [
+        "Moodle"
+      ]
+    },
+    "Search engines": {
+      "pages": 14,
+      "technologies": [
+        "Awesomplete"
+      ]
+    },
+    "Hosting panels": {
+      "pages": 11,
+      "technologies": [
+        "Plesk"
+      ]
+    },
+    "Static site generator": {
+      "pages": 11,
+      "technologies": [
+        "Gatsby",
+        "Jekyll"
+      ]
+    },
+    "Mobile frameworks": {
+      "pages": 10,
+      "technologies": [
+        "jQuery Mobile"
+      ]
+    },
+    "Editors": {
+      "pages": 9,
+      "technologies": [
+        "FrontPage",
+        "Microsoft Word"
+      ]
+    },
+    "DMS": {
+      "pages": 8,
+      "technologies": [
+        "Open Journal Systems"
+      ]
+    },
+    "Advertising": {
+      "pages": 6,
+      "technologies": [
+        "Google AdSense"
+      ]
+    },
+    "Social login": {
+      "pages": 5,
+      "technologies": [
+        "Google Sign-in"
+      ]
+    },
+    "Issue trackers": {
+      "pages": 4,
+      "technologies": [
+        "Atlassian Jira"
+      ]
+    },
+    "Photo galleries": {
+      "pages": 3,
+      "technologies": [
+        "NextGEN Gallery"
+      ]
+    },
+    "Wikis": {
+      "pages": 3,
+      "technologies": [
+        "MediaWiki"
+      ]
+    },
+    "Documentation": {
+      "pages": 2,
+      "technologies": [
+        "MkDocs"
+      ]
+    },
+    "Live chat": {
+      "pages": 1,
+      "technologies": [
+        "Jitsi"
+      ]
+    },
+    "Payment processors": {
+      "pages": 1,
+      "technologies": [
+        "PayPal"
+      ]
+    }
+  }
 }
