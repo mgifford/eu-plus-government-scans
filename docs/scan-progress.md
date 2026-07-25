@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-07-25 02:14 UTC_
+_Generated: 2026-07-25 03:23 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -14,8 +14,8 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
 | **Combined Reachability** | **72,895 confirmed reachable** | 87,696 | **<span role="img" aria-label="83.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:100px;"></span></span><span class="sm-bar__label">83.1%</span></span>** | — |
-| Social Media | 80,415 scanned (72,884 reachable) | 87,696 | <span role="img" aria-label="91.7% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:110px;"></span></span><span class="sm-bar__label">91.7%</span></span> | 2.5 days |
-| Technology | 6,400 scanned | 87,696 | <span role="img" aria-label="7.3% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:9px;"></span></span><span class="sm-bar__label">7.3%</span></span> | 2.4 days |
+| Social Media | 80,415 scanned (72,884 reachable) | 87,696 | <span role="img" aria-label="91.7% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:110px;"></span></span><span class="sm-bar__label">91.7%</span></span> | 2.6 days |
+| Technology | 6,799 scanned | 87,696 | <span role="img" aria-label="7.8% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:9px;"></span></span><span class="sm-bar__label">7.8%</span></span> | 2.3 days |
 | Lighthouse | 0 scanned | 87,696 | (manual scan) | — |
 | Accessibility Statements | 22,026 scanned | 87,696 | <span role="img" aria-label="25.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:30px;"></span></span><span class="sm-bar__label">25.1%</span></span> | 2.4 days |
 
@@ -98,6 +98,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Lithuania | 122 | 2026-07-24 |
 | Luxembourg | 310 | 2026-07-24 |
 | Malta | 393 | 2026-07-24 |
+| Netherlands | 399 | 2026-07-25 |
 
 ## Lighthouse Scan
 
