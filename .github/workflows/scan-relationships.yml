@@ -20,7 +20,7 @@ on:
       max_runtime:
         description: 'Maximum runtime in minutes (0 = no limit)'
         required: false
-        default: '100'
+        default: '50'
         type: string
       skip_recently_scanned_days:
         description: 'Skip URLs scanned within N days (default: 28)'
@@ -83,13 +83,13 @@ jobs:
             python -m src.cli.scan_relationships \
               --country ${{ inputs.country }} \
               --rate-limit ${{ inputs.rate_limit || '2.0' }} \
-              --max-runtime ${{ inputs.max_runtime || '100' }} \
+              --max-runtime ${{ inputs.max_runtime || '50' }} \
               --skip-recently-scanned-days ${{ inputs.skip_recently_scanned_days || '28' }}
           else
             python -m src.cli.scan_relationships \
               --all \
               --rate-limit ${{ inputs.rate_limit || '2.0' }} \
-              --max-runtime ${{ inputs.max_runtime || '100' }} \
+              --max-runtime ${{ inputs.max_runtime || '50' }} \
               --skip-recently-scanned-days ${{ inputs.skip_recently_scanned_days || '28' }}
           fi
 
@@ -128,7 +128,7 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "data: Progressive relationship scan update [skip ci]"
-            git pull --rebase
+            git pull --rebase -X theirs
             git push
           fi
 
