@@ -5,12 +5,12 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-07-25 22:34 UTC — last scan: 2026-07-25_
+_Stats as of 2026-07-25 22:35 UTC — last scan: 2026-07-25_
 
-**27** scan batches run
+**29** scan batches run
 
-**8,141** of **87,696** available pages scanned (**9.3%** coverage)
-**7,049** pages with technology detections (**86.6%** of scanned)
+**8,422** of **87,696** available pages scanned (**9.6%** coverage)
+**7,049** pages with technology detections (**83.7%** of scanned)
 **263** unique technologies identified
 
 ---
@@ -46,6 +46,8 @@ _Stats as of 2026-07-25 22:34 UTC — last scan: 2026-07-25_
 | Cyprus | 29 | 29 | 29 | 2026-07-25 |
 | Romania | 75 | 38 | 807 | 2026-07-25 |
 | Slovakia | 442 | 0 | 442 | 2026-07-25 |
+| Slovenia | 214 | 0 | 214 | 2026-07-25 |
+| Spain | 67 | 0 | 6,091 | 2026-07-25 |
 
 > Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and metric from [Download machine-readable technology data (JSON)](technology-data.json).
 
