@@ -5,14 +5,14 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-07-25 20:38 UTC — last scan: 2026-07-25_
+_Stats as of 2026-07-25 21:40 UTC — last scan: 2026-07-25_
 
-**37** scan batches run
+**39** scan batches run
 
-**23,524** of **87,696** available pages scanned (**26.8%** coverage)
-**21,793** of **23,524** scanned pages were reachable (**92.6%**)
-**10,419** of **21,793** reachable pages have an accessibility statement (**47.8%**)
-**9,485** pages have the statement link in the footer (**91.0%** of pages with a statement)
+**24,352** of **87,696** available pages scanned (**27.8%** coverage)
+**22,523** of **24,352** scanned pages were reachable (**92.5%**)
+**10,730** of **22,523** reachable pages have an accessibility statement (**47.6%**)
+**9,704** pages have the statement link in the footer (**90.4%** of pages with a statement)
 
 📥 Machine-readable results are available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
 
@@ -37,11 +37,11 @@ Each country entry in the JSON file includes page-level evidence for pages with 
 | Finland | 199 | 199 | 188 | 134 | 127 | 71.3% | Jul 2026 |
 | France | 991 | 10,009 | 878 | 242 | 237 | 27.6% | Jul 2026 |
 | Germany | 2,529 | 6,599 | 2,453 | 1,552 | 1,345 | 63.3% | Jul 2026 |
-| Greece | 1,132 | 1,752 | 1,046 | 209 | 140 | 20.0% | Jul 2026 |
+| Greece | 1,752 | 1,752 | 1,617 | 412 | 256 | 25.5% | Jul 2026 |
 | Hungary | 392 | 392 | 296 | 54 | 46 | 18.2% | Jul 2026 |
 | Iceland | 145 | 145 | 143 | 12 | 5 | 8.4% | Jul 2026 |
 | Ireland | 536 | 536 | 496 | 216 | 203 | 43.5% | Jul 2026 |
-| Italy | 308 | 5,351 | 293 | 237 | 237 | 80.9% | Jul 2026 |
+| Italy | 517 | 5,351 | 453 | 346 | 341 | 76.4% | Jul 2026 |
 | Latvia | 803 | 803 | 761 | 489 | 448 | 64.3% | Jul 2026 |
 | Lithuania | 122 | 122 | 111 | 1 | 0 | 0.9% | Jul 2026 |
 | Luxembourg | 212 | 573 | 138 | 90 | 86 | 65.2% | Jul 2026 |
@@ -58,7 +58,7 @@ Each country entry in the JSON file includes page-level evidence for pages with 
 | Sweden | 1,218 | 1,702 | 1,150 | 568 | 514 | 49.4% | Jul 2026 |
 | Switzerland | 1,743 | 2,123 | 1,696 | 929 | 928 | 54.8% | Jul 2026 |
 | United Kingdom | 1,712 | 19,511 | 1,634 | 967 | 919 | 59.2% | Jul 2026 |
-| **Total** | **23,526** | **87,696** | **21,795** | **10,421** | **9,487** | **47.8%** | — |
+| **Total** | **24,355** | **87,696** | **22,526** | **10,733** | **9,707** | **47.6%** | — |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
