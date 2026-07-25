@@ -80,14 +80,12 @@ class CanonicalDomainBuilder:
         new_precedence = self._get_precedence(basis)
 
         if new_precedence >= current_precedence and basis != "unknown":
+            if basis not in record.classification_basis:
+                record.classification_basis.append(basis)
             if government_level and government_level != "unknown":
                 record.government_level = government_level  # type: ignore
-                if basis not in record.classification_basis:
-                    record.classification_basis.append(basis)
             if organization_type and organization_type != "unknown":
                 record.organization_type = organization_type  # type: ignore
-                if basis not in record.classification_basis:
-                    record.classification_basis.append(basis)
             if organization_name:
                 record.organization_name = organization_name
             if classification_status:
