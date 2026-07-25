@@ -1,7 +1,7 @@
 {
   "country_code": "PORTUGAL",
-  "total_relationships": 12381,
-  "total_source_domains": 380,
+  "total_relationships": 12415,
+  "total_source_domains": 381,
   "top_source_domains": [
     {
       "domain": "azores.gov.pt",
@@ -211,23 +211,23 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 1252
+      "count": 1255
     },
     {
       "domain": "facebook.com",
-      "count": 1088
+      "count": 1090
     },
     {
       "domain": "youtube.com",
-      "count": 859
+      "count": 861
     },
     {
       "domain": "instagram.com",
-      "count": 858
+      "count": 860
     },
     {
       "domain": "googletagmanager.com",
-      "count": 794
+      "count": 799
     },
     {
       "domain": "google.com",
@@ -243,7 +243,7 @@
     },
     {
       "domain": "livroreclamacoes.pt",
-      "count": 423
+      "count": 425
     },
     {
       "domain": "justica.gov.pt",
@@ -251,7 +251,7 @@
     },
     {
       "domain": "twitter.com",
-      "count": 399
+      "count": 401
     },
     {
       "domain": "jsdelivr.net",
@@ -271,7 +271,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 284
+      "count": 286
     },
     {
       "domain": "wiremaze.com",
@@ -295,7 +295,7 @@
     },
     {
       "domain": "w3.org",
-      "count": 173
+      "count": 177
     },
     {
       "domain": "unpkg.com",
@@ -387,7 +387,7 @@
     },
     {
       "domain": "portugal2020.pt",
-      "count": 110
+      "count": 112
     },
     {
       "domain": "addthis.com",
@@ -402,17 +402,17 @@
       "count": 104
     },
     {
-      "domain": "cm-pacosdeferreira.pt",
-      "count": 102
+      "domain": "mai.gov.pt",
+      "count": 103
     }
   ],
   "relationship_types": {
-    "editorial_link": 6759,
-    "script_dependency": 2030,
+    "editorial_link": 6785,
+    "script_dependency": 2032,
     "font_or_preload_dependency": 382,
-    "stylesheet_dependency": 1461,
-    "image_or_media_dependency": 1049,
-    "form_destination": 700
+    "stylesheet_dependency": 1463,
+    "image_or_media_dependency": 1051,
+    "form_destination": 702
   },
-  "generated_at": "2026-07-23T20:09:33.520270+00:00"
+  "generated_at": "2026-07-25T02:16:53.267094+00:00"
 }
