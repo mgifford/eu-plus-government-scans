@@ -87,6 +87,10 @@ def test_dataset_generation_pipeline(monkeypatch):
         with (is_dir / "nodes.json").open("r") as f:
             nodes = json.load(f)
             assert any(n["domain"] == "reykjavik.is" for n in nodes)
+
+            reykjavik = next(n for n in nodes if n["domain"] == "reykjavik.is")
+            assert reykjavik["classification_status"] == "confirmed"
+            assert "curated_source" in reykjavik["classification_basis"]
             
         with (is_dir / "editorial-edges.json").open("r") as f:
             edges = json.load(f)
