@@ -1,152 +1,109 @@
-"""Service for aggregating relationship JSONL files into canonical datasets."""
+"""Aggregates relationships into graph metrics and structured outputs."""
 
 from __future__ import annotations
 
 import json
 from collections import defaultdict
 from pathlib import Path
-from typing import Dict, Any, List
+from typing import Dict, List, Set, Tuple
 
 from src.models.domain_model import (
     CanonicalDomain,
-    SourceEvidence,
     RelationshipEdgeMetrics,
-    GlobalSummary,
-    GovernmentLevel,
-    OrganizationType,
-    ClassificationStatus,
-    ClassificationBasis,
 )
-from src.services.canonical_domain_builder import CanonicalDomainBuilder
 
 
 class RelationshipAggregator:
-    """Aggregates relationship observations from JSONL files into canonical datasets."""
+    """Computes descriptive network metrics from observed relationships."""
 
-    def __init__(self, domains_dir: Path = Path("src/domains")):
-        self.domains_dir = domains_dir
-        self.domain_builder = CanonicalDomainBuilder(domains_dir)
+    def __init__(self, canonical_domains: Dict[str, CanonicalDomain]):
+        self.domains = canonical_domains
+        # (source, target, relationship_type) -> RelationshipEdgeMetrics
+        self.edges: Dict[Tuple[str, str, str], RelationshipEdgeMetrics] = {}
 
-    def load_relationship_jsonl(self, jsonl_path: Path) -> List[Dict[str, Any]]:
-        """Load relationship observations from a JSONL file."""
-        observations = []
-        try:
-            with jsonl_path.open("r", encoding="utf-8") as f:
-                for line_num, line in enumerate(f, 1):
-                    line = line.strip()
-                    if not line:
+    def ingest_jsonl_relationships(self, jsonl_dir: Path) -> None:
+        """Parse all relationship output files and merge them."""
+        for jsonl_file in jsonl_dir.rglob("*.jsonl"):
+            with jsonl_file.open("r", encoding="utf-8") as f:
+                for line in f:
+                    if not line.strip():
                         continue
                     try:
-                        observation = json.loads(line)
-                        observations.append(observation)
-                    except json.JSONDecodeError as e:
-                        print(
-                            f"Warning: Skipping invalid JSON on line {line_num} "
-                            f"in {jsonl_path}: {e}"
-                        )
-        except Exception as e:
-            print(f"Warning: Failed to load {jsonl_path}: {e}")
-        return observations
+                        data = json.loads(line)
+                        source_domain = data.get("source_domain")
+                        target_domain = data.get("target_domain")
+                        rel_type = data.get("relationship_type")
+                        if not source_domain or not target_domain or not rel_type:
+                            continue
 
-    def aggregate_relationships(
-        self, work_relationships_dir: Path
-    ) -> Dict[str, Any]:
-        """
-        Aggregate relationships from all scan batches and build canonical domains.
+                        key = (source_domain, target_domain, rel_type)
+                        
+                        # We merge observations if they span multiple scans
+                        if key not in self.edges:
+                            self.edges[key] = RelationshipEdgeMetrics(
+                                source=source_domain,
+                                target=target_domain,
+                                relationship_type=rel_type,
+                                source_pages=data.get("source_pages", 0),
+                                observations=data.get("observations", 0),
+                                page_regions={},
+                                first_seen=data.get("first_seen", ""),
+                                last_seen=data.get("last_seen", ""),
+                            )
+                            # Handle page regions from array format (from previous scanner)
+                            regions_list = data.get("page_regions", [])
+                            if isinstance(regions_list, list):
+                                for r in regions_list:
+                                    self.edges[key].page_regions[r] = data.get("observations", 1) // max(1, len(regions_list))
+                            
+                        else:
+                            edge = self.edges[key]
+                            edge.source_pages += data.get("source_pages", 0)
+                            edge.observations += data.get("observations", 0)
+                            
+                            # Merge dates
+                            if data.get("first_seen") < edge.first_seen:
+                                edge.first_seen = data.get("first_seen")
+                            if data.get("last_seen") > edge.last_seen:
+                                edge.last_seen = data.get("last_seen")
+                                
+                            regions_list = data.get("page_regions", [])
+                            if isinstance(regions_list, list):
+                                share = data.get("observations", 1) // max(1, len(regions_list))
+                                for r in regions_list:
+                                    edge.page_regions[r] = edge.page_regions.get(r, 0) + share
 
-        Args:
-            work_relationships_dir: Directory containing relationship JSONL files
-                                    (data/work/relationships/<scan-id>/*.jsonl)
+                    except json.JSONDecodeError:
+                        continue
 
-        Returns:
-            Dict with canonical_domains and relationship_metrics
-        """
-        if not work_relationships_dir.exists():
-            print(f"Warning: {work_relationships_dir} does not exist")
-            return {"canonical_domains": {}, "relationship_metrics": []}
+    def compute_graph_metrics(self) -> None:
+        """Calculate in/out degrees for canonical domains based on editorial links."""
+        
+        # Track unique sources for in-degree unique orgs
+        # domain -> set of unique source domains
+        in_sources: Dict[str, Set[str]] = defaultdict(set)
+        
+        for (source, target, rel_type), edge in self.edges.items():
+            # Apply metrics mainly to editorial links for gov structure,
+            # though we could count others if wanted. The requirements imply
+            # not to call them confidence scores, but graph metrics are fine.
+            # Let's count all relationships for degree, but maybe distinguish.
+            
+            s_domain = self.domains.get(source)
+            t_domain = self.domains.get(target)
 
-        all_observations = []
-        for jsonl_file in work_relationships_dir.glob("*.jsonl"):
-            all_observations.extend(self.load_relationship_jsonl(jsonl_file))
+            if s_domain:
+                s_domain.out_degree += 1
+                s_domain.weighted_out_degree += edge.observations
 
-        if not all_observations:
-            print("Warning: No relationship observations found")
-            return {"canonical_domains": {}, "relationship_metrics": []}
+            if t_domain:
+                t_domain.in_degree += 1
+                t_domain.weighted_in_degree += edge.observations
+                t_domain.unique_source_pages += edge.source_pages
+                
+                in_sources[target].add(source)
 
-        domain_builder = CanonicalDomainBuilder(self.domains_dir)
-        canonical_domains = self._build_canonical_domains(
-            all_observations, domain_builder
-        )
-
-        relationship_metrics = self._build_relationship_metrics(all_observations)
-
-        return {
-            "canonical_domains": canonical_domains,
-            "relationship_metrics": relationship_metrics,
-        }
-
-    def _build_canonical_domains(
-        self,
-        observations: List[Dict[str, Any]],
-        domain_builder: CanonicalDomainBuilder,
-    ) -> Dict[str, CanonicalDomain]:
-        """Build canonical domain records from relationship observations."""
-        canonical_domains: Dict[str, CanonicalDomain] = {}
-
-        for obs in observations:
-            source_domain = obs.get("source_domain")
-            target_domain = obs.get("target_domain")
-            target_category = obs.get("target_category", "unknown_external")
-
-            for domain in [source_domain, target_domain]:
-                if domain not in canonical_domains:
-                    canonical_domain = domain_builder.build_canonical_domain(
-                        domain, target_category
-                    )
-                    if canonical_domain:
-                        canonical_domains[domain] = canonical_domain
-
-        return canonical_domains
-
-    def _build_relationship_metrics(
-        self, observations: List[Dict[str, Any]]
-    ) -> List[RelationshipEdgeMetrics]:
-        """Build relationship edge metrics from aggregated observations."""
-        edge_metrics: Dict[str, RelationshipEdgeMetrics] = {}
-
-        for obs in observations:
-            key = (
-                obs.get("source_domain"),
-                obs.get("target_domain"),
-                obs.get("relationship_type"),
-            )
-
-            if key not in edge_metrics:
-                edge_metrics[key] = RelationshipEdgeMetrics(
-                    source=obs.get("source_domain"),
-                    target=obs.get("target_domain"),
-                    relationship_type=obs.get("relationship_type"),
-                    source_pages=int(obs.get("source_pages", 0)),
-                    observations=int(obs.get("observations", 0)),
-                    page_regions=self._parse_page_regions(obs.get("page_regions", [])),
-                    first_seen=obs.get("first_seen", ""),
-                    last_seen=obs.get("last_seen", ""),
-                )
-            else:
-                edge = edge_metrics[key]
-                edge.source_pages += int(obs.get("source_pages", 0))
-                edge.observations += int(obs.get("observations", 0))
-                edge.page_regions.update(self._parse_page_regions(obs.get("page_regions", [])))
-                if obs.get("first_seen", "") < edge.first_seen:
-                    edge.first_seen = obs.get("first_seen", "")
-                if obs.get("last_seen", "") > edge.last_seen:
-                    edge.last_seen = obs.get("last_seen", "")
-
-        return list(edge_metrics.values())
-
-    def _parse_page_regions(self, regions: List[str]) -> Dict[str, int]:
-        """Parse page regions into a frequency dictionary."""
-        region_counts: Dict[str, int] = defaultdict(int)
-        for region in regions:
-            region_counts[region] += 1
-        return dict(region_counts)
+        for target, sources_set in in_sources.items():
+            t_domain = self.domains.get(target)
+            if t_domain:
+                t_domain.unique_source_organizations = len(sources_set)

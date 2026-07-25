@@ -1,312 +1,169 @@
-"""Service for building canonical domain records."""
+"""Service for canonicalizing domain metadata based on evidence precedence."""
 
 from __future__ import annotations
 
-import tldextract
+import json
 from pathlib import Path
-from typing import Optional, Dict, Any
-from datetime import datetime, timezone
+from typing import Dict, List, Optional
 
 from src.models.domain_model import (
     CanonicalDomain,
-    SourceEvidence,
+    ClassificationBasis,
+    ClassificationStatus,
     GovernmentLevel,
     OrganizationType,
-    ClassificationStatus,
-    ClassificationBasis,
+    SourceEvidence,
 )
+from src.services.domain_normalizer import normalize_domain
+from src.services.software_heritage_fetcher import SoftwareHeritageFetcher
 
 
 class CanonicalDomainBuilder:
-    """Builds canonical domain records from various sources."""
+    """Builds and resolves canonical domain records from diverse sources."""
 
-    def __init__(self, domains_dir: Optional[Path] = None):
-        self.domains_dir = domains_dir
-        self.tld_extract = tldextract.TLDExtract()
+    # Higher integer = higher precedence for classification.
+    # We map ClassificationBasis to precedence.
+    PRECEDENCE_MAP: Dict[ClassificationBasis, int] = {
+        "authoritative_registry": 70,
+        "curated_source": 60,
+        "institutional_source": 50,
+        "structured_source": 40,
+        "software_heritage": 30,
+        "domain_pattern": 20,
+        "network_signal": 10,
+        "unknown": 0,
+    }
 
-    def build_canonical_domain(
+    def __init__(self):
+        self.domains: Dict[str, CanonicalDomain] = {}
+
+    def _get_precedence(self, basis: ClassificationBasis | List[str]) -> int:
+        if isinstance(basis, list):
+            if not basis:
+                return 0
+            return max(self.PRECEDENCE_MAP.get(b, 0) for b in basis)
+        return self.PRECEDENCE_MAP.get(basis, 0)
+
+    def get_or_create(self, domain: str) -> CanonicalDomain:
+        normalized = normalize_domain(domain).canonical_hostname
+        if not normalized:
+            normalized = domain.lower().strip()
+
+        if normalized not in self.domains:
+            self.domains[normalized] = CanonicalDomain(
+                id=normalized.replace(".", "-"),
+                domain=normalized,
+            )
+        return self.domains[normalized]
+
+    def add_evidence(
         self,
         domain: str,
-        target_category: str = "unknown_external",
-        curation_source_url: Optional[str] = None,
-        institutional_source_url: Optional[str] = None,
-        structured_source_url: Optional[str] = None,
-        country_code: Optional[str] = None,
-        organization_name: Optional[str] = None,
+        evidence: SourceEvidence,
+        basis: ClassificationBasis,
+        country: Optional[str] = None,
         government_level: Optional[str] = None,
         organization_type: Optional[str] = None,
-        classification_status: str = "unknown",
-        confidence_score: Optional[int] = None,
-        from_network: bool = False,
-    ) -> Optional[CanonicalDomain]:
-        """
-        Build a canonical domain record following precedence rules:
+        organization_name: Optional[str] = None,
+        classification_status: Optional[str] = None,
+    ) -> None:
+        """Add evidence to a domain, updating classifications if precedence is higher."""
+        record = self.get_or_create(domain)
+        record.sources.append(evidence)
 
-        1. Authoritative government registry
-        2. Existing curated source
-        3. Official institutional source
-        4. High-quality structured source (Wikidata, etc.)
-        5. Software Heritage classification with preserved confidence
-        6. Domain-pattern evidence
-        7. Network structure only as a weak discovery signal
-        """
-        # Normalize domain
-        domain = domain.lower().strip()
+        # Country assignment
+        if country and not record.country:
+            record.country = country.upper()
 
-        # Determine registrable domain
-        extracted = self.tld_extract(domain)
-        if extracted.registered_domain:
-            registrable_domain = extracted.registered_domain
-        else:
-            registrable_domain = domain
+        # Classification precedence check
+        current_precedence = self._get_precedence(record.classification_basis)
+        new_precedence = self._get_precedence(basis)
 
-        # Determine country
-        country = self._determine_country(
-            registrable_domain, country_code, target_category
-        )
+        if new_precedence >= current_precedence and basis != "unknown":
+            if government_level and government_level != "unknown":
+                record.government_level = government_level  # type: ignore
+                if basis not in record.classification_basis:
+                    record.classification_basis.append(basis)
+            if organization_type and organization_type != "unknown":
+                record.organization_type = organization_type  # type: ignore
+                if basis not in record.classification_basis:
+                    record.classification_basis.append(basis)
+            if organization_name:
+                record.organization_name = organization_name
+            if classification_status:
+                record.classification_status = classification_status  # type: ignore
 
-        # Create unique ID
-        id = f"{country or 'unknown'}-{registrable_domain.replace('.', '-')}"
+    def ingest_toon_directory(self, toon_dir: Path) -> None:
+        """Ingest all curated TOON files as high-precedence evidence."""
+        import datetime
+        now_iso = datetime.datetime.now(datetime.timezone.utc).isoformat()
+        
+        for toon_file in toon_dir.glob("*.toon"):
+            try:
+                with toon_file.open("r", encoding="utf-8") as f:
+                    data = json.load(f)
+            except Exception as e:
+                print(f"Warning: Failed to parse TOON {toon_file}: {e}")
+                continue
+                
+            country_name = data.get("country", "")
+            # Determine ISO code from filename or rely on metadata
+            iso_code = self._country_from_filename(toon_file.name)
 
-        # Build sources list
-        sources = self._build_sources(
-            country or country_code,
-            curation_source_url,
-            institutional_source_url,
-            structured_source_url,
-            target_category,
-            confidence_score,
-            from_network,
-        )
+            for domain_obj in data.get("domains", []):
+                domain = domain_obj.get("canonical_domain")
+                if not domain:
+                    continue
 
-        # Determine government level and organization type based on precedence
-        gov_level, org_type = self._determine_classification(
-            country,
-            government_level,
-            organization_type,
-            target_category,
-            from_network,
-            sources,
-        )
+                evidence = SourceEvidence(
+                    name="existing_country_seed",
+                    source_url=f"local:toon:{toon_file.name}",
+                    retrieved_at=now_iso,
+                )
 
-        # Determine classification status and basis
-        if classification_status == "unknown":
-            classification_status = self._determine_classification_status(sources)
+                self.add_evidence(
+                    domain=domain,
+                    evidence=evidence,
+                    basis="curated_source",
+                    country=iso_code,
+                    classification_status="confirmed",
+                    # TOON files don't strictly enforce level/type yet, but they are confirmed gov domains
+                )
 
-        if classification_status == "unknown":
-            classification_basis = ClassificationBasis.UNKNOWN
-        elif from_network:
-            classification_basis = ClassificationBasis.NETWORK_SIGNAL
-        elif confidence_score is not None and confidence_score >= 7:
-            classification_basis = ClassificationBasis.SOFTWARE_HERITAGE
-        else:
-            classification_basis = ClassificationBasis.DOMAIN_PATTERN
+    def _country_from_filename(self, filename: str) -> str:
+        """Helper to extract country code from our TOON filename patterns."""
+        from src.lib.country_utils import country_filename_to_code
+        try:
+            return country_filename_to_code(filename.replace(".toon", ""))
+        except Exception:
+            return ""
 
-        # Calculate graph metrics
-        in_degree = 0
-        out_degree = 0
-        weighted_in_degree = 0
-        weighted_out_degree = 0
-        unique_source_organizations = 0
-        unique_source_pages = 0
-
-        return CanonicalDomain(
-            id=id,
-            domain=registrable_domain,
-            country=country,
-            organization_name=organization_name,
-            government_level=gov_level,
-            organization_type=org_type,
-            classification_status=classification_status,
-            classification_basis=classification_basis,
-            sources=sources,
-            in_degree=in_degree,
-            out_degree=out_degree,
-            weighted_in_degree=weighted_in_degree,
-            weighted_out_degree=weighted_out_degree,
-            unique_source_organizations=unique_source_organizations,
-            unique_source_pages=unique_source_pages,
-        )
-
-    def _determine_country(
-        self,
-        domain: str,
-        country_code: Optional[str],
-        target_category: str,
-    ) -> Optional[str]:
-        """Determine country from various sources."""
-        if country_code and len(country_code) == 2:
-            return country_code.upper()
-
-        if target_category == "known_government":
-            if ".gov." in domain:
-                if domain.endswith(".gov.uk"):
-                    return "GB"
-                elif domain.endswith(".gov.au"):
-                    return "AU"
-                elif domain.endswith(".gov.fr"):
-                    return "FR"
-                elif domain.endswith(".gov.de"):
-                    return "DE"
-                elif ".gov." in domain:
-                    tld = domain.split(".")[-2]
-                    if len(tld) == 2:
-                        return tld.upper()
-
-        if target_category == "shared_government_service" or domain.endswith(".gouv.fr"):
-            return "FR"
-
-        if target_category == "shared_government_service" and domain.endswith(".gov.sg"):
-            return "SG"
-
-        tld = tldextract.extract(domain).tld
-        if len(tld) == 2:
-            return tld.upper()
-
-        return None
-
-    def _build_sources(
-        self,
-        country_code: Optional[str],
-        curation_source_url: Optional[str],
-        institutional_source_url: Optional[str],
-        structured_source_url: Optional[str],
-        target_category: str,
-        confidence_score: Optional[int],
-        from_network: bool,
-    ) -> list[SourceEvidence]:
-        """Build source evidence list."""
-        sources: list[SourceEvidence] = []
-        retrieved_at = datetime.now(timezone.utc).isoformat()
-
-        if country_code and target_category == "known_government":
-            source = SourceEvidence(
-                name="curated_source",
-                source_url=curation_source_url or "",
-                retrieved_at=retrieved_at,
+    def ingest_software_heritage(self, sh_data: Dict[str, Dict[str, str]]) -> None:
+        """Ingest parsed Software Heritage dataset."""
+        for domain, meta in sh_data.items():
+            evidence = meta.get("evidence")
+            if not isinstance(evidence, SourceEvidence):
+                continue
+            
+            self.add_evidence(
+                domain=domain,
+                evidence=evidence,
+                basis="software_heritage",
+                country=meta.get("country"),
+                government_level=meta.get("government_level"),
+                organization_type=meta.get("organization_type"),
+                classification_status="candidate",
             )
-            sources.append(source)
 
-        if institutional_source_url:
-            source = SourceEvidence(
-                name="institutional_source",
-                source_url=institutional_source_url,
-                retrieved_at=retrieved_at,
-                confidence=confidence_score,
-            )
-            sources.append(source)
-
-        if structured_source_url and (
-            target_category == "shared_government_service"
-            or target_category == "cdn"
-        ):
-            source = SourceEvidence(
-                name="structured_source",
-                source_url=structured_source_url,
-                retrieved_at=retrieved_at,
-            )
-            sources.append(source)
-
-        if from_network:
-            source = SourceEvidence(
-                name="network_signal",
-                source_url="network_observation",
-                retrieved_at=retrieved_at,
-            )
-            sources.append(source)
-
-        if not sources:
-            source = SourceEvidence(
-                name="domain_pattern",
-                source_url="",
-                retrieved_at=retrieved_at,
-            )
-            sources.append(source)
-
-        return sources
-
-    def _determine_classification(
-        self,
-        country: Optional[str],
-        government_level: Optional[str],
-        organization_type: Optional[str],
-        target_category: str,
-        from_network: bool,
-        sources: list[SourceEvidence],
-    ) -> tuple[str, str]:
-        """Determine government level and organization type."""
-        gov_level = GovernmentLevel.UNKNOWN
-        org_type = OrganizationType.UNKNOWN
-
-        if from_network:
-            gov_level = GovernmentLevel.LOCAL
-            org_type = OrganizationType.MUNICIPALITY
-            return gov_level, org_type
-
-        if government_level:
-            if government_level in [e.value for e in GovernmentLevel]:
-                gov_level = GovernmentLevel(government_level)
-
-        if organization_type:
-            if organization_type in [e.value for e in OrganizationType]:
-                org_type = OrganizationType(organization_type)
-
-        if not gov_level or gov_level == GovernmentLevel.UNKNOWN:
-            if country:
-                if country in ["GB", "FR", "DE", "IT", "ES", "NL", "AT", "BE", "CH"]:
-                    gov_level = GovernmentLevel.NATIONAL
-                elif country in ["CA", "AU", "NZ"]:
-                    gov_level = GovernmentLevel.NATIONAL
-                elif country in ["US"]:
-                    gov_level = GovernmentLevel.NATIONAL
-                elif country in ["IE", "PT", "SE", "NO", "DK", "FI"]:
-                    gov_level = GovernmentLevel.NATIONAL
-                else:
-                    gov_level = GovernmentLevel.LOCAL
-            else:
-                gov_level = GovernmentLevel.UNKNOWN
-
-        if not org_type or org_type == OrganizationType.UNKNOWN:
-            if target_category == "known_government":
-                org_type = OrganizationType.EXECUTIVE
-            elif target_category == "cdn":
-                org_type = OrganizationType.SHARED_SERVICE
-            elif target_category == "analytics":
-                org_type = OrganizationType.EXECUTIVE
-            elif target_category == "social_platform":
-                org_type = OrganizationType.EXECUTIVE
-            elif target_category == "identity":
-                org_type = OrganizationType.EXECUTIVE
-            elif target_category == "commercial_service":
-                org_type = OrganizationType.EXECUTIVE
-            elif target_category == "document_host":
-                org_type = OrganizationType.EXECUTIVE
-
-        return gov_level, org_type
-
-    def _determine_classification_status(
-        self, sources: list[SourceEvidence]
-    ) -> str:
-        """Determine classification status based on sources."""
-        has_confirmed_source = any(
-            source.name == "curated_source"
-            or (source.name == "software_heritage" and source.confidence and source.confidence >= 7)
-            for source in sources
-        )
-
-        has_probable_source = any(
-            source.name == "institutional_source"
-            or (source.name == "structured_source" and source.confidence and source.confidence >= 5)
-            for source in sources
-        )
-
-        has_candidate_source = any(source.name == "network_signal" for source in sources)
-
-        if has_confirmed_source:
-            return ClassificationStatus.CONFIRMED
-        elif has_probable_source:
-            return ClassificationStatus.PROBABLE
-        elif has_candidate_source:
-            return ClassificationStatus.CANDIDATE
-        else:
-            return ClassificationStatus.UNKNOWN
+    def fallback_tld_country_assignment(self) -> None:
+        """Fallback for unassigned countries using ccTLDs."""
+        generic_tlds = {"org", "com", "net", "edu", "int", "gov", "mil", "info"}
+        
+        for record in self.domains.values():
+            if not record.country:
+                parts = record.domain.split(".")
+                if len(parts) > 1:
+                    tld = parts[-1].lower()
+                    if tld not in generic_tlds:
+                        # Basic assignment, could be more sophisticated
+                        record.country = tld.upper()
