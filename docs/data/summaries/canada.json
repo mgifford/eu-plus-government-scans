@@ -1,6 +1,6 @@
 {
   "country_code": "CANADA",
-  "total_relationships": 203248,
+  "total_relationships": 203261,
   "total_source_domains": 4475,
   "top_source_domains": [
     {
@@ -65,7 +65,7 @@
     },
     {
       "domain": "giustizia.it",
-      "count": 7345
+      "count": 7368
     },
     {
       "domain": "jcyl.es",
@@ -211,7 +211,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 20704
+      "count": 20707
     },
     {
       "domain": "ethz.ch",
@@ -219,7 +219,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 16194
+      "count": 16197
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -227,11 +227,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 12897
+      "count": 12899
     },
     {
       "domain": "youtube.com",
-      "count": 12431
+      "count": 12434
     },
     {
       "domain": "krakow.pl",
@@ -239,7 +239,7 @@
     },
     {
       "domain": "twitter.com",
-      "count": 10500
+      "count": 10505
     },
     {
       "domain": "niedersachsen.de",
@@ -251,7 +251,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 9068
+      "count": 9070
     },
     {
       "domain": "rlp.de",
@@ -311,7 +311,7 @@
     },
     {
       "domain": "giustizia.it",
-      "count": 3828
+      "count": 3837
     },
     {
       "domain": "admin.ch",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 102704,
-    "script_dependency": 31635,
-    "stylesheet_dependency": 26868,
-    "image_or_media_dependency": 22745,
-    "form_destination": 14614,
+    "editorial_link": 102713,
+    "script_dependency": 31636,
+    "stylesheet_dependency": 26869,
+    "image_or_media_dependency": 22746,
+    "form_destination": 14615,
     "font_or_preload_dependency": 4682
   },
-  "generated_at": "2026-07-26T19:13:00.744759+00:00"
+  "generated_at": "2026-07-26T20:07:51.568577+00:00"
 }
