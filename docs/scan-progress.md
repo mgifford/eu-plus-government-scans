@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-07-26 12:39 UTC_
+_Generated: 2026-07-26 12:42 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -15,7 +15,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 |-----------|--------------|-----------|----------|---------|
 | **Combined Reachability** | **79,722 confirmed reachable** | 87,696 | **<span role="img" aria-label="90.9% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:109px;"></span></span><span class="sm-bar__label">90.9%</span></span>** | — |
 | Social Media | 87,696 scanned (79,711 reachable) | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 3.7 days |
-| Technology | 11,465 scanned | 87,696 | <span role="img" aria-label="13.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:16px;"></span></span><span class="sm-bar__label">13.1%</span></span> | 2.4 days |
+| Technology | 11,966 scanned | 87,696 | <span role="img" aria-label="13.6% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:16px;"></span></span><span class="sm-bar__label">13.6%</span></span> | 2.3 days |
 | Lighthouse | 0 scanned | 87,696 | (manual scan) | — |
 | Accessibility Statements | 26,952 scanned | 87,696 | <span role="img" aria-label="30.7% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:37px;"></span></span><span class="sm-bar__label">30.7%</span></span> | 3.2 days |
 
@@ -84,7 +84,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Canada | 697 | 2026-07-26 |
 | Croatia | 257 | 2026-07-21 |
 | Czechia | 746 | 2026-07-26 |
-| Denmark | 585 | 2026-07-21 |
+| Denmark | 1,086 | 2026-07-26 |
 | Estonia | 393 | 2026-07-22 |
 | Finland | 199 | 2026-07-22 |
 | France | 160 | 2026-07-22 |
