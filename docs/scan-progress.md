@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-07-26 09:06 UTC_
+_Generated: 2026-07-26 10:08 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -17,7 +17,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Social Media | 87,696 scanned (79,711 reachable) | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 3.6 days |
 | Technology | 10,946 scanned | 87,696 | <span role="img" aria-label="12.5% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:15px;"></span></span><span class="sm-bar__label">12.5%</span></span> | 2.4 days |
 | Lighthouse | 0 scanned | 87,696 | (manual scan) | — |
-| Accessibility Statements | 26,672 scanned | 87,696 | <span role="img" aria-label="30.4% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:36px;"></span></span><span class="sm-bar__label">30.4%</span></span> | 3.1 days |
+| Accessibility Statements | 26,952 scanned | 87,696 | <span role="img" aria-label="30.7% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:37px;"></span></span><span class="sm-bar__label">30.7%</span></span> | 3.1 days |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by any scan type. **Avg Age** shows the mean number of days (or hours) since each URL in that scan type was last scanned — lower is fresher.
 
@@ -146,7 +146,7 @@ Checks whether each government page links to an accessibility statement as requi
 | Poland | 1,054 | 963 | 302 | 190 | 31% | Jul 2026 |
 | Portugal | 2,342 | 1,872 | 407 | 357 | 22% | Jul 2026 |
 | Cyprus | 29 | 28 | 1 | 1 | 4% | Jul 2026 |
-| Romania | 217 | 68 | 8 | 2 | 12% | Jul 2026 |
+| Romania | 497 | 202 | 14 | 2 | 7% | Jul 2026 |
 | Slovakia | 442 | 415 | 191 | 172 | 46% | Jul 2026 |
 | Slovenia | 214 | 201 | 109 | 74 | 54% | Jul 2026 |
 | Spain | 423 | 326 | 171 | 153 | 52% | Jul 2026 |
