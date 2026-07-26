@@ -1,6 +1,6 @@
 {
   "country_code": "IRELAND",
-  "total_relationships": 2069,
+  "total_relationships": 2070,
   "total_source_domains": 104,
   "top_source_domains": [
     {
@@ -211,7 +211,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 218
+      "count": 220
     },
     {
       "domain": "instagram.com",
@@ -227,7 +227,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 145
+      "count": 146
     },
     {
       "domain": "hse.ie",
@@ -295,7 +295,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 52
+      "count": 53
     },
     {
       "domain": "jquery.com",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 1001,
+    "editorial_link": 1002,
     "script_dependency": 411,
     "stylesheet_dependency": 292,
     "font_or_preload_dependency": 51,
     "image_or_media_dependency": 185,
     "form_destination": 129
   },
-  "generated_at": "2026-07-21T02:15:08.960593+00:00"
+  "generated_at": "2026-07-26T07:47:24.362184+00:00"
 }
