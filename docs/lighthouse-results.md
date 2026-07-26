@@ -5,12 +5,12 @@ layout: page
 
 <!-- LIGHTHOUSE_STATS_START -->
 
-_Stats as of 2026-07-26 07:14 UTC — last scan: 2026-07-26_
+_Stats as of 2026-07-26 08:01 UTC — last scan: 2026-07-26_
 
-**39** scan batches run
+**40** scan batches run
 
-**6,082** of **87,696** available pages audited (**6.9%** coverage)
-**5,603** successful audits (**92.1%** of audited)
+**6,198** of **87,696** available pages audited (**7.1%** coverage)
+**5,706** successful audits (**92.1%** of audited)
 
 **Overall average Lighthouse scores** (0–100 scale):
 
@@ -45,7 +45,7 @@ _Stats as of 2026-07-26 07:14 UTC — last scan: 2026-07-26_
 | Romania | 58 | 807 | 83 | 74 | 86 | 80 | 2026-07-26 |
 | Slovakia | 312 | 442 | 91 | 87 | 91 | 88 | 2026-07-22 |
 | Slovenia | 214 | 214 | 86 | 80 | 89 | 85 | 2026-07-22 |
-| Sweden | 136 | 1,702 | 89 | 90 | 88 | 86 | 2026-07-23 |
+| Sweden | 252 | 1,702 | 87 | 91 | 90 | 83 | 2026-07-26 |
 
 > Scores are averages across all successfully audited URLs, displayed as 0–100 (Lighthouse stores scores as 0.0–1.0 internally).
 
