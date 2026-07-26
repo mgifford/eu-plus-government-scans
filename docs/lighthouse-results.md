@@ -5,12 +5,12 @@ layout: page
 
 <!-- LIGHTHOUSE_STATS_START -->
 
-_Stats as of 2026-07-26 18:40 UTC — last scan: 2026-07-26_
+_Stats as of 2026-07-26 19:21 UTC — last scan: 2026-07-26_
 
-**41** scan batches run
+**42** scan batches run
 
-**6,443** of **87,696** available pages audited (**7.3%** coverage)
-**5,927** successful audits (**92.0%** of audited)
+**6,621** of **87,696** available pages audited (**7.5%** coverage)
+**6,104** successful audits (**92.2%** of audited)
 
 **Overall average Lighthouse scores** (0–100 scale):
 
@@ -25,7 +25,7 @@ _Stats as of 2026-07-26 18:40 UTC — last scan: 2026-07-26_
 | Country | Audited | Available | Perf | A11y | Best Practices | SEO | Last Scan |
 |---------|--------:|----------:|:----:|:----:|:--------------:|:---:|-----------|
 | Austria | 561 | 822 | 86 | 89 | 90 | 88 | 2026-07-26 |
-| Belgium | 134 | 1,329 | 86 | 89 | 91 | 90 | 2026-07-24 |
+| Belgium | 312 | 1,329 | 88 | 90 | 92 | 90 | 2026-07-26 |
 | Bulgaria | 352 | 353 | 87 | 81 | 88 | 87 | 2026-07-22 |
 | Croatia | 257 | 257 | 92 | 72 | 92 | 89 | 2026-07-22 |
 | Czechia | 449 | 866 | 91 | 86 | 91 | 87 | 2026-07-24 |
