@@ -1,6 +1,6 @@
 {
   "country_code": "GERMANY",
-  "total_relationships": 21730,
+  "total_relationships": 21734,
   "total_source_domains": 222,
   "top_source_domains": [
     {
@@ -41,7 +41,7 @@
     },
     {
       "domain": "bund.de",
-      "count": 2309
+      "count": 2328
     },
     {
       "domain": "bremen.de",
@@ -247,11 +247,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 1737
+      "count": 1739
     },
     {
       "domain": "bund.de",
-      "count": 1570
+      "count": 1582
     },
     {
       "domain": "bremen.de",
@@ -275,7 +275,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 890
+      "count": 892
     },
     {
       "domain": "baden-wuerttemberg.de",
@@ -291,7 +291,7 @@
     },
     {
       "domain": "etracker.com",
-      "count": 464
+      "count": 466
     },
     {
       "domain": "readspeaker.com",
@@ -408,11 +408,11 @@
   ],
   "relationship_types": {
     "editorial_link": 10971,
-    "script_dependency": 2853,
-    "stylesheet_dependency": 2700,
-    "image_or_media_dependency": 2742,
-    "form_destination": 2129,
+    "script_dependency": 2854,
+    "stylesheet_dependency": 2701,
+    "image_or_media_dependency": 2743,
+    "form_destination": 2130,
     "font_or_preload_dependency": 335
   },
-  "generated_at": "2026-07-25T14:01:52.743321+00:00"
+  "generated_at": "2026-07-26T19:13:01.046019+00:00"
 }
