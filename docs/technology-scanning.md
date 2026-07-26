@@ -5,12 +5,12 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-07-26 14:45 UTC — last scan: 2026-07-26_
+_Stats as of 2026-07-26 14:51 UTC — last scan: 2026-07-26_
 
-**38** scan batches run
+**40** scan batches run
 
-**11,964** of **87,696** available pages scanned (**13.6%** coverage)
-**7,049** pages with technology detections (**58.9%** of scanned)
+**12,285** of **87,696** available pages scanned (**14.0%** coverage)
+**7,049** pages with technology detections (**57.4%** of scanned)
 **263** unique technologies identified
 
 ---
@@ -26,9 +26,9 @@ _Stats as of 2026-07-26 14:45 UTC — last scan: 2026-07-26_
 | Croatia | 257 | 253 | 257 | 2026-07-21 |
 | Czechia | 746 | 208 | 866 | 2026-07-26 |
 | Denmark | 1,086 | 574 | 1,536 | 2026-07-26 |
-| Estonia | 393 | 376 | 401 | 2026-07-22 |
+| Estonia | 401 | 376 | 401 | 2026-07-26 |
 | Finland | 199 | 188 | 199 | 2026-07-22 |
-| France | 160 | 138 | 10,009 | 2026-07-22 |
+| France | 473 | 138 | 10,009 | 2026-07-26 |
 | Germany | 481 | 465 | 6,599 | 2026-07-22 |
 | Greece | 319 | 297 | 1,752 | 2026-07-23 |
 | Hungary | 392 | 296 | 392 | 2026-07-23 |
