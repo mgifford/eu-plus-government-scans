@@ -1,6 +1,6 @@
 {
   "country_code": "ITALY",
-  "total_relationships": 14917,
+  "total_relationships": 14930,
   "total_source_domains": 150,
   "top_source_domains": [
     {
@@ -9,7 +9,7 @@
     },
     {
       "domain": "giustizia.it",
-      "count": 7345
+      "count": 7368
     },
     {
       "domain": "cultura.gov.it",
@@ -68,6 +68,10 @@
       "count": 562
     },
     {
+      "domain": "difesa.it",
+      "count": 539
+    },
+    {
       "domain": "comune.genova.it",
       "count": 499
     },
@@ -78,10 +82,6 @@
     {
       "domain": "comune.torino.it",
       "count": 467
-    },
-    {
-      "domain": "difesa.it",
-      "count": 461
     },
     {
       "domain": "comune.messina.it",
@@ -211,27 +211,27 @@
     },
     {
       "domain": "giustizia.it",
-      "count": 3828
+      "count": 3837
     },
     {
       "domain": "facebook.com",
-      "count": 2415
+      "count": 2418
     },
     {
       "domain": "twitter.com",
-      "count": 1982
+      "count": 1987
     },
     {
       "domain": "youtube.com",
-      "count": 1927
+      "count": 1930
     },
     {
       "domain": "agid.gov.it",
-      "count": 1584
+      "count": 1586
     },
     {
       "domain": "instagram.com",
-      "count": 1502
+      "count": 1504
     },
     {
       "domain": "cultura.gov.it",
@@ -239,7 +239,7 @@
     },
     {
       "domain": "governo.it",
-      "count": 1080
+      "count": 1081
     },
     {
       "domain": "regione.lombardia.it",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 791
+      "count": 794
     },
     {
       "domain": "viaggiaresicuri.it",
@@ -271,7 +271,7 @@
     },
     {
       "domain": "whatsapp.com",
-      "count": 669
+      "count": 671
     },
     {
       "domain": "regione.campania.it",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 600
+      "count": 602
     },
     {
       "domain": "regione.lazio.it",
@@ -307,7 +307,7 @@
     },
     {
       "domain": "comune.bologna.it",
-      "count": 396
+      "count": 397
     },
     {
       "domain": "google.com",
@@ -342,6 +342,10 @@
       "count": 299
     },
     {
+      "domain": "difesa.it",
+      "count": 271
+    },
+    {
       "domain": "regione.sicilia.it",
       "count": 268
     },
@@ -362,16 +366,12 @@
       "count": 249
     },
     {
-      "domain": "difesa.it",
-      "count": 240
-    },
-    {
       "domain": "comune.modena.it",
       "count": 235
     },
     {
       "domain": "t.me",
-      "count": 230
+      "count": 232
     },
     {
       "domain": "lavoro.gov.it",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 6962,
-    "script_dependency": 2398,
-    "stylesheet_dependency": 2126,
-    "image_or_media_dependency": 1847,
-    "form_destination": 1351,
+    "editorial_link": 6971,
+    "script_dependency": 2399,
+    "stylesheet_dependency": 2127,
+    "image_or_media_dependency": 1848,
+    "form_destination": 1352,
     "font_or_preload_dependency": 233
   },
-  "generated_at": "2026-07-25T20:06:26.861759+00:00"
+  "generated_at": "2026-07-26T20:07:51.817803+00:00"
 }
