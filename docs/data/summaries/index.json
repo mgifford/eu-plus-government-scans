@@ -25,8 +25,8 @@
     "file": "belgium.json"
   },
   "CANADA": {
-    "total_relationships": 216571,
-    "total_source_domains": 5057,
+    "total_relationships": 215596,
+    "total_source_domains": 5028,
     "file": "canada.json"
   },
   "LITHUANIA": {
@@ -55,8 +55,8 @@
     "file": "denmark.json"
   },
   "FRANCE": {
-    "total_relationships": 27273,
-    "total_source_domains": 563,
+    "total_relationships": 26337,
+    "total_source_domains": 535,
     "file": "france.json"
   }
 }
