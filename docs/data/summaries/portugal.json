@@ -1,6 +1,6 @@
 {
   "country_code": "PORTUGAL",
-  "total_relationships": 12813,
+  "total_relationships": 12817,
   "total_source_domains": 385,
   "top_source_domains": [
     {
@@ -33,7 +33,7 @@
     },
     {
       "domain": "cm-alcobaca.pt",
-      "count": 359
+      "count": 374
     },
     {
       "domain": "cm-tvedras.pt",
@@ -215,15 +215,15 @@
     },
     {
       "domain": "facebook.com",
-      "count": 1093
+      "count": 1094
     },
     {
       "domain": "youtube.com",
-      "count": 862
+      "count": 863
     },
     {
       "domain": "instagram.com",
-      "count": 861
+      "count": 862
     },
     {
       "domain": "googletagmanager.com",
@@ -247,7 +247,7 @@
     },
     {
       "domain": "livroreclamacoes.pt",
-      "count": 425
+      "count": 426
     },
     {
       "domain": "twitter.com",
@@ -299,15 +299,15 @@
     },
     {
       "domain": "w3.org",
-      "count": 177
+      "count": 178
+    },
+    {
+      "domain": "cm-alcobaca.pt",
+      "count": 172
     },
     {
       "domain": "unpkg.com",
       "count": 167
-    },
-    {
-      "domain": "cm-alcobaca.pt",
-      "count": 165
     },
     {
       "domain": "bootstrapcdn.com",
@@ -387,7 +387,7 @@
     },
     {
       "domain": "autarquia360.com",
-      "count": 112
+      "count": 113
     },
     {
       "domain": "portugal2020.pt",
@@ -408,11 +408,11 @@
   ],
   "relationship_types": {
     "editorial_link": 6981,
-    "script_dependency": 2076,
+    "script_dependency": 2077,
     "font_or_preload_dependency": 425,
-    "stylesheet_dependency": 1507,
-    "image_or_media_dependency": 1095,
-    "form_destination": 729
+    "stylesheet_dependency": 1508,
+    "image_or_media_dependency": 1096,
+    "form_destination": 730
   },
-  "generated_at": "2026-07-26T07:47:24.136685+00:00"
+  "generated_at": "2026-07-27T08:02:34.074567+00:00"
 }
