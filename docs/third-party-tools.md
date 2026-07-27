@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-07-27 01:57 UTC — last scan: 2026-07-26_
+_Stats as of 2026-07-27 03:03 UTC — last scan: 2026-07-27_
 
-**66** scan batches run
+**69** scan batches run
 
 **16,458** of **87,696** available pages scanned (**18.8%** coverage)
 **15,324** of **16,458** scanned pages were reachable (**93.1%**)
 **7,208** reachable pages loaded at least one third-party script (**47.0%** of reachable)
-**9,913** known third-party service loads identified
+**9,906** known third-party service loads identified
 **21** unique known services across **13** categories
 
 ---
@@ -33,10 +33,10 @@ _Stats as of 2026-07-27 01:57 UTC — last scan: 2026-07-26_
 | France | 409 | 10,009 | 364 | 221 | 83 | 60.7 | 22.8 | 2026-07-24 |
 | Germany | 427 | 6,599 | 414 | 84 | 101 | 20.3 | 24.4 | 2026-07-25 |
 | Greece | 520 | 1,752 | 490 | 227 | 298 | 46.3 | 60.8 | 2026-07-26 |
-| Hungary | 392 | 392 | 296 | 126 | 190 | 42.6 | 64.2 | 2026-07-24 |
+| Hungary | 392 | 392 | 296 | 126 | 190 | 42.6 | 64.2 | 2026-07-27 |
 | Iceland | 145 | 145 | 143 | 78 | 46 | 54.5 | 32.2 | 2026-07-24 |
-| Ireland | 536 | 536 | 499 | 272 | 725 | 54.5 | 145.3 | 2026-07-24 |
-| Italy | 444 | 5,351 | 405 | 157 | 36 | 38.8 | 8.9 | 2026-07-22 |
+| Ireland | 536 | 536 | 499 | 272 | 718 | 54.5 | 143.9 | 2026-07-27 |
+| Italy | 444 | 5,351 | 405 | 157 | 36 | 38.8 | 8.9 | 2026-07-27 |
 | Latvia | 803 | 803 | 762 | 267 | 273 | 35.0 | 35.8 | 2026-07-24 |
 | Lithuania | 122 | 122 | 112 | 57 | 113 | 50.9 | 100.9 | 2026-07-24 |
 | Luxembourg | 573 | 573 | 446 | 312 | 134 | 70.0 | 30.0 | 2026-07-24 |
@@ -65,11 +65,11 @@ _Stats as of 2026-07-27 01:57 UTC — last scan: 2026-07-26_
 | 1 | cdnjs (Cloudflare CDN) | **2,043** |
 | 2 | jsDelivr CDN | **1,852** |
 | 3 | Google Analytics (GA4) | **1,446** |
-| 4 | jQuery | **876** |
-| 5 | Google reCAPTCHA | **631** |
+| 4 | jQuery | **874** |
+| 5 | Google reCAPTCHA | **629** |
 | 6 | unpkg CDN | **591** |
 | 7 | Google Hosted Libraries | **571** |
-| 8 | Google Tag Manager | **545** |
+| 8 | Google Tag Manager | **542** |
 | 9 | CookieInformation | **403** |
 | 10 | Cookiebot | **367** |
 | 11 | Font Awesome | **182** |
@@ -90,9 +90,9 @@ _Stats as of 2026-07-27 01:57 UTC — last scan: 2026-07-26_
 | 1 | Google Analytics (GA4) | **1,419** | **440.7%** |
 | 2 | jsDelivr CDN | **1,019** | **316.5%** |
 | 3 | cdnjs (Cloudflare CDN) | **754** | **234.2%** |
-| 4 | Google reCAPTCHA | **610** | **189.4%** |
-| 5 | jQuery | **603** | **187.3%** |
-| 6 | Google Tag Manager | **524** | **162.7%** |
+| 4 | Google reCAPTCHA | **608** | **188.8%** |
+| 5 | jQuery | **602** | **187.0%** |
+| 6 | Google Tag Manager | **521** | **161.8%** |
 | 7 | Google Hosted Libraries | **505** | **156.8%** |
 | 8 | unpkg CDN | **450** | **139.8%** |
 | 9 | CookieInformation | **403** | **125.2%** |
@@ -114,11 +114,11 @@ _Stats as of 2026-07-27 01:57 UTC — last scan: 2026-07-26_
 |--:|----------|------:|
 | 1 | CDN | **5,057** |
 | 2 | Analytics | **1,595** |
-| 3 | JavaScript Library | **1,447** |
+| 3 | JavaScript Library | **1,445** |
 | 4 | Cookie Consent | **852** |
-| 5 | Security | **650** |
-| 6 | CAPTCHA | **631** |
-| 7 | Tag Manager | **613** |
+| 5 | Security | **648** |
+| 6 | CAPTCHA | **629** |
+| 7 | Tag Manager | **610** |
 | 8 | Icon Library | **182** |
 | 9 | UI Framework | **122** |
 | 10 | Advertising | **48** |
@@ -133,7 +133,7 @@ Infrastructure-heavy categories (CDNs, core libraries, and UI assets):
 | # | Infrastructure Category | Loads |
 |--:|--------------------------|------:|
 | 1 | CDN | **5,057** |
-| 2 | JavaScript Library | **1,447** |
+| 2 | JavaScript Library | **1,445** |
 | 3 | Icon Library | **182** |
 | 4 | UI Framework | **122** |
 
@@ -143,9 +143,9 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 |--:|--------------------------|------:|
 | 1 | Analytics | **1,595** |
 | 2 | Cookie Consent | **852** |
-| 3 | Security | **650** |
-| 4 | CAPTCHA | **631** |
-| 5 | Tag Manager | **613** |
+| 3 | Security | **648** |
+| 4 | CAPTCHA | **629** |
+| 5 | Tag Manager | **610** |
 | 6 | Advertising | **48** |
 | 7 | Error Tracking | **25** |
 | 8 | Customer Support | **9** |
