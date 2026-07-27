@@ -100,11 +100,11 @@
   },
   "FRANCE": {
     "total_urls": 10009,
-    "attempted": 9466,
-    "successful": 8659,
-    "failed": 807,
+    "attempted": 9214,
+    "successful": 8434,
+    "failed": 780,
     "skipped": 0,
-    "never_scanned": 543,
+    "never_scanned": 795,
     "stale_28d": 0
   },
   "REPUBLIC_OF_CYPRUS": {
