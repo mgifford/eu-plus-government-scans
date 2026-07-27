@@ -1,6 +1,6 @@
 {
   "country_code": "GERMANY",
-  "total_relationships": 21734,
+  "total_relationships": 21756,
   "total_source_domains": 222,
   "top_source_domains": [
     {
@@ -207,19 +207,19 @@
   "top_target_domains": [
     {
       "domain": "sachsen.de",
-      "count": 20950
+      "count": 20951
     },
     {
       "domain": "niedersachsen.de",
-      "count": 10399
+      "count": 10400
     },
     {
       "domain": "rlp.de",
-      "count": 8779
+      "count": 8780
     },
     {
       "domain": "bayern.de",
-      "count": 6779
+      "count": 6780
     },
     {
       "domain": "nrw.de",
@@ -227,11 +227,11 @@
     },
     {
       "domain": "hessen.de",
-      "count": 3219
+      "count": 3220
     },
     {
       "domain": "hamburg.de",
-      "count": 3089
+      "count": 3090
     },
     {
       "domain": "diplo.de",
@@ -239,7 +239,7 @@
     },
     {
       "domain": "sachsen-anhalt.de",
-      "count": 2085
+      "count": 2086
     },
     {
       "domain": "facebook.com",
@@ -247,19 +247,19 @@
     },
     {
       "domain": "instagram.com",
-      "count": 1739
+      "count": 1740
     },
     {
       "domain": "bund.de",
-      "count": 1582
+      "count": 1583
     },
     {
       "domain": "bremen.de",
-      "count": 1417
+      "count": 1418
     },
     {
       "domain": "thueringen.de",
-      "count": 1386
+      "count": 1387
     },
     {
       "domain": "twitter.com",
@@ -267,11 +267,11 @@
     },
     {
       "domain": "youtube.com",
-      "count": 1105
+      "count": 1106
     },
     {
       "domain": "berlin.de",
-      "count": 914
+      "count": 915
     },
     {
       "domain": "linkedin.com",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "baden-wuerttemberg.de",
-      "count": 782
+      "count": 783
     },
     {
       "domain": "justiz.nrw",
@@ -379,7 +379,7 @@
     },
     {
       "domain": "x.com",
-      "count": 189
+      "count": 190
     },
     {
       "domain": "europa.eu",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 10971,
-    "script_dependency": 2854,
+    "editorial_link": 10992,
+    "script_dependency": 2855,
     "stylesheet_dependency": 2701,
     "image_or_media_dependency": 2743,
     "form_destination": 2130,
     "font_or_preload_dependency": 335
   },
-  "generated_at": "2026-07-26T19:13:01.046019+00:00"
+  "generated_at": "2026-07-27T19:23:46.806175+00:00"
 }
