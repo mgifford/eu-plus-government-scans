@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-07-28 02:16 UTC — last scan: 2026-07-27_
+_Stats as of 2026-07-28 03:23 UTC — last scan: 2026-07-28_
 
-**78** scan batches run
+**81** scan batches run
 
 **17,270** of **87,696** available pages scanned (**19.7%** coverage)
-**15,988** of **17,270** scanned pages were reachable (**92.6%**)
+**15,991** of **17,270** scanned pages were reachable (**92.6%**)
 **7,553** reachable pages loaded at least one third-party script (**47.2%** of reachable)
-**10,398** known third-party service loads identified
+**10,395** known third-party service loads identified
 **21** unique known services across **13** categories
 
 ---
@@ -41,17 +41,17 @@ _Stats as of 2026-07-28 02:16 UTC — last scan: 2026-07-27_
 | Lithuania | 122 | 122 | 112 | 57 | 113 | 50.9 | 100.9 | 2026-07-27 |
 | Luxembourg | 573 | 573 | 446 | 312 | 128 | 70.0 | 28.7 | 2026-07-27 |
 | Malta | 610 | 610 | 592 | 465 | 1,279 | 78.5 | 216.0 | 2026-07-27 |
-| Netherlands | 945 | 945 | 902 | 377 | 287 | 41.8 | 31.8 | 2026-07-25 |
+| Netherlands | 945 | 945 | 902 | 377 | 284 | 41.8 | 31.5 | 2026-07-28 |
 | Norway | 249 | 249 | 242 | 136 | 116 | 56.2 | 47.9 | 2026-07-27 |
 | Poland | 493 | 14,951 | 465 | 224 | 318 | 48.2 | 68.4 | 2026-07-27 |
 | Portugal | 722 | 3,508 | 595 | 255 | 378 | 42.9 | 63.5 | 2026-07-27 |
-| Cyprus | 29 | 29 | 28 | 13 | 15 | 46.4 | 53.6 | 2026-07-25 |
+| Cyprus | 29 | 29 | 28 | 13 | 15 | 46.4 | 53.6 | 2026-07-28 |
 | Romania | 158 | 807 | 56 | 46 | 41 | 82.1 | 73.2 | 2026-07-25 |
 | Slovakia | 442 | 442 | 420 | 213 | 274 | 50.7 | 65.2 | 2026-07-25 |
 | Slovenia | 214 | 214 | 204 | 53 | 79 | 26.0 | 38.7 | 2026-07-25 |
 | Spain | 291 | 6,091 | 232 | 149 | 153 | 64.2 | 65.9 | 2026-07-27 |
 | Sweden | 1,184 | 1,702 | 1,117 | 288 | 137 | 25.8 | 12.3 | 2026-07-25 |
-| Switzerland | 590 | 2,123 | 574 | 151 | 162 | 26.3 | 28.2 | 2026-07-24 |
+| Switzerland | 590 | 2,123 | 577 | 151 | 162 | 26.2 | 28.1 | 2026-07-28 |
 | United Kingdom | 337 | 19,511 | 322 | 144 | 165 | 44.7 | 51.2 | 2026-07-24 |
 
 > Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and metric from [Download machine-readable third-party tools data (JSON)](third-party-tools-data.json).
@@ -77,9 +77,9 @@ _Stats as of 2026-07-28 02:16 UTC — last scan: 2026-07-27_
 | 13 | OneTrust | **82** |
 | 14 | Adobe Dynamic Tag Management / Launch | **69** |
 | 15 | Facebook Pixel | **51** |
-| 16 | Sentry | **25** |
-| 17 | Google Analytics (Universal) | **22** |
-| 18 | Cloudflare Turnstile / Challenge | **22** |
+| 16 | Google Analytics (Universal) | **22** |
+| 17 | Cloudflare Turnstile / Challenge | **22** |
+| 18 | Sentry | **22** |
 | 19 | Matomo Cloud | **11** |
 | 20 | Zendesk | **9** |
 
@@ -102,9 +102,9 @@ _Stats as of 2026-07-28 02:16 UTC — last scan: 2026-07-27_
 | 13 | OneTrust | **79** | **24.5%** |
 | 14 | Adobe Dynamic Tag Management / Launch | **66** | **20.5%** |
 | 15 | Facebook Pixel | **49** | **15.2%** |
-| 16 | Sentry | **25** | **7.8%** |
-| 17 | Cloudflare Turnstile / Challenge | **22** | **6.8%** |
-| 18 | Google Analytics (Universal) | **22** | **6.8%** |
+| 16 | Cloudflare Turnstile / Challenge | **22** | **6.8%** |
+| 17 | Google Analytics (Universal) | **22** | **6.8%** |
+| 18 | Sentry | **22** | **6.8%** |
 | 19 | Matomo Cloud | **11** | **3.4%** |
 | 20 | Zendesk | **9** | **2.8%** |
 
@@ -122,7 +122,7 @@ _Stats as of 2026-07-28 02:16 UTC — last scan: 2026-07-27_
 | 8 | Icon Library | **230** |
 | 9 | UI Framework | **127** |
 | 10 | Advertising | **51** |
-| 11 | Error Tracking | **25** |
+| 11 | Error Tracking | **22** |
 | 12 | Customer Support | **9** |
 | 13 | Chat | **9** |
 
@@ -147,7 +147,7 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 | 4 | CAPTCHA | **683** |
 | 5 | Tag Manager | **643** |
 | 6 | Advertising | **51** |
-| 7 | Error Tracking | **25** |
+| 7 | Error Tracking | **22** |
 | 8 | Customer Support | **9** |
 | 9 | Chat | **9** |
 
