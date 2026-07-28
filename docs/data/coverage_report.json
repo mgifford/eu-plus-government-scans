@@ -98,11 +98,11 @@
     "never_scanned": 0,
     "stale_28d": 0
   },
-  "GERMANY": {
-    "total_urls": 6599,
-    "attempted": 6599,
-    "successful": 6506,
-    "failed": 93,
+  "ITALY": {
+    "total_urls": 5351,
+    "attempted": 5351,
+    "successful": 4638,
+    "failed": 713,
     "skipped": 0,
     "never_scanned": 0,
     "stale_28d": 0
@@ -119,13 +119,13 @@
     "never_scanned": 0,
     "stale_28d": 0
   },
-  "SPAIN": {
-    "total_urls": 6091,
-    "attempted": 6091,
-    "successful": 5066,
-    "failed": 1025,
+  "POLAND": {
+    "total_urls": 14951,
+    "attempted": 8139,
+    "successful": 7429,
+    "failed": 710,
     "skipped": 0,
-    "never_scanned": 0,
+    "never_scanned": 6812,
     "stale_28d": 0
   },
   "SLOVAKIA": {
@@ -146,11 +146,11 @@
     "never_scanned": 0,
     "stale_28d": 0
   },
-  "ITALY": {
-    "total_urls": 5351,
-    "attempted": 5351,
-    "successful": 4628,
-    "failed": 723,
+  "PORTUGAL": {
+    "total_urls": 3508,
+    "attempted": 3508,
+    "successful": 2869,
+    "failed": 639,
     "skipped": 0,
     "never_scanned": 0,
     "stale_28d": 0
@@ -173,14 +173,8 @@
     "never_scanned": 0,
     "stale_28d": 0
   },
-  "POLAND": {
-    "total_urls": 14951,
-    "attempted": 8139,
-    "successful": 7429,
-    "failed": 710,
-    "skipped": 0,
-    "never_scanned": 6812,
-    "stale_28d": 0
+  "UNITED_KINGDOM_UK": {
+    "error": "TOON file not found"
   },
   "BULGARIA": {
     "total_urls": 353,
@@ -200,11 +194,11 @@
     "never_scanned": 0,
     "stale_28d": 0
   },
-  "PORTUGAL": {
-    "total_urls": 3508,
-    "attempted": 3508,
-    "successful": 2869,
-    "failed": 639,
+  "GERMANY": {
+    "total_urls": 6599,
+    "attempted": 6599,
+    "successful": 6506,
+    "failed": 93,
     "skipped": 0,
     "never_scanned": 0,
     "stale_28d": 0
@@ -227,8 +221,14 @@
     "never_scanned": 566,
     "stale_28d": 0
   },
-  "UNITED_KINGDOM_UK": {
-    "error": "TOON file not found"
+  "SPAIN": {
+    "total_urls": 6091,
+    "attempted": 6091,
+    "successful": 5066,
+    "failed": 1025,
+    "skipped": 0,
+    "never_scanned": 0,
+    "stale_28d": 0
   },
   "ESTONIA": {
     "total_urls": 401,
@@ -250,11 +250,11 @@
   },
   "FRANCE": {
     "total_urls": 10009,
-    "attempted": 9214,
-    "successful": 8434,
-    "failed": 780,
+    "attempted": 10009,
+    "successful": 9057,
+    "failed": 952,
     "skipped": 0,
-    "never_scanned": 795,
+    "never_scanned": 0,
     "stale_28d": 0
   },
   "FINLAND": {
