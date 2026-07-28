@@ -1,11 +1,11 @@
 {
   "country_code": "SLOVAKIA",
-  "total_relationships": 1640,
+  "total_relationships": 1667,
   "total_source_domains": 21,
   "top_source_domains": [
     {
       "domain": "gov.sk",
-      "count": 2688
+      "count": 2850
     },
     {
       "domain": "zilina.sk",
@@ -64,6 +64,10 @@
       "count": 26
     },
     {
+      "domain": "nitra.sk",
+      "count": 22
+    },
+    {
       "domain": "nbs.sk",
       "count": 22
     },
@@ -82,16 +86,12 @@
     {
       "domain": "minzp.sk",
       "count": 12
-    },
-    {
-      "domain": "nitra.sk",
-      "count": 3
     }
   ],
   "top_target_domains": [
     {
       "domain": "gov.sk",
-      "count": 1469
+      "count": 1546
     },
     {
       "domain": "slovensko.sk",
@@ -99,11 +99,11 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 172
+      "count": 178
     },
     {
       "domain": "facebook.com",
-      "count": 163
+      "count": 169
     },
     {
       "domain": "zilina.sk",
@@ -115,7 +115,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 120
+      "count": 126
     },
     {
       "domain": "trnava.sk",
@@ -127,10 +127,14 @@
     },
     {
       "domain": "google.com",
-      "count": 100
+      "count": 107
     },
     {
       "domain": "linkedin.com",
+      "count": 81
+    },
+    {
+      "domain": "youtube.com",
       "count": 81
     },
     {
@@ -138,16 +142,12 @@
       "count": 78
     },
     {
-      "domain": "youtube.com",
-      "count": 75
-    },
-    {
       "domain": "presov.sk",
       "count": 71
     },
     {
       "domain": "europa.eu",
-      "count": 59
+      "count": 65
     },
     {
       "domain": "banskabystrica.sk",
@@ -155,7 +155,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 45
+      "count": 46
     },
     {
       "domain": "jsdelivr.net",
@@ -166,6 +166,10 @@
       "count": 40
     },
     {
+      "domain": "syscom.sk",
+      "count": 36
+    },
+    {
       "domain": "martin.sk",
       "count": 36
     },
@@ -174,20 +178,16 @@
       "count": 35
     },
     {
+      "domain": "aglo.sk",
+      "count": 34
+    },
+    {
       "domain": "nrsr.sk",
       "count": 34
     },
     {
-      "domain": "syscom.sk",
-      "count": 30
-    },
-    {
       "domain": "trencin.sk",
       "count": 29
-    },
-    {
-      "domain": "aglo.sk",
-      "count": 28
     },
     {
       "domain": "twitter.com",
@@ -214,6 +214,10 @@
       "count": 16
     },
     {
+      "domain": "planobnovy.sk",
+      "count": 15
+    },
+    {
       "domain": "windows.net",
       "count": 13
     },
@@ -226,11 +230,23 @@
       "count": 13
     },
     {
+      "domain": "nitra.sk",
+      "count": 13
+    },
+    {
       "domain": "plausible.io",
       "count": 12
     },
     {
       "domain": "x.com",
+      "count": 12
+    },
+    {
+      "domain": "bootstrapcdn.com",
+      "count": 12
+    },
+    {
+      "domain": "mapbox.com",
       "count": 12
     },
     {
@@ -242,6 +258,10 @@
       "count": 10
     },
     {
+      "domain": "microsoft.com",
+      "count": 10
+    },
+    {
       "domain": "goo.gl",
       "count": 10
     },
@@ -250,15 +270,7 @@
       "count": 10
     },
     {
-      "domain": "microsoft.com",
-      "count": 9
-    },
-    {
       "domain": "pohladavkystatu.sk",
-      "count": 9
-    },
-    {
-      "domain": "planobnovy.sk",
       "count": 9
     },
     {
@@ -276,27 +288,15 @@
     {
       "domain": "facebook.net",
       "count": 9
-    },
-    {
-      "domain": "eures.sk",
-      "count": 8
-    },
-    {
-      "domain": "mpsvr.sk",
-      "count": 8
-    },
-    {
-      "domain": "mhsr.sk",
-      "count": 8
     }
   ],
   "relationship_types": {
-    "editorial_link": 905,
-    "script_dependency": 234,
-    "stylesheet_dependency": 190,
-    "image_or_media_dependency": 156,
-    "form_destination": 105,
+    "editorial_link": 917,
+    "script_dependency": 239,
+    "stylesheet_dependency": 194,
+    "image_or_media_dependency": 159,
+    "form_destination": 108,
     "font_or_preload_dependency": 50
   },
-  "generated_at": "2026-07-21T23:59:17.241127+00:00"
+  "generated_at": "2026-07-28T19:21:36.823400+00:00"
 }
