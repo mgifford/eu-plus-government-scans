@@ -1,7 +1,7 @@
 {
   "country_code": "ITALY",
-  "total_relationships": 14967,
-  "total_source_domains": 150,
+  "total_relationships": 15255,
+  "total_source_domains": 151,
   "top_source_domains": [
     {
       "domain": "esteri.it",
@@ -9,11 +9,11 @@
     },
     {
       "domain": "giustizia.it",
-      "count": 7368
+      "count": 7770
     },
     {
       "domain": "cultura.gov.it",
-      "count": 3293
+      "count": 3441
     },
     {
       "domain": "regione.lombardia.it",
@@ -32,16 +32,16 @@
       "count": 1147
     },
     {
+      "domain": "comune.parma.it",
+      "count": 1039
+    },
+    {
       "domain": "regione.campania.it",
       "count": 1032
     },
     {
       "domain": "regione.lazio.it",
       "count": 1020
-    },
-    {
-      "domain": "comune.parma.it",
-      "count": 992
     },
     {
       "domain": "comune.palermo.it",
@@ -211,31 +211,31 @@
     },
     {
       "domain": "giustizia.it",
-      "count": 3837
+      "count": 4047
     },
     {
       "domain": "facebook.com",
-      "count": 2425
+      "count": 2465
     },
     {
       "domain": "twitter.com",
-      "count": 1992
+      "count": 2018
     },
     {
       "domain": "youtube.com",
-      "count": 1937
+      "count": 1967
     },
     {
       "domain": "agid.gov.it",
-      "count": 1595
+      "count": 1608
     },
     {
       "domain": "instagram.com",
-      "count": 1511
+      "count": 1525
     },
     {
       "domain": "cultura.gov.it",
-      "count": 1422
+      "count": 1490
     },
     {
       "domain": "governo.it",
@@ -243,11 +243,11 @@
     },
     {
       "domain": "regione.lombardia.it",
-      "count": 1043
+      "count": 1045
     },
     {
       "domain": "regione.emilia-romagna.it",
-      "count": 1000
+      "count": 1001
     },
     {
       "domain": "europa.eu",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 796
+      "count": 802
     },
     {
       "domain": "viaggiaresicuri.it",
@@ -271,7 +271,7 @@
     },
     {
       "domain": "whatsapp.com",
-      "count": 674
+      "count": 677
     },
     {
       "domain": "regione.campania.it",
@@ -279,15 +279,15 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 605
-    },
-    {
-      "domain": "regione.lazio.it",
-      "count": 592
+      "count": 608
     },
     {
       "domain": "comune.parma.it",
-      "count": 585
+      "count": 607
+    },
+    {
+      "domain": "regione.lazio.it",
+      "count": 597
     },
     {
       "domain": "comune.fi.it",
@@ -306,24 +306,28 @@
       "count": 398
     },
     {
+      "domain": "google.com",
+      "count": 397
+    },
+    {
       "domain": "comune.bologna.it",
       "count": 397
     },
     {
-      "domain": "google.com",
-      "count": 394
+      "domain": "googletagmanager.com",
+      "count": 382
     },
     {
-      "domain": "googletagmanager.com",
-      "count": 372
+      "domain": "csm.it",
+      "count": 359
+    },
+    {
+      "domain": "regione.toscana.it",
+      "count": 349
     },
     {
       "domain": "mef.gov.it",
       "count": 349
-    },
-    {
-      "domain": "regione.toscana.it",
-      "count": 348
     },
     {
       "domain": "municipiumapp.it",
@@ -331,15 +335,15 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 343
-    },
-    {
-      "domain": "csm.it",
-      "count": 341
+      "count": 345
     },
     {
       "domain": "interno.gov.it",
       "count": 313
+    },
+    {
+      "domain": "beniculturali.it",
+      "count": 274
     },
     {
       "domain": "difesa.it",
@@ -347,11 +351,7 @@
     },
     {
       "domain": "regione.sicilia.it",
-      "count": 268
-    },
-    {
-      "domain": "beniculturali.it",
-      "count": 266
+      "count": 270
     },
     {
       "domain": "cloudflare.com",
@@ -382,12 +382,16 @@
       "count": 198
     },
     {
+      "domain": "scuolamagistratura.it",
+      "count": 195
+    },
+    {
       "domain": "regione.piemonte.it",
       "count": 187
     },
     {
-      "domain": "scuolamagistratura.it",
-      "count": 184
+      "domain": "italia.it",
+      "count": 182
     },
     {
       "domain": "italea.com",
@@ -400,19 +404,15 @@
     {
       "domain": "comune.perugia.it",
       "count": 177
-    },
-    {
-      "domain": "italia.it",
-      "count": 173
     }
   ],
   "relationship_types": {
-    "editorial_link": 6998,
-    "script_dependency": 2403,
-    "stylesheet_dependency": 2129,
-    "image_or_media_dependency": 1850,
-    "form_destination": 1354,
-    "font_or_preload_dependency": 233
+    "editorial_link": 7110,
+    "script_dependency": 2449,
+    "stylesheet_dependency": 2173,
+    "image_or_media_dependency": 1896,
+    "form_destination": 1391,
+    "font_or_preload_dependency": 236
   },
-  "generated_at": "2026-07-28T01:25:29.344817+00:00"
+  "generated_at": "2026-07-29T13:33:38.813270+00:00"
 }

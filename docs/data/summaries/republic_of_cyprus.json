@@ -1,7 +1,7 @@
 {
   "country_code": "REPUBLIC_OF_CYPRUS",
-  "total_relationships": 225505,
-  "total_source_domains": 5388,
+  "total_relationships": 225801,
+  "total_source_domains": 5389,
   "top_source_domains": [
     {
       "domain": "ethz.ch",
@@ -65,7 +65,7 @@
     },
     {
       "domain": "giustizia.it",
-      "count": 7368
+      "count": 7770
     },
     {
       "domain": "jcyl.es",
@@ -128,12 +128,12 @@
       "count": 3629
     },
     {
-      "domain": "ooe.gv.at",
-      "count": 3377
+      "domain": "cultura.gov.it",
+      "count": 3441
     },
     {
-      "domain": "cultura.gov.it",
-      "count": 3293
+      "domain": "ooe.gv.at",
+      "count": 3377
     },
     {
       "domain": "kk.dk",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 23381
+      "count": 23421
     },
     {
       "domain": "sachsen.de",
@@ -219,7 +219,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 18110
+      "count": 18118
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -227,15 +227,15 @@
     },
     {
       "domain": "instagram.com",
-      "count": 14217
+      "count": 14231
     },
     {
       "domain": "youtube.com",
-      "count": 13696
+      "count": 13726
     },
     {
       "domain": "twitter.com",
-      "count": 11649
+      "count": 11675
     },
     {
       "domain": "krakow.pl",
@@ -247,11 +247,11 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 10265
+      "count": 10268
     },
     {
       "domain": "google.com",
-      "count": 9686
+      "count": 9689
     },
     {
       "domain": "lodz.pl",
@@ -263,7 +263,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 8196
+      "count": 8206
     },
     {
       "domain": "gouv.qc.ca",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 6038
+      "count": 6040
     },
     {
       "domain": "esteri.it",
@@ -311,7 +311,7 @@
     },
     {
       "domain": "giustizia.it",
-      "count": 3837
+      "count": 4047
     },
     {
       "domain": "admin.ch",
@@ -355,7 +355,7 @@
     },
     {
       "domain": "fontawesome.com",
-      "count": 2618
+      "count": 2621
     },
     {
       "domain": "xunta.gal",
@@ -383,7 +383,7 @@
     },
     {
       "domain": "jquery.com",
-      "count": 2069
+      "count": 2071
     },
     {
       "domain": "belgium.be",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 114565,
-    "script_dependency": 35067,
-    "stylesheet_dependency": 29711,
-    "image_or_media_dependency": 24900,
-    "form_destination": 15934,
-    "font_or_preload_dependency": 5328
+    "editorial_link": 114680,
+    "script_dependency": 35114,
+    "stylesheet_dependency": 29756,
+    "image_or_media_dependency": 24948,
+    "form_destination": 15971,
+    "font_or_preload_dependency": 5332
   },
-  "generated_at": "2026-07-29T07:47:50.495774+00:00"
+  "generated_at": "2026-07-29T13:33:38.544809+00:00"
 }

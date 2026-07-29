@@ -1,6 +1,6 @@
 {
   "country_code": "NETHERLANDS",
-  "total_relationships": 2881,
+  "total_relationships": 2889,
   "total_source_domains": 73,
   "top_source_domains": [
     {
@@ -25,7 +25,7 @@
     },
     {
       "domain": "groningen.nl",
-      "count": 315
+      "count": 331
     },
     {
       "domain": "utrecht.nl",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "groningen.nl",
-      "count": 156
+      "count": 164
     },
     {
       "domain": "rotterdam.nl",
@@ -267,7 +267,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 138
+      "count": 140
     },
     {
       "domain": "twitter.com",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 1299,
-    "script_dependency": 550,
-    "stylesheet_dependency": 435,
-    "image_or_media_dependency": 292,
+    "editorial_link": 1302,
+    "script_dependency": 551,
+    "stylesheet_dependency": 436,
+    "image_or_media_dependency": 294,
     "form_destination": 192,
-    "font_or_preload_dependency": 113
+    "font_or_preload_dependency": 114
   },
-  "generated_at": "2026-07-21T23:59:17.186763+00:00"
+  "generated_at": "2026-07-29T13:33:38.756599+00:00"
 }
