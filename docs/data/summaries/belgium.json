@@ -37,7 +37,7 @@
     },
     {
       "domain": "irisnet.be",
-      "count": 328
+      "count": 344
     },
     {
       "domain": "liege.be",
@@ -203,7 +203,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 471
+      "count": 472
     },
     {
       "domain": "googleapis.com",
@@ -247,7 +247,7 @@
     },
     {
       "domain": "irisnet.be",
-      "count": 174
+      "count": 182
     },
     {
       "domain": "twitter.com",
@@ -267,7 +267,7 @@
     },
     {
       "domain": "google.com",
-      "count": 99
+      "count": 100
     },
     {
       "domain": "gstatic.com",
@@ -302,12 +302,12 @@
       "count": 53
     },
     {
-      "domain": "hasselt.be",
+      "domain": "googletagmanager.com",
       "count": 50
     },
     {
-      "domain": "googletagmanager.com",
-      "count": 49
+      "domain": "hasselt.be",
+      "count": 50
     },
     {
       "domain": "prezly.com",
@@ -394,5 +394,5 @@
     "image_or_media_dependency": 448,
     "form_destination": 316
   },
-  "generated_at": "2026-07-29T01:23:28.831239+00:00"
+  "generated_at": "2026-07-29T07:47:49.815875+00:00"
 }
