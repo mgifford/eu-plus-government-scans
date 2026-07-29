@@ -1,7 +1,7 @@
 {
   "country_code": "REPUBLIC_OF_CYPRUS",
-  "total_relationships": 225320,
-  "total_source_domains": 5385,
+  "total_relationships": 225456,
+  "total_source_domains": 5387,
   "top_source_domains": [
     {
       "domain": "ethz.ch",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 23357
+      "count": 23378
     },
     {
       "domain": "sachsen.de",
@@ -219,7 +219,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 18093
+      "count": 18106
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -227,15 +227,15 @@
     },
     {
       "domain": "instagram.com",
-      "count": 14194
+      "count": 14215
     },
     {
       "domain": "youtube.com",
-      "count": 13681
+      "count": 13695
     },
     {
       "domain": "twitter.com",
-      "count": 11633
+      "count": 11648
     },
     {
       "domain": "krakow.pl",
@@ -247,11 +247,11 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 10251
+      "count": 10265
     },
     {
       "domain": "google.com",
-      "count": 9682
+      "count": 9685
     },
     {
       "domain": "lodz.pl",
@@ -263,7 +263,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 8191
+      "count": 8195
     },
     {
       "domain": "gouv.qc.ca",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 6031
+      "count": 6034
     },
     {
       "domain": "esteri.it",
@@ -291,7 +291,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 5187
+      "count": 5200
     },
     {
       "domain": "gencat.cat",
@@ -303,7 +303,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 4611
+      "count": 4615
     },
     {
       "domain": "gov.mt",
@@ -335,7 +335,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 2931
+      "count": 2940
     },
     {
       "domain": "haute-garonne.fr",
@@ -347,7 +347,7 @@
     },
     {
       "domain": "x.com",
-      "count": 2714
+      "count": 2717
     },
     {
       "domain": "diplo.de",
@@ -355,7 +355,7 @@
     },
     {
       "domain": "fontawesome.com",
-      "count": 2614
+      "count": 2617
     },
     {
       "domain": "xunta.gal",
@@ -370,24 +370,24 @@
       "count": 2272
     },
     {
-      "domain": "steiermark.at",
-      "count": 2154
+      "domain": "bootstrapcdn.com",
+      "count": 2156
     },
     {
-      "domain": "bootstrapcdn.com",
-      "count": 2147
+      "domain": "steiermark.at",
+      "count": 2154
     },
     {
       "domain": "sachsen-anhalt.de",
       "count": 2086
     },
     {
-      "domain": "belgium.be",
-      "count": 2056
+      "domain": "jquery.com",
+      "count": 2066
     },
     {
-      "domain": "jquery.com",
-      "count": 2055
+      "domain": "belgium.be",
+      "count": 2056
     },
     {
       "domain": "torun.pl",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 114470,
-    "script_dependency": 35042,
-    "stylesheet_dependency": 29682,
-    "image_or_media_dependency": 24881,
-    "form_destination": 15921,
-    "font_or_preload_dependency": 5324
+    "editorial_link": 114544,
+    "script_dependency": 35059,
+    "stylesheet_dependency": 29703,
+    "image_or_media_dependency": 24893,
+    "form_destination": 15930,
+    "font_or_preload_dependency": 5327
   },
-  "generated_at": "2026-07-28T19:21:36.660746+00:00"
+  "generated_at": "2026-07-29T01:23:29.582761+00:00"
 }
