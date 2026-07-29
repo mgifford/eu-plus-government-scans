@@ -38,8 +38,8 @@
   "BELGIUM": {
     "total_urls": 1329,
     "attempted": 1329,
-    "successful": 1232,
-    "failed": 97,
+    "successful": 1233,
+    "failed": 96,
     "skipped": 0,
     "never_scanned": 0,
     "stale_28d": 0
@@ -110,33 +110,6 @@
   "REPUBLIC_OF_CYPRUS": {
     "error": "TOON file not found"
   },
-  "LATVIA": {
-    "total_urls": 803,
-    "attempted": 803,
-    "successful": 762,
-    "failed": 41,
-    "skipped": 0,
-    "never_scanned": 0,
-    "stale_28d": 0
-  },
-  "GERMANY": {
-    "total_urls": 6599,
-    "attempted": 6599,
-    "successful": 6506,
-    "failed": 93,
-    "skipped": 0,
-    "never_scanned": 0,
-    "stale_28d": 0
-  },
-  "SLOVENIA": {
-    "total_urls": 214,
-    "attempted": 214,
-    "successful": 204,
-    "failed": 10,
-    "skipped": 0,
-    "never_scanned": 0,
-    "stale_28d": 0
-  },
   "LUXEMBOURG": {
     "total_urls": 573,
     "attempted": 573,
@@ -146,11 +119,11 @@
     "never_scanned": 0,
     "stale_28d": 0
   },
-  "SPAIN": {
-    "total_urls": 6091,
-    "attempted": 6091,
-    "successful": 5098,
-    "failed": 993,
+  "GERMANY": {
+    "total_urls": 6599,
+    "attempted": 6599,
+    "successful": 6506,
+    "failed": 93,
     "skipped": 0,
     "never_scanned": 0,
     "stale_28d": 0
@@ -176,8 +149,8 @@
   "FRANCE": {
     "total_urls": 10009,
     "attempted": 10009,
-    "successful": 9057,
-    "failed": 952,
+    "successful": 9075,
+    "failed": 934,
     "skipped": 0,
     "never_scanned": 0,
     "stale_28d": 0
@@ -271,6 +244,33 @@
     "attempted": 536,
     "successful": 499,
     "failed": 37,
+    "skipped": 0,
+    "never_scanned": 0,
+    "stale_28d": 0
+  },
+  "SPAIN": {
+    "total_urls": 6091,
+    "attempted": 6091,
+    "successful": 5098,
+    "failed": 993,
+    "skipped": 0,
+    "never_scanned": 0,
+    "stale_28d": 0
+  },
+  "SLOVENIA": {
+    "total_urls": 214,
+    "attempted": 214,
+    "successful": 204,
+    "failed": 10,
+    "skipped": 0,
+    "never_scanned": 0,
+    "stale_28d": 0
+  },
+  "LATVIA": {
+    "total_urls": 803,
+    "attempted": 803,
+    "successful": 762,
+    "failed": 41,
     "skipped": 0,
     "never_scanned": 0,
     "stale_28d": 0
