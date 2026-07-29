@@ -1,7 +1,7 @@
 {
   "country_code": "CANADA",
-  "total_relationships": 225801,
-  "total_source_domains": 5389,
+  "total_relationships": 226028,
+  "total_source_domains": 5393,
   "top_source_domains": [
     {
       "domain": "ethz.ch",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 23421
+      "count": 23431
     },
     {
       "domain": "sachsen.de",
@@ -219,7 +219,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 18118
+      "count": 18123
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -227,15 +227,15 @@
     },
     {
       "domain": "instagram.com",
-      "count": 14231
+      "count": 14239
     },
     {
       "domain": "youtube.com",
-      "count": 13726
+      "count": 13731
     },
     {
       "domain": "twitter.com",
-      "count": 11675
+      "count": 11680
     },
     {
       "domain": "krakow.pl",
@@ -247,11 +247,11 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 10268
+      "count": 10271
     },
     {
       "domain": "google.com",
-      "count": 9689
+      "count": 9704
     },
     {
       "domain": "lodz.pl",
@@ -263,7 +263,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 8206
+      "count": 8212
     },
     {
       "domain": "gouv.qc.ca",
@@ -291,7 +291,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 5202
+      "count": 5208
     },
     {
       "domain": "gencat.cat",
@@ -335,7 +335,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 2940
+      "count": 2944
     },
     {
       "domain": "haute-garonne.fr",
@@ -351,7 +351,7 @@
     },
     {
       "domain": "diplo.de",
-      "count": 2656
+      "count": 2658
     },
     {
       "domain": "fontawesome.com",
@@ -367,7 +367,7 @@
     },
     {
       "domain": "unpkg.com",
-      "count": 2272
+      "count": 2274
     },
     {
       "domain": "bootstrapcdn.com",
@@ -383,7 +383,7 @@
     },
     {
       "domain": "jquery.com",
-      "count": 2071
+      "count": 2073
     },
     {
       "domain": "belgium.be",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 114680,
-    "script_dependency": 35114,
-    "stylesheet_dependency": 29756,
-    "image_or_media_dependency": 24948,
-    "form_destination": 15971,
-    "font_or_preload_dependency": 5332
+    "editorial_link": 114855,
+    "script_dependency": 35135,
+    "stylesheet_dependency": 29769,
+    "image_or_media_dependency": 24959,
+    "form_destination": 15976,
+    "font_or_preload_dependency": 5334
   },
-  "generated_at": "2026-07-29T13:33:38.052240+00:00"
+  "generated_at": "2026-07-29T19:12:49.895043+00:00"
 }
