@@ -1,11 +1,11 @@
 {
   "country_code": "SLOVENIA",
-  "total_relationships": 872,
+  "total_relationships": 881,
   "total_source_domains": 16,
   "top_source_domains": [
     {
       "domain": "gov.si",
-      "count": 1148
+      "count": 1196
     },
     {
       "domain": "ptuj.si",
@@ -71,11 +71,11 @@
   "top_target_domains": [
     {
       "domain": "gov.si",
-      "count": 798
+      "count": 816
     },
     {
       "domain": "facebook.com",
-      "count": 62
+      "count": 65
     },
     {
       "domain": "ljubljana.si",
@@ -91,11 +91,11 @@
     },
     {
       "domain": "youtube.com",
-      "count": 44
+      "count": 47
     },
     {
       "domain": "googleapis.com",
-      "count": 43
+      "count": 46
     },
     {
       "domain": "celje.si",
@@ -115,7 +115,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 29
+      "count": 32
     },
     {
       "domain": "europa.eu",
@@ -142,6 +142,10 @@
       "count": 16
     },
     {
+      "domain": "linkedin.com",
+      "count": 15
+    },
+    {
       "domain": "koper.si",
       "count": 15
     },
@@ -162,16 +166,16 @@
       "count": 12
     },
     {
-      "domain": "linkedin.com",
-      "count": 12
-    },
-    {
       "domain": "dvk-rs.si",
       "count": 12
     },
     {
       "domain": "kranj.si",
       "count": 12
+    },
+    {
+      "domain": "evropskasredstva.si",
+      "count": 11
     },
     {
       "domain": "cloudflare.com",
@@ -203,10 +207,6 @@
     },
     {
       "domain": "rs-rs.si",
-      "count": 8
-    },
-    {
-      "domain": "evropskasredstva.si",
       "count": 8
     },
     {
@@ -271,12 +271,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 512,
-    "script_dependency": 112,
-    "stylesheet_dependency": 94,
-    "image_or_media_dependency": 95,
-    "form_destination": 43,
+    "editorial_link": 517,
+    "script_dependency": 113,
+    "stylesheet_dependency": 95,
+    "image_or_media_dependency": 96,
+    "form_destination": 44,
     "font_or_preload_dependency": 16
   },
-  "generated_at": "2026-07-22T02:04:02.804221+00:00"
+  "generated_at": "2026-07-29T01:23:29.756155+00:00"
 }
