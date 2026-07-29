@@ -25,8 +25,8 @@
     "file": "czechia.json"
   },
   "CANADA": {
-    "total_relationships": 225801,
-    "total_source_domains": 5389,
+    "total_relationships": 226028,
+    "total_source_domains": 5393,
     "file": "canada.json"
   },
   "LITHUANIA": {
@@ -60,8 +60,8 @@
     "file": "portugal.json"
   },
   "REPUBLIC_OF_CYPRUS": {
-    "total_relationships": 225801,
-    "total_source_domains": 5389,
+    "total_relationships": 226028,
+    "total_source_domains": 5393,
     "file": "republic_of_cyprus.json"
   },
   "MALTA": {
@@ -79,14 +79,9 @@
     "total_source_domains": 51,
     "file": "bulgaria.json"
   },
-  "NETHERLANDS": {
-    "total_relationships": 2889,
-    "total_source_domains": 73,
-    "file": "netherlands.json"
-  },
-  "ITALY": {
-    "total_relationships": 15255,
-    "total_source_domains": 151,
-    "file": "italy.json"
+  "ROMANIA": {
+    "total_relationships": 948,
+    "total_source_domains": 11,
+    "file": "romania.json"
   }
 }
