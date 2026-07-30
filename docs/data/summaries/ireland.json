@@ -1,6 +1,6 @@
 {
   "country_code": "IRELAND",
-  "total_relationships": 2070,
+  "total_relationships": 2072,
   "total_source_domains": 104,
   "top_source_domains": [
     {
@@ -32,12 +32,12 @@
       "count": 154
     },
     {
-      "domain": "kildarecoco.ie",
+      "domain": "limerick.ie",
       "count": 153
     },
     {
-      "domain": "limerick.ie",
-      "count": 151
+      "domain": "kildarecoco.ie",
+      "count": 153
     },
     {
       "domain": "louthcoco.ie",
@@ -263,11 +263,11 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 78
+      "count": 79
     },
     {
       "domain": "limerick.ie",
-      "count": 71
+      "count": 72
     },
     {
       "domain": "louthcoco.ie",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 1002,
+    "editorial_link": 1003,
     "script_dependency": 411,
-    "stylesheet_dependency": 292,
+    "stylesheet_dependency": 293,
     "font_or_preload_dependency": 51,
     "image_or_media_dependency": 185,
     "form_destination": 129
   },
-  "generated_at": "2026-07-26T07:47:24.362184+00:00"
+  "generated_at": "2026-07-30T07:46:13.851050+00:00"
 }
