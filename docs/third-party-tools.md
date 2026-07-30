@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-07-30 02:13 UTC — last scan: 2026-07-29_
+_Stats as of 2026-07-30 03:20 UTC — last scan: 2026-07-30_
 
-**97** scan batches run
+**99** scan batches run
 
 **17,270** of **87,696** available pages scanned (**19.7%** coverage)
 **15,994** of **17,270** scanned pages were reachable (**92.6%**)
 **7,561** reachable pages loaded at least one third-party script (**47.3%** of reachable)
-**10,453** known third-party service loads identified
+**10,455** known third-party service loads identified
 **22** unique known services across **14** categories
 
 ---
@@ -34,10 +34,10 @@ _Stats as of 2026-07-30 02:13 UTC — last scan: 2026-07-29_
 | Germany | 427 | 6,599 | 414 | 84 | 101 | 20.3 | 24.4 | 2026-07-25 |
 | Greece | 520 | 1,752 | 490 | 227 | 298 | 46.3 | 60.8 | 2026-07-26 |
 | Hungary | 392 | 392 | 296 | 128 | 196 | 43.2 | 66.2 | 2026-07-29 |
-| Iceland | 145 | 145 | 143 | 78 | 46 | 54.5 | 32.2 | 2026-07-27 |
+| Iceland | 145 | 145 | 143 | 78 | 46 | 54.5 | 32.2 | 2026-07-30 |
 | Ireland | 536 | 536 | 500 | 272 | 748 | 54.4 | 149.6 | 2026-07-29 |
 | Italy | 444 | 5,351 | 405 | 157 | 36 | 38.8 | 8.9 | 2026-07-27 |
-| Latvia | 803 | 803 | 762 | 267 | 285 | 35.0 | 37.4 | 2026-07-27 |
+| Latvia | 803 | 803 | 762 | 267 | 287 | 35.0 | 37.7 | 2026-07-30 |
 | Lithuania | 122 | 122 | 112 | 57 | 113 | 50.9 | 100.9 | 2026-07-27 |
 | Luxembourg | 573 | 573 | 446 | 312 | 128 | 70.0 | 28.7 | 2026-07-27 |
 | Malta | 610 | 610 | 592 | 465 | 1,279 | 78.5 | 216.0 | 2026-07-27 |
@@ -71,7 +71,7 @@ _Stats as of 2026-07-30 02:13 UTC — last scan: 2026-07-29_
 | 7 | Google Hosted Libraries | **585** |
 | 8 | Google Tag Manager | **577** |
 | 9 | CookieInformation | **403** |
-| 10 | Cookiebot | **364** |
+| 10 | Cookiebot | **366** |
 | 11 | Font Awesome | **233** |
 | 12 | Bootstrap | **127** |
 | 13 | OneTrust | **82** |
@@ -96,7 +96,7 @@ _Stats as of 2026-07-30 02:13 UTC — last scan: 2026-07-29_
 | 7 | Google Hosted Libraries | **519** | **161.2%** |
 | 8 | unpkg CDN | **465** | **144.4%** |
 | 9 | CookieInformation | **403** | **125.2%** |
-| 10 | Cookiebot | **359** | **111.5%** |
+| 10 | Cookiebot | **361** | **112.1%** |
 | 11 | Font Awesome | **189** | **58.7%** |
 | 12 | Bootstrap | **127** | **39.4%** |
 | 13 | OneTrust | **79** | **24.5%** |
@@ -115,7 +115,7 @@ _Stats as of 2026-07-30 02:13 UTC — last scan: 2026-07-29_
 | 1 | CDN | **5,303** |
 | 2 | Analytics | **1,717** |
 | 3 | JavaScript Library | **1,482** |
-| 4 | Cookie Consent | **849** |
+| 4 | Cookie Consent | **851** |
 | 5 | Security | **715** |
 | 6 | CAPTCHA | **693** |
 | 7 | Tag Manager | **646** |
@@ -143,7 +143,7 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 | # | Policy-Relevant Category | Loads |
 |--:|--------------------------|------:|
 | 1 | Analytics | **1,717** |
-| 2 | Cookie Consent | **849** |
+| 2 | Cookie Consent | **851** |
 | 3 | Security | **715** |
 | 4 | CAPTCHA | **693** |
 | 5 | Tag Manager | **646** |
