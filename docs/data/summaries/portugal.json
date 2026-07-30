@@ -1,7 +1,7 @@
 {
   "country_code": "PORTUGAL",
-  "total_relationships": 12817,
-  "total_source_domains": 385,
+  "total_relationships": 13063,
+  "total_source_domains": 389,
   "top_source_domains": [
     {
       "domain": "azores.gov.pt",
@@ -211,27 +211,27 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 1255
+      "count": 1274
     },
     {
       "domain": "facebook.com",
-      "count": 1094
+      "count": 1110
     },
     {
       "domain": "youtube.com",
-      "count": 863
+      "count": 876
     },
     {
       "domain": "instagram.com",
-      "count": 862
+      "count": 875
     },
     {
       "domain": "googletagmanager.com",
-      "count": 802
+      "count": 807
     },
     {
       "domain": "google.com",
-      "count": 770
+      "count": 771
     },
     {
       "domain": "madeira.gov.pt",
@@ -239,19 +239,19 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 446
+      "count": 450
+    },
+    {
+      "domain": "livroreclamacoes.pt",
+      "count": 432
     },
     {
       "domain": "justica.gov.pt",
       "count": 427
     },
     {
-      "domain": "livroreclamacoes.pt",
-      "count": 426
-    },
-    {
       "domain": "twitter.com",
-      "count": 402
+      "count": 411
     },
     {
       "domain": "jsdelivr.net",
@@ -259,19 +259,19 @@
     },
     {
       "domain": "parlamento.pt",
-      "count": 393
+      "count": 396
     },
     {
       "domain": "portugal.gov.pt",
-      "count": 392
+      "count": 395
     },
     {
       "domain": "wiremaze.com",
-      "count": 390
+      "count": 393
     },
     {
       "domain": "presidencia.pt",
-      "count": 347
+      "count": 350
     },
     {
       "domain": "gstatic.com",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 287
+      "count": 291
     },
     {
       "domain": "europa.eu",
@@ -291,7 +291,7 @@
     },
     {
       "domain": "anmp.pt",
-      "count": 222
+      "count": 225
     },
     {
       "domain": "cm-ob.pt",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 6981,
-    "script_dependency": 2077,
-    "font_or_preload_dependency": 425,
-    "stylesheet_dependency": 1508,
-    "image_or_media_dependency": 1096,
-    "form_destination": 730
+    "editorial_link": 7175,
+    "script_dependency": 2097,
+    "font_or_preload_dependency": 426,
+    "stylesheet_dependency": 1524,
+    "image_or_media_dependency": 1103,
+    "form_destination": 738
   },
-  "generated_at": "2026-07-30T07:46:13.352482+00:00"
+  "generated_at": "2026-07-30T13:26:53.600390+00:00"
 }
