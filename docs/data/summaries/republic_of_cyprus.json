@@ -1,7 +1,7 @@
 {
   "country_code": "REPUBLIC_OF_CYPRUS",
-  "total_relationships": 226956,
-  "total_source_domains": 5426,
+  "total_relationships": 229862,
+  "total_source_domains": 5578,
   "top_source_domains": [
     {
       "domain": "ethz.ch",
@@ -13,7 +13,7 @@
     },
     {
       "domain": "krakow.pl",
-      "count": 22621
+      "count": 22635
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -193,21 +193,21 @@
     },
     {
       "domain": "uni.opole.pl",
-      "count": 1997
+      "count": 2080
+    },
+    {
+      "domain": "ug.edu.pl",
+      "count": 2008
     },
     {
       "domain": "canada.ca",
       "count": 1940
-    },
-    {
-      "domain": "politiaromana.ro",
-      "count": 1876
     }
   ],
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 23519
+      "count": 23849
     },
     {
       "domain": "sachsen.de",
@@ -219,7 +219,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 18159
+      "count": 18519
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -227,35 +227,35 @@
     },
     {
       "domain": "instagram.com",
-      "count": 14304
+      "count": 14450
     },
     {
       "domain": "youtube.com",
-      "count": 13783
+      "count": 13902
     },
     {
       "domain": "twitter.com",
-      "count": 11707
+      "count": 11757
     },
     {
       "domain": "krakow.pl",
-      "count": 11081
+      "count": 11090
+    },
+    {
+      "domain": "linkedin.com",
+      "count": 10418
     },
     {
       "domain": "niedersachsen.de",
       "count": 10402
     },
     {
-      "domain": "linkedin.com",
-      "count": 10391
-    },
-    {
       "domain": "google.com",
-      "count": 9724
+      "count": 9842
     },
     {
       "domain": "lodz.pl",
-      "count": 9085
+      "count": 9086
     },
     {
       "domain": "rlp.de",
@@ -263,7 +263,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 8215
+      "count": 8352
     },
     {
       "domain": "gouv.qc.ca",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 6059
+      "count": 6127
     },
     {
       "domain": "esteri.it",
@@ -291,7 +291,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 5223
+      "count": 5297
     },
     {
       "domain": "gencat.cat",
@@ -303,7 +303,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 4622
+      "count": 4716
     },
     {
       "domain": "gov.mt",
@@ -335,7 +335,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 2953
+      "count": 2954
     },
     {
       "domain": "haute-garonne.fr",
@@ -347,15 +347,15 @@
     },
     {
       "domain": "x.com",
-      "count": 2724
+      "count": 2725
+    },
+    {
+      "domain": "fontawesome.com",
+      "count": 2662
     },
     {
       "domain": "diplo.de",
       "count": 2658
-    },
-    {
-      "domain": "fontawesome.com",
-      "count": 2625
     },
     {
       "domain": "xunta.gal",
@@ -367,11 +367,11 @@
     },
     {
       "domain": "unpkg.com",
-      "count": 2274
+      "count": 2295
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 2166
+      "count": 2201
     },
     {
       "domain": "steiermark.at",
@@ -379,7 +379,7 @@
     },
     {
       "domain": "jquery.com",
-      "count": 2087
+      "count": 2100
     },
     {
       "domain": "sachsen-anhalt.de",
@@ -391,7 +391,7 @@
     },
     {
       "domain": "torun.pl",
-      "count": 2045
+      "count": 2048
     },
     {
       "domain": "skolengo.com",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 115283,
-    "script_dependency": 35298,
-    "stylesheet_dependency": 29880,
-    "image_or_media_dependency": 25054,
-    "form_destination": 16053,
-    "font_or_preload_dependency": 5388
+    "editorial_link": 116938,
+    "script_dependency": 35701,
+    "stylesheet_dependency": 30235,
+    "image_or_media_dependency": 25322,
+    "form_destination": 16190,
+    "font_or_preload_dependency": 5476
   },
-  "generated_at": "2026-07-30T01:23:28.851813+00:00"
+  "generated_at": "2026-07-30T07:46:13.593312+00:00"
 }
