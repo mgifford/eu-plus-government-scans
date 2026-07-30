@@ -1,6 +1,6 @@
 {
   "country_code": "CANADA",
-  "total_relationships": 232054,
+  "total_relationships": 232067,
   "total_source_domains": 5637,
   "top_source_domains": [
     {
@@ -49,7 +49,7 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 9935
+      "count": 10085
     },
     {
       "domain": "nrw.de",
@@ -88,16 +88,16 @@
       "count": 4859
     },
     {
+      "domain": "gva.es",
+      "count": 4605
+    },
+    {
       "domain": "torun.pl",
       "count": 4571
     },
     {
       "domain": "xunta.gal",
       "count": 4527
-    },
-    {
-      "domain": "gva.es",
-      "count": 4478
     },
     {
       "domain": "hessen.de",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 24022
+      "count": 24034
     },
     {
       "domain": "sachsen.de",
@@ -219,7 +219,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 18668
+      "count": 18670
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -227,15 +227,15 @@
     },
     {
       "domain": "instagram.com",
-      "count": 14541
+      "count": 14545
     },
     {
       "domain": "youtube.com",
-      "count": 14003
+      "count": 14014
     },
     {
       "domain": "twitter.com",
-      "count": 11888
+      "count": 11902
     },
     {
       "domain": "krakow.pl",
@@ -243,7 +243,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 10499
+      "count": 10502
     },
     {
       "domain": "niedersachsen.de",
@@ -251,7 +251,7 @@
     },
     {
       "domain": "google.com",
-      "count": 9956
+      "count": 9963
     },
     {
       "domain": "lodz.pl",
@@ -294,16 +294,16 @@
       "count": 5350
     },
     {
+      "domain": "castillalamancha.es",
+      "count": 5006
+    },
+    {
       "domain": "gencat.cat",
       "count": 4999
     },
     {
-      "domain": "castillalamancha.es",
-      "count": 4928
-    },
-    {
       "domain": "gstatic.com",
-      "count": 4735
+      "count": 4736
     },
     {
       "domain": "gov.mt",
@@ -338,20 +338,20 @@
       "count": 2954
     },
     {
+      "domain": "gva.es",
+      "count": 2868
+    },
+    {
       "domain": "haute-garonne.fr",
       "count": 2859
     },
     {
-      "domain": "gva.es",
-      "count": 2806
-    },
-    {
       "domain": "x.com",
-      "count": 2749
+      "count": 2750
     },
     {
       "domain": "fontawesome.com",
-      "count": 2697
+      "count": 2698
     },
     {
       "domain": "diplo.de",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 117978,
-    "script_dependency": 36102,
-    "stylesheet_dependency": 30549,
-    "image_or_media_dependency": 25554,
-    "form_destination": 16360,
+    "editorial_link": 117987,
+    "script_dependency": 36103,
+    "stylesheet_dependency": 30550,
+    "image_or_media_dependency": 25555,
+    "form_destination": 16361,
     "font_or_preload_dependency": 5511
   },
-  "generated_at": "2026-07-30T13:26:53.239689+00:00"
+  "generated_at": "2026-07-30T19:22:15.635745+00:00"
 }
