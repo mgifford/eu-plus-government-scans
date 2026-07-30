@@ -5,9 +5,9 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-07-30 23:09 UTC — last scan: 2026-07-30_
+_Stats as of 2026-07-30 23:24 UTC — last scan: 2026-07-30_
 
-**63** scan batches run
+**64** scan batches run
 
 **17,221** of **87,696** available pages scanned (**19.6%** coverage)
 **7,049** pages with technology detections (**40.9%** of scanned)
@@ -31,7 +31,7 @@ _Stats as of 2026-07-30 23:09 UTC — last scan: 2026-07-30_
 | France | 473 | 138 | 10,009 | 2026-07-26 |
 | Germany | 931 | 465 | 6,599 | 2026-07-26 |
 | Greece | 663 | 297 | 1,752 | 2026-07-26 |
-| Hungary | 392 | 296 | 392 | 2026-07-23 |
+| Hungary | 392 | 296 | 392 | 2026-07-30 |
 | Iceland | 145 | 143 | 145 | 2026-07-23 |
 | Ireland | 536 | 286 | 536 | 2026-07-26 |
 | Italy | 450 | 332 | 5,351 | 2026-07-26 |
