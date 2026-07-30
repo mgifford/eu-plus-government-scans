@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-07-29 22:35 UTC_
+_Generated: 2026-07-30 00:08 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -13,8 +13,8 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
-| **Combined Reachability** | **80,270 confirmed reachable** | 87,696 | **<span role="img" aria-label="91.5% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:110px;"></span></span><span class="sm-bar__label">91.5%</span></span>** | — |
-| Social Media | 87,696 scanned (80,269 reachable) | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 5.3 days |
+| **Combined Reachability** | **80,345 confirmed reachable** | 87,696 | **<span role="img" aria-label="91.6% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:110px;"></span></span><span class="sm-bar__label">91.6%</span></span>** | — |
+| Social Media | 87,696 scanned (80,344 reachable) | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 5.3 days |
 | Technology | 16,894 scanned | 87,696 | <span role="img" aria-label="19.3% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:23px;"></span></span><span class="sm-bar__label">19.3%</span></span> | 4.5 days |
 | Lighthouse | 0 scanned | 87,696 | (manual scan) | — |
 | Accessibility Statements | 35,543 scanned | 87,696 | <span role="img" aria-label="40.5% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:49px;"></span></span><span class="sm-bar__label">40.5%</span></span> | 4.9 days |
@@ -46,7 +46,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Denmark | 1,536 | 1,536 | 1,507 | 555 | 0 | 25 | 944 | 169 | 20 | 17 | 11 | Jul 2026 |
 | Estonia | 401 | 401 | 385 | 180 | 3 | 24 | 178 | 62 | 1 | 0 | 27 | Jul 2026 |
 | Finland | 199 | 199 | 189 | 69 | 0 | 9 | 111 | 31 | 10 | 3 | 6 | Jul 2026 |
-| France | 10,009 | 10,009 | 9,136 | 2,523 | 28 | 559 | 6,046 | 1,500 | 547 | 121 | 511 | Jul 2026 |
+| France | 10,009 | 10,009 | 9,137 | 2,523 | 28 | 560 | 6,046 | 1,500 | 547 | 121 | 512 | Jul 2026 |
 | Germany | 6,599 | 6,599 | 6,508 | 1,662 | 84 | 455 | 4,334 | 1,152 | 186 | 146 | 485 | Jul 2026 |
 | Greece | 1,752 | 1,752 | 1,620 | 445 | 2 | 110 | 1,130 | 236 | 58 | 0 | 112 | Jul 2026 |
 | Hungary | 392 | 392 | 293 | 115 | 1 | 24 | 158 | 26 | 0 | 0 | 25 | Jul 2026 |
@@ -65,7 +65,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Romania | 807 | 807 | 345 | 121 | 3 | 13 | 216 | 45 | 6 | 0 | 16 | Jul 2026 |
 | Slovakia | 442 | 442 | 421 | 136 | 0 | 27 | 263 | 19 | 12 | 1 | 26 | Jul 2026 |
 | Slovenia | 214 | 214 | 204 | 58 | 0 | 10 | 136 | 24 | 7 | 1 | 10 | Jul 2026 |
-| Spain | 6,091 | 6,091 | 4,964 | 1,717 | 11 | 319 | 2,920 | 1,472 | 404 | 58 | 290 | Jul 2026 |
+| Spain | 6,091 | 6,091 | 5,038 | 1,805 | 11 | 332 | 2,945 | 1,544 | 426 | 61 | 300 | Jul 2026 |
 | Sweden | 1,702 | 1,702 | 1,625 | 556 | 4 | 53 | 1,012 | 88 | 21 | 14 | 44 | Jul 2026 |
 | Switzerland | 2,123 | 2,123 | 2,072 | 561 | 28 | 149 | 1,338 | 227 | 227 | 52 | 139 | Jul 2026 |
 | United Kingdom | 19,511 | 19,511 | 18,477 | 6,234 | 29 | 696 | 11,532 | 3,764 | 1,013 | 112 | 658 | Jul 2026 |
