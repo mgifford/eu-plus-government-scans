@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-07-31 09:16 UTC — last scan: 2026-07-31_
+_Stats as of 2026-07-31 10:38 UTC — last scan: 2026-07-31_
 
-**110** scan batches run
+**112** scan batches run
 
 **17,631** of **87,696** available pages scanned (**20.1%** coverage)
-**16,331** of **17,631** scanned pages were reachable (**92.6%**)
-**7,669** reachable pages loaded at least one third-party script (**47.0%** of reachable)
-**10,507** known third-party service loads identified
+**16,334** of **17,631** scanned pages were reachable (**92.6%**)
+**7,672** reachable pages loaded at least one third-party script (**47.0%** of reachable)
+**10,510** known third-party service loads identified
 **23** unique known services across **16** categories
 
 ---
@@ -48,9 +48,9 @@ _Stats as of 2026-07-31 09:16 UTC — last scan: 2026-07-31_
 | Cyprus | 29 | 29 | 29 | 13 | 15 | 44.8 | 51.7 | 2026-07-30 |
 | Romania | 158 | 807 | 56 | 46 | 40 | 82.1 | 71.4 | 2026-07-31 |
 | Slovakia | 442 | 442 | 421 | 213 | 274 | 50.6 | 65.1 | 2026-07-31 |
-| Slovenia | 214 | 214 | 204 | 53 | 79 | 26.0 | 38.7 | 2026-07-28 |
+| Slovenia | 214 | 214 | 207 | 56 | 82 | 27.1 | 39.6 | 2026-07-31 |
 | Spain | 291 | 6,091 | 232 | 149 | 153 | 64.2 | 65.9 | 2026-07-27 |
-| Sweden | 1,184 | 1,702 | 1,118 | 288 | 137 | 25.8 | 12.3 | 2026-07-28 |
+| Sweden | 1,184 | 1,702 | 1,118 | 288 | 137 | 25.8 | 12.3 | 2026-07-31 |
 | Switzerland | 590 | 2,123 | 577 | 151 | 162 | 26.2 | 28.1 | 2026-07-28 |
 | United Kingdom | 337 | 19,511 | 322 | 144 | 165 | 44.7 | 51.2 | 2026-07-28 |
 
@@ -64,7 +64,7 @@ _Stats as of 2026-07-31 09:16 UTC — last scan: 2026-07-31_
 |--:|---------|------:|
 | 1 | cdnjs (Cloudflare CDN) | **2,130** |
 | 2 | jsDelivr CDN | **2,014** |
-| 3 | Google Analytics (GA4) | **1,551** |
+| 3 | Google Analytics (GA4) | **1,554** |
 | 4 | jQuery | **906** |
 | 5 | Google reCAPTCHA | **693** |
 | 6 | unpkg CDN | **613** |
@@ -87,7 +87,7 @@ _Stats as of 2026-07-31 09:16 UTC — last scan: 2026-07-31_
 
 | # | Service | Reachable Pages | Prevalence of Reachable Pages |
 |--:|---------|----------------:|------------------------------:|
-| 1 | Google Analytics (GA4) | **1,524** | **473.3%** |
+| 1 | Google Analytics (GA4) | **1,527** | **474.2%** |
 | 2 | jsDelivr CDN | **1,086** | **337.3%** |
 | 3 | cdnjs (Cloudflare CDN) | **802** | **249.1%** |
 | 4 | Google reCAPTCHA | **672** | **208.7%** |
@@ -113,7 +113,7 @@ _Stats as of 2026-07-31 09:16 UTC — last scan: 2026-07-31_
 | # | Category | Loads |
 |--:|----------|------:|
 | 1 | CDN | **5,347** |
-| 2 | Analytics | **1,708** |
+| 2 | Analytics | **1,711** |
 | 3 | JavaScript Library | **1,496** |
 | 4 | Cookie Consent | **851** |
 | 5 | Security | **715** |
@@ -143,7 +143,7 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 
 | # | Policy-Relevant Category | Loads |
 |--:|--------------------------|------:|
-| 1 | Analytics | **1,708** |
+| 1 | Analytics | **1,711** |
 | 2 | Cookie Consent | **851** |
 | 3 | Security | **715** |
 | 4 | CAPTCHA | **693** |
@@ -173,7 +173,7 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 | 11 | `hubcdn.arcgis.com` | **225** | **45** |
 | 12 | `www.youtube.com` | **221** | **221** |
 | 13 | `cdn.herning.dk` | **221** | **22** |
-| 14 | `translate.google.com` | **212** | **212** |
+| 14 | `translate.google.com` | **215** | **215** |
 | 15 | `content.powerapps.com` | **192** | **16** |
 
 > These hosts were seen as third-party script sources but did not match a known service signature. Review this queue regularly and promote stable, policy-relevant hosts into the signature list.
