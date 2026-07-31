@@ -1,6 +1,6 @@
 {
   "country_code": "PORTUGAL",
-  "total_relationships": 13063,
+  "total_relationships": 13113,
   "total_source_domains": 389,
   "top_source_domains": [
     {
@@ -72,6 +72,10 @@
       "count": 278
     },
     {
+      "domain": "cm-tomar.pt",
+      "count": 264
+    },
+    {
       "domain": "cm-almada.pt",
       "count": 261
     },
@@ -82,6 +86,10 @@
     {
       "domain": "dgterritorio.gov.pt",
       "count": 253
+    },
+    {
+      "domain": "cm-constancia.pt",
+      "count": 246
     },
     {
       "domain": "cm-feira.pt",
@@ -114,6 +122,10 @@
     {
       "domain": "cm-ovar.pt",
       "count": 228
+    },
+    {
+      "domain": "cm-entroncamento.pt",
+      "count": 221
     },
     {
       "domain": "cm-fundao.pt",
@@ -190,18 +202,6 @@
     {
       "domain": "portaldasfinancas.gov.pt",
       "count": 170
-    },
-    {
-      "domain": "cm-amadora.pt",
-      "count": 169
-    },
-    {
-      "domain": "cm-leiria.pt",
-      "count": 165
-    },
-    {
-      "domain": "cm-ilhavo.pt",
-      "count": 161
     }
   ],
   "top_target_domains": [
@@ -211,27 +211,27 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 1274
+      "count": 1292
     },
     {
       "domain": "facebook.com",
-      "count": 1110
-    },
-    {
-      "domain": "youtube.com",
-      "count": 876
+      "count": 1127
     },
     {
       "domain": "instagram.com",
-      "count": 875
+      "count": 889
+    },
+    {
+      "domain": "youtube.com",
+      "count": 887
     },
     {
       "domain": "googletagmanager.com",
-      "count": 807
+      "count": 813
     },
     {
       "domain": "google.com",
-      "count": 771
+      "count": 773
     },
     {
       "domain": "madeira.gov.pt",
@@ -239,11 +239,11 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 450
+      "count": 453
     },
     {
       "domain": "livroreclamacoes.pt",
-      "count": 432
+      "count": 438
     },
     {
       "domain": "justica.gov.pt",
@@ -251,7 +251,7 @@
     },
     {
       "domain": "twitter.com",
-      "count": 411
+      "count": 418
     },
     {
       "domain": "jsdelivr.net",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 291
+      "count": 295
     },
     {
       "domain": "europa.eu",
@@ -394,25 +394,25 @@
       "count": 112
     },
     {
+      "domain": "cm-constancia.pt",
+      "count": 111
+    },
+    {
       "domain": "cm-pontedelima.pt",
       "count": 110
     },
     {
       "domain": "cm-fundao.pt",
       "count": 108
-    },
-    {
-      "domain": "cm-tvedras.pt",
-      "count": 105
     }
   ],
   "relationship_types": {
-    "editorial_link": 7175,
-    "script_dependency": 2097,
+    "editorial_link": 7201,
+    "script_dependency": 2106,
     "font_or_preload_dependency": 426,
-    "stylesheet_dependency": 1524,
-    "image_or_media_dependency": 1103,
-    "form_destination": 738
+    "stylesheet_dependency": 1530,
+    "image_or_media_dependency": 1107,
+    "form_destination": 743
   },
-  "generated_at": "2026-07-30T13:26:53.600390+00:00"
+  "generated_at": "2026-07-31T13:30:44.459346+00:00"
 }
