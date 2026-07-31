@@ -1,6 +1,6 @@
 {
   "country_code": "ITALY",
-  "total_relationships": 15255,
+  "total_relationships": 15786,
   "total_source_domains": 151,
   "top_source_domains": [
     {
@@ -13,7 +13,7 @@
     },
     {
       "domain": "cultura.gov.it",
-      "count": 3441
+      "count": 5508
     },
     {
       "domain": "regione.lombardia.it",
@@ -61,7 +61,7 @@
     },
     {
       "domain": "mef.gov.it",
-      "count": 598
+      "count": 613
     },
     {
       "domain": "governo.it",
@@ -215,27 +215,27 @@
     },
     {
       "domain": "facebook.com",
-      "count": 2465
-    },
-    {
-      "domain": "twitter.com",
-      "count": 2018
-    },
-    {
-      "domain": "youtube.com",
-      "count": 1967
-    },
-    {
-      "domain": "agid.gov.it",
-      "count": 1608
-    },
-    {
-      "domain": "instagram.com",
-      "count": 1525
+      "count": 2595
     },
     {
       "domain": "cultura.gov.it",
-      "count": 1490
+      "count": 2515
+    },
+    {
+      "domain": "youtube.com",
+      "count": 2050
+    },
+    {
+      "domain": "twitter.com",
+      "count": 2032
+    },
+    {
+      "domain": "agid.gov.it",
+      "count": 1665
+    },
+    {
+      "domain": "instagram.com",
+      "count": 1628
     },
     {
       "domain": "governo.it",
@@ -251,11 +251,11 @@
     },
     {
       "domain": "europa.eu",
-      "count": 912
+      "count": 913
     },
     {
       "domain": "googleapis.com",
-      "count": 802
+      "count": 835
     },
     {
       "domain": "viaggiaresicuri.it",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 608
+      "count": 617
     },
     {
       "domain": "comune.parma.it",
@@ -302,31 +302,39 @@
       "count": 475
     },
     {
-      "domain": "comune.verona.it",
-      "count": 398
+      "domain": "beniculturali.it",
+      "count": 463
     },
     {
       "domain": "google.com",
-      "count": 397
+      "count": 407
+    },
+    {
+      "domain": "googletagmanager.com",
+      "count": 398
+    },
+    {
+      "domain": "comune.verona.it",
+      "count": 398
     },
     {
       "domain": "comune.bologna.it",
       "count": 397
     },
     {
-      "domain": "googletagmanager.com",
-      "count": 382
+      "domain": "mef.gov.it",
+      "count": 360
     },
     {
       "domain": "csm.it",
       "count": 359
     },
     {
-      "domain": "regione.toscana.it",
-      "count": 349
+      "domain": "jsdelivr.net",
+      "count": 354
     },
     {
-      "domain": "mef.gov.it",
+      "domain": "regione.toscana.it",
       "count": 349
     },
     {
@@ -334,16 +342,12 @@
       "count": 346
     },
     {
-      "domain": "jsdelivr.net",
-      "count": 345
-    },
-    {
       "domain": "interno.gov.it",
       "count": 313
     },
     {
-      "domain": "beniculturali.it",
-      "count": 274
+      "domain": "cloudflare.com",
+      "count": 272
     },
     {
       "domain": "difesa.it",
@@ -352,10 +356,6 @@
     {
       "domain": "regione.sicilia.it",
       "count": 270
-    },
-    {
-      "domain": "cloudflare.com",
-      "count": 260
     },
     {
       "domain": "comune.genova.it",
@@ -391,7 +391,7 @@
     },
     {
       "domain": "italia.it",
-      "count": 182
+      "count": 184
     },
     {
       "domain": "italea.com",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 7110,
-    "script_dependency": 2449,
-    "stylesheet_dependency": 2173,
-    "image_or_media_dependency": 1896,
-    "form_destination": 1391,
-    "font_or_preload_dependency": 236
+    "editorial_link": 7305,
+    "script_dependency": 2544,
+    "stylesheet_dependency": 2267,
+    "image_or_media_dependency": 1992,
+    "form_destination": 1434,
+    "font_or_preload_dependency": 244
   },
-  "generated_at": "2026-07-29T13:33:38.813270+00:00"
+  "generated_at": "2026-07-31T07:52:16.701746+00:00"
 }
