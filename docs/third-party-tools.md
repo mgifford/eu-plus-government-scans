@@ -5,9 +5,9 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-07-31 15:06 UTC — last scan: 2026-07-31_
+_Stats as of 2026-07-31 15:38 UTC — last scan: 2026-07-31_
 
-**112** scan batches run
+**114** scan batches run
 
 **17,631** of **87,696** available pages scanned (**20.1%** coverage)
 **16,334** of **17,631** scanned pages were reachable (**92.6%**)
@@ -21,9 +21,9 @@ _Stats as of 2026-07-31 15:06 UTC — last scan: 2026-07-31_
 
 | Country | Scanned | Available | Reachable | URLs with 3rd-Party JS | Known Service Loads | JS URLs /100 Reachable | Known Loads /100 Reachable | Last Scan |
 |---------|---------|-----------|-----------|------------------------|--------------------|------------------------|---------------------------|----------|
-| Austria | 822 | 822 | 787 | 273 | 50 | 34.7 | 6.4 | 2026-07-28 |
+| Austria | 822 | 822 | 787 | 273 | 50 | 34.7 | 6.4 | 2026-07-31 |
 | Belgium | 1,181 | 1,329 | 1,090 | 573 | 660 | 52.6 | 60.6 | 2026-07-29 |
-| Bulgaria | 353 | 353 | 320 | 128 | 158 | 40.0 | 49.4 | 2026-07-28 |
+| Bulgaria | 353 | 353 | 320 | 128 | 158 | 40.0 | 49.4 | 2026-07-31 |
 | Canada | 1,066 | 4,469 | 1,022 | 643 | 953 | 62.9 | 93.2 | 2026-07-29 |
 | Croatia | 257 | 257 | 255 | 140 | 175 | 54.9 | 68.6 | 2026-07-29 |
 | Czechia | 866 | 866 | 796 | 491 | 835 | 61.7 | 104.9 | 2026-07-29 |
