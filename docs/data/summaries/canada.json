@@ -1,7 +1,7 @@
 {
   "country_code": "CANADA",
-  "total_relationships": 232067,
-  "total_source_domains": 5637,
+  "total_relationships": 232608,
+  "total_source_domains": 5656,
   "top_source_domains": [
     {
       "domain": "ethz.ch",
@@ -121,7 +121,7 @@
     },
     {
       "domain": "developpement-durable.gouv.fr",
-      "count": 3658
+      "count": 3672
     },
     {
       "domain": "belgium.be",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 24034
+      "count": 24122
     },
     {
       "domain": "sachsen.de",
@@ -219,7 +219,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 18670
+      "count": 18694
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -227,15 +227,15 @@
     },
     {
       "domain": "instagram.com",
-      "count": 14545
+      "count": 14602
     },
     {
       "domain": "youtube.com",
-      "count": 14014
+      "count": 14031
     },
     {
       "domain": "twitter.com",
-      "count": 11902
+      "count": 11961
     },
     {
       "domain": "krakow.pl",
@@ -243,7 +243,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 10502
+      "count": 10567
     },
     {
       "domain": "niedersachsen.de",
@@ -251,7 +251,7 @@
     },
     {
       "domain": "google.com",
-      "count": 9963
+      "count": 9973
     },
     {
       "domain": "lodz.pl",
@@ -263,7 +263,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 8485
+      "count": 8490
     },
     {
       "domain": "gouv.qc.ca",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 6169
+      "count": 6181
     },
     {
       "domain": "esteri.it",
@@ -291,7 +291,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 5350
+      "count": 5366
     },
     {
       "domain": "castillalamancha.es",
@@ -303,7 +303,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 4736
+      "count": 4742
     },
     {
       "domain": "gov.mt",
@@ -335,7 +335,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 2954
+      "count": 2958
     },
     {
       "domain": "gva.es",
@@ -347,11 +347,11 @@
     },
     {
       "domain": "x.com",
-      "count": 2750
+      "count": 2776
     },
     {
       "domain": "fontawesome.com",
-      "count": 2698
+      "count": 2701
     },
     {
       "domain": "diplo.de",
@@ -367,11 +367,11 @@
     },
     {
       "domain": "unpkg.com",
-      "count": 2308
+      "count": 2321
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 2218
+      "count": 2221
     },
     {
       "domain": "steiermark.at",
@@ -379,7 +379,7 @@
     },
     {
       "domain": "jquery.com",
-      "count": 2112
+      "count": 2119
     },
     {
       "domain": "sachsen-anhalt.de",
@@ -398,21 +398,21 @@
       "count": 1919
     },
     {
-      "domain": "developpement-durable.gouv.fr",
-      "count": 1824
+      "domain": "data.gouv.fr",
+      "count": 1853
     },
     {
-      "domain": "wallonie.be",
-      "count": 1810
+      "domain": "developpement-durable.gouv.fr",
+      "count": 1844
     }
   ],
   "relationship_types": {
-    "editorial_link": 117987,
-    "script_dependency": 36103,
-    "stylesheet_dependency": 30550,
-    "image_or_media_dependency": 25555,
-    "form_destination": 16361,
-    "font_or_preload_dependency": 5511
+    "editorial_link": 118301,
+    "script_dependency": 36169,
+    "stylesheet_dependency": 30611,
+    "image_or_media_dependency": 25609,
+    "form_destination": 16401,
+    "font_or_preload_dependency": 5517
   },
-  "generated_at": "2026-07-30T19:22:15.635745+00:00"
+  "generated_at": "2026-07-31T01:27:22.726535+00:00"
 }
