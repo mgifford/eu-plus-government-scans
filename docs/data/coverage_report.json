@@ -122,8 +122,8 @@
   "SPAIN": {
     "total_urls": 6091,
     "attempted": 6091,
-    "successful": 5111,
-    "failed": 980,
+    "successful": 5188,
+    "failed": 903,
     "skipped": 0,
     "never_scanned": 0,
     "stale_28d": 0

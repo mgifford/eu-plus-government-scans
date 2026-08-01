@@ -1,7 +1,7 @@
 {
   "country_code": "SPAIN",
-  "total_relationships": 15649,
-  "total_source_domains": 228,
+  "total_relationships": 15691,
+  "total_source_domains": 230,
   "top_source_domains": [
     {
       "domain": "castillalamancha.es",
@@ -132,6 +132,10 @@
       "count": 187
     },
     {
+      "domain": "inclusion.gob.es",
+      "count": 180
+    },
+    {
       "domain": "consumo.gob.es",
       "count": 159
     },
@@ -168,6 +172,10 @@
       "count": 132
     },
     {
+      "domain": "mapa.gob.es",
+      "count": 129
+    },
+    {
       "domain": "dgt.gob.es",
       "count": 129
     },
@@ -180,16 +188,8 @@
       "count": 120
     },
     {
-      "domain": "mapa.gob.es",
-      "count": 114
-    },
-    {
       "domain": "igualdad.gob.es",
       "count": 110
-    },
-    {
-      "domain": "inclusion.gob.es",
-      "count": 108
     },
     {
       "domain": "congreso.es",
@@ -219,11 +219,11 @@
     },
     {
       "domain": "facebook.com",
-      "count": 1373
+      "count": 1378
     },
     {
       "domain": "twitter.com",
-      "count": 1253
+      "count": 1259
     },
     {
       "domain": "navarra.es",
@@ -231,7 +231,7 @@
     },
     {
       "domain": "google.com",
-      "count": 1205
+      "count": 1206
     },
     {
       "domain": "googleapis.com",
@@ -239,7 +239,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 1144
+      "count": 1147
     },
     {
       "domain": "jccm.es",
@@ -247,7 +247,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 1003
+      "count": 1008
     },
     {
       "domain": "aragon.es",
@@ -263,7 +263,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 516
+      "count": 517
     },
     {
       "domain": "juntaex.es",
@@ -271,7 +271,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 444
+      "count": 448
     },
     {
       "domain": "educativa.com",
@@ -291,7 +291,7 @@
     },
     {
       "domain": "redsara.es",
-      "count": 352
+      "count": 355
     },
     {
       "domain": "blogspot.com",
@@ -302,20 +302,20 @@
       "count": 292
     },
     {
+      "domain": "x.com",
+      "count": 291
+    },
+    {
       "domain": "asturias.es",
       "count": 290
     },
     {
-      "domain": "x.com",
-      "count": 288
+      "domain": "europa.eu",
+      "count": 269
     },
     {
       "domain": "w3.org",
       "count": 264
-    },
-    {
-      "domain": "europa.eu",
-      "count": 261
     },
     {
       "domain": "google.es",
@@ -335,7 +335,7 @@
     },
     {
       "domain": "boe.es",
-      "count": 232
+      "count": 233
     },
     {
       "domain": "fontawesome.com",
@@ -343,7 +343,7 @@
     },
     {
       "domain": "insuit.net",
-      "count": 215
+      "count": 221
     },
     {
       "domain": "jsdelivr.net",
@@ -358,12 +358,12 @@
       "count": 203
     },
     {
-      "domain": "juntadeandalucia.es",
-      "count": 198
+      "domain": "defensa.gob.es",
+      "count": 199
     },
     {
-      "domain": "defensa.gob.es",
-      "count": 197
+      "domain": "juntadeandalucia.es",
+      "count": 198
     },
     {
       "domain": "blogspot.com.es",
@@ -374,12 +374,12 @@
       "count": 173
     },
     {
-      "domain": "ayto-fuenlabrada.es",
+      "domain": "administracion.gob.es",
       "count": 167
     },
     {
-      "domain": "administracion.gob.es",
-      "count": 166
+      "domain": "ayto-fuenlabrada.es",
+      "count": 167
     },
     {
       "domain": "wordpress.org",
@@ -391,7 +391,7 @@
     },
     {
       "domain": "transparencia.gob.es",
-      "count": 137
+      "count": 138
     },
     {
       "domain": "vimeo.com",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 8052,
-    "script_dependency": 2251,
-    "stylesheet_dependency": 1923,
+    "editorial_link": 8078,
+    "script_dependency": 2256,
+    "stylesheet_dependency": 1926,
     "font_or_preload_dependency": 153,
-    "image_or_media_dependency": 1886,
-    "form_destination": 1384
+    "image_or_media_dependency": 1890,
+    "form_destination": 1388
   },
-  "generated_at": "2026-07-31T19:22:34.549741+00:00"
+  "generated_at": "2026-08-01T01:27:02.672049+00:00"
 }
