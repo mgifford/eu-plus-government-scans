@@ -119,11 +119,11 @@
     "never_scanned": 0,
     "stale_28d": 0
   },
-  "ITALY": {
-    "total_urls": 5351,
-    "attempted": 5351,
-    "successful": 4863,
-    "failed": 488,
+  "PORTUGAL": {
+    "total_urls": 3508,
+    "attempted": 3508,
+    "successful": 2909,
+    "failed": 599,
     "skipped": 0,
     "never_scanned": 0,
     "stale_28d": 0
@@ -146,14 +146,8 @@
     "never_scanned": 0,
     "stale_28d": 0
   },
-  "POLAND": {
-    "total_urls": 14951,
-    "attempted": 10012,
-    "successful": 9061,
-    "failed": 951,
-    "skipped": 0,
-    "never_scanned": 4939,
-    "stale_28d": 0
+  "UNITED_KINGDOM_UK": {
+    "error": "TOON file not found"
   },
   "CROATIA": {
     "total_urls": 257,
@@ -173,11 +167,11 @@
     "never_scanned": 0,
     "stale_28d": 0
   },
-  "PORTUGAL": {
-    "total_urls": 3508,
-    "attempted": 3508,
-    "successful": 2909,
-    "failed": 599,
+  "SPAIN": {
+    "total_urls": 6091,
+    "attempted": 6091,
+    "successful": 5188,
+    "failed": 903,
     "skipped": 0,
     "never_scanned": 0,
     "stale_28d": 0
@@ -200,8 +194,14 @@
     "never_scanned": 0,
     "stale_28d": 0
   },
-  "UNITED_KINGDOM_UK": {
-    "error": "TOON file not found"
+  "FRANCE": {
+    "total_urls": 10009,
+    "attempted": 10009,
+    "successful": 9267,
+    "failed": 742,
+    "skipped": 0,
+    "never_scanned": 0,
+    "stale_28d": 0
   },
   "FINLAND": {
     "total_urls": 199,
@@ -221,11 +221,11 @@
     "never_scanned": 400,
     "stale_28d": 0
   },
-  "SPAIN": {
-    "total_urls": 6091,
-    "attempted": 6091,
-    "successful": 5188,
-    "failed": 903,
+  "ITALY": {
+    "total_urls": 5351,
+    "attempted": 5351,
+    "successful": 4863,
+    "failed": 488,
     "skipped": 0,
     "never_scanned": 0,
     "stale_28d": 0
@@ -248,13 +248,13 @@
     "never_scanned": 0,
     "stale_28d": 0
   },
-  "FRANCE": {
-    "total_urls": 10009,
-    "attempted": 10009,
-    "successful": 9267,
-    "failed": 742,
+  "POLAND": {
+    "total_urls": 14951,
+    "attempted": 10012,
+    "successful": 9061,
+    "failed": 951,
     "skipped": 0,
-    "never_scanned": 0,
+    "never_scanned": 4939,
     "stale_28d": 0
   },
   "SLOVENIA": {

@@ -1,7 +1,7 @@
 {
   "country_code": "REPUBLIC_OF_CYPRUS",
-  "total_relationships": 239103,
-  "total_source_domains": 5906,
+  "total_relationships": 246719,
+  "total_source_domains": 6239,
   "top_source_domains": [
     {
       "domain": "ethz.ch",
@@ -132,12 +132,12 @@
       "count": 3629
     },
     {
-      "domain": "ooe.gv.at",
-      "count": 3377
+      "domain": "blog.gov.uk",
+      "count": 3416
     },
     {
-      "domain": "blog.gov.uk",
-      "count": 3041
+      "domain": "ooe.gv.at",
+      "count": 3377
     },
     {
       "domain": "kk.dk",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 24901
+      "count": 25555
     },
     {
       "domain": "sachsen.de",
@@ -219,7 +219,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 19358
+      "count": 20097
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -227,15 +227,19 @@
     },
     {
       "domain": "instagram.com",
-      "count": 15008
+      "count": 15281
     },
     {
       "domain": "youtube.com",
-      "count": 14384
+      "count": 14613
     },
     {
       "domain": "twitter.com",
-      "count": 12275
+      "count": 12620
+    },
+    {
+      "domain": "google.com",
+      "count": 11121
     },
     {
       "domain": "krakow.pl",
@@ -243,23 +247,19 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 10768
+      "count": 10993
     },
     {
       "domain": "niedersachsen.de",
       "count": 10402
     },
     {
-      "domain": "google.com",
-      "count": 10358
+      "domain": "googletagmanager.com",
+      "count": 9391
     },
     {
       "domain": "lodz.pl",
       "count": 9086
-    },
-    {
-      "domain": "googletagmanager.com",
-      "count": 8861
     },
     {
       "domain": "rlp.de",
@@ -279,19 +279,23 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 6367
+      "count": 6551
+    },
+    {
+      "domain": "cloudflare.com",
+      "count": 5890
     },
     {
       "domain": "esteri.it",
       "count": 5757
     },
     {
-      "domain": "cloudflare.com",
-      "count": 5571
-    },
-    {
       "domain": "nrw.de",
       "count": 5507
+    },
+    {
+      "domain": "gstatic.com",
+      "count": 5123
     },
     {
       "domain": "castillalamancha.es",
@@ -300,10 +304,6 @@
     {
       "domain": "gencat.cat",
       "count": 4999
-    },
-    {
-      "domain": "gstatic.com",
-      "count": 4938
     },
     {
       "domain": "gov.mt",
@@ -335,7 +335,15 @@
     },
     {
       "domain": "europa.eu",
-      "count": 2985
+      "count": 2986
+    },
+    {
+      "domain": "fontawesome.com",
+      "count": 2947
+    },
+    {
+      "domain": "x.com",
+      "count": 2933
     },
     {
       "domain": "gva.es",
@@ -344,14 +352,6 @@
     {
       "domain": "haute-garonne.fr",
       "count": 2859
-    },
-    {
-      "domain": "x.com",
-      "count": 2848
-    },
-    {
-      "domain": "fontawesome.com",
-      "count": 2816
     },
     {
       "domain": "diplo.de",
@@ -366,20 +366,20 @@
       "count": 2583
     },
     {
+      "domain": "unpkg.com",
+      "count": 2521
+    },
+    {
       "domain": "cultura.gov.it",
       "count": 2515
     },
     {
-      "domain": "unpkg.com",
-      "count": 2383
-    },
-    {
       "domain": "bootstrapcdn.com",
-      "count": 2260
+      "count": 2356
     },
     {
       "domain": "jquery.com",
-      "count": 2182
+      "count": 2268
     },
     {
       "domain": "steiermark.at",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 121473,
-    "script_dependency": 37291,
-    "stylesheet_dependency": 31506,
-    "image_or_media_dependency": 26302,
-    "form_destination": 16818,
-    "font_or_preload_dependency": 5713
+    "editorial_link": 125285,
+    "script_dependency": 38861,
+    "stylesheet_dependency": 32416,
+    "image_or_media_dependency": 26938,
+    "form_destination": 17272,
+    "font_or_preload_dependency": 5947
   },
-  "generated_at": "2026-08-01T13:13:48.651984+00:00"
+  "generated_at": "2026-08-01T19:11:23.142618+00:00"
 }
