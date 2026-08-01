@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-08-01 16:34 UTC_
+_Generated: 2026-08-01 18:09 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -13,8 +13,8 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
-| **Combined Reachability** | **80,925 confirmed reachable** | 87,696 | **<span role="img" aria-label="92.3% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:111px;"></span></span><span class="sm-bar__label">92.3%</span></span>** | — |
-| Social Media | 87,696 scanned (80,924 reachable) | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 6.3 days |
+| **Combined Reachability** | **81,008 confirmed reachable** | 87,696 | **<span role="img" aria-label="92.4% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:111px;"></span></span><span class="sm-bar__label">92.4%</span></span>** | — |
+| Social Media | 87,696 scanned (81,007 reachable) | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 6.3 days |
 | Technology | 17,498 scanned | 87,696 | <span role="img" aria-label="20.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:24px;"></span></span><span class="sm-bar__label">20.0%</span></span> | 6.2 days |
 | Lighthouse | 0 scanned | 87,696 | (manual scan) | — |
 | Accessibility Statements | 38,089 scanned | 87,696 | <span role="img" aria-label="43.4% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:52px;"></span></span><span class="sm-bar__label">43.4%</span></span> | 6.6 days |
@@ -59,7 +59,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Malta | 610 | 610 | 592 | 120 | 2 | 36 | 452 | 47 | 14 | 0 | 38 | Jul 2026 |
 | Netherlands | 945 | 945 | 902 | 233 | 10 | 96 | 578 | 118 | 85 | 48 | 74 | Jul 2026 |
 | Norway | 249 | 249 | 242 | 57 | 2 | 0 | 184 | 9 | 13 | 0 | 2 | Jul 2026 |
-| Poland | 14,951 | 14,951 | 13,621 | 6,030 | 79 | 1,043 | 6,578 | 1,065 | 343 | 1 | 1,121 | Jul 2026 – Aug 2026 |
+| Poland | 14,951 | 14,951 | 13,704 | 6,061 | 80 | 1,047 | 6,631 | 1,066 | 346 | 1 | 1,126 | Jul 2026 – Aug 2026 |
 | Portugal | 3,508 | 3,508 | 2,873 | 955 | 5 | 178 | 1,794 | 371 | 73 | 2 | 183 | Jul 2026 |
 | Cyprus | 29 | 29 | 28 | 15 | 0 | 0 | 17 | 9 | 1 | 0 | 0 | Jul 2026 |
 | Romania | 807 | 807 | 345 | 121 | 3 | 13 | 216 | 45 | 6 | 0 | 16 | Jul 2026 |
@@ -68,7 +68,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Spain | 6,091 | 6,091 | 5,164 | 1,887 | 11 | 350 | 2,983 | 1,624 | 448 | 65 | 315 | Jul 2026 – Aug 2026 |
 | Sweden | 1,702 | 1,702 | 1,625 | 556 | 4 | 53 | 1,012 | 88 | 21 | 14 | 44 | Jul 2026 |
 | Switzerland | 2,123 | 2,123 | 2,076 | 563 | 28 | 149 | 1,340 | 229 | 227 | 52 | 139 | Jul 2026 |
-| United Kingdom | 19,511 | 19,511 | 18,650 | 6,433 | 32 | 714 | 11,846 | 3,865 | 1,031 | 118 | 673 | Jul 2026 – Aug 2026 |
+| United Kingdom | 19,511 | 19,511 | 18,650 | 6,449 | 32 | 714 | 11,849 | 3,872 | 1,031 | 118 | 673 | Jul 2026 – Aug 2026 |
 
 > **Tier columns** (Twitter-only / Modern / Mixed / No Social) classify each page by its overall social media presence. **Platform columns** (Twitter / X / Bluesky / Mastodon) count pages with at least one link to that platform — a page may appear in more than one platform column.
 
