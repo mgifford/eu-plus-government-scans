@@ -1,6 +1,6 @@
 {
   "country_code": "ITALY",
-  "total_relationships": 15786,
+  "total_relationships": 15852,
   "total_source_domains": 151,
   "top_source_domains": [
     {
@@ -33,7 +33,7 @@
     },
     {
       "domain": "comune.parma.it",
-      "count": 1039
+      "count": 1109
     },
     {
       "domain": "regione.campania.it",
@@ -180,11 +180,19 @@
       "count": 200
     },
     {
+      "domain": "comune.oristano.it",
+      "count": 200
+    },
+    {
       "domain": "comune.rimini.it",
       "count": 195
     },
     {
       "domain": "comune.padova.it",
+      "count": 190
+    },
+    {
+      "domain": "comune.pescara.it",
       "count": 190
     },
     {
@@ -194,14 +202,6 @@
     {
       "domain": "comune.siena.it",
       "count": 188
-    },
-    {
-      "domain": "agenziaentrate.gov.it",
-      "count": 184
-    },
-    {
-      "domain": "comune.lecce.it",
-      "count": 177
     }
   ],
   "top_target_domains": [
@@ -215,7 +215,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 2595
+      "count": 2606
     },
     {
       "domain": "cultura.gov.it",
@@ -223,11 +223,11 @@
     },
     {
       "domain": "youtube.com",
-      "count": 2050
+      "count": 2056
     },
     {
       "domain": "twitter.com",
-      "count": 2032
+      "count": 2037
     },
     {
       "domain": "agid.gov.it",
@@ -235,7 +235,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 1628
+      "count": 1634
     },
     {
       "domain": "governo.it",
@@ -278,12 +278,12 @@
       "count": 650
     },
     {
-      "domain": "linkedin.com",
-      "count": 617
+      "domain": "comune.parma.it",
+      "count": 629
     },
     {
-      "domain": "comune.parma.it",
-      "count": 607
+      "domain": "linkedin.com",
+      "count": 619
     },
     {
       "domain": "regione.lazio.it",
@@ -307,11 +307,11 @@
     },
     {
       "domain": "google.com",
-      "count": 407
+      "count": 412
     },
     {
       "domain": "googletagmanager.com",
-      "count": 398
+      "count": 401
     },
     {
       "domain": "comune.verona.it",
@@ -339,7 +339,7 @@
     },
     {
       "domain": "municipiumapp.it",
-      "count": 346
+      "count": 347
     },
     {
       "domain": "interno.gov.it",
@@ -375,7 +375,7 @@
     },
     {
       "domain": "lavoro.gov.it",
-      "count": 221
+      "count": 225
     },
     {
       "domain": "comune.messina.it",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 7305,
-    "script_dependency": 2544,
-    "stylesheet_dependency": 2267,
-    "image_or_media_dependency": 1992,
-    "form_destination": 1434,
-    "font_or_preload_dependency": 244
+    "editorial_link": 7344,
+    "script_dependency": 2552,
+    "stylesheet_dependency": 2271,
+    "image_or_media_dependency": 2002,
+    "form_destination": 1438,
+    "font_or_preload_dependency": 245
   },
-  "generated_at": "2026-07-31T07:52:16.701746+00:00"
+  "generated_at": "2026-08-01T13:13:48.775101+00:00"
 }
