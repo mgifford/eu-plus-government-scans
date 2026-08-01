@@ -1,7 +1,7 @@
 {
   "country_code": "FRANCE",
-  "total_relationships": 29282,
-  "total_source_domains": 616,
+  "total_relationships": 29575,
+  "total_source_domains": 628,
   "top_source_domains": [
     {
       "domain": "auvergnerhonealpes.fr",
@@ -12,12 +12,12 @@
       "count": 3807
     },
     {
-      "domain": "paris.fr",
-      "count": 3683
+      "domain": "developpement-durable.gouv.fr",
+      "count": 3710
     },
     {
-      "domain": "developpement-durable.gouv.fr",
-      "count": 3672
+      "domain": "paris.fr",
+      "count": 3683
     },
     {
       "domain": "cnam.fr",
@@ -25,7 +25,7 @@
     },
     {
       "domain": "culture.gouv.fr",
-      "count": 1836
+      "count": 1880
     },
     {
       "domain": "beta.gouv.fr",
@@ -109,7 +109,7 @@
     },
     {
       "domain": "interieur.gouv.fr",
-      "count": 596
+      "count": 635
     },
     {
       "domain": "lillemetropole.fr",
@@ -196,12 +196,12 @@
       "count": 424
     },
     {
-      "domain": "seinemaritime.fr",
-      "count": 400
+      "domain": "logement.gouv.fr",
+      "count": 406
     },
     {
-      "domain": "brest.fr",
-      "count": 399
+      "domain": "seinemaritime.fr",
+      "count": 400
     }
   ],
   "top_target_domains": [
@@ -211,7 +211,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 3219
+      "count": 3266
     },
     {
       "domain": "haute-garonne.fr",
@@ -223,27 +223,27 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 2179
+      "count": 2214
     },
     {
       "domain": "skolengo.com",
       "count": 1919
     },
     {
-      "domain": "instagram.com",
-      "count": 1847
+      "domain": "data.gouv.fr",
+      "count": 1891
     },
     {
-      "domain": "data.gouv.fr",
-      "count": 1845
+      "domain": "instagram.com",
+      "count": 1880
     },
     {
       "domain": "developpement-durable.gouv.fr",
-      "count": 1844
+      "count": 1859
     },
     {
       "domain": "twitter.com",
-      "count": 1673
+      "count": 1708
     },
     {
       "domain": "cnam.fr",
@@ -251,27 +251,27 @@
     },
     {
       "domain": "legifrance.gouv.fr",
-      "count": 1614
+      "count": 1660
     },
     {
       "domain": "googleapis.com",
-      "count": 1600
+      "count": 1603
     },
     {
       "domain": "youtube.com",
-      "count": 1548
+      "count": 1553
     },
     {
       "domain": "github.com",
-      "count": 1258
+      "count": 1296
     },
     {
       "domain": "info.gouv.fr",
-      "count": 1006
+      "count": 1047
     },
     {
       "domain": "service-public.fr",
-      "count": 919
+      "count": 930
     },
     {
       "domain": "education.gouv.fr",
@@ -279,11 +279,11 @@
     },
     {
       "domain": "beta.gouv.fr",
-      "count": 890
+      "count": 894
     },
     {
       "domain": "service-public.gouv.fr",
-      "count": 832
+      "count": 871
     },
     {
       "domain": "rennes.fr",
@@ -295,15 +295,15 @@
     },
     {
       "domain": "google.com",
-      "count": 717
-    },
-    {
-      "domain": "jsdelivr.net",
-      "count": 685
+      "count": 718
     },
     {
       "domain": "culture.gouv.fr",
-      "count": 682
+      "count": 696
+    },
+    {
+      "domain": "jsdelivr.net",
+      "count": 686
     },
     {
       "domain": "loire-atlantique.fr",
@@ -315,11 +315,11 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 661
+      "count": 667
     },
     {
       "domain": "x.com",
-      "count": 572
+      "count": 592
     },
     {
       "domain": "defense.gouv.fr",
@@ -350,12 +350,12 @@
       "count": 487
     },
     {
-      "domain": "ac-clermont.fr",
-      "count": 468
+      "domain": "interieur.gouv.fr",
+      "count": 477
     },
     {
-      "domain": "interieur.gouv.fr",
-      "count": 457
+      "domain": "ac-clermont.fr",
+      "count": 468
     },
     {
       "domain": "isere.fr",
@@ -363,7 +363,7 @@
     },
     {
       "domain": "gouvernement.fr",
-      "count": 433
+      "count": 438
     },
     {
       "domain": "gstatic.com",
@@ -399,7 +399,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 342
+      "count": 345
     },
     {
       "domain": "tarteaucitron.io",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 15059,
-    "script_dependency": 4467,
-    "stylesheet_dependency": 4014,
-    "image_or_media_dependency": 3427,
-    "form_destination": 1637,
+    "editorial_link": 15277,
+    "script_dependency": 4491,
+    "stylesheet_dependency": 4033,
+    "image_or_media_dependency": 3443,
+    "form_destination": 1653,
     "font_or_preload_dependency": 678
   },
-  "generated_at": "2026-07-31T01:27:23.050333+00:00"
+  "generated_at": "2026-08-01T07:43:08.227702+00:00"
 }

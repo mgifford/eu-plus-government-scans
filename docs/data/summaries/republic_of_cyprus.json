@@ -1,7 +1,7 @@
 {
   "country_code": "REPUBLIC_OF_CYPRUS",
-  "total_relationships": 238097,
-  "total_source_domains": 5860,
+  "total_relationships": 238390,
+  "total_source_domains": 5872,
   "top_source_domains": [
     {
       "domain": "ethz.ch",
@@ -120,12 +120,12 @@
       "count": 3807
     },
     {
-      "domain": "paris.fr",
-      "count": 3683
+      "domain": "developpement-durable.gouv.fr",
+      "count": 3710
     },
     {
-      "domain": "developpement-durable.gouv.fr",
-      "count": 3672
+      "domain": "paris.fr",
+      "count": 3683
     },
     {
       "domain": "belgium.be",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 24782
+      "count": 24829
     },
     {
       "domain": "sachsen.de",
@@ -219,7 +219,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 19295
+      "count": 19298
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -227,15 +227,15 @@
     },
     {
       "domain": "instagram.com",
-      "count": 14940
+      "count": 14973
     },
     {
       "domain": "youtube.com",
-      "count": 14347
+      "count": 14352
     },
     {
       "domain": "twitter.com",
-      "count": 12220
+      "count": 12255
     },
     {
       "domain": "krakow.pl",
@@ -243,7 +243,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 10722
+      "count": 10757
     },
     {
       "domain": "niedersachsen.de",
@@ -251,7 +251,7 @@
     },
     {
       "domain": "google.com",
-      "count": 10318
+      "count": 10319
     },
     {
       "domain": "lodz.pl",
@@ -259,7 +259,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 8837
+      "count": 8840
     },
     {
       "domain": "rlp.de",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 6358
+      "count": 6359
     },
     {
       "domain": "esteri.it",
@@ -287,7 +287,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 5543
+      "count": 5549
     },
     {
       "domain": "nrw.de",
@@ -347,7 +347,7 @@
     },
     {
       "domain": "x.com",
-      "count": 2823
+      "count": 2843
     },
     {
       "domain": "fontawesome.com",
@@ -403,16 +403,16 @@
     },
     {
       "domain": "data.gouv.fr",
-      "count": 1853
+      "count": 1899
     }
   ],
   "relationship_types": {
-    "editorial_link": 120833,
-    "script_dependency": 37174,
-    "stylesheet_dependency": 31403,
-    "image_or_media_dependency": 26224,
-    "form_destination": 16774,
+    "editorial_link": 121051,
+    "script_dependency": 37198,
+    "stylesheet_dependency": 31422,
+    "image_or_media_dependency": 26240,
+    "form_destination": 16790,
     "font_or_preload_dependency": 5689
   },
-  "generated_at": "2026-08-01T01:27:02.572442+00:00"
+  "generated_at": "2026-08-01T07:43:08.104010+00:00"
 }
