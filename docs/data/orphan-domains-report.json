@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T22:34:32.957698+00:00",
+  "generated_at": "2026-08-01T06:55:09.789591+00:00",
   "description": "Orphan domain detection report. Compares seed domain inventory against relationship scan data to find domains not linked from any scanned government site.",
   "countries": {
     "Albania": {
@@ -164,16 +164,16 @@
       "staging_sample": []
     },
     "Belgium": {
-      "seed_count": 1011,
+      "seed_count": 1030,
       "active_count": 0,
-      "orphan_count": 1011,
+      "orphan_count": 1030,
       "active_rate": 0.0,
       "active_domains": [],
       "orphan_breakdown": {
         "subdomains": 482,
         "staging_test": 2,
         "likely_dead": 0,
-        "other": 527
+        "other": 546
       },
       "orphan_sample": [
         "14-18.bruxelles.be",
@@ -219,28 +219,28 @@
       "staging_sample": []
     },
     "Bulgaria": {
-      "seed_count": 198,
+      "seed_count": 262,
       "active_count": 0,
-      "orphan_count": 198,
+      "orphan_count": 262,
       "active_rate": 0.0,
       "active_domains": [],
       "orphan_breakdown": {
         "subdomains": 48,
         "staging_test": 3,
         "likely_dead": 0,
-        "other": 147
+        "other": 211
       },
       "orphan_sample": [
+        "aba.government.bg",
         "address.sofia.bg",
         "agup.varna.bg",
+        "aop.bg",
         "apo.gov.bg",
         "apostille.gov.bg",
         "app.mfa.bg",
+        "appd-bg.org",
         "architect.sofia.bg",
-        "auth-cixpbg.gov.bg",
-        "bgsl.sofia.bg",
-        "bnb.bg",
-        "bs.gov.bg"
+        "archives.government.bg"
       ],
       "staging_sample": [
         "old.nsi.bg",
@@ -248,17 +248,48 @@
         "test-sipbg.gov.bg"
       ]
     },
-    "Croatia": {
-      "seed_count": 500,
+    "Canada": {
+      "seed_count": 2221,
       "active_count": 0,
-      "orphan_count": 500,
+      "orphan_count": 2221,
+      "active_rate": 0.0,
+      "active_domains": [],
+      "orphan_breakdown": {
+        "subdomains": 1552,
+        "staging_test": 4,
+        "likely_dead": 0,
+        "other": 665
+      },
+      "orphan_sample": [
+        "311.edmonton.ca",
+        "511.alberta.ca",
+        "511.gnb.ca",
+        "511.novascotia.ca",
+        "811.novascotia.ca",
+        "a11y.canada.ca",
+        "ab.ca",
+        "acat.alberta.ca",
+        "access-uat.alberta.ca",
+        "access.alberta.ca"
+      ],
+      "staging_sample": [
+        "cdev.gc.ca",
+        "devapps.ottawa.ca",
+        "developmentmap.calgary.ca",
+        "mobileappdev-websvc.ottawa.ca"
+      ]
+    },
+    "Croatia": {
+      "seed_count": 524,
+      "active_count": 0,
+      "orphan_count": 524,
       "active_rate": 0.0,
       "active_domains": [],
       "orphan_breakdown": {
         "subdomains": 320,
         "staging_test": 2,
         "likely_dead": 0,
-        "other": 178
+        "other": 202
       },
       "orphan_sample": [
         "aktivnosti.zagreb.hr",
@@ -266,11 +297,11 @@
         "arcportal.zagreb.hr",
         "arhiva.pozega.hr",
         "azop.hr",
+        "branitelji.gov.hr",
         "businesscroatia.gov.hr",
         "buswebshop.dubrovnik.hr",
         "cdu.gov.hr",
-        "data.zagreb.hr",
-        "dubrovnik.hr"
+        "civilna-zastita.gov.hr"
       ],
       "staging_sample": [
         "isstest.gov.hr",
@@ -278,16 +309,16 @@
       ]
     },
     "Czechia": {
-      "seed_count": 1066,
+      "seed_count": 1077,
       "active_count": 0,
-      "orphan_count": 1066,
+      "orphan_count": 1077,
       "active_rate": 0.0,
       "active_domains": [],
       "orphan_breakdown": {
-        "subdomains": 438,
+        "subdomains": 439,
         "staging_test": 45,
         "likely_dead": 0,
-        "other": 583
+        "other": 593
       },
       "orphan_sample": [
         "absolventi.gov.cz",
@@ -310,16 +341,16 @@
       ]
     },
     "Denmark": {
-      "seed_count": 710,
+      "seed_count": 721,
       "active_count": 0,
-      "orphan_count": 710,
+      "orphan_count": 721,
       "active_rate": 0.0,
       "active_domains": [],
       "orphan_breakdown": {
         "subdomains": 31,
         "staging_test": 7,
         "likely_dead": 0,
-        "other": 672
+        "other": 683
       },
       "orphan_sample": [
         "aa.rm.dk",
@@ -342,16 +373,16 @@
       ]
     },
     "Estonia": {
-      "seed_count": 548,
+      "seed_count": 551,
       "active_count": 0,
-      "orphan_count": 548,
+      "orphan_count": 551,
       "active_rate": 0.0,
       "active_domains": [],
       "orphan_breakdown": {
         "subdomains": 332,
         "staging_test": 17,
         "likely_dead": 0,
-        "other": 199
+        "other": 202
       },
       "orphan_sample": [
         "aastaraamat.prokuratuur.ee",
@@ -359,11 +390,11 @@
         "abi.ria.ee",
         "agri.ee",
         "ahk.eesti.ee",
+        "aki.ee",
         "alkoreg.agri.ee",
         "andmed.eesti.ee",
         "andmed.stat.ee",
-        "app.eesti.ee",
-        "arendus.eesti.ee"
+        "app.eesti.ee"
       ],
       "staging_sample": [
         "andmed-test.eesti.ee",
@@ -374,16 +405,16 @@
       ]
     },
     "Finland": {
-      "seed_count": 328,
+      "seed_count": 344,
       "active_count": 0,
-      "orphan_count": 328,
+      "orphan_count": 344,
       "active_rate": 0.0,
       "active_domains": [],
       "orphan_breakdown": {
         "subdomains": 165,
         "staging_test": 14,
         "likely_dead": 0,
-        "other": 149
+        "other": 165
       },
       "orphan_sample": [
         "admin.suomi.fi",
@@ -406,16 +437,16 @@
       ]
     },
     "France": {
-      "seed_count": 6688,
+      "seed_count": 6690,
       "active_count": 0,
-      "orphan_count": 6688,
+      "orphan_count": 6690,
       "active_rate": 0.0,
       "active_domains": [],
       "orphan_breakdown": {
         "subdomains": 4158,
         "staging_test": 17,
         "likely_dead": 0,
-        "other": 2513
+        "other": 2515
       },
       "orphan_sample": [
         "1000paysages.gouv.fr",
@@ -464,16 +495,16 @@
       "staging_sample": []
     },
     "Germany": {
-      "seed_count": 3243,
+      "seed_count": 3277,
       "active_count": 0,
-      "orphan_count": 3243,
+      "orphan_count": 3277,
       "active_rate": 0.0,
       "active_domains": [],
       "orphan_breakdown": {
         "subdomains": 1524,
         "staging_test": 19,
         "likely_dead": 0,
-        "other": 1700
+        "other": 1734
       },
       "orphan_sample": [
         "110prozent.berlin.de",
@@ -496,16 +527,16 @@
       ]
     },
     "Greece": {
-      "seed_count": 1301,
+      "seed_count": 1306,
       "active_count": 0,
-      "orphan_count": 1301,
+      "orphan_count": 1306,
       "active_rate": 0.0,
       "active_domains": [],
       "orphan_breakdown": {
         "subdomains": 808,
         "staging_test": 2,
         "likely_dead": 0,
-        "other": 491
+        "other": 496
       },
       "orphan_sample": [
         "112.gov.gr",
@@ -551,16 +582,16 @@
       "staging_sample": []
     },
     "Hungary": {
-      "seed_count": 295,
+      "seed_count": 297,
       "active_count": 0,
-      "orphan_count": 295,
+      "orphan_count": 297,
       "active_rate": 0.0,
       "active_domains": [],
       "orphan_breakdown": {
         "subdomains": 25,
         "staging_test": 4,
         "likely_dead": 0,
-        "other": 266
+        "other": 268
       },
       "orphan_sample": [
         "1000fa.szombathely.hu",
@@ -582,16 +613,16 @@
       ]
     },
     "Iceland": {
-      "seed_count": 88,
+      "seed_count": 93,
       "active_count": 0,
-      "orphan_count": 88,
+      "orphan_count": 93,
       "active_rate": 0.0,
       "active_domains": [],
       "orphan_breakdown": {
         "subdomains": 2,
         "staging_test": 1,
         "likely_dead": 0,
-        "other": 85
+        "other": 90
       },
       "orphan_sample": [
         "abendingar.hafnarfjordur.is",
@@ -610,16 +641,16 @@
       ]
     },
     "Ireland": {
-      "seed_count": 759,
+      "seed_count": 772,
       "active_count": 0,
-      "orphan_count": 759,
+      "orphan_count": 772,
       "active_rate": 0.0,
       "active_domains": [],
       "orphan_breakdown": {
         "subdomains": 426,
         "staging_test": 9,
         "likely_dead": 0,
-        "other": 324
+        "other": 337
       },
       "orphan_sample": [
         "aai.gov.ie",
@@ -642,16 +673,16 @@
       ]
     },
     "Italy": {
-      "seed_count": 4822,
+      "seed_count": 4833,
       "active_count": 0,
-      "orphan_count": 4822,
+      "orphan_count": 4833,
       "active_rate": 0.0,
       "active_domains": [],
       "orphan_breakdown": {
         "subdomains": 3051,
         "staging_test": 20,
         "likely_dead": 0,
-        "other": 1751
+        "other": 1762
       },
       "orphan_sample": [
         "22ddalbertomario.gov.it",
@@ -674,16 +705,16 @@
       ]
     },
     "Latvia": {
-      "seed_count": 357,
+      "seed_count": 358,
       "active_count": 0,
-      "orphan_count": 357,
+      "orphan_count": 358,
       "active_rate": 0.0,
       "active_domains": [],
       "orphan_breakdown": {
         "subdomains": 216,
         "staging_test": 1,
         "likely_dead": 0,
-        "other": 140
+        "other": 141
       },
       "orphan_sample": [
         "akcmv.gov.lv",
@@ -728,16 +759,16 @@
       "staging_sample": []
     },
     "Lithuania": {
-      "seed_count": 90,
+      "seed_count": 92,
       "active_count": 0,
-      "orphan_count": 90,
+      "orphan_count": 92,
       "active_rate": 0.0,
       "active_domains": [],
       "orphan_breakdown": {
         "subdomains": 16,
         "staging_test": 2,
         "likely_dead": 0,
-        "other": 72
+        "other": 74
       },
       "orphan_sample": [
         "1863.siauliai.lt",
@@ -757,16 +788,16 @@
       ]
     },
     "Luxembourg": {
-      "seed_count": 271,
+      "seed_count": 272,
       "active_count": 0,
-      "orphan_count": 271,
+      "orphan_count": 272,
       "active_rate": 0.0,
       "active_domains": [],
       "orphan_breakdown": {
         "subdomains": 23,
         "staging_test": 0,
         "likely_dead": 0,
-        "other": 248
+        "other": 249
       },
       "orphan_sample": [
         "123easy.public.lu",
@@ -783,16 +814,16 @@
       "staging_sample": []
     },
     "Malta": {
-      "seed_count": 1179,
+      "seed_count": 1181,
       "active_count": 0,
-      "orphan_count": 1179,
+      "orphan_count": 1181,
       "active_rate": 0.0,
       "active_domains": [],
       "orphan_breakdown": {
         "subdomains": 410,
         "staging_test": 41,
         "likely_dead": 0,
-        "other": 728
+        "other": 730
       },
       "orphan_sample": [
         "112mt.gov.mt",
@@ -909,16 +940,16 @@
       ]
     },
     "Netherlands": {
-      "seed_count": 532,
+      "seed_count": 539,
       "active_count": 0,
-      "orphan_count": 532,
+      "orphan_count": 539,
       "active_rate": 0.0,
       "active_domains": [],
       "orphan_breakdown": {
         "subdomains": 30,
         "staging_test": 10,
         "likely_dead": 0,
-        "other": 492
+        "other": 499
       },
       "orphan_sample": [
         "3d.amsterdam.nl",
@@ -930,7 +961,7 @@
         "a-www.government.nl",
         "aanmeldenparkeren.amsterdam.nl",
         "aanvraagparkeren.groningen.nl",
-        "activiteiten.amsterdam.nl"
+        "accountantskamer.nl"
       ],
       "staging_sample": [
         "developer.overheid.nl",
@@ -969,19 +1000,20 @@
       ]
     },
     "Norway": {
-      "seed_count": 326,
+      "seed_count": 336,
       "active_count": 0,
-      "orphan_count": 326,
+      "orphan_count": 336,
       "active_rate": 0.0,
       "active_domains": [],
       "orphan_breakdown": {
         "subdomains": 152,
         "staging_test": 7,
         "likely_dead": 0,
-        "other": 167
+        "other": 177
       },
       "orphan_sample": [
         "a3.kystverket.no",
+        "advnemnda.no",
         "aksel.nav.no",
         "altinn.no",
         "analysebrettet.udir.no",
@@ -989,8 +1021,7 @@
         "api.nve.no",
         "arbeidogvelferd.nav.no",
         "arbeidsmiljohjelpen.arbeidstilsynet.no",
-        "arbeidsplassen.nav.no",
-        "arbeidstilsynet.no"
+        "arbeidsplassen.nav.no"
       ],
       "staging_sample": [
         "dev.regjeringen.no",
@@ -1001,16 +1032,16 @@
       ]
     },
     "Poland": {
-      "seed_count": 7926,
+      "seed_count": 7932,
       "active_count": 0,
-      "orphan_count": 7926,
+      "orphan_count": 7932,
       "active_rate": 0.0,
       "active_domains": [],
       "orphan_breakdown": {
         "subdomains": 4279,
         "staging_test": 10,
         "likely_dead": 0,
-        "other": 3637
+        "other": 3643
       },
       "orphan_sample": [
         "13lo.szczecin.pl",
@@ -1033,16 +1064,16 @@
       ]
     },
     "Portugal": {
-      "seed_count": 2833,
+      "seed_count": 2838,
       "active_count": 0,
-      "orphan_count": 2833,
+      "orphan_count": 2838,
       "active_rate": 0.0,
       "active_domains": [],
       "orphan_breakdown": {
         "subdomains": 1534,
         "staging_test": 4,
         "likely_dead": 0,
-        "other": 1295
+        "other": 1300
       },
       "orphan_sample": [
         "4maravilhas.cm-mealhada.pt",
@@ -1064,16 +1095,16 @@
       ]
     },
     "Republic of Cyprus": {
-      "seed_count": 489,
+      "seed_count": 492,
       "active_count": 0,
-      "orphan_count": 489,
+      "orphan_count": 492,
       "active_rate": 0.0,
       "active_domains": [],
       "orphan_breakdown": {
         "subdomains": 399,
         "staging_test": 0,
         "likely_dead": 0,
-        "other": 90
+        "other": 93
       },
       "orphan_sample": [
         "1420.gov.cy",
@@ -1090,16 +1121,16 @@
       "staging_sample": []
     },
     "Romania": {
-      "seed_count": 660,
+      "seed_count": 667,
       "active_count": 0,
-      "orphan_count": 660,
+      "orphan_count": 667,
       "active_rate": 0.0,
       "active_domains": [],
       "orphan_breakdown": {
         "subdomains": 189,
         "staging_test": 7,
         "likely_dead": 0,
-        "other": 464
+        "other": 471
       },
       "orphan_sample": [
         "aaas.gov.ro",
@@ -1193,16 +1224,16 @@
       ]
     },
     "Slovakia": {
-      "seed_count": 493,
+      "seed_count": 502,
       "active_count": 0,
-      "orphan_count": 493,
+      "orphan_count": 502,
       "active_rate": 0.0,
       "active_domains": [],
       "orphan_breakdown": {
         "subdomains": 247,
         "staging_test": 2,
         "likely_dead": 0,
-        "other": 244
+        "other": 253
       },
       "orphan_sample": [
         "adminer.gov.sk",
@@ -1222,16 +1253,16 @@
       ]
     },
     "Slovenia": {
-      "seed_count": 610,
+      "seed_count": 623,
       "active_count": 0,
-      "orphan_count": 610,
+      "orphan_count": 623,
       "active_rate": 0.0,
       "active_domains": [],
       "orphan_breakdown": {
-        "subdomains": 302,
+        "subdomains": 303,
         "staging_test": 30,
         "likely_dead": 0,
-        "other": 278
+        "other": 290
       },
       "orphan_sample": [
         "acc.gov.si",
@@ -1254,16 +1285,16 @@
       ]
     },
     "Spain": {
-      "seed_count": 2991,
+      "seed_count": 3011,
       "active_count": 0,
-      "orphan_count": 2991,
+      "orphan_count": 3011,
       "active_rate": 0.0,
       "active_domains": [],
       "orphan_breakdown": {
         "subdomains": 1395,
         "staging_test": 8,
         "likely_dead": 0,
-        "other": 1588
+        "other": 1608
       },
       "orphan_sample": [
         "012.comunidad.madrid",
@@ -1286,16 +1317,16 @@
       ]
     },
     "Sweden": {
-      "seed_count": 844,
+      "seed_count": 988,
       "active_count": 0,
-      "orphan_count": 844,
+      "orphan_count": 988,
       "active_rate": 0.0,
       "active_domains": [],
       "orphan_breakdown": {
         "subdomains": 69,
         "staging_test": 1,
         "likely_dead": 0,
-        "other": 774
+        "other": 918
       },
       "orphan_sample": [
         "1177.se",
@@ -1314,16 +1345,16 @@
       ]
     },
     "Switzerland": {
-      "seed_count": 3701,
+      "seed_count": 3708,
       "active_count": 0,
-      "orphan_count": 3701,
+      "orphan_count": 3708,
       "active_rate": 0.0,
       "active_domains": [],
       "orphan_breakdown": {
         "subdomains": 2506,
         "staging_test": 14,
         "likely_dead": 0,
-        "other": 1181
+        "other": 1188
       },
       "orphan_sample": [
         "a01vortex.admin.ch",
@@ -1406,16 +1437,16 @@
       ]
     },
     "United Kingdom (UK)": {
-      "seed_count": 8260,
+      "seed_count": 8271,
       "active_count": 0,
-      "orphan_count": 8260,
+      "orphan_count": 8271,
       "active_rate": 0.0,
       "active_domains": [],
       "orphan_breakdown": {
-        "subdomains": 7096,
+        "subdomains": 7097,
         "staging_test": 19,
         "likely_dead": 0,
-        "other": 1145
+        "other": 1155
       },
       "orphan_sample": [
         "111.nhs.uk",
