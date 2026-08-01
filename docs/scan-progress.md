@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-08-01 22:34 UTC_
+_Generated: 2026-08-01 22:35 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -15,7 +15,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 |-----------|--------------|-----------|----------|---------|
 | **Combined Reachability** | **81,009 confirmed reachable** | 87,696 | **<span role="img" aria-label="92.4% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:111px;"></span></span><span class="sm-bar__label">92.4%</span></span>** | — |
 | Social Media | 87,696 scanned (81,008 reachable) | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 6.5 days |
-| Technology | 17,498 scanned | 87,696 | <span role="img" aria-label="20.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:24px;"></span></span><span class="sm-bar__label">20.0%</span></span> | 6.3 days |
+| Technology | 17,498 scanned | 87,696 | <span role="img" aria-label="20.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:24px;"></span></span><span class="sm-bar__label">20.0%</span></span> | 6.2 days |
 | Lighthouse | 0 scanned | 87,696 | (manual scan) | — |
 | Accessibility Statements | 38,090 scanned | 87,696 | <span role="img" aria-label="43.4% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:52px;"></span></span><span class="sm-bar__label">43.4%</span></span> | 6.7 days |
 
@@ -93,7 +93,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Hungary | 392 | 2026-07-30 |
 | Iceland | 145 | 2026-07-31 |
 | Ireland | 536 | 2026-08-01 |
-| Italy | 450 | 2026-07-26 |
+| Italy | 450 | 2026-08-01 |
 | Latvia | 759 | 2026-07-26 |
 | Lithuania | 122 | 2026-07-31 |
 | Luxembourg | 573 | 2026-07-27 |
@@ -105,7 +105,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Cyprus | 29 | 2026-08-01 |
 | Romania | 126 | 2026-07-27 |
 | Slovakia | 442 | 2026-08-01 |
-| Slovenia | 214 | 2026-07-25 |
+| Slovenia | 214 | 2026-08-01 |
 | Spain | 303 | 2026-07-28 |
 | Sweden | 668 | 2026-07-28 |
 | Switzerland | 957 | 2026-07-28 |
