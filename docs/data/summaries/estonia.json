@@ -5,7 +5,7 @@
   "top_source_domains": [
     {
       "domain": "tartu.ee",
-      "count": 970
+      "count": 972
     },
     {
       "domain": "tallinn.ee",
@@ -18,6 +18,10 @@
     {
       "domain": "agri.ee",
       "count": 389
+    },
+    {
+      "domain": "viljandi.ee",
+      "count": 178
     },
     {
       "domain": "kliimaministeerium.ee",
@@ -41,10 +45,6 @@
     },
     {
       "domain": "ria.ee",
-      "count": 142
-    },
-    {
-      "domain": "viljandi.ee",
       "count": 142
     },
     {
@@ -135,7 +135,7 @@
   "top_target_domains": [
     {
       "domain": "tartu.ee",
-      "count": 456
+      "count": 457
     },
     {
       "domain": "tallinn.ee",
@@ -147,7 +147,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 217
+      "count": 219
     },
     {
       "domain": "agri.ee",
@@ -186,8 +186,12 @@
       "count": 82
     },
     {
+      "domain": "viljandi.ee",
+      "count": 77
+    },
+    {
       "domain": "flickr.com",
-      "count": 65
+      "count": 66
     },
     {
       "domain": "hm.ee",
@@ -196,10 +200,6 @@
     {
       "domain": "ria.ee",
       "count": 65
-    },
-    {
-      "domain": "viljandi.ee",
-      "count": 64
     },
     {
       "domain": "eesti.ee",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 52
+      "count": 54
     },
     {
       "domain": "kriis.ee",
@@ -259,7 +259,7 @@
     },
     {
       "domain": "google.com",
-      "count": 33
+      "count": 35
     },
     {
       "domain": "riigikohus.ee",
@@ -294,6 +294,10 @@
       "count": 21
     },
     {
+      "domain": "fontawesome.com",
+      "count": 19
+    },
+    {
       "domain": "politsei.ee",
       "count": 19
     },
@@ -308,10 +312,6 @@
     {
       "domain": "addtoany.com",
       "count": 18
-    },
-    {
-      "domain": "fontawesome.com",
-      "count": 17
     },
     {
       "domain": "vportal.ee",
@@ -342,5 +342,5 @@
     "form_destination": 99,
     "font_or_preload_dependency": 18
   },
-  "generated_at": "2026-07-20T13:34:40.714589+00:00"
+  "generated_at": "2026-08-02T01:28:06.980831+00:00"
 }
