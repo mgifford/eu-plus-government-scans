@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-08-02 13:41 UTC — last scan: 2026-08-02_
+_Stats as of 2026-08-02 14:44 UTC — last scan: 2026-08-02_
 
-**132** scan batches run
+**135** scan batches run
 
 **17,705** of **87,696** available pages scanned (**20.2%** coverage)
 **16,407** of **17,705** scanned pages were reachable (**92.7%**)
 **7,725** reachable pages loaded at least one third-party script (**47.1%** of reachable)
-**10,545** known third-party service loads identified
+**10,540** known third-party service loads identified
 **23** unique known services across **16** categories
 
 ---
@@ -41,17 +41,17 @@ _Stats as of 2026-08-02 13:41 UTC — last scan: 2026-08-02_
 | Lithuania | 122 | 122 | 112 | 57 | 107 | 50.9 | 95.5 | 2026-08-02 |
 | Luxembourg | 573 | 573 | 446 | 315 | 140 | 70.6 | 31.4 | 2026-08-02 |
 | Malta | 610 | 610 | 595 | 468 | 1,270 | 78.7 | 213.4 | 2026-08-02 |
-| Netherlands | 945 | 945 | 902 | 377 | 281 | 41.8 | 31.2 | 2026-07-30 |
+| Netherlands | 945 | 945 | 902 | 377 | 278 | 41.8 | 30.8 | 2026-08-02 |
 | Norway | 249 | 249 | 242 | 136 | 116 | 56.2 | 47.9 | 2026-08-02 |
 | Poland | 493 | 14,951 | 465 | 224 | 318 | 48.2 | 68.4 | 2026-08-01 |
 | Portugal | 722 | 3,508 | 598 | 257 | 348 | 43.0 | 58.2 | 2026-08-02 |
-| Cyprus | 29 | 29 | 29 | 13 | 15 | 44.8 | 51.7 | 2026-07-30 |
+| Cyprus | 29 | 29 | 29 | 13 | 15 | 44.8 | 51.7 | 2026-08-02 |
 | Romania | 158 | 807 | 56 | 46 | 40 | 82.1 | 71.4 | 2026-07-31 |
 | Slovakia | 442 | 442 | 421 | 213 | 274 | 50.6 | 65.1 | 2026-07-31 |
 | Slovenia | 214 | 214 | 207 | 56 | 82 | 27.1 | 39.6 | 2026-07-31 |
 | Spain | 365 | 6,091 | 294 | 190 | 195 | 64.6 | 66.3 | 2026-08-02 |
 | Sweden | 1,184 | 1,702 | 1,118 | 288 | 137 | 25.8 | 12.3 | 2026-07-31 |
-| Switzerland | 590 | 2,123 | 577 | 151 | 162 | 26.2 | 28.1 | 2026-07-28 |
+| Switzerland | 590 | 2,123 | 577 | 151 | 160 | 26.2 | 27.7 | 2026-08-02 |
 | United Kingdom | 337 | 19,511 | 322 | 144 | 165 | 44.7 | 51.2 | 2026-07-28 |
 
 > Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and metric from [Download machine-readable third-party tools data (JSON)](third-party-tools-data.json).
@@ -63,9 +63,9 @@ _Stats as of 2026-08-02 13:41 UTC — last scan: 2026-08-02_
 | # | Service | Loads |
 |--:|---------|------:|
 | 1 | cdnjs (Cloudflare CDN) | **2,136** |
-| 2 | jsDelivr CDN | **2,030** |
+| 2 | jsDelivr CDN | **2,027** |
 | 3 | Google Analytics (GA4) | **1,563** |
-| 4 | jQuery | **904** |
+| 4 | jQuery | **902** |
 | 5 | Google reCAPTCHA | **694** |
 | 6 | unpkg CDN | **614** |
 | 7 | Google Hosted Libraries | **582** |
@@ -88,10 +88,10 @@ _Stats as of 2026-08-02 13:41 UTC — last scan: 2026-08-02_
 | # | Service | Reachable Pages | Prevalence of Reachable Pages |
 |--:|---------|----------------:|------------------------------:|
 | 1 | Google Analytics (GA4) | **1,536** | **477.0%** |
-| 2 | jsDelivr CDN | **1,102** | **342.2%** |
+| 2 | jsDelivr CDN | **1,099** | **341.3%** |
 | 3 | cdnjs (Cloudflare CDN) | **804** | **249.7%** |
 | 4 | Google reCAPTCHA | **673** | **209.0%** |
-| 5 | jQuery | **627** | **194.7%** |
+| 5 | jQuery | **625** | **194.1%** |
 | 6 | Google Tag Manager | **556** | **172.7%** |
 | 7 | Google Hosted Libraries | **517** | **160.6%** |
 | 8 | unpkg CDN | **468** | **145.3%** |
@@ -112,9 +112,9 @@ _Stats as of 2026-08-02 13:41 UTC — last scan: 2026-08-02_
 
 | # | Category | Loads |
 |--:|----------|------:|
-| 1 | CDN | **5,362** |
+| 1 | CDN | **5,359** |
 | 2 | Analytics | **1,720** |
-| 3 | JavaScript Library | **1,486** |
+| 3 | JavaScript Library | **1,484** |
 | 4 | Cookie Consent | **848** |
 | 5 | Security | **716** |
 | 6 | CAPTCHA | **694** |
@@ -134,8 +134,8 @@ Infrastructure-heavy categories (CDNs, core libraries, and UI assets):
 
 | # | Infrastructure Category | Loads |
 |--:|--------------------------|------:|
-| 1 | CDN | **5,362** |
-| 2 | JavaScript Library | **1,486** |
+| 1 | CDN | **5,359** |
+| 2 | JavaScript Library | **1,484** |
 | 3 | Icon Library | **250** |
 | 4 | UI Framework | **132** |
 
@@ -163,7 +163,7 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 | 1 | `cdn.ent.auvergnerhonealpes.fr` | **1,384** | **146** |
 | 2 | `ajax.aspnetcdn.com` | **588** | **289** |
 | 3 | `cuatro.sim-cdn.nl` | **390** | **11** |
-| 4 | `static.addtoany.com` | **337** | **337** |
+| 4 | `static.addtoany.com` | **335** | **335** |
 | 5 | `customer.cludo.com` | **317** | **243** |
 | 6 | `cookie-notice.plzen.eu` | **272** | **144** |
 | 7 | `cdn.public.lu` | **267** | **208** |
