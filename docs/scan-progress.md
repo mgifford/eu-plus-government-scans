@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-08-02 22:18 UTC_
+_Generated: 2026-08-02 22:32 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -80,7 +80,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 |---------|-------------|----------|
 | Austria | 822 | 2026-08-02 |
 | Belgium | 580 | 2026-08-02 |
-| Bulgaria | 353 | 2026-07-29 |
+| Bulgaria | 353 | 2026-08-02 |
 | Canada | 867 | 2026-07-30 |
 | Croatia | 257 | 2026-08-02 |
 | Czechia | 837 | 2026-07-30 |
