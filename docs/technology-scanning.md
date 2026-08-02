@@ -5,9 +5,9 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-08-02 16:34 UTC — last scan: 2026-08-02_
+_Stats as of 2026-08-02 16:38 UTC — last scan: 2026-08-02_
 
-**85** scan batches run
+**87** scan batches run
 
 **17,888** of **87,696** available pages scanned (**20.4%** coverage)
 **7,049** pages with technology detections (**39.4%** of scanned)
@@ -23,7 +23,7 @@ _Stats as of 2026-08-02 16:34 UTC — last scan: 2026-08-02_
 | Belgium | 571 | 305 | 1,329 | 2026-07-29 |
 | Bulgaria | 353 | 261 | 353 | 2026-07-29 |
 | Canada | 867 | 279 | 4,469 | 2026-07-30 |
-| Croatia | 257 | 253 | 257 | 2026-07-28 |
+| Croatia | 257 | 253 | 257 | 2026-08-02 |
 | Czechia | 837 | 208 | 866 | 2026-07-30 |
 | Denmark | 1,154 | 574 | 1,536 | 2026-07-30 |
 | Estonia | 401 | 376 | 401 | 2026-07-31 |
@@ -49,7 +49,7 @@ _Stats as of 2026-08-02 16:34 UTC — last scan: 2026-08-02_
 | Slovenia | 214 | 0 | 214 | 2026-08-01 |
 | Spain | 406 | 0 | 6,091 | 2026-08-02 |
 | Sweden | 668 | 0 | 1,702 | 2026-08-02 |
-| Switzerland | 957 | 0 | 2,123 | 2026-07-28 |
+| Switzerland | 957 | 0 | 2,123 | 2026-08-02 |
 | United Kingdom | 1,137 | 0 | 19,511 | 2026-07-28 |
 
 > Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and metric from [Download machine-readable technology data (JSON)](technology-data.json).
