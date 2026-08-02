@@ -1,6 +1,6 @@
 {
   "country_code": "REPUBLIC_OF_CYPRUS",
-  "total_relationships": 246858,
+  "total_relationships": 246863,
   "total_source_domains": 6244,
   "top_source_domains": [
     {
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 125360,
-    "script_dependency": 38879,
-    "stylesheet_dependency": 32439,
-    "image_or_media_dependency": 26953,
-    "form_destination": 17279,
+    "editorial_link": 125361,
+    "script_dependency": 38880,
+    "stylesheet_dependency": 32440,
+    "image_or_media_dependency": 26954,
+    "form_destination": 17280,
     "font_or_preload_dependency": 5948
   },
-  "generated_at": "2026-08-02T01:28:06.445413+00:00"
+  "generated_at": "2026-08-02T07:45:45.741117+00:00"
 }
