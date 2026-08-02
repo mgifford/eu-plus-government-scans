@@ -5,12 +5,12 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-08-02 07:08 UTC — last scan: 2026-08-02_
+_Stats as of 2026-08-02 07:12 UTC — last scan: 2026-08-02_
 
-**80** scan batches run
+**81** scan batches run
 
-**17,622** of **87,696** available pages scanned (**20.1%** coverage)
-**7,049** pages with technology detections (**40.0%** of scanned)
+**17,731** of **87,696** available pages scanned (**20.2%** coverage)
+**7,049** pages with technology detections (**39.8%** of scanned)
 **263** unique technologies identified
 
 ---
@@ -41,7 +41,7 @@ _Stats as of 2026-08-02 07:08 UTC — last scan: 2026-08-02_
 | Malta | 560 | 387 | 610 | 2026-08-02 |
 | Netherlands | 945 | 373 | 945 | 2026-08-02 |
 | Norway | 249 | 242 | 249 | 2026-08-01 |
-| Poland | 525 | 218 | 14,951 | 2026-07-27 |
+| Poland | 634 | 218 | 14,951 | 2026-08-02 |
 | Portugal | 689 | 272 | 3,508 | 2026-07-27 |
 | Cyprus | 29 | 29 | 29 | 2026-08-01 |
 | Romania | 126 | 38 | 807 | 2026-07-27 |
