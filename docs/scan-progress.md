@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-08-02 20:33 UTC_
+_Generated: 2026-08-02 20:37 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -15,7 +15,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 |-----------|--------------|-----------|----------|---------|
 | **Combined Reachability** | **81,009 confirmed reachable** | 87,696 | **<span role="img" aria-label="92.4% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:111px;"></span></span><span class="sm-bar__label">92.4%</span></span>** | — |
 | Social Media | 87,696 scanned (81,008 reachable) | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 7.4 days |
-| Technology | 17,890 scanned | 87,696 | <span role="img" aria-label="20.4% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:24px;"></span></span><span class="sm-bar__label">20.4%</span></span> | 6.2 days |
+| Technology | 17,899 scanned | 87,696 | <span role="img" aria-label="20.4% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:24px;"></span></span><span class="sm-bar__label">20.4%</span></span> | 6.1 days |
 | Lighthouse | 0 scanned | 87,696 | (manual scan) | — |
 | Accessibility Statements | 38,384 scanned | 87,696 | <span role="img" aria-label="43.8% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:53px;"></span></span><span class="sm-bar__label">43.8%</span></span> | 6.7 days |
 
@@ -78,8 +78,8 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 
 | Country | URLs Scanned | Last Scan |
 |---------|-------------|----------|
-| Austria | 822 | 2026-07-29 |
-| Belgium | 571 | 2026-07-29 |
+| Austria | 822 | 2026-08-02 |
+| Belgium | 580 | 2026-08-02 |
 | Bulgaria | 353 | 2026-07-29 |
 | Canada | 867 | 2026-07-30 |
 | Croatia | 257 | 2026-08-02 |
