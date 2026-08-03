@@ -1,6 +1,6 @@
 {
   "country_code": "SPAIN",
-  "total_relationships": 15691,
+  "total_relationships": 15702,
   "total_source_domains": 230,
   "top_source_domains": [
     {
@@ -116,6 +116,10 @@
       "count": 225
     },
     {
+      "domain": "inclusion.gob.es",
+      "count": 203
+    },
+    {
       "domain": "ayto-pinto.es",
       "count": 203
     },
@@ -130,10 +134,6 @@
     {
       "domain": "transportes.gob.es",
       "count": 187
-    },
-    {
-      "domain": "inclusion.gob.es",
-      "count": 180
     },
     {
       "domain": "consumo.gob.es",
@@ -219,7 +219,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 1378
+      "count": 1379
     },
     {
       "domain": "twitter.com",
@@ -239,7 +239,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 1147
+      "count": 1148
     },
     {
       "domain": "jccm.es",
@@ -247,7 +247,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 1008
+      "count": 1009
     },
     {
       "domain": "aragon.es",
@@ -271,7 +271,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 448
+      "count": 449
     },
     {
       "domain": "educativa.com",
@@ -291,19 +291,19 @@
     },
     {
       "domain": "redsara.es",
-      "count": 355
+      "count": 357
     },
     {
       "domain": "blogspot.com",
       "count": 351
     },
     {
-      "domain": "hacienda.gob.es",
+      "domain": "x.com",
       "count": 292
     },
     {
-      "domain": "x.com",
-      "count": 291
+      "domain": "hacienda.gob.es",
+      "count": 292
     },
     {
       "domain": "asturias.es",
@@ -311,7 +311,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 269
+      "count": 270
     },
     {
       "domain": "w3.org",
@@ -343,7 +343,7 @@
     },
     {
       "domain": "insuit.net",
-      "count": 221
+      "count": 222
     },
     {
       "domain": "jsdelivr.net",
@@ -375,7 +375,7 @@
     },
     {
       "domain": "administracion.gob.es",
-      "count": 167
+      "count": 169
     },
     {
       "domain": "ayto-fuenlabrada.es",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 8078,
-    "script_dependency": 2256,
-    "stylesheet_dependency": 1926,
-    "font_or_preload_dependency": 153,
-    "image_or_media_dependency": 1890,
-    "form_destination": 1388
+    "editorial_link": 8084,
+    "script_dependency": 2257,
+    "stylesheet_dependency": 1927,
+    "font_or_preload_dependency": 154,
+    "image_or_media_dependency": 1891,
+    "form_destination": 1389
   },
-  "generated_at": "2026-08-03T01:27:44.426681+00:00"
+  "generated_at": "2026-08-03T08:01:58.693561+00:00"
 }
