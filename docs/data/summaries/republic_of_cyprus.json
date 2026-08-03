@@ -1,6 +1,6 @@
 {
   "country_code": "REPUBLIC_OF_CYPRUS",
-  "total_relationships": 256843,
+  "total_relationships": 256851,
   "total_source_domains": 6686,
   "top_source_domains": [
     {
@@ -279,7 +279,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 6744
+      "count": 6745
     },
     {
       "domain": "cloudflare.com",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 130875,
-    "script_dependency": 40603,
-    "stylesheet_dependency": 33493,
-    "image_or_media_dependency": 27750,
-    "form_destination": 17846,
+    "editorial_link": 130876,
+    "script_dependency": 40604,
+    "stylesheet_dependency": 33496,
+    "image_or_media_dependency": 27752,
+    "form_destination": 17847,
     "font_or_preload_dependency": 6276
   },
-  "generated_at": "2026-08-02T19:11:59.526718+00:00"
+  "generated_at": "2026-08-03T01:27:44.139077+00:00"
 }
