@@ -25,9 +25,9 @@ layout: page
 <p style="text-align:center;font-size:0.75em;margin:0.3rem 0 0;color:#555;font-style:italic;">Social media tier distribution</p>
 </div>
 
-_Stats as of 2026-08-03 06:39 UTC — last scan: 2026-08-01_
+_Stats as of 2026-08-03 07:09 UTC — last scan: 2026-08-03_
 
-**176** scan batches run
+**177** scan batches run
 
 **87,690** of **87,696** available pages scanned (**100.0%** coverage)
 **81,002** of **87,690** scanned pages were reachable (**92.4%**)
@@ -101,7 +101,7 @@ Countries ranked by **Digital Sovereignty Score** — the percentage of reachabl
 
 | Country | Scanned | Available | Reachable | Sov. Score | No Social | Legacy-only | Twitter | X | Facebook | LinkedIn | Modern | Mixed | Bluesky | Mastodon | Scan Period |
 |---------|---------|-----------|-----------|:----------:|-----------|-------------|---------|---|----------|----------|--------|-------|---------|----------|-------------|
-| Austria | 822 | 822 | 787 | 55.3% | 433 | 313 | 34 | 20 | 349 | 184 | 2 | 47 | 16 | 44 | Jul 2026 |
+| Austria | 822 | 822 | 787 | 55.3% | 433 | 313 | 34 | 20 | 349 | 184 | 2 | 47 | 16 | 44 | Jul 2026 – Aug 2026 |
 | Belgium | 1,329 | 1,329 | 1,236 | 59.9% | 732 | 410 | 172 | 76 | 464 | 332 | 8 | 96 | 29 | 87 | Jul 2026 |
 | Bulgaria | 353 | 353 | 318 | 70.1% | 222 | 102 | 24 | 6 | 119 | 12 | 1 | 22 | 0 | 23 | Jul 2026 |
 | Canada | 4,469 | 4,469 | 4,220 | 67.3% | 2,838 | 1,188 | 493 | 145 | 1,282 | 592 | 4 | 197 | 51 | 168 | Jul 2026 |
