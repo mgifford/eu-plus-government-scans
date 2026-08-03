@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-08-03 01:56 UTC — last scan: 2026-08-02_
+_Stats as of 2026-08-03 03:02 UTC — last scan: 2026-08-03_
 
-**137** scan batches run
+**139** scan batches run
 
 **17,705** of **87,696** available pages scanned (**20.2%** coverage)
 **16,407** of **17,705** scanned pages were reachable (**92.7%**)
 **7,725** reachable pages loaded at least one third-party script (**47.1%** of reachable)
-**10,540** known third-party service loads identified
+**10,534** known third-party service loads identified
 **23** unique known services across **16** categories
 
 ---
@@ -48,9 +48,9 @@ _Stats as of 2026-08-03 01:56 UTC — last scan: 2026-08-02_
 | Cyprus | 29 | 29 | 29 | 13 | 15 | 44.8 | 51.7 | 2026-08-02 |
 | Romania | 158 | 807 | 56 | 46 | 40 | 82.1 | 71.4 | 2026-08-02 |
 | Slovakia | 442 | 442 | 421 | 213 | 274 | 50.6 | 65.1 | 2026-08-02 |
-| Slovenia | 214 | 214 | 207 | 56 | 82 | 27.1 | 39.6 | 2026-07-31 |
+| Slovenia | 214 | 214 | 207 | 56 | 76 | 27.1 | 36.7 | 2026-08-03 |
 | Spain | 365 | 6,091 | 294 | 190 | 195 | 64.6 | 66.3 | 2026-08-02 |
-| Sweden | 1,184 | 1,702 | 1,118 | 288 | 137 | 25.8 | 12.3 | 2026-07-31 |
+| Sweden | 1,184 | 1,702 | 1,118 | 288 | 137 | 25.8 | 12.3 | 2026-08-03 |
 | Switzerland | 590 | 2,123 | 577 | 151 | 160 | 26.2 | 27.7 | 2026-08-02 |
 | United Kingdom | 337 | 19,511 | 322 | 144 | 165 | 44.7 | 51.2 | 2026-07-28 |
 
@@ -64,9 +64,9 @@ _Stats as of 2026-08-03 01:56 UTC — last scan: 2026-08-02_
 |--:|---------|------:|
 | 1 | cdnjs (Cloudflare CDN) | **2,136** |
 | 2 | jsDelivr CDN | **2,027** |
-| 3 | Google Analytics (GA4) | **1,563** |
+| 3 | Google Analytics (GA4) | **1,560** |
 | 4 | jQuery | **902** |
-| 5 | Google reCAPTCHA | **694** |
+| 5 | Google reCAPTCHA | **691** |
 | 6 | unpkg CDN | **614** |
 | 7 | Google Hosted Libraries | **582** |
 | 8 | Google Tag Manager | **577** |
@@ -87,10 +87,10 @@ _Stats as of 2026-08-03 01:56 UTC — last scan: 2026-08-02_
 
 | # | Service | Reachable Pages | Prevalence of Reachable Pages |
 |--:|---------|----------------:|------------------------------:|
-| 1 | Google Analytics (GA4) | **1,536** | **477.0%** |
+| 1 | Google Analytics (GA4) | **1,533** | **476.1%** |
 | 2 | jsDelivr CDN | **1,099** | **341.3%** |
 | 3 | cdnjs (Cloudflare CDN) | **804** | **249.7%** |
-| 4 | Google reCAPTCHA | **673** | **209.0%** |
+| 4 | Google reCAPTCHA | **670** | **208.1%** |
 | 5 | jQuery | **625** | **194.1%** |
 | 6 | Google Tag Manager | **556** | **172.7%** |
 | 7 | Google Hosted Libraries | **517** | **160.6%** |
@@ -113,11 +113,11 @@ _Stats as of 2026-08-03 01:56 UTC — last scan: 2026-08-02_
 | # | Category | Loads |
 |--:|----------|------:|
 | 1 | CDN | **5,359** |
-| 2 | Analytics | **1,720** |
+| 2 | Analytics | **1,717** |
 | 3 | JavaScript Library | **1,484** |
 | 4 | Cookie Consent | **848** |
-| 5 | Security | **716** |
-| 6 | CAPTCHA | **694** |
+| 5 | Security | **713** |
+| 6 | CAPTCHA | **691** |
 | 7 | Tag Manager | **647** |
 | 8 | Icon Library | **250** |
 | 9 | UI Framework | **132** |
@@ -143,10 +143,10 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 
 | # | Policy-Relevant Category | Loads |
 |--:|--------------------------|------:|
-| 1 | Analytics | **1,720** |
+| 1 | Analytics | **1,717** |
 | 2 | Cookie Consent | **848** |
-| 3 | Security | **716** |
-| 4 | CAPTCHA | **694** |
+| 3 | Security | **713** |
+| 4 | CAPTCHA | **691** |
 | 5 | Tag Manager | **647** |
 | 6 | Advertising | **50** |
 | 7 | Error Tracking | **22** |
@@ -169,11 +169,11 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 | 7 | `cdn.public.lu` | **267** | **208** |
 | 8 | `cdn.ecollege.haute-garonne.fr` | **265** | **25** |
 | 9 | `dreambroker.com` | **243** | **243** |
-| 10 | `maps.googleapis.com` | **241** | **226** |
+| 10 | `maps.googleapis.com` | **238** | **223** |
 | 11 | `hubcdn.arcgis.com` | **225** | **45** |
 | 12 | `www.youtube.com` | **221** | **221** |
 | 13 | `cdn.herning.dk` | **221** | **22** |
-| 14 | `translate.google.com` | **214** | **214** |
+| 14 | `translate.google.com` | **211** | **211** |
 | 15 | `content.powerapps.com` | **192** | **16** |
 
 > These hosts were seen as third-party script sources but did not match a known service signature. Review this queue regularly and promote stable, policy-relevant hosts into the signature list.
