@@ -1,6 +1,6 @@
 {
   "country_code": "SWEDEN",
-  "total_relationships": 4807,
+  "total_relationships": 4815,
   "total_source_domains": 185,
   "top_source_domains": [
     {
@@ -36,12 +36,12 @@
       "count": 235
     },
     {
-      "domain": "socialstyrelsen.se",
-      "count": 220
+      "domain": "gotland.se",
+      "count": 225
     },
     {
-      "domain": "gotland.se",
-      "count": 218
+      "domain": "socialstyrelsen.se",
+      "count": 220
     },
     {
       "domain": "trafikverket.se",
@@ -270,16 +270,16 @@
       "count": 147
     },
     {
+      "domain": "gotland.se",
+      "count": 132
+    },
+    {
       "domain": "google.com",
       "count": 131
     },
     {
       "domain": "readspeaker.com",
       "count": 131
-    },
-    {
-      "domain": "gotland.se",
-      "count": 125
     },
     {
       "domain": "axiell.com",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 2111,
-    "script_dependency": 895,
-    "stylesheet_dependency": 700,
-    "image_or_media_dependency": 528,
-    "form_destination": 371,
+    "editorial_link": 2112,
+    "script_dependency": 896,
+    "stylesheet_dependency": 703,
+    "image_or_media_dependency": 530,
+    "form_destination": 372,
     "font_or_preload_dependency": 202
   },
-  "generated_at": "2026-08-02T07:45:46.484214+00:00"
+  "generated_at": "2026-08-03T01:27:44.891685+00:00"
 }
