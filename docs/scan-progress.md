@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-08-04 17:09 UTC_
+_Generated: 2026-08-04 18:03 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -130,7 +130,7 @@ Checks whether each government page links to an accessibility statement as requi
 | Denmark | 1,536 | 1,507 | 969 | 948 | 64% | Jul 2026 – Aug 2026 |
 | Estonia | 401 | 385 | 148 | 78 | 38% | Jul 2026 |
 | Finland | 199 | 189 | 134 | 127 | 71% | Jul 2026 |
-| France | 2,210 | 1,990 | 610 | 587 | 31% | Jul 2026 – Aug 2026 |
+| France | 2,210 | 2,001 | 620 | 595 | 31% | Jul 2026 – Aug 2026 |
 | Germany | 3,614 | 3,536 | 2,191 | 1,840 | 62% | Jul 2026 – Aug 2026 |
 | Greece | 1,752 | 1,622 | 415 | 265 | 26% | Jul 2026 – Aug 2026 |
 | Hungary | 392 | 296 | 54 | 46 | 18% | Jul 2026 – Aug 2026 |
@@ -150,7 +150,7 @@ Checks whether each government page links to an accessibility statement as requi
 | Slovakia | 442 | 416 | 191 | 172 | 46% | Jul 2026 – Aug 2026 |
 | Slovenia | 214 | 207 | 116 | 81 | 56% | Jul 2026 |
 | Spain | 1,345 | 1,141 | 447 | 406 | 39% | Jul 2026 – Aug 2026 |
-| Sweden | 1,702 | 1,546 | 886 | 803 | 57% | Jul 2026 – Aug 2026 |
+| Sweden | 1,702 | 1,550 | 889 | 806 | 57% | Jul 2026 – Aug 2026 |
 | Switzerland | 2,123 | 2,075 | 1,025 | 1,024 | 49% | Jul 2026 – Aug 2026 |
 | United Kingdom | 4,613 | 4,365 | 2,511 | 2,358 | 58% | Jul 2026 – Aug 2026 |
 
