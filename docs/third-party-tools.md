@@ -5,9 +5,9 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-08-04 02:14 UTC — last scan: 2026-08-03_
+_Stats as of 2026-08-04 03:23 UTC — last scan: 2026-08-04_
 
-**145** scan batches run
+**147** scan batches run
 
 **17,705** of **87,696** available pages scanned (**20.2%** coverage)
 **16,407** of **17,705** scanned pages were reachable (**92.7%**)
@@ -27,9 +27,9 @@ _Stats as of 2026-08-04 02:14 UTC — last scan: 2026-08-03_
 | Canada | 1,066 | 4,469 | 1,022 | 643 | 953 | 62.9 | 93.2 | 2026-07-29 |
 | Croatia | 257 | 257 | 255 | 140 | 194 | 54.9 | 76.1 | 2026-08-03 |
 | Czechia | 866 | 866 | 796 | 491 | 835 | 61.7 | 104.9 | 2026-08-03 |
-| Denmark | 1,492 | 1,536 | 1,464 | 815 | 2,051 | 55.7 | 140.1 | 2026-08-01 |
+| Denmark | 1,492 | 1,536 | 1,464 | 815 | 2,051 | 55.7 | 140.1 | 2026-08-04 |
 | Estonia | 401 | 401 | 387 | 135 | 115 | 34.9 | 29.7 | 2026-08-03 |
-| Finland | 199 | 199 | 189 | 46 | 26 | 24.3 | 13.8 | 2026-08-01 |
+| Finland | 199 | 199 | 189 | 46 | 26 | 24.3 | 13.8 | 2026-08-04 |
 | France | 707 | 10,009 | 641 | 306 | 137 | 47.7 | 21.4 | 2026-07-30 |
 | Germany | 490 | 6,599 | 473 | 107 | 126 | 22.6 | 26.6 | 2026-07-30 |
 | Greece | 520 | 1,752 | 490 | 227 | 295 | 46.3 | 60.2 | 2026-07-30 |
@@ -170,9 +170,9 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 | 8 | `cdn.ecollege.haute-garonne.fr` | **265** | **25** |
 | 9 | `dreambroker.com` | **243** | **243** |
 | 10 | `maps.googleapis.com` | **237** | **222** |
-| 11 | `hubcdn.arcgis.com` | **225** | **45** |
-| 12 | `www.youtube.com` | **221** | **221** |
-| 13 | `cdn.herning.dk` | **221** | **22** |
+| 11 | `cdn.herning.dk` | **237** | **24** |
+| 12 | `hubcdn.arcgis.com` | **225** | **45** |
+| 13 | `www.youtube.com` | **221** | **221** |
 | 14 | `translate.google.com` | **211** | **211** |
 | 15 | `content.powerapps.com` | **192** | **16** |
 
