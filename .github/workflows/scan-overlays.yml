@@ -16,11 +16,10 @@ on:
         default: '1.0'
         type: string
 
-# Share concurrency group with the other metadata-producing scan workflows so
-# only one of them runs at a time, protecting the shared validation-metadata
-# artifact without letting low-priority URL validation block richer scans.
+# Each scan workflow uses its own concurrency group so runs can proceed in
+# parallel without blocking each other while still preventing self-overlap.
 concurrency:
-  group: metadata-scans
+  group: metadata-scans-overlays
   cancel-in-progress: false
 
 env:
@@ -29,7 +28,7 @@ env:
 jobs:
   scan-overlays:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 65
     permissions:
       contents: read
       actions: read
@@ -86,7 +85,7 @@ jobs:
         run: |
           python3 -m src.cli.scan_overlays \
             --all \
-            --max-runtime 110 \
+            --max-runtime 55 \
             --rate-limit "${{ github.event.inputs.rate_limit || '1.0' }}" \
             2>&1 | tee overlay-scan-output.txt
 
