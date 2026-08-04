@@ -1,13 +1,12 @@
 name: Scan Social Media Links
 
 on:
-  # Run every 2 hours — with --skip-recently-scanned-days 7 each run focuses
-  # only on URLs not yet scanned in the past week, so the full ~82k URL corpus
-  # is covered progressively without hammering government servers twice.
-  # 12 runs/day × 6,600 URLs/run (110 min @ 1 req/s) covers all 82k URLs in
-  # roughly 1.5 days; every URL is refreshed at least once per week.
+  # Run every 8 hours — with --skip-recently-scanned-days 30 each run focuses
+  # only on URLs not yet scanned in the past month.
+  # 3 runs/day × ~3,300 URLs/run (55 min @ 1 req/s) covers the ~88k URL corpus
+  # in roughly 9 days, giving monthly full-corpus coverage.
   schedule:
-    - cron: '0 */2 * * *'
+    - cron: '0 */8 * * *'
 
   # Allow manual trigger for a single country or all countries
   workflow_dispatch:
@@ -22,16 +21,15 @@ on:
         default: '1.0'
         type: string
       skip_recently_scanned_days:
-        description: 'Skip URLs scanned within this many days (0 = re-scan all, 7 = weekly refresh)'
+        description: 'Skip URLs scanned within this many days (0 = re-scan all, 30 = monthly refresh)'
         required: false
-        default: '7'
+        default: '30'
         type: string
 
-# Share concurrency group with the other metadata-producing scan workflows so
-# only one of them runs at a time, protecting the shared validation-metadata
-# artifact without letting low-priority URL validation block richer scans.
+# Each scan workflow uses its own concurrency group so runs can proceed in
+# parallel without blocking each other while still preventing self-overlap.
 concurrency:
-  group: metadata-scans
+  group: metadata-scans-social
   cancel-in-progress: false
 
 env:
@@ -40,7 +38,7 @@ env:
 jobs:
   scan-social-media:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 65
     permissions:
       contents: read
       actions: read
@@ -87,7 +85,7 @@ jobs:
       - name: Run social media scan (specific country)
         if: ${{ github.event.inputs.country != '' }}
         run: |
-          SKIP_DAYS="${{ github.event.inputs.skip_recently_scanned_days || '7' }}"
+          SKIP_DAYS="${{ github.event.inputs.skip_recently_scanned_days || '30' }}"
           python3 -m src.cli.scan_social_media \
             --country "${{ github.event.inputs.country }}" \
             --rate-limit "${{ github.event.inputs.rate_limit }}" \
@@ -97,10 +95,10 @@ jobs:
       - name: Run social media scan (all countries)
         if: ${{ github.event.inputs.country == '' || github.event_name == 'schedule' }}
         run: |
-          SKIP_DAYS="${{ github.event.inputs.skip_recently_scanned_days || '7' }}"
+          SKIP_DAYS="${{ github.event.inputs.skip_recently_scanned_days || '30' }}"
           python3 -m src.cli.scan_social_media \
             --all \
-            --max-runtime 110 \
+            --max-runtime 55 \
             --rate-limit "${{ github.event.inputs.rate_limit || '1.0' }}" \
             --skip-recently-scanned-days "$SKIP_DAYS" \
             2>&1 | tee social-scan-output.txt

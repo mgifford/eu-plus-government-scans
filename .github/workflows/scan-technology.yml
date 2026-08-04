@@ -1,12 +1,12 @@
 name: Scan Technology Stack
 
 on:
-  # Run every 2 hours — with --skip-recently-scanned-days 7 each run focuses
-  # only on URLs not yet scanned in the past week.
-  # 12 runs/day × ~1,000 URLs/run (15 min @ 2 req/s) covers the 82k URL corpus
-  # progressively and safely without hammering government servers.
+  # Run every 8 hours — with --skip-recently-scanned-days 30 each run focuses
+  # only on URLs not yet scanned in the past month.
+  # 3 runs/day × ~6,600 URLs/run (55 min @ 2 req/s) covers the ~88k URL corpus
+  # in roughly 5 days, giving monthly full-corpus coverage.
   schedule:
-    - cron: '0 */2 * * *'
+    - cron: '0 */8 * * *'
 
   # Allow manual trigger for a single country or all countries
   workflow_dispatch:
@@ -21,20 +21,19 @@ on:
         default: '2.0'
         type: string
       skip_recently_scanned_days:
-        description: 'Skip URLs scanned within this many days (0 = re-scan all, 7 = weekly refresh)'
+        description: 'Skip URLs scanned within this many days (0 = re-scan all, 30 = monthly refresh)'
         required: false
-        default: '7'
+        default: '30'
         type: string
       limit:
         description: 'Hard limit on the number of URLs to scan (Optional — e.g., 250, 500)'
         required: false
         type: string
 
-# Share concurrency group with the other metadata-producing scan workflows so
-# only one of them runs at a time, protecting the shared validation-metadata
-# artifact without letting low-priority URL validation block richer scans.
+# Each scan workflow uses its own concurrency group so runs can proceed in
+# parallel without blocking each other while still preventing self-overlap.
 concurrency:
-  group: metadata-scans
+  group: metadata-scans-technology
   cancel-in-progress: false
 
 env:
@@ -43,7 +42,7 @@ env:
 jobs:
   scan-technology:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 65
     permissions:
       contents: read
       actions: read
@@ -90,7 +89,7 @@ jobs:
         if: ${{ github.event.inputs.country != '' }}
         run: |
           set -o pipefail
-          SKIP_DAYS="${{ github.event.inputs.skip_recently_scanned_days || '7' }}"
+          SKIP_DAYS="${{ github.event.inputs.skip_recently_scanned_days || '30' }}"
           
           # Build arguments dynamically to support optional --limit
           ARGS=(
@@ -108,12 +107,12 @@ jobs:
         if: ${{ github.event.inputs.country == '' || github.event_name == 'schedule' }}
         run: |
           set -o pipefail
-          SKIP_DAYS="${{ github.event.inputs.skip_recently_scanned_days || '7' }}"
+          SKIP_DAYS="${{ github.event.inputs.skip_recently_scanned_days || '30' }}"
           
           # Build arguments dynamically to support optional --limit and run duration
           ARGS=(
             --all
-            --max-runtime 15
+            --max-runtime 55
             --rate-limit "${{ github.event.inputs.rate_limit || '2.0' }}"
             --skip-recently-scanned-days "$SKIP_DAYS"
           )
