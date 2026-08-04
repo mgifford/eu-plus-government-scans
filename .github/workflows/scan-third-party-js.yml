@@ -19,11 +19,10 @@ on:
         default: '1.0'
         type: string
 
-# Share concurrency group with the other metadata-producing scan workflows so
-# only one of them runs at a time, protecting the shared validation-metadata
-# artifact without letting low-priority URL validation block richer scans.
+# Each scan workflow uses its own concurrency group so runs can proceed in
+# parallel without blocking each other while still preventing self-overlap.
 concurrency:
-  group: metadata-scans
+  group: metadata-scans-third-party-js
   cancel-in-progress: false
 
 env:
