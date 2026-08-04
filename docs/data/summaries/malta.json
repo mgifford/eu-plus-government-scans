@@ -1,11 +1,11 @@
 {
   "country_code": "MALTA",
-  "total_relationships": 1747,
+  "total_relationships": 1758,
   "total_source_domains": 3,
   "top_source_domains": [
     {
       "domain": "gov.mt",
-      "count": 8335
+      "count": 8384
     },
     {
       "domain": "parlament.mt",
@@ -19,15 +19,15 @@
   "top_target_domains": [
     {
       "domain": "gov.mt",
-      "count": 4336
+      "count": 4358
+    },
+    {
+      "domain": "googleapis.com",
+      "count": 470
     },
     {
       "domain": "jsdelivr.net",
       "count": 469
-    },
-    {
-      "domain": "googleapis.com",
-      "count": 464
     },
     {
       "domain": "jquery.com",
@@ -35,11 +35,11 @@
     },
     {
       "domain": "youtube.com",
-      "count": 289
+      "count": 292
     },
     {
       "domain": "googletagmanager.com",
-      "count": 283
+      "count": 286
     },
     {
       "domain": "wordpress.org",
@@ -51,7 +51,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 163
+      "count": 166
     },
     {
       "domain": "europa.eu",
@@ -63,7 +63,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 101
+      "count": 104
     },
     {
       "domain": "google.com",
@@ -214,17 +214,17 @@
       "count": 6
     },
     {
-      "domain": "dakarsoftware.com",
-      "count": 5
+      "domain": "thewebally.com",
+      "count": 6
     }
   ],
   "relationship_types": {
-    "editorial_link": 720,
-    "script_dependency": 278,
-    "stylesheet_dependency": 268,
-    "image_or_media_dependency": 274,
-    "form_destination": 193,
+    "editorial_link": 724,
+    "script_dependency": 279,
+    "stylesheet_dependency": 270,
+    "image_or_media_dependency": 277,
+    "form_destination": 194,
     "font_or_preload_dependency": 14
   },
-  "generated_at": "2026-08-04T13:30:54.523025+00:00"
+  "generated_at": "2026-08-04T19:23:43.932353+00:00"
 }

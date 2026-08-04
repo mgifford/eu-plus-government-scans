@@ -113,8 +113,8 @@
   "MALTA": {
     "total_urls": 610,
     "attempted": 610,
-    "successful": 592,
-    "failed": 18,
+    "successful": 595,
+    "failed": 15,
     "skipped": 0,
     "never_scanned": 0,
     "stale_28d": 0
@@ -227,8 +227,14 @@
     "never_scanned": 0,
     "stale_28d": 0
   },
-  "UNITED_KINGDOM_UK": {
-    "error": "TOON file not found"
+  "POLAND": {
+    "total_urls": 14951,
+    "attempted": 14132,
+    "successful": 12787,
+    "failed": 1345,
+    "skipped": 0,
+    "never_scanned": 819,
+    "stale_28d": 0
   },
   "SLOVENIA": {
     "total_urls": 214,
@@ -248,14 +254,8 @@
     "never_scanned": 288,
     "stale_28d": 0
   },
-  "POLAND": {
-    "total_urls": 14951,
-    "attempted": 12946,
-    "successful": 11660,
-    "failed": 1286,
-    "skipped": 0,
-    "never_scanned": 2005,
-    "stale_28d": 0
+  "UNITED_KINGDOM_UK": {
+    "error": "TOON file not found"
   },
   "ESTONIA": {
     "total_urls": 401,
