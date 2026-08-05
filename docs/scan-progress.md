@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-08-05 17:53 UTC_
+_Generated: 2026-08-05 18:23 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -15,7 +15,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 |-----------|--------------|-----------|----------|---------|
 | **Combined Reachability** | **1,848 confirmed reachable** | 87,696 | **<span role="img" aria-label="2.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:3px;"></span></span><span class="sm-bar__label">2.1%</span></span>** | — |
 | Social Media | 0 scanned (0 reachable) | 87,696 | <span role="img" aria-label="0.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:0px;"></span></span><span class="sm-bar__label">0.0%</span></span> | — |
-| Technology | 0 scanned | 87,696 | (manual scan) | — |
+| Technology | 1,647 scanned | 87,696 | <span role="img" aria-label="1.9% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:2px;"></span></span><span class="sm-bar__label">1.9%</span></span> | 0 h |
 | Lighthouse | 10,044 scanned | 87,696 | <span role="img" aria-label="11.5% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:14px;"></span></span><span class="sm-bar__label">11.5%</span></span> | 9.7 days |
 | Accessibility Statements | 0 scanned | 87,696 | <span role="img" aria-label="0.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:0px;"></span></span><span class="sm-bar__label">0.0%</span></span> | — |
 
@@ -30,9 +30,12 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 
 > Hover or focus any non-zero **Total**, **Valid**, or **Invalid** count to preview matching URLs. **Valid** and **Invalid** can overlap because a URL may have passed in one validation run and failed in another during the same scan period; download the CSV for the underlying evidence from [scan-progress-data.json](scan-progress-data.json).
 
-## Technology Scan
+## Technology Scan by Country
 
-_No technology scans have been run yet. Trigger the **Scan Technology Stack** workflow manually._
+| Country | URLs Scanned | Last Scan |
+|---------|-------------|----------|
+| Austria | 822 | 2026-08-05 |
+| Belgium | 825 | 2026-08-05 |
 
 ## Lighthouse Scan by Country
 
