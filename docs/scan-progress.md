@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-08-05 03:31 UTC_
+_Generated: 2026-08-05 03:39 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -13,154 +13,59 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
-| **Combined Reachability** | **81,097 confirmed reachable** | 87,696 | **<span role="img" aria-label="92.5% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:111px;"></span></span><span class="sm-bar__label">92.5%</span></span>** | — |
-| Social Media | 87,696 scanned (81,096 reachable) | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 8.7 days |
-| Technology | 19,719 scanned | 87,696 | <span role="img" aria-label="22.5% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:27px;"></span></span><span class="sm-bar__label">22.5%</span></span> | 7.1 days |
-| Lighthouse | 0 scanned | 87,696 | (manual scan) | — |
-| Accessibility Statements | 38,393 scanned | 87,696 | <span role="img" aria-label="43.8% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:53px;"></span></span><span class="sm-bar__label">43.8%</span></span> | 8.0 days |
+| Social Media | 0 scanned (0 reachable) | 87,696 | <span role="img" aria-label="0.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:0px;"></span></span><span class="sm-bar__label">0.0%</span></span> | — |
+| Technology | 0 scanned | 87,696 | (manual scan) | — |
+| Lighthouse | 9,800 scanned | 87,696 | <span role="img" aria-label="11.2% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:13px;"></span></span><span class="sm-bar__label">11.2%</span></span> | 9.4 days |
+| Accessibility Statements | 0 scanned | 87,696 | <span role="img" aria-label="0.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:0px;"></span></span><span class="sm-bar__label">0.0%</span></span> | — |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by any scan type. **Avg Age** shows the mean number of days (or hours) since each URL in that scan type was last scanned — lower is fresher.
 
-## URL Validation by Country
+## Technology Scan
 
-| Country | Total | Valid | Invalid | Scan Period | Coverage |
-|---------|-------|-------|---------|-------------|----------|
-| Austria | 822 | 711 | 111 | Jul 2026 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:90px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:90px;"></span></span><span class="sm-bar__label">100.0%</span></span> |
-| Belgium | 1,235 | 1,066 | 169 | Jul 2026 | <span role="img" aria-label="92.9% complete" class="sm-bar"><span class="sm-bar__track" style="width:90px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:84px;"></span></span><span class="sm-bar__label">92.9%</span></span> |
-| Croatia | 257 | 248 | 9 | Jul 2026 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:90px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:90px;"></span></span><span class="sm-bar__label">100.0%</span></span> |
-| Czechia | 866 | 775 | 91 | Jul 2026 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:90px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:90px;"></span></span><span class="sm-bar__label">100.0%</span></span> |
-| Denmark | 1,384 | 1,200 | 184 | Jul 2026 | <span role="img" aria-label="90.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:90px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:81px;"></span></span><span class="sm-bar__label">90.1%</span></span> |
+_No technology scans have been run yet. Trigger the **Scan Technology Stack** workflow manually._
 
-> Hover or focus any non-zero **Total**, **Valid**, or **Invalid** count to preview matching URLs. **Valid** and **Invalid** can overlap because a URL may have passed in one validation run and failed in another during the same scan period; download the CSV for the underlying evidence from [scan-progress-data.json](scan-progress-data.json).
+## Lighthouse Scan by Country
 
-## Social Media Scan by Country
+| Country | URLs | Perf | A11y | Best Practices | SEO | Last Scan |
+|---------|------|------|------|----------------|-----|----------|
+| Austria | 734 | 88 | 90 | 91 | 89 | 2026-08-03 |
+| Belgium | 690 | 87 | 91 | 92 | 90 | 2026-08-04 |
+| Bulgaria | 316 | 87 | 81 | 88 | 87 | 2026-07-22 |
+| Canada | 145 | 93 | 88 | 91 | 84 | 2026-08-03 |
+| Croatia | 251 | 92 | 72 | 92 | 89 | 2026-07-20 |
+| Czechia | 823 | 91 | 87 | 92 | 88 | 2026-08-01 |
+| Denmark | 865 | 88 | 94 | 96 | 89 | 2026-08-04 |
+| Estonia | 357 | 91 | 87 | 86 | 89 | 2026-07-23 |
+| Finland | 181 | 86 | 94 | 96 | 87 | 2026-07-20 |
+| France | 127 | 89 | 91 | 92 | 91 | 2026-08-04 |
+| Germany | 210 | 93 | 93 | 98 | 89 | 2026-08-04 |
+| Greece | 185 | 84 | 87 | 92 | 88 | 2026-07-30 |
+| Hungary | 380 | 89 | 77 | 82 | 86 | 2026-07-23 |
+| Iceland | 133 | 93 | 92 | 91 | 91 | 2026-07-21 |
+| Ireland | 481 | 92 | 91 | 90 | 87 | 2026-08-04 |
+| Italy | 53 | 81 | 87 | 89 | 86 | 2026-07-31 |
+| Latvia | 340 | 87 | 85 | 91 | 85 | 2026-08-05 |
+| Lithuania | 111 | 86 | 81 | 87 | 85 | 2026-07-21 |
+| Luxembourg | 556 | 91 | 93 | 93 | 91 | 2026-07-28 |
+| Malta | 570 | 89 | 85 | 78 | 83 | 2026-08-02 |
+| Netherlands | 631 | 92 | 94 | 94 | 86 | 2026-08-03 |
+| Norway | 247 | 90 | 93 | 92 | 89 | 2026-07-21 |
+| Poland | 95 | 86 | 81 | 85 | 89 | 2026-08-01 |
+| Portugal | 33 | 88 | 76 | 82 | 88 | 2026-08-01 |
+| Cyprus | 27 | 81 | 86 | 84 | 86 | 2026-07-21 |
+| Romania | 32 | 83 | 74 | 86 | 80 | 2026-07-26 |
+| Slovakia | 291 | 91 | 87 | 91 | 88 | 2026-07-22 |
+| Slovenia | 204 | 86 | 80 | 89 | 85 | 2026-07-22 |
+| Spain | 69 | 86 | 87 | 88 | 87 | 2026-08-02 |
+| Sweden | 255 | 87 | 91 | 91 | 84 | 2026-08-03 |
+| Switzerland | 246 | 82 | 89 | 96 | 87 | 2026-08-02 |
+| United Kingdom | 162 | 91 | 95 | 93 | 90 | 2026-08-02 |
 
-| Country | Scanned | Available | Reachable | Twitter-only | Modern | Mixed | No Social | Twitter | X | Bluesky | Mastodon | Scan Period |
-|---------|---------|-----------|-----------|-------------|--------|-------|-----------|---------|---|---------|----------|-------------|
-| Austria | 822 | 822 | 787 | 314 | 2 | 47 | 433 | 34 | 20 | 16 | 44 | Jul 2026 – Aug 2026 |
-| Belgium | 1,329 | 1,329 | 1,236 | 410 | 8 | 96 | 732 | 172 | 76 | 29 | 87 | Jul 2026 – Aug 2026 |
-| Bulgaria | 353 | 353 | 318 | 104 | 1 | 22 | 222 | 24 | 6 | 0 | 23 | Jul 2026 – Aug 2026 |
-| Canada | 4,469 | 4,469 | 4,220 | 1,188 | 4 | 197 | 2,838 | 493 | 145 | 51 | 168 | Jul 2026 – Aug 2026 |
-| Croatia | 257 | 257 | 255 | 87 | 0 | 16 | 166 | 53 | 8 | 0 | 16 | Jul 2026 – Aug 2026 |
-| Czechia | 866 | 866 | 796 | 249 | 2 | 25 | 522 | 134 | 15 | 0 | 27 | Jul 2026 – Aug 2026 |
-| Denmark | 1,536 | 1,536 | 1,507 | 555 | 0 | 25 | 948 | 169 | 20 | 17 | 11 | Jul 2026 – Aug 2026 |
-| Estonia | 401 | 401 | 385 | 180 | 3 | 24 | 178 | 62 | 1 | 0 | 27 | Jul 2026 – Aug 2026 |
-| Finland | 199 | 199 | 189 | 69 | 0 | 9 | 111 | 31 | 10 | 3 | 6 | Jul 2026 – Aug 2026 |
-| France | 10,009 | 10,009 | 9,283 | 2,650 | 28 | 572 | 6,076 | 1,589 | 591 | 124 | 524 | Jul 2026 – Aug 2026 |
-| Germany | 6,599 | 6,599 | 6,510 | 1,665 | 84 | 456 | 4,339 | 1,155 | 186 | 146 | 487 | Jul 2026 – Aug 2026 |
-| Greece | 1,752 | 1,752 | 1,622 | 447 | 2 | 111 | 1,154 | 236 | 58 | 0 | 113 | Jul 2026 – Aug 2026 |
-| Hungary | 392 | 392 | 293 | 115 | 1 | 24 | 160 | 26 | 0 | 0 | 25 | Jul 2026 – Aug 2026 |
-| Iceland | 145 | 145 | 143 | 30 | 0 | 16 | 103 | 8 | 6 | 0 | 16 | Jul 2026 – Aug 2026 |
-| Ireland | 536 | 536 | 499 | 189 | 0 | 63 | 294 | 152 | 38 | 18 | 51 | Jul 2026 – Aug 2026 |
-| Italy | 5,351 | 5,351 | 4,839 | 2,318 | 16 | 328 | 2,198 | 1,991 | 146 | 0 | 344 | Jul 2026 – Aug 2026 |
-| Latvia | 803 | 803 | 762 | 378 | 0 | 92 | 317 | 281 | 55 | 0 | 92 | Jul 2026 – Aug 2026 |
-| Lithuania | 122 | 122 | 112 | 27 | 0 | 4 | 81 | 5 | 1 | 0 | 4 | Jul 2026 – Aug 2026 |
-| Luxembourg | 573 | 573 | 446 | 67 | 2 | 164 | 217 | 166 | 6 | 138 | 31 | Jul 2026 – Aug 2026 |
-| Malta | 610 | 610 | 595 | 123 | 2 | 37 | 453 | 47 | 14 | 0 | 39 | Jul 2026 – Aug 2026 |
-| Netherlands | 945 | 945 | 902 | 234 | 10 | 96 | 580 | 118 | 86 | 48 | 74 | Jul 2026 – Aug 2026 |
-| Norway | 249 | 249 | 242 | 57 | 2 | 0 | 184 | 9 | 13 | 0 | 2 | Jul 2026 – Aug 2026 |
-| Poland | 14,951 | 14,951 | 13,708 | 6,061 | 80 | 1,047 | 6,638 | 1,066 | 346 | 1 | 1,126 | Jul 2026 – Aug 2026 |
-| Portugal | 3,508 | 3,508 | 2,898 | 968 | 5 | 181 | 1,829 | 380 | 73 | 2 | 186 | Jul 2026 – Aug 2026 |
-| Cyprus | 29 | 29 | 29 | 15 | 0 | 0 | 18 | 9 | 1 | 0 | 0 | Jul 2026 – Aug 2026 |
-| Romania | 807 | 807 | 345 | 121 | 3 | 13 | 218 | 45 | 6 | 0 | 16 | Jul 2026 – Aug 2026 |
-| Slovakia | 442 | 442 | 421 | 136 | 0 | 27 | 264 | 19 | 12 | 1 | 26 | Jul 2026 – Aug 2026 |
-| Slovenia | 214 | 214 | 207 | 61 | 0 | 10 | 139 | 24 | 7 | 1 | 10 | Jul 2026 – Aug 2026 |
-| Spain | 6,091 | 6,091 | 5,195 | 1,900 | 11 | 352 | 3,017 | 1,633 | 455 | 65 | 317 | Jul 2026 – Aug 2026 |
-| Sweden | 1,702 | 1,702 | 1,625 | 556 | 4 | 53 | 1,012 | 88 | 21 | 14 | 44 | Jul 2026 – Aug 2026 |
-| Switzerland | 2,123 | 2,123 | 2,076 | 563 | 28 | 149 | 1,340 | 229 | 227 | 52 | 139 | Jul 2026 |
-| United Kingdom | 19,511 | 19,511 | 18,651 | 6,460 | 32 | 717 | 11,850 | 3,878 | 1,032 | 118 | 676 | Jul 2026 – Aug 2026 |
+> Scores are averages across all successfully audited URLs, displayed as 0–100 (multiply source values × 100).
 
-> **Tier columns** (Twitter-only / Modern / Mixed / No Social) classify each page by its overall social media presence. **Platform columns** (Twitter / X / Bluesky / Mastodon) count pages with at least one link to that platform — a page may appear in more than one platform column.
+## Accessibility Statement Scan
 
-> Hover or focus any non-zero platform count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and platform from [social-media-data.json](social-media-data.json).
-
-## Technology Scan by Country
-
-| Country | URLs Scanned | Last Scan |
-|---------|-------------|----------|
-| Austria | 822 | 2026-08-02 |
-| Belgium | 580 | 2026-08-02 |
-| Bulgaria | 353 | 2026-08-02 |
-| Canada | 1,130 | 2026-08-03 |
-| Croatia | 257 | 2026-08-02 |
-| Czechia | 837 | 2026-08-03 |
-| Denmark | 1,195 | 2026-08-03 |
-| Estonia | 401 | 2026-08-03 |
-| Finland | 199 | 2026-07-29 |
-| France | 740 | 2026-08-03 |
-| Germany | 931 | 2026-08-03 |
-| Greece | 708 | 2026-08-03 |
-| Hungary | 392 | 2026-08-03 |
-| Iceland | 145 | 2026-07-31 |
-| Ireland | 536 | 2026-08-04 |
-| Italy | 566 | 2026-08-04 |
-| Latvia | 786 | 2026-08-04 |
-| Lithuania | 122 | 2026-07-31 |
-| Luxembourg | 573 | 2026-08-02 |
-| Malta | 610 | 2026-08-05 |
-| Netherlands | 945 | 2026-08-02 |
-| Norway | 249 | 2026-08-01 |
-| Poland | 1,920 | 2026-08-05 |
-| Portugal | 740 | 2026-08-02 |
-| Cyprus | 29 | 2026-08-01 |
-| Romania | 129 | 2026-08-02 |
-| Slovakia | 442 | 2026-08-04 |
-| Slovenia | 214 | 2026-08-04 |
-| Spain | 406 | 2026-08-02 |
-| Sweden | 668 | 2026-08-02 |
-| Switzerland | 957 | 2026-08-02 |
-| United Kingdom | 1,137 | 2026-08-02 |
-
-## Lighthouse Scan
-
-_No Lighthouse scans have been run yet. Trigger the **Scan Lighthouse** workflow manually._
-
-## Accessibility Statement Scan by Country
-
-Checks whether each government page links to an accessibility statement as required by the EU Web Accessibility Directive (Directive 2016/2102).
-
-| Country | Scanned | Reachable | Has Statement | In Footer | Statement % | Scan Period |
-|---------|---------|-----------|--------------|-----------|------------|-------------|
-| Austria | 822 | 787 | 556 | 525 | 71% | Jul 2026 – Aug 2026 |
-| Belgium | 1,329 | 1,234 | 574 | 522 | 47% | Jul 2026 – Aug 2026 |
-| Bulgaria | 353 | 316 | 98 | 87 | 31% | Jul 2026 – Aug 2026 |
-| Canada | 3,448 | 3,255 | 622 | 524 | 19% | Jul 2026 – Aug 2026 |
-| Croatia | 257 | 255 | 107 | 82 | 42% | Jul 2026 – Aug 2026 |
-| Czechia | 866 | 796 | 429 | 373 | 54% | Jul 2026 – Aug 2026 |
-| Denmark | 1,536 | 1,507 | 969 | 948 | 64% | Jul 2026 – Aug 2026 |
-| Estonia | 401 | 385 | 148 | 78 | 38% | Jul 2026 – Aug 2026 |
-| Finland | 199 | 189 | 134 | 127 | 71% | Jul 2026 – Aug 2026 |
-| France | 2,210 | 2,001 | 620 | 595 | 31% | Jul 2026 – Aug 2026 |
-| Germany | 3,614 | 3,543 | 2,200 | 1,849 | 62% | Jul 2026 – Aug 2026 |
-| Greece | 1,752 | 1,622 | 415 | 265 | 26% | Jul 2026 – Aug 2026 |
-| Hungary | 392 | 296 | 54 | 46 | 18% | Jul 2026 – Aug 2026 |
-| Iceland | 145 | 143 | 12 | 5 | 8% | Jul 2026 |
-| Ireland | 536 | 499 | 249 | 236 | 50% | Jul 2026 |
-| Italy | 1,034 | 834 | 538 | 528 | 65% | Jul 2026 – Aug 2026 |
-| Latvia | 803 | 762 | 490 | 449 | 64% | Jul 2026 – Aug 2026 |
-| Lithuania | 122 | 112 | 1 | 0 | 1% | Jul 2026 – Aug 2026 |
-| Luxembourg | 573 | 446 | 269 | 258 | 60% | Jul 2026 – Aug 2026 |
-| Malta | 610 | 595 | 386 | 381 | 65% | Jul 2026 – Aug 2026 |
-| Netherlands | 945 | 902 | 416 | 408 | 46% | Jul 2026 |
-| Norway | 249 | 242 | 110 | 102 | 45% | Jul 2026 |
-| Poland | 1,939 | 1,797 | 771 | 461 | 43% | Jul 2026 – Aug 2026 |
-| Portugal | 3,045 | 2,489 | 662 | 575 | 27% | Jul 2026 – Aug 2026 |
-| Cyprus | 29 | 29 | 1 | 1 | 3% | Jul 2026 |
-| Romania | 745 | 301 | 20 | 7 | 7% | Jul 2026 – Aug 2026 |
-| Slovakia | 442 | 416 | 191 | 172 | 46% | Jul 2026 – Aug 2026 |
-| Slovenia | 214 | 207 | 116 | 81 | 56% | Jul 2026 |
-| Spain | 1,345 | 1,141 | 447 | 406 | 39% | Jul 2026 – Aug 2026 |
-| Sweden | 1,702 | 1,550 | 889 | 806 | 57% | Jul 2026 – Aug 2026 |
-| Switzerland | 2,123 | 2,075 | 1,025 | 1,024 | 49% | Jul 2026 – Aug 2026 |
-| United Kingdom | 4,613 | 4,365 | 2,511 | 2,358 | 58% | Jul 2026 – Aug 2026 |
-
-> **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
-
-## Countries With Social Scan But No URL Validation
-
-These countries have social media scan data but no URL validation data (URL validation may have been skipped because the social scan already confirmed reachability):
-
-`BULGARIA`, `CANADA`, `ESTONIA`, `FINLAND`, `FRANCE`, `GERMANY`, `GREECE`, `HUNGARY`, `ICELAND`, `IRELAND`, `ITALY`, `LATVIA`, `LITHUANIA`, `LUXEMBOURG`, `MALTA`, `NETHERLANDS`, `NORWAY`, `POLAND`, `PORTUGAL`, `REPUBLIC_OF_CYPRUS`, `ROMANIA`, `SLOVAKIA`, `SLOVENIA`, `SPAIN`, `SWEDEN`, `SWITZERLAND`, `UNITED_KINGDOM_UK`
+_No accessibility statement scans have been run yet. Trigger the **Scan Accessibility Statements** workflow manually or wait for the next scheduled run._
 
 ## Scan Priority Guide
 
