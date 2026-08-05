@@ -1,6 +1,6 @@
 {
   "country_code": "ITALY",
-  "total_relationships": 15852,
+  "total_relationships": 15853,
   "total_source_domains": 151,
   "top_source_domains": [
     {
@@ -41,7 +41,7 @@
     },
     {
       "domain": "regione.lazio.it",
-      "count": 1020
+      "count": 1021
     },
     {
       "domain": "comune.palermo.it",
@@ -287,7 +287,7 @@
     },
     {
       "domain": "regione.lazio.it",
-      "count": 597
+      "count": 598
     },
     {
       "domain": "comune.fi.it",
@@ -410,9 +410,9 @@
     "editorial_link": 7344,
     "script_dependency": 2552,
     "stylesheet_dependency": 2271,
-    "image_or_media_dependency": 2002,
+    "image_or_media_dependency": 2003,
     "form_destination": 1438,
     "font_or_preload_dependency": 245
   },
-  "generated_at": "2026-08-05T09:23:01.455980+00:00"
+  "generated_at": "2026-08-05T14:55:55.529066+00:00"
 }

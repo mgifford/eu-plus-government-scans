@@ -1,7 +1,7 @@
 {
   "country_code": "CANADA",
-  "total_relationships": 287137,
-  "total_source_domains": 8175,
+  "total_relationships": 288995,
+  "total_source_domains": 8256,
   "top_source_domains": [
     {
       "domain": "ethz.ch",
@@ -13,7 +13,7 @@
     },
     {
       "domain": "krakow.pl",
-      "count": 22635
+      "count": 22646
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -136,6 +136,10 @@
       "count": 3629
     },
     {
+      "domain": "ug.edu.pl",
+      "count": 3462
+    },
+    {
       "domain": "scot.nhs.uk",
       "count": 3429
     },
@@ -148,16 +152,16 @@
       "count": 3377
     },
     {
-      "domain": "ug.edu.pl",
-      "count": 3289
-    },
-    {
       "domain": "kk.dk",
       "count": 3007
     },
     {
       "domain": "sachsen-anhalt.de",
       "count": 2996
+    },
+    {
+      "domain": "gdynia.pl",
+      "count": 2994
     },
     {
       "domain": "navarra.es",
@@ -174,10 +178,6 @@
     {
       "domain": "wallonie.be",
       "count": 2681
-    },
-    {
-      "domain": "gdynia.pl",
-      "count": 2628
     },
     {
       "domain": "cnam.fr",
@@ -207,11 +207,11 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 30024
+      "count": 30269
     },
     {
       "domain": "googleapis.com",
-      "count": 24690
+      "count": 24971
     },
     {
       "domain": "sachsen.de",
@@ -223,11 +223,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 17328
+      "count": 17420
     },
     {
       "domain": "youtube.com",
-      "count": 16438
+      "count": 16546
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -235,23 +235,23 @@
     },
     {
       "domain": "twitter.com",
-      "count": 14161
+      "count": 14185
     },
     {
       "domain": "google.com",
-      "count": 13962
+      "count": 14035
     },
     {
       "domain": "linkedin.com",
-      "count": 12171
+      "count": 12207
     },
     {
       "domain": "googletagmanager.com",
-      "count": 11469
+      "count": 11528
     },
     {
       "domain": "krakow.pl",
-      "count": 11115
+      "count": 11121
     },
     {
       "domain": "niedersachsen.de",
@@ -275,15 +275,15 @@
     },
     {
       "domain": "poznan.pl",
-      "count": 7746
+      "count": 7750
     },
     {
       "domain": "jsdelivr.net",
-      "count": 7392
+      "count": 7431
     },
     {
       "domain": "cloudflare.com",
-      "count": 7150
+      "count": 7201
     },
     {
       "domain": "bayern.de",
@@ -291,7 +291,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 6341
+      "count": 6411
     },
     {
       "domain": "esteri.it",
@@ -323,15 +323,15 @@
     },
     {
       "domain": "fontawesome.com",
-      "count": 3573
+      "count": 3606
     },
     {
       "domain": "x.com",
-      "count": 3431
+      "count": 3434
     },
     {
       "domain": "gdansk.pl",
-      "count": 3401
+      "count": 3404
     },
     {
       "domain": "hessen.de",
@@ -339,7 +339,7 @@
     },
     {
       "domain": "unpkg.com",
-      "count": 3098
+      "count": 3112
     },
     {
       "domain": "hamburg.de",
@@ -347,11 +347,11 @@
     },
     {
       "domain": "europa.eu",
-      "count": 3034
+      "count": 3038
     },
     {
       "domain": "uni.opole.pl",
-      "count": 3028
+      "count": 3031
     },
     {
       "domain": "gva.es",
@@ -363,15 +363,15 @@
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 2787
+      "count": 2809
+    },
+    {
+      "domain": "jquery.com",
+      "count": 2673
     },
     {
       "domain": "diplo.de",
       "count": 2658
-    },
-    {
-      "domain": "jquery.com",
-      "count": 2646
     },
     {
       "domain": "xunta.gal",
@@ -386,16 +386,16 @@
       "count": 2515
     },
     {
+      "domain": "ug.edu.pl",
+      "count": 2218
+    },
+    {
       "domain": "steiermark.at",
       "count": 2154
     },
     {
       "domain": "cqc.org.uk",
       "count": 2102
-    },
-    {
-      "domain": "ug.edu.pl",
-      "count": 2101
     },
     {
       "domain": "sachsen-anhalt.de",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 147336,
-    "script_dependency": 45699,
-    "stylesheet_dependency": 36951,
-    "image_or_media_dependency": 30433,
-    "form_destination": 19456,
-    "font_or_preload_dependency": 7262
+    "editorial_link": 148330,
+    "script_dependency": 45960,
+    "stylesheet_dependency": 37185,
+    "image_or_media_dependency": 30640,
+    "form_destination": 19545,
+    "font_or_preload_dependency": 7335
   },
-  "generated_at": "2026-08-05T09:23:00.450558+00:00"
+  "generated_at": "2026-08-05T14:55:54.456213+00:00"
 }
