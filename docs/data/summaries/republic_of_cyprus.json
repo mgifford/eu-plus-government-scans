@@ -1,6 +1,6 @@
 {
   "country_code": "REPUBLIC_OF_CYPRUS",
-  "total_relationships": 284864,
+  "total_relationships": 285134,
   "total_source_domains": 8084,
   "top_source_domains": [
     {
@@ -36,6 +36,10 @@
       "count": 13223
     },
     {
+      "domain": "jcyl.es",
+      "count": 11643
+    },
+    {
       "domain": "niedersachsen.de",
       "count": 11592
     },
@@ -66,10 +70,6 @@
     {
       "domain": "giustizia.it",
       "count": 7770
-    },
-    {
-      "domain": "jcyl.es",
-      "count": 6622
     },
     {
       "domain": "diplo.de",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 29795
+      "count": 29826
     },
     {
       "domain": "googleapis.com",
@@ -223,11 +223,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 17197
+      "count": 17210
     },
     {
       "domain": "youtube.com",
-      "count": 16304
+      "count": 16331
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -235,7 +235,7 @@
     },
     {
       "domain": "twitter.com",
-      "count": 13995
+      "count": 14037
     },
     {
       "domain": "google.com",
@@ -243,7 +243,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 12076
+      "count": 12088
     },
     {
       "domain": "googletagmanager.com",
@@ -264,6 +264,10 @@
     {
       "domain": "rlp.de",
       "count": 8780
+    },
+    {
+      "domain": "jcyl.es",
+      "count": 7811
     },
     {
       "domain": "gouv.qc.ca",
@@ -299,15 +303,15 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 5012
+      "count": 5014
     },
     {
       "domain": "gencat.cat",
-      "count": 4999
+      "count": 5000
     },
     {
       "domain": "gov.mt",
-      "count": 4358
+      "count": 4359
     },
     {
       "domain": "giustizia.it",
@@ -316,10 +320,6 @@
     {
       "domain": "admin.ch",
       "count": 3659
-    },
-    {
-      "domain": "jcyl.es",
-      "count": 3633
     },
     {
       "domain": "fontawesome.com",
@@ -331,7 +331,7 @@
     },
     {
       "domain": "x.com",
-      "count": 3396
+      "count": 3399
     },
     {
       "domain": "hessen.de",
@@ -347,7 +347,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 3031
+      "count": 3033
     },
     {
       "domain": "uni.opole.pl",
@@ -355,7 +355,7 @@
     },
     {
       "domain": "gva.es",
-      "count": 2879
+      "count": 2880
     },
     {
       "domain": "haute-garonne.fr",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 146134,
-    "script_dependency": 45266,
-    "stylesheet_dependency": 36702,
-    "image_or_media_dependency": 30243,
-    "form_destination": 19308,
+    "editorial_link": 146243,
+    "script_dependency": 45307,
+    "stylesheet_dependency": 36742,
+    "image_or_media_dependency": 30283,
+    "form_destination": 19348,
     "font_or_preload_dependency": 7211
   },
-  "generated_at": "2026-08-04T19:23:43.870128+00:00"
+  "generated_at": "2026-08-05T03:15:13.207182+00:00"
 }
