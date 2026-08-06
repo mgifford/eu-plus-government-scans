@@ -1,7 +1,7 @@
 {
   "country_code": "REPUBLIC_OF_CYPRUS",
-  "total_relationships": 290890,
-  "total_source_domains": 8350,
+  "total_relationships": 290916,
+  "total_source_domains": 8351,
   "top_source_domains": [
     {
       "domain": "ethz.ch",
@@ -211,7 +211,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 25160
+      "count": 25162
     },
     {
       "domain": "sachsen.de",
@@ -227,7 +227,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 16649
+      "count": 16651
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 149316,
-    "script_dependency": 46356,
-    "stylesheet_dependency": 37392,
-    "image_or_media_dependency": 30770,
-    "form_destination": 19658,
+    "editorial_link": 149333,
+    "script_dependency": 46358,
+    "stylesheet_dependency": 37395,
+    "image_or_media_dependency": 30772,
+    "form_destination": 19660,
     "font_or_preload_dependency": 7398
   },
-  "generated_at": "2026-08-05T20:17:05.075842+00:00"
+  "generated_at": "2026-08-06T14:55:21.784949+00:00"
 }
