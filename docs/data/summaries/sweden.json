@@ -1,7 +1,7 @@
 {
   "country_code": "SWEDEN",
-  "total_relationships": 4815,
-  "total_source_domains": 185,
+  "total_relationships": 4841,
+  "total_source_domains": 186,
   "top_source_domains": [
     {
       "domain": "uppsala.se",
@@ -247,11 +247,11 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 168
+      "count": 170
     },
     {
       "domain": "youtube.com",
-      "count": 162
+      "count": 164
     },
     {
       "domain": "stockholm.se",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 2112,
-    "script_dependency": 896,
-    "stylesheet_dependency": 703,
-    "image_or_media_dependency": 530,
-    "form_destination": 372,
+    "editorial_link": 2129,
+    "script_dependency": 898,
+    "stylesheet_dependency": 706,
+    "image_or_media_dependency": 532,
+    "form_destination": 374,
     "font_or_preload_dependency": 202
   },
-  "generated_at": "2026-08-03T01:27:44.891685+00:00"
+  "generated_at": "2026-08-06T14:55:22.444074+00:00"
 }
