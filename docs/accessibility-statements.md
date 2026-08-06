@@ -5,34 +5,7 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-08-06 03:45 UTC — last scan: 2026-08-05_
-
-**4** scan batches run
-
-**2,633** of **87,696** available pages scanned (**3.0%** coverage)
-**2,434** of **2,633** scanned pages were reachable (**92.4%**)
-**953** of **2,434** reachable pages have an accessibility statement (**39.2%**)
-**863** pages have the statement link in the footer (**90.6%** of pages with a statement)
-
-📥 Machine-readable results are available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
-
-Each country entry in the JSON file includes page-level evidence for pages with and without accessibility statements, plus a per-domain summary you can share to validate the published counts.
-
-> Hover or focus any non-zero count in the country table to preview the matching pages. If there are 20 or fewer URLs, the preview shows all of them; otherwise it shows a short sample. Full machine-readable data is available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
-
----
-
-## Accessibility Statement Scan by Country
-
-| Country | Scanned | Available | Reachable | Has Statement | In Footer | Statement % | Scan Period |
-|---------|---------|-----------|-----------|--------------|-----------|------------|-------------|
-| Austria | 822 | 822 | 762 | 542 | 511 | 71.1% | Aug 2026 |
-| Belgium | 229 | 1,329 | 190 | 93 | 86 | 48.9% | Aug 2026 |
-| Bulgaria | 353 | 353 | 305 | 97 | 86 | 31.8% | Aug 2026 |
-| Canada | 1,229 | 4,469 | 1,177 | 221 | 180 | 18.8% | Aug 2026 |
-| **Total** | **2,633** | **87,696** | **2,434** | **953** | **863** | **39.2%** | — |
-
-> **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
+_No scan data yet — stats update automatically after every scan run._
 
 <!-- ACCESSIBILITY_STATS_END -->
 
