@@ -5,7 +5,125 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_No scan data yet — stats update automatically after every scan run._
+_Stats as of 2026-08-07 00:15 UTC — last scan: 2026-08-06_
+
+**2** scan batches run
+
+**1,108** of **87,696** available pages scanned (**1.3%** coverage)
+**1,010** of **1,108** scanned pages were reachable (**91.2%**)
+**366** reachable pages loaded at least one third-party script (**36.2%** of reachable)
+**190** known third-party service loads identified
+**13** unique known services across **10** categories
+
+---
+
+## Third-Party JavaScript by Country
+
+| Country | Scanned | Available | Reachable | URLs with 3rd-Party JS | Known Service Loads | JS URLs /100 Reachable | Known Loads /100 Reachable | Last Scan |
+|---------|---------|-----------|-----------|------------------------|--------------------|------------------------|---------------------------|----------|
+| Austria | 755 | 822 | 702 | 243 | 36 | 34.6 | 5.1 | 2026-08-06 |
+| Bulgaria | 353 | 353 | 308 | 123 | 154 | 39.9 | 50.0 | 2026-08-06 |
+
+> Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and metric from [Download machine-readable third-party tools data (JSON)](third-party-tools-data.json).
+
+---
+
+### Top Third-Party Services
+
+| # | Service | Loads |
+|--:|---------|------:|
+| 1 | jsDelivr CDN | **40** |
+| 2 | Google reCAPTCHA | **32** |
+| 3 | Google Analytics (GA4) | **28** |
+| 4 | cdnjs (Cloudflare CDN) | **24** |
+| 5 | Google Hosted Libraries | **22** |
+| 6 | jQuery | **15** |
+| 7 | Google Tag Manager | **9** |
+| 8 | Font Awesome | **8** |
+| 9 | unpkg CDN | **4** |
+| 10 | Bootstrap | **3** |
+| 11 | Cookiebot | **3** |
+| 12 | Facebook Pixel | **1** |
+| 13 | Google Analytics (Universal) | **1** |
+
+### Top Services by Page Prevalence
+
+| # | Service | Reachable Pages | Prevalence of Reachable Pages |
+|--:|---------|----------------:|------------------------------:|
+| 1 | Google reCAPTCHA | **32** | **10.4%** |
+| 2 | Google Analytics (GA4) | **28** | **9.1%** |
+| 3 | jsDelivr CDN | **25** | **8.1%** |
+| 4 | Google Hosted Libraries | **22** | **7.1%** |
+| 5 | cdnjs (Cloudflare CDN) | **21** | **6.8%** |
+| 6 | jQuery | **12** | **3.9%** |
+| 7 | Google Tag Manager | **9** | **2.9%** |
+| 8 | Font Awesome | **8** | **2.6%** |
+| 9 | unpkg CDN | **4** | **1.3%** |
+| 10 | Bootstrap | **3** | **1.0%** |
+| 11 | Cookiebot | **3** | **1.0%** |
+| 12 | Facebook Pixel | **1** | **0.3%** |
+| 13 | Google Analytics (Universal) | **1** | **0.3%** |
+
+### Top Service Categories
+
+| # | Category | Loads |
+|--:|----------|------:|
+| 1 | CDN | **90** |
+| 2 | JavaScript Library | **37** |
+| 3 | Security | **32** |
+| 4 | CAPTCHA | **32** |
+| 5 | Analytics | **30** |
+| 6 | Tag Manager | **9** |
+| 7 | Icon Library | **8** |
+| 8 | UI Framework | **3** |
+| 9 | Cookie Consent | **3** |
+| 10 | Advertising | **1** |
+
+### Category Balance
+
+Infrastructure-heavy categories (CDNs, core libraries, and UI assets):
+
+| # | Infrastructure Category | Loads |
+|--:|--------------------------|------:|
+| 1 | CDN | **90** |
+| 2 | JavaScript Library | **37** |
+| 3 | Icon Library | **8** |
+| 4 | UI Framework | **3** |
+
+Policy-relevant categories (tracking, consent, support, and security tooling):
+
+| # | Policy-Relevant Category | Loads |
+|--:|--------------------------|------:|
+| 1 | Security | **32** |
+| 2 | CAPTCHA | **32** |
+| 3 | Analytics | **30** |
+| 4 | Tag Manager | **9** |
+| 5 | Cookie Consent | **3** |
+| 6 | Advertising | **1** |
+
+### Unknown Third-Party Hosts (Review Queue)
+
+| # | Host | Loads | Reachable Pages |
+|--:|------|------:|----------------:|
+| 1 | `webcachex-eu.datareporter.eu` | **142** | **142** |
+| 2 | `s7.addthis.com` | **27** | **25** |
+| 3 | `translate.google.com` | **21** | **21** |
+| 4 | `www.gstatic.com` | **11** | **11** |
+| 5 | `service.bmf.gv.at` | **7** | **3** |
+| 6 | `maps.google.com` | **6** | **6** |
+| 7 | `stp.wien.gv.at` | **6** | **6** |
+| 8 | `static.etracker.com` | **6** | **6** |
+| 9 | `inside.bundesheer.at` | **6** | **3** |
+| 10 | `analytics.silktide.com` | **5** | **5** |
+| 11 | `consent.cookiebot.eu` | **5** | **5** |
+| 12 | `concierge.goodguys.ai` | **5** | **5** |
+| 13 | `cdn.userway.org` | **4** | **4** |
+| 14 | `cdn.priv.center` | **4** | **4** |
+| 15 | `chat.oesterreich.gv.at` | **4** | **4** |
+
+> These hosts were seen as third-party script sources but did not match a known service signature. Review this queue regularly and promote stable, policy-relevant hosts into the signature list.
+
+📥 Machine-readable results: [Download machine-readable third-party tools data (JSON)](third-party-tools-data.json)
 
 <!-- THIRD_PARTY_JS_STATS_END -->
 
