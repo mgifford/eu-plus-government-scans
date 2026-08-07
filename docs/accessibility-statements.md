@@ -5,34 +5,7 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-08-07 00:15 UTC — last scan: 2026-08-06_
-
-**4** scan batches run
-
-**2,986** of **87,696** available pages scanned (**3.4%** coverage)
-**2,799** of **2,986** scanned pages were reachable (**93.7%**)
-**1,115** of **2,799** reachable pages have an accessibility statement (**39.8%**)
-**1,010** pages have the statement link in the footer (**90.6%** of pages with a statement)
-
-📥 Machine-readable results are available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
-
-Each country entry in the JSON file includes page-level evidence for pages with and without accessibility statements, plus a per-domain summary you can share to validate the published counts.
-
-> Hover or focus any non-zero count in the country table to preview the matching pages. If there are 20 or fewer URLs, the preview shows all of them; otherwise it shows a short sample. Full machine-readable data is available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
-
----
-
-## Accessibility Statement Scan by Country
-
-| Country | Scanned | Available | Reachable | Has Statement | In Footer | Statement % | Scan Period |
-|---------|---------|-----------|-----------|--------------|-----------|------------|-------------|
-| Austria | 822 | 822 | 785 | 554 | 523 | 70.6% | Aug 2026 |
-| Belgium | 608 | 1,329 | 556 | 269 | 243 | 48.4% | Aug 2026 |
-| Bulgaria | 353 | 353 | 306 | 82 | 75 | 26.8% | Aug 2026 |
-| Canada | 1,203 | 4,469 | 1,152 | 210 | 169 | 18.2% | Aug 2026 |
-| **Total** | **2,986** | **87,696** | **2,799** | **1,115** | **1,010** | **39.8%** | — |
-
-> **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
+_No scan data yet — stats update automatically after every scan run._
 
 <!-- ACCESSIBILITY_STATS_END -->
 
