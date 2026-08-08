@@ -5,14 +5,14 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-08-08 17:32 UTC — last scan: 2026-08-08_
+_Stats as of 2026-08-08 17:53 UTC — last scan: 2026-08-08_
 
-**16** scan batches run
+**19** scan batches run
 
-**11,410** of **87,696** available pages scanned (**13.0%** coverage)
-**10,629** of **11,410** scanned pages were reachable (**93.2%**)
-**4,963** of **10,629** reachable pages have an accessibility statement (**46.7%**)
-**4,502** pages have the statement link in the footer (**90.7%** of pages with a statement)
+**12,754** of **87,696** available pages scanned (**14.5%** coverage)
+**11,829** of **12,754** scanned pages were reachable (**92.7%**)
+**5,668** of **11,829** reachable pages have an accessibility statement (**47.9%**)
+**5,159** pages have the statement link in the footer (**91.0%** of pages with a statement)
 
 📥 Machine-readable results are available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
 
@@ -42,7 +42,10 @@ Each country entry in the JSON file includes page-level evidence for pages with 
 | Iceland | 145 | 145 | 123 | 11 | 5 | 8.9% | Aug 2026 |
 | Ireland | 456 | 536 | 415 | 204 | 195 | 49.2% | Aug 2026 |
 | Italy | 951 | 5,351 | 875 | 581 | 570 | 66.4% | Aug 2026 |
-| **Total** | **11,411** | **87,696** | **10,630** | **4,964** | **4,503** | **46.7%** | — |
+| Latvia | 803 | 803 | 760 | 488 | 447 | 64.2% | Aug 2026 |
+| Lithuania | 122 | 122 | 112 | 1 | 0 | 0.9% | Aug 2026 |
+| Luxembourg | 419 | 573 | 328 | 216 | 210 | 65.9% | Aug 2026 |
+| **Total** | **12,755** | **87,696** | **11,830** | **5,669** | **5,160** | **47.9%** | — |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
