@@ -5,12 +5,12 @@ layout: page
 
 <!-- LIGHTHOUSE_STATS_START -->
 
-_Stats as of 2026-08-08 07:14 UTC — last scan: 2026-08-08_
+_Stats as of 2026-08-08 07:53 UTC — last scan: 2026-08-08_
 
-**108** scan batches run
+**110** scan batches run
 
-**11,413** of **87,696** available pages audited (**13.0%** coverage)
-**10,475** successful audits (**91.8%** of audited)
+**11,648** of **87,696** available pages audited (**13.3%** coverage)
+**10,695** successful audits (**91.8%** of audited)
 
 **Overall average Lighthouse scores** (0–100 scale):
 
@@ -42,7 +42,7 @@ _Stats as of 2026-08-08 07:14 UTC — last scan: 2026-08-08_
 | Italy | 191 | 5,351 | 88 | 87 | 95 | 87 | 2026-08-05 |
 | Latvia | 395 | 803 | 87 | 85 | 91 | 85 | 2026-08-08 |
 | Lithuania | 122 | 122 | 86 | 81 | 87 | 85 | 2026-07-24 |
-| Luxembourg | 573 | 573 | 91 | 93 | 93 | 91 | 2026-08-05 |
+| Luxembourg | 573 | 573 | 91 | 93 | 93 | 91 | 2026-08-08 |
 | Malta | 610 | 610 | 89 | 85 | 78 | 83 | 2026-08-05 |
 | Netherlands | 756 | 945 | 92 | 94 | 94 | 86 | 2026-08-05 |
 | Norway | 249 | 249 | 90 | 93 | 92 | 89 | 2026-07-21 |
@@ -54,7 +54,7 @@ _Stats as of 2026-08-08 07:14 UTC — last scan: 2026-08-08_
 | Slovenia | 214 | 214 | 86 | 80 | 89 | 85 | 2026-07-22 |
 | Spain | 134 | 6,091 | 87 | 88 | 86 | 89 | 2026-08-07 |
 | Sweden | 384 | 1,702 | 87 | 92 | 91 | 86 | 2026-08-06 |
-| Switzerland | 263 | 2,123 | 82 | 89 | 96 | 87 | 2026-08-02 |
+| Switzerland | 498 | 2,123 | 84 | 90 | 96 | 88 | 2026-08-08 |
 | United Kingdom | 176 | 19,511 | 91 | 95 | 93 | 90 | 2026-08-02 |
 
 > Scores are averages across all successfully audited URLs, displayed as 0–100 (Lighthouse stores scores as 0.0–1.0 internally).
