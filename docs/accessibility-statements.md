@@ -5,7 +5,36 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_No scan data yet — stats update automatically after every scan run._
+_Stats as of 2026-08-09 20:51 UTC — last scan: 2026-08-09_
+
+**6** scan batches run
+
+**3,239** of **87,696** available pages scanned (**3.7%** coverage)
+**2,954** of **3,239** scanned pages were reachable (**91.2%**)
+**1,345** of **2,954** reachable pages have an accessibility statement (**45.5%**)
+**1,186** pages have the statement link in the footer (**88.2%** of pages with a statement)
+
+📥 Machine-readable results are available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
+
+Each country entry in the JSON file includes page-level evidence for pages with and without accessibility statements, plus a per-domain summary you can share to validate the published counts.
+
+> Hover or focus any non-zero count in the country table to preview the matching pages. If there are 20 or fewer URLs, the preview shows all of them; otherwise it shows a short sample. Full machine-readable data is available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
+
+---
+
+## Accessibility Statement Scan by Country
+
+| Country | Scanned | Available | Reachable | Has Statement | In Footer | Statement % | Scan Period |
+|---------|---------|-----------|-----------|--------------|-----------|------------|-------------|
+| Austria | 822 | 822 | 754 | 540 | 513 | 71.6% | Aug 2026 |
+| Belgium | 89 | 1,329 | 49 | 20 | 18 | 40.8% | Aug 2026 |
+| Bulgaria | 353 | 353 | 302 | 94 | 83 | 31.1% | Aug 2026 |
+| Canada | 866 | 4,469 | 815 | 161 | 122 | 19.8% | Aug 2026 |
+| Croatia | 257 | 257 | 253 | 104 | 79 | 41.1% | Aug 2026 |
+| Czechia | 853 | 866 | 782 | 427 | 372 | 54.6% | Aug 2026 |
+| **Total** | **3,240** | **87,696** | **2,955** | **1,346** | **1,187** | **45.5%** | — |
+
+> **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
 <!-- ACCESSIBILITY_STATS_END -->
 
