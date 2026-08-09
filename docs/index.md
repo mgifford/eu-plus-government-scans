@@ -11,13 +11,13 @@ power them, including which third-party JavaScript services they rely on.
 
 <!-- SCAN_PROGRESS_START -->
 
-_Progress as of 2026-08-09 02:28 UTC_
+_Progress as of 2026-08-09 02:34 UTC_
 
 | Scan Type | Pages Scanned | Coverage | Avg Age |
 |-----------|--------------|----------|---------|
 | **Combined Reachability** | **7,956 confirmed reachable** | **<span role="img" aria-label="9.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:11px;"></span></span><span class="sm-bar__label">9.1%</span></span>** | — |
 | Social Media | 1,285 scanned (1,206 reachable) | <span role="img" aria-label="1.5% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:2px;"></span></span><span class="sm-bar__label">1.5%</span></span> | 1.0 days |
-| Technology | 1,662 scanned | <span role="img" aria-label="1.9% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:2px;"></span></span><span class="sm-bar__label">1.9%</span></span> | 2.0 days |
+| Technology | 3,067 scanned | <span role="img" aria-label="3.5% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:4px;"></span></span><span class="sm-bar__label">3.5%</span></span> | 1.1 days |
 | Lighthouse | 10,096 scanned | <span role="img" aria-label="11.5% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:14px;"></span></span><span class="sm-bar__label">11.5%</span></span> | 13.0 days |
 | Accessibility Statements | 14,150 scanned | <span role="img" aria-label="16.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:19px;"></span></span><span class="sm-bar__label">16.1%</span></span> | 1.5 days |
 
