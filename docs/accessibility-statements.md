@@ -5,34 +5,7 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-08-09 13:15 UTC — last scan: 2026-08-09_
-
-**4** scan batches run
-
-**2,130** of **87,696** available pages scanned (**2.4%** coverage)
-**1,920** of **2,130** scanned pages were reachable (**90.1%**)
-**815** of **1,920** reachable pages have an accessibility statement (**42.4%**)
-**736** pages have the statement link in the footer (**90.3%** of pages with a statement)
-
-📥 Machine-readable results are available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
-
-Each country entry in the JSON file includes page-level evidence for pages with and without accessibility statements, plus a per-domain summary you can share to validate the published counts.
-
-> Hover or focus any non-zero count in the country table to preview the matching pages. If there are 20 or fewer URLs, the preview shows all of them; otherwise it shows a short sample. Full machine-readable data is available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
-
----
-
-## Accessibility Statement Scan by Country
-
-| Country | Scanned | Available | Reachable | Has Statement | In Footer | Statement % | Scan Period |
-|---------|---------|-----------|-----------|--------------|-----------|------------|-------------|
-| Austria | 822 | 822 | 754 | 540 | 513 | 71.6% | Aug 2026 |
-| Belgium | 89 | 1,329 | 49 | 20 | 18 | 40.8% | Aug 2026 |
-| Bulgaria | 353 | 353 | 302 | 94 | 83 | 31.1% | Aug 2026 |
-| Canada | 866 | 4,469 | 815 | 161 | 122 | 19.8% | Aug 2026 |
-| **Total** | **2,130** | **87,696** | **1,920** | **815** | **736** | **42.4%** | — |
-
-> **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
+_No scan data yet — stats update automatically after every scan run._
 
 <!-- ACCESSIBILITY_STATS_END -->
 
