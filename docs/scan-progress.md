@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-08-09 14:23 UTC_
+_Generated: 2026-08-09 14:52 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -13,11 +13,11 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
-| **Combined Reachability** | **833 confirmed reachable** | 87,696 | **<span role="img" aria-label="0.9% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:1px;"></span></span><span class="sm-bar__label">0.9%</span></span>** | — |
+| **Combined Reachability** | **2,482 confirmed reachable** | 87,696 | **<span role="img" aria-label="2.8% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:3px;"></span></span><span class="sm-bar__label">2.8%</span></span>** | — |
 | Social Media | 0 scanned (0 reachable) | 87,696 | <span role="img" aria-label="0.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:0px;"></span></span><span class="sm-bar__label">0.0%</span></span> | — |
 | Technology | 0 scanned | 87,696 | (manual scan) | — |
 | Lighthouse | 10,918 scanned | 87,696 | <span role="img" aria-label="12.4% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:15px;"></span></span><span class="sm-bar__label">12.4%</span></span> | 12.3 days |
-| Accessibility Statements | 3,177 scanned | 87,696 | <span role="img" aria-label="3.6% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:4px;"></span></span><span class="sm-bar__label">3.6%</span></span> | 4 h |
+| Accessibility Statements | 2,130 scanned | 87,696 | <span role="img" aria-label="2.4% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:3px;"></span></span><span class="sm-bar__label">2.4%</span></span> | 7 h |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by any scan type. **Avg Age** shows the mean number of days (or hours) since each URL in that scan type was last scanned — lower is fresher.
 
@@ -27,6 +27,9 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 |---------|-------|-------|---------|-------------|----------|
 | Austria | 822 | 701 | 121 | Aug 2026 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:90px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:90px;"></span></span><span class="sm-bar__label">100.0%</span></span> |
 | Belgium | 254 | 132 | 122 | Aug 2026 | <span role="img" aria-label="19.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:90px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:17px;"></span></span><span class="sm-bar__label">19.1%</span></span> |
+| Croatia | 257 | 247 | 10 | Aug 2026 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:90px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:90px;"></span></span><span class="sm-bar__label">100.0%</span></span> |
+| Czechia | 866 | 773 | 93 | Aug 2026 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:90px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:90px;"></span></span><span class="sm-bar__label">100.0%</span></span> |
+| Denmark | 726 | 629 | 97 | Aug 2026 | <span role="img" aria-label="47.3% complete" class="sm-bar"><span class="sm-bar__track" style="width:90px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:43px;"></span></span><span class="sm-bar__label">47.3%</span></span> |
 
 > Hover or focus any non-zero **Total**, **Valid**, or **Invalid** count to preview matching URLs. **Valid** and **Invalid** can overlap because a URL may have passed in one validation run and failed in another during the same scan period; download the CSV for the underlying evidence from [scan-progress-data.json](scan-progress-data.json).
 
@@ -83,8 +86,6 @@ Checks whether each government page links to an accessibility statement as requi
 | Belgium | 89 | 49 | 20 | 18 | 41% | Aug 2026 |
 | Bulgaria | 353 | 302 | 94 | 83 | 31% | Aug 2026 |
 | Canada | 866 | 815 | 161 | 122 | 20% | Aug 2026 |
-| Croatia | 257 | 244 | 97 | 72 | 40% | Aug 2026 |
-| Czechia | 790 | 720 | 375 | 337 | 52% | Aug 2026 |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
@@ -92,7 +93,7 @@ Checks whether each government page links to an accessibility statement as requi
 
 These countries have URL validation data but have not yet been scanned for social media links:
 
-`AUSTRIA`, `BELGIUM`
+`AUSTRIA`, `BELGIUM`, `CROATIA`, `CZECHIA`, `DENMARK`
 
 ## Scan Priority Guide
 
