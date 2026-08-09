@@ -1,6 +1,6 @@
 {
   "country_code": "UNITED_KINGDOM_UK",
-  "total_relationships": 290916,
+  "total_relationships": 290921,
   "total_source_domains": 8351,
   "top_source_domains": [
     {
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 149333,
+    "editorial_link": 149337,
     "script_dependency": 46358,
     "stylesheet_dependency": 37395,
-    "image_or_media_dependency": 30772,
+    "image_or_media_dependency": 30773,
     "form_destination": 19660,
     "font_or_preload_dependency": 7398
   },
-  "generated_at": "2026-08-09T02:28:29.327412+00:00"
+  "generated_at": "2026-08-09T19:23:53.360148+00:00"
 }
