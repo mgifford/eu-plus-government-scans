@@ -1,7 +1,7 @@
 {
   "country_code": "UNITED_KINGDOM_UK",
-  "total_relationships": 290890,
-  "total_source_domains": 8350,
+  "total_relationships": 290916,
+  "total_source_domains": 8351,
   "top_source_domains": [
     {
       "domain": "ethz.ch",
@@ -207,11 +207,11 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 30475
+      "count": 30477
     },
     {
       "domain": "googleapis.com",
-      "count": 25160
+      "count": 25164
     },
     {
       "domain": "sachsen.de",
@@ -223,11 +223,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 17536
+      "count": 17537
     },
     {
       "domain": "youtube.com",
-      "count": 16649
+      "count": 16652
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -239,15 +239,15 @@
     },
     {
       "domain": "google.com",
-      "count": 14234
+      "count": 14235
     },
     {
       "domain": "linkedin.com",
-      "count": 12287
+      "count": 12288
     },
     {
       "domain": "googletagmanager.com",
-      "count": 11631
+      "count": 11633
     },
     {
       "domain": "krakow.pl",
@@ -339,7 +339,7 @@
     },
     {
       "domain": "unpkg.com",
-      "count": 3167
+      "count": 3169
     },
     {
       "domain": "hamburg.de",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 149316,
-    "script_dependency": 46356,
-    "stylesheet_dependency": 37392,
-    "image_or_media_dependency": 30770,
-    "form_destination": 19658,
+    "editorial_link": 149333,
+    "script_dependency": 46358,
+    "stylesheet_dependency": 37395,
+    "image_or_media_dependency": 30772,
+    "form_destination": 19660,
     "font_or_preload_dependency": 7398
   },
-  "generated_at": "2026-08-05T20:17:06.067256+00:00"
+  "generated_at": "2026-08-09T02:28:29.327412+00:00"
 }
