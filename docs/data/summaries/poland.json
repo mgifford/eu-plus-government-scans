@@ -215,7 +215,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 8283
+      "count": 8285
     },
     {
       "domain": "poznan.pl",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 7388
+      "count": 7390
     },
     {
       "domain": "gdansk.pl",
@@ -235,19 +235,19 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 2974
+      "count": 2976
     },
     {
       "domain": "instagram.com",
-      "count": 2882
+      "count": 2883
     },
     {
       "domain": "youtube.com",
-      "count": 2834
+      "count": 2835
     },
     {
       "domain": "google.com",
-      "count": 2820
+      "count": 2821
     },
     {
       "domain": "ug.edu.pl",
@@ -295,7 +295,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 919
+      "count": 920
     },
     {
       "domain": "fontawesome.com",
@@ -315,7 +315,7 @@
     },
     {
       "domain": "unpkg.com",
-      "count": 652
+      "count": 654
     },
     {
       "domain": "wordpress.org",
@@ -414,5 +414,5 @@
     "form_destination": 3107,
     "font_or_preload_dependency": 1664
   },
-  "generated_at": "2026-08-05T14:55:55.774055+00:00"
+  "generated_at": "2026-08-09T02:28:29.534684+00:00"
 }
