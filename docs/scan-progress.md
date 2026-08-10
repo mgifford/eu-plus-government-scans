@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-08-10 19:16 UTC_
+_Generated: 2026-08-10 19:57 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -13,22 +13,12 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
-| **Combined Reachability** | **1,529 confirmed reachable** | 87,696 | **<span role="img" aria-label="1.7% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:2px;"></span></span><span class="sm-bar__label">1.7%</span></span>** | — |
 | Social Media | 0 scanned (0 reachable) | 87,696 | <span role="img" aria-label="0.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:0px;"></span></span><span class="sm-bar__label">0.0%</span></span> | — |
 | Technology | 0 scanned | 87,696 | (manual scan) | — |
 | Lighthouse | 11,336 scanned | 87,696 | <span role="img" aria-label="12.9% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:16px;"></span></span><span class="sm-bar__label">12.9%</span></span> | 12.7 days |
-| Accessibility Statements | 1,453 scanned | 87,696 | <span role="img" aria-label="1.7% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:2px;"></span></span><span class="sm-bar__label">1.7%</span></span> | 2 h |
+| Accessibility Statements | 0 scanned | 87,696 | <span role="img" aria-label="0.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:0px;"></span></span><span class="sm-bar__label">0.0%</span></span> | — |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by any scan type. **Avg Age** shows the mean number of days (or hours) since each URL in that scan type was last scanned — lower is fresher.
-
-## URL Validation by Country
-
-| Country | Total | Valid | Invalid | Scan Period | Coverage |
-|---------|-------|-------|---------|-------------|----------|
-| Austria | 822 | 699 | 123 | Aug 2026 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:90px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:90px;"></span></span><span class="sm-bar__label">100.0%</span></span> |
-| Belgium | 963 | 830 | 133 | Aug 2026 | <span role="img" aria-label="72.5% complete" class="sm-bar"><span class="sm-bar__track" style="width:90px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:65px;"></span></span><span class="sm-bar__label">72.5%</span></span> |
-
-> Hover or focus any non-zero **Total**, **Valid**, or **Invalid** count to preview matching URLs. **Valid** and **Invalid** can overlap because a URL may have passed in one validation run and failed in another during the same scan period; download the CSV for the underlying evidence from [scan-progress-data.json](scan-progress-data.json).
 
 ## Technology Scan
 
@@ -73,22 +63,9 @@ _No technology scans have been run yet. Trigger the **Scan Technology Stack** wo
 
 > Scores are averages across all successfully audited URLs, displayed as 0–100 (multiply source values × 100).
 
-## Accessibility Statement Scan by Country
+## Accessibility Statement Scan
 
-Checks whether each government page links to an accessibility statement as required by the EU Web Accessibility Directive (Directive 2016/2102).
-
-| Country | Scanned | Reachable | Has Statement | In Footer | Statement % | Scan Period |
-|---------|---------|-----------|--------------|-----------|------------|-------------|
-| Austria | 822 | 779 | 550 | 525 | 71% | Aug 2026 |
-| Belgium | 631 | 579 | 282 | 256 | 49% | Aug 2026 |
-
-> **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
-
-## Countries Pending Social Media Scan
-
-These countries have URL validation data but have not yet been scanned for social media links:
-
-`AUSTRIA`, `BELGIUM`
+_No accessibility statement scans have been run yet. Trigger the **Scan Accessibility Statements** workflow manually or wait for the next scheduled run._
 
 ## Scan Priority Guide
 
