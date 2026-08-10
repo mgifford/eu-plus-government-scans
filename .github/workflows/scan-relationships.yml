@@ -117,12 +117,30 @@ jobs:
           if-no-files-found: warn
           compression-level: 0
 
+      # GitHub rejects any pushed file over 100 MiB.  The dataset is sharded to
+      # stay well clear of that, but a shard that somehow grows past the safety
+      # threshold has to fail here, loudly, rather than at push time inside a
+      # [skip ci] commit that nobody is watching.
+      - name: Check relationship shard sizes
+        run: |
+          LIMIT=$((64 * 1024 * 1024))
+          FAILED=0
+          for shard in docs/data/relationships/*.jsonl; do
+            [ -e "$shard" ] || continue
+            SIZE=$(stat -c%s "$shard")
+            if [ "$SIZE" -gt "$LIMIT" ]; then
+              echo "::error::$shard is $SIZE bytes, over the ${LIMIT}-byte safety threshold"
+              FAILED=1
+            fi
+          done
+          exit $FAILED
+
       - name: Commit updated data files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add docs/data/relationships.jsonl docs/data/summaries/ docs/data/coverage_report.json
+          git add -A docs/data/relationships/ docs/data/summaries/ docs/data/coverage_report.json
 
           if git diff --cached --quiet 2>/dev/null; then
             echo "No changes to commit"
@@ -137,7 +155,7 @@ jobs:
         with:
           name: relationship-data
           path: |
-            docs/data/relationships.jsonl
+            docs/data/relationships/
             docs/data/summaries/
             docs/data/coverage_report.json
           retention-days: 90

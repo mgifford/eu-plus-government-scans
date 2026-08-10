@@ -139,6 +139,25 @@ Both files are uploaded as GitHub Actions workflow artifacts (not committed to t
 repository, as they can be large).  New report generators must follow this pattern:
 produce the aggregate Markdown page **and** the machine-readable backing data files.
 
+### Large committed datasets
+
+GitHub refuses to accept any pushed file larger than **100 MiB**, so a dataset that
+is committed (rather than kept as an artifact) must not be allowed to grow into that
+ceiling.  `docs/data/relationships.jsonl` did exactly that — it reached 100.00 MiB,
+a few kilobytes short of breaking every push from the relationship scan workflow.
+
+It is now split across `docs/data/relationships/`, one shard per source TLD, capped
+at 32 MiB each and listed in `index.json`.  See `src/lib/relationship_shards.py`.
+Any new committed dataset that grows on each scan cycle should reuse that module
+rather than writing a single unbounded file.  Two properties matter:
+
+- **Deterministic ordering.** git stores each revision as a delta against the last,
+  so stable row order turns a scan that changes a few rows into a small delta
+  instead of a full rewrite of every shard.
+- **A size guard in the workflow.** Fail the run when a shard crosses the safety
+  threshold, so the problem surfaces as a red job rather than as a rejected push
+  inside a `[skip ci]` commit that nobody is watching.
+
 ---
 
 - Original seed files (`*.toon`) are version-controlled
