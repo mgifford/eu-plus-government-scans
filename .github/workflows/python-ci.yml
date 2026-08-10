@@ -1,0 +1,103 @@
+name: Python CI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**.py'
+      - 'requirements.txt'
+      - 'pyproject.toml'
+      - '.github/workflows/python-ci.yml'
+  pull_request:
+    paths:
+      - '**.py'
+      - 'requirements.txt'
+      - 'pyproject.toml'
+      - '.github/workflows/python-ci.yml'
+  workflow_dispatch:
+
+# Newer pushes to the same branch supersede older CI runs; there is no point
+# spending minutes on a commit that has already been replaced.
+concurrency:
+  group: python-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  test:
+    name: Tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run test suite
+        run: python3 -m pytest tests/ -q
+
+  lint:
+    name: Lint changed files
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+
+    steps:
+      # Full history so the merge base with the target branch is available.
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install ruff
+        run: pip install "$(grep -E '^ruff==' requirements.txt)"
+
+      # PYTHON_GUIDANCE.md / AGENTS.md apply the style guide incrementally:
+      # new and modified files must comply, but the repository as a whole is
+      # still being brought up to standard.  Linting only the files this change
+      # touches enforces that policy without demanding a repo-wide cleanup and
+      # without failing CI on pre-existing violations.
+      - name: Determine changed Python files
+        id: changed
+        env:
+          BASE_SHA: ${{ github.event_name == 'pull_request' && github.event.pull_request.base.sha || github.event.before }}
+        run: |
+          if [ -z "$BASE_SHA" ] || ! git cat-file -e "$BASE_SHA^{commit}" 2>/dev/null; then
+            echo "No usable base commit — falling back to the previous commit."
+            BASE_SHA=$(git rev-parse HEAD^ 2>/dev/null || echo "")
+          fi
+
+          if [ -z "$BASE_SHA" ]; then
+            echo "No base commit available; skipping lint."
+            echo "files=" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          # Only ACMR paths: deleted files cannot be linted.
+          FILES=$(git diff --name-only --diff-filter=ACMR "$BASE_SHA"...HEAD -- '*.py' | tr '\n' ' ')
+          echo "Changed Python files: ${FILES:-<none>}"
+          echo "files=$FILES" >> "$GITHUB_OUTPUT"
+
+      - name: Run ruff
+        if: steps.changed.outputs.files != ''
+        run: ruff check ${{ steps.changed.outputs.files }}
