@@ -1,6 +1,6 @@
 {
   "country_code": "UNITED_KINGDOM_UK",
-  "total_relationships": 290921,
+  "total_relationships": 290926,
   "total_source_domains": 8351,
   "top_source_domains": [
     {
@@ -97,7 +97,7 @@
     },
     {
       "domain": "torun.pl",
-      "count": 4571
+      "count": 4576
     },
     {
       "domain": "xunta.gal",
@@ -283,7 +283,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 7292
+      "count": 7293
     },
     {
       "domain": "bayern.de",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 149337,
-    "script_dependency": 46358,
-    "stylesheet_dependency": 37395,
+    "editorial_link": 149338,
+    "script_dependency": 46360,
+    "stylesheet_dependency": 37397,
     "image_or_media_dependency": 30773,
     "form_destination": 19660,
     "font_or_preload_dependency": 7398
   },
-  "generated_at": "2026-08-09T19:23:53.360148+00:00"
+  "generated_at": "2026-08-10T08:27:47.901358+00:00"
 }

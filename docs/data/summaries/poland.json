@@ -1,6 +1,6 @@
 {
   "country_code": "POLAND",
-  "total_relationships": 57148,
+  "total_relationships": 57151,
   "total_source_domains": 2323,
   "top_source_domains": [
     {
@@ -21,7 +21,7 @@
     },
     {
       "domain": "torun.pl",
-      "count": 4571
+      "count": 4576
     },
     {
       "domain": "tarnow.pl",
@@ -254,11 +254,11 @@
       "count": 2218
     },
     {
-      "domain": "gstatic.com",
-      "count": 2052
+      "domain": "torun.pl",
+      "count": 2056
     },
     {
-      "domain": "torun.pl",
+      "domain": "gstatic.com",
       "count": 2052
     },
     {
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 30823,
-    "script_dependency": 8175,
-    "stylesheet_dependency": 7148,
+    "editorial_link": 30824,
+    "script_dependency": 8176,
+    "stylesheet_dependency": 7149,
     "image_or_media_dependency": 6231,
     "form_destination": 3107,
     "font_or_preload_dependency": 1664
   },
-  "generated_at": "2026-08-09T02:28:29.534684+00:00"
+  "generated_at": "2026-08-10T08:27:48.120992+00:00"
 }
