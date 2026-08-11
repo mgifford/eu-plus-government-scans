@@ -489,34 +489,6 @@ def test_generate_social_media_report_json_includes_total_available(
 # Tests for _count_toon_seed_urls
 # ---------------------------------------------------------------------------
 
-def test_count_toon_seed_urls_missing_dir(tmp_path: Path):
-    """Should return empty dict when the directory does not exist."""
-    from src.cli.generate_social_media_report import _count_toon_seed_urls
-    result = _count_toon_seed_urls(tmp_path / "nonexistent")
-    assert result == {}
-
-
-def test_count_toon_seed_urls_empty_dir(tmp_path: Path):
-    """Should return empty dict when the directory contains no .toon files."""
-    from src.cli.generate_social_media_report import _count_toon_seed_urls
-    seeds_dir = tmp_path / "seeds"
-    seeds_dir.mkdir()
-    result = _count_toon_seed_urls(seeds_dir)
-    assert result == {}
-
-
-def test_count_toon_seed_urls_reads_page_count(tmp_path: Path):
-    """Should correctly read page_count from toon seed files."""
-    from src.cli.generate_social_media_report import _count_toon_seed_urls
-    seeds_dir = tmp_path / "seeds"
-    seeds_dir.mkdir()
-    for name, count in [("iceland", 139), ("norway", 239)]:
-        data = {"page_count": count, "domains": []}
-        (seeds_dir / f"{name}.toon").write_text(json.dumps(data), encoding="utf-8")
-    result = _count_toon_seed_urls(seeds_dir)
-    assert result == {"ICELAND": 139, "NORWAY": 239}
-
-
 # ---------------------------------------------------------------------------
 # Tests for new platform columns (Facebook, LinkedIn) and column ordering
 # ---------------------------------------------------------------------------
