@@ -28,6 +28,9 @@ docs/accessibility-data.json
 docs/technology-data.json
 
 data/metadata.db
+# Scratch space for the per-owner metadata artifacts (see src/lib/metadata_merge.py)
+data/artifacts/
+data/upload/
 data/toon-seeds/countries/*_validated.toon
 data/toon-seeds/countries/*_tech.toon
 data/toon-seeds/countries/*_social.toon

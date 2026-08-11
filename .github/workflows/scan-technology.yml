@@ -61,29 +61,20 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - name: Find latest metadata artifact run ID
-        id: find-metadata
+      # Each scan workflow owns one metadata artifact and writes only that one,
+      # so concurrent runs can no longer overwrite each other's results.  Collect
+      # every artifact and merge them into the working database, which the
+      # cross-scanner skip logic reads.  See src/lib/metadata_merge.py.
+      - name: Collect metadata artifacts
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          RUN_ID=$(gh api "/repos/${{ github.repository }}/actions/artifacts?name=validation-metadata&per_page=1" \
-            --jq '.artifacts[] | select(.expired == false) | .workflow_run.id' 2>/dev/null || echo "")
-          echo "run_id=${RUN_ID}" >> $GITHUB_OUTPUT
-          if [ -n "$RUN_ID" ]; then
-            echo "Found validation-metadata artifact from run $RUN_ID"
-          else
-            echo "No validation-metadata artifact found — will start with fresh database"
-          fi
+        run: scripts/fetch-metadata-artifacts.sh data/artifacts
 
-      - name: Download previous metadata DB (if exists)
-        if: steps.find-metadata.outputs.run_id != ''
-        continue-on-error: true
-        uses: actions/download-artifact@v8
-        with:
-          name: validation-metadata
-          path: data/
-          run-id: ${{ steps.find-metadata.outputs.run_id }}
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Merge metadata artifacts
+        run: |
+          python3 -m src.cli.metadata_artifact merge \
+            --into data/metadata.db \
+            --from-dir data/artifacts
 
       - name: Run technology scan (specific country)
         if: ${{ github.event.inputs.country != '' }}
@@ -135,31 +126,27 @@ jobs:
           if-no-files-found: warn
           compression-level: 0
 
-      - name: Guard against overwriting shared metadata with data-loss result
+      # Upload only the tables this workflow owns.  Uploading the merged
+      # database would republish a stale snapshot of every other scanner's
+      # tables, undoing the isolation the split exists to provide.
+      - name: Extract owned metadata
         if: always()
-        id: db-guard
+        continue-on-error: true
         run: |
-          PREV_RUN_ID="${{ steps.find-metadata.outputs.run_id }}"
-          if [ -n "$PREV_RUN_ID" ] && [ ! -f "data/metadata.db" ]; then
-            echo "safe_to_upload=false" >> $GITHUB_OUTPUT
-            echo "WARNING: Previous artifact found (run $PREV_RUN_ID) but data/metadata.db is missing after download. Skipping overwrite to protect existing data."
-          else
-            echo "safe_to_upload=true" >> $GITHUB_OUTPUT
-            echo "Database present (or no prior artifact) — safe to update shared metadata."
-          fi
+          python3 -m src.cli.metadata_artifact extract \
+            --artifact technology-metadata \
+            --source data/metadata.db \
+            --into data/upload/metadata.db
 
-      - name: Update shared validation metadata
-        if: always() && steps.db-guard.outputs.safe_to_upload == 'true'
+      - name: Upload technology-metadata
+        if: always()
         uses: actions/upload-artifact@v7
         with:
-          name: validation-metadata
-          path: |
-            data/metadata.db
+          name: technology-metadata
+          path: data/upload/metadata.db
           retention-days: 90
           overwrite: true
           if-no-files-found: warn
-          compression-level: 0
-
       - name: Display scan summary
         if: always()
         run: |

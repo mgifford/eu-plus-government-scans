@@ -115,6 +115,31 @@ python3 -m src.cli.generate_validation_report --output validation-report.md
 - Before upgrading dependencies, check vulnerability advisories and license impact
 - Track dependency inventory and licenses in `SBOM.md`
 
+### Scan metadata artifacts
+
+Scan state moves between workflow runs as a GitHub Actions artifact.  **Each
+workflow owns exactly one artifact and writes only that one.**  Previously every
+scan workflow downloaded, mutated and re-uploaded the same `validation-metadata`
+artifact, which is a last-writer-wins race — four writers start together at
+00:00 UTC alone, and whichever finished last discarded the others' results.
+
+The ownership map lives in `src/lib/metadata_merge.py` (`ARTIFACT_TABLES`); it
+is the single source of truth and the workflows are tested against it.  When
+adding a scanner:
+
+- Give it its own artifact and list the tables it owns there.
+- Merge on the way in (`metadata_artifact merge`) so cross-scanner skip logic
+  sees every scanner's results.
+- Extract on the way out (`metadata_artifact extract`) so the upload carries
+  only the tables you own.  Uploading the whole working database republishes a
+  stale snapshot of everyone else's tables.
+
+Merging is safe because result tables are append-only and keyed by
+`(url, scan_id)`; two scanners cannot collide on a key.  Any table that is
+`UPDATE`d in place must stay under a single artifact whose writers share a
+concurrency group — that is why the four URL-validation workflows share
+`validation-metadata` and the `validation-metadata-writers` group.
+
 ### GitHub Actions
 
 - Batch validation workflow: `.github/workflows/validate-urls-batch.yml` (runs every 2 hours)
