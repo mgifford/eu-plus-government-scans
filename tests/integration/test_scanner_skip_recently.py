@@ -16,7 +16,6 @@ from src.jobs.tech_scanner import TechScanner
 from src.lib.settings import Settings
 from src.services.social_media_scanner import SOCIAL_PLATFORMS_VERSION, SocialMediaScanResult
 from src.services.tech_detector import TechDetectionResult
-from src.storage.schema import initialize_schema
 
 
 # ---------------------------------------------------------------------------
@@ -210,12 +209,6 @@ async def test_social_scan_country_skips_recently_scanned_urls(
         conn.close()
 
     scan_results: list[str] = []
-
-    mock_result = SocialMediaScanResult(
-        url="https://example.test/page3",
-        is_reachable=True,
-        social_tier="no_social",
-    )
 
     async def _fake_scan_batch(urls, **kwargs):
         scan_results.extend(urls)
@@ -558,8 +551,6 @@ async def test_social_scan_all_countries_unseen_first(tmp_path):
         conn.commit()
     finally:
         conn.close()
-
-    scanned_countries: list[str] = []
 
     async def _fake_scan_batch(urls, **kwargs):
         on_result = kwargs.get("on_result")

@@ -17,7 +17,7 @@ import io
 import json
 import sys
 from pathlib import Path
-from typing import Dict, List, Set, Tuple
+from typing import Dict, List, Set
 from urllib.request import urlopen
 
 # European countries in the Software Heritage dataset
@@ -277,7 +277,7 @@ def save_import(
         print(f"\n[DRY RUN] Would save {total_new} new domains to {output_dir}")
 
     # Print summary
-    print(f"\nSummary:")
+    print("\nSummary:")
     print(f"  Total new domains: {total_new}")
     print(f"  Countries with new domains: {len(new_domains)}")
 

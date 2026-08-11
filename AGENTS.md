@@ -205,7 +205,11 @@ All Python code in this repository must follow the guidelines in
 - Run `ruff check` on the Python files you change before committing, and move
   touched code toward full guide compliance.
 
-This standard is applied **incrementally** across the existing codebase:
+`ruff check src/ tests/ scripts/` is clean and is enforced on every pull
+request by `.github/workflows/python-ci.yml`, so keep it that way.
+
+The rest of the guide — type annotations, docstrings, function length — is not
+machine-checked and is still applied **incrementally**:
 
 - New Python files should follow the guide in full.
 - Modified Python files should be improved toward the guide as part of the

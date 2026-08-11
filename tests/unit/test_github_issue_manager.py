@@ -6,7 +6,6 @@ import subprocess
 from datetime import datetime, timezone
 from unittest.mock import MagicMock, patch
 
-import pytest
 
 from src.services.github_issue_manager import (
     GH_CLI_CHECK_TIMEOUT,
@@ -445,7 +444,6 @@ def test_compute_eta_returns_none_when_no_pending():
 
 def test_compute_eta_single_batch_remaining():
     """When only one batch remains the ETA is approximately now (no future runs needed)."""
-    from datetime import timedelta
 
     now = datetime.now(timezone.utc)
     result = _compute_eta(pending=3, batch_size=4, workflow_interval_hours=12.0)
