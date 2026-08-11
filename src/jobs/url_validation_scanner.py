@@ -11,7 +11,7 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional, Set
 from uuid import uuid4
 
-from src.lib.country_utils import country_filename_to_code
+from src.lib.country_utils import country_filename_to_code, iter_seed_toon_files
 from src.lib.settings import Settings
 from src.services.url_validator import UrlValidator, ValidationResult
 from src.storage.schema import initialize_schema
@@ -440,7 +440,7 @@ class UrlValidationScanner:
         all_stats = []
 
         # Find all .toon files
-        toon_files = list(toon_seeds_dir.glob("*.toon"))
+        toon_files = iter_seed_toon_files(toon_seeds_dir)
 
         print(f"Found {len(toon_files)} TOON files to process")
 

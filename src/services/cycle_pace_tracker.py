@@ -26,6 +26,7 @@ import sqlite3
 from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from src.lib.country_utils import iter_seed_toon_files
 
 
 @dataclass(frozen=True, slots=True)
@@ -103,7 +104,7 @@ def _count_eligible_urls(toon_dir: Path) -> int:
     total = 0
     if not toon_dir.exists():
         return 0
-    for toon_path in toon_dir.glob("*.toon"):
+    for toon_path in iter_seed_toon_files(toon_dir):
         try:
             data = json.loads(toon_path.read_text(encoding="utf-8"))
         except (OSError, ValueError):

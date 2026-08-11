@@ -21,6 +21,7 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse
+from src.lib.country_utils import iter_seed_toon_files
 
 
 # ---------------------------------------------------------------------------
@@ -135,7 +136,7 @@ def generate_domains_report(
     if countries_dir is None:
         countries_dir = output_path.parent / "domains"
 
-    toon_files = sorted(toon_dir.glob("*.toon"))
+    toon_files = iter_seed_toon_files(toon_dir)
     if not toon_files:
         with output_path.open("w", encoding="utf-8") as f:
             f.write("---\ntitle: Government Domains\nlayout: page\n---\n\n")

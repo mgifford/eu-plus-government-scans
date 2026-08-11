@@ -10,7 +10,7 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional, Set
 from uuid import uuid4
 
-from src.lib.country_utils import country_filename_to_code
+from src.lib.country_utils import country_filename_to_code, iter_seed_toon_files
 from src.lib.settings import Settings
 from src.services.social_media_scanner import (
     SOCIAL_PLATFORMS_VERSION,
@@ -389,14 +389,14 @@ class SocialMediaScannerJob:
         if skip_recently_scanned_days > 0:
             last_scan_times = self._get_last_scan_time_per_country()
             toon_files = sorted(
-                toon_seeds_dir.glob("*.toon"),
+                iter_seed_toon_files(toon_seeds_dir),
                 key=lambda p: (
                     last_scan_times.get(country_filename_to_code(p.stem), ""),
                     p.stem,
                 ),
             )
         else:
-            toon_files = sorted(toon_seeds_dir.glob("*.toon"))
+            toon_files = iter_seed_toon_files(toon_seeds_dir)
 
         print(f"Found {len(toon_files)} TOON files to process")
 

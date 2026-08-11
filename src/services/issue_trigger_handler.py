@@ -10,7 +10,7 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 from src.jobs.url_validation_scanner import UrlValidationScanner
-from src.lib.country_utils import country_code_to_filename
+from src.lib.country_utils import country_code_to_filename, iter_seed_toon_files
 from src.services.github_issue_manager import GitHubIssueManager
 
 
@@ -410,7 +410,7 @@ class IssueTriggerHandler:
 
         countries = []
         if self.toon_dir.exists():
-            for toon_file in sorted(self.toon_dir.glob("*.toon")):
+            for toon_file in iter_seed_toon_files(self.toon_dir):
                 if "_validated" in toon_file.stem:
                     continue
                 country_code = country_filename_to_code(toon_file.stem)

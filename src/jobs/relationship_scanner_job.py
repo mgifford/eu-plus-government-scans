@@ -18,7 +18,7 @@ from typing import Any
 from uuid import uuid4
 
 from src.lib import relationship_shards
-from src.lib.country_utils import country_filename_to_code
+from src.lib.country_utils import country_filename_to_code, iter_seed_toon_files
 from src.lib.gov_domain_registry import GovernmentDomainRegistry
 from src.lib.settings import Settings
 from src.services.multi_scanner import MultiScanner, MultiScanResult
@@ -917,7 +917,7 @@ class RelationshipScannerJob:
         all_stats: list[dict[str, Any]] = []
 
         toon_files = self._build_balanced_country_order(
-            sorted(toon_seeds_dir.glob("*.toon"))
+            iter_seed_toon_files(toon_seeds_dir)
         )
         countries = [country_filename_to_code(p.stem) for p in toon_files]
         print(f"Found {len(toon_files)} TOON files to process")

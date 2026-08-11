@@ -21,6 +21,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 from src.lib import relationship_shards
+from src.lib.country_utils import iter_seed_toon_files
 
 
 PRIORITIZATION_PATH = Path("docs/data/gov-domain-prioritization.json")
@@ -32,7 +33,7 @@ LEGACY_RELATIONSHIP_JSONL = Path("docs/data/relationships.jsonl")
 def load_seed_domains(toon_dir: Path) -> dict[str, set[str]]:
     """Load all seed domains from TOON files, keyed by country name."""
     seed_by_country: dict[str, set[str]] = defaultdict(set)
-    for toon_file in sorted(toon_dir.glob("*.toon")):
+    for toon_file in iter_seed_toon_files(toon_dir):
         with toon_file.open(encoding="utf-8") as f:
             data = json.load(f)
         country = data.get("country", toon_file.stem)
