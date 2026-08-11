@@ -5,7 +5,85 @@ layout: page
 
 <!-- SOCIAL_MEDIA_STATS_START -->
 
-_No scan data yet — stats update automatically after every scan run._
+<div id="sm-tier-pie-container" style="float:right;margin:0 0 1rem 1.5rem;width:260px;max-width:45%;">
+<svg role="img" aria-labelledby="pie-title pie-desc" viewBox="0 0 240 314" width="240" height="314" xmlns="http://www.w3.org/2000/svg">
+<title id="pie-title">Social media tier distribution</title>
+<desc id="pie-desc">Pie chart: social media tier distribution across 3,584 scanned pages. Legacy only: 1,118 (31.2%), Modern only: 7 (0.2%), Mixed: 199 (5.6%), No Social: 2,000 (55.8%)</desc>
+<path d="M 120,110 L 120.000,20.000 A 90,90 0 0,1 197.078,156.465 Z" fill="#1a8cd8" stroke="#fff" stroke-width="1"><title>Twitter/X only: 1,118 (33.6%)</title></path>
+<path d="M 120,110 L 197.078,156.465 A 90,90 0 0,1 196.456,157.481 Z" fill="#0085ff" stroke="#fff" stroke-width="1"><title>Modern only: 7 (0.2%)</title></path>
+<path d="M 120,110 L 196.456,157.481 A 90,90 0 0,1 173.668,182.247 Z" fill="#7856ff" stroke="#fff" stroke-width="1"><title>Mixed: 199 (6.0%)</title></path>
+<path d="M 120,110 L 173.668,182.247 A 90,90 0 1,1 120.000,20.000 Z" fill="#cccccc" stroke="#fff" stroke-width="1"><title>No Social: 2,000 (60.2%)</title></path>
+<rect x="20" y="216" width="14" height="14" fill="#1a8cd8"/>
+<text x="40" y="227" font-size="11" font-family="sans-serif" fill="#333">Twitter/X only (33.6%)</text>
+<rect x="20" y="238" width="14" height="14" fill="#0085ff"/>
+<text x="40" y="249" font-size="11" font-family="sans-serif" fill="#333">Modern only (0.2%)</text>
+<rect x="20" y="260" width="14" height="14" fill="#7856ff"/>
+<text x="40" y="271" font-size="11" font-family="sans-serif" fill="#333">Mixed (6.0%)</text>
+<rect x="20" y="282" width="14" height="14" fill="#cccccc"/>
+<text x="40" y="293" font-size="11" font-family="sans-serif" fill="#333">No Social (60.2%)</text>
+</svg>
+<p style="text-align:center;font-size:0.75em;margin:0.3rem 0 0;color:#555;font-style:italic;">Social media tier distribution</p>
+</div>
+
+_Stats as of 2026-08-11 20:06 UTC — last scan: 2026-08-11_
+
+**6** scan batches run
+
+**3,583** of **87,696** available pages scanned (**4.1%** coverage)
+**3,323** of **3,583** scanned pages were reachable (**92.7%**)
+
+**Legacy social media** (older, centralised platforms):
+
+| Platform | Pages with link | % of scanned | % of reachable |
+|----------|----------------|:------------:|:--------------:|
+| 🐦 Twitter | **376** | 10.5% | 11.3% |
+| ✖ X | **103** | 2.9% | 3.1% |
+| 👍 Facebook | **1,248** | 34.8% | 37.6% |
+| 💼 LinkedIn | **484** | 13.5% | 14.6% |
+
+**Modern / open social media** (decentralised or open platforms):
+
+| Platform | Pages with link | % of scanned | % of reachable |
+|----------|----------------|:------------:|:--------------:|
+| 🦋 Bluesky | **30** | 0.8% | 0.9% |
+| 🐘 Mastodon / Fediverse | **193** | 5.4% | 5.8% |
+
+<div style="clear:both;"></div>
+
+📥 Machine-readable results are available as the [social-media-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
+
+---
+
+## Digital Sovereignty Rankings
+
+Countries ranked by **Digital Sovereignty Score** — the percentage of reachable pages using *no social media* or *modern open platforms only* (Mastodon / Bluesky).  A higher score means fewer links to US corporate social-media platforms (Twitter / X, Facebook, LinkedIn).  Pages with no social-media links at all score highest; pages linking only to Mastodon or Bluesky also rank well.  **Legacy Exposure** shows the percentage of reachable pages that still link to Twitter/X, Facebook, or LinkedIn.
+
+| Rank | Country | Sovereignty Score | No Social | Modern Only | Legacy Exposure | Tier |
+|------|---------|:-----------------:|:---------:|:-----------:|:---------------:|------|
+| 1 | Canada | 64.4% | 493 | 0 | 35.6% | 🥉 Growing |
+| 2 | Czechia | 63.2% | 501 | 2 | 36.8% | 🥉 Growing |
+| 3 | Croatia | 61.3% | 149 | 0 | 38.7% | 🥉 Growing |
+| 4 | Bulgaria | 60.4% | 182 | 1 | 39.6% | 🥉 Growing |
+| 5 | Belgium | 59.2% | 258 | 2 | 40.8% | 🥉 Growing |
+| 6 | Austria | 53.9% | 417 | 2 | 46.1% | 🥉 Growing |
+
+---
+
+## Social Media Scan by Country
+
+**Available**: all government pages tracked in our domain list. **Reachable**: of those scanned, pages that returned a valid HTTP response (not an error or timeout). **Sov. Score**: Digital Sovereignty Score — % of reachable pages with no social media or modern-only social presence. Tier columns classify each page by its overall social media presence; platform columns count pages with at least one link to that platform — a page may appear in more than one platform column.
+
+| Country | Scanned | Available | Reachable | Sov. Score | No Social | Legacy-only | Twitter | X | Facebook | LinkedIn | Modern | Mixed | Bluesky | Mastodon | Scan Period |
+|---------|---------|-----------|-----------|:----------:|-----------|-------------|---------|---|----------|----------|--------|-------|---------|----------|-------------|
+| Austria | 822 | 822 | 778 | 53.9% | 417 | 312 | 32 | 20 | 350 | 184 | 2 | 47 | 16 | 44 | Aug 2026 |
+| Belgium | 481 | 1,329 | 439 | 59.2% | 258 | 146 | 52 | 37 | 166 | 126 | 2 | 33 | 4 | 31 | Aug 2026 |
+| Bulgaria | 353 | 353 | 303 | 60.4% | 182 | 102 | 24 | 6 | 116 | 10 | 1 | 18 | 0 | 19 | Aug 2026 |
+| Canada | 805 | 4,469 | 765 | 64.4% | 493 | 223 | 79 | 11 | 250 | 94 | 0 | 49 | 10 | 45 | Aug 2026 |
+| Croatia | 257 | 257 | 243 | 61.3% | 149 | 78 | 52 | 8 | 88 | 33 | 0 | 16 | 0 | 16 | Aug 2026 |
+| Czechia | 866 | 866 | 796 | 63.2% | 501 | 257 | 138 | 22 | 279 | 37 | 2 | 36 | 0 | 38 | Aug 2026 |
+| **Total** | **3,584** | **87,696** | **3,324** | **60.4%** | **2,000** | **1,118** | **377** | **104** | **1,249** | **484** | **7** | **199** | **30** | **193** | — |
+
+> Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open. Full machine-readable data is available as the [social-media-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
 
 <!-- SOCIAL_MEDIA_STATS_END -->
 
