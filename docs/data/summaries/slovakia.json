@@ -64,11 +64,11 @@
       "count": 26
     },
     {
-      "domain": "nitra.sk",
+      "domain": "nbs.sk",
       "count": 22
     },
     {
-      "domain": "nbs.sk",
+      "domain": "nitra.sk",
       "count": 22
     },
     {
@@ -122,11 +122,11 @@
       "count": 112
     },
     {
-      "domain": "instagram.com",
+      "domain": "google.com",
       "count": 107
     },
     {
-      "domain": "google.com",
+      "domain": "instagram.com",
       "count": 107
     },
     {
@@ -194,11 +194,11 @@
       "count": 25
     },
     {
-      "domain": "cookiedatabase.org",
+      "domain": "cloudflare.com",
       "count": 24
     },
     {
-      "domain": "cloudflare.com",
+      "domain": "cookiedatabase.org",
       "count": 24
     },
     {
@@ -226,19 +226,15 @@
       "count": 13
     },
     {
-      "domain": "cinemaware.eu",
-      "count": 13
-    },
-    {
       "domain": "nitra.sk",
       "count": 13
     },
     {
-      "domain": "plausible.io",
-      "count": 12
+      "domain": "cinemaware.eu",
+      "count": 13
     },
     {
-      "domain": "x.com",
+      "domain": "plausible.io",
       "count": 12
     },
     {
@@ -250,19 +246,19 @@
       "count": 12
     },
     {
-      "domain": "apple.com",
-      "count": 11
+      "domain": "x.com",
+      "count": 12
     },
     {
-      "domain": "slov-lex.sk",
-      "count": 10
+      "domain": "apple.com",
+      "count": 11
     },
     {
       "domain": "microsoft.com",
       "count": 10
     },
     {
-      "domain": "goo.gl",
+      "domain": "slov-lex.sk",
       "count": 10
     },
     {
@@ -270,7 +266,11 @@
       "count": 10
     },
     {
-      "domain": "pohladavkystatu.sk",
+      "domain": "goo.gl",
+      "count": 10
+    },
+    {
+      "domain": "facebook.net",
       "count": 9
     },
     {
@@ -278,25 +278,25 @@
       "count": 9
     },
     {
+      "domain": "nsrr.sk",
+      "count": 9
+    },
+    {
+      "domain": "pohladavkystatu.sk",
+      "count": 9
+    },
+    {
       "domain": "spotify.com",
-      "count": 9
-    },
-    {
-      "domain": "ustavnysud.sk",
-      "count": 9
-    },
-    {
-      "domain": "facebook.net",
       "count": 9
     }
   ],
   "relationship_types": {
     "editorial_link": 917,
+    "font_or_preload_dependency": 50,
+    "image_or_media_dependency": 159,
     "script_dependency": 239,
     "stylesheet_dependency": 194,
-    "image_or_media_dependency": 159,
-    "form_destination": 108,
-    "font_or_preload_dependency": 50
+    "form_destination": 108
   },
-  "generated_at": "2026-08-10T08:27:47.600257+00:00"
+  "generated_at": "2026-08-11T22:20:44.290187+00:00"
 }

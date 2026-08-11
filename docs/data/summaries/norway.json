@@ -154,11 +154,11 @@
       "count": 97
     },
     {
-      "domain": "vegvesen.no",
+      "domain": "brreg.no",
       "count": 90
     },
     {
-      "domain": "brreg.no",
+      "domain": "vegvesen.no",
       "count": 90
     },
     {
@@ -194,11 +194,11 @@
       "count": 40
     },
     {
-      "domain": "ssb.no",
+      "domain": "facebook.com",
       "count": 38
     },
     {
-      "domain": "facebook.com",
+      "domain": "ssb.no",
       "count": 38
     },
     {
@@ -238,15 +238,15 @@
       "count": 25
     },
     {
+      "domain": "altinn.no",
+      "count": 23
+    },
+    {
       "domain": "cookieinformation.com",
       "count": 23
     },
     {
       "domain": "siteimproveanalytics.com",
-      "count": 23
-    },
-    {
-      "domain": "altinn.no",
       "count": 23
     },
     {
@@ -266,11 +266,11 @@
       "count": 20
     },
     {
-      "domain": "cloudflare.com",
+      "domain": "regjeringen.no",
       "count": 18
     },
     {
-      "domain": "regjeringen.no",
+      "domain": "cloudflare.com",
       "count": 18
     },
     {
@@ -298,12 +298,16 @@
       "count": 10
     },
     {
+      "domain": "twitter.com",
+      "count": 9
+    },
+    {
       "domain": "ckan.org",
       "count": 9
     },
     {
-      "domain": "twitter.com",
-      "count": 9
+      "domain": "altinncdn.no",
+      "count": 8
     },
     {
       "domain": "googletagmanager.com",
@@ -314,15 +318,11 @@
       "count": 8
     },
     {
-      "domain": "altinncdn.no",
+      "domain": "nupi.no",
       "count": 8
     },
     {
       "domain": "patentstyret.no",
-      "count": 8
-    },
-    {
-      "domain": "nupi.no",
       "count": 8
     },
     {
@@ -334,21 +334,21 @@
       "count": 7
     },
     {
-      "domain": "arcgis.com",
+      "domain": "domstol.no",
       "count": 6
     },
     {
-      "domain": "unpkg.com",
+      "domain": "koro.no",
       "count": 6
     }
   ],
   "relationship_types": {
-    "script_dependency": 199,
-    "stylesheet_dependency": 151,
     "editorial_link": 348,
+    "stylesheet_dependency": 151,
     "image_or_media_dependency": 79,
+    "script_dependency": 199,
     "form_destination": 47,
     "font_or_preload_dependency": 44
   },
-  "generated_at": "2026-08-10T08:27:46.460162+00:00"
+  "generated_at": "2026-08-11T22:20:43.286596+00:00"
 }

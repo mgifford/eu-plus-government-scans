@@ -118,11 +118,11 @@
       "count": 67
     },
     {
-      "domain": "doi.org",
+      "domain": "github.com",
       "count": 66
     },
     {
-      "domain": "github.com",
+      "domain": "doi.org",
       "count": 66
     },
     {
@@ -206,10 +206,6 @@
       "count": 19
     },
     {
-      "domain": "fontawesome.com",
-      "count": 18
-    },
-    {
       "domain": "microsoft.com",
       "count": 18
     },
@@ -218,7 +214,7 @@
       "count": 18
     },
     {
-      "domain": "wiley.com",
+      "domain": "fontawesome.com",
       "count": 18
     },
     {
@@ -226,11 +222,15 @@
       "count": 18
     },
     {
-      "domain": "nih.gov",
-      "count": 17
+      "domain": "wiley.com",
+      "count": 18
     },
     {
       "domain": "swissuniversities.ch",
+      "count": 17
+    },
+    {
+      "domain": "kaltura.com",
       "count": 17
     },
     {
@@ -238,17 +238,17 @@
       "count": 17
     },
     {
-      "domain": "kaltura.com",
+      "domain": "nih.gov",
       "count": 17
     }
   ],
   "relationship_types": {
     "editorial_link": 3503,
     "image_or_media_dependency": 795,
+    "font_or_preload_dependency": 162,
     "script_dependency": 902,
     "stylesheet_dependency": 888,
-    "form_destination": 469,
-    "font_or_preload_dependency": 162
+    "form_destination": 469
   },
-  "generated_at": "2026-08-10T08:27:45.844794+00:00"
+  "generated_at": "2026-08-11T22:20:42.637822+00:00"
 }
