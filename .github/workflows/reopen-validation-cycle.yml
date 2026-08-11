@@ -11,6 +11,15 @@ on:
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
+# These four workflows are the only ones that write the validation-metadata
+# artifact, and they share mutable batch-cycle state (validation_batch_state,
+# issue_trigger_runs) that a row-level merge cannot reconcile. They therefore
+# share one concurrency group so only one writes at a time. Every other scanner
+# owns its own artifact and is no longer serialized against anything.
+concurrency:
+  group: validation-metadata-writers
+  cancel-in-progress: false
+
 jobs:
   reopen-cycle:
     runs-on: ubuntu-latest
@@ -32,13 +41,21 @@ jobs:
         run: |
           pip install -r requirements.txt
       
-      - name: Download previous metadata DB (if exists)
-        continue-on-error: true
-        uses: actions/download-artifact@v8
-        with:
-          name: validation-metadata
-          path: data/
-      
+      # Each scan workflow owns one metadata artifact and writes only that one,
+      # so concurrent runs can no longer overwrite each other's results.  Collect
+      # every artifact and merge them into the working database, which the
+      # cross-scanner skip logic reads.  See src/lib/metadata_merge.py.
+      - name: Collect metadata artifacts
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: scripts/fetch-metadata-artifacts.sh data/artifacts
+
+      - name: Merge metadata artifacts
+        run: |
+          python3 -m src.cli.metadata_artifact merge \
+            --into data/metadata.db \
+            --from-dir data/artifacts
+
       - name: Start new validation cycle
         env:
           GH_TOKEN: ${{ github.token }}
@@ -50,16 +67,27 @@ jobs:
             --create-issue \
             2>&1 | tee cycle-start-output.txt
       
-      - name: Upload metadata
+      # Upload only the tables this workflow owns.  Uploading the merged
+      # database would republish a stale snapshot of every other scanner's
+      # tables, undoing the isolation the split exists to provide.
+      - name: Extract owned metadata
+        if: always()
+        continue-on-error: true
+        run: |
+          python3 -m src.cli.metadata_artifact extract \
+            --artifact validation-metadata \
+            --source data/metadata.db \
+            --into data/upload/metadata.db
+
+      - name: Upload validation-metadata
         if: always()
         uses: actions/upload-artifact@v7
         with:
           name: validation-metadata
-          path: |
-            data/metadata.db
+          path: data/upload/metadata.db
           retention-days: 90
           overwrite: true
-      
+          if-no-files-found: warn
       - name: Display summary
         if: always()
         run: |

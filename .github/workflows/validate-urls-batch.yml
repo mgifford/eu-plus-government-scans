@@ -39,12 +39,13 @@ on:
         default: '30'
         type: string
 
-# Validation is the lowest-priority background task. Keep validation workflows
-# serialized with each other, but do not let them block the richer scan
-# workflows that also refresh reachability data and power GitHub Pages reports.
-# A queued run will replace any pending one, keeping at most one waiting.
+# These four workflows are the only ones that write the validation-metadata
+# artifact, and they share mutable batch-cycle state (validation_batch_state,
+# issue_trigger_runs) that a row-level merge cannot reconcile. They therefore
+# share one concurrency group so only one writes at a time. Every other scanner
+# owns its own artifact and is no longer serialized against anything.
 concurrency:
-  group: validation-background
+  group: validation-metadata-writers
   cancel-in-progress: false
 
 env:
@@ -75,31 +76,21 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - name: Find latest metadata artifact run ID
-        id: find-metadata
+      # Each scan workflow owns one metadata artifact and writes only that one,
+      # so concurrent runs can no longer overwrite each other's results.  Collect
+      # every artifact and merge them into the working database, which the
+      # cross-scanner skip logic reads.  See src/lib/metadata_merge.py.
+      - name: Collect metadata artifacts
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          RUN_ID=$(gh api --paginate "/repos/${{ github.repository }}/actions/artifacts?per_page=100&name=validation-metadata" \
-            --jq '.artifacts[] | select(.expired == false) | "\(.created_at) \(.workflow_run.id)"' \
-            2>/dev/null | sort -rk1 | head -1 | awk '{print $2}' || echo "")
-          echo "run_id=${RUN_ID}" >> $GITHUB_OUTPUT
-          if [ -n "$RUN_ID" ]; then
-            echo "Found validation-metadata artifact from run $RUN_ID"
-          else
-            echo "No validation-metadata artifact found — will start with fresh database"
-          fi
+        run: scripts/fetch-metadata-artifacts.sh data/artifacts
 
-      - name: Download previous metadata DB (if exists)
-        if: steps.find-metadata.outputs.run_id != ''
-        continue-on-error: true
-        uses: actions/download-artifact@v8
-        with:
-          name: validation-metadata
-          path: data/
-          run-id: ${{ steps.find-metadata.outputs.run_id }}
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-      
+      - name: Merge metadata artifacts
+        run: |
+          python3 -m src.cli.metadata_artifact merge \
+            --into data/metadata.db \
+            --from-dir data/artifacts
+
       - name: Run batch validation
         env:
           GH_TOKEN: ${{ github.token }}
@@ -137,29 +128,27 @@ jobs:
           python3 -m src.cli.generate_validation_report \
             --output validation-report.md
 
-      - name: Guard against overwriting shared metadata with data-loss result
+      # Upload only the tables this workflow owns.  Uploading the merged
+      # database would republish a stale snapshot of every other scanner's
+      # tables, undoing the isolation the split exists to provide.
+      - name: Extract owned metadata
         if: always()
-        id: db-guard
+        continue-on-error: true
         run: |
-          PREV_RUN_ID="${{ steps.find-metadata.outputs.run_id }}"
-          if [ -n "$PREV_RUN_ID" ] && [ ! -f "data/metadata.db" ]; then
-            echo "safe_to_upload=false" >> $GITHUB_OUTPUT
-            echo "WARNING: Previous artifact found (run $PREV_RUN_ID) but data/metadata.db is missing after download. Skipping overwrite to protect existing data."
-          else
-            echo "safe_to_upload=true" >> $GITHUB_OUTPUT
-            echo "Database present (or no prior artifact) — safe to update shared metadata."
-          fi
-      
-      - name: Upload artifacts
-        if: always() && steps.db-guard.outputs.safe_to_upload == 'true'
+          python3 -m src.cli.metadata_artifact extract \
+            --artifact validation-metadata \
+            --source data/metadata.db \
+            --into data/upload/metadata.db
+
+      - name: Upload validation-metadata
+        if: always()
         uses: actions/upload-artifact@v7
         with:
           name: validation-metadata
-          path: |
-            data/metadata.db
+          path: data/upload/metadata.db
           retention-days: 90
           overwrite: true
-      
+          if-no-files-found: warn
       - name: Upload batch report
         if: always()
         uses: actions/upload-artifact@v7
