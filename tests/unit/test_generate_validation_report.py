@@ -1,7 +1,6 @@
 """Tests for validation report generation."""
 
 import sqlite3
-from pathlib import Path
 
 import pytest
 
@@ -14,7 +13,7 @@ def test_db(tmp_path):
     """Create a test database with sample data."""
     db_path = tmp_path / "test.db"
     initialize_schema(f"sqlite:///{db_path}")
-    
+
     conn = sqlite3.connect(db_path)
     try:
         # Insert sample validation results
@@ -38,7 +37,7 @@ def test_db(tmp_path):
                 "2024-01-01T00:00:00+00:00",
             ),
         )
-        
+
         conn.execute(
             """
             INSERT INTO url_validation_results
@@ -59,7 +58,7 @@ def test_db(tmp_path):
                 "2024-01-01T00:00:00+00:00",
             ),
         )
-        
+
         conn.execute(
             """
             INSERT INTO url_validation_results
@@ -80,20 +79,20 @@ def test_db(tmp_path):
                 "2024-01-01T00:00:00+00:00",
             ),
         )
-        
+
         conn.commit()
     finally:
         conn.close()
-    
+
     return db_path
 
 
 def test_generate_report_creates_file(test_db, tmp_path):
     """Test that report generation creates a markdown file."""
     output_path = tmp_path / "report.md"
-    
+
     generate_report(test_db, output_path)
-    
+
     assert output_path.exists()
     content = output_path.read_text()
     assert "# URL Validation Report" in content
@@ -103,9 +102,9 @@ def test_generate_report_creates_file(test_db, tmp_path):
 def test_generate_report_includes_statistics(test_db, tmp_path):
     """Test that report includes correct statistics."""
     output_path = tmp_path / "report.md"
-    
+
     generate_report(test_db, output_path)
-    
+
     content = output_path.read_text()
     # Should show: 3 total, 1 valid, 2 invalid, 0 redirected, 1 removed
     # Format: | Country | Total | Valid | Invalid | Redirected | Removed | Success Rate |
@@ -116,9 +115,9 @@ def test_generate_report_includes_statistics(test_db, tmp_path):
 def test_generate_report_shows_errors(test_db, tmp_path):
     """Test that report shows error details."""
     output_path = tmp_path / "report.md"
-    
+
     generate_report(test_db, output_path)
-    
+
     content = output_path.read_text()
     assert "https://example.com/broken" in content
     assert "https://example.com/removed" in content
@@ -129,11 +128,11 @@ def test_generate_report_handles_empty_database(tmp_path):
     """Test that report handles empty database gracefully."""
     db_path = tmp_path / "empty.db"
     initialize_schema(f"sqlite:///{db_path}")
-    
+
     output_path = tmp_path / "report.md"
-    
+
     generate_report(db_path, output_path)
-    
+
     assert output_path.exists()
     content = output_path.read_text()
     assert "No validation data available" in content
@@ -143,7 +142,7 @@ def test_generate_report_handles_missing_database(tmp_path):
     """Test that report handles missing database gracefully."""
     db_path = tmp_path / "nonexistent.db"
     output_path = tmp_path / "report.md"
-    
+
     # Should not raise an exception
     generate_report(db_path, output_path)
 

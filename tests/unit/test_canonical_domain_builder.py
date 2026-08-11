@@ -1,11 +1,10 @@
-import pytest
 from src.services.canonical_domain_builder import CanonicalDomainBuilder
 from src.models.domain_model import SourceEvidence
 
 
 def test_precedence_logic():
     builder = CanonicalDomainBuilder()
-    
+
     # 1. Add low precedence evidence
     ev1 = SourceEvidence(name="network_signal", source_url="...", retrieved_at="2026-07-15")
     builder.add_evidence(
@@ -16,7 +15,7 @@ def test_precedence_logic():
         organization_type="municipality",
         classification_status="candidate"
     )
-    
+
     rec = builder.get_or_create("example.gov")
     assert rec.government_level == "local"
     assert "network_signal" in rec.classification_basis
@@ -56,11 +55,11 @@ def test_precedence_logic():
 def test_fallback_tld():
     builder = CanonicalDomainBuilder()
     ev = SourceEvidence(name="network_signal", source_url="...", retrieved_at="2026-07-15")
-    
+
     builder.add_evidence("city.gov.fr", ev, "network_signal")
     builder.add_evidence("service.org", ev, "network_signal")
-    
+
     builder.fallback_tld_country_assignment()
-    
+
     assert builder.get_or_create("city.gov.fr").country == "FR"
     assert builder.get_or_create("service.org").country is None  # .org is generic

@@ -662,7 +662,6 @@ def test_count_toon_seed_urls_reads_page_count(tmp_path: Path):
 
 def test_build_technology_index_empty_db(empty_db: Path):
     """Should return empty by_technology and by_category for an empty database."""
-    from src.cli.generate_technology_report import _build_technology_index
     conn = sqlite3.connect(empty_db)
     conn.row_factory = sqlite3.Row
     try:
@@ -679,7 +678,6 @@ def test_build_technology_index_empty_db(empty_db: Path):
 
 def test_build_technology_index_populated_db(populated_db: Path):
     """Should aggregate technology counts and by_country breakdown correctly."""
-    from src.cli.generate_technology_report import _build_technology_index
     conn = sqlite3.connect(populated_db)
     conn.row_factory = sqlite3.Row
     try:
@@ -715,7 +713,6 @@ def test_build_technology_index_populated_db(populated_db: Path):
 
 def test_build_technology_index_no_double_counting(duplicate_scan_db: Path):
     """Each (country, url) pair should be counted once even if re-scanned."""
-    from src.cli.generate_technology_report import _build_technology_index
     conn = sqlite3.connect(duplicate_scan_db)
     conn.row_factory = sqlite3.Row
     try:

@@ -15,7 +15,6 @@ from datetime import datetime, timezone
 from src.jobs.accessibility_scanner import AccessibilityScannerJob
 from src.lib.settings import Settings
 from src.services.accessibility_scanner import AccessibilityScanResult
-from src.storage.schema import initialize_schema
 
 
 # ---------------------------------------------------------------------------

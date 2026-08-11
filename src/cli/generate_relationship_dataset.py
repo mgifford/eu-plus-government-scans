@@ -4,8 +4,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import shutil
-import sys
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, List
@@ -65,7 +63,7 @@ def main():
 
     # 1. Ingest Evidence
     builder = CanonicalDomainBuilder()
-    
+
     print("Ingesting TOON files...")
     builder.ingest_toon_directory(args.toon_dir)
 
@@ -93,7 +91,7 @@ def main():
     # 3. Output Generation
     print("Generating static dataset...")
     out_dir = args.out_dir
-    
+
     # Prepare directory
     if out_dir.exists():
         # Clean up existing country dirs if needed, but we don't want to wipe docs/data entirely
@@ -102,7 +100,7 @@ def main():
     out_dir.mkdir(parents=True, exist_ok=True)
 
     now_iso = datetime.now(timezone.utc).isoformat()
-    
+
     # Group by country
     country_nodes: Dict[str, List[dict]] = {}
     country_editorial_edges: Dict[str, List[dict]] = {}
@@ -116,9 +114,9 @@ def main():
         # Edge source country
         s_domain = builder.domains.get(edge.source)
         cc = s_domain.country if s_domain and s_domain.country else "UNKNOWN"
-        
+
         edge_data = edge.model_dump()
-        
+
         if edge.relationship_type in {"editorial_link", "form_destination"}:
             country_editorial_edges.setdefault(cc, []).append(edge_data)
         else:
@@ -128,15 +126,15 @@ def main():
     domains_by_country = {}
     for cc in country_nodes.keys():
         cc_dir = out_dir / "countries" / cc
-        
+
         nodes = sorted(country_nodes.get(cc, []), key=lambda x: x["domain"])
         e_edges = sorted(country_editorial_edges.get(cc, []), key=lambda x: (x["source"], x["target"]))
         d_edges = sorted(country_dependency_edges.get(cc, []), key=lambda x: (x["source"], x["target"]))
-        
+
         write_json(cc_dir / "nodes.json", nodes, args.minify)
         write_json(cc_dir / "editorial-edges.json", e_edges, args.minify)
         write_json(cc_dir / "dependency-edges.json", d_edges, args.minify)
-        
+
         c_summary = CountrySummary(
             country_code=cc,
             total_domains=len(nodes),
@@ -144,7 +142,7 @@ def main():
             generated_at=now_iso,
         )
         write_json(cc_dir / "summary.json", c_summary.model_dump(), args.minify)
-        
+
         domains_by_country[cc] = len(nodes)
 
     # Global summaries
@@ -159,10 +157,10 @@ def main():
         edges_by_type=edges_by_type,
         generated_at=now_iso,
     )
-    
+
     global_dir = out_dir / "global"
     write_json(global_dir / "summary.json", g_summary.model_dump(), args.minify)
-    
+
     # Top domains based on in_degree
     top_domains = sorted(
         [d.model_dump() for d in builder.domains.values()],

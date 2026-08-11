@@ -36,7 +36,7 @@ def test_normalize_url_removes_default_ports(scanner):
     base = "https://example.gov"
     res1 = scanner._normalize_url("http://example.com:80/path", base)
     assert res1[0] == "http://example.com/path"
-    
+
     res2 = scanner._normalize_url("https://example.com:443/path", base)
     assert res2[0] == "https://example.com/path"
 
