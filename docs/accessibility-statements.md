@@ -5,36 +5,7 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-08-11 07:36 UTC — last scan: 2026-08-11_
-
-**6** scan batches run
-
-**3,874** of **87,696** available pages scanned (**4.4%** coverage)
-**3,610** of **3,874** scanned pages were reachable (**93.2%**)
-**1,634** of **3,610** reachable pages have an accessibility statement (**45.3%**)
-**1,455** pages have the statement link in the footer (**89.0%** of pages with a statement)
-
-📥 Machine-readable results are available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
-
-Each country entry in the JSON file includes page-level evidence for pages with and without accessibility statements, plus a per-domain summary you can share to validate the published counts.
-
-> Hover or focus any non-zero count in the country table to preview the matching pages. If there are 20 or fewer URLs, the preview shows all of them; otherwise it shows a short sample. Full machine-readable data is available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
-
----
-
-## Accessibility Statement Scan by Country
-
-| Country | Scanned | Available | Reachable | Has Statement | In Footer | Statement % | Scan Period |
-|---------|---------|-----------|-----------|--------------|-----------|------------|-------------|
-| Austria | 822 | 822 | 779 | 550 | 525 | 70.6% | Aug 2026 |
-| Belgium | 631 | 1,329 | 579 | 282 | 256 | 48.7% | Aug 2026 |
-| Bulgaria | 353 | 353 | 302 | 94 | 83 | 31.1% | Aug 2026 |
-| Canada | 972 | 4,469 | 927 | 189 | 150 | 20.4% | Aug 2026 |
-| Croatia | 257 | 257 | 254 | 105 | 80 | 41.3% | Aug 2026 |
-| Czechia | 840 | 866 | 770 | 415 | 362 | 53.9% | Aug 2026 |
-| **Total** | **3,875** | **87,696** | **3,611** | **1,635** | **1,456** | **45.3%** | — |
-
-> **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
+_No scan data yet — stats update automatically after every scan run._
 
 <!-- ACCESSIBILITY_STATS_END -->
 
