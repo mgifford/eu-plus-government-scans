@@ -283,14 +283,26 @@ compliance gradually.
 ```bash
 npm ci
 npx playwright install --with-deps chromium
-python3 -m http.server 4000 --directory _site
+
+# docs/_config.yml sets baseurl: /eu-plus-government-scans, so Jekyll writes
+# asset URLs as /eu-plus-government-scans/assets/... .  Serve the build under
+# that path or every stylesheet 404s and the audit runs against an unstyled
+# page.
+mkdir -p _site_serve
+cp -r _site _site_serve/eu-plus-government-scans
+python3 -m http.server 4000 --directory _site_serve
 ```
 
 In a second terminal:
 
 ```bash
-A11Y_SITE_DIR=_site A11Y_BASE_URL=http://127.0.0.1:4000 npm run test:a11y
+A11Y_SITE_DIR=_site_serve/eu-plus-government-scans \
+A11Y_BASE_URL=http://127.0.0.1:4000/eu-plus-government-scans \
+  npm run test:a11y
 ```
+
+The checker aborts if a stylesheet or script fails to load, so a misconfigured
+server surfaces as a harness error rather than as accessibility findings.
 
 The GitHub Actions workflow at
 [`/.github/workflows/axe-site-accessibility.yml`](./.github/workflows/axe-site-accessibility.yml)
