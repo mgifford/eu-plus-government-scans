@@ -1,0 +1,78 @@
+name: Python CI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**.py'
+      - 'requirements.txt'
+      - 'pyproject.toml'
+      - '.github/workflows/python-ci.yml'
+  pull_request:
+    paths:
+      - '**.py'
+      - 'requirements.txt'
+      - 'pyproject.toml'
+      - '.github/workflows/python-ci.yml'
+  workflow_dispatch:
+
+# Newer pushes to the same branch supersede older CI runs; there is no point
+# spending minutes on a commit that has already been replaced.
+concurrency:
+  group: python-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  test:
+    name: Tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run test suite
+        run: python3 -m pytest tests/ -q
+
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install ruff
+        run: pip install "$(grep -E '^ruff==' requirements.txt)"
+
+      # The repository is ruff-clean, so the whole tree is checked rather than
+      # only the files a change touches.  Note this covers the E/W/F rules in
+      # pyproject.toml; the wider guidance in PYTHON_GUIDANCE.md (type
+      # annotations, docstrings, function length) is still applied
+      # incrementally and is not machine-checked here.
+      - name: Run ruff
+        run: ruff check src/ tests/ scripts/

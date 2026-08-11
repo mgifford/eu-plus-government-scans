@@ -1,16 +1,13 @@
 """Integration tests for URL validation scanner."""
 
-import asyncio
 import json
 import sqlite3
-import tempfile
 from pathlib import Path
 
 import pytest
 
 from src.jobs.url_validation_scanner import UrlValidationScanner
 from src.lib.settings import Settings
-from src.storage.schema import initialize_schema
 
 
 @pytest.fixture
@@ -63,11 +60,11 @@ def sample_toon_file(tmp_path):
             },
         ],
     }
-    
+
     toon_file = tmp_path / "test.toon"
     with toon_file.open("w") as f:
         json.dump(toon_data, f)
-    
+
     return toon_file
 
 
@@ -75,28 +72,28 @@ def sample_toon_file(tmp_path):
 async def test_scanner_processes_toon_file(temp_settings, sample_toon_file):
     """Test that scanner can process a TOON file."""
     scanner = UrlValidationScanner(temp_settings)
-    
+
     # Run scan
     stats = await scanner.scan_country(
         country_code="TEST",
         toon_path=sample_toon_file,
         rate_limit_per_second=10,  # Fast for testing
     )
-    
+
     # Verify statistics
     assert stats["country_code"] == "TEST"
     assert stats["total_urls"] == 3
     assert stats["urls_validated"] == 3
     assert stats["urls_skipped"] == 0
-    
+
     # Verify output file was created
     output_path = Path(stats["output_path"])
     assert output_path.exists()
-    
+
     # Verify output TOON file content
     with output_path.open("r") as f:
         output_toon = json.load(f)
-    
+
     # Check that validation metadata was added to pages
     found_validation_status = False
     for domain in output_toon.get("domains", []):
@@ -107,9 +104,9 @@ async def test_scanner_processes_toon_file(temp_settings, sample_toon_file):
                 assert page["validation_status"] in ["valid", "invalid"]
                 # Pages may have status_code or error_message depending on result
                 assert "status_code" in page or "error_message" in page
-    
+
     assert found_validation_status, "No validation metadata found in output TOON"
-    
+
     # Verify database records were created
     conn = sqlite3.connect(scanner.db_path)
     cursor = conn.execute(
@@ -118,7 +115,7 @@ async def test_scanner_processes_toon_file(temp_settings, sample_toon_file):
     )
     count = cursor.fetchone()[0]
     conn.close()
-    
+
     assert count == 3
 
 
@@ -126,24 +123,24 @@ async def test_scanner_processes_toon_file(temp_settings, sample_toon_file):
 async def test_scanner_tracks_failures_across_runs(temp_settings, sample_toon_file):
     """Test that scanner tracks failures across multiple runs."""
     scanner = UrlValidationScanner(temp_settings)
-    
+
     # First run - all URLs validated
     stats1 = await scanner.scan_country(
         country_code="TEST",
         toon_path=sample_toon_file,
         rate_limit_per_second=10,
     )
-    
+
     # Verify no URLs removed yet
     assert stats1["urls_removed"] == 0
-    
+
     # Second run - URLs that failed twice should be removed
     stats2 = await scanner.scan_country(
         country_code="TEST",
         toon_path=sample_toon_file,
         rate_limit_per_second=10,
     )
-    
+
     # Verify some URLs were removed (those that failed twice)
     # Note: This depends on which URLs actually fail in the test environment
     assert "urls_removed" in stats2
@@ -160,20 +157,20 @@ async def test_scanner_handles_empty_toon_file(temp_settings, tmp_path):
         "page_count": 0,
         "domains": [],
     }
-    
+
     toon_file = tmp_path / "empty.toon"
     with toon_file.open("w") as f:
         json.dump(toon_data, f)
-    
+
     scanner = UrlValidationScanner(temp_settings)
-    
+
     # Run scan
     stats = await scanner.scan_country(
         country_code="EMPTY",
         toon_path=toon_file,
         rate_limit_per_second=10,
     )
-    
+
     # Verify statistics
     assert stats["total_urls"] == 0
     assert stats["urls_validated"] == 0
@@ -184,10 +181,10 @@ async def test_scanner_handles_empty_toon_file(temp_settings, tmp_path):
 def test_scanner_initializes_database(temp_settings):
     """Test that scanner initializes database schema correctly."""
     scanner = UrlValidationScanner(temp_settings)
-    
+
     # Verify database file exists
     assert scanner.db_path.exists()
-    
+
     # Verify tables were created
     conn = sqlite3.connect(scanner.db_path)
     cursor = conn.execute(
@@ -195,7 +192,7 @@ def test_scanner_initializes_database(temp_settings):
     )
     table_exists = cursor.fetchone() is not None
     conn.close()
-    
+
     assert table_exists
 
 
@@ -383,7 +380,7 @@ async def test_scanner_stops_early_when_budget_exhausted(temp_settings, sample_t
 async def test_scanner_incremental_save_via_callback(temp_settings, sample_toon_file):
     """Each validated URL should be persisted incrementally via the on_result callback."""
     import sqlite3
-    from unittest.mock import AsyncMock, patch
+    from unittest.mock import patch
     from src.services.url_validator import ValidationResult
     from datetime import datetime, timezone
 
@@ -429,3 +426,96 @@ async def test_scanner_incremental_save_via_callback(temp_settings, sample_toon_
 
     assert count == len(fake_results)
     assert stats["urls_validated"] == len(fake_results)
+
+
+def _record(scanner, url: str, country_code: str, scan_id: str, is_valid: bool, ts: str):
+    """Persist one validation result through the scanner's own save path."""
+    from src.services.url_validator import ValidationResult
+
+    scanner._save_validation_results(
+        [
+            ValidationResult(
+                url=url,
+                is_valid=is_valid,
+                status_code=200 if is_valid else None,
+                validated_at=ts,
+            )
+        ],
+        country_code,
+        scan_id,
+        scanner._get_previous_failures(country_code),
+    )
+
+
+def test_previous_failures_reset_after_success(temp_settings):
+    """A successful validation clears the consecutive-failure counter."""
+    scanner = UrlValidationScanner(temp_settings)
+    url = "https://example.gov/a"
+
+    _record(scanner, url, "TESTLAND", "scan-1", False, "2026-01-01T00:00:00+00:00")
+    assert scanner._get_previous_failures("TESTLAND")[url] == 1
+
+    _record(scanner, url, "TESTLAND", "scan-2", True, "2026-01-02T00:00:00+00:00")
+    assert scanner._get_previous_failures("TESTLAND")[url] == 0
+
+
+def test_non_consecutive_failures_do_not_retire_url(temp_settings):
+    """Failures separated by a success must not accumulate to the removal threshold.
+
+    Regression test: reading ``MAX(failure_count)`` across all history made the
+    success reset unreachable, so a URL that blipped once, worked for months and
+    then blipped again was dropped from the seed data.
+    """
+    scanner = UrlValidationScanner(temp_settings)
+    url = "https://example.gov/a"
+
+    _record(scanner, url, "TESTLAND", "scan-1", False, "2026-01-01T00:00:00+00:00")
+    for day in range(2, 7):
+        _record(
+            scanner, url, "TESTLAND", f"scan-{day}", True,
+            f"2026-01-0{day}T00:00:00+00:00",
+        )
+    _record(scanner, url, "TESTLAND", "scan-7", False, "2026-01-07T00:00:00+00:00")
+
+    assert scanner._get_previous_failures("TESTLAND")[url] == 1
+
+
+def test_two_consecutive_failures_retire_url(temp_settings):
+    """The documented two-failure removal policy still applies."""
+    scanner = UrlValidationScanner(temp_settings)
+    url = "https://example.gov/a"
+
+    _record(scanner, url, "TESTLAND", "scan-1", False, "2026-01-01T00:00:00+00:00")
+    _record(scanner, url, "TESTLAND", "scan-2", False, "2026-01-02T00:00:00+00:00")
+
+    assert scanner._get_previous_failures("TESTLAND")[url] == 2
+
+
+def test_previous_failures_ignores_untimestamped_rows(temp_settings):
+    """A row with a real timestamp wins over one whose validated_at is NULL."""
+    scanner = UrlValidationScanner(temp_settings)
+    url = "https://example.gov/a"
+
+    conn = sqlite3.connect(scanner.db_path)
+    try:
+        conn.execute(
+            """
+            INSERT INTO url_validation_results
+            (url, country_code, scan_id, is_valid, failure_count, validated_at)
+            VALUES (?, ?, ?, ?, ?, NULL)
+            """,
+            (url, "TESTLAND", "scan-null", 0, 2),
+        )
+        conn.execute(
+            """
+            INSERT INTO url_validation_results
+            (url, country_code, scan_id, is_valid, failure_count, validated_at)
+            VALUES (?, ?, ?, ?, ?, ?)
+            """,
+            (url, "TESTLAND", "scan-real", 1, 0, "2026-01-05T00:00:00+00:00"),
+        )
+        conn.commit()
+    finally:
+        conn.close()
+
+    assert scanner._get_previous_failures("TESTLAND")[url] == 0

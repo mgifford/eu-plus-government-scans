@@ -69,15 +69,48 @@ jobs:
       - name: Install Playwright browser
         run: npx playwright install --with-deps chromium
 
+      # docs/_config.yml sets a baseurl, so Jekyll writes asset references as
+      # /<baseurl>/assets/... . Serving _site at the server root makes every one
+      # of those 404, and the audit then runs against a completely unstyled
+      # page -- which reported browser-default element sizes as target-size
+      # violations. Staging the build under its baseurl makes the local server
+      # match the real Pages layout.
+      - name: Stage site under its baseurl
+        id: stage
+        run: |
+          BASEURL="$(python3 -c "
+          import re, pathlib
+          text = pathlib.Path('docs/_config.yml').read_text(encoding='utf-8')
+          m = re.search(r'^baseurl:\s*[\"\x27]?([^\"\x27\n]*)', text, re.M)
+          print((m.group(1) if m else '').strip().strip('/'))
+          ")"
+          echo "baseurl=${BASEURL}" >> "$GITHUB_OUTPUT"
+
+          if [ -n "$BASEURL" ]; then
+            SERVE_DIR="_site_serve"
+            SITE_DIR="${SERVE_DIR}/${BASEURL}"
+            rm -rf "$SERVE_DIR"
+            mkdir -p "$(dirname "$SITE_DIR")"
+            cp -r _site "$SITE_DIR"
+          else
+            SERVE_DIR="_site"
+            SITE_DIR="_site"
+          fi
+
+          echo "serve_dir=${SERVE_DIR}" >> "$GITHUB_OUTPUT"
+          echo "site_dir=${SITE_DIR}"   >> "$GITHUB_OUTPUT"
+          echo "base_url=http://127.0.0.1:4000${BASEURL:+/$BASEURL}" >> "$GITHUB_OUTPUT"
+
       - name: Start local web server
         run: |
-          python3 -m http.server 4000 --directory _site >/tmp/axe-site-server.log 2>&1 &
+          python3 -m http.server 4000 --directory "${{ steps.stage.outputs.serve_dir }}" \
+            >/tmp/axe-site-server.log 2>&1 &
           echo $! > /tmp/axe-site-server.pid
 
       - name: Wait for local web server
         run: |
           for _ in 1 2 3 4 5 6 7 8 9 10; do
-            if curl --fail --silent http://127.0.0.1:4000/ >/dev/null; then
+            if curl --fail --silent "${{ steps.stage.outputs.base_url }}/" >/dev/null; then
               exit 0
             fi
             sleep 1
@@ -86,10 +119,22 @@ jobs:
           cat /tmp/axe-site-server.log || true
           exit 1
 
+      # Guard the guard: if the stylesheet cannot be fetched the audit is
+      # meaningless, so fail here rather than reporting unstyled defaults as
+      # accessibility defects.
+      - name: Verify site assets resolve
+        run: |
+          CSS_URL="${{ steps.stage.outputs.base_url }}/assets/main.css"
+          if ! curl --fail --silent --output /dev/null "$CSS_URL"; then
+            echo "::error::Stylesheet did not resolve at ${CSS_URL}; the axe run would audit an unstyled site."
+            exit 1
+          fi
+          echo "Stylesheet resolves at ${CSS_URL}"
+
       - name: Run axe checks against generated pages
         env:
-          A11Y_SITE_DIR: _site
-          A11Y_BASE_URL: http://127.0.0.1:4000
+          A11Y_SITE_DIR: ${{ steps.stage.outputs.site_dir }}
+          A11Y_BASE_URL: ${{ steps.stage.outputs.base_url }}
         run: npm run test:a11y
 
       - name: Stop local web server

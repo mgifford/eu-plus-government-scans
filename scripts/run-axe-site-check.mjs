@@ -69,11 +69,32 @@ async function run() {
   const page = await context.newPage();
   const failures = [];
 
+  // An audit of a page whose CSS failed to load measures browser defaults and
+  // reports them as real defects -- notably every interactive element as a
+  // target-size violation. Track asset failures so that shows up as a broken
+  // harness rather than as accessibility findings.
+  let missingAssets = [];
+  page.on("response", (response) => {
+    const type = response.request().resourceType();
+    if ((type === "stylesheet" || type === "script") && response.status() >= 400) {
+      missingAssets.push(`${response.status()} ${response.url()}`);
+    }
+  });
+
   try {
     for (const filePath of htmlFiles) {
       const url = toPageUrl(filePath);
       process.stdout.write(`Checking ${url}\n`);
+      missingAssets = [];
       await page.goto(url, { waitUntil: "networkidle" });
+
+      if (missingAssets.length) {
+        throw new Error(
+          `Assets failed to load for ${url}, so the audit would measure an ` +
+            `unstyled page:\n  ${missingAssets.join("\n  ")}\n` +
+            "Check that the server root matches the site's baseurl.",
+        );
+      }
 
       const results = await new AxeBuilder({ page })
         .withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22a", "wcag22aa"])

@@ -11,7 +11,7 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional, Set
 from uuid import uuid4
 
-from src.lib.country_utils import country_filename_to_code
+from src.lib.country_utils import country_filename_to_code, iter_seed_toon_files
 from src.lib.settings import Settings
 from src.services.url_validator import UrlValidator, ValidationResult
 from src.storage.schema import initialize_schema
@@ -53,19 +53,39 @@ class UrlValidationScanner:
 
     def _get_previous_failures(self, country_code: str) -> Dict[str, int]:
         """
-        Get failure counts for URLs from previous scans.
+        Get the *current* consecutive-failure count for each previously seen URL.
+
+        ``_save_validation_results`` writes ``failure_count = 0`` whenever a URL
+        validates successfully, so the counter is a run of **consecutive**
+        failures rather than a lifetime total.  Reading it therefore has to look
+        at the newest row for each URL only; taking ``MAX(failure_count)`` over
+        the whole history would make that reset unreachable and would retire a
+        URL that merely failed twice at any two points in its life.
+
+        Rows are ordered by ``validated_at`` with ``rowid`` as a tie-breaker.
+        SQLite sorts NULLs below every other value, so a row carrying a real
+        timestamp always wins over one whose timestamp was never recorded.
 
         Returns:
-            Dictionary mapping URL to failure count
+            Dictionary mapping URL to its consecutive failure count.
         """
         conn = sqlite3.connect(self.db_path)
         try:
             cursor = conn.execute(
                 """
-                SELECT url, MAX(failure_count) as max_failures
-                FROM url_validation_results
-                WHERE country_code = ?
-                GROUP BY url
+                SELECT url, failure_count
+                FROM (
+                    SELECT
+                        url,
+                        failure_count,
+                        ROW_NUMBER() OVER (
+                            PARTITION BY url
+                            ORDER BY validated_at DESC, rowid DESC
+                        ) AS recency_rank
+                    FROM url_validation_results
+                    WHERE country_code = ?
+                )
+                WHERE recency_rank = 1
                 """,
                 (country_code,)
             )
@@ -420,7 +440,7 @@ class UrlValidationScanner:
         all_stats = []
 
         # Find all .toon files
-        toon_files = list(toon_seeds_dir.glob("*.toon"))
+        toon_files = iter_seed_toon_files(toon_seeds_dir)
 
         print(f"Found {len(toon_files)} TOON files to process")
 

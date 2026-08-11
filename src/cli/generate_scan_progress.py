@@ -15,7 +15,8 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-from src.lib.country_utils import country_code_to_display_name, country_filename_to_code
+from src.cli._report_common import count_toon_seed_urls
+from src.lib.country_utils import country_code_to_display_name
 from src.lib.settings import load_settings
 
 
@@ -105,26 +106,6 @@ def _progress_bar(completed: int, total: int, width: int = 20) -> str:
     )
 
 
-def _count_toon_seed_urls(toon_seeds_dir: Path) -> dict[str, int]:
-    """Return a mapping of country_code → page_count from toon seed files.
-
-    Reads every ``*.toon`` file in *toon_seeds_dir* and extracts the
-    ``page_count`` field.  Returns an empty dict when the directory does
-    not exist or contains no seed files.
-    """
-    counts: dict[str, int] = {}
-    if not toon_seeds_dir.is_dir():
-        return counts
-    for toon_file in toon_seeds_dir.glob("*.toon"):
-        try:
-            data = json.loads(toon_file.read_text(encoding="utf-8"))
-        except (json.JSONDecodeError, OSError):
-            continue
-        country_code = country_filename_to_code(toon_file.stem)
-        counts[country_code] = int(data.get("page_count") or 0)
-    return counts
-
-
 def _format_month_range(first: str | None, last: str | None) -> str:
     """Return a human-readable month range string.
 
@@ -193,7 +174,7 @@ def generate_progress_report(
     conn = sqlite3.connect(db_path)
     conn.row_factory = sqlite3.Row
 
-    seed_counts = _count_toon_seed_urls(toon_seeds_dir) if toon_seeds_dir else {}
+    seed_counts = count_toon_seed_urls(toon_seeds_dir) if toon_seeds_dir else {}
 
     try:
         _write_report(conn, output_path, generated_at, seed_counts, data_path)
@@ -241,7 +222,7 @@ def update_index_progress(
         return False
 
     generated_at = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-    seed_counts = _count_toon_seed_urls(toon_seeds_dir) if toon_seeds_dir else {}
+    seed_counts = count_toon_seed_urls(toon_seeds_dir) if toon_seeds_dir else {}
     total_available = sum(seed_counts.values())
 
     buf = io.StringIO()

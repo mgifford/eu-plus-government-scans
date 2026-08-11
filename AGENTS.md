@@ -115,6 +115,31 @@ python3 -m src.cli.generate_validation_report --output validation-report.md
 - Before upgrading dependencies, check vulnerability advisories and license impact
 - Track dependency inventory and licenses in `SBOM.md`
 
+### Scan metadata artifacts
+
+Scan state moves between workflow runs as a GitHub Actions artifact.  **Each
+workflow owns exactly one artifact and writes only that one.**  Previously every
+scan workflow downloaded, mutated and re-uploaded the same `validation-metadata`
+artifact, which is a last-writer-wins race — four writers start together at
+00:00 UTC alone, and whichever finished last discarded the others' results.
+
+The ownership map lives in `src/lib/metadata_merge.py` (`ARTIFACT_TABLES`); it
+is the single source of truth and the workflows are tested against it.  When
+adding a scanner:
+
+- Give it its own artifact and list the tables it owns there.
+- Merge on the way in (`metadata_artifact merge`) so cross-scanner skip logic
+  sees every scanner's results.
+- Extract on the way out (`metadata_artifact extract`) so the upload carries
+  only the tables you own.  Uploading the whole working database republishes a
+  stale snapshot of everyone else's tables.
+
+Merging is safe because result tables are append-only and keyed by
+`(url, scan_id)`; two scanners cannot collide on a key.  Any table that is
+`UPDATE`d in place must stay under a single artifact whose writers share a
+concurrency group — that is why the four URL-validation workflows share
+`validation-metadata` and the `validation-metadata-writers` group.
+
 ### GitHub Actions
 
 - Batch validation workflow: `.github/workflows/validate-urls-batch.yml` (runs every 2 hours)
@@ -139,6 +164,25 @@ Both files are uploaded as GitHub Actions workflow artifacts (not committed to t
 repository, as they can be large).  New report generators must follow this pattern:
 produce the aggregate Markdown page **and** the machine-readable backing data files.
 
+### Large committed datasets
+
+GitHub refuses to accept any pushed file larger than **100 MiB**, so a dataset that
+is committed (rather than kept as an artifact) must not be allowed to grow into that
+ceiling.  `docs/data/relationships.jsonl` did exactly that — it reached 100.00 MiB,
+a few kilobytes short of breaking every push from the relationship scan workflow.
+
+It is now split across `docs/data/relationships/`, one shard per source TLD, capped
+at 32 MiB each and listed in `index.json`.  See `src/lib/relationship_shards.py`.
+Any new committed dataset that grows on each scan cycle should reuse that module
+rather than writing a single unbounded file.  Two properties matter:
+
+- **Deterministic ordering.** git stores each revision as a delta against the last,
+  so stable row order turns a scan that changes a few rows into a small delta
+  instead of a full rewrite of every shard.
+- **A size guard in the workflow.** Fail the run when a shard crosses the safety
+  threshold, so the problem surfaces as a red job rather than as a rejected push
+  inside a `[skip ci]` commit that nobody is watching.
+
 ---
 
 - Original seed files (`*.toon`) are version-controlled
@@ -161,7 +205,11 @@ All Python code in this repository must follow the guidelines in
 - Run `ruff check` on the Python files you change before committing, and move
   touched code toward full guide compliance.
 
-This standard is applied **incrementally** across the existing codebase:
+`ruff check src/ tests/ scripts/` is clean and is enforced on every pull
+request by `.github/workflows/python-ci.yml`, so keep it that way.
+
+The rest of the guide — type annotations, docstrings, function length — is not
+machine-checked and is still applied **incrementally**:
 
 - New Python files should follow the guide in full.
 - Modified Python files should be improved toward the guide as part of the

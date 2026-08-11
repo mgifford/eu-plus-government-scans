@@ -557,17 +557,6 @@ def test_update_index_progress_with_seeds(populated_db: Path, tmp_path: Path):
     assert "1,000" in content    # total available
 
 
-def test_count_toon_seed_urls_in_scan_progress(tmp_path: Path):
-    """_count_toon_seed_urls from generate_scan_progress should work correctly."""
-    from src.cli.generate_scan_progress import _count_toon_seed_urls
-    seeds_dir = tmp_path / "seeds"
-    seeds_dir.mkdir()
-    data = {"page_count": 150, "domains": []}
-    (seeds_dir / "norway.toon").write_text(json.dumps(data), encoding="utf-8")
-    result = _count_toon_seed_urls(seeds_dir)
-    assert result == {"NORWAY": 150}
-
-
 # ---------------------------------------------------------------------------
 # Tests for _query_combined_reachability and Combined Reachability row
 # ---------------------------------------------------------------------------

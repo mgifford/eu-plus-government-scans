@@ -53,29 +53,20 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - name: Find latest relationship metadata artifact run ID
-        id: find-metadata
+      # Each scan workflow owns one metadata artifact and writes only that one,
+      # so concurrent runs can no longer overwrite each other's results.  Collect
+      # every artifact and merge them into the working database, which the
+      # cross-scanner skip logic reads.  See src/lib/metadata_merge.py.
+      - name: Collect metadata artifacts
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          RUN_ID=$(gh api "/repos/${{ github.repository }}/actions/artifacts?name=relationship-scan-metadata&per_page=1" \
-            --jq '.artifacts[] | select(.expired == false) | .workflow_run.id' 2>/dev/null || echo "")
-          echo "run_id=${RUN_ID}" >> $GITHUB_OUTPUT
-          if [ -n "$RUN_ID" ]; then
-            echo "Found relationship-scan-metadata artifact from run $RUN_ID"
-          else
-            echo "No relationship-scan-metadata artifact found — will start with fresh database"
-          fi
+        run: scripts/fetch-metadata-artifacts.sh data/artifacts
 
-      - name: Download previous relationship scan metadata (if exists)
-        if: steps.find-metadata.outputs.run_id != ''
-        continue-on-error: true
-        uses: actions/download-artifact@v8
-        with:
-          name: relationship-scan-metadata
-          path: data/
-          run-id: ${{ steps.find-metadata.outputs.run_id }}
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Merge metadata artifacts
+        run: |
+          python3 -m src.cli.metadata_artifact merge \
+            --into data/metadata.db \
+            --from-dir data/artifacts
 
       - name: Run progressive relationship scan
         run: |
@@ -93,36 +84,48 @@ jobs:
               --skip-recently-scanned-days ${{ inputs.skip_recently_scanned_days || '28' }}
           fi
 
-      - name: Guard against overwriting shared metadata with data-loss result
+      # Upload only the tables this workflow owns.  Uploading the merged
+      # database would republish a stale snapshot of every other scanner's
+      # tables, undoing the isolation the split exists to provide.
+      - name: Extract owned metadata
         if: always()
-        id: db-guard
+        continue-on-error: true
         run: |
-          PREV_RUN_ID="${{ steps.find-metadata.outputs.run_id }}"
-          if [ -n "$PREV_RUN_ID" ] && [ ! -f "data/metadata.db" ]; then
-            echo "safe_to_upload=false" >> $GITHUB_OUTPUT
-            echo "WARNING: Previous artifact found (run $PREV_RUN_ID) but data/metadata.db is missing after download. Skipping overwrite to protect existing data."
-          else
-            echo "safe_to_upload=true" >> $GITHUB_OUTPUT
-            echo "Database present (or no prior artifact) — safe to update shared metadata."
-          fi
+          python3 -m src.cli.metadata_artifact extract \
+            --artifact relationship-scan-metadata \
+            --source data/metadata.db \
+            --into data/upload/metadata.db
 
-      - name: Upload relationship scan metadata
-        if: always() && steps.db-guard.outputs.safe_to_upload == 'true'
+      - name: Upload relationship-scan-metadata
+        if: always()
         uses: actions/upload-artifact@v7
         with:
           name: relationship-scan-metadata
-          path: data/metadata.db
+          path: data/upload/metadata.db
           retention-days: 90
           overwrite: true
           if-no-files-found: warn
-          compression-level: 0
+
+      - name: Check relationship shard sizes
+        run: |
+          LIMIT=$((64 * 1024 * 1024))
+          FAILED=0
+          for shard in docs/data/relationships/*.jsonl; do
+            [ -e "$shard" ] || continue
+            SIZE=$(stat -c%s "$shard")
+            if [ "$SIZE" -gt "$LIMIT" ]; then
+              echo "::error::$shard is $SIZE bytes, over the ${LIMIT}-byte safety threshold"
+              FAILED=1
+            fi
+          done
+          exit $FAILED
 
       - name: Commit updated data files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add docs/data/relationships.jsonl docs/data/summaries/ docs/data/coverage_report.json
+          git add -A docs/data/relationships/ docs/data/summaries/ docs/data/coverage_report.json
 
           if git diff --cached --quiet 2>/dev/null; then
             echo "No changes to commit"
@@ -137,7 +140,7 @@ jobs:
         with:
           name: relationship-data
           path: |
-            docs/data/relationships.jsonl
+            docs/data/relationships/
             docs/data/summaries/
             docs/data/coverage_report.json
           retention-days: 90

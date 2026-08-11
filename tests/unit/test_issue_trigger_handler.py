@@ -12,7 +12,6 @@ import pytest
 
 from src.services.issue_trigger_handler import (
     IssueTriggerHandler,
-    TriggerConfig,
     TRIGGER_CONFIGS,
 )
 from src.storage.schema import initialize_schema
@@ -308,9 +307,24 @@ def test_find_trigger_issues_returns_matching_issues(handler):
     from unittest.mock import patch
 
     issues = [
-        {"number": 1, "title": "SCAN: Validate URLs", "body": ""},
-        {"number": 2, "title": "WEEKLY: Validate URL for all", "body": ""},
-        {"number": 3, "title": "Some random issue", "body": ""},
+        {
+            "number": 1,
+            "title": "SCAN: Validate URLs",
+            "body": "",
+            "author_association": "OWNER",
+        },
+        {
+            "number": 2,
+            "title": "WEEKLY: Validate URL for all",
+            "body": "",
+            "author_association": "COLLABORATOR",
+        },
+        {
+            "number": 3,
+            "title": "Some random issue",
+            "body": "",
+            "author_association": "OWNER",
+        },
     ]
     mock_result = MagicMock()
     mock_result.returncode = 0
@@ -330,7 +344,12 @@ def test_find_trigger_issues_no_matches(handler):
     from unittest.mock import patch
 
     issues = [
-        {"number": 5, "title": "Bug: Something is broken", "body": ""},
+        {
+            "number": 5,
+            "title": "Bug: Something is broken",
+            "body": "",
+            "author_association": "OWNER",
+        },
     ]
     mock_result = MagicMock()
     mock_result.returncode = 0
@@ -372,7 +391,14 @@ def test_find_trigger_issues_attaches_trigger_config(handler):
     import json
     from unittest.mock import patch
 
-    issues = [{"number": 10, "title": "MONTHLY: Validate URL schedule", "body": ""}]
+    issues = [
+        {
+            "number": 10,
+            "title": "MONTHLY: Validate URL schedule",
+            "body": "",
+            "author_association": "OWNER",
+        }
+    ]
     mock_result = MagicMock()
     mock_result.returncode = 0
     mock_result.stdout = json.dumps(issues)
@@ -577,3 +603,104 @@ async def test_process_trigger_issue_url_validation_periodic(handler, tmp_path):
     assert result["success"] is True
     assert result["closed"] is False
     assert result["skipped"] is False
+
+
+# ---------------------------------------------------------------------------
+# find_trigger_issues: author authorization
+# ---------------------------------------------------------------------------
+
+
+def _gh_response(issues):
+    """Build a mocked `gh api` result carrying *issues*."""
+    import json
+
+    mock_result = MagicMock()
+    mock_result.returncode = 0
+    mock_result.stdout = json.dumps(issues)
+    return mock_result
+
+
+def _issue(number, association, title="SCAN: Validate URLs"):
+    """Build an issue payload as the REST issues endpoint returns it."""
+    return {
+        "number": number,
+        "title": title,
+        "body": "",
+        "author_association": association,
+    }
+
+
+def test_untrusted_authors_cannot_trigger_scans(handler):
+    """A stranger opening a trigger issue does not start a scan.
+
+    Anyone can open an issue on a public repository, and a trigger issue costs
+    up to 45 minutes of Actions time plus outbound requests to thousands of
+    government hosts.
+    """
+    from unittest.mock import patch
+
+    issues = [_issue(1, "NONE"), _issue(2, "CONTRIBUTOR"), _issue(3, "FIRST_TIME_CONTRIBUTOR")]
+
+    with patch("subprocess.run", return_value=_gh_response(issues)):
+        found = handler.find_trigger_issues()
+
+    assert found == []
+
+
+def test_trusted_authors_can_trigger_scans(handler):
+    """Owners, org members and collaborators keep working as before."""
+    from unittest.mock import patch
+
+    issues = [_issue(1, "OWNER"), _issue(2, "MEMBER"), _issue(3, "COLLABORATOR")]
+
+    with patch("subprocess.run", return_value=_gh_response(issues)):
+        found = handler.find_trigger_issues()
+
+    assert {i["number"] for i in found} == {1, 2, 3}
+
+
+def test_missing_author_association_is_untrusted(handler):
+    """Authorization fails closed when the field is absent."""
+    from unittest.mock import patch
+
+    issues = [{"number": 1, "title": "SCAN: Validate URLs", "body": ""}]
+
+    with patch("subprocess.run", return_value=_gh_response(issues)):
+        found = handler.find_trigger_issues()
+
+    assert found == []
+
+
+def test_author_association_is_case_insensitive(handler):
+    """Association matching does not depend on the casing GitHub sends."""
+    from unittest.mock import patch
+
+    with patch("subprocess.run", return_value=_gh_response([_issue(1, "owner")])):
+        found = handler.find_trigger_issues()
+
+    assert len(found) == 1
+
+
+def test_pull_requests_are_ignored(handler):
+    """The issues endpoint also returns PRs; they must not trigger scans."""
+    from unittest.mock import patch
+
+    pr = _issue(1, "OWNER")
+    pr["pull_request"] = {"url": "https://api.github.com/repos/o/r/pulls/1"}
+
+    with patch("subprocess.run", return_value=_gh_response([pr, _issue(2, "OWNER")])):
+        found = handler.find_trigger_issues()
+
+    assert {i["number"] for i in found} == {2}
+
+
+def test_trusted_author_without_trigger_prefix_is_ignored(handler):
+    """Authorization does not by itself make an issue a trigger."""
+    from unittest.mock import patch
+
+    issues = [_issue(1, "OWNER", title="Please look at this bug")]
+
+    with patch("subprocess.run", return_value=_gh_response(issues)):
+        found = handler.find_trigger_issues()
+
+    assert found == []

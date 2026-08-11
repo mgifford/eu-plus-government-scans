@@ -628,41 +628,12 @@ def test_query_tech_rows_no_double_counting(duplicate_scan_db: Path):
 # Tests for _count_toon_seed_urls
 # ---------------------------------------------------------------------------
 
-def test_count_toon_seed_urls_missing_dir(tmp_path: Path):
-    """Should return empty dict when the directory does not exist."""
-    from src.cli.generate_technology_report import _count_toon_seed_urls
-    result = _count_toon_seed_urls(tmp_path / "nonexistent")
-    assert result == {}
-
-
-def test_count_toon_seed_urls_empty_dir(tmp_path: Path):
-    """Should return empty dict when the directory contains no .toon files."""
-    from src.cli.generate_technology_report import _count_toon_seed_urls
-    seeds_dir = tmp_path / "seeds"
-    seeds_dir.mkdir()
-    result = _count_toon_seed_urls(seeds_dir)
-    assert result == {}
-
-
-def test_count_toon_seed_urls_reads_page_count(tmp_path: Path):
-    """Should correctly read page_count from toon seed files."""
-    from src.cli.generate_technology_report import _count_toon_seed_urls
-    seeds_dir = tmp_path / "seeds"
-    seeds_dir.mkdir()
-    for name, count in [("iceland", 139), ("norway", 239)]:
-        data = {"page_count": count, "domains": []}
-        (seeds_dir / f"{name}.toon").write_text(json.dumps(data), encoding="utf-8")
-    result = _count_toon_seed_urls(seeds_dir)
-    assert result == {"ICELAND": 139, "NORWAY": 239}
-
-
 # ---------------------------------------------------------------------------
 # Tests for _build_technology_index
 # ---------------------------------------------------------------------------
 
 def test_build_technology_index_empty_db(empty_db: Path):
     """Should return empty by_technology and by_category for an empty database."""
-    from src.cli.generate_technology_report import _build_technology_index
     conn = sqlite3.connect(empty_db)
     conn.row_factory = sqlite3.Row
     try:
@@ -679,7 +650,6 @@ def test_build_technology_index_empty_db(empty_db: Path):
 
 def test_build_technology_index_populated_db(populated_db: Path):
     """Should aggregate technology counts and by_country breakdown correctly."""
-    from src.cli.generate_technology_report import _build_technology_index
     conn = sqlite3.connect(populated_db)
     conn.row_factory = sqlite3.Row
     try:
@@ -715,7 +685,6 @@ def test_build_technology_index_populated_db(populated_db: Path):
 
 def test_build_technology_index_no_double_counting(duplicate_scan_db: Path):
     """Each (country, url) pair should be counted once even if re-scanned."""
-    from src.cli.generate_technology_report import _build_technology_index
     conn = sqlite3.connect(duplicate_scan_db)
     conn.row_factory = sqlite3.Row
     try:
