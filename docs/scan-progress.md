@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-08-11 19:19 UTC_
+_Generated: 2026-08-11 20:02 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -13,35 +13,12 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
-| **Combined Reachability** | **2,950 confirmed reachable** | 87,696 | **<span role="img" aria-label="3.4% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:4px;"></span></span><span class="sm-bar__label">3.4%</span></span>** | — |
-| Social Media | 2,461 scanned (2,285 reachable) | 87,696 | <span role="img" aria-label="2.8% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:3px;"></span></span><span class="sm-bar__label">2.8%</span></span> | 2 h |
+| Social Media | 0 scanned (0 reachable) | 87,696 | <span role="img" aria-label="0.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:0px;"></span></span><span class="sm-bar__label">0.0%</span></span> | — |
 | Technology | 0 scanned | 87,696 | (manual scan) | — |
-| Lighthouse | 11,596 scanned | 87,696 | <span role="img" aria-label="13.2% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:16px;"></span></span><span class="sm-bar__label">13.2%</span></span> | 13.3 days |
+| Lighthouse | 11,618 scanned | 87,696 | <span role="img" aria-label="13.2% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:16px;"></span></span><span class="sm-bar__label">13.2%</span></span> | 13.3 days |
 | Accessibility Statements | 0 scanned | 87,696 | <span role="img" aria-label="0.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:0px;"></span></span><span class="sm-bar__label">0.0%</span></span> | — |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by any scan type. **Avg Age** shows the mean number of days (or hours) since each URL in that scan type was last scanned — lower is fresher.
-
-## URL Validation by Country
-
-| Country | Total | Valid | Invalid | Scan Period | Coverage |
-|---------|-------|-------|---------|-------------|----------|
-| Austria | 822 | 699 | 123 | Aug 2026 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:90px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:90px;"></span></span><span class="sm-bar__label">100.0%</span></span> |
-| Belgium | 1,243 | 1,080 | 163 | Aug 2026 | <span role="img" aria-label="93.5% complete" class="sm-bar"><span class="sm-bar__track" style="width:90px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:84px;"></span></span><span class="sm-bar__label">93.5%</span></span> |
-
-> Hover or focus any non-zero **Total**, **Valid**, or **Invalid** count to preview matching URLs. **Valid** and **Invalid** can overlap because a URL may have passed in one validation run and failed in another during the same scan period; download the CSV for the underlying evidence from [scan-progress-data.json](scan-progress-data.json).
-
-## Social Media Scan by Country
-
-| Country | Scanned | Available | Reachable | Twitter-only | Modern | Mixed | No Social | Twitter | X | Bluesky | Mastodon | Scan Period |
-|---------|---------|-----------|-----------|-------------|--------|-------|-----------|---------|---|---------|----------|-------------|
-| Austria | 822 | 822 | 778 | 312 | 2 | 47 | 417 | 32 | 20 | 16 | 44 | Aug 2026 |
-| Belgium | 481 | 1,329 | 439 | 146 | 2 | 33 | 258 | 52 | 37 | 4 | 31 | Aug 2026 |
-| Bulgaria | 353 | 353 | 303 | 102 | 1 | 18 | 182 | 24 | 6 | 0 | 19 | Aug 2026 |
-| Canada | 805 | 4,469 | 765 | 223 | 0 | 49 | 493 | 79 | 11 | 10 | 45 | Aug 2026 |
-
-> **Tier columns** (Twitter-only / Modern / Mixed / No Social) classify each page by its overall social media presence. **Platform columns** (Twitter / X / Bluesky / Mastodon) count pages with at least one link to that platform — a page may appear in more than one platform column.
-
-> Hover or focus any non-zero platform count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and platform from [social-media-data.json](social-media-data.json).
 
 ## Technology Scan
 
@@ -80,7 +57,7 @@ _No technology scans have been run yet. Trigger the **Scan Technology Stack** wo
 | Slovakia | 291 | 91 | 87 | 91 | 88 | 2026-07-22 |
 | Slovenia | 204 | 86 | 80 | 89 | 85 | 2026-07-22 |
 | Spain | 107 | 87 | 88 | 86 | 89 | 2026-08-07 |
-| Sweden | 401 | 88 | 92 | 91 | 86 | 2026-08-09 |
+| Sweden | 423 | 88 | 92 | 91 | 86 | 2026-08-11 |
 | Switzerland | 466 | 84 | 90 | 96 | 88 | 2026-08-08 |
 | United Kingdom | 323 | 92 | 93 | 92 | 87 | 2026-08-08 |
 
@@ -89,12 +66,6 @@ _No technology scans have been run yet. Trigger the **Scan Technology Stack** wo
 ## Accessibility Statement Scan
 
 _No accessibility statement scans have been run yet. Trigger the **Scan Accessibility Statements** workflow manually or wait for the next scheduled run._
-
-## Countries With Social Scan But No URL Validation
-
-These countries have social media scan data but no URL validation data (URL validation may have been skipped because the social scan already confirmed reachability):
-
-`BULGARIA`, `CANADA`
 
 ## Scan Priority Guide
 
