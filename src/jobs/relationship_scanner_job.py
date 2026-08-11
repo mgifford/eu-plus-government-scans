@@ -64,6 +64,15 @@ class AggregatedRelationship:
     last_seen: str
 
     def to_dict(self) -> dict:
+        """Serialise this edge for the published JSONL dataset.
+
+        ``source_pages`` stays an integer for consumers that already read it as
+        one, and ``source_page_urls`` carries the URLs it counts.  Publishing
+        both is what makes the count independently verifiable, and it is what
+        lets the next scan cycle resume the tally instead of restarting it --
+        the scanner only visits a slice of the corpus per run, so an edge's
+        page set has to survive a round-trip through this file.
+        """
         return {
             "source_domain": self.source_domain,
             "target_domain": self.target_domain,
@@ -71,6 +80,7 @@ class AggregatedRelationship:
             "relationship_type": self.relationship_type,
             "target_category": self.target_category,
             "source_pages": len(self.source_pages),
+            "source_page_urls": sorted(self.source_pages),
             "observations": self.observations,
             "page_regions": sorted(self.page_regions),
             "first_seen": self.first_seen,
@@ -537,13 +547,15 @@ class RelationshipScannerJob:
                 target_hostname=row["target_hostname"],
                 relationship_type=row["relationship_type"],
                 target_category=row.get("target_category", "unknown_external"),
-                source_pages=set(),
+                # Rows written before source_page_urls existed carry only a
+                # count, which cannot be merged into; they restart their tally
+                # the first time the scanner revisits one of their pages.
+                source_pages=set(row.get("source_page_urls", [])),
                 observations=row.get("observations", 1),
                 page_regions=set(row.get("page_regions", [])),
                 first_seen=row.get("first_seen", ""),
                 last_seen=row.get("last_seen", ""),
             )
-            # source_pages is stored as count; we only track URLs in this run
         return existing
 
     def _merge_new_relationships(
