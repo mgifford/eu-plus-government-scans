@@ -501,8 +501,9 @@ class TestJsonlRoundTrip:
             assert len(loaded) == 1
             key = ("src.gov", "tgt.com", "www.tgt.com", "editorial_link")
             assert loaded[key].observations == 3
-            # source_pages is stored as count in JSONL; set is empty on reload
-            assert loaded[key].source_pages == set()
+            # The page set survives the round-trip, so the next cycle resumes
+            # the tally rather than restarting it at zero.
+            assert loaded[key].source_pages == {"https://src.gov"}
 
 
 # ---------------------------------------------------------------------------
@@ -550,3 +551,154 @@ class TestFairnessOrdering:
             names = [p.stem for p in balanced]
             # Iceland (small) should not be last
             assert names[-1] != "iceland"
+
+
+class TestSourcePagePersistence:
+    """The published source-page count must survive progressive scan cycles.
+
+    Regression tests for a defect that published ``source_pages: 0`` on every
+    row of the dataset: ``to_dict`` wrote the set's length while the loader
+    restored an empty set, so an edge's tally was discarded on every reload and
+    only ever reflected pages seen in the run that happened to touch it.
+    """
+
+    @staticmethod
+    def _job(tmpdir: str):
+        """Build a scanner job backed by a throwaway database."""
+        from src.lib.settings import Settings
+        from src.jobs.relationship_scanner_job import RelationshipScannerJob
+
+        db_path = Path(tmpdir) / "test.db"
+        _setup_db(db_path)
+        settings = Settings()
+        settings.metadata_db_url = f"sqlite:///{db_path}"
+        return RelationshipScannerJob(settings)
+
+    def test_count_accumulates_across_cycles(self) -> None:
+        """Each cycle's pages add to the tally instead of replacing it."""
+        from src.jobs.relationship_scanner_job import _rel_key
+
+        edge = _make_edge("source.gov", "target.com", "www.target.com", "editorial_link")
+        key = _rel_key(edge)
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            job = self._job(tmpdir)
+            shard_dir = Path(tmpdir) / "relationships"
+
+            # Three cycles, each scanning a different page of the same domain.
+            for page in ("https://source.gov/a", "https://source.gov/b", "https://source.gov/c"):
+                existing = job._load_existing_relationships(shard_dir)
+                merged = job._merge_new_relationships(existing, [(edge, page)])
+                job._write_jsonl(merged, shard_dir)
+
+            final = job._load_existing_relationships(shard_dir)
+            assert final[key].source_pages == {
+                "https://source.gov/a",
+                "https://source.gov/b",
+                "https://source.gov/c",
+            }
+
+    def test_published_count_is_not_zero(self) -> None:
+        """The value actually written to disk reflects the pages seen."""
+        import json
+
+        from src.lib.relationship_shards import iter_rows
+
+        edge = _make_edge("source.gov", "target.com", "www.target.com", "editorial_link")
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            job = self._job(tmpdir)
+            shard_dir = Path(tmpdir) / "relationships"
+
+            merged = job._merge_new_relationships(
+                {}, [(edge, "https://source.gov/a"), (edge, "https://source.gov/b")]
+            )
+            job._write_jsonl(merged, shard_dir)
+
+            # A second cycle that re-observes one page must not reset the count.
+            existing = job._load_existing_relationships(shard_dir)
+            merged = job._merge_new_relationships(existing, [(edge, "https://source.gov/a")])
+            job._write_jsonl(merged, shard_dir)
+
+            rows = list(iter_rows(shard_dir))
+            assert len(rows) == 1
+            assert rows[0]["source_pages"] == 2
+            assert json.dumps(rows[0])  # row stays JSON-serialisable
+
+    def test_count_matches_published_url_list(self) -> None:
+        """The count is reproducible from the data published beside it."""
+        from src.lib.relationship_shards import iter_rows
+
+        edge = _make_edge("source.gov", "target.com", "www.target.com", "editorial_link")
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            job = self._job(tmpdir)
+            shard_dir = Path(tmpdir) / "relationships"
+
+            merged = job._merge_new_relationships(
+                {}, [(edge, f"https://source.gov/{n}") for n in range(5)]
+            )
+            job._write_jsonl(merged, shard_dir)
+
+            for row in iter_rows(shard_dir):
+                assert row["source_pages"] == len(row["source_page_urls"])
+                assert row["source_page_urls"] == sorted(row["source_page_urls"])
+
+    def test_repeated_page_counted_once(self) -> None:
+        """Re-scanning the same page does not inflate the distinct-page count."""
+        from src.jobs.relationship_scanner_job import _rel_key
+
+        edge = _make_edge("source.gov", "target.com", "www.target.com", "editorial_link")
+        key = _rel_key(edge)
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            job = self._job(tmpdir)
+            shard_dir = Path(tmpdir) / "relationships"
+
+            for _ in range(4):
+                existing = job._load_existing_relationships(shard_dir)
+                merged = job._merge_new_relationships(
+                    existing, [(edge, "https://source.gov/a")]
+                )
+                job._write_jsonl(merged, shard_dir)
+
+            final = job._load_existing_relationships(shard_dir)
+            assert len(final[key].source_pages) == 1
+            # observations still counts every sighting, unlike the page set.
+            assert final[key].observations == 4
+
+    def test_legacy_row_without_url_list_is_tolerated(self) -> None:
+        """A row predating source_page_urls loads without raising."""
+        import json
+
+        from src.jobs.relationship_scanner_job import _rel_key
+
+        edge = _make_edge("source.gov", "target.com", "www.target.com", "editorial_link")
+        key = _rel_key(edge)
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            job = self._job(tmpdir)
+            shard_dir = Path(tmpdir) / "relationships"
+            shard_dir.mkdir(parents=True)
+            (shard_dir / "gov.001.jsonl").write_text(
+                json.dumps(
+                    {
+                        "source_domain": "source.gov",
+                        "target_domain": "target.com",
+                        "target_hostname": "www.target.com",
+                        "relationship_type": "editorial_link",
+                        "target_category": "unknown_external",
+                        "source_pages": 7,
+                        "observations": 7,
+                        "page_regions": ["body"],
+                        "first_seen": "2026-01-01T00:00:00+00:00",
+                        "last_seen": "2026-01-01T00:00:00+00:00",
+                    }
+                )
+                + "\n",
+                encoding="utf-8",
+            )
+
+            loaded = job._load_existing_relationships(shard_dir)
+            assert loaded[key].source_pages == set()
+            assert loaded[key].observations == 7

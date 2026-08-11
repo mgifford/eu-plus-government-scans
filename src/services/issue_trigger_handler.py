@@ -10,7 +10,7 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 from src.jobs.url_validation_scanner import UrlValidationScanner
-from src.lib.country_utils import country_code_to_filename
+from src.lib.country_utils import country_code_to_filename, iter_seed_toon_files
 from src.services.github_issue_manager import GitHubIssueManager
 
 
@@ -33,6 +33,13 @@ DEFAULT_MAX_SECONDS = 45 * 60
 # workflow has time to upload artifacts and post comments before the hard
 # GitHub Actions timeout fires.  Shared between this module and the CLI.
 SAFETY_BUFFER_SECONDS = 5 * 60
+
+# Author associations permitted to start a scan.  Anyone can open an issue on a
+# public repository, and a trigger issue costs up to 45 minutes of Actions time
+# plus outbound requests to thousands of government hosts, so the trigger is
+# restricted to people with write access.  GitHub reports CONTRIBUTOR for anyone
+# who has merely had a PR merged, and NONE for a stranger; neither qualifies.
+TRUSTED_AUTHOR_ASSOCIATIONS = frozenset({"OWNER", "MEMBER", "COLLABORATOR"})
 
 # Supported trigger prefixes
 TRIGGER_CONFIGS = [
@@ -169,18 +176,30 @@ class IssueTriggerHandler:
 
     def find_trigger_issues(self) -> List[Dict[str, Any]]:
         """
-        Find open issues with trigger prefixes in their titles.
+        Find open issues from trusted authors with trigger prefixes in their titles.
+
+        A trigger issue starts a validation run lasting up to 45 minutes that
+        makes outbound requests to thousands of government hosts and spends
+        GitHub Actions minutes.  On a public repository anyone can open an
+        issue, so authorship is checked against
+        :data:`TRUSTED_AUTHOR_ASSOCIATIONS` and anything else is ignored.
+
+        The REST endpoint is used rather than ``gh issue list`` because it
+        reports ``author_association`` directly.  It also returns pull requests,
+        which are filtered out.
 
         Returns:
-            List of issue dictionaries with keys: number, title, body, trigger_config
+            List of issue dictionaries with keys: number, title, body,
+            trigger_config.  Empty when the listing fails.
         """
         try:
             result = subprocess.run(
                 [
-                    "gh", "issue", "list",
-                    "--state", "open",
-                    "--json", "number,title,body",
-                    "--limit", "100",
+                    "gh", "api",
+                    f"repos/{self.issue_manager.repo}/issues",
+                    "--method", "GET",
+                    "-f", "state=open",
+                    "-f", "per_page=100",
                 ],
                 capture_output=True,
                 text=True,
@@ -196,18 +215,51 @@ class IssueTriggerHandler:
 
             trigger_issues = []
             for issue in issues:
+                # The issues endpoint also returns pull requests.
+                if "pull_request" in issue:
+                    continue
+
                 title = issue.get("title", "")
-                for config in TRIGGER_CONFIGS:
-                    if title.upper().startswith(config.prefix):
-                        issue["trigger_config"] = config
-                        trigger_issues.append(issue)
-                        break
+                config = self._match_trigger_config(title)
+                if config is None:
+                    continue
+
+                if not self._is_trusted_author(issue):
+                    print(
+                        f"Ignoring issue #{issue.get('number')} "
+                        f"({title!r}): author association "
+                        f"{issue.get('author_association') or 'unknown'!r} "
+                        "is not permitted to trigger scans"
+                    )
+                    continue
+
+                issue["trigger_config"] = config
+                trigger_issues.append(issue)
 
             return trigger_issues
 
         except Exception as e:
             print(f"Error finding trigger issues: {e}")
             return []
+
+    @staticmethod
+    def _match_trigger_config(title: str) -> Optional[TriggerConfig]:
+        """Return the trigger config whose prefix *title* starts with, if any."""
+        for config in TRIGGER_CONFIGS:
+            if title.upper().startswith(config.prefix):
+                return config
+        return None
+
+    @staticmethod
+    def _is_trusted_author(issue: Dict[str, Any]) -> bool:
+        """Return whether the issue's author may start a scan.
+
+        Fails closed: an issue whose association is missing or unrecognised is
+        treated as untrusted, so a change in the listing format cannot silently
+        reopen the trigger to anyone.
+        """
+        association = (issue.get("author_association") or "").upper()
+        return association in TRUSTED_AUTHOR_ASSOCIATIONS
 
     # ------------------------------------------------------------------
     # Issue processing
@@ -358,7 +410,7 @@ class IssueTriggerHandler:
 
         countries = []
         if self.toon_dir.exists():
-            for toon_file in sorted(self.toon_dir.glob("*.toon")):
+            for toon_file in iter_seed_toon_files(self.toon_dir):
                 if "_validated" in toon_file.stem:
                     continue
                 country_code = country_filename_to_code(toon_file.stem)

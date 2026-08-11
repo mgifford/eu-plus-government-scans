@@ -8,7 +8,7 @@ The repository includes an automated system that monitors GitHub issues and trig
 
 ## How It Works
 
-1. **Issue Detection**: Every hour, a GitHub Actions workflow checks for open issues with specific title prefixes
+1. **Issue Detection**: Every hour, a GitHub Actions workflow checks for open issues with specific title prefixes, opened by someone with write access to the repository
 2. **Schedule Check**: Before running, the system checks whether the issue is due based on its prefix schedule and when it last ran. Issues that are not yet due are skipped without error.
 3. **Scan Execution**: When a trigger issue is found and is due, the system runs a URL validation scan across all countries
 4. **Time Budget**: Each run has a 50-minute budget. When approaching the limit, scanning stops early and a partial report is posted. The next hourly run will continue where it left off.
@@ -61,6 +61,22 @@ The workflow checks issues every hour. When a trigger issue is found, the
 system compares the current time against the issue's last completed run to
 decide whether to proceed or skip. Day-of-week prefixes (e.g. `MONDAYS:`) will
 only fire on the matching day of the week.
+
+## Who can trigger a scan
+
+Only issues opened by a repository **owner**, **organization member**, or
+**collaborator** start a scan.  A trigger issue costs up to 45 minutes of
+GitHub Actions time and sends requests to thousands of government hosts, so on
+a public repository the trigger cannot be left open to everyone.
+
+An issue with a valid trigger prefix from anyone else is ignored and logged in
+the workflow run.  Nothing is posted back to the issue, so an ignored trigger
+is silent from the author's side — check the
+[workflow logs](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/issue-triggered-validation.yml)
+if an expected scan never started.
+
+If you want a scan and do not have write access, open a normal issue asking a
+maintainer to start one.
 
 ## Creating a Trigger Issue
 

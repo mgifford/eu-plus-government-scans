@@ -93,13 +93,13 @@ class BatchCoordinator:
 
     def _get_available_countries(self) -> List[str]:
         """Get list of countries from TOON files."""
-        from src.lib.country_utils import country_filename_to_code
+        from src.lib.country_utils import country_filename_to_code, iter_seed_toon_files
 
         toon_dir = Path("data/toon-seeds/countries")
         countries = []
 
         if toon_dir.exists():
-            for toon_file in sorted(toon_dir.glob("*.toon")):
+            for toon_file in iter_seed_toon_files(toon_dir):
                 country_code = country_filename_to_code(toon_file.stem)
                 countries.append(country_code)
 

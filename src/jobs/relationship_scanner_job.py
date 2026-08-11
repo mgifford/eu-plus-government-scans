@@ -17,7 +17,8 @@ from pathlib import Path
 from typing import Any
 from uuid import uuid4
 
-from src.lib.country_utils import country_filename_to_code
+from src.lib import relationship_shards
+from src.lib.country_utils import country_filename_to_code, iter_seed_toon_files
 from src.lib.gov_domain_registry import GovernmentDomainRegistry
 from src.lib.settings import Settings
 from src.services.multi_scanner import MultiScanner, MultiScanResult
@@ -29,7 +30,12 @@ _GOV_REGISTRY = GovernmentDomainRegistry()
 # Constants
 # ---------------------------------------------------------------------------
 
-RELATIONSHIP_JSONL = Path("docs/data/relationships.jsonl")
+# Sharded dataset directory.  Replaces the single relationships.jsonl file,
+# which grew to within a few kilobytes of GitHub's 100 MiB per-file limit.
+RELATIONSHIP_SHARD_DIR = Path("docs/data/relationships")
+
+# Pre-sharding location, still read once when a checkout has no shards yet.
+LEGACY_RELATIONSHIP_JSONL = Path("docs/data/relationships.jsonl")
 SUMMARIES_DIR = Path("docs/data/summaries")
 PRIORITIZATION_PATH = Path("docs/data/gov-domain-prioritization.json")
 MAX_FAILURES_BEFORE_BACKOFF = 3
@@ -58,6 +64,15 @@ class AggregatedRelationship:
     last_seen: str
 
     def to_dict(self) -> dict:
+        """Serialise this edge for the published JSONL dataset.
+
+        ``source_pages`` stays an integer for consumers that already read it as
+        one, and ``source_page_urls`` carries the URLs it counts.  Publishing
+        both is what makes the count independently verifiable, and it is what
+        lets the next scan cycle resume the tally instead of restarting it --
+        the scanner only visits a slice of the corpus per run, so an edge's
+        page set has to survive a round-trip through this file.
+        """
         return {
             "source_domain": self.source_domain,
             "target_domain": self.target_domain,
@@ -65,6 +80,7 @@ class AggregatedRelationship:
             "relationship_type": self.relationship_type,
             "target_category": self.target_category,
             "source_pages": len(self.source_pages),
+            "source_page_urls": sorted(self.source_pages),
             "observations": self.observations,
             "page_regions": sorted(self.page_regions),
             "first_seen": self.first_seen,
@@ -501,38 +517,45 @@ class RelationshipScannerJob:
     # ------------------------------------------------------------------
 
     def _load_existing_relationships(
-        self, jsonl_path: Path,
+        self, shard_dir: Path,
     ) -> dict[tuple[str, str, str, str], AggregatedRelationship]:
-        """Load existing relationships from JSONL for incremental merge."""
-        existing: dict[tuple[str, str, str, str], AggregatedRelationship] = {}
-        if not jsonl_path.exists():
-            return existing
+        """Load existing relationships from the shard directory for merging.
 
-        with jsonl_path.open("r", encoding="utf-8") as f:
-            for line in f:
-                line = line.strip()
-                if not line:
-                    continue
-                row = json.loads(line)
-                key = (
-                    row["source_domain"],
-                    row["target_domain"],
-                    row["target_hostname"],
-                    row["relationship_type"],
-                )
-                existing[key] = AggregatedRelationship(
-                    source_domain=row["source_domain"],
-                    target_domain=row["target_domain"],
-                    target_hostname=row["target_hostname"],
-                    relationship_type=row["relationship_type"],
-                    target_category=row.get("target_category", "unknown_external"),
-                    source_pages=set(),
-                    observations=row.get("observations", 1),
-                    page_regions=set(row.get("page_regions", [])),
-                    first_seen=row.get("first_seen", ""),
-                    last_seen=row.get("last_seen", ""),
-                )
-                # source_pages is stored as count; we only track URLs in this run
+        Args:
+            shard_dir: Directory holding the sharded dataset.  When it contains
+                no shards the pre-sharding single-file dataset is read instead,
+                so a checkout that predates the split still merges rather than
+                starting from an empty set.
+
+        Returns:
+            Relationship map keyed by (source, target, hostname, type).
+        """
+        existing: dict[tuple[str, str, str, str], AggregatedRelationship] = {}
+
+        for row in relationship_shards.iter_rows(
+            shard_dir, legacy_path=LEGACY_RELATIONSHIP_JSONL
+        ):
+            key = (
+                row["source_domain"],
+                row["target_domain"],
+                row["target_hostname"],
+                row["relationship_type"],
+            )
+            existing[key] = AggregatedRelationship(
+                source_domain=row["source_domain"],
+                target_domain=row["target_domain"],
+                target_hostname=row["target_hostname"],
+                relationship_type=row["relationship_type"],
+                target_category=row.get("target_category", "unknown_external"),
+                # Rows written before source_page_urls existed carry only a
+                # count, which cannot be merged into; they restart their tally
+                # the first time the scanner revisits one of their pages.
+                source_pages=set(row.get("source_page_urls", [])),
+                observations=row.get("observations", 1),
+                page_regions=set(row.get("page_regions", [])),
+                first_seen=row.get("first_seen", ""),
+                last_seen=row.get("last_seen", ""),
+            )
         return existing
 
     def _merge_new_relationships(
@@ -581,15 +604,33 @@ class RelationshipScannerJob:
     def _write_jsonl(
         self,
         relationships: dict[tuple[str, str, str, str], AggregatedRelationship],
-        jsonl_path: Path,
+        shard_dir: Path,
     ) -> None:
-        """Write full relationship map to JSONL (atomic via temp file)."""
-        jsonl_path.parent.mkdir(parents=True, exist_ok=True)
-        tmp_path = jsonl_path.with_suffix(".jsonl.tmp")
-        with tmp_path.open("w", encoding="utf-8") as f:
-            for agg in relationships.values():
-                f.write(json.dumps(agg.to_dict(), ensure_ascii=False) + "\n")
-        tmp_path.replace(jsonl_path)
+        """Write the full relationship map out as a sharded dataset.
+
+        The dataset is committed to the repository so GitHub Pages can serve it,
+        which puts it under GitHub's 100 MiB per-file ceiling.  Splitting it
+        across per-TLD shards keeps every file well clear of that limit as the
+        dataset grows.  See :mod:`src.lib.relationship_shards`.
+
+        Args:
+            relationships: Relationship map to publish.
+            shard_dir: Destination directory for the shards.
+        """
+        index = relationship_shards.write_rows(
+            (agg.to_dict() for agg in relationships.values()), shard_dir
+        )
+
+        # The single-file dataset this replaced would otherwise linger in a
+        # working copy and keep being served alongside the shards.
+        if LEGACY_RELATIONSHIP_JSONL.is_file():
+            LEGACY_RELATIONSHIP_JSONL.unlink()
+
+        largest = max((entry["bytes"] for entry in index["shards"]), default=0)
+        print(
+            f"Wrote {index['total_rows']} relationships across "
+            f"{len(index['shards'])} shard(s); largest {largest / 1048576:.1f} MiB"
+        )
 
     # ------------------------------------------------------------------
     # Summary generation (browser-optimised)
@@ -789,7 +830,7 @@ class RelationshipScannerJob:
         _start = start_time if start_time is not None else time.monotonic()
 
         # Load existing relationships for incremental merge
-        existing = self._load_existing_relationships(RELATIONSHIP_JSONL)
+        existing = self._load_existing_relationships(RELATIONSHIP_SHARD_DIR)
         new_edges: list[tuple[Any, str]] = []
         scanned_urls: list[str] = []
 
@@ -841,7 +882,7 @@ class RelationshipScannerJob:
 
         # Merge and write
         merged = self._merge_new_relationships(existing, new_edges)
-        self._write_jsonl(merged, RELATIONSHIP_JSONL)
+        self._write_jsonl(merged, RELATIONSHIP_SHARD_DIR)
 
         scanned_count = len(scan_results)
         is_complete = scanned_count == len(urls)
@@ -876,7 +917,7 @@ class RelationshipScannerJob:
         all_stats: list[dict[str, Any]] = []
 
         toon_files = self._build_balanced_country_order(
-            sorted(toon_seeds_dir.glob("*.toon"))
+            iter_seed_toon_files(toon_seeds_dir)
         )
         countries = [country_filename_to_code(p.stem) for p in toon_files]
         print(f"Found {len(toon_files)} TOON files to process")
@@ -919,7 +960,7 @@ class RelationshipScannerJob:
                 s["country_code"] for s in all_stats if "error" not in s
             ]
             if successful_countries:
-                existing = self._load_existing_relationships(RELATIONSHIP_JSONL)
+                existing = self._load_existing_relationships(RELATIONSHIP_SHARD_DIR)
                 self._write_summaries(existing, successful_countries)
 
             coverage = self._build_coverage_report(countries, toon_seeds_dir)

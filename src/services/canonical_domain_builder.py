@@ -6,16 +6,13 @@ import json
 from pathlib import Path
 from typing import Dict, List, Optional
 
+from src.lib.country_utils import iter_seed_toon_files
 from src.models.domain_model import (
     CanonicalDomain,
     ClassificationBasis,
-    ClassificationStatus,
-    GovernmentLevel,
-    OrganizationType,
     SourceEvidence,
 )
 from src.services.domain_normalizer import normalize_domain
-from src.services.software_heritage_fetcher import SoftwareHeritageFetcher
 
 
 class CanonicalDomainBuilder:
@@ -95,16 +92,15 @@ class CanonicalDomainBuilder:
         """Ingest all curated TOON files as high-precedence evidence."""
         import datetime
         now_iso = datetime.datetime.now(datetime.timezone.utc).isoformat()
-        
-        for toon_file in toon_dir.glob("*.toon"):
+
+        for toon_file in iter_seed_toon_files(toon_dir):
             try:
                 with toon_file.open("r", encoding="utf-8") as f:
                     data = json.load(f)
             except Exception as e:
                 print(f"Warning: Failed to parse TOON {toon_file}: {e}")
                 continue
-                
-            country_name = data.get("country", "")
+
             # Determine ISO code from filename or rely on metadata
             iso_code = self._country_from_filename(toon_file.name)
 
@@ -142,7 +138,7 @@ class CanonicalDomainBuilder:
             evidence = meta.get("evidence")
             if not isinstance(evidence, SourceEvidence):
                 continue
-            
+
             self.add_evidence(
                 domain=domain,
                 evidence=evidence,
@@ -156,7 +152,7 @@ class CanonicalDomainBuilder:
     def fallback_tld_country_assignment(self) -> None:
         """Fallback for unassigned countries using ccTLDs."""
         generic_tlds = {"org", "com", "net", "edu", "int", "gov", "mil", "info"}
-        
+
         for record in self.domains.values():
             if not record.country:
                 parts = record.domain.split(".")

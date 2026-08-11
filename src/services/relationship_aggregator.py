@@ -5,7 +5,7 @@ from __future__ import annotations
 import json
 from collections import defaultdict
 from pathlib import Path
-from typing import Dict, List, Set, Tuple
+from typing import Dict, Set, Tuple
 
 from src.models.domain_model import (
     CanonicalDomain,
@@ -37,7 +37,7 @@ class RelationshipAggregator:
                             continue
 
                         key = (source_domain, target_domain, rel_type)
-                        
+
                         # We merge observations if they span multiple scans
                         if key not in self.edges:
                             self.edges[key] = RelationshipEdgeMetrics(
@@ -55,18 +55,18 @@ class RelationshipAggregator:
                             if isinstance(regions_list, list):
                                 for r in regions_list:
                                     self.edges[key].page_regions[r] = data.get("observations", 1) // max(1, len(regions_list))
-                            
+
                         else:
                             edge = self.edges[key]
                             edge.source_pages += data.get("source_pages", 0)
                             edge.observations += data.get("observations", 0)
-                            
+
                             # Merge dates
                             if data.get("first_seen") < edge.first_seen:
                                 edge.first_seen = data.get("first_seen")
                             if data.get("last_seen") > edge.last_seen:
                                 edge.last_seen = data.get("last_seen")
-                                
+
                             regions_list = data.get("page_regions", [])
                             if isinstance(regions_list, list):
                                 share = data.get("observations", 1) // max(1, len(regions_list))
@@ -78,17 +78,17 @@ class RelationshipAggregator:
 
     def compute_graph_metrics(self) -> None:
         """Calculate in/out degrees for canonical domains based on editorial links."""
-        
+
         # Track unique sources for in-degree unique orgs
         # domain -> set of unique source domains
         in_sources: Dict[str, Set[str]] = defaultdict(set)
-        
+
         for (source, target, rel_type), edge in self.edges.items():
             # Apply metrics mainly to editorial links for gov structure,
             # though we could count others if wanted. The requirements imply
             # not to call them confidence scores, but graph metrics are fine.
             # Let's count all relationships for degree, but maybe distinguish.
-            
+
             s_domain = self.domains.get(source)
             t_domain = self.domains.get(target)
 
@@ -100,7 +100,7 @@ class RelationshipAggregator:
                 t_domain.in_degree += 1
                 t_domain.weighted_in_degree += edge.observations
                 t_domain.unique_source_pages += edge.source_pages
-                
+
                 in_sources[target].add(source)
 
         for target, sources_set in in_sources.items():

@@ -11,7 +11,7 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional
 from uuid import uuid4
 
-from src.lib.country_utils import country_filename_to_code
+from src.lib.country_utils import country_filename_to_code, iter_seed_toon_files
 from src.lib.settings import Settings
 from src.services.third_party_js_scanner import ThirdPartyJsScanResult, ThirdPartyJsScanner
 from src.storage.schema import initialize_schema
@@ -344,7 +344,7 @@ class ThirdPartyJsScannerJob:
             List of scan statistics for each country processed.
         """
         all_stats = []
-        toon_files = sorted(toon_seeds_dir.glob("*.toon"))
+        toon_files = iter_seed_toon_files(toon_seeds_dir)
         toon_files = self._build_balanced_toon_order(toon_files)
 
         print(f"Found {len(toon_files)} TOON files to process")

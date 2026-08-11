@@ -111,9 +111,6 @@ class UrlAccessibilityResult:
     found_in_footer: int = 0        # 1 = link was found inside a <footer> element
     statement_links: str = "[]"     # JSON list of resolved statement URLs
     matched_terms: str = "[]"       # JSON list of matched glossary terms
-    # JSON-encoded list of ThirdPartyScript dicts:
-    # [{src, host, service_name, version, categories}, ...]
-    scripts: str = "[]"
     error_message: str | None = None
     scanned_at: str | None = None
 

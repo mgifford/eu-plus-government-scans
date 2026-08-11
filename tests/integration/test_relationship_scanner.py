@@ -35,10 +35,10 @@ def test_integration_extract_various_relationships(scanner):
     """
     url = "https://www.example.gov"
     result = scanner.scan_html(url, html)
-    
+
     assert result.is_reachable is True
     assert len(result.relationships) > 0
-    
+
     types = [edge.relationship_type for edge in result.relationships]
     assert "stylesheet_dependency" in types
     assert "font_or_preload_dependency" in types
@@ -51,6 +51,6 @@ def test_integration_extract_various_relationships(scanner):
     twitter_edges = [e for e in result.relationships if e.target_domain == "twitter.com"]
     assert len(twitter_edges) == 1
     assert twitter_edges[0].page_region == "footer"
-    
+
     login_edges = [e for e in result.relationships if e.target_domain == "example.gov"]
     assert any(e.page_region == "header" for e in login_edges)

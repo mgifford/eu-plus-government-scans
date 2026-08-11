@@ -20,15 +20,20 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse
 
+from src.lib import relationship_shards
+from src.lib.country_utils import iter_seed_toon_files
+
 
 PRIORITIZATION_PATH = Path("docs/data/gov-domain-prioritization.json")
 ORPHAN_REPORT_PATH = Path("docs/data/orphan-domains-report.json")
+RELATIONSHIP_SHARD_DIR = Path("docs/data/relationships")
+LEGACY_RELATIONSHIP_JSONL = Path("docs/data/relationships.jsonl")
 
 
 def load_seed_domains(toon_dir: Path) -> dict[str, set[str]]:
     """Load all seed domains from TOON files, keyed by country name."""
     seed_by_country: dict[str, set[str]] = defaultdict(set)
-    for toon_file in sorted(toon_dir.glob("*.toon")):
+    for toon_file in iter_seed_toon_files(toon_dir):
         with toon_file.open(encoding="utf-8") as f:
             data = json.load(f)
         country = data.get("country", toon_file.stem)
@@ -61,28 +66,32 @@ def load_swh_domains(swh_path: Path) -> dict[str, set[str]]:
 
 
 def load_relationship_targets(
-    jsonl_path: Path,
+    shard_dir: Path,
 ) -> dict[str, set[str]]:
-    """Load all government target domains from relationship JSONL.
+    """Load all government target domains from the relationship dataset.
 
-    Returns mapping of target_domain -> set of source_domains linking to it.
+    Args:
+        shard_dir: Directory holding the sharded relationship dataset.  A
+            checkout that predates the split falls back to the single-file
+            dataset automatically.
+
+    Returns:
+        Mapping of target_domain -> set of source_domains linking to it.
     """
     tgt_sources: dict[str, set[str]] = defaultdict(set)
-    if not jsonl_path.exists():
-        return tgt_sources
-    with jsonl_path.open(encoding="utf-8") as f:
-        for line in f:
-            row = json.loads(line.strip())
-            if row.get("target_category") != "known_government":
-                continue
-            tgt_sources[row["target_domain"]].add(row["source_domain"])
+    for row in relationship_shards.iter_rows(
+        shard_dir, legacy_path=LEGACY_RELATIONSHIP_JSONL
+    ):
+        if row.get("target_category") != "known_government":
+            continue
+        tgt_sources[row["target_domain"]].add(row["source_domain"])
     return tgt_sources
 
 
 def detect_orphans(
     toon_dir: Path = Path("data/toon-seeds/countries"),
     swh_path: Path = Path("data/imports/swh_gov_domains_import.json"),
-    jsonl_path: Path = Path("docs/data/relationships.jsonl"),
+    shard_dir: Path = RELATIONSHIP_SHARD_DIR,
     domain_to_country: dict[str, str] | None = None,
 ) -> dict:
     """Run orphan detection and return report.
@@ -90,7 +99,7 @@ def detect_orphans(
     Args:
         toon_dir: Directory containing TOON seed files.
         swh_path: Path to Software Heritage import JSON.
-        jsonl_path: Path to relationship JSONL data.
+        shard_dir: Directory holding the sharded relationship dataset.
         domain_to_country: Mapping of source domain -> country name.
 
     Returns:
@@ -103,7 +112,7 @@ def detect_orphans(
     for name, domains in swh.items():
         seeds[name].update(domains)
 
-    tgt_sources = load_relationship_targets(jsonl_path)
+    tgt_sources = load_relationship_targets(shard_dir)
 
     # Build reverse mapping if not provided
     if domain_to_country is None:

@@ -37,47 +37,66 @@ class UrlValidator:
         self.max_redirects = max_redirects
         self.user_agent = user_agent
 
-    async def validate_url(self, url: str) -> ValidationResult:
+    def _new_client(self) -> httpx.AsyncClient:
+        """Build a client configured with this validator's limits."""
+        return httpx.AsyncClient(
+            follow_redirects=True,
+            max_redirects=self.max_redirects,
+            timeout=self.timeout_seconds,
+        )
+
+    async def validate_url(
+        self,
+        url: str,
+        client: Optional[httpx.AsyncClient] = None,
+    ) -> ValidationResult:
         """
         Validate a single URL and track redirects.
 
-        Returns ValidationResult with success/failure status, error codes,
-        and redirect information.
+        Args:
+            url: URL to validate.
+            client: Optional client to reuse.  Passing one lets a batch share a
+                single connection pool instead of completing a fresh TLS
+                handshake per URL, which matters across tens of thousands of
+                URLs.  When omitted a client is created for this call alone.
+
+        Returns:
+            ValidationResult with success/failure status, error codes, and
+            redirect information.
         """
         validated_at = datetime.now(timezone.utc).isoformat()
 
-        # Track redirect chain
-        redirect_chain: List[str] = []
+        owned_client = client is None
+        if client is None:
+            client = self._new_client()
 
         try:
-            async with httpx.AsyncClient(
-                follow_redirects=True,
-                max_redirects=self.max_redirects,
-                timeout=self.timeout_seconds,
-                event_hooks={
-                    "response": [self._track_redirect(redirect_chain)]
-                },
-            ) as client:
-                response = await client.get(
-                    url,
-                    headers={"User-Agent": self.user_agent},
-                )
+            response = await client.get(
+                url,
+                headers={"User-Agent": self.user_agent},
+            )
 
-                # Determine final URL after redirects
-                final_url = str(response.url)
-                redirected_to = final_url if final_url != url else None
+            # Determine final URL after redirects
+            final_url = str(response.url)
+            redirected_to = final_url if final_url != url else None
 
-                # Consider 2xx and 3xx as valid (3xx should have been followed)
-                is_valid = response.status_code < 400
+            # httpx records every intermediate redirect response in .history,
+            # so the chain comes straight off the response rather than needing
+            # a client-level event hook (which could not be scoped per request
+            # once the client is shared across a batch).
+            redirect_chain = [str(hop.url) for hop in response.history]
 
-                return ValidationResult(
-                    url=url,
-                    is_valid=is_valid,
-                    status_code=response.status_code,
-                    redirected_to=redirected_to,
-                    redirect_chain=redirect_chain if redirect_chain else None,
-                    validated_at=validated_at,
-                )
+            # Consider 2xx and 3xx as valid (3xx should have been followed)
+            is_valid = response.status_code < 400
+
+            return ValidationResult(
+                url=url,
+                is_valid=is_valid,
+                status_code=response.status_code,
+                redirected_to=redirected_to,
+                redirect_chain=redirect_chain if redirect_chain else None,
+                validated_at=validated_at,
+            )
 
         except httpx.TooManyRedirects as e:
             return ValidationResult(
@@ -114,25 +133,10 @@ class UrlValidator:
                 error_message=f"Unexpected error: {str(e)}",
                 validated_at=validated_at,
             )
-
-    def _track_redirect(self, redirect_chain: List[str]):
-        """
-        Create event hook to track redirect chain.
-
-        Returns a callback function for use with httpx event hooks that
-        appends intermediate redirect URLs to the redirect_chain list
-        when responses have redirect status codes (3xx).
-
-        Args:
-            redirect_chain: List to accumulate redirect URLs
-
-        Returns:
-            Async event hook function that accepts an httpx Response
-        """
-        async def hook(response: httpx.Response):
-            if response.is_redirect:
-                redirect_chain.append(str(response.url))
-        return hook
+        finally:
+            # Only close what this call created; a shared client outlives it.
+            if owned_client:
+                await client.aclose()
 
     async def validate_urls_batch(
         self,
@@ -172,38 +176,42 @@ class UrlValidator:
         _safety_buffer = 60.0
 
         total = len(urls)
-        for idx, url in enumerate(urls, 1):
-            # Check remaining runtime budget before making the next request.
-            if max_runtime_seconds is not None:
-                elapsed = time.monotonic() - _start
-                remaining = max_runtime_seconds - elapsed
-                if remaining < _safety_buffer:
-                    print(
-                        f"  ⏱️  Time budget near limit "
-                        f"({elapsed / 60:.1f}m elapsed, "
-                        f"{remaining / 60:.1f}m remaining) "
-                        f"— stopping after {idx - 1}/{total} URLs"
-                    )
-                    break
+        # One client for the whole batch: connections and TLS sessions are
+        # reused across URLs instead of being renegotiated for each of the tens
+        # of thousands of URLs a full run covers.
+        async with self._new_client() as client:
+            for idx, url in enumerate(urls, 1):
+                # Check remaining runtime budget before making the next request.
+                if max_runtime_seconds is not None:
+                    elapsed = time.monotonic() - _start
+                    remaining = max_runtime_seconds - elapsed
+                    if remaining < _safety_buffer:
+                        print(
+                            f"  ⏱️  Time budget near limit "
+                            f"({elapsed / 60:.1f}m elapsed, "
+                            f"{remaining / 60:.1f}m remaining) "
+                            f"— stopping after {idx - 1}/{total} URLs"
+                        )
+                        break
 
-            print(f"  [{idx}/{total}] Validating: {url}")
-            result = await self.validate_url(url)
-            results[url] = result
+                print(f"  [{idx}/{total}] Validating: {url}")
+                result = await self.validate_url(url, client=client)
+                results[url] = result
 
-            if on_result is not None:
-                on_result(result)
+                if on_result is not None:
+                    on_result(result)
 
-            # Print result status
-            if result.is_valid:
-                status_msg = f"✓ {result.status_code}" if result.status_code else "✓"
-                if result.redirected_to:
-                    status_msg += f" → {result.redirected_to}"
-            else:
-                status_msg = f"✗ {result.error_message or 'Failed'}"
-            print(f"      {status_msg}")
+                # Print result status
+                if result.is_valid:
+                    status_msg = f"✓ {result.status_code}" if result.status_code else "✓"
+                    if result.redirected_to:
+                        status_msg += f" → {result.redirected_to}"
+                else:
+                    status_msg = f"✗ {result.error_message or 'Failed'}"
+                print(f"      {status_msg}")
 
-            # Rate limiting delay
-            if delay > 0:
-                await asyncio.sleep(delay)
+                # Rate limiting delay
+                if delay > 0:
+                    await asyncio.sleep(delay)
 
         return results

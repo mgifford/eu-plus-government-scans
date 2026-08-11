@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import csv
-import io
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, Any
@@ -37,7 +36,7 @@ class SoftwareHeritageFetcher:
             return cache_file
 
         url = f"{self.default_repo_url}/{commit_sha}/{filename}"
-        
+
         async with httpx.AsyncClient() as client:
             try:
                 response = await client.get(url, follow_redirects=True)
@@ -57,7 +56,7 @@ class SoftwareHeritageFetcher:
         """Parse the cached CSV into a dictionary keyed by domain."""
         parsed_data = {}
         now = datetime.now(timezone.utc).isoformat()
-        
+
         # Determine the retrieval date from the file's modification time
         try:
             mtime = cache_file.stat().st_mtime
@@ -71,7 +70,7 @@ class SoftwareHeritageFetcher:
                 domain = row.get("domain", "").strip().lower()
                 if not domain:
                     continue
-                    
+
                 confidence_str = row.get("confidence", "0").strip()
                 try:
                     confidence = int(confidence_str)
@@ -84,12 +83,12 @@ class SoftwareHeritageFetcher:
                     retrieved_at=retrieved_at,
                     confidence=confidence,
                 )
-                
+
                 parsed_data[domain] = {
                     "country": row.get("country", "").strip().upper(),
                     "government_level": row.get("level", "unknown").strip().lower(),
                     "organization_type": row.get("type", "unknown").strip().lower(),
                     "evidence": evidence
                 }
-                
+
         return parsed_data

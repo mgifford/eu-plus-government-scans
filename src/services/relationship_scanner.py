@@ -87,11 +87,11 @@ class RelationshipScanner:
         for parent in element.parents:
             if parent.name in ("header", "nav", "footer", "main"):
                 return parent.name
-            
+
             # Check classes or IDs for common naming
             class_str = " ".join(parent.get("class", [])).lower()
             id_str = parent.get("id", "").lower()
-            
+
             for region in ("header", "nav", "footer", "main"):
                 if region in class_str or region in id_str:
                     return region
@@ -106,33 +106,33 @@ class RelationshipScanner:
         try:
             # Resolve relative URLs
             full_url = urljoin(base_url, url)
-            
+
             parsed = urlparse(full_url)
-            
+
             # Only accept http and https
             if parsed.scheme not in ("http", "https"):
                 return None
-                
+
             # Remove fragments
             parsed = parsed._replace(fragment="")
-            
+
             # Normalize casing and drop default ports
             hostname = parsed.hostname
             if not hostname:
                 return None
-            
+
             # IDN conversion to uniform representation
             hostname = hostname.encode("idna").decode("utf-8").lower()
-            
+
             # Strip default ports if they were parsed into the netloc but aren't standard
             netloc = hostname
             if parsed.port:
                 if (parsed.scheme == "http" and parsed.port != 80) or \
                    (parsed.scheme == "https" and parsed.port != 443):
                     netloc = f"{hostname}:{parsed.port}"
-            
+
             normalized_url = parsed._replace(netloc=netloc).geturl()
-            
+
             # Get registrable domain
             extracted = self.tld_extract(hostname)
             if extracted.registered_domain:
@@ -140,7 +140,7 @@ class RelationshipScanner:
             else:
                 # Fallback for IP addresses or local domains
                 registrable_domain = hostname
-                
+
             return normalized_url, hostname, registrable_domain
         except Exception:
             return None
@@ -157,32 +157,32 @@ class RelationshipScanner:
         """
         if not scanned_at:
             scanned_at = datetime.now(timezone.utc).isoformat()
-            
+
         base_url = final_url or url
         source_extracted = self.tld_extract(urlparse(base_url).hostname or "")
         source_domain = source_extracted.registered_domain or (urlparse(base_url).hostname or "")
-        
+
         try:
             soup = BeautifulSoup(html, "html.parser")
-            
+
             edges_dedup_key: set[tuple[str, str, str]] = set()
             relationships: list[RelationshipEdge] = []
-            
+
             def add_edge(target: str, rel_type: str, element_name: str, region: str):
                 normalized = self._normalize_url(target, base_url)
                 if not normalized:
                     return
-                    
+
                 target_url, target_hostname, target_domain = normalized
                 is_external = source_domain != target_domain
                 category = self._get_category(target_domain)
-                
+
                 # Deduplicate identical target relationships within each source page
                 dedup_key = (target_domain, target_hostname, rel_type)
                 if dedup_key in edges_dedup_key:
                     return
                 edges_dedup_key.add(dedup_key)
-                
+
                 relationships.append(RelationshipEdge(
                     source_domain=source_domain,
                     target_domain=target_domain,
@@ -199,42 +199,42 @@ class RelationshipScanner:
             for a_tag in soup.find_all("a", href=True):
                 region = self._determine_region(a_tag)
                 add_edge(a_tag["href"], "editorial_link", "a", region)
-                
+
             # 2. script_dependency (<script src>)
             for script_tag in soup.find_all("script", src=True):
                 region = self._determine_region(script_tag)
                 add_edge(script_tag["src"], "script_dependency", "script", region)
-                
+
             # 3. stylesheet_dependency (<link rel="stylesheet">)
             for link_tag in soup.find_all("link", rel=True, href=True):
                 rels = link_tag["rel"]
                 if not isinstance(rels, list):
                     rels = [rels]
-                
+
                 region = self._determine_region(link_tag)
-                
+
                 if "stylesheet" in rels:
                     add_edge(link_tag["href"], "stylesheet_dependency", "link", region)
                 elif "preload" in rels or "font" in rels or "preconnect" in rels:
                     add_edge(link_tag["href"], "font_or_preload_dependency", "link", region)
-                    
+
             # 4. image_or_media_dependency (<img>)
             for img_tag in soup.find_all("img", src=True):
                 region = self._determine_region(img_tag)
                 add_edge(img_tag["src"], "image_or_media_dependency", "img", region)
-                
+
             # 5. form_destination (<form action>)
             for form_tag in soup.find_all("form", action=True):
                 region = self._determine_region(form_tag)
                 add_edge(form_tag["action"], "form_destination", "form", region)
-                
+
             return RelationshipScanResult(
                 url=url,
                 is_reachable=True,
                 relationships=relationships,
                 scanned_at=scanned_at,
             )
-            
+
         except Exception as e:
             return RelationshipScanResult(
                 url=url,

@@ -1540,6 +1540,11 @@ layout: page
             if (!jsonlLoaded) {
                 announceToScreenReader('Loading full dataset to show connections for ' + domain + '…');
                 const check = setInterval(() => {
+                    if (jsonlFailed) {
+                        // Stop polling; loadFullJSONL has surfaced the error.
+                        clearInterval(check);
+                        return;
+                    }
                     if (jsonlLoaded) {
                         clearInterval(check);
                         // populateCountryFilter() (called from inside loadFullJSONL's
@@ -1557,25 +1562,68 @@ layout: page
             renderGraph(domain);
         }
 
-        function loadFullJSONL() {
-            if (jsonlLoaded) return;
+        // The relationship dataset is split across per-TLD shards listed in
+        // data/relationships/index.json, because a single file would exceed
+        // GitHub's 100 MiB per-file limit. Shards are fetched one at a time so
+        // the browser holds one shard's text in memory rather than all of it,
+        // and so progress can be reported while the load runs.
+        let jsonlFailed = false;
+
+        function parseJsonlText(text, into) {
+            for (const line of text.split('\n')) {
+                if (!line.trim()) continue;
+                try { into.push(JSON.parse(line)); } catch (e) { /* skip bad line */ }
+            }
+        }
+
+        async function loadFullJSONL() {
+            if (jsonlLoaded || jsonlFailed) return;
+
             document.querySelector('main').insertAdjacentHTML('afterbegin',
-                '<div class="info-message" id="jsonl-loading">Loading full dataset (12.5 MB)...</div>');
-            fetch('data/relationships.jsonl')
-                .then(r => r.text())
-                .then(text => {
-                    allRelationships = text.split('\n').filter(l => l.trim()).map(l => {
-                        try { return JSON.parse(l); } catch(e) { return null; }
-                    }).filter(Boolean);
-                    filteredRelationships = [...allRelationships];
-                    jsonlLoaded = true;
-                    currentCountrySummary = null;
-                    const loading = document.getElementById('jsonl-loading');
-                    if (loading) loading.remove();
-                    console.log('Loaded ' + allRelationships.length + ' relationships from JSONL');
-                    populateCountryFilter();
-                    renderAll();
-                });
+                '<div class="info-message" id="jsonl-loading" role="status" aria-live="polite">Loading full dataset…</div>');
+            const status = document.getElementById('jsonl-loading');
+            const setStatus = (msg) => { if (status) status.textContent = msg; };
+
+            try {
+                let shardFiles = [];
+                const indexResponse = await fetch('data/relationships/index.json');
+                if (indexResponse.ok) {
+                    const index = await indexResponse.json();
+                    shardFiles = index.shards.map(s => 'data/relationships/' + s.file);
+                } else {
+                    // A deploy that predates the split still serves one file.
+                    shardFiles = ['data/relationships.jsonl'];
+                }
+
+                const collected = [];
+                for (let i = 0; i < shardFiles.length; i++) {
+                    setStatus('Loading full dataset… part ' + (i + 1) + ' of ' + shardFiles.length);
+                    const response = await fetch(shardFiles[i]);
+                    if (!response.ok) {
+                        throw new Error(shardFiles[i] + ' returned ' + response.status);
+                    }
+                    parseJsonlText(await response.text(), collected);
+                }
+
+                allRelationships = collected;
+                filteredRelationships = [...allRelationships];
+                jsonlLoaded = true;
+                currentCountrySummary = null;
+                if (status) status.remove();
+                console.log('Loaded ' + allRelationships.length + ' relationships from '
+                    + shardFiles.length + ' shard(s)');
+                populateCountryFilter();
+                renderAll();
+            } catch (error) {
+                jsonlFailed = true;
+                console.error('Failed to load relationship dataset', error);
+                if (status) {
+                    status.className = 'error-message';
+                    status.textContent =
+                        'Could not load the full dataset. Check your connection and reload the page.';
+                }
+                announceToScreenReader('Could not load the full relationship dataset.');
+            }
         }
 
         let govToGovPairs = [];

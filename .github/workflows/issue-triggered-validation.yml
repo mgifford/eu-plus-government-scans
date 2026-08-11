@@ -14,12 +14,13 @@ on:
         default: 'false'
         type: boolean
 
-# Use a dedicated concurrency group for issue-triggered runs so that
-# this hourly workflow does not compete with — or cancel — the longer-running
-# scan workflows (scan-social-media, scan-technology) that share
-# the validation-runs group.
+# These four workflows are the only ones that write the validation-metadata
+# artifact, and they share mutable batch-cycle state (validation_batch_state,
+# issue_trigger_runs) that a row-level merge cannot reconcile. They therefore
+# share one concurrency group so only one writes at a time. Every other scanner
+# owns its own artifact and is no longer serialized against anything.
 concurrency:
-  group: issue-check-runs
+  group: validation-metadata-writers
   cancel-in-progress: false
 
 env:
@@ -48,31 +49,20 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - name: Find latest metadata artifact run ID
-        id: find-metadata
+      # Each scan workflow owns one metadata artifact and writes only that one,
+      # so concurrent runs can no longer overwrite each other's results.  Collect
+      # every artifact and merge them into the working database, which the
+      # cross-scanner skip logic reads.  See src/lib/metadata_merge.py.
+      - name: Collect metadata artifacts
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          RUN_ID=$(gh api --paginate "/repos/${{ github.repository }}/actions/artifacts?per_page=100&name=validation-metadata" \
-            --jq '.artifacts[] | select(.expired == false) | "\(.created_at) \(.workflow_run.id)"' \
-            2>/dev/null | sort -rk1 | head -1 | awk '{print $2}' || echo "")
-          echo "run_id=${RUN_ID}" >> $GITHUB_OUTPUT
-          if [ -n "$RUN_ID" ]; then
-            echo "Found validation-metadata artifact from run $RUN_ID"
-          else
-            echo "No validation-metadata artifact found — will start with fresh database"
-          fi
+        run: scripts/fetch-metadata-artifacts.sh data/artifacts
 
-      - name: Download previous metadata DB (if exists)
-        id: download-metadata
-        if: steps.find-metadata.outputs.run_id != ''
-        continue-on-error: true
-        uses: actions/download-artifact@v8
-        with:
-          name: validation-metadata
-          path: data/
-          run-id: ${{ steps.find-metadata.outputs.run_id }}
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Merge metadata artifacts
+        run: |
+          python3 -m src.cli.metadata_artifact merge \
+            --into data/metadata.db \
+            --from-dir data/artifacts
 
       - name: Check for consecutive failures (circuit breaker)
         id: circuit-breaker
@@ -151,12 +141,24 @@ jobs:
           echo "The circuit breaker resets automatically after one successful run." >> "$GITHUB_STEP_SUMMARY"
           echo "::warning::Circuit breaker active — ${{ steps.circuit-breaker.outputs.streak }} consecutive failures. Validation skipped. Use the bypass_circuit_breaker input on a manual dispatch to reset."
 
-      - name: Upload metadata
-        if: always() && steps.download-metadata.outcome != 'failure'
+      # Upload only the tables this workflow owns.  Uploading the merged
+      # database would republish a stale snapshot of every other scanner's
+      # tables, undoing the isolation the split exists to provide.
+      - name: Extract owned metadata
+        if: always()
+        continue-on-error: true
+        run: |
+          python3 -m src.cli.metadata_artifact extract \
+            --artifact validation-metadata \
+            --source data/metadata.db \
+            --into data/upload/metadata.db
+
+      - name: Upload validation-metadata
+        if: always()
         uses: actions/upload-artifact@v7
         with:
           name: validation-metadata
-          path: |
-            data/metadata.db
+          path: data/upload/metadata.db
           retention-days: 90
           overwrite: true
+          if-no-files-found: warn
