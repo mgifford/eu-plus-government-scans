@@ -19,7 +19,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urlparse, urlunparse
 
-from src.lib.country_utils import country_code_to_display_name, country_filename_to_code, iter_seed_toon_files
+from src.cli._report_common import count_toon_seed_urls
+from src.lib.country_utils import country_code_to_display_name
 from src.lib.settings import load_settings
 
 
@@ -54,21 +55,6 @@ def _sanitize_script_src(src: str) -> str:
     filtered = [(k, v) for k, v in parse_qsl(parsed.query) if k.lower() not in _SENSITIVE_QUERY_PARAMS]
     clean_query = urlencode(filtered)
     return urlunparse(parsed._replace(query=clean_query))
-
-
-def _count_toon_seed_urls(toon_seeds_dir: Path) -> dict[str, int]:
-    """Return a mapping of country_code to page_count from toon seed files."""
-    counts: dict[str, int] = {}
-    if not toon_seeds_dir.is_dir():
-        return counts
-    for toon_file in iter_seed_toon_files(toon_seeds_dir):
-        try:
-            data = json.loads(toon_file.read_text(encoding="utf-8"))
-        except (json.JSONDecodeError, OSError):
-            continue
-        country_code = country_filename_to_code(toon_file.stem)
-        counts[country_code] = int(data.get("page_count") or 0)
-    return counts
 
 
 def _query_summary(conn: sqlite3.Connection) -> dict:
@@ -583,7 +569,7 @@ def generate_third_party_js_report(
     infrastructure_category_counts, policy_category_counts = _split_category_balance(
         category_counts
     )
-    seed_counts = _count_toon_seed_urls(toon_seeds_dir) if toon_seeds_dir else {}
+    seed_counts = count_toon_seed_urls(toon_seeds_dir) if toon_seeds_dir else {}
     total_available = sum(seed_counts.values())
 
     reachable_total = summary.get("total_reachable") or 0
