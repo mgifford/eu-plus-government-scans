@@ -5,32 +5,7 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-08-11 16:53 UTC — last scan: 2026-08-11_
-
-**2** scan batches run
-
-**1,335** of **87,696** available pages scanned (**1.5%** coverage)
-**1,254** of **1,335** scanned pages were reachable (**93.9%**)
-**782** of **1,254** reachable pages have an accessibility statement (**62.4%**)
-**734** pages have the statement link in the footer (**93.9%** of pages with a statement)
-
-📥 Machine-readable results are available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
-
-Each country entry in the JSON file includes page-level evidence for pages with and without accessibility statements, plus a per-domain summary you can share to validate the published counts.
-
-> Hover or focus any non-zero count in the country table to preview the matching pages. If there are 20 or fewer URLs, the preview shows all of them; otherwise it shows a short sample. Full machine-readable data is available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
-
----
-
-## Accessibility Statement Scan by Country
-
-| Country | Scanned | Available | Reachable | Has Statement | In Footer | Statement % | Scan Period |
-|---------|---------|-----------|-----------|--------------|-----------|------------|-------------|
-| Austria | 822 | 822 | 781 | 554 | 525 | 70.9% | Aug 2026 |
-| Belgium | 513 | 1,329 | 473 | 228 | 209 | 48.2% | Aug 2026 |
-| **Total** | **1,335** | **87,696** | **1,254** | **782** | **734** | **62.4%** | — |
-
-> **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
+_No scan data yet — stats update automatically after every scan run._
 
 <!-- ACCESSIBILITY_STATS_END -->
 
