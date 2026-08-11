@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from pathlib import Path
+
 
 _COUNTRY_DISPLAY_NAMES = {
     "REPUBLIC_OF_CYPRUS": "Cyprus",
@@ -46,3 +48,43 @@ def country_code_to_display_name(country_code: str) -> str:
     if country_code in _COUNTRY_DISPLAY_NAMES:
         return _COUNTRY_DISPLAY_NAMES[country_code]
     return country_code.replace("_", " ").title()
+
+
+def is_seed_toon_file(path: Path) -> bool:
+    """Return whether *path* is a country seed file rather than scanner output.
+
+    Scanners write their per-country results beside the seeds as
+    ``<country>_<scanner>.toon`` -- ``iceland_validated.toon``,
+    ``iceland_tech.toon`` and so on.  Globbing ``*.toon`` therefore picks up
+    generated files as though they were extra countries, inventing bogus codes
+    like ``ICELAND_VALIDATED``.
+
+    Seed filenames are lowercase-hyphenated (see
+    :func:`country_code_to_filename`) and never contain an underscore, so the
+    underscore is what separates the two.  Testing for it rather than listing
+    known suffixes means a scanner added later cannot reintroduce the problem
+    by inventing a suffix nobody remembered to exclude here.
+
+    Args:
+        path: Path to a ``.toon`` file.
+
+    Returns:
+        True when the file is an original seed.
+    """
+    return "_" not in path.stem
+
+
+def iter_seed_toon_files(toon_dir: Path) -> list[Path]:
+    """Return the country seed files in *toon_dir*, sorted by path.
+
+    Excludes scanner-generated ``.toon`` output; see :func:`is_seed_toon_file`.
+
+    Args:
+        toon_dir: Directory holding the per-country seed files.
+
+    Returns:
+        Sorted seed file paths.  Empty when the directory does not exist.
+    """
+    if not toon_dir.is_dir():
+        return []
+    return sorted(path for path in toon_dir.glob("*.toon") if is_seed_toon_file(path))

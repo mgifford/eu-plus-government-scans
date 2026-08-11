@@ -21,7 +21,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse
 
-from src.lib.country_utils import country_code_to_display_name, country_filename_to_code
+from src.lib.country_utils import country_code_to_display_name, country_filename_to_code, iter_seed_toon_files
 from src.lib.settings import load_settings
 
 
@@ -47,7 +47,7 @@ def _count_toon_seed_urls(toon_seeds_dir: Path) -> dict[str, int]:
     counts: dict[str, int] = {}
     if not toon_seeds_dir.is_dir():
         return counts
-    for toon_file in toon_seeds_dir.glob("*.toon"):
+    for toon_file in iter_seed_toon_files(toon_seeds_dir):
         try:
             data = json.loads(toon_file.read_text(encoding="utf-8"))
         except (json.JSONDecodeError, OSError):

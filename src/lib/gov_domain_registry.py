@@ -12,7 +12,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from src.lib.country_utils import country_filename_to_code
+from src.lib.country_utils import country_filename_to_code, iter_seed_toon_files
 
 DEFAULT_TOON_DIR = Path("data/toon-seeds/countries")
 
@@ -27,7 +27,7 @@ class GovernmentDomainRegistry:
     def _load(self, toon_dir: Path) -> None:
         if not toon_dir.exists():
             return
-        for toon_path in sorted(toon_dir.glob("*.toon")):
+        for toon_path in iter_seed_toon_files(toon_dir):
             country_code = country_filename_to_code(toon_path.stem)
             try:
                 with toon_path.open("r", encoding="utf-8") as f:
