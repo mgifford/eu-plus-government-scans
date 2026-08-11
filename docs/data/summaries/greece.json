@@ -68,11 +68,11 @@
       "count": 164
     },
     {
-      "domain": "statistics.gr",
+      "domain": "paiania.gov.gr",
       "count": 156
     },
     {
-      "domain": "paiania.gov.gr",
+      "domain": "statistics.gr",
       "count": 156
     },
     {
@@ -148,7 +148,7 @@
       "count": 108
     },
     {
-      "domain": "ypes.gr",
+      "domain": "loutraki.gov.gr",
       "count": 107
     },
     {
@@ -156,11 +156,11 @@
       "count": 107
     },
     {
-      "domain": "loutraki.gov.gr",
+      "domain": "sparti.gov.gr",
       "count": 107
     },
     {
-      "domain": "sparti.gov.gr",
+      "domain": "ypes.gr",
       "count": 107
     },
     {
@@ -180,15 +180,15 @@
       "count": 97
     },
     {
+      "domain": "chios.gov.gr",
+      "count": 95
+    },
+    {
       "domain": "diavgeia.gov.gr",
       "count": 95
     },
     {
       "domain": "lefkada.gov.gr",
-      "count": 95
-    },
-    {
-      "domain": "chios.gov.gr",
       "count": 95
     },
     {
@@ -408,11 +408,11 @@
   ],
   "relationship_types": {
     "editorial_link": 4795,
-    "script_dependency": 1243,
-    "stylesheet_dependency": 1036,
-    "image_or_media_dependency": 648,
+    "font_or_preload_dependency": 286,
     "form_destination": 363,
-    "font_or_preload_dependency": 286
+    "image_or_media_dependency": 648,
+    "script_dependency": 1243,
+    "stylesheet_dependency": 1036
   },
-  "generated_at": "2026-08-10T08:27:46.955555+00:00"
+  "generated_at": "2026-08-11T22:20:43.818978+00:00"
 }

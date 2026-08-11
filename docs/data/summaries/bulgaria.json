@@ -104,11 +104,11 @@
       "count": 22
     },
     {
-      "domain": "parliament.bg",
+      "domain": "kzp.bg",
       "count": 18
     },
     {
-      "domain": "kzp.bg",
+      "domain": "parliament.bg",
       "count": 18
     },
     {
@@ -116,11 +116,11 @@
       "count": 17
     },
     {
-      "domain": "mod.bg",
+      "domain": "gov.bg",
       "count": 16
     },
     {
-      "domain": "gov.bg",
+      "domain": "mod.bg",
       "count": 16
     },
     {
@@ -144,11 +144,11 @@
       "count": 14
     },
     {
-      "domain": "fsc.bg",
+      "domain": "egov.bg",
       "count": 13
     },
     {
-      "domain": "egov.bg",
+      "domain": "fsc.bg",
       "count": 13
     },
     {
@@ -156,11 +156,11 @@
       "count": 12
     },
     {
-      "domain": "statereserve.bg",
+      "domain": "dker.bg",
       "count": 12
     },
     {
-      "domain": "dker.bg",
+      "domain": "statereserve.bg",
       "count": 12
     },
     {
@@ -278,19 +278,19 @@
       "count": 41
     },
     {
-      "domain": "googletagmanager.com",
-      "count": 37
-    },
-    {
       "domain": "cloudflare.com",
       "count": 37
     },
     {
-      "domain": "instagram.com",
-      "count": 36
+      "domain": "googletagmanager.com",
+      "count": 37
     },
     {
       "domain": "president.bg",
+      "count": 36
+    },
+    {
+      "domain": "instagram.com",
       "count": 36
     },
     {
@@ -306,11 +306,11 @@
       "count": 31
     },
     {
-      "domain": "jsdelivr.net",
+      "domain": "europa.eu",
       "count": 28
     },
     {
-      "domain": "europa.eu",
+      "domain": "jsdelivr.net",
       "count": 28
     },
     {
@@ -354,11 +354,11 @@
       "count": 17
     },
     {
-      "domain": "jquery.com",
+      "domain": "evroto.bg",
       "count": 16
     },
     {
-      "domain": "evroto.bg",
+      "domain": "jquery.com",
       "count": 16
     },
     {
@@ -378,11 +378,11 @@
       "count": 14
     },
     {
-      "domain": "nhif.bg",
+      "domain": "sliven.net",
       "count": 12
     },
     {
-      "domain": "sliven.net",
+      "domain": "nhif.bg",
       "count": 12
     },
     {
@@ -394,25 +394,25 @@
       "count": 11
     },
     {
-      "domain": "itservice-bg.net",
-      "count": 11
-    },
-    {
       "domain": "nra.bg",
       "count": 11
     },
     {
       "domain": "dker.bg",
       "count": 11
+    },
+    {
+      "domain": "itservice-bg.net",
+      "count": 11
     }
   ],
   "relationship_types": {
     "editorial_link": 1013,
+    "form_destination": 105,
+    "image_or_media_dependency": 155,
     "script_dependency": 230,
     "stylesheet_dependency": 197,
-    "image_or_media_dependency": 155,
-    "form_destination": 105,
     "font_or_preload_dependency": 19
   },
-  "generated_at": "2026-08-10T08:27:47.016365+00:00"
+  "generated_at": "2026-08-11T22:20:45.112101+00:00"
 }

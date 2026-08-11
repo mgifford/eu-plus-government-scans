@@ -92,11 +92,11 @@
       "count": 303
     },
     {
-      "domain": "transparencialocal.gob.es",
+      "domain": "juntadeandalucia.es",
       "count": 300
     },
     {
-      "domain": "juntadeandalucia.es",
+      "domain": "transparencialocal.gob.es",
       "count": 300
     },
     {
@@ -116,11 +116,11 @@
       "count": 225
     },
     {
-      "domain": "inclusion.gob.es",
+      "domain": "ayto-pinto.es",
       "count": 203
     },
     {
-      "domain": "ayto-pinto.es",
+      "domain": "inclusion.gob.es",
       "count": 203
     },
     {
@@ -172,11 +172,11 @@
       "count": 132
     },
     {
-      "domain": "mapa.gob.es",
+      "domain": "dgt.gob.es",
       "count": 129
     },
     {
-      "domain": "dgt.gob.es",
+      "domain": "mapa.gob.es",
       "count": 129
     },
     {
@@ -366,11 +366,11 @@
       "count": 199
     },
     {
-      "domain": "blogspot.com.es",
+      "domain": "sede.gob.es",
       "count": 173
     },
     {
-      "domain": "sede.gob.es",
+      "domain": "blogspot.com.es",
       "count": 173
     },
     {
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 8193,
     "script_dependency": 2299,
-    "stylesheet_dependency": 1968,
-    "font_or_preload_dependency": 154,
     "image_or_media_dependency": 1932,
-    "form_destination": 1430
+    "stylesheet_dependency": 1968,
+    "editorial_link": 8193,
+    "form_destination": 1430,
+    "font_or_preload_dependency": 154
   },
-  "generated_at": "2026-08-10T08:27:46.399422+00:00"
+  "generated_at": "2026-08-11T22:20:43.224211+00:00"
 }

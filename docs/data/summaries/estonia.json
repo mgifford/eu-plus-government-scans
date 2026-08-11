@@ -56,11 +56,11 @@
       "count": 133
     },
     {
-      "domain": "narva.ee",
+      "domain": "kul.ee",
       "count": 132
     },
     {
-      "domain": "kul.ee",
+      "domain": "narva.ee",
       "count": 132
     },
     {
@@ -92,11 +92,11 @@
       "count": 47
     },
     {
-      "domain": "justdigi.ee",
+      "domain": "just.ee",
       "count": 39
     },
     {
-      "domain": "just.ee",
+      "domain": "justdigi.ee",
       "count": 39
     },
     {
@@ -206,11 +206,11 @@
       "count": 63
     },
     {
-      "domain": "twitter.com",
+      "domain": "riigikantselei.ee",
       "count": 59
     },
     {
-      "domain": "riigikantselei.ee",
+      "domain": "twitter.com",
       "count": 59
     },
     {
@@ -270,11 +270,11 @@
       "count": 31
     },
     {
-      "domain": "riigiteataja.ee",
+      "domain": "prokuratuur.ee",
       "count": 29
     },
     {
-      "domain": "prokuratuur.ee",
+      "domain": "riigiteataja.ee",
       "count": 29
     },
     {
@@ -294,11 +294,11 @@
       "count": 21
     },
     {
-      "domain": "fontawesome.com",
+      "domain": "politsei.ee",
       "count": 19
     },
     {
-      "domain": "politsei.ee",
+      "domain": "fontawesome.com",
       "count": 19
     },
     {
@@ -322,11 +322,11 @@
       "count": 16
     },
     {
-      "domain": "edupage.org",
+      "domain": "blogspot.com",
       "count": 15
     },
     {
-      "domain": "blogspot.com",
+      "domain": "edupage.org",
       "count": 15
     },
     {
@@ -336,11 +336,11 @@
   ],
   "relationship_types": {
     "editorial_link": 916,
+    "form_destination": 99,
+    "image_or_media_dependency": 148,
     "script_dependency": 213,
     "stylesheet_dependency": 183,
-    "image_or_media_dependency": 148,
-    "form_destination": 99,
     "font_or_preload_dependency": 18
   },
-  "generated_at": "2026-08-02T01:28:06.980831+00:00"
+  "generated_at": "2026-08-11T22:20:44.884096+00:00"
 }

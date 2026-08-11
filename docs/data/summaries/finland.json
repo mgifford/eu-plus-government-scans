@@ -84,11 +84,11 @@
       "count": 44
     },
     {
-      "domain": "lvv.fi",
+      "domain": "eduskunta.fi",
       "count": 42
     },
     {
-      "domain": "eduskunta.fi",
+      "domain": "lvv.fi",
       "count": 42
     },
     {
@@ -100,11 +100,11 @@
       "count": 38
     },
     {
-      "domain": "stm.fi",
+      "domain": "defmin.fi",
       "count": 31
     },
     {
-      "domain": "defmin.fi",
+      "domain": "stm.fi",
       "count": 31
     },
     {
@@ -194,11 +194,11 @@
       "count": 61
     },
     {
-      "domain": "stat.fi",
+      "domain": "kela.fi",
       "count": 58
     },
     {
-      "domain": "kela.fi",
+      "domain": "stat.fi",
       "count": 58
     },
     {
@@ -234,11 +234,11 @@
       "count": 32
     },
     {
-      "domain": "ym.fi",
+      "domain": "twitter.com",
       "count": 31
     },
     {
-      "domain": "twitter.com",
+      "domain": "ym.fi",
       "count": 31
     },
     {
@@ -250,11 +250,11 @@
       "count": 27
     },
     {
-      "domain": "oikeus.fi",
+      "domain": "businessfinland.fi",
       "count": 26
     },
     {
-      "domain": "businessfinland.fi",
+      "domain": "oikeus.fi",
       "count": 26
     },
     {
@@ -286,11 +286,11 @@
       "count": 21
     },
     {
-      "domain": "lvv.fi",
+      "domain": "eduskunta.fi",
       "count": 20
     },
     {
-      "domain": "eduskunta.fi",
+      "domain": "lvv.fi",
       "count": 20
     },
     {
@@ -298,11 +298,11 @@
       "count": 18
     },
     {
-      "domain": "vnk.fi",
+      "domain": "vm.fi",
       "count": 17
     },
     {
-      "domain": "vm.fi",
+      "domain": "vnk.fi",
       "count": 17
     },
     {
@@ -318,15 +318,15 @@
       "count": 12
     },
     {
-      "domain": "webropolsurveys.com",
-      "count": 11
-    },
-    {
       "domain": "google.com",
       "count": 11
     },
     {
-      "domain": "ymparisto.fi",
+      "domain": "webropolsurveys.com",
+      "count": 11
+    },
+    {
+      "domain": "azureedge.net",
       "count": 10
     },
     {
@@ -342,10 +342,6 @@
       "count": 10
     },
     {
-      "domain": "azureedge.net",
-      "count": 10
-    },
-    {
       "domain": "poliisi.fi",
       "count": 10
     },
@@ -354,11 +350,11 @@
       "count": 10
     },
     {
-      "domain": "luonnontila.fi",
-      "count": 9
+      "domain": "ymparisto.fi",
+      "count": 10
     },
     {
-      "domain": "webropol.com",
+      "domain": "cloudflare.com",
       "count": 9
     },
     {
@@ -368,15 +364,19 @@
     {
       "domain": "tietosuoja.fi",
       "count": 9
+    },
+    {
+      "domain": "cookiebot.com",
+      "count": 9
     }
   ],
   "relationship_types": {
     "editorial_link": 603,
-    "script_dependency": 112,
-    "font_or_preload_dependency": 22,
-    "stylesheet_dependency": 93,
     "image_or_media_dependency": 75,
+    "script_dependency": 112,
+    "stylesheet_dependency": 93,
+    "font_or_preload_dependency": 22,
     "form_destination": 53
   },
-  "generated_at": "2026-08-10T08:27:47.409509+00:00"
+  "generated_at": "2026-08-11T22:20:44.080754+00:00"
 }

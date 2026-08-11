@@ -148,15 +148,15 @@
       "count": 61
     },
     {
-      "domain": "zm.gov.lv",
-      "count": 60
-    },
-    {
       "domain": "likumi.lv",
       "count": 60
     },
     {
       "domain": "lnmm.gov.lv",
+      "count": 60
+    },
+    {
+      "domain": "zm.gov.lv",
       "count": 60
     },
     {
@@ -176,11 +176,11 @@
       "count": 55
     },
     {
-      "domain": "iub.gov.lv",
+      "domain": "cfla.gov.lv",
       "count": 54
     },
     {
-      "domain": "cfla.gov.lv",
+      "domain": "iub.gov.lv",
       "count": 54
     },
     {
@@ -274,11 +274,11 @@
       "count": 84
     },
     {
-      "domain": "latvija.lv",
+      "domain": "jsdelivr.net",
       "count": 72
     },
     {
-      "domain": "jsdelivr.net",
+      "domain": "latvija.lv",
       "count": 72
     },
     {
@@ -338,7 +338,11 @@
       "count": 44
     },
     {
-      "domain": "ptac.gov.lv",
+      "domain": "caa.gov.lv",
+      "count": 42
+    },
+    {
+      "domain": "csp.gov.lv",
       "count": 42
     },
     {
@@ -346,11 +350,7 @@
       "count": 42
     },
     {
-      "domain": "caa.gov.lv",
-      "count": 42
-    },
-    {
-      "domain": "csp.gov.lv",
+      "domain": "ptac.gov.lv",
       "count": 42
     },
     {
@@ -366,7 +366,7 @@
       "count": 39
     },
     {
-      "domain": "dreamapply.com",
+      "domain": "eveseliba.gov.lv",
       "count": 38
     },
     {
@@ -374,15 +374,15 @@
       "count": 38
     },
     {
-      "domain": "eveseliba.gov.lv",
+      "domain": "dreamapply.com",
       "count": 38
     },
     {
-      "domain": "daba.gov.lv",
+      "domain": "varam.gov.lv",
       "count": 36
     },
     {
-      "domain": "varam.gov.lv",
+      "domain": "daba.gov.lv",
       "count": 36
     },
     {
@@ -394,11 +394,11 @@
       "count": 36
     },
     {
-      "domain": "ldc.gov.lv",
+      "domain": "mod.gov.lv",
       "count": 35
     },
     {
-      "domain": "mod.gov.lv",
+      "domain": "ldc.gov.lv",
       "count": 35
     },
     {
@@ -408,11 +408,11 @@
   ],
   "relationship_types": {
     "editorial_link": 1911,
+    "image_or_media_dependency": 287,
     "script_dependency": 424,
     "stylesheet_dependency": 359,
-    "image_or_media_dependency": 287,
-    "form_destination": 203,
-    "font_or_preload_dependency": 134
+    "font_or_preload_dependency": 134,
+    "form_destination": 203
   },
-  "generated_at": "2026-08-10T08:27:46.522108+00:00"
+  "generated_at": "2026-08-11T22:20:43.153672+00:00"
 }
