@@ -16,9 +16,10 @@ from __future__ import annotations
 
 import asyncio
 import time
-from collections.abc import Callable
+from collections.abc import Callable, Coroutine
 from dataclasses import dataclass
 from datetime import datetime, timezone
+from typing import Any
 
 
 import httpx
@@ -208,13 +209,12 @@ class MultiScanner:
             )
 
         # --- Run all enabled analyses concurrently against the fetched HTML ----
-        tasks: list[asyncio.Future] = []
+        tasks: list[Coroutine[Any, Any, object]] = []
         task_names: list[str] = []
 
         if self.run_accessibility:
             tasks.append(
-                asyncio.get_event_loop().run_in_executor(
-                    None,
+                asyncio.to_thread(
                     self._accessibility.scan_html,
                     url,
                     html,
@@ -225,8 +225,7 @@ class MultiScanner:
 
         if self.run_social_media:
             tasks.append(
-                asyncio.get_event_loop().run_in_executor(
-                    None,
+                asyncio.to_thread(
                     self._social_media.scan_html,
                     url,
                     html,
@@ -237,8 +236,7 @@ class MultiScanner:
 
         if self.run_tech:
             tasks.append(
-                asyncio.get_event_loop().run_in_executor(
-                    None,
+                asyncio.to_thread(
                     self._tech.detect_html,
                     url,
                     html,
@@ -251,8 +249,7 @@ class MultiScanner:
 
         if self.run_third_party_js:
             tasks.append(
-                asyncio.get_event_loop().run_in_executor(
-                    None,
+                asyncio.to_thread(
                     self._third_party_js.scan_html,
                     url,
                     html,
@@ -264,8 +261,7 @@ class MultiScanner:
 
         if self.run_relationships:
             tasks.append(
-                asyncio.get_event_loop().run_in_executor(
-                    None,
+                asyncio.to_thread(
                     self._relationships.scan_html,
                     url,
                     html,
@@ -286,7 +282,7 @@ class MultiScanner:
             "relationships": None,
         }
         for name, sub in zip(task_names, sub_results):
-            if isinstance(sub, Exception):
+            if isinstance(sub, BaseException):
                 # Wrap unexpected exceptions in a minimal error result
                 if name == "accessibility":
                     result_map[name] = AccessibilityScanResult(
