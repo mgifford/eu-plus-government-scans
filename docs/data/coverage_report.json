@@ -74,8 +74,8 @@
   "ITALY": {
     "total_urls": 5351,
     "attempted": 5351,
-    "successful": 4864,
-    "failed": 487,
+    "successful": 4867,
+    "failed": 484,
     "skipped": 0,
     "never_scanned": 0,
     "stale_28d": 0

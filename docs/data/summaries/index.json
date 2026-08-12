@@ -25,7 +25,7 @@
     "file": "denmark.json"
   },
   "CANADA": {
-    "total_relationships": 290976,
+    "total_relationships": 290985,
     "total_source_domains": 8351,
     "file": "canada.json"
   },
@@ -40,7 +40,7 @@
     "file": "latvia.json"
   },
   "ITALY": {
-    "total_relationships": 15853,
+    "total_relationships": 15862,
     "total_source_domains": 151,
     "file": "italy.json"
   },
@@ -60,7 +60,7 @@
     "file": "greece.json"
   },
   "REPUBLIC_OF_CYPRUS": {
-    "total_relationships": 290976,
+    "total_relationships": 290985,
     "total_source_domains": 8351,
     "file": "republic_of_cyprus.json"
   },
@@ -115,7 +115,7 @@
     "file": "czechia.json"
   },
   "UNITED_KINGDOM_UK": {
-    "total_relationships": 290976,
+    "total_relationships": 290985,
     "total_source_domains": 8351,
     "file": "united_kingdom_uk.json"
   },
