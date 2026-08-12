@@ -1880,6 +1880,9 @@ layout: page
         }
 
         const GRAPH_MAX_LINKS = 150;
+        // Above this many matching links the truncated drawing misleads more
+        // than it informs, so the graph is replaced by an explanation.
+        const GRAPH_HONEST_LIMIT = 600;
 
         function renderGraph(focusDomain) {
             const summaryNote = document.getElementById('graph-summary-note');
@@ -1930,6 +1933,35 @@ layout: page
             }
 
             const totalMatched = rels.length;
+
+            // Past this point the 150-link budget is such a small slice that the
+            // drawing stops being a picture of the network. Ranking by
+            // observation count systematically keeps hubs and drops the
+            // periphery, so what survives is not a sample — it is the dense
+            // middle with the edges cut off. Say so instead of drawing it.
+            if (!focusDomain && totalMatched > GRAPH_HONEST_LIMIT) {
+                const shownPct = (GRAPH_MAX_LINKS / totalMatched * 100).toFixed(1);
+                container.innerHTML =
+                    '<div class="graph-too-large">' +
+                    '<p><strong>' + totalMatched.toLocaleString() + ' links match these filters.</strong> ' +
+                    'Drawing the top ' + GRAPH_MAX_LINKS + ' would show ' + shownPct + '% of them, ' +
+                    'and because they are ranked by how often each link was seen, the ones kept ' +
+                    'are the busiest hubs — the result looks like the whole network but is not.</p>' +
+                    '<p>To see real structure here, either:</p>' +
+                    '<ul>' +
+                    '<li>pick a domain from the tables above to see its own connections, or</li>' +
+                    '<li>narrow the relationship type and third-party filters, or</li>' +
+                    '<li>use <a href="dependency-matrix.html">Dependencies by Country</a>, ' +
+                    'which shows every service across every country without truncating.</li>' +
+                    '</ul></div>';
+                summaryNote.textContent = '';
+                document.getElementById('graph-legend').innerHTML = '';
+                announceToScreenReader(
+                    totalMatched.toLocaleString() + ' links match these filters, too many to draw. ' +
+                    'Choose a domain or narrow the filters.');
+                return;
+            }
+
             const topRels = rels.sort((a, b) => b.observations - a.observations).slice(0, GRAPH_MAX_LINKS);
 
             summaryNote.textContent = totalMatched === 0
@@ -1938,7 +1970,7 @@ layout: page
                     ? 'Showing ' + topRels.length + ' direct connection' + (topRels.length === 1 ? '' : 's') + ' for ' + focusDomain + '.' +
                       (totalMatched > topRels.length ? ' (' + (totalMatched - topRels.length) + ' more not shown.)' : '')
                     : totalMatched > topRels.length
-                        ? 'Showing the top ' + topRels.length + ' of ' + totalMatched + ' matching links (ranked by observation count). Narrow the filters above to see the rest.'
+                        ? 'Showing the top ' + topRels.length + ' of ' + totalMatched + ' matching links, ranked by observation count — the busiest links, not a representative sample. Narrow the filters to see the rest.'
                         : 'Showing all ' + topRels.length + ' matching link' + (topRels.length === 1 ? '' : 's') + '.';
 
             const nodeMap = {};
