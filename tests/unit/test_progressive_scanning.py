@@ -702,3 +702,217 @@ class TestSourcePagePersistence:
             loaded = job._load_existing_relationships(shard_dir)
             assert loaded[key].source_pages == set()
             assert loaded[key].observations == 7
+
+
+class TestEdgeExpiry:
+    """A dependency that is dropped has to become visible as a drop.
+
+    Nothing previously removed an edge, so the dataset only grew and a
+    government migrating away from a provider looked identical to no change.
+    """
+
+    @staticmethod
+    def _agg(source="source.gov", target="target.com", pages=("https://source.gov/a",),
+             active=True):
+        from src.jobs.relationship_scanner_job import AggregatedRelationship
+
+        return AggregatedRelationship(
+            source_domain=source,
+            target_domain=target,
+            target_hostname=f"www.{target}",
+            relationship_type="editorial_link",
+            target_category="unknown_external",
+            source_pages=set(pages),
+            observations=1,
+            page_regions={"body"},
+            first_seen="2026-01-01T00:00:00+00:00",
+            last_seen="2026-01-01T00:00:00+00:00",
+            active=active,
+        )
+
+    @staticmethod
+    def _key(agg):
+        return (agg.source_domain, agg.target_domain, agg.target_hostname,
+                agg.relationship_type)
+
+    def _expire(self, existing, confirmed, observed):
+        from src.jobs.relationship_scanner_job import RelationshipScannerJob
+
+        return RelationshipScannerJob._expire_missing_edges(
+            existing, set(confirmed), observed, "2026-06-01T00:00:00+00:00"
+        )
+
+    def test_edge_absent_from_a_rescanned_page_is_retired(self) -> None:
+        agg = self._agg()
+        key = self._key(agg)
+        existing = {key: agg}
+
+        retired = self._expire(existing, {"https://source.gov/a"}, {"https://source.gov/a": set()})
+
+        assert retired == 1
+        assert existing[key].active is False
+        assert existing[key].inactive_since == "2026-06-01T00:00:00+00:00"
+
+    def test_edge_still_served_is_kept(self) -> None:
+        agg = self._agg()
+        key = self._key(agg)
+        existing = {key: agg}
+
+        retired = self._expire(existing, {"https://source.gov/a"},
+                               {"https://source.gov/a": {key}})
+
+        assert retired == 0
+        assert existing[key].active is True
+
+    def test_failed_page_is_not_evidence_of_removal(self) -> None:
+        """Treating an outage as removal would fake a sovereignty win."""
+        agg = self._agg()
+        key = self._key(agg)
+        existing = {key: agg}
+
+        # The page was attempted but not confirmed, so it is absent from both
+        # confirmed_urls and observed_by_url.
+        retired = self._expire(existing, set(), {})
+
+        assert retired == 0
+        assert existing[key].active is True
+
+    def test_edge_survives_while_any_page_still_serves_it(self) -> None:
+        agg = self._agg(pages=("https://source.gov/a", "https://source.gov/b"))
+        key = self._key(agg)
+        existing = {key: agg}
+
+        retired = self._expire(
+            existing,
+            {"https://source.gov/a"},
+            {"https://source.gov/a": set()},
+        )
+
+        assert retired == 0
+        assert existing[key].active is True
+        assert existing[key].source_pages == {"https://source.gov/b"}
+
+    def test_unscanned_pages_do_not_retire_an_edge(self) -> None:
+        """Progressive scanning visits a slice per run; the rest is unknown."""
+        agg = self._agg(pages=("https://source.gov/a",))
+        key = self._key(agg)
+        existing = {key: agg}
+
+        retired = self._expire(existing, {"https://source.gov/other"},
+                               {"https://source.gov/other": set()})
+
+        assert retired == 0
+        assert existing[key].source_pages == {"https://source.gov/a"}
+
+    def test_legacy_edge_without_page_attribution_is_left_alone(self) -> None:
+        """Rows predating source_page_urls cannot be checked, so are not guessed at."""
+        agg = self._agg(pages=())
+        key = self._key(agg)
+        existing = {key: agg}
+
+        retired = self._expire(existing, {"https://source.gov/a"},
+                               {"https://source.gov/a": set()})
+
+        assert retired == 0
+        assert existing[key].active is True
+
+    def test_already_inactive_edge_is_not_retired_twice(self) -> None:
+        agg = self._agg(active=False)
+        agg.inactive_since = "2026-05-01T00:00:00+00:00"
+        key = self._key(agg)
+        existing = {key: agg}
+
+        retired = self._expire(existing, {"https://source.gov/a"},
+                               {"https://source.gov/a": set()})
+
+        assert retired == 0
+        assert existing[key].inactive_since == "2026-05-01T00:00:00+00:00"
+
+    def test_reobserving_a_retired_edge_revives_it(self) -> None:
+        """A provider can be dropped and later readopted."""
+        import tempfile
+        from pathlib import Path
+
+        from src.jobs.relationship_scanner_job import _rel_key
+
+        edge = _make_edge("source.gov", "target.com", "www.target.com", "editorial_link")
+        key = _rel_key(edge)
+        agg = self._agg(target="target.com", active=False)
+        agg.inactive_since = "2026-05-01T00:00:00+00:00"
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            from src.lib.settings import Settings
+            from src.jobs.relationship_scanner_job import RelationshipScannerJob
+
+            db_path = Path(tmpdir) / "test.db"
+            _setup_db(db_path)
+            settings = Settings()
+            settings.metadata_db_url = f"sqlite:///{db_path}"
+            job = RelationshipScannerJob(settings)
+
+            merged = job._merge_new_relationships(
+                {key: agg}, [(edge, "https://source.gov/a")]
+            )
+
+        assert merged[key].active is True
+        assert merged[key].inactive_since is None
+
+    def test_active_flag_round_trips_through_the_dataset(self) -> None:
+        """Liveness must survive the JSONL, or every cycle would resurrect it."""
+        import tempfile
+        from pathlib import Path
+
+        from src.lib.settings import Settings
+        from src.jobs.relationship_scanner_job import RelationshipScannerJob
+
+        agg = self._agg(active=False)
+        agg.inactive_since = "2026-05-01T00:00:00+00:00"
+        key = self._key(agg)
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            db_path = Path(tmpdir) / "test.db"
+            _setup_db(db_path)
+            settings = Settings()
+            settings.metadata_db_url = f"sqlite:///{db_path}"
+            job = RelationshipScannerJob(settings)
+
+            shard_dir = Path(tmpdir) / "relationships"
+            job._write_jsonl({key: agg}, shard_dir)
+            loaded = job._load_existing_relationships(shard_dir)
+
+        assert loaded[key].active is False
+        assert loaded[key].inactive_since == "2026-05-01T00:00:00+00:00"
+
+    def test_rows_predating_the_field_load_as_active(self) -> None:
+        """Existing published data has no `active` key and must not vanish."""
+        import json
+        import tempfile
+        from pathlib import Path
+
+        from src.lib.settings import Settings
+        from src.jobs.relationship_scanner_job import RelationshipScannerJob
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            db_path = Path(tmpdir) / "test.db"
+            _setup_db(db_path)
+            settings = Settings()
+            settings.metadata_db_url = f"sqlite:///{db_path}"
+            job = RelationshipScannerJob(settings)
+
+            shard_dir = Path(tmpdir) / "relationships"
+            shard_dir.mkdir(parents=True)
+            (shard_dir / "gov.001.jsonl").write_text(
+                json.dumps({
+                    "source_domain": "source.gov", "target_domain": "target.com",
+                    "target_hostname": "www.target.com",
+                    "relationship_type": "editorial_link",
+                    "target_category": "unknown_external",
+                    "source_pages": 1, "observations": 1, "page_regions": ["body"],
+                    "first_seen": "2026-01-01T00:00:00+00:00",
+                    "last_seen": "2026-01-01T00:00:00+00:00",
+                }) + "\n",
+                encoding="utf-8",
+            )
+            loaded = job._load_existing_relationships(shard_dir)
+
+        assert all(a.active is True for a in loaded.values())
