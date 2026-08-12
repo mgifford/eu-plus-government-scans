@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-08-12 02:46 UTC_
+_Generated: 2026-08-12 03:07 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -13,11 +13,11 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
-| **Combined Reachability** | **1,244 confirmed reachable** | 87,696 | **<span role="img" aria-label="1.4% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:2px;"></span></span><span class="sm-bar__label">1.4%</span></span>** | — |
-| Social Media | 1,322 scanned (1,244 reachable) | 87,696 | <span role="img" aria-label="1.5% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:2px;"></span></span><span class="sm-bar__label">1.5%</span></span> | 4 h |
+| **Combined Reachability** | **2,681 confirmed reachable** | 87,696 | **<span role="img" aria-label="3.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:4px;"></span></span><span class="sm-bar__label">3.1%</span></span>** | — |
+| Social Media | 2,855 scanned (2,681 reachable) | 87,696 | <span role="img" aria-label="3.3% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:4px;"></span></span><span class="sm-bar__label">3.3%</span></span> | 2 h |
 | Technology | 3,897 scanned | 87,696 | <span role="img" aria-label="4.4% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:5px;"></span></span><span class="sm-bar__label">4.4%</span></span> | 2 h |
-| Lighthouse | 11,807 scanned | 87,696 | <span role="img" aria-label="13.5% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:16px;"></span></span><span class="sm-bar__label">13.5%</span></span> | 13.3 days |
-| Accessibility Statements | 3,644 scanned | 87,696 | <span role="img" aria-label="4.2% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:5px;"></span></span><span class="sm-bar__label">4.2%</span></span> | 4 h |
+| Lighthouse | 11,824 scanned | 87,696 | <span role="img" aria-label="13.5% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:16px;"></span></span><span class="sm-bar__label">13.5%</span></span> | 13.2 days |
+| Accessibility Statements | 3,644 scanned | 87,696 | <span role="img" aria-label="4.2% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:5px;"></span></span><span class="sm-bar__label">4.2%</span></span> | 5 h |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by any scan type. **Avg Age** shows the mean number of days (or hours) since each URL in that scan type was last scanned — lower is fresher.
 
@@ -27,6 +27,8 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 |---------|---------|-----------|-----------|-------------|--------|-------|-----------|---------|---|---------|----------|-------------|
 | Austria | 822 | 822 | 784 | 312 | 2 | 47 | 423 | 32 | 20 | 16 | 44 | Aug 2026 |
 | Belgium | 500 | 1,329 | 460 | 147 | 2 | 34 | 277 | 53 | 37 | 4 | 32 | Aug 2026 |
+| Bulgaria | 353 | 353 | 304 | 77 | 1 | 18 | 208 | 20 | 6 | 0 | 19 | Aug 2026 |
+| Canada | 1,180 | 4,469 | 1,133 | 309 | 0 | 34 | 790 | 91 | 12 | 10 | 30 | Aug 2026 |
 
 > **Tier columns** (Twitter-only / Modern / Mixed / No Social) classify each page by its overall social media presence. **Platform columns** (Twitter / X / Bluesky / Mastodon) count pages with at least one link to that platform — a page may appear in more than one platform column.
 
@@ -68,7 +70,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Netherlands | 804 | 92 | 94 | 94 | 87 | 2026-08-11 |
 | Norway | 247 | 90 | 93 | 92 | 89 | 2026-07-21 |
 | Poland | 318 | 89 | 82 | 88 | 90 | 2026-08-11 |
-| Portugal | 74 | 92 | 80 | 73 | 91 | 2026-08-07 |
+| Portugal | 91 | 89 | 81 | 74 | 92 | 2026-08-12 |
 | Cyprus | 27 | 81 | 86 | 84 | 86 | 2026-07-21 |
 | Romania | 32 | 83 | 74 | 86 | 80 | 2026-07-26 |
 | Slovakia | 291 | 91 | 87 | 91 | 88 | 2026-07-22 |
@@ -99,7 +101,7 @@ Checks whether each government page links to an accessibility statement as requi
 
 These countries have social media scan data but no URL validation data (URL validation may have been skipped because the social scan already confirmed reachability):
 
-`AUSTRIA`, `BELGIUM`
+`AUSTRIA`, `BELGIUM`, `BULGARIA`, `CANADA`
 
 ## Scan Priority Guide
 
