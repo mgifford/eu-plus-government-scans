@@ -1354,3 +1354,22 @@ html[data-theme="dark"] {
     color: CanvasText;
   }
 }
+
+/* Shown in place of the network graph when the filtered link count is so far
+   above the drawing budget that a truncated render would misrepresent the
+   data.  See GRAPH_HONEST_LIMIT in network.html. */
+.graph-too-large {
+  color: var(--color-text);
+  margin: 0 auto;
+  max-width: 46rem;
+  padding: 2rem 1rem;
+}
+
+.graph-too-large ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.graph-too-large li {
+  margin-bottom: 0.35rem;
+}
