@@ -3,7 +3,7 @@ title: Scanner Cycle Pace Report
 layout: page
 ---
 
-_Generated: 2026-08-11 23:54 UTC_
+_Generated: 2026-08-12 02:44 UTC_
 
 Whether each scanner is on pace to complete its target cycle (30 days for most
 scanners, 60 days for Lighthouse and Relationships), based on distinct URLs scanned
