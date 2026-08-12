@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-08-12 14:50 UTC_
+_Generated: 2026-08-12 15:14 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -14,7 +14,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
 | **Combined Reachability** | **5,135 confirmed reachable** | 87,696 | **<span role="img" aria-label="5.9% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:7px;"></span></span><span class="sm-bar__label">5.9%</span></span>** | — |
-| Social Media | 3,978 scanned (3,727 reachable) | 87,696 | <span role="img" aria-label="4.5% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:5px;"></span></span><span class="sm-bar__label">4.5%</span></span> | 11 h |
+| Social Media | 3,978 scanned (3,727 reachable) | 87,696 | <span role="img" aria-label="4.5% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:5px;"></span></span><span class="sm-bar__label">4.5%</span></span> | 12 h |
 | Technology | 5,234 scanned | 87,696 | <span role="img" aria-label="6.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:7px;"></span></span><span class="sm-bar__label">6.0%</span></span> | 12 h |
 | Lighthouse | 11,890 scanned | 87,696 | <span role="img" aria-label="13.6% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:16px;"></span></span><span class="sm-bar__label">13.6%</span></span> | 13.5 days |
 | Accessibility Statements | 8,905 scanned | 87,696 | <span role="img" aria-label="10.2% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:12px;"></span></span><span class="sm-bar__label">10.2%</span></span> | 11 h |
