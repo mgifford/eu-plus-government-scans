@@ -1,0 +1,5396 @@
+{
+  "generated_at": "2026-08-12T17:53:17.923363+00:00",
+  "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
+  "dependency_types": [
+    "font_or_preload_dependency",
+    "image_or_media_dependency",
+    "script_dependency",
+    "stylesheet_dependency"
+  ],
+  "countries": [
+    {
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_domains": 2720
+    },
+    {
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_domains": 2284
+    },
+    {
+      "country_code": "FRANCE",
+      "country": "France",
+      "scanned_domains": 640
+    },
+    {
+      "country_code": "PORTUGAL",
+      "country": "Portugal",
+      "scanned_domains": 383
+    },
+    {
+      "country_code": "GREECE",
+      "country": "Greece",
+      "scanned_domains": 360
+    },
+    {
+      "country_code": "SPAIN",
+      "country": "Spain",
+      "scanned_domains": 237
+    },
+    {
+      "country_code": "GERMANY",
+      "country": "Germany",
+      "scanned_domains": 214
+    },
+    {
+      "country_code": "SWEDEN",
+      "country": "Sweden",
+      "scanned_domains": 183
+    },
+    {
+      "country_code": "ITALY",
+      "country": "Italy",
+      "scanned_domains": 146
+    },
+    {
+      "country_code": "LATVIA",
+      "country": "Latvia",
+      "scanned_domains": 141
+    },
+    {
+      "country_code": "CANADA",
+      "country": "Canada",
+      "scanned_domains": 113
+    },
+    {
+      "country_code": "IRELAND",
+      "country": "Ireland",
+      "scanned_domains": 103
+    },
+    {
+      "country_code": "DENMARK",
+      "country": "Denmark",
+      "scanned_domains": 79
+    },
+    {
+      "country_code": "NETHERLANDS",
+      "country": "Netherlands",
+      "scanned_domains": 69
+    },
+    {
+      "country_code": "BULGARIA",
+      "country": "Bulgaria",
+      "scanned_domains": 55
+    },
+    {
+      "country_code": "BELGIUM",
+      "country": "Belgium",
+      "scanned_domains": 43
+    },
+    {
+      "country_code": "FINLAND",
+      "country": "Finland",
+      "scanned_domains": 41
+    },
+    {
+      "country_code": "LUXEMBOURG",
+      "country": "Luxembourg",
+      "scanned_domains": 40
+    },
+    {
+      "country_code": "AUSTRIA",
+      "country": "Austria",
+      "scanned_domains": 34
+    },
+    {
+      "country_code": "NORWAY",
+      "country": "Norway",
+      "scanned_domains": 34
+    },
+    {
+      "country_code": "CZECHIA",
+      "country": "Czechia",
+      "scanned_domains": 32
+    },
+    {
+      "country_code": "CROATIA",
+      "country": "Croatia",
+      "scanned_domains": 31
+    },
+    {
+      "country_code": "ESTONIA",
+      "country": "Estonia",
+      "scanned_domains": 31
+    },
+    {
+      "country_code": "HUNGARY",
+      "country": "Hungary",
+      "scanned_domains": 27
+    },
+    {
+      "country_code": "SLOVAKIA",
+      "country": "Slovakia",
+      "scanned_domains": 20
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "scanned_domains": 19
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "scanned_domains": 16
+    },
+    {
+      "country_code": "SLOVENIA",
+      "country": "Slovenia",
+      "scanned_domains": 16
+    },
+    {
+      "country_code": "LITHUANIA",
+      "country": "Lithuania",
+      "scanned_domains": 15
+    },
+    {
+      "country_code": "SWITZERLAND",
+      "country": "Switzerland",
+      "scanned_domains": 9
+    },
+    {
+      "country_code": "REPUBLIC_OF_CYPRUS",
+      "country": "Cyprus",
+      "scanned_domains": 5
+    },
+    {
+      "country_code": "MALTA",
+      "country": "Malta",
+      "scanned_domains": 3
+    }
+  ],
+  "services": [
+    {
+      "service": "googleapis.com",
+      "countries": 32,
+      "domains": 3916
+    },
+    {
+      "service": "googletagmanager.com",
+      "countries": 32,
+      "domains": 2508
+    },
+    {
+      "service": "jsdelivr.net",
+      "countries": 32,
+      "domains": 1049
+    },
+    {
+      "service": "fontawesome.com",
+      "countries": 32,
+      "domains": 757
+    },
+    {
+      "service": "google.com",
+      "countries": 31,
+      "domains": 1890
+    },
+    {
+      "service": "gstatic.com",
+      "countries": 31,
+      "domains": 1548
+    },
+    {
+      "service": "cloudflare.com",
+      "countries": 31,
+      "domains": 1413
+    },
+    {
+      "service": "jquery.com",
+      "countries": 30,
+      "domains": 602
+    },
+    {
+      "service": "unpkg.com",
+      "countries": 29,
+      "domains": 618
+    },
+    {
+      "service": "bootstrapcdn.com",
+      "countries": 28,
+      "domains": 563
+    },
+    {
+      "service": "typekit.net",
+      "countries": 26,
+      "domains": 254
+    },
+    {
+      "service": "facebook.com",
+      "countries": 23,
+      "domains": 203
+    },
+    {
+      "service": "cookiebot.com",
+      "countries": 23,
+      "domains": 170
+    },
+    {
+      "service": "amazonaws.com",
+      "countries": 22,
+      "domains": 217
+    },
+    {
+      "service": "facebook.net",
+      "countries": 21,
+      "domains": 176
+    },
+    {
+      "service": "addtoany.com",
+      "countries": 20,
+      "domains": 159
+    },
+    {
+      "service": "arcgis.com",
+      "countries": 20,
+      "domains": 79
+    },
+    {
+      "service": "fbcdn.net",
+      "countries": 18,
+      "domains": 95
+    },
+    {
+      "service": "mapbox.com",
+      "countries": 18,
+      "domains": 82
+    },
+    {
+      "service": "cloudfront.net",
+      "countries": 17,
+      "domains": 350
+    }
+  ],
+  "cells": [
+    {
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "service": "googleapis.com",
+      "domains": 1186,
+      "scanned_domains": 2720,
+      "percent": 43.6
+    },
+    {
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "service": "googletagmanager.com",
+      "domains": 1097,
+      "scanned_domains": 2720,
+      "percent": 40.3
+    },
+    {
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "service": "jsdelivr.net",
+      "domains": 367,
+      "scanned_domains": 2720,
+      "percent": 13.5
+    },
+    {
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "service": "fontawesome.com",
+      "domains": 347,
+      "scanned_domains": 2720,
+      "percent": 12.8
+    },
+    {
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "service": "google.com",
+      "domains": 968,
+      "scanned_domains": 2720,
+      "percent": 35.6
+    },
+    {
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "service": "gstatic.com",
+      "domains": 488,
+      "scanned_domains": 2720,
+      "percent": 17.9
+    },
+    {
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "service": "cloudflare.com",
+      "domains": 632,
+      "scanned_domains": 2720,
+      "percent": 23.2
+    },
+    {
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "service": "jquery.com",
+      "domains": 169,
+      "scanned_domains": 2720,
+      "percent": 6.2
+    },
+    {
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "service": "unpkg.com",
+      "domains": 292,
+      "scanned_domains": 2720,
+      "percent": 10.7
+    },
+    {
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "service": "bootstrapcdn.com",
+      "domains": 141,
+      "scanned_domains": 2720,
+      "percent": 5.2
+    },
+    {
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "service": "typekit.net",
+      "domains": 128,
+      "scanned_domains": 2720,
+      "percent": 4.7
+    },
+    {
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "service": "facebook.com",
+      "domains": 22,
+      "scanned_domains": 2720,
+      "percent": 0.8
+    },
+    {
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "service": "cookiebot.com",
+      "domains": 51,
+      "scanned_domains": 2720,
+      "percent": 1.9
+    },
+    {
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "service": "amazonaws.com",
+      "domains": 132,
+      "scanned_domains": 2720,
+      "percent": 4.9
+    },
+    {
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "service": "facebook.net",
+      "domains": 49,
+      "scanned_domains": 2720,
+      "percent": 1.8
+    },
+    {
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "service": "addtoany.com",
+      "domains": 30,
+      "scanned_domains": 2720,
+      "percent": 1.1
+    },
+    {
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "service": "arcgis.com",
+      "domains": 25,
+      "scanned_domains": 2720,
+      "percent": 0.9
+    },
+    {
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "service": "fbcdn.net",
+      "domains": 16,
+      "scanned_domains": 2720,
+      "percent": 0.6
+    },
+    {
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "service": "mapbox.com",
+      "domains": 39,
+      "scanned_domains": 2720,
+      "percent": 1.4
+    },
+    {
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "service": "cloudfront.net",
+      "domains": 281,
+      "scanned_domains": 2720,
+      "percent": 10.3
+    },
+    {
+      "country_code": "POLAND",
+      "country": "Poland",
+      "service": "googleapis.com",
+      "domains": 1378,
+      "scanned_domains": 2284,
+      "percent": 60.3
+    },
+    {
+      "country_code": "POLAND",
+      "country": "Poland",
+      "service": "googletagmanager.com",
+      "domains": 617,
+      "scanned_domains": 2284,
+      "percent": 27.0
+    },
+    {
+      "country_code": "POLAND",
+      "country": "Poland",
+      "service": "jsdelivr.net",
+      "domains": 165,
+      "scanned_domains": 2284,
+      "percent": 7.2
+    },
+    {
+      "country_code": "POLAND",
+      "country": "Poland",
+      "service": "fontawesome.com",
+      "domains": 121,
+      "scanned_domains": 2284,
+      "percent": 5.3
+    },
+    {
+      "country_code": "POLAND",
+      "country": "Poland",
+      "service": "google.com",
+      "domains": 356,
+      "scanned_domains": 2284,
+      "percent": 15.6
+    },
+    {
+      "country_code": "POLAND",
+      "country": "Poland",
+      "service": "gstatic.com",
+      "domains": 464,
+      "scanned_domains": 2284,
+      "percent": 20.3
+    },
+    {
+      "country_code": "POLAND",
+      "country": "Poland",
+      "service": "cloudflare.com",
+      "domains": 225,
+      "scanned_domains": 2284,
+      "percent": 9.9
+    },
+    {
+      "country_code": "POLAND",
+      "country": "Poland",
+      "service": "jquery.com",
+      "domains": 128,
+      "scanned_domains": 2284,
+      "percent": 5.6
+    },
+    {
+      "country_code": "POLAND",
+      "country": "Poland",
+      "service": "unpkg.com",
+      "domains": 60,
+      "scanned_domains": 2284,
+      "percent": 2.6
+    },
+    {
+      "country_code": "POLAND",
+      "country": "Poland",
+      "service": "bootstrapcdn.com",
+      "domains": 153,
+      "scanned_domains": 2284,
+      "percent": 6.7
+    },
+    {
+      "country_code": "POLAND",
+      "country": "Poland",
+      "service": "typekit.net",
+      "domains": 29,
+      "scanned_domains": 2284,
+      "percent": 1.3
+    },
+    {
+      "country_code": "POLAND",
+      "country": "Poland",
+      "service": "facebook.com",
+      "domains": 109,
+      "scanned_domains": 2284,
+      "percent": 4.8
+    },
+    {
+      "country_code": "POLAND",
+      "country": "Poland",
+      "service": "cookiebot.com",
+      "domains": 27,
+      "scanned_domains": 2284,
+      "percent": 1.2
+    },
+    {
+      "country_code": "POLAND",
+      "country": "Poland",
+      "service": "amazonaws.com",
+      "domains": 6,
+      "scanned_domains": 2284,
+      "percent": 0.3
+    },
+    {
+      "country_code": "POLAND",
+      "country": "Poland",
+      "service": "facebook.net",
+      "domains": 67,
+      "scanned_domains": 2284,
+      "percent": 2.9
+    },
+    {
+      "country_code": "POLAND",
+      "country": "Poland",
+      "service": "addtoany.com",
+      "domains": 22,
+      "scanned_domains": 2284,
+      "percent": 1.0
+    },
+    {
+      "country_code": "POLAND",
+      "country": "Poland",
+      "service": "arcgis.com",
+      "domains": 2,
+      "scanned_domains": 2284,
+      "percent": 0.1
+    },
+    {
+      "country_code": "POLAND",
+      "country": "Poland",
+      "service": "fbcdn.net",
+      "domains": 46,
+      "scanned_domains": 2284,
+      "percent": 2.0
+    },
+    {
+      "country_code": "POLAND",
+      "country": "Poland",
+      "service": "mapbox.com",
+      "domains": 11,
+      "scanned_domains": 2284,
+      "percent": 0.5
+    },
+    {
+      "country_code": "POLAND",
+      "country": "Poland",
+      "service": "cloudfront.net",
+      "domains": 27,
+      "scanned_domains": 2284,
+      "percent": 1.2
+    },
+    {
+      "country_code": "FRANCE",
+      "country": "France",
+      "service": "googleapis.com",
+      "domains": 230,
+      "scanned_domains": 640,
+      "percent": 35.9
+    },
+    {
+      "country_code": "FRANCE",
+      "country": "France",
+      "service": "googletagmanager.com",
+      "domains": 91,
+      "scanned_domains": 640,
+      "percent": 14.2
+    },
+    {
+      "country_code": "FRANCE",
+      "country": "France",
+      "service": "jsdelivr.net",
+      "domains": 91,
+      "scanned_domains": 640,
+      "percent": 14.2
+    },
+    {
+      "country_code": "FRANCE",
+      "country": "France",
+      "service": "fontawesome.com",
+      "domains": 61,
+      "scanned_domains": 640,
+      "percent": 9.5
+    },
+    {
+      "country_code": "FRANCE",
+      "country": "France",
+      "service": "google.com",
+      "domains": 92,
+      "scanned_domains": 640,
+      "percent": 14.4
+    },
+    {
+      "country_code": "FRANCE",
+      "country": "France",
+      "service": "gstatic.com",
+      "domains": 114,
+      "scanned_domains": 640,
+      "percent": 17.8
+    },
+    {
+      "country_code": "FRANCE",
+      "country": "France",
+      "service": "cloudflare.com",
+      "domains": 112,
+      "scanned_domains": 640,
+      "percent": 17.5
+    },
+    {
+      "country_code": "FRANCE",
+      "country": "France",
+      "service": "jquery.com",
+      "domains": 47,
+      "scanned_domains": 640,
+      "percent": 7.3
+    },
+    {
+      "country_code": "FRANCE",
+      "country": "France",
+      "service": "unpkg.com",
+      "domains": 70,
+      "scanned_domains": 640,
+      "percent": 10.9
+    },
+    {
+      "country_code": "FRANCE",
+      "country": "France",
+      "service": "bootstrapcdn.com",
+      "domains": 71,
+      "scanned_domains": 640,
+      "percent": 11.1
+    },
+    {
+      "country_code": "FRANCE",
+      "country": "France",
+      "service": "typekit.net",
+      "domains": 29,
+      "scanned_domains": 640,
+      "percent": 4.5
+    },
+    {
+      "country_code": "FRANCE",
+      "country": "France",
+      "service": "facebook.com",
+      "domains": 8,
+      "scanned_domains": 640,
+      "percent": 1.2
+    },
+    {
+      "country_code": "FRANCE",
+      "country": "France",
+      "service": "cookiebot.com",
+      "domains": 4,
+      "scanned_domains": 640,
+      "percent": 0.6
+    },
+    {
+      "country_code": "FRANCE",
+      "country": "France",
+      "service": "amazonaws.com",
+      "domains": 12,
+      "scanned_domains": 640,
+      "percent": 1.9
+    },
+    {
+      "country_code": "FRANCE",
+      "country": "France",
+      "service": "facebook.net",
+      "domains": 10,
+      "scanned_domains": 640,
+      "percent": 1.6
+    },
+    {
+      "country_code": "FRANCE",
+      "country": "France",
+      "service": "addtoany.com",
+      "domains": 29,
+      "scanned_domains": 640,
+      "percent": 4.5
+    },
+    {
+      "country_code": "FRANCE",
+      "country": "France",
+      "service": "arcgis.com",
+      "domains": 5,
+      "scanned_domains": 640,
+      "percent": 0.8
+    },
+    {
+      "country_code": "FRANCE",
+      "country": "France",
+      "service": "fbcdn.net",
+      "domains": 14,
+      "scanned_domains": 640,
+      "percent": 2.2
+    },
+    {
+      "country_code": "FRANCE",
+      "country": "France",
+      "service": "mapbox.com",
+      "domains": 8,
+      "scanned_domains": 640,
+      "percent": 1.2
+    },
+    {
+      "country_code": "FRANCE",
+      "country": "France",
+      "service": "cloudfront.net",
+      "domains": 12,
+      "scanned_domains": 640,
+      "percent": 1.9
+    },
+    {
+      "country_code": "PORTUGAL",
+      "country": "Portugal",
+      "service": "googleapis.com",
+      "domains": 224,
+      "scanned_domains": 383,
+      "percent": 58.5
+    },
+    {
+      "country_code": "PORTUGAL",
+      "country": "Portugal",
+      "service": "googletagmanager.com",
+      "domains": 193,
+      "scanned_domains": 383,
+      "percent": 50.4
+    },
+    {
+      "country_code": "PORTUGAL",
+      "country": "Portugal",
+      "service": "jsdelivr.net",
+      "domains": 69,
+      "scanned_domains": 383,
+      "percent": 18.0
+    },
+    {
+      "country_code": "PORTUGAL",
+      "country": "Portugal",
+      "service": "fontawesome.com",
+      "domains": 43,
+      "scanned_domains": 383,
+      "percent": 11.2
+    },
+    {
+      "country_code": "PORTUGAL",
+      "country": "Portugal",
+      "service": "google.com",
+      "domains": 143,
+      "scanned_domains": 383,
+      "percent": 37.3
+    },
+    {
+      "country_code": "PORTUGAL",
+      "country": "Portugal",
+      "service": "gstatic.com",
+      "domains": 87,
+      "scanned_domains": 383,
+      "percent": 22.7
+    },
+    {
+      "country_code": "PORTUGAL",
+      "country": "Portugal",
+      "service": "cloudflare.com",
+      "domains": 73,
+      "scanned_domains": 383,
+      "percent": 19.1
+    },
+    {
+      "country_code": "PORTUGAL",
+      "country": "Portugal",
+      "service": "jquery.com",
+      "domains": 42,
+      "scanned_domains": 383,
+      "percent": 11.0
+    },
+    {
+      "country_code": "PORTUGAL",
+      "country": "Portugal",
+      "service": "unpkg.com",
+      "domains": 51,
+      "scanned_domains": 383,
+      "percent": 13.3
+    },
+    {
+      "country_code": "PORTUGAL",
+      "country": "Portugal",
+      "service": "bootstrapcdn.com",
+      "domains": 30,
+      "scanned_domains": 383,
+      "percent": 7.8
+    },
+    {
+      "country_code": "PORTUGAL",
+      "country": "Portugal",
+      "service": "typekit.net",
+      "domains": 8,
+      "scanned_domains": 383,
+      "percent": 2.1
+    },
+    {
+      "country_code": "PORTUGAL",
+      "country": "Portugal",
+      "service": "facebook.com",
+      "domains": 7,
+      "scanned_domains": 383,
+      "percent": 1.8
+    },
+    {
+      "country_code": "PORTUGAL",
+      "country": "Portugal",
+      "service": "cookiebot.com",
+      "domains": 3,
+      "scanned_domains": 383,
+      "percent": 0.8
+    },
+    {
+      "country_code": "PORTUGAL",
+      "country": "Portugal",
+      "service": "amazonaws.com",
+      "domains": 9,
+      "scanned_domains": 383,
+      "percent": 2.3
+    },
+    {
+      "country_code": "PORTUGAL",
+      "country": "Portugal",
+      "service": "facebook.net",
+      "domains": 4,
+      "scanned_domains": 383,
+      "percent": 1.0
+    },
+    {
+      "country_code": "PORTUGAL",
+      "country": "Portugal",
+      "service": "addtoany.com",
+      "domains": 9,
+      "scanned_domains": 383,
+      "percent": 2.3
+    },
+    {
+      "country_code": "PORTUGAL",
+      "country": "Portugal",
+      "service": "arcgis.com",
+      "domains": 3,
+      "scanned_domains": 383,
+      "percent": 0.8
+    },
+    {
+      "country_code": "PORTUGAL",
+      "country": "Portugal",
+      "service": "fbcdn.net",
+      "domains": 2,
+      "scanned_domains": 383,
+      "percent": 0.5
+    },
+    {
+      "country_code": "PORTUGAL",
+      "country": "Portugal",
+      "service": "mapbox.com",
+      "domains": 5,
+      "scanned_domains": 383,
+      "percent": 1.3
+    },
+    {
+      "country_code": "PORTUGAL",
+      "country": "Portugal",
+      "service": "cloudfront.net",
+      "domains": 0,
+      "scanned_domains": 383,
+      "percent": 0.0
+    },
+    {
+      "country_code": "GREECE",
+      "country": "Greece",
+      "service": "googleapis.com",
+      "domains": 240,
+      "scanned_domains": 360,
+      "percent": 66.7
+    },
+    {
+      "country_code": "GREECE",
+      "country": "Greece",
+      "service": "googletagmanager.com",
+      "domains": 129,
+      "scanned_domains": 360,
+      "percent": 35.8
+    },
+    {
+      "country_code": "GREECE",
+      "country": "Greece",
+      "service": "jsdelivr.net",
+      "domains": 59,
+      "scanned_domains": 360,
+      "percent": 16.4
+    },
+    {
+      "country_code": "GREECE",
+      "country": "Greece",
+      "service": "fontawesome.com",
+      "domains": 24,
+      "scanned_domains": 360,
+      "percent": 6.7
+    },
+    {
+      "country_code": "GREECE",
+      "country": "Greece",
+      "service": "google.com",
+      "domains": 60,
+      "scanned_domains": 360,
+      "percent": 16.7
+    },
+    {
+      "country_code": "GREECE",
+      "country": "Greece",
+      "service": "gstatic.com",
+      "domains": 103,
+      "scanned_domains": 360,
+      "percent": 28.6
+    },
+    {
+      "country_code": "GREECE",
+      "country": "Greece",
+      "service": "cloudflare.com",
+      "domains": 59,
+      "scanned_domains": 360,
+      "percent": 16.4
+    },
+    {
+      "country_code": "GREECE",
+      "country": "Greece",
+      "service": "jquery.com",
+      "domains": 26,
+      "scanned_domains": 360,
+      "percent": 7.2
+    },
+    {
+      "country_code": "GREECE",
+      "country": "Greece",
+      "service": "unpkg.com",
+      "domains": 24,
+      "scanned_domains": 360,
+      "percent": 6.7
+    },
+    {
+      "country_code": "GREECE",
+      "country": "Greece",
+      "service": "bootstrapcdn.com",
+      "domains": 24,
+      "scanned_domains": 360,
+      "percent": 6.7
+    },
+    {
+      "country_code": "GREECE",
+      "country": "Greece",
+      "service": "typekit.net",
+      "domains": 2,
+      "scanned_domains": 360,
+      "percent": 0.6
+    },
+    {
+      "country_code": "GREECE",
+      "country": "Greece",
+      "service": "facebook.com",
+      "domains": 4,
+      "scanned_domains": 360,
+      "percent": 1.1
+    },
+    {
+      "country_code": "GREECE",
+      "country": "Greece",
+      "service": "cookiebot.com",
+      "domains": 1,
+      "scanned_domains": 360,
+      "percent": 0.3
+    },
+    {
+      "country_code": "GREECE",
+      "country": "Greece",
+      "service": "amazonaws.com",
+      "domains": 1,
+      "scanned_domains": 360,
+      "percent": 0.3
+    },
+    {
+      "country_code": "GREECE",
+      "country": "Greece",
+      "service": "facebook.net",
+      "domains": 9,
+      "scanned_domains": 360,
+      "percent": 2.5
+    },
+    {
+      "country_code": "GREECE",
+      "country": "Greece",
+      "service": "addtoany.com",
+      "domains": 10,
+      "scanned_domains": 360,
+      "percent": 2.8
+    },
+    {
+      "country_code": "GREECE",
+      "country": "Greece",
+      "service": "arcgis.com",
+      "domains": 1,
+      "scanned_domains": 360,
+      "percent": 0.3
+    },
+    {
+      "country_code": "GREECE",
+      "country": "Greece",
+      "service": "fbcdn.net",
+      "domains": 2,
+      "scanned_domains": 360,
+      "percent": 0.6
+    },
+    {
+      "country_code": "GREECE",
+      "country": "Greece",
+      "service": "mapbox.com",
+      "domains": 0,
+      "scanned_domains": 360,
+      "percent": 0.0
+    },
+    {
+      "country_code": "GREECE",
+      "country": "Greece",
+      "service": "cloudfront.net",
+      "domains": 2,
+      "scanned_domains": 360,
+      "percent": 0.6
+    },
+    {
+      "country_code": "SPAIN",
+      "country": "Spain",
+      "service": "googleapis.com",
+      "domains": 100,
+      "scanned_domains": 237,
+      "percent": 42.2
+    },
+    {
+      "country_code": "SPAIN",
+      "country": "Spain",
+      "service": "googletagmanager.com",
+      "domains": 86,
+      "scanned_domains": 237,
+      "percent": 36.3
+    },
+    {
+      "country_code": "SPAIN",
+      "country": "Spain",
+      "service": "jsdelivr.net",
+      "domains": 53,
+      "scanned_domains": 237,
+      "percent": 22.4
+    },
+    {
+      "country_code": "SPAIN",
+      "country": "Spain",
+      "service": "fontawesome.com",
+      "domains": 31,
+      "scanned_domains": 237,
+      "percent": 13.1
+    },
+    {
+      "country_code": "SPAIN",
+      "country": "Spain",
+      "service": "google.com",
+      "domains": 42,
+      "scanned_domains": 237,
+      "percent": 17.7
+    },
+    {
+      "country_code": "SPAIN",
+      "country": "Spain",
+      "service": "gstatic.com",
+      "domains": 53,
+      "scanned_domains": 237,
+      "percent": 22.4
+    },
+    {
+      "country_code": "SPAIN",
+      "country": "Spain",
+      "service": "cloudflare.com",
+      "domains": 58,
+      "scanned_domains": 237,
+      "percent": 24.5
+    },
+    {
+      "country_code": "SPAIN",
+      "country": "Spain",
+      "service": "jquery.com",
+      "domains": 25,
+      "scanned_domains": 237,
+      "percent": 10.5
+    },
+    {
+      "country_code": "SPAIN",
+      "country": "Spain",
+      "service": "unpkg.com",
+      "domains": 22,
+      "scanned_domains": 237,
+      "percent": 9.3
+    },
+    {
+      "country_code": "SPAIN",
+      "country": "Spain",
+      "service": "bootstrapcdn.com",
+      "domains": 25,
+      "scanned_domains": 237,
+      "percent": 10.5
+    },
+    {
+      "country_code": "SPAIN",
+      "country": "Spain",
+      "service": "typekit.net",
+      "domains": 1,
+      "scanned_domains": 237,
+      "percent": 0.4
+    },
+    {
+      "country_code": "SPAIN",
+      "country": "Spain",
+      "service": "facebook.com",
+      "domains": 10,
+      "scanned_domains": 237,
+      "percent": 4.2
+    },
+    {
+      "country_code": "SPAIN",
+      "country": "Spain",
+      "service": "cookiebot.com",
+      "domains": 1,
+      "scanned_domains": 237,
+      "percent": 0.4
+    },
+    {
+      "country_code": "SPAIN",
+      "country": "Spain",
+      "service": "amazonaws.com",
+      "domains": 4,
+      "scanned_domains": 237,
+      "percent": 1.7
+    },
+    {
+      "country_code": "SPAIN",
+      "country": "Spain",
+      "service": "facebook.net",
+      "domains": 9,
+      "scanned_domains": 237,
+      "percent": 3.8
+    },
+    {
+      "country_code": "SPAIN",
+      "country": "Spain",
+      "service": "addtoany.com",
+      "domains": 19,
+      "scanned_domains": 237,
+      "percent": 8.0
+    },
+    {
+      "country_code": "SPAIN",
+      "country": "Spain",
+      "service": "arcgis.com",
+      "domains": 4,
+      "scanned_domains": 237,
+      "percent": 1.7
+    },
+    {
+      "country_code": "SPAIN",
+      "country": "Spain",
+      "service": "fbcdn.net",
+      "domains": 2,
+      "scanned_domains": 237,
+      "percent": 0.8
+    },
+    {
+      "country_code": "SPAIN",
+      "country": "Spain",
+      "service": "mapbox.com",
+      "domains": 3,
+      "scanned_domains": 237,
+      "percent": 1.3
+    },
+    {
+      "country_code": "SPAIN",
+      "country": "Spain",
+      "service": "cloudfront.net",
+      "domains": 4,
+      "scanned_domains": 237,
+      "percent": 1.7
+    },
+    {
+      "country_code": "GERMANY",
+      "country": "Germany",
+      "service": "googleapis.com",
+      "domains": 17,
+      "scanned_domains": 214,
+      "percent": 7.9
+    },
+    {
+      "country_code": "GERMANY",
+      "country": "Germany",
+      "service": "googletagmanager.com",
+      "domains": 7,
+      "scanned_domains": 214,
+      "percent": 3.3
+    },
+    {
+      "country_code": "GERMANY",
+      "country": "Germany",
+      "service": "jsdelivr.net",
+      "domains": 17,
+      "scanned_domains": 214,
+      "percent": 7.9
+    },
+    {
+      "country_code": "GERMANY",
+      "country": "Germany",
+      "service": "fontawesome.com",
+      "domains": 3,
+      "scanned_domains": 214,
+      "percent": 1.4
+    },
+    {
+      "country_code": "GERMANY",
+      "country": "Germany",
+      "service": "google.com",
+      "domains": 5,
+      "scanned_domains": 214,
+      "percent": 2.3
+    },
+    {
+      "country_code": "GERMANY",
+      "country": "Germany",
+      "service": "gstatic.com",
+      "domains": 8,
+      "scanned_domains": 214,
+      "percent": 3.7
+    },
+    {
+      "country_code": "GERMANY",
+      "country": "Germany",
+      "service": "cloudflare.com",
+      "domains": 14,
+      "scanned_domains": 214,
+      "percent": 6.5
+    },
+    {
+      "country_code": "GERMANY",
+      "country": "Germany",
+      "service": "jquery.com",
+      "domains": 9,
+      "scanned_domains": 214,
+      "percent": 4.2
+    },
+    {
+      "country_code": "GERMANY",
+      "country": "Germany",
+      "service": "unpkg.com",
+      "domains": 4,
+      "scanned_domains": 214,
+      "percent": 1.9
+    },
+    {
+      "country_code": "GERMANY",
+      "country": "Germany",
+      "service": "bootstrapcdn.com",
+      "domains": 7,
+      "scanned_domains": 214,
+      "percent": 3.3
+    },
+    {
+      "country_code": "GERMANY",
+      "country": "Germany",
+      "service": "typekit.net",
+      "domains": 2,
+      "scanned_domains": 214,
+      "percent": 0.9
+    },
+    {
+      "country_code": "GERMANY",
+      "country": "Germany",
+      "service": "facebook.com",
+      "domains": 2,
+      "scanned_domains": 214,
+      "percent": 0.9
+    },
+    {
+      "country_code": "GERMANY",
+      "country": "Germany",
+      "service": "cookiebot.com",
+      "domains": 11,
+      "scanned_domains": 214,
+      "percent": 5.1
+    },
+    {
+      "country_code": "GERMANY",
+      "country": "Germany",
+      "service": "amazonaws.com",
+      "domains": 6,
+      "scanned_domains": 214,
+      "percent": 2.8
+    },
+    {
+      "country_code": "GERMANY",
+      "country": "Germany",
+      "service": "facebook.net",
+      "domains": 0,
+      "scanned_domains": 214,
+      "percent": 0.0
+    },
+    {
+      "country_code": "GERMANY",
+      "country": "Germany",
+      "service": "addtoany.com",
+      "domains": 1,
+      "scanned_domains": 214,
+      "percent": 0.5
+    },
+    {
+      "country_code": "GERMANY",
+      "country": "Germany",
+      "service": "arcgis.com",
+      "domains": 1,
+      "scanned_domains": 214,
+      "percent": 0.5
+    },
+    {
+      "country_code": "GERMANY",
+      "country": "Germany",
+      "service": "fbcdn.net",
+      "domains": 1,
+      "scanned_domains": 214,
+      "percent": 0.5
+    },
+    {
+      "country_code": "GERMANY",
+      "country": "Germany",
+      "service": "mapbox.com",
+      "domains": 2,
+      "scanned_domains": 214,
+      "percent": 0.9
+    },
+    {
+      "country_code": "GERMANY",
+      "country": "Germany",
+      "service": "cloudfront.net",
+      "domains": 0,
+      "scanned_domains": 214,
+      "percent": 0.0
+    },
+    {
+      "country_code": "SWEDEN",
+      "country": "Sweden",
+      "service": "googleapis.com",
+      "domains": 54,
+      "scanned_domains": 183,
+      "percent": 29.5
+    },
+    {
+      "country_code": "SWEDEN",
+      "country": "Sweden",
+      "service": "googletagmanager.com",
+      "domains": 14,
+      "scanned_domains": 183,
+      "percent": 7.7
+    },
+    {
+      "country_code": "SWEDEN",
+      "country": "Sweden",
+      "service": "jsdelivr.net",
+      "domains": 14,
+      "scanned_domains": 183,
+      "percent": 7.7
+    },
+    {
+      "country_code": "SWEDEN",
+      "country": "Sweden",
+      "service": "fontawesome.com",
+      "domains": 6,
+      "scanned_domains": 183,
+      "percent": 3.3
+    },
+    {
+      "country_code": "SWEDEN",
+      "country": "Sweden",
+      "service": "google.com",
+      "domains": 19,
+      "scanned_domains": 183,
+      "percent": 10.4
+    },
+    {
+      "country_code": "SWEDEN",
+      "country": "Sweden",
+      "service": "gstatic.com",
+      "domains": 18,
+      "scanned_domains": 183,
+      "percent": 9.8
+    },
+    {
+      "country_code": "SWEDEN",
+      "country": "Sweden",
+      "service": "cloudflare.com",
+      "domains": 21,
+      "scanned_domains": 183,
+      "percent": 11.5
+    },
+    {
+      "country_code": "SWEDEN",
+      "country": "Sweden",
+      "service": "jquery.com",
+      "domains": 10,
+      "scanned_domains": 183,
+      "percent": 5.5
+    },
+    {
+      "country_code": "SWEDEN",
+      "country": "Sweden",
+      "service": "unpkg.com",
+      "domains": 1,
+      "scanned_domains": 183,
+      "percent": 0.5
+    },
+    {
+      "country_code": "SWEDEN",
+      "country": "Sweden",
+      "service": "bootstrapcdn.com",
+      "domains": 11,
+      "scanned_domains": 183,
+      "percent": 6.0
+    },
+    {
+      "country_code": "SWEDEN",
+      "country": "Sweden",
+      "service": "typekit.net",
+      "domains": 6,
+      "scanned_domains": 183,
+      "percent": 3.3
+    },
+    {
+      "country_code": "SWEDEN",
+      "country": "Sweden",
+      "service": "facebook.com",
+      "domains": 1,
+      "scanned_domains": 183,
+      "percent": 0.5
+    },
+    {
+      "country_code": "SWEDEN",
+      "country": "Sweden",
+      "service": "cookiebot.com",
+      "domains": 15,
+      "scanned_domains": 183,
+      "percent": 8.2
+    },
+    {
+      "country_code": "SWEDEN",
+      "country": "Sweden",
+      "service": "amazonaws.com",
+      "domains": 3,
+      "scanned_domains": 183,
+      "percent": 1.6
+    },
+    {
+      "country_code": "SWEDEN",
+      "country": "Sweden",
+      "service": "facebook.net",
+      "domains": 1,
+      "scanned_domains": 183,
+      "percent": 0.5
+    },
+    {
+      "country_code": "SWEDEN",
+      "country": "Sweden",
+      "service": "addtoany.com",
+      "domains": 0,
+      "scanned_domains": 183,
+      "percent": 0.0
+    },
+    {
+      "country_code": "SWEDEN",
+      "country": "Sweden",
+      "service": "arcgis.com",
+      "domains": 0,
+      "scanned_domains": 183,
+      "percent": 0.0
+    },
+    {
+      "country_code": "SWEDEN",
+      "country": "Sweden",
+      "service": "fbcdn.net",
+      "domains": 1,
+      "scanned_domains": 183,
+      "percent": 0.5
+    },
+    {
+      "country_code": "SWEDEN",
+      "country": "Sweden",
+      "service": "mapbox.com",
+      "domains": 1,
+      "scanned_domains": 183,
+      "percent": 0.5
+    },
+    {
+      "country_code": "SWEDEN",
+      "country": "Sweden",
+      "service": "cloudfront.net",
+      "domains": 1,
+      "scanned_domains": 183,
+      "percent": 0.5
+    },
+    {
+      "country_code": "ITALY",
+      "country": "Italy",
+      "service": "googleapis.com",
+      "domains": 87,
+      "scanned_domains": 146,
+      "percent": 59.6
+    },
+    {
+      "country_code": "ITALY",
+      "country": "Italy",
+      "service": "googletagmanager.com",
+      "domains": 33,
+      "scanned_domains": 146,
+      "percent": 22.6
+    },
+    {
+      "country_code": "ITALY",
+      "country": "Italy",
+      "service": "jsdelivr.net",
+      "domains": 51,
+      "scanned_domains": 146,
+      "percent": 34.9
+    },
+    {
+      "country_code": "ITALY",
+      "country": "Italy",
+      "service": "fontawesome.com",
+      "domains": 24,
+      "scanned_domains": 146,
+      "percent": 16.4
+    },
+    {
+      "country_code": "ITALY",
+      "country": "Italy",
+      "service": "google.com",
+      "domains": 33,
+      "scanned_domains": 146,
+      "percent": 22.6
+    },
+    {
+      "country_code": "ITALY",
+      "country": "Italy",
+      "service": "gstatic.com",
+      "domains": 29,
+      "scanned_domains": 146,
+      "percent": 19.9
+    },
+    {
+      "country_code": "ITALY",
+      "country": "Italy",
+      "service": "cloudflare.com",
+      "domains": 39,
+      "scanned_domains": 146,
+      "percent": 26.7
+    },
+    {
+      "country_code": "ITALY",
+      "country": "Italy",
+      "service": "jquery.com",
+      "domains": 39,
+      "scanned_domains": 146,
+      "percent": 26.7
+    },
+    {
+      "country_code": "ITALY",
+      "country": "Italy",
+      "service": "unpkg.com",
+      "domains": 15,
+      "scanned_domains": 146,
+      "percent": 10.3
+    },
+    {
+      "country_code": "ITALY",
+      "country": "Italy",
+      "service": "bootstrapcdn.com",
+      "domains": 18,
+      "scanned_domains": 146,
+      "percent": 12.3
+    },
+    {
+      "country_code": "ITALY",
+      "country": "Italy",
+      "service": "typekit.net",
+      "domains": 2,
+      "scanned_domains": 146,
+      "percent": 1.4
+    },
+    {
+      "country_code": "ITALY",
+      "country": "Italy",
+      "service": "facebook.com",
+      "domains": 4,
+      "scanned_domains": 146,
+      "percent": 2.7
+    },
+    {
+      "country_code": "ITALY",
+      "country": "Italy",
+      "service": "cookiebot.com",
+      "domains": 7,
+      "scanned_domains": 146,
+      "percent": 4.8
+    },
+    {
+      "country_code": "ITALY",
+      "country": "Italy",
+      "service": "amazonaws.com",
+      "domains": 6,
+      "scanned_domains": 146,
+      "percent": 4.1
+    },
+    {
+      "country_code": "ITALY",
+      "country": "Italy",
+      "service": "facebook.net",
+      "domains": 5,
+      "scanned_domains": 146,
+      "percent": 3.4
+    },
+    {
+      "country_code": "ITALY",
+      "country": "Italy",
+      "service": "addtoany.com",
+      "domains": 11,
+      "scanned_domains": 146,
+      "percent": 7.5
+    },
+    {
+      "country_code": "ITALY",
+      "country": "Italy",
+      "service": "arcgis.com",
+      "domains": 3,
+      "scanned_domains": 146,
+      "percent": 2.1
+    },
+    {
+      "country_code": "ITALY",
+      "country": "Italy",
+      "service": "fbcdn.net",
+      "domains": 0,
+      "scanned_domains": 146,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ITALY",
+      "country": "Italy",
+      "service": "mapbox.com",
+      "domains": 1,
+      "scanned_domains": 146,
+      "percent": 0.7
+    },
+    {
+      "country_code": "ITALY",
+      "country": "Italy",
+      "service": "cloudfront.net",
+      "domains": 1,
+      "scanned_domains": 146,
+      "percent": 0.7
+    },
+    {
+      "country_code": "LATVIA",
+      "country": "Latvia",
+      "service": "googleapis.com",
+      "domains": 38,
+      "scanned_domains": 141,
+      "percent": 27.0
+    },
+    {
+      "country_code": "LATVIA",
+      "country": "Latvia",
+      "service": "googletagmanager.com",
+      "domains": 25,
+      "scanned_domains": 141,
+      "percent": 17.7
+    },
+    {
+      "country_code": "LATVIA",
+      "country": "Latvia",
+      "service": "jsdelivr.net",
+      "domains": 13,
+      "scanned_domains": 141,
+      "percent": 9.2
+    },
+    {
+      "country_code": "LATVIA",
+      "country": "Latvia",
+      "service": "fontawesome.com",
+      "domains": 2,
+      "scanned_domains": 141,
+      "percent": 1.4
+    },
+    {
+      "country_code": "LATVIA",
+      "country": "Latvia",
+      "service": "google.com",
+      "domains": 10,
+      "scanned_domains": 141,
+      "percent": 7.1
+    },
+    {
+      "country_code": "LATVIA",
+      "country": "Latvia",
+      "service": "gstatic.com",
+      "domains": 13,
+      "scanned_domains": 141,
+      "percent": 9.2
+    },
+    {
+      "country_code": "LATVIA",
+      "country": "Latvia",
+      "service": "cloudflare.com",
+      "domains": 9,
+      "scanned_domains": 141,
+      "percent": 6.4
+    },
+    {
+      "country_code": "LATVIA",
+      "country": "Latvia",
+      "service": "jquery.com",
+      "domains": 7,
+      "scanned_domains": 141,
+      "percent": 5.0
+    },
+    {
+      "country_code": "LATVIA",
+      "country": "Latvia",
+      "service": "unpkg.com",
+      "domains": 4,
+      "scanned_domains": 141,
+      "percent": 2.8
+    },
+    {
+      "country_code": "LATVIA",
+      "country": "Latvia",
+      "service": "bootstrapcdn.com",
+      "domains": 6,
+      "scanned_domains": 141,
+      "percent": 4.3
+    },
+    {
+      "country_code": "LATVIA",
+      "country": "Latvia",
+      "service": "typekit.net",
+      "domains": 3,
+      "scanned_domains": 141,
+      "percent": 2.1
+    },
+    {
+      "country_code": "LATVIA",
+      "country": "Latvia",
+      "service": "facebook.com",
+      "domains": 5,
+      "scanned_domains": 141,
+      "percent": 3.5
+    },
+    {
+      "country_code": "LATVIA",
+      "country": "Latvia",
+      "service": "cookiebot.com",
+      "domains": 4,
+      "scanned_domains": 141,
+      "percent": 2.8
+    },
+    {
+      "country_code": "LATVIA",
+      "country": "Latvia",
+      "service": "amazonaws.com",
+      "domains": 0,
+      "scanned_domains": 141,
+      "percent": 0.0
+    },
+    {
+      "country_code": "LATVIA",
+      "country": "Latvia",
+      "service": "facebook.net",
+      "domains": 0,
+      "scanned_domains": 141,
+      "percent": 0.0
+    },
+    {
+      "country_code": "LATVIA",
+      "country": "Latvia",
+      "service": "addtoany.com",
+      "domains": 8,
+      "scanned_domains": 141,
+      "percent": 5.7
+    },
+    {
+      "country_code": "LATVIA",
+      "country": "Latvia",
+      "service": "arcgis.com",
+      "domains": 0,
+      "scanned_domains": 141,
+      "percent": 0.0
+    },
+    {
+      "country_code": "LATVIA",
+      "country": "Latvia",
+      "service": "fbcdn.net",
+      "domains": 0,
+      "scanned_domains": 141,
+      "percent": 0.0
+    },
+    {
+      "country_code": "LATVIA",
+      "country": "Latvia",
+      "service": "mapbox.com",
+      "domains": 1,
+      "scanned_domains": 141,
+      "percent": 0.7
+    },
+    {
+      "country_code": "LATVIA",
+      "country": "Latvia",
+      "service": "cloudfront.net",
+      "domains": 1,
+      "scanned_domains": 141,
+      "percent": 0.7
+    },
+    {
+      "country_code": "CANADA",
+      "country": "Canada",
+      "service": "googleapis.com",
+      "domains": 62,
+      "scanned_domains": 113,
+      "percent": 54.9
+    },
+    {
+      "country_code": "CANADA",
+      "country": "Canada",
+      "service": "googletagmanager.com",
+      "domains": 48,
+      "scanned_domains": 113,
+      "percent": 42.5
+    },
+    {
+      "country_code": "CANADA",
+      "country": "Canada",
+      "service": "jsdelivr.net",
+      "domains": 25,
+      "scanned_domains": 113,
+      "percent": 22.1
+    },
+    {
+      "country_code": "CANADA",
+      "country": "Canada",
+      "service": "fontawesome.com",
+      "domains": 23,
+      "scanned_domains": 113,
+      "percent": 20.4
+    },
+    {
+      "country_code": "CANADA",
+      "country": "Canada",
+      "service": "google.com",
+      "domains": 31,
+      "scanned_domains": 113,
+      "percent": 27.4
+    },
+    {
+      "country_code": "CANADA",
+      "country": "Canada",
+      "service": "gstatic.com",
+      "domains": 31,
+      "scanned_domains": 113,
+      "percent": 27.4
+    },
+    {
+      "country_code": "CANADA",
+      "country": "Canada",
+      "service": "cloudflare.com",
+      "domains": 24,
+      "scanned_domains": 113,
+      "percent": 21.2
+    },
+    {
+      "country_code": "CANADA",
+      "country": "Canada",
+      "service": "jquery.com",
+      "domains": 16,
+      "scanned_domains": 113,
+      "percent": 14.2
+    },
+    {
+      "country_code": "CANADA",
+      "country": "Canada",
+      "service": "unpkg.com",
+      "domains": 16,
+      "scanned_domains": 113,
+      "percent": 14.2
+    },
+    {
+      "country_code": "CANADA",
+      "country": "Canada",
+      "service": "bootstrapcdn.com",
+      "domains": 13,
+      "scanned_domains": 113,
+      "percent": 11.5
+    },
+    {
+      "country_code": "CANADA",
+      "country": "Canada",
+      "service": "typekit.net",
+      "domains": 7,
+      "scanned_domains": 113,
+      "percent": 6.2
+    },
+    {
+      "country_code": "CANADA",
+      "country": "Canada",
+      "service": "facebook.com",
+      "domains": 4,
+      "scanned_domains": 113,
+      "percent": 3.5
+    },
+    {
+      "country_code": "CANADA",
+      "country": "Canada",
+      "service": "cookiebot.com",
+      "domains": 1,
+      "scanned_domains": 113,
+      "percent": 0.9
+    },
+    {
+      "country_code": "CANADA",
+      "country": "Canada",
+      "service": "amazonaws.com",
+      "domains": 12,
+      "scanned_domains": 113,
+      "percent": 10.6
+    },
+    {
+      "country_code": "CANADA",
+      "country": "Canada",
+      "service": "facebook.net",
+      "domains": 4,
+      "scanned_domains": 113,
+      "percent": 3.5
+    },
+    {
+      "country_code": "CANADA",
+      "country": "Canada",
+      "service": "addtoany.com",
+      "domains": 3,
+      "scanned_domains": 113,
+      "percent": 2.7
+    },
+    {
+      "country_code": "CANADA",
+      "country": "Canada",
+      "service": "arcgis.com",
+      "domains": 15,
+      "scanned_domains": 113,
+      "percent": 13.3
+    },
+    {
+      "country_code": "CANADA",
+      "country": "Canada",
+      "service": "fbcdn.net",
+      "domains": 1,
+      "scanned_domains": 113,
+      "percent": 0.9
+    },
+    {
+      "country_code": "CANADA",
+      "country": "Canada",
+      "service": "mapbox.com",
+      "domains": 2,
+      "scanned_domains": 113,
+      "percent": 1.8
+    },
+    {
+      "country_code": "CANADA",
+      "country": "Canada",
+      "service": "cloudfront.net",
+      "domains": 9,
+      "scanned_domains": 113,
+      "percent": 8.0
+    },
+    {
+      "country_code": "IRELAND",
+      "country": "Ireland",
+      "service": "googleapis.com",
+      "domains": 50,
+      "scanned_domains": 103,
+      "percent": 48.5
+    },
+    {
+      "country_code": "IRELAND",
+      "country": "Ireland",
+      "service": "googletagmanager.com",
+      "domains": 30,
+      "scanned_domains": 103,
+      "percent": 29.1
+    },
+    {
+      "country_code": "IRELAND",
+      "country": "Ireland",
+      "service": "jsdelivr.net",
+      "domains": 20,
+      "scanned_domains": 103,
+      "percent": 19.4
+    },
+    {
+      "country_code": "IRELAND",
+      "country": "Ireland",
+      "service": "fontawesome.com",
+      "domains": 9,
+      "scanned_domains": 103,
+      "percent": 8.7
+    },
+    {
+      "country_code": "IRELAND",
+      "country": "Ireland",
+      "service": "google.com",
+      "domains": 21,
+      "scanned_domains": 103,
+      "percent": 20.4
+    },
+    {
+      "country_code": "IRELAND",
+      "country": "Ireland",
+      "service": "gstatic.com",
+      "domains": 17,
+      "scanned_domains": 103,
+      "percent": 16.5
+    },
+    {
+      "country_code": "IRELAND",
+      "country": "Ireland",
+      "service": "cloudflare.com",
+      "domains": 21,
+      "scanned_domains": 103,
+      "percent": 20.4
+    },
+    {
+      "country_code": "IRELAND",
+      "country": "Ireland",
+      "service": "jquery.com",
+      "domains": 14,
+      "scanned_domains": 103,
+      "percent": 13.6
+    },
+    {
+      "country_code": "IRELAND",
+      "country": "Ireland",
+      "service": "unpkg.com",
+      "domains": 5,
+      "scanned_domains": 103,
+      "percent": 4.9
+    },
+    {
+      "country_code": "IRELAND",
+      "country": "Ireland",
+      "service": "bootstrapcdn.com",
+      "domains": 11,
+      "scanned_domains": 103,
+      "percent": 10.7
+    },
+    {
+      "country_code": "IRELAND",
+      "country": "Ireland",
+      "service": "typekit.net",
+      "domains": 8,
+      "scanned_domains": 103,
+      "percent": 7.8
+    },
+    {
+      "country_code": "IRELAND",
+      "country": "Ireland",
+      "service": "facebook.com",
+      "domains": 4,
+      "scanned_domains": 103,
+      "percent": 3.9
+    },
+    {
+      "country_code": "IRELAND",
+      "country": "Ireland",
+      "service": "cookiebot.com",
+      "domains": 13,
+      "scanned_domains": 103,
+      "percent": 12.6
+    },
+    {
+      "country_code": "IRELAND",
+      "country": "Ireland",
+      "service": "amazonaws.com",
+      "domains": 8,
+      "scanned_domains": 103,
+      "percent": 7.8
+    },
+    {
+      "country_code": "IRELAND",
+      "country": "Ireland",
+      "service": "facebook.net",
+      "domains": 1,
+      "scanned_domains": 103,
+      "percent": 1.0
+    },
+    {
+      "country_code": "IRELAND",
+      "country": "Ireland",
+      "service": "addtoany.com",
+      "domains": 1,
+      "scanned_domains": 103,
+      "percent": 1.0
+    },
+    {
+      "country_code": "IRELAND",
+      "country": "Ireland",
+      "service": "arcgis.com",
+      "domains": 2,
+      "scanned_domains": 103,
+      "percent": 1.9
+    },
+    {
+      "country_code": "IRELAND",
+      "country": "Ireland",
+      "service": "fbcdn.net",
+      "domains": 0,
+      "scanned_domains": 103,
+      "percent": 0.0
+    },
+    {
+      "country_code": "IRELAND",
+      "country": "Ireland",
+      "service": "mapbox.com",
+      "domains": 0,
+      "scanned_domains": 103,
+      "percent": 0.0
+    },
+    {
+      "country_code": "IRELAND",
+      "country": "Ireland",
+      "service": "cloudfront.net",
+      "domains": 2,
+      "scanned_domains": 103,
+      "percent": 1.9
+    },
+    {
+      "country_code": "DENMARK",
+      "country": "Denmark",
+      "service": "googleapis.com",
+      "domains": 25,
+      "scanned_domains": 79,
+      "percent": 31.6
+    },
+    {
+      "country_code": "DENMARK",
+      "country": "Denmark",
+      "service": "googletagmanager.com",
+      "domains": 1,
+      "scanned_domains": 79,
+      "percent": 1.3
+    },
+    {
+      "country_code": "DENMARK",
+      "country": "Denmark",
+      "service": "jsdelivr.net",
+      "domains": 5,
+      "scanned_domains": 79,
+      "percent": 6.3
+    },
+    {
+      "country_code": "DENMARK",
+      "country": "Denmark",
+      "service": "fontawesome.com",
+      "domains": 2,
+      "scanned_domains": 79,
+      "percent": 2.5
+    },
+    {
+      "country_code": "DENMARK",
+      "country": "Denmark",
+      "service": "google.com",
+      "domains": 6,
+      "scanned_domains": 79,
+      "percent": 7.6
+    },
+    {
+      "country_code": "DENMARK",
+      "country": "Denmark",
+      "service": "gstatic.com",
+      "domains": 14,
+      "scanned_domains": 79,
+      "percent": 17.7
+    },
+    {
+      "country_code": "DENMARK",
+      "country": "Denmark",
+      "service": "cloudflare.com",
+      "domains": 12,
+      "scanned_domains": 79,
+      "percent": 15.2
+    },
+    {
+      "country_code": "DENMARK",
+      "country": "Denmark",
+      "service": "jquery.com",
+      "domains": 8,
+      "scanned_domains": 79,
+      "percent": 10.1
+    },
+    {
+      "country_code": "DENMARK",
+      "country": "Denmark",
+      "service": "unpkg.com",
+      "domains": 9,
+      "scanned_domains": 79,
+      "percent": 11.4
+    },
+    {
+      "country_code": "DENMARK",
+      "country": "Denmark",
+      "service": "bootstrapcdn.com",
+      "domains": 3,
+      "scanned_domains": 79,
+      "percent": 3.8
+    },
+    {
+      "country_code": "DENMARK",
+      "country": "Denmark",
+      "service": "typekit.net",
+      "domains": 4,
+      "scanned_domains": 79,
+      "percent": 5.1
+    },
+    {
+      "country_code": "DENMARK",
+      "country": "Denmark",
+      "service": "facebook.com",
+      "domains": 0,
+      "scanned_domains": 79,
+      "percent": 0.0
+    },
+    {
+      "country_code": "DENMARK",
+      "country": "Denmark",
+      "service": "cookiebot.com",
+      "domains": 9,
+      "scanned_domains": 79,
+      "percent": 11.4
+    },
+    {
+      "country_code": "DENMARK",
+      "country": "Denmark",
+      "service": "amazonaws.com",
+      "domains": 0,
+      "scanned_domains": 79,
+      "percent": 0.0
+    },
+    {
+      "country_code": "DENMARK",
+      "country": "Denmark",
+      "service": "facebook.net",
+      "domains": 1,
+      "scanned_domains": 79,
+      "percent": 1.3
+    },
+    {
+      "country_code": "DENMARK",
+      "country": "Denmark",
+      "service": "addtoany.com",
+      "domains": 0,
+      "scanned_domains": 79,
+      "percent": 0.0
+    },
+    {
+      "country_code": "DENMARK",
+      "country": "Denmark",
+      "service": "arcgis.com",
+      "domains": 0,
+      "scanned_domains": 79,
+      "percent": 0.0
+    },
+    {
+      "country_code": "DENMARK",
+      "country": "Denmark",
+      "service": "fbcdn.net",
+      "domains": 1,
+      "scanned_domains": 79,
+      "percent": 1.3
+    },
+    {
+      "country_code": "DENMARK",
+      "country": "Denmark",
+      "service": "mapbox.com",
+      "domains": 1,
+      "scanned_domains": 79,
+      "percent": 1.3
+    },
+    {
+      "country_code": "DENMARK",
+      "country": "Denmark",
+      "service": "cloudfront.net",
+      "domains": 1,
+      "scanned_domains": 79,
+      "percent": 1.3
+    },
+    {
+      "country_code": "NETHERLANDS",
+      "country": "Netherlands",
+      "service": "googleapis.com",
+      "domains": 17,
+      "scanned_domains": 69,
+      "percent": 24.6
+    },
+    {
+      "country_code": "NETHERLANDS",
+      "country": "Netherlands",
+      "service": "googletagmanager.com",
+      "domains": 11,
+      "scanned_domains": 69,
+      "percent": 15.9
+    },
+    {
+      "country_code": "NETHERLANDS",
+      "country": "Netherlands",
+      "service": "jsdelivr.net",
+      "domains": 9,
+      "scanned_domains": 69,
+      "percent": 13.0
+    },
+    {
+      "country_code": "NETHERLANDS",
+      "country": "Netherlands",
+      "service": "fontawesome.com",
+      "domains": 6,
+      "scanned_domains": 69,
+      "percent": 8.7
+    },
+    {
+      "country_code": "NETHERLANDS",
+      "country": "Netherlands",
+      "service": "google.com",
+      "domains": 17,
+      "scanned_domains": 69,
+      "percent": 24.6
+    },
+    {
+      "country_code": "NETHERLANDS",
+      "country": "Netherlands",
+      "service": "gstatic.com",
+      "domains": 17,
+      "scanned_domains": 69,
+      "percent": 24.6
+    },
+    {
+      "country_code": "NETHERLANDS",
+      "country": "Netherlands",
+      "service": "cloudflare.com",
+      "domains": 10,
+      "scanned_domains": 69,
+      "percent": 14.5
+    },
+    {
+      "country_code": "NETHERLANDS",
+      "country": "Netherlands",
+      "service": "jquery.com",
+      "domains": 5,
+      "scanned_domains": 69,
+      "percent": 7.2
+    },
+    {
+      "country_code": "NETHERLANDS",
+      "country": "Netherlands",
+      "service": "unpkg.com",
+      "domains": 4,
+      "scanned_domains": 69,
+      "percent": 5.8
+    },
+    {
+      "country_code": "NETHERLANDS",
+      "country": "Netherlands",
+      "service": "bootstrapcdn.com",
+      "domains": 6,
+      "scanned_domains": 69,
+      "percent": 8.7
+    },
+    {
+      "country_code": "NETHERLANDS",
+      "country": "Netherlands",
+      "service": "typekit.net",
+      "domains": 4,
+      "scanned_domains": 69,
+      "percent": 5.8
+    },
+    {
+      "country_code": "NETHERLANDS",
+      "country": "Netherlands",
+      "service": "facebook.com",
+      "domains": 1,
+      "scanned_domains": 69,
+      "percent": 1.4
+    },
+    {
+      "country_code": "NETHERLANDS",
+      "country": "Netherlands",
+      "service": "cookiebot.com",
+      "domains": 5,
+      "scanned_domains": 69,
+      "percent": 7.2
+    },
+    {
+      "country_code": "NETHERLANDS",
+      "country": "Netherlands",
+      "service": "amazonaws.com",
+      "domains": 2,
+      "scanned_domains": 69,
+      "percent": 2.9
+    },
+    {
+      "country_code": "NETHERLANDS",
+      "country": "Netherlands",
+      "service": "facebook.net",
+      "domains": 1,
+      "scanned_domains": 69,
+      "percent": 1.4
+    },
+    {
+      "country_code": "NETHERLANDS",
+      "country": "Netherlands",
+      "service": "addtoany.com",
+      "domains": 0,
+      "scanned_domains": 69,
+      "percent": 0.0
+    },
+    {
+      "country_code": "NETHERLANDS",
+      "country": "Netherlands",
+      "service": "arcgis.com",
+      "domains": 3,
+      "scanned_domains": 69,
+      "percent": 4.3
+    },
+    {
+      "country_code": "NETHERLANDS",
+      "country": "Netherlands",
+      "service": "fbcdn.net",
+      "domains": 0,
+      "scanned_domains": 69,
+      "percent": 0.0
+    },
+    {
+      "country_code": "NETHERLANDS",
+      "country": "Netherlands",
+      "service": "mapbox.com",
+      "domains": 0,
+      "scanned_domains": 69,
+      "percent": 0.0
+    },
+    {
+      "country_code": "NETHERLANDS",
+      "country": "Netherlands",
+      "service": "cloudfront.net",
+      "domains": 0,
+      "scanned_domains": 69,
+      "percent": 0.0
+    },
+    {
+      "country_code": "BULGARIA",
+      "country": "Bulgaria",
+      "service": "googleapis.com",
+      "domains": 28,
+      "scanned_domains": 55,
+      "percent": 50.9
+    },
+    {
+      "country_code": "BULGARIA",
+      "country": "Bulgaria",
+      "service": "googletagmanager.com",
+      "domains": 13,
+      "scanned_domains": 55,
+      "percent": 23.6
+    },
+    {
+      "country_code": "BULGARIA",
+      "country": "Bulgaria",
+      "service": "jsdelivr.net",
+      "domains": 7,
+      "scanned_domains": 55,
+      "percent": 12.7
+    },
+    {
+      "country_code": "BULGARIA",
+      "country": "Bulgaria",
+      "service": "fontawesome.com",
+      "domains": 6,
+      "scanned_domains": 55,
+      "percent": 10.9
+    },
+    {
+      "country_code": "BULGARIA",
+      "country": "Bulgaria",
+      "service": "google.com",
+      "domains": 17,
+      "scanned_domains": 55,
+      "percent": 30.9
+    },
+    {
+      "country_code": "BULGARIA",
+      "country": "Bulgaria",
+      "service": "gstatic.com",
+      "domains": 11,
+      "scanned_domains": 55,
+      "percent": 20.0
+    },
+    {
+      "country_code": "BULGARIA",
+      "country": "Bulgaria",
+      "service": "cloudflare.com",
+      "domains": 14,
+      "scanned_domains": 55,
+      "percent": 25.5
+    },
+    {
+      "country_code": "BULGARIA",
+      "country": "Bulgaria",
+      "service": "jquery.com",
+      "domains": 9,
+      "scanned_domains": 55,
+      "percent": 16.4
+    },
+    {
+      "country_code": "BULGARIA",
+      "country": "Bulgaria",
+      "service": "unpkg.com",
+      "domains": 5,
+      "scanned_domains": 55,
+      "percent": 9.1
+    },
+    {
+      "country_code": "BULGARIA",
+      "country": "Bulgaria",
+      "service": "bootstrapcdn.com",
+      "domains": 6,
+      "scanned_domains": 55,
+      "percent": 10.9
+    },
+    {
+      "country_code": "BULGARIA",
+      "country": "Bulgaria",
+      "service": "typekit.net",
+      "domains": 0,
+      "scanned_domains": 55,
+      "percent": 0.0
+    },
+    {
+      "country_code": "BULGARIA",
+      "country": "Bulgaria",
+      "service": "facebook.com",
+      "domains": 1,
+      "scanned_domains": 55,
+      "percent": 1.8
+    },
+    {
+      "country_code": "BULGARIA",
+      "country": "Bulgaria",
+      "service": "cookiebot.com",
+      "domains": 1,
+      "scanned_domains": 55,
+      "percent": 1.8
+    },
+    {
+      "country_code": "BULGARIA",
+      "country": "Bulgaria",
+      "service": "amazonaws.com",
+      "domains": 1,
+      "scanned_domains": 55,
+      "percent": 1.8
+    },
+    {
+      "country_code": "BULGARIA",
+      "country": "Bulgaria",
+      "service": "facebook.net",
+      "domains": 1,
+      "scanned_domains": 55,
+      "percent": 1.8
+    },
+    {
+      "country_code": "BULGARIA",
+      "country": "Bulgaria",
+      "service": "addtoany.com",
+      "domains": 1,
+      "scanned_domains": 55,
+      "percent": 1.8
+    },
+    {
+      "country_code": "BULGARIA",
+      "country": "Bulgaria",
+      "service": "arcgis.com",
+      "domains": 0,
+      "scanned_domains": 55,
+      "percent": 0.0
+    },
+    {
+      "country_code": "BULGARIA",
+      "country": "Bulgaria",
+      "service": "fbcdn.net",
+      "domains": 2,
+      "scanned_domains": 55,
+      "percent": 3.6
+    },
+    {
+      "country_code": "BULGARIA",
+      "country": "Bulgaria",
+      "service": "mapbox.com",
+      "domains": 0,
+      "scanned_domains": 55,
+      "percent": 0.0
+    },
+    {
+      "country_code": "BULGARIA",
+      "country": "Bulgaria",
+      "service": "cloudfront.net",
+      "domains": 1,
+      "scanned_domains": 55,
+      "percent": 1.8
+    },
+    {
+      "country_code": "BELGIUM",
+      "country": "Belgium",
+      "service": "googleapis.com",
+      "domains": 21,
+      "scanned_domains": 43,
+      "percent": 48.8
+    },
+    {
+      "country_code": "BELGIUM",
+      "country": "Belgium",
+      "service": "googletagmanager.com",
+      "domains": 14,
+      "scanned_domains": 43,
+      "percent": 32.6
+    },
+    {
+      "country_code": "BELGIUM",
+      "country": "Belgium",
+      "service": "jsdelivr.net",
+      "domains": 11,
+      "scanned_domains": 43,
+      "percent": 25.6
+    },
+    {
+      "country_code": "BELGIUM",
+      "country": "Belgium",
+      "service": "fontawesome.com",
+      "domains": 5,
+      "scanned_domains": 43,
+      "percent": 11.6
+    },
+    {
+      "country_code": "BELGIUM",
+      "country": "Belgium",
+      "service": "google.com",
+      "domains": 7,
+      "scanned_domains": 43,
+      "percent": 16.3
+    },
+    {
+      "country_code": "BELGIUM",
+      "country": "Belgium",
+      "service": "gstatic.com",
+      "domains": 12,
+      "scanned_domains": 43,
+      "percent": 27.9
+    },
+    {
+      "country_code": "BELGIUM",
+      "country": "Belgium",
+      "service": "cloudflare.com",
+      "domains": 16,
+      "scanned_domains": 43,
+      "percent": 37.2
+    },
+    {
+      "country_code": "BELGIUM",
+      "country": "Belgium",
+      "service": "jquery.com",
+      "domains": 8,
+      "scanned_domains": 43,
+      "percent": 18.6
+    },
+    {
+      "country_code": "BELGIUM",
+      "country": "Belgium",
+      "service": "unpkg.com",
+      "domains": 9,
+      "scanned_domains": 43,
+      "percent": 20.9
+    },
+    {
+      "country_code": "BELGIUM",
+      "country": "Belgium",
+      "service": "bootstrapcdn.com",
+      "domains": 10,
+      "scanned_domains": 43,
+      "percent": 23.3
+    },
+    {
+      "country_code": "BELGIUM",
+      "country": "Belgium",
+      "service": "typekit.net",
+      "domains": 1,
+      "scanned_domains": 43,
+      "percent": 2.3
+    },
+    {
+      "country_code": "BELGIUM",
+      "country": "Belgium",
+      "service": "facebook.com",
+      "domains": 1,
+      "scanned_domains": 43,
+      "percent": 2.3
+    },
+    {
+      "country_code": "BELGIUM",
+      "country": "Belgium",
+      "service": "cookiebot.com",
+      "domains": 3,
+      "scanned_domains": 43,
+      "percent": 7.0
+    },
+    {
+      "country_code": "BELGIUM",
+      "country": "Belgium",
+      "service": "amazonaws.com",
+      "domains": 6,
+      "scanned_domains": 43,
+      "percent": 14.0
+    },
+    {
+      "country_code": "BELGIUM",
+      "country": "Belgium",
+      "service": "facebook.net",
+      "domains": 0,
+      "scanned_domains": 43,
+      "percent": 0.0
+    },
+    {
+      "country_code": "BELGIUM",
+      "country": "Belgium",
+      "service": "addtoany.com",
+      "domains": 4,
+      "scanned_domains": 43,
+      "percent": 9.3
+    },
+    {
+      "country_code": "BELGIUM",
+      "country": "Belgium",
+      "service": "arcgis.com",
+      "domains": 1,
+      "scanned_domains": 43,
+      "percent": 2.3
+    },
+    {
+      "country_code": "BELGIUM",
+      "country": "Belgium",
+      "service": "fbcdn.net",
+      "domains": 0,
+      "scanned_domains": 43,
+      "percent": 0.0
+    },
+    {
+      "country_code": "BELGIUM",
+      "country": "Belgium",
+      "service": "mapbox.com",
+      "domains": 1,
+      "scanned_domains": 43,
+      "percent": 2.3
+    },
+    {
+      "country_code": "BELGIUM",
+      "country": "Belgium",
+      "service": "cloudfront.net",
+      "domains": 2,
+      "scanned_domains": 43,
+      "percent": 4.7
+    },
+    {
+      "country_code": "FINLAND",
+      "country": "Finland",
+      "service": "googleapis.com",
+      "domains": 4,
+      "scanned_domains": 41,
+      "percent": 9.8
+    },
+    {
+      "country_code": "FINLAND",
+      "country": "Finland",
+      "service": "googletagmanager.com",
+      "domains": 1,
+      "scanned_domains": 41,
+      "percent": 2.4
+    },
+    {
+      "country_code": "FINLAND",
+      "country": "Finland",
+      "service": "jsdelivr.net",
+      "domains": 2,
+      "scanned_domains": 41,
+      "percent": 4.9
+    },
+    {
+      "country_code": "FINLAND",
+      "country": "Finland",
+      "service": "fontawesome.com",
+      "domains": 1,
+      "scanned_domains": 41,
+      "percent": 2.4
+    },
+    {
+      "country_code": "FINLAND",
+      "country": "Finland",
+      "service": "google.com",
+      "domains": 1,
+      "scanned_domains": 41,
+      "percent": 2.4
+    },
+    {
+      "country_code": "FINLAND",
+      "country": "Finland",
+      "service": "gstatic.com",
+      "domains": 2,
+      "scanned_domains": 41,
+      "percent": 4.9
+    },
+    {
+      "country_code": "FINLAND",
+      "country": "Finland",
+      "service": "cloudflare.com",
+      "domains": 3,
+      "scanned_domains": 41,
+      "percent": 7.3
+    },
+    {
+      "country_code": "FINLAND",
+      "country": "Finland",
+      "service": "jquery.com",
+      "domains": 1,
+      "scanned_domains": 41,
+      "percent": 2.4
+    },
+    {
+      "country_code": "FINLAND",
+      "country": "Finland",
+      "service": "unpkg.com",
+      "domains": 0,
+      "scanned_domains": 41,
+      "percent": 0.0
+    },
+    {
+      "country_code": "FINLAND",
+      "country": "Finland",
+      "service": "bootstrapcdn.com",
+      "domains": 0,
+      "scanned_domains": 41,
+      "percent": 0.0
+    },
+    {
+      "country_code": "FINLAND",
+      "country": "Finland",
+      "service": "typekit.net",
+      "domains": 1,
+      "scanned_domains": 41,
+      "percent": 2.4
+    },
+    {
+      "country_code": "FINLAND",
+      "country": "Finland",
+      "service": "facebook.com",
+      "domains": 0,
+      "scanned_domains": 41,
+      "percent": 0.0
+    },
+    {
+      "country_code": "FINLAND",
+      "country": "Finland",
+      "service": "cookiebot.com",
+      "domains": 2,
+      "scanned_domains": 41,
+      "percent": 4.9
+    },
+    {
+      "country_code": "FINLAND",
+      "country": "Finland",
+      "service": "amazonaws.com",
+      "domains": 0,
+      "scanned_domains": 41,
+      "percent": 0.0
+    },
+    {
+      "country_code": "FINLAND",
+      "country": "Finland",
+      "service": "facebook.net",
+      "domains": 0,
+      "scanned_domains": 41,
+      "percent": 0.0
+    },
+    {
+      "country_code": "FINLAND",
+      "country": "Finland",
+      "service": "addtoany.com",
+      "domains": 2,
+      "scanned_domains": 41,
+      "percent": 4.9
+    },
+    {
+      "country_code": "FINLAND",
+      "country": "Finland",
+      "service": "arcgis.com",
+      "domains": 0,
+      "scanned_domains": 41,
+      "percent": 0.0
+    },
+    {
+      "country_code": "FINLAND",
+      "country": "Finland",
+      "service": "fbcdn.net",
+      "domains": 0,
+      "scanned_domains": 41,
+      "percent": 0.0
+    },
+    {
+      "country_code": "FINLAND",
+      "country": "Finland",
+      "service": "mapbox.com",
+      "domains": 0,
+      "scanned_domains": 41,
+      "percent": 0.0
+    },
+    {
+      "country_code": "FINLAND",
+      "country": "Finland",
+      "service": "cloudfront.net",
+      "domains": 0,
+      "scanned_domains": 41,
+      "percent": 0.0
+    },
+    {
+      "country_code": "LUXEMBOURG",
+      "country": "Luxembourg",
+      "service": "googleapis.com",
+      "domains": 16,
+      "scanned_domains": 40,
+      "percent": 40.0
+    },
+    {
+      "country_code": "LUXEMBOURG",
+      "country": "Luxembourg",
+      "service": "googletagmanager.com",
+      "domains": 3,
+      "scanned_domains": 40,
+      "percent": 7.5
+    },
+    {
+      "country_code": "LUXEMBOURG",
+      "country": "Luxembourg",
+      "service": "jsdelivr.net",
+      "domains": 11,
+      "scanned_domains": 40,
+      "percent": 27.5
+    },
+    {
+      "country_code": "LUXEMBOURG",
+      "country": "Luxembourg",
+      "service": "fontawesome.com",
+      "domains": 6,
+      "scanned_domains": 40,
+      "percent": 15.0
+    },
+    {
+      "country_code": "LUXEMBOURG",
+      "country": "Luxembourg",
+      "service": "google.com",
+      "domains": 5,
+      "scanned_domains": 40,
+      "percent": 12.5
+    },
+    {
+      "country_code": "LUXEMBOURG",
+      "country": "Luxembourg",
+      "service": "gstatic.com",
+      "domains": 9,
+      "scanned_domains": 40,
+      "percent": 22.5
+    },
+    {
+      "country_code": "LUXEMBOURG",
+      "country": "Luxembourg",
+      "service": "cloudflare.com",
+      "domains": 3,
+      "scanned_domains": 40,
+      "percent": 7.5
+    },
+    {
+      "country_code": "LUXEMBOURG",
+      "country": "Luxembourg",
+      "service": "jquery.com",
+      "domains": 2,
+      "scanned_domains": 40,
+      "percent": 5.0
+    },
+    {
+      "country_code": "LUXEMBOURG",
+      "country": "Luxembourg",
+      "service": "unpkg.com",
+      "domains": 5,
+      "scanned_domains": 40,
+      "percent": 12.5
+    },
+    {
+      "country_code": "LUXEMBOURG",
+      "country": "Luxembourg",
+      "service": "bootstrapcdn.com",
+      "domains": 2,
+      "scanned_domains": 40,
+      "percent": 5.0
+    },
+    {
+      "country_code": "LUXEMBOURG",
+      "country": "Luxembourg",
+      "service": "typekit.net",
+      "domains": 6,
+      "scanned_domains": 40,
+      "percent": 15.0
+    },
+    {
+      "country_code": "LUXEMBOURG",
+      "country": "Luxembourg",
+      "service": "facebook.com",
+      "domains": 0,
+      "scanned_domains": 40,
+      "percent": 0.0
+    },
+    {
+      "country_code": "LUXEMBOURG",
+      "country": "Luxembourg",
+      "service": "cookiebot.com",
+      "domains": 2,
+      "scanned_domains": 40,
+      "percent": 5.0
+    },
+    {
+      "country_code": "LUXEMBOURG",
+      "country": "Luxembourg",
+      "service": "amazonaws.com",
+      "domains": 1,
+      "scanned_domains": 40,
+      "percent": 2.5
+    },
+    {
+      "country_code": "LUXEMBOURG",
+      "country": "Luxembourg",
+      "service": "facebook.net",
+      "domains": 0,
+      "scanned_domains": 40,
+      "percent": 0.0
+    },
+    {
+      "country_code": "LUXEMBOURG",
+      "country": "Luxembourg",
+      "service": "addtoany.com",
+      "domains": 1,
+      "scanned_domains": 40,
+      "percent": 2.5
+    },
+    {
+      "country_code": "LUXEMBOURG",
+      "country": "Luxembourg",
+      "service": "arcgis.com",
+      "domains": 0,
+      "scanned_domains": 40,
+      "percent": 0.0
+    },
+    {
+      "country_code": "LUXEMBOURG",
+      "country": "Luxembourg",
+      "service": "fbcdn.net",
+      "domains": 1,
+      "scanned_domains": 40,
+      "percent": 2.5
+    },
+    {
+      "country_code": "LUXEMBOURG",
+      "country": "Luxembourg",
+      "service": "mapbox.com",
+      "domains": 0,
+      "scanned_domains": 40,
+      "percent": 0.0
+    },
+    {
+      "country_code": "LUXEMBOURG",
+      "country": "Luxembourg",
+      "service": "cloudfront.net",
+      "domains": 1,
+      "scanned_domains": 40,
+      "percent": 2.5
+    },
+    {
+      "country_code": "AUSTRIA",
+      "country": "Austria",
+      "service": "googleapis.com",
+      "domains": 6,
+      "scanned_domains": 34,
+      "percent": 17.6
+    },
+    {
+      "country_code": "AUSTRIA",
+      "country": "Austria",
+      "service": "googletagmanager.com",
+      "domains": 1,
+      "scanned_domains": 34,
+      "percent": 2.9
+    },
+    {
+      "country_code": "AUSTRIA",
+      "country": "Austria",
+      "service": "jsdelivr.net",
+      "domains": 5,
+      "scanned_domains": 34,
+      "percent": 14.7
+    },
+    {
+      "country_code": "AUSTRIA",
+      "country": "Austria",
+      "service": "fontawesome.com",
+      "domains": 2,
+      "scanned_domains": 34,
+      "percent": 5.9
+    },
+    {
+      "country_code": "AUSTRIA",
+      "country": "Austria",
+      "service": "google.com",
+      "domains": 4,
+      "scanned_domains": 34,
+      "percent": 11.8
+    },
+    {
+      "country_code": "AUSTRIA",
+      "country": "Austria",
+      "service": "gstatic.com",
+      "domains": 2,
+      "scanned_domains": 34,
+      "percent": 5.9
+    },
+    {
+      "country_code": "AUSTRIA",
+      "country": "Austria",
+      "service": "cloudflare.com",
+      "domains": 2,
+      "scanned_domains": 34,
+      "percent": 5.9
+    },
+    {
+      "country_code": "AUSTRIA",
+      "country": "Austria",
+      "service": "jquery.com",
+      "domains": 1,
+      "scanned_domains": 34,
+      "percent": 2.9
+    },
+    {
+      "country_code": "AUSTRIA",
+      "country": "Austria",
+      "service": "unpkg.com",
+      "domains": 1,
+      "scanned_domains": 34,
+      "percent": 2.9
+    },
+    {
+      "country_code": "AUSTRIA",
+      "country": "Austria",
+      "service": "bootstrapcdn.com",
+      "domains": 0,
+      "scanned_domains": 34,
+      "percent": 0.0
+    },
+    {
+      "country_code": "AUSTRIA",
+      "country": "Austria",
+      "service": "typekit.net",
+      "domains": 1,
+      "scanned_domains": 34,
+      "percent": 2.9
+    },
+    {
+      "country_code": "AUSTRIA",
+      "country": "Austria",
+      "service": "facebook.com",
+      "domains": 0,
+      "scanned_domains": 34,
+      "percent": 0.0
+    },
+    {
+      "country_code": "AUSTRIA",
+      "country": "Austria",
+      "service": "cookiebot.com",
+      "domains": 3,
+      "scanned_domains": 34,
+      "percent": 8.8
+    },
+    {
+      "country_code": "AUSTRIA",
+      "country": "Austria",
+      "service": "amazonaws.com",
+      "domains": 0,
+      "scanned_domains": 34,
+      "percent": 0.0
+    },
+    {
+      "country_code": "AUSTRIA",
+      "country": "Austria",
+      "service": "facebook.net",
+      "domains": 1,
+      "scanned_domains": 34,
+      "percent": 2.9
+    },
+    {
+      "country_code": "AUSTRIA",
+      "country": "Austria",
+      "service": "addtoany.com",
+      "domains": 0,
+      "scanned_domains": 34,
+      "percent": 0.0
+    },
+    {
+      "country_code": "AUSTRIA",
+      "country": "Austria",
+      "service": "arcgis.com",
+      "domains": 0,
+      "scanned_domains": 34,
+      "percent": 0.0
+    },
+    {
+      "country_code": "AUSTRIA",
+      "country": "Austria",
+      "service": "fbcdn.net",
+      "domains": 0,
+      "scanned_domains": 34,
+      "percent": 0.0
+    },
+    {
+      "country_code": "AUSTRIA",
+      "country": "Austria",
+      "service": "mapbox.com",
+      "domains": 0,
+      "scanned_domains": 34,
+      "percent": 0.0
+    },
+    {
+      "country_code": "AUSTRIA",
+      "country": "Austria",
+      "service": "cloudfront.net",
+      "domains": 0,
+      "scanned_domains": 34,
+      "percent": 0.0
+    },
+    {
+      "country_code": "NORWAY",
+      "country": "Norway",
+      "service": "googleapis.com",
+      "domains": 13,
+      "scanned_domains": 34,
+      "percent": 38.2
+    },
+    {
+      "country_code": "NORWAY",
+      "country": "Norway",
+      "service": "googletagmanager.com",
+      "domains": 3,
+      "scanned_domains": 34,
+      "percent": 8.8
+    },
+    {
+      "country_code": "NORWAY",
+      "country": "Norway",
+      "service": "jsdelivr.net",
+      "domains": 6,
+      "scanned_domains": 34,
+      "percent": 17.6
+    },
+    {
+      "country_code": "NORWAY",
+      "country": "Norway",
+      "service": "fontawesome.com",
+      "domains": 1,
+      "scanned_domains": 34,
+      "percent": 2.9
+    },
+    {
+      "country_code": "NORWAY",
+      "country": "Norway",
+      "service": "google.com",
+      "domains": 4,
+      "scanned_domains": 34,
+      "percent": 11.8
+    },
+    {
+      "country_code": "NORWAY",
+      "country": "Norway",
+      "service": "gstatic.com",
+      "domains": 5,
+      "scanned_domains": 34,
+      "percent": 14.7
+    },
+    {
+      "country_code": "NORWAY",
+      "country": "Norway",
+      "service": "cloudflare.com",
+      "domains": 6,
+      "scanned_domains": 34,
+      "percent": 17.6
+    },
+    {
+      "country_code": "NORWAY",
+      "country": "Norway",
+      "service": "jquery.com",
+      "domains": 4,
+      "scanned_domains": 34,
+      "percent": 11.8
+    },
+    {
+      "country_code": "NORWAY",
+      "country": "Norway",
+      "service": "unpkg.com",
+      "domains": 3,
+      "scanned_domains": 34,
+      "percent": 8.8
+    },
+    {
+      "country_code": "NORWAY",
+      "country": "Norway",
+      "service": "bootstrapcdn.com",
+      "domains": 4,
+      "scanned_domains": 34,
+      "percent": 11.8
+    },
+    {
+      "country_code": "NORWAY",
+      "country": "Norway",
+      "service": "typekit.net",
+      "domains": 2,
+      "scanned_domains": 34,
+      "percent": 5.9
+    },
+    {
+      "country_code": "NORWAY",
+      "country": "Norway",
+      "service": "facebook.com",
+      "domains": 0,
+      "scanned_domains": 34,
+      "percent": 0.0
+    },
+    {
+      "country_code": "NORWAY",
+      "country": "Norway",
+      "service": "cookiebot.com",
+      "domains": 4,
+      "scanned_domains": 34,
+      "percent": 11.8
+    },
+    {
+      "country_code": "NORWAY",
+      "country": "Norway",
+      "service": "amazonaws.com",
+      "domains": 0,
+      "scanned_domains": 34,
+      "percent": 0.0
+    },
+    {
+      "country_code": "NORWAY",
+      "country": "Norway",
+      "service": "facebook.net",
+      "domains": 0,
+      "scanned_domains": 34,
+      "percent": 0.0
+    },
+    {
+      "country_code": "NORWAY",
+      "country": "Norway",
+      "service": "addtoany.com",
+      "domains": 0,
+      "scanned_domains": 34,
+      "percent": 0.0
+    },
+    {
+      "country_code": "NORWAY",
+      "country": "Norway",
+      "service": "arcgis.com",
+      "domains": 2,
+      "scanned_domains": 34,
+      "percent": 5.9
+    },
+    {
+      "country_code": "NORWAY",
+      "country": "Norway",
+      "service": "fbcdn.net",
+      "domains": 0,
+      "scanned_domains": 34,
+      "percent": 0.0
+    },
+    {
+      "country_code": "NORWAY",
+      "country": "Norway",
+      "service": "mapbox.com",
+      "domains": 0,
+      "scanned_domains": 34,
+      "percent": 0.0
+    },
+    {
+      "country_code": "NORWAY",
+      "country": "Norway",
+      "service": "cloudfront.net",
+      "domains": 2,
+      "scanned_domains": 34,
+      "percent": 5.9
+    },
+    {
+      "country_code": "CZECHIA",
+      "country": "Czechia",
+      "service": "googleapis.com",
+      "domains": 20,
+      "scanned_domains": 32,
+      "percent": 62.5
+    },
+    {
+      "country_code": "CZECHIA",
+      "country": "Czechia",
+      "service": "googletagmanager.com",
+      "domains": 14,
+      "scanned_domains": 32,
+      "percent": 43.8
+    },
+    {
+      "country_code": "CZECHIA",
+      "country": "Czechia",
+      "service": "jsdelivr.net",
+      "domains": 9,
+      "scanned_domains": 32,
+      "percent": 28.1
+    },
+    {
+      "country_code": "CZECHIA",
+      "country": "Czechia",
+      "service": "fontawesome.com",
+      "domains": 4,
+      "scanned_domains": 32,
+      "percent": 12.5
+    },
+    {
+      "country_code": "CZECHIA",
+      "country": "Czechia",
+      "service": "google.com",
+      "domains": 10,
+      "scanned_domains": 32,
+      "percent": 31.2
+    },
+    {
+      "country_code": "CZECHIA",
+      "country": "Czechia",
+      "service": "gstatic.com",
+      "domains": 12,
+      "scanned_domains": 32,
+      "percent": 37.5
+    },
+    {
+      "country_code": "CZECHIA",
+      "country": "Czechia",
+      "service": "cloudflare.com",
+      "domains": 7,
+      "scanned_domains": 32,
+      "percent": 21.9
+    },
+    {
+      "country_code": "CZECHIA",
+      "country": "Czechia",
+      "service": "jquery.com",
+      "domains": 9,
+      "scanned_domains": 32,
+      "percent": 28.1
+    },
+    {
+      "country_code": "CZECHIA",
+      "country": "Czechia",
+      "service": "unpkg.com",
+      "domains": 6,
+      "scanned_domains": 32,
+      "percent": 18.8
+    },
+    {
+      "country_code": "CZECHIA",
+      "country": "Czechia",
+      "service": "bootstrapcdn.com",
+      "domains": 5,
+      "scanned_domains": 32,
+      "percent": 15.6
+    },
+    {
+      "country_code": "CZECHIA",
+      "country": "Czechia",
+      "service": "typekit.net",
+      "domains": 2,
+      "scanned_domains": 32,
+      "percent": 6.2
+    },
+    {
+      "country_code": "CZECHIA",
+      "country": "Czechia",
+      "service": "facebook.com",
+      "domains": 6,
+      "scanned_domains": 32,
+      "percent": 18.8
+    },
+    {
+      "country_code": "CZECHIA",
+      "country": "Czechia",
+      "service": "cookiebot.com",
+      "domains": 1,
+      "scanned_domains": 32,
+      "percent": 3.1
+    },
+    {
+      "country_code": "CZECHIA",
+      "country": "Czechia",
+      "service": "amazonaws.com",
+      "domains": 1,
+      "scanned_domains": 32,
+      "percent": 3.1
+    },
+    {
+      "country_code": "CZECHIA",
+      "country": "Czechia",
+      "service": "facebook.net",
+      "domains": 2,
+      "scanned_domains": 32,
+      "percent": 6.2
+    },
+    {
+      "country_code": "CZECHIA",
+      "country": "Czechia",
+      "service": "addtoany.com",
+      "domains": 0,
+      "scanned_domains": 32,
+      "percent": 0.0
+    },
+    {
+      "country_code": "CZECHIA",
+      "country": "Czechia",
+      "service": "arcgis.com",
+      "domains": 3,
+      "scanned_domains": 32,
+      "percent": 9.4
+    },
+    {
+      "country_code": "CZECHIA",
+      "country": "Czechia",
+      "service": "fbcdn.net",
+      "domains": 1,
+      "scanned_domains": 32,
+      "percent": 3.1
+    },
+    {
+      "country_code": "CZECHIA",
+      "country": "Czechia",
+      "service": "mapbox.com",
+      "domains": 2,
+      "scanned_domains": 32,
+      "percent": 6.2
+    },
+    {
+      "country_code": "CZECHIA",
+      "country": "Czechia",
+      "service": "cloudfront.net",
+      "domains": 1,
+      "scanned_domains": 32,
+      "percent": 3.1
+    },
+    {
+      "country_code": "CROATIA",
+      "country": "Croatia",
+      "service": "googleapis.com",
+      "domains": 15,
+      "scanned_domains": 31,
+      "percent": 48.4
+    },
+    {
+      "country_code": "CROATIA",
+      "country": "Croatia",
+      "service": "googletagmanager.com",
+      "domains": 20,
+      "scanned_domains": 31,
+      "percent": 64.5
+    },
+    {
+      "country_code": "CROATIA",
+      "country": "Croatia",
+      "service": "jsdelivr.net",
+      "domains": 7,
+      "scanned_domains": 31,
+      "percent": 22.6
+    },
+    {
+      "country_code": "CROATIA",
+      "country": "Croatia",
+      "service": "fontawesome.com",
+      "domains": 5,
+      "scanned_domains": 31,
+      "percent": 16.1
+    },
+    {
+      "country_code": "CROATIA",
+      "country": "Croatia",
+      "service": "google.com",
+      "domains": 8,
+      "scanned_domains": 31,
+      "percent": 25.8
+    },
+    {
+      "country_code": "CROATIA",
+      "country": "Croatia",
+      "service": "gstatic.com",
+      "domains": 4,
+      "scanned_domains": 31,
+      "percent": 12.9
+    },
+    {
+      "country_code": "CROATIA",
+      "country": "Croatia",
+      "service": "cloudflare.com",
+      "domains": 8,
+      "scanned_domains": 31,
+      "percent": 25.8
+    },
+    {
+      "country_code": "CROATIA",
+      "country": "Croatia",
+      "service": "jquery.com",
+      "domains": 2,
+      "scanned_domains": 31,
+      "percent": 6.5
+    },
+    {
+      "country_code": "CROATIA",
+      "country": "Croatia",
+      "service": "unpkg.com",
+      "domains": 1,
+      "scanned_domains": 31,
+      "percent": 3.2
+    },
+    {
+      "country_code": "CROATIA",
+      "country": "Croatia",
+      "service": "bootstrapcdn.com",
+      "domains": 4,
+      "scanned_domains": 31,
+      "percent": 12.9
+    },
+    {
+      "country_code": "CROATIA",
+      "country": "Croatia",
+      "service": "typekit.net",
+      "domains": 1,
+      "scanned_domains": 31,
+      "percent": 3.2
+    },
+    {
+      "country_code": "CROATIA",
+      "country": "Croatia",
+      "service": "facebook.com",
+      "domains": 2,
+      "scanned_domains": 31,
+      "percent": 6.5
+    },
+    {
+      "country_code": "CROATIA",
+      "country": "Croatia",
+      "service": "cookiebot.com",
+      "domains": 0,
+      "scanned_domains": 31,
+      "percent": 0.0
+    },
+    {
+      "country_code": "CROATIA",
+      "country": "Croatia",
+      "service": "amazonaws.com",
+      "domains": 0,
+      "scanned_domains": 31,
+      "percent": 0.0
+    },
+    {
+      "country_code": "CROATIA",
+      "country": "Croatia",
+      "service": "facebook.net",
+      "domains": 2,
+      "scanned_domains": 31,
+      "percent": 6.5
+    },
+    {
+      "country_code": "CROATIA",
+      "country": "Croatia",
+      "service": "addtoany.com",
+      "domains": 2,
+      "scanned_domains": 31,
+      "percent": 6.5
+    },
+    {
+      "country_code": "CROATIA",
+      "country": "Croatia",
+      "service": "arcgis.com",
+      "domains": 1,
+      "scanned_domains": 31,
+      "percent": 3.2
+    },
+    {
+      "country_code": "CROATIA",
+      "country": "Croatia",
+      "service": "fbcdn.net",
+      "domains": 1,
+      "scanned_domains": 31,
+      "percent": 3.2
+    },
+    {
+      "country_code": "CROATIA",
+      "country": "Croatia",
+      "service": "mapbox.com",
+      "domains": 0,
+      "scanned_domains": 31,
+      "percent": 0.0
+    },
+    {
+      "country_code": "CROATIA",
+      "country": "Croatia",
+      "service": "cloudfront.net",
+      "domains": 0,
+      "scanned_domains": 31,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ESTONIA",
+      "country": "Estonia",
+      "service": "googleapis.com",
+      "domains": 10,
+      "scanned_domains": 31,
+      "percent": 32.3
+    },
+    {
+      "country_code": "ESTONIA",
+      "country": "Estonia",
+      "service": "googletagmanager.com",
+      "domains": 8,
+      "scanned_domains": 31,
+      "percent": 25.8
+    },
+    {
+      "country_code": "ESTONIA",
+      "country": "Estonia",
+      "service": "jsdelivr.net",
+      "domains": 4,
+      "scanned_domains": 31,
+      "percent": 12.9
+    },
+    {
+      "country_code": "ESTONIA",
+      "country": "Estonia",
+      "service": "fontawesome.com",
+      "domains": 5,
+      "scanned_domains": 31,
+      "percent": 16.1
+    },
+    {
+      "country_code": "ESTONIA",
+      "country": "Estonia",
+      "service": "google.com",
+      "domains": 3,
+      "scanned_domains": 31,
+      "percent": 9.7
+    },
+    {
+      "country_code": "ESTONIA",
+      "country": "Estonia",
+      "service": "gstatic.com",
+      "domains": 5,
+      "scanned_domains": 31,
+      "percent": 16.1
+    },
+    {
+      "country_code": "ESTONIA",
+      "country": "Estonia",
+      "service": "cloudflare.com",
+      "domains": 10,
+      "scanned_domains": 31,
+      "percent": 32.3
+    },
+    {
+      "country_code": "ESTONIA",
+      "country": "Estonia",
+      "service": "jquery.com",
+      "domains": 2,
+      "scanned_domains": 31,
+      "percent": 6.5
+    },
+    {
+      "country_code": "ESTONIA",
+      "country": "Estonia",
+      "service": "unpkg.com",
+      "domains": 0,
+      "scanned_domains": 31,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ESTONIA",
+      "country": "Estonia",
+      "service": "bootstrapcdn.com",
+      "domains": 2,
+      "scanned_domains": 31,
+      "percent": 6.5
+    },
+    {
+      "country_code": "ESTONIA",
+      "country": "Estonia",
+      "service": "typekit.net",
+      "domains": 1,
+      "scanned_domains": 31,
+      "percent": 3.2
+    },
+    {
+      "country_code": "ESTONIA",
+      "country": "Estonia",
+      "service": "facebook.com",
+      "domains": 3,
+      "scanned_domains": 31,
+      "percent": 9.7
+    },
+    {
+      "country_code": "ESTONIA",
+      "country": "Estonia",
+      "service": "cookiebot.com",
+      "domains": 0,
+      "scanned_domains": 31,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ESTONIA",
+      "country": "Estonia",
+      "service": "amazonaws.com",
+      "domains": 0,
+      "scanned_domains": 31,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ESTONIA",
+      "country": "Estonia",
+      "service": "facebook.net",
+      "domains": 3,
+      "scanned_domains": 31,
+      "percent": 9.7
+    },
+    {
+      "country_code": "ESTONIA",
+      "country": "Estonia",
+      "service": "addtoany.com",
+      "domains": 3,
+      "scanned_domains": 31,
+      "percent": 9.7
+    },
+    {
+      "country_code": "ESTONIA",
+      "country": "Estonia",
+      "service": "arcgis.com",
+      "domains": 0,
+      "scanned_domains": 31,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ESTONIA",
+      "country": "Estonia",
+      "service": "fbcdn.net",
+      "domains": 1,
+      "scanned_domains": 31,
+      "percent": 3.2
+    },
+    {
+      "country_code": "ESTONIA",
+      "country": "Estonia",
+      "service": "mapbox.com",
+      "domains": 1,
+      "scanned_domains": 31,
+      "percent": 3.2
+    },
+    {
+      "country_code": "ESTONIA",
+      "country": "Estonia",
+      "service": "cloudfront.net",
+      "domains": 0,
+      "scanned_domains": 31,
+      "percent": 0.0
+    },
+    {
+      "country_code": "HUNGARY",
+      "country": "Hungary",
+      "service": "googleapis.com",
+      "domains": 17,
+      "scanned_domains": 27,
+      "percent": 63.0
+    },
+    {
+      "country_code": "HUNGARY",
+      "country": "Hungary",
+      "service": "googletagmanager.com",
+      "domains": 10,
+      "scanned_domains": 27,
+      "percent": 37.0
+    },
+    {
+      "country_code": "HUNGARY",
+      "country": "Hungary",
+      "service": "jsdelivr.net",
+      "domains": 5,
+      "scanned_domains": 27,
+      "percent": 18.5
+    },
+    {
+      "country_code": "HUNGARY",
+      "country": "Hungary",
+      "service": "fontawesome.com",
+      "domains": 3,
+      "scanned_domains": 27,
+      "percent": 11.1
+    },
+    {
+      "country_code": "HUNGARY",
+      "country": "Hungary",
+      "service": "google.com",
+      "domains": 6,
+      "scanned_domains": 27,
+      "percent": 22.2
+    },
+    {
+      "country_code": "HUNGARY",
+      "country": "Hungary",
+      "service": "gstatic.com",
+      "domains": 6,
+      "scanned_domains": 27,
+      "percent": 22.2
+    },
+    {
+      "country_code": "HUNGARY",
+      "country": "Hungary",
+      "service": "cloudflare.com",
+      "domains": 8,
+      "scanned_domains": 27,
+      "percent": 29.6
+    },
+    {
+      "country_code": "HUNGARY",
+      "country": "Hungary",
+      "service": "jquery.com",
+      "domains": 4,
+      "scanned_domains": 27,
+      "percent": 14.8
+    },
+    {
+      "country_code": "HUNGARY",
+      "country": "Hungary",
+      "service": "unpkg.com",
+      "domains": 1,
+      "scanned_domains": 27,
+      "percent": 3.7
+    },
+    {
+      "country_code": "HUNGARY",
+      "country": "Hungary",
+      "service": "bootstrapcdn.com",
+      "domains": 1,
+      "scanned_domains": 27,
+      "percent": 3.7
+    },
+    {
+      "country_code": "HUNGARY",
+      "country": "Hungary",
+      "service": "typekit.net",
+      "domains": 1,
+      "scanned_domains": 27,
+      "percent": 3.7
+    },
+    {
+      "country_code": "HUNGARY",
+      "country": "Hungary",
+      "service": "facebook.com",
+      "domains": 4,
+      "scanned_domains": 27,
+      "percent": 14.8
+    },
+    {
+      "country_code": "HUNGARY",
+      "country": "Hungary",
+      "service": "cookiebot.com",
+      "domains": 0,
+      "scanned_domains": 27,
+      "percent": 0.0
+    },
+    {
+      "country_code": "HUNGARY",
+      "country": "Hungary",
+      "service": "amazonaws.com",
+      "domains": 1,
+      "scanned_domains": 27,
+      "percent": 3.7
+    },
+    {
+      "country_code": "HUNGARY",
+      "country": "Hungary",
+      "service": "facebook.net",
+      "domains": 1,
+      "scanned_domains": 27,
+      "percent": 3.7
+    },
+    {
+      "country_code": "HUNGARY",
+      "country": "Hungary",
+      "service": "addtoany.com",
+      "domains": 0,
+      "scanned_domains": 27,
+      "percent": 0.0
+    },
+    {
+      "country_code": "HUNGARY",
+      "country": "Hungary",
+      "service": "arcgis.com",
+      "domains": 0,
+      "scanned_domains": 27,
+      "percent": 0.0
+    },
+    {
+      "country_code": "HUNGARY",
+      "country": "Hungary",
+      "service": "fbcdn.net",
+      "domains": 0,
+      "scanned_domains": 27,
+      "percent": 0.0
+    },
+    {
+      "country_code": "HUNGARY",
+      "country": "Hungary",
+      "service": "mapbox.com",
+      "domains": 1,
+      "scanned_domains": 27,
+      "percent": 3.7
+    },
+    {
+      "country_code": "HUNGARY",
+      "country": "Hungary",
+      "service": "cloudfront.net",
+      "domains": 0,
+      "scanned_domains": 27,
+      "percent": 0.0
+    },
+    {
+      "country_code": "SLOVAKIA",
+      "country": "Slovakia",
+      "service": "googleapis.com",
+      "domains": 14,
+      "scanned_domains": 20,
+      "percent": 70.0
+    },
+    {
+      "country_code": "SLOVAKIA",
+      "country": "Slovakia",
+      "service": "googletagmanager.com",
+      "domains": 10,
+      "scanned_domains": 20,
+      "percent": 50.0
+    },
+    {
+      "country_code": "SLOVAKIA",
+      "country": "Slovakia",
+      "service": "jsdelivr.net",
+      "domains": 3,
+      "scanned_domains": 20,
+      "percent": 15.0
+    },
+    {
+      "country_code": "SLOVAKIA",
+      "country": "Slovakia",
+      "service": "fontawesome.com",
+      "domains": 3,
+      "scanned_domains": 20,
+      "percent": 15.0
+    },
+    {
+      "country_code": "SLOVAKIA",
+      "country": "Slovakia",
+      "service": "google.com",
+      "domains": 9,
+      "scanned_domains": 20,
+      "percent": 45.0
+    },
+    {
+      "country_code": "SLOVAKIA",
+      "country": "Slovakia",
+      "service": "gstatic.com",
+      "domains": 7,
+      "scanned_domains": 20,
+      "percent": 35.0
+    },
+    {
+      "country_code": "SLOVAKIA",
+      "country": "Slovakia",
+      "service": "cloudflare.com",
+      "domains": 4,
+      "scanned_domains": 20,
+      "percent": 20.0
+    },
+    {
+      "country_code": "SLOVAKIA",
+      "country": "Slovakia",
+      "service": "jquery.com",
+      "domains": 3,
+      "scanned_domains": 20,
+      "percent": 15.0
+    },
+    {
+      "country_code": "SLOVAKIA",
+      "country": "Slovakia",
+      "service": "unpkg.com",
+      "domains": 3,
+      "scanned_domains": 20,
+      "percent": 15.0
+    },
+    {
+      "country_code": "SLOVAKIA",
+      "country": "Slovakia",
+      "service": "bootstrapcdn.com",
+      "domains": 1,
+      "scanned_domains": 20,
+      "percent": 5.0
+    },
+    {
+      "country_code": "SLOVAKIA",
+      "country": "Slovakia",
+      "service": "typekit.net",
+      "domains": 0,
+      "scanned_domains": 20,
+      "percent": 0.0
+    },
+    {
+      "country_code": "SLOVAKIA",
+      "country": "Slovakia",
+      "service": "facebook.com",
+      "domains": 2,
+      "scanned_domains": 20,
+      "percent": 10.0
+    },
+    {
+      "country_code": "SLOVAKIA",
+      "country": "Slovakia",
+      "service": "cookiebot.com",
+      "domains": 0,
+      "scanned_domains": 20,
+      "percent": 0.0
+    },
+    {
+      "country_code": "SLOVAKIA",
+      "country": "Slovakia",
+      "service": "amazonaws.com",
+      "domains": 1,
+      "scanned_domains": 20,
+      "percent": 5.0
+    },
+    {
+      "country_code": "SLOVAKIA",
+      "country": "Slovakia",
+      "service": "facebook.net",
+      "domains": 3,
+      "scanned_domains": 20,
+      "percent": 15.0
+    },
+    {
+      "country_code": "SLOVAKIA",
+      "country": "Slovakia",
+      "service": "addtoany.com",
+      "domains": 1,
+      "scanned_domains": 20,
+      "percent": 5.0
+    },
+    {
+      "country_code": "SLOVAKIA",
+      "country": "Slovakia",
+      "service": "arcgis.com",
+      "domains": 2,
+      "scanned_domains": 20,
+      "percent": 10.0
+    },
+    {
+      "country_code": "SLOVAKIA",
+      "country": "Slovakia",
+      "service": "fbcdn.net",
+      "domains": 1,
+      "scanned_domains": 20,
+      "percent": 5.0
+    },
+    {
+      "country_code": "SLOVAKIA",
+      "country": "Slovakia",
+      "service": "mapbox.com",
+      "domains": 1,
+      "scanned_domains": 20,
+      "percent": 5.0
+    },
+    {
+      "country_code": "SLOVAKIA",
+      "country": "Slovakia",
+      "service": "cloudfront.net",
+      "domains": 0,
+      "scanned_domains": 20,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "googleapis.com",
+      "domains": 11,
+      "scanned_domains": 19,
+      "percent": 57.9
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "googletagmanager.com",
+      "domains": 5,
+      "scanned_domains": 19,
+      "percent": 26.3
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "jsdelivr.net",
+      "domains": 2,
+      "scanned_domains": 19,
+      "percent": 10.5
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "fontawesome.com",
+      "domains": 3,
+      "scanned_domains": 19,
+      "percent": 15.8
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "google.com",
+      "domains": 0,
+      "scanned_domains": 19,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "gstatic.com",
+      "domains": 3,
+      "scanned_domains": 19,
+      "percent": 15.8
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "cloudflare.com",
+      "domains": 4,
+      "scanned_domains": 19,
+      "percent": 21.1
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "jquery.com",
+      "domains": 0,
+      "scanned_domains": 19,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "unpkg.com",
+      "domains": 1,
+      "scanned_domains": 19,
+      "percent": 5.3
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "bootstrapcdn.com",
+      "domains": 1,
+      "scanned_domains": 19,
+      "percent": 5.3
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "typekit.net",
+      "domains": 3,
+      "scanned_domains": 19,
+      "percent": 15.8
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "facebook.com",
+      "domains": 1,
+      "scanned_domains": 19,
+      "percent": 5.3
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "cookiebot.com",
+      "domains": 0,
+      "scanned_domains": 19,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "amazonaws.com",
+      "domains": 0,
+      "scanned_domains": 19,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "facebook.net",
+      "domains": 0,
+      "scanned_domains": 19,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "addtoany.com",
+      "domains": 0,
+      "scanned_domains": 19,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "arcgis.com",
+      "domains": 2,
+      "scanned_domains": 19,
+      "percent": 10.5
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "fbcdn.net",
+      "domains": 0,
+      "scanned_domains": 19,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "mapbox.com",
+      "domains": 0,
+      "scanned_domains": 19,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "cloudfront.net",
+      "domains": 0,
+      "scanned_domains": 19,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "googleapis.com",
+      "domains": 8,
+      "scanned_domains": 16,
+      "percent": 50.0
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "googletagmanager.com",
+      "domains": 6,
+      "scanned_domains": 16,
+      "percent": 37.5
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "jsdelivr.net",
+      "domains": 1,
+      "scanned_domains": 16,
+      "percent": 6.2
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "fontawesome.com",
+      "domains": 1,
+      "scanned_domains": 16,
+      "percent": 6.2
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "google.com",
+      "domains": 3,
+      "scanned_domains": 16,
+      "percent": 18.8
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "gstatic.com",
+      "domains": 0,
+      "scanned_domains": 16,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "cloudflare.com",
+      "domains": 2,
+      "scanned_domains": 16,
+      "percent": 12.5
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "jquery.com",
+      "domains": 2,
+      "scanned_domains": 16,
+      "percent": 12.5
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "unpkg.com",
+      "domains": 1,
+      "scanned_domains": 16,
+      "percent": 6.2
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "bootstrapcdn.com",
+      "domains": 0,
+      "scanned_domains": 16,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "typekit.net",
+      "domains": 0,
+      "scanned_domains": 16,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "facebook.com",
+      "domains": 0,
+      "scanned_domains": 16,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "cookiebot.com",
+      "domains": 0,
+      "scanned_domains": 16,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "amazonaws.com",
+      "domains": 1,
+      "scanned_domains": 16,
+      "percent": 6.2
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "facebook.net",
+      "domains": 0,
+      "scanned_domains": 16,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "addtoany.com",
+      "domains": 0,
+      "scanned_domains": 16,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "arcgis.com",
+      "domains": 0,
+      "scanned_domains": 16,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "fbcdn.net",
+      "domains": 0,
+      "scanned_domains": 16,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "mapbox.com",
+      "domains": 0,
+      "scanned_domains": 16,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "cloudfront.net",
+      "domains": 0,
+      "scanned_domains": 16,
+      "percent": 0.0
+    },
+    {
+      "country_code": "SLOVENIA",
+      "country": "Slovenia",
+      "service": "googleapis.com",
+      "domains": 6,
+      "scanned_domains": 16,
+      "percent": 37.5
+    },
+    {
+      "country_code": "SLOVENIA",
+      "country": "Slovenia",
+      "service": "googletagmanager.com",
+      "domains": 5,
+      "scanned_domains": 16,
+      "percent": 31.2
+    },
+    {
+      "country_code": "SLOVENIA",
+      "country": "Slovenia",
+      "service": "jsdelivr.net",
+      "domains": 5,
+      "scanned_domains": 16,
+      "percent": 31.2
+    },
+    {
+      "country_code": "SLOVENIA",
+      "country": "Slovenia",
+      "service": "fontawesome.com",
+      "domains": 3,
+      "scanned_domains": 16,
+      "percent": 18.8
+    },
+    {
+      "country_code": "SLOVENIA",
+      "country": "Slovenia",
+      "service": "google.com",
+      "domains": 2,
+      "scanned_domains": 16,
+      "percent": 12.5
+    },
+    {
+      "country_code": "SLOVENIA",
+      "country": "Slovenia",
+      "service": "gstatic.com",
+      "domains": 2,
+      "scanned_domains": 16,
+      "percent": 12.5
+    },
+    {
+      "country_code": "SLOVENIA",
+      "country": "Slovenia",
+      "service": "cloudflare.com",
+      "domains": 6,
+      "scanned_domains": 16,
+      "percent": 37.5
+    },
+    {
+      "country_code": "SLOVENIA",
+      "country": "Slovenia",
+      "service": "jquery.com",
+      "domains": 2,
+      "scanned_domains": 16,
+      "percent": 12.5
+    },
+    {
+      "country_code": "SLOVENIA",
+      "country": "Slovenia",
+      "service": "unpkg.com",
+      "domains": 1,
+      "scanned_domains": 16,
+      "percent": 6.2
+    },
+    {
+      "country_code": "SLOVENIA",
+      "country": "Slovenia",
+      "service": "bootstrapcdn.com",
+      "domains": 2,
+      "scanned_domains": 16,
+      "percent": 12.5
+    },
+    {
+      "country_code": "SLOVENIA",
+      "country": "Slovenia",
+      "service": "typekit.net",
+      "domains": 0,
+      "scanned_domains": 16,
+      "percent": 0.0
+    },
+    {
+      "country_code": "SLOVENIA",
+      "country": "Slovenia",
+      "service": "facebook.com",
+      "domains": 0,
+      "scanned_domains": 16,
+      "percent": 0.0
+    },
+    {
+      "country_code": "SLOVENIA",
+      "country": "Slovenia",
+      "service": "cookiebot.com",
+      "domains": 0,
+      "scanned_domains": 16,
+      "percent": 0.0
+    },
+    {
+      "country_code": "SLOVENIA",
+      "country": "Slovenia",
+      "service": "amazonaws.com",
+      "domains": 0,
+      "scanned_domains": 16,
+      "percent": 0.0
+    },
+    {
+      "country_code": "SLOVENIA",
+      "country": "Slovenia",
+      "service": "facebook.net",
+      "domains": 0,
+      "scanned_domains": 16,
+      "percent": 0.0
+    },
+    {
+      "country_code": "SLOVENIA",
+      "country": "Slovenia",
+      "service": "addtoany.com",
+      "domains": 0,
+      "scanned_domains": 16,
+      "percent": 0.0
+    },
+    {
+      "country_code": "SLOVENIA",
+      "country": "Slovenia",
+      "service": "arcgis.com",
+      "domains": 1,
+      "scanned_domains": 16,
+      "percent": 6.2
+    },
+    {
+      "country_code": "SLOVENIA",
+      "country": "Slovenia",
+      "service": "fbcdn.net",
+      "domains": 0,
+      "scanned_domains": 16,
+      "percent": 0.0
+    },
+    {
+      "country_code": "SLOVENIA",
+      "country": "Slovenia",
+      "service": "mapbox.com",
+      "domains": 0,
+      "scanned_domains": 16,
+      "percent": 0.0
+    },
+    {
+      "country_code": "SLOVENIA",
+      "country": "Slovenia",
+      "service": "cloudfront.net",
+      "domains": 0,
+      "scanned_domains": 16,
+      "percent": 0.0
+    },
+    {
+      "country_code": "LITHUANIA",
+      "country": "Lithuania",
+      "service": "googleapis.com",
+      "domains": 8,
+      "scanned_domains": 15,
+      "percent": 53.3
+    },
+    {
+      "country_code": "LITHUANIA",
+      "country": "Lithuania",
+      "service": "googletagmanager.com",
+      "domains": 6,
+      "scanned_domains": 15,
+      "percent": 40.0
+    },
+    {
+      "country_code": "LITHUANIA",
+      "country": "Lithuania",
+      "service": "jsdelivr.net",
+      "domains": 6,
+      "scanned_domains": 15,
+      "percent": 40.0
+    },
+    {
+      "country_code": "LITHUANIA",
+      "country": "Lithuania",
+      "service": "fontawesome.com",
+      "domains": 2,
+      "scanned_domains": 15,
+      "percent": 13.3
+    },
+    {
+      "country_code": "LITHUANIA",
+      "country": "Lithuania",
+      "service": "google.com",
+      "domains": 3,
+      "scanned_domains": 15,
+      "percent": 20.0
+    },
+    {
+      "country_code": "LITHUANIA",
+      "country": "Lithuania",
+      "service": "gstatic.com",
+      "domains": 5,
+      "scanned_domains": 15,
+      "percent": 33.3
+    },
+    {
+      "country_code": "LITHUANIA",
+      "country": "Lithuania",
+      "service": "cloudflare.com",
+      "domains": 5,
+      "scanned_domains": 15,
+      "percent": 33.3
+    },
+    {
+      "country_code": "LITHUANIA",
+      "country": "Lithuania",
+      "service": "jquery.com",
+      "domains": 3,
+      "scanned_domains": 15,
+      "percent": 20.0
+    },
+    {
+      "country_code": "LITHUANIA",
+      "country": "Lithuania",
+      "service": "unpkg.com",
+      "domains": 1,
+      "scanned_domains": 15,
+      "percent": 6.7
+    },
+    {
+      "country_code": "LITHUANIA",
+      "country": "Lithuania",
+      "service": "bootstrapcdn.com",
+      "domains": 2,
+      "scanned_domains": 15,
+      "percent": 13.3
+    },
+    {
+      "country_code": "LITHUANIA",
+      "country": "Lithuania",
+      "service": "typekit.net",
+      "domains": 0,
+      "scanned_domains": 15,
+      "percent": 0.0
+    },
+    {
+      "country_code": "LITHUANIA",
+      "country": "Lithuania",
+      "service": "facebook.com",
+      "domains": 1,
+      "scanned_domains": 15,
+      "percent": 6.7
+    },
+    {
+      "country_code": "LITHUANIA",
+      "country": "Lithuania",
+      "service": "cookiebot.com",
+      "domains": 0,
+      "scanned_domains": 15,
+      "percent": 0.0
+    },
+    {
+      "country_code": "LITHUANIA",
+      "country": "Lithuania",
+      "service": "amazonaws.com",
+      "domains": 1,
+      "scanned_domains": 15,
+      "percent": 6.7
+    },
+    {
+      "country_code": "LITHUANIA",
+      "country": "Lithuania",
+      "service": "facebook.net",
+      "domains": 1,
+      "scanned_domains": 15,
+      "percent": 6.7
+    },
+    {
+      "country_code": "LITHUANIA",
+      "country": "Lithuania",
+      "service": "addtoany.com",
+      "domains": 0,
+      "scanned_domains": 15,
+      "percent": 0.0
+    },
+    {
+      "country_code": "LITHUANIA",
+      "country": "Lithuania",
+      "service": "arcgis.com",
+      "domains": 2,
+      "scanned_domains": 15,
+      "percent": 13.3
+    },
+    {
+      "country_code": "LITHUANIA",
+      "country": "Lithuania",
+      "service": "fbcdn.net",
+      "domains": 1,
+      "scanned_domains": 15,
+      "percent": 6.7
+    },
+    {
+      "country_code": "LITHUANIA",
+      "country": "Lithuania",
+      "service": "mapbox.com",
+      "domains": 0,
+      "scanned_domains": 15,
+      "percent": 0.0
+    },
+    {
+      "country_code": "LITHUANIA",
+      "country": "Lithuania",
+      "service": "cloudfront.net",
+      "domains": 0,
+      "scanned_domains": 15,
+      "percent": 0.0
+    },
+    {
+      "country_code": "SWITZERLAND",
+      "country": "Switzerland",
+      "service": "googleapis.com",
+      "domains": 5,
+      "scanned_domains": 9,
+      "percent": 55.6
+    },
+    {
+      "country_code": "SWITZERLAND",
+      "country": "Switzerland",
+      "service": "googletagmanager.com",
+      "domains": 4,
+      "scanned_domains": 9,
+      "percent": 44.4
+    },
+    {
+      "country_code": "SWITZERLAND",
+      "country": "Switzerland",
+      "service": "jsdelivr.net",
+      "domains": 5,
+      "scanned_domains": 9,
+      "percent": 55.6
+    },
+    {
+      "country_code": "SWITZERLAND",
+      "country": "Switzerland",
+      "service": "fontawesome.com",
+      "domains": 2,
+      "scanned_domains": 9,
+      "percent": 22.2
+    },
+    {
+      "country_code": "SWITZERLAND",
+      "country": "Switzerland",
+      "service": "google.com",
+      "domains": 3,
+      "scanned_domains": 9,
+      "percent": 33.3
+    },
+    {
+      "country_code": "SWITZERLAND",
+      "country": "Switzerland",
+      "service": "gstatic.com",
+      "domains": 4,
+      "scanned_domains": 9,
+      "percent": 44.4
+    },
+    {
+      "country_code": "SWITZERLAND",
+      "country": "Switzerland",
+      "service": "cloudflare.com",
+      "domains": 5,
+      "scanned_domains": 9,
+      "percent": 55.6
+    },
+    {
+      "country_code": "SWITZERLAND",
+      "country": "Switzerland",
+      "service": "jquery.com",
+      "domains": 4,
+      "scanned_domains": 9,
+      "percent": 44.4
+    },
+    {
+      "country_code": "SWITZERLAND",
+      "country": "Switzerland",
+      "service": "unpkg.com",
+      "domains": 2,
+      "scanned_domains": 9,
+      "percent": 22.2
+    },
+    {
+      "country_code": "SWITZERLAND",
+      "country": "Switzerland",
+      "service": "bootstrapcdn.com",
+      "domains": 3,
+      "scanned_domains": 9,
+      "percent": 33.3
+    },
+    {
+      "country_code": "SWITZERLAND",
+      "country": "Switzerland",
+      "service": "typekit.net",
+      "domains": 1,
+      "scanned_domains": 9,
+      "percent": 11.1
+    },
+    {
+      "country_code": "SWITZERLAND",
+      "country": "Switzerland",
+      "service": "facebook.com",
+      "domains": 0,
+      "scanned_domains": 9,
+      "percent": 0.0
+    },
+    {
+      "country_code": "SWITZERLAND",
+      "country": "Switzerland",
+      "service": "cookiebot.com",
+      "domains": 1,
+      "scanned_domains": 9,
+      "percent": 11.1
+    },
+    {
+      "country_code": "SWITZERLAND",
+      "country": "Switzerland",
+      "service": "amazonaws.com",
+      "domains": 2,
+      "scanned_domains": 9,
+      "percent": 22.2
+    },
+    {
+      "country_code": "SWITZERLAND",
+      "country": "Switzerland",
+      "service": "facebook.net",
+      "domains": 0,
+      "scanned_domains": 9,
+      "percent": 0.0
+    },
+    {
+      "country_code": "SWITZERLAND",
+      "country": "Switzerland",
+      "service": "addtoany.com",
+      "domains": 0,
+      "scanned_domains": 9,
+      "percent": 0.0
+    },
+    {
+      "country_code": "SWITZERLAND",
+      "country": "Switzerland",
+      "service": "arcgis.com",
+      "domains": 0,
+      "scanned_domains": 9,
+      "percent": 0.0
+    },
+    {
+      "country_code": "SWITZERLAND",
+      "country": "Switzerland",
+      "service": "fbcdn.net",
+      "domains": 0,
+      "scanned_domains": 9,
+      "percent": 0.0
+    },
+    {
+      "country_code": "SWITZERLAND",
+      "country": "Switzerland",
+      "service": "mapbox.com",
+      "domains": 1,
+      "scanned_domains": 9,
+      "percent": 11.1
+    },
+    {
+      "country_code": "SWITZERLAND",
+      "country": "Switzerland",
+      "service": "cloudfront.net",
+      "domains": 2,
+      "scanned_domains": 9,
+      "percent": 22.2
+    },
+    {
+      "country_code": "REPUBLIC_OF_CYPRUS",
+      "country": "Cyprus",
+      "service": "googleapis.com",
+      "domains": 4,
+      "scanned_domains": 5,
+      "percent": 80.0
+    },
+    {
+      "country_code": "REPUBLIC_OF_CYPRUS",
+      "country": "Cyprus",
+      "service": "googletagmanager.com",
+      "domains": 2,
+      "scanned_domains": 5,
+      "percent": 40.0
+    },
+    {
+      "country_code": "REPUBLIC_OF_CYPRUS",
+      "country": "Cyprus",
+      "service": "jsdelivr.net",
+      "domains": 1,
+      "scanned_domains": 5,
+      "percent": 20.0
+    },
+    {
+      "country_code": "REPUBLIC_OF_CYPRUS",
+      "country": "Cyprus",
+      "service": "fontawesome.com",
+      "domains": 1,
+      "scanned_domains": 5,
+      "percent": 20.0
+    },
+    {
+      "country_code": "REPUBLIC_OF_CYPRUS",
+      "country": "Cyprus",
+      "service": "google.com",
+      "domains": 1,
+      "scanned_domains": 5,
+      "percent": 20.0
+    },
+    {
+      "country_code": "REPUBLIC_OF_CYPRUS",
+      "country": "Cyprus",
+      "service": "gstatic.com",
+      "domains": 2,
+      "scanned_domains": 5,
+      "percent": 40.0
+    },
+    {
+      "country_code": "REPUBLIC_OF_CYPRUS",
+      "country": "Cyprus",
+      "service": "cloudflare.com",
+      "domains": 0,
+      "scanned_domains": 5,
+      "percent": 0.0
+    },
+    {
+      "country_code": "REPUBLIC_OF_CYPRUS",
+      "country": "Cyprus",
+      "service": "jquery.com",
+      "domains": 0,
+      "scanned_domains": 5,
+      "percent": 0.0
+    },
+    {
+      "country_code": "REPUBLIC_OF_CYPRUS",
+      "country": "Cyprus",
+      "service": "unpkg.com",
+      "domains": 0,
+      "scanned_domains": 5,
+      "percent": 0.0
+    },
+    {
+      "country_code": "REPUBLIC_OF_CYPRUS",
+      "country": "Cyprus",
+      "service": "bootstrapcdn.com",
+      "domains": 0,
+      "scanned_domains": 5,
+      "percent": 0.0
+    },
+    {
+      "country_code": "REPUBLIC_OF_CYPRUS",
+      "country": "Cyprus",
+      "service": "typekit.net",
+      "domains": 0,
+      "scanned_domains": 5,
+      "percent": 0.0
+    },
+    {
+      "country_code": "REPUBLIC_OF_CYPRUS",
+      "country": "Cyprus",
+      "service": "facebook.com",
+      "domains": 0,
+      "scanned_domains": 5,
+      "percent": 0.0
+    },
+    {
+      "country_code": "REPUBLIC_OF_CYPRUS",
+      "country": "Cyprus",
+      "service": "cookiebot.com",
+      "domains": 0,
+      "scanned_domains": 5,
+      "percent": 0.0
+    },
+    {
+      "country_code": "REPUBLIC_OF_CYPRUS",
+      "country": "Cyprus",
+      "service": "amazonaws.com",
+      "domains": 0,
+      "scanned_domains": 5,
+      "percent": 0.0
+    },
+    {
+      "country_code": "REPUBLIC_OF_CYPRUS",
+      "country": "Cyprus",
+      "service": "facebook.net",
+      "domains": 0,
+      "scanned_domains": 5,
+      "percent": 0.0
+    },
+    {
+      "country_code": "REPUBLIC_OF_CYPRUS",
+      "country": "Cyprus",
+      "service": "addtoany.com",
+      "domains": 1,
+      "scanned_domains": 5,
+      "percent": 20.0
+    },
+    {
+      "country_code": "REPUBLIC_OF_CYPRUS",
+      "country": "Cyprus",
+      "service": "arcgis.com",
+      "domains": 0,
+      "scanned_domains": 5,
+      "percent": 0.0
+    },
+    {
+      "country_code": "REPUBLIC_OF_CYPRUS",
+      "country": "Cyprus",
+      "service": "fbcdn.net",
+      "domains": 0,
+      "scanned_domains": 5,
+      "percent": 0.0
+    },
+    {
+      "country_code": "REPUBLIC_OF_CYPRUS",
+      "country": "Cyprus",
+      "service": "mapbox.com",
+      "domains": 0,
+      "scanned_domains": 5,
+      "percent": 0.0
+    },
+    {
+      "country_code": "REPUBLIC_OF_CYPRUS",
+      "country": "Cyprus",
+      "service": "cloudfront.net",
+      "domains": 0,
+      "scanned_domains": 5,
+      "percent": 0.0
+    },
+    {
+      "country_code": "MALTA",
+      "country": "Malta",
+      "service": "googleapis.com",
+      "domains": 2,
+      "scanned_domains": 3,
+      "percent": 66.7
+    },
+    {
+      "country_code": "MALTA",
+      "country": "Malta",
+      "service": "googletagmanager.com",
+      "domains": 1,
+      "scanned_domains": 3,
+      "percent": 33.3
+    },
+    {
+      "country_code": "MALTA",
+      "country": "Malta",
+      "service": "jsdelivr.net",
+      "domains": 1,
+      "scanned_domains": 3,
+      "percent": 33.3
+    },
+    {
+      "country_code": "MALTA",
+      "country": "Malta",
+      "service": "fontawesome.com",
+      "domains": 2,
+      "scanned_domains": 3,
+      "percent": 66.7
+    },
+    {
+      "country_code": "MALTA",
+      "country": "Malta",
+      "service": "google.com",
+      "domains": 1,
+      "scanned_domains": 3,
+      "percent": 33.3
+    },
+    {
+      "country_code": "MALTA",
+      "country": "Malta",
+      "service": "gstatic.com",
+      "domains": 1,
+      "scanned_domains": 3,
+      "percent": 33.3
+    },
+    {
+      "country_code": "MALTA",
+      "country": "Malta",
+      "service": "cloudflare.com",
+      "domains": 1,
+      "scanned_domains": 3,
+      "percent": 33.3
+    },
+    {
+      "country_code": "MALTA",
+      "country": "Malta",
+      "service": "jquery.com",
+      "domains": 1,
+      "scanned_domains": 3,
+      "percent": 33.3
+    },
+    {
+      "country_code": "MALTA",
+      "country": "Malta",
+      "service": "unpkg.com",
+      "domains": 1,
+      "scanned_domains": 3,
+      "percent": 33.3
+    },
+    {
+      "country_code": "MALTA",
+      "country": "Malta",
+      "service": "bootstrapcdn.com",
+      "domains": 1,
+      "scanned_domains": 3,
+      "percent": 33.3
+    },
+    {
+      "country_code": "MALTA",
+      "country": "Malta",
+      "service": "typekit.net",
+      "domains": 1,
+      "scanned_domains": 3,
+      "percent": 33.3
+    },
+    {
+      "country_code": "MALTA",
+      "country": "Malta",
+      "service": "facebook.com",
+      "domains": 1,
+      "scanned_domains": 3,
+      "percent": 33.3
+    },
+    {
+      "country_code": "MALTA",
+      "country": "Malta",
+      "service": "cookiebot.com",
+      "domains": 1,
+      "scanned_domains": 3,
+      "percent": 33.3
+    },
+    {
+      "country_code": "MALTA",
+      "country": "Malta",
+      "service": "amazonaws.com",
+      "domains": 1,
+      "scanned_domains": 3,
+      "percent": 33.3
+    },
+    {
+      "country_code": "MALTA",
+      "country": "Malta",
+      "service": "facebook.net",
+      "domains": 1,
+      "scanned_domains": 3,
+      "percent": 33.3
+    },
+    {
+      "country_code": "MALTA",
+      "country": "Malta",
+      "service": "addtoany.com",
+      "domains": 1,
+      "scanned_domains": 3,
+      "percent": 33.3
+    },
+    {
+      "country_code": "MALTA",
+      "country": "Malta",
+      "service": "arcgis.com",
+      "domains": 1,
+      "scanned_domains": 3,
+      "percent": 33.3
+    },
+    {
+      "country_code": "MALTA",
+      "country": "Malta",
+      "service": "fbcdn.net",
+      "domains": 1,
+      "scanned_domains": 3,
+      "percent": 33.3
+    },
+    {
+      "country_code": "MALTA",
+      "country": "Malta",
+      "service": "mapbox.com",
+      "domains": 1,
+      "scanned_domains": 3,
+      "percent": 33.3
+    },
+    {
+      "country_code": "MALTA",
+      "country": "Malta",
+      "service": "cloudfront.net",
+      "domains": 0,
+      "scanned_domains": 3,
+      "percent": 0.0
+    }
+  ]
+}
