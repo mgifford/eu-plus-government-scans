@@ -72,11 +72,11 @@
       "count": 8
     },
     {
-      "domain": "samgongustofa.is",
+      "domain": "domstolar.is",
       "count": 5
     },
     {
-      "domain": "domstolar.is",
+      "domain": "samgongustofa.is",
       "count": 5
     },
     {
@@ -130,15 +130,15 @@
       "count": 23
     },
     {
+      "domain": "gardabaer.is",
+      "count": 20
+    },
+    {
       "domain": "shs.is",
       "count": 20
     },
     {
       "domain": "skatturinn.is",
-      "count": 20
-    },
-    {
-      "domain": "gardabaer.is",
       "count": 20
     },
     {
@@ -150,11 +150,11 @@
       "count": 18
     },
     {
-      "domain": "hafnarfjordur.is",
+      "domain": "forseti.is",
       "count": 15
     },
     {
-      "domain": "forseti.is",
+      "domain": "hafnarfjordur.is",
       "count": 15
     },
     {
@@ -182,11 +182,11 @@
       "count": 11
     },
     {
-      "domain": "google.com",
+      "domain": "cloudflare.com",
       "count": 10
     },
     {
-      "domain": "cloudflare.com",
+      "domain": "google.com",
       "count": 10
     },
     {
@@ -194,19 +194,19 @@
       "count": 9
     },
     {
-      "domain": "linkedin.com",
-      "count": 9
-    },
-    {
       "domain": "stjornarradid.is",
       "count": 9
     },
     {
-      "domain": "typekit.net",
-      "count": 8
+      "domain": "linkedin.com",
+      "count": 9
     },
     {
       "domain": "twitter.com",
+      "count": 8
+    },
+    {
+      "domain": "typekit.net",
       "count": 8
     },
     {
@@ -218,11 +218,7 @@
       "count": 7
     },
     {
-      "domain": "arcgis.com",
-      "count": 6
-    },
-    {
-      "domain": "in-tend.co.uk",
+      "domain": "stillingar.is",
       "count": 6
     },
     {
@@ -230,11 +226,7 @@
       "count": 6
     },
     {
-      "domain": "stillingar.is",
-      "count": 6
-    },
-    {
-      "domain": "statice.is",
+      "domain": "government.is",
       "count": 6
     },
     {
@@ -242,15 +234,23 @@
       "count": 6
     },
     {
+      "domain": "statice.is",
+      "count": 6
+    },
+    {
       "domain": "x.com",
       "count": 6
     },
     {
-      "domain": "government.is",
+      "domain": "oracle.com",
       "count": 6
     },
     {
-      "domain": "oracle.com",
+      "domain": "arcgis.com",
+      "count": 6
+    },
+    {
+      "domain": "in-tend.co.uk",
       "count": 6
     },
     {
@@ -262,37 +262,37 @@
       "count": 5
     },
     {
+      "domain": "loftgaedi.is",
+      "count": 4
+    },
+    {
+      "domain": "samgongustofa.is",
+      "count": 4
+    },
+    {
+      "domain": "signet.is",
+      "count": 4
+    },
+    {
+      "domain": "vedur.is",
+      "count": 4
+    },
+    {
+      "domain": "domstolar.is",
+      "count": 4
+    },
+    {
       "domain": "borgarbokasafn.is",
-      "count": 4
-    },
-    {
-      "domain": "reykjavikcitymuseum.is",
-      "count": 4
-    },
-    {
-      "domain": "visitreykjavik.is",
-      "count": 4
-    },
-    {
-      "domain": "fristund.is",
-      "count": 4
-    },
-    {
-      "domain": "listasafnreykjavikur.is",
-      "count": 4
-    },
-    {
-      "domain": "menntastefna.is",
       "count": 4
     }
   ],
   "relationship_types": {
     "editorial_link": 278,
-    "stylesheet_dependency": 71,
-    "image_or_media_dependency": 54,
     "script_dependency": 87,
-    "font_or_preload_dependency": 31,
-    "form_destination": 26
+    "stylesheet_dependency": 71,
+    "form_destination": 26,
+    "image_or_media_dependency": 54,
+    "font_or_preload_dependency": 31
   },
-  "generated_at": "2026-08-10T08:27:45.905052+00:00"
+  "generated_at": "2026-08-12T13:25:36.135325+00:00"
 }

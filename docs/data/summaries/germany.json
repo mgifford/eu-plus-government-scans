@@ -104,11 +104,11 @@
       "count": 176
     },
     {
-      "domain": "thw.de",
+      "domain": "jena.de",
       "count": 168
     },
     {
-      "domain": "jena.de",
+      "domain": "thw.de",
       "count": 168
     },
     {
@@ -354,11 +354,11 @@
       "count": 235
     },
     {
-      "domain": "usercentrics.eu",
+      "domain": "wordpress.org",
       "count": 213
     },
     {
-      "domain": "wordpress.org",
+      "domain": "usercentrics.eu",
       "count": 213
     },
     {
@@ -370,11 +370,11 @@
       "count": 199
     },
     {
-      "domain": "xing.com",
+      "domain": "deutschland.de",
       "count": 198
     },
     {
-      "domain": "deutschland.de",
+      "domain": "xing.com",
       "count": 198
     },
     {
@@ -408,11 +408,11 @@
   ],
   "relationship_types": {
     "editorial_link": 10992,
+    "font_or_preload_dependency": 335,
+    "image_or_media_dependency": 2743,
     "script_dependency": 2855,
     "stylesheet_dependency": 2701,
-    "image_or_media_dependency": 2743,
-    "form_destination": 2130,
-    "font_or_preload_dependency": 335
+    "form_destination": 2130
   },
-  "generated_at": "2026-08-10T08:27:47.149152+00:00"
+  "generated_at": "2026-08-12T13:25:37.255676+00:00"
 }

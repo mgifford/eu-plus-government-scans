@@ -160,11 +160,11 @@
       "count": 198
     },
     {
-      "domain": "dgeg.gov.pt",
+      "domain": "cm-pacosdeferreira.pt",
       "count": 191
     },
     {
-      "domain": "cm-pacosdeferreira.pt",
+      "domain": "dgeg.gov.pt",
       "count": 191
     },
     {
@@ -370,11 +370,11 @@
       "count": 120
     },
     {
-      "domain": "cm-feira.pt",
+      "domain": "cm-almada.pt",
       "count": 118
     },
     {
-      "domain": "cm-almada.pt",
+      "domain": "cm-feira.pt",
       "count": 118
     },
     {
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 7201,
-    "script_dependency": 2106,
     "font_or_preload_dependency": 426,
+    "script_dependency": 2106,
+    "editorial_link": 7201,
     "stylesheet_dependency": 1530,
-    "image_or_media_dependency": 1107,
-    "form_destination": 743
+    "form_destination": 743,
+    "image_or_media_dependency": 1107
   },
-  "generated_at": "2026-08-10T08:27:47.539163+00:00"
+  "generated_at": "2026-08-12T13:25:37.660048+00:00"
 }

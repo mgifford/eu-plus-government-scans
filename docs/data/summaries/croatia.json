@@ -182,11 +182,11 @@
       "count": 43
     },
     {
-      "domain": "arcgis.com",
+      "domain": "dzs.hr",
       "count": 41
     },
     {
-      "domain": "dzs.hr",
+      "domain": "arcgis.com",
       "count": 41
     },
     {
@@ -242,11 +242,11 @@
       "count": 19
     },
     {
-      "domain": "fontawesome.com",
+      "domain": "azop.hr",
       "count": 18
     },
     {
-      "domain": "azop.hr",
+      "domain": "fontawesome.com",
       "count": 18
     },
     {
@@ -278,11 +278,11 @@
       "count": 13
     },
     {
-      "domain": "nn.hr",
+      "domain": "flickr.com",
       "count": 12
     },
     {
-      "domain": "flickr.com",
+      "domain": "nn.hr",
       "count": 12
     },
     {
@@ -294,11 +294,7 @@
       "count": 11
     },
     {
-      "domain": "mingo.hr",
-      "count": 11
-    },
-    {
-      "domain": "gtranslate.net",
+      "domain": "pravosudje.hr",
       "count": 11
     },
     {
@@ -306,12 +302,12 @@
       "count": 11
     },
     {
-      "domain": "pravosudje.hr",
+      "domain": "gtranslate.net",
       "count": 11
     },
     {
-      "domain": "globaldizajn.hr",
-      "count": 10
+      "domain": "mingo.hr",
+      "count": 11
     },
     {
       "domain": "mojarijeka.hr",
@@ -324,15 +320,19 @@
     {
       "domain": "turizamvukovar.hr",
       "count": 10
+    },
+    {
+      "domain": "globaldizajn.hr",
+      "count": 10
     }
   ],
   "relationship_types": {
     "editorial_link": 850,
-    "script_dependency": 166,
-    "stylesheet_dependency": 120,
-    "image_or_media_dependency": 98,
+    "font_or_preload_dependency": 16,
     "form_destination": 62,
-    "font_or_preload_dependency": 16
+    "image_or_media_dependency": 98,
+    "script_dependency": 166,
+    "stylesheet_dependency": 120
   },
-  "generated_at": "2026-08-10T08:27:47.210538+00:00"
+  "generated_at": "2026-08-12T13:25:37.319686+00:00"
 }

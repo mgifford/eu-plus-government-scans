@@ -90,19 +90,19 @@
       "count": 36
     },
     {
-      "domain": "corterm.com",
-      "count": 22
-    },
-    {
       "domain": "bootstrapcdn.com",
       "count": 22
     },
     {
-      "domain": "unpkg.com",
+      "domain": "corterm.com",
       "count": 22
     },
     {
       "domain": "fbcdn.net",
+      "count": 22
+    },
+    {
+      "domain": "unpkg.com",
       "count": 22
     },
     {
@@ -114,19 +114,19 @@
       "count": 18
     },
     {
-      "domain": "microsoft.com",
-      "count": 17
-    },
-    {
       "domain": "goo.gl",
       "count": 17
     },
     {
-      "domain": "x.com",
-      "count": 14
+      "domain": "microsoft.com",
+      "count": 17
     },
     {
       "domain": "9hdigital.com",
+      "count": 14
+    },
+    {
+      "domain": "x.com",
       "count": 14
     },
     {
@@ -138,11 +138,11 @@
       "count": 12
     },
     {
-      "domain": "cdnserver.net",
+      "domain": "2isoftware.com",
       "count": 10
     },
     {
-      "domain": "2isoftware.com",
+      "domain": "cdnserver.net",
       "count": 10
     },
     {
@@ -162,11 +162,11 @@
       "count": 7
     },
     {
-      "domain": "ifg.mt",
+      "domain": "idpc.org.mt",
       "count": 7
     },
     {
-      "domain": "idpc.org.mt",
+      "domain": "ifg.mt",
       "count": 7
     },
     {
@@ -174,15 +174,7 @@
       "count": 6
     },
     {
-      "domain": "eventsingozo.com",
-      "count": 6
-    },
-    {
-      "domain": "simplybook.me",
-      "count": 6
-    },
-    {
-      "domain": "dna.studio",
+      "domain": "azureedge.net",
       "count": 6
     },
     {
@@ -194,11 +186,19 @@
       "count": 6
     },
     {
-      "domain": "fondi.eu",
+      "domain": "cookielaw.org",
       "count": 6
     },
     {
-      "domain": "azureedge.net",
+      "domain": "dna.studio",
+      "count": 6
+    },
+    {
+      "domain": "eventsingozo.com",
+      "count": 6
+    },
+    {
+      "domain": "fondi.eu",
       "count": 6
     },
     {
@@ -206,11 +206,11 @@
       "count": 6
     },
     {
-      "domain": "cookielaw.org",
+      "domain": "odoo.com",
       "count": 6
     },
     {
-      "domain": "odoo.com",
+      "domain": "simplybook.me",
       "count": 6
     },
     {
@@ -221,10 +221,10 @@
   "relationship_types": {
     "editorial_link": 724,
     "script_dependency": 279,
-    "stylesheet_dependency": 270,
     "image_or_media_dependency": 277,
-    "form_destination": 194,
-    "font_or_preload_dependency": 14
+    "stylesheet_dependency": 270,
+    "font_or_preload_dependency": 14,
+    "form_destination": 194
   },
-  "generated_at": "2026-08-10T08:27:47.271421+00:00"
+  "generated_at": "2026-08-12T13:25:37.384903+00:00"
 }
