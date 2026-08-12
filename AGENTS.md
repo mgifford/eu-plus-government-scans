@@ -115,6 +115,33 @@ python3 -m src.cli.generate_validation_report --output validation-report.md
 - Before upgrading dependencies, check vulnerability advisories and license impact
 - Track dependency inventory and licenses in `SBOM.md`
 
+### Provider jurisdictions
+
+`data/providers/jurisdictions.yaml` maps a third-party host to the organisation
+that operates it and the country whose law that organisation answers to.  The
+scan pipeline cannot derive this -- it knows a site loads `googleapis.com`, not
+that this is Google LLC of the United States -- so the table is curated by hand
+and read through `src/lib/provider_registry.py`.
+
+Rules for editing it:
+
+- **`jurisdiction` is the parent company's country of incorporation**, not where
+  servers sit or which subsidiary signed a contract.  A US company's Irish
+  subsidiary is still `US` here.
+- **Leave a host out rather than guess.**  It then reports as unclassified,
+  which is honest.  A wrong nationality claim in a sovereignty report is worse
+  than an absent one.
+- **Anything below `confidence: high` carries `needs_review: true`**, and the
+  coverage report counts how many dependencies rest on unverified rows so a
+  figure is never published as more certain than its inputs.
+- **`kind: government`** exists because some public bodies are missing from the
+  government domain registry and would otherwise be counted as commercial third
+  parties, overstating a country's external exposure.
+
+Run `python3 -m src.cli.provider_coverage` for current coverage and the ranked
+list of unclassified hosts -- it is what makes the curation finite.  Any figure
+derived from the table must be published together with its coverage.
+
 ### Measuring change over time
 
 The relationship dataset describes the corpus **now**.  Two mechanisms make
