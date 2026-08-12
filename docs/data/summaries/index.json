@@ -25,7 +25,7 @@
     "file": "denmark.json"
   },
   "CANADA": {
-    "total_relationships": 290926,
+    "total_relationships": 290976,
     "total_source_domains": 8351,
     "file": "canada.json"
   },
@@ -40,7 +40,7 @@
     "file": "latvia.json"
   },
   "SPAIN": {
-    "total_relationships": 15976,
+    "total_relationships": 16024,
     "total_source_domains": 230,
     "file": "spain.json"
   },
@@ -60,7 +60,7 @@
     "file": "italy.json"
   },
   "REPUBLIC_OF_CYPRUS": {
-    "total_relationships": 290926,
+    "total_relationships": 290976,
     "total_source_domains": 8351,
     "file": "republic_of_cyprus.json"
   },
@@ -103,60 +103,5 @@
     "total_relationships": 29848,
     "total_source_domains": 642,
     "file": "france.json"
-  },
-  "SLOVAKIA": {
-    "total_relationships": 1667,
-    "total_source_domains": 21,
-    "file": "slovakia.json"
-  },
-  "CZECHIA": {
-    "total_relationships": 2449,
-    "total_source_domains": 54,
-    "file": "czechia.json"
-  },
-  "PORTUGAL": {
-    "total_relationships": 13113,
-    "total_source_domains": 389,
-    "file": "portugal.json"
-  },
-  "SLOVENIA": {
-    "total_relationships": 881,
-    "total_source_domains": 16,
-    "file": "slovenia.json"
-  },
-  "SWEDEN": {
-    "total_relationships": 4841,
-    "total_source_domains": 186,
-    "file": "sweden.json"
-  },
-  "UNITED_KINGDOM_UK": {
-    "total_relationships": 290926,
-    "total_source_domains": 8351,
-    "file": "united_kingdom_uk.json"
-  },
-  "ESTONIA": {
-    "total_relationships": 1577,
-    "total_source_domains": 32,
-    "file": "estonia.json"
-  },
-  "ROMANIA": {
-    "total_relationships": 1087,
-    "total_source_domains": 16,
-    "file": "romania.json"
-  },
-  "POLAND": {
-    "total_relationships": 57151,
-    "total_source_domains": 2323,
-    "file": "poland.json"
-  },
-  "BULGARIA": {
-    "total_relationships": 1719,
-    "total_source_domains": 51,
-    "file": "bulgaria.json"
-  },
-  "LUXEMBOURG": {
-    "total_relationships": 1800,
-    "total_source_domains": 41,
-    "file": "luxembourg.json"
   }
 }
