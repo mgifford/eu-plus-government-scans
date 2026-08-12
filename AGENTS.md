@@ -115,6 +115,28 @@ python3 -m src.cli.generate_validation_report --output validation-report.md
 - Before upgrading dependencies, check vulnerability advisories and license impact
 - Track dependency inventory and licenses in `SBOM.md`
 
+### Measuring change over time
+
+The relationship dataset describes the corpus **now**.  Two mechanisms make
+change measurable, and both are load-bearing:
+
+- **Edges are retired, not deleted.**  `AggregatedRelationship.active` goes
+  false once every page that carried an edge has been re-scanned successfully
+  without it.  Nothing used to remove an edge, so the dataset only grew and a
+  government migrating away from a provider looked exactly like no change.  Only
+  *successfully* scanned pages count as evidence — treating a failed fetch as
+  removal would turn every outage into a false result.  Retired rows stay
+  published for `RETIRED_EDGE_RETENTION_DAYS`, then drop.
+- **Dated snapshots.**  `src/cli/generate_snapshot.py` writes one compact file
+  per day to `docs/data/snapshots/`.  Even a perfectly-run scanner cannot
+  reconstruct "what share of this country's agencies used this provider in
+  March" from the live dataset, because it holds no periodic record.  Snapshots
+  are the only thing that can answer it, so they are worth writing long before
+  anything reads them.
+
+Any consumer reporting the current state must skip rows where `active` is
+false; `generate_dependency_matrix.py` and `generate_snapshot.py` both do.
+
 ### Scan metadata artifacts
 
 Scan state moves between workflow runs as a GitHub Actions artifact.  **Each

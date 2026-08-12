@@ -117,6 +117,10 @@ def build_matrix(
     service_domains: dict[str, set[str]] = defaultdict(set)
 
     for row in rows:
+        # A retired dependency is part of the history, not of today's corpus.
+        if row.get("active") is False:
+            continue
+
         source = row.get("source_domain", "")
         country = country_index.get(source.lower())
         if country is None:
