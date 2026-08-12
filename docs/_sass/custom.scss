@@ -10,7 +10,11 @@
   --color-bg-panel: #ffffff;
   --color-secondary-bg: #f8f9fa;
   --color-text: #212529;
-  --color-text-secondary: #6c757d;
+  /* #6c757d reached only 4.44:1 on --color-secondary-bg (#f8f9fa), which is the
+     footer's background, so every page failed WCAG 1.4.3 on three footer
+     elements. This step clears 4.5:1 on both surfaces it is used against:
+     4.71:1 on #f8f9fa and 4.97:1 on white. */
+  --color-text-secondary: #687179;
   --color-border: #dee2e6;
   --color-border-input: #adb5bd;
   --color-primary: #2c3e50;
