@@ -1890,7 +1890,7 @@ layout: page
                 summaryNote.textContent = '';
                 container.innerHTML =
                     '<p style="color:var(--color-text-secondary);padding:2rem;text-align:center">' +
-                    'D3 graph requires the full dataset. <a href="#" id="load-jsonl-for-graph">Load full JSONL (12.5 MB)</a></p>';
+                    'D3 graph requires the full dataset. <a href="#" id="load-jsonl-for-graph">Load the full dataset</a></p>';
                 document.getElementById('load-jsonl-for-graph')?.addEventListener('click', (e) => {
                     e.preventDefault();
                     loadFullJSONL();
