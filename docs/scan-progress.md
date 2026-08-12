@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-08-12 17:12 UTC_
+_Generated: 2026-08-12 17:52 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -15,9 +15,9 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 |-----------|--------------|-----------|----------|---------|
 | **Combined Reachability** | **6,706 confirmed reachable** | 87,696 | **<span role="img" aria-label="7.6% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:9px;"></span></span><span class="sm-bar__label">7.6%</span></span>** | — |
 | Social Media | 3,978 scanned (3,727 reachable) | 87,696 | <span role="img" aria-label="4.5% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:5px;"></span></span><span class="sm-bar__label">4.5%</span></span> | 14 h |
-| Technology | 5,234 scanned | 87,696 | <span role="img" aria-label="6.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:7px;"></span></span><span class="sm-bar__label">6.0%</span></span> | 14 h |
+| Technology | 6,767 scanned | 87,696 | <span role="img" aria-label="7.7% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:9px;"></span></span><span class="sm-bar__label">7.7%</span></span> | 12 h |
 | Lighthouse | 11,890 scanned | 87,696 | <span role="img" aria-label="13.6% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:16px;"></span></span><span class="sm-bar__label">13.6%</span></span> | 13.6 days |
-| Accessibility Statements | 8,905 scanned | 87,696 | <span role="img" aria-label="10.2% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:12px;"></span></span><span class="sm-bar__label">10.2%</span></span> | 13 h |
+| Accessibility Statements | 8,905 scanned | 87,696 | <span role="img" aria-label="10.2% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:12px;"></span></span><span class="sm-bar__label">10.2%</span></span> | 14 h |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by any scan type. **Avg Age** shows the mean number of days (or hours) since each URL in that scan type was last scanned — lower is fresher.
 
@@ -62,6 +62,9 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Croatia | 257 | 2026-08-12 |
 | Czechia | 866 | 2026-08-12 |
 | Denmark | 214 | 2026-08-12 |
+| Estonia | 401 | 2026-08-12 |
+| Finland | 199 | 2026-08-12 |
+| France | 933 | 2026-08-12 |
 
 ## Lighthouse Scan by Country
 
