@@ -36,11 +36,11 @@
       "count": 91
     },
     {
-      "domain": "post.lu",
+      "domain": "philharmonie.lu",
       "count": 88
     },
     {
-      "domain": "philharmonie.lu",
+      "domain": "post.lu",
       "count": 88
     },
     {
@@ -156,11 +156,11 @@
       "count": 4
     },
     {
-      "domain": "statec.lu",
+      "domain": "geoportail.lu",
       "count": 3
     },
     {
-      "domain": "geoportail.lu",
+      "domain": "statec.lu",
       "count": 3
     },
     {
@@ -250,11 +250,11 @@
       "count": 29
     },
     {
-      "domain": "education.lu",
+      "domain": "cita.lu",
       "count": 29
     },
     {
-      "domain": "cita.lu",
+      "domain": "education.lu",
       "count": 29
     },
     {
@@ -290,12 +290,24 @@
       "count": 20
     },
     {
+      "domain": "dudelange.lu",
+      "count": 19
+    },
+    {
       "domain": "schifflange.lu",
       "count": 19
     },
     {
-      "domain": "dudelange.lu",
-      "count": 19
+      "domain": "bettembourg.lu",
+      "count": 18
+    },
+    {
+      "domain": "cfl.lu",
+      "count": 18
+    },
+    {
+      "domain": "fontawesome.com",
+      "count": 18
     },
     {
       "domain": "geoportail.lu",
@@ -306,24 +318,8 @@
       "count": 18
     },
     {
-      "domain": "bettembourg.lu",
-      "count": 18
-    },
-    {
-      "domain": "fontawesome.com",
-      "count": 18
-    },
-    {
-      "domain": "cfl.lu",
-      "count": 18
-    },
-    {
       "domain": "sandweiler.lu",
       "count": 18
-    },
-    {
-      "domain": "inondations.lu",
-      "count": 17
     },
     {
       "domain": "guichet.lu",
@@ -331,6 +327,10 @@
     },
     {
       "domain": "tiktok.com",
+      "count": 17
+    },
+    {
+      "domain": "inondations.lu",
       "count": 17
     },
     {
@@ -346,11 +346,11 @@
       "count": 15
     },
     {
-      "domain": "apple.com",
+      "domain": "petitiounen.lu",
       "count": 14
     },
     {
-      "domain": "petitiounen.lu",
+      "domain": "apple.com",
       "count": 14
     },
     {
@@ -358,25 +358,25 @@
       "count": 13
     },
     {
-      "domain": "snj.lu",
-      "count": 13
-    },
-    {
       "domain": "meteolux.lu",
       "count": 13
     },
     {
-      "domain": "petange.lu",
+      "domain": "snj.lu",
+      "count": 13
+    },
+    {
+      "domain": "e-connect.lu",
       "count": 13
     }
   ],
   "relationship_types": {
     "editorial_link": 1010,
+    "form_destination": 136,
+    "image_or_media_dependency": 172,
     "script_dependency": 246,
     "stylesheet_dependency": 208,
-    "image_or_media_dependency": 172,
-    "form_destination": 136,
     "font_or_preload_dependency": 28
   },
-  "generated_at": "2026-08-10T08:27:46.331386+00:00"
+  "generated_at": "2026-08-12T13:25:38.594957+00:00"
 }

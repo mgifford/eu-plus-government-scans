@@ -108,11 +108,11 @@
       "count": 94
     },
     {
-      "domain": "holstebro.dk",
+      "domain": "em.dk",
       "count": 93
     },
     {
-      "domain": "em.dk",
+      "domain": "holstebro.dk",
       "count": 93
     },
     {
@@ -132,19 +132,19 @@
       "count": 76
     },
     {
-      "domain": "rsyd.dk",
-      "count": 69
-    },
-    {
       "domain": "fmn.dk",
       "count": 69
     },
     {
-      "domain": "naestved.dk",
-      "count": 66
+      "domain": "rsyd.dk",
+      "count": 69
     },
     {
       "domain": "esbjerg.dk",
+      "count": 66
+    },
+    {
+      "domain": "naestved.dk",
       "count": 66
     },
     {
@@ -362,11 +362,11 @@
       "count": 79
     },
     {
-      "domain": "twentythree.com",
+      "domain": "siteimproveanalytics.com",
       "count": 78
     },
     {
-      "domain": "siteimproveanalytics.com",
+      "domain": "twentythree.com",
       "count": 78
     },
     {
@@ -408,11 +408,11 @@
   ],
   "relationship_types": {
     "editorial_link": 2041,
+    "form_destination": 338,
+    "image_or_media_dependency": 463,
     "script_dependency": 734,
     "stylesheet_dependency": 563,
-    "image_or_media_dependency": 463,
-    "form_destination": 338,
     "font_or_preload_dependency": 117
   },
-  "generated_at": "2026-08-10T08:27:45.966821+00:00"
+  "generated_at": "2026-08-12T13:25:36.200366+00:00"
 }

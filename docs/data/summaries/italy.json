@@ -1,6 +1,6 @@
 {
   "country_code": "ITALY",
-  "total_relationships": 15853,
+  "total_relationships": 15862,
   "total_source_domains": 151,
   "top_source_domains": [
     {
@@ -89,7 +89,7 @@
     },
     {
       "domain": "regione.toscana.it",
-      "count": 420
+      "count": 438
     },
     {
       "domain": "comune.taranto.it",
@@ -271,7 +271,7 @@
     },
     {
       "domain": "whatsapp.com",
-      "count": 677
+      "count": 678
     },
     {
       "domain": "regione.campania.it",
@@ -322,6 +322,10 @@
       "count": 397
     },
     {
+      "domain": "regione.toscana.it",
+      "count": 362
+    },
+    {
       "domain": "mef.gov.it",
       "count": 360
     },
@@ -332,10 +336,6 @@
     {
       "domain": "jsdelivr.net",
       "count": 354
-    },
-    {
-      "domain": "regione.toscana.it",
-      "count": 349
     },
     {
       "domain": "municipiumapp.it",
@@ -367,7 +367,7 @@
     },
     {
       "domain": "t.me",
-      "count": 235
+      "count": 236
     },
     {
       "domain": "comune.modena.it",
@@ -394,11 +394,11 @@
       "count": 184
     },
     {
-      "domain": "italea.com",
+      "domain": "mise.gov.it",
       "count": 181
     },
     {
-      "domain": "mise.gov.it",
+      "domain": "italea.com",
       "count": 181
     },
     {
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 7344,
-    "script_dependency": 2552,
-    "stylesheet_dependency": 2271,
-    "image_or_media_dependency": 2003,
+    "script_dependency": 2553,
+    "editorial_link": 7350,
+    "image_or_media_dependency": 2004,
+    "stylesheet_dependency": 2272,
     "form_destination": 1438,
     "font_or_preload_dependency": 245
   },
-  "generated_at": "2026-08-10T08:27:46.589583+00:00"
+  "generated_at": "2026-08-12T13:25:36.672521+00:00"
 }

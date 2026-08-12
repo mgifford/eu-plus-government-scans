@@ -134,7 +134,7 @@
       "count": 47
     },
     {
-      "domain": "senat.ro",
+      "domain": "anaf.ro",
       "count": 43
     },
     {
@@ -142,7 +142,7 @@
       "count": 43
     },
     {
-      "domain": "anaf.ro",
+      "domain": "senat.ro",
       "count": 43
     },
     {
@@ -150,19 +150,19 @@
       "count": 42
     },
     {
-      "domain": "statcounter.com",
-      "count": 39
-    },
-    {
       "domain": "brasovcity.ro",
       "count": 39
     },
     {
-      "domain": "mai-dga.ro",
-      "count": 37
+      "domain": "statcounter.com",
+      "count": 39
     },
     {
       "domain": "mfinante.ro",
+      "count": 37
+    },
+    {
+      "domain": "mai-dga.ro",
       "count": 37
     },
     {
@@ -174,11 +174,11 @@
       "count": 25
     },
     {
-      "domain": "twitter.com",
+      "domain": "instagram.com",
       "count": 24
     },
     {
-      "domain": "instagram.com",
+      "domain": "twitter.com",
       "count": 24
     },
     {
@@ -186,11 +186,11 @@
       "count": 22
     },
     {
-      "domain": "infocons.ro",
+      "domain": "igpr.ro",
       "count": 21
     },
     {
-      "domain": "igpr.ro",
+      "domain": "infocons.ro",
       "count": 21
     },
     {
@@ -214,11 +214,11 @@
       "count": 12
     },
     {
-      "domain": "ms.ro",
+      "domain": "edu.ro",
       "count": 12
     },
     {
-      "domain": "edu.ro",
+      "domain": "ms.ro",
       "count": 12
     },
     {
@@ -226,27 +226,23 @@
       "count": 11
     },
     {
-      "domain": "interpol.int",
-      "count": 10
-    },
-    {
       "domain": "constanta.ro",
       "count": 10
     },
     {
-      "domain": "trafic.ro",
-      "count": 9
+      "domain": "interpol.int",
+      "count": 10
     },
     {
       "domain": "defense.ro",
       "count": 9
     },
     {
-      "domain": "drpciv.ro",
-      "count": 8
+      "domain": "trafic.ro",
+      "count": 9
     },
     {
-      "domain": "cloudflare.com",
+      "domain": "asfromania.ro",
       "count": 8
     },
     {
@@ -254,7 +250,7 @@
       "count": 8
     },
     {
-      "domain": "asfromania.ro",
+      "domain": "cloudflare.com",
       "count": 8
     },
     {
@@ -262,21 +258,25 @@
       "count": 8
     },
     {
-      "domain": "recensamantromania.ro",
-      "count": 7
+      "domain": "drpciv.ro",
+      "count": 8
     },
     {
       "domain": "map2web.eu",
+      "count": 7
+    },
+    {
+      "domain": "armataromaniei.ro",
       "count": 7
     }
   ],
   "relationship_types": {
     "editorial_link": 643,
+    "image_or_media_dependency": 113,
     "script_dependency": 133,
     "stylesheet_dependency": 124,
-    "image_or_media_dependency": 113,
     "form_destination": 69,
     "font_or_preload_dependency": 5
   },
-  "generated_at": "2026-08-02T01:28:07.219278+00:00"
+  "generated_at": "2026-08-12T13:25:38.394183+00:00"
 }

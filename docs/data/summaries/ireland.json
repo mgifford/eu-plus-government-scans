@@ -32,11 +32,11 @@
       "count": 154
     },
     {
-      "domain": "limerick.ie",
+      "domain": "kildarecoco.ie",
       "count": 153
     },
     {
-      "domain": "kildarecoco.ie",
+      "domain": "limerick.ie",
       "count": 153
     },
     {
@@ -60,11 +60,11 @@
       "count": 116
     },
     {
-      "domain": "kerrycoco.ie",
+      "domain": "ipoi.gov.ie",
       "count": 114
     },
     {
-      "domain": "ipoi.gov.ie",
+      "domain": "kerrycoco.ie",
       "count": 114
     },
     {
@@ -96,11 +96,11 @@
       "count": 91
     },
     {
-      "domain": "wexfordcoco.ie",
+      "domain": "corkcoco.ie",
       "count": 88
     },
     {
-      "domain": "corkcoco.ie",
+      "domain": "wexfordcoco.ie",
       "count": 88
     },
     {
@@ -132,10 +132,6 @@
       "count": 58
     },
     {
-      "domain": "rtb.ie",
-      "count": 49
-    },
-    {
       "domain": "creativeireland.gov.ie",
       "count": 49
     },
@@ -148,15 +144,19 @@
       "count": 49
     },
     {
+      "domain": "rtb.ie",
+      "count": 49
+    },
+    {
+      "domain": "britishcouncil.ie",
+      "count": 46
+    },
+    {
       "domain": "carrentalcouncil.ie",
       "count": 46
     },
     {
       "domain": "rococo.ie",
-      "count": 46
-    },
-    {
-      "domain": "britishcouncil.ie",
       "count": 46
     },
     {
@@ -184,19 +184,19 @@
       "count": 35
     },
     {
-      "domain": "whatworks.gov.ie",
-      "count": 34
-    },
-    {
       "domain": "fiscalcouncil.ie",
       "count": 34
     },
     {
-      "domain": "sligococo.ie",
-      "count": 33
+      "domain": "whatworks.gov.ie",
+      "count": 34
     },
     {
       "domain": "irishrefugeecouncil.ie",
+      "count": 33
+    },
+    {
+      "domain": "sligococo.ie",
       "count": 33
     },
     {
@@ -302,11 +302,11 @@
       "count": 50
     },
     {
-      "domain": "wexfordcoco.ie",
+      "domain": "dlrcoco.ie",
       "count": 48
     },
     {
-      "domain": "dlrcoco.ie",
+      "domain": "wexfordcoco.ie",
       "count": 48
     },
     {
@@ -322,11 +322,11 @@
       "count": 45
     },
     {
-      "domain": "cso.ie",
+      "domain": "www.gov.ie",
       "count": 43
     },
     {
-      "domain": "www.gov.ie",
+      "domain": "cso.ie",
       "count": 43
     },
     {
@@ -346,11 +346,11 @@
       "count": 38
     },
     {
-      "domain": "oireachtas.ie",
+      "domain": "per.gov.ie",
       "count": 38
     },
     {
-      "domain": "per.gov.ie",
+      "domain": "oireachtas.ie",
       "count": 38
     },
     {
@@ -374,15 +374,15 @@
       "count": 31
     },
     {
+      "domain": "cavancoco.ie",
+      "count": 30
+    },
+    {
       "domain": "europa.eu",
       "count": 30
     },
     {
       "domain": "kilkenny.ie",
-      "count": 30
-    },
-    {
-      "domain": "cavancoco.ie",
       "count": 30
     },
     {
@@ -402,17 +402,17 @@
       "count": 29
     },
     {
-      "domain": "creativeireland.gov.ie",
+      "domain": "fontawesome.com",
       "count": 28
     }
   ],
   "relationship_types": {
     "editorial_link": 1003,
+    "form_destination": 129,
     "script_dependency": 411,
     "stylesheet_dependency": 293,
-    "font_or_preload_dependency": 51,
     "image_or_media_dependency": 185,
-    "form_destination": 129
+    "font_or_preload_dependency": 51
   },
-  "generated_at": "2026-08-10T08:27:47.077493+00:00"
+  "generated_at": "2026-08-12T13:25:37.181520+00:00"
 }

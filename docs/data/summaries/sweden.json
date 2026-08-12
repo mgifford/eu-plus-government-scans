@@ -80,11 +80,11 @@
       "count": 112
     },
     {
-      "domain": "lulea.se",
+      "domain": "forsvarsmakten.se",
       "count": 111
     },
     {
-      "domain": "forsvarsmakten.se",
+      "domain": "lulea.se",
       "count": 111
     },
     {
@@ -128,11 +128,11 @@
       "count": 90
     },
     {
-      "domain": "skane.se",
+      "domain": "scb.se",
       "count": 88
     },
     {
-      "domain": "scb.se",
+      "domain": "skane.se",
       "count": 88
     },
     {
@@ -144,10 +144,6 @@
       "count": 83
     },
     {
-      "domain": "riksbank.se",
-      "count": 83
-    },
-    {
       "domain": "huddinge.se",
       "count": 83
     },
@@ -156,11 +152,15 @@
       "count": 83
     },
     {
-      "domain": "smhi.se",
-      "count": 80
+      "domain": "riksbank.se",
+      "count": 83
     },
     {
       "domain": "lund.se",
+      "count": 80
+    },
+    {
+      "domain": "smhi.se",
       "count": 80
     },
     {
@@ -302,10 +302,6 @@
       "count": 84
     },
     {
-      "domain": "karlskrona.se",
-      "count": 78
-    },
-    {
       "domain": "boverket.se",
       "count": 78
     },
@@ -314,15 +310,19 @@
       "count": 78
     },
     {
+      "domain": "karlskrona.se",
+      "count": 78
+    },
+    {
       "domain": "kronofogden.se",
       "count": 78
     },
     {
-      "domain": "malmo.se",
+      "domain": "scb.se",
       "count": 73
     },
     {
-      "domain": "scb.se",
+      "domain": "malmo.se",
       "count": 73
     },
     {
@@ -342,11 +342,11 @@
       "count": 65
     },
     {
-      "domain": "vaxjo.se",
+      "domain": "norrbotten.se",
       "count": 65
     },
     {
-      "domain": "norrbotten.se",
+      "domain": "vaxjo.se",
       "count": 65
     },
     {
@@ -410,9 +410,9 @@
     "editorial_link": 2129,
     "script_dependency": 898,
     "stylesheet_dependency": 706,
-    "image_or_media_dependency": 532,
+    "font_or_preload_dependency": 202,
     "form_destination": 374,
-    "font_or_preload_dependency": 202
+    "image_or_media_dependency": 532
   },
-  "generated_at": "2026-08-10T08:27:48.024865+00:00"
+  "generated_at": "2026-08-12T13:25:38.170982+00:00"
 }

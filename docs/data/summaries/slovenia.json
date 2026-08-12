@@ -158,15 +158,15 @@
       "count": 13
     },
     {
+      "domain": "dvk-rs.si",
+      "count": 12
+    },
+    {
       "domain": "dz-rs.si",
       "count": 12
     },
     {
       "domain": "sodisce.si",
-      "count": 12
-    },
-    {
-      "domain": "dvk-rs.si",
       "count": 12
     },
     {
@@ -198,6 +198,14 @@
       "count": 9
     },
     {
+      "domain": "zmos.si",
+      "count": 8
+    },
+    {
+      "domain": "rs-rs.si",
+      "count": 8
+    },
+    {
       "domain": "up-rs.si",
       "count": 8
     },
@@ -206,15 +214,7 @@
       "count": 8
     },
     {
-      "domain": "rs-rs.si",
-      "count": 8
-    },
-    {
       "domain": "osmrtnice.si",
-      "count": 8
-    },
-    {
-      "domain": "zmos.si",
       "count": 8
     },
     {
@@ -226,7 +226,11 @@
       "count": 7
     },
     {
-      "domain": "wa.me",
+      "domain": "cloudinary.com",
+      "count": 6
+    },
+    {
+      "domain": "varuh-rs.si",
       "count": 6
     },
     {
@@ -242,41 +246,37 @@
       "count": 6
     },
     {
-      "domain": "europeanbestdestinations.com",
+      "domain": "wa.me",
       "count": 6
     },
     {
-      "domain": "skupnostobcin.si",
+      "domain": "consulta.si",
       "count": 6
     },
     {
-      "domain": "visitptuj.eu",
+      "domain": "jzkk.si",
+      "count": 6
+    },
+    {
+      "domain": "kamkolo.si",
+      "count": 6
+    },
+    {
+      "domain": "velikaplanina.si",
       "count": 6
     },
     {
       "domain": "ekosklad.si",
       "count": 6
-    },
-    {
-      "domain": "zlatikamen.si",
-      "count": 6
-    },
-    {
-      "domain": "traffistat.si",
-      "count": 6
-    },
-    {
-      "domain": "varuh-rs.si",
-      "count": 6
     }
   ],
   "relationship_types": {
     "editorial_link": 517,
+    "image_or_media_dependency": 96,
+    "font_or_preload_dependency": 16,
     "script_dependency": 113,
     "stylesheet_dependency": 95,
-    "image_or_media_dependency": 96,
-    "form_destination": 44,
-    "font_or_preload_dependency": 16
+    "form_destination": 44
   },
-  "generated_at": "2026-08-10T08:27:47.964278+00:00"
+  "generated_at": "2026-08-12T13:25:38.106572+00:00"
 }

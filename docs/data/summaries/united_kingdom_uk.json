@@ -1,6 +1,6 @@
 {
   "country_code": "UNITED_KINGDOM_UK",
-  "total_relationships": 290926,
+  "total_relationships": 290985,
   "total_source_domains": 8351,
   "top_source_domains": [
     {
@@ -37,7 +37,7 @@
     },
     {
       "domain": "jcyl.es",
-      "count": 11643
+      "count": 12670
     },
     {
       "domain": "niedersachsen.de",
@@ -53,7 +53,7 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 10092
+      "count": 10114
     },
     {
       "domain": "nrw.de",
@@ -61,7 +61,7 @@
     },
     {
       "domain": "gencat.cat",
-      "count": 8499
+      "count": 8501
     },
     {
       "domain": "gov.mt",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 30477
+      "count": 30486
     },
     {
       "domain": "googleapis.com",
@@ -223,11 +223,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 17537
+      "count": 17539
     },
     {
       "domain": "youtube.com",
-      "count": 16652
+      "count": 16656
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -235,15 +235,15 @@
     },
     {
       "domain": "twitter.com",
-      "count": 14282
+      "count": 14287
     },
     {
       "domain": "google.com",
-      "count": 14235
+      "count": 14236
     },
     {
       "domain": "linkedin.com",
-      "count": 12288
+      "count": 12291
     },
     {
       "domain": "googletagmanager.com",
@@ -267,7 +267,7 @@
     },
     {
       "domain": "jcyl.es",
-      "count": 7811
+      "count": 8680
     },
     {
       "domain": "gouv.qc.ca",
@@ -303,11 +303,11 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 5014
+      "count": 5024
     },
     {
       "domain": "gencat.cat",
-      "count": 5000
+      "count": 5002
     },
     {
       "domain": "gov.mt",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 149338,
-    "script_dependency": 46360,
-    "stylesheet_dependency": 37397,
-    "image_or_media_dependency": 30773,
-    "form_destination": 19660,
+    "editorial_link": 149360,
+    "form_destination": 19668,
+    "image_or_media_dependency": 30782,
+    "script_dependency": 46370,
+    "stylesheet_dependency": 37407,
     "font_or_preload_dependency": 7398
   },
-  "generated_at": "2026-08-10T08:27:47.901358+00:00"
+  "generated_at": "2026-08-12T13:25:38.038933+00:00"
 }
