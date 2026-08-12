@@ -10,7 +10,11 @@
   --color-bg-panel: #ffffff;
   --color-secondary-bg: #f8f9fa;
   --color-text: #212529;
-  --color-text-secondary: #6c757d;
+  /* #6c757d reached only 4.44:1 on --color-secondary-bg (#f8f9fa), which is the
+     footer's background, so every page failed WCAG 1.4.3 on three footer
+     elements. This step clears 4.5:1 on both surfaces it is used against:
+     4.71:1 on #f8f9fa and 4.97:1 on white. */
+  --color-text-secondary: #687179;
   --color-border: #dee2e6;
   --color-border-input: #adb5bd;
   --color-primary: #2c3e50;
@@ -1225,4 +1229,147 @@ blockquote a:focus-visible {
     color: #000000;
     text-decoration: underline;
   }
+}
+
+/* ---------------------------------------------------------------------------
+   Third-party dependency matrix (docs/dependency-matrix.md)
+
+   The percentage is printed in every cell, so colour is a redundant second
+   encoding rather than the only one -- a heatmap that carries meaning in colour
+   alone fails WCAG 1.4.1, and this table also has to survive forced-colors and
+   print.  Steps skip blue 400-500, the band where neither dark nor light ink
+   reaches 4.5:1; every pairing below is at or above that.
+   --------------------------------------------------------------------------- */
+
+:root {
+  --dep-b1-bg: #b7d3f6;  --dep-b1-fg: #212529;  /* 10.04:1 */
+  --dep-b2-bg: #86b6ef;  --dep-b2-fg: #212529;  /*  7.31:1 */
+  --dep-b3-bg: #5598e7;  --dep-b3-fg: #212529;  /*  5.17:1 */
+  --dep-b4-bg: #1c5cab;  --dep-b4-fg: #ffffff;  /*  6.63:1 */
+  --dep-b5-bg: #0d366b;  --dep-b5-fg: #ffffff;  /* 11.95:1 */
+}
+
+/* Dark mode is stepped separately, not flipped: magnitude runs toward the
+   lighter end so the strongest cells stay the most prominent against a dark
+   surface. */
+html[data-theme="dark"] {
+  --dep-b1-bg: #184f95;  --dep-b1-fg: #ffffff;  /*  8.10:1 */
+  --dep-b2-bg: #1c5cab;  --dep-b2-fg: #ffffff;  /*  6.63:1 */
+  --dep-b3-bg: #5598e7;  --dep-b3-fg: #212529;  /*  5.17:1 */
+  --dep-b4-bg: #86b6ef;  --dep-b4-fg: #212529;  /*  7.31:1 */
+  --dep-b5-bg: #b7d3f6;  --dep-b5-fg: #212529;  /* 10.04:1 */
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme]) {
+    --dep-b1-bg: #184f95;  --dep-b1-fg: #ffffff;
+    --dep-b2-bg: #1c5cab;  --dep-b2-fg: #ffffff;
+    --dep-b3-bg: #5598e7;  --dep-b3-fg: #212529;
+    --dep-b4-bg: #86b6ef;  --dep-b4-fg: #212529;
+    --dep-b5-bg: #b7d3f6;  --dep-b5-fg: #212529;
+  }
+}
+
+.dep-matrix-legend {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.dep-key {
+  border: 1px solid var(--color-border);
+  border-radius: 0.25rem;
+  font-size: 0.85rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.dep-key.dep-b1 { background: var(--dep-b1-bg); color: var(--dep-b1-fg); }
+.dep-key.dep-b2 { background: var(--dep-b2-bg); color: var(--dep-b2-fg); }
+.dep-key.dep-b3 { background: var(--dep-b3-bg); color: var(--dep-b3-fg); }
+.dep-key.dep-b4 { background: var(--dep-b4-bg); color: var(--dep-b4-fg); }
+.dep-key.dep-b5 { background: var(--dep-b5-bg); color: var(--dep-b5-fg); }
+
+/* Wide tables scroll inside their own container so the page body never scrolls
+   horizontally.  tabindex makes the scroll region keyboard-reachable. */
+.dep-matrix-scroll {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.dep-matrix {
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.dep-matrix caption {
+  caption-side: top;
+  color: var(--color-text-secondary);
+  padding-bottom: 0.5rem;
+  text-align: left;
+}
+
+.dep-matrix th,
+.dep-matrix td {
+  border: 1px solid var(--color-border);
+  padding: 0.35rem 0.5rem;
+  white-space: nowrap;
+}
+
+.dep-matrix thead th {
+  background: var(--color-secondary-bg);
+  vertical-align: bottom;
+}
+
+.dep-matrix tbody th {
+  background: var(--color-bg-panel);
+  left: 0;
+  position: sticky;
+  text-align: left;
+}
+
+.dep-num { text-align: right; }
+
+.dep-cell {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.dep-cell.dep-b0 { color: var(--color-text-secondary); }
+.dep-cell.dep-b1 { background: var(--dep-b1-bg); color: var(--dep-b1-fg); }
+.dep-cell.dep-b2 { background: var(--dep-b2-bg); color: var(--dep-b2-fg); }
+.dep-cell.dep-b3 { background: var(--dep-b3-bg); color: var(--dep-b3-fg); }
+.dep-cell.dep-b4 { background: var(--dep-b4-bg); color: var(--dep-b4-fg); }
+.dep-cell.dep-b5 { background: var(--dep-b5-bg); color: var(--dep-b5-fg); }
+
+/* Forced-colors mode drops author backgrounds, so the printed value is the only
+   channel left -- which is exactly why it is in every cell. */
+@media (forced-colors: active) {
+  .dep-cell,
+  .dep-key {
+    border: 1px solid CanvasText;
+    forced-color-adjust: none;
+    background: Canvas;
+    color: CanvasText;
+  }
+}
+
+/* Shown in place of the network graph when the filtered link count is so far
+   above the drawing budget that a truncated render would misrepresent the
+   data.  See GRAPH_HONEST_LIMIT in network.html. */
+.graph-too-large {
+  color: var(--color-text);
+  margin: 0 auto;
+  max-width: 46rem;
+  padding: 2rem 1rem;
+}
+
+.graph-too-large ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.graph-too-large li {
+  margin-bottom: 0.35rem;
 }
