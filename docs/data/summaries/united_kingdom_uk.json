@@ -1,6 +1,6 @@
 {
   "country_code": "UNITED_KINGDOM_UK",
-  "total_relationships": 290985,
+  "total_relationships": 290998,
   "total_source_domains": 8351,
   "top_source_domains": [
     {
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 30486
+      "count": 30489
     },
     {
       "domain": "googleapis.com",
@@ -223,11 +223,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 17539
+      "count": 17542
     },
     {
       "domain": "youtube.com",
-      "count": 16656
+      "count": 16659
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -239,15 +239,15 @@
     },
     {
       "domain": "google.com",
-      "count": 14236
+      "count": 14237
     },
     {
       "domain": "linkedin.com",
-      "count": 12291
+      "count": 12294
     },
     {
       "domain": "googletagmanager.com",
-      "count": 11633
+      "count": 11636
     },
     {
       "domain": "krakow.pl",
@@ -323,7 +323,7 @@
     },
     {
       "domain": "fontawesome.com",
-      "count": 3645
+      "count": 3648
     },
     {
       "domain": "x.com",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 149360,
-    "form_destination": 19668,
-    "image_or_media_dependency": 30782,
-    "script_dependency": 46370,
-    "stylesheet_dependency": 37407,
+    "editorial_link": 149364,
+    "form_destination": 19669,
+    "image_or_media_dependency": 30784,
+    "script_dependency": 46374,
+    "stylesheet_dependency": 37409,
     "font_or_preload_dependency": 7398
   },
-  "generated_at": "2026-08-13T19:13:37.005487+00:00"
+  "generated_at": "2026-08-13T19:50:54.647465+00:00"
 }
