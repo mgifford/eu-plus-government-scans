@@ -73,12 +73,19 @@ async function run() {
   // reports them as real defects -- notably every interactive element as a
   // target-size violation. Track asset failures so that shows up as a broken
   // harness rather than as accessibility findings.
+  //
+  // Only assets served by the site under test count. Pages such as network.html
+  // pull d3 from a public CDN, and a 403 or 429 out there says nothing about
+  // whether the site is staged correctly -- failing on it would abort the audit
+  // pointing at a baseurl that is fine.
+  const siteOrigin = new URL(siteBaseUrl).origin;
   let missingAssets = [];
   page.on("response", (response) => {
     const type = response.request().resourceType();
-    if ((type === "stylesheet" || type === "script") && response.status() >= 400) {
-      missingAssets.push(`${response.status()} ${response.url()}`);
-    }
+    if (type !== "stylesheet" && type !== "script") return;
+    if (response.status() < 400) return;
+    if (!response.url().startsWith(`${siteOrigin}/`)) return;
+    missingAssets.push(`${response.status()} ${response.url()}`);
   });
 
   try {

@@ -63,6 +63,15 @@ class MultiScanResult:
     error_message: str | None = None
     """HTTP-level error message when ``is_reachable`` is ``False``."""
 
+    status_code: int | None = None
+    """HTTP status of the fetched response, or ``None`` when the fetch failed.
+
+    ``is_reachable`` only says a response came back.  An error page answers with
+    a 404, 503 or a WAF challenge and still parses as HTML, so anything that
+    treats the absence of a link as evidence -- edge retirement in particular --
+    has to check this rather than ``is_reachable``.
+    """
+
     accessibility: AccessibilityScanResult | None = None
     """Accessibility statement link detection result."""
 
@@ -171,6 +180,7 @@ class MultiScanner:
                 html = response.text
                 headers = dict(response.headers)
                 final_url = str(response.url)
+                status_code = response.status_code
 
         except httpx.TooManyRedirects as exc:
             return MultiScanResult(
@@ -326,6 +336,7 @@ class MultiScanner:
             url=url,
             is_reachable=True,
             final_url=final_url,
+            status_code=status_code,
             accessibility=result_map["accessibility"],
             social_media=result_map["social_media"],
             tech=result_map["tech"],

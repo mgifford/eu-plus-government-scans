@@ -89,6 +89,12 @@ jobs:
       - name: Generate dependency matrix
         run: python3 -m src.cli.generate_dependency_matrix
 
+      # One dated snapshot per day (a later cycle replaces the same day's file).
+      # These accumulate into the only record of how the corpus changes over
+      # time; the relationship dataset itself only ever describes "now".
+      - name: Record dated snapshot
+        run: python3 -m src.cli.generate_snapshot
+
       # Upload only the tables this workflow owns.  Uploading the merged
       # database would republish a stale snapshot of every other scanner's
       # tables, undoing the isolation the split exists to provide.
@@ -133,7 +139,7 @@ jobs:
           git add -A docs/data/relationships/ docs/data/summaries/ \
             docs/data/coverage_report.json \
             docs/dependency-matrix.md docs/data/dependency-matrix.json \
-            docs/data/dependency-matrix.csv
+            docs/data/dependency-matrix.csv docs/data/snapshots/
 
           if git diff --cached --quiet 2>/dev/null; then
             echo "No changes to commit"
@@ -153,6 +159,7 @@ jobs:
             docs/data/coverage_report.json
             docs/data/dependency-matrix.json
             docs/data/dependency-matrix.csv
+            docs/data/snapshots/
           retention-days: 90
           overwrite: true
           if-no-files-found: warn

@@ -1,0 +1,492 @@
+# Provider jurisdictions — which organisation operates a third-party host, and
+# under which country's jurisdiction it sits.
+#
+# WHY THIS FILE EXISTS
+# The scan data records that a government site loads assets from
+# "googleapis.com". It cannot say that this is Google LLC, a US company, which
+# is the fact a digital-sovereignty question turns on. Nothing in the scan
+# pipeline can derive that; it has to be curated.
+#
+# HOW TO READ `jurisdiction`
+# It is the country of the operating or parent company — where the organisation
+# is incorporated and therefore whose law it primarily answers to. It is NOT a
+# statement about where servers are, where data is processed, or which entity a
+# specific contract is with. A US company's Irish subsidiary is still recorded
+# as US here, because the parent's jurisdiction is what a sovereignty analysis
+# is usually asking about; anything more specific is a legal question this
+# dataset does not attempt to answer.
+#
+# ACCURACY
+# Every entry carries a `confidence`. Entries marked `needs_review: true` are
+# plausible but unverified and MUST be checked against a primary source (company
+# registry, imprint, terms of service) before being relied on. A wrong
+# nationality claim in a sovereignty report is worse than no claim, so a host
+# nobody can confirm is left out of this file entirely rather than guessed at —
+# it then shows up as "unclassified" in the coverage report, which is honest.
+#
+# `kind` values:
+#   commercial  — a company
+#   government  — a public body (some appear here because the scanner's
+#                 government registry does not yet recognise them)
+#   nonprofit   — foundation or charity
+#   community   — an open-source project with no single controlling company
+#
+# Add entries by running `python3 -m src.cli.provider_coverage`, which lists the
+# highest-impact unclassified hosts.
+
+version: 1
+
+providers:
+
+  # --- Google / Alphabet (US) ------------------------------------------------
+  googleapis.com:
+    operator: Google LLC
+    jurisdiction: US
+    kind: commercial
+    category: cdn
+    confidence: high
+  googletagmanager.com:
+    operator: Google LLC
+    jurisdiction: US
+    kind: commercial
+    category: tag_manager
+    confidence: high
+  google.com:
+    operator: Google LLC
+    jurisdiction: US
+    kind: commercial
+    category: mixed
+    confidence: high
+  gstatic.com:
+    operator: Google LLC
+    jurisdiction: US
+    kind: commercial
+    category: cdn
+    confidence: high
+  google-analytics.com:
+    operator: Google LLC
+    jurisdiction: US
+    kind: commercial
+    category: analytics
+    confidence: high
+  googleusercontent.com:
+    operator: Google LLC
+    jurisdiction: US
+    kind: commercial
+    category: cdn
+    confidence: high
+  googlesyndication.com:
+    operator: Google LLC
+    jurisdiction: US
+    kind: commercial
+    category: advertising
+    confidence: high
+  doubleclick.net:
+    operator: Google LLC
+    jurisdiction: US
+    kind: commercial
+    category: advertising
+    confidence: high
+  recaptcha.net:
+    operator: Google LLC
+    jurisdiction: US
+    kind: commercial
+    category: captcha
+    confidence: high
+  youtube.com:
+    operator: Google LLC
+    jurisdiction: US
+    kind: commercial
+    category: video
+    confidence: high
+  ytimg.com:
+    operator: Google LLC
+    jurisdiction: US
+    kind: commercial
+    category: video
+    confidence: high
+
+  # --- Other US hyperscalers -------------------------------------------------
+  cloudflare.com:
+    operator: Cloudflare, Inc.
+    jurisdiction: US
+    kind: commercial
+    category: cdn
+    confidence: high
+  cloudfront.net:
+    operator: Amazon Web Services, Inc.
+    jurisdiction: US
+    kind: commercial
+    category: cdn
+    confidence: high
+  amazonaws.com:
+    operator: Amazon Web Services, Inc.
+    jurisdiction: US
+    kind: commercial
+    category: hosting
+    confidence: high
+  windows.net:
+    operator: Microsoft Corporation
+    jurisdiction: US
+    kind: commercial
+    category: hosting
+    confidence: high
+    notes: Azure storage and service endpoints.
+  azureedge.net:
+    operator: Microsoft Corporation
+    jurisdiction: US
+    kind: commercial
+    category: cdn
+    confidence: high
+  aspnetcdn.com:
+    operator: Microsoft Corporation
+    jurisdiction: US
+    kind: commercial
+    category: cdn
+    confidence: high
+  powerapps.com:
+    operator: Microsoft Corporation
+    jurisdiction: US
+    kind: commercial
+    category: application_platform
+    confidence: high
+  github.io:
+    operator: GitHub, Inc. (Microsoft Corporation)
+    jurisdiction: US
+    kind: commercial
+    category: hosting
+    confidence: high
+
+  # --- Meta (US) -------------------------------------------------------------
+  facebook.com:
+    operator: Meta Platforms, Inc.
+    jurisdiction: US
+    kind: commercial
+    category: social
+    confidence: high
+  facebook.net:
+    operator: Meta Platforms, Inc.
+    jurisdiction: US
+    kind: commercial
+    category: social
+    confidence: high
+  fbcdn.net:
+    operator: Meta Platforms, Inc.
+    jurisdiction: US
+    kind: commercial
+    category: cdn
+    confidence: high
+
+  # --- Other US commercial ---------------------------------------------------
+  twitter.com:
+    operator: X Corp.
+    jurisdiction: US
+    kind: commercial
+    category: social
+    confidence: high
+  typekit.net:
+    operator: Adobe Inc.
+    jurisdiction: US
+    kind: commercial
+    category: fonts
+    confidence: high
+    notes: Adobe Fonts, formerly Typekit.
+  adobedtm.com:
+    operator: Adobe Inc.
+    jurisdiction: US
+    kind: commercial
+    category: tag_manager
+    confidence: high
+  wp.com:
+    operator: Automattic Inc.
+    jurisdiction: US
+    kind: commercial
+    category: cdn
+    confidence: high
+  gravatar.com:
+    operator: Automattic Inc.
+    jurisdiction: US
+    kind: commercial
+    category: avatars
+    confidence: high
+  fontawesome.com:
+    operator: Fonticons, Inc.
+    jurisdiction: US
+    kind: commercial
+    category: icons
+    confidence: high
+  arcgis.com:
+    operator: Esri
+    jurisdiction: US
+    kind: commercial
+    category: maps
+    confidence: high
+  mapbox.com:
+    operator: Mapbox, Inc.
+    jurisdiction: US
+    kind: commercial
+    category: maps
+    confidence: high
+  vimeo.com:
+    operator: Vimeo.com, Inc.
+    jurisdiction: US
+    kind: commercial
+    category: video
+    confidence: high
+  sentry-cdn.com:
+    operator: Functional Software, Inc. (Sentry)
+    jurisdiction: US
+    kind: commercial
+    category: error_tracking
+    confidence: high
+  hcaptcha.com:
+    operator: Intuition Machines, Inc.
+    jurisdiction: US
+    kind: commercial
+    category: captcha
+    confidence: high
+  cookielaw.org:
+    operator: OneTrust, LLC
+    jurisdiction: US
+    kind: commercial
+    category: consent_management
+    confidence: high
+  addtoany.com:
+    operator: AddToAny
+    jurisdiction: US
+    kind: commercial
+    category: social_sharing
+    confidence: medium
+    needs_review: true
+  sharethis.com:
+    operator: ShareThis, Inc.
+    jurisdiction: US
+    kind: commercial
+    category: social_sharing
+    confidence: high
+  addthis.com:
+    operator: Oracle Corporation
+    jurisdiction: US
+    kind: commercial
+    category: social_sharing
+    confidence: medium
+    needs_review: true
+    notes: >-
+      Acquired by Oracle; the service was discontinued in 2023, so sites still
+      loading it are carrying a dead dependency.
+  imgix.net:
+    operator: imgix, Inc.
+    jurisdiction: US
+    kind: commercial
+    category: images
+    confidence: high
+  forethought.ai:
+    operator: Forethought Technologies, Inc.
+    jurisdiction: US
+    kind: commercial
+    category: support_automation
+    confidence: medium
+    needs_review: true
+  bootstrapcdn.com:
+    operator: BootstrapCDN
+    jurisdiction: US
+    kind: commercial
+    category: cdn
+    confidence: medium
+    needs_review: true
+    notes: Historically operated by NetDNA/StackPath; operator should be reconfirmed.
+  fonts.net:
+    operator: Monotype Imaging Inc.
+    jurisdiction: US
+    kind: commercial
+    category: fonts
+    confidence: medium
+    needs_review: true
+
+  # --- Israel ----------------------------------------------------------------
+  wixstatic.com:
+    operator: Wix.com Ltd.
+    jurisdiction: IL
+    kind: commercial
+    category: cdn
+    confidence: high
+  parastorage.com:
+    operator: Wix.com Ltd.
+    jurisdiction: IL
+    kind: commercial
+    category: cdn
+    confidence: high
+  elementor.com:
+    operator: Elementor Ltd.
+    jurisdiction: IL
+    kind: commercial
+    category: website_builder
+    confidence: high
+  userway.org:
+    operator: UserWay Inc.
+    jurisdiction: IL
+    kind: commercial
+    category: accessibility_overlay
+    confidence: medium
+    needs_review: true
+    notes: >-
+      Founded in Israel with a US presence; confirm which entity operates the
+      service before relying on the jurisdiction.
+
+  # --- European Union / EEA --------------------------------------------------
+  plausible.io:
+    operator: Plausible Insights OÜ
+    jurisdiction: EE
+    kind: commercial
+    category: analytics
+    confidence: high
+    notes: Frequently adopted as an EU-hosted alternative to Google Analytics.
+  siteimproveanalytics.com:
+    operator: Siteimprove A/S
+    jurisdiction: DK
+    kind: commercial
+    category: analytics
+    confidence: high
+  cookiebot.com:
+    operator: Usercentrics A/S (formerly Cybot A/S)
+    jurisdiction: DK
+    kind: commercial
+    category: consent_management
+    confidence: medium
+    needs_review: true
+    notes: Cybot was acquired by Usercentrics (Germany); confirm the current entity.
+  cookieinformation.com:
+    operator: Cookie Information A/S
+    jurisdiction: DK
+    kind: commercial
+    category: consent_management
+    confidence: high
+  cludo.com:
+    operator: Cludo A/S
+    jurisdiction: DK
+    kind: commercial
+    category: site_search
+    confidence: medium
+    needs_review: true
+  readspeaker.com:
+    operator: ReadSpeaker B.V.
+    jurisdiction: NL
+    kind: commercial
+    category: text_to_speech
+    confidence: medium
+    needs_review: true
+  flaticon.com:
+    operator: Freepik Company S.L.
+    jurisdiction: ES
+    kind: commercial
+    category: icons
+    confidence: high
+  tarteaucitron.io:
+    operator: tarteaucitron.js
+    jurisdiction: FR
+    kind: community
+    category: consent_management
+    confidence: medium
+    needs_review: true
+    notes: Open-source consent manager of French origin.
+  trustindex.io:
+    operator: Trustindex Ltd.
+    jurisdiction: HU
+    kind: commercial
+    category: reviews
+    confidence: medium
+    needs_review: true
+  axiell.com:
+    operator: Axiell Group AB
+    jurisdiction: SE
+    kind: commercial
+    category: library_systems
+    confidence: medium
+    needs_review: true
+
+  # --- United Kingdom --------------------------------------------------------
+  datatables.net:
+    operator: SpryMedia Ltd
+    jurisdiction: GB
+    kind: commercial
+    category: javascript_library
+    confidence: medium
+    needs_review: true
+  civiccomputing.com:
+    operator: Civic Computing Ltd
+    jurisdiction: GB
+    kind: commercial
+    category: consent_management
+    confidence: medium
+    needs_review: true
+    notes: Civic Cookie Control.
+  browsealoud.com:
+    operator: Texthelp Ltd
+    jurisdiction: GB
+    kind: commercial
+    category: text_to_speech
+    confidence: medium
+    needs_review: true
+  silktide.com:
+    operator: Silktide Ltd
+    jurisdiction: GB
+    kind: commercial
+    category: accessibility_testing
+    confidence: medium
+    needs_review: true
+  cdn-cookieyes.com:
+    operator: CookieYes Limited
+    jurisdiction: GB
+    kind: commercial
+    category: consent_management
+    confidence: medium
+    needs_review: true
+
+  # --- Community / foundation projects ---------------------------------------
+  # Jurisdiction is a poor fit here: these have no single controlling company,
+  # though the infrastructure they are served from usually does.
+  jquery.com:
+    operator: OpenJS Foundation
+    jurisdiction: US
+    kind: nonprofit
+    category: javascript_library
+    confidence: high
+  jsdelivr.net:
+    operator: jsDelivr
+    jurisdiction: null
+    kind: community
+    category: cdn
+    confidence: medium
+    needs_review: true
+    notes: >-
+      Open-source CDN with no single controlling company, served through
+      commercial infrastructure. Recorded without a jurisdiction rather than
+      guessing at one.
+  unpkg.com:
+    operator: UNPKG
+    jurisdiction: null
+    kind: community
+    category: cdn
+    confidence: medium
+    needs_review: true
+    notes: Open-source CDN for npm packages, served through commercial infrastructure.
+
+  # --- Public bodies the government registry does not yet recognise ----------
+  # These are counted as third-party dependencies today, which overstates
+  # external exposure. They belong in the seed data as government domains.
+  cqc.org.uk:
+    operator: Care Quality Commission
+    jurisdiction: GB
+    kind: government
+    category: public_body
+    confidence: high
+    notes: >-
+      UK non-departmental public body. Appears as a third-party provider only
+      because it is missing from the government domain registry.
+  assets.nhs.uk:
+    operator: NHS England
+    jurisdiction: GB
+    kind: government
+    category: public_body
+    confidence: high
+    notes: NHS asset host; missing from the government domain registry.

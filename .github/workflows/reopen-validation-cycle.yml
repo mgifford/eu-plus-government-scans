@@ -26,7 +26,12 @@ jobs:
     permissions:
       contents: read
       issues: write
-    
+      # Required by scripts/fetch-metadata-artifacts.sh.  Without it the
+      # artifact listing 403s, the merge starts from an empty database, and the
+      # upload below replaces validation_batch_state and issue_trigger_runs
+      # with nothing.
+      actions: read
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
