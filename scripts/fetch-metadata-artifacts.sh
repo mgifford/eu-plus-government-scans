@@ -63,7 +63,10 @@ for name in $NAMES; do
     exit 1
   fi
 
-  run_id="$(printf '%s\n' "$listing" | sort -rk1 | head -1 | awk '{print $2}')"
+  # awk rather than `head -1`: head closes the pipe after the first line, and
+  # with hundreds of artifacts still to write sort dies of SIGPIPE, which
+  # `pipefail` turns into an aborted run.  awk consumes the whole stream.
+  run_id="$(printf '%s\n' "$listing" | sort -rk1 | awk 'NR == 1 { print $2 }')"
 
   if [ -z "$run_id" ]; then
     echo "  ${name}: none published yet"
