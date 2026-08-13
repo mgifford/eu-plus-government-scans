@@ -5,11 +5,11 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-08-13 17:35 UTC — last scan: 2026-08-13_
+_Stats as of 2026-08-13 17:51 UTC — last scan: 2026-08-13_
 
-**11** scan batches run
+**12** scan batches run
 
-**8,138** of **87,696** available pages scanned (**9.3%** coverage)
+**9,683** of **87,696** available pages scanned (**11.0%** coverage)
 **0** pages with technology detections (**0.0%** of scanned)
 **0** unique technologies identified
 
@@ -30,6 +30,7 @@ _Stats as of 2026-08-13 17:35 UTC — last scan: 2026-08-13_
 | Finland | 199 | 0 | 199 | 2026-08-12 |
 | France | 933 | 0 | 10,009 | 2026-08-12 |
 | Germany | 1,372 | 0 | 6,599 | 2026-08-13 |
+| Greece | 1,545 | 0 | 1,752 | 2026-08-13 |
 
 > Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and metric from [Download machine-readable technology data (JSON)](technology-data.json).
 
