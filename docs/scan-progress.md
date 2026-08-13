@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-08-13 17:55 UTC_
+_Generated: 2026-08-13 17:57 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -16,7 +16,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | **Combined Reachability** | **9,483 confirmed reachable** | 87,696 | **<span role="img" aria-label="10.8% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:13px;"></span></span><span class="sm-bar__label">10.8%</span></span>** | — |
 | Social Media | 7,623 scanned (7,150 reachable) | 87,696 | <span role="img" aria-label="8.7% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:10px;"></span></span><span class="sm-bar__label">8.7%</span></span> | 1.1 days |
 | Technology | 9,684 scanned | 87,696 | <span role="img" aria-label="11.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:13px;"></span></span><span class="sm-bar__label">11.0%</span></span> | 1.1 days |
-| Lighthouse | 11,960 scanned | 87,696 | <span role="img" aria-label="13.6% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:16px;"></span></span><span class="sm-bar__label">13.6%</span></span> | 14.5 days |
+| Lighthouse | 12,101 scanned | 87,696 | <span role="img" aria-label="13.8% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:17px;"></span></span><span class="sm-bar__label">13.8%</span></span> | 14.3 days |
 | Accessibility Statements | 13,649 scanned | 87,696 | <span role="img" aria-label="15.6% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:19px;"></span></span><span class="sm-bar__label">15.6%</span></span> | 1.2 days |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by any scan type. **Avg Age** shows the mean number of days (or hours) since each URL in that scan type was last scanned — lower is fresher.
@@ -110,7 +110,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Spain | 133 | 85 | 88 | 87 | 89 | 2026-08-12 |
 | Sweden | 423 | 88 | 92 | 91 | 86 | 2026-08-11 |
 | Switzerland | 535 | 84 | 90 | 96 | 88 | 2026-08-13 |
-| United Kingdom | 323 | 92 | 93 | 92 | 87 | 2026-08-08 |
+| United Kingdom | 464 | 91 | 93 | 91 | 87 | 2026-08-13 |
 
 > Scores are averages across all successfully audited URLs, displayed as 0–100 (multiply source values × 100).
 
