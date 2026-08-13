@@ -42,6 +42,8 @@ MAX_FAILURES_BEFORE_BACKOFF = 3
 BACKOFF_BASE_DAYS = 1
 BACKOFF_MAX_DAYS = 28
 DEFAULT_SCAN_WINDOW_DAYS = 28
+# How long a retired edge stays published before it is dropped entirely.
+RETIRED_EDGE_RETENTION_DAYS = 180
 
 
 # ---------------------------------------------------------------------------
@@ -62,6 +64,12 @@ class AggregatedRelationship:
     page_regions: set[str]
     first_seen: str
     last_seen: str
+    # An edge stays in the dataset after it stops being served, flagged rather
+    # than deleted, so that a dependency being dropped is itself a visible
+    # event.  Without this the dataset only ever grows and a migration away
+    # from a provider is indistinguishable from no change at all.
+    active: bool = True
+    inactive_since: str | None = None
 
     def to_dict(self) -> dict:
         """Serialise this edge for the published JSONL dataset.
@@ -85,6 +93,8 @@ class AggregatedRelationship:
             "page_regions": sorted(self.page_regions),
             "first_seen": self.first_seen,
             "last_seen": self.last_seen,
+            "active": self.active,
+            "inactive_since": self.inactive_since,
         }
 
 
@@ -112,6 +122,29 @@ def _rel_key(edge: Any) -> tuple[str, str, str, str]:
         edge.target_hostname,
         edge.relationship_type,
     )
+
+
+def _page_confirmed(result: Any) -> bool:
+    """Whether *result* is strong enough evidence to retire this page's edges.
+
+    Retirement reads the absence of a dependency as its removal, so the bar is
+    higher than for recording a scan.  ``is_reachable`` only means a response
+    arrived: a 404, a 503 or a WAF challenge still returns parseable HTML with
+    no scripts on it, and treating that as a confirmed page would retire every
+    edge the page really serves -- publishing a migration away from a provider
+    that never happened.  A parser error is the same story from the other end.
+
+    Args:
+        result: A :class:`MultiScanResult` from the batch scanner.
+
+    Returns:
+        True only for a 2xx response whose relationship extraction succeeded.
+    """
+    if not result.is_reachable or result.relationships is None:
+        return False
+    if result.status_code is None or not 200 <= result.status_code < 300:
+        return False
+    return getattr(result.relationships, "error_message", None) is None
 
 
 def _backoff_days(failure_count: int) -> int:
@@ -555,6 +588,8 @@ class RelationshipScannerJob:
                 page_regions=set(row.get("page_regions", [])),
                 first_seen=row.get("first_seen", ""),
                 last_seen=row.get("last_seen", ""),
+                active=row.get("active", True),
+                inactive_since=row.get("inactive_since"),
             )
         return existing
 
@@ -586,6 +621,9 @@ class RelationshipScannerJob:
                     agg.first_seen = now
                 if now > agg.last_seen:
                     agg.last_seen = now
+                # Seen again: a provider can be dropped and later readopted.
+                agg.active = True
+                agg.inactive_since = None
             else:
                 existing[key] = AggregatedRelationship(
                     source_domain=edge.source_domain,
@@ -600,6 +638,61 @@ class RelationshipScannerJob:
                     last_seen=now,
                 )
         return existing
+
+    @staticmethod
+    def _expire_missing_edges(
+        existing: dict[tuple[str, str, str, str], AggregatedRelationship],
+        confirmed_urls: set[str],
+        observed_by_url: dict[str, set[tuple[str, str, str, str]]],
+        now: str,
+    ) -> int:
+        """Retire edges whose source pages no longer serve them.
+
+        Nothing previously removed an edge, so the dataset only grew: a
+        dependency a government had migrated away from stayed published as
+        current indefinitely, which made exactly the change worth reporting
+        invisible.
+
+        An edge is evidence-based -- it was seen on specific pages.  When one of
+        those pages is fetched and parsed successfully and the edge is *not*
+        among its relationships, that page no longer carries it.  Once no page
+        carries it, the edge is marked inactive rather than deleted, so the drop
+        itself stays in the record.
+
+        Only successfully scanned pages count.  A page that timed out proves
+        nothing about its dependencies, and treating a failed fetch as removal
+        would turn every outage into a false sovereignty win.
+
+        Args:
+            existing: Relationship map being merged into.
+            confirmed_urls: Pages fetched and parsed without error this run.
+            observed_by_url: Edge keys actually seen on each of those pages.
+            now: ISO timestamp to record as the retirement moment.
+
+        Returns:
+            How many edges were newly marked inactive.
+        """
+        retired = 0
+        for key, agg in existing.items():
+            if not agg.active or not agg.source_pages:
+                # An edge with no page attribution predates source_page_urls and
+                # cannot be checked; it becomes checkable once re-observation
+                # gives it a page set.
+                continue
+
+            gone = {
+                url for url in agg.source_pages & confirmed_urls
+                if key not in observed_by_url.get(url, ())
+            }
+            if not gone:
+                continue
+
+            agg.source_pages -= gone
+            if not agg.source_pages:
+                agg.active = False
+                agg.inactive_since = now
+                retired += 1
+        return retired
 
     def _write_jsonl(
         self,
@@ -617,8 +710,19 @@ class RelationshipScannerJob:
             relationships: Relationship map to publish.
             shard_dir: Destination directory for the shards.
         """
+        # Retired edges are kept so a drop stays visible in the record, but not
+        # forever -- past this age the event has been captured by the dated
+        # snapshots and the row is only cost.
+        cutoff = (
+            datetime.now(timezone.utc) - timedelta(days=RETIRED_EDGE_RETENTION_DAYS)
+        ).isoformat()
+        publishable = [
+            agg for agg in relationships.values()
+            if agg.active or (agg.inactive_since or "") >= cutoff
+        ]
+
         index = relationship_shards.write_rows(
-            (agg.to_dict() for agg in relationships.values()), shard_dir
+            (agg.to_dict() for agg in publishable), shard_dir
         )
 
         # The single-file dataset this replaced would otherwise linger in a
@@ -641,10 +745,17 @@ class RelationshipScannerJob:
         country_code: str,
         relationships: dict[tuple[str, str, str, str], AggregatedRelationship],
     ) -> dict:
-        """Build a pre-aggregated summary for one country."""
+        """Build a pre-aggregated summary for one country.
+
+        Retired edges are excluded.  They stay in the shards for 180 days so a
+        drop is auditable, but the summaries drive the published country pages
+        and the network graph; counting a dependency that is no longer served
+        would put those at odds with the matrix and the snapshots, which filter
+        it out.
+        """
         country_rels = {
             k: v for k, v in relationships.items()
-            if v.source_domain.endswith(
+            if v.active and v.source_domain.endswith(
                 _tld_for_country(country_code)
             )
         }
@@ -833,13 +944,17 @@ class RelationshipScannerJob:
         existing = self._load_existing_relationships(RELATIONSHIP_SHARD_DIR)
         new_edges: list[tuple[Any, str]] = []
         scanned_urls: list[str] = []
+        # Pages fetched and parsed without error this run.  Absence of an edge
+        # only means something for these; a page that failed to load is not
+        # evidence that the dependency was removed.
+        confirmed_urls: set[str] = set()
 
         def _on_result(result: MultiScanResult) -> None:
             scan_start = time.monotonic()
             success = result.is_reachable and result.relationships is not None
             rel_count = 0
             error_msg = result.error_message
-            status_code = None
+            status_code = result.status_code
 
             if result.relationships and result.relationships.relationships:
                 rel_count = len(result.relationships.relationships)
@@ -871,6 +986,8 @@ class RelationshipScannerJob:
             )
 
             scanned_urls.append(result.url)
+            if _page_confirmed(result):
+                confirmed_urls.add(result.url)
 
         scan_results = await self.scanner.scan_urls_batch(
             urls,
@@ -882,6 +999,21 @@ class RelationshipScannerJob:
 
         # Merge and write
         merged = self._merge_new_relationships(existing, new_edges)
+
+        # Retire edges the re-scanned pages no longer serve.  This has to run
+        # after the merge, so an edge re-observed this cycle counts as present.
+        observed_by_url: dict[str, set[tuple[str, str, str, str]]] = defaultdict(set)
+        for edge, source_url in new_edges:
+            observed_by_url[source_url].add(_rel_key(edge))
+        retired = self._expire_missing_edges(
+            merged,
+            confirmed_urls,
+            observed_by_url,
+            datetime.now(timezone.utc).isoformat(),
+        )
+        if retired:
+            print(f"Retired {retired} relationship(s) no longer served by their pages")
+
         self._write_jsonl(merged, RELATIONSHIP_SHARD_DIR)
 
         scanned_count = len(scan_results)

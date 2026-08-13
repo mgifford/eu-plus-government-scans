@@ -115,6 +115,55 @@ python3 -m src.cli.generate_validation_report --output validation-report.md
 - Before upgrading dependencies, check vulnerability advisories and license impact
 - Track dependency inventory and licenses in `SBOM.md`
 
+### Provider jurisdictions
+
+`data/providers/jurisdictions.yaml` maps a third-party host to the organisation
+that operates it and the country whose law that organisation answers to.  The
+scan pipeline cannot derive this -- it knows a site loads `googleapis.com`, not
+that this is Google LLC of the United States -- so the table is curated by hand
+and read through `src/lib/provider_registry.py`.
+
+Rules for editing it:
+
+- **`jurisdiction` is the parent company's country of incorporation**, not where
+  servers sit or which subsidiary signed a contract.  A US company's Irish
+  subsidiary is still `US` here.
+- **Leave a host out rather than guess.**  It then reports as unclassified,
+  which is honest.  A wrong nationality claim in a sovereignty report is worse
+  than an absent one.
+- **Anything below `confidence: high` carries `needs_review: true`**, and the
+  coverage report counts how many dependencies rest on unverified rows so a
+  figure is never published as more certain than its inputs.
+- **`kind: government`** exists because some public bodies are missing from the
+  government domain registry and would otherwise be counted as commercial third
+  parties, overstating a country's external exposure.
+
+Run `python3 -m src.cli.provider_coverage` for current coverage and the ranked
+list of unclassified hosts -- it is what makes the curation finite.  Any figure
+derived from the table must be published together with its coverage.
+
+### Measuring change over time
+
+The relationship dataset describes the corpus **now**.  Two mechanisms make
+change measurable, and both are load-bearing:
+
+- **Edges are retired, not deleted.**  `AggregatedRelationship.active` goes
+  false once every page that carried an edge has been re-scanned successfully
+  without it.  Nothing used to remove an edge, so the dataset only grew and a
+  government migrating away from a provider looked exactly like no change.  Only
+  *successfully* scanned pages count as evidence — treating a failed fetch as
+  removal would turn every outage into a false result.  Retired rows stay
+  published for `RETIRED_EDGE_RETENTION_DAYS`, then drop.
+- **Dated snapshots.**  `src/cli/generate_snapshot.py` writes one compact file
+  per day to `docs/data/snapshots/`.  Even a perfectly-run scanner cannot
+  reconstruct "what share of this country's agencies used this provider in
+  March" from the live dataset, because it holds no periodic record.  Snapshots
+  are the only thing that can answer it, so they are worth writing long before
+  anything reads them.
+
+Any consumer reporting the current state must skip rows where `active` is
+false; `generate_dependency_matrix.py` and `generate_snapshot.py` both do.
+
 ### Scan metadata artifacts
 
 Scan state moves between workflow runs as a GitHub Actions artifact.  **Each

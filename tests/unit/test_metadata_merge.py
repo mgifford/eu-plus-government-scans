@@ -286,6 +286,30 @@ class TestWorkflowWiring:
                     f"{path.name} uploads {artifact} without extracting it first"
                 )
 
+    def test_every_collector_can_read_artifacts(self) -> None:
+        """Fetching artifacts needs ``actions: read``, and failing is silent.
+
+        Without the permission the artifact listing 403s, the merge starts from
+        an empty database, and the upload -- which runs with ``overwrite:
+        true`` -- replaces the accumulated state with nothing.  Nothing in the
+        run turns red, so this has to be caught here.
+        """
+        if not self._workflows():
+            pytest.skip("workflow directory not present in this checkout")
+
+        for path in self._workflows():
+            if "fetch-metadata-artifacts" not in path.read_text(encoding="utf-8"):
+                continue
+            for name, job in (self._load(path).get("jobs") or {}).items():
+                steps = " ".join(str(s.get("run", "")) for s in job.get("steps", []))
+                if "fetch-metadata-artifacts" not in steps:
+                    continue
+                permissions = job.get("permissions") or {}
+                assert permissions.get("actions") == "read", (
+                    f"{path.name} job {name!r} downloads metadata artifacts but "
+                    f"has permissions {permissions}"
+                )
+
     def test_every_uploader_merges_before_scanning(self) -> None:
         """Skip logic reads other scanners' results, so the merge must run."""
         if not self._workflows():
