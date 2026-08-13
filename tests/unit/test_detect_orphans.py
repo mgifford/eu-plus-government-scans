@@ -79,4 +79,6 @@ class TestLoadRelationshipTargets:
         """Absent means never evaluated, not retired."""
         _write(tmp_path, [_row("a.gov.uk", "target.gov.uk")])
 
-        assert "target.gov.uk" in load_relationship_targets(tmp_path)
+        assert load_relationship_targets(tmp_path) == {
+            "target.gov.uk": {"a.gov.uk"}
+        }
