@@ -143,20 +143,5 @@
     "total_relationships": 1087,
     "total_source_domains": 16,
     "file": "romania.json"
-  },
-  "ITALY": {
-    "total_relationships": 15862,
-    "total_source_domains": 151,
-    "file": "italy.json"
-  },
-  "BULGARIA": {
-    "total_relationships": 1719,
-    "total_source_domains": 51,
-    "file": "bulgaria.json"
-  },
-  "LUXEMBOURG": {
-    "total_relationships": 1800,
-    "total_source_domains": 41,
-    "file": "luxembourg.json"
   }
 }
