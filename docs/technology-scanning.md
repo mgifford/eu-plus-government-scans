@@ -5,11 +5,11 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-08-13 20:23 UTC — last scan: 2026-08-13_
+_Stats as of 2026-08-13 20:30 UTC — last scan: 2026-08-13_
 
-**16** scan batches run
+**20** scan batches run
 
-**11,197** of **87,696** available pages scanned (**12.8%** coverage)
+**12,855** of **87,696** available pages scanned (**14.7%** coverage)
 **0** pages with technology detections (**0.0%** of scanned)
 **0** unique technologies identified
 
@@ -35,6 +35,10 @@ _Stats as of 2026-08-13 20:23 UTC — last scan: 2026-08-13_
 | Iceland | 145 | 0 | 145 | 2026-08-13 |
 | Ireland | 536 | 0 | 536 | 2026-08-13 |
 | Italy | 441 | 0 | 5,351 | 2026-08-13 |
+| Latvia | 803 | 0 | 803 | 2026-08-13 |
+| Lithuania | 122 | 0 | 122 | 2026-08-13 |
+| Luxembourg | 573 | 0 | 573 | 2026-08-13 |
+| Malta | 160 | 0 | 610 | 2026-08-13 |
 
 > Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and metric from [Download machine-readable technology data (JSON)](technology-data.json).
 
