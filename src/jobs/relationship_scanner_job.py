@@ -1011,17 +1011,32 @@ class RelationshipScannerJob:
             observed_by_url,
             datetime.now(timezone.utc).isoformat(),
         )
-        if retired:
-            print(f"Retired {retired} relationship(s) no longer served by their pages")
-
         self._write_jsonl(merged, RELATIONSHIP_SHARD_DIR)
 
         scanned_count = len(scan_results)
         is_complete = scanned_count == len(urls)
+        checkable = sum(1 for agg in merged.values() if agg.source_pages)
+        inactive = sum(1 for agg in merged.values() if not agg.active)
 
         print(f"Scanned {scanned_count}/{len(urls)} URLs, "
               f"found {len(new_edges)} new relationship observations")
         print(f"Total relationships after merge: {len(merged)}")
+
+        # Retirement fails silently: if pages stop being confirmed -- a WAF
+        # starts answering 403, or extraction breaks -- nothing retires and the
+        # dataset simply looks stable.  Reporting the confirmation rate every
+        # run makes that visible immediately rather than as an absence noticed
+        # months later.
+        print(
+            f"Retirement: {len(confirmed_urls)}/{scanned_count} pages confirmed, "
+            f"{retired} edge(s) retired this run, "
+            f"{checkable}/{len(merged)} edges checkable, {inactive} inactive"
+        )
+        if scanned_count and not confirmed_urls:
+            print(
+                "  WARNING: no page was confirmed, so nothing can retire. "
+                "Check whether pages are answering non-2xx or failing to parse."
+            )
 
         return {
             "scan_id": scan_id,
@@ -1032,6 +1047,10 @@ class RelationshipScannerJob:
             "is_complete": is_complete,
             "relationships_extracted": len(new_edges),
             "unique_edges": len(merged),
+            "pages_confirmed": len(confirmed_urls),
+            "edges_retired": retired,
+            "edges_checkable": checkable,
+            "edges_inactive": inactive,
         }
 
     # ------------------------------------------------------------------
