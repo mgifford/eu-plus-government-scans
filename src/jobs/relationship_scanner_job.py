@@ -124,6 +124,29 @@ def _rel_key(edge: Any) -> tuple[str, str, str, str]:
     )
 
 
+def _page_confirmed(result: Any) -> bool:
+    """Whether *result* is strong enough evidence to retire this page's edges.
+
+    Retirement reads the absence of a dependency as its removal, so the bar is
+    higher than for recording a scan.  ``is_reachable`` only means a response
+    arrived: a 404, a 503 or a WAF challenge still returns parseable HTML with
+    no scripts on it, and treating that as a confirmed page would retire every
+    edge the page really serves -- publishing a migration away from a provider
+    that never happened.  A parser error is the same story from the other end.
+
+    Args:
+        result: A :class:`MultiScanResult` from the batch scanner.
+
+    Returns:
+        True only for a 2xx response whose relationship extraction succeeded.
+    """
+    if not result.is_reachable or result.relationships is None:
+        return False
+    if result.status_code is None or not 200 <= result.status_code < 300:
+        return False
+    return getattr(result.relationships, "error_message", None) is None
+
+
 def _backoff_days(failure_count: int) -> int:
     """Exponential backoff capped at BACKOFF_MAX_DAYS."""
     if failure_count <= 0:
@@ -722,10 +745,17 @@ class RelationshipScannerJob:
         country_code: str,
         relationships: dict[tuple[str, str, str, str], AggregatedRelationship],
     ) -> dict:
-        """Build a pre-aggregated summary for one country."""
+        """Build a pre-aggregated summary for one country.
+
+        Retired edges are excluded.  They stay in the shards for 180 days so a
+        drop is auditable, but the summaries drive the published country pages
+        and the network graph; counting a dependency that is no longer served
+        would put those at odds with the matrix and the snapshots, which filter
+        it out.
+        """
         country_rels = {
             k: v for k, v in relationships.items()
-            if v.source_domain.endswith(
+            if v.active and v.source_domain.endswith(
                 _tld_for_country(country_code)
             )
         }
@@ -924,7 +954,7 @@ class RelationshipScannerJob:
             success = result.is_reachable and result.relationships is not None
             rel_count = 0
             error_msg = result.error_message
-            status_code = None
+            status_code = result.status_code
 
             if result.relationships and result.relationships.relationships:
                 rel_count = len(result.relationships.relationships)
@@ -956,7 +986,7 @@ class RelationshipScannerJob:
             )
 
             scanned_urls.append(result.url)
-            if success:
+            if _page_confirmed(result):
                 confirmed_urls.add(result.url)
 
         scan_results = await self.scanner.scan_urls_batch(

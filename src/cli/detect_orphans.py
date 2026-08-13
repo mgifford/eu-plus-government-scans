@@ -75,6 +75,10 @@ def load_relationship_targets(
             checkout that predates the split falls back to the single-file
             dataset automatically.
 
+    Retired edges are excluded: a domain whose only inbound links have since
+    been removed is genuinely unreferenced, and counting a link that no longer
+    exists would keep it out of the orphan report indefinitely.
+
     Returns:
         Mapping of target_domain -> set of source_domains linking to it.
     """
@@ -82,6 +86,8 @@ def load_relationship_targets(
     for row in relationship_shards.iter_rows(
         shard_dir, legacy_path=LEGACY_RELATIONSHIP_JSONL
     ):
+        if row.get("active") is False:
+            continue
         if row.get("target_category") != "known_government":
             continue
         tgt_sources[row["target_domain"]].add(row["source_domain"])

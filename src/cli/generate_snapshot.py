@@ -22,7 +22,7 @@ from __future__ import annotations
 import argparse
 import json
 from collections import defaultdict
-from datetime import date, datetime, timezone
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Iterable
 
@@ -219,7 +219,9 @@ def main(args: list[str] | None = None) -> int:
         print(f"No seed files under {parsed.toon_dir}; nothing to snapshot.")
         return 1
 
-    snapshot_date = parsed.date or date.today().isoformat()
+    # UTC, not local: snapshots are keyed by date and a runner west of UTC
+    # would name a run after the previous day and overwrite that snapshot.
+    snapshot_date = parsed.date or datetime.now(timezone.utc).date().isoformat()
     snapshot = build_snapshot(
         iter_rows(parsed.shard_dir),
         country_index,

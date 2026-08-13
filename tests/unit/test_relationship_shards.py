@@ -148,6 +148,35 @@ class TestStaleCleanup:
         assert list(tmp_path.glob("*.tmp")) == []
 
 
+class TestEmptyWriteGuard:
+    """Cleanup must not become a way to delete the whole dataset.
+
+    The workflow commits whatever this leaves on disk, so a load that silently
+    returned nothing would erase the published corpus and push the deletion.
+    """
+
+    def test_empty_write_over_existing_shards_is_refused(self, tmp_path: Path) -> None:
+        relationship_shards.write_rows([_row("a.uk"), _row("b.bg")], tmp_path)
+
+        with pytest.raises(ValueError, match="Refusing to write an empty dataset"):
+            relationship_shards.write_rows([], tmp_path)
+
+    def test_refused_write_leaves_the_dataset_intact(self, tmp_path: Path) -> None:
+        relationship_shards.write_rows([_row("a.uk"), _row("b.bg")], tmp_path)
+
+        with pytest.raises(ValueError):
+            relationship_shards.write_rows([], tmp_path)
+
+        assert len(list(relationship_shards.iter_rows(tmp_path))) == 2
+
+    def test_empty_write_into_an_empty_directory_is_allowed(self, tmp_path: Path) -> None:
+        """A first run with nothing to publish is not a data loss."""
+        index = relationship_shards.write_rows([], tmp_path)
+
+        assert index["total_rows"] == 0
+        assert list(relationship_shards.iter_rows(tmp_path)) == []
+
+
 class TestReadFallbacks:
     """Reading tolerates a missing directory, damaged index, or legacy layout."""
 
