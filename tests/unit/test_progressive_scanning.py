@@ -16,8 +16,11 @@ from unittest.mock import MagicMock
 from src.jobs.relationship_scanner_job import (
     RelationshipScannerJob,
     _backoff_days,
+    _page_confirmed,
     _rel_key,
 )
+from src.services.multi_scanner import MultiScanResult
+from src.services.relationship_scanner import RelationshipScanResult
 
 
 # ---------------------------------------------------------------------------
@@ -704,6 +707,63 @@ class TestSourcePagePersistence:
             assert loaded[key].observations == 7
 
 
+class TestPageConfirmation:
+    """What counts as evidence that a page no longer serves a dependency.
+
+    ``is_reachable`` only says a response arrived.  An error page or a WAF
+    challenge parses as HTML with no scripts on it, so accepting either would
+    retire every edge the page really serves and publish a migration that never
+    happened -- the exact false result edge expiry exists to avoid.
+    """
+
+    @staticmethod
+    def _result(status=200, sub_error=None, relationships=True):
+        sub = None
+        if relationships:
+            sub = RelationshipScanResult(
+                url="https://source.gov/a",
+                is_reachable=True,
+                relationships=[],
+                error_message=sub_error,
+            )
+        return MultiScanResult(
+            url="https://source.gov/a",
+            is_reachable=status is not None,
+            status_code=status,
+            relationships=sub,
+        )
+
+    def test_ok_response_is_confirmed(self) -> None:
+        assert _page_confirmed(self._result(status=200)) is True
+
+    def test_204_is_confirmed(self) -> None:
+        assert _page_confirmed(self._result(status=204)) is True
+
+    def test_server_error_page_is_not_confirmed(self) -> None:
+        """A 503 renders as HTML with no dependencies on it."""
+        assert _page_confirmed(self._result(status=503)) is False
+
+    def test_not_found_page_is_not_confirmed(self) -> None:
+        assert _page_confirmed(self._result(status=404)) is False
+
+    def test_waf_challenge_is_not_confirmed(self) -> None:
+        """A 403 interstitial is a block, not a page that dropped its scripts."""
+        assert _page_confirmed(self._result(status=403)) is False
+
+    def test_parser_error_is_not_confirmed(self) -> None:
+        """The sub-scanner returns a non-None result carrying the error."""
+        assert _page_confirmed(self._result(sub_error="Unexpected error: boom")) is False
+
+    def test_unreachable_page_is_not_confirmed(self) -> None:
+        assert _page_confirmed(self._result(status=None, relationships=False)) is False
+
+    def test_missing_status_is_not_confirmed(self) -> None:
+        """Absent evidence is not evidence of removal."""
+        result = self._result(status=200)
+        result.status_code = None
+        assert _page_confirmed(result) is False
+
+
 class TestEdgeExpiry:
     """A dependency that is dropped has to become visible as a drop.
 
@@ -916,3 +976,59 @@ class TestEdgeExpiry:
             loaded = job._load_existing_relationships(shard_dir)
 
         assert all(a.active is True for a in loaded.values())
+
+
+class TestSummaryExcludesRetiredEdges:
+    """The summaries feed the country pages and the network graph.
+
+    Retired edges stay in the shards so a drop stays auditable, but the matrix
+    and the snapshots filter them out.  If the summaries did not, two published
+    views of the same data would disagree for the 180 days a retired edge is
+    retained.
+    """
+
+    @staticmethod
+    def _agg(target="target.com", active=True):
+        from src.jobs.relationship_scanner_job import AggregatedRelationship
+
+        return AggregatedRelationship(
+            source_domain="agency.gov.uk",
+            target_domain=target,
+            target_hostname=f"www.{target}",
+            relationship_type="script_dependency",
+            target_category="cdn",
+            source_pages={"https://agency.gov.uk/a"},
+            observations=3,
+            page_regions={"head"},
+            first_seen="2026-01-01T00:00:00+00:00",
+            last_seen="2026-01-01T00:00:00+00:00",
+            active=active,
+        )
+
+    def _summary(self, aggs):
+        relationships = {_rel_key(a): a for a in aggs}
+        return RelationshipScannerJob._build_country_summary(
+            object(), "UNITED_KINGDOM", relationships
+        )
+
+    def test_active_edge_is_counted(self) -> None:
+        summary = self._summary([self._agg()])
+
+        assert summary["total_relationships"] == 1
+        assert summary["top_target_domains"][0]["domain"] == "target.com"
+
+    def test_retired_edge_is_not_counted(self) -> None:
+        summary = self._summary([self._agg(active=False)])
+
+        assert summary["total_relationships"] == 0
+        assert summary["top_target_domains"] == []
+        assert summary["total_source_domains"] == 0
+
+    def test_retired_edge_does_not_inflate_a_live_one(self) -> None:
+        summary = self._summary([
+            self._agg(target="live.com"),
+            self._agg(target="dropped.com", active=False),
+        ])
+
+        assert [t["domain"] for t in summary["top_target_domains"]] == ["live.com"]
+        assert summary["relationship_types"] == {"script_dependency": 1}

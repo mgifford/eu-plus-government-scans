@@ -155,6 +155,12 @@ def write_rows(
     longer fills are deleted, so a group that shrinks does not strand stale
     rows on disk.
 
+    Writing nothing over an existing dataset is refused.  The pruning step
+    below deletes every shard the current call did not produce, and the caller
+    commits the result, so an empty *rows* -- a load that silently failed, a
+    scan that returned no pages -- would erase the whole corpus in one run and
+    push the deletion.  An empty write is only allowed into an empty directory.
+
     Args:
         rows: Relationship rows to write.
         shard_dir: Destination directory, created when absent.
@@ -164,6 +170,9 @@ def write_rows(
 
     Returns:
         The index that was written alongside the shards.
+
+    Raises:
+        ValueError: When *rows* is empty but *shard_dir* holds existing shards.
     """
     shard_dir.mkdir(parents=True, exist_ok=True)
 
@@ -173,6 +182,16 @@ def write_rows(
         line = json.dumps(row, ensure_ascii=False) + "\n"
         group = shard_group_for_domain(str(row.get("source_domain", "")))
         encoded.append((_sort_key(row), group, line.encode("utf-8")))
+
+    if not encoded:
+        existing = sorted(p.name for p in shard_dir.glob("*.jsonl"))
+        if existing:
+            raise ValueError(
+                f"Refusing to write an empty dataset over {len(existing)} "
+                f"existing shard(s) in {shard_dir}; this would delete the "
+                "published relationships. Pass an explicit empty directory if "
+                "a reset is intended."
+            )
 
     # Group first, then order within the group, so a shard's contents change
     # only when that group's own rows change.
