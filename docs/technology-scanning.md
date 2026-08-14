@@ -5,11 +5,11 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-08-14 09:20 UTC — last scan: 2026-08-14_
+_Stats as of 2026-08-14 10:02 UTC — last scan: 2026-08-14_
 
-**23** scan batches run
+**24** scan batches run
 
-**14,602** of **87,696** available pages scanned (**16.7%** coverage)
+**15,855** of **87,696** available pages scanned (**18.1%** coverage)
 **0** pages with technology detections (**0.0%** of scanned)
 **0** unique technologies identified
 
@@ -42,6 +42,7 @@ _Stats as of 2026-08-14 09:20 UTC — last scan: 2026-08-14_
 | Netherlands | 945 | 0 | 945 | 2026-08-14 |
 | Norway | 249 | 0 | 249 | 2026-08-14 |
 | Poland | 553 | 0 | 14,951 | 2026-08-14 |
+| Portugal | 1,253 | 0 | 3,508 | 2026-08-14 |
 
 > Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and metric from [Download machine-readable technology data (JSON)](technology-data.json).
 
