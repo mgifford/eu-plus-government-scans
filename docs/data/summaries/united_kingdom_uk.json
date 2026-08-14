@@ -1,7 +1,7 @@
 {
   "country_code": "UNITED_KINGDOM_UK",
-  "total_relationships": 290998,
-  "total_source_domains": 8351,
+  "total_relationships": 291028,
+  "total_source_domains": 8353,
   "top_source_domains": [
     {
       "domain": "ethz.ch",
@@ -81,7 +81,7 @@
     },
     {
       "domain": "cultura.gov.it",
-      "count": 5508
+      "count": 5509
     },
     {
       "domain": "admin.ch",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 30489
+      "count": 30492
     },
     {
       "domain": "googleapis.com",
@@ -235,15 +235,15 @@
     },
     {
       "domain": "twitter.com",
-      "count": 14287
+      "count": 14293
     },
     {
       "domain": "google.com",
-      "count": 14237
+      "count": 14241
     },
     {
       "domain": "linkedin.com",
-      "count": 12294
+      "count": 12297
     },
     {
       "domain": "googletagmanager.com",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 7470
+      "count": 7476
     },
     {
       "domain": "cloudflare.com",
@@ -347,7 +347,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 3038
+      "count": 3041
     },
     {
       "domain": "uni.opole.pl",
@@ -383,7 +383,7 @@
     },
     {
       "domain": "cultura.gov.it",
-      "count": 2515
+      "count": 2516
     },
     {
       "domain": "ug.edu.pl",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 149364,
-    "form_destination": 19669,
-    "image_or_media_dependency": 30784,
-    "script_dependency": 46374,
-    "stylesheet_dependency": 37409,
-    "font_or_preload_dependency": 7398
+    "editorial_link": 149381,
+    "form_destination": 19670,
+    "image_or_media_dependency": 30788,
+    "script_dependency": 46379,
+    "stylesheet_dependency": 37411,
+    "font_or_preload_dependency": 7399
   },
-  "generated_at": "2026-08-13T19:50:54.647465+00:00"
+  "generated_at": "2026-08-14T08:12:46.747861+00:00"
 }

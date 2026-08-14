@@ -1,6 +1,6 @@
 {
   "country_code": "ITALY",
-  "total_relationships": 15862,
+  "total_relationships": 15863,
   "total_source_domains": 151,
   "top_source_domains": [
     {
@@ -13,7 +13,7 @@
     },
     {
       "domain": "cultura.gov.it",
-      "count": 5508
+      "count": 5509
     },
     {
       "domain": "regione.lombardia.it",
@@ -219,7 +219,7 @@
     },
     {
       "domain": "cultura.gov.it",
-      "count": 2515
+      "count": 2516
     },
     {
       "domain": "youtube.com",
@@ -409,10 +409,10 @@
   "relationship_types": {
     "script_dependency": 2553,
     "editorial_link": 7350,
-    "image_or_media_dependency": 2004,
+    "image_or_media_dependency": 2005,
     "stylesheet_dependency": 2272,
     "form_destination": 1438,
     "font_or_preload_dependency": 245
   },
-  "generated_at": "2026-08-13T19:13:37.673781+00:00"
+  "generated_at": "2026-08-14T08:12:46.115891+00:00"
 }

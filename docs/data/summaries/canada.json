@@ -1,6 +1,6 @@
 {
   "country_code": "CANADA",
-  "total_relationships": 291027,
+  "total_relationships": 291028,
   "total_source_domains": 8353,
   "top_source_domains": [
     {
@@ -81,7 +81,7 @@
     },
     {
       "domain": "cultura.gov.it",
-      "count": 5508
+      "count": 5509
     },
     {
       "domain": "admin.ch",
@@ -383,7 +383,7 @@
     },
     {
       "domain": "cultura.gov.it",
-      "count": 2515
+      "count": 2516
     },
     {
       "domain": "ug.edu.pl",
@@ -409,10 +409,10 @@
   "relationship_types": {
     "editorial_link": 149381,
     "form_destination": 19670,
-    "image_or_media_dependency": 30787,
+    "image_or_media_dependency": 30788,
     "script_dependency": 46379,
     "stylesheet_dependency": 37411,
     "font_or_preload_dependency": 7399
   },
-  "generated_at": "2026-08-14T02:36:57.825422+00:00"
+  "generated_at": "2026-08-14T08:12:44.776922+00:00"
 }
