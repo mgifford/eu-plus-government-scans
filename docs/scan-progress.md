@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-08-14 14:08 UTC_
+_Generated: 2026-08-14 14:27 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -13,7 +13,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
-| **Combined Reachability** | **15,543 confirmed reachable** | 87,696 | **<span role="img" aria-label="17.7% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:21px;"></span></span><span class="sm-bar__label">17.7%</span></span>** | — |
+| **Combined Reachability** | **15,629 confirmed reachable** | 87,696 | **<span role="img" aria-label="17.8% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:21px;"></span></span><span class="sm-bar__label">17.8%</span></span>** | — |
 | Social Media | 13,912 scanned (12,911 reachable) | 87,696 | <span role="img" aria-label="15.9% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:19px;"></span></span><span class="sm-bar__label">15.9%</span></span> | 1.4 days |
 | Technology | 15,856 scanned | 87,696 | <span role="img" aria-label="18.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:22px;"></span></span><span class="sm-bar__label">18.1%</span></span> | 1.4 days |
 | Lighthouse | 12,232 scanned | 87,696 | <span role="img" aria-label="13.9% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:17px;"></span></span><span class="sm-bar__label">13.9%</span></span> | 14.8 days |
@@ -39,6 +39,10 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Iceland | 2 | 0 | 2 | Aug 2026 | <span role="img" aria-label="1.4% complete" class="sm-bar"><span class="sm-bar__track" style="width:90px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:1px;"></span></span><span class="sm-bar__label">1.4%</span></span> |
 | Ireland | 37 | 0 | 37 | Aug 2026 | <span role="img" aria-label="6.9% complete" class="sm-bar"><span class="sm-bar__track" style="width:90px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:6px;"></span></span><span class="sm-bar__label">6.9%</span></span> |
 | Italy | 456 | 299 | 157 | Aug 2026 | <span role="img" aria-label="8.5% complete" class="sm-bar"><span class="sm-bar__track" style="width:90px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:8px;"></span></span><span class="sm-bar__label">8.5%</span></span> |
+| Latvia | 45 | 2 | 43 | Aug 2026 | <span role="img" aria-label="5.6% complete" class="sm-bar"><span class="sm-bar__track" style="width:90px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:5px;"></span></span><span class="sm-bar__label">5.6%</span></span> |
+| Lithuania | 10 | 0 | 10 | Aug 2026 | <span role="img" aria-label="8.2% complete" class="sm-bar"><span class="sm-bar__track" style="width:90px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:7px;"></span></span><span class="sm-bar__label">8.2%</span></span> |
+| Luxembourg | 190 | 84 | 106 | Aug 2026 | <span role="img" aria-label="33.2% complete" class="sm-bar"><span class="sm-bar__track" style="width:90px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:30px;"></span></span><span class="sm-bar__label">33.2%</span></span> |
+| Malta | 15 | 0 | 15 | Aug 2026 | <span role="img" aria-label="2.5% complete" class="sm-bar"><span class="sm-bar__track" style="width:90px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:2px;"></span></span><span class="sm-bar__label">2.5%</span></span> |
 
 > Hover or focus any non-zero **Total**, **Valid**, or **Invalid** count to preview matching URLs. **Valid** and **Invalid** can overlap because a URL may have passed in one validation run and failed in another during the same scan period; download the CSV for the underlying evidence from [scan-progress-data.json](scan-progress-data.json).
 
@@ -187,7 +191,7 @@ Checks whether each government page links to an accessibility statement as requi
 
 These countries have social media scan data but no URL validation data (URL validation may have been skipped because the social scan already confirmed reachability):
 
-`GERMANY`, `GREECE`, `LATVIA`, `LITHUANIA`, `LUXEMBOURG`, `MALTA`, `NETHERLANDS`, `NORWAY`, `POLAND`
+`GERMANY`, `GREECE`, `NETHERLANDS`, `NORWAY`, `POLAND`
 
 ## Scan Priority Guide
 
