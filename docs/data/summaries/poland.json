@@ -77,7 +77,7 @@
     },
     {
       "domain": "czestochowa.pl",
-      "count": 630
+      "count": 638
     },
     {
       "domain": "edu.wroclaw.pl",
@@ -215,7 +215,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 8285
+      "count": 8286
     },
     {
       "domain": "poznan.pl",
@@ -311,7 +311,7 @@
     },
     {
       "domain": "bip.gov.pl",
-      "count": 702
+      "count": 703
     },
     {
       "domain": "unpkg.com",
@@ -379,7 +379,7 @@
     },
     {
       "domain": "czestochowa.pl",
-      "count": 320
+      "count": 324
     },
     {
       "domain": "wp.com",
@@ -394,11 +394,11 @@
       "count": 267
     },
     {
-      "domain": "migam.org",
-      "count": 258
+      "domain": "dziennikustaw.gov.pl",
+      "count": 259
     },
     {
-      "domain": "dziennikustaw.gov.pl",
+      "domain": "migam.org",
       "count": 258
     },
     {
@@ -414,5 +414,5 @@
     "stylesheet_dependency": 7151,
     "font_or_preload_dependency": 1664
   },
-  "generated_at": "2026-08-14T13:52:40.876098+00:00"
+  "generated_at": "2026-08-14T19:42:22.530334+00:00"
 }
