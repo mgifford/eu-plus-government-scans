@@ -1,7 +1,7 @@
 {
   "country_code": "REPUBLIC_OF_CYPRUS",
-  "total_relationships": 291028,
-  "total_source_domains": 8353,
+  "total_relationships": 291113,
+  "total_source_domains": 8355,
   "top_source_domains": [
     {
       "domain": "ethz.ch",
@@ -21,7 +21,7 @@
     },
     {
       "domain": "lodz.pl",
-      "count": 15776
+      "count": 15869
     },
     {
       "domain": "poznan.pl",
@@ -207,11 +207,11 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 30492
+      "count": 30500
     },
     {
       "domain": "googleapis.com",
-      "count": 25164
+      "count": 25166
     },
     {
       "domain": "sachsen.de",
@@ -223,11 +223,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 17542
+      "count": 17543
     },
     {
       "domain": "youtube.com",
-      "count": 16659
+      "count": 16661
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -235,11 +235,11 @@
     },
     {
       "domain": "twitter.com",
-      "count": 14293
+      "count": 14298
     },
     {
       "domain": "google.com",
-      "count": 14241
+      "count": 14243
     },
     {
       "domain": "linkedin.com",
@@ -247,7 +247,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 11636
+      "count": 11641
     },
     {
       "domain": "krakow.pl",
@@ -259,7 +259,7 @@
     },
     {
       "domain": "lodz.pl",
-      "count": 9111
+      "count": 9128
     },
     {
       "domain": "rlp.de",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 149381,
-    "form_destination": 19670,
-    "image_or_media_dependency": 30788,
-    "script_dependency": 46379,
-    "stylesheet_dependency": 37411,
+    "editorial_link": 149421,
+    "form_destination": 19674,
+    "image_or_media_dependency": 30810,
+    "script_dependency": 46392,
+    "stylesheet_dependency": 37417,
     "font_or_preload_dependency": 7399
   },
-  "generated_at": "2026-08-14T08:12:45.482754+00:00"
+  "generated_at": "2026-08-14T13:52:40.475544+00:00"
 }
