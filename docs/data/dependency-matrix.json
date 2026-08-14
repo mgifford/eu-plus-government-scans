@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-14T13:52:44.210784+00:00",
+  "generated_at": "2026-08-14T19:42:25.223951+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -188,12 +188,12 @@
     {
       "service": "fontawesome.com",
       "countries": 32,
-      "domains": 757
+      "domains": 758
     },
     {
       "service": "google.com",
       "countries": 31,
-      "domains": 1891
+      "domains": 1892
     },
     {
       "service": "gstatic.com",
@@ -203,7 +203,7 @@
     {
       "service": "cloudflare.com",
       "countries": 31,
-      "domains": 1413
+      "domains": 1414
     },
     {
       "service": "jquery.com",
@@ -1420,17 +1420,17 @@
       "country_code": "SWEDEN",
       "country": "Sweden",
       "service": "fontawesome.com",
-      "domains": 6,
+      "domains": 7,
       "scanned_domains": 183,
-      "percent": 3.3
+      "percent": 3.8
     },
     {
       "country_code": "SWEDEN",
       "country": "Sweden",
       "service": "google.com",
-      "domains": 19,
+      "domains": 20,
       "scanned_domains": 183,
-      "percent": 10.4
+      "percent": 10.9
     },
     {
       "country_code": "SWEDEN",
@@ -1444,9 +1444,9 @@
       "country_code": "SWEDEN",
       "country": "Sweden",
       "service": "cloudflare.com",
-      "domains": 21,
+      "domains": 22,
       "scanned_domains": 183,
-      "percent": 11.5
+      "percent": 12.0
     },
     {
       "country_code": "SWEDEN",
