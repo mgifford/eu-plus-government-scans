@@ -63,6 +63,7 @@ jobs:
         run: scripts/fetch-metadata-artifacts.sh data/artifacts
 
       - name: Merge metadata artifacts
+        id: merge-metadata
         run: |
           python3 -m src.cli.metadata_artifact merge \
             --into data/metadata.db \
@@ -99,7 +100,7 @@ jobs:
       # database would republish a stale snapshot of every other scanner's
       # tables, undoing the isolation the split exists to provide.
       - name: Extract owned metadata
-        if: always()
+        if: always() && steps.merge-metadata.outcome == 'success'
         continue-on-error: true
         run: |
           python3 -m src.cli.metadata_artifact extract \
@@ -108,7 +109,7 @@ jobs:
             --into data/upload/metadata.db
 
       - name: Upload relationship-scan-metadata
-        if: always()
+        if: always() && steps.merge-metadata.outcome == 'success'
         uses: actions/upload-artifact@v7
         with:
           name: relationship-scan-metadata
