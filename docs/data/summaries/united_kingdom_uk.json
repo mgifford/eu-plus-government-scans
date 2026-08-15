@@ -1,7 +1,7 @@
 {
   "country_code": "UNITED_KINGDOM_UK",
-  "total_relationships": 291178,
-  "total_source_domains": 8355,
+  "total_relationships": 291219,
+  "total_source_domains": 8356,
   "top_source_domains": [
     {
       "domain": "ethz.ch",
@@ -207,11 +207,11 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 30514
+      "count": 30520
     },
     {
       "domain": "googleapis.com",
-      "count": 25167
+      "count": 25170
     },
     {
       "domain": "sachsen.de",
@@ -223,11 +223,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 17554
+      "count": 17560
     },
     {
       "domain": "youtube.com",
-      "count": 16664
+      "count": 16670
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -235,7 +235,7 @@
     },
     {
       "domain": "twitter.com",
-      "count": 14301
+      "count": 14307
     },
     {
       "domain": "google.com",
@@ -243,11 +243,11 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 12302
+      "count": 12308
     },
     {
       "domain": "googletagmanager.com",
-      "count": 11644
+      "count": 11647
     },
     {
       "domain": "krakow.pl",
@@ -327,7 +327,7 @@
     },
     {
       "domain": "x.com",
-      "count": 3477
+      "count": 3480
     },
     {
       "domain": "gdansk.pl",
@@ -347,7 +347,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 3041
+      "count": 3044
     },
     {
       "domain": "uni.opole.pl",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 149444,
-    "form_destination": 19680,
-    "image_or_media_dependency": 30817,
-    "script_dependency": 46405,
-    "stylesheet_dependency": 37428,
+    "editorial_link": 149473,
+    "form_destination": 19682,
+    "image_or_media_dependency": 30819,
+    "script_dependency": 46410,
+    "stylesheet_dependency": 37431,
     "font_or_preload_dependency": 7404
   },
-  "generated_at": "2026-08-15T07:18:28.143584+00:00"
+  "generated_at": "2026-08-15T13:24:58.237989+00:00"
 }
