@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-08-15 19:57 UTC_
+_Generated: 2026-08-15 20:28 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -13,11 +13,11 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
-| **Combined Reachability** | **23,314 confirmed reachable** | 87,696 | **<span role="img" aria-label="26.6% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:32px;"></span></span><span class="sm-bar__label">26.6%</span></span>** | — |
-| Social Media | 23,313 scanned (21,458 reachable) | 87,696 | <span role="img" aria-label="26.6% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:32px;"></span></span><span class="sm-bar__label">26.6%</span></span> | 1.7 days |
-| Technology | 22,862 scanned | 87,696 | <span role="img" aria-label="26.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:31px;"></span></span><span class="sm-bar__label">26.1%</span></span> | 1.9 days |
+| **Combined Reachability** | **23,803 confirmed reachable** | 87,696 | **<span role="img" aria-label="27.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:33px;"></span></span><span class="sm-bar__label">27.1%</span></span>** | — |
+| Social Media | 23,915 scanned (21,947 reachable) | 87,696 | <span role="img" aria-label="27.3% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:33px;"></span></span><span class="sm-bar__label">27.3%</span></span> | 1.7 days |
+| Technology | 22,862 scanned | 87,696 | <span role="img" aria-label="26.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:31px;"></span></span><span class="sm-bar__label">26.1%</span></span> | 2.0 days |
 | Lighthouse | 12,437 scanned | 87,696 | <span role="img" aria-label="14.2% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:17px;"></span></span><span class="sm-bar__label">14.2%</span></span> | 15.5 days |
-| Accessibility Statements | 30,805 scanned | 87,696 | <span role="img" aria-label="35.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:42px;"></span></span><span class="sm-bar__label">35.1%</span></span> | 2.0 days |
+| Accessibility Statements | 30,805 scanned | 87,696 | <span role="img" aria-label="35.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:42px;"></span></span><span class="sm-bar__label">35.1%</span></span> | 2.1 days |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by any scan type. **Avg Age** shows the mean number of days (or hours) since each URL in that scan type was last scanned — lower is fresher.
 
@@ -65,7 +65,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Estonia | 401 | 401 | 373 | 178 | 3 | 22 | 170 | 62 | 1 | 0 | 25 | Aug 2026 |
 | Finland | 199 | 199 | 181 | 69 | 0 | 9 | 103 | 31 | 10 | 3 | 6 | Aug 2026 |
 | France | 1,715 | 10,009 | 1,543 | 323 | 3 | 65 | 1,152 | 144 | 24 | 28 | 52 | Aug 2026 |
-| Germany | 972 | 6,599 | 915 | 180 | 3 | 96 | 636 | 167 | 12 | 16 | 92 | Aug 2026 |
+| Germany | 1,574 | 6,599 | 1,404 | 323 | 5 | 126 | 950 | 280 | 33 | 19 | 124 | Aug 2026 |
 | Greece | 1,189 | 1,752 | 1,097 | 260 | 1 | 59 | 777 | 130 | 39 | 0 | 60 | Aug 2026 |
 | Hungary | 392 | 392 | 292 | 112 | 1 | 24 | 155 | 23 | 0 | 0 | 25 | Aug 2026 |
 | Iceland | 145 | 145 | 143 | 24 | 0 | 16 | 103 | 8 | 6 | 0 | 16 | Aug 2026 |
