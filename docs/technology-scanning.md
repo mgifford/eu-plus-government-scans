@@ -5,11 +5,11 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-08-15 18:48 UTC — last scan: 2026-08-15_
+_Stats as of 2026-08-15 19:33 UTC — last scan: 2026-08-15_
 
-**32** scan batches run
+**33** scan batches run
 
-**22,364** of **87,696** available pages scanned (**25.5%** coverage)
+**22,859** of **87,696** available pages scanned (**26.1%** coverage)
 **0** pages with technology detections (**0.0%** of scanned)
 **0** unique technologies identified
 
@@ -20,7 +20,7 @@ _Stats as of 2026-08-15 18:48 UTC — last scan: 2026-08-15_
 | Country | URLs Scanned | Pages with Detections | Available | Last Scan |
 |---------|-------------|----------------------|-----------|----------|
 | Austria | 822 | 0 | 822 | 2026-08-11 |
-| Belgium | 834 | 0 | 1,329 | 2026-08-11 |
+| Belgium | 1,329 | 0 | 1,329 | 2026-08-15 |
 | Bulgaria | 353 | 0 | 353 | 2026-08-12 |
 | Canada | 1,888 | 0 | 4,469 | 2026-08-12 |
 | Croatia | 257 | 0 | 257 | 2026-08-12 |
