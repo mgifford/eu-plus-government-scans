@@ -240,6 +240,23 @@ class TestWorkflowWiring:
 
         return yaml.safe_load(path.read_text(encoding="utf-8")) or {}
 
+    def _metadata_upload_steps(self):
+        """Yield (path, job_name, step) for every step publishing an artifact.
+
+        Covers both the extract that builds the upload payload and the upload
+        itself, since either running on an unassembled database is the problem.
+        """
+        for path in self._workflows():
+            for job_name, job in (self._load(path).get("jobs") or {}).items():
+                for step in job.get("steps", []):
+                    name = str(step.get("name", ""))
+                    uploads_owned = (
+                        "upload-artifact" in str(step.get("uses", ""))
+                        and (step.get("with") or {}).get("name") in ARTIFACT_TABLES
+                    )
+                    if uploads_owned or name == "Extract owned metadata":
+                        yield path, job_name, step
+
     def _uploaders(self) -> dict[str, list[Path]]:
         """Map each known artifact to the workflows that upload it."""
         uploaders: dict[str, list[Path]] = {}
@@ -309,6 +326,46 @@ class TestWorkflowWiring:
                     f"{path.name} job {name!r} downloads metadata artifacts but "
                     f"has permissions {permissions}"
                 )
+
+    def test_metadata_upload_is_gated_on_a_successful_merge(self) -> None:
+        """`if: always()` on these steps is a data-loss path.
+
+        The upload replaces the stored artifact wholesale (``overwrite: true``),
+        so it must never publish a database that was not fully assembled.
+        ``merge_into`` creates the target schema before copying rows, so a merge
+        that fails part-way leaves a real-looking database on disk -- enough for
+        the extract to succeed and the upload to overwrite ninety days of
+        history with a partial snapshot.  Gating both steps on the merge's
+        outcome makes that structural rather than a happy accident of the
+        extract step refusing.
+        """
+        if not self._workflows():
+            pytest.skip("workflow directory not present in this checkout")
+
+        guard = "steps.merge-metadata.outcome == 'success'"
+        for path, job, step in self._metadata_upload_steps():
+            condition = str(step.get("if", ""))
+            assert guard in condition, (
+                f"{path.name} job {job!r} step {step.get('name')!r} has "
+                f"if: {condition!r}; it must be gated on the merge succeeding"
+            )
+
+    def test_the_merge_step_carries_the_id_the_guard_references(self) -> None:
+        """A guard pointing at a missing step id silently evaluates false."""
+        if not self._workflows():
+            pytest.skip("workflow directory not present in this checkout")
+
+        for path in self._workflows():
+            if "steps.merge-metadata.outcome" not in path.read_text(encoding="utf-8"):
+                continue
+            ids = {
+                step.get("id")
+                for job in (self._load(path).get("jobs") or {}).values()
+                for step in job.get("steps", [])
+            }
+            assert "merge-metadata" in ids, (
+                f"{path.name} guards on steps.merge-metadata but no step has that id"
+            )
 
     def test_every_uploader_merges_before_scanning(self) -> None:
         """Skip logic reads other scanners' results, so the merge must run."""
