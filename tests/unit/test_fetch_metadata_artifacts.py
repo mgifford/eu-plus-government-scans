@@ -21,10 +21,16 @@ from pathlib import Path
 
 import pytest
 
+from src.lib.metadata_merge import ARTIFACT_TABLES
+
 SCRIPT = Path(__file__).resolve().parents[2] / "scripts" / "fetch-metadata-artifacts.sh"
 
 # Comfortably past the 64 KiB pipe buffer at ~32 bytes per line.
 LISTING_LINES = 6000
+
+# The script derives its artifact names from this same map, so the expected
+# count here cannot drift away from what it actually fetches.
+ARTIFACT_NAMES = sorted(ARTIFACT_TABLES)
 
 pytestmark = pytest.mark.skipif(
     not SCRIPT.is_file() or shutil.which("bash") is None,
@@ -90,10 +96,14 @@ class TestLargeListing:
     ) -> None:
         result = _run(tmp_path, _stub_gh(tmp_path))
 
+        # The regression showed up as exit 141 (SIGPIPE) with *empty* stderr,
+        # so the exit status is the assertion that matters; a stderr match
+        # would have been dead code.
         assert result.returncode == 0, (
             f"exit {result.returncode}; stderr:\n{result.stderr}"
         )
-        assert "write error" not in result.stderr
+        # Every artifact must be resolved, not merely the run survive.
+        assert result.stdout.count("from run ") == len(ARTIFACT_NAMES)
 
     def test_the_newest_run_is_selected(self, tmp_path: Path) -> None:
         """Selecting the wrong row would merge a stale database."""
