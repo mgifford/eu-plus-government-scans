@@ -149,8 +149,8 @@
   "FRANCE": {
     "total_urls": 10009,
     "attempted": 10009,
-    "successful": 9372,
-    "failed": 637,
+    "successful": 9375,
+    "failed": 634,
     "skipped": 0,
     "never_scanned": 0,
     "stale_28d": 0
