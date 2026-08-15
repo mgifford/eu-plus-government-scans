@@ -1,6 +1,6 @@
 {
   "country_code": "SWEDEN",
-  "total_relationships": 4841,
+  "total_relationships": 4894,
   "total_source_domains": 186,
   "top_source_domains": [
     {
@@ -44,8 +44,16 @@
       "count": 220
     },
     {
+      "domain": "vaxjo.se",
+      "count": 195
+    },
+    {
       "domain": "trafikverket.se",
       "count": 191
+    },
+    {
+      "domain": "norrkoping.se",
+      "count": 166
     },
     {
       "domain": "regionjh.se",
@@ -98,10 +106,6 @@
     {
       "domain": "kronofogden.se",
       "count": 107
-    },
-    {
-      "domain": "vaxjo.se",
-      "count": 105
     },
     {
       "domain": "norrbotten.se",
@@ -198,10 +202,6 @@
     {
       "domain": "kalmar.se",
       "count": 67
-    },
-    {
-      "domain": "val.se",
-      "count": 64
     }
   ],
   "top_target_domains": [
@@ -211,11 +211,11 @@
     },
     {
       "domain": "facebook.com",
-      "count": 390
+      "count": 401
     },
     {
       "domain": "linkedin.com",
-      "count": 339
+      "count": 344
     },
     {
       "domain": "regionstockholm.se",
@@ -227,7 +227,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 307
+      "count": 318
     },
     {
       "domain": "1177.se",
@@ -251,7 +251,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 164
+      "count": 167
     },
     {
       "domain": "stockholm.se",
@@ -270,20 +270,28 @@
       "count": 147
     },
     {
+      "domain": "readspeaker.com",
+      "count": 143
+    },
+    {
+      "domain": "google.com",
+      "count": 139
+    },
+    {
       "domain": "gotland.se",
       "count": 132
     },
     {
-      "domain": "google.com",
-      "count": 131
-    },
-    {
-      "domain": "readspeaker.com",
-      "count": 131
+      "domain": "vaxjo.se",
+      "count": 128
     },
     {
       "domain": "axiell.com",
       "count": 118
+    },
+    {
+      "domain": "norrkoping.se",
+      "count": 113
     },
     {
       "domain": "jonkoping.se",
@@ -346,10 +354,6 @@
       "count": 65
     },
     {
-      "domain": "vaxjo.se",
-      "count": 65
-    },
-    {
       "domain": "regionhalland.se",
       "count": 59
     },
@@ -378,6 +382,14 @@
       "count": 57
     },
     {
+      "domain": "cloudflare.com",
+      "count": 56
+    },
+    {
+      "domain": "rekai.se",
+      "count": 56
+    },
+    {
       "domain": "lulea.se",
       "count": 56
     },
@@ -390,29 +402,17 @@
       "count": 55
     },
     {
-      "domain": "rekai.se",
-      "count": 53
-    },
-    {
-      "domain": "cloudflare.com",
-      "count": 52
-    },
-    {
       "domain": "episerver.net",
-      "count": 50
-    },
-    {
-      "domain": "polisen.se",
       "count": 50
     }
   ],
   "relationship_types": {
-    "editorial_link": 2129,
-    "script_dependency": 898,
-    "stylesheet_dependency": 706,
-    "font_or_preload_dependency": 202,
-    "form_destination": 374,
-    "image_or_media_dependency": 532
+    "editorial_link": 2150,
+    "script_dependency": 908,
+    "stylesheet_dependency": 713,
+    "font_or_preload_dependency": 207,
+    "form_destination": 379,
+    "image_or_media_dependency": 537
   },
-  "generated_at": "2026-08-13T02:42:04.797813+00:00"
+  "generated_at": "2026-08-15T01:52:32.116825+00:00"
 }

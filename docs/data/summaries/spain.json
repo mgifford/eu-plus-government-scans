@@ -1,7 +1,7 @@
 {
   "country_code": "SPAIN",
-  "total_relationships": 16024,
-  "total_source_domains": 230,
+  "total_relationships": 16053,
+  "total_source_domains": 232,
   "top_source_domains": [
     {
       "domain": "jcyl.es",
@@ -219,11 +219,11 @@
     },
     {
       "domain": "facebook.com",
-      "count": 1420
+      "count": 1423
     },
     {
       "domain": "twitter.com",
-      "count": 1307
+      "count": 1313
     },
     {
       "domain": "navarra.es",
@@ -231,7 +231,7 @@
     },
     {
       "domain": "google.com",
-      "count": 1208
+      "count": 1212
     },
     {
       "domain": "googleapis.com",
@@ -275,7 +275,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 464
+      "count": 467
     },
     {
       "domain": "carm.es",
@@ -315,7 +315,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 272
+      "count": 275
     },
     {
       "domain": "google.es",
@@ -347,7 +347,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 208
+      "count": 214
     },
     {
       "domain": "ayto-alcaladehenares.es",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "script_dependency": 2307,
-    "image_or_media_dependency": 1940,
-    "stylesheet_dependency": 1976,
-    "editorial_link": 8209,
-    "form_destination": 1438,
-    "font_or_preload_dependency": 154
+    "script_dependency": 2312,
+    "image_or_media_dependency": 1943,
+    "stylesheet_dependency": 1978,
+    "editorial_link": 8226,
+    "form_destination": 1439,
+    "font_or_preload_dependency": 155
   },
-  "generated_at": "2026-08-13T02:42:04.868085+00:00"
+  "generated_at": "2026-08-15T01:52:31.109883+00:00"
 }

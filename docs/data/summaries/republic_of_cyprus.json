@@ -1,7 +1,7 @@
 {
   "country_code": "REPUBLIC_OF_CYPRUS",
-  "total_relationships": 290985,
-  "total_source_domains": 8351,
+  "total_relationships": 291172,
+  "total_source_domains": 8355,
   "top_source_domains": [
     {
       "domain": "ethz.ch",
@@ -21,7 +21,7 @@
     },
     {
       "domain": "lodz.pl",
-      "count": 15776
+      "count": 15869
     },
     {
       "domain": "poznan.pl",
@@ -81,7 +81,7 @@
     },
     {
       "domain": "cultura.gov.it",
-      "count": 5508
+      "count": 5509
     },
     {
       "domain": "admin.ch",
@@ -207,11 +207,11 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 30486
+      "count": 30514
     },
     {
       "domain": "googleapis.com",
-      "count": 25164
+      "count": 25167
     },
     {
       "domain": "sachsen.de",
@@ -223,11 +223,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 17539
+      "count": 17554
     },
     {
       "domain": "youtube.com",
-      "count": 16656
+      "count": 16664
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -235,19 +235,19 @@
     },
     {
       "domain": "twitter.com",
-      "count": 14287
+      "count": 14301
     },
     {
       "domain": "google.com",
-      "count": 14236
+      "count": 14251
     },
     {
       "domain": "linkedin.com",
-      "count": 12291
+      "count": 12302
     },
     {
       "domain": "googletagmanager.com",
-      "count": 11633
+      "count": 11644
     },
     {
       "domain": "krakow.pl",
@@ -259,7 +259,7 @@
     },
     {
       "domain": "lodz.pl",
-      "count": 9111
+      "count": 9128
     },
     {
       "domain": "rlp.de",
@@ -279,11 +279,11 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 7470
+      "count": 7476
     },
     {
       "domain": "cloudflare.com",
-      "count": 7293
+      "count": 7297
     },
     {
       "domain": "bayern.de",
@@ -323,7 +323,7 @@
     },
     {
       "domain": "fontawesome.com",
-      "count": 3645
+      "count": 3654
     },
     {
       "domain": "x.com",
@@ -347,7 +347,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 3038
+      "count": 3041
     },
     {
       "domain": "uni.opole.pl",
@@ -383,7 +383,7 @@
     },
     {
       "domain": "cultura.gov.it",
-      "count": 2515
+      "count": 2516
     },
     {
       "domain": "ug.edu.pl",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 149360,
-    "form_destination": 19668,
-    "image_or_media_dependency": 30782,
-    "script_dependency": 46370,
-    "stylesheet_dependency": 37407,
-    "font_or_preload_dependency": 7398
+    "editorial_link": 149442,
+    "form_destination": 19680,
+    "image_or_media_dependency": 30816,
+    "script_dependency": 46404,
+    "stylesheet_dependency": 37426,
+    "font_or_preload_dependency": 7404
   },
-  "generated_at": "2026-08-13T02:42:03.729555+00:00"
+  "generated_at": "2026-08-15T01:52:30.512199+00:00"
 }

@@ -5,11 +5,11 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-08-13 04:01 UTC — last scan: 2026-08-13_
+_Stats as of 2026-08-15 03:05 UTC — last scan: 2026-08-15_
 
-**11** scan batches run
+**29** scan batches run
 
-**8,138** of **87,696** available pages scanned (**9.3%** coverage)
+**17,262** of **87,696** available pages scanned (**19.7%** coverage)
 **0** pages with technology detections (**0.0%** of scanned)
 **0** unique technologies identified
 
@@ -30,6 +30,24 @@ _Stats as of 2026-08-13 04:01 UTC — last scan: 2026-08-13_
 | Finland | 199 | 0 | 199 | 2026-08-12 |
 | France | 933 | 0 | 10,009 | 2026-08-12 |
 | Germany | 1,372 | 0 | 6,599 | 2026-08-13 |
+| Greece | 1,545 | 0 | 1,752 | 2026-08-13 |
+| Hungary | 392 | 0 | 392 | 2026-08-13 |
+| Iceland | 145 | 0 | 145 | 2026-08-13 |
+| Ireland | 536 | 0 | 536 | 2026-08-13 |
+| Italy | 441 | 0 | 5,351 | 2026-08-13 |
+| Latvia | 803 | 0 | 803 | 2026-08-13 |
+| Lithuania | 122 | 0 | 122 | 2026-08-13 |
+| Luxembourg | 573 | 0 | 573 | 2026-08-13 |
+| Malta | 160 | 0 | 610 | 2026-08-13 |
+| Netherlands | 945 | 0 | 945 | 2026-08-14 |
+| Norway | 249 | 0 | 249 | 2026-08-14 |
+| Poland | 553 | 0 | 14,951 | 2026-08-14 |
+| Portugal | 1,253 | 0 | 3,508 | 2026-08-14 |
+| Cyprus | 29 | 0 | 29 | 2026-08-14 |
+| Romania | 218 | 0 | 807 | 2026-08-14 |
+| Slovakia | 442 | 0 | 442 | 2026-08-15 |
+| Slovenia | 214 | 0 | 214 | 2026-08-15 |
+| Spain | 505 | 0 | 6,091 | 2026-08-15 |
 
 > Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and metric from [Download machine-readable technology data (JSON)](technology-data.json).
 
