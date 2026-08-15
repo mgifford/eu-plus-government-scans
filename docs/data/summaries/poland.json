@@ -1,6 +1,6 @@
 {
   "country_code": "POLAND",
-  "total_relationships": 57195,
+  "total_relationships": 57197,
   "total_source_domains": 2323,
   "top_source_domains": [
     {
@@ -410,9 +410,9 @@
     "editorial_link": 30844,
     "form_destination": 3109,
     "image_or_media_dependency": 6249,
-    "script_dependency": 8178,
-    "stylesheet_dependency": 7151,
+    "script_dependency": 8179,
+    "stylesheet_dependency": 7152,
     "font_or_preload_dependency": 1664
   },
-  "generated_at": "2026-08-14T19:42:22.530334+00:00"
+  "generated_at": "2026-08-15T01:52:31.974252+00:00"
 }

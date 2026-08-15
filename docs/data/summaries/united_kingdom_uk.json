@@ -1,6 +1,6 @@
 {
   "country_code": "UNITED_KINGDOM_UK",
-  "total_relationships": 291113,
+  "total_relationships": 291172,
   "total_source_domains": 8355,
   "top_source_domains": [
     {
@@ -207,11 +207,11 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 30500
+      "count": 30514
     },
     {
       "domain": "googleapis.com",
-      "count": 25166
+      "count": 25167
     },
     {
       "domain": "sachsen.de",
@@ -223,11 +223,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 17543
+      "count": 17554
     },
     {
       "domain": "youtube.com",
-      "count": 16661
+      "count": 16664
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -235,19 +235,19 @@
     },
     {
       "domain": "twitter.com",
-      "count": 14298
+      "count": 14301
     },
     {
       "domain": "google.com",
-      "count": 14243
+      "count": 14251
     },
     {
       "domain": "linkedin.com",
-      "count": 12297
+      "count": 12302
     },
     {
       "domain": "googletagmanager.com",
-      "count": 11641
+      "count": 11644
     },
     {
       "domain": "krakow.pl",
@@ -283,7 +283,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 7293
+      "count": 7297
     },
     {
       "domain": "bayern.de",
@@ -323,7 +323,7 @@
     },
     {
       "domain": "fontawesome.com",
-      "count": 3648
+      "count": 3654
     },
     {
       "domain": "x.com",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 149421,
-    "form_destination": 19674,
-    "image_or_media_dependency": 30810,
-    "script_dependency": 46392,
-    "stylesheet_dependency": 37417,
-    "font_or_preload_dependency": 7399
+    "editorial_link": 149442,
+    "form_destination": 19680,
+    "image_or_media_dependency": 30816,
+    "script_dependency": 46404,
+    "stylesheet_dependency": 37426,
+    "font_or_preload_dependency": 7404
   },
-  "generated_at": "2026-08-14T13:52:41.508621+00:00"
+  "generated_at": "2026-08-15T01:52:31.725784+00:00"
 }
