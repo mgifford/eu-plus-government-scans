@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-08-15 16:05 UTC_
+_Generated: 2026-08-15 16:08 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -13,11 +13,11 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
-| **Combined Reachability** | **21,348 confirmed reachable** | 87,696 | **<span role="img" aria-label="24.3% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:29px;"></span></span><span class="sm-bar__label">24.3%</span></span>** | — |
-| Social Media | 18,936 scanned (17,355 reachable) | 87,696 | <span role="img" aria-label="21.6% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:26px;"></span></span><span class="sm-bar__label">21.6%</span></span> | 2.0 days |
+| **Combined Reachability** | **22,889 confirmed reachable** | 87,696 | **<span role="img" aria-label="26.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:31px;"></span></span><span class="sm-bar__label">26.1%</span></span>** | — |
+| Social Media | 20,553 scanned (18,896 reachable) | 87,696 | <span role="img" aria-label="23.4% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:28px;"></span></span><span class="sm-bar__label">23.4%</span></span> | 1.8 days |
 | Technology | 20,149 scanned | 87,696 | <span role="img" aria-label="23.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:28px;"></span></span><span class="sm-bar__label">23.0%</span></span> | 2.0 days |
 | Lighthouse | 12,308 scanned | 87,696 | <span role="img" aria-label="14.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:17px;"></span></span><span class="sm-bar__label">14.0%</span></span> | 15.5 days |
-| Accessibility Statements | 27,267 scanned | 87,696 | <span role="img" aria-label="31.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:37px;"></span></span><span class="sm-bar__label">31.1%</span></span> | 2.1 days |
+| Accessibility Statements | 28,039 scanned | 87,696 | <span role="img" aria-label="32.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:38px;"></span></span><span class="sm-bar__label">32.0%</span></span> | 2.1 days |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by any scan type. **Avg Age** shows the mean number of days (or hours) since each URL in that scan type was last scanned — lower is fresher.
 
@@ -86,6 +86,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Spain | 391 | 6,091 | 318 | 136 | 0 | 30 | 152 | 100 | 56 | 6 | 24 | Aug 2026 |
 | Sweden | 732 | 1,702 | 613 | 118 | 1 | 14 | 480 | 8 | 8 | 0 | 15 | Aug 2026 |
 | Switzerland | 1,947 | 2,123 | 1,904 | 516 | 25 | 127 | 1,236 | 191 | 203 | 50 | 117 | Aug 2026 |
+| United Kingdom | 1,617 | 19,511 | 1,541 | 588 | 3 | 69 | 881 | 393 | 84 | 2 | 70 | Aug 2026 |
 
 > **Tier columns** (Twitter-only / Modern / Mixed / No Social) classify each page by its overall social media presence. **Platform columns** (Twitter / X / Bluesky / Mastodon) count pages with at least one link to that platform — a page may appear in more than one platform column.
 
@@ -201,7 +202,7 @@ Checks whether each government page links to an accessibility statement as requi
 | Slovakia | 442 | 362 | 147 | 134 | 41% | Aug 2026 |
 | Slovenia | 214 | 207 | 116 | 81 | 56% | Aug 2026 |
 | Spain | 1,037 | 856 | 423 | 367 | 49% | Aug 2026 |
-| Sweden | 743 | 621 | 260 | 228 | 42% | Aug 2026 |
+| Sweden | 1,515 | 1,287 | 677 | 610 | 53% | Aug 2026 |
 | Switzerland | 1,479 | 1,406 | 824 | 823 | 59% | Aug 2026 |
 | United Kingdom | 1,337 | 1,254 | 674 | 643 | 54% | Aug 2026 |
 
@@ -211,7 +212,7 @@ Checks whether each government page links to an accessibility statement as requi
 
 These countries have social media scan data but no URL validation data (URL validation may have been skipped because the social scan already confirmed reachability):
 
-`GERMANY`, `GREECE`, `PORTUGAL`, `SLOVAKIA`, `SLOVENIA`, `SPAIN`, `SWEDEN`, `SWITZERLAND`
+`GERMANY`, `GREECE`, `PORTUGAL`, `SLOVAKIA`, `SLOVENIA`, `SPAIN`, `SWEDEN`, `SWITZERLAND`, `UNITED_KINGDOM_UK`
 
 ## Scan Priority Guide
 
