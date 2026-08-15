@@ -936,6 +936,13 @@ class RelationshipScannerJob:
                 "is_complete": True,
                 "relationships_extracted": 0,
                 "unique_edges": 0,
+                # Present on every return so a caller aggregating these does
+                # not have to special-case the skipped country, which with a
+                # 28-day window is the common outcome rather than the rare one.
+                "pages_confirmed": 0,
+                "edges_retired": 0,
+                "dataset_edges_checkable": None,
+                "dataset_edges_inactive": None,
             }
 
         _start = start_time if start_time is not None else time.monotonic()
@@ -1015,8 +1022,12 @@ class RelationshipScannerJob:
 
         scanned_count = len(scan_results)
         is_complete = scanned_count == len(urls)
-        checkable = sum(1 for agg in merged.values() if agg.source_pages)
-        inactive = sum(1 for agg in merged.values() if not agg.active)
+        # These two count the whole dataset, not this country: `merged` holds
+        # every edge ever recorded, since the merge is incremental across all
+        # countries.  Named accordingly -- summing them over a multi-country
+        # run would multiply one figure by the number of countries scanned.
+        dataset_checkable = sum(1 for agg in merged.values() if agg.source_pages)
+        dataset_inactive = sum(1 for agg in merged.values() if not agg.active)
 
         print(f"Scanned {scanned_count}/{len(urls)} URLs, "
               f"found {len(new_edges)} new relationship observations")
@@ -1028,9 +1039,12 @@ class RelationshipScannerJob:
         # run makes that visible immediately rather than as an absence noticed
         # months later.
         print(
-            f"Retirement: {len(confirmed_urls)}/{scanned_count} pages confirmed, "
-            f"{retired} edge(s) retired this run, "
-            f"{checkable}/{len(merged)} edges checkable, {inactive} inactive"
+            f"Retirement (this run): {len(confirmed_urls)}/{scanned_count} pages "
+            f"confirmed, {retired} edge(s) retired"
+        )
+        print(
+            f"Retirement (whole dataset): {dataset_checkable}/{len(merged)} edges "
+            f"checkable, {dataset_inactive} inactive"
         )
         if scanned_count and not confirmed_urls:
             print(
@@ -1049,8 +1063,8 @@ class RelationshipScannerJob:
             "unique_edges": len(merged),
             "pages_confirmed": len(confirmed_urls),
             "edges_retired": retired,
-            "edges_checkable": checkable,
-            "edges_inactive": inactive,
+            "dataset_edges_checkable": dataset_checkable,
+            "dataset_edges_inactive": dataset_inactive,
         }
 
     # ------------------------------------------------------------------
