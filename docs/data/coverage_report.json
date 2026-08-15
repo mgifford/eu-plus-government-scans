@@ -197,8 +197,8 @@
   "POLAND": {
     "total_urls": 14951,
     "attempted": 14951,
-    "successful": 13787,
-    "failed": 1164,
+    "successful": 13792,
+    "failed": 1159,
     "skipped": 0,
     "never_scanned": 0,
     "stale_28d": 0
