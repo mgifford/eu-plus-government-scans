@@ -1,7 +1,7 @@
 {
   "country_code": "POLAND",
-  "total_relationships": 57197,
-  "total_source_domains": 2323,
+  "total_relationships": 57206,
+  "total_source_domains": 2324,
   "top_source_domains": [
     {
       "domain": "krakow.pl",
@@ -215,7 +215,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 8286
+      "count": 8288
     },
     {
       "domain": "poznan.pl",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 7393
+      "count": 7394
     },
     {
       "domain": "gdansk.pl",
@@ -239,7 +239,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 2884
+      "count": 2885
     },
     {
       "domain": "youtube.com",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 30844,
+    "editorial_link": 30849,
     "form_destination": 3109,
-    "image_or_media_dependency": 6249,
-    "script_dependency": 8179,
-    "stylesheet_dependency": 7152,
+    "image_or_media_dependency": 6250,
+    "script_dependency": 8180,
+    "stylesheet_dependency": 7154,
     "font_or_preload_dependency": 1664
   },
-  "generated_at": "2026-08-15T15:52:32.767375+00:00"
+  "generated_at": "2026-08-15T19:00:44.482583+00:00"
 }

@@ -1,7 +1,7 @@
 {
   "country_code": "CANADA",
-  "total_relationships": 291219,
-  "total_source_domains": 8356,
+  "total_relationships": 291228,
+  "total_source_domains": 8357,
   "top_source_domains": [
     {
       "domain": "ethz.ch",
@@ -207,11 +207,11 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 30520
+      "count": 30521
     },
     {
       "domain": "googleapis.com",
-      "count": 25170
+      "count": 25172
     },
     {
       "domain": "sachsen.de",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 17560
+      "count": 17561
     },
     {
       "domain": "youtube.com",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 149473,
+    "editorial_link": 149478,
     "form_destination": 19682,
-    "image_or_media_dependency": 30819,
-    "script_dependency": 46410,
-    "stylesheet_dependency": 37431,
+    "image_or_media_dependency": 30820,
+    "script_dependency": 46411,
+    "stylesheet_dependency": 37433,
     "font_or_preload_dependency": 7404
   },
-  "generated_at": "2026-08-15T15:52:31.036863+00:00"
+  "generated_at": "2026-08-15T19:00:42.802169+00:00"
 }
