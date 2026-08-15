@@ -5,14 +5,14 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-08-13 04:01 UTC — last scan: 2026-08-13_
+_Stats as of 2026-08-15 03:05 UTC — last scan: 2026-08-15_
 
-**21** scan batches run
+**42** scan batches run
 
-**12,631** of **87,696** available pages scanned (**14.4%** coverage)
-**11,725** of **12,631** scanned pages were reachable (**92.8%**)
-**5,514** of **11,725** reachable pages have an accessibility statement (**47.0%**)
-**5,073** pages have the statement link in the footer (**92.0%** of pages with a statement)
+**25,095** of **87,696** available pages scanned (**28.6%** coverage)
+**22,911** of **25,095** scanned pages were reachable (**91.3%**)
+**10,679** of **22,911** reachable pages have an accessibility statement (**46.6%**)
+**9,505** pages have the statement link in the footer (**89.0%** of pages with a statement)
 
 📥 Machine-readable results are available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
 
@@ -27,27 +27,38 @@ Each country entry in the JSON file includes page-level evidence for pages with 
 | Country | Scanned | Available | Reachable | Has Statement | In Footer | Statement % | Scan Period |
 |---------|---------|-----------|-----------|--------------|-----------|------------|-------------|
 | Austria | 822 | 822 | 781 | 554 | 525 | 70.9% | Aug 2026 |
-| Belgium | 554 | 1,329 | 504 | 240 | 222 | 47.6% | Aug 2026 |
+| Belgium | 1,329 | 1,329 | 1,237 | 573 | 523 | 46.3% | Aug 2026 |
 | Bulgaria | 353 | 353 | 305 | 93 | 82 | 30.5% | Aug 2026 |
-| Canada | 792 | 4,469 | 759 | 145 | 108 | 19.1% | Aug 2026 |
+| Canada | 1,346 | 4,469 | 1,270 | 234 | 195 | 18.4% | Aug 2026 |
 | Croatia | 257 | 257 | 244 | 96 | 71 | 39.3% | Aug 2026 |
 | Czechia | 866 | 866 | 797 | 441 | 388 | 55.3% | Aug 2026 |
 | Denmark | 1,536 | 1,536 | 1,506 | 959 | 941 | 63.7% | Aug 2026 |
-| Estonia | 161 | 401 | 153 | 45 | 24 | 29.4% | Aug 2026 |
+| Estonia | 401 | 401 | 384 | 149 | 79 | 38.8% | Aug 2026 |
 | Finland | 199 | 199 | 188 | 133 | 126 | 70.7% | Aug 2026 |
-| France | 1,030 | 10,009 | 914 | 252 | 245 | 27.6% | Aug 2026 |
-| Germany | 1,213 | 6,599 | 1,160 | 754 | 690 | 65.0% | Aug 2026 |
-| Greece | 1,122 | 1,752 | 1,036 | 215 | 146 | 20.8% | Aug 2026 |
+| France | 1,772 | 10,009 | 1,572 | 429 | 404 | 27.3% | Aug 2026 |
+| Germany | 2,355 | 6,599 | 2,249 | 1,485 | 1,285 | 66.0% | Aug 2026 |
+| Greece | 1,752 | 1,752 | 1,614 | 411 | 259 | 25.5% | Aug 2026 |
 | Hungary | 392 | 392 | 278 | 44 | 36 | 15.8% | Aug 2026 |
 | Iceland | 145 | 145 | 143 | 12 | 5 | 8.4% | Aug 2026 |
 | Ireland | 536 | 536 | 483 | 205 | 192 | 42.4% | Aug 2026 |
-| Italy | 57 | 5,351 | 45 | 10 | 10 | 22.2% | Aug 2026 |
+| Italy | 461 | 5,351 | 408 | 330 | 327 | 80.9% | Aug 2026 |
 | Latvia | 803 | 803 | 761 | 472 | 434 | 62.0% | Aug 2026 |
 | Lithuania | 122 | 122 | 112 | 1 | 0 | 0.9% | Aug 2026 |
-| Luxembourg | 189 | 573 | 133 | 92 | 89 | 69.2% | Aug 2026 |
+| Luxembourg | 573 | 573 | 458 | 278 | 267 | 60.7% | Aug 2026 |
 | Malta | 610 | 610 | 595 | 382 | 377 | 64.2% | Aug 2026 |
-| Netherlands | 873 | 945 | 829 | 370 | 363 | 44.6% | Aug 2026 |
-| **Total** | **12,632** | **87,696** | **11,726** | **5,515** | **5,074** | **47.0%** | — |
+| Netherlands | 945 | 945 | 901 | 411 | 403 | 45.6% | Aug 2026 |
+| Norway | 249 | 249 | 242 | 110 | 102 | 45.5% | Aug 2026 |
+| Poland | 1,367 | 14,951 | 1,199 | 524 | 309 | 43.7% | Aug 2026 |
+| Portugal | 1,119 | 3,508 | 961 | 155 | 118 | 16.1% | Aug 2026 |
+| Cyprus | 29 | 29 | 28 | 1 | 1 | 3.6% | Aug 2026 |
+| Romania | 214 | 807 | 68 | 8 | 2 | 11.8% | Aug 2026 |
+| Slovakia | 442 | 442 | 362 | 147 | 134 | 40.6% | Aug 2026 |
+| Slovenia | 214 | 214 | 207 | 116 | 81 | 56.0% | Aug 2026 |
+| Spain | 330 | 6,091 | 280 | 171 | 148 | 61.1% | Aug 2026 |
+| Sweden | 743 | 1,702 | 621 | 260 | 228 | 41.9% | Aug 2026 |
+| Switzerland | 1,479 | 2,123 | 1,406 | 824 | 823 | 58.6% | Aug 2026 |
+| United Kingdom | 1,337 | 19,511 | 1,254 | 674 | 643 | 53.7% | Aug 2026 |
+| **Total** | **25,098** | **87,696** | **22,914** | **10,682** | **9,508** | **46.6%** | — |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
