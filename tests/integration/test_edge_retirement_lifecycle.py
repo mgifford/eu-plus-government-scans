@@ -102,6 +102,14 @@ def scan(tmp_path: Path, toon_file: Path, monkeypatch):
     """Return a callable running one scan pass against a temporary dataset."""
     shard_dir = tmp_path / "relationships"
     monkeypatch.setattr(job_module, "RELATIONSHIP_SHARD_DIR", shard_dir)
+    # Both paths, not just the shard directory.  Reading falls back to the
+    # single-file dataset whenever the shard directory is empty -- which it is
+    # on the first pass -- so leaving this at its repo-relative default pulls
+    # the real corpus into the test, and the write step then deletes the
+    # developer's copy of it.
+    monkeypatch.setattr(
+        job_module, "LEGACY_RELATIONSHIP_JSONL", tmp_path / "legacy-absent.jsonl",
+    )
 
     settings = Settings(
         crawl_timeout_seconds=2,
@@ -112,12 +120,13 @@ def scan(tmp_path: Path, toon_file: Path, monkeypatch):
     scanner = ScriptedScanner()
     job.scanner = scanner
 
-    async def run(targets, **kwargs):
+    async def run(targets, skip_days=0, **kwargs):
         scanner.queue(targets, **kwargs)
-        # skip_recently_scanned_days=0 so each pass revisits the same page,
-        # standing in for the 28-day window elapsing between real runs.
+        # skip_recently_scanned_days defaults to 0 so each pass revisits the
+        # same page, standing in for the 28-day window elapsing between real
+        # runs; raise it to exercise the fully-skipped path.
         return await job.scan_country(
-            "TESTLAND", toon_file, skip_recently_scanned_days=0,
+            "TESTLAND", toon_file, skip_recently_scanned_days=skip_days,
         )
 
     run.shard_dir = shard_dir
@@ -127,6 +136,22 @@ def scan(tmp_path: Path, toon_file: Path, monkeypatch):
 def _rows(shard_dir: Path) -> dict[str, dict]:
     """Published rows keyed by target domain."""
     return {r["target_domain"]: r for r in relationship_shards.iter_rows(shard_dir)}
+
+
+def test_fixture_isolates_every_dataset_path(scan, tmp_path: Path) -> None:
+    """Neither dataset path may point at the repository during a test.
+
+    The leak this guards against is invisible on a clean checkout: reads fall
+    back to the single-file dataset only when it exists, and it does not exist
+    on main.  In a working copy that has one, the scan would merge real rows
+    into the assertions and then delete the file.  Asserting on the paths
+    catches that regardless of what happens to be on disk.
+    """
+    for name in ("RELATIONSHIP_SHARD_DIR", "LEGACY_RELATIONSHIP_JSONL"):
+        path = getattr(job_module, name)
+        assert tmp_path in path.parents or path.parent == tmp_path, (
+            f"{name} is {path}, outside the test's tmp_path"
+        )
 
 
 class TestRetirementLifecycle:
@@ -199,5 +224,25 @@ class TestRetirementLifecycle:
         result = await scan(["analytics.example"])
 
         assert result["pages_confirmed"] == 1
-        assert result["edges_checkable"] == 1
-        assert result["edges_inactive"] == 0
+        assert result["edges_retired"] == 0
+        # Dataset-wide, not per-country: the merge spans every country, so
+        # these are named to stop a caller summing them across a run.
+        assert result["dataset_edges_checkable"] == 1
+        assert result["dataset_edges_inactive"] == 0
+
+    @pytest.mark.asyncio
+    async def test_a_fully_skipped_country_reports_the_same_keys(self, scan) -> None:
+        """With a 28-day window most countries are skipped on most runs.
+
+        The skipped path returns early, so any key missing there is missing
+        from the majority of results and breaks aggregation over them.
+        """
+        first = await scan(["analytics.example"])
+        # Nothing queued for a second pass and a 28-day window: no URL is
+        # eligible, so scan_country takes its early return.
+        skipped = await scan([], skip_days=28)
+
+        assert skipped["urls_scanned"] == 0
+        assert set(first) == set(skipped), (
+            f"skipped result is missing {set(first) - set(skipped)}"
+        )
