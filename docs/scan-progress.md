@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-08-16 09:49 UTC_
+_Generated: 2026-08-16 10:40 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -14,7 +14,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
 | **Combined Reachability** | **25,340 confirmed reachable** | 87,696 | **<span role="img" aria-label="28.9% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:35px;"></span></span><span class="sm-bar__label">28.9%</span></span>** | — |
-| Social Media | 25,870 scanned (23,704 reachable) | 87,696 | <span role="img" aria-label="29.5% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:35px;"></span></span><span class="sm-bar__label">29.5%</span></span> | 2.1 days |
+| Social Media | 25,870 scanned (23,704 reachable) | 87,696 | <span role="img" aria-label="29.5% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:35px;"></span></span><span class="sm-bar__label">29.5%</span></span> | 2.2 days |
 | Technology | 27,125 scanned | 87,696 | <span role="img" aria-label="30.9% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:37px;"></span></span><span class="sm-bar__label">30.9%</span></span> | 2.2 days |
 | Lighthouse | 12,456 scanned | 87,696 | <span role="img" aria-label="14.2% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:17px;"></span></span><span class="sm-bar__label">14.2%</span></span> | 15.9 days |
 | Accessibility Statements | 34,554 scanned | 87,696 | <span role="img" aria-label="39.4% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:47px;"></span></span><span class="sm-bar__label">39.4%</span></span> | 2.4 days |
