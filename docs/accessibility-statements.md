@@ -5,14 +5,14 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-08-16 20:58 UTC — last scan: 2026-08-16_
+_Stats as of 2026-08-16 21:52 UTC — last scan: 2026-08-16_
 
-**56** scan batches run
+**58** scan batches run
 
-**36,582** of **87,696** available pages scanned (**41.7%** coverage)
-**32,780** of **36,582** scanned pages were reachable (**89.6%**)
-**14,674** of **32,780** reachable pages have an accessibility statement (**44.8%**)
-**13,074** pages have the statement link in the footer (**89.1%** of pages with a statement)
+**37,670** of **87,696** available pages scanned (**43.0%** coverage)
+**33,754** of **37,670** scanned pages were reachable (**89.6%**)
+**15,238** of **33,754** reachable pages have an accessibility statement (**45.1%**)
+**13,574** pages have the statement link in the footer (**89.1%** of pages with a statement)
 
 📥 Machine-readable results are available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
 
@@ -55,10 +55,10 @@ Each country entry in the JSON file includes page-level evidence for pages with 
 | Slovakia | 442 | 442 | 362 | 147 | 134 | 40.6% | Aug 2026 |
 | Slovenia | 214 | 214 | 207 | 116 | 81 | 56.0% | Aug 2026 |
 | Spain | 1,781 | 6,091 | 1,495 | 612 | 526 | 40.9% | Aug 2026 |
-| Sweden | 1,515 | 1,702 | 1,287 | 677 | 610 | 52.6% | Aug 2026 |
+| Sweden | 1,702 | 1,702 | 1,434 | 790 | 706 | 55.1% | Aug 2026 |
 | Switzerland | 2,123 | 2,123 | 2,038 | 1,023 | 1,022 | 50.2% | Aug 2026 |
-| United Kingdom | 2,234 | 19,511 | 2,118 | 1,221 | 1,152 | 57.6% | Aug 2026 |
-| **Total** | **36,586** | **87,696** | **32,784** | **14,678** | **13,078** | **44.8%** | — |
+| United Kingdom | 3,135 | 19,511 | 2,945 | 1,672 | 1,556 | 56.8% | Aug 2026 |
+| **Total** | **37,674** | **87,696** | **33,758** | **15,242** | **13,578** | **45.2%** | — |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
