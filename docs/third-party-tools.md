@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-08-16 19:29 UTC — last scan: 2026-08-16_
+_Stats as of 2026-08-16 20:37 UTC — last scan: 2026-08-16_
 
-**54** scan batches run
+**56** scan batches run
 
 **16,076** of **87,696** available pages scanned (**18.3%** coverage)
 **14,871** of **16,076** scanned pages were reachable (**92.5%**)
-**6,767** reachable pages loaded at least one third-party script (**45.5%** of reachable)
-**9,556** known third-party service loads identified
+**6,768** reachable pages loaded at least one third-party script (**45.5%** of reachable)
+**9,559** known third-party service loads identified
 **22** unique known services across **14** categories
 
 ---
@@ -23,7 +23,7 @@ _Stats as of 2026-08-16 19:29 UTC — last scan: 2026-08-16_
 |---------|---------|-----------|-----------|------------------------|--------------------|------------------------|---------------------------|----------|
 | Austria | 822 | 822 | 784 | 273 | 50 | 34.8 | 6.4 | 2026-08-14 |
 | Belgium | 990 | 1,329 | 902 | 477 | 465 | 52.9 | 51.6 | 2026-08-15 |
-| Bulgaria | 353 | 353 | 305 | 123 | 154 | 40.3 | 50.5 | 2026-08-14 |
+| Bulgaria | 353 | 353 | 305 | 124 | 157 | 40.7 | 51.5 | 2026-08-16 |
 | Canada | 377 | 4,469 | 362 | 187 | 311 | 51.7 | 85.9 | 2026-08-16 |
 | Croatia | 257 | 257 | 252 | 138 | 173 | 54.8 | 68.7 | 2026-08-14 |
 | Czechia | 866 | 866 | 795 | 470 | 792 | 59.1 | 99.6 | 2026-08-15 |
@@ -50,7 +50,7 @@ _Stats as of 2026-08-16 19:29 UTC — last scan: 2026-08-16_
 | Slovakia | 442 | 442 | 413 | 218 | 271 | 52.8 | 65.6 | 2026-08-16 |
 | Slovenia | 214 | 214 | 207 | 56 | 82 | 27.1 | 39.6 | 2026-08-16 |
 | Spain | 191 | 6,091 | 160 | 99 | 91 | 61.9 | 56.9 | 2026-08-15 |
-| Sweden | 745 | 1,702 | 696 | 175 | 56 | 25.1 | 8.0 | 2026-08-14 |
+| Sweden | 745 | 1,702 | 696 | 175 | 56 | 25.1 | 8.0 | 2026-08-16 |
 | Switzerland | 805 | 2,123 | 788 | 173 | 177 | 22.0 | 22.5 | 2026-08-15 |
 | United Kingdom | 787 | 19,511 | 737 | 399 | 510 | 54.1 | 69.2 | 2026-08-16 |
 
@@ -64,9 +64,9 @@ _Stats as of 2026-08-16 19:29 UTC — last scan: 2026-08-16_
 |--:|---------|------:|
 | 1 | cdnjs (Cloudflare CDN) | **1,980** |
 | 2 | jsDelivr CDN | **1,835** |
-| 3 | Google Analytics (GA4) | **1,411** |
+| 3 | Google Analytics (GA4) | **1,412** |
 | 4 | jQuery | **821** |
-| 5 | Google reCAPTCHA | **627** |
+| 5 | Google reCAPTCHA | **629** |
 | 6 | Google Hosted Libraries | **524** |
 | 7 | unpkg CDN | **515** |
 | 8 | Google Tag Manager | **510** |
@@ -87,10 +87,10 @@ _Stats as of 2026-08-16 19:29 UTC — last scan: 2026-08-16_
 
 | # | Service | Reachable Pages | Prevalence of Reachable Pages |
 |--:|---------|----------------:|------------------------------:|
-| 1 | Google Analytics (GA4) | **1,385** | **187.9%** |
+| 1 | Google Analytics (GA4) | **1,386** | **188.1%** |
 | 2 | jsDelivr CDN | **996** | **135.1%** |
 | 3 | cdnjs (Cloudflare CDN) | **730** | **99.1%** |
-| 4 | Google reCAPTCHA | **607** | **82.4%** |
+| 4 | Google reCAPTCHA | **608** | **82.5%** |
 | 5 | jQuery | **554** | **75.2%** |
 | 6 | Google Tag Manager | **496** | **67.3%** |
 | 7 | Google Hosted Libraries | **453** | **61.5%** |
@@ -113,11 +113,11 @@ _Stats as of 2026-08-16 19:29 UTC — last scan: 2026-08-16_
 | # | Category | Loads |
 |--:|----------|------:|
 | 1 | CDN | **4,854** |
-| 2 | Analytics | **1,543** |
+| 2 | Analytics | **1,544** |
 | 3 | JavaScript Library | **1,345** |
 | 4 | Cookie Consent | **859** |
-| 5 | Security | **650** |
-| 6 | CAPTCHA | **627** |
+| 5 | Security | **652** |
+| 6 | CAPTCHA | **629** |
 | 7 | Tag Manager | **558** |
 | 8 | Icon Library | **183** |
 | 9 | UI Framework | **99** |
@@ -142,10 +142,10 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 
 | # | Policy-Relevant Category | Loads |
 |--:|--------------------------|------:|
-| 1 | Analytics | **1,543** |
+| 1 | Analytics | **1,544** |
 | 2 | Cookie Consent | **859** |
-| 3 | Security | **650** |
-| 4 | CAPTCHA | **627** |
+| 3 | Security | **652** |
+| 4 | CAPTCHA | **629** |
 | 5 | Tag Manager | **558** |
 | 6 | Advertising | **49** |
 | 7 | Error Tracking | **19** |
