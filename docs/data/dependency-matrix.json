@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T06:38:15.793670+00:00",
+  "generated_at": "2026-08-16T13:20:56.844653+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
