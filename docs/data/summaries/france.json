@@ -1,7 +1,7 @@
 {
   "country_code": "FRANCE",
-  "total_relationships": 29854,
-  "total_source_domains": 642,
+  "total_relationships": 30081,
+  "total_source_domains": 656,
   "top_source_domains": [
     {
       "domain": "auvergnerhonealpes.fr",
@@ -211,7 +211,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 3315
+      "count": 3355
     },
     {
       "domain": "haute-garonne.fr",
@@ -223,19 +223,19 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 2258
+      "count": 2301
     },
     {
       "domain": "data.gouv.fr",
-      "count": 1934
+      "count": 1973
+    },
+    {
+      "domain": "instagram.com",
+      "count": 1946
     },
     {
       "domain": "skolengo.com",
       "count": 1919
-    },
-    {
-      "domain": "instagram.com",
-      "count": 1917
     },
     {
       "domain": "developpement-durable.gouv.fr",
@@ -243,11 +243,11 @@
     },
     {
       "domain": "twitter.com",
-      "count": 1751
+      "count": 1780
     },
     {
       "domain": "legifrance.gouv.fr",
-      "count": 1703
+      "count": 1742
     },
     {
       "domain": "cnam.fr",
@@ -263,23 +263,23 @@
     },
     {
       "domain": "github.com",
-      "count": 1339
+      "count": 1378
     },
     {
       "domain": "info.gouv.fr",
-      "count": 1090
+      "count": 1129
+    },
+    {
+      "domain": "service-public.gouv.fr",
+      "count": 953
     },
     {
       "domain": "service-public.fr",
-      "count": 933
+      "count": 935
     },
     {
       "domain": "education.gouv.fr",
       "count": 917
-    },
-    {
-      "domain": "service-public.gouv.fr",
-      "count": 914
     },
     {
       "domain": "beta.gouv.fr",
@@ -319,7 +319,7 @@
     },
     {
       "domain": "x.com",
-      "count": 611
+      "count": 636
     },
     {
       "domain": "defense.gouv.fr",
@@ -346,12 +346,12 @@
       "count": 493
     },
     {
-      "domain": "lyon.fr",
+      "domain": "interieur.gouv.fr",
       "count": 487
     },
     {
-      "domain": "interieur.gouv.fr",
-      "count": 481
+      "domain": "lyon.fr",
+      "count": 487
     },
     {
       "domain": "ac-clermont.fr",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 15488,
-    "script_dependency": 4508,
-    "stylesheet_dependency": 4051,
-    "form_destination": 1669,
-    "image_or_media_dependency": 3460,
+    "editorial_link": 15659,
+    "script_dependency": 4522,
+    "stylesheet_dependency": 4065,
+    "form_destination": 1683,
+    "image_or_media_dependency": 3474,
     "font_or_preload_dependency": 678
   },
-  "generated_at": "2026-08-15T19:00:44.706083+00:00"
+  "generated_at": "2026-08-16T01:38:44.564543+00:00"
 }

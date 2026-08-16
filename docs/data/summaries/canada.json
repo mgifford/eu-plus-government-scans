@@ -1,7 +1,7 @@
 {
   "country_code": "CANADA",
-  "total_relationships": 291228,
-  "total_source_domains": 8357,
+  "total_relationships": 291455,
+  "total_source_domains": 8371,
   "top_source_domains": [
     {
       "domain": "ethz.ch",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 30521
+      "count": 30561
     },
     {
       "domain": "googleapis.com",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 17561
+      "count": 17590
     },
     {
       "domain": "youtube.com",
@@ -235,7 +235,7 @@
     },
     {
       "domain": "twitter.com",
-      "count": 14307
+      "count": 14336
     },
     {
       "domain": "google.com",
@@ -243,7 +243,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 12308
+      "count": 12351
     },
     {
       "domain": "googletagmanager.com",
@@ -327,7 +327,7 @@
     },
     {
       "domain": "x.com",
-      "count": 3480
+      "count": 3505
     },
     {
       "domain": "gdansk.pl",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 149478,
-    "form_destination": 19682,
-    "image_or_media_dependency": 30820,
-    "script_dependency": 46411,
-    "stylesheet_dependency": 37433,
+    "editorial_link": 149649,
+    "form_destination": 19696,
+    "image_or_media_dependency": 30834,
+    "script_dependency": 46425,
+    "stylesheet_dependency": 37447,
     "font_or_preload_dependency": 7404
   },
-  "generated_at": "2026-08-15T19:00:42.802169+00:00"
+  "generated_at": "2026-08-16T01:38:42.665739+00:00"
 }
