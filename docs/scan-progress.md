@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-08-17 02:20 UTC_
+_Generated: 2026-08-17 02:22 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -13,8 +13,8 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
-| **Combined Reachability** | **26,313 confirmed reachable** | 87,696 | **<span role="img" aria-label="30.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:36px;"></span></span><span class="sm-bar__label">30.0%</span></span>** | — |
-| Social Media | 27,290 scanned (24,717 reachable) | 87,696 | <span role="img" aria-label="31.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:37px;"></span></span><span class="sm-bar__label">31.1%</span></span> | 2.7 days |
+| **Combined Reachability** | **26,349 confirmed reachable** | 87,696 | **<span role="img" aria-label="30.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:36px;"></span></span><span class="sm-bar__label">30.0%</span></span>** | — |
+| Social Media | 28,170 scanned (25,482 reachable) | 87,696 | <span role="img" aria-label="32.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:39px;"></span></span><span class="sm-bar__label">32.1%</span></span> | 2.6 days |
 | Technology | 30,301 scanned | 87,696 | <span role="img" aria-label="34.6% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:41px;"></span></span><span class="sm-bar__label">34.6%</span></span> | 2.6 days |
 | Lighthouse | 12,516 scanned | 87,696 | <span role="img" aria-label="14.3% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:17px;"></span></span><span class="sm-bar__label">14.3%</span></span> | 16.3 days |
 | Accessibility Statements | 37,674 scanned | 87,696 | <span role="img" aria-label="43.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:52px;"></span></span><span class="sm-bar__label">43.0%</span></span> | 2.8 days |
@@ -84,7 +84,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Romania | 498 | 807 | 208 | 67 | 0 | 7 | 134 | 19 | 1 | 0 | 7 | Aug 2026 |
 | Slovakia | 442 | 442 | 413 | 136 | 0 | 24 | 253 | 19 | 12 | 1 | 23 | Aug 2026 |
 | Slovenia | 214 | 214 | 206 | 61 | 0 | 10 | 135 | 24 | 7 | 1 | 10 | Aug 2026 |
-| Spain | 391 | 6,091 | 318 | 136 | 0 | 30 | 152 | 100 | 56 | 6 | 24 | Aug 2026 |
+| Spain | 1,271 | 6,091 | 1,083 | 443 | 2 | 68 | 570 | 350 | 118 | 11 | 61 | Aug 2026 |
 | Sweden | 732 | 1,702 | 613 | 118 | 1 | 14 | 480 | 8 | 8 | 0 | 15 | Aug 2026 |
 | Switzerland | 1,947 | 2,123 | 1,904 | 516 | 25 | 127 | 1,236 | 191 | 203 | 50 | 117 | Aug 2026 |
 | United Kingdom | 1,617 | 19,511 | 1,541 | 588 | 3 | 69 | 881 | 393 | 84 | 2 | 70 | Aug 2026 |
