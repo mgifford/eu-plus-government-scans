@@ -215,8 +215,8 @@
   "ROMANIA": {
     "total_urls": 807,
     "attempted": 807,
-    "successful": 344,
-    "failed": 463,
+    "successful": 346,
+    "failed": 461,
     "skipped": 0,
     "never_scanned": 0,
     "stale_28d": 0
