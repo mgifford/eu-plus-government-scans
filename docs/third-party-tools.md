@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-08-17 02:54 UTC — last scan: 2026-08-16_
+_Stats as of 2026-08-17 03:13 UTC — last scan: 2026-08-17_
 
-**59** scan batches run
+**61** scan batches run
 
 **16,277** of **87,696** available pages scanned (**18.6%** coverage)
-**15,054** of **16,277** scanned pages were reachable (**92.5%**)
-**6,886** reachable pages loaded at least one third-party script (**45.7%** of reachable)
-**9,612** known third-party service loads identified
+**15,056** of **16,277** scanned pages were reachable (**92.5%**)
+**6,888** reachable pages loaded at least one third-party script (**45.7%** of reachable)
+**9,614** known third-party service loads identified
 **22** unique known services across **14** categories
 
 ---
@@ -22,13 +22,13 @@ _Stats as of 2026-08-17 02:54 UTC — last scan: 2026-08-16_
 | Country | Scanned | Available | Reachable | URLs with 3rd-Party JS | Known Service Loads | JS URLs /100 Reachable | Known Loads /100 Reachable | Last Scan |
 |---------|---------|-----------|-----------|------------------------|--------------------|------------------------|---------------------------|----------|
 | Austria | 822 | 822 | 784 | 273 | 50 | 34.8 | 6.4 | 2026-08-16 |
-| Belgium | 990 | 1,329 | 902 | 477 | 465 | 52.9 | 51.6 | 2026-08-15 |
+| Belgium | 990 | 1,329 | 902 | 477 | 465 | 52.9 | 51.6 | 2026-08-17 |
 | Bulgaria | 353 | 353 | 305 | 124 | 157 | 40.7 | 51.5 | 2026-08-16 |
 | Canada | 377 | 4,469 | 362 | 187 | 311 | 51.7 | 85.9 | 2026-08-16 |
 | Croatia | 257 | 257 | 252 | 138 | 195 | 54.8 | 77.4 | 2026-08-16 |
 | Czechia | 866 | 866 | 795 | 470 | 792 | 59.1 | 99.6 | 2026-08-15 |
 | Denmark | 1,514 | 1,536 | 1,486 | 806 | 2,085 | 54.2 | 140.3 | 2026-08-15 |
-| Estonia | 401 | 401 | 382 | 132 | 113 | 34.6 | 29.6 | 2026-08-15 |
+| Estonia | 401 | 401 | 384 | 134 | 115 | 34.9 | 29.9 | 2026-08-17 |
 | Finland | 199 | 199 | 189 | 46 | 26 | 24.3 | 13.8 | 2026-08-15 |
 | France | 284 | 10,009 | 256 | 146 | 50 | 57.0 | 19.5 | 2026-08-16 |
 | Germany | 619 | 6,599 | 586 | 160 | 184 | 27.3 | 31.4 | 2026-08-13 |
@@ -69,7 +69,7 @@ _Stats as of 2026-08-17 02:54 UTC — last scan: 2026-08-16_
 | 5 | Google reCAPTCHA | **629** |
 | 6 | unpkg CDN | **526** |
 | 7 | Google Hosted Libraries | **526** |
-| 8 | Google Tag Manager | **513** |
+| 8 | Google Tag Manager | **515** |
 | 9 | CookieInformation | **401** |
 | 10 | Cookiebot | **371** |
 | 11 | Font Awesome | **183** |
@@ -92,7 +92,7 @@ _Stats as of 2026-08-17 02:54 UTC — last scan: 2026-08-16_
 | 3 | cdnjs (Cloudflare CDN) | **733** | **99.5%** |
 | 4 | Google reCAPTCHA | **608** | **82.5%** |
 | 5 | jQuery | **554** | **75.2%** |
-| 6 | Google Tag Manager | **499** | **67.7%** |
+| 6 | Google Tag Manager | **501** | **68.0%** |
 | 7 | Google Hosted Libraries | **455** | **61.7%** |
 | 8 | CookieInformation | **401** | **54.4%** |
 | 9 | unpkg CDN | **381** | **51.7%** |
@@ -118,7 +118,7 @@ _Stats as of 2026-08-17 02:54 UTC — last scan: 2026-08-16_
 | 4 | Cookie Consent | **859** |
 | 5 | Security | **652** |
 | 6 | CAPTCHA | **629** |
-| 7 | Tag Manager | **561** |
+| 7 | Tag Manager | **563** |
 | 8 | Icon Library | **183** |
 | 9 | UI Framework | **102** |
 | 10 | Advertising | **49** |
@@ -146,7 +146,7 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 | 2 | Cookie Consent | **859** |
 | 3 | Security | **652** |
 | 4 | CAPTCHA | **629** |
-| 5 | Tag Manager | **561** |
+| 5 | Tag Manager | **563** |
 | 6 | Advertising | **49** |
 | 7 | Error Tracking | **19** |
 | 8 | Customer Support | **11** |
