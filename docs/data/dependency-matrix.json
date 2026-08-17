@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T07:42:55.160043+00:00",
+  "generated_at": "2026-08-17T13:30:42.980421+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -173,12 +173,12 @@
     {
       "service": "googleapis.com",
       "countries": 32,
-      "domains": 3920
+      "domains": 3921
     },
     {
       "service": "googletagmanager.com",
       "countries": 32,
-      "domains": 2511
+      "domains": 2512
     },
     {
       "service": "jsdelivr.net",
@@ -198,7 +198,7 @@
     {
       "service": "gstatic.com",
       "countries": 31,
-      "domains": 1548
+      "domains": 1549
     },
     {
       "service": "cloudflare.com",
@@ -2684,9 +2684,9 @@
       "country_code": "BELGIUM",
       "country": "Belgium",
       "service": "googletagmanager.com",
-      "domains": 14,
+      "domains": 15,
       "scanned_domains": 43,
-      "percent": 32.6
+      "percent": 34.9
     },
     {
       "country_code": "BELGIUM",
@@ -3636,9 +3636,9 @@
       "country_code": "CROATIA",
       "country": "Croatia",
       "service": "googleapis.com",
-      "domains": 15,
+      "domains": 16,
       "scanned_domains": 31,
-      "percent": 48.4
+      "percent": 51.6
     },
     {
       "country_code": "CROATIA",
@@ -3676,9 +3676,9 @@
       "country_code": "CROATIA",
       "country": "Croatia",
       "service": "gstatic.com",
-      "domains": 4,
+      "domains": 5,
       "scanned_domains": 31,
-      "percent": 12.9
+      "percent": 16.1
     },
     {
       "country_code": "CROATIA",
