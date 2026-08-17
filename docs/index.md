@@ -11,13 +11,13 @@ power them, including which third-party JavaScript services they rely on.
 
 <!-- SCAN_PROGRESS_START -->
 
-_Progress as of 2026-08-17 09:00 UTC_
+_Progress as of 2026-08-17 09:37 UTC_
 
 | Scan Type | Pages Scanned | Coverage | Avg Age |
 |-----------|--------------|----------|---------|
 | **Combined Reachability** | **26,349 confirmed reachable** | **<span role="img" aria-label="30.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:36px;"></span></span><span class="sm-bar__label">30.0%</span></span>** | — |
 | Social Media | 28,170 scanned (25,482 reachable) | <span role="img" aria-label="32.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:39px;"></span></span><span class="sm-bar__label">32.1%</span></span> | 2.9 days |
-| Technology | 30,301 scanned | <span role="img" aria-label="34.6% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:41px;"></span></span><span class="sm-bar__label">34.6%</span></span> | 2.9 days |
+| Technology | 31,602 scanned | <span role="img" aria-label="36.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:43px;"></span></span><span class="sm-bar__label">36.0%</span></span> | 2.8 days |
 | Lighthouse | 12,521 scanned | <span role="img" aria-label="14.3% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:17px;"></span></span><span class="sm-bar__label">14.3%</span></span> | 16.5 days |
 | Accessibility Statements | 40,980 scanned | <span role="img" aria-label="46.7% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:56px;"></span></span><span class="sm-bar__label">46.7%</span></span> | 2.9 days |
 
