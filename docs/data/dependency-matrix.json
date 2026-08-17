@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T18:27:32.650679+00:00",
+  "generated_at": "2026-08-17T01:34:18.886078+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -173,7 +173,7 @@
     {
       "service": "googleapis.com",
       "countries": 32,
-      "domains": 3919
+      "domains": 3920
     },
     {
       "service": "googletagmanager.com",
@@ -183,7 +183,7 @@
     {
       "service": "jsdelivr.net",
       "countries": 32,
-      "domains": 1050
+      "domains": 1051
     },
     {
       "service": "fontawesome.com",
@@ -4436,9 +4436,9 @@
       "country_code": "ROMANIA",
       "country": "Romania",
       "service": "googleapis.com",
-      "domains": 8,
+      "domains": 9,
       "scanned_domains": 16,
-      "percent": 50.0
+      "percent": 56.2
     },
     {
       "country_code": "ROMANIA",
@@ -4452,9 +4452,9 @@
       "country_code": "ROMANIA",
       "country": "Romania",
       "service": "jsdelivr.net",
-      "domains": 1,
+      "domains": 2,
       "scanned_domains": 16,
-      "percent": 6.2
+      "percent": 12.5
     },
     {
       "country_code": "ROMANIA",

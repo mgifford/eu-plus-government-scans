@@ -1,6 +1,6 @@
 {
   "country_code": "ROMANIA",
-  "total_relationships": 1087,
+  "total_relationships": 1098,
   "total_source_domains": 16,
   "top_source_domains": [
     {
@@ -17,7 +17,7 @@
     },
     {
       "domain": "brasovcity.ro",
-      "count": 110
+      "count": 130
     },
     {
       "domain": "pmb.ro",
@@ -83,11 +83,11 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 127
+      "count": 128
     },
     {
       "domain": "facebook.com",
-      "count": 112
+      "count": 113
     },
     {
       "domain": "sibiu.ro",
@@ -99,7 +99,7 @@
     },
     {
       "domain": "google.com",
-      "count": 80
+      "count": 82
     },
     {
       "domain": "pmb.ro",
@@ -134,6 +134,10 @@
       "count": 47
     },
     {
+      "domain": "brasovcity.ro",
+      "count": 46
+    },
+    {
       "domain": "anaf.ro",
       "count": 43
     },
@@ -148,10 +152,6 @@
     {
       "domain": "sts.ro",
       "count": 42
-    },
-    {
-      "domain": "brasovcity.ro",
-      "count": 39
     },
     {
       "domain": "statcounter.com",
@@ -171,11 +171,11 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 25
+      "count": 26
     },
     {
       "domain": "instagram.com",
-      "count": 24
+      "count": 25
     },
     {
       "domain": "twitter.com",
@@ -183,7 +183,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 22
+      "count": 23
     },
     {
       "domain": "igpr.ro",
@@ -226,6 +226,10 @@
       "count": 11
     },
     {
+      "domain": "userway.org",
+      "count": 10
+    },
+    {
       "domain": "constanta.ro",
       "count": 10
     },
@@ -254,10 +258,6 @@
       "count": 8
     },
     {
-      "domain": "userway.org",
-      "count": 8
-    },
-    {
       "domain": "drpciv.ro",
       "count": 8
     },
@@ -271,12 +271,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 643,
-    "image_or_media_dependency": 113,
-    "script_dependency": 133,
-    "stylesheet_dependency": 124,
-    "form_destination": 69,
+    "editorial_link": 644,
+    "image_or_media_dependency": 115,
+    "script_dependency": 137,
+    "stylesheet_dependency": 127,
+    "form_destination": 70,
     "font_or_preload_dependency": 5
   },
-  "generated_at": "2026-08-16T18:27:29.518690+00:00"
+  "generated_at": "2026-08-17T01:34:15.915669+00:00"
 }
