@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T13:30:42.980421+00:00",
+  "generated_at": "2026-08-17T19:28:11.745404+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -248,7 +248,7 @@
     {
       "service": "addtoany.com",
       "countries": 20,
-      "domains": 159
+      "domains": 160
     },
     {
       "service": "arcgis.com",
@@ -1356,9 +1356,9 @@
       "country_code": "GERMANY",
       "country": "Germany",
       "service": "addtoany.com",
-      "domains": 1,
+      "domains": 2,
       "scanned_domains": 214,
-      "percent": 0.5
+      "percent": 0.9
     },
     {
       "country_code": "GERMANY",
