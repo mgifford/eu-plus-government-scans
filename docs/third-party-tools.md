@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-08-17 14:08 UTC — last scan: 2026-08-17_
+_Stats as of 2026-08-17 14:45 UTC — last scan: 2026-08-17_
 
-**64** scan batches run
+**66** scan batches run
 
 **16,277** of **87,696** available pages scanned (**18.6%** coverage)
-**15,058** of **16,277** scanned pages were reachable (**92.5%**)
-**6,894** reachable pages loaded at least one third-party script (**45.8%** of reachable)
-**9,614** known third-party service loads identified
+**15,061** of **16,277** scanned pages were reachable (**92.5%**)
+**6,898** reachable pages loaded at least one third-party script (**45.8%** of reachable)
+**9,617** known third-party service loads identified
 **22** unique known services across **14** categories
 
 ---
@@ -27,13 +27,13 @@ _Stats as of 2026-08-17 14:08 UTC — last scan: 2026-08-17_
 | Canada | 377 | 4,469 | 362 | 187 | 311 | 51.7 | 85.9 | 2026-08-16 |
 | Croatia | 257 | 257 | 252 | 138 | 195 | 54.8 | 77.4 | 2026-08-16 |
 | Czechia | 866 | 866 | 797 | 476 | 792 | 59.7 | 99.4 | 2026-08-17 |
-| Denmark | 1,514 | 1,536 | 1,486 | 806 | 2,085 | 54.2 | 140.3 | 2026-08-15 |
+| Denmark | 1,514 | 1,536 | 1,486 | 807 | 2,085 | 54.3 | 140.3 | 2026-08-17 |
 | Estonia | 401 | 401 | 384 | 134 | 115 | 34.9 | 29.9 | 2026-08-17 |
 | Finland | 199 | 199 | 189 | 46 | 26 | 24.3 | 13.8 | 2026-08-17 |
 | France | 284 | 10,009 | 256 | 146 | 50 | 57.0 | 19.5 | 2026-08-16 |
 | Germany | 619 | 6,599 | 586 | 160 | 184 | 27.3 | 31.4 | 2026-08-17 |
 | Greece | 507 | 1,752 | 477 | 215 | 286 | 45.1 | 60.0 | 2026-08-13 |
-| Hungary | 392 | 392 | 293 | 123 | 187 | 42.0 | 63.8 | 2026-08-15 |
+| Hungary | 392 | 392 | 296 | 126 | 190 | 42.6 | 64.2 | 2026-08-17 |
 | Iceland | 145 | 145 | 143 | 78 | 46 | 54.5 | 32.2 | 2026-08-15 |
 | Ireland | 536 | 536 | 499 | 264 | 746 | 52.9 | 149.5 | 2026-08-15 |
 | Italy | 407 | 5,351 | 385 | 148 | 24 | 38.4 | 6.2 | 2026-08-14 |
@@ -64,7 +64,7 @@ _Stats as of 2026-08-17 14:08 UTC — last scan: 2026-08-17_
 |--:|---------|------:|
 | 1 | cdnjs (Cloudflare CDN) | **1,983** |
 | 2 | jsDelivr CDN | **1,852** |
-| 3 | Google Analytics (GA4) | **1,423** |
+| 3 | Google Analytics (GA4) | **1,426** |
 | 4 | jQuery | **821** |
 | 5 | Google reCAPTCHA | **629** |
 | 6 | unpkg CDN | **526** |
@@ -87,7 +87,7 @@ _Stats as of 2026-08-17 14:08 UTC — last scan: 2026-08-17_
 
 | # | Service | Reachable Pages | Prevalence of Reachable Pages |
 |--:|---------|----------------:|------------------------------:|
-| 1 | Google Analytics (GA4) | **1,397** | **189.6%** |
+| 1 | Google Analytics (GA4) | **1,400** | **190.0%** |
 | 2 | jsDelivr CDN | **1,004** | **136.2%** |
 | 3 | cdnjs (Cloudflare CDN) | **733** | **99.5%** |
 | 4 | Google reCAPTCHA | **608** | **82.5%** |
@@ -113,7 +113,7 @@ _Stats as of 2026-08-17 14:08 UTC — last scan: 2026-08-17_
 | # | Category | Loads |
 |--:|----------|------:|
 | 1 | CDN | **4,887** |
-| 2 | Analytics | **1,558** |
+| 2 | Analytics | **1,561** |
 | 3 | JavaScript Library | **1,347** |
 | 4 | Cookie Consent | **859** |
 | 5 | Security | **652** |
@@ -142,7 +142,7 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 
 | # | Policy-Relevant Category | Loads |
 |--:|--------------------------|------:|
-| 1 | Analytics | **1,558** |
+| 1 | Analytics | **1,561** |
 | 2 | Cookie Consent | **859** |
 | 3 | Security | **652** |
 | 4 | CAPTCHA | **629** |
@@ -166,12 +166,12 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 | 7 | `static.addtoany.com` | **293** | **293** |
 | 8 | `cookie-notice.plzen.eu` | **272** | **144** |
 | 9 | `dreambroker.com` | **246** | **246** |
-| 10 | `www.youtube.com` | **214** | **214** |
-| 11 | `maps.googleapis.com` | **212** | **197** |
-| 12 | `cdn.herning.dk` | **211** | **21** |
+| 10 | `cdn.herning.dk` | **219** | **22** |
+| 11 | `www.youtube.com` | **214** | **214** |
+| 12 | `maps.googleapis.com` | **212** | **197** |
 | 13 | `translate.google.com` | **200** | **200** |
 | 14 | `content.powerapps.com` | **192** | **16** |
-| 15 | `siteimproveanalytics.com` | **189** | **189** |
+| 15 | `cdn.hjoerring.dk` | **187** | **17** |
 
 > These hosts were seen as third-party script sources but did not match a known service signature. Review this queue regularly and promote stable, policy-relevant hosts into the signature list.
 
