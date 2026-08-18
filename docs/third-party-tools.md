@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-08-18 02:51 UTC — last scan: 2026-08-17_
+_Stats as of 2026-08-18 03:08 UTC — last scan: 2026-08-18_
 
-**69** scan batches run
+**72** scan batches run
 
 **16,352** of **87,696** available pages scanned (**18.6%** coverage)
-**15,132** of **16,352** scanned pages were reachable (**92.5%**)
-**6,917** reachable pages loaded at least one third-party script (**45.7%** of reachable)
-**9,642** known third-party service loads identified
+**15,134** of **16,352** scanned pages were reachable (**92.6%**)
+**6,918** reachable pages loaded at least one third-party script (**45.7%** of reachable)
+**9,643** known third-party service loads identified
 **22** unique known services across **14** categories
 
 ---
@@ -36,9 +36,9 @@ _Stats as of 2026-08-18 02:51 UTC — last scan: 2026-08-17_
 | Hungary | 392 | 392 | 296 | 126 | 190 | 42.6 | 64.2 | 2026-08-17 |
 | Iceland | 145 | 145 | 143 | 78 | 46 | 54.5 | 32.2 | 2026-08-17 |
 | Ireland | 536 | 536 | 499 | 264 | 744 | 52.9 | 149.1 | 2026-08-17 |
-| Italy | 407 | 5,351 | 385 | 148 | 24 | 38.4 | 6.2 | 2026-08-14 |
-| Latvia | 803 | 803 | 760 | 260 | 290 | 34.2 | 38.2 | 2026-08-15 |
-| Lithuania | 122 | 122 | 112 | 57 | 113 | 50.9 | 100.9 | 2026-08-15 |
+| Italy | 407 | 5,351 | 385 | 148 | 24 | 38.4 | 6.2 | 2026-08-18 |
+| Latvia | 803 | 803 | 762 | 261 | 291 | 34.3 | 38.2 | 2026-08-18 |
+| Lithuania | 122 | 122 | 112 | 57 | 113 | 50.9 | 100.9 | 2026-08-18 |
 | Luxembourg | 573 | 573 | 477 | 343 | 134 | 71.9 | 28.1 | 2026-08-15 |
 | Malta | 610 | 610 | 595 | 465 | 1,280 | 78.2 | 215.1 | 2026-08-16 |
 | Netherlands | 945 | 945 | 902 | 356 | 277 | 39.5 | 30.7 | 2026-08-16 |
@@ -64,7 +64,7 @@ _Stats as of 2026-08-18 02:51 UTC — last scan: 2026-08-17_
 |--:|---------|------:|
 | 1 | cdnjs (Cloudflare CDN) | **1,986** |
 | 2 | jsDelivr CDN | **1,855** |
-| 3 | Google Analytics (GA4) | **1,434** |
+| 3 | Google Analytics (GA4) | **1,435** |
 | 4 | jQuery | **824** |
 | 5 | Google reCAPTCHA | **632** |
 | 6 | unpkg CDN | **530** |
@@ -87,7 +87,7 @@ _Stats as of 2026-08-18 02:51 UTC — last scan: 2026-08-17_
 
 | # | Service | Reachable Pages | Prevalence of Reachable Pages |
 |--:|---------|----------------:|------------------------------:|
-| 1 | Google Analytics (GA4) | **1,408** | **191.0%** |
+| 1 | Google Analytics (GA4) | **1,409** | **191.2%** |
 | 2 | jsDelivr CDN | **1,006** | **136.5%** |
 | 3 | cdnjs (Cloudflare CDN) | **736** | **99.9%** |
 | 4 | Google reCAPTCHA | **611** | **82.9%** |
@@ -113,7 +113,7 @@ _Stats as of 2026-08-18 02:51 UTC — last scan: 2026-08-17_
 | # | Category | Loads |
 |--:|----------|------:|
 | 1 | CDN | **4,897** |
-| 2 | Analytics | **1,569** |
+| 2 | Analytics | **1,570** |
 | 3 | JavaScript Library | **1,350** |
 | 4 | Cookie Consent | **858** |
 | 5 | Security | **655** |
@@ -142,7 +142,7 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 
 | # | Policy-Relevant Category | Loads |
 |--:|--------------------------|------:|
-| 1 | Analytics | **1,569** |
+| 1 | Analytics | **1,570** |
 | 2 | Cookie Consent | **858** |
 | 3 | Security | **655** |
 | 4 | CAPTCHA | **632** |
@@ -167,8 +167,8 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 | 8 | `cookie-notice.plzen.eu` | **272** | **144** |
 | 9 | `dreambroker.com` | **246** | **246** |
 | 10 | `cdn.herning.dk` | **219** | **22** |
-| 11 | `www.youtube.com` | **214** | **214** |
-| 12 | `maps.googleapis.com` | **214** | **199** |
+| 11 | `maps.googleapis.com` | **214** | **199** |
+| 12 | `www.youtube.com` | **214** | **214** |
 | 13 | `translate.google.com` | **200** | **200** |
 | 14 | `content.powerapps.com` | **192** | **16** |
 | 15 | `cdn.hjoerring.dk` | **187** | **17** |
