@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T13:32:28.071584+00:00",
+  "generated_at": "2026-08-18T19:26:07.705677+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -246,14 +246,14 @@
       "domains": 177
     },
     {
+      "service": "arcgis.com",
+      "countries": 21,
+      "domains": 80
+    },
+    {
       "service": "addtoany.com",
       "countries": 20,
       "domains": 160
-    },
-    {
-      "service": "arcgis.com",
-      "countries": 20,
-      "domains": 79
     },
     {
       "service": "fbcdn.net",
@@ -395,18 +395,18 @@
     {
       "country_code": "UNITED_KINGDOM_UK",
       "country": "United Kingdom",
-      "service": "addtoany.com",
-      "domains": 30,
-      "scanned_domains": 2722,
-      "percent": 1.1
-    },
-    {
-      "country_code": "UNITED_KINGDOM_UK",
-      "country": "United Kingdom",
       "service": "arcgis.com",
       "domains": 25,
       "scanned_domains": 2722,
       "percent": 0.9
+    },
+    {
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "service": "addtoany.com",
+      "domains": 30,
+      "scanned_domains": 2722,
+      "percent": 1.1
     },
     {
       "country_code": "UNITED_KINGDOM_UK",
@@ -555,18 +555,18 @@
     {
       "country_code": "POLAND",
       "country": "Poland",
-      "service": "addtoany.com",
-      "domains": 22,
-      "scanned_domains": 2285,
-      "percent": 1.0
-    },
-    {
-      "country_code": "POLAND",
-      "country": "Poland",
       "service": "arcgis.com",
       "domains": 2,
       "scanned_domains": 2285,
       "percent": 0.1
+    },
+    {
+      "country_code": "POLAND",
+      "country": "Poland",
+      "service": "addtoany.com",
+      "domains": 22,
+      "scanned_domains": 2285,
+      "percent": 1.0
     },
     {
       "country_code": "POLAND",
@@ -715,18 +715,18 @@
     {
       "country_code": "FRANCE",
       "country": "France",
-      "service": "addtoany.com",
-      "domains": 29,
-      "scanned_domains": 654,
-      "percent": 4.4
-    },
-    {
-      "country_code": "FRANCE",
-      "country": "France",
       "service": "arcgis.com",
       "domains": 5,
       "scanned_domains": 654,
       "percent": 0.8
+    },
+    {
+      "country_code": "FRANCE",
+      "country": "France",
+      "service": "addtoany.com",
+      "domains": 29,
+      "scanned_domains": 654,
+      "percent": 4.4
     },
     {
       "country_code": "FRANCE",
@@ -875,18 +875,18 @@
     {
       "country_code": "PORTUGAL",
       "country": "Portugal",
-      "service": "addtoany.com",
-      "domains": 9,
-      "scanned_domains": 383,
-      "percent": 2.3
-    },
-    {
-      "country_code": "PORTUGAL",
-      "country": "Portugal",
       "service": "arcgis.com",
       "domains": 3,
       "scanned_domains": 383,
       "percent": 0.8
+    },
+    {
+      "country_code": "PORTUGAL",
+      "country": "Portugal",
+      "service": "addtoany.com",
+      "domains": 9,
+      "scanned_domains": 383,
+      "percent": 2.3
     },
     {
       "country_code": "PORTUGAL",
@@ -1035,18 +1035,18 @@
     {
       "country_code": "GREECE",
       "country": "Greece",
-      "service": "addtoany.com",
-      "domains": 10,
-      "scanned_domains": 360,
-      "percent": 2.8
-    },
-    {
-      "country_code": "GREECE",
-      "country": "Greece",
       "service": "arcgis.com",
       "domains": 1,
       "scanned_domains": 360,
       "percent": 0.3
+    },
+    {
+      "country_code": "GREECE",
+      "country": "Greece",
+      "service": "addtoany.com",
+      "domains": 10,
+      "scanned_domains": 360,
+      "percent": 2.8
     },
     {
       "country_code": "GREECE",
@@ -1195,18 +1195,18 @@
     {
       "country_code": "SPAIN",
       "country": "Spain",
-      "service": "addtoany.com",
-      "domains": 19,
-      "scanned_domains": 240,
-      "percent": 7.9
-    },
-    {
-      "country_code": "SPAIN",
-      "country": "Spain",
       "service": "arcgis.com",
       "domains": 4,
       "scanned_domains": 240,
       "percent": 1.7
+    },
+    {
+      "country_code": "SPAIN",
+      "country": "Spain",
+      "service": "addtoany.com",
+      "domains": 19,
+      "scanned_domains": 240,
+      "percent": 7.9
     },
     {
       "country_code": "SPAIN",
@@ -1355,18 +1355,18 @@
     {
       "country_code": "GERMANY",
       "country": "Germany",
-      "service": "addtoany.com",
-      "domains": 2,
-      "scanned_domains": 214,
-      "percent": 0.9
-    },
-    {
-      "country_code": "GERMANY",
-      "country": "Germany",
       "service": "arcgis.com",
       "domains": 1,
       "scanned_domains": 214,
       "percent": 0.5
+    },
+    {
+      "country_code": "GERMANY",
+      "country": "Germany",
+      "service": "addtoany.com",
+      "domains": 2,
+      "scanned_domains": 214,
+      "percent": 0.9
     },
     {
       "country_code": "GERMANY",
@@ -1515,7 +1515,7 @@
     {
       "country_code": "SWEDEN",
       "country": "Sweden",
-      "service": "addtoany.com",
+      "service": "arcgis.com",
       "domains": 0,
       "scanned_domains": 183,
       "percent": 0.0
@@ -1523,7 +1523,7 @@
     {
       "country_code": "SWEDEN",
       "country": "Sweden",
-      "service": "arcgis.com",
+      "service": "addtoany.com",
       "domains": 0,
       "scanned_domains": 183,
       "percent": 0.0
@@ -1675,18 +1675,18 @@
     {
       "country_code": "ITALY",
       "country": "Italy",
-      "service": "addtoany.com",
-      "domains": 11,
-      "scanned_domains": 146,
-      "percent": 7.5
-    },
-    {
-      "country_code": "ITALY",
-      "country": "Italy",
       "service": "arcgis.com",
       "domains": 3,
       "scanned_domains": 146,
       "percent": 2.1
+    },
+    {
+      "country_code": "ITALY",
+      "country": "Italy",
+      "service": "addtoany.com",
+      "domains": 11,
+      "scanned_domains": 146,
+      "percent": 7.5
     },
     {
       "country_code": "ITALY",
@@ -1835,18 +1835,18 @@
     {
       "country_code": "LATVIA",
       "country": "Latvia",
-      "service": "addtoany.com",
-      "domains": 8,
-      "scanned_domains": 141,
-      "percent": 5.7
-    },
-    {
-      "country_code": "LATVIA",
-      "country": "Latvia",
       "service": "arcgis.com",
       "domains": 0,
       "scanned_domains": 141,
       "percent": 0.0
+    },
+    {
+      "country_code": "LATVIA",
+      "country": "Latvia",
+      "service": "addtoany.com",
+      "domains": 8,
+      "scanned_domains": 141,
+      "percent": 5.7
     },
     {
       "country_code": "LATVIA",
@@ -1995,18 +1995,18 @@
     {
       "country_code": "CANADA",
       "country": "Canada",
-      "service": "addtoany.com",
-      "domains": 3,
-      "scanned_domains": 113,
-      "percent": 2.7
-    },
-    {
-      "country_code": "CANADA",
-      "country": "Canada",
       "service": "arcgis.com",
       "domains": 15,
       "scanned_domains": 113,
       "percent": 13.3
+    },
+    {
+      "country_code": "CANADA",
+      "country": "Canada",
+      "service": "addtoany.com",
+      "domains": 3,
+      "scanned_domains": 113,
+      "percent": 2.7
     },
     {
       "country_code": "CANADA",
@@ -2155,18 +2155,18 @@
     {
       "country_code": "IRELAND",
       "country": "Ireland",
-      "service": "addtoany.com",
-      "domains": 1,
-      "scanned_domains": 104,
-      "percent": 1.0
-    },
-    {
-      "country_code": "IRELAND",
-      "country": "Ireland",
       "service": "arcgis.com",
       "domains": 2,
       "scanned_domains": 104,
       "percent": 1.9
+    },
+    {
+      "country_code": "IRELAND",
+      "country": "Ireland",
+      "service": "addtoany.com",
+      "domains": 1,
+      "scanned_domains": 104,
+      "percent": 1.0
     },
     {
       "country_code": "IRELAND",
@@ -2315,7 +2315,7 @@
     {
       "country_code": "DENMARK",
       "country": "Denmark",
-      "service": "addtoany.com",
+      "service": "arcgis.com",
       "domains": 0,
       "scanned_domains": 79,
       "percent": 0.0
@@ -2323,7 +2323,7 @@
     {
       "country_code": "DENMARK",
       "country": "Denmark",
-      "service": "arcgis.com",
+      "service": "addtoany.com",
       "domains": 0,
       "scanned_domains": 79,
       "percent": 0.0
@@ -2475,18 +2475,18 @@
     {
       "country_code": "NETHERLANDS",
       "country": "Netherlands",
-      "service": "addtoany.com",
-      "domains": 0,
-      "scanned_domains": 69,
-      "percent": 0.0
-    },
-    {
-      "country_code": "NETHERLANDS",
-      "country": "Netherlands",
       "service": "arcgis.com",
       "domains": 3,
       "scanned_domains": 69,
       "percent": 4.3
+    },
+    {
+      "country_code": "NETHERLANDS",
+      "country": "Netherlands",
+      "service": "addtoany.com",
+      "domains": 0,
+      "scanned_domains": 69,
+      "percent": 0.0
     },
     {
       "country_code": "NETHERLANDS",
@@ -2635,18 +2635,18 @@
     {
       "country_code": "BULGARIA",
       "country": "Bulgaria",
-      "service": "addtoany.com",
-      "domains": 1,
-      "scanned_domains": 55,
-      "percent": 1.8
-    },
-    {
-      "country_code": "BULGARIA",
-      "country": "Bulgaria",
       "service": "arcgis.com",
       "domains": 0,
       "scanned_domains": 55,
       "percent": 0.0
+    },
+    {
+      "country_code": "BULGARIA",
+      "country": "Bulgaria",
+      "service": "addtoany.com",
+      "domains": 1,
+      "scanned_domains": 55,
+      "percent": 1.8
     },
     {
       "country_code": "BULGARIA",
@@ -2795,18 +2795,18 @@
     {
       "country_code": "BELGIUM",
       "country": "Belgium",
-      "service": "addtoany.com",
-      "domains": 4,
-      "scanned_domains": 43,
-      "percent": 9.3
-    },
-    {
-      "country_code": "BELGIUM",
-      "country": "Belgium",
       "service": "arcgis.com",
       "domains": 1,
       "scanned_domains": 43,
       "percent": 2.3
+    },
+    {
+      "country_code": "BELGIUM",
+      "country": "Belgium",
+      "service": "addtoany.com",
+      "domains": 4,
+      "scanned_domains": 43,
+      "percent": 9.3
     },
     {
       "country_code": "BELGIUM",
@@ -2955,18 +2955,18 @@
     {
       "country_code": "FINLAND",
       "country": "Finland",
-      "service": "addtoany.com",
-      "domains": 2,
-      "scanned_domains": 41,
-      "percent": 4.9
-    },
-    {
-      "country_code": "FINLAND",
-      "country": "Finland",
       "service": "arcgis.com",
       "domains": 0,
       "scanned_domains": 41,
       "percent": 0.0
+    },
+    {
+      "country_code": "FINLAND",
+      "country": "Finland",
+      "service": "addtoany.com",
+      "domains": 2,
+      "scanned_domains": 41,
+      "percent": 4.9
     },
     {
       "country_code": "FINLAND",
@@ -3115,7 +3115,7 @@
     {
       "country_code": "LUXEMBOURG",
       "country": "Luxembourg",
-      "service": "addtoany.com",
+      "service": "arcgis.com",
       "domains": 1,
       "scanned_domains": 40,
       "percent": 2.5
@@ -3123,10 +3123,10 @@
     {
       "country_code": "LUXEMBOURG",
       "country": "Luxembourg",
-      "service": "arcgis.com",
-      "domains": 0,
+      "service": "addtoany.com",
+      "domains": 1,
       "scanned_domains": 40,
-      "percent": 0.0
+      "percent": 2.5
     },
     {
       "country_code": "LUXEMBOURG",
@@ -3275,7 +3275,7 @@
     {
       "country_code": "AUSTRIA",
       "country": "Austria",
-      "service": "addtoany.com",
+      "service": "arcgis.com",
       "domains": 0,
       "scanned_domains": 34,
       "percent": 0.0
@@ -3283,7 +3283,7 @@
     {
       "country_code": "AUSTRIA",
       "country": "Austria",
-      "service": "arcgis.com",
+      "service": "addtoany.com",
       "domains": 0,
       "scanned_domains": 34,
       "percent": 0.0
@@ -3435,18 +3435,18 @@
     {
       "country_code": "NORWAY",
       "country": "Norway",
-      "service": "addtoany.com",
-      "domains": 0,
-      "scanned_domains": 34,
-      "percent": 0.0
-    },
-    {
-      "country_code": "NORWAY",
-      "country": "Norway",
       "service": "arcgis.com",
       "domains": 2,
       "scanned_domains": 34,
       "percent": 5.9
+    },
+    {
+      "country_code": "NORWAY",
+      "country": "Norway",
+      "service": "addtoany.com",
+      "domains": 0,
+      "scanned_domains": 34,
+      "percent": 0.0
     },
     {
       "country_code": "NORWAY",
@@ -3595,18 +3595,18 @@
     {
       "country_code": "CZECHIA",
       "country": "Czechia",
-      "service": "addtoany.com",
-      "domains": 0,
-      "scanned_domains": 32,
-      "percent": 0.0
-    },
-    {
-      "country_code": "CZECHIA",
-      "country": "Czechia",
       "service": "arcgis.com",
       "domains": 3,
       "scanned_domains": 32,
       "percent": 9.4
+    },
+    {
+      "country_code": "CZECHIA",
+      "country": "Czechia",
+      "service": "addtoany.com",
+      "domains": 0,
+      "scanned_domains": 32,
+      "percent": 0.0
     },
     {
       "country_code": "CZECHIA",
@@ -3755,18 +3755,18 @@
     {
       "country_code": "CROATIA",
       "country": "Croatia",
-      "service": "addtoany.com",
-      "domains": 2,
-      "scanned_domains": 31,
-      "percent": 6.5
-    },
-    {
-      "country_code": "CROATIA",
-      "country": "Croatia",
       "service": "arcgis.com",
       "domains": 1,
       "scanned_domains": 31,
       "percent": 3.2
+    },
+    {
+      "country_code": "CROATIA",
+      "country": "Croatia",
+      "service": "addtoany.com",
+      "domains": 2,
+      "scanned_domains": 31,
+      "percent": 6.5
     },
     {
       "country_code": "CROATIA",
@@ -3915,18 +3915,18 @@
     {
       "country_code": "ESTONIA",
       "country": "Estonia",
-      "service": "addtoany.com",
-      "domains": 3,
-      "scanned_domains": 31,
-      "percent": 9.7
-    },
-    {
-      "country_code": "ESTONIA",
-      "country": "Estonia",
       "service": "arcgis.com",
       "domains": 0,
       "scanned_domains": 31,
       "percent": 0.0
+    },
+    {
+      "country_code": "ESTONIA",
+      "country": "Estonia",
+      "service": "addtoany.com",
+      "domains": 3,
+      "scanned_domains": 31,
+      "percent": 9.7
     },
     {
       "country_code": "ESTONIA",
@@ -4075,7 +4075,7 @@
     {
       "country_code": "HUNGARY",
       "country": "Hungary",
-      "service": "addtoany.com",
+      "service": "arcgis.com",
       "domains": 0,
       "scanned_domains": 27,
       "percent": 0.0
@@ -4083,7 +4083,7 @@
     {
       "country_code": "HUNGARY",
       "country": "Hungary",
-      "service": "arcgis.com",
+      "service": "addtoany.com",
       "domains": 0,
       "scanned_domains": 27,
       "percent": 0.0
@@ -4235,18 +4235,18 @@
     {
       "country_code": "SLOVAKIA",
       "country": "Slovakia",
-      "service": "addtoany.com",
-      "domains": 1,
-      "scanned_domains": 20,
-      "percent": 5.0
-    },
-    {
-      "country_code": "SLOVAKIA",
-      "country": "Slovakia",
       "service": "arcgis.com",
       "domains": 2,
       "scanned_domains": 20,
       "percent": 10.0
+    },
+    {
+      "country_code": "SLOVAKIA",
+      "country": "Slovakia",
+      "service": "addtoany.com",
+      "domains": 1,
+      "scanned_domains": 20,
+      "percent": 5.0
     },
     {
       "country_code": "SLOVAKIA",
@@ -4395,18 +4395,18 @@
     {
       "country_code": "ICELAND",
       "country": "Iceland",
-      "service": "addtoany.com",
-      "domains": 0,
-      "scanned_domains": 19,
-      "percent": 0.0
-    },
-    {
-      "country_code": "ICELAND",
-      "country": "Iceland",
       "service": "arcgis.com",
       "domains": 2,
       "scanned_domains": 19,
       "percent": 10.5
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "addtoany.com",
+      "domains": 0,
+      "scanned_domains": 19,
+      "percent": 0.0
     },
     {
       "country_code": "ICELAND",
@@ -4555,7 +4555,7 @@
     {
       "country_code": "ROMANIA",
       "country": "Romania",
-      "service": "addtoany.com",
+      "service": "arcgis.com",
       "domains": 0,
       "scanned_domains": 16,
       "percent": 0.0
@@ -4563,7 +4563,7 @@
     {
       "country_code": "ROMANIA",
       "country": "Romania",
-      "service": "arcgis.com",
+      "service": "addtoany.com",
       "domains": 0,
       "scanned_domains": 16,
       "percent": 0.0
@@ -4715,18 +4715,18 @@
     {
       "country_code": "SLOVENIA",
       "country": "Slovenia",
-      "service": "addtoany.com",
-      "domains": 0,
-      "scanned_domains": 16,
-      "percent": 0.0
-    },
-    {
-      "country_code": "SLOVENIA",
-      "country": "Slovenia",
       "service": "arcgis.com",
       "domains": 1,
       "scanned_domains": 16,
       "percent": 6.2
+    },
+    {
+      "country_code": "SLOVENIA",
+      "country": "Slovenia",
+      "service": "addtoany.com",
+      "domains": 0,
+      "scanned_domains": 16,
+      "percent": 0.0
     },
     {
       "country_code": "SLOVENIA",
@@ -4875,18 +4875,18 @@
     {
       "country_code": "LITHUANIA",
       "country": "Lithuania",
-      "service": "addtoany.com",
-      "domains": 0,
-      "scanned_domains": 15,
-      "percent": 0.0
-    },
-    {
-      "country_code": "LITHUANIA",
-      "country": "Lithuania",
       "service": "arcgis.com",
       "domains": 2,
       "scanned_domains": 15,
       "percent": 13.3
+    },
+    {
+      "country_code": "LITHUANIA",
+      "country": "Lithuania",
+      "service": "addtoany.com",
+      "domains": 0,
+      "scanned_domains": 15,
+      "percent": 0.0
     },
     {
       "country_code": "LITHUANIA",
@@ -5035,7 +5035,7 @@
     {
       "country_code": "SWITZERLAND",
       "country": "Switzerland",
-      "service": "addtoany.com",
+      "service": "arcgis.com",
       "domains": 0,
       "scanned_domains": 9,
       "percent": 0.0
@@ -5043,7 +5043,7 @@
     {
       "country_code": "SWITZERLAND",
       "country": "Switzerland",
-      "service": "arcgis.com",
+      "service": "addtoany.com",
       "domains": 0,
       "scanned_domains": 9,
       "percent": 0.0
@@ -5195,18 +5195,18 @@
     {
       "country_code": "REPUBLIC_OF_CYPRUS",
       "country": "Cyprus",
-      "service": "addtoany.com",
-      "domains": 1,
-      "scanned_domains": 5,
-      "percent": 20.0
-    },
-    {
-      "country_code": "REPUBLIC_OF_CYPRUS",
-      "country": "Cyprus",
       "service": "arcgis.com",
       "domains": 0,
       "scanned_domains": 5,
       "percent": 0.0
+    },
+    {
+      "country_code": "REPUBLIC_OF_CYPRUS",
+      "country": "Cyprus",
+      "service": "addtoany.com",
+      "domains": 1,
+      "scanned_domains": 5,
+      "percent": 20.0
     },
     {
       "country_code": "REPUBLIC_OF_CYPRUS",
@@ -5355,7 +5355,7 @@
     {
       "country_code": "MALTA",
       "country": "Malta",
-      "service": "addtoany.com",
+      "service": "arcgis.com",
       "domains": 1,
       "scanned_domains": 3,
       "percent": 33.3
@@ -5363,7 +5363,7 @@
     {
       "country_code": "MALTA",
       "country": "Malta",
-      "service": "arcgis.com",
+      "service": "addtoany.com",
       "domains": 1,
       "scanned_domains": 3,
       "percent": 33.3

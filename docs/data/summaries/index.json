@@ -1,32 +1,62 @@
 {
-  "ICELAND": {
-    "total_relationships": 549,
-    "total_source_domains": 20,
-    "file": "iceland.json"
-  },
-  "LATVIA": {
-    "total_relationships": 3338,
-    "total_source_domains": 143,
-    "file": "latvia.json"
-  },
-  "SWITZERLAND": {
-    "total_relationships": 6719,
-    "total_source_domains": 9,
-    "file": "switzerland.json"
-  },
-  "LITHUANIA": {
-    "total_relationships": 538,
-    "total_source_domains": 15,
-    "file": "lithuania.json"
+  "NORWAY": {
+    "total_relationships": 872,
+    "total_source_domains": 34,
+    "file": "norway.json"
   },
   "NETHERLANDS": {
     "total_relationships": 2889,
     "total_source_domains": 73,
     "file": "netherlands.json"
   },
-  "PORTUGAL": {
-    "total_relationships": 13123,
-    "total_source_domains": 389,
-    "file": "portugal.json"
+  "SWITZERLAND": {
+    "total_relationships": 6719,
+    "total_source_domains": 9,
+    "file": "switzerland.json"
+  },
+  "REPUBLIC_OF_CYPRUS": {
+    "total_relationships": 291819,
+    "total_source_domains": 8375,
+    "file": "republic_of_cyprus.json"
+  },
+  "MALTA": {
+    "total_relationships": 1759,
+    "total_source_domains": 3,
+    "file": "malta.json"
+  },
+  "UNITED_KINGDOM_UK": {
+    "total_relationships": 291819,
+    "total_source_domains": 8375,
+    "file": "united_kingdom_uk.json"
+  },
+  "FINLAND": {
+    "total_relationships": 959,
+    "total_source_domains": 41,
+    "file": "finland.json"
+  },
+  "LUXEMBOURG": {
+    "total_relationships": 1815,
+    "total_source_domains": 41,
+    "file": "luxembourg.json"
+  },
+  "SPAIN": {
+    "total_relationships": 16094,
+    "total_source_domains": 233,
+    "file": "spain.json"
+  },
+  "SLOVAKIA": {
+    "total_relationships": 1667,
+    "total_source_domains": 21,
+    "file": "slovakia.json"
+  },
+  "SWEDEN": {
+    "total_relationships": 4900,
+    "total_source_domains": 186,
+    "file": "sweden.json"
+  },
+  "POLAND": {
+    "total_relationships": 57221,
+    "total_source_domains": 2324,
+    "file": "poland.json"
   }
 }

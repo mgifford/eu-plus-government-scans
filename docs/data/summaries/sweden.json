@@ -1,6 +1,6 @@
 {
   "country_code": "SWEDEN",
-  "total_relationships": 4894,
+  "total_relationships": 4900,
   "total_source_domains": 186,
   "top_source_domains": [
     {
@@ -36,16 +36,16 @@
       "count": 235
     },
     {
+      "domain": "vaxjo.se",
+      "count": 235
+    },
+    {
       "domain": "gotland.se",
       "count": 225
     },
     {
       "domain": "socialstyrelsen.se",
       "count": 220
-    },
-    {
-      "domain": "vaxjo.se",
-      "count": 195
     },
     {
       "domain": "trafikverket.se",
@@ -211,23 +211,23 @@
     },
     {
       "domain": "facebook.com",
-      "count": 401
+      "count": 403
     },
     {
       "domain": "linkedin.com",
-      "count": 344
+      "count": 346
     },
     {
       "domain": "regionstockholm.se",
       "count": 336
     },
     {
-      "domain": "helsingborg.se",
+      "domain": "instagram.com",
       "count": 320
     },
     {
-      "domain": "instagram.com",
-      "count": 318
+      "domain": "helsingborg.se",
+      "count": 320
     },
     {
       "domain": "1177.se",
@@ -252,6 +252,10 @@
     {
       "domain": "youtube.com",
       "count": 167
+    },
+    {
+      "domain": "vaxjo.se",
+      "count": 160
     },
     {
       "domain": "stockholm.se",
@@ -280,10 +284,6 @@
     {
       "domain": "gotland.se",
       "count": 132
-    },
-    {
-      "domain": "vaxjo.se",
-      "count": 128
     },
     {
       "domain": "axiell.com",
@@ -362,6 +362,10 @@
       "count": 59
     },
     {
+      "domain": "rekai.se",
+      "count": 58
+    },
+    {
       "domain": "huddinge.se",
       "count": 58
     },
@@ -386,10 +390,6 @@
       "count": 56
     },
     {
-      "domain": "rekai.se",
-      "count": 56
-    },
-    {
       "domain": "lulea.se",
       "count": 56
     },
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 2150,
-    "script_dependency": 908,
-    "stylesheet_dependency": 713,
-    "font_or_preload_dependency": 207,
-    "form_destination": 379,
-    "image_or_media_dependency": 537
+    "editorial_link": 2151,
+    "script_dependency": 909,
+    "stylesheet_dependency": 714,
+    "font_or_preload_dependency": 208,
+    "form_destination": 380,
+    "image_or_media_dependency": 538
   },
-  "generated_at": "2026-08-17T01:34:16.378320+00:00"
+  "generated_at": "2026-08-18T19:26:04.754641+00:00"
 }

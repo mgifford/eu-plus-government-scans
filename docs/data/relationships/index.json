@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-18T13:32:21.841676+00:00",
+  "generated_at": "2026-08-18T19:26:00.533038+00:00",
   "shard_max_bytes": 33554432,
-  "total_rows": 291775,
-  "total_bytes": 131940235,
+  "total_rows": 291819,
+  "total_bytes": 133087792,
   "shards": [
     {
       "file": "at.001.jsonl",
@@ -43,8 +43,8 @@
     {
       "file": "cat.001.jsonl",
       "group": "cat",
-      "rows": 1908,
-      "bytes": 802714
+      "rows": 1909,
+      "bytes": 919768
     },
     {
       "file": "ch.001.jsonl",
@@ -67,8 +67,8 @@
     {
       "file": "com.001.jsonl",
       "group": "com",
-      "rows": 276,
-      "bytes": 119285
+      "rows": 277,
+      "bytes": 121891
     },
     {
       "file": "cy.001.jsonl",
@@ -110,7 +110,7 @@
       "file": "es.001.jsonl",
       "group": "es",
       "rows": 16094,
-      "bytes": 6922224
+      "bytes": 6992403
     },
     {
       "file": "eu.001.jsonl",
@@ -127,8 +127,8 @@
     {
       "file": "fi.001.jsonl",
       "group": "fi",
-      "rows": 958,
-      "bytes": 393005
+      "rows": 959,
+      "bytes": 483737
     },
     {
       "file": "fr.001.jsonl",
@@ -199,8 +199,8 @@
     {
       "file": "lu.001.jsonl",
       "group": "lu",
-      "rows": 1800,
-      "bytes": 744029
+      "rows": 1815,
+      "bytes": 1084034
     },
     {
       "file": "lv.001.jsonl",
@@ -223,8 +223,8 @@
     {
       "file": "mt.001.jsonl",
       "group": "mt",
-      "rows": 1758,
-      "bytes": 719827
+      "rows": 1759,
+      "bytes": 805461
     },
     {
       "file": "nc.001.jsonl",
@@ -247,8 +247,8 @@
     {
       "file": "no.001.jsonl",
       "group": "no",
-      "rows": 868,
-      "bytes": 361979
+      "rows": 872,
+      "bytes": 458383
     },
     {
       "file": "nrw.001.jsonl",
@@ -265,8 +265,8 @@
     {
       "file": "pl.001.jsonl",
       "group": "pl",
-      "rows": 57206,
-      "bytes": 24165269
+      "rows": 57221,
+      "bytes": 24505751
     },
     {
       "file": "pt.001.jsonl",
@@ -295,8 +295,8 @@
     {
       "file": "se.001.jsonl",
       "group": "se",
-      "rows": 4894,
-      "bytes": 2064476
+      "rows": 4900,
+      "bytes": 2068937
     },
     {
       "file": "si.001.jsonl",

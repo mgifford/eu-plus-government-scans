@@ -1,382 +1,382 @@
 {
   "country_code": "FINLAND",
-  "total_relationships": 958,
+  "total_relationships": 959,
   "total_source_domains": 41,
   "top_source_domains": [
     {
       "domain": "syke.fi",
-      "count": 171
+      "count": 342
     },
     {
       "domain": "traficom.fi",
-      "count": 129
+      "count": 258
     },
     {
       "domain": "kela.fi",
-      "count": 110
-    },
-    {
-      "domain": "suomi.fi",
-      "count": 95
+      "count": 220
     },
     {
       "domain": "stat.fi",
-      "count": 92
+      "count": 185
     },
     {
       "domain": "tulli.fi",
-      "count": 84
+      "count": 168
+    },
+    {
+      "domain": "suomi.fi",
+      "count": 158
     },
     {
       "domain": "tem.fi",
-      "count": 74
+      "count": 148
     },
     {
       "domain": "thl.fi",
-      "count": 69
+      "count": 138
     },
     {
       "domain": "businessfinland.fi",
-      "count": 63
+      "count": 126
     },
     {
       "domain": "oph.fi",
-      "count": 63
+      "count": 126
     },
     {
       "domain": "vero.fi",
-      "count": 59
+      "count": 118
     },
     {
       "domain": "fimea.fi",
-      "count": 58
+      "count": 116
     },
     {
       "domain": "oikeusministerio.fi",
-      "count": 58
+      "count": 116
     },
     {
       "domain": "migri.fi",
-      "count": 51
+      "count": 102
     },
     {
       "domain": "intermin.fi",
-      "count": 50
+      "count": 100
     },
     {
       "domain": "metsakeskus.fi",
-      "count": 48
-    },
-    {
-      "domain": "oikeus.fi",
-      "count": 47
+      "count": 96
     },
     {
       "domain": "valtioneuvosto.fi",
-      "count": 47
+      "count": 94
+    },
+    {
+      "domain": "oikeus.fi",
+      "count": 93
     },
     {
       "domain": "ym.fi",
-      "count": 46
+      "count": 92
     },
     {
       "domain": "mmm.fi",
-      "count": 44
+      "count": 88
     },
     {
       "domain": "eduskunta.fi",
-      "count": 42
+      "count": 84
     },
     {
       "domain": "lvv.fi",
-      "count": 42
+      "count": 84
     },
     {
       "domain": "okm.fi",
-      "count": 38
+      "count": 76
     },
     {
       "domain": "presidentti.fi",
-      "count": 38
+      "count": 76
     },
     {
       "domain": "defmin.fi",
-      "count": 31
+      "count": 62
     },
     {
       "domain": "stm.fi",
-      "count": 31
+      "count": 62
     },
     {
       "domain": "puolustusvoimat.fi",
-      "count": 29
+      "count": 58
+    },
+    {
+      "domain": "suomenpankki.fi",
+      "count": 54
+    },
+    {
+      "domain": "lvm.fi",
+      "count": 50
+    },
+    {
+      "domain": "vayla.fi",
+      "count": 40
+    },
+    {
+      "domain": "avi.fi",
+      "count": 34
+    },
+    {
+      "domain": "stuk.fi",
+      "count": 30
     },
     {
       "domain": "um.fi",
       "count": 29
     },
     {
-      "domain": "suomenpankki.fi",
-      "count": 27
-    },
-    {
-      "domain": "lvm.fi",
-      "count": 25
-    },
-    {
-      "domain": "vayla.fi",
-      "count": 20
-    },
-    {
-      "domain": "avi.fi",
-      "count": 17
-    },
-    {
-      "domain": "stuk.fi",
-      "count": 15
-    },
-    {
       "domain": "kho.fi",
-      "count": 12
+      "count": 24
     },
     {
       "domain": "oikeusrekisterikeskus.fi",
-      "count": 11
+      "count": 22
     },
     {
       "domain": "turvallisuustutkinta.fi",
-      "count": 11
+      "count": 22
     },
     {
       "domain": "korkeinoikeus.fi",
-      "count": 10
+      "count": 20
     },
     {
       "domain": "poliisi.fi",
-      "count": 9
+      "count": 18
     },
     {
       "domain": "supo.fi",
-      "count": 9
+      "count": 18
     },
     {
       "domain": "kuvi.fi",
-      "count": 7
+      "count": 14
     },
     {
       "domain": "tietosuoja.fi",
-      "count": 7
+      "count": 14
     }
   ],
   "top_target_domains": [
     {
       "domain": "traficom.fi",
-      "count": 105
+      "count": 210
     },
     {
       "domain": "syke.fi",
-      "count": 85
-    },
-    {
-      "domain": "suomi.fi",
-      "count": 75
+      "count": 170
     },
     {
       "domain": "linkedin.com",
-      "count": 74
+      "count": 147
+    },
+    {
+      "domain": "suomi.fi",
+      "count": 136
     },
     {
       "domain": "facebook.com",
-      "count": 62
+      "count": 120
     },
     {
       "domain": "instagram.com",
-      "count": 61
-    },
-    {
-      "domain": "kela.fi",
-      "count": 58
+      "count": 118
     },
     {
       "domain": "stat.fi",
-      "count": 58
+      "count": 117
+    },
+    {
+      "domain": "kela.fi",
+      "count": 116
     },
     {
       "domain": "valtioneuvosto.fi",
-      "count": 56
-    },
-    {
-      "domain": "youtube.com",
-      "count": 51
+      "count": 111
     },
     {
       "domain": "tulli.fi",
-      "count": 51
+      "count": 102
+    },
+    {
+      "domain": "youtube.com",
+      "count": 101
     },
     {
       "domain": "fimea.fi",
-      "count": 48
+      "count": 96
     },
     {
       "domain": "vero.fi",
-      "count": 40
+      "count": 80
     },
     {
       "domain": "defmin.fi",
-      "count": 33
+      "count": 65
     },
     {
       "domain": "tem.fi",
-      "count": 33
+      "count": 65
     },
     {
       "domain": "thl.fi",
-      "count": 32
-    },
-    {
-      "domain": "twitter.com",
-      "count": 31
-    },
-    {
-      "domain": "ym.fi",
-      "count": 31
+      "count": 64
     },
     {
       "domain": "oph.fi",
-      "count": 31
+      "count": 62
+    },
+    {
+      "domain": "twitter.com",
+      "count": 61
+    },
+    {
+      "domain": "ym.fi",
+      "count": 61
     },
     {
       "domain": "mmm.fi",
-      "count": 27
+      "count": 53
     },
     {
       "domain": "businessfinland.fi",
-      "count": 26
+      "count": 52
     },
     {
       "domain": "oikeus.fi",
-      "count": 26
-    },
-    {
-      "domain": "intermin.fi",
-      "count": 25
-    },
-    {
-      "domain": "oikeusministerio.fi",
-      "count": 25
-    },
-    {
-      "domain": "okm.fi",
-      "count": 25
+      "count": 52
     },
     {
       "domain": "migri.fi",
-      "count": 25
+      "count": 50
+    },
+    {
+      "domain": "intermin.fi",
+      "count": 49
+    },
+    {
+      "domain": "oikeusministerio.fi",
+      "count": 49
+    },
+    {
+      "domain": "okm.fi",
+      "count": 49
     },
     {
       "domain": "lvm.fi",
-      "count": 23
+      "count": 45
     },
     {
       "domain": "stm.fi",
-      "count": 22
-    },
-    {
-      "domain": "um.fi",
-      "count": 21
+      "count": 43
     },
     {
       "domain": "eduskunta.fi",
-      "count": 20
+      "count": 40
     },
     {
       "domain": "lvv.fi",
-      "count": 20
+      "count": 40
+    },
+    {
+      "domain": "um.fi",
+      "count": 37
     },
     {
       "domain": "bunny.net",
-      "count": 18
+      "count": 36
     },
     {
       "domain": "vm.fi",
-      "count": 17
+      "count": 33
     },
     {
       "domain": "vnk.fi",
-      "count": 17
+      "count": 33
     },
     {
       "domain": "metsakeskus.fi",
-      "count": 15
+      "count": 30
     },
     {
       "domain": "presidentti.fi",
-      "count": 14
+      "count": 28
     },
     {
       "domain": "cludo.com",
-      "count": 12
+      "count": 24
     },
     {
       "domain": "google.com",
-      "count": 11
-    },
-    {
-      "domain": "webropolsurveys.com",
-      "count": 11
+      "count": 21
     },
     {
       "domain": "azureedge.net",
-      "count": 10
+      "count": 20
     },
     {
       "domain": "dynamics.com",
-      "count": 10
+      "count": 20
     },
     {
       "domain": "saavutettavuusvaatimukset.fi",
-      "count": 10
-    },
-    {
-      "domain": "x.com",
-      "count": 10
+      "count": 20
     },
     {
       "domain": "poliisi.fi",
-      "count": 10
+      "count": 20
     },
     {
       "domain": "stuk.fi",
-      "count": 10
+      "count": 20
     },
     {
       "domain": "ymparisto.fi",
-      "count": 10
+      "count": 20
+    },
+    {
+      "domain": "webropolsurveys.com",
+      "count": 19
     },
     {
       "domain": "cloudflare.com",
-      "count": 9
+      "count": 18
     },
     {
       "domain": "googleapis.com",
-      "count": 9
+      "count": 18
     },
     {
       "domain": "tietosuoja.fi",
-      "count": 9
+      "count": 18
     },
     {
       "domain": "cookiebot.com",
-      "count": 9
+      "count": 18
+    },
+    {
+      "domain": "luonnontila.fi",
+      "count": 18
     }
   ],
   "relationship_types": {
-    "editorial_link": 603,
+    "editorial_link": 604,
     "image_or_media_dependency": 75,
     "script_dependency": 112,
     "stylesheet_dependency": 93,
     "font_or_preload_dependency": 22,
     "form_destination": 53
   },
-  "generated_at": "2026-08-17T13:30:40.213831+00:00"
+  "generated_at": "2026-08-18T19:26:04.421060+00:00"
 }
