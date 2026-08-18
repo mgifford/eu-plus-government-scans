@@ -1,115 +1,115 @@
 {
   "country_code": "HUNGARY",
-  "total_relationships": 1386,
+  "total_relationships": 1390,
   "total_source_domains": 28,
   "top_source_domains": [
     {
       "domain": "budapest.hu",
-      "count": 315
-    },
-    {
-      "domain": "miskolc.hu",
-      "count": 312
+      "count": 629
     },
     {
       "domain": "mnb.hu",
-      "count": 304
+      "count": 609
     },
     {
-      "domain": "sopron.hu",
-      "count": 270
+      "domain": "miskolc.hu",
+      "count": 564
     },
     {
       "domain": "debrecen.hu",
-      "count": 269
-    },
-    {
-      "domain": "gyor.hu",
-      "count": 268
+      "count": 544
     },
     {
       "domain": "szekesfehervar.hu",
-      "count": 267
+      "count": 535
     },
     {
       "domain": "nyiregyhaza.hu",
-      "count": 231
+      "count": 462
+    },
+    {
+      "domain": "sopron.hu",
+      "count": 450
     },
     {
       "domain": "szeged.hu",
-      "count": 207
+      "count": 414
+    },
+    {
+      "domain": "gyor.hu",
+      "count": 394
     },
     {
       "domain": "kozbeszerzes.hu",
-      "count": 165
+      "count": 332
     },
     {
       "domain": "szombathely.hu",
-      "count": 164
+      "count": 328
     },
     {
       "domain": "police.hu",
-      "count": 159
+      "count": 318
     },
     {
       "domain": "kaposvar.hu",
-      "count": 130
+      "count": 260
     },
     {
       "domain": "pecs.hu",
-      "count": 106
-    },
-    {
-      "domain": "eger.hu",
-      "count": 105
+      "count": 212
     },
     {
       "domain": "tatabanya.hu",
-      "count": 104
+      "count": 208
     },
     {
       "domain": "kormany.hu",
-      "count": 98
+      "count": 196
+    },
+    {
+      "domain": "eger.hu",
+      "count": 134
     },
     {
       "domain": "alkotmanybirosag.hu",
-      "count": 54
+      "count": 108
     },
     {
       "domain": "birosag.hu",
-      "count": 52
+      "count": 104
     },
     {
       "domain": "ksh.hu",
-      "count": 52
+      "count": 102
     },
     {
       "domain": "kecskemet.hu",
-      "count": 47
+      "count": 94
     },
     {
       "domain": "bekescsaba.hu",
-      "count": 46
+      "count": 92
     },
     {
       "domain": "naih.hu",
-      "count": 23
+      "count": 44
+    },
+    {
+      "domain": "valasztas.hu",
+      "count": 32
+    },
+    {
+      "domain": "parlament.hu",
+      "count": 24
     },
     {
       "domain": "hunyadisopron.hu",
       "count": 22
     },
     {
-      "domain": "valasztas.hu",
-      "count": 16
-    },
-    {
-      "domain": "parlament.hu",
-      "count": 12
-    },
-    {
       "domain": "magyarorszag.hu",
-      "count": 9
+      "count": 18
     },
     {
       "domain": "kuria-birosag.hu",
@@ -119,212 +119,212 @@
   "top_target_domains": [
     {
       "domain": "mnb.hu",
-      "count": 189
+      "count": 379
     },
     {
       "domain": "budapest.hu",
-      "count": 165
+      "count": 330
     },
     {
       "domain": "facebook.com",
-      "count": 158
-    },
-    {
-      "domain": "googleapis.com",
-      "count": 129
+      "count": 296
     },
     {
       "domain": "debrecen.hu",
-      "count": 127
+      "count": 260
+    },
+    {
+      "domain": "googleapis.com",
+      "count": 255
     },
     {
       "domain": "kozbeszerzes.hu",
-      "count": 118
-    },
-    {
-      "domain": "sopron.hu",
-      "count": 115
+      "count": 238
     },
     {
       "domain": "szombathely.hu",
-      "count": 110
+      "count": 220
     },
     {
-      "domain": "gyor.hu",
-      "count": 108
+      "domain": "sopron.hu",
+      "count": 204
     },
     {
       "domain": "szeged.hu",
-      "count": 100
+      "count": 200
+    },
+    {
+      "domain": "gyor.hu",
+      "count": 182
     },
     {
       "domain": "nyiregyhaza.hu",
-      "count": 90
+      "count": 180
     },
     {
       "domain": "youtube.com",
-      "count": 84
-    },
-    {
-      "domain": "instagram.com",
-      "count": 76
+      "count": 158
     },
     {
       "domain": "kaposvar.hu",
-      "count": 73
+      "count": 146
     },
     {
-      "domain": "gov.hu",
-      "count": 71
+      "domain": "instagram.com",
+      "count": 143
     },
     {
       "domain": "szekesfehervar.hu",
-      "count": 70
+      "count": 143
     },
     {
-      "domain": "miskolc.hu",
-      "count": 64
+      "domain": "gov.hu",
+      "count": 139
     },
     {
       "domain": "googletagmanager.com",
-      "count": 61
+      "count": 122
     },
     {
       "domain": "kormany.hu",
-      "count": 59
+      "count": 114
     },
     {
       "domain": "uni-miskolc.hu",
-      "count": 57
+      "count": 111
     },
     {
-      "domain": "eger.hu",
-      "count": 51
+      "domain": "miskolc.hu",
+      "count": 110
     },
     {
       "domain": "police.hu",
-      "count": 49
-    },
-    {
-      "domain": "valasztas.hu",
-      "count": 47
+      "count": 98
     },
     {
       "domain": "birosag.hu",
-      "count": 47
+      "count": 94
     },
     {
-      "domain": "google.com",
-      "count": 43
+      "domain": "valasztas.hu",
+      "count": 91
     },
     {
       "domain": "cloudflare.com",
-      "count": 43
+      "count": 86
     },
     {
       "domain": "alkotmanybirosag.hu",
-      "count": 42
+      "count": 84
+    },
+    {
+      "domain": "google.com",
+      "count": 76
     },
     {
       "domain": "ksh.hu",
-      "count": 38
+      "count": 75
     },
     {
       "domain": "jsdelivr.net",
-      "count": 35
+      "count": 70
     },
     {
       "domain": "pecs.hu",
-      "count": 34
+      "count": 68
+    },
+    {
+      "domain": "eger.hu",
+      "count": 67
     },
     {
       "domain": "magyarorszag.hu",
-      "count": 32
+      "count": 64
     },
     {
       "domain": "tatabanya.hu",
-      "count": 31
+      "count": 62
     },
     {
       "domain": "twitter.com",
-      "count": 28
+      "count": 51
+    },
+    {
+      "domain": "gstatic.com",
+      "count": 44
+    },
+    {
+      "domain": "linkedin.com",
+      "count": 42
+    },
+    {
+      "domain": "kozadat.hu",
+      "count": 38
+    },
+    {
+      "domain": "kecskemet.hu",
+      "count": 34
+    },
+    {
+      "domain": "nmhh.hu",
+      "count": 31
+    },
+    {
+      "domain": "njt.hu",
+      "count": 30
+    },
+    {
+      "domain": "tiktok.com",
+      "count": 29
     },
     {
       "domain": "edir.hu",
       "count": 27
     },
     {
-      "domain": "gstatic.com",
-      "count": 22
-    },
-    {
-      "domain": "linkedin.com",
-      "count": 21
-    },
-    {
-      "domain": "kozadat.hu",
-      "count": 19
-    },
-    {
-      "domain": "tiktok.com",
-      "count": 18
-    },
-    {
-      "domain": "kecskemet.hu",
-      "count": 17
-    },
-    {
-      "domain": "nmhh.hu",
-      "count": 17
-    },
-    {
-      "domain": "njt.hu",
-      "count": 15
-    },
-    {
-      "domain": "e-kreta.hu",
-      "count": 14
-    },
-    {
       "domain": "jogtar.hu",
-      "count": 13
-    },
-    {
-      "domain": "gyor.eu",
-      "count": 13
-    },
-    {
-      "domain": "europa.eu",
-      "count": 13
+      "count": 26
     },
     {
       "domain": "parlament.hu",
-      "count": 13
+      "count": 26
     },
     {
-      "domain": "hunyadisopron.hu",
-      "count": 12
+      "domain": "europa.eu",
+      "count": 25
     },
     {
       "domain": "google.hu",
-      "count": 12
+      "count": 24
+    },
+    {
+      "domain": "gyor.eu",
+      "count": 23
     },
     {
       "domain": "embedly.com",
-      "count": 11
+      "count": 22
     },
     {
       "domain": "bekescsaba.hu",
-      "count": 10
+      "count": 20
+    },
+    {
+      "domain": "kormanyhivatalok.hu",
+      "count": 20
+    },
+    {
+      "domain": "freeprivacypolicy.com",
+      "count": 20
     }
   ],
   "relationship_types": {
-    "editorial_link": 822,
+    "editorial_link": 826,
     "font_or_preload_dependency": 44,
     "form_destination": 68,
     "image_or_media_dependency": 131,
     "script_dependency": 170,
     "stylesheet_dependency": 151
   },
-  "generated_at": "2026-08-17T19:28:08.241698+00:00"
+  "generated_at": "2026-08-18T01:58:41.125867+00:00"
 }
