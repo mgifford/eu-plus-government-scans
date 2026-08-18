@@ -5,14 +5,14 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-08-18 20:41 UTC — last scan: 2026-08-18_
+_Stats as of 2026-08-18 21:41 UTC — last scan: 2026-08-18_
 
-**72** scan batches run
+**73** scan batches run
 
-**50,887** of **87,696** available pages scanned (**58.0%** coverage)
-**45,976** of **50,887** scanned pages were reachable (**90.3%**)
-**20,827** of **45,976** reachable pages have an accessibility statement (**45.3%**)
-**18,372** pages have the statement link in the footer (**88.2%** of pages with a statement)
+**51,722** of **87,696** available pages scanned (**59.0%** coverage)
+**46,698** of **51,722** scanned pages were reachable (**90.3%**)
+**21,170** of **46,698** reachable pages have an accessibility statement (**45.3%**)
+**18,653** pages have the statement link in the footer (**88.1%** of pages with a statement)
 
 📥 Machine-readable results are available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
 
@@ -54,11 +54,11 @@ Each country entry in the JSON file includes page-level evidence for pages with 
 | Romania | 807 | 807 | 346 | 30 | 10 | 8.7% | Aug 2026 |
 | Slovakia | 442 | 442 | 362 | 147 | 134 | 40.6% | Aug 2026 |
 | Slovenia | 214 | 214 | 207 | 116 | 81 | 56.0% | Aug 2026 |
-| Spain | 2,078 | 6,091 | 1,694 | 690 | 590 | 40.7% | Aug 2026 |
+| Spain | 2,914 | 6,091 | 2,417 | 1,034 | 872 | 42.8% | Aug 2026 |
 | Sweden | 1,702 | 1,702 | 1,434 | 790 | 706 | 55.1% | Aug 2026 |
 | Switzerland | 2,123 | 2,123 | 2,038 | 1,023 | 1,022 | 50.2% | Aug 2026 |
 | United Kingdom | 4,510 | 19,511 | 4,257 | 2,399 | 2,247 | 56.4% | Aug 2026 |
-| **Total** | **50,892** | **87,696** | **45,981** | **20,832** | **18,377** | **45.3%** | — |
+| **Total** | **51,728** | **87,696** | **46,704** | **21,176** | **18,659** | **45.3%** | — |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
