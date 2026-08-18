@@ -1,382 +1,382 @@
 {
   "country_code": "LUXEMBOURG",
-  "total_relationships": 1800,
+  "total_relationships": 1815,
   "total_source_domains": 41,
   "top_source_domains": [
     {
       "domain": "gouvernement.lu",
-      "count": 2223
+      "count": 4447
     },
     {
       "domain": "public.lu",
-      "count": 1017
+      "count": 2036
     },
     {
       "domain": "uni.lu",
-      "count": 353
+      "count": 706
     },
     {
       "domain": "education.lu",
-      "count": 214
+      "count": 428
     },
     {
       "domain": "etat.lu",
-      "count": 120
+      "count": 239
     },
     {
       "domain": "inll.lu",
-      "count": 110
+      "count": 220
     },
     {
       "domain": "vdl.lu",
-      "count": 93
+      "count": 192
     },
     {
       "domain": "petange.lu",
-      "count": 91
+      "count": 186
     },
     {
       "domain": "philharmonie.lu",
-      "count": 88
+      "count": 176
     },
     {
       "domain": "post.lu",
-      "count": 88
+      "count": 174
     },
     {
       "domain": "remich.lu",
-      "count": 87
-    },
-    {
-      "domain": "differdange.lu",
-      "count": 78
+      "count": 174
     },
     {
       "domain": "strassen.lu",
-      "count": 78
+      "count": 156
     },
     {
       "domain": "esch.lu",
-      "count": 74
+      "count": 150
     },
     {
       "domain": "mersch.lu",
-      "count": 73
+      "count": 146
     },
     {
       "domain": "wiltz.lu",
-      "count": 63
+      "count": 126
     },
     {
       "domain": "sandweiler.lu",
-      "count": 57
+      "count": 114
     },
     {
       "domain": "dudelange.lu",
-      "count": 52
+      "count": 103
     },
     {
       "domain": "schifflange.lu",
-      "count": 51
+      "count": 99
     },
     {
       "domain": "cfl.lu",
-      "count": 44
+      "count": 88
     },
     {
       "domain": "chem.lu",
-      "count": 44
+      "count": 88
     },
     {
       "domain": "cita.lu",
-      "count": 41
+      "count": 82
+    },
+    {
+      "domain": "differdange.lu",
+      "count": 81
     },
     {
       "domain": "bettembourg.lu",
-      "count": 40
+      "count": 80
     },
     {
       "domain": "inondations.lu",
-      "count": 40
+      "count": 80
     },
     {
       "domain": "nationalmusee.lu",
-      "count": 35
+      "count": 70
     },
     {
       "domain": "ettelbruck.lu",
-      "count": 30
+      "count": 60
     },
     {
       "domain": "rgtr.lu",
-      "count": 30
+      "count": 60
     },
     {
       "domain": "secu.lu",
-      "count": 30
+      "count": 60
     },
     {
       "domain": "snci.lu",
-      "count": 28
+      "count": 56
+    },
+    {
+      "domain": "petitiounen.lu",
+      "count": 52
+    },
+    {
+      "domain": "adem.lu",
+      "count": 44
+    },
+    {
+      "domain": "meteolux.lu",
+      "count": 44
+    },
+    {
+      "domain": "chl.lu",
+      "count": 26
     },
     {
       "domain": "ilr.lu",
       "count": 26
     },
     {
-      "domain": "petitiounen.lu",
-      "count": 26
-    },
-    {
-      "domain": "adem.lu",
-      "count": 22
-    },
-    {
-      "domain": "meteolux.lu",
-      "count": 22
-    },
-    {
-      "domain": "chl.lu",
-      "count": 13
-    },
-    {
       "domain": "chd.lu",
-      "count": 10
+      "count": 20
     },
     {
       "domain": "monarchie.lu",
-      "count": 10
+      "count": 20
     },
     {
       "domain": "lod.lu",
+      "count": 12
+    },
+    {
+      "domain": "geoportail.lu",
       "count": 6
     },
     {
       "domain": "services-publics.lu",
-      "count": 4
-    },
-    {
-      "domain": "geoportail.lu",
-      "count": 3
+      "count": 6
     },
     {
       "domain": "statec.lu",
-      "count": 3
+      "count": 6
     },
     {
       "domain": "itm.lu",
-      "count": 1
+      "count": 2
     }
   ],
   "top_target_domains": [
     {
       "domain": "public.lu",
-      "count": 1328
+      "count": 2658
     },
     {
       "domain": "gouvernement.lu",
-      "count": 973
+      "count": 1948
     },
     {
       "domain": "facebook.com",
-      "count": 229
+      "count": 454
     },
     {
       "domain": "uni.lu",
-      "count": 214
+      "count": 428
     },
     {
       "domain": "linkedin.com",
-      "count": 209
+      "count": 414
     },
     {
       "domain": "twitter.com",
-      "count": 168
+      "count": 335
     },
     {
       "domain": "bsky.app",
-      "count": 138
+      "count": 276
     },
     {
       "domain": "instagram.com",
-      "count": 114
+      "count": 222
     },
     {
       "domain": "etat.lu",
-      "count": 98
+      "count": 196
     },
     {
       "domain": "youtube.com",
-      "count": 73
+      "count": 143
     },
     {
       "domain": "googleapis.com",
-      "count": 67
+      "count": 131
     },
     {
       "domain": "europa.eu",
-      "count": 64
+      "count": 127
     },
     {
       "domain": "esch.lu",
-      "count": 57
+      "count": 114
     },
     {
       "domain": "inll.lu",
-      "count": 56
+      "count": 112
     },
     {
       "domain": "jsdelivr.net",
-      "count": 47
-    },
-    {
-      "domain": "remich.lu",
-      "count": 41
-    },
-    {
-      "domain": "post.lu",
-      "count": 40
+      "count": 90
     },
     {
       "domain": "vdl.lu",
-      "count": 39
+      "count": 83
+    },
+    {
+      "domain": "remich.lu",
+      "count": 82
+    },
+    {
+      "domain": "post.lu",
+      "count": 80
     },
     {
       "domain": "philharmonie.lu",
-      "count": 35
-    },
-    {
-      "domain": "google.com",
-      "count": 29
+      "count": 70
     },
     {
       "domain": "cita.lu",
-      "count": 29
+      "count": 58
     },
     {
       "domain": "education.lu",
-      "count": 29
+      "count": 58
     },
     {
       "domain": "gstatic.com",
-      "count": 28
+      "count": 56
+    },
+    {
+      "domain": "google.com",
+      "count": 53
     },
     {
       "domain": "chem.lu",
-      "count": 25
+      "count": 50
     },
     {
       "domain": "adobedtm.com",
-      "count": 23
-    },
-    {
-      "domain": "cloudflare.com",
-      "count": 22
+      "count": 46
     },
     {
       "domain": "quilium.io",
-      "count": 22
-    },
-    {
-      "domain": "differdange.lu",
-      "count": 21
+      "count": 44
     },
     {
       "domain": "cgie.lu",
-      "count": 21
+      "count": 42
     },
     {
       "domain": "typekit.net",
-      "count": 20
+      "count": 40
+    },
+    {
+      "domain": "cloudflare.com",
+      "count": 38
     },
     {
       "domain": "dudelange.lu",
-      "count": 19
+      "count": 38
     },
     {
       "domain": "schifflange.lu",
-      "count": 19
+      "count": 37
     },
     {
       "domain": "bettembourg.lu",
-      "count": 18
+      "count": 36
     },
     {
       "domain": "cfl.lu",
-      "count": 18
+      "count": 36
     },
     {
       "domain": "fontawesome.com",
-      "count": 18
+      "count": 36
     },
     {
       "domain": "geoportail.lu",
-      "count": 18
+      "count": 36
     },
     {
       "domain": "unpkg.com",
-      "count": 18
+      "count": 36
     },
     {
       "domain": "sandweiler.lu",
-      "count": 18
+      "count": 36
     },
     {
       "domain": "guichet.lu",
-      "count": 17
-    },
-    {
-      "domain": "tiktok.com",
-      "count": 17
+      "count": 34
     },
     {
       "domain": "inondations.lu",
-      "count": 17
+      "count": 34
+    },
+    {
+      "domain": "tiktok.com",
+      "count": 31
     },
     {
       "domain": "mersch.lu",
-      "count": 15
+      "count": 30
     },
     {
       "domain": "strassen.lu",
-      "count": 15
+      "count": 30
     },
     {
       "domain": "wiltz.lu",
-      "count": 15
+      "count": 30
     },
     {
       "domain": "petitiounen.lu",
-      "count": 14
-    },
-    {
-      "domain": "apple.com",
-      "count": 14
+      "count": 28
     },
     {
       "domain": "luxembourg.lu",
-      "count": 13
+      "count": 26
     },
     {
-      "domain": "meteolux.lu",
-      "count": 13
-    },
-    {
-      "domain": "snj.lu",
-      "count": 13
+      "domain": "apple.com",
+      "count": 26
     },
     {
       "domain": "e-connect.lu",
-      "count": 13
+      "count": 26
+    },
+    {
+      "domain": "petange.lu",
+      "count": 26
+    },
+    {
+      "domain": "snj.lu",
+      "count": 25
+    },
+    {
+      "domain": "chl.lu",
+      "count": 24
     }
   ],
   "relationship_types": {
-    "editorial_link": 1010,
+    "editorial_link": 1018,
     "form_destination": 136,
-    "image_or_media_dependency": 172,
-    "script_dependency": 246,
-    "stylesheet_dependency": 208,
+    "image_or_media_dependency": 174,
+    "script_dependency": 250,
+    "stylesheet_dependency": 209,
     "font_or_preload_dependency": 28
   },
-  "generated_at": "2026-08-17T01:34:16.155659+00:00"
+  "generated_at": "2026-08-18T19:26:04.503223+00:00"
 }

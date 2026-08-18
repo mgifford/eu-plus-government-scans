@@ -9,7 +9,7 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 10114
+      "count": 11005
     },
     {
       "domain": "gva.es",
@@ -211,7 +211,7 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 5024
+      "count": 5407
     },
     {
       "domain": "gva.es",
@@ -219,11 +219,15 @@
     },
     {
       "domain": "facebook.com",
-      "count": 1429
+      "count": 1469
     },
     {
       "domain": "twitter.com",
-      "count": 1319
+      "count": 1345
+    },
+    {
+      "domain": "googleapis.com",
+      "count": 1251
     },
     {
       "domain": "navarra.es",
@@ -231,23 +235,19 @@
     },
     {
       "domain": "google.com",
-      "count": 1212
-    },
-    {
-      "domain": "googleapis.com",
-      "count": 1197
+      "count": 1232
     },
     {
       "domain": "youtube.com",
-      "count": 1185
+      "count": 1218
     },
     {
       "domain": "jccm.es",
-      "count": 1051
+      "count": 1109
     },
     {
       "domain": "instagram.com",
-      "count": 1030
+      "count": 1063
     },
     {
       "domain": "aragon.es",
@@ -262,20 +262,20 @@
       "count": 533
     },
     {
+      "domain": "w3.org",
+      "count": 521
+    },
+    {
       "domain": "googletagmanager.com",
       "count": 520
     },
     {
-      "domain": "w3.org",
-      "count": 520
+      "domain": "linkedin.com",
+      "count": 501
     },
     {
       "domain": "juntaex.es",
       "count": 485
-    },
-    {
-      "domain": "linkedin.com",
-      "count": 473
     },
     {
       "domain": "carm.es",
@@ -286,12 +286,12 @@
       "count": 418
     },
     {
-      "domain": "ayto-torrejon.es",
-      "count": 400
+      "domain": "gstatic.com",
+      "count": 413
     },
     {
-      "domain": "gstatic.com",
-      "count": 386
+      "domain": "ayto-torrejon.es",
+      "count": 400
     },
     {
       "domain": "redsara.es",
@@ -299,11 +299,11 @@
     },
     {
       "domain": "blogspot.com",
-      "count": 351
+      "count": 353
     },
     {
       "domain": "x.com",
-      "count": 298
+      "count": 312
     },
     {
       "domain": "hacienda.gob.es",
@@ -314,36 +314,36 @@
       "count": 291
     },
     {
+      "domain": "flickr.com",
+      "count": 285
+    },
+    {
       "domain": "europa.eu",
       "count": 278
     },
     {
       "domain": "google.es",
-      "count": 261
+      "count": 265
     },
     {
       "domain": "cloudflare.com",
-      "count": 259
+      "count": 262
     },
     {
-      "domain": "flickr.com",
+      "domain": "fontawesome.com",
       "count": 257
     },
     {
+      "domain": "insuit.net",
+      "count": 244
+    },
+    {
       "domain": "boe.es",
-      "count": 236
+      "count": 238
     },
     {
       "domain": "sanidad.gob.es",
       "count": 235
-    },
-    {
-      "domain": "fontawesome.com",
-      "count": 226
-    },
-    {
-      "domain": "insuit.net",
-      "count": 225
     },
     {
       "domain": "jsdelivr.net",
@@ -355,7 +355,7 @@
     },
     {
       "domain": "aemet.es",
-      "count": 203
+      "count": 204
     },
     {
       "domain": "defensa.gob.es",
@@ -371,7 +371,7 @@
     },
     {
       "domain": "blogspot.com.es",
-      "count": 173
+      "count": 174
     },
     {
       "domain": "administracion.gob.es",
@@ -399,11 +399,11 @@
     },
     {
       "domain": "vimeo.com",
-      "count": 137
+      "count": 138
     },
     {
       "domain": "sharethis.com",
-      "count": 132
+      "count": 137
     }
   ],
   "relationship_types": {
@@ -414,5 +414,5 @@
     "form_destination": 1441,
     "font_or_preload_dependency": 155
   },
-  "generated_at": "2026-08-17T01:34:15.780527+00:00"
+  "generated_at": "2026-08-18T19:26:04.592325+00:00"
 }
