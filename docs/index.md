@@ -11,13 +11,13 @@ power them, including which third-party JavaScript services they rely on.
 
 <!-- SCAN_PROGRESS_START -->
 
-_Progress as of 2026-08-19 08:55 UTC_
+_Progress as of 2026-08-19 09:32 UTC_
 
 | Scan Type | Pages Scanned | Coverage | Avg Age |
 |-----------|--------------|----------|---------|
 | **Combined Reachability** | **32,007 confirmed reachable** | **<span role="img" aria-label="36.5% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:44px;"></span></span><span class="sm-bar__label">36.5%</span></span>** | — |
 | Social Media | 34,622 scanned (31,345 reachable) | <span role="img" aria-label="39.5% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:47px;"></span></span><span class="sm-bar__label">39.5%</span></span> | 4.2 days |
-| Technology | 37,374 scanned | <span role="img" aria-label="42.6% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:51px;"></span></span><span class="sm-bar__label">42.6%</span></span> | 4.1 days |
+| Technology | 38,852 scanned | <span role="img" aria-label="44.3% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:53px;"></span></span><span class="sm-bar__label">44.3%</span></span> | 4.0 days |
 | Lighthouse | 12,896 scanned | <span role="img" aria-label="14.7% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:18px;"></span></span><span class="sm-bar__label">14.7%</span></span> | 17.7 days |
 | Accessibility Statements | 51,728 scanned | <span role="img" aria-label="59.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:71px;"></span></span><span class="sm-bar__label">59.0%</span></span> | 4.0 days |
 
