@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T07:30:38.452105+00:00",
+  "generated_at": "2026-08-19T13:32:43.364290+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -193,7 +193,7 @@
     {
       "service": "google.com",
       "countries": 31,
-      "domains": 1892
+      "domains": 1893
     },
     {
       "service": "gstatic.com",
@@ -4468,9 +4468,9 @@
       "country_code": "ROMANIA",
       "country": "Romania",
       "service": "google.com",
-      "domains": 3,
+      "domains": 4,
       "scanned_domains": 16,
-      "percent": 18.8
+      "percent": 25.0
     },
     {
       "country_code": "ROMANIA",

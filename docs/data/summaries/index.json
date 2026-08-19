@@ -1,11 +1,11 @@
 {
-  "SLOVAKIA": {
-    "total_relationships": 1683,
-    "total_source_domains": 21,
-    "file": "slovakia.json"
+  "SLOVENIA": {
+    "total_relationships": 891,
+    "total_source_domains": 16,
+    "file": "slovenia.json"
   },
   "ROMANIA": {
-    "total_relationships": 1098,
+    "total_relationships": 1104,
     "total_source_domains": 16,
     "file": "romania.json"
   }
