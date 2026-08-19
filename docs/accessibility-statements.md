@@ -5,9 +5,9 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-08-19 13:51 UTC — last scan: 2026-08-19_
+_Stats as of 2026-08-19 14:18 UTC — last scan: 2026-08-19_
 
-**78** scan batches run
+**80** scan batches run
 
 **51,722** of **87,696** available pages scanned (**59.0%** coverage)
 **46,712** of **51,722** scanned pages were reachable (**90.3%**)
