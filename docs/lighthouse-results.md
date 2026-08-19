@@ -5,12 +5,12 @@ layout: page
 
 <!-- LIGHTHOUSE_STATS_START -->
 
-_Stats as of 2026-08-19 07:05 UTC — last scan: 2026-08-19_
+_Stats as of 2026-08-19 07:48 UTC — last scan: 2026-08-19_
 
-**181** scan batches run
+**183** scan batches run
 
-**13,953** of **87,696** available pages audited (**15.9%** coverage)
-**12,841** successful audits (**92.0%** of audited)
+**14,007** of **87,696** available pages audited (**16.0%** coverage)
+**12,894** successful audits (**92.1%** of audited)
 
 **Overall average Lighthouse scores** (0–100 scale):
 
@@ -24,7 +24,7 @@ _Stats as of 2026-08-19 07:05 UTC — last scan: 2026-08-19_
 
 | Country | Audited | Available | Perf | A11y | Best Practices | SEO | Last Scan |
 |---------|--------:|----------:|:----:|:----:|:--------------:|:---:|-----------|
-| Austria | 822 | 822 | 88 | 90 | 91 | 89 | 2026-08-16 |
+| Austria | 822 | 822 | 88 | 90 | 91 | 89 | 2026-08-19 |
 | Belgium | 1,036 | 1,329 | 87 | 91 | 91 | 90 | 2026-08-16 |
 | Bulgaria | 352 | 353 | 87 | 81 | 88 | 87 | 2026-07-22 |
 | Canada | 409 | 4,469 | 94 | 88 | 89 | 87 | 2026-08-18 |
@@ -34,7 +34,7 @@ _Stats as of 2026-08-19 07:05 UTC — last scan: 2026-08-19_
 | Estonia | 401 | 401 | 91 | 87 | 86 | 89 | 2026-07-23 |
 | Finland | 199 | 199 | 86 | 94 | 96 | 87 | 2026-07-23 |
 | France | 187 | 10,009 | 91 | 92 | 93 | 91 | 2026-08-18 |
-| Germany | 418 | 6,599 | 91 | 90 | 97 | 88 | 2026-08-15 |
+| Germany | 472 | 6,599 | 92 | 90 | 97 | 88 | 2026-08-19 |
 | Greece | 476 | 1,752 | 85 | 86 | 91 | 87 | 2026-08-15 |
 | Hungary | 392 | 392 | 89 | 77 | 82 | 86 | 2026-07-23 |
 | Iceland | 145 | 145 | 93 | 92 | 91 | 91 | 2026-07-23 |
