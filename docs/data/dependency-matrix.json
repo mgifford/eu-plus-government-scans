@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T19:26:07.705677+00:00",
+  "generated_at": "2026-08-19T01:59:17.525504+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -161,7 +161,7 @@
     {
       "country_code": "REPUBLIC_OF_CYPRUS",
       "country": "Cyprus",
-      "scanned_domains": 5
+      "scanned_domains": 6
     },
     {
       "country_code": "MALTA",
@@ -173,7 +173,7 @@
     {
       "service": "googleapis.com",
       "countries": 32,
-      "domains": 3922
+      "domains": 3923
     },
     {
       "service": "googletagmanager.com",
@@ -198,7 +198,7 @@
     {
       "service": "gstatic.com",
       "countries": 31,
-      "domains": 1550
+      "domains": 1551
     },
     {
       "service": "cloudflare.com",
@@ -253,7 +253,7 @@
     {
       "service": "addtoany.com",
       "countries": 20,
-      "domains": 160
+      "domains": 161
     },
     {
       "service": "fbcdn.net",
@@ -5076,56 +5076,56 @@
       "country_code": "REPUBLIC_OF_CYPRUS",
       "country": "Cyprus",
       "service": "googleapis.com",
-      "domains": 4,
-      "scanned_domains": 5,
-      "percent": 80.0
+      "domains": 5,
+      "scanned_domains": 6,
+      "percent": 83.3
     },
     {
       "country_code": "REPUBLIC_OF_CYPRUS",
       "country": "Cyprus",
       "service": "googletagmanager.com",
       "domains": 2,
-      "scanned_domains": 5,
-      "percent": 40.0
+      "scanned_domains": 6,
+      "percent": 33.3
     },
     {
       "country_code": "REPUBLIC_OF_CYPRUS",
       "country": "Cyprus",
       "service": "jsdelivr.net",
       "domains": 1,
-      "scanned_domains": 5,
-      "percent": 20.0
+      "scanned_domains": 6,
+      "percent": 16.7
     },
     {
       "country_code": "REPUBLIC_OF_CYPRUS",
       "country": "Cyprus",
       "service": "fontawesome.com",
       "domains": 1,
-      "scanned_domains": 5,
-      "percent": 20.0
+      "scanned_domains": 6,
+      "percent": 16.7
     },
     {
       "country_code": "REPUBLIC_OF_CYPRUS",
       "country": "Cyprus",
       "service": "google.com",
       "domains": 1,
-      "scanned_domains": 5,
-      "percent": 20.0
+      "scanned_domains": 6,
+      "percent": 16.7
     },
     {
       "country_code": "REPUBLIC_OF_CYPRUS",
       "country": "Cyprus",
       "service": "gstatic.com",
-      "domains": 2,
-      "scanned_domains": 5,
-      "percent": 40.0
+      "domains": 3,
+      "scanned_domains": 6,
+      "percent": 50.0
     },
     {
       "country_code": "REPUBLIC_OF_CYPRUS",
       "country": "Cyprus",
       "service": "cloudflare.com",
       "domains": 0,
-      "scanned_domains": 5,
+      "scanned_domains": 6,
       "percent": 0.0
     },
     {
@@ -5133,7 +5133,7 @@
       "country": "Cyprus",
       "service": "jquery.com",
       "domains": 0,
-      "scanned_domains": 5,
+      "scanned_domains": 6,
       "percent": 0.0
     },
     {
@@ -5141,7 +5141,7 @@
       "country": "Cyprus",
       "service": "unpkg.com",
       "domains": 0,
-      "scanned_domains": 5,
+      "scanned_domains": 6,
       "percent": 0.0
     },
     {
@@ -5149,7 +5149,7 @@
       "country": "Cyprus",
       "service": "bootstrapcdn.com",
       "domains": 0,
-      "scanned_domains": 5,
+      "scanned_domains": 6,
       "percent": 0.0
     },
     {
@@ -5157,7 +5157,7 @@
       "country": "Cyprus",
       "service": "typekit.net",
       "domains": 0,
-      "scanned_domains": 5,
+      "scanned_domains": 6,
       "percent": 0.0
     },
     {
@@ -5165,7 +5165,7 @@
       "country": "Cyprus",
       "service": "facebook.com",
       "domains": 0,
-      "scanned_domains": 5,
+      "scanned_domains": 6,
       "percent": 0.0
     },
     {
@@ -5173,7 +5173,7 @@
       "country": "Cyprus",
       "service": "cookiebot.com",
       "domains": 0,
-      "scanned_domains": 5,
+      "scanned_domains": 6,
       "percent": 0.0
     },
     {
@@ -5181,7 +5181,7 @@
       "country": "Cyprus",
       "service": "amazonaws.com",
       "domains": 0,
-      "scanned_domains": 5,
+      "scanned_domains": 6,
       "percent": 0.0
     },
     {
@@ -5189,7 +5189,7 @@
       "country": "Cyprus",
       "service": "facebook.net",
       "domains": 0,
-      "scanned_domains": 5,
+      "scanned_domains": 6,
       "percent": 0.0
     },
     {
@@ -5197,23 +5197,23 @@
       "country": "Cyprus",
       "service": "arcgis.com",
       "domains": 0,
-      "scanned_domains": 5,
+      "scanned_domains": 6,
       "percent": 0.0
     },
     {
       "country_code": "REPUBLIC_OF_CYPRUS",
       "country": "Cyprus",
       "service": "addtoany.com",
-      "domains": 1,
-      "scanned_domains": 5,
-      "percent": 20.0
+      "domains": 2,
+      "scanned_domains": 6,
+      "percent": 33.3
     },
     {
       "country_code": "REPUBLIC_OF_CYPRUS",
       "country": "Cyprus",
       "service": "fbcdn.net",
       "domains": 0,
-      "scanned_domains": 5,
+      "scanned_domains": 6,
       "percent": 0.0
     },
     {
@@ -5221,7 +5221,7 @@
       "country": "Cyprus",
       "service": "mapbox.com",
       "domains": 0,
-      "scanned_domains": 5,
+      "scanned_domains": 6,
       "percent": 0.0
     },
     {
@@ -5229,7 +5229,7 @@
       "country": "Cyprus",
       "service": "cloudfront.net",
       "domains": 0,
-      "scanned_domains": 5,
+      "scanned_domains": 6,
       "percent": 0.0
     },
     {
