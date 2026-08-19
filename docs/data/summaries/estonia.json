@@ -1,346 +1,346 @@
 {
   "country_code": "ESTONIA",
-  "total_relationships": 1577,
+  "total_relationships": 1620,
   "total_source_domains": 32,
   "top_source_domains": [
     {
       "domain": "tartu.ee",
-      "count": 972
+      "count": 1954
     },
     {
       "domain": "tallinn.ee",
-      "count": 476
+      "count": 952
     },
     {
       "domain": "parnu.ee",
-      "count": 435
+      "count": 880
     },
     {
       "domain": "agri.ee",
-      "count": 389
-    },
-    {
-      "domain": "viljandi.ee",
-      "count": 178
+      "count": 781
     },
     {
       "domain": "kliimaministeerium.ee",
-      "count": 177
+      "count": 353
     },
     {
       "domain": "sm.ee",
-      "count": 175
+      "count": 340
     },
     {
       "domain": "stat.ee",
-      "count": 160
-    },
-    {
-      "domain": "siseministeerium.ee",
-      "count": 155
-    },
-    {
-      "domain": "vm.ee",
-      "count": 147
-    },
-    {
-      "domain": "ria.ee",
-      "count": 142
-    },
-    {
-      "domain": "hm.ee",
-      "count": 136
-    },
-    {
-      "domain": "mkm.ee",
-      "count": 133
+      "count": 320
     },
     {
       "domain": "kul.ee",
-      "count": 132
+      "count": 310
     },
     {
-      "domain": "narva.ee",
-      "count": 132
+      "domain": "siseministeerium.ee",
+      "count": 310
+    },
+    {
+      "domain": "vm.ee",
+      "count": 296
+    },
+    {
+      "domain": "viljandi.ee",
+      "count": 285
+    },
+    {
+      "domain": "ria.ee",
+      "count": 284
     },
     {
       "domain": "valitsus.ee",
-      "count": 124
+      "count": 274
+    },
+    {
+      "domain": "hm.ee",
+      "count": 272
+    },
+    {
+      "domain": "mkm.ee",
+      "count": 266
+    },
+    {
+      "domain": "narva.ee",
+      "count": 264
     },
     {
       "domain": "kaitseministeerium.ee",
-      "count": 100
+      "count": 215
     },
     {
       "domain": "riigikogu.ee",
-      "count": 96
+      "count": 192
     },
     {
       "domain": "riigikantselei.ee",
-      "count": 78
+      "count": 172
     },
     {
       "domain": "fin.ee",
-      "count": 71
+      "count": 144
     },
     {
       "domain": "prokuratuur.ee",
-      "count": 60
+      "count": 120
     },
     {
       "domain": "riigikohus.ee",
-      "count": 47
+      "count": 94
     },
     {
       "domain": "just.ee",
-      "count": 39
+      "count": 78
     },
     {
       "domain": "justdigi.ee",
-      "count": 39
-    },
-    {
-      "domain": "eesti.ee",
-      "count": 25
-    },
-    {
-      "domain": "tehik.ee",
-      "count": 24
+      "count": 78
     },
     {
       "domain": "rakvere.ee",
-      "count": 20
+      "count": 78
+    },
+    {
+      "domain": "eesti.ee",
+      "count": 60
+    },
+    {
+      "domain": "tehik.ee",
+      "count": 48
     },
     {
       "domain": "epa.ee",
-      "count": 16
+      "count": 32
     },
     {
       "domain": "fi.ee",
-      "count": 14
+      "count": 28
     },
     {
       "domain": "aki.ee",
-      "count": 11
+      "count": 22
     },
     {
       "domain": "riigiteataja.ee",
-      "count": 6
+      "count": 12
     },
     {
       "domain": "riigihanked.riik.ee",
-      "count": 3
+      "count": 6
     }
   ],
   "top_target_domains": [
     {
       "domain": "tartu.ee",
-      "count": 457
+      "count": 919
     },
     {
       "domain": "tallinn.ee",
-      "count": 294
+      "count": 588
     },
     {
       "domain": "parnu.ee",
-      "count": 220
+      "count": 445
     },
     {
       "domain": "facebook.com",
-      "count": 219
+      "count": 443
     },
     {
       "domain": "agri.ee",
-      "count": 149
+      "count": 303
     },
     {
       "domain": "stat.ee",
-      "count": 129
+      "count": 258
     },
     {
       "domain": "youtube.com",
-      "count": 121
+      "count": 249
     },
     {
       "domain": "googleapis.com",
-      "count": 93
+      "count": 187
     },
     {
       "domain": "instagram.com",
-      "count": 91
+      "count": 185
     },
     {
       "domain": "vm.ee",
-      "count": 88
-    },
-    {
-      "domain": "sm.ee",
-      "count": 86
-    },
-    {
-      "domain": "linkedin.com",
-      "count": 85
+      "count": 179
     },
     {
       "domain": "valitsus.ee",
-      "count": 82
+      "count": 173
     },
     {
-      "domain": "viljandi.ee",
-      "count": 77
+      "domain": "linkedin.com",
+      "count": 172
     },
     {
-      "domain": "flickr.com",
-      "count": 66
-    },
-    {
-      "domain": "hm.ee",
-      "count": 65
-    },
-    {
-      "domain": "ria.ee",
-      "count": 65
+      "domain": "sm.ee",
+      "count": 166
     },
     {
       "domain": "eesti.ee",
-      "count": 63
+      "count": 135
+    },
+    {
+      "domain": "flickr.com",
+      "count": 134
+    },
+    {
+      "domain": "hm.ee",
+      "count": 133
+    },
+    {
+      "domain": "ria.ee",
+      "count": 132
     },
     {
       "domain": "riigikantselei.ee",
-      "count": 59
+      "count": 129
+    },
+    {
+      "domain": "viljandi.ee",
+      "count": 129
     },
     {
       "domain": "twitter.com",
-      "count": 59
+      "count": 121
     },
     {
       "domain": "kliimaministeerium.ee",
-      "count": 57
+      "count": 116
     },
     {
       "domain": "siseministeerium.ee",
-      "count": 55
-    },
-    {
-      "domain": "googletagmanager.com",
-      "count": 54
-    },
-    {
-      "domain": "kriis.ee",
-      "count": 51
-    },
-    {
-      "domain": "mkm.ee",
-      "count": 49
-    },
-    {
-      "domain": "riigikogu.ee",
-      "count": 49
+      "count": 113
     },
     {
       "domain": "kul.ee",
-      "count": 47
+      "count": 107
     },
     {
-      "domain": "fin.ee",
-      "count": 46
+      "domain": "kriis.ee",
+      "count": 104
+    },
+    {
+      "domain": "googletagmanager.com",
+      "count": 104
+    },
+    {
+      "domain": "mkm.ee",
+      "count": 101
     },
     {
       "domain": "kaitseministeerium.ee",
-      "count": 44
+      "count": 98
+    },
+    {
+      "domain": "riigikogu.ee",
+      "count": 98
+    },
+    {
+      "domain": "fin.ee",
+      "count": 95
     },
     {
       "domain": "ope.ee",
-      "count": 36
+      "count": 72
     },
     {
       "domain": "cloudflare.com",
-      "count": 35
+      "count": 70
     },
     {
       "domain": "google.com",
-      "count": 35
-    },
-    {
-      "domain": "riigikohus.ee",
-      "count": 32
+      "count": 65
     },
     {
       "domain": "just.ee",
-      "count": 31
+      "count": 64
     },
     {
-      "domain": "prokuratuur.ee",
-      "count": 29
+      "domain": "riigikohus.ee",
+      "count": 64
     },
     {
       "domain": "riigiteataja.ee",
-      "count": 29
+      "count": 62
+    },
+    {
+      "domain": "prokuratuur.ee",
+      "count": 58
     },
     {
       "domain": "narva.ee",
-      "count": 26
+      "count": 52
     },
     {
       "domain": "europa.eu",
-      "count": 24
+      "count": 48
     },
     {
       "domain": "justdigi.ee",
-      "count": 21
+      "count": 43
     },
     {
       "domain": "envir.ee",
-      "count": 21
-    },
-    {
-      "domain": "politsei.ee",
-      "count": 19
-    },
-    {
-      "domain": "fontawesome.com",
-      "count": 19
-    },
-    {
-      "domain": "jsdelivr.net",
-      "count": 19
-    },
-    {
-      "domain": "tehik.ee",
-      "count": 19
-    },
-    {
-      "domain": "addtoany.com",
-      "count": 18
+      "count": 42
     },
     {
       "domain": "vportal.ee",
-      "count": 17
+      "count": 38
     },
     {
-      "domain": "gstatic.com",
-      "count": 16
+      "domain": "politsei.ee",
+      "count": 38
     },
     {
-      "domain": "blogspot.com",
-      "count": 15
+      "domain": "jsdelivr.net",
+      "count": 38
+    },
+    {
+      "domain": "tehik.ee",
+      "count": 38
+    },
+    {
+      "domain": "addtoany.com",
+      "count": 36
     },
     {
       "domain": "edupage.org",
-      "count": 15
+      "count": 35
+    },
+    {
+      "domain": "fontawesome.com",
+      "count": 34
+    },
+    {
+      "domain": "gstatic.com",
+      "count": 33
+    },
+    {
+      "domain": "blogspot.com",
+      "count": 30
     },
     {
       "domain": "keskkonnainfo.ee",
-      "count": 14
+      "count": 28
     }
   ],
   "relationship_types": {
-    "editorial_link": 916,
-    "form_destination": 99,
-    "image_or_media_dependency": 148,
-    "script_dependency": 213,
-    "stylesheet_dependency": 183,
+    "editorial_link": 935,
+    "form_destination": 105,
+    "image_or_media_dependency": 154,
+    "script_dependency": 219,
+    "stylesheet_dependency": 189,
     "font_or_preload_dependency": 18
   },
-  "generated_at": "2026-08-17T01:34:16.087475+00:00"
+  "generated_at": "2026-08-19T19:22:50.119576+00:00"
 }
