@@ -1,12 +1,17 @@
 {
-  "SLOVENIA": {
-    "total_relationships": 891,
-    "total_source_domains": 16,
-    "file": "slovenia.json"
+  "ESTONIA": {
+    "total_relationships": 1620,
+    "total_source_domains": 32,
+    "file": "estonia.json"
   },
-  "ROMANIA": {
-    "total_relationships": 1104,
-    "total_source_domains": 16,
-    "file": "romania.json"
+  "AUSTRIA": {
+    "total_relationships": 2969,
+    "total_source_domains": 36,
+    "file": "austria.json"
+  },
+  "UNITED_KINGDOM_UK": {
+    "total_relationships": 292095,
+    "total_source_domains": 8378,
+    "file": "united_kingdom_uk.json"
   }
 }
