@@ -1,17 +1,12 @@
 {
-  "REPUBLIC_OF_CYPRUS": {
-    "total_relationships": 291920,
-    "total_source_domains": 8376,
-    "file": "republic_of_cyprus.json"
+  "SLOVAKIA": {
+    "total_relationships": 1683,
+    "total_source_domains": 21,
+    "file": "slovakia.json"
   },
-  "NETHERLANDS": {
-    "total_relationships": 2950,
-    "total_source_domains": 73,
-    "file": "netherlands.json"
-  },
-  "SWITZERLAND": {
-    "total_relationships": 6740,
-    "total_source_domains": 9,
-    "file": "switzerland.json"
+  "ROMANIA": {
+    "total_relationships": 1098,
+    "total_source_domains": 16,
+    "file": "romania.json"
   }
 }

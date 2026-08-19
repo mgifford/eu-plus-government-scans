@@ -1,302 +1,302 @@
 {
   "country_code": "SLOVAKIA",
-  "total_relationships": 1667,
+  "total_relationships": 1683,
   "total_source_domains": 21,
   "top_source_domains": [
     {
       "domain": "gov.sk",
-      "count": 2850
+      "count": 5486
     },
     {
       "domain": "zilina.sk",
-      "count": 302
-    },
-    {
-      "domain": "bratislava.sk",
-      "count": 235
+      "count": 602
     },
     {
       "domain": "slovensko.sk",
-      "count": 233
+      "count": 474
+    },
+    {
+      "domain": "bratislava.sk",
+      "count": 470
     },
     {
       "domain": "trnava.sk",
-      "count": 210
-    },
-    {
-      "domain": "presov.sk",
-      "count": 187
+      "count": 422
     },
     {
       "domain": "banskabystrica.sk",
-      "count": 167
+      "count": 334
     },
     {
       "domain": "kosice.sk",
-      "count": 157
+      "count": 317
+    },
+    {
+      "domain": "presov.sk",
+      "count": 239
     },
     {
       "domain": "poprad.sk",
-      "count": 97
+      "count": 194
     },
     {
       "domain": "trencin.sk",
-      "count": 96
+      "count": 192
     },
     {
       "domain": "martin.sk",
-      "count": 94
+      "count": 188
     },
     {
       "domain": "minv.sk",
-      "count": 67
+      "count": 117
     },
     {
       "domain": "mlba.sk",
-      "count": 54
+      "count": 108
     },
     {
       "domain": "nrsr.sk",
-      "count": 49
+      "count": 98
+    },
+    {
+      "domain": "nbs.sk",
+      "count": 44
+    },
+    {
+      "domain": "mindop.sk",
+      "count": 28
     },
     {
       "domain": "mfsr.sk",
       "count": 26
     },
     {
-      "domain": "nbs.sk",
-      "count": 22
+      "domain": "ustavnysud.sk",
+      "count": 26
     },
     {
       "domain": "nitra.sk",
-      "count": 22
-    },
-    {
-      "domain": "mindop.sk",
-      "count": 14
-    },
-    {
-      "domain": "ustavnysud.sk",
-      "count": 13
+      "count": 25
     },
     {
       "domain": "mincrs.sk",
-      "count": 12
+      "count": 24
     },
     {
       "domain": "minzp.sk",
-      "count": 12
+      "count": 24
     }
   ],
   "top_target_domains": [
     {
       "domain": "gov.sk",
-      "count": 1546
+      "count": 2972
     },
     {
       "domain": "slovensko.sk",
-      "count": 229
+      "count": 458
     },
     {
       "domain": "googleapis.com",
-      "count": 178
+      "count": 346
     },
     {
       "domain": "facebook.com",
-      "count": 169
+      "count": 328
     },
     {
       "domain": "zilina.sk",
-      "count": 147
+      "count": 293
     },
     {
       "domain": "bratislava.sk",
-      "count": 138
+      "count": 276
     },
     {
       "domain": "googletagmanager.com",
-      "count": 126
+      "count": 244
     },
     {
       "domain": "trnava.sk",
-      "count": 112
-    },
-    {
-      "domain": "google.com",
-      "count": 107
+      "count": 226
     },
     {
       "domain": "instagram.com",
-      "count": 107
+      "count": 210
+    },
+    {
+      "domain": "google.com",
+      "count": 204
     },
     {
       "domain": "linkedin.com",
-      "count": 81
-    },
-    {
-      "domain": "youtube.com",
-      "count": 81
+      "count": 161
     },
     {
       "domain": "kosice.sk",
-      "count": 78
+      "count": 156
     },
     {
-      "domain": "presov.sk",
-      "count": 71
+      "domain": "youtube.com",
+      "count": 155
     },
     {
       "domain": "europa.eu",
-      "count": 65
+      "count": 119
     },
     {
       "domain": "banskabystrica.sk",
-      "count": 55
+      "count": 110
     },
     {
-      "domain": "gstatic.com",
-      "count": 46
+      "domain": "presov.sk",
+      "count": 107
     },
     {
       "domain": "jsdelivr.net",
-      "count": 45
+      "count": 90
     },
     {
-      "domain": "minv.sk",
-      "count": 40
-    },
-    {
-      "domain": "syscom.sk",
-      "count": 36
+      "domain": "gstatic.com",
+      "count": 89
     },
     {
       "domain": "martin.sk",
-      "count": 36
+      "count": 72
     },
     {
       "domain": "poprad.sk",
-      "count": 35
-    },
-    {
-      "domain": "aglo.sk",
-      "count": 34
+      "count": 70
     },
     {
       "domain": "nrsr.sk",
-      "count": 34
+      "count": 68
+    },
+    {
+      "domain": "minv.sk",
+      "count": 66
+    },
+    {
+      "domain": "syscom.sk",
+      "count": 63
+    },
+    {
+      "domain": "aglo.sk",
+      "count": 59
     },
     {
       "domain": "trencin.sk",
-      "count": 29
+      "count": 57
     },
     {
       "domain": "twitter.com",
-      "count": 25
+      "count": 50
     },
     {
       "domain": "cloudflare.com",
-      "count": 24
+      "count": 48
     },
     {
       "domain": "cookiedatabase.org",
-      "count": 24
+      "count": 48
     },
     {
       "domain": "mlba.sk",
-      "count": 24
+      "count": 48
     },
     {
       "domain": "jquery.com",
-      "count": 19
+      "count": 38
     },
     {
       "domain": "arcgis.com",
-      "count": 16
-    },
-    {
-      "domain": "planobnovy.sk",
-      "count": 15
+      "count": 30
     },
     {
       "domain": "windows.net",
-      "count": 13
-    },
-    {
-      "domain": "tiktok.com",
-      "count": 13
-    },
-    {
-      "domain": "nitra.sk",
-      "count": 13
+      "count": 26
     },
     {
       "domain": "cinemaware.eu",
-      "count": 13
+      "count": 26
     },
     {
       "domain": "plausible.io",
-      "count": 12
-    },
-    {
-      "domain": "bootstrapcdn.com",
-      "count": 12
-    },
-    {
-      "domain": "mapbox.com",
-      "count": 12
+      "count": 24
     },
     {
       "domain": "x.com",
-      "count": 12
+      "count": 24
+    },
+    {
+      "domain": "tiktok.com",
+      "count": 23
     },
     {
       "domain": "apple.com",
-      "count": 11
+      "count": 21
     },
     {
-      "domain": "microsoft.com",
-      "count": 10
+      "domain": "planobnovy.sk",
+      "count": 21
+    },
+    {
+      "domain": "mpsvr.sk",
+      "count": 20
     },
     {
       "domain": "slov-lex.sk",
-      "count": 10
+      "count": 20
     },
     {
       "domain": "nbs.sk",
-      "count": 10
+      "count": 20
     },
     {
-      "domain": "goo.gl",
-      "count": 10
+      "domain": "microsoft.com",
+      "count": 19
     },
     {
       "domain": "facebook.net",
-      "count": 9
+      "count": 18
+    },
+    {
+      "domain": "bootstrapcdn.com",
+      "count": 18
     },
     {
       "domain": "fontawesome.com",
-      "count": 9
-    },
-    {
-      "domain": "nsrr.sk",
-      "count": 9
-    },
-    {
-      "domain": "pohladavkystatu.sk",
-      "count": 9
+      "count": 18
     },
     {
       "domain": "spotify.com",
-      "count": 9
+      "count": 18
+    },
+    {
+      "domain": "ustavnysud.sk",
+      "count": 18
+    },
+    {
+      "domain": "pohladavkystatu.sk",
+      "count": 17
+    },
+    {
+      "domain": "goo.gl",
+      "count": 17
+    },
+    {
+      "domain": "eures.sk",
+      "count": 16
     }
   ],
   "relationship_types": {
-    "editorial_link": 917,
-    "font_or_preload_dependency": 50,
+    "editorial_link": 929,
+    "font_or_preload_dependency": 52,
     "image_or_media_dependency": 159,
-    "script_dependency": 239,
+    "script_dependency": 241,
     "stylesheet_dependency": 194,
     "form_destination": 108
   },
-  "generated_at": "2026-08-18T19:26:04.672008+00:00"
+  "generated_at": "2026-08-19T07:30:35.692922+00:00"
 }
