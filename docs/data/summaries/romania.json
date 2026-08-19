@@ -1,15 +1,15 @@
 {
   "country_code": "ROMANIA",
-  "total_relationships": 1098,
+  "total_relationships": 1104,
   "total_source_domains": 16,
   "top_source_domains": [
     {
       "domain": "politiaromana.ro",
-      "count": 1876
+      "count": 3871
     },
     {
       "domain": "mapn.ro",
-      "count": 1203
+      "count": 2382
     },
     {
       "domain": "sibiu.ro",
@@ -71,67 +71,91 @@
   "top_target_domains": [
     {
       "domain": "politiaromana.ro",
-      "count": 653
+      "count": 1309
     },
     {
       "domain": "gov.ro",
-      "count": 518
+      "count": 1132
     },
     {
       "domain": "mapn.ro",
-      "count": 397
+      "count": 779
     },
     {
       "domain": "googletagmanager.com",
-      "count": 128
+      "count": 245
     },
     {
       "domain": "facebook.com",
-      "count": 113
+      "count": 201
+    },
+    {
+      "domain": "sri.ro",
+      "count": 164
+    },
+    {
+      "domain": "google.com",
+      "count": 141
+    },
+    {
+      "domain": "presidency.ro",
+      "count": 130
+    },
+    {
+      "domain": "nato.int",
+      "count": 118
+    },
+    {
+      "domain": "fiipregatit.ro",
+      "count": 112
+    },
+    {
+      "domain": "mae.ro",
+      "count": 106
+    },
+    {
+      "domain": "just.ro",
+      "count": 103
     },
     {
       "domain": "sibiu.ro",
       "count": 103
     },
     {
-      "domain": "sri.ro",
-      "count": 91
+      "domain": "certmil.ro",
+      "count": 100
     },
     {
-      "domain": "google.com",
-      "count": 82
+      "domain": "europa.eu",
+      "count": 87
+    },
+    {
+      "domain": "cdep.ro",
+      "count": 86
+    },
+    {
+      "domain": "senat.ro",
+      "count": 86
+    },
+    {
+      "domain": "sts.ro",
+      "count": 84
+    },
+    {
+      "domain": "mai-dga.ro",
+      "count": 74
+    },
+    {
+      "domain": "mfinante.ro",
+      "count": 72
     },
     {
       "domain": "pmb.ro",
       "count": 70
     },
     {
-      "domain": "just.ro",
-      "count": 66
-    },
-    {
-      "domain": "presidency.ro",
-      "count": 65
-    },
-    {
-      "domain": "mae.ro",
-      "count": 61
-    },
-    {
-      "domain": "nato.int",
-      "count": 59
-    },
-    {
-      "domain": "fiipregatit.ro",
-      "count": 57
-    },
-    {
-      "domain": "certmil.ro",
-      "count": 50
-    },
-    {
-      "domain": "europa.eu",
-      "count": 47
+      "domain": "112.ro",
+      "count": 62
     },
     {
       "domain": "brasovcity.ro",
@@ -142,15 +166,11 @@
       "count": 43
     },
     {
-      "domain": "cdep.ro",
-      "count": 43
+      "domain": "igpr.ro",
+      "count": 42
     },
     {
-      "domain": "senat.ro",
-      "count": 43
-    },
-    {
-      "domain": "sts.ro",
+      "domain": "infocons.ro",
       "count": 42
     },
     {
@@ -158,51 +178,79 @@
       "count": 39
     },
     {
-      "domain": "mfinante.ro",
-      "count": 37
-    },
-    {
-      "domain": "mai-dga.ro",
-      "count": 37
-    },
-    {
-      "domain": "112.ro",
-      "count": 31
-    },
-    {
-      "domain": "googleapis.com",
-      "count": 26
-    },
-    {
-      "domain": "instagram.com",
-      "count": 25
+      "domain": "politiadefrontiera.ro",
+      "count": 36
     },
     {
       "domain": "twitter.com",
-      "count": 24
+      "count": 35
     },
     {
       "domain": "youtube.com",
-      "count": 23
+      "count": 35
     },
     {
-      "domain": "igpr.ro",
-      "count": 21
-    },
-    {
-      "domain": "infocons.ro",
-      "count": 21
-    },
-    {
-      "domain": "politiadefrontiera.ro",
-      "count": 18
+      "domain": "instagram.com",
+      "count": 34
     },
     {
       "domain": "igsu.ro",
-      "count": 17
+      "count": 34
+    },
+    {
+      "domain": "googleapis.com",
+      "count": 31
+    },
+    {
+      "domain": "mpublic.ro",
+      "count": 22
     },
     {
       "domain": "apple.com",
+      "count": 20
+    },
+    {
+      "domain": "interpol.int",
+      "count": 20
+    },
+    {
+      "domain": "dataprotection.ro",
+      "count": 18
+    },
+    {
+      "domain": "defense.ro",
+      "count": 18
+    },
+    {
+      "domain": "trafic.ro",
+      "count": 18
+    },
+    {
+      "domain": "ms.ro",
+      "count": 16
+    },
+    {
+      "domain": "drpciv.ro",
+      "count": 16
+    },
+    {
+      "domain": "edu.ro",
+      "count": 15
+    },
+    {
+      "domain": "armataromaniei.ro",
+      "count": 14
+    },
+    {
+      "domain": "natohcoe.org",
+      "count": 14
+    },
+    {
+      "domain": "un.org",
+      "count": 14
+    },
+    {
+      "domain": "recensamantromania.ro",
       "count": 14
     },
     {
@@ -210,73 +258,25 @@
       "count": 13
     },
     {
-      "domain": "dataprotection.ro",
+      "domain": "cissb.ro",
       "count": 12
     },
     {
-      "domain": "edu.ro",
+      "domain": "alertarapirecopil.ro",
       "count": 12
-    },
-    {
-      "domain": "ms.ro",
-      "count": 12
-    },
-    {
-      "domain": "mpublic.ro",
-      "count": 11
-    },
-    {
-      "domain": "userway.org",
-      "count": 10
-    },
-    {
-      "domain": "constanta.ro",
-      "count": 10
-    },
-    {
-      "domain": "interpol.int",
-      "count": 10
-    },
-    {
-      "domain": "defense.ro",
-      "count": 9
-    },
-    {
-      "domain": "trafic.ro",
-      "count": 9
-    },
-    {
-      "domain": "asfromania.ro",
-      "count": 8
-    },
-    {
-      "domain": "linkedin.com",
-      "count": 8
-    },
-    {
-      "domain": "cloudflare.com",
-      "count": 8
-    },
-    {
-      "domain": "drpciv.ro",
-      "count": 8
     },
     {
       "domain": "map2web.eu",
-      "count": 7
-    },
-    {
-      "domain": "armataromaniei.ro",
-      "count": 7
+      "count": 11
     }
   ],
   "relationship_types": {
-    "editorial_link": 644,
+    "editorial_link": 649,
     "image_or_media_dependency": 115,
-    "script_dependency": 137,
+    "script_dependency": 138,
     "stylesheet_dependency": 127,
     "form_destination": 70,
     "font_or_preload_dependency": 5
   },
-  "generated_at": "2026-08-19T07:30:35.768767+00:00"
+  "generated_at": "2026-08-19T13:32:40.698463+00:00"
 }
