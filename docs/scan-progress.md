@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-08-20 10:47 UTC_
+_Generated: 2026-08-20 13:11 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -14,10 +14,10 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
 | **Combined Reachability** | **33,783 confirmed reachable** | 87,696 | **<span role="img" aria-label="38.5% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:46px;"></span></span><span class="sm-bar__label">38.5%</span></span>** | — |
-| Social Media | 37,517 scanned (33,682 reachable) | 87,696 | <span role="img" aria-label="42.8% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:51px;"></span></span><span class="sm-bar__label">42.8%</span></span> | 4.9 days |
-| Technology | 42,259 scanned | 87,696 | <span role="img" aria-label="48.2% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:58px;"></span></span><span class="sm-bar__label">48.2%</span></span> | 4.7 days |
-| Lighthouse | 12,958 scanned | 87,696 | <span role="img" aria-label="14.8% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:18px;"></span></span><span class="sm-bar__label">14.8%</span></span> | 18.4 days |
-| Accessibility Statements | 52,835 scanned | 87,696 | <span role="img" aria-label="60.2% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:72px;"></span></span><span class="sm-bar__label">60.2%</span></span> | 4.5 days |
+| Social Media | 37,517 scanned (33,682 reachable) | 87,696 | <span role="img" aria-label="42.8% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:51px;"></span></span><span class="sm-bar__label">42.8%</span></span> | 5.0 days |
+| Technology | 42,259 scanned | 87,696 | <span role="img" aria-label="48.2% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:58px;"></span></span><span class="sm-bar__label">48.2%</span></span> | 4.8 days |
+| Lighthouse | 12,958 scanned | 87,696 | <span role="img" aria-label="14.8% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:18px;"></span></span><span class="sm-bar__label">14.8%</span></span> | 18.5 days |
+| Accessibility Statements | 52,835 scanned | 87,696 | <span role="img" aria-label="60.2% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:72px;"></span></span><span class="sm-bar__label">60.2%</span></span> | 4.6 days |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by any scan type. **Avg Age** shows the mean number of days (or hours) since each URL in that scan type was last scanned — lower is fresher.
 
