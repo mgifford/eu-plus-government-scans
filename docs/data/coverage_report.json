@@ -1,33 +1,12 @@
 {
-  "ESTONIA": {
-    "total_urls": 401,
-    "attempted": 401,
-    "successful": 386,
-    "failed": 15,
-    "skipped": 0,
-    "never_scanned": 0,
-    "stale_28d": 0
-  },
-  "AUSTRIA": {
-    "total_urls": 822,
-    "attempted": 822,
-    "successful": 787,
-    "failed": 35,
-    "skipped": 0,
-    "never_scanned": 0,
-    "stale_28d": 0
-  },
-  "UNITED_KINGDOM_UK": {
-    "error": "TOON file not found"
-  },
   "BULGARIA": {
     "total_urls": 353,
     "attempted": 353,
-    "successful": 318,
-    "failed": 35,
+    "successful": 301,
+    "failed": 52,
     "skipped": 0,
     "never_scanned": 0,
-    "stale_28d": 316
+    "stale_28d": 0
   },
   "BELGIUM": {
     "total_urls": 1329,
@@ -45,7 +24,7 @@
     "failed": 595,
     "skipped": 0,
     "never_scanned": 0,
-    "stale_28d": 3088
+    "stale_28d": 1312
   },
   "CROATIA": {
     "total_urls": 257,
@@ -99,7 +78,7 @@
     "failed": 123,
     "skipped": 0,
     "never_scanned": 0,
-    "stale_28d": 2664
+    "stale_28d": 4137
   },
   "ICELAND": {
     "total_urls": 145,
@@ -126,7 +105,7 @@
     "failed": 134,
     "skipped": 0,
     "never_scanned": 0,
-    "stale_28d": 1220
+    "stale_28d": 1457
   },
   "LITHUANIA": {
     "total_urls": 122,
@@ -153,7 +132,7 @@
     "failed": 486,
     "skipped": 0,
     "never_scanned": 0,
-    "stale_28d": 416
+    "stale_28d": 641
   },
   "NORWAY": {
     "total_urls": 249,
@@ -207,7 +186,7 @@
     "failed": 760,
     "skipped": 0,
     "never_scanned": 0,
-    "stale_28d": 1033
+    "stale_28d": 2359
   },
   "REPUBLIC_OF_CYPRUS": {
     "error": "TOON file not found"
@@ -274,5 +253,26 @@
     "skipped": 0,
     "never_scanned": 0,
     "stale_28d": 19
+  },
+  "UNITED_KINGDOM_UK": {
+    "error": "TOON file not found"
+  },
+  "ESTONIA": {
+    "total_urls": 401,
+    "attempted": 401,
+    "successful": 386,
+    "failed": 15,
+    "skipped": 0,
+    "never_scanned": 0,
+    "stale_28d": 0
+  },
+  "AUSTRIA": {
+    "total_urls": 822,
+    "attempted": 822,
+    "successful": 787,
+    "failed": 35,
+    "skipped": 0,
+    "never_scanned": 0,
+    "stale_28d": 0
   }
 }

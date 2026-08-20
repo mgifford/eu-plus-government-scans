@@ -1,418 +1,418 @@
 {
   "country_code": "BULGARIA",
-  "total_relationships": 1719,
+  "total_relationships": 1775,
   "total_source_domains": 51,
   "top_source_domains": [
     {
       "domain": "sofia.bg",
-      "count": 495
+      "count": 975
     },
     {
       "domain": "government.bg",
-      "count": 389
+      "count": 790
     },
     {
       "domain": "gabrovo.bg",
-      "count": 294
+      "count": 593
     },
     {
       "domain": "varna.bg",
-      "count": 291
+      "count": 582
     },
     {
       "domain": "burgas.bg",
-      "count": 202
+      "count": 404
     },
     {
       "domain": "pleven.bg",
-      "count": 194
-    },
-    {
-      "domain": "nsi.bg",
-      "count": 150
+      "count": 386
     },
     {
       "domain": "pernik.bg",
-      "count": 139
+      "count": 278
+    },
+    {
+      "domain": "nsi.bg",
+      "count": 255
     },
     {
       "domain": "shumen.bg",
-      "count": 119
+      "count": 238
     },
     {
       "domain": "sliven.bg",
-      "count": 116
+      "count": 230
     },
     {
       "domain": "lovech.bg",
-      "count": 89
+      "count": 178
     },
     {
       "domain": "haskovo.bg",
-      "count": 86
+      "count": 176
     },
     {
       "domain": "president.bg",
-      "count": 76
+      "count": 152
     },
     {
       "domain": "pazardzhik.bg",
-      "count": 66
+      "count": 132
     },
     {
       "domain": "dobrich.bg",
-      "count": 61
-    },
-    {
-      "domain": "yambol.bg",
-      "count": 57
+      "count": 124
     },
     {
       "domain": "plovdiv.bg",
-      "count": 47
+      "count": 123
+    },
+    {
+      "domain": "yambol.bg",
+      "count": 113
     },
     {
       "domain": "silistra.bg",
-      "count": 41
+      "count": 82
     },
     {
       "domain": "iag.bg",
-      "count": 33
+      "count": 64
     },
     {
       "domain": "crc.bg",
-      "count": 31
+      "count": 62
     },
     {
       "domain": "bnb.bg",
-      "count": 28
+      "count": 56
     },
     {
       "domain": "cem.bg",
-      "count": 27
+      "count": 54
     },
     {
       "domain": "mrrb.bg",
-      "count": 26
+      "count": 52
     },
     {
       "domain": "mfa.bg",
-      "count": 24
+      "count": 48
     },
     {
       "domain": "iamn.bg",
-      "count": 22
+      "count": 44
     },
     {
       "domain": "kzp.bg",
-      "count": 18
+      "count": 36
     },
     {
       "domain": "parliament.bg",
-      "count": 18
+      "count": 36
     },
     {
       "domain": "nhif.bg",
-      "count": 17
+      "count": 34
     },
     {
       "domain": "gov.bg",
-      "count": 16
+      "count": 32
     },
     {
       "domain": "mod.bg",
-      "count": 16
+      "count": 31
     },
     {
       "domain": "bda.bg",
-      "count": 15
+      "count": 30
     },
     {
       "domain": "constcourt.bg",
-      "count": 15
+      "count": 30
     },
     {
       "domain": "nab-bas.bg",
-      "count": 15
+      "count": 30
     },
     {
       "domain": "ombudsman.bg",
-      "count": 15
+      "count": 30
     },
     {
       "domain": "nipa.bg",
-      "count": 14
-    },
-    {
-      "domain": "egov.bg",
-      "count": 13
+      "count": 28
     },
     {
       "domain": "fsc.bg",
-      "count": 13
-    },
-    {
-      "domain": "cadastre.bg",
-      "count": 12
+      "count": 26
     },
     {
       "domain": "dker.bg",
-      "count": 12
+      "count": 24
+    },
+    {
+      "domain": "cadastre.bg",
+      "count": 23
     },
     {
       "domain": "statereserve.bg",
-      "count": 12
+      "count": 23
     },
     {
       "domain": "dato.bg",
-      "count": 11
+      "count": 22
+    },
+    {
+      "domain": "nssi.bg",
+      "count": 22
+    },
+    {
+      "domain": "cposa.bg",
+      "count": 20
+    },
+    {
+      "domain": "dar.bg",
+      "count": 20
+    },
+    {
+      "domain": "registryagency.bg",
+      "count": 20
+    },
+    {
+      "domain": "nbksrs.bg",
+      "count": 18
+    },
+    {
+      "domain": "egov.bg",
+      "count": 16
+    },
+    {
+      "domain": "nra.bg",
+      "count": 16
+    },
+    {
+      "domain": "caaf.bg",
+      "count": 12
     },
     {
       "domain": "militaryclubs.bg",
       "count": 11
     },
     {
-      "domain": "nssi.bg",
-      "count": 11
-    },
-    {
-      "domain": "cposa.bg",
-      "count": 10
-    },
-    {
-      "domain": "dar.bg",
-      "count": 10
-    },
-    {
-      "domain": "registryagency.bg",
-      "count": 10
-    },
-    {
-      "domain": "nbksrs.bg",
-      "count": 9
-    },
-    {
-      "domain": "nra.bg",
-      "count": 8
-    },
-    {
-      "domain": "caaf.bg",
-      "count": 6
-    },
-    {
       "domain": "comdos.bg",
-      "count": 5
+      "count": 10
     }
   ],
   "top_target_domains": [
     {
       "domain": "sofia.bg",
-      "count": 225
+      "count": 435
     },
     {
       "domain": "government.bg",
-      "count": 199
-    },
-    {
-      "domain": "gabrovo.bg",
-      "count": 140
+      "count": 403
     },
     {
       "domain": "varna.bg",
-      "count": 138
+      "count": 276
+    },
+    {
+      "domain": "gabrovo.bg",
+      "count": 270
     },
     {
       "domain": "facebook.com",
-      "count": 118
+      "count": 234
     },
     {
       "domain": "pleven.bg",
-      "count": 110
+      "count": 222
     },
     {
       "domain": "googleapis.com",
-      "count": 105
-    },
-    {
-      "domain": "nsi.bg",
-      "count": 96
+      "count": 210
     },
     {
       "domain": "burgas.bg",
-      "count": 94
+      "count": 188
     },
     {
       "domain": "google.com",
-      "count": 91
+      "count": 181
+    },
+    {
+      "domain": "nsi.bg",
+      "count": 165
     },
     {
       "domain": "youtube.com",
-      "count": 63
+      "count": 124
     },
     {
       "domain": "lovech.bg",
-      "count": 54
+      "count": 108
     },
     {
       "domain": "sliven.bg",
-      "count": 53
-    },
-    {
-      "domain": "egov.bg",
-      "count": 50
+      "count": 106
     },
     {
       "domain": "pernik.bg",
-      "count": 50
+      "count": 100
     },
     {
-      "domain": "shumen.bg",
-      "count": 43
-    },
-    {
-      "domain": "nksoftware.net",
-      "count": 42
+      "domain": "egov.bg",
+      "count": 86
     },
     {
       "domain": "haskovo.bg",
-      "count": 41
+      "count": 86
     },
     {
-      "domain": "cloudflare.com",
-      "count": 37
+      "domain": "shumen.bg",
+      "count": 86
+    },
+    {
+      "domain": "nksoftware.net",
+      "count": 84
     },
     {
       "domain": "googletagmanager.com",
-      "count": 37
+      "count": 77
     },
     {
-      "domain": "president.bg",
-      "count": 36
+      "domain": "cloudflare.com",
+      "count": 74
     },
     {
       "domain": "instagram.com",
-      "count": 36
+      "count": 74
+    },
+    {
+      "domain": "president.bg",
+      "count": 72
     },
     {
       "domain": "dobrich.bg",
-      "count": 35
+      "count": 72
     },
     {
       "domain": "pazardzhik.bg",
-      "count": 32
+      "count": 64
     },
     {
       "domain": "gstatic.com",
-      "count": 31
-    },
-    {
-      "domain": "europa.eu",
-      "count": 28
+      "count": 62
     },
     {
       "domain": "jsdelivr.net",
-      "count": 28
+      "count": 56
+    },
+    {
+      "domain": "europa.eu",
+      "count": 53
     },
     {
       "domain": "bnb.bg",
-      "count": 26
+      "count": 52
     },
     {
       "domain": "parliament.bg",
-      "count": 26
+      "count": 52
     },
     {
       "domain": "twitter.com",
-      "count": 23
+      "count": 46
     },
     {
       "domain": "silistra.bg",
-      "count": 23
-    },
-    {
-      "domain": "eop.bg",
-      "count": 22
+      "count": 46
     },
     {
       "domain": "uslugi.io",
-      "count": 22
+      "count": 44
+    },
+    {
+      "domain": "eop.bg",
+      "count": 40
     },
     {
       "domain": "yambol.bg",
-      "count": 20
+      "count": 40
     },
     {
       "domain": "imeon.bg",
-      "count": 19
+      "count": 38
     },
     {
       "domain": "mfa.bg",
-      "count": 19
-    },
-    {
-      "domain": "116111.bg",
-      "count": 17
-    },
-    {
-      "domain": "evroto.bg",
-      "count": 16
-    },
-    {
-      "domain": "jquery.com",
-      "count": 16
-    },
-    {
-      "domain": "iag.bg",
-      "count": 16
-    },
-    {
-      "domain": "bootstrapcdn.com",
-      "count": 15
-    },
-    {
-      "domain": "ombudsman.bg",
-      "count": 15
-    },
-    {
-      "domain": "linkedin.com",
-      "count": 14
-    },
-    {
-      "domain": "sliven.net",
-      "count": 12
-    },
-    {
-      "domain": "nhif.bg",
-      "count": 12
+      "count": 38
     },
     {
       "domain": "plovdiv.bg",
-      "count": 12
+      "count": 36
+    },
+    {
+      "domain": "116111.bg",
+      "count": 35
+    },
+    {
+      "domain": "bootstrapcdn.com",
+      "count": 32
+    },
+    {
+      "domain": "evroto.bg",
+      "count": 31
+    },
+    {
+      "domain": "jquery.com",
+      "count": 30
+    },
+    {
+      "domain": "linkedin.com",
+      "count": 30
+    },
+    {
+      "domain": "iag.bg",
+      "count": 30
+    },
+    {
+      "domain": "ombudsman.bg",
+      "count": 30
+    },
+    {
+      "domain": "sliven.net",
+      "count": 24
+    },
+    {
+      "domain": "nhif.bg",
+      "count": 24
     },
     {
       "domain": "cadastre.bg",
-      "count": 11
+      "count": 22
     },
     {
       "domain": "nra.bg",
-      "count": 11
+      "count": 22
     },
     {
       "domain": "dker.bg",
-      "count": 11
+      "count": 22
     },
     {
       "domain": "itservice-bg.net",
-      "count": 11
+      "count": 22
     }
   ],
   "relationship_types": {
-    "editorial_link": 1013,
-    "form_destination": 105,
-    "image_or_media_dependency": 155,
-    "script_dependency": 230,
-    "stylesheet_dependency": 197,
+    "editorial_link": 1054,
+    "form_destination": 107,
+    "image_or_media_dependency": 158,
+    "script_dependency": 236,
+    "stylesheet_dependency": 201,
     "font_or_preload_dependency": 19
   },
-  "generated_at": "2026-08-17T01:34:16.307768+00:00"
+  "generated_at": "2026-08-20T01:58:49.699242+00:00"
 }
