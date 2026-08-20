@@ -9,9 +9,9 @@
     "total_source_domains": 45,
     "file": "belgium.json"
   },
-  "GERMANY": {
-    "total_relationships": 21802,
-    "total_source_domains": 222,
-    "file": "germany.json"
+  "GREECE": {
+    "total_relationships": 8445,
+    "total_source_domains": 362,
+    "file": "greece.json"
   }
 }

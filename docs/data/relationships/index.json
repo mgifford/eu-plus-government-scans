@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-20T13:35:48.332695+00:00",
+  "generated_at": "2026-08-20T19:26:43.895664+00:00",
   "shard_max_bytes": 33554432,
-  "total_rows": 292794,
-  "total_bytes": 139767395,
+  "total_rows": 292868,
+  "total_bytes": 140748836,
   "shards": [
     {
       "file": "at.001.jsonl",
@@ -151,8 +151,8 @@
     {
       "file": "gr.001.jsonl",
       "group": "gr",
-      "rows": 8371,
-      "bytes": 3599390
+      "rows": 8445,
+      "bytes": 4580831
     },
     {
       "file": "hr.001.jsonl",
