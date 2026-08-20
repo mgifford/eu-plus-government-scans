@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T13:35:53.249169+00:00",
+  "generated_at": "2026-08-20T19:26:50.729384+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -178,12 +178,12 @@
     {
       "service": "googletagmanager.com",
       "countries": 32,
-      "domains": 2521
+      "domains": 2523
     },
     {
       "service": "jsdelivr.net",
       "countries": 32,
-      "domains": 1051
+      "domains": 1052
     },
     {
       "service": "fontawesome.com",
@@ -198,12 +198,12 @@
     {
       "service": "gstatic.com",
       "countries": 31,
-      "domains": 1552
+      "domains": 1554
     },
     {
       "service": "cloudflare.com",
       "countries": 31,
-      "domains": 1419
+      "domains": 1420
     },
     {
       "service": "jquery.com",
@@ -223,7 +223,7 @@
     {
       "service": "typekit.net",
       "countries": 26,
-      "domains": 254
+      "domains": 255
     },
     {
       "service": "facebook.com",
@@ -924,17 +924,17 @@
       "country_code": "GREECE",
       "country": "Greece",
       "service": "googletagmanager.com",
-      "domains": 129,
+      "domains": 131,
       "scanned_domains": 360,
-      "percent": 35.8
+      "percent": 36.4
     },
     {
       "country_code": "GREECE",
       "country": "Greece",
       "service": "jsdelivr.net",
-      "domains": 59,
+      "domains": 60,
       "scanned_domains": 360,
-      "percent": 16.4
+      "percent": 16.7
     },
     {
       "country_code": "GREECE",
@@ -956,17 +956,17 @@
       "country_code": "GREECE",
       "country": "Greece",
       "service": "gstatic.com",
-      "domains": 103,
+      "domains": 105,
       "scanned_domains": 360,
-      "percent": 28.6
+      "percent": 29.2
     },
     {
       "country_code": "GREECE",
       "country": "Greece",
       "service": "cloudflare.com",
-      "domains": 59,
+      "domains": 60,
       "scanned_domains": 360,
-      "percent": 16.4
+      "percent": 16.7
     },
     {
       "country_code": "GREECE",
@@ -996,9 +996,9 @@
       "country_code": "GREECE",
       "country": "Greece",
       "service": "typekit.net",
-      "domains": 2,
+      "domains": 3,
       "scanned_domains": 360,
-      "percent": 0.6
+      "percent": 0.8
     },
     {
       "country_code": "GREECE",
