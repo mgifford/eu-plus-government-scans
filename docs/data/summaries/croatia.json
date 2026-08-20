@@ -1,6 +1,6 @@
 {
   "country_code": "CROATIA",
-  "total_relationships": 1328,
+  "total_relationships": 1343,
   "total_source_domains": 30,
   "top_source_domains": [
     {
@@ -13,7 +13,7 @@
     },
     {
       "domain": "rijeka.hr",
-      "count": 573
+      "count": 580
     },
     {
       "domain": "slavonski-brod.hr",
@@ -48,6 +48,10 @@
       "count": 152
     },
     {
+      "domain": "hzzo.hr",
+      "count": 145
+    },
+    {
       "domain": "pozega.hr",
       "count": 133
     },
@@ -62,10 +66,6 @@
     {
       "domain": "koprivnica.hr",
       "count": 116
-    },
-    {
-      "domain": "hzzo.hr",
-      "count": 112
     },
     {
       "domain": "split.hr",
@@ -131,15 +131,15 @@
     },
     {
       "domain": "gov.hr",
-      "count": 500
+      "count": 503
     },
     {
       "domain": "rijeka.hr",
-      "count": 223
+      "count": 228
     },
     {
       "domain": "facebook.com",
-      "count": 208
+      "count": 210
     },
     {
       "domain": "googletagmanager.com",
@@ -151,7 +151,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 142
+      "count": 143
     },
     {
       "domain": "youtube.com",
@@ -159,7 +159,7 @@
     },
     {
       "domain": "hzjz.hr",
-      "count": 132
+      "count": 133
     },
     {
       "domain": "sabor.hr",
@@ -171,11 +171,15 @@
     },
     {
       "domain": "twitter.com",
+      "count": 100
+    },
+    {
+      "domain": "hzzo.hr",
       "count": 98
     },
     {
       "domain": "europa.eu",
-      "count": 88
+      "count": 89
     },
     {
       "domain": "dzs.hr",
@@ -187,10 +191,6 @@
     },
     {
       "domain": "google.com",
-      "count": 78
-    },
-    {
-      "domain": "hzzo.hr",
       "count": 78
     },
     {
@@ -282,11 +282,11 @@
       "count": 25
     },
     {
-      "domain": "flickr.com",
-      "count": 24
+      "domain": "nn.hr",
+      "count": 25
     },
     {
-      "domain": "nn.hr",
+      "domain": "flickr.com",
       "count": 24
     },
     {
@@ -327,12 +327,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 863,
+    "editorial_link": 874,
     "font_or_preload_dependency": 18,
-    "form_destination": 62,
-    "image_or_media_dependency": 98,
-    "script_dependency": 166,
-    "stylesheet_dependency": 121
+    "form_destination": 63,
+    "image_or_media_dependency": 99,
+    "script_dependency": 167,
+    "stylesheet_dependency": 122
   },
-  "generated_at": "2026-08-17T13:30:39.746170+00:00"
+  "generated_at": "2026-08-20T07:32:26.195522+00:00"
 }
