@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T19:22:53.234320+00:00",
+  "generated_at": "2026-08-20T01:58:52.403675+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -178,7 +178,7 @@
     {
       "service": "googletagmanager.com",
       "countries": 32,
-      "domains": 2513
+      "domains": 2514
     },
     {
       "service": "jsdelivr.net",
@@ -218,7 +218,7 @@
     {
       "service": "bootstrapcdn.com",
       "countries": 28,
-      "domains": 563
+      "domains": 564
     },
     {
       "service": "typekit.net",
@@ -2524,9 +2524,9 @@
       "country_code": "BULGARIA",
       "country": "Bulgaria",
       "service": "googletagmanager.com",
-      "domains": 13,
+      "domains": 14,
       "scanned_domains": 55,
-      "percent": 23.6
+      "percent": 25.5
     },
     {
       "country_code": "BULGARIA",
@@ -2588,9 +2588,9 @@
       "country_code": "BULGARIA",
       "country": "Bulgaria",
       "service": "bootstrapcdn.com",
-      "domains": 6,
+      "domains": 7,
       "scanned_domains": 55,
-      "percent": 10.9
+      "percent": 12.7
     },
     {
       "country_code": "BULGARIA",
