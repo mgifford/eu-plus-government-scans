@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-08-20 07:55 UTC — last scan: 2026-08-20_
+_Stats as of 2026-08-20 08:57 UTC — last scan: 2026-08-20_
 
-**93** scan batches run
+**95** scan batches run
 
 **16,526** of **87,696** available pages scanned (**18.8%** coverage)
 **15,308** of **16,526** scanned pages were reachable (**92.6%**)
-**7,016** reachable pages loaded at least one third-party script (**45.8%** of reachable)
-**9,782** known third-party service loads identified
+**7,019** reachable pages loaded at least one third-party script (**45.9%** of reachable)
+**9,788** known third-party service loads identified
 **22** unique known services across **14** categories
 
 ---
@@ -27,13 +27,13 @@ _Stats as of 2026-08-20 07:55 UTC — last scan: 2026-08-20_
 | Canada | 377 | 4,469 | 362 | 187 | 311 | 51.7 | 85.9 | 2026-08-16 |
 | Croatia | 257 | 257 | 254 | 138 | 193 | 54.3 | 76.0 | 2026-08-19 |
 | Czechia | 866 | 866 | 798 | 476 | 792 | 59.6 | 99.2 | 2026-08-20 |
-| Denmark | 1,514 | 1,536 | 1,486 | 807 | 2,085 | 54.3 | 140.3 | 2026-08-17 |
+| Denmark | 1,514 | 1,536 | 1,486 | 808 | 2,085 | 54.4 | 140.3 | 2026-08-20 |
 | Estonia | 401 | 401 | 384 | 134 | 115 | 34.9 | 29.9 | 2026-08-19 |
 | Finland | 199 | 199 | 189 | 46 | 26 | 24.3 | 13.8 | 2026-08-20 |
 | France | 284 | 10,009 | 256 | 146 | 50 | 57.0 | 19.5 | 2026-08-16 |
 | Germany | 619 | 6,599 | 586 | 160 | 184 | 27.3 | 31.4 | 2026-08-17 |
 | Greece | 582 | 1,752 | 548 | 234 | 313 | 42.7 | 57.1 | 2026-08-17 |
-| Hungary | 392 | 392 | 296 | 126 | 190 | 42.6 | 64.2 | 2026-08-17 |
+| Hungary | 392 | 392 | 296 | 128 | 196 | 43.2 | 66.2 | 2026-08-20 |
 | Iceland | 145 | 145 | 143 | 78 | 46 | 54.5 | 32.2 | 2026-08-17 |
 | Ireland | 536 | 536 | 499 | 264 | 744 | 52.9 | 149.1 | 2026-08-17 |
 | Italy | 407 | 5,351 | 385 | 148 | 24 | 38.4 | 6.2 | 2026-08-18 |
@@ -62,7 +62,7 @@ _Stats as of 2026-08-20 07:55 UTC — last scan: 2026-08-20_
 
 | # | Service | Loads |
 |--:|---------|------:|
-| 1 | cdnjs (Cloudflare CDN) | **2,004** |
+| 1 | cdnjs (Cloudflare CDN) | **2,010** |
 | 2 | jsDelivr CDN | **1,869** |
 | 3 | Google Analytics (GA4) | **1,463** |
 | 4 | jQuery | **830** |
@@ -89,7 +89,7 @@ _Stats as of 2026-08-20 07:55 UTC — last scan: 2026-08-20_
 |--:|---------|----------------:|------------------------------:|
 | 1 | Google Analytics (GA4) | **1,437** | **193.9%** |
 | 2 | jsDelivr CDN | **1,019** | **137.5%** |
-| 3 | cdnjs (Cloudflare CDN) | **742** | **100.1%** |
+| 3 | cdnjs (Cloudflare CDN) | **744** | **100.4%** |
 | 4 | Google reCAPTCHA | **616** | **83.1%** |
 | 5 | jQuery | **563** | **76.0%** |
 | 6 | Google Tag Manager | **519** | **70.0%** |
@@ -112,7 +112,7 @@ _Stats as of 2026-08-20 07:55 UTC — last scan: 2026-08-20_
 
 | # | Category | Loads |
 |--:|----------|------:|
-| 1 | CDN | **4,973** |
+| 1 | CDN | **4,979** |
 | 2 | Analytics | **1,599** |
 | 3 | JavaScript Library | **1,363** |
 | 4 | Cookie Consent | **860** |
@@ -133,7 +133,7 @@ Infrastructure-heavy categories (CDNs, core libraries, and UI assets):
 
 | # | Infrastructure Category | Loads |
 |--:|--------------------------|------:|
-| 1 | CDN | **4,973** |
+| 1 | CDN | **4,979** |
 | 2 | JavaScript Library | **1,363** |
 | 3 | Icon Library | **185** |
 | 4 | UI Framework | **105** |
@@ -171,7 +171,7 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 | 12 | `www.youtube.com` | **214** | **214** |
 | 13 | `translate.google.com` | **205** | **205** |
 | 14 | `content.powerapps.com` | **192** | **16** |
-| 15 | `cdn.hjoerring.dk` | **187** | **17** |
+| 15 | `siteimproveanalytics.com` | **188** | **188** |
 
 > These hosts were seen as third-party script sources but did not match a known service signature. Review this queue regularly and promote stable, policy-relevant hosts into the signature list.
 
