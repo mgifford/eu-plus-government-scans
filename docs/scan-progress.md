@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-08-20 13:52 UTC_
+_Generated: 2026-08-20 14:21 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -185,7 +185,7 @@ Checks whether each government page links to an accessibility statement as requi
 | Estonia | 401 | 389 | 149 | 79 | 38% | Aug 2026 |
 | Finland | 199 | 188 | 133 | 126 | 71% | Aug 2026 |
 | France | 5,464 | 5,012 | 1,534 | 1,477 | 31% | Aug 2026 |
-| Germany | 5,628 | 5,345 | 3,872 | 3,214 | 72% | Aug 2026 |
+| Germany | 5,628 | 5,345 | 3,873 | 3,215 | 72% | Aug 2026 |
 | Greece | 1,752 | 1,617 | 415 | 259 | 26% | Aug 2026 |
 | Hungary | 392 | 293 | 57 | 49 | 19% | Aug 2026 |
 | Iceland | 145 | 143 | 14 | 5 | 10% | Aug 2026 |
