@@ -1,6 +1,6 @@
 {
   "country_code": "GERMANY",
-  "total_relationships": 21789,
+  "total_relationships": 21802,
   "total_source_domains": 222,
   "top_source_domains": [
     {
@@ -9,23 +9,23 @@
     },
     {
       "domain": "rlp.de",
-      "count": 21149
+      "count": 22010
     },
     {
       "domain": "niedersachsen.de",
-      "count": 15337
+      "count": 16636
     },
     {
       "domain": "bayern.de",
-      "count": 11331
+      "count": 11815
     },
     {
       "domain": "nrw.de",
-      "count": 9074
+      "count": 9251
     },
     {
       "domain": "hamburg.de",
-      "count": 7578
+      "count": 7782
     },
     {
       "domain": "diplo.de",
@@ -211,27 +211,27 @@
     },
     {
       "domain": "rlp.de",
-      "count": 16767
+      "count": 17565
     },
     {
       "domain": "niedersachsen.de",
-      "count": 13824
+      "count": 14941
     },
     {
       "domain": "bayern.de",
-      "count": 7243
+      "count": 7510
     },
     {
       "domain": "nrw.de",
-      "count": 5833
+      "count": 5973
     },
     {
       "domain": "hamburg.de",
-      "count": 4716
+      "count": 4835
     },
     {
       "domain": "hessen.de",
-      "count": 3224
+      "count": 3227
     },
     {
       "domain": "diplo.de",
@@ -239,23 +239,23 @@
     },
     {
       "domain": "facebook.com",
-      "count": 2231
-    },
-    {
-      "domain": "sachsen-anhalt.de",
-      "count": 2090
+      "count": 2254
     },
     {
       "domain": "instagram.com",
-      "count": 2071
+      "count": 2097
+    },
+    {
+      "domain": "sachsen-anhalt.de",
+      "count": 2091
     },
     {
       "domain": "bund.de",
-      "count": 1612
+      "count": 1621
     },
     {
       "domain": "twitter.com",
-      "count": 1471
+      "count": 1478
     },
     {
       "domain": "bremen.de",
@@ -263,19 +263,19 @@
     },
     {
       "domain": "thueringen.de",
-      "count": 1389
+      "count": 1390
     },
     {
       "domain": "youtube.com",
-      "count": 1324
+      "count": 1334
     },
     {
       "domain": "linkedin.com",
-      "count": 1097
+      "count": 1114
     },
     {
       "domain": "berlin.de",
-      "count": 923
+      "count": 924
     },
     {
       "domain": "etracker.com",
@@ -299,19 +299,19 @@
     },
     {
       "domain": "enable-javascript.com",
-      "count": 674
+      "count": 675
     },
     {
       "domain": "lehrer-werden-in-sachsen.de",
       "count": 661
     },
     {
-      "domain": "polyplanet.de",
-      "count": 474
+      "domain": "readspeaker.com",
+      "count": 495
     },
     {
-      "domain": "readspeaker.com",
-      "count": 470
+      "domain": "polyplanet.de",
+      "count": 474
     },
     {
       "domain": "jsdelivr.net",
@@ -319,19 +319,19 @@
     },
     {
       "domain": "usercentrics.eu",
-      "count": 352
+      "count": 361
     },
     {
       "domain": "google.com",
-      "count": 316
+      "count": 330
     },
     {
       "domain": "wordpress.org",
-      "count": 314
+      "count": 316
     },
     {
       "domain": "justiz.de",
-      "count": 300
+      "count": 308
     },
     {
       "domain": "duesseldorf.de",
@@ -351,11 +351,11 @@
     },
     {
       "domain": "brandenburg.de",
-      "count": 283
+      "count": 284
     },
     {
       "domain": "justiz-karriere.nrw",
-      "count": 278
+      "count": 279
     },
     {
       "domain": "dguv.de",
@@ -363,11 +363,15 @@
     },
     {
       "domain": "europa.eu",
-      "count": 229
+      "count": 233
     },
     {
       "domain": "xing.com",
-      "count": 217
+      "count": 219
+    },
+    {
+      "domain": "stark-fuer-gerechtigkeit.de",
+      "count": 218
     },
     {
       "domain": "dwd.de",
@@ -379,40 +383,36 @@
     },
     {
       "domain": "x.com",
-      "count": 200
+      "count": 203
+    },
+    {
+      "domain": "eye-able.com",
+      "count": 202
     },
     {
       "domain": "deutschland.de",
       "count": 199
     },
     {
-      "domain": "eye-able.com",
-      "count": 199
-    },
-    {
-      "domain": "stark-fuer-gerechtigkeit.de",
-      "count": 199
-    },
-    {
       "domain": "elster.de",
-      "count": 173
+      "count": 177
     },
     {
       "domain": "schulcms.net",
       "count": 170
     },
     {
-      "domain": "stuttgart.de",
+      "domain": "arbeitsagentur.de",
       "count": 161
     }
   ],
   "relationship_types": {
-    "editorial_link": 11021,
+    "editorial_link": 11030,
     "font_or_preload_dependency": 335,
-    "image_or_media_dependency": 2743,
-    "script_dependency": 2857,
-    "stylesheet_dependency": 2702,
-    "form_destination": 2131
+    "image_or_media_dependency": 2744,
+    "script_dependency": 2858,
+    "stylesheet_dependency": 2703,
+    "form_destination": 2132
   },
-  "generated_at": "2026-08-17T19:28:08.978943+00:00"
+  "generated_at": "2026-08-20T13:35:51.273895+00:00"
 }
