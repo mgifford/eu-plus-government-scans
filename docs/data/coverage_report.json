@@ -17,47 +17,20 @@
     "never_scanned": 0,
     "stale_28d": 0
   },
-  "ITALY": {
-    "total_urls": 5351,
-    "attempted": 5351,
-    "successful": 4840,
-    "failed": 511,
+  "PORTUGAL": {
+    "total_urls": 3508,
+    "attempted": 3508,
+    "successful": 2874,
+    "failed": 634,
     "skipped": 0,
     "never_scanned": 0,
-    "stale_28d": 0
+    "stale_28d": 1228
   },
   "ICELAND": {
     "total_urls": 145,
     "attempted": 145,
     "successful": 143,
     "failed": 2,
-    "skipped": 0,
-    "never_scanned": 0,
-    "stale_28d": 0
-  },
-  "CZECHIA": {
-    "total_urls": 866,
-    "attempted": 866,
-    "successful": 796,
-    "failed": 70,
-    "skipped": 0,
-    "never_scanned": 0,
-    "stale_28d": 165
-  },
-  "PORTUGAL": {
-    "total_urls": 3508,
-    "attempted": 3508,
-    "successful": 2908,
-    "failed": 600,
-    "skipped": 0,
-    "never_scanned": 0,
-    "stale_28d": 2446
-  },
-  "LITHUANIA": {
-    "total_urls": 122,
-    "attempted": 122,
-    "successful": 112,
-    "failed": 10,
     "skipped": 0,
     "never_scanned": 0,
     "stale_28d": 0
@@ -78,13 +51,13 @@
     "failed": 760,
     "skipped": 0,
     "never_scanned": 0,
-    "stale_28d": 2359
+    "stale_28d": 2391
   },
-  "NORWAY": {
-    "total_urls": 249,
-    "attempted": 249,
-    "successful": 241,
-    "failed": 8,
+  "LITHUANIA": {
+    "total_urls": 122,
+    "attempted": 122,
+    "successful": 112,
+    "failed": 10,
     "skipped": 0,
     "never_scanned": 0,
     "stale_28d": 0
@@ -107,11 +80,11 @@
     "never_scanned": 0,
     "stale_28d": 3189
   },
-  "FINLAND": {
-    "total_urls": 199,
-    "attempted": 199,
-    "successful": 189,
-    "failed": 10,
+  "NORWAY": {
+    "total_urls": 249,
+    "attempted": 249,
+    "successful": 241,
+    "failed": 8,
     "skipped": 0,
     "never_scanned": 0,
     "stale_28d": 0
@@ -134,8 +107,14 @@
     "never_scanned": 0,
     "stale_28d": 981
   },
-  "REPUBLIC_OF_CYPRUS": {
-    "error": "TOON file not found"
+  "FINLAND": {
+    "total_urls": 199,
+    "attempted": 199,
+    "successful": 189,
+    "failed": 10,
+    "skipped": 0,
+    "never_scanned": 0,
+    "stale_28d": 0
   },
   "MALTA": {
     "total_urls": 610,
@@ -149,14 +128,8 @@
   "UNITED_KINGDOM_UK": {
     "error": "TOON file not found"
   },
-  "SLOVAKIA": {
-    "total_urls": 442,
-    "attempted": 442,
-    "successful": 408,
-    "failed": 34,
-    "skipped": 0,
-    "never_scanned": 0,
-    "stale_28d": 0
+  "REPUBLIC_OF_CYPRUS": {
+    "error": "TOON file not found"
   },
   "LUXEMBOURG": {
     "total_urls": 573,
@@ -174,13 +147,13 @@
     "failed": 595,
     "skipped": 0,
     "never_scanned": 0,
-    "stale_28d": 2855
+    "stale_28d": 3053
   },
-  "SLOVENIA": {
-    "total_urls": 214,
-    "attempted": 214,
-    "successful": 207,
-    "failed": 7,
+  "SLOVAKIA": {
+    "total_urls": 442,
+    "attempted": 442,
+    "successful": 408,
+    "failed": 34,
     "skipped": 0,
     "never_scanned": 0,
     "stale_28d": 0
@@ -203,11 +176,11 @@
     "never_scanned": 0,
     "stale_28d": 1782
   },
-  "ESTONIA": {
-    "total_urls": 401,
-    "attempted": 401,
-    "successful": 386,
-    "failed": 15,
+  "SLOVENIA": {
+    "total_urls": 214,
+    "attempted": 214,
+    "successful": 207,
+    "failed": 7,
     "skipped": 0,
     "never_scanned": 0,
     "stale_28d": 0
@@ -228,13 +201,13 @@
     "failed": 218,
     "skipped": 0,
     "never_scanned": 0,
-    "stale_28d": 3868
+    "stale_28d": 4621
   },
-  "BULGARIA": {
-    "total_urls": 353,
-    "attempted": 353,
-    "successful": 301,
-    "failed": 52,
+  "ESTONIA": {
+    "total_urls": 401,
+    "attempted": 401,
+    "successful": 386,
+    "failed": 15,
     "skipped": 0,
     "never_scanned": 0,
     "stale_28d": 0
@@ -257,11 +230,11 @@
     "never_scanned": 0,
     "stale_28d": 59
   },
-  "CROATIA": {
-    "total_urls": 257,
-    "attempted": 257,
-    "successful": 253,
-    "failed": 4,
+  "BULGARIA": {
+    "total_urls": 353,
+    "attempted": 353,
+    "successful": 301,
+    "failed": 52,
     "skipped": 0,
     "never_scanned": 0,
     "stale_28d": 0
@@ -274,5 +247,32 @@
     "skipped": 0,
     "never_scanned": 0,
     "stale_28d": 0
+  },
+  "ITALY": {
+    "total_urls": 5351,
+    "attempted": 5351,
+    "successful": 4840,
+    "failed": 511,
+    "skipped": 0,
+    "never_scanned": 0,
+    "stale_28d": 0
+  },
+  "CROATIA": {
+    "total_urls": 257,
+    "attempted": 257,
+    "successful": 253,
+    "failed": 4,
+    "skipped": 0,
+    "never_scanned": 0,
+    "stale_28d": 0
+  },
+  "CZECHIA": {
+    "total_urls": 866,
+    "attempted": 866,
+    "successful": 796,
+    "failed": 70,
+    "skipped": 0,
+    "never_scanned": 0,
+    "stale_28d": 165
   }
 }
