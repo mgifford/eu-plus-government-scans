@@ -5,12 +5,12 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-08-21 19:39 UTC — last scan: 2026-08-21_
+_Stats as of 2026-08-21 20:41 UTC — last scan: 2026-08-21_
 
-**109** scan batches run
+**111** scan batches run
 
-**17,082** of **87,696** available pages scanned (**19.5%** coverage)
-**15,833** of **17,082** scanned pages were reachable (**92.7%**)
+**17,084** of **87,696** available pages scanned (**19.5%** coverage)
+**15,833** of **17,084** scanned pages were reachable (**92.7%**)
 **7,402** reachable pages loaded at least one third-party script (**46.8%** of reachable)
 **10,354** known third-party service loads identified
 **22** unique known services across **14** categories
@@ -46,9 +46,9 @@ _Stats as of 2026-08-21 19:39 UTC — last scan: 2026-08-21_
 | Poland | 445 | 14,951 | 420 | 211 | 303 | 50.2 | 72.1 | 2026-08-18 |
 | Portugal | 616 | 3,508 | 503 | 168 | 237 | 33.4 | 47.1 | 2026-08-18 |
 | Cyprus | 29 | 29 | 29 | 13 | 15 | 44.8 | 51.7 | 2026-08-21 |
-| Romania | 190 | 807 | 65 | 52 | 47 | 80.0 | 72.3 | 2026-08-19 |
+| Romania | 192 | 807 | 65 | 52 | 47 | 80.0 | 72.3 | 2026-08-21 |
 | Slovakia | 442 | 442 | 413 | 218 | 273 | 52.8 | 66.1 | 2026-08-21 |
-| Slovenia | 214 | 214 | 207 | 56 | 82 | 27.1 | 39.6 | 2026-08-19 |
+| Slovenia | 214 | 214 | 207 | 56 | 82 | 27.1 | 39.6 | 2026-08-21 |
 | Spain | 191 | 6,091 | 160 | 99 | 91 | 61.9 | 56.9 | 2026-08-18 |
 | Sweden | 763 | 1,702 | 710 | 180 | 56 | 25.4 | 7.9 | 2026-08-19 |
 | Switzerland | 805 | 2,123 | 788 | 173 | 177 | 22.0 | 22.5 | 2026-08-19 |
