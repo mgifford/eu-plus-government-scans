@@ -9,9 +9,19 @@
     "total_source_domains": 45,
     "file": "belgium.json"
   },
-  "GREECE": {
-    "total_relationships": 8445,
-    "total_source_domains": 362,
-    "file": "greece.json"
+  "ITALY": {
+    "total_relationships": 15935,
+    "total_source_domains": 151,
+    "file": "italy.json"
+  },
+  "ICELAND": {
+    "total_relationships": 549,
+    "total_source_domains": 20,
+    "file": "iceland.json"
+  },
+  "CZECHIA": {
+    "total_relationships": 2464,
+    "total_source_domains": 54,
+    "file": "czechia.json"
   }
 }
