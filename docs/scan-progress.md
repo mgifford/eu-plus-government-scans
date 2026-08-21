@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-08-21 20:41 UTC_
+_Generated: 2026-08-21 21:41 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -17,7 +17,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Social Media | 42,394 scanned (38,252 reachable) | 87,696 | <span role="img" aria-label="48.3% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:58px;"></span></span><span class="sm-bar__label">48.3%</span></span> | 5.7 days |
 | Technology | 46,346 scanned | 87,696 | <span role="img" aria-label="52.8% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:63px;"></span></span><span class="sm-bar__label">52.8%</span></span> | 5.6 days |
 | Lighthouse | 13,161 scanned | 87,696 | <span role="img" aria-label="15.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:18px;"></span></span><span class="sm-bar__label">15.0%</span></span> | 18.8 days |
-| Accessibility Statements | 54,040 scanned | 87,696 | <span role="img" aria-label="61.6% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:74px;"></span></span><span class="sm-bar__label">61.6%</span></span> | 5.3 days |
+| Accessibility Statements | 54,040 scanned | 87,696 | <span role="img" aria-label="61.6% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:74px;"></span></span><span class="sm-bar__label">61.6%</span></span> | 5.2 days |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by any scan type. **Avg Age** shows the mean number of days (or hours) since each URL in that scan type was last scanned — lower is fresher.
 
@@ -182,16 +182,16 @@ Checks whether each government page links to an accessibility statement as requi
 | Croatia | 257 | 254 | 103 | 78 | 41% | Aug 2026 |
 | Czechia | 866 | 798 | 446 | 395 | 56% | Aug 2026 |
 | Denmark | 1,536 | 1,507 | 959 | 941 | 64% | Aug 2026 |
-| Estonia | 401 | 389 | 149 | 79 | 38% | Aug 2026 |
+| Estonia | 401 | 390 | 149 | 79 | 38% | Aug 2026 |
 | Finland | 199 | 188 | 133 | 126 | 71% | Aug 2026 |
 | France | 5,464 | 5,012 | 1,534 | 1,477 | 31% | Aug 2026 |
 | Germany | 5,628 | 5,345 | 3,873 | 3,215 | 72% | Aug 2026 |
-| Greece | 1,752 | 1,617 | 415 | 259 | 26% | Aug 2026 |
+| Greece | 1,752 | 1,618 | 415 | 259 | 26% | Aug 2026 |
 | Hungary | 392 | 293 | 57 | 49 | 19% | Aug 2026 |
 | Iceland | 145 | 143 | 14 | 5 | 10% | Aug 2026 |
 | Ireland | 536 | 499 | 251 | 238 | 50% | Aug 2026 |
 | Italy | 4,309 | 3,851 | 1,863 | 1,796 | 48% | Aug 2026 |
-| Latvia | 803 | 761 | 481 | 442 | 63% | Aug 2026 |
+| Latvia | 803 | 762 | 492 | 449 | 65% | Aug 2026 |
 | Lithuania | 122 | 112 | 1 | 0 | 1% | Aug 2026 |
 | Luxembourg | 573 | 477 | 296 | 285 | 62% | Aug 2026 |
 | Malta | 610 | 595 | 382 | 377 | 64% | Aug 2026 |
