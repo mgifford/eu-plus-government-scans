@@ -5,13 +5,13 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-08-21 02:59 UTC — last scan: 2026-08-20_
+_Stats as of 2026-08-21 03:16 UTC — last scan: 2026-08-21_
 
-**101** scan batches run
+**104** scan batches run
 
 **17,013** of **87,696** available pages scanned (**19.4%** coverage)
-**15,773** of **17,013** scanned pages were reachable (**92.7%**)
-**7,370** reachable pages loaded at least one third-party script (**46.7%** of reachable)
+**15,777** of **17,013** scanned pages were reachable (**92.7%**)
+**7,375** reachable pages loaded at least one third-party script (**46.7%** of reachable)
 **10,311** known third-party service loads identified
 **22** unique known services across **14** categories
 
@@ -31,7 +31,7 @@ _Stats as of 2026-08-21 02:59 UTC — last scan: 2026-08-20_
 | Estonia | 401 | 401 | 384 | 134 | 115 | 34.9 | 29.9 | 2026-08-19 |
 | Finland | 199 | 199 | 189 | 46 | 26 | 24.3 | 13.8 | 2026-08-20 |
 | France | 284 | 10,009 | 256 | 146 | 50 | 57.0 | 19.5 | 2026-08-20 |
-| Germany | 619 | 6,599 | 586 | 160 | 184 | 27.3 | 31.4 | 2026-08-17 |
+| Germany | 619 | 6,599 | 586 | 160 | 184 | 27.3 | 31.4 | 2026-08-21 |
 | Greece | 582 | 1,752 | 548 | 234 | 313 | 42.7 | 57.1 | 2026-08-17 |
 | Hungary | 392 | 392 | 296 | 128 | 196 | 43.2 | 66.2 | 2026-08-20 |
 | Iceland | 145 | 145 | 143 | 78 | 46 | 54.5 | 32.2 | 2026-08-20 |
@@ -39,10 +39,10 @@ _Stats as of 2026-08-21 02:59 UTC — last scan: 2026-08-20_
 | Italy | 407 | 5,351 | 385 | 148 | 24 | 38.4 | 6.2 | 2026-08-18 |
 | Latvia | 803 | 803 | 762 | 261 | 285 | 34.3 | 37.4 | 2026-08-20 |
 | Lithuania | 122 | 122 | 112 | 57 | 113 | 50.9 | 100.9 | 2026-08-20 |
-| Luxembourg | 573 | 573 | 477 | 343 | 134 | 71.9 | 28.1 | 2026-08-18 |
+| Luxembourg | 573 | 573 | 481 | 348 | 134 | 72.3 | 27.9 | 2026-08-21 |
 | Malta | 610 | 610 | 595 | 465 | 1,280 | 78.2 | 215.1 | 2026-08-18 |
 | Netherlands | 945 | 945 | 902 | 359 | 277 | 39.8 | 30.7 | 2026-08-18 |
-| Norway | 249 | 249 | 242 | 136 | 114 | 56.2 | 47.1 | 2026-08-18 |
+| Norway | 249 | 249 | 242 | 136 | 114 | 56.2 | 47.1 | 2026-08-21 |
 | Poland | 445 | 14,951 | 420 | 211 | 303 | 50.2 | 72.1 | 2026-08-18 |
 | Portugal | 616 | 3,508 | 503 | 168 | 237 | 33.4 | 47.1 | 2026-08-18 |
 | Cyprus | 29 | 29 | 29 | 13 | 15 | 44.8 | 51.7 | 2026-08-18 |
@@ -163,7 +163,7 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 | 4 | `assets.epexio.com` | **381** | **15** |
 | 5 | `customer.cludo.com` | **328** | **247** |
 | 6 | `static.addtoany.com` | **312** | **312** |
-| 7 | `cdn.public.lu` | **298** | **239** |
+| 7 | `cdn.public.lu` | **302** | **243** |
 | 8 | `cookie-notice.plzen.eu` | **272** | **144** |
 | 9 | `dreambroker.com` | **246** | **246** |
 | 10 | `maps.googleapis.com` | **240** | **225** |
