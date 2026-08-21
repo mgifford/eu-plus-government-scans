@@ -5,14 +5,14 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-08-21 13:50 UTC — last scan: 2026-08-21_
+_Stats as of 2026-08-21 14:20 UTC — last scan: 2026-08-21_
 
-**104** scan batches run
+**105** scan batches run
 
-**53,602** of **87,696** available pages scanned (**61.1%** coverage)
-**48,628** of **53,602** scanned pages were reachable (**90.7%**)
-**22,138** of **48,628** reachable pages have an accessibility statement (**45.5%**)
-**19,553** pages have the statement link in the footer (**88.3%** of pages with a statement)
+**54,034** of **87,696** available pages scanned (**61.6%** coverage)
+**49,002** of **54,034** scanned pages were reachable (**90.7%**)
+**22,260** of **49,002** reachable pages have an accessibility statement (**45.4%**)
+**19,675** pages have the statement link in the footer (**88.4%** of pages with a statement)
 
 📥 Machine-readable results are available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
 
@@ -54,11 +54,11 @@ Each country entry in the JSON file includes page-level evidence for pages with 
 | Romania | 807 | 807 | 346 | 30 | 10 | 8.7% | Aug 2026 |
 | Slovakia | 442 | 442 | 413 | 185 | 166 | 44.8% | Aug 2026 |
 | Slovenia | 214 | 214 | 207 | 116 | 81 | 56.0% | Aug 2026 |
-| Spain | 2,914 | 6,091 | 2,417 | 1,034 | 872 | 42.8% | Aug 2026 |
+| Spain | 3,346 | 6,091 | 2,791 | 1,156 | 994 | 41.4% | Aug 2026 |
 | Sweden | 1,702 | 1,702 | 1,435 | 790 | 706 | 55.1% | Aug 2026 |
 | Switzerland | 2,123 | 2,123 | 2,076 | 1,023 | 1,022 | 49.3% | Aug 2026 |
 | United Kingdom | 5,617 | 19,511 | 5,295 | 2,902 | 2,716 | 54.8% | Aug 2026 |
-| **Total** | **53,608** | **87,696** | **48,634** | **22,144** | **19,559** | **45.5%** | — |
+| **Total** | **54,040** | **87,696** | **49,008** | **22,266** | **19,681** | **45.4%** | — |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
