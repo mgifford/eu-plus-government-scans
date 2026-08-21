@@ -11,13 +11,13 @@ power them, including which third-party JavaScript services they rely on.
 
 <!-- SCAN_PROGRESS_START -->
 
-_Progress as of 2026-08-21 14:20 UTC_
+_Progress as of 2026-08-21 14:53 UTC_
 
 | Scan Type | Pages Scanned | Coverage | Avg Age |
 |-----------|--------------|----------|---------|
 | **Combined Reachability** | **37,545 confirmed reachable** | **<span role="img" aria-label="42.8% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:51px;"></span></span><span class="sm-bar__label">42.8%</span></span>** | — |
-| Social Media | 41,485 scanned (37,444 reachable) | <span role="img" aria-label="47.3% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:57px;"></span></span><span class="sm-bar__label">47.3%</span></span> | 5.5 days |
-| Technology | 44,633 scanned | <span role="img" aria-label="50.9% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:61px;"></span></span><span class="sm-bar__label">50.9%</span></span> | 5.5 days |
+| Social Media | 41,485 scanned (37,444 reachable) | <span role="img" aria-label="47.3% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:57px;"></span></span><span class="sm-bar__label">47.3%</span></span> | 5.6 days |
+| Technology | 44,633 scanned | <span role="img" aria-label="50.9% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:61px;"></span></span><span class="sm-bar__label">50.9%</span></span> | 5.6 days |
 | Lighthouse | 13,161 scanned | <span role="img" aria-label="15.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:18px;"></span></span><span class="sm-bar__label">15.0%</span></span> | 18.7 days |
 | Accessibility Statements | 54,040 scanned | <span role="img" aria-label="61.6% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:74px;"></span></span><span class="sm-bar__label">61.6%</span></span> | 5.1 days |
 

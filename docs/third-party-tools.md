@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-08-21 14:20 UTC — last scan: 2026-08-21_
+_Stats as of 2026-08-21 14:53 UTC — last scan: 2026-08-21_
 
-**107** scan batches run
+**109** scan batches run
 
 **17,082** of **87,696** available pages scanned (**19.5%** coverage)
 **15,833** of **17,082** scanned pages were reachable (**92.7%**)
 **7,402** reachable pages loaded at least one third-party script (**46.8%** of reachable)
-**10,349** known third-party service loads identified
+**10,354** known third-party service loads identified
 **22** unique known services across **14** categories
 
 ---
@@ -41,13 +41,13 @@ _Stats as of 2026-08-21 14:20 UTC — last scan: 2026-08-21_
 | Lithuania | 122 | 122 | 112 | 57 | 113 | 50.9 | 100.9 | 2026-08-20 |
 | Luxembourg | 573 | 573 | 481 | 348 | 134 | 72.3 | 27.9 | 2026-08-21 |
 | Malta | 610 | 610 | 595 | 465 | 1,282 | 78.2 | 215.5 | 2026-08-21 |
-| Netherlands | 945 | 945 | 902 | 359 | 277 | 39.8 | 30.7 | 2026-08-18 |
+| Netherlands | 945 | 945 | 902 | 359 | 277 | 39.8 | 30.7 | 2026-08-21 |
 | Norway | 249 | 249 | 242 | 136 | 114 | 56.2 | 47.1 | 2026-08-21 |
 | Poland | 445 | 14,951 | 420 | 211 | 303 | 50.2 | 72.1 | 2026-08-18 |
 | Portugal | 616 | 3,508 | 503 | 168 | 237 | 33.4 | 47.1 | 2026-08-18 |
 | Cyprus | 29 | 29 | 29 | 13 | 15 | 44.8 | 51.7 | 2026-08-21 |
 | Romania | 190 | 807 | 65 | 52 | 47 | 80.0 | 72.3 | 2026-08-19 |
-| Slovakia | 442 | 442 | 413 | 218 | 268 | 52.8 | 64.9 | 2026-08-18 |
+| Slovakia | 442 | 442 | 413 | 218 | 273 | 52.8 | 66.1 | 2026-08-21 |
 | Slovenia | 214 | 214 | 207 | 56 | 82 | 27.1 | 39.6 | 2026-08-19 |
 | Spain | 191 | 6,091 | 160 | 99 | 91 | 61.9 | 56.9 | 2026-08-18 |
 | Sweden | 763 | 1,702 | 710 | 180 | 56 | 25.4 | 7.9 | 2026-08-19 |
@@ -66,7 +66,7 @@ _Stats as of 2026-08-21 14:20 UTC — last scan: 2026-08-21_
 | 2 | jsDelivr CDN | **1,940** |
 | 3 | Google Analytics (GA4) | **1,605** |
 | 4 | jQuery | **863** |
-| 5 | Google reCAPTCHA | **684** |
+| 5 | Google reCAPTCHA | **689** |
 | 6 | unpkg CDN | **586** |
 | 7 | Google Hosted Libraries | **581** |
 | 8 | Google Tag Manager | **571** |
@@ -90,7 +90,7 @@ _Stats as of 2026-08-21 14:20 UTC — last scan: 2026-08-21_
 | 1 | Google Analytics (GA4) | **1,578** | **213.0%** |
 | 2 | jsDelivr CDN | **1,065** | **143.7%** |
 | 3 | cdnjs (Cloudflare CDN) | **777** | **104.9%** |
-| 4 | Google reCAPTCHA | **663** | **89.5%** |
+| 4 | Google reCAPTCHA | **668** | **90.1%** |
 | 5 | jQuery | **594** | **80.2%** |
 | 6 | Google Tag Manager | **557** | **75.2%** |
 | 7 | Google Hosted Libraries | **510** | **68.8%** |
@@ -116,8 +116,8 @@ _Stats as of 2026-08-21 14:20 UTC — last scan: 2026-08-21_
 | 2 | Analytics | **1,758** |
 | 3 | JavaScript Library | **1,444** |
 | 4 | Cookie Consent | **869** |
-| 5 | Security | **708** |
-| 6 | CAPTCHA | **684** |
+| 5 | Security | **713** |
+| 6 | CAPTCHA | **689** |
 | 7 | Tag Manager | **634** |
 | 8 | Icon Library | **233** |
 | 9 | UI Framework | **116** |
@@ -144,8 +144,8 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 |--:|--------------------------|------:|
 | 1 | Analytics | **1,758** |
 | 2 | Cookie Consent | **869** |
-| 3 | Security | **708** |
-| 4 | CAPTCHA | **684** |
+| 3 | Security | **713** |
+| 4 | CAPTCHA | **689** |
 | 5 | Tag Manager | **634** |
 | 6 | Advertising | **50** |
 | 7 | Error Tracking | **22** |
@@ -171,7 +171,7 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 | 12 | `www.youtube.com` | **215** | **215** |
 | 13 | `translate.google.com` | **211** | **211** |
 | 14 | `content.powerapps.com` | **204** | **17** |
-| 15 | `siteimproveanalytics.com` | **188** | **188** |
+| 15 | `siteimproveanalytics.com` | **187** | **187** |
 
 > These hosts were seen as third-party script sources but did not match a known service signature. Review this queue regularly and promote stable, policy-relevant hosts into the signature list.
 
