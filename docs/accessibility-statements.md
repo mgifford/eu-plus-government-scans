@@ -5,14 +5,14 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-08-21 02:31 UTC — last scan: 2026-08-20_
+_Stats as of 2026-08-21 03:00 UTC — last scan: 2026-08-21_
 
-**98** scan batches run
+**101** scan batches run
 
 **53,602** of **87,696** available pages scanned (**61.1%** coverage)
-**48,523** of **53,602** scanned pages were reachable (**90.5%**)
-**22,095** of **48,523** reachable pages have an accessibility statement (**45.5%**)
-**19,518** pages have the statement link in the footer (**88.3%** of pages with a statement)
+**48,574** of **53,602** scanned pages were reachable (**90.6%**)
+**22,133** of **48,574** reachable pages have an accessibility statement (**45.6%**)
+**19,550** pages have the statement link in the footer (**88.3%** of pages with a statement)
 
 📥 Machine-readable results are available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
 
@@ -52,13 +52,13 @@ Each country entry in the JSON file includes page-level evidence for pages with 
 | Portugal | 3,508 | 3,508 | 2,880 | 793 | 656 | 27.5% | Aug 2026 |
 | Cyprus | 29 | 29 | 29 | 1 | 1 | 3.4% | Aug 2026 |
 | Romania | 807 | 807 | 346 | 30 | 10 | 8.7% | Aug 2026 |
-| Slovakia | 442 | 442 | 362 | 147 | 134 | 40.6% | Aug 2026 |
+| Slovakia | 442 | 442 | 413 | 185 | 166 | 44.8% | Aug 2026 |
 | Slovenia | 214 | 214 | 207 | 116 | 81 | 56.0% | Aug 2026 |
 | Spain | 2,914 | 6,091 | 2,417 | 1,034 | 872 | 42.8% | Aug 2026 |
 | Sweden | 1,702 | 1,702 | 1,434 | 790 | 706 | 55.1% | Aug 2026 |
 | Switzerland | 2,123 | 2,123 | 2,038 | 1,023 | 1,022 | 50.2% | Aug 2026 |
 | United Kingdom | 5,617 | 19,511 | 5,295 | 2,902 | 2,716 | 54.8% | Aug 2026 |
-| **Total** | **53,608** | **87,696** | **48,529** | **22,101** | **19,524** | **45.5%** | — |
+| **Total** | **53,608** | **87,696** | **48,580** | **22,139** | **19,556** | **45.6%** | — |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
