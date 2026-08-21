@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T02:02:36.262652+00:00",
+  "generated_at": "2026-08-21T07:33:00.058460+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -26,7 +26,7 @@
     {
       "country_code": "PORTUGAL",
       "country": "Portugal",
-      "scanned_domains": 383
+      "scanned_domains": 384
     },
     {
       "country_code": "GREECE",
@@ -173,17 +173,17 @@
     {
       "service": "googleapis.com",
       "countries": 32,
-      "domains": 3927
+      "domains": 3929
     },
     {
       "service": "googletagmanager.com",
       "countries": 32,
-      "domains": 2523
+      "domains": 2527
     },
     {
       "service": "jsdelivr.net",
       "countries": 32,
-      "domains": 1052
+      "domains": 1053
     },
     {
       "service": "fontawesome.com",
@@ -198,17 +198,17 @@
     {
       "service": "gstatic.com",
       "countries": 31,
-      "domains": 1554
+      "domains": 1557
     },
     {
       "service": "cloudflare.com",
       "countries": 31,
-      "domains": 1420
+      "domains": 1422
     },
     {
       "service": "jquery.com",
       "countries": 30,
-      "domains": 602
+      "domains": 604
     },
     {
       "service": "unpkg.com",
@@ -253,7 +253,7 @@
     {
       "service": "addtoany.com",
       "countries": 20,
-      "domains": 161
+      "domains": 162
     },
     {
       "service": "fbcdn.net",
@@ -756,32 +756,32 @@
       "country_code": "PORTUGAL",
       "country": "Portugal",
       "service": "googleapis.com",
-      "domains": 224,
-      "scanned_domains": 383,
-      "percent": 58.5
+      "domains": 226,
+      "scanned_domains": 384,
+      "percent": 58.9
     },
     {
       "country_code": "PORTUGAL",
       "country": "Portugal",
       "service": "googletagmanager.com",
-      "domains": 193,
-      "scanned_domains": 383,
-      "percent": 50.4
+      "domains": 197,
+      "scanned_domains": 384,
+      "percent": 51.3
     },
     {
       "country_code": "PORTUGAL",
       "country": "Portugal",
       "service": "jsdelivr.net",
-      "domains": 69,
-      "scanned_domains": 383,
-      "percent": 18.0
+      "domains": 70,
+      "scanned_domains": 384,
+      "percent": 18.2
     },
     {
       "country_code": "PORTUGAL",
       "country": "Portugal",
       "service": "fontawesome.com",
       "domains": 43,
-      "scanned_domains": 383,
+      "scanned_domains": 384,
       "percent": 11.2
     },
     {
@@ -789,39 +789,39 @@
       "country": "Portugal",
       "service": "google.com",
       "domains": 143,
-      "scanned_domains": 383,
-      "percent": 37.3
+      "scanned_domains": 384,
+      "percent": 37.2
     },
     {
       "country_code": "PORTUGAL",
       "country": "Portugal",
       "service": "gstatic.com",
-      "domains": 87,
-      "scanned_domains": 383,
-      "percent": 22.7
+      "domains": 90,
+      "scanned_domains": 384,
+      "percent": 23.4
     },
     {
       "country_code": "PORTUGAL",
       "country": "Portugal",
       "service": "cloudflare.com",
-      "domains": 73,
-      "scanned_domains": 383,
-      "percent": 19.1
+      "domains": 75,
+      "scanned_domains": 384,
+      "percent": 19.5
     },
     {
       "country_code": "PORTUGAL",
       "country": "Portugal",
       "service": "jquery.com",
-      "domains": 42,
-      "scanned_domains": 383,
-      "percent": 11.0
+      "domains": 44,
+      "scanned_domains": 384,
+      "percent": 11.5
     },
     {
       "country_code": "PORTUGAL",
       "country": "Portugal",
       "service": "unpkg.com",
       "domains": 51,
-      "scanned_domains": 383,
+      "scanned_domains": 384,
       "percent": 13.3
     },
     {
@@ -829,7 +829,7 @@
       "country": "Portugal",
       "service": "bootstrapcdn.com",
       "domains": 30,
-      "scanned_domains": 383,
+      "scanned_domains": 384,
       "percent": 7.8
     },
     {
@@ -837,7 +837,7 @@
       "country": "Portugal",
       "service": "typekit.net",
       "domains": 8,
-      "scanned_domains": 383,
+      "scanned_domains": 384,
       "percent": 2.1
     },
     {
@@ -845,7 +845,7 @@
       "country": "Portugal",
       "service": "facebook.com",
       "domains": 7,
-      "scanned_domains": 383,
+      "scanned_domains": 384,
       "percent": 1.8
     },
     {
@@ -853,7 +853,7 @@
       "country": "Portugal",
       "service": "cookiebot.com",
       "domains": 3,
-      "scanned_domains": 383,
+      "scanned_domains": 384,
       "percent": 0.8
     },
     {
@@ -861,7 +861,7 @@
       "country": "Portugal",
       "service": "amazonaws.com",
       "domains": 9,
-      "scanned_domains": 383,
+      "scanned_domains": 384,
       "percent": 2.3
     },
     {
@@ -869,7 +869,7 @@
       "country": "Portugal",
       "service": "facebook.net",
       "domains": 4,
-      "scanned_domains": 383,
+      "scanned_domains": 384,
       "percent": 1.0
     },
     {
@@ -877,23 +877,23 @@
       "country": "Portugal",
       "service": "arcgis.com",
       "domains": 3,
-      "scanned_domains": 383,
+      "scanned_domains": 384,
       "percent": 0.8
     },
     {
       "country_code": "PORTUGAL",
       "country": "Portugal",
       "service": "addtoany.com",
-      "domains": 9,
-      "scanned_domains": 383,
-      "percent": 2.3
+      "domains": 10,
+      "scanned_domains": 384,
+      "percent": 2.6
     },
     {
       "country_code": "PORTUGAL",
       "country": "Portugal",
       "service": "fbcdn.net",
       "domains": 2,
-      "scanned_domains": 383,
+      "scanned_domains": 384,
       "percent": 0.5
     },
     {
@@ -901,7 +901,7 @@
       "country": "Portugal",
       "service": "mapbox.com",
       "domains": 5,
-      "scanned_domains": 383,
+      "scanned_domains": 384,
       "percent": 1.3
     },
     {
@@ -909,7 +909,7 @@
       "country": "Portugal",
       "service": "cloudfront.net",
       "domains": 0,
-      "scanned_domains": 383,
+      "scanned_domains": 384,
       "percent": 0.0
     },
     {
