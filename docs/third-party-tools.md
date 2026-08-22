@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-08-22 14:02 UTC — last scan: 2026-08-22_
+_Stats as of 2026-08-22 14:38 UTC — last scan: 2026-08-22_
 
-**115** scan batches run
+**117** scan batches run
 
 **17,084** of **87,696** available pages scanned (**19.5%** coverage)
-**15,833** of **17,084** scanned pages were reachable (**92.7%**)
-**7,404** reachable pages loaded at least one third-party script (**46.8%** of reachable)
-**10,349** known third-party service loads identified
+**15,834** of **17,084** scanned pages were reachable (**92.7%**)
+**7,405** reachable pages loaded at least one third-party script (**46.8%** of reachable)
+**10,346** known third-party service loads identified
 **22** unique known services across **14** categories
 
 ---
@@ -22,13 +22,13 @@ _Stats as of 2026-08-22 14:02 UTC — last scan: 2026-08-22_
 | Country | Scanned | Available | Reachable | URLs with 3rd-Party JS | Known Service Loads | JS URLs /100 Reachable | Known Loads /100 Reachable | Last Scan |
 |---------|---------|-----------|-----------|------------------------|--------------------|------------------------|---------------------------|----------|
 | Austria | 822 | 822 | 787 | 275 | 52 | 34.9 | 6.6 | 2026-08-22 |
-| Belgium | 990 | 1,329 | 906 | 477 | 499 | 52.6 | 55.1 | 2026-08-19 |
+| Belgium | 990 | 1,329 | 906 | 477 | 496 | 52.6 | 54.7 | 2026-08-22 |
 | Bulgaria | 353 | 353 | 305 | 128 | 163 | 42.0 | 53.4 | 2026-08-22 |
 | Canada | 864 | 4,469 | 827 | 536 | 834 | 64.8 | 100.8 | 2026-08-20 |
 | Croatia | 257 | 257 | 254 | 138 | 186 | 54.3 | 73.2 | 2026-08-22 |
 | Czechia | 866 | 866 | 798 | 476 | 792 | 59.6 | 99.2 | 2026-08-20 |
 | Denmark | 1,514 | 1,536 | 1,486 | 808 | 2,085 | 54.4 | 140.3 | 2026-08-20 |
-| Estonia | 401 | 401 | 384 | 134 | 115 | 34.9 | 29.9 | 2026-08-19 |
+| Estonia | 401 | 401 | 385 | 135 | 115 | 35.1 | 29.9 | 2026-08-22 |
 | Finland | 199 | 199 | 189 | 46 | 26 | 24.3 | 13.8 | 2026-08-20 |
 | France | 284 | 10,009 | 256 | 146 | 50 | 57.0 | 19.5 | 2026-08-20 |
 | Germany | 619 | 6,599 | 586 | 160 | 184 | 27.3 | 31.4 | 2026-08-21 |
@@ -64,12 +64,12 @@ _Stats as of 2026-08-22 14:02 UTC — last scan: 2026-08-22_
 |--:|---------|------:|
 | 1 | cdnjs (Cloudflare CDN) | **2,085** |
 | 2 | jsDelivr CDN | **1,940** |
-| 3 | Google Analytics (GA4) | **1,599** |
+| 3 | Google Analytics (GA4) | **1,597** |
 | 4 | jQuery | **863** |
 | 5 | Google reCAPTCHA | **689** |
 | 6 | unpkg CDN | **586** |
 | 7 | Google Hosted Libraries | **581** |
-| 8 | Google Tag Manager | **568** |
+| 8 | Google Tag Manager | **567** |
 | 9 | CookieInformation | **401** |
 | 10 | Cookiebot | **381** |
 | 11 | Font Awesome | **233** |
@@ -87,12 +87,12 @@ _Stats as of 2026-08-22 14:02 UTC — last scan: 2026-08-22_
 
 | # | Service | Reachable Pages | Prevalence of Reachable Pages |
 |--:|---------|----------------:|------------------------------:|
-| 1 | Google Analytics (GA4) | **1,572** | **212.1%** |
+| 1 | Google Analytics (GA4) | **1,570** | **211.9%** |
 | 2 | jsDelivr CDN | **1,065** | **143.7%** |
 | 3 | cdnjs (Cloudflare CDN) | **778** | **105.0%** |
 | 4 | Google reCAPTCHA | **668** | **90.1%** |
 | 5 | jQuery | **594** | **80.2%** |
-| 6 | Google Tag Manager | **554** | **74.8%** |
+| 6 | Google Tag Manager | **553** | **74.6%** |
 | 7 | Google Hosted Libraries | **510** | **68.8%** |
 | 8 | unpkg CDN | **436** | **58.8%** |
 | 9 | CookieInformation | **401** | **54.1%** |
@@ -113,12 +113,12 @@ _Stats as of 2026-08-22 14:02 UTC — last scan: 2026-08-22_
 | # | Category | Loads |
 |--:|----------|------:|
 | 1 | CDN | **5,192** |
-| 2 | Analytics | **1,753** |
+| 2 | Analytics | **1,751** |
 | 3 | JavaScript Library | **1,444** |
 | 4 | Cookie Consent | **871** |
 | 5 | Security | **713** |
 | 6 | CAPTCHA | **689** |
-| 7 | Tag Manager | **631** |
+| 7 | Tag Manager | **630** |
 | 8 | Icon Library | **233** |
 | 9 | UI Framework | **116** |
 | 10 | Advertising | **51** |
@@ -142,11 +142,11 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 
 | # | Policy-Relevant Category | Loads |
 |--:|--------------------------|------:|
-| 1 | Analytics | **1,753** |
+| 1 | Analytics | **1,751** |
 | 2 | Cookie Consent | **871** |
 | 3 | Security | **713** |
 | 4 | CAPTCHA | **689** |
-| 5 | Tag Manager | **631** |
+| 5 | Tag Manager | **630** |
 | 6 | Advertising | **51** |
 | 7 | Error Tracking | **22** |
 | 8 | Customer Support | **11** |
