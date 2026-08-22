@@ -168,12 +168,12 @@
       "count": 114
     },
     {
-      "domain": "koege.dk",
-      "count": 108
+      "domain": "aalborg.dk",
+      "count": 110
     },
     {
-      "domain": "aalborg.dk",
-      "count": 101
+      "domain": "koege.dk",
+      "count": 108
     },
     {
       "domain": "mssb.dk",
@@ -231,7 +231,7 @@
     },
     {
       "domain": "cookieinformation.com",
-      "count": 972
+      "count": 973
     },
     {
       "domain": "linkedin.com",
@@ -271,7 +271,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 408
+      "count": 409
     },
     {
       "domain": "cookiebot.com",
@@ -414,5 +414,5 @@
     "stylesheet_dependency": 571,
     "font_or_preload_dependency": 118
   },
-  "generated_at": "2026-08-18T01:58:41.207255+00:00"
+  "generated_at": "2026-08-22T01:58:34.361194+00:00"
 }
