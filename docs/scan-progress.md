@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-08-22 02:51 UTC_
+_Generated: 2026-08-22 03:07 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -15,7 +15,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 |-----------|--------------|-----------|----------|---------|
 | **Combined Reachability** | **39,222 confirmed reachable** | 87,696 | **<span role="img" aria-label="44.7% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:54px;"></span></span><span class="sm-bar__label">44.7%</span></span>** | — |
 | Social Media | 43,347 scanned (39,121 reachable) | 87,696 | <span role="img" aria-label="49.4% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:59px;"></span></span><span class="sm-bar__label">49.4%</span></span> | 5.8 days |
-| Technology | 47,958 scanned | 87,696 | <span role="img" aria-label="54.7% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:66px;"></span></span><span class="sm-bar__label">54.7%</span></span> | 5.6 days |
+| Technology | 47,958 scanned | 87,696 | <span role="img" aria-label="54.7% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:66px;"></span></span><span class="sm-bar__label">54.7%</span></span> | 5.7 days |
 | Lighthouse | 13,161 scanned | 87,696 | <span role="img" aria-label="15.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:18px;"></span></span><span class="sm-bar__label">15.0%</span></span> | 18.9 days |
 | Accessibility Statements | 54,247 scanned | 87,696 | <span role="img" aria-label="61.9% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:74px;"></span></span><span class="sm-bar__label">61.9%</span></span> | 5.3 days |
 
