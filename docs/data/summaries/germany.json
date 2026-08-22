@@ -1,6 +1,6 @@
 {
   "country_code": "GERMANY",
-  "total_relationships": 21802,
+  "total_relationships": 21857,
   "total_source_domains": 222,
   "top_source_domains": [
     {
@@ -8,24 +8,24 @@
       "count": 47750
     },
     {
-      "domain": "rlp.de",
-      "count": 22010
+      "domain": "niedersachsen.de",
+      "count": 22429
     },
     {
-      "domain": "niedersachsen.de",
-      "count": 16636
+      "domain": "rlp.de",
+      "count": 22012
     },
     {
       "domain": "bayern.de",
-      "count": 11815
+      "count": 17240
     },
     {
       "domain": "nrw.de",
-      "count": 9251
+      "count": 15235
     },
     {
       "domain": "hamburg.de",
-      "count": 7782
+      "count": 9990
     },
     {
       "domain": "diplo.de",
@@ -207,31 +207,31 @@
   "top_target_domains": [
     {
       "domain": "sachsen.de",
-      "count": 41902
-    },
-    {
-      "domain": "rlp.de",
-      "count": 17565
+      "count": 41904
     },
     {
       "domain": "niedersachsen.de",
-      "count": 14941
+      "count": 20110
+    },
+    {
+      "domain": "rlp.de",
+      "count": 17569
     },
     {
       "domain": "bayern.de",
-      "count": 7510
+      "count": 11223
     },
     {
       "domain": "nrw.de",
-      "count": 5973
+      "count": 9801
     },
     {
       "domain": "hamburg.de",
-      "count": 4835
+      "count": 6144
     },
     {
       "domain": "hessen.de",
-      "count": 3227
+      "count": 3229
     },
     {
       "domain": "diplo.de",
@@ -239,11 +239,11 @@
     },
     {
       "domain": "facebook.com",
-      "count": 2254
+      "count": 2537
     },
     {
       "domain": "instagram.com",
-      "count": 2097
+      "count": 2453
     },
     {
       "domain": "sachsen-anhalt.de",
@@ -251,11 +251,15 @@
     },
     {
       "domain": "bund.de",
-      "count": 1621
+      "count": 1634
+    },
+    {
+      "domain": "youtube.com",
+      "count": 1617
     },
     {
       "domain": "twitter.com",
-      "count": 1478
+      "count": 1567
     },
     {
       "domain": "bremen.de",
@@ -266,32 +270,28 @@
       "count": 1390
     },
     {
-      "domain": "youtube.com",
-      "count": 1334
-    },
-    {
       "domain": "linkedin.com",
-      "count": 1114
-    },
-    {
-      "domain": "berlin.de",
-      "count": 924
-    },
-    {
-      "domain": "etracker.com",
-      "count": 831
-    },
-    {
-      "domain": "baden-wuerttemberg.de",
-      "count": 783
+      "count": 1260
     },
     {
       "domain": "justiz.nrw",
-      "count": 723
+      "count": 1258
+    },
+    {
+      "domain": "berlin.de",
+      "count": 926
+    },
+    {
+      "domain": "etracker.com",
+      "count": 841
+    },
+    {
+      "domain": "baden-wuerttemberg.de",
+      "count": 784
     },
     {
       "domain": "zvg-portal.de",
-      "count": 722
+      "count": 769
     },
     {
       "domain": "auswaertiges-amt.de",
@@ -306,113 +306,113 @@
       "count": 661
     },
     {
-      "domain": "readspeaker.com",
-      "count": 495
+      "domain": "polyplanet.de",
+      "count": 620
     },
     {
-      "domain": "polyplanet.de",
-      "count": 474
+      "domain": "readspeaker.com",
+      "count": 601
+    },
+    {
+      "domain": "knastladen.de",
+      "count": 525
+    },
+    {
+      "domain": "justiz-karriere.nrw",
+      "count": 496
     },
     {
       "domain": "jsdelivr.net",
-      "count": 456
-    },
-    {
-      "domain": "usercentrics.eu",
-      "count": 361
-    },
-    {
-      "domain": "google.com",
-      "count": 330
+      "count": 468
     },
     {
       "domain": "wordpress.org",
-      "count": 316
+      "count": 413
+    },
+    {
+      "domain": "google.com",
+      "count": 406
+    },
+    {
+      "domain": "usercentrics.eu",
+      "count": 371
     },
     {
       "domain": "justiz.de",
-      "count": 308
+      "count": 369
+    },
+    {
+      "domain": "schulcms.net",
+      "count": 319
+    },
+    {
+      "domain": "muenchen.de",
+      "count": 300
     },
     {
       "domain": "duesseldorf.de",
       "count": 295
     },
     {
-      "domain": "muenchen.de",
-      "count": 294
-    },
-    {
       "domain": "essen.de",
-      "count": 291
-    },
-    {
-      "domain": "knastladen.de",
-      "count": 290
+      "count": 292
     },
     {
       "domain": "brandenburg.de",
-      "count": 284
+      "count": 286
     },
     {
-      "domain": "justiz-karriere.nrw",
-      "count": 279
+      "domain": "stark-fuer-gerechtigkeit.de",
+      "count": 281
+    },
+    {
+      "domain": "europa.eu",
+      "count": 252
     },
     {
       "domain": "dguv.de",
       "count": 236
     },
     {
-      "domain": "europa.eu",
-      "count": 233
-    },
-    {
       "domain": "xing.com",
-      "count": 219
-    },
-    {
-      "domain": "stark-fuer-gerechtigkeit.de",
-      "count": 218
-    },
-    {
-      "domain": "dwd.de",
-      "count": 214
+      "count": 229
     },
     {
       "domain": "tiktok.com",
-      "count": 213
+      "count": 224
+    },
+    {
+      "domain": "dwd.de",
+      "count": 222
     },
     {
       "domain": "x.com",
-      "count": 203
+      "count": 217
     },
     {
       "domain": "eye-able.com",
-      "count": 202
+      "count": 210
     },
     {
       "domain": "deutschland.de",
       "count": 199
     },
     {
+      "domain": "justiz-auktion.de",
+      "count": 187
+    },
+    {
       "domain": "elster.de",
-      "count": 177
-    },
-    {
-      "domain": "schulcms.net",
-      "count": 170
-    },
-    {
-      "domain": "arbeitsagentur.de",
-      "count": 161
+      "count": 184
     }
   ],
   "relationship_types": {
-    "editorial_link": 11030,
+    "editorial_link": 11067,
     "font_or_preload_dependency": 335,
-    "image_or_media_dependency": 2744,
-    "script_dependency": 2858,
-    "stylesheet_dependency": 2703,
-    "form_destination": 2132
+    "image_or_media_dependency": 2745,
+    "script_dependency": 2864,
+    "stylesheet_dependency": 2709,
+    "form_destination": 2137
   },
-  "generated_at": "2026-08-20T13:35:51.273895+00:00"
+  "generated_at": "2026-08-22T19:17:52.293108+00:00"
 }
