@@ -5,9 +5,9 @@ layout: page
 
 <!-- LIGHTHOUSE_STATS_START -->
 
-_Stats as of 2026-08-22 02:11 UTC — last scan: 2026-08-21_
+_Stats as of 2026-08-22 02:17 UTC — last scan: 2026-08-22_
 
-**200** scan batches run
+**201** scan batches run
 
 **14,294** of **87,696** available pages audited (**16.3%** coverage)
 **13,159** successful audits (**92.1%** of audited)
@@ -28,7 +28,7 @@ _Stats as of 2026-08-22 02:11 UTC — last scan: 2026-08-21_
 | Belgium | 1,068 | 1,329 | 86 | 91 | 91 | 90 | 2026-08-19 |
 | Bulgaria | 352 | 353 | 87 | 80 | 88 | 87 | 2026-08-21 |
 | Canada | 409 | 4,469 | 94 | 88 | 89 | 87 | 2026-08-18 |
-| Croatia | 257 | 257 | 92 | 72 | 92 | 89 | 2026-07-22 |
+| Croatia | 257 | 257 | 91 | 73 | 92 | 89 | 2026-08-22 |
 | Czechia | 866 | 866 | 91 | 87 | 92 | 88 | 2026-08-19 |
 | Denmark | 1,142 | 1,536 | 88 | 94 | 96 | 89 | 2026-08-20 |
 | Estonia | 401 | 401 | 91 | 87 | 86 | 89 | 2026-07-23 |
