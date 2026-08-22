@@ -9,24 +9,9 @@
     "total_source_domains": 45,
     "file": "belgium.json"
   },
-  "SWITZERLAND": {
-    "total_relationships": 6801,
-    "total_source_domains": 9,
-    "file": "switzerland.json"
-  },
-  "ICELAND": {
-    "total_relationships": 549,
-    "total_source_domains": 20,
-    "file": "iceland.json"
-  },
-  "DENMARK": {
-    "total_relationships": 4345,
-    "total_source_domains": 83,
-    "file": "denmark.json"
-  },
-  "UNITED_KINGDOM_UK": {
-    "total_relationships": 293291,
-    "total_source_domains": 8388,
-    "file": "united_kingdom_uk.json"
+  "FRANCE": {
+    "total_relationships": 30146,
+    "total_source_domains": 656,
+    "file": "france.json"
   }
 }

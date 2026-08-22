@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T01:58:37.288090+00:00",
+  "generated_at": "2026-08-22T07:27:01.069616+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -193,7 +193,7 @@
     {
       "service": "google.com",
       "countries": 31,
-      "domains": 1893
+      "domains": 1894
     },
     {
       "service": "gstatic.com",
@@ -263,7 +263,7 @@
     {
       "service": "mapbox.com",
       "countries": 18,
-      "domains": 82
+      "domains": 83
     },
     {
       "service": "cloudfront.net",
@@ -628,9 +628,9 @@
       "country_code": "FRANCE",
       "country": "France",
       "service": "google.com",
-      "domains": 92,
+      "domains": 93,
       "scanned_domains": 654,
-      "percent": 14.1
+      "percent": 14.2
     },
     {
       "country_code": "FRANCE",
@@ -740,9 +740,9 @@
       "country_code": "FRANCE",
       "country": "France",
       "service": "mapbox.com",
-      "domains": 8,
+      "domains": 9,
       "scanned_domains": 654,
-      "percent": 1.2
+      "percent": 1.4
     },
     {
       "country_code": "FRANCE",
