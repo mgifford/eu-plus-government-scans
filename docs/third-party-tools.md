@@ -5,9 +5,9 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-08-23 03:02 UTC — last scan: 2026-08-22_
+_Stats as of 2026-08-23 03:15 UTC — last scan: 2026-08-23_
 
-**120** scan batches run
+**122** scan batches run
 
 **17,084** of **87,696** available pages scanned (**19.5%** coverage)
 **15,834** of **17,084** scanned pages were reachable (**92.7%**)
@@ -27,13 +27,13 @@ _Stats as of 2026-08-23 03:02 UTC — last scan: 2026-08-22_
 | Canada | 864 | 4,469 | 827 | 536 | 834 | 64.8 | 100.8 | 2026-08-20 |
 | Croatia | 257 | 257 | 254 | 138 | 186 | 54.3 | 73.2 | 2026-08-22 |
 | Czechia | 866 | 866 | 798 | 476 | 792 | 59.6 | 99.2 | 2026-08-22 |
-| Denmark | 1,514 | 1,536 | 1,486 | 808 | 2,085 | 54.4 | 140.3 | 2026-08-20 |
+| Denmark | 1,514 | 1,536 | 1,486 | 808 | 2,085 | 54.4 | 140.3 | 2026-08-23 |
 | Estonia | 401 | 401 | 385 | 135 | 115 | 35.1 | 29.9 | 2026-08-22 |
 | Finland | 199 | 199 | 189 | 46 | 26 | 24.3 | 13.8 | 2026-08-22 |
 | France | 284 | 10,009 | 256 | 146 | 50 | 57.0 | 19.5 | 2026-08-20 |
 | Germany | 619 | 6,599 | 586 | 160 | 184 | 27.3 | 31.4 | 2026-08-21 |
 | Greece | 651 | 1,752 | 604 | 261 | 349 | 43.2 | 57.8 | 2026-08-21 |
-| Hungary | 392 | 392 | 296 | 128 | 196 | 43.2 | 66.2 | 2026-08-20 |
+| Hungary | 392 | 392 | 296 | 128 | 196 | 43.2 | 66.2 | 2026-08-23 |
 | Iceland | 145 | 145 | 143 | 78 | 46 | 54.5 | 32.2 | 2026-08-20 |
 | Ireland | 536 | 536 | 499 | 266 | 750 | 53.3 | 150.3 | 2026-08-20 |
 | Italy | 407 | 5,351 | 385 | 148 | 24 | 38.4 | 6.2 | 2026-08-22 |
@@ -167,11 +167,11 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 | 8 | `cookie-notice.plzen.eu` | **272** | **144** |
 | 9 | `dreambroker.com` | **246** | **246** |
 | 10 | `maps.googleapis.com` | **239** | **224** |
-| 11 | `cdn.herning.dk` | **219** | **22** |
-| 12 | `www.youtube.com` | **215** | **215** |
+| 11 | `www.youtube.com` | **215** | **215** |
+| 12 | `cdn.herning.dk` | **211** | **21** |
 | 13 | `translate.google.com` | **211** | **211** |
 | 14 | `content.powerapps.com` | **204** | **17** |
-| 15 | `siteimproveanalytics.com` | **187** | **187** |
+| 15 | `siteimproveanalytics.com` | **188** | **188** |
 
 > These hosts were seen as third-party script sources but did not match a known service signature. Review this queue regularly and promote stable, policy-relevant hosts into the signature list.
 
