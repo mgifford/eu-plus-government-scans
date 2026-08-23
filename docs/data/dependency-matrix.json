@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T19:17:53.987800+00:00",
+  "generated_at": "2026-08-23T02:04:52.354524+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -31,7 +31,7 @@
     {
       "country_code": "GREECE",
       "country": "Greece",
-      "scanned_domains": 360
+      "scanned_domains": 362
     },
     {
       "country_code": "SPAIN",
@@ -173,7 +173,7 @@
     {
       "service": "googleapis.com",
       "countries": 32,
-      "domains": 3931
+      "domains": 3932
     },
     {
       "service": "googletagmanager.com",
@@ -183,22 +183,22 @@
     {
       "service": "jsdelivr.net",
       "countries": 32,
-      "domains": 1056
+      "domains": 1057
     },
     {
       "service": "fontawesome.com",
       "countries": 32,
-      "domains": 765
+      "domains": 766
     },
     {
       "service": "google.com",
       "countries": 31,
-      "domains": 1895
+      "domains": 1897
     },
     {
       "service": "gstatic.com",
       "countries": 31,
-      "domains": 1557
+      "domains": 1558
     },
     {
       "service": "cloudflare.com",
@@ -916,64 +916,64 @@
       "country_code": "GREECE",
       "country": "Greece",
       "service": "googleapis.com",
-      "domains": 240,
-      "scanned_domains": 360,
-      "percent": 66.7
+      "domains": 241,
+      "scanned_domains": 362,
+      "percent": 66.6
     },
     {
       "country_code": "GREECE",
       "country": "Greece",
       "service": "googletagmanager.com",
       "domains": 131,
-      "scanned_domains": 360,
-      "percent": 36.4
+      "scanned_domains": 362,
+      "percent": 36.2
     },
     {
       "country_code": "GREECE",
       "country": "Greece",
       "service": "jsdelivr.net",
       "domains": 60,
-      "scanned_domains": 360,
-      "percent": 16.7
+      "scanned_domains": 362,
+      "percent": 16.6
     },
     {
       "country_code": "GREECE",
       "country": "Greece",
       "service": "fontawesome.com",
       "domains": 24,
-      "scanned_domains": 360,
-      "percent": 6.7
+      "scanned_domains": 362,
+      "percent": 6.6
     },
     {
       "country_code": "GREECE",
       "country": "Greece",
       "service": "google.com",
-      "domains": 60,
-      "scanned_domains": 360,
-      "percent": 16.7
+      "domains": 61,
+      "scanned_domains": 362,
+      "percent": 16.9
     },
     {
       "country_code": "GREECE",
       "country": "Greece",
       "service": "gstatic.com",
-      "domains": 105,
-      "scanned_domains": 360,
-      "percent": 29.2
+      "domains": 106,
+      "scanned_domains": 362,
+      "percent": 29.3
     },
     {
       "country_code": "GREECE",
       "country": "Greece",
       "service": "cloudflare.com",
       "domains": 60,
-      "scanned_domains": 360,
-      "percent": 16.7
+      "scanned_domains": 362,
+      "percent": 16.6
     },
     {
       "country_code": "GREECE",
       "country": "Greece",
       "service": "jquery.com",
       "domains": 26,
-      "scanned_domains": 360,
+      "scanned_domains": 362,
       "percent": 7.2
     },
     {
@@ -981,23 +981,23 @@
       "country": "Greece",
       "service": "unpkg.com",
       "domains": 24,
-      "scanned_domains": 360,
-      "percent": 6.7
+      "scanned_domains": 362,
+      "percent": 6.6
     },
     {
       "country_code": "GREECE",
       "country": "Greece",
       "service": "bootstrapcdn.com",
       "domains": 24,
-      "scanned_domains": 360,
-      "percent": 6.7
+      "scanned_domains": 362,
+      "percent": 6.6
     },
     {
       "country_code": "GREECE",
       "country": "Greece",
       "service": "typekit.net",
       "domains": 3,
-      "scanned_domains": 360,
+      "scanned_domains": 362,
       "percent": 0.8
     },
     {
@@ -1005,7 +1005,7 @@
       "country": "Greece",
       "service": "facebook.com",
       "domains": 4,
-      "scanned_domains": 360,
+      "scanned_domains": 362,
       "percent": 1.1
     },
     {
@@ -1013,7 +1013,7 @@
       "country": "Greece",
       "service": "cookiebot.com",
       "domains": 1,
-      "scanned_domains": 360,
+      "scanned_domains": 362,
       "percent": 0.3
     },
     {
@@ -1021,7 +1021,7 @@
       "country": "Greece",
       "service": "amazonaws.com",
       "domains": 1,
-      "scanned_domains": 360,
+      "scanned_domains": 362,
       "percent": 0.3
     },
     {
@@ -1029,7 +1029,7 @@
       "country": "Greece",
       "service": "facebook.net",
       "domains": 9,
-      "scanned_domains": 360,
+      "scanned_domains": 362,
       "percent": 2.5
     },
     {
@@ -1037,7 +1037,7 @@
       "country": "Greece",
       "service": "arcgis.com",
       "domains": 1,
-      "scanned_domains": 360,
+      "scanned_domains": 362,
       "percent": 0.3
     },
     {
@@ -1045,7 +1045,7 @@
       "country": "Greece",
       "service": "addtoany.com",
       "domains": 10,
-      "scanned_domains": 360,
+      "scanned_domains": 362,
       "percent": 2.8
     },
     {
@@ -1053,7 +1053,7 @@
       "country": "Greece",
       "service": "fbcdn.net",
       "domains": 2,
-      "scanned_domains": 360,
+      "scanned_domains": 362,
       "percent": 0.6
     },
     {
@@ -1061,7 +1061,7 @@
       "country": "Greece",
       "service": "mapbox.com",
       "domains": 0,
-      "scanned_domains": 360,
+      "scanned_domains": 362,
       "percent": 0.0
     },
     {
@@ -1069,7 +1069,7 @@
       "country": "Greece",
       "service": "cloudfront.net",
       "domains": 2,
-      "scanned_domains": 360,
+      "scanned_domains": 362,
       "percent": 0.6
     },
     {
@@ -1572,25 +1572,25 @@
       "country_code": "ITALY",
       "country": "Italy",
       "service": "jsdelivr.net",
-      "domains": 51,
+      "domains": 52,
       "scanned_domains": 146,
-      "percent": 34.9
+      "percent": 35.6
     },
     {
       "country_code": "ITALY",
       "country": "Italy",
       "service": "fontawesome.com",
-      "domains": 24,
+      "domains": 25,
       "scanned_domains": 146,
-      "percent": 16.4
+      "percent": 17.1
     },
     {
       "country_code": "ITALY",
       "country": "Italy",
       "service": "google.com",
-      "domains": 33,
+      "domains": 34,
       "scanned_domains": 146,
-      "percent": 22.6
+      "percent": 23.3
     },
     {
       "country_code": "ITALY",
