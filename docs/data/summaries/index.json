@@ -9,24 +9,9 @@
     "total_source_domains": 45,
     "file": "belgium.json"
   },
-  "GREECE": {
-    "total_relationships": 8509,
-    "total_source_domains": 364,
-    "file": "greece.json"
-  },
-  "ICELAND": {
-    "total_relationships": 549,
-    "total_source_domains": 20,
-    "file": "iceland.json"
-  },
-  "IRELAND": {
-    "total_relationships": 2104,
-    "total_source_domains": 105,
-    "file": "ireland.json"
-  },
-  "ITALY": {
-    "total_relationships": 16082,
-    "total_source_domains": 151,
-    "file": "italy.json"
+  "PORTUGAL": {
+    "total_relationships": 13423,
+    "total_source_domains": 391,
+    "file": "portugal.json"
   }
 }

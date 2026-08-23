@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-23T02:04:52.354524+00:00",
+  "generated_at": "2026-08-23T07:28:33.593695+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -173,17 +173,17 @@
     {
       "service": "googleapis.com",
       "countries": 32,
-      "domains": 3932
+      "domains": 3933
     },
     {
       "service": "googletagmanager.com",
       "countries": 32,
-      "domains": 2529
+      "domains": 2531
     },
     {
       "service": "jsdelivr.net",
       "countries": 32,
-      "domains": 1057
+      "domains": 1058
     },
     {
       "service": "fontawesome.com",
@@ -756,25 +756,25 @@
       "country_code": "PORTUGAL",
       "country": "Portugal",
       "service": "googleapis.com",
-      "domains": 226,
+      "domains": 227,
       "scanned_domains": 384,
-      "percent": 58.9
+      "percent": 59.1
     },
     {
       "country_code": "PORTUGAL",
       "country": "Portugal",
       "service": "googletagmanager.com",
-      "domains": 197,
+      "domains": 199,
       "scanned_domains": 384,
-      "percent": 51.3
+      "percent": 51.8
     },
     {
       "country_code": "PORTUGAL",
       "country": "Portugal",
       "service": "jsdelivr.net",
-      "domains": 70,
+      "domains": 71,
       "scanned_domains": 384,
-      "percent": 18.2
+      "percent": 18.5
     },
     {
       "country_code": "PORTUGAL",
