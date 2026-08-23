@@ -5,11 +5,11 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-08-23 08:49 UTC — last scan: 2026-08-23_
+_Stats as of 2026-08-23 09:24 UTC — last scan: 2026-08-23_
 
-**62** scan batches run
+**63** scan batches run
 
-**50,959** of **87,696** available pages scanned (**58.1%** coverage)
+**52,477** of **87,696** available pages scanned (**59.8%** coverage)
 **0** pages with technology detections (**0.0%** of scanned)
 **0** unique technologies identified
 
@@ -50,7 +50,7 @@ _Stats as of 2026-08-23 08:49 UTC — last scan: 2026-08-23_
 | Spain | 3,010 | 0 | 6,091 | 2026-08-23 |
 | Sweden | 1,702 | 0 | 1,702 | 2026-08-21 |
 | Switzerland | 2,123 | 0 | 2,123 | 2026-08-15 |
-| United Kingdom | 5,448 | 0 | 19,511 | 2026-08-21 |
+| United Kingdom | 6,966 | 0 | 19,511 | 2026-08-23 |
 
 > Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and metric from [Download machine-readable technology data (JSON)](technology-data.json).
 
