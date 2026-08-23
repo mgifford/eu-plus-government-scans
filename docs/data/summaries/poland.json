@@ -1,15 +1,15 @@
 {
   "country_code": "POLAND",
-  "total_relationships": 57247,
-  "total_source_domains": 2324,
+  "total_relationships": 57290,
+  "total_source_domains": 2327,
   "top_source_domains": [
     {
       "domain": "krakow.pl",
-      "count": 34486
+      "count": 34514
     },
     {
       "domain": "poznan.pl",
-      "count": 21737
+      "count": 21749
     },
     {
       "domain": "lodz.pl",
@@ -207,15 +207,15 @@
   "top_target_domains": [
     {
       "domain": "krakow.pl",
-      "count": 17176
+      "count": 17193
     },
     {
       "domain": "poznan.pl",
-      "count": 10952
+      "count": 10960
     },
     {
       "domain": "googleapis.com",
-      "count": 9197
+      "count": 9205
     },
     {
       "domain": "lodz.pl",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 8200
+      "count": 8204
     },
     {
       "domain": "gdansk.pl",
@@ -231,19 +231,19 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 3268
+      "count": 3273
     },
     {
       "domain": "instagram.com",
-      "count": 3216
+      "count": 3217
     },
     {
       "domain": "google.com",
-      "count": 3165
+      "count": 3170
     },
     {
       "domain": "youtube.com",
-      "count": 3092
+      "count": 3096
     },
     {
       "domain": "uni.opole.pl",
@@ -251,7 +251,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 2252
+      "count": 2259
     },
     {
       "domain": "ug.edu.pl",
@@ -287,11 +287,11 @@
     },
     {
       "domain": "twitter.com",
-      "count": 1107
+      "count": 1108
     },
     {
       "domain": "linkedin.com",
-      "count": 1080
+      "count": 1084
     },
     {
       "domain": "mixbet.radom.pl",
@@ -367,7 +367,7 @@
     },
     {
       "domain": "x.com",
-      "count": 370
+      "count": 371
     },
     {
       "domain": "wp.com",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 30880,
-    "form_destination": 3110,
-    "image_or_media_dependency": 6255,
-    "script_dependency": 8182,
-    "stylesheet_dependency": 7155,
-    "font_or_preload_dependency": 1665
+    "editorial_link": 30900,
+    "form_destination": 3111,
+    "image_or_media_dependency": 6258,
+    "script_dependency": 8189,
+    "stylesheet_dependency": 7160,
+    "font_or_preload_dependency": 1672
   },
-  "generated_at": "2026-08-21T19:24:10.015413+00:00"
+  "generated_at": "2026-08-23T19:16:56.987402+00:00"
 }
