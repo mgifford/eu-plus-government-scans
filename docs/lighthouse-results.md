@@ -5,9 +5,9 @@ layout: page
 
 <!-- LIGHTHOUSE_STATS_START -->
 
-_Stats as of 2026-08-23 07:01 UTC — last scan: 2026-08-23_
+_Stats as of 2026-08-23 07:41 UTC — last scan: 2026-08-23_
 
-**207** scan batches run
+**209** scan batches run
 
 **14,294** of **87,696** available pages audited (**16.3%** coverage)
 **13,162** successful audits (**92.1%** of audited)
@@ -24,7 +24,7 @@ _Stats as of 2026-08-23 07:01 UTC — last scan: 2026-08-23_
 
 | Country | Audited | Available | Perf | A11y | Best Practices | SEO | Last Scan |
 |---------|--------:|----------:|:----:|:----:|:--------------:|:---:|-----------|
-| Austria | 822 | 822 | 88 | 90 | 91 | 89 | 2026-08-19 |
+| Austria | 822 | 822 | 88 | 90 | 92 | 89 | 2026-08-23 |
 | Belgium | 1,068 | 1,329 | 86 | 91 | 91 | 90 | 2026-08-19 |
 | Bulgaria | 352 | 353 | 87 | 80 | 88 | 87 | 2026-08-21 |
 | Canada | 409 | 4,469 | 94 | 88 | 89 | 87 | 2026-08-18 |
@@ -41,7 +41,7 @@ _Stats as of 2026-08-23 07:01 UTC — last scan: 2026-08-23_
 | Ireland | 536 | 536 | 92 | 91 | 90 | 88 | 2026-08-20 |
 | Italy | 441 | 5,351 | 89 | 88 | 96 | 88 | 2026-08-20 |
 | Latvia | 405 | 803 | 87 | 85 | 91 | 85 | 2026-08-20 |
-| Lithuania | 122 | 122 | 86 | 81 | 87 | 85 | 2026-07-24 |
+| Lithuania | 122 | 122 | 86 | 81 | 87 | 85 | 2026-08-23 |
 | Luxembourg | 573 | 573 | 91 | 93 | 93 | 91 | 2026-08-20 |
 | Malta | 610 | 610 | 89 | 85 | 78 | 82 | 2026-08-21 |
 | Netherlands | 945 | 945 | 92 | 94 | 93 | 88 | 2026-08-21 |
