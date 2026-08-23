@@ -1,7 +1,7 @@
 {
   "country_code": "GREECE",
-  "total_relationships": 8445,
-  "total_source_domains": 362,
+  "total_relationships": 8509,
+  "total_source_domains": 364,
   "top_source_domains": [
     {
       "domain": "minedu.gov.gr",
@@ -40,6 +40,10 @@
       "count": 412
     },
     {
+      "domain": "yme.gov.gr",
+      "count": 407
+    },
+    {
       "domain": "php.gov.gr",
       "count": 370
     },
@@ -60,12 +64,20 @@
       "count": 338
     },
     {
-      "domain": "yme.gov.gr",
-      "count": 334
+      "domain": "vvv.gov.gr",
+      "count": 328
     },
     {
       "domain": "paiania.gov.gr",
       "count": 312
+    },
+    {
+      "domain": "statistics.gr",
+      "count": 312
+    },
+    {
+      "domain": "minfin.gov.gr",
+      "count": 310
     },
     {
       "domain": "cityofathens.gr",
@@ -80,16 +92,16 @@
       "count": 288
     },
     {
-      "domain": "vvv.gov.gr",
-      "count": 271
-    },
-    {
       "domain": "eopyy.gov.gr",
       "count": 269
     },
     {
       "domain": "necca.gov.gr",
       "count": 267
+    },
+    {
+      "domain": "ypen.gov.gr",
+      "count": 264
     },
     {
       "domain": "apdattikis.gov.gr",
@@ -100,8 +112,8 @@
       "count": 244
     },
     {
-      "domain": "statistics.gr",
-      "count": 241
+      "domain": "serres.gr",
+      "count": 242
     },
     {
       "domain": "enterprisegreece.gov.gr",
@@ -124,6 +136,10 @@
       "count": 221
     },
     {
+      "domain": "gsis.gr",
+      "count": 216
+    },
+    {
       "domain": "loutraki.gov.gr",
       "count": 216
     },
@@ -132,12 +148,16 @@
       "count": 216
     },
     {
-      "domain": "mitos.gov.gr",
-      "count": 214
+      "domain": "sparti.gov.gr",
+      "count": 216
     },
     {
-      "domain": "gsis.gr",
-      "count": 212
+      "domain": "ypes.gr",
+      "count": 215
+    },
+    {
+      "domain": "mitos.gov.gr",
+      "count": 214
     },
     {
       "domain": "kalymnos.gr",
@@ -152,16 +172,8 @@
       "count": 208
     },
     {
-      "domain": "minfin.gov.gr",
-      "count": 206
-    },
-    {
-      "domain": "serres.gr",
-      "count": 197
-    },
-    {
-      "domain": "ypen.gov.gr",
-      "count": 196
+      "domain": "thira.gov.gr",
+      "count": 202
     },
     {
       "domain": "syzefxis.gov.gr",
@@ -190,76 +202,64 @@
     {
       "domain": "hellenicparliament.gr",
       "count": 178
-    },
-    {
-      "domain": "ehealthrecord.gov.gr",
-      "count": 176
-    },
-    {
-      "domain": "7ype.gov.gr",
-      "count": 174
-    },
-    {
-      "domain": "ppel.gov.gr",
-      "count": 173
     }
   ],
   "top_target_domains": [
     {
       "domain": "googleapis.com",
-      "count": 1944
+      "count": 1998
     },
     {
       "domain": "facebook.com",
-      "count": 1036
+      "count": 1086
     },
     {
       "domain": "diavgeia.gov.gr",
-      "count": 839
+      "count": 872
     },
     {
       "domain": "googletagmanager.com",
-      "count": 770
+      "count": 797
+    },
+    {
+      "domain": "youtube.com",
+      "count": 718
     },
     {
       "domain": "minedu.gov.gr",
       "count": 691
     },
     {
-      "domain": "youtube.com",
-      "count": 680
-    },
-    {
       "domain": "google.com",
-      "count": 665
+      "count": 689
     },
     {
       "domain": "gstatic.com",
-      "count": 561
+      "count": 579
     },
     {
       "domain": "europa.eu",
-      "count": 532
+      "count": 566
     },
     {
       "domain": "www.gov.gr",
-      "count": 512
+      "count": 524
     },
     {
       "domain": "twitter.com",
-      "count": 452
+      "count": 492
     },
     {
       "domain": "userway.org",
-      "count": 450
-    },
-    {
-      "domain": "jsdelivr.net",
-      "count": 439
+      "count": 462
     },
     {
       "domain": "instagram.com",
-      "count": 438
+      "count": 455
+    },
+    {
+      "domain": "jsdelivr.net",
+      "count": 448
     },
     {
       "domain": "pdm.gov.gr",
@@ -267,7 +267,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 411
+      "count": 418
     },
     {
       "domain": "thessaloniki.gr",
@@ -275,27 +275,35 @@
     },
     {
       "domain": "services.gov.gr",
-      "count": 307
+      "count": 310
     },
     {
       "domain": "linkedin.com",
-      "count": 285
+      "count": 292
     },
     {
       "domain": "mindev.gov.gr",
-      "count": 280
+      "count": 281
+    },
+    {
+      "domain": "gsis.gr",
+      "count": 242
     },
     {
       "domain": "crete.gov.gr",
       "count": 238
     },
     {
-      "domain": "gsis.gr",
-      "count": 221
+      "domain": "mfa.gr",
+      "count": 218
     },
     {
-      "domain": "mfa.gr",
-      "count": 217
+      "domain": "ypen.gov.gr",
+      "count": 202
+    },
+    {
+      "domain": "statistics.gr",
+      "count": 200
     },
     {
       "domain": "eopyy.gov.gr",
@@ -306,8 +314,8 @@
       "count": 196
     },
     {
-      "domain": "ypen.gov.gr",
-      "count": 191
+      "domain": "ypes.gr",
+      "count": 187
     },
     {
       "domain": "heraklion.gr",
@@ -319,47 +327,43 @@
     },
     {
       "domain": "unpkg.com",
-      "count": 174
+      "count": 178
+    },
+    {
+      "domain": "greece20.gov.gr",
+      "count": 173
     },
     {
       "domain": "aade.gr",
       "count": 167
     },
     {
-      "domain": "greece20.gov.gr",
-      "count": 167
-    },
-    {
-      "domain": "ypes.gr",
-      "count": 165
-    },
-    {
-      "domain": "statistics.gr",
-      "count": 164
+      "domain": "fontawesome.com",
+      "count": 158
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 156
+      "count": 157
     },
     {
       "domain": "mindigital.gr",
       "count": 156
     },
     {
-      "domain": "fontawesome.com",
+      "domain": "espa.gr",
       "count": 154
+    },
+    {
+      "domain": "dypa.gov.gr",
+      "count": 150
     },
     {
       "domain": "culture.gov.gr",
       "count": 149
     },
     {
-      "domain": "dypa.gov.gr",
-      "count": 148
-    },
-    {
-      "domain": "espa.gr",
-      "count": 146
+      "domain": "vvv.gov.gr",
+      "count": 144
     },
     {
       "domain": "necca.gov.gr",
@@ -382,10 +386,6 @@
       "count": 120
     },
     {
-      "domain": "vvv.gov.gr",
-      "count": 120
-    },
-    {
       "domain": "et.gr",
       "count": 119
     },
@@ -402,17 +402,17 @@
       "count": 110
     },
     {
-      "domain": "lamia.gr",
-      "count": 108
+      "domain": "yme.gov.gr",
+      "count": 110
     }
   ],
   "relationship_types": {
-    "editorial_link": 4834,
-    "font_or_preload_dependency": 295,
-    "form_destination": 365,
-    "image_or_media_dependency": 652,
-    "script_dependency": 1258,
-    "stylesheet_dependency": 1041
+    "editorial_link": 4887,
+    "font_or_preload_dependency": 297,
+    "form_destination": 367,
+    "image_or_media_dependency": 654,
+    "script_dependency": 1261,
+    "stylesheet_dependency": 1043
   },
-  "generated_at": "2026-08-20T19:26:47.960794+00:00"
+  "generated_at": "2026-08-23T02:04:49.417225+00:00"
 }

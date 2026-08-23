@@ -1,6 +1,6 @@
 {
   "country_code": "ITALY",
-  "total_relationships": 15935,
+  "total_relationships": 16082,
   "total_source_domains": 151,
   "top_source_domains": [
     {
@@ -13,237 +13,241 @@
     },
     {
       "domain": "cultura.gov.it",
-      "count": 5621
+      "count": 5888
     },
     {
       "domain": "regione.lombardia.it",
-      "count": 1879
+      "count": 2195
     },
     {
       "domain": "regione.emilia-romagna.it",
-      "count": 1717
+      "count": 2157
     },
     {
       "domain": "regione.veneto.it",
-      "count": 1447
+      "count": 1709
     },
     {
       "domain": "comune.fi.it",
-      "count": 1348
-    },
-    {
-      "domain": "comune.parma.it",
-      "count": 1209
+      "count": 1627
     },
     {
       "domain": "regione.campania.it",
-      "count": 1204
+      "count": 1607
+    },
+    {
+      "domain": "regione.lazio.it",
+      "count": 1380
+    },
+    {
+      "domain": "comune.parma.it",
+      "count": 1357
+    },
+    {
+      "domain": "comune.bologna.it",
+      "count": 1166
     },
     {
       "domain": "governo.it",
       "count": 1121
     },
     {
-      "domain": "regione.lazio.it",
-      "count": 1090
-    },
-    {
       "domain": "comune.verona.it",
-      "count": 1011
-    },
-    {
-      "domain": "comune.bologna.it",
-      "count": 893
-    },
-    {
-      "domain": "difesa.it",
-      "count": 867
+      "count": 1080
     },
     {
       "domain": "comune.palermo.it",
-      "count": 850
+      "count": 1077
+    },
+    {
+      "domain": "camera.it",
+      "count": 974
+    },
+    {
+      "domain": "difesa.it",
+      "count": 892
     },
     {
       "domain": "comune.prato.it",
-      "count": 730
-    },
-    {
-      "domain": "mef.gov.it",
-      "count": 682
+      "count": 873
     },
     {
       "domain": "comune.torino.it",
-      "count": 670
+      "count": 857
+    },
+    {
+      "domain": "mef.gov.it",
+      "count": 767
     },
     {
       "domain": "interno.gov.it",
-      "count": 563
+      "count": 729
     },
     {
       "domain": "comune.genova.it",
-      "count": 529
-    },
-    {
-      "domain": "regione.toscana.it",
-      "count": 512
+      "count": 665
     },
     {
       "domain": "comune.messina.it",
-      "count": 454
+      "count": 645
+    },
+    {
+      "domain": "regione.toscana.it",
+      "count": 588
+    },
+    {
+      "domain": "lavoro.gov.it",
+      "count": 542
+    },
+    {
+      "domain": "comune.taranto.it",
+      "count": 487
+    },
+    {
+      "domain": "comune.pistoia.it",
+      "count": 481
+    },
+    {
+      "domain": "comune.modena.it",
+      "count": 466
+    },
+    {
+      "domain": "regione.sicilia.it",
+      "count": 455
+    },
+    {
+      "domain": "comune.venezia.it",
+      "count": 448
+    },
+    {
+      "domain": "regione.piemonte.it",
+      "count": 447
     },
     {
       "domain": "comune.perugia.it",
       "count": 443
     },
     {
-      "domain": "lavoro.gov.it",
-      "count": 435
-    },
-    {
-      "domain": "regione.sicilia.it",
-      "count": 428
-    },
-    {
-      "domain": "comune.modena.it",
-      "count": 420
-    },
-    {
-      "domain": "comune.taranto.it",
-      "count": 406
-    },
-    {
-      "domain": "comune.pistoia.it",
-      "count": 403
-    },
-    {
-      "domain": "camera.it",
-      "count": 379
-    },
-    {
-      "domain": "regione.piemonte.it",
-      "count": 371
+      "domain": "comune.roma.it",
+      "count": 412
     },
     {
       "domain": "comune.firenze.it",
-      "count": 338
+      "count": 405
     },
     {
-      "domain": "comune.venezia.it",
-      "count": 323
+      "domain": "mise.gov.it",
+      "count": 375
     },
     {
-      "domain": "comune.roma.it",
-      "count": 321
+      "domain": "comune.livorno.it",
+      "count": 374
+    },
+    {
+      "domain": "comune.re.it",
+      "count": 368
+    },
+    {
+      "domain": "comune.cremona.it",
+      "count": 341
+    },
+    {
+      "domain": "agid.gov.it",
+      "count": 331
     },
     {
       "domain": "comune.lecce.it",
       "count": 317
     },
     {
-      "domain": "comune.livorno.it",
-      "count": 315
-    },
-    {
-      "domain": "mise.gov.it",
-      "count": 308
-    },
-    {
-      "domain": "comune.re.it",
-      "count": 303
-    },
-    {
-      "domain": "agid.gov.it",
-      "count": 281
-    },
-    {
-      "domain": "comune.novara.it",
-      "count": 260
+      "domain": "istat.it",
+      "count": 313
     },
     {
       "domain": "comune.trento.it",
-      "count": 260
-    },
-    {
-      "domain": "comune.cremona.it",
-      "count": 248
-    },
-    {
-      "domain": "comune.brescia.it",
-      "count": 242
-    },
-    {
-      "domain": "istat.it",
-      "count": 233
-    },
-    {
-      "domain": "comune.siena.it",
-      "count": 229
-    },
-    {
-      "domain": "comune.belluno.it",
-      "count": 228
+      "count": 312
     },
     {
       "domain": "agenziaentrate.gov.it",
-      "count": 223
-    },
-    {
-      "domain": "comune.napoli.it",
-      "count": 221
-    },
-    {
-      "domain": "comune.pordenone.it",
-      "count": 208
+      "count": 288
     },
     {
       "domain": "comune.trieste.it",
-      "count": 204
+      "count": 288
+    },
+    {
+      "domain": "comune.belluno.it",
+      "count": 279
+    },
+    {
+      "domain": "comune.monza.it",
+      "count": 277
+    },
+    {
+      "domain": "comune.novara.it",
+      "count": 270
+    },
+    {
+      "domain": "comune.padova.it",
+      "count": 266
     },
     {
       "domain": "comune.foggia.it",
-      "count": 202
+      "count": 262
+    },
+    {
+      "domain": "comune.oristano.it",
+      "count": 257
+    },
+    {
+      "domain": "comune.brescia.it",
+      "count": 253
     }
   ],
   "top_target_domains": [
     {
       "domain": "esteri.it",
-      "count": 11508
+      "count": 11513
     },
     {
       "domain": "giustizia.it",
-      "count": 7860
+      "count": 7865
     },
     {
       "domain": "facebook.com",
-      "count": 3934
+      "count": 4224
     },
     {
       "domain": "twitter.com",
-      "count": 3312
+      "count": 3534
     },
     {
       "domain": "youtube.com",
-      "count": 3133
+      "count": 3368
     },
     {
       "domain": "cultura.gov.it",
-      "count": 2566
+      "count": 2675
     },
     {
       "domain": "agid.gov.it",
-      "count": 2475
+      "count": 2650
     },
     {
       "domain": "instagram.com",
-      "count": 2370
+      "count": 2578
     },
     {
       "domain": "governo.it",
-      "count": 2101
+      "count": 2126
     },
     {
       "domain": "europa.eu",
-      "count": 1649
+      "count": 1744
+    },
+    {
+      "domain": "regione.emilia-romagna.it",
+      "count": 1475
     },
     {
       "domain": "viaggiaresicuri.it",
@@ -254,92 +258,104 @@
       "count": 1382
     },
     {
-      "domain": "regione.emilia-romagna.it",
-      "count": 1192
+      "domain": "regione.lombardia.it",
+      "count": 1239
     },
     {
       "domain": "whatsapp.com",
-      "count": 1085
-    },
-    {
-      "domain": "regione.lombardia.it",
-      "count": 1069
+      "count": 1162
     },
     {
       "domain": "googleapis.com",
-      "count": 912
-    },
-    {
-      "domain": "regione.veneto.it",
-      "count": 856
-    },
-    {
-      "domain": "linkedin.com",
-      "count": 789
+      "count": 1061
     },
     {
       "domain": "regione.campania.it",
-      "count": 764
+      "count": 996
+    },
+    {
+      "domain": "regione.veneto.it",
+      "count": 993
+    },
+    {
+      "domain": "linkedin.com",
+      "count": 911
+    },
+    {
+      "domain": "regione.lazio.it",
+      "count": 814
+    },
+    {
+      "domain": "comune.parma.it",
+      "count": 780
+    },
+    {
+      "domain": "comune.fi.it",
+      "count": 766
     },
     {
       "domain": "csm.it",
       "count": 700
     },
     {
-      "domain": "comune.parma.it",
-      "count": 689
-    },
-    {
-      "domain": "regione.lazio.it",
-      "count": 643
-    },
-    {
-      "domain": "comune.fi.it",
-      "count": 638
-    },
-    {
       "domain": "googletagmanager.com",
-      "count": 624
+      "count": 672
     },
     {
       "domain": "comune.palermo.it",
-      "count": 527
+      "count": 660
     },
     {
       "domain": "comune.prato.it",
-      "count": 527
-    },
-    {
-      "domain": "comune.verona.it",
-      "count": 517
-    },
-    {
-      "domain": "google.com",
-      "count": 483
+      "count": 636
     },
     {
       "domain": "comune.bologna.it",
-      "count": 473
+      "count": 618
+    },
+    {
+      "domain": "camera.it",
+      "count": 576
+    },
+    {
+      "domain": "google.com",
+      "count": 561
+    },
+    {
+      "domain": "comune.verona.it",
+      "count": 555
     },
     {
       "domain": "beniculturali.it",
-      "count": 472
-    },
-    {
-      "domain": "difesa.it",
-      "count": 447
+      "count": 485
     },
     {
       "domain": "jsdelivr.net",
-      "count": 420
+      "count": 482
     },
     {
       "domain": "regione.toscana.it",
-      "count": 418
+      "count": 477
+    },
+    {
+      "domain": "difesa.it",
+      "count": 461
     },
     {
       "domain": "mef.gov.it",
-      "count": 407
+      "count": 459
+    },
+    {
+      "domain": "interno.gov.it",
+      "count": 445
+    },
+    {
+      "domain": "comune.torino.it",
+      "count": 442
+    },
+    {
+      "domain": "municipiumapp.it",
+      "count": 440
     },
     {
       "domain": "scuolamagistratura.it",
@@ -350,69 +366,53 @@
       "count": 362
     },
     {
-      "domain": "municipiumapp.it",
-      "count": 347
+      "domain": "cloudflare.com",
+      "count": 352
     },
     {
-      "domain": "interno.gov.it",
-      "count": 346
+      "domain": "comune.genova.it",
+      "count": 351
     },
     {
-      "domain": "comune.torino.it",
-      "count": 346
+      "domain": "regione.sicilia.it",
+      "count": 332
+    },
+    {
+      "domain": "t.me",
+      "count": 329
     },
     {
       "domain": "opportunitaly.gov.it",
       "count": 329
     },
     {
-      "domain": "spreaker.com",
-      "count": 315
+      "domain": "comune.modena.it",
+      "count": 319
     },
     {
       "domain": "cortedicassazione.it",
-      "count": 310
+      "count": 318
+    },
+    {
+      "domain": "spreaker.com",
+      "count": 316
     },
     {
       "domain": "quirinale.it",
-      "count": 300
+      "count": 312
     },
     {
-      "domain": "cloudflare.com",
-      "count": 296
-    },
-    {
-      "domain": "regione.sicilia.it",
-      "count": 293
-    },
-    {
-      "domain": "t.me",
-      "count": 281
-    },
-    {
-      "domain": "comune.genova.it",
-      "count": 280
-    },
-    {
-      "domain": "comune.modena.it",
-      "count": 275
-    },
-    {
-      "domain": "camera.it",
-      "count": 261
-    },
-    {
-      "domain": "consiglionazionaleforense.it",
-      "count": 249
+      "domain": "lavoro.gov.it",
+      "count": 292
     }
   ],
   "relationship_types": {
-    "script_dependency": 2562,
-    "editorial_link": 7391,
-    "image_or_media_dependency": 2014,
-    "stylesheet_dependency": 2281,
+    "script_dependency": 2577,
+    "editorial_link": 7494,
+    "image_or_media_dependency": 2029,
+    "stylesheet_dependency": 2295,
     "form_destination": 1442,
     "font_or_preload_dependency": 245
   },
-  "generated_at": "2026-08-21T02:02:33.487879+00:00"
+  "generated_at": "2026-08-23T02:04:49.656586+00:00"
 }

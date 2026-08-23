@@ -36,6 +36,10 @@
       "count": 306
     },
     {
+      "domain": "limerick.ie",
+      "count": 292
+    },
+    {
       "domain": "louthcoco.ie",
       "count": 277
     },
@@ -50,10 +54,6 @@
     {
       "domain": "enterprise.gov.ie",
       "count": 257
-    },
-    {
-      "domain": "limerick.ie",
-      "count": 249
     },
     {
       "domain": "cso.ie",
@@ -207,11 +207,11 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 447
+      "count": 450
     },
     {
       "domain": "googleapis.com",
-      "count": 432
+      "count": 435
     },
     {
       "domain": "instagram.com",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "twitter.com",
-      "count": 308
+      "count": 311
     },
     {
       "domain": "linkedin.com",
@@ -263,7 +263,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 156
+      "count": 159
     },
     {
       "domain": "louthcoco.ie",
@@ -278,16 +278,16 @@
       "count": 136
     },
     {
+      "domain": "limerick.ie",
+      "count": 133
+    },
+    {
       "domain": "arcgis.com",
       "count": 120
     },
     {
       "domain": "kerrycoco.ie",
       "count": 116
-    },
-    {
-      "domain": "limerick.ie",
-      "count": 112
     },
     {
       "domain": "cookiebot.com",
@@ -414,5 +414,5 @@
     "image_or_media_dependency": 190,
     "font_or_preload_dependency": 55
   },
-  "generated_at": "2026-08-18T07:30:19.176676+00:00"
+  "generated_at": "2026-08-23T02:04:49.570618+00:00"
 }
