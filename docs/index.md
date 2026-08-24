@@ -11,13 +11,13 @@ power them, including which third-party JavaScript services they rely on.
 
 <!-- SCAN_PROGRESS_START -->
 
-_Progress as of 2026-08-24 19:39 UTC_
+_Progress as of 2026-08-24 20:48 UTC_
 
 | Scan Type | Pages Scanned | Coverage | Avg Age |
 |-----------|--------------|----------|---------|
 | **Combined Reachability** | **47,159 confirmed reachable** | **<span role="img" aria-label="53.8% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:65px;"></span></span><span class="sm-bar__label">53.8%</span></span>** | — |
 | Social Media | 52,063 scanned (47,058 reachable) | <span role="img" aria-label="59.4% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:71px;"></span></span><span class="sm-bar__label">59.4%</span></span> | 7.3 days |
-| Technology | 57,147 scanned | <span role="img" aria-label="65.2% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:78px;"></span></span><span class="sm-bar__label">65.2%</span></span> | 7.2 days |
+| Technology | 57,147 scanned | <span role="img" aria-label="65.2% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:78px;"></span></span><span class="sm-bar__label">65.2%</span></span> | 7.3 days |
 | Lighthouse | 13,286 scanned | <span role="img" aria-label="15.2% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:18px;"></span></span><span class="sm-bar__label">15.2%</span></span> | 19.4 days |
 | Accessibility Statements | 54,997 scanned | <span role="img" aria-label="62.7% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:75px;"></span></span><span class="sm-bar__label">62.7%</span></span> | 6.9 days |
 
