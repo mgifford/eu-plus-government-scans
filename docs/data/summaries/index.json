@@ -24,9 +24,9 @@
     "total_source_domains": 143,
     "file": "latvia.json"
   },
-  "UNITED_KINGDOM_UK": {
-    "total_relationships": 294555,
-    "total_source_domains": 8403,
-    "file": "united_kingdom_uk.json"
+  "FRANCE": {
+    "total_relationships": 30210,
+    "total_source_domains": 657,
+    "file": "france.json"
   }
 }
