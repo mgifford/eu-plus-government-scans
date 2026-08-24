@@ -24,9 +24,19 @@
     "total_source_domains": 143,
     "file": "latvia.json"
   },
-  "FRANCE": {
-    "total_relationships": 30210,
-    "total_source_domains": 657,
-    "file": "france.json"
+  "CANADA": {
+    "total_relationships": 298734,
+    "total_source_domains": 8466,
+    "file": "canada.json"
+  },
+  "LITHUANIA": {
+    "total_relationships": 538,
+    "total_source_domains": 15,
+    "file": "lithuania.json"
+  },
+  "MALTA": {
+    "total_relationships": 1771,
+    "total_source_domains": 3,
+    "file": "malta.json"
   }
 }
