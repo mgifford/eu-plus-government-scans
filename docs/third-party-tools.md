@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-08-24 19:39 UTC — last scan: 2026-08-24_
+_Stats as of 2026-08-24 20:48 UTC — last scan: 2026-08-24_
 
-**139** scan batches run
+**141** scan batches run
 
 **17,622** of **87,696** available pages scanned (**20.1%** coverage)
 **16,331** of **17,622** scanned pages were reachable (**92.7%**)
-**7,638** reachable pages loaded at least one third-party script (**46.8%** of reachable)
-**10,576** known third-party service loads identified
+**7,639** reachable pages loaded at least one third-party script (**46.8%** of reachable)
+**10,577** known third-party service loads identified
 **22** unique known services across **14** categories
 
 ---
@@ -23,7 +23,7 @@ _Stats as of 2026-08-24 19:39 UTC — last scan: 2026-08-24_
 |---------|---------|-----------|-----------|------------------------|--------------------|------------------------|---------------------------|----------|
 | Austria | 822 | 822 | 787 | 275 | 52 | 34.9 | 6.6 | 2026-08-22 |
 | Belgium | 990 | 1,329 | 906 | 477 | 496 | 52.6 | 54.7 | 2026-08-22 |
-| Bulgaria | 353 | 353 | 305 | 128 | 163 | 42.0 | 53.4 | 2026-08-22 |
+| Bulgaria | 353 | 353 | 305 | 129 | 164 | 42.3 | 53.8 | 2026-08-24 |
 | Canada | 864 | 4,469 | 827 | 536 | 834 | 64.8 | 100.8 | 2026-08-20 |
 | Croatia | 257 | 257 | 254 | 138 | 186 | 54.3 | 73.2 | 2026-08-22 |
 | Czechia | 866 | 866 | 798 | 476 | 792 | 59.6 | 99.2 | 2026-08-22 |
@@ -50,7 +50,7 @@ _Stats as of 2026-08-24 19:39 UTC — last scan: 2026-08-24_
 | Slovakia | 442 | 442 | 413 | 218 | 273 | 52.8 | 66.1 | 2026-08-24 |
 | Slovenia | 214 | 214 | 207 | 56 | 82 | 27.1 | 39.6 | 2026-08-24 |
 | Spain | 363 | 6,091 | 301 | 186 | 190 | 61.8 | 63.1 | 2026-08-23 |
-| Sweden | 763 | 1,702 | 710 | 180 | 56 | 25.4 | 7.9 | 2026-08-22 |
+| Sweden | 763 | 1,702 | 710 | 180 | 56 | 25.4 | 7.9 | 2026-08-24 |
 | Switzerland | 1,031 | 2,123 | 1,005 | 238 | 231 | 23.7 | 23.0 | 2026-08-24 |
 | United Kingdom | 787 | 19,511 | 741 | 403 | 509 | 54.4 | 68.7 | 2026-08-24 |
 
@@ -77,7 +77,7 @@ _Stats as of 2026-08-24 19:39 UTC — last scan: 2026-08-24_
 | 13 | OneTrust | **102** |
 | 14 | Adobe Dynamic Tag Management / Launch | **63** |
 | 15 | Facebook Pixel | **53** |
-| 16 | Cloudflare Turnstile / Challenge | **25** |
+| 16 | Cloudflare Turnstile / Challenge | **26** |
 | 17 | Google Analytics (Universal) | **24** |
 | 18 | Sentry | **22** |
 | 19 | Zendesk | **11** |
@@ -102,7 +102,7 @@ _Stats as of 2026-08-24 19:39 UTC — last scan: 2026-08-24_
 | 13 | OneTrust | **95** | **12.8%** |
 | 14 | Adobe Dynamic Tag Management / Launch | **60** | **8.1%** |
 | 15 | Facebook Pixel | **51** | **6.9%** |
-| 16 | Cloudflare Turnstile / Challenge | **25** | **3.4%** |
+| 16 | Cloudflare Turnstile / Challenge | **26** | **3.5%** |
 | 17 | Google Analytics (Universal) | **24** | **3.2%** |
 | 18 | Sentry | **22** | **3.0%** |
 | 19 | Zendesk | **11** | **1.5%** |
@@ -116,7 +116,7 @@ _Stats as of 2026-08-24 19:39 UTC — last scan: 2026-08-24_
 | 2 | Analytics | **1,789** |
 | 3 | JavaScript Library | **1,472** |
 | 4 | Cookie Consent | **891** |
-| 5 | Security | **731** |
+| 5 | Security | **732** |
 | 6 | CAPTCHA | **706** |
 | 7 | Tag Manager | **666** |
 | 8 | Icon Library | **262** |
@@ -144,7 +144,7 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 |--:|--------------------------|------:|
 | 1 | Analytics | **1,789** |
 | 2 | Cookie Consent | **891** |
-| 3 | Security | **731** |
+| 3 | Security | **732** |
 | 4 | CAPTCHA | **706** |
 | 5 | Tag Manager | **666** |
 | 6 | Advertising | **53** |
