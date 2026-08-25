@@ -5,13 +5,13 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-08-25 14:22 UTC — last scan: 2026-08-25_
+_Stats as of 2026-08-25 15:06 UTC — last scan: 2026-08-25_
 
-**145** scan batches run
+**148** scan batches run
 
 **17,622** of **87,696** available pages scanned (**20.1%** coverage)
 **16,331** of **17,622** scanned pages were reachable (**92.7%**)
-**7,639** reachable pages loaded at least one third-party script (**46.8%** of reachable)
+**7,642** reachable pages loaded at least one third-party script (**46.8%** of reachable)
 **10,591** known third-party service loads identified
 **22** unique known services across **14** categories
 
@@ -24,12 +24,12 @@ _Stats as of 2026-08-25 14:22 UTC — last scan: 2026-08-25_
 | Austria | 822 | 822 | 787 | 275 | 52 | 34.9 | 6.6 | 2026-08-25 |
 | Belgium | 990 | 1,329 | 906 | 477 | 498 | 52.6 | 55.0 | 2026-08-25 |
 | Bulgaria | 353 | 353 | 305 | 129 | 164 | 42.3 | 53.8 | 2026-08-24 |
-| Canada | 864 | 4,469 | 827 | 536 | 834 | 64.8 | 100.8 | 2026-08-20 |
+| Canada | 864 | 4,469 | 827 | 536 | 834 | 64.8 | 100.8 | 2026-08-25 |
 | Croatia | 257 | 257 | 254 | 138 | 192 | 54.3 | 75.6 | 2026-08-25 |
-| Czechia | 866 | 866 | 798 | 476 | 792 | 59.6 | 99.2 | 2026-08-22 |
+| Czechia | 866 | 866 | 798 | 479 | 792 | 60.0 | 99.2 | 2026-08-25 |
 | Denmark | 1,514 | 1,536 | 1,486 | 808 | 2,085 | 54.4 | 140.3 | 2026-08-23 |
 | Estonia | 401 | 401 | 385 | 135 | 121 | 35.1 | 31.4 | 2026-08-25 |
-| Finland | 199 | 199 | 189 | 46 | 26 | 24.3 | 13.8 | 2026-08-22 |
+| Finland | 199 | 199 | 189 | 46 | 26 | 24.3 | 13.8 | 2026-08-25 |
 | France | 284 | 10,009 | 256 | 146 | 50 | 57.0 | 19.5 | 2026-08-20 |
 | Germany | 619 | 6,599 | 586 | 160 | 184 | 27.3 | 31.4 | 2026-08-21 |
 | Greece | 651 | 1,752 | 604 | 261 | 349 | 43.2 | 57.8 | 2026-08-21 |
