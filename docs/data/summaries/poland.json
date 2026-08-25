@@ -1,11 +1,11 @@
 {
   "country_code": "POLAND",
-  "total_relationships": 57290,
-  "total_source_domains": 2327,
+  "total_relationships": 57292,
+  "total_source_domains": 2328,
   "top_source_domains": [
     {
       "domain": "krakow.pl",
-      "count": 34514
+      "count": 34536
     },
     {
       "domain": "poznan.pl",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "krakow.pl",
-      "count": 17193
+      "count": 17203
     },
     {
       "domain": "poznan.pl",
@@ -215,7 +215,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 9205
+      "count": 9207
     },
     {
       "domain": "lodz.pl",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 8204
+      "count": 8206
     },
     {
       "domain": "gdansk.pl",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 1213
+      "count": 1215
     },
     {
       "domain": "www.gov.pl",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 30900,
+    "editorial_link": 30902,
     "form_destination": 3111,
     "image_or_media_dependency": 6258,
     "script_dependency": 8189,
     "stylesheet_dependency": 7160,
     "font_or_preload_dependency": 1672
   },
-  "generated_at": "2026-08-23T19:16:56.987402+00:00"
+  "generated_at": "2026-08-25T19:27:43.300593+00:00"
 }
