@@ -5,9 +5,9 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-08-25 19:39 UTC — last scan: 2026-08-25_
+_Stats as of 2026-08-25 20:46 UTC — last scan: 2026-08-25_
 
-**148** scan batches run
+**150** scan batches run
 
 **17,622** of **87,696** available pages scanned (**20.1%** coverage)
 **16,331** of **17,622** scanned pages were reachable (**92.7%**)
@@ -27,13 +27,13 @@ _Stats as of 2026-08-25 19:39 UTC — last scan: 2026-08-25_
 | Canada | 864 | 4,469 | 827 | 536 | 834 | 64.8 | 100.8 | 2026-08-25 |
 | Croatia | 257 | 257 | 254 | 138 | 192 | 54.3 | 75.6 | 2026-08-25 |
 | Czechia | 866 | 866 | 798 | 479 | 792 | 60.0 | 99.2 | 2026-08-25 |
-| Denmark | 1,514 | 1,536 | 1,486 | 808 | 2,085 | 54.4 | 140.3 | 2026-08-23 |
+| Denmark | 1,514 | 1,536 | 1,486 | 808 | 2,085 | 54.4 | 140.3 | 2026-08-25 |
 | Estonia | 401 | 401 | 385 | 135 | 121 | 35.1 | 31.4 | 2026-08-25 |
 | Finland | 199 | 199 | 189 | 46 | 26 | 24.3 | 13.8 | 2026-08-25 |
 | France | 284 | 10,009 | 256 | 146 | 50 | 57.0 | 19.5 | 2026-08-20 |
 | Germany | 619 | 6,599 | 586 | 160 | 184 | 27.3 | 31.4 | 2026-08-21 |
 | Greece | 651 | 1,752 | 604 | 261 | 349 | 43.2 | 57.8 | 2026-08-21 |
-| Hungary | 392 | 392 | 296 | 128 | 196 | 43.2 | 66.2 | 2026-08-23 |
+| Hungary | 392 | 392 | 296 | 128 | 196 | 43.2 | 66.2 | 2026-08-25 |
 | Iceland | 145 | 145 | 143 | 78 | 46 | 54.5 | 32.2 | 2026-08-23 |
 | Ireland | 536 | 536 | 499 | 266 | 748 | 53.3 | 149.9 | 2026-08-23 |
 | Italy | 407 | 5,351 | 385 | 148 | 24 | 38.4 | 6.2 | 2026-08-22 |
@@ -168,10 +168,10 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 | 9 | `maps.googleapis.com` | **248** | **233** |
 | 10 | `dreambroker.com` | **246** | **246** |
 | 11 | `content.powerapps.com` | **228** | **19** |
-| 12 | `translate.google.com` | **226** | **226** |
-| 13 | `www.youtube.com` | **215** | **215** |
-| 14 | `cdn.herning.dk` | **211** | **21** |
-| 15 | `siteimproveanalytics.com` | **189** | **189** |
+| 12 | `cdn.herning.dk` | **227** | **23** |
+| 13 | `translate.google.com` | **226** | **226** |
+| 14 | `www.youtube.com` | **215** | **215** |
+| 15 | `cdn.hjoerring.dk` | **187** | **17** |
 
 > These hosts were seen as third-party script sources but did not match a known service signature. Review this queue regularly and promote stable, policy-relevant hosts into the signature list.
 
