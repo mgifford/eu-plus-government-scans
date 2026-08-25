@@ -24,24 +24,9 @@
     "total_source_domains": 143,
     "file": "latvia.json"
   },
-  "GREECE": {
-    "total_relationships": 8515,
-    "total_source_domains": 364,
-    "file": "greece.json"
-  },
-  "LITHUANIA": {
-    "total_relationships": 538,
-    "total_source_domains": 15,
-    "file": "lithuania.json"
-  },
-  "LUXEMBOURG": {
-    "total_relationships": 1817,
-    "total_source_domains": 41,
-    "file": "luxembourg.json"
-  },
-  "ITALY": {
-    "total_relationships": 16096,
-    "total_source_domains": 151,
-    "file": "italy.json"
+  "PORTUGAL": {
+    "total_relationships": 13489,
+    "total_source_domains": 392,
+    "file": "portugal.json"
   }
 }
