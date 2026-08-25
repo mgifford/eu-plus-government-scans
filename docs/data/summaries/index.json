@@ -24,9 +24,9 @@
     "total_source_domains": 143,
     "file": "latvia.json"
   },
-  "SPAIN": {
-    "total_relationships": 16118,
-    "total_source_domains": 233,
-    "file": "spain.json"
+  "POLAND": {
+    "total_relationships": 57292,
+    "total_source_domains": 2328,
+    "file": "poland.json"
   }
 }
