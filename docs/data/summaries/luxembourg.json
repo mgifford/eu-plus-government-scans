@@ -1,6 +1,6 @@
 {
   "country_code": "LUXEMBOURG",
-  "total_relationships": 1815,
+  "total_relationships": 1817,
   "total_source_domains": 41,
   "top_source_domains": [
     {
@@ -120,6 +120,10 @@
       "count": 56
     },
     {
+      "domain": "ilr.lu",
+      "count": 54
+    },
+    {
       "domain": "petitiounen.lu",
       "count": 52
     },
@@ -133,10 +137,6 @@
     },
     {
       "domain": "chl.lu",
-      "count": 26
-    },
-    {
-      "domain": "ilr.lu",
       "count": 26
     },
     {
@@ -179,7 +179,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 454
+      "count": 455
     },
     {
       "domain": "uni.lu",
@@ -187,11 +187,11 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 414
+      "count": 415
     },
     {
       "domain": "twitter.com",
-      "count": 335
+      "count": 336
     },
     {
       "domain": "bsky.app",
@@ -227,7 +227,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 90
+      "count": 94
     },
     {
       "domain": "vdl.lu",
@@ -259,7 +259,7 @@
     },
     {
       "domain": "google.com",
-      "count": 53
+      "count": 55
     },
     {
       "domain": "chem.lu",
@@ -375,8 +375,8 @@
     "form_destination": 136,
     "image_or_media_dependency": 174,
     "script_dependency": 250,
-    "stylesheet_dependency": 209,
-    "font_or_preload_dependency": 28
+    "stylesheet_dependency": 210,
+    "font_or_preload_dependency": 29
   },
-  "generated_at": "2026-08-18T19:26:04.503223+00:00"
+  "generated_at": "2026-08-25T02:00:39.453239+00:00"
 }

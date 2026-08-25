@@ -1,6 +1,6 @@
 {
   "country_code": "GREECE",
-  "total_relationships": 8509,
+  "total_relationships": 8515,
   "total_source_domains": 364,
   "top_source_domains": [
     {
@@ -168,6 +168,10 @@
       "count": 211
     },
     {
+      "domain": "chios.gov.gr",
+      "count": 209
+    },
+    {
       "domain": "anaptyxi.gov.gr",
       "count": 208
     },
@@ -178,10 +182,6 @@
     {
       "domain": "syzefxis.gov.gr",
       "count": 194
-    },
-    {
-      "domain": "chios.gov.gr",
-      "count": 191
     },
     {
       "domain": "diavgeia.gov.gr",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "googleapis.com",
-      "count": 1998
+      "count": 2000
     },
     {
       "domain": "facebook.com",
@@ -219,7 +219,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 797
+      "count": 799
     },
     {
       "domain": "youtube.com",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 4887,
+    "editorial_link": 4889,
     "font_or_preload_dependency": 297,
     "form_destination": 367,
-    "image_or_media_dependency": 654,
-    "script_dependency": 1261,
-    "stylesheet_dependency": 1043
+    "image_or_media_dependency": 655,
+    "script_dependency": 1263,
+    "stylesheet_dependency": 1044
   },
-  "generated_at": "2026-08-23T02:04:49.417225+00:00"
+  "generated_at": "2026-08-25T02:00:39.292177+00:00"
 }
