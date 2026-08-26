@@ -14,7 +14,6 @@ This file tracks the primary software used in this repository to support securit
 |---|---|---:|---|---|---|
 | Python | runtime | 3.12 | PSF | `.github/workflows/*`, docs | Primary language runtime |
 | Node.js | runtime/tooling | 20.x | MIT-style | `.github/workflows/*`, docs | Required for Lighthouse/Playwright tooling |
-| setuptools | pip | `>=68.0,<81.0` | UNKNOWN | `requirements.txt` | Kept for `python-Wappalyzer` / `pkg_resources` compatibility |
 | fastapi | pip | `0.115.6` | UNKNOWN | `requirements.txt` | API framework |
 | httpx | pip | `0.28.1` | BSD-3-Clause | `requirements.txt` | Async HTTP client |
 | pydantic | pip | `2.10.5` | UNKNOWN | `requirements.txt` | Data validation |
@@ -23,7 +22,7 @@ This file tracks the primary software used in this repository to support securit
 | tldextract | pip | `5.1.3` | BSD-3-Clause | `requirements.txt` | Domain parsing |
 | beautifulsoup4 | pip | `4.12.3` | MIT License | `requirements.txt` | HTML parsing |
 | tenacity | pip | `9.0.0` | Apache 2.0 | `requirements.txt` | Retry handling |
-| python-Wappalyzer | pip | `0.3.1` | UNKNOWN | `requirements.txt` | Technology detection |
+| wappalyzer-python3 | pip | `>=0.0.11` | GPLv3 | `requirements.txt` | Technology detection (maintained fork of python-Wappalyzer) |
 | pytest | pip | `8.3.4` | MIT | `requirements.txt` | Test runner |
 | pytest-asyncio | pip | `0.25.2` | Apache 2.0 | `requirements.txt` | Async test support |
 | pytest-mock | pip | `3.14.0` | MIT | `requirements.txt` | Mocking plugin |

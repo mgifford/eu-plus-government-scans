@@ -1,5 +1,4 @@
 # Core dependencies
-setuptools>=83.0.0,<84.0  # python-Wappalyzer still imports pkg_resources
 fastapi==0.115.6
 httpx==0.28.1
 pydantic==2.10.5
@@ -8,7 +7,7 @@ apscheduler==3.10.4
 tldextract==5.1.3
 beautifulsoup4==4.12.3
 tenacity==9.0.0
-python-Wappalyzer==0.3.1
+wappalyzer-python3>=0.0.11  # maintained fork of python-Wappalyzer
 pyyaml>=6.0.1
 
 # Testing
