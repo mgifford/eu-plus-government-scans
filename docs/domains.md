@@ -3,22 +3,9 @@ title: Government Domains
 layout: page
 ---
 
-_Generated: 2026-08-26 17:46 UTC_
+_Generated: 2026-08-26 19:06 UTC_
 
 This page lists all government domains tracked in the dataset, grouped by country. Data is sourced from the [TOON seed files](https://github.com/mgifford/eu-plus-government-scans/tree/main/data/toon-seeds/countries) in the repository. Each country's full domain list is on its own page to keep page size manageable.
-
-## Domain Provenance
-
-The domains in this dataset come from several sources. The canonical list of import sources — with URLs, schedules, and notes — is maintained in [`data/imports/domain_sources.yaml`](https://github.com/mgifford/eu-plus-government-scans/blob/main/data/imports/domain_sources.yaml).
-
-| Source | Type | Schedule | Countries |
-|--------|------|----------|-----------|
-| [Software Heritage world-gov-domain-names](https://gitlab.softwareheritage.org/swh/products/insights/world-gov-domain-names) | CSV download | Monthly | All European |
-| [Belgium accessibility audit 2026 (FR)](https://accessibility.belgium.be/fr/actualites/liste-des-sites-qui-recevront-un-audit-daccessibilite-en-2026) | HTML scrape | Manual | BEL |
-| [Flanders digital accessibility audits 2026](https://www.vlaanderen.be/inter/overheden-en-professionelen/werken-aan-digitale-toegankelijkheid/ondersteunings-en-controleorgaan-digitale-toegankelijkheid/audits-digitale-toegankelijkheid-2026) | HTML scrape | Manual | BEL |
-| [HTTP Archive Web Almanac](https://httparchive.org/reports/state-of-the-web) | SQL export | Annual | All European |
-
-To add a new import source, update `data/imports/domain_sources.yaml` and run the appropriate import workflow from the [Actions tab](https://github.com/mgifford/eu-plus-government-scans/actions).
 
 **32 countries** · **39,439 domains** · **87,696 pages**
 
