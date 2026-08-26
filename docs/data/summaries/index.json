@@ -19,14 +19,14 @@
     "total_source_domains": 20,
     "file": "iceland.json"
   },
-  "LATVIA": {
-    "total_relationships": 3338,
-    "total_source_domains": 143,
-    "file": "latvia.json"
+  "SWEDEN": {
+    "total_relationships": 5881,
+    "total_source_domains": 234,
+    "file": "sweden.json"
   },
-  "UNITED_KINGDOM_UK": {
-    "total_relationships": 299098,
-    "total_source_domains": 8474,
-    "file": "united_kingdom_uk.json"
+  "FRANCE": {
+    "total_relationships": 30210,
+    "total_source_domains": 657,
+    "file": "france.json"
   }
 }
