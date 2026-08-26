@@ -1,14 +1,5 @@
 {
   "sources": {
-    "https://www.vlaanderen.be/inter/overheden-en-professionelen/werken-aan-digitale-toegankelijkheid/ondersteunings-en-controleorgaan-digitale-toegankelijkheid/audits-digitale-toegankelijkheid-2026": {
-      "new_domain_count": 2,
-      "unresolved_count": 0,
-      "new_domains": [
-        "eur-lex.europa.eu",
-        "sintlukasacademie.brussels"
-      ],
-      "unresolved_domains": []
-    },
     "https://accessibility.belgium.be/fr/actualites/liste-des-sites-qui-recevront-un-audit-daccessibilite-en-2026": {
       "new_domain_count": 18,
       "unresolved_count": 0,
@@ -31,6 +22,15 @@
         "nsarail.fgov.be",
         "plan.mobilit.belgium.be",
         "sfpd.fgov.be"
+      ],
+      "unresolved_domains": []
+    },
+    "https://www.vlaanderen.be/inter/overheden-en-professionelen/werken-aan-digitale-toegankelijkheid/ondersteunings-en-controleorgaan-digitale-toegankelijkheid/audits-digitale-toegankelijkheid-2026": {
+      "new_domain_count": 2,
+      "unresolved_count": 0,
+      "new_domains": [
+        "eur-lex.europa.eu",
+        "sintlukasacademie.brussels"
       ],
       "unresolved_domains": []
     }
