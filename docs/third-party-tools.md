@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-08-26 07:53 UTC — last scan: 2026-08-26_
+_Stats as of 2026-08-26 09:02 UTC — last scan: 2026-08-26_
 
-**153** scan batches run
+**156** scan batches run
 
 **17,873** of **87,696** available pages scanned (**20.4%** coverage)
 **16,549** of **17,873** scanned pages were reachable (**92.6%**)
 **7,763** reachable pages loaded at least one third-party script (**46.9%** of reachable)
-**10,627** known third-party service loads identified
+**10,630** known third-party service loads identified
 **22** unique known services across **14** categories
 
 ---
@@ -31,14 +31,14 @@ _Stats as of 2026-08-26 07:53 UTC — last scan: 2026-08-26_
 | Estonia | 401 | 401 | 385 | 135 | 121 | 35.1 | 31.4 | 2026-08-25 |
 | Finland | 199 | 199 | 189 | 46 | 26 | 24.3 | 13.8 | 2026-08-25 |
 | France | 535 | 10,009 | 474 | 265 | 110 | 55.9 | 23.2 | 2026-08-26 |
-| Germany | 619 | 6,599 | 586 | 160 | 184 | 27.3 | 31.4 | 2026-08-21 |
+| Germany | 619 | 6,599 | 586 | 160 | 184 | 27.3 | 31.4 | 2026-08-26 |
 | Greece | 651 | 1,752 | 604 | 261 | 349 | 43.2 | 57.8 | 2026-08-21 |
 | Hungary | 392 | 392 | 296 | 128 | 196 | 43.2 | 66.2 | 2026-08-25 |
 | Iceland | 145 | 145 | 143 | 78 | 46 | 54.5 | 32.2 | 2026-08-26 |
 | Ireland | 536 | 536 | 499 | 268 | 724 | 53.7 | 145.1 | 2026-08-26 |
 | Italy | 407 | 5,351 | 385 | 148 | 24 | 38.4 | 6.2 | 2026-08-22 |
-| Latvia | 803 | 803 | 762 | 261 | 285 | 34.3 | 37.4 | 2026-08-23 |
-| Lithuania | 122 | 122 | 112 | 57 | 113 | 50.9 | 100.9 | 2026-08-23 |
+| Latvia | 803 | 803 | 762 | 261 | 288 | 34.3 | 37.8 | 2026-08-26 |
+| Lithuania | 122 | 122 | 112 | 57 | 113 | 50.9 | 100.9 | 2026-08-26 |
 | Luxembourg | 573 | 573 | 481 | 348 | 134 | 72.3 | 27.9 | 2026-08-23 |
 | Malta | 610 | 610 | 595 | 465 | 1,280 | 78.2 | 215.1 | 2026-08-24 |
 | Netherlands | 945 | 945 | 902 | 359 | 277 | 39.8 | 30.7 | 2026-08-24 |
@@ -64,12 +64,12 @@ _Stats as of 2026-08-26 07:53 UTC — last scan: 2026-08-26_
 |--:|---------|------:|
 | 1 | cdnjs (Cloudflare CDN) | **2,112** |
 | 2 | jsDelivr CDN | **1,984** |
-| 3 | Google Analytics (GA4) | **1,638** |
+| 3 | Google Analytics (GA4) | **1,639** |
 | 4 | jQuery | **879** |
 | 5 | Google reCAPTCHA | **704** |
 | 6 | Google Tag Manager | **610** |
 | 7 | Google Hosted Libraries | **603** |
-| 8 | unpkg CDN | **590** |
+| 8 | unpkg CDN | **592** |
 | 9 | CookieInformation | **401** |
 | 10 | Cookiebot | **388** |
 | 11 | Font Awesome | **279** |
@@ -87,14 +87,14 @@ _Stats as of 2026-08-26 07:53 UTC — last scan: 2026-08-26_
 
 | # | Service | Reachable Pages | Prevalence of Reachable Pages |
 |--:|---------|----------------:|------------------------------:|
-| 1 | Google Analytics (GA4) | **1,606** | **216.7%** |
+| 1 | Google Analytics (GA4) | **1,607** | **216.9%** |
 | 2 | jsDelivr CDN | **1,102** | **148.7%** |
 | 3 | cdnjs (Cloudflare CDN) | **800** | **108.0%** |
 | 4 | Google reCAPTCHA | **683** | **92.2%** |
 | 5 | jQuery | **609** | **82.2%** |
 | 6 | Google Tag Manager | **593** | **80.0%** |
 | 7 | Google Hosted Libraries | **530** | **71.5%** |
-| 8 | unpkg CDN | **439** | **59.2%** |
+| 8 | unpkg CDN | **441** | **59.5%** |
 | 9 | CookieInformation | **401** | **54.1%** |
 | 10 | Cookiebot | **383** | **51.7%** |
 | 11 | Font Awesome | **223** | **30.1%** |
@@ -112,8 +112,8 @@ _Stats as of 2026-08-26 07:53 UTC — last scan: 2026-08-26_
 
 | # | Category | Loads |
 |--:|----------|------:|
-| 1 | CDN | **5,289** |
-| 2 | Analytics | **1,794** |
+| 1 | CDN | **5,291** |
+| 2 | Analytics | **1,795** |
 | 3 | JavaScript Library | **1,482** |
 | 4 | Cookie Consent | **891** |
 | 5 | Security | **730** |
@@ -133,7 +133,7 @@ Infrastructure-heavy categories (CDNs, core libraries, and UI assets):
 
 | # | Infrastructure Category | Loads |
 |--:|--------------------------|------:|
-| 1 | CDN | **5,289** |
+| 1 | CDN | **5,291** |
 | 2 | JavaScript Library | **1,482** |
 | 3 | Icon Library | **279** |
 | 4 | UI Framework | **119** |
@@ -142,7 +142,7 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 
 | # | Policy-Relevant Category | Loads |
 |--:|--------------------------|------:|
-| 1 | Analytics | **1,794** |
+| 1 | Analytics | **1,795** |
 | 2 | Cookie Consent | **891** |
 | 3 | Security | **730** |
 | 4 | CAPTCHA | **704** |
