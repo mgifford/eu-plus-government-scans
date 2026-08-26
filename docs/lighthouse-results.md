@@ -5,9 +5,9 @@ layout: page
 
 <!-- LIGHTHOUSE_STATS_START -->
 
-_Stats as of 2026-08-26 20:04 UTC — last scan: 2026-08-26_
+_Stats as of 2026-08-26 20:47 UTC — last scan: 2026-08-26_
 
-**230** scan batches run
+**231** scan batches run
 
 **14,423** of **87,696** available pages audited (**16.4%** coverage)
 **13,284** successful audits (**92.1%** of audited)
@@ -16,7 +16,7 @@ _Stats as of 2026-08-26 20:04 UTC — last scan: 2026-08-26_
 
 | Performance | Accessibility | Best Practices | SEO |
 |:-----------:|:-------------:|:--------------:|:---:|
-| 89 | 88 | 91 | 88 |
+| 89 | 88 | 90 | 88 |
 
 ---
 
@@ -24,7 +24,7 @@ _Stats as of 2026-08-26 20:04 UTC — last scan: 2026-08-26_
 
 | Country | Audited | Available | Perf | A11y | Best Practices | SEO | Last Scan |
 |---------|--------:|----------:|:----:|:----:|:--------------:|:---:|-----------|
-| Austria | 822 | 822 | 88 | 90 | 92 | 89 | 2026-08-23 |
+| Austria | 822 | 822 | 88 | 89 | 91 | 88 | 2026-08-26 |
 | Belgium | 1,068 | 1,329 | 86 | 91 | 91 | 91 | 2026-08-23 |
 | Bulgaria | 352 | 353 | 86 | 81 | 88 | 88 | 2026-08-24 |
 | Canada | 409 | 4,469 | 94 | 88 | 89 | 87 | 2026-08-18 |
