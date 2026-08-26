@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T07:36:01.800641+00:00",
+  "generated_at": "2026-08-26T13:39:18.332079+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -178,12 +178,12 @@
     {
       "service": "googletagmanager.com",
       "countries": 32,
-      "domains": 2555
+      "domains": 2556
     },
     {
       "service": "jsdelivr.net",
       "countries": 32,
-      "domains": 1072
+      "domains": 1073
     },
     {
       "service": "fontawesome.com",
@@ -1564,17 +1564,17 @@
       "country_code": "CANADA",
       "country": "Canada",
       "service": "googletagmanager.com",
-      "domains": 75,
+      "domains": 76,
       "scanned_domains": 191,
-      "percent": 39.3
+      "percent": 39.8
     },
     {
       "country_code": "CANADA",
       "country": "Canada",
       "service": "jsdelivr.net",
-      "domains": 37,
+      "domains": 38,
       "scanned_domains": 191,
-      "percent": 19.4
+      "percent": 19.9
     },
     {
       "country_code": "CANADA",

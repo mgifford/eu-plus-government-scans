@@ -19,14 +19,24 @@
     "total_source_domains": 20,
     "file": "iceland.json"
   },
-  "SWEDEN": {
-    "total_relationships": 5881,
-    "total_source_domains": 234,
-    "file": "sweden.json"
+  "NETHERLANDS": {
+    "total_relationships": 2950,
+    "total_source_domains": 73,
+    "file": "netherlands.json"
   },
-  "FRANCE": {
-    "total_relationships": 30210,
-    "total_source_domains": 657,
-    "file": "france.json"
+  "CANADA": {
+    "total_relationships": 300157,
+    "total_source_domains": 8523,
+    "file": "canada.json"
+  },
+  "LITHUANIA": {
+    "total_relationships": 538,
+    "total_source_domains": 15,
+    "file": "lithuania.json"
+  },
+  "ROMANIA": {
+    "total_relationships": 1104,
+    "total_source_domains": 16,
+    "file": "romania.json"
   }
 }
