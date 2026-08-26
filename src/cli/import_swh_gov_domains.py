@@ -16,8 +16,9 @@ import csv
 import io
 import json
 import sys
+import urllib.error
 from pathlib import Path
-from typing import Dict, List, Set
+from typing import Dict, List, Optional, Set
 from urllib.request import urlopen
 
 # European countries in the Software Heritage dataset
@@ -85,18 +86,89 @@ ISO3_TO_COUNTRY: Dict[str, str] = {
     "VAT": "Holy See",
 }
 
-# Software Heritage dataset URLs
-SWH_CENTRAL_GOV_URL = "https://gitlab.softwareheritage.org/swh/products/insights/world-gov-domain-names/-/raw/main/public-sector-central-gov.csv"
-SWH_PUBLIC_SECTOR_URL = "https://gitlab.softwareheritage.org/swh/products/insights/world-gov-domain-names/-/raw/main/public-sector.csv"
+# Software Heritage GitLab project details
+SWH_GITLAB_BASE = "https://gitlab.softwareheritage.org"
+SWH_PROJECT_PATH = "swh/products/insights/world-gov-domain-names"
+SWH_PROJECT_ID = "swh%2Fproducts%2Finsights%2Fworld-gov-domain-names"  # URL-encoded
+
+# Raw file URLs (used directly; validated at startup via GitLab API)
+SWH_CENTRAL_GOV_URL = f"{SWH_GITLAB_BASE}/{SWH_PROJECT_PATH}/-/raw/main/public-sector-central-gov.csv"
+SWH_PUBLIC_SECTOR_URL = f"{SWH_GITLAB_BASE}/{SWH_PROJECT_PATH}/-/raw/main/public-sector.csv"
+
+# GitLab API endpoint to list repository files (helps detect renames quickly)
+SWH_TREE_API_URL = (
+    f"{SWH_GITLAB_BASE}/api/v4/projects/{SWH_PROJECT_ID}/repository/tree?ref=main&per_page=100"
+)
+
+
+def list_swh_files() -> Optional[List[str]]:
+    """Return the list of CSV filenames in the SWH repository root via the GitLab API.
+
+    Returns None if the API call fails (non-fatal; used for advisory warnings only).
+    """
+    try:
+        with urlopen(SWH_TREE_API_URL, timeout=15) as response:
+            entries = json.loads(response.read().decode("utf-8"))
+            return [e["name"] for e in entries if e.get("type") == "blob"]
+    except Exception as exc:  # noqa: BLE001
+        print(f"Warning: Could not list SWH repository files ({exc})")
+        return None
+
+
+def check_swh_urls() -> None:
+    """Verify that the expected CSV files exist in the upstream repository.
+
+    Prints a warning (but does not abort) if the files cannot be confirmed,
+    so that a rename is surfaced early with a useful message.
+    """
+    expected = {
+        "public-sector-central-gov.csv": SWH_CENTRAL_GOV_URL,
+        "public-sector.csv": SWH_PUBLIC_SECTOR_URL,
+    }
+    files = list_swh_files()
+    if files is None:
+        # API unreachable — carry on optimistically
+        return
+    for filename, url in expected.items():
+        if filename not in files:
+            available = [f for f in files if f.endswith(".csv")]
+            print(
+                f"WARNING: '{filename}' not found in the upstream SWH repository.\n"
+                f"  Expected URL: {url}\n"
+                f"  Available CSV files: {available}\n"
+                "  The file may have been renamed. Update SWH_CENTRAL_GOV_URL / "
+                "SWH_PUBLIC_SECTOR_URL in src/cli/import_swh_gov_domains.py."
+            )
 
 
 def fetch_csv(url: str) -> List[Dict[str, str]]:
-    """Fetch CSV data from a URL."""
+    """Fetch CSV data from a URL.
+
+    Raises:
+        SystemExit: With a human-readable message on HTTP errors (including 404).
+        urllib.error.URLError: On network/connection failures.
+    """
     print(f"Fetching {url}...")
-    with urlopen(url) as response:
-        content = response.read().decode("utf-8")
-        reader = csv.DictReader(io.StringIO(content))
-        return list(reader)
+    try:
+        with urlopen(url, timeout=60) as response:
+            content = response.read().decode("utf-8")
+            reader = csv.DictReader(io.StringIO(content))
+            return list(reader)
+    except urllib.error.HTTPError as exc:
+        if exc.code == 404:
+            print(
+                f"Error: 404 Not Found — '{url}' does not exist in the upstream repository.\n"
+                "The file may have been renamed or moved. Run with --list-files to see\n"
+                "what CSV files are currently available, then update the URL constants\n"
+                "in src/cli/import_swh_gov_domains.py.",
+                file=sys.stderr,
+            )
+        else:
+            print(f"Error: HTTP {exc.code} fetching {url}: {exc.reason}", file=sys.stderr)
+        sys.exit(1)
+    except urllib.error.URLError as exc:
+        print(f"Error: Network failure fetching {url}: {exc.reason}", file=sys.stderr)
+        sys.exit(1)
 
 
 def extract_existing_domains(toon_dir: Path) -> Dict[str, Set[str]]:
@@ -289,6 +361,21 @@ def main(args: list[str] | None = None) -> int:
     """Main entry point."""
     parsed = parse_args(args)
 
+    # --list-files: show available upstream files and exit
+    if parsed.list_files:
+        files = list_swh_files()
+        if files is None:
+            print("Could not retrieve file list from the SWH GitLab repository.", file=sys.stderr)
+            return 1
+        print("Files in the SWH world-gov-domain-names repository:")
+        for name in sorted(files):
+            print(f"  {name}")
+        return 0
+
+    # Check that the expected CSV files still exist upstream before downloading
+    print("Checking upstream SWH repository file availability...")
+    check_swh_urls()
+
     # Extract existing domains from TOON seeds
     toon_dir = Path("data/toon-seeds")
     print("Extracting existing domains from TOON seeds...")
@@ -327,6 +414,11 @@ def parse_args(args: list[str] | None = None) -> argparse.Namespace:
         "--dry-run",
         action="store_true",
         help="Show what would be imported without saving",
+    )
+    parser.add_argument(
+        "--list-files",
+        action="store_true",
+        help="List available CSV files in the upstream SWH repository and exit",
     )
     parser.add_argument(
         "--output-dir",

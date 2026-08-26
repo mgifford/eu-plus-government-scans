@@ -1,0 +1,125 @@
+name: Import Domains from URL Sources
+
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: 'Space-separated list of URLs to scrape (leave blank to use manifest)'
+        required: false
+        default: ''
+      from_manifest:
+        description: 'Load html_scrape sources from domain_sources.yaml manifest'
+        required: false
+        default: 'true'
+        type: boolean
+      schedule_filter:
+        description: 'Only import sources with this schedule (manual, monthly, annual)'
+        required: false
+        default: 'manual'
+      skip_dns:
+        description: 'Skip DNS validation (faster, may include non-resolving domains)'
+        required: false
+        default: 'false'
+        type: boolean
+      dry_run:
+        description: 'Show what would be imported without saving'
+        required: false
+        default: 'false'
+        type: boolean
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  import-url-domains:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Build CLI arguments
+        id: build-args
+        run: |
+          EXTRA_ARGS=""
+
+          # --url flags from the manual input
+          if [ -n "${{ github.event.inputs.urls }}" ]; then
+            for url in ${{ github.event.inputs.urls }}; do
+              EXTRA_ARGS="$EXTRA_ARGS --url $url"
+            done
+          fi
+
+          # --from-manifest flag
+          if [ "${{ github.event.inputs.from_manifest }}" = "true" ]; then
+            EXTRA_ARGS="$EXTRA_ARGS --from-manifest data/imports/domain_sources.yaml"
+          fi
+
+          # --schedule filter
+          if [ -n "${{ github.event.inputs.schedule_filter }}" ]; then
+            EXTRA_ARGS="$EXTRA_ARGS --schedule ${{ github.event.inputs.schedule_filter }}"
+          fi
+
+          # --skip-dns
+          if [ "${{ github.event.inputs.skip_dns }}" = "true" ]; then
+            EXTRA_ARGS="$EXTRA_ARGS --skip-dns"
+          fi
+
+          # --dry-run
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            EXTRA_ARGS="$EXTRA_ARGS --dry-run"
+          fi
+
+          echo "args=$EXTRA_ARGS" >> "$GITHUB_OUTPUT"
+
+      - name: Import domains from URL sources
+        run: |
+          python -m src.cli.import_url_domains ${{ steps.build-args.outputs.args }}
+
+      - name: Create Pull Request
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        uses: peter-evans/create-pull-request@v8
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'data: Import domains from URL sources'
+          title: 'Import domains from government audit URL sources'
+          body: |
+            ## Import Domains from URL Sources
+
+            This PR imports government domains scraped from web pages listed in
+            [`data/imports/domain_sources.yaml`](data/imports/domain_sources.yaml).
+
+            ### Sources scraped
+            ${{ github.event.inputs.urls != '' && format('Manual URLs: {0}', github.event.inputs.urls) || 'Sources loaded from domain_sources.yaml manifest' }}
+
+            ### Changes
+            - Updated `data/imports/url_import_*.csv` files with new domains
+            - Deduplicated against existing TOON seed files
+            - DNS validation performed (unless skipped)
+
+            ### Review Instructions
+            1. Open `data/imports/url_import_summary.json` for a full list of new and unresolved domains
+            2. Check each per-source CSV for domains that look legitimate
+            3. Domains with `status: dns_failed` should be reviewed manually before adding
+            4. Merge when satisfied with the changes
+
+            This PR was automatically created by the [Import Domains from URL Sources](${{ github.server_url }}/${{ github.repository }}/actions/workflows/import-url-domains.yml) workflow.
+          branch: data/import-url-domains
+          delete-branch: true
+          labels: |
+            automated
+            data-import
+          reviewers: |
+            mgifford
