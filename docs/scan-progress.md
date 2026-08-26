@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-08-26 04:55 UTC_
+_Generated: 2026-08-26 05:57 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -14,9 +14,9 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
 | **Combined Reachability** | **51,568 confirmed reachable** | 87,696 | **<span role="img" aria-label="58.8% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:71px;"></span></span><span class="sm-bar__label">58.8%</span></span>** | — |
-| Social Media | 56,755 scanned (51,467 reachable) | 87,696 | <span role="img" aria-label="64.7% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:78px;"></span></span><span class="sm-bar__label">64.7%</span></span> | 8.0 days |
-| Technology | 62,377 scanned | 87,696 | <span role="img" aria-label="71.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:85px;"></span></span><span class="sm-bar__label">71.1%</span></span> | 7.9 days |
-| Lighthouse | 13,286 scanned | 87,696 | <span role="img" aria-label="15.2% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:18px;"></span></span><span class="sm-bar__label">15.2%</span></span> | 19.8 days |
+| Social Media | 56,755 scanned (51,467 reachable) | 87,696 | <span role="img" aria-label="64.7% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:78px;"></span></span><span class="sm-bar__label">64.7%</span></span> | 8.1 days |
+| Technology | 62,377 scanned | 87,696 | <span role="img" aria-label="71.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:85px;"></span></span><span class="sm-bar__label">71.1%</span></span> | 8.0 days |
+| Lighthouse | 13,286 scanned | 87,696 | <span role="img" aria-label="15.2% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:18px;"></span></span><span class="sm-bar__label">15.2%</span></span> | 19.9 days |
 | Accessibility Statements | 55,144 scanned | 87,696 | <span role="img" aria-label="62.9% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--amber" style="width:75px;"></span></span><span class="sm-bar__label">62.9%</span></span> | 7.6 days |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by any scan type. **Avg Age** shows the mean number of days (or hours) since each URL in that scan type was last scanned — lower is fresher.
@@ -179,7 +179,7 @@ Checks whether each government page links to an accessibility statement as requi
 | Belgium | 1,329 | 1,237 | 574 | 523 | 46% | Aug 2026 |
 | Bulgaria | 353 | 305 | 95 | 84 | 31% | Aug 2026 |
 | Canada | 4,469 | 4,213 | 1,044 | 841 | 25% | Aug 2026 |
-| Croatia | 257 | 254 | 103 | 78 | 41% | Aug 2026 |
+| Croatia | 257 | 254 | 105 | 80 | 41% | Aug 2026 |
 | Czechia | 866 | 798 | 446 | 395 | 56% | Aug 2026 |
 | Denmark | 1,536 | 1,507 | 959 | 941 | 64% | Aug 2026 |
 | Estonia | 401 | 390 | 149 | 79 | 38% | Aug 2026 |
@@ -206,7 +206,7 @@ Checks whether each government page links to an accessibility statement as requi
 | Spain | 3,420 | 2,894 | 1,206 | 1,042 | 42% | Aug 2026 |
 | Sweden | 1,702 | 1,556 | 895 | 810 | 58% | Aug 2026 |
 | Switzerland | 2,123 | 2,076 | 1,026 | 1,025 | 49% | Aug 2026 |
-| United Kingdom | 6,021 | 5,676 | 3,097 | 2,899 | 55% | Aug 2026 |
+| United Kingdom | 6,021 | 5,678 | 3,099 | 2,901 | 55% | Aug 2026 |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
