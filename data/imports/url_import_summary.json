@@ -1,0 +1,39 @@
+{
+  "sources": {
+    "https://www.vlaanderen.be/inter/overheden-en-professionelen/werken-aan-digitale-toegankelijkheid/ondersteunings-en-controleorgaan-digitale-toegankelijkheid/audits-digitale-toegankelijkheid-2026": {
+      "new_domain_count": 2,
+      "unresolved_count": 0,
+      "new_domains": [
+        "eur-lex.europa.eu",
+        "sintlukasacademie.brussels"
+      ],
+      "unresolved_domains": []
+    },
+    "https://accessibility.belgium.be/fr/actualites/liste-des-sites-qui-recevront-un-audit-daccessibilite-en-2026": {
+      "new_domain_count": 18,
+      "unresolved_count": 0,
+      "new_domains": [
+        "aide.igvm-iefh.belgium.be",
+        "belpas.diplomatie.belgium.be",
+        "ccecrb.fgov.be",
+        "census2011.fgov.be",
+        "csipme.fgov.be",
+        "data.gov.be",
+        "drcongo.diplomatie.belgium.be",
+        "europeanelections.belgium.be",
+        "hda.belgium.be",
+        "health.belgium.be",
+        "ibz.rrn.fgov.be",
+        "inami.fgov.be",
+        "inr-icn.fgov.be",
+        "ksz-bcss.fgov.be",
+        "lootedart.belgium.be",
+        "nsarail.fgov.be",
+        "plan.mobilit.belgium.be",
+        "sfpd.fgov.be"
+      ],
+      "unresolved_domains": []
+    }
+  },
+  "total_new_domains": 20
+}
