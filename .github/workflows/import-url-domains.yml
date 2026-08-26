@@ -21,6 +21,11 @@ on:
         required: false
         default: 'false'
         type: boolean
+      promote_to_toon:
+        description: 'Write new domains directly into matching TOON seed files'
+        required: false
+        default: 'true'
+        type: boolean
       dry_run:
         description: 'Show what would be imported without saving'
         required: false
@@ -77,6 +82,11 @@ jobs:
             EXTRA_ARGS="$EXTRA_ARGS --skip-dns"
           fi
 
+          # --promote-to-toon
+          if [ "${{ github.event.inputs.promote_to_toon }}" = "true" ]; then
+            EXTRA_ARGS="$EXTRA_ARGS --promote-to-toon"
+          fi
+
           # --dry-run
           if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
             EXTRA_ARGS="$EXTRA_ARGS --dry-run"
@@ -105,14 +115,15 @@ jobs:
             ${{ github.event.inputs.urls != '' && format('Manual URLs: {0}', github.event.inputs.urls) || 'Sources loaded from domain_sources.yaml manifest' }}
 
             ### Changes
-            - Updated `data/imports/url_import_*.csv` files with new domains
-            - Deduplicated against existing TOON seed files
+            - Updated `data/imports/url_import_*.csv` files with new, duplicate, and unresolved domains
+            - Deduplicated against existing TOON seed files (duplicates recorded with `status: duplicate`)
             - DNS validation performed (unless skipped)
+            ${{ github.event.inputs.promote_to_toon == 'true' && '- New domains written directly into matching TOON seed files' || '- TOON seed files **not** updated (promote-to-toon was disabled)' }}
 
             ### Review Instructions
-            1. Open `data/imports/url_import_summary.json` for a full list of new and unresolved domains
-            2. Check each per-source CSV for domains that look legitimate
-            3. Domains with `status: dns_failed` should be reviewed manually before adding
+            1. Open `data/imports/url_import_summary.json` for a full breakdown: new, duplicate, and unresolved domains per source
+            2. Check each per-source CSV — `status: new` rows are additions, `status: duplicate` were already present, `status: dns_failed` need manual review
+            3. If TOON files were updated, verify that newly added entries look correct
             4. Merge when satisfied with the changes
 
             This PR was automatically created by the [Import Domains from URL Sources](${{ github.server_url }}/${{ github.repository }}/actions/workflows/import-url-domains.yml) workflow.

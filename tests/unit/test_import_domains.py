@@ -299,7 +299,153 @@ class TestDomainResolves:
             assert domain_resolves("nonexistent.invalid") is False
 
 
-class TestLoadManifestUrls:
+class TestSaveResults:
+    def test_writes_csv_with_all_statuses(self, tmp_path: Path) -> None:
+        results = {
+            "https://example.be/list": {
+                "new": ["new.be"],
+                "unresolved": ["broken.be"],
+                "duplicates": ["existing.be"],
+            }
+        }
+        from src.cli.import_url_domains import save_results
+
+        save_results(results, tmp_path)
+
+        csv_path = tmp_path / "url_import_example_be.csv"
+        assert csv_path.exists()
+        rows = csv_path.read_text().splitlines()
+        assert rows[0] == "domain,source,status"
+        statuses = {row.split(",")[0]: row.split(",")[2] for row in rows[1:]}
+        assert statuses["new.be"] == "new"
+        assert statuses["broken.be"] == "dns_failed"
+        assert statuses["existing.be"] == "duplicate"
+
+    def test_summary_includes_duplicate_count(self, tmp_path: Path) -> None:
+        results = {
+            "https://example.be/list": {
+                "new": ["new.be"],
+                "unresolved": [],
+                "duplicates": ["dup1.be", "dup2.be"],
+            }
+        }
+        from src.cli.import_url_domains import save_results
+
+        save_results(results, tmp_path)
+
+        summary = json.loads((tmp_path / "url_import_summary.json").read_text())
+        src = summary["sources"]["https://example.be/list"]
+        assert src["duplicate_count"] == 2
+        assert "dup1.be" in src["skipped_duplicates"]
+
+    def test_dry_run_writes_nothing(self, tmp_path: Path) -> None:
+        results = {
+            "https://example.be/list": {
+                "new": ["new.be"],
+                "unresolved": [],
+                "duplicates": ["dup.be"],
+            }
+        }
+        from src.cli.import_url_domains import save_results
+
+        save_results(results, tmp_path, dry_run=True)
+
+        assert not list(tmp_path.iterdir())
+
+
+class TestPromoteToToon:
+    def _make_toon_tree(self, tmp_path: Path) -> Path:
+        """Create a minimal toon-seeds tree with a Belgium file."""
+        toon_dir = tmp_path / "toon-seeds"
+        countries_dir = toon_dir / "countries"
+        countries_dir.mkdir(parents=True)
+
+        toon = {
+            "version": "0.1-seed",
+            "country": "Belgium",
+            "domain_count": 1,
+            "domains": [{"canonical_domain": "existing.be", "subnational": [], "pages": []}],
+        }
+        (countries_dir / "belgium.toon").write_text(json.dumps(toon))
+        index = {
+            "countries": [
+                {"country": "Belgium", "file": "data/toon-seeds/countries/belgium.toon"}
+            ]
+        }
+        (toon_dir / "index.json").write_text(json.dumps(index))
+        return toon_dir
+
+    def test_adds_new_domain(self, tmp_path: Path) -> None:
+        toon_dir = self._make_toon_tree(tmp_path)
+        from src.cli.import_url_domains import promote_to_toon
+
+        results = {"https://example.be/list": {"new": ["brand-new.be"], "unresolved": [], "duplicates": []}}
+        existing = {"Belgium": {"existing.be"}}
+
+        added = promote_to_toon(results, toon_dir, existing)
+
+        assert "Belgium" in added
+        assert "brand-new.be" in added["Belgium"]
+
+        toon_data = json.loads((toon_dir / "countries" / "belgium.toon").read_text())
+        domains = [d["canonical_domain"] for d in toon_data["domains"]]
+        assert "brand-new.be" in domains
+        assert toon_data["domain_count"] == 2
+
+    def test_skips_existing_domain(self, tmp_path: Path) -> None:
+        toon_dir = self._make_toon_tree(tmp_path)
+        from src.cli.import_url_domains import promote_to_toon
+
+        results = {"https://example.be/list": {"new": ["existing.be"], "unresolved": [], "duplicates": []}}
+        existing = {"Belgium": {"existing.be"}}
+
+        added = promote_to_toon(results, toon_dir, existing)
+
+        assert "Belgium" not in added
+
+    def test_skips_unknown_tld(self, tmp_path: Path) -> None:
+        toon_dir = self._make_toon_tree(tmp_path)
+        from src.cli.import_url_domains import promote_to_toon
+
+        results = {"https://example.be/list": {"new": ["unknown.xyz"], "unresolved": [], "duplicates": []}}
+        existing: dict = {}
+
+        added = promote_to_toon(results, toon_dir, existing)
+
+        assert not added
+
+    def test_dry_run_does_not_write(self, tmp_path: Path) -> None:
+        toon_dir = self._make_toon_tree(tmp_path)
+        from src.cli.import_url_domains import promote_to_toon
+
+        results = {"https://example.be/list": {"new": ["brand-new.be"], "unresolved": [], "duplicates": []}}
+        existing: dict = {}
+
+        added = promote_to_toon(results, toon_dir, existing, dry_run=True)
+
+        assert "Belgium" in added
+        # File should be unchanged
+        toon_data = json.loads((toon_dir / "countries" / "belgium.toon").read_text())
+        domains = [d["canonical_domain"] for d in toon_data["domains"]]
+        assert "brand-new.be" not in domains
+
+    def test_new_entry_records_source_url(self, tmp_path: Path) -> None:
+        toon_dir = self._make_toon_tree(tmp_path)
+        from src.cli.import_url_domains import promote_to_toon
+
+        source = "https://example.be/list"
+        results = {source: {"new": ["brand-new.be"], "unresolved": [], "duplicates": []}}
+        existing: dict = {}
+
+        promote_to_toon(results, toon_dir, existing)
+
+        toon_data = json.loads((toon_dir / "countries" / "belgium.toon").read_text())
+        entry = next(d for d in toon_data["domains"] if d["canonical_domain"] == "brand-new.be")
+        assert entry["source"] == "url_import"
+        assert entry["source_url"] == source
+
+
+
     def test_loads_html_scrape_manual(self, tmp_path: Path) -> None:
         manifest = tmp_path / "domain_sources.yaml"
         manifest.write_text(
