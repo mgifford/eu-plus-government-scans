@@ -1,0 +1,76 @@
+# Domain import sources
+#
+# This file is the single source of truth for where government domains come from.
+# Each entry documents one import source with enough metadata to reproduce the import.
+#
+# Fields:
+#   name        - Human-readable source name
+#   url         - Canonical URL for the source (homepage or direct download)
+#   type        - How domains are obtained: csv_download | html_scrape | sql_export | api
+#   schedule    - How often it should be re-imported: monthly | annual | manual
+#   countries   - ISO 3166-1 alpha-3 country codes, or [all_european] for a broad set
+#   workflow    - GitHub Actions workflow file that automates this import (if any)
+#   script      - Python CLI module used to perform the import (if any)
+#   notes       - Free-text notes on provenance, coverage, and caveats
+
+sources:
+
+  - name: Software Heritage world-gov-domain-names
+    url: https://gitlab.softwareheritage.org/swh/products/insights/world-gov-domain-names
+    type: csv_download
+    schedule: monthly
+    countries: [all_european]
+    workflow: .github/workflows/import-swh-domains.yml
+    script: src/cli/import_swh_gov_domains.py
+    notes: >
+      Primary bulk source for European government domains.
+      Contains two CSVs: public-sector-central-gov.csv (central government) and
+      public-sector.csv (broader public sector).
+      Originally seeded from HTTP Archive Web Almanac SQL queries.
+      If either CSV returns 404, check the upstream repository for renames and
+      update the URL constants in src/cli/import_swh_gov_domains.py.
+      Run `python -m src.cli.import_swh_gov_domains --list-files` to see
+      what files are currently available.
+
+  - name: Belgium accessibility audit 2026 (French)
+    url: https://accessibility.belgium.be/fr/actualites/liste-des-sites-qui-recevront-un-audit-daccessibilite-en-2026
+    type: html_scrape
+    schedule: manual
+    countries: [BEL]
+    workflow: .github/workflows/import-url-domains.yml
+    script: src/cli/import_url_domains.py
+    notes: >
+      Year-specific list of Belgian government websites scheduled for accessibility
+      audits in 2026, published by accessibility.belgium.be (BOSA / DG TRANS).
+      This page is unlikely to be updated mid-year; re-import when the 2027 list
+      is published. Contains a mix of federal and regional domains (.be, .fgov.be,
+      .belgium.be, etc.).
+
+  - name: Flanders digital accessibility audits 2026
+    url: https://www.vlaanderen.be/inter/overheden-en-professionelen/werken-aan-digitale-toegankelijkheid/ondersteunings-en-controleorgaan-digitale-toegankelijkheid/audits-digitale-toegankelijkheid-2026
+    type: html_scrape
+    schedule: manual
+    countries: [BEL]
+    workflow: .github/workflows/import-url-domains.yml
+    script: src/cli/import_url_domains.py
+    notes: >
+      Year-specific list of Flemish government websites scheduled for digital
+      accessibility audits in 2026, published by INTER (Vlaanderen) — the Flemish
+      support and control body for digital accessibility.
+      Primarily .vlaanderen.be and .be domains for Flemish public bodies.
+      Re-import annually when the next year's audit list is published.
+
+  - name: HTTP Archive Web Almanac SQL exports
+    url: https://httparchive.org/reports/state-of-the-web
+    type: sql_export
+    schedule: annual
+    countries: [all_european]
+    workflow: null
+    script: null
+    notes: >
+      Bulk historical source used for the initial seeding of TOON files across
+      all European countries. SQL queries were run against the HTTP Archive BigQuery
+      dataset to extract government-domain URLs identified by TLD or known domain
+      patterns. This is not an automated import — raw CSV output was manually
+      reviewed and merged into TOON seed files.
+      See data/imports/google_sheets/ for the raw import CSVs derived from this source.
