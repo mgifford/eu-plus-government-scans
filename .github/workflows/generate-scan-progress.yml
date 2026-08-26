@@ -164,6 +164,14 @@ jobs:
             --seeds-dir data/toon-seeds/countries \
             2>&1 | tee lighthouse-report-output.txt
 
+      - name: Generate technology–Lighthouse correlation report
+        run: |
+          set -o pipefail
+          python3 -m src.cli.generate_tech_lighthouse_report \
+            --page docs/tech-lighthouse.md \
+            --data docs/tech-lighthouse-data.json \
+            2>&1 | tee tech-lighthouse-report-output.txt
+
       - name: Generate scan cycle pace report
         run: |
           set -o pipefail
@@ -239,6 +247,7 @@ jobs:
                   docs/third-party-tools.md docs/third-party-tools-data.json \
                   docs/accessibility-statements.md \
                   docs/lighthouse-results.md \
+                  docs/tech-lighthouse.md \
                   docs/data/gov-domains.json \
                   docs/pace-report.md
           if git diff --staged --quiet; then
@@ -272,6 +281,7 @@ jobs:
             docs/lighthouse-results.md
             docs/lighthouse-data.json
             docs/lighthouse-data.csv
+            docs/tech-lighthouse-data.json
             scan-progress-output.txt
             social-media-report-output.txt
             domains-report-output.txt
@@ -279,6 +289,7 @@ jobs:
             third-party-js-report-output.txt
             accessibility-report-output.txt
             lighthouse-report-output.txt
+            tech-lighthouse-report-output.txt
             docs/pace-report.md
             pace-report-output.txt
           retention-days: 30

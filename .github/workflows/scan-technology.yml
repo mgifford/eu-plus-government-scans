@@ -1,12 +1,12 @@
 name: Scan Technology Stack
 
 on:
-  # Run every 8 hours — with --skip-recently-scanned-days 30 each run focuses
+  # Run every 6 hours — with --skip-recently-scanned-days 30 each run focuses
   # only on URLs not yet scanned in the past month.
-  # 3 runs/day × ~6,600 URLs/run (55 min @ 2 req/s) covers the ~88k URL corpus
-  # in roughly 5 days, giving monthly full-corpus coverage.
+  # 4 runs/day × ~6,600 URLs/run (55 min @ 2 req/s) covers the ~88k URL corpus
+  # in roughly 4 days, giving monthly full-corpus coverage.
   schedule:
-    - cron: '0 */8 * * *'
+    - cron: '0 */6 * * *'
 
   # Allow manual trigger for a single country or all countries
   workflow_dispatch:

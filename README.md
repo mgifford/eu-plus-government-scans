@@ -333,7 +333,7 @@ code and documentation in this repository. Known uses include:
 
 **No AI model runs as part of the application at runtime.** The validation scanner, batch
 coordinator, social-media scanner, and technology-detection service all use deterministic
-rule-based or HTTP-based logic only (HTTPX, BeautifulSoup4, python-Wappalyzer). No inference
+rule-based or HTTP-based logic only (HTTPX, BeautifulSoup4, wappalyzer-python3). No inference
 calls are made to any LLM API during normal operation.
 
 ### Browser-based AI

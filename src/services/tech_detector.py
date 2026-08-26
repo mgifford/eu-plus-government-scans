@@ -13,14 +13,6 @@ from typing import Dict, List, Optional
 import httpx
 
 
-WebPage = None
-"""Lazily imported Wappalyzer WebPage class.
-
-Keeping this import out of module scope prevents the whole CLI from crashing
-at import time when the optional Wappalyzer dependency stack is misconfigured.
-"""
-
-
 @dataclass(slots=True)
 class TechDetectionResult:
     """Result of a technology detection check for a single URL."""
@@ -34,10 +26,11 @@ class TechDetector:
     """
     Service for detecting technologies used by government websites.
 
-    Uses python-Wappalyzer to fingerprint technologies from HTTP response
-    headers and HTML content.  Page content is fetched with the project's
-    standard httpx client and the resulting HTML/headers are passed directly
-    to Wappalyzer, avoiding a separate aiohttp dependency.
+    Uses wappalyzer-python3 (maintained fork of python-Wappalyzer) to
+    fingerprint technologies from HTTP response headers and HTML content.
+    Page content is fetched with the project's standard httpx client and the
+    resulting HTML/headers are passed directly to Wappalyzer, avoiding a
+    separate aiohttp dependency.
     """
 
     def __init__(
@@ -63,10 +56,9 @@ class TechDetector:
 
     def _build_webpage(self, url: str, html: str, headers: dict):
         """Return a Wappalyzer WebPage instance for the fetched content."""
-        webpage_cls = WebPage
-        if webpage_cls is None:
-            from Wappalyzer import WebPage as webpage_cls
-        return webpage_cls(url, html, headers)
+        from Wappalyzer import WebPage
+
+        return WebPage(url, html, headers)
 
     def detect_html(
         self,

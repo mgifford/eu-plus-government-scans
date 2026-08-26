@@ -38,7 +38,7 @@ async def test_detect_url_success():
             mock_wap.analyze_with_versions_and_categories.return_value = expected_techs
             mock_get_wap.return_value = mock_wap
 
-            with patch("src.services.tech_detector.WebPage") as mock_webpage_cls:
+            with patch("Wappalyzer.WebPage") as mock_webpage_cls:
                 mock_webpage_cls.return_value = Mock()
                 result = await detector.detect_url("https://example.gov/")
 
@@ -68,7 +68,7 @@ async def test_detect_url_no_technologies_detected():
             mock_wap.analyze_with_versions_and_categories.return_value = {}
             mock_get_wap.return_value = mock_wap
 
-            with patch("src.services.tech_detector.WebPage") as mock_webpage_cls:
+            with patch("Wappalyzer.WebPage") as mock_webpage_cls:
                 mock_webpage_cls.return_value = Mock()
                 result = await detector.detect_url("https://minimal.gov/")
 
@@ -155,7 +155,7 @@ async def test_detect_urls_batch_no_delay():
             mock_wap.analyze_with_versions_and_categories.return_value = expected_techs
             mock_get_wap.return_value = mock_wap
 
-            with patch("src.services.tech_detector.WebPage") as mock_webpage_cls:
+            with patch("Wappalyzer.WebPage") as mock_webpage_cls:
                 mock_webpage_cls.return_value = Mock()
                 results = await detector.detect_urls_batch(urls, rate_limit_per_second=0)
 
@@ -197,7 +197,7 @@ async def test_detect_urls_batch():
             mock_wap.analyze_with_versions_and_categories.return_value = expected_techs
             mock_get_wap.return_value = mock_wap
 
-            with patch("src.services.tech_detector.WebPage") as mock_webpage_cls:
+            with patch("Wappalyzer.WebPage") as mock_webpage_cls:
                 mock_webpage_cls.return_value = Mock()
                 results = await detector.detect_urls_batch(urls, rate_limit_per_second=0)
 
@@ -239,7 +239,7 @@ async def test_detect_urls_batch_on_result_called_for_each_url():
             mock_wap.analyze_with_versions_and_categories.return_value = {}
             mock_get_wap.return_value = mock_wap
 
-            with patch("src.services.tech_detector.WebPage") as mock_webpage_cls:
+            with patch("Wappalyzer.WebPage") as mock_webpage_cls:
                 mock_webpage_cls.return_value = Mock()
                 await detector.detect_urls_batch(
                     urls,
@@ -286,7 +286,7 @@ async def test_detect_urls_batch_stops_early_when_budget_exhausted():
             mock_wap.analyze_with_versions_and_categories.return_value = {}
             mock_get_wap.return_value = mock_wap
 
-            with patch("src.services.tech_detector.WebPage") as mock_webpage_cls:
+            with patch("Wappalyzer.WebPage") as mock_webpage_cls:
                 mock_webpage_cls.return_value = Mock()
                 results = await detector.detect_urls_batch(
                     urls,
@@ -325,7 +325,7 @@ async def test_detect_urls_batch_no_max_runtime_scans_all():
             mock_wap.analyze_with_versions_and_categories.return_value = {}
             mock_get_wap.return_value = mock_wap
 
-            with patch("src.services.tech_detector.WebPage") as mock_webpage_cls:
+            with patch("Wappalyzer.WebPage") as mock_webpage_cls:
                 mock_webpage_cls.return_value = Mock()
                 results = await detector.detect_urls_batch(
                     urls,
@@ -358,7 +358,7 @@ async def test_detect_url_analysis_error():
             )
             mock_get_wap.return_value = mock_wap
 
-            with patch("src.services.tech_detector.WebPage") as mock_webpage_cls:
+            with patch("Wappalyzer.WebPage") as mock_webpage_cls:
                 mock_webpage_cls.return_value = Mock()
                 result = await detector.detect_url("https://broken.gov/")
 
