@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-08-26 09:46 UTC_
+_Generated: 2026-08-26 10:03 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -178,13 +178,13 @@ Checks whether each government page links to an accessibility statement as requi
 | Austria | 822 | 787 | 556 | 525 | 71% | Aug 2026 |
 | Belgium | 1,329 | 1,237 | 574 | 523 | 46% | Aug 2026 |
 | Bulgaria | 353 | 305 | 95 | 84 | 31% | Aug 2026 |
-| Canada | 4,469 | 4,213 | 1,044 | 841 | 25% | Aug 2026 |
+| Canada | 4,469 | 4,220 | 1,048 | 843 | 25% | Aug 2026 |
 | Croatia | 257 | 254 | 105 | 80 | 41% | Aug 2026 |
 | Czechia | 866 | 798 | 446 | 395 | 56% | Aug 2026 |
 | Denmark | 1,536 | 1,507 | 959 | 941 | 64% | Aug 2026 |
 | Estonia | 401 | 390 | 149 | 79 | 38% | Aug 2026 |
 | Finland | 199 | 188 | 133 | 126 | 71% | Aug 2026 |
-| France | 5,464 | 5,049 | 1,580 | 1,522 | 31% | Aug 2026 |
+| France | 5,464 | 5,057 | 1,586 | 1,528 | 31% | Aug 2026 |
 | Germany | 5,628 | 5,461 | 3,899 | 3,239 | 71% | Aug 2026 |
 | Greece | 1,752 | 1,620 | 421 | 265 | 26% | Aug 2026 |
 | Hungary | 392 | 293 | 57 | 49 | 19% | Aug 2026 |
