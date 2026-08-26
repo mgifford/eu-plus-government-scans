@@ -37,7 +37,7 @@
     },
     {
       "domain": "irisnet.be",
-      "count": 666
+      "count": 682
     },
     {
       "domain": "liege.be",
@@ -203,7 +203,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 942
+      "count": 943
     },
     {
       "domain": "googleapis.com",
@@ -247,7 +247,7 @@
     },
     {
       "domain": "irisnet.be",
-      "count": 356
+      "count": 364
     },
     {
       "domain": "twitter.com",
@@ -267,7 +267,7 @@
     },
     {
       "domain": "google.com",
-      "count": 199
+      "count": 200
     },
     {
       "domain": "gstatic.com",
@@ -310,12 +310,12 @@
       "count": 98
     },
     {
-      "domain": "oost-vlaanderen.be",
+      "domain": "googletagmanager.com",
       "count": 96
     },
     {
-      "domain": "googletagmanager.com",
-      "count": 95
+      "domain": "oost-vlaanderen.be",
+      "count": 96
     },
     {
       "domain": "kortrijk.be",
@@ -394,5 +394,5 @@
     "font_or_preload_dependency": 88,
     "form_destination": 317
   },
-  "generated_at": "2026-08-26T07:35:58.807899+00:00"
+  "generated_at": "2026-08-26T13:39:15.002851+00:00"
 }
