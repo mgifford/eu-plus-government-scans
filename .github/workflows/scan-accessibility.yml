@@ -1,11 +1,11 @@
 name: Scan Accessibility Statements
 
 on:
-  # Run every 4 hours — with --skip-recently-scanned-days 7 each run focuses
+  # Run every 8 hours — with --skip-recently-scanned-days 30 each run focuses
   # only on URLs not yet scanned in the past week, so the full URL corpus is
   # covered progressively without hammering government servers repeatedly.
   schedule:
-    - cron: '30 */4 * * *'
+    - cron: '32 */8 * * *'
 
   # Allow manual trigger for a single country or all countries
   workflow_dispatch:
@@ -20,9 +20,9 @@ on:
         default: '1.0'
         type: string
       skip_recently_scanned_days:
-        description: 'Skip URLs scanned within this many days (0 = re-scan all, 7 = weekly refresh)'
+        description: 'Skip URLs scanned within this many days (0 = re-scan all, 31 = weekly refresh)'
         required: false
-        default: '7'
+        default: '31'
         type: string
 
 # Each scan workflow uses its own concurrency group so runs can proceed in
@@ -86,7 +86,7 @@ jobs:
         run: |
           echo "scan_start=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_OUTPUT"
           set -o pipefail
-          SKIP_DAYS="${{ github.event.inputs.skip_recently_scanned_days || '7' }}"
+          SKIP_DAYS="${{ github.event.inputs.skip_recently_scanned_days || '31' }}"
           python3 -m src.cli.scan_accessibility \
             --country "${{ github.event.inputs.country }}" \
             --rate-limit "${{ github.event.inputs.rate_limit }}" \
@@ -100,7 +100,7 @@ jobs:
         run: |
           echo "scan_start=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_OUTPUT"
           set -o pipefail
-          SKIP_DAYS="${{ github.event.inputs.skip_recently_scanned_days || '7' }}"
+          SKIP_DAYS="${{ github.event.inputs.skip_recently_scanned_days || '31' }}"
           python3 -m src.cli.scan_accessibility \
             --all \
             --max-runtime 55 \
@@ -182,7 +182,7 @@ jobs:
             echo "| URLs reachable (attempted successfully) | $ATTEMPTED |"
             echo "| URLs unreachable (attempted, failed) | $FAILED |"
             echo "| Rate limit | ${{ github.event.inputs.rate_limit || '1.0' }} req/sec |"
-            echo "| Skip-recently-scanned window | ${{ github.event.inputs.skip_recently_scanned_days || '7' }} days |"
+            echo "| Skip-recently-scanned window | ${{ github.event.inputs.skip_recently_scanned_days || '31' }} days |"
             echo "| Run conclusion | ${{ job.status }} |"
             echo "| Workflow run | [#${{ github.run_number }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) |"
           } >> "$GITHUB_STEP_SUMMARY"
