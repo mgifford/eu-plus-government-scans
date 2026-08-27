@@ -211,7 +211,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 435
+      "count": 437
     },
     {
       "domain": "instagram.com",
@@ -227,7 +227,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 291
+      "count": 292
     },
     {
       "domain": "hse.ie",
@@ -295,7 +295,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 105
+      "count": 106
     },
     {
       "domain": "jquery.com",
@@ -414,5 +414,5 @@
     "image_or_media_dependency": 190,
     "font_or_preload_dependency": 55
   },
-  "generated_at": "2026-08-23T02:04:49.570618+00:00"
+  "generated_at": "2026-08-27T08:17:01.229898+00:00"
 }
