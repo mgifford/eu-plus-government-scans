@@ -49,7 +49,7 @@ def main():
         "--max-runtime",
         help=(
             "Maximum runtime in minutes before stopping gracefully. "
-            "0 = no limit (default).  For --all mode in GitHub Actions set "
+            "0 = no limit (default). For --all mode in GitHub Actions set "
             "this to ~10 minutes less than the workflow timeout-minutes value "
             "so the job can finish cleanly and upload its artifacts."
         ),
@@ -72,12 +72,22 @@ def main():
         "--max-urls",
         help=(
             "Stop after scanning this many URLs in total across all countries. "
-            "0 = no limit (default).  Useful for targeting a fixed scan quota "
+            "0 = no limit (default). Useful for targeting a fixed scan quota "
             "per run while ensuring constant progression across the full URL set."
         ),
         type=int,
         default=0,
         dest="max_urls",
+    )
+    parser.add_argument(
+        "--skip-recently-scanned-days",
+        help=(
+            "Skip URLs already scanned by this scanner within the last N days. "
+            "0 = always re-scan all URLs (default)."
+        ),
+        type=int,
+        default=0,
+        dest="skip_recently_scanned_days",
     )
 
     args = parser.parse_args()
@@ -88,11 +98,22 @@ def main():
         sys.exit(1)
 
     if not args.toon_dir.exists():
-        print(f"Error: TOON directory not found: {args.toon_dir}")
+        print(
+            f"Error: TOON directory not found: "
+            f"{args.toon_dir}"
+        )
         sys.exit(1)
 
-    max_runtime_seconds = args.max_runtime * 60 if args.max_runtime > 0 else None
-    max_urls = args.max_urls if args.max_urls > 0 else None
+    max_runtime_seconds = (
+        args.max_runtime * 60
+        if args.max_runtime > 0
+        else None
+    )
+    max_urls = (
+        args.max_urls
+        if args.max_urls > 0
+        else None
+    )
 
     settings = load_settings()
     job = ThirdPartyJsScannerJob(settings)
@@ -101,24 +122,34 @@ def main():
         if args.all:
             if max_runtime_seconds is not None:
                 print(
-                    f"Scanning all countries for third-party JavaScript "
+                    "Scanning all countries for third-party JavaScript "
                     f"(max runtime: {args.max_runtime} minutes)..."
                 )
             else:
-                print("Scanning all countries for third-party JavaScript...")
+                print(
+                    "Scanning all countries for third-party "
+                    "JavaScript..."
+                )
+
             all_stats = asyncio.run(
                 job.scan_all_countries(
                     args.toon_dir,
                     rate_limit_per_second=args.rate_limit,
                     max_runtime_seconds=max_runtime_seconds,
-                    circuit_breaker_threshold=args.circuit_breaker_threshold,
+                    circuit_breaker_threshold=(
+                        args.circuit_breaker_threshold
+                    ),
                     max_urls=max_urls,
+                    skip_recently_scanned_days=(
+                        args.skip_recently_scanned_days
+                    ),
                 )
             )
 
             print("\n" + "=" * 80)
             print("THIRD-PARTY JS SCAN SUMMARY")
             print("=" * 80)
+
             for country_stats in all_stats:
                 if "error" in country_stats:
                     print(
@@ -126,55 +157,130 @@ def main():
                         f"ERROR - {country_stats['error']}"
                     )
                 else:
-                    complete_flag = "" if country_stats.get("is_complete", True) else " (partial)"
+                    complete_flag = (
+                        ""
+                        if country_stats.get(
+                            "is_complete",
+                            True,
+                        )
+                        else " (partial)"
+                    )
+                    skipped = country_stats.get(
+                        "urls_skipped_recently_scanned",
+                        0,
+                    )
                     print(
-                        f"{country_stats['country_code']}{complete_flag}: "
+                        f"{country_stats['country_code']}"
+                        f"{complete_flag}: "
                         f"{country_stats['urls_scanned']} scanned, "
-                        f"{country_stats['urls_with_scripts']} with 3rd-party scripts, "
-                        f"{country_stats['identified_services']} identified services"
+                        f"{skipped} skipped recent, "
+                        f"{country_stats['urls_with_scripts']} "
+                        "with 3rd-party scripts, "
+                        f"{country_stats['identified_services']} "
+                        "identified services"
                     )
         else:
             country_code = args.country.upper()
-            toon_file = args.toon_dir / f"{country_code_to_filename(country_code)}.toon"
+            toon_file = (
+                args.toon_dir
+                / f"{country_code_to_filename(country_code)}.toon"
+            )
 
             if not toon_file.exists():
                 print(
                     f"Error: TOON file not found: {toon_file}\n"
-                    f"Expected a file named '{toon_file.name}' in {args.toon_dir}"
+                    f"Expected a file named '{toon_file.name}' "
+                    f"in {args.toon_dir}"
                 )
                 sys.exit(1)
 
-            print(f"Scanning {country_code} for third-party JavaScript...")
+            print(
+                f"Scanning {country_code} for "
+                "third-party JavaScript..."
+            )
+
             stats = asyncio.run(
                 job.scan_country(
                     country_code,
                     toon_file,
                     rate_limit_per_second=args.rate_limit,
                     max_runtime_seconds=max_runtime_seconds,
-                    circuit_breaker_threshold=args.circuit_breaker_threshold,
+                    circuit_breaker_threshold=(
+                        args.circuit_breaker_threshold
+                    ),
                     max_urls=max_urls,
+                    skip_recently_scanned_days=(
+                        args.skip_recently_scanned_days
+                    ),
                 )
             )
 
             print("\n" + "=" * 80)
             print("THIRD-PARTY JS SCAN COMPLETE")
             print("=" * 80)
-            print(f"Scan ID:               {stats['scan_id']}")
-            print(f"Total URLs:            {stats['total_urls']}")
-            print(f"Scanned:               {stats['urls_scanned']}")
-            print(f"Complete:              {'Yes' if stats.get('is_complete', True) else 'No (stopped early)'}")
-            print(f"Reachable:             {stats['reachable_count']}")
-            print(f"Unreachable:           {stats['unreachable_count']}")
-            print(f"URLs with scripts:     {stats['urls_with_scripts']}")
-            print(f"Total scripts found:   {stats['total_scripts']}")
-            print(f"Identified services:   {stats['identified_services']}")
+            print(
+                f"Scan ID:               "
+                f"{stats['scan_id']}"
+            )
+            print(
+                f"Total URLs:            "
+                f"{stats['total_urls']}"
+            )
+            print(
+                f"Scanned:               "
+                f"{stats['urls_scanned']}"
+            )
+
+            skipped = stats.get(
+                "urls_skipped_recently_scanned",
+                0,
+            )
+            if skipped:
+                print(
+                    f"Skipped recently:      {skipped}"
+                )
+
+            print(
+                "Complete:              "
+                + (
+                    "Yes"
+                    if stats.get("is_complete", True)
+                    else "No (stopped early)"
+                )
+            )
+            print(
+                f"Reachable:             "
+                f"{stats['reachable_count']}"
+            )
+            print(
+                f"Unreachable:           "
+                f"{stats['unreachable_count']}"
+            )
+            print(
+                f"URLs with scripts:     "
+                f"{stats['urls_with_scripts']}"
+            )
+            print(
+                f"Total scripts found:   "
+                f"{stats['total_scripts']}"
+            )
+            print(
+                f"Identified services:   "
+                f"{stats['identified_services']}"
+            )
+
             if stats["service_counts"]:
                 print("Service breakdown:")
                 for svc, cnt in sorted(
-                    stats["service_counts"].items(), key=lambda x: -x[1]
+                    stats["service_counts"].items(),
+                    key=lambda x: -x[1],
                 ):
                     print(f"  {svc}: {cnt}")
-            print(f"Output:                {stats['output_path']}")
+
+            print(
+                f"Output:                "
+                f"{stats['output_path']}"
+            )
 
     except KeyboardInterrupt:
         print("\nScan interrupted by user")
