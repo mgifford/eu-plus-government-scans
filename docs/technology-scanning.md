@@ -5,13 +5,13 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-08-27 22:44 UTC — last scan: 2026-08-27_
+_Stats as of 2026-08-27 23:03 UTC — last scan: 2026-08-27_
 
-**75** scan batches run
+**77** scan batches run
 
-**66,242** of **87,696** available pages scanned (**75.5%** coverage)
-**1,081** pages with technology detections (**1.6%** of scanned)
-**143** unique technologies identified
+**67,144** of **87,696** available pages scanned (**76.6%** coverage)
+**1,807** pages with technology detections (**2.7%** of scanned)
+**181** unique technologies identified
 
 ---
 
@@ -34,14 +34,14 @@ _Stats as of 2026-08-27 22:44 UTC — last scan: 2026-08-27_
 | Hungary | 392 | 0 | 392 | 2026-08-13 |
 | Iceland | 145 | 0 | 145 | 2026-08-13 |
 | Ireland | 536 | 0 | 536 | 2026-08-13 |
-| Italy | 4,830 | 0 | 5,351 | 2026-08-25 |
+| Italy | 5,351 | 402 | 5,351 | 2026-08-27 |
 | Latvia | 803 | 0 | 803 | 2026-08-13 |
 | Lithuania | 122 | 0 | 122 | 2026-08-13 |
 | Luxembourg | 573 | 0 | 573 | 2026-08-13 |
 | Malta | 610 | 0 | 610 | 2026-08-17 |
 | Netherlands | 945 | 0 | 945 | 2026-08-14 |
 | Norway | 249 | 0 | 249 | 2026-08-14 |
-| Poland | 6,006 | 0 | 14,951 | 2026-08-26 |
+| Poland | 6,387 | 324 | 14,951 | 2026-08-27 |
 | Portugal | 3,508 | 0 | 3,508 | 2026-08-20 |
 | Cyprus | 29 | 0 | 29 | 2026-08-14 |
 | Romania | 807 | 0 | 807 | 2026-08-23 |
@@ -60,46 +60,46 @@ _Stats as of 2026-08-27 22:44 UTC — last scan: 2026-08-27_
 
 | # | Technology | Pages | Categories |
 |--:|-----------|------:|-----------|
-| 1 | PHP | **588** | Programming languages |
-| 2 | jQuery | **487** | JavaScript libraries |
-| 3 | Apache | **305** | Web servers |
-| 4 | Nginx | **258** | Reverse proxies, Web servers |
-| 5 | Cart Functionality | **243** | Ecommerce |
-| 6 | MySQL | **231** | Databases |
-| 7 | WordPress | **231** | Blogs, CMS |
-| 8 | jQuery Migrate | **200** | JavaScript libraries |
-| 9 | Font Awesome | **195** | Font scripts |
-| 10 | Google Font API | **178** | Font scripts |
-| 11 | Bootstrap | **178** | UI frameworks |
-| 12 | Drupal | **173** | CMS |
-| 13 | Yoast SEO | **136** | SEO |
-| 14 | Google Tag Manager | **132** | Tag managers |
-| 15 | SPIP | **120** | CMS |
-| 16 | Cloudflare | **71** | CDN |
-| 17 | jQuery UI | **70** | JavaScript libraries |
-| 18 | Slick | **65** | JavaScript libraries |
-| 19 | Elementor | **59** | Page builders |
-| 20 | reCAPTCHA | **54** | Security |
+| 1 | jQuery | **1,007** | JavaScript libraries |
+| 2 | PHP | **841** | Programming languages |
+| 3 | Apache | **536** | Web servers |
+| 4 | Bootstrap | **489** | UI frameworks |
+| 5 | Font Awesome | **444** | Font scripts |
+| 6 | MySQL | **409** | Databases |
+| 7 | WordPress | **403** | Blogs, CMS |
+| 8 | jQuery Migrate | **358** | JavaScript libraries |
+| 9 | Nginx | **347** | Reverse proxies, Web servers |
+| 10 | Google Font API | **341** | Font scripts |
+| 11 | Cart Functionality | **298** | Ecommerce |
+| 12 | Google Tag Manager | **232** | Tag managers |
+| 13 | Drupal | **228** | CMS |
+| 14 | Yoast SEO | **188** | SEO |
+| 15 | jQuery UI | **135** | JavaScript libraries |
+| 16 | SPIP | **120** | CMS |
+| 17 | Cloudflare | **110** | CDN |
+| 18 | reCAPTCHA | **108** | Security |
+| 19 | Elementor | **108** | Page builders |
+| 20 | Windows Server | **108** | Operating systems |
 
 ### Top Technology Categories
 
 | # | Category | Pages |
 |--:|---------|------:|
-| 1 | JavaScript libraries | **990** |
-| 2 | Programming languages | **617** |
-| 3 | Web servers | **597** |
-| 4 | CMS | **587** |
-| 5 | Font scripts | **393** |
-| 6 | Reverse proxies | **260** |
-| 7 | Databases | **257** |
-| 8 | Ecommerce | **246** |
-| 9 | UI frameworks | **234** |
-| 10 | Blogs | **234** |
-| 11 | Caching | **142** |
-| 12 | SEO | **136** |
-| 13 | Tag managers | **134** |
-| 14 | CDN | **132** |
-| 15 | Security | **93** |
+| 1 | JavaScript libraries | **1,957** |
+| 2 | Web servers | **1,074** |
+| 3 | Programming languages | **930** |
+| 4 | CMS | **854** |
+| 5 | Font scripts | **826** |
+| 6 | UI frameworks | **582** |
+| 7 | Databases | **445** |
+| 8 | Blogs | **406** |
+| 9 | Reverse proxies | **349** |
+| 10 | Ecommerce | **311** |
+| 11 | Tag managers | **234** |
+| 12 | CDN | **219** |
+| 13 | Caching | **194** |
+| 14 | SEO | **188** |
+| 15 | Operating systems | **168** |
 
 📥 Machine-readable results: [Download machine-readable technology data (JSON)](technology-data.json)
 
