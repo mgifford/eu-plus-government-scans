@@ -99,10 +99,10 @@ class TestBackoffDays:
         assert _backoff_days(5) == 16
 
     def test_six_failures_capped(self) -> None:
-        assert _backoff_days(6) == 28  # capped
+        assert _backoff_days(6) == 31  # capped
 
     def test_large_failures_capped(self) -> None:
-        assert _backoff_days(100) == 28
+        assert _backoff_days(100) == 31
 
 
 class TestRelKey:
@@ -165,7 +165,7 @@ class TestEligibility:
 
             urls = ["https://a.is/p1", "https://b.is/p2"]
             eligible = job._get_eligible_urls(
-                "ICELAND", urls, skip_recently_scanned_days=28
+                "ICELAND", urls, skip_recently_scanned_days=31
             )
             assert len(eligible) == 0
 
@@ -195,7 +195,7 @@ class TestEligibility:
 
             urls = ["https://a.is/p1", "https://b.is/p2"]
             eligible = job._get_eligible_urls(
-                "ICELAND", urls, skip_recently_scanned_days=28
+                "ICELAND", urls, skip_recently_scanned_days=31
             )
 
             # a.is is failed (priority 1), b.is is recently scanned (skipped)
@@ -227,7 +227,7 @@ class TestEligibility:
 
             urls = ["https://a.is/p1"]
             eligible = job._get_eligible_urls(
-                "ICELAND", urls, skip_recently_scanned_days=28
+                "ICELAND", urls, skip_recently_scanned_days=31
             )
 
             assert len(eligible) == 1
