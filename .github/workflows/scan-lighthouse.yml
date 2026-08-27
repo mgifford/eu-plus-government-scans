@@ -1,14 +1,14 @@
 name: Scan Lighthouse
 
 on:
-  # Run every 6 hours to build up progressive coverage.
+  # Run every 3 hours to build up progressive coverage.
   # With --concurrency 3 and --only-categories=performance,accessibility,
-  # best-practices,seo and --lighthouse-timeout-ms 45000, each URL takes
+  # best-practices,seo and --lighthouse-timeout-ms 30000, each URL takes
   # ~15-30 s, giving significantly higher throughput per day.  With
   # --skip-recently-scanned-days 30 each URL is
   # refreshed at most once per month, so the focus stays on uncovered URLs.
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: '0 */3 * * *'
 
   # Allow manual trigger for a single country or all countries
   workflow_dispatch:
