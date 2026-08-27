@@ -5,7 +5,7 @@
   "top_source_domains": [
     {
       "domain": "castillalamancha.es",
-      "count": 19731
+      "count": 19914
     },
     {
       "domain": "jcyl.es",
@@ -13,7 +13,7 @@
     },
     {
       "domain": "gva.es",
-      "count": 8988
+      "count": 9088
     },
     {
       "domain": "navarra.es",
@@ -49,7 +49,7 @@
     },
     {
       "domain": "asturias.es",
-      "count": 600
+      "count": 607
     },
     {
       "domain": "sanidad.gob.es",
@@ -211,39 +211,39 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 9737
+      "count": 9832
     },
     {
       "domain": "gva.es",
-      "count": 5581
+      "count": 5646
     },
     {
       "domain": "facebook.com",
-      "count": 2129
+      "count": 2143
     },
     {
       "domain": "twitter.com",
-      "count": 1968
+      "count": 1979
     },
     {
       "domain": "jccm.es",
-      "count": 1814
+      "count": 1833
     },
     {
       "domain": "google.com",
-      "count": 1788
+      "count": 1799
     },
     {
       "domain": "youtube.com",
-      "count": 1783
+      "count": 1792
     },
     {
       "domain": "googleapis.com",
-      "count": 1631
+      "count": 1633
     },
     {
       "domain": "instagram.com",
-      "count": 1552
+      "count": 1554
     },
     {
       "domain": "navarra.es",
@@ -259,15 +259,15 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 649
+      "count": 651
     },
     {
       "domain": "blogspot.com",
-      "count": 633
+      "count": 635
     },
     {
       "domain": "googletagmanager.com",
-      "count": 618
+      "count": 619
     },
     {
       "domain": "madrid.es",
@@ -275,7 +275,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 583
+      "count": 584
     },
     {
       "domain": "w3.org",
@@ -291,31 +291,31 @@
     },
     {
       "domain": "google.es",
-      "count": 451
+      "count": 453
     },
     {
       "domain": "flickr.com",
-      "count": 440
+      "count": 444
     },
     {
       "domain": "carm.es",
       "count": 419
     },
     {
+      "domain": "x.com",
+      "count": 400
+    },
+    {
       "domain": "ayto-torrejon.es",
       "count": 400
     },
     {
-      "domain": "x.com",
-      "count": 397
-    },
-    {
       "domain": "asturias.es",
-      "count": 386
+      "count": 391
     },
     {
       "domain": "fontawesome.com",
-      "count": 371
+      "count": 372
     },
     {
       "domain": "redsara.es",
@@ -327,7 +327,7 @@
     },
     {
       "domain": "insuit.net",
-      "count": 336
+      "count": 337
     },
     {
       "domain": "hacienda.gob.es",
@@ -335,7 +335,7 @@
     },
     {
       "domain": "blogspot.com.es",
-      "count": 294
+      "count": 295
     },
     {
       "domain": "cloudflare.com",
@@ -346,12 +346,12 @@
       "count": 256
     },
     {
-      "domain": "vimeo.com",
-      "count": 252
+      "domain": "sharethis.com",
+      "count": 255
     },
     {
-      "domain": "sharethis.com",
-      "count": 251
+      "domain": "vimeo.com",
+      "count": 254
     },
     {
       "domain": "jsdelivr.net",
@@ -363,7 +363,7 @@
     },
     {
       "domain": "pinterest.com",
-      "count": 230
+      "count": 231
     },
     {
       "domain": "aemet.es",
@@ -414,5 +414,5 @@
     "form_destination": 1443,
     "font_or_preload_dependency": 155
   },
-  "generated_at": "2026-08-25T13:33:57.287774+00:00"
+  "generated_at": "2026-08-27T22:38:59.343871+00:00"
 }

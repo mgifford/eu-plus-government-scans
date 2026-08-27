@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T08:17:04.010402+00:00",
+  "generated_at": "2026-08-27T22:39:02.083373+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -198,7 +198,7 @@
     {
       "service": "gstatic.com",
       "countries": 31,
-      "domains": 1571
+      "domains": 1572
     },
     {
       "service": "cloudflare.com",
@@ -5276,9 +5276,9 @@
       "country_code": "MALTA",
       "country": "Malta",
       "service": "gstatic.com",
-      "domains": 1,
+      "domains": 2,
       "scanned_domains": 3,
-      "percent": 33.3
+      "percent": 66.7
     },
     {
       "country_code": "MALTA",
