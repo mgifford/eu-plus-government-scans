@@ -6,9 +6,9 @@ import json
 import sqlite3
 import time
 from dataclasses import asdict
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Set
 from uuid import uuid4
 
 from src.lib.country_utils import country_filename_to_code, iter_seed_toon_files
@@ -74,17 +74,54 @@ class ThirdPartyJsScannerJob:
         finally:
             conn.close()
 
-        return {country_code: last_scan for country_code, last_scan in rows if last_scan}
+        return {
+            country_code: last_scan
+            for country_code, last_scan in rows
+            if last_scan
+        }
+
+    def _get_recently_scanned_urls(
+        self,
+        country_code: str,
+        within_days: int,
+    ) -> Set[str]:
+        """Return URLs scanned by this scanner within the freshness window."""
+        cutoff = (
+            datetime.now(timezone.utc) - timedelta(days=within_days)
+        ).isoformat()
+
+        conn = sqlite3.connect(self.db_path)
+        try:
+            rows = conn.execute(
+                """
+                SELECT DISTINCT url
+                FROM url_third_party_js_results
+                WHERE country_code = ?
+                  AND scanned_at >= ?
+                """,
+                (country_code, cutoff),
+            ).fetchall()
+        finally:
+            conn.close()
+
+        return {row[0] for row in rows}
 
     def _build_balanced_toon_order(self, toon_files: List[Path]) -> List[Path]:
         """Return a stratified country order that reduces scan-recency bias."""
         if len(toon_files) <= 1:
             return toon_files
 
-        country_codes = [country_filename_to_code(path.stem) for path in toon_files]
+        country_codes = [
+            country_filename_to_code(path.stem)
+            for path in toon_files
+        ]
         last_scans = self._query_country_last_scan(country_codes)
         entries: list[tuple[Path, int, str | None]] = [
-            (path, self._toon_page_count(path), last_scans.get(country_filename_to_code(path.stem)))
+            (
+                path,
+                self._toon_page_count(path),
+                last_scans.get(country_filename_to_code(path.stem)),
+            )
             for path in toon_files
         ]
 
@@ -181,7 +218,10 @@ class ThirdPartyJsScannerJob:
                 if result.error_message and not result.is_reachable:
                     page["third_party_js_error"] = result.error_message
                 else:
-                    page["third_party_js"] = [asdict(s) for s in result.scripts]
+                    page["third_party_js"] = [
+                        asdict(s)
+                        for s in result.scripts
+                    ]
 
         return toon_data
 
@@ -194,9 +234,10 @@ class ThirdPartyJsScannerJob:
         start_time: Optional[float] = None,
         circuit_breaker_threshold: int = 3,
         max_urls: Optional[int] = None,
+        skip_recently_scanned_days: int = 0,
     ) -> Dict[str, Any]:
         """
-        Scan all URLs in a country's TOON file for third-party JavaScript.
+        Scan URLs in a country's TOON file for third-party JavaScript.
 
         Results are persisted to the database incrementally as each URL is
         scanned, so partial results are preserved even if the job is stopped
@@ -207,15 +248,17 @@ class ThirdPartyJsScannerJob:
             toon_path: Path to the TOON seed file.
             rate_limit_per_second: Maximum HTTP requests per second.
             max_runtime_seconds: Shared runtime budget in seconds measured
-                from *start_time*.  When the remaining budget drops below
-                60 seconds scanning stops gracefully.  ``None`` = no limit.
+                from *start_time*. When the remaining budget drops below
+                60 seconds scanning stops gracefully. ``None`` = no limit.
             start_time: ``time.monotonic()`` value from the start of the
-                overall job.  ``None`` means a fresh clock for this country.
+                overall job. ``None`` means a fresh clock for this country.
             circuit_breaker_threshold: Number of consecutive failures on a
                 single hostname before further URLs from that host are skipped.
-                Defaults to 3.  Set to 0 to disable the circuit breaker.
-            max_urls: Stop after scanning this many URLs for this country.
-                ``None`` means no limit.
+                Defaults to 3. Set to 0 to disable the circuit breaker.
+            max_urls: Stop after scanning this many eligible URLs for this
+                country. ``None`` means no limit.
+            skip_recently_scanned_days: Skip URLs already scanned by this
+                scanner within the last N days. 0 = always re-scan.
 
         Returns:
             Scan statistics dictionary.
@@ -226,19 +269,73 @@ class ThirdPartyJsScannerJob:
             f"{uuid4().hex[:8]}"
         )
 
-        print(f"Starting third-party JS scan {scan_id} for {country_code}")
+        print(
+            f"Starting third-party JS scan {scan_id} for {country_code}"
+        )
         print(f"Loading TOON file: {toon_path}")
 
         toon_data = self._load_toon_file(toon_path)
-        urls = self._extract_urls_from_toon(toon_data)
+        all_urls = self._extract_urls_from_toon(toon_data)
 
-        print(f"Found {len(urls)} URLs to scan")
+        print(f"Found {len(all_urls)} URLs to scan")
 
-        _start = start_time if start_time is not None else time.monotonic()
+        recently_scanned: Set[str] = set()
+        if skip_recently_scanned_days > 0:
+            recently_scanned = self._get_recently_scanned_urls(
+                country_code,
+                within_days=skip_recently_scanned_days,
+            )
+            if recently_scanned:
+                print(
+                    f"Skipping {len(recently_scanned)} URLs already scanned "
+                    f"within the last {skip_recently_scanned_days} day(s)"
+                )
+
+        urls = [
+            url
+            for url in all_urls
+            if url not in recently_scanned
+        ]
+
+        output_path = (
+            toon_path.parent
+            / f"{toon_path.stem}_3pjs{toon_path.suffix}"
+        )
+
+        if all_urls and not urls:
+            print(
+                f"All {len(all_urls)} URLs were recently scanned "
+                "— nothing to do"
+            )
+            return {
+                "scan_id": scan_id,
+                "country_code": country_code,
+                "total_urls": len(all_urls),
+                "urls_scanned": 0,
+                "urls_skipped_recently_scanned": len(recently_scanned),
+                "is_complete": True,
+                "reachable_count": 0,
+                "unreachable_count": 0,
+                "total_scripts": 0,
+                "identified_services": 0,
+                "urls_with_scripts": 0,
+                "service_counts": {},
+                "output_path": str(output_path),
+            }
+
+        _start = (
+            start_time
+            if start_time is not None
+            else time.monotonic()
+        )
 
         def _save_result(result: ThirdPartyJsScanResult) -> None:
             """Persist a single scan result immediately after it is computed."""
-            self._save_results([result], country_code, scan_id)
+            self._save_results(
+                [result],
+                country_code,
+                scan_id,
+            )
 
         scan_results = await self.scanner.scan_urls_batch(
             urls,
@@ -250,44 +347,71 @@ class ThirdPartyJsScannerJob:
             max_urls=max_urls,
         )
 
-        updated_toon = self._update_toon_with_third_party_js(toon_data, scan_results)
-
-        output_path = (
-            toon_path.parent / f"{toon_path.stem}_3pjs{toon_path.suffix}"
+        updated_toon = self._update_toon_with_third_party_js(
+            toon_data,
+            scan_results,
         )
+
         with output_path.open("w", encoding="utf-8") as f:
-            json.dump(updated_toon, f, indent=2, ensure_ascii=False)
+            json.dump(
+                updated_toon,
+                f,
+                indent=2,
+                ensure_ascii=False,
+            )
 
         scanned_count = len(scan_results)
         is_complete = scanned_count == len(urls)
+
         if is_complete:
-            print(f"Saved third-party-JS-annotated TOON to: {output_path}")
+            print(
+                "Saved third-party-JS-annotated TOON to: "
+                f"{output_path}"
+            )
         else:
             print(
-                f"Saved partial third-party-JS-annotated TOON to: {output_path} "
+                "Saved partial third-party-JS-annotated TOON to: "
+                f"{output_path} "
                 f"({scanned_count}/{len(urls)} URLs scanned)"
             )
 
-        reachable_count = sum(1 for r in scan_results.values() if r.is_reachable)
+        reachable_count = sum(
+            1
+            for result in scan_results.values()
+            if result.is_reachable
+        )
         unreachable_count = scanned_count - reachable_count
-        total_scripts = sum(r.third_party_count for r in scan_results.values())
-        identified_services = sum(r.known_service_count for r in scan_results.values())
-        urls_with_scripts = sum(1 for r in scan_results.values() if r.third_party_count > 0)
+        total_scripts = sum(
+            result.third_party_count
+            for result in scan_results.values()
+        )
+        identified_services = sum(
+            result.known_service_count
+            for result in scan_results.values()
+        )
+        urls_with_scripts = sum(
+            1
+            for result in scan_results.values()
+            if result.third_party_count > 0
+        )
 
-        # Aggregate unique services seen across all URLs
         service_counts: Dict[str, int] = {}
         for result in scan_results.values():
             for script in result.scripts:
                 if script.service_name:
                     service_counts[script.service_name] = (
-                        service_counts.get(script.service_name, 0) + 1
+                        service_counts.get(script.service_name, 0)
+                        + 1
                     )
 
         stats = {
             "scan_id": scan_id,
             "country_code": country_code,
-            "total_urls": len(urls),
+            "total_urls": len(all_urls),
             "urls_scanned": scanned_count,
+            "urls_skipped_recently_scanned": len(
+                recently_scanned
+            ),
             "is_complete": is_complete,
             "reachable_count": reachable_count,
             "unreachable_count": unreachable_count,
@@ -298,16 +422,31 @@ class ThirdPartyJsScannerJob:
             "output_path": str(output_path),
         }
 
-        print(f"\nThird-party JS scan {'complete' if is_complete else 'partial'}:")
-        print(f"  Scanned:            {scanned_count}/{len(urls)}")
+        print(
+            f"\nThird-party JS scan "
+            f"{'complete' if is_complete else 'partial'}:"
+        )
+        print(
+            f"  Scanned:            "
+            f"{scanned_count}/{len(urls)}"
+        )
+        if recently_scanned:
+            print(
+                "  Skipped (recently scanned): "
+                f"{len(recently_scanned)}"
+            )
         print(f"  Reachable:          {reachable_count}")
         print(f"  Unreachable:        {unreachable_count}")
         print(f"  URLs with scripts:  {urls_with_scripts}")
         print(f"  Total scripts:      {total_scripts}")
         print(f"  Identified:         {identified_services}")
+
         if service_counts:
             print("  Top services:")
-            for svc, cnt in sorted(service_counts.items(), key=lambda x: -x[1])[:10]:
+            for svc, cnt in sorted(
+                service_counts.items(),
+                key=lambda x: -x[1],
+            )[:10]:
                 print(f"    {svc}: {cnt}")
 
         return stats
@@ -319,6 +458,7 @@ class ThirdPartyJsScannerJob:
         max_runtime_seconds: Optional[float] = None,
         circuit_breaker_threshold: int = 3,
         max_urls: Optional[int] = None,
+        skip_recently_scanned_days: int = 0,
     ) -> List[Dict[str, Any]]:
         """
         Scan all TOON files in a directory for third-party JavaScript.
@@ -329,49 +469,62 @@ class ThirdPartyJsScannerJob:
         Args:
             toon_seeds_dir: Directory containing TOON seed files.
             rate_limit_per_second: Maximum requests per second per country.
-            max_runtime_seconds: Shared runtime budget in seconds.  The job
-                will not *start* a new country when fewer than 5 minutes remain,
-                and will pass the remaining budget into each country scan so
-                that even a large country stops gracefully mid-way if needed.
-                ``None`` means no limit.
+            max_runtime_seconds: Shared runtime budget in seconds. The job
+                will not *start* a new country when fewer than 5 minutes
+                remain, and will pass the remaining budget into each country
+                scan so that even a large country stops gracefully mid-way if
+                needed. ``None`` means no limit.
             circuit_breaker_threshold: Number of consecutive failures on a
                 single hostname before further URLs from that host are skipped.
-                Defaults to 3.  Set to 0 to disable the circuit breaker.
+                Defaults to 3. Set to 0 to disable the circuit breaker.
             max_urls: Stop after scanning this many URLs in total across all
-                countries.  ``None`` means no limit.
+                countries. ``None`` means no limit.
+            skip_recently_scanned_days: Skip URLs already scanned by this
+                scanner within the last N days. 0 = always re-scan.
 
         Returns:
             List of scan statistics for each country processed.
         """
         all_stats = []
         toon_files = iter_seed_toon_files(toon_seeds_dir)
-        toon_files = self._build_balanced_toon_order(toon_files)
+        toon_files = self._build_balanced_toon_order(
+            toon_files
+        )
 
-        print(f"Found {len(toon_files)} TOON files to process")
+        print(
+            f"Found {len(toon_files)} TOON files to process"
+        )
 
         start_time = time.monotonic()
-        _country_start_buffer = 5 * 60  # 5 minutes
-        urls_remaining = max_urls  # None = unlimited
+        _country_start_buffer = 5 * 60
+        urls_remaining = max_urls
 
         for toon_path in toon_files:
-            country_code = country_filename_to_code(toon_path.stem)
+            country_code = country_filename_to_code(
+                toon_path.stem
+            )
 
             if max_runtime_seconds is not None:
                 elapsed = time.monotonic() - start_time
                 remaining = max_runtime_seconds - elapsed
                 if remaining < _country_start_buffer:
                     print(
-                        f"⏱️  Time budget near limit "
+                        "⏱️  Time budget near limit "
                         f"({elapsed / 60:.1f}m elapsed, "
                         f"{remaining / 60:.1f}m remaining) "
-                        f"— skipping remaining countries starting with {country_code}"
+                        "— skipping remaining countries "
+                        f"starting with {country_code}"
                     )
                     break
 
-            if urls_remaining is not None and urls_remaining <= 0:
+            if (
+                urls_remaining is not None
+                and urls_remaining <= 0
+            ):
                 print(
-                    f"🎯 Global URL target reached — "
-                    f"skipping remaining countries starting with {country_code}"
+                    "🎯 Global URL target reached — "
+                    "skipping remaining countries "
+                    f"starting with {country_code}"
                 )
                 break
 
@@ -382,14 +535,30 @@ class ThirdPartyJsScannerJob:
                     rate_limit_per_second,
                     max_runtime_seconds=max_runtime_seconds,
                     start_time=start_time,
-                    circuit_breaker_threshold=circuit_breaker_threshold,
+                    circuit_breaker_threshold=(
+                        circuit_breaker_threshold
+                    ),
                     max_urls=urls_remaining,
+                    skip_recently_scanned_days=(
+                        skip_recently_scanned_days
+                    ),
                 )
                 all_stats.append(stats)
+
                 if urls_remaining is not None:
-                    urls_remaining -= stats.get("urls_scanned", 0)
+                    urls_remaining -= stats.get(
+                        "urls_scanned",
+                        0,
+                    )
             except Exception as exc:
-                print(f"Error scanning {toon_path}: {exc}")
-                all_stats.append({"country_code": country_code, "error": str(exc)})
+                print(
+                    f"Error scanning {toon_path}: {exc}"
+                )
+                all_stats.append(
+                    {
+                        "country_code": country_code,
+                        "error": str(exc),
+                    }
+                )
 
         return all_stats
