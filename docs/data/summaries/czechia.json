@@ -1,6 +1,6 @@
 {
   "country_code": "CZECHIA",
-  "total_relationships": 2464,
+  "total_relationships": 2498,
   "total_source_domains": 54,
   "top_source_domains": [
     {
@@ -16,151 +16,179 @@
       "count": 1201
     },
     {
-      "domain": "plzensky-kraj.cz",
-      "count": 319
+      "domain": "mf.gov.cz",
+      "count": 544
     },
     {
       "domain": "kraj-lbc.cz",
-      "count": 304
+      "count": 399
+    },
+    {
+      "domain": "plzensky-kraj.cz",
+      "count": 376
     },
     {
       "domain": "mzp.cz",
       "count": 276
     },
     {
-      "domain": "mf.gov.cz",
+      "domain": "liberec.cz",
+      "count": 273
+    },
+    {
+      "domain": "msmt.cz",
       "count": 272
+    },
+    {
+      "domain": "khk.cz",
+      "count": 270
     },
     {
       "domain": "psp.cz",
       "count": 264
     },
     {
-      "domain": "mpsv.cz",
-      "count": 191
-    },
-    {
-      "domain": "khk.cz",
-      "count": 179
-    },
-    {
-      "domain": "msmt.cz",
-      "count": 174
-    },
-    {
       "domain": "pardubickykraj.cz",
-      "count": 143
+      "count": 262
     },
     {
-      "domain": "liberec.cz",
-      "count": 142
+      "domain": "mpsv.cz",
+      "count": 246
     },
     {
       "domain": "mzcr.cz",
-      "count": 138
+      "count": 200
+    },
+    {
+      "domain": "md.gov.cz",
+      "count": 194
+    },
+    {
+      "domain": "cnb.cz",
+      "count": 192
+    },
+    {
+      "domain": "usti.cz",
+      "count": 154
+    },
+    {
+      "domain": "nzip.cz",
+      "count": 127
     },
     {
       "domain": "financnigramotnost.gov.cz",
       "count": 124
     },
     {
-      "domain": "cnb.cz",
-      "count": 115
+      "domain": "msp.gov.cz",
+      "count": 118
     },
     {
-      "domain": "md.gov.cz",
-      "count": 111
+      "domain": "csu.cz",
+      "count": 102
     },
     {
-      "domain": "usti.cz",
-      "count": 77
+      "domain": "uzis.cz",
+      "count": 98
+    },
+    {
+      "domain": "mpo.gov.cz",
+      "count": 94
+    },
+    {
+      "domain": "mzd.gov.cz",
+      "count": 83
+    },
+    {
+      "domain": "olomouc.cz",
+      "count": 82
+    },
+    {
+      "domain": "uradprace.cz",
+      "count": 78
+    },
+    {
+      "domain": "mpsv.gov.cz",
+      "count": 72
+    },
+    {
+      "domain": "mze.gov.cz",
+      "count": 66
     },
     {
       "domain": "vlada.cz",
       "count": 66
     },
     {
-      "domain": "msp.gov.cz",
-      "count": 59
+      "domain": "msmt.gov.cz",
+      "count": 65
     },
     {
-      "domain": "uzis.cz",
+      "domain": "vlada.gov.cz",
+      "count": 64
+    },
+    {
+      "domain": "mzp.gov.cz",
       "count": 52
     },
     {
-      "domain": "csu.cz",
-      "count": 51
+      "domain": "senat.cz",
+      "count": 50
     },
     {
-      "domain": "nzip.cz",
-      "count": 50
+      "domain": "ezdravi.gov.cz",
+      "count": 48
     },
     {
       "domain": "lkod.cz",
       "count": 48
     },
     {
-      "domain": "mpo.gov.cz",
-      "count": 47
+      "domain": "mk.gov.cz",
+      "count": 44
     },
     {
-      "domain": "olomouc.cz",
-      "count": 42
-    },
-    {
-      "domain": "mzd.gov.cz",
-      "count": 41
-    },
-    {
-      "domain": "uradprace.cz",
-      "count": 39
+      "domain": "mv.gov.cz",
+      "count": 40
     },
     {
       "domain": "csu.gov.cz",
       "count": 36
     },
     {
-      "domain": "mpsv.gov.cz",
+      "domain": "mdcr.cz",
       "count": 36
     },
     {
-      "domain": "msmt.gov.cz",
-      "count": 35
+      "domain": "mmr.gov.cz",
+      "count": 36
     },
     {
-      "domain": "mze.gov.cz",
-      "count": 33
+      "domain": "vytopnadolnilipka.cz",
+      "count": 36
+    },
+    {
+      "domain": "mo.gov.cz",
+      "count": 35
     },
     {
       "domain": "eru.gov.cz",
       "count": 32
     },
     {
-      "domain": "vlada.gov.cz",
+      "domain": "mzv.gov.cz",
+      "count": 32
+    },
+    {
+      "domain": "nsoud.cz",
       "count": 32
     },
     {
       "domain": "mfcr.cz",
-      "count": 26
+      "count": 28
     },
     {
-      "domain": "mzp.gov.cz",
-      "count": 26
-    },
-    {
-      "domain": "senat.cz",
-      "count": 25
-    },
-    {
-      "domain": "ezdravi.gov.cz",
-      "count": 24
-    },
-    {
-      "domain": "mdcr.cz",
-      "count": 24
-    },
-    {
-      "domain": "mv.gov.cz",
+      "domain": "usoud.cz",
       "count": 24
     },
     {
@@ -168,40 +196,12 @@
       "count": 22
     },
     {
-      "domain": "mk.gov.cz",
-      "count": 22
-    },
-    {
       "domain": "gibs.gov.cz",
       "count": 20
     },
     {
-      "domain": "mmr.gov.cz",
-      "count": 18
-    },
-    {
-      "domain": "vytopnadolnilipka.cz",
-      "count": 18
-    },
-    {
-      "domain": "mo.gov.cz",
-      "count": 17
-    },
-    {
-      "domain": "mzv.gov.cz",
+      "domain": "nssoud.cz",
       "count": 16
-    },
-    {
-      "domain": "nsoud.cz",
-      "count": 16
-    },
-    {
-      "domain": "infodeska.gov.cz",
-      "count": 12
-    },
-    {
-      "domain": "usoud.cz",
-      "count": 12
     }
   ],
   "top_target_domains": [
@@ -211,7 +211,7 @@
     },
     {
       "domain": "justice.cz",
-      "count": 707
+      "count": 746
     },
     {
       "domain": "brno.cz",
@@ -219,90 +219,126 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 377
+      "count": 440
     },
     {
       "domain": "facebook.com",
-      "count": 305
+      "count": 373
+    },
+    {
+      "domain": "plzensky-kraj.cz",
+      "count": 212
+    },
+    {
+      "domain": "twitter.com",
+      "count": 196
+    },
+    {
+      "domain": "kraj-lbc.cz",
+      "count": 196
+    },
+    {
+      "domain": "mpsv.cz",
+      "count": 182
     },
     {
       "domain": "psp.cz",
       "count": 182
     },
     {
-      "domain": "plzensky-kraj.cz",
-      "count": 172
+      "domain": "googletagmanager.com",
+      "count": 180
+    },
+    {
+      "domain": "instagram.com",
+      "count": 177
     },
     {
       "domain": "mzp.cz",
-      "count": 165
+      "count": 166
     },
     {
-      "domain": "kraj-lbc.cz",
-      "count": 162
+      "domain": "mzcr.cz",
+      "count": 164
     },
     {
       "domain": "npmcdn.com",
       "count": 156
     },
     {
-      "domain": "googletagmanager.com",
-      "count": 152
-    },
-    {
-      "domain": "twitter.com",
-      "count": 148
-    },
-    {
-      "domain": "mpsv.cz",
-      "count": 146
+      "domain": "youtube.com",
+      "count": 147
     },
     {
       "domain": "cloudflare.com",
-      "count": 138
-    },
-    {
-      "domain": "instagram.com",
-      "count": 125
-    },
-    {
-      "domain": "mzcr.cz",
-      "count": 110
+      "count": 146
     },
     {
       "domain": "google.com",
-      "count": 105
-    },
-    {
-      "domain": "youtube.com",
-      "count": 101
+      "count": 132
     },
     {
       "domain": "linkedin.com",
-      "count": 96
+      "count": 132
+    },
+    {
+      "domain": "pardubickykraj.cz",
+      "count": 128
+    },
+    {
+      "domain": "liberec.cz",
+      "count": 124
+    },
+    {
+      "domain": "msmt.cz",
+      "count": 117
+    },
+    {
+      "domain": "mf.gov.cz",
+      "count": 106
+    },
+    {
+      "domain": "gstatic.com",
+      "count": 104
+    },
+    {
+      "domain": "khk.cz",
+      "count": 104
+    },
+    {
+      "domain": "cnb.cz",
+      "count": 98
     },
     {
       "domain": "ovanet.cz",
       "count": 96
     },
     {
+      "domain": "uzis.cz",
+      "count": 94
+    },
+    {
+      "domain": "mfcr.cz",
+      "count": 91
+    },
+    {
       "domain": "jquery.com",
-      "count": 86
+      "count": 90
+    },
+    {
+      "domain": "md.gov.cz",
+      "count": 88
     },
     {
       "domain": "ostravainfo.cz",
       "count": 84
     },
     {
-      "domain": "msmt.cz",
-      "count": 77
-    },
-    {
-      "domain": "gstatic.com",
+      "domain": "jsdelivr.net",
       "count": 76
     },
     {
-      "domain": "pardubickykraj.cz",
+      "domain": "usti.cz",
       "count": 76
     },
     {
@@ -310,15 +346,11 @@
       "count": 74
     },
     {
-      "domain": "khk.cz",
-      "count": 72
-    },
-    {
       "domain": "highcharts.com",
       "count": 72
     },
     {
-      "domain": "mfcr.cz",
+      "domain": "portal.gov.cz",
       "count": 69
     },
     {
@@ -326,36 +358,16 @@
       "count": 66
     },
     {
-      "domain": "liberec.cz",
-      "count": 64
-    },
-    {
-      "domain": "portal.gov.cz",
-      "count": 64
-    },
-    {
-      "domain": "cnb.cz",
-      "count": 62
-    },
-    {
-      "domain": "jsdelivr.net",
-      "count": 60
-    },
-    {
       "domain": "europa.eu",
-      "count": 59
+      "count": 65
+    },
+    {
+      "domain": "nzip.cz",
+      "count": 64
     },
     {
       "domain": "smlouvy.gov.cz",
       "count": 58
-    },
-    {
-      "domain": "mf.gov.cz",
-      "count": 55
-    },
-    {
-      "domain": "md.gov.cz",
-      "count": 52
     },
     {
       "domain": "fajnova.cz",
@@ -363,56 +375,44 @@
     },
     {
       "domain": "tenderarena.cz",
+      "count": 50
+    },
+    {
+      "domain": "mdcr.cz",
       "count": 49
     },
     {
-      "domain": "uzis.cz",
-      "count": 47
+      "domain": "uradprace.cz",
+      "count": 48
     },
     {
       "domain": "mvcr.cz",
-      "count": 46
+      "count": 47
     },
     {
       "domain": "zdravaova.cz",
       "count": 42
     },
     {
-      "domain": "usti.cz",
-      "count": 38
+      "domain": "chmi.cz",
+      "count": 40
     },
     {
       "domain": "arcgis.com",
-      "count": 37
+      "count": 38
     },
     {
-      "domain": "chmi.cz",
-      "count": 37
-    },
-    {
-      "domain": "mdcr.cz",
-      "count": 32
-    },
-    {
-      "domain": "nzip.cz",
-      "count": 32
-    },
-    {
-      "domain": "cityvizor.cz",
-      "count": 32
-    },
-    {
-      "domain": "mapbox.com",
-      "count": 32
+      "domain": "statnipokladna.gov.cz",
+      "count": 36
     }
   ],
   "relationship_types": {
-    "editorial_link": 1459,
-    "script_dependency": 313,
-    "stylesheet_dependency": 263,
-    "form_destination": 150,
-    "image_or_media_dependency": 223,
-    "font_or_preload_dependency": 56
+    "editorial_link": 1485,
+    "script_dependency": 314,
+    "stylesheet_dependency": 264,
+    "form_destination": 152,
+    "image_or_media_dependency": 224,
+    "font_or_preload_dependency": 59
   },
-  "generated_at": "2026-08-21T02:02:33.649762+00:00"
+  "generated_at": "2026-08-27T08:17:00.738180+00:00"
 }
