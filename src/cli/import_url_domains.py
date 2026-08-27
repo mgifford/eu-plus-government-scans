@@ -15,6 +15,10 @@ Usage:
     # Or using the sources manifest:
     python -m src.cli.import_url_domains --from-manifest data/imports/domain_sources.yaml \\
         --schedule manual
+
+    # Promote staged imports directly into TOON seed files:
+    python -m src.cli.import_url_domains --from-manifest data/imports/domain_sources.yaml \\
+        --schedule manual --promote-to-toon
 """
 
 from __future__ import annotations
@@ -283,8 +287,16 @@ def save_results(
 ) -> None:
     """Save import results to per-source CSV files and a JSON summary.
 
+    Each CSV row carries a ``status`` value:
+
+    - ``new``        – domain not previously seen in any TOON seed file.
+    - ``dns_failed`` – domain did not resolve during DNS validation.
+    - ``duplicate``  – domain already present in an existing TOON seed file
+                       (recorded for auditability; not re-added).
+
     Args:
-        results: Mapping of source_url → {"new": [...], "unresolved": [...]}.
+        results: Mapping of source_url → {"new": [...], "unresolved": [...],
+            "duplicates": [...]}.
         output_dir: Directory to write output files into.
         dry_run: If True, print what would be saved without writing.
     """
@@ -299,6 +311,7 @@ def save_results(
     for source_url, data in results.items():
         new_domains = data.get("new", [])
         unresolved = data.get("unresolved", [])
+        duplicates = data.get("duplicates", [])
         total_new += len(new_domains)
 
         # Derive a slug for output filenames
@@ -309,8 +322,10 @@ def save_results(
         summary["sources"][source_url] = {  # type: ignore[index]
             "new_domain_count": len(new_domains),
             "unresolved_count": len(unresolved),
+            "duplicate_count": len(duplicates),
             "new_domains": sorted(new_domains),
             "unresolved_domains": sorted(unresolved),
+            "skipped_duplicates": sorted(duplicates),
         }
 
         if not dry_run:
@@ -322,9 +337,17 @@ def save_results(
                     writer.writerow([domain, source_url, "new"])
                 for domain in sorted(unresolved):
                     writer.writerow([domain, source_url, "dns_failed"])
-            print(f"  Saved {len(new_domains)} new domains to {csv_path}")
+                for domain in sorted(duplicates):
+                    writer.writerow([domain, source_url, "duplicate"])
+            print(
+                f"  Saved {len(new_domains)} new, {len(duplicates)} duplicate, "
+                f"{len(unresolved)} unresolved domains to {csv_path}"
+            )
         else:
-            print(f"  [DRY RUN] Would save {len(new_domains)} new domains from {source_url}")
+            print(
+                f"  [DRY RUN] Would save {len(new_domains)} new, "
+                f"{len(duplicates)} duplicate domains from {source_url}"
+            )
 
     summary["total_new_domains"] = total_new
 
@@ -335,6 +358,159 @@ def save_results(
         print(f"\nSaved summary to {summary_path}")
 
     print(f"\nTotal new domains across all sources: {total_new}")
+
+
+def promote_to_toon(
+    results: Dict[str, Dict[str, List[str]]],
+    toon_dir: Path,
+    existing_by_country: Dict[str, Set[str]],
+    dry_run: bool = False,
+) -> Dict[str, List[str]]:
+    """Write newly discovered domains into the matching TOON seed files.
+
+    For each ``new`` domain in *results*, the function:
+
+    1. Determines the target country by matching the domain's ccTLD against
+       ``CCTLD_TO_ISO3``.  Domains with unrecognised TLDs are skipped (logged).
+    2. Finds the TOON file for that country from *toon_dir*/index.json.
+    3. Appends a minimal domain entry (``canonical_domain``, ``source``,
+       ``source_url``, ``pages: []``, ``subnational: []``) and re-serialises
+       the file with a 2-space indent.
+    4. Updates ``domain_count`` in the top-level metadata.
+
+    The function is idempotent: a domain already present (from any source) is
+    silently skipped even if ``results`` lists it as ``new``.
+
+    Args:
+        results: Mapping of source_url → {"new": [...], ...}.
+        toon_dir: Root of the TOON seed tree (contains index.json and countries/).
+        existing_by_country: Pre-loaded domain sets keyed by country name —
+            used to skip domains that arrived via a second source in the same
+            run before this function was called.
+        dry_run: If True, log what would change without writing files.
+
+    Returns:
+        Mapping of country_name → list of domain strings that were added
+        (or would be added in dry-run mode).
+    """
+    index_path = toon_dir / "index.json"
+    if not index_path.exists():
+        print(f"Warning: {index_path} not found — cannot promote to TOON", file=sys.stderr)
+        return {}
+
+    with open(index_path) as f:
+        index = json.load(f)
+
+    # Build lookup: country_name → toon file path
+    country_file: Dict[str, Path] = {}
+    for entry in index.get("countries", []):
+        country_name = entry["country"]
+        rel_path = entry["file"].replace("data/toon-seeds/", "")
+        toon_file = toon_dir / rel_path
+        country_file[country_name] = toon_file
+
+    # Static mapping from ISO-3 to the country name used in index.json
+    KNOWN_ISO3_COUNTRY: Dict[str, str] = {
+        "BEL": "Belgium",
+        "FRA": "France",
+        "DEU": "Germany",
+        "NLD": "Netherlands",
+        "LUX": "Luxembourg",
+        "AUT": "Austria",
+        "CHE": "Switzerland",
+        "GBR": "United Kingdom",
+        "IRL": "Ireland",
+        "ITA": "Italy",
+        "ESP": "Spain",
+        "PRT": "Portugal",
+        "SWE": "Sweden",
+        "NOR": "Norway",
+        "DNK": "Denmark",
+        "FIN": "Finland",
+        "POL": "Poland",
+        "CZE": "Czechia",
+        "SVK": "Slovakia",
+        "HUN": "Hungary",
+        "ROU": "Romania",
+        "BGR": "Bulgaria",
+        "HRV": "Croatia",
+        "SVN": "Slovenia",
+        "EST": "Estonia",
+        "LVA": "Latvia",
+        "LTU": "Lithuania",
+        "MLT": "Malta",
+        "CYP": "Republic of Cyprus",
+        "GRC": "Greece",
+        "ISL": "Iceland",
+        "CAN": "Canada",
+    }
+
+    added: Dict[str, List[str]] = {}
+
+    for source_url, data in results.items():
+        for domain in sorted(data.get("new", [])):
+            # Determine ccTLD
+            parts = domain.rsplit(".", 1)
+            tld = f".{parts[-1]}" if len(parts) == 2 else ""
+            iso3 = CCTLD_TO_ISO3.get(tld)
+            if iso3 is None:
+                # Try two-part TLD (e.g. .gov.be → .be)
+                parts2 = domain.rsplit(".", 2)
+                if len(parts2) == 3:
+                    tld2 = f".{parts2[-1]}"
+                    iso3 = CCTLD_TO_ISO3.get(tld2)
+            if iso3 is None:
+                print(f"  Skipping {domain}: unrecognised TLD '{tld}'")
+                continue
+
+            country_name = KNOWN_ISO3_COUNTRY.get(iso3)
+            if country_name is None or country_name not in country_file:
+                print(f"  Skipping {domain}: no TOON file for ISO3 '{iso3}'")
+                continue
+
+            toon_file = country_file[country_name]
+            already = existing_by_country.get(country_name, set())
+            if domain.lower() in already:
+                continue  # already present — skip silently
+
+            if dry_run:
+                print(f"  [DRY RUN] Would add {domain} → {toon_file.name} ({country_name})")
+                added.setdefault(country_name, []).append(domain)
+                continue
+
+            if not toon_file.exists():
+                print(f"  Warning: {toon_file} not found — skipping {domain}", file=sys.stderr)
+                continue
+
+            with open(toon_file) as f:
+                toon_data = json.load(f)
+
+            new_entry: Dict[str, object] = {
+                "canonical_domain": domain,
+                "subnational": [],
+                "source": "url_import",
+                "source_url": source_url,
+                "pages": [],
+            }
+            toon_data.setdefault("domains", []).append(new_entry)
+            toon_data["domain_count"] = len(toon_data["domains"])
+
+            with open(toon_file, "w") as f:
+                json.dump(toon_data, f, indent=2, ensure_ascii=False)
+                f.write("\n")
+
+            # Update in-memory set so the same domain is not added twice
+            existing_by_country.setdefault(country_name, set()).add(domain.lower())
+            added.setdefault(country_name, []).append(domain)
+            print(f"  Added {domain} → {toon_file.name}")
+
+    if added:
+        total = sum(len(v) for v in added.values())
+        print(f"\nPromoted {total} domain(s) to TOON seed files across {len(added)} country/countries.")
+    else:
+        print("\nNo new domains to promote to TOON seed files.")
+
+    return added
 
 
 def load_manifest_urls(manifest_path: Path, schedule_filter: Optional[str]) -> List[str]:
@@ -426,6 +602,15 @@ Examples:
         help="Show what would be imported without saving",
     )
     parser.add_argument(
+        "--promote-to-toon",
+        action="store_true",
+        help=(
+            "After scraping, write newly discovered domains directly into the "
+            "matching TOON seed files (determined by ccTLD). Implies the CSV "
+            "staging files are still written. Cannot be combined with --dry-run."
+        ),
+    )
+    parser.add_argument(
         "--output-dir",
         default="data/imports",
         help="Output directory for import files (default: data/imports)",
@@ -474,15 +659,27 @@ def main(args: list[str] | None = None) -> int:
         print(f"\n--- Scraping: {url} ---")
         valid, failed = scrape_domains(url, gov_only=gov_only, check_dns=check_dns)
 
-        # Deduplicate against existing TOON seeds
+        # Separate new domains from duplicates
         new_domains = sorted(d for d in valid if d not in all_existing)
+        duplicates = sorted(d for d in valid if d in all_existing)
         print(f"  {len(new_domains)} domains not yet in TOON seeds")
+        if duplicates:
+            print(f"  {len(duplicates)} domains already in TOON seeds (will be marked as duplicate)")
 
-        results[url] = {"new": new_domains, "unresolved": failed}
+        results[url] = {"new": new_domains, "unresolved": failed, "duplicates": duplicates}
 
-    # Save
+    # Save staged CSV/JSON output
     output_dir = Path(parsed.output_dir)
     save_results(results, output_dir, dry_run=parsed.dry_run)
+
+    # Optionally promote new domains directly into TOON seed files
+    if parsed.promote_to_toon and not parsed.dry_run:
+        print("\n--- Promoting new domains to TOON seed files ---")
+        promote_to_toon(results, toon_dir, existing_domains, dry_run=False)
+    elif parsed.promote_to_toon and parsed.dry_run:
+        print("\n--- [DRY RUN] Would promote new domains to TOON seed files ---")
+        promote_to_toon(results, toon_dir, existing_domains, dry_run=True)
+
     return 0
 
 
