@@ -45,7 +45,7 @@ def render_markdown_table(statuses: list[PaceStatus]) -> str:
     when Lighthouse's metadata lives in a separate artifact from every other
     scanner's shared validation-metadata DB."""
     lines = [
-        "| Scanner | Target cycle | Eligible URLs | Scanned (window) | Daily throughput | Projected cycle | Status |",
+        "| Scanner | Target cycle | Eligible URLs | Covered (window) | Daily throughput | Projected cycle | Status |",
         "|---|---|---|---|---|---|---|",
     ]
     for s in statuses:
