@@ -177,8 +177,12 @@ jobs:
           set -o pipefail
           # Lighthouse keeps its own metadata artifact (data/lighthouse/
           # metadata.db) separate from the shared validation-metadata DB
-          # used by every other scanner, so it's evaluated separately and
-          # the two tables are combined into one report. See
+          # used for the main pace calculation, so it's evaluated separately
+          # and the two tables are combined into one report. Relationships
+          # uses relationship_scan_state.last_successful_at from the merged
+          # metadata database so failed relationship attempts do not count
+          # as completed source-page coverage. See
+          
           # WORKFLOW_ORCHESTRATION_AUDIT.md Section 11 (pulled forward from
           # Phase 5) for the on-pace methodology. --table-only avoids any
           # shell-side text surgery (e.g. tail/head line-trimming, which
@@ -188,6 +192,7 @@ jobs:
             --seeds-dir data/toon-seeds/countries \
             --scanner accessibility --scanner social_media \
             --scanner technology --scanner third_party_js --scanner overlays \
+            --scanner relationships \
             --format markdown --table-only \
             --output /tmp/pace-table-main.md \
             2>&1 | tee pace-report-output.txt
@@ -213,8 +218,9 @@ jobs:
             echo "_Generated: $(date -u +'%Y-%m-%d %H:%M UTC')_"
             echo ""
             echo "Whether each scanner is on pace to complete its target cycle (30 days for most"
-            echo "scanners, 60 days for Lighthouse and Relationships), based on distinct URLs scanned"
-            echo "in the last 7 days projected forward against the full eligible corpus. See"
+            echo "covered in the last 7 days projected forward against the full eligible corpus."
+            echo "For Relationships, coverage means a successful source-page scan; failed attempts"
+            echo "do not count toward relationship coverage. See"
             echo "[WORKFLOW_ORCHESTRATION_AUDIT.md](https://github.com/${{ github.repository }}/blob/main/WORKFLOW_ORCHESTRATION_AUDIT.md)"
             echo "Section 11 for the methodology."
             echo ""
@@ -223,10 +229,12 @@ jobs:
             # tables render as one continuous table under a single header.
             tail -n +3 /tmp/pace-table-lighthouse.md
             echo ""
-            echo "_Projection method: \`effective daily throughput = distinct URLs scanned in the last 7 days ÷ 7\`;"
+            echo "_Projection method: \`effective daily throughput = distinct URLs covered in the last 7 days ÷ 7\`;"
             echo "\`projected cycle days = eligible URLs ÷ effective daily throughput\`. The 7-day measurement"
             echo "window reflects recent scan velocity and is independent of each scanner's own target cycle"
-            echo "length -- see src/services/cycle_pace_tracker.py's module docstring for why. 'No data' means"
+            echo "length. Relationships measures successful source-page coverage using"
+            echo "\`relationship_scan_state.last_successful_at\`; other scanners use their configured scan"
+            echo "timestamp. See src/services/cycle_pace_tracker.py's module docstring for why. 'No data' means"            
             echo "the scanner has no rows in its metadata.db within the window (never run against this database,"
             echo "or the database doesn't cover this scanner)._"
           } > docs/pace-report.md
