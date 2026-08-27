@@ -40,8 +40,8 @@ SUMMARIES_DIR = Path("docs/data/summaries")
 PRIORITIZATION_PATH = Path("docs/data/gov-domain-prioritization.json")
 MAX_FAILURES_BEFORE_BACKOFF = 3
 BACKOFF_BASE_DAYS = 1
-BACKOFF_MAX_DAYS = 28
-DEFAULT_SCAN_WINDOW_DAYS = 28
+BACKOFF_MAX_DAYS = 31
+DEFAULT_SCAN_WINDOW_DAYS = 31
 # How long a retired edge stays published before it is dropped entirely.
 RETIRED_EDGE_RETENTION_DAYS = 180
 
@@ -853,7 +853,7 @@ class RelationshipScannerJob:
                 never_scanned = 0
                 stale = 0
 
-                cutoff_28d = (
+                cutoff_31d = (
                     datetime.now(timezone.utc) - timedelta(days=DEFAULT_SCAN_WINDOW_DAYS)
                 ).isoformat()
 
@@ -865,7 +865,7 @@ class RelationshipScannerJob:
                     attempted += 1
                     if state[1] == "completed":
                         successful += 1
-                        if state[2] and state[2] < cutoff_28d:
+                        if state[2] and state[2] < cutoff_31d:
                             stale += 1
                     elif state[1] == "failed":
                         failed += 1
@@ -879,7 +879,7 @@ class RelationshipScannerJob:
                     "failed": failed,
                     "skipped": skipped,
                     "never_scanned": never_scanned,
-                    "stale_28d": stale,
+                    "stale_31d": stale,
                 }
         finally:
             conn.close()
@@ -938,7 +938,7 @@ class RelationshipScannerJob:
                 "unique_edges": 0,
                 # Present on every return so a caller aggregating these does
                 # not have to special-case the skipped country, which with a
-                # 28-day window is the common outcome rather than the rare one.
+                # 31-day window is the common outcome rather than the rare one.
                 "pages_confirmed": 0,
                 "edges_retired": 0,
                 "dataset_edges_checkable": None,
