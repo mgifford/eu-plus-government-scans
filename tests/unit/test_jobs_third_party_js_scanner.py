@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import sqlite3
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from unittest.mock import AsyncMock, MagicMock, patch
 
@@ -11,7 +12,10 @@ import pytest
 
 from src.jobs.third_party_js_scanner import ThirdPartyJsScannerJob
 from src.lib.settings import Settings
-from src.services.third_party_js_scanner import ThirdPartyJsScanResult, ThirdPartyScript
+from src.services.third_party_js_scanner import (
+    ThirdPartyJsScanResult,
+    ThirdPartyScript,
+)
 
 
 # ---------------------------------------------------------------------------
@@ -40,26 +44,44 @@ def sample_toon(tmp_path) -> Path:
             {
                 "canonical_domain": "gov.example",
                 "pages": [
-                    {"url": "https://gov.example/", "is_root_page": True},
-                    {"url": "https://gov.example/about", "is_root_page": False},
+                    {
+                        "url": "https://gov.example/",
+                        "is_root_page": True,
+                    },
+                    {
+                        "url": "https://gov.example/about",
+                        "is_root_page": False,
+                    },
                 ],
             }
         ],
     }
     toon_file = tmp_path / "testland.toon"
-    toon_file.write_text(json.dumps(data), encoding="utf-8")
+    toon_file.write_text(
+        json.dumps(data),
+        encoding="utf-8",
+    )
     return toon_file
 
 
 @pytest.fixture
 def empty_toon(tmp_path) -> Path:
-    data = {"version": "0.1-seed", "country": "EMPTY", "domains": []}
+    data = {
+        "version": "0.1-seed",
+        "country": "EMPTY",
+        "domains": [],
+    }
     toon_file = tmp_path / "empty.toon"
-    toon_file.write_text(json.dumps(data), encoding="utf-8")
+    toon_file.write_text(
+        json.dumps(data),
+        encoding="utf-8",
+    )
     return toon_file
 
 
-def _make_job(settings: Settings) -> ThirdPartyJsScannerJob:
+def _make_job(
+    settings: Settings,
+) -> ThirdPartyJsScannerJob:
     job = ThirdPartyJsScannerJob(settings)
     job.scanner = MagicMock()
     return job
@@ -90,28 +112,148 @@ def _gtm_script() -> ThirdPartyScript:
     )
 
 
+def _insert_scan_result(
+    job: ThirdPartyJsScannerJob,
+    url: str,
+    country_code: str,
+    scanned_at: str,
+) -> None:
+    conn = sqlite3.connect(job.db_path)
+    try:
+        conn.execute(
+            """
+            INSERT INTO url_third_party_js_results
+            (url, country_code, scan_id, is_reachable,
+             scripts, error_message, scanned_at)
+            VALUES (?, ?, ?, ?, ?, ?, ?)
+            """,
+            (
+                url,
+                country_code,
+                "previous-scan",
+                1,
+                "[]",
+                None,
+                scanned_at,
+            ),
+        )
+        conn.commit()
+    finally:
+        conn.close()
+
+
 # ---------------------------------------------------------------------------
 # _load_toon_file / _extract_urls_from_toon
 # ---------------------------------------------------------------------------
 
 
-def test_load_toon_file(temp_settings, sample_toon):
+def test_load_toon_file(
+    temp_settings,
+    sample_toon,
+):
     job = _make_job(temp_settings)
     data = job._load_toon_file(sample_toon)
     assert data["country"] == "TESTLAND"
 
 
-def test_extract_urls_from_toon(temp_settings, sample_toon):
+def test_extract_urls_from_toon(
+    temp_settings,
+    sample_toon,
+):
     job = _make_job(temp_settings)
     data = job._load_toon_file(sample_toon)
     urls = job._extract_urls_from_toon(data)
-    assert urls == ["https://gov.example/", "https://gov.example/about"]
+    assert urls == [
+        "https://gov.example/",
+        "https://gov.example/about",
+    ]
 
 
-def test_extract_urls_empty_toon(temp_settings, empty_toon):
+def test_extract_urls_empty_toon(
+    temp_settings,
+    empty_toon,
+):
     job = _make_job(temp_settings)
     data = job._load_toon_file(empty_toon)
     assert job._extract_urls_from_toon(data) == []
+
+
+# ---------------------------------------------------------------------------
+# _get_recently_scanned_urls
+# ---------------------------------------------------------------------------
+
+
+def test_get_recently_scanned_urls_empty_db(
+    temp_settings,
+):
+    job = _make_job(temp_settings)
+
+    urls = job._get_recently_scanned_urls(
+        "TESTLAND",
+        within_days=31,
+    )
+
+    assert urls == set()
+
+
+def test_get_recently_scanned_urls_returns_recent_result(
+    temp_settings,
+):
+    job = _make_job(temp_settings)
+    _insert_scan_result(
+        job,
+        "https://gov.example/",
+        "TESTLAND",
+        datetime.now(timezone.utc).isoformat(),
+    )
+
+    urls = job._get_recently_scanned_urls(
+        "TESTLAND",
+        within_days=31,
+    )
+
+    assert urls == {"https://gov.example/"}
+
+
+def test_get_recently_scanned_urls_excludes_stale_result(
+    temp_settings,
+):
+    job = _make_job(temp_settings)
+    _insert_scan_result(
+        job,
+        "https://gov.example/",
+        "TESTLAND",
+        (
+            datetime.now(timezone.utc)
+            - timedelta(days=32)
+        ).isoformat(),
+    )
+
+    urls = job._get_recently_scanned_urls(
+        "TESTLAND",
+        within_days=31,
+    )
+
+    assert urls == set()
+
+
+def test_get_recently_scanned_urls_excludes_other_country(
+    temp_settings,
+):
+    job = _make_job(temp_settings)
+    _insert_scan_result(
+        job,
+        "https://gov.example/",
+        "FRANCE",
+        datetime.now(timezone.utc).isoformat(),
+    )
+
+    urls = job._get_recently_scanned_urls(
+        "TESTLAND",
+        within_days=31,
+    )
+
+    assert urls == set()
 
 
 # ---------------------------------------------------------------------------
@@ -119,52 +261,129 @@ def test_extract_urls_empty_toon(temp_settings, empty_toon):
 # ---------------------------------------------------------------------------
 
 
-def test_update_toon_adds_scripts(temp_settings):
+def test_update_toon_adds_scripts(
+    temp_settings,
+):
     job = _make_job(temp_settings)
     toon_data = {
-        "domains": [{"pages": [{"url": "https://gov.example/"}]}]
+        "domains": [
+            {
+                "pages": [
+                    {
+                        "url": "https://gov.example/",
+                    }
+                ]
+            }
+        ]
     }
     scan_results = {
-        "https://gov.example/": _make_result("https://gov.example/", scripts=[_gtm_script()]),
+        "https://gov.example/": _make_result(
+            "https://gov.example/",
+            scripts=[_gtm_script()],
+        ),
     }
-    updated = job._update_toon_with_third_party_js(toon_data, scan_results)
+
+    updated = job._update_toon_with_third_party_js(
+        toon_data,
+        scan_results,
+    )
     page = updated["domains"][0]["pages"][0]
+
     assert "third_party_js" in page
     assert len(page["third_party_js"]) == 1
-    assert page["third_party_js"][0]["service_name"] == "Google Tag Manager"
+    assert (
+        page["third_party_js"][0]["service_name"]
+        == "Google Tag Manager"
+    )
 
 
-def test_update_toon_no_scripts_field_empty_list(temp_settings):
+def test_update_toon_no_scripts_field_empty_list(
+    temp_settings,
+):
     job = _make_job(temp_settings)
-    toon_data = {"domains": [{"pages": [{"url": "https://gov.example/"}]}]}
-    scan_results = {
-        "https://gov.example/": _make_result("https://gov.example/", scripts=[]),
+    toon_data = {
+        "domains": [
+            {
+                "pages": [
+                    {
+                        "url": "https://gov.example/",
+                    }
+                ]
+            }
+        ]
     }
-    updated = job._update_toon_with_third_party_js(toon_data, scan_results)
+    scan_results = {
+        "https://gov.example/": _make_result(
+            "https://gov.example/",
+            scripts=[],
+        ),
+    }
+
+    updated = job._update_toon_with_third_party_js(
+        toon_data,
+        scan_results,
+    )
     page = updated["domains"][0]["pages"][0]
+
     assert page["third_party_js"] == []
     assert "third_party_js_error" not in page
 
 
-def test_update_toon_adds_error_field_when_unreachable(temp_settings):
+def test_update_toon_adds_error_field_when_unreachable(
+    temp_settings,
+):
     job = _make_job(temp_settings)
-    toon_data = {"domains": [{"pages": [{"url": "https://fail.gov/"}]}]}
+    toon_data = {
+        "domains": [
+            {
+                "pages": [
+                    {
+                        "url": "https://fail.gov/",
+                    }
+                ]
+            }
+        ]
+    }
     scan_results = {
         "https://fail.gov/": _make_result(
-            "https://fail.gov/", error="Timeout", reachable=False
+            "https://fail.gov/",
+            error="Timeout",
+            reachable=False,
         ),
     }
-    updated = job._update_toon_with_third_party_js(toon_data, scan_results)
+
+    updated = job._update_toon_with_third_party_js(
+        toon_data,
+        scan_results,
+    )
     page = updated["domains"][0]["pages"][0]
+
     assert page["third_party_js_error"] == "Timeout"
     assert "third_party_js" not in page
 
 
-def test_update_toon_skips_missing_urls(temp_settings):
+def test_update_toon_skips_missing_urls(
+    temp_settings,
+):
     job = _make_job(temp_settings)
-    toon_data = {"domains": [{"pages": [{"url": "https://gov.example/"}]}]}
-    updated = job._update_toon_with_third_party_js(toon_data, scan_results={})
+    toon_data = {
+        "domains": [
+            {
+                "pages": [
+                    {
+                        "url": "https://gov.example/",
+                    }
+                ]
+            }
+        ]
+    }
+
+    updated = job._update_toon_with_third_party_js(
+        toon_data,
+        scan_results={},
+    )
     page = updated["domains"][0]["pages"][0]
+
     assert "third_party_js" not in page
     assert "third_party_js_error" not in page
 
@@ -174,14 +393,29 @@ def test_update_toon_skips_missing_urls(temp_settings):
 # ---------------------------------------------------------------------------
 
 
-def test_save_results_persists_to_db(temp_settings):
+def test_save_results_persists_to_db(
+    temp_settings,
+):
     job = _make_job(temp_settings)
-    results = [_make_result("https://gov.example/", scripts=[_gtm_script()])]
-    job._save_results(results, "TESTLAND", "scan-001")
+    results = [
+        _make_result(
+            "https://gov.example/",
+            scripts=[_gtm_script()],
+        )
+    ]
+
+    job._save_results(
+        results,
+        "TESTLAND",
+        "scan-001",
+    )
 
     conn = sqlite3.connect(job.db_path)
     rows = conn.execute(
-        "SELECT url, country_code, scan_id, is_reachable, scripts FROM url_third_party_js_results"
+        """
+        SELECT url, country_code, scan_id, is_reachable, scripts
+        FROM url_third_party_js_results
+        """
     ).fetchall()
     conn.close()
 
@@ -189,26 +423,44 @@ def test_save_results_persists_to_db(temp_settings):
     assert rows[0][0] == "https://gov.example/"
     assert rows[0][1] == "TESTLAND"
     assert rows[0][2] == "scan-001"
-    assert rows[0][3] == 1  # is_reachable stored as 1
+    assert rows[0][3] == 1
 
     scripts_data = json.loads(rows[0][4])
     assert len(scripts_data) == 1
-    assert scripts_data[0]["service_name"] == "Google Tag Manager"
+    assert (
+        scripts_data[0]["service_name"]
+        == "Google Tag Manager"
+    )
 
 
-def test_save_results_error_entry(temp_settings):
+def test_save_results_error_entry(
+    temp_settings,
+):
     job = _make_job(temp_settings)
-    result = _make_result("https://fail.gov/", error="Connection failed", reachable=False)
-    job._save_results([result], "TESTLAND", "scan-002")
+    result = _make_result(
+        "https://fail.gov/",
+        error="Connection failed",
+        reachable=False,
+    )
+
+    job._save_results(
+        [result],
+        "TESTLAND",
+        "scan-002",
+    )
 
     conn = sqlite3.connect(job.db_path)
     row = conn.execute(
-        "SELECT is_reachable, error_message FROM url_third_party_js_results WHERE url = ?",
+        """
+        SELECT is_reachable, error_message
+        FROM url_third_party_js_results
+        WHERE url = ?
+        """,
         ("https://fail.gov/",),
     ).fetchone()
     conn.close()
 
-    assert row[0] == 0  # is_reachable = False stored as 0
+    assert row[0] == 0
     assert row[1] == "Connection failed"
 
 
@@ -218,124 +470,331 @@ def test_save_results_error_entry(temp_settings):
 
 
 @pytest.mark.asyncio
-async def test_scan_country_returns_stats(temp_settings, sample_toon):
+async def test_scan_country_returns_stats(
+    temp_settings,
+    sample_toon,
+):
     job = _make_job(temp_settings)
 
     mock_results = {
         "https://gov.example/": _make_result(
-            "https://gov.example/", scripts=[_gtm_script()]
+            "https://gov.example/",
+            scripts=[_gtm_script()],
         ),
-        "https://gov.example/about": _make_result("https://gov.example/about"),
+        "https://gov.example/about": _make_result(
+            "https://gov.example/about",
+        ),
     }
-    job.scanner.scan_urls_batch = AsyncMock(return_value=mock_results)
+    job.scanner.scan_urls_batch = AsyncMock(
+        return_value=mock_results
+    )
 
-    stats = await job.scan_country("TESTLAND", sample_toon)
+    stats = await job.scan_country(
+        "TESTLAND",
+        sample_toon,
+    )
 
     assert stats["country_code"] == "TESTLAND"
     assert stats["total_urls"] == 2
     assert stats["urls_scanned"] == 2
+    assert stats["urls_skipped_recently_scanned"] == 0
     assert stats["is_complete"] is True
     assert stats["reachable_count"] == 2
     assert stats["unreachable_count"] == 0
     assert stats["total_scripts"] == 1
     assert stats["identified_services"] == 1
     assert stats["urls_with_scripts"] == 1
-    assert stats["service_counts"] == {"Google Tag Manager": 1}
+    assert stats["service_counts"] == {
+        "Google Tag Manager": 1
+    }
 
 
 @pytest.mark.asyncio
-async def test_scan_country_empty_toon(temp_settings, empty_toon):
+async def test_scan_country_skips_recent_urls(
+    temp_settings,
+    sample_toon,
+):
     job = _make_job(temp_settings)
-    job.scanner.scan_urls_batch = AsyncMock(return_value={})
+    _insert_scan_result(
+        job,
+        "https://gov.example/",
+        "TESTLAND",
+        datetime.now(timezone.utc).isoformat(),
+    )
 
-    stats = await job.scan_country("EMPTY", empty_toon)
+    mock_results = {
+        "https://gov.example/about": _make_result(
+            "https://gov.example/about",
+        ),
+    }
+    job.scanner.scan_urls_batch = AsyncMock(
+        return_value=mock_results
+    )
 
-    assert stats["total_urls"] == 0
-    assert stats["urls_scanned"] == 0
+    stats = await job.scan_country(
+        "TESTLAND",
+        sample_toon,
+        skip_recently_scanned_days=31,
+    )
+
+    args, kwargs = (
+        job.scanner.scan_urls_batch.call_args
+    )
+
+    assert args[0] == [
+        "https://gov.example/about"
+    ]
+    assert stats["total_urls"] == 2
+    assert stats["urls_scanned"] == 1
+    assert stats["urls_skipped_recently_scanned"] == 1
     assert stats["is_complete"] is True
 
 
 @pytest.mark.asyncio
-async def test_scan_country_partial_results(temp_settings, sample_toon):
+async def test_scan_country_all_recent_skips_http_scan(
+    temp_settings,
+    sample_toon,
+):
+    job = _make_job(temp_settings)
+    now = datetime.now(timezone.utc).isoformat()
+
+    _insert_scan_result(
+        job,
+        "https://gov.example/",
+        "TESTLAND",
+        now,
+    )
+    _insert_scan_result(
+        job,
+        "https://gov.example/about",
+        "TESTLAND",
+        now,
+    )
+
+    job.scanner.scan_urls_batch = AsyncMock()
+
+    stats = await job.scan_country(
+        "TESTLAND",
+        sample_toon,
+        skip_recently_scanned_days=31,
+    )
+
+    job.scanner.scan_urls_batch.assert_not_called()
+    assert stats["total_urls"] == 2
+    assert stats["urls_scanned"] == 0
+    assert stats["urls_skipped_recently_scanned"] == 2
+    assert stats["is_complete"] is True
+
+
+@pytest.mark.asyncio
+async def test_scan_country_recent_urls_do_not_consume_max_urls(
+    temp_settings,
+    sample_toon,
+):
     job = _make_job(temp_settings)
 
-    # Only one URL scanned (budget exhausted)
-    mock_results = {
-        "https://gov.example/": _make_result("https://gov.example/"),
-    }
-    job.scanner.scan_urls_batch = AsyncMock(return_value=mock_results)
+    _insert_scan_result(
+        job,
+        "https://gov.example/",
+        "TESTLAND",
+        datetime.now(timezone.utc).isoformat(),
+    )
 
-    stats = await job.scan_country("TESTLAND", sample_toon)
+    mock_results = {
+        "https://gov.example/about": _make_result(
+            "https://gov.example/about",
+        ),
+    }
+    job.scanner.scan_urls_batch = AsyncMock(
+        return_value=mock_results
+    )
+
+    await job.scan_country(
+        "TESTLAND",
+        sample_toon,
+        max_urls=1,
+        skip_recently_scanned_days=31,
+    )
+
+    args, kwargs = (
+        job.scanner.scan_urls_batch.call_args
+    )
+
+    assert args[0] == [
+        "https://gov.example/about"
+    ]
+    assert kwargs["max_urls"] == 1
+
+
+@pytest.mark.asyncio
+async def test_scan_country_empty_toon(
+    temp_settings,
+    empty_toon,
+):
+    job = _make_job(temp_settings)
+    job.scanner.scan_urls_batch = AsyncMock(
+        return_value={}
+    )
+
+    stats = await job.scan_country(
+        "EMPTY",
+        empty_toon,
+    )
+
+    assert stats["total_urls"] == 0
+    assert stats["urls_scanned"] == 0
+    assert stats["urls_skipped_recently_scanned"] == 0
+    assert stats["is_complete"] is True
+
+
+@pytest.mark.asyncio
+async def test_scan_country_partial_results(
+    temp_settings,
+    sample_toon,
+):
+    job = _make_job(temp_settings)
+
+    mock_results = {
+        "https://gov.example/": _make_result(
+            "https://gov.example/"
+        ),
+    }
+    job.scanner.scan_urls_batch = AsyncMock(
+        return_value=mock_results
+    )
+
+    stats = await job.scan_country(
+        "TESTLAND",
+        sample_toon,
+    )
 
     assert stats["urls_scanned"] == 1
     assert stats["is_complete"] is False
 
 
 @pytest.mark.asyncio
-async def test_scan_country_unreachable_url(temp_settings, sample_toon):
+async def test_scan_country_unreachable_url(
+    temp_settings,
+    sample_toon,
+):
     job = _make_job(temp_settings)
 
     mock_results = {
         "https://gov.example/": _make_result(
-            "https://gov.example/", error="Timeout", reachable=False
+            "https://gov.example/",
+            error="Timeout",
+            reachable=False,
         ),
-        "https://gov.example/about": _make_result("https://gov.example/about"),
+        "https://gov.example/about": _make_result(
+            "https://gov.example/about"
+        ),
     }
-    job.scanner.scan_urls_batch = AsyncMock(return_value=mock_results)
+    job.scanner.scan_urls_batch = AsyncMock(
+        return_value=mock_results
+    )
 
-    stats = await job.scan_country("TESTLAND", sample_toon)
+    stats = await job.scan_country(
+        "TESTLAND",
+        sample_toon,
+    )
 
     assert stats["reachable_count"] == 1
     assert stats["unreachable_count"] == 1
 
 
 @pytest.mark.asyncio
-async def test_scan_country_writes_toon_output(temp_settings, sample_toon):
+async def test_scan_country_writes_toon_output(
+    temp_settings,
+    sample_toon,
+):
     job = _make_job(temp_settings)
 
     mock_results = {
-        "https://gov.example/": _make_result("https://gov.example/", scripts=[_gtm_script()]),
-        "https://gov.example/about": _make_result("https://gov.example/about"),
+        "https://gov.example/": _make_result(
+            "https://gov.example/",
+            scripts=[_gtm_script()],
+        ),
+        "https://gov.example/about": _make_result(
+            "https://gov.example/about",
+        ),
     }
-    job.scanner.scan_urls_batch = AsyncMock(return_value=mock_results)
+    job.scanner.scan_urls_batch = AsyncMock(
+        return_value=mock_results
+    )
 
-    stats = await job.scan_country("TESTLAND", sample_toon)
+    stats = await job.scan_country(
+        "TESTLAND",
+        sample_toon,
+    )
 
     output_path = Path(stats["output_path"])
     assert output_path.exists()
-    data = json.loads(output_path.read_text())
+
+    data = json.loads(
+        output_path.read_text()
+    )
     page = data["domains"][0]["pages"][0]
+
     assert "third_party_js" in page
 
 
 @pytest.mark.asyncio
-async def test_scan_country_aggregates_service_counts(temp_settings, sample_toon):
+async def test_scan_country_aggregates_service_counts(
+    temp_settings,
+    sample_toon,
+):
     """service_counts sums the same service seen across multiple URLs."""
     job = _make_job(temp_settings)
 
     mock_results = {
-        "https://gov.example/": _make_result("https://gov.example/", scripts=[_gtm_script()]),
+        "https://gov.example/": _make_result(
+            "https://gov.example/",
+            scripts=[_gtm_script()],
+        ),
         "https://gov.example/about": _make_result(
-            "https://gov.example/about", scripts=[_gtm_script()]
+            "https://gov.example/about",
+            scripts=[_gtm_script()],
         ),
     }
-    job.scanner.scan_urls_batch = AsyncMock(return_value=mock_results)
+    job.scanner.scan_urls_batch = AsyncMock(
+        return_value=mock_results
+    )
 
-    stats = await job.scan_country("TESTLAND", sample_toon)
-    assert stats["service_counts"]["Google Tag Manager"] == 2
+    stats = await job.scan_country(
+        "TESTLAND",
+        sample_toon,
+    )
+
+    assert (
+        stats["service_counts"]["Google Tag Manager"]
+        == 2
+    )
 
 
 @pytest.mark.asyncio
-async def test_scan_country_passes_max_runtime(temp_settings, sample_toon):
+async def test_scan_country_passes_max_runtime(
+    temp_settings,
+    sample_toon,
+):
     import time
 
     job = _make_job(temp_settings)
-    job.scanner.scan_urls_batch = AsyncMock(return_value={})
+    job.scanner.scan_urls_batch = AsyncMock(
+        return_value={}
+    )
 
     t0 = time.monotonic()
-    await job.scan_country("TESTLAND", sample_toon, max_runtime_seconds=60.0, start_time=t0)
+    await job.scan_country(
+        "TESTLAND",
+        sample_toon,
+        max_runtime_seconds=60.0,
+        start_time=t0,
+    )
 
-    _, kwargs = job.scanner.scan_urls_batch.call_args
+    _, kwargs = (
+        job.scanner.scan_urls_batch.call_args
+    )
+
     assert kwargs["max_runtime_seconds"] == 60.0
     assert kwargs["start_time"] == t0
 
@@ -349,56 +808,153 @@ async def test_scan_country_passes_max_runtime(temp_settings, sample_toon):
 def toon_seeds_dir(tmp_path):
     """Directory with two TOON seed files."""
     page = {"url": "https://a.gov/"}
+
     for stem in ("alpha", "beta"):
         data = {
             "country": stem.upper(),
-            "domains": [{"canonical_domain": f"{stem}.gov", "pages": [page]}],
+            "domains": [
+                {
+                    "canonical_domain": f"{stem}.gov",
+                    "pages": [page],
+                }
+            ],
         }
-        (tmp_path / f"{stem}.toon").write_text(json.dumps(data), encoding="utf-8")
+        (
+            tmp_path / f"{stem}.toon"
+        ).write_text(
+            json.dumps(data),
+            encoding="utf-8",
+        )
+
     return tmp_path
 
 
 @pytest.mark.asyncio
-async def test_scan_all_countries_processes_all(temp_settings, toon_seeds_dir):
+async def test_scan_all_countries_processes_all(
+    temp_settings,
+    toon_seeds_dir,
+):
     job = _make_job(temp_settings)
 
-    async def _mock_scan(country_code, toon_path, *args, **kwargs):
-        return {"country_code": country_code}
+    async def _mock_scan(
+        country_code,
+        toon_path,
+        *args,
+        **kwargs,
+    ):
+        return {
+            "country_code": country_code
+        }
 
-    with patch.object(job, "scan_country", side_effect=_mock_scan):
-        all_stats = await job.scan_all_countries(toon_seeds_dir)
+    with patch.object(
+        job,
+        "scan_country",
+        side_effect=_mock_scan,
+    ):
+        all_stats = await job.scan_all_countries(
+            toon_seeds_dir
+        )
 
     assert len(all_stats) == 2
-    codes = {s["country_code"] for s in all_stats}
+
+    codes = {
+        stats["country_code"]
+        for stats in all_stats
+    }
     assert codes == {"ALPHA", "BETA"}
 
 
 @pytest.mark.asyncio
-async def test_scan_all_countries_handles_errors(temp_settings, toon_seeds_dir):
+async def test_scan_all_countries_passes_freshness_window(
+    temp_settings,
+    toon_seeds_dir,
+):
     job = _make_job(temp_settings)
+    seen_windows = []
 
-    async def _mock_scan(country_code, toon_path, *args, **kwargs):
-        if country_code == "ALPHA":
-            raise RuntimeError("Boom")
-        return {"country_code": country_code}
+    async def _mock_scan(
+        country_code,
+        toon_path,
+        *args,
+        **kwargs,
+    ):
+        seen_windows.append(
+            kwargs["skip_recently_scanned_days"]
+        )
+        return {
+            "country_code": country_code
+        }
 
-    with patch.object(job, "scan_country", side_effect=_mock_scan):
-        all_stats = await job.scan_all_countries(toon_seeds_dir)
+    with patch.object(
+        job,
+        "scan_country",
+        side_effect=_mock_scan,
+    ):
+        await job.scan_all_countries(
+            toon_seeds_dir,
+            skip_recently_scanned_days=31,
+        )
 
-    assert any("error" in s for s in all_stats)
-    assert any(s.get("country_code") == "BETA" for s in all_stats)
+    assert seen_windows == [31, 31]
 
 
 @pytest.mark.asyncio
-async def test_scan_all_countries_empty_dir(temp_settings, tmp_path):
+async def test_scan_all_countries_handles_errors(
+    temp_settings,
+    toon_seeds_dir,
+):
     job = _make_job(temp_settings)
-    all_stats = await job.scan_all_countries(tmp_path)
+
+    async def _mock_scan(
+        country_code,
+        toon_path,
+        *args,
+        **kwargs,
+    ):
+        if country_code == "ALPHA":
+            raise RuntimeError("Boom")
+
+        return {
+            "country_code": country_code
+        }
+
+    with patch.object(
+        job,
+        "scan_country",
+        side_effect=_mock_scan,
+    ):
+        all_stats = await job.scan_all_countries(
+            toon_seeds_dir
+        )
+
+    assert any(
+        "error" in stats
+        for stats in all_stats
+    )
+    assert any(
+        stats.get("country_code") == "BETA"
+        for stats in all_stats
+    )
+
+
+@pytest.mark.asyncio
+async def test_scan_all_countries_empty_dir(
+    temp_settings,
+    tmp_path,
+):
+    job = _make_job(temp_settings)
+
+    all_stats = await job.scan_all_countries(
+        tmp_path
+    )
+
     assert all_stats == []
 
 
 @pytest.mark.asyncio
 async def test_scan_all_countries_prioritizes_oldest_last_scan(
-    temp_settings, toon_seeds_dir
+    temp_settings,
+    toon_seeds_dir,
 ):
     """Countries with older last scans should be processed first."""
     job = _make_job(temp_settings)
@@ -408,7 +964,8 @@ async def test_scan_all_countries_prioritizes_oldest_last_scan(
         conn.execute(
             """
             INSERT INTO url_third_party_js_results
-            (url, country_code, scan_id, is_reachable, scripts, error_message, scanned_at)
+            (url, country_code, scan_id, is_reachable,
+             scripts, error_message, scanned_at)
             VALUES (?, ?, ?, ?, ?, ?, ?)
             """,
             (
@@ -424,7 +981,8 @@ async def test_scan_all_countries_prioritizes_oldest_last_scan(
         conn.execute(
             """
             INSERT INTO url_third_party_js_results
-            (url, country_code, scan_id, is_reachable, scripts, error_message, scanned_at)
+            (url, country_code, scan_id, is_reachable,
+             scripts, error_message, scanned_at)
             VALUES (?, ?, ?, ?, ?, ?, ?)
             """,
             (
@@ -443,11 +1001,27 @@ async def test_scan_all_countries_prioritizes_oldest_last_scan(
 
     scanned_order: list[str] = []
 
-    async def _mock_scan(country_code, toon_path, *args, **kwargs):
+    async def _mock_scan(
+        country_code,
+        toon_path,
+        *args,
+        **kwargs,
+    ):
         scanned_order.append(country_code)
-        return {"country_code": country_code}
+        return {
+            "country_code": country_code
+        }
 
-    with patch.object(job, "scan_country", side_effect=_mock_scan):
-        await job.scan_all_countries(toon_seeds_dir)
+    with patch.object(
+        job,
+        "scan_country",
+        side_effect=_mock_scan,
+    ):
+        await job.scan_all_countries(
+            toon_seeds_dir
+        )
 
-    assert scanned_order[:2] == ["BETA", "ALPHA"]
+    assert scanned_order[:2] == [
+        "BETA",
+        "ALPHA",
+    ]
