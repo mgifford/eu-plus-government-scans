@@ -23,9 +23,9 @@ on:
         default: '50'
         type: string
       skip_recently_scanned_days:
-        description: 'Skip URLs scanned within N days (default: 28)'
+        description: 'Skip URLs scanned within N days (default: 31)'
         required: false
-        default: '28'
+        default: '31'
         type: string
 
 env:
@@ -76,13 +76,13 @@ jobs:
               --country ${{ inputs.country }} \
               --rate-limit ${{ inputs.rate_limit || '2.0' }} \
               --max-runtime ${{ inputs.max_runtime || '50' }} \
-              --skip-recently-scanned-days ${{ inputs.skip_recently_scanned_days || '28' }}
+              --skip-recently-scanned-days ${{ inputs.skip_recently_scanned_days || '31' }}
           else
             python -m src.cli.scan_relationships \
               --all \
               --rate-limit ${{ inputs.rate_limit || '2.0' }} \
               --max-runtime ${{ inputs.max_runtime || '50' }} \
-              --skip-recently-scanned-days ${{ inputs.skip_recently_scanned_days || '28' }}
+              --skip-recently-scanned-days ${{ inputs.skip_recently_scanned_days || '31' }}
           fi
 
       # Derived from the relationship dataset this workflow just refreshed, so
