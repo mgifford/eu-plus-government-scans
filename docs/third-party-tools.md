@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-08-28 12:25 UTC — last scan: 2026-08-27_
+_Stats as of 2026-08-28 16:09 UTC — last scan: 2026-08-28_
 
-**166** scan batches run
+**167** scan batches run
 
-**19,040** of **87,696** available pages scanned (**21.7%** coverage)
-**17,428** of **19,040** scanned pages were reachable (**91.5%**)
-**8,120** reachable pages loaded at least one third-party script (**46.6%** of reachable)
-**10,958** known third-party service loads identified
+**20,092** of **87,696** available pages scanned (**22.9%** coverage)
+**18,373** of **20,092** scanned pages were reachable (**91.4%**)
+**8,579** reachable pages loaded at least one third-party script (**46.7%** of reachable)
+**11,629** known third-party service loads identified
 **22** unique known services across **14** categories
 
 ---
@@ -43,7 +43,7 @@ _Stats as of 2026-08-28 12:25 UTC — last scan: 2026-08-27_
 | Malta | 610 | 610 | 595 | 466 | 1,276 | 78.3 | 214.5 | 2026-08-26 |
 | Netherlands | 945 | 945 | 902 | 361 | 280 | 40.0 | 31.0 | 2026-08-27 |
 | Norway | 249 | 249 | 243 | 137 | 112 | 56.4 | 46.1 | 2026-08-26 |
-| Poland | 585 | 14,951 | 559 | 290 | 410 | 51.9 | 73.3 | 2026-08-23 |
+| Poland | 1,637 | 14,951 | 1,504 | 749 | 1,081 | 49.8 | 71.9 | 2026-08-28 |
 | Portugal | 616 | 3,508 | 503 | 170 | 239 | 33.8 | 47.5 | 2026-08-23 |
 | Cyprus | 29 | 29 | 29 | 13 | 15 | 44.8 | 51.7 | 2026-08-26 |
 | Romania | 472 | 807 | 196 | 149 | 124 | 76.0 | 63.3 | 2026-08-27 |
@@ -62,21 +62,21 @@ _Stats as of 2026-08-28 12:25 UTC — last scan: 2026-08-27_
 
 | # | Service | Loads |
 |--:|---------|------:|
-| 1 | cdnjs (Cloudflare CDN) | **2,168** |
-| 2 | jsDelivr CDN | **2,025** |
-| 3 | Google Analytics (GA4) | **1,707** |
-| 4 | jQuery | **912** |
-| 5 | Google reCAPTCHA | **741** |
-| 6 | Google Hosted Libraries | **616** |
-| 7 | Google Tag Manager | **615** |
-| 8 | unpkg CDN | **600** |
+| 1 | cdnjs (Cloudflare CDN) | **2,275** |
+| 2 | jsDelivr CDN | **2,139** |
+| 3 | Google Analytics (GA4) | **1,836** |
+| 4 | jQuery | **966** |
+| 5 | Google reCAPTCHA | **820** |
+| 6 | unpkg CDN | **671** |
+| 7 | Google Tag Manager | **662** |
+| 8 | Google Hosted Libraries | **649** |
 | 9 | CookieInformation | **416** |
 | 10 | Cookiebot | **401** |
-| 11 | Font Awesome | **288** |
-| 12 | Bootstrap | **140** |
+| 11 | Font Awesome | **294** |
+| 12 | Bootstrap | **167** |
 | 13 | OneTrust | **108** |
 | 14 | Adobe Dynamic Tag Management / Launch | **63** |
-| 15 | Facebook Pixel | **55** |
+| 15 | Facebook Pixel | **59** |
 | 16 | Cloudflare Turnstile / Challenge | **27** |
 | 17 | Google Analytics (Universal) | **24** |
 | 18 | Sentry | **22** |
@@ -87,21 +87,21 @@ _Stats as of 2026-08-28 12:25 UTC — last scan: 2026-08-27_
 
 | # | Service | Reachable Pages | Prevalence of Reachable Pages |
 |--:|---------|----------------:|------------------------------:|
-| 1 | Google Analytics (GA4) | **1,675** | **226.0%** |
-| 2 | jsDelivr CDN | **1,135** | **153.2%** |
-| 3 | cdnjs (Cloudflare CDN) | **830** | **112.0%** |
-| 4 | Google reCAPTCHA | **720** | **97.2%** |
-| 5 | jQuery | **629** | **84.9%** |
-| 6 | Google Tag Manager | **598** | **80.7%** |
-| 7 | Google Hosted Libraries | **543** | **73.3%** |
-| 8 | unpkg CDN | **447** | **60.3%** |
+| 1 | Google Analytics (GA4) | **1,802** | **243.2%** |
+| 2 | jsDelivr CDN | **1,240** | **167.3%** |
+| 3 | cdnjs (Cloudflare CDN) | **903** | **121.9%** |
+| 4 | Google reCAPTCHA | **799** | **107.8%** |
+| 5 | jQuery | **680** | **91.8%** |
+| 6 | Google Tag Manager | **638** | **86.1%** |
+| 7 | Google Hosted Libraries | **576** | **77.7%** |
+| 8 | unpkg CDN | **500** | **67.5%** |
 | 9 | CookieInformation | **416** | **56.1%** |
 | 10 | Cookiebot | **396** | **53.4%** |
-| 11 | Font Awesome | **230** | **31.0%** |
-| 12 | Bootstrap | **140** | **18.9%** |
+| 11 | Font Awesome | **236** | **31.8%** |
+| 12 | Bootstrap | **167** | **22.5%** |
 | 13 | OneTrust | **99** | **13.4%** |
 | 14 | Adobe Dynamic Tag Management / Launch | **60** | **8.1%** |
-| 15 | Facebook Pixel | **53** | **7.2%** |
+| 15 | Facebook Pixel | **55** | **7.4%** |
 | 16 | Cloudflare Turnstile / Challenge | **27** | **3.6%** |
 | 17 | Google Analytics (Universal) | **24** | **3.2%** |
 | 18 | Sentry | **22** | **3.0%** |
@@ -112,16 +112,16 @@ _Stats as of 2026-08-28 12:25 UTC — last scan: 2026-08-27_
 
 | # | Category | Loads |
 |--:|----------|------:|
-| 1 | CDN | **5,409** |
-| 2 | Analytics | **1,865** |
-| 3 | JavaScript Library | **1,528** |
+| 1 | CDN | **5,734** |
+| 2 | Analytics | **1,998** |
+| 3 | JavaScript Library | **1,615** |
 | 4 | Cookie Consent | **925** |
-| 5 | Security | **768** |
-| 6 | CAPTCHA | **741** |
-| 7 | Tag Manager | **678** |
-| 8 | Icon Library | **288** |
-| 9 | UI Framework | **140** |
-| 10 | Advertising | **55** |
+| 5 | Security | **847** |
+| 6 | CAPTCHA | **820** |
+| 7 | Tag Manager | **725** |
+| 8 | Icon Library | **294** |
+| 9 | UI Framework | **167** |
+| 10 | Advertising | **59** |
 | 11 | Error Tracking | **22** |
 | 12 | Customer Support | **11** |
 | 13 | Chat | **11** |
@@ -133,21 +133,21 @@ Infrastructure-heavy categories (CDNs, core libraries, and UI assets):
 
 | # | Infrastructure Category | Loads |
 |--:|--------------------------|------:|
-| 1 | CDN | **5,409** |
-| 2 | JavaScript Library | **1,528** |
-| 3 | Icon Library | **288** |
-| 4 | UI Framework | **140** |
+| 1 | CDN | **5,734** |
+| 2 | JavaScript Library | **1,615** |
+| 3 | Icon Library | **294** |
+| 4 | UI Framework | **167** |
 
 Policy-relevant categories (tracking, consent, support, and security tooling):
 
 | # | Policy-Relevant Category | Loads |
 |--:|--------------------------|------:|
-| 1 | Analytics | **1,865** |
+| 1 | Analytics | **1,998** |
 | 2 | Cookie Consent | **925** |
-| 3 | Security | **768** |
-| 4 | CAPTCHA | **741** |
-| 5 | Tag Manager | **678** |
-| 6 | Advertising | **55** |
+| 3 | Security | **847** |
+| 4 | CAPTCHA | **820** |
+| 5 | Tag Manager | **725** |
+| 6 | Advertising | **59** |
 | 7 | Error Tracking | **22** |
 | 8 | Customer Support | **11** |
 | 9 | Chat | **11** |
@@ -161,17 +161,17 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 | 2 | `ajax.aspnetcdn.com` | **624** | **309** |
 | 3 | `cuatro.sim-cdn.nl` | **390** | **11** |
 | 4 | `assets.epexio.com` | **381** | **15** |
-| 5 | `static.addtoany.com` | **330** | **330** |
+| 5 | `static.addtoany.com` | **342** | **336** |
 | 6 | `customer.cludo.com` | **328** | **247** |
 | 7 | `cdn.public.lu` | **302** | **243** |
-| 8 | `cookie-notice.plzen.eu` | **272** | **144** |
-| 9 | `maps.googleapis.com` | **257** | **242** |
-| 10 | `dreambroker.com` | **246** | **246** |
-| 11 | `translate.google.com` | **245** | **245** |
-| 12 | `content.powerapps.com` | **228** | **19** |
-| 13 | `cdn.herning.dk` | **227** | **23** |
-| 14 | `cdn.ecollege.haute-garonne.fr` | **225** | **22** |
-| 15 | `www.youtube.com` | **218** | **218** |
+| 8 | `maps.googleapis.com` | **278** | **263** |
+| 9 | `cookie-notice.plzen.eu` | **272** | **144** |
+| 10 | `translate.google.com` | **259** | **259** |
+| 11 | `www.youtube.com` | **258** | **258** |
+| 12 | `dreambroker.com` | **246** | **246** |
+| 13 | `content.powerapps.com` | **228** | **19** |
+| 14 | `cdn.herning.dk` | **227** | **23** |
+| 15 | `cdn.ecollege.haute-garonne.fr` | **225** | **22** |
 
 > These hosts were seen as third-party script sources but did not match a known service signature. Review this queue regularly and promote stable, policy-relevant hosts into the signature list.
 
