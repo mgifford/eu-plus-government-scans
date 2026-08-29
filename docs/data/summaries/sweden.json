@@ -25,7 +25,7 @@
     },
     {
       "domain": "vgregion.se",
-      "count": 598
+      "count": 601
     },
     {
       "domain": "goteborg.se",
@@ -234,12 +234,12 @@
       "count": 426
     },
     {
-      "domain": "1177.se",
-      "count": 379
+      "domain": "vgregion.se",
+      "count": 380
     },
     {
-      "domain": "vgregion.se",
-      "count": 377
+      "domain": "1177.se",
+      "count": 379
     },
     {
       "domain": "goteborg.se",
@@ -414,5 +414,5 @@
     "form_destination": 456,
     "image_or_media_dependency": 643
   },
-  "generated_at": "2026-08-26T07:35:59.058236+00:00"
+  "generated_at": "2026-08-29T13:09:49.058253+00:00"
 }
