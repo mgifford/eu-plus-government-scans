@@ -24,9 +24,24 @@
     "total_source_domains": 143,
     "file": "latvia.json"
   },
-  "FRANCE": {
-    "total_relationships": 30291,
-    "total_source_domains": 657,
-    "file": "france.json"
+  "CANADA": {
+    "total_relationships": 300834,
+    "total_source_domains": 8528,
+    "file": "canada.json"
+  },
+  "LITHUANIA": {
+    "total_relationships": 538,
+    "total_source_domains": 15,
+    "file": "lithuania.json"
+  },
+  "SWEDEN": {
+    "total_relationships": 5881,
+    "total_source_domains": 234,
+    "file": "sweden.json"
+  },
+  "GERMANY": {
+    "total_relationships": 22036,
+    "total_source_domains": 223,
+    "file": "germany.json"
   }
 }
