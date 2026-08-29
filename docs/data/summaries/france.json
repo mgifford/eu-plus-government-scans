@@ -1,6 +1,6 @@
 {
   "country_code": "FRANCE",
-  "total_relationships": 30210,
+  "total_relationships": 30291,
   "total_source_domains": 657,
   "top_source_domains": [
     {
@@ -21,103 +21,119 @@
     },
     {
       "domain": "developpement-durable.gouv.fr",
-      "count": 4323
+      "count": 4641
     },
     {
       "domain": "culture.gouv.fr",
-      "count": 2782
+      "count": 3135
+    },
+    {
+      "domain": "rennes.fr",
+      "count": 2695
+    },
+    {
+      "domain": "beta.gouv.fr",
+      "count": 2638
     },
     {
       "domain": "toulouse.fr",
       "count": 2366
     },
     {
-      "domain": "rennes.fr",
-      "count": 2314
+      "domain": "loire-atlantique.fr",
+      "count": 2050
     },
     {
-      "domain": "beta.gouv.fr",
-      "count": 2304
+      "domain": "education.gouv.fr",
+      "count": 1982
     },
     {
       "domain": "defense.gouv.fr",
-      "count": 1765
-    },
-    {
-      "domain": "loire-atlantique.fr",
-      "count": 1647
+      "count": 1947
     },
     {
       "domain": "numerique.gouv.fr",
-      "count": 1574
+      "count": 1714
     },
     {
       "domain": "normandie.fr",
       "count": 1471
     },
     {
-      "domain": "education.gouv.fr",
-      "count": 1466
+      "domain": "anct.gouv.fr",
+      "count": 1374
+    },
+    {
+      "domain": "marseille.fr",
+      "count": 1365
+    },
+    {
+      "domain": "hautsdefrance.fr",
+      "count": 1310
+    },
+    {
+      "domain": "agriculture.gouv.fr",
+      "count": 1298
+    },
+    {
+      "domain": "bordeaux-metropole.fr",
+      "count": 1282
     },
     {
       "domain": "herault.fr",
       "count": 1274
     },
     {
-      "domain": "anct.gouv.fr",
-      "count": 1267
-    },
-    {
-      "domain": "agriculture.gouv.fr",
-      "count": 1213
-    },
-    {
-      "domain": "data.gouv.fr",
-      "count": 1172
-    },
-    {
-      "domain": "hautsdefrance.fr",
-      "count": 1136
-    },
-    {
-      "domain": "marseille.fr",
-      "count": 1089
-    },
-    {
-      "domain": "bordeaux-metropole.fr",
-      "count": 1042
+      "domain": "lyon.fr",
+      "count": 1264
     },
     {
       "domain": "dreets.gouv.fr",
-      "count": 999
+      "count": 1193
+    },
+    {
+      "domain": "data.gouv.fr",
+      "count": 1178
+    },
+    {
+      "domain": "nice.fr",
+      "count": 1104
+    },
+    {
+      "domain": "limoges.fr",
+      "count": 1086
+    },
+    {
+      "domain": "montpellier.fr",
+      "count": 1047
     },
     {
       "domain": "bourgognefranchecomte.fr",
       "count": 987
     },
     {
-      "domain": "montpellier.fr",
-      "count": 953
+      "domain": "lillemetropole.fr",
+      "count": 977
     },
     {
       "domain": "angers.fr",
       "count": 950
     },
     {
-      "domain": "nice.fr",
-      "count": 928
+      "domain": "lamayenne.fr",
+      "count": 947
+    },
+    {
+      "domain": "lille.fr",
+      "count": 925
     },
     {
       "domain": "nancy.fr",
       "count": 919
     },
     {
-      "domain": "limoges.fr",
-      "count": 909
-    },
-    {
-      "domain": "lyon.fr",
-      "count": 902
+      "domain": "centre-valdeloire.fr",
+      "count": 886
     },
     {
       "domain": "departement06.fr",
@@ -125,89 +141,73 @@
     },
     {
       "domain": "interieur.gouv.fr",
-      "count": 818
+      "count": 861
+    },
+    {
+      "domain": "maine-et-loire.fr",
+      "count": 850
+    },
+    {
+      "domain": "saint-etienne.fr",
+      "count": 841
+    },
+    {
+      "domain": "grandangouleme.fr",
+      "count": 825
+    },
+    {
+      "domain": "manche.fr",
+      "count": 810
+    },
+    {
+      "domain": "sports.gouv.fr",
+      "count": 797
+    },
+    {
+      "domain": "grandest.fr",
+      "count": 796
+    },
+    {
+      "domain": "puy-de-dome.fr",
+      "count": 789
+    },
+    {
+      "domain": "montpellier3m.fr",
+      "count": 775
     },
     {
       "domain": "bordeaux.fr",
       "count": 773
     },
     {
-      "domain": "lillemetropole.fr",
-      "count": 764
-    },
-    {
-      "domain": "centre-valdeloire.fr",
-      "count": 758
-    },
-    {
-      "domain": "grandangouleme.fr",
-      "count": 749
-    },
-    {
-      "domain": "maine-et-loire.fr",
-      "count": 749
-    },
-    {
-      "domain": "manche.fr",
-      "count": 716
-    },
-    {
-      "domain": "lamayenne.fr",
-      "count": 715
-    },
-    {
-      "domain": "saint-etienne.fr",
-      "count": 681
-    },
-    {
-      "domain": "grandest.fr",
-      "count": 680
+      "domain": "gard.fr",
+      "count": 736
     },
     {
       "domain": "esante.gouv.fr",
-      "count": 677
-    },
-    {
-      "domain": "lille.fr",
-      "count": 663
-    },
-    {
-      "domain": "impots.gouv.fr",
-      "count": 654
-    },
-    {
-      "domain": "sports.gouv.fr",
-      "count": 645
-    },
-    {
-      "domain": "puy-de-dome.fr",
-      "count": 626
+      "count": 732
     },
     {
       "domain": "caen.fr",
-      "count": 609
+      "count": 727
     },
     {
-      "domain": "gard.fr",
-      "count": 606
+      "domain": "lenord.fr",
+      "count": 717
     },
     {
-      "domain": "montpellier3m.fr",
-      "count": 580
-    },
-    {
-      "domain": "metropole-rouen-normandie.fr",
-      "count": 575
+      "domain": "francetravail.fr",
+      "count": 711
     },
     {
       "domain": "brest.fr",
-      "count": 573
+      "count": 659
     }
   ],
   "top_target_domains": [
     {
       "domain": "auvergnerhonealpes.fr",
-      "count": 30667
+      "count": 30669
     },
     {
       "domain": "haute-garonne.fr",
@@ -215,11 +215,11 @@
     },
     {
       "domain": "paris.fr",
-      "count": 5145
+      "count": 5147
     },
     {
       "domain": "facebook.com",
-      "count": 4549
+      "count": 4985
     },
     {
       "domain": "skolengo.com",
@@ -231,188 +231,188 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 3038
+      "count": 3296
     },
     {
       "domain": "instagram.com",
-      "count": 2681
+      "count": 2992
     },
     {
       "domain": "data.gouv.fr",
-      "count": 2588
+      "count": 2773
     },
     {
       "domain": "twitter.com",
-      "count": 2455
-    },
-    {
-      "domain": "developpement-durable.gouv.fr",
-      "count": 2243
+      "count": 2685
     },
     {
       "domain": "googleapis.com",
-      "count": 2205
+      "count": 2472
     },
     {
       "domain": "youtube.com",
-      "count": 2170
+      "count": 2428
+    },
+    {
+      "domain": "developpement-durable.gouv.fr",
+      "count": 2407
     },
     {
       "domain": "legifrance.gouv.fr",
-      "count": 2159
+      "count": 2375
     },
     {
       "domain": "github.com",
-      "count": 1696
-    },
-    {
-      "domain": "ac-grenoble.fr",
-      "count": 1445
-    },
-    {
-      "domain": "info.gouv.fr",
-      "count": 1324
-    },
-    {
-      "domain": "rennes.fr",
-      "count": 1292
-    },
-    {
-      "domain": "beta.gouv.fr",
-      "count": 1281
-    },
-    {
-      "domain": "service-public.fr",
-      "count": 1242
+      "count": 1857
     },
     {
       "domain": "education.gouv.fr",
-      "count": 1238
+      "count": 1689
+    },
+    {
+      "domain": "rennes.fr",
+      "count": 1505
+    },
+    {
+      "domain": "beta.gouv.fr",
+      "count": 1457
+    },
+    {
+      "domain": "ac-grenoble.fr",
+      "count": 1447
+    },
+    {
+      "domain": "info.gouv.fr",
+      "count": 1427
+    },
+    {
+      "domain": "service-public.fr",
+      "count": 1399
     },
     {
       "domain": "service-public.gouv.fr",
-      "count": 1105
+      "count": 1190
+    },
+    {
+      "domain": "culture.gouv.fr",
+      "count": 1172
+    },
+    {
+      "domain": "loire-atlantique.fr",
+      "count": 1149
+    },
+    {
+      "domain": "google.com",
+      "count": 1148
+    },
+    {
+      "domain": "jsdelivr.net",
+      "count": 1108
+    },
+    {
+      "domain": "numerique.gouv.fr",
+      "count": 1075
     },
     {
       "domain": "toulouse.fr",
       "count": 1058
     },
     {
-      "domain": "culture.gouv.fr",
-      "count": 1047
-    },
-    {
-      "domain": "google.com",
-      "count": 1027
-    },
-    {
-      "domain": "jsdelivr.net",
-      "count": 1003
-    },
-    {
-      "domain": "numerique.gouv.fr",
-      "count": 986
+      "domain": "cloudflare.com",
+      "count": 1007
     },
     {
       "domain": "ac-lyon.fr",
-      "count": 982
+      "count": 986
     },
     {
       "domain": "ac-clermont.fr",
-      "count": 936
-    },
-    {
-      "domain": "loire-atlantique.fr",
-      "count": 928
-    },
-    {
-      "domain": "cloudflare.com",
-      "count": 920
+      "count": 937
     },
     {
       "domain": "defense.gouv.fr",
-      "count": 868
+      "count": 932
+    },
+    {
+      "domain": "marseille.fr",
+      "count": 879
     },
     {
       "domain": "unpkg.com",
-      "count": 785
+      "count": 851
     },
     {
       "domain": "isere.fr",
-      "count": 763
+      "count": 827
     },
     {
       "domain": "x.com",
-      "count": 760
+      "count": 825
+    },
+    {
+      "domain": "lyon.fr",
+      "count": 791
     },
     {
       "domain": "herault.fr",
       "count": 746
     },
     {
-      "domain": "marseille.fr",
-      "count": 720
-    },
-    {
-      "domain": "interieur.gouv.fr",
-      "count": 632
-    },
-    {
-      "domain": "agriculture.gouv.fr",
-      "count": 622
-    },
-    {
       "domain": "puy-de-dome.fr",
-      "count": 605
+      "count": 685
     },
     {
       "domain": "hautsdefrance.fr",
-      "count": 591
+      "count": 679
     },
     {
-      "domain": "anct.gouv.fr",
-      "count": 584
+      "domain": "interieur.gouv.fr",
+      "count": 665
     },
     {
-      "domain": "gstatic.com",
-      "count": 583
+      "domain": "agriculture.gouv.fr",
+      "count": 655
     },
     {
       "domain": "gouvernement.fr",
-      "count": 578
+      "count": 653
     },
     {
-      "domain": "normandie.fr",
-      "count": 576
-    },
-    {
-      "domain": "lyon.fr",
-      "count": 551
-    },
-    {
-      "domain": "ac-toulouse.fr",
-      "count": 550
-    },
-    {
-      "domain": "europe-en-occitanie.eu",
-      "count": 541
+      "domain": "gstatic.com",
+      "count": 649
     },
     {
       "domain": "bordeaux-metropole.fr",
-      "count": 500
+      "count": 630
+    },
+    {
+      "domain": "anct.gouv.fr",
+      "count": 624
     },
     {
       "domain": "limoges.fr",
-      "count": 498
+      "count": 591
+    },
+    {
+      "domain": "normandie.fr",
+      "count": 579
+    },
+    {
+      "domain": "nice.fr",
+      "count": 579
+    },
+    {
+      "domain": "manche.fr",
+      "count": 563
     }
   ],
   "relationship_types": {
-    "editorial_link": 15712,
-    "script_dependency": 4540,
-    "stylesheet_dependency": 4078,
-    "form_destination": 1691,
-    "image_or_media_dependency": 3504,
-    "font_or_preload_dependency": 685
+    "editorial_link": 15761,
+    "script_dependency": 4547,
+    "stylesheet_dependency": 4084,
+    "form_destination": 1693,
+    "image_or_media_dependency": 3515,
+    "font_or_preload_dependency": 691
   },
-  "generated_at": "2026-08-26T07:35:59.155289+00:00"
+  "generated_at": "2026-08-29T06:35:10.116349+00:00"
 }

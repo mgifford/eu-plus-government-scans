@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T22:34:18.761631+00:00",
+  "generated_at": "2026-08-29T06:35:12.205988+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -198,7 +198,7 @@
     {
       "service": "gstatic.com",
       "countries": 31,
-      "domains": 1572
+      "domains": 1573
     },
     {
       "service": "cloudflare.com",
@@ -218,7 +218,7 @@
     {
       "service": "bootstrapcdn.com",
       "countries": 28,
-      "domains": 578
+      "domains": 579
     },
     {
       "service": "typekit.net",
@@ -636,9 +636,9 @@
       "country_code": "FRANCE",
       "country": "France",
       "service": "gstatic.com",
-      "domains": 114,
+      "domains": 115,
       "scanned_domains": 655,
-      "percent": 17.4
+      "percent": 17.6
     },
     {
       "country_code": "FRANCE",
@@ -668,9 +668,9 @@
       "country_code": "FRANCE",
       "country": "France",
       "service": "bootstrapcdn.com",
-      "domains": 71,
+      "domains": 72,
       "scanned_domains": 655,
-      "percent": 10.8
+      "percent": 11.0
     },
     {
       "country_code": "FRANCE",
