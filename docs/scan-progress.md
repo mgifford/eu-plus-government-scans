@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-08-30 05:28 UTC_
+_Generated: 2026-08-30 05:51 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -15,7 +15,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 |-----------|--------------|-----------|----------|---------|
 | **Combined Reachability** | **59,600 confirmed reachable** | 87,696 | **<span role="img" aria-label="68.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:82px;"></span></span><span class="sm-bar__label">68.0%</span></span>** | — |
 | Social Media | 65,861 scanned (59,499 reachable) | 87,696 | <span role="img" aria-label="75.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:90px;"></span></span><span class="sm-bar__label">75.1%</span></span> | 10.6 days |
-| Technology | 74,458 scanned | 87,696 | <span role="img" aria-label="84.9% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:102px;"></span></span><span class="sm-bar__label">84.9%</span></span> | 10.3 days |
+| Technology | 76,254 scanned | 87,696 | <span role="img" aria-label="87.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:104px;"></span></span><span class="sm-bar__label">87.0%</span></span> | 10.1 days |
 | Lighthouse | 13,291 scanned | 87,696 | <span role="img" aria-label="15.2% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:18px;"></span></span><span class="sm-bar__label">15.2%</span></span> | 22.0 days |
 | Accessibility Statements | 61,031 scanned | 87,696 | <span role="img" aria-label="69.6% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:84px;"></span></span><span class="sm-bar__label">69.6%</span></span> | 10.6 days |
 
@@ -128,7 +128,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Spain | 6,091 | 2026-08-29 |
 | Sweden | 1,702 | 2026-08-21 |
 | Switzerland | 2,123 | 2026-08-15 |
-| United Kingdom | 13,732 | 2026-08-29 |
+| United Kingdom | 15,528 | 2026-08-30 |
 
 ## Lighthouse Scan by Country
 
