@@ -5,7 +5,7 @@
   "top_source_domains": [
     {
       "domain": "castillalamancha.es",
-      "count": 19914
+      "count": 19991
     },
     {
       "domain": "jcyl.es",
@@ -13,7 +13,7 @@
     },
     {
       "domain": "gva.es",
-      "count": 9088
+      "count": 9159
     },
     {
       "domain": "navarra.es",
@@ -211,31 +211,31 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 9832
+      "count": 9873
     },
     {
       "domain": "gva.es",
-      "count": 5646
+      "count": 5713
     },
     {
       "domain": "facebook.com",
-      "count": 2143
+      "count": 2148
     },
     {
       "domain": "twitter.com",
-      "count": 1979
+      "count": 1985
     },
     {
       "domain": "jccm.es",
-      "count": 1833
+      "count": 1841
     },
     {
       "domain": "google.com",
-      "count": 1799
+      "count": 1807
     },
     {
       "domain": "youtube.com",
-      "count": 1792
+      "count": 1795
     },
     {
       "domain": "googleapis.com",
@@ -243,7 +243,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 1554
+      "count": 1555
     },
     {
       "domain": "navarra.es",
@@ -263,7 +263,7 @@
     },
     {
       "domain": "blogspot.com",
-      "count": 635
+      "count": 637
     },
     {
       "domain": "googletagmanager.com",
@@ -291,7 +291,7 @@
     },
     {
       "domain": "google.es",
-      "count": 453
+      "count": 455
     },
     {
       "domain": "flickr.com",
@@ -347,11 +347,11 @@
     },
     {
       "domain": "sharethis.com",
-      "count": 255
+      "count": 256
     },
     {
       "domain": "vimeo.com",
-      "count": 254
+      "count": 255
     },
     {
       "domain": "jsdelivr.net",
@@ -414,5 +414,5 @@
     "form_destination": 1443,
     "font_or_preload_dependency": 155
   },
-  "generated_at": "2026-08-27T22:38:59.343871+00:00"
+  "generated_at": "2026-08-30T04:37:50.966456+00:00"
 }

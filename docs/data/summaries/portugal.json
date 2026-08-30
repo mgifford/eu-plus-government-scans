@@ -48,12 +48,12 @@
       "count": 655
     },
     {
-      "domain": "cm-loule.pt",
-      "count": 580
+      "domain": "parlamento.pt",
+      "count": 592
     },
     {
-      "domain": "parlamento.pt",
-      "count": 569
+      "domain": "cm-loule.pt",
+      "count": 580
     },
     {
       "domain": "cm-pontedelima.pt",
@@ -211,19 +211,19 @@
     },
     {
       "domain": "facebook.com",
-      "count": 2122
+      "count": 2123
     },
     {
       "domain": "youtube.com",
-      "count": 1694
+      "count": 1695
     },
     {
       "domain": "instagram.com",
-      "count": 1664
+      "count": 1665
     },
     {
       "domain": "googletagmanager.com",
-      "count": 1514
+      "count": 1515
     },
     {
       "domain": "google.com",
@@ -250,16 +250,16 @@
       "count": 855
     },
     {
+      "domain": "parlamento.pt",
+      "count": 794
+    },
+    {
       "domain": "portugal.gov.pt",
       "count": 789
     },
     {
-      "domain": "parlamento.pt",
-      "count": 779
-    },
-    {
       "domain": "twitter.com",
-      "count": 774
+      "count": 775
     },
     {
       "domain": "wiremaze.com",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 562
+      "count": 563
     },
     {
       "domain": "cm-porto.pt",
@@ -414,5 +414,5 @@
     "form_destination": 747,
     "image_or_media_dependency": 1127
   },
-  "generated_at": "2026-08-27T22:38:59.039521+00:00"
+  "generated_at": "2026-08-30T04:37:50.787212+00:00"
 }
