@@ -39,24 +39,9 @@
     "total_source_domains": 45,
     "file": "belgium.json"
   },
-  "PORTUGAL": {
-    "total_relationships": 13528,
-    "total_source_domains": 394,
-    "file": "portugal.json"
-  },
-  "NORWAY": {
-    "total_relationships": 872,
-    "total_source_domains": 34,
-    "file": "norway.json"
-  },
-  "NETHERLANDS": {
-    "total_relationships": 2950,
-    "total_source_domains": 73,
-    "file": "netherlands.json"
-  },
-  "SPAIN": {
-    "total_relationships": 16118,
-    "total_source_domains": 233,
-    "file": "spain.json"
+  "POLAND": {
+    "total_relationships": 57405,
+    "total_source_domains": 2329,
+    "file": "poland.json"
   }
 }
