@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T16:55:50.502064+00:00",
+  "generated_at": "2026-08-30T21:26:52.211208+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -203,7 +203,7 @@
     {
       "service": "cloudflare.com",
       "countries": 31,
-      "domains": 1449
+      "domains": 1450
     },
     {
       "service": "jquery.com",
@@ -218,7 +218,7 @@
     {
       "service": "bootstrapcdn.com",
       "countries": 28,
-      "domains": 580
+      "domains": 581
     },
     {
       "service": "typekit.net",
@@ -228,7 +228,7 @@
     {
       "service": "facebook.com",
       "countries": 23,
-      "domains": 206
+      "domains": 207
     },
     {
       "service": "cookiebot.com",
@@ -644,9 +644,9 @@
       "country_code": "FRANCE",
       "country": "France",
       "service": "cloudflare.com",
-      "domains": 112,
+      "domains": 113,
       "scanned_domains": 655,
-      "percent": 17.1
+      "percent": 17.3
     },
     {
       "country_code": "FRANCE",
@@ -668,9 +668,9 @@
       "country_code": "FRANCE",
       "country": "France",
       "service": "bootstrapcdn.com",
-      "domains": 72,
+      "domains": 73,
       "scanned_domains": 655,
-      "percent": 11.0
+      "percent": 11.1
     },
     {
       "country_code": "FRANCE",
@@ -684,9 +684,9 @@
       "country_code": "FRANCE",
       "country": "France",
       "service": "facebook.com",
-      "domains": 9,
+      "domains": 10,
       "scanned_domains": 655,
-      "percent": 1.4
+      "percent": 1.5
     },
     {
       "country_code": "FRANCE",

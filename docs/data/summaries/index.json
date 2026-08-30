@@ -39,9 +39,9 @@
     "total_source_domains": 45,
     "file": "belgium.json"
   },
-  "UNITED_KINGDOM_UK": {
-    "total_relationships": 301647,
-    "total_source_domains": 8549,
-    "file": "united_kingdom_uk.json"
+  "FRANCE": {
+    "total_relationships": 30352,
+    "total_source_domains": 657,
+    "file": "france.json"
   }
 }
