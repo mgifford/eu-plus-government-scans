@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-08-30 08:19 UTC_
+_Generated: 2026-08-30 12:38 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -14,10 +14,10 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
 | **Combined Reachability** | **59,600 confirmed reachable** | 87,696 | **<span role="img" aria-label="68.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:82px;"></span></span><span class="sm-bar__label">68.0%</span></span>** | — |
-| Social Media | 65,861 scanned (59,499 reachable) | 87,696 | <span role="img" aria-label="75.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:90px;"></span></span><span class="sm-bar__label">75.1%</span></span> | 10.7 days |
-| Technology | 76,254 scanned | 87,696 | <span role="img" aria-label="87.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:104px;"></span></span><span class="sm-bar__label">87.0%</span></span> | 10.2 days |
-| Lighthouse | 13,291 scanned | 87,696 | <span role="img" aria-label="15.2% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:18px;"></span></span><span class="sm-bar__label">15.2%</span></span> | 22.1 days |
-| Accessibility Statements | 61,915 scanned | 87,696 | <span role="img" aria-label="70.6% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:85px;"></span></span><span class="sm-bar__label">70.6%</span></span> | 10.6 days |
+| Social Media | 65,861 scanned (59,499 reachable) | 87,696 | <span role="img" aria-label="75.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:90px;"></span></span><span class="sm-bar__label">75.1%</span></span> | 10.9 days |
+| Technology | 77,180 scanned | 87,696 | <span role="img" aria-label="88.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:106px;"></span></span><span class="sm-bar__label">88.0%</span></span> | 10.2 days |
+| Lighthouse | 13,310 scanned | 87,696 | <span role="img" aria-label="15.2% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:18px;"></span></span><span class="sm-bar__label">15.2%</span></span> | 22.2 days |
+| Accessibility Statements | 61,915 scanned | 87,696 | <span role="img" aria-label="70.6% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:85px;"></span></span><span class="sm-bar__label">70.6%</span></span> | 10.8 days |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by any scan type. **Avg Age** shows the mean number of days (or hours) since each URL in that scan type was last scanned — lower is fresher.
 
@@ -119,7 +119,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Malta | 610 | 2026-08-17 |
 | Netherlands | 945 | 2026-08-14 |
 | Norway | 249 | 2026-08-14 |
-| Poland | 7,492 | 2026-08-29 |
+| Poland | 8,418 | 2026-08-30 |
 | Portugal | 3,508 | 2026-08-20 |
 | Cyprus | 29 | 2026-08-14 |
 | Romania | 807 | 2026-08-23 |
@@ -163,7 +163,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Slovakia | 418 | 90 | 87 | 90 | 88 | 2026-08-24 |
 | Slovenia | 208 | 87 | 80 | 89 | 85 | 2026-08-21 |
 | Spain | 133 | 85 | 88 | 87 | 89 | 2026-08-12 |
-| Sweden | 424 | 88 | 91 | 91 | 85 | 2026-08-26 |
+| Sweden | 443 | 87 | 91 | 91 | 85 | 2026-08-30 |
 | Switzerland | 604 | 84 | 90 | 96 | 88 | 2026-08-17 |
 | United Kingdom | 594 | 91 | 93 | 91 | 87 | 2026-08-18 |
 
