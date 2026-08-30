@@ -8,45 +8,45 @@ layout: page
 <div id="sm-tier-pie-container" style="float:right;margin:0 0 1rem 1.5rem;width:260px;max-width:45%;">
 <svg role="img" aria-labelledby="pie-title pie-desc" viewBox="0 0 240 314" width="240" height="314" xmlns="http://www.w3.org/2000/svg">
 <title id="pie-title">Social media tier distribution</title>
-<desc id="pie-desc">Pie chart: social media tier distribution across 66,776 scanned pages. Legacy only: 19,349 (29.0%), Modern only: 256 (0.4%), Mixed: 3,618 (5.4%), No Social: 37,037 (55.5%)</desc>
-<path d="M 120,110 L 120.000,20.000 A 90,90 0 0,1 201.170,148.878 Z" fill="#1a8cd8" stroke="#fff" stroke-width="1"><title>Twitter/X only: 19,349 (32.1%)</title></path>
-<path d="M 120,110 L 201.170,148.878 A 90,90 0 0,1 200.103,151.030 Z" fill="#0085ff" stroke="#fff" stroke-width="1"><title>Modern only: 256 (0.4%)</title></path>
-<path d="M 120,110 L 200.103,151.030 A 90,90 0 0,1 179.357,177.652 Z" fill="#7856ff" stroke="#fff" stroke-width="1"><title>Mixed: 3,618 (6.0%)</title></path>
-<path d="M 120,110 L 179.357,177.652 A 90,90 0 1,1 120.000,20.000 Z" fill="#cccccc" stroke="#fff" stroke-width="1"><title>No Social: 37,037 (61.5%)</title></path>
+<desc id="pie-desc">Pie chart: social media tier distribution across 68,139 scanned pages. Legacy only: 19,774 (29.0%), Modern only: 261 (0.4%), Mixed: 3,661 (5.4%), No Social: 37,861 (55.6%)</desc>
+<path d="M 120,110 L 120.000,20.000 A 90,90 0 0,1 201.136,148.949 Z" fill="#1a8cd8" stroke="#fff" stroke-width="1"><title>Twitter/X only: 19,774 (32.1%)</title></path>
+<path d="M 120,110 L 201.136,148.949 A 90,90 0 0,1 200.069,151.096 Z" fill="#0085ff" stroke="#fff" stroke-width="1"><title>Modern only: 261 (0.4%)</title></path>
+<path d="M 120,110 L 200.069,151.096 A 90,90 0 0,1 179.542,177.489 Z" fill="#7856ff" stroke="#fff" stroke-width="1"><title>Mixed: 3,661 (5.9%)</title></path>
+<path d="M 120,110 L 179.542,177.489 A 90,90 0 1,1 120.000,20.000 Z" fill="#cccccc" stroke="#fff" stroke-width="1"><title>No Social: 37,861 (61.5%)</title></path>
 <rect x="20" y="216" width="14" height="14" fill="#1a8cd8"/>
 <text x="40" y="227" font-size="11" font-family="sans-serif" fill="#333">Twitter/X only (32.1%)</text>
 <rect x="20" y="238" width="14" height="14" fill="#0085ff"/>
 <text x="40" y="249" font-size="11" font-family="sans-serif" fill="#333">Modern only (0.4%)</text>
 <rect x="20" y="260" width="14" height="14" fill="#7856ff"/>
-<text x="40" y="271" font-size="11" font-family="sans-serif" fill="#333">Mixed (6.0%)</text>
+<text x="40" y="271" font-size="11" font-family="sans-serif" fill="#333">Mixed (5.9%)</text>
 <rect x="20" y="282" width="14" height="14" fill="#cccccc"/>
 <text x="40" y="293" font-size="11" font-family="sans-serif" fill="#333">No Social (61.5%)</text>
 </svg>
 <p style="text-align:center;font-size:0.75em;margin:0.3rem 0 0;color:#555;font-style:italic;">Social media tier distribution</p>
 </div>
 
-_Stats as of 2026-08-30 19:19 UTC — last scan: 2026-08-30_
+_Stats as of 2026-08-30 20:06 UTC — last scan: 2026-08-30_
 
-**89** scan batches run
+**90** scan batches run
 
-**66,770** of **87,696** available pages scanned (**76.1%** coverage)
-**60,254** of **66,770** scanned pages were reachable (**90.2%**)
+**68,133** of **87,696** available pages scanned (**77.7%** coverage)
+**61,551** of **68,133** scanned pages were reachable (**90.3%**)
 
 **Legacy social media** (older, centralised platforms):
 
 | Platform | Pages with link | % of scanned | % of reachable |
 |----------|----------------|:------------:|:--------------:|
-| 🐦 Twitter | **10,787** | 16.2% | 17.9% |
-| ✖ X | **2,520** | 3.8% | 4.2% |
-| 👍 Facebook | **20,214** | 30.3% | 33.5% |
-| 💼 LinkedIn | **8,148** | 12.2% | 13.5% |
+| 🐦 Twitter | **11,042** | 16.2% | 17.9% |
+| ✖ X | **2,572** | 3.8% | 4.2% |
+| 👍 Facebook | **20,628** | 30.3% | 33.5% |
+| 💼 LinkedIn | **8,304** | 12.2% | 13.5% |
 
 **Modern / open social media** (decentralised or open platforms):
 
 | Platform | Pages with link | % of scanned | % of reachable |
 |----------|----------------|:------------:|:--------------:|
-| 🦋 Bluesky | **704** | 1.1% | 1.2% |
-| 🐘 Mastodon / Fediverse | **3,407** | 5.1% | 5.7% |
+| 🦋 Bluesky | **715** | 1.0% | 1.2% |
+| 🐘 Mastodon / Fediverse | **3,444** | 5.1% | 5.6% |
 
 <div style="clear:both;"></div>
 
@@ -73,7 +73,7 @@ Countries ranked by **Digital Sovereignty Score** — the percentage of reachabl
 | 11 | Switzerland | 65.9% | 1,341 | 28 | 34.1% | 🥉 Growing |
 | 12 | Portugal | 65.6% | 1,856 | 2 | 34.4% | 🥉 Growing |
 | 13 | Slovenia | 65.5% | 135 | 0 | 34.5% | 🥉 Growing |
-| 14 | United Kingdom | 64.1% | 5,119 | 12 | 35.9% | 🥉 Growing |
+| 14 | United Kingdom | 64.0% | 5,943 | 17 | 36.0% | 🥉 Growing |
 | 15 | Denmark | 63.4% | 950 | 0 | 36.6% | 🥉 Growing |
 | 16 | Netherlands | 63.2% | 559 | 10 | 36.8% | 🥉 Growing |
 | 17 | Czechia | 63.0% | 498 | 2 | 37.0% | 🥉 Growing |
@@ -132,8 +132,8 @@ Countries ranked by **Digital Sovereignty Score** — the percentage of reachabl
 | Spain | 5,298 | 6,091 | 4,379 | 58.0% | 2,537 | 1,587 | 1,324 | 366 | 1,402 | 416 | 4 | 251 | 35 | 224 | Aug 2026 |
 | Sweden | 1,702 | 1,702 | 1,475 | 66.6% | 979 | 439 | 74 | 21 | 405 | 350 | 4 | 53 | 14 | 44 | Aug 2026 |
 | Switzerland | 2,123 | 2,123 | 2,076 | 65.9% | 1,341 | 559 | 227 | 222 | 249 | 559 | 28 | 148 | 50 | 141 | Aug 2026 |
-| United Kingdom | 8,689 | 19,511 | 8,010 | 64.1% | 5,119 | 2,613 | 1,796 | 399 | 2,536 | 1,112 | 12 | 266 | 27 | 267 | Aug 2026 |
-| **Total** | **66,776** | **87,696** | **60,260** | **61.9%** | **37,037** | **19,349** | **10,793** | **2,526** | **20,220** | **8,148** | **256** | **3,618** | **704** | **3,407** | — |
+| United Kingdom | 10,052 | 19,511 | 9,307 | 64.0% | 5,943 | 3,038 | 2,051 | 451 | 2,950 | 1,268 | 17 | 309 | 38 | 304 | Aug 2026 |
+| **Total** | **68,139** | **87,696** | **61,557** | **61.9%** | **37,861** | **19,774** | **11,048** | **2,578** | **20,634** | **8,304** | **261** | **3,661** | **715** | **3,444** | — |
 
 > Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open. Full machine-readable data is available as the [social-media-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
 
