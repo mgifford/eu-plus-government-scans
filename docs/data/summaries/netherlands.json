@@ -1,6 +1,6 @@
 {
   "country_code": "NETHERLANDS",
-  "total_relationships": 2950,
+  "total_relationships": 2952,
   "total_source_domains": 73,
   "top_source_domains": [
     {
@@ -93,7 +93,7 @@
     },
     {
       "domain": "alphenaandenrijn.nl",
-      "count": 200
+      "count": 202
     },
     {
       "domain": "leeuwarden.nl",
@@ -342,11 +342,11 @@
       "count": 104
     },
     {
-      "domain": "siteimproveanalytics.com",
-      "count": 100
+      "domain": "alphenaandenrijn.nl",
+      "count": 102
     },
     {
-      "domain": "alphenaandenrijn.nl",
+      "domain": "siteimproveanalytics.com",
       "count": 100
     },
     {
@@ -411,8 +411,8 @@
     "font_or_preload_dependency": 119,
     "form_destination": 196,
     "image_or_media_dependency": 304,
-    "script_dependency": 559,
-    "stylesheet_dependency": 444
+    "script_dependency": 560,
+    "stylesheet_dependency": 445
   },
-  "generated_at": "2026-08-30T04:37:50.902477+00:00"
+  "generated_at": "2026-08-31T04:40:01.267598+00:00"
 }

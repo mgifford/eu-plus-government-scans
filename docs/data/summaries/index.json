@@ -39,9 +39,34 @@
     "total_source_domains": 45,
     "file": "belgium.json"
   },
-  "FRANCE": {
-    "total_relationships": 30352,
-    "total_source_domains": 657,
-    "file": "france.json"
+  "CANADA": {
+    "total_relationships": 301772,
+    "total_source_domains": 8549,
+    "file": "canada.json"
+  },
+  "FINLAND": {
+    "total_relationships": 959,
+    "total_source_domains": 41,
+    "file": "finland.json"
+  },
+  "NETHERLANDS": {
+    "total_relationships": 2952,
+    "total_source_domains": 73,
+    "file": "netherlands.json"
+  },
+  "GERMANY": {
+    "total_relationships": 22090,
+    "total_source_domains": 223,
+    "file": "germany.json"
+  },
+  "REPUBLIC_OF_CYPRUS": {
+    "total_relationships": 301772,
+    "total_source_domains": 8549,
+    "file": "republic_of_cyprus.json"
+  },
+  "ROMANIA": {
+    "total_relationships": 1118,
+    "total_source_domains": 16,
+    "file": "romania.json"
   }
 }
