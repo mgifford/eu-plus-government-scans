@@ -5,13 +5,13 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-08-31 22:32 UTC — last scan: 2026-08-31_
+_Stats as of 2026-08-31 23:38 UTC — last scan: 2026-08-31_
 
-**91** scan batches run
+**92** scan batches run
 
-**83,373** of **87,696** available pages scanned (**95.1%** coverage)
-**16,921** pages with technology detections (**20.3%** of scanned)
-**325** unique technologies identified
+**84,650** of **87,696** available pages scanned (**96.5%** coverage)
+**18,129** pages with technology detections (**21.4%** of scanned)
+**336** unique technologies identified
 
 ---
 
@@ -41,7 +41,7 @@ _Stats as of 2026-08-31 22:32 UTC — last scan: 2026-08-31_
 | Malta | 610 | 0 | 610 | 2026-08-17 |
 | Netherlands | 945 | 0 | 945 | 2026-08-14 |
 | Norway | 249 | 0 | 249 | 2026-08-14 |
-| Poland | 10,634 | 4,084 | 14,951 | 2026-08-31 |
+| Poland | 11,911 | 5,292 | 14,951 | 2026-08-31 |
 | Portugal | 3,508 | 0 | 3,508 | 2026-08-20 |
 | Cyprus | 29 | 0 | 29 | 2026-08-14 |
 | Romania | 807 | 0 | 807 | 2026-08-23 |
@@ -60,46 +60,46 @@ _Stats as of 2026-08-31 22:32 UTC — last scan: 2026-08-31_
 
 | # | Technology | Pages | Categories |
 |--:|-----------|------:|-----------|
-| 1 | jQuery | **8,697** | JavaScript libraries |
-| 2 | PHP | **5,978** | Programming languages |
-| 3 | Google Tag Manager | **4,777** | Tag managers |
-| 4 | Font Awesome | **4,712** | Font scripts |
-| 5 | Google Font API | **4,249** | Font scripts |
-| 6 | MySQL | **3,810** | Databases |
-| 7 | WordPress | **3,767** | Blogs, CMS |
-| 8 | Bootstrap | **3,683** | UI frameworks |
-| 9 | Apache | **3,551** | Web servers |
-| 10 | jQuery Migrate | **3,292** | JavaScript libraries |
-| 11 | Nginx | **2,895** | Reverse proxies, Web servers |
-| 12 | Cloudflare | **2,357** | CDN |
-| 13 | reCAPTCHA | **1,749** | Security |
+| 1 | jQuery | **9,680** | JavaScript libraries |
+| 2 | PHP | **6,594** | Programming languages |
+| 3 | Google Tag Manager | **5,195** | Tag managers |
+| 4 | Font Awesome | **5,115** | Font scripts |
+| 5 | Google Font API | **4,856** | Font scripts |
+| 6 | MySQL | **4,173** | Databases |
+| 7 | Bootstrap | **4,140** | UI frameworks |
+| 8 | WordPress | **4,130** | Blogs, CMS |
+| 9 | Apache | **3,955** | Web servers |
+| 10 | jQuery Migrate | **3,649** | JavaScript libraries |
+| 11 | Nginx | **3,141** | Reverse proxies, Web servers |
+| 12 | Cloudflare | **2,416** | CDN |
+| 13 | reCAPTCHA | **1,858** | Security |
 | 14 | Amazon Web Services | **1,741** | PaaS |
 | 15 | Amazon Cloudfront | **1,733** | CDN |
-| 16 | Windows Server | **1,401** | Operating systems |
-| 17 | IIS | **1,390** | Web servers |
-| 18 | Microsoft ASP.NET | **1,326** | Web frameworks |
-| 19 | Yoast SEO | **1,177** | SEO |
-| 20 | Drupal | **1,141** | CMS |
+| 16 | Windows Server | **1,409** | Operating systems |
+| 17 | IIS | **1,396** | Web servers |
+| 18 | Microsoft ASP.NET | **1,332** | Web frameworks |
+| 19 | Yoast SEO | **1,320** | SEO |
+| 20 | LiteSpeed | **1,243** | Web servers |
 
 ### Top Technology Categories
 
 | # | Category | Pages |
 |--:|---------|------:|
-| 1 | JavaScript libraries | **17,592** |
-| 2 | Font scripts | **9,301** |
-| 3 | Web servers | **9,191** |
-| 4 | Programming languages | **6,655** |
-| 5 | CMS | **6,068** |
-| 6 | CDN | **5,368** |
-| 7 | UI frameworks | **5,151** |
-| 8 | Tag managers | **4,785** |
-| 9 | Databases | **3,991** |
-| 10 | Blogs | **3,871** |
-| 11 | Reverse proxies | **2,934** |
-| 12 | Operating systems | **1,994** |
-| 13 | Security | **1,970** |
-| 14 | PaaS | **1,902** |
-| 15 | Web frameworks | **1,602** |
+| 1 | JavaScript libraries | **19,559** |
+| 2 | Font scripts | **10,331** |
+| 3 | Web servers | **10,152** |
+| 4 | Programming languages | **7,303** |
+| 5 | CMS | **6,658** |
+| 6 | UI frameworks | **5,743** |
+| 7 | CDN | **5,524** |
+| 8 | Tag managers | **5,203** |
+| 9 | Databases | **4,354** |
+| 10 | Blogs | **4,244** |
+| 11 | Reverse proxies | **3,180** |
+| 12 | Security | **2,081** |
+| 13 | Operating systems | **2,067** |
+| 14 | PaaS | **1,904** |
+| 15 | JavaScript frameworks | **1,713** |
 
 📥 Machine-readable results: [Download machine-readable technology data (JSON)](technology-data.json)
 
