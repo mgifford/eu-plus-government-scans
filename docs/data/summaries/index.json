@@ -39,9 +39,19 @@
     "total_source_domains": 45,
     "file": "belgium.json"
   },
-  "ITALY": {
-    "total_relationships": 16210,
-    "total_source_domains": 151,
-    "file": "italy.json"
+  "PORTUGAL": {
+    "total_relationships": 13530,
+    "total_source_domains": 394,
+    "file": "portugal.json"
+  },
+  "REPUBLIC_OF_CYPRUS": {
+    "total_relationships": 301822,
+    "total_source_domains": 8549,
+    "file": "republic_of_cyprus.json"
+  },
+  "ROMANIA": {
+    "total_relationships": 1118,
+    "total_source_domains": 16,
+    "file": "romania.json"
   }
 }
