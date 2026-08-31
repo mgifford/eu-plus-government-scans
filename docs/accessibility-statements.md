@@ -5,14 +5,14 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-08-31 16:55 UTC — last scan: 2026-08-31_
+_Stats as of 2026-08-31 17:16 UTC — last scan: 2026-08-31_
 
-**180** scan batches run
+**181** scan batches run
 
-**64,972** of **87,696** available pages scanned (**74.1%** coverage)
-**59,192** of **64,972** scanned pages were reachable (**91.1%**)
-**27,432** of **59,192** reachable pages have an accessibility statement (**46.3%**)
-**24,168** pages have the statement link in the footer (**88.1%** of pages with a statement)
+**65,972** of **87,696** available pages scanned (**75.2%** coverage)
+**60,045** of **65,972** scanned pages were reachable (**91.0%**)
+**27,892** of **60,045** reachable pages have an accessibility statement (**46.5%**)
+**24,574** pages have the statement link in the footer (**88.1%** of pages with a statement)
 
 📥 Machine-readable results are available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
 
@@ -54,11 +54,11 @@ Each country entry in the JSON file includes page-level evidence for pages with 
 | Romania | 807 | 807 | 349 | 30 | 10 | 8.6% | Aug 2026 |
 | Slovakia | 442 | 442 | 413 | 185 | 166 | 44.8% | Aug 2026 |
 | Slovenia | 214 | 214 | 207 | 116 | 81 | 56.0% | Aug 2026 |
-| Spain | 5,091 | 6,091 | 4,278 | 1,896 | 1,667 | 44.3% | Aug 2026 |
+| Spain | 6,091 | 6,091 | 5,131 | 2,356 | 2,073 | 45.9% | Aug 2026 |
 | Sweden | 1,702 | 1,702 | 1,556 | 895 | 810 | 57.5% | Aug 2026 |
 | Switzerland | 2,123 | 2,123 | 2,076 | 1,026 | 1,025 | 49.4% | Aug 2026 |
 | United Kingdom | 8,073 | 19,511 | 7,439 | 4,061 | 3,747 | 54.6% | Aug 2026 |
-| **Total** | **64,978** | **87,696** | **59,198** | **27,438** | **24,174** | **46.3%** | — |
+| **Total** | **65,978** | **87,696** | **60,051** | **27,898** | **24,580** | **46.5%** | — |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
