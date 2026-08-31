@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T21:26:52.211208+00:00",
+  "generated_at": "2026-08-31T04:40:04.507984+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -208,7 +208,7 @@
     {
       "service": "jquery.com",
       "countries": 30,
-      "domains": 616
+      "domains": 617
     },
     {
       "service": "unpkg.com",
@@ -1452,9 +1452,9 @@
       "country_code": "GERMANY",
       "country": "Germany",
       "service": "jquery.com",
-      "domains": 9,
+      "domains": 10,
       "scanned_domains": 215,
-      "percent": 4.2
+      "percent": 4.7
     },
     {
       "country_code": "GERMANY",
