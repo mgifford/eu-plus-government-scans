@@ -1,6 +1,6 @@
 {
   "country_code": "PORTUGAL",
-  "total_relationships": 13528,
+  "total_relationships": 13530,
   "total_source_domains": 394,
   "top_source_domains": [
     {
@@ -68,6 +68,10 @@
       "count": 532
     },
     {
+      "domain": "cm-tomar.pt",
+      "count": 528
+    },
+    {
       "domain": "cm-vfxira.pt",
       "count": 524
     },
@@ -78,6 +82,10 @@
     {
       "domain": "dgterritorio.gov.pt",
       "count": 506
+    },
+    {
+      "domain": "cm-constancia.pt",
+      "count": 500
     },
     {
       "domain": "cm-estarreja.pt",
@@ -114,6 +122,10 @@
     {
       "domain": "cm-sintra.pt",
       "count": 438
+    },
+    {
+      "domain": "cm-entroncamento.pt",
+      "count": 435
     },
     {
       "domain": "cm-odivelas.pt",
@@ -184,50 +196,38 @@
       "count": 348
     },
     {
-      "domain": "cm-tomar.pt",
-      "count": 346
-    },
-    {
       "domain": "cm-mafra.pt",
       "count": 341
     },
     {
       "domain": "portaldasfinancas.gov.pt",
       "count": 339
-    },
-    {
-      "domain": "cm-amadora.pt",
-      "count": 337
-    },
-    {
-      "domain": "cm-leiria.pt",
-      "count": 330
     }
   ],
   "top_target_domains": [
     {
       "domain": "googleapis.com",
-      "count": 2347
+      "count": 2384
     },
     {
       "domain": "facebook.com",
-      "count": 2123
+      "count": 2156
     },
     {
       "domain": "youtube.com",
-      "count": 1695
+      "count": 1719
     },
     {
       "domain": "instagram.com",
-      "count": 1665
+      "count": 1692
     },
     {
       "domain": "googletagmanager.com",
-      "count": 1515
+      "count": 1526
     },
     {
       "domain": "google.com",
-      "count": 1478
+      "count": 1481
     },
     {
       "domain": "azores.gov.pt",
@@ -238,12 +238,12 @@
       "count": 1209
     },
     {
-      "domain": "cloudflare.com",
-      "count": 867
+      "domain": "livroreclamacoes.pt",
+      "count": 875
     },
     {
-      "domain": "livroreclamacoes.pt",
-      "count": 863
+      "domain": "cloudflare.com",
+      "count": 874
     },
     {
       "domain": "justica.gov.pt",
@@ -251,19 +251,19 @@
     },
     {
       "domain": "parlamento.pt",
-      "count": 794
+      "count": 797
     },
     {
       "domain": "portugal.gov.pt",
-      "count": 789
+      "count": 792
     },
     {
       "domain": "twitter.com",
-      "count": 775
+      "count": 791
     },
     {
       "domain": "wiremaze.com",
-      "count": 772
+      "count": 775
     },
     {
       "domain": "jsdelivr.net",
@@ -271,7 +271,7 @@
     },
     {
       "domain": "presidencia.pt",
-      "count": 695
+      "count": 698
     },
     {
       "domain": "gstatic.com",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 563
+      "count": 571
     },
     {
       "domain": "cm-porto.pt",
@@ -291,7 +291,7 @@
     },
     {
       "domain": "anmp.pt",
-      "count": 448
+      "count": 451
     },
     {
       "domain": "w3.org",
@@ -370,6 +370,10 @@
       "count": 236
     },
     {
+      "domain": "cm-constancia.pt",
+      "count": 227
+    },
+    {
       "domain": "cm-feira.pt",
       "count": 227
     },
@@ -400,19 +404,15 @@
     {
       "domain": "cm-tvedras.pt",
       "count": 210
-    },
-    {
-      "domain": "cm-gondomar.pt",
-      "count": 209
     }
   ],
   "relationship_types": {
     "font_or_preload_dependency": 432,
-    "script_dependency": 2164,
-    "editorial_link": 7487,
+    "script_dependency": 2165,
+    "editorial_link": 7488,
     "stylesheet_dependency": 1571,
     "form_destination": 747,
     "image_or_media_dependency": 1127
   },
-  "generated_at": "2026-08-30T04:37:50.787212+00:00"
+  "generated_at": "2026-08-31T23:19:34.446193+00:00"
 }
