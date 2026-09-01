@@ -1,23 +1,23 @@
 {
   "country_code": "POLAND",
-  "total_relationships": 57405,
+  "total_relationships": 57570,
   "total_source_domains": 2329,
   "top_source_domains": [
     {
       "domain": "krakow.pl",
-      "count": 39315
+      "count": 45540
     },
     {
       "domain": "poznan.pl",
-      "count": 26098
+      "count": 30880
     },
     {
       "domain": "lodz.pl",
-      "count": 15869
+      "count": 22870
     },
     {
       "domain": "gdansk.pl",
-      "count": 5654
+      "count": 7507
     },
     {
       "domain": "torun.pl",
@@ -120,6 +120,10 @@
       "count": 257
     },
     {
+      "domain": "ztgk.pl",
+      "count": 256
+    },
+    {
       "domain": "powiatmysliborski.pl",
       "count": 241
     },
@@ -198,52 +202,48 @@
     {
       "domain": "powiatwlodawski.pl",
       "count": 171
-    },
-    {
-      "domain": "logistyk-zsl.wroclaw.pl",
-      "count": 170
     }
   ],
   "top_target_domains": [
     {
       "domain": "krakow.pl",
-      "count": 19530
+      "count": 22283
     },
     {
       "domain": "poznan.pl",
-      "count": 13260
-    },
-    {
-      "domain": "googleapis.com",
-      "count": 9615
+      "count": 15425
     },
     {
       "domain": "lodz.pl",
-      "count": 9127
+      "count": 12763
+    },
+    {
+      "domain": "googleapis.com",
+      "count": 10583
     },
     {
       "domain": "facebook.com",
-      "count": 8642
-    },
-    {
-      "domain": "googletagmanager.com",
-      "count": 3432
-    },
-    {
-      "domain": "instagram.com",
-      "count": 3407
+      "count": 9497
     },
     {
       "domain": "gdansk.pl",
-      "count": 3404
+      "count": 4379
     },
     {
-      "domain": "google.com",
-      "count": 3320
+      "domain": "instagram.com",
+      "count": 3821
+    },
+    {
+      "domain": "googletagmanager.com",
+      "count": 3774
     },
     {
       "domain": "youtube.com",
-      "count": 3294
+      "count": 3708
+    },
+    {
+      "domain": "google.com",
+      "count": 3605
     },
     {
       "domain": "uni.opole.pl",
@@ -251,55 +251,67 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 2389
+      "count": 2610
     },
     {
       "domain": "ug.edu.pl",
-      "count": 2218
+      "count": 2219
     },
     {
       "domain": "torun.pl",
       "count": 2056
     },
     {
+      "domain": "jsdelivr.net",
+      "count": 1958
+    },
+    {
+      "domain": "cloudflare.com",
+      "count": 1804
+    },
+    {
       "domain": "tarnow.pl",
       "count": 1720
     },
     {
-      "domain": "jsdelivr.net",
-      "count": 1644
-    },
-    {
-      "domain": "cloudflare.com",
-      "count": 1630
-    },
-    {
-      "domain": "gdynia.pl",
-      "count": 1344
+      "domain": "linkedin.com",
+      "count": 1389
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 1291
-    },
-    {
-      "domain": "linkedin.com",
-      "count": 1187
-    },
-    {
-      "domain": "www.gov.pl",
-      "count": 1184
+      "count": 1389
     },
     {
       "domain": "twitter.com",
-      "count": 1167
+      "count": 1368
+    },
+    {
+      "domain": "gdynia.pl",
+      "count": 1346
+    },
+    {
+      "domain": "www.gov.pl",
+      "count": 1284
     },
     {
       "domain": "fontawesome.com",
-      "count": 991
+      "count": 1099
     },
     {
       "domain": "mixbet.radom.pl",
       "count": 977
+    },
+    {
+      "domain": "repertuary.pl",
+      "count": 946
+    },
+    {
+      "domain": "unpkg.com",
+      "count": 828
+    },
+    {
+      "domain": "bip.gov.pl",
+      "count": 786
     },
     {
       "domain": "edu.bydgoszcz.pl",
@@ -310,28 +322,20 @@
       "count": 758
     },
     {
-      "domain": "bip.gov.pl",
-      "count": 722
-    },
-    {
-      "domain": "unpkg.com",
-      "count": 713
-    },
-    {
-      "domain": "repertuary.pl",
-      "count": 709
-    },
-    {
       "domain": "wordpress.org",
-      "count": 695
-    },
-    {
-      "domain": "jquery.com",
-      "count": 635
+      "count": 753
     },
     {
       "domain": "goo.gl",
-      "count": 631
+      "count": 697
+    },
+    {
+      "domain": "jquery.com",
+      "count": 672
+    },
+    {
+      "domain": "tiktok.com",
+      "count": 616
     },
     {
       "domain": "gorzow.pl",
@@ -339,19 +343,19 @@
     },
     {
       "domain": "vulcan.net.pl",
-      "count": 567
+      "count": 577
     },
     {
       "domain": "epuap.gov.pl",
-      "count": 523
-    },
-    {
-      "domain": "tiktok.com",
-      "count": 521
+      "count": 557
     },
     {
       "domain": "edupage.org",
-      "count": 487
+      "count": 553
+    },
+    {
+      "domain": "librus.pl",
+      "count": 523
     },
     {
       "domain": "ursynow.warszawa.pl",
@@ -362,28 +366,32 @@
       "count": 475
     },
     {
-      "domain": "librus.pl",
-      "count": 470
-    },
-    {
       "domain": "x.com",
-      "count": 413
+      "count": 432
     },
     {
       "domain": "wp.com",
-      "count": 379
+      "count": 391
+    },
+    {
+      "domain": "cookiedatabase.org",
+      "count": 388
     },
     {
       "domain": "uj.edu.pl",
-      "count": 356
+      "count": 377
+    },
+    {
+      "domain": "migam.org",
+      "count": 349
     },
     {
       "domain": "sopot.pl",
       "count": 342
     },
     {
-      "domain": "cookiedatabase.org",
-      "count": 338
+      "domain": "witkac.pl",
+      "count": 341
     },
     {
       "domain": "policja.pl",
@@ -394,25 +402,17 @@
       "count": 324
     },
     {
-      "domain": "witkac.pl",
-      "count": 277
-    },
-    {
       "domain": "google.pl",
-      "count": 274
-    },
-    {
-      "domain": "wroc.pl",
-      "count": 270
+      "count": 305
     }
   ],
   "relationship_types": {
-    "editorial_link": 30968,
-    "form_destination": 3117,
-    "image_or_media_dependency": 6270,
-    "script_dependency": 8200,
-    "stylesheet_dependency": 7174,
-    "font_or_preload_dependency": 1676
+    "editorial_link": 31055,
+    "form_destination": 3124,
+    "image_or_media_dependency": 6290,
+    "script_dependency": 8221,
+    "stylesheet_dependency": 7195,
+    "font_or_preload_dependency": 1685
   },
-  "generated_at": "2026-08-30T12:08:49.322828+00:00"
+  "generated_at": "2026-09-01T16:56:20.110932+00:00"
 }
