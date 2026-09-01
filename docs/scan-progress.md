@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-09-01 12:24 UTC_
+_Generated: 2026-09-01 14:12 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -13,11 +13,11 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
-| **Combined Reachability** | **65,029 confirmed reachable** | 87,696 | **<span role="img" aria-label="74.2% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:89px;"></span></span><span class="sm-bar__label">74.2%</span></span>** | — |
-| Social Media | 72,086 scanned (64,928 reachable) | 87,696 | <span role="img" aria-label="82.2% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:99px;"></span></span><span class="sm-bar__label">82.2%</span></span> | 11.9 days |
-| Technology | 86,869 scanned | 87,696 | <span role="img" aria-label="99.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:119px;"></span></span><span class="sm-bar__label">99.1%</span></span> | 11.0 days |
+| **Combined Reachability** | **66,680 confirmed reachable** | 87,696 | **<span role="img" aria-label="76.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:91px;"></span></span><span class="sm-bar__label">76.0%</span></span>** | — |
+| Social Media | 73,793 scanned (66,579 reachable) | 87,696 | <span role="img" aria-label="84.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:101px;"></span></span><span class="sm-bar__label">84.1%</span></span> | 11.7 days |
+| Technology | 86,869 scanned | 87,696 | <span role="img" aria-label="99.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:119px;"></span></span><span class="sm-bar__label">99.1%</span></span> | 11.1 days |
 | Lighthouse | 13,476 scanned | 87,696 | <span role="img" aria-label="15.4% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:18px;"></span></span><span class="sm-bar__label">15.4%</span></span> | 23.1 days |
-| Accessibility Statements | 68,549 scanned | 87,696 | <span role="img" aria-label="78.2% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:94px;"></span></span><span class="sm-bar__label">78.2%</span></span> | 12.1 days |
+| Accessibility Statements | 68,549 scanned | 87,696 | <span role="img" aria-label="78.2% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:94px;"></span></span><span class="sm-bar__label">78.2%</span></span> | 12.2 days |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by any scan type. **Avg Age** shows the mean number of days (or hours) since each URL in that scan type was last scanned — lower is fresher.
 
@@ -87,7 +87,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Spain | 6,091 | 6,091 | 5,039 | 1,834 | 11 | 348 | 2,846 | 1,563 | 460 | 62 | 316 | Aug 2026 |
 | Sweden | 1,702 | 1,702 | 1,475 | 439 | 4 | 53 | 979 | 74 | 21 | 14 | 44 | Aug 2026 |
 | Switzerland | 2,123 | 2,123 | 2,076 | 559 | 28 | 148 | 1,341 | 227 | 222 | 50 | 141 | Aug 2026 |
-| United Kingdom | 10,309 | 19,511 | 9,559 | 3,120 | 17 | 321 | 6,101 | 2,086 | 464 | 41 | 313 | Aug 2026 |
+| United Kingdom | 12,016 | 19,511 | 11,210 | 3,705 | 17 | 379 | 7,109 | 2,377 | 547 | 48 | 368 | Aug 2026 – Sep 2026 |
 
 > **Tier columns** (Twitter-only / Modern / Mixed / No Social) classify each page by its overall social media presence. **Platform columns** (Twitter / X / Bluesky / Mastodon) count pages with at least one link to that platform — a page may appear in more than one platform column.
 
