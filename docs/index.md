@@ -11,17 +11,17 @@ power them, including which third-party JavaScript services they rely on.
 
 <!-- SCAN_PROGRESS_START -->
 
-_Progress as of 2026-09-01 05:07 UTC_
+_Progress as of 2026-09-01 05:14 UTC_
 
 | Scan Type | Pages Scanned | Coverage | Avg Age |
 |-----------|--------------|----------|---------|
-| **Combined Reachability** | **64,184 confirmed reachable** | **<span role="img" aria-label="73.2% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:88px;"></span></span><span class="sm-bar__label">73.2%</span></span>** | — |
-| Social Media | 71,132 scanned (64,083 reachable) | <span role="img" aria-label="81.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:97px;"></span></span><span class="sm-bar__label">81.1%</span></span> | 11.7 days |
+| **Combined Reachability** | **65,029 confirmed reachable** | **<span role="img" aria-label="74.2% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:89px;"></span></span><span class="sm-bar__label">74.2%</span></span>** | — |
+| Social Media | 72,086 scanned (64,928 reachable) | <span role="img" aria-label="82.2% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:99px;"></span></span><span class="sm-bar__label">82.2%</span></span> | 11.6 days |
 | Technology | 84,656 scanned | <span role="img" aria-label="96.5% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:116px;"></span></span><span class="sm-bar__label">96.5%</span></span> | 11.0 days |
 | Lighthouse | 13,468 scanned | <span role="img" aria-label="15.4% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:18px;"></span></span><span class="sm-bar__label">15.4%</span></span> | 22.9 days |
 | Accessibility Statements | 67,279 scanned | <span role="img" aria-label="76.7% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:92px;"></span></span><span class="sm-bar__label">76.7%</span></span> | 11.9 days |
 
-**32 countries** with scan data · **64,184** of **87,696** available pages confirmed reachable. See the [Scan Progress Report](scan-progress.md) for full details.
+**32 countries** with scan data · **65,029** of **87,696** available pages confirmed reachable. See the [Scan Progress Report](scan-progress.md) for full details.
 
 <!-- SCAN_PROGRESS_END -->
 
