@@ -1,101 +1,101 @@
 {
-  "generated_at": "2026-09-01 05:14 UTC",
+  "generated_at": "2026-09-01 05:35 UTC",
   "base_url": "https://mgifford.github.io/eu-plus-government-scans/",
   "note": "Compact cross-reference index: technology → page count, categories, and per-country page counts. For full per-URL drilldown data see the technology-data.json workflow artifact.",
   "by_technology": {
     "jQuery": {
-      "pages": 9680,
+      "pages": 10541,
       "categories": [
         "JavaScript libraries"
       ],
       "by_country": {
         "FRANCE": 780,
         "ITALY": 252,
-        "POLAND": 4039,
+        "POLAND": 4900,
         "SPAIN": 737,
         "UNITED_KINGDOM_UK": 3872
       }
     },
     "PHP": {
-      "pages": 6594,
+      "pages": 7173,
       "categories": [
         "Programming languages"
       ],
       "by_country": {
         "FRANCE": 959,
         "ITALY": 65,
-        "POLAND": 2903,
+        "POLAND": 3482,
         "SPAIN": 243,
         "UNITED_KINGDOM_UK": 2424
       }
     },
-    "Google Tag Manager": {
-      "pages": 5195,
-      "categories": [
-        "Tag managers"
-      ],
-      "by_country": {
-        "FRANCE": 194,
-        "ITALY": 23,
-        "POLAND": 1475,
-        "SPAIN": 345,
-        "UNITED_KINGDOM_UK": 3158
-      }
-    },
     "Font Awesome": {
-      "pages": 5115,
+      "pages": 5546,
       "categories": [
         "Font scripts"
       ],
       "by_country": {
         "FRANCE": 277,
         "ITALY": 91,
-        "POLAND": 2282,
+        "POLAND": 2713,
         "SPAIN": 330,
         "UNITED_KINGDOM_UK": 2135
       }
     },
+    "Google Tag Manager": {
+      "pages": 5488,
+      "categories": [
+        "Tag managers"
+      ],
+      "by_country": {
+        "FRANCE": 194,
+        "ITALY": 23,
+        "POLAND": 1768,
+        "SPAIN": 345,
+        "UNITED_KINGDOM_UK": 3158
+      }
+    },
     "Google Font API": {
-      "pages": 4856,
+      "pages": 5403,
       "categories": [
         "Font scripts"
       ],
       "by_country": {
         "FRANCE": 254,
         "ITALY": 26,
-        "POLAND": 2533,
+        "POLAND": 3080,
         "SPAIN": 279,
         "UNITED_KINGDOM_UK": 1764
       }
     },
-    "MySQL": {
-      "pages": 4173,
-      "categories": [
-        "Databases"
-      ],
-      "by_country": {
-        "FRANCE": 292,
-        "ITALY": 19,
-        "POLAND": 2118,
-        "SPAIN": 86,
-        "UNITED_KINGDOM_UK": 1658
-      }
-    },
     "Bootstrap": {
-      "pages": 4140,
+      "pages": 4519,
       "categories": [
         "UI frameworks"
       ],
       "by_country": {
         "FRANCE": 263,
         "ITALY": 186,
-        "POLAND": 1874,
+        "POLAND": 2253,
         "SPAIN": 486,
         "UNITED_KINGDOM_UK": 1331
       }
     },
+    "MySQL": {
+      "pages": 4501,
+      "categories": [
+        "Databases"
+      ],
+      "by_country": {
+        "FRANCE": 292,
+        "ITALY": 19,
+        "POLAND": 2446,
+        "SPAIN": 86,
+        "UNITED_KINGDOM_UK": 1658
+      }
+    },
     "WordPress": {
-      "pages": 4130,
+      "pages": 4455,
       "categories": [
         "Blogs",
         "CMS"
@@ -103,39 +103,39 @@
       "by_country": {
         "FRANCE": 290,
         "ITALY": 19,
-        "POLAND": 2082,
+        "POLAND": 2407,
         "SPAIN": 86,
         "UNITED_KINGDOM_UK": 1653
       }
     },
     "Apache": {
-      "pages": 3955,
+      "pages": 4412,
       "categories": [
         "Web servers"
       ],
       "by_country": {
         "FRANCE": 440,
         "ITALY": 77,
-        "POLAND": 2123,
+        "POLAND": 2580,
         "SPAIN": 465,
         "UNITED_KINGDOM_UK": 850
       }
     },
     "jQuery Migrate": {
-      "pages": 3649,
+      "pages": 4027,
       "categories": [
         "JavaScript libraries"
       ],
       "by_country": {
         "FRANCE": 254,
         "ITALY": 23,
-        "POLAND": 1863,
+        "POLAND": 2241,
         "SPAIN": 90,
         "UNITED_KINGDOM_UK": 1419
       }
     },
     "Nginx": {
-      "pages": 3141,
+      "pages": 3318,
       "categories": [
         "Reverse proxies",
         "Web servers"
@@ -143,33 +143,33 @@
       "by_country": {
         "FRANCE": 468,
         "ITALY": 46,
-        "POLAND": 968,
+        "POLAND": 1145,
         "SPAIN": 143,
         "UNITED_KINGDOM_UK": 1516
       }
     },
     "Cloudflare": {
-      "pages": 2416,
+      "pages": 2464,
       "categories": [
         "CDN"
       ],
       "by_country": {
         "FRANCE": 128,
         "ITALY": 7,
-        "POLAND": 197,
+        "POLAND": 245,
         "SPAIN": 16,
         "UNITED_KINGDOM_UK": 2068
       }
     },
     "reCAPTCHA": {
-      "pages": 1858,
+      "pages": 1937,
       "categories": [
         "Security"
       ],
       "by_country": {
         "FRANCE": 67,
         "ITALY": 31,
-        "POLAND": 339,
+        "POLAND": 418,
         "SPAIN": 47,
         "UNITED_KINGDOM_UK": 1374
       }
@@ -200,247 +200,247 @@
         "UNITED_KINGDOM_UK": 1665
       }
     },
-    "Windows Server": {
-      "pages": 1409,
-      "categories": [
-        "Operating systems"
-      ],
-      "by_country": {
-        "FRANCE": 14,
-        "ITALY": 82,
-        "POLAND": 213,
-        "SPAIN": 77,
-        "UNITED_KINGDOM_UK": 1023
-      }
-    },
-    "IIS": {
-      "pages": 1396,
+    "LiteSpeed": {
+      "pages": 1513,
       "categories": [
         "Web servers"
       ],
       "by_country": {
-        "FRANCE": 12,
-        "ITALY": 82,
-        "POLAND": 208,
-        "SPAIN": 71,
-        "UNITED_KINGDOM_UK": 1023
-      }
-    },
-    "Microsoft ASP.NET": {
-      "pages": 1332,
-      "categories": [
-        "Web frameworks"
-      ],
-      "by_country": {
-        "FRANCE": 12,
-        "ITALY": 78,
-        "POLAND": 205,
-        "SPAIN": 60,
-        "UNITED_KINGDOM_UK": 977
+        "FRANCE": 8,
+        "POLAND": 1202,
+        "UNITED_KINGDOM_UK": 303
       }
     },
     "Yoast SEO": {
-      "pages": 1320,
+      "pages": 1430,
       "categories": [
         "SEO"
       ],
       "by_country": {
         "FRANCE": 164,
         "ITALY": 7,
-        "POLAND": 595,
+        "POLAND": 705,
         "SPAIN": 38,
         "UNITED_KINGDOM_UK": 516
       }
     },
-    "LiteSpeed": {
-      "pages": 1243,
+    "Windows Server": {
+      "pages": 1416,
+      "categories": [
+        "Operating systems"
+      ],
+      "by_country": {
+        "FRANCE": 14,
+        "ITALY": 82,
+        "POLAND": 220,
+        "SPAIN": 77,
+        "UNITED_KINGDOM_UK": 1023
+      }
+    },
+    "IIS": {
+      "pages": 1403,
       "categories": [
         "Web servers"
       ],
       "by_country": {
-        "FRANCE": 8,
-        "POLAND": 932,
-        "UNITED_KINGDOM_UK": 303
+        "FRANCE": 12,
+        "ITALY": 82,
+        "POLAND": 215,
+        "SPAIN": 71,
+        "UNITED_KINGDOM_UK": 1023
+      }
+    },
+    "Microsoft ASP.NET": {
+      "pages": 1339,
+      "categories": [
+        "Web frameworks"
+      ],
+      "by_country": {
+        "FRANCE": 12,
+        "ITALY": 78,
+        "POLAND": 212,
+        "SPAIN": 60,
+        "UNITED_KINGDOM_UK": 977
       }
     },
     "Drupal": {
-      "pages": 1170,
+      "pages": 1213,
       "categories": [
         "CMS"
       ],
       "by_country": {
         "FRANCE": 382,
         "ITALY": 38,
-        "POLAND": 254,
+        "POLAND": 297,
         "SPAIN": 109,
         "UNITED_KINGDOM_UK": 387
       }
     },
     "jQuery UI": {
-      "pages": 1111,
+      "pages": 1208,
       "categories": [
         "JavaScript libraries"
       ],
       "by_country": {
         "FRANCE": 112,
         "ITALY": 48,
-        "POLAND": 439,
+        "POLAND": 536,
         "SPAIN": 179,
         "UNITED_KINGDOM_UK": 333
       }
     },
     "jsDelivr": {
-      "pages": 1097,
+      "pages": 1152,
       "categories": [
         "CDN"
       ],
       "by_country": {
         "FRANCE": 88,
         "ITALY": 10,
-        "POLAND": 321,
+        "POLAND": 376,
         "SPAIN": 87,
         "UNITED_KINGDOM_UK": 591
       }
     },
     "Elementor": {
-      "pages": 1030,
+      "pages": 1109,
       "categories": [
         "Page builders"
       ],
       "by_country": {
         "FRANCE": 65,
         "ITALY": 1,
-        "POLAND": 588,
+        "POLAND": 667,
         "SPAIN": 27,
         "UNITED_KINGDOM_UK": 349
       }
     },
     "Slick": {
-      "pages": 1007,
+      "pages": 1085,
       "categories": [
         "JavaScript libraries"
       ],
       "by_country": {
         "FRANCE": 89,
         "ITALY": 3,
-        "POLAND": 503,
+        "POLAND": 581,
         "SPAIN": 50,
         "UNITED_KINGDOM_UK": 362
       }
     },
+    "Lightbox": {
+      "pages": 1072,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "FRANCE": 31,
+        "ITALY": 10,
+        "POLAND": 776,
+        "SPAIN": 43,
+        "UNITED_KINGDOM_UK": 212
+      }
+    },
     "Modernizr": {
-      "pages": 988,
+      "pages": 1062,
       "categories": [
         "JavaScript libraries"
       ],
       "by_country": {
         "FRANCE": 47,
         "ITALY": 25,
-        "POLAND": 245,
+        "POLAND": 319,
         "SPAIN": 66,
         "UNITED_KINGDOM_UK": 605
       }
     },
     "Google Maps": {
-      "pages": 942,
+      "pages": 998,
       "categories": [
         "Maps"
       ],
       "by_country": {
         "FRANCE": 41,
         "ITALY": 16,
-        "POLAND": 184,
+        "POLAND": 240,
         "SPAIN": 15,
         "UNITED_KINGDOM_UK": 686
       }
     },
-    "Lightbox": {
-      "pages": 927,
-      "categories": [
-        "JavaScript libraries"
-      ],
-      "by_country": {
-        "FRANCE": 31,
-        "ITALY": 10,
-        "POLAND": 631,
-        "SPAIN": 43,
-        "UNITED_KINGDOM_UK": 212
-      }
-    },
     "OWL Carousel": {
-      "pages": 794,
+      "pages": 882,
       "categories": [
         "Widgets"
       ],
       "by_country": {
         "FRANCE": 33,
         "ITALY": 14,
-        "POLAND": 436,
+        "POLAND": 524,
         "SPAIN": 83,
         "UNITED_KINGDOM_UK": 228
       }
     },
     "Cart Functionality": {
-      "pages": 720,
+      "pages": 728,
       "categories": [
         "Ecommerce"
       ],
       "by_country": {
         "FRANCE": 386,
         "ITALY": 51,
-        "POLAND": 75,
+        "POLAND": 83,
         "SPAIN": 135,
         "UNITED_KINGDOM_UK": 73
       }
     },
-    "Vue.js": {
-      "pages": 643,
-      "categories": [
-        "JavaScript frameworks"
-      ],
-      "by_country": {
-        "FRANCE": 28,
-        "ITALY": 1,
-        "POLAND": 84,
-        "SPAIN": 9,
-        "UNITED_KINGDOM_UK": 521
-      }
-    },
     "animate.css": {
-      "pages": 601,
+      "pages": 709,
       "categories": [
         "UI frameworks"
       ],
       "by_country": {
         "FRANCE": 31,
         "ITALY": 10,
-        "POLAND": 392,
+        "POLAND": 500,
         "SPAIN": 30,
         "UNITED_KINGDOM_UK": 138
       }
     },
+    "Vue.js": {
+      "pages": 658,
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "by_country": {
+        "FRANCE": 28,
+        "ITALY": 1,
+        "POLAND": 99,
+        "SPAIN": 9,
+        "UNITED_KINGDOM_UK": 521
+      }
+    },
     "Swiper Slider": {
-      "pages": 564,
+      "pages": 627,
       "categories": [
         "Miscellaneous"
       ],
       "by_country": {
         "FRANCE": 51,
         "ITALY": 4,
-        "POLAND": 288,
+        "POLAND": 351,
         "SPAIN": 26,
         "UNITED_KINGDOM_UK": 195
       }
     },
     "Underscore.js": {
-      "pages": 478,
+      "pages": 520,
       "categories": [
         "JavaScript libraries"
       ],
       "by_country": {
         "FRANCE": 33,
         "ITALY": 5,
-        "POLAND": 261,
+        "POLAND": 303,
         "SPAIN": 23,
         "UNITED_KINGDOM_UK": 156
       }
@@ -454,13 +454,26 @@
         "UNITED_KINGDOM_UK": 461
       }
     },
+    "YouTube": {
+      "pages": 460,
+      "categories": [
+        "Video players"
+      ],
+      "by_country": {
+        "FRANCE": 37,
+        "ITALY": 3,
+        "POLAND": 225,
+        "SPAIN": 36,
+        "UNITED_KINGDOM_UK": 159
+      }
+    },
     "UserWay": {
-      "pages": 433,
+      "pages": 440,
       "categories": [
         "Accessibility"
       ],
       "by_country": {
-        "POLAND": 8,
+        "POLAND": 15,
         "UNITED_KINGDOM_UK": 425
       }
     },
@@ -473,166 +486,153 @@
         "UNITED_KINGDOM_UK": 430
       }
     },
-    "YouTube": {
-      "pages": 406,
-      "categories": [
-        "Video players"
-      ],
-      "by_country": {
-        "FRANCE": 37,
-        "ITALY": 3,
-        "POLAND": 171,
-        "SPAIN": 36,
-        "UNITED_KINGDOM_UK": 159
-      }
-    },
     "Varnish": {
-      "pages": 405,
+      "pages": 427,
       "categories": [
         "Caching"
       ],
       "by_country": {
         "FRANCE": 94,
         "ITALY": 24,
-        "POLAND": 80,
+        "POLAND": 102,
         "SPAIN": 4,
         "UNITED_KINGDOM_UK": 203
       }
     },
+    "Joomla": {
+      "pages": 425,
+      "categories": [
+        "CMS"
+      ],
+      "by_country": {
+        "FRANCE": 10,
+        "POLAND": 370,
+        "SPAIN": 14,
+        "UNITED_KINGDOM_UK": 31
+      }
+    },
+    "Debian": {
+      "pages": 387,
+      "categories": [
+        "Operating systems"
+      ],
+      "by_country": {
+        "FRANCE": 22,
+        "POLAND": 342,
+        "SPAIN": 15,
+        "UNITED_KINGDOM_UK": 8
+      }
+    },
     "Osano": {
-      "pages": 368,
+      "pages": 381,
       "categories": [
         "Cookie compliance"
       ],
       "by_country": {
         "FRANCE": 2,
         "ITALY": 2,
-        "POLAND": 41,
+        "POLAND": 54,
         "SPAIN": 5,
         "UNITED_KINGDOM_UK": 318
       }
     },
-    "Debian": {
-      "pages": 353,
-      "categories": [
-        "Operating systems"
-      ],
-      "by_country": {
-        "FRANCE": 22,
-        "POLAND": 308,
-        "SPAIN": 15,
-        "UNITED_KINGDOM_UK": 8
-      }
-    },
     "Litespeed Cache": {
-      "pages": 348,
+      "pages": 368,
       "categories": [
         "Caching"
       ],
       "by_country": {
         "FRANCE": 5,
-        "POLAND": 135,
+        "POLAND": 155,
         "UNITED_KINGDOM_UK": 208
       }
     },
     "Leaflet": {
-      "pages": 317,
+      "pages": 350,
       "categories": [
         "Maps"
       ],
       "by_country": {
         "FRANCE": 65,
         "ITALY": 7,
-        "POLAND": 186,
+        "POLAND": 219,
         "SPAIN": 24,
         "UNITED_KINGDOM_UK": 35
       }
     },
-    "Joomla": {
-      "pages": 296,
-      "categories": [
-        "CMS"
-      ],
-      "by_country": {
-        "FRANCE": 10,
-        "POLAND": 241,
-        "SPAIN": 14,
-        "UNITED_KINGDOM_UK": 31
-      }
-    },
-    "ZURB Foundation": {
-      "pages": 283,
-      "categories": [
-        "UI frameworks"
-      ],
-      "by_country": {
-        "FRANCE": 14,
-        "ITALY": 1,
-        "POLAND": 49,
-        "SPAIN": 19,
-        "UNITED_KINGDOM_UK": 200
-      }
-    },
     "FancyBox": {
-      "pages": 278,
+      "pages": 333,
       "categories": [
         "JavaScript libraries"
       ],
       "by_country": {
         "FRANCE": 26,
-        "POLAND": 181,
+        "POLAND": 236,
         "SPAIN": 8,
         "UNITED_KINGDOM_UK": 63
       }
     },
-    "Typekit": {
-      "pages": 277,
-      "categories": [
-        "Font scripts"
-      ],
-      "by_country": {
-        "FRANCE": 21,
-        "ITALY": 3,
-        "POLAND": 47,
-        "UNITED_KINGDOM_UK": 206
-      }
-    },
     "Moment.js": {
-      "pages": 274,
+      "pages": 308,
       "categories": [
         "JavaScript libraries"
       ],
       "by_country": {
         "FRANCE": 41,
         "ITALY": 18,
-        "POLAND": 127,
+        "POLAND": 161,
         "SPAIN": 15,
         "UNITED_KINGDOM_UK": 73
       }
     },
+    "ZURB Foundation": {
+      "pages": 293,
+      "categories": [
+        "UI frameworks"
+      ],
+      "by_country": {
+        "FRANCE": 14,
+        "ITALY": 1,
+        "POLAND": 59,
+        "SPAIN": 19,
+        "UNITED_KINGDOM_UK": 200
+      }
+    },
+    "Typekit": {
+      "pages": 285,
+      "categories": [
+        "Font scripts"
+      ],
+      "by_country": {
+        "FRANCE": 21,
+        "ITALY": 3,
+        "POLAND": 55,
+        "UNITED_KINGDOM_UK": 206
+      }
+    },
+    "Revslider": {
+      "pages": 275,
+      "categories": [
+        "Miscellaneous"
+      ],
+      "by_country": {
+        "FRANCE": 11,
+        "POLAND": 219,
+        "SPAIN": 6,
+        "UNITED_KINGDOM_UK": 39
+      }
+    },
     "React": {
-      "pages": 262,
+      "pages": 271,
       "categories": [
         "JavaScript frameworks"
       ],
       "by_country": {
         "FRANCE": 15,
         "ITALY": 5,
-        "POLAND": 46,
+        "POLAND": 55,
         "SPAIN": 4,
         "UNITED_KINGDOM_UK": 192
-      }
-    },
-    "Revslider": {
-      "pages": 242,
-      "categories": [
-        "Miscellaneous"
-      ],
-      "by_country": {
-        "FRANCE": 11,
-        "POLAND": 186,
-        "SPAIN": 6,
-        "UNITED_KINGDOM_UK": 39
       }
     },
     "Java": {
@@ -648,43 +648,103 @@
         "UNITED_KINGDOM_UK": 65
       }
     },
-    "TrackJs": {
-      "pages": 208,
-      "categories": [
-        "Analytics"
-      ],
-      "by_country": {
-        "FRANCE": 14,
-        "ITALY": 2,
-        "POLAND": 77,
-        "SPAIN": 6,
-        "UNITED_KINGDOM_UK": 109
-      }
-    },
     "UIKit": {
-      "pages": 207,
+      "pages": 229,
       "categories": [
         "UI frameworks"
       ],
       "by_country": {
         "FRANCE": 17,
         "ITALY": 5,
-        "POLAND": 44,
+        "POLAND": 66,
         "SPAIN": 5,
         "UNITED_KINGDOM_UK": 136
       }
     },
+    "TrackJs": {
+      "pages": 222,
+      "categories": [
+        "Analytics"
+      ],
+      "by_country": {
+        "FRANCE": 14,
+        "ITALY": 2,
+        "POLAND": 91,
+        "SPAIN": 6,
+        "UNITED_KINGDOM_UK": 109
+      }
+    },
+    "Ubuntu": {
+      "pages": 218,
+      "categories": [
+        "Operating systems"
+      ],
+      "by_country": {
+        "FRANCE": 3,
+        "ITALY": 18,
+        "POLAND": 117,
+        "SPAIN": 8,
+        "UNITED_KINGDOM_UK": 72
+      }
+    },
     "Imperva": {
-      "pages": 202,
+      "pages": 204,
       "categories": [
         "Security"
       ],
       "by_country": {
         "FRANCE": 79,
         "ITALY": 2,
-        "POLAND": 3,
+        "POLAND": 5,
         "SPAIN": 18,
         "UNITED_KINGDOM_UK": 100
+      }
+    },
+    "Lua": {
+      "pages": 202,
+      "categories": [
+        "Programming languages"
+      ],
+      "by_country": {
+        "FRANCE": 19,
+        "ITALY": 2,
+        "POLAND": 122,
+        "UNITED_KINGDOM_UK": 59
+      }
+    },
+    "OpenResty": {
+      "pages": 202,
+      "categories": [
+        "Web servers"
+      ],
+      "by_country": {
+        "FRANCE": 19,
+        "ITALY": 2,
+        "POLAND": 122,
+        "UNITED_KINGDOM_UK": 59
+      }
+    },
+    "Facebook": {
+      "pages": 201,
+      "categories": [
+        "Widgets"
+      ],
+      "by_country": {
+        "FRANCE": 7,
+        "POLAND": 134,
+        "SPAIN": 1,
+        "UNITED_KINGDOM_UK": 59
+      }
+    },
+    "TYPO3 CMS": {
+      "pages": 196,
+      "categories": [
+        "CMS"
+      ],
+      "by_country": {
+        "FRANCE": 58,
+        "POLAND": 108,
+        "UNITED_KINGDOM_UK": 30
       }
     },
     "Concrete5": {
@@ -706,17 +766,16 @@
         "FRANCE": 191
       }
     },
-    "Ubuntu": {
-      "pages": 191,
+    "Popper": {
+      "pages": 189,
       "categories": [
-        "Operating systems"
+        "Miscellaneous"
       ],
       "by_country": {
-        "FRANCE": 3,
-        "ITALY": 18,
-        "POLAND": 90,
-        "SPAIN": 8,
-        "UNITED_KINGDOM_UK": 72
+        "FRANCE": 17,
+        "POLAND": 62,
+        "SPAIN": 12,
+        "UNITED_KINGDOM_UK": 98
       }
     },
     "Select2": {
@@ -731,112 +790,102 @@
         "UNITED_KINGDOM_UK": 79
       }
     },
-    "Lua": {
-      "pages": 184,
-      "categories": [
-        "Programming languages"
-      ],
-      "by_country": {
-        "FRANCE": 19,
-        "ITALY": 2,
-        "POLAND": 104,
-        "UNITED_KINGDOM_UK": 59
-      }
-    },
-    "OpenResty": {
-      "pages": 184,
-      "categories": [
-        "Web servers"
-      ],
-      "by_country": {
-        "FRANCE": 19,
-        "ITALY": 2,
-        "POLAND": 104,
-        "UNITED_KINGDOM_UK": 59
-      }
-    },
-    "Popper": {
-      "pages": 182,
-      "categories": [
-        "Miscellaneous"
-      ],
-      "by_country": {
-        "FRANCE": 17,
-        "POLAND": 55,
-        "SPAIN": 12,
-        "UNITED_KINGDOM_UK": 98
-      }
-    },
-    "TYPO3 CMS": {
-      "pages": 174,
-      "categories": [
-        "CMS"
-      ],
-      "by_country": {
-        "FRANCE": 58,
-        "POLAND": 86,
-        "UNITED_KINGDOM_UK": 30
-      }
-    },
-    "Facebook": {
-      "pages": 164,
-      "categories": [
-        "Widgets"
-      ],
-      "by_country": {
-        "FRANCE": 7,
-        "POLAND": 97,
-        "SPAIN": 1,
-        "UNITED_KINGDOM_UK": 59
-      }
-    },
     "AddToAny": {
-      "pages": 163,
+      "pages": 169,
       "categories": [
         "Widgets"
       ],
       "by_country": {
         "FRANCE": 45,
         "ITALY": 6,
-        "POLAND": 28,
+        "POLAND": 34,
         "SPAIN": 19,
         "UNITED_KINGDOM_UK": 65
       }
     },
-    "Redis": {
-      "pages": 153,
+    "MooTools": {
+      "pages": 159,
       "categories": [
-        "Databases"
+        "JavaScript frameworks"
       ],
       "by_country": {
-        "FRANCE": 29,
-        "POLAND": 74,
-        "SPAIN": 3,
-        "UNITED_KINGDOM_UK": 47
+        "FRANCE": 9,
+        "ITALY": 5,
+        "POLAND": 130,
+        "SPAIN": 4,
+        "UNITED_KINGDOM_UK": 11
       }
     },
-    "Redis Object Cache": {
-      "pages": 153,
+    "DataTables": {
+      "pages": 158,
       "categories": [
-        "Caching"
+        "JavaScript libraries"
       ],
       "by_country": {
-        "FRANCE": 29,
-        "POLAND": 74,
-        "SPAIN": 3,
-        "UNITED_KINGDOM_UK": 47
+        "FRANCE": 15,
+        "ITALY": 6,
+        "POLAND": 70,
+        "SPAIN": 35,
+        "UNITED_KINGDOM_UK": 32
       }
     },
     "TinyMCE": {
-      "pages": 151,
+      "pages": 155,
       "categories": [
         "Rich text editors"
       ],
       "by_country": {
         "FRANCE": 2,
-        "POLAND": 23,
+        "POLAND": 27,
         "SPAIN": 8,
         "UNITED_KINGDOM_UK": 118
+      }
+    },
+    "Redis": {
+      "pages": 154,
+      "categories": [
+        "Databases"
+      ],
+      "by_country": {
+        "FRANCE": 29,
+        "POLAND": 75,
+        "SPAIN": 3,
+        "UNITED_KINGDOM_UK": 47
+      }
+    },
+    "Redis Object Cache": {
+      "pages": 154,
+      "categories": [
+        "Caching"
+      ],
+      "by_country": {
+        "FRANCE": 29,
+        "POLAND": 75,
+        "SPAIN": 3,
+        "UNITED_KINGDOM_UK": 47
+      }
+    },
+    "Cookiebot": {
+      "pages": 152,
+      "categories": [
+        "Cookie compliance"
+      ],
+      "by_country": {
+        "ITALY": 9,
+        "POLAND": 50,
+        "UNITED_KINGDOM_UK": 93
+      }
+    },
+    "WordPress Super Cache": {
+      "pages": 152,
+      "categories": [
+        "Caching"
+      ],
+      "by_country": {
+        "FRANCE": 16,
+        "POLAND": 104,
+        "SPAIN": 1,
+        "UNITED_KINGDOM_UK": 31
       }
     },
     "Google Cloud": {
@@ -852,153 +901,128 @@
         "UNITED_KINGDOM_UK": 115
       }
     },
-    "DataTables": {
-      "pages": 148,
+    "prettyPhoto": {
+      "pages": 149,
       "categories": [
         "JavaScript libraries"
       ],
       "by_country": {
-        "FRANCE": 15,
-        "ITALY": 6,
-        "POLAND": 60,
-        "SPAIN": 35,
-        "UNITED_KINGDOM_UK": 32
+        "FRANCE": 6,
+        "POLAND": 113,
+        "SPAIN": 13,
+        "UNITED_KINGDOM_UK": 17
+      }
+    },
+    "WooCommerce": {
+      "pages": 147,
+      "categories": [
+        "Ecommerce"
+      ],
+      "by_country": {
+        "POLAND": 127,
+        "UNITED_KINGDOM_UK": 20
+      }
+    },
+    "wpBakery": {
+      "pages": 145,
+      "categories": [
+        "Page builders"
+      ],
+      "by_country": {
+        "FRANCE": 12,
+        "POLAND": 80,
+        "SPAIN": 9,
+        "UNITED_KINGDOM_UK": 44
       }
     },
     "Lodash": {
-      "pages": 139,
+      "pages": 142,
       "categories": [
         "JavaScript libraries"
       ],
       "by_country": {
         "FRANCE": 10,
         "ITALY": 3,
-        "POLAND": 29,
+        "POLAND": 32,
         "SPAIN": 5,
         "UNITED_KINGDOM_UK": 92
       }
     },
-    "wpBakery": {
-      "pages": 138,
-      "categories": [
-        "Page builders"
-      ],
-      "by_country": {
-        "FRANCE": 12,
-        "POLAND": 73,
-        "SPAIN": 9,
-        "UNITED_KINGDOM_UK": 44
-      }
-    },
-    "Cookiebot": {
-      "pages": 137,
-      "categories": [
-        "Cookie compliance"
-      ],
-      "by_country": {
-        "ITALY": 9,
-        "POLAND": 35,
-        "UNITED_KINGDOM_UK": 93
-      }
-    },
-    "WordPress Super Cache": {
-      "pages": 135,
-      "categories": [
-        "Caching"
-      ],
-      "by_country": {
-        "FRANCE": 16,
-        "POLAND": 87,
-        "SPAIN": 1,
-        "UNITED_KINGDOM_UK": 31
-      }
-    },
-    "prettyPhoto": {
-      "pages": 132,
-      "categories": [
-        "JavaScript libraries"
-      ],
-      "by_country": {
-        "FRANCE": 6,
-        "POLAND": 96,
-        "SPAIN": 13,
-        "UNITED_KINGDOM_UK": 17
-      }
-    },
     "Plesk": {
-      "pages": 130,
+      "pages": 131,
       "categories": [
         "Hosting panels"
       ],
       "by_country": {
         "FRANCE": 2,
-        "POLAND": 4,
+        "POLAND": 5,
         "SPAIN": 6,
         "UNITED_KINGDOM_UK": 118
       }
     },
-    "WP Rocket": {
-      "pages": 126,
-      "categories": [
-        "Caching"
-      ],
-      "by_country": {
-        "FRANCE": 67,
-        "POLAND": 20,
-        "SPAIN": 3,
-        "UNITED_KINGDOM_UK": 36
-      }
-    },
-    "WooCommerce": {
-      "pages": 126,
-      "categories": [
-        "Ecommerce"
-      ],
-      "by_country": {
-        "POLAND": 106,
-        "UNITED_KINGDOM_UK": 20
-      }
-    },
-    "Node.js": {
-      "pages": 119,
-      "categories": [
-        "Programming languages"
-      ],
-      "by_country": {
-        "FRANCE": 25,
-        "POLAND": 39,
-        "SPAIN": 3,
-        "UNITED_KINGDOM_UK": 52
-      }
-    },
-    "OpenSSL": {
-      "pages": 119,
-      "categories": [
-        "Web server extensions"
-      ],
-      "by_country": {
-        "FRANCE": 1,
-        "ITALY": 7,
-        "POLAND": 50,
-        "SPAIN": 43,
-        "UNITED_KINGDOM_UK": 18
-      }
-    },
     "SWFObject": {
-      "pages": 113,
+      "pages": 129,
       "categories": [
         "Miscellaneous"
       ],
       "by_country": {
         "FRANCE": 1,
         "ITALY": 2,
-        "POLAND": 47,
+        "POLAND": 63,
         "SPAIN": 5,
         "UNITED_KINGDOM_UK": 58
       }
     },
+    "WP Rocket": {
+      "pages": 127,
+      "categories": [
+        "Caching"
+      ],
+      "by_country": {
+        "FRANCE": 67,
+        "POLAND": 21,
+        "SPAIN": 3,
+        "UNITED_KINGDOM_UK": 36
+      }
+    },
+    "Node.js": {
+      "pages": 122,
+      "categories": [
+        "Programming languages"
+      ],
+      "by_country": {
+        "FRANCE": 25,
+        "POLAND": 42,
+        "SPAIN": 3,
+        "UNITED_KINGDOM_UK": 52
+      }
+    },
+    "OpenSSL": {
+      "pages": 121,
+      "categories": [
+        "Web server extensions"
+      ],
+      "by_country": {
+        "FRANCE": 1,
+        "ITALY": 7,
+        "POLAND": 52,
+        "SPAIN": 43,
+        "UNITED_KINGDOM_UK": 18
+      }
+    },
+    "scrollreveal": {
+      "pages": 111,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "FRANCE": 3,
+        "POLAND": 23,
+        "UNITED_KINGDOM_UK": 85
+      }
+    },
     "Wix": {
-      "pages": 107,
+      "pages": 110,
       "categories": [
         "Blogs",
         "CMS",
@@ -1006,30 +1030,43 @@
       ],
       "by_country": {
         "FRANCE": 3,
-        "POLAND": 12,
+        "POLAND": 15,
         "UNITED_KINGDOM_UK": 92
       }
     },
-    "scrollreveal": {
-      "pages": 106,
-      "categories": [
-        "JavaScript libraries"
-      ],
-      "by_country": {
-        "FRANCE": 3,
-        "POLAND": 18,
-        "UNITED_KINGDOM_UK": 85
-      }
-    },
     "Webflow": {
-      "pages": 101,
+      "pages": 108,
       "categories": [
         "Page builders"
       ],
       "by_country": {
         "FRANCE": 2,
-        "POLAND": 14,
+        "POLAND": 21,
         "UNITED_KINGDOM_UK": 85
+      }
+    },
+    "Chart.js": {
+      "pages": 102,
+      "categories": [
+        "JavaScript graphics"
+      ],
+      "by_country": {
+        "FRANCE": 11,
+        "POLAND": 47,
+        "SPAIN": 20,
+        "UNITED_KINGDOM_UK": 24
+      }
+    },
+    "W3 Total Cache": {
+      "pages": 102,
+      "categories": [
+        "Caching"
+      ],
+      "by_country": {
+        "FRANCE": 6,
+        "POLAND": 56,
+        "SPAIN": 7,
+        "UNITED_KINGDOM_UK": 33
       }
     },
     "Highlight.js": {
@@ -1040,43 +1077,6 @@
       "by_country": {
         "FRANCE": 1,
         "POLAND": 98
-      }
-    },
-    "MooTools": {
-      "pages": 98,
-      "categories": [
-        "JavaScript frameworks"
-      ],
-      "by_country": {
-        "FRANCE": 9,
-        "ITALY": 5,
-        "POLAND": 69,
-        "SPAIN": 4,
-        "UNITED_KINGDOM_UK": 11
-      }
-    },
-    "W3 Total Cache": {
-      "pages": 96,
-      "categories": [
-        "Caching"
-      ],
-      "by_country": {
-        "FRANCE": 6,
-        "POLAND": 50,
-        "SPAIN": 7,
-        "UNITED_KINGDOM_UK": 33
-      }
-    },
-    "Chart.js": {
-      "pages": 94,
-      "categories": [
-        "JavaScript graphics"
-      ],
-      "by_country": {
-        "FRANCE": 11,
-        "POLAND": 39,
-        "SPAIN": 20,
-        "UNITED_KINGDOM_UK": 24
       }
     },
     "Polyfill": {
@@ -1093,27 +1093,74 @@
       }
     },
     "Backbone.js": {
-      "pages": 84,
+      "pages": 89,
       "categories": [
         "JavaScript frameworks"
       ],
       "by_country": {
         "FRANCE": 3,
-        "POLAND": 24,
+        "POLAND": 29,
         "SPAIN": 3,
         "UNITED_KINGDOM_UK": 54
       }
     },
+    "Alpine.js": {
+      "pages": 84,
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "by_country": {
+        "FRANCE": 10,
+        "POLAND": 43,
+        "SPAIN": 2,
+        "UNITED_KINGDOM_UK": 29
+      }
+    },
     "styled-components": {
-      "pages": 80,
+      "pages": 83,
       "categories": [
         "Development",
         "JavaScript frameworks"
       ],
       "by_country": {
         "FRANCE": 1,
-        "POLAND": 10,
+        "POLAND": 13,
         "UNITED_KINGDOM_UK": 69
+      }
+    },
+    "Awesomplete": {
+      "pages": 81,
+      "categories": [
+        "Search engines"
+      ],
+      "by_country": {
+        "FRANCE": 6,
+        "POLAND": 53,
+        "SPAIN": 5,
+        "UNITED_KINGDOM_UK": 17
+      }
+    },
+    "Twitter": {
+      "pages": 79,
+      "categories": [
+        "Widgets"
+      ],
+      "by_country": {
+        "FRANCE": 14,
+        "POLAND": 17,
+        "SPAIN": 13,
+        "UNITED_KINGDOM_UK": 35
+      }
+    },
+    "webpack": {
+      "pages": 79,
+      "categories": [
+        "Miscellaneous"
+      ],
+      "by_country": {
+        "FRANCE": 10,
+        "POLAND": 33,
+        "UNITED_KINGDOM_UK": 36
       }
     },
     "Akamai": {
@@ -1126,39 +1173,39 @@
         "SPAIN": 68
       }
     },
-    "Alpine.js": {
-      "pages": 75,
+    "Prototype": {
+      "pages": 76,
       "categories": [
         "JavaScript frameworks"
       ],
       "by_country": {
-        "FRANCE": 10,
-        "POLAND": 34,
-        "SPAIN": 2,
-        "UNITED_KINGDOM_UK": 29
-      }
-    },
-    "Twitter": {
-      "pages": 74,
-      "categories": [
-        "Widgets"
-      ],
-      "by_country": {
         "FRANCE": 14,
-        "POLAND": 12,
-        "SPAIN": 13,
-        "UNITED_KINGDOM_UK": 35
+        "ITALY": 5,
+        "POLAND": 39,
+        "SPAIN": 10,
+        "UNITED_KINGDOM_UK": 8
       }
     },
-    "webpack": {
-      "pages": 73,
+    "jQuery Mobile": {
+      "pages": 72,
       "categories": [
-        "Miscellaneous"
+        "Mobile frameworks"
       ],
       "by_country": {
-        "FRANCE": 10,
-        "POLAND": 27,
-        "UNITED_KINGDOM_UK": 36
+        "FRANCE": 6,
+        "POLAND": 48,
+        "UNITED_KINGDOM_UK": 18
+      }
+    },
+    "Google AdSense": {
+      "pages": 71,
+      "categories": [
+        "Advertising"
+      ],
+      "by_country": {
+        "POLAND": 64,
+        "SPAIN": 3,
+        "UNITED_KINGDOM_UK": 4
       }
     },
     "Handlebars": {
@@ -1172,6 +1219,29 @@
         "POLAND": 14,
         "SPAIN": 5,
         "UNITED_KINGDOM_UK": 8
+      }
+    },
+    "Flickity": {
+      "pages": 69,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "FRANCE": 2,
+        "POLAND": 50,
+        "UNITED_KINGDOM_UK": 17
+      }
+    },
+    "Next.js": {
+      "pages": 68,
+      "categories": [
+        "Web frameworks",
+        "Web servers"
+      ],
+      "by_country": {
+        "FRANCE": 9,
+        "POLAND": 25,
+        "UNITED_KINGDOM_UK": 34
       }
     },
     "Ruby": {
@@ -1196,29 +1266,6 @@
         "UNITED_KINGDOM_UK": 54
       }
     },
-    "Awesomplete": {
-      "pages": 66,
-      "categories": [
-        "Search engines"
-      ],
-      "by_country": {
-        "FRANCE": 6,
-        "POLAND": 38,
-        "SPAIN": 5,
-        "UNITED_KINGDOM_UK": 17
-      }
-    },
-    "Flickity": {
-      "pages": 66,
-      "categories": [
-        "JavaScript libraries"
-      ],
-      "by_country": {
-        "FRANCE": 2,
-        "POLAND": 47,
-        "UNITED_KINGDOM_UK": 17
-      }
-    },
     "RequireJS": {
       "pages": 66,
       "categories": [
@@ -1232,40 +1279,17 @@
         "UNITED_KINGDOM_UK": 29
       }
     },
-    "Next.js": {
-      "pages": 65,
+    "Hammer.js": {
+      "pages": 62,
       "categories": [
-        "Web frameworks",
-        "Web servers"
+        "JavaScript libraries"
       ],
       "by_country": {
-        "FRANCE": 9,
-        "POLAND": 22,
-        "UNITED_KINGDOM_UK": 34
-      }
-    },
-    "Prototype": {
-      "pages": 65,
-      "categories": [
-        "JavaScript frameworks"
-      ],
-      "by_country": {
-        "FRANCE": 14,
-        "ITALY": 5,
-        "POLAND": 28,
-        "SPAIN": 10,
-        "UNITED_KINGDOM_UK": 8
-      }
-    },
-    "jQuery Mobile": {
-      "pages": 65,
-      "categories": [
-        "Mobile frameworks"
-      ],
-      "by_country": {
-        "FRANCE": 6,
-        "POLAND": 41,
-        "UNITED_KINGDOM_UK": 18
+        "FRANCE": 19,
+        "ITALY": 3,
+        "POLAND": 31,
+        "SPAIN": 8,
+        "UNITED_KINGDOM_UK": 1
       }
     },
     "Adobe Experience Manager": {
@@ -1289,6 +1313,32 @@
         "FRANCE": 3,
         "ITALY": 1,
         "UNITED_KINGDOM_UK": 52
+      }
+    },
+    "AddThis": {
+      "pages": 55,
+      "categories": [
+        "Widgets"
+      ],
+      "by_country": {
+        "FRANCE": 6,
+        "ITALY": 2,
+        "POLAND": 20,
+        "SPAIN": 5,
+        "UNITED_KINGDOM_UK": 22
+      }
+    },
+    "AngularJS": {
+      "pages": 55,
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "by_country": {
+        "FRANCE": 23,
+        "ITALY": 2,
+        "POLAND": 15,
+        "SPAIN": 1,
+        "UNITED_KINGDOM_UK": 14
       }
     },
     "OneTrust": {
@@ -1320,17 +1370,6 @@
         "UNITED_KINGDOM_UK": 53
       }
     },
-    "Google AdSense": {
-      "pages": 53,
-      "categories": [
-        "Advertising"
-      ],
-      "by_country": {
-        "POLAND": 46,
-        "SPAIN": 3,
-        "UNITED_KINGDOM_UK": 4
-      }
-    },
     "jQuery DevBridge Autocomplete": {
       "pages": 53,
       "categories": [
@@ -1340,43 +1379,54 @@
         "UNITED_KINGDOM_UK": 53
       }
     },
-    "AngularJS": {
+    "GSAP": {
       "pages": 52,
       "categories": [
         "JavaScript frameworks"
       ],
       "by_country": {
-        "FRANCE": 23,
-        "ITALY": 2,
-        "POLAND": 12,
-        "SPAIN": 1,
+        "FRANCE": 3,
+        "POLAND": 43,
+        "SPAIN": 3,
+        "UNITED_KINGDOM_UK": 3
+      }
+    },
+    "Element UI": {
+      "pages": 48,
+      "categories": [
+        "JavaScript frameworks"
+      ],
+      "by_country": {
+        "FRANCE": 3,
+        "ITALY": 1,
+        "POLAND": 30,
+        "SPAIN": 2,
+        "UNITED_KINGDOM_UK": 12
+      }
+    },
+    "Google Sign-in": {
+      "pages": 48,
+      "categories": [
+        "Social logins"
+      ],
+      "by_country": {
+        "FRANCE": 5,
+        "POLAND": 27,
+        "SPAIN": 2,
         "UNITED_KINGDOM_UK": 14
       }
     },
-    "Hammer.js": {
-      "pages": 51,
+    "Python": {
+      "pages": 47,
       "categories": [
-        "JavaScript libraries"
+        "Programming languages"
       ],
       "by_country": {
-        "FRANCE": 19,
-        "ITALY": 3,
-        "POLAND": 20,
-        "SPAIN": 8,
-        "UNITED_KINGDOM_UK": 1
-      }
-    },
-    "AddThis": {
-      "pages": 50,
-      "categories": [
-        "Widgets"
-      ],
-      "by_country": {
-        "FRANCE": 6,
-        "ITALY": 2,
-        "POLAND": 15,
-        "SPAIN": 5,
-        "UNITED_KINGDOM_UK": 22
+        "FRANCE": 1,
+        "ITALY": 5,
+        "POLAND": 28,
+        "SPAIN": 7,
+        "UNITED_KINGDOM_UK": 6
       }
     },
     "Stimulus": {
@@ -1392,6 +1442,29 @@
         "UNITED_KINGDOM_UK": 24
       }
     },
+    "CentOS": {
+      "pages": 45,
+      "categories": [
+        "Operating systems"
+      ],
+      "by_country": {
+        "ITALY": 2,
+        "POLAND": 32,
+        "SPAIN": 11
+      }
+    },
+    "Ionicons": {
+      "pages": 44,
+      "categories": [
+        "Font scripts"
+      ],
+      "by_country": {
+        "FRANCE": 5,
+        "ITALY": 10,
+        "POLAND": 24,
+        "UNITED_KINGDOM_UK": 5
+      }
+    },
     "Red Hat": {
       "pages": 44,
       "categories": [
@@ -1404,27 +1477,40 @@
         "UNITED_KINGDOM_UK": 2
       }
     },
-    "Google Sign-in": {
-      "pages": 43,
+    "particles.js": {
+      "pages": 44,
       "categories": [
-        "Social logins"
+        "JavaScript graphics"
+      ],
+      "by_country": {
+        "FRANCE": 3,
+        "ITALY": 1,
+        "POLAND": 38,
+        "UNITED_KINGDOM_UK": 2
+      }
+    },
+    "script.aculo.us": {
+      "pages": 44,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "FRANCE": 3,
+        "ITALY": 2,
+        "POLAND": 31,
+        "SPAIN": 5,
+        "UNITED_KINGDOM_UK": 3
+      }
+    },
+    "Google Plus": {
+      "pages": 42,
+      "categories": [
+        "Widgets"
       ],
       "by_country": {
         "FRANCE": 5,
-        "POLAND": 22,
-        "SPAIN": 2,
-        "UNITED_KINGDOM_UK": 14
-      }
-    },
-    "CentOS": {
-      "pages": 41,
-      "categories": [
-        "Operating systems"
-      ],
-      "by_country": {
-        "ITALY": 2,
-        "POLAND": 28,
-        "SPAIN": 11
+        "POLAND": 35,
+        "SPAIN": 2
       }
     },
     "Liferay": {
@@ -1439,16 +1525,17 @@
         "UNITED_KINGDOM_UK": 10
       }
     },
-    "Ionicons": {
+    "Clipboard.js": {
       "pages": 40,
       "categories": [
-        "Font scripts"
+        "Miscellaneous"
       ],
       "by_country": {
-        "FRANCE": 5,
-        "ITALY": 10,
-        "POLAND": 20,
-        "UNITED_KINGDOM_UK": 5
+        "FRANCE": 7,
+        "ITALY": 2,
+        "POLAND": 19,
+        "SPAIN": 4,
+        "UNITED_KINGDOM_UK": 8
       }
     },
     "JavaServer Pages": {
@@ -1461,67 +1548,16 @@
         "SPAIN": 19
       }
     },
-    "Python": {
-      "pages": 39,
-      "categories": [
-        "Programming languages"
-      ],
-      "by_country": {
-        "FRANCE": 1,
-        "ITALY": 5,
-        "POLAND": 20,
-        "SPAIN": 7,
-        "UNITED_KINGDOM_UK": 6
-      }
-    },
-    "Clipboard.js": {
-      "pages": 37,
-      "categories": [
-        "Miscellaneous"
-      ],
-      "by_country": {
-        "FRANCE": 7,
-        "ITALY": 2,
-        "POLAND": 16,
-        "SPAIN": 4,
-        "UNITED_KINGDOM_UK": 8
-      }
-    },
-    "GSAP": {
-      "pages": 37,
-      "categories": [
-        "JavaScript frameworks"
-      ],
-      "by_country": {
-        "FRANCE": 3,
-        "POLAND": 28,
-        "SPAIN": 3,
-        "UNITED_KINGDOM_UK": 3
-      }
-    },
     "SweetAlert2": {
-      "pages": 37,
+      "pages": 40,
       "categories": [
         "JavaScript libraries"
       ],
       "by_country": {
         "FRANCE": 3,
-        "POLAND": 23,
+        "POLAND": 26,
         "SPAIN": 9,
         "UNITED_KINGDOM_UK": 2
-      }
-    },
-    "Element UI": {
-      "pages": 36,
-      "categories": [
-        "JavaScript frameworks"
-      ],
-      "by_country": {
-        "FRANCE": 3,
-        "ITALY": 1,
-        "POLAND": 18,
-        "SPAIN": 2,
-        "UNITED_KINGDOM_UK": 12
       }
     },
     "Envoy": {
@@ -1545,31 +1581,6 @@
         "UNITED_KINGDOM_UK": 35
       }
     },
-    "particles.js": {
-      "pages": 35,
-      "categories": [
-        "JavaScript graphics"
-      ],
-      "by_country": {
-        "FRANCE": 3,
-        "ITALY": 1,
-        "POLAND": 29,
-        "UNITED_KINGDOM_UK": 2
-      }
-    },
-    "script.aculo.us": {
-      "pages": 35,
-      "categories": [
-        "JavaScript libraries"
-      ],
-      "by_country": {
-        "FRANCE": 3,
-        "ITALY": 2,
-        "POLAND": 22,
-        "SPAIN": 5,
-        "UNITED_KINGDOM_UK": 3
-      }
-    },
     "Apache Tomcat": {
       "pages": 34,
       "categories": [
@@ -1581,6 +1592,37 @@
         "POLAND": 3,
         "SPAIN": 15,
         "UNITED_KINGDOM_UK": 10
+      }
+    },
+    "FlexSlider": {
+      "pages": 34,
+      "categories": [
+        "Widgets"
+      ],
+      "by_country": {
+        "POLAND": 14,
+        "SPAIN": 1,
+        "UNITED_KINGDOM_UK": 19
+      }
+    },
+    "Gravatar": {
+      "pages": 34,
+      "categories": [
+        "Miscellaneous"
+      ],
+      "by_country": {
+        "POLAND": 24,
+        "SPAIN": 5,
+        "UNITED_KINGDOM_UK": 5
+      }
+    },
+    "PrestaShop": {
+      "pages": 33,
+      "categories": [
+        "Ecommerce"
+      ],
+      "by_country": {
+        "POLAND": 33
       }
     },
     "SiteGround": {
@@ -1603,6 +1645,18 @@
         "UNITED_KINGDOM_UK": 32
       }
     },
+    "MailChimp": {
+      "pages": 32,
+      "categories": [
+        "Email",
+        "Marketing automation"
+      ],
+      "by_country": {
+        "FRANCE": 5,
+        "POLAND": 4,
+        "UNITED_KINGDOM_UK": 23
+      }
+    },
     "Microsoft SharePoint": {
       "pages": 32,
       "categories": [
@@ -1612,29 +1666,6 @@
         "ITALY": 2,
         "POLAND": 2,
         "SPAIN": 28
-      }
-    },
-    "Google Plus": {
-      "pages": 31,
-      "categories": [
-        "Widgets"
-      ],
-      "by_country": {
-        "FRANCE": 5,
-        "POLAND": 24,
-        "SPAIN": 2
-      }
-    },
-    "MailChimp": {
-      "pages": 31,
-      "categories": [
-        "Email",
-        "Marketing automation"
-      ],
-      "by_country": {
-        "FRANCE": 5,
-        "POLAND": 3,
-        "UNITED_KINGDOM_UK": 23
       }
     },
     "MathJax": {
@@ -1649,35 +1680,26 @@
         "SPAIN": 5
       }
     },
-    "FlexSlider": {
-      "pages": 30,
+    "OpenLayers": {
+      "pages": 31,
       "categories": [
-        "Widgets"
+        "Maps"
       ],
       "by_country": {
-        "POLAND": 10,
-        "SPAIN": 1,
-        "UNITED_KINGDOM_UK": 19
+        "FRANCE": 12,
+        "POLAND": 5,
+        "SPAIN": 8,
+        "UNITED_KINGDOM_UK": 6
       }
     },
-    "Gravatar": {
+    "NextGEN Gallery": {
       "pages": 30,
       "categories": [
-        "Miscellaneous"
+        "Photo galleries"
       ],
       "by_country": {
-        "POLAND": 20,
-        "SPAIN": 5,
-        "UNITED_KINGDOM_UK": 5
-      }
-    },
-    "PrestaShop": {
-      "pages": 30,
-      "categories": [
-        "Ecommerce"
-      ],
-      "by_country": {
-        "POLAND": 30
+        "POLAND": 28,
+        "SPAIN": 2
       }
     },
     "Kinsta": {
@@ -1690,16 +1712,16 @@
         "UNITED_KINGDOM_UK": 26
       }
     },
-    "OpenLayers": {
-      "pages": 28,
+    "Material Design Lite": {
+      "pages": 29,
       "categories": [
-        "Maps"
+        "UI frameworks"
       ],
       "by_country": {
-        "FRANCE": 12,
-        "POLAND": 2,
-        "SPAIN": 8,
-        "UNITED_KINGDOM_UK": 6
+        "FRANCE": 3,
+        "POLAND": 21,
+        "SPAIN": 4,
+        "UNITED_KINGDOM_UK": 1
       }
     },
     "Oracle Dynamic Monitoring Service": {
@@ -1744,6 +1766,27 @@
         "SPAIN": 25
       }
     },
+    "Django": {
+      "pages": 26,
+      "categories": [
+        "Web frameworks"
+      ],
+      "by_country": {
+        "FRANCE": 1,
+        "POLAND": 21,
+        "SPAIN": 2,
+        "UNITED_KINGDOM_UK": 2
+      }
+    },
+    "Slimbox 2": {
+      "pages": 25,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "POLAND": 25
+      }
+    },
     "Express": {
       "pages": 24,
       "categories": [
@@ -1754,18 +1797,6 @@
         "FRANCE": 2,
         "POLAND": 10,
         "UNITED_KINGDOM_UK": 12
-      }
-    },
-    "Material Design Lite": {
-      "pages": 24,
-      "categories": [
-        "UI frameworks"
-      ],
-      "by_country": {
-        "FRANCE": 3,
-        "POLAND": 16,
-        "SPAIN": 4,
-        "UNITED_KINGDOM_UK": 1
       }
     },
     "Moodle": {
@@ -1789,6 +1820,30 @@
         "UNITED_KINGDOM_UK": 17
       }
     },
+    "Vercel": {
+      "pages": 23,
+      "categories": [
+        "Web servers"
+      ],
+      "by_country": {
+        "FRANCE": 3,
+        "POLAND": 6,
+        "UNITED_KINGDOM_UK": 14
+      }
+    },
+    "hCaptcha": {
+      "pages": 23,
+      "categories": [
+        "Security"
+      ],
+      "by_country": {
+        "FRANCE": 1,
+        "ITALY": 4,
+        "POLAND": 6,
+        "SPAIN": 5,
+        "UNITED_KINGDOM_UK": 7
+      }
+    },
     "Amazon S3": {
       "pages": 22,
       "categories": [
@@ -1797,6 +1852,15 @@
       "by_country": {
         "SPAIN": 3,
         "UNITED_KINGDOM_UK": 19
+      }
+    },
+    "Cufon": {
+      "pages": 22,
+      "categories": [
+        "Font scripts"
+      ],
+      "by_country": {
+        "POLAND": 22
       }
     },
     "DNN": {
@@ -1841,59 +1905,47 @@
         "UNITED_KINGDOM_UK": 4
       }
     },
-    "Vercel": {
-      "pages": 21,
-      "categories": [
-        "Web servers"
-      ],
-      "by_country": {
-        "FRANCE": 3,
-        "POLAND": 4,
-        "UNITED_KINGDOM_UK": 14
-      }
-    },
-    "hCaptcha": {
-      "pages": 21,
-      "categories": [
-        "Security"
-      ],
-      "by_country": {
-        "FRANCE": 1,
-        "ITALY": 4,
-        "POLAND": 4,
-        "SPAIN": 5,
-        "UNITED_KINGDOM_UK": 7
-      }
-    },
-    "Django": {
+    "FingerprintJS": {
       "pages": 20,
       "categories": [
-        "Web frameworks"
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "POLAND": 15,
+        "UNITED_KINGDOM_UK": 5
+      }
+    },
+    "Microsoft Word": {
+      "pages": 20,
+      "categories": [
+        "Editors"
+      ],
+      "by_country": {
+        "FRANCE": 2,
+        "POLAND": 16,
+        "SPAIN": 1,
+        "UNITED_KINGDOM_UK": 1
+      }
+    },
+    "basket.js": {
+      "pages": 19,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "POLAND": 17,
+        "UNITED_KINGDOM_UK": 2
+      }
+    },
+    "AMP": {
+      "pages": 18,
+      "categories": [
+        "JavaScript frameworks"
       ],
       "by_country": {
         "FRANCE": 1,
         "POLAND": 15,
-        "SPAIN": 2,
-        "UNITED_KINGDOM_UK": 2
-      }
-    },
-    "NextGEN Gallery": {
-      "pages": 19,
-      "categories": [
-        "Photo galleries"
-      ],
-      "by_country": {
-        "POLAND": 17,
         "SPAIN": 2
-      }
-    },
-    "Cufon": {
-      "pages": 18,
-      "categories": [
-        "Font scripts"
-      ],
-      "by_country": {
-        "POLAND": 18
       }
     },
     "Java Servlet": {
@@ -1904,16 +1956,6 @@
       "by_country": {
         "ITALY": 8,
         "SPAIN": 10
-      }
-    },
-    "basket.js": {
-      "pages": 18,
-      "categories": [
-        "JavaScript libraries"
-      ],
-      "by_country": {
-        "POLAND": 16,
-        "UNITED_KINGDOM_UK": 2
       }
     },
     "Contentful": {
@@ -1960,18 +2002,6 @@
         "UNITED_KINGDOM_UK": 4
       }
     },
-    "Microsoft Word": {
-      "pages": 17,
-      "categories": [
-        "Editors"
-      ],
-      "by_country": {
-        "FRANCE": 2,
-        "POLAND": 13,
-        "SPAIN": 1,
-        "UNITED_KINGDOM_UK": 1
-      }
-    },
     "Open Journal Systems": {
       "pages": 17,
       "categories": [
@@ -1979,17 +2009,6 @@
       ],
       "by_country": {
         "POLAND": 17
-      }
-    },
-    "AMP": {
-      "pages": 16,
-      "categories": [
-        "JavaScript frameworks"
-      ],
-      "by_country": {
-        "FRANCE": 1,
-        "POLAND": 13,
-        "SPAIN": 2
       }
     },
     "Materialize CSS": {
@@ -2024,23 +2043,15 @@
         "UNITED_KINGDOM_UK": 6
       }
     },
-    "FingerprintJS": {
+    "Google PageSpeed": {
       "pages": 15,
       "categories": [
-        "JavaScript libraries"
+        "Caching",
+        "Web server extensions"
       ],
       "by_country": {
-        "POLAND": 10,
-        "UNITED_KINGDOM_UK": 5
-      }
-    },
-    "Slimbox 2": {
-      "pages": 15,
-      "categories": [
-        "JavaScript libraries"
-      ],
-      "by_country": {
-        "POLAND": 15
+        "POLAND": 11,
+        "UNITED_KINGDOM_UK": 4
       }
     },
     "SilverStripe": {
@@ -2075,15 +2086,26 @@
         "UNITED_KINGDOM_UK": 8
       }
     },
-    "Google PageSpeed": {
+    "Netlify": {
       "pages": 13,
       "categories": [
-        "Caching",
-        "Web server extensions"
+        "CDN",
+        "PaaS"
       ],
       "by_country": {
-        "POLAND": 9,
-        "UNITED_KINGDOM_UK": 4
+        "POLAND": 6,
+        "UNITED_KINGDOM_UK": 7
+      }
+    },
+    "Pure CSS": {
+      "pages": 13,
+      "categories": [
+        "UI frameworks"
+      ],
+      "by_country": {
+        "FRANCE": 1,
+        "POLAND": 3,
+        "UNITED_KINGDOM_UK": 9
       }
     },
     "Semantic UI": {
@@ -2103,6 +2125,15 @@
       "by_country": {
         "POLAND": 2,
         "UNITED_KINGDOM_UK": 11
+      }
+    },
+    "WebSite X5": {
+      "pages": 13,
+      "categories": [
+        "Editors"
+      ],
+      "by_country": {
+        "POLAND": 13
       }
     },
     "Jalios": {
@@ -2174,6 +2205,18 @@
         "UNITED_KINGDOM_UK": 11
       }
     },
+    "Gatsby": {
+      "pages": 11,
+      "categories": [
+        "JavaScript frameworks",
+        "Static site generator"
+      ],
+      "by_country": {
+        "FRANCE": 1,
+        "POLAND": 8,
+        "UNITED_KINGDOM_UK": 2
+      }
+    },
     "GitHub Pages": {
       "pages": 11,
       "categories": [
@@ -2205,6 +2248,15 @@
         "UNITED_KINGDOM_UK": 1
       }
     },
+    "phpBB": {
+      "pages": 11,
+      "categories": [
+        "Message boards"
+      ],
+      "by_country": {
+        "POLAND": 11
+      }
+    },
     "Highcharts": {
       "pages": 10,
       "categories": [
@@ -2215,6 +2267,15 @@
         "POLAND": 2,
         "SPAIN": 1,
         "UNITED_KINGDOM_UK": 4
+      }
+    },
+    "K2": {
+      "pages": 10,
+      "categories": [
+        "Miscellaneous"
+      ],
+      "by_country": {
+        "POLAND": 10
       }
     },
     "Mustache": {
@@ -2228,25 +2289,13 @@
         "SPAIN": 2
       }
     },
-    "Netlify": {
+    "Slimbox": {
       "pages": 10,
       "categories": [
-        "CDN",
-        "PaaS"
+        "JavaScript libraries"
       ],
       "by_country": {
-        "POLAND": 3,
-        "UNITED_KINGDOM_UK": 7
-      }
-    },
-    "Pure CSS": {
-      "pages": 10,
-      "categories": [
-        "UI frameworks"
-      ],
-      "by_country": {
-        "FRANCE": 1,
-        "UNITED_KINGDOM_UK": 9
+        "POLAND": 10
       }
     },
     "Twitter Emoji (Twemoji)": {
@@ -2267,6 +2316,15 @@
         "UNITED_KINGDOM_UK": 9
       }
     },
+    "Mono": {
+      "pages": 9,
+      "categories": [
+        "Web frameworks"
+      ],
+      "by_country": {
+        "POLAND": 9
+      }
+    },
     "Plone": {
       "pages": 9,
       "categories": [
@@ -2276,6 +2334,15 @@
         "ITALY": 5,
         "SPAIN": 2,
         "UNITED_KINGDOM_UK": 2
+      }
+    },
+    "WP-Statistics": {
+      "pages": 9,
+      "categories": [
+        "Analytics"
+      ],
+      "by_country": {
+        "POLAND": 9
       }
     },
     "gunicorn": {
@@ -2296,15 +2363,6 @@
       "by_country": {
         "ITALY": 2,
         "SPAIN": 7
-      }
-    },
-    "phpBB": {
-      "pages": 9,
-      "categories": [
-        "Message boards"
-      ],
-      "by_country": {
-        "POLAND": 9
       }
     },
     "three.js": {
@@ -2362,6 +2420,16 @@
         "UNITED_KINGDOM_UK": 8
       }
     },
+    "Cloudinary": {
+      "pages": 8,
+      "categories": [
+        "CDN"
+      ],
+      "by_country": {
+        "POLAND": 7,
+        "UNITED_KINGDOM_UK": 1
+      }
+    },
     "DHTMLX": {
       "pages": 8,
       "categories": [
@@ -2370,18 +2438,6 @@
       "by_country": {
         "POLAND": 2,
         "SPAIN": 6
-      }
-    },
-    "Gatsby": {
-      "pages": 8,
-      "categories": [
-        "JavaScript frameworks",
-        "Static site generator"
-      ],
-      "by_country": {
-        "FRANCE": 1,
-        "POLAND": 5,
-        "UNITED_KINGDOM_UK": 2
       }
     },
     "Hugo": {
@@ -2393,15 +2449,6 @@
         "FRANCE": 1,
         "SPAIN": 3,
         "UNITED_KINGDOM_UK": 4
-      }
-    },
-    "K2": {
-      "pages": 8,
-      "categories": [
-        "Miscellaneous"
-      ],
-      "by_country": {
-        "POLAND": 8
       }
     },
     "MariaDB": {
@@ -2440,6 +2487,15 @@
         "UNITED_KINGDOM_UK": 8
       }
     },
+    "Quick.CMS": {
+      "pages": 8,
+      "categories": [
+        "CMS"
+      ],
+      "by_country": {
+        "POLAND": 8
+      }
+    },
     "TagCommander": {
       "pages": 8,
       "categories": [
@@ -2458,15 +2514,6 @@
         "SPAIN": 8
       }
     },
-    "WebSite X5": {
-      "pages": 8,
-      "categories": [
-        "Editors"
-      ],
-      "by_country": {
-        "POLAND": 8
-      }
-    },
     "Caddy": {
       "pages": 7,
       "categories": [
@@ -2475,6 +2522,16 @@
       "by_country": {
         "FRANCE": 2,
         "POLAND": 5
+      }
+    },
+    "Contao": {
+      "pages": 7,
+      "categories": [
+        "CMS"
+      ],
+      "by_country": {
+        "FRANCE": 3,
+        "POLAND": 4
       }
     },
     "D3": {
@@ -2515,15 +2572,6 @@
         "SPAIN": 7
       }
     },
-    "Mono": {
-      "pages": 7,
-      "categories": [
-        "Web frameworks"
-      ],
-      "by_country": {
-        "POLAND": 7
-      }
-    },
     "Perl": {
       "pages": 7,
       "categories": [
@@ -2541,24 +2589,6 @@
       "by_country": {
         "FRANCE": 3,
         "POLAND": 4
-      }
-    },
-    "Slimbox": {
-      "pages": 7,
-      "categories": [
-        "JavaScript libraries"
-      ],
-      "by_country": {
-        "POLAND": 7
-      }
-    },
-    "WP-Statistics": {
-      "pages": 7,
-      "categories": [
-        "Analytics"
-      ],
-      "by_country": {
-        "POLAND": 7
       }
     },
     "Zipkin": {
@@ -2598,6 +2628,17 @@
         "POLAND": 6
       }
     },
+    "FrontPage": {
+      "pages": 6,
+      "categories": [
+        "Editors"
+      ],
+      "by_country": {
+        "ITALY": 1,
+        "POLAND": 4,
+        "UNITED_KINGDOM_UK": 1
+      }
+    },
     "GOV.UK Elements": {
       "pages": 6,
       "categories": [
@@ -2635,15 +2676,6 @@
         "UNITED_KINGDOM_UK": 1
       }
     },
-    "Quick.CMS": {
-      "pages": 6,
-      "categories": [
-        "CMS"
-      ],
-      "by_country": {
-        "POLAND": 6
-      }
-    },
     "SDL Tridion": {
       "pages": 6,
       "categories": [
@@ -2662,6 +2694,15 @@
       "by_country": {
         "POLAND": 5,
         "UNITED_KINGDOM_UK": 1
+      }
+    },
+    "SweetAlert": {
+      "pages": 6,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "POLAND": 6
       }
     },
     "Weebly": {
@@ -2683,14 +2724,23 @@
         "UNITED_KINGDOM_UK": 6
       }
     },
-    "Contao": {
-      "pages": 5,
+    "mod_wsgi": {
+      "pages": 6,
       "categories": [
-        "CMS"
+        "Web server extensions"
       ],
       "by_country": {
-        "FRANCE": 3,
-        "POLAND": 2
+        "POLAND": 3,
+        "SPAIN": 3
+      }
+    },
+    "DoubleClick Ad Exchange (AdX)": {
+      "pages": 5,
+      "categories": [
+        "Advertising"
+      ],
+      "by_country": {
+        "POLAND": 5
       }
     },
     "Ghost": {
@@ -2730,6 +2780,16 @@
         "UNITED_KINGDOM_UK": 3
       }
     },
+    "Marked": {
+      "pages": 5,
+      "categories": [
+        "JavaScript libraries"
+      ],
+      "by_country": {
+        "POLAND": 3,
+        "UNITED_KINGDOM_UK": 2
+      }
+    },
     "Matomo Analytics": {
       "pages": 5,
       "categories": [
@@ -2757,6 +2817,16 @@
         "POLAND": 5
       }
     },
+    "Blazor": {
+      "pages": 4,
+      "categories": [
+        "Web frameworks"
+      ],
+      "by_country": {
+        "POLAND": 1,
+        "UNITED_KINGDOM_UK": 3
+      }
+    },
     "Bootstrap Table": {
       "pages": 4,
       "categories": [
@@ -2766,15 +2836,13 @@
         "UNITED_KINGDOM_UK": 4
       }
     },
-    "FrontPage": {
+    "Gemius": {
       "pages": 4,
       "categories": [
-        "Editors"
+        "Analytics"
       ],
       "by_country": {
-        "ITALY": 1,
-        "POLAND": 2,
-        "UNITED_KINGDOM_UK": 1
+        "POLAND": 4
       }
     },
     "JavaServer Faces": {
@@ -2854,16 +2922,6 @@
         "POLAND": 4
       }
     },
-    "mod_wsgi": {
-      "pages": 4,
-      "categories": [
-        "Web server extensions"
-      ],
-      "by_country": {
-        "POLAND": 1,
-        "SPAIN": 3
-      }
-    },
     "AOS": {
       "pages": 3,
       "categories": [
@@ -2900,15 +2958,6 @@
         "UNITED_KINGDOM_UK": 3
       }
     },
-    "Blazor": {
-      "pages": 3,
-      "categories": [
-        "Web frameworks"
-      ],
-      "by_country": {
-        "UNITED_KINGDOM_UK": 3
-      }
-    },
     "Cargo": {
       "pages": 3,
       "categories": [
@@ -2926,16 +2975,6 @@
       "by_country": {
         "FRANCE": 1,
         "UNITED_KINGDOM_UK": 2
-      }
-    },
-    "Cloudinary": {
-      "pages": 3,
-      "categories": [
-        "CDN"
-      ],
-      "by_country": {
-        "POLAND": 2,
-        "UNITED_KINGDOM_UK": 1
       }
     },
     "F5 BigIP": {
@@ -3179,6 +3218,25 @@
         "UNITED_KINGDOM_UK": 2
       }
     },
+    "CoverManager": {
+      "pages": 2,
+      "categories": [
+        "Appointment scheduling",
+        "Widgets"
+      ],
+      "by_country": {
+        "POLAND": 2
+      }
+    },
+    "Drupal Commerce": {
+      "pages": 2,
+      "categories": [
+        "Ecommerce"
+      ],
+      "by_country": {
+        "POLAND": 2
+      }
+    },
     "Duda": {
       "pages": 2,
       "categories": [
@@ -3202,15 +3260,6 @@
       "pages": 2,
       "categories": [
         "Operating systems"
-      ],
-      "by_country": {
-        "POLAND": 2
-      }
-    },
-    "Gemius": {
-      "pages": 2,
-      "categories": [
-        "Analytics"
       ],
       "by_country": {
         "POLAND": 2
@@ -3248,15 +3297,6 @@
       "pages": 2,
       "categories": [
         "Databases"
-      ],
-      "by_country": {
-        "UNITED_KINGDOM_UK": 2
-      }
-    },
-    "Marked": {
-      "pages": 2,
-      "categories": [
-        "JavaScript libraries"
       ],
       "by_country": {
         "UNITED_KINGDOM_UK": 2
@@ -3403,6 +3443,15 @@
         "SPAIN": 2
       }
     },
+    "e107": {
+      "pages": 2,
+      "categories": [
+        "CMS"
+      ],
+      "by_country": {
+        "POLAND": 2
+      }
+    },
     "nopCommerce": {
       "pages": 2,
       "categories": [
@@ -3489,6 +3538,24 @@
       "pages": 1,
       "categories": [
         "Page builders"
+      ],
+      "by_country": {
+        "POLAND": 1
+      }
+    },
+    "Neos CMS": {
+      "pages": 1,
+      "categories": [
+        "CMS"
+      ],
+      "by_country": {
+        "POLAND": 1
+      }
+    },
+    "Neos Flow": {
+      "pages": 1,
+      "categories": [
+        "Web frameworks"
       ],
       "by_country": {
         "POLAND": 1
@@ -3588,7 +3655,7 @@
   },
   "by_category": {
     "JavaScript libraries": {
-      "pages": 19559,
+      "pages": 21412,
       "technologies": [
         "AOS",
         "Axios",
@@ -3611,6 +3678,7 @@
         "Slimbox",
         "Slimbox 2",
         "Snap.svg",
+        "SweetAlert",
         "SweetAlert2",
         "TurfJS",
         "Twitter typeahead.js",
@@ -3630,7 +3698,7 @@
       ]
     },
     "Font scripts": {
-      "pages": 10331,
+      "pages": 11325,
       "technologies": [
         "Cufon",
         "Font Awesome",
@@ -3643,7 +3711,7 @@
       ]
     },
     "Web servers": {
-      "pages": 10152,
+      "pages": 11086,
       "technologies": [
         "Amazon EC2",
         "Apache",
@@ -3671,7 +3739,7 @@
       ]
     },
     "Programming languages": {
-      "pages": 7303,
+      "pages": 7911,
       "technologies": [
         "CFML",
         "Go",
@@ -3685,7 +3753,7 @@
       ]
     },
     "CMS": {
-      "pages": 6658,
+      "pages": 7187,
       "technologies": [
         "Adobe Experience Manager",
         "Bloomreach",
@@ -3708,6 +3776,7 @@
         "Liferay",
         "MODX",
         "Microsoft SharePoint",
+        "Neos CMS",
         "OpenCms",
         "Orchard CMS",
         "PlatformOS",
@@ -3726,11 +3795,12 @@
         "Vignette",
         "Weebly",
         "Wix",
-        "WordPress"
+        "WordPress",
+        "e107"
       ]
     },
     "UI frameworks": {
-      "pages": 5743,
+      "pages": 6270,
       "technologies": [
         "Bootstrap",
         "Bulma",
@@ -3748,7 +3818,7 @@
       ]
     },
     "CDN": {
-      "pages": 5524,
+      "pages": 5635,
       "technologies": [
         "Akamai",
         "Amazon Cloudfront",
@@ -3762,14 +3832,14 @@
       ]
     },
     "Tag managers": {
-      "pages": 5203,
+      "pages": 5496,
       "technologies": [
         "Google Tag Manager",
         "TagCommander"
       ]
     },
     "Databases": {
-      "pages": 4354,
+      "pages": 4683,
       "technologies": [
         "Firebase",
         "Lucene",
@@ -3782,7 +3852,7 @@
       ]
     },
     "Blogs": {
-      "pages": 4244,
+      "pages": 4572,
       "technologies": [
         "Ghost",
         "Tiki Wiki CMS Groupware",
@@ -3791,7 +3861,7 @@
       ]
     },
     "Reverse proxies": {
-      "pages": 3180,
+      "pages": 3357,
       "technologies": [
         "Envoy",
         "F5 BigIP",
@@ -3799,7 +3869,7 @@
       ]
     },
     "Security": {
-      "pages": 2081,
+      "pages": 2164,
       "technologies": [
         "Imperva",
         "hCaptcha",
@@ -3807,7 +3877,7 @@
       ]
     },
     "Operating systems": {
-      "pages": 2067,
+      "pages": 2139,
       "technologies": [
         "CentOS",
         "Debian",
@@ -3820,7 +3890,7 @@
       ]
     },
     "PaaS": {
-      "pages": 1904,
+      "pages": 1907,
       "technologies": [
         "Amazon Web Services",
         "Cloud Platform",
@@ -3836,7 +3906,7 @@
       ]
     },
     "JavaScript frameworks": {
-      "pages": 1713,
+      "pages": 1861,
       "technologies": [
         "AMP",
         "Alpine.js",
@@ -3865,7 +3935,7 @@
       ]
     },
     "Web frameworks": {
-      "pages": 1623,
+      "pages": 1643,
       "technologies": [
         "Blazor",
         "Django",
@@ -3877,6 +3947,7 @@
         "Livewire",
         "Microsoft ASP.NET",
         "Mono",
+        "Neos Flow",
         "Next.js",
         "Ruby on Rails",
         "Spring",
@@ -3885,7 +3956,7 @@
       ]
     },
     "Miscellaneous": {
-      "pages": 1473,
+      "pages": 1607,
       "technologies": [
         "Amazon S3",
         "Clipboard.js",
@@ -3905,19 +3976,13 @@
         "webpack"
       ]
     },
-    "SEO": {
-      "pages": 1331,
-      "technologies": [
-        "All in One SEO Pack",
-        "Yoast SEO"
-      ]
-    },
     "Widgets": {
-      "pages": 1322,
+      "pages": 1480,
       "technologies": [
         "AddThis",
         "AddToAny",
         "Booksy",
+        "CoverManager",
         "Facebook",
         "FareHarbor",
         "FlexSlider",
@@ -3930,8 +3995,15 @@
         "Twitter"
       ]
     },
+    "SEO": {
+      "pages": 1441,
+      "technologies": [
+        "All in One SEO Pack",
+        "Yoast SEO"
+      ]
+    },
     "Maps": {
-      "pages": 1295,
+      "pages": 1387,
       "technologies": [
         "ArcGIS API for JavaScript",
         "Google Maps",
@@ -3939,8 +4011,19 @@
         "OpenLayers"
       ]
     },
+    "Page builders": {
+      "pages": 1375,
+      "technologies": [
+        "Elementor",
+        "Mobirise",
+        "Oxygen",
+        "Unbounce",
+        "Webflow",
+        "wpBakery"
+      ]
+    },
     "Caching": {
-      "pages": 1285,
+      "pages": 1354,
       "technologies": [
         "Google PageSpeed",
         "Litespeed Cache",
@@ -3953,19 +4036,8 @@
         "wpCache"
       ]
     },
-    "Page builders": {
-      "pages": 1282,
-      "technologies": [
-        "Elementor",
-        "Mobirise",
-        "Oxygen",
-        "Unbounce",
-        "Webflow",
-        "wpBakery"
-      ]
-    },
     "Cookie compliance": {
-      "pages": 1021,
+      "pages": 1049,
       "technologies": [
         "CIVIC",
         "Cookiebot",
@@ -3974,9 +4046,10 @@
       ]
     },
     "Ecommerce": {
-      "pages": 996,
+      "pages": 1033,
       "technologies": [
         "Cart Functionality",
+        "Drupal Commerce",
         "Magento",
         "PrestaShop",
         "Siteglide",
@@ -3987,7 +4060,7 @@
       ]
     },
     "Accessibility": {
-      "pages": 458,
+      "pages": 465,
       "technologies": [
         "Adally",
         "Recite Me",
@@ -3995,13 +4068,13 @@
       ]
     },
     "Video players": {
-      "pages": 406,
+      "pages": 460,
       "technologies": [
         "YouTube"
       ]
     },
     "Analytics": {
-      "pages": 275,
+      "pages": 293,
       "technologies": [
         "BugSnag",
         "Cloudflare Browser Insights",
@@ -4021,7 +4094,7 @@
       ]
     },
     "JavaScript graphics": {
-      "pages": 217,
+      "pages": 234,
       "technologies": [
         "Chart.js",
         "D3",
@@ -4037,14 +4110,14 @@
       ]
     },
     "Rich text editors": {
-      "pages": 168,
+      "pages": 172,
       "technologies": [
         "Froala Editor",
         "TinyMCE"
       ]
     },
     "Web server extensions": {
-      "pages": 155,
+      "pages": 161,
       "technologies": [
         "Google PageSpeed",
         "OpenSSL",
@@ -4057,41 +4130,42 @@
       ]
     },
     "Hosting panels": {
-      "pages": 130,
+      "pages": 131,
       "technologies": [
         "Plesk"
       ]
     },
     "Development": {
-      "pages": 83,
+      "pages": 86,
       "technologies": [
         "PHPDebugBar",
         "styled-components"
       ]
     },
+    "Search engines": {
+      "pages": 81,
+      "technologies": [
+        "Awesomplete"
+      ]
+    },
     "Mobile frameworks": {
-      "pages": 73,
+      "pages": 80,
       "technologies": [
         "Wink",
         "jQuery Mobile",
         "jQuery-pjax"
       ]
     },
-    "Search engines": {
-      "pages": 66,
-      "technologies": [
-        "Awesomplete"
-      ]
-    },
     "Advertising": {
-      "pages": 56,
+      "pages": 79,
       "technologies": [
         "AppNexus",
+        "DoubleClick Ad Exchange (AdX)",
         "Google AdSense"
       ]
     },
     "Editors": {
-      "pages": 47,
+      "pages": 57,
       "technologies": [
         "DreamWeaver",
         "FrontPage",
@@ -4101,13 +4175,13 @@
       ]
     },
     "Social logins": {
-      "pages": 43,
+      "pages": 48,
       "technologies": [
         "Google Sign-in"
       ]
     },
     "Marketing automation": {
-      "pages": 38,
+      "pages": 39,
       "technologies": [
         "Klaviyo",
         "MailChimp",
@@ -4116,9 +4190,15 @@
       ]
     },
     "Email": {
-      "pages": 31,
+      "pages": 32,
       "technologies": [
         "MailChimp"
+      ]
+    },
+    "Photo galleries": {
+      "pages": 30,
+      "technologies": [
+        "NextGEN Gallery"
       ]
     },
     "LMS": {
@@ -4127,25 +4207,19 @@
         "Moodle"
       ]
     },
+    "Static site generator": {
+      "pages": 22,
+      "technologies": [
+        "Gatsby",
+        "Hugo",
+        "Jekyll"
+      ]
+    },
     "DMS": {
       "pages": 20,
       "technologies": [
         "Koha",
         "Open Journal Systems"
-      ]
-    },
-    "Photo galleries": {
-      "pages": 19,
-      "technologies": [
-        "NextGEN Gallery"
-      ]
-    },
-    "Static site generator": {
-      "pages": 19,
-      "technologies": [
-        "Gatsby",
-        "Hugo",
-        "Jekyll"
       ]
     },
     "Payment processors": {
@@ -4157,10 +4231,18 @@
       ]
     },
     "Message boards": {
-      "pages": 11,
+      "pages": 13,
       "technologies": [
         "Tiki Wiki CMS Groupware",
         "phpBB"
+      ]
+    },
+    "Appointment scheduling": {
+      "pages": 5,
+      "technologies": [
+        "Booksy",
+        "CoverManager",
+        "FareHarbor"
       ]
     },
     "Wikis": {
@@ -4181,13 +4263,6 @@
       "pages": 3,
       "technologies": [
         "Google Optimize"
-      ]
-    },
-    "Appointment scheduling": {
-      "pages": 3,
-      "technologies": [
-        "Booksy",
-        "FareHarbor"
       ]
     },
     "CRM": {
