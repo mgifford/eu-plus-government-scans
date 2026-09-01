@@ -11,13 +11,13 @@ power them, including which third-party JavaScript services they rely on.
 
 <!-- SCAN_PROGRESS_START -->
 
-_Progress as of 2026-09-01 17:06 UTC_
+_Progress as of 2026-09-01 17:22 UTC_
 
 | Scan Type | Pages Scanned | Coverage | Avg Age |
 |-----------|--------------|----------|---------|
 | **Combined Reachability** | **66,680 confirmed reachable** | **<span role="img" aria-label="76.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:91px;"></span></span><span class="sm-bar__label">76.0%</span></span>** | — |
 | Social Media | 73,793 scanned (66,579 reachable) | <span role="img" aria-label="84.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:101px;"></span></span><span class="sm-bar__label">84.1%</span></span> | 11.8 days |
-| Technology | 86,869 scanned | <span role="img" aria-label="99.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:119px;"></span></span><span class="sm-bar__label">99.1%</span></span> | 11.2 days |
+| Technology | 87,646 scanned | <span role="img" aria-label="99.9% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">99.9%</span></span> | 11.1 days |
 | Lighthouse | 13,476 scanned | <span role="img" aria-label="15.4% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:18px;"></span></span><span class="sm-bar__label">15.4%</span></span> | 23.1 days |
 | Accessibility Statements | 69,509 scanned | <span role="img" aria-label="79.3% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:95px;"></span></span><span class="sm-bar__label">79.3%</span></span> | 12.2 days |
 
