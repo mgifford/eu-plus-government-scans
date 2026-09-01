@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T04:32:32.740590+00:00",
+  "generated_at": "2026-09-01T11:59:18.694731+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -188,7 +188,7 @@
     {
       "service": "fontawesome.com",
       "countries": 32,
-      "domains": 799
+      "domains": 800
     },
     {
       "service": "google.com",
@@ -203,7 +203,7 @@
     {
       "service": "cloudflare.com",
       "countries": 31,
-      "domains": 1450
+      "domains": 1451
     },
     {
       "service": "jquery.com",
@@ -1100,9 +1100,9 @@
       "country_code": "SPAIN",
       "country": "Spain",
       "service": "fontawesome.com",
-      "domains": 31,
+      "domains": 32,
       "scanned_domains": 240,
-      "percent": 12.9
+      "percent": 13.3
     },
     {
       "country_code": "SPAIN",
@@ -1124,9 +1124,9 @@
       "country_code": "SPAIN",
       "country": "Spain",
       "service": "cloudflare.com",
-      "domains": 58,
+      "domains": 59,
       "scanned_domains": 240,
-      "percent": 24.2
+      "percent": 24.6
     },
     {
       "country_code": "SPAIN",

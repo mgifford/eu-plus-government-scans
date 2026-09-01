@@ -74,8 +74,8 @@
   "SPAIN": {
     "total_urls": 6091,
     "attempted": 6091,
-    "successful": 5245,
-    "failed": 846,
+    "successful": 5250,
+    "failed": 841,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 2360
@@ -147,7 +147,7 @@
     "failed": 622,
     "skipped": 0,
     "never_scanned": 0,
-    "stale_31d": 2021
+    "stale_31d": 2072
   },
   "ESTONIA": {
     "total_urls": 401,
