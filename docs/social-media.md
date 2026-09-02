@@ -8,45 +8,45 @@ layout: page
 <div id="sm-tier-pie-container" style="float:right;margin:0 0 1rem 1.5rem;width:260px;max-width:45%;">
 <svg role="img" aria-labelledby="pie-title pie-desc" viewBox="0 0 240 314" width="240" height="314" xmlns="http://www.w3.org/2000/svg">
 <title id="pie-title">Social media tier distribution</title>
-<desc id="pie-desc">Pie chart: social media tier distribution across 74,414 scanned pages. Legacy only: 21,994 (29.6%), Modern only: 275 (0.4%), Mixed: 4,084 (5.5%), No Social: 40,757 (54.8%)</desc>
-<path d="M 120,110 L 120.000,20.000 A 90,90 0 0,1 199.478,152.229 Z" fill="#1a8cd8" stroke="#fff" stroke-width="1"><title>Twitter/X only: 21,994 (32.8%)</title></path>
-<path d="M 120,110 L 199.478,152.229 A 90,90 0 0,1 198.364,154.261 Z" fill="#0085ff" stroke="#fff" stroke-width="1"><title>Modern only: 275 (0.4%)</title></path>
-<path d="M 120,110 L 198.364,154.261 A 90,90 0 0,1 176.191,180.304 Z" fill="#7856ff" stroke="#fff" stroke-width="1"><title>Mixed: 4,084 (6.1%)</title></path>
-<path d="M 120,110 L 176.191,180.304 A 90,90 0 1,1 120.000,20.000 Z" fill="#cccccc" stroke="#fff" stroke-width="1"><title>No Social: 40,757 (60.7%)</title></path>
+<desc id="pie-desc">Pie chart: social media tier distribution across 76,218 scanned pages. Legacy only: 22,622 (29.7%), Modern only: 280 (0.4%), Mixed: 4,144 (5.4%), No Social: 41,804 (54.8%)</desc>
+<path d="M 120,110 L 120.000,20.000 A 90,90 0 0,1 199.254,152.647 Z" fill="#1a8cd8" stroke="#fff" stroke-width="1"><title>Twitter/X only: 22,622 (32.9%)</title></path>
+<path d="M 120,110 L 199.254,152.647 A 90,90 0 0,1 198.139,154.658 Z" fill="#0085ff" stroke="#fff" stroke-width="1"><title>Modern only: 280 (0.4%)</title></path>
+<path d="M 120,110 L 198.139,154.658 A 90,90 0 0,1 176.128,180.353 Z" fill="#7856ff" stroke="#fff" stroke-width="1"><title>Mixed: 4,144 (6.0%)</title></path>
+<path d="M 120,110 L 176.128,180.353 A 90,90 0 1,1 120.000,20.000 Z" fill="#cccccc" stroke="#fff" stroke-width="1"><title>No Social: 41,804 (60.7%)</title></path>
 <rect x="20" y="216" width="14" height="14" fill="#1a8cd8"/>
-<text x="40" y="227" font-size="11" font-family="sans-serif" fill="#333">Twitter/X only (32.8%)</text>
+<text x="40" y="227" font-size="11" font-family="sans-serif" fill="#333">Twitter/X only (32.9%)</text>
 <rect x="20" y="238" width="14" height="14" fill="#0085ff"/>
 <text x="40" y="249" font-size="11" font-family="sans-serif" fill="#333">Modern only (0.4%)</text>
 <rect x="20" y="260" width="14" height="14" fill="#7856ff"/>
-<text x="40" y="271" font-size="11" font-family="sans-serif" fill="#333">Mixed (6.1%)</text>
+<text x="40" y="271" font-size="11" font-family="sans-serif" fill="#333">Mixed (6.0%)</text>
 <rect x="20" y="282" width="14" height="14" fill="#cccccc"/>
 <text x="40" y="293" font-size="11" font-family="sans-serif" fill="#333">No Social (60.7%)</text>
 </svg>
 <p style="text-align:center;font-size:0.75em;margin:0.3rem 0 0;color:#555;font-style:italic;">Social media tier distribution</p>
 </div>
 
-_Stats as of 2026-09-02 04:02 UTC — last scan: 2026-09-01_
+_Stats as of 2026-09-02 04:37 UTC — last scan: 2026-09-02_
 
-**98** scan batches run
+**99** scan batches run
 
-**74,408** of **87,696** available pages scanned (**84.8%** coverage)
-**67,104** of **74,408** scanned pages were reachable (**90.2%**)
+**76,212** of **87,696** available pages scanned (**86.9%** coverage)
+**68,844** of **76,212** scanned pages were reachable (**90.3%**)
 
 **Legacy social media** (older, centralised platforms):
 
 | Platform | Pages with link | % of scanned | % of reachable |
 |----------|----------------|:------------:|:--------------:|
-| 🐦 Twitter | **11,967** | 16.1% | 17.8% |
-| ✖ X | **3,007** | 4.0% | 4.5% |
-| 👍 Facebook | **23,073** | 31.0% | 34.4% |
-| 💼 LinkedIn | **9,041** | 12.2% | 13.5% |
+| 🐦 Twitter | **12,286** | 16.1% | 17.8% |
+| ✖ X | **3,137** | 4.1% | 4.6% |
+| 👍 Facebook | **23,681** | 31.1% | 34.4% |
+| 💼 LinkedIn | **9,274** | 12.2% | 13.5% |
 
 **Modern / open social media** (decentralised or open platforms):
 
 | Platform | Pages with link | % of scanned | % of reachable |
 |----------|----------------|:------------:|:--------------:|
-| 🦋 Bluesky | **770** | 1.0% | 1.1% |
-| 🐘 Mastodon / Fediverse | **3,857** | 5.2% | 5.7% |
+| 🦋 Bluesky | **785** | 1.0% | 1.1% |
+| 🐘 Mastodon / Fediverse | **3,912** | 5.1% | 5.7% |
 
 <div style="clear:both;"></div>
 
@@ -73,9 +73,9 @@ Countries ranked by **Digital Sovereignty Score** — the percentage of reachabl
 | 11 | Switzerland | 65.9% | 1,341 | 28 | 34.1% | 🥉 Growing |
 | 12 | Portugal | 65.6% | 1,856 | 2 | 34.4% | 🥉 Growing |
 | 13 | Slovenia | 65.5% | 135 | 0 | 34.5% | 🥉 Growing |
-| 14 | United Kingdom | 63.6% | 7,109 | 17 | 36.4% | 🥉 Growing |
-| 15 | Denmark | 63.4% | 950 | 0 | 36.6% | 🥉 Growing |
-| 16 | Netherlands | 63.2% | 559 | 10 | 36.8% | 🥉 Growing |
+| 14 | Denmark | 63.4% | 950 | 0 | 36.6% | 🥉 Growing |
+| 15 | Netherlands | 63.2% | 559 | 10 | 36.8% | 🥉 Growing |
+| 16 | United Kingdom | 63.2% | 8,156 | 22 | 36.8% | 🥉 Growing |
 | 17 | Czechia | 63.0% | 498 | 2 | 37.0% | 🥉 Growing |
 | 18 | Romania | 61.6% | 214 | 3 | 38.4% | 🥉 Growing |
 | 19 | Slovakia | 61.3% | 253 | 0 | 38.7% | 🥉 Growing |
@@ -132,8 +132,8 @@ Countries ranked by **Digital Sovereignty Score** — the percentage of reachabl
 | Spain | 6,091 | 6,091 | 5,039 | 56.7% | 2,846 | 1,834 | 1,563 | 460 | 1,669 | 514 | 11 | 348 | 62 | 316 | Aug 2026 |
 | Sweden | 1,702 | 1,702 | 1,475 | 66.6% | 979 | 439 | 74 | 21 | 405 | 350 | 4 | 53 | 14 | 44 | Aug 2026 |
 | Switzerland | 2,123 | 2,123 | 2,076 | 65.9% | 1,341 | 559 | 227 | 222 | 249 | 559 | 28 | 148 | 50 | 141 | Aug 2026 |
-| United Kingdom | 12,016 | 19,511 | 11,210 | 63.6% | 7,109 | 3,705 | 2,377 | 547 | 3,623 | 1,477 | 17 | 379 | 48 | 368 | Aug 2026 – Sep 2026 |
-| **Total** | **74,414** | **87,696** | **67,110** | **61.1%** | **40,757** | **21,994** | **11,973** | **3,013** | **23,079** | **9,041** | **275** | **4,084** | **770** | **3,857** | — |
+| United Kingdom | 13,820 | 19,511 | 12,950 | 63.2% | 8,156 | 4,333 | 2,696 | 677 | 4,231 | 1,710 | 22 | 439 | 63 | 423 | Aug 2026 – Sep 2026 |
+| **Total** | **76,218** | **87,696** | **68,850** | **61.1%** | **41,804** | **22,622** | **12,292** | **3,143** | **23,687** | **9,274** | **280** | **4,144** | **785** | **3,912** | — |
 
 > Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open. Full machine-readable data is available as the [social-media-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
 
