@@ -1,10 +1,10 @@
 ﻿country_code,country,service,domains_depending,scanned_domains,percent
 UNITED_KINGDOM_UK,United Kingdom,googleapis.com,1209,2754,43.9
 UNITED_KINGDOM_UK,United Kingdom,googletagmanager.com,1124,2754,40.8
+UNITED_KINGDOM_UK,United Kingdom,gstatic.com,501,2754,18.2
 UNITED_KINGDOM_UK,United Kingdom,jsdelivr.net,371,2754,13.5
 UNITED_KINGDOM_UK,United Kingdom,fontawesome.com,357,2754,13.0
 UNITED_KINGDOM_UK,United Kingdom,google.com,976,2754,35.4
-UNITED_KINGDOM_UK,United Kingdom,gstatic.com,501,2754,18.2
 UNITED_KINGDOM_UK,United Kingdom,cloudflare.com,642,2754,23.3
 UNITED_KINGDOM_UK,United Kingdom,jquery.com,171,2754,6.2
 UNITED_KINGDOM_UK,United Kingdom,unpkg.com,296,2754,10.7
@@ -21,10 +21,10 @@ UNITED_KINGDOM_UK,United Kingdom,mapbox.com,40,2754,1.5
 UNITED_KINGDOM_UK,United Kingdom,cloudfront.net,281,2754,10.2
 POLAND,Poland,googleapis.com,1381,2289,60.3
 POLAND,Poland,googletagmanager.com,618,2289,27.0
+POLAND,Poland,gstatic.com,466,2289,20.4
 POLAND,Poland,jsdelivr.net,165,2289,7.2
 POLAND,Poland,fontawesome.com,121,2289,5.3
 POLAND,Poland,google.com,357,2289,15.6
-POLAND,Poland,gstatic.com,466,2289,20.4
 POLAND,Poland,cloudflare.com,226,2289,9.9
 POLAND,Poland,jquery.com,128,2289,5.6
 POLAND,Poland,unpkg.com,60,2289,2.6
@@ -41,10 +41,10 @@ POLAND,Poland,mapbox.com,11,2289,0.5
 POLAND,Poland,cloudfront.net,27,2289,1.2
 FRANCE,France,googleapis.com,231,657,35.2
 FRANCE,France,googletagmanager.com,91,657,13.9
+FRANCE,France,gstatic.com,115,657,17.5
 FRANCE,France,jsdelivr.net,91,657,13.9
 FRANCE,France,fontawesome.com,61,657,9.3
 FRANCE,France,google.com,93,657,14.2
-FRANCE,France,gstatic.com,115,657,17.5
 FRANCE,France,cloudflare.com,113,657,17.2
 FRANCE,France,jquery.com,47,657,7.2
 FRANCE,France,unpkg.com,70,657,10.7
@@ -61,10 +61,10 @@ FRANCE,France,mapbox.com,9,657,1.4
 FRANCE,France,cloudfront.net,12,657,1.8
 PORTUGAL,Portugal,googleapis.com,231,385,60.0
 PORTUGAL,Portugal,googletagmanager.com,201,385,52.2
+PORTUGAL,Portugal,gstatic.com,90,385,23.4
 PORTUGAL,Portugal,jsdelivr.net,72,385,18.7
 PORTUGAL,Portugal,fontawesome.com,43,385,11.2
 PORTUGAL,Portugal,google.com,143,385,37.1
-PORTUGAL,Portugal,gstatic.com,90,385,23.4
 PORTUGAL,Portugal,cloudflare.com,75,385,19.5
 PORTUGAL,Portugal,jquery.com,44,385,11.4
 PORTUGAL,Portugal,unpkg.com,51,385,13.2
@@ -81,10 +81,10 @@ PORTUGAL,Portugal,mapbox.com,5,385,1.3
 PORTUGAL,Portugal,cloudfront.net,0,385,0.0
 GREECE,Greece,googleapis.com,241,362,66.6
 GREECE,Greece,googletagmanager.com,131,362,36.2
+GREECE,Greece,gstatic.com,106,362,29.3
 GREECE,Greece,jsdelivr.net,60,362,16.6
 GREECE,Greece,fontawesome.com,24,362,6.6
 GREECE,Greece,google.com,61,362,16.9
-GREECE,Greece,gstatic.com,106,362,29.3
 GREECE,Greece,cloudflare.com,60,362,16.6
 GREECE,Greece,jquery.com,26,362,7.2
 GREECE,Greece,unpkg.com,24,362,6.6
@@ -101,10 +101,10 @@ GREECE,Greece,mapbox.com,0,362,0.0
 GREECE,Greece,cloudfront.net,2,362,0.6
 SPAIN,Spain,googleapis.com,101,240,42.1
 SPAIN,Spain,googletagmanager.com,87,240,36.2
+SPAIN,Spain,gstatic.com,53,240,22.1
 SPAIN,Spain,jsdelivr.net,54,240,22.5
 SPAIN,Spain,fontawesome.com,32,240,13.3
 SPAIN,Spain,google.com,42,240,17.5
-SPAIN,Spain,gstatic.com,53,240,22.1
 SPAIN,Spain,cloudflare.com,59,240,24.6
 SPAIN,Spain,jquery.com,25,240,10.4
 SPAIN,Spain,unpkg.com,22,240,9.2
@@ -121,10 +121,10 @@ SPAIN,Spain,mapbox.com,3,240,1.2
 SPAIN,Spain,cloudfront.net,4,240,1.7
 SWEDEN,Sweden,googleapis.com,63,230,27.4
 SWEDEN,Sweden,googletagmanager.com,15,230,6.5
+SWEDEN,Sweden,gstatic.com,19,230,8.3
 SWEDEN,Sweden,jsdelivr.net,17,230,7.4
 SWEDEN,Sweden,fontawesome.com,8,230,3.5
 SWEDEN,Sweden,google.com,22,230,9.6
-SWEDEN,Sweden,gstatic.com,19,230,8.3
 SWEDEN,Sweden,cloudflare.com,24,230,10.4
 SWEDEN,Sweden,jquery.com,14,230,6.1
 SWEDEN,Sweden,unpkg.com,2,230,0.9
@@ -141,10 +141,10 @@ SWEDEN,Sweden,mapbox.com,1,230,0.4
 SWEDEN,Sweden,cloudfront.net,1,230,0.4
 GERMANY,Germany,googleapis.com,17,215,7.9
 GERMANY,Germany,googletagmanager.com,7,215,3.3
+GERMANY,Germany,gstatic.com,8,215,3.7
 GERMANY,Germany,jsdelivr.net,17,215,7.9
 GERMANY,Germany,fontawesome.com,3,215,1.4
 GERMANY,Germany,google.com,5,215,2.3
-GERMANY,Germany,gstatic.com,8,215,3.7
 GERMANY,Germany,cloudflare.com,14,215,6.5
 GERMANY,Germany,jquery.com,10,215,4.7
 GERMANY,Germany,unpkg.com,4,215,1.9
@@ -161,10 +161,10 @@ GERMANY,Germany,mapbox.com,2,215,0.9
 GERMANY,Germany,cloudfront.net,0,215,0.0
 CANADA,Canada,googleapis.com,104,191,54.5
 CANADA,Canada,googletagmanager.com,76,191,39.8
+CANADA,Canada,gstatic.com,37,191,19.4
 CANADA,Canada,jsdelivr.net,38,191,19.9
 CANADA,Canada,fontawesome.com,56,191,29.3
 CANADA,Canada,google.com,47,191,24.6
-CANADA,Canada,gstatic.com,37,191,19.4
 CANADA,Canada,cloudflare.com,44,191,23.0
 CANADA,Canada,jquery.com,22,191,11.5
 CANADA,Canada,unpkg.com,22,191,11.5
@@ -181,10 +181,10 @@ CANADA,Canada,mapbox.com,3,191,1.6
 CANADA,Canada,cloudfront.net,12,191,6.3
 ITALY,Italy,googleapis.com,87,146,59.6
 ITALY,Italy,googletagmanager.com,33,146,22.6
-ITALY,Italy,jsdelivr.net,52,146,35.6
+ITALY,Italy,gstatic.com,29,146,19.9
+ITALY,Italy,jsdelivr.net,53,146,36.3
 ITALY,Italy,fontawesome.com,25,146,17.1
 ITALY,Italy,google.com,34,146,23.3
-ITALY,Italy,gstatic.com,29,146,19.9
 ITALY,Italy,cloudflare.com,39,146,26.7
 ITALY,Italy,jquery.com,39,146,26.7
 ITALY,Italy,unpkg.com,15,146,10.3
@@ -201,10 +201,10 @@ ITALY,Italy,mapbox.com,1,146,0.7
 ITALY,Italy,cloudfront.net,1,146,0.7
 LATVIA,Latvia,googleapis.com,38,141,27.0
 LATVIA,Latvia,googletagmanager.com,25,141,17.7
+LATVIA,Latvia,gstatic.com,14,141,9.9
 LATVIA,Latvia,jsdelivr.net,13,141,9.2
 LATVIA,Latvia,fontawesome.com,2,141,1.4
 LATVIA,Latvia,google.com,10,141,7.1
-LATVIA,Latvia,gstatic.com,14,141,9.9
 LATVIA,Latvia,cloudflare.com,9,141,6.4
 LATVIA,Latvia,jquery.com,7,141,5.0
 LATVIA,Latvia,unpkg.com,4,141,2.8
@@ -221,10 +221,10 @@ LATVIA,Latvia,mapbox.com,1,141,0.7
 LATVIA,Latvia,cloudfront.net,1,141,0.7
 IRELAND,Ireland,googleapis.com,51,104,49.0
 IRELAND,Ireland,googletagmanager.com,30,104,28.8
+IRELAND,Ireland,gstatic.com,17,104,16.3
 IRELAND,Ireland,jsdelivr.net,20,104,19.2
 IRELAND,Ireland,fontawesome.com,9,104,8.7
 IRELAND,Ireland,google.com,21,104,20.2
-IRELAND,Ireland,gstatic.com,17,104,16.3
 IRELAND,Ireland,cloudflare.com,21,104,20.2
 IRELAND,Ireland,jquery.com,14,104,13.5
 IRELAND,Ireland,unpkg.com,5,104,4.8
@@ -241,10 +241,10 @@ IRELAND,Ireland,mapbox.com,0,104,0.0
 IRELAND,Ireland,cloudfront.net,2,104,1.9
 DENMARK,Denmark,googleapis.com,25,79,31.6
 DENMARK,Denmark,googletagmanager.com,1,79,1.3
+DENMARK,Denmark,gstatic.com,14,79,17.7
 DENMARK,Denmark,jsdelivr.net,5,79,6.3
 DENMARK,Denmark,fontawesome.com,2,79,2.5
 DENMARK,Denmark,google.com,6,79,7.6
-DENMARK,Denmark,gstatic.com,14,79,17.7
 DENMARK,Denmark,cloudflare.com,12,79,15.2
 DENMARK,Denmark,jquery.com,8,79,10.1
 DENMARK,Denmark,unpkg.com,9,79,11.4
@@ -261,10 +261,10 @@ DENMARK,Denmark,mapbox.com,1,79,1.3
 DENMARK,Denmark,cloudfront.net,1,79,1.3
 NETHERLANDS,Netherlands,googleapis.com,17,69,24.6
 NETHERLANDS,Netherlands,googletagmanager.com,11,69,15.9
+NETHERLANDS,Netherlands,gstatic.com,17,69,24.6
 NETHERLANDS,Netherlands,jsdelivr.net,9,69,13.0
 NETHERLANDS,Netherlands,fontawesome.com,6,69,8.7
 NETHERLANDS,Netherlands,google.com,17,69,24.6
-NETHERLANDS,Netherlands,gstatic.com,17,69,24.6
 NETHERLANDS,Netherlands,cloudflare.com,10,69,14.5
 NETHERLANDS,Netherlands,jquery.com,5,69,7.2
 NETHERLANDS,Netherlands,unpkg.com,4,69,5.8
@@ -281,10 +281,10 @@ NETHERLANDS,Netherlands,mapbox.com,0,69,0.0
 NETHERLANDS,Netherlands,cloudfront.net,0,69,0.0
 BULGARIA,Bulgaria,googleapis.com,28,55,50.9
 BULGARIA,Bulgaria,googletagmanager.com,14,55,25.5
+BULGARIA,Bulgaria,gstatic.com,11,55,20.0
 BULGARIA,Bulgaria,jsdelivr.net,7,55,12.7
 BULGARIA,Bulgaria,fontawesome.com,6,55,10.9
 BULGARIA,Bulgaria,google.com,17,55,30.9
-BULGARIA,Bulgaria,gstatic.com,11,55,20.0
 BULGARIA,Bulgaria,cloudflare.com,14,55,25.5
 BULGARIA,Bulgaria,jquery.com,9,55,16.4
 BULGARIA,Bulgaria,unpkg.com,5,55,9.1
@@ -301,10 +301,10 @@ BULGARIA,Bulgaria,mapbox.com,0,55,0.0
 BULGARIA,Bulgaria,cloudfront.net,1,55,1.8
 BELGIUM,Belgium,googleapis.com,21,43,48.8
 BELGIUM,Belgium,googletagmanager.com,15,43,34.9
+BELGIUM,Belgium,gstatic.com,12,43,27.9
 BELGIUM,Belgium,jsdelivr.net,11,43,25.6
 BELGIUM,Belgium,fontawesome.com,5,43,11.6
 BELGIUM,Belgium,google.com,7,43,16.3
-BELGIUM,Belgium,gstatic.com,12,43,27.9
 BELGIUM,Belgium,cloudflare.com,16,43,37.2
 BELGIUM,Belgium,jquery.com,8,43,18.6
 BELGIUM,Belgium,unpkg.com,9,43,20.9
@@ -321,10 +321,10 @@ BELGIUM,Belgium,mapbox.com,1,43,2.3
 BELGIUM,Belgium,cloudfront.net,2,43,4.7
 FINLAND,Finland,googleapis.com,4,41,9.8
 FINLAND,Finland,googletagmanager.com,1,41,2.4
+FINLAND,Finland,gstatic.com,2,41,4.9
 FINLAND,Finland,jsdelivr.net,2,41,4.9
 FINLAND,Finland,fontawesome.com,1,41,2.4
 FINLAND,Finland,google.com,1,41,2.4
-FINLAND,Finland,gstatic.com,2,41,4.9
 FINLAND,Finland,cloudflare.com,3,41,7.3
 FINLAND,Finland,jquery.com,1,41,2.4
 FINLAND,Finland,unpkg.com,0,41,0.0
@@ -341,10 +341,10 @@ FINLAND,Finland,mapbox.com,0,41,0.0
 FINLAND,Finland,cloudfront.net,0,41,0.0
 LUXEMBOURG,Luxembourg,googleapis.com,16,40,40.0
 LUXEMBOURG,Luxembourg,googletagmanager.com,3,40,7.5
+LUXEMBOURG,Luxembourg,gstatic.com,9,40,22.5
 LUXEMBOURG,Luxembourg,jsdelivr.net,11,40,27.5
 LUXEMBOURG,Luxembourg,fontawesome.com,6,40,15.0
 LUXEMBOURG,Luxembourg,google.com,5,40,12.5
-LUXEMBOURG,Luxembourg,gstatic.com,9,40,22.5
 LUXEMBOURG,Luxembourg,cloudflare.com,3,40,7.5
 LUXEMBOURG,Luxembourg,jquery.com,2,40,5.0
 LUXEMBOURG,Luxembourg,unpkg.com,5,40,12.5
@@ -361,10 +361,10 @@ LUXEMBOURG,Luxembourg,mapbox.com,0,40,0.0
 LUXEMBOURG,Luxembourg,cloudfront.net,1,40,2.5
 AUSTRIA,Austria,googleapis.com,6,34,17.6
 AUSTRIA,Austria,googletagmanager.com,1,34,2.9
+AUSTRIA,Austria,gstatic.com,2,34,5.9
 AUSTRIA,Austria,jsdelivr.net,5,34,14.7
 AUSTRIA,Austria,fontawesome.com,2,34,5.9
 AUSTRIA,Austria,google.com,4,34,11.8
-AUSTRIA,Austria,gstatic.com,2,34,5.9
 AUSTRIA,Austria,cloudflare.com,2,34,5.9
 AUSTRIA,Austria,jquery.com,1,34,2.9
 AUSTRIA,Austria,unpkg.com,1,34,2.9
@@ -381,10 +381,10 @@ AUSTRIA,Austria,mapbox.com,0,34,0.0
 AUSTRIA,Austria,cloudfront.net,0,34,0.0
 NORWAY,Norway,googleapis.com,13,34,38.2
 NORWAY,Norway,googletagmanager.com,3,34,8.8
+NORWAY,Norway,gstatic.com,5,34,14.7
 NORWAY,Norway,jsdelivr.net,6,34,17.6
 NORWAY,Norway,fontawesome.com,1,34,2.9
 NORWAY,Norway,google.com,4,34,11.8
-NORWAY,Norway,gstatic.com,5,34,14.7
 NORWAY,Norway,cloudflare.com,6,34,17.6
 NORWAY,Norway,jquery.com,4,34,11.8
 NORWAY,Norway,unpkg.com,3,34,8.8
@@ -401,10 +401,10 @@ NORWAY,Norway,mapbox.com,0,34,0.0
 NORWAY,Norway,cloudfront.net,2,34,5.9
 CZECHIA,Czechia,googleapis.com,20,32,62.5
 CZECHIA,Czechia,googletagmanager.com,14,32,43.8
+CZECHIA,Czechia,gstatic.com,12,32,37.5
 CZECHIA,Czechia,jsdelivr.net,9,32,28.1
 CZECHIA,Czechia,fontawesome.com,4,32,12.5
 CZECHIA,Czechia,google.com,10,32,31.2
-CZECHIA,Czechia,gstatic.com,12,32,37.5
 CZECHIA,Czechia,cloudflare.com,7,32,21.9
 CZECHIA,Czechia,jquery.com,9,32,28.1
 CZECHIA,Czechia,unpkg.com,6,32,18.8
@@ -421,10 +421,10 @@ CZECHIA,Czechia,mapbox.com,2,32,6.2
 CZECHIA,Czechia,cloudfront.net,1,32,3.1
 CROATIA,Croatia,googleapis.com,16,31,51.6
 CROATIA,Croatia,googletagmanager.com,20,31,64.5
+CROATIA,Croatia,gstatic.com,5,31,16.1
 CROATIA,Croatia,jsdelivr.net,7,31,22.6
 CROATIA,Croatia,fontawesome.com,5,31,16.1
 CROATIA,Croatia,google.com,8,31,25.8
-CROATIA,Croatia,gstatic.com,5,31,16.1
 CROATIA,Croatia,cloudflare.com,8,31,25.8
 CROATIA,Croatia,jquery.com,2,31,6.5
 CROATIA,Croatia,unpkg.com,1,31,3.2
@@ -441,10 +441,10 @@ CROATIA,Croatia,mapbox.com,0,31,0.0
 CROATIA,Croatia,cloudfront.net,0,31,0.0
 ESTONIA,Estonia,googleapis.com,10,31,32.3
 ESTONIA,Estonia,googletagmanager.com,8,31,25.8
+ESTONIA,Estonia,gstatic.com,5,31,16.1
 ESTONIA,Estonia,jsdelivr.net,4,31,12.9
 ESTONIA,Estonia,fontawesome.com,5,31,16.1
 ESTONIA,Estonia,google.com,3,31,9.7
-ESTONIA,Estonia,gstatic.com,5,31,16.1
 ESTONIA,Estonia,cloudflare.com,10,31,32.3
 ESTONIA,Estonia,jquery.com,2,31,6.5
 ESTONIA,Estonia,unpkg.com,0,31,0.0
@@ -461,10 +461,10 @@ ESTONIA,Estonia,mapbox.com,1,31,3.2
 ESTONIA,Estonia,cloudfront.net,0,31,0.0
 HUNGARY,Hungary,googleapis.com,17,27,63.0
 HUNGARY,Hungary,googletagmanager.com,10,27,37.0
+HUNGARY,Hungary,gstatic.com,6,27,22.2
 HUNGARY,Hungary,jsdelivr.net,5,27,18.5
 HUNGARY,Hungary,fontawesome.com,3,27,11.1
 HUNGARY,Hungary,google.com,6,27,22.2
-HUNGARY,Hungary,gstatic.com,6,27,22.2
 HUNGARY,Hungary,cloudflare.com,8,27,29.6
 HUNGARY,Hungary,jquery.com,4,27,14.8
 HUNGARY,Hungary,unpkg.com,1,27,3.7
@@ -481,10 +481,10 @@ HUNGARY,Hungary,mapbox.com,1,27,3.7
 HUNGARY,Hungary,cloudfront.net,0,27,0.0
 SLOVAKIA,Slovakia,googleapis.com,14,20,70.0
 SLOVAKIA,Slovakia,googletagmanager.com,10,20,50.0
+SLOVAKIA,Slovakia,gstatic.com,7,20,35.0
 SLOVAKIA,Slovakia,jsdelivr.net,3,20,15.0
 SLOVAKIA,Slovakia,fontawesome.com,3,20,15.0
 SLOVAKIA,Slovakia,google.com,9,20,45.0
-SLOVAKIA,Slovakia,gstatic.com,7,20,35.0
 SLOVAKIA,Slovakia,cloudflare.com,4,20,20.0
 SLOVAKIA,Slovakia,jquery.com,3,20,15.0
 SLOVAKIA,Slovakia,unpkg.com,3,20,15.0
@@ -501,10 +501,10 @@ SLOVAKIA,Slovakia,mapbox.com,1,20,5.0
 SLOVAKIA,Slovakia,cloudfront.net,0,20,0.0
 ICELAND,Iceland,googleapis.com,11,19,57.9
 ICELAND,Iceland,googletagmanager.com,5,19,26.3
+ICELAND,Iceland,gstatic.com,3,19,15.8
 ICELAND,Iceland,jsdelivr.net,2,19,10.5
 ICELAND,Iceland,fontawesome.com,3,19,15.8
 ICELAND,Iceland,google.com,0,19,0.0
-ICELAND,Iceland,gstatic.com,3,19,15.8
 ICELAND,Iceland,cloudflare.com,4,19,21.1
 ICELAND,Iceland,jquery.com,0,19,0.0
 ICELAND,Iceland,unpkg.com,1,19,5.3
@@ -521,14 +521,14 @@ ICELAND,Iceland,mapbox.com,0,19,0.0
 ICELAND,Iceland,cloudfront.net,0,19,0.0
 ROMANIA,Romania,googleapis.com,9,16,56.2
 ROMANIA,Romania,googletagmanager.com,6,16,37.5
-ROMANIA,Romania,jsdelivr.net,2,16,12.5
+ROMANIA,Romania,gstatic.com,1,16,6.2
+ROMANIA,Romania,jsdelivr.net,3,16,18.8
 ROMANIA,Romania,fontawesome.com,1,16,6.2
 ROMANIA,Romania,google.com,4,16,25.0
-ROMANIA,Romania,gstatic.com,0,16,0.0
 ROMANIA,Romania,cloudflare.com,2,16,12.5
 ROMANIA,Romania,jquery.com,2,16,12.5
 ROMANIA,Romania,unpkg.com,1,16,6.2
-ROMANIA,Romania,bootstrapcdn.com,0,16,0.0
+ROMANIA,Romania,bootstrapcdn.com,1,16,6.2
 ROMANIA,Romania,typekit.net,0,16,0.0
 ROMANIA,Romania,facebook.com,0,16,0.0
 ROMANIA,Romania,cookiebot.com,0,16,0.0
@@ -541,10 +541,10 @@ ROMANIA,Romania,mapbox.com,0,16,0.0
 ROMANIA,Romania,cloudfront.net,0,16,0.0
 SLOVENIA,Slovenia,googleapis.com,6,16,37.5
 SLOVENIA,Slovenia,googletagmanager.com,5,16,31.2
+SLOVENIA,Slovenia,gstatic.com,2,16,12.5
 SLOVENIA,Slovenia,jsdelivr.net,5,16,31.2
 SLOVENIA,Slovenia,fontawesome.com,3,16,18.8
 SLOVENIA,Slovenia,google.com,2,16,12.5
-SLOVENIA,Slovenia,gstatic.com,2,16,12.5
 SLOVENIA,Slovenia,cloudflare.com,6,16,37.5
 SLOVENIA,Slovenia,jquery.com,2,16,12.5
 SLOVENIA,Slovenia,unpkg.com,1,16,6.2
@@ -561,10 +561,10 @@ SLOVENIA,Slovenia,mapbox.com,0,16,0.0
 SLOVENIA,Slovenia,cloudfront.net,0,16,0.0
 LITHUANIA,Lithuania,googleapis.com,8,15,53.3
 LITHUANIA,Lithuania,googletagmanager.com,6,15,40.0
+LITHUANIA,Lithuania,gstatic.com,5,15,33.3
 LITHUANIA,Lithuania,jsdelivr.net,6,15,40.0
 LITHUANIA,Lithuania,fontawesome.com,2,15,13.3
 LITHUANIA,Lithuania,google.com,3,15,20.0
-LITHUANIA,Lithuania,gstatic.com,5,15,33.3
 LITHUANIA,Lithuania,cloudflare.com,5,15,33.3
 LITHUANIA,Lithuania,jquery.com,3,15,20.0
 LITHUANIA,Lithuania,unpkg.com,1,15,6.7
@@ -581,10 +581,10 @@ LITHUANIA,Lithuania,mapbox.com,0,15,0.0
 LITHUANIA,Lithuania,cloudfront.net,0,15,0.0
 SWITZERLAND,Switzerland,googleapis.com,5,9,55.6
 SWITZERLAND,Switzerland,googletagmanager.com,4,9,44.4
+SWITZERLAND,Switzerland,gstatic.com,4,9,44.4
 SWITZERLAND,Switzerland,jsdelivr.net,5,9,55.6
 SWITZERLAND,Switzerland,fontawesome.com,2,9,22.2
 SWITZERLAND,Switzerland,google.com,3,9,33.3
-SWITZERLAND,Switzerland,gstatic.com,4,9,44.4
 SWITZERLAND,Switzerland,cloudflare.com,5,9,55.6
 SWITZERLAND,Switzerland,jquery.com,4,9,44.4
 SWITZERLAND,Switzerland,unpkg.com,2,9,22.2
@@ -601,10 +601,10 @@ SWITZERLAND,Switzerland,mapbox.com,1,9,11.1
 SWITZERLAND,Switzerland,cloudfront.net,2,9,22.2
 REPUBLIC_OF_CYPRUS,Cyprus,googleapis.com,5,6,83.3
 REPUBLIC_OF_CYPRUS,Cyprus,googletagmanager.com,2,6,33.3
+REPUBLIC_OF_CYPRUS,Cyprus,gstatic.com,3,6,50.0
 REPUBLIC_OF_CYPRUS,Cyprus,jsdelivr.net,1,6,16.7
 REPUBLIC_OF_CYPRUS,Cyprus,fontawesome.com,1,6,16.7
 REPUBLIC_OF_CYPRUS,Cyprus,google.com,1,6,16.7
-REPUBLIC_OF_CYPRUS,Cyprus,gstatic.com,3,6,50.0
 REPUBLIC_OF_CYPRUS,Cyprus,cloudflare.com,0,6,0.0
 REPUBLIC_OF_CYPRUS,Cyprus,jquery.com,0,6,0.0
 REPUBLIC_OF_CYPRUS,Cyprus,unpkg.com,0,6,0.0
@@ -621,10 +621,10 @@ REPUBLIC_OF_CYPRUS,Cyprus,mapbox.com,0,6,0.0
 REPUBLIC_OF_CYPRUS,Cyprus,cloudfront.net,0,6,0.0
 MALTA,Malta,googleapis.com,2,3,66.7
 MALTA,Malta,googletagmanager.com,1,3,33.3
+MALTA,Malta,gstatic.com,2,3,66.7
 MALTA,Malta,jsdelivr.net,1,3,33.3
 MALTA,Malta,fontawesome.com,2,3,66.7
 MALTA,Malta,google.com,1,3,33.3
-MALTA,Malta,gstatic.com,2,3,66.7
 MALTA,Malta,cloudflare.com,1,3,33.3
 MALTA,Malta,jquery.com,1,3,33.3
 MALTA,Malta,unpkg.com,1,3,33.3
