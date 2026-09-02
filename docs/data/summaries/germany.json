@@ -41,7 +41,7 @@
     },
     {
       "domain": "bund.de",
-      "count": 4638
+      "count": 4649
     },
     {
       "domain": "bremen.de",
@@ -180,6 +180,10 @@
       "count": 178
     },
     {
+      "domain": "thuenen.de",
+      "count": 164
+    },
+    {
       "domain": "ptb.de",
       "count": 162
     },
@@ -196,11 +200,7 @@
       "count": 148
     },
     {
-      "domain": "thuenen.de",
-      "count": 147
-    },
-    {
-      "domain": "neuharlingersiel.de",
+      "domain": "bfs.de",
       "count": 146
     }
   ],
@@ -247,11 +247,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 3483
+      "count": 3484
     },
     {
       "domain": "bund.de",
-      "count": 3154
+      "count": 3160
     },
     {
       "domain": "bremen.de",
@@ -263,11 +263,11 @@
     },
     {
       "domain": "twitter.com",
-      "count": 2328
+      "count": 2329
     },
     {
       "domain": "youtube.com",
-      "count": 2220
+      "count": 2222
     },
     {
       "domain": "berlin.de",
@@ -275,7 +275,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 1790
+      "count": 1792
     },
     {
       "domain": "baden-wuerttemberg.de",
@@ -371,7 +371,7 @@
     },
     {
       "domain": "xing.com",
-      "count": 393
+      "count": 394
     },
     {
       "domain": "x.com",
@@ -414,5 +414,5 @@
     "stylesheet_dependency": 2718,
     "form_destination": 2146
   },
-  "generated_at": "2026-08-31T04:40:01.370501+00:00"
+  "generated_at": "2026-09-02T11:32:14.589509+00:00"
 }

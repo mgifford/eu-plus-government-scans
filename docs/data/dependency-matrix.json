@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T03:51:50.965563+00:00",
+  "generated_at": "2026-09-02T11:32:17.798406+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -181,9 +181,14 @@
       "domains": 2578
     },
     {
+      "service": "gstatic.com",
+      "countries": 32,
+      "domains": 1582
+    },
+    {
       "service": "jsdelivr.net",
       "countries": 32,
-      "domains": 1076
+      "domains": 1078
     },
     {
       "service": "fontawesome.com",
@@ -194,11 +199,6 @@
       "service": "google.com",
       "countries": 31,
       "domains": 1922
-    },
-    {
-      "service": "gstatic.com",
-      "countries": 31,
-      "domains": 1581
     },
     {
       "service": "cloudflare.com",
@@ -217,8 +217,8 @@
     },
     {
       "service": "bootstrapcdn.com",
-      "countries": 28,
-      "domains": 585
+      "countries": 29,
+      "domains": 586
     },
     {
       "service": "typekit.net",
@@ -291,6 +291,14 @@
     {
       "country_code": "UNITED_KINGDOM_UK",
       "country": "United Kingdom",
+      "service": "gstatic.com",
+      "domains": 501,
+      "scanned_domains": 2754,
+      "percent": 18.2
+    },
+    {
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
       "service": "jsdelivr.net",
       "domains": 371,
       "scanned_domains": 2754,
@@ -311,14 +319,6 @@
       "domains": 976,
       "scanned_domains": 2754,
       "percent": 35.4
-    },
-    {
-      "country_code": "UNITED_KINGDOM_UK",
-      "country": "United Kingdom",
-      "service": "gstatic.com",
-      "domains": 501,
-      "scanned_domains": 2754,
-      "percent": 18.2
     },
     {
       "country_code": "UNITED_KINGDOM_UK",
@@ -451,6 +451,14 @@
     {
       "country_code": "POLAND",
       "country": "Poland",
+      "service": "gstatic.com",
+      "domains": 466,
+      "scanned_domains": 2289,
+      "percent": 20.4
+    },
+    {
+      "country_code": "POLAND",
+      "country": "Poland",
       "service": "jsdelivr.net",
       "domains": 165,
       "scanned_domains": 2289,
@@ -471,14 +479,6 @@
       "domains": 357,
       "scanned_domains": 2289,
       "percent": 15.6
-    },
-    {
-      "country_code": "POLAND",
-      "country": "Poland",
-      "service": "gstatic.com",
-      "domains": 466,
-      "scanned_domains": 2289,
-      "percent": 20.4
     },
     {
       "country_code": "POLAND",
@@ -611,6 +611,14 @@
     {
       "country_code": "FRANCE",
       "country": "France",
+      "service": "gstatic.com",
+      "domains": 115,
+      "scanned_domains": 657,
+      "percent": 17.5
+    },
+    {
+      "country_code": "FRANCE",
+      "country": "France",
       "service": "jsdelivr.net",
       "domains": 91,
       "scanned_domains": 657,
@@ -631,14 +639,6 @@
       "domains": 93,
       "scanned_domains": 657,
       "percent": 14.2
-    },
-    {
-      "country_code": "FRANCE",
-      "country": "France",
-      "service": "gstatic.com",
-      "domains": 115,
-      "scanned_domains": 657,
-      "percent": 17.5
     },
     {
       "country_code": "FRANCE",
@@ -771,6 +771,14 @@
     {
       "country_code": "PORTUGAL",
       "country": "Portugal",
+      "service": "gstatic.com",
+      "domains": 90,
+      "scanned_domains": 385,
+      "percent": 23.4
+    },
+    {
+      "country_code": "PORTUGAL",
+      "country": "Portugal",
       "service": "jsdelivr.net",
       "domains": 72,
       "scanned_domains": 385,
@@ -791,14 +799,6 @@
       "domains": 143,
       "scanned_domains": 385,
       "percent": 37.1
-    },
-    {
-      "country_code": "PORTUGAL",
-      "country": "Portugal",
-      "service": "gstatic.com",
-      "domains": 90,
-      "scanned_domains": 385,
-      "percent": 23.4
     },
     {
       "country_code": "PORTUGAL",
@@ -931,6 +931,14 @@
     {
       "country_code": "GREECE",
       "country": "Greece",
+      "service": "gstatic.com",
+      "domains": 106,
+      "scanned_domains": 362,
+      "percent": 29.3
+    },
+    {
+      "country_code": "GREECE",
+      "country": "Greece",
       "service": "jsdelivr.net",
       "domains": 60,
       "scanned_domains": 362,
@@ -951,14 +959,6 @@
       "domains": 61,
       "scanned_domains": 362,
       "percent": 16.9
-    },
-    {
-      "country_code": "GREECE",
-      "country": "Greece",
-      "service": "gstatic.com",
-      "domains": 106,
-      "scanned_domains": 362,
-      "percent": 29.3
     },
     {
       "country_code": "GREECE",
@@ -1091,6 +1091,14 @@
     {
       "country_code": "SPAIN",
       "country": "Spain",
+      "service": "gstatic.com",
+      "domains": 53,
+      "scanned_domains": 240,
+      "percent": 22.1
+    },
+    {
+      "country_code": "SPAIN",
+      "country": "Spain",
       "service": "jsdelivr.net",
       "domains": 54,
       "scanned_domains": 240,
@@ -1111,14 +1119,6 @@
       "domains": 42,
       "scanned_domains": 240,
       "percent": 17.5
-    },
-    {
-      "country_code": "SPAIN",
-      "country": "Spain",
-      "service": "gstatic.com",
-      "domains": 53,
-      "scanned_domains": 240,
-      "percent": 22.1
     },
     {
       "country_code": "SPAIN",
@@ -1251,6 +1251,14 @@
     {
       "country_code": "SWEDEN",
       "country": "Sweden",
+      "service": "gstatic.com",
+      "domains": 19,
+      "scanned_domains": 230,
+      "percent": 8.3
+    },
+    {
+      "country_code": "SWEDEN",
+      "country": "Sweden",
       "service": "jsdelivr.net",
       "domains": 17,
       "scanned_domains": 230,
@@ -1271,14 +1279,6 @@
       "domains": 22,
       "scanned_domains": 230,
       "percent": 9.6
-    },
-    {
-      "country_code": "SWEDEN",
-      "country": "Sweden",
-      "service": "gstatic.com",
-      "domains": 19,
-      "scanned_domains": 230,
-      "percent": 8.3
     },
     {
       "country_code": "SWEDEN",
@@ -1411,6 +1411,14 @@
     {
       "country_code": "GERMANY",
       "country": "Germany",
+      "service": "gstatic.com",
+      "domains": 8,
+      "scanned_domains": 215,
+      "percent": 3.7
+    },
+    {
+      "country_code": "GERMANY",
+      "country": "Germany",
       "service": "jsdelivr.net",
       "domains": 17,
       "scanned_domains": 215,
@@ -1431,14 +1439,6 @@
       "domains": 5,
       "scanned_domains": 215,
       "percent": 2.3
-    },
-    {
-      "country_code": "GERMANY",
-      "country": "Germany",
-      "service": "gstatic.com",
-      "domains": 8,
-      "scanned_domains": 215,
-      "percent": 3.7
     },
     {
       "country_code": "GERMANY",
@@ -1571,6 +1571,14 @@
     {
       "country_code": "CANADA",
       "country": "Canada",
+      "service": "gstatic.com",
+      "domains": 37,
+      "scanned_domains": 191,
+      "percent": 19.4
+    },
+    {
+      "country_code": "CANADA",
+      "country": "Canada",
       "service": "jsdelivr.net",
       "domains": 38,
       "scanned_domains": 191,
@@ -1591,14 +1599,6 @@
       "domains": 47,
       "scanned_domains": 191,
       "percent": 24.6
-    },
-    {
-      "country_code": "CANADA",
-      "country": "Canada",
-      "service": "gstatic.com",
-      "domains": 37,
-      "scanned_domains": 191,
-      "percent": 19.4
     },
     {
       "country_code": "CANADA",
@@ -1731,10 +1731,18 @@
     {
       "country_code": "ITALY",
       "country": "Italy",
-      "service": "jsdelivr.net",
-      "domains": 52,
+      "service": "gstatic.com",
+      "domains": 29,
       "scanned_domains": 146,
-      "percent": 35.6
+      "percent": 19.9
+    },
+    {
+      "country_code": "ITALY",
+      "country": "Italy",
+      "service": "jsdelivr.net",
+      "domains": 53,
+      "scanned_domains": 146,
+      "percent": 36.3
     },
     {
       "country_code": "ITALY",
@@ -1751,14 +1759,6 @@
       "domains": 34,
       "scanned_domains": 146,
       "percent": 23.3
-    },
-    {
-      "country_code": "ITALY",
-      "country": "Italy",
-      "service": "gstatic.com",
-      "domains": 29,
-      "scanned_domains": 146,
-      "percent": 19.9
     },
     {
       "country_code": "ITALY",
@@ -1891,6 +1891,14 @@
     {
       "country_code": "LATVIA",
       "country": "Latvia",
+      "service": "gstatic.com",
+      "domains": 14,
+      "scanned_domains": 141,
+      "percent": 9.9
+    },
+    {
+      "country_code": "LATVIA",
+      "country": "Latvia",
       "service": "jsdelivr.net",
       "domains": 13,
       "scanned_domains": 141,
@@ -1911,14 +1919,6 @@
       "domains": 10,
       "scanned_domains": 141,
       "percent": 7.1
-    },
-    {
-      "country_code": "LATVIA",
-      "country": "Latvia",
-      "service": "gstatic.com",
-      "domains": 14,
-      "scanned_domains": 141,
-      "percent": 9.9
     },
     {
       "country_code": "LATVIA",
@@ -2051,6 +2051,14 @@
     {
       "country_code": "IRELAND",
       "country": "Ireland",
+      "service": "gstatic.com",
+      "domains": 17,
+      "scanned_domains": 104,
+      "percent": 16.3
+    },
+    {
+      "country_code": "IRELAND",
+      "country": "Ireland",
       "service": "jsdelivr.net",
       "domains": 20,
       "scanned_domains": 104,
@@ -2071,14 +2079,6 @@
       "domains": 21,
       "scanned_domains": 104,
       "percent": 20.2
-    },
-    {
-      "country_code": "IRELAND",
-      "country": "Ireland",
-      "service": "gstatic.com",
-      "domains": 17,
-      "scanned_domains": 104,
-      "percent": 16.3
     },
     {
       "country_code": "IRELAND",
@@ -2211,6 +2211,14 @@
     {
       "country_code": "DENMARK",
       "country": "Denmark",
+      "service": "gstatic.com",
+      "domains": 14,
+      "scanned_domains": 79,
+      "percent": 17.7
+    },
+    {
+      "country_code": "DENMARK",
+      "country": "Denmark",
       "service": "jsdelivr.net",
       "domains": 5,
       "scanned_domains": 79,
@@ -2231,14 +2239,6 @@
       "domains": 6,
       "scanned_domains": 79,
       "percent": 7.6
-    },
-    {
-      "country_code": "DENMARK",
-      "country": "Denmark",
-      "service": "gstatic.com",
-      "domains": 14,
-      "scanned_domains": 79,
-      "percent": 17.7
     },
     {
       "country_code": "DENMARK",
@@ -2371,6 +2371,14 @@
     {
       "country_code": "NETHERLANDS",
       "country": "Netherlands",
+      "service": "gstatic.com",
+      "domains": 17,
+      "scanned_domains": 69,
+      "percent": 24.6
+    },
+    {
+      "country_code": "NETHERLANDS",
+      "country": "Netherlands",
       "service": "jsdelivr.net",
       "domains": 9,
       "scanned_domains": 69,
@@ -2388,14 +2396,6 @@
       "country_code": "NETHERLANDS",
       "country": "Netherlands",
       "service": "google.com",
-      "domains": 17,
-      "scanned_domains": 69,
-      "percent": 24.6
-    },
-    {
-      "country_code": "NETHERLANDS",
-      "country": "Netherlands",
-      "service": "gstatic.com",
       "domains": 17,
       "scanned_domains": 69,
       "percent": 24.6
@@ -2531,6 +2531,14 @@
     {
       "country_code": "BULGARIA",
       "country": "Bulgaria",
+      "service": "gstatic.com",
+      "domains": 11,
+      "scanned_domains": 55,
+      "percent": 20.0
+    },
+    {
+      "country_code": "BULGARIA",
+      "country": "Bulgaria",
       "service": "jsdelivr.net",
       "domains": 7,
       "scanned_domains": 55,
@@ -2551,14 +2559,6 @@
       "domains": 17,
       "scanned_domains": 55,
       "percent": 30.9
-    },
-    {
-      "country_code": "BULGARIA",
-      "country": "Bulgaria",
-      "service": "gstatic.com",
-      "domains": 11,
-      "scanned_domains": 55,
-      "percent": 20.0
     },
     {
       "country_code": "BULGARIA",
@@ -2691,6 +2691,14 @@
     {
       "country_code": "BELGIUM",
       "country": "Belgium",
+      "service": "gstatic.com",
+      "domains": 12,
+      "scanned_domains": 43,
+      "percent": 27.9
+    },
+    {
+      "country_code": "BELGIUM",
+      "country": "Belgium",
       "service": "jsdelivr.net",
       "domains": 11,
       "scanned_domains": 43,
@@ -2711,14 +2719,6 @@
       "domains": 7,
       "scanned_domains": 43,
       "percent": 16.3
-    },
-    {
-      "country_code": "BELGIUM",
-      "country": "Belgium",
-      "service": "gstatic.com",
-      "domains": 12,
-      "scanned_domains": 43,
-      "percent": 27.9
     },
     {
       "country_code": "BELGIUM",
@@ -2851,6 +2851,14 @@
     {
       "country_code": "FINLAND",
       "country": "Finland",
+      "service": "gstatic.com",
+      "domains": 2,
+      "scanned_domains": 41,
+      "percent": 4.9
+    },
+    {
+      "country_code": "FINLAND",
+      "country": "Finland",
       "service": "jsdelivr.net",
       "domains": 2,
       "scanned_domains": 41,
@@ -2871,14 +2879,6 @@
       "domains": 1,
       "scanned_domains": 41,
       "percent": 2.4
-    },
-    {
-      "country_code": "FINLAND",
-      "country": "Finland",
-      "service": "gstatic.com",
-      "domains": 2,
-      "scanned_domains": 41,
-      "percent": 4.9
     },
     {
       "country_code": "FINLAND",
@@ -3011,6 +3011,14 @@
     {
       "country_code": "LUXEMBOURG",
       "country": "Luxembourg",
+      "service": "gstatic.com",
+      "domains": 9,
+      "scanned_domains": 40,
+      "percent": 22.5
+    },
+    {
+      "country_code": "LUXEMBOURG",
+      "country": "Luxembourg",
       "service": "jsdelivr.net",
       "domains": 11,
       "scanned_domains": 40,
@@ -3031,14 +3039,6 @@
       "domains": 5,
       "scanned_domains": 40,
       "percent": 12.5
-    },
-    {
-      "country_code": "LUXEMBOURG",
-      "country": "Luxembourg",
-      "service": "gstatic.com",
-      "domains": 9,
-      "scanned_domains": 40,
-      "percent": 22.5
     },
     {
       "country_code": "LUXEMBOURG",
@@ -3171,6 +3171,14 @@
     {
       "country_code": "AUSTRIA",
       "country": "Austria",
+      "service": "gstatic.com",
+      "domains": 2,
+      "scanned_domains": 34,
+      "percent": 5.9
+    },
+    {
+      "country_code": "AUSTRIA",
+      "country": "Austria",
       "service": "jsdelivr.net",
       "domains": 5,
       "scanned_domains": 34,
@@ -3191,14 +3199,6 @@
       "domains": 4,
       "scanned_domains": 34,
       "percent": 11.8
-    },
-    {
-      "country_code": "AUSTRIA",
-      "country": "Austria",
-      "service": "gstatic.com",
-      "domains": 2,
-      "scanned_domains": 34,
-      "percent": 5.9
     },
     {
       "country_code": "AUSTRIA",
@@ -3331,6 +3331,14 @@
     {
       "country_code": "NORWAY",
       "country": "Norway",
+      "service": "gstatic.com",
+      "domains": 5,
+      "scanned_domains": 34,
+      "percent": 14.7
+    },
+    {
+      "country_code": "NORWAY",
+      "country": "Norway",
       "service": "jsdelivr.net",
       "domains": 6,
       "scanned_domains": 34,
@@ -3351,14 +3359,6 @@
       "domains": 4,
       "scanned_domains": 34,
       "percent": 11.8
-    },
-    {
-      "country_code": "NORWAY",
-      "country": "Norway",
-      "service": "gstatic.com",
-      "domains": 5,
-      "scanned_domains": 34,
-      "percent": 14.7
     },
     {
       "country_code": "NORWAY",
@@ -3491,6 +3491,14 @@
     {
       "country_code": "CZECHIA",
       "country": "Czechia",
+      "service": "gstatic.com",
+      "domains": 12,
+      "scanned_domains": 32,
+      "percent": 37.5
+    },
+    {
+      "country_code": "CZECHIA",
+      "country": "Czechia",
       "service": "jsdelivr.net",
       "domains": 9,
       "scanned_domains": 32,
@@ -3511,14 +3519,6 @@
       "domains": 10,
       "scanned_domains": 32,
       "percent": 31.2
-    },
-    {
-      "country_code": "CZECHIA",
-      "country": "Czechia",
-      "service": "gstatic.com",
-      "domains": 12,
-      "scanned_domains": 32,
-      "percent": 37.5
     },
     {
       "country_code": "CZECHIA",
@@ -3651,6 +3651,14 @@
     {
       "country_code": "CROATIA",
       "country": "Croatia",
+      "service": "gstatic.com",
+      "domains": 5,
+      "scanned_domains": 31,
+      "percent": 16.1
+    },
+    {
+      "country_code": "CROATIA",
+      "country": "Croatia",
       "service": "jsdelivr.net",
       "domains": 7,
       "scanned_domains": 31,
@@ -3671,14 +3679,6 @@
       "domains": 8,
       "scanned_domains": 31,
       "percent": 25.8
-    },
-    {
-      "country_code": "CROATIA",
-      "country": "Croatia",
-      "service": "gstatic.com",
-      "domains": 5,
-      "scanned_domains": 31,
-      "percent": 16.1
     },
     {
       "country_code": "CROATIA",
@@ -3811,6 +3811,14 @@
     {
       "country_code": "ESTONIA",
       "country": "Estonia",
+      "service": "gstatic.com",
+      "domains": 5,
+      "scanned_domains": 31,
+      "percent": 16.1
+    },
+    {
+      "country_code": "ESTONIA",
+      "country": "Estonia",
       "service": "jsdelivr.net",
       "domains": 4,
       "scanned_domains": 31,
@@ -3831,14 +3839,6 @@
       "domains": 3,
       "scanned_domains": 31,
       "percent": 9.7
-    },
-    {
-      "country_code": "ESTONIA",
-      "country": "Estonia",
-      "service": "gstatic.com",
-      "domains": 5,
-      "scanned_domains": 31,
-      "percent": 16.1
     },
     {
       "country_code": "ESTONIA",
@@ -3971,6 +3971,14 @@
     {
       "country_code": "HUNGARY",
       "country": "Hungary",
+      "service": "gstatic.com",
+      "domains": 6,
+      "scanned_domains": 27,
+      "percent": 22.2
+    },
+    {
+      "country_code": "HUNGARY",
+      "country": "Hungary",
       "service": "jsdelivr.net",
       "domains": 5,
       "scanned_domains": 27,
@@ -3988,14 +3996,6 @@
       "country_code": "HUNGARY",
       "country": "Hungary",
       "service": "google.com",
-      "domains": 6,
-      "scanned_domains": 27,
-      "percent": 22.2
-    },
-    {
-      "country_code": "HUNGARY",
-      "country": "Hungary",
-      "service": "gstatic.com",
       "domains": 6,
       "scanned_domains": 27,
       "percent": 22.2
@@ -4131,6 +4131,14 @@
     {
       "country_code": "SLOVAKIA",
       "country": "Slovakia",
+      "service": "gstatic.com",
+      "domains": 7,
+      "scanned_domains": 20,
+      "percent": 35.0
+    },
+    {
+      "country_code": "SLOVAKIA",
+      "country": "Slovakia",
       "service": "jsdelivr.net",
       "domains": 3,
       "scanned_domains": 20,
@@ -4151,14 +4159,6 @@
       "domains": 9,
       "scanned_domains": 20,
       "percent": 45.0
-    },
-    {
-      "country_code": "SLOVAKIA",
-      "country": "Slovakia",
-      "service": "gstatic.com",
-      "domains": 7,
-      "scanned_domains": 20,
-      "percent": 35.0
     },
     {
       "country_code": "SLOVAKIA",
@@ -4291,6 +4291,14 @@
     {
       "country_code": "ICELAND",
       "country": "Iceland",
+      "service": "gstatic.com",
+      "domains": 3,
+      "scanned_domains": 19,
+      "percent": 15.8
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
       "service": "jsdelivr.net",
       "domains": 2,
       "scanned_domains": 19,
@@ -4311,14 +4319,6 @@
       "domains": 0,
       "scanned_domains": 19,
       "percent": 0.0
-    },
-    {
-      "country_code": "ICELAND",
-      "country": "Iceland",
-      "service": "gstatic.com",
-      "domains": 3,
-      "scanned_domains": 19,
-      "percent": 15.8
     },
     {
       "country_code": "ICELAND",
@@ -4451,10 +4451,18 @@
     {
       "country_code": "ROMANIA",
       "country": "Romania",
-      "service": "jsdelivr.net",
-      "domains": 2,
+      "service": "gstatic.com",
+      "domains": 1,
       "scanned_domains": 16,
-      "percent": 12.5
+      "percent": 6.2
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "jsdelivr.net",
+      "domains": 3,
+      "scanned_domains": 16,
+      "percent": 18.8
     },
     {
       "country_code": "ROMANIA",
@@ -4471,14 +4479,6 @@
       "domains": 4,
       "scanned_domains": 16,
       "percent": 25.0
-    },
-    {
-      "country_code": "ROMANIA",
-      "country": "Romania",
-      "service": "gstatic.com",
-      "domains": 0,
-      "scanned_domains": 16,
-      "percent": 0.0
     },
     {
       "country_code": "ROMANIA",
@@ -4508,9 +4508,9 @@
       "country_code": "ROMANIA",
       "country": "Romania",
       "service": "bootstrapcdn.com",
-      "domains": 0,
+      "domains": 1,
       "scanned_domains": 16,
-      "percent": 0.0
+      "percent": 6.2
     },
     {
       "country_code": "ROMANIA",
@@ -4611,6 +4611,14 @@
     {
       "country_code": "SLOVENIA",
       "country": "Slovenia",
+      "service": "gstatic.com",
+      "domains": 2,
+      "scanned_domains": 16,
+      "percent": 12.5
+    },
+    {
+      "country_code": "SLOVENIA",
+      "country": "Slovenia",
       "service": "jsdelivr.net",
       "domains": 5,
       "scanned_domains": 16,
@@ -4628,14 +4636,6 @@
       "country_code": "SLOVENIA",
       "country": "Slovenia",
       "service": "google.com",
-      "domains": 2,
-      "scanned_domains": 16,
-      "percent": 12.5
-    },
-    {
-      "country_code": "SLOVENIA",
-      "country": "Slovenia",
-      "service": "gstatic.com",
       "domains": 2,
       "scanned_domains": 16,
       "percent": 12.5
@@ -4771,6 +4771,14 @@
     {
       "country_code": "LITHUANIA",
       "country": "Lithuania",
+      "service": "gstatic.com",
+      "domains": 5,
+      "scanned_domains": 15,
+      "percent": 33.3
+    },
+    {
+      "country_code": "LITHUANIA",
+      "country": "Lithuania",
       "service": "jsdelivr.net",
       "domains": 6,
       "scanned_domains": 15,
@@ -4791,14 +4799,6 @@
       "domains": 3,
       "scanned_domains": 15,
       "percent": 20.0
-    },
-    {
-      "country_code": "LITHUANIA",
-      "country": "Lithuania",
-      "service": "gstatic.com",
-      "domains": 5,
-      "scanned_domains": 15,
-      "percent": 33.3
     },
     {
       "country_code": "LITHUANIA",
@@ -4931,6 +4931,14 @@
     {
       "country_code": "SWITZERLAND",
       "country": "Switzerland",
+      "service": "gstatic.com",
+      "domains": 4,
+      "scanned_domains": 9,
+      "percent": 44.4
+    },
+    {
+      "country_code": "SWITZERLAND",
+      "country": "Switzerland",
       "service": "jsdelivr.net",
       "domains": 5,
       "scanned_domains": 9,
@@ -4951,14 +4959,6 @@
       "domains": 3,
       "scanned_domains": 9,
       "percent": 33.3
-    },
-    {
-      "country_code": "SWITZERLAND",
-      "country": "Switzerland",
-      "service": "gstatic.com",
-      "domains": 4,
-      "scanned_domains": 9,
-      "percent": 44.4
     },
     {
       "country_code": "SWITZERLAND",
@@ -5091,6 +5091,14 @@
     {
       "country_code": "REPUBLIC_OF_CYPRUS",
       "country": "Cyprus",
+      "service": "gstatic.com",
+      "domains": 3,
+      "scanned_domains": 6,
+      "percent": 50.0
+    },
+    {
+      "country_code": "REPUBLIC_OF_CYPRUS",
+      "country": "Cyprus",
       "service": "jsdelivr.net",
       "domains": 1,
       "scanned_domains": 6,
@@ -5111,14 +5119,6 @@
       "domains": 1,
       "scanned_domains": 6,
       "percent": 16.7
-    },
-    {
-      "country_code": "REPUBLIC_OF_CYPRUS",
-      "country": "Cyprus",
-      "service": "gstatic.com",
-      "domains": 3,
-      "scanned_domains": 6,
-      "percent": 50.0
     },
     {
       "country_code": "REPUBLIC_OF_CYPRUS",
@@ -5251,6 +5251,14 @@
     {
       "country_code": "MALTA",
       "country": "Malta",
+      "service": "gstatic.com",
+      "domains": 2,
+      "scanned_domains": 3,
+      "percent": 66.7
+    },
+    {
+      "country_code": "MALTA",
+      "country": "Malta",
       "service": "jsdelivr.net",
       "domains": 1,
       "scanned_domains": 3,
@@ -5271,14 +5279,6 @@
       "domains": 1,
       "scanned_domains": 3,
       "percent": 33.3
-    },
-    {
-      "country_code": "MALTA",
-      "country": "Malta",
-      "service": "gstatic.com",
-      "domains": 2,
-      "scanned_domains": 3,
-      "percent": 66.7
     },
     {
       "country_code": "MALTA",
