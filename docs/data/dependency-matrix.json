@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T16:50:05.793659+00:00",
+  "generated_at": "2026-09-02T21:22:08.050809+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -198,7 +198,7 @@
     {
       "service": "google.com",
       "countries": 31,
-      "domains": 1923
+      "domains": 1924
     },
     {
       "service": "cloudflare.com",
@@ -476,7 +476,7 @@
       "country_code": "POLAND",
       "country": "Poland",
       "service": "google.com",
-      "domains": 357,
+      "domains": 358,
       "scanned_domains": 2289,
       "percent": 15.6
     },
