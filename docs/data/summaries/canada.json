@@ -1,6 +1,6 @@
 {
   "country_code": "CANADA",
-  "total_relationships": 302324,
+  "total_relationships": 302466,
   "total_source_domains": 8555,
   "top_source_domains": [
     {
@@ -13,7 +13,7 @@
     },
     {
       "domain": "krakow.pl",
-      "count": 45540
+      "count": 45688
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -24,8 +24,12 @@
       "count": 35442
     },
     {
+      "domain": "lodz.pl",
+      "count": 31703
+    },
+    {
       "domain": "poznan.pl",
-      "count": 30880
+      "count": 30894
     },
     {
       "domain": "esteri.it",
@@ -34,10 +38,6 @@
     {
       "domain": "niedersachsen.de",
       "count": 23403
-    },
-    {
-      "domain": "lodz.pl",
-      "count": 22870
     },
     {
       "domain": "rlp.de",
@@ -76,6 +76,10 @@
       "count": 11371
     },
     {
+      "domain": "gdansk.pl",
+      "count": 11335
+    },
+    {
       "domain": "hamburg.de",
       "count": 10025
     },
@@ -100,6 +104,10 @@
       "count": 8577
     },
     {
+      "domain": "torun.pl",
+      "count": 8190
+    },
+    {
       "domain": "steiermark.at",
       "count": 7874
     },
@@ -108,8 +116,8 @@
       "count": 7616
     },
     {
-      "domain": "gdansk.pl",
-      "count": 7507
+      "domain": "tarnow.pl",
+      "count": 7420
     },
     {
       "domain": "paris.fr",
@@ -168,10 +176,6 @@
       "count": 4649
     },
     {
-      "domain": "torun.pl",
-      "count": 4576
-    },
-    {
       "domain": "epfl.ch",
       "count": 4493
     },
@@ -182,10 +186,6 @@
     {
       "domain": "ostrava.cz",
       "count": 4303
-    },
-    {
-      "domain": "tarnow.pl",
-      "count": 4225
     },
     {
       "domain": "uni.opole.pl",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 49858
+      "count": 50670
     },
     {
       "domain": "sachsen.de",
@@ -219,7 +219,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 39098
+      "count": 40055
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -227,27 +227,27 @@
     },
     {
       "domain": "instagram.com",
-      "count": 30015
+      "count": 30286
     },
     {
       "domain": "youtube.com",
-      "count": 28625
+      "count": 28914
     },
     {
       "domain": "twitter.com",
-      "count": 24531
-    },
-    {
-      "domain": "krakow.pl",
-      "count": 22284
+      "count": 24634
     },
     {
       "domain": "google.com",
-      "count": 22182
+      "count": 22387
+    },
+    {
+      "domain": "krakow.pl",
+      "count": 22326
     },
     {
       "domain": "linkedin.com",
-      "count": 21474
+      "count": 21575
     },
     {
       "domain": "niedersachsen.de",
@@ -259,7 +259,11 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 18346
+      "count": 18653
+    },
+    {
+      "domain": "lodz.pl",
+      "count": 18234
     },
     {
       "domain": "rlp.de",
@@ -267,19 +271,15 @@
     },
     {
       "domain": "poznan.pl",
-      "count": 15425
+      "count": 15442
     },
     {
       "domain": "bayern.de",
       "count": 13559
     },
     {
-      "domain": "lodz.pl",
-      "count": 12765
-    },
-    {
       "domain": "jsdelivr.net",
-      "count": 12705
+      "count": 12837
     },
     {
       "domain": "jcyl.es",
@@ -287,7 +287,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 11630
+      "count": 11759
     },
     {
       "domain": "esteri.it",
@@ -299,7 +299,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 10164
+      "count": 10328
     },
     {
       "domain": "gencat.cat",
@@ -322,6 +322,10 @@
       "count": 7186
     },
     {
+      "domain": "gdansk.pl",
+      "count": 6794
+    },
+    {
       "domain": "hessen.de",
       "count": 6453
     },
@@ -331,11 +335,15 @@
     },
     {
       "domain": "fontawesome.com",
-      "count": 5836
+      "count": 6079
     },
     {
       "domain": "gva.es",
       "count": 5775
+    },
+    {
+      "domain": "europa.eu",
+      "count": 5743
     },
     {
       "domain": "haute-garonne.fr",
@@ -343,11 +351,7 @@
     },
     {
       "domain": "x.com",
-      "count": 5652
-    },
-    {
-      "domain": "europa.eu",
-      "count": 5627
+      "count": 5673
     },
     {
       "domain": "diplo.de",
@@ -363,23 +367,19 @@
     },
     {
       "domain": "unpkg.com",
-      "count": 5055
+      "count": 5093
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 4586
+      "count": 4632
+    },
+    {
+      "domain": "jquery.com",
+      "count": 4510
     },
     {
       "domain": "cultura.gov.it",
       "count": 4495
-    },
-    {
-      "domain": "jquery.com",
-      "count": 4470
-    },
-    {
-      "domain": "gdansk.pl",
-      "count": 4379
     },
     {
       "domain": "steiermark.at",
@@ -398,21 +398,21 @@
       "count": 3839
     },
     {
-      "domain": "wallonie.be",
-      "count": 3618
+      "domain": "torun.pl",
+      "count": 3695
     },
     {
-      "domain": "canada.ca",
-      "count": 3577
+      "domain": "wallonie.be",
+      "count": 3618
     }
   ],
   "relationship_types": {
-    "editorial_link": 154976,
-    "form_destination": 20439,
-    "image_or_media_dependency": 32070,
-    "script_dependency": 48186,
-    "stylesheet_dependency": 38862,
-    "font_or_preload_dependency": 7791
+    "editorial_link": 155092,
+    "form_destination": 20442,
+    "image_or_media_dependency": 32075,
+    "script_dependency": 48196,
+    "stylesheet_dependency": 38868,
+    "font_or_preload_dependency": 7793
   },
-  "generated_at": "2026-09-02T16:50:02.764237+00:00"
+  "generated_at": "2026-09-02T21:22:04.702258+00:00"
 }
