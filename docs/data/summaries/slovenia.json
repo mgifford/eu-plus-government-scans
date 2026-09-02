@@ -5,7 +5,7 @@
   "top_source_domains": [
     {
       "domain": "gov.si",
-      "count": 2332
+      "count": 2380
     },
     {
       "domain": "ptuj.si",
@@ -71,11 +71,11 @@
   "top_target_domains": [
     {
       "domain": "gov.si",
-      "count": 1608
+      "count": 1626
     },
     {
       "domain": "facebook.com",
-      "count": 127
+      "count": 130
     },
     {
       "domain": "ljubljana.si",
@@ -91,11 +91,11 @@
     },
     {
       "domain": "youtube.com",
-      "count": 91
+      "count": 94
     },
     {
       "domain": "googleapis.com",
-      "count": 88
+      "count": 91
     },
     {
       "domain": "celje.si",
@@ -115,7 +115,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 61
+      "count": 64
     },
     {
       "domain": "europa.eu",
@@ -142,12 +142,12 @@
       "count": 32
     },
     {
-      "domain": "koper.si",
+      "domain": "linkedin.com",
       "count": 30
     },
     {
-      "domain": "linkedin.com",
-      "count": 27
+      "domain": "koper.si",
+      "count": 30
     },
     {
       "domain": "jsdelivr.net",
@@ -174,16 +174,16 @@
       "count": 24
     },
     {
+      "domain": "evropskasredstva.si",
+      "count": 22
+    },
+    {
       "domain": "ip-rs.si",
       "count": 21
     },
     {
       "domain": "cloudflare.com",
       "count": 20
-    },
-    {
-      "domain": "evropskasredstva.si",
-      "count": 19
     },
     {
       "domain": "arcgis.com",
@@ -278,5 +278,5 @@
     "stylesheet_dependency": 96,
     "form_destination": 44
   },
-  "generated_at": "2026-08-19T13:32:40.621408+00:00"
+  "generated_at": "2026-09-02T16:50:03.323476+00:00"
 }

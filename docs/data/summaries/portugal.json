@@ -24,12 +24,12 @@
       "count": 1007
     },
     {
-      "domain": "edu.gov.pt",
-      "count": 738
+      "domain": "cm-alcobaca.pt",
+      "count": 748
     },
     {
-      "domain": "cm-alcobaca.pt",
-      "count": 733
+      "domain": "edu.gov.pt",
+      "count": 738
     },
     {
       "domain": "cm-tvedras.pt",
@@ -211,19 +211,19 @@
     },
     {
       "domain": "facebook.com",
-      "count": 2156
+      "count": 2159
     },
     {
       "domain": "youtube.com",
-      "count": 1719
+      "count": 1722
     },
     {
       "domain": "instagram.com",
-      "count": 1692
+      "count": 1695
     },
     {
       "domain": "googletagmanager.com",
-      "count": 1526
+      "count": 1530
     },
     {
       "domain": "google.com",
@@ -239,7 +239,7 @@
     },
     {
       "domain": "livroreclamacoes.pt",
-      "count": 875
+      "count": 878
     },
     {
       "domain": "cloudflare.com",
@@ -254,12 +254,12 @@
       "count": 797
     },
     {
-      "domain": "portugal.gov.pt",
-      "count": 792
+      "domain": "twitter.com",
+      "count": 793
     },
     {
-      "domain": "twitter.com",
-      "count": 791
+      "domain": "portugal.gov.pt",
+      "count": 792
     },
     {
       "domain": "wiremaze.com",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 571
+      "count": 573
     },
     {
       "domain": "cm-porto.pt",
@@ -295,11 +295,11 @@
     },
     {
       "domain": "w3.org",
-      "count": 348
+      "count": 353
     },
     {
       "domain": "cm-alcobaca.pt",
-      "count": 337
+      "count": 344
     },
     {
       "domain": "ipdj.gov.pt",
@@ -379,11 +379,11 @@
     },
     {
       "domain": "autarquia360.com",
-      "count": 225
+      "count": 226
     },
     {
       "domain": "portugal2020.pt",
-      "count": 222
+      "count": 224
     },
     {
       "domain": "cm-pontedelima.pt",
@@ -414,5 +414,5 @@
     "form_destination": 747,
     "image_or_media_dependency": 1127
   },
-  "generated_at": "2026-08-31T23:19:34.446193+00:00"
+  "generated_at": "2026-09-02T16:50:03.245696+00:00"
 }
