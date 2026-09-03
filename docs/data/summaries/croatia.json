@@ -13,7 +13,7 @@
     },
     {
       "domain": "rijeka.hr",
-      "count": 580
+      "count": 586
     },
     {
       "domain": "slavonski-brod.hr",
@@ -135,7 +135,7 @@
     },
     {
       "domain": "rijeka.hr",
-      "count": 228
+      "count": 232
     },
     {
       "domain": "facebook.com",
@@ -151,7 +151,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 143
+      "count": 144
     },
     {
       "domain": "youtube.com",
@@ -334,5 +334,5 @@
     "script_dependency": 167,
     "stylesheet_dependency": 122
   },
-  "generated_at": "2026-08-20T07:32:26.195522+00:00"
+  "generated_at": "2026-09-03T16:40:35.418589+00:00"
 }
