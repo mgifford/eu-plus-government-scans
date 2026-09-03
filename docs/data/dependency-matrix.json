@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-03T03:52:51.320005+00:00",
+  "generated_at": "2026-09-03T11:33:28.780676+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -173,7 +173,7 @@
     {
       "service": "googleapis.com",
       "countries": 32,
-      "domains": 4011
+      "domains": 4013
     },
     {
       "service": "googletagmanager.com",
@@ -183,12 +183,12 @@
     {
       "service": "gstatic.com",
       "countries": 32,
-      "domains": 1584
+      "domains": 1585
     },
     {
       "service": "jsdelivr.net",
       "countries": 32,
-      "domains": 1078
+      "domains": 1080
     },
     {
       "service": "fontawesome.com",
@@ -198,12 +198,12 @@
     {
       "service": "google.com",
       "countries": 31,
-      "domains": 1926
+      "domains": 1928
     },
     {
       "service": "cloudflare.com",
       "countries": 31,
-      "domains": 1453
+      "domains": 1455
     },
     {
       "service": "jquery.com",
@@ -243,7 +243,7 @@
     {
       "service": "facebook.net",
       "countries": 21,
-      "domains": 182
+      "domains": 183
     },
     {
       "service": "addtoany.com",
@@ -258,7 +258,7 @@
     {
       "service": "fbcdn.net",
       "countries": 18,
-      "domains": 96
+      "domains": 97
     },
     {
       "service": "mapbox.com",
@@ -596,9 +596,9 @@
       "country_code": "FRANCE",
       "country": "France",
       "service": "googleapis.com",
-      "domains": 231,
+      "domains": 233,
       "scanned_domains": 657,
-      "percent": 35.2
+      "percent": 35.5
     },
     {
       "country_code": "FRANCE",
@@ -612,17 +612,17 @@
       "country_code": "FRANCE",
       "country": "France",
       "service": "gstatic.com",
-      "domains": 115,
+      "domains": 116,
       "scanned_domains": 657,
-      "percent": 17.5
+      "percent": 17.7
     },
     {
       "country_code": "FRANCE",
       "country": "France",
       "service": "jsdelivr.net",
-      "domains": 91,
+      "domains": 93,
       "scanned_domains": 657,
-      "percent": 13.9
+      "percent": 14.2
     },
     {
       "country_code": "FRANCE",
@@ -636,17 +636,17 @@
       "country_code": "FRANCE",
       "country": "France",
       "service": "google.com",
-      "domains": 93,
+      "domains": 95,
       "scanned_domains": 657,
-      "percent": 14.2
+      "percent": 14.5
     },
     {
       "country_code": "FRANCE",
       "country": "France",
       "service": "cloudflare.com",
-      "domains": 113,
+      "domains": 115,
       "scanned_domains": 657,
-      "percent": 17.2
+      "percent": 17.5
     },
     {
       "country_code": "FRANCE",
@@ -708,9 +708,9 @@
       "country_code": "FRANCE",
       "country": "France",
       "service": "facebook.net",
-      "domains": 10,
+      "domains": 11,
       "scanned_domains": 657,
-      "percent": 1.5
+      "percent": 1.7
     },
     {
       "country_code": "FRANCE",
@@ -732,9 +732,9 @@
       "country_code": "FRANCE",
       "country": "France",
       "service": "fbcdn.net",
-      "domains": 14,
+      "domains": 15,
       "scanned_domains": 657,
-      "percent": 2.1
+      "percent": 2.3
     },
     {
       "country_code": "FRANCE",
