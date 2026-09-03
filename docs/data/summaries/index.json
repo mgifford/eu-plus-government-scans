@@ -40,13 +40,13 @@
     "file": "belgium.json"
   },
   "CANADA": {
-    "total_relationships": 302466,
-    "total_source_domains": 8555,
+    "total_relationships": 302622,
+    "total_source_domains": 8559,
     "file": "canada.json"
   },
   "REPUBLIC_OF_CYPRUS": {
-    "total_relationships": 302466,
-    "total_source_domains": 8555,
+    "total_relationships": 302622,
+    "total_source_domains": 8559,
     "file": "republic_of_cyprus.json"
   },
   "AUSTRIA": {
@@ -54,9 +54,9 @@
     "total_source_domains": 36,
     "file": "austria.json"
   },
-  "POLAND": {
-    "total_relationships": 57694,
-    "total_source_domains": 2329,
-    "file": "poland.json"
+  "UNITED_KINGDOM_UK": {
+    "total_relationships": 302622,
+    "total_source_domains": 8559,
+    "file": "united_kingdom_uk.json"
   }
 }
