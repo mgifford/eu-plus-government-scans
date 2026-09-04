@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T11:29:04.003128+00:00",
+  "generated_at": "2026-09-04T16:38:52.678056+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -173,7 +173,7 @@
     {
       "service": "googleapis.com",
       "countries": 32,
-      "domains": 4024
+      "domains": 4026
     },
     {
       "service": "googletagmanager.com",
@@ -183,7 +183,7 @@
     {
       "service": "gstatic.com",
       "countries": 32,
-      "domains": 1592
+      "domains": 1593
     },
     {
       "service": "jsdelivr.net",
@@ -213,7 +213,7 @@
     {
       "service": "unpkg.com",
       "countries": 29,
-      "domains": 631
+      "domains": 632
     },
     {
       "service": "bootstrapcdn.com",
@@ -436,9 +436,9 @@
       "country_code": "POLAND",
       "country": "Poland",
       "service": "googleapis.com",
-      "domains": 1383,
+      "domains": 1385,
       "scanned_domains": 2291,
-      "percent": 60.4
+      "percent": 60.5
     },
     {
       "country_code": "POLAND",
@@ -452,9 +452,9 @@
       "country_code": "POLAND",
       "country": "Poland",
       "service": "gstatic.com",
-      "domains": 468,
+      "domains": 469,
       "scanned_domains": 2291,
-      "percent": 20.4
+      "percent": 20.5
     },
     {
       "country_code": "POLAND",
@@ -500,7 +500,7 @@
       "country_code": "POLAND",
       "country": "Poland",
       "service": "unpkg.com",
-      "domains": 61,
+      "domains": 62,
       "scanned_domains": 2291,
       "percent": 2.7
     },
