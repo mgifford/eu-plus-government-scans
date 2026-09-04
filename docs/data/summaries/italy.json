@@ -65,7 +65,7 @@
     },
     {
       "domain": "mef.gov.it",
-      "count": 1211
+      "count": 1226
     },
     {
       "domain": "governo.it",
@@ -251,7 +251,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 1857
+      "count": 1858
     },
     {
       "domain": "googleapis.com",
@@ -326,12 +326,12 @@
       "count": 780
     },
     {
-      "domain": "csm.it",
-      "count": 718
+      "domain": "mef.gov.it",
+      "count": 722
     },
     {
-      "domain": "mef.gov.it",
-      "count": 711
+      "domain": "csm.it",
+      "count": 718
     },
     {
       "domain": "regione.toscana.it",
@@ -414,5 +414,5 @@
     "form_destination": 1454,
     "font_or_preload_dependency": 251
   },
-  "generated_at": "2026-09-04T16:38:50.089899+00:00"
+  "generated_at": "2026-09-04T21:08:57.537938+00:00"
 }
