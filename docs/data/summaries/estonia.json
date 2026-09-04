@@ -5,7 +5,7 @@
   "top_source_domains": [
     {
       "domain": "tartu.ee",
-      "count": 1954
+      "count": 1956
     },
     {
       "domain": "tallinn.ee",
@@ -28,6 +28,10 @@
       "count": 340
     },
     {
+      "domain": "viljandi.ee",
+      "count": 321
+    },
+    {
       "domain": "stat.ee",
       "count": 320
     },
@@ -42,10 +46,6 @@
     {
       "domain": "vm.ee",
       "count": 296
-    },
-    {
-      "domain": "viljandi.ee",
-      "count": 285
     },
     {
       "domain": "ria.ee",
@@ -135,19 +135,19 @@
   "top_target_domains": [
     {
       "domain": "tartu.ee",
-      "count": 919
+      "count": 920
     },
     {
       "domain": "tallinn.ee",
       "count": 588
     },
     {
-      "domain": "parnu.ee",
+      "domain": "facebook.com",
       "count": 445
     },
     {
-      "domain": "facebook.com",
-      "count": 443
+      "domain": "parnu.ee",
+      "count": 445
     },
     {
       "domain": "agri.ee",
@@ -186,12 +186,16 @@
       "count": 166
     },
     {
+      "domain": "viljandi.ee",
+      "count": 142
+    },
+    {
       "domain": "eesti.ee",
       "count": 135
     },
     {
       "domain": "flickr.com",
-      "count": 134
+      "count": 135
     },
     {
       "domain": "hm.ee",
@@ -203,10 +207,6 @@
     },
     {
       "domain": "riigikantselei.ee",
-      "count": 129
-    },
-    {
-      "domain": "viljandi.ee",
       "count": 129
     },
     {
@@ -226,11 +226,11 @@
       "count": 107
     },
     {
-      "domain": "kriis.ee",
-      "count": 104
+      "domain": "googletagmanager.com",
+      "count": 106
     },
     {
-      "domain": "googletagmanager.com",
+      "domain": "kriis.ee",
       "count": 104
     },
     {
@@ -259,7 +259,7 @@
     },
     {
       "domain": "google.com",
-      "count": 65
+      "count": 67
     },
     {
       "domain": "just.ee",
@@ -314,12 +314,12 @@
       "count": 36
     },
     {
-      "domain": "edupage.org",
-      "count": 35
+      "domain": "fontawesome.com",
+      "count": 36
     },
     {
-      "domain": "fontawesome.com",
-      "count": 34
+      "domain": "edupage.org",
+      "count": 35
     },
     {
       "domain": "gstatic.com",
@@ -342,5 +342,5 @@
     "stylesheet_dependency": 189,
     "font_or_preload_dependency": 18
   },
-  "generated_at": "2026-09-04T16:38:49.808578+00:00"
+  "generated_at": "2026-09-04T21:08:57.085831+00:00"
 }
