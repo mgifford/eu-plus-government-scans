@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-09-05 05:07 UTC_
+_Generated: 2026-09-05 05:49 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -17,7 +17,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Social Media | 87,601 scanned (79,633 reachable) | 87,696 | <span role="img" aria-label="99.9% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">99.9%</span></span> | 13.2 days |
 | Technology | 87,696 scanned | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 14.6 days |
 | Lighthouse | 13,515 scanned | 87,696 | <span role="img" aria-label="15.4% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:18px;"></span></span><span class="sm-bar__label">15.4%</span></span> | 24.9 days |
-| Accessibility Statements | 82,198 scanned | 87,696 | <span role="img" aria-label="93.7% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:112px;"></span></span><span class="sm-bar__label">93.7%</span></span> | 14.3 days |
+| Accessibility Statements | 83,911 scanned | 87,696 | <span role="img" aria-label="95.7% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:115px;"></span></span><span class="sm-bar__label">95.7%</span></span> | 14.2 days |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by any scan type. **Avg Age** shows the mean number of days (or hours) since each URL in that scan type was last scanned — lower is fresher.
 
@@ -206,7 +206,7 @@ Checks whether each government page links to an accessibility statement as requi
 | Spain | 6,091 | 5,131 | 2,356 | 2,073 | 46% | Aug 2026 |
 | Sweden | 1,702 | 1,556 | 895 | 810 | 58% | Aug 2026 |
 | Switzerland | 2,123 | 2,076 | 1,026 | 1,025 | 49% | Aug 2026 |
-| United Kingdom | 17,510 | 16,586 | 9,142 | 8,625 | 55% | Aug 2026 – Sep 2026 |
+| United Kingdom | 19,223 | 18,261 | 10,087 | 9,537 | 55% | Aug 2026 – Sep 2026 |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
