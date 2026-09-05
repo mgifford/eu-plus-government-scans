@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T21:09:01.012005+00:00",
+  "generated_at": "2026-09-05T03:51:31.398441+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -178,7 +178,7 @@
     {
       "service": "googletagmanager.com",
       "countries": 32,
-      "domains": 2591
+      "domains": 2592
     },
     {
       "service": "gstatic.com",
@@ -1084,9 +1084,9 @@
       "country_code": "SPAIN",
       "country": "Spain",
       "service": "googletagmanager.com",
-      "domains": 87,
+      "domains": 88,
       "scanned_domains": 242,
-      "percent": 36.0
+      "percent": 36.4
     },
     {
       "country_code": "SPAIN",
