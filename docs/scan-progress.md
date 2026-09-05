@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-09-05 10:35 UTC_
+_Generated: 2026-09-05 11:22 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -150,7 +150,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Iceland | 133 | 92 | 92 | 91 | 91 | 2026-08-23 |
 | Ireland | 484 | 91 | 91 | 90 | 87 | 2026-08-31 |
 | Italy | 418 | 89 | 88 | 96 | 87 | 2026-09-05 |
-| Latvia | 364 | 87 | 86 | 91 | 85 | 2026-09-03 |
+| Latvia | 364 | 87 | 86 | 91 | 85 | 2026-09-05 |
 | Lithuania | 111 | 86 | 81 | 87 | 85 | 2026-08-23 |
 | Luxembourg | 556 | 91 | 93 | 93 | 91 | 2026-09-01 |
 | Malta | 579 | 89 | 85 | 78 | 82 | 2026-09-03 |
