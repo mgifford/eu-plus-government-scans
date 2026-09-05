@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T15:28:45.142413+00:00",
+  "generated_at": "2026-09-05T20:48:11.351660+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -183,7 +183,7 @@
     {
       "service": "gstatic.com",
       "countries": 32,
-      "domains": 1598
+      "domains": 1599
     },
     {
       "service": "jsdelivr.net",
@@ -193,12 +193,12 @@
     {
       "service": "fontawesome.com",
       "countries": 32,
-      "domains": 808
+      "domains": 809
     },
     {
       "service": "google.com",
       "countries": 31,
-      "domains": 1934
+      "domains": 1935
     },
     {
       "service": "cloudflare.com",
@@ -218,7 +218,7 @@
     {
       "service": "bootstrapcdn.com",
       "countries": 29,
-      "domains": 589
+      "domains": 590
     },
     {
       "service": "typekit.net",
@@ -258,7 +258,7 @@
     {
       "service": "fbcdn.net",
       "countries": 18,
-      "domains": 100
+      "domains": 101
     },
     {
       "service": "mapbox.com",
@@ -452,9 +452,9 @@
       "country_code": "POLAND",
       "country": "Poland",
       "service": "gstatic.com",
-      "domains": 471,
+      "domains": 472,
       "scanned_domains": 2292,
-      "percent": 20.5
+      "percent": 20.6
     },
     {
       "country_code": "POLAND",
@@ -476,7 +476,7 @@
       "country_code": "POLAND",
       "country": "Poland",
       "service": "google.com",
-      "domains": 359,
+      "domains": 360,
       "scanned_domains": 2292,
       "percent": 15.7
     },
@@ -508,9 +508,9 @@
       "country_code": "POLAND",
       "country": "Poland",
       "service": "bootstrapcdn.com",
-      "domains": 154,
+      "domains": 155,
       "scanned_domains": 2292,
-      "percent": 6.7
+      "percent": 6.8
     },
     {
       "country_code": "POLAND",
@@ -572,7 +572,7 @@
       "country_code": "POLAND",
       "country": "Poland",
       "service": "fbcdn.net",
-      "domains": 48,
+      "domains": 49,
       "scanned_domains": 2292,
       "percent": 2.1
     },
@@ -1268,9 +1268,9 @@
       "country_code": "SWEDEN",
       "country": "Sweden",
       "service": "fontawesome.com",
-      "domains": 8,
+      "domains": 9,
       "scanned_domains": 230,
-      "percent": 3.5
+      "percent": 3.9
     },
     {
       "country_code": "SWEDEN",

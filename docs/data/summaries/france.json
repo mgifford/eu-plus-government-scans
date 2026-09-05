@@ -1,6 +1,6 @@
 {
   "country_code": "FRANCE",
-  "total_relationships": 30544,
+  "total_relationships": 30545,
   "total_source_domains": 659,
   "top_source_domains": [
     {
@@ -108,12 +108,12 @@
       "count": 1193
     },
     {
-      "domain": "sports.gouv.fr",
-      "count": 1153
+      "domain": "interieur.gouv.fr",
+      "count": 1174
     },
     {
-      "domain": "interieur.gouv.fr",
-      "count": 1135
+      "domain": "sports.gouv.fr",
+      "count": 1153
     },
     {
       "domain": "lillemetropole.fr",
@@ -211,7 +211,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 6002
+      "count": 6045
     },
     {
       "domain": "haute-garonne.fr",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 4045
+      "count": 4076
     },
     {
       "domain": "skolengo.com",
@@ -231,11 +231,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 3605
+      "count": 3636
     },
     {
       "domain": "data.gouv.fr",
-      "count": 3389
+      "count": 3429
     },
     {
       "domain": "cnam.fr",
@@ -243,7 +243,7 @@
     },
     {
       "domain": "twitter.com",
-      "count": 3232
+      "count": 3266
     },
     {
       "domain": "googleapis.com",
@@ -251,11 +251,11 @@
     },
     {
       "domain": "legifrance.gouv.fr",
-      "count": 2925
+      "count": 2968
     },
     {
       "domain": "youtube.com",
-      "count": 2924
+      "count": 2927
     },
     {
       "domain": "developpement-durable.gouv.fr",
@@ -263,19 +263,19 @@
     },
     {
       "domain": "github.com",
-      "count": 2269
+      "count": 2312
     },
     {
       "domain": "info.gouv.fr",
-      "count": 1797
+      "count": 1837
     },
     {
       "domain": "education.gouv.fr",
-      "count": 1786
+      "count": 1789
     },
     {
       "domain": "service-public.fr",
-      "count": 1711
+      "count": 1718
     },
     {
       "domain": "beta.gouv.fr",
@@ -287,7 +287,7 @@
     },
     {
       "domain": "service-public.gouv.fr",
-      "count": 1485
+      "count": 1523
     },
     {
       "domain": "ac-grenoble.fr",
@@ -331,7 +331,7 @@
     },
     {
       "domain": "x.com",
-      "count": 1011
+      "count": 1024
     },
     {
       "domain": "ac-lyon.fr",
@@ -339,7 +339,7 @@
     },
     {
       "domain": "unpkg.com",
-      "count": 943
+      "count": 946
     },
     {
       "domain": "ac-clermont.fr",
@@ -351,7 +351,7 @@
     },
     {
       "domain": "interieur.gouv.fr",
-      "count": 853
+      "count": 872
     },
     {
       "domain": "isere.fr",
@@ -359,7 +359,7 @@
     },
     {
       "domain": "gouvernement.fr",
-      "count": 824
+      "count": 827
     },
     {
       "domain": "gstatic.com",
@@ -410,9 +410,9 @@
     "editorial_link": 15937,
     "script_dependency": 4565,
     "stylesheet_dependency": 4098,
-    "image_or_media_dependency": 3540,
+    "image_or_media_dependency": 3541,
     "form_destination": 1699,
     "font_or_preload_dependency": 705
   },
-  "generated_at": "2026-09-05T03:51:28.318375+00:00"
+  "generated_at": "2026-09-05T20:48:08.273089+00:00"
 }
