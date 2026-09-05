@@ -1,6 +1,6 @@
 {
   "country_code": "CANADA",
-  "total_relationships": 303642,
+  "total_relationships": 303738,
   "total_source_domains": 8582,
   "top_source_domains": [
     {
@@ -40,6 +40,10 @@
       "count": 23403
     },
     {
+      "domain": "jcyl.es",
+      "count": 23172
+    },
+    {
       "domain": "rlp.de",
       "count": 22012
     },
@@ -49,11 +53,7 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 20188
-    },
-    {
-      "domain": "jcyl.es",
-      "count": 19270
+      "count": 20209
     },
     {
       "domain": "gencat.cat",
@@ -200,18 +200,18 @@
       "count": 4303
     },
     {
-      "domain": "politiaromana.ro",
-      "count": 3871
+      "domain": "euskadi.eus",
+      "count": 4083
     }
   ],
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 54669
+      "count": 55106
     },
     {
       "domain": "googleapis.com",
-      "count": 43985
+      "count": 44446
     },
     {
       "domain": "sachsen.de",
@@ -223,11 +223,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 32302
+      "count": 32622
     },
     {
       "domain": "youtube.com",
-      "count": 30768
+      "count": 31150
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -235,15 +235,15 @@
     },
     {
       "domain": "twitter.com",
-      "count": 26544
+      "count": 26951
     },
     {
       "domain": "google.com",
-      "count": 24927
+      "count": 25167
     },
     {
       "domain": "linkedin.com",
-      "count": 23132
+      "count": 23336
     },
     {
       "domain": "krakow.pl",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 20691
+      "count": 20943
     },
     {
       "domain": "gouv.qc.ca",
@@ -270,12 +270,16 @@
       "count": 17572
     },
     {
+      "domain": "jcyl.es",
+      "count": 15534
+    },
+    {
       "domain": "poznan.pl",
       "count": 15450
     },
     {
       "domain": "jsdelivr.net",
-      "count": 13765
+      "count": 13899
     },
     {
       "domain": "bayern.de",
@@ -283,11 +287,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 13017
-    },
-    {
-      "domain": "jcyl.es",
-      "count": 12306
+      "count": 13195
     },
     {
       "domain": "esteri.it",
@@ -295,7 +295,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 11282
+      "count": 11398
     },
     {
       "domain": "nrw.de",
@@ -303,15 +303,15 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 9993
+      "count": 10034
     },
     {
       "domain": "gencat.cat",
-      "count": 9946
+      "count": 9955
     },
     {
       "domain": "gov.mt",
-      "count": 8705
+      "count": 8706
     },
     {
       "domain": "giustizia.it",
@@ -319,7 +319,7 @@
     },
     {
       "domain": "admin.ch",
-      "count": 7186
+      "count": 7187
     },
     {
       "domain": "gdansk.pl",
@@ -327,7 +327,7 @@
     },
     {
       "domain": "fontawesome.com",
-      "count": 6530
+      "count": 6578
     },
     {
       "domain": "hessen.de",
@@ -335,7 +335,7 @@
     },
     {
       "domain": "x.com",
-      "count": 6207
+      "count": 6342
     },
     {
       "domain": "hamburg.de",
@@ -343,11 +343,11 @@
     },
     {
       "domain": "europa.eu",
-      "count": 5885
+      "count": 6032
     },
     {
       "domain": "gva.es",
-      "count": 5790
+      "count": 5791
     },
     {
       "domain": "haute-garonne.fr",
@@ -355,23 +355,23 @@
     },
     {
       "domain": "unpkg.com",
-      "count": 5578
+      "count": 5619
     },
     {
       "domain": "diplo.de",
       "count": 5310
     },
     {
-      "domain": "paris.fr",
-      "count": 5152
+      "domain": "bootstrapcdn.com",
+      "count": 5179
     },
     {
       "domain": "xunta.gal",
-      "count": 5149
+      "count": 5152
     },
     {
-      "domain": "bootstrapcdn.com",
-      "count": 5105
+      "domain": "paris.fr",
+      "count": 5152
     },
     {
       "domain": "cultura.gov.it",
@@ -379,7 +379,7 @@
     },
     {
       "domain": "jquery.com",
-      "count": 4877
+      "count": 4916
     },
     {
       "domain": "steiermark.at",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 155822,
-    "form_destination": 20486,
-    "image_or_media_dependency": 32183,
-    "script_dependency": 48329,
-    "stylesheet_dependency": 38955,
+    "editorial_link": 155887,
+    "form_destination": 20493,
+    "image_or_media_dependency": 32189,
+    "script_dependency": 48343,
+    "stylesheet_dependency": 38959,
     "font_or_preload_dependency": 7867
   },
-  "generated_at": "2026-09-04T21:08:56.477219+00:00"
+  "generated_at": "2026-09-05T03:51:27.254526+00:00"
 }

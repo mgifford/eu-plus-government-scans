@@ -1,6 +1,6 @@
 {
   "country_code": "FRANCE",
-  "total_relationships": 30543,
+  "total_relationships": 30544,
   "total_source_domains": 659,
   "top_source_domains": [
     {
@@ -211,7 +211,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 5993
+      "count": 6002
     },
     {
       "domain": "haute-garonne.fr",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 4037
+      "count": 4045
     },
     {
       "domain": "skolengo.com",
@@ -231,11 +231,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 3601
+      "count": 3605
     },
     {
       "domain": "data.gouv.fr",
-      "count": 3382
+      "count": 3389
     },
     {
       "domain": "cnam.fr",
@@ -243,19 +243,19 @@
     },
     {
       "domain": "twitter.com",
-      "count": 3227
+      "count": 3232
     },
     {
       "domain": "googleapis.com",
       "count": 2995
     },
     {
-      "domain": "youtube.com",
-      "count": 2919
+      "domain": "legifrance.gouv.fr",
+      "count": 2925
     },
     {
-      "domain": "legifrance.gouv.fr",
-      "count": 2918
+      "domain": "youtube.com",
+      "count": 2924
     },
     {
       "domain": "developpement-durable.gouv.fr",
@@ -263,11 +263,11 @@
     },
     {
       "domain": "github.com",
-      "count": 2262
+      "count": 2269
     },
     {
       "domain": "info.gouv.fr",
-      "count": 1793
+      "count": 1797
     },
     {
       "domain": "education.gouv.fr",
@@ -275,7 +275,7 @@
     },
     {
       "domain": "service-public.fr",
-      "count": 1706
+      "count": 1711
     },
     {
       "domain": "beta.gouv.fr",
@@ -287,7 +287,7 @@
     },
     {
       "domain": "service-public.gouv.fr",
-      "count": 1481
+      "count": 1485
     },
     {
       "domain": "ac-grenoble.fr",
@@ -295,7 +295,7 @@
     },
     {
       "domain": "google.com",
-      "count": 1362
+      "count": 1364
     },
     {
       "domain": "culture.gouv.fr",
@@ -315,7 +315,7 @@
     },
     {
       "domain": "numerique.gouv.fr",
-      "count": 1188
+      "count": 1190
     },
     {
       "domain": "defense.gouv.fr",
@@ -331,7 +331,7 @@
     },
     {
       "domain": "x.com",
-      "count": 1007
+      "count": 1011
     },
     {
       "domain": "ac-lyon.fr",
@@ -351,7 +351,7 @@
     },
     {
       "domain": "interieur.gouv.fr",
-      "count": 851
+      "count": 853
     },
     {
       "domain": "isere.fr",
@@ -359,7 +359,7 @@
     },
     {
       "domain": "gouvernement.fr",
-      "count": 821
+      "count": 824
     },
     {
       "domain": "gstatic.com",
@@ -383,7 +383,7 @@
     },
     {
       "domain": "agriculture.gouv.fr",
-      "count": 681
+      "count": 684
     },
     {
       "domain": "anct.gouv.fr",
@@ -399,7 +399,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 639
+      "count": 640
     },
     {
       "domain": "tarteaucitron.io",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 15936,
+    "editorial_link": 15937,
     "script_dependency": 4565,
     "stylesheet_dependency": 4098,
     "image_or_media_dependency": 3540,
     "form_destination": 1699,
     "font_or_preload_dependency": 705
   },
-  "generated_at": "2026-09-04T11:29:00.701164+00:00"
+  "generated_at": "2026-09-05T03:51:28.318375+00:00"
 }
