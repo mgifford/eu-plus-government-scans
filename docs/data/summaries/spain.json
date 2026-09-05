@@ -5,7 +5,7 @@
   "top_source_domains": [
     {
       "domain": "jcyl.es",
-      "count": 23172
+      "count": 24252
     },
     {
       "domain": "castillalamancha.es",
@@ -21,7 +21,7 @@
     },
     {
       "domain": "aragon.es",
-      "count": 2744
+      "count": 2759
     },
     {
       "domain": "madrid.es",
@@ -207,11 +207,11 @@
   "top_target_domains": [
     {
       "domain": "jcyl.es",
-      "count": 15534
+      "count": 16451
     },
     {
       "domain": "castillalamancha.es",
-      "count": 10034
+      "count": 10035
     },
     {
       "domain": "gva.es",
@@ -219,15 +219,15 @@
     },
     {
       "domain": "facebook.com",
-      "count": 2790
+      "count": 2792
     },
     {
       "domain": "twitter.com",
-      "count": 2570
+      "count": 2573
     },
     {
       "domain": "youtube.com",
-      "count": 2309
+      "count": 2317
     },
     {
       "domain": "googleapis.com",
@@ -235,7 +235,7 @@
     },
     {
       "domain": "google.com",
-      "count": 2217
+      "count": 2218
     },
     {
       "domain": "jccm.es",
@@ -243,7 +243,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 2007
+      "count": 2009
     },
     {
       "domain": "navarra.es",
@@ -251,7 +251,7 @@
     },
     {
       "domain": "aragon.es",
-      "count": 1456
+      "count": 1466
     },
     {
       "domain": "madrid.es",
@@ -266,12 +266,12 @@
       "count": 1010
     },
     {
-      "domain": "juntaex.es",
-      "count": 971
+      "domain": "w3.org",
+      "count": 992
     },
     {
-      "domain": "w3.org",
-      "count": 946
+      "domain": "juntaex.es",
+      "count": 971
     },
     {
       "domain": "linkedin.com",
@@ -315,7 +315,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 532
+      "count": 533
     },
     {
       "domain": "google.es",
@@ -331,7 +331,7 @@
     },
     {
       "domain": "boe.es",
-      "count": 471
+      "count": 472
     },
     {
       "domain": "sanidad.gob.es",
@@ -387,7 +387,7 @@
     },
     {
       "domain": "readspeaker.com",
-      "count": 276
+      "count": 288
     },
     {
       "domain": "vimeo.com",
@@ -414,5 +414,5 @@
     "form_destination": 1451,
     "font_or_preload_dependency": 156
   },
-  "generated_at": "2026-09-05T03:51:28.585555+00:00"
+  "generated_at": "2026-09-05T20:48:08.445290+00:00"
 }
