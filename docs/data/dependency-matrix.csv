@@ -1,24 +1,24 @@
 ﻿country_code,country,service,domains_depending,scanned_domains,percent
-UNITED_KINGDOM_UK,United Kingdom,googleapis.com,1237,2796,44.2
-UNITED_KINGDOM_UK,United Kingdom,googletagmanager.com,1145,2796,41.0
-UNITED_KINGDOM_UK,United Kingdom,gstatic.com,521,2796,18.6
-UNITED_KINGDOM_UK,United Kingdom,jsdelivr.net,382,2796,13.7
-UNITED_KINGDOM_UK,United Kingdom,fontawesome.com,361,2796,12.9
-UNITED_KINGDOM_UK,United Kingdom,google.com,988,2796,35.3
-UNITED_KINGDOM_UK,United Kingdom,cloudflare.com,651,2796,23.3
-UNITED_KINGDOM_UK,United Kingdom,jquery.com,174,2796,6.2
-UNITED_KINGDOM_UK,United Kingdom,unpkg.com,297,2796,10.6
-UNITED_KINGDOM_UK,United Kingdom,bootstrapcdn.com,149,2796,5.3
-UNITED_KINGDOM_UK,United Kingdom,typekit.net,133,2796,4.8
-UNITED_KINGDOM_UK,United Kingdom,facebook.com,22,2796,0.8
-UNITED_KINGDOM_UK,United Kingdom,cookiebot.com,54,2796,1.9
-UNITED_KINGDOM_UK,United Kingdom,amazonaws.com,134,2796,4.8
-UNITED_KINGDOM_UK,United Kingdom,facebook.net,52,2796,1.9
-UNITED_KINGDOM_UK,United Kingdom,addtoany.com,31,2796,1.1
-UNITED_KINGDOM_UK,United Kingdom,arcgis.com,25,2796,0.9
-UNITED_KINGDOM_UK,United Kingdom,fbcdn.net,18,2796,0.6
-UNITED_KINGDOM_UK,United Kingdom,mapbox.com,40,2796,1.4
-UNITED_KINGDOM_UK,United Kingdom,cloudfront.net,284,2796,10.2
+UNITED_KINGDOM_UK,United Kingdom,googleapis.com,1246,2807,44.4
+UNITED_KINGDOM_UK,United Kingdom,googletagmanager.com,1145,2807,40.8
+UNITED_KINGDOM_UK,United Kingdom,gstatic.com,529,2807,18.8
+UNITED_KINGDOM_UK,United Kingdom,jsdelivr.net,392,2807,14.0
+UNITED_KINGDOM_UK,United Kingdom,fontawesome.com,361,2807,12.9
+UNITED_KINGDOM_UK,United Kingdom,google.com,989,2807,35.2
+UNITED_KINGDOM_UK,United Kingdom,cloudflare.com,652,2807,23.2
+UNITED_KINGDOM_UK,United Kingdom,jquery.com,175,2807,6.2
+UNITED_KINGDOM_UK,United Kingdom,unpkg.com,297,2807,10.6
+UNITED_KINGDOM_UK,United Kingdom,bootstrapcdn.com,149,2807,5.3
+UNITED_KINGDOM_UK,United Kingdom,typekit.net,133,2807,4.7
+UNITED_KINGDOM_UK,United Kingdom,facebook.com,22,2807,0.8
+UNITED_KINGDOM_UK,United Kingdom,cookiebot.com,54,2807,1.9
+UNITED_KINGDOM_UK,United Kingdom,amazonaws.com,134,2807,4.8
+UNITED_KINGDOM_UK,United Kingdom,facebook.net,52,2807,1.9
+UNITED_KINGDOM_UK,United Kingdom,addtoany.com,32,2807,1.1
+UNITED_KINGDOM_UK,United Kingdom,arcgis.com,25,2807,0.9
+UNITED_KINGDOM_UK,United Kingdom,fbcdn.net,18,2807,0.6
+UNITED_KINGDOM_UK,United Kingdom,mapbox.com,40,2807,1.4
+UNITED_KINGDOM_UK,United Kingdom,cloudfront.net,284,2807,10.1
 POLAND,Poland,googleapis.com,1408,2328,60.5
 POLAND,Poland,googletagmanager.com,631,2328,27.1
 POLAND,Poland,gstatic.com,485,2328,20.8
