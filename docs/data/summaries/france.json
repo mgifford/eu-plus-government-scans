@@ -1,6 +1,6 @@
 {
   "country_code": "FRANCE",
-  "total_relationships": 30545,
+  "total_relationships": 30552,
   "total_source_domains": 659,
   "top_source_domains": [
     {
@@ -176,12 +176,12 @@
       "count": 817
     },
     {
-      "domain": "esante.gouv.fr",
-      "count": 788
+      "domain": "gard.fr",
+      "count": 808
     },
     {
-      "domain": "gard.fr",
-      "count": 782
+      "domain": "esante.gouv.fr",
+      "count": 788
     },
     {
       "domain": "impots.gouv.fr",
@@ -211,7 +211,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 6045
+      "count": 6047
     },
     {
       "domain": "haute-garonne.fr",
@@ -231,7 +231,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 3636
+      "count": 3638
     },
     {
       "domain": "data.gouv.fr",
@@ -243,11 +243,11 @@
     },
     {
       "domain": "twitter.com",
-      "count": 3266
+      "count": 3268
     },
     {
       "domain": "googleapis.com",
-      "count": 2995
+      "count": 2997
     },
     {
       "domain": "legifrance.gouv.fr",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 2927
+      "count": 2928
     },
     {
       "domain": "developpement-durable.gouv.fr",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 15937,
-    "script_dependency": 4565,
-    "stylesheet_dependency": 4098,
-    "image_or_media_dependency": 3541,
-    "form_destination": 1699,
+    "editorial_link": 15939,
+    "script_dependency": 4566,
+    "stylesheet_dependency": 4100,
+    "image_or_media_dependency": 3542,
+    "form_destination": 1700,
     "font_or_preload_dependency": 705
   },
-  "generated_at": "2026-09-05T20:48:08.273089+00:00"
+  "generated_at": "2026-09-06T11:08:41.693504+00:00"
 }

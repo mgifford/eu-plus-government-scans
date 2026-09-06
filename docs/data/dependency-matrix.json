@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T03:54:54.016496+00:00",
+  "generated_at": "2026-09-06T11:08:45.445059+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -16,7 +16,7 @@
     {
       "country_code": "POLAND",
       "country": "Poland",
-      "scanned_domains": 2292
+      "scanned_domains": 2328
     },
     {
       "country_code": "FRANCE",
@@ -129,6 +129,11 @@
       "scanned_domains": 27
     },
     {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "scanned_domains": 20
+    },
+    {
       "country_code": "SLOVAKIA",
       "country": "Slovakia",
       "scanned_domains": 20
@@ -137,11 +142,6 @@
       "country_code": "ICELAND",
       "country": "Iceland",
       "scanned_domains": 19
-    },
-    {
-      "country_code": "ROMANIA",
-      "country": "Romania",
-      "scanned_domains": 16
     },
     {
       "country_code": "SLOVENIA",
@@ -173,42 +173,42 @@
     {
       "service": "googleapis.com",
       "countries": 32,
-      "domains": 4046
+      "domains": 4067
     },
     {
       "service": "googletagmanager.com",
       "countries": 32,
-      "domains": 2606
+      "domains": 2616
     },
     {
       "service": "gstatic.com",
       "countries": 32,
-      "domains": 1609
+      "domains": 1624
     },
     {
       "service": "jsdelivr.net",
       "countries": 32,
-      "domains": 1093
+      "domains": 1096
     },
     {
       "service": "fontawesome.com",
       "countries": 32,
-      "domains": 811
+      "domains": 814
     },
     {
       "service": "google.com",
       "countries": 31,
-      "domains": 1940
+      "domains": 1945
     },
     {
       "service": "cloudflare.com",
       "countries": 31,
-      "domains": 1465
+      "domains": 1470
     },
     {
       "service": "jquery.com",
       "countries": 30,
-      "domains": 621
+      "domains": 623
     },
     {
       "service": "unpkg.com",
@@ -218,7 +218,7 @@
     {
       "service": "bootstrapcdn.com",
       "countries": 29,
-      "domains": 590
+      "domains": 592
     },
     {
       "service": "typekit.net",
@@ -228,7 +228,7 @@
     {
       "service": "facebook.com",
       "countries": 23,
-      "domains": 207
+      "domains": 208
     },
     {
       "service": "cookiebot.com",
@@ -242,8 +242,8 @@
     },
     {
       "service": "facebook.net",
-      "countries": 21,
-      "domains": 183
+      "countries": 22,
+      "domains": 184
     },
     {
       "service": "addtoany.com",
@@ -436,104 +436,104 @@
       "country_code": "POLAND",
       "country": "Poland",
       "service": "googleapis.com",
-      "domains": 1388,
-      "scanned_domains": 2292,
-      "percent": 60.6
+      "domains": 1408,
+      "scanned_domains": 2328,
+      "percent": 60.5
     },
     {
       "country_code": "POLAND",
       "country": "Poland",
       "service": "googletagmanager.com",
-      "domains": 624,
-      "scanned_domains": 2292,
-      "percent": 27.2
+      "domains": 631,
+      "scanned_domains": 2328,
+      "percent": 27.1
     },
     {
       "country_code": "POLAND",
       "country": "Poland",
       "service": "gstatic.com",
-      "domains": 472,
-      "scanned_domains": 2292,
-      "percent": 20.6
+      "domains": 485,
+      "scanned_domains": 2328,
+      "percent": 20.8
     },
     {
       "country_code": "POLAND",
       "country": "Poland",
       "service": "jsdelivr.net",
-      "domains": 167,
-      "scanned_domains": 2292,
+      "domains": 169,
+      "scanned_domains": 2328,
       "percent": 7.3
     },
     {
       "country_code": "POLAND",
       "country": "Poland",
       "service": "fontawesome.com",
-      "domains": 123,
-      "scanned_domains": 2292,
+      "domains": 125,
+      "scanned_domains": 2328,
       "percent": 5.4
     },
     {
       "country_code": "POLAND",
       "country": "Poland",
       "service": "google.com",
-      "domains": 360,
-      "scanned_domains": 2292,
-      "percent": 15.7
+      "domains": 364,
+      "scanned_domains": 2328,
+      "percent": 15.6
     },
     {
       "country_code": "POLAND",
       "country": "Poland",
       "service": "cloudflare.com",
-      "domains": 227,
-      "scanned_domains": 2292,
+      "domains": 231,
+      "scanned_domains": 2328,
       "percent": 9.9
     },
     {
       "country_code": "POLAND",
       "country": "Poland",
       "service": "jquery.com",
-      "domains": 128,
-      "scanned_domains": 2292,
-      "percent": 5.6
+      "domains": 129,
+      "scanned_domains": 2328,
+      "percent": 5.5
     },
     {
       "country_code": "POLAND",
       "country": "Poland",
       "service": "unpkg.com",
       "domains": 62,
-      "scanned_domains": 2292,
+      "scanned_domains": 2328,
       "percent": 2.7
     },
     {
       "country_code": "POLAND",
       "country": "Poland",
       "service": "bootstrapcdn.com",
-      "domains": 155,
-      "scanned_domains": 2292,
-      "percent": 6.8
+      "domains": 157,
+      "scanned_domains": 2328,
+      "percent": 6.7
     },
     {
       "country_code": "POLAND",
       "country": "Poland",
       "service": "typekit.net",
       "domains": 29,
-      "scanned_domains": 2292,
-      "percent": 1.3
+      "scanned_domains": 2328,
+      "percent": 1.2
     },
     {
       "country_code": "POLAND",
       "country": "Poland",
       "service": "facebook.com",
-      "domains": 109,
-      "scanned_domains": 2292,
-      "percent": 4.8
+      "domains": 110,
+      "scanned_domains": 2328,
+      "percent": 4.7
     },
     {
       "country_code": "POLAND",
       "country": "Poland",
       "service": "cookiebot.com",
       "domains": 27,
-      "scanned_domains": 2292,
+      "scanned_domains": 2328,
       "percent": 1.2
     },
     {
@@ -541,7 +541,7 @@
       "country": "Poland",
       "service": "amazonaws.com",
       "domains": 6,
-      "scanned_domains": 2292,
+      "scanned_domains": 2328,
       "percent": 0.3
     },
     {
@@ -549,7 +549,7 @@
       "country": "Poland",
       "service": "facebook.net",
       "domains": 67,
-      "scanned_domains": 2292,
+      "scanned_domains": 2328,
       "percent": 2.9
     },
     {
@@ -557,15 +557,15 @@
       "country": "Poland",
       "service": "addtoany.com",
       "domains": 22,
-      "scanned_domains": 2292,
-      "percent": 1.0
+      "scanned_domains": 2328,
+      "percent": 0.9
     },
     {
       "country_code": "POLAND",
       "country": "Poland",
       "service": "arcgis.com",
       "domains": 2,
-      "scanned_domains": 2292,
+      "scanned_domains": 2328,
       "percent": 0.1
     },
     {
@@ -573,7 +573,7 @@
       "country": "Poland",
       "service": "fbcdn.net",
       "domains": 49,
-      "scanned_domains": 2292,
+      "scanned_domains": 2328,
       "percent": 2.1
     },
     {
@@ -581,7 +581,7 @@
       "country": "Poland",
       "service": "mapbox.com",
       "domains": 11,
-      "scanned_domains": 2292,
+      "scanned_domains": 2328,
       "percent": 0.5
     },
     {
@@ -589,7 +589,7 @@
       "country": "Poland",
       "service": "cloudfront.net",
       "domains": 27,
-      "scanned_domains": 2292,
+      "scanned_domains": 2328,
       "percent": 1.2
     },
     {
@@ -628,9 +628,9 @@
       "country_code": "FRANCE",
       "country": "France",
       "service": "fontawesome.com",
-      "domains": 61,
+      "domains": 62,
       "scanned_domains": 657,
-      "percent": 9.3
+      "percent": 9.4
     },
     {
       "country_code": "FRANCE",
@@ -4113,6 +4113,166 @@
       "percent": 0.0
     },
     {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "googleapis.com",
+      "domains": 10,
+      "scanned_domains": 20,
+      "percent": 50.0
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "googletagmanager.com",
+      "domains": 9,
+      "scanned_domains": 20,
+      "percent": 45.0
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "gstatic.com",
+      "domains": 3,
+      "scanned_domains": 20,
+      "percent": 15.0
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "jsdelivr.net",
+      "domains": 4,
+      "scanned_domains": 20,
+      "percent": 20.0
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "fontawesome.com",
+      "domains": 1,
+      "scanned_domains": 20,
+      "percent": 5.0
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "google.com",
+      "domains": 5,
+      "scanned_domains": 20,
+      "percent": 25.0
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "cloudflare.com",
+      "domains": 3,
+      "scanned_domains": 20,
+      "percent": 15.0
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "jquery.com",
+      "domains": 3,
+      "scanned_domains": 20,
+      "percent": 15.0
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "unpkg.com",
+      "domains": 1,
+      "scanned_domains": 20,
+      "percent": 5.0
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "bootstrapcdn.com",
+      "domains": 1,
+      "scanned_domains": 20,
+      "percent": 5.0
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "typekit.net",
+      "domains": 0,
+      "scanned_domains": 20,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "facebook.com",
+      "domains": 0,
+      "scanned_domains": 20,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "cookiebot.com",
+      "domains": 0,
+      "scanned_domains": 20,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "amazonaws.com",
+      "domains": 1,
+      "scanned_domains": 20,
+      "percent": 5.0
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "facebook.net",
+      "domains": 1,
+      "scanned_domains": 20,
+      "percent": 5.0
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "addtoany.com",
+      "domains": 0,
+      "scanned_domains": 20,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "arcgis.com",
+      "domains": 0,
+      "scanned_domains": 20,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "fbcdn.net",
+      "domains": 0,
+      "scanned_domains": 20,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "mapbox.com",
+      "domains": 0,
+      "scanned_domains": 20,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ROMANIA",
+      "country": "Romania",
+      "service": "cloudfront.net",
+      "domains": 0,
+      "scanned_domains": 20,
+      "percent": 0.0
+    },
+    {
       "country_code": "SLOVAKIA",
       "country": "Slovakia",
       "service": "googleapis.com",
@@ -4430,166 +4590,6 @@
       "service": "cloudfront.net",
       "domains": 0,
       "scanned_domains": 19,
-      "percent": 0.0
-    },
-    {
-      "country_code": "ROMANIA",
-      "country": "Romania",
-      "service": "googleapis.com",
-      "domains": 9,
-      "scanned_domains": 16,
-      "percent": 56.2
-    },
-    {
-      "country_code": "ROMANIA",
-      "country": "Romania",
-      "service": "googletagmanager.com",
-      "domains": 6,
-      "scanned_domains": 16,
-      "percent": 37.5
-    },
-    {
-      "country_code": "ROMANIA",
-      "country": "Romania",
-      "service": "gstatic.com",
-      "domains": 1,
-      "scanned_domains": 16,
-      "percent": 6.2
-    },
-    {
-      "country_code": "ROMANIA",
-      "country": "Romania",
-      "service": "jsdelivr.net",
-      "domains": 3,
-      "scanned_domains": 16,
-      "percent": 18.8
-    },
-    {
-      "country_code": "ROMANIA",
-      "country": "Romania",
-      "service": "fontawesome.com",
-      "domains": 1,
-      "scanned_domains": 16,
-      "percent": 6.2
-    },
-    {
-      "country_code": "ROMANIA",
-      "country": "Romania",
-      "service": "google.com",
-      "domains": 4,
-      "scanned_domains": 16,
-      "percent": 25.0
-    },
-    {
-      "country_code": "ROMANIA",
-      "country": "Romania",
-      "service": "cloudflare.com",
-      "domains": 2,
-      "scanned_domains": 16,
-      "percent": 12.5
-    },
-    {
-      "country_code": "ROMANIA",
-      "country": "Romania",
-      "service": "jquery.com",
-      "domains": 2,
-      "scanned_domains": 16,
-      "percent": 12.5
-    },
-    {
-      "country_code": "ROMANIA",
-      "country": "Romania",
-      "service": "unpkg.com",
-      "domains": 1,
-      "scanned_domains": 16,
-      "percent": 6.2
-    },
-    {
-      "country_code": "ROMANIA",
-      "country": "Romania",
-      "service": "bootstrapcdn.com",
-      "domains": 1,
-      "scanned_domains": 16,
-      "percent": 6.2
-    },
-    {
-      "country_code": "ROMANIA",
-      "country": "Romania",
-      "service": "typekit.net",
-      "domains": 0,
-      "scanned_domains": 16,
-      "percent": 0.0
-    },
-    {
-      "country_code": "ROMANIA",
-      "country": "Romania",
-      "service": "facebook.com",
-      "domains": 0,
-      "scanned_domains": 16,
-      "percent": 0.0
-    },
-    {
-      "country_code": "ROMANIA",
-      "country": "Romania",
-      "service": "cookiebot.com",
-      "domains": 0,
-      "scanned_domains": 16,
-      "percent": 0.0
-    },
-    {
-      "country_code": "ROMANIA",
-      "country": "Romania",
-      "service": "amazonaws.com",
-      "domains": 1,
-      "scanned_domains": 16,
-      "percent": 6.2
-    },
-    {
-      "country_code": "ROMANIA",
-      "country": "Romania",
-      "service": "facebook.net",
-      "domains": 0,
-      "scanned_domains": 16,
-      "percent": 0.0
-    },
-    {
-      "country_code": "ROMANIA",
-      "country": "Romania",
-      "service": "addtoany.com",
-      "domains": 0,
-      "scanned_domains": 16,
-      "percent": 0.0
-    },
-    {
-      "country_code": "ROMANIA",
-      "country": "Romania",
-      "service": "arcgis.com",
-      "domains": 0,
-      "scanned_domains": 16,
-      "percent": 0.0
-    },
-    {
-      "country_code": "ROMANIA",
-      "country": "Romania",
-      "service": "fbcdn.net",
-      "domains": 0,
-      "scanned_domains": 16,
-      "percent": 0.0
-    },
-    {
-      "country_code": "ROMANIA",
-      "country": "Romania",
-      "service": "mapbox.com",
-      "domains": 0,
-      "scanned_domains": 16,
-      "percent": 0.0
-    },
-    {
-      "country_code": "ROMANIA",
-      "country": "Romania",
-      "service": "cloudfront.net",
-      "domains": 0,
-      "scanned_domains": 16,
       "percent": 0.0
     },
     {

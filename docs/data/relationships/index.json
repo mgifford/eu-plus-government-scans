@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-06T03:54:44.465520+00:00",
+  "generated_at": "2026-09-06T11:08:35.151673+00:00",
   "shard_max_bytes": 33554432,
-  "total_rows": 304605,
-  "total_bytes": 177869943,
+  "total_rows": 305375,
+  "total_bytes": 178950601,
   "shards": [
     {
       "file": "at.001.jsonl",
@@ -56,7 +56,7 @@
       "file": "clinic.001.jsonl",
       "group": "clinic",
       "rows": 14,
-      "bytes": 5848
+      "bytes": 7559
     },
     {
       "file": "cloud.001.jsonl",
@@ -110,13 +110,13 @@
       "file": "es.001.jsonl",
       "group": "es",
       "rows": 16259,
-      "bytes": 10234996
+      "bytes": 10237453
     },
     {
       "file": "eu.001.jsonl",
       "group": "eu",
-      "rows": 3446,
-      "bytes": 1907905
+      "rows": 3456,
+      "bytes": 1941733
     },
     {
       "file": "eus.001.jsonl",
@@ -133,8 +133,8 @@
     {
       "file": "fr.001.jsonl",
       "group": "fr",
-      "rows": 30545,
-      "bytes": 19970423
+      "rows": 30552,
+      "bytes": 19974458
     },
     {
       "file": "frl.001.jsonl",
@@ -265,8 +265,8 @@
     {
       "file": "pl.001.jsonl",
       "group": "pl",
-      "rows": 58241,
-      "bytes": 30299107
+      "rows": 58799,
+      "bytes": 31245320
     },
     {
       "file": "pt.001.jsonl",
@@ -277,8 +277,8 @@
     {
       "file": "ro.001.jsonl",
       "group": "ro",
-      "rows": 1182,
-      "bytes": 715708
+      "rows": 1377,
+      "bytes": 808122
     },
     {
       "file": "sap.001.jsonl",
