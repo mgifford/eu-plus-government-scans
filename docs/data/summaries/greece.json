@@ -1,6 +1,6 @@
 {
   "country_code": "GREECE",
-  "total_relationships": 8515,
+  "total_relationships": 8536,
   "total_source_domains": 364,
   "top_source_domains": [
     {
@@ -44,12 +44,12 @@
       "count": 407
     },
     {
-      "domain": "php.gov.gr",
-      "count": 370
+      "domain": "culture.gov.gr",
+      "count": 394
     },
     {
-      "domain": "culture.gov.gr",
-      "count": 359
+      "domain": "php.gov.gr",
+      "count": 370
     },
     {
       "domain": "heraklion.gr",
@@ -207,11 +207,11 @@
   "top_target_domains": [
     {
       "domain": "googleapis.com",
-      "count": 2000
+      "count": 2002
     },
     {
       "domain": "facebook.com",
-      "count": 1088
+      "count": 1090
     },
     {
       "domain": "diavgeia.gov.gr",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 718
+      "count": 720
     },
     {
       "domain": "google.com",
@@ -251,7 +251,7 @@
     },
     {
       "domain": "userway.org",
-      "count": 462
+      "count": 464
     },
     {
       "domain": "instagram.com",
@@ -338,6 +338,10 @@
       "count": 167
     },
     {
+      "domain": "culture.gov.gr",
+      "count": 159
+    },
+    {
       "domain": "fontawesome.com",
       "count": 158
     },
@@ -356,10 +360,6 @@
     {
       "domain": "dypa.gov.gr",
       "count": 150
-    },
-    {
-      "domain": "culture.gov.gr",
-      "count": 149
     },
     {
       "domain": "vvv.gov.gr",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 4889,
+    "editorial_link": 4907,
     "font_or_preload_dependency": 297,
     "form_destination": 367,
-    "image_or_media_dependency": 655,
-    "script_dependency": 1263,
-    "stylesheet_dependency": 1044
+    "image_or_media_dependency": 656,
+    "script_dependency": 1264,
+    "stylesheet_dependency": 1045
   },
-  "generated_at": "2026-09-06T20:51:31.828681+00:00"
+  "generated_at": "2026-09-07T03:52:12.798009+00:00"
 }
