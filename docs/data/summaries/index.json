@@ -25,7 +25,7 @@
     "file": "latvia.json"
   },
   "GREECE": {
-    "total_relationships": 8515,
+    "total_relationships": 8536,
     "total_source_domains": 364,
     "file": "greece.json"
   },
@@ -114,9 +114,24 @@
     "total_source_domains": 73,
     "file": "netherlands.json"
   },
-  "POLAND": {
-    "total_relationships": 59002,
-    "total_source_domains": 2375,
-    "file": "poland.json"
+  "CANADA": {
+    "total_relationships": 308430,
+    "total_source_domains": 8797,
+    "file": "canada.json"
+  },
+  "CROATIA": {
+    "total_relationships": 1343,
+    "total_source_domains": 30,
+    "file": "croatia.json"
+  },
+  "MALTA": {
+    "total_relationships": 1785,
+    "total_source_domains": 3,
+    "file": "malta.json"
+  },
+  "UNITED_KINGDOM_UK": {
+    "total_relationships": 308430,
+    "total_source_domains": 8797,
+    "file": "united_kingdom_uk.json"
   }
 }
