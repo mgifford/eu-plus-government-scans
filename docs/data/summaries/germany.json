@@ -5,7 +5,7 @@
   "top_source_domains": [
     {
       "domain": "sachsen.de",
-      "count": 47750
+      "count": 47756
     },
     {
       "domain": "niedersachsen.de",
@@ -124,12 +124,12 @@
       "count": 327
     },
     {
-      "domain": "bundesimmobilien.de",
-      "count": 290
+      "domain": "rki.de",
+      "count": 304
     },
     {
-      "domain": "rki.de",
-      "count": 280
+      "domain": "bundesimmobilien.de",
+      "count": 290
     },
     {
       "domain": "dwd.de",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "sachsen.de",
-      "count": 41908
+      "count": 41914
     },
     {
       "domain": "niedersachsen.de",
@@ -247,11 +247,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 3484
+      "count": 3486
     },
     {
       "domain": "bund.de",
-      "count": 3160
+      "count": 3162
     },
     {
       "domain": "bremen.de",
@@ -267,7 +267,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 2222
+      "count": 2224
     },
     {
       "domain": "berlin.de",
@@ -275,7 +275,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 1792
+      "count": 1794
     },
     {
       "domain": "baden-wuerttemberg.de",
@@ -414,5 +414,5 @@
     "stylesheet_dependency": 2718,
     "form_destination": 2146
   },
-  "generated_at": "2026-09-07T18:07:03.862884+00:00"
+  "generated_at": "2026-09-07T21:58:56.322469+00:00"
 }

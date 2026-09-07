@@ -1,6 +1,6 @@
 {
   "country_code": "SWEDEN",
-  "total_relationships": 5891,
+  "total_relationships": 5894,
   "total_source_domains": 234,
   "top_source_domains": [
     {
@@ -243,7 +243,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 376
+      "count": 378
     },
     {
       "domain": "goteborg.se",
@@ -251,7 +251,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 368
+      "count": 372
     },
     {
       "domain": "vaxjo.se",
@@ -409,10 +409,10 @@
   "relationship_types": {
     "editorial_link": 2592,
     "script_dependency": 1094,
-    "stylesheet_dependency": 837,
-    "font_or_preload_dependency": 269,
+    "stylesheet_dependency": 838,
+    "font_or_preload_dependency": 271,
     "form_destination": 456,
     "image_or_media_dependency": 643
   },
-  "generated_at": "2026-09-05T20:48:08.381679+00:00"
+  "generated_at": "2026-09-07T21:58:57.361294+00:00"
 }
