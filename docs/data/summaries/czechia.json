@@ -1,6 +1,6 @@
 {
   "country_code": "CZECHIA",
-  "total_relationships": 2498,
+  "total_relationships": 2613,
   "total_source_domains": 54,
   "top_source_domains": [
     {
@@ -9,7 +9,7 @@
     },
     {
       "domain": "brno.cz",
-      "count": 1499
+      "count": 1965
     },
     {
       "domain": "justice.cz",
@@ -210,12 +210,12 @@
       "count": 2083
     },
     {
-      "domain": "justice.cz",
-      "count": 746
+      "domain": "brno.cz",
+      "count": 940
     },
     {
-      "domain": "brno.cz",
-      "count": 694
+      "domain": "justice.cz",
+      "count": 746
     },
     {
       "domain": "googleapis.com",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 373
+      "count": 402
     },
     {
       "domain": "plzensky-kraj.cz",
@@ -231,7 +231,11 @@
     },
     {
       "domain": "twitter.com",
-      "count": 196
+      "count": 207
+    },
+    {
+      "domain": "instagram.com",
+      "count": 198
     },
     {
       "domain": "kraj-lbc.cz",
@@ -250,8 +254,8 @@
       "count": 180
     },
     {
-      "domain": "instagram.com",
-      "count": 177
+      "domain": "youtube.com",
+      "count": 170
     },
     {
       "domain": "mzp.cz",
@@ -266,16 +270,12 @@
       "count": 156
     },
     {
-      "domain": "youtube.com",
-      "count": 147
-    },
-    {
       "domain": "cloudflare.com",
       "count": 146
     },
     {
       "domain": "google.com",
-      "count": 132
+      "count": 137
     },
     {
       "domain": "linkedin.com",
@@ -354,6 +354,10 @@
       "count": 69
     },
     {
+      "domain": "smlouvy.gov.cz",
+      "count": 66
+    },
+    {
       "domain": "bezstavy.cz",
       "count": 66
     },
@@ -364,10 +368,6 @@
     {
       "domain": "nzip.cz",
       "count": 64
-    },
-    {
-      "domain": "smlouvy.gov.cz",
-      "count": 58
     },
     {
       "domain": "fajnova.cz",
@@ -382,12 +382,16 @@
       "count": 49
     },
     {
+      "domain": "mvcr.cz",
+      "count": 49
+    },
+    {
       "domain": "uradprace.cz",
       "count": 48
     },
     {
-      "domain": "mvcr.cz",
-      "count": 47
+      "domain": "arcgis.com",
+      "count": 44
     },
     {
       "domain": "zdravaova.cz",
@@ -398,21 +402,17 @@
       "count": 40
     },
     {
-      "domain": "arcgis.com",
+      "domain": "x.com",
       "count": 38
-    },
-    {
-      "domain": "statnipokladna.gov.cz",
-      "count": 36
     }
   ],
   "relationship_types": {
-    "editorial_link": 1485,
-    "script_dependency": 314,
-    "stylesheet_dependency": 264,
-    "form_destination": 152,
-    "image_or_media_dependency": 224,
+    "editorial_link": 1554,
+    "script_dependency": 326,
+    "stylesheet_dependency": 276,
+    "form_destination": 163,
+    "image_or_media_dependency": 235,
     "font_or_preload_dependency": 59
   },
-  "generated_at": "2026-09-07T03:52:13.585391+00:00"
+  "generated_at": "2026-09-07T12:29:41.449296+00:00"
 }
