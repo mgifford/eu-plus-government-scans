@@ -1,6 +1,6 @@
 {
   "country_code": "FRANCE",
-  "total_relationships": 30552,
+  "total_relationships": 30557,
   "total_source_domains": 659,
   "top_source_domains": [
     {
@@ -172,12 +172,12 @@
       "count": 878
     },
     {
-      "domain": "montpellier3m.fr",
-      "count": 817
+      "domain": "gard.fr",
+      "count": 821
     },
     {
-      "domain": "gard.fr",
-      "count": 808
+      "domain": "montpellier3m.fr",
+      "count": 817
     },
     {
       "domain": "esante.gouv.fr",
@@ -247,7 +247,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 2997
+      "count": 2999
     },
     {
       "domain": "legifrance.gouv.fr",
@@ -363,7 +363,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 786
+      "count": 788
     },
     {
       "domain": "hautsdefrance.fr",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 15939,
-    "script_dependency": 4566,
-    "stylesheet_dependency": 4100,
-    "image_or_media_dependency": 3542,
+    "editorial_link": 15941,
+    "script_dependency": 4567,
+    "stylesheet_dependency": 4101,
+    "image_or_media_dependency": 3543,
     "form_destination": 1700,
     "font_or_preload_dependency": 705
   },
-  "generated_at": "2026-09-07T03:52:13.990848+00:00"
+  "generated_at": "2026-09-07T12:29:41.564644+00:00"
 }
