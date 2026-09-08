@@ -1,7 +1,7 @@
 {
   "country_code": "UNITED_KINGDOM_UK",
-  "total_relationships": 315157,
-  "total_source_domains": 9059,
+  "total_relationships": 315314,
+  "total_source_domains": 9061,
   "top_source_domains": [
     {
       "domain": "ethz.ch",
@@ -13,7 +13,7 @@
     },
     {
       "domain": "krakow.pl",
-      "count": 45928
+      "count": 45956
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -108,6 +108,10 @@
       "count": 8577
     },
     {
+      "domain": "uni.opole.pl",
+      "count": 8391
+    },
+    {
       "domain": "tarnow.pl",
       "count": 8289
     },
@@ -134,10 +138,6 @@
     {
       "domain": "ug.edu.pl",
       "count": 7038
-    },
-    {
-      "domain": "uni.opole.pl",
-      "count": 6859
     },
     {
       "domain": "blog.gov.uk",
@@ -207,11 +207,11 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 61726
+      "count": 61793
     },
     {
       "domain": "googleapis.com",
-      "count": 51193
+      "count": 51207
     },
     {
       "domain": "sachsen.de",
@@ -223,11 +223,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 35663
+      "count": 35711
     },
     {
       "domain": "youtube.com",
-      "count": 33834
+      "count": 33883
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -235,23 +235,23 @@
     },
     {
       "domain": "google.com",
-      "count": 29110
+      "count": 29145
     },
     {
       "domain": "twitter.com",
-      "count": 28857
+      "count": 28873
     },
     {
       "domain": "linkedin.com",
-      "count": 24959
+      "count": 24965
     },
     {
       "domain": "googletagmanager.com",
-      "count": 23824
+      "count": 23877
     },
     {
       "domain": "krakow.pl",
-      "count": 22483
+      "count": 22491
     },
     {
       "domain": "niedersachsen.de",
@@ -279,11 +279,11 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 15247
+      "count": 15253
     },
     {
       "domain": "cloudflare.com",
-      "count": 14988
+      "count": 15000
     },
     {
       "domain": "bayern.de",
@@ -291,7 +291,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 13156
+      "count": 13159
     },
     {
       "domain": "esteri.it",
@@ -327,19 +327,19 @@
     },
     {
       "domain": "x.com",
-      "count": 6969
+      "count": 7005
     },
     {
       "domain": "gdansk.pl",
       "count": 6810
     },
     {
-      "domain": "hessen.de",
-      "count": 6453
+      "domain": "unpkg.com",
+      "count": 6475
     },
     {
-      "domain": "unpkg.com",
-      "count": 6411
+      "domain": "hessen.de",
+      "count": 6453
     },
     {
       "domain": "hamburg.de",
@@ -347,7 +347,11 @@
     },
     {
       "domain": "europa.eu",
-      "count": 6123
+      "count": 6135
+    },
+    {
+      "domain": "uni.opole.pl",
+      "count": 6069
     },
     {
       "domain": "gva.es",
@@ -355,7 +359,7 @@
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 5766
+      "count": 5772
     },
     {
       "domain": "haute-garonne.fr",
@@ -363,7 +367,7 @@
     },
     {
       "domain": "jquery.com",
-      "count": 5432
+      "count": 5438
     },
     {
       "domain": "diplo.de",
@@ -382,12 +386,8 @@
       "count": 5007
     },
     {
-      "domain": "uni.opole.pl",
-      "count": 4873
-    },
-    {
       "domain": "cloudfront.net",
-      "count": 4822
+      "count": 4824
     },
     {
       "domain": "cqc.org.uk",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 162103,
-    "form_destination": 21093,
-    "image_or_media_dependency": 33116,
-    "script_dependency": 50310,
-    "stylesheet_dependency": 40195,
-    "font_or_preload_dependency": 8340
+    "editorial_link": 162190,
+    "form_destination": 21103,
+    "image_or_media_dependency": 33130,
+    "script_dependency": 50331,
+    "stylesheet_dependency": 40216,
+    "font_or_preload_dependency": 8344
   },
-  "generated_at": "2026-09-08T10:49:16.565029+00:00"
+  "generated_at": "2026-09-08T16:14:44.688859+00:00"
 }
