@@ -1,7 +1,7 @@
 {
   "country_code": "POLAND",
-  "total_relationships": 60807,
-  "total_source_domains": 2439,
+  "total_relationships": 60836,
+  "total_source_domains": 2440,
   "top_source_domains": [
     {
       "domain": "krakow.pl",
@@ -21,7 +21,7 @@
     },
     {
       "domain": "torun.pl",
-      "count": 9121
+      "count": 9158
     },
     {
       "domain": "uni.opole.pl",
@@ -215,7 +215,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 16783
+      "count": 16795
     },
     {
       "domain": "poznan.pl",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 14966
+      "count": 14967
     },
     {
       "domain": "gdansk.pl",
@@ -247,7 +247,7 @@
     },
     {
       "domain": "google.com",
-      "count": 5704
+      "count": 5705
     },
     {
       "domain": "ug.edu.pl",
@@ -255,11 +255,11 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 4173
+      "count": 4179
     },
     {
       "domain": "torun.pl",
-      "count": 4101
+      "count": 4118
     },
     {
       "domain": "tarnow.pl",
@@ -267,7 +267,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 2858
+      "count": 2861
     },
     {
       "domain": "cloudflare.com",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "www.gov.pl",
-      "count": 2250
+      "count": 2255
     },
     {
       "domain": "twitter.com",
@@ -315,11 +315,11 @@
     },
     {
       "domain": "unpkg.com",
-      "count": 1330
+      "count": 1333
     },
     {
       "domain": "vulcan.net.pl",
-      "count": 1196
+      "count": 1197
     },
     {
       "domain": "wordpress.org",
@@ -339,7 +339,7 @@
     },
     {
       "domain": "epuap.gov.pl",
-      "count": 1011
+      "count": 1015
     },
     {
       "domain": "edupage.org",
@@ -395,7 +395,7 @@
     },
     {
       "domain": "wroc.pl",
-      "count": 524
+      "count": 530
     },
     {
       "domain": "dziennikustaw.gov.pl",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 32973,
-    "form_destination": 3272,
-    "image_or_media_dependency": 6589,
-    "script_dependency": 8632,
-    "stylesheet_dependency": 7544,
+    "editorial_link": 32983,
+    "form_destination": 3276,
+    "image_or_media_dependency": 6595,
+    "script_dependency": 8637,
+    "stylesheet_dependency": 7548,
     "font_or_preload_dependency": 1797
   },
-  "generated_at": "2026-09-08T16:14:45.221606+00:00"
+  "generated_at": "2026-09-08T21:35:38.971049+00:00"
 }
