@@ -1,7 +1,7 @@
 {
   "country_code": "POLAND",
-  "total_relationships": 60781,
-  "total_source_domains": 2438,
+  "total_relationships": 60796,
+  "total_source_domains": 2439,
   "top_source_domains": [
     {
       "domain": "krakow.pl",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 14923
+      "count": 14925
     },
     {
       "domain": "gdansk.pl",
@@ -235,15 +235,15 @@
     },
     {
       "domain": "instagram.com",
-      "count": 5819
+      "count": 5821
     },
     {
       "domain": "youtube.com",
-      "count": 5718
+      "count": 5720
     },
     {
       "domain": "google.com",
-      "count": 5694
+      "count": 5696
     },
     {
       "domain": "uni.opole.pl",
@@ -271,7 +271,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 2782
+      "count": 2784
     },
     {
       "domain": "gdynia.pl",
@@ -291,11 +291,11 @@
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 1947
+      "count": 1951
     },
     {
       "domain": "fontawesome.com",
-      "count": 1862
+      "count": 1864
     },
     {
       "domain": "linkedin.com",
@@ -335,7 +335,7 @@
     },
     {
       "domain": "jquery.com",
-      "count": 1089
+      "count": 1091
     },
     {
       "domain": "epuap.gov.pl",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 32961,
-    "form_destination": 3270,
-    "image_or_media_dependency": 6587,
-    "script_dependency": 8626,
-    "stylesheet_dependency": 7540,
+    "editorial_link": 32966,
+    "form_destination": 3271,
+    "image_or_media_dependency": 6588,
+    "script_dependency": 8631,
+    "stylesheet_dependency": 7543,
     "font_or_preload_dependency": 1797
   },
-  "generated_at": "2026-09-08T03:50:12.234287+00:00"
+  "generated_at": "2026-09-08T10:49:17.165766+00:00"
 }

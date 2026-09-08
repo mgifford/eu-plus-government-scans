@@ -1,44 +1,44 @@
 ﻿country_code,country,service,domains_depending,scanned_domains,percent
-UNITED_KINGDOM_UK,United Kingdom,googleapis.com,1364,3108,43.9
-UNITED_KINGDOM_UK,United Kingdom,googletagmanager.com,1252,3108,40.3
-UNITED_KINGDOM_UK,United Kingdom,gstatic.com,575,3108,18.5
-UNITED_KINGDOM_UK,United Kingdom,jsdelivr.net,424,3108,13.6
-UNITED_KINGDOM_UK,United Kingdom,fontawesome.com,397,3108,12.8
-UNITED_KINGDOM_UK,United Kingdom,google.com,1111,3108,35.7
-UNITED_KINGDOM_UK,United Kingdom,cloudflare.com,717,3108,23.1
-UNITED_KINGDOM_UK,United Kingdom,jquery.com,183,3108,5.9
-UNITED_KINGDOM_UK,United Kingdom,unpkg.com,342,3108,11.0
-UNITED_KINGDOM_UK,United Kingdom,bootstrapcdn.com,162,3108,5.2
-UNITED_KINGDOM_UK,United Kingdom,typekit.net,147,3108,4.7
-UNITED_KINGDOM_UK,United Kingdom,facebook.com,24,3108,0.8
-UNITED_KINGDOM_UK,United Kingdom,cookiebot.com,55,3108,1.8
-UNITED_KINGDOM_UK,United Kingdom,amazonaws.com,137,3108,4.4
-UNITED_KINGDOM_UK,United Kingdom,facebook.net,61,3108,2.0
-UNITED_KINGDOM_UK,United Kingdom,addtoany.com,36,3108,1.2
-UNITED_KINGDOM_UK,United Kingdom,arcgis.com,26,3108,0.8
-UNITED_KINGDOM_UK,United Kingdom,fbcdn.net,20,3108,0.6
-UNITED_KINGDOM_UK,United Kingdom,mapbox.com,48,3108,1.5
-UNITED_KINGDOM_UK,United Kingdom,cloudfront.net,352,3108,11.3
-POLAND,Poland,googleapis.com,1457,2388,61.0
-POLAND,Poland,googletagmanager.com,652,2388,27.3
-POLAND,Poland,gstatic.com,494,2388,20.7
-POLAND,Poland,jsdelivr.net,183,2388,7.7
-POLAND,Poland,fontawesome.com,143,2388,6.0
-POLAND,Poland,google.com,373,2388,15.6
-POLAND,Poland,cloudflare.com,239,2388,10.0
-POLAND,Poland,jquery.com,130,2388,5.4
-POLAND,Poland,unpkg.com,66,2388,2.8
-POLAND,Poland,bootstrapcdn.com,158,2388,6.6
-POLAND,Poland,typekit.net,29,2388,1.2
-POLAND,Poland,facebook.com,115,2388,4.8
-POLAND,Poland,cookiebot.com,27,2388,1.1
-POLAND,Poland,amazonaws.com,8,2388,0.3
-POLAND,Poland,facebook.net,69,2388,2.9
-POLAND,Poland,addtoany.com,23,2388,1.0
-POLAND,Poland,arcgis.com,2,2388,0.1
-POLAND,Poland,fbcdn.net,51,2388,2.1
-POLAND,Poland,mapbox.com,11,2388,0.5
-POLAND,Poland,cloudfront.net,27,2388,1.1
+UNITED_KINGDOM_UK,United Kingdom,googleapis.com,1371,3119,44.0
+UNITED_KINGDOM_UK,United Kingdom,googletagmanager.com,1259,3119,40.4
+UNITED_KINGDOM_UK,United Kingdom,gstatic.com,578,3119,18.5
+UNITED_KINGDOM_UK,United Kingdom,jsdelivr.net,426,3119,13.7
+UNITED_KINGDOM_UK,United Kingdom,fontawesome.com,402,3119,12.9
+UNITED_KINGDOM_UK,United Kingdom,google.com,1113,3119,35.7
+UNITED_KINGDOM_UK,United Kingdom,cloudflare.com,719,3119,23.1
+UNITED_KINGDOM_UK,United Kingdom,jquery.com,183,3119,5.9
+UNITED_KINGDOM_UK,United Kingdom,unpkg.com,342,3119,11.0
+UNITED_KINGDOM_UK,United Kingdom,bootstrapcdn.com,164,3119,5.3
+UNITED_KINGDOM_UK,United Kingdom,typekit.net,147,3119,4.7
+UNITED_KINGDOM_UK,United Kingdom,facebook.com,24,3119,0.8
+UNITED_KINGDOM_UK,United Kingdom,cookiebot.com,55,3119,1.8
+UNITED_KINGDOM_UK,United Kingdom,amazonaws.com,137,3119,4.4
+UNITED_KINGDOM_UK,United Kingdom,facebook.net,61,3119,2.0
+UNITED_KINGDOM_UK,United Kingdom,addtoany.com,36,3119,1.2
+UNITED_KINGDOM_UK,United Kingdom,arcgis.com,26,3119,0.8
+UNITED_KINGDOM_UK,United Kingdom,fbcdn.net,20,3119,0.6
+UNITED_KINGDOM_UK,United Kingdom,mapbox.com,48,3119,1.5
+UNITED_KINGDOM_UK,United Kingdom,cloudfront.net,352,3119,11.3
+POLAND,Poland,googleapis.com,1457,2389,61.0
+POLAND,Poland,googletagmanager.com,652,2389,27.3
+POLAND,Poland,gstatic.com,494,2389,20.7
+POLAND,Poland,jsdelivr.net,183,2389,7.7
+POLAND,Poland,fontawesome.com,144,2389,6.0
+POLAND,Poland,google.com,374,2389,15.7
+POLAND,Poland,cloudflare.com,240,2389,10.0
+POLAND,Poland,jquery.com,131,2389,5.5
+POLAND,Poland,unpkg.com,66,2389,2.8
+POLAND,Poland,bootstrapcdn.com,159,2389,6.7
+POLAND,Poland,typekit.net,29,2389,1.2
+POLAND,Poland,facebook.com,115,2389,4.8
+POLAND,Poland,cookiebot.com,27,2389,1.1
+POLAND,Poland,amazonaws.com,8,2389,0.3
+POLAND,Poland,facebook.net,69,2389,2.9
+POLAND,Poland,addtoany.com,23,2389,1.0
+POLAND,Poland,arcgis.com,2,2389,0.1
+POLAND,Poland,fbcdn.net,51,2389,2.1
+POLAND,Poland,mapbox.com,11,2389,0.5
+POLAND,Poland,cloudfront.net,27,2389,1.1
 FRANCE,France,googleapis.com,233,658,35.4
 FRANCE,France,googletagmanager.com,91,658,13.8
 FRANCE,France,gstatic.com,116,658,17.6
@@ -119,26 +119,26 @@ SPAIN,Spain,arcgis.com,4,242,1.7
 SPAIN,Spain,fbcdn.net,2,242,0.8
 SPAIN,Spain,mapbox.com,3,242,1.2
 SPAIN,Spain,cloudfront.net,4,242,1.7
-SWEDEN,Sweden,googleapis.com,64,230,27.8
-SWEDEN,Sweden,googletagmanager.com,15,230,6.5
-SWEDEN,Sweden,gstatic.com,20,230,8.7
-SWEDEN,Sweden,jsdelivr.net,17,230,7.4
-SWEDEN,Sweden,fontawesome.com,9,230,3.9
-SWEDEN,Sweden,google.com,22,230,9.6
-SWEDEN,Sweden,cloudflare.com,24,230,10.4
-SWEDEN,Sweden,jquery.com,14,230,6.1
-SWEDEN,Sweden,unpkg.com,2,230,0.9
-SWEDEN,Sweden,bootstrapcdn.com,12,230,5.2
-SWEDEN,Sweden,typekit.net,9,230,3.9
-SWEDEN,Sweden,facebook.com,1,230,0.4
-SWEDEN,Sweden,cookiebot.com,18,230,7.8
-SWEDEN,Sweden,amazonaws.com,3,230,1.3
-SWEDEN,Sweden,facebook.net,1,230,0.4
-SWEDEN,Sweden,addtoany.com,1,230,0.4
-SWEDEN,Sweden,arcgis.com,0,230,0.0
-SWEDEN,Sweden,fbcdn.net,1,230,0.4
-SWEDEN,Sweden,mapbox.com,1,230,0.4
-SWEDEN,Sweden,cloudfront.net,1,230,0.4
+SWEDEN,Sweden,googleapis.com,65,241,27.0
+SWEDEN,Sweden,googletagmanager.com,15,241,6.2
+SWEDEN,Sweden,gstatic.com,20,241,8.3
+SWEDEN,Sweden,jsdelivr.net,17,241,7.1
+SWEDEN,Sweden,fontawesome.com,9,241,3.7
+SWEDEN,Sweden,google.com,24,241,10.0
+SWEDEN,Sweden,cloudflare.com,25,241,10.4
+SWEDEN,Sweden,jquery.com,14,241,5.8
+SWEDEN,Sweden,unpkg.com,2,241,0.8
+SWEDEN,Sweden,bootstrapcdn.com,12,241,5.0
+SWEDEN,Sweden,typekit.net,11,241,4.6
+SWEDEN,Sweden,facebook.com,1,241,0.4
+SWEDEN,Sweden,cookiebot.com,18,241,7.5
+SWEDEN,Sweden,amazonaws.com,3,241,1.2
+SWEDEN,Sweden,facebook.net,1,241,0.4
+SWEDEN,Sweden,addtoany.com,1,241,0.4
+SWEDEN,Sweden,arcgis.com,0,241,0.0
+SWEDEN,Sweden,fbcdn.net,1,241,0.4
+SWEDEN,Sweden,mapbox.com,1,241,0.4
+SWEDEN,Sweden,cloudfront.net,1,241,0.4
 GERMANY,Germany,googleapis.com,17,215,7.9
 GERMANY,Germany,googletagmanager.com,7,215,3.3
 GERMANY,Germany,gstatic.com,8,215,3.7
