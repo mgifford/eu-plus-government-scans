@@ -1,6 +1,6 @@
 {
   "country_code": "FRANCE",
-  "total_relationships": 30576,
+  "total_relationships": 30585,
   "total_source_domains": 660,
   "top_source_domains": [
     {
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 15953,
-    "script_dependency": 4570,
-    "stylesheet_dependency": 4102,
-    "image_or_media_dependency": 3545,
+    "editorial_link": 15957,
+    "script_dependency": 4571,
+    "stylesheet_dependency": 4103,
+    "image_or_media_dependency": 3547,
     "form_destination": 1701,
-    "font_or_preload_dependency": 705
+    "font_or_preload_dependency": 706
   },
-  "generated_at": "2026-09-07T21:58:57.276537+00:00"
+  "generated_at": "2026-09-08T03:50:11.917672+00:00"
 }
