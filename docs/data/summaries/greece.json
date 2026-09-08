@@ -56,11 +56,11 @@
       "count": 343
     },
     {
-      "domain": "attica.gov.gr",
-      "count": 338
+      "domain": "dypa.gov.gr",
+      "count": 342
     },
     {
-      "domain": "dypa.gov.gr",
+      "domain": "attica.gov.gr",
       "count": 338
     },
     {
@@ -354,12 +354,12 @@
       "count": 156
     },
     {
-      "domain": "espa.gr",
+      "domain": "dypa.gov.gr",
       "count": 154
     },
     {
-      "domain": "dypa.gov.gr",
-      "count": 150
+      "domain": "espa.gr",
+      "count": 154
     },
     {
       "domain": "vvv.gov.gr",
@@ -414,5 +414,5 @@
     "script_dependency": 1264,
     "stylesheet_dependency": 1045
   },
-  "generated_at": "2026-09-08T10:49:15.511816+00:00"
+  "generated_at": "2026-09-08T16:14:43.093042+00:00"
 }
