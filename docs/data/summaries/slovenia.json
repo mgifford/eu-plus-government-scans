@@ -1,11 +1,15 @@
 {
   "country_code": "SLOVENIA",
-  "total_relationships": 891,
+  "total_relationships": 898,
   "total_source_domains": 16,
   "top_source_domains": [
     {
       "domain": "gov.si",
       "count": 2380
+    },
+    {
+      "domain": "maribor.si",
+      "count": 258
     },
     {
       "domain": "ptuj.si",
@@ -18,10 +22,6 @@
     {
       "domain": "kamnik.si",
       "count": 235
-    },
-    {
-      "domain": "maribor.si",
-      "count": 223
     },
     {
       "domain": "ljubljana.si",
@@ -75,7 +75,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 130
+      "count": 133
     },
     {
       "domain": "ljubljana.si",
@@ -83,7 +83,7 @@
     },
     {
       "domain": "maribor.si",
-      "count": 100
+      "count": 113
     },
     {
       "domain": "ptuj.si",
@@ -98,24 +98,24 @@
       "count": 91
     },
     {
-      "domain": "celje.si",
-      "count": 86
+      "domain": "google.com",
+      "count": 89
     },
     {
-      "domain": "google.com",
-      "count": 84
+      "domain": "celje.si",
+      "count": 86
     },
     {
       "domain": "ds-rs.si",
       "count": 74
     },
     {
-      "domain": "kamnik.si",
+      "domain": "instagram.com",
       "count": 67
     },
     {
-      "domain": "instagram.com",
-      "count": 64
+      "domain": "kamnik.si",
+      "count": 67
     },
     {
       "domain": "europa.eu",
@@ -135,7 +135,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 34
+      "count": 37
     },
     {
       "domain": "trbovlje.si",
@@ -174,12 +174,12 @@
       "count": 24
     },
     {
-      "domain": "evropskasredstva.si",
+      "domain": "ip-rs.si",
       "count": 22
     },
     {
-      "domain": "ip-rs.si",
-      "count": 21
+      "domain": "evropskasredstva.si",
+      "count": 22
     },
     {
       "domain": "cloudflare.com",
@@ -271,12 +271,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 525,
-    "image_or_media_dependency": 97,
+    "editorial_link": 528,
+    "image_or_media_dependency": 98,
     "font_or_preload_dependency": 16,
-    "script_dependency": 113,
-    "stylesheet_dependency": 96,
-    "form_destination": 44
+    "script_dependency": 114,
+    "stylesheet_dependency": 97,
+    "form_destination": 45
   },
-  "generated_at": "2026-09-08T03:50:11.427194+00:00"
+  "generated_at": "2026-09-08T10:49:16.161874+00:00"
 }
