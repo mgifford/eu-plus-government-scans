@@ -1,7 +1,7 @@
 {
   "country_code": "CANADA",
-  "total_relationships": 315314,
-  "total_source_domains": 9061,
+  "total_relationships": 315344,
+  "total_source_domains": 9062,
   "top_source_domains": [
     {
       "domain": "ethz.ch",
@@ -97,7 +97,7 @@
     },
     {
       "domain": "torun.pl",
-      "count": 9121
+      "count": 9158
     },
     {
       "domain": "xunta.gal",
@@ -207,11 +207,11 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 61793
+      "count": 61795
     },
     {
       "domain": "googleapis.com",
-      "count": 51207
+      "count": 51221
     },
     {
       "domain": "sachsen.de",
@@ -223,11 +223,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 35711
+      "count": 35712
     },
     {
       "domain": "youtube.com",
-      "count": 33883
+      "count": 33885
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -235,15 +235,15 @@
     },
     {
       "domain": "google.com",
-      "count": 29145
+      "count": 29146
     },
     {
       "domain": "twitter.com",
-      "count": 28873
+      "count": 28874
     },
     {
       "domain": "linkedin.com",
-      "count": 24965
+      "count": 24966
     },
     {
       "domain": "googletagmanager.com",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 15253
+      "count": 15256
     },
     {
       "domain": "cloudflare.com",
@@ -291,7 +291,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 13159
+      "count": 13165
     },
     {
       "domain": "esteri.it",
@@ -319,7 +319,7 @@
     },
     {
       "domain": "fontawesome.com",
-      "count": 7606
+      "count": 7610
     },
     {
       "domain": "admin.ch",
@@ -335,7 +335,7 @@
     },
     {
       "domain": "unpkg.com",
-      "count": 6475
+      "count": 6478
     },
     {
       "domain": "hessen.de",
@@ -402,17 +402,17 @@
       "count": 4301
     },
     {
-      "domain": "belgium.be",
-      "count": 4112
+      "domain": "torun.pl",
+      "count": 4118
     }
   ],
   "relationship_types": {
-    "editorial_link": 162190,
-    "form_destination": 21103,
-    "image_or_media_dependency": 33130,
-    "script_dependency": 50331,
-    "stylesheet_dependency": 40216,
+    "editorial_link": 162200,
+    "form_destination": 21108,
+    "image_or_media_dependency": 33136,
+    "script_dependency": 50336,
+    "stylesheet_dependency": 40220,
     "font_or_preload_dependency": 8344
   },
-  "generated_at": "2026-09-08T16:14:42.815301+00:00"
+  "generated_at": "2026-09-08T21:35:36.634566+00:00"
 }
