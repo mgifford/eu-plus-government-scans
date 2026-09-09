@@ -13,7 +13,7 @@
     },
     {
       "domain": "sibiu.ro",
-      "count": 905
+      "count": 924
     },
     {
       "domain": "brasovcity.ro",
@@ -115,7 +115,7 @@
     },
     {
       "domain": "sibiu.ro",
-      "count": 373
+      "count": 384
     },
     {
       "domain": "googletagmanager.com",
@@ -131,7 +131,7 @@
     },
     {
       "domain": "google.com",
-      "count": 209
+      "count": 210
     },
     {
       "domain": "sri.ro",
@@ -179,7 +179,7 @@
     },
     {
       "domain": "statcounter.com",
-      "count": 106
+      "count": 107
     },
     {
       "domain": "cdep.ro",
@@ -187,7 +187,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 96
+      "count": 97
     },
     {
       "domain": "sts.ro",
@@ -227,7 +227,7 @@
     },
     {
       "domain": "apple.com",
-      "count": 45
+      "count": 46
     },
     {
       "domain": "infocons.ro",
@@ -239,7 +239,7 @@
     },
     {
       "domain": "userway.org",
-      "count": 38
+      "count": 39
     },
     {
       "domain": "politiadefrontiera.ro",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 28
+      "count": 29
     },
     {
       "domain": "defense.ro",
@@ -310,5 +310,5 @@
     "form_destination": 96,
     "font_or_preload_dependency": 22
   },
-  "generated_at": "2026-09-08T16:14:45.093964+00:00"
+  "generated_at": "2026-09-09T11:07:12.512817+00:00"
 }
