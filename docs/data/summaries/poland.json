@@ -1,7 +1,7 @@
 {
   "country_code": "POLAND",
-  "total_relationships": 60836,
-  "total_source_domains": 2440,
+  "total_relationships": 61200,
+  "total_source_domains": 2468,
   "top_source_domains": [
     {
       "domain": "krakow.pl",
@@ -33,7 +33,7 @@
     },
     {
       "domain": "ug.edu.pl",
-      "count": 7038
+      "count": 7057
     },
     {
       "domain": "gdynia.pl",
@@ -81,7 +81,7 @@
     },
     {
       "domain": "edu.wroclaw.pl",
-      "count": 1118
+      "count": 1264
     },
     {
       "domain": "bielsko-biala.pl",
@@ -176,12 +176,12 @@
       "count": 376
     },
     {
-      "domain": "um.ostrowiec.pl",
-      "count": 362
+      "domain": "zdz.bialystok.pl",
+      "count": 371
     },
     {
-      "domain": "zdz.bialystok.pl",
-      "count": 357
+      "domain": "um.ostrowiec.pl",
+      "count": 362
     },
     {
       "domain": "diecezjatarnow.pl",
@@ -215,7 +215,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 16795
+      "count": 16881
     },
     {
       "domain": "poznan.pl",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 14967
+      "count": 15025
     },
     {
       "domain": "gdansk.pl",
@@ -235,27 +235,27 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 5972
+      "count": 6000
     },
     {
       "domain": "instagram.com",
-      "count": 5856
+      "count": 5878
     },
     {
       "domain": "youtube.com",
-      "count": 5755
+      "count": 5767
     },
     {
       "domain": "google.com",
-      "count": 5705
+      "count": 5733
     },
     {
       "domain": "ug.edu.pl",
-      "count": 4463
+      "count": 4474
     },
     {
       "domain": "gstatic.com",
-      "count": 4179
+      "count": 4214
     },
     {
       "domain": "torun.pl",
@@ -267,11 +267,11 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 2861
+      "count": 2863
     },
     {
       "domain": "cloudflare.com",
-      "count": 2784
+      "count": 2790
     },
     {
       "domain": "gdynia.pl",
@@ -279,27 +279,27 @@
     },
     {
       "domain": "www.gov.pl",
-      "count": 2255
+      "count": 2262
     },
     {
       "domain": "twitter.com",
-      "count": 2019
+      "count": 2021
+    },
+    {
+      "domain": "bootstrapcdn.com",
+      "count": 1960
     },
     {
       "domain": "mixbet.radom.pl",
       "count": 1954
     },
     {
-      "domain": "bootstrapcdn.com",
-      "count": 1951
-    },
-    {
       "domain": "fontawesome.com",
-      "count": 1864
+      "count": 1866
     },
     {
       "domain": "linkedin.com",
-      "count": 1851
+      "count": 1855
     },
     {
       "domain": "edu.bydgoszcz.pl",
@@ -311,15 +311,19 @@
     },
     {
       "domain": "bip.gov.pl",
-      "count": 1419
+      "count": 1432
     },
     {
       "domain": "unpkg.com",
-      "count": 1333
+      "count": 1335
     },
     {
       "domain": "vulcan.net.pl",
       "count": 1197
+    },
+    {
+      "domain": "goo.gl",
+      "count": 1191
     },
     {
       "domain": "wordpress.org",
@@ -330,16 +334,12 @@
       "count": 1186
     },
     {
-      "domain": "goo.gl",
-      "count": 1185
-    },
-    {
       "domain": "jquery.com",
-      "count": 1091
+      "count": 1093
     },
     {
       "domain": "epuap.gov.pl",
-      "count": 1015
+      "count": 1019
     },
     {
       "domain": "edupage.org",
@@ -355,7 +355,7 @@
     },
     {
       "domain": "tiktok.com",
-      "count": 947
+      "count": 950
     },
     {
       "domain": "repertuary.pl",
@@ -363,7 +363,7 @@
     },
     {
       "domain": "librus.pl",
-      "count": 839
+      "count": 840
     },
     {
       "domain": "sopot.pl",
@@ -383,11 +383,15 @@
     },
     {
       "domain": "wp.com",
-      "count": 599
+      "count": 600
     },
     {
       "domain": "www.bydgoszcz.pl",
       "count": 576
+    },
+    {
+      "domain": "edu.wroclaw.pl",
+      "count": 568
     },
     {
       "domain": "witkac.pl",
@@ -395,24 +399,20 @@
     },
     {
       "domain": "wroc.pl",
-      "count": 530
+      "count": 539
     },
     {
       "domain": "dziennikustaw.gov.pl",
       "count": 523
-    },
-    {
-      "domain": "migam.org",
-      "count": 519
     }
   ],
   "relationship_types": {
-    "editorial_link": 32983,
-    "form_destination": 3276,
-    "image_or_media_dependency": 6595,
-    "script_dependency": 8637,
-    "stylesheet_dependency": 7548,
-    "font_or_preload_dependency": 1797
+    "editorial_link": 33152,
+    "form_destination": 3294,
+    "image_or_media_dependency": 6636,
+    "script_dependency": 8702,
+    "stylesheet_dependency": 7594,
+    "font_or_preload_dependency": 1822
   },
-  "generated_at": "2026-09-08T21:35:38.971049+00:00"
+  "generated_at": "2026-09-09T11:07:10.931721+00:00"
 }
