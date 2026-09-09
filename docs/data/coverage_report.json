@@ -179,11 +179,11 @@
     "never_scanned": 0,
     "stale_31d": 0
   },
-  "POLAND": {
-    "total_urls": 14951,
-    "attempted": 14951,
-    "successful": 13730,
-    "failed": 1221,
+  "PORTUGAL": {
+    "total_urls": 3508,
+    "attempted": 3508,
+    "successful": 2892,
+    "failed": 616,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 0
@@ -206,11 +206,11 @@
     "never_scanned": 0,
     "stale_31d": 0
   },
-  "PORTUGAL": {
-    "total_urls": 3508,
-    "attempted": 3508,
-    "successful": 2892,
-    "failed": 616,
+  "FRANCE": {
+    "total_urls": 10009,
+    "attempted": 10009,
+    "successful": 9378,
+    "failed": 631,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 0
@@ -227,11 +227,11 @@
     "never_scanned": 0,
     "stale_31d": 0
   },
-  "FRANCE": {
-    "total_urls": 10009,
-    "attempted": 10009,
-    "successful": 9378,
-    "failed": 631,
+  "POLAND": {
+    "total_urls": 14951,
+    "attempted": 14951,
+    "successful": 13735,
+    "failed": 1216,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 0
