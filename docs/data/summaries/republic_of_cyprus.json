@@ -1,7 +1,7 @@
 {
   "country_code": "REPUBLIC_OF_CYPRUS",
-  "total_relationships": 315344,
-  "total_source_domains": 9062,
+  "total_relationships": 315700,
+  "total_source_domains": 9081,
   "top_source_domains": [
     {
       "domain": "ethz.ch",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 61795
+      "count": 61854
     },
     {
       "domain": "googleapis.com",
@@ -223,11 +223,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 35712
+      "count": 35749
     },
     {
       "domain": "youtube.com",
-      "count": 33885
+      "count": 33892
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -235,15 +235,15 @@
     },
     {
       "domain": "google.com",
-      "count": 29146
+      "count": 29151
     },
     {
       "domain": "twitter.com",
-      "count": 28874
+      "count": 28916
     },
     {
       "domain": "linkedin.com",
-      "count": 24966
+      "count": 25006
     },
     {
       "domain": "googletagmanager.com",
@@ -283,7 +283,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 15000
+      "count": 15016
     },
     {
       "domain": "bayern.de",
@@ -327,7 +327,7 @@
     },
     {
       "domain": "x.com",
-      "count": 7005
+      "count": 7025
     },
     {
       "domain": "gdansk.pl",
@@ -391,7 +391,7 @@
     },
     {
       "domain": "cqc.org.uk",
-      "count": 4816
+      "count": 4822
     },
     {
       "domain": "ug.edu.pl",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 162200,
-    "form_destination": 21108,
-    "image_or_media_dependency": 33136,
-    "script_dependency": 50336,
-    "stylesheet_dependency": 40220,
+    "editorial_link": 162456,
+    "form_destination": 21130,
+    "image_or_media_dependency": 33159,
+    "script_dependency": 50373,
+    "stylesheet_dependency": 40238,
     "font_or_preload_dependency": 8344
   },
-  "generated_at": "2026-09-08T21:35:38.492842+00:00"
+  "generated_at": "2026-09-09T04:02:10.460107+00:00"
 }
