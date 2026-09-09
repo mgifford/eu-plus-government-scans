@@ -1,6 +1,6 @@
 {
   "country_code": "REPUBLIC_OF_CYPRUS",
-  "total_relationships": 316178,
+  "total_relationships": 316181,
   "total_source_domains": 9117,
   "top_source_domains": [
     {
@@ -165,7 +165,7 @@
     },
     {
       "domain": "gov.sk",
-      "count": 5648
+      "count": 5687
     },
     {
       "domain": "wallonie.be",
@@ -347,7 +347,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 6135
+      "count": 6141
     },
     {
       "domain": "uni.opole.pl",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 162673,
+    "editorial_link": 162675,
     "form_destination": 21155,
-    "image_or_media_dependency": 33211,
+    "image_or_media_dependency": 33212,
     "script_dependency": 50459,
     "stylesheet_dependency": 40305,
     "font_or_preload_dependency": 8375
   },
-  "generated_at": "2026-09-09T16:02:19.065124+00:00"
+  "generated_at": "2026-09-09T20:41:15.803826+00:00"
 }
