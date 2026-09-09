@@ -1,6 +1,6 @@
 {
   "country_code": "ESTONIA",
-  "total_relationships": 1620,
+  "total_relationships": 1622,
   "total_source_domains": 32,
   "top_source_domains": [
     {
@@ -13,7 +13,7 @@
     },
     {
       "domain": "parnu.ee",
-      "count": 880
+      "count": 882
     },
     {
       "domain": "agri.ee",
@@ -142,11 +142,11 @@
       "count": 588
     },
     {
-      "domain": "facebook.com",
-      "count": 445
+      "domain": "parnu.ee",
+      "count": 446
     },
     {
-      "domain": "parnu.ee",
+      "domain": "facebook.com",
       "count": 445
     },
     {
@@ -335,12 +335,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 935,
+    "editorial_link": 936,
     "form_destination": 105,
-    "image_or_media_dependency": 154,
+    "image_or_media_dependency": 155,
     "script_dependency": 219,
     "stylesheet_dependency": 189,
     "font_or_preload_dependency": 18
   },
-  "generated_at": "2026-09-09T16:02:19.904410+00:00"
+  "generated_at": "2026-09-09T20:41:16.601746+00:00"
 }

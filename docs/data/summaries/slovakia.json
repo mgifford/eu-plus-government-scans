@@ -1,11 +1,11 @@
 {
   "country_code": "SLOVAKIA",
-  "total_relationships": 1684,
+  "total_relationships": 1685,
   "total_source_domains": 21,
   "top_source_domains": [
     {
       "domain": "gov.sk",
-      "count": 5648
+      "count": 5687
     },
     {
       "domain": "zilina.sk",
@@ -91,7 +91,7 @@
   "top_target_domains": [
     {
       "domain": "gov.sk",
-      "count": 3049
+      "count": 3073
     },
     {
       "domain": "slovensko.sk",
@@ -143,7 +143,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 125
+      "count": 131
     },
     {
       "domain": "banskabystrica.sk",
@@ -215,7 +215,7 @@
     },
     {
       "domain": "planobnovy.sk",
-      "count": 27
+      "count": 30
     },
     {
       "domain": "windows.net",
@@ -254,6 +254,10 @@
       "count": 21
     },
     {
+      "domain": "facebook.net",
+      "count": 21
+    },
+    {
       "domain": "microsoft.com",
       "count": 20
     },
@@ -268,10 +272,6 @@
     {
       "domain": "nbs.sk",
       "count": 20
-    },
-    {
-      "domain": "facebook.net",
-      "count": 18
     },
     {
       "domain": "fontawesome.com",
@@ -291,12 +291,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 930,
+    "editorial_link": 931,
     "font_or_preload_dependency": 52,
     "image_or_media_dependency": 159,
     "script_dependency": 241,
     "stylesheet_dependency": 194,
     "form_destination": 108
   },
-  "generated_at": "2026-09-09T16:02:18.236243+00:00"
+  "generated_at": "2026-09-09T20:41:15.042509+00:00"
 }
