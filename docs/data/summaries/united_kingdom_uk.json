@@ -1,7 +1,7 @@
 {
   "country_code": "UNITED_KINGDOM_UK",
-  "total_relationships": 316181,
-  "total_source_domains": 9117,
+  "total_relationships": 316189,
+  "total_source_domains": 9118,
   "top_source_domains": [
     {
       "domain": "ethz.ch",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 61934
+      "count": 61935
     },
     {
       "domain": "googleapis.com",
@@ -227,7 +227,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 33911
+      "count": 33913
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 162675,
+    "editorial_link": 162678,
     "form_destination": 21155,
-    "image_or_media_dependency": 33212,
-    "script_dependency": 50459,
-    "stylesheet_dependency": 40305,
+    "image_or_media_dependency": 33214,
+    "script_dependency": 50460,
+    "stylesheet_dependency": 40307,
     "font_or_preload_dependency": 8375
   },
-  "generated_at": "2026-09-09T20:41:16.196233+00:00"
+  "generated_at": "2026-09-10T03:17:54.351632+00:00"
 }
