@@ -1,7 +1,7 @@
 {
   "country_code": "POLAND",
-  "total_relationships": 61289,
-  "total_source_domains": 2475,
+  "total_relationships": 61297,
+  "total_source_domains": 2476,
   "top_source_domains": [
     {
       "domain": "krakow.pl",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 15040
+      "count": 15041
     },
     {
       "domain": "gdansk.pl",
@@ -243,7 +243,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 5773
+      "count": 5775
     },
     {
       "domain": "google.com",
@@ -311,7 +311,7 @@
     },
     {
       "domain": "bip.gov.pl",
-      "count": 1436
+      "count": 1437
     },
     {
       "domain": "unpkg.com",
@@ -319,7 +319,7 @@
     },
     {
       "domain": "vulcan.net.pl",
-      "count": 1199
+      "count": 1200
     },
     {
       "domain": "goo.gl",
@@ -399,7 +399,7 @@
     },
     {
       "domain": "wroc.pl",
-      "count": 540
+      "count": 541
     },
     {
       "domain": "dziennikustaw.gov.pl",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 33188,
+    "editorial_link": 33191,
     "form_destination": 3300,
-    "image_or_media_dependency": 6644,
-    "script_dependency": 8719,
-    "stylesheet_dependency": 7612,
+    "image_or_media_dependency": 6646,
+    "script_dependency": 8720,
+    "stylesheet_dependency": 7614,
     "font_or_preload_dependency": 1826
   },
-  "generated_at": "2026-09-09T20:41:16.509511+00:00"
+  "generated_at": "2026-09-10T03:17:53.809237+00:00"
 }
