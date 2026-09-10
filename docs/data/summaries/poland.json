@@ -1,7 +1,7 @@
 {
   "country_code": "POLAND",
-  "total_relationships": 61314,
-  "total_source_domains": 2476,
+  "total_relationships": 61330,
+  "total_source_domains": 2477,
   "top_source_domains": [
     {
       "domain": "krakow.pl",
@@ -180,6 +180,10 @@
       "count": 371
     },
     {
+      "domain": "powiatwlodawski.pl",
+      "count": 366
+    },
+    {
       "domain": "um.ostrowiec.pl",
       "count": 362
     },
@@ -194,10 +198,6 @@
     {
       "domain": "um.bydgoszcz.pl",
       "count": 344
-    },
-    {
-      "domain": "powiatwlodawski.pl",
-      "count": 342
     },
     {
       "domain": "logistyk-zsl.wroclaw.pl",
@@ -215,7 +215,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 16914
+      "count": 16920
     },
     {
       "domain": "poznan.pl",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 15041
+      "count": 15044
     },
     {
       "domain": "gdansk.pl",
@@ -319,7 +319,7 @@
     },
     {
       "domain": "vulcan.net.pl",
-      "count": 1200
+      "count": 1203
     },
     {
       "domain": "goo.gl",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 33199,
-    "form_destination": 3301,
-    "image_or_media_dependency": 6650,
-    "script_dependency": 8722,
-    "stylesheet_dependency": 7616,
+    "editorial_link": 33205,
+    "form_destination": 3303,
+    "image_or_media_dependency": 6652,
+    "script_dependency": 8725,
+    "stylesheet_dependency": 7619,
     "font_or_preload_dependency": 1826
   },
-  "generated_at": "2026-09-10T16:11:14.204210+00:00"
+  "generated_at": "2026-09-10T21:17:38.266976+00:00"
 }
