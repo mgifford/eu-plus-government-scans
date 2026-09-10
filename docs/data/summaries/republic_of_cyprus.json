@@ -97,7 +97,7 @@
     },
     {
       "domain": "torun.pl",
-      "count": 9158
+      "count": 9163
     },
     {
       "domain": "xunta.gal",
@@ -283,7 +283,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 15032
+      "count": 15033
     },
     {
       "domain": "bayern.de",
@@ -403,7 +403,7 @@
     },
     {
       "domain": "torun.pl",
-      "count": 4118
+      "count": 4122
     }
   ],
   "relationship_types": {
@@ -414,5 +414,5 @@
     "stylesheet_dependency": 40307,
     "font_or_preload_dependency": 8375
   },
-  "generated_at": "2026-09-10T03:17:52.918248+00:00"
+  "generated_at": "2026-09-10T10:42:14.659581+00:00"
 }
