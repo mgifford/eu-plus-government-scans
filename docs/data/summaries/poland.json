@@ -1,6 +1,6 @@
 {
   "country_code": "POLAND",
-  "total_relationships": 61297,
+  "total_relationships": 61314,
   "total_source_domains": 2476,
   "top_source_domains": [
     {
@@ -37,7 +37,7 @@
     },
     {
       "domain": "gdynia.pl",
-      "count": 6173
+      "count": 6207
     },
     {
       "domain": "edu.bydgoszcz.pl",
@@ -77,7 +77,7 @@
     },
     {
       "domain": "edu.wroclaw.pl",
-      "count": 1309
+      "count": 1332
     },
     {
       "domain": "czestochowa.pl",
@@ -215,7 +215,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 16907
+      "count": 16914
     },
     {
       "domain": "poznan.pl",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 4221
+      "count": 4223
     },
     {
       "domain": "torun.pl",
@@ -275,7 +275,7 @@
     },
     {
       "domain": "gdynia.pl",
-      "count": 2775
+      "count": 2798
     },
     {
       "domain": "www.gov.pl",
@@ -287,7 +287,7 @@
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 1966
+      "count": 1968
     },
     {
       "domain": "mixbet.radom.pl",
@@ -311,7 +311,7 @@
     },
     {
       "domain": "bip.gov.pl",
-      "count": 1437
+      "count": 1439
     },
     {
       "domain": "unpkg.com",
@@ -387,7 +387,7 @@
     },
     {
       "domain": "edu.wroclaw.pl",
-      "count": 587
+      "count": 598
     },
     {
       "domain": "www.bydgoszcz.pl",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 33191,
-    "form_destination": 3300,
-    "image_or_media_dependency": 6646,
-    "script_dependency": 8720,
-    "stylesheet_dependency": 7614,
+    "editorial_link": 33199,
+    "form_destination": 3301,
+    "image_or_media_dependency": 6650,
+    "script_dependency": 8722,
+    "stylesheet_dependency": 7616,
     "font_or_preload_dependency": 1826
   },
-  "generated_at": "2026-09-10T10:42:15.996532+00:00"
+  "generated_at": "2026-09-10T16:11:14.204210+00:00"
 }
