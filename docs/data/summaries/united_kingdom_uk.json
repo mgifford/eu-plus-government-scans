@@ -1,6 +1,6 @@
 {
   "country_code": "UNITED_KINGDOM_UK",
-  "total_relationships": 316189,
+  "total_relationships": 316206,
   "total_source_domains": 9118,
   "top_source_domains": [
     {
@@ -149,7 +149,7 @@
     },
     {
       "domain": "gdynia.pl",
-      "count": 6173
+      "count": 6207
     },
     {
       "domain": "kk.dk",
@@ -211,7 +211,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 51343
+      "count": 51350
     },
     {
       "domain": "sachsen.de",
@@ -291,7 +291,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 13210
+      "count": 13212
     },
     {
       "domain": "esteri.it",
@@ -359,7 +359,7 @@
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 5787
+      "count": 5789
     },
     {
       "domain": "haute-garonne.fr",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 162678,
-    "form_destination": 21155,
-    "image_or_media_dependency": 33214,
-    "script_dependency": 50460,
-    "stylesheet_dependency": 40307,
+    "editorial_link": 162686,
+    "form_destination": 21156,
+    "image_or_media_dependency": 33218,
+    "script_dependency": 50462,
+    "stylesheet_dependency": 40309,
     "font_or_preload_dependency": 8375
   },
-  "generated_at": "2026-09-10T10:42:15.677337+00:00"
+  "generated_at": "2026-09-10T16:11:13.870048+00:00"
 }

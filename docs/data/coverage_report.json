@@ -212,8 +212,8 @@
   "BULGARIA": {
     "total_urls": 353,
     "attempted": 353,
-    "successful": 303,
-    "failed": 50,
+    "successful": 302,
+    "failed": 51,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 0
@@ -251,8 +251,8 @@
   "POLAND": {
     "total_urls": 14951,
     "attempted": 14951,
-    "successful": 13728,
-    "failed": 1223,
+    "successful": 13733,
+    "failed": 1218,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 0
