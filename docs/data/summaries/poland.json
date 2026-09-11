@@ -1,7 +1,7 @@
 {
   "country_code": "POLAND",
-  "total_relationships": 61377,
-  "total_source_domains": 2477,
+  "total_relationships": 61398,
+  "total_source_domains": 2478,
   "top_source_domains": [
     {
       "domain": "krakow.pl",
@@ -215,7 +215,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 16920
+      "count": 16926
     },
     {
       "domain": "poznan.pl",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 15046
+      "count": 15050
     },
     {
       "domain": "gdansk.pl",
@@ -239,15 +239,15 @@
     },
     {
       "domain": "instagram.com",
-      "count": 5881
+      "count": 5885
     },
     {
       "domain": "youtube.com",
-      "count": 5775
+      "count": 5779
     },
     {
       "domain": "google.com",
-      "count": 5737
+      "count": 5739
     },
     {
       "domain": "ug.edu.pl",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 4223
+      "count": 4227
     },
     {
       "domain": "torun.pl",
@@ -283,7 +283,7 @@
     },
     {
       "domain": "twitter.com",
-      "count": 2021
+      "count": 2023
     },
     {
       "domain": "bootstrapcdn.com",
@@ -323,11 +323,11 @@
     },
     {
       "domain": "goo.gl",
-      "count": 1193
+      "count": 1195
     },
     {
       "domain": "wordpress.org",
-      "count": 1189
+      "count": 1191
     },
     {
       "domain": "gorzow.pl",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 33225,
-    "form_destination": 3308,
-    "image_or_media_dependency": 6668,
-    "script_dependency": 8728,
-    "stylesheet_dependency": 7622,
-    "font_or_preload_dependency": 1826
+    "editorial_link": 33239,
+    "form_destination": 3309,
+    "image_or_media_dependency": 6669,
+    "script_dependency": 8729,
+    "stylesheet_dependency": 7624,
+    "font_or_preload_dependency": 1828
   },
-  "generated_at": "2026-09-11T03:22:52.220736+00:00"
+  "generated_at": "2026-09-11T11:00:44.498482+00:00"
 }

@@ -1,7 +1,7 @@
 {
   "country_code": "PORTUGAL",
-  "total_relationships": 13552,
-  "total_source_domains": 395,
+  "total_relationships": 13563,
+  "total_source_domains": 396,
   "top_source_domains": [
     {
       "domain": "azores.gov.pt",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "googleapis.com",
-      "count": 2384
+      "count": 2387
     },
     {
       "domain": "facebook.com",
@@ -267,7 +267,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 753
+      "count": 756
     },
     {
       "domain": "presidencia.pt",
@@ -275,7 +275,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 580
+      "count": 583
     },
     {
       "domain": "linkedin.com",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "font_or_preload_dependency": 433,
-    "script_dependency": 2166,
-    "editorial_link": 7505,
-    "stylesheet_dependency": 1572,
+    "font_or_preload_dependency": 434,
+    "script_dependency": 2170,
+    "editorial_link": 7508,
+    "stylesheet_dependency": 1574,
     "form_destination": 748,
-    "image_or_media_dependency": 1128
+    "image_or_media_dependency": 1129
   },
-  "generated_at": "2026-09-11T03:22:51.081655+00:00"
+  "generated_at": "2026-09-11T11:00:43.333166+00:00"
 }
