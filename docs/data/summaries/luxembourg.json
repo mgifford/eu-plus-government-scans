@@ -1,6 +1,6 @@
 {
   "country_code": "LUXEMBOURG",
-  "total_relationships": 2021,
+  "total_relationships": 2049,
   "total_source_domains": 41,
   "top_source_domains": [
     {
@@ -9,7 +9,7 @@
     },
     {
       "domain": "public.lu",
-      "count": 2843
+      "count": 2997
     },
     {
       "domain": "uni.lu",
@@ -171,7 +171,7 @@
   "top_target_domains": [
     {
       "domain": "public.lu",
-      "count": 3149
+      "count": 3255
     },
     {
       "domain": "gouvernement.lu",
@@ -179,11 +179,11 @@
     },
     {
       "domain": "facebook.com",
-      "count": 476
+      "count": 484
     },
     {
       "domain": "linkedin.com",
-      "count": 439
+      "count": 444
     },
     {
       "domain": "uni.lu",
@@ -191,7 +191,7 @@
     },
     {
       "domain": "twitter.com",
-      "count": 340
+      "count": 341
     },
     {
       "domain": "bsky.app",
@@ -199,7 +199,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 240
+      "count": 247
     },
     {
       "domain": "etat.lu",
@@ -207,11 +207,11 @@
     },
     {
       "domain": "youtube.com",
-      "count": 160
+      "count": 167
     },
     {
       "domain": "europa.eu",
-      "count": 134
+      "count": 137
     },
     {
       "domain": "googleapis.com",
@@ -366,17 +366,17 @@
       "count": 26
     },
     {
-      "domain": "snj.lu",
-      "count": 25
+      "domain": "readspeaker.com",
+      "count": 26
     }
   ],
   "relationship_types": {
-    "editorial_link": 1156,
-    "form_destination": 152,
-    "image_or_media_dependency": 190,
-    "script_dependency": 268,
-    "stylesheet_dependency": 226,
+    "editorial_link": 1166,
+    "form_destination": 155,
+    "image_or_media_dependency": 195,
+    "script_dependency": 273,
+    "stylesheet_dependency": 231,
     "font_or_preload_dependency": 29
   },
-  "generated_at": "2026-09-11T16:44:21.937977+00:00"
+  "generated_at": "2026-09-11T21:11:37.888525+00:00"
 }
