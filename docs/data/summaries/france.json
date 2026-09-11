@@ -1,6 +1,6 @@
 {
   "country_code": "FRANCE",
-  "total_relationships": 30803,
+  "total_relationships": 30804,
   "total_source_domains": 673,
   "top_source_domains": [
     {
@@ -211,7 +211,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 6132
+      "count": 6133
     },
     {
       "domain": "haute-garonne.fr",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 4149
+      "count": 4150
     },
     {
       "domain": "skolengo.com",
@@ -235,7 +235,7 @@
     },
     {
       "domain": "data.gouv.fr",
-      "count": 3506
+      "count": 3507
     },
     {
       "domain": "cnam.fr",
@@ -247,7 +247,7 @@
     },
     {
       "domain": "legifrance.gouv.fr",
-      "count": 3045
+      "count": 3046
     },
     {
       "domain": "googleapis.com",
@@ -263,11 +263,11 @@
     },
     {
       "domain": "github.com",
-      "count": 2389
+      "count": 2390
     },
     {
       "domain": "info.gouv.fr",
-      "count": 1914
+      "count": 1915
     },
     {
       "domain": "education.gouv.fr",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "service-public.gouv.fr",
-      "count": 1600
+      "count": 1601
     },
     {
       "domain": "beta.gouv.fr",
@@ -327,7 +327,7 @@
     },
     {
       "domain": "x.com",
-      "count": 1061
+      "count": 1062
     },
     {
       "domain": "toulouse.fr",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 16123,
+    "editorial_link": 16124,
     "script_dependency": 4584,
     "stylesheet_dependency": 4116,
     "image_or_media_dependency": 3560,
     "form_destination": 1714,
     "font_or_preload_dependency": 706
   },
-  "generated_at": "2026-09-11T03:22:51.371776+00:00"
+  "generated_at": "2026-09-11T11:00:43.601726+00:00"
 }
