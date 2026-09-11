@@ -1,6 +1,6 @@
 {
   "country_code": "POLAND",
-  "total_relationships": 61419,
+  "total_relationships": 61425,
   "total_source_domains": 2479,
   "top_source_domains": [
     {
@@ -267,7 +267,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 2869
+      "count": 2871
     },
     {
       "domain": "cloudflare.com",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 33247,
-    "form_destination": 3311,
-    "image_or_media_dependency": 6671,
-    "script_dependency": 8734,
-    "stylesheet_dependency": 7628,
+    "editorial_link": 33248,
+    "form_destination": 3312,
+    "image_or_media_dependency": 6672,
+    "script_dependency": 8735,
+    "stylesheet_dependency": 7630,
     "font_or_preload_dependency": 1828
   },
-  "generated_at": "2026-09-11T16:44:23.754307+00:00"
+  "generated_at": "2026-09-11T21:11:39.719451+00:00"
 }
