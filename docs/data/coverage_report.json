@@ -251,11 +251,11 @@
   "POLAND": {
     "total_urls": 14951,
     "attempted": 14951,
-    "successful": 13739,
-    "failed": 1212,
+    "successful": 13744,
+    "failed": 1207,
     "skipped": 0,
     "never_scanned": 0,
-    "stale_31d": 2
+    "stale_31d": 0
   },
   "ESTONIA": {
     "total_urls": 401,

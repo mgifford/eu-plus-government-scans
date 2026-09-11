@@ -1,11 +1,11 @@
 {
   "country_code": "POLAND",
-  "total_relationships": 61330,
+  "total_relationships": 61377,
   "total_source_domains": 2477,
   "top_source_domains": [
     {
       "domain": "krakow.pl",
-      "count": 45956
+      "count": 46060
     },
     {
       "domain": "lodz.pl",
@@ -13,7 +13,7 @@
     },
     {
       "domain": "poznan.pl",
-      "count": 31135
+      "count": 31197
     },
     {
       "domain": "gdansk.pl",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "krakow.pl",
-      "count": 22489
+      "count": 22514
     },
     {
       "domain": "lodz.pl",
@@ -219,11 +219,11 @@
     },
     {
       "domain": "poznan.pl",
-      "count": 15564
+      "count": 15581
     },
     {
       "domain": "facebook.com",
-      "count": 15044
+      "count": 15046
     },
     {
       "domain": "gdansk.pl",
@@ -338,12 +338,12 @@
       "count": 1097
     },
     {
-      "domain": "epuap.gov.pl",
-      "count": 1020
+      "domain": "edupage.org",
+      "count": 1082
     },
     {
-      "domain": "edupage.org",
-      "count": 983
+      "domain": "epuap.gov.pl",
+      "count": 1020
     },
     {
       "domain": "pm.szczecin.pl",
@@ -363,7 +363,7 @@
     },
     {
       "domain": "librus.pl",
-      "count": 840
+      "count": 842
     },
     {
       "domain": "sopot.pl",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 33205,
-    "form_destination": 3303,
-    "image_or_media_dependency": 6652,
-    "script_dependency": 8725,
-    "stylesheet_dependency": 7619,
+    "editorial_link": 33225,
+    "form_destination": 3308,
+    "image_or_media_dependency": 6668,
+    "script_dependency": 8728,
+    "stylesheet_dependency": 7622,
     "font_or_preload_dependency": 1826
   },
-  "generated_at": "2026-09-10T21:17:38.266976+00:00"
+  "generated_at": "2026-09-11T03:22:52.220736+00:00"
 }
