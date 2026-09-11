@@ -1,7 +1,7 @@
 {
   "country_code": "POLAND",
-  "total_relationships": 61398,
-  "total_source_domains": 2478,
+  "total_relationships": 61419,
+  "total_source_domains": 2479,
   "top_source_domains": [
     {
       "domain": "krakow.pl",
@@ -49,7 +49,7 @@
     },
     {
       "domain": "gorzow.pl",
-      "count": 2749
+      "count": 2798
     },
     {
       "domain": "mixbet.radom.pl",
@@ -215,7 +215,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 16926
+      "count": 16935
     },
     {
       "domain": "poznan.pl",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 15050
+      "count": 15053
     },
     {
       "domain": "gdansk.pl",
@@ -247,7 +247,7 @@
     },
     {
       "domain": "google.com",
-      "count": 5739
+      "count": 5740
     },
     {
       "domain": "ug.edu.pl",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 4227
+      "count": 4230
     },
     {
       "domain": "torun.pl",
@@ -267,7 +267,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 2863
+      "count": 2869
     },
     {
       "domain": "cloudflare.com",
@@ -315,11 +315,15 @@
     },
     {
       "domain": "unpkg.com",
-      "count": 1335
+      "count": 1341
     },
     {
       "domain": "vulcan.net.pl",
       "count": 1203
+    },
+    {
+      "domain": "gorzow.pl",
+      "count": 1201
     },
     {
       "domain": "goo.gl",
@@ -328,10 +332,6 @@
     {
       "domain": "wordpress.org",
       "count": 1191
-    },
-    {
-      "domain": "gorzow.pl",
-      "count": 1186
     },
     {
       "domain": "jquery.com",
@@ -371,7 +371,7 @@
     },
     {
       "domain": "x.com",
-      "count": 668
+      "count": 669
     },
     {
       "domain": "policja.pl",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 33239,
-    "form_destination": 3309,
-    "image_or_media_dependency": 6669,
-    "script_dependency": 8729,
-    "stylesheet_dependency": 7624,
+    "editorial_link": 33247,
+    "form_destination": 3311,
+    "image_or_media_dependency": 6671,
+    "script_dependency": 8734,
+    "stylesheet_dependency": 7628,
     "font_or_preload_dependency": 1828
   },
-  "generated_at": "2026-09-11T11:00:44.498482+00:00"
+  "generated_at": "2026-09-11T16:44:23.754307+00:00"
 }

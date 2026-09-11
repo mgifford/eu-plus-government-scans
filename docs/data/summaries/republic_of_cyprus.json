@@ -1,7 +1,7 @@
 {
   "country_code": "REPUBLIC_OF_CYPRUS",
-  "total_relationships": 316710,
-  "total_source_domains": 9141,
+  "total_relationships": 316731,
+  "total_source_domains": 9142,
   "top_source_domains": [
     {
       "domain": "ethz.ch",
@@ -207,11 +207,11 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 61978
+      "count": 61981
     },
     {
       "domain": "googleapis.com",
-      "count": 51367
+      "count": 51376
     },
     {
       "domain": "sachsen.de",
@@ -235,7 +235,7 @@
     },
     {
       "domain": "google.com",
-      "count": 29194
+      "count": 29195
     },
     {
       "domain": "twitter.com",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 15262
+      "count": 15268
     },
     {
       "domain": "cloudflare.com",
@@ -291,7 +291,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 13220
+      "count": 13223
     },
     {
       "domain": "esteri.it",
@@ -327,7 +327,7 @@
     },
     {
       "domain": "x.com",
-      "count": 7036
+      "count": 7037
     },
     {
       "domain": "gdansk.pl",
@@ -335,7 +335,7 @@
     },
     {
       "domain": "unpkg.com",
-      "count": 6492
+      "count": 6498
     },
     {
       "domain": "hessen.de",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 163012,
-    "form_destination": 21187,
-    "image_or_media_dependency": 33264,
-    "script_dependency": 50541,
-    "stylesheet_dependency": 40327,
+    "editorial_link": 163020,
+    "form_destination": 21189,
+    "image_or_media_dependency": 33266,
+    "script_dependency": 50546,
+    "stylesheet_dependency": 40331,
     "font_or_preload_dependency": 8379
   },
-  "generated_at": "2026-09-11T11:00:43.157321+00:00"
+  "generated_at": "2026-09-11T16:44:22.378100+00:00"
 }
