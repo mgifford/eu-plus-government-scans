@@ -1,6 +1,6 @@
 {
   "country_code": "UNITED_KINGDOM_UK",
-  "total_relationships": 316787,
+  "total_relationships": 316789,
   "total_source_domains": 9142,
   "top_source_domains": [
     {
@@ -37,7 +37,7 @@
     },
     {
       "domain": "jcyl.es",
-      "count": 24252
+      "count": 25281
     },
     {
       "domain": "niedersachsen.de",
@@ -53,11 +53,11 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 20209
+      "count": 20231
     },
     {
       "domain": "gencat.cat",
-      "count": 17000
+      "count": 17002
     },
     {
       "domain": "gov.mt",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 61991
+      "count": 62014
     },
     {
       "domain": "googleapis.com",
@@ -223,11 +223,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 35790
+      "count": 35805
     },
     {
       "domain": "youtube.com",
-      "count": 33929
+      "count": 33934
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -235,15 +235,15 @@
     },
     {
       "domain": "google.com",
-      "count": 29198
+      "count": 29199
     },
     {
       "domain": "twitter.com",
-      "count": 28925
+      "count": 28944
     },
     {
       "domain": "linkedin.com",
-      "count": 25025
+      "count": 25041
     },
     {
       "domain": "googletagmanager.com",
@@ -271,7 +271,7 @@
     },
     {
       "domain": "jcyl.es",
-      "count": 16451
+      "count": 17321
     },
     {
       "domain": "poznan.pl",
@@ -303,11 +303,11 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 10035
+      "count": 10045
     },
     {
       "domain": "gencat.cat",
-      "count": 9955
+      "count": 9957
     },
     {
       "domain": "gov.mt",
@@ -327,7 +327,7 @@
     },
     {
       "domain": "x.com",
-      "count": 7037
+      "count": 7043
     },
     {
       "domain": "gdansk.pl",
@@ -347,7 +347,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 6148
+      "count": 6150
     },
     {
       "domain": "uni.opole.pl",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 163042,
-    "form_destination": 21196,
+    "editorial_link": 163043,
+    "form_destination": 21197,
     "image_or_media_dependency": 33275,
     "script_dependency": 50554,
     "stylesheet_dependency": 40341,
     "font_or_preload_dependency": 8379
   },
-  "generated_at": "2026-09-11T21:11:38.766832+00:00"
+  "generated_at": "2026-09-12T03:22:30.341290+00:00"
 }
