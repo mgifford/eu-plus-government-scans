@@ -108,12 +108,12 @@
       "count": 500
     },
     {
-      "domain": "miteco.gob.es",
-      "count": 475
+      "domain": "inclusion.gob.es",
+      "count": 477
     },
     {
-      "domain": "inclusion.gob.es",
-      "count": 454
+      "domain": "miteco.gob.es",
+      "count": 475
     },
     {
       "domain": "seg-social.es",
@@ -219,7 +219,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 2805
+      "count": 2806
     },
     {
       "domain": "twitter.com",
@@ -227,7 +227,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 2325
+      "count": 2326
     },
     {
       "domain": "googleapis.com",
@@ -243,7 +243,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 2015
+      "count": 2016
     },
     {
       "domain": "navarra.es",
@@ -275,7 +275,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 937
+      "count": 938
     },
     {
       "domain": "educativa.com",
@@ -295,7 +295,7 @@
     },
     {
       "domain": "redsara.es",
-      "count": 715
+      "count": 717
     },
     {
       "domain": "blogspot.com",
@@ -303,7 +303,7 @@
     },
     {
       "domain": "x.com",
-      "count": 600
+      "count": 601
     },
     {
       "domain": "hacienda.gob.es",
@@ -315,7 +315,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 538
+      "count": 539
     },
     {
       "domain": "cloudflare.com",
@@ -343,7 +343,7 @@
     },
     {
       "domain": "insuit.net",
-      "count": 438
+      "count": 439
     },
     {
       "domain": "jsdelivr.net",
@@ -367,7 +367,7 @@
     },
     {
       "domain": "administracion.gob.es",
-      "count": 340
+      "count": 342
     },
     {
       "domain": "ayto-fuenlabrada.es",
@@ -414,5 +414,5 @@
     "form_destination": 1452,
     "font_or_preload_dependency": 156
   },
-  "generated_at": "2026-09-12T10:10:17.682090+00:00"
+  "generated_at": "2026-09-12T15:05:25.118231+00:00"
 }
