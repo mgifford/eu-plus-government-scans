@@ -1,7 +1,7 @@
 {
   "country_code": "REPUBLIC_OF_CYPRUS",
-  "total_relationships": 316789,
-  "total_source_domains": 9142,
+  "total_relationships": 316797,
+  "total_source_domains": 9143,
   "top_source_domains": [
     {
       "domain": "ethz.ch",
@@ -211,7 +211,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 51378
+      "count": 51380
     },
     {
       "domain": "sachsen.de",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 163043,
+    "editorial_link": 163047,
     "form_destination": 21197,
-    "image_or_media_dependency": 33275,
-    "script_dependency": 50554,
-    "stylesheet_dependency": 40341,
+    "image_or_media_dependency": 33276,
+    "script_dependency": 50555,
+    "stylesheet_dependency": 40343,
     "font_or_preload_dependency": 8379
   },
-  "generated_at": "2026-09-12T03:22:29.970128+00:00"
+  "generated_at": "2026-09-12T10:10:16.926564+00:00"
 }
