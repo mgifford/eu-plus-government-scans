@@ -93,7 +93,7 @@
     },
     {
       "domain": "regione.toscana.it",
-      "count": 859
+      "count": 877
     },
     {
       "domain": "lavoro.gov.it",
@@ -271,7 +271,7 @@
     },
     {
       "domain": "whatsapp.com",
-      "count": 1341
+      "count": 1342
     },
     {
       "domain": "regione.campania.it",
@@ -326,16 +326,16 @@
       "count": 780
     },
     {
+      "domain": "regione.toscana.it",
+      "count": 723
+    },
+    {
       "domain": "mef.gov.it",
       "count": 722
     },
     {
       "domain": "csm.it",
       "count": 718
-    },
-    {
-      "domain": "regione.toscana.it",
-      "count": 710
     },
     {
       "domain": "jsdelivr.net",
@@ -375,7 +375,7 @@
     },
     {
       "domain": "t.me",
-      "count": 457
+      "count": 458
     },
     {
       "domain": "lavoro.gov.it",
@@ -414,5 +414,5 @@
     "form_destination": 1454,
     "font_or_preload_dependency": 251
   },
-  "generated_at": "2026-09-12T10:10:15.084251+00:00"
+  "generated_at": "2026-09-12T15:05:23.125736+00:00"
 }

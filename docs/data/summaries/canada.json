@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 62014
+      "count": 62015
     },
     {
       "domain": "googleapis.com",
@@ -223,11 +223,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 35805
+      "count": 35806
     },
     {
       "domain": "youtube.com",
-      "count": 33934
+      "count": 33935
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -243,7 +243,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 25041
+      "count": 25042
     },
     {
       "domain": "googletagmanager.com",
@@ -327,7 +327,7 @@
     },
     {
       "domain": "x.com",
-      "count": 7043
+      "count": 7044
     },
     {
       "domain": "gdansk.pl",
@@ -347,7 +347,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 6150
+      "count": 6151
     },
     {
       "domain": "uni.opole.pl",
@@ -414,5 +414,5 @@
     "stylesheet_dependency": 40343,
     "font_or_preload_dependency": 8379
   },
-  "generated_at": "2026-09-12T10:10:15.582184+00:00"
+  "generated_at": "2026-09-12T15:05:23.561946+00:00"
 }
