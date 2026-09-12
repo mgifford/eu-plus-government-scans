@@ -1,7 +1,7 @@
 {
   "country_code": "POLAND",
-  "total_relationships": 61425,
-  "total_source_domains": 2479,
+  "total_relationships": 61433,
+  "total_source_domains": 2480,
   "top_source_domains": [
     {
       "domain": "krakow.pl",
@@ -215,7 +215,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 16935
+      "count": 16937
     },
     {
       "domain": "poznan.pl",
@@ -327,7 +327,7 @@
     },
     {
       "domain": "goo.gl",
-      "count": 1195
+      "count": 1197
     },
     {
       "domain": "wordpress.org",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 33248,
+    "editorial_link": 33252,
     "form_destination": 3312,
-    "image_or_media_dependency": 6672,
-    "script_dependency": 8735,
-    "stylesheet_dependency": 7630,
+    "image_or_media_dependency": 6673,
+    "script_dependency": 8736,
+    "stylesheet_dependency": 7632,
     "font_or_preload_dependency": 1828
   },
-  "generated_at": "2026-09-12T03:22:30.861660+00:00"
+  "generated_at": "2026-09-12T10:10:17.411223+00:00"
 }
