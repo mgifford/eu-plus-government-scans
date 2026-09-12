@@ -1,6 +1,6 @@
 {
   "country_code": "FRANCE",
-  "total_relationships": 30804,
+  "total_relationships": 30805,
   "total_source_domains": 673,
   "top_source_domains": [
     {
@@ -211,7 +211,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 6133
+      "count": 6146
     },
     {
       "domain": "haute-garonne.fr",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 4150
+      "count": 4162
     },
     {
       "domain": "skolengo.com",
@@ -231,23 +231,23 @@
     },
     {
       "domain": "instagram.com",
-      "count": 3703
+      "count": 3715
     },
     {
       "domain": "data.gouv.fr",
-      "count": 3507
+      "count": 3519
+    },
+    {
+      "domain": "twitter.com",
+      "count": 3354
     },
     {
       "domain": "cnam.fr",
       "count": 3348
     },
     {
-      "domain": "twitter.com",
-      "count": 3341
-    },
-    {
       "domain": "legifrance.gouv.fr",
-      "count": 3046
+      "count": 3058
     },
     {
       "domain": "googleapis.com",
@@ -263,11 +263,11 @@
     },
     {
       "domain": "github.com",
-      "count": 2390
+      "count": 2402
     },
     {
       "domain": "info.gouv.fr",
-      "count": 1915
+      "count": 1927
     },
     {
       "domain": "education.gouv.fr",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "service-public.gouv.fr",
-      "count": 1601
+      "count": 1613
     },
     {
       "domain": "beta.gouv.fr",
@@ -315,19 +315,19 @@
     },
     {
       "domain": "numerique.gouv.fr",
-      "count": 1191
+      "count": 1192
     },
     {
       "domain": "defense.gouv.fr",
       "count": 1089
     },
     {
-      "domain": "marseille.fr",
-      "count": 1064
+      "domain": "x.com",
+      "count": 1066
     },
     {
-      "domain": "x.com",
-      "count": 1062
+      "domain": "marseille.fr",
+      "count": 1064
     },
     {
       "domain": "toulouse.fr",
@@ -351,7 +351,7 @@
     },
     {
       "domain": "interieur.gouv.fr",
-      "count": 881
+      "count": 882
     },
     {
       "domain": "isere.fr",
@@ -383,7 +383,7 @@
     },
     {
       "domain": "agriculture.gouv.fr",
-      "count": 685
+      "count": 686
     },
     {
       "domain": "anct.gouv.fr",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 16124,
+    "editorial_link": 16125,
     "script_dependency": 4584,
     "stylesheet_dependency": 4116,
     "image_or_media_dependency": 3560,
     "form_destination": 1714,
     "font_or_preload_dependency": 706
   },
-  "generated_at": "2026-09-11T21:11:39.384222+00:00"
+  "generated_at": "2026-09-12T03:22:30.534758+00:00"
 }
