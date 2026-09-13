@@ -1,7 +1,7 @@
 {
   "country_code": "POLAND",
-  "total_relationships": 61616,
-  "total_source_domains": 2484,
+  "total_relationships": 61649,
+  "total_source_domains": 2486,
   "top_source_domains": [
     {
       "domain": "krakow.pl",
@@ -37,7 +37,7 @@
     },
     {
       "domain": "gdynia.pl",
-      "count": 6207
+      "count": 6253
     },
     {
       "domain": "edu.bydgoszcz.pl",
@@ -89,7 +89,7 @@
     },
     {
       "domain": "diecezja.opole.pl",
-      "count": 697
+      "count": 722
     },
     {
       "domain": "um.warszawa.pl",
@@ -215,7 +215,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 16937
+      "count": 16944
     },
     {
       "domain": "poznan.pl",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 15062
+      "count": 15070
     },
     {
       "domain": "gdansk.pl",
@@ -235,15 +235,15 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 6011
+      "count": 6013
     },
     {
       "domain": "instagram.com",
-      "count": 5885
+      "count": 5886
     },
     {
       "domain": "youtube.com",
-      "count": 5780
+      "count": 5783
     },
     {
       "domain": "google.com",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 4230
+      "count": 4232
     },
     {
       "domain": "torun.pl",
@@ -270,16 +270,16 @@
       "count": 2871
     },
     {
-      "domain": "cloudflare.com",
-      "count": 2800
+      "domain": "gdynia.pl",
+      "count": 2810
     },
     {
-      "domain": "gdynia.pl",
-      "count": 2798
+      "domain": "cloudflare.com",
+      "count": 2804
     },
     {
       "domain": "www.gov.pl",
-      "count": 2269
+      "count": 2271
     },
     {
       "domain": "twitter.com",
@@ -331,7 +331,7 @@
     },
     {
       "domain": "goo.gl",
-      "count": 1197
+      "count": 1198
     },
     {
       "domain": "wordpress.org",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 33336,
-    "form_destination": 3319,
-    "image_or_media_dependency": 6746,
-    "script_dependency": 8746,
-    "stylesheet_dependency": 7641,
-    "font_or_preload_dependency": 1828
+    "editorial_link": 33353,
+    "form_destination": 3321,
+    "image_or_media_dependency": 6750,
+    "script_dependency": 8750,
+    "stylesheet_dependency": 7646,
+    "font_or_preload_dependency": 1829
   },
-  "generated_at": "2026-09-13T03:21:33.565708+00:00"
+  "generated_at": "2026-09-13T11:50:58.125564+00:00"
 }
