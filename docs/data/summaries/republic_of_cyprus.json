@@ -1,7 +1,7 @@
 {
   "country_code": "REPUBLIC_OF_CYPRUS",
-  "total_relationships": 316797,
-  "total_source_domains": 9143,
+  "total_relationships": 316980,
+  "total_source_domains": 9147,
   "top_source_domains": [
     {
       "domain": "ethz.ch",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 62015
+      "count": 62024
     },
     {
       "domain": "googleapis.com",
@@ -227,7 +227,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 33935
+      "count": 33936
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -275,7 +275,7 @@
     },
     {
       "domain": "poznan.pl",
-      "count": 15581
+      "count": 15582
     },
     {
       "domain": "jsdelivr.net",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 163047,
-    "form_destination": 21197,
-    "image_or_media_dependency": 33276,
-    "script_dependency": 50555,
-    "stylesheet_dependency": 40343,
+    "editorial_link": 163131,
+    "form_destination": 21204,
+    "image_or_media_dependency": 33349,
+    "script_dependency": 50565,
+    "stylesheet_dependency": 40352,
     "font_or_preload_dependency": 8379
   },
-  "generated_at": "2026-09-12T20:14:24.038855+00:00"
+  "generated_at": "2026-09-13T03:21:33.071974+00:00"
 }
