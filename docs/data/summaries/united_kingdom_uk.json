@@ -1,7 +1,7 @@
 {
   "country_code": "UNITED_KINGDOM_UK",
-  "total_relationships": 316980,
-  "total_source_domains": 9147,
+  "total_relationships": 317013,
+  "total_source_domains": 9149,
   "top_source_domains": [
     {
       "domain": "ethz.ch",
@@ -149,7 +149,7 @@
     },
     {
       "domain": "gdynia.pl",
-      "count": 6207
+      "count": 6253
     },
     {
       "domain": "kk.dk",
@@ -207,11 +207,11 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 62024
+      "count": 62032
     },
     {
       "domain": "googleapis.com",
-      "count": 51380
+      "count": 51387
     },
     {
       "domain": "sachsen.de",
@@ -223,11 +223,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 35806
+      "count": 35807
     },
     {
       "domain": "youtube.com",
-      "count": 33936
+      "count": 33939
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -247,7 +247,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 23919
+      "count": 23921
     },
     {
       "domain": "krakow.pl",
@@ -283,7 +283,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 15078
+      "count": 15082
     },
     {
       "domain": "bayern.de",
@@ -291,7 +291,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 13223
+      "count": 13225
     },
     {
       "domain": "esteri.it",
@@ -347,7 +347,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 6151
+      "count": 6153
     },
     {
       "domain": "uni.opole.pl",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 163131,
-    "form_destination": 21204,
-    "image_or_media_dependency": 33349,
-    "script_dependency": 50565,
-    "stylesheet_dependency": 40352,
-    "font_or_preload_dependency": 8379
+    "editorial_link": 163148,
+    "form_destination": 21206,
+    "image_or_media_dependency": 33353,
+    "script_dependency": 50569,
+    "stylesheet_dependency": 40357,
+    "font_or_preload_dependency": 8380
   },
-  "generated_at": "2026-09-13T03:21:32.480992+00:00"
+  "generated_at": "2026-09-13T11:50:56.546430+00:00"
 }
