@@ -1,7 +1,7 @@
 {
   "country_code": "POLAND",
-  "total_relationships": 61433,
-  "total_source_domains": 2480,
+  "total_relationships": 61616,
+  "total_source_domains": 2484,
   "top_source_domains": [
     {
       "domain": "krakow.pl",
@@ -44,12 +44,12 @@
       "count": 3699
     },
     {
-      "domain": "edu.bialystok.pl",
-      "count": 2810
+      "domain": "gorzow.pl",
+      "count": 2862
     },
     {
-      "domain": "gorzow.pl",
-      "count": 2798
+      "domain": "edu.bialystok.pl",
+      "count": 2810
     },
     {
       "domain": "mixbet.radom.pl",
@@ -219,11 +219,11 @@
     },
     {
       "domain": "poznan.pl",
-      "count": 15581
+      "count": 15582
     },
     {
       "domain": "facebook.com",
-      "count": 15053
+      "count": 15062
     },
     {
       "domain": "gdansk.pl",
@@ -243,7 +243,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 5779
+      "count": 5780
     },
     {
       "domain": "google.com",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "www.gov.pl",
-      "count": 2265
+      "count": 2269
     },
     {
       "domain": "twitter.com",
@@ -311,19 +311,23 @@
     },
     {
       "domain": "bip.gov.pl",
-      "count": 1439
+      "count": 1443
+    },
+    {
+      "domain": "edupage.org",
+      "count": 1393
     },
     {
       "domain": "unpkg.com",
       "count": 1341
     },
     {
-      "domain": "vulcan.net.pl",
-      "count": 1203
+      "domain": "gorzow.pl",
+      "count": 1209
     },
     {
-      "domain": "gorzow.pl",
-      "count": 1201
+      "domain": "vulcan.net.pl",
+      "count": 1205
     },
     {
       "domain": "goo.gl",
@@ -338,12 +342,8 @@
       "count": 1097
     },
     {
-      "domain": "edupage.org",
-      "count": 1082
-    },
-    {
       "domain": "epuap.gov.pl",
-      "count": 1020
+      "count": 1022
     },
     {
       "domain": "pm.szczecin.pl",
@@ -363,7 +363,7 @@
     },
     {
       "domain": "librus.pl",
-      "count": 842
+      "count": 848
     },
     {
       "domain": "sopot.pl",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 33252,
-    "form_destination": 3312,
-    "image_or_media_dependency": 6673,
-    "script_dependency": 8736,
-    "stylesheet_dependency": 7632,
+    "editorial_link": 33336,
+    "form_destination": 3319,
+    "image_or_media_dependency": 6746,
+    "script_dependency": 8746,
+    "stylesheet_dependency": 7641,
     "font_or_preload_dependency": 1828
   },
-  "generated_at": "2026-09-12T20:14:24.524065+00:00"
+  "generated_at": "2026-09-13T03:21:33.565708+00:00"
 }

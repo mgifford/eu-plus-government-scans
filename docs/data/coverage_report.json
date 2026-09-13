@@ -197,8 +197,8 @@
   "POLAND": {
     "total_urls": 14951,
     "attempted": 14951,
-    "successful": 13737,
-    "failed": 1214,
+    "successful": 13753,
+    "failed": 1198,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 0
@@ -221,11 +221,11 @@
     "never_scanned": 0,
     "stale_31d": 0
   },
-  "ITALY": {
-    "total_urls": 5351,
-    "attempted": 5351,
-    "successful": 4854,
-    "failed": 497,
+  "SPAIN": {
+    "total_urls": 6091,
+    "attempted": 6091,
+    "successful": 5189,
+    "failed": 902,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 0
@@ -248,11 +248,11 @@
     "never_scanned": 0,
     "stale_31d": 0
   },
-  "SPAIN": {
-    "total_urls": 6091,
-    "attempted": 6091,
-    "successful": 5189,
-    "failed": 902,
+  "ITALY": {
+    "total_urls": 5351,
+    "attempted": 5351,
+    "successful": 4854,
+    "failed": 497,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 0
