@@ -1,6 +1,6 @@
 {
   "country_code": "FRANCE",
-  "total_relationships": 30805,
+  "total_relationships": 30822,
   "total_source_domains": 673,
   "top_source_domains": [
     {
@@ -173,7 +173,7 @@
     },
     {
       "domain": "gard.fr",
-      "count": 821
+      "count": 861
     },
     {
       "domain": "montpellier3m.fr",
@@ -211,7 +211,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 6146
+      "count": 6148
     },
     {
       "domain": "haute-garonne.fr",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 4162
+      "count": 4164
     },
     {
       "domain": "skolengo.com",
@@ -231,7 +231,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 3715
+      "count": 3717
     },
     {
       "domain": "data.gouv.fr",
@@ -251,7 +251,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 3001
+      "count": 3003
     },
     {
       "domain": "youtube.com",
@@ -295,7 +295,7 @@
     },
     {
       "domain": "google.com",
-      "count": 1365
+      "count": 1367
     },
     {
       "domain": "culture.gouv.fr",
@@ -307,7 +307,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 1239
+      "count": 1242
     },
     {
       "domain": "loire-atlantique.fr",
@@ -323,7 +323,7 @@
     },
     {
       "domain": "x.com",
-      "count": 1066
+      "count": 1068
     },
     {
       "domain": "marseille.fr",
@@ -351,7 +351,7 @@
     },
     {
       "domain": "interieur.gouv.fr",
-      "count": 882
+      "count": 883
     },
     {
       "domain": "isere.fr",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 16125,
-    "script_dependency": 4584,
-    "stylesheet_dependency": 4116,
-    "image_or_media_dependency": 3560,
-    "form_destination": 1714,
+    "editorial_link": 16133,
+    "script_dependency": 4586,
+    "stylesheet_dependency": 4119,
+    "image_or_media_dependency": 3562,
+    "form_destination": 1716,
     "font_or_preload_dependency": 706
   },
-  "generated_at": "2026-09-13T15:40:42.237389+00:00"
+  "generated_at": "2026-09-13T20:31:31.282781+00:00"
 }

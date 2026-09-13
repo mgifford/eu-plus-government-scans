@@ -1,6 +1,6 @@
 {
   "country_code": "UNITED_KINGDOM_UK",
-  "total_relationships": 317013,
+  "total_relationships": 317030,
   "total_source_domains": 9149,
   "top_source_domains": [
     {
@@ -207,11 +207,11 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 62032
+      "count": 62037
     },
     {
       "domain": "googleapis.com",
-      "count": 51387
+      "count": 51389
     },
     {
       "domain": "sachsen.de",
@@ -223,11 +223,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 35807
+      "count": 35812
     },
     {
       "domain": "youtube.com",
-      "count": 33939
+      "count": 33942
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -235,7 +235,7 @@
     },
     {
       "domain": "google.com",
-      "count": 29199
+      "count": 29202
     },
     {
       "domain": "twitter.com",
@@ -243,11 +243,11 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 25042
+      "count": 25047
     },
     {
       "domain": "googletagmanager.com",
-      "count": 23921
+      "count": 23924
     },
     {
       "domain": "krakow.pl",
@@ -283,7 +283,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 15082
+      "count": 15085
     },
     {
       "domain": "bayern.de",
@@ -319,7 +319,7 @@
     },
     {
       "domain": "fontawesome.com",
-      "count": 7612
+      "count": 7615
     },
     {
       "domain": "admin.ch",
@@ -327,7 +327,7 @@
     },
     {
       "domain": "x.com",
-      "count": 7044
+      "count": 7046
     },
     {
       "domain": "gdansk.pl",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 163148,
-    "form_destination": 21206,
-    "image_or_media_dependency": 33353,
-    "script_dependency": 50569,
-    "stylesheet_dependency": 40357,
+    "editorial_link": 163156,
+    "form_destination": 21208,
+    "image_or_media_dependency": 33355,
+    "script_dependency": 50571,
+    "stylesheet_dependency": 40360,
     "font_or_preload_dependency": 8380
   },
-  "generated_at": "2026-09-13T15:40:41.527407+00:00"
+  "generated_at": "2026-09-13T20:31:30.496669+00:00"
 }
