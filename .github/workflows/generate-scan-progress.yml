@@ -239,12 +239,55 @@ jobs:
             echo "or the database doesn't cover this scanner)._"
           } > docs/pace-report.md
 
+      - name: Enforce Lighthouse 60-day pace target
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import re
+          import sys
+
+          pace_table_path = "/tmp/pace-table-lighthouse.md"
+          target_days = 60.0
+
+          projected_cycle_days = None
+          with open(pace_table_path, encoding="utf-8") as handle:
+            for line in handle:
+              stripped = line.strip()
+              if not stripped.startswith("| lighthouse "):
+                continue
+              columns = [part.strip() for part in stripped.strip("|").split("|")]
+              if len(columns) < 6:
+                break
+              projected = columns[5]
+              match = re.search(r"([0-9]+(?:\.[0-9]+)?)d", projected)
+              if match:
+                projected_cycle_days = float(match.group(1))
+              break
+
+          if projected_cycle_days is None:
+            print(
+              "Unable to parse lighthouse projected cycle from pace report table.",
+              file=sys.stderr,
+            )
+            sys.exit(1)
+
+          print(
+            f"Lighthouse projected cycle: {projected_cycle_days:.1f}d (target <= {target_days:.1f}d)"
+          )
+          if projected_cycle_days > target_days:
+            print(
+              f"::error::Lighthouse projected cycle is {projected_cycle_days:.1f}d, above {target_days:.1f}d target."
+            )
+            sys.exit(1)
+          PY
+
       - name: Commit progress report to repository
         run: |
           # docs/social-media-data.json, docs/accessibility-data.json,
-          # docs/technology-data.json, and docs/lighthouse-data.json are excluded
+          # docs/technology-data.json, docs/third-party-tools-data.json, and
+          # docs/lighthouse-data.json are excluded
           # from git because they can exceed GitHub's 100 MB file-size limit.
-          # All four files are still uploaded as workflow artifacts above.
+          # These files are still uploaded as workflow artifacts above.
           # docs/technology-index.json is a compact cross-reference index that
           # IS committed so it can be served via GitHub Pages as a static API.
           # docs/data/gov-domains.json is the same kind of static-API file --
@@ -252,7 +295,7 @@ jobs:
           git add docs/scan-progress.md docs/domains.md docs/domains/ docs/index.md \
                   docs/social-media.md \
                   docs/technology-scanning.md docs/technology-index.json \
-                  docs/third-party-tools.md docs/third-party-tools-data.json \
+                  docs/third-party-tools.md \
                   docs/accessibility-statements.md \
                   docs/lighthouse-results.md \
                   docs/tech-lighthouse.md \
