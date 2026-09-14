@@ -207,11 +207,11 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 62041
+      "count": 62046
     },
     {
       "domain": "googleapis.com",
-      "count": 51391
+      "count": 51393
     },
     {
       "domain": "sachsen.de",
@@ -235,11 +235,11 @@
     },
     {
       "domain": "google.com",
-      "count": 29206
+      "count": 29208
     },
     {
       "domain": "twitter.com",
-      "count": 28950
+      "count": 28955
     },
     {
       "domain": "linkedin.com",
@@ -247,7 +247,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 23924
+      "count": 23929
     },
     {
       "domain": "krakow.pl",
@@ -414,5 +414,5 @@
     "stylesheet_dependency": 40362,
     "font_or_preload_dependency": 8380
   },
-  "generated_at": "2026-09-14T11:55:58.011756+00:00"
+  "generated_at": "2026-09-14T17:51:11.529930+00:00"
 }
