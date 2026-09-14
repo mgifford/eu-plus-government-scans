@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-13T20:31:25.093559+00:00",
+  "generated_at": "2026-09-14T03:55:09.754016+00:00",
   "shard_max_bytes": 33554432,
-  "total_rows": 317030,
-  "total_bytes": 188655684,
+  "total_rows": 317036,
+  "total_bytes": 188658636,
   "shards": [
     {
       "file": "at.001.jsonl",
@@ -19,8 +19,8 @@
     {
       "file": "bg.001.jsonl",
       "group": "bg",
-      "rows": 1775,
-      "bytes": 869995
+      "rows": 1781,
+      "bytes": 872947
     },
     {
       "file": "brussels.001.jsonl",
