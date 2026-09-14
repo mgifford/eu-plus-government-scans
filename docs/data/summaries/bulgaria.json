@@ -1,6 +1,6 @@
 {
   "country_code": "BULGARIA",
-  "total_relationships": 1775,
+  "total_relationships": 1781,
   "total_source_domains": 51,
   "top_source_domains": [
     {
@@ -9,7 +9,7 @@
     },
     {
       "domain": "government.bg",
-      "count": 790
+      "count": 804
     },
     {
       "domain": "gabrovo.bg",
@@ -211,7 +211,7 @@
     },
     {
       "domain": "government.bg",
-      "count": 403
+      "count": 407
     },
     {
       "domain": "varna.bg",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 234
+      "count": 235
     },
     {
       "domain": "pleven.bg",
@@ -231,7 +231,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 210
+      "count": 212
     },
     {
       "domain": "burgas.bg",
@@ -247,7 +247,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 124
+      "count": 125
     },
     {
       "domain": "lovech.bg",
@@ -303,11 +303,11 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 62
+      "count": 63
     },
     {
       "domain": "jsdelivr.net",
-      "count": 56
+      "count": 58
     },
     {
       "domain": "europa.eu",
@@ -363,7 +363,7 @@
     },
     {
       "domain": "evroto.bg",
-      "count": 31
+      "count": 32
     },
     {
       "domain": "jquery.com",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 1054,
+    "editorial_link": 1056,
     "form_destination": 107,
-    "image_or_media_dependency": 158,
-    "script_dependency": 236,
-    "stylesheet_dependency": 201,
+    "image_or_media_dependency": 159,
+    "script_dependency": 237,
+    "stylesheet_dependency": 203,
     "font_or_preload_dependency": 19
   },
-  "generated_at": "2026-09-13T20:31:31.648060+00:00"
+  "generated_at": "2026-09-14T03:55:16.688600+00:00"
 }

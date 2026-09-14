@@ -1,6 +1,6 @@
 {
   "country_code": "CANADA",
-  "total_relationships": 317030,
+  "total_relationships": 317036,
   "total_source_domains": 9149,
   "top_source_domains": [
     {
@@ -207,11 +207,11 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 62037
+      "count": 62041
     },
     {
       "domain": "googleapis.com",
-      "count": 51389
+      "count": 51391
     },
     {
       "domain": "sachsen.de",
@@ -227,7 +227,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 33942
+      "count": 33943
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -235,15 +235,15 @@
     },
     {
       "domain": "google.com",
-      "count": 29202
+      "count": 29206
     },
     {
       "domain": "twitter.com",
-      "count": 28944
+      "count": 28950
     },
     {
       "domain": "linkedin.com",
-      "count": 25047
+      "count": 25050
     },
     {
       "domain": "googletagmanager.com",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 15270
+      "count": 15278
     },
     {
       "domain": "cloudflare.com",
@@ -291,7 +291,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 13225
+      "count": 13226
     },
     {
       "domain": "esteri.it",
@@ -347,7 +347,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 6153
+      "count": 6156
     },
     {
       "domain": "uni.opole.pl",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 163156,
+    "editorial_link": 163158,
     "form_destination": 21208,
-    "image_or_media_dependency": 33355,
-    "script_dependency": 50571,
-    "stylesheet_dependency": 40360,
+    "image_or_media_dependency": 33356,
+    "script_dependency": 50572,
+    "stylesheet_dependency": 40362,
     "font_or_preload_dependency": 8380
   },
-  "generated_at": "2026-09-13T20:31:29.450003+00:00"
+  "generated_at": "2026-09-14T03:55:14.601531+00:00"
 }

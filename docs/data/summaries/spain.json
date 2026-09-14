@@ -219,11 +219,11 @@
     },
     {
       "domain": "facebook.com",
-      "count": 2806
+      "count": 2809
     },
     {
       "domain": "twitter.com",
-      "count": 2582
+      "count": 2588
     },
     {
       "domain": "youtube.com",
@@ -235,7 +235,7 @@
     },
     {
       "domain": "google.com",
-      "count": 2219
+      "count": 2223
     },
     {
       "domain": "jccm.es",
@@ -275,7 +275,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 938
+      "count": 941
     },
     {
       "domain": "educativa.com",
@@ -315,7 +315,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 539
+      "count": 542
     },
     {
       "domain": "cloudflare.com",
@@ -347,7 +347,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 420
+      "count": 426
     },
     {
       "domain": "aemet.es",
@@ -414,5 +414,5 @@
     "form_destination": 1452,
     "font_or_preload_dependency": 156
   },
-  "generated_at": "2026-09-13T20:31:31.558856+00:00"
+  "generated_at": "2026-09-14T03:55:15.750877+00:00"
 }
