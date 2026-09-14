@@ -1,14 +1,14 @@
 name: Scan Lighthouse
 
 on:
-  # Run every 3 hours to build up progressive coverage.
-  # With --concurrency 3 and --only-categories=performance,accessibility,
+  # Run every 2 hours to accelerate progressive coverage.
+  # With --concurrency 5 and --only-categories=performance,accessibility,
   # best-practices,seo and --lighthouse-timeout-ms 30000, each URL takes
   # ~15-30 s, giving significantly higher throughput per day.  With
-  # --skip-recently-scanned-days 30 each URL is
-  # refreshed at most once per month, so the focus stays on uncovered URLs.
+  # --skip-recently-scanned-days 60 each URL is refreshed at most once every
+  # two months while first-pass coverage catches up.
   schedule:
-    - cron: '0 */3 * * *'
+    - cron: '0 */2 * * *'
 
   # Allow manual trigger for a single country or all countries
   workflow_dispatch:
@@ -18,14 +18,14 @@ on:
         required: false
         type: string
       rate_limit:
-        description: 'Maximum Lighthouse runs per second (default: 0.5)'
+        description: 'Maximum Lighthouse runs per second (default: 1.0)'
         required: false
-        default: '0.5'
+        default: '1.0'
         type: string
       concurrency:
-        description: 'Maximum parallel Lighthouse processes (default: 3)'
+        description: 'Maximum parallel Lighthouse processes (default: 5)'
         required: false
-        default: '3'
+        default: '5'
         type: string
       lighthouse_timeout_ms:
         description: 'Lighthouse internal timeout in milliseconds (default: 30000)'
@@ -33,9 +33,9 @@ on:
         default: '30000'
         type: string
       skip_recently_scanned_days:
-        description: 'Skip URLs scanned within this many days (0 = re-scan all, 30 = monthly refresh)'
+        description: 'Skip URLs scanned within this many days (0 = re-scan all, 60 = two-month refresh)'
         required: false
-        default: '30'
+        default: '60'
         type: string
 
 # Lighthouse has its own concurrency group so frequent metadata-scan workflows
@@ -51,7 +51,7 @@ env:
 jobs:
   scan-lighthouse:
     runs-on: ubuntu-latest
-    timeout-minutes: 70
+    timeout-minutes: 110
     permissions:
       contents: read
       actions: read
@@ -101,10 +101,10 @@ jobs:
           set -o pipefail
           python3 -m src.cli.scan_lighthouse \
             --country "${{ github.event.inputs.country }}" \
-            --rate-limit "${{ github.event.inputs.rate_limit || '0.5' }}" \
-            --concurrency "${{ github.event.inputs.concurrency || '3' }}" \
+            --rate-limit "${{ github.event.inputs.rate_limit || '1.0' }}" \
+            --concurrency "${{ github.event.inputs.concurrency || '5' }}" \
             --lighthouse-timeout-ms "${{ github.event.inputs.lighthouse_timeout_ms || '30000' }}" \
-            --skip-recently-scanned-days "${{ github.event.inputs.skip_recently_scanned_days || '30' }}" \
+            --skip-recently-scanned-days "${{ github.event.inputs.skip_recently_scanned_days || '60' }}" \
             --only-categories "performance,accessibility,best-practices,seo" \
             --throttling-method "provided" \
             2>&1 | tee lighthouse-scan-output.txt
@@ -115,11 +115,11 @@ jobs:
           set -o pipefail
           python3 -m src.cli.scan_lighthouse \
             --all \
-            --max-runtime 55 \
-            --rate-limit "${{ github.event.inputs.rate_limit || '0.5' }}" \
-            --concurrency "${{ github.event.inputs.concurrency || '3' }}" \
+            --max-runtime 95 \
+            --rate-limit "${{ github.event.inputs.rate_limit || '1.0' }}" \
+            --concurrency "${{ github.event.inputs.concurrency || '5' }}" \
             --lighthouse-timeout-ms "${{ github.event.inputs.lighthouse_timeout_ms || '30000' }}" \
-            --skip-recently-scanned-days "${{ github.event.inputs.skip_recently_scanned_days || '30' }}" \
+            --skip-recently-scanned-days "${{ github.event.inputs.skip_recently_scanned_days || '60' }}" \
             --only-categories "performance,accessibility,best-practices,seo" \
             --throttling-method "provided" \
             2>&1 | tee lighthouse-scan-output.txt
@@ -169,8 +169,8 @@ jobs:
             echo '```' >> $GITHUB_STEP_SUMMARY
           fi
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "- Rate Limit: ${{ github.event.inputs.rate_limit || '0.5' }} runs/sec" >> $GITHUB_STEP_SUMMARY
-          echo "- Concurrency: ${{ github.event.inputs.concurrency || '3' }} parallel processes" >> $GITHUB_STEP_SUMMARY
+          echo "- Rate Limit: ${{ github.event.inputs.rate_limit || '1.0' }} runs/sec" >> $GITHUB_STEP_SUMMARY
+          echo "- Concurrency: ${{ github.event.inputs.concurrency || '5' }} parallel processes" >> $GITHUB_STEP_SUMMARY
           echo "- Lighthouse timeout: ${{ github.event.inputs.lighthouse_timeout_ms || '30000' }} ms" >> $GITHUB_STEP_SUMMARY
-          echo "- Skip recently scanned: ${{ github.event.inputs.skip_recently_scanned_days || '30' }} days" >> $GITHUB_STEP_SUMMARY
+          echo "- Skip recently scanned: ${{ github.event.inputs.skip_recently_scanned_days || '60' }} days" >> $GITHUB_STEP_SUMMARY
           echo "- Workflow Run: [\#${{ github.run_number }}](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }})" >> $GITHUB_STEP_SUMMARY
