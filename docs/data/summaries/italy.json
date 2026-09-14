@@ -13,7 +13,7 @@
     },
     {
       "domain": "cultura.gov.it",
-      "count": 10828
+      "count": 10829
     },
     {
       "domain": "regione.lombardia.it",
@@ -219,7 +219,7 @@
     },
     {
       "domain": "cultura.gov.it",
-      "count": 5007
+      "count": 5008
     },
     {
       "domain": "youtube.com",
@@ -414,5 +414,5 @@
     "form_destination": 1454,
     "font_or_preload_dependency": 251
   },
-  "generated_at": "2026-09-14T03:55:16.270482+00:00"
+  "generated_at": "2026-09-14T11:55:59.137196+00:00"
 }
