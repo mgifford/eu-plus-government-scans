@@ -1,6 +1,6 @@
 {
   "country_code": "CANADA",
-  "total_relationships": 317036,
+  "total_relationships": 317052,
   "total_source_domains": 9149,
   "top_source_domains": [
     {
@@ -29,7 +29,7 @@
     },
     {
       "domain": "poznan.pl",
-      "count": 31197
+      "count": 31250
     },
     {
       "domain": "esteri.it",
@@ -207,11 +207,11 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 62046
+      "count": 62059
     },
     {
       "domain": "googleapis.com",
-      "count": 51393
+      "count": 51394
     },
     {
       "domain": "sachsen.de",
@@ -223,11 +223,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 35812
+      "count": 35825
     },
     {
       "domain": "youtube.com",
-      "count": 33943
+      "count": 33948
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -235,7 +235,7 @@
     },
     {
       "domain": "google.com",
-      "count": 29208
+      "count": 29216
     },
     {
       "domain": "twitter.com",
@@ -243,7 +243,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 25050
+      "count": 25055
     },
     {
       "domain": "googletagmanager.com",
@@ -275,7 +275,7 @@
     },
     {
       "domain": "poznan.pl",
-      "count": 15582
+      "count": 15614
     },
     {
       "domain": "jsdelivr.net",
@@ -283,7 +283,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 15085
+      "count": 15089
     },
     {
       "domain": "bayern.de",
@@ -319,7 +319,7 @@
     },
     {
       "domain": "fontawesome.com",
-      "count": 7615
+      "count": 7621
     },
     {
       "domain": "admin.ch",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 163158,
+    "editorial_link": 163164,
     "form_destination": 21208,
-    "image_or_media_dependency": 33356,
-    "script_dependency": 50572,
-    "stylesheet_dependency": 40362,
-    "font_or_preload_dependency": 8380
+    "image_or_media_dependency": 33358,
+    "script_dependency": 50575,
+    "stylesheet_dependency": 40365,
+    "font_or_preload_dependency": 8382
   },
-  "generated_at": "2026-09-14T17:51:11.529930+00:00"
+  "generated_at": "2026-09-14T21:40:20.410178+00:00"
 }

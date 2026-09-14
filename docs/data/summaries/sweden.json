@@ -21,7 +21,7 @@
     },
     {
       "domain": "vaxjo.se",
-      "count": 612
+      "count": 702
     },
     {
       "domain": "stockholm.se",
@@ -32,16 +32,16 @@
       "count": 601
     },
     {
+      "domain": "norrkoping.se",
+      "count": 582
+    },
+    {
       "domain": "goteborg.se",
       "count": 554
     },
     {
       "domain": "umea.se",
       "count": 466
-    },
-    {
-      "domain": "norrkoping.se",
-      "count": 462
     },
     {
       "domain": "gotland.se",
@@ -211,15 +211,15 @@
     },
     {
       "domain": "facebook.com",
-      "count": 939
+      "count": 950
     },
     {
       "domain": "linkedin.com",
-      "count": 810
+      "count": 815
     },
     {
       "domain": "instagram.com",
-      "count": 753
+      "count": 764
     },
     {
       "domain": "regionstockholm.se",
@@ -230,12 +230,12 @@
       "count": 640
     },
     {
-      "domain": "1177.se",
-      "count": 478
+      "domain": "vaxjo.se",
+      "count": 492
     },
     {
-      "domain": "vaxjo.se",
-      "count": 429
+      "domain": "1177.se",
+      "count": 478
     },
     {
       "domain": "regionorebrolan.se",
@@ -243,11 +243,15 @@
     },
     {
       "domain": "youtube.com",
-      "count": 391
+      "count": 394
     },
     {
       "domain": "vgregion.se",
       "count": 380
+    },
+    {
+      "domain": "norrkoping.se",
+      "count": 375
     },
     {
       "domain": "googleapis.com",
@@ -259,23 +263,19 @@
     },
     {
       "domain": "readspeaker.com",
-      "count": 326
+      "count": 338
     },
     {
       "domain": "stockholm.se",
       "count": 318
     },
     {
-      "domain": "norrkoping.se",
-      "count": 303
+      "domain": "google.com",
+      "count": 307
     },
     {
       "domain": "trafikverket.se",
       "count": 300
-    },
-    {
-      "domain": "google.com",
-      "count": 299
     },
     {
       "domain": "umea.se",
@@ -338,6 +338,10 @@
       "count": 159
     },
     {
+      "domain": "rekai.se",
+      "count": 157
+    },
+    {
       "domain": "kronofogden.se",
       "count": 157
     },
@@ -348,10 +352,6 @@
     {
       "domain": "konsumentverket.se",
       "count": 156
-    },
-    {
-      "domain": "rekai.se",
-      "count": 154
     },
     {
       "domain": "twitter.com",
@@ -391,7 +391,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 125
+      "count": 129
     },
     {
       "domain": "lulea.se",
@@ -414,5 +414,5 @@
     "form_destination": 491,
     "image_or_media_dependency": 683
   },
-  "generated_at": "2026-09-14T17:51:12.809037+00:00"
+  "generated_at": "2026-09-14T21:40:21.933240+00:00"
 }
