@@ -28,6 +28,7 @@ _site_local/
 docs/social-media-data.json
 docs/accessibility-data.json
 docs/technology-data.json
+docs/third-party-tools-data.json
 
 data/metadata.db
 # Scratch space for the per-owner metadata artifacts (see src/lib/metadata_merge.py)
