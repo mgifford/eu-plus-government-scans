@@ -1,0 +1,103 @@
+name: Lighthouse Pace Guard
+
+# Alerts (as a red run) when the Lighthouse scanner is not on pace to finish
+# its cycle within the target, WITHOUT failing the report-generation workflow.
+#
+# The pace check used to live inside "Generate Scan Progress Report", but a
+# failure there marks that workflow's run as "failure", and the Deploy GitHub
+# Pages workflow only deploys when it concludes "success" — so a pace breach
+# silently stopped the live site from redeploying. Running the check here keeps
+# the breach visible as its own alert while letting the report run stay green so
+# Pages redeploys every cycle.
+
+on:
+  # Re-check after each scan-progress report is regenerated (and its fresh
+  # pace report committed to main).
+  workflow_run:
+    workflows: ["Generate Scan Progress Report"]
+    types: [completed]
+
+  # Allow manual trigger at any time.
+  workflow_dispatch:
+
+concurrency:
+  group: lighthouse-pace-guard
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+env:
+  # Maximum acceptable projected cycle length (days) for the Lighthouse scanner.
+  LIGHTHOUSE_TARGET_DAYS: "90"
+
+jobs:
+  pace-guard:
+    # Only meaningful once a fresh pace report has been committed, i.e. after a
+    # successful report run (or a manual dispatch).
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout latest main
+        uses: actions/checkout@v6
+        with:
+          # The report run committed the fresh pace report to main during its
+          # run, so read main's HEAD rather than the event's head SHA.
+          ref: main
+          fetch-depth: 1
+
+      - name: Enforce Lighthouse pace target
+        env:
+          TARGET_DAYS: ${{ env.LIGHTHOUSE_TARGET_DAYS }}
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import os
+          import re
+          import sys
+
+          pace_report_path = "docs/pace-report.md"
+          target_days = float(os.environ["TARGET_DAYS"])
+
+          try:
+            with open(pace_report_path, encoding="utf-8") as handle:
+              lines = handle.readlines()
+          except FileNotFoundError:
+            print(f"::error::{pace_report_path} not found — cannot evaluate Lighthouse pace.")
+            sys.exit(1)
+
+          projected_cycle_days = None
+          for line in lines:
+            stripped = line.strip()
+            if not stripped.startswith("| lighthouse "):
+              continue
+            columns = [part.strip() for part in stripped.strip("|").split("|")]
+            if len(columns) < 6:
+              break
+            match = re.search(r"([0-9]+(?:\.[0-9]+)?)d", columns[5])
+            if match:
+              projected_cycle_days = float(match.group(1))
+            break
+
+          if projected_cycle_days is None:
+            print(
+              "::error::Unable to parse the Lighthouse projected cycle from "
+              f"{pace_report_path}.",
+            )
+            sys.exit(1)
+
+          print(
+            f"Lighthouse projected cycle: {projected_cycle_days:.1f}d "
+            f"(target <= {target_days:.1f}d)"
+          )
+          if projected_cycle_days > target_days:
+            print(
+              f"::error::Lighthouse projected cycle is {projected_cycle_days:.1f}d, "
+              f"above the {target_days:.1f}d target. Reports still published; this "
+              f"is a pace alert only."
+            )
+            sys.exit(1)
+
+          print("Lighthouse is on pace.")
+          PY
