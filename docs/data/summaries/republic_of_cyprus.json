@@ -283,7 +283,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 15089
+      "count": 15090
     },
     {
       "domain": "bayern.de",
@@ -414,5 +414,5 @@
     "stylesheet_dependency": 40365,
     "font_or_preload_dependency": 8382
   },
-  "generated_at": "2026-09-15T03:33:59.122153+00:00"
+  "generated_at": "2026-09-15T11:10:10.409630+00:00"
 }
