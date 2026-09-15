@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 62059
+      "count": 62062
     },
     {
       "domain": "googleapis.com",
@@ -239,7 +239,7 @@
     },
     {
       "domain": "twitter.com",
-      "count": 28955
+      "count": 28958
     },
     {
       "domain": "linkedin.com",
@@ -247,7 +247,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 23929
+      "count": 23932
     },
     {
       "domain": "krakow.pl",
@@ -414,5 +414,5 @@
     "stylesheet_dependency": 40365,
     "font_or_preload_dependency": 8382
   },
-  "generated_at": "2026-09-14T21:40:22.388830+00:00"
+  "generated_at": "2026-09-15T03:34:00.098379+00:00"
 }
