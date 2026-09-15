@@ -152,11 +152,17 @@ class LighthouseScanner:
                 ``"provided"`` to skip simulated slow-network throttling
                 (appropriate for server-to-server audits).
             lighthouse_timeout_ms: When provided, pass
-                ``--timeout=<value>`` (milliseconds) to Lighthouse so slow
-                pages fail fast and free concurrency slots.
+                ``--max-wait-for-load=<value>`` (milliseconds) to Lighthouse so
+                slow pages fail fast and free concurrency slots.  This is the
+                real Lighthouse CLI flag for bounding the page-load wait; the
+                previously-used ``--timeout`` is not a Lighthouse flag and was
+                silently ignored.
             max_retries: Maximum number of retry attempts for transient
-                failures (timeout, non-zero exit, invalid JSON).  0 disables
-                retries entirely.  Defaults to 2.
+                failures (non-zero exit, invalid JSON).  Wall-clock timeouts
+                are never retried — they are effectively deterministic for a
+                given slow host and each retry costs another full
+                ``timeout_seconds``.  0 disables retries entirely.  Defaults
+                to 2.
             retry_backoff_seconds: Base back-off duration in seconds between
                 retry attempts.  Actual delay is
                 ``min(2**(attempt-1) * retry_backoff_seconds, 30)``.
@@ -173,9 +179,15 @@ class LighthouseScanner:
             built_extra.append(f"--only-categories={','.join(only_categories)}")
         if throttling_method:
             built_extra.append(f"--throttling-method={throttling_method}")
-        has_timeout_arg = any(arg.startswith("--timeout=") for arg in built_extra)
-        if lighthouse_timeout_ms is not None and not has_timeout_arg:
-            built_extra.append(f"--timeout={lighthouse_timeout_ms}")
+        # Lighthouse's CLI flag for bounding the page-load wait is
+        # --max-wait-for-load (milliseconds).  There is no --timeout flag, so
+        # the previous --timeout=<ms> was silently ignored and slow pages ran
+        # until the hard subprocess wall-clock timeout (timeout_seconds).
+        has_wait_arg = any(
+            arg.startswith("--max-wait-for-load=") for arg in built_extra
+        )
+        if lighthouse_timeout_ms is not None and not has_wait_arg:
+            built_extra.append(f"--max-wait-for-load={lighthouse_timeout_ms}")
         self.extra_args = built_extra
 
     # ------------------------------------------------------------------
@@ -234,8 +246,9 @@ class LighthouseScanner:
         The Lighthouse CLI is CPU-bound, so the subprocess is dispatched
         to a thread-pool executor so it does not block the event loop.
 
-        Transient failures (timeout, non-zero exit, truncated JSON) are
-        retried up to *max_retries* times with exponential back-off.
+        Transient failures (non-zero exit, truncated JSON) are retried up to
+        *max_retries* times with exponential back-off.  Wall-clock timeouts
+        are not retried (see the ``TimeoutExpired`` handler below).
 
         Returns:
             LighthouseScanResult with category scores or an error message.
@@ -261,8 +274,16 @@ class LighthouseScanner:
                     scanned_at=scanned_at,
                 )
             except subprocess.TimeoutExpired:
-                last_error = f"Lighthouse timed out after {self.timeout_seconds}s"
-                continue  # retry
+                # A wall-clock timeout is effectively deterministic for a given
+                # slow or unresponsive host: a retry almost always times out
+                # again, and each attempt burns another full timeout_seconds.
+                # Return immediately instead of retrying so a single dead host
+                # can't consume up to 3x the time budget.
+                return LighthouseScanResult(
+                    url=url,
+                    error_message=f"Lighthouse timed out after {self.timeout_seconds}s",
+                    scanned_at=scanned_at,
+                )
             except subprocess.CalledProcessError as exc:
                 stderr_preview = (exc.stderr or "")[:200].strip()
                 last_error = (
