@@ -28,8 +28,17 @@ class LighthouseScannerJob:
         lighthouse_timeout_ms: int | None = 45000,
     ):
         self.settings = settings
+        # Hard per-URL wall-clock backstop.  Keep it just above Lighthouse's
+        # own page-load wait (--max-wait-for-load) plus Chrome launch/audit
+        # overhead so an unresponsive host fails in ~timeout seconds instead
+        # of the old flat 120 s.  --max-wait-for-load does not always bound the
+        # whole run (Lighthouse issue #11615), so this backstop still matters.
+        if lighthouse_timeout_ms is not None:
+            wrapper_timeout = lighthouse_timeout_ms // 1000 + 30
+        else:
+            wrapper_timeout = settings.crawl_timeout_seconds * 6  # Lighthouse is slow
         self.scanner = LighthouseScanner(
-            timeout_seconds=settings.crawl_timeout_seconds * 6,  # Lighthouse is slow
+            timeout_seconds=wrapper_timeout,
             lighthouse_path=lighthouse_path,
             only_categories=only_categories,
             throttling_method=throttling_method,

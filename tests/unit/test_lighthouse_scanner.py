@@ -149,7 +149,7 @@ async def test_scan_url_lighthouse_not_found():
 
 @pytest.mark.asyncio
 async def test_scan_url_timeout():
-    """TimeoutExpired should yield a timeout error message after retries exhaust."""
+    """TimeoutExpired should yield a timeout error message (no retry)."""
     scanner = LighthouseScanner(timeout_seconds=30, max_retries=0)
 
     with patch.object(
@@ -200,26 +200,29 @@ async def test_scan_url_invalid_json_output():
 
 
 @pytest.mark.asyncio
-async def test_scan_url_retries_on_timeout_then_succeeds():
-    """scan_url should retry on TimeoutExpired and succeed on a later attempt."""
+async def test_scan_url_no_retry_on_timeout():
+    """scan_url must NOT retry on TimeoutExpired.
+
+    A wall-clock timeout is effectively deterministic for a given slow host,
+    and each retry costs another full timeout_seconds, so the scanner returns
+    the timeout error after a single attempt.
+    """
     scanner = LighthouseScanner(max_retries=2, retry_backoff_seconds=0.0)
-    raw = _make_lighthouse_json(performance=0.9, accessibility=0.85)
 
     call_count = 0
 
     def _mock_run(url: str) -> str:
         nonlocal call_count
         call_count += 1
-        if call_count < 2:
-            raise subprocess.TimeoutExpired(cmd=["lighthouse"], timeout=30)
-        return raw
+        raise subprocess.TimeoutExpired(cmd=["lighthouse"], timeout=30)
 
     with patch.object(scanner, "_run_lighthouse", side_effect=_mock_run):
         result = await scanner.scan_url("https://gov.example/")
 
-    assert call_count == 2
-    assert result.error_message is None
-    assert result.performance_score == pytest.approx(0.9)
+    assert call_count == 1  # no retry on timeout
+    assert result.error_message is not None
+    assert "timed out" in result.error_message
+    assert result.performance_score is None
 
 
 @pytest.mark.asyncio
@@ -247,19 +250,27 @@ async def test_scan_url_retries_on_invalid_json_then_succeeds():
 
 @pytest.mark.asyncio
 async def test_scan_url_exhausts_retries():
-    """After all retries fail, the last error message should be returned."""
+    """After all retries on a retryable failure fail, return the last error.
+
+    Uses invalid JSON (a retryable failure) rather than a timeout, since
+    timeouts are no longer retried.
+    """
     scanner = LighthouseScanner(max_retries=2, retry_backoff_seconds=0.0)
 
-    with patch.object(
-        scanner,
-        "_run_lighthouse",
-        side_effect=subprocess.TimeoutExpired(cmd=["lighthouse"], timeout=30),
-    ):
-        result = await scanner.scan_url("https://slow.gov/")
+    call_count = 0
 
+    def _mock_run(url: str) -> str:
+        nonlocal call_count
+        call_count += 1
+        return "garbage output"  # always invalid JSON
+
+    with patch.object(scanner, "_run_lighthouse", side_effect=_mock_run):
+        result = await scanner.scan_url("https://gov.example/")
+
+    assert call_count == 3  # initial attempt + 2 retries
     assert result.performance_score is None
     assert result.error_message is not None
-    assert "timed out" in result.error_message
+    assert "Invalid JSON" in result.error_message
 
 
 @pytest.mark.asyncio
@@ -405,7 +416,7 @@ def test_build_command_json_output():
     cmd = scanner._build_command("https://example.gov/")
     assert "--output=json" in cmd
     assert "--output-path=stdout" in cmd
-    assert "--timeout=45000" in cmd
+    assert "--max-wait-for-load=45000" in cmd
 
 
 def test_build_command_extra_args():
@@ -415,12 +426,12 @@ def test_build_command_extra_args():
     assert "--only-categories=accessibility" in cmd
 
 
-def test_build_command_preserves_explicit_timeout_arg():
-    """An explicit --timeout argument should not be duplicated."""
-    scanner = LighthouseScanner(extra_args=["--timeout=30000"])
+def test_build_command_preserves_explicit_max_wait_arg():
+    """An explicit --max-wait-for-load argument should not be duplicated."""
+    scanner = LighthouseScanner(extra_args=["--max-wait-for-load=30000"])
     cmd = scanner._build_command("https://example.gov/")
-    assert cmd.count("--timeout=30000") == 1
-    assert "--timeout=45000" not in cmd
+    assert cmd.count("--max-wait-for-load=30000") == 1
+    assert "--max-wait-for-load=45000" not in cmd
 
 
 def test_build_command_custom_chrome_flags():
