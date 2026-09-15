@@ -11,13 +11,13 @@ power them, including which third-party JavaScript services they rely on.
 
 <!-- SCAN_PROGRESS_START -->
 
-_Progress as of 2026-09-15 17:27 UTC_
+_Progress as of 2026-09-15 17:40 UTC_
 
 | Scan Type | Pages Scanned | Coverage | Avg Age |
 |-----------|--------------|----------|---------|
 | **Combined Reachability** | **80,003 confirmed reachable** | **<span role="img" aria-label="91.2% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:109px;"></span></span><span class="sm-bar__label">91.2%</span></span>** | — |
 | Social Media | 87,696 scanned (79,923 reachable) | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 20.2 days |
-| Technology | 87,696 scanned | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 20.5 days |
+| Technology | 87,696 scanned | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 20.2 days |
 | Lighthouse | 14,565 scanned | <span role="img" aria-label="16.6% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:20px;"></span></span><span class="sm-bar__label">16.6%</span></span> | 30.2 days |
 | Accessibility Statements | 87,696 scanned | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 24.3 days |
 
