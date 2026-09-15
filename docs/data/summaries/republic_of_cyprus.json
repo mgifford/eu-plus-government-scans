@@ -25,7 +25,7 @@
     },
     {
       "domain": "lodz.pl",
-      "count": 32129
+      "count": 32223
     },
     {
       "domain": "poznan.pl",
@@ -207,11 +207,11 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 62065
+      "count": 62069
     },
     {
       "domain": "googleapis.com",
-      "count": 51397
+      "count": 51399
     },
     {
       "domain": "sachsen.de",
@@ -223,11 +223,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 35828
+      "count": 35830
     },
     {
       "domain": "youtube.com",
-      "count": 33951
+      "count": 33953
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -263,7 +263,7 @@
     },
     {
       "domain": "lodz.pl",
-      "count": 18454
+      "count": 18470
     },
     {
       "domain": "rlp.de",
@@ -414,5 +414,5 @@
     "stylesheet_dependency": 40365,
     "font_or_preload_dependency": 8382
   },
-  "generated_at": "2026-09-15T16:39:28.900391+00:00"
+  "generated_at": "2026-09-15T21:05:29.307838+00:00"
 }
