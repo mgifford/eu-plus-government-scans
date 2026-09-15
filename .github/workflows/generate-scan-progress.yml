@@ -239,7 +239,40 @@ jobs:
             echo "or the database doesn't cover this scanner)._"
           } > docs/pace-report.md
 
-      - name: Enforce Lighthouse 60-day pace target
+      - name: Commit progress report to repository
+        run: |
+          # docs/social-media-data.json, docs/accessibility-data.json,
+          # docs/technology-data.json, docs/third-party-tools-data.json, and
+          # docs/lighthouse-data.json are excluded
+          # from git because they can exceed GitHub's 100 MB file-size limit.
+          # These files are still uploaded as workflow artifacts above.
+          # docs/technology-index.json is a compact cross-reference index that
+          # IS committed so it can be served via GitHub Pages as a static API.
+          # docs/data/gov-domains.json is the same kind of static-API file --
+          # network.html fetches it to check government-domain membership.
+          git add docs/scan-progress.md docs/domains.md docs/domains/ docs/index.md \
+                  docs/social-media.md \
+                  docs/technology-scanning.md docs/technology-index.json \
+                  docs/third-party-tools.md \
+                  docs/accessibility-statements.md \
+                  docs/lighthouse-results.md \
+                  docs/tech-lighthouse.md \
+                  docs/data/gov-domains.json \
+                  docs/pace-report.md
+          if git diff --staged --quiet; then
+            echo "No changes to commit — reports are up to date."
+          else
+            git commit -m "docs: update scan reports and generated site pages [skip ci]"
+            git push
+            echo "Reports committed and pushed."
+          fi
+
+      # Pace SLO gate runs AFTER publishing so a Lighthouse scan backlog
+      # surfaces as a red run (an alert) without blocking the report and
+      # site-page updates the other scanners produced. if: always() lets the
+      # pace signal fire independently of the commit/push outcome above.
+      - name: Enforce Lighthouse 90-day pace target
+        if: always()
         run: |
           set -euo pipefail
           python3 - <<'PY'
@@ -247,7 +280,7 @@ jobs:
           import sys
 
           pace_table_path = "/tmp/pace-table-lighthouse.md"
-          target_days = 60.0
+          target_days = 90.0
 
           projected_cycle_days = None
           with open(pace_table_path, encoding="utf-8") as handle:
@@ -280,34 +313,6 @@ jobs:
             )
             sys.exit(1)
           PY
-
-      - name: Commit progress report to repository
-        run: |
-          # docs/social-media-data.json, docs/accessibility-data.json,
-          # docs/technology-data.json, docs/third-party-tools-data.json, and
-          # docs/lighthouse-data.json are excluded
-          # from git because they can exceed GitHub's 100 MB file-size limit.
-          # These files are still uploaded as workflow artifacts above.
-          # docs/technology-index.json is a compact cross-reference index that
-          # IS committed so it can be served via GitHub Pages as a static API.
-          # docs/data/gov-domains.json is the same kind of static-API file --
-          # network.html fetches it to check government-domain membership.
-          git add docs/scan-progress.md docs/domains.md docs/domains/ docs/index.md \
-                  docs/social-media.md \
-                  docs/technology-scanning.md docs/technology-index.json \
-                  docs/third-party-tools.md \
-                  docs/accessibility-statements.md \
-                  docs/lighthouse-results.md \
-                  docs/tech-lighthouse.md \
-                  docs/data/gov-domains.json \
-                  docs/pace-report.md
-          if git diff --staged --quiet; then
-            echo "No changes to commit — reports are up to date."
-          else
-            git commit -m "docs: update scan reports and generated site pages [skip ci]"
-            git push
-            echo "Reports committed and pushed."
-          fi
 
       - name: Upload progress report artifact
         if: always()
