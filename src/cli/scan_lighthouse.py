@@ -107,12 +107,23 @@ def main():
     parser.add_argument(
         "--lighthouse-timeout-ms",
         help=(
-            "Lighthouse internal timeout in milliseconds "
-            "(default: 45000 = 45 seconds)."
+            "Lighthouse page-load wait in milliseconds, passed as "
+            "--max-wait-for-load (default: 45000 = 45 seconds).  Slow pages "
+            "fail at this point instead of tying up the run."
         ),
         type=int,
         default=45000,
         dest="lighthouse_timeout_ms",
+    )
+    parser.add_argument(
+        "--no-reachability-precheck",
+        help=(
+            "Disable the cheap HTTP reachability pre-check that skips hosts "
+            "giving no response (DNS/TLS/connection failures) before launching "
+            "Chrome.  The pre-check is on by default."
+        ),
+        action="store_false",
+        dest="reachability_precheck",
     )
     parser.add_argument(
         "--max-urls",
@@ -151,6 +162,7 @@ def main():
         only_categories=only_categories,
         throttling_method=args.throttling_method,
         lighthouse_timeout_ms=args.lighthouse_timeout_ms,
+        enable_reachability_precheck=args.reachability_precheck,
     )
 
     max_runtime_seconds = args.max_runtime * 60 if args.max_runtime > 0 else None
