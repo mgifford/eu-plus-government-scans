@@ -9,7 +9,7 @@
     },
     {
       "domain": "lodz.pl",
-      "count": 32129
+      "count": 32223
     },
     {
       "domain": "poznan.pl",
@@ -211,11 +211,11 @@
     },
     {
       "domain": "lodz.pl",
-      "count": 18452
+      "count": 18468
     },
     {
       "domain": "googleapis.com",
-      "count": 16945
+      "count": 16947
     },
     {
       "domain": "poznan.pl",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 15072
+      "count": 15076
     },
     {
       "domain": "gdansk.pl",
@@ -239,11 +239,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 5888
+      "count": 5890
     },
     {
       "domain": "youtube.com",
-      "count": 5785
+      "count": 5787
     },
     {
       "domain": "google.com",
@@ -315,7 +315,7 @@
     },
     {
       "domain": "edupage.org",
-      "count": 1393
+      "count": 1439
     },
     {
       "domain": "unpkg.com",
@@ -355,7 +355,7 @@
     },
     {
       "domain": "tiktok.com",
-      "count": 950
+      "count": 951
     },
     {
       "domain": "repertuary.pl",
@@ -363,7 +363,7 @@
     },
     {
       "domain": "librus.pl",
-      "count": 848
+      "count": 851
     },
     {
       "domain": "sopot.pl",
@@ -414,5 +414,5 @@
     "stylesheet_dependency": 7649,
     "font_or_preload_dependency": 1831
   },
-  "generated_at": "2026-09-15T16:39:29.876685+00:00"
+  "generated_at": "2026-09-15T21:05:30.000178+00:00"
 }
