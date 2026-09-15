@@ -267,52 +267,11 @@ jobs:
             echo "Reports committed and pushed."
           fi
 
-      # Pace SLO gate runs AFTER publishing so a Lighthouse scan backlog
-      # surfaces as a red run (an alert) without blocking the report and
-      # site-page updates the other scanners produced. if: always() lets the
-      # pace signal fire independently of the commit/push outcome above.
-      - name: Enforce Lighthouse 90-day pace target
-        if: always()
-        run: |
-          set -euo pipefail
-          python3 - <<'PY'
-          import re
-          import sys
-
-          pace_table_path = "/tmp/pace-table-lighthouse.md"
-          target_days = 90.0
-
-          projected_cycle_days = None
-          with open(pace_table_path, encoding="utf-8") as handle:
-            for line in handle:
-              stripped = line.strip()
-              if not stripped.startswith("| lighthouse "):
-                continue
-              columns = [part.strip() for part in stripped.strip("|").split("|")]
-              if len(columns) < 6:
-                break
-              projected = columns[5]
-              match = re.search(r"([0-9]+(?:\.[0-9]+)?)d", projected)
-              if match:
-                projected_cycle_days = float(match.group(1))
-              break
-
-          if projected_cycle_days is None:
-            print(
-              "Unable to parse lighthouse projected cycle from pace report table.",
-              file=sys.stderr,
-            )
-            sys.exit(1)
-
-          print(
-            f"Lighthouse projected cycle: {projected_cycle_days:.1f}d (target <= {target_days:.1f}d)"
-          )
-          if projected_cycle_days > target_days:
-            print(
-              f"::error::Lighthouse projected cycle is {projected_cycle_days:.1f}d, above {target_days:.1f}d target."
-            )
-            sys.exit(1)
-          PY
+      # The Lighthouse pace SLO is enforced by a separate workflow
+      # (.github/workflows/lighthouse-pace-guard.yml) so a pace breach shows as
+      # its own red alert without failing this run — a failure here would cascade
+      # into the Deploy GitHub Pages workflow, whose deploy is gated on this
+      # workflow concluding "success", and stop the live site from redeploying.
 
       - name: Upload progress report artifact
         if: always()
