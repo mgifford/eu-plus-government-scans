@@ -477,8 +477,8 @@ def test_quarantine_after_three_recent_failures(temp_settings):
 
     quarantined = job._get_quarantined_urls("TESTLAND", fail_threshold=3, quarantine_days=30)
 
-    assert "https://dead.gov/" in quarantined
-    assert "https://flaky.gov/" not in quarantined
+    # dead.gov (3 failures) is quarantined; flaky.gov (2) is not.
+    assert quarantined == {"https://dead.gov/"}
 
 
 def test_quarantine_expires_after_window(temp_settings):
@@ -492,7 +492,7 @@ def test_quarantine_expires_after_window(temp_settings):
 
     quarantined = job._get_quarantined_urls("TESTLAND", fail_threshold=3, quarantine_days=30)
 
-    assert "https://old.gov/" not in quarantined
+    assert quarantined == set()  # newest failure is older than the window
 
 
 def test_quarantine_reset_by_recent_success(temp_settings):
@@ -510,7 +510,7 @@ def test_quarantine_reset_by_recent_success(temp_settings):
 
     quarantined = job._get_quarantined_urls("TESTLAND", fail_threshold=3, quarantine_days=30)
 
-    assert "https://recovered.gov/" not in quarantined
+    assert quarantined == set()  # a newer success reset the failure run
 
 
 def test_quarantine_ignores_circuit_breaker_rows(temp_settings):
@@ -525,7 +525,7 @@ def test_quarantine_ignores_circuit_breaker_rows(temp_settings):
 
     quarantined = job._get_quarantined_urls("TESTLAND", fail_threshold=3, quarantine_days=30)
 
-    assert "https://cb.gov/" not in quarantined
+    assert quarantined == set()  # circuit-breaker rows don't count as attempts
 
 
 @pytest.mark.asyncio
@@ -545,8 +545,8 @@ async def test_scan_country_skips_quarantined_urls(temp_settings, sample_toon):
     await job.scan_country("TESTLAND", sample_toon)
 
     scanned_urls = job.scanner.scan_urls_batch.call_args.args[0]
-    assert "https://gov.example/about" not in scanned_urls
-    assert "https://gov.example/" in scanned_urls
+    # The quarantined URL is dropped; only the healthy one is scanned.
+    assert set(scanned_urls) == {"https://gov.example/"}
 
 
 @pytest.mark.asyncio
@@ -568,4 +568,5 @@ async def test_scan_country_quarantine_disabled(temp_settings, sample_toon):
     await job.scan_country("TESTLAND", sample_toon, quarantine_days=0)
 
     scanned_urls = job.scanner.scan_urls_batch.call_args.args[0]
-    assert "https://gov.example/about" in scanned_urls
+    # With the quarantine off, both sample URLs are scanned despite the failures.
+    assert set(scanned_urls) == {"https://gov.example/", "https://gov.example/about"}
