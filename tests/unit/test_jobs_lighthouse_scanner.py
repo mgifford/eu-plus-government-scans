@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import sqlite3
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from unittest.mock import AsyncMock, MagicMock, patch
 
@@ -432,3 +433,139 @@ async def test_scan_all_countries_empty_dir(temp_settings, tmp_path):
     job = _make_job(temp_settings)
     all_stats = await job.scan_all_countries(tmp_path)
     assert all_stats == []
+
+
+# ---------------------------------------------------------------------------
+# Known-bad-URL quarantine
+# ---------------------------------------------------------------------------
+
+
+def _iso_days_ago(days: float) -> str:
+    return (datetime.now(timezone.utc) - timedelta(days=days)).isoformat()
+
+
+def _insert_lh_row(job, url, *, country="TESTLAND", scan_id, error, scanned_at):
+    """Insert one url_lighthouse_results row with explicit error/timestamp."""
+    conn = sqlite3.connect(job.db_path)
+    try:
+        conn.execute(
+            """
+            INSERT INTO url_lighthouse_results
+                (url, country_code, scan_id, error_message, scanned_at)
+            VALUES (?, ?, ?, ?, ?)
+            """,
+            (url, country, scan_id, error, scanned_at),
+        )
+        conn.commit()
+    finally:
+        conn.close()
+
+
+def test_quarantine_after_three_recent_failures(temp_settings):
+    """3 consecutive recent failures quarantine a URL; 2 do not."""
+    job = _make_job(temp_settings)
+    for i in range(3):
+        _insert_lh_row(
+            job, "https://dead.gov/", scan_id=f"s{i}",
+            error="Lighthouse timed out after 60s", scanned_at=_iso_days_ago(i + 1),
+        )
+    for i in range(2):
+        _insert_lh_row(
+            job, "https://flaky.gov/", scan_id=f"f{i}",
+            error="Lighthouse timed out after 60s", scanned_at=_iso_days_ago(i + 1),
+        )
+
+    quarantined = job._get_quarantined_urls("TESTLAND", fail_threshold=3, quarantine_days=30)
+
+    assert "https://dead.gov/" in quarantined
+    assert "https://flaky.gov/" not in quarantined
+
+
+def test_quarantine_expires_after_window(temp_settings):
+    """A URL whose newest failure is older than the window is retried."""
+    job = _make_job(temp_settings)
+    for i in range(3):
+        _insert_lh_row(
+            job, "https://old.gov/", scan_id=f"o{i}",
+            error="Lighthouse timed out after 60s", scanned_at=_iso_days_ago(40 + i),
+        )
+
+    quarantined = job._get_quarantined_urls("TESTLAND", fail_threshold=3, quarantine_days=30)
+
+    assert "https://old.gov/" not in quarantined
+
+
+def test_quarantine_reset_by_recent_success(temp_settings):
+    """A success newer than the failures breaks the run — no quarantine."""
+    job = _make_job(temp_settings)
+    for i in range(3):
+        _insert_lh_row(
+            job, "https://recovered.gov/", scan_id=f"r{i}",
+            error="Lighthouse timed out after 60s", scanned_at=_iso_days_ago(i + 2),
+        )
+    _insert_lh_row(
+        job, "https://recovered.gov/", scan_id="r-ok",
+        error=None, scanned_at=_iso_days_ago(0.1),  # most recent = success
+    )
+
+    quarantined = job._get_quarantined_urls("TESTLAND", fail_threshold=3, quarantine_days=30)
+
+    assert "https://recovered.gov/" not in quarantined
+
+
+def test_quarantine_ignores_circuit_breaker_rows(temp_settings):
+    """Circuit-breaker skip rows are bookkeeping, not real attempts."""
+    job = _make_job(temp_settings)
+    for i in range(3):
+        _insert_lh_row(
+            job, "https://cb.gov/", scan_id=f"c{i}",
+            error="Circuit breaker: 3 consecutive failures on cb.gov",
+            scanned_at=_iso_days_ago(i + 1),
+        )
+
+    quarantined = job._get_quarantined_urls("TESTLAND", fail_threshold=3, quarantine_days=30)
+
+    assert "https://cb.gov/" not in quarantined
+
+
+@pytest.mark.asyncio
+async def test_scan_country_skips_quarantined_urls(temp_settings, sample_toon):
+    """A quarantined URL is dropped before scanning (never handed to Lighthouse)."""
+    job = _make_job(temp_settings)
+    # Quarantine one of the two sample URLs via 3 recent failures.
+    for i in range(3):
+        _insert_lh_row(
+            job, "https://gov.example/about", scan_id=f"q{i}",
+            error="Lighthouse timed out after 60s", scanned_at=_iso_days_ago(i + 1),
+        )
+    job.scanner.scan_urls_batch = AsyncMock(
+        return_value={"https://gov.example/": _make_result("https://gov.example/")}
+    )
+
+    await job.scan_country("TESTLAND", sample_toon)
+
+    scanned_urls = job.scanner.scan_urls_batch.call_args.args[0]
+    assert "https://gov.example/about" not in scanned_urls
+    assert "https://gov.example/" in scanned_urls
+
+
+@pytest.mark.asyncio
+async def test_scan_country_quarantine_disabled(temp_settings, sample_toon):
+    """quarantine_days=0 disables the quarantine (URL still scanned)."""
+    job = _make_job(temp_settings)
+    for i in range(3):
+        _insert_lh_row(
+            job, "https://gov.example/about", scan_id=f"q{i}",
+            error="Lighthouse timed out after 60s", scanned_at=_iso_days_ago(i + 1),
+        )
+    job.scanner.scan_urls_batch = AsyncMock(
+        return_value={
+            "https://gov.example/": _make_result("https://gov.example/"),
+            "https://gov.example/about": _make_result("https://gov.example/about"),
+        }
+    )
+
+    await job.scan_country("TESTLAND", sample_toon, quarantine_days=0)
+
+    scanned_urls = job.scanner.scan_urls_batch.call_args.args[0]
+    assert "https://gov.example/about" in scanned_urls
