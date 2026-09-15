@@ -207,11 +207,11 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 62062
+      "count": 62065
     },
     {
       "domain": "googleapis.com",
-      "count": 51394
+      "count": 51397
     },
     {
       "domain": "sachsen.de",
@@ -223,11 +223,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 35825
+      "count": 35828
     },
     {
       "domain": "youtube.com",
-      "count": 33948
+      "count": 33951
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -239,15 +239,15 @@
     },
     {
       "domain": "twitter.com",
-      "count": 28958
+      "count": 28961
     },
     {
       "domain": "linkedin.com",
-      "count": 25055
+      "count": 25058
     },
     {
       "domain": "googletagmanager.com",
-      "count": 23932
+      "count": 23935
     },
     {
       "domain": "krakow.pl",
@@ -414,5 +414,5 @@
     "stylesheet_dependency": 40365,
     "font_or_preload_dependency": 8382
   },
-  "generated_at": "2026-09-15T11:10:08.941070+00:00"
+  "generated_at": "2026-09-15T16:39:27.523289+00:00"
 }
