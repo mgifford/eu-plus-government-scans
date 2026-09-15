@@ -6,6 +6,7 @@ import json
 import sqlite3
 import time
 from datetime import datetime, timedelta, timezone
+from itertools import groupby
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Set
 from uuid import uuid4
@@ -193,6 +194,75 @@ class LighthouseScannerJob:
         finally:
             conn.close()
 
+    def _get_quarantined_urls(
+        self,
+        country_code: str,
+        fail_threshold: int = 3,
+        quarantine_days: int = 30,
+    ) -> Set[str]:
+        """Return URLs to skip because they keep failing.
+
+        A URL is quarantined when its most recent scan attempts are an
+        unbroken run of at least *fail_threshold* failures AND the newest of
+        those failures is within the last *quarantine_days*.  A dead or
+        unresponsive host (timeout, TLS/exit error, or unreachable pre-check)
+        would otherwise be re-attempted every run and burn budget it can never
+        turn into a successful audit.
+
+        The run resets on any successful scan, so a site that recovers starts
+        being audited again.  Once the newest failure ages past
+        *quarantine_days* the URL is retried once; if it fails again it is
+        re-quarantined, and if it succeeds the run resets.
+
+        Circuit-breaker skip rows are excluded — they are bookkeeping, not real
+        attempts — so an in-run breaker trip does not by itself quarantine a
+        URL across runs.
+
+        Args:
+            country_code: Country to look up.
+            fail_threshold: Consecutive failures (newest-first) required to
+                quarantine.  Must be >= 1.
+            quarantine_days: How long a qualifying URL stays quarantined before
+                one retry is allowed.
+
+        Returns:
+            Set of URL strings to skip this run.
+        """
+        cutoff = (
+            datetime.now(timezone.utc) - timedelta(days=quarantine_days)
+        ).isoformat()
+
+        conn = sqlite3.connect(self.db_path)
+        try:
+            cursor = conn.execute(
+                """
+                SELECT url, error_message, scanned_at
+                FROM url_lighthouse_results
+                WHERE country_code = ?
+                  AND (error_message IS NULL
+                       OR error_message NOT LIKE 'Circuit breaker%')
+                ORDER BY url, scanned_at DESC
+                """,
+                (country_code,),
+            )
+            rows = cursor.fetchall()
+        finally:
+            conn.close()
+
+        quarantined: Set[str] = set()
+        for url, group in groupby(rows, key=lambda r: r[0]):
+            newest_at: str | None = None
+            streak = 0
+            for _url, error_message, scanned_at in group:
+                if newest_at is None:
+                    newest_at = scanned_at
+                if error_message is None:
+                    break  # a successful scan breaks the failure run
+                streak += 1
+            if streak >= fail_threshold and newest_at is not None and newest_at >= cutoff:
+                quarantined.add(url)
+        return quarantined
+
     def _build_scan_stats(
         self,
         scan_id: str,
@@ -334,6 +404,8 @@ class LighthouseScannerJob:
         skip_recently_scanned_days: int = 0,
         concurrency: int = 1,
         max_urls: Optional[int] = None,
+        quarantine_after_failures: int = 3,
+        quarantine_days: int = 30,
     ) -> Dict[str, Any]:
         """
         Run Lighthouse audits for all URLs in a country's TOON file.
@@ -358,6 +430,11 @@ class LighthouseScannerJob:
                 Defaults to 1 (sequential).
             max_urls: Stop after scanning this many URLs for this country.
                 ``None`` means no limit.
+            quarantine_after_failures: Skip URLs whose most recent attempts are
+                an unbroken run of at least this many failures (retrying once
+                after ``quarantine_days``).  0 disables the quarantine.
+            quarantine_days: How long a quarantined URL is skipped before one
+                retry is allowed.  0 disables the quarantine.
 
         Returns:
             Scan statistics dictionary.
@@ -387,14 +464,35 @@ class LighthouseScannerJob:
                     f"within the last {skip_recently_scanned_days} day(s)"
                 )
 
-        urls = [u for u in all_urls if u not in recently_scanned]
+        quarantined: Set[str] = set()
+        if quarantine_after_failures > 0 and quarantine_days > 0:
+            quarantined = self._get_quarantined_urls(
+                country_code,
+                fail_threshold=quarantine_after_failures,
+                quarantine_days=quarantine_days,
+            )
+            # A URL that scanned successfully within the skip window is not a
+            # quarantine candidate; don't double-count it as skipped.
+            quarantined -= recently_scanned
+            if quarantined:
+                print(
+                    f"Skipping {len(quarantined)} URLs quarantined after "
+                    f">= {quarantine_after_failures} consecutive failures "
+                    f"(retried once after {quarantine_days} day(s))"
+                )
+
+        # Quarantined URLs are dropped before scanning, so they consume no
+        # budget and write no new row (which would otherwise keep resetting the
+        # quarantine clock).
+        skipped = recently_scanned | quarantined
+        urls = [u for u in all_urls if u not in skipped]
         if not urls:
-            print(f"All {len(all_urls)} URLs were recently scanned — nothing to do")
+            print(f"All {len(all_urls)} URLs were skipped — nothing to do")
             output_path = (
                 toon_path.parent / f"{toon_path.stem}_lighthouse{toon_path.suffix}"
             )
             return self._build_scan_stats(
-                scan_id, country_code, len(all_urls), len(recently_scanned), output_path
+                scan_id, country_code, len(all_urls), len(skipped), output_path
             )
 
         _start = start_time if start_time is not None else time.monotonic()
@@ -434,7 +532,7 @@ class LighthouseScannerJob:
             )
 
         stats = self._build_scan_stats(
-            scan_id, country_code, len(all_urls), len(recently_scanned),
+            scan_id, country_code, len(all_urls), len(skipped),
             output_path, scan_results,
             stopped_due_to_budget=stopped_due_to_budget,
         )
@@ -443,6 +541,8 @@ class LighthouseScannerJob:
         print(f"  Scanned:          {scanned_count}/{len(urls)}")
         if recently_scanned:
             print(f"  Skipped (recently scanned): {len(recently_scanned)}")
+        if quarantined:
+            print(f"  Skipped (quarantined):      {len(quarantined)}")
         print(f"  Success:          {stats['success_count']}")
         print(f"  Errors:           {stats['error_count']}")
         if stats["avg_accessibility"] is not None:
@@ -462,6 +562,8 @@ class LighthouseScannerJob:
         skip_recently_scanned_days: int = 0,
         concurrency: int = 1,
         max_urls: Optional[int] = None,
+        quarantine_after_failures: int = 3,
+        quarantine_days: int = 30,
     ) -> List[Dict[str, Any]]:
         """
         Run Lighthouse audits for all TOON files in a directory.
@@ -483,6 +585,11 @@ class LighthouseScannerJob:
                 country.  Defaults to 1 (sequential).
             max_urls: Stop after scanning this many URLs in total across all
                 countries.  ``None`` means no limit.
+            quarantine_after_failures: Skip URLs with at least this many
+                consecutive recent failures (retried once after
+                ``quarantine_days``).  0 disables the quarantine.
+            quarantine_days: How long a quarantined URL is skipped before one
+                retry is allowed.  0 disables the quarantine.
 
         Returns:
             List of scan statistics for each country processed.
@@ -531,6 +638,8 @@ class LighthouseScannerJob:
                     skip_recently_scanned_days=skip_recently_scanned_days,
                     concurrency=concurrency,
                     max_urls=urls_remaining,
+                    quarantine_after_failures=quarantine_after_failures,
+                    quarantine_days=quarantine_days,
                 )
                 all_stats.append(stats)
                 if urls_remaining is not None:

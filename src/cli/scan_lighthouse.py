@@ -126,6 +126,26 @@ def main():
         dest="reachability_precheck",
     )
     parser.add_argument(
+        "--quarantine-after-failures",
+        help=(
+            "Skip URLs whose most recent attempts are an unbroken run of at "
+            "least N failures (default: 3).  0 disables the quarantine."
+        ),
+        type=int,
+        default=3,
+        dest="quarantine_after_failures",
+    )
+    parser.add_argument(
+        "--quarantine-days",
+        help=(
+            "How long a quarantined URL is skipped before one retry is allowed "
+            "(default: 30).  0 disables the quarantine."
+        ),
+        type=int,
+        default=30,
+        dest="quarantine_days",
+    )
+    parser.add_argument(
         "--max-urls",
         help=(
             "Stop after scanning this many URLs in total across all countries. "
@@ -185,6 +205,8 @@ def main():
                     skip_recently_scanned_days=args.skip_recently_scanned_days,
                     concurrency=args.concurrency,
                     max_urls=max_urls,
+                    quarantine_after_failures=args.quarantine_after_failures,
+                    quarantine_days=args.quarantine_days,
                 )
             )
 
@@ -229,6 +251,8 @@ def main():
                     skip_recently_scanned_days=args.skip_recently_scanned_days,
                     concurrency=args.concurrency,
                     max_urls=max_urls,
+                    quarantine_after_failures=args.quarantine_after_failures,
+                    quarantine_days=args.quarantine_days,
                 )
             )
 
