@@ -26,6 +26,7 @@ class LighthouseScannerJob:
         only_categories: list[str] | None = None,
         throttling_method: str | None = None,
         lighthouse_timeout_ms: int | None = 45000,
+        enable_reachability_precheck: bool = True,
     ):
         self.settings = settings
         # Hard per-URL wall-clock backstop.  Keep it just above Lighthouse's
@@ -37,12 +38,17 @@ class LighthouseScannerJob:
             wrapper_timeout = lighthouse_timeout_ms // 1000 + 30
         else:
             wrapper_timeout = settings.crawl_timeout_seconds * 6  # Lighthouse is slow
+        # Enable the reachability pre-check in production: many government
+        # hosts (down, bad cert, or hanging) would otherwise burn a full
+        # Lighthouse slot only to fail.  Keep the pre-check timeout well under
+        # the wrapper timeout.
         self.scanner = LighthouseScanner(
             timeout_seconds=wrapper_timeout,
             lighthouse_path=lighthouse_path,
             only_categories=only_categories,
             throttling_method=throttling_method,
             lighthouse_timeout_ms=lighthouse_timeout_ms,
+            enable_reachability_precheck=enable_reachability_precheck,
         )
         self.db_path = initialize_schema(settings.metadata_db_url)
 

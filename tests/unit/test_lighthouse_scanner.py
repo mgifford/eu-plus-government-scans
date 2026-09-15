@@ -5,7 +5,7 @@ from __future__ import annotations
 import asyncio
 import json
 import subprocess
-from unittest.mock import patch
+from unittest.mock import AsyncMock, patch
 
 import pytest
 
@@ -14,6 +14,7 @@ from src.services.lighthouse_scanner import (
     LighthouseScanner,
     _host_from_url,
     _parse_lighthouse_output,
+    _registrable_domain_from_url,
 )
 
 
@@ -546,3 +547,108 @@ async def test_circuit_breaker_disabled_at_zero():
         if r.error_message and "Circuit breaker" in r.error_message
     ]
     assert len(cb_results) == 0
+
+
+# ---------------------------------------------------------------------------
+# _registrable_domain_from_url
+# ---------------------------------------------------------------------------
+
+
+def test_registrable_domain_collapses_subdomains():
+    """Sibling subdomains should share one registrable-domain key."""
+    assert _registrable_domain_from_url("https://abuja.mae.ro/") == "mae.ro"
+    assert _registrable_domain_from_url("https://addisabeba.mae.ro/x") == "mae.ro"
+
+
+def test_registrable_domain_fallback_on_invalid():
+    """A non-URL should fall back to the hostname helper without raising."""
+    assert _registrable_domain_from_url("not-a-url") == _host_from_url("not-a-url")
+
+
+@pytest.mark.asyncio
+async def test_circuit_breaker_trips_across_sibling_subdomains():
+    """The breaker keys on registrable domain, so failing *.mae.ro siblings
+    (each a distinct hostname) trip it together — the case a per-hostname key
+    would miss."""
+    scanner = LighthouseScanner(max_retries=0)
+    urls = [
+        "https://abuja.mae.ro/",
+        "https://alger.mae.ro/",
+        "https://amman.mae.ro/",
+        "https://ankara.mae.ro/",   # circuit-broken (4th, after 3 failures)
+        "https://atena.mae.ro/",    # circuit-broken
+    ]
+
+    with patch.object(
+        scanner,
+        "_run_lighthouse",
+        side_effect=subprocess.TimeoutExpired(cmd=["lighthouse"], timeout=30),
+    ):
+        results = await scanner.scan_urls_batch(
+            urls,
+            rate_limit_per_second=0,
+            circuit_breaker_threshold=3,
+        )
+
+    assert len(results) == 5
+    cb_results = [
+        r for r in results.values()
+        if r.error_message and "Circuit breaker" in r.error_message
+    ]
+    assert len(cb_results) == 2
+    assert all("mae.ro" in r.error_message for r in cb_results)
+
+
+# ---------------------------------------------------------------------------
+# Reachability pre-check
+# ---------------------------------------------------------------------------
+
+
+@pytest.mark.asyncio
+async def test_precheck_skips_unreachable_without_launching_lighthouse():
+    """When the pre-check reports a host unreachable, Lighthouse is not run."""
+    scanner = LighthouseScanner(max_retries=0, enable_reachability_precheck=True)
+
+    def _fail_if_called(url: str) -> str:
+        raise AssertionError("Lighthouse must not run for an unreachable host")
+
+    with patch.object(
+        scanner, "_is_reachable", AsyncMock(return_value=(False, "ConnectError: refused"))
+    ), patch.object(scanner, "_run_lighthouse", side_effect=_fail_if_called):
+        result = await scanner.scan_url("https://down.gov/")
+
+    assert result.performance_score is None
+    assert result.error_message is not None
+    assert "Unreachable" in result.error_message
+    assert "refused" in result.error_message
+
+
+@pytest.mark.asyncio
+async def test_precheck_runs_lighthouse_when_reachable():
+    """A reachable host proceeds to a normal Lighthouse run."""
+    scanner = LighthouseScanner(max_retries=0, enable_reachability_precheck=True)
+    raw = _make_lighthouse_json(performance=0.9)
+
+    with patch.object(
+        scanner, "_is_reachable", AsyncMock(return_value=(True, None))
+    ), patch.object(scanner, "_run_lighthouse", return_value=raw):
+        result = await scanner.scan_url("https://up.gov/")
+
+    assert result.error_message is None
+    assert result.performance_score == pytest.approx(0.9)
+
+
+@pytest.mark.asyncio
+async def test_precheck_disabled_by_default_does_not_call_reachability():
+    """With the pre-check off (default), _is_reachable is never consulted."""
+    scanner = LighthouseScanner(max_retries=0)
+    raw = _make_lighthouse_json()
+    reachable_mock = AsyncMock(return_value=(True, None))
+
+    with patch.object(scanner, "_is_reachable", reachable_mock), patch.object(
+        scanner, "_run_lighthouse", return_value=raw
+    ):
+        result = await scanner.scan_url("https://up.gov/")
+
+    reachable_mock.assert_not_called()
+    assert result.error_message is None
