@@ -46,6 +46,26 @@ def _host_from_url(url: str) -> str:
         return url
 
 
+def _registrable_domain_from_url(url: str) -> str:
+    """Registrable domain of a URL's host (e.g. ``mae.ro`` for
+    ``abuja.mae.ro``), used as the circuit-breaker key.
+
+    Keying the breaker on the registrable domain rather than the full
+    hostname lets a cluster of failing sibling subdomains (e.g. dozens of
+    ``*.mae.ro`` embassy sites) trip the breaker together, instead of each
+    distinct hostname resetting the streak.  Falls back to the raw hostname
+    for hosts entirely under a multi-label public suffix (tldextract's
+    ``registered_domain`` is empty for those).
+    """
+    try:
+        from tldextract import extract as tld_extract
+
+        hostname = urlparse(url).hostname or url
+        return tld_extract(url).registered_domain or hostname
+    except Exception:
+        return _host_from_url(url)
+
+
 def _parse_lighthouse_output(raw_json: str) -> Dict[str, float | None]:
     """Parse the Lighthouse JSON output and return category scores.
 
@@ -131,6 +151,8 @@ class LighthouseScanner:
         lighthouse_timeout_ms: int | None = 45000,
         max_retries: int = 2,
         retry_backoff_seconds: float = 2.0,
+        enable_reachability_precheck: bool = False,
+        reachability_timeout_seconds: float = 10.0,
     ):
         """
         Args:
@@ -166,8 +188,22 @@ class LighthouseScanner:
             retry_backoff_seconds: Base back-off duration in seconds between
                 retry attempts.  Actual delay is
                 ``min(2**(attempt-1) * retry_backoff_seconds, 30)``.
+            enable_reachability_precheck: When True, a cheap async HTTP request
+                is made before launching Chrome/Lighthouse.  Hosts that give no
+                HTTP response at all (DNS failure, connection refused, TLS
+                error, connect/read timeout) are skipped without paying the
+                full Lighthouse wall-clock cost.  Any HTTP response — including
+                4xx/5xx — counts as reachable so bot-protected or error pages
+                are still audited.  Defaults to False (pure Lighthouse
+                behaviour); the scanner job enables it in production.
+            reachability_timeout_seconds: Per-request timeout for the
+                reachability pre-check.  Kept well below ``timeout_seconds`` so
+                a dead host is skipped in seconds instead of tying up a
+                Lighthouse slot for the full budget.
         """
         self.timeout_seconds = timeout_seconds
+        self.enable_reachability_precheck = enable_reachability_precheck
+        self.reachability_timeout_seconds = reachability_timeout_seconds
         self.lighthouse_path = lighthouse_path
         self.chrome_flags = chrome_flags if chrome_flags is not None else self._DEFAULT_CHROME_FLAGS
         self.max_retries = max_retries
@@ -235,6 +271,43 @@ class LighthouseScanner:
             )
         return result.stdout
 
+    async def _is_reachable(self, url: str) -> tuple[bool, str | None]:
+        """Cheap pre-flight check: does *url* return any HTTP response?
+
+        Launching Chrome + Lighthouse for a host that is down, has an invalid
+        certificate, or never completes the TCP/TLS handshake wastes the full
+        wall-clock budget on a guaranteed failure.  A lightweight HEAD request
+        with a short timeout weeds those out for a fraction of the cost.
+
+        Any HTTP status — including 4xx/5xx — counts as reachable, so pages
+        behind bot protection or returning server errors are still handed to
+        Lighthouse.  Only a transport-level failure (DNS, connection refused,
+        TLS error, connect/read timeout) marks the host unreachable.
+
+        Returns:
+            ``(True, None)`` when an HTTP response was received, else
+            ``(False, reason)`` describing the transport failure.
+        """
+        import httpx
+
+        try:
+            async with httpx.AsyncClient(
+                timeout=self.reachability_timeout_seconds,
+                follow_redirects=True,
+            ) as client:
+                await client.head(url)
+            # head() returns a response for any status (incl. 4xx/5xx) without
+            # raising, so reaching here means the server responded.
+            return True, None
+        except httpx.TransportError as exc:
+            reason = type(exc).__name__
+            detail = str(exc).strip()
+            return False, f"{reason}: {detail}" if detail else reason
+        except Exception as exc:  # noqa: BLE001 — never let the pre-check crash a scan
+            # An unexpected pre-check error should not skip a potentially good
+            # URL; fall through to Lighthouse, which has its own error handling.
+            return True, f"precheck-skipped ({type(exc).__name__})"
+
     # ------------------------------------------------------------------
     # Public API
     # ------------------------------------------------------------------
@@ -255,6 +328,17 @@ class LighthouseScanner:
         """
         scanned_at = datetime.now(timezone.utc).isoformat()
         last_error: str | None = None
+
+        # Skip hosts that give no HTTP response before paying the Lighthouse
+        # (Chrome launch + audit) cost.  Disabled by default; the job enables it.
+        if self.enable_reachability_precheck:
+            reachable, reason = await self._is_reachable(url)
+            if not reachable:
+                return LighthouseScanResult(
+                    url=url,
+                    error_message=f"Unreachable (skipped before Lighthouse): {reason}",
+                    scanned_at=scanned_at,
+                )
 
         for attempt in range(self.max_retries + 1):
             if attempt > 0:
@@ -342,9 +426,10 @@ class LighthouseScanner:
         Lighthouse processes to run simultaneously, which can significantly
         improve throughput when the bottleneck is network I/O rather than CPU.
 
-        A per-host **circuit breaker** skips further URLs for any hostname
-        that accumulates *circuit_breaker_threshold* consecutive failures,
-        preventing a single unresponsive domain from exhausting the run budget.
+        A per-domain **circuit breaker** skips further URLs for any
+        registrable domain that accumulates *circuit_breaker_threshold*
+        consecutive failures, preventing a single unresponsive domain (across
+        all its subdomains) from exhausting the run budget.
 
         After the submission loop, in-flight tasks are drained with a
         deadline equal to ``timeout_seconds + 30`` seconds so that the
@@ -369,8 +454,11 @@ class LighthouseScanner:
                 parallel.  Defaults to 1 (sequential).  Values > 1 increase
                 throughput but consume more CPU and memory.
             circuit_breaker_threshold: Number of consecutive failures on a
-                single hostname before further URLs from that host are skipped.
-                Defaults to 3.  Set to 0 to disable the circuit breaker.
+                single registrable domain before further URLs from that domain
+                are skipped.  Keyed on the registrable domain (e.g. ``mae.ro``)
+                rather than the full hostname so a cluster of failing sibling
+                subdomains trips the breaker together.  Defaults to 3.  Set to
+                0 to disable the circuit breaker.
             max_urls: Stop submitting new URLs after this many have been
                 submitted (across this batch).  Circuit-breaker-skipped URLs
                 do not count toward the limit.  ``None`` means no limit.
@@ -391,26 +479,28 @@ class LighthouseScanner:
         semaphore = asyncio.Semaphore(max_concurrency)
 
         total = len(urls)
-        # Per-host consecutive failure counts for the circuit breaker.
-        host_failure_counts: dict[str, int] = {}
+        # Per-registrable-domain consecutive failure counts for the circuit
+        # breaker (keyed on e.g. mae.ro, not abuja.mae.ro, so sibling
+        # subdomains share a streak).
+        domain_failure_counts: dict[str, int] = {}
         _heartbeat_every = 10  # emit a progress line every N completed scans
         _completed_count = 0
 
         async def _scan_one_url(idx: int, url: str) -> None:
             nonlocal _completed_count
-            host = _host_from_url(url)
+            domain = _registrable_domain_from_url(url)
 
             # Circuit breaker: skip without consuming a concurrency slot.
-            if circuit_breaker_threshold > 0 and host_failure_counts.get(host, 0) >= circuit_breaker_threshold:
-                streak = host_failure_counts[host]
+            if circuit_breaker_threshold > 0 and domain_failure_counts.get(domain, 0) >= circuit_breaker_threshold:
+                streak = domain_failure_counts[domain]
                 print(
                     f"  [{idx}/{total}] ⚡ Circuit breaker: "
-                    f"skipping {url} ({streak} consecutive failures on {host})"
+                    f"skipping {url} ({streak} consecutive failures on {domain})"
                 )
                 skip_result = LighthouseScanResult(
                     url=url,
                     error_message=(
-                        f"Circuit breaker: {streak} consecutive failures on {host}"
+                        f"Circuit breaker: {streak} consecutive failures on {domain}"
                     ),
                     scanned_at=datetime.now(timezone.utc).isoformat(),
                 )
@@ -430,10 +520,10 @@ class LighthouseScanner:
 
                 # Update circuit breaker state.
                 if result.error_message:
-                    host_failure_counts[host] = host_failure_counts.get(host, 0) + 1
+                    domain_failure_counts[domain] = domain_failure_counts.get(domain, 0) + 1
                     print(f"      ✗ {result.error_message}")
                 else:
-                    host_failure_counts[host] = 0  # reset streak on success
+                    domain_failure_counts[domain] = 0  # reset streak on success
                     perf = (
                         f"{result.performance_score * 100:.0f}"
                         if result.performance_score is not None
