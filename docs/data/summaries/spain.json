@@ -219,19 +219,19 @@
     },
     {
       "domain": "facebook.com",
-      "count": 2809
+      "count": 2812
     },
     {
       "domain": "twitter.com",
-      "count": 2588
+      "count": 2591
     },
     {
       "domain": "youtube.com",
-      "count": 2326
+      "count": 2329
     },
     {
       "domain": "googleapis.com",
-      "count": 2278
+      "count": 2281
     },
     {
       "domain": "google.com",
@@ -243,7 +243,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 2016
+      "count": 2019
     },
     {
       "domain": "navarra.es",
@@ -267,7 +267,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 1011
+      "count": 1014
     },
     {
       "domain": "juntaex.es",
@@ -275,7 +275,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 941
+      "count": 944
     },
     {
       "domain": "educativa.com",
@@ -327,7 +327,7 @@
     },
     {
       "domain": "flickr.com",
-      "count": 507
+      "count": 510
     },
     {
       "domain": "boe.es",
@@ -363,7 +363,7 @@
     },
     {
       "domain": "sede.gob.es",
-      "count": 353
+      "count": 359
     },
     {
       "domain": "administracion.gob.es",
@@ -414,5 +414,5 @@
     "form_destination": 1452,
     "font_or_preload_dependency": 156
   },
-  "generated_at": "2026-09-15T11:10:10.084279+00:00"
+  "generated_at": "2026-09-15T16:39:28.598634+00:00"
 }
