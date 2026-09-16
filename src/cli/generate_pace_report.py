@@ -30,6 +30,7 @@ _STATUS_LABELS = {
     "marginal": "🟡 Marginal",
     "behind": "🔴 Behind",
     "no_data": "⚪ No data",
+    "caught_up": "🟢 Caught up",
 }
 
 
@@ -39,18 +40,26 @@ def _format_days(value: float | None) -> str:
     return f"{value:,.1f}"
 
 
+def _format_coverage(status: PaceStatus) -> str:
+    """Render all-time corpus coverage as ``NN.N% (count)``."""
+    if status.coverage_ratio is None:
+        return "—"
+    return f"{status.coverage_ratio * 100:.1f}% ({status.covered_urls:,})"
+
+
 def render_markdown_table(statuses: list[PaceStatus]) -> str:
     """Just the table rows (header + data), no title or footnote -- meant to
     be composed with other invocations covering different scanners/DBs, e.g.
     when Lighthouse's metadata lives in a separate artifact from every other
     scanner's shared validation-metadata DB."""
     lines = [
-        "| Scanner | Target cycle | Eligible URLs | Covered (window) | Daily throughput | Projected cycle | Status |",
-        "|---|---|---|---|---|---|---|",
+        "| Scanner | Target cycle | Eligible URLs | Corpus covered | Covered (window) | Daily throughput | Projected cycle | Status |",
+        "|---|---|---|---|---|---|---|---|",
     ]
     for s in statuses:
         lines.append(
             f"| {s.scanner} | {s.target_cycle_days}d | {s.eligible_urls:,} | "
+            f"{_format_coverage(s)} | "
             f"{s.urls_scanned_in_window:,} (last {s.window_days}d) | "
             f"{s.effective_daily_throughput:,.1f}/day | "
             f"{_format_days(s.projected_cycle_days)}d | "
@@ -71,6 +80,9 @@ def render_markdown(statuses: list[PaceStatus]) -> str:
         f"daily throughput`. The {window}-day measurement window reflects recent scan "
         f"velocity and is independent of each scanner's own target cycle length -- see "
         f"src/services/cycle_pace_tracker.py's module docstring for why. "
+        f"'Corpus covered' is the all-time share of eligible URLs scanned at least once; "
+        f"a scanner at or above 98% reads '🟢 Caught up' because low recent velocity then "
+        f"just means little is left to scan (only refreshes and unreachable hosts remain). "
         f"'No data' means the scanner has no rows in this metadata.db within its window "
         f"(never run against this database, or the database doesn't cover this scanner)._",
     ]
@@ -82,14 +94,20 @@ def render_console(statuses: list[PaceStatus]) -> str:
     name_width = max(len(s.scanner) for s in statuses) if statuses else 8
     header = (
         f"{'SCANNER':<{name_width}}  {'TARGET':>8}  {'ELIGIBLE':>10}  "
-        f"{'SCANNED':>10}  {'DAILY':>10}  {'PROJECTED':>11}  STATUS"
+        f"{'COVERED%':>9}  {'SCANNED':>10}  {'DAILY':>10}  {'PROJECTED':>11}  STATUS"
     )
     lines.append(header)
     lines.append("-" * len(header))
     for s in statuses:
+        coverage_pct = (
+            f"{s.coverage_ratio * 100:.1f}%"
+            if s.coverage_ratio is not None
+            else "—"
+        )
         lines.append(
             f"{s.scanner:<{name_width}}  {s.target_cycle_days:>6}d  "
-            f"{s.eligible_urls:>10,}  {s.urls_scanned_in_window:>10,}  "
+            f"{s.eligible_urls:>10,}  {coverage_pct:>9}  "
+            f"{s.urls_scanned_in_window:>10,}  "
             f"{s.effective_daily_throughput:>10,.1f}  "
             f"{_format_days(s.projected_cycle_days):>10}d  "
             f"{_STATUS_LABELS.get(s.status, s.status)}"
