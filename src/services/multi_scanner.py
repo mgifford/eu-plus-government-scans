@@ -118,6 +118,8 @@ class MultiScanner:
         run_tech: bool = True,
         run_third_party_js: bool = True,
         run_relationships: bool = True,
+        enable_reachability_precheck: bool = False,
+        reachability_timeout_seconds: float = 8.0,
     ):
         self.timeout_seconds = timeout_seconds
         self.max_redirects = max_redirects
@@ -127,6 +129,13 @@ class MultiScanner:
         self.run_tech = run_tech
         self.run_third_party_js = run_third_party_js
         self.run_relationships = run_relationships
+        # Opt-in fast HEAD pre-check that skips hosts giving no response before
+        # paying the full page-fetch timeout. Its timeout is kept well under
+        # timeout_seconds so an unreachable host is dropped in a few seconds
+        # instead of tying up the full fetch budget (the *.mae.ro / *.insse.ro
+        # embassy clusters otherwise time out at the full budget every run).
+        self.enable_reachability_precheck = enable_reachability_precheck
+        self.reachability_timeout_seconds = reachability_timeout_seconds
 
         self._accessibility = AccessibilityScanner(
             timeout_seconds=timeout_seconds,
@@ -150,6 +159,37 @@ class MultiScanner:
         )
         self._relationships = RelationshipScanner()
 
+    async def _is_reachable(self, url: str) -> tuple[bool, str | None]:
+        """Cheap pre-flight check: does *url* return any HTTP response?
+
+        A HEAD request with a short timeout weeds out hosts that are down, have
+        an invalid certificate, or never complete the TCP/TLS handshake, so the
+        full page fetch is not spent on a guaranteed failure. Any HTTP status
+        counts as reachable (the server responded); only a transport-level
+        failure marks the host unreachable.
+
+        Returns ``(True, None)`` when an HTTP response was received, else
+        ``(False, reason)`` describing the transport failure.
+        """
+        try:
+            async with httpx.AsyncClient(
+                follow_redirects=True,
+                max_redirects=self.max_redirects,
+                timeout=self.reachability_timeout_seconds,
+            ) as client:
+                await client.head(url, headers={"User-Agent": self.user_agent})
+            # head() returns a response for any status without raising, so
+            # reaching here means the server responded.
+            return True, None
+        except httpx.TransportError as exc:
+            reason = type(exc).__name__
+            detail = str(exc).strip()
+            return False, f"{reason}: {detail}" if detail else reason
+        except Exception as exc:  # noqa: BLE001 — never let the pre-check crash a scan
+            # An unexpected pre-check error should not skip a potentially good
+            # URL; fall through to the full fetch, which has its own handling.
+            return True, f"precheck-skipped ({type(exc).__name__})"
+
     async def scan_url(self, url: str) -> MultiScanResult:
         """Fetch *url* once and run all enabled analyses against the response.
 
@@ -165,6 +205,22 @@ class MultiScanner:
             scanner.
         """
         scanned_at = datetime.now(timezone.utc).isoformat()
+
+        # --- Optional reachability pre-check -----------------------------------
+        # Skip hosts that give no HTTP response at all before paying the full
+        # page-fetch timeout. Any HTTP status (incl. 4xx/5xx) counts as
+        # reachable so error/bot-protected pages are still fetched; only a
+        # transport-level failure (DNS, refused, TLS, connect/read timeout)
+        # short-circuits here.
+        if self.enable_reachability_precheck:
+            reachable, reason = await self._is_reachable(url)
+            if not reachable:
+                return MultiScanResult(
+                    url=url,
+                    is_reachable=False,
+                    error_message=f"Unreachable (skipped before fetch): {reason}",
+                    scanned_at=scanned_at,
+                )
 
         # --- Fetch the page once -----------------------------------------------
         try:

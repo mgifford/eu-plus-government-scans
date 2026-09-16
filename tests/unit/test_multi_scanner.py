@@ -499,3 +499,76 @@ async def test_third_party_js_scan_url_still_works():
 
     assert result.is_reachable is True
     assert result.third_party_count >= 1
+
+
+# ---------------------------------------------------------------------------
+# Reachability pre-check
+# ---------------------------------------------------------------------------
+
+
+@pytest.mark.asyncio
+async def test_reachability_precheck_disabled_by_default():
+    """With the pre-check off (default), _is_reachable is never consulted."""
+    scanner = MultiScanner()
+    reach = AsyncMock(return_value=(True, None))
+    with patch.object(scanner, "_is_reachable", reach), patch("httpx.AsyncClient") as mock_client:
+        mock_client.return_value.__aenter__.return_value.get = AsyncMock(
+            return_value=_make_mock_response("https://ok.gov/")
+        )
+        result = await scanner.scan_url("https://ok.gov/")
+    reach.assert_not_called()
+    assert result.is_reachable is True
+
+
+@pytest.mark.asyncio
+async def test_reachability_precheck_skips_unreachable_without_fetch():
+    """An unreachable host is dropped before the full page fetch runs."""
+    scanner = MultiScanner(enable_reachability_precheck=True)
+    get_mock = AsyncMock(side_effect=AssertionError("full fetch must not run"))
+    with patch.object(
+        scanner, "_is_reachable", AsyncMock(return_value=(False, "ConnectTimeout: timed out"))
+    ), patch("httpx.AsyncClient") as mock_client:
+        mock_client.return_value.__aenter__.return_value.get = get_mock
+        result = await scanner.scan_url("https://dead.gov/")
+    assert result.is_reachable is False
+    assert "Unreachable" in result.error_message
+    assert "ConnectTimeout" in result.error_message
+    get_mock.assert_not_called()
+
+
+@pytest.mark.asyncio
+async def test_reachability_precheck_proceeds_when_reachable():
+    """A reachable host proceeds to the normal fetch."""
+    scanner = MultiScanner(enable_reachability_precheck=True)
+    with patch.object(
+        scanner, "_is_reachable", AsyncMock(return_value=(True, None))
+    ), patch("httpx.AsyncClient") as mock_client:
+        mock_client.return_value.__aenter__.return_value.get = AsyncMock(
+            return_value=_make_mock_response("https://ok.gov/")
+        )
+        result = await scanner.scan_url("https://ok.gov/")
+    assert result.is_reachable is True
+
+
+@pytest.mark.asyncio
+async def test_is_reachable_true_on_any_response():
+    scanner = MultiScanner()
+    with patch("httpx.AsyncClient") as mock_client:
+        mock_client.return_value.__aenter__.return_value.head = AsyncMock(
+            return_value=_make_mock_response("https://ok.gov/")
+        )
+        ok, reason = await scanner._is_reachable("https://ok.gov/")
+    assert ok is True
+    assert reason is None
+
+
+@pytest.mark.asyncio
+async def test_is_reachable_false_on_transport_error():
+    scanner = MultiScanner()
+    with patch("httpx.AsyncClient") as mock_client:
+        mock_client.return_value.__aenter__.return_value.head = AsyncMock(
+            side_effect=httpx.ConnectTimeout("connect timed out")
+        )
+        ok, reason = await scanner._is_reachable("https://dead.gov/")
+    assert ok is False
+    assert "ConnectTimeout" in reason
