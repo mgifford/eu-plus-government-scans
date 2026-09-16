@@ -199,6 +199,10 @@ class RelationshipScannerJob:
             run_tech=False,
             run_third_party_js=False,
             run_relationships=True,
+            # Skip dead hosts (e.g. the *.mae.ro / *.insse.ro embassy clusters
+            # that time out every run) with a fast HEAD before the full fetch,
+            # so the run budget is not spent re-timing-out on them.
+            enable_reachability_precheck=True,
         )
         self.db_path = initialize_schema(settings.metadata_db_url)
 
