@@ -51,13 +51,15 @@ def toon_dir(tmp_path: Path) -> Path:
     return d
 
 
-def _insert_tech_results(db_path: Path, urls: list[str], scanned_at: datetime, country="ALPHA"):
+def _insert_tech_results(
+    db_path: Path, urls: list[str], scanned_at: datetime, country="ALPHA", scan_prefix="scan"
+):
     conn = sqlite3.connect(db_path)
     for i, url in enumerate(urls):
         conn.execute(
             "INSERT INTO url_tech_results (url, country_code, scan_id, technologies, scanned_at) "
             "VALUES (?, ?, ?, '{}', ?)",
-            (url, country, f"scan-{i}", scanned_at.isoformat()),
+            (url, country, f"{scan_prefix}-{i}", scanned_at.isoformat()),
         )
     conn.commit()
     conn.close()
@@ -316,3 +318,71 @@ def test_pace_ratio_none_when_no_data():
         status="no_data",
     )
     assert s.pace_ratio is None
+
+
+# ---------------------------------------------------------------------------
+# Corpus coverage and the "caught up" status
+# ---------------------------------------------------------------------------
+
+
+def _tech_config():
+    return (ScannerConfig("technology", "url_tech_results", 30),)
+
+
+def test_coverage_ratio_reflects_all_time_distinct_urls(db_path: Path, toon_dir: Path):
+    """coverage_ratio = distinct URLs ever scanned / eligible corpus."""
+    now = datetime(2026, 7, 20, tzinfo=timezone.utc)
+    # 50 of the 100-URL corpus scanned (10 days ago, i.e. outside the window).
+    urls = [f"https://a.gov/{i}" for i in range(50)]
+    _insert_tech_results(db_path, urls, now - timedelta(days=10))
+
+    s = compute_pace_status(db_path, toon_dir, configs=_tech_config(), now=now)[0]
+
+    assert s.covered_urls == 50
+    assert s.coverage_ratio == pytest.approx(0.5)
+
+
+def test_caught_up_overrides_no_data_when_corpus_covered(db_path: Path, toon_dir: Path):
+    """A fully-covered corpus with zero recent scans reads 'caught_up', not 'no_data'."""
+    now = datetime(2026, 7, 20, tzinfo=timezone.utc)
+    all_urls = [f"https://a.gov/{i}" for i in range(60)] + [f"https://b.gov/{i}" for i in range(40)]
+    # All scanned 40 days ago -> nothing in the 7-day window.
+    _insert_tech_results(db_path, all_urls, now - timedelta(days=40))
+
+    s = compute_pace_status(db_path, toon_dir, configs=_tech_config(), now=now)[0]
+
+    assert s.urls_scanned_in_window == 0
+    assert s.coverage_ratio == pytest.approx(1.0)
+    assert s.status == "caught_up"
+
+
+def test_caught_up_overrides_behind_when_corpus_covered(db_path: Path, toon_dir: Path):
+    """A fully-covered corpus crawling through a dead residual reads 'caught_up'."""
+    now = datetime(2026, 7, 20, tzinfo=timezone.utc)
+    all_urls = [f"https://a.gov/{i}" for i in range(60)] + [f"https://b.gov/{i}" for i in range(40)]
+    _insert_tech_results(db_path, all_urls, now - timedelta(days=40))
+    # Only 3 refreshed in-window -> tiny throughput -> projected far over target.
+    _insert_tech_results(
+        db_path, all_urls[:3], now - timedelta(days=1), country="REFRESH", scan_prefix="refresh"
+    )
+
+    s = compute_pace_status(db_path, toon_dir, configs=_tech_config(), now=now)[0]
+
+    assert s.urls_scanned_in_window == 3
+    assert s.projected_cycle_days is not None and s.projected_cycle_days > 30
+    assert s.coverage_ratio == pytest.approx(1.0)
+    assert s.status == "caught_up"  # would be "behind" without the override
+
+
+def test_partial_coverage_stays_behind(db_path: Path, toon_dir: Path):
+    """Below the coverage threshold, a slow scanner still reads 'behind'."""
+    now = datetime(2026, 7, 20, tzinfo=timezone.utc)
+    # Only 20 of 100 covered, 3 in-window -> low throughput, not caught up.
+    urls = [f"https://a.gov/{i}" for i in range(20)]
+    _insert_tech_results(db_path, urls[:17], now - timedelta(days=40))
+    _insert_tech_results(db_path, urls[17:], now - timedelta(days=1), country="REFRESH")
+
+    s = compute_pace_status(db_path, toon_dir, configs=_tech_config(), now=now)[0]
+
+    assert s.coverage_ratio == pytest.approx(0.2)
+    assert s.status == "behind"

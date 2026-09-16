@@ -7,8 +7,13 @@ import sqlite3
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from src.cli.generate_pace_report import main, render_console, render_markdown
-from src.services.cycle_pace_tracker import ScannerConfig, compute_pace_status
+from src.cli.generate_pace_report import (
+    main,
+    render_console,
+    render_markdown,
+    render_markdown_table,
+)
+from src.services.cycle_pace_tracker import PaceStatus, ScannerConfig, compute_pace_status
 from src.storage.schema import SCHEMA_SQL
 
 
@@ -129,3 +134,32 @@ def test_render_console_produces_aligned_output(tmp_path: Path):
     out = render_console(statuses)
     assert "SCANNER" in out
     assert "technology" in out
+
+
+def _caught_up_status() -> PaceStatus:
+    return PaceStatus(
+        scanner="accessibility",
+        target_cycle_days=30,
+        eligible_urls=87696,
+        urls_scanned_in_window=0,
+        window_days=7,
+        effective_daily_throughput=0.0,
+        projected_cycle_days=None,
+        status="caught_up",
+        covered_urls=87412,
+        coverage_ratio=0.99676,
+    )
+
+
+def test_markdown_table_has_corpus_covered_column_and_caught_up_label():
+    table = render_markdown_table([_caught_up_status()])
+    assert "Corpus covered" in table  # new column header
+    assert "99.7% (87,412)" in table  # coverage cell
+    assert "🟢 Caught up" in table  # caught_up status label
+
+
+def test_console_shows_coverage_percent():
+    out = render_console([_caught_up_status()])
+    assert "COVERED%" in out
+    assert "99.7%" in out
+    assert "Caught up" in out

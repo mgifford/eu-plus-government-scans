@@ -107,6 +107,10 @@ class PaceStatus:
     effective_daily_throughput: float
     projected_cycle_days: float | None
     status: str
+    # All-time distinct-URL coverage: how much of the eligible corpus this
+    # scanner has covered at least once (independent of the recent window).
+    covered_urls: int = 0
+    coverage_ratio: float | None = None
 
     @property
     def pace_ratio(self) -> float | None:
@@ -230,6 +234,44 @@ def _count_urls_scanned_since(
         return 0
 
 
+def _count_urls_covered(
+    conn: sqlite3.Connection,
+    table: str,
+    timestamp_column: str,
+) -> int:
+    """Return distinct URLs ever covered (all-time), ignoring the window.
+
+    Uses the same table/timestamp column as the window count, so a URL counts
+    as covered once it has any non-null timestamp (a successful scan for
+    relationships, any scan for the others). Lets the report distinguish a
+    scanner that has finished its corpus and is idling from one that has never
+    run.
+    """
+    try:
+        cursor = conn.execute(
+            f"""
+            SELECT COUNT(DISTINCT url)
+            FROM {table}
+            WHERE {timestamp_column} IS NOT NULL
+            """,  # noqa: S608
+        )
+        row = cursor.fetchone()
+        return row[0] if row else 0
+    except sqlite3.OperationalError:
+        return 0
+
+
+COMPLETE_COVERAGE_RATIO = 0.98
+"""All-time coverage at or above which a scanner is reported as "caught up".
+
+A scanner that has scanned virtually its whole corpus legitimately has low
+recent throughput (only refreshes and a residual of unreachable hosts remain),
+so a velocity-only status would misreport it as "behind" or "no data". Once
+coverage reaches this fraction the status becomes ``caught_up`` regardless of
+recent velocity, while the projected cycle is still shown for transparency.
+"""
+
+
 DEFAULT_MEASUREMENT_WINDOW_DAYS = 7
 """How far back to look when measuring current scanner throughput.
 
@@ -309,8 +351,20 @@ def compute_pace_status(
                         cutoff_iso,
                     )
                 )
+                covered = _count_urls_covered(
+                    conn,
+                    config.result_table,
+                    config.timestamp_column,
+                )
             else:
                 scanned = 0
+                covered = 0
+
+            coverage_ratio = (
+                min(covered / eligible, 1.0)
+                if eligible > 0
+                else None
+            )
 
             effective_daily = (
                 scanned
@@ -333,6 +387,22 @@ def compute_pace_status(
                     / effective_daily
                 )
 
+            status = _classify(
+                projected_days,
+                config.target_cycle_days,
+            )
+            # A near-fully-covered corpus reads as "caught up" rather than
+            # "behind"/"no data": low recent velocity is expected once there is
+            # little left to scan. Only the misleading (slow-looking) statuses
+            # are relabeled — a scanner still showing healthy velocity
+            # (ahead/on_pace/marginal) keeps that status.
+            if (
+                coverage_ratio is not None
+                and coverage_ratio >= COMPLETE_COVERAGE_RATIO
+                and status in ("behind", "no_data")
+            ):
+                status = "caught_up"
+
             results.append(
                 PaceStatus(
                     scanner=config.name,
@@ -352,10 +422,9 @@ def compute_pace_status(
                     projected_cycle_days=(
                         projected_days
                     ),
-                    status=_classify(
-                        projected_days,
-                        config.target_cycle_days,
-                    ),
+                    status=status,
+                    covered_urls=covered,
+                    coverage_ratio=coverage_ratio,
                 )
             )
 
