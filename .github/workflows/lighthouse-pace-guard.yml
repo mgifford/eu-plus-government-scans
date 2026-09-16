@@ -67,15 +67,37 @@ jobs:
             print(f"::error::{pace_report_path} not found — cannot evaluate Lighthouse pace.")
             sys.exit(1)
 
+          def _cells(row):
+            return [part.strip() for part in row.strip().strip("|").split("|")]
+
+          # Locate the "Projected cycle" column from the header row instead of a
+          # fixed index, so adding/reordering table columns can't silently make
+          # this guard read the wrong cell.
+          projected_col = None
+          for line in lines:
+            cells = _cells(line)
+            if cells and cells[0].lower() == "scanner":
+              for i, header in enumerate(cells):
+                if header.lower().startswith("projected"):
+                  projected_col = i
+              break
+
+          if projected_col is None:
+            print(
+              "::error::Could not find the 'Projected cycle' column header in "
+              f"{pace_report_path}.",
+            )
+            sys.exit(1)
+
           projected_cycle_days = None
           for line in lines:
             stripped = line.strip()
             if not stripped.startswith("| lighthouse "):
               continue
-            columns = [part.strip() for part in stripped.strip("|").split("|")]
-            if len(columns) < 6:
+            columns = _cells(stripped)
+            if len(columns) <= projected_col:
               break
-            match = re.search(r"([0-9]+(?:\.[0-9]+)?)d", columns[5])
+            match = re.search(r"([0-9]+(?:\.[0-9]+)?)d", columns[projected_col])
             if match:
               projected_cycle_days = float(match.group(1))
             break
