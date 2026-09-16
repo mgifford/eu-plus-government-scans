@@ -8,11 +8,11 @@ layout: page
 <div id="sm-tier-pie-container" style="float:right;margin:0 0 1rem 1.5rem;width:260px;max-width:45%;">
 <svg role="img" aria-labelledby="pie-title pie-desc" viewBox="0 0 240 314" width="240" height="314" xmlns="http://www.w3.org/2000/svg">
 <title id="pie-title">Social media tier distribution</title>
-<desc id="pie-desc">Pie chart: social media tier distribution across 87,696 scanned pages. Legacy only: 27,348 (31.2%), Modern only: 316 (0.4%), Mixed: 4,921 (5.6%), No Social: 47,743 (54.4%)</desc>
-<path d="M 120,110 L 120.000,20.000 A 90,90 0 0,1 195.852,158.441 Z" fill="#1a8cd8" stroke="#fff" stroke-width="1"><title>Twitter/X only: 27,348 (34.0%)</title></path>
-<path d="M 120,110 L 195.852,158.441 A 90,90 0 0,1 194.631,160.301 Z" fill="#0085ff" stroke="#fff" stroke-width="1"><title>Modern only: 316 (0.4%)</title></path>
-<path d="M 120,110 L 194.631,160.301 A 90,90 0 0,1 170.283,184.643 Z" fill="#7856ff" stroke="#fff" stroke-width="1"><title>Mixed: 4,921 (6.1%)</title></path>
-<path d="M 120,110 L 170.283,184.643 A 90,90 0 1,1 120.000,20.000 Z" fill="#cccccc" stroke="#fff" stroke-width="1"><title>No Social: 47,743 (59.4%)</title></path>
+<desc id="pie-desc">Pie chart: social media tier distribution across 87,696 scanned pages. Legacy only: 27,362 (31.2%), Modern only: 317 (0.4%), Mixed: 4,924 (5.6%), No Social: 47,879 (54.6%)</desc>
+<path d="M 120,110 L 120.000,20.000 A 90,90 0 0,1 195.997,158.213 Z" fill="#1a8cd8" stroke="#fff" stroke-width="1"><title>Twitter/X only: 27,362 (34.0%)</title></path>
+<path d="M 120,110 L 195.997,158.213 A 90,90 0 0,1 194.780,160.079 Z" fill="#0085ff" stroke="#fff" stroke-width="1"><title>Modern only: 317 (0.4%)</title></path>
+<path d="M 120,110 L 194.780,160.079 A 90,90 0 0,1 170.542,184.468 Z" fill="#7856ff" stroke="#fff" stroke-width="1"><title>Mixed: 4,924 (6.1%)</title></path>
+<path d="M 120,110 L 170.542,184.468 A 90,90 0 1,1 120.000,20.000 Z" fill="#cccccc" stroke="#fff" stroke-width="1"><title>No Social: 47,879 (59.5%)</title></path>
 <rect x="20" y="216" width="14" height="14" fill="#1a8cd8"/>
 <text x="40" y="227" font-size="11" font-family="sans-serif" fill="#333">Twitter/X only (34.0%)</text>
 <rect x="20" y="238" width="14" height="14" fill="#0085ff"/>
@@ -20,33 +20,33 @@ layout: page
 <rect x="20" y="260" width="14" height="14" fill="#7856ff"/>
 <text x="40" y="271" font-size="11" font-family="sans-serif" fill="#333">Mixed (6.1%)</text>
 <rect x="20" y="282" width="14" height="14" fill="#cccccc"/>
-<text x="40" y="293" font-size="11" font-family="sans-serif" fill="#333">No Social (59.4%)</text>
+<text x="40" y="293" font-size="11" font-family="sans-serif" fill="#333">No Social (59.5%)</text>
 </svg>
 <p style="text-align:center;font-size:0.75em;margin:0.3rem 0 0;color:#555;font-style:italic;">Social media tier distribution</p>
 </div>
 
-_Stats as of 2026-09-16 19:42 UTC — last scan: 2026-09-16_
+_Stats as of 2026-09-16 20:23 UTC — last scan: 2026-09-16_
 
-**149** scan batches run
+**151** scan batches run
 
 **87,690** of **87,696** available pages scanned (**100.0%** coverage)
-**79,965** of **87,690** scanned pages were reachable (**91.2%**)
+**80,098** of **87,690** scanned pages were reachable (**91.3%**)
 
 **Legacy social media** (older, centralised platforms):
 
 | Platform | Pages with link | % of scanned | % of reachable |
 |----------|----------------|:------------:|:--------------:|
-| 🐦 Twitter | **13,782** | 15.7% | 17.2% |
-| ✖ X | **3,623** | 4.1% | 4.5% |
-| 👍 Facebook | **28,860** | 32.9% | 36.1% |
-| 💼 LinkedIn | **10,453** | 11.9% | 13.1% |
+| 🐦 Twitter | **13,792** | 15.7% | 17.2% |
+| ✖ X | **3,625** | 4.1% | 4.5% |
+| 👍 Facebook | **28,867** | 32.9% | 36.0% |
+| 💼 LinkedIn | **10,457** | 11.9% | 13.1% |
 
 **Modern / open social media** (decentralised or open platforms):
 
 | Platform | Pages with link | % of scanned | % of reachable |
 |----------|----------------|:------------:|:--------------:|
-| 🦋 Bluesky | **833** | 0.9% | 1.0% |
-| 🐘 Mastodon / Fediverse | **4,693** | 5.4% | 5.9% |
+| 🦋 Bluesky | **834** | 1.0% | 1.0% |
+| 🐘 Mastodon / Fediverse | **4,697** | 5.4% | 5.9% |
 
 <div style="clear:both;"></div>
 
@@ -66,7 +66,7 @@ Countries ranked by **Digital Sovereignty Score** — the percentage of reachabl
 | 4 | Iceland | 72.0% | 103 | 0 | 28.0% | 🥉 Growing |
 | 5 | Canada | 69.8% | 2,933 | 4 | 32.5% | 🥉 Growing |
 | 6 | Bulgaria | 68.9% | 209 | 1 | 40.0% | 🥉 Growing |
-| 7 | Germany | 67.3% | 4,145 | 82 | 32.7% | 🥉 Growing |
+| 7 | Germany | 68.0% | 4,279 | 83 | 32.2% | 🥉 Growing |
 | 8 | Greece | 67.2% | 1,077 | 3 | 33.4% | 🥉 Growing |
 | 9 | France | 66.9% | 6,101 | 28 | 33.2% | 🥉 Growing |
 | 10 | Switzerland | 66.1% | 1,345 | 28 | 34.6% | 🥉 Growing |
@@ -91,7 +91,7 @@ Countries ranked by **Digital Sovereignty Score** — the percentage of reachabl
 | 29 | Cyprus | 48.3% | 14 | 0 | 51.7% | 🥉 Growing |
 | 30 | Luxembourg | 46.5% | 242 | 2 | 54.3% | 🥉 Growing |
 | 31 | Italy | 46.3% | 2,118 | 13 | 53.7% | 🥉 Growing |
-| 32 | Latvia | 41.6% | 316 | 0 | 58.8% | 🥉 Growing |
+| 32 | Latvia | 41.7% | 318 | 0 | 59.6% | 🥉 Growing |
 
 ---
 
@@ -111,13 +111,13 @@ Countries ranked by **Digital Sovereignty Score** — the percentage of reachabl
 | Estonia | 401 | 401 | 376 | 51.6% | 191 | 180 | 62 | 1 | 200 | 68 | 3 | 25 | 0 | 28 | Aug 2026 – Sep 2026 |
 | Finland | 199 | 199 | 189 | 59.3% | 112 | 69 | 31 | 10 | 55 | 65 | 0 | 9 | 3 | 6 | Aug 2026 – Sep 2026 |
 | France | 10,009 | 10,009 | 9,166 | 66.9% | 6,101 | 2,481 | 1,442 | 574 | 2,671 | 1,620 | 28 | 562 | 127 | 513 | Aug 2026 – Sep 2026 |
-| Germany | 6,599 | 6,599 | 6,282 | 67.3% | 4,145 | 1,617 | 1,125 | 181 | 1,651 | 610 | 82 | 442 | 141 | 477 | Aug 2026 – Sep 2026 |
+| Germany | 6,599 | 6,599 | 6,413 | 68.0% | 4,279 | 1,623 | 1,129 | 181 | 1,654 | 614 | 83 | 444 | 142 | 480 | Aug 2026 – Sep 2026 |
 | Greece | 1,752 | 1,752 | 1,607 | 67.2% | 1,077 | 435 | 222 | 56 | 513 | 128 | 3 | 101 | 0 | 104 | Aug 2026 – Sep 2026 |
 | Hungary | 392 | 392 | 296 | 55.7% | 163 | 112 | 23 | 0 | 135 | 15 | 2 | 27 | 0 | 29 | Aug 2026 – Sep 2026 |
 | Iceland | 145 | 145 | 143 | 72.0% | 103 | 24 | 8 | 6 | 40 | 7 | 0 | 16 | 0 | 16 | Aug 2026 – Sep 2026 |
 | Ireland | 536 | 536 | 499 | 59.5% | 297 | 191 | 151 | 40 | 213 | 103 | 0 | 63 | 18 | 51 | Aug 2026 – Sep 2026 |
 | Italy | 5,351 | 5,351 | 4,603 | 46.3% | 2,118 | 2,177 | 1,934 | 135 | 2,344 | 544 | 13 | 295 | 0 | 308 | Aug 2026 – Sep 2026 |
-| Latvia | 803 | 803 | 760 | 41.6% | 316 | 356 | 267 | 55 | 433 | 173 | 0 | 91 | 0 | 91 | Aug 2026 – Sep 2026 |
+| Latvia | 803 | 803 | 762 | 41.7% | 318 | 364 | 273 | 57 | 437 | 173 | 0 | 92 | 0 | 92 | Aug 2026 – Sep 2026 |
 | Lithuania | 122 | 122 | 112 | 72.3% | 81 | 27 | 5 | 1 | 31 | 20 | 0 | 4 | 0 | 4 | Aug 2026 – Sep 2026 |
 | Luxembourg | 573 | 573 | 525 | 46.5% | 242 | 121 | 179 | 9 | 263 | 226 | 2 | 164 | 141 | 28 | Aug 2026 – Sep 2026 |
 | Malta | 610 | 610 | 595 | 74.8% | 443 | 126 | 46 | 15 | 157 | 69 | 2 | 36 | 0 | 38 | Aug 2026 – Sep 2026 |
@@ -133,7 +133,7 @@ Countries ranked by **Digital Sovereignty Score** — the percentage of reachabl
 | Sweden | 1,702 | 1,702 | 1,526 | 65.7% | 999 | 473 | 77 | 21 | 437 | 366 | 4 | 53 | 14 | 44 | Aug 2026 – Sep 2026 |
 | Switzerland | 2,123 | 2,123 | 2,078 | 66.1% | 1,345 | 569 | 229 | 226 | 250 | 567 | 28 | 152 | 53 | 144 | Aug 2026 – Sep 2026 |
 | United Kingdom | 19,511 | 19,511 | 18,498 | 62.2% | 11,478 | 6,316 | 3,759 | 1,009 | 6,242 | 2,427 | 32 | 702 | 108 | 666 | Aug 2026 – Sep 2026 |
-| **Total** | **87,696** | **87,696** | **79,971** | **60.1%** | **47,743** | **27,348** | **13,788** | **3,629** | **28,866** | **10,453** | **316** | **4,921** | **833** | **4,693** | — |
+| **Total** | **87,696** | **87,696** | **80,104** | **60.2%** | **47,879** | **27,362** | **13,798** | **3,631** | **28,873** | **10,457** | **317** | **4,924** | **834** | **4,697** | — |
 
 > Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open. Full machine-readable data is available as the [social-media-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
 
