@@ -3,7 +3,7 @@ title: Scanner Cycle Pace Report
 layout: page
 ---
 
-_Generated: 2026-09-16 20:24 UTC_
+_Generated: 2026-09-16 20:54 UTC_
 
 Whether each scanner is on pace to complete its target cycle (30 days for most
 covered in the last 7 days projected forward against the full eligible corpus.
@@ -19,8 +19,8 @@ Section 11 for the methodology.
 | technology | 30d | 87,696 | 28,108 (last 7d) | 4,015.4/day | 21.8d | 🟢 Ahead |
 | third_party_js | 30d | 87,696 | 22,755 (last 7d) | 3,250.7/day | 27.0d | 🟢 On pace |
 | overlays | 30d | 87,696 | 0 (last 7d) | 0.0/day | —d | ⚪ No data |
-| relationships | 60d | 87,696 | 287 (last 7d) | 41.0/day | 2,138.9d | 🔴 Behind |
-| lighthouse | 60d | 87,696 | 7,755 (last 7d) | 1,107.9/day | 79.2d | 🔴 Behind |
+| relationships | 60d | 87,696 | 280 (last 7d) | 40.0/day | 2,192.4d | 🔴 Behind |
+| lighthouse | 60d | 87,696 | 8,907 (last 7d) | 1,272.4/day | 68.9d | 🟡 Marginal |
 
 _Projection method: `effective daily throughput = distinct URLs covered in the last 7 days ÷ 7`;
 `projected cycle days = eligible URLs ÷ effective daily throughput`. The 7-day measurement
