@@ -5,7 +5,7 @@ layout: page
 
 <!-- TECH_LIGHTHOUSE_STATS_START -->
 
-_Generated: 2026-09-16 18:13 UTC_
+_Generated: 2026-09-16 19:43 UTC_
 
 **12,970** URLs with both technology detection and Lighthouse scores
 out of **43,463** technology-detected URLs and **17,046** Lighthouse-audited URLs
