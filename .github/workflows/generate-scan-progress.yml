@@ -263,7 +263,20 @@ jobs:
             echo "No changes to commit — reports are up to date."
           else
             git commit -m "docs: update scan reports and generated site pages [skip ci]"
-            git push
+            # main can move between commit and push (sibling scan workflows push
+            # concurrently -> "cannot lock ref"); re-sync and retry.
+            for attempt in 1 2 3 4 5; do
+              git pull --rebase -X theirs origin main
+              if git push; then
+                break
+              fi
+              if [ "$attempt" = 5 ]; then
+                echo "::error::Failed to push after 5 attempts (concurrent updates to main)."
+                exit 1
+              fi
+              echo "Push rejected (attempt $attempt); re-syncing with origin/main and retrying..."
+              sleep $((attempt * 3))
+            done
             echo "Reports committed and pushed."
           fi
 
