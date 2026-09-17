@@ -28,7 +28,10 @@ user_agent = "Mozilla/5.0 (compatible; lychee/2.x; +https://github.com/lycheever
 # - localhost / 127.0.0.1  : local development server referenced in README
 # - example.gov / unreachable.gov : placeholder URLs used in code examples
 # - shields.io badge URLs  : sometimes rate-limited; not worth failing CI
-# - technology-data.json   : artifact-only file generated at scan time; not committed
+# - *-data.json            : per-scanner drilldown data files generated at scan
+#                            time and uploaded as artifacts, not committed, so
+#                            the "download the data" links in the generated doc
+#                            pages point to files absent from the repo.
 exclude = [
     "http://127\\.0\\.0\\.1",
     "http://localhost",
@@ -37,6 +40,7 @@ exclude = [
     "https?://unreachable\\.gov",
     "https://img\\.shields\\.io",
     "technology-data\\.json",
+    "tech-lighthouse-data\\.json",
 ]
 
 # Exclude specific files that are machine-generated scan reports containing
