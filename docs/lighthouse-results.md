@@ -5,12 +5,12 @@ layout: page
 
 <!-- LIGHTHOUSE_STATS_START -->
 
-_Stats as of 2026-09-17 00:33 UTC — last scan: 2026-09-17_
+_Stats as of 2026-09-17 04:17 UTC — last scan: 2026-09-17_
 
-**352** scan batches run
+**353** scan batches run
 
-**22,904** of **87,696** available pages audited (**26.1%** coverage)
-**18,545** successful audits (**81.0%** of audited)
+**23,920** of **87,696** available pages audited (**27.3%** coverage)
+**19,423** successful audits (**81.2%** of audited)
 
 **Overall average Lighthouse scores** (0–100 scale):
 
@@ -55,7 +55,7 @@ _Stats as of 2026-09-17 00:33 UTC — last scan: 2026-09-17_
 | Spain | 1,312 | 6,091 | 82 | 75 | 76 | 82 | 2026-09-16 |
 | Sweden | 1,496 | 1,702 | 90 | 93 | 92 | 87 | 2026-09-15 |
 | Switzerland | 2,123 | 2,123 | 85 | 91 | 96 | 87 | 2026-09-17 |
-| United Kingdom | 645 | 19,511 | 91 | 94 | 91 | 87 | 2026-09-13 |
+| United Kingdom | 1,661 | 19,511 | 92 | 94 | 91 | 87 | 2026-09-17 |
 
 > Scores are averages across all successfully audited URLs, displayed as 0–100 (Lighthouse stores scores as 0.0–1.0 internally).
 
