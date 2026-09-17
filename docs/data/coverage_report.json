@@ -62,14 +62,14 @@
     "never_scanned": 0,
     "stale_31d": 0
   },
-  "BELGIUM": {
-    "total_urls": 1329,
-    "attempted": 1329,
-    "successful": 1222,
-    "failed": 107,
+  "IRELAND": {
+    "total_urls": 536,
+    "attempted": 536,
+    "successful": 499,
+    "failed": 37,
     "skipped": 0,
     "never_scanned": 0,
-    "stale_31d": 138
+    "stale_31d": 0
   },
   "PORTUGAL": {
     "total_urls": 3508,
@@ -89,11 +89,11 @@
     "never_scanned": 0,
     "stale_31d": 0
   },
-  "IRELAND": {
-    "total_urls": 536,
-    "attempted": 536,
-    "successful": 499,
-    "failed": 37,
+  "NETHERLANDS": {
+    "total_urls": 945,
+    "attempted": 945,
+    "successful": 903,
+    "failed": 42,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 0
@@ -116,11 +116,11 @@
     "never_scanned": 0,
     "stale_31d": 0
   },
-  "NETHERLANDS": {
-    "total_urls": 945,
-    "attempted": 945,
-    "successful": 903,
-    "failed": 42,
+  "MALTA": {
+    "total_urls": 610,
+    "attempted": 610,
+    "successful": 595,
+    "failed": 15,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 0
@@ -131,17 +131,17 @@
   "CROATIA": {
     "total_urls": 257,
     "attempted": 257,
-    "successful": 254,
-    "failed": 3,
+    "successful": 250,
+    "failed": 7,
     "skipped": 0,
     "never_scanned": 0,
-    "stale_31d": 248
+    "stale_31d": 0
   },
-  "MALTA": {
-    "total_urls": 610,
-    "attempted": 610,
-    "successful": 595,
-    "failed": 15,
+  "CZECHIA": {
+    "total_urls": 866,
+    "attempted": 866,
+    "successful": 785,
+    "failed": 81,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 0
@@ -158,14 +158,14 @@
   "REPUBLIC_OF_CYPRUS": {
     "error": "TOON file not found"
   },
-  "CZECHIA": {
-    "total_urls": 866,
-    "attempted": 866,
-    "successful": 798,
-    "failed": 68,
+  "LUXEMBOURG": {
+    "total_urls": 573,
+    "attempted": 573,
+    "successful": 498,
+    "failed": 75,
     "skipped": 0,
     "never_scanned": 0,
-    "stale_31d": 291
+    "stale_31d": 0
   },
   "SPAIN": {
     "total_urls": 6091,
@@ -185,11 +185,11 @@
     "never_scanned": 0,
     "stale_31d": 0
   },
-  "LUXEMBOURG": {
-    "total_urls": 573,
-    "attempted": 573,
-    "successful": 498,
-    "failed": 75,
+  "SWEDEN": {
+    "total_urls": 1702,
+    "attempted": 1702,
+    "successful": 1625,
+    "failed": 77,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 0
@@ -197,8 +197,8 @@
   "POLAND": {
     "total_urls": 14951,
     "attempted": 14951,
-    "successful": 13769,
-    "failed": 1182,
+    "successful": 13773,
+    "failed": 1178,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 0
@@ -212,11 +212,11 @@
     "never_scanned": 0,
     "stale_31d": 0
   },
-  "SWEDEN": {
-    "total_urls": 1702,
-    "attempted": 1702,
-    "successful": 1625,
-    "failed": 77,
+  "ROMANIA": {
+    "total_urls": 807,
+    "attempted": 807,
+    "successful": 349,
+    "failed": 458,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 0
@@ -224,11 +224,11 @@
   "GERMANY": {
     "total_urls": 6599,
     "attempted": 6599,
-    "successful": 6500,
-    "failed": 99,
+    "successful": 6392,
+    "failed": 207,
     "skipped": 0,
     "never_scanned": 0,
-    "stale_31d": 0
+    "stale_31d": 1349
   },
   "ESTONIA": {
     "total_urls": 401,
@@ -239,14 +239,14 @@
     "never_scanned": 0,
     "stale_31d": 0
   },
-  "ROMANIA": {
-    "total_urls": 807,
-    "attempted": 807,
-    "successful": 349,
-    "failed": 458,
+  "AUSTRIA": {
+    "total_urls": 822,
+    "attempted": 822,
+    "successful": 784,
+    "failed": 38,
     "skipped": 0,
     "never_scanned": 0,
-    "stale_31d": 0
+    "stale_31d": 44
   },
   "CANADA": {
     "total_urls": 4469,
@@ -266,13 +266,13 @@
     "never_scanned": 0,
     "stale_31d": 0
   },
-  "AUSTRIA": {
-    "total_urls": 822,
-    "attempted": 822,
-    "successful": 784,
-    "failed": 38,
+  "BELGIUM": {
+    "total_urls": 1329,
+    "attempted": 1329,
+    "successful": 1222,
+    "failed": 107,
     "skipped": 0,
     "never_scanned": 0,
-    "stale_31d": 44
+    "stale_31d": 138
   }
 }
