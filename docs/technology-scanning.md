@@ -110,7 +110,7 @@ _Stats as of 2026-09-16 22:06 UTC — last scan: 2026-09-16_
 ## Overview
 
 The technology scanner fetches each government page and uses
-[wappalyzer-python3](https://github.com/omkarcloud/wappalyzer-python3) to identify
+[wappalyzer-python3](https://pypi.org/project/wappalyzer-python3/) to identify
 technologies from HTTP response headers and HTML content.  Detected
 technologies (CMS, web server, JavaScript frameworks, analytics, etc.) and
 their versions are stored in the metadata database and written back into an
