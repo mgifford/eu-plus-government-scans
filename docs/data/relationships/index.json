@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-16T20:55:33.161860+00:00",
+  "generated_at": "2026-09-17T03:54:35.484012+00:00",
   "shard_max_bytes": 33554432,
   "total_rows": 317052,
-  "total_bytes": 188668642,
+  "total_bytes": 188668652,
   "shards": [
     {
       "file": "at.001.jsonl",
@@ -284,7 +284,7 @@
       "file": "ro.001.jsonl",
       "group": "ro",
       "rows": 1626,
-      "bytes": 961940
+      "bytes": 961950
     },
     {
       "file": "sap.001.jsonl",

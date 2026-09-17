@@ -17,7 +17,7 @@
     },
     {
       "domain": "brasovcity.ro",
-      "count": 390
+      "count": 410
     },
     {
       "domain": "pmb.ro",
@@ -119,11 +119,11 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 280
+      "count": 281
     },
     {
       "domain": "facebook.com",
-      "count": 263
+      "count": 264
     },
     {
       "domain": "pmb.ro",
@@ -131,7 +131,7 @@
     },
     {
       "domain": "google.com",
-      "count": 210
+      "count": 212
     },
     {
       "domain": "sri.ro",
@@ -146,6 +146,10 @@
       "count": 148
     },
     {
+      "domain": "brasovcity.ro",
+      "count": 142
+    },
+    {
       "domain": "mae.ro",
       "count": 140
     },
@@ -155,10 +159,6 @@
     },
     {
       "domain": "fiipregatit.ro",
-      "count": 135
-    },
-    {
-      "domain": "brasovcity.ro",
       "count": 135
     },
     {
@@ -187,7 +187,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 98
+      "count": 99
     },
     {
       "domain": "sts.ro",
@@ -198,19 +198,19 @@
       "count": 82
     },
     {
+      "domain": "instagram.com",
+      "count": 75
+    },
+    {
       "domain": "mai-dga.ro",
       "count": 75
     },
     {
-      "domain": "instagram.com",
-      "count": 74
+      "domain": "youtube.com",
+      "count": 69
     },
     {
       "domain": "twitter.com",
-      "count": 68
-    },
-    {
-      "domain": "youtube.com",
       "count": 68
     },
     {
@@ -239,7 +239,7 @@
     },
     {
       "domain": "userway.org",
-      "count": 39
+      "count": 41
     },
     {
       "domain": "politiadefrontiera.ro",
@@ -250,11 +250,11 @@
       "count": 35
     },
     {
-      "domain": "cloudflare.com",
-      "count": 29
+      "domain": "jsdelivr.net",
+      "count": 31
     },
     {
-      "domain": "jsdelivr.net",
+      "domain": "cloudflare.com",
       "count": 29
     },
     {
@@ -310,5 +310,5 @@
     "form_destination": 97,
     "font_or_preload_dependency": 23
   },
-  "generated_at": "2026-09-16T20:55:37.890164+00:00"
+  "generated_at": "2026-09-17T03:54:41.235740+00:00"
 }
