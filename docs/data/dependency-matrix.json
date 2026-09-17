@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T11:51:30.375874+00:00",
+  "generated_at": "2026-09-17T17:08:02.084196+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -86,7 +86,7 @@
     {
       "country_code": "BELGIUM",
       "country": "Belgium",
-      "scanned_domains": 43
+      "scanned_domains": 41
     },
     {
       "country_code": "FINLAND",
@@ -178,7 +178,7 @@
     {
       "service": "googletagmanager.com",
       "countries": 32,
-      "domains": 2766
+      "domains": 2765
     },
     {
       "service": "gstatic.com",
@@ -203,7 +203,7 @@
     {
       "service": "cloudflare.com",
       "countries": 31,
-      "domains": 1580
+      "domains": 1578
     },
     {
       "service": "jquery.com",
@@ -213,7 +213,7 @@
     {
       "service": "unpkg.com",
       "countries": 29,
-      "domains": 684
+      "domains": 685
     },
     {
       "service": "bootstrapcdn.com",
@@ -268,7 +268,7 @@
     {
       "service": "cloudfront.net",
       "countries": 17,
-      "domains": 424
+      "domains": 425
     }
   ],
   "cells": [
@@ -2677,119 +2677,119 @@
       "country": "Belgium",
       "service": "googleapis.com",
       "domains": 21,
-      "scanned_domains": 43,
-      "percent": 48.8
+      "scanned_domains": 41,
+      "percent": 51.2
     },
     {
       "country_code": "BELGIUM",
       "country": "Belgium",
       "service": "googletagmanager.com",
-      "domains": 15,
-      "scanned_domains": 43,
-      "percent": 34.9
+      "domains": 14,
+      "scanned_domains": 41,
+      "percent": 34.1
     },
     {
       "country_code": "BELGIUM",
       "country": "Belgium",
       "service": "gstatic.com",
       "domains": 12,
-      "scanned_domains": 43,
-      "percent": 27.9
+      "scanned_domains": 41,
+      "percent": 29.3
     },
     {
       "country_code": "BELGIUM",
       "country": "Belgium",
       "service": "jsdelivr.net",
       "domains": 11,
-      "scanned_domains": 43,
-      "percent": 25.6
+      "scanned_domains": 41,
+      "percent": 26.8
     },
     {
       "country_code": "BELGIUM",
       "country": "Belgium",
       "service": "fontawesome.com",
       "domains": 5,
-      "scanned_domains": 43,
-      "percent": 11.6
+      "scanned_domains": 41,
+      "percent": 12.2
     },
     {
       "country_code": "BELGIUM",
       "country": "Belgium",
       "service": "google.com",
       "domains": 7,
-      "scanned_domains": 43,
-      "percent": 16.3
+      "scanned_domains": 41,
+      "percent": 17.1
     },
     {
       "country_code": "BELGIUM",
       "country": "Belgium",
       "service": "cloudflare.com",
-      "domains": 16,
-      "scanned_domains": 43,
-      "percent": 37.2
+      "domains": 14,
+      "scanned_domains": 41,
+      "percent": 34.1
     },
     {
       "country_code": "BELGIUM",
       "country": "Belgium",
       "service": "jquery.com",
       "domains": 8,
-      "scanned_domains": 43,
-      "percent": 18.6
+      "scanned_domains": 41,
+      "percent": 19.5
     },
     {
       "country_code": "BELGIUM",
       "country": "Belgium",
       "service": "unpkg.com",
-      "domains": 9,
-      "scanned_domains": 43,
-      "percent": 20.9
+      "domains": 10,
+      "scanned_domains": 41,
+      "percent": 24.4
     },
     {
       "country_code": "BELGIUM",
       "country": "Belgium",
       "service": "bootstrapcdn.com",
       "domains": 10,
-      "scanned_domains": 43,
-      "percent": 23.3
+      "scanned_domains": 41,
+      "percent": 24.4
     },
     {
       "country_code": "BELGIUM",
       "country": "Belgium",
       "service": "typekit.net",
       "domains": 1,
-      "scanned_domains": 43,
-      "percent": 2.3
+      "scanned_domains": 41,
+      "percent": 2.4
     },
     {
       "country_code": "BELGIUM",
       "country": "Belgium",
       "service": "facebook.com",
       "domains": 1,
-      "scanned_domains": 43,
-      "percent": 2.3
+      "scanned_domains": 41,
+      "percent": 2.4
     },
     {
       "country_code": "BELGIUM",
       "country": "Belgium",
       "service": "cookiebot.com",
       "domains": 3,
-      "scanned_domains": 43,
-      "percent": 7.0
+      "scanned_domains": 41,
+      "percent": 7.3
     },
     {
       "country_code": "BELGIUM",
       "country": "Belgium",
       "service": "amazonaws.com",
       "domains": 6,
-      "scanned_domains": 43,
-      "percent": 14.0
+      "scanned_domains": 41,
+      "percent": 14.6
     },
     {
       "country_code": "BELGIUM",
       "country": "Belgium",
       "service": "facebook.net",
       "domains": 0,
-      "scanned_domains": 43,
+      "scanned_domains": 41,
       "percent": 0.0
     },
     {
@@ -2797,23 +2797,23 @@
       "country": "Belgium",
       "service": "addtoany.com",
       "domains": 4,
-      "scanned_domains": 43,
-      "percent": 9.3
+      "scanned_domains": 41,
+      "percent": 9.8
     },
     {
       "country_code": "BELGIUM",
       "country": "Belgium",
       "service": "arcgis.com",
       "domains": 1,
-      "scanned_domains": 43,
-      "percent": 2.3
+      "scanned_domains": 41,
+      "percent": 2.4
     },
     {
       "country_code": "BELGIUM",
       "country": "Belgium",
       "service": "fbcdn.net",
       "domains": 0,
-      "scanned_domains": 43,
+      "scanned_domains": 41,
       "percent": 0.0
     },
     {
@@ -2821,16 +2821,16 @@
       "country": "Belgium",
       "service": "mapbox.com",
       "domains": 1,
-      "scanned_domains": 43,
-      "percent": 2.3
+      "scanned_domains": 41,
+      "percent": 2.4
     },
     {
       "country_code": "BELGIUM",
       "country": "Belgium",
       "service": "cloudfront.net",
-      "domains": 2,
-      "scanned_domains": 43,
-      "percent": 4.7
+      "domains": 3,
+      "scanned_domains": 41,
+      "percent": 7.3
     },
     {
       "country_code": "FINLAND",
