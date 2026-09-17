@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-09-17T03:54:35.484012+00:00",
+  "generated_at": "2026-09-17T11:51:24.719494+00:00",
   "shard_max_bytes": 33554432,
-  "total_rows": 317052,
-  "total_bytes": 188668652,
+  "total_rows": 317086,
+  "total_bytes": 188744767,
   "shards": [
     {
       "file": "at.001.jsonl",
       "group": "at",
-      "rows": 2969,
-      "bytes": 1885113
+      "rows": 2991,
+      "bytes": 1901121
     },
     {
       "file": "be.001.jsonl",
@@ -37,8 +37,8 @@
     {
       "file": "ca.001.jsonl",
       "group": "ca",
-      "rows": 12525,
-      "bytes": 7733237
+      "rows": 12537,
+      "bytes": 7793344
     },
     {
       "file": "cat.001.jsonl",
