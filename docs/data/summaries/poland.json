@@ -9,7 +9,7 @@
     },
     {
       "domain": "lodz.pl",
-      "count": 32223
+      "count": 32247
     },
     {
       "domain": "poznan.pl",
@@ -211,7 +211,7 @@
     },
     {
       "domain": "lodz.pl",
-      "count": 18468
+      "count": 18488
     },
     {
       "domain": "googleapis.com",
@@ -414,5 +414,5 @@
     "stylesheet_dependency": 7649,
     "font_or_preload_dependency": 1831
   },
-  "generated_at": "2026-09-17T03:54:41.330474+00:00"
+  "generated_at": "2026-09-17T21:48:25.882691+00:00"
 }
