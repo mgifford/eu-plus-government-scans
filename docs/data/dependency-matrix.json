@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T21:48:28.375257+00:00",
+  "generated_at": "2026-09-18T04:09:59.096220+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -198,12 +198,12 @@
     {
       "service": "google.com",
       "countries": 31,
-      "domains": 2092
+      "domains": 2091
     },
     {
       "service": "cloudflare.com",
       "countries": 31,
-      "domains": 1578
+      "domains": 1580
     },
     {
       "service": "jquery.com",
@@ -3996,17 +3996,17 @@
       "country_code": "HUNGARY",
       "country": "Hungary",
       "service": "google.com",
-      "domains": 6,
+      "domains": 5,
       "scanned_domains": 27,
-      "percent": 22.2
+      "percent": 18.5
     },
     {
       "country_code": "HUNGARY",
       "country": "Hungary",
       "service": "cloudflare.com",
-      "domains": 8,
+      "domains": 10,
       "scanned_domains": 27,
-      "percent": 29.6
+      "percent": 37.0
     },
     {
       "country_code": "HUNGARY",
