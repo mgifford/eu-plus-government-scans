@@ -1,11 +1,11 @@
 {
   "country_code": "ITALY",
-  "total_relationships": 16237,
+  "total_relationships": 16229,
   "total_source_domains": 151,
   "top_source_domains": [
     {
       "domain": "esteri.it",
-      "count": 26451
+      "count": 37245
     },
     {
       "domain": "giustizia.it",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "esteri.it",
-      "count": 11516
+      "count": 16339
     },
     {
       "domain": "giustizia.it",
@@ -215,31 +215,35 @@
     },
     {
       "domain": "facebook.com",
-      "count": 5220
+      "count": 5746
     },
     {
       "domain": "cultura.gov.it",
       "count": 5008
     },
     {
-      "domain": "youtube.com",
-      "count": 4134
+      "domain": "twitter.com",
+      "count": 4625
     },
     {
-      "domain": "twitter.com",
-      "count": 4091
+      "domain": "youtube.com",
+      "count": 4456
     },
     {
       "domain": "agid.gov.it",
-      "count": 3316
+      "count": 3884
     },
     {
       "domain": "instagram.com",
-      "count": 3273
+      "count": 3756
     },
     {
       "domain": "governo.it",
-      "count": 2179
+      "count": 2745
+    },
+    {
+      "domain": "europa.eu",
+      "count": 2426
     },
     {
       "domain": "regione.lombardia.it",
@@ -250,36 +254,32 @@
       "count": 1996
     },
     {
-      "domain": "europa.eu",
-      "count": 1858
+      "domain": "viaggiaresicuri.it",
+      "count": 1950
+    },
+    {
+      "domain": "dovesiamonelmondo.it",
+      "count": 1948
     },
     {
       "domain": "googleapis.com",
       "count": 1659
     },
     {
-      "domain": "viaggiaresicuri.it",
-      "count": 1384
-    },
-    {
-      "domain": "dovesiamonelmondo.it",
-      "count": 1382
+      "domain": "whatsapp.com",
+      "count": 1637
     },
     {
       "domain": "regione.veneto.it",
       "count": 1377
     },
     {
-      "domain": "whatsapp.com",
-      "count": 1342
+      "domain": "linkedin.com",
+      "count": 1318
     },
     {
       "domain": "regione.campania.it",
       "count": 1301
-    },
-    {
-      "domain": "linkedin.com",
-      "count": 1251
     },
     {
       "domain": "comune.parma.it",
@@ -307,7 +307,7 @@
     },
     {
       "domain": "google.com",
-      "count": 812
+      "count": 818
     },
     {
       "domain": "comune.bologna.it",
@@ -347,7 +347,7 @@
     },
     {
       "domain": "interno.gov.it",
-      "count": 624
+      "count": 627
     },
     {
       "domain": "cloudflare.com",
@@ -366,6 +366,10 @@
       "count": 522
     },
     {
+      "domain": "italea.com",
+      "count": 505
+    },
+    {
       "domain": "comune.torino.it",
       "count": 498
     },
@@ -378,8 +382,20 @@
       "count": 458
     },
     {
+      "domain": "opportunitaly.gov.it",
+      "count": 458
+    },
+    {
       "domain": "lavoro.gov.it",
       "count": 455
+    },
+    {
+      "domain": "spreaker.com",
+      "count": 443
+    },
+    {
+      "domain": "italia.it",
+      "count": 393
     },
     {
       "domain": "scuolamagistratura.it",
@@ -388,31 +404,15 @@
     {
       "domain": "comune.messina.it",
       "count": 381
-    },
-    {
-      "domain": "regione.piemonte.it",
-      "count": 375
-    },
-    {
-      "domain": "mise.gov.it",
-      "count": 370
-    },
-    {
-      "domain": "italia.it",
-      "count": 369
-    },
-    {
-      "domain": "italea.com",
-      "count": 362
     }
   ],
   "relationship_types": {
     "script_dependency": 2608,
-    "editorial_link": 7544,
+    "editorial_link": 7536,
     "image_or_media_dependency": 2060,
     "stylesheet_dependency": 2320,
     "form_destination": 1454,
     "font_or_preload_dependency": 251
   },
-  "generated_at": "2026-09-17T21:48:24.717299+00:00"
+  "generated_at": "2026-09-18T11:27:31.325403+00:00"
 }
