@@ -1,15 +1,15 @@
 {
   "country_code": "LUXEMBOURG",
-  "total_relationships": 2049,
+  "total_relationships": 2048,
   "total_source_domains": 41,
   "top_source_domains": [
     {
       "domain": "gouvernement.lu",
-      "count": 4447
+      "count": 5044
     },
     {
       "domain": "public.lu",
-      "count": 2997
+      "count": 3613
     },
     {
       "domain": "uni.lu",
@@ -171,19 +171,19 @@
   "top_target_domains": [
     {
       "domain": "public.lu",
-      "count": 3255
+      "count": 3837
     },
     {
       "domain": "gouvernement.lu",
-      "count": 2042
+      "count": 2287
     },
     {
       "domain": "facebook.com",
-      "count": 484
+      "count": 528
     },
     {
       "domain": "linkedin.com",
-      "count": 444
+      "count": 492
     },
     {
       "domain": "uni.lu",
@@ -191,27 +191,27 @@
     },
     {
       "domain": "twitter.com",
-      "count": 341
+      "count": 378
     },
     {
       "domain": "bsky.app",
-      "count": 279
+      "count": 316
     },
     {
       "domain": "instagram.com",
-      "count": 247
+      "count": 261
     },
     {
       "domain": "etat.lu",
-      "count": 202
+      "count": 206
     },
     {
       "domain": "youtube.com",
-      "count": 167
+      "count": 177
     },
     {
       "domain": "europa.eu",
-      "count": 137
+      "count": 164
     },
     {
       "domain": "googleapis.com",
@@ -224,6 +224,10 @@
     {
       "domain": "inll.lu",
       "count": 112
+    },
+    {
+      "domain": "adobedtm.com",
+      "count": 94
     },
     {
       "domain": "jsdelivr.net",
@@ -254,32 +258,40 @@
       "count": 60
     },
     {
-      "domain": "gstatic.com",
-      "count": 56
+      "domain": "google.com",
+      "count": 58
     },
     {
-      "domain": "google.com",
-      "count": 55
+      "domain": "gstatic.com",
+      "count": 56
     },
     {
       "domain": "chem.lu",
       "count": 50
     },
     {
-      "domain": "adobedtm.com",
-      "count": 46
+      "domain": "geoportail.lu",
+      "count": 48
     },
     {
       "domain": "quilium.io",
       "count": 44
     },
     {
+      "domain": "typekit.net",
+      "count": 43
+    },
+    {
       "domain": "cgie.lu",
       "count": 42
     },
     {
-      "domain": "typekit.net",
+      "domain": "guichet.lu",
       "count": 40
+    },
+    {
+      "domain": "unpkg.com",
+      "count": 39
     },
     {
       "domain": "cloudflare.com",
@@ -290,16 +302,8 @@
       "count": 38
     },
     {
-      "domain": "geoportail.lu",
-      "count": 38
-    },
-    {
       "domain": "schifflange.lu",
       "count": 37
-    },
-    {
-      "domain": "guichet.lu",
-      "count": 36
     },
     {
       "domain": "bettembourg.lu",
@@ -311,10 +315,6 @@
     },
     {
       "domain": "fontawesome.com",
-      "count": 36
-    },
-    {
-      "domain": "unpkg.com",
       "count": 36
     },
     {
@@ -342,41 +342,41 @@
       "count": 30
     },
     {
+      "domain": "luxembourg.lu",
+      "count": 29
+    },
+    {
+      "domain": "readspeaker.com",
+      "count": 29
+    },
+    {
       "domain": "petitiounen.lu",
       "count": 28
+    },
+    {
+      "domain": "apple.com",
+      "count": 27
     },
     {
       "domain": "meteolux.lu",
       "count": 27
     },
     {
-      "domain": "luxembourg.lu",
-      "count": 26
-    },
-    {
-      "domain": "apple.com",
+      "domain": "services-publics.lu",
       "count": 26
     },
     {
       "domain": "e-connect.lu",
       "count": 26
-    },
-    {
-      "domain": "petange.lu",
-      "count": 26
-    },
-    {
-      "domain": "readspeaker.com",
-      "count": 26
     }
   ],
   "relationship_types": {
-    "editorial_link": 1166,
+    "editorial_link": 1164,
     "form_destination": 155,
     "image_or_media_dependency": 195,
-    "script_dependency": 273,
+    "script_dependency": 274,
     "stylesheet_dependency": 231,
     "font_or_preload_dependency": 29
   },
-  "generated_at": "2026-09-17T21:48:25.633896+00:00"
+  "generated_at": "2026-09-18T21:17:11.646187+00:00"
 }
