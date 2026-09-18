@@ -1,418 +1,418 @@
 {
   "country_code": "LATVIA",
-  "total_relationships": 3338,
+  "total_relationships": 3298,
   "total_source_domains": 143,
   "top_source_domains": [
     {
       "domain": "riga.lv",
-      "count": 2383
+      "count": 3494
     },
     {
       "domain": "rtu.lv",
-      "count": 893
+      "count": 1335
     },
     {
       "domain": "daugavpils.lv",
-      "count": 652
+      "count": 978
     },
     {
       "domain": "jelgava.lv",
-      "count": 618
+      "count": 882
     },
     {
       "domain": "viaa.gov.lv",
-      "count": 402
+      "count": 603
     },
     {
       "domain": "liepaja.lv",
-      "count": 376
+      "count": 561
     },
     {
       "domain": "iem.gov.lv",
-      "count": 366
+      "count": 480
     },
     {
       "domain": "kem.gov.lv",
-      "count": 256
+      "count": 384
     },
     {
       "domain": "valic.gov.lv",
-      "count": 210
+      "count": 316
     },
     {
       "domain": "vugd.gov.lv",
-      "count": 204
+      "count": 306
     },
     {
       "domain": "vid.gov.lv",
-      "count": 202
-    },
-    {
-      "domain": "daba.gov.lv",
-      "count": 198
+      "count": 303
     },
     {
       "domain": "fid.gov.lv",
-      "count": 198
+      "count": 297
     },
     {
       "domain": "lnkc.gov.lv",
-      "count": 198
+      "count": 297
     },
     {
-      "domain": "pmlp.gov.lv",
-      "count": 196
+      "domain": "daba.gov.lv",
+      "count": 294
     },
     {
       "domain": "mk.gov.lv",
-      "count": 188
+      "count": 282
     },
     {
       "domain": "jc.gov.lv",
-      "count": 184
-    },
-    {
-      "domain": "csp.gov.lv",
-      "count": 182
+      "count": 276
     },
     {
       "domain": "saeima.lv",
-      "count": 180
+      "count": 270
     },
     {
-      "domain": "kase.gov.lv",
-      "count": 176
+      "domain": "csp.gov.lv",
+      "count": 267
     },
     {
       "domain": "lrvk.gov.lv",
-      "count": 176
+      "count": 264
+    },
+    {
+      "domain": "pmlp.gov.lv",
+      "count": 257
     },
     {
       "domain": "lgia.gov.lv",
-      "count": 170
+      "count": 255
     },
     {
       "domain": "stars.gov.lv",
-      "count": 162
+      "count": 244
     },
     {
       "domain": "dabasmuzejs.gov.lv",
-      "count": 160
+      "count": 240
     },
     {
       "domain": "mod.gov.lv",
-      "count": 160
+      "count": 240
     },
     {
       "domain": "ptac.gov.lv",
-      "count": 154
+      "count": 231
+    },
+    {
+      "domain": "kase.gov.lv",
+      "count": 228
     },
     {
       "domain": "lad.gov.lv",
-      "count": 146
+      "count": 219
     },
     {
       "domain": "spkc.gov.lv",
-      "count": 136
-    },
-    {
-      "domain": "ta.gov.lv",
-      "count": 130
+      "count": 204
     },
     {
       "domain": "vvd.gov.lv",
-      "count": 130
+      "count": 195
+    },
+    {
+      "domain": "ta.gov.lv",
+      "count": 194
     },
     {
       "domain": "caa.gov.lv",
-      "count": 128
-    },
-    {
-      "domain": "knab.gov.lv",
-      "count": 128
+      "count": 192
     },
     {
       "domain": "rs.gov.lv",
-      "count": 126
+      "count": 189
+    },
+    {
+      "domain": "knab.gov.lv",
+      "count": 186
     },
     {
       "domain": "ventspils.lv",
-      "count": 124
+      "count": 186
     },
     {
       "domain": "zva.gov.lv",
-      "count": 124
+      "count": 186
     },
     {
       "domain": "siva.gov.lv",
-      "count": 122
-    },
-    {
-      "domain": "likumi.lv",
-      "count": 120
-    },
-    {
-      "domain": "zm.gov.lv",
-      "count": 120
+      "count": 183
     },
     {
       "domain": "lnmm.gov.lv",
-      "count": 119
+      "count": 178
+    },
+    {
+      "domain": "zm.gov.lv",
+      "count": 177
+    },
+    {
+      "domain": "likumi.lv",
+      "count": 174
     },
     {
       "domain": "nva.gov.lv",
-      "count": 116
-    },
-    {
-      "domain": "vm.gov.lv",
-      "count": 115
+      "count": 173
     },
     {
       "domain": "lm.gov.lv",
-      "count": 114
+      "count": 171
+    },
+    {
+      "domain": "vm.gov.lv",
+      "count": 166
     },
     {
       "domain": "izm.gov.lv",
-      "count": 110
-    },
-    {
-      "domain": "cfla.gov.lv",
-      "count": 108
-    },
-    {
-      "domain": "iub.gov.lv",
-      "count": 108
+      "count": 165
     },
     {
       "domain": "researchlatvia.gov.lv",
-      "count": 108
+      "count": 165
     },
     {
-      "domain": "lzp.gov.lv",
-      "count": 104
+      "domain": "cfla.gov.lv",
+      "count": 162
+    },
+    {
+      "domain": "iub.gov.lv",
+      "count": 162
     },
     {
       "domain": "mfa.gov.lv",
-      "count": 104
+      "count": 156
     },
     {
       "domain": "vtua.gov.lv",
-      "count": 104
+      "count": 156
     },
     {
       "domain": "vamoic.gov.lv",
-      "count": 102
+      "count": 153
+    },
+    {
+      "domain": "lzp.gov.lv",
+      "count": 147
     }
   ],
   "top_target_domains": [
     {
       "domain": "riga.lv",
-      "count": 1166
+      "count": 1693
     },
     {
       "domain": "facebook.com",
-      "count": 941
+      "count": 1394
     },
     {
       "domain": "youtube.com",
-      "count": 668
+      "count": 987
     },
     {
       "domain": "latvija.gov.lv",
-      "count": 610
+      "count": 912
     },
     {
       "domain": "twitter.com",
-      "count": 564
+      "count": 842
     },
     {
       "domain": "instagram.com",
-      "count": 531
+      "count": 793
     },
     {
       "domain": "rtu.lv",
-      "count": 437
+      "count": 657
     },
     {
       "domain": "googleapis.com",
-      "count": 407
+      "count": 602
     },
     {
       "domain": "linkedin.com",
-      "count": 399
+      "count": 581
     },
     {
       "domain": "daugavpils.lv",
-      "count": 241
+      "count": 362
     },
     {
       "domain": "flickr.com",
-      "count": 240
+      "count": 360
     },
     {
       "domain": "jelgava.lv",
-      "count": 226
-    },
-    {
-      "domain": "iem.gov.lv",
-      "count": 198
+      "count": 319
     },
     {
       "domain": "google.com",
-      "count": 197
+      "count": 287
     },
     {
       "domain": "googletagmanager.com",
-      "count": 195
+      "count": 287
+    },
+    {
+      "domain": "iem.gov.lv",
+      "count": 273
     },
     {
       "domain": "liepaja.lv",
-      "count": 174
+      "count": 261
     },
     {
       "domain": "likumi.lv",
-      "count": 166
+      "count": 245
     },
     {
       "domain": "jsdelivr.net",
-      "count": 144
+      "count": 217
     },
     {
       "domain": "latvija.lv",
-      "count": 144
+      "count": 206
     },
     {
       "domain": "vugd.gov.lv",
-      "count": 132
+      "count": 195
     },
     {
       "domain": "mk.gov.lv",
-      "count": 128
-    },
-    {
-      "domain": "pmlp.gov.lv",
-      "count": 118
-    },
-    {
-      "domain": "europa.eu",
-      "count": 117
+      "count": 190
     },
     {
       "domain": "readspeaker.com",
-      "count": 112
+      "count": 168
     },
     {
       "domain": "vid.gov.lv",
-      "count": 112
+      "count": 168
     },
     {
       "domain": "x.com",
-      "count": 110
+      "count": 167
+    },
+    {
+      "domain": "europa.eu",
+      "count": 167
+    },
+    {
+      "domain": "pmlp.gov.lv",
+      "count": 154
     },
     {
       "domain": "knab.gov.lv",
-      "count": 107
-    },
-    {
-      "domain": "cloudflare.com",
-      "count": 98
+      "count": 154
     },
     {
       "domain": "fid.gov.lv",
-      "count": 98
+      "count": 147
     },
     {
       "domain": "lgia.gov.lv",
-      "count": 94
+      "count": 141
+    },
+    {
+      "domain": "cloudflare.com",
+      "count": 138
     },
     {
       "domain": "kem.gov.lv",
-      "count": 92
+      "count": 138
     },
     {
       "domain": "viaa.gov.lv",
-      "count": 88
+      "count": 132
     },
     {
       "domain": "lad.gov.lv",
-      "count": 88
+      "count": 132
     },
     {
       "domain": "caa.gov.lv",
-      "count": 84
-    },
-    {
-      "domain": "csp.gov.lv",
-      "count": 84
-    },
-    {
-      "domain": "stat.gov.lv",
-      "count": 84
-    },
-    {
-      "domain": "ptac.gov.lv",
-      "count": 84
+      "count": 126
     },
     {
       "domain": "saeima.lv",
-      "count": 84
+      "count": 126
     },
     {
-      "domain": "spkc.gov.lv",
-      "count": 80
+      "domain": "stat.gov.lv",
+      "count": 124
+    },
+    {
+      "domain": "ptac.gov.lv",
+      "count": 123
+    },
+    {
+      "domain": "csp.gov.lv",
+      "count": 120
     },
     {
       "domain": "izm.gov.lv",
-      "count": 78
+      "count": 118
     },
     {
-      "domain": "eveseliba.gov.lv",
-      "count": 76
-    },
-    {
-      "domain": "ta.gov.lv",
-      "count": 76
+      "domain": "spkc.gov.lv",
+      "count": 114
     },
     {
       "domain": "daba.gov.lv",
-      "count": 75
+      "count": 114
     },
     {
-      "domain": "dreamapply.com",
-      "count": 73
+      "domain": "eveseliba.gov.lv",
+      "count": 114
+    },
+    {
+      "domain": "ta.gov.lv",
+      "count": 113
     },
     {
       "domain": "varam.gov.lv",
-      "count": 72
+      "count": 108
     },
     {
       "domain": "iub.gov.lv",
-      "count": 72
+      "count": 108
+    },
+    {
+      "domain": "dreamapply.com",
+      "count": 108
     },
     {
       "domain": "siva.gov.lv",
-      "count": 72
+      "count": 108
     },
     {
       "domain": "mod.gov.lv",
-      "count": 70
+      "count": 105
     },
     {
       "domain": "ldc.gov.lv",
-      "count": 70
+      "count": 105
     },
     {
       "domain": "rs.gov.lv",
-      "count": 70
+      "count": 105
     }
   ],
   "relationship_types": {
-    "editorial_link": 1926,
+    "editorial_link": 1891,
     "image_or_media_dependency": 288,
-    "script_dependency": 424,
-    "stylesheet_dependency": 359,
+    "script_dependency": 421,
+    "stylesheet_dependency": 360,
     "font_or_preload_dependency": 138,
-    "form_destination": 203
+    "form_destination": 200
   },
-  "generated_at": "2026-09-18T11:27:30.353985+00:00"
+  "generated_at": "2026-09-18T16:43:34.905053+00:00"
 }

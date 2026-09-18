@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T11:27:34.271105+00:00",
+  "generated_at": "2026-09-18T16:43:37.386118+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -173,7 +173,7 @@
     {
       "service": "googleapis.com",
       "countries": 32,
-      "domains": 4280
+      "domains": 4278
     },
     {
       "service": "googletagmanager.com",
@@ -183,7 +183,7 @@
     {
       "service": "gstatic.com",
       "countries": 32,
-      "domains": 1708
+      "domains": 1706
     },
     {
       "service": "jsdelivr.net",
@@ -218,7 +218,7 @@
     {
       "service": "bootstrapcdn.com",
       "countries": 29,
-      "domains": 612
+      "domains": 611
     },
     {
       "service": "typekit.net",
@@ -1900,9 +1900,9 @@
       "country_code": "LATVIA",
       "country": "Latvia",
       "service": "jsdelivr.net",
-      "domains": 13,
+      "domains": 14,
       "scanned_domains": 141,
-      "percent": 9.2
+      "percent": 9.9
     },
     {
       "country_code": "LATVIA",
@@ -1948,9 +1948,9 @@
       "country_code": "LATVIA",
       "country": "Latvia",
       "service": "bootstrapcdn.com",
-      "domains": 6,
+      "domains": 5,
       "scanned_domains": 141,
-      "percent": 4.3
+      "percent": 3.5
     },
     {
       "country_code": "LATVIA",
@@ -4436,9 +4436,9 @@
       "country_code": "ICELAND",
       "country": "Iceland",
       "service": "googleapis.com",
-      "domains": 11,
+      "domains": 9,
       "scanned_domains": 19,
-      "percent": 57.9
+      "percent": 47.4
     },
     {
       "country_code": "ICELAND",
@@ -4452,17 +4452,17 @@
       "country_code": "ICELAND",
       "country": "Iceland",
       "service": "gstatic.com",
-      "domains": 3,
+      "domains": 1,
       "scanned_domains": 19,
-      "percent": 15.8
+      "percent": 5.3
     },
     {
       "country_code": "ICELAND",
       "country": "Iceland",
       "service": "jsdelivr.net",
-      "domains": 2,
+      "domains": 1,
       "scanned_domains": 19,
-      "percent": 10.5
+      "percent": 5.3
     },
     {
       "country_code": "ICELAND",
