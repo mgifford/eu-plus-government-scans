@@ -21,7 +21,7 @@
     },
     {
       "domain": "vaxjo.se",
-      "count": 702
+      "count": 742
     },
     {
       "domain": "stockholm.se",
@@ -211,15 +211,15 @@
     },
     {
       "domain": "facebook.com",
-      "count": 950
+      "count": 952
     },
     {
       "domain": "linkedin.com",
-      "count": 815
+      "count": 817
     },
     {
       "domain": "instagram.com",
-      "count": 764
+      "count": 766
     },
     {
       "domain": "regionstockholm.se",
@@ -231,7 +231,7 @@
     },
     {
       "domain": "vaxjo.se",
-      "count": 492
+      "count": 524
     },
     {
       "domain": "1177.se",
@@ -334,12 +334,12 @@
       "count": 160
     },
     {
-      "domain": "scb.se",
+      "domain": "rekai.se",
       "count": 159
     },
     {
-      "domain": "rekai.se",
-      "count": 157
+      "domain": "scb.se",
+      "count": 159
     },
     {
       "domain": "kronofogden.se",
@@ -414,5 +414,5 @@
     "form_destination": 491,
     "image_or_media_dependency": 683
   },
-  "generated_at": "2026-09-17T21:48:25.795883+00:00"
+  "generated_at": "2026-09-19T11:12:37.885036+00:00"
 }

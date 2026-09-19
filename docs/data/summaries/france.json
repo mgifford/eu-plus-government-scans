@@ -211,7 +211,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 6148
+      "count": 6171
     },
     {
       "domain": "haute-garonne.fr",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 4164
+      "count": 4187
     },
     {
       "domain": "skolengo.com",
@@ -231,15 +231,15 @@
     },
     {
       "domain": "instagram.com",
-      "count": 3717
+      "count": 3732
     },
     {
       "domain": "data.gouv.fr",
-      "count": 3519
+      "count": 3542
     },
     {
       "domain": "twitter.com",
-      "count": 3354
+      "count": 3371
     },
     {
       "domain": "cnam.fr",
@@ -247,7 +247,7 @@
     },
     {
       "domain": "legifrance.gouv.fr",
-      "count": 3058
+      "count": 3081
     },
     {
       "domain": "googleapis.com",
@@ -263,11 +263,11 @@
     },
     {
       "domain": "github.com",
-      "count": 2402
+      "count": 2425
     },
     {
       "domain": "info.gouv.fr",
-      "count": 1927
+      "count": 1950
     },
     {
       "domain": "education.gouv.fr",
@@ -275,11 +275,11 @@
     },
     {
       "domain": "service-public.fr",
-      "count": 1725
+      "count": 1726
     },
     {
       "domain": "service-public.gouv.fr",
-      "count": 1613
+      "count": 1636
     },
     {
       "domain": "beta.gouv.fr",
@@ -323,7 +323,7 @@
     },
     {
       "domain": "x.com",
-      "count": 1068
+      "count": 1085
     },
     {
       "domain": "marseille.fr",
@@ -351,7 +351,7 @@
     },
     {
       "domain": "interieur.gouv.fr",
-      "count": 883
+      "count": 886
     },
     {
       "domain": "isere.fr",
@@ -414,5 +414,5 @@
     "form_destination": 1716,
     "font_or_preload_dependency": 706
   },
-  "generated_at": "2026-09-17T21:48:25.292531+00:00"
+  "generated_at": "2026-09-19T11:12:37.995047+00:00"
 }
