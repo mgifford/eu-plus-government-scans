@@ -10,8 +10,8 @@ UNITED_KINGDOM_UK,United Kingdom,jquery.com,183,3146,5.8
 UNITED_KINGDOM_UK,United Kingdom,unpkg.com,344,3146,10.9
 UNITED_KINGDOM_UK,United Kingdom,bootstrapcdn.com,164,3146,5.2
 UNITED_KINGDOM_UK,United Kingdom,typekit.net,147,3146,4.7
-UNITED_KINGDOM_UK,United Kingdom,facebook.com,24,3146,0.8
 UNITED_KINGDOM_UK,United Kingdom,cookiebot.com,57,3146,1.8
+UNITED_KINGDOM_UK,United Kingdom,facebook.com,24,3146,0.8
 UNITED_KINGDOM_UK,United Kingdom,amazonaws.com,137,3146,4.4
 UNITED_KINGDOM_UK,United Kingdom,facebook.net,64,3146,2.0
 UNITED_KINGDOM_UK,United Kingdom,addtoany.com,36,3146,1.1
@@ -30,8 +30,8 @@ POLAND,Poland,jquery.com,134,2436,5.5
 POLAND,Poland,unpkg.com,67,2436,2.8
 POLAND,Poland,bootstrapcdn.com,160,2436,6.6
 POLAND,Poland,typekit.net,29,2436,1.2
-POLAND,Poland,facebook.com,118,2436,4.8
 POLAND,Poland,cookiebot.com,27,2436,1.1
+POLAND,Poland,facebook.com,118,2436,4.8
 POLAND,Poland,amazonaws.com,10,2436,0.4
 POLAND,Poland,facebook.net,70,2436,2.9
 POLAND,Poland,addtoany.com,23,2436,0.9
@@ -50,8 +50,8 @@ FRANCE,France,jquery.com,47,670,7.0
 FRANCE,France,unpkg.com,70,670,10.4
 FRANCE,France,bootstrapcdn.com,73,670,10.9
 FRANCE,France,typekit.net,29,670,4.3
-FRANCE,France,facebook.com,10,670,1.5
 FRANCE,France,cookiebot.com,4,670,0.6
+FRANCE,France,facebook.com,10,670,1.5
 FRANCE,France,amazonaws.com,12,670,1.8
 FRANCE,France,facebook.net,12,670,1.8
 FRANCE,France,addtoany.com,29,670,4.3
@@ -70,8 +70,8 @@ PORTUGAL,Portugal,jquery.com,44,387,11.4
 PORTUGAL,Portugal,unpkg.com,51,387,13.2
 PORTUGAL,Portugal,bootstrapcdn.com,30,387,7.8
 PORTUGAL,Portugal,typekit.net,8,387,2.1
-PORTUGAL,Portugal,facebook.com,7,387,1.8
 PORTUGAL,Portugal,cookiebot.com,3,387,0.8
+PORTUGAL,Portugal,facebook.com,7,387,1.8
 PORTUGAL,Portugal,amazonaws.com,9,387,2.3
 PORTUGAL,Portugal,facebook.net,4,387,1.0
 PORTUGAL,Portugal,addtoany.com,10,387,2.6
@@ -90,8 +90,8 @@ GREECE,Greece,jquery.com,26,362,7.2
 GREECE,Greece,unpkg.com,24,362,6.6
 GREECE,Greece,bootstrapcdn.com,24,362,6.6
 GREECE,Greece,typekit.net,3,362,0.8
-GREECE,Greece,facebook.com,4,362,1.1
 GREECE,Greece,cookiebot.com,1,362,0.3
+GREECE,Greece,facebook.com,4,362,1.1
 GREECE,Greece,amazonaws.com,1,362,0.3
 GREECE,Greece,facebook.net,9,362,2.5
 GREECE,Greece,addtoany.com,10,362,2.8
@@ -110,8 +110,8 @@ SPAIN,Spain,jquery.com,26,242,10.7
 SPAIN,Spain,unpkg.com,22,242,9.1
 SPAIN,Spain,bootstrapcdn.com,26,242,10.7
 SPAIN,Spain,typekit.net,1,242,0.4
-SPAIN,Spain,facebook.com,10,242,4.1
 SPAIN,Spain,cookiebot.com,1,242,0.4
+SPAIN,Spain,facebook.com,10,242,4.1
 SPAIN,Spain,amazonaws.com,4,242,1.7
 SPAIN,Spain,facebook.net,10,242,4.1
 SPAIN,Spain,addtoany.com,19,242,7.9
@@ -130,8 +130,8 @@ SWEDEN,Sweden,jquery.com,14,241,5.8
 SWEDEN,Sweden,unpkg.com,2,241,0.8
 SWEDEN,Sweden,bootstrapcdn.com,12,241,5.0
 SWEDEN,Sweden,typekit.net,11,241,4.6
-SWEDEN,Sweden,facebook.com,1,241,0.4
 SWEDEN,Sweden,cookiebot.com,18,241,7.5
+SWEDEN,Sweden,facebook.com,1,241,0.4
 SWEDEN,Sweden,amazonaws.com,3,241,1.2
 SWEDEN,Sweden,facebook.net,1,241,0.4
 SWEDEN,Sweden,addtoany.com,1,241,0.4
@@ -150,8 +150,8 @@ GERMANY,Germany,jquery.com,10,215,4.7
 GERMANY,Germany,unpkg.com,4,215,1.9
 GERMANY,Germany,bootstrapcdn.com,7,215,3.3
 GERMANY,Germany,typekit.net,2,215,0.9
-GERMANY,Germany,facebook.com,2,215,0.9
 GERMANY,Germany,cookiebot.com,11,215,5.1
+GERMANY,Germany,facebook.com,2,215,0.9
 GERMANY,Germany,amazonaws.com,6,215,2.8
 GERMANY,Germany,facebook.net,0,215,0.0
 GERMANY,Germany,addtoany.com,2,215,0.9
@@ -170,8 +170,8 @@ CANADA,Canada,jquery.com,22,191,11.5
 CANADA,Canada,unpkg.com,22,191,11.5
 CANADA,Canada,bootstrapcdn.com,24,191,12.6
 CANADA,Canada,typekit.net,10,191,5.2
-CANADA,Canada,facebook.com,6,191,3.1
 CANADA,Canada,cookiebot.com,1,191,0.5
+CANADA,Canada,facebook.com,6,191,3.1
 CANADA,Canada,amazonaws.com,14,191,7.3
 CANADA,Canada,facebook.net,6,191,3.1
 CANADA,Canada,addtoany.com,10,191,5.2
@@ -190,8 +190,8 @@ ITALY,Italy,jquery.com,39,146,26.7
 ITALY,Italy,unpkg.com,15,146,10.3
 ITALY,Italy,bootstrapcdn.com,18,146,12.3
 ITALY,Italy,typekit.net,2,146,1.4
-ITALY,Italy,facebook.com,4,146,2.7
 ITALY,Italy,cookiebot.com,7,146,4.8
+ITALY,Italy,facebook.com,4,146,2.7
 ITALY,Italy,amazonaws.com,6,146,4.1
 ITALY,Italy,facebook.net,5,146,3.4
 ITALY,Italy,addtoany.com,11,146,7.5
@@ -210,8 +210,8 @@ LATVIA,Latvia,jquery.com,7,141,5.0
 LATVIA,Latvia,unpkg.com,4,141,2.8
 LATVIA,Latvia,bootstrapcdn.com,5,141,3.5
 LATVIA,Latvia,typekit.net,3,141,2.1
-LATVIA,Latvia,facebook.com,5,141,3.5
 LATVIA,Latvia,cookiebot.com,4,141,2.8
+LATVIA,Latvia,facebook.com,5,141,3.5
 LATVIA,Latvia,amazonaws.com,0,141,0.0
 LATVIA,Latvia,facebook.net,0,141,0.0
 LATVIA,Latvia,addtoany.com,8,141,5.7
@@ -230,8 +230,8 @@ IRELAND,Ireland,jquery.com,14,102,13.7
 IRELAND,Ireland,unpkg.com,5,102,4.9
 IRELAND,Ireland,bootstrapcdn.com,11,102,10.8
 IRELAND,Ireland,typekit.net,7,102,6.9
-IRELAND,Ireland,facebook.com,3,102,2.9
 IRELAND,Ireland,cookiebot.com,13,102,12.7
+IRELAND,Ireland,facebook.com,3,102,2.9
 IRELAND,Ireland,amazonaws.com,8,102,7.8
 IRELAND,Ireland,facebook.net,1,102,1.0
 IRELAND,Ireland,addtoany.com,1,102,1.0
@@ -239,19 +239,19 @@ IRELAND,Ireland,arcgis.com,2,102,2.0
 IRELAND,Ireland,cdn-cookieyes.com,3,102,2.9
 IRELAND,Ireland,fbcdn.net,0,102,0.0
 IRELAND,Ireland,mapbox.com,0,102,0.0
-DENMARK,Denmark,googleapis.com,25,79,31.6
+DENMARK,Denmark,googleapis.com,26,79,32.9
 DENMARK,Denmark,googletagmanager.com,1,79,1.3
 DENMARK,Denmark,gstatic.com,14,79,17.7
 DENMARK,Denmark,jsdelivr.net,5,79,6.3
 DENMARK,Denmark,fontawesome.com,2,79,2.5
 DENMARK,Denmark,google.com,6,79,7.6
-DENMARK,Denmark,cloudflare.com,12,79,15.2
-DENMARK,Denmark,jquery.com,8,79,10.1
+DENMARK,Denmark,cloudflare.com,13,79,16.5
+DENMARK,Denmark,jquery.com,9,79,11.4
 DENMARK,Denmark,unpkg.com,9,79,11.4
 DENMARK,Denmark,bootstrapcdn.com,3,79,3.8
 DENMARK,Denmark,typekit.net,4,79,5.1
-DENMARK,Denmark,facebook.com,0,79,0.0
 DENMARK,Denmark,cookiebot.com,9,79,11.4
+DENMARK,Denmark,facebook.com,0,79,0.0
 DENMARK,Denmark,amazonaws.com,0,79,0.0
 DENMARK,Denmark,facebook.net,1,79,1.3
 DENMARK,Denmark,addtoany.com,0,79,0.0
@@ -270,8 +270,8 @@ NETHERLANDS,Netherlands,jquery.com,5,69,7.2
 NETHERLANDS,Netherlands,unpkg.com,4,69,5.8
 NETHERLANDS,Netherlands,bootstrapcdn.com,6,69,8.7
 NETHERLANDS,Netherlands,typekit.net,4,69,5.8
-NETHERLANDS,Netherlands,facebook.com,1,69,1.4
 NETHERLANDS,Netherlands,cookiebot.com,5,69,7.2
+NETHERLANDS,Netherlands,facebook.com,1,69,1.4
 NETHERLANDS,Netherlands,amazonaws.com,2,69,2.9
 NETHERLANDS,Netherlands,facebook.net,1,69,1.4
 NETHERLANDS,Netherlands,addtoany.com,0,69,0.0
@@ -290,8 +290,8 @@ BULGARIA,Bulgaria,jquery.com,9,55,16.4
 BULGARIA,Bulgaria,unpkg.com,5,55,9.1
 BULGARIA,Bulgaria,bootstrapcdn.com,7,55,12.7
 BULGARIA,Bulgaria,typekit.net,0,55,0.0
-BULGARIA,Bulgaria,facebook.com,1,55,1.8
 BULGARIA,Bulgaria,cookiebot.com,1,55,1.8
+BULGARIA,Bulgaria,facebook.com,1,55,1.8
 BULGARIA,Bulgaria,amazonaws.com,1,55,1.8
 BULGARIA,Bulgaria,facebook.net,1,55,1.8
 BULGARIA,Bulgaria,addtoany.com,1,55,1.8
@@ -310,8 +310,8 @@ BELGIUM,Belgium,jquery.com,8,41,19.5
 BELGIUM,Belgium,unpkg.com,10,41,24.4
 BELGIUM,Belgium,bootstrapcdn.com,10,41,24.4
 BELGIUM,Belgium,typekit.net,1,41,2.4
-BELGIUM,Belgium,facebook.com,1,41,2.4
 BELGIUM,Belgium,cookiebot.com,3,41,7.3
+BELGIUM,Belgium,facebook.com,1,41,2.4
 BELGIUM,Belgium,amazonaws.com,6,41,14.6
 BELGIUM,Belgium,facebook.net,0,41,0.0
 BELGIUM,Belgium,addtoany.com,4,41,9.8
@@ -330,8 +330,8 @@ FINLAND,Finland,jquery.com,1,40,2.5
 FINLAND,Finland,unpkg.com,0,40,0.0
 FINLAND,Finland,bootstrapcdn.com,0,40,0.0
 FINLAND,Finland,typekit.net,1,40,2.5
-FINLAND,Finland,facebook.com,0,40,0.0
 FINLAND,Finland,cookiebot.com,2,40,5.0
+FINLAND,Finland,facebook.com,0,40,0.0
 FINLAND,Finland,amazonaws.com,0,40,0.0
 FINLAND,Finland,facebook.net,0,40,0.0
 FINLAND,Finland,addtoany.com,2,40,5.0
@@ -350,8 +350,8 @@ LUXEMBOURG,Luxembourg,jquery.com,2,40,5.0
 LUXEMBOURG,Luxembourg,unpkg.com,5,40,12.5
 LUXEMBOURG,Luxembourg,bootstrapcdn.com,2,40,5.0
 LUXEMBOURG,Luxembourg,typekit.net,6,40,15.0
-LUXEMBOURG,Luxembourg,facebook.com,0,40,0.0
 LUXEMBOURG,Luxembourg,cookiebot.com,2,40,5.0
+LUXEMBOURG,Luxembourg,facebook.com,0,40,0.0
 LUXEMBOURG,Luxembourg,amazonaws.com,1,40,2.5
 LUXEMBOURG,Luxembourg,facebook.net,0,40,0.0
 LUXEMBOURG,Luxembourg,addtoany.com,1,40,2.5
@@ -370,8 +370,8 @@ AUSTRIA,Austria,jquery.com,1,34,2.9
 AUSTRIA,Austria,unpkg.com,1,34,2.9
 AUSTRIA,Austria,bootstrapcdn.com,0,34,0.0
 AUSTRIA,Austria,typekit.net,1,34,2.9
-AUSTRIA,Austria,facebook.com,0,34,0.0
 AUSTRIA,Austria,cookiebot.com,3,34,8.8
+AUSTRIA,Austria,facebook.com,0,34,0.0
 AUSTRIA,Austria,amazonaws.com,0,34,0.0
 AUSTRIA,Austria,facebook.net,1,34,2.9
 AUSTRIA,Austria,addtoany.com,0,34,0.0
@@ -390,8 +390,8 @@ NORWAY,Norway,jquery.com,4,34,11.8
 NORWAY,Norway,unpkg.com,3,34,8.8
 NORWAY,Norway,bootstrapcdn.com,4,34,11.8
 NORWAY,Norway,typekit.net,2,34,5.9
-NORWAY,Norway,facebook.com,0,34,0.0
 NORWAY,Norway,cookiebot.com,4,34,11.8
+NORWAY,Norway,facebook.com,0,34,0.0
 NORWAY,Norway,amazonaws.com,0,34,0.0
 NORWAY,Norway,facebook.net,0,34,0.0
 NORWAY,Norway,addtoany.com,0,34,0.0
@@ -410,8 +410,8 @@ CZECHIA,Czechia,jquery.com,9,32,28.1
 CZECHIA,Czechia,unpkg.com,6,32,18.8
 CZECHIA,Czechia,bootstrapcdn.com,5,32,15.6
 CZECHIA,Czechia,typekit.net,2,32,6.2
-CZECHIA,Czechia,facebook.com,6,32,18.8
 CZECHIA,Czechia,cookiebot.com,1,32,3.1
+CZECHIA,Czechia,facebook.com,6,32,18.8
 CZECHIA,Czechia,amazonaws.com,1,32,3.1
 CZECHIA,Czechia,facebook.net,2,32,6.2
 CZECHIA,Czechia,addtoany.com,0,32,0.0
@@ -430,8 +430,8 @@ CROATIA,Croatia,jquery.com,2,31,6.5
 CROATIA,Croatia,unpkg.com,1,31,3.2
 CROATIA,Croatia,bootstrapcdn.com,4,31,12.9
 CROATIA,Croatia,typekit.net,1,31,3.2
-CROATIA,Croatia,facebook.com,2,31,6.5
 CROATIA,Croatia,cookiebot.com,0,31,0.0
+CROATIA,Croatia,facebook.com,2,31,6.5
 CROATIA,Croatia,amazonaws.com,0,31,0.0
 CROATIA,Croatia,facebook.net,2,31,6.5
 CROATIA,Croatia,addtoany.com,2,31,6.5
@@ -440,18 +440,18 @@ CROATIA,Croatia,cdn-cookieyes.com,0,31,0.0
 CROATIA,Croatia,fbcdn.net,1,31,3.2
 CROATIA,Croatia,mapbox.com,0,31,0.0
 ESTONIA,Estonia,googleapis.com,10,31,32.3
-ESTONIA,Estonia,googletagmanager.com,8,31,25.8
-ESTONIA,Estonia,gstatic.com,5,31,16.1
+ESTONIA,Estonia,googletagmanager.com,9,31,29.0
+ESTONIA,Estonia,gstatic.com,7,31,22.6
 ESTONIA,Estonia,jsdelivr.net,4,31,12.9
 ESTONIA,Estonia,fontawesome.com,5,31,16.1
 ESTONIA,Estonia,google.com,3,31,9.7
-ESTONIA,Estonia,cloudflare.com,10,31,32.3
+ESTONIA,Estonia,cloudflare.com,9,31,29.0
 ESTONIA,Estonia,jquery.com,2,31,6.5
 ESTONIA,Estonia,unpkg.com,0,31,0.0
 ESTONIA,Estonia,bootstrapcdn.com,2,31,6.5
 ESTONIA,Estonia,typekit.net,1,31,3.2
+ESTONIA,Estonia,cookiebot.com,1,31,3.2
 ESTONIA,Estonia,facebook.com,3,31,9.7
-ESTONIA,Estonia,cookiebot.com,0,31,0.0
 ESTONIA,Estonia,amazonaws.com,0,31,0.0
 ESTONIA,Estonia,facebook.net,3,31,9.7
 ESTONIA,Estonia,addtoany.com,3,31,9.7
@@ -470,8 +470,8 @@ HUNGARY,Hungary,jquery.com,4,27,14.8
 HUNGARY,Hungary,unpkg.com,1,27,3.7
 HUNGARY,Hungary,bootstrapcdn.com,1,27,3.7
 HUNGARY,Hungary,typekit.net,1,27,3.7
-HUNGARY,Hungary,facebook.com,4,27,14.8
 HUNGARY,Hungary,cookiebot.com,0,27,0.0
+HUNGARY,Hungary,facebook.com,4,27,14.8
 HUNGARY,Hungary,amazonaws.com,1,27,3.7
 HUNGARY,Hungary,facebook.net,1,27,3.7
 HUNGARY,Hungary,addtoany.com,0,27,0.0
@@ -490,8 +490,8 @@ ROMANIA,Romania,jquery.com,5,24,20.8
 ROMANIA,Romania,unpkg.com,1,24,4.2
 ROMANIA,Romania,bootstrapcdn.com,3,24,12.5
 ROMANIA,Romania,typekit.net,0,24,0.0
-ROMANIA,Romania,facebook.com,0,24,0.0
 ROMANIA,Romania,cookiebot.com,0,24,0.0
+ROMANIA,Romania,facebook.com,0,24,0.0
 ROMANIA,Romania,amazonaws.com,1,24,4.2
 ROMANIA,Romania,facebook.net,2,24,8.3
 ROMANIA,Romania,addtoany.com,0,24,0.0
@@ -510,8 +510,8 @@ SLOVAKIA,Slovakia,jquery.com,3,20,15.0
 SLOVAKIA,Slovakia,unpkg.com,3,20,15.0
 SLOVAKIA,Slovakia,bootstrapcdn.com,1,20,5.0
 SLOVAKIA,Slovakia,typekit.net,0,20,0.0
-SLOVAKIA,Slovakia,facebook.com,2,20,10.0
 SLOVAKIA,Slovakia,cookiebot.com,0,20,0.0
+SLOVAKIA,Slovakia,facebook.com,2,20,10.0
 SLOVAKIA,Slovakia,amazonaws.com,1,20,5.0
 SLOVAKIA,Slovakia,facebook.net,3,20,15.0
 SLOVAKIA,Slovakia,addtoany.com,1,20,5.0
@@ -530,8 +530,8 @@ ICELAND,Iceland,jquery.com,0,19,0.0
 ICELAND,Iceland,unpkg.com,1,19,5.3
 ICELAND,Iceland,bootstrapcdn.com,1,19,5.3
 ICELAND,Iceland,typekit.net,3,19,15.8
-ICELAND,Iceland,facebook.com,1,19,5.3
 ICELAND,Iceland,cookiebot.com,0,19,0.0
+ICELAND,Iceland,facebook.com,1,19,5.3
 ICELAND,Iceland,amazonaws.com,0,19,0.0
 ICELAND,Iceland,facebook.net,0,19,0.0
 ICELAND,Iceland,addtoany.com,0,19,0.0
@@ -550,8 +550,8 @@ SLOVENIA,Slovenia,jquery.com,2,16,12.5
 SLOVENIA,Slovenia,unpkg.com,1,16,6.2
 SLOVENIA,Slovenia,bootstrapcdn.com,2,16,12.5
 SLOVENIA,Slovenia,typekit.net,0,16,0.0
-SLOVENIA,Slovenia,facebook.com,0,16,0.0
 SLOVENIA,Slovenia,cookiebot.com,0,16,0.0
+SLOVENIA,Slovenia,facebook.com,0,16,0.0
 SLOVENIA,Slovenia,amazonaws.com,0,16,0.0
 SLOVENIA,Slovenia,facebook.net,0,16,0.0
 SLOVENIA,Slovenia,addtoany.com,0,16,0.0
@@ -570,8 +570,8 @@ LITHUANIA,Lithuania,jquery.com,3,15,20.0
 LITHUANIA,Lithuania,unpkg.com,1,15,6.7
 LITHUANIA,Lithuania,bootstrapcdn.com,2,15,13.3
 LITHUANIA,Lithuania,typekit.net,0,15,0.0
-LITHUANIA,Lithuania,facebook.com,1,15,6.7
 LITHUANIA,Lithuania,cookiebot.com,0,15,0.0
+LITHUANIA,Lithuania,facebook.com,1,15,6.7
 LITHUANIA,Lithuania,amazonaws.com,1,15,6.7
 LITHUANIA,Lithuania,facebook.net,1,15,6.7
 LITHUANIA,Lithuania,addtoany.com,0,15,0.0
@@ -590,8 +590,8 @@ SWITZERLAND,Switzerland,jquery.com,4,9,44.4
 SWITZERLAND,Switzerland,unpkg.com,2,9,22.2
 SWITZERLAND,Switzerland,bootstrapcdn.com,3,9,33.3
 SWITZERLAND,Switzerland,typekit.net,1,9,11.1
-SWITZERLAND,Switzerland,facebook.com,0,9,0.0
 SWITZERLAND,Switzerland,cookiebot.com,1,9,11.1
+SWITZERLAND,Switzerland,facebook.com,0,9,0.0
 SWITZERLAND,Switzerland,amazonaws.com,2,9,22.2
 SWITZERLAND,Switzerland,facebook.net,0,9,0.0
 SWITZERLAND,Switzerland,addtoany.com,0,9,0.0
@@ -610,8 +610,8 @@ REPUBLIC_OF_CYPRUS,Cyprus,jquery.com,0,6,0.0
 REPUBLIC_OF_CYPRUS,Cyprus,unpkg.com,0,6,0.0
 REPUBLIC_OF_CYPRUS,Cyprus,bootstrapcdn.com,0,6,0.0
 REPUBLIC_OF_CYPRUS,Cyprus,typekit.net,0,6,0.0
-REPUBLIC_OF_CYPRUS,Cyprus,facebook.com,0,6,0.0
 REPUBLIC_OF_CYPRUS,Cyprus,cookiebot.com,0,6,0.0
+REPUBLIC_OF_CYPRUS,Cyprus,facebook.com,0,6,0.0
 REPUBLIC_OF_CYPRUS,Cyprus,amazonaws.com,0,6,0.0
 REPUBLIC_OF_CYPRUS,Cyprus,facebook.net,0,6,0.0
 REPUBLIC_OF_CYPRUS,Cyprus,addtoany.com,2,6,33.3
@@ -630,8 +630,8 @@ MALTA,Malta,jquery.com,1,3,33.3
 MALTA,Malta,unpkg.com,1,3,33.3
 MALTA,Malta,bootstrapcdn.com,1,3,33.3
 MALTA,Malta,typekit.net,1,3,33.3
-MALTA,Malta,facebook.com,1,3,33.3
 MALTA,Malta,cookiebot.com,1,3,33.3
+MALTA,Malta,facebook.com,1,3,33.3
 MALTA,Malta,amazonaws.com,1,3,33.3
 MALTA,Malta,facebook.net,1,3,33.3
 MALTA,Malta,addtoany.com,1,3,33.3

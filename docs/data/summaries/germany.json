@@ -1,19 +1,19 @@
 {
   "country_code": "GERMANY",
-  "total_relationships": 22088,
+  "total_relationships": 22096,
   "total_source_domains": 223,
   "top_source_domains": [
     {
       "domain": "sachsen.de",
-      "count": 48117
+      "count": 48266
+    },
+    {
+      "domain": "rlp.de",
+      "count": 25356
     },
     {
       "domain": "niedersachsen.de",
       "count": 23403
-    },
-    {
-      "domain": "rlp.de",
-      "count": 23327
     },
     {
       "domain": "bayern.de",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "sachsen.de",
-      "count": 42223
+      "count": 42359
     },
     {
       "domain": "niedersachsen.de",
@@ -215,7 +215,7 @@
     },
     {
       "domain": "rlp.de",
-      "count": 18624
+      "count": 19917
     },
     {
       "domain": "bayern.de",
@@ -243,11 +243,11 @@
     },
     {
       "domain": "facebook.com",
-      "count": 3599
+      "count": 3616
     },
     {
       "domain": "instagram.com",
-      "count": 3509
+      "count": 3555
     },
     {
       "domain": "bund.de",
@@ -263,19 +263,19 @@
     },
     {
       "domain": "twitter.com",
-      "count": 2342
+      "count": 2347
     },
     {
       "domain": "youtube.com",
-      "count": 2241
+      "count": 2274
+    },
+    {
+      "domain": "linkedin.com",
+      "count": 1852
     },
     {
       "domain": "berlin.de",
       "count": 1826
-    },
-    {
-      "domain": "linkedin.com",
-      "count": 1821
     },
     {
       "domain": "baden-wuerttemberg.de",
@@ -291,11 +291,11 @@
     },
     {
       "domain": "etracker.com",
-      "count": 943
+      "count": 945
     },
     {
       "domain": "jsdelivr.net",
-      "count": 904
+      "count": 908
     },
     {
       "domain": "readspeaker.com",
@@ -303,15 +303,15 @@
     },
     {
       "domain": "zvg-portal.de",
-      "count": 772
+      "count": 775
     },
     {
       "domain": "enable-javascript.com",
-      "count": 692
+      "count": 694
     },
     {
       "domain": "lehrer-werden-in-sachsen.de",
-      "count": 665
+      "count": 667
     },
     {
       "domain": "polyplanet.de",
@@ -331,7 +331,7 @@
     },
     {
       "domain": "google.com",
-      "count": 572
+      "count": 575
     },
     {
       "domain": "brandenburg.de",
@@ -346,32 +346,32 @@
       "count": 525
     },
     {
+      "domain": "justiz.de",
+      "count": 471
+    },
+    {
       "domain": "dguv.de",
       "count": 470
     },
     {
-      "domain": "justiz.de",
-      "count": 469
+      "domain": "usercentrics.eu",
+      "count": 441
     },
     {
       "domain": "wordpress.org",
       "count": 426
     },
     {
-      "domain": "usercentrics.eu",
-      "count": 426
+      "domain": "dwd.de",
+      "count": 421
     },
     {
-      "domain": "dwd.de",
-      "count": 419
+      "domain": "xing.com",
+      "count": 402
     },
     {
       "domain": "deutschland.de",
       "count": 396
-    },
-    {
-      "domain": "xing.com",
-      "count": 395
     },
     {
       "domain": "x.com",
@@ -383,7 +383,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 378
+      "count": 382
     },
     {
       "domain": "stuttgart.de",
@@ -398,21 +398,21 @@
       "count": 311
     },
     {
-      "domain": "stark-fuer-gerechtigkeit.de",
-      "count": 287
+      "domain": "tiktok.com",
+      "count": 305
     },
     {
-      "domain": "tiktok.com",
-      "count": 284
+      "domain": "stark-fuer-gerechtigkeit.de",
+      "count": 287
     }
   ],
   "relationship_types": {
-    "editorial_link": 11252,
+    "editorial_link": 11260,
     "font_or_preload_dependency": 336,
     "image_or_media_dependency": 2758,
     "script_dependency": 2878,
     "stylesheet_dependency": 2718,
     "form_destination": 2146
   },
-  "generated_at": "2026-09-17T21:48:26.050569+00:00"
+  "generated_at": "2026-09-19T20:55:58.284932+00:00"
 }
