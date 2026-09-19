@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-09-19 17:17 UTC_
+_Generated: 2026-09-19 18:33 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -14,9 +14,9 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
 | **Combined Reachability** | **80,386 confirmed reachable** | 87,696 | **<span role="img" aria-label="91.7% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:110px;"></span></span><span class="sm-bar__label">91.7%</span></span>** | — |
-| Social Media | 87,696 scanned (80,363 reachable) | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 21.6 days |
-| Technology | 87,696 scanned | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 21.0 days |
-| Lighthouse | 27,009 scanned | 87,696 | <span role="img" aria-label="30.8% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:37px;"></span></span><span class="sm-bar__label">30.8%</span></span> | 20.7 days |
+| Social Media | 87,696 scanned (80,363 reachable) | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 21.7 days |
+| Technology | 87,696 scanned | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 21.1 days |
+| Lighthouse | 27,360 scanned | 87,696 | <span role="img" aria-label="31.2% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:37px;"></span></span><span class="sm-bar__label">31.2%</span></span> | 20.1 days |
 | Accessibility Statements | 87,696 scanned | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 26.7 days |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by any scan type. **Avg Age** shows the mean number of days (or hours) since each URL in that scan type was last scanned — lower is fresher.
@@ -140,16 +140,16 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Canada | 1,978 | 92 | 89 | 88 | 87 | 2026-09-19 |
 | Croatia | 251 | 91 | 72 | 92 | 89 | 2026-08-24 |
 | Czechia | 825 | 89 | 87 | 92 | 88 | 2026-09-13 |
-| Denmark | 1,010 | 88 | 95 | 96 | 89 | 2026-09-13 |
+| Denmark | 1,279 | 87 | 95 | 96 | 89 | 2026-09-19 |
 | Estonia | 357 | 91 | 87 | 85 | 89 | 2026-08-25 |
 | Finland | 182 | 86 | 94 | 96 | 87 | 2026-08-22 |
 | France | 1,522 | 89 | 90 | 91 | 88 | 2026-09-19 |
 | Germany | 2,308 | 88 | 90 | 96 | 88 | 2026-09-19 |
-| Greece | 1,445 | 87 | 86 | 90 | 88 | 2026-09-18 |
+| Greece | 1,476 | 87 | 86 | 90 | 88 | 2026-09-19 |
 | Hungary | 382 | 89 | 77 | 82 | 86 | 2026-08-25 |
 | Iceland | 133 | 92 | 92 | 91 | 91 | 2026-08-23 |
 | Ireland | 484 | 91 | 91 | 90 | 88 | 2026-09-07 |
-| Italy | 1,536 | 87 | 88 | 93 | 88 | 2026-09-18 |
+| Italy | 1,587 | 87 | 88 | 93 | 88 | 2026-09-19 |
 | Latvia | 364 | 87 | 86 | 91 | 85 | 2026-09-12 |
 | Lithuania | 111 | 86 | 81 | 87 | 85 | 2026-08-23 |
 | Luxembourg | 556 | 91 | 93 | 93 | 91 | 2026-09-07 |
