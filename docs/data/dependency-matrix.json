@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T11:12:42.022603+00:00",
+  "generated_at": "2026-09-19T16:12:02.491557+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -203,7 +203,7 @@
     {
       "service": "cloudflare.com",
       "countries": 31,
-      "domains": 1575
+      "domains": 1576
     },
     {
       "service": "jquery.com",
@@ -4644,9 +4644,9 @@
       "country_code": "SLOVENIA",
       "country": "Slovenia",
       "service": "cloudflare.com",
-      "domains": 6,
+      "domains": 7,
       "scanned_domains": 16,
-      "percent": 37.5
+      "percent": 43.8
     },
     {
       "country_code": "SLOVENIA",

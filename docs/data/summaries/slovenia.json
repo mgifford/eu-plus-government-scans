@@ -1,282 +1,282 @@
 {
   "country_code": "SLOVENIA",
-  "total_relationships": 898,
+  "total_relationships": 894,
   "total_source_domains": 16,
   "top_source_domains": [
     {
       "domain": "gov.si",
-      "count": 2380
-    },
-    {
-      "domain": "maribor.si",
-      "count": 258
+      "count": 3500
     },
     {
       "domain": "ptuj.si",
-      "count": 252
+      "count": 378
     },
     {
       "domain": "ds-rs.si",
-      "count": 246
+      "count": 366
+    },
+    {
+      "domain": "maribor.si",
+      "count": 363
     },
     {
       "domain": "kamnik.si",
-      "count": 235
+      "count": 353
     },
     {
       "domain": "ljubljana.si",
-      "count": 222
+      "count": 325
     },
     {
       "domain": "celje.si",
-      "count": 218
+      "count": 316
     },
     {
       "domain": "trbovlje.si",
-      "count": 96
+      "count": 145
     },
     {
       "domain": "slovenjgradec.si",
-      "count": 70
+      "count": 103
     },
     {
       "domain": "koper.si",
-      "count": 68
+      "count": 102
     },
     {
       "domain": "kranj.si",
-      "count": 48
+      "count": 66
     },
     {
       "domain": "sodisce.si",
-      "count": 40
-    },
-    {
-      "domain": "vlada.si",
-      "count": 36
+      "count": 60
     },
     {
       "domain": "kpk-rs.si",
-      "count": 28
+      "count": 42
+    },
+    {
+      "domain": "vlada.si",
+      "count": 37
     },
     {
       "domain": "dvk-rs.si",
-      "count": 20
+      "count": 27
     },
     {
       "domain": "ip-rs.si",
-      "count": 5
+      "count": 6
     }
   ],
   "top_target_domains": [
     {
       "domain": "gov.si",
-      "count": 1626
+      "count": 2394
     },
     {
       "domain": "facebook.com",
-      "count": 133
+      "count": 195
     },
     {
       "domain": "ljubljana.si",
-      "count": 114
+      "count": 171
     },
     {
       "domain": "maribor.si",
-      "count": 113
+      "count": 166
     },
     {
       "domain": "ptuj.si",
-      "count": 96
+      "count": 144
     },
     {
       "domain": "youtube.com",
-      "count": 94
+      "count": 138
     },
     {
       "domain": "googleapis.com",
-      "count": 91
+      "count": 133
     },
     {
       "domain": "google.com",
-      "count": 89
+      "count": 131
     },
     {
       "domain": "celje.si",
-      "count": 86
+      "count": 126
     },
     {
       "domain": "ds-rs.si",
-      "count": 74
-    },
-    {
-      "domain": "instagram.com",
-      "count": 67
+      "count": 108
     },
     {
       "domain": "kamnik.si",
-      "count": 67
+      "count": 101
+    },
+    {
+      "domain": "instagram.com",
+      "count": 98
     },
     {
       "domain": "europa.eu",
-      "count": 50
+      "count": 75
     },
     {
       "domain": "twitter.com",
-      "count": 48
+      "count": 72
     },
     {
       "domain": "pisrs.si",
-      "count": 46
-    },
-    {
-      "domain": "vlada.si",
-      "count": 38
+      "count": 69
     },
     {
       "domain": "googletagmanager.com",
-      "count": 37
+      "count": 54
+    },
+    {
+      "domain": "vlada.si",
+      "count": 52
     },
     {
       "domain": "trbovlje.si",
-      "count": 32
-    },
-    {
-      "domain": "linkedin.com",
-      "count": 30
+      "count": 48
     },
     {
       "domain": "koper.si",
-      "count": 30
+      "count": 45
     },
     {
-      "domain": "jsdelivr.net",
-      "count": 26
+      "domain": "linkedin.com",
+      "count": 44
     },
     {
       "domain": "geoprostor.net",
-      "count": 26
-    },
-    {
-      "domain": "dvk-rs.si",
-      "count": 24
+      "count": 39
     },
     {
       "domain": "dz-rs.si",
-      "count": 24
+      "count": 36
     },
     {
       "domain": "sodisce.si",
-      "count": 24
+      "count": 36
     },
     {
       "domain": "kranj.si",
-      "count": 24
+      "count": 36
+    },
+    {
+      "domain": "jsdelivr.net",
+      "count": 35
+    },
+    {
+      "domain": "dvk-rs.si",
+      "count": 33
     },
     {
       "domain": "ip-rs.si",
-      "count": 22
+      "count": 31
     },
     {
       "domain": "evropskasredstva.si",
-      "count": 22
+      "count": 30
     },
     {
       "domain": "cloudflare.com",
-      "count": 20
+      "count": 29
     },
     {
       "domain": "arcgis.com",
-      "count": 18
+      "count": 27
     },
     {
       "domain": "e-obcina.si",
-      "count": 18
+      "count": 27
     },
     {
       "domain": "kpk-rs.si",
-      "count": 18
+      "count": 27
     },
     {
       "domain": "zmos.si",
-      "count": 16
+      "count": 24
     },
     {
       "domain": "rs-rs.si",
-      "count": 16
+      "count": 24
     },
     {
       "domain": "up-rs.si",
-      "count": 16
+      "count": 24
     },
     {
       "domain": "us-rs.si",
-      "count": 16
+      "count": 24
     },
     {
       "domain": "osmrtnice.si",
-      "count": 16
+      "count": 24
     },
     {
       "domain": "visitkamnik.com",
-      "count": 16
+      "count": 24
     },
     {
       "domain": "x.com",
-      "count": 14
+      "count": 21
     },
     {
       "domain": "cloudinary.com",
-      "count": 12
+      "count": 19
     },
     {
       "domain": "varuh-rs.si",
-      "count": 12
-    },
-    {
-      "domain": "bootstrapcdn.com",
-      "count": 12
+      "count": 18
     },
     {
       "domain": "fontawesome.com",
-      "count": 12
+      "count": 18
     },
     {
       "domain": "sitranet.si",
-      "count": 12
+      "count": 18
     },
     {
       "domain": "wa.me",
-      "count": 12
+      "count": 18
     },
     {
       "domain": "consulta.si",
-      "count": 12
+      "count": 18
     },
     {
       "domain": "jzkk.si",
-      "count": 12
+      "count": 18
     },
     {
       "domain": "kamkolo.si",
-      "count": 12
+      "count": 18
     },
     {
       "domain": "velikaplanina.si",
-      "count": 12
+      "count": 18
     },
     {
       "domain": "ekosklad.si",
-      "count": 12
+      "count": 18
+    },
+    {
+      "domain": "europeanbestdestinations.com",
+      "count": 18
     }
   ],
   "relationship_types": {
-    "editorial_link": 528,
-    "image_or_media_dependency": 98,
+    "editorial_link": 526,
+    "image_or_media_dependency": 96,
     "font_or_preload_dependency": 16,
-    "script_dependency": 114,
-    "stylesheet_dependency": 97,
+    "script_dependency": 113,
+    "stylesheet_dependency": 98,
     "form_destination": 45
   },
-  "generated_at": "2026-09-19T11:12:37.789146+00:00"
+  "generated_at": "2026-09-19T16:11:58.793645+00:00"
 }

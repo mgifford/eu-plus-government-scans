@@ -1,11 +1,11 @@
 {
   "country_code": "CZECHIA",
-  "total_relationships": 2621,
+  "total_relationships": 2620,
   "total_source_domains": 54,
   "top_source_domains": [
     {
       "domain": "ostrava.cz",
-      "count": 6182
+      "count": 6454
     },
     {
       "domain": "brno.cz",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "ostrava.cz",
-      "count": 2988
+      "count": 3128
     },
     {
       "domain": "brno.cz",
@@ -219,19 +219,19 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 493
+      "count": 500
     },
     {
       "domain": "facebook.com",
-      "count": 450
+      "count": 457
     },
     {
       "domain": "npmcdn.com",
-      "count": 218
+      "count": 228
     },
     {
       "domain": "instagram.com",
-      "count": 216
+      "count": 218
     },
     {
       "domain": "plzensky-kraj.cz",
@@ -247,23 +247,23 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 187
+      "count": 192
     },
     {
       "domain": "mpsv.cz",
-      "count": 187
+      "count": 188
     },
     {
       "domain": "googletagmanager.com",
       "count": 182
     },
     {
-      "domain": "psp.cz",
+      "domain": "youtube.com",
       "count": 182
     },
     {
-      "domain": "youtube.com",
-      "count": 180
+      "domain": "psp.cz",
+      "count": 182
     },
     {
       "domain": "mzp.cz",
@@ -275,11 +275,11 @@
     },
     {
       "domain": "google.com",
-      "count": 148
+      "count": 149
     },
     {
       "domain": "ovanet.cz",
-      "count": 136
+      "count": 144
     },
     {
       "domain": "linkedin.com",
@@ -290,23 +290,27 @@
       "count": 128
     },
     {
-      "domain": "liberec.cz",
-      "count": 124
+      "domain": "ostravainfo.cz",
+      "count": 126
     },
     {
-      "domain": "ostravainfo.cz",
-      "count": 120
+      "domain": "liberec.cz",
+      "count": 124
     },
     {
       "domain": "msmt.cz",
       "count": 117
     },
     {
-      "domain": "mf.gov.cz",
-      "count": 106
+      "domain": "cookiedatabase.org",
+      "count": 109
     },
     {
-      "domain": "cookiedatabase.org",
+      "domain": "highcharts.com",
+      "count": 108
+    },
+    {
+      "domain": "mf.gov.cz",
       "count": 106
     },
     {
@@ -318,16 +322,20 @@
       "count": 104
     },
     {
-      "domain": "highcharts.com",
-      "count": 103
-    },
-    {
       "domain": "cnb.cz",
       "count": 98
     },
     {
+      "domain": "portal.gov.cz",
+      "count": 98
+    },
+    {
       "domain": "jquery.com",
-      "count": 96
+      "count": 97
+    },
+    {
+      "domain": "smlouvy.gov.cz",
+      "count": 94
     },
     {
       "domain": "uzis.cz",
@@ -338,40 +346,32 @@
       "count": 93
     },
     {
-      "domain": "portal.gov.cz",
-      "count": 91
-    },
-    {
       "domain": "bezstavy.cz",
-      "count": 90
-    },
-    {
-      "domain": "smlouvy.gov.cz",
-      "count": 89
+      "count": 92
     },
     {
       "domain": "jsdelivr.net",
-      "count": 89
+      "count": 90
     },
     {
       "domain": "md.gov.cz",
       "count": 88
     },
     {
+      "domain": "fajnova.cz",
+      "count": 77
+    },
+    {
       "domain": "usti.cz",
       "count": 76
     },
     {
-      "domain": "fajnova.cz",
-      "count": 75
+      "domain": "tenderarena.cz",
+      "count": 73
     },
     {
       "domain": "europa.eu",
       "count": 68
-    },
-    {
-      "domain": "tenderarena.cz",
-      "count": 67
     },
     {
       "domain": "nzip.cz",
@@ -379,7 +379,7 @@
     },
     {
       "domain": "zdravaova.cz",
-      "count": 60
+      "count": 62
     },
     {
       "domain": "arcgis.com",
@@ -403,16 +403,16 @@
     },
     {
       "domain": "cityvizor.cz",
-      "count": 46
+      "count": 48
     }
   ],
   "relationship_types": {
-    "editorial_link": 1560,
+    "editorial_link": 1559,
     "script_dependency": 326,
     "stylesheet_dependency": 276,
     "form_destination": 163,
     "image_or_media_dependency": 236,
     "font_or_preload_dependency": 60
   },
-  "generated_at": "2026-09-17T21:48:25.224273+00:00"
+  "generated_at": "2026-09-19T16:11:59.421034+00:00"
 }

@@ -5,11 +5,11 @@
   "top_source_domains": [
     {
       "domain": "politiaromana.ro",
-      "count": 3871
+      "count": 5867
     },
     {
       "domain": "mapn.ro",
-      "count": 2766
+      "count": 3890
     },
     {
       "domain": "sibiu.ro",
@@ -103,182 +103,194 @@
   "top_target_domains": [
     {
       "domain": "politiaromana.ro",
-      "count": 1312
+      "count": 1968
     },
     {
       "domain": "gov.ro",
-      "count": 1286
+      "count": 1894
     },
     {
       "domain": "mapn.ro",
-      "count": 895
+      "count": 1263
+    },
+    {
+      "domain": "googletagmanager.com",
+      "count": 396
     },
     {
       "domain": "sibiu.ro",
       "count": 384
     },
     {
-      "domain": "googletagmanager.com",
-      "count": 281
+      "domain": "facebook.com",
+      "count": 350
     },
     {
-      "domain": "facebook.com",
-      "count": 264
+      "domain": "sri.ro",
+      "count": 277
+    },
+    {
+      "domain": "google.com",
+      "count": 272
     },
     {
       "domain": "pmb.ro",
       "count": 243
     },
     {
-      "domain": "google.com",
-      "count": 212
-    },
-    {
-      "domain": "sri.ro",
-      "count": 204
-    },
-    {
       "domain": "just.ro",
-      "count": 179
+      "count": 214
     },
     {
       "domain": "presidency.ro",
-      "count": 148
+      "count": 210
+    },
+    {
+      "domain": "fiipregatit.ro",
+      "count": 190
+    },
+    {
+      "domain": "nato.int",
+      "count": 190
+    },
+    {
+      "domain": "mae.ro",
+      "count": 181
+    },
+    {
+      "domain": "senat.ro",
+      "count": 177
+    },
+    {
+      "domain": "europa.eu",
+      "count": 161
+    },
+    {
+      "domain": "certmil.ro",
+      "count": 158
     },
     {
       "domain": "brasovcity.ro",
       "count": 142
     },
     {
-      "domain": "mae.ro",
-      "count": 140
+      "domain": "cdep.ro",
+      "count": 142
     },
     {
-      "domain": "senat.ro",
-      "count": 137
-    },
-    {
-      "domain": "fiipregatit.ro",
-      "count": 135
-    },
-    {
-      "domain": "nato.int",
-      "count": 135
-    },
-    {
-      "domain": "europa.eu",
-      "count": 123
+      "domain": "sts.ro",
+      "count": 138
     },
     {
       "domain": "anaf.ro",
       "count": 116
     },
     {
-      "domain": "certmil.ro",
-      "count": 110
+      "domain": "mfinante.ro",
+      "count": 115
+    },
+    {
+      "domain": "mai-dga.ro",
+      "count": 112
     },
     {
       "domain": "statcounter.com",
       "count": 107
     },
     {
-      "domain": "cdep.ro",
-      "count": 102
-    },
-    {
       "domain": "googleapis.com",
-      "count": 99
-    },
-    {
-      "domain": "sts.ro",
-      "count": 96
-    },
-    {
-      "domain": "mfinante.ro",
-      "count": 82
-    },
-    {
-      "domain": "instagram.com",
-      "count": 75
-    },
-    {
-      "domain": "mai-dga.ro",
-      "count": 75
-    },
-    {
-      "domain": "youtube.com",
-      "count": 69
-    },
-    {
-      "domain": "twitter.com",
-      "count": 68
-    },
-    {
-      "domain": "ms.ro",
-      "count": 62
+      "count": 103
     },
     {
       "domain": "112.ro",
-      "count": 62
+      "count": 93
+    },
+    {
+      "domain": "instagram.com",
+      "count": 84
+    },
+    {
+      "domain": "youtube.com",
+      "count": 81
+    },
+    {
+      "domain": "twitter.com",
+      "count": 78
+    },
+    {
+      "domain": "ms.ro",
+      "count": 65
+    },
+    {
+      "domain": "infocons.ro",
+      "count": 65
+    },
+    {
+      "domain": "igpr.ro",
+      "count": 63
+    },
+    {
+      "domain": "politiadefrontiera.ro",
+      "count": 55
+    },
+    {
+      "domain": "apple.com",
+      "count": 52
+    },
+    {
+      "domain": "igsu.ro",
+      "count": 52
     },
     {
       "domain": "oradea.ro",
       "count": 51
     },
     {
-      "domain": "apple.com",
-      "count": 46
-    },
-    {
-      "domain": "infocons.ro",
-      "count": 44
-    },
-    {
-      "domain": "igpr.ro",
-      "count": 42
-    },
-    {
       "domain": "userway.org",
       "count": 41
     },
     {
-      "domain": "politiadefrontiera.ro",
+      "domain": "mpublic.ro",
       "count": 37
     },
     {
-      "domain": "igsu.ro",
-      "count": 35
+      "domain": "defense.ro",
+      "count": 37
+    },
+    {
+      "domain": "cloudflare.com",
+      "count": 31
     },
     {
       "domain": "jsdelivr.net",
       "count": 31
     },
     {
-      "domain": "cloudflare.com",
-      "count": 29
+      "domain": "dataprotection.ro",
+      "count": 31
     },
     {
-      "domain": "defense.ro",
-      "count": 28
+      "domain": "interpol.int",
+      "count": 31
     },
     {
       "domain": "edu.ro",
-      "count": 26
-    },
-    {
-      "domain": "mpublic.ro",
-      "count": 26
+      "count": 29
     },
     {
       "domain": "linkedin.com",
-      "count": 25
+      "count": 27
+    },
+    {
+      "domain": "trafic.ro",
+      "count": 27
     },
     {
       "domain": "jquery.com",
       "count": 25
     },
     {
-      "domain": "dataprotection.ro",
+      "domain": "armataromaniei.ro",
       "count": 25
     },
     {
@@ -286,20 +298,8 @@
       "count": 24
     },
     {
-      "domain": "interpol.int",
-      "count": 21
-    },
-    {
-      "domain": "sie.ro",
-      "count": 21
-    },
-    {
       "domain": "map2web.eu",
-      "count": 20
-    },
-    {
-      "domain": "constanta.ro",
-      "count": 20
+      "count": 24
     }
   ],
   "relationship_types": {
@@ -310,5 +310,5 @@
     "form_destination": 97,
     "font_or_preload_dependency": 23
   },
-  "generated_at": "2026-09-19T11:12:38.180956+00:00"
+  "generated_at": "2026-09-19T16:11:58.888341+00:00"
 }
