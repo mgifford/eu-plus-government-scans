@@ -1,11 +1,11 @@
 {
   "country_code": "SWITZERLAND",
-  "total_relationships": 6801,
+  "total_relationships": 6813,
   "total_source_domains": 9,
   "top_source_domains": [
     {
       "domain": "ethz.ch",
-      "count": 47875
+      "count": 58859
     },
     {
       "domain": "admin.ch",
@@ -43,15 +43,15 @@
   "top_target_domains": [
     {
       "domain": "ethz.ch",
-      "count": 40508
+      "count": 49766
     },
     {
       "domain": "admin.ch",
-      "count": 7175
+      "count": 7183
     },
     {
       "domain": "epfl.ch",
-      "count": 2474
+      "count": 2477
     },
     {
       "domain": "unige.ch",
@@ -59,35 +59,35 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 1289
+      "count": 1405
     },
     {
       "domain": "youtube.com",
-      "count": 909
+      "count": 977
     },
     {
       "domain": "instagram.com",
-      "count": 768
+      "count": 817
     },
     {
       "domain": "github.io",
-      "count": 542
+      "count": 672
     },
     {
       "domain": "facebook.com",
-      "count": 508
+      "count": 542
     },
     {
       "domain": "twitter.com",
-      "count": 472
+      "count": 512
     },
     {
       "domain": "x.com",
-      "count": 447
+      "count": 485
     },
     {
       "domain": "googleapis.com",
-      "count": 377
+      "count": 427
     },
     {
       "domain": "imgix.net",
@@ -98,157 +98,157 @@
       "count": 248
     },
     {
-      "domain": "google.com",
-      "count": 196
+      "domain": "readspeaker.com",
+      "count": 232
     },
     {
-      "domain": "readspeaker.com",
-      "count": 196
+      "domain": "google.com",
+      "count": 225
     },
     {
       "domain": "googletagmanager.com",
-      "count": 179
-    },
-    {
-      "domain": "jsdelivr.net",
-      "count": 142
-    },
-    {
-      "domain": "cloudflare.com",
-      "count": 136
-    },
-    {
-      "domain": "github.com",
-      "count": 134
+      "count": 188
     },
     {
       "domain": "doi.org",
-      "count": 133
+      "count": 160
+    },
+    {
+      "domain": "jsdelivr.net",
+      "count": 158
+    },
+    {
+      "domain": "github.com",
+      "count": 156
     },
     {
       "domain": "jquery.com",
-      "count": 130
+      "count": 151
+    },
+    {
+      "domain": "cloudflare.com",
+      "count": 148
     },
     {
       "domain": "uzh.ch",
-      "count": 118
+      "count": 138
     },
     {
       "domain": "bsky.app",
-      "count": 102
+      "count": 120
     },
     {
       "domain": "cookielaw.org",
       "count": 100
     },
     {
-      "domain": "coursera.org",
-      "count": 82
+      "domain": "gstatic.com",
+      "count": 92
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 80
+      "count": 88
+    },
+    {
+      "domain": "siggraph.org",
+      "count": 86
+    },
+    {
+      "domain": "arxiv.org",
+      "count": 85
+    },
+    {
+      "domain": "mpg.de",
+      "count": 85
+    },
+    {
+      "domain": "coursera.org",
+      "count": 82
     },
     {
       "domain": "parlament.ch",
       "count": 78
     },
     {
-      "domain": "gstatic.com",
-      "count": 77
+      "domain": "nature.com",
+      "count": 56
     },
     {
-      "domain": "arxiv.org",
-      "count": 74
+      "domain": "youtu.be",
+      "count": 52
     },
     {
-      "domain": "siggraph.org",
-      "count": 60
+      "domain": "sharepoint.com",
+      "count": 51
     },
     {
-      "domain": "mpg.de",
-      "count": 59
+      "domain": "stanford.edu",
+      "count": 51
     },
     {
       "domain": "switch.ch",
       "count": 48
     },
     {
-      "domain": "nature.com",
-      "count": 47
-    },
-    {
-      "domain": "sharepoint.com",
-      "count": 45
-    },
-    {
-      "domain": "youtu.be",
-      "count": 43
-    },
-    {
-      "domain": "apple.com",
-      "count": 42
-    },
-    {
-      "domain": "snf.ch",
-      "count": 40
-    },
-    {
-      "domain": "stanford.edu",
-      "count": 40
-    },
-    {
-      "domain": "typekit.net",
-      "count": 40
-    },
-    {
-      "domain": "vimeo.com",
-      "count": 37
-    },
-    {
-      "domain": "microsoft.com",
-      "count": 36
-    },
-    {
       "domain": "acm.org",
-      "count": 36
-    },
-    {
-      "domain": "fontawesome.com",
-      "count": 36
+      "count": 48
     },
     {
       "domain": "wp.com",
-      "count": 36
+      "count": 48
+    },
+    {
+      "domain": "snf.ch",
+      "count": 46
     },
     {
       "domain": "wiley.com",
-      "count": 36
+      "count": 45
+    },
+    {
+      "domain": "apple.com",
+      "count": 44
+    },
+    {
+      "domain": "microsoft.com",
+      "count": 44
+    },
+    {
+      "domain": "vimeo.com",
+      "count": 44
+    },
+    {
+      "domain": "typekit.net",
+      "count": 43
+    },
+    {
+      "domain": "fontawesome.com",
+      "count": 40
     },
     {
       "domain": "nih.gov",
-      "count": 35
+      "count": 38
     },
     {
-      "domain": "swissuniversities.ch",
-      "count": 34
+      "domain": "europa.eu",
+      "count": 37
     },
     {
-      "domain": "kaltura.com",
-      "count": 34
+      "domain": "wikipedia.org",
+      "count": 37
     },
     {
-      "domain": "cloudfront.net",
-      "count": 34
+      "domain": "sciencedirect.com",
+      "count": 36
     }
   ],
   "relationship_types": {
-    "editorial_link": 3552,
-    "image_or_media_dependency": 808,
+    "editorial_link": 3571,
+    "image_or_media_dependency": 805,
     "font_or_preload_dependency": 169,
-    "script_dependency": 908,
+    "script_dependency": 906,
     "stylesheet_dependency": 892,
-    "form_destination": 472
+    "form_destination": 470
   },
-  "generated_at": "2026-09-18T21:17:10.953174+00:00"
+  "generated_at": "2026-09-19T04:06:22.313107+00:00"
 }
