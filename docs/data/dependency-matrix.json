@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T04:06:24.244253+00:00",
+  "generated_at": "2026-09-19T11:12:42.022603+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -198,7 +198,7 @@
     {
       "service": "google.com",
       "countries": 31,
-      "domains": 2088
+      "domains": 2089
     },
     {
       "service": "cloudflare.com",
@@ -4316,9 +4316,9 @@
       "country_code": "SLOVAKIA",
       "country": "Slovakia",
       "service": "google.com",
-      "domains": 9,
+      "domains": 10,
       "scanned_domains": 20,
-      "percent": 45.0
+      "percent": 50.0
     },
     {
       "country_code": "SLOVAKIA",

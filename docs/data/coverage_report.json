@@ -1,25 +1,4 @@
 {
-  "REPUBLIC_OF_CYPRUS": {
-    "error": "TOON file not found"
-  },
-  "NETHERLANDS": {
-    "total_urls": 945,
-    "attempted": 945,
-    "successful": 882,
-    "failed": 63,
-    "skipped": 0,
-    "never_scanned": 0,
-    "stale_31d": 0
-  },
-  "SWITZERLAND": {
-    "total_urls": 2123,
-    "attempted": 2123,
-    "successful": 2074,
-    "failed": 49,
-    "skipped": 0,
-    "never_scanned": 0,
-    "stale_31d": 552
-  },
   "SLOVENIA": {
     "total_urls": 214,
     "attempted": 214,
@@ -36,13 +15,13 @@
     "failed": 77,
     "skipped": 0,
     "never_scanned": 0,
-    "stale_31d": 2
+    "stale_31d": 0
   },
   "FRANCE": {
     "total_urls": 10009,
     "attempted": 10009,
-    "successful": 9356,
-    "failed": 653,
+    "successful": 9379,
+    "failed": 630,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 0
@@ -50,8 +29,8 @@
   "SLOVAKIA": {
     "total_urls": 442,
     "attempted": 442,
-    "successful": 413,
-    "failed": 29,
+    "successful": 412,
+    "failed": 30,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 0
@@ -68,11 +47,11 @@
   "SPAIN": {
     "total_urls": 6091,
     "attempted": 6091,
-    "successful": 5186,
-    "failed": 905,
+    "successful": 5179,
+    "failed": 912,
     "skipped": 0,
     "never_scanned": 0,
-    "stale_31d": 177
+    "stale_31d": 0
   },
   "ESTONIA": {
     "total_urls": 401,
@@ -86,17 +65,17 @@
   "AUSTRIA": {
     "total_urls": 822,
     "attempted": 822,
-    "successful": 784,
-    "failed": 38,
+    "successful": 786,
+    "failed": 36,
     "skipped": 0,
     "never_scanned": 0,
-    "stale_31d": 44
+    "stale_31d": 0
   },
   "CANADA": {
     "total_urls": 4469,
     "attempted": 4469,
-    "successful": 4211,
-    "failed": 258,
+    "successful": 4214,
+    "failed": 255,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 0
@@ -113,11 +92,11 @@
   "BELGIUM": {
     "total_urls": 1329,
     "attempted": 1329,
-    "successful": 1222,
-    "failed": 107,
+    "successful": 1218,
+    "failed": 111,
     "skipped": 0,
     "never_scanned": 0,
-    "stale_31d": 138
+    "stale_31d": 16
   },
   "UNITED_KINGDOM_UK": {
     "error": "TOON file not found"
@@ -274,5 +253,26 @@
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 315
+  },
+  "SWITZERLAND": {
+    "total_urls": 2123,
+    "attempted": 2123,
+    "successful": 2074,
+    "failed": 49,
+    "skipped": 0,
+    "never_scanned": 0,
+    "stale_31d": 552
+  },
+  "REPUBLIC_OF_CYPRUS": {
+    "error": "TOON file not found"
+  },
+  "NETHERLANDS": {
+    "total_urls": 945,
+    "attempted": 945,
+    "successful": 882,
+    "failed": 63,
+    "skipped": 0,
+    "never_scanned": 0,
+    "stale_31d": 0
   }
 }
