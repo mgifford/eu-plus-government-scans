@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-18T21:17:07.067255+00:00",
+  "generated_at": "2026-09-19T04:06:19.006677+00:00",
   "shard_max_bytes": 33554432,
-  "total_rows": 317322,
-  "total_bytes": 188880996,
+  "total_rows": 317416,
+  "total_bytes": 188916436,
   "shards": [
     {
       "file": "at.001.jsonl",
@@ -49,8 +49,8 @@
     {
       "file": "ch.001.jsonl",
       "group": "ch",
-      "rows": 6801,
-      "bytes": 4316971
+      "rows": 6852,
+      "bytes": 4345493
     },
     {
       "file": "clinic.001.jsonl",
@@ -73,8 +73,8 @@
     {
       "file": "cy.001.jsonl",
       "group": "cy",
-      "rows": 167,
-      "bytes": 89439
+      "rows": 168,
+      "bytes": 89896
     },
     {
       "file": "cymru.001.jsonl",
@@ -139,8 +139,8 @@
     {
       "file": "frl.001.jsonl",
       "group": "frl",
-      "rows": 16,
-      "bytes": 8299
+      "rows": 18,
+      "bytes": 9185
     },
     {
       "file": "gal.001.jsonl",
@@ -241,8 +241,8 @@
     {
       "file": "nl.001.jsonl",
       "group": "nl",
-      "rows": 2952,
-      "bytes": 1634821
+      "rows": 2992,
+      "bytes": 1640396
     },
     {
       "file": "no.001.jsonl",
