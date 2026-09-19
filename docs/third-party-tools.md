@@ -5,9 +5,9 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-09-19 15:13 UTC — last scan: 2026-09-19_
+_Stats as of 2026-09-19 16:12 UTC — last scan: 2026-09-19_
 
-**251** scan batches run
+**252** scan batches run
 
 **87,690** of **87,696** available pages scanned (**100.0%** coverage)
 **79,451** of **87,690** scanned pages were reachable (**90.6%**)
@@ -21,7 +21,7 @@ _Stats as of 2026-09-19 15:13 UTC — last scan: 2026-09-19_
 
 | Country | Scanned | Available | Reachable | URLs with 3rd-Party JS | Known Service Loads | JS URLs /100 Reachable | Known Loads /100 Reachable | Last Scan |
 |---------|---------|-----------|-----------|------------------------|--------------------|------------------------|---------------------------|----------|
-| Austria | 822 | 822 | 787 | 275 | 52 | 34.9 | 6.6 | 2026-08-25 |
+| Austria | 822 | 822 | 787 | 275 | 52 | 34.9 | 6.6 | 2026-09-19 |
 | Belgium | 1,329 | 1,329 | 1,238 | 641 | 728 | 51.8 | 58.8 | 2026-09-15 |
 | Bulgaria | 353 | 353 | 305 | 129 | 164 | 42.3 | 53.8 | 2026-08-24 |
 | Canada | 4,469 | 4,469 | 4,216 | 2,428 | 3,433 | 57.6 | 81.4 | 2026-09-03 |
