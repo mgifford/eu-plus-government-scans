@@ -1,57 +1,32 @@
 {
-  "BULGARIA": {
-    "total_relationships": 1772,
-    "total_source_domains": 51,
-    "file": "bulgaria.json"
+  "ICELAND": {
+    "total_relationships": 538,
+    "total_source_domains": 20,
+    "file": "iceland.json"
   },
   "IRELAND": {
     "total_relationships": 2074,
     "total_source_domains": 103,
     "file": "ireland.json"
   },
-  "GREECE": {
-    "total_relationships": 8543,
-    "total_source_domains": 364,
-    "file": "greece.json"
+  "SWITZERLAND": {
+    "total_relationships": 6807,
+    "total_source_domains": 9,
+    "file": "switzerland.json"
   },
-  "CROATIA": {
-    "total_relationships": 1346,
-    "total_source_domains": 30,
-    "file": "croatia.json"
-  },
-  "LATVIA": {
-    "total_relationships": 3298,
-    "total_source_domains": 143,
-    "file": "latvia.json"
-  },
-  "ITALY": {
-    "total_relationships": 16230,
-    "total_source_domains": 151,
-    "file": "italy.json"
-  },
-  "HUNGARY": {
-    "total_relationships": 1404,
-    "total_source_domains": 28,
-    "file": "hungary.json"
+  "LITHUANIA": {
+    "total_relationships": 534,
+    "total_source_domains": 15,
+    "file": "lithuania.json"
   },
   "MALTA": {
     "total_relationships": 1778,
     "total_source_domains": 3,
     "file": "malta.json"
   },
-  "PORTUGAL": {
-    "total_relationships": 13558,
-    "total_source_domains": 396,
-    "file": "portugal.json"
-  },
-  "ICELAND": {
-    "total_relationships": 538,
-    "total_source_domains": 20,
-    "file": "iceland.json"
-  },
-  "LUXEMBOURG": {
-    "total_relationships": 2047,
-    "total_source_domains": 41,
-    "file": "luxembourg.json"
+  "FRANCE": {
+    "total_relationships": 30823,
+    "total_source_domains": 673,
+    "file": "france.json"
   }
 }
