@@ -29,7 +29,7 @@
     },
     {
       "domain": "iem.gov.lv",
-      "count": 480
+      "count": 486
     },
     {
       "domain": "kem.gov.lv",
@@ -211,7 +211,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 1394
+      "count": 1395
     },
     {
       "domain": "youtube.com",
@@ -235,11 +235,11 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 602
+      "count": 605
     },
     {
       "domain": "linkedin.com",
-      "count": 581
+      "count": 582
     },
     {
       "domain": "daugavpils.lv",
@@ -255,15 +255,15 @@
     },
     {
       "domain": "google.com",
-      "count": 287
+      "count": 288
     },
     {
       "domain": "googletagmanager.com",
-      "count": 287
+      "count": 288
     },
     {
       "domain": "iem.gov.lv",
-      "count": 273
+      "count": 277
     },
     {
       "domain": "liepaja.lv",
@@ -323,7 +323,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 138
+      "count": 140
     },
     {
       "domain": "kem.gov.lv",
@@ -414,5 +414,5 @@
     "font_or_preload_dependency": 138,
     "form_destination": 200
   },
-  "generated_at": "2026-09-18T16:43:34.905053+00:00"
+  "generated_at": "2026-09-20T04:23:30.041110+00:00"
 }

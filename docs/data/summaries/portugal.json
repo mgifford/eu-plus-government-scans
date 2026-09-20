@@ -37,7 +37,7 @@
     },
     {
       "domain": "cm-olhao.pt",
-      "count": 927
+      "count": 937
     },
     {
       "domain": "cm-alcobaca.pt",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 1607
+      "count": 1609
     },
     {
       "domain": "google.com",
@@ -294,12 +294,12 @@
       "count": 465
     },
     {
-      "domain": "cm-braga.pt",
-      "count": 423
+      "domain": "cm-olhao.pt",
+      "count": 428
     },
     {
-      "domain": "cm-olhao.pt",
-      "count": 420
+      "domain": "cm-braga.pt",
+      "count": 423
     },
     {
       "domain": "w3.org",
@@ -414,5 +414,5 @@
     "form_destination": 748,
     "image_or_media_dependency": 1127
   },
-  "generated_at": "2026-09-18T21:17:11.233035+00:00"
+  "generated_at": "2026-09-20T04:23:30.466516+00:00"
 }

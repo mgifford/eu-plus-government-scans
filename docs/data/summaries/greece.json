@@ -132,16 +132,16 @@
       "count": 242
     },
     {
+      "domain": "syzefxis.gov.gr",
+      "count": 235
+    },
+    {
       "domain": "enterprisegreece.gov.gr",
       "count": 232
     },
     {
       "domain": "minsports.gov.gr",
       "count": 231
-    },
-    {
-      "domain": "syzefxis.gov.gr",
-      "count": 229
     },
     {
       "domain": "cityofkozani.gov.gr",
@@ -414,5 +414,5 @@
     "script_dependency": 1265,
     "stylesheet_dependency": 1046
   },
-  "generated_at": "2026-09-18T11:27:30.741067+00:00"
+  "generated_at": "2026-09-20T04:23:29.846999+00:00"
 }
