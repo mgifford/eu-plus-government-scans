@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T20:56:00.592567+00:00",
+  "generated_at": "2026-09-20T04:23:33.598839+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -173,17 +173,17 @@
     {
       "service": "googleapis.com",
       "countries": 32,
-      "domains": 4278
+      "domains": 4279
     },
     {
       "service": "googletagmanager.com",
       "countries": 32,
-      "domains": 2766
+      "domains": 2765
     },
     {
       "service": "gstatic.com",
       "countries": 32,
-      "domains": 1709
+      "domains": 1710
     },
     {
       "service": "jsdelivr.net",
@@ -198,12 +198,12 @@
     {
       "service": "google.com",
       "countries": 31,
-      "domains": 2089
+      "domains": 2088
     },
     {
       "service": "cloudflare.com",
       "countries": 31,
-      "domains": 1576
+      "domains": 1577
     },
     {
       "service": "jquery.com",
@@ -218,7 +218,7 @@
     {
       "service": "bootstrapcdn.com",
       "countries": 29,
-      "domains": 611
+      "domains": 610
     },
     {
       "service": "typekit.net",
@@ -2516,25 +2516,25 @@
       "country_code": "BULGARIA",
       "country": "Bulgaria",
       "service": "googleapis.com",
-      "domains": 28,
+      "domains": 29,
       "scanned_domains": 55,
-      "percent": 50.9
+      "percent": 52.7
     },
     {
       "country_code": "BULGARIA",
       "country": "Bulgaria",
       "service": "googletagmanager.com",
-      "domains": 14,
+      "domains": 13,
       "scanned_domains": 55,
-      "percent": 25.5
+      "percent": 23.6
     },
     {
       "country_code": "BULGARIA",
       "country": "Bulgaria",
       "service": "gstatic.com",
-      "domains": 11,
+      "domains": 12,
       "scanned_domains": 55,
-      "percent": 20.0
+      "percent": 21.8
     },
     {
       "country_code": "BULGARIA",
@@ -2556,17 +2556,17 @@
       "country_code": "BULGARIA",
       "country": "Bulgaria",
       "service": "google.com",
-      "domains": 17,
+      "domains": 16,
       "scanned_domains": 55,
-      "percent": 30.9
+      "percent": 29.1
     },
     {
       "country_code": "BULGARIA",
       "country": "Bulgaria",
       "service": "cloudflare.com",
-      "domains": 14,
+      "domains": 15,
       "scanned_domains": 55,
-      "percent": 25.5
+      "percent": 27.3
     },
     {
       "country_code": "BULGARIA",
@@ -2588,9 +2588,9 @@
       "country_code": "BULGARIA",
       "country": "Bulgaria",
       "service": "bootstrapcdn.com",
-      "domains": 7,
+      "domains": 6,
       "scanned_domains": 55,
-      "percent": 12.7
+      "percent": 10.9
     },
     {
       "country_code": "BULGARIA",

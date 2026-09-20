@@ -1,15 +1,15 @@
 {
   "country_code": "LUXEMBOURG",
-  "total_relationships": 2048,
+  "total_relationships": 2047,
   "total_source_domains": 41,
   "top_source_domains": [
     {
       "domain": "gouvernement.lu",
-      "count": 5044
+      "count": 5553
     },
     {
       "domain": "public.lu",
-      "count": 3613
+      "count": 3720
     },
     {
       "domain": "uni.lu",
@@ -171,19 +171,19 @@
   "top_target_domains": [
     {
       "domain": "public.lu",
-      "count": 3837
+      "count": 4047
     },
     {
       "domain": "gouvernement.lu",
-      "count": 2287
+      "count": 2486
     },
     {
       "domain": "facebook.com",
-      "count": 528
+      "count": 560
     },
     {
       "domain": "linkedin.com",
-      "count": 492
+      "count": 528
     },
     {
       "domain": "uni.lu",
@@ -191,31 +191,35 @@
     },
     {
       "domain": "twitter.com",
-      "count": 378
+      "count": 407
     },
     {
       "domain": "bsky.app",
-      "count": 316
+      "count": 345
     },
     {
       "domain": "instagram.com",
-      "count": 261
+      "count": 272
     },
     {
       "domain": "etat.lu",
-      "count": 206
+      "count": 211
     },
     {
       "domain": "youtube.com",
-      "count": 177
+      "count": 178
     },
     {
       "domain": "europa.eu",
-      "count": 164
+      "count": 175
     },
     {
       "domain": "googleapis.com",
       "count": 131
+    },
+    {
+      "domain": "adobedtm.com",
+      "count": 123
     },
     {
       "domain": "esch.lu",
@@ -224,10 +228,6 @@
     {
       "domain": "inll.lu",
       "count": 112
-    },
-    {
-      "domain": "adobedtm.com",
-      "count": 94
     },
     {
       "domain": "jsdelivr.net",
@@ -259,7 +259,7 @@
     },
     {
       "domain": "google.com",
-      "count": 58
+      "count": 59
     },
     {
       "domain": "gstatic.com",
@@ -355,7 +355,7 @@
     },
     {
       "domain": "apple.com",
-      "count": 27
+      "count": 28
     },
     {
       "domain": "meteolux.lu",
@@ -371,12 +371,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 1164,
+    "editorial_link": 1163,
     "form_destination": 155,
     "image_or_media_dependency": 195,
     "script_dependency": 274,
     "stylesheet_dependency": 231,
     "font_or_preload_dependency": 29
   },
-  "generated_at": "2026-09-18T21:17:11.646187+00:00"
+  "generated_at": "2026-09-20T04:23:30.662533+00:00"
 }

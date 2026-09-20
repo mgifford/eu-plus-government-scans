@@ -1,15 +1,15 @@
 {
   "country_code": "ITALY",
-  "total_relationships": 16229,
+  "total_relationships": 16230,
   "total_source_domains": 151,
   "top_source_domains": [
     {
       "domain": "esteri.it",
-      "count": 37245
+      "count": 39648
     },
     {
       "domain": "giustizia.it",
-      "count": 15486
+      "count": 19466
     },
     {
       "domain": "cultura.gov.it",
@@ -207,67 +207,67 @@
   "top_target_domains": [
     {
       "domain": "esteri.it",
-      "count": 16339
+      "count": 17272
     },
     {
       "domain": "giustizia.it",
-      "count": 8090
+      "count": 10154
     },
     {
       "domain": "facebook.com",
-      "count": 5746
+      "count": 6171
+    },
+    {
+      "domain": "twitter.com",
+      "count": 5037
     },
     {
       "domain": "cultura.gov.it",
       "count": 5008
     },
     {
-      "domain": "twitter.com",
-      "count": 4625
-    },
-    {
       "domain": "youtube.com",
-      "count": 4456
+      "count": 4858
     },
     {
       "domain": "agid.gov.it",
-      "count": 3884
+      "count": 4012
     },
     {
       "domain": "instagram.com",
-      "count": 3756
+      "count": 3869
     },
     {
       "domain": "governo.it",
-      "count": 2745
+      "count": 2874
     },
     {
       "domain": "europa.eu",
-      "count": 2426
+      "count": 2565
     },
     {
       "domain": "regione.lombardia.it",
       "count": 2097
     },
     {
+      "domain": "viaggiaresicuri.it",
+      "count": 2076
+    },
+    {
+      "domain": "dovesiamonelmondo.it",
+      "count": 2073
+    },
+    {
       "domain": "regione.emilia-romagna.it",
       "count": 1996
     },
     {
-      "domain": "viaggiaresicuri.it",
-      "count": 1950
-    },
-    {
-      "domain": "dovesiamonelmondo.it",
-      "count": 1948
+      "domain": "whatsapp.com",
+      "count": 1703
     },
     {
       "domain": "googleapis.com",
-      "count": 1659
-    },
-    {
-      "domain": "whatsapp.com",
-      "count": 1637
+      "count": 1681
     },
     {
       "domain": "regione.veneto.it",
@@ -275,7 +275,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 1318
+      "count": 1339
     },
     {
       "domain": "regione.campania.it",
@@ -302,44 +302,44 @@
       "count": 949
     },
     {
+      "domain": "csm.it",
+      "count": 918
+    },
+    {
       "domain": "beniculturali.it",
-      "count": 915
-    },
-    {
-      "domain": "google.com",
-      "count": 818
-    },
-    {
-      "domain": "comune.bologna.it",
-      "count": 801
-    },
-    {
-      "domain": "camera.it",
-      "count": 794
+      "count": 916
     },
     {
       "domain": "googletagmanager.com",
-      "count": 788
+      "count": 883
+    },
+    {
+      "domain": "google.com",
+      "count": 823
+    },
+    {
+      "domain": "comune.bologna.it",
+      "count": 803
+    },
+    {
+      "domain": "camera.it",
+      "count": 795
     },
     {
       "domain": "comune.verona.it",
       "count": 780
     },
     {
+      "domain": "mef.gov.it",
+      "count": 724
+    },
+    {
       "domain": "regione.toscana.it",
       "count": 723
     },
     {
-      "domain": "mef.gov.it",
-      "count": 722
-    },
-    {
-      "domain": "csm.it",
-      "count": 718
-    },
-    {
       "domain": "jsdelivr.net",
-      "count": 689
+      "count": 699
     },
     {
       "domain": "municipiumapp.it",
@@ -347,18 +347,22 @@
     },
     {
       "domain": "interno.gov.it",
-      "count": 627
+      "count": 630
     },
     {
       "domain": "cloudflare.com",
-      "count": 540
+      "count": 550
     },
     {
-      "domain": "comune.genova.it",
-      "count": 523
+      "domain": "italea.com",
+      "count": 543
     },
     {
       "domain": "difesa.it",
+      "count": 525
+    },
+    {
+      "domain": "comune.genova.it",
       "count": 523
     },
     {
@@ -366,53 +370,49 @@
       "count": 522
     },
     {
-      "domain": "italea.com",
-      "count": 505
-    },
-    {
       "domain": "comune.torino.it",
       "count": 498
+    },
+    {
+      "domain": "opportunitaly.gov.it",
+      "count": 493
+    },
+    {
+      "domain": "spreaker.com",
+      "count": 474
+    },
+    {
+      "domain": "t.me",
+      "count": 463
     },
     {
       "domain": "comune.modena.it",
       "count": 459
     },
     {
-      "domain": "t.me",
-      "count": 458
-    },
-    {
-      "domain": "opportunitaly.gov.it",
-      "count": 458
-    },
-    {
       "domain": "lavoro.gov.it",
       "count": 455
     },
     {
-      "domain": "spreaker.com",
-      "count": 443
-    },
-    {
-      "domain": "italia.it",
-      "count": 393
-    },
-    {
       "domain": "scuolamagistratura.it",
-      "count": 390
+      "count": 455
     },
     {
-      "domain": "comune.messina.it",
-      "count": 381
+      "domain": "quirinale.it",
+      "count": 450
+    },
+    {
+      "domain": "cortedicassazione.it",
+      "count": 449
     }
   ],
   "relationship_types": {
     "script_dependency": 2608,
-    "editorial_link": 7536,
+    "editorial_link": 7537,
     "image_or_media_dependency": 2060,
     "stylesheet_dependency": 2320,
     "form_destination": 1454,
     "font_or_preload_dependency": 251
   },
-  "generated_at": "2026-09-18T11:27:31.325403+00:00"
+  "generated_at": "2026-09-20T04:23:30.165750+00:00"
 }

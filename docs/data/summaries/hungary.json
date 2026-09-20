@@ -49,7 +49,7 @@
     },
     {
       "domain": "police.hu",
-      "count": 468
+      "count": 477
     },
     {
       "domain": "kaposvar.hu",
@@ -179,7 +179,7 @@
     },
     {
       "domain": "gov.hu",
-      "count": 210
+      "count": 211
     },
     {
       "domain": "googletagmanager.com",
@@ -191,11 +191,15 @@
     },
     {
       "domain": "kormany.hu",
-      "count": 168
+      "count": 169
     },
     {
       "domain": "uni-miskolc.hu",
       "count": 168
+    },
+    {
+      "domain": "police.hu",
+      "count": 147
     },
     {
       "domain": "valasztas.hu",
@@ -203,10 +207,6 @@
     },
     {
       "domain": "birosag.hu",
-      "count": 141
-    },
-    {
-      "domain": "police.hu",
       "count": 141
     },
     {
@@ -326,5 +326,5 @@
     "script_dependency": 172,
     "stylesheet_dependency": 153
   },
-  "generated_at": "2026-09-18T04:09:56.141524+00:00"
+  "generated_at": "2026-09-20T04:23:30.262912+00:00"
 }

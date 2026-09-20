@@ -5,7 +5,7 @@
   "top_source_domains": [
     {
       "domain": "zagreb.hr",
-      "count": 1566
+      "count": 1594
     },
     {
       "domain": "gov.hr",
@@ -127,7 +127,7 @@
   "top_target_domains": [
     {
       "domain": "zagreb.hr",
-      "count": 761
+      "count": 780
     },
     {
       "domain": "gov.hr",
@@ -139,11 +139,11 @@
     },
     {
       "domain": "facebook.com",
-      "count": 318
+      "count": 319
     },
     {
       "domain": "googletagmanager.com",
-      "count": 286
+      "count": 288
     },
     {
       "domain": "skole.hr",
@@ -151,7 +151,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 220
+      "count": 221
     },
     {
       "domain": "youtube.com",
@@ -195,7 +195,7 @@
     },
     {
       "domain": "google.com",
-      "count": 116
+      "count": 118
     },
     {
       "domain": "jsdelivr.net",
@@ -318,11 +318,11 @@
       "count": 30
     },
     {
-      "domain": "x.com",
-      "count": 28
+      "domain": "globaldizajn.hr",
+      "count": 30
     },
     {
-      "domain": "globaldizajn.hr",
+      "domain": "x.com",
       "count": 28
     }
   ],
@@ -334,5 +334,5 @@
     "script_dependency": 167,
     "stylesheet_dependency": 122
   },
-  "generated_at": "2026-09-17T21:48:25.170572+00:00"
+  "generated_at": "2026-09-20T04:23:29.943263+00:00"
 }
