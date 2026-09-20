@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T11:30:59.585690+00:00",
+  "generated_at": "2026-09-20T16:20:14.908893+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -173,12 +173,12 @@
     {
       "service": "googleapis.com",
       "countries": 32,
-      "domains": 4279
+      "domains": 4280
     },
     {
       "service": "googletagmanager.com",
       "countries": 32,
-      "domains": 2765
+      "domains": 2766
     },
     {
       "service": "gstatic.com",
@@ -198,7 +198,7 @@
     {
       "service": "google.com",
       "countries": 31,
-      "domains": 2088
+      "domains": 2089
     },
     {
       "service": "cloudflare.com",
@@ -213,7 +213,7 @@
     {
       "service": "unpkg.com",
       "countries": 29,
-      "domains": 685
+      "domains": 684
     },
     {
       "service": "bootstrapcdn.com",
@@ -223,7 +223,7 @@
     {
       "service": "typekit.net",
       "countries": 26,
-      "domains": 281
+      "domains": 282
     },
     {
       "service": "cookiebot.com",
@@ -1556,17 +1556,17 @@
       "country_code": "CANADA",
       "country": "Canada",
       "service": "googleapis.com",
-      "domains": 104,
+      "domains": 105,
       "scanned_domains": 191,
-      "percent": 54.5
+      "percent": 55.0
     },
     {
       "country_code": "CANADA",
       "country": "Canada",
       "service": "googletagmanager.com",
-      "domains": 76,
+      "domains": 77,
       "scanned_domains": 191,
-      "percent": 39.8
+      "percent": 40.3
     },
     {
       "country_code": "CANADA",
@@ -1596,9 +1596,9 @@
       "country_code": "CANADA",
       "country": "Canada",
       "service": "google.com",
-      "domains": 47,
+      "domains": 48,
       "scanned_domains": 191,
-      "percent": 24.6
+      "percent": 25.1
     },
     {
       "country_code": "CANADA",
@@ -1620,9 +1620,9 @@
       "country_code": "CANADA",
       "country": "Canada",
       "service": "unpkg.com",
-      "domains": 22,
+      "domains": 21,
       "scanned_domains": 191,
-      "percent": 11.5
+      "percent": 11.0
     },
     {
       "country_code": "CANADA",
@@ -1636,9 +1636,9 @@
       "country_code": "CANADA",
       "country": "Canada",
       "service": "typekit.net",
-      "domains": 10,
+      "domains": 11,
       "scanned_domains": 191,
-      "percent": 5.2
+      "percent": 5.8
     },
     {
       "country_code": "CANADA",
