@@ -9,9 +9,24 @@
     "total_source_domains": 103,
     "file": "ireland.json"
   },
-  "UNITED_KINGDOM_UK": {
-    "total_relationships": 316949,
-    "total_source_domains": 9149,
-    "file": "united_kingdom_uk.json"
+  "POLAND": {
+    "total_relationships": 61676,
+    "total_source_domains": 2487,
+    "file": "poland.json"
+  },
+  "NORWAY": {
+    "total_relationships": 869,
+    "total_source_domains": 34,
+    "file": "norway.json"
+  },
+  "MALTA": {
+    "total_relationships": 1778,
+    "total_source_domains": 3,
+    "file": "malta.json"
+  },
+  "GERMANY": {
+    "total_relationships": 22099,
+    "total_source_domains": 223,
+    "file": "germany.json"
   }
 }
