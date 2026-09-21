@@ -5,7 +5,7 @@
   "top_source_domains": [
     {
       "domain": "krakow.pl",
-      "count": 50008
+      "count": 50057
     },
     {
       "domain": "poznan.pl",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "krakow.pl",
-      "count": 24529
+      "count": 24553
     },
     {
       "domain": "lodz.pl",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 15390
+      "count": 15392
     },
     {
       "domain": "gdansk.pl",
@@ -239,15 +239,15 @@
     },
     {
       "domain": "instagram.com",
-      "count": 6002
+      "count": 6004
     },
     {
       "domain": "youtube.com",
-      "count": 5872
+      "count": 5873
     },
     {
       "domain": "google.com",
-      "count": 5857
+      "count": 5858
     },
     {
       "domain": "ug.edu.pl",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 4310
+      "count": 4311
     },
     {
       "domain": "torun.pl",
@@ -295,7 +295,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 1900
+      "count": 1901
     },
     {
       "domain": "fontawesome.com",
@@ -371,7 +371,7 @@
     },
     {
       "domain": "x.com",
-      "count": 680
+      "count": 681
     },
     {
       "domain": "policja.pl",
@@ -414,5 +414,5 @@
     "stylesheet_dependency": 7650,
     "font_or_preload_dependency": 1834
   },
-  "generated_at": "2026-09-19T16:11:59.554538+00:00"
+  "generated_at": "2026-09-21T04:18:06.145130+00:00"
 }
