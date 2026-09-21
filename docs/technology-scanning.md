@@ -5,13 +5,13 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-09-21 12:48 UTC — last scan: 2026-09-21_
+_Stats as of 2026-09-21 13:28 UTC — last scan: 2026-09-21_
 
-**179** scan batches run
+**180** scan batches run
 
 **87,690** of **87,696** available pages scanned (**100.0%** coverage)
-**64,596** pages with technology detections (**73.7%** of scanned)
-**458** unique technologies identified
+**65,576** pages with technology detections (**74.8%** of scanned)
+**459** unique technologies identified
 
 ---
 
@@ -34,7 +34,7 @@ _Stats as of 2026-09-21 12:48 UTC — last scan: 2026-09-21_
 | Hungary | 392 | 293 | 392 | 2026-09-12 |
 | Iceland | 145 | 143 | 145 | 2026-09-12 |
 | Ireland | 536 | 494 | 536 | 2026-09-12 |
-| Italy | 5,351 | 2,004 | 5,351 | 2026-09-19 |
+| Italy | 5,351 | 2,984 | 5,351 | 2026-09-21 |
 | Latvia | 803 | 756 | 803 | 2026-09-16 |
 | Lithuania | 122 | 112 | 122 | 2026-09-13 |
 | Luxembourg | 573 | 513 | 573 | 2026-09-13 |
@@ -60,46 +60,46 @@ _Stats as of 2026-09-21 12:48 UTC — last scan: 2026-09-21_
 
 | # | Technology | Pages | Categories |
 |--:|-----------|------:|-----------|
-| 1 | jQuery | **34,685** | JavaScript libraries |
-| 2 | PHP | **21,526** | Programming languages |
-| 3 | Apache | **16,544** | Web servers |
-| 4 | Font Awesome | **16,331** | Font scripts |
-| 5 | Bootstrap | **15,158** | UI frameworks |
-| 6 | Google Tag Manager | **14,496** | Tag managers |
-| 7 | Google Font API | **14,208** | Font scripts |
-| 8 | MySQL | **12,362** | Databases |
-| 9 | WordPress | **12,275** | Blogs, CMS |
-| 10 | Nginx | **10,983** | Reverse proxies, Web servers |
-| 11 | jQuery Migrate | **10,945** | JavaScript libraries |
-| 12 | Cloudflare | **6,520** | CDN |
-| 13 | Windows Server | **6,061** | Operating systems |
-| 14 | IIS | **5,974** | Web servers |
-| 15 | jQuery UI | **5,234** | JavaScript libraries |
-| 16 | Microsoft ASP.NET | **5,228** | Web frameworks |
-| 17 | Drupal | **4,400** | CMS |
-| 18 | reCAPTCHA | **4,244** | Security |
-| 19 | jsDelivr | **4,233** | CDN |
-| 20 | Yoast SEO | **4,164** | SEO |
+| 1 | jQuery | **35,331** | JavaScript libraries |
+| 2 | PHP | **21,938** | Programming languages |
+| 3 | Apache | **16,990** | Web servers |
+| 4 | Font Awesome | **16,519** | Font scripts |
+| 5 | Bootstrap | **15,661** | UI frameworks |
+| 6 | Google Tag Manager | **14,550** | Tag managers |
+| 7 | Google Font API | **14,350** | Font scripts |
+| 8 | MySQL | **12,657** | Databases |
+| 9 | WordPress | **12,570** | Blogs, CMS |
+| 10 | Nginx | **11,112** | Reverse proxies, Web servers |
+| 11 | jQuery Migrate | **11,078** | JavaScript libraries |
+| 12 | Cloudflare | **6,531** | CDN |
+| 13 | Windows Server | **6,143** | Operating systems |
+| 14 | IIS | **6,055** | Web servers |
+| 15 | jQuery UI | **5,318** | JavaScript libraries |
+| 16 | Microsoft ASP.NET | **5,299** | Web frameworks |
+| 17 | Drupal | **4,471** | CMS |
+| 18 | reCAPTCHA | **4,414** | Security |
+| 19 | jsDelivr | **4,277** | CDN |
+| 20 | Yoast SEO | **4,222** | SEO |
 
 ### Top Technology Categories
 
 | # | Category | Pages |
 |--:|---------|------:|
-| 1 | JavaScript libraries | **69,663** |
-| 2 | Web servers | **38,205** |
-| 3 | Font scripts | **31,570** |
-| 4 | Programming languages | **26,993** |
-| 5 | CMS | **22,859** |
-| 6 | UI frameworks | **20,315** |
-| 7 | Tag managers | **14,522** |
-| 8 | CDN | **14,479** |
-| 9 | Databases | **12,967** |
-| 10 | Blogs | **12,431** |
-| 11 | Reverse proxies | **11,406** |
-| 12 | Operating systems | **9,106** |
-| 13 | Web frameworks | **7,533** |
-| 14 | JavaScript frameworks | **6,798** |
-| 15 | Miscellaneous | **4,899** |
+| 1 | JavaScript libraries | **70,809** |
+| 2 | Web servers | **38,914** |
+| 3 | Font scripts | **31,924** |
+| 4 | Programming languages | **27,544** |
+| 5 | CMS | **23,312** |
+| 6 | UI frameworks | **20,856** |
+| 7 | Tag managers | **14,576** |
+| 8 | CDN | **14,563** |
+| 9 | Databases | **13,277** |
+| 10 | Blogs | **12,726** |
+| 11 | Reverse proxies | **11,560** |
+| 12 | Operating systems | **9,453** |
+| 13 | Web frameworks | **7,678** |
+| 14 | JavaScript frameworks | **6,889** |
+| 15 | Miscellaneous | **4,961** |
 
 📥 Machine-readable results: [Download machine-readable technology data (JSON)](technology-data.json)
 
