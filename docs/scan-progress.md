@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-09-21 19:28 UTC_
+_Generated: 2026-09-21 22:43 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -13,10 +13,10 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
-| **Combined Reachability** | **80,564 confirmed reachable** | 87,696 | **<span role="img" aria-label="91.9% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:110px;"></span></span><span class="sm-bar__label">91.9%</span></span>** | — |
-| Social Media | 87,696 scanned (80,549 reachable) | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 22.7 days |
-| Technology | 87,696 scanned | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 22.1 days |
-| Lighthouse | 27,844 scanned | 87,696 | <span role="img" aria-label="31.8% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:38px;"></span></span><span class="sm-bar__label">31.8%</span></span> | 21.6 days |
+| **Combined Reachability** | **80,579 confirmed reachable** | 87,696 | **<span role="img" aria-label="91.9% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:110px;"></span></span><span class="sm-bar__label">91.9%</span></span>** | — |
+| Social Media | 87,696 scanned (80,564 reachable) | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 22.8 days |
+| Technology | 87,696 scanned | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 22.0 days |
+| Lighthouse | 27,844 scanned | 87,696 | <span role="img" aria-label="31.8% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:38px;"></span></span><span class="sm-bar__label">31.8%</span></span> | 21.7 days |
 | Accessibility Statements | 87,696 scanned | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 27.4 days |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by any scan type. **Avg Age** shows the mean number of days (or hours) since each URL in that scan type was last scanned — lower is fresher.
@@ -65,7 +65,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Denmark | 1,536 | 1,536 | 1,507 | 536 | 0 | 26 | 958 | 164 | 20 | 17 | 12 | Aug 2026 – Sep 2026 |
 | Estonia | 401 | 401 | 376 | 180 | 3 | 25 | 191 | 62 | 1 | 0 | 28 | Aug 2026 – Sep 2026 |
 | Finland | 199 | 199 | 189 | 69 | 0 | 9 | 112 | 31 | 10 | 3 | 6 | Aug 2026 – Sep 2026 |
-| France | 10,009 | 10,009 | 9,177 | 2,485 | 28 | 571 | 6,112 | 1,443 | 580 | 130 | 519 | Aug 2026 – Sep 2026 |
+| France | 10,009 | 10,009 | 9,192 | 2,489 | 28 | 573 | 6,125 | 1,447 | 582 | 132 | 519 | Aug 2026 – Sep 2026 |
 | Germany | 6,599 | 6,599 | 6,444 | 1,630 | 83 | 450 | 4,306 | 1,136 | 182 | 142 | 486 | Aug 2026 – Sep 2026 |
 | Greece | 1,752 | 1,752 | 1,607 | 438 | 3 | 101 | 1,077 | 222 | 56 | 0 | 104 | Aug 2026 – Sep 2026 |
 | Hungary | 392 | 392 | 296 | 112 | 2 | 27 | 163 | 23 | 0 | 0 | 29 | Aug 2026 – Sep 2026 |
@@ -106,7 +106,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Denmark | 1,536 | 2026-09-18 |
 | Estonia | 401 | 2026-09-11 |
 | Finland | 199 | 2026-09-11 |
-| France | 10,009 | 2026-09-20 |
+| France | 10,009 | 2026-09-21 |
 | Germany | 6,599 | 2026-09-21 |
 | Greece | 1,752 | 2026-09-16 |
 | Hungary | 392 | 2026-09-12 |
@@ -119,7 +119,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Malta | 610 | 2026-09-16 |
 | Netherlands | 945 | 2026-09-13 |
 | Norway | 249 | 2026-09-13 |
-| Poland | 14,951 | 2026-09-19 |
+| Poland | 14,951 | 2026-09-21 |
 | Portugal | 3,508 | 2026-09-19 |
 | Cyprus | 29 | 2026-09-13 |
 | Romania | 807 | 2026-09-20 |
@@ -179,9 +179,9 @@ Checks whether each government page links to an accessibility statement as requi
 | Belgium | 1,329 | 1,237 | 574 | 523 | 46% | Aug 2026 – Sep 2026 |
 | Bulgaria | 353 | 305 | 95 | 84 | 31% | Aug 2026 |
 | Canada | 4,469 | 4,221 | 1,048 | 843 | 25% | Aug 2026 – Sep 2026 |
-| Croatia | 257 | 254 | 105 | 80 | 41% | Aug 2026 |
+| Croatia | 257 | 254 | 105 | 80 | 41% | Aug 2026 – Sep 2026 |
 | Czechia | 866 | 798 | 446 | 397 | 56% | Aug 2026 – Sep 2026 |
-| Denmark | 1,536 | 1,507 | 959 | 941 | 64% | Aug 2026 |
+| Denmark | 1,536 | 1,507 | 959 | 941 | 64% | Aug 2026 – Sep 2026 |
 | Estonia | 401 | 390 | 149 | 79 | 38% | Aug 2026 |
 | Finland | 199 | 188 | 133 | 126 | 71% | Aug 2026 |
 | France | 10,009 | 9,012 | 4,100 | 3,971 | 45% | Aug 2026 – Sep 2026 |
@@ -200,7 +200,7 @@ Checks whether each government page links to an accessibility statement as requi
 | Poland | 14,951 | 13,531 | 5,684 | 3,630 | 42% | Aug 2026 – Sep 2026 |
 | Portugal | 3,508 | 2,920 | 800 | 661 | 27% | Aug 2026 – Sep 2026 |
 | Cyprus | 29 | 29 | 1 | 1 | 3% | Aug 2026 – Sep 2026 |
-| Romania | 807 | 349 | 30 | 10 | 9% | Aug 2026 |
+| Romania | 807 | 349 | 30 | 10 | 9% | Aug 2026 – Sep 2026 |
 | Slovakia | 442 | 413 | 187 | 166 | 45% | Aug 2026 – Sep 2026 |
 | Slovenia | 214 | 207 | 116 | 81 | 56% | Aug 2026 – Sep 2026 |
 | Spain | 6,091 | 5,137 | 2,367 | 2,083 | 46% | Aug 2026 – Sep 2026 |

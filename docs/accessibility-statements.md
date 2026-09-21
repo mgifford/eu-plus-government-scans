@@ -5,9 +5,9 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-09-21 19:28 UTC — last scan: 2026-09-21_
+_Stats as of 2026-09-21 22:43 UTC — last scan: 2026-09-21_
 
-**234** scan batches run
+**237** scan batches run
 
 **87,690** of **87,696** available pages scanned (**100.0%** coverage)
 **80,339** of **87,690** scanned pages were reachable (**91.6%**)
@@ -30,9 +30,9 @@ Each country entry in the JSON file includes page-level evidence for pages with 
 | Belgium | 1,329 | 1,329 | 1,237 | 574 | 523 | 46.4% | Aug 2026 – Sep 2026 |
 | Bulgaria | 353 | 353 | 305 | 95 | 84 | 31.1% | Aug 2026 |
 | Canada | 4,469 | 4,469 | 4,221 | 1,048 | 843 | 24.8% | Aug 2026 – Sep 2026 |
-| Croatia | 257 | 257 | 254 | 105 | 80 | 41.3% | Aug 2026 |
+| Croatia | 257 | 257 | 254 | 105 | 80 | 41.3% | Aug 2026 – Sep 2026 |
 | Czechia | 866 | 866 | 798 | 446 | 397 | 55.9% | Aug 2026 – Sep 2026 |
-| Denmark | 1,536 | 1,536 | 1,507 | 959 | 941 | 63.6% | Aug 2026 |
+| Denmark | 1,536 | 1,536 | 1,507 | 959 | 941 | 63.6% | Aug 2026 – Sep 2026 |
 | Estonia | 401 | 401 | 390 | 149 | 79 | 38.2% | Aug 2026 |
 | Finland | 199 | 199 | 188 | 133 | 126 | 70.7% | Aug 2026 |
 | France | 10,009 | 10,009 | 9,012 | 4,100 | 3,971 | 45.5% | Aug 2026 – Sep 2026 |
@@ -51,7 +51,7 @@ Each country entry in the JSON file includes page-level evidence for pages with 
 | Poland | 14,951 | 14,951 | 13,531 | 5,684 | 3,630 | 42.0% | Aug 2026 – Sep 2026 |
 | Portugal | 3,508 | 3,508 | 2,920 | 800 | 661 | 27.4% | Aug 2026 – Sep 2026 |
 | Cyprus | 29 | 29 | 29 | 1 | 1 | 3.4% | Aug 2026 – Sep 2026 |
-| Romania | 807 | 807 | 349 | 30 | 10 | 8.6% | Aug 2026 |
+| Romania | 807 | 807 | 349 | 30 | 10 | 8.6% | Aug 2026 – Sep 2026 |
 | Slovakia | 442 | 442 | 413 | 187 | 166 | 45.3% | Aug 2026 – Sep 2026 |
 | Slovenia | 214 | 214 | 207 | 116 | 81 | 56.0% | Aug 2026 – Sep 2026 |
 | Spain | 6,091 | 6,091 | 5,137 | 2,367 | 2,083 | 46.1% | Aug 2026 – Sep 2026 |
