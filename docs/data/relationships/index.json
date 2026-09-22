@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-21T22:33:44.222308+00:00",
+  "generated_at": "2026-09-22T04:17:16.167093+00:00",
   "shard_max_bytes": 33554432,
-  "total_rows": 317967,
-  "total_bytes": 189259315,
+  "total_rows": 318011,
+  "total_bytes": 189280237,
   "shards": [
     {
       "file": "at.001.jsonl",
@@ -49,8 +49,8 @@
     {
       "file": "ch.001.jsonl",
       "group": "ch",
-      "rows": 6876,
-      "bytes": 4359282
+      "rows": 6911,
+      "bytes": 4377152
     },
     {
       "file": "clinic.001.jsonl",
@@ -133,8 +133,8 @@
     {
       "file": "fr.001.jsonl",
       "group": "fr",
-      "rows": 30825,
-      "bytes": 20204174
+      "rows": 30834,
+      "bytes": 20207226
     },
     {
       "file": "frl.001.jsonl",
