@@ -5,9 +5,9 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-09-22 05:42 UTC — last scan: 2026-09-21_
+_Stats as of 2026-09-22 06:14 UTC — last scan: 2026-09-22_
 
-**237** scan batches run
+**241** scan batches run
 
 **87,690** of **87,696** available pages scanned (**100.0%** coverage)
 **80,339** of **87,690** scanned pages were reachable (**91.6%**)
@@ -33,11 +33,11 @@ Each country entry in the JSON file includes page-level evidence for pages with 
 | Croatia | 257 | 257 | 254 | 105 | 80 | 41.3% | Aug 2026 – Sep 2026 |
 | Czechia | 866 | 866 | 798 | 446 | 397 | 55.9% | Aug 2026 – Sep 2026 |
 | Denmark | 1,536 | 1,536 | 1,507 | 959 | 941 | 63.6% | Aug 2026 – Sep 2026 |
-| Estonia | 401 | 401 | 390 | 149 | 79 | 38.2% | Aug 2026 |
+| Estonia | 401 | 401 | 390 | 149 | 79 | 38.2% | Aug 2026 – Sep 2026 |
 | Finland | 199 | 199 | 188 | 133 | 126 | 70.7% | Aug 2026 |
 | France | 10,009 | 10,009 | 9,012 | 4,100 | 3,971 | 45.5% | Aug 2026 – Sep 2026 |
 | Germany | 6,599 | 6,599 | 6,410 | 4,682 | 3,949 | 73.0% | Aug 2026 – Sep 2026 |
-| Greece | 1,752 | 1,752 | 1,621 | 421 | 267 | 26.0% | Aug 2026 |
+| Greece | 1,752 | 1,752 | 1,621 | 421 | 267 | 26.0% | Aug 2026 – Sep 2026 |
 | Hungary | 392 | 392 | 293 | 57 | 49 | 19.5% | Aug 2026 |
 | Iceland | 145 | 145 | 143 | 14 | 5 | 9.8% | Aug 2026 |
 | Ireland | 536 | 536 | 499 | 251 | 238 | 50.3% | Aug 2026 |
