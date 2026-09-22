@@ -9,39 +9,9 @@
     "total_source_domains": 3,
     "file": "malta.json"
   },
-  "CANADA": {
-    "total_relationships": 317080,
-    "total_source_domains": 9152,
-    "file": "canada.json"
-  },
-  "NORWAY": {
-    "total_relationships": 869,
-    "total_source_domains": 34,
-    "file": "norway.json"
-  },
-  "NETHERLANDS": {
-    "total_relationships": 2929,
-    "total_source_domains": 73,
-    "file": "netherlands.json"
-  },
-  "UNITED_KINGDOM_UK": {
-    "total_relationships": 317080,
-    "total_source_domains": 9152,
-    "file": "united_kingdom_uk.json"
-  },
-  "FINLAND": {
-    "total_relationships": 954,
-    "total_source_domains": 40,
-    "file": "finland.json"
-  },
-  "SWEDEN": {
-    "total_relationships": 6236,
-    "total_source_domains": 245,
-    "file": "sweden.json"
-  },
-  "POLAND": {
-    "total_relationships": 61752,
-    "total_source_domains": 2487,
-    "file": "poland.json"
+  "GERMANY": {
+    "total_relationships": 22086,
+    "total_source_domains": 224,
+    "file": "germany.json"
   }
 }
