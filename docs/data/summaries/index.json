@@ -9,10 +9,10 @@
     "total_source_domains": 103,
     "file": "ireland.json"
   },
-  "ITALY": {
-    "total_relationships": 16231,
-    "total_source_domains": 151,
-    "file": "italy.json"
+  "SWITZERLAND": {
+    "total_relationships": 6816,
+    "total_source_domains": 9,
+    "file": "switzerland.json"
   },
   "NORWAY": {
     "total_relationships": 869,
@@ -24,9 +24,9 @@
     "total_source_domains": 3,
     "file": "malta.json"
   },
-  "PORTUGAL": {
-    "total_relationships": 13609,
-    "total_source_domains": 397,
-    "file": "portugal.json"
+  "FRANCE": {
+    "total_relationships": 30825,
+    "total_source_domains": 673,
+    "file": "france.json"
   }
 }
