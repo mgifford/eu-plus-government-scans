@@ -24,9 +24,9 @@
     "total_source_domains": 73,
     "file": "netherlands.json"
   },
-  "FRANCE": {
-    "total_relationships": 30839,
-    "total_source_domains": 673,
-    "file": "france.json"
+  "SPAIN": {
+    "total_relationships": 16266,
+    "total_source_domains": 235,
+    "file": "spain.json"
   }
 }
