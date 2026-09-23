@@ -5,14 +5,14 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-09-23 05:26 UTC — last scan: 2026-09-22_
+_Stats as of 2026-09-23 06:02 UTC — last scan: 2026-09-23_
 
-**246** scan batches run
+**248** scan batches run
 
 **87,690** of **87,696** available pages scanned (**100.0%** coverage)
-**80,348** of **87,690** scanned pages were reachable (**91.6%**)
-**39,314** of **80,348** reachable pages have an accessibility statement (**48.9%**)
-**34,442** pages have the statement link in the footer (**87.6%** of pages with a statement)
+**80,350** of **87,690** scanned pages were reachable (**91.6%**)
+**39,395** of **80,350** reachable pages have an accessibility statement (**49.0%**)
+**34,523** pages have the statement link in the footer (**87.6%** of pages with a statement)
 
 📥 Machine-readable results are available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
 
@@ -35,7 +35,7 @@ Each country entry in the JSON file includes page-level evidence for pages with 
 | Denmark | 1,536 | 1,536 | 1,507 | 959 | 941 | 63.6% | Aug 2026 – Sep 2026 |
 | Estonia | 401 | 401 | 390 | 149 | 79 | 38.2% | Aug 2026 – Sep 2026 |
 | Finland | 199 | 199 | 188 | 133 | 126 | 70.7% | Aug 2026 |
-| France | 10,009 | 10,009 | 9,012 | 4,100 | 3,971 | 45.5% | Aug 2026 – Sep 2026 |
+| France | 10,009 | 10,009 | 9,013 | 4,180 | 4,051 | 46.4% | Aug 2026 – Sep 2026 |
 | Germany | 6,599 | 6,599 | 6,412 | 4,683 | 3,949 | 73.0% | Aug 2026 – Sep 2026 |
 | Greece | 1,752 | 1,752 | 1,621 | 421 | 267 | 26.0% | Aug 2026 – Sep 2026 |
 | Hungary | 392 | 392 | 293 | 57 | 49 | 19.5% | Aug 2026 |
@@ -54,11 +54,11 @@ Each country entry in the JSON file includes page-level evidence for pages with 
 | Romania | 807 | 807 | 349 | 30 | 10 | 8.6% | Aug 2026 – Sep 2026 |
 | Slovakia | 442 | 442 | 413 | 187 | 166 | 45.3% | Aug 2026 – Sep 2026 |
 | Slovenia | 214 | 214 | 207 | 116 | 81 | 56.0% | Aug 2026 – Sep 2026 |
-| Spain | 6,091 | 6,091 | 5,137 | 2,367 | 2,083 | 46.1% | Aug 2026 – Sep 2026 |
+| Spain | 6,091 | 6,091 | 5,138 | 2,368 | 2,084 | 46.1% | Aug 2026 – Sep 2026 |
 | Sweden | 1,702 | 1,702 | 1,611 | 948 | 863 | 58.8% | Aug 2026 – Sep 2026 |
 | Switzerland | 2,123 | 2,123 | 2,078 | 1,026 | 1,025 | 49.4% | Aug 2026 – Sep 2026 |
 | United Kingdom | 19,511 | 19,511 | 18,537 | 10,348 | 9,783 | 55.8% | Aug 2026 – Sep 2026 |
-| **Total** | **87,696** | **87,696** | **80,354** | **39,320** | **34,448** | **48.9%** | — |
+| **Total** | **87,696** | **87,696** | **80,356** | **39,401** | **34,529** | **49.0%** | — |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
