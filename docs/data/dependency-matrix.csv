@@ -12,8 +12,8 @@ UNITED_KINGDOM_UK,United Kingdom,bootstrapcdn.com,164,3145,5.2
 UNITED_KINGDOM_UK,United Kingdom,typekit.net,147,3145,4.7
 UNITED_KINGDOM_UK,United Kingdom,cookiebot.com,57,3145,1.8
 UNITED_KINGDOM_UK,United Kingdom,facebook.com,24,3145,0.8
-UNITED_KINGDOM_UK,United Kingdom,amazonaws.com,137,3145,4.4
 UNITED_KINGDOM_UK,United Kingdom,facebook.net,64,3145,2.0
+UNITED_KINGDOM_UK,United Kingdom,amazonaws.com,137,3145,4.4
 UNITED_KINGDOM_UK,United Kingdom,addtoany.com,36,3145,1.1
 UNITED_KINGDOM_UK,United Kingdom,arcgis.com,26,3145,0.8
 UNITED_KINGDOM_UK,United Kingdom,cdn-cookieyes.com,61,3145,1.9
@@ -32,8 +32,8 @@ POLAND,Poland,bootstrapcdn.com,160,2436,6.6
 POLAND,Poland,typekit.net,29,2436,1.2
 POLAND,Poland,cookiebot.com,27,2436,1.1
 POLAND,Poland,facebook.com,118,2436,4.8
-POLAND,Poland,amazonaws.com,10,2436,0.4
 POLAND,Poland,facebook.net,70,2436,2.9
+POLAND,Poland,amazonaws.com,10,2436,0.4
 POLAND,Poland,addtoany.com,23,2436,0.9
 POLAND,Poland,arcgis.com,2,2436,0.1
 POLAND,Poland,cdn-cookieyes.com,68,2436,2.8
@@ -52,8 +52,8 @@ FRANCE,France,bootstrapcdn.com,73,670,10.9
 FRANCE,France,typekit.net,29,670,4.3
 FRANCE,France,cookiebot.com,4,670,0.6
 FRANCE,France,facebook.com,10,670,1.5
-FRANCE,France,amazonaws.com,12,670,1.8
 FRANCE,France,facebook.net,12,670,1.8
+FRANCE,France,amazonaws.com,12,670,1.8
 FRANCE,France,addtoany.com,29,670,4.3
 FRANCE,France,arcgis.com,5,670,0.7
 FRANCE,France,cdn-cookieyes.com,1,670,0.1
@@ -72,29 +72,29 @@ PORTUGAL,Portugal,bootstrapcdn.com,30,387,7.8
 PORTUGAL,Portugal,typekit.net,8,387,2.1
 PORTUGAL,Portugal,cookiebot.com,3,387,0.8
 PORTUGAL,Portugal,facebook.com,7,387,1.8
-PORTUGAL,Portugal,amazonaws.com,9,387,2.3
 PORTUGAL,Portugal,facebook.net,4,387,1.0
+PORTUGAL,Portugal,amazonaws.com,9,387,2.3
 PORTUGAL,Portugal,addtoany.com,10,387,2.6
 PORTUGAL,Portugal,arcgis.com,3,387,0.8
 PORTUGAL,Portugal,cdn-cookieyes.com,5,387,1.3
 PORTUGAL,Portugal,fbcdn.net,2,387,0.5
 PORTUGAL,Portugal,mapbox.com,5,387,1.3
-GREECE,Greece,googleapis.com,240,363,66.1
-GREECE,Greece,googletagmanager.com,134,363,36.9
+GREECE,Greece,googleapis.com,241,363,66.4
+GREECE,Greece,googletagmanager.com,133,363,36.6
 GREECE,Greece,gstatic.com,105,363,28.9
 GREECE,Greece,jsdelivr.net,60,363,16.5
 GREECE,Greece,fontawesome.com,25,363,6.9
 GREECE,Greece,google.com,62,363,17.1
 GREECE,Greece,cloudflare.com,59,363,16.3
 GREECE,Greece,jquery.com,26,363,7.2
-GREECE,Greece,unpkg.com,24,363,6.6
+GREECE,Greece,unpkg.com,23,363,6.3
 GREECE,Greece,bootstrapcdn.com,23,363,6.3
-GREECE,Greece,typekit.net,3,363,0.8
+GREECE,Greece,typekit.net,4,363,1.1
 GREECE,Greece,cookiebot.com,1,363,0.3
 GREECE,Greece,facebook.com,4,363,1.1
-GREECE,Greece,amazonaws.com,1,363,0.3
 GREECE,Greece,facebook.net,8,363,2.2
-GREECE,Greece,addtoany.com,10,363,2.8
+GREECE,Greece,amazonaws.com,0,363,0.0
+GREECE,Greece,addtoany.com,9,363,2.5
 GREECE,Greece,arcgis.com,1,363,0.3
 GREECE,Greece,cdn-cookieyes.com,21,363,5.8
 GREECE,Greece,fbcdn.net,2,363,0.6
@@ -112,8 +112,8 @@ SPAIN,Spain,bootstrapcdn.com,26,242,10.7
 SPAIN,Spain,typekit.net,1,242,0.4
 SPAIN,Spain,cookiebot.com,1,242,0.4
 SPAIN,Spain,facebook.com,10,242,4.1
-SPAIN,Spain,amazonaws.com,4,242,1.7
 SPAIN,Spain,facebook.net,10,242,4.1
+SPAIN,Spain,amazonaws.com,4,242,1.7
 SPAIN,Spain,addtoany.com,19,242,7.9
 SPAIN,Spain,arcgis.com,4,242,1.7
 SPAIN,Spain,cdn-cookieyes.com,1,242,0.4
@@ -132,8 +132,8 @@ SWEDEN,Sweden,bootstrapcdn.com,12,241,5.0
 SWEDEN,Sweden,typekit.net,11,241,4.6
 SWEDEN,Sweden,cookiebot.com,18,241,7.5
 SWEDEN,Sweden,facebook.com,1,241,0.4
-SWEDEN,Sweden,amazonaws.com,3,241,1.2
 SWEDEN,Sweden,facebook.net,1,241,0.4
+SWEDEN,Sweden,amazonaws.com,3,241,1.2
 SWEDEN,Sweden,addtoany.com,1,241,0.4
 SWEDEN,Sweden,arcgis.com,0,241,0.0
 SWEDEN,Sweden,cdn-cookieyes.com,3,241,1.2
@@ -152,8 +152,8 @@ GERMANY,Germany,bootstrapcdn.com,7,215,3.3
 GERMANY,Germany,typekit.net,2,215,0.9
 GERMANY,Germany,cookiebot.com,11,215,5.1
 GERMANY,Germany,facebook.com,2,215,0.9
-GERMANY,Germany,amazonaws.com,6,215,2.8
 GERMANY,Germany,facebook.net,0,215,0.0
+GERMANY,Germany,amazonaws.com,6,215,2.8
 GERMANY,Germany,addtoany.com,2,215,0.9
 GERMANY,Germany,arcgis.com,1,215,0.5
 GERMANY,Germany,cdn-cookieyes.com,0,215,0.0
@@ -172,8 +172,8 @@ CANADA,Canada,bootstrapcdn.com,24,191,12.6
 CANADA,Canada,typekit.net,11,191,5.8
 CANADA,Canada,cookiebot.com,1,191,0.5
 CANADA,Canada,facebook.com,6,191,3.1
-CANADA,Canada,amazonaws.com,14,191,7.3
 CANADA,Canada,facebook.net,6,191,3.1
+CANADA,Canada,amazonaws.com,14,191,7.3
 CANADA,Canada,addtoany.com,10,191,5.2
 CANADA,Canada,arcgis.com,19,191,9.9
 CANADA,Canada,cdn-cookieyes.com,1,191,0.5
@@ -181,7 +181,7 @@ CANADA,Canada,fbcdn.net,1,191,0.5
 CANADA,Canada,mapbox.com,3,191,1.6
 ITALY,Italy,googleapis.com,87,146,59.6
 ITALY,Italy,googletagmanager.com,33,146,22.6
-ITALY,Italy,gstatic.com,29,146,19.9
+ITALY,Italy,gstatic.com,30,146,20.5
 ITALY,Italy,jsdelivr.net,53,146,36.3
 ITALY,Italy,fontawesome.com,25,146,17.1
 ITALY,Italy,google.com,34,146,23.3
@@ -192,8 +192,8 @@ ITALY,Italy,bootstrapcdn.com,18,146,12.3
 ITALY,Italy,typekit.net,2,146,1.4
 ITALY,Italy,cookiebot.com,7,146,4.8
 ITALY,Italy,facebook.com,4,146,2.7
-ITALY,Italy,amazonaws.com,6,146,4.1
 ITALY,Italy,facebook.net,5,146,3.4
+ITALY,Italy,amazonaws.com,6,146,4.1
 ITALY,Italy,addtoany.com,11,146,7.5
 ITALY,Italy,arcgis.com,3,146,2.1
 ITALY,Italy,cdn-cookieyes.com,5,146,3.4
@@ -212,8 +212,8 @@ LATVIA,Latvia,bootstrapcdn.com,5,141,3.5
 LATVIA,Latvia,typekit.net,3,141,2.1
 LATVIA,Latvia,cookiebot.com,4,141,2.8
 LATVIA,Latvia,facebook.com,5,141,3.5
-LATVIA,Latvia,amazonaws.com,0,141,0.0
 LATVIA,Latvia,facebook.net,0,141,0.0
+LATVIA,Latvia,amazonaws.com,0,141,0.0
 LATVIA,Latvia,addtoany.com,8,141,5.7
 LATVIA,Latvia,arcgis.com,0,141,0.0
 LATVIA,Latvia,cdn-cookieyes.com,2,141,1.4
@@ -232,8 +232,8 @@ IRELAND,Ireland,bootstrapcdn.com,11,102,10.8
 IRELAND,Ireland,typekit.net,7,102,6.9
 IRELAND,Ireland,cookiebot.com,13,102,12.7
 IRELAND,Ireland,facebook.com,3,102,2.9
-IRELAND,Ireland,amazonaws.com,8,102,7.8
 IRELAND,Ireland,facebook.net,1,102,1.0
+IRELAND,Ireland,amazonaws.com,8,102,7.8
 IRELAND,Ireland,addtoany.com,1,102,1.0
 IRELAND,Ireland,arcgis.com,2,102,2.0
 IRELAND,Ireland,cdn-cookieyes.com,3,102,2.9
@@ -252,8 +252,8 @@ DENMARK,Denmark,bootstrapcdn.com,3,79,3.8
 DENMARK,Denmark,typekit.net,4,79,5.1
 DENMARK,Denmark,cookiebot.com,9,79,11.4
 DENMARK,Denmark,facebook.com,0,79,0.0
-DENMARK,Denmark,amazonaws.com,0,79,0.0
 DENMARK,Denmark,facebook.net,1,79,1.3
+DENMARK,Denmark,amazonaws.com,0,79,0.0
 DENMARK,Denmark,addtoany.com,0,79,0.0
 DENMARK,Denmark,arcgis.com,0,79,0.0
 DENMARK,Denmark,cdn-cookieyes.com,0,79,0.0
@@ -272,8 +272,8 @@ NETHERLANDS,Netherlands,bootstrapcdn.com,6,69,8.7
 NETHERLANDS,Netherlands,typekit.net,4,69,5.8
 NETHERLANDS,Netherlands,cookiebot.com,5,69,7.2
 NETHERLANDS,Netherlands,facebook.com,1,69,1.4
-NETHERLANDS,Netherlands,amazonaws.com,2,69,2.9
 NETHERLANDS,Netherlands,facebook.net,1,69,1.4
+NETHERLANDS,Netherlands,amazonaws.com,2,69,2.9
 NETHERLANDS,Netherlands,addtoany.com,0,69,0.0
 NETHERLANDS,Netherlands,arcgis.com,3,69,4.3
 NETHERLANDS,Netherlands,cdn-cookieyes.com,1,69,1.4
@@ -292,8 +292,8 @@ BULGARIA,Bulgaria,bootstrapcdn.com,6,55,10.9
 BULGARIA,Bulgaria,typekit.net,0,55,0.0
 BULGARIA,Bulgaria,cookiebot.com,1,55,1.8
 BULGARIA,Bulgaria,facebook.com,1,55,1.8
-BULGARIA,Bulgaria,amazonaws.com,1,55,1.8
 BULGARIA,Bulgaria,facebook.net,1,55,1.8
+BULGARIA,Bulgaria,amazonaws.com,1,55,1.8
 BULGARIA,Bulgaria,addtoany.com,1,55,1.8
 BULGARIA,Bulgaria,arcgis.com,0,55,0.0
 BULGARIA,Bulgaria,cdn-cookieyes.com,0,55,0.0
@@ -312,8 +312,8 @@ BELGIUM,Belgium,bootstrapcdn.com,10,41,24.4
 BELGIUM,Belgium,typekit.net,1,41,2.4
 BELGIUM,Belgium,cookiebot.com,3,41,7.3
 BELGIUM,Belgium,facebook.com,1,41,2.4
-BELGIUM,Belgium,amazonaws.com,6,41,14.6
 BELGIUM,Belgium,facebook.net,0,41,0.0
+BELGIUM,Belgium,amazonaws.com,6,41,14.6
 BELGIUM,Belgium,addtoany.com,4,41,9.8
 BELGIUM,Belgium,arcgis.com,1,41,2.4
 BELGIUM,Belgium,cdn-cookieyes.com,1,41,2.4
@@ -332,8 +332,8 @@ FINLAND,Finland,bootstrapcdn.com,0,40,0.0
 FINLAND,Finland,typekit.net,1,40,2.5
 FINLAND,Finland,cookiebot.com,2,40,5.0
 FINLAND,Finland,facebook.com,0,40,0.0
-FINLAND,Finland,amazonaws.com,0,40,0.0
 FINLAND,Finland,facebook.net,0,40,0.0
+FINLAND,Finland,amazonaws.com,0,40,0.0
 FINLAND,Finland,addtoany.com,2,40,5.0
 FINLAND,Finland,arcgis.com,0,40,0.0
 FINLAND,Finland,cdn-cookieyes.com,0,40,0.0
@@ -352,8 +352,8 @@ LUXEMBOURG,Luxembourg,bootstrapcdn.com,2,40,5.0
 LUXEMBOURG,Luxembourg,typekit.net,6,40,15.0
 LUXEMBOURG,Luxembourg,cookiebot.com,2,40,5.0
 LUXEMBOURG,Luxembourg,facebook.com,0,40,0.0
-LUXEMBOURG,Luxembourg,amazonaws.com,1,40,2.5
 LUXEMBOURG,Luxembourg,facebook.net,0,40,0.0
+LUXEMBOURG,Luxembourg,amazonaws.com,1,40,2.5
 LUXEMBOURG,Luxembourg,addtoany.com,1,40,2.5
 LUXEMBOURG,Luxembourg,arcgis.com,1,40,2.5
 LUXEMBOURG,Luxembourg,cdn-cookieyes.com,0,40,0.0
@@ -372,8 +372,8 @@ AUSTRIA,Austria,bootstrapcdn.com,0,34,0.0
 AUSTRIA,Austria,typekit.net,1,34,2.9
 AUSTRIA,Austria,cookiebot.com,3,34,8.8
 AUSTRIA,Austria,facebook.com,0,34,0.0
-AUSTRIA,Austria,amazonaws.com,0,34,0.0
 AUSTRIA,Austria,facebook.net,1,34,2.9
+AUSTRIA,Austria,amazonaws.com,0,34,0.0
 AUSTRIA,Austria,addtoany.com,0,34,0.0
 AUSTRIA,Austria,arcgis.com,0,34,0.0
 AUSTRIA,Austria,cdn-cookieyes.com,0,34,0.0
@@ -392,8 +392,8 @@ NORWAY,Norway,bootstrapcdn.com,4,34,11.8
 NORWAY,Norway,typekit.net,2,34,5.9
 NORWAY,Norway,cookiebot.com,4,34,11.8
 NORWAY,Norway,facebook.com,0,34,0.0
-NORWAY,Norway,amazonaws.com,0,34,0.0
 NORWAY,Norway,facebook.net,0,34,0.0
+NORWAY,Norway,amazonaws.com,0,34,0.0
 NORWAY,Norway,addtoany.com,0,34,0.0
 NORWAY,Norway,arcgis.com,2,34,5.9
 NORWAY,Norway,cdn-cookieyes.com,1,34,2.9
@@ -412,8 +412,8 @@ CZECHIA,Czechia,bootstrapcdn.com,5,32,15.6
 CZECHIA,Czechia,typekit.net,2,32,6.2
 CZECHIA,Czechia,cookiebot.com,1,32,3.1
 CZECHIA,Czechia,facebook.com,6,32,18.8
-CZECHIA,Czechia,amazonaws.com,1,32,3.1
 CZECHIA,Czechia,facebook.net,2,32,6.2
+CZECHIA,Czechia,amazonaws.com,1,32,3.1
 CZECHIA,Czechia,addtoany.com,0,32,0.0
 CZECHIA,Czechia,arcgis.com,3,32,9.4
 CZECHIA,Czechia,cdn-cookieyes.com,1,32,3.1
@@ -432,8 +432,8 @@ CROATIA,Croatia,bootstrapcdn.com,4,31,12.9
 CROATIA,Croatia,typekit.net,1,31,3.2
 CROATIA,Croatia,cookiebot.com,0,31,0.0
 CROATIA,Croatia,facebook.com,2,31,6.5
-CROATIA,Croatia,amazonaws.com,0,31,0.0
 CROATIA,Croatia,facebook.net,2,31,6.5
+CROATIA,Croatia,amazonaws.com,0,31,0.0
 CROATIA,Croatia,addtoany.com,2,31,6.5
 CROATIA,Croatia,arcgis.com,1,31,3.2
 CROATIA,Croatia,cdn-cookieyes.com,0,31,0.0
@@ -452,8 +452,8 @@ ESTONIA,Estonia,bootstrapcdn.com,2,31,6.5
 ESTONIA,Estonia,typekit.net,1,31,3.2
 ESTONIA,Estonia,cookiebot.com,1,31,3.2
 ESTONIA,Estonia,facebook.com,3,31,9.7
-ESTONIA,Estonia,amazonaws.com,0,31,0.0
 ESTONIA,Estonia,facebook.net,3,31,9.7
+ESTONIA,Estonia,amazonaws.com,0,31,0.0
 ESTONIA,Estonia,addtoany.com,3,31,9.7
 ESTONIA,Estonia,arcgis.com,0,31,0.0
 ESTONIA,Estonia,cdn-cookieyes.com,1,31,3.2
@@ -472,8 +472,8 @@ HUNGARY,Hungary,bootstrapcdn.com,1,27,3.7
 HUNGARY,Hungary,typekit.net,1,27,3.7
 HUNGARY,Hungary,cookiebot.com,0,27,0.0
 HUNGARY,Hungary,facebook.com,4,27,14.8
-HUNGARY,Hungary,amazonaws.com,1,27,3.7
 HUNGARY,Hungary,facebook.net,1,27,3.7
+HUNGARY,Hungary,amazonaws.com,1,27,3.7
 HUNGARY,Hungary,addtoany.com,0,27,0.0
 HUNGARY,Hungary,arcgis.com,0,27,0.0
 HUNGARY,Hungary,cdn-cookieyes.com,0,27,0.0
@@ -492,8 +492,8 @@ ROMANIA,Romania,bootstrapcdn.com,3,24,12.5
 ROMANIA,Romania,typekit.net,0,24,0.0
 ROMANIA,Romania,cookiebot.com,0,24,0.0
 ROMANIA,Romania,facebook.com,0,24,0.0
-ROMANIA,Romania,amazonaws.com,1,24,4.2
 ROMANIA,Romania,facebook.net,2,24,8.3
+ROMANIA,Romania,amazonaws.com,1,24,4.2
 ROMANIA,Romania,addtoany.com,0,24,0.0
 ROMANIA,Romania,arcgis.com,0,24,0.0
 ROMANIA,Romania,cdn-cookieyes.com,0,24,0.0
@@ -512,8 +512,8 @@ SLOVAKIA,Slovakia,bootstrapcdn.com,1,20,5.0
 SLOVAKIA,Slovakia,typekit.net,0,20,0.0
 SLOVAKIA,Slovakia,cookiebot.com,0,20,0.0
 SLOVAKIA,Slovakia,facebook.com,2,20,10.0
-SLOVAKIA,Slovakia,amazonaws.com,1,20,5.0
 SLOVAKIA,Slovakia,facebook.net,3,20,15.0
+SLOVAKIA,Slovakia,amazonaws.com,1,20,5.0
 SLOVAKIA,Slovakia,addtoany.com,1,20,5.0
 SLOVAKIA,Slovakia,arcgis.com,2,20,10.0
 SLOVAKIA,Slovakia,cdn-cookieyes.com,1,20,5.0
@@ -532,8 +532,8 @@ ICELAND,Iceland,bootstrapcdn.com,1,19,5.3
 ICELAND,Iceland,typekit.net,3,19,15.8
 ICELAND,Iceland,cookiebot.com,0,19,0.0
 ICELAND,Iceland,facebook.com,1,19,5.3
-ICELAND,Iceland,amazonaws.com,0,19,0.0
 ICELAND,Iceland,facebook.net,0,19,0.0
+ICELAND,Iceland,amazonaws.com,0,19,0.0
 ICELAND,Iceland,addtoany.com,0,19,0.0
 ICELAND,Iceland,arcgis.com,2,19,10.5
 ICELAND,Iceland,cdn-cookieyes.com,0,19,0.0
@@ -552,8 +552,8 @@ SLOVENIA,Slovenia,bootstrapcdn.com,2,16,12.5
 SLOVENIA,Slovenia,typekit.net,0,16,0.0
 SLOVENIA,Slovenia,cookiebot.com,0,16,0.0
 SLOVENIA,Slovenia,facebook.com,0,16,0.0
-SLOVENIA,Slovenia,amazonaws.com,0,16,0.0
 SLOVENIA,Slovenia,facebook.net,0,16,0.0
+SLOVENIA,Slovenia,amazonaws.com,0,16,0.0
 SLOVENIA,Slovenia,addtoany.com,0,16,0.0
 SLOVENIA,Slovenia,arcgis.com,1,16,6.2
 SLOVENIA,Slovenia,cdn-cookieyes.com,0,16,0.0
@@ -572,8 +572,8 @@ LITHUANIA,Lithuania,bootstrapcdn.com,2,15,13.3
 LITHUANIA,Lithuania,typekit.net,0,15,0.0
 LITHUANIA,Lithuania,cookiebot.com,0,15,0.0
 LITHUANIA,Lithuania,facebook.com,1,15,6.7
-LITHUANIA,Lithuania,amazonaws.com,1,15,6.7
 LITHUANIA,Lithuania,facebook.net,1,15,6.7
+LITHUANIA,Lithuania,amazonaws.com,1,15,6.7
 LITHUANIA,Lithuania,addtoany.com,0,15,0.0
 LITHUANIA,Lithuania,arcgis.com,2,15,13.3
 LITHUANIA,Lithuania,cdn-cookieyes.com,0,15,0.0
@@ -592,8 +592,8 @@ SWITZERLAND,Switzerland,bootstrapcdn.com,3,9,33.3
 SWITZERLAND,Switzerland,typekit.net,1,9,11.1
 SWITZERLAND,Switzerland,cookiebot.com,1,9,11.1
 SWITZERLAND,Switzerland,facebook.com,0,9,0.0
-SWITZERLAND,Switzerland,amazonaws.com,2,9,22.2
 SWITZERLAND,Switzerland,facebook.net,0,9,0.0
+SWITZERLAND,Switzerland,amazonaws.com,2,9,22.2
 SWITZERLAND,Switzerland,addtoany.com,0,9,0.0
 SWITZERLAND,Switzerland,arcgis.com,0,9,0.0
 SWITZERLAND,Switzerland,cdn-cookieyes.com,1,9,11.1
@@ -612,8 +612,8 @@ REPUBLIC_OF_CYPRUS,Cyprus,bootstrapcdn.com,0,6,0.0
 REPUBLIC_OF_CYPRUS,Cyprus,typekit.net,0,6,0.0
 REPUBLIC_OF_CYPRUS,Cyprus,cookiebot.com,0,6,0.0
 REPUBLIC_OF_CYPRUS,Cyprus,facebook.com,0,6,0.0
-REPUBLIC_OF_CYPRUS,Cyprus,amazonaws.com,0,6,0.0
 REPUBLIC_OF_CYPRUS,Cyprus,facebook.net,0,6,0.0
+REPUBLIC_OF_CYPRUS,Cyprus,amazonaws.com,0,6,0.0
 REPUBLIC_OF_CYPRUS,Cyprus,addtoany.com,2,6,33.3
 REPUBLIC_OF_CYPRUS,Cyprus,arcgis.com,0,6,0.0
 REPUBLIC_OF_CYPRUS,Cyprus,cdn-cookieyes.com,0,6,0.0
@@ -632,8 +632,8 @@ MALTA,Malta,bootstrapcdn.com,1,3,33.3
 MALTA,Malta,typekit.net,1,3,33.3
 MALTA,Malta,cookiebot.com,1,3,33.3
 MALTA,Malta,facebook.com,1,3,33.3
-MALTA,Malta,amazonaws.com,1,3,33.3
 MALTA,Malta,facebook.net,1,3,33.3
+MALTA,Malta,amazonaws.com,1,3,33.3
 MALTA,Malta,addtoany.com,1,3,33.3
 MALTA,Malta,arcgis.com,1,3,33.3
 MALTA,Malta,cdn-cookieyes.com,0,3,0.0
