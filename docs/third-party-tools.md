@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-09-23 17:39 UTC — last scan: 2026-09-23_
+_Stats as of 2026-09-23 18:25 UTC — last scan: 2026-09-23_
 
-**260** scan batches run
+**261** scan batches run
 
 **87,690** of **87,696** available pages scanned (**100.0%** coverage)
-**79,458** of **87,690** scanned pages were reachable (**90.6%**)
+**79,476** of **87,690** scanned pages were reachable (**90.6%**)
 **37,138** reachable pages loaded at least one third-party script (**46.7%** of reachable)
-**46,704** known third-party service loads identified
+**46,702** known third-party service loads identified
 **26** unique known services across **17** categories
 
 ---
@@ -44,7 +44,7 @@ _Stats as of 2026-09-23 17:39 UTC — last scan: 2026-09-23_
 | Netherlands | 945 | 945 | 902 | 361 | 280 | 40.0 | 31.0 | 2026-08-27 |
 | Norway | 249 | 249 | 243 | 137 | 112 | 56.4 | 46.1 | 2026-08-26 |
 | Poland | 14,951 | 14,951 | 13,463 | 6,934 | 9,830 | 51.5 | 73.0 | 2026-09-23 |
-| Portugal | 3,508 | 3,508 | 2,807 | 1,101 | 1,918 | 39.2 | 68.3 | 2026-09-18 |
+| Portugal | 3,508 | 3,508 | 2,825 | 1,101 | 1,916 | 39.0 | 67.8 | 2026-09-23 |
 | Cyprus | 29 | 29 | 29 | 13 | 15 | 44.8 | 51.7 | 2026-08-26 |
 | Romania | 807 | 807 | 343 | 250 | 254 | 72.9 | 74.1 | 2026-09-21 |
 | Slovakia | 442 | 442 | 413 | 218 | 273 | 52.8 | 66.1 | 2026-08-27 |
@@ -69,7 +69,7 @@ _Stats as of 2026-09-23 17:39 UTC — last scan: 2026-09-23_
 | 5 | Google Tag Manager | **4,088** |
 | 6 | Google Hosted Libraries | **3,255** |
 | 7 | unpkg CDN | **2,876** |
-| 8 | jQuery | **2,778** |
+| 8 | jQuery | **2,776** |
 | 9 | Font Awesome | **1,926** |
 | 10 | Bootstrap | **959** |
 | 11 | Cookiebot | **822** |
@@ -94,7 +94,7 @@ _Stats as of 2026-09-23 17:39 UTC — last scan: 2026-09-23_
 | 5 | Google Tag Manager | **3,895** | **21.1%** |
 | 6 | Google Hosted Libraries | **2,931** | **15.9%** |
 | 7 | unpkg CDN | **2,247** | **12.2%** |
-| 8 | jQuery | **2,199** | **11.9%** |
+| 8 | jQuery | **2,197** | **11.9%** |
 | 9 | Font Awesome | **1,513** | **8.2%** |
 | 10 | Bootstrap | **952** | **5.2%** |
 | 11 | Cookiebot | **802** | **4.3%** |
@@ -114,7 +114,7 @@ _Stats as of 2026-09-23 17:39 UTC — last scan: 2026-09-23_
 |--:|----------|------:|
 | 1 | CDN | **20,644** |
 | 2 | Analytics | **9,424** |
-| 3 | JavaScript Library | **6,033** |
+| 3 | JavaScript Library | **6,031** |
 | 4 | Security | **5,006** |
 | 5 | CAPTCHA | **4,814** |
 | 6 | Tag Manager | **4,390** |
@@ -135,7 +135,7 @@ Infrastructure-heavy categories (CDNs, core libraries, and UI assets):
 | # | Infrastructure Category | Loads |
 |--:|--------------------------|------:|
 | 1 | CDN | **20,644** |
-| 2 | JavaScript Library | **6,033** |
+| 2 | JavaScript Library | **6,031** |
 | 3 | Icon Library | **1,926** |
 | 4 | UI Framework | **959** |
 
@@ -171,7 +171,7 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 | 8 | `www.styleguide.sachsen.de` | **1,279** | **320** |
 | 9 | `cc.cdn.civiccomputing.com` | **955** | **949** |
 | 10 | `ajax.aspnetcdn.com` | **901** | **445** |
-| 11 | `static.addtoany.com` | **858** | **841** |
+| 11 | `static.addtoany.com` | **857** | **840** |
 | 12 | `dksxg5o1pn16c.cloudfront.net` | **762** | **56** |
 | 13 | `d2m1owqtx0c1qg.cloudfront.net` | **762** | **396** |
 | 14 | `cdn-cookieyes.com` | **746** | **742** |
