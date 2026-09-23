@@ -5,14 +5,14 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-09-23 20:31 UTC — last scan: 2026-09-23_
+_Stats as of 2026-09-23 20:44 UTC — last scan: 2026-09-23_
 
-**250** scan batches run
+**252** scan batches run
 
 **87,690** of **87,696** available pages scanned (**100.0%** coverage)
-**80,366** of **87,690** scanned pages were reachable (**91.6%**)
-**39,407** of **80,366** reachable pages have an accessibility statement (**49.0%**)
-**34,536** pages have the statement link in the footer (**87.6%** of pages with a statement)
+**80,388** of **87,690** scanned pages were reachable (**91.7%**)
+**39,431** of **80,388** reachable pages have an accessibility statement (**49.1%**)
+**34,560** pages have the statement link in the footer (**87.6%** of pages with a statement)
 
 📥 Machine-readable results are available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
 
@@ -55,10 +55,10 @@ Each country entry in the JSON file includes page-level evidence for pages with 
 | Slovakia | 442 | 442 | 413 | 187 | 166 | 45.3% | Aug 2026 – Sep 2026 |
 | Slovenia | 214 | 214 | 207 | 116 | 81 | 56.0% | Aug 2026 – Sep 2026 |
 | Spain | 6,091 | 6,091 | 5,138 | 2,368 | 2,084 | 46.1% | Aug 2026 – Sep 2026 |
-| Sweden | 1,702 | 1,702 | 1,611 | 948 | 863 | 58.8% | Aug 2026 – Sep 2026 |
-| Switzerland | 2,123 | 2,123 | 2,078 | 1,026 | 1,025 | 49.4% | Aug 2026 – Sep 2026 |
+| Sweden | 1,702 | 1,702 | 1,629 | 964 | 879 | 59.2% | Aug 2026 – Sep 2026 |
+| Switzerland | 2,123 | 2,123 | 2,082 | 1,034 | 1,033 | 49.7% | Aug 2026 – Sep 2026 |
 | United Kingdom | 19,511 | 19,511 | 18,537 | 10,348 | 9,783 | 55.8% | Aug 2026 – Sep 2026 |
-| **Total** | **87,696** | **87,696** | **80,372** | **39,413** | **34,542** | **49.0%** | — |
+| **Total** | **87,696** | **87,696** | **80,394** | **39,437** | **34,566** | **49.1%** | — |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
