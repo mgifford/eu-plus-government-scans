@@ -5,7 +5,7 @@
   "top_source_domains": [
     {
       "domain": "gov.sk",
-      "count": 8293
+      "count": 8310
     },
     {
       "domain": "zilina.sk",
@@ -91,11 +91,11 @@
   "top_target_domains": [
     {
       "domain": "gov.sk",
-      "count": 4486
+      "count": 4494
     },
     {
       "domain": "slovensko.sk",
-      "count": 677
+      "count": 678
     },
     {
       "domain": "googleapis.com",
@@ -103,7 +103,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 492
+      "count": 494
     },
     {
       "domain": "zilina.sk",
@@ -127,11 +127,11 @@
     },
     {
       "domain": "google.com",
-      "count": 310
+      "count": 311
     },
     {
       "domain": "youtube.com",
-      "count": 235
+      "count": 236
     },
     {
       "domain": "kosice.sk",
@@ -139,11 +139,11 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 232
+      "count": 233
     },
     {
       "domain": "europa.eu",
-      "count": 183
+      "count": 185
     },
     {
       "domain": "banskabystrica.sk",
@@ -298,5 +298,5 @@
     "stylesheet_dependency": 194,
     "form_destination": 108
   },
-  "generated_at": "2026-09-19T11:12:38.090303+00:00"
+  "generated_at": "2026-09-24T04:07:35.142190+00:00"
 }

@@ -1,11 +1,11 @@
 {
   "country_code": "BELGIUM",
-  "total_relationships": 3764,
+  "total_relationships": 3776,
   "total_source_domains": 43,
   "top_source_domains": [
     {
       "domain": "belgium.be",
-      "count": 10722
+      "count": 10762
     },
     {
       "domain": "wallonie.be",
@@ -13,7 +13,7 @@
     },
     {
       "domain": "fgov.be",
-      "count": 2564
+      "count": 2607
     },
     {
       "domain": "vlaanderen.be",
@@ -25,11 +25,11 @@
     },
     {
       "domain": "antwerpen.be",
-      "count": 1971
+      "count": 2082
     },
     {
       "domain": "hainaut.be",
-      "count": 1356
+      "count": 1359
     },
     {
       "domain": "namur.be",
@@ -45,7 +45,7 @@
     },
     {
       "domain": "gent.be",
-      "count": 590
+      "count": 609
     },
     {
       "domain": "leuven.be",
@@ -77,7 +77,7 @@
     },
     {
       "domain": "hasselt.be",
-      "count": 269
+      "count": 279
     },
     {
       "domain": "mons.be",
@@ -179,7 +179,7 @@
   "top_target_domains": [
     {
       "domain": "belgium.be",
-      "count": 6081
+      "count": 6118
     },
     {
       "domain": "wallonie.be",
@@ -187,31 +187,31 @@
     },
     {
       "domain": "vlaanderen.be",
-      "count": 1702
+      "count": 1703
     },
     {
       "domain": "fgov.be",
-      "count": 1588
+      "count": 1618
     },
     {
       "domain": "facebook.com",
-      "count": 1398
+      "count": 1407
     },
     {
       "domain": "googleapis.com",
-      "count": 1239
-    },
-    {
-      "domain": "linkedin.com",
-      "count": 1098
+      "count": 1243
     },
     {
       "domain": "antwerpen.be",
-      "count": 1073
+      "count": 1117
+    },
+    {
+      "domain": "linkedin.com",
+      "count": 1112
     },
     {
       "domain": "instagram.com",
-      "count": 1030
+      "count": 1037
     },
     {
       "domain": "mechelen.be",
@@ -227,11 +227,11 @@
     },
     {
       "domain": "youtube.com",
-      "count": 707
+      "count": 715
     },
     {
       "domain": "hainaut.be",
-      "count": 676
+      "count": 678
     },
     {
       "domain": "unpkg.com",
@@ -259,11 +259,11 @@
     },
     {
       "domain": "google.com",
-      "count": 296
+      "count": 297
     },
     {
       "domain": "gstatic.com",
-      "count": 277
+      "count": 280
     },
     {
       "domain": "leuven.be",
@@ -271,7 +271,7 @@
     },
     {
       "domain": "gent.be",
-      "count": 232
+      "count": 237
     },
     {
       "domain": "fontawesome.com",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "x.com",
-      "count": 222
+      "count": 227
     },
     {
       "domain": "mil.be",
@@ -295,7 +295,7 @@
     },
     {
       "domain": "hasselt.be",
-      "count": 149
+      "count": 155
     },
     {
       "domain": "prezly.com",
@@ -347,7 +347,7 @@
     },
     {
       "domain": "socialsecurity.be",
-      "count": 85
+      "count": 86
     },
     {
       "domain": "amazonaws.com",
@@ -379,12 +379,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 1608,
-    "script_dependency": 695,
-    "image_or_media_dependency": 443,
-    "stylesheet_dependency": 613,
+    "editorial_link": 1611,
+    "script_dependency": 699,
+    "image_or_media_dependency": 445,
+    "stylesheet_dependency": 615,
     "font_or_preload_dependency": 89,
-    "form_destination": 316
+    "form_destination": 317
   },
-  "generated_at": "2026-09-19T11:12:39.034527+00:00"
+  "generated_at": "2026-09-24T04:07:35.238878+00:00"
 }

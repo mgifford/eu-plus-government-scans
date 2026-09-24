@@ -1,6 +1,6 @@
 {
   "country_code": "GERMANY",
-  "total_relationships": 22086,
+  "total_relationships": 22091,
   "total_source_domains": 224,
   "top_source_domains": [
     {
@@ -9,23 +9,23 @@
     },
     {
       "domain": "rlp.de",
-      "count": 29753
+      "count": 30225
     },
     {
       "domain": "niedersachsen.de",
-      "count": 26493
+      "count": 26912
     },
     {
       "domain": "bayern.de",
-      "count": 22177
+      "count": 23337
     },
     {
       "domain": "nrw.de",
-      "count": 17331
+      "count": 19680
     },
     {
       "domain": "hamburg.de",
-      "count": 12810
+      "count": 15028
     },
     {
       "domain": "diplo.de",
@@ -207,31 +207,31 @@
   "top_target_domains": [
     {
       "domain": "sachsen.de",
-      "count": 62870
+      "count": 62871
     },
     {
       "domain": "niedersachsen.de",
-      "count": 23787
+      "count": 24155
     },
     {
       "domain": "rlp.de",
-      "count": 23562
+      "count": 23938
     },
     {
       "domain": "bayern.de",
-      "count": 14149
+      "count": 14912
     },
     {
       "domain": "nrw.de",
-      "count": 11091
+      "count": 12834
     },
     {
       "domain": "hamburg.de",
-      "count": 7829
+      "count": 9153
     },
     {
       "domain": "hessen.de",
-      "count": 6456
+      "count": 6460
     },
     {
       "domain": "diplo.de",
@@ -243,15 +243,15 @@
     },
     {
       "domain": "facebook.com",
-      "count": 4009
+      "count": 4061
     },
     {
       "domain": "instagram.com",
-      "count": 3776
+      "count": 3876
     },
     {
       "domain": "bund.de",
-      "count": 3190
+      "count": 3192
     },
     {
       "domain": "bremen.de",
@@ -263,19 +263,23 @@
     },
     {
       "domain": "twitter.com",
-      "count": 2633
+      "count": 2637
     },
     {
       "domain": "youtube.com",
-      "count": 2420
+      "count": 2478
     },
     {
       "domain": "linkedin.com",
-      "count": 1978
+      "count": 2011
     },
     {
       "domain": "berlin.de",
       "count": 1829
+    },
+    {
+      "domain": "justiz.nrw",
+      "count": 1663
     },
     {
       "domain": "baden-wuerttemberg.de",
@@ -286,16 +290,12 @@
       "count": 1392
     },
     {
-      "domain": "justiz.nrw",
-      "count": 1381
-    },
-    {
       "domain": "etracker.com",
       "count": 1296
     },
     {
       "domain": "zvg-portal.de",
-      "count": 1101
+      "count": 1143
     },
     {
       "domain": "enable-javascript.com",
@@ -306,20 +306,36 @@
       "count": 992
     },
     {
+      "domain": "polyplanet.de",
+      "count": 931
+    },
+    {
+      "domain": "readspeaker.com",
+      "count": 921
+    },
+    {
       "domain": "jsdelivr.net",
       "count": 908
     },
     {
-      "domain": "readspeaker.com",
-      "count": 902
-    },
-    {
-      "domain": "polyplanet.de",
-      "count": 785
+      "domain": "knastladen.de",
+      "count": 674
     },
     {
       "domain": "google.com",
-      "count": 616
+      "count": 650
+    },
+    {
+      "domain": "justiz-karriere.nrw",
+      "count": 649
+    },
+    {
+      "domain": "schulcms.net",
+      "count": 635
+    },
+    {
+      "domain": "wordpress.org",
+      "count": 628
     },
     {
       "domain": "duesseldorf.de",
@@ -339,27 +355,11 @@
     },
     {
       "domain": "brandenburg.de",
-      "count": 563
-    },
-    {
-      "domain": "knastladen.de",
-      "count": 553
-    },
-    {
-      "domain": "wordpress.org",
-      "count": 531
-    },
-    {
-      "domain": "justiz-karriere.nrw",
-      "count": 528
+      "count": 564
     },
     {
       "domain": "justiz.de",
-      "count": 512
-    },
-    {
-      "domain": "schulcms.net",
-      "count": 486
+      "count": 516
     },
     {
       "domain": "dguv.de",
@@ -375,7 +375,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 407
+      "count": 410
     },
     {
       "domain": "x.com",
@@ -387,15 +387,15 @@
     },
     {
       "domain": "eye-able.com",
-      "count": 387
+      "count": 389
     },
     {
       "domain": "tiktok.com",
-      "count": 336
+      "count": 349
     },
     {
       "domain": "stark-fuer-gerechtigkeit.de",
-      "count": 333
+      "count": 340
     },
     {
       "domain": "stuttgart.de",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 11255,
-    "font_or_preload_dependency": 336,
+    "editorial_link": 11259,
+    "font_or_preload_dependency": 337,
     "image_or_media_dependency": 2757,
     "script_dependency": 2877,
     "stylesheet_dependency": 2717,
     "form_destination": 2144
   },
-  "generated_at": "2026-09-22T21:45:09.668826+00:00"
+  "generated_at": "2026-09-24T04:07:35.351355+00:00"
 }
