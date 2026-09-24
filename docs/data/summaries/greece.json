@@ -148,6 +148,10 @@
       "count": 325
     },
     {
+      "domain": "gsis.gr",
+      "count": 324
+    },
+    {
       "domain": "oropos.gov.gr",
       "count": 324
     },
@@ -158,10 +162,6 @@
     {
       "domain": "mitos.gov.gr",
       "count": 321
-    },
-    {
-      "domain": "gsis.gr",
-      "count": 320
     },
     {
       "domain": "kalymnos.gr",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "googleapis.com",
-      "count": 2984
+      "count": 2985
     },
     {
       "domain": "facebook.com",
@@ -219,7 +219,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 1186
+      "count": 1187
     },
     {
       "domain": "youtube.com",
@@ -227,7 +227,7 @@
     },
     {
       "domain": "google.com",
-      "count": 1029
+      "count": 1030
     },
     {
       "domain": "minedu.gov.gr",
@@ -243,7 +243,7 @@
     },
     {
       "domain": "www.gov.gr",
-      "count": 765
+      "count": 766
     },
     {
       "domain": "twitter.com",
@@ -267,7 +267,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 616
+      "count": 618
     },
     {
       "domain": "thessaloniki.gr",
@@ -287,7 +287,7 @@
     },
     {
       "domain": "gsis.gr",
-      "count": 359
+      "count": 363
     },
     {
       "domain": "crete.gov.gr",
@@ -339,7 +339,7 @@
     },
     {
       "domain": "fontawesome.com",
-      "count": 238
+      "count": 239
     },
     {
       "domain": "mindigital.gr",
@@ -351,7 +351,7 @@
     },
     {
       "domain": "espa.gr",
-      "count": 230
+      "count": 231
     },
     {
       "domain": "dypa.gov.gr",
@@ -414,5 +414,5 @@
     "script_dependency": 1264,
     "stylesheet_dependency": 1044
   },
-  "generated_at": "2026-09-23T04:17:57.886308+00:00"
+  "generated_at": "2026-09-24T11:59:56.604772+00:00"
 }
