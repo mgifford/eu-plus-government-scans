@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-09-24 20:49 UTC_
+_Generated: 2026-09-24 21:02 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -14,10 +14,10 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
 | **Combined Reachability** | **80,769 confirmed reachable** | 87,696 | **<span role="img" aria-label="92.1% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:111px;"></span></span><span class="sm-bar__label">92.1%</span></span>** | — |
-| Social Media | 87,696 scanned (80,754 reachable) | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 24.0 days |
+| Social Media | 87,696 scanned (80,754 reachable) | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 24.1 days |
 | Technology | 87,696 scanned | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 23.3 days |
 | Lighthouse | 28,552 scanned | 87,696 | <span role="img" aria-label="32.6% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--red" style="width:39px;"></span></span><span class="sm-bar__label">32.6%</span></span> | 23.0 days |
-| Accessibility Statements | 87,696 scanned | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 28.7 days |
+| Accessibility Statements | 87,696 scanned | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 28.5 days |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by any scan type. **Avg Age** shows the mean number of days (or hours) since each URL in that scan type was last scanned — lower is fresher.
 
@@ -176,7 +176,7 @@ Checks whether each government page links to an accessibility statement as requi
 | Country | Scanned | Reachable | Has Statement | In Footer | Statement % | Scan Period |
 |---------|---------|-----------|--------------|-----------|------------|-------------|
 | Austria | 822 | 787 | 556 | 525 | 71% | Aug 2026 – Sep 2026 |
-| Belgium | 1,329 | 1,237 | 574 | 523 | 46% | Aug 2026 – Sep 2026 |
+| Belgium | 1,329 | 1,239 | 575 | 524 | 46% | Aug 2026 – Sep 2026 |
 | Bulgaria | 353 | 305 | 95 | 84 | 31% | Aug 2026 |
 | Canada | 4,469 | 4,223 | 1,049 | 843 | 25% | Aug 2026 – Sep 2026 |
 | Croatia | 257 | 254 | 105 | 80 | 41% | Aug 2026 – Sep 2026 |
@@ -186,7 +186,7 @@ Checks whether each government page links to an accessibility statement as requi
 | Finland | 199 | 188 | 133 | 126 | 71% | Aug 2026 |
 | France | 10,009 | 9,013 | 4,180 | 4,051 | 46% | Aug 2026 – Sep 2026 |
 | Germany | 6,599 | 6,412 | 4,683 | 3,949 | 73% | Aug 2026 – Sep 2026 |
-| Greece | 1,752 | 1,621 | 421 | 267 | 26% | Aug 2026 – Sep 2026 |
+| Greece | 1,752 | 1,624 | 421 | 270 | 26% | Aug 2026 – Sep 2026 |
 | Hungary | 392 | 293 | 57 | 49 | 19% | Aug 2026 |
 | Iceland | 145 | 143 | 14 | 5 | 10% | Aug 2026 |
 | Ireland | 536 | 499 | 251 | 238 | 50% | Aug 2026 |
