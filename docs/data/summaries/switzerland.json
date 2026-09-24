@@ -5,7 +5,7 @@
   "top_source_domains": [
     {
       "domain": "ethz.ch",
-      "count": 71516
+      "count": 71514
     },
     {
       "domain": "admin.ch",
@@ -43,7 +43,7 @@
   "top_target_domains": [
     {
       "domain": "ethz.ch",
-      "count": 60652
+      "count": 60649
     },
     {
       "domain": "admin.ch",
@@ -243,12 +243,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 3562,
+    "editorial_link": 3563,
     "image_or_media_dependency": 817,
     "font_or_preload_dependency": 171,
-    "script_dependency": 912,
-    "stylesheet_dependency": 897,
-    "form_destination": 470
+    "script_dependency": 911,
+    "stylesheet_dependency": 896,
+    "form_destination": 471
   },
-  "generated_at": "2026-09-24T04:07:33.432880+00:00"
+  "generated_at": "2026-09-24T22:00:42.083787+00:00"
 }
