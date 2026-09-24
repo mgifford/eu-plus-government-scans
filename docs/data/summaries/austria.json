@@ -9,7 +9,7 @@
     },
     {
       "domain": "ooe.gv.at",
-      "count": 10074
+      "count": 10085
     },
     {
       "domain": "wien.gv.at",
@@ -76,6 +76,10 @@
       "count": 174
     },
     {
+      "domain": "bka.gv.at",
+      "count": 171
+    },
+    {
       "domain": "statistik.at",
       "count": 168
     },
@@ -86,10 +90,6 @@
     {
       "domain": "oesterreich.gv.at",
       "count": 147
-    },
-    {
-      "domain": "bka.gv.at",
-      "count": 132
     },
     {
       "domain": "gesundheit.gv.at",
@@ -132,16 +132,16 @@
       "count": 45
     },
     {
+      "domain": "tiere-die-ins-leben-passen.at",
+      "count": 36
+    },
+    {
       "domain": "bmk.gv.at",
       "count": 30
     },
     {
       "domain": "parlament.gv.at",
       "count": 27
-    },
-    {
-      "domain": "tiere-die-ins-leben-passen.at",
-      "count": 24
     },
     {
       "domain": "data.gv.at",
@@ -155,7 +155,7 @@
     },
     {
       "domain": "ooe.gv.at",
-      "count": 3741
+      "count": 3746
     },
     {
       "domain": "wien.gv.at",
@@ -183,7 +183,7 @@
     },
     {
       "domain": "gem2go.at",
-      "count": 540
+      "count": 541
     },
     {
       "domain": "datareporter.eu",
@@ -202,12 +202,12 @@
       "count": 316
     },
     {
-      "domain": "oesterreich.gv.at",
-      "count": 256
+      "domain": "bka.gv.at",
+      "count": 268
     },
     {
-      "domain": "bka.gv.at",
-      "count": 245
+      "domain": "oesterreich.gv.at",
+      "count": 260
     },
     {
       "domain": "ams.at",
@@ -251,7 +251,7 @@
     },
     {
       "domain": "land-oberoesterreich.gv.at",
-      "count": 150
+      "count": 151
     },
     {
       "domain": "bmbwf.gv.at",
@@ -275,7 +275,7 @@
     },
     {
       "domain": "wko.at",
-      "count": 116
+      "count": 117
     },
     {
       "domain": "bfvfb.at",
@@ -358,5 +358,5 @@
     "stylesheet_dependency": 354,
     "font_or_preload_dependency": 40
   },
-  "generated_at": "2026-09-19T11:12:38.467084+00:00"
+  "generated_at": "2026-09-24T04:07:34.913391+00:00"
 }

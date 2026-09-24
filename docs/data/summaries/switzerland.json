@@ -1,6 +1,6 @@
 {
   "country_code": "SWITZERLAND",
-  "total_relationships": 6816,
+  "total_relationships": 6829,
   "total_source_domains": 9,
   "top_source_domains": [
     {
@@ -9,11 +9,11 @@
     },
     {
       "domain": "admin.ch",
-      "count": 14811
+      "count": 14839
     },
     {
       "domain": "epfl.ch",
-      "count": 6717
+      "count": 6727
     },
     {
       "domain": "unige.ch",
@@ -47,11 +47,11 @@
     },
     {
       "domain": "admin.ch",
-      "count": 10662
+      "count": 10680
     },
     {
       "domain": "epfl.ch",
-      "count": 3705
+      "count": 3711
     },
     {
       "domain": "unige.ch",
@@ -107,7 +107,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 268
+      "count": 270
     },
     {
       "domain": "jsdelivr.net",
@@ -243,12 +243,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 3556,
-    "image_or_media_dependency": 815,
+    "editorial_link": 3562,
+    "image_or_media_dependency": 817,
     "font_or_preload_dependency": 171,
-    "script_dependency": 910,
-    "stylesheet_dependency": 895,
-    "form_destination": 469
+    "script_dependency": 912,
+    "stylesheet_dependency": 897,
+    "form_destination": 470
   },
-  "generated_at": "2026-09-23T21:57:27.560127+00:00"
+  "generated_at": "2026-09-24T04:07:33.432880+00:00"
 }
