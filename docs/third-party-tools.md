@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-09-24 17:42 UTC — last scan: 2026-09-24_
+_Stats as of 2026-09-24 20:49 UTC — last scan: 2026-09-24_
 
-**264** scan batches run
+**266** scan batches run
 
 **87,690** of **87,696** available pages scanned (**100.0%** coverage)
 **79,483** of **87,690** scanned pages were reachable (**90.6%**)
 **37,152** reachable pages loaded at least one third-party script (**46.7%** of reachable)
-**46,701** known third-party service loads identified
+**46,698** known third-party service loads identified
 **26** unique known services across **17** categories
 
 ---
@@ -46,9 +46,9 @@ _Stats as of 2026-09-24 17:42 UTC — last scan: 2026-09-24_
 | Poland | 14,951 | 14,951 | 13,463 | 6,934 | 9,830 | 51.5 | 73.0 | 2026-09-23 |
 | Portugal | 3,508 | 3,508 | 2,825 | 1,101 | 1,916 | 39.0 | 67.8 | 2026-09-23 |
 | Cyprus | 29 | 29 | 29 | 13 | 15 | 44.8 | 51.7 | 2026-08-26 |
-| Romania | 807 | 807 | 343 | 250 | 254 | 72.9 | 74.1 | 2026-09-21 |
+| Romania | 807 | 807 | 343 | 250 | 254 | 72.9 | 74.1 | 2026-09-24 |
 | Slovakia | 442 | 442 | 413 | 218 | 273 | 52.8 | 66.1 | 2026-08-27 |
-| Slovenia | 214 | 214 | 207 | 56 | 82 | 27.1 | 39.6 | 2026-08-24 |
+| Slovenia | 214 | 214 | 207 | 56 | 79 | 27.1 | 38.2 | 2026-09-24 |
 | Spain | 6,091 | 6,091 | 4,993 | 2,440 | 2,416 | 48.9 | 48.4 | 2026-09-23 |
 | Sweden | 1,702 | 1,702 | 1,546 | 509 | 309 | 32.9 | 20.0 | 2026-09-19 |
 | Switzerland | 2,123 | 2,123 | 2,071 | 414 | 443 | 20.0 | 21.4 | 2026-09-24 |
@@ -113,7 +113,7 @@ _Stats as of 2026-09-24 17:42 UTC — last scan: 2026-09-24_
 | # | Category | Loads |
 |--:|----------|------:|
 | 1 | CDN | **20,639** |
-| 2 | Analytics | **9,422** |
+| 2 | Analytics | **9,419** |
 | 3 | JavaScript Library | **6,030** |
 | 4 | Security | **5,005** |
 | 5 | CAPTCHA | **4,813** |
@@ -143,7 +143,7 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 
 | # | Policy-Relevant Category | Loads |
 |--:|--------------------------|------:|
-| 1 | Analytics | **9,422** |
+| 1 | Analytics | **9,419** |
 | 2 | Security | **5,005** |
 | 3 | CAPTCHA | **4,813** |
 | 4 | Tag Manager | **4,396** |
