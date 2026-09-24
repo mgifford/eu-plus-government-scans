@@ -13,7 +13,7 @@
     },
     {
       "domain": "venlo.nl",
-      "count": 1242
+      "count": 1248
     },
     {
       "domain": "denhaag.nl",
@@ -230,12 +230,12 @@
       "count": 683
     },
     {
-      "domain": "youtube.com",
-      "count": 533
+      "domain": "venlo.nl",
+      "count": 535
     },
     {
-      "domain": "venlo.nl",
-      "count": 531
+      "domain": "youtube.com",
+      "count": 533
     },
     {
       "domain": "denhaag.nl",
@@ -414,5 +414,5 @@
     "script_dependency": 555,
     "stylesheet_dependency": 442
   },
-  "generated_at": "2026-09-24T11:59:56.768998+00:00"
+  "generated_at": "2026-09-24T22:00:41.745956+00:00"
 }

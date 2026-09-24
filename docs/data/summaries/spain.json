@@ -1,23 +1,23 @@
 {
   "country_code": "SPAIN",
-  "total_relationships": 16266,
+  "total_relationships": 16242,
   "total_source_domains": 235,
   "top_source_domains": [
+    {
+      "domain": "jcyl.es",
+      "count": 31209
+    },
     {
       "domain": "castillalamancha.es",
       "count": 26248
     },
     {
-      "domain": "jcyl.es",
-      "count": 25281
-    },
-    {
       "domain": "gva.es",
-      "count": 11961
+      "count": 12337
     },
     {
       "domain": "navarra.es",
-      "count": 3525
+      "count": 3643
     },
     {
       "domain": "aragon.es",
@@ -207,51 +207,55 @@
   "top_target_domains": [
     {
       "domain": "jcyl.es",
-      "count": 17321
+      "count": 20594
     },
     {
       "domain": "castillalamancha.es",
-      "count": 12937
+      "count": 12938
     },
     {
       "domain": "gva.es",
-      "count": 7315
+      "count": 7550
     },
     {
       "domain": "facebook.com",
-      "count": 3167
+      "count": 3299
     },
     {
       "domain": "twitter.com",
-      "count": 2909
-    },
-    {
-      "domain": "googleapis.com",
-      "count": 2642
+      "count": 3055
     },
     {
       "domain": "youtube.com",
-      "count": 2636
+      "count": 2739
+    },
+    {
+      "domain": "googleapis.com",
+      "count": 2660
+    },
+    {
+      "domain": "google.com",
+      "count": 2563
     },
     {
       "domain": "jccm.es",
       "count": 2522
     },
     {
-      "domain": "google.com",
-      "count": 2467
-    },
-    {
       "domain": "instagram.com",
-      "count": 2250
+      "count": 2441
     },
     {
       "domain": "navarra.es",
-      "count": 1564
+      "count": 1629
     },
     {
       "domain": "aragon.es",
       "count": 1466
+    },
+    {
+      "domain": "educativa.com",
+      "count": 1254
     },
     {
       "domain": "madrid.es",
@@ -259,19 +263,19 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 1078
+      "count": 1090
     },
     {
       "domain": "googletagmanager.com",
-      "count": 1075
+      "count": 1088
+    },
+    {
+      "domain": "w3.org",
+      "count": 1081
     },
     {
       "domain": "caib.es",
       "count": 1068
-    },
-    {
-      "domain": "w3.org",
-      "count": 1064
     },
     {
       "domain": "juntaex.es",
@@ -279,11 +283,11 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 889
+      "count": 911
     },
     {
-      "domain": "educativa.com",
-      "count": 836
+      "domain": "blogspot.com",
+      "count": 832
     },
     {
       "domain": "carm.es",
@@ -295,39 +299,35 @@
     },
     {
       "domain": "redsara.es",
-      "count": 717
-    },
-    {
-      "domain": "blogspot.com",
-      "count": 684
-    },
-    {
-      "domain": "flickr.com",
-      "count": 656
+      "count": 718
     },
     {
       "domain": "x.com",
-      "count": 639
+      "count": 677
+    },
+    {
+      "domain": "flickr.com",
+      "count": 664
+    },
+    {
+      "domain": "google.es",
+      "count": 610
     },
     {
       "domain": "hacienda.gob.es",
       "count": 601
     },
     {
-      "domain": "google.es",
-      "count": 598
-    },
-    {
       "domain": "asturias.es",
-      "count": 582
-    },
-    {
-      "domain": "fontawesome.com",
-      "count": 569
+      "count": 583
     },
     {
       "domain": "europa.eu",
-      "count": 563
+      "count": 581
+    },
+    {
+      "domain": "fontawesome.com",
+      "count": 572
     },
     {
       "domain": "insuit.net",
@@ -339,7 +339,7 @@
     },
     {
       "domain": "boe.es",
-      "count": 482
+      "count": 489
     },
     {
       "domain": "sanidad.gob.es",
@@ -347,15 +347,19 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 445
+      "count": 447
     },
     {
       "domain": "aemet.es",
-      "count": 410
+      "count": 412
     },
     {
       "domain": "defensa.gob.es",
       "count": 400
+    },
+    {
+      "domain": "blogspot.com.es",
+      "count": 391
     },
     {
       "domain": "juntadeandalucia.es",
@@ -378,16 +382,12 @@
       "count": 334
     },
     {
-      "domain": "blogspot.com.es",
-      "count": 332
+      "domain": "vimeo.com",
+      "count": 326
     },
     {
       "domain": "sharethis.com",
       "count": 326
-    },
-    {
-      "domain": "vimeo.com",
-      "count": 322
     },
     {
       "domain": "ayto-alcaladehenares.es",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "script_dependency": 2335,
-    "image_or_media_dependency": 1958,
+    "script_dependency": 2336,
+    "image_or_media_dependency": 1956,
     "stylesheet_dependency": 1993,
-    "editorial_link": 8370,
+    "editorial_link": 8347,
     "form_destination": 1453,
     "font_or_preload_dependency": 157
   },
-  "generated_at": "2026-09-23T21:57:27.901564+00:00"
+  "generated_at": "2026-09-24T22:00:41.834215+00:00"
 }
