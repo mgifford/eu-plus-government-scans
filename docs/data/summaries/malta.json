@@ -1,11 +1,11 @@
 {
   "country_code": "MALTA",
-  "total_relationships": 1778,
+  "total_relationships": 1770,
   "total_source_domains": 3,
   "top_source_domains": [
     {
       "domain": "gov.mt",
-      "count": 18811
+      "count": 21298
     },
     {
       "domain": "parlament.mt",
@@ -19,134 +19,146 @@
   "top_target_domains": [
     {
       "domain": "gov.mt",
-      "count": 9788
+      "count": 11099
     },
     {
       "domain": "jsdelivr.net",
-      "count": 1094
+      "count": 1233
     },
     {
       "domain": "googleapis.com",
-      "count": 1056
+      "count": 1195
     },
     {
       "domain": "jquery.com",
-      "count": 839
+      "count": 935
     },
     {
       "domain": "youtube.com",
-      "count": 663
+      "count": 744
     },
     {
       "domain": "googletagmanager.com",
-      "count": 637
+      "count": 729
     },
     {
       "domain": "wordpress.org",
-      "count": 580
+      "count": 650
     },
     {
       "domain": "addtoany.com",
-      "count": 498
+      "count": 564
     },
     {
       "domain": "facebook.com",
-      "count": 358
+      "count": 405
     },
     {
       "domain": "europa.eu",
-      "count": 285
+      "count": 336
     },
     {
       "domain": "gstatic.com",
-      "count": 235
-    },
-    {
-      "domain": "instagram.com",
-      "count": 223
+      "count": 270
     },
     {
       "domain": "google.com",
-      "count": 219
+      "count": 245
+    },
+    {
+      "domain": "instagram.com",
+      "count": 244
     },
     {
       "domain": "cloudflare.com",
-      "count": 179
+      "count": 201
     },
     {
       "domain": "linkedin.com",
-      "count": 173
+      "count": 193
     },
     {
       "domain": "wponetap.com",
-      "count": 104
+      "count": 114
     },
     {
       "domain": "twitter.com",
-      "count": 92
+      "count": 102
     },
     {
       "domain": "fontawesome.com",
-      "count": 72
+      "count": 94
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 52
+      "count": 57
     },
     {
       "domain": "corterm.com",
-      "count": 50
+      "count": 55
     },
     {
       "domain": "unpkg.com",
-      "count": 44
-    },
-    {
-      "domain": "office.com",
-      "count": 42
-    },
-    {
-      "domain": "fbcdn.net",
-      "count": 41
+      "count": 53
     },
     {
       "domain": "legislation.mt",
-      "count": 40
+      "count": 45
     },
     {
-      "domain": "microsoft.com",
-      "count": 36
+      "domain": "office.com",
+      "count": 43
     },
     {
       "domain": "goo.gl",
+      "count": 39
+    },
+    {
+      "domain": "microsoft.com",
+      "count": 37
+    },
+    {
+      "domain": "fbcdn.net",
+      "count": 35
+    },
+    {
+      "domain": "um.edu.mt",
+      "count": 35
+    },
+    {
+      "domain": "cookiedatabase.org",
       "count": 34
+    },
+    {
+      "domain": "9hdigital.com",
+      "count": 33
+    },
+    {
+      "domain": "x.com",
+      "count": 33
     },
     {
       "domain": "cdnserver.net",
       "count": 30
     },
     {
-      "domain": "x.com",
-      "count": 29
-    },
-    {
-      "domain": "9hdigital.com",
-      "count": 28
-    },
-    {
-      "domain": "um.edu.mt",
-      "count": 28
-    },
-    {
-      "domain": "cookiedatabase.org",
-      "count": 26
+      "domain": "msm.io",
+      "count": 27
     },
     {
       "domain": "2isoftware.com",
       "count": 23
     },
     {
-      "domain": "msm.io",
+      "domain": "arcgis.com",
+      "count": 21
+    },
+    {
+      "domain": "eventsingozo.com",
+      "count": 18
+    },
+    {
+      "domain": "parlament.mt",
       "count": 18
     },
     {
@@ -154,15 +166,15 @@
       "count": 18
     },
     {
-      "domain": "parlament.mt",
+      "domain": "2iltd.com",
       "count": 17
     },
     {
-      "domain": "2iltd.com",
+      "domain": "born.mt",
       "count": 15
     },
     {
-      "domain": "arcgis.com",
+      "domain": "cookiebot.com",
       "count": 15
     },
     {
@@ -170,61 +182,49 @@
       "count": 15
     },
     {
-      "domain": "eventsingozo.com",
+      "domain": "simplybook.me",
       "count": 15
+    },
+    {
+      "domain": "idpc.org.mt",
+      "count": 14
+    },
+    {
+      "domain": "ifg.mt",
+      "count": 14
     },
     {
       "domain": "apple.com",
       "count": 13
     },
     {
-      "domain": "idpc.org.mt",
+      "domain": "fondi.eu",
       "count": 13
     },
     {
-      "domain": "ifg.mt",
+      "domain": "google.com.mt",
       "count": 13
     },
     {
-      "domain": "simplybook.me",
+      "domain": "identitymalta.com",
+      "count": 13
+    },
+    {
+      "domain": "who.int",
       "count": 13
     },
     {
       "domain": "azureedge.net",
       "count": 12
-    },
-    {
-      "domain": "born.mt",
-      "count": 12
-    },
-    {
-      "domain": "cookiebot.com",
-      "count": 12
-    },
-    {
-      "domain": "cookielaw.org",
-      "count": 12
-    },
-    {
-      "domain": "dsvp.mt",
-      "count": 12
-    },
-    {
-      "domain": "fondi.eu",
-      "count": 12
-    },
-    {
-      "domain": "google.com.mt",
-      "count": 12
     }
   ],
   "relationship_types": {
-    "editorial_link": 736,
-    "script_dependency": 281,
-    "image_or_media_dependency": 282,
+    "editorial_link": 733,
+    "script_dependency": 280,
+    "image_or_media_dependency": 278,
     "stylesheet_dependency": 270,
     "font_or_preload_dependency": 15,
     "form_destination": 194
   },
-  "generated_at": "2026-09-24T11:59:56.519714+00:00"
+  "generated_at": "2026-09-24T17:23:31.891352+00:00"
 }
