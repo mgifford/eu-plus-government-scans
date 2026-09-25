@@ -1,7 +1,7 @@
 {
   "country_code": "PORTUGAL",
-  "total_relationships": 13661,
-  "total_source_domains": 396,
+  "total_relationships": 13659,
+  "total_source_domains": 395,
   "top_source_domains": [
     {
       "domain": "madeira.gov.pt",
@@ -24,16 +24,20 @@
       "count": 1487
     },
     {
+      "domain": "cm-tvedras.pt",
+      "count": 1065
+    },
+    {
       "domain": "cm-alcobaca.pt",
       "count": 1062
     },
     {
-      "domain": "cm-tvedras.pt",
-      "count": 1060
+      "domain": "edu.gov.pt",
+      "count": 1030
     },
     {
-      "domain": "edu.gov.pt",
-      "count": 1026
+      "domain": "cm-olhao.pt",
+      "count": 991
     },
     {
       "domain": "cmjornal.pt",
@@ -44,16 +48,20 @@
       "count": 980
     },
     {
-      "domain": "cm-olhao.pt",
-      "count": 942
+      "domain": "cm-loule.pt",
+      "count": 870
     },
     {
       "domain": "parlamento.pt",
       "count": 814
     },
     {
-      "domain": "cm-loule.pt",
-      "count": 808
+      "domain": "cm-pontedelima.pt",
+      "count": 798
+    },
+    {
+      "domain": "cm-estarreja.pt",
+      "count": 786
     },
     {
       "domain": "bnportugal.gov.pt",
@@ -64,20 +72,28 @@
       "count": 763
     },
     {
-      "domain": "cm-estarreja.pt",
-      "count": 753
+      "domain": "dgterritorio.gov.pt",
+      "count": 749
     },
     {
-      "domain": "cm-pontedelima.pt",
-      "count": 725
+      "domain": "cm-vfxira.pt",
+      "count": 720
+    },
+    {
+      "domain": "espap.gov.pt",
+      "count": 720
     },
     {
       "domain": "arte.gov.pt",
       "count": 702
     },
     {
-      "domain": "dgterritorio.gov.pt",
-      "count": 697
+      "domain": "cm-sardoal.pt",
+      "count": 689
+    },
+    {
+      "domain": "cm-obidos.pt",
+      "count": 668
     },
     {
       "domain": "cm-feira.pt",
@@ -96,52 +112,52 @@
       "count": 630
     },
     {
-      "domain": "cm-vfxira.pt",
-      "count": 628
+      "domain": "cm-moncao.pt",
+      "count": 627
     },
     {
       "domain": "cm-sintra.pt",
       "count": 625
     },
     {
-      "domain": "cm-obidos.pt",
-      "count": 621
-    },
-    {
       "domain": "cm-faro.pt",
-      "count": 614
-    },
-    {
-      "domain": "espap.gov.pt",
-      "count": 610
+      "count": 618
     },
     {
       "domain": "cm-camaradelobos.pt",
       "count": 609
     },
     {
+      "domain": "cm-odivelas.pt",
+      "count": 604
+    },
+    {
       "domain": "cm-tomar.pt",
       "count": 599
     },
     {
-      "domain": "cm-sardoal.pt",
-      "count": 588
+      "domain": "cm-fundao.pt",
+      "count": 597
+    },
+    {
+      "domain": "cm-pacosdeferreira.pt",
+      "count": 573
+    },
+    {
+      "domain": "dgeg.gov.pt",
+      "count": 573
     },
     {
       "domain": "cm-ob.pt",
       "count": 567
     },
     {
-      "domain": "cm-fundao.pt",
-      "count": 564
-    },
-    {
       "domain": "dglab.gov.pt",
       "count": 554
     },
     {
-      "domain": "cm-moncao.pt",
-      "count": 544
+      "domain": "cm-ovar.pt",
+      "count": 546
     },
     {
       "domain": "ana.pt",
@@ -152,20 +168,16 @@
       "count": 536
     },
     {
-      "domain": "cm-pacosdeferreira.pt",
-      "count": 520
-    },
-    {
-      "domain": "cm-odivelas.pt",
-      "count": 519
-    },
-    {
-      "domain": "dgeg.gov.pt",
-      "count": 518
-    },
-    {
       "domain": "cm-tavira.pt",
-      "count": 506
+      "count": 517
+    },
+    {
+      "domain": "cm-monchique.pt",
+      "count": 510
+    },
+    {
+      "domain": "cm-sjm.pt",
+      "count": 505
     },
     {
       "domain": "cm-guimaraes.pt",
@@ -176,58 +188,46 @@
       "count": 500
     },
     {
+      "domain": "cm-leiria.pt",
+      "count": 498
+    },
+    {
       "domain": "portaldasfinancas.gov.pt",
       "count": 495
     },
     {
+      "domain": "cm-mafra.pt",
+      "count": 491
+    },
+    {
       "domain": "cm-amadora.pt",
       "count": 467
-    },
-    {
-      "domain": "cm-ovar.pt",
-      "count": 464
-    },
-    {
-      "domain": "cm-amarante.pt",
-      "count": 461
-    },
-    {
-      "domain": "cm-mafra.pt",
-      "count": 447
-    },
-    {
-      "domain": "presidencia.pt",
-      "count": 440
-    },
-    {
-      "domain": "cm-sjm.pt",
-      "count": 436
     }
   ],
   "top_target_domains": [
     {
       "domain": "googleapis.com",
-      "count": 3139
+      "count": 3279
     },
     {
       "domain": "facebook.com",
-      "count": 2844
+      "count": 3080
     },
     {
       "domain": "youtube.com",
-      "count": 2258
+      "count": 2471
     },
     {
       "domain": "instagram.com",
-      "count": 2203
+      "count": 2394
     },
     {
       "domain": "googletagmanager.com",
-      "count": 1992
+      "count": 2137
     },
     {
       "domain": "google.com",
-      "count": 1907
+      "count": 2039
     },
     {
       "domain": "madeira.gov.pt",
@@ -238,48 +238,48 @@
       "count": 1381
     },
     {
-      "domain": "justica.gov.pt",
-      "count": 1264
+      "domain": "livroreclamacoes.pt",
+      "count": 1298
     },
     {
-      "domain": "livroreclamacoes.pt",
-      "count": 1173
+      "domain": "justica.gov.pt",
+      "count": 1265
     },
     {
       "domain": "cloudflare.com",
-      "count": 1152
-    },
-    {
-      "domain": "jsdelivr.net",
-      "count": 1021
+      "count": 1189
     },
     {
       "domain": "twitter.com",
-      "count": 1014
+      "count": 1077
     },
     {
-      "domain": "parlamento.pt",
-      "count": 998
+      "domain": "jsdelivr.net",
+      "count": 1053
     },
     {
       "domain": "portugal.gov.pt",
-      "count": 994
+      "count": 1049
+    },
+    {
+      "domain": "parlamento.pt",
+      "count": 1043
     },
     {
       "domain": "wiremaze.com",
-      "count": 920
+      "count": 1029
     },
     {
       "domain": "presidencia.pt",
-      "count": 821
+      "count": 866
     },
     {
       "domain": "gstatic.com",
-      "count": 816
+      "count": 829
     },
     {
       "domain": "linkedin.com",
-      "count": 765
+      "count": 821
     },
     {
       "domain": "cm-porto.pt",
@@ -287,15 +287,15 @@
     },
     {
       "domain": "europa.eu",
-      "count": 659
+      "count": 698
     },
     {
       "domain": "anmp.pt",
-      "count": 538
+      "count": 583
     },
     {
       "domain": "w3.org",
-      "count": 488
+      "count": 516
     },
     {
       "domain": "cm-alcobaca.pt",
@@ -303,31 +303,39 @@
     },
     {
       "domain": "ipdj.gov.pt",
-      "count": 478
-    },
-    {
-      "domain": "cm-loule.pt",
-      "count": 451
-    },
-    {
-      "domain": "edu.gov.pt",
-      "count": 441
-    },
-    {
-      "domain": "cm-olhao.pt",
-      "count": 433
+      "count": 481
     },
     {
       "domain": "unpkg.com",
-      "count": 429
+      "count": 479
+    },
+    {
+      "domain": "cm-loule.pt",
+      "count": 477
+    },
+    {
+      "domain": "cm-olhao.pt",
+      "count": 463
     },
     {
       "domain": "dgterritorio.gov.pt",
-      "count": 428
+      "count": 461
+    },
+    {
+      "domain": "edu.gov.pt",
+      "count": 445
+    },
+    {
+      "domain": "bootstrapcdn.com",
+      "count": 432
     },
     {
       "domain": "cm-braga.pt",
       "count": 423
+    },
+    {
+      "domain": "jquery.com",
+      "count": 418
     },
     {
       "domain": "bnportugal.gov.pt",
@@ -338,16 +346,8 @@
       "count": 408
     },
     {
-      "domain": "bootstrapcdn.com",
-      "count": 396
-    },
-    {
-      "domain": "jquery.com",
-      "count": 396
-    },
-    {
       "domain": "portaldasfinancas.gov.pt",
-      "count": 366
+      "count": 368
     },
     {
       "domain": "cm-camaradelobos.pt",
@@ -358,12 +358,28 @@
       "count": 354
     },
     {
+      "domain": "cm-vfxira.pt",
+      "count": 338
+    },
+    {
+      "domain": "cm-estarreja.pt",
+      "count": 330
+    },
+    {
+      "domain": "autarquia360.com",
+      "count": 329
+    },
+    {
+      "domain": "portugal2020.pt",
+      "count": 327
+    },
+    {
       "domain": "cm-gondomar.pt",
       "count": 327
     },
     {
       "domain": "fontawesome.com",
-      "count": 320
+      "count": 323
     },
     {
       "domain": "cm-portimao.pt",
@@ -374,45 +390,29 @@
       "count": 317
     },
     {
-      "domain": "cm-estarreja.pt",
-      "count": 312
-    },
-    {
       "domain": "cm-tvedras.pt",
-      "count": 310
-    },
-    {
-      "domain": "autarquia360.com",
-      "count": 309
-    },
-    {
-      "domain": "cm-vfxira.pt",
-      "count": 299
-    },
-    {
-      "domain": "portugal2020.pt",
-      "count": 296
+      "count": 315
     },
     {
       "domain": "acessibilidade.gov.pt",
-      "count": 290
+      "count": 313
     },
     {
       "domain": "cm-pontedelima.pt",
-      "count": 287
+      "count": 311
     },
     {
-      "domain": "recuperarportugal.gov.pt",
-      "count": 283
+      "domain": "cm-pacosdeferreira.pt",
+      "count": 306
     }
   ],
   "relationship_types": {
-    "font_or_preload_dependency": 437,
-    "script_dependency": 2166,
-    "editorial_link": 7602,
-    "stylesheet_dependency": 1573,
+    "font_or_preload_dependency": 435,
+    "script_dependency": 2153,
+    "editorial_link": 7618,
+    "stylesheet_dependency": 1569,
     "form_destination": 752,
-    "image_or_media_dependency": 1131
+    "image_or_media_dependency": 1132
   },
-  "generated_at": "2026-09-24T11:59:57.110256+00:00"
+  "generated_at": "2026-09-25T17:26:45.661659+00:00"
 }
