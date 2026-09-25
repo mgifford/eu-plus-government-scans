@@ -9,34 +9,9 @@
     "total_source_domains": 245,
     "file": "sweden.json"
   },
-  "GREECE": {
-    "total_relationships": 8616,
-    "total_source_domains": 366,
-    "file": "greece.json"
-  },
-  "NORWAY": {
-    "total_relationships": 869,
-    "total_source_domains": 34,
-    "file": "norway.json"
-  },
-  "LATVIA": {
-    "total_relationships": 3298,
-    "total_source_domains": 143,
-    "file": "latvia.json"
-  },
-  "ITALY": {
-    "total_relationships": 16212,
-    "total_source_domains": 151,
-    "file": "italy.json"
-  },
-  "FINLAND": {
-    "total_relationships": 954,
-    "total_source_domains": 40,
-    "file": "finland.json"
-  },
-  "LUXEMBOURG": {
-    "total_relationships": 2042,
-    "total_source_domains": 40,
-    "file": "luxembourg.json"
+  "PORTUGAL": {
+    "total_relationships": 13659,
+    "total_source_domains": 395,
+    "file": "portugal.json"
   }
 }
