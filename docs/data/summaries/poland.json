@@ -1,15 +1,15 @@
 {
   "country_code": "POLAND",
-  "total_relationships": 61738,
+  "total_relationships": 61739,
   "total_source_domains": 2487,
   "top_source_domains": [
     {
       "domain": "krakow.pl",
-      "count": 57660
+      "count": 57678
     },
     {
       "domain": "poznan.pl",
-      "count": 37522
+      "count": 37551
     },
     {
       "domain": "lodz.pl",
@@ -207,11 +207,11 @@
   "top_target_domains": [
     {
       "domain": "krakow.pl",
-      "count": 28480
+      "count": 28486
     },
     {
       "domain": "poznan.pl",
-      "count": 18834
+      "count": 18844
     },
     {
       "domain": "lodz.pl",
@@ -219,11 +219,11 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 17840
+      "count": 17838
     },
     {
       "domain": "facebook.com",
-      "count": 15887
+      "count": 15890
     },
     {
       "domain": "gdansk.pl",
@@ -235,11 +235,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 6217
+      "count": 6218
     },
     {
       "domain": "google.com",
-      "count": 6086
+      "count": 6087
     },
     {
       "domain": "uni.opole.pl",
@@ -247,7 +247,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 6045
+      "count": 6047
     },
     {
       "domain": "ug.edu.pl",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 4428
+      "count": 4427
     },
     {
       "domain": "torun.pl",
@@ -291,7 +291,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 2015
+      "count": 2017
     },
     {
       "domain": "mixbet.radom.pl",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 33419,
+    "editorial_link": 33420,
     "form_destination": 3323,
     "image_or_media_dependency": 6753,
-    "script_dependency": 8759,
+    "script_dependency": 8760,
     "stylesheet_dependency": 7648,
-    "font_or_preload_dependency": 1836
+    "font_or_preload_dependency": 1835
   },
-  "generated_at": "2026-09-24T04:07:35.045723+00:00"
+  "generated_at": "2026-09-25T04:25:23.485548+00:00"
 }

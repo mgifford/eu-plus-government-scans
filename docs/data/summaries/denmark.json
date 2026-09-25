@@ -169,7 +169,7 @@
     },
     {
       "domain": "aalborg.dk",
-      "count": 156
+      "count": 165
     },
     {
       "domain": "mssb.dk",
@@ -231,7 +231,7 @@
     },
     {
       "domain": "cookieinformation.com",
-      "count": 1331
+      "count": 1332
     },
     {
       "domain": "linkedin.com",
@@ -275,7 +275,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 585
+      "count": 586
     },
     {
       "domain": "horsens.dk",
@@ -414,5 +414,5 @@
     "stylesheet_dependency": 573,
     "font_or_preload_dependency": 120
   },
-  "generated_at": "2026-09-19T20:55:58.189218+00:00"
+  "generated_at": "2026-09-25T04:25:23.668057+00:00"
 }
