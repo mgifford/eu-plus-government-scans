@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T22:00:45.059453+00:00",
+  "generated_at": "2026-09-25T04:25:26.580273+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -173,17 +173,17 @@
     {
       "service": "googleapis.com",
       "countries": 32,
-      "domains": 4281
+      "domains": 4280
     },
     {
       "service": "googletagmanager.com",
       "countries": 32,
-      "domains": 2770
+      "domains": 2771
     },
     {
       "service": "gstatic.com",
       "countries": 32,
-      "domains": 1711
+      "domains": 1710
     },
     {
       "service": "jsdelivr.net",
@@ -436,7 +436,7 @@
       "country_code": "POLAND",
       "country": "Poland",
       "service": "googleapis.com",
-      "domains": 1482,
+      "domains": 1481,
       "scanned_domains": 2436,
       "percent": 60.8
     },
@@ -452,9 +452,9 @@
       "country_code": "POLAND",
       "country": "Poland",
       "service": "gstatic.com",
-      "domains": 506,
+      "domains": 505,
       "scanned_domains": 2436,
-      "percent": 20.8
+      "percent": 20.7
     },
     {
       "country_code": "POLAND",
@@ -3484,9 +3484,9 @@
       "country_code": "CZECHIA",
       "country": "Czechia",
       "service": "googletagmanager.com",
-      "domains": 14,
+      "domains": 15,
       "scanned_domains": 32,
-      "percent": 43.8
+      "percent": 46.9
     },
     {
       "country_code": "CZECHIA",

@@ -19,9 +19,9 @@ UNITED_KINGDOM_UK,United Kingdom,arcgis.com,26,3145,0.8
 UNITED_KINGDOM_UK,United Kingdom,cdn-cookieyes.com,61,3145,1.9
 UNITED_KINGDOM_UK,United Kingdom,fbcdn.net,20,3145,0.6
 UNITED_KINGDOM_UK,United Kingdom,mapbox.com,48,3145,1.5
-POLAND,Poland,googleapis.com,1482,2436,60.8
+POLAND,Poland,googleapis.com,1481,2436,60.8
 POLAND,Poland,googletagmanager.com,666,2436,27.3
-POLAND,Poland,gstatic.com,506,2436,20.8
+POLAND,Poland,gstatic.com,505,2436,20.7
 POLAND,Poland,jsdelivr.net,186,2436,7.6
 POLAND,Poland,fontawesome.com,145,2436,6.0
 POLAND,Poland,google.com,381,2436,15.6
@@ -400,7 +400,7 @@ NORWAY,Norway,cdn-cookieyes.com,1,34,2.9
 NORWAY,Norway,fbcdn.net,0,34,0.0
 NORWAY,Norway,mapbox.com,0,34,0.0
 CZECHIA,Czechia,googleapis.com,20,32,62.5
-CZECHIA,Czechia,googletagmanager.com,14,32,43.8
+CZECHIA,Czechia,googletagmanager.com,15,32,46.9
 CZECHIA,Czechia,gstatic.com,12,32,37.5
 CZECHIA,Czechia,jsdelivr.net,9,32,28.1
 CZECHIA,Czechia,fontawesome.com,4,32,12.5
