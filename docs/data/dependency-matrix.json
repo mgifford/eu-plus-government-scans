@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T17:26:47.418938+00:00",
+  "generated_at": "2026-09-25T21:57:31.799874+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -218,7 +218,7 @@
     {
       "service": "bootstrapcdn.com",
       "countries": 29,
-      "domains": 609
+      "domains": 610
     },
     {
       "service": "typekit.net",
@@ -233,12 +233,12 @@
     {
       "service": "facebook.com",
       "countries": 23,
-      "domains": 217
+      "domains": 218
     },
     {
       "service": "facebook.net",
       "countries": 22,
-      "domains": 200
+      "domains": 199
     },
     {
       "service": "amazonaws.com",
@@ -668,9 +668,9 @@
       "country_code": "FRANCE",
       "country": "France",
       "service": "bootstrapcdn.com",
-      "domains": 73,
+      "domains": 74,
       "scanned_domains": 670,
-      "percent": 10.9
+      "percent": 11.0
     },
     {
       "country_code": "FRANCE",
@@ -692,17 +692,17 @@
       "country_code": "FRANCE",
       "country": "France",
       "service": "facebook.com",
-      "domains": 10,
+      "domains": 11,
       "scanned_domains": 670,
-      "percent": 1.5
+      "percent": 1.6
     },
     {
       "country_code": "FRANCE",
       "country": "France",
       "service": "facebook.net",
-      "domains": 12,
+      "domains": 11,
       "scanned_domains": 670,
-      "percent": 1.8
+      "percent": 1.6
     },
     {
       "country_code": "FRANCE",
