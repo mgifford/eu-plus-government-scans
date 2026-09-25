@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-25T04:25:18.951535+00:00",
+  "generated_at": "2026-09-25T12:03:28.343940+00:00",
   "shard_max_bytes": 33554432,
-  "total_rows": 318569,
-  "total_bytes": 189642840,
+  "total_rows": 318664,
+  "total_bytes": 189692630,
   "shards": [
     {
       "file": "at.001.jsonl",
@@ -151,8 +151,8 @@
     {
       "file": "gr.001.jsonl",
       "group": "gr",
-      "rows": 8606,
-      "bytes": 4741426
+      "rows": 8676,
+      "bytes": 4776770
     },
     {
       "file": "hr.001.jsonl",
@@ -187,8 +187,8 @@
     {
       "file": "it.001.jsonl",
       "group": "it",
-      "rows": 16262,
-      "bytes": 10504497
+      "rows": 16266,
+      "bytes": 10506360
     },
     {
       "file": "lt.001.jsonl",
@@ -199,14 +199,14 @@
     {
       "file": "lu.001.jsonl",
       "group": "lu",
-      "rows": 2050,
-      "bytes": 1224679
+      "rows": 2071,
+      "bytes": 1237260
     },
     {
       "file": "lv.001.jsonl",
       "group": "lv",
       "rows": 3373,
-      "bytes": 1927500
+      "bytes": 1927502
     },
     {
       "file": "madrid.001.jsonl",

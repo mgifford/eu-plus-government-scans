@@ -29,7 +29,7 @@
     },
     {
       "domain": "iem.gov.lv",
-      "count": 486
+      "count": 509
     },
     {
       "domain": "kem.gov.lv",
@@ -60,6 +60,10 @@
       "count": 294
     },
     {
+      "domain": "pmlp.gov.lv",
+      "count": 294
+    },
+    {
       "domain": "mk.gov.lv",
       "count": 282
     },
@@ -78,10 +82,6 @@
     {
       "domain": "lrvk.gov.lv",
       "count": 264
-    },
-    {
-      "domain": "pmlp.gov.lv",
-      "count": 257
     },
     {
       "domain": "lgia.gov.lv",
@@ -235,7 +235,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 605
+      "count": 607
     },
     {
       "domain": "linkedin.com",
@@ -255,15 +255,15 @@
     },
     {
       "domain": "google.com",
-      "count": 288
+      "count": 292
+    },
+    {
+      "domain": "iem.gov.lv",
+      "count": 292
     },
     {
       "domain": "googletagmanager.com",
       "count": 288
-    },
-    {
-      "domain": "iem.gov.lv",
-      "count": 277
     },
     {
       "domain": "liepaja.lv",
@@ -275,11 +275,11 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 217
+      "count": 219
     },
     {
       "domain": "latvija.lv",
-      "count": 206
+      "count": 207
     },
     {
       "domain": "vugd.gov.lv",
@@ -288,6 +288,14 @@
     {
       "domain": "mk.gov.lv",
       "count": 190
+    },
+    {
+      "domain": "pmlp.gov.lv",
+      "count": 177
+    },
+    {
+      "domain": "europa.eu",
+      "count": 171
     },
     {
       "domain": "readspeaker.com",
@@ -302,14 +310,6 @@
       "count": 167
     },
     {
-      "domain": "europa.eu",
-      "count": 167
-    },
-    {
-      "domain": "pmlp.gov.lv",
-      "count": 154
-    },
-    {
       "domain": "knab.gov.lv",
       "count": 154
     },
@@ -318,12 +318,12 @@
       "count": 147
     },
     {
-      "domain": "lgia.gov.lv",
-      "count": 141
+      "domain": "cloudflare.com",
+      "count": 142
     },
     {
-      "domain": "cloudflare.com",
-      "count": 140
+      "domain": "lgia.gov.lv",
+      "count": 141
     },
     {
       "domain": "kem.gov.lv",
@@ -414,5 +414,5 @@
     "font_or_preload_dependency": 138,
     "form_destination": 200
   },
-  "generated_at": "2026-09-20T04:23:30.041110+00:00"
+  "generated_at": "2026-09-25T12:03:31.429260+00:00"
 }
