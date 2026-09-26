@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T21:57:31.799874+00:00",
+  "generated_at": "2026-09-26T04:31:01.125016+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -193,7 +193,7 @@
     {
       "service": "fontawesome.com",
       "countries": 32,
-      "domains": 873
+      "domains": 872
     },
     {
       "service": "google.com",
@@ -203,7 +203,7 @@
     {
       "service": "cloudflare.com",
       "countries": 31,
-      "domains": 1578
+      "domains": 1577
     },
     {
       "service": "jquery.com",
@@ -1588,9 +1588,9 @@
       "country_code": "CANADA",
       "country": "Canada",
       "service": "fontawesome.com",
-      "domains": 56,
+      "domains": 55,
       "scanned_domains": 191,
-      "percent": 29.3
+      "percent": 28.8
     },
     {
       "country_code": "CANADA",
@@ -1604,9 +1604,9 @@
       "country_code": "CANADA",
       "country": "Canada",
       "service": "cloudflare.com",
-      "domains": 44,
+      "domains": 43,
       "scanned_domains": 191,
-      "percent": 23.0
+      "percent": 22.5
     },
     {
       "country_code": "CANADA",
