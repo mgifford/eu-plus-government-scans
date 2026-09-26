@@ -37,7 +37,7 @@
     },
     {
       "domain": "irisnet.be",
-      "count": 1004
+      "count": 1020
     },
     {
       "domain": "liege.be",
@@ -195,7 +195,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 1407
+      "count": 1408
     },
     {
       "domain": "googleapis.com",
@@ -239,7 +239,7 @@
     },
     {
       "domain": "irisnet.be",
-      "count": 538
+      "count": 546
     },
     {
       "domain": "twitter.com",
@@ -259,7 +259,7 @@
     },
     {
       "domain": "google.com",
-      "count": 297
+      "count": 298
     },
     {
       "domain": "gstatic.com",
@@ -315,7 +315,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 129
+      "count": 130
     },
     {
       "domain": "visitmechelen.be",
@@ -386,5 +386,5 @@
     "font_or_preload_dependency": 89,
     "form_destination": 317
   },
-  "generated_at": "2026-09-24T04:07:35.238878+00:00"
+  "generated_at": "2026-09-26T16:40:39.040144+00:00"
 }
