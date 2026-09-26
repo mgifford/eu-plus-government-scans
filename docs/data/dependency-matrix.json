@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T04:31:01.125016+00:00",
+  "generated_at": "2026-09-26T11:41:32.659321+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -173,7 +173,7 @@
     {
       "service": "googleapis.com",
       "countries": 32,
-      "domains": 4275
+      "domains": 4274
     },
     {
       "service": "googletagmanager.com",
@@ -198,7 +198,7 @@
     {
       "service": "google.com",
       "countries": 31,
-      "domains": 2081
+      "domains": 2082
     },
     {
       "service": "cloudflare.com",
@@ -223,7 +223,7 @@
     {
       "service": "typekit.net",
       "countries": 26,
-      "domains": 284
+      "domains": 283
     },
     {
       "service": "cookiebot.com",
@@ -1236,9 +1236,9 @@
       "country_code": "SWEDEN",
       "country": "Sweden",
       "service": "googleapis.com",
-      "domains": 65,
+      "domains": 64,
       "scanned_domains": 241,
-      "percent": 27.0
+      "percent": 26.6
     },
     {
       "country_code": "SWEDEN",
@@ -1276,9 +1276,9 @@
       "country_code": "SWEDEN",
       "country": "Sweden",
       "service": "google.com",
-      "domains": 24,
+      "domains": 25,
       "scanned_domains": 241,
-      "percent": 10.0
+      "percent": 10.4
     },
     {
       "country_code": "SWEDEN",
@@ -1316,9 +1316,9 @@
       "country_code": "SWEDEN",
       "country": "Sweden",
       "service": "typekit.net",
-      "domains": 11,
+      "domains": 10,
       "scanned_domains": 241,
-      "percent": 4.6
+      "percent": 4.1
     },
     {
       "country_code": "SWEDEN",
