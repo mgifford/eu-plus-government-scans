@@ -9,7 +9,7 @@
     },
     {
       "domain": "government.bg",
-      "count": 1177
+      "count": 1203
     },
     {
       "domain": "gabrovo.bg",
@@ -211,7 +211,7 @@
     },
     {
       "domain": "government.bg",
-      "count": 596
+      "count": 606
     },
     {
       "domain": "varna.bg",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 350
+      "count": 351
     },
     {
       "domain": "pleven.bg",
@@ -231,7 +231,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 321
+      "count": 322
     },
     {
       "domain": "burgas.bg",
@@ -239,7 +239,7 @@
     },
     {
       "domain": "google.com",
-      "count": 271
+      "count": 272
     },
     {
       "domain": "nsi.bg",
@@ -247,7 +247,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 184
+      "count": 185
     },
     {
       "domain": "lovech.bg",
@@ -283,11 +283,11 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 111
+      "count": 112
     },
     {
       "domain": "instagram.com",
-      "count": 111
+      "count": 112
     },
     {
       "domain": "dobrich.bg",
@@ -311,19 +311,19 @@
     },
     {
       "domain": "europa.eu",
-      "count": 79
+      "count": 80
     },
     {
       "domain": "bnb.bg",
       "count": 78
     },
     {
-      "domain": "silistra.bg",
+      "domain": "twitter.com",
       "count": 69
     },
     {
-      "domain": "twitter.com",
-      "count": 68
+      "domain": "silistra.bg",
+      "count": 69
     },
     {
       "domain": "uslugi.io",
@@ -355,14 +355,14 @@
     },
     {
       "domain": "evroto.bg",
+      "count": 47
+    },
+    {
+      "domain": "linkedin.com",
       "count": 46
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 45
-    },
-    {
-      "domain": "linkedin.com",
       "count": 45
     },
     {
@@ -402,8 +402,8 @@
       "count": 33
     },
     {
-      "domain": "smartburgas.eu",
-      "count": 30
+      "domain": "gov.bg",
+      "count": 31
     }
   ],
   "relationship_types": {
@@ -414,5 +414,5 @@
     "stylesheet_dependency": 201,
     "font_or_preload_dependency": 21
   },
-  "generated_at": "2026-09-20T04:23:29.643451+00:00"
+  "generated_at": "2026-09-26T21:30:41.297199+00:00"
 }
