@@ -5,12 +5,12 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-09-26 11:25 UTC — last scan: 2026-09-25_
+_Stats as of 2026-09-26 11:56 UTC — last scan: 2026-09-26_
 
-**208** scan batches run
+**209** scan batches run
 
 **87,690** of **87,696** available pages scanned (**100.0%** coverage)
-**80,136** pages with technology detections (**91.4%** of scanned)
+**80,168** pages with technology detections (**91.4%** of scanned)
 **480** unique technologies identified
 
 ---
@@ -28,7 +28,7 @@ _Stats as of 2026-09-26 11:25 UTC — last scan: 2026-09-25_
 | Denmark | 1,536 | 1,503 | 1,536 | 2026-09-18 |
 | Estonia | 401 | 380 | 401 | 2026-09-11 |
 | Finland | 199 | 188 | 199 | 2026-09-11 |
-| France | 10,009 | 9,088 | 10,009 | 2026-09-24 |
+| France | 10,009 | 9,120 | 10,009 | 2026-09-26 |
 | Germany | 6,599 | 6,383 | 6,599 | 2026-09-23 |
 | Greece | 1,752 | 1,614 | 1,752 | 2026-09-16 |
 | Hungary | 392 | 293 | 392 | 2026-09-12 |
@@ -60,46 +60,46 @@ _Stats as of 2026-09-26 11:25 UTC — last scan: 2026-09-25_
 
 | # | Technology | Pages | Categories |
 |--:|-----------|------:|-----------|
-| 1 | jQuery | **43,733** | JavaScript libraries |
-| 2 | PHP | **26,906** | Programming languages |
-| 3 | Apache | **21,722** | Web servers |
-| 4 | Font Awesome | **20,071** | Font scripts |
-| 5 | Bootstrap | **19,765** | UI frameworks |
-| 6 | Google Tag Manager | **17,548** | Tag managers |
-| 7 | Google Font API | **17,421** | Font scripts |
-| 8 | MySQL | **15,658** | Databases |
-| 9 | WordPress | **15,547** | Blogs, CMS |
-| 10 | jQuery Migrate | **13,655** | JavaScript libraries |
-| 11 | Nginx | **13,324** | Reverse proxies, Web servers |
-| 12 | Cloudflare | **7,358** | CDN |
+| 1 | jQuery | **43,739** | JavaScript libraries |
+| 2 | PHP | **26,929** | Programming languages |
+| 3 | Apache | **21,719** | Web servers |
+| 4 | Font Awesome | **20,069** | Font scripts |
+| 5 | Bootstrap | **19,775** | UI frameworks |
+| 6 | Google Tag Manager | **17,553** | Tag managers |
+| 7 | Google Font API | **17,430** | Font scripts |
+| 8 | MySQL | **15,673** | Databases |
+| 9 | WordPress | **15,562** | Blogs, CMS |
+| 10 | jQuery Migrate | **13,667** | JavaScript libraries |
+| 11 | Nginx | **13,342** | Reverse proxies, Web servers |
+| 12 | Cloudflare | **7,361** | CDN |
 | 13 | Windows Server | **7,131** | Operating systems |
 | 14 | IIS | **7,013** | Web servers |
-| 15 | jQuery UI | **6,561** | JavaScript libraries |
+| 15 | jQuery UI | **6,560** | JavaScript libraries |
 | 16 | Microsoft ASP.NET | **6,128** | Web frameworks |
-| 17 | Drupal | **5,610** | CMS |
-| 18 | Yoast SEO | **5,197** | SEO |
-| 19 | reCAPTCHA | **5,150** | Security |
-| 20 | jsDelivr | **5,138** | CDN |
+| 17 | Drupal | **5,616** | CMS |
+| 18 | Yoast SEO | **5,207** | SEO |
+| 19 | reCAPTCHA | **5,149** | Security |
+| 20 | jsDelivr | **5,134** | CDN |
 
 ### Top Technology Categories
 
 | # | Category | Pages |
 |--:|---------|------:|
-| 1 | JavaScript libraries | **87,089** |
-| 2 | Web servers | **47,864** |
-| 3 | Font scripts | **38,781** |
-| 4 | Programming languages | **33,703** |
-| 5 | CMS | **28,280** |
-| 6 | UI frameworks | **26,256** |
-| 7 | Tag managers | **17,580** |
-| 8 | CDN | **16,949** |
-| 9 | Databases | **16,391** |
-| 10 | Blogs | **15,706** |
-| 11 | Reverse proxies | **13,862** |
-| 12 | Operating systems | **11,366** |
-| 13 | Web frameworks | **9,339** |
-| 14 | JavaScript frameworks | **8,346** |
-| 15 | Miscellaneous | **6,031** |
+| 1 | JavaScript libraries | **87,121** |
+| 2 | Web servers | **47,878** |
+| 3 | Font scripts | **38,789** |
+| 4 | Programming languages | **33,725** |
+| 5 | CMS | **28,303** |
+| 6 | UI frameworks | **26,271** |
+| 7 | Tag managers | **17,585** |
+| 8 | CDN | **16,945** |
+| 9 | Databases | **16,410** |
+| 10 | Blogs | **15,721** |
+| 11 | Reverse proxies | **13,885** |
+| 12 | Operating systems | **11,371** |
+| 13 | Web frameworks | **9,341** |
+| 14 | JavaScript frameworks | **8,353** |
+| 15 | Miscellaneous | **6,030** |
 
 📥 Machine-readable results: [Download machine-readable technology data (JSON)](technology-data.json)
 
