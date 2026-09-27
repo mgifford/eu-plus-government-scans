@@ -13,7 +13,7 @@
     },
     {
       "domain": "rijeka.hr",
-      "count": 870
+      "count": 877
     },
     {
       "domain": "slavonski-brod.hr",
@@ -48,12 +48,12 @@
       "count": 244
     },
     {
-      "domain": "dzs.hr",
-      "count": 228
+      "domain": "hzzo.hr",
+      "count": 234
     },
     {
-      "domain": "hzzo.hr",
-      "count": 201
+      "domain": "dzs.hr",
+      "count": 228
     },
     {
       "domain": "azop.hr",
@@ -131,15 +131,15 @@
     },
     {
       "domain": "gov.hr",
-      "count": 751
+      "count": 754
     },
     {
       "domain": "rijeka.hr",
-      "count": 339
+      "count": 344
     },
     {
       "domain": "facebook.com",
-      "count": 319
+      "count": 321
     },
     {
       "domain": "googletagmanager.com",
@@ -151,7 +151,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 221
+      "count": 222
     },
     {
       "domain": "youtube.com",
@@ -159,7 +159,7 @@
     },
     {
       "domain": "hzjz.hr",
-      "count": 199
+      "count": 200
     },
     {
       "domain": "sabor.hr",
@@ -171,15 +171,15 @@
     },
     {
       "domain": "hzzo.hr",
-      "count": 137
+      "count": 157
     },
     {
       "domain": "europa.eu",
-      "count": 136
+      "count": 137
     },
     {
       "domain": "twitter.com",
-      "count": 135
+      "count": 137
     },
     {
       "domain": "pozega.hr",
@@ -283,7 +283,7 @@
     },
     {
       "domain": "nn.hr",
-      "count": 37
+      "count": 38
     },
     {
       "domain": "flickr.com",
@@ -334,5 +334,5 @@
     "script_dependency": 167,
     "stylesheet_dependency": 122
   },
-  "generated_at": "2026-09-20T04:23:29.943263+00:00"
+  "generated_at": "2026-09-27T04:39:59.235704+00:00"
 }

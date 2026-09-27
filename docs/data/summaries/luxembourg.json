@@ -5,11 +5,11 @@
   "top_source_domains": [
     {
       "domain": "gouvernement.lu",
-      "count": 5976
+      "count": 6234
     },
     {
       "domain": "public.lu",
-      "count": 4007
+      "count": 4046
     },
     {
       "domain": "uni.lu",
@@ -167,15 +167,15 @@
   "top_target_domains": [
     {
       "domain": "public.lu",
-      "count": 4361
+      "count": 4464
     },
     {
       "domain": "gouvernement.lu",
-      "count": 2681
+      "count": 2785
     },
     {
       "domain": "facebook.com",
-      "count": 655
+      "count": 670
     },
     {
       "domain": "uni.lu",
@@ -183,15 +183,15 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 589
+      "count": 604
     },
     {
       "domain": "twitter.com",
-      "count": 455
+      "count": 470
     },
     {
       "domain": "bsky.app",
-      "count": 369
+      "count": 384
     },
     {
       "domain": "instagram.com",
@@ -199,7 +199,7 @@
     },
     {
       "domain": "etat.lu",
-      "count": 294
+      "count": 293
     },
     {
       "domain": "youtube.com",
@@ -207,11 +207,15 @@
     },
     {
       "domain": "europa.eu",
-      "count": 187
+      "count": 193
     },
     {
       "domain": "googleapis.com",
       "count": 186
+    },
+    {
+      "domain": "adobedtm.com",
+      "count": 174
     },
     {
       "domain": "esch.lu",
@@ -220,10 +224,6 @@
     {
       "domain": "inll.lu",
       "count": 167
-    },
-    {
-      "domain": "adobedtm.com",
-      "count": 159
     },
     {
       "domain": "jsdelivr.net",
@@ -267,7 +267,7 @@
     },
     {
       "domain": "education.lu",
-      "count": 61
+      "count": 62
     },
     {
       "domain": "typekit.net",
@@ -326,11 +326,11 @@
       "count": 45
     },
     {
-      "domain": "tiktok.com",
-      "count": 43
+      "domain": "geoportail.lu",
+      "count": 44
     },
     {
-      "domain": "geoportail.lu",
+      "domain": "tiktok.com",
       "count": 43
     },
     {
@@ -367,12 +367,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 1157,
+    "editorial_link": 1158,
     "form_destination": 156,
-    "image_or_media_dependency": 194,
+    "image_or_media_dependency": 193,
     "script_dependency": 274,
     "stylesheet_dependency": 232,
     "font_or_preload_dependency": 29
   },
-  "generated_at": "2026-09-25T12:03:31.643802+00:00"
+  "generated_at": "2026-09-27T04:39:59.331160+00:00"
 }
