@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T12:17:35.357098+00:00",
+  "generated_at": "2026-09-27T17:17:28.417800+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -173,7 +173,7 @@
     {
       "service": "googleapis.com",
       "countries": 32,
-      "domains": 4272
+      "domains": 4271
     },
     {
       "service": "googletagmanager.com",
@@ -183,7 +183,7 @@
     {
       "service": "gstatic.com",
       "countries": 32,
-      "domains": 1711
+      "domains": 1710
     },
     {
       "service": "jsdelivr.net",
@@ -203,7 +203,7 @@
     {
       "service": "cloudflare.com",
       "countries": 31,
-      "domains": 1576
+      "domains": 1575
     },
     {
       "service": "jquery.com",
@@ -223,7 +223,7 @@
     {
       "service": "typekit.net",
       "countries": 26,
-      "domains": 283
+      "domains": 284
     },
     {
       "service": "cookiebot.com",
@@ -238,12 +238,12 @@
     {
       "service": "facebook.net",
       "countries": 22,
-      "domains": 199
+      "domains": 198
     },
     {
       "service": "amazonaws.com",
       "countries": 21,
-      "domains": 227
+      "domains": 228
     },
     {
       "service": "addtoany.com",
@@ -1556,9 +1556,9 @@
       "country_code": "CANADA",
       "country": "Canada",
       "service": "googleapis.com",
-      "domains": 104,
+      "domains": 103,
       "scanned_domains": 190,
-      "percent": 54.7
+      "percent": 54.2
     },
     {
       "country_code": "CANADA",
@@ -1572,9 +1572,9 @@
       "country_code": "CANADA",
       "country": "Canada",
       "service": "gstatic.com",
-      "domains": 37,
+      "domains": 36,
       "scanned_domains": 190,
-      "percent": 19.5
+      "percent": 18.9
     },
     {
       "country_code": "CANADA",
@@ -1604,9 +1604,9 @@
       "country_code": "CANADA",
       "country": "Canada",
       "service": "cloudflare.com",
-      "domains": 42,
+      "domains": 41,
       "scanned_domains": 190,
-      "percent": 22.1
+      "percent": 21.6
     },
     {
       "country_code": "CANADA",
@@ -1636,9 +1636,9 @@
       "country_code": "CANADA",
       "country": "Canada",
       "service": "typekit.net",
-      "domains": 11,
+      "domains": 12,
       "scanned_domains": 190,
-      "percent": 5.8
+      "percent": 6.3
     },
     {
       "country_code": "CANADA",
@@ -1660,17 +1660,17 @@
       "country_code": "CANADA",
       "country": "Canada",
       "service": "facebook.net",
-      "domains": 6,
+      "domains": 5,
       "scanned_domains": 190,
-      "percent": 3.2
+      "percent": 2.6
     },
     {
       "country_code": "CANADA",
       "country": "Canada",
       "service": "amazonaws.com",
-      "domains": 14,
+      "domains": 15,
       "scanned_domains": 190,
-      "percent": 7.4
+      "percent": 7.9
     },
     {
       "country_code": "CANADA",

@@ -1,7 +1,7 @@
 {
   "country_code": "FRANCE",
-  "total_relationships": 30747,
-  "total_source_domains": 673,
+  "total_relationships": 30757,
+  "total_source_domains": 674,
   "top_source_domains": [
     {
       "domain": "auvergnerhonealpes.fr",
@@ -219,7 +219,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 7361
+      "count": 7364
     },
     {
       "domain": "skolengo.com",
@@ -231,11 +231,11 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 4938
+      "count": 4940
     },
     {
       "domain": "instagram.com",
-      "count": 4467
+      "count": 4468
     },
     {
       "domain": "data.gouv.fr",
@@ -243,7 +243,7 @@
     },
     {
       "domain": "twitter.com",
-      "count": 4018
+      "count": 4020
     },
     {
       "domain": "googleapis.com",
@@ -251,7 +251,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 3524
+      "count": 3526
     },
     {
       "domain": "legifrance.gouv.fr",
@@ -295,7 +295,7 @@
     },
     {
       "domain": "google.com",
-      "count": 1654
+      "count": 1656
     },
     {
       "domain": "culture.gouv.fr",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 16078,
-    "script_dependency": 4581,
-    "stylesheet_dependency": 4112,
-    "image_or_media_dependency": 3554,
-    "form_destination": 1717,
+    "editorial_link": 16083,
+    "script_dependency": 4583,
+    "stylesheet_dependency": 4113,
+    "image_or_media_dependency": 3555,
+    "form_destination": 1718,
     "font_or_preload_dependency": 705
   },
-  "generated_at": "2026-09-27T12:17:32.812776+00:00"
+  "generated_at": "2026-09-27T17:17:25.043847+00:00"
 }
