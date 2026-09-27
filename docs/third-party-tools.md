@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-09-27 05:49 UTC — last scan: 2026-09-26_
+_Stats as of 2026-09-27 06:03 UTC — last scan: 2026-09-27_
 
-**290** scan batches run
+**292** scan batches run
 
 **87,690** of **87,696** available pages scanned (**100.0%** coverage)
-**79,553** of **87,690** scanned pages were reachable (**90.7%**)
-**37,222** reachable pages loaded at least one third-party script (**46.8%** of reachable)
-**46,706** known third-party service loads identified
+**79,563** of **87,690** scanned pages were reachable (**90.7%**)
+**37,223** reachable pages loaded at least one third-party script (**46.8%** of reachable)
+**46,704** known third-party service loads identified
 **26** unique known services across **17** categories
 
 ---
@@ -32,11 +32,11 @@ _Stats as of 2026-09-27 05:49 UTC — last scan: 2026-09-26_
 | Finland | 199 | 199 | 189 | 47 | 26 | 24.9 | 13.8 | 2026-09-25 |
 | France | 10,009 | 10,009 | 9,102 | 4,166 | 2,459 | 45.8 | 27.0 | 2026-09-26 |
 | Germany | 6,599 | 6,599 | 6,295 | 1,661 | 1,039 | 26.4 | 16.5 | 2026-09-26 |
-| Greece | 1,752 | 1,752 | 1,622 | 791 | 1,120 | 48.8 | 69.1 | 2026-09-26 |
+| Greece | 1,752 | 1,752 | 1,624 | 792 | 1,118 | 48.8 | 68.8 | 2026-09-27 |
 | Hungary | 392 | 392 | 296 | 132 | 200 | 44.6 | 67.6 | 2026-09-25 |
 | Iceland | 145 | 145 | 143 | 78 | 45 | 54.5 | 31.5 | 2026-09-26 |
 | Ireland | 536 | 536 | 499 | 272 | 725 | 54.5 | 145.3 | 2026-09-26 |
-| Italy | 5,351 | 5,351 | 4,400 | 1,586 | 1,428 | 36.0 | 32.5 | 2026-09-26 |
+| Italy | 5,351 | 5,351 | 4,408 | 1,586 | 1,428 | 36.0 | 32.4 | 2026-09-27 |
 | Latvia | 803 | 803 | 762 | 263 | 286 | 34.5 | 37.5 | 2026-09-26 |
 | Lithuania | 122 | 122 | 114 | 57 | 111 | 50.0 | 97.4 | 2026-09-26 |
 | Luxembourg | 573 | 573 | 533 | 400 | 337 | 75.0 | 63.2 | 2026-09-26 |
@@ -70,7 +70,7 @@ _Stats as of 2026-09-27 05:49 UTC — last scan: 2026-09-26_
 | 6 | Google Hosted Libraries | **3,231** |
 | 7 | unpkg CDN | **2,868** |
 | 8 | jQuery | **2,758** |
-| 9 | Font Awesome | **1,931** |
+| 9 | Font Awesome | **1,929** |
 | 10 | Bootstrap | **951** |
 | 11 | Cookiebot | **808** |
 | 12 | Adobe Dynamic Tag Management / Launch | **497** |
@@ -95,7 +95,7 @@ _Stats as of 2026-09-27 05:49 UTC — last scan: 2026-09-26_
 | 6 | Google Hosted Libraries | **2,908** | **15.7%** |
 | 7 | unpkg CDN | **2,240** | **12.1%** |
 | 8 | jQuery | **2,178** | **11.8%** |
-| 9 | Font Awesome | **1,518** | **8.2%** |
+| 9 | Font Awesome | **1,516** | **8.2%** |
 | 10 | Bootstrap | **944** | **5.1%** |
 | 11 | Cookiebot | **788** | **4.3%** |
 | 12 | Adobe Dynamic Tag Management / Launch | **494** | **2.7%** |
@@ -118,7 +118,7 @@ _Stats as of 2026-09-27 05:49 UTC — last scan: 2026-09-26_
 | 4 | Security | **5,006** |
 | 5 | CAPTCHA | **4,810** |
 | 6 | Tag Manager | **4,576** |
-| 7 | Icon Library | **1,931** |
+| 7 | Icon Library | **1,929** |
 | 8 | Cookie Consent | **1,488** |
 | 9 | UI Framework | **951** |
 | 10 | Advertising | **461** |
@@ -136,7 +136,7 @@ Infrastructure-heavy categories (CDNs, core libraries, and UI assets):
 |--:|--------------------------|------:|
 | 1 | CDN | **20,590** |
 | 2 | JavaScript Library | **5,989** |
-| 3 | Icon Library | **1,931** |
+| 3 | Icon Library | **1,929** |
 | 4 | UI Framework | **951** |
 
 Policy-relevant categories (tracking, consent, support, and security tooling):
