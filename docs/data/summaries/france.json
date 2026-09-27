@@ -29,7 +29,7 @@
     },
     {
       "domain": "rennes.fr",
-      "count": 3557
+      "count": 3662
     },
     {
       "domain": "toulouse.fr",
@@ -219,7 +219,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 7358
+      "count": 7361
     },
     {
       "domain": "skolengo.com",
@@ -231,11 +231,11 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 4935
+      "count": 4938
     },
     {
       "domain": "instagram.com",
-      "count": 4464
+      "count": 4467
     },
     {
       "domain": "data.gouv.fr",
@@ -247,11 +247,11 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 3578
+      "count": 3579
     },
     {
       "domain": "youtube.com",
-      "count": 3521
+      "count": 3524
     },
     {
       "domain": "legifrance.gouv.fr",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "rennes.fr",
-      "count": 1987
+      "count": 2045
     },
     {
       "domain": "service-public.fr",
@@ -295,7 +295,7 @@
     },
     {
       "domain": "google.com",
-      "count": 1651
+      "count": 1654
     },
     {
       "domain": "culture.gouv.fr",
@@ -307,7 +307,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 1573
+      "count": 1574
     },
     {
       "domain": "numerique.gouv.fr",
@@ -414,5 +414,5 @@
     "form_destination": 1717,
     "font_or_preload_dependency": 705
   },
-  "generated_at": "2026-09-26T21:30:41.009511+00:00"
+  "generated_at": "2026-09-27T12:17:32.812776+00:00"
 }

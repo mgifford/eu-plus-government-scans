@@ -211,7 +211,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 628
+      "count": 630
     },
     {
       "domain": "instagram.com",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 433
+      "count": 434
     },
     {
       "domain": "twitter.com",
@@ -295,7 +295,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 158
+      "count": 159
     },
     {
       "domain": "jquery.com",
@@ -414,5 +414,5 @@
     "image_or_media_dependency": 186,
     "font_or_preload_dependency": 60
   },
-  "generated_at": "2026-09-27T04:39:57.668743+00:00"
+  "generated_at": "2026-09-27T12:17:31.405957+00:00"
 }
