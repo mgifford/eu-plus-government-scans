@@ -5,12 +5,12 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-09-27 15:11 UTC — last scan: 2026-09-27_
+_Stats as of 2026-09-27 16:58 UTC — last scan: 2026-09-27_
 
-**212** scan batches run
+**214** scan batches run
 
 **87,690** of **87,696** available pages scanned (**100.0%** coverage)
-**80,191** pages with technology detections (**91.4%** of scanned)
+**80,193** pages with technology detections (**91.5%** of scanned)
 **480** unique technologies identified
 
 ---
@@ -47,7 +47,7 @@ _Stats as of 2026-09-27 15:11 UTC — last scan: 2026-09-27_
 | Romania | 807 | 348 | 807 | 2026-09-22 |
 | Slovakia | 442 | 412 | 442 | 2026-09-14 |
 | Slovenia | 214 | 207 | 214 | 2026-09-14 |
-| Spain | 6,091 | 5,066 | 6,091 | 2026-09-27 |
+| Spain | 6,091 | 5,068 | 6,091 | 2026-09-27 |
 | Sweden | 1,702 | 1,622 | 1,702 | 2026-09-20 |
 | Switzerland | 2,123 | 2,073 | 2,123 | 2026-09-14 |
 | United Kingdom | 19,511 | 18,497 | 19,511 | 2026-09-25 |
@@ -62,11 +62,11 @@ _Stats as of 2026-09-27 15:11 UTC — last scan: 2026-09-27_
 |--:|-----------|------:|-----------|
 | 1 | jQuery | **43,753** | JavaScript libraries |
 | 2 | PHP | **26,928** | Programming languages |
-| 3 | Apache | **21,736** | Web servers |
+| 3 | Apache | **21,734** | Web servers |
 | 4 | Font Awesome | **20,076** | Font scripts |
 | 5 | Bootstrap | **19,790** | UI frameworks |
 | 6 | Google Tag Manager | **17,568** | Tag managers |
-| 7 | Google Font API | **17,431** | Font scripts |
+| 7 | Google Font API | **17,427** | Font scripts |
 | 8 | MySQL | **15,671** | Databases |
 | 9 | WordPress | **15,563** | Blogs, CMS |
 | 10 | jQuery Migrate | **13,670** | JavaScript libraries |
@@ -85,17 +85,17 @@ _Stats as of 2026-09-27 15:11 UTC — last scan: 2026-09-27_
 
 | # | Category | Pages |
 |--:|---------|------:|
-| 1 | JavaScript libraries | **87,133** |
-| 2 | Web servers | **47,894** |
-| 3 | Font scripts | **38,797** |
+| 1 | JavaScript libraries | **87,136** |
+| 2 | Web servers | **47,892** |
+| 3 | Font scripts | **38,793** |
 | 4 | Programming languages | **33,729** |
 | 5 | CMS | **28,304** |
-| 6 | UI frameworks | **26,286** |
+| 6 | UI frameworks | **26,285** |
 | 7 | Tag managers | **17,600** |
 | 8 | CDN | **16,957** |
 | 9 | Databases | **16,408** |
 | 10 | Blogs | **15,722** |
-| 11 | Reverse proxies | **13,885** |
+| 11 | Reverse proxies | **13,886** |
 | 12 | Operating systems | **11,371** |
 | 13 | Web frameworks | **9,343** |
 | 14 | JavaScript frameworks | **8,353** |
