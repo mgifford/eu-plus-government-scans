@@ -1,6 +1,6 @@
 {
   "country_code": "SWEDEN",
-  "total_relationships": 6230,
+  "total_relationships": 6229,
   "total_source_domains": 245,
   "top_source_domains": [
     {
@@ -21,7 +21,7 @@
     },
     {
       "domain": "vaxjo.se",
-      "count": 980
+      "count": 1013
     },
     {
       "domain": "stockholm.se",
@@ -144,6 +144,10 @@
       "count": 276
     },
     {
+      "domain": "kalmar.se",
+      "count": 273
+    },
+    {
       "domain": "lulea.se",
       "count": 270
     },
@@ -180,10 +184,6 @@
       "count": 240
     },
     {
-      "domain": "kalmar.se",
-      "count": 237
-    },
-    {
       "domain": "regiondalarna.se",
       "count": 231
     },
@@ -211,15 +211,15 @@
     },
     {
       "domain": "facebook.com",
-      "count": 1337
+      "count": 1346
     },
     {
       "domain": "linkedin.com",
-      "count": 1130
+      "count": 1133
     },
     {
       "domain": "instagram.com",
-      "count": 1082
+      "count": 1093
     },
     {
       "domain": "regionstockholm.se",
@@ -231,7 +231,7 @@
     },
     {
       "domain": "vaxjo.se",
-      "count": 693
+      "count": 711
     },
     {
       "domain": "regionorebrolan.se",
@@ -251,11 +251,11 @@
     },
     {
       "domain": "youtube.com",
-      "count": 549
+      "count": 550
     },
     {
       "domain": "googleapis.com",
-      "count": 530
+      "count": 531
     },
     {
       "domain": "stockholm.se",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "google.com",
-      "count": 432
+      "count": 436
     },
     {
       "domain": "readspeaker.com",
@@ -299,7 +299,7 @@
     },
     {
       "domain": "axiell.com",
-      "count": 339
+      "count": 354
     },
     {
       "domain": "orebro.se",
@@ -363,7 +363,7 @@
     },
     {
       "domain": "twitter.com",
-      "count": 203
+      "count": 204
     },
     {
       "domain": "riksarkivet.se",
@@ -372,6 +372,10 @@
     {
       "domain": "sundsvall.se",
       "count": 189
+    },
+    {
+      "domain": "kalmar.se",
+      "count": 188
     },
     {
       "domain": "rjl.se",
@@ -383,15 +387,11 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 178
+      "count": 179
     },
     {
       "domain": "lu.se",
       "count": 174
-    },
-    {
-      "domain": "kalmar.se",
-      "count": 170
     },
     {
       "domain": "lund.se",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 2733,
+    "editorial_link": 2732,
     "script_dependency": 1147,
     "stylesheet_dependency": 873,
     "font_or_preload_dependency": 307,
     "form_destination": 491,
     "image_or_media_dependency": 679
   },
-  "generated_at": "2026-09-27T04:39:59.661859+00:00"
+  "generated_at": "2026-09-27T17:17:25.229120+00:00"
 }

@@ -5,7 +5,7 @@
   "top_source_domains": [
     {
       "domain": "gouvernement.lu",
-      "count": 6234
+      "count": 6393
     },
     {
       "domain": "public.lu",
@@ -167,15 +167,15 @@
   "top_target_domains": [
     {
       "domain": "public.lu",
-      "count": 4464
+      "count": 4502
     },
     {
       "domain": "gouvernement.lu",
-      "count": 2785
+      "count": 2845
     },
     {
       "domain": "facebook.com",
-      "count": 670
+      "count": 679
     },
     {
       "domain": "uni.lu",
@@ -183,19 +183,19 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 604
+      "count": 615
     },
     {
       "domain": "twitter.com",
-      "count": 470
+      "count": 479
     },
     {
       "domain": "bsky.app",
-      "count": 384
+      "count": 393
     },
     {
       "domain": "instagram.com",
-      "count": 337
+      "count": 343
     },
     {
       "domain": "etat.lu",
@@ -203,11 +203,11 @@
     },
     {
       "domain": "youtube.com",
-      "count": 223
+      "count": 225
     },
     {
       "domain": "europa.eu",
-      "count": 193
+      "count": 194
     },
     {
       "domain": "googleapis.com",
@@ -215,7 +215,7 @@
     },
     {
       "domain": "adobedtm.com",
-      "count": 174
+      "count": 183
     },
     {
       "domain": "esch.lu",
@@ -310,6 +310,10 @@
       "count": 50
     },
     {
+      "domain": "tiktok.com",
+      "count": 45
+    },
+    {
       "domain": "cgie.lu",
       "count": 45
     },
@@ -328,10 +332,6 @@
     {
       "domain": "geoportail.lu",
       "count": 44
-    },
-    {
-      "domain": "tiktok.com",
-      "count": 43
     },
     {
       "domain": "petitiounen.lu",
@@ -374,5 +374,5 @@
     "stylesheet_dependency": 232,
     "font_or_preload_dependency": 29
   },
-  "generated_at": "2026-09-27T04:39:59.331160+00:00"
+  "generated_at": "2026-09-27T17:17:24.937704+00:00"
 }
