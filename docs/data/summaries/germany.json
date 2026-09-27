@@ -1,6 +1,6 @@
 {
   "country_code": "GERMANY",
-  "total_relationships": 22096,
+  "total_relationships": 22002,
   "total_source_domains": 224,
   "top_source_domains": [
     {
@@ -9,35 +9,35 @@
     },
     {
       "domain": "rlp.de",
-      "count": 31515
+      "count": 32037
     },
     {
       "domain": "niedersachsen.de",
-      "count": 30614
+      "count": 31281
     },
     {
       "domain": "bayern.de",
-      "count": 28457
+      "count": 31270
     },
     {
       "domain": "nrw.de",
-      "count": 23926
+      "count": 24695
     },
     {
       "domain": "hamburg.de",
-      "count": 15070
+      "count": 15104
     },
     {
       "domain": "diplo.de",
-      "count": 11371
+      "count": 13981
     },
     {
       "domain": "hessen.de",
-      "count": 8577
+      "count": 10402
     },
     {
       "domain": "sachsen-anhalt.de",
-      "count": 5849
+      "count": 7567
     },
     {
       "domain": "bund.de",
@@ -45,7 +45,7 @@
     },
     {
       "domain": "bremen.de",
-      "count": 3625
+      "count": 3921
     },
     {
       "domain": "thueringen.de",
@@ -53,7 +53,7 @@
     },
     {
       "domain": "baden-wuerttemberg.de",
-      "count": 2921
+      "count": 3373
     },
     {
       "domain": "berlin.de",
@@ -61,7 +61,7 @@
     },
     {
       "domain": "duesseldorf.de",
-      "count": 1017
+      "count": 1113
     },
     {
       "domain": "muenchen.de",
@@ -211,71 +211,71 @@
     },
     {
       "domain": "niedersachsen.de",
-      "count": 27557
+      "count": 28129
     },
     {
       "domain": "rlp.de",
-      "count": 24992
+      "count": 25482
     },
     {
       "domain": "bayern.de",
-      "count": 18402
+      "count": 19886
     },
     {
       "domain": "nrw.de",
-      "count": 15281
+      "count": 15716
     },
     {
       "domain": "hamburg.de",
-      "count": 9169
+      "count": 9189
     },
     {
       "domain": "hessen.de",
-      "count": 6465
+      "count": 7907
     },
     {
       "domain": "diplo.de",
-      "count": 5306
-    },
-    {
-      "domain": "facebook.com",
-      "count": 4340
-    },
-    {
-      "domain": "instagram.com",
-      "count": 4193
+      "count": 6592
     },
     {
       "domain": "sachsen-anhalt.de",
-      "count": 4114
+      "count": 5314
+    },
+    {
+      "domain": "facebook.com",
+      "count": 4713
+    },
+    {
+      "domain": "instagram.com",
+      "count": 4508
     },
     {
       "domain": "bund.de",
-      "count": 3205
+      "count": 3226
+    },
+    {
+      "domain": "twitter.com",
+      "count": 3040
     },
     {
       "domain": "bremen.de",
-      "count": 2850
+      "count": 3035
     },
     {
       "domain": "youtube.com",
-      "count": 2741
+      "count": 2917
     },
     {
       "domain": "thueringen.de",
       "count": 2741
     },
     {
-      "domain": "twitter.com",
-      "count": 2731
-    },
-    {
       "domain": "linkedin.com",
-      "count": 2155
+      "count": 2282
     },
     {
       "domain": "justiz.nrw",
-      "count": 2004
+      "count": 2037
     },
     {
       "domain": "berlin.de",
@@ -283,15 +283,19 @@
     },
     {
       "domain": "baden-wuerttemberg.de",
-      "count": 1575
+      "count": 1824
     },
     {
       "domain": "auswaertiges-amt.de",
-      "count": 1392
+      "count": 1722
     },
     {
       "domain": "etracker.com",
-      "count": 1306
+      "count": 1315
+    },
+    {
+      "domain": "readspeaker.com",
+      "count": 1171
     },
     {
       "domain": "zvg-portal.de",
@@ -302,16 +306,12 @@
       "count": 1018
     },
     {
-      "domain": "readspeaker.com",
-      "count": 1010
-    },
-    {
       "domain": "lehrer-werden-in-sachsen.de",
       "count": 992
     },
     {
       "domain": "polyplanet.de",
-      "count": 931
+      "count": 933
     },
     {
       "domain": "jsdelivr.net",
@@ -319,31 +319,31 @@
     },
     {
       "domain": "knastladen.de",
-      "count": 809
+      "count": 816
     },
     {
       "domain": "justiz-karriere.nrw",
-      "count": 766
+      "count": 774
     },
     {
       "domain": "google.com",
-      "count": 702
-    },
-    {
-      "domain": "schulcms.net",
-      "count": 635
-    },
-    {
-      "domain": "wordpress.org",
-      "count": 628
+      "count": 740
     },
     {
       "domain": "duesseldorf.de",
-      "count": 600
+      "count": 644
+    },
+    {
+      "domain": "wordpress.org",
+      "count": 638
+    },
+    {
+      "domain": "schulcms.net",
+      "count": 637
     },
     {
       "domain": "muenchen.de",
-      "count": 591
+      "count": 594
     },
     {
       "domain": "essen.de",
@@ -354,65 +354,65 @@
       "count": 584
     },
     {
+      "domain": "justiz.de",
+      "count": 576
+    },
+    {
       "domain": "brandenburg.de",
       "count": 565
     },
     {
-      "domain": "justiz.de",
-      "count": 551
+      "domain": "dwd.de",
+      "count": 509
+    },
+    {
+      "domain": "deutschland.de",
+      "count": 494
+    },
+    {
+      "domain": "eye-able.com",
+      "count": 492
+    },
+    {
+      "domain": "xing.com",
+      "count": 476
+    },
+    {
+      "domain": "europa.eu",
+      "count": 473
     },
     {
       "domain": "dguv.de",
       "count": 471
     },
     {
-      "domain": "dwd.de",
-      "count": 432
-    },
-    {
-      "domain": "europa.eu",
-      "count": 424
-    },
-    {
-      "domain": "xing.com",
-      "count": 424
-    },
-    {
       "domain": "x.com",
-      "count": 414
-    },
-    {
-      "domain": "deutschland.de",
-      "count": 397
-    },
-    {
-      "domain": "eye-able.com",
-      "count": 395
+      "count": 445
     },
     {
       "domain": "stark-fuer-gerechtigkeit.de",
-      "count": 380
+      "count": 382
     },
     {
       "domain": "tiktok.com",
-      "count": 360
+      "count": 372
     },
     {
       "domain": "justiz-auktion.de",
-      "count": 337
+      "count": 363
     },
     {
-      "domain": "stuttgart.de",
-      "count": 322
+      "domain": "make-it-in-germany.com",
+      "count": 341
     }
   ],
   "relationship_types": {
-    "editorial_link": 11263,
+    "editorial_link": 11182,
     "font_or_preload_dependency": 338,
-    "image_or_media_dependency": 2757,
-    "script_dependency": 2877,
-    "stylesheet_dependency": 2717,
-    "form_destination": 2144
+    "image_or_media_dependency": 2755,
+    "script_dependency": 2873,
+    "stylesheet_dependency": 2714,
+    "form_destination": 2140
   },
-  "generated_at": "2026-09-26T16:40:39.714388+00:00"
+  "generated_at": "2026-09-27T04:39:59.777221+00:00"
 }

@@ -5,7 +5,7 @@
   "top_source_domains": [
     {
       "domain": "krakow.pl",
-      "count": 57725
+      "count": 57761
     },
     {
       "domain": "poznan.pl",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "krakow.pl",
-      "count": 28512
+      "count": 28524
     },
     {
       "domain": "poznan.pl",
@@ -219,11 +219,11 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 17840
+      "count": 17844
     },
     {
       "domain": "facebook.com",
-      "count": 15893
+      "count": 15895
     },
     {
       "domain": "gdansk.pl",
@@ -235,11 +235,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 6219
+      "count": 6221
     },
     {
       "domain": "google.com",
-      "count": 6087
+      "count": 6088
     },
     {
       "domain": "uni.opole.pl",
@@ -247,7 +247,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 6048
+      "count": 6050
     },
     {
       "domain": "ug.edu.pl",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 4427
+      "count": 4429
     },
     {
       "domain": "torun.pl",
@@ -414,5 +414,5 @@
     "stylesheet_dependency": 7648,
     "font_or_preload_dependency": 1835
   },
-  "generated_at": "2026-09-26T16:40:39.173081+00:00"
+  "generated_at": "2026-09-27T04:39:59.466443+00:00"
 }

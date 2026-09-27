@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T21:30:43.377577+00:00",
+  "generated_at": "2026-09-27T04:40:02.677863+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -173,7 +173,7 @@
     {
       "service": "googleapis.com",
       "countries": 32,
-      "domains": 4273
+      "domains": 4272
     },
     {
       "service": "googletagmanager.com",
@@ -188,7 +188,7 @@
     {
       "service": "jsdelivr.net",
       "countries": 32,
-      "domains": 1155
+      "domains": 1154
     },
     {
       "service": "fontawesome.com",
@@ -218,7 +218,7 @@
     {
       "service": "bootstrapcdn.com",
       "countries": 29,
-      "domains": 609
+      "domains": 608
     },
     {
       "service": "typekit.net",
@@ -1396,9 +1396,9 @@
       "country_code": "GERMANY",
       "country": "Germany",
       "service": "googleapis.com",
-      "domains": 17,
+      "domains": 16,
       "scanned_domains": 215,
-      "percent": 7.9
+      "percent": 7.4
     },
     {
       "country_code": "GERMANY",
@@ -1420,9 +1420,9 @@
       "country_code": "GERMANY",
       "country": "Germany",
       "service": "jsdelivr.net",
-      "domains": 17,
+      "domains": 16,
       "scanned_domains": 215,
-      "percent": 7.9
+      "percent": 7.4
     },
     {
       "country_code": "GERMANY",
@@ -1468,9 +1468,9 @@
       "country_code": "GERMANY",
       "country": "Germany",
       "service": "bootstrapcdn.com",
-      "domains": 7,
+      "domains": 6,
       "scanned_domains": 215,
-      "percent": 3.3
+      "percent": 2.8
     },
     {
       "country_code": "GERMANY",
