@@ -184,6 +184,10 @@
       "count": 1011
     },
     {
+      "domain": "valdoise.fr",
+      "count": 958
+    },
+    {
       "domain": "caen.fr",
       "count": 954
     },
@@ -194,10 +198,6 @@
     {
       "domain": "montpellier3m.fr",
       "count": 935
-    },
-    {
-      "domain": "valdoise.fr",
-      "count": 930
     },
     {
       "domain": "lenord.fr",
@@ -219,7 +219,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 7364
+      "count": 7366
     },
     {
       "domain": "skolengo.com",
@@ -235,7 +235,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 4468
+      "count": 4470
     },
     {
       "domain": "data.gouv.fr",
@@ -243,7 +243,7 @@
     },
     {
       "domain": "twitter.com",
-      "count": 4020
+      "count": 4022
     },
     {
       "domain": "googleapis.com",
@@ -251,7 +251,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 3526
+      "count": 3528
     },
     {
       "domain": "legifrance.gouv.fr",
@@ -414,5 +414,5 @@
     "form_destination": 1718,
     "font_or_preload_dependency": 705
   },
-  "generated_at": "2026-09-27T17:17:25.043847+00:00"
+  "generated_at": "2026-09-27T21:04:20.819086+00:00"
 }

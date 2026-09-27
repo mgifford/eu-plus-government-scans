@@ -5,7 +5,7 @@
   "top_source_domains": [
     {
       "domain": "madeira.gov.pt",
-      "count": 3328
+      "count": 3340
     },
     {
       "domain": "justica.gov.pt",
@@ -164,12 +164,12 @@
       "count": 541
     },
     {
-      "domain": "cm-aveiro.pt",
-      "count": 536
+      "domain": "cm-tavira.pt",
+      "count": 539
     },
     {
-      "domain": "cm-tavira.pt",
-      "count": 517
+      "domain": "cm-aveiro.pt",
+      "count": 536
     },
     {
       "domain": "cm-monchique.pt",
@@ -207,23 +207,23 @@
   "top_target_domains": [
     {
       "domain": "googleapis.com",
-      "count": 3310
+      "count": 3311
     },
     {
       "domain": "facebook.com",
-      "count": 3097
+      "count": 3098
     },
     {
       "domain": "youtube.com",
-      "count": 2484
+      "count": 2485
     },
     {
       "domain": "instagram.com",
-      "count": 2410
+      "count": 2411
     },
     {
       "domain": "googletagmanager.com",
-      "count": 2162
+      "count": 2163
     },
     {
       "domain": "google.com",
@@ -231,7 +231,7 @@
     },
     {
       "domain": "madeira.gov.pt",
-      "count": 1764
+      "count": 1776
     },
     {
       "domain": "azores.gov.pt",
@@ -275,7 +275,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 833
+      "count": 834
     },
     {
       "domain": "linkedin.com",
@@ -287,7 +287,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 702
+      "count": 703
     },
     {
       "domain": "anmp.pt",
@@ -366,12 +366,12 @@
       "count": 332
     },
     {
-      "domain": "cm-estarreja.pt",
+      "domain": "portugal2020.pt",
       "count": 330
     },
     {
-      "domain": "portugal2020.pt",
-      "count": 329
+      "domain": "cm-estarreja.pt",
+      "count": 330
     },
     {
       "domain": "cm-gondomar.pt",
@@ -414,5 +414,5 @@
     "form_destination": 752,
     "image_or_media_dependency": 1132
   },
-  "generated_at": "2026-09-27T17:17:24.746605+00:00"
+  "generated_at": "2026-09-27T21:04:19.811766+00:00"
 }
