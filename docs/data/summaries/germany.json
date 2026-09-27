@@ -1,6 +1,6 @@
 {
   "country_code": "GERMANY",
-  "total_relationships": 22004,
+  "total_relationships": 22003,
   "total_source_domains": 224,
   "top_source_domains": [
     {
@@ -13,7 +13,7 @@
     },
     {
       "domain": "bayern.de",
-      "count": 31293
+      "count": 31395
     },
     {
       "domain": "niedersachsen.de",
@@ -219,7 +219,7 @@
     },
     {
       "domain": "bayern.de",
-      "count": 19903
+      "count": 19963
     },
     {
       "domain": "nrw.de",
@@ -243,15 +243,15 @@
     },
     {
       "domain": "facebook.com",
-      "count": 4956
+      "count": 4959
     },
     {
       "domain": "instagram.com",
-      "count": 4723
+      "count": 4727
     },
     {
       "domain": "twitter.com",
-      "count": 3266
+      "count": 3267
     },
     {
       "domain": "bund.de",
@@ -263,7 +263,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 2976
+      "count": 2980
     },
     {
       "domain": "thueringen.de",
@@ -271,7 +271,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 2353
+      "count": 2354
     },
     {
       "domain": "baden-wuerttemberg.de",
@@ -331,7 +331,7 @@
     },
     {
       "domain": "google.com",
-      "count": 755
+      "count": 756
     },
     {
       "domain": "wordpress.org",
@@ -379,7 +379,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 496
+      "count": 497
     },
     {
       "domain": "x.com",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 11181,
+    "editorial_link": 11180,
     "font_or_preload_dependency": 338,
     "image_or_media_dependency": 2756,
     "script_dependency": 2874,
     "stylesheet_dependency": 2715,
     "form_destination": 2140
   },
-  "generated_at": "2026-09-27T17:17:23.627333+00:00"
+  "generated_at": "2026-09-27T21:04:20.551276+00:00"
 }
