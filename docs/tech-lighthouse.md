@@ -5,10 +5,10 @@ layout: page
 
 <!-- TECH_LIGHTHOUSE_STATS_START -->
 
-_Generated: 2026-09-27 09:02 UTC_
+_Generated: 2026-09-27 12:46 UTC_
 
-**29,982** URLs with both technology detection and Lighthouse scores
-out of **73,451** technology-detected URLs and **32,903** Lighthouse-audited URLs
+**29,983** URLs with both technology detection and Lighthouse scores
+out of **73,473** technology-detected URLs and **32,903** Lighthouse-audited URLs
 
 ---
 
@@ -18,11 +18,11 @@ Average Google Lighthouse scores (0–100) for pages where each technology was d
 
 | # | Technology | Pages | Countries | Perf | A11y | Best Prac | SEO |
 |--:|-----------|------:|----------:|-----:|-----:|----------:|----:|
-| 1 | jQuery | **17,582** | 32 | 88 | 89 | 90 | 88 |
+| 1 | jQuery | **17,585** | 32 | 88 | 89 | 90 | 88 |
 | 2 | PHP | **10,184** | 32 | 89 | 90 | 91 | 90 |
-| 3 | Apache | **8,326** | 32 | 87 | 84 | 89 | 87 |
-| 4 | Bootstrap | **8,321** | 32 | 88 | 89 | 91 | 88 |
-| 5 | Font Awesome | **7,854** | 32 | 87 | 89 | 89 | 89 |
+| 3 | Apache | **8,329** | 32 | 87 | 84 | 89 | 87 |
+| 4 | Bootstrap | **8,322** | 32 | 88 | 89 | 91 | 88 |
+| 5 | Font Awesome | **7,852** | 32 | 87 | 89 | 89 | 89 |
 | 6 | Google Tag Manager | **6,782** | 32 | 87 | 90 | 89 | 89 |
 | 7 | Google Font API | **6,407** | 32 | 87 | 88 | 89 | 89 |
 | 8 | MySQL | **5,828** | 32 | 88 | 89 | 91 | 90 |
@@ -32,7 +32,7 @@ Average Google Lighthouse scores (0–100) for pages where each technology was d
 | 12 | Windows Server | **3,727** | 32 | 89 | 87 | 89 | 86 |
 | 13 | IIS | **3,667** | 32 | 89 | 87 | 89 | 86 |
 | 14 | Microsoft ASP.NET | **3,143** | 32 | 89 | 87 | 88 | 87 |
-| 15 | jQuery UI | **3,088** | 32 | 88 | 88 | 88 | 87 |
+| 15 | jQuery UI | **3,086** | 32 | 88 | 88 | 88 | 87 |
 | 16 | Cloudflare | **2,957** | 32 | 90 | 89 | 84 | 83 |
 | 17 | jsDelivr | **2,326** | 32 | 88 | 89 | 90 | 88 |
 | 18 | Drupal | **2,319** | 28 | 88 | 93 | 92 | 92 |
@@ -41,7 +41,7 @@ Average Google Lighthouse scores (0–100) for pages where each technology was d
 | 21 | Java | **1,670** | 28 | 86 | 94 | 93 | 89 |
 | 22 | Lightbox | **1,665** | 32 | 87 | 88 | 89 | 88 |
 | 23 | Slick | **1,662** | 30 | 83 | 88 | 91 | 88 |
-| 24 | Modernizr | **1,538** | 30 | 88 | 88 | 89 | 89 |
+| 24 | Modernizr | **1,536** | 30 | 88 | 88 | 89 | 89 |
 | 25 | Elementor | **1,265** | 27 | 86 | 88 | 86 | 88 |
 | 26 | Adobe Experience Manager | **1,199** | 9 | 84 | 98 | 96 | 91 |
 | 27 | Ubuntu | **1,103** | 28 | 91 | 88 | 94 | 87 |
