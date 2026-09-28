@@ -1,5 +1,5 @@
 ﻿country_code,country,service,domains_depending,scanned_domains,percent
-UNITED_KINGDOM_UK,United Kingdom,googleapis.com,1372,3145,43.6
+UNITED_KINGDOM_UK,United Kingdom,googleapis.com,1371,3145,43.6
 UNITED_KINGDOM_UK,United Kingdom,googletagmanager.com,1259,3145,40.0
 UNITED_KINGDOM_UK,United Kingdom,gstatic.com,578,3145,18.4
 UNITED_KINGDOM_UK,United Kingdom,jsdelivr.net,427,3145,13.6
@@ -8,7 +8,7 @@ UNITED_KINGDOM_UK,United Kingdom,google.com,1117,3145,35.5
 UNITED_KINGDOM_UK,United Kingdom,cloudflare.com,744,3145,23.7
 UNITED_KINGDOM_UK,United Kingdom,jquery.com,183,3145,5.8
 UNITED_KINGDOM_UK,United Kingdom,unpkg.com,344,3145,10.9
-UNITED_KINGDOM_UK,United Kingdom,bootstrapcdn.com,164,3145,5.2
+UNITED_KINGDOM_UK,United Kingdom,bootstrapcdn.com,163,3145,5.2
 UNITED_KINGDOM_UK,United Kingdom,typekit.net,147,3145,4.7
 UNITED_KINGDOM_UK,United Kingdom,cookiebot.com,57,3145,1.8
 UNITED_KINGDOM_UK,United Kingdom,facebook.com,24,3145,0.8
