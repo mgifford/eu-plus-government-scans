@@ -41,7 +41,7 @@
     },
     {
       "domain": "defense.gouv.fr",
-      "count": 2775
+      "count": 2795
     },
     {
       "domain": "loire-atlantique.fr",
@@ -219,7 +219,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 7366
+      "count": 7367
     },
     {
       "domain": "skolengo.com",
@@ -235,11 +235,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 4470
+      "count": 4471
     },
     {
       "domain": "data.gouv.fr",
-      "count": 4164
+      "count": 4165
     },
     {
       "domain": "twitter.com",
@@ -247,7 +247,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 3579
+      "count": 3581
     },
     {
       "domain": "youtube.com",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "legifrance.gouv.fr",
-      "count": 3491
+      "count": 3492
     },
     {
       "domain": "developpement-durable.gouv.fr",
@@ -263,11 +263,11 @@
     },
     {
       "domain": "github.com",
-      "count": 2754
+      "count": 2755
     },
     {
       "domain": "info.gouv.fr",
-      "count": 2173
+      "count": 2174
     },
     {
       "domain": "ac-grenoble.fr",
@@ -283,7 +283,7 @@
     },
     {
       "domain": "service-public.fr",
-      "count": 1983
+      "count": 1984
     },
     {
       "domain": "beta.gouv.fr",
@@ -307,7 +307,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 1574
+      "count": 1576
     },
     {
       "domain": "numerique.gouv.fr",
@@ -331,7 +331,7 @@
     },
     {
       "domain": "defense.gouv.fr",
-      "count": 1349
+      "count": 1355
     },
     {
       "domain": "x.com",
@@ -367,7 +367,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 948
+      "count": 949
     },
     {
       "domain": "puy-de-dome.fr",
@@ -414,5 +414,5 @@
     "form_destination": 1718,
     "font_or_preload_dependency": 705
   },
-  "generated_at": "2026-09-27T21:04:20.819086+00:00"
+  "generated_at": "2026-09-28T04:35:30.776184+00:00"
 }

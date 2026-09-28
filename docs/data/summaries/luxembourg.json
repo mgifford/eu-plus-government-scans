@@ -1,6 +1,6 @@
 {
   "country_code": "LUXEMBOURG",
-  "total_relationships": 2042,
+  "total_relationships": 2072,
   "total_source_domains": 40,
   "top_source_domains": [
     {
@@ -9,7 +9,7 @@
     },
     {
       "domain": "public.lu",
-      "count": 4046
+      "count": 4516
     },
     {
       "domain": "uni.lu",
@@ -167,35 +167,35 @@
   "top_target_domains": [
     {
       "domain": "public.lu",
-      "count": 4502
+      "count": 4816
     },
     {
       "domain": "gouvernement.lu",
-      "count": 2845
+      "count": 2848
     },
     {
       "domain": "facebook.com",
-      "count": 679
+      "count": 702
+    },
+    {
+      "domain": "linkedin.com",
+      "count": 635
     },
     {
       "domain": "uni.lu",
       "count": 627
     },
     {
-      "domain": "linkedin.com",
-      "count": 615
-    },
-    {
       "domain": "twitter.com",
-      "count": 479
+      "count": 484
     },
     {
       "domain": "bsky.app",
-      "count": 393
+      "count": 396
     },
     {
       "domain": "instagram.com",
-      "count": 343
+      "count": 365
     },
     {
       "domain": "etat.lu",
@@ -203,19 +203,19 @@
     },
     {
       "domain": "youtube.com",
-      "count": 225
+      "count": 240
+    },
+    {
+      "domain": "adobedtm.com",
+      "count": 219
     },
     {
       "domain": "europa.eu",
-      "count": 194
+      "count": 204
     },
     {
       "domain": "googleapis.com",
       "count": 186
-    },
-    {
-      "domain": "adobedtm.com",
-      "count": 183
     },
     {
       "domain": "esch.lu",
@@ -367,12 +367,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 1158,
-    "form_destination": 156,
-    "image_or_media_dependency": 193,
-    "script_dependency": 274,
-    "stylesheet_dependency": 232,
+    "editorial_link": 1160,
+    "form_destination": 163,
+    "image_or_media_dependency": 200,
+    "script_dependency": 281,
+    "stylesheet_dependency": 239,
     "font_or_preload_dependency": 29
   },
-  "generated_at": "2026-09-27T21:04:20.988551+00:00"
+  "generated_at": "2026-09-28T04:35:30.925748+00:00"
 }
