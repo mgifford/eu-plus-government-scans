@@ -69,7 +69,7 @@
     },
     {
       "domain": "giustizia.it",
-      "count": 22752
+      "count": 23151
     },
     {
       "domain": "diplo.de",
@@ -93,11 +93,11 @@
     },
     {
       "domain": "cultura.gov.it",
-      "count": 12575
+      "count": 12600
     },
     {
       "domain": "hessen.de",
-      "count": 12223
+      "count": 12241
     },
     {
       "domain": "steiermark.at",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 76749
+      "count": 76774
     },
     {
       "domain": "sachsen.de",
@@ -215,7 +215,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 61387
+      "count": 61391
     },
     {
       "domain": "ethz.ch",
@@ -227,19 +227,19 @@
     },
     {
       "domain": "instagram.com",
-      "count": 45412
+      "count": 45413
     },
     {
       "domain": "youtube.com",
-      "count": 43094
+      "count": 43114
     },
     {
       "domain": "twitter.com",
-      "count": 36549
+      "count": 36573
     },
     {
       "domain": "google.com",
-      "count": 34814
+      "count": 34815
     },
     {
       "domain": "linkedin.com",
@@ -251,7 +251,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 28912
+      "count": 28917
     },
     {
       "domain": "krakow.pl",
@@ -287,7 +287,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 18139
+      "count": 18140
     },
     {
       "domain": "esteri.it",
@@ -295,7 +295,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 15971
+      "count": 15972
     },
     {
       "domain": "nrw.de",
@@ -315,7 +315,7 @@
     },
     {
       "domain": "giustizia.it",
-      "count": 11895
+      "count": 12106
     },
     {
       "domain": "admin.ch",
@@ -323,7 +323,7 @@
     },
     {
       "domain": "hessen.de",
-      "count": 9417
+      "count": 9435
     },
     {
       "domain": "hamburg.de",
@@ -371,7 +371,7 @@
     },
     {
       "domain": "jquery.com",
-      "count": 6890
+      "count": 6891
     },
     {
       "domain": "gdansk.pl",
@@ -398,12 +398,12 @@
       "count": 5861
     },
     {
-      "domain": "skolengo.com",
-      "count": 5754
+      "domain": "cultura.gov.it",
+      "count": 5763
     },
     {
-      "domain": "cultura.gov.it",
-      "count": 5751
+      "domain": "skolengo.com",
+      "count": 5754
     }
   ],
   "relationship_types": {
@@ -414,5 +414,5 @@
     "stylesheet_dependency": 40361,
     "font_or_preload_dependency": 8409
   },
-  "generated_at": "2026-09-28T04:35:30.060412+00:00"
+  "generated_at": "2026-09-28T13:09:24.718223+00:00"
 }

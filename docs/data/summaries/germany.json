@@ -33,7 +33,7 @@
     },
     {
       "domain": "hessen.de",
-      "count": 12223
+      "count": 12241
     },
     {
       "domain": "sachsen-anhalt.de",
@@ -61,7 +61,7 @@
     },
     {
       "domain": "duesseldorf.de",
-      "count": 1356
+      "count": 1370
     },
     {
       "domain": "muenchen.de",
@@ -227,7 +227,7 @@
     },
     {
       "domain": "hessen.de",
-      "count": 9417
+      "count": 9435
     },
     {
       "domain": "hamburg.de",
@@ -291,7 +291,7 @@
     },
     {
       "domain": "etracker.com",
-      "count": 1328
+      "count": 1330
     },
     {
       "domain": "readspeaker.com",
@@ -322,12 +322,12 @@
       "count": 816
     },
     {
-      "domain": "justiz-karriere.nrw",
-      "count": 774
+      "domain": "duesseldorf.de",
+      "count": 780
     },
     {
-      "domain": "duesseldorf.de",
-      "count": 768
+      "domain": "justiz-karriere.nrw",
+      "count": 774
     },
     {
       "domain": "google.com",
@@ -414,5 +414,5 @@
     "stylesheet_dependency": 2715,
     "form_destination": 2140
   },
-  "generated_at": "2026-09-28T04:35:30.534603+00:00"
+  "generated_at": "2026-09-28T13:09:26.262221+00:00"
 }

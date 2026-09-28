@@ -9,11 +9,11 @@
     },
     {
       "domain": "giustizia.it",
-      "count": 22752
+      "count": 23151
     },
     {
       "domain": "cultura.gov.it",
-      "count": 12575
+      "count": 12600
     },
     {
       "domain": "regione.lombardia.it",
@@ -211,31 +211,31 @@
     },
     {
       "domain": "giustizia.it",
-      "count": 11895
+      "count": 12106
     },
     {
       "domain": "facebook.com",
-      "count": 7002
+      "count": 7027
     },
     {
       "domain": "cultura.gov.it",
-      "count": 5751
+      "count": 5763
     },
     {
       "domain": "twitter.com",
-      "count": 5665
+      "count": 5689
     },
     {
       "domain": "youtube.com",
-      "count": 5540
+      "count": 5560
     },
     {
       "domain": "agid.gov.it",
-      "count": 4446
+      "count": 4447
     },
     {
       "domain": "instagram.com",
-      "count": 4329
+      "count": 4330
     },
     {
       "domain": "governo.it",
@@ -263,7 +263,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 1991
+      "count": 1994
     },
     {
       "domain": "whatsapp.com",
@@ -307,11 +307,11 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 1091
+      "count": 1096
     },
     {
       "domain": "csm.it",
-      "count": 1057
+      "count": 1075
     },
     {
       "domain": "camera.it",
@@ -323,7 +323,7 @@
     },
     {
       "domain": "google.com",
-      "count": 1014
+      "count": 1015
     },
     {
       "domain": "mef.gov.it",
@@ -339,7 +339,7 @@
     },
     {
       "domain": "regione.toscana.it",
-      "count": 841
+      "count": 842
     },
     {
       "domain": "municipiumapp.it",
@@ -374,12 +374,12 @@
       "count": 615
     },
     {
-      "domain": "t.me",
-      "count": 573
+      "domain": "scuolamagistratura.it",
+      "count": 583
     },
     {
-      "domain": "scuolamagistratura.it",
-      "count": 572
+      "domain": "t.me",
+      "count": 573
     },
     {
       "domain": "italea.com",
@@ -395,11 +395,11 @@
     },
     {
       "domain": "quirinale.it",
-      "count": 480
+      "count": 486
     },
     {
       "domain": "cortedicassazione.it",
-      "count": 480
+      "count": 486
     },
     {
       "domain": "spreaker.com",
@@ -414,5 +414,5 @@
     "form_destination": 1454,
     "font_or_preload_dependency": 253
   },
-  "generated_at": "2026-09-28T04:35:29.605924+00:00"
+  "generated_at": "2026-09-28T13:09:24.188973+00:00"
 }
