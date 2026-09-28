@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-09-28 14:28 UTC — last scan: 2026-09-28_
+_Stats as of 2026-09-28 17:33 UTC — last scan: 2026-09-28_
 
-**297** scan batches run
+**298** scan batches run
 
 **87,690** of **87,696** available pages scanned (**100.0%** coverage)
-**79,651** of **87,690** scanned pages were reachable (**90.8%**)
-**37,270** reachable pages loaded at least one third-party script (**46.8%** of reachable)
-**46,708** known third-party service loads identified
+**79,661** of **87,690** scanned pages were reachable (**90.8%**)
+**37,280** reachable pages loaded at least one third-party script (**46.8%** of reachable)
+**46,715** known third-party service loads identified
 **26** unique known services across **17** categories
 
 ---
@@ -43,7 +43,7 @@ _Stats as of 2026-09-28 14:28 UTC — last scan: 2026-09-28_
 | Malta | 610 | 610 | 595 | 467 | 1,278 | 78.5 | 214.8 | 2026-09-26 |
 | Netherlands | 945 | 945 | 903 | 361 | 269 | 40.0 | 29.8 | 2026-09-27 |
 | Norway | 249 | 249 | 243 | 137 | 108 | 56.4 | 44.4 | 2026-09-26 |
-| Poland | 14,951 | 14,951 | 13,463 | 6,934 | 9,830 | 51.5 | 73.0 | 2026-09-23 |
+| Poland | 14,951 | 14,951 | 13,473 | 6,944 | 9,837 | 51.5 | 73.0 | 2026-09-28 |
 | Portugal | 3,508 | 3,508 | 2,825 | 1,101 | 1,916 | 39.0 | 67.8 | 2026-09-23 |
 | Cyprus | 29 | 29 | 29 | 13 | 15 | 44.8 | 51.7 | 2026-09-26 |
 | Romania | 807 | 807 | 349 | 256 | 264 | 73.4 | 75.6 | 2026-09-27 |
@@ -62,14 +62,14 @@ _Stats as of 2026-09-28 14:28 UTC — last scan: 2026-09-28_
 
 | # | Service | Loads |
 |--:|---------|------:|
-| 1 | Google Analytics (GA4) | **8,483** |
+| 1 | Google Analytics (GA4) | **8,485** |
 | 2 | cdnjs (Cloudflare CDN) | **7,570** |
-| 3 | jsDelivr CDN | **6,921** |
+| 3 | jsDelivr CDN | **6,923** |
 | 4 | Google reCAPTCHA | **4,812** |
-| 5 | Google Tag Manager | **4,081** |
-| 6 | Google Hosted Libraries | **3,228** |
-| 7 | unpkg CDN | **2,868** |
-| 8 | jQuery | **2,758** |
+| 5 | Google Tag Manager | **4,080** |
+| 6 | Google Hosted Libraries | **3,225** |
+| 7 | unpkg CDN | **2,869** |
+| 8 | jQuery | **2,759** |
 | 9 | Font Awesome | **1,929** |
 | 10 | Bootstrap | **951** |
 | 11 | Cookiebot | **808** |
@@ -78,7 +78,7 @@ _Stats as of 2026-09-28 14:28 UTC — last scan: 2026-09-28_
 | 14 | CookieInformation | **330** |
 | 15 | OneTrust | **290** |
 | 16 | Sentry | **225** |
-| 17 | Cloudflare Turnstile / Challenge | **196** |
+| 17 | Cloudflare Turnstile / Challenge | **201** |
 | 18 | Google Analytics (Universal) | **83** |
 | 19 | Usercentrics | **60** |
 | 20 | Matomo Cloud | **48** |
@@ -87,14 +87,14 @@ _Stats as of 2026-09-28 14:28 UTC — last scan: 2026-09-28_
 
 | # | Service | Reachable Pages | Prevalence of Reachable Pages |
 |--:|---------|----------------:|------------------------------:|
-| 1 | Google Analytics (GA4) | **8,253** | **44.7%** |
-| 2 | jsDelivr CDN | **4,588** | **24.8%** |
+| 1 | Google Analytics (GA4) | **8,255** | **44.7%** |
+| 2 | jsDelivr CDN | **4,590** | **24.8%** |
 | 3 | Google reCAPTCHA | **4,532** | **24.5%** |
 | 4 | cdnjs (Cloudflare CDN) | **3,976** | **21.5%** |
-| 5 | Google Tag Manager | **3,888** | **21.0%** |
-| 6 | Google Hosted Libraries | **2,905** | **15.7%** |
-| 7 | unpkg CDN | **2,240** | **12.1%** |
-| 8 | jQuery | **2,178** | **11.8%** |
+| 5 | Google Tag Manager | **3,887** | **21.0%** |
+| 6 | Google Hosted Libraries | **2,902** | **15.7%** |
+| 7 | unpkg CDN | **2,241** | **12.1%** |
+| 8 | jQuery | **2,179** | **11.8%** |
 | 9 | Font Awesome | **1,516** | **8.2%** |
 | 10 | Bootstrap | **944** | **5.1%** |
 | 11 | Cookiebot | **788** | **4.3%** |
@@ -103,7 +103,7 @@ _Stats as of 2026-09-28 14:28 UTC — last scan: 2026-09-28_
 | 14 | CookieInformation | **330** | **1.8%** |
 | 15 | OneTrust | **216** | **1.2%** |
 | 16 | Sentry | **212** | **1.1%** |
-| 17 | Cloudflare Turnstile / Challenge | **196** | **1.1%** |
+| 17 | Cloudflare Turnstile / Challenge | **201** | **1.1%** |
 | 18 | Google Analytics (Universal) | **82** | **0.4%** |
 | 19 | Usercentrics | **60** | **0.3%** |
 | 20 | Matomo Cloud | **48** | **0.3%** |
@@ -113,11 +113,11 @@ _Stats as of 2026-09-28 14:28 UTC — last scan: 2026-09-28_
 | # | Category | Loads |
 |--:|----------|------:|
 | 1 | CDN | **20,587** |
-| 2 | Analytics | **9,593** |
-| 3 | JavaScript Library | **5,986** |
-| 4 | Security | **5,008** |
+| 2 | Analytics | **9,595** |
+| 3 | JavaScript Library | **5,984** |
+| 4 | Security | **5,013** |
 | 5 | CAPTCHA | **4,812** |
-| 6 | Tag Manager | **4,578** |
+| 6 | Tag Manager | **4,577** |
 | 7 | Icon Library | **1,929** |
 | 8 | Cookie Consent | **1,488** |
 | 9 | UI Framework | **951** |
@@ -135,7 +135,7 @@ Infrastructure-heavy categories (CDNs, core libraries, and UI assets):
 | # | Infrastructure Category | Loads |
 |--:|--------------------------|------:|
 | 1 | CDN | **20,587** |
-| 2 | JavaScript Library | **5,986** |
+| 2 | JavaScript Library | **5,984** |
 | 3 | Icon Library | **1,929** |
 | 4 | UI Framework | **951** |
 
@@ -143,10 +143,10 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 
 | # | Policy-Relevant Category | Loads |
 |--:|--------------------------|------:|
-| 1 | Analytics | **9,593** |
-| 2 | Security | **5,008** |
+| 1 | Analytics | **9,595** |
+| 2 | Security | **5,013** |
 | 3 | CAPTCHA | **4,812** |
-| 4 | Tag Manager | **4,578** |
+| 4 | Tag Manager | **4,577** |
 | 5 | Cookie Consent | **1,488** |
 | 6 | Advertising | **461** |
 | 7 | Error Tracking | **225** |
@@ -174,7 +174,7 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 | 11 | `static.addtoany.com` | **854** | **837** |
 | 12 | `dksxg5o1pn16c.cloudfront.net` | **762** | **56** |
 | 13 | `d2m1owqtx0c1qg.cloudfront.net` | **762** | **396** |
-| 14 | `cdn-cookieyes.com` | **753** | **749** |
+| 14 | `cdn-cookieyes.com` | **752** | **748** |
 | 15 | `cdn.xl.pt` | **709** | **13** |
 
 > These hosts were seen as third-party script sources but did not match a known service signature. Review this queue regularly and promote stable, policy-relevant hosts into the signature list.
