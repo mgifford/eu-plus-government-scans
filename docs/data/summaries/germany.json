@@ -1,6 +1,6 @@
 {
   "country_code": "GERMANY",
-  "total_relationships": 22003,
+  "total_relationships": 22002,
   "total_source_domains": 224,
   "top_source_domains": [
     {
@@ -9,11 +9,11 @@
     },
     {
       "domain": "rlp.de",
-      "count": 32037
+      "count": 32055
     },
     {
       "domain": "bayern.de",
-      "count": 31395
+      "count": 31756
     },
     {
       "domain": "niedersachsen.de",
@@ -215,11 +215,11 @@
     },
     {
       "domain": "rlp.de",
-      "count": 25482
+      "count": 25500
     },
     {
       "domain": "bayern.de",
-      "count": 19963
+      "count": 20158
     },
     {
       "domain": "nrw.de",
@@ -243,15 +243,15 @@
     },
     {
       "domain": "facebook.com",
-      "count": 4959
+      "count": 4970
     },
     {
       "domain": "instagram.com",
-      "count": 4727
+      "count": 4738
     },
     {
       "domain": "twitter.com",
-      "count": 3267
+      "count": 3268
     },
     {
       "domain": "bund.de",
@@ -263,7 +263,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 2980
+      "count": 2991
     },
     {
       "domain": "thueringen.de",
@@ -271,7 +271,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 2354
+      "count": 2355
     },
     {
       "domain": "baden-wuerttemberg.de",
@@ -295,7 +295,7 @@
     },
     {
       "domain": "readspeaker.com",
-      "count": 1219
+      "count": 1226
     },
     {
       "domain": "zvg-portal.de",
@@ -331,7 +331,7 @@
     },
     {
       "domain": "google.com",
-      "count": 756
+      "count": 757
     },
     {
       "domain": "wordpress.org",
@@ -366,11 +366,11 @@
       "count": 566
     },
     {
-      "domain": "dwd.de",
-      "count": 547
+      "domain": "eye-able.com",
+      "count": 549
     },
     {
-      "domain": "eye-able.com",
+      "domain": "dwd.de",
       "count": 547
     },
     {
@@ -379,7 +379,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 497
+      "count": 498
     },
     {
       "domain": "x.com",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 11180,
+    "editorial_link": 11179,
     "font_or_preload_dependency": 338,
     "image_or_media_dependency": 2756,
     "script_dependency": 2874,
     "stylesheet_dependency": 2715,
     "form_destination": 2140
   },
-  "generated_at": "2026-09-27T21:04:20.551276+00:00"
+  "generated_at": "2026-09-28T04:35:30.534603+00:00"
 }

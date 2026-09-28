@@ -65,8 +65,8 @@
   "LATVIA": {
     "total_urls": 803,
     "attempted": 803,
-    "successful": 755,
-    "failed": 48,
+    "successful": 756,
+    "failed": 47,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 0
@@ -95,8 +95,8 @@
   "SPAIN": {
     "total_urls": 6091,
     "attempted": 6091,
-    "successful": 5087,
-    "failed": 1004,
+    "successful": 5082,
+    "failed": 1009,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 0
@@ -146,14 +146,8 @@
     "never_scanned": 0,
     "stale_31d": 0
   },
-  "PORTUGAL": {
-    "total_urls": 3508,
-    "attempted": 3508,
-    "successful": 3133,
-    "failed": 375,
-    "skipped": 0,
-    "never_scanned": 0,
-    "stale_31d": 0
+  "UNITED_KINGDOM_UK": {
+    "error": "TOON file not found"
   },
   "SLOVAKIA": {
     "total_urls": 442,
@@ -173,8 +167,14 @@
     "never_scanned": 0,
     "stale_31d": 0
   },
-  "UNITED_KINGDOM_UK": {
-    "error": "TOON file not found"
+  "PORTUGAL": {
+    "total_urls": 3508,
+    "attempted": 3508,
+    "successful": 3122,
+    "failed": 386,
+    "skipped": 0,
+    "never_scanned": 0,
+    "stale_31d": 0
   },
   "SLOVENIA": {
     "total_urls": 214,
@@ -197,8 +197,8 @@
   "GERMANY": {
     "total_urls": 6599,
     "attempted": 6599,
-    "successful": 6408,
-    "failed": 191,
+    "successful": 6428,
+    "failed": 171,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 0
@@ -224,8 +224,8 @@
   "FRANCE": {
     "total_urls": 10009,
     "attempted": 10009,
-    "successful": 9264,
-    "failed": 745,
+    "successful": 9267,
+    "failed": 742,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 0
@@ -242,8 +242,8 @@
   "LUXEMBOURG": {
     "total_urls": 573,
     "attempted": 573,
-    "successful": 467,
-    "failed": 106,
+    "successful": 463,
+    "failed": 110,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 0
