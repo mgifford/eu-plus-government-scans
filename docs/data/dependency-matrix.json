@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T13:09:29.966844+00:00",
+  "generated_at": "2026-09-28T23:47:28.746156+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -173,7 +173,7 @@
     {
       "service": "googleapis.com",
       "countries": 32,
-      "domains": 4272
+      "domains": 4271
     },
     {
       "service": "googletagmanager.com",
@@ -218,7 +218,7 @@
     {
       "service": "bootstrapcdn.com",
       "countries": 29,
-      "domains": 608
+      "domains": 607
     },
     {
       "service": "typekit.net",
@@ -276,7 +276,7 @@
       "country_code": "UNITED_KINGDOM_UK",
       "country": "United Kingdom",
       "service": "googleapis.com",
-      "domains": 1372,
+      "domains": 1371,
       "scanned_domains": 3145,
       "percent": 43.6
     },
@@ -348,7 +348,7 @@
       "country_code": "UNITED_KINGDOM_UK",
       "country": "United Kingdom",
       "service": "bootstrapcdn.com",
-      "domains": 164,
+      "domains": 163,
       "scanned_domains": 3145,
       "percent": 5.2
     },
