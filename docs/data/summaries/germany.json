@@ -1,6 +1,6 @@
 {
   "country_code": "GERMANY",
-  "total_relationships": 22002,
+  "total_relationships": 22001,
   "total_source_domains": 224,
   "top_source_domains": [
     {
@@ -9,11 +9,11 @@
     },
     {
       "domain": "rlp.de",
-      "count": 32055
+      "count": 32544
     },
     {
       "domain": "bayern.de",
-      "count": 31756
+      "count": 31923
     },
     {
       "domain": "niedersachsen.de",
@@ -25,7 +25,7 @@
     },
     {
       "domain": "diplo.de",
-      "count": 16609
+      "count": 16621
     },
     {
       "domain": "hamburg.de",
@@ -215,15 +215,15 @@
     },
     {
       "domain": "rlp.de",
-      "count": 25500
+      "count": 25948
     },
     {
       "domain": "bayern.de",
-      "count": 20158
+      "count": 20268
     },
     {
       "domain": "nrw.de",
-      "count": 15721
+      "count": 15723
     },
     {
       "domain": "hessen.de",
@@ -235,7 +235,7 @@
     },
     {
       "domain": "diplo.de",
-      "count": 7905
+      "count": 7911
     },
     {
       "domain": "sachsen-anhalt.de",
@@ -243,15 +243,15 @@
     },
     {
       "domain": "facebook.com",
-      "count": 4970
+      "count": 4975
     },
     {
       "domain": "instagram.com",
-      "count": 4738
+      "count": 4744
     },
     {
       "domain": "twitter.com",
-      "count": 3268
+      "count": 3270
     },
     {
       "domain": "bund.de",
@@ -263,7 +263,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 2991
+      "count": 3000
     },
     {
       "domain": "thueringen.de",
@@ -271,7 +271,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 2355
+      "count": 2360
     },
     {
       "domain": "baden-wuerttemberg.de",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "auswaertiges-amt.de",
-      "count": 2056
+      "count": 2058
     },
     {
       "domain": "justiz.nrw",
@@ -295,7 +295,7 @@
     },
     {
       "domain": "readspeaker.com",
-      "count": 1226
+      "count": 1228
     },
     {
       "domain": "zvg-portal.de",
@@ -331,7 +331,7 @@
     },
     {
       "domain": "google.com",
-      "count": 757
+      "count": 758
     },
     {
       "domain": "wordpress.org",
@@ -374,16 +374,16 @@
       "count": 547
     },
     {
+      "domain": "europa.eu",
+      "count": 499
+    },
+    {
       "domain": "xing.com",
       "count": 499
     },
     {
-      "domain": "europa.eu",
-      "count": 498
-    },
-    {
       "domain": "x.com",
-      "count": 480
+      "count": 481
     },
     {
       "domain": "dguv.de",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 11179,
+    "editorial_link": 11178,
     "font_or_preload_dependency": 338,
     "image_or_media_dependency": 2756,
     "script_dependency": 2874,
     "stylesheet_dependency": 2715,
     "form_destination": 2140
   },
-  "generated_at": "2026-09-28T13:09:26.262221+00:00"
+  "generated_at": "2026-09-29T04:50:41.795636+00:00"
 }

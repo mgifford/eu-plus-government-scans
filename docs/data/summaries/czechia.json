@@ -108,6 +108,10 @@
       "count": 117
     },
     {
+      "domain": "mpsv.gov.cz",
+      "count": 110
+    },
+    {
       "domain": "vlada.cz",
       "count": 99
     },
@@ -118,10 +122,6 @@
     {
       "domain": "vlada.gov.cz",
       "count": 96
-    },
-    {
-      "domain": "mpsv.gov.cz",
-      "count": 93
     },
     {
       "domain": "msmt.gov.cz",
@@ -223,23 +223,23 @@
     },
     {
       "domain": "facebook.com",
-      "count": 556
+      "count": 557
     },
     {
       "domain": "plzensky-kraj.cz",
       "count": 310
     },
     {
+      "domain": "instagram.com",
+      "count": 288
+    },
+    {
       "domain": "kraj-lbc.cz",
       "count": 288
     },
     {
-      "domain": "instagram.com",
-      "count": 287
-    },
-    {
       "domain": "mpsv.cz",
-      "count": 269
+      "count": 271
     },
     {
       "domain": "twitter.com",
@@ -259,7 +259,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 239
+      "count": 240
     },
     {
       "domain": "mzp.cz",
@@ -391,7 +391,7 @@
     },
     {
       "domain": "x.com",
-      "count": 60
+      "count": 61
     },
     {
       "domain": "chmi.cz",
@@ -414,5 +414,5 @@
     "image_or_media_dependency": 235,
     "font_or_preload_dependency": 59
   },
-  "generated_at": "2026-09-28T13:09:25.551656+00:00"
+  "generated_at": "2026-09-29T04:50:40.865174+00:00"
 }

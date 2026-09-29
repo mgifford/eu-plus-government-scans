@@ -9,11 +9,11 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 28495
+      "count": 28530
     },
     {
       "domain": "gva.es",
-      "count": 13605
+      "count": 13655
     },
     {
       "domain": "navarra.es",
@@ -211,27 +211,27 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 14092
+      "count": 14114
     },
     {
       "domain": "gva.es",
-      "count": 8462
+      "count": 8498
     },
     {
       "domain": "facebook.com",
-      "count": 3452
+      "count": 3456
     },
     {
       "domain": "twitter.com",
-      "count": 3187
+      "count": 3188
     },
     {
       "domain": "youtube.com",
-      "count": 2865
+      "count": 2869
     },
     {
       "domain": "jccm.es",
-      "count": 2722
+      "count": 2724
     },
     {
       "domain": "googleapis.com",
@@ -239,7 +239,7 @@
     },
     {
       "domain": "google.com",
-      "count": 2707
+      "count": 2710
     },
     {
       "domain": "instagram.com",
@@ -303,11 +303,11 @@
     },
     {
       "domain": "x.com",
-      "count": 700
+      "count": 703
     },
     {
       "domain": "flickr.com",
-      "count": 693
+      "count": 696
     },
     {
       "domain": "google.es",
@@ -367,7 +367,7 @@
     },
     {
       "domain": "sharethis.com",
-      "count": 361
+      "count": 362
     },
     {
       "domain": "sede.gob.es",
@@ -375,7 +375,7 @@
     },
     {
       "domain": "vimeo.com",
-      "count": 357
+      "count": 358
     },
     {
       "domain": "administracion.gob.es",
@@ -391,7 +391,7 @@
     },
     {
       "domain": "pinterest.com",
-      "count": 318
+      "count": 319
     },
     {
       "domain": "ayto-alcaladehenares.es",
@@ -414,5 +414,5 @@
     "form_destination": 1453,
     "font_or_preload_dependency": 157
   },
-  "generated_at": "2026-09-28T13:09:25.657385+00:00"
+  "generated_at": "2026-09-29T04:50:39.545034+00:00"
 }
