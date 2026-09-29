@@ -5,11 +5,11 @@
   "top_source_domains": [
     {
       "domain": "gouvernement.lu",
-      "count": 6393
+      "count": 6557
     },
     {
       "domain": "public.lu",
-      "count": 4516
+      "count": 4656
     },
     {
       "domain": "uni.lu",
@@ -132,16 +132,16 @@
       "count": 66
     },
     {
+      "domain": "chl.lu",
+      "count": 39
+    },
+    {
       "domain": "chd.lu",
       "count": 30
     },
     {
       "domain": "monarchie.lu",
       "count": 30
-    },
-    {
-      "domain": "chl.lu",
-      "count": 29
     },
     {
       "domain": "lod.lu",
@@ -167,19 +167,19 @@
   "top_target_domains": [
     {
       "domain": "public.lu",
-      "count": 4816
+      "count": 4944
     },
     {
       "domain": "gouvernement.lu",
-      "count": 2848
+      "count": 2916
     },
     {
       "domain": "facebook.com",
-      "count": 702
+      "count": 718
     },
     {
       "domain": "linkedin.com",
-      "count": 635
+      "count": 651
     },
     {
       "domain": "uni.lu",
@@ -187,15 +187,15 @@
     },
     {
       "domain": "twitter.com",
-      "count": 484
+      "count": 495
     },
     {
       "domain": "bsky.app",
-      "count": 396
+      "count": 406
     },
     {
       "domain": "instagram.com",
-      "count": 365
+      "count": 371
     },
     {
       "domain": "etat.lu",
@@ -203,15 +203,15 @@
     },
     {
       "domain": "youtube.com",
-      "count": 240
+      "count": 245
     },
     {
       "domain": "adobedtm.com",
-      "count": 219
+      "count": 240
     },
     {
       "domain": "europa.eu",
-      "count": 204
+      "count": 208
     },
     {
       "domain": "googleapis.com",
@@ -307,7 +307,7 @@
     },
     {
       "domain": "guichet.lu",
-      "count": 50
+      "count": 51
     },
     {
       "domain": "tiktok.com",
@@ -346,7 +346,15 @@
       "count": 39
     },
     {
+      "domain": "readspeaker.com",
+      "count": 38
+    },
+    {
       "domain": "luxembourg.lu",
+      "count": 36
+    },
+    {
+      "domain": "chl.lu",
       "count": 36
     },
     {
@@ -356,14 +364,6 @@
     {
       "domain": "meteolux.lu",
       "count": 35
-    },
-    {
-      "domain": "ilr.lu",
-      "count": 34
-    },
-    {
-      "domain": "readspeaker.com",
-      "count": 34
     }
   ],
   "relationship_types": {
@@ -374,5 +374,5 @@
     "stylesheet_dependency": 239,
     "font_or_preload_dependency": 29
   },
-  "generated_at": "2026-09-28T13:09:26.762292+00:00"
+  "generated_at": "2026-09-29T04:50:42.524195+00:00"
 }

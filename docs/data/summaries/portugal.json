@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "googleapis.com",
-      "count": 3407
+      "count": 3410
     },
     {
       "domain": "facebook.com",
@@ -223,11 +223,11 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 2228
+      "count": 2231
     },
     {
       "domain": "google.com",
-      "count": 2083
+      "count": 2086
     },
     {
       "domain": "madeira.gov.pt",
@@ -414,5 +414,5 @@
     "form_destination": 755,
     "image_or_media_dependency": 1137
   },
-  "generated_at": "2026-09-28T13:09:25.954931+00:00"
+  "generated_at": "2026-09-29T04:50:40.050244+00:00"
 }
