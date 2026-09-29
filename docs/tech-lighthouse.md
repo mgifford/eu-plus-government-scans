@@ -5,10 +5,10 @@ layout: page
 
 <!-- TECH_LIGHTHOUSE_STATS_START -->
 
-_Generated: 2026-09-29 23:03 UTC_
+_Generated: 2026-09-29 23:19 UTC_
 
-**32,669** URLs with both technology detection and Lighthouse scores
-out of **73,798** technology-detected URLs and **35,773** Lighthouse-audited URLs
+**33,046** URLs with both technology detection and Lighthouse scores
+out of **73,798** technology-detected URLs and **36,169** Lighthouse-audited URLs
 
 ---
 
@@ -18,36 +18,36 @@ Average Google Lighthouse scores (0–100) for pages where each technology was d
 
 | # | Technology | Pages | Countries | Perf | A11y | Best Prac | SEO |
 |--:|-----------|------:|----------:|-----:|-----:|----------:|----:|
-| 1 | jQuery | **19,286** | 32 | 88 | 89 | 90 | 88 |
-| 2 | PHP | **11,124** | 32 | 88 | 90 | 91 | 90 |
-| 3 | Apache | **9,570** | 32 | 86 | 84 | 88 | 86 |
-| 4 | Bootstrap | **9,016** | 32 | 88 | 89 | 91 | 88 |
-| 5 | Font Awesome | **8,563** | 32 | 87 | 89 | 90 | 89 |
-| 6 | Google Tag Manager | **7,303** | 32 | 87 | 90 | 89 | 89 |
-| 7 | Google Font API | **6,961** | 32 | 87 | 88 | 89 | 89 |
-| 8 | MySQL | **6,381** | 32 | 88 | 89 | 91 | 90 |
-| 9 | WordPress | **6,349** | 32 | 88 | 89 | 91 | 90 |
-| 10 | Nginx | **5,826** | 32 | 88 | 90 | 92 | 89 |
-| 11 | jQuery Migrate | **5,558** | 32 | 87 | 88 | 89 | 89 |
-| 12 | Windows Server | **3,975** | 32 | 89 | 88 | 89 | 86 |
-| 13 | IIS | **3,906** | 32 | 89 | 87 | 89 | 86 |
-| 14 | Microsoft ASP.NET | **3,354** | 32 | 89 | 88 | 88 | 86 |
-| 15 | jQuery UI | **3,300** | 32 | 88 | 87 | 89 | 87 |
-| 16 | Cloudflare | **3,090** | 32 | 90 | 89 | 84 | 83 |
-| 17 | jsDelivr | **2,589** | 32 | 88 | 89 | 90 | 88 |
-| 18 | Drupal | **2,506** | 28 | 88 | 93 | 92 | 92 |
-| 19 | Yoast SEO | **2,268** | 29 | 87 | 88 | 88 | 89 |
-| 20 | reCAPTCHA | **1,904** | 30 | 88 | 89 | 88 | 89 |
-| 21 | Lightbox | **1,781** | 32 | 87 | 88 | 89 | 88 |
-| 22 | Slick | **1,760** | 30 | 83 | 88 | 91 | 88 |
-| 23 | Java | **1,714** | 29 | 86 | 94 | 93 | 89 |
-| 24 | Modernizr | **1,640** | 30 | 88 | 89 | 89 | 89 |
-| 25 | Elementor | **1,406** | 27 | 85 | 88 | 87 | 88 |
-| 26 | OWL Carousel | **1,203** | 28 | 85 | 86 | 86 | 87 |
-| 27 | Adobe Experience Manager | **1,199** | 9 | 84 | 98 | 96 | 91 |
-| 28 | Ubuntu | **1,156** | 28 | 91 | 88 | 94 | 87 |
-| 29 | Cart Functionality | **1,087** | 24 | 86 | 87 | 88 | 89 |
-| 30 | Varnish | **1,022** | 25 | 87 | 94 | 92 | 93 |
+| 1 | jQuery | **19,543** | 32 | 88 | 89 | 90 | 88 |
+| 2 | PHP | **11,266** | 32 | 88 | 90 | 91 | 90 |
+| 3 | Apache | **9,689** | 32 | 86 | 84 | 88 | 86 |
+| 4 | Bootstrap | **9,206** | 32 | 88 | 89 | 91 | 88 |
+| 5 | Font Awesome | **8,631** | 32 | 87 | 89 | 90 | 89 |
+| 6 | Google Tag Manager | **7,342** | 32 | 87 | 90 | 89 | 89 |
+| 7 | Google Font API | **7,017** | 32 | 87 | 88 | 89 | 89 |
+| 8 | MySQL | **6,432** | 32 | 88 | 89 | 91 | 90 |
+| 9 | WordPress | **6,400** | 32 | 88 | 89 | 91 | 90 |
+| 10 | Nginx | **5,931** | 32 | 88 | 90 | 92 | 89 |
+| 11 | jQuery Migrate | **5,624** | 32 | 87 | 88 | 89 | 89 |
+| 12 | Windows Server | **4,010** | 32 | 89 | 87 | 89 | 86 |
+| 13 | IIS | **3,941** | 32 | 89 | 87 | 89 | 86 |
+| 14 | Microsoft ASP.NET | **3,379** | 32 | 89 | 88 | 88 | 86 |
+| 15 | jQuery UI | **3,337** | 32 | 88 | 87 | 89 | 87 |
+| 16 | Cloudflare | **3,110** | 32 | 90 | 90 | 84 | 83 |
+| 17 | jsDelivr | **2,605** | 32 | 88 | 89 | 90 | 88 |
+| 18 | Drupal | **2,567** | 28 | 88 | 93 | 93 | 92 |
+| 19 | Yoast SEO | **2,283** | 29 | 87 | 88 | 88 | 89 |
+| 20 | reCAPTCHA | **1,914** | 30 | 88 | 89 | 88 | 89 |
+| 21 | Lightbox | **1,800** | 32 | 87 | 88 | 89 | 88 |
+| 22 | Slick | **1,774** | 30 | 83 | 88 | 91 | 88 |
+| 23 | Java | **1,728** | 29 | 86 | 94 | 93 | 89 |
+| 24 | Modernizr | **1,683** | 30 | 88 | 89 | 89 | 89 |
+| 25 | Elementor | **1,410** | 27 | 85 | 88 | 87 | 88 |
+| 26 | OWL Carousel | **1,223** | 28 | 84 | 86 | 86 | 87 |
+| 27 | Adobe Experience Manager | **1,202** | 10 | 84 | 98 | 96 | 91 |
+| 28 | Ubuntu | **1,201** | 28 | 91 | 88 | 94 | 87 |
+| 29 | Cart Functionality | **1,116** | 24 | 86 | 87 | 88 | 89 |
+| 30 | Varnish | **1,053** | 25 | 87 | 94 | 93 | 93 |
 
 ## Top Technologies by Country
 
