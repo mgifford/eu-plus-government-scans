@@ -5,12 +5,12 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-09-29 11:54 UTC — last scan: 2026-09-29_
+_Stats as of 2026-09-29 13:29 UTC — last scan: 2026-09-29_
 
-**221** scan batches run
+**222** scan batches run
 
 **87,690** of **87,696** available pages scanned (**100.0%** coverage)
-**80,257** pages with technology detections (**91.5%** of scanned)
+**80,292** pages with technology detections (**91.6%** of scanned)
 **480** unique technologies identified
 
 ---
@@ -41,7 +41,7 @@ _Stats as of 2026-09-29 11:54 UTC — last scan: 2026-09-29_
 | Malta | 610 | 592 | 610 | 2026-09-16 |
 | Netherlands | 945 | 885 | 945 | 2026-09-13 |
 | Norway | 249 | 242 | 249 | 2026-09-13 |
-| Poland | 14,951 | 13,554 | 14,951 | 2026-09-29 |
+| Poland | 14,951 | 13,589 | 14,951 | 2026-09-29 |
 | Portugal | 3,508 | 3,008 | 3,508 | 2026-09-19 |
 | Cyprus | 29 | 28 | 29 | 2026-09-13 |
 | Romania | 807 | 348 | 807 | 2026-09-22 |
@@ -60,46 +60,46 @@ _Stats as of 2026-09-29 11:54 UTC — last scan: 2026-09-29_
 
 | # | Technology | Pages | Categories |
 |--:|-----------|------:|-----------|
-| 1 | jQuery | **43,826** | JavaScript libraries |
-| 2 | PHP | **26,896** | Programming languages |
-| 3 | Apache | **21,747** | Web servers |
-| 4 | Font Awesome | **20,106** | Font scripts |
-| 5 | Bootstrap | **19,798** | UI frameworks |
-| 6 | Google Tag Manager | **17,578** | Tag managers |
-| 7 | Google Font API | **17,489** | Font scripts |
-| 8 | MySQL | **15,685** | Databases |
-| 9 | WordPress | **15,580** | Blogs, CMS |
-| 10 | jQuery Migrate | **13,685** | JavaScript libraries |
-| 11 | Nginx | **13,403** | Reverse proxies, Web servers |
-| 12 | Cloudflare | **7,378** | CDN |
-| 13 | Windows Server | **7,139** | Operating systems |
-| 14 | IIS | **7,021** | Web servers |
-| 15 | jQuery UI | **6,570** | JavaScript libraries |
+| 1 | jQuery | **43,874** | JavaScript libraries |
+| 2 | PHP | **26,961** | Programming languages |
+| 3 | Apache | **21,779** | Web servers |
+| 4 | Font Awesome | **20,133** | Font scripts |
+| 5 | Bootstrap | **19,814** | UI frameworks |
+| 6 | Google Tag Manager | **17,605** | Tag managers |
+| 7 | Google Font API | **17,535** | Font scripts |
+| 8 | MySQL | **15,742** | Databases |
+| 9 | WordPress | **15,633** | Blogs, CMS |
+| 10 | jQuery Migrate | **13,717** | JavaScript libraries |
+| 11 | Nginx | **13,370** | Reverse proxies, Web servers |
+| 12 | Cloudflare | **7,381** | CDN |
+| 13 | Windows Server | **7,140** | Operating systems |
+| 14 | IIS | **7,022** | Web servers |
+| 15 | jQuery UI | **6,573** | JavaScript libraries |
 | 16 | Microsoft ASP.NET | **6,140** | Web frameworks |
 | 17 | Drupal | **5,632** | CMS |
-| 18 | Yoast SEO | **5,180** | SEO |
-| 19 | jsDelivr | **5,139** | CDN |
-| 20 | reCAPTCHA | **5,120** | Security |
+| 18 | Yoast SEO | **5,193** | SEO |
+| 19 | jsDelivr | **5,140** | CDN |
+| 20 | reCAPTCHA | **5,130** | Security |
 
 ### Top Technology Categories
 
 | # | Category | Pages |
 |--:|---------|------:|
-| 1 | JavaScript libraries | **87,259** |
-| 2 | Web servers | **47,973** |
-| 3 | Font scripts | **38,882** |
-| 4 | Programming languages | **33,681** |
-| 5 | CMS | **28,270** |
-| 6 | UI frameworks | **26,302** |
-| 7 | Tag managers | **17,610** |
-| 8 | CDN | **16,975** |
-| 9 | Databases | **16,422** |
-| 10 | Blogs | **15,740** |
-| 11 | Reverse proxies | **13,946** |
-| 12 | Operating systems | **11,389** |
-| 13 | Web frameworks | **9,356** |
+| 1 | JavaScript libraries | **87,369** |
+| 2 | Web servers | **47,967** |
+| 3 | Font scripts | **38,955** |
+| 4 | Programming languages | **33,706** |
+| 5 | CMS | **28,331** |
+| 6 | UI frameworks | **26,322** |
+| 7 | Tag managers | **17,637** |
+| 8 | CDN | **16,981** |
+| 9 | Databases | **16,484** |
+| 10 | Blogs | **15,793** |
+| 11 | Reverse proxies | **13,913** |
+| 12 | Operating systems | **11,392** |
+| 13 | Web frameworks | **9,359** |
 | 14 | JavaScript frameworks | **8,343** |
-| 15 | Miscellaneous | **6,051** |
+| 15 | Miscellaneous | **6,062** |
 
 📥 Machine-readable results: [Download machine-readable technology data (JSON)](technology-data.json)
 
