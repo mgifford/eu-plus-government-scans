@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T13:01:11.409242+00:00",
+  "generated_at": "2026-09-29T22:44:49.818680+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -173,7 +173,7 @@
     {
       "service": "googleapis.com",
       "countries": 32,
-      "domains": 4271
+      "domains": 4270
     },
     {
       "service": "googletagmanager.com",
@@ -1396,9 +1396,9 @@
       "country_code": "GERMANY",
       "country": "Germany",
       "service": "googleapis.com",
-      "domains": 16,
+      "domains": 15,
       "scanned_domains": 215,
-      "percent": 7.4
+      "percent": 7.0
     },
     {
       "country_code": "GERMANY",

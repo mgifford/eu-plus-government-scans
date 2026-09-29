@@ -1,6 +1,6 @@
 {
   "country_code": "IRELAND",
-  "total_relationships": 2074,
+  "total_relationships": 2085,
   "total_source_domains": 103,
   "top_source_domains": [
     {
@@ -28,6 +28,10 @@
       "count": 498
     },
     {
+      "domain": "limerick.ie",
+      "count": 465
+    },
+    {
       "domain": "clarecoco.ie",
       "count": 460
     },
@@ -46,10 +50,6 @@
     {
       "domain": "agriculture.gov.ie",
       "count": 399
-    },
-    {
-      "domain": "limerick.ie",
-      "count": 388
     },
     {
       "domain": "enterprise.gov.ie",
@@ -207,11 +207,11 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 651
+      "count": 654
     },
     {
       "domain": "googleapis.com",
-      "count": 630
+      "count": 638
     },
     {
       "domain": "instagram.com",
@@ -227,7 +227,7 @@
     },
     {
       "domain": "twitter.com",
-      "count": 430
+      "count": 433
     },
     {
       "domain": "hse.ie",
@@ -247,7 +247,7 @@
     },
     {
       "domain": "google.com",
-      "count": 263
+      "count": 265
     },
     {
       "domain": "jsdelivr.net",
@@ -266,8 +266,12 @@
       "count": 215
     },
     {
+      "domain": "limerick.ie",
+      "count": 211
+    },
+    {
       "domain": "cloudflare.com",
-      "count": 207
+      "count": 210
     },
     {
       "domain": "ipoi.gov.ie",
@@ -280,10 +284,6 @@
     {
       "domain": "arcgis.com",
       "count": 180
-    },
-    {
-      "domain": "limerick.ie",
-      "count": 173
     },
     {
       "domain": "kerrycoco.ie",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 1006,
-    "form_destination": 131,
-    "script_dependency": 403,
-    "stylesheet_dependency": 288,
-    "image_or_media_dependency": 186,
+    "editorial_link": 1012,
+    "form_destination": 132,
+    "script_dependency": 405,
+    "stylesheet_dependency": 289,
+    "image_or_media_dependency": 187,
     "font_or_preload_dependency": 60
   },
-  "generated_at": "2026-09-29T04:50:40.541014+00:00"
+  "generated_at": "2026-09-29T22:44:46.601600+00:00"
 }
