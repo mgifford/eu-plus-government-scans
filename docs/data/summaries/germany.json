@@ -1,6 +1,6 @@
 {
   "country_code": "GERMANY",
-  "total_relationships": 22001,
+  "total_relationships": 21986,
   "total_source_domains": 224,
   "top_source_domains": [
     {
@@ -25,7 +25,7 @@
     },
     {
       "domain": "diplo.de",
-      "count": 16621
+      "count": 16681
     },
     {
       "domain": "hamburg.de",
@@ -33,67 +33,67 @@
     },
     {
       "domain": "hessen.de",
-      "count": 12241
+      "count": 12562
     },
     {
       "domain": "sachsen-anhalt.de",
-      "count": 8560
-    },
-    {
-      "domain": "bund.de",
-      "count": 4649
+      "count": 8615
     },
     {
       "domain": "bremen.de",
-      "count": 4123
+      "count": 5384
+    },
+    {
+      "domain": "bund.de",
+      "count": 4676
     },
     {
       "domain": "baden-wuerttemberg.de",
-      "count": 4105
+      "count": 4374
     },
     {
       "domain": "thueringen.de",
-      "count": 3374
+      "count": 3422
     },
     {
       "domain": "berlin.de",
-      "count": 2547
+      "count": 2594
     },
     {
       "domain": "duesseldorf.de",
-      "count": 1370
+      "count": 1458
+    },
+    {
+      "domain": "essen.de",
+      "count": 1053
     },
     {
       "domain": "muenchen.de",
       "count": 1013
     },
     {
-      "domain": "essen.de",
-      "count": 1005
-    },
-    {
       "domain": "dguv.de",
-      "count": 832
+      "count": 909
     },
     {
       "domain": "brandenburg.de",
-      "count": 794
+      "count": 826
     },
     {
       "domain": "stuttgart.de",
-      "count": 789
+      "count": 813
     },
     {
       "domain": "bundeswehr.de",
-      "count": 405
+      "count": 411
+    },
+    {
+      "domain": "schleswig-holstein.de",
+      "count": 411
     },
     {
       "domain": "dortmund.de",
       "count": 400
-    },
-    {
-      "domain": "schleswig-holstein.de",
-      "count": 398
     },
     {
       "domain": "stadt-koeln.de",
@@ -104,8 +104,12 @@
       "count": 358
     },
     {
+      "domain": "arbeitsagentur.de",
+      "count": 354
+    },
+    {
       "domain": "leipzig.de",
-      "count": 351
+      "count": 354
     },
     {
       "domain": "jena.de",
@@ -114,10 +118,6 @@
     {
       "domain": "thw.de",
       "count": 335
-    },
-    {
-      "domain": "arbeitsagentur.de",
-      "count": 330
     },
     {
       "domain": "thueringer-landtag.de",
@@ -148,16 +148,16 @@
       "count": 233
     },
     {
+      "domain": "116117.de",
+      "count": 221
+    },
+    {
       "domain": "koeln.de",
       "count": 216
     },
     {
       "domain": "wolfsburg.de",
       "count": 210
-    },
-    {
-      "domain": "116117.de",
-      "count": 206
     },
     {
       "domain": "bam.de",
@@ -227,7 +227,7 @@
     },
     {
       "domain": "hessen.de",
-      "count": 9435
+      "count": 9636
     },
     {
       "domain": "hamburg.de",
@@ -235,51 +235,51 @@
     },
     {
       "domain": "diplo.de",
-      "count": 7911
+      "count": 7938
     },
     {
       "domain": "sachsen-anhalt.de",
-      "count": 6022
+      "count": 6066
     },
     {
       "domain": "facebook.com",
-      "count": 4975
+      "count": 5015
     },
     {
       "domain": "instagram.com",
-      "count": 4744
-    },
-    {
-      "domain": "twitter.com",
-      "count": 3270
-    },
-    {
-      "domain": "bund.de",
-      "count": 3239
+      "count": 4789
     },
     {
       "domain": "bremen.de",
-      "count": 3184
+      "count": 4235
+    },
+    {
+      "domain": "twitter.com",
+      "count": 3291
+    },
+    {
+      "domain": "bund.de",
+      "count": 3270
     },
     {
       "domain": "youtube.com",
-      "count": 3000
+      "count": 3024
     },
     {
       "domain": "thueringen.de",
-      "count": 2742
+      "count": 2806
     },
     {
       "domain": "linkedin.com",
-      "count": 2360
+      "count": 2384
     },
     {
       "domain": "baden-wuerttemberg.de",
-      "count": 2225
+      "count": 2360
     },
     {
       "domain": "auswaertiges-amt.de",
-      "count": 2058
+      "count": 2066
     },
     {
       "domain": "justiz.nrw",
@@ -287,11 +287,11 @@
     },
     {
       "domain": "berlin.de",
-      "count": 1831
+      "count": 1855
     },
     {
       "domain": "etracker.com",
-      "count": 1330
+      "count": 1334
     },
     {
       "domain": "readspeaker.com",
@@ -315,15 +315,15 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 926
+      "count": 930
+    },
+    {
+      "domain": "duesseldorf.de",
+      "count": 823
     },
     {
       "domain": "knastladen.de",
       "count": 816
-    },
-    {
-      "domain": "duesseldorf.de",
-      "count": 780
     },
     {
       "domain": "justiz-karriere.nrw",
@@ -331,7 +331,7 @@
     },
     {
       "domain": "google.com",
-      "count": 758
+      "count": 772
     },
     {
       "domain": "wordpress.org",
@@ -342,64 +342,64 @@
       "count": 637
     },
     {
+      "domain": "essen.de",
+      "count": 627
+    },
+    {
       "domain": "muenchen.de",
       "count": 594
     },
     {
       "domain": "deutschland.de",
+      "count": 592
+    },
+    {
+      "domain": "brandenburg.de",
       "count": 590
     },
     {
-      "domain": "essen.de",
-      "count": 589
-    },
-    {
       "domain": "justiz.de",
-      "count": 585
+      "count": 586
     },
     {
       "domain": "usercentrics.eu",
       "count": 584
     },
     {
-      "domain": "brandenburg.de",
-      "count": 566
+      "domain": "dwd.de",
+      "count": 554
     },
     {
       "domain": "eye-able.com",
       "count": 549
     },
     {
-      "domain": "dwd.de",
-      "count": 547
+      "domain": "xing.com",
+      "count": 509
     },
     {
       "domain": "europa.eu",
-      "count": 499
-    },
-    {
-      "domain": "xing.com",
-      "count": 499
+      "count": 507
     },
     {
       "domain": "x.com",
-      "count": 481
+      "count": 498
     },
     {
       "domain": "dguv.de",
-      "count": 471
+      "count": 494
     },
     {
       "domain": "make-it-in-germany.com",
-      "count": 406
+      "count": 407
     },
     {
       "domain": "dw.com",
-      "count": 394
+      "count": 396
     },
     {
       "domain": "tatsachen-ueber-deutschland.de",
-      "count": 388
+      "count": 390
     },
     {
       "domain": "stark-fuer-gerechtigkeit.de",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 11178,
+    "editorial_link": 11170,
     "font_or_preload_dependency": 338,
-    "image_or_media_dependency": 2756,
-    "script_dependency": 2874,
-    "stylesheet_dependency": 2715,
+    "image_or_media_dependency": 2752,
+    "script_dependency": 2873,
+    "stylesheet_dependency": 2713,
     "form_destination": 2140
   },
-  "generated_at": "2026-09-29T04:50:41.795636+00:00"
+  "generated_at": "2026-09-29T22:44:47.467516+00:00"
 }
