@@ -5,12 +5,12 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-09-28 20:34 UTC — last scan: 2026-09-28_
+_Stats as of 2026-09-29 00:04 UTC — last scan: 2026-09-29_
 
-**218** scan batches run
+**220** scan batches run
 
 **87,690** of **87,696** available pages scanned (**100.0%** coverage)
-**80,206** pages with technology detections (**91.5%** of scanned)
+**80,221** pages with technology detections (**91.5%** of scanned)
 **480** unique technologies identified
 
 ---
@@ -41,13 +41,13 @@ _Stats as of 2026-09-28 20:34 UTC — last scan: 2026-09-28_
 | Malta | 610 | 592 | 610 | 2026-09-16 |
 | Netherlands | 945 | 885 | 945 | 2026-09-13 |
 | Norway | 249 | 242 | 249 | 2026-09-13 |
-| Poland | 14,951 | 13,542 | 14,951 | 2026-09-28 |
+| Poland | 14,951 | 13,554 | 14,951 | 2026-09-29 |
 | Portugal | 3,508 | 3,008 | 3,508 | 2026-09-19 |
 | Cyprus | 29 | 28 | 29 | 2026-09-13 |
 | Romania | 807 | 348 | 807 | 2026-09-22 |
 | Slovakia | 442 | 412 | 442 | 2026-09-14 |
 | Slovenia | 214 | 207 | 214 | 2026-09-14 |
-| Spain | 6,091 | 5,068 | 6,091 | 2026-09-27 |
+| Spain | 6,091 | 5,071 | 6,091 | 2026-09-28 |
 | Sweden | 1,702 | 1,622 | 1,702 | 2026-09-20 |
 | Switzerland | 2,123 | 2,073 | 2,123 | 2026-09-14 |
 | United Kingdom | 19,511 | 18,502 | 19,511 | 2026-09-28 |
@@ -60,23 +60,23 @@ _Stats as of 2026-09-28 20:34 UTC — last scan: 2026-09-28_
 
 | # | Technology | Pages | Categories |
 |--:|-----------|------:|-----------|
-| 1 | jQuery | **43,757** | JavaScript libraries |
-| 2 | PHP | **26,852** | Programming languages |
-| 3 | Apache | **21,737** | Web servers |
+| 1 | jQuery | **43,759** | JavaScript libraries |
+| 2 | PHP | **26,858** | Programming languages |
+| 3 | Apache | **21,744** | Web servers |
 | 4 | Font Awesome | **20,071** | Font scripts |
-| 5 | Bootstrap | **19,784** | UI frameworks |
+| 5 | Bootstrap | **19,789** | UI frameworks |
 | 6 | Google Tag Manager | **17,553** | Tag managers |
-| 7 | Google Font API | **17,442** | Font scripts |
-| 8 | MySQL | **15,663** | Databases |
-| 9 | WordPress | **15,555** | Blogs, CMS |
-| 10 | jQuery Migrate | **13,667** | JavaScript libraries |
-| 11 | Nginx | **13,318** | Reverse proxies, Web servers |
-| 12 | Cloudflare | **7,371** | CDN |
+| 7 | Google Font API | **17,445** | Font scripts |
+| 8 | MySQL | **15,666** | Databases |
+| 9 | WordPress | **15,558** | Blogs, CMS |
+| 10 | jQuery Migrate | **13,670** | JavaScript libraries |
+| 11 | Nginx | **13,316** | Reverse proxies, Web servers |
+| 12 | Cloudflare | **7,372** | CDN |
 | 13 | Windows Server | **7,128** | Operating systems |
 | 14 | IIS | **7,010** | Web servers |
-| 15 | jQuery UI | **6,563** | JavaScript libraries |
+| 15 | jQuery UI | **6,564** | JavaScript libraries |
 | 16 | Microsoft ASP.NET | **6,128** | Web frameworks |
-| 17 | Drupal | **5,611** | CMS |
+| 17 | Drupal | **5,614** | CMS |
 | 18 | Yoast SEO | **5,191** | SEO |
 | 19 | jsDelivr | **5,134** | CDN |
 | 20 | reCAPTCHA | **5,132** | Security |
@@ -85,21 +85,21 @@ _Stats as of 2026-09-28 20:34 UTC — last scan: 2026-09-28_
 
 | # | Category | Pages |
 |--:|---------|------:|
-| 1 | JavaScript libraries | **87,142** |
-| 2 | Web servers | **47,869** |
-| 3 | Font scripts | **38,800** |
-| 4 | Programming languages | **33,657** |
-| 5 | CMS | **28,228** |
-| 6 | UI frameworks | **26,275** |
+| 1 | JavaScript libraries | **87,149** |
+| 2 | Web servers | **47,877** |
+| 3 | Font scripts | **38,803** |
+| 4 | Programming languages | **33,663** |
+| 5 | CMS | **28,234** |
+| 6 | UI frameworks | **26,285** |
 | 7 | Tag managers | **17,585** |
-| 8 | CDN | **16,963** |
-| 9 | Databases | **16,400** |
-| 10 | Blogs | **15,714** |
-| 11 | Reverse proxies | **13,860** |
+| 8 | CDN | **16,964** |
+| 9 | Databases | **16,403** |
+| 10 | Blogs | **15,717** |
+| 11 | Reverse proxies | **13,859** |
 | 12 | Operating systems | **11,378** |
 | 13 | Web frameworks | **9,344** |
-| 14 | JavaScript frameworks | **8,345** |
-| 15 | Miscellaneous | **6,022** |
+| 14 | JavaScript frameworks | **8,344** |
+| 15 | Miscellaneous | **6,028** |
 
 📥 Machine-readable results: [Download machine-readable technology data (JSON)](technology-data.json)
 
