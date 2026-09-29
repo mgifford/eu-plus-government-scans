@@ -5,18 +5,18 @@ layout: page
 
 <!-- LIGHTHOUSE_STATS_START -->
 
-_Stats as of 2026-09-29 00:05 UTC — last scan: 2026-09-28_
+_Stats as of 2026-09-29 00:28 UTC — last scan: 2026-09-29_
 
-**403** scan batches run
+**404** scan batches run
 
-**49,254** of **87,696** available pages audited (**56.2%** coverage)
-**34,096** successful audits (**69.2%** of audited)
+**49,395** of **87,696** available pages audited (**56.3%** coverage)
+**34,373** successful audits (**69.6%** of audited)
 
 **Overall average Lighthouse scores** (0–100 scale):
 
 | Performance | Accessibility | Best Practices | SEO |
 |:-----------:|:-------------:|:--------------:|:---:|
-| 88 | 88 | 90 | 88 |
+| 88 | 88 | 90 | 87 |
 
 ---
 
@@ -52,7 +52,7 @@ _Stats as of 2026-09-29 00:05 UTC — last scan: 2026-09-28_
 | Romania | 807 | 807 | 87 | 78 | 90 | 84 | 2026-09-15 |
 | Slovakia | 442 | 442 | 90 | 87 | 90 | 88 | 2026-09-26 |
 | Slovenia | 214 | 214 | 87 | 80 | 89 | 85 | 2026-09-24 |
-| Spain | 5,099 | 6,091 | 82 | 76 | 78 | 82 | 2026-09-26 |
+| Spain | 5,240 | 6,091 | 82 | 75 | 77 | 82 | 2026-09-29 |
 | Sweden | 1,496 | 1,702 | 90 | 93 | 92 | 87 | 2026-09-15 |
 | Switzerland | 2,123 | 2,123 | 85 | 91 | 96 | 87 | 2026-09-26 |
 | United Kingdom | 3,544 | 19,511 | 91 | 94 | 91 | 87 | 2026-09-26 |
