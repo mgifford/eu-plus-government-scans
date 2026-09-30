@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T04:57:42.167215+00:00",
+  "generated_at": "2026-09-30T12:48:04.441320+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -198,7 +198,7 @@
     {
       "service": "google.com",
       "countries": 31,
-      "domains": 2082
+      "domains": 2081
     },
     {
       "service": "cloudflare.com",
@@ -1436,9 +1436,9 @@
       "country_code": "GERMANY",
       "country": "Germany",
       "service": "google.com",
-      "domains": 5,
+      "domains": 4,
       "scanned_domains": 215,
-      "percent": 2.3
+      "percent": 1.9
     },
     {
       "country_code": "GERMANY",
