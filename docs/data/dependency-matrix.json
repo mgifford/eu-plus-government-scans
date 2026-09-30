@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T12:48:04.441320+00:00",
+  "generated_at": "2026-09-30T18:43:34.277890+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -173,7 +173,7 @@
     {
       "service": "googleapis.com",
       "countries": 32,
-      "domains": 4270
+      "domains": 4269
     },
     {
       "service": "googletagmanager.com",
@@ -203,7 +203,7 @@
     {
       "service": "cloudflare.com",
       "countries": 31,
-      "domains": 1576
+      "domains": 1578
     },
     {
       "service": "jquery.com",
@@ -228,7 +228,7 @@
     {
       "service": "cookiebot.com",
       "countries": 24,
-      "domains": 180
+      "domains": 181
     },
     {
       "service": "facebook.com",
@@ -243,7 +243,7 @@
     {
       "service": "amazonaws.com",
       "countries": 21,
-      "domains": 228
+      "domains": 227
     },
     {
       "service": "addtoany.com",
@@ -276,7 +276,7 @@
       "country_code": "UNITED_KINGDOM_UK",
       "country": "United Kingdom",
       "service": "googleapis.com",
-      "domains": 1371,
+      "domains": 1370,
       "scanned_domains": 3144,
       "percent": 43.6
     },
@@ -324,7 +324,7 @@
       "country_code": "UNITED_KINGDOM_UK",
       "country": "United Kingdom",
       "service": "cloudflare.com",
-      "domains": 744,
+      "domains": 746,
       "scanned_domains": 3144,
       "percent": 23.7
     },
@@ -364,7 +364,7 @@
       "country_code": "UNITED_KINGDOM_UK",
       "country": "United Kingdom",
       "service": "cookiebot.com",
-      "domains": 57,
+      "domains": 58,
       "scanned_domains": 3144,
       "percent": 1.8
     },
@@ -388,9 +388,9 @@
       "country_code": "UNITED_KINGDOM_UK",
       "country": "United Kingdom",
       "service": "amazonaws.com",
-      "domains": 137,
+      "domains": 136,
       "scanned_domains": 3144,
-      "percent": 4.4
+      "percent": 4.3
     },
     {
       "country_code": "UNITED_KINGDOM_UK",
