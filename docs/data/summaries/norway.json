@@ -36,16 +36,16 @@
       "count": 261
     },
     {
+      "domain": "nav.no",
+      "count": 251
+    },
+    {
       "domain": "skatteetaten.no",
       "count": 246
     },
     {
       "domain": "kystverket.no",
       "count": 240
-    },
-    {
-      "domain": "nav.no",
-      "count": 234
     },
     {
       "domain": "ssb.no",
@@ -151,7 +151,7 @@
     },
     {
       "domain": "lovdata.no",
-      "count": 288
+      "count": 290
     },
     {
       "domain": "brreg.no",
@@ -175,7 +175,7 @@
     },
     {
       "domain": "nav.no",
-      "count": 171
+      "count": 186
     },
     {
       "domain": "stortinget.no",
@@ -350,5 +350,5 @@
     "script_dependency": 198,
     "font_or_preload_dependency": 44
   },
-  "generated_at": "2026-09-29T22:44:45.150821+00:00"
+  "generated_at": "2026-09-30T04:57:37.204664+00:00"
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T22:44:49.818680+00:00",
+  "generated_at": "2026-09-30T04:57:42.167215+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -213,7 +213,7 @@
     {
       "service": "unpkg.com",
       "countries": 29,
-      "domains": 683
+      "domains": 682
     },
     {
       "service": "bootstrapcdn.com",
@@ -660,9 +660,9 @@
       "country_code": "FRANCE",
       "country": "France",
       "service": "unpkg.com",
-      "domains": 70,
+      "domains": 69,
       "scanned_domains": 669,
-      "percent": 10.5
+      "percent": 10.3
     },
     {
       "country_code": "FRANCE",
