@@ -1,6 +1,6 @@
 {
   "country_code": "CANADA",
-  "total_relationships": 317065,
+  "total_relationships": 317017,
   "total_source_domains": 9154,
   "top_source_domains": [
     {
@@ -132,6 +132,10 @@
       "count": 9018
     },
     {
+      "domain": "blog.gov.uk",
+      "count": 8798
+    },
+    {
       "domain": "plzen.eu",
       "count": 8681
     },
@@ -142,10 +146,6 @@
     {
       "domain": "uni.opole.pl",
       "count": 8391
-    },
-    {
-      "domain": "blog.gov.uk",
-      "count": 8359
     },
     {
       "domain": "canada.ca",
@@ -165,7 +165,7 @@
     },
     {
       "domain": "scot.nhs.uk",
-      "count": 7801
+      "count": 7814
     },
     {
       "domain": "cnam.fr",
@@ -207,15 +207,15 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 78208
+      "count": 78643
+    },
+    {
+      "domain": "googleapis.com",
+      "count": 63017
     },
     {
       "domain": "sachsen.de",
       "count": 62872
-    },
-    {
-      "domain": "googleapis.com",
-      "count": 62467
     },
     {
       "domain": "ethz.ch",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 46301
+      "count": 46526
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -231,19 +231,19 @@
     },
     {
       "domain": "youtube.com",
-      "count": 43909
+      "count": 44128
     },
     {
       "domain": "twitter.com",
-      "count": 37355
+      "count": 37626
     },
     {
       "domain": "google.com",
-      "count": 35469
+      "count": 35747
     },
     {
       "domain": "linkedin.com",
-      "count": 32817
+      "count": 33055
     },
     {
       "domain": "gouv.qc.ca",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 29384
+      "count": 29730
     },
     {
       "domain": "niedersachsen.de",
@@ -279,11 +279,11 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 19253
+      "count": 19413
     },
     {
       "domain": "cloudflare.com",
-      "count": 18536
+      "count": 18782
     },
     {
       "domain": "lodz.pl",
@@ -295,7 +295,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 16262
+      "count": 16439
     },
     {
       "domain": "nrw.de",
@@ -327,7 +327,7 @@
     },
     {
       "domain": "fontawesome.com",
-      "count": 9260
+      "count": 9338
     },
     {
       "domain": "hamburg.de",
@@ -335,7 +335,7 @@
     },
     {
       "domain": "x.com",
-      "count": 8853
+      "count": 8939
     },
     {
       "domain": "haute-garonne.fr",
@@ -350,12 +350,12 @@
       "count": 8514
     },
     {
-      "domain": "diplo.de",
-      "count": 7945
+      "domain": "unpkg.com",
+      "count": 8045
     },
     {
-      "domain": "unpkg.com",
-      "count": 7927
+      "domain": "diplo.de",
+      "count": 7945
     },
     {
       "domain": "paris.fr",
@@ -367,11 +367,11 @@
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 7146
+      "count": 7190
     },
     {
       "domain": "jquery.com",
-      "count": 7030
+      "count": 7061
     },
     {
       "domain": "gdansk.pl",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 163191,
-    "form_destination": 21201,
-    "image_or_media_dependency": 33352,
-    "script_dependency": 50562,
-    "stylesheet_dependency": 40343,
-    "font_or_preload_dependency": 8416
+    "editorial_link": 163158,
+    "form_destination": 21200,
+    "image_or_media_dependency": 33350,
+    "script_dependency": 50563,
+    "stylesheet_dependency": 40340,
+    "font_or_preload_dependency": 8406
   },
-  "generated_at": "2026-09-30T12:48:00.773580+00:00"
+  "generated_at": "2026-09-30T18:43:30.852056+00:00"
 }
