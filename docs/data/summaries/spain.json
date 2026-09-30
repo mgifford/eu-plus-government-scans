@@ -9,11 +9,11 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 29029
+      "count": 29084
     },
     {
       "domain": "gva.es",
-      "count": 13693
+      "count": 13764
     },
     {
       "domain": "navarra.es",
@@ -211,31 +211,31 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 14373
+      "count": 14403
     },
     {
       "domain": "gva.es",
-      "count": 8514
+      "count": 8581
     },
     {
       "domain": "facebook.com",
-      "count": 3479
+      "count": 3483
     },
     {
       "domain": "twitter.com",
-      "count": 3209
+      "count": 3214
     },
     {
       "domain": "youtube.com",
-      "count": 2891
+      "count": 2893
     },
     {
       "domain": "jccm.es",
-      "count": 2773
+      "count": 2779
     },
     {
       "domain": "google.com",
-      "count": 2741
+      "count": 2748
     },
     {
       "domain": "googleapis.com",
@@ -243,7 +243,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 2538
+      "count": 2539
     },
     {
       "domain": "navarra.es",
@@ -311,7 +311,7 @@
     },
     {
       "domain": "google.es",
-      "count": 679
+      "count": 680
     },
     {
       "domain": "hacienda.gob.es",
@@ -367,11 +367,11 @@
     },
     {
       "domain": "sharethis.com",
-      "count": 368
+      "count": 369
     },
     {
       "domain": "vimeo.com",
-      "count": 362
+      "count": 363
     },
     {
       "domain": "sede.gob.es",
@@ -414,5 +414,5 @@
     "form_destination": 1455,
     "font_or_preload_dependency": 157
   },
-  "generated_at": "2026-09-30T04:57:39.222316+00:00"
+  "generated_at": "2026-09-30T22:44:11.884668+00:00"
 }

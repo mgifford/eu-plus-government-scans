@@ -76,12 +76,12 @@
       "count": 1408
     },
     {
-      "domain": "interno.gov.it",
-      "count": 1314
+      "domain": "comune.torino.it",
+      "count": 1335
     },
     {
-      "domain": "comune.torino.it",
-      "count": 1311
+      "domain": "interno.gov.it",
+      "count": 1314
     },
     {
       "domain": "comune.genova.it",
@@ -215,27 +215,27 @@
     },
     {
       "domain": "facebook.com",
-      "count": 7130
+      "count": 7131
+    },
+    {
+      "domain": "twitter.com",
+      "count": 5765
     },
     {
       "domain": "cultura.gov.it",
       "count": 5765
     },
     {
-      "domain": "twitter.com",
-      "count": 5764
-    },
-    {
       "domain": "youtube.com",
-      "count": 5645
+      "count": 5646
     },
     {
       "domain": "agid.gov.it",
-      "count": 4511
+      "count": 4512
     },
     {
       "domain": "instagram.com",
-      "count": 4401
+      "count": 4402
     },
     {
       "domain": "governo.it",
@@ -271,7 +271,7 @@
     },
     {
       "domain": "whatsapp.com",
-      "count": 1877
+      "count": 1878
     },
     {
       "domain": "regione.campania.it",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 1632
+      "count": 1633
     },
     {
       "domain": "regione.lazio.it",
@@ -307,7 +307,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 1109
+      "count": 1110
     },
     {
       "domain": "csm.it",
@@ -350,12 +350,12 @@
       "count": 786
     },
     {
-      "domain": "difesa.it",
-      "count": 704
+      "domain": "comune.torino.it",
+      "count": 712
     },
     {
-      "domain": "comune.torino.it",
-      "count": 702
+      "domain": "difesa.it",
+      "count": 704
     },
     {
       "domain": "cloudflare.com",
@@ -375,7 +375,7 @@
     },
     {
       "domain": "t.me",
-      "count": 601
+      "count": 602
     },
     {
       "domain": "scuolamagistratura.it",
@@ -414,5 +414,5 @@
     "form_destination": 1454,
     "font_or_preload_dependency": 254
   },
-  "generated_at": "2026-09-30T18:43:30.347518+00:00"
+  "generated_at": "2026-09-30T22:44:10.854466+00:00"
 }

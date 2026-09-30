@@ -1,11 +1,11 @@
 {
   "country_code": "LUXEMBOURG",
-  "total_relationships": 2072,
+  "total_relationships": 2071,
   "total_source_domains": 40,
   "top_source_domains": [
     {
       "domain": "gouvernement.lu",
-      "count": 6557
+      "count": 6644
     },
     {
       "domain": "public.lu",
@@ -167,19 +167,19 @@
   "top_target_domains": [
     {
       "domain": "public.lu",
-      "count": 4944
+      "count": 4962
     },
     {
       "domain": "gouvernement.lu",
-      "count": 2916
+      "count": 2950
     },
     {
       "domain": "facebook.com",
-      "count": 718
+      "count": 723
     },
     {
       "domain": "linkedin.com",
-      "count": 651
+      "count": 657
     },
     {
       "domain": "uni.lu",
@@ -187,15 +187,15 @@
     },
     {
       "domain": "twitter.com",
-      "count": 495
+      "count": 500
     },
     {
       "domain": "bsky.app",
-      "count": 406
+      "count": 411
     },
     {
       "domain": "instagram.com",
-      "count": 371
+      "count": 372
     },
     {
       "domain": "etat.lu",
@@ -203,15 +203,15 @@
     },
     {
       "domain": "youtube.com",
-      "count": 245
+      "count": 248
     },
     {
       "domain": "adobedtm.com",
-      "count": 240
+      "count": 245
     },
     {
       "domain": "europa.eu",
-      "count": 208
+      "count": 209
     },
     {
       "domain": "googleapis.com",
@@ -367,12 +367,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 1160,
+    "editorial_link": 1159,
     "form_destination": 163,
     "image_or_media_dependency": 200,
     "script_dependency": 281,
     "stylesheet_dependency": 239,
     "font_or_preload_dependency": 29
   },
-  "generated_at": "2026-09-29T04:50:42.524195+00:00"
+  "generated_at": "2026-09-30T22:44:12.061983+00:00"
 }

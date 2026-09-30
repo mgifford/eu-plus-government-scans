@@ -1,15 +1,15 @@
 {
   "country_code": "POLAND",
-  "total_relationships": 61737,
+  "total_relationships": 61741,
   "total_source_domains": 2487,
   "top_source_domains": [
     {
       "domain": "krakow.pl",
-      "count": 60725
+      "count": 61181
     },
     {
       "domain": "poznan.pl",
-      "count": 40491
+      "count": 40544
     },
     {
       "domain": "lodz.pl",
@@ -207,11 +207,11 @@
   "top_target_domains": [
     {
       "domain": "krakow.pl",
-      "count": 29969
+      "count": 30168
     },
     {
       "domain": "poznan.pl",
-      "count": 20357
+      "count": 20382
     },
     {
       "domain": "lodz.pl",
@@ -219,11 +219,11 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 18133
+      "count": 18165
     },
     {
       "domain": "facebook.com",
-      "count": 16186
+      "count": 16210
     },
     {
       "domain": "gdansk.pl",
@@ -231,19 +231,19 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 6418
+      "count": 6423
     },
     {
       "domain": "instagram.com",
-      "count": 6333
+      "count": 6340
     },
     {
       "domain": "google.com",
-      "count": 6202
+      "count": 6207
     },
     {
       "domain": "youtube.com",
-      "count": 6173
+      "count": 6184
     },
     {
       "domain": "uni.opole.pl",
@@ -251,7 +251,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 4517
+      "count": 4524
     },
     {
       "domain": "ug.edu.pl",
@@ -267,11 +267,11 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 3094
+      "count": 3100
     },
     {
       "domain": "cloudflare.com",
-      "count": 3048
+      "count": 3051
     },
     {
       "domain": "gdynia.pl",
@@ -283,7 +283,7 @@
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 2255
+      "count": 2261
     },
     {
       "domain": "twitter.com",
@@ -291,7 +291,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 2084
+      "count": 2089
     },
     {
       "domain": "mixbet.radom.pl",
@@ -323,7 +323,7 @@
     },
     {
       "domain": "wordpress.org",
-      "count": 1287
+      "count": 1290
     },
     {
       "domain": "goo.gl",
@@ -351,7 +351,7 @@
     },
     {
       "domain": "tiktok.com",
-      "count": 998
+      "count": 1002
     },
     {
       "domain": "pm.szczecin.pl",
@@ -367,7 +367,7 @@
     },
     {
       "domain": "x.com",
-      "count": 742
+      "count": 744
     },
     {
       "domain": "sopot.pl",
@@ -378,12 +378,12 @@
       "count": 664
     },
     {
-      "domain": "czestochowa.pl",
-      "count": 653
+      "domain": "wp.com",
+      "count": 661
     },
     {
-      "domain": "wp.com",
-      "count": 652
+      "domain": "czestochowa.pl",
+      "count": 653
     },
     {
       "domain": "edu.wroclaw.pl",
@@ -391,7 +391,7 @@
     },
     {
       "domain": "cookiedatabase.org",
-      "count": 590
+      "count": 595
     },
     {
       "domain": "www.bydgoszcz.pl",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 33416,
+    "editorial_link": 33420,
     "form_destination": 3322,
     "image_or_media_dependency": 6754,
     "script_dependency": 8761,
     "stylesheet_dependency": 7648,
     "font_or_preload_dependency": 1836
   },
-  "generated_at": "2026-09-30T12:47:59.628170+00:00"
+  "generated_at": "2026-09-30T22:44:12.189062+00:00"
 }

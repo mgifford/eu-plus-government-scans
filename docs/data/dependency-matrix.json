@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T18:43:34.277890+00:00",
+  "generated_at": "2026-09-30T22:44:15.034393+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -173,7 +173,7 @@
     {
       "service": "googleapis.com",
       "countries": 32,
-      "domains": 4269
+      "domains": 4268
     },
     {
       "service": "googletagmanager.com",
@@ -183,7 +183,7 @@
     {
       "service": "gstatic.com",
       "countries": 32,
-      "domains": 1710
+      "domains": 1709
     },
     {
       "service": "jsdelivr.net",
@@ -596,9 +596,9 @@
       "country_code": "FRANCE",
       "country": "France",
       "service": "googleapis.com",
-      "domains": 233,
+      "domains": 232,
       "scanned_domains": 669,
-      "percent": 34.8
+      "percent": 34.7
     },
     {
       "country_code": "FRANCE",
@@ -612,9 +612,9 @@
       "country_code": "FRANCE",
       "country": "France",
       "service": "gstatic.com",
-      "domains": 116,
+      "domains": 115,
       "scanned_domains": 669,
-      "percent": 17.3
+      "percent": 17.2
     },
     {
       "country_code": "FRANCE",

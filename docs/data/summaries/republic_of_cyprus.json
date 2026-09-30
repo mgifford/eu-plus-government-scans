@@ -1,6 +1,6 @@
 {
   "country_code": "REPUBLIC_OF_CYPRUS",
-  "total_relationships": 317017,
+  "total_relationships": 317046,
   "total_source_domains": 9154,
   "top_source_domains": [
     {
@@ -17,7 +17,7 @@
     },
     {
       "domain": "krakow.pl",
-      "count": 60725
+      "count": 61181
     },
     {
       "domain": "gouv.qc.ca",
@@ -25,7 +25,7 @@
     },
     {
       "domain": "poznan.pl",
-      "count": 40491
+      "count": 40544
     },
     {
       "domain": "esteri.it",
@@ -53,11 +53,11 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 29029
+      "count": 29084
     },
     {
       "domain": "gencat.cat",
-      "count": 25337
+      "count": 25414
     },
     {
       "domain": "gov.mt",
@@ -85,7 +85,7 @@
     },
     {
       "domain": "gva.es",
-      "count": 13693
+      "count": 13764
     },
     {
       "domain": "xunta.gal",
@@ -185,7 +185,7 @@
     },
     {
       "domain": "gouvernement.lu",
-      "count": 6557
+      "count": 6644
     },
     {
       "domain": "ostrava.cz",
@@ -201,17 +201,17 @@
     },
     {
       "domain": "developpement-durable.gouv.fr",
-      "count": 5599
+      "count": 5621
     }
   ],
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 78643
+      "count": 78758
     },
     {
       "domain": "googleapis.com",
-      "count": 63017
+      "count": 63115
     },
     {
       "domain": "sachsen.de",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 46526
+      "count": 46588
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -231,19 +231,19 @@
     },
     {
       "domain": "youtube.com",
-      "count": 44128
+      "count": 44189
     },
     {
       "domain": "twitter.com",
-      "count": 37626
+      "count": 37692
     },
     {
       "domain": "google.com",
-      "count": 35747
+      "count": 35770
     },
     {
       "domain": "linkedin.com",
-      "count": 33055
+      "count": 33121
     },
     {
       "domain": "gouv.qc.ca",
@@ -251,11 +251,11 @@
     },
     {
       "domain": "krakow.pl",
-      "count": 29971
+      "count": 30170
     },
     {
       "domain": "googletagmanager.com",
-      "count": 29730
+      "count": 29753
     },
     {
       "domain": "niedersachsen.de",
@@ -271,7 +271,7 @@
     },
     {
       "domain": "poznan.pl",
-      "count": 20357
+      "count": 20382
     },
     {
       "domain": "bayern.de",
@@ -279,11 +279,11 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 19413
+      "count": 19426
     },
     {
       "domain": "cloudflare.com",
-      "count": 18782
+      "count": 18808
     },
     {
       "domain": "lodz.pl",
@@ -295,7 +295,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 16439
+      "count": 16466
     },
     {
       "domain": "nrw.de",
@@ -303,11 +303,11 @@
     },
     {
       "domain": "gencat.cat",
-      "count": 14832
+      "count": 14852
     },
     {
       "domain": "castillalamancha.es",
-      "count": 14373
+      "count": 14403
     },
     {
       "domain": "gov.mt",
@@ -327,7 +327,7 @@
     },
     {
       "domain": "fontawesome.com",
-      "count": 9338
+      "count": 9348
     },
     {
       "domain": "hamburg.de",
@@ -335,7 +335,11 @@
     },
     {
       "domain": "x.com",
-      "count": 8939
+      "count": 8948
+    },
+    {
+      "domain": "gva.es",
+      "count": 8581
     },
     {
       "domain": "haute-garonne.fr",
@@ -343,15 +347,11 @@
     },
     {
       "domain": "europa.eu",
-      "count": 8521
-    },
-    {
-      "domain": "gva.es",
-      "count": 8514
+      "count": 8527
     },
     {
       "domain": "unpkg.com",
-      "count": 8045
+      "count": 8059
     },
     {
       "domain": "diplo.de",
@@ -367,11 +367,11 @@
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 7190
+      "count": 7210
     },
     {
       "domain": "jquery.com",
-      "count": 7061
+      "count": 7064
     },
     {
       "domain": "gdansk.pl",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 163158,
-    "form_destination": 21200,
-    "image_or_media_dependency": 33350,
-    "script_dependency": 50563,
-    "stylesheet_dependency": 40340,
-    "font_or_preload_dependency": 8406
+    "editorial_link": 163182,
+    "form_destination": 21203,
+    "image_or_media_dependency": 33354,
+    "script_dependency": 50566,
+    "stylesheet_dependency": 40336,
+    "font_or_preload_dependency": 8405
   },
-  "generated_at": "2026-09-30T18:43:29.852817+00:00"
+  "generated_at": "2026-09-30T22:44:10.396071+00:00"
 }
