@@ -5,10 +5,10 @@ layout: page
 
 <!-- TECH_LIGHTHOUSE_STATS_START -->
 
-_Generated: 2026-09-30 15:42 UTC_
+_Generated: 2026-09-30 16:12 UTC_
 
-**33,543** URLs with both technology detection and Lighthouse scores
-out of **73,942** technology-detected URLs and **36,672** Lighthouse-audited URLs
+**33,827** URLs with both technology detection and Lighthouse scores
+out of **73,942** technology-detected URLs and **36,966** Lighthouse-audited URLs
 
 ---
 
@@ -18,36 +18,36 @@ Average Google Lighthouse scores (0–100) for pages where each technology was d
 
 | # | Technology | Pages | Countries | Perf | A11y | Best Prac | SEO |
 |--:|-----------|------:|----------:|-----:|-----:|----------:|----:|
-| 1 | jQuery | **19,940** | 32 | 88 | 89 | 90 | 89 |
-| 2 | PHP | **11,626** | 32 | 88 | 89 | 91 | 90 |
-| 3 | Apache | **9,877** | 32 | 86 | 84 | 88 | 87 |
-| 4 | Bootstrap | **9,339** | 32 | 88 | 89 | 91 | 88 |
-| 5 | Font Awesome | **8,842** | 32 | 87 | 89 | 89 | 89 |
-| 6 | Google Tag Manager | **7,543** | 32 | 87 | 90 | 89 | 89 |
-| 7 | Google Font API | **7,263** | 32 | 87 | 88 | 89 | 89 |
-| 8 | MySQL | **6,733** | 32 | 88 | 89 | 90 | 90 |
-| 9 | WordPress | **6,693** | 32 | 88 | 89 | 90 | 90 |
-| 10 | Nginx | **6,032** | 32 | 88 | 90 | 92 | 89 |
-| 11 | jQuery Migrate | **5,837** | 32 | 87 | 88 | 89 | 89 |
-| 12 | Windows Server | **4,015** | 32 | 89 | 87 | 89 | 86 |
-| 13 | IIS | **3,946** | 32 | 89 | 87 | 89 | 86 |
-| 14 | Microsoft ASP.NET | **3,384** | 32 | 89 | 88 | 88 | 86 |
-| 15 | jQuery UI | **3,369** | 32 | 88 | 87 | 88 | 87 |
+| 1 | jQuery | **20,139** | 32 | 88 | 89 | 90 | 89 |
+| 2 | PHP | **11,673** | 32 | 88 | 89 | 91 | 90 |
+| 3 | Apache | **9,943** | 32 | 86 | 84 | 88 | 87 |
+| 4 | Bootstrap | **9,467** | 32 | 88 | 89 | 91 | 88 |
+| 5 | Font Awesome | **8,886** | 32 | 87 | 89 | 89 | 89 |
+| 6 | Google Tag Manager | **7,593** | 32 | 87 | 90 | 89 | 89 |
+| 7 | Google Font API | **7,315** | 32 | 87 | 88 | 89 | 89 |
+| 8 | MySQL | **6,749** | 32 | 88 | 89 | 90 | 90 |
+| 9 | WordPress | **6,709** | 32 | 88 | 89 | 90 | 90 |
+| 10 | Nginx | **6,150** | 32 | 88 | 90 | 92 | 89 |
+| 11 | jQuery Migrate | **5,845** | 32 | 87 | 88 | 89 | 89 |
+| 12 | Windows Server | **4,030** | 32 | 89 | 87 | 89 | 86 |
+| 13 | IIS | **3,961** | 32 | 89 | 87 | 89 | 86 |
+| 14 | jQuery UI | **3,463** | 32 | 87 | 88 | 89 | 87 |
+| 15 | Microsoft ASP.NET | **3,394** | 32 | 89 | 88 | 88 | 86 |
 | 16 | Cloudflare | **3,130** | 32 | 90 | 90 | 84 | 83 |
-| 17 | jsDelivr | **2,638** | 32 | 88 | 89 | 90 | 88 |
-| 18 | Drupal | **2,576** | 28 | 88 | 93 | 93 | 92 |
+| 17 | jsDelivr | **2,654** | 32 | 88 | 89 | 90 | 88 |
+| 18 | Drupal | **2,593** | 28 | 88 | 93 | 92 | 92 |
 | 19 | Yoast SEO | **2,384** | 29 | 87 | 88 | 88 | 89 |
-| 20 | reCAPTCHA | **1,975** | 30 | 88 | 89 | 88 | 89 |
-| 21 | Lightbox | **1,856** | 32 | 87 | 88 | 89 | 88 |
-| 22 | Slick | **1,823** | 30 | 83 | 88 | 91 | 88 |
-| 23 | Java | **1,728** | 29 | 86 | 94 | 93 | 89 |
-| 24 | Modernizr | **1,705** | 30 | 88 | 89 | 89 | 89 |
-| 25 | Elementor | **1,518** | 27 | 85 | 88 | 87 | 89 |
-| 26 | OWL Carousel | **1,254** | 28 | 84 | 86 | 86 | 87 |
-| 27 | Adobe Experience Manager | **1,202** | 10 | 84 | 98 | 96 | 91 |
-| 28 | Ubuntu | **1,202** | 28 | 91 | 88 | 94 | 87 |
-| 29 | Cart Functionality | **1,123** | 24 | 86 | 87 | 88 | 89 |
-| 30 | Varnish | **1,056** | 25 | 87 | 94 | 93 | 93 |
+| 20 | reCAPTCHA | **2,019** | 30 | 87 | 89 | 88 | 89 |
+| 21 | Lightbox | **1,863** | 32 | 87 | 87 | 89 | 88 |
+| 22 | Slick | **1,825** | 30 | 83 | 88 | 91 | 88 |
+| 23 | Java | **1,779** | 29 | 86 | 94 | 93 | 89 |
+| 24 | Modernizr | **1,710** | 30 | 88 | 89 | 89 | 89 |
+| 25 | Elementor | **1,521** | 27 | 85 | 88 | 87 | 89 |
+| 26 | OWL Carousel | **1,264** | 28 | 84 | 86 | 86 | 87 |
+| 27 | Adobe Experience Manager | **1,244** | 10 | 84 | 98 | 96 | 91 |
+| 28 | Ubuntu | **1,206** | 28 | 91 | 88 | 94 | 87 |
+| 29 | Cart Functionality | **1,156** | 24 | 85 | 87 | 88 | 89 |
+| 30 | Varnish | **1,060** | 25 | 87 | 94 | 93 | 93 |
 
 ## Top Technologies by Country
 
