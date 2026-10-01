@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-10-01 13:51 UTC — last scan: 2026-10-01_
+_Stats as of 2026-10-01 16:11 UTC — last scan: 2026-10-01_
 
-**309** scan batches run
+**311** scan batches run
 
 **87,690** of **87,696** available pages scanned (**100.0%** coverage)
-**79,865** of **87,690** scanned pages were reachable (**91.1%**)
-**37,380** reachable pages loaded at least one third-party script (**46.8%** of reachable)
-**46,622** known third-party service loads identified
+**79,986** of **87,690** scanned pages were reachable (**91.2%**)
+**37,406** reachable pages loaded at least one third-party script (**46.8%** of reachable)
+**46,642** known third-party service loads identified
 **26** unique known services across **17** categories
 
 ---
@@ -36,14 +36,14 @@ _Stats as of 2026-10-01 13:51 UTC — last scan: 2026-10-01_
 | Hungary | 392 | 392 | 296 | 132 | 200 | 44.6 | 67.6 | 2026-09-25 |
 | Iceland | 145 | 145 | 143 | 78 | 45 | 54.5 | 31.5 | 2026-09-26 |
 | Ireland | 536 | 536 | 499 | 272 | 725 | 54.5 | 145.3 | 2026-09-26 |
-| Italy | 5,351 | 5,351 | 4,408 | 1,586 | 1,428 | 36.0 | 32.4 | 2026-09-27 |
+| Italy | 5,351 | 5,351 | 4,521 | 1,609 | 1,466 | 35.6 | 32.4 | 2026-10-01 |
 | Latvia | 803 | 803 | 762 | 263 | 286 | 34.5 | 37.5 | 2026-09-26 |
 | Lithuania | 122 | 122 | 114 | 57 | 111 | 50.0 | 97.4 | 2026-09-26 |
 | Luxembourg | 573 | 573 | 533 | 400 | 337 | 75.0 | 63.2 | 2026-09-26 |
 | Malta | 610 | 610 | 595 | 467 | 1,278 | 78.5 | 214.8 | 2026-09-26 |
 | Netherlands | 945 | 945 | 903 | 361 | 269 | 40.0 | 29.8 | 2026-09-27 |
 | Norway | 249 | 249 | 243 | 137 | 108 | 56.4 | 44.4 | 2026-09-26 |
-| Poland | 14,951 | 14,951 | 13,475 | 6,946 | 9,837 | 51.5 | 73.0 | 2026-09-29 |
+| Poland | 14,951 | 14,951 | 13,483 | 6,949 | 9,819 | 51.5 | 72.8 | 2026-10-01 |
 | Portugal | 3,508 | 3,508 | 2,936 | 1,112 | 1,907 | 37.9 | 65.0 | 2026-09-29 |
 | Cyprus | 29 | 29 | 29 | 13 | 15 | 44.8 | 51.7 | 2026-09-26 |
 | Romania | 807 | 807 | 349 | 256 | 264 | 73.4 | 75.6 | 2026-09-27 |
@@ -62,23 +62,23 @@ _Stats as of 2026-10-01 13:51 UTC — last scan: 2026-10-01_
 
 | # | Service | Loads |
 |--:|---------|------:|
-| 1 | Google Analytics (GA4) | **8,491** |
+| 1 | Google Analytics (GA4) | **8,488** |
 | 2 | cdnjs (Cloudflare CDN) | **7,596** |
-| 3 | jsDelivr CDN | **6,824** |
-| 4 | Google reCAPTCHA | **4,811** |
-| 5 | Google Tag Manager | **4,087** |
-| 6 | Google Hosted Libraries | **3,219** |
-| 7 | unpkg CDN | **2,863** |
-| 8 | jQuery | **2,758** |
-| 9 | Font Awesome | **1,914** |
-| 10 | Bootstrap | **950** |
-| 11 | Cookiebot | **805** |
+| 3 | jsDelivr CDN | **6,839** |
+| 4 | Google reCAPTCHA | **4,814** |
+| 5 | Google Tag Manager | **4,095** |
+| 6 | Google Hosted Libraries | **3,216** |
+| 7 | unpkg CDN | **2,865** |
+| 8 | jQuery | **2,760** |
+| 9 | Font Awesome | **1,909** |
+| 10 | Bootstrap | **947** |
+| 11 | Cookiebot | **806** |
 | 12 | Adobe Dynamic Tag Management / Launch | **497** |
 | 13 | Facebook Pixel | **459** |
 | 14 | CookieInformation | **330** |
 | 15 | OneTrust | **290** |
 | 16 | Sentry | **225** |
-| 17 | Cloudflare Turnstile / Challenge | **203** |
+| 17 | Cloudflare Turnstile / Challenge | **206** |
 | 18 | Google Analytics (Universal) | **83** |
 | 19 | Usercentrics | **60** |
 | 20 | Matomo Cloud | **48** |
@@ -87,23 +87,23 @@ _Stats as of 2026-10-01 13:51 UTC — last scan: 2026-10-01_
 
 | # | Service | Reachable Pages | Prevalence of Reachable Pages |
 |--:|---------|----------------:|------------------------------:|
-| 1 | Google Analytics (GA4) | **8,261** | **44.7%** |
-| 2 | jsDelivr CDN | **4,546** | **24.6%** |
-| 3 | Google reCAPTCHA | **4,531** | **24.5%** |
+| 1 | Google Analytics (GA4) | **8,258** | **44.7%** |
+| 2 | jsDelivr CDN | **4,550** | **24.6%** |
+| 3 | Google reCAPTCHA | **4,534** | **24.5%** |
 | 4 | cdnjs (Cloudflare CDN) | **3,975** | **21.5%** |
-| 5 | Google Tag Manager | **3,895** | **21.1%** |
-| 6 | Google Hosted Libraries | **2,896** | **15.7%** |
-| 7 | unpkg CDN | **2,238** | **12.1%** |
-| 8 | jQuery | **2,178** | **11.8%** |
-| 9 | Font Awesome | **1,507** | **8.2%** |
-| 10 | Bootstrap | **943** | **5.1%** |
-| 11 | Cookiebot | **785** | **4.2%** |
+| 5 | Google Tag Manager | **3,903** | **21.1%** |
+| 6 | Google Hosted Libraries | **2,893** | **15.7%** |
+| 7 | unpkg CDN | **2,240** | **12.1%** |
+| 8 | jQuery | **2,179** | **11.8%** |
+| 9 | Font Awesome | **1,504** | **8.1%** |
+| 10 | Bootstrap | **940** | **5.1%** |
+| 11 | Cookiebot | **786** | **4.3%** |
 | 12 | Adobe Dynamic Tag Management / Launch | **494** | **2.7%** |
 | 13 | Facebook Pixel | **442** | **2.4%** |
 | 14 | CookieInformation | **330** | **1.8%** |
 | 15 | OneTrust | **216** | **1.2%** |
 | 16 | Sentry | **212** | **1.1%** |
-| 17 | Cloudflare Turnstile / Challenge | **203** | **1.1%** |
+| 17 | Cloudflare Turnstile / Challenge | **206** | **1.1%** |
 | 18 | Google Analytics (Universal) | **82** | **0.4%** |
 | 19 | Usercentrics | **60** | **0.3%** |
 | 20 | Matomo Cloud | **48** | **0.3%** |
@@ -112,15 +112,15 @@ _Stats as of 2026-10-01 13:51 UTC — last scan: 2026-10-01_
 
 | # | Category | Loads |
 |--:|----------|------:|
-| 1 | CDN | **20,502** |
-| 2 | Analytics | **9,599** |
-| 3 | JavaScript Library | **5,977** |
-| 4 | Security | **5,014** |
-| 5 | CAPTCHA | **4,811** |
-| 6 | Tag Manager | **4,584** |
-| 7 | Icon Library | **1,914** |
-| 8 | Cookie Consent | **1,485** |
-| 9 | UI Framework | **950** |
+| 1 | CDN | **20,516** |
+| 2 | Analytics | **9,596** |
+| 3 | JavaScript Library | **5,976** |
+| 4 | Security | **5,020** |
+| 5 | CAPTCHA | **4,814** |
+| 6 | Tag Manager | **4,592** |
+| 7 | Icon Library | **1,909** |
+| 8 | Cookie Consent | **1,486** |
+| 9 | UI Framework | **947** |
 | 10 | Advertising | **459** |
 | 11 | Error Tracking | **225** |
 | 12 | Payments | **46** |
@@ -134,20 +134,20 @@ Infrastructure-heavy categories (CDNs, core libraries, and UI assets):
 
 | # | Infrastructure Category | Loads |
 |--:|--------------------------|------:|
-| 1 | CDN | **20,502** |
-| 2 | JavaScript Library | **5,977** |
-| 3 | Icon Library | **1,914** |
-| 4 | UI Framework | **950** |
+| 1 | CDN | **20,516** |
+| 2 | JavaScript Library | **5,976** |
+| 3 | Icon Library | **1,909** |
+| 4 | UI Framework | **947** |
 
 Policy-relevant categories (tracking, consent, support, and security tooling):
 
 | # | Policy-Relevant Category | Loads |
 |--:|--------------------------|------:|
-| 1 | Analytics | **9,599** |
-| 2 | Security | **5,014** |
-| 3 | CAPTCHA | **4,811** |
-| 4 | Tag Manager | **4,584** |
-| 5 | Cookie Consent | **1,485** |
+| 1 | Analytics | **9,596** |
+| 2 | Security | **5,020** |
+| 3 | CAPTCHA | **4,814** |
+| 4 | Tag Manager | **4,592** |
+| 5 | Cookie Consent | **1,486** |
 | 6 | Advertising | **459** |
 | 7 | Error Tracking | **225** |
 | 8 | Payments | **46** |
@@ -164,17 +164,17 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 | 1 | `cdn.ent.auvergnerhonealpes.fr` | **15,267** | **1,650** |
 | 2 | `cdn.ecollege.haute-garonne.fr` | **2,494** | **270** |
 | 3 | `translate.google.com` | **2,281** | **2,278** |
-| 4 | `maps.googleapis.com` | **1,744** | **1,726** |
+| 4 | `maps.googleapis.com` | **1,746** | **1,728** |
 | 5 | `www.cqc.org.uk` | **1,711** | **1,698** |
 | 6 | `static.parastorage.com` | **1,572** | **147** |
 | 7 | `content.powerapps.com` | **1,546** | **128** |
 | 8 | `www.styleguide.sachsen.de` | **1,279** | **320** |
 | 9 | `cc.cdn.civiccomputing.com` | **955** | **949** |
 | 10 | `ajax.aspnetcdn.com` | **903** | **446** |
-| 11 | `static.addtoany.com` | **848** | **831** |
+| 11 | `static.addtoany.com` | **851** | **834** |
 | 12 | `dksxg5o1pn16c.cloudfront.net` | **762** | **56** |
 | 13 | `d2m1owqtx0c1qg.cloudfront.net` | **762** | **396** |
-| 14 | `cdn-cookieyes.com` | **753** | **749** |
+| 14 | `cdn-cookieyes.com` | **754** | **750** |
 | 15 | `cdn.xl.pt` | **709** | **13** |
 
 > These hosts were seen as third-party script sources but did not match a known service signature. Review this queue regularly and promote stable, policy-relevant hosts into the signature list.
