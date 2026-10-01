@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T13:01:36.130229+00:00",
+  "generated_at": "2026-10-01T23:12:30.207482+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -173,12 +173,12 @@
     {
       "service": "googleapis.com",
       "countries": 32,
-      "domains": 4268
+      "domains": 4269
     },
     {
       "service": "googletagmanager.com",
       "countries": 32,
-      "domains": 2772
+      "domains": 2771
     },
     {
       "service": "gstatic.com",
@@ -203,7 +203,7 @@
     {
       "service": "cloudflare.com",
       "countries": 31,
-      "domains": 1578
+      "domains": 1577
     },
     {
       "service": "jquery.com",
@@ -258,7 +258,7 @@
     {
       "service": "cdn-cookieyes.com",
       "countries": 18,
-      "domains": 178
+      "domains": 179
     },
     {
       "service": "fbcdn.net",
@@ -1716,17 +1716,17 @@
       "country_code": "ITALY",
       "country": "Italy",
       "service": "googleapis.com",
-      "domains": 87,
+      "domains": 88,
       "scanned_domains": 146,
-      "percent": 59.6
+      "percent": 60.3
     },
     {
       "country_code": "ITALY",
       "country": "Italy",
       "service": "googletagmanager.com",
-      "domains": 33,
+      "domains": 32,
       "scanned_domains": 146,
-      "percent": 22.6
+      "percent": 21.9
     },
     {
       "country_code": "ITALY",
@@ -1764,9 +1764,9 @@
       "country_code": "ITALY",
       "country": "Italy",
       "service": "cloudflare.com",
-      "domains": 39,
+      "domains": 38,
       "scanned_domains": 146,
-      "percent": 26.7
+      "percent": 26.0
     },
     {
       "country_code": "ITALY",
@@ -1852,9 +1852,9 @@
       "country_code": "ITALY",
       "country": "Italy",
       "service": "cdn-cookieyes.com",
-      "domains": 5,
+      "domains": 6,
       "scanned_domains": 146,
-      "percent": 3.4
+      "percent": 4.1
     },
     {
       "country_code": "ITALY",

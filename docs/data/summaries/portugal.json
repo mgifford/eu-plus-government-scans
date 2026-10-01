@@ -211,11 +211,11 @@
     },
     {
       "domain": "facebook.com",
-      "count": 3150
+      "count": 3152
     },
     {
       "domain": "youtube.com",
-      "count": 2529
+      "count": 2531
     },
     {
       "domain": "instagram.com",
@@ -227,7 +227,7 @@
     },
     {
       "domain": "google.com",
-      "count": 2086
+      "count": 2088
     },
     {
       "domain": "madeira.gov.pt",
@@ -239,7 +239,7 @@
     },
     {
       "domain": "livroreclamacoes.pt",
-      "count": 1302
+      "count": 1304
     },
     {
       "domain": "justica.gov.pt",
@@ -251,19 +251,19 @@
     },
     {
       "domain": "portugal.gov.pt",
-      "count": 1174
+      "count": 1176
     },
     {
       "domain": "parlamento.pt",
-      "count": 1131
+      "count": 1133
     },
     {
       "domain": "wiremaze.com",
-      "count": 1127
+      "count": 1129
     },
     {
       "domain": "twitter.com",
-      "count": 1113
+      "count": 1115
     },
     {
       "domain": "jsdelivr.net",
@@ -271,7 +271,7 @@
     },
     {
       "domain": "presidencia.pt",
-      "count": 1043
+      "count": 1045
     },
     {
       "domain": "gstatic.com",
@@ -291,7 +291,7 @@
     },
     {
       "domain": "anmp.pt",
-      "count": 671
+      "count": 673
     },
     {
       "domain": "w3.org",
@@ -414,5 +414,5 @@
     "form_destination": 755,
     "image_or_media_dependency": 1137
   },
-  "generated_at": "2026-10-01T13:01:30.412996+00:00"
+  "generated_at": "2026-10-01T23:12:26.814477+00:00"
 }
