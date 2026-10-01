@@ -179,13 +179,13 @@ CANADA,Canada,arcgis.com,19,190,10.0
 CANADA,Canada,cdn-cookieyes.com,1,190,0.5
 CANADA,Canada,fbcdn.net,1,190,0.5
 CANADA,Canada,mapbox.com,3,190,1.6
-ITALY,Italy,googleapis.com,87,146,59.6
-ITALY,Italy,googletagmanager.com,33,146,22.6
+ITALY,Italy,googleapis.com,88,146,60.3
+ITALY,Italy,googletagmanager.com,32,146,21.9
 ITALY,Italy,gstatic.com,30,146,20.5
 ITALY,Italy,jsdelivr.net,53,146,36.3
 ITALY,Italy,fontawesome.com,25,146,17.1
 ITALY,Italy,google.com,34,146,23.3
-ITALY,Italy,cloudflare.com,39,146,26.7
+ITALY,Italy,cloudflare.com,38,146,26.0
 ITALY,Italy,jquery.com,39,146,26.7
 ITALY,Italy,unpkg.com,15,146,10.3
 ITALY,Italy,bootstrapcdn.com,18,146,12.3
@@ -196,7 +196,7 @@ ITALY,Italy,facebook.net,5,146,3.4
 ITALY,Italy,amazonaws.com,6,146,4.1
 ITALY,Italy,addtoany.com,11,146,7.5
 ITALY,Italy,arcgis.com,3,146,2.1
-ITALY,Italy,cdn-cookieyes.com,5,146,3.4
+ITALY,Italy,cdn-cookieyes.com,6,146,4.1
 ITALY,Italy,fbcdn.net,0,146,0.0
 ITALY,Italy,mapbox.com,1,146,0.7
 LATVIA,Latvia,googleapis.com,38,141,27.0
