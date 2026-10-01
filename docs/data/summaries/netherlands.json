@@ -93,7 +93,7 @@
     },
     {
       "domain": "alphenaandenrijn.nl",
-      "count": 299
+      "count": 301
     },
     {
       "domain": "rechtspraak.nl",
@@ -339,7 +339,7 @@
     },
     {
       "domain": "alphenaandenrijn.nl",
-      "count": 152
+      "count": 154
     },
     {
       "domain": "googletagmanager.com",
@@ -414,5 +414,5 @@
     "script_dependency": 555,
     "stylesheet_dependency": 442
   },
-  "generated_at": "2026-09-30T22:44:10.760459+00:00"
+  "generated_at": "2026-10-01T05:09:28.499283+00:00"
 }

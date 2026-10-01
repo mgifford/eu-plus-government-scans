@@ -139,10 +139,10 @@ SWEDEN,Sweden,arcgis.com,0,241,0.0
 SWEDEN,Sweden,cdn-cookieyes.com,3,241,1.2
 SWEDEN,Sweden,fbcdn.net,1,241,0.4
 SWEDEN,Sweden,mapbox.com,1,241,0.4
-GERMANY,Germany,googleapis.com,15,215,7.0
-GERMANY,Germany,googletagmanager.com,7,215,3.3
+GERMANY,Germany,googleapis.com,14,215,6.5
+GERMANY,Germany,googletagmanager.com,6,215,2.8
 GERMANY,Germany,gstatic.com,8,215,3.7
-GERMANY,Germany,jsdelivr.net,16,215,7.4
+GERMANY,Germany,jsdelivr.net,14,215,6.5
 GERMANY,Germany,fontawesome.com,3,215,1.4
 GERMANY,Germany,google.com,4,215,1.9
 GERMANY,Germany,cloudflare.com,14,215,6.5
@@ -151,7 +151,7 @@ GERMANY,Germany,unpkg.com,4,215,1.9
 GERMANY,Germany,bootstrapcdn.com,6,215,2.8
 GERMANY,Germany,typekit.net,2,215,0.9
 GERMANY,Germany,cookiebot.com,11,215,5.1
-GERMANY,Germany,facebook.com,2,215,0.9
+GERMANY,Germany,facebook.com,1,215,0.5
 GERMANY,Germany,facebook.net,0,215,0.0
 GERMANY,Germany,amazonaws.com,6,215,2.8
 GERMANY,Germany,addtoany.com,2,215,0.9

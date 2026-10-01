@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T22:44:15.034393+00:00",
+  "generated_at": "2026-10-01T05:09:31.228164+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -173,12 +173,12 @@
     {
       "service": "googleapis.com",
       "countries": 32,
-      "domains": 4268
+      "domains": 4267
     },
     {
       "service": "googletagmanager.com",
       "countries": 32,
-      "domains": 2773
+      "domains": 2772
     },
     {
       "service": "gstatic.com",
@@ -188,7 +188,7 @@
     {
       "service": "jsdelivr.net",
       "countries": 32,
-      "domains": 1154
+      "domains": 1152
     },
     {
       "service": "fontawesome.com",
@@ -233,7 +233,7 @@
     {
       "service": "facebook.com",
       "countries": 23,
-      "domains": 217
+      "domains": 216
     },
     {
       "service": "facebook.net",
@@ -1396,17 +1396,17 @@
       "country_code": "GERMANY",
       "country": "Germany",
       "service": "googleapis.com",
-      "domains": 15,
+      "domains": 14,
       "scanned_domains": 215,
-      "percent": 7.0
+      "percent": 6.5
     },
     {
       "country_code": "GERMANY",
       "country": "Germany",
       "service": "googletagmanager.com",
-      "domains": 7,
+      "domains": 6,
       "scanned_domains": 215,
-      "percent": 3.3
+      "percent": 2.8
     },
     {
       "country_code": "GERMANY",
@@ -1420,9 +1420,9 @@
       "country_code": "GERMANY",
       "country": "Germany",
       "service": "jsdelivr.net",
-      "domains": 16,
+      "domains": 14,
       "scanned_domains": 215,
-      "percent": 7.4
+      "percent": 6.5
     },
     {
       "country_code": "GERMANY",
@@ -1492,9 +1492,9 @@
       "country_code": "GERMANY",
       "country": "Germany",
       "service": "facebook.com",
-      "domains": 2,
+      "domains": 1,
       "scanned_domains": 215,
-      "percent": 0.9
+      "percent": 0.5
     },
     {
       "country_code": "GERMANY",
