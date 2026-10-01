@@ -9,7 +9,7 @@
     },
     {
       "domain": "public.lu",
-      "count": 4656
+      "count": 5089
     },
     {
       "domain": "uni.lu",
@@ -167,23 +167,23 @@
   "top_target_domains": [
     {
       "domain": "public.lu",
-      "count": 4962
+      "count": 5185
     },
     {
       "domain": "gouvernement.lu",
-      "count": 2950
+      "count": 3041
     },
     {
       "domain": "facebook.com",
-      "count": 723
+      "count": 724
     },
     {
       "domain": "linkedin.com",
-      "count": 657
+      "count": 661
     },
     {
       "domain": "uni.lu",
-      "count": 627
+      "count": 629
     },
     {
       "domain": "twitter.com",
@@ -195,19 +195,19 @@
     },
     {
       "domain": "instagram.com",
-      "count": 372
+      "count": 373
     },
     {
       "domain": "etat.lu",
-      "count": 293
-    },
-    {
-      "domain": "youtube.com",
-      "count": 248
+      "count": 299
     },
     {
       "domain": "adobedtm.com",
-      "count": 245
+      "count": 252
+    },
+    {
+      "domain": "youtube.com",
+      "count": 252
     },
     {
       "domain": "europa.eu",
@@ -247,7 +247,7 @@
     },
     {
       "domain": "cita.lu",
-      "count": 89
+      "count": 91
     },
     {
       "domain": "gstatic.com",
@@ -267,7 +267,7 @@
     },
     {
       "domain": "education.lu",
-      "count": 62
+      "count": 64
     },
     {
       "domain": "typekit.net",
@@ -307,7 +307,11 @@
     },
     {
       "domain": "guichet.lu",
-      "count": 51
+      "count": 52
+    },
+    {
+      "domain": "geoportail.lu",
+      "count": 46
     },
     {
       "domain": "tiktok.com",
@@ -330,8 +334,8 @@
       "count": 45
     },
     {
-      "domain": "geoportail.lu",
-      "count": 44
+      "domain": "readspeaker.com",
+      "count": 43
     },
     {
       "domain": "petitiounen.lu",
@@ -342,12 +346,12 @@
       "count": 42
     },
     {
-      "domain": "petange.lu",
+      "domain": "meteolux.lu",
       "count": 39
     },
     {
-      "domain": "readspeaker.com",
-      "count": 38
+      "domain": "petange.lu",
+      "count": 39
     },
     {
       "domain": "luxembourg.lu",
@@ -358,12 +362,8 @@
       "count": 36
     },
     {
-      "domain": "kaltura.com",
+      "domain": "ilr.lu",
       "count": 36
-    },
-    {
-      "domain": "meteolux.lu",
-      "count": 35
     }
   ],
   "relationship_types": {
@@ -374,5 +374,5 @@
     "stylesheet_dependency": 239,
     "font_or_preload_dependency": 29
   },
-  "generated_at": "2026-09-30T22:44:12.061983+00:00"
+  "generated_at": "2026-10-01T13:01:32.769123+00:00"
 }

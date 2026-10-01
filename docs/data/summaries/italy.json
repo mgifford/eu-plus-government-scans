@@ -17,11 +17,11 @@
     },
     {
       "domain": "regione.lombardia.it",
-      "count": 4232
+      "count": 4374
     },
     {
       "domain": "regione.emilia-romagna.it",
-      "count": 3958
+      "count": 3973
     },
     {
       "domain": "regione.veneto.it",
@@ -73,7 +73,7 @@
     },
     {
       "domain": "difesa.it",
-      "count": 1408
+      "count": 1462
     },
     {
       "domain": "comune.torino.it",
@@ -93,7 +93,7 @@
     },
     {
       "domain": "regione.toscana.it",
-      "count": 1033
+      "count": 1053
     },
     {
       "domain": "lavoro.gov.it",
@@ -165,7 +165,7 @@
     },
     {
       "domain": "comune.napoli.it",
-      "count": 598
+      "count": 600
     },
     {
       "domain": "comune.brescia.it",
@@ -215,11 +215,11 @@
     },
     {
       "domain": "facebook.com",
-      "count": 7131
+      "count": 7142
     },
     {
       "domain": "twitter.com",
-      "count": 5765
+      "count": 5777
     },
     {
       "domain": "cultura.gov.it",
@@ -227,15 +227,15 @@
     },
     {
       "domain": "youtube.com",
-      "count": 5646
+      "count": 5652
     },
     {
       "domain": "agid.gov.it",
-      "count": 4512
+      "count": 4514
     },
     {
       "domain": "instagram.com",
-      "count": 4402
+      "count": 4404
     },
     {
       "domain": "governo.it",
@@ -243,15 +243,15 @@
     },
     {
       "domain": "regione.emilia-romagna.it",
-      "count": 2721
+      "count": 2736
     },
     {
       "domain": "europa.eu",
-      "count": 2704
+      "count": 2712
     },
     {
       "domain": "regione.lombardia.it",
-      "count": 2399
+      "count": 2471
     },
     {
       "domain": "viaggiaresicuri.it",
@@ -263,7 +263,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 2037
+      "count": 2045
     },
     {
       "domain": "regione.veneto.it",
@@ -271,7 +271,7 @@
     },
     {
       "domain": "whatsapp.com",
-      "count": 1878
+      "count": 1880
     },
     {
       "domain": "regione.campania.it",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 1633
+      "count": 1635
     },
     {
       "domain": "regione.lazio.it",
@@ -307,7 +307,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 1110
+      "count": 1111
     },
     {
       "domain": "csm.it",
@@ -319,7 +319,7 @@
     },
     {
       "domain": "google.com",
-      "count": 1043
+      "count": 1047
     },
     {
       "domain": "camera.it",
@@ -339,7 +339,7 @@
     },
     {
       "domain": "regione.toscana.it",
-      "count": 854
+      "count": 872
     },
     {
       "domain": "municipiumapp.it",
@@ -350,12 +350,12 @@
       "count": 786
     },
     {
-      "domain": "comune.torino.it",
-      "count": 712
+      "domain": "difesa.it",
+      "count": 719
     },
     {
-      "domain": "difesa.it",
-      "count": 704
+      "domain": "comune.torino.it",
+      "count": 712
     },
     {
       "domain": "cloudflare.com",
@@ -375,7 +375,7 @@
     },
     {
       "domain": "t.me",
-      "count": 602
+      "count": 604
     },
     {
       "domain": "scuolamagistratura.it",
@@ -414,5 +414,5 @@
     "form_destination": 1454,
     "font_or_preload_dependency": 254
   },
-  "generated_at": "2026-09-30T22:44:10.854466+00:00"
+  "generated_at": "2026-10-01T13:01:31.186491+00:00"
 }

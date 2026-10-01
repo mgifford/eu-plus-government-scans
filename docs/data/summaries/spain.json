@@ -9,7 +9,7 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 29084
+      "count": 29107
     },
     {
       "domain": "gva.es",
@@ -211,7 +211,7 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 14403
+      "count": 14414
     },
     {
       "domain": "gva.es",
@@ -219,7 +219,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 3483
+      "count": 3484
     },
     {
       "domain": "twitter.com",
@@ -231,11 +231,11 @@
     },
     {
       "domain": "jccm.es",
-      "count": 2779
+      "count": 2781
     },
     {
       "domain": "google.com",
-      "count": 2748
+      "count": 2749
     },
     {
       "domain": "googleapis.com",
@@ -287,7 +287,7 @@
     },
     {
       "domain": "blogspot.com",
-      "count": 881
+      "count": 882
     },
     {
       "domain": "carm.es",
@@ -311,7 +311,7 @@
     },
     {
       "domain": "google.es",
-      "count": 680
+      "count": 681
     },
     {
       "domain": "hacienda.gob.es",
@@ -414,5 +414,5 @@
     "form_destination": 1455,
     "font_or_preload_dependency": 157
   },
-  "generated_at": "2026-09-30T22:44:11.884668+00:00"
+  "generated_at": "2026-10-01T13:01:31.760326+00:00"
 }
