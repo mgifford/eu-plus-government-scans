@@ -1,7 +1,7 @@
 {
   "country_code": "REPUBLIC_OF_CYPRUS",
-  "total_relationships": 317046,
-  "total_source_domains": 9154,
+  "total_relationships": 317026,
+  "total_source_domains": 9155,
   "top_source_domains": [
     {
       "domain": "sachsen.de",
@@ -180,6 +180,10 @@
       "count": 7057
     },
     {
+      "domain": "bund.de",
+      "count": 6752
+    },
+    {
       "domain": "epfl.ch",
       "count": 6727
     },
@@ -198,24 +202,20 @@
     {
       "domain": "politiaromana.ro",
       "count": 5867
-    },
-    {
-      "domain": "developpement-durable.gouv.fr",
-      "count": 5621
     }
   ],
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 78758
+      "count": 78968
     },
     {
       "domain": "googleapis.com",
-      "count": 63115
+      "count": 63116
     },
     {
       "domain": "sachsen.de",
-      "count": 62872
+      "count": 62873
     },
     {
       "domain": "ethz.ch",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 46588
+      "count": 46856
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -231,19 +231,19 @@
     },
     {
       "domain": "youtube.com",
-      "count": 44189
+      "count": 44377
     },
     {
       "domain": "twitter.com",
-      "count": 37692
+      "count": 37807
     },
     {
       "domain": "google.com",
-      "count": 35770
+      "count": 35817
     },
     {
       "domain": "linkedin.com",
-      "count": 33121
+      "count": 33331
     },
     {
       "domain": "gouv.qc.ca",
@@ -255,15 +255,15 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 29753
+      "count": 29755
     },
     {
       "domain": "niedersachsen.de",
-      "count": 28136
+      "count": 28144
     },
     {
       "domain": "rlp.de",
-      "count": 25948
+      "count": 25949
     },
     {
       "domain": "jcyl.es",
@@ -275,15 +275,15 @@
     },
     {
       "domain": "bayern.de",
-      "count": 20279
+      "count": 20291
     },
     {
       "domain": "jsdelivr.net",
-      "count": 19426
+      "count": 19418
     },
     {
       "domain": "cloudflare.com",
-      "count": 18808
+      "count": 18833
     },
     {
       "domain": "lodz.pl",
@@ -295,11 +295,11 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 16466
+      "count": 16474
     },
     {
       "domain": "nrw.de",
-      "count": 15753
+      "count": 15765
     },
     {
       "domain": "gencat.cat",
@@ -323,19 +323,19 @@
     },
     {
       "domain": "hessen.de",
-      "count": 9637
+      "count": 9640
     },
     {
       "domain": "fontawesome.com",
-      "count": 9348
+      "count": 9351
     },
     {
       "domain": "hamburg.de",
-      "count": 9194
+      "count": 9199
     },
     {
       "domain": "x.com",
-      "count": 8948
+      "count": 9007
     },
     {
       "domain": "gva.es",
@@ -347,15 +347,15 @@
     },
     {
       "domain": "europa.eu",
-      "count": 8527
+      "count": 8557
     },
     {
       "domain": "unpkg.com",
-      "count": 8059
+      "count": 8082
     },
     {
       "domain": "diplo.de",
-      "count": 7945
+      "count": 7952
     },
     {
       "domain": "paris.fr",
@@ -367,11 +367,11 @@
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 7210
+      "count": 7213
     },
     {
       "domain": "jquery.com",
-      "count": 7064
+      "count": 7071
     },
     {
       "domain": "gdansk.pl",
@@ -391,7 +391,7 @@
     },
     {
       "domain": "sachsen-anhalt.de",
-      "count": 6067
+      "count": 6068
     },
     {
       "domain": "canada.ca",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 163182,
+    "editorial_link": 163172,
     "form_destination": 21203,
-    "image_or_media_dependency": 33354,
-    "script_dependency": 50566,
-    "stylesheet_dependency": 40336,
-    "font_or_preload_dependency": 8405
+    "image_or_media_dependency": 33350,
+    "script_dependency": 50563,
+    "stylesheet_dependency": 40332,
+    "font_or_preload_dependency": 8406
   },
-  "generated_at": "2026-09-30T22:44:10.396071+00:00"
+  "generated_at": "2026-10-01T05:09:28.280975+00:00"
 }
