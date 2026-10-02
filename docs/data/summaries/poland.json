@@ -5,7 +5,7 @@
   "top_source_domains": [
     {
       "domain": "krakow.pl",
-      "count": 62573
+      "count": 62588
     },
     {
       "domain": "poznan.pl",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "krakow.pl",
-      "count": 30858
+      "count": 30866
     },
     {
       "domain": "poznan.pl",
@@ -219,11 +219,11 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 18252
+      "count": 18254
     },
     {
       "domain": "facebook.com",
-      "count": 16325
+      "count": 16327
     },
     {
       "domain": "gdansk.pl",
@@ -414,5 +414,5 @@
     "stylesheet_dependency": 7648,
     "font_or_preload_dependency": 1835
   },
-  "generated_at": "2026-10-01T13:01:32.080661+00:00"
+  "generated_at": "2026-10-02T04:47:43.641068+00:00"
 }

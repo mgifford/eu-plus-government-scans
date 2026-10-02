@@ -5,7 +5,7 @@
   "top_source_domains": [
     {
       "domain": "gouvernement.lu",
-      "count": 6644
+      "count": 6799
     },
     {
       "domain": "public.lu",
@@ -167,19 +167,19 @@
   "top_target_domains": [
     {
       "domain": "public.lu",
-      "count": 5185
+      "count": 5222
     },
     {
       "domain": "gouvernement.lu",
-      "count": 3041
+      "count": 3101
     },
     {
       "domain": "facebook.com",
-      "count": 724
+      "count": 733
     },
     {
       "domain": "linkedin.com",
-      "count": 661
+      "count": 674
     },
     {
       "domain": "uni.lu",
@@ -187,15 +187,15 @@
     },
     {
       "domain": "twitter.com",
-      "count": 500
+      "count": 509
     },
     {
       "domain": "bsky.app",
-      "count": 411
+      "count": 420
     },
     {
       "domain": "instagram.com",
-      "count": 373
+      "count": 377
     },
     {
       "domain": "etat.lu",
@@ -203,7 +203,7 @@
     },
     {
       "domain": "adobedtm.com",
-      "count": 252
+      "count": 261
     },
     {
       "domain": "youtube.com",
@@ -211,7 +211,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 209
+      "count": 212
     },
     {
       "domain": "googleapis.com",
@@ -374,5 +374,5 @@
     "stylesheet_dependency": 239,
     "font_or_preload_dependency": 29
   },
-  "generated_at": "2026-10-01T13:01:32.769123+00:00"
+  "generated_at": "2026-10-02T04:47:45.090599+00:00"
 }
