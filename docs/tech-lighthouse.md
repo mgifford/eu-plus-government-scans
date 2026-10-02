@@ -5,10 +5,10 @@ layout: page
 
 <!-- TECH_LIGHTHOUSE_STATS_START -->
 
-_Generated: 2026-10-01 23:52 UTC_
+_Generated: 2026-10-02 04:58 UTC_
 
-**35,982** URLs with both technology detection and Lighthouse scores
-out of **74,016** technology-detected URLs and **39,280** Lighthouse-audited URLs
+**36,484** URLs with both technology detection and Lighthouse scores
+out of **74,016** technology-detected URLs and **39,817** Lighthouse-audited URLs
 
 ---
 
@@ -18,35 +18,35 @@ Average Google Lighthouse scores (0–100) for pages where each technology was d
 
 | # | Technology | Pages | Countries | Perf | A11y | Best Prac | SEO |
 |--:|-----------|------:|----------:|-----:|-----:|----------:|----:|
-| 1 | jQuery | **21,517** | 32 | 88 | 89 | 90 | 89 |
-| 2 | PHP | **12,288** | 32 | 88 | 90 | 91 | 90 |
-| 3 | Apache | **10,858** | 32 | 86 | 84 | 89 | 87 |
-| 4 | Bootstrap | **9,953** | 32 | 88 | 89 | 91 | 88 |
-| 5 | Font Awesome | **9,331** | 32 | 87 | 89 | 89 | 89 |
-| 6 | Google Tag Manager | **7,921** | 32 | 87 | 90 | 89 | 89 |
-| 7 | Google Font API | **7,670** | 32 | 87 | 88 | 89 | 89 |
-| 8 | MySQL | **7,110** | 32 | 88 | 89 | 90 | 90 |
-| 9 | WordPress | **7,067** | 32 | 88 | 89 | 90 | 90 |
-| 10 | Nginx | **6,535** | 32 | 88 | 90 | 92 | 89 |
-| 11 | jQuery Migrate | **6,265** | 32 | 87 | 88 | 89 | 89 |
-| 12 | Windows Server | **4,200** | 32 | 89 | 87 | 89 | 86 |
-| 13 | IIS | **4,130** | 32 | 89 | 87 | 89 | 86 |
-| 14 | jQuery UI | **3,641** | 32 | 87 | 88 | 89 | 87 |
-| 15 | Microsoft ASP.NET | **3,540** | 32 | 89 | 87 | 88 | 86 |
-| 16 | Cloudflare | **3,302** | 32 | 90 | 90 | 84 | 83 |
-| 17 | jsDelivr | **2,744** | 32 | 88 | 89 | 91 | 88 |
-| 18 | Drupal | **2,688** | 28 | 89 | 93 | 92 | 92 |
-| 19 | Yoast SEO | **2,476** | 29 | 87 | 88 | 88 | 90 |
-| 20 | reCAPTCHA | **2,106** | 30 | 87 | 89 | 88 | 89 |
-| 21 | Slick | **1,952** | 30 | 83 | 88 | 91 | 88 |
-| 22 | Lightbox | **1,930** | 32 | 87 | 88 | 89 | 88 |
-| 23 | Java | **1,797** | 29 | 86 | 93 | 93 | 89 |
-| 24 | Modernizr | **1,789** | 30 | 88 | 89 | 89 | 89 |
-| 25 | Elementor | **1,579** | 27 | 85 | 88 | 87 | 89 |
-| 26 | OWL Carousel | **1,312** | 28 | 84 | 86 | 86 | 88 |
-| 27 | Adobe Experience Manager | **1,245** | 10 | 84 | 98 | 96 | 91 |
-| 28 | Ubuntu | **1,232** | 28 | 91 | 88 | 94 | 87 |
-| 29 | Cart Functionality | **1,213** | 24 | 86 | 87 | 88 | 89 |
+| 1 | jQuery | **21,751** | 32 | 88 | 89 | 90 | 89 |
+| 2 | PHP | **12,560** | 32 | 88 | 89 | 91 | 90 |
+| 3 | Apache | **11,142** | 32 | 86 | 84 | 89 | 87 |
+| 4 | Bootstrap | **10,104** | 32 | 88 | 89 | 91 | 88 |
+| 5 | Font Awesome | **9,523** | 32 | 87 | 89 | 90 | 89 |
+| 6 | Google Tag Manager | **8,005** | 32 | 87 | 90 | 89 | 89 |
+| 7 | Google Font API | **7,848** | 32 | 87 | 88 | 89 | 89 |
+| 8 | MySQL | **7,141** | 32 | 88 | 89 | 90 | 90 |
+| 9 | WordPress | **7,098** | 32 | 88 | 89 | 90 | 90 |
+| 10 | Nginx | **6,572** | 32 | 88 | 90 | 92 | 89 |
+| 11 | jQuery Migrate | **6,299** | 32 | 87 | 88 | 89 | 89 |
+| 12 | Windows Server | **4,210** | 32 | 89 | 87 | 89 | 86 |
+| 13 | IIS | **4,140** | 32 | 89 | 87 | 89 | 86 |
+| 14 | jQuery UI | **3,673** | 32 | 87 | 88 | 89 | 87 |
+| 15 | Microsoft ASP.NET | **3,550** | 32 | 89 | 87 | 88 | 86 |
+| 16 | Cloudflare | **3,307** | 32 | 90 | 90 | 84 | 83 |
+| 17 | Drupal | **2,920** | 28 | 89 | 93 | 91 | 92 |
+| 18 | jsDelivr | **2,768** | 32 | 88 | 89 | 91 | 88 |
+| 19 | Yoast SEO | **2,486** | 29 | 87 | 88 | 88 | 90 |
+| 20 | reCAPTCHA | **2,122** | 30 | 87 | 89 | 88 | 89 |
+| 21 | Slick | **1,968** | 30 | 83 | 88 | 91 | 88 |
+| 22 | Lightbox | **1,937** | 32 | 87 | 88 | 89 | 88 |
+| 23 | Java | **1,814** | 29 | 86 | 93 | 93 | 89 |
+| 24 | Modernizr | **1,802** | 30 | 88 | 89 | 89 | 89 |
+| 25 | Elementor | **1,588** | 27 | 85 | 88 | 87 | 89 |
+| 26 | OWL Carousel | **1,353** | 28 | 84 | 87 | 86 | 87 |
+| 27 | Cart Functionality | **1,274** | 24 | 86 | 87 | 88 | 89 |
+| 28 | Adobe Experience Manager | **1,256** | 10 | 84 | 98 | 96 | 91 |
+| 29 | Ubuntu | **1,234** | 28 | 91 | 88 | 94 | 87 |
 | 30 | Varnish | **1,089** | 25 | 87 | 93 | 93 | 93 |
 
 ## Top Technologies by Country
