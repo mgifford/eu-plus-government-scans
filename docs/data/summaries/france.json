@@ -61,7 +61,7 @@
     },
     {
       "domain": "marseille.fr",
-      "count": 2111
+      "count": 2129
     },
     {
       "domain": "hautsdefrance.fr",
@@ -69,7 +69,7 @@
     },
     {
       "domain": "lyon.fr",
-      "count": 1998
+      "count": 2000
     },
     {
       "domain": "anct.gouv.fr",
@@ -93,7 +93,7 @@
     },
     {
       "domain": "nice.fr",
-      "count": 1719
+      "count": 1753
     },
     {
       "domain": "limoges.fr",
@@ -215,7 +215,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 7850
+      "count": 7852
     },
     {
       "domain": "paris.fr",
@@ -235,7 +235,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 4817
+      "count": 4819
     },
     {
       "domain": "data.gouv.fr",
@@ -243,11 +243,11 @@
     },
     {
       "domain": "twitter.com",
-      "count": 4290
+      "count": 4291
     },
     {
       "domain": "googleapis.com",
-      "count": 3881
+      "count": 3884
     },
     {
       "domain": "youtube.com",
@@ -295,7 +295,7 @@
     },
     {
       "domain": "google.com",
-      "count": 1785
+      "count": 1786
     },
     {
       "domain": "culture.gouv.fr",
@@ -335,7 +335,7 @@
     },
     {
       "domain": "marseille.fr",
-      "count": 1360
+      "count": 1376
     },
     {
       "domain": "x.com",
@@ -347,7 +347,7 @@
     },
     {
       "domain": "lyon.fr",
-      "count": 1245
+      "count": 1247
     },
     {
       "domain": "isere.fr",
@@ -370,12 +370,12 @@
       "count": 1035
     },
     {
-      "domain": "gouvernement.fr",
-      "count": 1024
+      "domain": "gstatic.com",
+      "count": 1026
     },
     {
-      "domain": "gstatic.com",
-      "count": 1023
+      "domain": "gouvernement.fr",
+      "count": 1024
     },
     {
       "domain": "bordeaux-metropole.fr",
@@ -387,7 +387,7 @@
     },
     {
       "domain": "nice.fr",
-      "count": 897
+      "count": 915
     },
     {
       "domain": "limoges.fr",
@@ -414,5 +414,5 @@
     "form_destination": 1716,
     "font_or_preload_dependency": 704
   },
-  "generated_at": "2026-10-01T13:01:31.479973+00:00"
+  "generated_at": "2026-10-02T04:47:43.231391+00:00"
 }
