@@ -1,6 +1,6 @@
 {
   "country_code": "GERMANY",
-  "total_relationships": 21946,
+  "total_relationships": 21940,
   "total_source_domains": 226,
   "top_source_domains": [
     {
@@ -41,7 +41,7 @@
     },
     {
       "domain": "bund.de",
-      "count": 6919
+      "count": 6941
     },
     {
       "domain": "bremen.de",
@@ -57,7 +57,7 @@
     },
     {
       "domain": "berlin.de",
-      "count": 3436
+      "count": 3468
     },
     {
       "domain": "essen.de",
@@ -88,12 +88,12 @@
       "count": 567
     },
     {
-      "domain": "dortmund.de",
-      "count": 563
+      "domain": "bundeswehr.de",
+      "count": 566
     },
     {
-      "domain": "bundeswehr.de",
-      "count": 562
+      "domain": "dortmund.de",
+      "count": 563
     },
     {
       "domain": "dnb.de",
@@ -104,12 +104,12 @@
       "count": 512
     },
     {
-      "domain": "leipzig.de",
-      "count": 511
-    },
-    {
       "domain": "jena.de",
       "count": 504
+    },
+    {
+      "domain": "leipzig.de",
+      "count": 498
     },
     {
       "domain": "thueringer-landtag.de",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "sachsen.de",
-      "count": 62874
+      "count": 62875
     },
     {
       "domain": "niedersachsen.de",
@@ -243,15 +243,15 @@
     },
     {
       "domain": "facebook.com",
-      "count": 5340
+      "count": 5349
     },
     {
       "domain": "instagram.com",
-      "count": 5175
+      "count": 5181
     },
     {
       "domain": "bund.de",
-      "count": 4695
+      "count": 4709
     },
     {
       "domain": "bremen.de",
@@ -263,19 +263,19 @@
     },
     {
       "domain": "twitter.com",
-      "count": 3461
+      "count": 3467
     },
     {
       "domain": "youtube.com",
-      "count": 3292
+      "count": 3296
     },
     {
       "domain": "linkedin.com",
-      "count": 2676
+      "count": 2680
     },
     {
       "domain": "berlin.de",
-      "count": 2524
+      "count": 2542
     },
     {
       "domain": "baden-wuerttemberg.de",
@@ -295,7 +295,7 @@
     },
     {
       "domain": "readspeaker.com",
-      "count": 1293
+      "count": 1294
     },
     {
       "domain": "zvg-portal.de",
@@ -374,12 +374,12 @@
       "count": 594
     },
     {
-      "domain": "xing.com",
+      "domain": "x.com",
       "count": 580
     },
     {
-      "domain": "x.com",
-      "count": 577
+      "domain": "xing.com",
+      "count": 580
     },
     {
       "domain": "eye-able.com",
@@ -387,7 +387,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 548
+      "count": 549
     },
     {
       "domain": "stuttgart.de",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 11143,
-    "font_or_preload_dependency": 341,
-    "image_or_media_dependency": 2748,
-    "script_dependency": 2871,
+    "editorial_link": 11140,
+    "font_or_preload_dependency": 340,
+    "image_or_media_dependency": 2747,
+    "script_dependency": 2870,
     "stylesheet_dependency": 2704,
     "form_destination": 2139
   },
-  "generated_at": "2026-10-02T04:47:44.211116+00:00"
+  "generated_at": "2026-10-02T12:20:53.871656+00:00"
 }

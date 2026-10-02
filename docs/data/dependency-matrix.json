@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T04:47:46.750053+00:00",
+  "generated_at": "2026-10-02T12:20:59.067858+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -178,7 +178,7 @@
     {
       "service": "googletagmanager.com",
       "countries": 32,
-      "domains": 2771
+      "domains": 2770
     },
     {
       "service": "gstatic.com",
@@ -213,12 +213,12 @@
     {
       "service": "unpkg.com",
       "countries": 29,
-      "domains": 682
+      "domains": 683
     },
     {
       "service": "bootstrapcdn.com",
       "countries": 29,
-      "domains": 607
+      "domains": 608
     },
     {
       "service": "typekit.net",
@@ -604,9 +604,9 @@
       "country_code": "FRANCE",
       "country": "France",
       "service": "googletagmanager.com",
-      "domains": 91,
+      "domains": 90,
       "scanned_domains": 669,
-      "percent": 13.6
+      "percent": 13.5
     },
     {
       "country_code": "FRANCE",
@@ -1140,17 +1140,17 @@
       "country_code": "SPAIN",
       "country": "Spain",
       "service": "unpkg.com",
-      "domains": 22,
+      "domains": 23,
       "scanned_domains": 242,
-      "percent": 9.1
+      "percent": 9.5
     },
     {
       "country_code": "SPAIN",
       "country": "Spain",
       "service": "bootstrapcdn.com",
-      "domains": 26,
+      "domains": 27,
       "scanned_domains": 242,
-      "percent": 10.7
+      "percent": 11.2
     },
     {
       "country_code": "SPAIN",

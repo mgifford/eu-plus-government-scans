@@ -1,6 +1,6 @@
 {
   "country_code": "FRANCE",
-  "total_relationships": 30772,
+  "total_relationships": 30771,
   "total_source_domains": 674,
   "top_source_domains": [
     {
@@ -215,7 +215,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 7852
+      "count": 7854
     },
     {
       "domain": "paris.fr",
@@ -235,7 +235,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 4819
+      "count": 4821
     },
     {
       "domain": "data.gouv.fr",
@@ -247,7 +247,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 3884
+      "count": 3886
     },
     {
       "domain": "youtube.com",
@@ -307,7 +307,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 1684
+      "count": 1686
     },
     {
       "domain": "numerique.gouv.fr",
@@ -408,11 +408,11 @@
   ],
   "relationship_types": {
     "editorial_link": 16115,
-    "script_dependency": 4578,
+    "script_dependency": 4577,
     "stylesheet_dependency": 4099,
     "image_or_media_dependency": 3560,
     "form_destination": 1716,
     "font_or_preload_dependency": 704
   },
-  "generated_at": "2026-10-02T04:47:43.231391+00:00"
+  "generated_at": "2026-10-02T12:20:54.150356+00:00"
 }
