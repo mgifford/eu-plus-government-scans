@@ -15,7 +15,7 @@
     "file": "switzerland.json"
   },
   "REPUBLIC_OF_CYPRUS": {
-    "total_relationships": 317144,
+    "total_relationships": 317266,
     "total_source_domains": 9156,
     "file": "republic_of_cyprus.json"
   },
@@ -39,10 +39,10 @@
     "total_source_domains": 36,
     "file": "austria.json"
   },
-  "FRANCE": {
-    "total_relationships": 30772,
-    "total_source_domains": 674,
-    "file": "france.json"
+  "CANADA": {
+    "total_relationships": 317266,
+    "total_source_domains": 9156,
+    "file": "canada.json"
   },
   "LITHUANIA": {
     "total_relationships": 534,
@@ -54,10 +54,10 @@
     "total_source_domains": 24,
     "file": "romania.json"
   },
-  "SPAIN": {
-    "total_relationships": 16256,
-    "total_source_domains": 235,
-    "file": "spain.json"
+  "GERMANY": {
+    "total_relationships": 21940,
+    "total_source_domains": 226,
+    "file": "germany.json"
   },
   "SLOVAKIA": {
     "total_relationships": 1675,
@@ -69,10 +69,10 @@
     "total_source_domains": 3,
     "file": "malta.json"
   },
-  "POLAND": {
-    "total_relationships": 61743,
-    "total_source_domains": 2487,
-    "file": "poland.json"
+  "FRANCE": {
+    "total_relationships": 30771,
+    "total_source_domains": 674,
+    "file": "france.json"
   },
   "SLOVENIA": {
     "total_relationships": 894,
@@ -84,10 +84,10 @@
     "total_source_domains": 54,
     "file": "czechia.json"
   },
-  "CANADA": {
-    "total_relationships": 317144,
-    "total_source_domains": 9156,
-    "file": "canada.json"
+  "SPAIN": {
+    "total_relationships": 16384,
+    "total_source_domains": 235,
+    "file": "spain.json"
   },
   "ESTONIA": {
     "total_relationships": 1644,
@@ -99,10 +99,10 @@
     "total_source_domains": 103,
     "file": "ireland.json"
   },
-  "GERMANY": {
-    "total_relationships": 21946,
-    "total_source_domains": 226,
-    "file": "germany.json"
+  "POLAND": {
+    "total_relationships": 61743,
+    "total_source_domains": 2487,
+    "file": "poland.json"
   },
   "BULGARIA": {
     "total_relationships": 1772,
@@ -130,7 +130,7 @@
     "file": "latvia.json"
   },
   "UNITED_KINGDOM_UK": {
-    "total_relationships": 317144,
+    "total_relationships": 317266,
     "total_source_domains": 9156,
     "file": "united_kingdom_uk.json"
   },

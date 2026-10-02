@@ -40,7 +40,7 @@ POLAND,Poland,cdn-cookieyes.com,68,2436,2.8
 POLAND,Poland,fbcdn.net,51,2436,2.1
 POLAND,Poland,mapbox.com,11,2436,0.5
 FRANCE,France,googleapis.com,232,669,34.7
-FRANCE,France,googletagmanager.com,91,669,13.6
+FRANCE,France,googletagmanager.com,90,669,13.5
 FRANCE,France,gstatic.com,115,669,17.2
 FRANCE,France,jsdelivr.net,93,669,13.9
 FRANCE,France,fontawesome.com,62,669,9.3
@@ -107,8 +107,8 @@ SPAIN,Spain,fontawesome.com,32,242,13.2
 SPAIN,Spain,google.com,43,242,17.8
 SPAIN,Spain,cloudflare.com,60,242,24.8
 SPAIN,Spain,jquery.com,26,242,10.7
-SPAIN,Spain,unpkg.com,22,242,9.1
-SPAIN,Spain,bootstrapcdn.com,26,242,10.7
+SPAIN,Spain,unpkg.com,23,242,9.5
+SPAIN,Spain,bootstrapcdn.com,27,242,11.2
 SPAIN,Spain,typekit.net,1,242,0.4
 SPAIN,Spain,cookiebot.com,1,242,0.4
 SPAIN,Spain,facebook.com,10,242,4.1
