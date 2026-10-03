@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T04:45:00.509046+00:00",
+  "generated_at": "2026-10-03T11:55:09.258229+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -56,7 +56,7 @@
     {
       "country_code": "ITALY",
       "country": "Italy",
-      "scanned_domains": 146
+      "scanned_domains": 148
     },
     {
       "country_code": "LATVIA",
@@ -183,7 +183,7 @@
     {
       "service": "gstatic.com",
       "countries": 32,
-      "domains": 1710
+      "domains": 1712
     },
     {
       "service": "jsdelivr.net",
@@ -198,7 +198,7 @@
     {
       "service": "google.com",
       "countries": 31,
-      "domains": 2080
+      "domains": 2081
     },
     {
       "service": "cloudflare.com",
@@ -208,7 +208,7 @@
     {
       "service": "jquery.com",
       "countries": 30,
-      "domains": 639
+      "domains": 641
     },
     {
       "service": "unpkg.com",
@@ -243,7 +243,7 @@
     {
       "service": "amazonaws.com",
       "countries": 21,
-      "domains": 227
+      "domains": 228
     },
     {
       "service": "addtoany.com",
@@ -1717,87 +1717,87 @@
       "country": "Italy",
       "service": "googleapis.com",
       "domains": 88,
-      "scanned_domains": 146,
-      "percent": 60.3
+      "scanned_domains": 148,
+      "percent": 59.5
     },
     {
       "country_code": "ITALY",
       "country": "Italy",
       "service": "googletagmanager.com",
       "domains": 32,
-      "scanned_domains": 146,
-      "percent": 21.9
+      "scanned_domains": 148,
+      "percent": 21.6
     },
     {
       "country_code": "ITALY",
       "country": "Italy",
       "service": "gstatic.com",
-      "domains": 30,
-      "scanned_domains": 146,
-      "percent": 20.5
+      "domains": 31,
+      "scanned_domains": 148,
+      "percent": 20.9
     },
     {
       "country_code": "ITALY",
       "country": "Italy",
       "service": "jsdelivr.net",
       "domains": 53,
-      "scanned_domains": 146,
-      "percent": 36.3
+      "scanned_domains": 148,
+      "percent": 35.8
     },
     {
       "country_code": "ITALY",
       "country": "Italy",
       "service": "fontawesome.com",
       "domains": 25,
-      "scanned_domains": 146,
-      "percent": 17.1
+      "scanned_domains": 148,
+      "percent": 16.9
     },
     {
       "country_code": "ITALY",
       "country": "Italy",
       "service": "google.com",
-      "domains": 34,
-      "scanned_domains": 146,
-      "percent": 23.3
+      "domains": 35,
+      "scanned_domains": 148,
+      "percent": 23.6
     },
     {
       "country_code": "ITALY",
       "country": "Italy",
       "service": "cloudflare.com",
       "domains": 38,
-      "scanned_domains": 146,
-      "percent": 26.0
+      "scanned_domains": 148,
+      "percent": 25.7
     },
     {
       "country_code": "ITALY",
       "country": "Italy",
       "service": "jquery.com",
-      "domains": 39,
-      "scanned_domains": 146,
-      "percent": 26.7
+      "domains": 41,
+      "scanned_domains": 148,
+      "percent": 27.7
     },
     {
       "country_code": "ITALY",
       "country": "Italy",
       "service": "unpkg.com",
       "domains": 15,
-      "scanned_domains": 146,
-      "percent": 10.3
+      "scanned_domains": 148,
+      "percent": 10.1
     },
     {
       "country_code": "ITALY",
       "country": "Italy",
       "service": "bootstrapcdn.com",
       "domains": 18,
-      "scanned_domains": 146,
-      "percent": 12.3
+      "scanned_domains": 148,
+      "percent": 12.2
     },
     {
       "country_code": "ITALY",
       "country": "Italy",
       "service": "typekit.net",
       "domains": 2,
-      "scanned_domains": 146,
+      "scanned_domains": 148,
       "percent": 1.4
     },
     {
@@ -1805,7 +1805,7 @@
       "country": "Italy",
       "service": "cookiebot.com",
       "domains": 6,
-      "scanned_domains": 146,
+      "scanned_domains": 148,
       "percent": 4.1
     },
     {
@@ -1813,7 +1813,7 @@
       "country": "Italy",
       "service": "facebook.com",
       "domains": 4,
-      "scanned_domains": 146,
+      "scanned_domains": 148,
       "percent": 2.7
     },
     {
@@ -1821,39 +1821,39 @@
       "country": "Italy",
       "service": "facebook.net",
       "domains": 5,
-      "scanned_domains": 146,
+      "scanned_domains": 148,
       "percent": 3.4
     },
     {
       "country_code": "ITALY",
       "country": "Italy",
       "service": "amazonaws.com",
-      "domains": 6,
-      "scanned_domains": 146,
-      "percent": 4.1
+      "domains": 7,
+      "scanned_domains": 148,
+      "percent": 4.7
     },
     {
       "country_code": "ITALY",
       "country": "Italy",
       "service": "addtoany.com",
       "domains": 11,
-      "scanned_domains": 146,
-      "percent": 7.5
+      "scanned_domains": 148,
+      "percent": 7.4
     },
     {
       "country_code": "ITALY",
       "country": "Italy",
       "service": "arcgis.com",
       "domains": 3,
-      "scanned_domains": 146,
-      "percent": 2.1
+      "scanned_domains": 148,
+      "percent": 2.0
     },
     {
       "country_code": "ITALY",
       "country": "Italy",
       "service": "cdn-cookieyes.com",
       "domains": 6,
-      "scanned_domains": 146,
+      "scanned_domains": 148,
       "percent": 4.1
     },
     {
@@ -1861,7 +1861,7 @@
       "country": "Italy",
       "service": "fbcdn.net",
       "domains": 0,
-      "scanned_domains": 146,
+      "scanned_domains": 148,
       "percent": 0.0
     },
     {
@@ -1869,7 +1869,7 @@
       "country": "Italy",
       "service": "mapbox.com",
       "domains": 1,
-      "scanned_domains": 146,
+      "scanned_domains": 148,
       "percent": 0.7
     },
     {
@@ -4132,9 +4132,9 @@
       "country_code": "ROMANIA",
       "country": "Romania",
       "service": "gstatic.com",
-      "domains": 6,
+      "domains": 7,
       "scanned_domains": 24,
-      "percent": 25.0
+      "percent": 29.2
     },
     {
       "country_code": "ROMANIA",
