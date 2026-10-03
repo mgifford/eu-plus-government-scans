@@ -1,23 +1,23 @@
 {
   "country_code": "POLAND",
-  "total_relationships": 61736,
+  "total_relationships": 61752,
   "total_source_domains": 2487,
   "top_source_domains": [
     {
       "domain": "krakow.pl",
-      "count": 68743
+      "count": 68921
     },
     {
       "domain": "poznan.pl",
-      "count": 46524
+      "count": 46553
     },
     {
       "domain": "lodz.pl",
-      "count": 39116
+      "count": 45324
     },
     {
       "domain": "gdansk.pl",
-      "count": 13186
+      "count": 15757
     },
     {
       "domain": "torun.pl",
@@ -207,43 +207,43 @@
   "top_target_domains": [
     {
       "domain": "krakow.pl",
-      "count": 33587
-    },
-    {
-      "domain": "poznan.pl",
-      "count": 23284
+      "count": 33608
     },
     {
       "domain": "lodz.pl",
-      "count": 22060
+      "count": 25932
+    },
+    {
+      "domain": "poznan.pl",
+      "count": 23305
     },
     {
       "domain": "googleapis.com",
-      "count": 19190
+      "count": 19557
     },
     {
       "domain": "facebook.com",
-      "count": 17177
+      "count": 17491
     },
     {
       "domain": "gdansk.pl",
-      "count": 7774
+      "count": 9422
     },
     {
       "domain": "instagram.com",
-      "count": 6828
+      "count": 6937
     },
     {
       "domain": "googletagmanager.com",
-      "count": 6802
+      "count": 6926
     },
     {
       "domain": "youtube.com",
-      "count": 6664
+      "count": 6775
     },
     {
       "domain": "google.com",
-      "count": 6523
+      "count": 6565
     },
     {
       "domain": "uni.opole.pl",
@@ -251,11 +251,11 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 4768
+      "count": 4801
     },
     {
       "domain": "ug.edu.pl",
-      "count": 4475
+      "count": 4476
     },
     {
       "domain": "torun.pl",
@@ -263,7 +263,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 3436
+      "count": 3506
     },
     {
       "domain": "tarnow.pl",
@@ -271,31 +271,31 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 3240
+      "count": 3288
     },
     {
       "domain": "gdynia.pl",
-      "count": 2812
+      "count": 2814
     },
     {
       "domain": "www.gov.pl",
-      "count": 2473
+      "count": 2569
     },
     {
       "domain": "twitter.com",
-      "count": 2396
-    },
-    {
-      "domain": "bootstrapcdn.com",
-      "count": 2380
+      "count": 2444
     },
     {
       "domain": "linkedin.com",
-      "count": 2333
+      "count": 2404
+    },
+    {
+      "domain": "bootstrapcdn.com",
+      "count": 2397
     },
     {
       "domain": "fontawesome.com",
-      "count": 2065
+      "count": 2193
     },
     {
       "domain": "mixbet.radom.pl",
@@ -311,15 +311,15 @@
     },
     {
       "domain": "bip.gov.pl",
-      "count": 1527
+      "count": 1549
     },
     {
       "domain": "unpkg.com",
-      "count": 1522
+      "count": 1544
     },
     {
       "domain": "edupage.org",
-      "count": 1505
+      "count": 1506
     },
     {
       "domain": "repertuary.pl",
@@ -327,19 +327,19 @@
     },
     {
       "domain": "wordpress.org",
-      "count": 1353
+      "count": 1362
     },
     {
       "domain": "goo.gl",
-      "count": 1316
+      "count": 1358
     },
     {
       "domain": "vulcan.net.pl",
-      "count": 1236
+      "count": 1241
     },
     {
       "domain": "jquery.com",
-      "count": 1218
+      "count": 1232
     },
     {
       "domain": "gorzow.pl",
@@ -347,15 +347,15 @@
     },
     {
       "domain": "tiktok.com",
-      "count": 1118
+      "count": 1149
     },
     {
       "domain": "epuap.gov.pl",
-      "count": 1084
+      "count": 1087
     },
     {
       "domain": "librus.pl",
-      "count": 970
+      "count": 997
     },
     {
       "domain": "pm.szczecin.pl",
@@ -367,7 +367,15 @@
     },
     {
       "domain": "x.com",
-      "count": 768
+      "count": 775
+    },
+    {
+      "domain": "witkac.pl",
+      "count": 761
+    },
+    {
+      "domain": "migam.org",
+      "count": 699
     },
     {
       "domain": "sopot.pl",
@@ -387,15 +395,7 @@
     },
     {
       "domain": "cookiedatabase.org",
-      "count": 645
-    },
-    {
-      "domain": "witkac.pl",
-      "count": 618
-    },
-    {
-      "domain": "migam.org",
-      "count": 611
+      "count": 647
     },
     {
       "domain": "edu.wroclaw.pl",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 33423,
+    "editorial_link": 33438,
     "form_destination": 3323,
-    "image_or_media_dependency": 6751,
+    "image_or_media_dependency": 6752,
     "script_dependency": 8761,
     "stylesheet_dependency": 7646,
     "font_or_preload_dependency": 1832
   },
-  "generated_at": "2026-10-03T16:07:43.298768+00:00"
+  "generated_at": "2026-10-03T21:27:18.780919+00:00"
 }

@@ -211,19 +211,19 @@
     },
     {
       "domain": "facebook.com",
-      "count": 3152
+      "count": 3154
     },
     {
       "domain": "youtube.com",
-      "count": 2531
+      "count": 2533
     },
     {
       "domain": "instagram.com",
-      "count": 2455
+      "count": 2457
     },
     {
       "domain": "googletagmanager.com",
-      "count": 2231
+      "count": 2235
     },
     {
       "domain": "google.com",
@@ -239,7 +239,7 @@
     },
     {
       "domain": "livroreclamacoes.pt",
-      "count": 1304
+      "count": 1306
     },
     {
       "domain": "justica.gov.pt",
@@ -263,7 +263,7 @@
     },
     {
       "domain": "twitter.com",
-      "count": 1115
+      "count": 1117
     },
     {
       "domain": "jsdelivr.net",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 841
+      "count": 843
     },
     {
       "domain": "cm-porto.pt",
@@ -295,7 +295,7 @@
     },
     {
       "domain": "w3.org",
-      "count": 524
+      "count": 528
     },
     {
       "domain": "cm-alcobaca.pt",
@@ -371,7 +371,7 @@
     },
     {
       "domain": "portugal2020.pt",
-      "count": 331
+      "count": 333
     },
     {
       "domain": "cm-estarreja.pt",
@@ -414,5 +414,5 @@
     "form_destination": 755,
     "image_or_media_dependency": 1137
   },
-  "generated_at": "2026-10-03T16:07:42.427620+00:00"
+  "generated_at": "2026-10-03T21:27:18.474898+00:00"
 }
