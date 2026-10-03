@@ -207,19 +207,19 @@
   "top_target_domains": [
     {
       "domain": "sachsen.de",
-      "count": 62875
+      "count": 62876
     },
     {
       "domain": "niedersachsen.de",
-      "count": 28139
+      "count": 28140
     },
     {
       "domain": "rlp.de",
-      "count": 25950
+      "count": 25951
     },
     {
       "domain": "bayern.de",
-      "count": 20293
+      "count": 20294
     },
     {
       "domain": "nrw.de",
@@ -227,7 +227,7 @@
     },
     {
       "domain": "hessen.de",
-      "count": 9642
+      "count": 9643
     },
     {
       "domain": "hamburg.de",
@@ -239,7 +239,7 @@
     },
     {
       "domain": "sachsen-anhalt.de",
-      "count": 6070
+      "count": 6071
     },
     {
       "domain": "facebook.com",
@@ -247,19 +247,19 @@
     },
     {
       "domain": "instagram.com",
-      "count": 5181
+      "count": 5182
     },
     {
       "domain": "bund.de",
-      "count": 4709
+      "count": 4715
     },
     {
       "domain": "bremen.de",
-      "count": 4245
+      "count": 4246
     },
     {
       "domain": "thueringen.de",
-      "count": 4092
+      "count": 4093
     },
     {
       "domain": "twitter.com",
@@ -271,11 +271,11 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 2680
+      "count": 2681
     },
     {
       "domain": "berlin.de",
-      "count": 2542
+      "count": 2543
     },
     {
       "domain": "baden-wuerttemberg.de",
@@ -339,7 +339,7 @@
     },
     {
       "domain": "brandenburg.de",
-      "count": 805
+      "count": 806
     },
     {
       "domain": "justiz-karriere.nrw",
@@ -375,7 +375,7 @@
     },
     {
       "domain": "x.com",
-      "count": 580
+      "count": 581
     },
     {
       "domain": "xing.com",
@@ -395,7 +395,7 @@
     },
     {
       "domain": "arbeitsagentur.de",
-      "count": 457
+      "count": 458
     },
     {
       "domain": "make-it-in-germany.com",
@@ -414,5 +414,5 @@
     "stylesheet_dependency": 2704,
     "form_destination": 2139
   },
-  "generated_at": "2026-10-02T12:20:53.871656+00:00"
+  "generated_at": "2026-10-03T04:44:57.362532+00:00"
 }

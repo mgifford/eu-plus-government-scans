@@ -1,7 +1,7 @@
 {
   "country_code": "REPUBLIC_OF_CYPRUS",
-  "total_relationships": 317279,
-  "total_source_domains": 9156,
+  "total_relationships": 317327,
+  "total_source_domains": 9157,
   "top_source_domains": [
     {
       "domain": "sachsen.de",
@@ -33,7 +33,7 @@
     },
     {
       "domain": "lodz.pl",
-      "count": 34069
+      "count": 35960
     },
     {
       "domain": "rlp.de",
@@ -100,12 +100,12 @@
       "count": 12562
     },
     {
-      "domain": "steiermark.at",
-      "count": 11753
+      "domain": "gdansk.pl",
+      "count": 12241
     },
     {
-      "domain": "gdansk.pl",
-      "count": 11643
+      "domain": "steiermark.at",
+      "count": 11753
     },
     {
       "domain": "haute-garonne.fr",
@@ -207,15 +207,15 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 80395
+      "count": 80517
     },
     {
       "domain": "googleapis.com",
-      "count": 64553
+      "count": 64679
     },
     {
       "domain": "sachsen.de",
-      "count": 62875
+      "count": 62876
     },
     {
       "domain": "ethz.ch",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 47626
+      "count": 47707
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -231,19 +231,19 @@
     },
     {
       "domain": "youtube.com",
-      "count": 45161
+      "count": 45230
     },
     {
       "domain": "twitter.com",
-      "count": 38437
+      "count": 38496
     },
     {
       "domain": "google.com",
-      "count": 36607
+      "count": 36619
     },
     {
       "domain": "linkedin.com",
-      "count": 33850
+      "count": 33899
     },
     {
       "domain": "krakow.pl",
@@ -255,39 +255,39 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 30375
+      "count": 30408
     },
     {
       "domain": "niedersachsen.de",
-      "count": 28145
+      "count": 28146
     },
     {
       "domain": "rlp.de",
-      "count": 25950
+      "count": 25951
     },
     {
       "domain": "poznan.pl",
-      "count": 23280
+      "count": 23284
     },
     {
       "domain": "jcyl.es",
       "count": 20671
     },
     {
+      "domain": "lodz.pl",
+      "count": 20460
+    },
+    {
       "domain": "bayern.de",
-      "count": 20293
+      "count": 20294
     },
     {
       "domain": "jsdelivr.net",
-      "count": 19804
-    },
-    {
-      "domain": "lodz.pl",
-      "count": 19520
+      "count": 19882
     },
     {
       "domain": "cloudflare.com",
-      "count": 19172
+      "count": 19191
     },
     {
       "domain": "esteri.it",
@@ -295,7 +295,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 16771
+      "count": 16799
     },
     {
       "domain": "nrw.de",
@@ -323,11 +323,11 @@
     },
     {
       "domain": "hessen.de",
-      "count": 9642
+      "count": 9643
     },
     {
       "domain": "fontawesome.com",
-      "count": 9538
+      "count": 9558
     },
     {
       "domain": "hamburg.de",
@@ -335,11 +335,11 @@
     },
     {
       "domain": "x.com",
-      "count": 9147
+      "count": 9155
     },
     {
       "domain": "europa.eu",
-      "count": 8611
+      "count": 8618
     },
     {
       "domain": "gva.es",
@@ -351,7 +351,7 @@
     },
     {
       "domain": "unpkg.com",
-      "count": 8177
+      "count": 8206
     },
     {
       "domain": "diplo.de",
@@ -367,15 +367,15 @@
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 7394
-    },
-    {
-      "domain": "jquery.com",
-      "count": 7158
+      "count": 7396
     },
     {
       "domain": "gdansk.pl",
-      "count": 6960
+      "count": 7190
+    },
+    {
+      "domain": "jquery.com",
+      "count": 7167
     },
     {
       "domain": "steiermark.at",
@@ -386,12 +386,12 @@
       "count": 6118
     },
     {
-      "domain": "uni.opole.pl",
+      "domain": "sachsen-anhalt.de",
       "count": 6071
     },
     {
-      "domain": "sachsen-anhalt.de",
-      "count": 6070
+      "domain": "uni.opole.pl",
+      "count": 6071
     },
     {
       "domain": "cultura.gov.it",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 163340,
-    "form_destination": 21212,
-    "image_or_media_dependency": 33375,
-    "script_dependency": 50586,
+    "editorial_link": 163366,
+    "form_destination": 21218,
+    "image_or_media_dependency": 33381,
+    "script_dependency": 50596,
     "stylesheet_dependency": 40360,
     "font_or_preload_dependency": 8406
   },
-  "generated_at": "2026-10-02T22:38:03.412376+00:00"
+  "generated_at": "2026-10-03T04:44:55.917905+00:00"
 }
