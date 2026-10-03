@@ -1,11 +1,11 @@
 {
   "country_code": "SLOVENIA",
-  "total_relationships": 894,
+  "total_relationships": 898,
   "total_source_domains": 16,
   "top_source_domains": [
     {
       "domain": "gov.si",
-      "count": 3512
+      "count": 3567
     },
     {
       "domain": "ptuj.si",
@@ -71,11 +71,11 @@
   "top_target_domains": [
     {
       "domain": "gov.si",
-      "count": 2406
+      "count": 2424
     },
     {
       "domain": "facebook.com",
-      "count": 195
+      "count": 198
     },
     {
       "domain": "ljubljana.si",
@@ -91,11 +91,11 @@
     },
     {
       "domain": "youtube.com",
-      "count": 138
+      "count": 141
     },
     {
       "domain": "googleapis.com",
-      "count": 133
+      "count": 136
     },
     {
       "domain": "google.com",
@@ -110,12 +110,12 @@
       "count": 108
     },
     {
-      "domain": "kamnik.si",
+      "domain": "instagram.com",
       "count": 101
     },
     {
-      "domain": "instagram.com",
-      "count": 98
+      "domain": "kamnik.si",
+      "count": 101
     },
     {
       "domain": "europa.eu",
@@ -142,12 +142,12 @@
       "count": 48
     },
     {
-      "domain": "koper.si",
-      "count": 45
+      "domain": "linkedin.com",
+      "count": 47
     },
     {
-      "domain": "linkedin.com",
-      "count": 44
+      "domain": "koper.si",
+      "count": 45
     },
     {
       "domain": "geoprostor.net",
@@ -174,12 +174,12 @@
       "count": 33
     },
     {
-      "domain": "ip-rs.si",
-      "count": 31
+      "domain": "evropskasredstva.si",
+      "count": 33
     },
     {
-      "domain": "evropskasredstva.si",
-      "count": 30
+      "domain": "ip-rs.si",
+      "count": 31
     },
     {
       "domain": "cloudflare.com",
@@ -271,12 +271,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 526,
+    "editorial_link": 530,
     "image_or_media_dependency": 96,
     "font_or_preload_dependency": 16,
     "script_dependency": 113,
     "stylesheet_dependency": 98,
     "form_destination": 45
   },
-  "generated_at": "2026-10-03T16:07:41.466197+00:00"
+  "generated_at": "2026-10-03T21:27:17.520528+00:00"
 }
