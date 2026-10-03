@@ -37,7 +37,7 @@
     },
     {
       "domain": "sachsen-anhalt.de",
-      "count": 8615
+      "count": 8625
     },
     {
       "domain": "bund.de",
@@ -188,20 +188,20 @@
       "count": 229
     },
     {
+      "domain": "thuenen.de",
+      "count": 229
+    },
+    {
       "domain": "fruehe-chancen.de",
       "count": 225
     },
     {
-      "domain": "thuenen.de",
-      "count": 224
+      "domain": "bfs.de",
+      "count": 219
     },
     {
       "domain": "neuharlingersiel.de",
       "count": 219
-    },
-    {
-      "domain": "brunsbuettel.de",
-      "count": 216
     }
   ],
   "top_target_domains": [
@@ -239,19 +239,19 @@
     },
     {
       "domain": "sachsen-anhalt.de",
-      "count": 6071
+      "count": 6076
     },
     {
       "domain": "facebook.com",
-      "count": 5349
+      "count": 5350
     },
     {
       "domain": "instagram.com",
-      "count": 5182
+      "count": 5184
     },
     {
       "domain": "bund.de",
-      "count": 4715
+      "count": 4716
     },
     {
       "domain": "bremen.de",
@@ -263,15 +263,15 @@
     },
     {
       "domain": "twitter.com",
-      "count": 3467
+      "count": 3469
     },
     {
       "domain": "youtube.com",
-      "count": 3296
+      "count": 3298
     },
     {
       "domain": "linkedin.com",
-      "count": 2681
+      "count": 2682
     },
     {
       "domain": "berlin.de",
@@ -327,7 +327,7 @@
     },
     {
       "domain": "google.com",
-      "count": 837
+      "count": 838
     },
     {
       "domain": "duesseldorf.de",
@@ -414,5 +414,5 @@
     "stylesheet_dependency": 2704,
     "form_destination": 2139
   },
-  "generated_at": "2026-10-03T04:44:57.362532+00:00"
+  "generated_at": "2026-10-03T11:55:05.540263+00:00"
 }
