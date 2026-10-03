@@ -5,10 +5,10 @@ layout: page
 
 <!-- TECH_LIGHTHOUSE_STATS_START -->
 
-_Generated: 2026-10-02 23:48 UTC_
+_Generated: 2026-10-03 02:28 UTC_
 
-**37,551** URLs with both technology detection and Lighthouse scores
-out of **74,047** technology-detected URLs and **40,953** Lighthouse-audited URLs
+**38,156** URLs with both technology detection and Lighthouse scores
+out of **74,047** technology-detected URLs and **41,573** Lighthouse-audited URLs
 
 ---
 
@@ -18,36 +18,36 @@ Average Google Lighthouse scores (0–100) for pages where each technology was d
 
 | # | Technology | Pages | Countries | Perf | A11y | Best Prac | SEO |
 |--:|-----------|------:|----------:|-----:|-----:|----------:|----:|
-| 1 | jQuery | **22,321** | 32 | 88 | 89 | 90 | 89 |
-| 2 | PHP | **12,879** | 32 | 88 | 90 | 91 | 90 |
-| 3 | Apache | **11,497** | 32 | 86 | 85 | 89 | 87 |
-| 4 | Bootstrap | **10,314** | 32 | 88 | 89 | 91 | 88 |
-| 5 | Font Awesome | **9,757** | 32 | 87 | 89 | 90 | 89 |
-| 6 | Google Tag Manager | **8,207** | 32 | 87 | 90 | 89 | 90 |
-| 7 | Google Font API | **8,038** | 32 | 87 | 88 | 89 | 89 |
-| 8 | MySQL | **7,273** | 32 | 88 | 89 | 90 | 90 |
-| 9 | WordPress | **7,230** | 32 | 88 | 89 | 91 | 90 |
-| 10 | Nginx | **6,753** | 32 | 88 | 90 | 92 | 89 |
-| 11 | jQuery Migrate | **6,441** | 32 | 87 | 88 | 89 | 89 |
-| 12 | Windows Server | **4,306** | 32 | 89 | 87 | 89 | 86 |
-| 13 | IIS | **4,236** | 32 | 89 | 87 | 89 | 86 |
-| 14 | jQuery UI | **3,758** | 32 | 87 | 88 | 89 | 87 |
-| 15 | Microsoft ASP.NET | **3,632** | 32 | 89 | 87 | 88 | 86 |
-| 16 | Cloudflare | **3,454** | 32 | 90 | 90 | 84 | 82 |
-| 17 | Drupal | **3,031** | 28 | 89 | 92 | 91 | 92 |
-| 18 | jsDelivr | **2,855** | 32 | 88 | 90 | 90 | 88 |
-| 19 | Yoast SEO | **2,558** | 29 | 87 | 88 | 88 | 90 |
-| 20 | reCAPTCHA | **2,157** | 30 | 87 | 89 | 88 | 89 |
-| 21 | Slick | **2,072** | 30 | 83 | 88 | 91 | 88 |
-| 22 | Lightbox | **1,963** | 32 | 87 | 88 | 89 | 88 |
-| 23 | Java | **1,849** | 29 | 86 | 93 | 93 | 89 |
-| 24 | Modernizr | **1,848** | 30 | 88 | 89 | 89 | 89 |
-| 25 | Elementor | **1,622** | 27 | 85 | 88 | 87 | 89 |
-| 26 | OWL Carousel | **1,376** | 28 | 84 | 87 | 86 | 88 |
-| 27 | Cart Functionality | **1,326** | 24 | 86 | 87 | 88 | 89 |
+| 1 | jQuery | **22,790** | 32 | 88 | 89 | 90 | 89 |
+| 2 | PHP | **13,228** | 32 | 88 | 89 | 91 | 90 |
+| 3 | Apache | **11,765** | 32 | 86 | 85 | 89 | 87 |
+| 4 | Bootstrap | **10,522** | 32 | 88 | 89 | 90 | 88 |
+| 5 | Font Awesome | **10,022** | 32 | 87 | 89 | 89 | 89 |
+| 6 | Google Tag Manager | **8,374** | 32 | 87 | 90 | 89 | 90 |
+| 7 | Google Font API | **8,351** | 32 | 87 | 88 | 89 | 89 |
+| 8 | MySQL | **7,552** | 32 | 88 | 89 | 90 | 90 |
+| 9 | WordPress | **7,506** | 32 | 88 | 89 | 90 | 90 |
+| 10 | Nginx | **6,840** | 32 | 88 | 90 | 92 | 89 |
+| 11 | jQuery Migrate | **6,682** | 32 | 87 | 88 | 89 | 89 |
+| 12 | Windows Server | **4,334** | 32 | 89 | 87 | 89 | 86 |
+| 13 | IIS | **4,264** | 32 | 89 | 87 | 89 | 86 |
+| 14 | jQuery UI | **3,807** | 32 | 87 | 88 | 89 | 87 |
+| 15 | Microsoft ASP.NET | **3,659** | 32 | 89 | 87 | 88 | 86 |
+| 16 | Cloudflare | **3,490** | 32 | 90 | 90 | 84 | 82 |
+| 17 | Drupal | **3,050** | 28 | 89 | 92 | 91 | 92 |
+| 18 | jsDelivr | **2,896** | 32 | 88 | 89 | 90 | 88 |
+| 19 | Yoast SEO | **2,640** | 29 | 87 | 88 | 88 | 90 |
+| 20 | reCAPTCHA | **2,204** | 30 | 87 | 89 | 87 | 89 |
+| 21 | Slick | **2,144** | 30 | 83 | 88 | 91 | 88 |
+| 22 | Lightbox | **2,033** | 32 | 87 | 88 | 89 | 88 |
+| 23 | Modernizr | **1,886** | 30 | 88 | 88 | 88 | 89 |
+| 24 | Java | **1,849** | 29 | 86 | 93 | 93 | 89 |
+| 25 | Elementor | **1,704** | 27 | 85 | 88 | 87 | 89 |
+| 26 | OWL Carousel | **1,411** | 28 | 85 | 87 | 86 | 88 |
+| 27 | Cart Functionality | **1,330** | 24 | 86 | 87 | 88 | 89 |
 | 28 | Adobe Experience Manager | **1,256** | 10 | 84 | 98 | 96 | 91 |
-| 29 | Ubuntu | **1,244** | 28 | 91 | 88 | 94 | 87 |
-| 30 | Varnish | **1,142** | 25 | 87 | 93 | 93 | 93 |
+| 29 | Ubuntu | **1,252** | 28 | 91 | 88 | 94 | 87 |
+| 30 | LiteSpeed | **1,195** | 21 | 89 | 87 | 88 | 91 |
 
 ## Top Technologies by Country
 
