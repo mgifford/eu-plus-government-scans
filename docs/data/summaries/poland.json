@@ -1,6 +1,6 @@
 {
   "country_code": "POLAND",
-  "total_relationships": 61734,
+  "total_relationships": 61739,
   "total_source_domains": 2487,
   "top_source_domains": [
     {
@@ -13,11 +13,11 @@
     },
     {
       "domain": "lodz.pl",
-      "count": 34069
+      "count": 35960
     },
     {
       "domain": "gdansk.pl",
-      "count": 11643
+      "count": 12241
     },
     {
       "domain": "torun.pl",
@@ -211,39 +211,39 @@
     },
     {
       "domain": "poznan.pl",
-      "count": 23280
+      "count": 23284
     },
     {
       "domain": "lodz.pl",
-      "count": 19517
+      "count": 20457
     },
     {
       "domain": "googleapis.com",
-      "count": 18932
+      "count": 19022
     },
     {
       "domain": "facebook.com",
-      "count": 16915
+      "count": 17004
     },
     {
       "domain": "gdansk.pl",
-      "count": 6960
+      "count": 7190
     },
     {
       "domain": "googletagmanager.com",
-      "count": 6711
+      "count": 6744
     },
     {
       "domain": "instagram.com",
-      "count": 6680
+      "count": 6741
     },
     {
       "domain": "youtube.com",
-      "count": 6516
+      "count": 6569
     },
     {
       "domain": "google.com",
-      "count": 6473
+      "count": 6481
     },
     {
       "domain": "uni.opole.pl",
@@ -251,11 +251,11 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 4711
+      "count": 4734
     },
     {
       "domain": "ug.edu.pl",
-      "count": 4474
+      "count": 4475
     },
     {
       "domain": "torun.pl",
@@ -267,35 +267,35 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 3269
+      "count": 3337
     },
     {
       "domain": "cloudflare.com",
-      "count": 3203
+      "count": 3222
     },
     {
       "domain": "gdynia.pl",
-      "count": 2810
+      "count": 2812
     },
     {
       "domain": "www.gov.pl",
-      "count": 2446
+      "count": 2457
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 2372
+      "count": 2374
     },
     {
       "domain": "twitter.com",
-      "count": 2291
+      "count": 2333
     },
     {
       "domain": "linkedin.com",
-      "count": 2236
+      "count": 2274
     },
     {
       "domain": "fontawesome.com",
-      "count": 1993
+      "count": 2013
     },
     {
       "domain": "mixbet.radom.pl",
@@ -311,7 +311,7 @@
     },
     {
       "domain": "bip.gov.pl",
-      "count": 1513
+      "count": 1518
     },
     {
       "domain": "edupage.org",
@@ -319,7 +319,7 @@
     },
     {
       "domain": "unpkg.com",
-      "count": 1455
+      "count": 1483
     },
     {
       "domain": "repertuary.pl",
@@ -327,11 +327,11 @@
     },
     {
       "domain": "wordpress.org",
-      "count": 1346
+      "count": 1349
     },
     {
       "domain": "goo.gl",
-      "count": 1287
+      "count": 1297
     },
     {
       "domain": "vulcan.net.pl",
@@ -339,7 +339,7 @@
     },
     {
       "domain": "jquery.com",
-      "count": 1209
+      "count": 1215
     },
     {
       "domain": "gorzow.pl",
@@ -347,11 +347,11 @@
     },
     {
       "domain": "epuap.gov.pl",
-      "count": 1079
+      "count": 1082
     },
     {
       "domain": "tiktok.com",
-      "count": 1056
+      "count": 1075
     },
     {
       "domain": "librus.pl",
@@ -367,7 +367,7 @@
     },
     {
       "domain": "x.com",
-      "count": 760
+      "count": 764
     },
     {
       "domain": "sopot.pl",
@@ -398,21 +398,21 @@
       "count": 576
     },
     {
-      "domain": "uj.edu.pl",
-      "count": 562
+      "domain": "migam.org",
+      "count": 574
     },
     {
       "domain": "witkac.pl",
-      "count": 556
+      "count": 569
     }
   ],
   "relationship_types": {
-    "editorial_link": 33420,
+    "editorial_link": 33424,
     "form_destination": 3323,
     "image_or_media_dependency": 6752,
-    "script_dependency": 8760,
+    "script_dependency": 8761,
     "stylesheet_dependency": 7647,
     "font_or_preload_dependency": 1832
   },
-  "generated_at": "2026-10-02T18:24:03.924456+00:00"
+  "generated_at": "2026-10-03T04:44:58.182557+00:00"
 }

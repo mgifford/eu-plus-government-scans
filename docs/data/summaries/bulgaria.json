@@ -140,6 +140,10 @@
       "count": 39
     },
     {
+      "domain": "dker.bg",
+      "count": 36
+    },
+    {
       "domain": "cadastre.bg",
       "count": 34
     },
@@ -174,10 +178,6 @@
     {
       "domain": "nbksrs.bg",
       "count": 27
-    },
-    {
-      "domain": "dker.bg",
-      "count": 24
     },
     {
       "domain": "nra.bg",
@@ -231,7 +231,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 322
+      "count": 323
     },
     {
       "domain": "burgas.bg",
@@ -398,12 +398,12 @@
       "count": 33
     },
     {
-      "domain": "itservice-bg.net",
+      "domain": "dker.bg",
       "count": 33
     },
     {
-      "domain": "gov.bg",
-      "count": 31
+      "domain": "itservice-bg.net",
+      "count": 33
     }
   ],
   "relationship_types": {
@@ -414,5 +414,5 @@
     "stylesheet_dependency": 201,
     "font_or_preload_dependency": 21
   },
-  "generated_at": "2026-10-02T12:20:54.806550+00:00"
+  "generated_at": "2026-10-03T04:44:57.713764+00:00"
 }
