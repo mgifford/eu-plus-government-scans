@@ -41,7 +41,7 @@
     },
     {
       "domain": "bund.de",
-      "count": 6941
+      "count": 6942
     },
     {
       "domain": "bremen.de",
@@ -84,12 +84,12 @@
       "count": 1143
     },
     {
-      "domain": "stadt-koeln.de",
+      "domain": "bundeswehr.de",
       "count": 567
     },
     {
-      "domain": "bundeswehr.de",
-      "count": 566
+      "domain": "stadt-koeln.de",
+      "count": 567
     },
     {
       "domain": "dortmund.de",
@@ -112,12 +112,12 @@
       "count": 498
     },
     {
-      "domain": "thueringer-landtag.de",
-      "count": 493
+      "domain": "arbeitsagentur.de",
+      "count": 496
     },
     {
-      "domain": "arbeitsagentur.de",
-      "count": 488
+      "domain": "thueringer-landtag.de",
+      "count": 493
     },
     {
       "domain": "thw.de",
@@ -251,7 +251,7 @@
     },
     {
       "domain": "bund.de",
-      "count": 4716
+      "count": 4717
     },
     {
       "domain": "bremen.de",
@@ -395,7 +395,7 @@
     },
     {
       "domain": "arbeitsagentur.de",
-      "count": 458
+      "count": 466
     },
     {
       "domain": "make-it-in-germany.com",
@@ -414,5 +414,5 @@
     "stylesheet_dependency": 2704,
     "form_destination": 2139
   },
-  "generated_at": "2026-10-03T11:55:05.540263+00:00"
+  "generated_at": "2026-10-03T16:07:42.989736+00:00"
 }
