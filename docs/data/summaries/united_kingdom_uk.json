@@ -1,7 +1,7 @@
 {
   "country_code": "UNITED_KINGDOM_UK",
-  "total_relationships": 317410,
-  "total_source_domains": 9159,
+  "total_relationships": 317286,
+  "total_source_domains": 9156,
   "top_source_domains": [
     {
       "domain": "sachsen.de",
@@ -24,12 +24,12 @@
       "count": 57197
     },
     {
-      "domain": "poznan.pl",
-      "count": 46553
+      "domain": "lodz.pl",
+      "count": 47774
     },
     {
-      "domain": "lodz.pl",
-      "count": 45324
+      "domain": "poznan.pl",
+      "count": 46553
     },
     {
       "domain": "esteri.it",
@@ -45,7 +45,7 @@
     },
     {
       "domain": "jcyl.es",
-      "count": 31473
+      "count": 31673
     },
     {
       "domain": "niedersachsen.de",
@@ -53,7 +53,7 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 29293
+      "count": 29459
     },
     {
       "domain": "gencat.cat",
@@ -72,16 +72,20 @@
       "count": 23151
     },
     {
+      "domain": "gdansk.pl",
+      "count": 17018
+    },
+    {
       "domain": "diplo.de",
       "count": 16681
     },
     {
-      "domain": "gdansk.pl",
-      "count": 15757
-    },
-    {
       "domain": "hamburg.de",
       "count": 15104
+    },
+    {
+      "domain": "cultura.gov.it",
+      "count": 14914
     },
     {
       "domain": "admin.ch",
@@ -90,10 +94,6 @@
     {
       "domain": "gva.es",
       "count": 13895
-    },
-    {
-      "domain": "cultura.gov.it",
-      "count": 13854
     },
     {
       "domain": "xunta.gal",
@@ -116,6 +116,10 @@
       "count": 11036
     },
     {
+      "domain": "torun.pl",
+      "count": 10843
+    },
+    {
       "domain": "belgium.be",
       "count": 10762
     },
@@ -124,12 +128,12 @@
       "count": 10085
     },
     {
-      "domain": "blog.gov.uk",
-      "count": 9538
+      "domain": "tarnow.pl",
+      "count": 9772
     },
     {
-      "domain": "torun.pl",
-      "count": 9163
+      "domain": "blog.gov.uk",
+      "count": 9609
     },
     {
       "domain": "kk.dk",
@@ -156,16 +160,16 @@
       "count": 8311
     },
     {
-      "domain": "tarnow.pl",
-      "count": 8289
-    },
-    {
       "domain": "scot.nhs.uk",
       "count": 8088
     },
     {
       "domain": "wallonie.be",
       "count": 8029
+    },
+    {
+      "domain": "developpement-durable.gouv.fr",
+      "count": 7915
     },
     {
       "domain": "cnam.fr",
@@ -181,7 +185,7 @@
     },
     {
       "domain": "bund.de",
-      "count": 6942
+      "count": 6953
     },
     {
       "domain": "gouvernement.lu",
@@ -198,20 +202,16 @@
     {
       "domain": "gdynia.pl",
       "count": 6253
-    },
-    {
-      "domain": "politiaromana.ro",
-      "count": 5867
     }
   ],
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 81675
+      "count": 83121
     },
     {
       "domain": "googleapis.com",
-      "count": 65587
+      "count": 66512
     },
     {
       "domain": "sachsen.de",
@@ -223,71 +223,71 @@
     },
     {
       "domain": "instagram.com",
-      "count": 48349
-    },
-    {
-      "domain": "auvergnerhonealpes.fr",
-      "count": 45976
+      "count": 49047
     },
     {
       "domain": "youtube.com",
-      "count": 45954
+      "count": 46650
+    },
+    {
+      "domain": "auvergnerhonealpes.fr",
+      "count": 45986
     },
     {
       "domain": "twitter.com",
-      "count": 39058
+      "count": 39587
     },
     {
       "domain": "google.com",
-      "count": 37002
+      "count": 37465
     },
     {
       "domain": "linkedin.com",
-      "count": 34334
+      "count": 35146
     },
     {
       "domain": "krakow.pl",
-      "count": 33610
+      "count": 33623
+    },
+    {
+      "domain": "googletagmanager.com",
+      "count": 31185
     },
     {
       "domain": "gouv.qc.ca",
       "count": 31085
     },
     {
-      "domain": "googletagmanager.com",
-      "count": 30811
-    },
-    {
       "domain": "niedersachsen.de",
       "count": 28146
+    },
+    {
+      "domain": "lodz.pl",
+      "count": 27405
     },
     {
       "domain": "rlp.de",
       "count": 25951
     },
     {
-      "domain": "lodz.pl",
-      "count": 25935
-    },
-    {
       "domain": "poznan.pl",
-      "count": 23305
+      "count": 23309
     },
     {
       "domain": "jcyl.es",
-      "count": 20747
+      "count": 20905
+    },
+    {
+      "domain": "jsdelivr.net",
+      "count": 20376
     },
     {
       "domain": "bayern.de",
       "count": 20294
     },
     {
-      "domain": "jsdelivr.net",
-      "count": 20155
-    },
-    {
       "domain": "cloudflare.com",
-      "count": 19387
+      "count": 19689
     },
     {
       "domain": "esteri.it",
@@ -295,7 +295,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 16958
+      "count": 17180
     },
     {
       "domain": "nrw.de",
@@ -307,7 +307,7 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 14508
+      "count": 14594
     },
     {
       "domain": "gov.mt",
@@ -322,20 +322,20 @@
       "count": 10697
     },
     {
+      "domain": "gdansk.pl",
+      "count": 10194
+    },
+    {
       "domain": "fontawesome.com",
-      "count": 9822
+      "count": 9968
     },
     {
       "domain": "hessen.de",
       "count": 9643
     },
     {
-      "domain": "gdansk.pl",
-      "count": 9422
-    },
-    {
       "domain": "x.com",
-      "count": 9237
+      "count": 9564
     },
     {
       "domain": "hamburg.de",
@@ -343,11 +343,11 @@
     },
     {
       "domain": "europa.eu",
-      "count": 8745
+      "count": 8833
     },
     {
       "domain": "gva.es",
-      "count": 8643
+      "count": 8647
     },
     {
       "domain": "haute-garonne.fr",
@@ -355,7 +355,7 @@
     },
     {
       "domain": "unpkg.com",
-      "count": 8316
+      "count": 8406
     },
     {
       "domain": "diplo.de",
@@ -363,7 +363,7 @@
     },
     {
       "domain": "paris.fr",
-      "count": 7743
+      "count": 7745
     },
     {
       "domain": "xunta.gal",
@@ -371,15 +371,15 @@
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 7472
+      "count": 7571
     },
     {
       "domain": "jquery.com",
-      "count": 7241
+      "count": 7318
     },
     {
       "domain": "cultura.gov.it",
-      "count": 6454
+      "count": 6934
     },
     {
       "domain": "steiermark.at",
@@ -399,7 +399,7 @@
     },
     {
       "domain": "canada.ca",
-      "count": 5863
+      "count": 5864
     },
     {
       "domain": "skolengo.com",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 163437,
-    "form_destination": 21222,
-    "image_or_media_dependency": 33386,
-    "script_dependency": 50598,
-    "stylesheet_dependency": 40360,
-    "font_or_preload_dependency": 8407
+    "editorial_link": 163369,
+    "form_destination": 21211,
+    "image_or_media_dependency": 33380,
+    "script_dependency": 50585,
+    "stylesheet_dependency": 40345,
+    "font_or_preload_dependency": 8396
   },
-  "generated_at": "2026-10-04T05:17:41.432339+00:00"
+  "generated_at": "2026-10-04T21:43:51.188205+00:00"
 }

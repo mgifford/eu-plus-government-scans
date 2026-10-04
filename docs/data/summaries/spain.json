@@ -9,7 +9,7 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 29445
+      "count": 29459
     },
     {
       "domain": "gva.es",
@@ -211,7 +211,7 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 14586
+      "count": 14594
     },
     {
       "domain": "gva.es",
@@ -227,15 +227,15 @@
     },
     {
       "domain": "youtube.com",
-      "count": 2980
+      "count": 2981
     },
     {
       "domain": "jccm.es",
-      "count": 2888
+      "count": 2890
     },
     {
       "domain": "google.com",
-      "count": 2843
+      "count": 2844
     },
     {
       "domain": "googleapis.com",
@@ -371,7 +371,7 @@
     },
     {
       "domain": "sharethis.com",
-      "count": 375
+      "count": 376
     },
     {
       "domain": "sede.gob.es",
@@ -414,5 +414,5 @@
     "form_destination": 1460,
     "font_or_preload_dependency": 157
   },
-  "generated_at": "2026-10-04T17:18:54.645468+00:00"
+  "generated_at": "2026-10-04T21:43:52.265606+00:00"
 }
