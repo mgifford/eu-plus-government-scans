@@ -41,7 +41,7 @@
     },
     {
       "domain": "bund.de",
-      "count": 6942
+      "count": 6953
     },
     {
       "domain": "bremen.de",
@@ -180,15 +180,15 @@
       "count": 267
     },
     {
+      "domain": "thuenen.de",
+      "count": 241
+    },
+    {
       "domain": "ptb.de",
       "count": 240
     },
     {
       "domain": "justiz.de",
-      "count": 229
-    },
-    {
-      "domain": "thuenen.de",
       "count": 229
     },
     {
@@ -243,15 +243,15 @@
     },
     {
       "domain": "facebook.com",
-      "count": 5350
+      "count": 5352
     },
     {
       "domain": "instagram.com",
-      "count": 5184
+      "count": 5187
     },
     {
       "domain": "bund.de",
-      "count": 4717
+      "count": 4723
     },
     {
       "domain": "bremen.de",
@@ -263,15 +263,15 @@
     },
     {
       "domain": "twitter.com",
-      "count": 3469
+      "count": 3470
     },
     {
       "domain": "youtube.com",
-      "count": 3298
+      "count": 3300
     },
     {
       "domain": "linkedin.com",
-      "count": 2682
+      "count": 2683
     },
     {
       "domain": "berlin.de",
@@ -327,7 +327,7 @@
     },
     {
       "domain": "google.com",
-      "count": 838
+      "count": 839
     },
     {
       "domain": "duesseldorf.de",
@@ -379,7 +379,7 @@
     },
     {
       "domain": "xing.com",
-      "count": 580
+      "count": 581
     },
     {
       "domain": "eye-able.com",
@@ -414,5 +414,5 @@
     "stylesheet_dependency": 2704,
     "form_destination": 2139
   },
-  "generated_at": "2026-10-03T16:07:42.989736+00:00"
+  "generated_at": "2026-10-04T17:18:54.509717+00:00"
 }

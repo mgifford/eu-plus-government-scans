@@ -1,6 +1,6 @@
 {
   "country_code": "IRELAND",
-  "total_relationships": 2085,
+  "total_relationships": 2086,
   "total_source_domains": 103,
   "top_source_domains": [
     {
@@ -29,7 +29,7 @@
     },
     {
       "domain": "limerick.ie",
-      "count": 465
+      "count": 467
     },
     {
       "domain": "clarecoco.ie",
@@ -267,11 +267,11 @@
     },
     {
       "domain": "limerick.ie",
-      "count": 211
+      "count": 212
     },
     {
       "domain": "cloudflare.com",
-      "count": 210
+      "count": 211
     },
     {
       "domain": "ipoi.gov.ie",
@@ -410,9 +410,9 @@
     "editorial_link": 1012,
     "form_destination": 132,
     "script_dependency": 405,
-    "stylesheet_dependency": 289,
+    "stylesheet_dependency": 290,
     "image_or_media_dependency": 187,
     "font_or_preload_dependency": 60
   },
-  "generated_at": "2026-10-03T21:27:18.096199+00:00"
+  "generated_at": "2026-10-04T17:18:54.728928+00:00"
 }

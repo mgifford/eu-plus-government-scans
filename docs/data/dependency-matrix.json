@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T12:39:24.968283+00:00",
+  "generated_at": "2026-10-04T17:18:56.845854+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -188,7 +188,7 @@
     {
       "service": "jsdelivr.net",
       "countries": 32,
-      "domains": 1153
+      "domains": 1152
     },
     {
       "service": "fontawesome.com",
@@ -198,7 +198,7 @@
     {
       "service": "google.com",
       "countries": 31,
-      "domains": 2081
+      "domains": 2083
     },
     {
       "service": "cloudflare.com",
@@ -213,7 +213,7 @@
     {
       "service": "unpkg.com",
       "countries": 29,
-      "domains": 683
+      "domains": 682
     },
     {
       "service": "bootstrapcdn.com",
@@ -1100,9 +1100,9 @@
       "country_code": "SPAIN",
       "country": "Spain",
       "service": "jsdelivr.net",
-      "domains": 54,
+      "domains": 53,
       "scanned_domains": 245,
-      "percent": 22.0
+      "percent": 21.6
     },
     {
       "country_code": "SPAIN",
@@ -1116,9 +1116,9 @@
       "country_code": "SPAIN",
       "country": "Spain",
       "service": "google.com",
-      "domains": 44,
+      "domains": 46,
       "scanned_domains": 245,
-      "percent": 18.0
+      "percent": 18.8
     },
     {
       "country_code": "SPAIN",
@@ -1140,9 +1140,9 @@
       "country_code": "SPAIN",
       "country": "Spain",
       "service": "unpkg.com",
-      "domains": 23,
+      "domains": 22,
       "scanned_domains": 245,
-      "percent": 9.4
+      "percent": 9.0
     },
     {
       "country_code": "SPAIN",
