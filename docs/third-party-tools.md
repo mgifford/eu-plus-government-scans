@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-10-03 21:15 UTC — last scan: 2026-10-03_
+_Stats as of 2026-10-04 01:53 UTC — last scan: 2026-10-03_
 
-**324** scan batches run
+**326** scan batches run
 
 **87,690** of **87,696** available pages scanned (**100.0%** coverage)
-**80,203** of **87,690** scanned pages were reachable (**91.5%**)
-**37,501** reachable pages loaded at least one third-party script (**46.8%** of reachable)
-**46,525** known third-party service loads identified
+**80,218** of **87,690** scanned pages were reachable (**91.5%**)
+**37,504** reachable pages loaded at least one third-party script (**46.8%** of reachable)
+**46,428** known third-party service loads identified
 **26** unique known services across **17** categories
 
 ---
@@ -31,7 +31,7 @@ _Stats as of 2026-10-03 21:15 UTC — last scan: 2026-10-03_
 | Estonia | 401 | 401 | 385 | 135 | 120 | 35.1 | 31.2 | 2026-09-25 |
 | Finland | 199 | 199 | 189 | 47 | 26 | 24.9 | 13.8 | 2026-09-25 |
 | France | 10,009 | 10,009 | 9,115 | 4,174 | 2,451 | 45.8 | 26.9 | 2026-10-02 |
-| Germany | 6,599 | 6,599 | 6,332 | 1,666 | 790 | 26.3 | 12.5 | 2026-10-03 |
+| Germany | 6,599 | 6,599 | 6,347 | 1,666 | 690 | 26.2 | 10.9 | 2026-10-03 |
 | Greece | 1,752 | 1,752 | 1,640 | 814 | 1,136 | 49.6 | 69.3 | 2026-10-02 |
 | Hungary | 392 | 392 | 296 | 132 | 200 | 44.6 | 67.6 | 2026-09-25 |
 | Iceland | 145 | 145 | 143 | 78 | 45 | 54.5 | 31.5 | 2026-09-26 |
@@ -49,7 +49,7 @@ _Stats as of 2026-10-03 21:15 UTC — last scan: 2026-10-03_
 | Romania | 807 | 807 | 349 | 256 | 264 | 73.4 | 75.6 | 2026-09-27 |
 | Slovakia | 442 | 442 | 413 | 218 | 273 | 52.8 | 66.1 | 2026-09-27 |
 | Slovenia | 214 | 214 | 207 | 56 | 79 | 27.1 | 38.2 | 2026-09-24 |
-| Spain | 6,091 | 6,091 | 5,053 | 2,495 | 2,435 | 49.4 | 48.2 | 2026-10-02 |
+| Spain | 6,091 | 6,091 | 5,053 | 2,498 | 2,438 | 49.4 | 48.2 | 2026-10-03 |
 | Sweden | 1,702 | 1,702 | 1,629 | 551 | 315 | 33.8 | 19.3 | 2026-09-28 |
 | Switzerland | 2,123 | 2,123 | 2,076 | 414 | 434 | 19.9 | 20.9 | 2026-09-29 |
 | United Kingdom | 19,511 | 19,511 | 18,506 | 9,845 | 14,469 | 53.2 | 78.2 | 2026-10-03 |
@@ -64,8 +64,8 @@ _Stats as of 2026-10-03 21:15 UTC — last scan: 2026-10-03_
 |--:|---------|------:|
 | 1 | Google Analytics (GA4) | **8,503** |
 | 2 | cdnjs (Cloudflare CDN) | **7,585** |
-| 3 | jsDelivr CDN | **6,719** |
-| 4 | Google reCAPTCHA | **4,822** |
+| 3 | jsDelivr CDN | **6,619** |
+| 4 | Google reCAPTCHA | **4,825** |
 | 5 | Google Tag Manager | **4,097** |
 | 6 | Google Hosted Libraries | **3,220** |
 | 7 | unpkg CDN | **2,858** |
@@ -88,8 +88,8 @@ _Stats as of 2026-10-03 21:15 UTC — last scan: 2026-10-03_
 | # | Service | Reachable Pages | Prevalence of Reachable Pages |
 |--:|---------|----------------:|------------------------------:|
 | 1 | Google Analytics (GA4) | **8,273** | **44.7%** |
-| 2 | Google reCAPTCHA | **4,542** | **24.5%** |
-| 3 | jsDelivr CDN | **4,491** | **24.3%** |
+| 2 | Google reCAPTCHA | **4,545** | **24.6%** |
+| 3 | jsDelivr CDN | **4,441** | **24.0%** |
 | 4 | cdnjs (Cloudflare CDN) | **3,969** | **21.4%** |
 | 5 | Google Tag Manager | **3,905** | **21.1%** |
 | 6 | Google Hosted Libraries | **2,897** | **15.7%** |
@@ -112,11 +112,11 @@ _Stats as of 2026-10-03 21:15 UTC — last scan: 2026-10-03_
 
 | # | Category | Loads |
 |--:|----------|------:|
-| 1 | CDN | **20,382** |
+| 1 | CDN | **20,282** |
 | 2 | Analytics | **9,614** |
 | 3 | JavaScript Library | **5,969** |
-| 4 | Security | **5,026** |
-| 5 | CAPTCHA | **4,822** |
+| 4 | Security | **5,029** |
+| 5 | CAPTCHA | **4,825** |
 | 6 | Tag Manager | **4,595** |
 | 7 | Icon Library | **1,914** |
 | 8 | Cookie Consent | **1,484** |
@@ -134,7 +134,7 @@ Infrastructure-heavy categories (CDNs, core libraries, and UI assets):
 
 | # | Infrastructure Category | Loads |
 |--:|--------------------------|------:|
-| 1 | CDN | **20,382** |
+| 1 | CDN | **20,282** |
 | 2 | JavaScript Library | **5,969** |
 | 3 | Icon Library | **1,914** |
 | 4 | UI Framework | **948** |
@@ -144,8 +144,8 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 | # | Policy-Relevant Category | Loads |
 |--:|--------------------------|------:|
 | 1 | Analytics | **9,614** |
-| 2 | Security | **5,026** |
-| 3 | CAPTCHA | **4,822** |
+| 2 | Security | **5,029** |
+| 3 | CAPTCHA | **4,825** |
 | 4 | Tag Manager | **4,595** |
 | 5 | Cookie Consent | **1,484** |
 | 6 | Advertising | **458** |
