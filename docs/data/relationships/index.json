@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-03T21:27:12.397142+00:00",
+  "generated_at": "2026-10-04T05:17:36.611988+00:00",
   "shard_max_bytes": 33554432,
-  "total_rows": 320237,
-  "total_bytes": 190566415,
+  "total_rows": 320258,
+  "total_bytes": 190567323,
   "shards": [
     {
       "file": "at.001.jsonl",
@@ -296,7 +296,7 @@
       "file": "scot.001.jsonl",
       "group": "scot",
       "rows": 626,
-      "bytes": 366793
+      "bytes": 366796
     },
     {
       "file": "se.001.jsonl",
@@ -331,14 +331,14 @@
     {
       "file": "uk.001.jsonl",
       "group": "uk",
-      "rows": 59528,
-      "bytes": 33554305
+      "rows": 59547,
+      "bytes": 33554131
     },
     {
       "file": "uk.002.jsonl",
       "group": "uk",
-      "rows": 13405,
-      "bytes": 7525519
+      "rows": 13407,
+      "bytes": 7526598
     },
     {
       "file": "wales.001.jsonl",
