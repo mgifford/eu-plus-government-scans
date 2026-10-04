@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-10-04 19:39 UTC_
+_Generated: 2026-10-04 20:15 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -78,7 +78,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Malta | 610 | 610 | 595 | 126 | 2 | 36 | 443 | 46 | 15 | 0 | 38 | Aug 2026 – Sep 2026 |
 | Netherlands | 945 | 945 | 903 | 232 | 10 | 100 | 565 | 117 | 85 | 47 | 76 | Aug 2026 – Sep 2026 |
 | Norway | 249 | 249 | 243 | 59 | 2 | 0 | 185 | 9 | 13 | 0 | 2 | Aug 2026 – Sep 2026 |
-| Poland | 14,951 | 14,951 | 13,693 | 5,995 | 73 | 1,074 | 6,637 | 1,057 | 345 | 1 | 1,144 | Aug 2026 – Oct 2026 |
+| Poland | 14,951 | 14,951 | 13,693 | 5,998 | 73 | 1,079 | 6,637 | 1,058 | 345 | 1 | 1,149 | Aug 2026 – Oct 2026 |
 | Portugal | 3,508 | 3,508 | 3,144 | 881 | 4 | 182 | 2,181 | 357 | 82 | 2 | 186 | Aug 2026 – Sep 2026 |
 | Cyprus | 29 | 29 | 29 | 15 | 0 | 0 | 14 | 9 | 1 | 0 | 0 | Aug 2026 – Sep 2026 |
 | Romania | 807 | 807 | 352 | 124 | 3 | 14 | 214 | 45 | 9 | 0 | 17 | Aug 2026 – Sep 2026 |
