@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-04T12:39:19.551027+00:00",
+  "generated_at": "2026-10-04T17:18:51.133369+00:00",
   "shard_max_bytes": 33554432,
-  "total_rows": 320332,
-  "total_bytes": 190745710,
+  "total_rows": 320364,
+  "total_bytes": 190759812,
   "shards": [
     {
       "file": "at.001.jsonl",
@@ -43,8 +43,8 @@
     {
       "file": "cat.001.jsonl",
       "group": "cat",
-      "rows": 1989,
-      "bytes": 1396891
+      "rows": 1991,
+      "bytes": 1397844
     },
     {
       "file": "ch.001.jsonl",
@@ -68,7 +68,7 @@
       "file": "com.001.jsonl",
       "group": "com",
       "rows": 405,
-      "bytes": 238928
+      "bytes": 239200
     },
     {
       "file": "cy.001.jsonl",
@@ -109,20 +109,20 @@
     {
       "file": "es.001.jsonl",
       "group": "es",
-      "rows": 16520,
-      "bytes": 10384655
+      "rows": 16544,
+      "bytes": 10397112
     },
     {
       "file": "eu.001.jsonl",
       "group": "eu",
-      "rows": 3617,
-      "bytes": 2107967
+      "rows": 3619,
+      "bytes": 2109055
     },
     {
       "file": "eus.001.jsonl",
       "group": "eus",
       "rows": 636,
-      "bytes": 440092
+      "bytes": 440131
     },
     {
       "file": "fi.001.jsonl",
@@ -169,8 +169,8 @@
     {
       "file": "ie.001.jsonl",
       "group": "ie",
-      "rows": 2141,
-      "bytes": 1177715
+      "rows": 2142,
+      "bytes": 1178211
     },
     {
       "file": "info.001.jsonl",
@@ -187,8 +187,8 @@
     {
       "file": "it.001.jsonl",
       "group": "it",
-      "rows": 16497,
-      "bytes": 10653983
+      "rows": 16498,
+      "bytes": 10654167
     },
     {
       "file": "lt.001.jsonl",
@@ -212,7 +212,7 @@
       "file": "madrid.001.jsonl",
       "group": "madrid",
       "rows": 122,
-      "bytes": 67527
+      "bytes": 67530
     },
     {
       "file": "microsoft.001.jsonl",
@@ -265,14 +265,14 @@
     {
       "file": "pl.001.jsonl",
       "group": "pl",
-      "rows": 58865,
-      "bytes": 33554234
+      "rows": 58870,
+      "bytes": 33554417
     },
     {
       "file": "pl.002.jsonl",
       "group": "pl",
-      "rows": 3053,
-      "bytes": 1637719
+      "rows": 3050,
+      "bytes": 1636146
     },
     {
       "file": "pt.001.jsonl",

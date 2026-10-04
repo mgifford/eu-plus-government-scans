@@ -176,11 +176,11 @@
       "count": 245
     },
     {
-      "domain": "gavle.se",
-      "count": 240
+      "domain": "scb.se",
+      "count": 245
     },
     {
-      "domain": "scb.se",
+      "domain": "gavle.se",
       "count": 240
     },
     {
@@ -354,11 +354,11 @@
       "count": 212
     },
     {
-      "domain": "konsumentverket.se",
-      "count": 206
+      "domain": "scb.se",
+      "count": 210
     },
     {
-      "domain": "scb.se",
+      "domain": "konsumentverket.se",
       "count": 206
     },
     {
@@ -414,5 +414,5 @@
     "form_destination": 491,
     "image_or_media_dependency": 679
   },
-  "generated_at": "2026-10-03T21:27:18.380418+00:00"
+  "generated_at": "2026-10-04T17:18:54.862291+00:00"
 }
