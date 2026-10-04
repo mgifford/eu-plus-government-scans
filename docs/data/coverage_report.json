@@ -65,14 +65,14 @@
     "never_scanned": 0,
     "stale_31d": 0
   },
-  "CANADA": {
-    "total_urls": 4469,
-    "attempted": 4469,
-    "successful": 4221,
-    "failed": 248,
+  "FRANCE": {
+    "total_urls": 10009,
+    "attempted": 10009,
+    "successful": 9183,
+    "failed": 826,
     "skipped": 0,
     "never_scanned": 0,
-    "stale_31d": 0
+    "stale_31d": 422
   },
   "LITHUANIA": {
     "total_urls": 122,
@@ -92,8 +92,14 @@
     "never_scanned": 0,
     "stale_31d": 0
   },
-  "UNITED_KINGDOM_UK": {
-    "error": "TOON file not found"
+  "ITALY": {
+    "total_urls": 5351,
+    "attempted": 5351,
+    "successful": 4677,
+    "failed": 674,
+    "skipped": 0,
+    "never_scanned": 0,
+    "stale_31d": 0
   },
   "ESTONIA": {
     "total_urls": 401,
@@ -113,11 +119,11 @@
     "never_scanned": 0,
     "stale_31d": 0
   },
-  "FRANCE": {
-    "total_urls": 10009,
-    "attempted": 10009,
-    "successful": 9283,
-    "failed": 726,
+  "GERMANY": {
+    "total_urls": 6599,
+    "attempted": 6599,
+    "successful": 6445,
+    "failed": 154,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 0
@@ -140,11 +146,11 @@
     "never_scanned": 0,
     "stale_31d": 0
   },
-  "ITALY": {
-    "total_urls": 5351,
-    "attempted": 5351,
-    "successful": 4677,
-    "failed": 674,
+  "SPAIN": {
+    "total_urls": 6091,
+    "attempted": 6091,
+    "successful": 5123,
+    "failed": 968,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 0
@@ -167,11 +173,11 @@
     "never_scanned": 0,
     "stale_31d": 0
   },
-  "GERMANY": {
-    "total_urls": 6599,
-    "attempted": 6599,
-    "successful": 6445,
-    "failed": 154,
+  "PORTUGAL": {
+    "total_urls": 3508,
+    "attempted": 3508,
+    "successful": 3090,
+    "failed": 418,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 0
@@ -194,14 +200,14 @@
     "never_scanned": 0,
     "stale_31d": 0
   },
-  "SPAIN": {
-    "total_urls": 6091,
-    "attempted": 6091,
-    "successful": 5123,
-    "failed": 968,
+  "POLAND": {
+    "total_urls": 14951,
+    "attempted": 14951,
+    "successful": 13747,
+    "failed": 1204,
     "skipped": 0,
     "never_scanned": 0,
-    "stale_31d": 0
+    "stale_31d": 803
   },
   "BULGARIA": {
     "total_urls": 353,
@@ -221,11 +227,11 @@
     "never_scanned": 0,
     "stale_31d": 0
   },
-  "PORTUGAL": {
-    "total_urls": 3508,
-    "attempted": 3508,
-    "successful": 3090,
-    "failed": 418,
+  "CANADA": {
+    "total_urls": 4469,
+    "attempted": 4469,
+    "successful": 4221,
+    "failed": 248,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 0
@@ -248,14 +254,8 @@
     "never_scanned": 0,
     "stale_31d": 0
   },
-  "POLAND": {
-    "total_urls": 14951,
-    "attempted": 14951,
-    "successful": 13747,
-    "failed": 1204,
-    "skipped": 0,
-    "never_scanned": 0,
-    "stale_31d": 803
+  "UNITED_KINGDOM_UK": {
+    "error": "TOON file not found"
   },
   "SLOVENIA": {
     "total_urls": 214,
