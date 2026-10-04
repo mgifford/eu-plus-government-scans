@@ -132,12 +132,12 @@
       "count": 825
     },
     {
-      "domain": "comune.trento.it",
+      "domain": "comune.perugia.it",
       "count": 780
     },
     {
-      "domain": "comune.perugia.it",
-      "count": 764
+      "domain": "comune.trento.it",
+      "count": 780
     },
     {
       "domain": "comune.roma.it",
@@ -215,7 +215,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 7723
+      "count": 7724
     },
     {
       "domain": "cultura.gov.it",
@@ -223,11 +223,11 @@
     },
     {
       "domain": "youtube.com",
-      "count": 6138
+      "count": 6139
     },
     {
       "domain": "twitter.com",
-      "count": 6093
+      "count": 6094
     },
     {
       "domain": "agid.gov.it",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 1871
+      "count": 1872
     },
     {
       "domain": "comune.parma.it",
@@ -319,7 +319,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 1158
+      "count": 1159
     },
     {
       "domain": "mef.gov.it",
@@ -379,7 +379,7 @@
     },
     {
       "domain": "t.me",
-      "count": 682
+      "count": 683
     },
     {
       "domain": "scuolamagistratura.it",
@@ -414,5 +414,5 @@
     "form_destination": 1460,
     "font_or_preload_dependency": 259
   },
-  "generated_at": "2026-10-04T17:18:54.369178+00:00"
+  "generated_at": "2026-10-04T21:43:51.728407+00:00"
 }
