@@ -9,7 +9,7 @@
     },
     {
       "domain": "rlp.de",
-      "count": 32544
+      "count": 32772
     },
     {
       "domain": "bayern.de",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "sachsen.de",
-      "count": 62876
+      "count": 62877
     },
     {
       "domain": "niedersachsen.de",
@@ -215,7 +215,7 @@
     },
     {
       "domain": "rlp.de",
-      "count": 25951
+      "count": 26140
     },
     {
       "domain": "bayern.de",
@@ -231,7 +231,7 @@
     },
     {
       "domain": "hamburg.de",
-      "count": 9200
+      "count": 9201
     },
     {
       "domain": "diplo.de",
@@ -247,15 +247,15 @@
     },
     {
       "domain": "instagram.com",
-      "count": 5187
+      "count": 5188
     },
     {
       "domain": "bund.de",
-      "count": 4723
+      "count": 4724
     },
     {
       "domain": "bremen.de",
-      "count": 4246
+      "count": 4247
     },
     {
       "domain": "thueringen.de",
@@ -263,11 +263,11 @@
     },
     {
       "domain": "twitter.com",
-      "count": 3470
+      "count": 3472
     },
     {
       "domain": "youtube.com",
-      "count": 3300
+      "count": 3302
     },
     {
       "domain": "linkedin.com",
@@ -275,7 +275,7 @@
     },
     {
       "domain": "berlin.de",
-      "count": 2543
+      "count": 2544
     },
     {
       "domain": "baden-wuerttemberg.de",
@@ -339,7 +339,7 @@
     },
     {
       "domain": "brandenburg.de",
-      "count": 806
+      "count": 807
     },
     {
       "domain": "justiz-karriere.nrw",
@@ -387,7 +387,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 549
+      "count": 553
     },
     {
       "domain": "stuttgart.de",
@@ -414,5 +414,5 @@
     "stylesheet_dependency": 2704,
     "form_destination": 2139
   },
-  "generated_at": "2026-10-04T21:43:51.998423+00:00"
+  "generated_at": "2026-10-05T05:02:58.756380+00:00"
 }
