@@ -211,7 +211,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 8780
+      "count": 8785
     },
     {
       "domain": "haute-garonne.fr",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 5974
+      "count": 5977
     },
     {
       "domain": "skolengo.com",
@@ -231,7 +231,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 5292
+      "count": 5293
     },
     {
       "domain": "cnam.fr",
@@ -239,23 +239,23 @@
     },
     {
       "domain": "data.gouv.fr",
-      "count": 4974
+      "count": 4977
     },
     {
       "domain": "twitter.com",
-      "count": 4650
+      "count": 4652
     },
     {
       "domain": "googleapis.com",
-      "count": 4308
+      "count": 4312
     },
     {
       "domain": "legifrance.gouv.fr",
-      "count": 4281
+      "count": 4284
     },
     {
       "domain": "youtube.com",
-      "count": 4264
+      "count": 4270
     },
     {
       "domain": "developpement-durable.gouv.fr",
@@ -263,7 +263,7 @@
     },
     {
       "domain": "github.com",
-      "count": 3352
+      "count": 3355
     },
     {
       "domain": "info.gouv.fr",
@@ -275,7 +275,7 @@
     },
     {
       "domain": "service-public.fr",
-      "count": 2406
+      "count": 2409
     },
     {
       "domain": "rennes.fr",
@@ -359,11 +359,11 @@
     },
     {
       "domain": "gouvernement.fr",
-      "count": 1164
+      "count": 1167
     },
     {
       "domain": "gstatic.com",
-      "count": 1135
+      "count": 1137
     },
     {
       "domain": "herault.fr",
@@ -414,5 +414,5 @@
     "form_destination": 1715,
     "font_or_preload_dependency": 700
   },
-  "generated_at": "2026-10-05T14:31:52.083720+00:00"
+  "generated_at": "2026-10-06T13:37:48.593688+00:00"
 }

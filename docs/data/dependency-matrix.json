@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06T05:51:36.020563+00:00",
+  "generated_at": "2026-10-06T13:37:52.390338+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -173,7 +173,7 @@
     {
       "service": "googleapis.com",
       "countries": 32,
-      "domains": 4267
+      "domains": 4268
     },
     {
       "service": "googletagmanager.com",
@@ -188,7 +188,7 @@
     {
       "service": "jsdelivr.net",
       "countries": 32,
-      "domains": 1151
+      "domains": 1152
     },
     {
       "service": "fontawesome.com",
@@ -198,12 +198,12 @@
     {
       "service": "google.com",
       "countries": 31,
-      "domains": 2077
+      "domains": 2078
     },
     {
       "service": "cloudflare.com",
       "countries": 31,
-      "domains": 1582
+      "domains": 1583
     },
     {
       "service": "jquery.com",
@@ -238,7 +238,7 @@
     {
       "service": "facebook.net",
       "countries": 22,
-      "domains": 197
+      "domains": 196
     },
     {
       "service": "amazonaws.com",
@@ -1076,9 +1076,9 @@
       "country_code": "SPAIN",
       "country": "Spain",
       "service": "googleapis.com",
-      "domains": 103,
+      "domains": 104,
       "scanned_domains": 245,
-      "percent": 42.0
+      "percent": 42.4
     },
     {
       "country_code": "SPAIN",
@@ -1100,9 +1100,9 @@
       "country_code": "SPAIN",
       "country": "Spain",
       "service": "jsdelivr.net",
-      "domains": 53,
+      "domains": 54,
       "scanned_domains": 245,
-      "percent": 21.6
+      "percent": 22.0
     },
     {
       "country_code": "SPAIN",
@@ -1116,17 +1116,17 @@
       "country_code": "SPAIN",
       "country": "Spain",
       "service": "google.com",
-      "domains": 46,
+      "domains": 47,
       "scanned_domains": 245,
-      "percent": 18.8
+      "percent": 19.2
     },
     {
       "country_code": "SPAIN",
       "country": "Spain",
       "service": "cloudflare.com",
-      "domains": 60,
+      "domains": 61,
       "scanned_domains": 245,
-      "percent": 24.5
+      "percent": 24.9
     },
     {
       "country_code": "SPAIN",
@@ -1180,9 +1180,9 @@
       "country_code": "SPAIN",
       "country": "Spain",
       "service": "facebook.net",
-      "domains": 10,
+      "domains": 9,
       "scanned_domains": 245,
-      "percent": 4.1
+      "percent": 3.7
     },
     {
       "country_code": "SPAIN",

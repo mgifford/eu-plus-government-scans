@@ -13,7 +13,7 @@
     },
     {
       "domain": "cultura.gov.it",
-      "count": 16095
+      "count": 16159
     },
     {
       "domain": "regione.lombardia.it",
@@ -65,7 +65,7 @@
     },
     {
       "domain": "mef.gov.it",
-      "count": 1826
+      "count": 1841
     },
     {
       "domain": "governo.it",
@@ -215,27 +215,27 @@
     },
     {
       "domain": "facebook.com",
-      "count": 7792
+      "count": 7795
     },
     {
       "domain": "cultura.gov.it",
-      "count": 7483
+      "count": 7508
     },
     {
       "domain": "youtube.com",
-      "count": 6175
+      "count": 6177
     },
     {
       "domain": "twitter.com",
-      "count": 6102
+      "count": 6105
     },
     {
       "domain": "agid.gov.it",
-      "count": 5024
+      "count": 5027
     },
     {
       "domain": "instagram.com",
-      "count": 4879
+      "count": 4882
     },
     {
       "domain": "governo.it",
@@ -251,11 +251,11 @@
     },
     {
       "domain": "europa.eu",
-      "count": 2780
+      "count": 2781
     },
     {
       "domain": "googleapis.com",
-      "count": 2469
+      "count": 2471
     },
     {
       "domain": "viaggiaresicuri.it",
@@ -303,11 +303,11 @@
     },
     {
       "domain": "beniculturali.it",
-      "count": 1365
+      "count": 1368
     },
     {
       "domain": "google.com",
-      "count": 1206
+      "count": 1208
     },
     {
       "domain": "comune.bologna.it",
@@ -319,11 +319,11 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 1165
+      "count": 1167
     },
     {
       "domain": "mef.gov.it",
-      "count": 1075
+      "count": 1086
     },
     {
       "domain": "csm.it",
@@ -414,5 +414,5 @@
     "form_destination": 1460,
     "font_or_preload_dependency": 259
   },
-  "generated_at": "2026-10-05T14:31:52.384356+00:00"
+  "generated_at": "2026-10-06T13:37:48.897984+00:00"
 }
