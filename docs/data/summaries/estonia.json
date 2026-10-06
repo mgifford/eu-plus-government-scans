@@ -52,6 +52,10 @@
       "count": 424
     },
     {
+      "domain": "viljandi.ee",
+      "count": 416
+    },
+    {
       "domain": "hm.ee",
       "count": 408
     },
@@ -62,10 +66,6 @@
     {
       "domain": "narva.ee",
       "count": 396
-    },
-    {
-      "domain": "viljandi.ee",
-      "count": 380
     },
     {
       "domain": "kaitseministeerium.ee",
@@ -143,7 +143,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 642
+      "count": 644
     },
     {
       "domain": "parnu.ee",
@@ -191,7 +191,7 @@
     },
     {
       "domain": "flickr.com",
-      "count": 203
+      "count": 204
     },
     {
       "domain": "riigikantselei.ee",
@@ -206,6 +206,10 @@
       "count": 198
     },
     {
+      "domain": "viljandi.ee",
+      "count": 181
+    },
+    {
       "domain": "twitter.com",
       "count": 178
     },
@@ -218,10 +222,6 @@
       "count": 171
     },
     {
-      "domain": "viljandi.ee",
-      "count": 168
-    },
-    {
       "domain": "kriis.ee",
       "count": 157
     },
@@ -231,7 +231,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 155
+      "count": 157
     },
     {
       "domain": "mkm.ee",
@@ -266,12 +266,12 @@
       "count": 96
     },
     {
-      "domain": "riigiteataja.ee",
-      "count": 93
+      "domain": "google.com",
+      "count": 94
     },
     {
-      "domain": "google.com",
-      "count": 92
+      "domain": "riigiteataja.ee",
+      "count": 93
     },
     {
       "domain": "prokuratuur.ee",
@@ -310,15 +310,15 @@
       "count": 57
     },
     {
+      "domain": "fontawesome.com",
+      "count": 56
+    },
+    {
       "domain": "vportal.ee",
       "count": 55
     },
     {
       "domain": "edupage.org",
-      "count": 54
-    },
-    {
-      "domain": "fontawesome.com",
       "count": 54
     },
     {
@@ -342,5 +342,5 @@
     "stylesheet_dependency": 189,
     "font_or_preload_dependency": 27
   },
-  "generated_at": "2026-10-05T14:31:52.183127+00:00"
+  "generated_at": "2026-10-06T05:51:32.789578+00:00"
 }
