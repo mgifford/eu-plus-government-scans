@@ -1,6 +1,6 @@
 {
   "country_code": "LUXEMBOURG",
-  "total_relationships": 2071,
+  "total_relationships": 2076,
   "total_source_domains": 40,
   "top_source_domains": [
     {
@@ -9,7 +9,7 @@
     },
     {
       "domain": "public.lu",
-      "count": 5089
+      "count": 5123
     },
     {
       "domain": "uni.lu",
@@ -167,11 +167,11 @@
   "top_target_domains": [
     {
       "domain": "public.lu",
-      "count": 5222
+      "count": 5249
     },
     {
       "domain": "gouvernement.lu",
-      "count": 3101
+      "count": 3103
     },
     {
       "domain": "facebook.com",
@@ -203,7 +203,7 @@
     },
     {
       "domain": "adobedtm.com",
-      "count": 261
+      "count": 264
     },
     {
       "domain": "youtube.com",
@@ -211,7 +211,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 212
+      "count": 213
     },
     {
       "domain": "googleapis.com",
@@ -367,12 +367,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 1159,
-    "form_destination": 163,
-    "image_or_media_dependency": 200,
-    "script_dependency": 281,
-    "stylesheet_dependency": 239,
+    "editorial_link": 1160,
+    "form_destination": 164,
+    "image_or_media_dependency": 201,
+    "script_dependency": 282,
+    "stylesheet_dependency": 240,
     "font_or_preload_dependency": 29
   },
-  "generated_at": "2026-10-04T21:43:51.900610+00:00"
+  "generated_at": "2026-10-06T13:37:48.792667+00:00"
 }
