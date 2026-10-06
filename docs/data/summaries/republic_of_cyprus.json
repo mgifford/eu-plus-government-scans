@@ -1,7 +1,7 @@
 {
   "country_code": "REPUBLIC_OF_CYPRUS",
-  "total_relationships": 317063,
-  "total_source_domains": 9150,
+  "total_relationships": 317139,
+  "total_source_domains": 9152,
   "top_source_domains": [
     {
       "domain": "sachsen.de",
@@ -25,7 +25,7 @@
     },
     {
       "domain": "lodz.pl",
-      "count": 47774
+      "count": 47856
     },
     {
       "domain": "poznan.pl",
@@ -61,7 +61,7 @@
     },
     {
       "domain": "gov.mt",
-      "count": 24958
+      "count": 25007
     },
     {
       "domain": "nrw.de",
@@ -100,8 +100,16 @@
       "count": 13555
     },
     {
+      "domain": "torun.pl",
+      "count": 13423
+    },
+    {
       "domain": "hessen.de",
       "count": 12562
+    },
+    {
+      "domain": "tarnow.pl",
+      "count": 12218
     },
     {
       "domain": "steiermark.at",
@@ -116,10 +124,6 @@
       "count": 11036
     },
     {
-      "domain": "torun.pl",
-      "count": 10843
-    },
-    {
       "domain": "belgium.be",
       "count": 10762
     },
@@ -130,10 +134,6 @@
     {
       "domain": "blog.gov.uk",
       "count": 10067
-    },
-    {
-      "domain": "tarnow.pl",
-      "count": 9772
     },
     {
       "domain": "kk.dk",
@@ -207,11 +207,11 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 83744
+      "count": 84215
     },
     {
       "domain": "googleapis.com",
-      "count": 67171
+      "count": 67838
     },
     {
       "domain": "sachsen.de",
@@ -223,11 +223,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 49378
+      "count": 49508
     },
     {
       "domain": "youtube.com",
-      "count": 46942
+      "count": 47109
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -235,23 +235,23 @@
     },
     {
       "domain": "twitter.com",
-      "count": 39940
+      "count": 40001
     },
     {
       "domain": "google.com",
-      "count": 38007
+      "count": 38209
     },
     {
       "domain": "linkedin.com",
-      "count": 35376
+      "count": 35395
     },
     {
       "domain": "krakow.pl",
-      "count": 33623
+      "count": 33646
     },
     {
       "domain": "googletagmanager.com",
-      "count": 31666
+      "count": 31845
     },
     {
       "domain": "gouv.qc.ca",
@@ -263,7 +263,7 @@
     },
     {
       "domain": "lodz.pl",
-      "count": 27405
+      "count": 27437
     },
     {
       "domain": "rlp.de",
@@ -271,7 +271,7 @@
     },
     {
       "domain": "poznan.pl",
-      "count": 23309
+      "count": 23314
     },
     {
       "domain": "jcyl.es",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 20555
+      "count": 20606
     },
     {
       "domain": "bayern.de",
@@ -287,11 +287,11 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 19956
+      "count": 20053
     },
     {
       "domain": "gstatic.com",
-      "count": 17357
+      "count": 17490
     },
     {
       "domain": "esteri.it",
@@ -311,7 +311,7 @@
     },
     {
       "domain": "gov.mt",
-      "count": 12987
+      "count": 13009
     },
     {
       "domain": "giustizia.it",
@@ -327,11 +327,11 @@
     },
     {
       "domain": "fontawesome.com",
-      "count": 10079
+      "count": 10114
     },
     {
       "domain": "x.com",
-      "count": 9656
+      "count": 9662
     },
     {
       "domain": "hessen.de",
@@ -343,7 +343,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 8877
+      "count": 8888
     },
     {
       "domain": "gva.es",
@@ -355,7 +355,7 @@
     },
     {
       "domain": "unpkg.com",
-      "count": 8480
+      "count": 8495
     },
     {
       "domain": "diplo.de",
@@ -371,7 +371,7 @@
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 7663
+      "count": 7706
     },
     {
       "domain": "cultura.gov.it",
@@ -379,7 +379,7 @@
     },
     {
       "domain": "jquery.com",
-      "count": 7387
+      "count": 7416
     },
     {
       "domain": "steiermark.at",
@@ -398,21 +398,21 @@
       "count": 6071
     },
     {
-      "domain": "canada.ca",
-      "count": 5864
+      "domain": "torun.pl",
+      "count": 6052
     },
     {
-      "domain": "cqc.org.uk",
-      "count": 5767
+      "domain": "canada.ca",
+      "count": 5864
     }
   ],
   "relationship_types": {
-    "editorial_link": 163243,
-    "form_destination": 21198,
-    "image_or_media_dependency": 33371,
-    "script_dependency": 50551,
-    "stylesheet_dependency": 40325,
-    "font_or_preload_dependency": 8375
+    "editorial_link": 163304,
+    "form_destination": 21194,
+    "image_or_media_dependency": 33375,
+    "script_dependency": 50552,
+    "stylesheet_dependency": 40327,
+    "font_or_preload_dependency": 8387
   },
-  "generated_at": "2026-10-05T14:31:51.271117+00:00"
+  "generated_at": "2026-10-06T00:36:38.092375+00:00"
 }
