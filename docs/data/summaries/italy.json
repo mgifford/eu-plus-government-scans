@@ -81,7 +81,7 @@
     },
     {
       "domain": "difesa.it",
-      "count": 1462
+      "count": 1493
     },
     {
       "domain": "comune.torino.it",
@@ -215,7 +215,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 7795
+      "count": 7796
     },
     {
       "domain": "cultura.gov.it",
@@ -223,19 +223,19 @@
     },
     {
       "domain": "youtube.com",
-      "count": 6177
+      "count": 6178
     },
     {
       "domain": "twitter.com",
-      "count": 6105
+      "count": 6107
     },
     {
       "domain": "agid.gov.it",
-      "count": 5027
+      "count": 5028
     },
     {
       "domain": "instagram.com",
-      "count": 4882
+      "count": 4883
     },
     {
       "domain": "governo.it",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 2471
+      "count": 2472
     },
     {
       "domain": "viaggiaresicuri.it",
@@ -271,7 +271,7 @@
     },
     {
       "domain": "whatsapp.com",
-      "count": 2001
+      "count": 2002
     },
     {
       "domain": "regione.campania.it",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 1874
+      "count": 1875
     },
     {
       "domain": "comune.parma.it",
@@ -367,7 +367,7 @@
     },
     {
       "domain": "difesa.it",
-      "count": 719
+      "count": 727
     },
     {
       "domain": "comune.modena.it",
@@ -379,7 +379,7 @@
     },
     {
       "domain": "t.me",
-      "count": 683
+      "count": 684
     },
     {
       "domain": "scuolamagistratura.it",
@@ -414,5 +414,5 @@
     "form_destination": 1460,
     "font_or_preload_dependency": 259
   },
-  "generated_at": "2026-10-07T13:32:57.098404+00:00"
+  "generated_at": "2026-10-07T23:35:51.666237+00:00"
 }
