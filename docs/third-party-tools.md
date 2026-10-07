@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-10-07 06:46 UTC — last scan: 2026-10-06_
+_Stats as of 2026-10-07 07:19 UTC — last scan: 2026-10-07_
 
-**339** scan batches run
+**340** scan batches run
 
 **87,690** of **87,696** available pages scanned (**100.0%** coverage)
-**80,673** of **87,690** scanned pages were reachable (**92.0%**)
-**37,763** reachable pages loaded at least one third-party script (**46.8%** of reachable)
-**46,623** known third-party service loads identified
+**80,684** of **87,690** scanned pages were reachable (**92.0%**)
+**37,782** reachable pages loaded at least one third-party script (**46.8%** of reachable)
+**46,635** known third-party service loads identified
 **26** unique known services across **17** categories
 
 ---
@@ -49,7 +49,7 @@ _Stats as of 2026-10-07 06:46 UTC — last scan: 2026-10-06_
 | Romania | 807 | 807 | 349 | 256 | 264 | 73.4 | 75.6 | 2026-09-27 |
 | Slovakia | 442 | 442 | 413 | 218 | 273 | 52.8 | 66.1 | 2026-09-27 |
 | Slovenia | 214 | 214 | 207 | 56 | 79 | 27.1 | 38.2 | 2026-09-24 |
-| Spain | 6,091 | 6,091 | 5,060 | 2,511 | 2,451 | 49.6 | 48.4 | 2026-10-05 |
+| Spain | 6,091 | 6,091 | 5,071 | 2,530 | 2,463 | 49.9 | 48.6 | 2026-10-07 |
 | Sweden | 1,702 | 1,702 | 1,629 | 551 | 315 | 33.8 | 19.3 | 2026-09-28 |
 | Switzerland | 2,123 | 2,123 | 2,076 | 414 | 434 | 19.9 | 20.9 | 2026-09-29 |
 | United Kingdom | 19,511 | 19,511 | 18,528 | 9,870 | 14,448 | 53.3 | 78.0 | 2026-10-06 |
@@ -62,10 +62,10 @@ _Stats as of 2026-10-07 06:46 UTC — last scan: 2026-10-06_
 
 | # | Service | Loads |
 |--:|---------|------:|
-| 1 | Google Analytics (GA4) | **8,593** |
+| 1 | Google Analytics (GA4) | **8,595** |
 | 2 | cdnjs (Cloudflare CDN) | **7,597** |
 | 3 | jsDelivr CDN | **6,591** |
-| 4 | Google reCAPTCHA | **4,853** |
+| 4 | Google reCAPTCHA | **4,863** |
 | 5 | Google Tag Manager | **4,105** |
 | 6 | Google Hosted Libraries | **3,241** |
 | 7 | unpkg CDN | **2,916** |
@@ -87,8 +87,8 @@ _Stats as of 2026-10-07 06:46 UTC — last scan: 2026-10-06_
 
 | # | Service | Reachable Pages | Prevalence of Reachable Pages |
 |--:|---------|----------------:|------------------------------:|
-| 1 | Google Analytics (GA4) | **8,365** | **45.1%** |
-| 2 | Google reCAPTCHA | **4,572** | **24.7%** |
+| 1 | Google Analytics (GA4) | **8,367** | **45.2%** |
+| 2 | Google reCAPTCHA | **4,582** | **24.7%** |
 | 3 | jsDelivr CDN | **4,434** | **23.9%** |
 | 4 | cdnjs (Cloudflare CDN) | **3,973** | **21.4%** |
 | 5 | Google Tag Manager | **3,915** | **21.1%** |
@@ -113,10 +113,10 @@ _Stats as of 2026-10-07 06:46 UTC — last scan: 2026-10-06_
 | # | Category | Loads |
 |--:|----------|------:|
 | 1 | CDN | **20,345** |
-| 2 | Analytics | **9,702** |
+| 2 | Analytics | **9,704** |
 | 3 | JavaScript Library | **6,007** |
-| 4 | Security | **5,064** |
-| 5 | CAPTCHA | **4,853** |
+| 4 | Security | **5,074** |
+| 5 | CAPTCHA | **4,863** |
 | 6 | Tag Manager | **4,602** |
 | 7 | Icon Library | **1,900** |
 | 8 | Cookie Consent | **1,483** |
@@ -143,9 +143,9 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 
 | # | Policy-Relevant Category | Loads |
 |--:|--------------------------|------:|
-| 1 | Analytics | **9,702** |
-| 2 | Security | **5,064** |
-| 3 | CAPTCHA | **4,853** |
+| 1 | Analytics | **9,704** |
+| 2 | Security | **5,074** |
+| 3 | CAPTCHA | **4,863** |
 | 4 | Tag Manager | **4,602** |
 | 5 | Cookie Consent | **1,483** |
 | 6 | Advertising | **457** |
@@ -163,7 +163,7 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 |--:|------|------:|----------------:|
 | 1 | `cdn.ent.auvergnerhonealpes.fr` | **15,207** | **1,650** |
 | 2 | `cdn.ecollege.haute-garonne.fr` | **2,466** | **270** |
-| 3 | `translate.google.com` | **2,369** | **2,366** |
+| 3 | `translate.google.com` | **2,366** | **2,363** |
 | 4 | `maps.googleapis.com` | **1,790** | **1,772** |
 | 5 | `www.cqc.org.uk` | **1,712** | **1,699** |
 | 6 | `static.parastorage.com` | **1,571** | **147** |
@@ -171,7 +171,7 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 | 8 | `www.styleguide.sachsen.de` | **1,279** | **320** |
 | 9 | `cc.cdn.civiccomputing.com` | **948** | **942** |
 | 10 | `ajax.aspnetcdn.com` | **903** | **446** |
-| 11 | `static.addtoany.com` | **851** | **834** |
+| 11 | `static.addtoany.com` | **854** | **837** |
 | 12 | `dksxg5o1pn16c.cloudfront.net` | **783** | **57** |
 | 13 | `cdn-cookieyes.com` | **763** | **759** |
 | 14 | `d2m1owqtx0c1qg.cloudfront.net` | **762** | **396** |
