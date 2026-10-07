@@ -140,20 +140,14 @@
   "NETHERLANDS": {
     "total_urls": 945,
     "attempted": 945,
-    "successful": 884,
-    "failed": 61,
+    "successful": 886,
+    "failed": 59,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 0
   },
-  "POLAND": {
-    "total_urls": 14951,
-    "attempted": 14951,
-    "successful": 13706,
-    "failed": 1245,
-    "skipped": 0,
-    "never_scanned": 0,
-    "stale_31d": 2141
+  "UNITED_KINGDOM_UK": {
+    "error": "TOON file not found"
   },
   "BULGARIA": {
     "total_urls": 353,
@@ -173,8 +167,14 @@
     "never_scanned": 0,
     "stale_31d": 0
   },
-  "UNITED_KINGDOM_UK": {
-    "error": "TOON file not found"
+  "FRANCE": {
+    "total_urls": 10009,
+    "attempted": 10009,
+    "successful": 9111,
+    "failed": 898,
+    "skipped": 0,
+    "never_scanned": 0,
+    "stale_31d": 52
   },
   "SLOVAKIA": {
     "total_urls": 442,
@@ -194,14 +194,14 @@
     "never_scanned": 0,
     "stale_31d": 0
   },
-  "FRANCE": {
-    "total_urls": 10009,
-    "attempted": 10009,
-    "successful": 9111,
-    "failed": 898,
+  "ITALY": {
+    "total_urls": 5351,
+    "attempted": 5351,
+    "successful": 4773,
+    "failed": 578,
     "skipped": 0,
     "never_scanned": 0,
-    "stale_31d": 52
+    "stale_31d": 0
   },
   "SLOVENIA": {
     "total_urls": 214,
@@ -221,14 +221,14 @@
     "never_scanned": 0,
     "stale_31d": 254
   },
-  "ITALY": {
-    "total_urls": 5351,
-    "attempted": 5351,
-    "successful": 4773,
-    "failed": 578,
+  "SPAIN": {
+    "total_urls": 6091,
+    "attempted": 6091,
+    "successful": 5063,
+    "failed": 1028,
     "skipped": 0,
     "never_scanned": 0,
-    "stale_31d": 0
+    "stale_31d": 604
   },
   "CROATIA": {
     "total_urls": 257,
@@ -248,14 +248,14 @@
     "never_scanned": 0,
     "stale_31d": 0
   },
-  "SPAIN": {
-    "total_urls": 6091,
-    "attempted": 6091,
-    "successful": 5063,
-    "failed": 1028,
+  "POLAND": {
+    "total_urls": 14951,
+    "attempted": 14951,
+    "successful": 13706,
+    "failed": 1245,
     "skipped": 0,
     "never_scanned": 0,
-    "stale_31d": 604
+    "stale_31d": 2141
   },
   "ESTONIA": {
     "total_urls": 401,

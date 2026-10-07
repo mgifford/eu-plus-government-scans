@@ -5,7 +5,7 @@
   "top_source_domains": [
     {
       "domain": "overheid.nl",
-      "count": 2160
+      "count": 2176
     },
     {
       "domain": "amsterdam.nl",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "overheid.nl",
-      "count": 1491
+      "count": 1501
     },
     {
       "domain": "amsterdam.nl",
@@ -311,7 +311,7 @@
     },
     {
       "domain": "rijksoverheid.nl",
-      "count": 207
+      "count": 209
     },
     {
       "domain": "zuid-holland.nl",
@@ -414,5 +414,5 @@
     "script_dependency": 555,
     "stylesheet_dependency": 442
   },
-  "generated_at": "2026-10-06T23:11:47.978060+00:00"
+  "generated_at": "2026-10-07T05:18:15.155296+00:00"
 }
