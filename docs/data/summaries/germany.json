@@ -1,6 +1,6 @@
 {
   "country_code": "GERMANY",
-  "total_relationships": 21940,
+  "total_relationships": 21939,
   "total_source_domains": 226,
   "top_source_domains": [
     {
@@ -9,7 +9,7 @@
     },
     {
       "domain": "rlp.de",
-      "count": 32772
+      "count": 32925
     },
     {
       "domain": "bayern.de",
@@ -215,7 +215,7 @@
     },
     {
       "domain": "rlp.de",
-      "count": 26140
+      "count": 26282
     },
     {
       "domain": "bayern.de",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "nrw.de",
-      "count": 15736
+      "count": 15737
     },
     {
       "domain": "hessen.de",
@@ -243,11 +243,11 @@
     },
     {
       "domain": "facebook.com",
-      "count": 5352
+      "count": 5354
     },
     {
       "domain": "instagram.com",
-      "count": 5188
+      "count": 5193
     },
     {
       "domain": "bund.de",
@@ -271,7 +271,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 2683
+      "count": 2688
     },
     {
       "domain": "berlin.de",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 11140,
+    "editorial_link": 11139,
     "font_or_preload_dependency": 340,
     "image_or_media_dependency": 2747,
     "script_dependency": 2870,
     "stylesheet_dependency": 2704,
     "form_destination": 2139
   },
-  "generated_at": "2026-10-07T05:18:14.630079+00:00"
+  "generated_at": "2026-10-07T13:32:55.908488+00:00"
 }

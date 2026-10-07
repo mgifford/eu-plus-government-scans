@@ -219,7 +219,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 1196
+      "count": 1199
     },
     {
       "domain": "youtube.com",
@@ -267,7 +267,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 618
+      "count": 621
     },
     {
       "domain": "thessaloniki.gr",
@@ -414,5 +414,5 @@
     "script_dependency": 1274,
     "stylesheet_dependency": 1052
   },
-  "generated_at": "2026-10-07T05:18:14.227111+00:00"
+  "generated_at": "2026-10-07T13:32:55.304608+00:00"
 }

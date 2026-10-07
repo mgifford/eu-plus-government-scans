@@ -1,6 +1,6 @@
 {
   "country_code": "SWEDEN",
-  "total_relationships": 6229,
+  "total_relationships": 6217,
   "total_source_domains": 245,
   "top_source_domains": [
     {
@@ -41,7 +41,7 @@
     },
     {
       "domain": "gotland.se",
-      "count": 675
+      "count": 682
     },
     {
       "domain": "norrkoping.se",
@@ -68,47 +68,71 @@
       "count": 551
     },
     {
+      "domain": "regionjh.se",
+      "count": 489
+    },
+    {
       "domain": "karlskrona.se",
       "count": 471
     },
     {
-      "domain": "huddinge.se",
-      "count": 400
+      "domain": "rjl.se",
+      "count": 437
     },
     {
-      "domain": "regionjh.se",
-      "count": 391
+      "domain": "huddinge.se",
+      "count": 401
+    },
+    {
+      "domain": "skolinspektionen.se",
+      "count": 401
+    },
+    {
+      "domain": "riksarkivet.se",
+      "count": 376
+    },
+    {
+      "domain": "regionvarmland.se",
+      "count": 369
     },
     {
       "domain": "malmo.se",
       "count": 366
     },
     {
-      "domain": "rjl.se",
-      "count": 363
+      "domain": "lulea.se",
+      "count": 356
     },
     {
-      "domain": "riksarkivet.se",
-      "count": 346
-    },
-    {
-      "domain": "skolinspektionen.se",
-      "count": 343
+      "domain": "forsvarsmakten.se",
+      "count": 333
     },
     {
       "domain": "vasteras.se",
       "count": 326
     },
     {
+      "domain": "konsumentverket.se",
+      "count": 324
+    },
+    {
+      "domain": "kronofogden.se",
+      "count": 323
+    },
+    {
       "domain": "regionhalland.se",
       "count": 315
     },
     {
-      "domain": "forsvarsmakten.se",
-      "count": 311
+      "domain": "regionostergotland.se",
+      "count": 315
     },
     {
-      "domain": "regionvarmland.se",
+      "domain": "norrbotten.se",
+      "count": 309
+    },
+    {
+      "domain": "ostersund.se",
       "count": 306
     },
     {
@@ -116,8 +140,8 @@
       "count": 303
     },
     {
-      "domain": "kronofogden.se",
-      "count": 293
+      "domain": "skelleftea.se",
+      "count": 295
     },
     {
       "domain": "boverket.se",
@@ -128,28 +152,32 @@
       "count": 287
     },
     {
-      "domain": "skelleftea.se",
-      "count": 286
-    },
-    {
       "domain": "lund.se",
       "count": 282
     },
     {
-      "domain": "konsumentverket.se",
-      "count": 281
-    },
-    {
-      "domain": "ostersund.se",
-      "count": 276
+      "domain": "regionkalmar.se",
+      "count": 282
     },
     {
       "domain": "kalmar.se",
       "count": 273
     },
     {
-      "domain": "lulea.se",
+      "domain": "scb.se",
+      "count": 272
+    },
+    {
+      "domain": "regiondalarna.se",
       "count": 270
+    },
+    {
+      "domain": "sodertalje.se",
+      "count": 270
+    },
+    {
+      "domain": "skane.se",
+      "count": 263
     },
     {
       "domain": "lantmateriet.se",
@@ -160,6 +188,10 @@
       "count": 258
     },
     {
+      "domain": "1177.se",
+      "count": 256
+    },
+    {
       "domain": "lu.se",
       "count": 249
     },
@@ -168,40 +200,8 @@
       "count": 248
     },
     {
-      "domain": "regionkalmar.se",
-      "count": 247
-    },
-    {
-      "domain": "norrbotten.se",
-      "count": 245
-    },
-    {
-      "domain": "scb.se",
-      "count": 245
-    },
-    {
       "domain": "gavle.se",
       "count": 240
-    },
-    {
-      "domain": "regiondalarna.se",
-      "count": 231
-    },
-    {
-      "domain": "sodertalje.se",
-      "count": 228
-    },
-    {
-      "domain": "regionostergotland.se",
-      "count": 226
-    },
-    {
-      "domain": "smhi.se",
-      "count": 217
-    },
-    {
-      "domain": "sametinget.se",
-      "count": 204
     }
   ],
   "top_target_domains": [
@@ -211,15 +211,15 @@
     },
     {
       "domain": "facebook.com",
-      "count": 1346
+      "count": 1421
     },
     {
       "domain": "linkedin.com",
-      "count": 1133
+      "count": 1231
     },
     {
       "domain": "instagram.com",
-      "count": 1093
+      "count": 1152
     },
     {
       "domain": "regionstockholm.se",
@@ -234,32 +234,40 @@
       "count": 711
     },
     {
-      "domain": "regionorebrolan.se",
-      "count": 641
+      "domain": "1177.se",
+      "count": 709
     },
     {
-      "domain": "1177.se",
-      "count": 625
+      "domain": "regionorebrolan.se",
+      "count": 640
+    },
+    {
+      "domain": "youtube.com",
+      "count": 600
     },
     {
       "domain": "vgregion.se",
       "count": 570
     },
     {
+      "domain": "googleapis.com",
+      "count": 568
+    },
+    {
       "domain": "goteborg.se",
       "count": 565
     },
     {
-      "domain": "youtube.com",
-      "count": 550
-    },
-    {
-      "domain": "googleapis.com",
-      "count": 531
-    },
-    {
       "domain": "stockholm.se",
       "count": 477
+    },
+    {
+      "domain": "readspeaker.com",
+      "count": 456
+    },
+    {
+      "domain": "google.com",
+      "count": 455
     },
     {
       "domain": "umea.se",
@@ -271,19 +279,11 @@
     },
     {
       "domain": "socialstyrelsen.se",
-      "count": 440
+      "count": 441
     },
     {
       "domain": "norrkoping.se",
       "count": 439
-    },
-    {
-      "domain": "google.com",
-      "count": 436
-    },
-    {
-      "domain": "readspeaker.com",
-      "count": 424
     },
     {
       "domain": "eskilstuna.se",
@@ -291,7 +291,7 @@
     },
     {
       "domain": "gotland.se",
-      "count": 393
+      "count": 400
     },
     {
       "domain": "jonkoping.se",
@@ -306,8 +306,12 @@
       "count": 330
     },
     {
+      "domain": "regionjh.se",
+      "count": 285
+    },
+    {
       "domain": "huddinge.se",
-      "count": 271
+      "count": 272
     },
     {
       "domain": "lantmateriet.se",
@@ -326,6 +330,18 @@
       "count": 246
     },
     {
+      "domain": "scb.se",
+      "count": 243
+    },
+    {
+      "domain": "rekai.se",
+      "count": 241
+    },
+    {
+      "domain": "kronofogden.se",
+      "count": 236
+    },
+    {
       "domain": "pts.se",
       "count": 235
     },
@@ -334,40 +350,48 @@
       "count": 234
     },
     {
-      "domain": "regionjh.se",
-      "count": 231
+      "domain": "konsumentverket.se",
+      "count": 234
     },
     {
       "domain": "vasteras.se",
       "count": 229
     },
     {
-      "domain": "skolverket.se",
-      "count": 217
-    },
-    {
-      "domain": "kronofogden.se",
-      "count": 214
-    },
-    {
-      "domain": "rekai.se",
-      "count": 212
-    },
-    {
-      "domain": "scb.se",
-      "count": 210
-    },
-    {
-      "domain": "konsumentverket.se",
-      "count": 206
-    },
-    {
       "domain": "twitter.com",
-      "count": 204
+      "count": 225
+    },
+    {
+      "domain": "skolverket.se",
+      "count": 222
+    },
+    {
+      "domain": "rjl.se",
+      "count": 211
+    },
+    {
+      "domain": "skane.se",
+      "count": 207
     },
     {
       "domain": "riksarkivet.se",
-      "count": 199
+      "count": 205
+    },
+    {
+      "domain": "ostersund.se",
+      "count": 198
+    },
+    {
+      "domain": "norrbotten.se",
+      "count": 195
+    },
+    {
+      "domain": "cloudflare.com",
+      "count": 190
+    },
+    {
+      "domain": "lulea.se",
+      "count": 190
     },
     {
       "domain": "sundsvall.se",
@@ -378,41 +402,17 @@
       "count": 188
     },
     {
-      "domain": "rjl.se",
-      "count": 182
-    },
-    {
-      "domain": "ostersund.se",
-      "count": 180
-    },
-    {
-      "domain": "cloudflare.com",
-      "count": 179
-    },
-    {
-      "domain": "lu.se",
-      "count": 174
-    },
-    {
-      "domain": "lund.se",
-      "count": 162
-    },
-    {
       "domain": "skolinspektionen.se",
-      "count": 160
-    },
-    {
-      "domain": "norrbotten.se",
-      "count": 158
+      "count": 181
     }
   ],
   "relationship_types": {
-    "editorial_link": 2732,
-    "script_dependency": 1147,
-    "stylesheet_dependency": 873,
-    "font_or_preload_dependency": 307,
-    "form_destination": 491,
-    "image_or_media_dependency": 679
+    "editorial_link": 2726,
+    "script_dependency": 1146,
+    "stylesheet_dependency": 872,
+    "form_destination": 490,
+    "image_or_media_dependency": 677,
+    "font_or_preload_dependency": 306
   },
-  "generated_at": "2026-10-04T17:18:54.862291+00:00"
+  "generated_at": "2026-10-07T13:32:57.292617+00:00"
 }

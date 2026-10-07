@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T05:18:17.112874+00:00",
+  "generated_at": "2026-10-07T13:33:00.451368+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -178,7 +178,7 @@
     {
       "service": "googletagmanager.com",
       "countries": 32,
-      "domains": 2769
+      "domains": 2768
     },
     {
       "service": "gstatic.com",
@@ -198,7 +198,7 @@
     {
       "service": "google.com",
       "countries": 31,
-      "domains": 2097
+      "domains": 2098
     },
     {
       "service": "cloudflare.com",
@@ -208,7 +208,7 @@
     {
       "service": "jquery.com",
       "countries": 30,
-      "domains": 640
+      "domains": 639
     },
     {
       "service": "unpkg.com",
@@ -1084,9 +1084,9 @@
       "country_code": "SPAIN",
       "country": "Spain",
       "service": "googletagmanager.com",
-      "domains": 89,
+      "domains": 88,
       "scanned_domains": 245,
-      "percent": 36.3
+      "percent": 35.9
     },
     {
       "country_code": "SPAIN",
@@ -1116,9 +1116,9 @@
       "country_code": "SPAIN",
       "country": "Spain",
       "service": "google.com",
-      "domains": 47,
+      "domains": 48,
       "scanned_domains": 245,
-      "percent": 19.2
+      "percent": 19.6
     },
     {
       "country_code": "SPAIN",
@@ -1132,9 +1132,9 @@
       "country_code": "SPAIN",
       "country": "Spain",
       "service": "jquery.com",
-      "domains": 26,
+      "domains": 25,
       "scanned_domains": 245,
-      "percent": 10.6
+      "percent": 10.2
     },
     {
       "country_code": "SPAIN",
