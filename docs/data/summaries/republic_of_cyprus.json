@@ -1,7 +1,7 @@
 {
   "country_code": "REPUBLIC_OF_CYPRUS",
-  "total_relationships": 317036,
-  "total_source_domains": 9155,
+  "total_relationships": 317708,
+  "total_source_domains": 9188,
   "top_source_domains": [
     {
       "domain": "sachsen.de",
@@ -136,16 +136,16 @@
       "count": 10085
     },
     {
+      "domain": "scot.nhs.uk",
+      "count": 9057
+    },
+    {
       "domain": "kk.dk",
       "count": 9018
     },
     {
       "domain": "uni.opole.pl",
       "count": 8766
-    },
-    {
-      "domain": "scot.nhs.uk",
-      "count": 8696
     },
     {
       "domain": "plzen.eu",
@@ -207,11 +207,11 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 85279
+      "count": 85889
     },
     {
       "domain": "googleapis.com",
-      "count": 69117
+      "count": 69839
     },
     {
       "domain": "sachsen.de",
@@ -223,11 +223,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 50031
+      "count": 50339
     },
     {
       "domain": "youtube.com",
-      "count": 47679
+      "count": 47901
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -235,15 +235,15 @@
     },
     {
       "domain": "twitter.com",
-      "count": 40521
+      "count": 40827
     },
     {
       "domain": "google.com",
-      "count": 38983
+      "count": 39554
     },
     {
       "domain": "linkedin.com",
-      "count": 35668
+      "count": 35911
     },
     {
       "domain": "krakow.pl",
@@ -251,7 +251,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 32449
+      "count": 32792
     },
     {
       "domain": "gouv.qc.ca",
@@ -279,11 +279,11 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 20913
+      "count": 21051
     },
     {
       "domain": "cloudflare.com",
-      "count": 20447
+      "count": 20728
     },
     {
       "domain": "bayern.de",
@@ -291,7 +291,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 17795
+      "count": 17961
     },
     {
       "domain": "esteri.it",
@@ -323,7 +323,7 @@
     },
     {
       "domain": "fontawesome.com",
-      "count": 10237
+      "count": 10322
     },
     {
       "domain": "gdansk.pl",
@@ -331,7 +331,7 @@
     },
     {
       "domain": "x.com",
-      "count": 9796
+      "count": 9895
     },
     {
       "domain": "hessen.de",
@@ -343,11 +343,11 @@
     },
     {
       "domain": "europa.eu",
-      "count": 8981
+      "count": 8982
     },
     {
       "domain": "unpkg.com",
-      "count": 8668
+      "count": 8767
     },
     {
       "domain": "gva.es",
@@ -363,7 +363,7 @@
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 7883
+      "count": 7940
     },
     {
       "domain": "paris.fr",
@@ -375,7 +375,7 @@
     },
     {
       "domain": "jquery.com",
-      "count": 7540
+      "count": 7593
     },
     {
       "domain": "cultura.gov.it",
@@ -384,6 +384,10 @@
     {
       "domain": "steiermark.at",
       "count": 6410
+    },
+    {
+      "domain": "cqc.org.uk",
+      "count": 6323
     },
     {
       "domain": "uni.opole.pl",
@@ -400,19 +404,15 @@
     {
       "domain": "torun.pl",
       "count": 6055
-    },
-    {
-      "domain": "cqc.org.uk",
-      "count": 6000
     }
   ],
   "relationship_types": {
-    "editorial_link": 163248,
-    "form_destination": 21183,
-    "image_or_media_dependency": 33364,
-    "script_dependency": 50534,
-    "stylesheet_dependency": 40312,
-    "font_or_preload_dependency": 8395
+    "editorial_link": 163612,
+    "form_destination": 21219,
+    "image_or_media_dependency": 33402,
+    "script_dependency": 50648,
+    "stylesheet_dependency": 40424,
+    "font_or_preload_dependency": 8403
   },
-  "generated_at": "2026-10-06T23:11:46.591114+00:00"
+  "generated_at": "2026-10-07T05:18:14.088439+00:00"
 }
