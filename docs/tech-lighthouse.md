@@ -5,10 +5,10 @@ layout: page
 
 <!-- TECH_LIGHTHOUSE_STATS_START -->
 
-_Generated: 2026-10-08 14:11 UTC_
+_Generated: 2026-10-08 23:13 UTC_
 
-**43,319** URLs with both technology detection and Lighthouse scores
-out of **74,047** technology-detected URLs and **47,366** Lighthouse-audited URLs
+**43,820** URLs with both technology detection and Lighthouse scores
+out of **74,047** technology-detected URLs and **47,872** Lighthouse-audited URLs
 
 ---
 
@@ -18,35 +18,35 @@ Average Google Lighthouse scores (0–100) for pages where each technology was d
 
 | # | Technology | Pages | Countries | Perf | A11y | Best Prac | SEO |
 |--:|-----------|------:|----------:|-----:|-----:|----------:|----:|
-| 1 | jQuery | **26,295** | 32 | 87 | 89 | 90 | 89 |
-| 2 | PHP | **15,173** | 32 | 88 | 89 | 91 | 90 |
-| 3 | Apache | **14,229** | 32 | 86 | 85 | 89 | 87 |
-| 4 | Bootstrap | **12,252** | 32 | 88 | 89 | 90 | 88 |
-| 5 | Font Awesome | **11,511** | 32 | 87 | 89 | 89 | 89 |
-| 6 | Google Tag Manager | **9,517** | 32 | 87 | 90 | 89 | 90 |
-| 7 | Google Font API | **9,330** | 32 | 87 | 88 | 89 | 89 |
-| 8 | MySQL | **8,666** | 32 | 87 | 89 | 90 | 90 |
-| 9 | WordPress | **8,617** | 32 | 88 | 89 | 90 | 90 |
-| 10 | Nginx | **7,521** | 32 | 88 | 90 | 92 | 89 |
-| 11 | jQuery Migrate | **7,511** | 32 | 87 | 88 | 89 | 90 |
-| 12 | Windows Server | **4,775** | 32 | 89 | 87 | 88 | 86 |
-| 13 | IIS | **4,688** | 32 | 89 | 87 | 88 | 86 |
-| 14 | jQuery UI | **4,399** | 32 | 87 | 88 | 89 | 87 |
-| 15 | Microsoft ASP.NET | **4,024** | 32 | 89 | 87 | 88 | 86 |
-| 16 | Cloudflare | **3,815** | 32 | 90 | 90 | 85 | 81 |
-| 17 | Drupal | **3,565** | 28 | 89 | 92 | 91 | 92 |
-| 18 | jsDelivr | **3,264** | 32 | 88 | 90 | 91 | 88 |
-| 19 | Yoast SEO | **2,945** | 29 | 86 | 88 | 88 | 90 |
-| 20 | reCAPTCHA | **2,635** | 30 | 87 | 89 | 88 | 89 |
-| 21 | Slick | **2,498** | 30 | 82 | 88 | 91 | 88 |
-| 22 | Lightbox | **2,272** | 32 | 87 | 88 | 89 | 88 |
-| 23 | Modernizr | **2,163** | 30 | 87 | 88 | 88 | 89 |
+| 1 | jQuery | **26,668** | 32 | 87 | 89 | 90 | 89 |
+| 2 | PHP | **15,452** | 32 | 88 | 89 | 91 | 90 |
+| 3 | Apache | **14,439** | 32 | 86 | 85 | 89 | 87 |
+| 4 | Bootstrap | **12,432** | 32 | 88 | 89 | 90 | 88 |
+| 5 | Font Awesome | **11,693** | 32 | 87 | 89 | 89 | 89 |
+| 6 | Google Tag Manager | **9,670** | 32 | 87 | 90 | 89 | 90 |
+| 7 | Google Font API | **9,591** | 32 | 87 | 88 | 88 | 89 |
+| 8 | MySQL | **8,874** | 32 | 87 | 89 | 90 | 90 |
+| 9 | WordPress | **8,818** | 32 | 87 | 89 | 90 | 90 |
+| 10 | jQuery Migrate | **7,656** | 32 | 87 | 88 | 89 | 90 |
+| 11 | Nginx | **7,600** | 32 | 88 | 90 | 92 | 89 |
+| 12 | Windows Server | **4,810** | 32 | 89 | 87 | 88 | 86 |
+| 13 | IIS | **4,723** | 32 | 89 | 87 | 88 | 86 |
+| 14 | jQuery UI | **4,448** | 32 | 87 | 88 | 89 | 87 |
+| 15 | Microsoft ASP.NET | **4,057** | 32 | 89 | 87 | 88 | 86 |
+| 16 | Cloudflare | **3,832** | 32 | 90 | 90 | 85 | 81 |
+| 17 | Drupal | **3,592** | 28 | 89 | 92 | 91 | 92 |
+| 18 | jsDelivr | **3,301** | 32 | 88 | 90 | 91 | 88 |
+| 19 | Yoast SEO | **3,016** | 29 | 86 | 88 | 88 | 90 |
+| 20 | reCAPTCHA | **2,671** | 30 | 87 | 89 | 87 | 89 |
+| 21 | Slick | **2,531** | 30 | 82 | 88 | 91 | 88 |
+| 22 | Lightbox | **2,331** | 32 | 86 | 88 | 89 | 88 |
+| 23 | Modernizr | **2,205** | 30 | 87 | 88 | 88 | 89 |
 | 24 | Java | **1,956** | 29 | 86 | 93 | 93 | 89 |
-| 25 | Elementor | **1,871** | 27 | 85 | 88 | 87 | 89 |
-| 26 | OWL Carousel | **1,626** | 28 | 84 | 87 | 87 | 88 |
-| 27 | Cart Functionality | **1,612** | 24 | 86 | 88 | 88 | 89 |
-| 28 | Ubuntu | **1,513** | 28 | 91 | 89 | 93 | 88 |
-| 29 | LiteSpeed | **1,370** | 22 | 89 | 87 | 88 | 91 |
+| 25 | Elementor | **1,927** | 27 | 85 | 88 | 87 | 89 |
+| 26 | OWL Carousel | **1,654** | 28 | 84 | 87 | 86 | 88 |
+| 27 | Cart Functionality | **1,635** | 24 | 86 | 87 | 88 | 89 |
+| 28 | Ubuntu | **1,521** | 28 | 91 | 89 | 93 | 88 |
+| 29 | LiteSpeed | **1,457** | 22 | 89 | 86 | 88 | 91 |
 | 30 | Adobe Experience Manager | **1,304** | 10 | 85 | 98 | 96 | 91 |
 
 ## Top Technologies by Country
@@ -64,7 +64,7 @@ Average accessibility score (0–100) for the top 10 most-detected technologies,
 | Google Font API | 85 | 94 | 80 | 89 | 80 | 88 | 91 | 82 | 82 | 87 | 88 | 87 | 87 | 87 | 90 |
 | MySQL | 93 | 90 | 84 | 89 | 82 | 90 | 92 | 87 | 98 | 88 | 88 | 88 | 86 | 92 | 90 |
 | WordPress | 93 | 90 | 84 | 89 | 82 | 90 | 92 | 87 | 98 | 88 | 88 | 88 | 86 | 92 | 90 |
-| Nginx | 95 | 89 | 76 | 93 | 85 | 89 | 97 | 83 | 94 | 89 | 91 | 88 | 84 | 88 | 90 |
+| jQuery Migrate | 91 | 91 | 82 | 89 | 81 | 90 | 90 | 86 | 96 | 88 | 87 | 87 | 85 | 92 | 94 |
 
 ---
 
