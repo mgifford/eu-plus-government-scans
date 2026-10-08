@@ -28,6 +28,10 @@
       "count": 734
     },
     {
+      "domain": "culture.gov.gr",
+      "count": 647
+    },
+    {
       "domain": "pde.gov.gr",
       "count": 636
     },
@@ -38,10 +42,6 @@
     {
       "domain": "services.gov.gr",
       "count": 618
-    },
-    {
-      "domain": "culture.gov.gr",
-      "count": 612
     },
     {
       "domain": "yme.gov.gr",
@@ -207,11 +207,11 @@
   "top_target_domains": [
     {
       "domain": "googleapis.com",
-      "count": 2991
+      "count": 2993
     },
     {
       "domain": "facebook.com",
-      "count": 1646
+      "count": 1648
     },
     {
       "domain": "diavgeia.gov.gr",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 1085
+      "count": 1087
     },
     {
       "domain": "google.com",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "userway.org",
-      "count": 670
+      "count": 672
     },
     {
       "domain": "jsdelivr.net",
@@ -327,7 +327,7 @@
     },
     {
       "domain": "culture.gov.gr",
-      "count": 262
+      "count": 272
     },
     {
       "domain": "unpkg.com",
@@ -414,5 +414,5 @@
     "script_dependency": 1274,
     "stylesheet_dependency": 1052
   },
-  "generated_at": "2026-10-07T13:32:55.304608+00:00"
+  "generated_at": "2026-10-08T13:41:59.473344+00:00"
 }

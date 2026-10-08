@@ -108,6 +108,10 @@
       "count": 504
     },
     {
+      "domain": "thw.de",
+      "count": 502
+    },
+    {
       "domain": "leipzig.de",
       "count": 498
     },
@@ -118,10 +122,6 @@
     {
       "domain": "thueringer-landtag.de",
       "count": 493
-    },
-    {
-      "domain": "thw.de",
-      "count": 482
     },
     {
       "domain": "rki.de",
@@ -243,11 +243,11 @@
     },
     {
       "domain": "facebook.com",
-      "count": 5354
+      "count": 5355
     },
     {
       "domain": "instagram.com",
-      "count": 5193
+      "count": 5194
     },
     {
       "domain": "bund.de",
@@ -414,5 +414,5 @@
     "stylesheet_dependency": 2704,
     "form_destination": 2139
   },
-  "generated_at": "2026-10-07T13:32:55.908488+00:00"
+  "generated_at": "2026-10-08T13:41:59.747666+00:00"
 }

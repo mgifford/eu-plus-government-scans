@@ -211,15 +211,15 @@
     },
     {
       "domain": "facebook.com",
-      "count": 3154
+      "count": 3157
     },
     {
       "domain": "youtube.com",
-      "count": 2533
+      "count": 2536
     },
     {
       "domain": "instagram.com",
-      "count": 2457
+      "count": 2460
     },
     {
       "domain": "googletagmanager.com",
@@ -251,7 +251,7 @@
     },
     {
       "domain": "portugal.gov.pt",
-      "count": 1179
+      "count": 1182
     },
     {
       "domain": "parlamento.pt",
@@ -274,12 +274,12 @@
       "count": 1048
     },
     {
-      "domain": "gstatic.com",
-      "count": 845
+      "domain": "linkedin.com",
+      "count": 846
     },
     {
-      "domain": "linkedin.com",
-      "count": 843
+      "domain": "gstatic.com",
+      "count": 845
     },
     {
       "domain": "cm-porto.pt",
@@ -287,7 +287,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 712
+      "count": 715
     },
     {
       "domain": "anmp.pt",
@@ -414,5 +414,5 @@
     "form_destination": 755,
     "image_or_media_dependency": 1137
   },
-  "generated_at": "2026-10-08T05:29:08.218867+00:00"
+  "generated_at": "2026-10-08T13:41:59.207793+00:00"
 }
