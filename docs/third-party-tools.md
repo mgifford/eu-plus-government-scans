@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-10-08 05:38 UTC — last scan: 2026-10-08_
+_Stats as of 2026-10-08 14:11 UTC — last scan: 2026-10-08_
 
-**342** scan batches run
+**344** scan batches run
 
 **87,690** of **87,696** available pages scanned (**100.0%** coverage)
-**80,693** of **87,690** scanned pages were reachable (**92.0%**)
-**37,806** reachable pages loaded at least one third-party script (**46.9%** of reachable)
-**46,542** known third-party service loads identified
+**80,719** of **87,690** scanned pages were reachable (**92.1%**)
+**37,907** reachable pages loaded at least one third-party script (**47.0%** of reachable)
+**46,669** known third-party service loads identified
 **26** unique known services across **17** categories
 
 ---
@@ -44,7 +44,7 @@ _Stats as of 2026-10-08 05:38 UTC — last scan: 2026-10-08_
 | Netherlands | 945 | 945 | 903 | 361 | 269 | 40.0 | 29.8 | 2026-09-27 |
 | Norway | 249 | 249 | 243 | 137 | 108 | 56.4 | 44.4 | 2026-09-26 |
 | Poland | 14,951 | 14,951 | 13,512 | 6,975 | 9,821 | 51.6 | 72.7 | 2026-10-06 |
-| Portugal | 3,508 | 3,508 | 3,192 | 1,278 | 2,149 | 40.0 | 67.3 | 2026-10-05 |
+| Portugal | 3,508 | 3,508 | 3,206 | 1,309 | 2,179 | 40.8 | 68.0 | 2026-10-08 |
 | Cyprus | 29 | 29 | 29 | 13 | 15 | 44.8 | 51.7 | 2026-09-26 |
 | Romania | 807 | 807 | 349 | 256 | 264 | 73.4 | 75.6 | 2026-09-27 |
 | Slovakia | 442 | 442 | 413 | 218 | 273 | 52.8 | 66.1 | 2026-09-27 |
@@ -52,7 +52,7 @@ _Stats as of 2026-10-08 05:38 UTC — last scan: 2026-10-08_
 | Spain | 6,091 | 6,091 | 5,071 | 2,530 | 2,463 | 49.9 | 48.6 | 2026-10-07 |
 | Sweden | 1,702 | 1,702 | 1,629 | 551 | 315 | 33.8 | 19.3 | 2026-09-28 |
 | Switzerland | 2,123 | 2,123 | 2,076 | 414 | 434 | 19.9 | 20.9 | 2026-09-29 |
-| United Kingdom | 19,511 | 19,511 | 18,528 | 9,870 | 14,448 | 53.3 | 78.0 | 2026-10-06 |
+| United Kingdom | 19,511 | 19,511 | 18,540 | 9,940 | 14,545 | 53.6 | 78.5 | 2026-10-08 |
 
 > Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open and download a CSV for that country and metric from [Download machine-readable third-party tools data (JSON)](third-party-tools-data.json).
 
@@ -62,20 +62,20 @@ _Stats as of 2026-10-08 05:38 UTC — last scan: 2026-10-08_
 
 | # | Service | Loads |
 |--:|---------|------:|
-| 1 | Google Analytics (GA4) | **8,595** |
-| 2 | cdnjs (Cloudflare CDN) | **7,597** |
-| 3 | jsDelivr CDN | **6,475** |
-| 4 | Google reCAPTCHA | **4,859** |
-| 5 | Google Tag Manager | **4,105** |
+| 1 | Google Analytics (GA4) | **8,627** |
+| 2 | cdnjs (Cloudflare CDN) | **7,610** |
+| 3 | jsDelivr CDN | **6,486** |
+| 4 | Google reCAPTCHA | **4,870** |
+| 5 | Google Tag Manager | **4,145** |
 | 6 | Google Hosted Libraries | **3,242** |
-| 7 | unpkg CDN | **2,944** |
-| 8 | jQuery | **2,766** |
-| 9 | Font Awesome | **1,900** |
+| 7 | unpkg CDN | **2,949** |
+| 8 | jQuery | **2,775** |
+| 9 | Font Awesome | **1,904** |
 | 10 | Bootstrap | **940** |
-| 11 | Cookiebot | **799** |
+| 11 | Cookiebot | **802** |
 | 12 | Adobe Dynamic Tag Management / Launch | **497** |
-| 13 | Facebook Pixel | **457** |
-| 14 | CookieInformation | **330** |
+| 13 | Facebook Pixel | **459** |
+| 14 | CookieInformation | **327** |
 | 15 | OneTrust | **293** |
 | 16 | Sentry | **230** |
 | 17 | Cloudflare Turnstile / Challenge | **211** |
@@ -87,20 +87,20 @@ _Stats as of 2026-10-08 05:38 UTC — last scan: 2026-10-08_
 
 | # | Service | Reachable Pages | Prevalence of Reachable Pages |
 |--:|---------|----------------:|------------------------------:|
-| 1 | Google Analytics (GA4) | **8,367** | **45.2%** |
-| 2 | Google reCAPTCHA | **4,578** | **24.7%** |
-| 3 | jsDelivr CDN | **4,376** | **23.6%** |
-| 4 | cdnjs (Cloudflare CDN) | **3,973** | **21.4%** |
-| 5 | Google Tag Manager | **3,915** | **21.1%** |
-| 6 | Google Hosted Libraries | **2,919** | **15.8%** |
-| 7 | unpkg CDN | **2,280** | **12.3%** |
-| 8 | jQuery | **2,185** | **11.8%** |
-| 9 | Font Awesome | **1,509** | **8.1%** |
+| 1 | Google Analytics (GA4) | **8,399** | **45.3%** |
+| 2 | Google reCAPTCHA | **4,587** | **24.7%** |
+| 3 | jsDelivr CDN | **4,384** | **23.6%** |
+| 4 | cdnjs (Cloudflare CDN) | **3,985** | **21.5%** |
+| 5 | Google Tag Manager | **3,952** | **21.3%** |
+| 6 | Google Hosted Libraries | **2,919** | **15.7%** |
+| 7 | unpkg CDN | **2,284** | **12.3%** |
+| 8 | jQuery | **2,190** | **11.8%** |
+| 9 | Font Awesome | **1,513** | **8.2%** |
 | 10 | Bootstrap | **933** | **5.0%** |
-| 11 | Cookiebot | **780** | **4.2%** |
+| 11 | Cookiebot | **783** | **4.2%** |
 | 12 | Adobe Dynamic Tag Management / Launch | **494** | **2.7%** |
-| 13 | Facebook Pixel | **440** | **2.4%** |
-| 14 | CookieInformation | **330** | **1.8%** |
+| 13 | Facebook Pixel | **442** | **2.4%** |
+| 14 | CookieInformation | **327** | **1.8%** |
 | 15 | OneTrust | **216** | **1.2%** |
 | 16 | Sentry | **215** | **1.2%** |
 | 17 | Cloudflare Turnstile / Challenge | **211** | **1.1%** |
@@ -112,16 +112,16 @@ _Stats as of 2026-10-08 05:38 UTC — last scan: 2026-10-08_
 
 | # | Category | Loads |
 |--:|----------|------:|
-| 1 | CDN | **20,258** |
-| 2 | Analytics | **9,703** |
-| 3 | JavaScript Library | **6,008** |
-| 4 | Security | **5,070** |
-| 5 | CAPTCHA | **4,859** |
-| 6 | Tag Manager | **4,602** |
-| 7 | Icon Library | **1,900** |
+| 1 | CDN | **20,287** |
+| 2 | Analytics | **9,737** |
+| 3 | JavaScript Library | **6,017** |
+| 4 | Security | **5,081** |
+| 5 | CAPTCHA | **4,870** |
+| 6 | Tag Manager | **4,642** |
+| 7 | Icon Library | **1,904** |
 | 8 | Cookie Consent | **1,482** |
 | 9 | UI Framework | **940** |
-| 10 | Advertising | **457** |
+| 10 | Advertising | **459** |
 | 11 | Error Tracking | **230** |
 | 12 | Payments | **46** |
 | 13 | Customer Support | **29** |
@@ -134,21 +134,21 @@ Infrastructure-heavy categories (CDNs, core libraries, and UI assets):
 
 | # | Infrastructure Category | Loads |
 |--:|--------------------------|------:|
-| 1 | CDN | **20,258** |
-| 2 | JavaScript Library | **6,008** |
-| 3 | Icon Library | **1,900** |
+| 1 | CDN | **20,287** |
+| 2 | JavaScript Library | **6,017** |
+| 3 | Icon Library | **1,904** |
 | 4 | UI Framework | **940** |
 
 Policy-relevant categories (tracking, consent, support, and security tooling):
 
 | # | Policy-Relevant Category | Loads |
 |--:|--------------------------|------:|
-| 1 | Analytics | **9,703** |
-| 2 | Security | **5,070** |
-| 3 | CAPTCHA | **4,859** |
-| 4 | Tag Manager | **4,602** |
+| 1 | Analytics | **9,737** |
+| 2 | Security | **5,081** |
+| 3 | CAPTCHA | **4,870** |
+| 4 | Tag Manager | **4,642** |
 | 5 | Cookie Consent | **1,482** |
-| 6 | Advertising | **457** |
+| 6 | Advertising | **459** |
 | 7 | Error Tracking | **230** |
 | 8 | Payments | **46** |
 | 9 | Customer Support | **29** |
@@ -163,19 +163,19 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 |--:|------|------:|----------------:|
 | 1 | `cdn.ent.auvergnerhonealpes.fr` | **15,207** | **1,650** |
 | 2 | `cdn.ecollege.haute-garonne.fr` | **2,466** | **270** |
-| 3 | `translate.google.com` | **2,366** | **2,363** |
-| 4 | `maps.googleapis.com` | **1,790** | **1,772** |
-| 5 | `www.cqc.org.uk` | **1,712** | **1,699** |
+| 3 | `translate.google.com` | **2,374** | **2,371** |
+| 4 | `maps.googleapis.com` | **1,811** | **1,793** |
+| 5 | `www.cqc.org.uk` | **1,715** | **1,702** |
 | 6 | `static.parastorage.com` | **1,571** | **147** |
 | 7 | `content.powerapps.com` | **1,546** | **128** |
 | 8 | `www.styleguide.sachsen.de` | **1,279** | **320** |
-| 9 | `cc.cdn.civiccomputing.com` | **948** | **942** |
+| 9 | `cc.cdn.civiccomputing.com` | **952** | **946** |
 | 10 | `ajax.aspnetcdn.com` | **903** | **446** |
-| 11 | `static.addtoany.com` | **854** | **837** |
+| 11 | `static.addtoany.com` | **851** | **834** |
 | 12 | `dksxg5o1pn16c.cloudfront.net` | **783** | **57** |
 | 13 | `cdn-cookieyes.com` | **765** | **761** |
 | 14 | `d2m1owqtx0c1qg.cloudfront.net` | **762** | **396** |
-| 15 | `cdn.xl.pt` | **709** | **13** |
+| 15 | `cdn.xl.pt` | **712** | **16** |
 
 > These hosts were seen as third-party script sources but did not match a known service signature. Review this queue regularly and promote stable, policy-relevant hosts into the signature list.
 
