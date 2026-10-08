@@ -13,7 +13,7 @@
     },
     {
       "domain": "cultura.gov.it",
-      "count": 16159
+      "count": 16184
     },
     {
       "domain": "regione.lombardia.it",
@@ -215,27 +215,27 @@
     },
     {
       "domain": "facebook.com",
-      "count": 7796
+      "count": 7798
     },
     {
       "domain": "cultura.gov.it",
-      "count": 7508
+      "count": 7518
     },
     {
       "domain": "youtube.com",
-      "count": 6178
+      "count": 6180
     },
     {
       "domain": "twitter.com",
-      "count": 6107
+      "count": 6109
     },
     {
       "domain": "agid.gov.it",
-      "count": 5028
+      "count": 5030
     },
     {
       "domain": "instagram.com",
-      "count": 4883
+      "count": 4885
     },
     {
       "domain": "governo.it",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 1875
+      "count": 1876
     },
     {
       "domain": "comune.parma.it",
@@ -414,5 +414,5 @@
     "form_destination": 1460,
     "font_or_preload_dependency": 259
   },
-  "generated_at": "2026-10-07T23:35:51.666237+00:00"
+  "generated_at": "2026-10-08T13:42:01.051340+00:00"
 }

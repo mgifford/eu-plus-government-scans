@@ -29,7 +29,7 @@
     },
     {
       "domain": "iem.gov.lv",
-      "count": 509
+      "count": 522
     },
     {
       "domain": "kem.gov.lv",
@@ -235,7 +235,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 607
+      "count": 608
     },
     {
       "domain": "linkedin.com",
@@ -254,11 +254,11 @@
       "count": 319
     },
     {
-      "domain": "google.com",
-      "count": 292
+      "domain": "iem.gov.lv",
+      "count": 297
     },
     {
-      "domain": "iem.gov.lv",
+      "domain": "google.com",
       "count": 292
     },
     {
@@ -279,7 +279,7 @@
     },
     {
       "domain": "latvija.lv",
-      "count": 207
+      "count": 208
     },
     {
       "domain": "vugd.gov.lv",
@@ -319,7 +319,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 142
+      "count": 144
     },
     {
       "domain": "lgia.gov.lv",
@@ -414,5 +414,5 @@
     "font_or_preload_dependency": 138,
     "form_destination": 200
   },
-  "generated_at": "2026-10-07T13:32:56.109990+00:00"
+  "generated_at": "2026-10-08T13:41:59.923572+00:00"
 }

@@ -1,6 +1,6 @@
 {
   "country_code": "CZECHIA",
-  "total_relationships": 2615,
+  "total_relationships": 2614,
   "total_source_domains": 54,
   "top_source_domains": [
     {
@@ -9,7 +9,7 @@
     },
     {
       "domain": "brno.cz",
-      "count": 2561
+      "count": 3036
     },
     {
       "domain": "justice.cz",
@@ -211,7 +211,7 @@
     },
     {
       "domain": "brno.cz",
-      "count": 1209
+      "count": 1463
     },
     {
       "domain": "justice.cz",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 557
+      "count": 586
     },
     {
       "domain": "plzensky-kraj.cz",
@@ -231,7 +231,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 288
+      "count": 309
     },
     {
       "domain": "kraj-lbc.cz",
@@ -243,7 +243,11 @@
     },
     {
       "domain": "twitter.com",
-      "count": 259
+      "count": 270
+    },
+    {
+      "domain": "youtube.com",
+      "count": 263
     },
     {
       "domain": "psp.cz",
@@ -256,10 +260,6 @@
     {
       "domain": "mzcr.cz",
       "count": 247
-    },
-    {
-      "domain": "youtube.com",
-      "count": 240
     },
     {
       "domain": "mzp.cz",
@@ -275,7 +275,7 @@
     },
     {
       "domain": "google.com",
-      "count": 192
+      "count": 197
     },
     {
       "domain": "pardubickykraj.cz",
@@ -354,12 +354,12 @@
       "count": 106
     },
     {
-      "domain": "nzip.cz",
-      "count": 96
+      "domain": "smlouvy.gov.cz",
+      "count": 103
     },
     {
-      "domain": "smlouvy.gov.cz",
-      "count": 94
+      "domain": "nzip.cz",
+      "count": 96
     },
     {
       "domain": "bezstavy.cz",
@@ -383,22 +383,22 @@
     },
     {
       "domain": "arcgis.com",
-      "count": 63
+      "count": 69
+    },
+    {
+      "domain": "x.com",
+      "count": 67
     },
     {
       "domain": "zdravaova.cz",
       "count": 62
     },
     {
-      "domain": "x.com",
+      "domain": "mvcr.cz",
       "count": 61
     },
     {
       "domain": "chmi.cz",
-      "count": 58
-    },
-    {
-      "domain": "mvcr.cz",
       "count": 58
     },
     {
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 1559,
+    "editorial_link": 1558,
     "script_dependency": 324,
     "stylesheet_dependency": 275,
     "form_destination": 163,
     "image_or_media_dependency": 235,
     "font_or_preload_dependency": 59
   },
-  "generated_at": "2026-10-07T23:35:51.866634+00:00"
+  "generated_at": "2026-10-08T13:41:59.649479+00:00"
 }
