@@ -25,7 +25,7 @@
     },
     {
       "domain": "madrid.es",
-      "count": 3413
+      "count": 3423
     },
     {
       "domain": "juntaex.es",
@@ -129,7 +129,7 @@
     },
     {
       "domain": "inclusion.gob.es",
-      "count": 535
+      "count": 551
     },
     {
       "domain": "transportes.gob.es",
@@ -152,16 +152,16 @@
       "count": 432
     },
     {
+      "domain": "dgt.es",
+      "count": 427
+    },
+    {
       "domain": "ine.es",
       "count": 427
     },
     {
       "domain": "aemps.gob.es",
       "count": 423
-    },
-    {
-      "domain": "dgt.es",
-      "count": 407
     },
     {
       "domain": "ayto-nuevobaztan.es",
@@ -219,23 +219,23 @@
     },
     {
       "domain": "facebook.com",
-      "count": 4125
+      "count": 4129
     },
     {
       "domain": "twitter.com",
-      "count": 3796
+      "count": 3799
     },
     {
       "domain": "youtube.com",
-      "count": 3410
+      "count": 3412
     },
     {
       "domain": "googleapis.com",
-      "count": 3322
+      "count": 3326
     },
     {
       "domain": "google.com",
-      "count": 3142
+      "count": 3144
     },
     {
       "domain": "jccm.es",
@@ -243,7 +243,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 2983
+      "count": 2984
     },
     {
       "domain": "aragon.es",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "madrid.es",
-      "count": 1788
+      "count": 1795
     },
     {
       "domain": "caib.es",
@@ -267,7 +267,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 1441
+      "count": 1443
     },
     {
       "domain": "juntaex.es",
@@ -275,7 +275,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 1406
+      "count": 1407
     },
     {
       "domain": "educativa.com",
@@ -307,7 +307,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 781
+      "count": 783
     },
     {
       "domain": "carm.es",
@@ -331,7 +331,7 @@
     },
     {
       "domain": "boe.es",
-      "count": 703
+      "count": 704
     },
     {
       "domain": "fontawesome.com",
@@ -367,7 +367,7 @@
     },
     {
       "domain": "administracion.gob.es",
-      "count": 502
+      "count": 503
     },
     {
       "domain": "ayto-fuenlabrada.es",
@@ -379,7 +379,7 @@
     },
     {
       "domain": "readspeaker.com",
-      "count": 428
+      "count": 432
     },
     {
       "domain": "blogspot.com.es",
@@ -387,7 +387,7 @@
     },
     {
       "domain": "transparencia.gob.es",
-      "count": 410
+      "count": 411
     },
     {
       "domain": "vimeo.com",
@@ -414,5 +414,5 @@
     "form_destination": 1439,
     "font_or_preload_dependency": 153
   },
-  "generated_at": "2026-10-09T05:32:58.535299+00:00"
+  "generated_at": "2026-10-09T23:08:07.893847+00:00"
 }
