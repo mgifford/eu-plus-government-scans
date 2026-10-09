@@ -52,12 +52,12 @@
       "count": 555
     },
     {
-      "domain": "heraklion.gr",
+      "domain": "dypa.gov.gr",
       "count": 513
     },
     {
-      "domain": "dypa.gov.gr",
-      "count": 509
+      "domain": "heraklion.gr",
+      "count": 513
     },
     {
       "domain": "vvv.gov.gr",
@@ -350,12 +350,12 @@
       "count": 235
     },
     {
-      "domain": "espa.gr",
-      "count": 231
+      "domain": "dypa.gov.gr",
+      "count": 232
     },
     {
-      "domain": "dypa.gov.gr",
-      "count": 228
+      "domain": "espa.gr",
+      "count": 231
     },
     {
       "domain": "bootstrapcdn.com",
@@ -414,5 +414,5 @@
     "script_dependency": 1274,
     "stylesheet_dependency": 1052
   },
-  "generated_at": "2026-10-09T13:27:30.441827+00:00"
+  "generated_at": "2026-10-09T23:08:06.580022+00:00"
 }

@@ -8,16 +8,16 @@
       "count": 3567
     },
     {
+      "domain": "maribor.si",
+      "count": 398
+    },
+    {
       "domain": "ptuj.si",
       "count": 378
     },
     {
       "domain": "ds-rs.si",
       "count": 366
-    },
-    {
-      "domain": "maribor.si",
-      "count": 363
     },
     {
       "domain": "kamnik.si",
@@ -75,15 +75,15 @@
     },
     {
       "domain": "facebook.com",
-      "count": 198
+      "count": 201
+    },
+    {
+      "domain": "maribor.si",
+      "count": 179
     },
     {
       "domain": "ljubljana.si",
       "count": 171
-    },
-    {
-      "domain": "maribor.si",
-      "count": 166
     },
     {
       "domain": "ptuj.si",
@@ -94,12 +94,12 @@
       "count": 141
     },
     {
-      "domain": "googleapis.com",
+      "domain": "google.com",
       "count": 136
     },
     {
-      "domain": "google.com",
-      "count": 131
+      "domain": "googleapis.com",
+      "count": 136
     },
     {
       "domain": "celje.si",
@@ -111,7 +111,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 101
+      "count": 104
     },
     {
       "domain": "kamnik.si",
@@ -131,7 +131,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 54
+      "count": 57
     },
     {
       "domain": "vlada.si",
@@ -179,7 +179,7 @@
     },
     {
       "domain": "ip-rs.si",
-      "count": 31
+      "count": 32
     },
     {
       "domain": "cloudflare.com",
@@ -278,5 +278,5 @@
     "stylesheet_dependency": 98,
     "form_destination": 45
   },
-  "generated_at": "2026-10-09T05:32:58.636689+00:00"
+  "generated_at": "2026-10-09T23:08:07.744476+00:00"
 }

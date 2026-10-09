@@ -200,8 +200,8 @@
       "count": 1103
     },
     {
-      "domain": "lenord.fr",
-      "count": 1078
+      "domain": "etudiant.gouv.fr",
+      "count": 1082
     }
   ],
   "top_target_domains": [
@@ -211,7 +211,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 8796
+      "count": 8797
     },
     {
       "domain": "haute-garonne.fr",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 5984
+      "count": 5985
     },
     {
       "domain": "skolengo.com",
@@ -231,7 +231,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 5302
+      "count": 5303
     },
     {
       "domain": "cnam.fr",
@@ -239,23 +239,23 @@
     },
     {
       "domain": "data.gouv.fr",
-      "count": 4981
+      "count": 4982
     },
     {
       "domain": "twitter.com",
-      "count": 4654
+      "count": 4655
     },
     {
       "domain": "googleapis.com",
-      "count": 4326
+      "count": 4327
     },
     {
       "domain": "legifrance.gouv.fr",
-      "count": 4291
+      "count": 4292
     },
     {
       "domain": "youtube.com",
-      "count": 4278
+      "count": 4279
     },
     {
       "domain": "developpement-durable.gouv.fr",
@@ -267,7 +267,7 @@
     },
     {
       "domain": "info.gouv.fr",
-      "count": 2670
+      "count": 2671
     },
     {
       "domain": "education.gouv.fr",
@@ -283,11 +283,11 @@
     },
     {
       "domain": "service-public.gouv.fr",
-      "count": 2252
+      "count": 2253
     },
     {
       "domain": "beta.gouv.fr",
-      "count": 2212
+      "count": 2213
     },
     {
       "domain": "ac-grenoble.fr",
@@ -303,11 +303,11 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 1814
+      "count": 1815
     },
     {
       "domain": "cloudflare.com",
-      "count": 1793
+      "count": 1795
     },
     {
       "domain": "loire-atlantique.fr",
@@ -323,7 +323,7 @@
     },
     {
       "domain": "x.com",
-      "count": 1568
+      "count": 1569
     },
     {
       "domain": "defense.gouv.fr",
@@ -414,5 +414,5 @@
     "form_destination": 1715,
     "font_or_preload_dependency": 701
   },
-  "generated_at": "2026-10-09T05:32:58.213688+00:00"
+  "generated_at": "2026-10-09T23:08:07.674995+00:00"
 }
