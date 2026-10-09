@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T23:46:40.849449+00:00",
+  "generated_at": "2026-10-09T05:33:02.277241+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -178,7 +178,7 @@
     {
       "service": "googletagmanager.com",
       "countries": 32,
-      "domains": 2777
+      "domains": 2778
     },
     {
       "service": "gstatic.com",
@@ -203,12 +203,12 @@
     {
       "service": "cloudflare.com",
       "countries": 31,
-      "domains": 1667
+      "domains": 1666
     },
     {
       "service": "jquery.com",
       "countries": 30,
-      "domains": 640
+      "domains": 639
     },
     {
       "service": "unpkg.com",
@@ -263,7 +263,7 @@
     {
       "service": "fbcdn.net",
       "countries": 18,
-      "domains": 108
+      "domains": 109
     },
     {
       "service": "mapbox.com",
@@ -444,7 +444,7 @@
       "country_code": "POLAND",
       "country": "Poland",
       "service": "googletagmanager.com",
-      "domains": 664,
+      "domains": 665,
       "scanned_domains": 2436,
       "percent": 27.3
     },
@@ -484,15 +484,15 @@
       "country_code": "POLAND",
       "country": "Poland",
       "service": "cloudflare.com",
-      "domains": 245,
+      "domains": 244,
       "scanned_domains": 2436,
-      "percent": 10.1
+      "percent": 10.0
     },
     {
       "country_code": "POLAND",
       "country": "Poland",
       "service": "jquery.com",
-      "domains": 134,
+      "domains": 133,
       "scanned_domains": 2436,
       "percent": 5.5
     },
@@ -580,9 +580,9 @@
       "country_code": "POLAND",
       "country": "Poland",
       "service": "fbcdn.net",
-      "domains": 52,
+      "domains": 53,
       "scanned_domains": 2436,
-      "percent": 2.1
+      "percent": 2.2
     },
     {
       "country_code": "POLAND",

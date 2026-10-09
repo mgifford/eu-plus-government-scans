@@ -1,6 +1,6 @@
 {
   "country_code": "FRANCE",
-  "total_relationships": 30713,
+  "total_relationships": 30711,
   "total_source_domains": 671,
   "top_source_domains": [
     {
@@ -223,7 +223,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 5982
+      "count": 5984
     },
     {
       "domain": "skolengo.com",
@@ -243,11 +243,11 @@
     },
     {
       "domain": "twitter.com",
-      "count": 4650
+      "count": 4654
     },
     {
       "domain": "googleapis.com",
-      "count": 4324
+      "count": 4326
     },
     {
       "domain": "legifrance.gouv.fr",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 4274
+      "count": 4278
     },
     {
       "domain": "developpement-durable.gouv.fr",
@@ -275,7 +275,7 @@
     },
     {
       "domain": "service-public.fr",
-      "count": 2412
+      "count": 2414
     },
     {
       "domain": "rennes.fr",
@@ -303,11 +303,11 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 1812
+      "count": 1814
     },
     {
       "domain": "cloudflare.com",
-      "count": 1789
+      "count": 1793
     },
     {
       "domain": "loire-atlantique.fr",
@@ -359,7 +359,7 @@
     },
     {
       "domain": "gouvernement.fr",
-      "count": 1170
+      "count": 1172
     },
     {
       "domain": "gstatic.com",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 16084,
+    "editorial_link": 16081,
     "script_dependency": 4567,
     "stylesheet_dependency": 4089,
     "image_or_media_dependency": 3558,
     "form_destination": 1715,
-    "font_or_preload_dependency": 700
+    "font_or_preload_dependency": 701
   },
-  "generated_at": "2026-10-08T13:42:00.513990+00:00"
+  "generated_at": "2026-10-09T05:32:58.213688+00:00"
 }
