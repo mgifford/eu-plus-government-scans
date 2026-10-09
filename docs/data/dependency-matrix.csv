@@ -20,13 +20,13 @@ UNITED_KINGDOM_UK,United Kingdom,cdn-cookieyes.com,61,3229,1.9
 UNITED_KINGDOM_UK,United Kingdom,fbcdn.net,21,3229,0.7
 UNITED_KINGDOM_UK,United Kingdom,mapbox.com,48,3229,1.5
 POLAND,Poland,googleapis.com,1479,2436,60.7
-POLAND,Poland,googletagmanager.com,664,2436,27.3
+POLAND,Poland,googletagmanager.com,665,2436,27.3
 POLAND,Poland,gstatic.com,507,2436,20.8
 POLAND,Poland,jsdelivr.net,185,2436,7.6
 POLAND,Poland,fontawesome.com,144,2436,5.9
 POLAND,Poland,google.com,381,2436,15.6
-POLAND,Poland,cloudflare.com,245,2436,10.1
-POLAND,Poland,jquery.com,134,2436,5.5
+POLAND,Poland,cloudflare.com,244,2436,10.0
+POLAND,Poland,jquery.com,133,2436,5.5
 POLAND,Poland,unpkg.com,67,2436,2.8
 POLAND,Poland,bootstrapcdn.com,160,2436,6.6
 POLAND,Poland,typekit.net,29,2436,1.2
@@ -37,7 +37,7 @@ POLAND,Poland,amazonaws.com,10,2436,0.4
 POLAND,Poland,addtoany.com,23,2436,0.9
 POLAND,Poland,arcgis.com,2,2436,0.1
 POLAND,Poland,cdn-cookieyes.com,69,2436,2.8
-POLAND,Poland,fbcdn.net,52,2436,2.1
+POLAND,Poland,fbcdn.net,53,2436,2.2
 POLAND,Poland,mapbox.com,11,2436,0.5
 FRANCE,France,googleapis.com,230,665,34.6
 FRANCE,France,googletagmanager.com,88,665,13.2

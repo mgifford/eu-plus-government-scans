@@ -89,7 +89,7 @@
     },
     {
       "domain": "riksarkivet.se",
-      "count": 376
+      "count": 379
     },
     {
       "domain": "regionvarmland.se",
@@ -243,15 +243,15 @@
     },
     {
       "domain": "youtube.com",
-      "count": 600
+      "count": 602
+    },
+    {
+      "domain": "googleapis.com",
+      "count": 572
     },
     {
       "domain": "vgregion.se",
       "count": 570
-    },
-    {
-      "domain": "googleapis.com",
-      "count": 568
     },
     {
       "domain": "goteborg.se",
@@ -370,12 +370,12 @@
       "count": 211
     },
     {
-      "domain": "skane.se",
+      "domain": "riksarkivet.se",
       "count": 207
     },
     {
-      "domain": "riksarkivet.se",
-      "count": 205
+      "domain": "skane.se",
+      "count": 207
     },
     {
       "domain": "ostersund.se",
@@ -414,5 +414,5 @@
     "image_or_media_dependency": 677,
     "font_or_preload_dependency": 306
   },
-  "generated_at": "2026-10-07T13:32:57.292617+00:00"
+  "generated_at": "2026-10-09T05:32:59.057378+00:00"
 }

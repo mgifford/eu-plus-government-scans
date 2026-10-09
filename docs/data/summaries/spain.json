@@ -9,7 +9,7 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 29788
+      "count": 29810
     },
     {
       "domain": "gva.es",
@@ -211,7 +211,7 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 14814
+      "count": 14825
     },
     {
       "domain": "gva.es",
@@ -219,27 +219,27 @@
     },
     {
       "domain": "facebook.com",
-      "count": 4123
+      "count": 4125
     },
     {
       "domain": "twitter.com",
-      "count": 3794
+      "count": 3796
     },
     {
       "domain": "youtube.com",
-      "count": 3408
+      "count": 3410
     },
     {
       "domain": "googleapis.com",
-      "count": 3320
+      "count": 3322
     },
     {
       "domain": "google.com",
-      "count": 3141
+      "count": 3142
     },
     {
       "domain": "jccm.es",
-      "count": 3081
+      "count": 3083
     },
     {
       "domain": "instagram.com",
@@ -267,7 +267,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 1440
+      "count": 1441
     },
     {
       "domain": "juntaex.es",
@@ -299,7 +299,7 @@
     },
     {
       "domain": "blogspot.com",
-      "count": 893
+      "count": 895
     },
     {
       "domain": "x.com",
@@ -323,7 +323,7 @@
     },
     {
       "domain": "google.es",
-      "count": 718
+      "count": 719
     },
     {
       "domain": "sanidad.gob.es",
@@ -331,7 +331,7 @@
     },
     {
       "domain": "boe.es",
-      "count": 701
+      "count": 703
     },
     {
       "domain": "fontawesome.com",
@@ -339,7 +339,7 @@
     },
     {
       "domain": "insuit.net",
-      "count": 627
+      "count": 628
     },
     {
       "domain": "jsdelivr.net",
@@ -379,7 +379,7 @@
     },
     {
       "domain": "readspeaker.com",
-      "count": 427
+      "count": 428
     },
     {
       "domain": "blogspot.com.es",
@@ -414,5 +414,5 @@
     "form_destination": 1439,
     "font_or_preload_dependency": 153
   },
-  "generated_at": "2026-10-08T13:42:00.784481+00:00"
+  "generated_at": "2026-10-09T05:32:58.535299+00:00"
 }

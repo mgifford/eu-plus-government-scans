@@ -1,11 +1,11 @@
 {
   "country_code": "GERMANY",
-  "total_relationships": 21939,
+  "total_relationships": 21936,
   "total_source_domains": 226,
   "top_source_domains": [
     {
       "domain": "sachsen.de",
-      "count": 71630
+      "count": 71636
     },
     {
       "domain": "rlp.de",
@@ -84,6 +84,10 @@
       "count": 1143
     },
     {
+      "domain": "schleswig-holstein.de",
+      "count": 586
+    },
+    {
       "domain": "bundeswehr.de",
       "count": 567
     },
@@ -98,10 +102,6 @@
     {
       "domain": "dnb.de",
       "count": 536
-    },
-    {
-      "domain": "schleswig-holstein.de",
-      "count": 512
     },
     {
       "domain": "jena.de",
@@ -125,7 +125,7 @@
     },
     {
       "domain": "rki.de",
-      "count": 442
+      "count": 466
     },
     {
       "domain": "bundesimmobilien.de",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "sachsen.de",
-      "count": 62877
+      "count": 62883
     },
     {
       "domain": "niedersachsen.de",
@@ -243,15 +243,15 @@
     },
     {
       "domain": "facebook.com",
-      "count": 5355
+      "count": 5360
     },
     {
       "domain": "instagram.com",
-      "count": 5194
+      "count": 5201
     },
     {
       "domain": "bund.de",
-      "count": 4724
+      "count": 4726
     },
     {
       "domain": "bremen.de",
@@ -267,11 +267,11 @@
     },
     {
       "domain": "youtube.com",
-      "count": 3302
+      "count": 3309
     },
     {
       "domain": "linkedin.com",
-      "count": 2688
+      "count": 2695
     },
     {
       "domain": "berlin.de",
@@ -375,11 +375,11 @@
     },
     {
       "domain": "x.com",
-      "count": 581
+      "count": 586
     },
     {
       "domain": "xing.com",
-      "count": 581
+      "count": 586
     },
     {
       "domain": "eye-able.com",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 11139,
+    "editorial_link": 11138,
     "font_or_preload_dependency": 340,
-    "image_or_media_dependency": 2747,
+    "image_or_media_dependency": 2746,
     "script_dependency": 2870,
-    "stylesheet_dependency": 2704,
+    "stylesheet_dependency": 2703,
     "form_destination": 2139
   },
-  "generated_at": "2026-10-08T13:41:59.747666+00:00"
+  "generated_at": "2026-10-09T05:32:57.282661+00:00"
 }
