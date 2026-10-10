@@ -9,7 +9,7 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 29810
+      "count": 29949
     },
     {
       "domain": "gva.es",
@@ -211,7 +211,7 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 14825
+      "count": 14895
     },
     {
       "domain": "gva.es",
@@ -219,15 +219,15 @@
     },
     {
       "domain": "facebook.com",
-      "count": 4129
+      "count": 4136
     },
     {
       "domain": "twitter.com",
-      "count": 3799
+      "count": 3805
     },
     {
       "domain": "youtube.com",
-      "count": 3412
+      "count": 3418
     },
     {
       "domain": "googleapis.com",
@@ -235,15 +235,15 @@
     },
     {
       "domain": "google.com",
-      "count": 3144
+      "count": 3153
     },
     {
       "domain": "jccm.es",
-      "count": 3083
+      "count": 3098
     },
     {
       "domain": "instagram.com",
-      "count": 2984
+      "count": 2987
     },
     {
       "domain": "aragon.es",
@@ -299,7 +299,7 @@
     },
     {
       "domain": "blogspot.com",
-      "count": 895
+      "count": 896
     },
     {
       "domain": "x.com",
@@ -307,7 +307,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 783
+      "count": 784
     },
     {
       "domain": "carm.es",
@@ -323,7 +323,7 @@
     },
     {
       "domain": "google.es",
-      "count": 719
+      "count": 724
     },
     {
       "domain": "sanidad.gob.es",
@@ -383,7 +383,7 @@
     },
     {
       "domain": "blogspot.com.es",
-      "count": 414
+      "count": 417
     },
     {
       "domain": "transparencia.gob.es",
@@ -391,7 +391,7 @@
     },
     {
       "domain": "vimeo.com",
-      "count": 396
+      "count": 398
     },
     {
       "domain": "valencia.es",
@@ -403,7 +403,7 @@
     },
     {
       "domain": "sharethis.com",
-      "count": 386
+      "count": 387
     }
   ],
   "relationship_types": {
@@ -414,5 +414,5 @@
     "form_destination": 1439,
     "font_or_preload_dependency": 153
   },
-  "generated_at": "2026-10-09T23:08:07.893847+00:00"
+  "generated_at": "2026-10-10T12:47:29.726975+00:00"
 }
