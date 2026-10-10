@@ -1,11 +1,11 @@
 {
   "country_code": "PORTUGAL",
-  "total_relationships": 13726,
+  "total_relationships": 13729,
   "total_source_domains": 397,
   "top_source_domains": [
     {
       "domain": "madeira.gov.pt",
-      "count": 3345
+      "count": 3357
     },
     {
       "domain": "justica.gov.pt",
@@ -52,6 +52,10 @@
       "count": 870
     },
     {
+      "domain": "bnportugal.gov.pt",
+      "count": 845
+    },
+    {
       "domain": "cm-pontedelima.pt",
       "count": 834
     },
@@ -66,10 +70,6 @@
     {
       "domain": "cm-estarreja.pt",
       "count": 786
-    },
-    {
-      "domain": "bnportugal.gov.pt",
-      "count": 769
     },
     {
       "domain": "cm-almada.pt",
@@ -160,6 +160,10 @@
       "count": 554
     },
     {
+      "domain": "cm-sjm.pt",
+      "count": 550
+    },
+    {
       "domain": "cm-ovar.pt",
       "count": 546
     },
@@ -196,10 +200,6 @@
       "count": 506
     },
     {
-      "domain": "cm-sjm.pt",
-      "count": 505
-    },
-    {
       "domain": "cm-leiria.pt",
       "count": 498
     }
@@ -207,31 +207,31 @@
   "top_target_domains": [
     {
       "domain": "googleapis.com",
-      "count": 3410
+      "count": 3415
     },
     {
       "domain": "facebook.com",
-      "count": 3157
+      "count": 3162
     },
     {
       "domain": "youtube.com",
-      "count": 2536
+      "count": 2538
     },
     {
       "domain": "instagram.com",
-      "count": 2460
+      "count": 2470
     },
     {
       "domain": "googletagmanager.com",
-      "count": 2235
+      "count": 2240
     },
     {
       "domain": "google.com",
-      "count": 2088
+      "count": 2093
     },
     {
       "domain": "madeira.gov.pt",
-      "count": 1782
+      "count": 1790
     },
     {
       "domain": "azores.gov.pt",
@@ -263,7 +263,7 @@
     },
     {
       "domain": "twitter.com",
-      "count": 1117
+      "count": 1120
     },
     {
       "domain": "jsdelivr.net",
@@ -330,6 +330,10 @@
       "count": 441
     },
     {
+      "domain": "bnportugal.gov.pt",
+      "count": 427
+    },
+    {
       "domain": "cm-sintra.pt",
       "count": 426
     },
@@ -340,10 +344,6 @@
     {
       "domain": "jquery.com",
       "count": 422
-    },
-    {
-      "domain": "bnportugal.gov.pt",
-      "count": 412
     },
     {
       "domain": "cm-camaradelobos.pt",
@@ -409,10 +409,10 @@
   "relationship_types": {
     "font_or_preload_dependency": 437,
     "script_dependency": 2168,
-    "editorial_link": 7651,
+    "editorial_link": 7654,
     "stylesheet_dependency": 1578,
     "form_destination": 755,
     "image_or_media_dependency": 1137
   },
-  "generated_at": "2026-10-09T23:08:06.360703+00:00"
+  "generated_at": "2026-10-10T05:18:11.263573+00:00"
 }
