@@ -1,6 +1,6 @@
 {
   "country_code": "FRANCE",
-  "total_relationships": 30711,
+  "total_relationships": 30704,
   "total_source_domains": 671,
   "top_source_domains": [
     {
@@ -17,7 +17,7 @@
     },
     {
       "domain": "developpement-durable.gouv.fr",
-      "count": 7995
+      "count": 8092
     },
     {
       "domain": "cnam.fr",
@@ -33,7 +33,7 @@
     },
     {
       "domain": "beta.gouv.fr",
-      "count": 3909
+      "count": 3906
     },
     {
       "domain": "toulouse.fr",
@@ -211,7 +211,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 8797
+      "count": 8800
     },
     {
       "domain": "haute-garonne.fr",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 5985
+      "count": 5986
     },
     {
       "domain": "skolengo.com",
@@ -243,7 +243,7 @@
     },
     {
       "domain": "twitter.com",
-      "count": 4655
+      "count": 4656
     },
     {
       "domain": "googleapis.com",
@@ -251,15 +251,15 @@
     },
     {
       "domain": "legifrance.gouv.fr",
-      "count": 4292
+      "count": 4294
     },
     {
       "domain": "youtube.com",
-      "count": 4279
+      "count": 4282
     },
     {
       "domain": "developpement-durable.gouv.fr",
-      "count": 4030
+      "count": 4108
     },
     {
       "domain": "github.com",
@@ -275,7 +275,7 @@
     },
     {
       "domain": "service-public.fr",
-      "count": 2414
+      "count": 2415
     },
     {
       "domain": "rennes.fr",
@@ -287,7 +287,7 @@
     },
     {
       "domain": "beta.gouv.fr",
-      "count": 2213
+      "count": 2214
     },
     {
       "domain": "ac-grenoble.fr",
@@ -295,7 +295,7 @@
     },
     {
       "domain": "google.com",
-      "count": 1990
+      "count": 1992
     },
     {
       "domain": "culture.gouv.fr",
@@ -391,7 +391,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 921
+      "count": 922
     },
     {
       "domain": "limoges.fr",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 16081,
+    "editorial_link": 16072,
     "script_dependency": 4567,
     "stylesheet_dependency": 4089,
-    "image_or_media_dependency": 3558,
+    "image_or_media_dependency": 3560,
     "form_destination": 1715,
     "font_or_preload_dependency": 701
   },
-  "generated_at": "2026-10-10T12:47:29.545513+00:00"
+  "generated_at": "2026-10-10T18:00:07.441550+00:00"
 }
