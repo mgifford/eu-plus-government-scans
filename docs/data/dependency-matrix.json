@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T18:00:11.276211+00:00",
+  "generated_at": "2026-10-10T22:01:54.096230+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -183,7 +183,7 @@
     {
       "service": "gstatic.com",
       "countries": 32,
-      "domains": 1727
+      "domains": 1726
     },
     {
       "service": "jsdelivr.net",
@@ -233,7 +233,7 @@
     {
       "service": "facebook.com",
       "countries": 23,
-      "domains": 216
+      "domains": 217
     },
     {
       "service": "facebook.net",
@@ -258,12 +258,12 @@
     {
       "service": "cdn-cookieyes.com",
       "countries": 18,
-      "domains": 180
+      "domains": 182
     },
     {
       "service": "fbcdn.net",
       "countries": 18,
-      "domains": 110
+      "domains": 111
     },
     {
       "service": "mapbox.com",
@@ -452,7 +452,7 @@
       "country_code": "POLAND",
       "country": "Poland",
       "service": "gstatic.com",
-      "domains": 506,
+      "domains": 505,
       "scanned_domains": 2439,
       "percent": 20.7
     },
@@ -532,9 +532,9 @@
       "country_code": "POLAND",
       "country": "Poland",
       "service": "facebook.com",
-      "domains": 118,
+      "domains": 119,
       "scanned_domains": 2439,
-      "percent": 4.8
+      "percent": 4.9
     },
     {
       "country_code": "POLAND",
@@ -572,17 +572,17 @@
       "country_code": "POLAND",
       "country": "Poland",
       "service": "cdn-cookieyes.com",
-      "domains": 69,
+      "domains": 71,
       "scanned_domains": 2439,
-      "percent": 2.8
+      "percent": 2.9
     },
     {
       "country_code": "POLAND",
       "country": "Poland",
       "service": "fbcdn.net",
-      "domains": 52,
+      "domains": 53,
       "scanned_domains": 2439,
-      "percent": 2.1
+      "percent": 2.2
     },
     {
       "country_code": "POLAND",
