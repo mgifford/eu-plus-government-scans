@@ -5,10 +5,10 @@ layout: page
 
 <!-- TECH_LIGHTHOUSE_STATS_START -->
 
-_Generated: 2026-10-11 12:50 UTC_
+_Generated: 2026-10-11 15:59 UTC_
 
-**46,763** URLs with both technology detection and Lighthouse scores
-out of **74,056** technology-detected URLs and **51,102** Lighthouse-audited URLs
+**46,772** URLs with both technology detection and Lighthouse scores
+out of **74,068** technology-detected URLs and **51,102** Lighthouse-audited URLs
 
 ---
 
@@ -18,28 +18,28 @@ Average Google Lighthouse scores (0–100) for pages where each technology was d
 
 | # | Technology | Pages | Countries | Perf | A11y | Best Prac | SEO |
 |--:|-----------|------:|----------:|-----:|-----:|----------:|----:|
-| 1 | jQuery | **28,388** | 32 | 87 | 89 | 90 | 88 |
-| 2 | PHP | **16,513** | 32 | 88 | 90 | 91 | 90 |
+| 1 | jQuery | **28,389** | 32 | 87 | 89 | 90 | 88 |
+| 2 | PHP | **16,512** | 32 | 88 | 90 | 91 | 90 |
 | 3 | Apache | **15,254** | 32 | 86 | 85 | 89 | 87 |
-| 4 | Bootstrap | **13,110** | 32 | 88 | 89 | 90 | 88 |
-| 5 | Font Awesome | **12,310** | 32 | 87 | 89 | 89 | 89 |
-| 6 | Google Tag Manager | **10,226** | 32 | 86 | 90 | 89 | 90 |
-| 7 | Google Font API | **10,116** | 32 | 87 | 88 | 88 | 89 |
-| 8 | MySQL | **9,320** | 32 | 87 | 89 | 90 | 90 |
-| 9 | WordPress | **9,256** | 32 | 87 | 89 | 90 | 90 |
-| 10 | Nginx | **8,199** | 32 | 88 | 90 | 92 | 89 |
-| 11 | jQuery Migrate | **8,050** | 32 | 87 | 88 | 89 | 90 |
-| 12 | Windows Server | **5,082** | 32 | 89 | 87 | 88 | 86 |
-| 13 | IIS | **4,984** | 32 | 89 | 87 | 88 | 86 |
-| 14 | jQuery UI | **4,722** | 32 | 86 | 88 | 89 | 87 |
-| 15 | Microsoft ASP.NET | **4,263** | 32 | 89 | 87 | 88 | 86 |
+| 4 | Bootstrap | **13,116** | 32 | 88 | 89 | 90 | 88 |
+| 5 | Font Awesome | **12,307** | 32 | 87 | 89 | 89 | 89 |
+| 6 | Google Tag Manager | **10,231** | 32 | 86 | 90 | 89 | 90 |
+| 7 | Google Font API | **10,113** | 32 | 87 | 88 | 88 | 89 |
+| 8 | MySQL | **9,318** | 32 | 87 | 89 | 90 | 90 |
+| 9 | WordPress | **9,254** | 32 | 87 | 89 | 90 | 90 |
+| 10 | Nginx | **8,206** | 32 | 88 | 90 | 92 | 89 |
+| 11 | jQuery Migrate | **8,049** | 32 | 87 | 88 | 89 | 90 |
+| 12 | Windows Server | **5,054** | 32 | 89 | 87 | 88 | 86 |
+| 13 | IIS | **4,956** | 32 | 89 | 87 | 88 | 86 |
+| 14 | jQuery UI | **4,718** | 32 | 86 | 88 | 89 | 87 |
+| 15 | Microsoft ASP.NET | **4,261** | 32 | 89 | 87 | 88 | 86 |
 | 16 | Cloudflare | **4,048** | 32 | 89 | 90 | 85 | 81 |
-| 17 | Drupal | **3,837** | 29 | 89 | 92 | 91 | 92 |
-| 18 | jsDelivr | **3,477** | 32 | 88 | 90 | 91 | 88 |
+| 17 | Drupal | **3,838** | 29 | 89 | 92 | 91 | 92 |
+| 18 | jsDelivr | **3,484** | 32 | 88 | 90 | 91 | 88 |
 | 19 | Yoast SEO | **3,156** | 30 | 86 | 88 | 88 | 90 |
 | 20 | reCAPTCHA | **2,743** | 30 | 87 | 89 | 87 | 89 |
-| 21 | Slick | **2,617** | 30 | 82 | 88 | 91 | 88 |
-| 22 | Lightbox | **2,375** | 32 | 86 | 88 | 89 | 88 |
+| 21 | Slick | **2,621** | 30 | 82 | 88 | 91 | 88 |
+| 22 | Lightbox | **2,379** | 32 | 86 | 88 | 89 | 88 |
 | 23 | Modernizr | **2,310** | 30 | 87 | 88 | 88 | 89 |
 | 24 | Java | **1,967** | 29 | 86 | 93 | 93 | 89 |
 | 25 | Elementor | **1,966** | 27 | 85 | 88 | 87 | 90 |
@@ -56,11 +56,11 @@ Average accessibility score (0–100) for the top 10 most-detected technologies,
 | Technology | Austria | Belgium | Bulgaria | Canada | Croatia | Czechia | Denmark | Estonia | Finland | France | Germany | Greece | Hungary | Iceland | Ireland | … |
 |-----------|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|-----:|
 | jQuery | 91 | 93 | 82 | 91 | 80 | 89 | 96 | 86 | 95 | 88 | 89 | 86 | 82 | 92 | 92 |
-| PHP | 92 | 94 | 84 | 91 | 82 | 88 | 97 | 89 | 99 | 89 | 93 | 87 | 86 | 94 | 92 |
+| PHP | 92 | 94 | 84 | 91 | 83 | 88 | 97 | 89 | 99 | 89 | 93 | 87 | 86 | 94 | 92 |
 | Apache | 89 | 90 | 82 | 90 | 81 | 88 | 82 | 86 | 95 | 86 | 90 | 86 | 82 | 91 | 90 |
 | Bootstrap | 93 | 86 | 83 | 91 | 79 | 88 | 96 | 82 | 94 | 88 | 89 | 85 | 85 | 88 | 92 |
 | Font Awesome | 94 | 93 | 85 | 91 | 79 | 88 | 92 | 86 | 95 | 88 | 87 | 86 | 86 | 87 | 90 |
-| Google Tag Manager | 69 | 91 | 82 | 91 | 80 | 86 | 96 | 87 | 96 | 87 | 88 | 87 | 81 | 89 | 93 |
+| Google Tag Manager | 69 | 91 | 82 | 91 | 80 | 87 | 96 | 87 | 96 | 87 | 88 | 87 | 81 | 89 | 93 |
 | Google Font API | 85 | 94 | 81 | 89 | 80 | 88 | 91 | 82 | 82 | 87 | 88 | 87 | 87 | 87 | 90 |
 | MySQL | 93 | 90 | 84 | 89 | 82 | 90 | 92 | 87 | 98 | 88 | 88 | 88 | 86 | 92 | 90 |
 | WordPress | 93 | 90 | 84 | 89 | 82 | 90 | 92 | 87 | 98 | 88 | 88 | 88 | 86 | 92 | 90 |
