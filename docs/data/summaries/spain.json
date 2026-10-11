@@ -235,7 +235,7 @@
     },
     {
       "domain": "google.com",
-      "count": 3153
+      "count": 3154
     },
     {
       "domain": "jccm.es",
@@ -267,7 +267,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 1443
+      "count": 1444
     },
     {
       "domain": "juntaex.es",
@@ -339,7 +339,7 @@
     },
     {
       "domain": "insuit.net",
-      "count": 628
+      "count": 629
     },
     {
       "domain": "jsdelivr.net",
@@ -414,5 +414,5 @@
     "form_destination": 1439,
     "font_or_preload_dependency": 153
   },
-  "generated_at": "2026-10-11T05:01:09.315791+00:00"
+  "generated_at": "2026-10-11T12:59:29.953844+00:00"
 }

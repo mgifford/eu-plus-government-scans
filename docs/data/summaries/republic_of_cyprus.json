@@ -1,7 +1,7 @@
 {
   "country_code": "REPUBLIC_OF_CYPRUS",
-  "total_relationships": 321094,
-  "total_source_domains": 9341,
+  "total_relationships": 321139,
+  "total_source_domains": 9343,
   "top_source_domains": [
     {
       "domain": "sachsen.de",
@@ -97,7 +97,7 @@
     },
     {
       "domain": "torun.pl",
-      "count": 13600
+      "count": 13630
     },
     {
       "domain": "xunta.gal",
@@ -124,16 +124,20 @@
       "count": 11411
     },
     {
+      "domain": "uni.opole.pl",
+      "count": 11177
+    },
+    {
       "domain": "paris.fr",
       "count": 11036
     },
     {
-      "domain": "uni.opole.pl",
-      "count": 10967
-    },
-    {
       "domain": "belgium.be",
       "count": 10762
+    },
+    {
+      "domain": "ug.edu.pl",
+      "count": 10261
     },
     {
       "domain": "blog.gov.uk",
@@ -142,10 +146,6 @@
     {
       "domain": "ooe.gv.at",
       "count": 10085
-    },
-    {
-      "domain": "ug.edu.pl",
-      "count": 10054
     },
     {
       "domain": "kk.dk",
@@ -172,12 +172,12 @@
       "count": 8092
     },
     {
-      "domain": "wallonie.be",
-      "count": 8029
+      "domain": "gdynia.pl",
+      "count": 8063
     },
     {
-      "domain": "gdynia.pl",
-      "count": 7879
+      "domain": "wallonie.be",
+      "count": 8029
     },
     {
       "domain": "cnam.fr",
@@ -207,11 +207,11 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 91266
+      "count": 91742
     },
     {
       "domain": "googleapis.com",
-      "count": 75640
+      "count": 76031
     },
     {
       "domain": "sachsen.de",
@@ -223,11 +223,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 52994
+      "count": 53220
     },
     {
       "domain": "youtube.com",
-      "count": 50185
+      "count": 50374
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -235,23 +235,23 @@
     },
     {
       "domain": "google.com",
-      "count": 43177
+      "count": 43356
     },
     {
       "domain": "twitter.com",
-      "count": 42670
+      "count": 42723
     },
     {
       "domain": "linkedin.com",
-      "count": 37387
+      "count": 37457
     },
     {
       "domain": "googletagmanager.com",
-      "count": 35278
+      "count": 35493
     },
     {
       "domain": "krakow.pl",
-      "count": 33841
+      "count": 33847
     },
     {
       "domain": "gouv.qc.ca",
@@ -279,11 +279,11 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 22593
+      "count": 22686
     },
     {
       "domain": "jsdelivr.net",
-      "count": 22291
+      "count": 22360
     },
     {
       "domain": "bayern.de",
@@ -291,7 +291,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 19422
+      "count": 19522
     },
     {
       "domain": "esteri.it",
@@ -319,7 +319,7 @@
     },
     {
       "domain": "fontawesome.com",
-      "count": 11036
+      "count": 11099
     },
     {
       "domain": "admin.ch",
@@ -327,11 +327,11 @@
     },
     {
       "domain": "x.com",
-      "count": 10528
+      "count": 10546
     },
     {
       "domain": "gdansk.pl",
-      "count": 10205
+      "count": 10207
     },
     {
       "domain": "hessen.de",
@@ -339,7 +339,7 @@
     },
     {
       "domain": "unpkg.com",
-      "count": 9399
+      "count": 9391
     },
     {
       "domain": "hamburg.de",
@@ -347,7 +347,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 9146
+      "count": 9158
     },
     {
       "domain": "gva.es",
@@ -359,11 +359,15 @@
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 8353
+      "count": 8399
+    },
+    {
+      "domain": "uni.opole.pl",
+      "count": 7988
     },
     {
       "domain": "jquery.com",
-      "count": 7958
+      "count": 7983
     },
     {
       "domain": "diplo.de",
@@ -372,10 +376,6 @@
     {
       "domain": "cqc.org.uk",
       "count": 7926
-    },
-    {
-      "domain": "uni.opole.pl",
-      "count": 7836
     },
     {
       "domain": "paris.fr",
@@ -394,25 +394,25 @@
       "count": 7336
     },
     {
+      "domain": "ug.edu.pl",
+      "count": 6529
+    },
+    {
       "domain": "www.nhs.uk",
       "count": 6459
     },
     {
       "domain": "steiermark.at",
       "count": 6410
-    },
-    {
-      "domain": "ug.edu.pl",
-      "count": 6391
     }
   ],
   "relationship_types": {
-    "editorial_link": 165527,
-    "form_destination": 21415,
-    "image_or_media_dependency": 33663,
-    "script_dependency": 51147,
-    "stylesheet_dependency": 40925,
-    "font_or_preload_dependency": 8417
+    "editorial_link": 165565,
+    "form_destination": 21417,
+    "image_or_media_dependency": 33667,
+    "script_dependency": 51146,
+    "stylesheet_dependency": 40924,
+    "font_or_preload_dependency": 8420
   },
-  "generated_at": "2026-10-11T05:01:09.648642+00:00"
+  "generated_at": "2026-10-11T12:59:29.737262+00:00"
 }
