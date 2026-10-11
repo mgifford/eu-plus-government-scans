@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-10-10 21:14 UTC — last scan: 2026-10-10_
+_Stats as of 2026-10-11 06:06 UTC — last scan: 2026-10-10_
 
-**350** scan batches run
+**351** scan batches run
 
 **87,690** of **87,696** available pages scanned (**100.0%** coverage)
-**80,859** of **87,690** scanned pages were reachable (**92.2%**)
-**38,039** reachable pages loaded at least one third-party script (**47.0%** of reachable)
-**46,724** known third-party service loads identified
+**80,881** of **87,690** scanned pages were reachable (**92.2%**)
+**38,047** reachable pages loaded at least one third-party script (**47.0%** of reachable)
+**46,718** known third-party service loads identified
 **26** unique known services across **17** categories
 
 ---
@@ -30,7 +30,7 @@ _Stats as of 2026-10-10 21:14 UTC — last scan: 2026-10-10_
 | Denmark | 1,536 | 1,536 | 1,507 | 821 | 1,980 | 54.5 | 131.4 | 2026-10-03 |
 | Estonia | 401 | 401 | 385 | 135 | 120 | 35.1 | 31.2 | 2026-09-25 |
 | Finland | 199 | 199 | 189 | 47 | 26 | 24.9 | 13.8 | 2026-09-25 |
-| France | 10,009 | 10,009 | 9,137 | 4,197 | 2,445 | 45.9 | 26.8 | 2026-10-08 |
+| France | 10,009 | 10,009 | 9,159 | 4,205 | 2,439 | 45.9 | 26.6 | 2026-10-10 |
 | Germany | 6,599 | 6,599 | 6,366 | 1,690 | 488 | 26.5 | 7.7 | 2026-10-09 |
 | Greece | 1,752 | 1,752 | 1,640 | 814 | 1,136 | 49.6 | 69.3 | 2026-10-02 |
 | Hungary | 392 | 392 | 296 | 132 | 200 | 44.6 | 67.6 | 2026-09-25 |
@@ -64,12 +64,12 @@ _Stats as of 2026-10-10 21:14 UTC — last scan: 2026-10-10_
 |--:|---------|------:|
 | 1 | Google Analytics (GA4) | **8,667** |
 | 2 | cdnjs (Cloudflare CDN) | **7,612** |
-| 3 | jsDelivr CDN | **6,462** |
+| 3 | jsDelivr CDN | **6,461** |
 | 4 | Google reCAPTCHA | **4,895** |
 | 5 | Google Tag Manager | **4,159** |
 | 6 | Google Hosted Libraries | **3,240** |
-| 7 | unpkg CDN | **2,943** |
-| 8 | jQuery | **2,782** |
+| 7 | unpkg CDN | **2,935** |
+| 8 | jQuery | **2,785** |
 | 9 | Font Awesome | **1,896** |
 | 10 | Bootstrap | **944** |
 | 11 | Cookiebot | **805** |
@@ -89,12 +89,12 @@ _Stats as of 2026-10-10 21:14 UTC — last scan: 2026-10-10_
 |--:|---------|----------------:|------------------------------:|
 | 1 | Google Analytics (GA4) | **8,439** | **45.4%** |
 | 2 | Google reCAPTCHA | **4,610** | **24.8%** |
-| 3 | jsDelivr CDN | **4,375** | **23.5%** |
+| 3 | jsDelivr CDN | **4,374** | **23.5%** |
 | 4 | cdnjs (Cloudflare CDN) | **3,987** | **21.5%** |
 | 5 | Google Tag Manager | **3,966** | **21.3%** |
 | 6 | Google Hosted Libraries | **2,917** | **15.7%** |
-| 7 | unpkg CDN | **2,279** | **12.3%** |
-| 8 | jQuery | **2,191** | **11.8%** |
+| 7 | unpkg CDN | **2,275** | **12.2%** |
+| 8 | jQuery | **2,194** | **11.8%** |
 | 9 | Font Awesome | **1,511** | **8.1%** |
 | 10 | Bootstrap | **937** | **5.0%** |
 | 11 | Cookiebot | **786** | **4.2%** |
@@ -112,9 +112,9 @@ _Stats as of 2026-10-10 21:14 UTC — last scan: 2026-10-10_
 
 | # | Category | Loads |
 |--:|----------|------:|
-| 1 | CDN | **20,257** |
+| 1 | CDN | **20,248** |
 | 2 | Analytics | **9,775** |
-| 3 | JavaScript Library | **6,022** |
+| 3 | JavaScript Library | **6,025** |
 | 4 | Security | **5,108** |
 | 5 | CAPTCHA | **4,895** |
 | 6 | Tag Manager | **4,656** |
@@ -134,8 +134,8 @@ Infrastructure-heavy categories (CDNs, core libraries, and UI assets):
 
 | # | Infrastructure Category | Loads |
 |--:|--------------------------|------:|
-| 1 | CDN | **20,257** |
-| 2 | JavaScript Library | **6,022** |
+| 1 | CDN | **20,248** |
+| 2 | JavaScript Library | **6,025** |
 | 3 | Icon Library | **1,896** |
 | 4 | UI Framework | **944** |
 
@@ -161,10 +161,10 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 
 | # | Host | Loads | Reachable Pages |
 |--:|------|------:|----------------:|
-| 1 | `cdn.ent.auvergnerhonealpes.fr` | **15,183** | **1,649** |
-| 2 | `cdn.ecollege.haute-garonne.fr` | **2,466** | **270** |
+| 1 | `cdn.ent.auvergnerhonealpes.fr` | **15,143** | **1,648** |
+| 2 | `cdn.ecollege.haute-garonne.fr` | **2,448** | **270** |
 | 3 | `translate.google.com` | **2,378** | **2,375** |
-| 4 | `maps.googleapis.com` | **1,811** | **1,793** |
+| 4 | `maps.googleapis.com` | **1,813** | **1,795** |
 | 5 | `www.cqc.org.uk` | **1,745** | **1,732** |
 | 6 | `static.parastorage.com` | **1,571** | **147** |
 | 7 | `content.powerapps.com` | **1,546** | **128** |
