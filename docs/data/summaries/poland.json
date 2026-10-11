@@ -1,6 +1,6 @@
 {
   "country_code": "POLAND",
-  "total_relationships": 62150,
+  "total_relationships": 62187,
   "total_source_domains": 2494,
   "top_source_domains": [
     {
@@ -81,7 +81,7 @@
     },
     {
       "domain": "edu.wroclaw.pl",
-      "count": 1528
+      "count": 1591
     },
     {
       "domain": "um.warszawa.pl",
@@ -215,7 +215,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 23793
+      "count": 23816
     },
     {
       "domain": "poznan.pl",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 21237
+      "count": 21257
     },
     {
       "domain": "gdansk.pl",
@@ -231,19 +231,19 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 8516
+      "count": 8524
     },
     {
       "domain": "instagram.com",
-      "count": 8332
+      "count": 8333
     },
     {
       "domain": "youtube.com",
-      "count": 8137
+      "count": 8141
     },
     {
       "domain": "google.com",
-      "count": 8104
+      "count": 8113
     },
     {
       "domain": "uni.opole.pl",
@@ -259,7 +259,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 5927
+      "count": 5937
     },
     {
       "domain": "tarnow.pl",
@@ -271,7 +271,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 3911
+      "count": 3917
     },
     {
       "domain": "gdynia.pl",
@@ -279,23 +279,23 @@
     },
     {
       "domain": "www.gov.pl",
-      "count": 3170
+      "count": 3177
     },
     {
       "domain": "twitter.com",
-      "count": 2884
+      "count": 2890
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 2759
+      "count": 2762
     },
     {
       "domain": "linkedin.com",
-      "count": 2675
+      "count": 2677
     },
     {
       "domain": "fontawesome.com",
-      "count": 2636
+      "count": 2637
     },
     {
       "domain": "edu.bydgoszcz.pl",
@@ -311,7 +311,7 @@
     },
     {
       "domain": "bip.gov.pl",
-      "count": 1980
+      "count": 1983
     },
     {
       "domain": "unpkg.com",
@@ -319,7 +319,7 @@
     },
     {
       "domain": "wordpress.org",
-      "count": 1723
+      "count": 1725
     },
     {
       "domain": "vulcan.net.pl",
@@ -327,7 +327,7 @@
     },
     {
       "domain": "goo.gl",
-      "count": 1680
+      "count": 1683
     },
     {
       "domain": "gorzow.pl",
@@ -391,11 +391,11 @@
     },
     {
       "domain": "www.bydgoszcz.pl",
-      "count": 796
+      "count": 797
     },
     {
       "domain": "migam.org",
-      "count": 769
+      "count": 772
     },
     {
       "domain": "cookiedatabase.org",
@@ -403,16 +403,16 @@
     },
     {
       "domain": "dziennikustaw.gov.pl",
-      "count": 758
+      "count": 759
     }
   ],
   "relationship_types": {
-    "editorial_link": 33722,
+    "editorial_link": 33753,
     "form_destination": 3331,
-    "image_or_media_dependency": 6815,
-    "script_dependency": 8783,
-    "stylesheet_dependency": 7651,
-    "font_or_preload_dependency": 1848
+    "image_or_media_dependency": 6816,
+    "script_dependency": 8785,
+    "stylesheet_dependency": 7653,
+    "font_or_preload_dependency": 1849
   },
-  "generated_at": "2026-10-11T12:59:31.137959+00:00"
+  "generated_at": "2026-10-11T22:21:21.900906+00:00"
 }

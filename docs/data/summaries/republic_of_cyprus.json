@@ -1,6 +1,6 @@
 {
   "country_code": "REPUBLIC_OF_CYPRUS",
-  "total_relationships": 321139,
+  "total_relationships": 321176,
   "total_source_domains": 9343,
   "top_source_domains": [
     {
@@ -207,11 +207,11 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 91742
+      "count": 91766
     },
     {
       "domain": "googleapis.com",
-      "count": 76031
+      "count": 76057
     },
     {
       "domain": "sachsen.de",
@@ -223,11 +223,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 53220
+      "count": 53222
     },
     {
       "domain": "youtube.com",
-      "count": 50374
+      "count": 50382
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -235,19 +235,19 @@
     },
     {
       "domain": "google.com",
-      "count": 43356
+      "count": 43365
     },
     {
       "domain": "twitter.com",
-      "count": 42723
+      "count": 42730
     },
     {
       "domain": "linkedin.com",
-      "count": 37457
+      "count": 37459
     },
     {
       "domain": "googletagmanager.com",
-      "count": 35493
+      "count": 35501
     },
     {
       "domain": "krakow.pl",
@@ -279,11 +279,11 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 22686
+      "count": 22694
     },
     {
       "domain": "jsdelivr.net",
-      "count": 22360
+      "count": 22362
     },
     {
       "domain": "bayern.de",
@@ -291,7 +291,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 19522
+      "count": 19532
     },
     {
       "domain": "esteri.it",
@@ -319,7 +319,7 @@
     },
     {
       "domain": "fontawesome.com",
-      "count": 11099
+      "count": 11100
     },
     {
       "domain": "admin.ch",
@@ -359,7 +359,7 @@
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 8399
+      "count": 8402
     },
     {
       "domain": "uni.opole.pl",
@@ -375,7 +375,7 @@
     },
     {
       "domain": "cqc.org.uk",
-      "count": 7926
+      "count": 7927
     },
     {
       "domain": "paris.fr",
@@ -399,7 +399,7 @@
     },
     {
       "domain": "www.nhs.uk",
-      "count": 6459
+      "count": 6460
     },
     {
       "domain": "steiermark.at",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 165565,
+    "editorial_link": 165596,
     "form_destination": 21417,
-    "image_or_media_dependency": 33667,
-    "script_dependency": 51146,
-    "stylesheet_dependency": 40924,
-    "font_or_preload_dependency": 8420
+    "image_or_media_dependency": 33668,
+    "script_dependency": 51148,
+    "stylesheet_dependency": 40926,
+    "font_or_preload_dependency": 8421
   },
-  "generated_at": "2026-10-11T12:59:29.737262+00:00"
+  "generated_at": "2026-10-11T22:21:21.003519+00:00"
 }

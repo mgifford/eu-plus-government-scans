@@ -215,7 +215,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 7798
+      "count": 7799
     },
     {
       "domain": "cultura.gov.it",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 6180
+      "count": 6182
     },
     {
       "domain": "twitter.com",
@@ -231,7 +231,7 @@
     },
     {
       "domain": "agid.gov.it",
-      "count": 5030
+      "count": 5032
     },
     {
       "domain": "instagram.com",
@@ -243,7 +243,7 @@
     },
     {
       "domain": "regione.lombardia.it",
-      "count": 3107
+      "count": 3109
     },
     {
       "domain": "regione.emilia-romagna.it",
@@ -414,5 +414,5 @@
     "form_destination": 1460,
     "font_or_preload_dependency": 259
   },
-  "generated_at": "2026-10-11T12:59:28.486220+00:00"
+  "generated_at": "2026-10-11T22:21:20.178232+00:00"
 }

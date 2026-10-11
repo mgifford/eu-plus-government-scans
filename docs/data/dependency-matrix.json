@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-11T12:59:34.182720+00:00",
+  "generated_at": "2026-10-11T22:21:24.286416+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -173,7 +173,7 @@
     {
       "service": "googleapis.com",
       "countries": 32,
-      "domains": 4438
+      "domains": 4439
     },
     {
       "service": "googletagmanager.com",
@@ -183,7 +183,7 @@
     {
       "service": "gstatic.com",
       "countries": 32,
-      "domains": 1724
+      "domains": 1725
     },
     {
       "service": "jsdelivr.net",
@@ -248,7 +248,7 @@
     {
       "service": "addtoany.com",
       "countries": 21,
-      "domains": 177
+      "domains": 178
     },
     {
       "service": "arcgis.com",
@@ -436,7 +436,7 @@
       "country_code": "POLAND",
       "country": "Poland",
       "service": "googleapis.com",
-      "domains": 1478,
+      "domains": 1479,
       "scanned_domains": 2439,
       "percent": 60.6
     },
@@ -452,9 +452,9 @@
       "country_code": "POLAND",
       "country": "Poland",
       "service": "gstatic.com",
-      "domains": 506,
+      "domains": 507,
       "scanned_domains": 2439,
-      "percent": 20.7
+      "percent": 20.8
     },
     {
       "country_code": "POLAND",
@@ -556,9 +556,9 @@
       "country_code": "POLAND",
       "country": "Poland",
       "service": "addtoany.com",
-      "domains": 23,
+      "domains": 24,
       "scanned_domains": 2439,
-      "percent": 0.9
+      "percent": 1.0
     },
     {
       "country_code": "POLAND",
