@@ -5,12 +5,12 @@ layout: page
 
 <!-- LIGHTHOUSE_STATS_START -->
 
-_Stats as of 2026-10-11 22:40 UTC — last scan: 2026-10-11_
+_Stats as of 2026-10-12 06:51 UTC — last scan: 2026-10-12_
 
-**510** scan batches run
+**515** scan batches run
 
-**67,058** of **87,696** available pages audited (**76.5%** coverage)
-**51,356** successful audits (**76.6%** of audited)
+**67,332** of **87,696** available pages audited (**76.8%** coverage)
+**51,548** successful audits (**76.6%** of audited)
 
 **Overall average Lighthouse scores** (0–100 scale):
 
@@ -25,7 +25,7 @@ _Stats as of 2026-10-11 22:40 UTC — last scan: 2026-10-11_
 | Country | Audited | Available | Perf | A11y | Best Practices | SEO | Last Scan |
 |---------|--------:|----------:|:----:|:----:|:--------------:|:---:|-----------|
 | Austria | 822 | 822 | 88 | 90 | 91 | 89 | 2026-09-13 |
-| Belgium | 1,129 | 1,329 | 87 | 91 | 91 | 90 | 2026-09-18 |
+| Belgium | 1,329 | 1,329 | 87 | 91 | 91 | 90 | 2026-10-12 |
 | Bulgaria | 353 | 353 | 86 | 81 | 88 | 88 | 2026-10-07 |
 | Canada | 4,469 | 4,469 | 93 | 90 | 88 | 88 | 2026-10-11 |
 | Croatia | 257 | 257 | 91 | 72 | 92 | 90 | 2026-10-09 |
@@ -47,15 +47,15 @@ _Stats as of 2026-10-11 22:40 UTC — last scan: 2026-10-11_
 | Netherlands | 945 | 945 | 92 | 94 | 94 | 88 | 2026-10-10 |
 | Norway | 249 | 249 | 91 | 93 | 92 | 89 | 2026-09-15 |
 | Poland | 8,194 | 14,951 | 87 | 86 | 88 | 90 | 2026-10-11 |
-| Portugal | 3,508 | 3,508 | 84 | 84 | 86 | 86 | 2026-10-11 |
+| Portugal | 3,508 | 3,508 | 84 | 84 | 86 | 86 | 2026-10-12 |
 | Cyprus | 29 | 29 | 81 | 86 | 83 | 85 | 2026-09-23 |
 | Romania | 807 | 807 | 87 | 78 | 90 | 84 | 2026-10-11 |
 | Slovakia | 442 | 442 | 90 | 87 | 90 | 88 | 2026-09-26 |
 | Slovenia | 214 | 214 | 87 | 80 | 89 | 85 | 2026-09-24 |
-| Spain | 6,091 | 6,091 | 83 | 79 | 80 | 84 | 2026-10-11 |
+| Spain | 6,091 | 6,091 | 83 | 79 | 80 | 84 | 2026-10-12 |
 | Sweden | 1,702 | 1,702 | 90 | 93 | 93 | 87 | 2026-10-11 |
-| Switzerland | 2,123 | 2,123 | 85 | 91 | 96 | 87 | 2026-10-11 |
-| United Kingdom | 8,420 | 19,511 | 90 | 93 | 91 | 85 | 2026-10-11 |
+| Switzerland | 2,123 | 2,123 | 85 | 91 | 96 | 87 | 2026-10-12 |
+| United Kingdom | 8,494 | 19,511 | 90 | 93 | 91 | 85 | 2026-10-12 |
 
 > Scores are averages across all successfully audited URLs, displayed as 0–100 (Lighthouse stores scores as 0.0–1.0 internally).
 

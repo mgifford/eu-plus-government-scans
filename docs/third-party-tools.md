@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-10-11 22:39 UTC — last scan: 2026-10-11_
+_Stats as of 2026-10-12 06:51 UTC — last scan: 2026-10-11_
 
-**353** scan batches run
+**354** scan batches run
 
 **87,690** of **87,696** available pages scanned (**100.0%** coverage)
-**80,928** of **87,690** scanned pages were reachable (**92.3%**)
-**38,082** reachable pages loaded at least one third-party script (**47.1%** of reachable)
-**46,739** known third-party service loads identified
+**80,948** of **87,690** scanned pages were reachable (**92.3%**)
+**38,089** reachable pages loaded at least one third-party script (**47.1%** of reachable)
+**46,740** known third-party service loads identified
 **26** unique known services across **17** categories
 
 ---
@@ -31,7 +31,7 @@ _Stats as of 2026-10-11 22:39 UTC — last scan: 2026-10-11_
 | Estonia | 401 | 401 | 385 | 135 | 120 | 35.1 | 31.2 | 2026-09-25 |
 | Finland | 199 | 199 | 189 | 47 | 26 | 24.9 | 13.8 | 2026-09-25 |
 | France | 10,009 | 10,009 | 9,159 | 4,205 | 2,439 | 45.9 | 26.6 | 2026-10-10 |
-| Germany | 6,599 | 6,599 | 6,366 | 1,690 | 488 | 26.5 | 7.7 | 2026-10-09 |
+| Germany | 6,599 | 6,599 | 6,386 | 1,697 | 489 | 26.6 | 7.7 | 2026-10-11 |
 | Greece | 1,752 | 1,752 | 1,640 | 814 | 1,136 | 49.6 | 69.3 | 2026-10-02 |
 | Hungary | 392 | 392 | 296 | 132 | 200 | 44.6 | 67.6 | 2026-09-25 |
 | Iceland | 145 | 145 | 143 | 78 | 45 | 54.5 | 31.5 | 2026-09-26 |
@@ -64,7 +64,7 @@ _Stats as of 2026-10-11 22:39 UTC — last scan: 2026-10-11_
 |--:|---------|------:|
 | 1 | Google Analytics (GA4) | **8,680** |
 | 2 | cdnjs (Cloudflare CDN) | **7,613** |
-| 3 | jsDelivr CDN | **6,463** |
+| 3 | jsDelivr CDN | **6,464** |
 | 4 | Google reCAPTCHA | **4,895** |
 | 5 | Google Tag Manager | **4,160** |
 | 6 | Google Hosted Libraries | **3,240** |
@@ -89,7 +89,7 @@ _Stats as of 2026-10-11 22:39 UTC — last scan: 2026-10-11_
 |--:|---------|----------------:|------------------------------:|
 | 1 | Google Analytics (GA4) | **8,452** | **45.5%** |
 | 2 | Google reCAPTCHA | **4,610** | **24.8%** |
-| 3 | jsDelivr CDN | **4,376** | **23.6%** |
+| 3 | jsDelivr CDN | **4,377** | **23.6%** |
 | 4 | cdnjs (Cloudflare CDN) | **3,988** | **21.5%** |
 | 5 | Google Tag Manager | **3,967** | **21.4%** |
 | 6 | Google Hosted Libraries | **2,917** | **15.7%** |
@@ -112,7 +112,7 @@ _Stats as of 2026-10-11 22:39 UTC — last scan: 2026-10-11_
 
 | # | Category | Loads |
 |--:|----------|------:|
-| 1 | CDN | **20,253** |
+| 1 | CDN | **20,254** |
 | 2 | Analytics | **9,788** |
 | 3 | JavaScript Library | **6,021** |
 | 4 | Security | **5,111** |
@@ -134,7 +134,7 @@ Infrastructure-heavy categories (CDNs, core libraries, and UI assets):
 
 | # | Infrastructure Category | Loads |
 |--:|--------------------------|------:|
-| 1 | CDN | **20,253** |
+| 1 | CDN | **20,254** |
 | 2 | JavaScript Library | **6,021** |
 | 3 | Icon Library | **1,899** |
 | 4 | UI Framework | **944** |
