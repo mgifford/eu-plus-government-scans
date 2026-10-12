@@ -223,7 +223,7 @@
     },
     {
       "domain": "twitter.com",
-      "count": 3805
+      "count": 3806
     },
     {
       "domain": "youtube.com",
@@ -275,7 +275,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 1407
+      "count": 1408
     },
     {
       "domain": "educativa.com",
@@ -307,7 +307,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 784
+      "count": 789
     },
     {
       "domain": "carm.es",
@@ -339,7 +339,7 @@
     },
     {
       "domain": "insuit.net",
-      "count": 629
+      "count": 630
     },
     {
       "domain": "jsdelivr.net",
@@ -414,5 +414,5 @@
     "form_destination": 1439,
     "font_or_preload_dependency": 153
   },
-  "generated_at": "2026-10-11T22:21:21.288162+00:00"
+  "generated_at": "2026-10-12T05:19:06.950648+00:00"
 }
