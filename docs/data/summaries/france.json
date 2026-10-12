@@ -1,6 +1,6 @@
 {
   "country_code": "FRANCE",
-  "total_relationships": 30704,
+  "total_relationships": 30705,
   "total_source_domains": 671,
   "top_source_domains": [
     {
@@ -239,7 +239,7 @@
     },
     {
       "domain": "data.gouv.fr",
-      "count": 4982
+      "count": 4985
     },
     {
       "domain": "twitter.com",
@@ -251,11 +251,11 @@
     },
     {
       "domain": "legifrance.gouv.fr",
-      "count": 4294
+      "count": 4297
     },
     {
       "domain": "youtube.com",
-      "count": 4282
+      "count": 4283
     },
     {
       "domain": "developpement-durable.gouv.fr",
@@ -263,11 +263,11 @@
     },
     {
       "domain": "github.com",
-      "count": 3361
+      "count": 3364
     },
     {
       "domain": "info.gouv.fr",
-      "count": 2671
+      "count": 2674
     },
     {
       "domain": "education.gouv.fr",
@@ -275,7 +275,7 @@
     },
     {
       "domain": "service-public.fr",
-      "count": 2415
+      "count": 2418
     },
     {
       "domain": "rennes.fr",
@@ -303,7 +303,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 1815
+      "count": 1818
     },
     {
       "domain": "cloudflare.com",
@@ -408,11 +408,11 @@
   ],
   "relationship_types": {
     "editorial_link": 16072,
-    "script_dependency": 4567,
+    "script_dependency": 4568,
     "stylesheet_dependency": 4089,
     "image_or_media_dependency": 3560,
     "form_destination": 1715,
     "font_or_preload_dependency": 701
   },
-  "generated_at": "2026-10-12T05:19:06.274247+00:00"
+  "generated_at": "2026-10-12T15:20:48.091158+00:00"
 }

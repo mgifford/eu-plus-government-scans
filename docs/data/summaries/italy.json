@@ -1,6 +1,6 @@
 {
   "country_code": "ITALY",
-  "total_relationships": 16398,
+  "total_relationships": 16401,
   "total_source_domains": 153,
   "top_source_domains": [
     {
@@ -85,7 +85,7 @@
     },
     {
       "domain": "comune.torino.it",
-      "count": 1359
+      "count": 1368
     },
     {
       "domain": "comune.messina.it",
@@ -223,11 +223,11 @@
     },
     {
       "domain": "youtube.com",
-      "count": 6182
+      "count": 6183
     },
     {
       "domain": "twitter.com",
-      "count": 6109
+      "count": 6110
     },
     {
       "domain": "agid.gov.it",
@@ -363,7 +363,7 @@
     },
     {
       "domain": "comune.torino.it",
-      "count": 734
+      "count": 739
     },
     {
       "domain": "difesa.it",
@@ -408,11 +408,11 @@
   ],
   "relationship_types": {
     "script_dependency": 2630,
-    "editorial_link": 7645,
+    "editorial_link": 7648,
     "image_or_media_dependency": 2069,
     "stylesheet_dependency": 2335,
     "form_destination": 1460,
     "font_or_preload_dependency": 259
   },
-  "generated_at": "2026-10-12T05:19:07.146450+00:00"
+  "generated_at": "2026-10-12T15:20:48.738679+00:00"
 }

@@ -128,8 +128,8 @@
   "FRANCE": {
     "total_urls": 10009,
     "attempted": 10009,
-    "successful": 9018,
-    "failed": 991,
+    "successful": 9020,
+    "failed": 989,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 0
@@ -155,8 +155,8 @@
   "PORTUGAL": {
     "total_urls": 3508,
     "attempted": 3508,
-    "successful": 3091,
-    "failed": 417,
+    "successful": 3088,
+    "failed": 420,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 0
@@ -173,11 +173,11 @@
     "never_scanned": 0,
     "stale_31d": 0
   },
-  "SPAIN": {
-    "total_urls": 6091,
-    "attempted": 6091,
-    "successful": 5091,
-    "failed": 1000,
+  "ITALY": {
+    "total_urls": 5351,
+    "attempted": 5351,
+    "successful": 4783,
+    "failed": 568,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 0
@@ -200,11 +200,11 @@
     "never_scanned": 0,
     "stale_31d": 0
   },
-  "ITALY": {
-    "total_urls": 5351,
-    "attempted": 5351,
-    "successful": 4781,
-    "failed": 570,
+  "SPAIN": {
+    "total_urls": 6091,
+    "attempted": 6091,
+    "successful": 5092,
+    "failed": 999,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 0
@@ -239,11 +239,11 @@
     "never_scanned": 0,
     "stale_31d": 0
   },
-  "ROMANIA": {
-    "total_urls": 807,
-    "attempted": 807,
-    "successful": 344,
-    "failed": 463,
+  "SWEDEN": {
+    "total_urls": 1702,
+    "attempted": 1702,
+    "successful": 1610,
+    "failed": 92,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 0
@@ -251,11 +251,11 @@
   "POLAND": {
     "total_urls": 14951,
     "attempted": 14951,
-    "successful": 13572,
-    "failed": 1379,
+    "successful": 13588,
+    "failed": 1363,
     "skipped": 0,
     "never_scanned": 0,
-    "stale_31d": 1802
+    "stale_31d": 1365
   },
   "ESTONIA": {
     "total_urls": 401,
@@ -266,11 +266,11 @@
     "never_scanned": 0,
     "stale_31d": 0
   },
-  "SWEDEN": {
-    "total_urls": 1702,
-    "attempted": 1702,
-    "successful": 1606,
-    "failed": 96,
+  "ROMANIA": {
+    "total_urls": 807,
+    "attempted": 807,
+    "successful": 344,
+    "failed": 463,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 0

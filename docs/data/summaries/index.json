@@ -25,8 +25,8 @@
     "file": "belgium.json"
   },
   "CANADA": {
-    "total_relationships": 321191,
-    "total_source_domains": 9344,
+    "total_relationships": 321190,
+    "total_source_domains": 9343,
     "file": "canada.json"
   },
   "LITHUANIA": {
@@ -70,7 +70,7 @@
     "file": "malta.json"
   },
   "FRANCE": {
-    "total_relationships": 30704,
+    "total_relationships": 30705,
     "total_source_domains": 671,
     "file": "france.json"
   },
@@ -90,8 +90,8 @@
     "file": "portugal.json"
   },
   "REPUBLIC_OF_CYPRUS": {
-    "total_relationships": 321191,
-    "total_source_domains": 9344,
+    "total_relationships": 321190,
+    "total_source_domains": 9343,
     "file": "republic_of_cyprus.json"
   },
   "NETHERLANDS": {
@@ -99,10 +99,10 @@
     "total_source_domains": 73,
     "file": "netherlands.json"
   },
-  "SPAIN": {
-    "total_relationships": 16241,
-    "total_source_domains": 238,
-    "file": "spain.json"
+  "ITALY": {
+    "total_relationships": 16401,
+    "total_source_domains": 153,
+    "file": "italy.json"
   },
   "SLOVENIA": {
     "total_relationships": 898,
@@ -114,10 +114,10 @@
     "total_source_domains": 54,
     "file": "czechia.json"
   },
-  "ITALY": {
-    "total_relationships": 16398,
-    "total_source_domains": 153,
-    "file": "italy.json"
+  "SPAIN": {
+    "total_relationships": 16241,
+    "total_source_domains": 238,
+    "file": "spain.json"
   },
   "BULGARIA": {
     "total_relationships": 1772,
@@ -130,8 +130,8 @@
     "file": "latvia.json"
   },
   "UNITED_KINGDOM_UK": {
-    "total_relationships": 321191,
-    "total_source_domains": 9344,
+    "total_relationships": 321190,
+    "total_source_domains": 9343,
     "file": "united_kingdom_uk.json"
   },
   "SLOVAKIA": {
@@ -139,14 +139,14 @@
     "total_source_domains": 21,
     "file": "slovakia.json"
   },
-  "ROMANIA": {
-    "total_relationships": 1631,
-    "total_source_domains": 24,
-    "file": "romania.json"
+  "SWEDEN": {
+    "total_relationships": 6229,
+    "total_source_domains": 245,
+    "file": "sweden.json"
   },
   "POLAND": {
-    "total_relationships": 62195,
-    "total_source_domains": 2494,
+    "total_relationships": 62182,
+    "total_source_domains": 2493,
     "file": "poland.json"
   }
 }
