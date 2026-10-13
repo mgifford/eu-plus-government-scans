@@ -128,8 +128,8 @@
   "PORTUGAL": {
     "total_urls": 3508,
     "attempted": 3508,
-    "successful": 3085,
-    "failed": 423,
+    "successful": 3088,
+    "failed": 420,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 0
@@ -155,8 +155,8 @@
   "FRANCE": {
     "total_urls": 10009,
     "attempted": 10009,
-    "successful": 9008,
-    "failed": 1001,
+    "successful": 9010,
+    "failed": 999,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 0
@@ -176,8 +176,8 @@
   "ITALY": {
     "total_urls": 5351,
     "attempted": 5351,
-    "successful": 4783,
-    "failed": 568,
+    "successful": 4782,
+    "failed": 569,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 0
@@ -203,8 +203,8 @@
   "SPAIN": {
     "total_urls": 6091,
     "attempted": 6091,
-    "successful": 5103,
-    "failed": 988,
+    "successful": 5101,
+    "failed": 990,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 0
@@ -239,11 +239,11 @@
     "never_scanned": 0,
     "stale_31d": 0
   },
-  "SWEDEN": {
-    "total_urls": 1702,
-    "attempted": 1702,
-    "successful": 1615,
-    "failed": 87,
+  "LUXEMBOURG": {
+    "total_urls": 573,
+    "attempted": 573,
+    "successful": 515,
+    "failed": 58,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 0
@@ -251,11 +251,11 @@
   "POLAND": {
     "total_urls": 14951,
     "attempted": 14951,
-    "successful": 13559,
-    "failed": 1392,
+    "successful": 13517,
+    "failed": 1434,
     "skipped": 0,
     "never_scanned": 0,
-    "stale_31d": 450
+    "stale_31d": 0
   },
   "ESTONIA": {
     "total_urls": 401,
@@ -266,11 +266,11 @@
     "never_scanned": 0,
     "stale_31d": 0
   },
-  "LUXEMBOURG": {
-    "total_urls": 573,
-    "attempted": 573,
-    "successful": 515,
-    "failed": 58,
+  "SWEDEN": {
+    "total_urls": 1702,
+    "attempted": 1702,
+    "successful": 1615,
+    "failed": 87,
     "skipped": 0,
     "never_scanned": 0,
     "stale_31d": 0

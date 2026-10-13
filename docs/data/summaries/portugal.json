@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "googleapis.com",
-      "count": 3416
+      "count": 3419
     },
     {
       "domain": "facebook.com",
@@ -267,19 +267,19 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 1073
+      "count": 1076
     },
     {
       "domain": "presidencia.pt",
       "count": 1048
     },
     {
-      "domain": "linkedin.com",
-      "count": 846
+      "domain": "gstatic.com",
+      "count": 848
     },
     {
-      "domain": "gstatic.com",
-      "count": 845
+      "domain": "linkedin.com",
+      "count": 846
     },
     {
       "domain": "cm-porto.pt",
@@ -414,5 +414,5 @@
     "form_destination": 755,
     "image_or_media_dependency": 1137
   },
-  "generated_at": "2026-10-13T14:27:36.257611+00:00"
+  "generated_at": "2026-10-13T23:03:31.045831+00:00"
 }

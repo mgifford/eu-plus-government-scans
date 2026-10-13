@@ -1,6 +1,6 @@
 {
   "country_code": "FRANCE",
-  "total_relationships": 30705,
+  "total_relationships": 30704,
   "total_source_domains": 671,
   "top_source_domains": [
     {
@@ -211,7 +211,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 8800
+      "count": 8796
     },
     {
       "domain": "haute-garonne.fr",
@@ -239,7 +239,7 @@
     },
     {
       "domain": "data.gouv.fr",
-      "count": 4985
+      "count": 4987
     },
     {
       "domain": "twitter.com",
@@ -251,11 +251,11 @@
     },
     {
       "domain": "legifrance.gouv.fr",
-      "count": 4297
+      "count": 4299
     },
     {
       "domain": "youtube.com",
-      "count": 4283
+      "count": 4284
     },
     {
       "domain": "developpement-durable.gouv.fr",
@@ -263,11 +263,11 @@
     },
     {
       "domain": "github.com",
-      "count": 3364
+      "count": 3366
     },
     {
       "domain": "info.gouv.fr",
-      "count": 2674
+      "count": 2676
     },
     {
       "domain": "education.gouv.fr",
@@ -275,7 +275,7 @@
     },
     {
       "domain": "service-public.fr",
-      "count": 2418
+      "count": 2420
     },
     {
       "domain": "rennes.fr",
@@ -303,7 +303,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 1818
+      "count": 1820
     },
     {
       "domain": "cloudflare.com",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 16072,
+    "editorial_link": 16071,
     "script_dependency": 4568,
     "stylesheet_dependency": 4089,
     "image_or_media_dependency": 3560,
     "form_destination": 1715,
     "font_or_preload_dependency": 701
   },
-  "generated_at": "2026-10-13T14:27:36.475241+00:00"
+  "generated_at": "2026-10-13T23:03:31.344126+00:00"
 }
