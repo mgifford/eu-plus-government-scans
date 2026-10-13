@@ -9,7 +9,7 @@
     },
     {
       "domain": "public.lu",
-      "count": 5123
+      "count": 5298
     },
     {
       "domain": "uni.lu",
@@ -167,7 +167,7 @@
   "top_target_domains": [
     {
       "domain": "public.lu",
-      "count": 5249
+      "count": 5355
     },
     {
       "domain": "gouvernement.lu",
@@ -175,11 +175,11 @@
     },
     {
       "domain": "facebook.com",
-      "count": 733
+      "count": 741
     },
     {
       "domain": "linkedin.com",
-      "count": 674
+      "count": 679
     },
     {
       "domain": "uni.lu",
@@ -187,7 +187,7 @@
     },
     {
       "domain": "twitter.com",
-      "count": 509
+      "count": 510
     },
     {
       "domain": "bsky.app",
@@ -195,7 +195,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 377
+      "count": 384
     },
     {
       "domain": "etat.lu",
@@ -203,15 +203,15 @@
     },
     {
       "domain": "adobedtm.com",
-      "count": 264
+      "count": 276
     },
     {
       "domain": "youtube.com",
-      "count": 252
+      "count": 259
     },
     {
       "domain": "europa.eu",
-      "count": 213
+      "count": 216
     },
     {
       "domain": "googleapis.com",
@@ -282,6 +282,10 @@
       "count": 57
     },
     {
+      "domain": "readspeaker.com",
+      "count": 57
+    },
+    {
       "domain": "schifflange.lu",
       "count": 56
     },
@@ -334,10 +338,6 @@
       "count": 45
     },
     {
-      "domain": "readspeaker.com",
-      "count": 43
-    },
-    {
       "domain": "petitiounen.lu",
       "count": 42
     },
@@ -374,5 +374,5 @@
     "stylesheet_dependency": 240,
     "font_or_preload_dependency": 29
   },
-  "generated_at": "2026-10-12T15:20:48.230038+00:00"
+  "generated_at": "2026-10-13T01:01:12.928139+00:00"
 }

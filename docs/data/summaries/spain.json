@@ -9,7 +9,7 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 29949
+      "count": 30113
     },
     {
       "domain": "gva.es",
@@ -211,7 +211,7 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 14895
+      "count": 14973
     },
     {
       "domain": "gva.es",
@@ -219,15 +219,15 @@
     },
     {
       "domain": "facebook.com",
-      "count": 4137
+      "count": 4144
     },
     {
       "domain": "twitter.com",
-      "count": 3806
+      "count": 3813
     },
     {
       "domain": "youtube.com",
-      "count": 3418
+      "count": 3423
     },
     {
       "domain": "googleapis.com",
@@ -235,15 +235,15 @@
     },
     {
       "domain": "google.com",
-      "count": 3154
+      "count": 3166
     },
     {
       "domain": "jccm.es",
-      "count": 3098
+      "count": 3113
     },
     {
       "domain": "instagram.com",
-      "count": 2987
+      "count": 2990
     },
     {
       "domain": "aragon.es",
@@ -299,7 +299,7 @@
     },
     {
       "domain": "blogspot.com",
-      "count": 896
+      "count": 899
     },
     {
       "domain": "x.com",
@@ -323,7 +323,7 @@
     },
     {
       "domain": "google.es",
-      "count": 724
+      "count": 728
     },
     {
       "domain": "sanidad.gob.es",
@@ -383,7 +383,7 @@
     },
     {
       "domain": "blogspot.com.es",
-      "count": 417
+      "count": 418
     },
     {
       "domain": "transparencia.gob.es",
@@ -391,18 +391,18 @@
     },
     {
       "domain": "vimeo.com",
-      "count": 398
+      "count": 402
     },
     {
       "domain": "valencia.es",
       "count": 396
     },
     {
-      "domain": "digital.gob.es",
-      "count": 387
+      "domain": "sharethis.com",
+      "count": 390
     },
     {
-      "domain": "sharethis.com",
+      "domain": "digital.gob.es",
       "count": 387
     }
   ],
@@ -414,5 +414,5 @@
     "form_destination": 1439,
     "font_or_preload_dependency": 153
   },
-  "generated_at": "2026-10-12T15:20:48.955755+00:00"
+  "generated_at": "2026-10-13T01:01:13.841764+00:00"
 }

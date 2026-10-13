@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T15:20:51.429250+00:00",
+  "generated_at": "2026-10-13T01:01:17.648753+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -178,12 +178,12 @@
     {
       "service": "googletagmanager.com",
       "countries": 32,
-      "domains": 2788
+      "domains": 2789
     },
     {
       "service": "gstatic.com",
       "countries": 32,
-      "domains": 1725
+      "domains": 1726
     },
     {
       "service": "jsdelivr.net",
@@ -444,7 +444,7 @@
       "country_code": "POLAND",
       "country": "Poland",
       "service": "googletagmanager.com",
-      "domains": 668,
+      "domains": 669,
       "scanned_domains": 2438,
       "percent": 27.4
     },
@@ -452,7 +452,7 @@
       "country_code": "POLAND",
       "country": "Poland",
       "service": "gstatic.com",
-      "domains": 507,
+      "domains": 508,
       "scanned_domains": 2438,
       "percent": 20.8
     },

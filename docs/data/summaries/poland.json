@@ -1,6 +1,6 @@
 {
   "country_code": "POLAND",
-  "total_relationships": 62182,
+  "total_relationships": 62161,
   "total_source_domains": 2493,
   "top_source_domains": [
     {
@@ -108,6 +108,10 @@
       "count": 834
     },
     {
+      "domain": "powiatzdunskowolski.pl",
+      "count": 807
+    },
+    {
       "domain": "wroc.pl",
       "count": 799
     },
@@ -126,10 +130,6 @@
     {
       "domain": "powiatgora.pl",
       "count": 658
-    },
-    {
-      "domain": "powiatzdunskowolski.pl",
-      "count": 651
     },
     {
       "domain": "pyrzyce.um.gov.pl",
@@ -211,11 +211,11 @@
     },
     {
       "domain": "lodz.pl",
-      "count": 27691
+      "count": 27706
     },
     {
       "domain": "googleapis.com",
-      "count": 24496
+      "count": 24558
     },
     {
       "domain": "poznan.pl",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 21906
+      "count": 21984
     },
     {
       "domain": "gdansk.pl",
@@ -231,19 +231,19 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 8759
+      "count": 8781
     },
     {
       "domain": "instagram.com",
-      "count": 8584
+      "count": 8600
     },
     {
       "domain": "youtube.com",
-      "count": 8392
+      "count": 8414
     },
     {
       "domain": "google.com",
-      "count": 8381
+      "count": 8400
     },
     {
       "domain": "uni.opole.pl",
@@ -259,7 +259,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 6110
+      "count": 6135
     },
     {
       "domain": "tarnow.pl",
@@ -267,11 +267,11 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 4189
+      "count": 4193
     },
     {
       "domain": "cloudflare.com",
-      "count": 4035
+      "count": 4038
     },
     {
       "domain": "gdynia.pl",
@@ -279,11 +279,11 @@
     },
     {
       "domain": "www.gov.pl",
-      "count": 3261
+      "count": 3275
     },
     {
       "domain": "twitter.com",
-      "count": 2945
+      "count": 2951
     },
     {
       "domain": "mixbet.radom.pl",
@@ -291,11 +291,11 @@
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 2864
+      "count": 2868
     },
     {
       "domain": "linkedin.com",
-      "count": 2724
+      "count": 2727
     },
     {
       "domain": "fontawesome.com",
@@ -307,15 +307,15 @@
     },
     {
       "domain": "edu.bialystok.pl",
-      "count": 2307
+      "count": 2317
     },
     {
       "domain": "bip.gov.pl",
-      "count": 2051
+      "count": 2053
     },
     {
       "domain": "unpkg.com",
-      "count": 1864
+      "count": 1866
     },
     {
       "domain": "wordpress.org",
@@ -327,11 +327,11 @@
     },
     {
       "domain": "vulcan.net.pl",
-      "count": 1737
+      "count": 1739
     },
     {
       "domain": "edupage.org",
-      "count": 1689
+      "count": 1690
     },
     {
       "domain": "gorzow.pl",
@@ -339,11 +339,11 @@
     },
     {
       "domain": "jquery.com",
-      "count": 1555
+      "count": 1557
     },
     {
       "domain": "epuap.gov.pl",
-      "count": 1464
+      "count": 1485
     },
     {
       "domain": "ursynow.warszawa.pl",
@@ -359,7 +359,7 @@
     },
     {
       "domain": "tiktok.com",
-      "count": 1406
+      "count": 1411
     },
     {
       "domain": "librus.pl",
@@ -367,7 +367,7 @@
     },
     {
       "domain": "policja.pl",
-      "count": 995
+      "count": 996
     },
     {
       "domain": "sopot.pl",
@@ -391,28 +391,28 @@
     },
     {
       "domain": "www.bydgoszcz.pl",
-      "count": 819
+      "count": 820
     },
     {
       "domain": "migam.org",
-      "count": 777
-    },
-    {
-      "domain": "wroc.pl",
-      "count": 771
+      "count": 786
     },
     {
       "domain": "dziennikustaw.gov.pl",
-      "count": 771
+      "count": 776
+    },
+    {
+      "domain": "wroc.pl",
+      "count": 774
     }
   ],
   "relationship_types": {
-    "editorial_link": 33744,
+    "editorial_link": 33721,
     "form_destination": 3334,
     "image_or_media_dependency": 6824,
     "script_dependency": 8779,
     "stylesheet_dependency": 7652,
-    "font_or_preload_dependency": 1849
+    "font_or_preload_dependency": 1851
   },
-  "generated_at": "2026-10-12T15:20:49.621770+00:00"
+  "generated_at": "2026-10-13T01:01:14.671230+00:00"
 }
