@@ -1,15 +1,15 @@
 {
   "country_code": "SPAIN",
-  "total_relationships": 16241,
+  "total_relationships": 16240,
   "total_source_domains": 238,
   "top_source_domains": [
     {
       "domain": "jcyl.es",
-      "count": 36616
+      "count": 37640
     },
     {
       "domain": "castillalamancha.es",
-      "count": 30113
+      "count": 30135
     },
     {
       "domain": "gva.es",
@@ -112,6 +112,10 @@
       "count": 709
     },
     {
+      "domain": "inclusion.gob.es",
+      "count": 657
+    },
+    {
       "domain": "transparencialocal.gob.es",
       "count": 600
     },
@@ -126,10 +130,6 @@
     {
       "domain": "educacionfpydeportes.gob.es",
       "count": 570
-    },
-    {
-      "domain": "inclusion.gob.es",
-      "count": 551
     },
     {
       "domain": "transportes.gob.es",
@@ -207,11 +207,11 @@
   "top_target_domains": [
     {
       "domain": "jcyl.es",
-      "count": 25014
+      "count": 25883
     },
     {
       "domain": "castillalamancha.es",
-      "count": 14973
+      "count": 14983
     },
     {
       "domain": "gva.es",
@@ -219,15 +219,15 @@
     },
     {
       "domain": "facebook.com",
-      "count": 4144
+      "count": 4157
     },
     {
       "domain": "twitter.com",
-      "count": 3813
+      "count": 3822
     },
     {
       "domain": "youtube.com",
-      "count": 3423
+      "count": 3431
     },
     {
       "domain": "googleapis.com",
@@ -235,15 +235,15 @@
     },
     {
       "domain": "google.com",
-      "count": 3166
+      "count": 3167
     },
     {
       "domain": "jccm.es",
-      "count": 3113
+      "count": 3115
     },
     {
       "domain": "instagram.com",
-      "count": 2990
+      "count": 2996
     },
     {
       "domain": "aragon.es",
@@ -258,12 +258,12 @@
       "count": 1795
     },
     {
-      "domain": "caib.es",
-      "count": 1523
+      "domain": "w3.org",
+      "count": 1529
     },
     {
-      "domain": "w3.org",
-      "count": 1485
+      "domain": "caib.es",
+      "count": 1523
     },
     {
       "domain": "googletagmanager.com",
@@ -275,7 +275,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 1408
+      "count": 1415
     },
     {
       "domain": "educativa.com",
@@ -303,11 +303,11 @@
     },
     {
       "domain": "x.com",
-      "count": 872
+      "count": 876
     },
     {
       "domain": "europa.eu",
-      "count": 789
+      "count": 794
     },
     {
       "domain": "carm.es",
@@ -323,15 +323,15 @@
     },
     {
       "domain": "google.es",
-      "count": 728
+      "count": 729
+    },
+    {
+      "domain": "boe.es",
+      "count": 706
     },
     {
       "domain": "sanidad.gob.es",
       "count": 705
-    },
-    {
-      "domain": "boe.es",
-      "count": 704
     },
     {
       "domain": "fontawesome.com",
@@ -339,7 +339,7 @@
     },
     {
       "domain": "insuit.net",
-      "count": 630
+      "count": 634
     },
     {
       "domain": "jsdelivr.net",
@@ -379,7 +379,7 @@
     },
     {
       "domain": "readspeaker.com",
-      "count": 432
+      "count": 440
     },
     {
       "domain": "blogspot.com.es",
@@ -391,7 +391,7 @@
     },
     {
       "domain": "vimeo.com",
-      "count": 402
+      "count": 403
     },
     {
       "domain": "valencia.es",
@@ -402,17 +402,17 @@
       "count": 390
     },
     {
-      "domain": "digital.gob.es",
-      "count": 387
+      "domain": "ilunionaccede.es",
+      "count": 390
     }
   ],
   "relationship_types": {
     "script_dependency": 2331,
     "image_or_media_dependency": 1962,
     "stylesheet_dependency": 1983,
-    "editorial_link": 8373,
+    "editorial_link": 8372,
     "form_destination": 1439,
     "font_or_preload_dependency": 153
   },
-  "generated_at": "2026-10-13T01:01:13.841764+00:00"
+  "generated_at": "2026-10-13T14:27:37.165025+00:00"
 }

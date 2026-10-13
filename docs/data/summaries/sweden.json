@@ -1,6 +1,6 @@
 {
   "country_code": "SWEDEN",
-  "total_relationships": 6229,
+  "total_relationships": 6240,
   "total_source_domains": 245,
   "top_source_domains": [
     {
@@ -211,11 +211,11 @@
     },
     {
       "domain": "facebook.com",
-      "count": 1473
+      "count": 1475
     },
     {
       "domain": "linkedin.com",
-      "count": 1259
+      "count": 1262
     },
     {
       "domain": "instagram.com",
@@ -270,12 +270,12 @@
       "count": 483
     },
     {
-      "domain": "readspeaker.com",
-      "count": 476
+      "domain": "google.com",
+      "count": 477
     },
     {
-      "domain": "google.com",
-      "count": 475
+      "domain": "readspeaker.com",
+      "count": 476
     },
     {
       "domain": "umea.se",
@@ -343,7 +343,7 @@
     },
     {
       "domain": "pts.se",
-      "count": 237
+      "count": 238
     },
     {
       "domain": "kronofogden.se",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 2727,
-    "script_dependency": 1149,
-    "stylesheet_dependency": 875,
-    "form_destination": 493,
-    "image_or_media_dependency": 679,
-    "font_or_preload_dependency": 306
+    "editorial_link": 2737,
+    "script_dependency": 1148,
+    "stylesheet_dependency": 874,
+    "form_destination": 494,
+    "image_or_media_dependency": 680,
+    "font_or_preload_dependency": 307
   },
-  "generated_at": "2026-10-12T15:20:49.519150+00:00"
+  "generated_at": "2026-10-13T14:27:37.772673+00:00"
 }
