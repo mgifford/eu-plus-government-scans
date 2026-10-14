@@ -23,8 +23,8 @@ This file tracks the primary software used in this repository to support securit
 | beautifulsoup4 | pip | `4.12.3` | MIT License | `requirements.txt` | HTML parsing |
 | tenacity | pip | `9.0.0` | Apache 2.0 | `requirements.txt` | Retry handling |
 | wappalyzer-python3 | pip | `>=0.0.11` | GPLv3 | `requirements.txt` | Technology detection (maintained fork of python-Wappalyzer) |
-| pytest | pip | `8.3.4` | MIT | `requirements.txt` | Test runner |
-| pytest-asyncio | pip | `0.25.2` | Apache 2.0 | `requirements.txt` | Async test support |
+| pytest | pip | `9.0.3` | MIT | `requirements.txt` | Test runner |
+| pytest-asyncio | pip | `1.3.0` | Apache 2.0 | `requirements.txt` | Async test support |
 | pytest-mock | pip | `3.14.0` | MIT | `requirements.txt` | Mocking plugin |
 | ruff | pip | `0.9.10` | MIT | `requirements.txt` | Linting |
 | @axe-core/playwright | npm | `4.11.1` | MPL-2.0 | `package.json`, `package-lock.json` | Accessibility smoke tests |
