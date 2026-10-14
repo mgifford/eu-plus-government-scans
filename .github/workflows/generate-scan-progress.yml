@@ -239,6 +239,21 @@ jobs:
             echo "or the database doesn't cover this scanner)._"
           } > docs/pace-report.md
 
+      # Committed scan data grows git history on every bot commit, and history
+      # never shrinks on its own.  Records one size reading per day and warns
+      # on fast weekly growth or on passing an absolute ceiling.  Lower the
+      # ceiling after any history rewrite.  See src/cli/check_repo_size.py.
+      - name: Check repository size growth
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          SIZE_KIB=$(gh api "repos/${GITHUB_REPOSITORY}" --jq .size)
+          python3 -m src.cli.check_repo_size \
+            --size-kib "$SIZE_KIB" \
+            --weekly-limit-mb 50 \
+            --ceiling-mb 900
+
       - name: Commit progress report to repository
         run: |
           # docs/social-media-data.json, docs/accessibility-data.json,
@@ -258,7 +273,8 @@ jobs:
                   docs/lighthouse-results.md \
                   docs/tech-lighthouse.md \
                   docs/data/gov-domains.json \
-                  docs/pace-report.md
+                  docs/pace-report.md \
+                  data/repo-size-history.tsv
           if git diff --staged --quiet; then
             echo "No changes to commit — reports are up to date."
           else

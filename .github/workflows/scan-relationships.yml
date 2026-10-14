@@ -69,6 +69,15 @@ jobs:
             --into data/metadata.db \
             --from-dir data/artifacts
 
+      # Runs commit at most once a day (see "Decide whether to commit data"),
+      # so the newest dataset may exist only in the previous run's artifact.
+      # Start from it; a listing or download failure aborts the job rather
+      # than scanning from stale committed files.
+      - name: Restore relationship data from latest artifact
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: scripts/restore-relationship-data.sh docs/data
+
       - name: Run progressive relationship scan
         run: |
           if [ -n "${{ inputs.country }}" ]; then
@@ -132,7 +141,32 @@ jobs:
           done
           exit $FAILED
 
+      # Every commit of the ~30 MB shards adds to git history, which never
+      # shrinks; at four commits a day that was ~136 MB a month.  Commit at
+      # most once a day.  Runs in between still publish the full dataset as
+      # the relationship-data artifact, which the next run restores.
+      - name: Decide whether to commit data
+        id: decide
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          LAST=$(gh api "repos/${GITHUB_REPOSITORY}/commits?sha=main&path=docs/data/relationships/index.json&per_page=1" \
+            --jq '.[0].commit.committer.date // ""')
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ -z "$LAST" ]; then
+            echo "commit=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          AGE_HOURS=$(( ( $(date -u +%s) - $(date -u -d "$LAST" +%s) ) / 3600 ))
+          echo "Last data commit: $LAST (${AGE_HOURS}h ago)"
+          if [ "$AGE_HOURS" -ge 20 ]; then
+            echo "commit=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "commit=false" >> "$GITHUB_OUTPUT"
+            echo "Skipping commit; the relationship-data artifact carries this run's results."
+          fi
+
       - name: Commit updated data files
+        if: steps.decide.outputs.commit == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"

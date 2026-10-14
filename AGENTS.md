@@ -232,6 +232,31 @@ rather than writing a single unbounded file.  Two properties matter:
   threshold, so the problem surfaces as a red job rather than as a rejected push
   inside a `[skip ci]` commit that nobody is watching.
 
+Sharding keeps each file under the limit but does not stop **history** growing:
+every commit of a changed shard adds a new version, and git history never shrinks
+on its own.  At four commits a day the shards added ~136 MB a month.  Two
+mechanisms now bound that:
+
+- **Commit at most once a day.**  `scan-relationships.yml` commits only when the
+  last data commit is 20+ hours old (or on manual dispatch).  Runs in between
+  hand their output to the next run through the `relationship-data` artifact,
+  which `scripts/restore-relationship-data.sh` restores before scanning.  The
+  restore aborts on any listing or download failure, because scanning from the
+  older committed files and then uploading would overwrite newer results.  A
+  commit newer than the artifact (for example a deliberate reset) wins.
+- **Growth watchdog.**  `generate-scan-progress.yml` records the server-side repo
+  size once a day in `data/repo-size-history.tsv` (`src/cli/check_repo_size.py`)
+  and warns on more than 50 MB of growth in a week or on passing a ceiling.
+  Lower the ceiling after any history rewrite.
+
+A one-time history rewrite on 2026-10-14 (approved by the maintainer) removed
+every historical version of files no longer tracked, mainly
+`docs/third-party-tools-data.json`, `docs/social-media-data.json`,
+`docs/data/relationships.jsonl`, `docs/technology-data.json` and
+`docs/accessibility-data.json`, plus all superseded versions of the generated
+`docs/domains.md`.  The tree at `main` was unchanged.  Any further rewrite or
+force push to `main` needs explicit maintainer approval.
+
 ---
 
 - Original seed files (`*.toon`) are version-controlled
