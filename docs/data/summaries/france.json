@@ -168,12 +168,12 @@
       "count": 1301
     },
     {
-      "domain": "puy-de-dome.fr",
-      "count": 1273
+      "domain": "gard.fr",
+      "count": 1283
     },
     {
-      "domain": "gard.fr",
-      "count": 1254
+      "domain": "puy-de-dome.fr",
+      "count": 1273
     },
     {
       "domain": "montpellier3m.fr",
@@ -211,7 +211,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 8796
+      "count": 8798
     },
     {
       "domain": "haute-garonne.fr",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 5986
+      "count": 5988
     },
     {
       "domain": "skolengo.com",
@@ -231,7 +231,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 5303
+      "count": 5305
     },
     {
       "domain": "cnam.fr",
@@ -247,7 +247,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 4327
+      "count": 4328
     },
     {
       "domain": "legifrance.gouv.fr",
@@ -295,7 +295,7 @@
     },
     {
       "domain": "google.com",
-      "count": 1992
+      "count": 1994
     },
     {
       "domain": "culture.gouv.fr",
@@ -307,7 +307,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 1795
+      "count": 1798
     },
     {
       "domain": "loire-atlantique.fr",
@@ -323,7 +323,7 @@
     },
     {
       "domain": "x.com",
-      "count": 1569
+      "count": 1571
     },
     {
       "domain": "defense.gouv.fr",
@@ -414,5 +414,5 @@
     "form_destination": 1715,
     "font_or_preload_dependency": 701
   },
-  "generated_at": "2026-10-13T23:03:31.344126+00:00"
+  "generated_at": "2026-10-14T21:22:35.877822+00:00"
 }

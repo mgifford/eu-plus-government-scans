@@ -219,15 +219,15 @@
     },
     {
       "domain": "facebook.com",
-      "count": 4157
+      "count": 4158
     },
     {
       "domain": "twitter.com",
-      "count": 3822
+      "count": 3823
     },
     {
       "domain": "youtube.com",
-      "count": 3431
+      "count": 3432
     },
     {
       "domain": "googleapis.com",
@@ -243,7 +243,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 2996
+      "count": 2997
     },
     {
       "domain": "aragon.es",
@@ -275,7 +275,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 1415
+      "count": 1416
     },
     {
       "domain": "educativa.com",
@@ -414,5 +414,5 @@
     "form_destination": 1439,
     "font_or_preload_dependency": 153
   },
-  "generated_at": "2026-10-13T23:03:32.149830+00:00"
+  "generated_at": "2026-10-14T21:22:35.050134+00:00"
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T23:03:36.096343+00:00",
+  "generated_at": "2026-10-14T21:22:39.007142+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -16,7 +16,7 @@
     {
       "country_code": "POLAND",
       "country": "Poland",
-      "scanned_domains": 2439
+      "scanned_domains": 2443
     },
     {
       "country_code": "FRANCE",
@@ -173,22 +173,22 @@
     {
       "service": "googleapis.com",
       "countries": 32,
-      "domains": 4436
+      "domains": 4439
     },
     {
       "service": "googletagmanager.com",
       "countries": 32,
-      "domains": 2788
+      "domains": 2789
     },
     {
       "service": "gstatic.com",
       "countries": 32,
-      "domains": 1725
+      "domains": 1726
     },
     {
       "service": "jsdelivr.net",
       "countries": 32,
-      "domains": 1159
+      "domains": 1160
     },
     {
       "service": "fontawesome.com",
@@ -233,7 +233,7 @@
     {
       "service": "facebook.com",
       "countries": 23,
-      "domains": 216
+      "domains": 217
     },
     {
       "service": "facebook.net",
@@ -436,40 +436,40 @@
       "country_code": "POLAND",
       "country": "Poland",
       "service": "googleapis.com",
-      "domains": 1476,
-      "scanned_domains": 2439,
+      "domains": 1479,
+      "scanned_domains": 2443,
       "percent": 60.5
     },
     {
       "country_code": "POLAND",
       "country": "Poland",
       "service": "googletagmanager.com",
-      "domains": 668,
-      "scanned_domains": 2439,
+      "domains": 669,
+      "scanned_domains": 2443,
       "percent": 27.4
     },
     {
       "country_code": "POLAND",
       "country": "Poland",
       "service": "gstatic.com",
-      "domains": 507,
-      "scanned_domains": 2439,
+      "domains": 508,
+      "scanned_domains": 2443,
       "percent": 20.8
     },
     {
       "country_code": "POLAND",
       "country": "Poland",
       "service": "jsdelivr.net",
-      "domains": 186,
-      "scanned_domains": 2439,
-      "percent": 7.6
+      "domains": 187,
+      "scanned_domains": 2443,
+      "percent": 7.7
     },
     {
       "country_code": "POLAND",
       "country": "Poland",
       "service": "fontawesome.com",
       "domains": 143,
-      "scanned_domains": 2439,
+      "scanned_domains": 2443,
       "percent": 5.9
     },
     {
@@ -477,23 +477,23 @@
       "country": "Poland",
       "service": "google.com",
       "domains": 382,
-      "scanned_domains": 2439,
-      "percent": 15.7
+      "scanned_domains": 2443,
+      "percent": 15.6
     },
     {
       "country_code": "POLAND",
       "country": "Poland",
       "service": "cloudflare.com",
       "domains": 243,
-      "scanned_domains": 2439,
-      "percent": 10.0
+      "scanned_domains": 2443,
+      "percent": 9.9
     },
     {
       "country_code": "POLAND",
       "country": "Poland",
       "service": "jquery.com",
       "domains": 130,
-      "scanned_domains": 2439,
+      "scanned_domains": 2443,
       "percent": 5.3
     },
     {
@@ -501,7 +501,7 @@
       "country": "Poland",
       "service": "unpkg.com",
       "domains": 64,
-      "scanned_domains": 2439,
+      "scanned_domains": 2443,
       "percent": 2.6
     },
     {
@@ -509,7 +509,7 @@
       "country": "Poland",
       "service": "bootstrapcdn.com",
       "domains": 158,
-      "scanned_domains": 2439,
+      "scanned_domains": 2443,
       "percent": 6.5
     },
     {
@@ -517,7 +517,7 @@
       "country": "Poland",
       "service": "typekit.net",
       "domains": 29,
-      "scanned_domains": 2439,
+      "scanned_domains": 2443,
       "percent": 1.2
     },
     {
@@ -525,23 +525,23 @@
       "country": "Poland",
       "service": "cookiebot.com",
       "domains": 26,
-      "scanned_domains": 2439,
+      "scanned_domains": 2443,
       "percent": 1.1
     },
     {
       "country_code": "POLAND",
       "country": "Poland",
       "service": "facebook.com",
-      "domains": 118,
-      "scanned_domains": 2439,
-      "percent": 4.8
+      "domains": 119,
+      "scanned_domains": 2443,
+      "percent": 4.9
     },
     {
       "country_code": "POLAND",
       "country": "Poland",
       "service": "facebook.net",
       "domains": 68,
-      "scanned_domains": 2439,
+      "scanned_domains": 2443,
       "percent": 2.8
     },
     {
@@ -549,7 +549,7 @@
       "country": "Poland",
       "service": "amazonaws.com",
       "domains": 10,
-      "scanned_domains": 2439,
+      "scanned_domains": 2443,
       "percent": 0.4
     },
     {
@@ -557,7 +557,7 @@
       "country": "Poland",
       "service": "addtoany.com",
       "domains": 24,
-      "scanned_domains": 2439,
+      "scanned_domains": 2443,
       "percent": 1.0
     },
     {
@@ -565,7 +565,7 @@
       "country": "Poland",
       "service": "arcgis.com",
       "domains": 2,
-      "scanned_domains": 2439,
+      "scanned_domains": 2443,
       "percent": 0.1
     },
     {
@@ -573,7 +573,7 @@
       "country": "Poland",
       "service": "cdn-cookieyes.com",
       "domains": 71,
-      "scanned_domains": 2439,
+      "scanned_domains": 2443,
       "percent": 2.9
     },
     {
@@ -581,7 +581,7 @@
       "country": "Poland",
       "service": "fbcdn.net",
       "domains": 54,
-      "scanned_domains": 2439,
+      "scanned_domains": 2443,
       "percent": 2.2
     },
     {
@@ -589,7 +589,7 @@
       "country": "Poland",
       "service": "mapbox.com",
       "domains": 11,
-      "scanned_domains": 2439,
+      "scanned_domains": 2443,
       "percent": 0.5
     },
     {
