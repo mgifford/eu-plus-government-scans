@@ -1,6 +1,6 @@
 {
   "country_code": "POLAND",
-  "total_relationships": 62215,
+  "total_relationships": 62212,
   "total_source_domains": 2499,
   "top_source_domains": [
     {
@@ -37,7 +37,7 @@
     },
     {
       "domain": "gdynia.pl",
-      "count": 9462
+      "count": 9475
     },
     {
       "domain": "edu.bydgoszcz.pl",
@@ -49,7 +49,7 @@
     },
     {
       "domain": "gorzow.pl",
-      "count": 4038
+      "count": 4159
     },
     {
       "domain": "mixbet.radom.pl",
@@ -73,7 +73,7 @@
     },
     {
       "domain": "edu.wroclaw.pl",
-      "count": 1943
+      "count": 2018
     },
     {
       "domain": "czestochowa.pl",
@@ -215,7 +215,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 25355
+      "count": 25376
     },
     {
       "domain": "poznan.pl",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 22691
+      "count": 22706
     },
     {
       "domain": "gdansk.pl",
@@ -235,19 +235,19 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 9024
+      "count": 9028
     },
     {
       "domain": "instagram.com",
-      "count": 8879
+      "count": 8880
     },
     {
       "domain": "youtube.com",
-      "count": 8725
+      "count": 8731
     },
     {
       "domain": "google.com",
-      "count": 8615
+      "count": 8617
     },
     {
       "domain": "ug.edu.pl",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 6330
+      "count": 6340
     },
     {
       "domain": "torun.pl",
@@ -267,11 +267,11 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 4333
+      "count": 4339
     },
     {
       "domain": "gdynia.pl",
-      "count": 4252
+      "count": 4260
     },
     {
       "domain": "cloudflare.com",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "www.gov.pl",
-      "count": 3401
+      "count": 3408
     },
     {
       "domain": "twitter.com",
@@ -287,7 +287,7 @@
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 2948
+      "count": 2952
     },
     {
       "domain": "mixbet.radom.pl",
@@ -311,31 +311,31 @@
     },
     {
       "domain": "bip.gov.pl",
-      "count": 2170
+      "count": 2177
     },
     {
       "domain": "unpkg.com",
-      "count": 1966
+      "count": 1972
     },
     {
       "domain": "vulcan.net.pl",
-      "count": 1868
+      "count": 1870
     },
     {
       "domain": "goo.gl",
-      "count": 1807
+      "count": 1811
+    },
+    {
+      "domain": "gorzow.pl",
+      "count": 1789
     },
     {
       "domain": "wordpress.org",
       "count": 1781
     },
     {
-      "domain": "gorzow.pl",
-      "count": 1762
-    },
-    {
       "domain": "edupage.org",
-      "count": 1690
+      "count": 1763
     },
     {
       "domain": "jquery.com",
@@ -343,11 +343,11 @@
     },
     {
       "domain": "epuap.gov.pl",
-      "count": 1541
+      "count": 1544
     },
     {
       "domain": "tiktok.com",
-      "count": 1455
+      "count": 1456
     },
     {
       "domain": "ursynow.warszawa.pl",
@@ -363,7 +363,7 @@
     },
     {
       "domain": "librus.pl",
-      "count": 1282
+      "count": 1284
     },
     {
       "domain": "sopot.pl",
@@ -382,12 +382,12 @@
       "count": 968
     },
     {
-      "domain": "www.bydgoszcz.pl",
-      "count": 902
+      "domain": "edu.wroclaw.pl",
+      "count": 904
     },
     {
-      "domain": "edu.wroclaw.pl",
-      "count": 873
+      "domain": "www.bydgoszcz.pl",
+      "count": 902
     },
     {
       "domain": "wp.com",
@@ -399,7 +399,7 @@
     },
     {
       "domain": "wroc.pl",
-      "count": 811
+      "count": 816
     },
     {
       "domain": "migam.org",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 33739,
-    "form_destination": 3336,
-    "image_or_media_dependency": 6839,
+    "editorial_link": 33737,
+    "form_destination": 3337,
+    "image_or_media_dependency": 6837,
     "script_dependency": 8791,
     "stylesheet_dependency": 7659,
     "font_or_preload_dependency": 1851
   },
-  "generated_at": "2026-10-14T21:22:36.965803+00:00"
+  "generated_at": "2026-10-15T20:59:41.555616+00:00"
 }

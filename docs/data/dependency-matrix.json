@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T21:22:39.007142+00:00",
+  "generated_at": "2026-10-15T20:59:44.675223+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -243,7 +243,7 @@
     {
       "service": "amazonaws.com",
       "countries": 21,
-      "domains": 228
+      "domains": 227
     },
     {
       "service": "addtoany.com",
@@ -548,7 +548,7 @@
       "country_code": "POLAND",
       "country": "Poland",
       "service": "amazonaws.com",
-      "domains": 10,
+      "domains": 9,
       "scanned_domains": 2443,
       "percent": 0.4
     },

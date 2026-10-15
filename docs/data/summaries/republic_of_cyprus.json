@@ -1,6 +1,6 @@
 {
   "country_code": "REPUBLIC_OF_CYPRUS",
-  "total_relationships": 321235,
+  "total_relationships": 321231,
   "total_source_domains": 9349,
   "top_source_domains": [
     {
@@ -81,7 +81,7 @@
     },
     {
       "domain": "cultura.gov.it",
-      "count": 16184
+      "count": 16185
     },
     {
       "domain": "hamburg.de",
@@ -149,7 +149,7 @@
     },
     {
       "domain": "gdynia.pl",
-      "count": 9462
+      "count": 9475
     },
     {
       "domain": "kk.dk",
@@ -207,11 +207,11 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 93283
+      "count": 93307
     },
     {
       "domain": "googleapis.com",
-      "count": 77628
+      "count": 77653
     },
     {
       "domain": "sachsen.de",
@@ -223,11 +223,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 53797
+      "count": 53803
     },
     {
       "domain": "youtube.com",
-      "count": 51002
+      "count": 51014
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -235,19 +235,19 @@
     },
     {
       "domain": "google.com",
-      "count": 43899
+      "count": 43902
     },
     {
       "domain": "twitter.com",
-      "count": 42874
+      "count": 42885
     },
     {
       "domain": "linkedin.com",
-      "count": 37597
+      "count": 37602
     },
     {
       "domain": "googletagmanager.com",
-      "count": 36011
+      "count": 36015
     },
     {
       "domain": "krakow.pl",
@@ -283,7 +283,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 22599
+      "count": 22613
     },
     {
       "domain": "bayern.de",
@@ -291,7 +291,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 19936
+      "count": 19947
     },
     {
       "domain": "esteri.it",
@@ -339,7 +339,11 @@
     },
     {
       "domain": "unpkg.com",
-      "count": 9549
+      "count": 9555
+    },
+    {
+      "domain": "europa.eu",
+      "count": 9201
     },
     {
       "domain": "hamburg.de",
@@ -350,16 +354,12 @@
       "count": 9199
     },
     {
-      "domain": "europa.eu",
-      "count": 9198
-    },
-    {
       "domain": "gva.es",
       "count": 8659
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 8590
+      "count": 8594
     },
     {
       "domain": "haute-garonne.fr",
@@ -387,7 +387,7 @@
     },
     {
       "domain": "cultura.gov.it",
-      "count": 7518
+      "count": 7519
     },
     {
       "domain": "cloudfront.net",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 165599,
-    "form_destination": 21424,
-    "image_or_media_dependency": 33695,
+    "editorial_link": 165596,
+    "form_destination": 21425,
+    "image_or_media_dependency": 33693,
     "script_dependency": 51159,
     "stylesheet_dependency": 40934,
     "font_or_preload_dependency": 8424
   },
-  "generated_at": "2026-10-14T21:22:35.726330+00:00"
+  "generated_at": "2026-10-15T20:59:40.480067+00:00"
 }

@@ -1,6 +1,6 @@
 {
   "country_code": "SPAIN",
-  "total_relationships": 16240,
+  "total_relationships": 16239,
   "total_source_domains": 238,
   "top_source_domains": [
     {
@@ -219,11 +219,11 @@
     },
     {
       "domain": "facebook.com",
-      "count": 4158
+      "count": 4161
     },
     {
       "domain": "twitter.com",
-      "count": 3823
+      "count": 3829
     },
     {
       "domain": "youtube.com",
@@ -235,7 +235,7 @@
     },
     {
       "domain": "google.com",
-      "count": 3167
+      "count": 3168
     },
     {
       "domain": "jccm.es",
@@ -275,7 +275,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 1416
+      "count": 1419
     },
     {
       "domain": "educativa.com",
@@ -307,7 +307,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 794
+      "count": 797
     },
     {
       "domain": "carm.es",
@@ -343,7 +343,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 625
+      "count": 631
     },
     {
       "domain": "asturias.es",
@@ -410,9 +410,9 @@
     "script_dependency": 2331,
     "image_or_media_dependency": 1962,
     "stylesheet_dependency": 1983,
-    "editorial_link": 8372,
+    "editorial_link": 8371,
     "form_destination": 1439,
     "font_or_preload_dependency": 153
   },
-  "generated_at": "2026-10-14T21:22:35.050134+00:00"
+  "generated_at": "2026-10-15T20:59:40.172403+00:00"
 }
