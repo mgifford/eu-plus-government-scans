@@ -5,13 +5,13 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-10-15 12:10 UTC — last scan: 2026-10-15_
+_Stats as of 2026-10-15 14:07 UTC — last scan: 2026-10-15_
 
-**368** scan batches run
+**370** scan batches run
 
 **87,690** of **87,696** available pages scanned (**100.0%** coverage)
-**81,145** of **87,690** scanned pages were reachable (**92.5%**)
-**38,230** reachable pages loaded at least one third-party script (**47.1%** of reachable)
+**81,151** of **87,690** scanned pages were reachable (**92.5%**)
+**38,231** reachable pages loaded at least one third-party script (**47.1%** of reachable)
 **46,664** known third-party service loads identified
 **26** unique known services across **17** categories
 
@@ -46,10 +46,10 @@ _Stats as of 2026-10-15 12:10 UTC — last scan: 2026-10-15_
 | Poland | 14,951 | 14,951 | 13,584 | 7,042 | 9,862 | 51.8 | 72.6 | 2026-10-15 |
 | Portugal | 3,508 | 3,508 | 3,206 | 1,309 | 2,179 | 40.8 | 68.0 | 2026-10-08 |
 | Cyprus | 29 | 29 | 29 | 13 | 15 | 44.8 | 51.7 | 2026-09-26 |
-| Romania | 807 | 807 | 349 | 256 | 264 | 73.4 | 75.6 | 2026-09-27 |
+| Romania | 807 | 807 | 352 | 256 | 264 | 72.7 | 75.0 | 2026-10-15 |
 | Slovakia | 442 | 442 | 413 | 218 | 273 | 52.8 | 66.1 | 2026-09-27 |
 | Slovenia | 214 | 214 | 207 | 56 | 79 | 27.1 | 38.2 | 2026-09-24 |
-| Spain | 6,091 | 6,091 | 5,200 | 2,613 | 2,505 | 50.2 | 48.2 | 2026-10-14 |
+| Spain | 6,091 | 6,091 | 5,203 | 2,614 | 2,505 | 50.2 | 48.1 | 2026-10-15 |
 | Sweden | 1,702 | 1,702 | 1,629 | 551 | 315 | 33.8 | 19.3 | 2026-09-28 |
 | Switzerland | 2,123 | 2,123 | 2,076 | 414 | 434 | 19.9 | 20.9 | 2026-09-29 |
 | United Kingdom | 19,511 | 19,511 | 18,596 | 10,039 | 14,591 | 54.0 | 78.5 | 2026-10-14 |
@@ -62,12 +62,12 @@ _Stats as of 2026-10-15 12:10 UTC — last scan: 2026-10-15_
 
 | # | Service | Loads |
 |--:|---------|------:|
-| 1 | Google Analytics (GA4) | **8,694** |
+| 1 | Google Analytics (GA4) | **8,696** |
 | 2 | cdnjs (Cloudflare CDN) | **7,624** |
 | 3 | jsDelivr CDN | **6,326** |
 | 4 | Google reCAPTCHA | **4,897** |
 | 5 | Google Tag Manager | **4,160** |
-| 6 | Google Hosted Libraries | **3,238** |
+| 6 | Google Hosted Libraries | **3,236** |
 | 7 | unpkg CDN | **2,943** |
 | 8 | jQuery | **2,786** |
 | 9 | Font Awesome | **1,894** |
@@ -87,12 +87,12 @@ _Stats as of 2026-10-15 12:10 UTC — last scan: 2026-10-15_
 
 | # | Service | Reachable Pages | Prevalence of Reachable Pages |
 |--:|---------|----------------:|------------------------------:|
-| 1 | Google Analytics (GA4) | **8,466** | **45.5%** |
+| 1 | Google Analytics (GA4) | **8,468** | **45.5%** |
 | 2 | Google reCAPTCHA | **4,613** | **24.8%** |
 | 3 | jsDelivr CDN | **4,304** | **23.1%** |
 | 4 | cdnjs (Cloudflare CDN) | **3,994** | **21.5%** |
 | 5 | Google Tag Manager | **3,964** | **21.3%** |
-| 6 | Google Hosted Libraries | **2,911** | **15.7%** |
+| 6 | Google Hosted Libraries | **2,909** | **15.6%** |
 | 7 | unpkg CDN | **2,288** | **12.3%** |
 | 8 | jQuery | **2,195** | **11.8%** |
 | 9 | Font Awesome | **1,508** | **8.1%** |
@@ -112,9 +112,9 @@ _Stats as of 2026-10-15 12:10 UTC — last scan: 2026-10-15_
 
 | # | Category | Loads |
 |--:|----------|------:|
-| 1 | CDN | **20,131** |
-| 2 | Analytics | **9,805** |
-| 3 | JavaScript Library | **6,024** |
+| 1 | CDN | **20,129** |
+| 2 | Analytics | **9,807** |
+| 3 | JavaScript Library | **6,022** |
 | 4 | Security | **5,113** |
 | 5 | CAPTCHA | **4,897** |
 | 6 | Tag Manager | **4,658** |
@@ -134,8 +134,8 @@ Infrastructure-heavy categories (CDNs, core libraries, and UI assets):
 
 | # | Infrastructure Category | Loads |
 |--:|--------------------------|------:|
-| 1 | CDN | **20,131** |
-| 2 | JavaScript Library | **6,024** |
+| 1 | CDN | **20,129** |
+| 2 | JavaScript Library | **6,022** |
 | 3 | Icon Library | **1,894** |
 | 4 | UI Framework | **940** |
 
@@ -143,7 +143,7 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 
 | # | Policy-Relevant Category | Loads |
 |--:|--------------------------|------:|
-| 1 | Analytics | **9,805** |
+| 1 | Analytics | **9,807** |
 | 2 | Security | **5,113** |
 | 3 | CAPTCHA | **4,897** |
 | 4 | Tag Manager | **4,658** |
