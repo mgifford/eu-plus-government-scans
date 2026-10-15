@@ -25,9 +25,9 @@ layout: page
 <p style="text-align:center;font-size:0.75em;margin:0.3rem 0 0;color:#555;font-style:italic;">Social media tier distribution</p>
 </div>
 
-_Stats as of 2026-10-15 00:30 UTC — last scan: 2026-10-14_
+_Stats as of 2026-10-15 12:10 UTC — last scan: 2026-10-15_
 
-**263** scan batches run
+**264** scan batches run
 
 **87,690** of **87,696** available pages scanned (**100.0%** coverage)
 **81,423** of **87,690** scanned pages were reachable (**92.9%**)
@@ -126,7 +126,7 @@ Countries ranked by **Digital Sovereignty Score** — the percentage of reachabl
 | Poland | 14,951 | 14,951 | 13,763 | 49.3% | 6,702 | 6,067 | 1,063 | 348 | 7,044 | 841 | 78 | 1,092 | 1 | 1,166 | Aug 2026 – Oct 2026 |
 | Portugal | 3,508 | 3,508 | 3,190 | 70.0% | 2,228 | 881 | 357 | 82 | 1,005 | 251 | 4 | 182 | 2 | 186 | Aug 2026 – Oct 2026 |
 | Cyprus | 29 | 29 | 29 | 48.3% | 14 | 15 | 9 | 1 | 15 | 3 | 0 | 0 | 0 | 0 | Aug 2026 – Oct 2026 |
-| Romania | 807 | 807 | 352 | 61.6% | 214 | 124 | 45 | 9 | 138 | 16 | 3 | 14 | 0 | 17 | Aug 2026 – Sep 2026 |
+| Romania | 807 | 807 | 352 | 61.6% | 214 | 124 | 45 | 9 | 138 | 16 | 3 | 14 | 0 | 17 | Aug 2026 – Oct 2026 |
 | Slovakia | 442 | 442 | 413 | 61.3% | 253 | 136 | 19 | 12 | 155 | 62 | 0 | 24 | 1 | 23 | Aug 2026 – Oct 2026 |
 | Slovenia | 214 | 214 | 207 | 65.7% | 136 | 61 | 24 | 7 | 68 | 12 | 0 | 13 | 1 | 13 | Aug 2026 – Oct 2026 |
 | Spain | 6,091 | 6,091 | 5,190 | 57.3% | 2,961 | 1,925 | 1,652 | 483 | 1,759 | 525 | 11 | 369 | 68 | 333 | Aug 2026 – Oct 2026 |
