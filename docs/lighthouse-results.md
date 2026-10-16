@@ -5,12 +5,12 @@ layout: page
 
 <!-- LIGHTHOUSE_STATS_START -->
 
-_Stats as of 2026-10-16 14:02 UTC — last scan: 2026-10-16_
+_Stats as of 2026-10-16 17:24 UTC — last scan: 2026-10-16_
 
-**606** scan batches run
+**613** scan batches run
 
-**72,188** of **87,696** available pages audited (**82.3%** coverage)
-**57,242** successful audits (**79.3%** of audited)
+**72,602** of **87,696** available pages audited (**82.8%** coverage)
+**57,654** successful audits (**79.4%** of audited)
 
 **Overall average Lighthouse scores** (0–100 scale):
 
@@ -43,19 +43,19 @@ _Stats as of 2026-10-16 14:02 UTC — last scan: 2026-10-16_
 | Latvia | 803 | 803 | 87 | 85 | 91 | 85 | 2026-10-16 |
 | Lithuania | 122 | 122 | 86 | 81 | 87 | 85 | 2026-09-25 |
 | Luxembourg | 573 | 573 | 91 | 93 | 93 | 91 | 2026-10-15 |
-| Malta | 610 | 610 | 89 | 85 | 78 | 82 | 2026-10-15 |
-| Netherlands | 945 | 945 | 91 | 94 | 94 | 88 | 2026-10-15 |
+| Malta | 610 | 610 | 89 | 85 | 78 | 82 | 2026-10-16 |
+| Netherlands | 945 | 945 | 91 | 94 | 94 | 88 | 2026-10-16 |
 | Norway | 249 | 249 | 91 | 93 | 92 | 89 | 2026-10-15 |
 | Poland | 9,495 | 14,951 | 86 | 86 | 88 | 90 | 2026-10-16 |
-| Portugal | 3,508 | 3,508 | 84 | 84 | 86 | 86 | 2026-10-15 |
+| Portugal | 3,508 | 3,508 | 84 | 84 | 86 | 86 | 2026-10-16 |
 | Cyprus | 29 | 29 | 81 | 86 | 83 | 85 | 2026-09-23 |
-| Romania | 807 | 807 | 87 | 78 | 89 | 84 | 2026-10-15 |
+| Romania | 807 | 807 | 87 | 78 | 90 | 84 | 2026-10-16 |
 | Slovakia | 442 | 442 | 90 | 87 | 90 | 88 | 2026-09-26 |
 | Slovenia | 214 | 214 | 87 | 80 | 89 | 85 | 2026-09-24 |
-| Spain | 6,091 | 6,091 | 83 | 80 | 80 | 84 | 2026-10-15 |
+| Spain | 6,091 | 6,091 | 83 | 80 | 80 | 84 | 2026-10-16 |
 | Sweden | 1,702 | 1,702 | 90 | 93 | 93 | 87 | 2026-10-15 |
-| Switzerland | 2,123 | 2,123 | 84 | 91 | 96 | 88 | 2026-10-15 |
-| United Kingdom | 9,465 | 19,511 | 90 | 93 | 91 | 85 | 2026-10-16 |
+| Switzerland | 2,123 | 2,123 | 85 | 91 | 96 | 88 | 2026-10-16 |
+| United Kingdom | 9,879 | 19,511 | 90 | 93 | 91 | 85 | 2026-10-16 |
 
 > Scores are averages across all successfully audited URLs, displayed as 0–100 (Lighthouse stores scores as 0.0–1.0 internally).
 
