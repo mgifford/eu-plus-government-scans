@@ -169,7 +169,7 @@
     },
     {
       "domain": "gard.fr",
-      "count": 1283
+      "count": 1294
     },
     {
       "domain": "puy-de-dome.fr",
@@ -247,7 +247,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 4328
+      "count": 4329
     },
     {
       "domain": "legifrance.gouv.fr",
@@ -307,7 +307,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 1798
+      "count": 1799
     },
     {
       "domain": "loire-atlantique.fr",
@@ -355,7 +355,7 @@
     },
     {
       "domain": "interieur.gouv.fr",
-      "count": 1176
+      "count": 1177
     },
     {
       "domain": "gouvernement.fr",
@@ -414,5 +414,5 @@
     "form_destination": 1715,
     "font_or_preload_dependency": 701
   },
-  "generated_at": "2026-10-15T20:59:41.239736+00:00"
+  "generated_at": "2026-10-16T20:43:58.840341+00:00"
 }

@@ -1,6 +1,6 @@
 {
   "country_code": "SPAIN",
-  "total_relationships": 16239,
+  "total_relationships": 16241,
   "total_source_domains": 238,
   "top_source_domains": [
     {
@@ -88,16 +88,16 @@
       "count": 911
     },
     {
+      "domain": "juntadeandalucia.es",
+      "count": 858
+    },
+    {
       "domain": "ayto-alcaladehenares.es",
       "count": 854
     },
     {
       "domain": "ayto-meco.es",
       "count": 840
-    },
-    {
-      "domain": "juntadeandalucia.es",
-      "count": 782
     },
     {
       "domain": "comercio.gob.es",
@@ -219,23 +219,23 @@
     },
     {
       "domain": "facebook.com",
-      "count": 4161
+      "count": 4167
     },
     {
       "domain": "twitter.com",
-      "count": 3829
+      "count": 3837
     },
     {
       "domain": "youtube.com",
-      "count": 3432
+      "count": 3438
     },
     {
       "domain": "googleapis.com",
-      "count": 3326
+      "count": 3329
     },
     {
       "domain": "google.com",
-      "count": 3168
+      "count": 3170
     },
     {
       "domain": "jccm.es",
@@ -243,7 +243,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 2997
+      "count": 3003
     },
     {
       "domain": "aragon.es",
@@ -267,7 +267,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 1444
+      "count": 1447
     },
     {
       "domain": "juntaex.es",
@@ -275,7 +275,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 1419
+      "count": 1426
     },
     {
       "domain": "educativa.com",
@@ -319,11 +319,11 @@
     },
     {
       "domain": "flickr.com",
-      "count": 745
+      "count": 751
     },
     {
       "domain": "google.es",
-      "count": 729
+      "count": 730
     },
     {
       "domain": "boe.es",
@@ -339,7 +339,7 @@
     },
     {
       "domain": "insuit.net",
-      "count": 634
+      "count": 637
     },
     {
       "domain": "jsdelivr.net",
@@ -358,12 +358,12 @@
       "count": 598
     },
     {
-      "domain": "sede.gob.es",
-      "count": 535
+      "domain": "juntadeandalucia.es",
+      "count": 563
     },
     {
-      "domain": "juntadeandalucia.es",
-      "count": 532
+      "domain": "sede.gob.es",
+      "count": 541
     },
     {
       "domain": "administracion.gob.es",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "script_dependency": 2331,
+    "script_dependency": 2332,
     "image_or_media_dependency": 1962,
     "stylesheet_dependency": 1983,
-    "editorial_link": 8371,
+    "editorial_link": 8372,
     "form_destination": 1439,
     "font_or_preload_dependency": 153
   },
-  "generated_at": "2026-10-15T20:59:40.172403+00:00"
+  "generated_at": "2026-10-16T20:43:57.507609+00:00"
 }

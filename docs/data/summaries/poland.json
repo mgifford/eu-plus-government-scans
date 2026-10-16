@@ -215,7 +215,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 25376
+      "count": 25382
     },
     {
       "domain": "poznan.pl",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 22706
+      "count": 22708
     },
     {
       "domain": "gdansk.pl",
@@ -239,15 +239,15 @@
     },
     {
       "domain": "instagram.com",
-      "count": 8880
+      "count": 8882
     },
     {
       "domain": "youtube.com",
-      "count": 8731
+      "count": 8733
     },
     {
       "domain": "google.com",
-      "count": 8617
+      "count": 8619
     },
     {
       "domain": "ug.edu.pl",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 6340
+      "count": 6342
     },
     {
       "domain": "torun.pl",
@@ -267,7 +267,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 4339
+      "count": 4343
     },
     {
       "domain": "gdynia.pl",
@@ -275,7 +275,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 4159
+      "count": 4161
     },
     {
       "domain": "www.gov.pl",
@@ -283,7 +283,7 @@
     },
     {
       "domain": "twitter.com",
-      "count": 3012
+      "count": 3013
     },
     {
       "domain": "bootstrapcdn.com",
@@ -315,7 +315,7 @@
     },
     {
       "domain": "unpkg.com",
-      "count": 1972
+      "count": 1976
     },
     {
       "domain": "vulcan.net.pl",
@@ -414,5 +414,5 @@
     "stylesheet_dependency": 7659,
     "font_or_preload_dependency": 1851
   },
-  "generated_at": "2026-10-15T20:59:41.555616+00:00"
+  "generated_at": "2026-10-16T20:43:59.154874+00:00"
 }

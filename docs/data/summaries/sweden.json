@@ -1,6 +1,6 @@
 {
   "country_code": "SWEDEN",
-  "total_relationships": 6240,
+  "total_relationships": 6241,
   "total_source_domains": 245,
   "top_source_domains": [
     {
@@ -21,7 +21,11 @@
     },
     {
       "domain": "vaxjo.se",
-      "count": 1118
+      "count": 1209
+    },
+    {
+      "domain": "norrkoping.se",
+      "count": 987
     },
     {
       "domain": "stockholm.se",
@@ -30,10 +34,6 @@
     {
       "domain": "vgregion.se",
       "count": 902
-    },
-    {
-      "domain": "norrkoping.se",
-      "count": 867
     },
     {
       "domain": "goteborg.se",
@@ -211,15 +211,15 @@
     },
     {
       "domain": "facebook.com",
-      "count": 1475
+      "count": 1486
     },
     {
       "domain": "linkedin.com",
-      "count": 1262
+      "count": 1267
     },
     {
       "domain": "instagram.com",
-      "count": 1198
+      "count": 1209
     },
     {
       "domain": "regionstockholm.se",
@@ -231,7 +231,7 @@
     },
     {
       "domain": "vaxjo.se",
-      "count": 792
+      "count": 856
     },
     {
       "domain": "1177.se",
@@ -242,8 +242,12 @@
       "count": 640
     },
     {
+      "domain": "norrkoping.se",
+      "count": 629
+    },
+    {
       "domain": "youtube.com",
-      "count": 614
+      "count": 617
     },
     {
       "domain": "googleapis.com",
@@ -258,24 +262,20 @@
       "count": 565
     },
     {
-      "domain": "norrkoping.se",
-      "count": 557
-    },
-    {
       "domain": "eskilstuna.se",
       "count": 526
     },
     {
-      "domain": "stockholm.se",
-      "count": 483
+      "domain": "readspeaker.com",
+      "count": 488
     },
     {
       "domain": "google.com",
-      "count": 477
+      "count": 485
     },
     {
-      "domain": "readspeaker.com",
-      "count": 476
+      "domain": "stockholm.se",
+      "count": 483
     },
     {
       "domain": "umea.se",
@@ -318,12 +318,12 @@
       "count": 272
     },
     {
-      "domain": "lantmateriet.se",
-      "count": 250
+      "domain": "rekai.se",
+      "count": 252
     },
     {
-      "domain": "rekai.se",
-      "count": 249
+      "domain": "lantmateriet.se",
+      "count": 250
     },
     {
       "domain": "malmo.se",
@@ -382,16 +382,16 @@
       "count": 207
     },
     {
+      "domain": "cloudflare.com",
+      "count": 198
+    },
+    {
       "domain": "ostersund.se",
       "count": 198
     },
     {
       "domain": "norrbotten.se",
       "count": 195
-    },
-    {
-      "domain": "cloudflare.com",
-      "count": 194
     },
     {
       "domain": "lulea.se",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 2737,
+    "editorial_link": 2738,
     "script_dependency": 1148,
     "stylesheet_dependency": 874,
     "form_destination": 494,
     "image_or_media_dependency": 680,
     "font_or_preload_dependency": 307
   },
-  "generated_at": "2026-10-15T20:59:41.738032+00:00"
+  "generated_at": "2026-10-16T20:43:59.345150+00:00"
 }
