@@ -1,6 +1,6 @@
 {
   "country_code": "GERMANY",
-  "total_relationships": 21936,
+  "total_relationships": 21937,
   "total_source_domains": 226,
   "top_source_domains": [
     {
@@ -81,7 +81,7 @@
     },
     {
       "domain": "brandenburg.de",
-      "count": 1143
+      "count": 1177
     },
     {
       "domain": "schleswig-holstein.de",
@@ -243,11 +243,11 @@
     },
     {
       "domain": "facebook.com",
-      "count": 5360
+      "count": 5362
     },
     {
       "domain": "instagram.com",
-      "count": 5201
+      "count": 5203
     },
     {
       "domain": "bund.de",
@@ -267,7 +267,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 3309
+      "count": 3311
     },
     {
       "domain": "linkedin.com",
@@ -283,7 +283,7 @@
     },
     {
       "domain": "auswaertiges-amt.de",
-      "count": 2082
+      "count": 2084
     },
     {
       "domain": "justiz.nrw",
@@ -334,12 +334,12 @@
       "count": 832
     },
     {
-      "domain": "knastladen.de",
-      "count": 816
+      "domain": "brandenburg.de",
+      "count": 818
     },
     {
-      "domain": "brandenburg.de",
-      "count": 807
+      "domain": "knastladen.de",
+      "count": 816
     },
     {
       "domain": "justiz-karriere.nrw",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 11138,
+    "editorial_link": 11139,
     "font_or_preload_dependency": 340,
     "image_or_media_dependency": 2746,
     "script_dependency": 2870,
     "stylesheet_dependency": 2703,
     "form_destination": 2139
   },
-  "generated_at": "2026-10-16T20:43:56.154035+00:00"
+  "generated_at": "2026-10-17T20:12:16.073995+00:00"
 }

@@ -73,7 +73,7 @@
     },
     {
       "domain": "edu.wroclaw.pl",
-      "count": 2018
+      "count": 2046
     },
     {
       "domain": "czestochowa.pl",
@@ -215,7 +215,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 25382
+      "count": 25388
     },
     {
       "domain": "poznan.pl",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 22708
+      "count": 22709
     },
     {
       "domain": "gdansk.pl",
@@ -239,15 +239,15 @@
     },
     {
       "domain": "instagram.com",
-      "count": 8882
+      "count": 8883
     },
     {
       "domain": "youtube.com",
-      "count": 8733
+      "count": 8734
     },
     {
       "domain": "google.com",
-      "count": 8619
+      "count": 8621
     },
     {
       "domain": "ug.edu.pl",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 6342
+      "count": 6344
     },
     {
       "domain": "torun.pl",
@@ -287,7 +287,7 @@
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 2952
+      "count": 2953
     },
     {
       "domain": "mixbet.radom.pl",
@@ -311,7 +311,7 @@
     },
     {
       "domain": "bip.gov.pl",
-      "count": 2177
+      "count": 2179
     },
     {
       "domain": "unpkg.com",
@@ -323,7 +323,7 @@
     },
     {
       "domain": "goo.gl",
-      "count": 1811
+      "count": 1812
     },
     {
       "domain": "gorzow.pl",
@@ -331,7 +331,7 @@
     },
     {
       "domain": "wordpress.org",
-      "count": 1781
+      "count": 1782
     },
     {
       "domain": "edupage.org",
@@ -383,7 +383,7 @@
     },
     {
       "domain": "edu.wroclaw.pl",
-      "count": 904
+      "count": 917
     },
     {
       "domain": "www.bydgoszcz.pl",
@@ -414,5 +414,5 @@
     "stylesheet_dependency": 7659,
     "font_or_preload_dependency": 1851
   },
-  "generated_at": "2026-10-16T20:43:59.154874+00:00"
+  "generated_at": "2026-10-17T20:12:16.667111+00:00"
 }

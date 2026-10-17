@@ -1,6 +1,6 @@
 {
   "country_code": "UNITED_KINGDOM_UK",
-  "total_relationships": 321234,
+  "total_relationships": 321233,
   "total_source_domains": 9349,
   "top_source_domains": [
     {
@@ -207,11 +207,11 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 93329
+      "count": 93339
     },
     {
       "domain": "googleapis.com",
-      "count": 77663
+      "count": 77669
     },
     {
       "domain": "sachsen.de",
@@ -223,11 +223,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 53822
+      "count": 53825
     },
     {
       "domain": "youtube.com",
-      "count": 51025
+      "count": 51028
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -235,7 +235,7 @@
     },
     {
       "domain": "google.com",
-      "count": 43914
+      "count": 43916
     },
     {
       "domain": "twitter.com",
@@ -243,7 +243,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 37614
+      "count": 37618
     },
     {
       "domain": "googletagmanager.com",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 22998
+      "count": 23011
     },
     {
       "domain": "jsdelivr.net",
@@ -291,7 +291,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 19949
+      "count": 19951
     },
     {
       "domain": "esteri.it",
@@ -327,7 +327,7 @@
     },
     {
       "domain": "x.com",
-      "count": 10638
+      "count": 10642
     },
     {
       "domain": "gdansk.pl",
@@ -359,7 +359,7 @@
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 8594
+      "count": 8595
     },
     {
       "domain": "haute-garonne.fr",
@@ -371,7 +371,7 @@
     },
     {
       "domain": "cqc.org.uk",
-      "count": 7956
+      "count": 7958
     },
     {
       "domain": "diplo.de",
@@ -399,7 +399,7 @@
     },
     {
       "domain": "www.nhs.uk",
-      "count": 6505
+      "count": 6516
     },
     {
       "domain": "steiermark.at",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 165598,
+    "editorial_link": 165599,
     "form_destination": 21425,
-    "image_or_media_dependency": 33693,
+    "image_or_media_dependency": 33692,
     "script_dependency": 51160,
     "stylesheet_dependency": 40934,
-    "font_or_preload_dependency": 8424
+    "font_or_preload_dependency": 8423
   },
-  "generated_at": "2026-10-16T20:43:58.532486+00:00"
+  "generated_at": "2026-10-17T20:12:16.467548+00:00"
 }
