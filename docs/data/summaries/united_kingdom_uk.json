@@ -207,11 +207,11 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 93339
+      "count": 93341
     },
     {
       "domain": "googleapis.com",
-      "count": 77669
+      "count": 77681
     },
     {
       "domain": "sachsen.de",
@@ -223,11 +223,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 53825
+      "count": 53826
     },
     {
       "domain": "youtube.com",
-      "count": 51028
+      "count": 51029
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -235,7 +235,7 @@
     },
     {
       "domain": "google.com",
-      "count": 43916
+      "count": 43918
     },
     {
       "domain": "twitter.com",
@@ -247,7 +247,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 36021
+      "count": 36022
     },
     {
       "domain": "krakow.pl",
@@ -283,7 +283,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 22617
+      "count": 22619
     },
     {
       "domain": "bayern.de",
@@ -291,7 +291,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 19951
+      "count": 19956
     },
     {
       "domain": "esteri.it",
@@ -359,7 +359,7 @@
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 8595
+      "count": 8597
     },
     {
       "domain": "haute-garonne.fr",
@@ -414,5 +414,5 @@
     "stylesheet_dependency": 40934,
     "font_or_preload_dependency": 8423
   },
-  "generated_at": "2026-10-17T20:12:16.467548+00:00"
+  "generated_at": "2026-10-18T10:46:14.158870+00:00"
 }

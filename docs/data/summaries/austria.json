@@ -1,122 +1,130 @@
 {
   "country_code": "AUSTRIA",
-  "total_relationships": 2966,
-  "total_source_domains": 36,
+  "total_relationships": 2977,
+  "total_source_domains": 37,
   "top_source_domains": [
     {
       "domain": "steiermark.at",
-      "count": 11753
+      "count": 15659
     },
     {
       "domain": "ooe.gv.at",
-      "count": 10085
+      "count": 12994
     },
     {
       "domain": "wien.gv.at",
-      "count": 1994
+      "count": 2578
     },
     {
       "domain": "noe.gv.at",
-      "count": 752
+      "count": 1005
     },
     {
       "domain": "kaernten.at",
-      "count": 690
+      "count": 925
     },
     {
       "domain": "vorarlberg.at",
-      "count": 655
+      "count": 875
     },
     {
       "domain": "bundesheer.at",
-      "count": 599
+      "count": 789
     },
     {
       "domain": "ams.at",
-      "count": 333
+      "count": 444
     },
     {
       "domain": "bmf.gv.at",
-      "count": 324
+      "count": 432
     },
     {
       "domain": "stmk.gv.at",
-      "count": 270
+      "count": 361
     },
     {
       "domain": "justiz.gv.at",
-      "count": 267
+      "count": 356
     },
     {
       "domain": "bmeia.gv.at",
-      "count": 264
+      "count": 352
     },
     {
       "domain": "salzburg.gv.at",
-      "count": 228
+      "count": 300
     },
     {
       "domain": "tirol.gv.at",
-      "count": 228
-    },
-    {
-      "domain": "bgld.gv.at",
-      "count": 198
+      "count": 286
     },
     {
       "domain": "bmi.gv.at",
-      "count": 192
+      "count": 252
+    },
+    {
+      "domain": "bgld.gv.at",
+      "count": 248
     },
     {
       "domain": "bmbwf.gv.at",
-      "count": 184
+      "count": 246
     },
     {
       "domain": "burgenland.at",
-      "count": 174
-    },
-    {
-      "domain": "bka.gv.at",
-      "count": 171
+      "count": 232
     },
     {
       "domain": "statistik.at",
-      "count": 168
-    },
-    {
-      "domain": "usp.gv.at",
-      "count": 165
+      "count": 224
     },
     {
       "domain": "oesterreich.gv.at",
-      "count": 147
+      "count": 198
+    },
+    {
+      "domain": "usp.gv.at",
+      "count": 196
+    },
+    {
+      "domain": "bka.gv.at",
+      "count": 189
     },
     {
       "domain": "gesundheit.gv.at",
-      "count": 117
+      "count": 156
     },
     {
       "domain": "bmj.gv.at",
-      "count": 86
+      "count": 118
+    },
+    {
+      "domain": "fma.gv.at",
+      "count": 102
     },
     {
       "domain": "polizei.gv.at",
-      "count": 75
+      "count": 100
     },
     {
       "domain": "rechnungshof.gv.at",
-      "count": 72
+      "count": 96
+    },
+    {
+      "domain": "rtr.at",
+      "count": 80
     },
     {
       "domain": "vfgh.gv.at",
       "count": 72
     },
     {
-      "domain": "fma.gv.at",
-      "count": 67
+      "domain": "land-oberoesterreich.gv.at",
+      "count": 64
     },
     {
-      "domain": "rtr.at",
+      "domain": "id-austria.gv.at",
       "count": 60
     },
     {
@@ -124,239 +132,235 @@
       "count": 54
     },
     {
-      "domain": "land-oberoesterreich.gv.at",
-      "count": 48
+      "domain": "bmk.gv.at",
+      "count": 40
     },
     {
-      "domain": "id-austria.gv.at",
-      "count": 45
+      "domain": "parlament.gv.at",
+      "count": 36
     },
     {
       "domain": "tiere-die-ins-leben-passen.at",
       "count": 36
     },
     {
-      "domain": "bmk.gv.at",
-      "count": 30
-    },
-    {
-      "domain": "parlament.gv.at",
-      "count": 27
+      "domain": "garsten.at",
+      "count": 23
     },
     {
       "domain": "data.gv.at",
-      "count": 12
+      "count": 16
     }
   ],
   "top_target_domains": [
     {
       "domain": "steiermark.at",
-      "count": 6410
+      "count": 8522
     },
     {
       "domain": "ooe.gv.at",
-      "count": 3746
+      "count": 4824
     },
     {
       "domain": "wien.gv.at",
-      "count": 1338
+      "count": 1722
     },
     {
       "domain": "facebook.com",
-      "count": 1143
+      "count": 1514
     },
     {
       "domain": "stmk.gv.at",
-      "count": 991
+      "count": 1322
     },
     {
       "domain": "instagram.com",
-      "count": 805
+      "count": 1089
     },
     {
       "domain": "youtube.com",
-      "count": 751
+      "count": 999
     },
     {
       "domain": "linkedin.com",
-      "count": 589
+      "count": 800
     },
     {
       "domain": "gem2go.at",
-      "count": 541
+      "count": 696
     },
     {
       "domain": "datareporter.eu",
-      "count": 486
+      "count": 648
     },
     {
       "domain": "vorarlberg.at",
-      "count": 467
+      "count": 623
     },
     {
       "domain": "readspeaker.com",
-      "count": 447
+      "count": 596
     },
     {
       "domain": "bundesheer.at",
-      "count": 316
-    },
-    {
-      "domain": "bka.gv.at",
-      "count": 268
+      "count": 423
     },
     {
       "domain": "oesterreich.gv.at",
-      "count": 260
+      "count": 345
     },
     {
-      "domain": "ams.at",
-      "count": 240
+      "domain": "bka.gv.at",
+      "count": 329
     },
     {
       "domain": "noe.gv.at",
-      "count": 239
+      "count": 320
+    },
+    {
+      "domain": "ams.at",
+      "count": 319
     },
     {
       "domain": "bmf.gv.at",
-      "count": 225
+      "count": 294
     },
     {
       "domain": "uwz.at",
-      "count": 184
+      "count": 242
     },
     {
       "domain": "bgld.gv.at",
-      "count": 179
+      "count": 228
     },
     {
       "domain": "kaernten.at",
-      "count": 171
-    },
-    {
-      "domain": "usp.gv.at",
-      "count": 165
+      "count": 228
     },
     {
       "domain": "justiz.gv.at",
-      "count": 162
+      "count": 216
     },
     {
       "domain": "salzburg.gv.at",
-      "count": 159
+      "count": 209
     },
     {
       "domain": "statistik.at",
-      "count": 156
+      "count": 208
     },
     {
-      "domain": "land-oberoesterreich.gv.at",
-      "count": 151
+      "domain": "usp.gv.at",
+      "count": 197
     },
     {
       "domain": "bmbwf.gv.at",
-      "count": 144
+      "count": 192
     },
     {
       "domain": "bmi.gv.at",
-      "count": 144
+      "count": 192
+    },
+    {
+      "domain": "land-oberoesterreich.gv.at",
+      "count": 190
     },
     {
       "domain": "tirol.gv.at",
-      "count": 144
+      "count": 184
     },
     {
       "domain": "google.com",
-      "count": 132
+      "count": 173
     },
     {
       "domain": "doris.at",
-      "count": 124
+      "count": 157
     },
     {
       "domain": "wko.at",
-      "count": 117
+      "count": 151
     },
     {
       "domain": "bfvfb.at",
-      "count": 114
+      "count": 150
     },
     {
       "domain": "bfvff.at",
-      "count": 114
-    },
-    {
-      "domain": "dioezese-linz.at",
-      "count": 108
+      "count": 150
     },
     {
       "domain": "flickr.com",
-      "count": 107
+      "count": 141
+    },
+    {
+      "domain": "dioezese-linz.at",
+      "count": 140
     },
     {
       "domain": "altstoffsammelzentrum.at",
-      "count": 105
+      "count": 137
     },
     {
       "domain": "twitter.com",
-      "count": 98
+      "count": 124
     },
     {
       "domain": "salzkammergut.at",
-      "count": 96
+      "count": 122
     },
     {
       "domain": "bmeia.gv.at",
-      "count": 84
+      "count": 112
     },
     {
       "domain": "fundamt.gv.at",
-      "count": 81
+      "count": 106
     },
     {
       "domain": "polizei.gv.at",
-      "count": 78
-    },
-    {
-      "domain": "standortooe.at",
-      "count": 78
+      "count": 104
     },
     {
       "domain": "fdisk.at",
-      "count": 78
-    },
-    {
-      "domain": "gem2go.info",
-      "count": 75
+      "count": 102
     },
     {
       "domain": "umweltprofis.at",
-      "count": 75
+      "count": 100
+    },
+    {
+      "domain": "gem2go.info",
+      "count": 98
+    },
+    {
+      "domain": "standortooe.at",
+      "count": 98
     },
     {
       "domain": "gesundheit.gv.at",
-      "count": 72
+      "count": 96
     },
     {
       "domain": "bkms-system.net",
-      "count": 70
-    },
-    {
-      "domain": "ooevv.at",
-      "count": 69
+      "count": 93
     },
     {
       "domain": "bmj.gv.at",
-      "count": 67
+      "count": 91
+    },
+    {
+      "domain": "ooevv.at",
+      "count": 90
     }
   ],
   "relationship_types": {
-    "editorial_link": 1550,
-    "form_destination": 294,
-    "image_or_media_dependency": 341,
-    "script_dependency": 387,
-    "stylesheet_dependency": 354,
-    "font_or_preload_dependency": 40
+    "editorial_link": 1557,
+    "form_destination": 293,
+    "image_or_media_dependency": 342,
+    "script_dependency": 388,
+    "stylesheet_dependency": 355,
+    "font_or_preload_dependency": 42
   },
-  "generated_at": "2026-10-17T20:12:14.716615+00:00"
+  "generated_at": "2026-10-18T16:15:33.455010+00:00"
 }

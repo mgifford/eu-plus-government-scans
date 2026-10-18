@@ -17,7 +17,7 @@
     },
     {
       "domain": "brasovcity.ro",
-      "count": 670
+      "count": 690
     },
     {
       "domain": "pmb.ro",
@@ -119,11 +119,11 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 436
+      "count": 437
     },
     {
       "domain": "facebook.com",
-      "count": 418
+      "count": 419
     },
     {
       "domain": "pmb.ro",
@@ -131,7 +131,7 @@
     },
     {
       "domain": "google.com",
-      "count": 341
+      "count": 343
     },
     {
       "domain": "sri.ro",
@@ -143,7 +143,7 @@
     },
     {
       "domain": "brasovcity.ro",
-      "count": 231
+      "count": 238
     },
     {
       "domain": "presidency.ro",
@@ -171,7 +171,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 177
+      "count": 178
     },
     {
       "domain": "statcounter.com",
@@ -199,11 +199,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 126
+      "count": 127
     },
     {
       "domain": "youtube.com",
-      "count": 116
+      "count": 117
     },
     {
       "domain": "twitter.com",
@@ -231,7 +231,7 @@
     },
     {
       "domain": "userway.org",
-      "count": 71
+      "count": 73
     },
     {
       "domain": "infocons.ro",
@@ -243,7 +243,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 56
+      "count": 58
     },
     {
       "domain": "politiadefrontiera.ro",
@@ -310,5 +310,5 @@
     "form_destination": 97,
     "font_or_preload_dependency": 26
   },
-  "generated_at": "2026-10-17T20:12:16.174586+00:00"
+  "generated_at": "2026-10-18T10:46:13.851913+00:00"
 }

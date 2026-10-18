@@ -73,7 +73,7 @@
     },
     {
       "domain": "edu.wroclaw.pl",
-      "count": 2046
+      "count": 2118
     },
     {
       "domain": "czestochowa.pl",
@@ -215,7 +215,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 25388
+      "count": 25399
     },
     {
       "domain": "poznan.pl",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 22709
+      "count": 22710
     },
     {
       "domain": "gdansk.pl",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 6344
+      "count": 6349
     },
     {
       "domain": "torun.pl",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "www.gov.pl",
-      "count": 3408
+      "count": 3411
     },
     {
       "domain": "twitter.com",
@@ -287,7 +287,7 @@
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 2953
+      "count": 2955
     },
     {
       "domain": "mixbet.radom.pl",
@@ -311,7 +311,7 @@
     },
     {
       "domain": "bip.gov.pl",
-      "count": 2179
+      "count": 2184
     },
     {
       "domain": "unpkg.com",
@@ -331,7 +331,7 @@
     },
     {
       "domain": "wordpress.org",
-      "count": 1782
+      "count": 1784
     },
     {
       "domain": "edupage.org",
@@ -343,7 +343,7 @@
     },
     {
       "domain": "epuap.gov.pl",
-      "count": 1544
+      "count": 1545
     },
     {
       "domain": "tiktok.com",
@@ -383,7 +383,7 @@
     },
     {
       "domain": "edu.wroclaw.pl",
-      "count": 917
+      "count": 950
     },
     {
       "domain": "www.bydgoszcz.pl",
@@ -399,7 +399,7 @@
     },
     {
       "domain": "wroc.pl",
-      "count": 816
+      "count": 817
     },
     {
       "domain": "migam.org",
@@ -414,5 +414,5 @@
     "stylesheet_dependency": 7659,
     "font_or_preload_dependency": 1851
   },
-  "generated_at": "2026-10-17T20:12:16.667111+00:00"
+  "generated_at": "2026-10-18T10:46:14.482073+00:00"
 }
