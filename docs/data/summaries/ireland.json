@@ -1,418 +1,418 @@
 {
   "country_code": "IRELAND",
-  "total_relationships": 2086,
-  "total_source_domains": 103,
+  "total_relationships": 2122,
+  "total_source_domains": 105,
   "top_source_domains": [
     {
       "domain": "hse.ie",
-      "count": 795
+      "count": 1068
     },
     {
       "domain": "courts.ie",
-      "count": 627
+      "count": 847
     },
     {
       "domain": "kilkennycoco.ie",
-      "count": 621
+      "count": 828
     },
     {
       "domain": "fingal.ie",
-      "count": 601
-    },
-    {
-      "domain": "dublincity.ie",
-      "count": 501
+      "count": 799
     },
     {
       "domain": "cavancoco.ie",
-      "count": 498
+      "count": 661
     },
     {
-      "domain": "limerick.ie",
-      "count": 467
-    },
-    {
-      "domain": "clarecoco.ie",
-      "count": 460
+      "domain": "dublincity.ie",
+      "count": 660
     },
     {
       "domain": "kildarecoco.ie",
-      "count": 459
+      "count": 608
+    },
+    {
+      "domain": "clarecoco.ie",
+      "count": 606
+    },
+    {
+      "domain": "limerick.ie",
+      "count": 563
     },
     {
       "domain": "louthcoco.ie",
-      "count": 418
+      "count": 554
     },
     {
       "domain": "dlrcoco.ie",
-      "count": 404
-    },
-    {
-      "domain": "agriculture.gov.ie",
-      "count": 399
+      "count": 538
     },
     {
       "domain": "enterprise.gov.ie",
-      "count": 385
+      "count": 513
+    },
+    {
+      "domain": "agriculture.gov.ie",
+      "count": 493
     },
     {
       "domain": "cso.ie",
-      "count": 348
+      "count": 463
     },
     {
       "domain": "ipoi.gov.ie",
-      "count": 342
-    },
-    {
-      "domain": "roscommoncoco.ie",
-      "count": 339
+      "count": 456
     },
     {
       "domain": "kerrycoco.ie",
-      "count": 334
+      "count": 446
     },
     {
       "domain": "teachingcouncil.ie",
-      "count": 315
-    },
-    {
-      "domain": "artscouncil.ie",
-      "count": 300
-    },
-    {
-      "domain": "sbci.gov.ie",
-      "count": 300
+      "count": 420
     },
     {
       "domain": "corkcity.ie",
-      "count": 288
+      "count": 403
     },
     {
-      "domain": "medicalcouncil.ie",
-      "count": 273
+      "domain": "sbci.gov.ie",
+      "count": 400
+    },
+    {
+      "domain": "artscouncil.ie",
+      "count": 398
+    },
+    {
+      "domain": "roscommoncoco.ie",
+      "count": 392
     },
     {
       "domain": "corkcoco.ie",
-      "count": 264
+      "count": 352
     },
     {
       "domain": "wexfordcoco.ie",
-      "count": 256
+      "count": 340
     },
     {
       "domain": "galwaycity.ie",
-      "count": 244
+      "count": 329
     },
     {
       "domain": "donegalcoco.ie",
-      "count": 240
+      "count": 320
+    },
+    {
+      "domain": "medicalcouncil.ie",
+      "count": 320
     },
     {
       "domain": "waterfordcouncil.ie",
-      "count": 229
+      "count": 305
     },
     {
       "domain": "longfordcoco.ie",
-      "count": 213
+      "count": 263
     },
     {
       "domain": "westmeathcoco.ie",
-      "count": 204
+      "count": 229
     },
     {
       "domain": "oireachtas.ie",
-      "count": 199
+      "count": 219
+    },
+    {
+      "domain": "irishstatutebook.ie",
+      "count": 196
+    },
+    {
+      "domain": "growingup.gov.ie",
+      "count": 192
+    },
+    {
+      "domain": "rtb.ie",
+      "count": 188
+    },
+    {
+      "domain": "carrentalcouncil.ie",
+      "count": 184
+    },
+    {
+      "domain": "creativeireland.gov.ie",
+      "count": 184
     },
     {
       "domain": "ipo.gov.ie",
       "count": 184
     },
     {
-      "domain": "growingup.gov.ie",
-      "count": 147
-    },
-    {
-      "domain": "irishstatutebook.ie",
-      "count": 147
-    },
-    {
-      "domain": "rtb.ie",
-      "count": 143
-    },
-    {
-      "domain": "carrentalcouncil.ie",
-      "count": 138
-    },
-    {
-      "domain": "creativeireland.gov.ie",
-      "count": 138
+      "domain": "climatecouncil.ie",
+      "count": 176
     },
     {
       "domain": "rococo.ie",
+      "count": 171
+    },
+    {
+      "domain": "meath.ie",
+      "count": 165
+    },
+    {
+      "domain": "whatworks.gov.ie",
       "count": 136
     },
     {
-      "domain": "climatecouncil.ie",
+      "domain": "irishrefugeecouncil.ie",
+      "count": 132
+    },
+    {
+      "domain": "sligococo.ie",
       "count": 132
     },
     {
       "domain": "revenue.ie",
-      "count": 123
+      "count": 128
+    },
+    {
+      "domain": "monaghancoco.ie",
+      "count": 125
+    },
+    {
+      "domain": "dentalcouncil.ie",
+      "count": 124
+    },
+    {
+      "domain": "buyerzone.gov.ie",
+      "count": 120
     },
     {
       "domain": "president.ie",
       "count": 116
     },
     {
-      "domain": "meath.ie",
+      "domain": "data.gov.ie",
+      "count": 112
+    },
+    {
+      "domain": "ecoco.ie",
+      "count": 112
+    },
+    {
+      "domain": "fairycouncil.ie",
       "count": 108
-    },
-    {
-      "domain": "whatworks.gov.ie",
-      "count": 102
-    },
-    {
-      "domain": "irishrefugeecouncil.ie",
-      "count": 99
-    },
-    {
-      "domain": "sligococo.ie",
-      "count": 99
-    },
-    {
-      "domain": "treecouncil.ie",
-      "count": 99
-    },
-    {
-      "domain": "monaghancoco.ie",
-      "count": 94
-    },
-    {
-      "domain": "dentalcouncil.ie",
-      "count": 93
-    },
-    {
-      "domain": "whereyourmoneygoes.gov.ie",
-      "count": 93
-    },
-    {
-      "domain": "buyerzone.gov.ie",
-      "count": 90
-    },
-    {
-      "domain": "neh.gov.ie",
-      "count": 90
     }
   ],
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 654
+      "count": 856
     },
     {
       "domain": "googleapis.com",
-      "count": 638
+      "count": 800
     },
     {
       "domain": "instagram.com",
-      "count": 498
+      "count": 652
     },
     {
       "domain": "youtube.com",
-      "count": 486
+      "count": 640
     },
     {
       "domain": "linkedin.com",
-      "count": 434
+      "count": 570
     },
     {
       "domain": "twitter.com",
-      "count": 433
+      "count": 561
     },
     {
       "domain": "hse.ie",
-      "count": 397
+      "count": 536
     },
     {
       "domain": "courts.ie",
-      "count": 330
+      "count": 442
     },
     {
       "domain": "fingal.ie",
-      "count": 330
+      "count": 438
     },
     {
       "domain": "googletagmanager.com",
-      "count": 273
-    },
-    {
-      "domain": "google.com",
-      "count": 265
-    },
-    {
-      "domain": "jsdelivr.net",
-      "count": 261
+      "count": 347
     },
     {
       "domain": "kilkennycoco.ie",
-      "count": 258
+      "count": 344
+    },
+    {
+      "domain": "jsdelivr.net",
+      "count": 338
+    },
+    {
+      "domain": "google.com",
+      "count": 334
     },
     {
       "domain": "dublincity.ie",
-      "count": 246
+      "count": 323
     },
     {
       "domain": "louthcoco.ie",
-      "count": 215
-    },
-    {
-      "domain": "limerick.ie",
-      "count": 212
-    },
-    {
-      "domain": "cloudflare.com",
-      "count": 211
+      "count": 286
     },
     {
       "domain": "ipoi.gov.ie",
-      "count": 207
+      "count": 276
+    },
+    {
+      "domain": "cloudflare.com",
+      "count": 269
     },
     {
       "domain": "agriculture.gov.ie",
-      "count": 204
+      "count": 256
+    },
+    {
+      "domain": "limerick.ie",
+      "count": 252
     },
     {
       "domain": "arcgis.com",
-      "count": 180
+      "count": 230
     },
     {
       "domain": "kerrycoco.ie",
-      "count": 172
+      "count": 228
     },
     {
       "domain": "cookiebot.com",
-      "count": 160
+      "count": 214
     },
     {
       "domain": "gstatic.com",
-      "count": 159
-    },
-    {
-      "domain": "jquery.com",
-      "count": 149
+      "count": 211
     },
     {
       "domain": "dlrcoco.ie",
-      "count": 144
+      "count": 192
     },
     {
       "domain": "artscouncil.ie",
-      "count": 141
+      "count": 188
     },
     {
       "domain": "enterprise.gov.ie",
-      "count": 141
+      "count": 188
+    },
+    {
+      "domain": "jquery.com",
+      "count": 187
     },
     {
       "domain": "wexfordcoco.ie",
-      "count": 140
+      "count": 186
     },
     {
       "domain": "clarecoco.ie",
-      "count": 135
-    },
-    {
-      "domain": "cso.ie",
-      "count": 129
-    },
-    {
-      "domain": "teachingcouncil.ie",
-      "count": 126
-    },
-    {
-      "domain": "www.gov.ie",
-      "count": 120
+      "count": 180
     },
     {
       "domain": "kildarecoco.ie",
-      "count": 120
+      "count": 178
     },
     {
-      "domain": "roscommoncoco.ie",
-      "count": 117
+      "domain": "cso.ie",
+      "count": 172
     },
     {
-      "domain": "oireachtas.ie",
-      "count": 114
-    },
-    {
-      "domain": "x.com",
-      "count": 113
-    },
-    {
-      "domain": "galwaycity.ie",
-      "count": 111
+      "domain": "teachingcouncil.ie",
+      "count": 168
     },
     {
       "domain": "corkcity.ie",
-      "count": 108
+      "count": 155
     },
     {
-      "domain": "medicalcouncil.ie",
-      "count": 99
+      "domain": "x.com",
+      "count": 150
+    },
+    {
+      "domain": "galwaycity.ie",
+      "count": 148
+    },
+    {
+      "domain": "www.gov.ie",
+      "count": 139
+    },
+    {
+      "domain": "roscommoncoco.ie",
+      "count": 137
+    },
+    {
+      "domain": "oireachtas.ie",
+      "count": 134
     },
     {
       "domain": "civiq.eu",
-      "count": 93
-    },
-    {
-      "domain": "per.gov.ie",
-      "count": 91
+      "count": 133
     },
     {
       "domain": "cavancoco.ie",
-      "count": 90
+      "count": 120
     },
     {
       "domain": "kilkenny.ie",
-      "count": 90
+      "count": 120
     },
     {
       "domain": "waterfordcouncil.ie",
-      "count": 90
+      "count": 119
+    },
+    {
+      "domain": "medicalcouncil.ie",
+      "count": 117
     },
     {
       "domain": "europa.eu",
-      "count": 88
-    },
-    {
-      "domain": "bootstrapcdn.com",
-      "count": 87
+      "count": 116
     },
     {
       "domain": "corkcoco.ie",
-      "count": 87
-    },
-    {
-      "domain": "cookielaw.org",
-      "count": 84
+      "count": 114
     },
     {
       "domain": "creativeireland.gov.ie",
-      "count": 84
+      "count": 112
     },
     {
-      "domain": "westmeathcoco.ie",
-      "count": 84
+      "domain": "bootstrapcdn.com",
+      "count": 110
+    },
+    {
+      "domain": "cookielaw.org",
+      "count": 107
+    },
+    {
+      "domain": "fontawesome.com",
+      "count": 104
+    },
+    {
+      "domain": "meath.ie",
+      "count": 104
     }
   ],
   "relationship_types": {
-    "editorial_link": 1012,
-    "form_destination": 132,
-    "script_dependency": 405,
-    "stylesheet_dependency": 290,
-    "image_or_media_dependency": 187,
+    "editorial_link": 1028,
+    "form_destination": 136,
+    "script_dependency": 411,
+    "stylesheet_dependency": 295,
+    "image_or_media_dependency": 192,
     "font_or_preload_dependency": 60
   },
-  "generated_at": "2026-10-18T10:46:12.175071+00:00"
+  "generated_at": "2026-10-19T13:03:11.893716+00:00"
 }

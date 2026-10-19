@@ -1,179 +1,195 @@
 {
   "country_code": "DENMARK",
-  "total_relationships": 4347,
+  "total_relationships": 4364,
   "total_source_domains": 84,
   "top_source_domains": [
     {
       "domain": "kk.dk",
-      "count": 9018
+      "count": 11968
     },
     {
       "domain": "aarhus.dk",
-      "count": 7285
+      "count": 9663
     },
     {
       "domain": "um.dk",
-      "count": 5428
+      "count": 7242
     },
     {
       "domain": "rm.dk",
-      "count": 2907
+      "count": 3876
     },
     {
       "domain": "vejle.dk",
-      "count": 1892
+      "count": 2532
     },
     {
       "domain": "rn.dk",
-      "count": 1393
+      "count": 1834
     },
     {
       "domain": "horsens.dk",
-      "count": 1234
+      "count": 1605
     },
     {
       "domain": "gentofte.dk",
-      "count": 1177
+      "count": 1574
     },
     {
       "domain": "frederiksberg.dk",
-      "count": 1171
+      "count": 1573
     },
     {
       "domain": "herning.dk",
-      "count": 895
+      "count": 1201
     },
     {
       "domain": "roskilde.dk",
-      "count": 807
+      "count": 1065
     },
     {
       "domain": "viborg.dk",
-      "count": 803
+      "count": 1065
     },
     {
       "domain": "albertslund.dk",
-      "count": 792
-    },
-    {
-      "domain": "ballerup.dk",
-      "count": 717
+      "count": 1050
     },
     {
       "domain": "randers.dk",
-      "count": 666
+      "count": 881
+    },
+    {
+      "domain": "ballerup.dk",
+      "count": 865
     },
     {
       "domain": "hjoerring.dk",
-      "count": 600
+      "count": 790
     },
     {
       "domain": "holbaek.dk",
-      "count": 595
+      "count": 785
     },
     {
       "domain": "forsvaret.dk",
       "count": 590
     },
     {
-      "domain": "sonderborg.dk",
-      "count": 400
-    },
-    {
-      "domain": "slagelse.dk",
-      "count": 376
-    },
-    {
       "domain": "fredericia.dk",
-      "count": 364
+      "count": 497
     },
     {
       "domain": "digst.dk",
-      "count": 363
+      "count": 474
+    },
+    {
+      "domain": "sonderborg.dk",
+      "count": 424
+    },
+    {
+      "domain": "slagelse.dk",
+      "count": 383
     },
     {
       "domain": "skanderborg.dk",
-      "count": 354
+      "count": 381
+    },
+    {
+      "domain": "borger.dk",
+      "count": 377
     },
     {
       "domain": "politi.dk",
-      "count": 346
+      "count": 377
+    },
+    {
+      "domain": "fm.dk",
+      "count": 312
+    },
+    {
+      "domain": "skat.dk",
+      "count": 311
+    },
+    {
+      "domain": "holstebro.dk",
+      "count": 309
+    },
+    {
+      "domain": "fvm.dk",
+      "count": 304
+    },
+    {
+      "domain": "uvm.dk",
+      "count": 303
     },
     {
       "domain": "em.dk",
       "count": 283
     },
     {
-      "domain": "borger.dk",
-      "count": 282
-    },
-    {
-      "domain": "holstebro.dk",
-      "count": 279
-    },
-    {
-      "domain": "skat.dk",
-      "count": 278
-    },
-    {
-      "domain": "uvm.dk",
-      "count": 273
-    },
-    {
-      "domain": "fm.dk",
-      "count": 234
-    },
-    {
-      "domain": "fvm.dk",
-      "count": 228
-    },
-    {
       "domain": "rsyd.dk",
-      "count": 222
+      "count": 249
     },
     {
       "domain": "svendborg.dk",
-      "count": 222
+      "count": 231
+    },
+    {
+      "domain": "bm.dk",
+      "count": 214
+    },
+    {
+      "domain": "at.dk",
+      "count": 211
+    },
+    {
+      "domain": "odense.dk",
+      "count": 208
+    },
+    {
+      "domain": "stps.dk",
+      "count": 208
     },
     {
       "domain": "fmn.dk",
       "count": 207
     },
     {
+      "domain": "stm.dk",
+      "count": 204
+    },
+    {
+      "domain": "naestved.dk",
+      "count": 203
+    },
+    {
       "domain": "esbjerg.dk",
       "count": 198
     },
     {
-      "domain": "naestved.dk",
-      "count": 196
-    },
-    {
-      "domain": "bm.dk",
+      "domain": "aalborg.dk",
       "count": 189
     },
     {
-      "domain": "odense.dk",
-      "count": 180
+      "domain": "koege.dk",
+      "count": 159
     },
     {
-      "domain": "stps.dk",
-      "count": 178
+      "domain": "virk.dk",
+      "count": 154
     },
     {
-      "domain": "at.dk",
-      "count": 177
-    },
-    {
-      "domain": "stm.dk",
-      "count": 171
-    },
-    {
-      "domain": "aalborg.dk",
-      "count": 165
+      "domain": "aabenraa.dk",
+      "count": 153
     },
     {
       "domain": "mssb.dk",
       "count": 150
+    },
+    {
+      "domain": "ism.dk",
+      "count": 138
     },
     {
       "domain": "nemkonto.dk",
@@ -184,235 +200,219 @@
       "count": 135
     },
     {
-      "domain": "koege.dk",
-      "count": 135
-    },
-    {
       "domain": "regionsjaelland.dk",
       "count": 132
-    },
-    {
-      "domain": "kum.dk",
-      "count": 129
-    },
-    {
-      "domain": "virk.dk",
-      "count": 126
-    },
-    {
-      "domain": "sm.dk",
-      "count": 125
     }
   ],
   "top_target_domains": [
     {
       "domain": "kk.dk",
-      "count": 5207
+      "count": 6925
     },
     {
       "domain": "aarhus.dk",
-      "count": 3375
+      "count": 4480
     },
     {
       "domain": "digst.dk",
-      "count": 2825
+      "count": 3650
     },
     {
       "domain": "um.dk",
-      "count": 1793
-    },
-    {
-      "domain": "facebook.com",
-      "count": 1530
+      "count": 2391
     },
     {
       "domain": "rm.dk",
-      "count": 1530
+      "count": 2040
+    },
+    {
+      "domain": "facebook.com",
+      "count": 1973
     },
     {
       "domain": "cookieinformation.com",
-      "count": 1332
+      "count": 1726
     },
     {
       "domain": "linkedin.com",
-      "count": 1189
+      "count": 1505
     },
     {
       "domain": "cloudflare.com",
-      "count": 1095
+      "count": 1438
     },
     {
       "domain": "cludo.com",
-      "count": 1011
+      "count": 1308
     },
     {
       "domain": "borger.dk",
-      "count": 854
+      "count": 1110
     },
     {
       "domain": "rn.dk",
-      "count": 797
+      "count": 1050
     },
     {
       "domain": "aspnetcdn.com",
-      "count": 792
-    },
-    {
-      "domain": "instagram.com",
-      "count": 766
+      "count": 1035
     },
     {
       "domain": "dreambroker.com",
-      "count": 763
+      "count": 1009
+    },
+    {
+      "domain": "instagram.com",
+      "count": 995
     },
     {
       "domain": "vejle.dk",
-      "count": 723
-    },
-    {
-      "domain": "cookiebot.com",
-      "count": 592
-    },
-    {
-      "domain": "googleapis.com",
-      "count": 586
-    },
-    {
-      "domain": "horsens.dk",
-      "count": 585
+      "count": 967
     },
     {
       "domain": "frederiksberg.dk",
-      "count": 574
+      "count": 784
     },
     {
       "domain": "herning.dk",
-      "count": 573
+      "count": 771
     },
     {
-      "domain": "google.com",
-      "count": 553
+      "domain": "horsens.dk",
+      "count": 768
+    },
+    {
+      "domain": "cookiebot.com",
+      "count": 764
     },
     {
       "domain": "gentofte.dk",
-      "count": 549
+      "count": 737
     },
     {
-      "domain": "twitter.com",
-      "count": 491
+      "domain": "googleapis.com",
+      "count": 715
+    },
+    {
+      "domain": "google.com",
+      "count": 714
     },
     {
       "domain": "viborg.dk",
-      "count": 473
+      "count": 630
+    },
+    {
+      "domain": "twitter.com",
+      "count": 612
     },
     {
       "domain": "cookiebot.eu",
-      "count": 414
+      "count": 534
     },
     {
       "domain": "hjoerring.dk",
-      "count": 390
-    },
-    {
-      "domain": "albertslund.dk",
-      "count": 369
+      "count": 516
     },
     {
       "domain": "roskilde.dk",
-      "count": 369
+      "count": 495
+    },
+    {
+      "domain": "albertslund.dk",
+      "count": 493
     },
     {
       "domain": "typekit.net",
-      "count": 356
+      "count": 472
     },
     {
       "domain": "silktide.com",
-      "count": 352
+      "count": 465
     },
     {
       "domain": "apple.com",
-      "count": 345
+      "count": 458
     },
     {
       "domain": "gstatic.com",
-      "count": 333
-    },
-    {
-      "domain": "ballerup.dk",
-      "count": 318
+      "count": 425
     },
     {
       "domain": "randers.dk",
-      "count": 303
+      "count": 403
     },
     {
-      "domain": "monsido.com",
-      "count": 260
+      "domain": "ballerup.dk",
+      "count": 381
     },
     {
       "domain": "siteimproveanalytics.com",
-      "count": 252
+      "count": 341
+    },
+    {
+      "domain": "monsido.com",
+      "count": 328
+    },
+    {
+      "domain": "twentythree.com",
+      "count": 312
+    },
+    {
+      "domain": "unpkg.com",
+      "count": 309
+    },
+    {
+      "domain": "holbaek.dk",
+      "count": 291
     },
     {
       "domain": "forsvaret.dk",
       "count": 246
     },
     {
-      "domain": "unpkg.com",
-      "count": 237
-    },
-    {
-      "domain": "twentythree.com",
-      "count": 234
-    },
-    {
-      "domain": "holbaek.dk",
-      "count": 216
-    },
-    {
-      "domain": "slagelse.dk",
-      "count": 193
-    },
-    {
-      "domain": "skat.dk",
-      "count": 189
-    },
-    {
       "domain": "aula.dk",
-      "count": 179
+      "count": 239
     },
     {
       "domain": "denmark.dk",
-      "count": 174
+      "count": 232
+    },
+    {
+      "domain": "skat.dk",
+      "count": 211
     },
     {
       "domain": "virk.dk",
-      "count": 168
+      "count": 208
     },
     {
       "domain": "gopublic.dk",
-      "count": 163
+      "count": 208
     },
     {
-      "domain": "skanderborg.dk",
-      "count": 156
-    },
-    {
-      "domain": "politi.dk",
-      "count": 151
+      "domain": "slagelse.dk",
+      "count": 202
     },
     {
       "domain": "siteimprove.com",
-      "count": 150
+      "count": 191
+    },
+    {
+      "domain": "microsoft.com",
+      "count": 180
+    },
+    {
+      "domain": "skanderborg.dk",
+      "count": 179
     }
   ],
   "relationship_types": {
-    "editorial_link": 2089,
-    "form_destination": 340,
+    "editorial_link": 2102,
+    "form_destination": 338,
     "image_or_media_dependency": 477,
     "script_dependency": 748,
-    "stylesheet_dependency": 573,
-    "font_or_preload_dependency": 120
+    "stylesheet_dependency": 576,
+    "font_or_preload_dependency": 123
   },
-  "generated_at": "2026-10-18T16:15:32.880302+00:00"
+  "generated_at": "2026-10-19T13:03:11.599093+00:00"
 }

@@ -1,15 +1,15 @@
 {
   "country_code": "CZECHIA",
-  "total_relationships": 2614,
+  "total_relationships": 2618,
   "total_source_domains": 54,
   "top_source_domains": [
     {
       "domain": "ostrava.cz",
-      "count": 6470
+      "count": 8058
     },
     {
       "domain": "brno.cz",
-      "count": 3036
+      "count": 3093
     },
     {
       "domain": "justice.cz",
@@ -207,11 +207,11 @@
   "top_target_domains": [
     {
       "domain": "ostrava.cz",
-      "count": 3135
+      "count": 3922
     },
     {
       "domain": "brno.cz",
-      "count": 1463
+      "count": 1481
     },
     {
       "domain": "justice.cz",
@@ -219,19 +219,19 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 626
+      "count": 665
     },
     {
       "domain": "facebook.com",
-      "count": 586
+      "count": 628
+    },
+    {
+      "domain": "instagram.com",
+      "count": 323
     },
     {
       "domain": "plzensky-kraj.cz",
       "count": 310
-    },
-    {
-      "domain": "instagram.com",
-      "count": 309
     },
     {
       "domain": "kraj-lbc.cz",
@@ -239,15 +239,19 @@
     },
     {
       "domain": "mpsv.cz",
-      "count": 271
+      "count": 276
     },
     {
       "domain": "twitter.com",
-      "count": 270
+      "count": 274
     },
     {
       "domain": "youtube.com",
-      "count": 263
+      "count": 271
+    },
+    {
+      "domain": "npmcdn.com",
+      "count": 268
     },
     {
       "domain": "psp.cz",
@@ -255,27 +259,23 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 247
+      "count": 249
     },
     {
       "domain": "mzcr.cz",
       "count": 247
     },
     {
+      "domain": "cloudflare.com",
+      "count": 245
+    },
+    {
       "domain": "mzp.cz",
       "count": 233
     },
     {
-      "domain": "npmcdn.com",
-      "count": 228
-    },
-    {
-      "domain": "cloudflare.com",
-      "count": 216
-    },
-    {
       "domain": "google.com",
-      "count": 197
+      "count": 206
     },
     {
       "domain": "pardubickykraj.cz",
@@ -287,7 +287,11 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 178
+      "count": 180
+    },
+    {
+      "domain": "ovanet.cz",
+      "count": 177
     },
     {
       "domain": "msmt.cz",
@@ -299,6 +303,10 @@
     },
     {
       "domain": "khk.cz",
+      "count": 156
+    },
+    {
+      "domain": "ostravainfo.cz",
       "count": 156
     },
     {
@@ -314,84 +322,80 @@
       "count": 144
     },
     {
-      "domain": "ovanet.cz",
-      "count": 144
+      "domain": "mfcr.cz",
+      "count": 139
     },
     {
-      "domain": "mfcr.cz",
-      "count": 137
+      "domain": "cookiedatabase.org",
+      "count": 139
+    },
+    {
+      "domain": "jsdelivr.net",
+      "count": 132
     },
     {
       "domain": "md.gov.cz",
       "count": 131
     },
     {
-      "domain": "ostravainfo.cz",
-      "count": 126
+      "domain": "highcharts.com",
+      "count": 128
     },
     {
-      "domain": "jsdelivr.net",
-      "count": 120
+      "domain": "portal.gov.cz",
+      "count": 124
+    },
+    {
+      "domain": "smlouvy.gov.cz",
+      "count": 122
+    },
+    {
+      "domain": "jquery.com",
+      "count": 115
     },
     {
       "domain": "usti.cz",
       "count": 114
     },
     {
-      "domain": "cookiedatabase.org",
-      "count": 111
+      "domain": "bezstavy.cz",
+      "count": 104
     },
     {
-      "domain": "jquery.com",
-      "count": 110
-    },
-    {
-      "domain": "highcharts.com",
-      "count": 108
-    },
-    {
-      "domain": "portal.gov.cz",
-      "count": 106
-    },
-    {
-      "domain": "smlouvy.gov.cz",
-      "count": 103
+      "domain": "fajnova.cz",
+      "count": 99
     },
     {
       "domain": "nzip.cz",
       "count": 96
     },
     {
-      "domain": "bezstavy.cz",
-      "count": 92
-    },
-    {
       "domain": "europa.eu",
-      "count": 91
-    },
-    {
-      "domain": "fajnova.cz",
-      "count": 77
+      "count": 94
     },
     {
       "domain": "tenderarena.cz",
-      "count": 74
-    },
-    {
-      "domain": "uradprace.cz",
-      "count": 72
-    },
-    {
-      "domain": "arcgis.com",
-      "count": 69
-    },
-    {
-      "domain": "x.com",
-      "count": 67
+      "count": 86
     },
     {
       "domain": "zdravaova.cz",
-      "count": 62
+      "count": 77
+    },
+    {
+      "domain": "arcgis.com",
+      "count": 76
+    },
+    {
+      "domain": "uradprace.cz",
+      "count": 73
+    },
+    {
+      "domain": "x.com",
+      "count": 68
+    },
+    {
+      "domain": "mapbox.com",
+      "count": 66
     },
     {
       "domain": "mvcr.cz",
@@ -399,20 +403,16 @@
     },
     {
       "domain": "chmi.cz",
-      "count": 58
-    },
-    {
-      "domain": "statnipokladna.gov.cz",
-      "count": 54
+      "count": 60
     }
   ],
   "relationship_types": {
-    "editorial_link": 1558,
+    "editorial_link": 1559,
     "script_dependency": 324,
     "stylesheet_dependency": 275,
     "form_destination": 163,
     "image_or_media_dependency": 235,
-    "font_or_preload_dependency": 59
+    "font_or_preload_dependency": 62
   },
-  "generated_at": "2026-10-18T10:46:13.281001+00:00"
+  "generated_at": "2026-10-19T04:14:14.290693+00:00"
 }
