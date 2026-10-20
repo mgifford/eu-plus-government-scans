@@ -21,8 +21,15 @@ def _parse_requirements() -> dict[str, str]:
 
 
 def test_pytest_pin_is_compatible_with_pytest_asyncio() -> None:
-    """Pinned pytest version should satisfy the pinned pytest-asyncio range."""
+    """Pinned pytest version should satisfy the pinned pytest-asyncio range.
+
+    The pins read here are the validated pair: pytest-asyncio 1.3.0 declares
+    ``pytest<10,>=8.2``, and pytest 9.0.3 satisfies it.  Update both
+    assertions together whenever either pin is bumped -- this test reads
+    ``requirements.txt``, not the installed environment, so a stale virtual
+    environment cannot mask a mismatch.
+    """
     versions = _parse_requirements()
 
-    assert versions["pytest"] == "8.4.2"
-    assert versions["pytest-asyncio"] == "0.25.2"
+    assert versions["pytest"] == "9.0.3"
+    assert versions["pytest-asyncio"] == "1.3.0"
