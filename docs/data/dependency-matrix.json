@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T13:03:14.907773+00:00",
+  "generated_at": "2026-10-20T11:47:58.760896+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -91,7 +91,7 @@
     {
       "country_code": "FINLAND",
       "country": "Finland",
-      "scanned_domains": 40
+      "scanned_domains": 41
     },
     {
       "country_code": "LUXEMBOURG",
@@ -134,14 +134,14 @@
       "scanned_domains": 24
     },
     {
-      "country_code": "SLOVAKIA",
-      "country": "Slovakia",
+      "country_code": "ICELAND",
+      "country": "Iceland",
       "scanned_domains": 20
     },
     {
-      "country_code": "ICELAND",
-      "country": "Iceland",
-      "scanned_domains": 19
+      "country_code": "SLOVAKIA",
+      "country": "Slovakia",
+      "scanned_domains": 20
     },
     {
       "country_code": "SLOVENIA",
@@ -178,12 +178,12 @@
     {
       "service": "googletagmanager.com",
       "countries": 32,
-      "domains": 2789
+      "domains": 2788
     },
     {
       "service": "gstatic.com",
       "countries": 32,
-      "domains": 1726
+      "domains": 1727
     },
     {
       "service": "jsdelivr.net",
@@ -198,17 +198,17 @@
     {
       "service": "google.com",
       "countries": 31,
-      "domains": 2159
+      "domains": 2157
     },
     {
       "service": "cloudflare.com",
       "countries": 31,
-      "domains": 1747
+      "domains": 1748
     },
     {
       "service": "jquery.com",
       "countries": 30,
-      "domains": 635
+      "domains": 636
     },
     {
       "service": "unpkg.com",
@@ -227,8 +227,8 @@
     },
     {
       "service": "cookiebot.com",
-      "countries": 24,
-      "domains": 182
+      "countries": 25,
+      "domains": 183
     },
     {
       "service": "facebook.com",
@@ -238,7 +238,7 @@
     {
       "service": "facebook.net",
       "countries": 22,
-      "domains": 194
+      "domains": 193
     },
     {
       "service": "amazonaws.com",
@@ -764,9 +764,9 @@
       "country_code": "PORTUGAL",
       "country": "Portugal",
       "service": "googletagmanager.com",
-      "domains": 205,
+      "domains": 204,
       "scanned_domains": 383,
-      "percent": 53.5
+      "percent": 53.3
     },
     {
       "country_code": "PORTUGAL",
@@ -1916,9 +1916,9 @@
       "country_code": "LATVIA",
       "country": "Latvia",
       "service": "google.com",
-      "domains": 10,
+      "domains": 9,
       "scanned_domains": 141,
-      "percent": 7.1
+      "percent": 6.4
     },
     {
       "country_code": "LATVIA",
@@ -2837,71 +2837,71 @@
       "country": "Finland",
       "service": "googleapis.com",
       "domains": 4,
-      "scanned_domains": 40,
-      "percent": 10.0
+      "scanned_domains": 41,
+      "percent": 9.8
     },
     {
       "country_code": "FINLAND",
       "country": "Finland",
       "service": "googletagmanager.com",
       "domains": 1,
-      "scanned_domains": 40,
-      "percent": 2.5
+      "scanned_domains": 41,
+      "percent": 2.4
     },
     {
       "country_code": "FINLAND",
       "country": "Finland",
       "service": "gstatic.com",
       "domains": 2,
-      "scanned_domains": 40,
-      "percent": 5.0
+      "scanned_domains": 41,
+      "percent": 4.9
     },
     {
       "country_code": "FINLAND",
       "country": "Finland",
       "service": "jsdelivr.net",
       "domains": 2,
-      "scanned_domains": 40,
-      "percent": 5.0
+      "scanned_domains": 41,
+      "percent": 4.9
     },
     {
       "country_code": "FINLAND",
       "country": "Finland",
       "service": "fontawesome.com",
       "domains": 1,
-      "scanned_domains": 40,
-      "percent": 2.5
+      "scanned_domains": 41,
+      "percent": 2.4
     },
     {
       "country_code": "FINLAND",
       "country": "Finland",
       "service": "google.com",
       "domains": 1,
-      "scanned_domains": 40,
-      "percent": 2.5
+      "scanned_domains": 41,
+      "percent": 2.4
     },
     {
       "country_code": "FINLAND",
       "country": "Finland",
       "service": "cloudflare.com",
       "domains": 3,
-      "scanned_domains": 40,
-      "percent": 7.5
+      "scanned_domains": 41,
+      "percent": 7.3
     },
     {
       "country_code": "FINLAND",
       "country": "Finland",
       "service": "jquery.com",
       "domains": 1,
-      "scanned_domains": 40,
-      "percent": 2.5
+      "scanned_domains": 41,
+      "percent": 2.4
     },
     {
       "country_code": "FINLAND",
       "country": "Finland",
       "service": "unpkg.com",
       "domains": 0,
-      "scanned_domains": 40,
+      "scanned_domains": 41,
       "percent": 0.0
     },
     {
@@ -2909,7 +2909,7 @@
       "country": "Finland",
       "service": "bootstrapcdn.com",
       "domains": 0,
-      "scanned_domains": 40,
+      "scanned_domains": 41,
       "percent": 0.0
     },
     {
@@ -2917,23 +2917,23 @@
       "country": "Finland",
       "service": "typekit.net",
       "domains": 1,
-      "scanned_domains": 40,
-      "percent": 2.5
+      "scanned_domains": 41,
+      "percent": 2.4
     },
     {
       "country_code": "FINLAND",
       "country": "Finland",
       "service": "cookiebot.com",
       "domains": 2,
-      "scanned_domains": 40,
-      "percent": 5.0
+      "scanned_domains": 41,
+      "percent": 4.9
     },
     {
       "country_code": "FINLAND",
       "country": "Finland",
       "service": "facebook.com",
       "domains": 0,
-      "scanned_domains": 40,
+      "scanned_domains": 41,
       "percent": 0.0
     },
     {
@@ -2941,7 +2941,7 @@
       "country": "Finland",
       "service": "facebook.net",
       "domains": 0,
-      "scanned_domains": 40,
+      "scanned_domains": 41,
       "percent": 0.0
     },
     {
@@ -2949,7 +2949,7 @@
       "country": "Finland",
       "service": "amazonaws.com",
       "domains": 0,
-      "scanned_domains": 40,
+      "scanned_domains": 41,
       "percent": 0.0
     },
     {
@@ -2957,15 +2957,15 @@
       "country": "Finland",
       "service": "addtoany.com",
       "domains": 2,
-      "scanned_domains": 40,
-      "percent": 5.0
+      "scanned_domains": 41,
+      "percent": 4.9
     },
     {
       "country_code": "FINLAND",
       "country": "Finland",
       "service": "arcgis.com",
       "domains": 0,
-      "scanned_domains": 40,
+      "scanned_domains": 41,
       "percent": 0.0
     },
     {
@@ -2973,7 +2973,7 @@
       "country": "Finland",
       "service": "cdn-cookieyes.com",
       "domains": 0,
-      "scanned_domains": 40,
+      "scanned_domains": 41,
       "percent": 0.0
     },
     {
@@ -2981,7 +2981,7 @@
       "country": "Finland",
       "service": "fbcdn.net",
       "domains": 0,
-      "scanned_domains": 40,
+      "scanned_domains": 41,
       "percent": 0.0
     },
     {
@@ -2989,7 +2989,7 @@
       "country": "Finland",
       "service": "mapbox.com",
       "domains": 0,
-      "scanned_domains": 40,
+      "scanned_domains": 41,
       "percent": 0.0
     },
     {
@@ -3156,9 +3156,9 @@
       "country_code": "AUSTRIA",
       "country": "Austria",
       "service": "googleapis.com",
-      "domains": 6,
+      "domains": 7,
       "scanned_domains": 34,
-      "percent": 17.6
+      "percent": 20.6
     },
     {
       "country_code": "AUSTRIA",
@@ -3172,9 +3172,9 @@
       "country_code": "AUSTRIA",
       "country": "Austria",
       "service": "gstatic.com",
-      "domains": 2,
+      "domains": 3,
       "scanned_domains": 34,
-      "percent": 5.9
+      "percent": 8.8
     },
     {
       "country_code": "AUSTRIA",
@@ -3212,9 +3212,9 @@
       "country_code": "AUSTRIA",
       "country": "Austria",
       "service": "jquery.com",
-      "domains": 1,
+      "domains": 2,
       "scanned_domains": 34,
-      "percent": 2.9
+      "percent": 5.9
     },
     {
       "country_code": "AUSTRIA",
@@ -3340,9 +3340,9 @@
       "country_code": "NORWAY",
       "country": "Norway",
       "service": "jsdelivr.net",
-      "domains": 6,
+      "domains": 5,
       "scanned_domains": 34,
-      "percent": 17.6
+      "percent": 14.7
     },
     {
       "country_code": "NORWAY",
@@ -4273,12 +4273,172 @@
       "percent": 0.0
     },
     {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "googleapis.com",
+      "domains": 9,
+      "scanned_domains": 20,
+      "percent": 45.0
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "googletagmanager.com",
+      "domains": 5,
+      "scanned_domains": 20,
+      "percent": 25.0
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "gstatic.com",
+      "domains": 1,
+      "scanned_domains": 20,
+      "percent": 5.0
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "jsdelivr.net",
+      "domains": 2,
+      "scanned_domains": 20,
+      "percent": 10.0
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "fontawesome.com",
+      "domains": 3,
+      "scanned_domains": 20,
+      "percent": 15.0
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "google.com",
+      "domains": 0,
+      "scanned_domains": 20,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "cloudflare.com",
+      "domains": 5,
+      "scanned_domains": 20,
+      "percent": 25.0
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "jquery.com",
+      "domains": 0,
+      "scanned_domains": 20,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "unpkg.com",
+      "domains": 1,
+      "scanned_domains": 20,
+      "percent": 5.0
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "bootstrapcdn.com",
+      "domains": 1,
+      "scanned_domains": 20,
+      "percent": 5.0
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "typekit.net",
+      "domains": 3,
+      "scanned_domains": 20,
+      "percent": 15.0
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "cookiebot.com",
+      "domains": 0,
+      "scanned_domains": 20,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "facebook.com",
+      "domains": 1,
+      "scanned_domains": 20,
+      "percent": 5.0
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "facebook.net",
+      "domains": 0,
+      "scanned_domains": 20,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "amazonaws.com",
+      "domains": 0,
+      "scanned_domains": 20,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "addtoany.com",
+      "domains": 0,
+      "scanned_domains": 20,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "arcgis.com",
+      "domains": 2,
+      "scanned_domains": 20,
+      "percent": 10.0
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "cdn-cookieyes.com",
+      "domains": 0,
+      "scanned_domains": 20,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "fbcdn.net",
+      "domains": 0,
+      "scanned_domains": 20,
+      "percent": 0.0
+    },
+    {
+      "country_code": "ICELAND",
+      "country": "Iceland",
+      "service": "mapbox.com",
+      "domains": 0,
+      "scanned_domains": 20,
+      "percent": 0.0
+    },
+    {
       "country_code": "SLOVAKIA",
       "country": "Slovakia",
       "service": "googleapis.com",
-      "domains": 14,
+      "domains": 13,
       "scanned_domains": 20,
-      "percent": 70.0
+      "percent": 65.0
     },
     {
       "country_code": "SLOVAKIA",
@@ -4316,9 +4476,9 @@
       "country_code": "SLOVAKIA",
       "country": "Slovakia",
       "service": "google.com",
-      "domains": 10,
+      "domains": 9,
       "scanned_domains": 20,
-      "percent": 50.0
+      "percent": 45.0
     },
     {
       "country_code": "SLOVAKIA",
@@ -4380,9 +4540,9 @@
       "country_code": "SLOVAKIA",
       "country": "Slovakia",
       "service": "facebook.net",
-      "domains": 3,
+      "domains": 2,
       "scanned_domains": 20,
-      "percent": 15.0
+      "percent": 10.0
     },
     {
       "country_code": "SLOVAKIA",
@@ -4431,166 +4591,6 @@
       "domains": 1,
       "scanned_domains": 20,
       "percent": 5.0
-    },
-    {
-      "country_code": "ICELAND",
-      "country": "Iceland",
-      "service": "googleapis.com",
-      "domains": 9,
-      "scanned_domains": 19,
-      "percent": 47.4
-    },
-    {
-      "country_code": "ICELAND",
-      "country": "Iceland",
-      "service": "googletagmanager.com",
-      "domains": 5,
-      "scanned_domains": 19,
-      "percent": 26.3
-    },
-    {
-      "country_code": "ICELAND",
-      "country": "Iceland",
-      "service": "gstatic.com",
-      "domains": 1,
-      "scanned_domains": 19,
-      "percent": 5.3
-    },
-    {
-      "country_code": "ICELAND",
-      "country": "Iceland",
-      "service": "jsdelivr.net",
-      "domains": 1,
-      "scanned_domains": 19,
-      "percent": 5.3
-    },
-    {
-      "country_code": "ICELAND",
-      "country": "Iceland",
-      "service": "fontawesome.com",
-      "domains": 3,
-      "scanned_domains": 19,
-      "percent": 15.8
-    },
-    {
-      "country_code": "ICELAND",
-      "country": "Iceland",
-      "service": "google.com",
-      "domains": 0,
-      "scanned_domains": 19,
-      "percent": 0.0
-    },
-    {
-      "country_code": "ICELAND",
-      "country": "Iceland",
-      "service": "cloudflare.com",
-      "domains": 4,
-      "scanned_domains": 19,
-      "percent": 21.1
-    },
-    {
-      "country_code": "ICELAND",
-      "country": "Iceland",
-      "service": "jquery.com",
-      "domains": 0,
-      "scanned_domains": 19,
-      "percent": 0.0
-    },
-    {
-      "country_code": "ICELAND",
-      "country": "Iceland",
-      "service": "unpkg.com",
-      "domains": 1,
-      "scanned_domains": 19,
-      "percent": 5.3
-    },
-    {
-      "country_code": "ICELAND",
-      "country": "Iceland",
-      "service": "bootstrapcdn.com",
-      "domains": 1,
-      "scanned_domains": 19,
-      "percent": 5.3
-    },
-    {
-      "country_code": "ICELAND",
-      "country": "Iceland",
-      "service": "typekit.net",
-      "domains": 3,
-      "scanned_domains": 19,
-      "percent": 15.8
-    },
-    {
-      "country_code": "ICELAND",
-      "country": "Iceland",
-      "service": "cookiebot.com",
-      "domains": 0,
-      "scanned_domains": 19,
-      "percent": 0.0
-    },
-    {
-      "country_code": "ICELAND",
-      "country": "Iceland",
-      "service": "facebook.com",
-      "domains": 1,
-      "scanned_domains": 19,
-      "percent": 5.3
-    },
-    {
-      "country_code": "ICELAND",
-      "country": "Iceland",
-      "service": "facebook.net",
-      "domains": 0,
-      "scanned_domains": 19,
-      "percent": 0.0
-    },
-    {
-      "country_code": "ICELAND",
-      "country": "Iceland",
-      "service": "amazonaws.com",
-      "domains": 0,
-      "scanned_domains": 19,
-      "percent": 0.0
-    },
-    {
-      "country_code": "ICELAND",
-      "country": "Iceland",
-      "service": "addtoany.com",
-      "domains": 0,
-      "scanned_domains": 19,
-      "percent": 0.0
-    },
-    {
-      "country_code": "ICELAND",
-      "country": "Iceland",
-      "service": "arcgis.com",
-      "domains": 2,
-      "scanned_domains": 19,
-      "percent": 10.5
-    },
-    {
-      "country_code": "ICELAND",
-      "country": "Iceland",
-      "service": "cdn-cookieyes.com",
-      "domains": 0,
-      "scanned_domains": 19,
-      "percent": 0.0
-    },
-    {
-      "country_code": "ICELAND",
-      "country": "Iceland",
-      "service": "fbcdn.net",
-      "domains": 0,
-      "scanned_domains": 19,
-      "percent": 0.0
-    },
-    {
-      "country_code": "ICELAND",
-      "country": "Iceland",
-      "service": "mapbox.com",
-      "domains": 0,
-      "scanned_domains": 19,
-      "percent": 0.0
     },
     {
       "country_code": "SLOVENIA",
@@ -4844,9 +4844,9 @@
       "country_code": "LITHUANIA",
       "country": "Lithuania",
       "service": "cookiebot.com",
-      "domains": 0,
+      "domains": 1,
       "scanned_domains": 15,
-      "percent": 0.0
+      "percent": 6.7
     },
     {
       "country_code": "LITHUANIA",

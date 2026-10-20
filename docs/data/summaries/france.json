@@ -211,7 +211,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 8801
+      "count": 8810
     },
     {
       "domain": "haute-garonne.fr",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 5988
+      "count": 5996
     },
     {
       "domain": "skolengo.com",
@@ -231,7 +231,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 5308
+      "count": 5313
     },
     {
       "domain": "cnam.fr",
@@ -239,11 +239,11 @@
     },
     {
       "domain": "data.gouv.fr",
-      "count": 4987
+      "count": 4995
     },
     {
       "domain": "twitter.com",
-      "count": 4659
+      "count": 4663
     },
     {
       "domain": "googleapis.com",
@@ -251,7 +251,7 @@
     },
     {
       "domain": "legifrance.gouv.fr",
-      "count": 4299
+      "count": 4307
     },
     {
       "domain": "youtube.com",
@@ -263,11 +263,11 @@
     },
     {
       "domain": "github.com",
-      "count": 3369
+      "count": 3377
     },
     {
       "domain": "info.gouv.fr",
-      "count": 2676
+      "count": 2684
     },
     {
       "domain": "education.gouv.fr",
@@ -275,7 +275,7 @@
     },
     {
       "domain": "service-public.fr",
-      "count": 2420
+      "count": 2421
     },
     {
       "domain": "rennes.fr",
@@ -283,7 +283,7 @@
     },
     {
       "domain": "service-public.gouv.fr",
-      "count": 2253
+      "count": 2261
     },
     {
       "domain": "beta.gouv.fr",
@@ -318,12 +318,12 @@
       "count": 1719
     },
     {
-      "domain": "toulouse.fr",
-      "count": 1577
+      "domain": "x.com",
+      "count": 1578
     },
     {
-      "domain": "x.com",
-      "count": 1571
+      "domain": "toulouse.fr",
+      "count": 1577
     },
     {
       "domain": "defense.gouv.fr",
@@ -355,7 +355,7 @@
     },
     {
       "domain": "interieur.gouv.fr",
-      "count": 1177
+      "count": 1178
     },
     {
       "domain": "gouvernement.fr",
@@ -414,5 +414,5 @@
     "form_destination": 1715,
     "font_or_preload_dependency": 701
   },
-  "generated_at": "2026-10-19T04:14:14.395106+00:00"
+  "generated_at": "2026-10-20T11:47:55.517312+00:00"
 }

@@ -16,12 +16,12 @@
       "count": 1407
     },
     {
-      "domain": "regionorebrolan.se",
-      "count": 1229
+      "domain": "vaxjo.se",
+      "count": 1249
     },
     {
-      "domain": "vaxjo.se",
-      "count": 1209
+      "domain": "regionorebrolan.se",
+      "count": 1229
     },
     {
       "domain": "norrkoping.se",
@@ -211,15 +211,15 @@
     },
     {
       "domain": "facebook.com",
-      "count": 1486
+      "count": 1488
     },
     {
       "domain": "linkedin.com",
-      "count": 1267
+      "count": 1269
     },
     {
       "domain": "instagram.com",
-      "count": 1209
+      "count": 1211
     },
     {
       "domain": "regionstockholm.se",
@@ -231,7 +231,7 @@
     },
     {
       "domain": "vaxjo.se",
-      "count": 856
+      "count": 888
     },
     {
       "domain": "1177.se",
@@ -319,7 +319,7 @@
     },
     {
       "domain": "rekai.se",
-      "count": 252
+      "count": 254
     },
     {
       "domain": "lantmateriet.se",
@@ -414,5 +414,5 @@
     "image_or_media_dependency": 680,
     "font_or_preload_dependency": 307
   },
-  "generated_at": "2026-10-19T04:14:15.354852+00:00"
+  "generated_at": "2026-10-20T11:47:55.109932+00:00"
 }

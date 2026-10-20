@@ -1,354 +1,354 @@
 {
   "country_code": "NORWAY",
-  "total_relationships": 869,
+  "total_relationships": 871,
   "total_source_domains": 34,
   "top_source_domains": [
     {
       "domain": "miljodirektoratet.no",
-      "count": 615
+      "count": 823
     },
     {
       "domain": "udir.no",
-      "count": 533
+      "count": 724
     },
     {
       "domain": "lovdata.no",
-      "count": 491
+      "count": 654
     },
     {
       "domain": "nve.no",
-      "count": 474
+      "count": 632
     },
     {
       "domain": "vegvesen.no",
-      "count": 369
+      "count": 494
     },
     {
       "domain": "arbeidstilsynet.no",
-      "count": 313
+      "count": 417
     },
     {
       "domain": "brreg.no",
-      "count": 287
+      "count": 384
     },
     {
       "domain": "stortinget.no",
-      "count": 261
-    },
-    {
-      "domain": "nav.no",
-      "count": 251
+      "count": 348
     },
     {
       "domain": "skatteetaten.no",
-      "count": 246
+      "count": 328
     },
     {
       "domain": "kystverket.no",
-      "count": 240
+      "count": 321
+    },
+    {
+      "domain": "nav.no",
+      "count": 320
     },
     {
       "domain": "ssb.no",
-      "count": 192
+      "count": 256
     },
     {
       "domain": "fhi.no",
-      "count": 189
+      "count": 252
     },
     {
       "domain": "bufdir.no",
-      "count": 169
+      "count": 228
     },
     {
       "domain": "forsvaret.no",
-      "count": 165
+      "count": 220
     },
     {
       "domain": "dsa.no",
-      "count": 141
+      "count": 188
     },
     {
       "domain": "mattilsynet.no",
-      "count": 122
+      "count": 162
     },
     {
       "domain": "nupi.no",
-      "count": 114
+      "count": 152
     },
     {
       "domain": "nkom.no",
-      "count": 103
+      "count": 139
     },
     {
       "domain": "altinn.no",
-      "count": 99
+      "count": 133
     },
     {
       "domain": "norges-bank.no",
-      "count": 93
+      "count": 124
     },
     {
       "domain": "udi.no",
-      "count": 89
+      "count": 98
     },
     {
       "domain": "helsenorge.no",
-      "count": 69
+      "count": 92
     },
     {
       "domain": "regjeringen.no",
+      "count": 60
+    },
+    {
+      "domain": "patentstyret.no",
+      "count": 48
+    },
+    {
+      "domain": "tilsynet.no",
       "count": 48
     },
     {
       "domain": "koro.no",
-      "count": 36
-    },
-    {
-      "domain": "patentstyret.no",
-      "count": 36
-    },
-    {
-      "domain": "tilsynet.no",
-      "count": 36
+      "count": 45
     },
     {
       "domain": "datatilsynet.no",
-      "count": 30
-    },
-    {
-      "domain": "pst.no",
-      "count": 30
+      "count": 40
     },
     {
       "domain": "riksadvokaten.no",
-      "count": 30
+      "count": 40
+    },
+    {
+      "domain": "pst.no",
+      "count": 36
     },
     {
       "domain": "domstol.no",
-      "count": 21
+      "count": 28
     },
     {
       "domain": "advnemnda.no",
-      "count": 18
+      "count": 24
     },
     {
       "domain": "riksmekleren.no",
-      "count": 18
+      "count": 24
     },
     {
       "domain": "generaladvokaten.no",
-      "count": 9
+      "count": 12
     }
   ],
   "top_target_domains": [
     {
       "domain": "miljodirektoratet.no",
-      "count": 366
+      "count": 491
     },
     {
       "domain": "udir.no",
-      "count": 363
+      "count": 488
     },
     {
       "domain": "lovdata.no",
-      "count": 290
+      "count": 385
     },
     {
       "domain": "brreg.no",
-      "count": 271
+      "count": 362
     },
     {
       "domain": "vegvesen.no",
-      "count": 268
+      "count": 358
     },
     {
       "domain": "nve.no",
-      "count": 222
+      "count": 296
     },
     {
       "domain": "googleapis.com",
-      "count": 196
+      "count": 258
     },
     {
       "domain": "uustatus.no",
-      "count": 190
+      "count": 254
     },
     {
       "domain": "nav.no",
-      "count": 186
+      "count": 235
     },
     {
       "domain": "stortinget.no",
-      "count": 165
-    },
-    {
-      "domain": "arbeidstilsynet.no",
-      "count": 156
+      "count": 220
     },
     {
       "domain": "linkedin.com",
-      "count": 155
+      "count": 211
+    },
+    {
+      "domain": "arbeidstilsynet.no",
+      "count": 207
     },
     {
       "domain": "fhi.no",
-      "count": 120
+      "count": 160
     },
     {
       "domain": "facebook.com",
-      "count": 115
+      "count": 154
     },
     {
       "domain": "kystverket.no",
-      "count": 111
+      "count": 149
     },
     {
       "domain": "ssb.no",
-      "count": 111
+      "count": 148
     },
     {
       "domain": "forsvaret.no",
-      "count": 108
+      "count": 144
     },
     {
       "domain": "bufdir.no",
-      "count": 105
+      "count": 140
     },
     {
       "domain": "skatteetaten.no",
-      "count": 104
-    },
-    {
-      "domain": "mattilsynet.no",
-      "count": 99
+      "count": 138
     },
     {
       "domain": "instagram.com",
-      "count": 98
+      "count": 132
+    },
+    {
+      "domain": "mattilsynet.no",
+      "count": 132
     },
     {
       "domain": "plausible.io",
-      "count": 96
+      "count": 128
     },
     {
       "domain": "google.com",
-      "count": 87
+      "count": 116
     },
     {
       "domain": "dsa.no",
-      "count": 75
+      "count": 100
     },
     {
       "domain": "cookieinformation.com",
-      "count": 71
+      "count": 96
     },
     {
       "domain": "siteimproveanalytics.com",
-      "count": 69
+      "count": 95
     },
     {
       "domain": "helsenorge.no",
-      "count": 69
+      "count": 92
     },
     {
       "domain": "altinn.no",
-      "count": 65
+      "count": 87
     },
     {
       "domain": "jsdelivr.net",
-      "count": 63
+      "count": 80
     },
     {
       "domain": "nkom.no",
-      "count": 58
-    },
-    {
-      "domain": "regjeringen.no",
-      "count": 55
-    },
-    {
-      "domain": "cloudflare.com",
-      "count": 54
+      "count": 76
     },
     {
       "domain": "norges-bank.no",
-      "count": 54
+      "count": 72
     },
     {
-      "domain": "udi.no",
-      "count": 53
+      "domain": "cloudflare.com",
+      "count": 69
+    },
+    {
+      "domain": "regjeringen.no",
+      "count": 68
     },
     {
       "domain": "youtube.com",
-      "count": 48
+      "count": 64
+    },
+    {
+      "domain": "udi.no",
+      "count": 62
     },
     {
       "domain": "x.com",
-      "count": 39
-    },
-    {
-      "domain": "gstatic.com",
-      "count": 36
+      "count": 52
     },
     {
       "domain": "skyra.no",
-      "count": 35
+      "count": 48
+    },
+    {
+      "domain": "gstatic.com",
+      "count": 48
     },
     {
       "domain": "altinncdn.no",
-      "count": 30
+      "count": 42
     },
     {
       "domain": "cloudfront.net",
-      "count": 30
+      "count": 40
     },
     {
       "domain": "twitter.com",
-      "count": 27
+      "count": 36
     },
     {
       "domain": "ckan.org",
-      "count": 27
+      "count": 36
     },
     {
       "domain": "googletagmanager.com",
-      "count": 24
+      "count": 32
     },
     {
       "domain": "github.com",
-      "count": 24
+      "count": 32
     },
     {
       "domain": "nupi.no",
-      "count": 24
+      "count": 32
     },
     {
       "domain": "patentstyret.no",
-      "count": 24
+      "count": 32
     },
     {
       "domain": "europalov.no",
-      "count": 23
+      "count": 30
     },
     {
       "domain": "cookiebot.com",
-      "count": 21
+      "count": 28
     },
     {
       "domain": "domstol.no",
-      "count": 18
+      "count": 24
     },
     {
-      "domain": "koro.no",
-      "count": 18
+      "domain": "typekit.net",
+      "count": 24
     }
   ],
   "relationship_types": {
-    "editorial_link": 349,
+    "editorial_link": 351,
     "stylesheet_dependency": 152,
     "image_or_media_dependency": 79,
     "form_destination": 47,
-    "script_dependency": 198,
-    "font_or_preload_dependency": 44
+    "script_dependency": 197,
+    "font_or_preload_dependency": 45
   },
-  "generated_at": "2026-10-19T04:14:13.933473+00:00"
+  "generated_at": "2026-10-19T22:51:04.757462+00:00"
 }

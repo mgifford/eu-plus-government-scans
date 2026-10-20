@@ -9,7 +9,7 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 30135
+      "count": 30478
     },
     {
       "domain": "gva.es",
@@ -211,7 +211,7 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 14983
+      "count": 15125
     },
     {
       "domain": "gva.es",
@@ -219,31 +219,31 @@
     },
     {
       "domain": "facebook.com",
-      "count": 4167
+      "count": 4184
     },
     {
       "domain": "twitter.com",
-      "count": 3837
+      "count": 3849
     },
     {
       "domain": "youtube.com",
-      "count": 3438
+      "count": 3453
     },
     {
       "domain": "googleapis.com",
-      "count": 3329
+      "count": 3360
     },
     {
       "domain": "google.com",
-      "count": 3170
+      "count": 3173
     },
     {
       "domain": "jccm.es",
-      "count": 3115
+      "count": 3127
     },
     {
       "domain": "instagram.com",
-      "count": 3003
+      "count": 3020
     },
     {
       "domain": "aragon.es",
@@ -259,7 +259,7 @@
     },
     {
       "domain": "w3.org",
-      "count": 1529
+      "count": 1530
     },
     {
       "domain": "caib.es",
@@ -270,12 +270,12 @@
       "count": 1447
     },
     {
-      "domain": "juntaex.es",
-      "count": 1431
+      "domain": "linkedin.com",
+      "count": 1441
     },
     {
-      "domain": "linkedin.com",
-      "count": 1426
+      "domain": "juntaex.es",
+      "count": 1431
     },
     {
       "domain": "educativa.com",
@@ -287,7 +287,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 1070
+      "count": 1084
     },
     {
       "domain": "redsara.es",
@@ -303,7 +303,7 @@
     },
     {
       "domain": "x.com",
-      "count": 876
+      "count": 881
     },
     {
       "domain": "europa.eu",
@@ -315,11 +315,11 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 771
+      "count": 774
     },
     {
       "domain": "flickr.com",
-      "count": 751
+      "count": 765
     },
     {
       "domain": "google.es",
@@ -335,11 +335,11 @@
     },
     {
       "domain": "fontawesome.com",
-      "count": 667
+      "count": 681
     },
     {
       "domain": "insuit.net",
-      "count": 637
+      "count": 649
     },
     {
       "domain": "jsdelivr.net",
@@ -351,7 +351,7 @@
     },
     {
       "domain": "aemet.es",
-      "count": 614
+      "count": 615
     },
     {
       "domain": "defensa.gob.es",
@@ -414,5 +414,5 @@
     "form_destination": 1439,
     "font_or_preload_dependency": 153
   },
-  "generated_at": "2026-10-19T04:14:14.667519+00:00"
+  "generated_at": "2026-10-20T11:47:55.826035+00:00"
 }

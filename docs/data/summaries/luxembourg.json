@@ -1,15 +1,15 @@
 {
   "country_code": "LUXEMBOURG",
-  "total_relationships": 2076,
+  "total_relationships": 2077,
   "total_source_domains": 40,
   "top_source_domains": [
     {
       "domain": "gouvernement.lu",
-      "count": 6799
+      "count": 7353
     },
     {
       "domain": "public.lu",
-      "count": 5298
+      "count": 5874
     },
     {
       "domain": "uni.lu",
@@ -167,19 +167,19 @@
   "top_target_domains": [
     {
       "domain": "public.lu",
-      "count": 5355
+      "count": 5890
     },
     {
       "domain": "gouvernement.lu",
-      "count": 3103
+      "count": 3330
     },
     {
       "domain": "facebook.com",
-      "count": 741
+      "count": 781
     },
     {
       "domain": "linkedin.com",
-      "count": 679
+      "count": 722
     },
     {
       "domain": "uni.lu",
@@ -187,31 +187,31 @@
     },
     {
       "domain": "twitter.com",
-      "count": 510
+      "count": 544
     },
     {
       "domain": "bsky.app",
-      "count": 420
+      "count": 454
     },
     {
       "domain": "instagram.com",
-      "count": 384
-    },
-    {
-      "domain": "etat.lu",
-      "count": 299
+      "count": 397
     },
     {
       "domain": "adobedtm.com",
-      "count": 276
+      "count": 323
+    },
+    {
+      "domain": "etat.lu",
+      "count": 302
     },
     {
       "domain": "youtube.com",
-      "count": 259
+      "count": 269
     },
     {
       "domain": "europa.eu",
-      "count": 216
+      "count": 240
     },
     {
       "domain": "googleapis.com",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "google.com",
-      "count": 76
+      "count": 79
     },
     {
       "domain": "chem.lu",
@@ -271,6 +271,10 @@
     },
     {
       "domain": "typekit.net",
+      "count": 63
+    },
+    {
+      "domain": "readspeaker.com",
       "count": 60
     },
     {
@@ -282,12 +286,20 @@
       "count": 57
     },
     {
-      "domain": "readspeaker.com",
+      "domain": "unpkg.com",
       "count": 57
+    },
+    {
+      "domain": "guichet.lu",
+      "count": 56
     },
     {
       "domain": "schifflange.lu",
       "count": 56
+    },
+    {
+      "domain": "geoportail.lu",
+      "count": 55
     },
     {
       "domain": "bettembourg.lu",
@@ -302,20 +314,8 @@
       "count": 54
     },
     {
-      "domain": "unpkg.com",
-      "count": 54
-    },
-    {
       "domain": "sandweiler.lu",
       "count": 54
-    },
-    {
-      "domain": "guichet.lu",
-      "count": 52
-    },
-    {
-      "domain": "geoportail.lu",
-      "count": 46
     },
     {
       "domain": "tiktok.com",
@@ -346,6 +346,14 @@
       "count": 42
     },
     {
+      "domain": "services-publics.lu",
+      "count": 40
+    },
+    {
+      "domain": "luxembourg.lu",
+      "count": 39
+    },
+    {
       "domain": "meteolux.lu",
       "count": 39
     },
@@ -354,25 +362,17 @@
       "count": 39
     },
     {
-      "domain": "luxembourg.lu",
-      "count": 36
-    },
-    {
       "domain": "chl.lu",
-      "count": 36
-    },
-    {
-      "domain": "ilr.lu",
       "count": 36
     }
   ],
   "relationship_types": {
-    "editorial_link": 1160,
+    "editorial_link": 1161,
     "form_destination": 164,
     "image_or_media_dependency": 201,
     "script_dependency": 282,
     "stylesheet_dependency": 240,
     "font_or_preload_dependency": 29
   },
-  "generated_at": "2026-10-19T04:14:15.073596+00:00"
+  "generated_at": "2026-10-20T04:22:07.816893+00:00"
 }

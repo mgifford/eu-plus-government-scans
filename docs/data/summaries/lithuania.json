@@ -1,47 +1,47 @@
 {
   "country_code": "LITHUANIA",
-  "total_relationships": 534,
-  "total_source_domains": 15,
+  "total_relationships": 532,
+  "total_source_domains": 16,
   "top_source_domains": [
     {
       "domain": "kaunas.lt",
-      "count": 1113
+      "count": 1481
     },
     {
       "domain": "smm.lt",
-      "count": 439
+      "count": 551
     },
     {
       "domain": "klaipeda.lt",
-      "count": 407
+      "count": 538
     },
     {
       "domain": "siauliai.lt",
-      "count": 321
+      "count": 428
     },
     {
       "domain": "vmi.lt",
-      "count": 255
+      "count": 310
     },
     {
       "domain": "lrs.lt",
-      "count": 170
+      "count": 195
     },
     {
       "domain": "kaunasin.lt",
-      "count": 138
+      "count": 186
     },
     {
       "domain": "lnb.lt",
-      "count": 61
+      "count": 82
     },
     {
       "domain": "panevezys.lt",
-      "count": 60
+      "count": 80
     },
     {
       "domain": "alytus.lt",
-      "count": 59
+      "count": 78
     },
     {
       "domain": "sveikata.lt",
@@ -57,92 +57,104 @@
     },
     {
       "domain": "finmin.lt",
-      "count": 12
+      "count": 16
     },
     {
       "domain": "vilnius.lt",
-      "count": 12
+      "count": 16
+    },
+    {
+      "domain": "smsm.lt",
+      "count": 3
     }
   ],
   "top_target_domains": [
     {
       "domain": "kaunas.lt",
-      "count": 534
+      "count": 704
     },
     {
       "domain": "smm.lt",
-      "count": 266
+      "count": 324
     },
     {
       "domain": "vmi.lt",
-      "count": 192
+      "count": 238
     },
     {
       "domain": "googleapis.com",
-      "count": 155
+      "count": 205
     },
     {
       "domain": "siauliai.lt",
-      "count": 126
+      "count": 168
     },
     {
       "domain": "klaipeda.lt",
-      "count": 120
-    },
-    {
-      "domain": "lrs.lt",
-      "count": 106
+      "count": 158
     },
     {
       "domain": "facebook.com",
-      "count": 98
+      "count": 126
+    },
+    {
+      "domain": "lrs.lt",
+      "count": 126
     },
     {
       "domain": "instagram.com",
-      "count": 68
-    },
-    {
-      "domain": "youtube.com",
-      "count": 62
-    },
-    {
-      "domain": "googletagmanager.com",
-      "count": 61
+      "count": 88
     },
     {
       "domain": "jsdelivr.net",
-      "count": 60
+      "count": 80
+    },
+    {
+      "domain": "youtube.com",
+      "count": 79
     },
     {
       "domain": "cloudflare.com",
-      "count": 59
+      "count": 77
+    },
+    {
+      "domain": "googletagmanager.com",
+      "count": 77
     },
     {
       "domain": "google.com",
-      "count": 57
-    },
-    {
-      "domain": "linkedin.com",
-      "count": 56
+      "count": 76
     },
     {
       "domain": "kaunasin.lt",
-      "count": 54
+      "count": 72
+    },
+    {
+      "domain": "linkedin.com",
+      "count": 71
     },
     {
       "domain": "panevezys.lt",
-      "count": 45
+      "count": 60
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 42
+      "count": 56
     },
     {
       "domain": "arcgis.com",
-      "count": 42
+      "count": 50
     },
     {
       "domain": "gstatic.com",
+      "count": 37
+    },
+    {
+      "domain": "alytus.lt",
+      "count": 33
+    },
+    {
+      "domain": "jquery.com",
       "count": 30
     },
     {
@@ -150,129 +162,121 @@
       "count": 30
     },
     {
-      "domain": "alytus.lt",
-      "count": 25
-    },
-    {
-      "domain": "jquery.com",
-      "count": 23
-    },
-    {
       "domain": "spis.lt",
-      "count": 21
+      "count": 28
     },
     {
       "domain": "emokykla.lt",
-      "count": 21
+      "count": 28
     },
     {
       "domain": "lnb.lt",
-      "count": 19
+      "count": 26
     },
     {
       "domain": "heyzine.com",
-      "count": 18
+      "count": 24
     },
     {
       "domain": "planuojustatau.lt",
-      "count": 18
+      "count": 24
+    },
+    {
+      "domain": "lrv.lt",
+      "count": 24
+    },
+    {
+      "domain": "fontawesome.com",
+      "count": 22
+    },
+    {
+      "domain": "sodra.lt",
+      "count": 22
+    },
+    {
+      "domain": "e-tar.lt",
+      "count": 21
     },
     {
       "domain": "migracija.lt",
       "count": 18
     },
     {
-      "domain": "lrv.lt",
-      "count": 18
-    },
-    {
-      "domain": "sodra.lt",
-      "count": 18
-    },
-    {
-      "domain": "e-tar.lt",
-      "count": 17
-    },
-    {
-      "domain": "fontawesome.com",
-      "count": 17
-    },
-    {
       "domain": "twitter.com",
-      "count": 14
+      "count": 17
     },
     {
       "domain": "epaslaugos.lt",
-      "count": 12
+      "count": 16
     },
     {
       "domain": "vilnius.lt",
-      "count": 12
+      "count": 16
     },
     {
       "domain": "europa.eu",
-      "count": 11
+      "count": 15
     },
     {
       "domain": "esinvesticijos.lt",
-      "count": 9
+      "count": 12
     },
     {
       "domain": "finmin.lt",
-      "count": 9
+      "count": 12
     },
     {
       "domain": "kaunaspilnasrenginiu.lt",
-      "count": 9
+      "count": 12
     },
     {
       "domain": "registrucentras.lt",
-      "count": 9
+      "count": 12
     },
     {
       "domain": "sharethis.com",
-      "count": 9
+      "count": 12
     },
     {
       "domain": "vienasaskaita.lt",
-      "count": 9
+      "count": 12
     },
     {
       "domain": "cookiebot.com",
-      "count": 9
+      "count": 12
     },
     {
       "domain": "itsneat.digital",
-      "count": 9
+      "count": 12
     },
     {
       "domain": "kaunastika.lt",
-      "count": 9
+      "count": 12
     },
     {
       "domain": "userway.org",
-      "count": 9
+      "count": 12
     },
     {
       "domain": "spotify.com",
-      "count": 9
+      "count": 10
     },
     {
-      "domain": "unpkg.com",
+      "domain": "redcross.lt",
       "count": 9
     },
     {
       "domain": "flickr.com",
-      "count": 8
+      "count": 9
     }
   ],
   "relationship_types": {
-    "image_or_media_dependency": 50,
+    "image_or_media_dependency": 49,
     "form_destination": 31,
     "font_or_preload_dependency": 10,
-    "script_dependency": 96,
-    "stylesheet_dependency": 72,
-    "editorial_link": 275
+    "script_dependency": 95,
+    "stylesheet_dependency": 71,
+    "editorial_link": 276
   },
-  "generated_at": "2026-10-19T13:03:11.795990+00:00"
+  "generated_at": "2026-10-19T22:51:04.457815+00:00"
 }

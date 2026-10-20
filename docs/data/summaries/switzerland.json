@@ -1,11 +1,11 @@
 {
   "country_code": "SWITZERLAND",
-  "total_relationships": 6829,
+  "total_relationships": 6836,
   "total_source_domains": 9,
   "top_source_domains": [
     {
       "domain": "ethz.ch",
-      "count": 71514
+      "count": 74184
     },
     {
       "domain": "admin.ch",
@@ -43,11 +43,11 @@
   "top_target_domains": [
     {
       "domain": "ethz.ch",
-      "count": 60649
+      "count": 62820
     },
     {
       "domain": "admin.ch",
-      "count": 10680
+      "count": 10683
     },
     {
       "domain": "epfl.ch",
@@ -59,35 +59,35 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 1942
+      "count": 1965
     },
     {
       "domain": "youtube.com",
-      "count": 1365
+      "count": 1380
     },
     {
       "domain": "instagram.com",
-      "count": 1148
+      "count": 1165
     },
     {
       "domain": "github.io",
-      "count": 781
+      "count": 862
     },
     {
       "domain": "facebook.com",
-      "count": 761
+      "count": 767
     },
     {
       "domain": "twitter.com",
-      "count": 711
+      "count": 721
     },
     {
       "domain": "x.com",
-      "count": 671
+      "count": 679
     },
     {
       "domain": "googleapis.com",
-      "count": 562
+      "count": 579
     },
     {
       "domain": "imgix.net",
@@ -98,44 +98,44 @@
       "count": 372
     },
     {
-      "domain": "google.com",
-      "count": 293
+      "domain": "readspeaker.com",
+      "count": 300
     },
     {
-      "domain": "readspeaker.com",
-      "count": 290
+      "domain": "google.com",
+      "count": 299
     },
     {
       "domain": "googletagmanager.com",
-      "count": 270
+      "count": 275
     },
     {
       "domain": "jsdelivr.net",
-      "count": 213
+      "count": 221
     },
     {
       "domain": "github.com",
-      "count": 201
-    },
-    {
-      "domain": "cloudflare.com",
-      "count": 197
+      "count": 207
     },
     {
       "domain": "doi.org",
-      "count": 197
+      "count": 207
     },
     {
       "domain": "jquery.com",
-      "count": 195
+      "count": 204
+    },
+    {
+      "domain": "cloudflare.com",
+      "count": 202
     },
     {
       "domain": "uzh.ch",
-      "count": 178
+      "count": 184
     },
     {
       "domain": "bsky.app",
-      "count": 157
+      "count": 164
     },
     {
       "domain": "cookielaw.org",
@@ -146,32 +146,32 @@
       "count": 123
     },
     {
+      "domain": "gstatic.com",
+      "count": 121
+    },
+    {
+      "domain": "bootstrapcdn.com",
+      "count": 119
+    },
+    {
       "domain": "parlament.ch",
       "count": 117
     },
     {
-      "domain": "bootstrapcdn.com",
-      "count": 117
-    },
-    {
-      "domain": "gstatic.com",
-      "count": 116
-    },
-    {
       "domain": "arxiv.org",
-      "count": 108
+      "count": 114
+    },
+    {
+      "domain": "mpg.de",
+      "count": 110
     },
     {
       "domain": "siggraph.org",
       "count": 90
     },
     {
-      "domain": "mpg.de",
-      "count": 87
-    },
-    {
       "domain": "nature.com",
-      "count": 70
+      "count": 76
     },
     {
       "domain": "sharepoint.com",
@@ -179,35 +179,47 @@
     },
     {
       "domain": "youtu.be",
-      "count": 64
+      "count": 67
     },
     {
       "domain": "apple.com",
-      "count": 63
+      "count": 64
     },
     {
       "domain": "switch.ch",
       "count": 63
     },
     {
+      "domain": "stanford.edu",
+      "count": 62
+    },
+    {
       "domain": "typekit.net",
-      "count": 60
+      "count": 62
     },
     {
       "domain": "snf.ch",
-      "count": 59
+      "count": 61
+    },
+    {
+      "domain": "microsoft.com",
+      "count": 56
+    },
+    {
+      "domain": "acm.org",
+      "count": 56
+    },
+    {
+      "domain": "fontawesome.com",
+      "count": 56
     },
     {
       "domain": "vimeo.com",
       "count": 55
     },
     {
-      "domain": "acm.org",
-      "count": 54
-    },
-    {
-      "domain": "stanford.edu",
-      "count": 54
+      "domain": "wiley.com",
+      "count": 55
     },
     {
       "domain": "wp.com",
@@ -218,15 +230,7 @@
       "count": 53
     },
     {
-      "domain": "fontawesome.com",
-      "count": 52
-    },
-    {
-      "domain": "wiley.com",
-      "count": 52
-    },
-    {
-      "domain": "microsoft.com",
+      "domain": "europa.eu",
       "count": 51
     },
     {
@@ -236,19 +240,15 @@
     {
       "domain": "kaltura.com",
       "count": 51
-    },
-    {
-      "domain": "cloudfront.net",
-      "count": 51
     }
   ],
   "relationship_types": {
-    "editorial_link": 3563,
-    "image_or_media_dependency": 817,
-    "font_or_preload_dependency": 171,
+    "editorial_link": 3567,
+    "image_or_media_dependency": 818,
+    "font_or_preload_dependency": 173,
     "script_dependency": 911,
     "stylesheet_dependency": 896,
     "form_destination": 471
   },
-  "generated_at": "2026-10-19T13:03:11.699702+00:00"
+  "generated_at": "2026-10-20T04:22:07.394736+00:00"
 }
