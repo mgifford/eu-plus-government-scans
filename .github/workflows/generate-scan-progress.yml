@@ -146,6 +146,16 @@ jobs:
             --seeds-dir data/toon-seeds/countries \
             2>&1 | tee accessibility-report-output.txt
 
+      - name: Generate user-preferences stats page
+        run: |
+          set -o pipefail
+          python3 -m src.cli.generate_preference_report \
+            --page docs/user-preferences.md \
+            --data docs/user-preferences-data.json \
+            --csv docs/user-preferences-data.csv \
+            --seeds-dir data/toon-seeds/countries \
+            2>&1 | tee preference-report-output.txt
+
       - name: Generate Lighthouse results page
         run: |
           set -o pipefail
@@ -192,6 +202,7 @@ jobs:
             --seeds-dir data/toon-seeds/countries \
             --scanner accessibility --scanner social_media \
             --scanner technology --scanner third_party_js --scanner overlays \
+            --scanner preferences \
             --scanner relationships \
             --format markdown --table-only \
             --output /tmp/pace-table-main.md \
@@ -322,6 +333,9 @@ jobs:
             docs/third-party-tools-data.json
             docs/accessibility-statements.md
             docs/accessibility-data.json
+            docs/user-preferences.md
+            docs/user-preferences-data.json
+            docs/user-preferences-data.csv
             docs/lighthouse-results.md
             docs/lighthouse-data.json
             docs/lighthouse-data.csv
@@ -332,6 +346,7 @@ jobs:
             technology-report-output.txt
             third-party-js-report-output.txt
             accessibility-report-output.txt
+            preference-report-output.txt
             lighthouse-report-output.txt
             tech-lighthouse-report-output.txt
             docs/pace-report.md

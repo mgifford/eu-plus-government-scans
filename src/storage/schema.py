@@ -356,6 +356,34 @@ CREATE INDEX IF NOT EXISTS idx_overlay_country ON url_overlay_results(country_co
 CREATE INDEX IF NOT EXISTS idx_overlay_scan ON url_overlay_results(scan_id);
 CREATE INDEX IF NOT EXISTS idx_overlay_has_overlay ON url_overlay_results(overlay_count);
 
+-- Migration: Added url_preference_results table for user-preference signal
+-- scans.  Records evidence that a page responds to browser-set user
+-- preferences (prefers-color-scheme, prefers-reduced-motion, prefers-contrast,
+-- prefers-reduced-transparency, forced-colors, the color-scheme property)
+-- as described by EN 301 549 clause 9.7, plus the design systems whose
+-- adoption signatures matched the page HTML.  These are signals of effort,
+-- not conformance verdicts.
+CREATE TABLE IF NOT EXISTS url_preference_results (
+    url TEXT NOT NULL,
+    country_code TEXT NOT NULL,
+    scan_id TEXT NOT NULL,
+    is_reachable INTEGER NOT NULL DEFAULT 1,
+    meta_color_scheme TEXT,
+    features TEXT NOT NULL DEFAULT '[]',
+    feature_sources TEXT NOT NULL DEFAULT '{}',
+    theme_toggle_hints TEXT NOT NULL DEFAULT '[]',
+    override_signals TEXT NOT NULL DEFAULT '[]',
+    design_systems TEXT NOT NULL DEFAULT '[]',
+    stylesheets_checked INTEGER NOT NULL DEFAULT 0,
+    stylesheets_total INTEGER NOT NULL DEFAULT 0,
+    error_message TEXT,
+    scanned_at TEXT,
+    PRIMARY KEY (url, scan_id)
+);
+
+CREATE INDEX IF NOT EXISTS idx_preference_country ON url_preference_results(country_code);
+CREATE INDEX IF NOT EXISTS idx_preference_scan ON url_preference_results(scan_id);
+
 -- Migration: Progressive relationship scanning — per-URL scan state
 -- One row per URL; updated in place each scan cycle.
 CREATE TABLE IF NOT EXISTS relationship_scan_state (

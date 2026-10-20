@@ -1,0 +1,254 @@
+# Curated inventory of government design systems, brand identities, and
+# design guidance.  Read by src/lib/design_system_registry.py.
+#
+# This table is curated by hand, exactly like data/providers/jurisdictions.yaml:
+# there is no selector for "official national design system", so a machine cannot
+# derive it.  Rules for editing:
+#
+# - country_code uses UPPER_SNAKE_CASE matching the TOON seed filenames
+#   (united-kingdom-uk.toon -> UNITED_KINGDOM_UK).  Leave it empty for
+#   supranational (european-union) or unconfirmed entries.
+# - type is one of: design_system | brand_identity | accessibility_guide.
+# - adoption_signatures are case-insensitive substrings expected in the HTML of
+#   sites that consume the system (class prefixes, asset paths, package names).
+#   They are what makes "how many sites use system X" measurable.
+#   **Leave the list empty rather than guess.**  A wrong signature reports false
+#   adoption.  Entries without signatures are counted in the coverage report so
+#   the curation work stays visible and finite.
+# - Anything below confidence: high carries needs_review: true.
+# - This list is a starting inventory, not a complete one: countries with no
+#   entry here are unknown, not design-system-free.
+
+design_systems:
+  - name: NL Design System
+    country_code: NETHERLANDS
+    type: design_system
+    scope: national
+    url: https://nldesignsystem.nl/
+    repo: https://github.com/nl-design-system
+    adoption_signatures:
+      - nl-design-system
+    confidence: medium
+    needs_review: true
+    notes: >-
+      Cross-government Dutch design system; adoption signatures need
+      confirmation against consuming sites.
+
+  - name: GOV.UK Design System
+    country_code: UNITED_KINGDOM_UK
+    type: design_system
+    scope: national
+    url: https://design-system.service.gov.uk/
+    repo: https://github.com/alphagov/govuk-frontend
+    adoption_signatures:
+      - govuk-frontend
+      - "govuk-"
+    confidence: high
+    needs_review: false
+    notes: Frontend published as govuk-frontend; class prefix govuk-.
+
+  - name: European Commission Component Library
+    country_code: ""
+    type: design_system
+    scope: european-union
+    url: https://ec.europa.eu/component-library/
+    adoption_signatures: []
+    confidence: high
+    needs_review: false
+    notes: EU-level; adoption signatures not yet curated.
+
+  - name: EU Web Guide Design System
+    country_code: ""
+    type: design_system
+    scope: european-union
+    url: https://op.europa.eu/en/web/webguide/design-system
+    adoption_signatures: []
+    confidence: high
+    needs_review: false
+    notes: EU Publications Office web design system; signatures not yet curated.
+
+  - name: EUAA Design System
+    country_code: ""
+    type: design_system
+    scope: european-union
+    url: https://www.euaa.europa.eu/design_system/index.html
+    adoption_signatures: []
+    confidence: high
+    needs_review: false
+    notes: EU Agency for Asylum design system; signatures not yet curated.
+
+  - name: Austria Design System
+    country_code: AUSTRIA
+    type: design_system
+    scope: national
+    url: https://design.austria.info/manual/en/design-system
+    adoption_signatures: []
+    confidence: medium
+    needs_review: true
+    notes: Federal Austrian design manual; scope (brand vs component system) unconfirmed.
+
+  - name: Vlaanderen Design System
+    country_code: BELGIUM
+    type: design_system
+    scope: regional
+    url: https://www.vlaanderen.be/vlaanderen-design-system
+    adoption_signatures: []
+    confidence: high
+    needs_review: false
+    notes: Flemish regional government; signatures not yet curated.
+
+  - name: Stijlgids Stad Gent
+    country_code: BELGIUM
+    type: brand_identity
+    scope: city
+    url: https://stijlgids.stad.gent/v6/
+    adoption_signatures: []
+    confidence: high
+    needs_review: false
+    notes: City of Ghent style guide.
+
+  - name: Digitale Huisstijl Antwerpen
+    country_code: BELGIUM
+    type: brand_identity
+    scope: city
+    url: https://digitalehuisstijl.antwerpen.be/
+    adoption_signatures: []
+    confidence: high
+    needs_review: false
+    notes: City of Antwerp digital house style.
+
+  - name: Design System České republiky
+    country_code: CZECHIA
+    type: design_system
+    scope: national
+    url: https://designsystem.gov.cz/zaciname/for-developers.html
+    adoption_signatures: []
+    confidence: high
+    needs_review: false
+    notes: Czech government design system; signatures not yet curated.
+
+  - name: Designsystem.dk
+    country_code: DENMARK
+    type: design_system
+    scope: national
+    url: https://designsystem.dk/
+    adoption_signatures: []
+    confidence: high
+    needs_review: false
+    notes: Danish government design system; signatures not yet curated.
+
+  - name: Suomi.fi Design System
+    country_code: FINLAND
+    type: design_system
+    scope: national
+    url: https://designsystem.suomi.fi/
+    adoption_signatures: []
+    confidence: high
+    needs_review: false
+    notes: Finnish national design system; signatures not yet curated.
+
+  - name: Helsinki Design System
+    country_code: FINLAND
+    type: design_system
+    scope: city
+    url: https://hds.hel.fi/
+    adoption_signatures:
+      - hds.hel.fi
+    confidence: medium
+    needs_review: true
+    notes: City of Helsinki; signature only catches sites loading HDS assets by URL.
+
+  - name: Système de Design de l'État
+    country_code: FRANCE
+    type: design_system
+    scope: national
+    url: https://www.systeme-de-design.gouv.fr/version-courante/fr
+    adoption_signatures:
+      - dsfr
+      - gouvfr-design-system
+    confidence: high
+    needs_review: false
+    notes: DSFR; dsfr appears in asset paths and class names of consuming sites.
+
+  - name: Angie Design System
+    country_code: GERMANY
+    type: design_system
+    scope: national
+    url: https://digitalservicebund.github.io/angie/
+    repo: https://github.com/digitalservicebund/angie
+    adoption_signatures: []
+    confidence: high
+    needs_review: false
+    notes: German federal design system; signatures not yet curated.
+
+  - name: Government Digital Services Design Guide
+    country_code: GREECE
+    type: design_system
+    scope: national
+    url: https://guide.services.gov.gr/
+    adoption_signatures: []
+    confidence: medium
+    needs_review: true
+    notes: Greek services design guide; classification as full design system unconfirmed.
+
+  - name: Government Design System (Hungary)
+    country_code: HUNGARY
+    type: design_system
+    scope: national
+    url: https://services.gov.hu/design-system
+    adoption_signatures: []
+    confidence: high
+    needs_review: false
+    notes: Signatures not yet curated.
+
+  - name: Accessibilité public.lu
+    country_code: LUXEMBOURG
+    type: accessibility_guide
+    scope: national
+    url: https://accessibilite.public.lu/en/index.html
+    adoption_signatures: []
+    confidence: medium
+    needs_review: true
+    notes: Accessibility guidance rather than a component design system.
+
+  - name: "zeroheight design systems documentation"
+    country_code: ""
+    type: design_system
+    scope: unknown
+    url: https://zeroheight.com/1be481dc2/p/218cab-design-systems
+    adoption_signatures: []
+    confidence: low
+    needs_review: true
+    notes: >-
+      Hosted zeroheight documentation; owning organisation and country
+      unconfirmed.
+
+  - name: Dintel Design System
+    country_code: SPAIN
+    type: design_system
+    scope: national
+    url: https://dintel.redsara.es/
+    adoption_signatures: []
+    confidence: high
+    needs_review: false
+    notes: Red.Sara / Spanish government design system; signatures not yet curated.
+
+  - name: DESY Design System
+    country_code: SPAIN
+    type: design_system
+    scope: regional
+    url: https://desy.aragon.es/
+    adoption_signatures: []
+    confidence: high
+    needs_review: false
+    notes: Government of Aragón; signatures not yet curated.
+
+  - name: Sharing Sweden Brand Identity
+    country_code: SWEDEN
+    type: brand_identity
+    scope: national
+    url: https://sharingsweden.se/the-sweden-brand/brand-visual-identity
+    adoption_signatures: []
+    confidence: high
+    needs_review: false
+    notes: Swedish Institute brand identity rather than a component library.

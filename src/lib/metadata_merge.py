@@ -47,6 +47,7 @@ ARTIFACT_TABLES: dict[str, tuple[str, ...]] = {
     "lighthouse-metadata": ("url_lighthouse_results",),
     "third-party-js-metadata": ("url_third_party_js_results",),
     "overlay-metadata": ("url_overlay_results",),
+    "preference-metadata": ("url_preference_results",),
     "relationship-scan-metadata": (
         "relationship_scan_state",
         "relationship_scan_results",
