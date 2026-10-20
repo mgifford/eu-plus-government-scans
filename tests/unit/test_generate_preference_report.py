@@ -276,7 +276,9 @@ class TestDataAggregates:
 
     def test_multi_batch_merge_unions_signals(self, payload: dict) -> None:
         """URL A must show both signals across its two scan batches."""
-        url_a = next(r for r in payload["by_url"] if r["url"].endswith("a.example.gov/"))
+        url_a = next(
+            r for r in payload["by_url"] if r["url"] == "https://a.example.gov/"
+        )
         assert sorted(url_a["features"]) == ["forced-colors", "prefers-color-scheme"]
         assert url_a["stylesheets_checked"] == 2  # max, not sum
         assert url_a["last_scanned"] == "2026-10-08T00:00:00+00:00"
@@ -318,12 +320,12 @@ class TestCsvOutput:
         assert len(rows) == 3
 
     def test_boolean_columns_support_recomputation(self, rows: list[dict]) -> None:
-        row_a = next(r for r in rows if r["url"].endswith("a.example.gov/"))
+        row_a = next(r for r in rows if r["url"] == "https://a.example.gov/")
         assert row_a["prefers-color-scheme"] == "1"
         assert row_a["forced-colors"] == "1"
         assert row_a["forced-color-adjust-none"] == "0"
 
-        row_b = next(r for r in rows if r["url"].endswith("b.example.gov/"))
+        row_b = next(r for r in rows if r["url"] == "https://b.example.gov/")
         assert row_b["forced-color-adjust-none"] == "1"
         assert row_b["design_systems"] == "Example Design System"
         assert row_b["prefers-color-scheme"] == "0"
