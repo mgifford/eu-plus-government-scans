@@ -30,6 +30,7 @@ _Progress as of 2026-10-18 05:19 UTC_
 - **[Scan Progress Report](scan-progress.md)** — The best place to start for overall coverage, scan status, and country-level comparisons across the project.
 - **[Social Media](social-media.md)** — Government use of legacy and open social platforms, with evidence behind the published counts.
 - **[Accessibility Statements](accessibility-statements.md)** — Country-by-country evidence showing which pages do and do not publish accessibility statements.
+- **[Browser User Preferences](user-preferences.md)** — Pages responding to dark mode, reduced motion, contrast and forced-colours settings (EN 301 549 clause 9.7 signals), plus design-system inventory and adoption.
 - **[Technology Scanning](technology-scanning.md)** — Detected CMSs, frameworks, analytics tools, and other software found on government sites.
 - **[Third-Party JavaScript](third-party-tools.md)** — External scripts, services, and hosted dependencies loaded by government pages.
 - **[Lighthouse Scanning](lighthouse-scanning.md)** — Google Lighthouse methodology, workflow details, and page-level quality scores as they are collected.

@@ -87,6 +87,11 @@ SCANNER_CONFIGS: tuple[ScannerConfig, ...] = (
         30,
     ),
     ScannerConfig(
+        "preferences",
+        "url_preference_results",
+        90,
+    ),
+    ScannerConfig(
         "relationships",
         "relationship_scan_state",
         60,
