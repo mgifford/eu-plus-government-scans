@@ -48,8 +48,13 @@ def _stub_gh(tmp_path: Path, *, api_lines: int = LISTING_LINES,
         "#!/usr/bin/env bash\n"
         'if [ "$1" = "api" ]; then\n'
         f"  {'exit 1' if api_fails else ''}\n"
-        f"  for i in $(seq 1 {api_lines}); do\n"
+        # A plain POSIX counter, not `seq`: BSD seq (macOS) prints "1 0" for
+        # `seq 1 0` where GNU seq prints nothing, so an empty listing would
+        # emit two bogus lines on a Mac and mask the "none published yet"
+        # branch this test exists to cover.
+        f"  i=1; while [ $i -le {api_lines} ]; do\n"
         "    printf '2026-01-%02dT00:00:00Z %d\\n' $((i % 28 + 1)) $((31700000000 + i))\n"
+        "    i=$((i + 1))\n"
         "  done\n"
         "  exit 0\n"
         "fi\n"
