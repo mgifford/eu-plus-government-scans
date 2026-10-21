@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T11:47:58.760896+00:00",
+  "generated_at": "2026-10-21T12:03:41.733712+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -173,12 +173,12 @@
     {
       "service": "googleapis.com",
       "countries": 32,
-      "domains": 4438
+      "domains": 4440
     },
     {
       "service": "googletagmanager.com",
       "countries": 32,
-      "domains": 2788
+      "domains": 2787
     },
     {
       "service": "gstatic.com",
@@ -188,7 +188,7 @@
     {
       "service": "jsdelivr.net",
       "countries": 32,
-      "domains": 1163
+      "domains": 1164
     },
     {
       "service": "fontawesome.com",
@@ -203,7 +203,7 @@
     {
       "service": "cloudflare.com",
       "countries": 31,
-      "domains": 1748
+      "domains": 1746
     },
     {
       "service": "jquery.com",
@@ -218,7 +218,7 @@
     {
       "service": "bootstrapcdn.com",
       "countries": 29,
-      "domains": 603
+      "domains": 602
     },
     {
       "service": "typekit.net",
@@ -268,7 +268,7 @@
     {
       "service": "mapbox.com",
       "countries": 18,
-      "domains": 93
+      "domains": 94
     }
   ],
   "cells": [
@@ -2356,17 +2356,17 @@
       "country_code": "NETHERLANDS",
       "country": "Netherlands",
       "service": "googleapis.com",
-      "domains": 17,
+      "domains": 18,
       "scanned_domains": 69,
-      "percent": 24.6
+      "percent": 26.1
     },
     {
       "country_code": "NETHERLANDS",
       "country": "Netherlands",
       "service": "googletagmanager.com",
-      "domains": 11,
+      "domains": 10,
       "scanned_domains": 69,
-      "percent": 15.9
+      "percent": 14.5
     },
     {
       "country_code": "NETHERLANDS",
@@ -2516,9 +2516,9 @@
       "country_code": "BULGARIA",
       "country": "Bulgaria",
       "service": "googleapis.com",
-      "domains": 29,
+      "domains": 30,
       "scanned_domains": 55,
-      "percent": 52.7
+      "percent": 54.5
     },
     {
       "country_code": "BULGARIA",
@@ -3812,9 +3812,9 @@
       "country_code": "ESTONIA",
       "country": "Estonia",
       "service": "gstatic.com",
-      "domains": 7,
+      "domains": 6,
       "scanned_domains": 31,
-      "percent": 22.6
+      "percent": 19.4
     },
     {
       "country_code": "ESTONIA",
@@ -3844,9 +3844,9 @@
       "country_code": "ESTONIA",
       "country": "Estonia",
       "service": "cloudflare.com",
-      "domains": 9,
+      "domains": 8,
       "scanned_domains": 31,
-      "percent": 29.0
+      "percent": 25.8
     },
     {
       "country_code": "ESTONIA",
@@ -3868,9 +3868,9 @@
       "country_code": "ESTONIA",
       "country": "Estonia",
       "service": "bootstrapcdn.com",
-      "domains": 2,
+      "domains": 1,
       "scanned_domains": 31,
-      "percent": 6.5
+      "percent": 3.2
     },
     {
       "country_code": "ESTONIA",
@@ -3948,9 +3948,9 @@
       "country_code": "ESTONIA",
       "country": "Estonia",
       "service": "mapbox.com",
-      "domains": 1,
+      "domains": 2,
       "scanned_domains": 31,
-      "percent": 3.2
+      "percent": 6.5
     },
     {
       "country_code": "HUNGARY",
@@ -4132,17 +4132,17 @@
       "country_code": "ROMANIA",
       "country": "Romania",
       "service": "gstatic.com",
-      "domains": 7,
+      "domains": 8,
       "scanned_domains": 24,
-      "percent": 29.2
+      "percent": 33.3
     },
     {
       "country_code": "ROMANIA",
       "country": "Romania",
       "service": "jsdelivr.net",
-      "domains": 5,
+      "domains": 6,
       "scanned_domains": 24,
-      "percent": 20.8
+      "percent": 25.0
     },
     {
       "country_code": "ROMANIA",
@@ -4164,9 +4164,9 @@
       "country_code": "ROMANIA",
       "country": "Romania",
       "service": "cloudflare.com",
-      "domains": 4,
+      "domains": 3,
       "scanned_domains": 24,
-      "percent": 16.7
+      "percent": 12.5
     },
     {
       "country_code": "ROMANIA",

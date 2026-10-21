@@ -5,7 +5,7 @@
   "top_source_domains": [
     {
       "domain": "zagreb.hr",
-      "count": 2051
+      "count": 2096
     },
     {
       "domain": "gov.hr",
@@ -56,12 +56,12 @@
       "count": 278
     },
     {
-      "domain": "azop.hr",
-      "count": 254
+      "domain": "osijek.hr",
+      "count": 255
     },
     {
-      "domain": "osijek.hr",
-      "count": 242
+      "domain": "azop.hr",
+      "count": 254
     },
     {
       "domain": "koprivnica.hr",
@@ -126,12 +126,12 @@
   ],
   "top_target_domains": [
     {
-      "domain": "gov.hr",
-      "count": 1002
+      "domain": "zagreb.hr",
+      "count": 1017
     },
     {
-      "domain": "zagreb.hr",
-      "count": 992
+      "domain": "gov.hr",
+      "count": 1003
     },
     {
       "domain": "rijeka.hr",
@@ -139,11 +139,11 @@
     },
     {
       "domain": "facebook.com",
-      "count": 426
+      "count": 428
     },
     {
       "domain": "googletagmanager.com",
-      "count": 379
+      "count": 381
     },
     {
       "domain": "skole.hr",
@@ -151,11 +151,11 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 287
+      "count": 289
     },
     {
       "domain": "youtube.com",
-      "count": 274
+      "count": 275
     },
     {
       "domain": "hzjz.hr",
@@ -167,7 +167,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 222
+      "count": 223
     },
     {
       "domain": "hzzo.hr",
@@ -191,23 +191,23 @@
     },
     {
       "domain": "arcgis.com",
-      "count": 155
+      "count": 160
     },
     {
       "domain": "google.com",
-      "count": 153
+      "count": 155
     },
     {
       "domain": "jsdelivr.net",
       "count": 151
     },
     {
-      "domain": "dubrovnik.hr",
+      "domain": "linkedin.com",
       "count": 146
     },
     {
-      "domain": "linkedin.com",
-      "count": 145
+      "domain": "dubrovnik.hr",
+      "count": 146
     },
     {
       "domain": "vukovar.hr",
@@ -250,16 +250,16 @@
       "count": 72
     },
     {
+      "domain": "osijek.hr",
+      "count": 68
+    },
+    {
       "domain": "split.hr",
       "count": 68
     },
     {
       "domain": "tiktok.com",
-      "count": 64
-    },
-    {
-      "domain": "osijek.hr",
-      "count": 64
+      "count": 65
     },
     {
       "domain": "pula.hr",
@@ -270,12 +270,12 @@
       "count": 60
     },
     {
-      "domain": "gstatic.com",
-      "count": 54
+      "domain": "addtoany.com",
+      "count": 56
     },
     {
-      "domain": "addtoany.com",
-      "count": 54
+      "domain": "gstatic.com",
+      "count": 55
     },
     {
       "domain": "nn.hr",
@@ -298,16 +298,16 @@
       "count": 44
     },
     {
+      "domain": "mingo.hr",
+      "count": 44
+    },
+    {
       "domain": "usud.hr",
       "count": 43
     },
     {
-      "domain": "mingo.hr",
-      "count": 43
-    },
-    {
       "domain": "x.com",
-      "count": 41
+      "count": 42
     },
     {
       "domain": "mojarijeka.hr",
@@ -334,5 +334,5 @@
     "script_dependency": 168,
     "stylesheet_dependency": 124
   },
-  "generated_at": "2026-10-19T04:14:14.481837+00:00"
+  "generated_at": "2026-10-21T04:15:57.619260+00:00"
 }

@@ -5,11 +5,11 @@
   "top_source_domains": [
     {
       "domain": "gouvernement.lu",
-      "count": 7353
+      "count": 7740
     },
     {
       "domain": "public.lu",
-      "count": 5874
+      "count": 6027
     },
     {
       "domain": "uni.lu",
@@ -167,19 +167,19 @@
   "top_target_domains": [
     {
       "domain": "public.lu",
-      "count": 5890
+      "count": 6104
     },
     {
       "domain": "gouvernement.lu",
-      "count": 3330
+      "count": 3485
     },
     {
       "domain": "facebook.com",
-      "count": 781
+      "count": 808
     },
     {
       "domain": "linkedin.com",
-      "count": 722
+      "count": 753
     },
     {
       "domain": "uni.lu",
@@ -187,31 +187,31 @@
     },
     {
       "domain": "twitter.com",
-      "count": 544
+      "count": 567
     },
     {
       "domain": "bsky.app",
-      "count": 454
+      "count": 477
     },
     {
       "domain": "instagram.com",
-      "count": 397
+      "count": 405
     },
     {
       "domain": "adobedtm.com",
-      "count": 323
+      "count": 346
     },
     {
       "domain": "etat.lu",
-      "count": 302
+      "count": 308
     },
     {
       "domain": "youtube.com",
-      "count": 269
+      "count": 270
     },
     {
       "domain": "europa.eu",
-      "count": 240
+      "count": 251
     },
     {
       "domain": "googleapis.com",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "google.com",
-      "count": 79
+      "count": 80
     },
     {
       "domain": "chem.lu",
@@ -294,12 +294,12 @@
       "count": 56
     },
     {
-      "domain": "schifflange.lu",
+      "domain": "geoportail.lu",
       "count": 56
     },
     {
-      "domain": "geoportail.lu",
-      "count": 55
+      "domain": "schifflange.lu",
+      "count": 56
     },
     {
       "domain": "bettembourg.lu",
@@ -374,5 +374,5 @@
     "stylesheet_dependency": 240,
     "font_or_preload_dependency": 29
   },
-  "generated_at": "2026-10-20T04:22:07.816893+00:00"
+  "generated_at": "2026-10-21T12:03:39.742973+00:00"
 }

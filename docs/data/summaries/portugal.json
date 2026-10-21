@@ -37,7 +37,7 @@
     },
     {
       "domain": "cm-olhao.pt",
-      "count": 1258
+      "count": 1268
     },
     {
       "domain": "cm-alcobaca.pt",
@@ -211,23 +211,23 @@
     },
     {
       "domain": "facebook.com",
-      "count": 3295
+      "count": 3301
     },
     {
       "domain": "youtube.com",
-      "count": 2633
+      "count": 2636
     },
     {
       "domain": "instagram.com",
-      "count": 2558
+      "count": 2561
     },
     {
       "domain": "googletagmanager.com",
-      "count": 2310
+      "count": 2315
     },
     {
       "domain": "google.com",
-      "count": 2171
+      "count": 2177
     },
     {
       "domain": "madeira.gov.pt",
@@ -295,7 +295,7 @@
     },
     {
       "domain": "cm-olhao.pt",
-      "count": 575
+      "count": 583
     },
     {
       "domain": "cm-braga.pt",
@@ -303,7 +303,7 @@
     },
     {
       "domain": "w3.org",
-      "count": 547
+      "count": 550
     },
     {
       "domain": "cm-alcobaca.pt",
@@ -414,5 +414,5 @@
     "form_destination": 755,
     "image_or_media_dependency": 1136
   },
-  "generated_at": "2026-10-20T11:47:55.209109+00:00"
+  "generated_at": "2026-10-21T12:03:39.817405+00:00"
 }
