@@ -5,7 +5,7 @@
   "top_source_domains": [
     {
       "domain": "gov.si",
-      "count": 4664
+      "count": 4670
     },
     {
       "domain": "maribor.si",
@@ -71,7 +71,7 @@
   "top_target_domains": [
     {
       "domain": "gov.si",
-      "count": 3172
+      "count": 3178
     },
     {
       "domain": "facebook.com",
@@ -278,5 +278,5 @@
     "stylesheet_dependency": 98,
     "form_destination": 45
   },
-  "generated_at": "2026-10-20T17:13:52.785298+00:00"
+  "generated_at": "2026-10-22T04:15:26.440502+00:00"
 }

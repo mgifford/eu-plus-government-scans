@@ -9,7 +9,7 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 30478
+      "count": 30804
     },
     {
       "domain": "gva.es",
@@ -152,11 +152,11 @@
       "count": 432
     },
     {
-      "domain": "dgt.es",
-      "count": 427
+      "domain": "ine.es",
+      "count": 431
     },
     {
-      "domain": "ine.es",
+      "domain": "dgt.es",
       "count": 427
     },
     {
@@ -211,7 +211,7 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 15125
+      "count": 15257
     },
     {
       "domain": "gva.es",
@@ -219,31 +219,31 @@
     },
     {
       "domain": "facebook.com",
-      "count": 4184
+      "count": 4200
     },
     {
       "domain": "twitter.com",
-      "count": 3849
+      "count": 3858
     },
     {
       "domain": "youtube.com",
-      "count": 3453
+      "count": 3465
     },
     {
       "domain": "googleapis.com",
-      "count": 3360
+      "count": 3379
     },
     {
       "domain": "google.com",
-      "count": 3173
+      "count": 3184
     },
     {
       "domain": "jccm.es",
-      "count": 3127
+      "count": 3161
     },
     {
       "domain": "instagram.com",
-      "count": 3020
+      "count": 3031
     },
     {
       "domain": "aragon.es",
@@ -271,7 +271,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 1441
+      "count": 1447
     },
     {
       "domain": "juntaex.es",
@@ -287,7 +287,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 1084
+      "count": 1095
     },
     {
       "domain": "redsara.es",
@@ -303,7 +303,7 @@
     },
     {
       "domain": "x.com",
-      "count": 881
+      "count": 886
     },
     {
       "domain": "europa.eu",
@@ -319,15 +319,15 @@
     },
     {
       "domain": "flickr.com",
-      "count": 765
+      "count": 774
     },
     {
       "domain": "google.es",
-      "count": 730
+      "count": 733
     },
     {
       "domain": "boe.es",
-      "count": 706
+      "count": 708
     },
     {
       "domain": "sanidad.gob.es",
@@ -335,11 +335,11 @@
     },
     {
       "domain": "fontawesome.com",
-      "count": 681
+      "count": 690
     },
     {
       "domain": "insuit.net",
-      "count": 649
+      "count": 654
     },
     {
       "domain": "jsdelivr.net",
@@ -399,7 +399,7 @@
     },
     {
       "domain": "sharethis.com",
-      "count": 390
+      "count": 391
     },
     {
       "domain": "ilunionaccede.es",
@@ -414,5 +414,5 @@
     "form_destination": 1439,
     "font_or_preload_dependency": 153
   },
-  "generated_at": "2026-10-20T11:47:55.826035+00:00"
+  "generated_at": "2026-10-22T12:02:22.188306+00:00"
 }

@@ -1,6 +1,6 @@
 {
   "country_code": "SLOVAKIA",
-  "total_relationships": 1654,
+  "total_relationships": 1655,
   "total_source_domains": 21,
   "top_source_domains": [
     {
@@ -17,7 +17,7 @@
     },
     {
       "domain": "bratislava.sk",
-      "count": 916
+      "count": 918
     },
     {
       "domain": "trnava.sk",
@@ -45,7 +45,7 @@
     },
     {
       "domain": "martin.sk",
-      "count": 308
+      "count": 326
     },
     {
       "domain": "mlba.sk",
@@ -127,7 +127,7 @@
     },
     {
       "domain": "google.com",
-      "count": 404
+      "count": 405
     },
     {
       "domain": "youtube.com",
@@ -166,12 +166,12 @@
       "count": 140
     },
     {
-      "domain": "syscom.sk",
-      "count": 127
+      "domain": "martin.sk",
+      "count": 132
     },
     {
-      "domain": "martin.sk",
-      "count": 120
+      "domain": "syscom.sk",
+      "count": 127
     },
     {
       "domain": "aglo.sk",
@@ -259,7 +259,7 @@
     },
     {
       "domain": "microsoft.com",
-      "count": 38
+      "count": 39
     },
     {
       "domain": "fontawesome.com",
@@ -293,10 +293,10 @@
   "relationship_types": {
     "editorial_link": 918,
     "font_or_preload_dependency": 47,
-    "image_or_media_dependency": 157,
+    "image_or_media_dependency": 158,
     "script_dependency": 233,
     "stylesheet_dependency": 191,
     "form_destination": 108
   },
-  "generated_at": "2026-10-20T11:47:55.302714+00:00"
+  "generated_at": "2026-10-21T17:30:15.417007+00:00"
 }

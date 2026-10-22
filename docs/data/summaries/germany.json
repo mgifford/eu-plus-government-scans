@@ -9,7 +9,7 @@
     },
     {
       "domain": "rlp.de",
-      "count": 35926
+      "count": 36192
     },
     {
       "domain": "bayern.de",
@@ -211,7 +211,7 @@
     },
     {
       "domain": "rlp.de",
-      "count": 28306
+      "count": 28531
     },
     {
       "domain": "niedersachsen.de",
@@ -247,7 +247,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 5266
+      "count": 5271
     },
     {
       "domain": "bund.de",
@@ -267,11 +267,11 @@
     },
     {
       "domain": "youtube.com",
-      "count": 3356
+      "count": 3361
     },
     {
       "domain": "linkedin.com",
-      "count": 2750
+      "count": 2755
     },
     {
       "domain": "berlin.de",
@@ -299,7 +299,7 @@
     },
     {
       "domain": "zvg-portal.de",
-      "count": 1149
+      "count": 1150
     },
     {
       "domain": "enable-javascript.com",
@@ -351,7 +351,7 @@
     },
     {
       "domain": "justiz.de",
-      "count": 655
+      "count": 656
     },
     {
       "domain": "usercentrics.eu",
@@ -399,7 +399,7 @@
     },
     {
       "domain": "tiktok.com",
-      "count": 436
+      "count": 441
     },
     {
       "domain": "make-it-in-germany.com",
@@ -414,5 +414,5 @@
     "stylesheet_dependency": 2703,
     "form_destination": 2139
   },
-  "generated_at": "2026-10-20T22:07:05.773935+00:00"
+  "generated_at": "2026-10-22T04:15:25.586795+00:00"
 }

@@ -5,7 +5,7 @@
   "top_source_domains": [
     {
       "domain": "ostrava.cz",
-      "count": 8442
+      "count": 8507
     },
     {
       "domain": "brno.cz",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "ostrava.cz",
-      "count": 4120
+      "count": 4150
     },
     {
       "domain": "brno.cz",
@@ -219,11 +219,11 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 676
+      "count": 677
     },
     {
       "domain": "facebook.com",
-      "count": 638
+      "count": 640
     },
     {
       "domain": "instagram.com",
@@ -239,7 +239,7 @@
     },
     {
       "domain": "npmcdn.com",
-      "count": 280
+      "count": 282
     },
     {
       "domain": "mpsv.cz",
@@ -259,7 +259,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 252
+      "count": 253
     },
     {
       "domain": "googletagmanager.com",
@@ -283,7 +283,7 @@
     },
     {
       "domain": "ovanet.cz",
-      "count": 188
+      "count": 190
     },
     {
       "domain": "liberec.cz",
@@ -299,7 +299,7 @@
     },
     {
       "domain": "ostravainfo.cz",
-      "count": 164
+      "count": 166
     },
     {
       "domain": "mf.gov.cz",
@@ -319,7 +319,7 @@
     },
     {
       "domain": "cookiedatabase.org",
-      "count": 144
+      "count": 145
     },
     {
       "domain": "uzis.cz",
@@ -331,15 +331,15 @@
     },
     {
       "domain": "highcharts.com",
-      "count": 134
+      "count": 135
     },
     {
       "domain": "jsdelivr.net",
-      "count": 133
+      "count": 134
     },
     {
       "domain": "portal.gov.cz",
-      "count": 132
+      "count": 134
     },
     {
       "domain": "md.gov.cz",
@@ -347,11 +347,11 @@
     },
     {
       "domain": "smlouvy.gov.cz",
-      "count": 128
+      "count": 130
     },
     {
       "domain": "jquery.com",
-      "count": 116
+      "count": 117
     },
     {
       "domain": "usti.cz",
@@ -370,11 +370,11 @@
       "count": 96
     },
     {
-      "domain": "europa.eu",
-      "count": 94
+      "domain": "tenderarena.cz",
+      "count": 95
     },
     {
-      "domain": "tenderarena.cz",
+      "domain": "europa.eu",
       "count": 94
     },
     {
@@ -399,10 +399,10 @@
     },
     {
       "domain": "cityvizor.cz",
-      "count": 62
+      "count": 63
     },
     {
-      "domain": "mvcr.cz",
+      "domain": "chmi.cz",
       "count": 61
     }
   ],
@@ -414,5 +414,5 @@
     "image_or_media_dependency": 235,
     "font_or_preload_dependency": 63
   },
-  "generated_at": "2026-10-20T22:07:05.153506+00:00"
+  "generated_at": "2026-10-22T04:15:26.529488+00:00"
 }

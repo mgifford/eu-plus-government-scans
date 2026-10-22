@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:03:41.733712+00:00",
+  "generated_at": "2026-10-22T12:02:26.675367+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -178,7 +178,7 @@
     {
       "service": "googletagmanager.com",
       "countries": 32,
-      "domains": 2787
+      "domains": 2786
     },
     {
       "service": "gstatic.com",
@@ -188,32 +188,32 @@
     {
       "service": "jsdelivr.net",
       "countries": 32,
-      "domains": 1164
+      "domains": 1165
     },
     {
       "service": "fontawesome.com",
       "countries": 32,
-      "domains": 870
+      "domains": 871
     },
     {
       "service": "google.com",
       "countries": 31,
-      "domains": 2157
+      "domains": 2155
     },
     {
       "service": "cloudflare.com",
       "countries": 31,
-      "domains": 1746
+      "domains": 1745
     },
     {
       "service": "jquery.com",
       "countries": 30,
-      "domains": 636
+      "domains": 633
     },
     {
       "service": "unpkg.com",
       "countries": 29,
-      "domains": 670
+      "domains": 669
     },
     {
       "service": "bootstrapcdn.com",
@@ -243,7 +243,7 @@
     {
       "service": "amazonaws.com",
       "countries": 21,
-      "domains": 227
+      "domains": 228
     },
     {
       "service": "addtoany.com",
@@ -276,7 +276,7 @@
       "country_code": "UNITED_KINGDOM_UK",
       "country": "United Kingdom",
       "service": "googleapis.com",
-      "domains": 1543,
+      "domains": 1542,
       "scanned_domains": 3317,
       "percent": 46.5
     },
@@ -284,7 +284,7 @@
       "country_code": "UNITED_KINGDOM_UK",
       "country": "United Kingdom",
       "service": "googletagmanager.com",
-      "domains": 1277,
+      "domains": 1276,
       "scanned_domains": 3317,
       "percent": 38.5
     },
@@ -300,7 +300,7 @@
       "country_code": "UNITED_KINGDOM_UK",
       "country": "United Kingdom",
       "service": "jsdelivr.net",
-      "domains": 433,
+      "domains": 434,
       "scanned_domains": 3317,
       "percent": 13.1
     },
@@ -316,15 +316,15 @@
       "country_code": "UNITED_KINGDOM_UK",
       "country": "United Kingdom",
       "service": "google.com",
-      "domains": 1186,
+      "domains": 1184,
       "scanned_domains": 3317,
-      "percent": 35.8
+      "percent": 35.7
     },
     {
       "country_code": "UNITED_KINGDOM_UK",
       "country": "United Kingdom",
       "service": "cloudflare.com",
-      "domains": 916,
+      "domains": 915,
       "scanned_domains": 3317,
       "percent": 27.6
     },
@@ -332,7 +332,7 @@
       "country_code": "UNITED_KINGDOM_UK",
       "country": "United Kingdom",
       "service": "jquery.com",
-      "domains": 183,
+      "domains": 181,
       "scanned_domains": 3317,
       "percent": 5.5
     },
@@ -340,9 +340,9 @@
       "country_code": "UNITED_KINGDOM_UK",
       "country": "United Kingdom",
       "service": "unpkg.com",
-      "domains": 337,
+      "domains": 336,
       "scanned_domains": 3317,
-      "percent": 10.2
+      "percent": 10.1
     },
     {
       "country_code": "UNITED_KINGDOM_UK",
@@ -420,7 +420,7 @@
       "country_code": "UNITED_KINGDOM_UK",
       "country": "United Kingdom",
       "service": "fbcdn.net",
-      "domains": 23,
+      "domains": 22,
       "scanned_domains": 3317,
       "percent": 0.7
     },
@@ -1556,9 +1556,9 @@
       "country_code": "CANADA",
       "country": "Canada",
       "service": "googleapis.com",
-      "domains": 103,
+      "domains": 104,
       "scanned_domains": 190,
-      "percent": 54.2
+      "percent": 54.7
     },
     {
       "country_code": "CANADA",
@@ -1588,9 +1588,9 @@
       "country_code": "CANADA",
       "country": "Canada",
       "service": "fontawesome.com",
-      "domains": 53,
+      "domains": 54,
       "scanned_domains": 190,
-      "percent": 27.9
+      "percent": 28.4
     },
     {
       "country_code": "CANADA",
@@ -1612,9 +1612,9 @@
       "country_code": "CANADA",
       "country": "Canada",
       "service": "jquery.com",
-      "domains": 22,
+      "domains": 21,
       "scanned_domains": 190,
-      "percent": 11.6
+      "percent": 11.1
     },
     {
       "country_code": "CANADA",
@@ -3940,9 +3940,9 @@
       "country_code": "ESTONIA",
       "country": "Estonia",
       "service": "fbcdn.net",
-      "domains": 1,
+      "domains": 2,
       "scanned_domains": 31,
-      "percent": 3.2
+      "percent": 6.5
     },
     {
       "country_code": "ESTONIA",
@@ -4548,9 +4548,9 @@
       "country_code": "SLOVAKIA",
       "country": "Slovakia",
       "service": "amazonaws.com",
-      "domains": 1,
+      "domains": 2,
       "scanned_domains": 20,
-      "percent": 5.0
+      "percent": 10.0
     },
     {
       "country_code": "SLOVAKIA",

@@ -65,7 +65,7 @@
     },
     {
       "domain": "hjoerring.dk",
-      "count": 790
+      "count": 797
     },
     {
       "domain": "forsvaret.dk",
@@ -287,7 +287,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 756
+      "count": 757
     },
     {
       "domain": "gentofte.dk",
@@ -311,7 +311,7 @@
     },
     {
       "domain": "hjoerring.dk",
-      "count": 516
+      "count": 520
     },
     {
       "domain": "roskilde.dk",
@@ -414,5 +414,5 @@
     "stylesheet_dependency": 576,
     "font_or_preload_dependency": 123
   },
-  "generated_at": "2026-10-20T22:07:05.664380+00:00"
+  "generated_at": "2026-10-22T04:15:26.796741+00:00"
 }

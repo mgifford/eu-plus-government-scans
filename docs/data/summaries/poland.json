@@ -1,19 +1,19 @@
 {
   "country_code": "POLAND",
-  "total_relationships": 62238,
+  "total_relationships": 62239,
   "total_source_domains": 2500,
   "top_source_domains": [
     {
       "domain": "krakow.pl",
-      "count": 71617
+      "count": 72936
     },
     {
       "domain": "poznan.pl",
-      "count": 48461
+      "count": 49588
     },
     {
       "domain": "lodz.pl",
-      "count": 48409
+      "count": 48436
     },
     {
       "domain": "gdansk.pl",
@@ -207,23 +207,23 @@
   "top_target_domains": [
     {
       "domain": "krakow.pl",
-      "count": 34938
+      "count": 35620
     },
     {
       "domain": "lodz.pl",
-      "count": 27707
+      "count": 27730
     },
     {
       "domain": "googleapis.com",
-      "count": 25581
+      "count": 25712
     },
     {
       "domain": "poznan.pl",
-      "count": 24308
+      "count": 24950
     },
     {
       "domain": "facebook.com",
-      "count": 22892
+      "count": 23003
     },
     {
       "domain": "gdansk.pl",
@@ -235,19 +235,19 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 9086
+      "count": 9118
     },
     {
       "domain": "instagram.com",
-      "count": 8941
+      "count": 8986
     },
     {
       "domain": "youtube.com",
-      "count": 8773
+      "count": 8803
     },
     {
       "domain": "google.com",
-      "count": 8689
+      "count": 8731
     },
     {
       "domain": "ug.edu.pl",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 6375
+      "count": 6417
     },
     {
       "domain": "torun.pl",
@@ -267,7 +267,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 4378
+      "count": 4416
     },
     {
       "domain": "gdynia.pl",
@@ -275,19 +275,19 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 4190
+      "count": 4214
     },
     {
       "domain": "www.gov.pl",
-      "count": 3423
+      "count": 3438
     },
     {
       "domain": "twitter.com",
-      "count": 3029
+      "count": 3044
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 2977
+      "count": 3000
     },
     {
       "domain": "mixbet.radom.pl",
@@ -299,11 +299,11 @@
     },
     {
       "domain": "fontawesome.com",
-      "count": 2824
+      "count": 2827
     },
     {
       "domain": "linkedin.com",
-      "count": 2795
+      "count": 2816
     },
     {
       "domain": "edu.bialystok.pl",
@@ -311,11 +311,11 @@
     },
     {
       "domain": "bip.gov.pl",
-      "count": 2190
+      "count": 2200
     },
     {
       "domain": "unpkg.com",
-      "count": 1997
+      "count": 2001
     },
     {
       "domain": "vulcan.net.pl",
@@ -323,11 +323,11 @@
     },
     {
       "domain": "goo.gl",
-      "count": 1821
+      "count": 1829
     },
     {
       "domain": "wordpress.org",
-      "count": 1803
+      "count": 1809
     },
     {
       "domain": "gorzow.pl",
@@ -339,15 +339,15 @@
     },
     {
       "domain": "jquery.com",
-      "count": 1630
+      "count": 1641
     },
     {
       "domain": "epuap.gov.pl",
-      "count": 1545
+      "count": 1550
     },
     {
       "domain": "tiktok.com",
-      "count": 1461
+      "count": 1468
     },
     {
       "domain": "ursynow.warszawa.pl",
@@ -371,7 +371,7 @@
     },
     {
       "domain": "x.com",
-      "count": 1018
+      "count": 1021
     },
     {
       "domain": "policja.pl",
@@ -402,17 +402,17 @@
       "count": 819
     },
     {
-      "domain": "migam.org",
-      "count": 790
+      "domain": "cookiedatabase.org",
+      "count": 793
     }
   ],
   "relationship_types": {
-    "editorial_link": 33753,
+    "editorial_link": 33755,
     "form_destination": 3338,
-    "image_or_media_dependency": 6840,
+    "image_or_media_dependency": 6839,
     "script_dependency": 8793,
     "stylesheet_dependency": 7664,
     "font_or_preload_dependency": 1850
   },
-  "generated_at": "2026-10-20T17:13:53.371302+00:00"
+  "generated_at": "2026-10-22T12:02:22.525169+00:00"
 }

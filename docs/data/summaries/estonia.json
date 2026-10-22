@@ -1,11 +1,11 @@
 {
   "country_code": "ESTONIA",
-  "total_relationships": 1649,
+  "total_relationships": 1650,
   "total_source_domains": 32,
   "top_source_domains": [
     {
       "domain": "tartu.ee",
-      "count": 3794
+      "count": 3885
     },
     {
       "domain": "tallinn.ee",
@@ -17,7 +17,7 @@
     },
     {
       "domain": "parnu.ee",
-      "count": 1349
+      "count": 1486
     },
     {
       "domain": "kliimaministeerium.ee",
@@ -64,12 +64,12 @@
       "count": 528
     },
     {
-      "domain": "kaitseministeerium.ee",
-      "count": 445
+      "domain": "viljandi.ee",
+      "count": 475
     },
     {
-      "domain": "viljandi.ee",
-      "count": 440
+      "domain": "kaitseministeerium.ee",
+      "count": 445
     },
     {
       "domain": "riigikantselei.ee",
@@ -135,7 +135,7 @@
   "top_target_domains": [
     {
       "domain": "tartu.ee",
-      "count": 1778
+      "count": 1815
     },
     {
       "domain": "tallinn.ee",
@@ -143,11 +143,11 @@
     },
     {
       "domain": "facebook.com",
-      "count": 836
+      "count": 850
     },
     {
       "domain": "parnu.ee",
-      "count": 651
+      "count": 686
     },
     {
       "domain": "agri.ee",
@@ -159,15 +159,19 @@
     },
     {
       "domain": "youtube.com",
-      "count": 498
+      "count": 501
+    },
+    {
+      "domain": "instagram.com",
+      "count": 361
     },
     {
       "domain": "vm.ee",
       "count": 361
     },
     {
-      "domain": "instagram.com",
-      "count": 355
+      "domain": "googleapis.com",
+      "count": 359
     },
     {
       "domain": "valitsus.ee",
@@ -175,11 +179,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 347
-    },
-    {
-      "domain": "googleapis.com",
-      "count": 342
+      "count": 348
     },
     {
       "domain": "sm.ee",
@@ -190,12 +190,12 @@
       "count": 276
     },
     {
-      "domain": "riigikantselei.ee",
-      "count": 269
+      "domain": "flickr.com",
+      "count": 272
     },
     {
-      "domain": "flickr.com",
-      "count": 268
+      "domain": "riigikantselei.ee",
+      "count": 269
     },
     {
       "domain": "ria.ee",
@@ -211,7 +211,7 @@
     },
     {
       "domain": "twitter.com",
-      "count": 234
+      "count": 235
     },
     {
       "domain": "siseministeerium.ee",
@@ -222,7 +222,15 @@
       "count": 210
     },
     {
+      "domain": "googletagmanager.com",
+      "count": 209
+    },
+    {
       "domain": "kul.ee",
+      "count": 207
+    },
+    {
+      "domain": "viljandi.ee",
       "count": 207
     },
     {
@@ -232,14 +240,6 @@
     {
       "domain": "kaitseministeerium.ee",
       "count": 202
-    },
-    {
-      "domain": "googletagmanager.com",
-      "count": 201
-    },
-    {
-      "domain": "viljandi.ee",
-      "count": 195
     },
     {
       "domain": "fin.ee",
@@ -271,7 +271,7 @@
     },
     {
       "domain": "google.com",
-      "count": 118
+      "count": 120
     },
     {
       "domain": "prokuratuur.ee",
@@ -282,12 +282,12 @@
       "count": 104
     },
     {
-      "domain": "justdigi.ee",
-      "count": 94
+      "domain": "europa.eu",
+      "count": 95
     },
     {
-      "domain": "europa.eu",
-      "count": 89
+      "domain": "justdigi.ee",
+      "count": 94
     },
     {
       "domain": "envir.ee",
@@ -311,15 +311,19 @@
     },
     {
       "domain": "fontawesome.com",
-      "count": 72
+      "count": 74
     },
     {
       "domain": "edupage.org",
-      "count": 68
+      "count": 73
     },
     {
       "domain": "gstatic.com",
-      "count": 66
+      "count": 71
+    },
+    {
+      "domain": "blogspot.com",
+      "count": 60
     },
     {
       "domain": "keskkonnainfo.ee",
@@ -328,19 +332,15 @@
     {
       "domain": "addtoany.com",
       "count": 56
-    },
-    {
-      "domain": "realtimeeconomy.ee",
-      "count": 52
     }
   ],
   "relationship_types": {
     "editorial_link": 955,
     "form_destination": 104,
-    "image_or_media_dependency": 157,
+    "image_or_media_dependency": 158,
     "script_dependency": 217,
     "stylesheet_dependency": 189,
     "font_or_preload_dependency": 27
   },
-  "generated_at": "2026-10-20T22:07:05.060330+00:00"
+  "generated_at": "2026-10-22T04:15:26.709142+00:00"
 }
