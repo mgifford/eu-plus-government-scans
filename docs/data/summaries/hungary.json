@@ -17,7 +17,7 @@
     },
     {
       "domain": "debrecen.hu",
-      "count": 1073
+      "count": 1104
     },
     {
       "domain": "szekesfehervar.hu",
@@ -49,7 +49,7 @@
     },
     {
       "domain": "police.hu",
-      "count": 623
+      "count": 632
     },
     {
       "domain": "kaposvar.hu",
@@ -123,19 +123,19 @@
     },
     {
       "domain": "facebook.com",
-      "count": 603
+      "count": 606
     },
     {
       "domain": "budapest.hu",
       "count": 590
     },
     {
-      "domain": "googleapis.com",
-      "count": 504
+      "domain": "debrecen.hu",
+      "count": 526
     },
     {
-      "domain": "debrecen.hu",
-      "count": 504
+      "domain": "googleapis.com",
+      "count": 507
     },
     {
       "domain": "kozbeszerzes.hu",
@@ -163,7 +163,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 323
+      "count": 326
     },
     {
       "domain": "instagram.com",
@@ -179,7 +179,7 @@
     },
     {
       "domain": "gov.hu",
-      "count": 280
+      "count": 281
     },
     {
       "domain": "googletagmanager.com",
@@ -191,7 +191,7 @@
     },
     {
       "domain": "kormany.hu",
-      "count": 227
+      "count": 228
     },
     {
       "domain": "uni-miskolc.hu",
@@ -202,16 +202,16 @@
       "count": 193
     },
     {
+      "domain": "police.hu",
+      "count": 192
+    },
+    {
       "domain": "birosag.hu",
       "count": 188
     },
     {
       "domain": "cloudflare.com",
       "count": 188
-    },
-    {
-      "domain": "police.hu",
-      "count": 186
     },
     {
       "domain": "eger.hu",
@@ -326,5 +326,5 @@
     "script_dependency": 171,
     "stylesheet_dependency": 153
   },
-  "generated_at": "2026-10-20T22:07:05.863635+00:00"
+  "generated_at": "2026-10-23T11:53:52.641559+00:00"
 }

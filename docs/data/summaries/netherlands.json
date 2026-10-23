@@ -73,7 +73,7 @@
     },
     {
       "domain": "zuid-holland.nl",
-      "count": 486
+      "count": 517
     },
     {
       "domain": "rvo.nl",
@@ -140,12 +140,12 @@
       "count": 270
     },
     {
-      "domain": "s-hertogenbosch.nl",
+      "domain": "amersfoort.nl",
       "count": 268
     },
     {
-      "domain": "amersfoort.nl",
-      "count": 262
+      "domain": "s-hertogenbosch.nl",
+      "count": 268
     },
     {
       "domain": "gov.nl",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "overheid.nl",
-      "count": 1998
+      "count": 2000
     },
     {
       "domain": "amsterdam.nl",
@@ -215,15 +215,15 @@
     },
     {
       "domain": "facebook.com",
-      "count": 1136
+      "count": 1138
     },
     {
       "domain": "linkedin.com",
-      "count": 1061
+      "count": 1063
     },
     {
       "domain": "instagram.com",
-      "count": 998
+      "count": 1000
     },
     {
       "domain": "nijmegen.nl",
@@ -239,7 +239,7 @@
     },
     {
       "domain": "readspeaker.com",
-      "count": 648
+      "count": 651
     },
     {
       "domain": "utrecht.nl",
@@ -275,7 +275,7 @@
     },
     {
       "domain": "twitter.com",
-      "count": 427
+      "count": 429
     },
     {
       "domain": "rvo.nl",
@@ -291,7 +291,7 @@
     },
     {
       "domain": "x.com",
-      "count": 323
+      "count": 325
     },
     {
       "domain": "ede.nl",
@@ -318,12 +318,12 @@
       "count": 252
     },
     {
-      "domain": "tweedekamer.nl",
-      "count": 248
+      "domain": "zuid-holland.nl",
+      "count": 250
     },
     {
-      "domain": "zuid-holland.nl",
-      "count": 238
+      "domain": "tweedekamer.nl",
+      "count": 248
     },
     {
       "domain": "rechtspraak.nl",
@@ -414,5 +414,5 @@
     "script_dependency": 553,
     "stylesheet_dependency": 445
   },
-  "generated_at": "2026-10-21T04:15:58.096152+00:00"
+  "generated_at": "2026-10-23T04:20:49.299239+00:00"
 }

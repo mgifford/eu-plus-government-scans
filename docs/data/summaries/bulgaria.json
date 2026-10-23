@@ -1,6 +1,6 @@
 {
   "country_code": "BULGARIA",
-  "total_relationships": 1769,
+  "total_relationships": 1768,
   "total_source_domains": 51,
   "top_source_domains": [
     {
@@ -112,6 +112,10 @@
       "count": 64
     },
     {
+      "domain": "nhif.bg",
+      "count": 64
+    },
+    {
       "domain": "parliament.bg",
       "count": 64
     },
@@ -134,10 +138,6 @@
     {
       "domain": "fsc.bg",
       "count": 52
-    },
-    {
-      "domain": "nhif.bg",
-      "count": 51
     },
     {
       "domain": "bda.bg",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 464
+      "count": 465
     },
     {
       "domain": "pleven.bg",
@@ -247,7 +247,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 245
+      "count": 246
     },
     {
       "domain": "lovech.bg",
@@ -275,7 +275,7 @@
     },
     {
       "domain": "egov.bg",
-      "count": 160
+      "count": 161
     },
     {
       "domain": "cloudflare.com",
@@ -390,29 +390,29 @@
       "count": 44
     },
     {
+      "domain": "nra.bg",
+      "count": 44
+    },
+    {
+      "domain": "nhif.bg",
+      "count": 44
+    },
+    {
       "domain": "itservice-bg.net",
       "count": 44
     },
     {
-      "domain": "nra.bg",
-      "count": 43
-    },
-    {
       "domain": "gov.bg",
       "count": 41
-    },
-    {
-      "domain": "smartburgas.eu",
-      "count": 40
     }
   ],
   "relationship_types": {
-    "editorial_link": 1050,
+    "editorial_link": 1049,
     "form_destination": 106,
     "image_or_media_dependency": 157,
     "script_dependency": 232,
     "stylesheet_dependency": 203,
     "font_or_preload_dependency": 21
   },
-  "generated_at": "2026-10-21T12:03:39.463837+00:00"
+  "generated_at": "2026-10-23T04:20:49.230204+00:00"
 }

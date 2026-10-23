@@ -1,6 +1,6 @@
 {
   "country_code": "LITHUANIA",
-  "total_relationships": 532,
+  "total_relationships": 533,
   "total_source_domains": 16,
   "top_source_domains": [
     {
@@ -25,7 +25,7 @@
     },
     {
       "domain": "lrs.lt",
-      "count": 195
+      "count": 227
     },
     {
       "domain": "kaunasin.lt",
@@ -45,11 +45,11 @@
     },
     {
       "domain": "sveikata.lt",
-      "count": 42
+      "count": 56
     },
     {
       "domain": "migracija.lt",
-      "count": 36
+      "count": 48
     },
     {
       "domain": "stat.gov.lt",
@@ -94,44 +94,44 @@
       "count": 158
     },
     {
-      "domain": "facebook.com",
-      "count": 127
+      "domain": "lrs.lt",
+      "count": 138
     },
     {
-      "domain": "lrs.lt",
-      "count": 126
+      "domain": "facebook.com",
+      "count": 129
     },
     {
       "domain": "instagram.com",
-      "count": 89
+      "count": 91
+    },
+    {
+      "domain": "youtube.com",
+      "count": 81
     },
     {
       "domain": "jsdelivr.net",
       "count": 80
     },
     {
-      "domain": "youtube.com",
+      "domain": "cloudflare.com",
       "count": 79
     },
     {
-      "domain": "cloudflare.com",
-      "count": 77
-    },
-    {
       "domain": "googletagmanager.com",
-      "count": 77
+      "count": 79
     },
     {
       "domain": "google.com",
       "count": 76
     },
     {
-      "domain": "kaunasin.lt",
-      "count": 72
+      "domain": "linkedin.com",
+      "count": 73
     },
     {
-      "domain": "linkedin.com",
-      "count": 71
+      "domain": "kaunasin.lt",
+      "count": 72
     },
     {
       "domain": "panevezys.lt",
@@ -147,7 +147,11 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 37
+      "count": 40
+    },
+    {
+      "domain": "sveikata.lt",
+      "count": 40
     },
     {
       "domain": "alytus.lt",
@@ -155,10 +159,6 @@
     },
     {
       "domain": "jquery.com",
-      "count": 30
-    },
-    {
-      "domain": "sveikata.lt",
       "count": 30
     },
     {
@@ -182,8 +182,16 @@
       "count": 24
     },
     {
+      "domain": "migracija.lt",
+      "count": 24
+    },
+    {
       "domain": "lrv.lt",
       "count": 24
+    },
+    {
+      "domain": "e-tar.lt",
+      "count": 23
     },
     {
       "domain": "fontawesome.com",
@@ -192,14 +200,6 @@
     {
       "domain": "sodra.lt",
       "count": 22
-    },
-    {
-      "domain": "e-tar.lt",
-      "count": 21
-    },
-    {
-      "domain": "migracija.lt",
-      "count": 18
     },
     {
       "domain": "twitter.com",
@@ -258,16 +258,16 @@
       "count": 12
     },
     {
-      "domain": "spotify.com",
-      "count": 10
-    },
-    {
-      "domain": "redcross.lt",
-      "count": 9
+      "domain": "unpkg.com",
+      "count": 12
     },
     {
       "domain": "flickr.com",
-      "count": 9
+      "count": 11
+    },
+    {
+      "domain": "sharepoint.com",
+      "count": 11
     }
   ],
   "relationship_types": {
@@ -276,7 +276,7 @@
     "font_or_preload_dependency": 10,
     "script_dependency": 95,
     "stylesheet_dependency": 71,
-    "editorial_link": 276
+    "editorial_link": 277
   },
-  "generated_at": "2026-10-21T04:15:58.027207+00:00"
+  "generated_at": "2026-10-23T04:20:49.016322+00:00"
 }

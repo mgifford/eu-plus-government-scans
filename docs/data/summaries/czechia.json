@@ -1,11 +1,11 @@
 {
   "country_code": "CZECHIA",
-  "total_relationships": 2619,
+  "total_relationships": 2618,
   "total_source_domains": 54,
   "top_source_domains": [
     {
       "domain": "ostrava.cz",
-      "count": 8507
+      "count": 8555
     },
     {
       "domain": "brno.cz",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "ostrava.cz",
-      "count": 4150
+      "count": 4172
     },
     {
       "domain": "brno.cz",
@@ -227,7 +227,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 327
+      "count": 328
     },
     {
       "domain": "plzensky-kraj.cz",
@@ -251,7 +251,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 273
+      "count": 274
     },
     {
       "domain": "psp.cz",
@@ -275,7 +275,7 @@
     },
     {
       "domain": "google.com",
-      "count": 208
+      "count": 209
     },
     {
       "domain": "pardubickykraj.cz",
@@ -283,7 +283,7 @@
     },
     {
       "domain": "ovanet.cz",
-      "count": 190
+      "count": 191
     },
     {
       "domain": "liberec.cz",
@@ -299,7 +299,7 @@
     },
     {
       "domain": "ostravainfo.cz",
-      "count": 166
+      "count": 167
     },
     {
       "domain": "mf.gov.cz",
@@ -319,7 +319,7 @@
     },
     {
       "domain": "cookiedatabase.org",
-      "count": 145
+      "count": 146
     },
     {
       "domain": "uzis.cz",
@@ -330,6 +330,10 @@
       "count": 139
     },
     {
+      "domain": "portal.gov.cz",
+      "count": 135
+    },
+    {
       "domain": "highcharts.com",
       "count": 135
     },
@@ -338,16 +342,12 @@
       "count": 134
     },
     {
-      "domain": "portal.gov.cz",
-      "count": 134
+      "domain": "smlouvy.gov.cz",
+      "count": 131
     },
     {
       "domain": "md.gov.cz",
       "count": 131
-    },
-    {
-      "domain": "smlouvy.gov.cz",
-      "count": 130
     },
     {
       "domain": "jquery.com",
@@ -359,11 +359,11 @@
     },
     {
       "domain": "bezstavy.cz",
-      "count": 106
+      "count": 108
     },
     {
       "domain": "fajnova.cz",
-      "count": 102
+      "count": 103
     },
     {
       "domain": "nzip.cz",
@@ -379,7 +379,7 @@
     },
     {
       "domain": "zdravaova.cz",
-      "count": 80
+      "count": 81
     },
     {
       "domain": "arcgis.com",
@@ -402,17 +402,17 @@
       "count": 63
     },
     {
-      "domain": "chmi.cz",
-      "count": 61
+      "domain": "fajnarodina.cz",
+      "count": 62
     }
   ],
   "relationship_types": {
-    "editorial_link": 1559,
+    "editorial_link": 1558,
     "script_dependency": 324,
     "stylesheet_dependency": 275,
     "form_destination": 163,
     "image_or_media_dependency": 235,
     "font_or_preload_dependency": 63
   },
-  "generated_at": "2026-10-22T04:15:26.529488+00:00"
+  "generated_at": "2026-10-23T11:53:52.444133+00:00"
 }

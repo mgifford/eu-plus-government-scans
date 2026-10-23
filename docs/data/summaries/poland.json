@@ -1,7 +1,7 @@
 {
   "country_code": "POLAND",
-  "total_relationships": 62239,
-  "total_source_domains": 2500,
+  "total_relationships": 62245,
+  "total_source_domains": 2501,
   "top_source_domains": [
     {
       "domain": "krakow.pl",
@@ -29,7 +29,7 @@
     },
     {
       "domain": "tarnow.pl",
-      "count": 12326
+      "count": 12356
     },
     {
       "domain": "ug.edu.pl",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "krakow.pl",
-      "count": 35620
+      "count": 35624
     },
     {
       "domain": "lodz.pl",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 23003
+      "count": 23005
     },
     {
       "domain": "gdansk.pl",
@@ -247,7 +247,7 @@
     },
     {
       "domain": "google.com",
-      "count": 8731
+      "count": 8732
     },
     {
       "domain": "ug.edu.pl",
@@ -263,7 +263,7 @@
     },
     {
       "domain": "tarnow.pl",
-      "count": 5055
+      "count": 5066
     },
     {
       "domain": "jsdelivr.net",
@@ -327,7 +327,7 @@
     },
     {
       "domain": "wordpress.org",
-      "count": 1809
+      "count": 1811
     },
     {
       "domain": "gorzow.pl",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 33755,
+    "editorial_link": 33759,
     "form_destination": 3338,
-    "image_or_media_dependency": 6839,
+    "image_or_media_dependency": 6840,
     "script_dependency": 8793,
-    "stylesheet_dependency": 7664,
+    "stylesheet_dependency": 7665,
     "font_or_preload_dependency": 1850
   },
-  "generated_at": "2026-10-22T12:02:22.525169+00:00"
+  "generated_at": "2026-10-23T11:53:51.691011+00:00"
 }
