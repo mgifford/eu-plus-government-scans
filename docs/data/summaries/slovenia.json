@@ -5,7 +5,7 @@
   "top_source_domains": [
     {
       "domain": "gov.si",
-      "count": 4670
+      "count": 4694
     },
     {
       "domain": "maribor.si",
@@ -71,7 +71,7 @@
   "top_target_domains": [
     {
       "domain": "gov.si",
-      "count": 3178
+      "count": 3198
     },
     {
       "domain": "facebook.com",
@@ -179,7 +179,7 @@
     },
     {
       "domain": "evropskasredstva.si",
-      "count": 39
+      "count": 41
     },
     {
       "domain": "cloudflare.com",
@@ -278,5 +278,5 @@
     "stylesheet_dependency": 98,
     "form_destination": 45
   },
-  "generated_at": "2026-10-23T11:53:51.787550+00:00"
+  "generated_at": "2026-10-24T11:10:33.384136+00:00"
 }
