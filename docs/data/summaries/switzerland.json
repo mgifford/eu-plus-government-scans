@@ -1,15 +1,15 @@
 {
   "country_code": "SWITZERLAND",
-  "total_relationships": 6804,
+  "total_relationships": 6816,
   "total_source_domains": 9,
   "top_source_domains": [
     {
       "domain": "ethz.ch",
-      "count": 95030
+      "count": 95055
     },
     {
       "domain": "admin.ch",
-      "count": 19661
+      "count": 19689
     },
     {
       "domain": "epfl.ch",
@@ -43,11 +43,11 @@
   "top_target_domains": [
     {
       "domain": "ethz.ch",
-      "count": 80672
+      "count": 80682
     },
     {
       "domain": "admin.ch",
-      "count": 14106
+      "count": 14124
     },
     {
       "domain": "epfl.ch",
@@ -119,7 +119,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 258
+      "count": 260
     },
     {
       "domain": "doi.org",
@@ -243,12 +243,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 3547,
-    "image_or_media_dependency": 812,
+    "editorial_link": 3554,
+    "image_or_media_dependency": 814,
     "font_or_preload_dependency": 174,
-    "script_dependency": 909,
-    "stylesheet_dependency": 892,
-    "form_destination": 470
+    "script_dependency": 910,
+    "stylesheet_dependency": 893,
+    "form_destination": 471
   },
-  "generated_at": "2026-10-24T11:10:32.788312+00:00"
+  "generated_at": "2026-10-25T04:10:27.853314+00:00"
 }

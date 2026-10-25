@@ -1,6 +1,6 @@
 {
   "country_code": "AUSTRIA",
-  "total_relationships": 2986,
+  "total_relationships": 2987,
   "total_source_domains": 37,
   "top_source_domains": [
     {
@@ -9,7 +9,7 @@
     },
     {
       "domain": "ooe.gv.at",
-      "count": 13424
+      "count": 13435
     },
     {
       "domain": "wien.gv.at",
@@ -84,12 +84,12 @@
       "count": 220
     },
     {
-      "domain": "oesterreich.gv.at",
-      "count": 198
+      "domain": "bka.gv.at",
+      "count": 203
     },
     {
-      "domain": "bka.gv.at",
-      "count": 189
+      "domain": "oesterreich.gv.at",
+      "count": 198
     },
     {
       "domain": "gesundheit.gv.at",
@@ -132,15 +132,15 @@
       "count": 60
     },
     {
+      "domain": "tiere-die-ins-leben-passen.at",
+      "count": 48
+    },
+    {
       "domain": "bmk.gv.at",
       "count": 40
     },
     {
       "domain": "parlament.gv.at",
-      "count": 36
-    },
-    {
-      "domain": "tiere-die-ins-leben-passen.at",
       "count": 36
     },
     {
@@ -159,7 +159,7 @@
     },
     {
       "domain": "ooe.gv.at",
-      "count": 4985
+      "count": 4990
     },
     {
       "domain": "wien.gv.at",
@@ -187,7 +187,7 @@
     },
     {
       "domain": "gem2go.at",
-      "count": 720
+      "count": 721
     },
     {
       "domain": "datareporter.eu",
@@ -211,7 +211,7 @@
     },
     {
       "domain": "bka.gv.at",
-      "count": 334
+      "count": 344
     },
     {
       "domain": "ams.at",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "land-oberoesterreich.gv.at",
-      "count": 199
+      "count": 200
     },
     {
       "domain": "bmi.gv.at",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "wko.at",
-      "count": 157
+      "count": 158
     },
     {
       "domain": "bfvfb.at",
@@ -358,9 +358,9 @@
     "editorial_link": 1561,
     "form_destination": 293,
     "image_or_media_dependency": 342,
-    "script_dependency": 390,
+    "script_dependency": 391,
     "stylesheet_dependency": 356,
     "font_or_preload_dependency": 44
   },
-  "generated_at": "2026-10-24T11:10:32.699831+00:00"
+  "generated_at": "2026-10-25T04:10:27.207217+00:00"
 }

@@ -192,12 +192,12 @@
       "count": 356
     },
     {
-      "domain": "ppel.gov.gr",
-      "count": 347
+      "domain": "syzefxis.gov.gr",
+      "count": 350
     },
     {
-      "domain": "syzefxis.gov.gr",
-      "count": 344
+      "domain": "ppel.gov.gr",
+      "count": 347
     },
     {
       "domain": "alonissos.gov.gr",
@@ -414,5 +414,5 @@
     "script_dependency": 1276,
     "stylesheet_dependency": 1057
   },
-  "generated_at": "2026-10-24T11:10:33.558459+00:00"
+  "generated_at": "2026-10-25T04:10:28.142618+00:00"
 }
