@@ -5,11 +5,11 @@
   "top_source_domains": [
     {
       "domain": "krakow.pl",
-      "count": 78745
+      "count": 79020
     },
     {
       "domain": "poznan.pl",
-      "count": 52766
+      "count": 52925
     },
     {
       "domain": "lodz.pl",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "krakow.pl",
-      "count": 38565
+      "count": 38691
     },
     {
       "domain": "lodz.pl",
@@ -215,15 +215,15 @@
     },
     {
       "domain": "poznan.pl",
-      "count": 26595
+      "count": 26672
     },
     {
       "domain": "googleapis.com",
-      "count": 26183
+      "count": 26213
     },
     {
       "domain": "facebook.com",
-      "count": 23407
+      "count": 23436
     },
     {
       "domain": "gdansk.pl",
@@ -231,7 +231,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 9295
+      "count": 9314
     },
     {
       "domain": "uni.opole.pl",
@@ -239,15 +239,15 @@
     },
     {
       "domain": "instagram.com",
-      "count": 9176
+      "count": 9188
     },
     {
       "domain": "youtube.com",
-      "count": 8938
+      "count": 8949
     },
     {
       "domain": "google.com",
-      "count": 8931
+      "count": 8936
     },
     {
       "domain": "ug.edu.pl",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 6513
+      "count": 6534
     },
     {
       "domain": "torun.pl",
@@ -267,11 +267,11 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 4498
+      "count": 4501
     },
     {
       "domain": "cloudflare.com",
-      "count": 4344
+      "count": 4350
     },
     {
       "domain": "gdynia.pl",
@@ -279,15 +279,15 @@
     },
     {
       "domain": "www.gov.pl",
-      "count": 3464
+      "count": 3467
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 3192
+      "count": 3195
     },
     {
       "domain": "twitter.com",
-      "count": 3099
+      "count": 3102
     },
     {
       "domain": "mixbet.radom.pl",
@@ -295,7 +295,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 2893
+      "count": 2907
     },
     {
       "domain": "edu.bydgoszcz.pl",
@@ -410,9 +410,9 @@
     "editorial_link": 33696,
     "form_destination": 3338,
     "image_or_media_dependency": 6844,
-    "script_dependency": 8794,
-    "stylesheet_dependency": 7665,
+    "script_dependency": 8793,
+    "stylesheet_dependency": 7666,
     "font_or_preload_dependency": 1851
   },
-  "generated_at": "2026-10-25T11:37:14.556086+00:00"
+  "generated_at": "2026-10-25T21:14:55.657818+00:00"
 }

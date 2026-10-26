@@ -5,7 +5,7 @@
   "top_source_domains": [
     {
       "domain": "minedu.gov.gr",
-      "count": 2287
+      "count": 2305
     },
     {
       "domain": "pdm.gov.gr",
@@ -140,6 +140,10 @@
       "count": 436
     },
     {
+      "domain": "gsis.gr",
+      "count": 432
+    },
+    {
       "domain": "oropos.gov.gr",
       "count": 432
     },
@@ -150,10 +154,6 @@
     {
       "domain": "ypes.gr",
       "count": 431
-    },
-    {
-      "domain": "gsis.gr",
-      "count": 428
     },
     {
       "domain": "mitos.gov.gr",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "googleapis.com",
-      "count": 3907
+      "count": 3908
     },
     {
       "domain": "facebook.com",
@@ -219,7 +219,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 1571
+      "count": 1572
     },
     {
       "domain": "youtube.com",
@@ -227,11 +227,11 @@
     },
     {
       "domain": "minedu.gov.gr",
-      "count": 1368
+      "count": 1380
     },
     {
       "domain": "google.com",
-      "count": 1336
+      "count": 1337
     },
     {
       "domain": "gstatic.com",
@@ -243,7 +243,7 @@
     },
     {
       "domain": "www.gov.gr",
-      "count": 984
+      "count": 985
     },
     {
       "domain": "twitter.com",
@@ -263,7 +263,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 829
+      "count": 831
     },
     {
       "domain": "pdm.gov.gr",
@@ -291,7 +291,7 @@
     },
     {
       "domain": "gsis.gr",
-      "count": 458
+      "count": 462
     },
     {
       "domain": "mfa.gr",
@@ -343,19 +343,19 @@
     },
     {
       "domain": "fontawesome.com",
-      "count": 317
+      "count": 318
     },
     {
       "domain": "dypa.gov.gr",
       "count": 306
     },
     {
-      "domain": "mindigital.gr",
+      "domain": "espa.gr",
       "count": 305
     },
     {
-      "domain": "espa.gr",
-      "count": 304
+      "domain": "mindigital.gr",
+      "count": 305
     },
     {
       "domain": "bootstrapcdn.com",
@@ -414,5 +414,5 @@
     "script_dependency": 1276,
     "stylesheet_dependency": 1057
   },
-  "generated_at": "2026-10-25T04:10:28.142618+00:00"
+  "generated_at": "2026-10-26T04:12:26.527747+00:00"
 }

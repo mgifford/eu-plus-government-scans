@@ -5,7 +5,7 @@
   "top_source_domains": [
     {
       "domain": "ethz.ch",
-      "count": 95055
+      "count": 95066
     },
     {
       "domain": "admin.ch",
@@ -43,7 +43,7 @@
   "top_target_domains": [
     {
       "domain": "ethz.ch",
-      "count": 80682
+      "count": 80691
     },
     {
       "domain": "admin.ch",
@@ -59,7 +59,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 2567
+      "count": 2568
     },
     {
       "domain": "youtube.com",
@@ -67,7 +67,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 1501
+      "count": 1502
     },
     {
       "domain": "github.io",
@@ -87,7 +87,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 720
+      "count": 721
     },
     {
       "domain": "imgix.net",
@@ -243,12 +243,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 3554,
+    "editorial_link": 3553,
     "image_or_media_dependency": 814,
     "font_or_preload_dependency": 174,
-    "script_dependency": 910,
-    "stylesheet_dependency": 893,
-    "form_destination": 471
+    "script_dependency": 911,
+    "stylesheet_dependency": 894,
+    "form_destination": 470
   },
-  "generated_at": "2026-10-25T04:10:27.853314+00:00"
+  "generated_at": "2026-10-26T04:12:25.131933+00:00"
 }

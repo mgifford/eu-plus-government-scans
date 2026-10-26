@@ -1,11 +1,11 @@
 {
   "country_code": "MALTA",
-  "total_relationships": 1766,
+  "total_relationships": 1724,
   "total_source_domains": 3,
   "top_source_domains": [
     {
       "domain": "gov.mt",
-      "count": 27101
+      "count": 29192
     },
     {
       "domain": "parlament.mt",
@@ -19,115 +19,119 @@
   "top_target_domains": [
     {
       "domain": "gov.mt",
-      "count": 14124
+      "count": 15218
     },
     {
       "domain": "jsdelivr.net",
-      "count": 1564
+      "count": 1700
     },
     {
       "domain": "googleapis.com",
-      "count": 1532
+      "count": 1662
     },
     {
       "domain": "jquery.com",
-      "count": 1194
+      "count": 1290
     },
     {
       "domain": "youtube.com",
-      "count": 950
+      "count": 1027
     },
     {
       "domain": "googletagmanager.com",
-      "count": 917
+      "count": 1000
     },
     {
       "domain": "wordpress.org",
-      "count": 828
+      "count": 898
     },
     {
       "domain": "addtoany.com",
-      "count": 710
+      "count": 773
     },
     {
       "domain": "facebook.com",
-      "count": 524
+      "count": 568
     },
     {
       "domain": "europa.eu",
-      "count": 413
+      "count": 460
     },
     {
       "domain": "gstatic.com",
-      "count": 347
+      "count": 376
     },
     {
       "domain": "instagram.com",
-      "count": 330
+      "count": 347
     },
     {
       "domain": "google.com",
-      "count": 315
+      "count": 339
     },
     {
       "domain": "cloudflare.com",
-      "count": 257
+      "count": 274
     },
     {
       "domain": "linkedin.com",
-      "count": 252
+      "count": 269
     },
     {
       "domain": "wponetap.com",
-      "count": 152
+      "count": 162
     },
     {
       "domain": "twitter.com",
-      "count": 135
+      "count": 145
     },
     {
       "domain": "fontawesome.com",
-      "count": 104
+      "count": 119
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 77
+      "count": 82
     },
     {
       "domain": "corterm.com",
-      "count": 72
+      "count": 77
     },
     {
       "domain": "unpkg.com",
-      "count": 66
-    },
-    {
-      "domain": "office.com",
-      "count": 59
+      "count": 72
     },
     {
       "domain": "legislation.mt",
-      "count": 57
+      "count": 61
     },
     {
-      "domain": "microsoft.com",
-      "count": 53
+      "domain": "office.com",
+      "count": 60
     },
     {
       "domain": "goo.gl",
-      "count": 50
+      "count": 55
+    },
+    {
+      "domain": "microsoft.com",
+      "count": 54
     },
     {
       "domain": "x.com",
-      "count": 44
+      "count": 48
     },
     {
       "domain": "9hdigital.com",
-      "count": 42
+      "count": 46
     },
     {
       "domain": "fbcdn.net",
-      "count": 41
+      "count": 46
+    },
+    {
+      "domain": "cookiedatabase.org",
+      "count": 45
     },
     {
       "domain": "cdnserver.net",
@@ -135,58 +139,66 @@
     },
     {
       "domain": "um.edu.mt",
-      "count": 39
+      "count": 40
     },
     {
-      "domain": "cookiedatabase.org",
-      "count": 38
+      "domain": "msm.io",
+      "count": 36
     },
     {
       "domain": "2isoftware.com",
       "count": 33
     },
     {
+      "domain": "arcgis.com",
+      "count": 28
+    },
+    {
       "domain": "tiktok.com",
       "count": 28
     },
     {
-      "domain": "msm.io",
-      "count": 27
-    },
-    {
       "domain": "parlament.mt",
-      "count": 25
+      "count": 26
     },
     {
       "domain": "2iltd.com",
-      "count": 22
+      "count": 24
     },
     {
-      "domain": "arcgis.com",
-      "count": 22
+      "domain": "eventsingozo.com",
+      "count": 24
+    },
+    {
+      "domain": "born.mt",
+      "count": 21
+    },
+    {
+      "domain": "cookiebot.com",
+      "count": 21
     },
     {
       "domain": "dna.studio",
       "count": 21
     },
     {
-      "domain": "eventsingozo.com",
+      "domain": "simplybook.me",
       "count": 21
+    },
+    {
+      "domain": "idpc.org.mt",
+      "count": 20
+    },
+    {
+      "domain": "ifg.mt",
+      "count": 20
     },
     {
       "domain": "apple.com",
       "count": 19
     },
     {
-      "domain": "idpc.org.mt",
-      "count": 19
-    },
-    {
-      "domain": "ifg.mt",
-      "count": 19
-    },
-    {
-      "domain": "simplybook.me",
+      "domain": "fondi.eu",
       "count": 19
     },
     {
@@ -194,37 +206,25 @@
       "count": 18
     },
     {
-      "domain": "born.mt",
-      "count": 18
-    },
-    {
-      "domain": "cookiebot.com",
-      "count": 18
-    },
-    {
       "domain": "cookielaw.org",
       "count": 18
     },
     {
-      "domain": "fondi.eu",
+      "domain": "fliphtml5.com",
       "count": 18
     },
     {
-      "domain": "mapbox.com",
-      "count": 18
-    },
-    {
-      "domain": "odoo.com",
+      "domain": "google.com.mt",
       "count": 18
     }
   ],
   "relationship_types": {
-    "editorial_link": 731,
-    "script_dependency": 280,
-    "image_or_media_dependency": 277,
-    "stylesheet_dependency": 270,
-    "font_or_preload_dependency": 15,
-    "form_destination": 193
+    "editorial_link": 706,
+    "script_dependency": 276,
+    "image_or_media_dependency": 274,
+    "stylesheet_dependency": 266,
+    "font_or_preload_dependency": 13,
+    "form_destination": 189
   },
-  "generated_at": "2026-10-25T11:37:13.364615+00:00"
+  "generated_at": "2026-10-25T21:14:53.862813+00:00"
 }

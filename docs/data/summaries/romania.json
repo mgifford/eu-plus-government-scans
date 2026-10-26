@@ -9,7 +9,7 @@
     },
     {
       "domain": "mapn.ro",
-      "count": 5418
+      "count": 5455
     },
     {
       "domain": "sibiu.ro",
@@ -103,7 +103,7 @@
   "top_target_domains": [
     {
       "domain": "gov.ro",
-      "count": 2141
+      "count": 2145
     },
     {
       "domain": "politiaromana.ro",
@@ -111,7 +111,7 @@
     },
     {
       "domain": "mapn.ro",
-      "count": 1729
+      "count": 1738
     },
     {
       "domain": "sibiu.ro",
@@ -119,11 +119,11 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 498
+      "count": 500
     },
     {
       "domain": "facebook.com",
-      "count": 465
+      "count": 466
     },
     {
       "domain": "pmb.ro",
@@ -135,7 +135,7 @@
     },
     {
       "domain": "just.ro",
-      "count": 325
+      "count": 327
     },
     {
       "domain": "sri.ro",
@@ -143,19 +143,19 @@
     },
     {
       "domain": "presidency.ro",
-      "count": 271
+      "count": 273
     },
     {
       "domain": "senat.ro",
-      "count": 271
+      "count": 273
     },
     {
       "domain": "nato.int",
-      "count": 266
+      "count": 268
     },
     {
       "domain": "mae.ro",
-      "count": 260
+      "count": 262
     },
     {
       "domain": "brasovcity.ro",
@@ -163,11 +163,11 @@
     },
     {
       "domain": "europa.eu",
-      "count": 220
+      "count": 221
     },
     {
       "domain": "certmil.ro",
-      "count": 218
+      "count": 220
     },
     {
       "domain": "fiipregatit.ro",
@@ -175,7 +175,7 @@
     },
     {
       "domain": "cdep.ro",
-      "count": 201
+      "count": 203
     },
     {
       "domain": "googleapis.com",
@@ -186,12 +186,12 @@
       "count": 174
     },
     {
-      "domain": "anaf.ro",
-      "count": 161
+      "domain": "mfinante.ro",
+      "count": 162
     },
     {
-      "domain": "mfinante.ro",
-      "count": 160
+      "domain": "anaf.ro",
+      "count": 161
     },
     {
       "domain": "sts.ro",
@@ -207,11 +207,11 @@
     },
     {
       "domain": "twitter.com",
-      "count": 124
+      "count": 125
     },
     {
       "domain": "ms.ro",
-      "count": 115
+      "count": 116
     },
     {
       "domain": "mai-dga.ro",
@@ -310,5 +310,5 @@
     "form_destination": 96,
     "font_or_preload_dependency": 28
   },
-  "generated_at": "2026-10-25T11:37:13.921781+00:00"
+  "generated_at": "2026-10-26T04:12:25.324944+00:00"
 }
