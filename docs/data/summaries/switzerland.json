@@ -1,6 +1,6 @@
 {
   "country_code": "SWITZERLAND",
-  "total_relationships": 6816,
+  "total_relationships": 6810,
   "total_source_domains": 9,
   "top_source_domains": [
     {
@@ -13,11 +13,11 @@
     },
     {
       "domain": "epfl.ch",
-      "count": 8379
+      "count": 8588
     },
     {
       "domain": "unige.ch",
-      "count": 6963
+      "count": 6992
     },
     {
       "domain": "bfh.ch",
@@ -43,7 +43,7 @@
   "top_target_domains": [
     {
       "domain": "ethz.ch",
-      "count": 80691
+      "count": 80692
     },
     {
       "domain": "admin.ch",
@@ -51,43 +51,43 @@
     },
     {
       "domain": "epfl.ch",
-      "count": 4605
+      "count": 4704
     },
     {
       "domain": "unige.ch",
-      "count": 4316
+      "count": 4325
     },
     {
       "domain": "linkedin.com",
-      "count": 2568
+      "count": 2578
     },
     {
       "domain": "youtube.com",
-      "count": 1792
+      "count": 1799
     },
     {
       "domain": "instagram.com",
-      "count": 1502
+      "count": 1509
     },
     {
       "domain": "github.io",
-      "count": 1024
+      "count": 1025
     },
     {
       "domain": "facebook.com",
-      "count": 992
+      "count": 1000
     },
     {
       "domain": "twitter.com",
-      "count": 932
+      "count": 936
     },
     {
       "domain": "x.com",
-      "count": 878
+      "count": 886
     },
     {
       "domain": "googleapis.com",
-      "count": 721
+      "count": 734
     },
     {
       "domain": "imgix.net",
@@ -107,7 +107,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 347
+      "count": 355
     },
     {
       "domain": "jsdelivr.net",
@@ -115,15 +115,15 @@
     },
     {
       "domain": "github.com",
-      "count": 262
+      "count": 264
     },
     {
       "domain": "cloudflare.com",
-      "count": 260
+      "count": 262
     },
     {
       "domain": "doi.org",
-      "count": 257
+      "count": 259
     },
     {
       "domain": "jquery.com",
@@ -143,7 +143,7 @@
     },
     {
       "domain": "coursera.org",
-      "count": 158
+      "count": 159
     },
     {
       "domain": "parlament.ch",
@@ -155,7 +155,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 150
+      "count": 152
     },
     {
       "domain": "arxiv.org",
@@ -215,7 +215,7 @@
     },
     {
       "domain": "nih.gov",
-      "count": 69
+      "count": 71
     },
     {
       "domain": "swissuniversities.ch",
@@ -243,12 +243,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 3553,
-    "image_or_media_dependency": 814,
+    "editorial_link": 3550,
+    "image_or_media_dependency": 813,
     "font_or_preload_dependency": 174,
-    "script_dependency": 911,
-    "stylesheet_dependency": 894,
+    "script_dependency": 910,
+    "stylesheet_dependency": 893,
     "form_destination": 470
   },
-  "generated_at": "2026-10-26T04:12:25.131933+00:00"
+  "generated_at": "2026-10-27T12:26:15.948318+00:00"
 }

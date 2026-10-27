@@ -5,13 +5,13 @@
     "file": "iceland.json"
   },
   "SWEDEN": {
-    "total_relationships": 6241,
+    "total_relationships": 6219,
     "total_source_domains": 245,
     "file": "sweden.json"
   },
-  "GERMANY": {
-    "total_relationships": 21913,
-    "total_source_domains": 228,
-    "file": "germany.json"
+  "SWITZERLAND": {
+    "total_relationships": 6810,
+    "total_source_domains": 9,
+    "file": "switzerland.json"
   }
 }

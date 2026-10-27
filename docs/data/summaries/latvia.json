@@ -29,7 +29,7 @@
     },
     {
       "domain": "iem.gov.lv",
-      "count": 654
+      "count": 664
     },
     {
       "domain": "kem.gov.lv",
@@ -254,16 +254,16 @@
       "count": 435
     },
     {
+      "domain": "iem.gov.lv",
+      "count": 382
+    },
+    {
       "domain": "google.com",
       "count": 376
     },
     {
       "domain": "googletagmanager.com",
       "count": 373
-    },
-    {
-      "domain": "iem.gov.lv",
-      "count": 372
     },
     {
       "domain": "liepaja.lv",
@@ -414,5 +414,5 @@
     "font_or_preload_dependency": 139,
     "form_destination": 200
   },
-  "generated_at": "2026-10-26T04:12:26.425244+00:00"
+  "generated_at": "2026-10-26T23:09:38.715173+00:00"
 }
