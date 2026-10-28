@@ -1,11 +1,11 @@
 {
   "country_code": "POLAND",
-  "total_relationships": 62187,
+  "total_relationships": 62186,
   "total_source_domains": 2501,
   "top_source_domains": [
     {
       "domain": "krakow.pl",
-      "count": 79465
+      "count": 79525
     },
     {
       "domain": "poznan.pl",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "krakow.pl",
-      "count": 38950
+      "count": 38978
     },
     {
       "domain": "lodz.pl",
@@ -219,11 +219,11 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 26235
+      "count": 26241
     },
     {
       "domain": "facebook.com",
-      "count": 23461
+      "count": 23466
     },
     {
       "domain": "gdansk.pl",
@@ -231,23 +231,23 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 9325
+      "count": 9326
+    },
+    {
+      "domain": "instagram.com",
+      "count": 9201
     },
     {
       "domain": "uni.opole.pl",
       "count": 9201
     },
     {
-      "domain": "instagram.com",
-      "count": 9198
-    },
-    {
       "domain": "youtube.com",
-      "count": 8960
+      "count": 8963
     },
     {
       "domain": "google.com",
-      "count": 8941
+      "count": 8942
     },
     {
       "domain": "ug.edu.pl",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 6535
+      "count": 6537
     },
     {
       "domain": "torun.pl",
@@ -283,11 +283,11 @@
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 3195
+      "count": 3197
     },
     {
       "domain": "twitter.com",
-      "count": 3109
+      "count": 3110
     },
     {
       "domain": "mixbet.radom.pl",
@@ -295,7 +295,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 2918
+      "count": 2919
     },
     {
       "domain": "edu.bydgoszcz.pl",
@@ -371,7 +371,7 @@
     },
     {
       "domain": "x.com",
-      "count": 1039
+      "count": 1040
     },
     {
       "domain": "policja.pl",
@@ -410,9 +410,9 @@
     "editorial_link": 33695,
     "form_destination": 3338,
     "image_or_media_dependency": 6844,
-    "script_dependency": 8793,
+    "script_dependency": 8792,
     "stylesheet_dependency": 7666,
     "font_or_preload_dependency": 1851
   },
-  "generated_at": "2026-10-27T04:39:48.835271+00:00"
+  "generated_at": "2026-10-28T13:01:04.823992+00:00"
 }

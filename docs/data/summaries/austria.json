@@ -5,7 +5,7 @@
   "top_source_domains": [
     {
       "domain": "steiermark.at",
-      "count": 15659
+      "count": 15736
     },
     {
       "domain": "ooe.gv.at",
@@ -155,7 +155,7 @@
   "top_target_domains": [
     {
       "domain": "steiermark.at",
-      "count": 8522
+      "count": 8579
     },
     {
       "domain": "ooe.gv.at",
@@ -227,7 +227,7 @@
     },
     {
       "domain": "uwz.at",
-      "count": 242
+      "count": 248
     },
     {
       "domain": "bgld.gv.at",
@@ -283,19 +283,19 @@
     },
     {
       "domain": "bfvfb.at",
-      "count": 150
+      "count": 153
     },
     {
       "domain": "bfvff.at",
-      "count": 150
+      "count": 153
+    },
+    {
+      "domain": "flickr.com",
+      "count": 144
     },
     {
       "domain": "dioezese-linz.at",
       "count": 144
-    },
-    {
-      "domain": "flickr.com",
-      "count": 141
     },
     {
       "domain": "altstoffsammelzentrum.at",
@@ -318,16 +318,16 @@
       "count": 108
     },
     {
+      "domain": "fdisk.at",
+      "count": 105
+    },
+    {
       "domain": "polizei.gv.at",
       "count": 104
     },
     {
       "domain": "standortooe.at",
       "count": 104
-    },
-    {
-      "domain": "fdisk.at",
-      "count": 102
     },
     {
       "domain": "gem2go.info",
@@ -362,5 +362,5 @@
     "stylesheet_dependency": 356,
     "font_or_preload_dependency": 44
   },
-  "generated_at": "2026-10-25T04:10:27.207217+00:00"
+  "generated_at": "2026-10-28T13:01:04.972049+00:00"
 }

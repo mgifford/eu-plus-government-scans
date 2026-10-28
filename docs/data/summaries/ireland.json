@@ -1,6 +1,6 @@
 {
   "country_code": "IRELAND",
-  "total_relationships": 2124,
+  "total_relationships": 2123,
   "total_source_domains": 105,
   "top_source_domains": [
     {
@@ -211,7 +211,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 823
+      "count": 825
     },
     {
       "domain": "instagram.com",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 582
+      "count": 583
     },
     {
       "domain": "twitter.com",
@@ -295,7 +295,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 211
+      "count": 212
     },
     {
       "domain": "dlrcoco.ie",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 1030,
+    "editorial_link": 1029,
     "form_destination": 136,
     "script_dependency": 411,
     "stylesheet_dependency": 295,
     "image_or_media_dependency": 192,
     "font_or_preload_dependency": 60
   },
-  "generated_at": "2026-10-23T17:20:53.956911+00:00"
+  "generated_at": "2026-10-28T13:01:04.494001+00:00"
 }

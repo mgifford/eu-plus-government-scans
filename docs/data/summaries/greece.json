@@ -1,11 +1,11 @@
 {
   "country_code": "GREECE",
-  "total_relationships": 8685,
+  "total_relationships": 8686,
   "total_source_domains": 367,
   "top_source_domains": [
     {
       "domain": "minedu.gov.gr",
-      "count": 2305
+      "count": 2333
     },
     {
       "domain": "pdm.gov.gr",
@@ -28,12 +28,12 @@
       "count": 984
     },
     {
-      "domain": "pde.gov.gr",
-      "count": 848
+      "domain": "culture.gov.gr",
+      "count": 868
     },
     {
-      "domain": "culture.gov.gr",
-      "count": 829
+      "domain": "pde.gov.gr",
+      "count": 848
     },
     {
       "domain": "services.gov.gr",
@@ -88,6 +88,10 @@
       "count": 588
     },
     {
+      "domain": "pnai.gov.gr",
+      "count": 560
+    },
+    {
       "domain": "necca.gov.gr",
       "count": 535
     },
@@ -114,10 +118,6 @@
     {
       "domain": "enterprisegreece.gov.gr",
       "count": 464
-    },
-    {
-      "domain": "pnai.gov.gr",
-      "count": 463
     },
     {
       "domain": "minsports.gov.gr",
@@ -207,39 +207,39 @@
   "top_target_domains": [
     {
       "domain": "googleapis.com",
-      "count": 3908
+      "count": 3913
     },
     {
       "domain": "facebook.com",
-      "count": 2179
+      "count": 2182
     },
     {
       "domain": "diavgeia.gov.gr",
-      "count": 1729
+      "count": 1731
     },
     {
       "domain": "googletagmanager.com",
-      "count": 1572
+      "count": 1577
     },
     {
       "domain": "youtube.com",
-      "count": 1440
+      "count": 1443
     },
     {
       "domain": "minedu.gov.gr",
-      "count": 1380
+      "count": 1397
     },
     {
       "domain": "google.com",
-      "count": 1337
+      "count": 1338
     },
     {
       "domain": "gstatic.com",
-      "count": 1140
+      "count": 1143
     },
     {
       "domain": "europa.eu",
-      "count": 1134
+      "count": 1135
     },
     {
       "domain": "www.gov.gr",
@@ -247,15 +247,15 @@
     },
     {
       "domain": "twitter.com",
-      "count": 953
+      "count": 956
     },
     {
       "domain": "instagram.com",
-      "count": 913
+      "count": 915
     },
     {
       "domain": "userway.org",
-      "count": 877
+      "count": 880
     },
     {
       "domain": "jsdelivr.net",
@@ -314,8 +314,12 @@
       "count": 377
     },
     {
+      "domain": "culture.gov.gr",
+      "count": 375
+    },
+    {
       "domain": "ypes.gr",
-      "count": 372
+      "count": 373
     },
     {
       "domain": "heraklion.gr",
@@ -324,10 +328,6 @@
     {
       "domain": "cityofathens.gr",
       "count": 362
-    },
-    {
-      "domain": "culture.gov.gr",
-      "count": 348
     },
     {
       "domain": "unpkg.com",
@@ -379,7 +379,7 @@
     },
     {
       "domain": "x.com",
-      "count": 236
+      "count": 237
     },
     {
       "domain": "pde.gov.gr",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 5010,
+    "editorial_link": 5011,
     "font_or_preload_dependency": 308,
     "form_destination": 375,
     "image_or_media_dependency": 659,
     "script_dependency": 1276,
     "stylesheet_dependency": 1057
   },
-  "generated_at": "2026-10-26T04:12:26.527747+00:00"
+  "generated_at": "2026-10-27T18:20:51.293842+00:00"
 }

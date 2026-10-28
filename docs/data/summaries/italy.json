@@ -69,11 +69,11 @@
     },
     {
       "domain": "mef.gov.it",
-      "count": 2089
+      "count": 2100
     },
     {
       "domain": "difesa.it",
-      "count": 1775
+      "count": 1789
     },
     {
       "domain": "interno.gov.it",
@@ -215,7 +215,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 9445
+      "count": 9446
     },
     {
       "domain": "cultura.gov.it",
@@ -223,23 +223,23 @@
     },
     {
       "domain": "twitter.com",
-      "count": 7615
+      "count": 7616
     },
     {
       "domain": "youtube.com",
-      "count": 7492
+      "count": 7493
     },
     {
       "domain": "agid.gov.it",
-      "count": 6047
+      "count": 6048
     },
     {
       "domain": "instagram.com",
-      "count": 5834
+      "count": 5835
     },
     {
       "domain": "governo.it",
-      "count": 4222
+      "count": 4223
     },
     {
       "domain": "europa.eu",
@@ -263,11 +263,11 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 2698
+      "count": 2700
     },
     {
       "domain": "whatsapp.com",
-      "count": 2472
+      "count": 2473
     },
     {
       "domain": "regione.veneto.it",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 2170
+      "count": 2171
     },
     {
       "domain": "regione.lazio.it",
@@ -327,7 +327,7 @@
     },
     {
       "domain": "mef.gov.it",
-      "count": 1231
+      "count": 1238
     },
     {
       "domain": "regione.toscana.it",
@@ -351,7 +351,7 @@
     },
     {
       "domain": "difesa.it",
-      "count": 886
+      "count": 891
     },
     {
       "domain": "comune.genova.it",
@@ -414,5 +414,5 @@
     "form_destination": 1458,
     "font_or_preload_dependency": 258
   },
-  "generated_at": "2026-10-26T23:09:38.508563+00:00"
+  "generated_at": "2026-10-28T04:59:39.971196+00:00"
 }
