@@ -1,10 +1,10 @@
 ﻿country_code,country,service,domains_depending,scanned_domains,percent
 UNITED_KINGDOM_UK,United Kingdom,googleapis.com,1542,3320,46.4
-UNITED_KINGDOM_UK,United Kingdom,googletagmanager.com,1276,3320,38.4
+UNITED_KINGDOM_UK,United Kingdom,googletagmanager.com,1275,3320,38.4
 UNITED_KINGDOM_UK,United Kingdom,gstatic.com,591,3320,17.8
 UNITED_KINGDOM_UK,United Kingdom,jsdelivr.net,436,3320,13.1
 UNITED_KINGDOM_UK,United Kingdom,fontawesome.com,405,3320,12.2
-UNITED_KINGDOM_UK,United Kingdom,google.com,1184,3320,35.7
+UNITED_KINGDOM_UK,United Kingdom,google.com,1183,3320,35.6
 UNITED_KINGDOM_UK,United Kingdom,cloudflare.com,915,3320,27.6
 UNITED_KINGDOM_UK,United Kingdom,jquery.com,181,3320,5.5
 UNITED_KINGDOM_UK,United Kingdom,unpkg.com,336,3320,10.1
@@ -13,12 +13,12 @@ UNITED_KINGDOM_UK,United Kingdom,typekit.net,149,3320,4.5
 UNITED_KINGDOM_UK,United Kingdom,cookiebot.com,59,3320,1.8
 UNITED_KINGDOM_UK,United Kingdom,facebook.com,23,3320,0.7
 UNITED_KINGDOM_UK,United Kingdom,facebook.net,63,3320,1.9
-UNITED_KINGDOM_UK,United Kingdom,amazonaws.com,137,3320,4.1
 UNITED_KINGDOM_UK,United Kingdom,addtoany.com,38,3320,1.1
+UNITED_KINGDOM_UK,United Kingdom,amazonaws.com,137,3320,4.1
 UNITED_KINGDOM_UK,United Kingdom,arcgis.com,26,3320,0.8
-UNITED_KINGDOM_UK,United Kingdom,mapbox.com,48,3320,1.4
 UNITED_KINGDOM_UK,United Kingdom,cloudfront.net,354,3320,10.7
 UNITED_KINGDOM_UK,United Kingdom,cdn-cookieyes.com,60,3320,1.8
+UNITED_KINGDOM_UK,United Kingdom,fbcdn.net,22,3320,0.7
 POLAND,Poland,googleapis.com,1480,2444,60.6
 POLAND,Poland,googletagmanager.com,669,2444,27.4
 POLAND,Poland,gstatic.com,508,2444,20.8
@@ -33,12 +33,12 @@ POLAND,Poland,typekit.net,29,2444,1.2
 POLAND,Poland,cookiebot.com,26,2444,1.1
 POLAND,Poland,facebook.com,119,2444,4.9
 POLAND,Poland,facebook.net,68,2444,2.8
-POLAND,Poland,amazonaws.com,9,2444,0.4
 POLAND,Poland,addtoany.com,24,2444,1.0
+POLAND,Poland,amazonaws.com,9,2444,0.4
 POLAND,Poland,arcgis.com,2,2444,0.1
-POLAND,Poland,mapbox.com,11,2444,0.5
 POLAND,Poland,cloudfront.net,27,2444,1.1
 POLAND,Poland,cdn-cookieyes.com,71,2444,2.9
+POLAND,Poland,fbcdn.net,54,2444,2.2
 FRANCE,France,googleapis.com,230,668,34.4
 FRANCE,France,googletagmanager.com,88,668,13.2
 FRANCE,France,gstatic.com,114,668,17.1
@@ -53,12 +53,12 @@ FRANCE,France,typekit.net,30,668,4.5
 FRANCE,France,cookiebot.com,3,668,0.4
 FRANCE,France,facebook.com,10,668,1.5
 FRANCE,France,facebook.net,11,668,1.6
-FRANCE,France,amazonaws.com,12,668,1.8
 FRANCE,France,addtoany.com,29,668,4.3
+FRANCE,France,amazonaws.com,12,668,1.8
 FRANCE,France,arcgis.com,5,668,0.7
-FRANCE,France,mapbox.com,9,668,1.3
 FRANCE,France,cloudfront.net,12,668,1.8
 FRANCE,France,cdn-cookieyes.com,1,668,0.1
+FRANCE,France,fbcdn.net,16,668,2.4
 PORTUGAL,Portugal,googleapis.com,232,384,60.4
 PORTUGAL,Portugal,googletagmanager.com,207,384,53.9
 PORTUGAL,Portugal,gstatic.com,94,384,24.5
@@ -73,12 +73,12 @@ PORTUGAL,Portugal,typekit.net,8,384,2.1
 PORTUGAL,Portugal,cookiebot.com,3,384,0.8
 PORTUGAL,Portugal,facebook.com,7,384,1.8
 PORTUGAL,Portugal,facebook.net,4,384,1.0
-PORTUGAL,Portugal,amazonaws.com,9,384,2.3
 PORTUGAL,Portugal,addtoany.com,9,384,2.3
+PORTUGAL,Portugal,amazonaws.com,9,384,2.3
 PORTUGAL,Portugal,arcgis.com,3,384,0.8
-PORTUGAL,Portugal,mapbox.com,5,384,1.3
 PORTUGAL,Portugal,cloudfront.net,0,384,0.0
 PORTUGAL,Portugal,cdn-cookieyes.com,5,384,1.3
+PORTUGAL,Portugal,fbcdn.net,2,384,0.5
 GREECE,Greece,googleapis.com,239,365,65.5
 GREECE,Greece,googletagmanager.com,133,365,36.4
 GREECE,Greece,gstatic.com,108,365,29.6
@@ -93,12 +93,12 @@ GREECE,Greece,typekit.net,4,365,1.1
 GREECE,Greece,cookiebot.com,1,365,0.3
 GREECE,Greece,facebook.com,4,365,1.1
 GREECE,Greece,facebook.net,8,365,2.2
-GREECE,Greece,amazonaws.com,0,365,0.0
 GREECE,Greece,addtoany.com,9,365,2.5
+GREECE,Greece,amazonaws.com,0,365,0.0
 GREECE,Greece,arcgis.com,1,365,0.3
-GREECE,Greece,mapbox.com,0,365,0.0
 GREECE,Greece,cloudfront.net,2,365,0.5
 GREECE,Greece,cdn-cookieyes.com,20,365,5.5
+GREECE,Greece,fbcdn.net,1,365,0.3
 SPAIN,Spain,googleapis.com,104,245,42.4
 SPAIN,Spain,googletagmanager.com,88,245,35.9
 SPAIN,Spain,gstatic.com,52,245,21.2
@@ -113,13 +113,13 @@ SPAIN,Spain,typekit.net,1,245,0.4
 SPAIN,Spain,cookiebot.com,1,245,0.4
 SPAIN,Spain,facebook.com,10,245,4.1
 SPAIN,Spain,facebook.net,9,245,3.7
-SPAIN,Spain,amazonaws.com,3,245,1.2
 SPAIN,Spain,addtoany.com,19,245,7.8
+SPAIN,Spain,amazonaws.com,3,245,1.2
 SPAIN,Spain,arcgis.com,4,245,1.6
-SPAIN,Spain,mapbox.com,3,245,1.2
 SPAIN,Spain,cloudfront.net,4,245,1.6
 SPAIN,Spain,cdn-cookieyes.com,0,245,0.0
-SWEDEN,Sweden,googleapis.com,64,241,26.6
+SPAIN,Spain,fbcdn.net,2,245,0.8
+SWEDEN,Sweden,googleapis.com,62,241,25.7
 SWEDEN,Sweden,googletagmanager.com,14,241,5.8
 SWEDEN,Sweden,gstatic.com,20,241,8.3
 SWEDEN,Sweden,jsdelivr.net,19,241,7.9
@@ -133,16 +133,16 @@ SWEDEN,Sweden,typekit.net,10,241,4.1
 SWEDEN,Sweden,cookiebot.com,18,241,7.5
 SWEDEN,Sweden,facebook.com,1,241,0.4
 SWEDEN,Sweden,facebook.net,1,241,0.4
-SWEDEN,Sweden,amazonaws.com,3,241,1.2
 SWEDEN,Sweden,addtoany.com,1,241,0.4
+SWEDEN,Sweden,amazonaws.com,3,241,1.2
 SWEDEN,Sweden,arcgis.com,0,241,0.0
-SWEDEN,Sweden,mapbox.com,1,241,0.4
 SWEDEN,Sweden,cloudfront.net,1,241,0.4
 SWEDEN,Sweden,cdn-cookieyes.com,3,241,1.2
+SWEDEN,Sweden,fbcdn.net,0,241,0.0
 GERMANY,Germany,googleapis.com,15,217,6.9
 GERMANY,Germany,googletagmanager.com,6,217,2.8
 GERMANY,Germany,gstatic.com,7,217,3.2
-GERMANY,Germany,jsdelivr.net,14,217,6.5
+GERMANY,Germany,jsdelivr.net,13,217,6.0
 GERMANY,Germany,fontawesome.com,3,217,1.4
 GERMANY,Germany,google.com,4,217,1.8
 GERMANY,Germany,cloudflare.com,13,217,6.0
@@ -153,12 +153,12 @@ GERMANY,Germany,typekit.net,2,217,0.9
 GERMANY,Germany,cookiebot.com,11,217,5.1
 GERMANY,Germany,facebook.com,1,217,0.5
 GERMANY,Germany,facebook.net,0,217,0.0
-GERMANY,Germany,amazonaws.com,5,217,2.3
 GERMANY,Germany,addtoany.com,2,217,0.9
+GERMANY,Germany,amazonaws.com,5,217,2.3
 GERMANY,Germany,arcgis.com,1,217,0.5
-GERMANY,Germany,mapbox.com,2,217,0.9
 GERMANY,Germany,cloudfront.net,0,217,0.0
 GERMANY,Germany,cdn-cookieyes.com,0,217,0.0
+GERMANY,Germany,fbcdn.net,1,217,0.5
 CANADA,Canada,googleapis.com,109,196,55.6
 CANADA,Canada,googletagmanager.com,81,196,41.3
 CANADA,Canada,gstatic.com,36,196,18.4
@@ -173,15 +173,15 @@ CANADA,Canada,typekit.net,12,196,6.1
 CANADA,Canada,cookiebot.com,1,196,0.5
 CANADA,Canada,facebook.com,6,196,3.1
 CANADA,Canada,facebook.net,5,196,2.6
-CANADA,Canada,amazonaws.com,15,196,7.7
 CANADA,Canada,addtoany.com,9,196,4.6
+CANADA,Canada,amazonaws.com,15,196,7.7
 CANADA,Canada,arcgis.com,19,196,9.7
-CANADA,Canada,mapbox.com,3,196,1.5
 CANADA,Canada,cloudfront.net,11,196,5.6
 CANADA,Canada,cdn-cookieyes.com,1,196,0.5
+CANADA,Canada,fbcdn.net,1,196,0.5
 ITALY,Italy,googleapis.com,87,148,58.8
 ITALY,Italy,googletagmanager.com,32,148,21.6
-ITALY,Italy,gstatic.com,31,148,20.9
+ITALY,Italy,gstatic.com,32,148,21.6
 ITALY,Italy,jsdelivr.net,53,148,35.8
 ITALY,Italy,fontawesome.com,25,148,16.9
 ITALY,Italy,google.com,35,148,23.6
@@ -193,12 +193,12 @@ ITALY,Italy,typekit.net,2,148,1.4
 ITALY,Italy,cookiebot.com,6,148,4.1
 ITALY,Italy,facebook.com,4,148,2.7
 ITALY,Italy,facebook.net,5,148,3.4
-ITALY,Italy,amazonaws.com,7,148,4.7
 ITALY,Italy,addtoany.com,11,148,7.4
+ITALY,Italy,amazonaws.com,7,148,4.7
 ITALY,Italy,arcgis.com,3,148,2.0
-ITALY,Italy,mapbox.com,1,148,0.7
 ITALY,Italy,cloudfront.net,1,148,0.7
 ITALY,Italy,cdn-cookieyes.com,6,148,4.1
+ITALY,Italy,fbcdn.net,0,148,0.0
 LATVIA,Latvia,googleapis.com,38,141,27.0
 LATVIA,Latvia,googletagmanager.com,25,141,17.7
 LATVIA,Latvia,gstatic.com,14,141,9.9
@@ -213,12 +213,12 @@ LATVIA,Latvia,typekit.net,3,141,2.1
 LATVIA,Latvia,cookiebot.com,4,141,2.8
 LATVIA,Latvia,facebook.com,5,141,3.5
 LATVIA,Latvia,facebook.net,0,141,0.0
-LATVIA,Latvia,amazonaws.com,0,141,0.0
 LATVIA,Latvia,addtoany.com,8,141,5.7
+LATVIA,Latvia,amazonaws.com,0,141,0.0
 LATVIA,Latvia,arcgis.com,0,141,0.0
-LATVIA,Latvia,mapbox.com,1,141,0.7
 LATVIA,Latvia,cloudfront.net,1,141,0.7
 LATVIA,Latvia,cdn-cookieyes.com,2,141,1.4
+LATVIA,Latvia,fbcdn.net,0,141,0.0
 IRELAND,Ireland,googleapis.com,49,104,47.1
 IRELAND,Ireland,googletagmanager.com,30,104,28.8
 IRELAND,Ireland,gstatic.com,18,104,17.3
@@ -233,12 +233,12 @@ IRELAND,Ireland,typekit.net,7,104,6.7
 IRELAND,Ireland,cookiebot.com,14,104,13.5
 IRELAND,Ireland,facebook.com,3,104,2.9
 IRELAND,Ireland,facebook.net,1,104,1.0
-IRELAND,Ireland,amazonaws.com,8,104,7.7
 IRELAND,Ireland,addtoany.com,1,104,1.0
+IRELAND,Ireland,amazonaws.com,8,104,7.7
 IRELAND,Ireland,arcgis.com,2,104,1.9
-IRELAND,Ireland,mapbox.com,0,104,0.0
 IRELAND,Ireland,cloudfront.net,2,104,1.9
 IRELAND,Ireland,cdn-cookieyes.com,3,104,2.9
+IRELAND,Ireland,fbcdn.net,0,104,0.0
 DENMARK,Denmark,googleapis.com,26,79,32.9
 DENMARK,Denmark,googletagmanager.com,1,79,1.3
 DENMARK,Denmark,gstatic.com,14,79,17.7
@@ -253,12 +253,12 @@ DENMARK,Denmark,typekit.net,4,79,5.1
 DENMARK,Denmark,cookiebot.com,9,79,11.4
 DENMARK,Denmark,facebook.com,0,79,0.0
 DENMARK,Denmark,facebook.net,1,79,1.3
-DENMARK,Denmark,amazonaws.com,0,79,0.0
 DENMARK,Denmark,addtoany.com,0,79,0.0
+DENMARK,Denmark,amazonaws.com,0,79,0.0
 DENMARK,Denmark,arcgis.com,0,79,0.0
-DENMARK,Denmark,mapbox.com,1,79,1.3
 DENMARK,Denmark,cloudfront.net,1,79,1.3
 DENMARK,Denmark,cdn-cookieyes.com,0,79,0.0
+DENMARK,Denmark,fbcdn.net,1,79,1.3
 NETHERLANDS,Netherlands,googleapis.com,18,69,26.1
 NETHERLANDS,Netherlands,googletagmanager.com,10,69,14.5
 NETHERLANDS,Netherlands,gstatic.com,17,69,24.6
@@ -273,12 +273,12 @@ NETHERLANDS,Netherlands,typekit.net,4,69,5.8
 NETHERLANDS,Netherlands,cookiebot.com,5,69,7.2
 NETHERLANDS,Netherlands,facebook.com,1,69,1.4
 NETHERLANDS,Netherlands,facebook.net,1,69,1.4
-NETHERLANDS,Netherlands,amazonaws.com,2,69,2.9
 NETHERLANDS,Netherlands,addtoany.com,0,69,0.0
+NETHERLANDS,Netherlands,amazonaws.com,2,69,2.9
 NETHERLANDS,Netherlands,arcgis.com,3,69,4.3
-NETHERLANDS,Netherlands,mapbox.com,0,69,0.0
 NETHERLANDS,Netherlands,cloudfront.net,0,69,0.0
 NETHERLANDS,Netherlands,cdn-cookieyes.com,1,69,1.4
+NETHERLANDS,Netherlands,fbcdn.net,0,69,0.0
 BULGARIA,Bulgaria,googleapis.com,30,55,54.5
 BULGARIA,Bulgaria,googletagmanager.com,13,55,23.6
 BULGARIA,Bulgaria,gstatic.com,12,55,21.8
@@ -293,12 +293,12 @@ BULGARIA,Bulgaria,typekit.net,0,55,0.0
 BULGARIA,Bulgaria,cookiebot.com,1,55,1.8
 BULGARIA,Bulgaria,facebook.com,1,55,1.8
 BULGARIA,Bulgaria,facebook.net,1,55,1.8
-BULGARIA,Bulgaria,amazonaws.com,1,55,1.8
 BULGARIA,Bulgaria,addtoany.com,1,55,1.8
+BULGARIA,Bulgaria,amazonaws.com,1,55,1.8
 BULGARIA,Bulgaria,arcgis.com,0,55,0.0
-BULGARIA,Bulgaria,mapbox.com,0,55,0.0
 BULGARIA,Bulgaria,cloudfront.net,1,55,1.8
 BULGARIA,Bulgaria,cdn-cookieyes.com,0,55,0.0
+BULGARIA,Bulgaria,fbcdn.net,2,55,3.6
 BELGIUM,Belgium,googleapis.com,21,43,48.8
 BELGIUM,Belgium,googletagmanager.com,14,43,32.6
 BELGIUM,Belgium,gstatic.com,12,43,27.9
@@ -313,12 +313,12 @@ BELGIUM,Belgium,typekit.net,1,43,2.3
 BELGIUM,Belgium,cookiebot.com,4,43,9.3
 BELGIUM,Belgium,facebook.com,1,43,2.3
 BELGIUM,Belgium,facebook.net,0,43,0.0
-BELGIUM,Belgium,amazonaws.com,6,43,14.0
 BELGIUM,Belgium,addtoany.com,4,43,9.3
+BELGIUM,Belgium,amazonaws.com,6,43,14.0
 BELGIUM,Belgium,arcgis.com,1,43,2.3
-BELGIUM,Belgium,mapbox.com,1,43,2.3
 BELGIUM,Belgium,cloudfront.net,3,43,7.0
 BELGIUM,Belgium,cdn-cookieyes.com,1,43,2.3
+BELGIUM,Belgium,fbcdn.net,0,43,0.0
 FINLAND,Finland,googleapis.com,4,41,9.8
 FINLAND,Finland,googletagmanager.com,1,41,2.4
 FINLAND,Finland,gstatic.com,2,41,4.9
@@ -333,12 +333,12 @@ FINLAND,Finland,typekit.net,1,41,2.4
 FINLAND,Finland,cookiebot.com,2,41,4.9
 FINLAND,Finland,facebook.com,0,41,0.0
 FINLAND,Finland,facebook.net,0,41,0.0
-FINLAND,Finland,amazonaws.com,0,41,0.0
 FINLAND,Finland,addtoany.com,2,41,4.9
+FINLAND,Finland,amazonaws.com,0,41,0.0
 FINLAND,Finland,arcgis.com,0,41,0.0
-FINLAND,Finland,mapbox.com,0,41,0.0
 FINLAND,Finland,cloudfront.net,0,41,0.0
 FINLAND,Finland,cdn-cookieyes.com,0,41,0.0
+FINLAND,Finland,fbcdn.net,0,41,0.0
 LUXEMBOURG,Luxembourg,googleapis.com,16,38,42.1
 LUXEMBOURG,Luxembourg,googletagmanager.com,3,38,7.9
 LUXEMBOURG,Luxembourg,gstatic.com,9,38,23.7
@@ -353,12 +353,12 @@ LUXEMBOURG,Luxembourg,typekit.net,6,38,15.8
 LUXEMBOURG,Luxembourg,cookiebot.com,2,38,5.3
 LUXEMBOURG,Luxembourg,facebook.com,0,38,0.0
 LUXEMBOURG,Luxembourg,facebook.net,0,38,0.0
-LUXEMBOURG,Luxembourg,amazonaws.com,1,38,2.6
 LUXEMBOURG,Luxembourg,addtoany.com,1,38,2.6
+LUXEMBOURG,Luxembourg,amazonaws.com,1,38,2.6
 LUXEMBOURG,Luxembourg,arcgis.com,0,38,0.0
-LUXEMBOURG,Luxembourg,mapbox.com,0,38,0.0
 LUXEMBOURG,Luxembourg,cloudfront.net,1,38,2.6
 LUXEMBOURG,Luxembourg,cdn-cookieyes.com,0,38,0.0
+LUXEMBOURG,Luxembourg,fbcdn.net,1,38,2.6
 AUSTRIA,Austria,googleapis.com,7,34,20.6
 AUSTRIA,Austria,googletagmanager.com,1,34,2.9
 AUSTRIA,Austria,gstatic.com,3,34,8.8
@@ -373,12 +373,12 @@ AUSTRIA,Austria,typekit.net,1,34,2.9
 AUSTRIA,Austria,cookiebot.com,3,34,8.8
 AUSTRIA,Austria,facebook.com,0,34,0.0
 AUSTRIA,Austria,facebook.net,1,34,2.9
-AUSTRIA,Austria,amazonaws.com,0,34,0.0
 AUSTRIA,Austria,addtoany.com,0,34,0.0
+AUSTRIA,Austria,amazonaws.com,0,34,0.0
 AUSTRIA,Austria,arcgis.com,0,34,0.0
-AUSTRIA,Austria,mapbox.com,0,34,0.0
 AUSTRIA,Austria,cloudfront.net,0,34,0.0
 AUSTRIA,Austria,cdn-cookieyes.com,0,34,0.0
+AUSTRIA,Austria,fbcdn.net,0,34,0.0
 NORWAY,Norway,googleapis.com,13,34,38.2
 NORWAY,Norway,googletagmanager.com,3,34,8.8
 NORWAY,Norway,gstatic.com,5,34,14.7
@@ -393,12 +393,12 @@ NORWAY,Norway,typekit.net,2,34,5.9
 NORWAY,Norway,cookiebot.com,4,34,11.8
 NORWAY,Norway,facebook.com,0,34,0.0
 NORWAY,Norway,facebook.net,0,34,0.0
-NORWAY,Norway,amazonaws.com,0,34,0.0
 NORWAY,Norway,addtoany.com,0,34,0.0
+NORWAY,Norway,amazonaws.com,0,34,0.0
 NORWAY,Norway,arcgis.com,2,34,5.9
-NORWAY,Norway,mapbox.com,0,34,0.0
 NORWAY,Norway,cloudfront.net,2,34,5.9
 NORWAY,Norway,cdn-cookieyes.com,1,34,2.9
+NORWAY,Norway,fbcdn.net,0,34,0.0
 CZECHIA,Czechia,googleapis.com,20,32,62.5
 CZECHIA,Czechia,googletagmanager.com,15,32,46.9
 CZECHIA,Czechia,gstatic.com,12,32,37.5
@@ -413,12 +413,12 @@ CZECHIA,Czechia,typekit.net,2,32,6.2
 CZECHIA,Czechia,cookiebot.com,1,32,3.1
 CZECHIA,Czechia,facebook.com,6,32,18.8
 CZECHIA,Czechia,facebook.net,2,32,6.2
-CZECHIA,Czechia,amazonaws.com,1,32,3.1
 CZECHIA,Czechia,addtoany.com,0,32,0.0
+CZECHIA,Czechia,amazonaws.com,1,32,3.1
 CZECHIA,Czechia,arcgis.com,3,32,9.4
-CZECHIA,Czechia,mapbox.com,2,32,6.2
 CZECHIA,Czechia,cloudfront.net,1,32,3.1
 CZECHIA,Czechia,cdn-cookieyes.com,1,32,3.1
+CZECHIA,Czechia,fbcdn.net,1,32,3.1
 CROATIA,Croatia,googleapis.com,15,31,48.4
 CROATIA,Croatia,googletagmanager.com,20,31,64.5
 CROATIA,Croatia,gstatic.com,5,31,16.1
@@ -433,12 +433,12 @@ CROATIA,Croatia,typekit.net,1,31,3.2
 CROATIA,Croatia,cookiebot.com,0,31,0.0
 CROATIA,Croatia,facebook.com,2,31,6.5
 CROATIA,Croatia,facebook.net,2,31,6.5
-CROATIA,Croatia,amazonaws.com,0,31,0.0
 CROATIA,Croatia,addtoany.com,2,31,6.5
+CROATIA,Croatia,amazonaws.com,0,31,0.0
 CROATIA,Croatia,arcgis.com,1,31,3.2
-CROATIA,Croatia,mapbox.com,0,31,0.0
 CROATIA,Croatia,cloudfront.net,0,31,0.0
 CROATIA,Croatia,cdn-cookieyes.com,0,31,0.0
+CROATIA,Croatia,fbcdn.net,1,31,3.2
 ESTONIA,Estonia,googleapis.com,10,31,32.3
 ESTONIA,Estonia,googletagmanager.com,9,31,29.0
 ESTONIA,Estonia,gstatic.com,6,31,19.4
@@ -453,12 +453,12 @@ ESTONIA,Estonia,typekit.net,1,31,3.2
 ESTONIA,Estonia,cookiebot.com,1,31,3.2
 ESTONIA,Estonia,facebook.com,3,31,9.7
 ESTONIA,Estonia,facebook.net,3,31,9.7
-ESTONIA,Estonia,amazonaws.com,0,31,0.0
 ESTONIA,Estonia,addtoany.com,3,31,9.7
+ESTONIA,Estonia,amazonaws.com,0,31,0.0
 ESTONIA,Estonia,arcgis.com,0,31,0.0
-ESTONIA,Estonia,mapbox.com,2,31,6.5
 ESTONIA,Estonia,cloudfront.net,0,31,0.0
 ESTONIA,Estonia,cdn-cookieyes.com,1,31,3.2
+ESTONIA,Estonia,fbcdn.net,2,31,6.5
 HUNGARY,Hungary,googleapis.com,17,27,63.0
 HUNGARY,Hungary,googletagmanager.com,10,27,37.0
 HUNGARY,Hungary,gstatic.com,6,27,22.2
@@ -473,12 +473,12 @@ HUNGARY,Hungary,typekit.net,1,27,3.7
 HUNGARY,Hungary,cookiebot.com,0,27,0.0
 HUNGARY,Hungary,facebook.com,4,27,14.8
 HUNGARY,Hungary,facebook.net,1,27,3.7
-HUNGARY,Hungary,amazonaws.com,1,27,3.7
 HUNGARY,Hungary,addtoany.com,0,27,0.0
+HUNGARY,Hungary,amazonaws.com,1,27,3.7
 HUNGARY,Hungary,arcgis.com,0,27,0.0
-HUNGARY,Hungary,mapbox.com,1,27,3.7
 HUNGARY,Hungary,cloudfront.net,0,27,0.0
 HUNGARY,Hungary,cdn-cookieyes.com,0,27,0.0
+HUNGARY,Hungary,fbcdn.net,0,27,0.0
 ROMANIA,Romania,googleapis.com,13,24,54.2
 ROMANIA,Romania,googletagmanager.com,10,24,41.7
 ROMANIA,Romania,gstatic.com,8,24,33.3
@@ -493,12 +493,12 @@ ROMANIA,Romania,typekit.net,0,24,0.0
 ROMANIA,Romania,cookiebot.com,0,24,0.0
 ROMANIA,Romania,facebook.com,0,24,0.0
 ROMANIA,Romania,facebook.net,2,24,8.3
-ROMANIA,Romania,amazonaws.com,1,24,4.2
 ROMANIA,Romania,addtoany.com,0,24,0.0
+ROMANIA,Romania,amazonaws.com,0,24,0.0
 ROMANIA,Romania,arcgis.com,0,24,0.0
-ROMANIA,Romania,mapbox.com,0,24,0.0
 ROMANIA,Romania,cloudfront.net,0,24,0.0
 ROMANIA,Romania,cdn-cookieyes.com,0,24,0.0
+ROMANIA,Romania,fbcdn.net,0,24,0.0
 ICELAND,Iceland,googleapis.com,9,20,45.0
 ICELAND,Iceland,googletagmanager.com,5,20,25.0
 ICELAND,Iceland,gstatic.com,1,20,5.0
@@ -513,12 +513,12 @@ ICELAND,Iceland,typekit.net,3,20,15.0
 ICELAND,Iceland,cookiebot.com,0,20,0.0
 ICELAND,Iceland,facebook.com,1,20,5.0
 ICELAND,Iceland,facebook.net,0,20,0.0
-ICELAND,Iceland,amazonaws.com,0,20,0.0
 ICELAND,Iceland,addtoany.com,0,20,0.0
+ICELAND,Iceland,amazonaws.com,0,20,0.0
 ICELAND,Iceland,arcgis.com,2,20,10.0
-ICELAND,Iceland,mapbox.com,0,20,0.0
 ICELAND,Iceland,cloudfront.net,0,20,0.0
 ICELAND,Iceland,cdn-cookieyes.com,0,20,0.0
+ICELAND,Iceland,fbcdn.net,0,20,0.0
 SLOVAKIA,Slovakia,googleapis.com,13,20,65.0
 SLOVAKIA,Slovakia,googletagmanager.com,10,20,50.0
 SLOVAKIA,Slovakia,gstatic.com,7,20,35.0
@@ -533,12 +533,12 @@ SLOVAKIA,Slovakia,typekit.net,0,20,0.0
 SLOVAKIA,Slovakia,cookiebot.com,0,20,0.0
 SLOVAKIA,Slovakia,facebook.com,2,20,10.0
 SLOVAKIA,Slovakia,facebook.net,2,20,10.0
-SLOVAKIA,Slovakia,amazonaws.com,2,20,10.0
 SLOVAKIA,Slovakia,addtoany.com,1,20,5.0
+SLOVAKIA,Slovakia,amazonaws.com,2,20,10.0
 SLOVAKIA,Slovakia,arcgis.com,2,20,10.0
-SLOVAKIA,Slovakia,mapbox.com,1,20,5.0
 SLOVAKIA,Slovakia,cloudfront.net,0,20,0.0
 SLOVAKIA,Slovakia,cdn-cookieyes.com,1,20,5.0
+SLOVAKIA,Slovakia,fbcdn.net,1,20,5.0
 SLOVENIA,Slovenia,googleapis.com,6,16,37.5
 SLOVENIA,Slovenia,googletagmanager.com,5,16,31.2
 SLOVENIA,Slovenia,gstatic.com,2,16,12.5
@@ -553,12 +553,12 @@ SLOVENIA,Slovenia,typekit.net,0,16,0.0
 SLOVENIA,Slovenia,cookiebot.com,0,16,0.0
 SLOVENIA,Slovenia,facebook.com,0,16,0.0
 SLOVENIA,Slovenia,facebook.net,0,16,0.0
-SLOVENIA,Slovenia,amazonaws.com,0,16,0.0
 SLOVENIA,Slovenia,addtoany.com,0,16,0.0
+SLOVENIA,Slovenia,amazonaws.com,0,16,0.0
 SLOVENIA,Slovenia,arcgis.com,1,16,6.2
-SLOVENIA,Slovenia,mapbox.com,0,16,0.0
 SLOVENIA,Slovenia,cloudfront.net,0,16,0.0
 SLOVENIA,Slovenia,cdn-cookieyes.com,0,16,0.0
+SLOVENIA,Slovenia,fbcdn.net,0,16,0.0
 LITHUANIA,Lithuania,googleapis.com,8,15,53.3
 LITHUANIA,Lithuania,googletagmanager.com,6,15,40.0
 LITHUANIA,Lithuania,gstatic.com,5,15,33.3
@@ -573,12 +573,12 @@ LITHUANIA,Lithuania,typekit.net,0,15,0.0
 LITHUANIA,Lithuania,cookiebot.com,1,15,6.7
 LITHUANIA,Lithuania,facebook.com,1,15,6.7
 LITHUANIA,Lithuania,facebook.net,1,15,6.7
-LITHUANIA,Lithuania,amazonaws.com,1,15,6.7
 LITHUANIA,Lithuania,addtoany.com,0,15,0.0
+LITHUANIA,Lithuania,amazonaws.com,1,15,6.7
 LITHUANIA,Lithuania,arcgis.com,2,15,13.3
-LITHUANIA,Lithuania,mapbox.com,0,15,0.0
 LITHUANIA,Lithuania,cloudfront.net,0,15,0.0
 LITHUANIA,Lithuania,cdn-cookieyes.com,0,15,0.0
+LITHUANIA,Lithuania,fbcdn.net,1,15,6.7
 SWITZERLAND,Switzerland,googleapis.com,5,9,55.6
 SWITZERLAND,Switzerland,googletagmanager.com,4,9,44.4
 SWITZERLAND,Switzerland,gstatic.com,4,9,44.4
@@ -593,12 +593,12 @@ SWITZERLAND,Switzerland,typekit.net,1,9,11.1
 SWITZERLAND,Switzerland,cookiebot.com,1,9,11.1
 SWITZERLAND,Switzerland,facebook.com,0,9,0.0
 SWITZERLAND,Switzerland,facebook.net,0,9,0.0
-SWITZERLAND,Switzerland,amazonaws.com,1,9,11.1
 SWITZERLAND,Switzerland,addtoany.com,0,9,0.0
+SWITZERLAND,Switzerland,amazonaws.com,1,9,11.1
 SWITZERLAND,Switzerland,arcgis.com,0,9,0.0
-SWITZERLAND,Switzerland,mapbox.com,1,9,11.1
 SWITZERLAND,Switzerland,cloudfront.net,2,9,22.2
 SWITZERLAND,Switzerland,cdn-cookieyes.com,1,9,11.1
+SWITZERLAND,Switzerland,fbcdn.net,0,9,0.0
 REPUBLIC_OF_CYPRUS,Cyprus,googleapis.com,5,6,83.3
 REPUBLIC_OF_CYPRUS,Cyprus,googletagmanager.com,2,6,33.3
 REPUBLIC_OF_CYPRUS,Cyprus,gstatic.com,3,6,50.0
@@ -613,12 +613,12 @@ REPUBLIC_OF_CYPRUS,Cyprus,typekit.net,0,6,0.0
 REPUBLIC_OF_CYPRUS,Cyprus,cookiebot.com,0,6,0.0
 REPUBLIC_OF_CYPRUS,Cyprus,facebook.com,0,6,0.0
 REPUBLIC_OF_CYPRUS,Cyprus,facebook.net,0,6,0.0
-REPUBLIC_OF_CYPRUS,Cyprus,amazonaws.com,0,6,0.0
 REPUBLIC_OF_CYPRUS,Cyprus,addtoany.com,2,6,33.3
+REPUBLIC_OF_CYPRUS,Cyprus,amazonaws.com,0,6,0.0
 REPUBLIC_OF_CYPRUS,Cyprus,arcgis.com,0,6,0.0
-REPUBLIC_OF_CYPRUS,Cyprus,mapbox.com,0,6,0.0
 REPUBLIC_OF_CYPRUS,Cyprus,cloudfront.net,0,6,0.0
 REPUBLIC_OF_CYPRUS,Cyprus,cdn-cookieyes.com,0,6,0.0
+REPUBLIC_OF_CYPRUS,Cyprus,fbcdn.net,0,6,0.0
 MALTA,Malta,googleapis.com,2,3,66.7
 MALTA,Malta,googletagmanager.com,1,3,33.3
 MALTA,Malta,gstatic.com,2,3,66.7
@@ -633,9 +633,9 @@ MALTA,Malta,typekit.net,1,3,33.3
 MALTA,Malta,cookiebot.com,1,3,33.3
 MALTA,Malta,facebook.com,1,3,33.3
 MALTA,Malta,facebook.net,1,3,33.3
-MALTA,Malta,amazonaws.com,1,3,33.3
 MALTA,Malta,addtoany.com,1,3,33.3
+MALTA,Malta,amazonaws.com,1,3,33.3
 MALTA,Malta,arcgis.com,1,3,33.3
-MALTA,Malta,mapbox.com,1,3,33.3
 MALTA,Malta,cloudfront.net,0,3,0.0
 MALTA,Malta,cdn-cookieyes.com,0,3,0.0
+MALTA,Malta,fbcdn.net,1,3,33.3

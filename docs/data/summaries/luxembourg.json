@@ -1,15 +1,15 @@
 {
   "country_code": "LUXEMBOURG",
-  "total_relationships": 2062,
+  "total_relationships": 2088,
   "total_source_domains": 39,
   "top_source_domains": [
     {
       "domain": "gouvernement.lu",
-      "count": 8265
+      "count": 8477
     },
     {
       "domain": "public.lu",
-      "count": 6349
+      "count": 6738
     },
     {
       "domain": "uni.lu",
@@ -163,39 +163,39 @@
   "top_target_domains": [
     {
       "domain": "public.lu",
-      "count": 6460
+      "count": 6764
     },
     {
       "domain": "gouvernement.lu",
-      "count": 3710
+      "count": 3798
     },
     {
       "domain": "facebook.com",
-      "count": 910
-    },
-    {
-      "domain": "uni.lu",
-      "count": 828
+      "count": 940
     },
     {
       "domain": "linkedin.com",
-      "count": 824
+      "count": 855
+    },
+    {
+      "domain": "uni.lu",
+      "count": 830
     },
     {
       "domain": "twitter.com",
-      "count": 624
+      "count": 641
     },
     {
       "domain": "bsky.app",
-      "count": 506
+      "count": 521
     },
     {
       "domain": "instagram.com",
-      "count": 477
+      "count": 494
     },
     {
       "domain": "adobedtm.com",
-      "count": 385
+      "count": 422
     },
     {
       "domain": "etat.lu",
@@ -203,11 +203,11 @@
     },
     {
       "domain": "youtube.com",
-      "count": 317
+      "count": 329
     },
     {
       "domain": "europa.eu",
-      "count": 267
+      "count": 275
     },
     {
       "domain": "googleapis.com",
@@ -294,16 +294,20 @@
       "count": 70
     },
     {
+      "domain": "readspeaker.com",
+      "count": 70
+    },
+    {
       "domain": "unpkg.com",
       "count": 68
     },
     {
-      "domain": "readspeaker.com",
-      "count": 67
+      "domain": "education.lu",
+      "count": 66
     },
     {
-      "domain": "education.lu",
-      "count": 65
+      "domain": "geoportail.lu",
+      "count": 60
     },
     {
       "domain": "mersch.lu",
@@ -312,10 +316,6 @@
     {
       "domain": "wiltz.lu",
       "count": 60
-    },
-    {
-      "domain": "geoportail.lu",
-      "count": 59
     },
     {
       "domain": "guichet.lu",
@@ -350,25 +350,25 @@
       "count": 48
     },
     {
+      "domain": "services-publics.lu",
+      "count": 47
+    },
+    {
       "domain": "ilr.lu",
       "count": 46
     },
     {
       "domain": "cgie.lu",
       "count": 45
-    },
-    {
-      "domain": "services-publics.lu",
-      "count": 45
     }
   ],
   "relationship_types": {
-    "editorial_link": 1156,
-    "form_destination": 162,
-    "image_or_media_dependency": 199,
-    "script_dependency": 277,
-    "stylesheet_dependency": 239,
+    "editorial_link": 1166,
+    "form_destination": 166,
+    "image_or_media_dependency": 203,
+    "script_dependency": 281,
+    "stylesheet_dependency": 243,
     "font_or_preload_dependency": 29
   },
-  "generated_at": "2026-10-27T18:20:51.438034+00:00"
+  "generated_at": "2026-10-29T13:10:44.834580+00:00"
 }

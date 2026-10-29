@@ -1,6 +1,6 @@
 {
   "country_code": "GREECE",
-  "total_relationships": 8686,
+  "total_relationships": 8685,
   "total_source_domains": 367,
   "top_source_domains": [
     {
@@ -211,7 +211,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 2182
+      "count": 2184
     },
     {
       "domain": "diavgeia.gov.gr",
@@ -219,7 +219,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 1577
+      "count": 1579
     },
     {
       "domain": "youtube.com",
@@ -231,7 +231,7 @@
     },
     {
       "domain": "google.com",
-      "count": 1338
+      "count": 1339
     },
     {
       "domain": "gstatic.com",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 5011,
+    "editorial_link": 5010,
     "font_or_preload_dependency": 308,
     "form_destination": 375,
     "image_or_media_dependency": 659,
     "script_dependency": 1276,
     "stylesheet_dependency": 1057
   },
-  "generated_at": "2026-10-27T18:20:51.293842+00:00"
+  "generated_at": "2026-10-28T23:00:38.206009+00:00"
 }

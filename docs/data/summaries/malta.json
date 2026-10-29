@@ -5,7 +5,7 @@
   "top_source_domains": [
     {
       "domain": "gov.mt",
-      "count": 29192
+      "count": 29205
     },
     {
       "domain": "parlament.mt",
@@ -19,7 +19,7 @@
   "top_target_domains": [
     {
       "domain": "gov.mt",
-      "count": 15218
+      "count": 15223
     },
     {
       "domain": "jsdelivr.net",
@@ -35,7 +35,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 1027
+      "count": 1028
     },
     {
       "domain": "googletagmanager.com",
@@ -51,7 +51,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 568
+      "count": 569
     },
     {
       "domain": "europa.eu",
@@ -63,11 +63,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 347
+      "count": 348
     },
     {
       "domain": "google.com",
-      "count": 339
+      "count": 340
     },
     {
       "domain": "cloudflare.com",
@@ -75,7 +75,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 269
+      "count": 270
     },
     {
       "domain": "wponetap.com",
@@ -83,7 +83,7 @@
     },
     {
       "domain": "twitter.com",
-      "count": 145
+      "count": 146
     },
     {
       "domain": "fontawesome.com",
@@ -123,15 +123,15 @@
     },
     {
       "domain": "9hdigital.com",
+      "count": 47
+    },
+    {
+      "domain": "cookiedatabase.org",
       "count": 46
     },
     {
       "domain": "fbcdn.net",
       "count": 46
-    },
-    {
-      "domain": "cookiedatabase.org",
-      "count": 45
     },
     {
       "domain": "cdnserver.net",
@@ -226,5 +226,5 @@
     "font_or_preload_dependency": 13,
     "form_destination": 189
   },
-  "generated_at": "2026-10-25T21:14:53.862813+00:00"
+  "generated_at": "2026-10-28T23:00:38.012472+00:00"
 }
