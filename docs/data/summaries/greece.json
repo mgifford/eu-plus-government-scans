@@ -1,6 +1,6 @@
 {
   "country_code": "GREECE",
-  "total_relationships": 8685,
+  "total_relationships": 8684,
   "total_source_domains": 367,
   "top_source_domains": [
     {
@@ -207,23 +207,23 @@
   "top_target_domains": [
     {
       "domain": "googleapis.com",
-      "count": 3913
+      "count": 3929
     },
     {
       "domain": "facebook.com",
-      "count": 2184
+      "count": 2196
     },
     {
       "domain": "diavgeia.gov.gr",
-      "count": 1731
+      "count": 1737
     },
     {
       "domain": "googletagmanager.com",
-      "count": 1579
+      "count": 1583
     },
     {
       "domain": "youtube.com",
-      "count": 1443
+      "count": 1445
     },
     {
       "domain": "minedu.gov.gr",
@@ -231,39 +231,39 @@
     },
     {
       "domain": "google.com",
-      "count": 1339
+      "count": 1348
     },
     {
       "domain": "gstatic.com",
-      "count": 1143
+      "count": 1147
     },
     {
       "domain": "europa.eu",
-      "count": 1135
+      "count": 1139
     },
     {
       "domain": "www.gov.gr",
-      "count": 985
+      "count": 988
     },
     {
       "domain": "twitter.com",
-      "count": 956
+      "count": 959
     },
     {
       "domain": "instagram.com",
-      "count": 915
+      "count": 918
     },
     {
       "domain": "userway.org",
-      "count": 880
+      "count": 884
     },
     {
       "domain": "jsdelivr.net",
-      "count": 873
+      "count": 875
     },
     {
       "domain": "cloudflare.com",
-      "count": 831
+      "count": 835
     },
     {
       "domain": "pdm.gov.gr",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 566
+      "count": 569
     },
     {
       "domain": "mindev.gov.gr",
@@ -335,7 +335,7 @@
     },
     {
       "domain": "aade.gr",
-      "count": 335
+      "count": 337
     },
     {
       "domain": "greece20.gov.gr",
@@ -358,12 +358,12 @@
       "count": 305
     },
     {
-      "domain": "bootstrapcdn.com",
-      "count": 289
-    },
-    {
       "domain": "vvv.gov.gr",
       "count": 288
+    },
+    {
+      "domain": "bootstrapcdn.com",
+      "count": 283
     },
     {
       "domain": "necca.gov.gr",
@@ -382,12 +382,12 @@
       "count": 237
     },
     {
-      "domain": "pde.gov.gr",
+      "domain": "moh.gov.gr",
       "count": 235
     },
     {
-      "domain": "moh.gov.gr",
-      "count": 232
+      "domain": "pde.gov.gr",
+      "count": 235
     },
     {
       "domain": "et.gr",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 5010,
+    "editorial_link": 5011,
     "font_or_preload_dependency": 308,
     "form_destination": 375,
     "image_or_media_dependency": 659,
     "script_dependency": 1276,
-    "stylesheet_dependency": 1057
+    "stylesheet_dependency": 1055
   },
-  "generated_at": "2026-10-28T23:00:38.206009+00:00"
+  "generated_at": "2026-10-30T13:01:29.333461+00:00"
 }
