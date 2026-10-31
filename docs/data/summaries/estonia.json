@@ -29,7 +29,7 @@
     },
     {
       "domain": "stat.ee",
-      "count": 629
+      "count": 636
     },
     {
       "domain": "siseministeerium.ee",
@@ -155,7 +155,7 @@
     },
     {
       "domain": "stat.ee",
-      "count": 506
+      "count": 512
     },
     {
       "domain": "youtube.com",
@@ -342,5 +342,5 @@
     "stylesheet_dependency": 189,
     "font_or_preload_dependency": 27
   },
-  "generated_at": "2026-10-26T04:12:26.626492+00:00"
+  "generated_at": "2026-10-31T05:01:18.134241+00:00"
 }

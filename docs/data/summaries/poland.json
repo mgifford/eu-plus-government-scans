@@ -1,15 +1,15 @@
 {
   "country_code": "POLAND",
-  "total_relationships": 62190,
+  "total_relationships": 62189,
   "total_source_domains": 2501,
   "top_source_domains": [
     {
       "domain": "krakow.pl",
-      "count": 79872
+      "count": 79914
     },
     {
       "domain": "poznan.pl",
-      "count": 53044
+      "count": 53041
     },
     {
       "domain": "lodz.pl",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "krakow.pl",
-      "count": 39147
+      "count": 39170
     },
     {
       "domain": "lodz.pl",
@@ -215,7 +215,7 @@
     },
     {
       "domain": "poznan.pl",
-      "count": 26716
+      "count": 26713
     },
     {
       "domain": "googleapis.com",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 23501
+      "count": 23503
     },
     {
       "domain": "gdansk.pl",
@@ -235,7 +235,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 9214
+      "count": 9216
     },
     {
       "domain": "uni.opole.pl",
@@ -243,7 +243,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 8975
+      "count": 8977
     },
     {
       "domain": "google.com",
@@ -287,15 +287,15 @@
     },
     {
       "domain": "twitter.com",
-      "count": 3116
+      "count": 3118
+    },
+    {
+      "domain": "linkedin.com",
+      "count": 2932
     },
     {
       "domain": "mixbet.radom.pl",
       "count": 2931
-    },
-    {
-      "domain": "linkedin.com",
-      "count": 2930
     },
     {
       "domain": "edu.bydgoszcz.pl",
@@ -366,12 +366,12 @@
       "count": 1310
     },
     {
-      "domain": "sopot.pl",
-      "count": 1052
+      "domain": "x.com",
+      "count": 1053
     },
     {
-      "domain": "x.com",
-      "count": 1051
+      "domain": "sopot.pl",
+      "count": 1052
     },
     {
       "domain": "policja.pl",
@@ -408,11 +408,11 @@
   ],
   "relationship_types": {
     "editorial_link": 33702,
-    "form_destination": 3338,
+    "form_destination": 3337,
     "image_or_media_dependency": 6843,
     "script_dependency": 8790,
     "stylesheet_dependency": 7665,
     "font_or_preload_dependency": 1852
   },
-  "generated_at": "2026-10-30T05:20:57.018695+00:00"
+  "generated_at": "2026-10-31T05:01:18.300874+00:00"
 }

@@ -37,7 +37,7 @@
     },
     {
       "domain": "limerick.ie",
-      "count": 563
+      "count": 606
     },
     {
       "domain": "louthcoco.ie",
@@ -207,11 +207,11 @@
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 874
+      "count": 877
     },
     {
       "domain": "googleapis.com",
-      "count": 825
+      "count": 828
     },
     {
       "domain": "instagram.com",
@@ -227,7 +227,7 @@
     },
     {
       "domain": "twitter.com",
-      "count": 579
+      "count": 582
     },
     {
       "domain": "hse.ie",
@@ -270,16 +270,16 @@
       "count": 276
     },
     {
+      "domain": "limerick.ie",
+      "count": 273
+    },
+    {
       "domain": "agriculture.gov.ie",
       "count": 272
     },
     {
       "domain": "cloudflare.com",
-      "count": 269
-    },
-    {
-      "domain": "limerick.ie",
-      "count": 252
+      "count": 272
     },
     {
       "domain": "arcgis.com",
@@ -414,5 +414,5 @@
     "image_or_media_dependency": 192,
     "font_or_preload_dependency": 60
   },
-  "generated_at": "2026-10-30T13:01:29.847697+00:00"
+  "generated_at": "2026-10-31T05:01:17.261300+00:00"
 }

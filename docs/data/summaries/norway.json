@@ -1,6 +1,6 @@
 {
   "country_code": "NORWAY",
-  "total_relationships": 871,
+  "total_relationships": 874,
   "total_source_domains": 34,
   "top_source_domains": [
     {
@@ -36,16 +36,16 @@
       "count": 348
     },
     {
+      "domain": "nav.no",
+      "count": 340
+    },
+    {
       "domain": "skatteetaten.no",
       "count": 328
     },
     {
       "domain": "kystverket.no",
       "count": 321
-    },
-    {
-      "domain": "nav.no",
-      "count": 320
     },
     {
       "domain": "ssb.no",
@@ -151,7 +151,7 @@
     },
     {
       "domain": "lovdata.no",
-      "count": 385
+      "count": 387
     },
     {
       "domain": "brreg.no",
@@ -175,7 +175,7 @@
     },
     {
       "domain": "nav.no",
-      "count": 235
+      "count": 253
     },
     {
       "domain": "stortinget.no",
@@ -343,12 +343,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 351,
-    "stylesheet_dependency": 152,
+    "editorial_link": 352,
+    "stylesheet_dependency": 153,
     "image_or_media_dependency": 79,
     "form_destination": 47,
-    "script_dependency": 197,
+    "script_dependency": 198,
     "font_or_preload_dependency": 45
   },
-  "generated_at": "2026-10-30T13:01:29.433880+00:00"
+  "generated_at": "2026-10-31T05:01:17.006371+00:00"
 }
