@@ -207,15 +207,15 @@
   "top_target_domains": [
     {
       "domain": "googleapis.com",
-      "count": 3929
+      "count": 3935
     },
     {
       "domain": "facebook.com",
-      "count": 2196
+      "count": 2199
     },
     {
       "domain": "diavgeia.gov.gr",
-      "count": 1737
+      "count": 1740
     },
     {
       "domain": "googletagmanager.com",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 1445
+      "count": 1448
     },
     {
       "domain": "minedu.gov.gr",
@@ -235,15 +235,15 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 1147
+      "count": 1150
     },
     {
       "domain": "europa.eu",
-      "count": 1139
+      "count": 1142
     },
     {
       "domain": "www.gov.gr",
-      "count": 988
+      "count": 992
     },
     {
       "domain": "twitter.com",
@@ -307,7 +307,7 @@
     },
     {
       "domain": "eopyy.gov.gr",
-      "count": 383
+      "count": 384
     },
     {
       "domain": "minagric.gr",
@@ -339,7 +339,7 @@
     },
     {
       "domain": "greece20.gov.gr",
-      "count": 329
+      "count": 330
     },
     {
       "domain": "fontawesome.com",
@@ -378,12 +378,12 @@
       "count": 243
     },
     {
-      "domain": "x.com",
+      "domain": "moh.gov.gr",
       "count": 237
     },
     {
-      "domain": "moh.gov.gr",
-      "count": 235
+      "domain": "x.com",
+      "count": 237
     },
     {
       "domain": "pde.gov.gr",
@@ -414,5 +414,5 @@
     "script_dependency": 1276,
     "stylesheet_dependency": 1055
   },
-  "generated_at": "2026-10-30T13:01:29.333461+00:00"
+  "generated_at": "2026-10-31T21:50:42.937257+00:00"
 }

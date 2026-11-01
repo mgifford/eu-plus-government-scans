@@ -1,7 +1,7 @@
 {
   "country_code": "NETHERLANDS",
-  "total_relationships": 2941,
-  "total_source_domains": 73,
+  "total_relationships": 2991,
+  "total_source_domains": 74,
   "top_source_domains": [
     {
       "domain": "overheid.nl",
@@ -45,7 +45,7 @@
     },
     {
       "domain": "belastingdienst.nl",
-      "count": 718
+      "count": 735
     },
     {
       "domain": "zoetermeer.nl",
@@ -76,6 +76,10 @@
       "count": 520
     },
     {
+      "domain": "noord-holland.nl",
+      "count": 443
+    },
+    {
       "domain": "rvo.nl",
       "count": 441
     },
@@ -88,20 +92,16 @@
       "count": 438
     },
     {
-      "domain": "noord-holland.nl",
-      "count": 421
+      "domain": "kvk.nl",
+      "count": 414
     },
     {
       "domain": "alphenaandenrijn.nl",
-      "count": 402
+      "count": 404
     },
     {
       "domain": "rechtspraak.nl",
       "count": 380
-    },
-    {
-      "domain": "kvk.nl",
-      "count": 373
     },
     {
       "domain": "tweedekamer.nl",
@@ -263,27 +263,27 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 515
+      "count": 526
     },
     {
       "domain": "belastingdienst.nl",
-      "count": 464
+      "count": 470
     },
     {
       "domain": "cbs.nl",
-      "count": 438
+      "count": 441
     },
     {
       "domain": "twitter.com",
       "count": 436
     },
     {
-      "domain": "rvo.nl",
-      "count": 389
+      "domain": "eindhoven.nl",
+      "count": 394
     },
     {
-      "domain": "eindhoven.nl",
-      "count": 388
+      "domain": "rvo.nl",
+      "count": 389
     },
     {
       "domain": "breda.nl",
@@ -294,11 +294,11 @@
       "count": 328
     },
     {
-      "domain": "ede.nl",
-      "count": 292
+      "domain": "kvk.nl",
+      "count": 316
     },
     {
-      "domain": "kvk.nl",
+      "domain": "ede.nl",
       "count": 292
     },
     {
@@ -319,7 +319,7 @@
     },
     {
       "domain": "google.com",
-      "count": 253
+      "count": 255
     },
     {
       "domain": "tweedekamer.nl",
@@ -335,7 +335,7 @@
     },
     {
       "domain": "alphenaandenrijn.nl",
-      "count": 204
+      "count": 206
     },
     {
       "domain": "provincie-utrecht.nl",
@@ -346,16 +346,16 @@
       "count": 196
     },
     {
+      "domain": "noord-holland.nl",
+      "count": 196
+    },
+    {
       "domain": "googletagmanager.com",
-      "count": 192
+      "count": 194
     },
     {
       "domain": "bsky.app",
       "count": 186
-    },
-    {
-      "domain": "noord-holland.nl",
-      "count": 184
     },
     {
       "domain": "overijssel.nl",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 1327,
+    "editorial_link": 1342,
     "font_or_preload_dependency": 125,
-    "form_destination": 190,
-    "image_or_media_dependency": 301,
-    "script_dependency": 553,
-    "stylesheet_dependency": 445
+    "form_destination": 195,
+    "image_or_media_dependency": 306,
+    "script_dependency": 567,
+    "stylesheet_dependency": 456
   },
-  "generated_at": "2026-10-31T12:34:20.998380+00:00"
+  "generated_at": "2026-11-01T05:22:07.416585+00:00"
 }

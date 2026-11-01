@@ -13,11 +13,11 @@
     },
     {
       "domain": "epfl.ch",
-      "count": 8598
+      "count": 8699
     },
     {
       "domain": "unige.ch",
-      "count": 6992
+      "count": 7066
     },
     {
       "domain": "bfh.ch",
@@ -47,47 +47,47 @@
     },
     {
       "domain": "admin.ch",
-      "count": 14124
+      "count": 14125
     },
     {
       "domain": "epfl.ch",
-      "count": 4710
+      "count": 4761
     },
     {
       "domain": "unige.ch",
-      "count": 4325
+      "count": 4360
     },
     {
       "domain": "linkedin.com",
-      "count": 2578
+      "count": 2585
     },
     {
       "domain": "youtube.com",
-      "count": 1799
+      "count": 1806
     },
     {
       "domain": "instagram.com",
-      "count": 1509
+      "count": 1516
     },
     {
       "domain": "github.io",
-      "count": 1025
+      "count": 1032
     },
     {
       "domain": "facebook.com",
-      "count": 1000
+      "count": 1007
     },
     {
       "domain": "twitter.com",
-      "count": 936
+      "count": 938
     },
     {
       "domain": "x.com",
-      "count": 886
+      "count": 893
     },
     {
       "domain": "googleapis.com",
-      "count": 734
+      "count": 736
     },
     {
       "domain": "imgix.net",
@@ -115,7 +115,7 @@
     },
     {
       "domain": "github.com",
-      "count": 264
+      "count": 267
     },
     {
       "domain": "cloudflare.com",
@@ -123,11 +123,11 @@
     },
     {
       "domain": "doi.org",
-      "count": 259
+      "count": 260
     },
     {
       "domain": "jquery.com",
-      "count": 256
+      "count": 258
     },
     {
       "domain": "uzh.ch",
@@ -139,11 +139,11 @@
     },
     {
       "domain": "cookielaw.org",
-      "count": 195
+      "count": 197
     },
     {
       "domain": "coursera.org",
-      "count": 159
+      "count": 161
     },
     {
       "domain": "parlament.ch",
@@ -250,5 +250,5 @@
     "stylesheet_dependency": 893,
     "form_destination": 470
   },
-  "generated_at": "2026-10-31T12:34:20.803495+00:00"
+  "generated_at": "2026-10-31T17:38:43.117561+00:00"
 }

@@ -1,6 +1,6 @@
 {
   "country_code": "PORTUGAL",
-  "total_relationships": 13552,
+  "total_relationships": 13560,
   "total_source_domains": 388,
   "top_source_domains": [
     {
@@ -207,27 +207,27 @@
   "top_target_domains": [
     {
       "domain": "googleapis.com",
-      "count": 4294
+      "count": 4296
     },
     {
       "domain": "facebook.com",
-      "count": 4010
+      "count": 4011
     },
     {
       "domain": "youtube.com",
-      "count": 3278
+      "count": 3280
     },
     {
       "domain": "instagram.com",
-      "count": 3139
+      "count": 3140
     },
     {
       "domain": "googletagmanager.com",
-      "count": 2843
+      "count": 2844
     },
     {
       "domain": "google.com",
-      "count": 2728
+      "count": 2729
     },
     {
       "domain": "madeira.gov.pt",
@@ -251,7 +251,7 @@
     },
     {
       "domain": "wiremaze.com",
-      "count": 1500
+      "count": 1501
     },
     {
       "domain": "azores.gov.pt",
@@ -303,7 +303,7 @@
     },
     {
       "domain": "unpkg.com",
-      "count": 639
+      "count": 640
     },
     {
       "domain": "cm-loule.pt",
@@ -408,11 +408,11 @@
   ],
   "relationship_types": {
     "font_or_preload_dependency": 447,
-    "script_dependency": 2126,
-    "editorial_link": 7550,
+    "script_dependency": 2130,
+    "editorial_link": 7553,
     "stylesheet_dependency": 1562,
     "form_destination": 747,
-    "image_or_media_dependency": 1120
+    "image_or_media_dependency": 1121
   },
-  "generated_at": "2026-10-31T12:34:21.102842+00:00"
+  "generated_at": "2026-11-01T13:33:33.192106+00:00"
 }

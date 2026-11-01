@@ -17,11 +17,11 @@
     },
     {
       "domain": "regione.lombardia.it",
-      "count": 6053
+      "count": 6089
     },
     {
       "domain": "regione.emilia-romagna.it",
-      "count": 5379
+      "count": 5394
     },
     {
       "domain": "regione.veneto.it",
@@ -72,12 +72,12 @@
       "count": 2120
     },
     {
-      "domain": "interno.gov.it",
-      "count": 1838
+      "domain": "difesa.it",
+      "count": 1885
     },
     {
-      "domain": "difesa.it",
-      "count": 1832
+      "domain": "interno.gov.it",
+      "count": 1838
     },
     {
       "domain": "comune.genova.it",
@@ -93,7 +93,7 @@
     },
     {
       "domain": "regione.toscana.it",
-      "count": 1459
+      "count": 1479
     },
     {
       "domain": "lavoro.gov.it",
@@ -161,11 +161,11 @@
     },
     {
       "domain": "comune.napoli.it",
-      "count": 785
+      "count": 787
     },
     {
       "domain": "istat.it",
-      "count": 773
+      "count": 781
     },
     {
       "domain": "comune.cremona.it",
@@ -196,12 +196,12 @@
       "count": 658
     },
     {
-      "domain": "comune.oristano.it",
-      "count": 657
+      "domain": "comune.rimini.it",
+      "count": 658
     },
     {
-      "domain": "comune.belluno.it",
-      "count": 655
+      "domain": "comune.oristano.it",
+      "count": 657
     }
   ],
   "top_target_domains": [
@@ -215,7 +215,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 9651
+      "count": 9656
     },
     {
       "domain": "cultura.gov.it",
@@ -223,19 +223,19 @@
     },
     {
       "domain": "twitter.com",
-      "count": 7735
+      "count": 7741
     },
     {
       "domain": "youtube.com",
-      "count": 7657
+      "count": 7660
     },
     {
       "domain": "agid.gov.it",
-      "count": 6194
+      "count": 6197
     },
     {
       "domain": "instagram.com",
-      "count": 5991
+      "count": 5993
     },
     {
       "domain": "governo.it",
@@ -243,19 +243,19 @@
     },
     {
       "domain": "regione.emilia-romagna.it",
-      "count": 3720
+      "count": 3735
     },
     {
       "domain": "europa.eu",
-      "count": 3645
+      "count": 3647
     },
     {
       "domain": "regione.lombardia.it",
-      "count": 3410
+      "count": 3428
     },
     {
       "domain": "googleapis.com",
-      "count": 2810
+      "count": 2817
     },
     {
       "domain": "viaggiaresicuri.it",
@@ -271,7 +271,7 @@
     },
     {
       "domain": "whatsapp.com",
-      "count": 2525
+      "count": 2527
     },
     {
       "domain": "regione.campania.it",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 2244
+      "count": 2246
     },
     {
       "domain": "regione.lazio.it",
@@ -315,11 +315,11 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 1462
+      "count": 1463
     },
     {
       "domain": "google.com",
-      "count": 1426
+      "count": 1427
     },
     {
       "domain": "csm.it",
@@ -331,7 +331,7 @@
     },
     {
       "domain": "regione.toscana.it",
-      "count": 1203
+      "count": 1221
     },
     {
       "domain": "jsdelivr.net",
@@ -359,7 +359,7 @@
     },
     {
       "domain": "difesa.it",
-      "count": 903
+      "count": 917
     },
     {
       "domain": "cloudflare.com",
@@ -371,7 +371,7 @@
     },
     {
       "domain": "t.me",
-      "count": 822
+      "count": 824
     },
     {
       "domain": "comune.torino.it",
@@ -414,5 +414,5 @@
     "form_destination": 1458,
     "font_or_preload_dependency": 257
   },
-  "generated_at": "2026-10-31T05:01:16.943062+00:00"
+  "generated_at": "2026-11-01T13:33:33.782297+00:00"
 }
