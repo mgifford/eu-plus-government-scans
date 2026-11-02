@@ -1,19 +1,19 @@
 {
   "country_code": "POLAND",
-  "total_relationships": 62162,
+  "total_relationships": 62160,
   "total_source_domains": 2501,
   "top_source_domains": [
     {
       "domain": "krakow.pl",
-      "count": 82951
+      "count": 84337
     },
     {
       "domain": "poznan.pl",
-      "count": 55714
+      "count": 56960
     },
     {
       "domain": "lodz.pl",
-      "count": 48436
+      "count": 48526
     },
     {
       "domain": "gdansk.pl",
@@ -207,23 +207,23 @@
   "top_target_domains": [
     {
       "domain": "krakow.pl",
-      "count": 40602
+      "count": 41283
     },
     {
       "domain": "poznan.pl",
-      "count": 28084
+      "count": 28823
     },
     {
       "domain": "lodz.pl",
-      "count": 27730
+      "count": 27746
     },
     {
       "domain": "googleapis.com",
-      "count": 26547
+      "count": 26624
     },
     {
       "domain": "facebook.com",
-      "count": 23796
+      "count": 23916
     },
     {
       "domain": "gdansk.pl",
@@ -231,11 +231,11 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 9424
+      "count": 9476
     },
     {
       "domain": "instagram.com",
-      "count": 9328
+      "count": 9402
     },
     {
       "domain": "uni.opole.pl",
@@ -243,11 +243,11 @@
     },
     {
       "domain": "youtube.com",
-      "count": 9101
+      "count": 9168
     },
     {
       "domain": "google.com",
-      "count": 9059
+      "count": 9089
     },
     {
       "domain": "ug.edu.pl",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 6618
+      "count": 6646
     },
     {
       "domain": "torun.pl",
@@ -267,11 +267,11 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 4568
+      "count": 4597
     },
     {
       "domain": "cloudflare.com",
-      "count": 4398
+      "count": 4410
     },
     {
       "domain": "gdynia.pl",
@@ -279,19 +279,19 @@
     },
     {
       "domain": "www.gov.pl",
-      "count": 3497
+      "count": 3512
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 3246
+      "count": 3268
     },
     {
       "domain": "twitter.com",
-      "count": 3157
+      "count": 3172
     },
     {
       "domain": "linkedin.com",
-      "count": 2996
+      "count": 3032
     },
     {
       "domain": "mixbet.radom.pl",
@@ -299,7 +299,7 @@
     },
     {
       "domain": "fontawesome.com",
-      "count": 2887
+      "count": 2901
     },
     {
       "domain": "edu.bydgoszcz.pl",
@@ -311,7 +311,7 @@
     },
     {
       "domain": "edupage.org",
-      "count": 2319
+      "count": 2364
     },
     {
       "domain": "bip.gov.pl",
@@ -319,19 +319,19 @@
     },
     {
       "domain": "unpkg.com",
-      "count": 2031
+      "count": 2042
     },
     {
       "domain": "vulcan.net.pl",
-      "count": 1882
+      "count": 1891
     },
     {
       "domain": "wordpress.org",
-      "count": 1880
+      "count": 1883
     },
     {
       "domain": "goo.gl",
-      "count": 1853
+      "count": 1861
     },
     {
       "domain": "gorzow.pl",
@@ -351,7 +351,7 @@
     },
     {
       "domain": "tiktok.com",
-      "count": 1505
+      "count": 1526
     },
     {
       "domain": "ursynow.warszawa.pl",
@@ -363,11 +363,11 @@
     },
     {
       "domain": "librus.pl",
-      "count": 1349
+      "count": 1361
     },
     {
       "domain": "x.com",
-      "count": 1087
+      "count": 1092
     },
     {
       "domain": "sopot.pl",
@@ -387,7 +387,7 @@
     },
     {
       "domain": "wp.com",
-      "count": 912
+      "count": 922
     },
     {
       "domain": "www.bydgoszcz.pl",
@@ -395,7 +395,7 @@
     },
     {
       "domain": "cookiedatabase.org",
-      "count": 856
+      "count": 859
     },
     {
       "domain": "witkac.pl",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 33700,
-    "form_destination": 3332,
+    "editorial_link": 33699,
+    "form_destination": 3331,
     "image_or_media_dependency": 6836,
     "script_dependency": 8785,
     "stylesheet_dependency": 7659,
     "font_or_preload_dependency": 1850
   },
-  "generated_at": "2026-11-01T05:22:08.671126+00:00"
+  "generated_at": "2026-11-02T15:40:32.410016+00:00"
 }

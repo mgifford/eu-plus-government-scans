@@ -1,24 +1,24 @@
 ﻿country_code,country,service,domains_depending,scanned_domains,percent
-UNITED_KINGDOM_UK,United Kingdom,googleapis.com,1541,3321,46.4
-UNITED_KINGDOM_UK,United Kingdom,googletagmanager.com,1273,3321,38.3
-UNITED_KINGDOM_UK,United Kingdom,gstatic.com,591,3321,17.8
-UNITED_KINGDOM_UK,United Kingdom,jsdelivr.net,435,3321,13.1
-UNITED_KINGDOM_UK,United Kingdom,fontawesome.com,405,3321,12.2
-UNITED_KINGDOM_UK,United Kingdom,google.com,1184,3321,35.7
-UNITED_KINGDOM_UK,United Kingdom,cloudflare.com,918,3321,27.6
-UNITED_KINGDOM_UK,United Kingdom,jquery.com,182,3321,5.5
-UNITED_KINGDOM_UK,United Kingdom,unpkg.com,336,3321,10.1
-UNITED_KINGDOM_UK,United Kingdom,bootstrapcdn.com,161,3321,4.8
-UNITED_KINGDOM_UK,United Kingdom,typekit.net,149,3321,4.5
-UNITED_KINGDOM_UK,United Kingdom,cookiebot.com,60,3321,1.8
-UNITED_KINGDOM_UK,United Kingdom,facebook.com,24,3321,0.7
-UNITED_KINGDOM_UK,United Kingdom,facebook.net,63,3321,1.9
-UNITED_KINGDOM_UK,United Kingdom,addtoany.com,38,3321,1.1
-UNITED_KINGDOM_UK,United Kingdom,amazonaws.com,137,3321,4.1
-UNITED_KINGDOM_UK,United Kingdom,arcgis.com,26,3321,0.8
-UNITED_KINGDOM_UK,United Kingdom,cloudfront.net,355,3321,10.7
-UNITED_KINGDOM_UK,United Kingdom,cdn-cookieyes.com,60,3321,1.8
-UNITED_KINGDOM_UK,United Kingdom,fbcdn.net,22,3321,0.7
+UNITED_KINGDOM_UK,United Kingdom,googleapis.com,1541,3324,46.4
+UNITED_KINGDOM_UK,United Kingdom,googletagmanager.com,1268,3324,38.1
+UNITED_KINGDOM_UK,United Kingdom,gstatic.com,591,3324,17.8
+UNITED_KINGDOM_UK,United Kingdom,jsdelivr.net,436,3324,13.1
+UNITED_KINGDOM_UK,United Kingdom,fontawesome.com,406,3324,12.2
+UNITED_KINGDOM_UK,United Kingdom,google.com,1186,3324,35.7
+UNITED_KINGDOM_UK,United Kingdom,cloudflare.com,919,3324,27.6
+UNITED_KINGDOM_UK,United Kingdom,jquery.com,183,3324,5.5
+UNITED_KINGDOM_UK,United Kingdom,unpkg.com,337,3324,10.1
+UNITED_KINGDOM_UK,United Kingdom,bootstrapcdn.com,161,3324,4.8
+UNITED_KINGDOM_UK,United Kingdom,typekit.net,149,3324,4.5
+UNITED_KINGDOM_UK,United Kingdom,cookiebot.com,60,3324,1.8
+UNITED_KINGDOM_UK,United Kingdom,facebook.com,24,3324,0.7
+UNITED_KINGDOM_UK,United Kingdom,facebook.net,63,3324,1.9
+UNITED_KINGDOM_UK,United Kingdom,addtoany.com,38,3324,1.1
+UNITED_KINGDOM_UK,United Kingdom,amazonaws.com,138,3324,4.2
+UNITED_KINGDOM_UK,United Kingdom,arcgis.com,26,3324,0.8
+UNITED_KINGDOM_UK,United Kingdom,cloudfront.net,358,3324,10.8
+UNITED_KINGDOM_UK,United Kingdom,cdn-cookieyes.com,60,3324,1.8
+UNITED_KINGDOM_UK,United Kingdom,fbcdn.net,22,3324,0.7
 POLAND,Poland,googleapis.com,1479,2444,60.5
 POLAND,Poland,googletagmanager.com,669,2444,27.4
 POLAND,Poland,gstatic.com,508,2444,20.8
@@ -195,30 +195,30 @@ ITALY,Italy,facebook.com,4,148,2.7
 ITALY,Italy,facebook.net,5,148,3.4
 ITALY,Italy,addtoany.com,11,148,7.4
 ITALY,Italy,amazonaws.com,7,148,4.7
-ITALY,Italy,arcgis.com,3,148,2.0
+ITALY,Italy,arcgis.com,4,148,2.7
 ITALY,Italy,cloudfront.net,1,148,0.7
 ITALY,Italy,cdn-cookieyes.com,6,148,4.1
 ITALY,Italy,fbcdn.net,0,148,0.0
-LATVIA,Latvia,googleapis.com,38,141,27.0
-LATVIA,Latvia,googletagmanager.com,25,141,17.7
-LATVIA,Latvia,gstatic.com,14,141,9.9
-LATVIA,Latvia,jsdelivr.net,14,141,9.9
-LATVIA,Latvia,fontawesome.com,2,141,1.4
-LATVIA,Latvia,google.com,9,141,6.4
-LATVIA,Latvia,cloudflare.com,9,141,6.4
-LATVIA,Latvia,jquery.com,7,141,5.0
-LATVIA,Latvia,unpkg.com,4,141,2.8
-LATVIA,Latvia,bootstrapcdn.com,5,141,3.5
-LATVIA,Latvia,typekit.net,3,141,2.1
-LATVIA,Latvia,cookiebot.com,4,141,2.8
-LATVIA,Latvia,facebook.com,5,141,3.5
-LATVIA,Latvia,facebook.net,0,141,0.0
-LATVIA,Latvia,addtoany.com,8,141,5.7
-LATVIA,Latvia,amazonaws.com,0,141,0.0
-LATVIA,Latvia,arcgis.com,0,141,0.0
-LATVIA,Latvia,cloudfront.net,1,141,0.7
-LATVIA,Latvia,cdn-cookieyes.com,2,141,1.4
-LATVIA,Latvia,fbcdn.net,0,141,0.0
+LATVIA,Latvia,googleapis.com,38,142,26.8
+LATVIA,Latvia,googletagmanager.com,25,142,17.6
+LATVIA,Latvia,gstatic.com,14,142,9.9
+LATVIA,Latvia,jsdelivr.net,14,142,9.9
+LATVIA,Latvia,fontawesome.com,2,142,1.4
+LATVIA,Latvia,google.com,9,142,6.3
+LATVIA,Latvia,cloudflare.com,9,142,6.3
+LATVIA,Latvia,jquery.com,7,142,4.9
+LATVIA,Latvia,unpkg.com,4,142,2.8
+LATVIA,Latvia,bootstrapcdn.com,5,142,3.5
+LATVIA,Latvia,typekit.net,3,142,2.1
+LATVIA,Latvia,cookiebot.com,4,142,2.8
+LATVIA,Latvia,facebook.com,5,142,3.5
+LATVIA,Latvia,facebook.net,0,142,0.0
+LATVIA,Latvia,addtoany.com,8,142,5.6
+LATVIA,Latvia,amazonaws.com,0,142,0.0
+LATVIA,Latvia,arcgis.com,0,142,0.0
+LATVIA,Latvia,cloudfront.net,1,142,0.7
+LATVIA,Latvia,cdn-cookieyes.com,2,142,1.4
+LATVIA,Latvia,fbcdn.net,0,142,0.0
 IRELAND,Ireland,googleapis.com,49,104,47.1
 IRELAND,Ireland,googletagmanager.com,30,104,28.8
 IRELAND,Ireland,gstatic.com,18,104,17.3

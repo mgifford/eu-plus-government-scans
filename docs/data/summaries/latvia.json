@@ -1,7 +1,7 @@
 {
   "country_code": "LATVIA",
-  "total_relationships": 3333,
-  "total_source_domains": 144,
+  "total_relationships": 3354,
+  "total_source_domains": 145,
   "top_source_domains": [
     {
       "domain": "riga.lv",
@@ -29,7 +29,7 @@
     },
     {
       "domain": "iem.gov.lv",
-      "count": 664
+      "count": 668
     },
     {
       "domain": "kem.gov.lv",
@@ -211,11 +211,11 @@
     },
     {
       "domain": "facebook.com",
-      "count": 1867
+      "count": 1870
     },
     {
       "domain": "youtube.com",
-      "count": 1326
+      "count": 1327
     },
     {
       "domain": "latvija.gov.lv",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "twitter.com",
-      "count": 1115
+      "count": 1118
     },
     {
       "domain": "instagram.com",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "iem.gov.lv",
-      "count": 382
+      "count": 386
     },
     {
       "domain": "google.com",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "latvija.lv",
-      "count": 276
+      "count": 279
     },
     {
       "domain": "vugd.gov.lv",
@@ -355,11 +355,11 @@
     },
     {
       "domain": "csp.gov.lv",
-      "count": 160
+      "count": 163
     },
     {
       "domain": "izm.gov.lv",
-      "count": 158
+      "count": 159
     },
     {
       "domain": "daba.gov.lv",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 1923,
-    "image_or_media_dependency": 287,
-    "script_dependency": 422,
-    "stylesheet_dependency": 362,
+    "editorial_link": 1936,
+    "image_or_media_dependency": 289,
+    "script_dependency": 424,
+    "stylesheet_dependency": 364,
     "font_or_preload_dependency": 139,
-    "form_destination": 200
+    "form_destination": 202
   },
-  "generated_at": "2026-10-29T05:21:13.204602+00:00"
+  "generated_at": "2026-11-02T15:40:32.263130+00:00"
 }

@@ -1,6 +1,6 @@
 {
   "country_code": "SPAIN",
-  "total_relationships": 16408,
+  "total_relationships": 16453,
   "total_source_domains": 238,
   "top_source_domains": [
     {
@@ -9,15 +9,15 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 36366
+      "count": 36630
     },
     {
       "domain": "gva.es",
-      "count": 18402
+      "count": 18473
     },
     {
       "domain": "navarra.es",
-      "count": 4845
+      "count": 5095
     },
     {
       "domain": "aragon.es",
@@ -211,43 +211,43 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 18087
+      "count": 18232
     },
     {
       "domain": "gva.es",
-      "count": 11443
+      "count": 11510
     },
     {
       "domain": "facebook.com",
-      "count": 4724
+      "count": 4742
     },
     {
       "domain": "twitter.com",
-      "count": 4344
+      "count": 4359
     },
     {
       "domain": "youtube.com",
-      "count": 3933
+      "count": 3956
     },
     {
       "domain": "googleapis.com",
-      "count": 3694
+      "count": 3714
     },
     {
       "domain": "google.com",
-      "count": 3637
+      "count": 3680
     },
     {
       "domain": "jccm.es",
-      "count": 3588
+      "count": 3614
     },
     {
       "domain": "instagram.com",
-      "count": 3482
+      "count": 3491
     },
     {
       "domain": "navarra.es",
-      "count": 2261
+      "count": 2389
     },
     {
       "domain": "aragon.es",
@@ -267,7 +267,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 1588
+      "count": 1604
     },
     {
       "domain": "linkedin.com",
@@ -283,7 +283,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 1231
+      "count": 1233
     },
     {
       "domain": "ayto-torrejon.es",
@@ -291,7 +291,7 @@
     },
     {
       "domain": "blogspot.com",
-      "count": 1091
+      "count": 1097
     },
     {
       "domain": "x.com",
@@ -311,11 +311,11 @@
     },
     {
       "domain": "google.es",
-      "count": 882
+      "count": 894
     },
     {
       "domain": "europa.eu",
-      "count": 848
+      "count": 849
     },
     {
       "domain": "cloudflare.com",
@@ -378,16 +378,16 @@
       "count": 502
     },
     {
+      "domain": "vimeo.com",
+      "count": 476
+    },
+    {
       "domain": "bootstrapcdn.com",
       "count": 471
     },
     {
-      "domain": "vimeo.com",
-      "count": 471
-    },
-    {
       "domain": "sharethis.com",
-      "count": 461
+      "count": 467
     },
     {
       "domain": "readspeaker.com",
@@ -399,7 +399,7 @@
     },
     {
       "domain": "pinterest.com",
-      "count": 410
+      "count": 412
     },
     {
       "domain": "whatsapp.com",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "script_dependency": 2361,
-    "image_or_media_dependency": 1984,
-    "stylesheet_dependency": 2012,
-    "editorial_link": 8430,
-    "form_destination": 1468,
+    "script_dependency": 2369,
+    "image_or_media_dependency": 1993,
+    "stylesheet_dependency": 2020,
+    "editorial_link": 8442,
+    "form_destination": 1476,
     "font_or_preload_dependency": 153
   },
-  "generated_at": "2026-10-31T17:38:44.147868+00:00"
+  "generated_at": "2026-11-01T22:33:43.402898+00:00"
 }

@@ -5,7 +5,7 @@
   "top_source_domains": [
     {
       "domain": "belgium.be",
-      "count": 14284
+      "count": 14313
     },
     {
       "domain": "wallonie.be",
@@ -187,7 +187,7 @@
   "top_target_domains": [
     {
       "domain": "belgium.be",
-      "count": 8123
+      "count": 8141
     },
     {
       "domain": "wallonie.be",
@@ -203,7 +203,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 1881
+      "count": 1884
     },
     {
       "domain": "googleapis.com",
@@ -215,7 +215,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 1480
+      "count": 1483
     },
     {
       "domain": "instagram.com",
@@ -235,7 +235,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 956
+      "count": 958
     },
     {
       "domain": "hainaut.be",
@@ -394,5 +394,5 @@
     "font_or_preload_dependency": 94,
     "form_destination": 316
   },
-  "generated_at": "2026-11-01T13:33:33.672335+00:00"
+  "generated_at": "2026-11-02T15:40:31.375705+00:00"
 }
