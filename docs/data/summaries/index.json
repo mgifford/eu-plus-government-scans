@@ -15,14 +15,14 @@
     "file": "switzerland.json"
   },
   "REPUBLIC_OF_CYPRUS": {
-    "total_relationships": 321795,
+    "total_relationships": 322075,
     "total_source_domains": 9383,
     "file": "republic_of_cyprus.json"
   },
-  "BELGIUM": {
-    "total_relationships": 3856,
-    "total_source_domains": 45,
-    "file": "belgium.json"
+  "AUSTRIA": {
+    "total_relationships": 2987,
+    "total_source_domains": 37,
+    "file": "austria.json"
   },
   "GREECE": {
     "total_relationships": 8684,
@@ -34,59 +34,29 @@
     "total_source_domains": 16,
     "file": "lithuania.json"
   },
-  "AUSTRIA": {
-    "total_relationships": 2987,
-    "total_source_domains": 37,
-    "file": "austria.json"
+  "IRELAND": {
+    "total_relationships": 2123,
+    "total_source_domains": 105,
+    "file": "ireland.json"
   },
-  "CANADA": {
-    "total_relationships": 321795,
-    "total_source_domains": 9383,
-    "file": "canada.json"
-  },
-  "SLOVAKIA": {
-    "total_relationships": 1655,
-    "total_source_domains": 21,
-    "file": "slovakia.json"
-  },
-  "LATVIA": {
-    "total_relationships": 3354,
-    "total_source_domains": 145,
-    "file": "latvia.json"
-  },
-  "POLAND": {
-    "total_relationships": 62160,
-    "total_source_domains": 2501,
-    "file": "poland.json"
-  },
-  "SLOVENIA": {
-    "total_relationships": 896,
-    "total_source_domains": 16,
-    "file": "slovenia.json"
-  },
-  "SWEDEN": {
-    "total_relationships": 6208,
-    "total_source_domains": 245,
-    "file": "sweden.json"
-  },
-  "PORTUGAL": {
-    "total_relationships": 13560,
-    "total_source_domains": 388,
-    "file": "portugal.json"
+  "SPAIN": {
+    "total_relationships": 16743,
+    "total_source_domains": 238,
+    "file": "spain.json"
   },
   "NORWAY": {
     "total_relationships": 874,
     "total_source_domains": 34,
     "file": "norway.json"
   },
-  "LUXEMBOURG": {
-    "total_relationships": 2087,
-    "total_source_domains": 39,
-    "file": "luxembourg.json"
+  "MALTA": {
+    "total_relationships": 1720,
+    "total_source_domains": 3,
+    "file": "malta.json"
   },
-  "ITALY": {
-    "total_relationships": 16430,
-    "total_source_domains": 154,
-    "file": "italy.json"
+  "GERMANY": {
+    "total_relationships": 21920,
+    "total_source_domains": 231,
+    "file": "germany.json"
   }
 }

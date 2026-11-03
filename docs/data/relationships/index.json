@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-02T15:40:26.166738+00:00",
+  "generated_at": "2026-11-03T14:30:28.715050+00:00",
   "shard_max_bytes": 33554432,
-  "total_rows": 329796,
-  "total_bytes": 196023706,
+  "total_rows": 330152,
+  "total_bytes": 196276729,
   "shards": [
     {
       "file": "app.001.jsonl",
@@ -37,8 +37,8 @@
     {
       "file": "bzh.001.jsonl",
       "group": "bzh",
-      "rows": 123,
-      "bytes": 67491
+      "rows": 124,
+      "bytes": 68131
     },
     {
       "file": "ca.001.jsonl",
@@ -73,8 +73,8 @@
     {
       "file": "com.001.jsonl",
       "group": "com",
-      "rows": 428,
-      "bytes": 253872
+      "rows": 429,
+      "bytes": 254455
     },
     {
       "file": "cy.001.jsonl",
@@ -91,14 +91,14 @@
     {
       "file": "cz.001.jsonl",
       "group": "cz",
-      "rows": 2670,
-      "bytes": 1413113
+      "rows": 2672,
+      "bytes": 1414184
     },
     {
       "file": "de.001.jsonl",
       "group": "de",
-      "rows": 22572,
-      "bytes": 15683610
+      "rows": 22585,
+      "bytes": 15689886
     },
     {
       "file": "dk.001.jsonl",
@@ -115,14 +115,14 @@
     {
       "file": "es.001.jsonl",
       "group": "es",
-      "rows": 16893,
-      "bytes": 10645512
+      "rows": 17184,
+      "bytes": 10863074
     },
     {
       "file": "eu.001.jsonl",
       "group": "eu",
       "rows": 3641,
-      "bytes": 2120728
+      "bytes": 2121135
     },
     {
       "file": "eus.001.jsonl",
@@ -139,8 +139,8 @@
     {
       "file": "fr.001.jsonl",
       "group": "fr",
-      "rows": 31624,
-      "bytes": 20890010
+      "rows": 31671,
+      "bytes": 20915687
     },
     {
       "file": "frl.001.jsonl",
@@ -152,7 +152,7 @@
       "file": "gal.001.jsonl",
       "group": "gal",
       "rows": 1089,
-      "bytes": 700093
+      "bytes": 700401
     },
     {
       "file": "gr.001.jsonl",
@@ -277,8 +277,8 @@
     {
       "file": "org.001.jsonl",
       "group": "org",
-      "rows": 729,
-      "bytes": 388399
+      "rows": 730,
+      "bytes": 388898
     },
     {
       "file": "other.001.jsonl",
