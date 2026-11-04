@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T14:30:37.137003+00:00",
+  "generated_at": "2026-11-04T14:40:01.696908+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -11,7 +11,7 @@
     {
       "country_code": "UNITED_KINGDOM_UK",
       "country": "United Kingdom",
-      "scanned_domains": 3324
+      "scanned_domains": 3326
     },
     {
       "country_code": "POLAND",
@@ -173,32 +173,32 @@
     {
       "service": "googleapis.com",
       "countries": 32,
-      "domains": 4438
+      "domains": 4440
     },
     {
       "service": "googletagmanager.com",
       "countries": 32,
-      "domains": 2781
+      "domains": 2775
     },
     {
       "service": "gstatic.com",
       "countries": 32,
-      "domains": 1733
+      "domains": 1734
     },
     {
       "service": "jsdelivr.net",
       "countries": 32,
-      "domains": 1168
+      "domains": 1169
     },
     {
       "service": "fontawesome.com",
       "countries": 32,
-      "domains": 873
+      "domains": 872
     },
     {
       "service": "google.com",
       "countries": 31,
-      "domains": 2151
+      "domains": 2153
     },
     {
       "service": "cloudflare.com",
@@ -208,17 +208,17 @@
     {
       "service": "jquery.com",
       "countries": 30,
-      "domains": 637
+      "domains": 636
     },
     {
       "service": "unpkg.com",
       "countries": 29,
-      "domains": 672
+      "domains": 674
     },
     {
       "service": "bootstrapcdn.com",
       "countries": 29,
-      "domains": 601
+      "domains": 600
     },
     {
       "service": "typekit.net",
@@ -258,12 +258,12 @@
     {
       "service": "cloudfront.net",
       "countries": 17,
-      "domains": 430
+      "domains": 432
     },
     {
       "service": "cdn-cookieyes.com",
       "countries": 17,
-      "domains": 179
+      "domains": 180
     },
     {
       "service": "fbcdn.net",
@@ -276,48 +276,48 @@
       "country_code": "UNITED_KINGDOM_UK",
       "country": "United Kingdom",
       "service": "googleapis.com",
-      "domains": 1541,
-      "scanned_domains": 3324,
+      "domains": 1543,
+      "scanned_domains": 3326,
       "percent": 46.4
     },
     {
       "country_code": "UNITED_KINGDOM_UK",
       "country": "United Kingdom",
       "service": "googletagmanager.com",
-      "domains": 1268,
-      "scanned_domains": 3324,
-      "percent": 38.1
+      "domains": 1262,
+      "scanned_domains": 3326,
+      "percent": 37.9
     },
     {
       "country_code": "UNITED_KINGDOM_UK",
       "country": "United Kingdom",
       "service": "gstatic.com",
-      "domains": 591,
-      "scanned_domains": 3324,
+      "domains": 592,
+      "scanned_domains": 3326,
       "percent": 17.8
     },
     {
       "country_code": "UNITED_KINGDOM_UK",
       "country": "United Kingdom",
       "service": "jsdelivr.net",
-      "domains": 436,
-      "scanned_domains": 3324,
+      "domains": 437,
+      "scanned_domains": 3326,
       "percent": 13.1
     },
     {
       "country_code": "UNITED_KINGDOM_UK",
       "country": "United Kingdom",
       "service": "fontawesome.com",
-      "domains": 406,
-      "scanned_domains": 3324,
+      "domains": 405,
+      "scanned_domains": 3326,
       "percent": 12.2
     },
     {
       "country_code": "UNITED_KINGDOM_UK",
       "country": "United Kingdom",
       "service": "google.com",
-      "domains": 1186,
-      "scanned_domains": 3324,
+      "domains": 1189,
+      "scanned_domains": 3326,
       "percent": 35.7
     },
     {
@@ -325,31 +325,31 @@
       "country": "United Kingdom",
       "service": "cloudflare.com",
       "domains": 919,
-      "scanned_domains": 3324,
+      "scanned_domains": 3326,
       "percent": 27.6
     },
     {
       "country_code": "UNITED_KINGDOM_UK",
       "country": "United Kingdom",
       "service": "jquery.com",
-      "domains": 183,
-      "scanned_domains": 3324,
+      "domains": 182,
+      "scanned_domains": 3326,
       "percent": 5.5
     },
     {
       "country_code": "UNITED_KINGDOM_UK",
       "country": "United Kingdom",
       "service": "unpkg.com",
-      "domains": 337,
-      "scanned_domains": 3324,
-      "percent": 10.1
+      "domains": 339,
+      "scanned_domains": 3326,
+      "percent": 10.2
     },
     {
       "country_code": "UNITED_KINGDOM_UK",
       "country": "United Kingdom",
       "service": "bootstrapcdn.com",
-      "domains": 161,
-      "scanned_domains": 3324,
+      "domains": 160,
+      "scanned_domains": 3326,
       "percent": 4.8
     },
     {
@@ -357,7 +357,7 @@
       "country": "United Kingdom",
       "service": "typekit.net",
       "domains": 149,
-      "scanned_domains": 3324,
+      "scanned_domains": 3326,
       "percent": 4.5
     },
     {
@@ -365,7 +365,7 @@
       "country": "United Kingdom",
       "service": "cookiebot.com",
       "domains": 60,
-      "scanned_domains": 3324,
+      "scanned_domains": 3326,
       "percent": 1.8
     },
     {
@@ -373,7 +373,7 @@
       "country": "United Kingdom",
       "service": "facebook.com",
       "domains": 24,
-      "scanned_domains": 3324,
+      "scanned_domains": 3326,
       "percent": 0.7
     },
     {
@@ -381,7 +381,7 @@
       "country": "United Kingdom",
       "service": "facebook.net",
       "domains": 63,
-      "scanned_domains": 3324,
+      "scanned_domains": 3326,
       "percent": 1.9
     },
     {
@@ -389,7 +389,7 @@
       "country": "United Kingdom",
       "service": "addtoany.com",
       "domains": 38,
-      "scanned_domains": 3324,
+      "scanned_domains": 3326,
       "percent": 1.1
     },
     {
@@ -397,31 +397,31 @@
       "country": "United Kingdom",
       "service": "amazonaws.com",
       "domains": 138,
-      "scanned_domains": 3324,
-      "percent": 4.2
+      "scanned_domains": 3326,
+      "percent": 4.1
     },
     {
       "country_code": "UNITED_KINGDOM_UK",
       "country": "United Kingdom",
       "service": "arcgis.com",
       "domains": 26,
-      "scanned_domains": 3324,
+      "scanned_domains": 3326,
       "percent": 0.8
     },
     {
       "country_code": "UNITED_KINGDOM_UK",
       "country": "United Kingdom",
       "service": "cloudfront.net",
-      "domains": 358,
-      "scanned_domains": 3324,
+      "domains": 360,
+      "scanned_domains": 3326,
       "percent": 10.8
     },
     {
       "country_code": "UNITED_KINGDOM_UK",
       "country": "United Kingdom",
       "service": "cdn-cookieyes.com",
-      "domains": 60,
-      "scanned_domains": 3324,
+      "domains": 61,
+      "scanned_domains": 3326,
       "percent": 1.8
     },
     {
@@ -429,7 +429,7 @@
       "country": "United Kingdom",
       "service": "fbcdn.net",
       "domains": 22,
-      "scanned_domains": 3324,
+      "scanned_domains": 3326,
       "percent": 0.7
     },
     {
@@ -1756,9 +1756,9 @@
       "country_code": "ITALY",
       "country": "Italy",
       "service": "google.com",
-      "domains": 35,
+      "domains": 34,
       "scanned_domains": 148,
-      "percent": 23.6
+      "percent": 23.0
     },
     {
       "country_code": "ITALY",

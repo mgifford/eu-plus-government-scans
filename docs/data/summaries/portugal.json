@@ -211,19 +211,19 @@
     },
     {
       "domain": "facebook.com",
-      "count": 4013
+      "count": 4015
     },
     {
       "domain": "youtube.com",
-      "count": 3282
+      "count": 3284
     },
     {
       "domain": "instagram.com",
-      "count": 3140
+      "count": 3142
     },
     {
       "domain": "googletagmanager.com",
-      "count": 2844
+      "count": 2846
     },
     {
       "domain": "google.com",
@@ -235,7 +235,7 @@
     },
     {
       "domain": "livroreclamacoes.pt",
-      "count": 1727
+      "count": 1729
     },
     {
       "domain": "justica.gov.pt",
@@ -271,7 +271,7 @@
     },
     {
       "domain": "twitter.com",
-      "count": 1360
+      "count": 1362
     },
     {
       "domain": "gstatic.com",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 1090
+      "count": 1092
     },
     {
       "domain": "cm-porto.pt",
@@ -295,7 +295,7 @@
     },
     {
       "domain": "w3.org",
-      "count": 705
+      "count": 709
     },
     {
       "domain": "cm-alcobaca.pt",
@@ -375,7 +375,7 @@
     },
     {
       "domain": "portugal2020.pt",
-      "count": 442
+      "count": 444
     },
     {
       "domain": "cm-gondomar.pt",
@@ -414,5 +414,5 @@
     "form_destination": 747,
     "image_or_media_dependency": 1121
   },
-  "generated_at": "2026-11-02T15:40:32.728802+00:00"
+  "generated_at": "2026-11-04T14:39:58.376343+00:00"
 }
