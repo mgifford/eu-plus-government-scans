@@ -1,6 +1,6 @@
 {
   "country_code": "IRELAND",
-  "total_relationships": 2123,
+  "total_relationships": 2130,
   "total_source_domains": 105,
   "top_source_domains": [
     {
@@ -41,7 +41,7 @@
     },
     {
       "domain": "louthcoco.ie",
-      "count": 554
+      "count": 566
     },
     {
       "domain": "dlrcoco.ie",
@@ -211,7 +211,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 828
+      "count": 830
     },
     {
       "domain": "instagram.com",
@@ -263,7 +263,7 @@
     },
     {
       "domain": "louthcoco.ie",
-      "count": 286
+      "count": 296
     },
     {
       "domain": "ipoi.gov.ie",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 1029,
-    "form_destination": 136,
-    "script_dependency": 411,
-    "stylesheet_dependency": 295,
-    "image_or_media_dependency": 192,
+    "editorial_link": 1031,
+    "form_destination": 137,
+    "script_dependency": 412,
+    "stylesheet_dependency": 297,
+    "image_or_media_dependency": 193,
     "font_or_preload_dependency": 60
   },
-  "generated_at": "2026-11-04T14:39:58.272629+00:00"
+  "generated_at": "2026-11-05T00:04:21.792938+00:00"
 }
