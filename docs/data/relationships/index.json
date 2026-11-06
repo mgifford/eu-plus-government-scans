@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-05T14:52:48.959721+00:00",
+  "generated_at": "2026-11-06T14:36:41.652661+00:00",
   "shard_max_bytes": 33554432,
-  "total_rows": 330633,
-  "total_bytes": 196532024,
+  "total_rows": 330818,
+  "total_bytes": 196625249,
   "shards": [
     {
       "file": "app.001.jsonl",
@@ -38,7 +38,7 @@
       "file": "bzh.001.jsonl",
       "group": "bzh",
       "rows": 124,
-      "bytes": 68142
+      "bytes": 68080
     },
     {
       "file": "ca.001.jsonl",
@@ -122,7 +122,7 @@
       "file": "eu.001.jsonl",
       "group": "eu",
       "rows": 3642,
-      "bytes": 2121873
+      "bytes": 2121680
     },
     {
       "file": "eus.001.jsonl",
@@ -139,8 +139,8 @@
     {
       "file": "fr.001.jsonl",
       "group": "fr",
-      "rows": 31700,
-      "bytes": 20935378
+      "rows": 31776,
+      "bytes": 20961445
     },
     {
       "file": "frl.001.jsonl",
@@ -199,8 +199,8 @@
     {
       "file": "it.001.jsonl",
       "group": "it",
-      "rows": 16617,
-      "bytes": 10722607
+      "rows": 16679,
+      "bytes": 10780124
     },
     {
       "file": "kh.001.jsonl",
@@ -242,13 +242,13 @@
       "file": "mt.001.jsonl",
       "group": "mt",
       "rows": 1801,
-      "bytes": 1078355
+      "bytes": 1078365
     },
     {
       "file": "nc.001.jsonl",
       "group": "nc",
       "rows": 12,
-      "bytes": 6213
+      "bytes": 6215
     },
     {
       "file": "net.001.jsonl",
@@ -278,7 +278,7 @@
       "file": "org.001.jsonl",
       "group": "org",
       "rows": 730,
-      "bytes": 388902
+      "bytes": 388834
     },
     {
       "file": "other.001.jsonl",
@@ -289,20 +289,20 @@
     {
       "file": "pl.001.jsonl",
       "group": "pl",
-      "rows": 58943,
-      "bytes": 33554125
+      "rows": 58974,
+      "bytes": 33554259
     },
     {
       "file": "pl.002.jsonl",
       "group": "pl",
-      "rows": 4494,
-      "bytes": 2421304
+      "rows": 4509,
+      "bytes": 2430673
     },
     {
       "file": "pt.001.jsonl",
       "group": "pt",
-      "rows": 14290,
-      "bytes": 7836068
+      "rows": 14291,
+      "bytes": 7836517
     },
     {
       "file": "ro.001.jsonl",

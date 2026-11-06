@@ -5,7 +5,7 @@
   "top_source_domains": [
     {
       "domain": "gov.mt",
-      "count": 32872
+      "count": 32921
     },
     {
       "domain": "parlament.mt",
@@ -19,11 +19,11 @@
   "top_target_domains": [
     {
       "domain": "gov.mt",
-      "count": 17117
+      "count": 17139
     },
     {
       "domain": "googleapis.com",
-      "count": 1878
+      "count": 1884
     },
     {
       "domain": "jsdelivr.net",
@@ -35,11 +35,11 @@
     },
     {
       "domain": "youtube.com",
-      "count": 1149
+      "count": 1152
     },
     {
       "domain": "googletagmanager.com",
-      "count": 1117
+      "count": 1120
     },
     {
       "domain": "wordpress.org",
@@ -51,7 +51,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 660
+      "count": 663
     },
     {
       "domain": "europa.eu",
@@ -63,7 +63,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 419
+      "count": 422
     },
     {
       "domain": "google.com",
@@ -226,5 +226,5 @@
     "font_or_preload_dependency": 13,
     "form_destination": 189
   },
-  "generated_at": "2026-11-05T14:52:53.282537+00:00"
+  "generated_at": "2026-11-06T06:06:14.697087+00:00"
 }

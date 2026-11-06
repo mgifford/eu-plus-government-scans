@@ -1,6 +1,6 @@
 {
   "country_code": "PORTUGAL",
-  "total_relationships": 13560,
+  "total_relationships": 13561,
   "total_source_domains": 388,
   "top_source_domains": [
     {
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "googleapis.com",
-      "count": 4296
+      "count": 4298
     },
     {
       "domain": "facebook.com",
@@ -215,7 +215,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 3284
+      "count": 3285
     },
     {
       "domain": "instagram.com",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 2846
+      "count": 2847
     },
     {
       "domain": "google.com",
@@ -409,10 +409,10 @@
   "relationship_types": {
     "font_or_preload_dependency": 447,
     "script_dependency": 2130,
-    "editorial_link": 7553,
+    "editorial_link": 7554,
     "stylesheet_dependency": 1562,
     "form_destination": 747,
     "image_or_media_dependency": 1121
   },
-  "generated_at": "2026-11-04T14:39:58.376343+00:00"
+  "generated_at": "2026-11-06T06:06:14.803328+00:00"
 }
