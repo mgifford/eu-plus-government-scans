@@ -1,6 +1,6 @@
 {
   "country_code": "GREECE",
-  "total_relationships": 8684,
+  "total_relationships": 8691,
   "total_source_domains": 367,
   "top_source_domains": [
     {
@@ -207,11 +207,11 @@
   "top_target_domains": [
     {
       "domain": "googleapis.com",
-      "count": 3935
+      "count": 3937
     },
     {
       "domain": "facebook.com",
-      "count": 2199
+      "count": 2200
     },
     {
       "domain": "diavgeia.gov.gr",
@@ -247,7 +247,7 @@
     },
     {
       "domain": "twitter.com",
-      "count": 959
+      "count": 960
     },
     {
       "domain": "instagram.com",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 569
+      "count": 570
     },
     {
       "domain": "mindev.gov.gr",
@@ -379,7 +379,7 @@
     },
     {
       "domain": "moh.gov.gr",
-      "count": 237
+      "count": 239
     },
     {
       "domain": "x.com",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 5011,
+    "editorial_link": 5009,
     "font_or_preload_dependency": 308,
     "form_destination": 375,
     "image_or_media_dependency": 659,
-    "script_dependency": 1276,
+    "script_dependency": 1285,
     "stylesheet_dependency": 1055
   },
-  "generated_at": "2026-11-06T14:36:46.198831+00:00"
+  "generated_at": "2026-11-07T13:20:30.233212+00:00"
 }

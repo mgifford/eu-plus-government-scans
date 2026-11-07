@@ -13,7 +13,7 @@
     },
     {
       "domain": "fgov.be",
-      "count": 3507
+      "count": 3517
     },
     {
       "domain": "vlaanderen.be",
@@ -187,7 +187,7 @@
   "top_target_domains": [
     {
       "domain": "belgium.be",
-      "count": 8141
+      "count": 8144
     },
     {
       "domain": "wallonie.be",
@@ -199,7 +199,7 @@
     },
     {
       "domain": "fgov.be",
-      "count": 2172
+      "count": 2177
     },
     {
       "domain": "facebook.com",
@@ -394,5 +394,5 @@
     "font_or_preload_dependency": 94,
     "form_destination": 316
   },
-  "generated_at": "2026-11-02T15:40:31.375705+00:00"
+  "generated_at": "2026-11-07T13:20:30.364439+00:00"
 }
