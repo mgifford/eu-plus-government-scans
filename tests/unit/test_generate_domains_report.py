@@ -217,9 +217,14 @@ def test_generate_domains_report_page_links(toon_dir: Path, tmp_path: Path):
     iceland_content = (tmp_path / "domains" / "iceland.md").read_text()
     france_content = (tmp_path / "domains" / "france.md").read_text()
 
-    assert "https://example.is/" in iceland_content
-    assert "https://www.gouvernement.fr/" in france_content
-    assert "Visit example.is homepage" in iceland_content
+    # Assert the complete rendered link rather than a bare URL substring:
+    # it checks label and target together, and avoids CodeQL's
+    # py/incomplete-url-substring-sanitization pattern.
+    assert "[Visit example.is homepage](https://example.is/)" in iceland_content
+    assert (
+        "[Visit www.gouvernement.fr homepage](https://www.gouvernement.fr/)"
+        in france_content
+    )
     assert "[https://example.is/](https://example.is/)" not in iceland_content
 
 

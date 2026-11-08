@@ -370,18 +370,18 @@ def test_generate_third_party_js_report_with_data(
     assert data["country_drilldowns"]["ICELAND"]["service_loads"][0]["service_name"] == "Google Tag Manager"
 
 
-def test_sanitize_script_src_removes_key_param() -> None:
-    """Should strip the ``key`` query parameter from a Maps URL."""
+def test_sanitize_script_src_masks_key_param() -> None:
+    """Should mask the ``key`` query parameter value in a Maps URL."""
     src = "https://maps.googleapis.com/maps/api/js?v=3&key=FAKE_KEY_FOR_TESTING_ONLY&ver=4.27.6"
-    expected = "https://maps.googleapis.com/maps/api/js?v=3&ver=4.27.6"
+    expected = "https://maps.googleapis.com/maps/api/js?v=3&key=REDACTED&ver=4.27.6"
     result = _sanitize_script_src(src)
     assert result == expected
 
 
-def test_sanitize_script_src_removes_token_param() -> None:
-    """Should strip the ``token`` query parameter."""
+def test_sanitize_script_src_masks_token_param() -> None:
+    """Should mask the ``token`` query parameter value."""
     src = "https://cdn.example.com/script.js?token=FAKE_TOKEN_FOR_TESTING&version=2"
-    expected = "https://cdn.example.com/script.js?version=2"
+    expected = "https://cdn.example.com/script.js?token=REDACTED&version=2"
     result = _sanitize_script_src(src)
     assert result == expected
 

@@ -213,6 +213,33 @@ Both files are uploaded as GitHub Actions workflow artifacts (not committed to t
 repository, as they can be large).  New report generators must follow this pattern:
 produce the aggregate Markdown page **and** the machine-readable backing data files.
 
+### Credentials in scan output
+
+Scanned government pages load resources whose URLs carry client-side API
+keys, for example `maps.googleapis.com/maps/api/js?key=...`.  Those keys are
+public on the source site, but the scan output must not republish them: it
+adds a copy this project has no use for, and it raises GitHub secret-scanning
+alerts.  `src/lib/secret_redaction.py` replaces them with `REDACTED` under two
+rules with different scopes:
+
+- **By parameter name** (`redact_url`): masks the value of `key=`, `token=`,
+  `access_token=`, `signature=` and similar.  Apply it when a scanner captures
+  a URL harvested from page content (script `src`, stylesheet `href`, and so
+  on), so the raw value never reaches the metadata database artifact.  Never
+  apply it to seed page URLs: some government pages are addressed by
+  parameters such as `?key=SiteNotices_CookiesPolicy`.
+- **By format** (`redact_known_formats`): masks Google API keys, GitHub
+  tokens, AWS key IDs and similar wherever they appear.  The
+  `generate-scan-progress.yml` workflow runs it over every generated report
+  file (`python3 -m src.cli.redact_secrets ...`) before commit, artifact upload
+  and Pages deploy, as a backstop for anything a scanner missed.
+
+When adding a scanner or a field that stores URLs from page content, call
+`redact_url` at capture time and add any new published file to the
+`Mask credentials in generated reports` step.  Test fixtures must build
+key-shaped strings at runtime (for example `"AI" + "za" + ...`), or the test
+file itself raises a secret-scanning alert.
+
 ### Large committed datasets
 
 GitHub refuses to accept any pushed file larger than **100 MiB**, so a dataset that

@@ -250,6 +250,27 @@ jobs:
             echo "or the database doesn't cover this scanner)._"
           } > docs/pace-report.md
 
+      # Scanned pages expose client-side API keys in the URLs they load, and
+      # those URLs flow into the reports.  Scanners mask them at capture time;
+      # this pass masks anything that slipped through before the files are
+      # committed, uploaded as an artifact, or deployed to Pages from that
+      # artifact.  It prints counts only, never values.  See
+      # src/cli/redact_secrets.py.
+      - name: Mask credentials in generated reports
+        run: |
+          python3 -m src.cli.redact_secrets \
+            docs/scan-progress.md docs/scan-progress-data.json \
+            docs/domains.md docs/domains/ docs/index.md \
+            docs/social-media.md docs/social-media-data.json \
+            docs/technology-scanning.md docs/technology-data.json docs/technology-index.json \
+            docs/third-party-tools.md docs/third-party-tools-data.json \
+            docs/accessibility-statements.md docs/accessibility-data.json \
+            docs/user-preferences.md docs/user-preferences-data.json docs/user-preferences-data.csv \
+            docs/lighthouse-results.md docs/lighthouse-data.json docs/lighthouse-data.csv \
+            docs/tech-lighthouse.md docs/tech-lighthouse-data.json \
+            docs/data/gov-domains.json docs/pace-report.md \
+            ./*-output.txt
+
       # Committed scan data grows git history on every bot commit, and history
       # never shrinks on its own.  Records one size reading per day and warns
       # on fast weekly growth or on passing an absolute ceiling.  Lower the

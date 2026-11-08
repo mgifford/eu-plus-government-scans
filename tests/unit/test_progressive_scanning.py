@@ -389,8 +389,7 @@ class TestIncrementalMerge:
             )
             assert len(merged) == 1
             assert merged[key].observations == 6
-            assert "https://source.gov" in merged[key].source_pages
-            assert "https://other.gov" in merged[key].source_pages
+            assert merged[key].source_pages == {"https://source.gov", "https://other.gov"}
 
     def test_merge_preserves_existing_metadata(self) -> None:
         """Merge should preserve first_seen from existing data."""
@@ -926,7 +925,11 @@ class TestEdgeExpiry:
         from src.jobs.relationship_scanner_job import RelationshipScannerJob
 
         agg = self._agg(active=False)
-        agg.inactive_since = "2026-05-01T00:00:00+00:00"
+        # Relative to now: _write_jsonl drops edges retired longer than
+        # RETIRED_EDGE_RETENTION_DAYS, so a fixed date stops round-tripping
+        # once it ages past that window.
+        retired_at = (datetime.now(timezone.utc) - timedelta(days=1)).isoformat()
+        agg.inactive_since = retired_at
         key = self._key(agg)
 
         with tempfile.TemporaryDirectory() as tmpdir:
@@ -941,7 +944,7 @@ class TestEdgeExpiry:
             loaded = job._load_existing_relationships(shard_dir)
 
         assert loaded[key].active is False
-        assert loaded[key].inactive_since == "2026-05-01T00:00:00+00:00"
+        assert loaded[key].inactive_since == retired_at
 
     def test_rows_predating_the_field_load_as_active(self) -> None:
         """Existing published data has no `active` key and must not vanish."""
