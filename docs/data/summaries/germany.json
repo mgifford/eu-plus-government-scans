@@ -9,7 +9,7 @@
     },
     {
       "domain": "rlp.de",
-      "count": 43704
+      "count": 43859
     },
     {
       "domain": "bayern.de",
@@ -211,7 +211,7 @@
     },
     {
       "domain": "rlp.de",
-      "count": 34850
+      "count": 34992
     },
     {
       "domain": "niedersachsen.de",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "nrw.de",
-      "count": 20650
+      "count": 20651
     },
     {
       "domain": "hessen.de",
@@ -243,11 +243,11 @@
     },
     {
       "domain": "facebook.com",
-      "count": 7081
+      "count": 7083
     },
     {
       "domain": "instagram.com",
-      "count": 6848
+      "count": 6853
     },
     {
       "domain": "bund.de",
@@ -271,7 +271,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 3583
+      "count": 3588
     },
     {
       "domain": "berlin.de",
@@ -414,5 +414,5 @@
     "stylesheet_dependency": 2696,
     "form_destination": 2128
   },
-  "generated_at": "2026-11-07T05:37:02.623626+00:00"
+  "generated_at": "2026-11-08T13:38:50.320581+00:00"
 }

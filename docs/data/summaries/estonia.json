@@ -65,7 +65,7 @@
     },
     {
       "domain": "viljandi.ee",
-      "count": 475
+      "count": 511
     },
     {
       "domain": "kaitseministeerium.ee",
@@ -143,7 +143,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 850
+      "count": 852
     },
     {
       "domain": "parnu.ee",
@@ -191,7 +191,7 @@
     },
     {
       "domain": "flickr.com",
-      "count": 272
+      "count": 273
     },
     {
       "domain": "riigikantselei.ee",
@@ -218,19 +218,19 @@
       "count": 229
     },
     {
+      "domain": "viljandi.ee",
+      "count": 220
+    },
+    {
+      "domain": "googletagmanager.com",
+      "count": 211
+    },
+    {
       "domain": "kriis.ee",
       "count": 210
     },
     {
-      "domain": "googletagmanager.com",
-      "count": 209
-    },
-    {
       "domain": "kul.ee",
-      "count": 207
-    },
-    {
-      "domain": "viljandi.ee",
       "count": 207
     },
     {
@@ -271,7 +271,7 @@
     },
     {
       "domain": "google.com",
-      "count": 120
+      "count": 122
     },
     {
       "domain": "prokuratuur.ee",
@@ -298,6 +298,10 @@
       "count": 76
     },
     {
+      "domain": "fontawesome.com",
+      "count": 76
+    },
+    {
       "domain": "jsdelivr.net",
       "count": 76
     },
@@ -307,10 +311,6 @@
     },
     {
       "domain": "vportal.ee",
-      "count": 74
-    },
-    {
-      "domain": "fontawesome.com",
       "count": 74
     },
     {
@@ -342,5 +342,5 @@
     "stylesheet_dependency": 189,
     "font_or_preload_dependency": 27
   },
-  "generated_at": "2026-10-31T05:01:18.134241+00:00"
+  "generated_at": "2026-11-08T13:38:50.392705+00:00"
 }

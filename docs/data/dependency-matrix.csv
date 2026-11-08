@@ -1,24 +1,24 @@
 ﻿country_code,country,service,domains_depending,scanned_domains,percent
-UNITED_KINGDOM_UK,United Kingdom,googleapis.com,1551,3330,46.6
-UNITED_KINGDOM_UK,United Kingdom,googletagmanager.com,1258,3330,37.8
-UNITED_KINGDOM_UK,United Kingdom,gstatic.com,592,3330,17.8
-UNITED_KINGDOM_UK,United Kingdom,jsdelivr.net,441,3330,13.2
-UNITED_KINGDOM_UK,United Kingdom,fontawesome.com,403,3330,12.1
-UNITED_KINGDOM_UK,United Kingdom,google.com,1195,3330,35.9
-UNITED_KINGDOM_UK,United Kingdom,cloudflare.com,926,3330,27.8
-UNITED_KINGDOM_UK,United Kingdom,jquery.com,183,3330,5.5
-UNITED_KINGDOM_UK,United Kingdom,unpkg.com,342,3330,10.3
-UNITED_KINGDOM_UK,United Kingdom,bootstrapcdn.com,157,3330,4.7
-UNITED_KINGDOM_UK,United Kingdom,typekit.net,149,3330,4.5
-UNITED_KINGDOM_UK,United Kingdom,cookiebot.com,60,3330,1.8
-UNITED_KINGDOM_UK,United Kingdom,facebook.com,24,3330,0.7
-UNITED_KINGDOM_UK,United Kingdom,facebook.net,63,3330,1.9
-UNITED_KINGDOM_UK,United Kingdom,addtoany.com,38,3330,1.1
-UNITED_KINGDOM_UK,United Kingdom,amazonaws.com,138,3330,4.1
-UNITED_KINGDOM_UK,United Kingdom,arcgis.com,26,3330,0.8
-UNITED_KINGDOM_UK,United Kingdom,cdn-cookieyes.com,63,3330,1.9
-UNITED_KINGDOM_UK,United Kingdom,cloudfront.net,360,3330,10.8
-UNITED_KINGDOM_UK,United Kingdom,datatables.net,32,3330,1.0
+UNITED_KINGDOM_UK,United Kingdom,googleapis.com,1554,3331,46.7
+UNITED_KINGDOM_UK,United Kingdom,googletagmanager.com,1253,3331,37.6
+UNITED_KINGDOM_UK,United Kingdom,gstatic.com,593,3331,17.8
+UNITED_KINGDOM_UK,United Kingdom,jsdelivr.net,443,3331,13.3
+UNITED_KINGDOM_UK,United Kingdom,fontawesome.com,403,3331,12.1
+UNITED_KINGDOM_UK,United Kingdom,google.com,1195,3331,35.9
+UNITED_KINGDOM_UK,United Kingdom,cloudflare.com,927,3331,27.8
+UNITED_KINGDOM_UK,United Kingdom,jquery.com,184,3331,5.5
+UNITED_KINGDOM_UK,United Kingdom,unpkg.com,344,3331,10.3
+UNITED_KINGDOM_UK,United Kingdom,bootstrapcdn.com,157,3331,4.7
+UNITED_KINGDOM_UK,United Kingdom,typekit.net,150,3331,4.5
+UNITED_KINGDOM_UK,United Kingdom,cookiebot.com,60,3331,1.8
+UNITED_KINGDOM_UK,United Kingdom,facebook.com,24,3331,0.7
+UNITED_KINGDOM_UK,United Kingdom,facebook.net,63,3331,1.9
+UNITED_KINGDOM_UK,United Kingdom,addtoany.com,38,3331,1.1
+UNITED_KINGDOM_UK,United Kingdom,amazonaws.com,138,3331,4.1
+UNITED_KINGDOM_UK,United Kingdom,arcgis.com,26,3331,0.8
+UNITED_KINGDOM_UK,United Kingdom,cdn-cookieyes.com,63,3331,1.9
+UNITED_KINGDOM_UK,United Kingdom,cloudfront.net,360,3331,10.8
+UNITED_KINGDOM_UK,United Kingdom,datatables.net,32,3331,1.0
 POLAND,Poland,googleapis.com,1479,2444,60.5
 POLAND,Poland,googletagmanager.com,669,2444,27.4
 POLAND,Poland,gstatic.com,508,2444,20.8
@@ -99,12 +99,12 @@ GREECE,Greece,arcgis.com,1,365,0.3
 GREECE,Greece,cdn-cookieyes.com,20,365,5.5
 GREECE,Greece,cloudfront.net,2,365,0.5
 GREECE,Greece,datatables.net,3,365,0.8
-SPAIN,Spain,googleapis.com,103,248,41.5
+SPAIN,Spain,googleapis.com,102,248,41.1
 SPAIN,Spain,googletagmanager.com,90,248,36.3
 SPAIN,Spain,gstatic.com,52,248,21.0
 SPAIN,Spain,jsdelivr.net,52,248,21.0
-SPAIN,Spain,fontawesome.com,32,248,12.9
-SPAIN,Spain,google.com,49,248,19.8
+SPAIN,Spain,fontawesome.com,33,248,13.3
+SPAIN,Spain,google.com,48,248,19.4
 SPAIN,Spain,cloudflare.com,61,248,24.6
 SPAIN,Spain,jquery.com,25,248,10.1
 SPAIN,Spain,unpkg.com,21,248,8.5
@@ -119,26 +119,26 @@ SPAIN,Spain,arcgis.com,4,248,1.6
 SPAIN,Spain,cdn-cookieyes.com,1,248,0.4
 SPAIN,Spain,cloudfront.net,4,248,1.6
 SPAIN,Spain,datatables.net,5,248,2.0
-SWEDEN,Sweden,googleapis.com,62,241,25.7
-SWEDEN,Sweden,googletagmanager.com,14,241,5.8
-SWEDEN,Sweden,gstatic.com,20,241,8.3
-SWEDEN,Sweden,jsdelivr.net,19,241,7.9
-SWEDEN,Sweden,fontawesome.com,8,241,3.3
-SWEDEN,Sweden,google.com,23,241,9.5
-SWEDEN,Sweden,cloudflare.com,26,241,10.8
-SWEDEN,Sweden,jquery.com,14,241,5.8
-SWEDEN,Sweden,unpkg.com,2,241,0.8
-SWEDEN,Sweden,bootstrapcdn.com,12,241,5.0
-SWEDEN,Sweden,typekit.net,10,241,4.1
-SWEDEN,Sweden,cookiebot.com,18,241,7.5
-SWEDEN,Sweden,facebook.com,1,241,0.4
-SWEDEN,Sweden,facebook.net,1,241,0.4
-SWEDEN,Sweden,addtoany.com,1,241,0.4
-SWEDEN,Sweden,amazonaws.com,3,241,1.2
-SWEDEN,Sweden,arcgis.com,0,241,0.0
-SWEDEN,Sweden,cdn-cookieyes.com,3,241,1.2
-SWEDEN,Sweden,cloudfront.net,1,241,0.4
-SWEDEN,Sweden,datatables.net,1,241,0.4
+SWEDEN,Sweden,googleapis.com,62,240,25.8
+SWEDEN,Sweden,googletagmanager.com,14,240,5.8
+SWEDEN,Sweden,gstatic.com,20,240,8.3
+SWEDEN,Sweden,jsdelivr.net,19,240,7.9
+SWEDEN,Sweden,fontawesome.com,8,240,3.3
+SWEDEN,Sweden,google.com,23,240,9.6
+SWEDEN,Sweden,cloudflare.com,27,240,11.2
+SWEDEN,Sweden,jquery.com,14,240,5.8
+SWEDEN,Sweden,unpkg.com,2,240,0.8
+SWEDEN,Sweden,bootstrapcdn.com,12,240,5.0
+SWEDEN,Sweden,typekit.net,10,240,4.2
+SWEDEN,Sweden,cookiebot.com,18,240,7.5
+SWEDEN,Sweden,facebook.com,1,240,0.4
+SWEDEN,Sweden,facebook.net,1,240,0.4
+SWEDEN,Sweden,addtoany.com,1,240,0.4
+SWEDEN,Sweden,amazonaws.com,3,240,1.2
+SWEDEN,Sweden,arcgis.com,0,240,0.0
+SWEDEN,Sweden,cdn-cookieyes.com,3,240,1.2
+SWEDEN,Sweden,cloudfront.net,1,240,0.4
+SWEDEN,Sweden,datatables.net,1,240,0.4
 GERMANY,Germany,googleapis.com,16,218,7.3
 GERMANY,Germany,googletagmanager.com,6,218,2.8
 GERMANY,Germany,gstatic.com,7,218,3.2

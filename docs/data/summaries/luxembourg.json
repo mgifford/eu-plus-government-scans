@@ -1,15 +1,15 @@
 {
   "country_code": "LUXEMBOURG",
-  "total_relationships": 2087,
+  "total_relationships": 2088,
   "total_source_domains": 39,
   "top_source_domains": [
     {
       "domain": "gouvernement.lu",
-      "count": 8948
+      "count": 9155
     },
     {
       "domain": "public.lu",
-      "count": 7074
+      "count": 7619
     },
     {
       "domain": "uni.lu",
@@ -163,51 +163,51 @@
   "top_target_domains": [
     {
       "domain": "public.lu",
-      "count": 7088
+      "count": 7442
     },
     {
       "domain": "gouvernement.lu",
-      "count": 3992
+      "count": 4165
     },
     {
       "domain": "facebook.com",
-      "count": 985
+      "count": 1002
     },
     {
       "domain": "linkedin.com",
-      "count": 902
+      "count": 921
     },
     {
       "domain": "uni.lu",
-      "count": 830
+      "count": 832
     },
     {
       "domain": "twitter.com",
-      "count": 675
+      "count": 687
     },
     {
       "domain": "bsky.app",
-      "count": 550
+      "count": 561
     },
     {
       "domain": "instagram.com",
-      "count": 513
+      "count": 527
     },
     {
       "domain": "adobedtm.com",
-      "count": 477
+      "count": 504
     },
     {
       "domain": "etat.lu",
-      "count": 385
+      "count": 391
     },
     {
       "domain": "youtube.com",
-      "count": 342
+      "count": 352
     },
     {
       "domain": "europa.eu",
-      "count": 289
+      "count": 295
     },
     {
       "domain": "googleapis.com",
@@ -243,7 +243,7 @@
     },
     {
       "domain": "cita.lu",
-      "count": 120
+      "count": 122
     },
     {
       "domain": "gstatic.com",
@@ -262,6 +262,10 @@
       "count": 86
     },
     {
+      "domain": "readspeaker.com",
+      "count": 79
+    },
+    {
       "domain": "typekit.net",
       "count": 78
     },
@@ -272,10 +276,6 @@
     {
       "domain": "schifflange.lu",
       "count": 75
-    },
-    {
-      "domain": "readspeaker.com",
-      "count": 74
     },
     {
       "domain": "cloudflare.com",
@@ -298,15 +298,19 @@
       "count": 70
     },
     {
+      "domain": "education.lu",
+      "count": 68
+    },
+    {
       "domain": "unpkg.com",
       "count": 68
     },
     {
-      "domain": "education.lu",
-      "count": 66
+      "domain": "geoportail.lu",
+      "count": 62
     },
     {
-      "domain": "geoportail.lu",
+      "domain": "guichet.lu",
       "count": 60
     },
     {
@@ -322,10 +326,6 @@
       "count": 59
     },
     {
-      "domain": "guichet.lu",
-      "count": 59
-    },
-    {
       "domain": "strassen.lu",
       "count": 57
     },
@@ -338,37 +338,37 @@
       "count": 56
     },
     {
+      "domain": "meteolux.lu",
+      "count": 55
+    },
+    {
       "domain": "petange.lu",
       "count": 52
     },
     {
-      "domain": "meteolux.lu",
-      "count": 51
+      "domain": "services-publics.lu",
+      "count": 50
     },
     {
       "domain": "chl.lu",
       "count": 48
     },
     {
-      "domain": "services-publics.lu",
+      "domain": "ilr.lu",
       "count": 48
     },
     {
       "domain": "kaltura.com",
       "count": 48
-    },
-    {
-      "domain": "ilr.lu",
-      "count": 46
     }
   ],
   "relationship_types": {
-    "editorial_link": 1165,
+    "editorial_link": 1166,
     "form_destination": 166,
     "image_or_media_dependency": 203,
     "script_dependency": 281,
     "stylesheet_dependency": 243,
     "font_or_preload_dependency": 29
   },
-  "generated_at": "2026-11-02T15:40:32.938244+00:00"
+  "generated_at": "2026-11-07T22:16:51.123697+00:00"
 }

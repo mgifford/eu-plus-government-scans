@@ -14,49 +14,49 @@
     "total_source_domains": 9,
     "file": "switzerland.json"
   },
-  "REPUBLIC_OF_CYPRUS": {
-    "total_relationships": 321866,
-    "total_source_domains": 9396,
-    "file": "republic_of_cyprus.json"
+  "LITHUANIA": {
+    "total_relationships": 533,
+    "total_source_domains": 16,
+    "file": "lithuania.json"
   },
   "AUSTRIA": {
     "total_relationships": 2987,
     "total_source_domains": 37,
     "file": "austria.json"
   },
-  "GREECE": {
-    "total_relationships": 8691,
-    "total_source_domains": 367,
-    "file": "greece.json"
-  },
-  "LITHUANIA": {
-    "total_relationships": 533,
-    "total_source_domains": 16,
-    "file": "lithuania.json"
-  },
-  "BELGIUM": {
-    "total_relationships": 3856,
-    "total_source_domains": 45,
-    "file": "belgium.json"
-  },
-  "CANADA": {
-    "total_relationships": 321866,
-    "total_source_domains": 9396,
-    "file": "canada.json"
+  "PORTUGAL": {
+    "total_relationships": 13561,
+    "total_source_domains": 388,
+    "file": "portugal.json"
   },
   "NORWAY": {
     "total_relationships": 874,
     "total_source_domains": 34,
     "file": "norway.json"
   },
-  "LATVIA": {
-    "total_relationships": 3354,
-    "total_source_domains": 145,
-    "file": "latvia.json"
+  "CZECHIA": {
+    "total_relationships": 2618,
+    "total_source_domains": 54,
+    "file": "czechia.json"
   },
-  "POLAND": {
-    "total_relationships": 62056,
-    "total_source_domains": 2502,
-    "file": "poland.json"
+  "GERMANY": {
+    "total_relationships": 21932,
+    "total_source_domains": 231,
+    "file": "germany.json"
+  },
+  "ESTONIA": {
+    "total_relationships": 1650,
+    "total_source_domains": 32,
+    "file": "estonia.json"
+  },
+  "IRELAND": {
+    "total_relationships": 2130,
+    "total_source_domains": 105,
+    "file": "ireland.json"
+  },
+  "UNITED_KINGDOM_UK": {
+    "total_relationships": 321926,
+    "total_source_domains": 9397,
+    "file": "united_kingdom_uk.json"
   }
 }
