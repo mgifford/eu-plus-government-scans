@@ -755,3 +755,21 @@ def test_result_known_service_count():
     ]
     result = ThirdPartyJsScanResult(url="https://x.gov/", is_reachable=True, scripts=scripts)
     assert result.known_service_count == 1
+
+
+def test_extract_third_party_scripts_masks_api_key() -> None:
+    """A key in a script URL must be masked before the result is stored."""
+    from src.services.third_party_js_scanner import _extract_third_party_scripts
+
+    # Built at runtime so this file holds no key-shaped literal.
+    fake_key = "AI" + "za" + "x" * 35
+    html = (
+        '<script src="https://maps.googleapis.com/maps/api/js?key=one&v=3"></script>'
+        f'<script src="https://maps.googleapis.com/maps/api/js?key={fake_key}&v=3"></script>'
+    )
+    scripts = _extract_third_party_scripts(html, "https://www.example.gov/")
+
+    # Both tags collapse to one entry once their keys are masked.
+    assert [s.src for s in scripts] == [
+        "https://maps.googleapis.com/maps/api/js?key=REDACTED&v=3"
+    ]

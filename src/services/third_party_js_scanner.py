@@ -22,6 +22,8 @@ from urllib.parse import urlparse
 import httpx
 from bs4 import BeautifulSoup
 
+from src.lib.secret_redaction import redact_url
+
 
 def _host_from_url(url: str) -> str:
     """Extract the hostname from a URL for circuit-breaker tracking."""
@@ -487,6 +489,11 @@ def _extract_third_party_scripts(html: str, page_url: str) -> List[ThirdPartyScr
         if not _is_third_party(raw_src, page_host):
             continue
 
+        # Mask API keys and tokens before the URL is stored anywhere, so the
+        # metadata database artifact never holds them.
+        raw_src = redact_url(raw_src)
+        if raw_src in seen_srcs:
+            continue
         seen_srcs.add(raw_src)
 
         try:

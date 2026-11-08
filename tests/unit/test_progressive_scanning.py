@@ -389,8 +389,7 @@ class TestIncrementalMerge:
             )
             assert len(merged) == 1
             assert merged[key].observations == 6
-            assert "https://source.gov" in merged[key].source_pages
-            assert "https://other.gov" in merged[key].source_pages
+            assert merged[key].source_pages == {"https://source.gov", "https://other.gov"}
 
     def test_merge_preserves_existing_metadata(self) -> None:
         """Merge should preserve first_seen from existing data."""
