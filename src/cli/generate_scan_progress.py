@@ -15,7 +15,7 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-from src.cli._report_common import count_toon_seed_urls
+from src.cli._report_common import LATEST_SOCIAL_SCANS_SQL, count_toon_seed_urls
 from src.lib.country_utils import country_code_to_display_name
 from src.lib.settings import load_settings
 
@@ -417,35 +417,59 @@ def _query_social_media(conn: sqlite3.Connection) -> dict[str, dict]:
 
     Includes both tier distribution and per-platform link counts so that
     a single merged table can be generated without a separate query.
-    Uses COUNT(DISTINCT CASE WHEN … THEN url END) so that each URL is
-    counted at most once per country even when it appears in multiple
-    scan batches.
+    ``total`` and the scan period cover every scan.  Reachable pages, tiers
+    and platform counts come from each page's latest successful scan
+    (:data:`LATEST_SOCIAL_SCANS_SQL`), the same rule the social media page
+    uses.  ``unreachable`` counts pages with no successful scan at all, so the
+    tier columns and ``unreachable`` add up to ``total``.
     """
     result: dict[str, dict] = {}
     for row in conn.execute(
-        """
-        SELECT country_code,
-               COUNT(DISTINCT url)                                                                                 AS total,
-               COUNT(DISTINCT CASE WHEN is_reachable = 1             THEN url ELSE NULL END)                      AS reachable,
-               COUNT(DISTINCT CASE WHEN social_tier = 'twitter_only' THEN url ELSE NULL END)                      AS twitter_only,
-               COUNT(DISTINCT CASE WHEN social_tier = 'modern_only'  THEN url ELSE NULL END)                      AS modern_only,
-               COUNT(DISTINCT CASE WHEN social_tier = 'mixed'        THEN url ELSE NULL END)                      AS mixed,
-               COUNT(DISTINCT CASE WHEN social_tier = 'no_social'    THEN url ELSE NULL END)                      AS no_social,
-               COUNT(DISTINCT CASE WHEN social_tier = 'unreachable'  THEN url ELSE NULL END)                      AS unreachable,
-               COUNT(DISTINCT CASE WHEN twitter_links  != '[]'       THEN url ELSE NULL END)                      AS has_twitter,
-               COUNT(DISTINCT CASE WHEN x_links        != '[]'       THEN url ELSE NULL END)                      AS has_x,
-               COUNT(DISTINCT CASE WHEN bluesky_links  != '[]'       THEN url ELSE NULL END)                      AS has_bluesky,
-               COUNT(DISTINCT CASE WHEN mastodon_links != '[]'       THEN url ELSE NULL END)                      AS has_mastodon,
-               MIN(scanned_at)                                                                                     AS first_scan,
-               MAX(scanned_at)                                                                                     AS last_scan
-        FROM url_social_media_results
-        GROUP BY country_code
-        ORDER BY country_code
+        f"""
+        WITH latest AS ({LATEST_SOCIAL_SCANS_SQL}),
+        scanned AS (
+            SELECT country_code,
+                   COUNT(DISTINCT url) AS total,
+                   MIN(scanned_at)     AS first_scan,
+                   MAX(scanned_at)     AS last_scan
+            FROM url_social_media_results
+            GROUP BY country_code
+        ),
+        current_state AS (
+            SELECT country_code,
+                   COUNT(DISTINCT url)                                                   AS reachable,
+                   COUNT(DISTINCT CASE WHEN social_tier = 'twitter_only' THEN url END)  AS twitter_only,
+                   COUNT(DISTINCT CASE WHEN social_tier = 'modern_only'  THEN url END)  AS modern_only,
+                   COUNT(DISTINCT CASE WHEN social_tier = 'mixed'        THEN url END)  AS mixed,
+                   COUNT(DISTINCT CASE WHEN social_tier = 'no_social'    THEN url END)  AS no_social,
+                   COUNT(DISTINCT CASE WHEN twitter_links  != '[]'       THEN url END)  AS has_twitter,
+                   COUNT(DISTINCT CASE WHEN x_links        != '[]'       THEN url END)  AS has_x,
+                   COUNT(DISTINCT CASE WHEN bluesky_links  != '[]'       THEN url END)  AS has_bluesky,
+                   COUNT(DISTINCT CASE WHEN mastodon_links != '[]'       THEN url END)  AS has_mastodon
+            FROM latest
+            GROUP BY country_code
+        )
+        SELECT s.country_code,
+               s.total,
+               COALESCE(c.reachable, 0)           AS reachable,
+               COALESCE(c.twitter_only, 0)        AS twitter_only,
+               COALESCE(c.modern_only, 0)         AS modern_only,
+               COALESCE(c.mixed, 0)               AS mixed,
+               COALESCE(c.no_social, 0)           AS no_social,
+               s.total - COALESCE(c.reachable, 0) AS unreachable,
+               COALESCE(c.has_twitter, 0)         AS has_twitter,
+               COALESCE(c.has_x, 0)               AS has_x,
+               COALESCE(c.has_bluesky, 0)         AS has_bluesky,
+               COALESCE(c.has_mastodon, 0)        AS has_mastodon,
+               s.first_scan,
+               s.last_scan
+        FROM scanned AS s
+        LEFT JOIN current_state AS c ON c.country_code = s.country_code
+        ORDER BY s.country_code
         """
     ):
         result[row["country_code"]] = dict(row)
     return result
-
 
 def _query_combined_reachability(conn: sqlite3.Connection) -> dict[str, dict]:
     """Return per-country counts of URLs confirmed reachable by *any* scan.
@@ -757,8 +781,9 @@ def _write_social_media_table(
     f.write(
         "> **Tier columns** (Twitter-only / Modern / Mixed / No Social) classify each "
         "page by its overall social media presence. **Platform columns** (Twitter / X / "
-        "Bluesky / Mastodon) count pages with at least one link to that platform — "
-        "a page may appear in more than one platform column.\n\n"
+        "Bluesky / Mastodon) count pages with at least one link to that platform; "
+        "a page may appear in more than one platform column. Both use each page's most "
+        "recent successful scan, so a page that removed a link no longer counts.\n\n"
     )
     f.write(
         "> Hover or focus any non-zero platform count to preview matching pages. "

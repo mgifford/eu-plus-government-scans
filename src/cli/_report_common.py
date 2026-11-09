@@ -13,6 +13,27 @@ from pathlib import Path
 
 from src.lib.country_utils import country_filename_to_code, iter_seed_toon_files
 
+# Each page's most recent *successful* social media scan, one row per page.
+# Social figures describe pages as they are now, so a page that removed its
+# Twitter link stops counting as a Twitter page.  Only successful scans count:
+# a failed fetch or a parse error is not evidence that a page dropped a
+# platform, so the page keeps the state of its last successful scan.  Ties on
+# ``scanned_at`` are broken by ``scan_id`` so the choice is stable.  Use it as
+# a subquery or CTE body: ``WITH latest AS ({LATEST_SOCIAL_SCANS_SQL}) ...``.
+LATEST_SOCIAL_SCANS_SQL = """
+    SELECT *
+    FROM (
+        SELECT r.*,
+               ROW_NUMBER() OVER (
+                   PARTITION BY r.country_code, r.url
+                   ORDER BY r.scanned_at DESC, r.scan_id DESC
+               ) AS scan_rank
+        FROM url_social_media_results AS r
+        WHERE r.is_reachable = 1 AND r.error_message IS NULL
+    )
+    WHERE scan_rank = 1
+"""
+
 
 def count_toon_seed_urls(toon_seeds_dir: Path) -> dict[str, int]:
     """Return a mapping of country_code to page_count from the seed files.

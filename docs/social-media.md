@@ -12,6 +12,12 @@ layout: page
 > TikTok and YouTube counts stay incomplete until every page has been
 > rescanned, because older scans kept only the TikTok and YouTube links that
 > used `/@name`.
+>
+> **Counting change, November 2026.** Figures used to count a page under a
+> platform if any scan had ever found a link, so a government that left a
+> platform still counted as using it. Each page is now counted as of its most
+> recent successful scan. A scan that fails, or returns an error page such as
+> a 404, is not treated as the page dropping its links.
 
 <!-- SOCIAL_MEDIA_STATS_START -->
 
