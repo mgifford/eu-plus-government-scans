@@ -19,10 +19,15 @@ on:
     types:
       - completed
 
-# Only one report-generation job at a time; newer runs cancel older queued ones.
+# Only one report-generation run at a time.  A new trigger waits for the active
+# run to finish instead of cancelling it; GitHub keeps at most one pending run
+# per group and a newer trigger replaces it, so the queue cannot grow and the
+# run that starts next always sees the newest data.  With cancel-in-progress
+# the five workflow_run triggers, which can arrive minutes apart, kept killing
+# runs before they could finish.  See WORKFLOW_ORCHESTRATION_AUDIT.md 3.6.
 concurrency:
   group: scan-progress-report
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
@@ -31,7 +36,11 @@ jobs:
   generate-progress-report:
     if: ${{ github.event_name != 'workflow_run' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main') }}
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    # The technology-Lighthouse correlation step grows with every scan cycle
+    # (13.2 min of a 14.9 min job on 2026-10-18, the last run to finish).  45
+    # minutes is headroom while a fix for that step is decided; it is not a
+    # target.  See WORKFLOW_ORCHESTRATION_AUDIT.md 3.6.
+    timeout-minutes: 45
     permissions:
       contents: write
       actions: read
