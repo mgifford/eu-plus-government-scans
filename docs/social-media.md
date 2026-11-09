@@ -157,8 +157,8 @@ The social media scanner fetches each government page and inspects the HTML for
 links to known social platforms. Results are stored in the metadata database
 and published to this site via the [Scan Progress Report](scan-progress.md).
 
-Scans run **automatically every 3 hours** via GitHub Actions so that the full
-set of ~80,000 URLs across 31 countries can be covered gradually without
+Scans run **automatically every 8 hours** via GitHub Actions so that the full
+set of ~88,000 URLs across 32 countries can be covered gradually without
 overloading government servers.
 
 ---
@@ -260,25 +260,25 @@ python3 -m src.cli.scan_social_media --all --max-runtime 110 --rate-limit 1.0
 
 ### Annotated TOON file (`*_social.toon`)
 
-Each page entry gains a `social_media` field:
+Each scanned page entry gains a `social_media` field. A page that could not be
+fetched gets a `social_media_error` field holding the error message instead.
 
 ```json
 {
   "url": "https://example.gov/",
   "is_root_page": true,
   "social_media": {
-    "is_reachable": true,
-    "social_tier": "mixed",
-    "twitter_links": ["https://twitter.com/example_gov"],
-    "x_links": [],
-    "facebook_links": [],
-    "linkedin_links": [],
-    "tiktok_links": [],
-    "youtube_links": [],
-    "bluesky_links": ["https://bsky.app/profile/example.bsky.social"],
-    "blacksky_links": [],
-    "gander_links": [],
-    "mastodon_links": []
+    "tier": "mixed",
+    "twitter": ["https://twitter.com/example_gov"],
+    "x": [],
+    "bluesky": ["https://bsky.app/profile/example.bsky.social"],
+    "mastodon": [],
+    "facebook": [],
+    "linkedin": [],
+    "tiktok": [],
+    "youtube": [],
+    "blacksky": [],
+    "gander": []
   }
 }
 ```
@@ -308,12 +308,12 @@ Each page entry gains a `social_media` field:
 
 ## Countries Covered
 
-Scans cover all 27 EU member states plus 4 allied nations:
+Scans cover all 27 EU member states plus 5 allied nations:
 
 | Region | Countries |
 |--------|----------|
 | EU member states | Austria, Belgium, Bulgaria, Croatia, Czechia, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, Netherlands, Poland, Portugal, Republic of Cyprus, Romania, Slovakia, Slovenia, Spain, Sweden |
-| Allied nations | Iceland, Norway, Switzerland, United Kingdom |
+| Allied nations | Canada, Iceland, Norway, Switzerland, United Kingdom |
 
 See also the **[Government Domains](domains.md)** page for a full listing of
 all domains tracked per country.
@@ -324,7 +324,7 @@ all domains tracked per country.
 
 ```mermaid
 flowchart TD
-    A["scan-social-media.yml\n(GitHub Actions — every 3 hours)"]
+    A["scan-social-media.yml\n(GitHub Actions, every 8 hours)"]
     A --> B["scan_social_media.py (CLI)"]
     B --> C["SocialMediaScannerJob.scan_country()"]
     C --> D["SocialMediaScanner.scan_urls_batch()"]
