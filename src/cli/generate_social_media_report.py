@@ -19,7 +19,7 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-from src.cli._report_common import count_toon_seed_urls
+from src.cli._report_common import LATEST_SOCIAL_SCANS_SQL, count_toon_seed_urls
 from src.lib.country_utils import country_code_to_display_name
 from src.lib.settings import load_settings
 from src.services.social_media_scanner import LEGACY_PLATFORMS, MODERN_PLATFORMS
@@ -47,33 +47,40 @@ _STATS_MARKER_END = "<!-- SOCIAL_MEDIA_STATS_END -->"
 # Database helpers
 # ---------------------------------------------------------------------------
 
+def _platform_count_metrics() -> list[tuple[str, str]]:
+    """Return ``(SQL expression, alias)`` pairs counting pages per platform.
+
+    Built from :data:`_PLATFORM_LINK_COLUMNS` so every query counts the same
+    platforms under the same ``<platform>_pages`` names.
+    """
+    return [
+        (f"COUNT(DISTINCT CASE WHEN {column} != '[]' THEN url END)", f"{platform}_pages")
+        for platform, column in _PLATFORM_LINK_COLUMNS.items()
+    ]
+
+
 def _query_summary(conn: sqlite3.Connection) -> dict:
     """Return aggregate social media scan totals from the database.
 
-    Each URL may appear in multiple scan batches (one row per (url, scan_id)).
-    All per-URL counts use COUNT(DISTINCT CASE WHEN … THEN url END) so that a
-    URL is counted at most once regardless of how many scan batches it appears
-    in.
+    Batch, scanned-page and date figures cover every scan.  Reachable pages
+    and platform counts come from each page's latest successful scan
+    (:data:`LATEST_SOCIAL_SCANS_SQL`), so a page that removed a platform link
+    no longer counts towards that platform.
     """
+    platform_sql = ",\n            ".join(
+        f"{expr} AS {alias}" for expr, alias in _platform_count_metrics()
+    )
     row = conn.execute(
-        """
+        f"""
+        WITH latest AS ({LATEST_SOCIAL_SCANS_SQL})
         SELECT
-            COUNT(DISTINCT scan_id)                                                     AS total_batches,
-            COUNT(DISTINCT url)                                                         AS total_scanned,
-            COUNT(DISTINCT CASE WHEN is_reachable = 1      THEN url ELSE NULL END)     AS total_reachable,
-            COUNT(DISTINCT CASE WHEN twitter_links != '[]' THEN url ELSE NULL END)     AS twitter_pages,
-            COUNT(DISTINCT CASE WHEN x_links       != '[]' THEN url ELSE NULL END)     AS x_pages,
-            COUNT(DISTINCT CASE WHEN bluesky_links  != '[]' THEN url ELSE NULL END)    AS bluesky_pages,
-            COUNT(DISTINCT CASE WHEN mastodon_links != '[]' THEN url ELSE NULL END)    AS mastodon_pages,
-            COUNT(DISTINCT CASE WHEN facebook_links != '[]' THEN url ELSE NULL END)  AS facebook_pages,
-            COUNT(DISTINCT CASE WHEN linkedin_links != '[]' THEN url ELSE NULL END)  AS linkedin_pages,
-            COUNT(DISTINCT CASE WHEN tiktok_links   != '[]' THEN url ELSE NULL END)  AS tiktok_pages,
-            COUNT(DISTINCT CASE WHEN youtube_links  != '[]' THEN url ELSE NULL END)  AS youtube_pages,
-            COUNT(DISTINCT CASE WHEN blacksky_links != '[]' THEN url ELSE NULL END)  AS blacksky_pages,
-            COUNT(DISTINCT CASE WHEN gander_links   != '[]' THEN url ELSE NULL END)  AS gander_pages,
-            MIN(scanned_at)                                                             AS first_scan,
-            MAX(scanned_at)                                                             AS last_scan
-        FROM url_social_media_results
+            (SELECT COUNT(DISTINCT scan_id) FROM url_social_media_results) AS total_batches,
+            (SELECT COUNT(DISTINCT url) FROM url_social_media_results)     AS total_scanned,
+            COUNT(DISTINCT url)                                            AS total_reachable,
+            {platform_sql},
+            (SELECT MIN(scanned_at) FROM url_social_media_results)         AS first_scan,
+            (SELECT MAX(scanned_at) FROM url_social_media_results)         AS last_scan
+        FROM latest
         """
     ).fetchone()
     if row is None:
@@ -163,16 +170,15 @@ def _query_platform_drilldowns_by_country(
     """Return per-country platform drilldowns for interactive table cells.
 
     Each platform record contains the scanned page URL and the distinct
-    detected platform-profile URLs found on that page. Pages are deduplicated
-    per country and platform across scan batches so the drilldowns stay aligned
-    with the report's ``COUNT(DISTINCT url)`` totals.
+    detected platform-profile URLs found on that page.  Only each page's latest
+    successful scan is read, so the drilldowns match the report's totals.
     """
     column_sql = ", ".join(_PLATFORM_LINK_COLUMNS.values())
     rows = conn.execute(
         f"""
         SELECT country_code, url, {column_sql}
-        FROM url_social_media_results
-        ORDER BY country_code, url, scanned_at DESC
+        FROM ({LATEST_SOCIAL_SCANS_SQL})
+        ORDER BY country_code, url
         """
     ).fetchall()
 
@@ -210,85 +216,70 @@ def _query_platform_drilldowns_by_country(
     return result
 
 
+def _metric_record(row: sqlite3.Row) -> dict[str, object]:
+    """Return the drilldown record for one stored scan row."""
+    return {
+        "page_url": row["url"],
+        "is_reachable": bool(row["is_reachable"]),
+        "social_tier": row["social_tier"] or "",
+        "links_by_platform": {
+            platform: _parse_link_list(row[column])
+            for platform, column in _PLATFORM_LINK_COLUMNS.items()
+        },
+        "last_scanned": row["scanned_at"] or "",
+    }
+
+
+# Stored tier value -> drilldown metric key used by the country table.
+_TIER_METRICS = {
+    "no_social": "no_social",
+    "twitter_only": "legacy_only",
+    "modern_only": "modern",
+    "mixed": "mixed",
+}
+
+
 def _query_metric_drilldowns_by_country(
     conn: sqlite3.Connection,
 ) -> dict[str, dict[str, list[dict[str, object]]]]:
-    """Return per-country drilldowns for social country-table metrics."""
+    """Return per-country drilldowns for social country-table metrics.
+
+    ``scanned`` lists every page with its most recent attempt.  ``reachable``
+    and the tier lists use each page's latest successful scan, matching the
+    counts from :func:`_query_by_country`.
+    """
     column_sql = ", ".join(_PLATFORM_LINK_COLUMNS.values())
-    rows = conn.execute(
-        f"""
-        SELECT
-            country_code,
-            url,
-            is_reachable,
-            social_tier,
-            scanned_at,
-            {column_sql}
-        FROM url_social_media_results
-        ORDER BY country_code, url, scanned_at DESC
-        """
+    select_sql = f"country_code, url, is_reachable, social_tier, scanned_at, {column_sql}"
+    attempts = conn.execute(
+        f"SELECT {select_sql} FROM url_social_media_results "
+        "ORDER BY country_code, url, scanned_at DESC"
+    ).fetchall()
+    latest = conn.execute(
+        f"SELECT {select_sql} FROM ({LATEST_SOCIAL_SCANS_SQL}) ORDER BY country_code, url"
     ).fetchall()
 
     grouped: dict[str, dict[str, list[dict[str, object]]]] = {}
-    seen_by_metric: dict[str, set[tuple[str, str]]] = {
-        "scanned": set(),
-        "reachable": set(),
-        "no_social": set(),
-        "legacy_only": set(),
-        "modern": set(),
-        "mixed": set(),
-    }
 
-    for row in rows:
-        country_code = row["country_code"]
-        page_url = row["url"]
-        key = (country_code, page_url)
-        country_bucket = grouped.setdefault(
+    def _bucket(country_code: str) -> dict[str, list[dict[str, object]]]:
+        return grouped.setdefault(
             country_code,
-            {
-                "scanned": [],
-                "reachable": [],
-                "no_social": [],
-                "legacy_only": [],
-                "modern": [],
-                "mixed": [],
-            },
+            {key: [] for key in ("scanned", "reachable", *_TIER_METRICS.values())},
         )
-        links_by_platform = {
-            platform: _parse_link_list(row[column])
-            for platform, column in _PLATFORM_LINK_COLUMNS.items()
-        }
-        record = {
-            "page_url": page_url,
-            "is_reachable": bool(row["is_reachable"]),
-            "social_tier": row["social_tier"] or "",
-            "links_by_platform": links_by_platform,
-            "last_scanned": row["scanned_at"] or "",
-        }
 
-        if key not in seen_by_metric["scanned"]:
-            country_bucket["scanned"].append(record)
-            seen_by_metric["scanned"].add(key)
+    seen: set[tuple[str, str]] = set()
+    for row in attempts:
+        key = (row["country_code"], row["url"])
+        if key not in seen:
+            seen.add(key)
+            _bucket(row["country_code"])["scanned"].append(_metric_record(row))
 
-        if row["is_reachable"] and key not in seen_by_metric["reachable"]:
-            country_bucket["reachable"].append(record)
-            seen_by_metric["reachable"].add(key)
-
-        if row["social_tier"] == "no_social" and key not in seen_by_metric["no_social"]:
-            country_bucket["no_social"].append(record)
-            seen_by_metric["no_social"].add(key)
-
-        if row["social_tier"] == "twitter_only" and key not in seen_by_metric["legacy_only"]:
-            country_bucket["legacy_only"].append(record)
-            seen_by_metric["legacy_only"].add(key)
-
-        if row["social_tier"] == "modern_only" and key not in seen_by_metric["modern"]:
-            country_bucket["modern"].append(record)
-            seen_by_metric["modern"].add(key)
-
-        if row["social_tier"] == "mixed" and key not in seen_by_metric["mixed"]:
-            country_bucket["mixed"].append(record)
-            seen_by_metric["mixed"].add(key)
+    for row in latest:
+        country_bucket = _bucket(row["country_code"])
+        record = _metric_record(row)
+        country_bucket["reachable"].append(record)
+        metric = _TIER_METRICS.get(row["social_tier"])
+        if metric is not None:
+            country_bucket[metric].append(record)
 
     return grouped
 
@@ -296,38 +287,50 @@ def _query_metric_drilldowns_by_country(
 def _query_by_country(conn: sqlite3.Connection) -> list[dict]:
     """Return per-country social media platform totals with tier breakdown.
 
-    Uses COUNT(DISTINCT CASE WHEN … THEN url END) so that each URL is counted
-    at most once per country, even when a URL appears in multiple scan batches.
-    Includes both per-platform link counts and social-tier distribution for
-    use in the per-country tables on the social media stats page.
+    ``total_scanned`` and the scan period cover every scan of the country.
+    Reachable pages, platform counts, tiers and the legacy / modern exposure
+    counts come from each page's latest successful scan, so each reachable
+    page is counted exactly once and a page that removed a platform link no
+    longer counts towards it.
     """
+    metrics = [("COUNT(DISTINCT url)", "reachable"), *_platform_count_metrics()]
+    metrics += [
+        (f"COUNT(DISTINCT CASE WHEN social_tier = '{tier}' THEN url END)", tier)
+        for tier in _TIER_METRICS
+    ]
+    metrics += [
+        (f"COUNT(DISTINCT CASE WHEN ({_ANY_LEGACY_SQL}) THEN url END)", "has_any_legacy"),
+        (f"COUNT(DISTINCT CASE WHEN ({_ANY_MODERN_SQL}) THEN url END)", "has_any_modern"),
+    ]
+    inner_sql = ",\n                   ".join(f"{expr} AS {alias}" for expr, alias in metrics)
+    outer_sql = ",\n               ".join(
+        f"COALESCE(c.{alias}, 0) AS {alias}" for _, alias in metrics
+    )
     rows = conn.execute(
         f"""
-        SELECT
-            country_code,
-            COUNT(DISTINCT url)                                                                                    AS total_scanned,
-            COUNT(DISTINCT CASE WHEN is_reachable = 1               THEN url ELSE NULL END)                        AS reachable,
-            COUNT(DISTINCT CASE WHEN twitter_links != '[]'          THEN url ELSE NULL END)                        AS twitter_pages,
-            COUNT(DISTINCT CASE WHEN x_links       != '[]'          THEN url ELSE NULL END)                        AS x_pages,
-            COUNT(DISTINCT CASE WHEN bluesky_links  != '[]'         THEN url ELSE NULL END)                        AS bluesky_pages,
-            COUNT(DISTINCT CASE WHEN mastodon_links != '[]'         THEN url ELSE NULL END)                        AS mastodon_pages,
-            COUNT(DISTINCT CASE WHEN facebook_links != '[]'         THEN url ELSE NULL END)                        AS facebook_pages,
-            COUNT(DISTINCT CASE WHEN linkedin_links != '[]'         THEN url ELSE NULL END)                        AS linkedin_pages,
-            COUNT(DISTINCT CASE WHEN tiktok_links   != '[]'         THEN url ELSE NULL END)                        AS tiktok_pages,
-            COUNT(DISTINCT CASE WHEN youtube_links  != '[]'         THEN url ELSE NULL END)                        AS youtube_pages,
-            COUNT(DISTINCT CASE WHEN blacksky_links != '[]'         THEN url ELSE NULL END)                        AS blacksky_pages,
-            COUNT(DISTINCT CASE WHEN gander_links   != '[]'         THEN url ELSE NULL END)                        AS gander_pages,
-            COUNT(DISTINCT CASE WHEN social_tier = 'twitter_only'   THEN url ELSE NULL END)                        AS twitter_only,
-            COUNT(DISTINCT CASE WHEN social_tier = 'modern_only'    THEN url ELSE NULL END)                        AS modern_only,
-            COUNT(DISTINCT CASE WHEN social_tier = 'mixed'          THEN url ELSE NULL END)                        AS mixed,
-            COUNT(DISTINCT CASE WHEN social_tier = 'no_social'      THEN url ELSE NULL END)                        AS no_social,
-            COUNT(DISTINCT CASE WHEN ({_ANY_LEGACY_SQL}) THEN url ELSE NULL END)                                  AS has_any_legacy,
-            COUNT(DISTINCT CASE WHEN ({_ANY_MODERN_SQL}) THEN url ELSE NULL END)                                  AS has_any_modern,
-            MIN(scanned_at)                                                                                         AS first_scan,
-            MAX(scanned_at)                                                                                         AS last_scan
-        FROM url_social_media_results
-        GROUP BY country_code
-        ORDER BY country_code
+        WITH latest AS ({LATEST_SOCIAL_SCANS_SQL}),
+        scanned AS (
+            SELECT country_code,
+                   COUNT(DISTINCT url) AS total_scanned,
+                   MIN(scanned_at)     AS first_scan,
+                   MAX(scanned_at)     AS last_scan
+            FROM url_social_media_results
+            GROUP BY country_code
+        ),
+        current_state AS (
+            SELECT country_code,
+                   {inner_sql}
+            FROM latest
+            GROUP BY country_code
+        )
+        SELECT s.country_code,
+               s.total_scanned,
+               {outer_sql},
+               s.first_scan,
+               s.last_scan
+        FROM scanned AS s
+        LEFT JOIN current_state AS c ON c.country_code = s.country_code
+        ORDER BY s.country_code
         """
     ).fetchall()
     return [dict(r) for r in rows]
@@ -757,8 +760,11 @@ def _build_stats_block(
             "**Sov. Score**: Digital Sovereignty Score — % of reachable pages with "
             "no social media or modern-only social presence. "
             "Tier columns classify each page by its overall social media presence; "
-            "platform columns count pages with at least one link to that platform — "
-            "a page may appear in more than one platform column.",
+            "platform columns count pages with at least one link to that platform, "
+            "so a page may appear in more than one platform column. "
+            "Both describe each page as of its most recent successful scan: a page "
+            "that removed a link no longer counts, and a failed scan leaves the "
+            "page as it was last seen.",
             "",
             "| Country | Scanned | Available | Reachable | Sov. Score | No Social | Legacy-only |"
             " Twitter | X | Facebook | LinkedIn | TikTok | YouTube | Modern | Mixed |"

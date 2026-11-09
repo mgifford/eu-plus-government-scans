@@ -447,6 +447,19 @@ class SocialMediaScanner:
             result.social_tier = _classify_tier(result)
             return result
 
+        # An error page is not the page itself.  Recording it as reachable
+        # would make a page that started returning 404 look as if it had
+        # dropped every social link.
+        if response.status_code >= 400:
+            result = SocialMediaScanResult(
+                url=url,
+                is_reachable=False,
+                error_message=f"HTTP {response.status_code}",
+                scanned_at=scanned_at,
+            )
+            result.social_tier = _classify_tier(result)
+            return result
+
         return self.scan_html(url, html, scanned_at=scanned_at)
 
     async def scan_urls_batch(
