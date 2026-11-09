@@ -69,12 +69,14 @@ def _stub_gh(tmp_path: Path, *, api_lines: int = LISTING_LINES,
     return bindir
 
 
-def _run(tmp_path: Path, bindir: Path) -> subprocess.CompletedProcess:
+def _run(tmp_path: Path, bindir: Path, **extra_env: str) -> subprocess.CompletedProcess:
     """Run the script with the stub on PATH."""
     env = dict(os.environ)
     env["PATH"] = f"{bindir}{os.pathsep}{env['PATH']}"
     env["GITHUB_REPOSITORY"] = "owner/repo"
     env["FETCH_ARTIFACT_ATTEMPTS"] = "1"
+    env.pop("FETCH_ARTIFACT_NAMES", None)
+    env.update(extra_env)
     return subprocess.run(
         ["bash", str(SCRIPT), str(tmp_path / "dest")],
         capture_output=True, text=True, env=env,
@@ -139,3 +141,22 @@ class TestFailureHandling:
 
         assert result.returncode == 0
         assert "none published yet" in result.stdout
+
+
+class TestNamedSubset:
+    """A read-only job can fetch just the artifacts it needs."""
+
+    def test_only_the_named_artifacts_are_fetched(self, tmp_path: Path) -> None:
+        wanted = "accessibility-metadata social-media-metadata"
+        result = _run(tmp_path, _stub_gh(tmp_path, api_lines=1), FETCH_ARTIFACT_NAMES=wanted)
+
+        assert result.returncode == 0, result.stderr
+        assert result.stdout.count("from run ") == 2
+        assert sorted(p.name for p in (tmp_path / "dest").iterdir()) == wanted.split()
+
+    def test_an_unknown_name_aborts(self, tmp_path: Path) -> None:
+        result = _run(tmp_path, _stub_gh(tmp_path, api_lines=1),
+                      FETCH_ARTIFACT_NAMES="social-media-metdata")
+
+        assert result.returncode == 1
+        assert "Unknown artifact name" in result.stderr
