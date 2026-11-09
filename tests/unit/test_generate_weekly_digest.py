@@ -30,25 +30,27 @@ def _db(tmp_path: Path) -> Path:
 
 
 def _statement(conn: sqlite3.Connection, url: str, country: str, day: str,
-               has: bool, links: list[str] | None = None, reachable: bool = True) -> None:
+               has: bool, links: list[str] | None = None, reachable: bool = True,
+               error: str | None = None) -> None:
     conn.execute(
         "INSERT INTO url_accessibility_results (url, country_code, scan_id, is_reachable, "
-        "has_statement, statement_links, scanned_at) VALUES (?, ?, ?, ?, ?, ?, ?)",
+        "has_statement, statement_links, error_message, scanned_at) "
+        "VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
         (url, country, f"scan-{day}", int(reachable), int(has),
-         json.dumps(links or []), f"{day}T10:00:00.000000+00:00"),
+         json.dumps(links or []), error, f"{day}T10:00:00.000000+00:00"),
     )
 
 
 def _social(conn: sqlite3.Connection, url: str, country: str, day: str,
-            version: int = 3, **links: list[str]) -> None:
+            version: int = 3, error: str | None = None, **links: list[str]) -> None:
     columns = {f"{name}_links": json.dumps(value) for name, value in links.items()}
     names = ", ".join(columns)
     marks = ", ".join("?" for _ in columns)
     conn.execute(
         "INSERT INTO url_social_media_results (url, country_code, scan_id, is_reachable, "
-        f"scanned_at, platforms_version{', ' + names if names else ''}) "
-        f"VALUES (?, ?, ?, 1, ?, ?{', ' + marks if marks else ''})",
-        (url, country, f"scan-{day}", f"{day}T10:00:00.000000+00:00", version,
+        f"scanned_at, platforms_version, error_message{', ' + names if names else ''}) "
+        f"VALUES (?, ?, ?, 1, ?, ?, ?{', ' + marks if marks else ''})",
+        (url, country, f"scan-{day}", f"{day}T10:00:00.000000+00:00", version, error,
          *columns.values()),
     )
 
@@ -201,6 +203,25 @@ class TestStatementSection:
         assert section.post is None
         assert "only 3 pages" in (section.reason or "")
 
+    def test_a_parse_error_is_not_evidence_of_a_lost_statement(self, tmp_path: Path) -> None:
+        """The scanner stores a page it fetched but could not parse as reachable with no links."""
+        db = _db(tmp_path)
+        conn = sqlite3.connect(db)
+        for day in ("2026-09-01", "2026-10-01"):
+            _statement(conn, "https://kept.example.fr/", "FRANCE", day, True)
+            _statement(conn, "https://new.example.fr/", "FRANCE", day, False)
+        _statement(conn, "https://kept.example.fr/", "FRANCE", "2026-11-08", False,
+                   error="Parse error: bad markup")
+        _statement(conn, "https://new.example.fr/", "FRANCE", "2026-11-08", True)
+        conn.commit()
+        conn.close()
+
+        evidence = self._section(db).evidence
+
+        assert [r["url"] for r in evidence["gained"]["statement"]] == ["https://new.example.fr/"]
+        assert evidence["lost"]["statement"] == []
+        assert evidence["pages_rechecked"] == 1
+
 
 class TestSocialSection:
     def _section(self, db: Path) -> digest.Section:
@@ -248,6 +269,26 @@ class TestSocialSection:
 
         assert section.post is None
         assert "version 3" in (section.reason or "")
+
+    def test_a_parse_error_is_not_evidence_of_a_lost_link(self, tmp_path: Path) -> None:
+        """Matches the social media report, which counts only scans without an error."""
+        db = _db(tmp_path)
+        conn = sqlite3.connect(db)
+        _social(conn, "https://kept.example.de/", "GERMANY", "2026-10-10",
+                mastodon=["https://social.example.de/@kept"])
+        _social(conn, "https://kept.example.de/", "GERMANY", "2026-11-08",
+                error="Parse error: bad markup")
+        _social(conn, "https://new.example.de/", "GERMANY", "2026-10-10")
+        _social(conn, "https://new.example.de/", "GERMANY", "2026-11-08",
+                mastodon=["https://social.example.de/@new"])
+        conn.commit()
+        conn.close()
+
+        evidence = self._section(db).evidence
+
+        assert [r["url"] for r in evidence["gained"]["mastodon"]] == ["https://new.example.de/"]
+        assert evidence["lost"]["mastodon"] == []
+        assert evidence["pages_rechecked"] == 1
 
 
 class TestMain:

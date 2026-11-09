@@ -136,7 +136,7 @@ class Week:
 
 @dataclass(frozen=True, slots=True)
 class Scan:
-    """One reachable scan of a page, reduced to what the digest compares.
+    """One successful scan of a page, reduced to what the digest compares.
 
     Attributes:
         scanned_at: When the scan ran.
@@ -238,7 +238,11 @@ def _sorted_history(history: dict[str, list[Scan]]) -> dict[str, list[Scan]]:
 
 
 def load_statement_history(conn: sqlite3.Connection, before: datetime) -> dict[str, list[Scan]]:
-    """Load every reachable accessibility-statement scan made before *before*.
+    """Load every usable accessibility-statement scan made before *before*.
+
+    A scan is usable when the page was reachable and parsed without error.
+    The scanner stores a page it fetched but could not parse as reachable with
+    no links, which would otherwise read as a statement link disappearing.
 
     Args:
         conn: Database holding ``url_accessibility_results``.
@@ -252,7 +256,7 @@ def load_statement_history(conn: sqlite3.Connection, before: datetime) -> dict[s
     history: dict[str, list[Scan]] = defaultdict(list)
     rows = conn.execute(
         "SELECT url, country_code, scanned_at, has_statement, statement_links "
-        "FROM url_accessibility_results WHERE is_reachable = 1"
+        "FROM url_accessibility_results WHERE is_reachable = 1 AND error_message IS NULL"
     )
     for url, country, stamp, has_statement, links in rows:
         moment = parse_timestamp(stamp)
@@ -265,7 +269,12 @@ def load_statement_history(conn: sqlite3.Connection, before: datetime) -> dict[s
 
 
 def load_social_history(conn: sqlite3.Connection, before: datetime) -> dict[str, list[Scan]]:
-    """Load every reachable social scan made with detection version 3 or later.
+    """Load every usable social scan made with detection version 3 or later.
+
+    Usable means reachable and parsed without error, the rule the social media
+    report applies (``LATEST_SOCIAL_SCANS_SQL`` in ``_report_common``).  A parse
+    error is stored as reachable with no links, which would otherwise read as
+    a page dropping its links.
 
     Args:
         conn: Database holding ``url_social_media_results``.
@@ -284,7 +293,7 @@ def load_social_history(conn: sqlite3.Connection, before: datetime) -> dict[str,
     rows = conn.execute(
         f"SELECT url, country_code, scanned_at, {selected} "
         "FROM url_social_media_results "
-        "WHERE is_reachable = 1 AND platforms_version >= ?",
+        "WHERE is_reachable = 1 AND error_message IS NULL AND platforms_version >= ?",
         (MIN_SOCIAL_PLATFORMS_VERSION,),
     )
     history: dict[str, list[Scan]] = defaultdict(list)
@@ -640,9 +649,10 @@ def social_section(conn: sqlite3.Connection, week: Week, evidence_url: str) -> S
             "min_platforms_version": MIN_SOCIAL_PLATFORMS_VERSION,
         },
         "rule": (
-            "A page gained a platform group when its latest reachable scan links to it "
-            "and no earlier reachable scan (detection version 3 or later) did; it lost "
-            "one when every earlier such scan linked to it and the latest does not."
+            "A page gained a platform group when its latest successful scan (reachable "
+            "and parsed without error) links to it and no earlier successful scan "
+            "(detection version 3 or later) did; it lost one when every earlier such "
+            "scan linked to it and the latest does not."
         ),
         "empty": (
             "no page has been scanned with social detection version 3 yet; older "
@@ -660,9 +670,10 @@ def statement_section(conn: sqlite3.Connection, week: Week, evidence_url: str) -
         "min_prior": STATEMENT_MIN_PRIOR_SCANS,
         "source": {"artifact": "accessibility-metadata", "table": "url_accessibility_results"},
         "rule": (
-            "A page gained a statement when its latest reachable scan found an "
-            f"accessibility statement link and at least {STATEMENT_MIN_PRIOR_SCANS} "
-            "earlier reachable scans all found none; it lost one when all of those "
+            "A page gained a statement when its latest successful scan (reachable and "
+            "parsed without error) found an accessibility statement link and at least "
+            f"{STATEMENT_MIN_PRIOR_SCANS} earlier successful scans all found none; it "
+            "lost one when all of those "
             "earlier scans found one and the latest does not."
         ),
         "empty": "there are no accessibility statement scans",
