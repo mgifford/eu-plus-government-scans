@@ -22,6 +22,13 @@ from pathlib import Path
 from src.cli._report_common import count_toon_seed_urls
 from src.lib.country_utils import country_code_to_display_name
 from src.lib.settings import load_settings
+from src.services.social_media_scanner import LEGACY_PLATFORMS, MODERN_PLATFORMS
+
+# SQL conditions for "page links to at least one legacy / modern platform",
+# built from the scanner's own platform lists so the two cannot drift apart.
+# Column names come from hardcoded tuples, never from input.
+_ANY_LEGACY_SQL = " OR ".join(f"{p}_links != '[]'" for p in LEGACY_PLATFORMS)
+_ANY_MODERN_SQL = " OR ".join(f"{p}_links != '[]'" for p in MODERN_PLATFORMS)
 
 
 # ---------------------------------------------------------------------------
@@ -60,6 +67,10 @@ def _query_summary(conn: sqlite3.Connection) -> dict:
             COUNT(DISTINCT CASE WHEN mastodon_links != '[]' THEN url ELSE NULL END)    AS mastodon_pages,
             COUNT(DISTINCT CASE WHEN facebook_links != '[]' THEN url ELSE NULL END)  AS facebook_pages,
             COUNT(DISTINCT CASE WHEN linkedin_links != '[]' THEN url ELSE NULL END)  AS linkedin_pages,
+            COUNT(DISTINCT CASE WHEN tiktok_links   != '[]' THEN url ELSE NULL END)  AS tiktok_pages,
+            COUNT(DISTINCT CASE WHEN youtube_links  != '[]' THEN url ELSE NULL END)  AS youtube_pages,
+            COUNT(DISTINCT CASE WHEN blacksky_links != '[]' THEN url ELSE NULL END)  AS blacksky_pages,
+            COUNT(DISTINCT CASE WHEN gander_links   != '[]' THEN url ELSE NULL END)  AS gander_pages,
             MIN(scanned_at)                                                             AS first_scan,
             MAX(scanned_at)                                                             AS last_scan
         FROM url_social_media_results
@@ -119,6 +130,10 @@ _PLATFORM_LINK_COLUMNS = {
     "mastodon": "mastodon_links",
     "facebook": "facebook_links",
     "linkedin": "linkedin_links",
+    "tiktok": "tiktok_links",
+    "youtube": "youtube_links",
+    "blacksky": "blacksky_links",
+    "gander": "gander_links",
 }
 
 
@@ -287,7 +302,7 @@ def _query_by_country(conn: sqlite3.Connection) -> list[dict]:
     use in the per-country tables on the social media stats page.
     """
     rows = conn.execute(
-        """
+        f"""
         SELECT
             country_code,
             COUNT(DISTINCT url)                                                                                    AS total_scanned,
@@ -298,14 +313,16 @@ def _query_by_country(conn: sqlite3.Connection) -> list[dict]:
             COUNT(DISTINCT CASE WHEN mastodon_links != '[]'         THEN url ELSE NULL END)                        AS mastodon_pages,
             COUNT(DISTINCT CASE WHEN facebook_links != '[]'         THEN url ELSE NULL END)                        AS facebook_pages,
             COUNT(DISTINCT CASE WHEN linkedin_links != '[]'         THEN url ELSE NULL END)                        AS linkedin_pages,
+            COUNT(DISTINCT CASE WHEN tiktok_links   != '[]'         THEN url ELSE NULL END)                        AS tiktok_pages,
+            COUNT(DISTINCT CASE WHEN youtube_links  != '[]'         THEN url ELSE NULL END)                        AS youtube_pages,
+            COUNT(DISTINCT CASE WHEN blacksky_links != '[]'         THEN url ELSE NULL END)                        AS blacksky_pages,
+            COUNT(DISTINCT CASE WHEN gander_links   != '[]'         THEN url ELSE NULL END)                        AS gander_pages,
             COUNT(DISTINCT CASE WHEN social_tier = 'twitter_only'   THEN url ELSE NULL END)                        AS twitter_only,
             COUNT(DISTINCT CASE WHEN social_tier = 'modern_only'    THEN url ELSE NULL END)                        AS modern_only,
             COUNT(DISTINCT CASE WHEN social_tier = 'mixed'          THEN url ELSE NULL END)                        AS mixed,
             COUNT(DISTINCT CASE WHEN social_tier = 'no_social'      THEN url ELSE NULL END)                        AS no_social,
-            COUNT(DISTINCT CASE WHEN (twitter_links != '[]' OR x_links != '[]'
-                                      OR facebook_links != '[]'
-                                      OR linkedin_links != '[]')     THEN url ELSE NULL END)                        AS has_any_legacy,
-            COUNT(DISTINCT CASE WHEN (bluesky_links != '[]' OR mastodon_links != '[]')      THEN url ELSE NULL END) AS has_any_modern,
+            COUNT(DISTINCT CASE WHEN ({_ANY_LEGACY_SQL}) THEN url ELSE NULL END)                                  AS has_any_legacy,
+            COUNT(DISTINCT CASE WHEN ({_ANY_MODERN_SQL}) THEN url ELSE NULL END)                                  AS has_any_modern,
             MIN(scanned_at)                                                                                         AS first_scan,
             MAX(scanned_at)                                                                                         AS last_scan
         FROM url_social_media_results
@@ -323,9 +340,10 @@ def _query_by_country(conn: sqlite3.Connection) -> list[dict]:
 def _sovereignty_score(row: dict) -> float:
     """Sovereignty score: % of reachable pages with no-social or modern-only presence.
 
-    Higher scores indicate more digital sovereignty (fewer links to US corporate
-    social-media platforms).  Pages with no social media at all score highest;
-    pages linking *only* to Mastodon or Bluesky also rank well.
+    Higher scores indicate more digital sovereignty (fewer links to centralised
+    corporate social-media platforms).  Pages with no social media at all score
+    highest; pages linking *only* to open platforms (``MODERN_PLATFORMS``) also
+    rank well.
     """
     reachable = max(row.get("reachable", 0), 1)
     sovereign = row.get("no_social", 0) + row.get("modern_only", 0)
@@ -335,8 +353,8 @@ def _sovereignty_score(row: dict) -> float:
 def _legacy_exposure(row: dict) -> float:
     """Legacy exposure: % of reachable pages with any legacy-platform link.
 
-    "Legacy" means Twitter, X, Facebook, or LinkedIn — centralised platforms
-    headquartered in the USA.
+    "Legacy" means a centralised corporate platform: Twitter, X, Facebook,
+    LinkedIn, TikTok or YouTube (``LEGACY_PLATFORMS``).
     """
     reachable = max(row.get("reachable", 0), 1)
     return round(row.get("has_any_legacy", 0) / reachable * 100, 1)
@@ -423,7 +441,7 @@ def _build_sovereignty_section(by_country: list[dict]) -> list[str]:
         "",
         "## Digital Sovereignty Rankings",
         "",
-        "Countries ranked by **Digital Sovereignty Score** — the percentage of reachable pages using *no social media* or *modern open platforms only* (Mastodon / Bluesky).  A higher score means fewer links to US corporate social-media platforms (Twitter / X, Facebook, LinkedIn).  Pages with no social-media links at all score highest; pages linking only to Mastodon or Bluesky also rank well.  **Legacy Exposure** shows the percentage of reachable pages that still link to Twitter/X, Facebook, or LinkedIn.",
+        "Countries ranked by **Digital Sovereignty Score**: the percentage of reachable pages using *no social media* or *modern open platforms only* (Mastodon, Bluesky, Blacksky, Gander).  A higher score means fewer links to centralised corporate social-media platforms (Twitter / X, Facebook, LinkedIn, TikTok, YouTube).  Pages with no social-media links at all score highest; pages linking only to open platforms also rank well.  **Legacy Exposure** shows the percentage of reachable pages that still link to at least one of those corporate platforms.",
         "",
         "| Rank | Country | Sovereignty Score | No Social | Modern Only"
         " | Legacy Exposure | Tier |",
@@ -571,6 +589,10 @@ def _build_stats_block(
     mastodon = summary.get("mastodon_pages") or 0
     facebook = summary.get("facebook_pages") or 0
     linkedin = summary.get("linkedin_pages") or 0
+    tiktok = summary.get("tiktok_pages") or 0
+    youtube = summary.get("youtube_pages") or 0
+    blacksky = summary.get("blacksky_pages") or 0
+    gander = summary.get("gander_pages") or 0
     last_scan = (summary.get("last_scan") or "")[:10] or "—"
 
     def _pct(num: int, denom: int) -> str:
@@ -614,6 +636,10 @@ def _build_stats_block(
         tot_mast = sum(r.get("mastodon_pages", 0) for r in by_country)
         tot_fb = sum(r.get("facebook_pages", 0) for r in by_country)
         tot_li = sum(r.get("linkedin_pages", 0) for r in by_country)
+        tot_tt = sum(r.get("tiktok_pages", 0) for r in by_country)
+        tot_yt = sum(r.get("youtube_pages", 0) for r in by_country)
+        tot_bk = sum(r.get("blacksky_pages", 0) for r in by_country)
+        tot_gd = sum(r.get("gander_pages", 0) for r in by_country)
 
         # SVG pie chart: floated right so the stats text wraps to its left.
         # SVG is preferred over <canvas> because SVG elements live in the DOM
@@ -673,12 +699,16 @@ def _build_stats_block(
         f"| ✖ X | **{x_pages:,}** | {_pct(x_pages, scanned)} | {_pct(x_pages, reachable)} |",
         f"| 👍 Facebook | **{facebook:,}** | {_pct(facebook, scanned)} | {_pct(facebook, reachable)} |",
         f"| 💼 LinkedIn | **{linkedin:,}** | {_pct(linkedin, scanned)} | {_pct(linkedin, reachable)} |",
+        f"| TikTok | **{tiktok:,}** | {_pct(tiktok, scanned)} | {_pct(tiktok, reachable)} |",
+        f"| YouTube | **{youtube:,}** | {_pct(youtube, scanned)} | {_pct(youtube, reachable)} |",
         "",
         "**Modern / open social media** (decentralised or open platforms):",
         "",
         "| Platform | Pages with link | % of scanned | % of reachable |",
         "|----------|----------------|:------------:|:--------------:|",
         f"| 🦋 Bluesky | **{bluesky:,}** | {_pct(bluesky, scanned)} | {_pct(bluesky, reachable)} |",
+        f"| Blacksky | **{blacksky:,}** | {_pct(blacksky, scanned)} | {_pct(blacksky, reachable)} |",
+        f"| Gander | **{gander:,}** | {_pct(gander, scanned)} | {_pct(gander, reachable)} |",
         f"| 🐘 Mastodon / Fediverse | **{mastodon:,}** | {_pct(mastodon, scanned)} | {_pct(mastodon, reachable)} |",
     ]
 
@@ -702,7 +732,8 @@ def _build_stats_block(
     # Per-country breakdown table
     # Column order: Country | Scanned | Available | Reachable | Sov. Score |
     #   No Social | Legacy-only | Twitter | X | Facebook | LinkedIn |
-    #   Modern | Mixed | Bluesky | Mastodon | Scan Period
+    #   TikTok | YouTube | Modern | Mixed | Bluesky | Blacksky | Gander |
+    #   Mastodon | Scan Period
     #
     # "Available" = total pages in the TOON seed file (all government pages tracked).
     # "Reachable" = pages that returned a valid HTTP response when scanned
@@ -730,9 +761,11 @@ def _build_stats_block(
             "a page may appear in more than one platform column.",
             "",
             "| Country | Scanned | Available | Reachable | Sov. Score | No Social | Legacy-only |"
-            " Twitter | X | Facebook | LinkedIn | Modern | Mixed | Bluesky | Mastodon | Scan Period |",
+            " Twitter | X | Facebook | LinkedIn | TikTok | YouTube | Modern | Mixed |"
+            " Bluesky | Blacksky | Gander | Mastodon | Scan Period |",
             "|---------|---------|-----------|-----------|:----------:|-----------|-------------|"
-            "---------|---|----------|----------|--------|-------|---------|----------|-------------|",
+            "---------|---|----------|----------|--------|---------|--------|-------|"
+            "---------|----------|--------|----------|-------------|",
         ]
         for row in by_country:
             cc = row["country_code"]
@@ -750,8 +783,10 @@ def _build_stats_block(
                 f"{row.get('no_social', 0):,} | {row.get('twitter_only', 0):,} | "
                 f"{row.get('twitter_pages', 0):,} | {row.get('x_pages', 0):,} | "
                 f"{row.get('facebook_pages', 0):,} | {row.get('linkedin_pages', 0):,} | "
+                f"{row.get('tiktok_pages', 0):,} | {row.get('youtube_pages', 0):,} | "
                 f"{row.get('modern_only', 0):,} | {row.get('mixed', 0):,} | "
-                f"{row.get('bluesky_pages', 0):,} | {row.get('mastodon_pages', 0):,} | "
+                f"{row.get('bluesky_pages', 0):,} | {row.get('blacksky_pages', 0):,} | "
+                f"{row.get('gander_pages', 0):,} | {row.get('mastodon_pages', 0):,} | "
                 f"{period} |"
             )
 
@@ -762,8 +797,9 @@ def _build_stats_block(
             f"**{tot_sov_score}** | "
             f"**{tot_no_social:,}** | **{tot_twitter_only:,}** | "
             f"**{tot_tw:,}** | **{tot_x:,}** | **{tot_fb:,}** | **{tot_li:,}** | "
+            f"**{tot_tt:,}** | **{tot_yt:,}** | "
             f"**{tot_modern_only:,}** | **{tot_mixed:,}** | "
-            f"**{tot_bsky:,}** | **{tot_mast:,}** | — |"
+            f"**{tot_bsky:,}** | **{tot_bk:,}** | **{tot_gd:,}** | **{tot_mast:,}** | — |"
         )
 
         lines += [
@@ -1246,6 +1282,10 @@ def generate_social_media_report(
             "mastodon_pages": summary.get("mastodon_pages") or 0,
             "facebook_pages": summary.get("facebook_pages") or 0,
             "linkedin_pages": summary.get("linkedin_pages") or 0,
+            "tiktok_pages": summary.get("tiktok_pages") or 0,
+            "youtube_pages": summary.get("youtube_pages") or 0,
+            "blacksky_pages": summary.get("blacksky_pages") or 0,
+            "gander_pages": summary.get("gander_pages") or 0,
             "first_scan": summary.get("first_scan"),
             "last_scan": summary.get("last_scan"),
         },

@@ -75,6 +75,10 @@ class UrlSocialMediaResult:
     mastodon_links: str = "[]"  # JSON list of detected Mastodon hrefs
     facebook_links: str = "[]"  # JSON list of facebook.com hrefs
     linkedin_links: str = "[]"  # JSON list of linkedin.com hrefs
+    tiktok_links: str = "[]"    # JSON list of tiktok.com hrefs
+    youtube_links: str = "[]"   # JSON list of youtube.com / youtu.be hrefs
+    blacksky_links: str = "[]"  # JSON list of blacksky.community hrefs
+    gander_links: str = "[]"    # JSON list of gander.social / gandersocial.ca hrefs
     social_tier: str = "no_social"  # "unreachable"|"no_social"|"twitter_only"|"modern_only"|"mixed"
     error_message: str | None = None
     scanned_at: str | None = None
@@ -248,6 +252,10 @@ CREATE TABLE IF NOT EXISTS url_social_media_results (
     mastodon_links TEXT NOT NULL DEFAULT '[]',
     facebook_links TEXT NOT NULL DEFAULT '[]',
     linkedin_links TEXT NOT NULL DEFAULT '[]',
+    tiktok_links TEXT NOT NULL DEFAULT '[]',
+    youtube_links TEXT NOT NULL DEFAULT '[]',
+    blacksky_links TEXT NOT NULL DEFAULT '[]',
+    gander_links TEXT NOT NULL DEFAULT '[]',
     social_tier TEXT NOT NULL DEFAULT 'no_social',
     error_message TEXT,
     scanned_at TEXT,
@@ -441,9 +449,18 @@ def initialize_schema(db_url: str) -> Path:
         conn.executescript(SCHEMA_SQL)
         # Migration: add facebook_links and linkedin_links to existing databases
         # that were created before these columns were added.
+        # Migration (platforms version 3): add tiktok_links, youtube_links,
+        # blacksky_links and gander_links the same way.
         # The column names below come from a hardcoded tuple and are never
         # derived from user input, so string interpolation is safe here.
-        _NEW_SOCIAL_COLUMNS = (("facebook_links", "[]"), ("linkedin_links", "[]"))
+        _NEW_SOCIAL_COLUMNS = (
+            ("facebook_links", "[]"),
+            ("linkedin_links", "[]"),
+            ("tiktok_links", "[]"),
+            ("youtube_links", "[]"),
+            ("blacksky_links", "[]"),
+            ("gander_links", "[]"),
+        )
         for col, default in _NEW_SOCIAL_COLUMNS:
             existing = {
                 row[1]

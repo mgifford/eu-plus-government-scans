@@ -13,6 +13,8 @@ from src.services.social_media_scanner import (
     SocialMediaScanner,
     _classify_tier,
     _extract_social_links,
+    classify_social_href,
+    reclassify_mastodon_links,
 )
 
 
@@ -524,3 +526,119 @@ async def test_scan_urls_batch_no_max_runtime_scans_all():
         )
 
     assert len(results) == 2
+
+
+# ---------------------------------------------------------------------------
+# Platforms version 3: /@ paths on corporate hosts, new platforms
+# ---------------------------------------------------------------------------
+
+@pytest.mark.parametrize(
+    ("href", "platform"),
+    [
+        ("https://www.tiktok.com/@agency", "tiktok"),
+        ("https://vm.tiktok.com/ZMabc123/", "tiktok"),
+        ("https://www.youtube.com/@agency", "youtube"),
+        ("https://m.youtube.com/channel/UC123", "youtube"),
+        ("https://youtu.be/abc123", "youtube"),
+        ("https://blacksky.community/profile/agency.bsky.social", "blacksky"),
+        ("https://gander.social/profile/agency.gander.social", "gander"),
+        ("https://gandersocial.ca/", "gander"),
+        ("https://social.example.org/@agency", "mastodon"),
+        ("https://mastodon.social/@agency", "mastodon"),
+    ],
+)
+def test_classify_social_href_assigns_platform(href: str, platform: str):
+    """Known hosts win over the /@ heuristic; unknown /@ hosts stay Mastodon."""
+    assert classify_social_href(href) == platform
+
+
+@pytest.mark.parametrize(
+    "href",
+    [
+        "https://www.threads.net/@agency",
+        "https://www.threads.com/@agency",
+        "https://medium.com/@agency",
+        "https://substack.com/@agency",
+        "https://example.gov/about",
+        "/@relative-path",
+        "mailto:info@example.gov",
+    ],
+)
+def test_classify_social_href_ignores_non_social(href: str):
+    """Non-Fediverse /@ hosts and ordinary links are not social media links."""
+    assert classify_social_href(href) is None
+
+
+def test_extract_corporate_at_paths_not_counted_as_mastodon():
+    """Regression: TikTok and YouTube /@handle links were counted as Mastodon."""
+    html = """
+    <html><body>
+      <a href="https://www.tiktok.com/@agency">TikTok</a>
+      <a href="https://www.youtube.com/@agency">YouTube</a>
+      <a href="https://www.threads.net/@agency">Threads</a>
+    </body></html>
+    """
+    links = _extract_social_links(html, "https://example.gov/")
+    assert links["mastodon"] == []
+    assert links["tiktok"] == ["https://www.tiktok.com/@agency"]
+    assert links["youtube"] == ["https://www.youtube.com/@agency"]
+
+
+def test_extract_blacksky_and_gander_links():
+    """Detect the Blacksky and Gander AT Protocol apps."""
+    html = """
+    <html><body>
+      <a href="https://blacksky.community/profile/agency.bsky.social">Blacksky</a>
+      <a href="https://gander.social/profile/agency.gander.social">Gander</a>
+    </body></html>
+    """
+    links = _extract_social_links(html, "https://example.gov/")
+    assert links["blacksky"] == ["https://blacksky.community/profile/agency.bsky.social"]
+    assert links["gander"] == ["https://gander.social/profile/agency.gander.social"]
+    assert links["bluesky"] == []
+    assert links["mastodon"] == []
+
+
+def test_classify_tier_tiktok_youtube_count_as_legacy():
+    """A page linking only to TikTok or YouTube is legacy, not modern."""
+    for field_name in ("tiktok_links", "youtube_links"):
+        result = SocialMediaScanResult(
+            url="https://example.gov/",
+            is_reachable=True,
+            **{field_name: ["https://example.invalid/@agency"]},
+        )
+        assert _classify_tier(result) == "twitter_only", field_name
+
+
+def test_classify_tier_blacksky_gander_count_as_modern():
+    """A page linking only to Blacksky or Gander is modern."""
+    for field_name in ("blacksky_links", "gander_links"):
+        result = SocialMediaScanResult(
+            url="https://example.gov/",
+            is_reachable=True,
+            **{field_name: ["https://example.invalid/profile/agency"]},
+        )
+        assert _classify_tier(result) == "modern_only", field_name
+
+
+def test_reclassify_mastodon_links_sorts_old_entries():
+    """Old Mastodon entries move, stay, or drop under the current rules."""
+    stored = [
+        "https://social.example.org/@agency",
+        "@agency@mastodon.social",
+        "https://www.youtube.com/@agency",
+        "https://www.tiktok.com/@agency",
+        "https://www.threads.net/@agency",
+    ]
+    assert reclassify_mastodon_links(stored) == {
+        "mastodon": ["https://social.example.org/@agency", "@agency@mastodon.social"],
+        "youtube": ["https://www.youtube.com/@agency"],
+        "tiktok": ["https://www.tiktok.com/@agency"],
+    }
+
+
+def test_extract_masks_credential_parameters():
+    """Captured links pass through redact_url before they are stored."""
+    html = '<a href="https://www.youtube.com/@agency?token=abc123&si=x">YouTube</a>'
+    links = _extract_social_links(html, "https://example.gov/")
+    assert links["youtube"] == ["https://www.youtube.com/@agency?token=REDACTED&si=x"]

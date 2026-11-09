@@ -1,7 +1,7 @@
 """Social media link scanner for government websites.
 
-Fetches a page and detects links to Twitter/X, Bluesky, Mastodon,
-Facebook, and LinkedIn.
+Fetches a page and detects links to Twitter/X, Facebook, LinkedIn, TikTok,
+YouTube, Bluesky, Blacksky, Gander and Mastodon.
 """
 
 from __future__ import annotations
@@ -17,6 +17,8 @@ from urllib.parse import urlparse
 
 import httpx
 from bs4 import BeautifulSoup
+
+from src.lib.secret_redaction import redact_url
 
 # ---------------------------------------------------------------------------
 # Known Mastodon / Fediverse instance hostnames.
@@ -86,12 +88,72 @@ FACEBOOK_HOSTS: frozenset[str] = frozenset(
 # Hostnames that belong to LinkedIn (legacy platform)
 LINKEDIN_HOSTS: frozenset[str] = frozenset({"linkedin.com", "www.linkedin.com"})
 
+# Hostnames that belong to TikTok (legacy platform)
+TIKTOK_HOSTS: frozenset[str] = frozenset(
+    {"tiktok.com", "www.tiktok.com", "m.tiktok.com", "vm.tiktok.com"}
+)
+
+# Hostnames that belong to YouTube (legacy platform)
+YOUTUBE_HOSTS: frozenset[str] = frozenset(
+    {"youtube.com", "www.youtube.com", "m.youtube.com", "youtu.be"}
+)
+
+# Blacksky is an AT Protocol app (like Bluesky).  blacksky.community is its
+# web app; blacksky.app is only its data server, so it is not matched.
+BLACKSKY_HOSTS: frozenset[str] = frozenset({"blacksky.community"})
+
+# Gander is a Canadian AT Protocol app.  gander.social is the web app and
+# gandersocial.ca the project site.
+GANDER_HOSTS: frozenset[str] = frozenset(
+    {"gander.social", "www.gander.social", "gandersocial.ca", "www.gandersocial.ca"}
+)
+
+# Hosts that use ``/@name`` profile paths but are not part of the Fediverse.
+# The ``/@`` Mastodon heuristic must skip them; before version 3 it counted
+# TikTok and YouTube channels as Mastodon accounts.
+NON_FEDIVERSE_AT_PATH_HOSTS: frozenset[str] = frozenset(
+    {
+        "medium.com",
+        "www.medium.com",
+        "substack.com",
+        "www.substack.com",
+        "threads.net",
+        "www.threads.net",
+        "threads.com",
+        "www.threads.com",
+    }
+)
+
+# Platform key -> hostnames, checked in order before the ``/@`` heuristic.
+_PLATFORM_HOSTS: dict[str, frozenset[str]] = {
+    "twitter": TWITTER_HOSTS,
+    "x": X_HOSTS,
+    "facebook": FACEBOOK_HOSTS,
+    "linkedin": LINKEDIN_HOSTS,
+    "tiktok": TIKTOK_HOSTS,
+    "youtube": YOUTUBE_HOSTS,
+    "bluesky": BLUESKY_HOSTS,
+    "blacksky": BLACKSKY_HOSTS,
+    "gander": GANDER_HOSTS,
+    "mastodon": KNOWN_MASTODON_HOSTS,
+}
+
+# Centralised corporate platforms versus open or decentralised ones.  The
+# tier classification and the sovereignty score are built from these.
+LEGACY_PLATFORMS: tuple[str, ...] = (
+    "twitter", "x", "facebook", "linkedin", "tiktok", "youtube",
+)
+MODERN_PLATFORMS: tuple[str, ...] = ("bluesky", "blacksky", "gander", "mastodon")
+
 # Version number that identifies which set of social-media platforms this
 # scanner detects.  Increment this constant whenever a new platform is added
 # so that previously-scanned URLs are re-scanned to collect the new data.
 #   1 – Twitter, X, Bluesky, Mastodon
-#   2 – Twitter, X, Bluesky, Mastodon, Facebook, LinkedIn  (current)
-SOCIAL_PLATFORMS_VERSION: int = 2
+#   2 – Twitter, X, Bluesky, Mastodon, Facebook, LinkedIn
+#   3 – adds TikTok, YouTube, Blacksky, Gander; ``/@`` paths on TikTok,
+#       YouTube, Threads, Medium and Substack no longer count as Mastodon
+#       (current)
+SOCIAL_PLATFORMS_VERSION: int = 3
 
 # Regex for detecting @user@domain patterns in page text (Mastodon handles)
 _MASTODON_HANDLE_RE = re.compile(r"@[\w.-]+@([\w.-]+\.\w{2,})")
@@ -109,11 +171,15 @@ class SocialMediaScanResult:
     mastodon_links: List[str] = field(default_factory=list)
     facebook_links: List[str] = field(default_factory=list)
     linkedin_links: List[str] = field(default_factory=list)
+    tiktok_links: List[str] = field(default_factory=list)
+    youtube_links: List[str] = field(default_factory=list)
+    blacksky_links: List[str] = field(default_factory=list)
+    gander_links: List[str] = field(default_factory=list)
     # Tier classification:
     #   "unreachable"   – page could not be fetched
     #   "no_social"     – reachable, no social media links found
-    #   "twitter_only"  – only legacy social media (Twitter, X, Facebook, LinkedIn)
-    #   "modern_only"   – only Bluesky / Mastodon links
+    #   "twitter_only"  – only legacy social media (LEGACY_PLATFORMS)
+    #   "modern_only"   – only open platforms (MODERN_PLATFORMS)
     #   "mixed"         – legacy plus at least one modern platform
     social_tier: str = "no_social"
     error_message: str | None = None
@@ -125,11 +191,8 @@ def _classify_tier(result: SocialMediaScanResult) -> str:
     if not result.is_reachable:
         return "unreachable"
 
-    has_legacy = bool(
-        result.twitter_links or result.x_links
-        or result.facebook_links or result.linkedin_links
-    )
-    has_modern = bool(result.bluesky_links or result.mastodon_links)
+    has_legacy = any(getattr(result, f"{p}_links") for p in LEGACY_PLATFORMS)
+    has_modern = any(getattr(result, f"{p}_links") for p in MODERN_PLATFORMS)
 
     if has_legacy and has_modern:
         return "mixed"
@@ -140,61 +203,90 @@ def _classify_tier(result: SocialMediaScanResult) -> str:
     return "no_social"
 
 
+def classify_social_href(href: str) -> Optional[str]:
+    """Return the platform key a link points to, or ``None``.
+
+    Known hostnames are checked first, so a ``/@name`` path on TikTok or
+    YouTube is attributed to that platform.  Only links to hosts outside every
+    known list fall through to the ``/@`` Mastodon heuristic.
+
+    Args:
+        href: Link target as found in the page.
+
+    Returns:
+        A key from ``LEGACY_PLATFORMS`` or ``MODERN_PLATFORMS``, or ``None``
+        when the link is not a recognised social media link.
+    """
+    try:
+        parsed = urlparse(href.strip())
+    except ValueError:
+        return None
+
+    netloc = parsed.netloc.lower()
+    if not netloc:
+        return None
+    for platform, hosts in _PLATFORM_HOSTS.items():
+        if netloc in hosts:
+            return platform
+    if netloc not in NON_FEDIVERSE_AT_PATH_HOSTS and _looks_like_mastodon_profile(
+        href, parsed
+    ):
+        return "mastodon"
+    return None
+
+
+def reclassify_mastodon_links(links: List[str]) -> Dict[str, List[str]]:
+    """Sort links an older scanner stored as Mastodon under the current rules.
+
+    Handles found in page text (``@user@instance``) stay Mastodon.  A URL goes
+    to whichever platform :func:`classify_social_href` now assigns, and is
+    dropped when it is no longer a social media link at all (for example a
+    Medium or Threads profile).
+
+    Args:
+        links: Contents of a stored ``mastodon_links`` list.
+
+    Returns:
+        Platform key -> links, in their original order.  Only platforms that
+        received at least one link appear.
+    """
+    sorted_links: Dict[str, List[str]] = {}
+    for link in links:
+        if _MASTODON_HANDLE_RE.fullmatch(link):
+            platform: Optional[str] = "mastodon"
+        else:
+            platform = classify_social_href(link)
+        if platform is not None:
+            sorted_links.setdefault(platform, []).append(link)
+    return sorted_links
+
+
 def _extract_social_links(html: str, base_url: str) -> dict:
     """
-    Parse HTML and extract links to Twitter/X, Bluesky, Mastodon,
-    Facebook, and LinkedIn.
+    Parse HTML and extract links to every platform in ``_PLATFORM_HOSTS``.
 
-    Returns a dict with keys: twitter, x, bluesky, mastodon, facebook,
-    linkedin — each a list of href strings found in <a> elements.
+    Returns a dict keyed by platform (``LEGACY_PLATFORMS`` plus
+    ``MODERN_PLATFORMS``), each a list of href strings found in <a> elements.
     """
     soup = BeautifulSoup(html, "html.parser")
 
-    twitter: list[str] = []
-    x_links: list[str] = []
-    bluesky: list[str] = []
-    mastodon: list[str] = []
-    facebook: list[str] = []
-    linkedin: list[str] = []
+    found: dict[str, list[str]] = {p: [] for p in _PLATFORM_HOSTS}
 
     for tag in soup.find_all("a", href=True):
         href = tag["href"].strip()
-        try:
-            parsed = urlparse(href)
-        except ValueError:
-            continue
-
-        netloc = parsed.netloc.lower()
-
-        if netloc in TWITTER_HOSTS:
-            twitter.append(href)
-        elif netloc in X_HOSTS:
-            x_links.append(href)
-        elif netloc in BLUESKY_HOSTS:
-            bluesky.append(href)
-        elif netloc in KNOWN_MASTODON_HOSTS:
-            mastodon.append(href)
-        elif netloc in FACEBOOK_HOSTS:
-            facebook.append(href)
-        elif netloc in LINKEDIN_HOSTS:
-            linkedin.append(href)
-        elif netloc and _looks_like_mastodon_profile(href, parsed):
-            mastodon.append(href)
+        platform = classify_social_href(href)
+        if platform is not None:
+            # Mask credential parameters before the link reaches the database
+            # (AGENTS.md "Credentials in scan output").
+            found[platform].append(redact_url(href))
 
     # Also detect @user@domain handles in plain text
     for match in _MASTODON_HANDLE_RE.finditer(soup.get_text()):
         instance = match.group(1).lower()
         if instance not in TWITTER_HOSTS and instance not in BLUESKY_HOSTS:
-            mastodon.append(match.group(0))
+            found["mastodon"].append(match.group(0))
 
-    return {
-        "twitter": _deduplicate(twitter),
-        "x": _deduplicate(x_links),
-        "bluesky": _deduplicate(bluesky),
-        "mastodon": _deduplicate(mastodon),
-        "facebook": _deduplicate(facebook),
-        "linkedin": _deduplicate(linkedin),
-    }
+    return {platform: _deduplicate(links) for platform, links in found.items()}
 
 
 def _looks_like_mastodon_profile(href: str, parsed) -> bool:
@@ -279,6 +371,10 @@ class SocialMediaScanner:
             mastodon_links=links["mastodon"],
             facebook_links=links["facebook"],
             linkedin_links=links["linkedin"],
+            tiktok_links=links["tiktok"],
+            youtube_links=links["youtube"],
+            blacksky_links=links["blacksky"],
+            gander_links=links["gander"],
             scanned_at=scanned_at,
         )
         result.social_tier = _classify_tier(result)
@@ -426,8 +522,16 @@ class SocialMediaScanner:
                     platforms.append(f"Facebook×{len(result.facebook_links)}")
                 if result.linkedin_links:
                     platforms.append(f"LinkedIn×{len(result.linkedin_links)}")
+                if result.tiktok_links:
+                    platforms.append(f"TikTok×{len(result.tiktok_links)}")
+                if result.youtube_links:
+                    platforms.append(f"YouTube×{len(result.youtube_links)}")
                 if result.bluesky_links:
                     platforms.append(f"Bluesky×{len(result.bluesky_links)}")
+                if result.blacksky_links:
+                    platforms.append(f"Blacksky×{len(result.blacksky_links)}")
+                if result.gander_links:
+                    platforms.append(f"Gander×{len(result.gander_links)}")
                 if result.mastodon_links:
                     platforms.append(f"Mastodon×{len(result.mastodon_links)}")
                 summary = ", ".join(platforms) or "(no social media links)"

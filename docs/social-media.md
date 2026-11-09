@@ -3,6 +3,16 @@ title: Social Media Scanning
 layout: page
 ---
 
+> **Method change, November 2026.** Until this change, any link whose address
+> contained `/@name` was counted as Mastodon. TikTok, YouTube, Threads, Medium
+> and Substack use the same pattern, so their links were counted as Mastodon
+> too. That overstated Mastodon use and raised Digital Sovereignty Scores.
+> Results stored before the change are corrected automatically, and TikTok,
+> YouTube, Blacksky and Gander are now tracked as platforms of their own.
+> TikTok and YouTube counts stay incomplete until every page has been
+> rescanned, because older scans kept only the TikTok and YouTube links that
+> used `/@name`.
+
 <!-- SOCIAL_MEDIA_STATS_START -->
 
 <div id="sm-tier-pie-container" style="float:right;margin:0 0 1rem 1.5rem;width:260px;max-width:45%;">
@@ -147,8 +157,8 @@ The social media scanner fetches each government page and inspects the HTML for
 links to known social platforms. Results are stored in the metadata database
 and published to this site via the [Scan Progress Report](scan-progress.md).
 
-Scans run **automatically every 3 hours** via GitHub Actions so that the full
-set of ~80,000 URLs across 31 countries can be covered gradually without
+Scans run **automatically every 8 hours** via GitHub Actions so that the full
+set of ~88,000 URLs across 32 countries can be covered gradually without
 overloading government servers.
 
 ---
@@ -163,13 +173,22 @@ overloading government servers.
 | **X** | `x.com` |
 | **Facebook** | `facebook.com`, `fb.com` |
 | **LinkedIn** | `linkedin.com` |
+| **TikTok** | `tiktok.com`, `m.tiktok.com`, `vm.tiktok.com` |
+| **YouTube** | `youtube.com`, `m.youtube.com`, `youtu.be` |
 
 ### Modern / Open Social Media (decentralised or open platforms)
 
 | Platform | Domains detected |
 |----------|-----------------|
 | **Bluesky** | `bsky.app`, `bsky.social` |
+| **Blacksky** | `blacksky.community` (an AT Protocol app, like Bluesky) |
+| **Gander** | `gander.social`, `gandersocial.ca` (a Canadian AT Protocol app) |
 | **Mastodon / Fediverse** | 40+ known instances + `/@username` pattern detection |
+
+The `/@username` pattern is only applied to hosts that are not listed above.
+Threads, Medium and Substack also use `/@username` addresses but are not
+counted as Mastodon. Threads lets some accounts federate with Mastodon, but it
+is run by Meta, so it is not treated as an open platform.
 
 ---
 
@@ -181,8 +200,8 @@ Each scanned page is assigned one of five tiers:
 |------|---------|
 | `unreachable` | Page could not be fetched (network error, timeout, 4xx/5xx) |
 | `no_social` | Page is reachable but contains no recognised social media links |
-| `twitter_only` | Page links only to legacy platforms (Twitter, X, Facebook, or LinkedIn) |
-| `modern_only` | Page links only to Bluesky or Mastodon (modern / open platforms) |
+| `twitter_only` | Page links only to legacy platforms (Twitter, X, Facebook, LinkedIn, TikTok or YouTube) |
+| `modern_only` | Page links only to modern / open platforms (Bluesky, Blacksky, Gander or Mastodon) |
 | `mixed` | Page links to at least one legacy platform **and** at least one modern platform |
 
 ---
@@ -241,21 +260,25 @@ python3 -m src.cli.scan_social_media --all --max-runtime 110 --rate-limit 1.0
 
 ### Annotated TOON file (`*_social.toon`)
 
-Each page entry gains a `social_media` field:
+Each scanned page entry gains a `social_media` field. A page that could not be
+fetched gets a `social_media_error` field holding the error message instead.
 
 ```json
 {
   "url": "https://example.gov/",
   "is_root_page": true,
   "social_media": {
-    "is_reachable": true,
-    "social_tier": "mixed",
-    "twitter_links": ["https://twitter.com/example_gov"],
-    "x_links": [],
-    "facebook_links": [],
-    "linkedin_links": [],
-    "bluesky_links": ["https://bsky.app/profile/example.bsky.social"],
-    "mastodon_links": []
+    "tier": "mixed",
+    "twitter": ["https://twitter.com/example_gov"],
+    "x": [],
+    "bluesky": ["https://bsky.app/profile/example.bsky.social"],
+    "mastodon": [],
+    "facebook": [],
+    "linkedin": [],
+    "tiktok": [],
+    "youtube": [],
+    "blacksky": [],
+    "gander": []
   }
 }
 ```
@@ -272,7 +295,11 @@ Each page entry gains a `social_media` field:
 | `x_links` | TEXT | JSON list of `x.com` hrefs found |
 | `facebook_links` | TEXT | JSON list of `facebook.com` / `fb.com` hrefs found |
 | `linkedin_links` | TEXT | JSON list of `linkedin.com` hrefs found |
+| `tiktok_links` | TEXT | JSON list of TikTok hrefs found |
+| `youtube_links` | TEXT | JSON list of YouTube hrefs found |
 | `bluesky_links` | TEXT | JSON list of Bluesky hrefs found |
+| `blacksky_links` | TEXT | JSON list of Blacksky hrefs found |
+| `gander_links` | TEXT | JSON list of Gander hrefs found |
 | `mastodon_links` | TEXT | JSON list of Mastodon hrefs found |
 | `social_tier` | TEXT | Tier classification (see above) |
 | `scanned_at` | TEXT | ISO-8601 timestamp of scan |
@@ -281,12 +308,12 @@ Each page entry gains a `social_media` field:
 
 ## Countries Covered
 
-Scans cover all 27 EU member states plus 4 allied nations:
+Scans cover all 27 EU member states plus 5 allied nations:
 
 | Region | Countries |
 |--------|----------|
 | EU member states | Austria, Belgium, Bulgaria, Croatia, Czechia, Denmark, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Italy, Latvia, Lithuania, Luxembourg, Malta, Netherlands, Poland, Portugal, Republic of Cyprus, Romania, Slovakia, Slovenia, Spain, Sweden |
-| Allied nations | Iceland, Norway, Switzerland, United Kingdom |
+| Allied nations | Canada, Iceland, Norway, Switzerland, United Kingdom |
 
 See also the **[Government Domains](domains.md)** page for a full listing of
 all domains tracked per country.
@@ -297,7 +324,7 @@ all domains tracked per country.
 
 ```mermaid
 flowchart TD
-    A["scan-social-media.yml\n(GitHub Actions — every 3 hours)"]
+    A["scan-social-media.yml\n(GitHub Actions, every 8 hours)"]
     A --> B["scan_social_media.py (CLI)"]
     B --> C["SocialMediaScannerJob.scan_country()"]
     C --> D["SocialMediaScanner.scan_urls_batch()"]
