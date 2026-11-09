@@ -284,6 +284,26 @@ every historical version of files no longer tracked, mainly
 `docs/domains.md`.  The tree at `main` was unchanged.  Any further rewrite or
 force push to `main` needs explicit maintainer approval.
 
+### Weekly Mastodon digest
+
+`src/cli/generate_weekly_digest.py` drafts weekly campaign posts from the scan
+metadata; `src/cli/post_digest.py` publishes one reviewed draft.  See
+`docs/weekly-digest.md`.  The split is deliberate:
+
+- **Nothing posts without a person.**  `weekly-digest.yml` only drafts into a
+  `digest-draft` issue and never sees the Mastodon secrets.  `post-digest.yml`
+  runs only on `workflow_dispatch` and defaults to a dry run.  Do not add a
+  schedule, push or issue trigger to it.
+- **Never post during development.**  Tests use `httpx.MockTransport`; do not
+  call a real instance, create accounts or handle a real token.
+- **Every number links to its evidence** in `docs/data/digest/<week>.json`.
+- **Report losses with gains.**  Statement and social link detection flickers,
+  so a post that counts only gains overstates change.
+- **Compare like with like.**  Social scans before `SOCIAL_PLATFORMS_VERSION`
+  3 are excluded; a new detection version that changes what is found needs
+  the same treatment.
+- **Link agencies, never @-mention them**, and give any future image alt text.
+
 ---
 
 - Original seed files (`*.toon`) are version-controlled

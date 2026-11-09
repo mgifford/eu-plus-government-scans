@@ -25,7 +25,18 @@ DEST="${1:-data/artifacts}"
 ATTEMPTS="${FETCH_ARTIFACT_ATTEMPTS:-3}"
 
 # Artifact names come from the ownership map so the two cannot drift apart.
-NAMES="$(python3 -c 'from src.lib.metadata_merge import ARTIFACT_TABLES; print(" ".join(sorted(ARTIFACT_TABLES)))')"
+ALL_NAMES="$(python3 -c 'from src.lib.metadata_merge import ARTIFACT_TABLES; print(" ".join(sorted(ARTIFACT_TABLES)))')"
+
+# A job that only reads a few tables (the weekly digest) can name the artifacts
+# it needs in FETCH_ARTIFACT_NAMES.  A name outside the map is a typo, and
+# would otherwise pass as "none published yet" and leave the data missing.
+NAMES="${FETCH_ARTIFACT_NAMES:-$ALL_NAMES}"
+for name in $NAMES; do
+  case " $ALL_NAMES " in
+    *" $name "*) ;;
+    *) echo "Unknown artifact name in FETCH_ARTIFACT_NAMES: ${name}" >&2; exit 1 ;;
+  esac
+done
 
 mkdir -p "$DEST"
 
