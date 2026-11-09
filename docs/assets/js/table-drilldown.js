@@ -759,6 +759,11 @@
     trigger.className = "table-drilldown__trigger";
     trigger.type = "button";
     trigger.textContent = count.toLocaleString();
+    // The visible text is only the count.  Name the button from the panel
+    // title (for example "Twitter: 12 pages in France"), which contains the
+    // count, so the name keeps the visible label (WCAG 2.5.3) and still makes
+    // sense out of the table, such as in a screen reader's list of buttons.
+    trigger.setAttribute("aria-label", context.title);
     trigger.setAttribute("aria-expanded", "false");
     trigger.setAttribute("aria-haspopup", "dialog");
     trigger.setAttribute("title", context.titleAttribute);
