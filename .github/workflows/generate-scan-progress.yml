@@ -37,9 +37,9 @@ jobs:
     if: ${{ github.event_name != 'workflow_run' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main') }}
     runs-on: ubuntu-latest
     # The technology-Lighthouse correlation step grows with every scan cycle
-    # (13.2 min of a 14.9 min job on 2026-10-18, the last run to finish).  45
-    # minutes is headroom while a fix for that step is decided; it is not a
-    # target.  See WORKFLOW_ORCHESTRATION_AUDIT.md 3.6.
+    # (13.2 min of a 14.9 min job on 2026-10-18, the last run to finish).  That
+    # step has its own 30-minute cap; 45 minutes covers the cap plus the rest
+    # of the job, which takes about 2 minutes.  See WORKFLOW_ORCHESTRATION_AUDIT.md 3.6.
     timeout-minutes: 45
     permissions:
       contents: write
@@ -183,13 +183,28 @@ jobs:
             --seeds-dir data/toon-seeds/countries \
             2>&1 | tee lighthouse-report-output.txt
 
+      # Capped and allowed to fail, so that this one report can never again
+      # stop every other report from being committed and deployed.  If it
+      # fails or hits the cap, the previous docs/tech-lighthouse.md stays in
+      # place and the next step puts a warning on the run.
       - name: Generate technology–Lighthouse correlation report
+        id: tech_lighthouse
+        timeout-minutes: 30
+        continue-on-error: true
         run: |
           set -o pipefail
           python3 -m src.cli.generate_tech_lighthouse_report \
             --page docs/tech-lighthouse.md \
             --data docs/tech-lighthouse-data.json \
             2>&1 | tee tech-lighthouse-report-output.txt
+
+      # outcome is the result before continue-on-error is applied.  Compare
+      # against success rather than failure, because a step that hits its
+      # timeout is not documented as reporting "failure".
+      - name: Warn when the correlation report did not finish
+        if: steps.tech_lighthouse.outcome != 'success'
+        run: |
+          echo "::warning title=Correlation report stale::generate_tech_lighthouse_report ended with '${{ steps.tech_lighthouse.outcome }}' (30-minute cap); docs/tech-lighthouse.md was not regenerated."
 
       - name: Generate scan cycle pace report
         run: |

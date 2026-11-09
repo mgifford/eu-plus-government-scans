@@ -260,9 +260,16 @@ and deploy.
   by a `workflow_run` trigger whose job was then skipped, because workflow-level concurrency is
   applied before the job's `if:`.
 
-The job timeout is now 45 min and `cancel-in-progress` is false. The 45-min timeout is headroom,
-not a fix, because the slow step keeps growing. Rewriting that query (or adding an index it can
-use) is the actual fix and waits on maintainer approval.
+The job timeout is now 45 min and `cancel-in-progress` is false. The correlation step also has its
+own 30-min cap and `continue-on-error`, so it can no longer hold back the other reports. If it does
+not finish, its page keeps the previous version and the run carries a warning. None of this is a
+fix, because the slow step keeps growing. Rewriting that query (or adding an index it can use) is
+the actual fix and waits on maintainer approval.
+
+A replay of the real trigger times (2026-10-25 to 11-08) supports `false` over `true`. At a 22-min
+run, `true` still finishes 14.3 runs a day against 17.6 for `false`, but the worst wait for a
+fresh report is 67 min against 44. At 30 min the gap widens to 113 against 60. The cost of
+`false` is runner time, which is free on this public repository.
 
 ### 3.7 Duplicated setup work
 
