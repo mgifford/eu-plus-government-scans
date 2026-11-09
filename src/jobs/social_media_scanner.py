@@ -13,11 +13,78 @@ from uuid import uuid4
 from src.lib.country_utils import country_filename_to_code, iter_seed_toon_files
 from src.lib.settings import Settings
 from src.services.social_media_scanner import (
+    LEGACY_PLATFORMS,
+    MODERN_PLATFORMS,
     SOCIAL_PLATFORMS_VERSION,
     SocialMediaScanResult,
     SocialMediaScanner,
+    _classify_tier,
+    reclassify_mastodon_links,
 )
 from src.storage.schema import initialize_schema
+
+
+def reclassify_stored_links(db_path: Path) -> int:
+    """Move links that an older scanner version filed under Mastodon.
+
+    Before platforms version 3 the ``/@name`` Mastodon heuristic also matched
+    TikTok, YouTube, Threads, Medium and Substack profiles, so those links sit
+    in ``mastodon_links`` of older rows.  The report counts a page under every
+    platform that any of its scans found, so those rows would keep inflating
+    the Mastodon figure even after every page had been rescanned.
+
+    Each older row's Mastodon links are re-sorted with the current rules and
+    ``social_tier`` is recomputed.  ``platforms_version`` is left alone so the
+    page is still rescanned: an older scan never stored YouTube or TikTok links
+    that lacked a ``/@`` path.  Running it again changes nothing.
+
+    Args:
+        db_path: SQLite database holding ``url_social_media_results``.
+
+    Returns:
+        Number of rows updated.
+    """
+    platforms = LEGACY_PLATFORMS + MODERN_PLATFORMS
+    # Column names come from hardcoded tuples, never from input.
+    set_clause = ", ".join(f"{p}_links = ?" for p in platforms)
+    conn = sqlite3.connect(db_path)
+    conn.row_factory = sqlite3.Row
+    try:
+        rows = conn.execute(
+            "SELECT * FROM url_social_media_results "
+            "WHERE platforms_version < ? AND mastodon_links != '[]'",
+            (SOCIAL_PLATFORMS_VERSION,),
+        ).fetchall()
+        updated = 0
+        for row in rows:
+            stored = json.loads(row["mastodon_links"])
+            moved = reclassify_mastodon_links(stored)
+            if moved.get("mastodon", []) == stored:
+                continue
+            links = {p: json.loads(row[f"{p}_links"]) for p in platforms}
+            links["mastodon"] = []
+            for platform, extra in moved.items():
+                links[platform] += [u for u in extra if u not in links[platform]]
+            result = SocialMediaScanResult(
+                url=row["url"],
+                is_reachable=bool(row["is_reachable"]),
+                **{f"{p}_links": links[p] for p in platforms},
+            )
+            conn.execute(
+                f"UPDATE url_social_media_results SET {set_clause}, social_tier = ? "
+                "WHERE url = ? AND scan_id = ?",
+                (
+                    *(json.dumps(links[p]) for p in platforms),
+                    _classify_tier(result),
+                    row["url"],
+                    row["scan_id"],
+                ),
+            )
+            updated += 1
+        conn.commit()
+        return updated
+    finally:
+        conn.close()
 
 
 class SocialMediaScannerJob:
@@ -29,6 +96,9 @@ class SocialMediaScannerJob:
             timeout_seconds=settings.crawl_timeout_seconds,
         )
         self.db_path = initialize_schema(settings.metadata_db_url)
+        reclassified = reclassify_stored_links(self.db_path)
+        if reclassified:
+            print(f"Reclassified stored links in {reclassified} older social media rows")
 
     def _load_toon_file(self, toon_path: Path) -> dict:
         """Load and parse a TOON file."""
@@ -127,8 +197,9 @@ class SocialMediaScannerJob:
                     (url, country_code, scan_id, is_reachable,
                      twitter_links, x_links, bluesky_links, mastodon_links,
                      facebook_links, linkedin_links,
+                     tiktok_links, youtube_links, blacksky_links, gander_links,
                      social_tier, error_message, scanned_at, platforms_version)
-                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                     """,
                     (
                         result.url,
@@ -141,6 +212,10 @@ class SocialMediaScannerJob:
                         json.dumps(result.mastodon_links),
                         json.dumps(result.facebook_links),
                         json.dumps(result.linkedin_links),
+                        json.dumps(result.tiktok_links),
+                        json.dumps(result.youtube_links),
+                        json.dumps(result.blacksky_links),
+                        json.dumps(result.gander_links),
                         result.social_tier,
                         result.error_message,
                         result.scanned_at,
@@ -180,6 +255,10 @@ class SocialMediaScannerJob:
                         "mastodon": result.mastodon_links,
                         "facebook": result.facebook_links,
                         "linkedin": result.linkedin_links,
+                        "tiktok": result.tiktok_links,
+                        "youtube": result.youtube_links,
+                        "blacksky": result.blacksky_links,
+                        "gander": result.gander_links,
                     }
 
         return toon_data
@@ -260,6 +339,10 @@ class SocialMediaScannerJob:
                 "mastodon_count": 0,
                 "facebook_count": 0,
                 "linkedin_count": 0,
+                "tiktok_count": 0,
+                "youtube_count": 0,
+                "blacksky_count": 0,
+                "gander_count": 0,
                 "tier_counts": {},
                 "output_path": str(
                     toon_path.parent / f"{toon_path.stem}_social{toon_path.suffix}"
@@ -310,6 +393,10 @@ class SocialMediaScannerJob:
         mastodon_count = sum(1 for r in scan_results.values() if r.mastodon_links)
         facebook_count = sum(1 for r in scan_results.values() if r.facebook_links)
         linkedin_count = sum(1 for r in scan_results.values() if r.linkedin_links)
+        tiktok_count = sum(1 for r in scan_results.values() if r.tiktok_links)
+        youtube_count = sum(1 for r in scan_results.values() if r.youtube_links)
+        blacksky_count = sum(1 for r in scan_results.values() if r.blacksky_links)
+        gander_count = sum(1 for r in scan_results.values() if r.gander_links)
 
         tier_counts: Dict[str, int] = {}
         for r in scan_results.values():
@@ -330,6 +417,10 @@ class SocialMediaScannerJob:
             "mastodon_count": mastodon_count,
             "facebook_count": facebook_count,
             "linkedin_count": linkedin_count,
+            "tiktok_count": tiktok_count,
+            "youtube_count": youtube_count,
+            "blacksky_count": blacksky_count,
+            "gander_count": gander_count,
             "tier_counts": tier_counts,
             "output_path": str(output_path),
         }
@@ -344,7 +435,11 @@ class SocialMediaScannerJob:
         print(f"  X:           {x_count}")
         print(f"  Facebook:    {facebook_count}")
         print(f"  LinkedIn:    {linkedin_count}")
+        print(f"  TikTok:      {tiktok_count}")
+        print(f"  YouTube:     {youtube_count}")
         print(f"  Bluesky:     {bluesky_count}")
+        print(f"  Blacksky:    {blacksky_count}")
+        print(f"  Gander:      {gander_count}")
         print(f"  Mastodon:    {mastodon_count}")
         for tier, count in sorted(tier_counts.items()):
             print(f"  [{tier}]: {count}")

@@ -3,6 +3,16 @@ title: Social Media Scanning
 layout: page
 ---
 
+> **Method change, November 2026.** Until this change, any link whose address
+> contained `/@name` was counted as Mastodon. TikTok, YouTube, Threads, Medium
+> and Substack use the same pattern, so their links were counted as Mastodon
+> too. That overstated Mastodon use and raised Digital Sovereignty Scores.
+> Results stored before the change are corrected automatically, and TikTok,
+> YouTube, Blacksky and Gander are now tracked as platforms of their own.
+> TikTok and YouTube counts stay incomplete until every page has been
+> rescanned, because older scans kept only the TikTok and YouTube links that
+> used `/@name`.
+
 <!-- SOCIAL_MEDIA_STATS_START -->
 
 <div id="sm-tier-pie-container" style="float:right;margin:0 0 1rem 1.5rem;width:260px;max-width:45%;">
@@ -163,13 +173,22 @@ overloading government servers.
 | **X** | `x.com` |
 | **Facebook** | `facebook.com`, `fb.com` |
 | **LinkedIn** | `linkedin.com` |
+| **TikTok** | `tiktok.com`, `m.tiktok.com`, `vm.tiktok.com` |
+| **YouTube** | `youtube.com`, `m.youtube.com`, `youtu.be` |
 
 ### Modern / Open Social Media (decentralised or open platforms)
 
 | Platform | Domains detected |
 |----------|-----------------|
 | **Bluesky** | `bsky.app`, `bsky.social` |
+| **Blacksky** | `blacksky.community` (an AT Protocol app, like Bluesky) |
+| **Gander** | `gander.social`, `gandersocial.ca` (a Canadian AT Protocol app) |
 | **Mastodon / Fediverse** | 40+ known instances + `/@username` pattern detection |
+
+The `/@username` pattern is only applied to hosts that are not listed above.
+Threads, Medium and Substack also use `/@username` addresses but are not
+counted as Mastodon. Threads lets some accounts federate with Mastodon, but it
+is run by Meta, so it is not treated as an open platform.
 
 ---
 
@@ -181,8 +200,8 @@ Each scanned page is assigned one of five tiers:
 |------|---------|
 | `unreachable` | Page could not be fetched (network error, timeout, 4xx/5xx) |
 | `no_social` | Page is reachable but contains no recognised social media links |
-| `twitter_only` | Page links only to legacy platforms (Twitter, X, Facebook, or LinkedIn) |
-| `modern_only` | Page links only to Bluesky or Mastodon (modern / open platforms) |
+| `twitter_only` | Page links only to legacy platforms (Twitter, X, Facebook, LinkedIn, TikTok or YouTube) |
+| `modern_only` | Page links only to modern / open platforms (Bluesky, Blacksky, Gander or Mastodon) |
 | `mixed` | Page links to at least one legacy platform **and** at least one modern platform |
 
 ---
@@ -254,7 +273,11 @@ Each page entry gains a `social_media` field:
     "x_links": [],
     "facebook_links": [],
     "linkedin_links": [],
+    "tiktok_links": [],
+    "youtube_links": [],
     "bluesky_links": ["https://bsky.app/profile/example.bsky.social"],
+    "blacksky_links": [],
+    "gander_links": [],
     "mastodon_links": []
   }
 }
@@ -272,7 +295,11 @@ Each page entry gains a `social_media` field:
 | `x_links` | TEXT | JSON list of `x.com` hrefs found |
 | `facebook_links` | TEXT | JSON list of `facebook.com` / `fb.com` hrefs found |
 | `linkedin_links` | TEXT | JSON list of `linkedin.com` hrefs found |
+| `tiktok_links` | TEXT | JSON list of TikTok hrefs found |
+| `youtube_links` | TEXT | JSON list of YouTube hrefs found |
 | `bluesky_links` | TEXT | JSON list of Bluesky hrefs found |
+| `blacksky_links` | TEXT | JSON list of Blacksky hrefs found |
+| `gander_links` | TEXT | JSON list of Gander hrefs found |
 | `mastodon_links` | TEXT | JSON list of Mastodon hrefs found |
 | `social_tier` | TEXT | Tier classification (see above) |
 | `scanned_at` | TEXT | ISO-8601 timestamp of scan |
