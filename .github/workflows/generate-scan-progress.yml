@@ -19,10 +19,15 @@ on:
     types:
       - completed
 
-# Only one report-generation job at a time; newer runs cancel older queued ones.
+# Only one report-generation run at a time.  A new trigger waits for the active
+# run to finish instead of cancelling it; GitHub keeps at most one pending run
+# per group and a newer trigger replaces it, so the queue cannot grow and the
+# run that starts next always sees the newest data.  With cancel-in-progress
+# the five workflow_run triggers, which can arrive minutes apart, kept killing
+# runs before they could finish.  See WORKFLOW_ORCHESTRATION_AUDIT.md 3.6.
 concurrency:
   group: scan-progress-report
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
@@ -31,7 +36,11 @@ jobs:
   generate-progress-report:
     if: ${{ github.event_name != 'workflow_run' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main') }}
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    # The technology-Lighthouse correlation step grows with every scan cycle
+    # (13.2 min of a 14.9 min job on 2026-10-18, the last run to finish).  That
+    # step has its own 30-minute cap; 45 minutes covers the cap plus the rest
+    # of the job, which takes about 2 minutes.  See WORKFLOW_ORCHESTRATION_AUDIT.md 3.6.
+    timeout-minutes: 45
     permissions:
       contents: write
       actions: read
@@ -174,13 +183,29 @@ jobs:
             --seeds-dir data/toon-seeds/countries \
             2>&1 | tee lighthouse-report-output.txt
 
+      # Capped and allowed to fail, so that this one report can never again
+      # stop every other report from being committed and deployed.  If it
+      # fails or hits the cap, the previous docs/tech-lighthouse.md stays in
+      # place and the next step puts a warning on the run.
       - name: Generate technology–Lighthouse correlation report
+        id: tech_lighthouse
+        timeout-minutes: 30
+        continue-on-error: true
         run: |
           set -o pipefail
           python3 -m src.cli.generate_tech_lighthouse_report \
             --page docs/tech-lighthouse.md \
             --data docs/tech-lighthouse-data.json \
             2>&1 | tee tech-lighthouse-report-output.txt
+
+      # outcome is the result before continue-on-error is applied.  The
+      # runner marks a step that hits its own timeout as failed and then
+      # applies continue-on-error (actions/runner, StepsRunner.cs), but the
+      # docs do not promise that, so compare against success.
+      - name: Warn when the correlation report did not finish
+        if: steps.tech_lighthouse.outcome != 'success'
+        run: |
+          echo "::warning title=Correlation report stale::generate_tech_lighthouse_report ended with '${{ steps.tech_lighthouse.outcome }}' (30-minute cap); docs/tech-lighthouse.md was not regenerated."
 
       - name: Generate scan cycle pace report
         run: |

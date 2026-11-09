@@ -55,7 +55,7 @@ to manage cron-driven scan cycles.
 
 | Workflow | Purpose | Trigger | Cron (UTC) | Runs/day or month | Job timeout | Concurrency group |
 |---|---|---|---|---|---|---|
-| `generate-scan-progress.yml` | Regenerate all published progress/report pages | schedule + dispatch + `workflow_run` (5 scan workflows) | `15 */2 * * *` | 12/day **plus** up to 5 extra triggers/day from `workflow_run` | 15 min | `scan-progress-report` (cancel-in-progress: true) |
+| `generate-scan-progress.yml` | Regenerate all published progress/report pages | schedule + dispatch + `workflow_run` (5 scan workflows) | `15 */2 * * *` | 12/day **plus** up to 5 extra triggers/day from `workflow_run` | 45 min (was 15; see 3.6) | `scan-progress-report` (cancel-in-progress: false; was true, see 3.6) |
 | `issue-triggered-validation.yml` | Poll for issue-triggered ad-hoc validation, circuit-breaker gated | schedule + dispatch | `0 * * * *` | 24 | 60 min | `issue-check-runs` |
 | `reopen-validation-cycle.yml` | Kick off a new validation cycle | schedule + dispatch | `0 0 1 1,4,7,10 *` | 4/year | none set | none |
 | `detect-orphans.yml` | Monthly orphaned-domain detection | schedule + dispatch | `0 6 1 * *` | 1/month | 15 min | none |
@@ -243,6 +243,34 @@ still being written. Compounding this, `deploy-pages.yml` listens for `generate-
 completions too, so a report regeneration with no real data change still triggers a full site rebuild
 and deploy.
 
+**[measured, 2026-11-08]** The workflow did not finish once between 2026-10-18 05:33 UTC and
+2026-11-08, so every published report froze on that date. Two causes overlapped:
+
+- **Job timeout.** The "Generate technology–Lighthouse correlation report" step grew from 1.3 min
+  (2026-09-05) to 7.9 min (09-29) to 13.2 min (10-18), while every other step together stayed near
+  2 min. The last successful run took 14.9 min against a 15-min job timeout. Since then the step
+  has been killed at about 13 min in every run. The cause is the query in
+  `src/cli/generate_tech_lighthouse_report.py`: SQLite resolves each row's correlated
+  `MAX(scanned_at)` subquery through the `country_code` index rather than the `(url, scan_id)`
+  primary key, so it scans every row of that country for each row. Time grows with the square of
+  the row count, and the result tables are append-only, so the step slows down with every scan cycle.
+- **Cancel-in-progress.** In the 15 days from 2026-10-25 the workflow ran 18.5 times a day, and
+  19.5% of gaps between runs were under 20 min (32.9% under 30 min). Of 271 cancelled runs,
+  38 were cancelled by a newer run before reaching the timeout. Three of those were cancelled
+  by a `workflow_run` trigger whose job was then skipped, because workflow-level concurrency is
+  applied before the job's `if:`.
+
+The job timeout is now 45 min and `cancel-in-progress` is false. The correlation step also has its
+own 30-min cap and `continue-on-error`, so it can no longer hold back the other reports. If it does
+not finish, its page keeps the previous version and the run carries a warning. None of this is a
+fix, because the slow step keeps growing. Rewriting that query (or adding an index it can use) is
+the actual fix and waits on maintainer approval.
+
+A replay of the real trigger times (2026-10-25 to 11-08) supports `false` over `true`. At a 22-min
+run, `true` still finishes 14.3 runs a day against 17.6 for `false`, but the worst wait for a
+fresh report is 67 min against 44. At 30 min the gap widens to 113 against 60. The cost of
+`false` is runner time, which is free on this public repository.
+
 ### 3.7 Duplicated setup work
 
 Setup/teardown overhead is small in absolute terms (~30 sec/run, Section 2), but at current volume
@@ -403,7 +431,7 @@ creation / metadata merging / report publication into different concurrency doma
 | *(none — scanning partitions run unconstrained)* | Nothing shared — see Section 9, each scanner's partitions write to their own immutable per-partition artifact, not a shared file | All partition-worker jobs, any scanner | n/a |
 | `metadata-merge-<scanner>` (one per scanner, not one shared group) | The scanner's own SQLite merge step only | The single merge job per scanner run, after its partitions complete | true (a superseded merge attempt is safe to cancel and retry) |
 | `scan-relationships-commit` | The `docs/data/relationships.jsonl` / `summaries/` git commit step specifically | `scan-relationships.yml`'s commit step only | false (never drop in-flight commit data) |
-| `scan-progress-report` (existing, keep) | The generated report pages | `generate-scan-progress.yml` | true (existing, correct — a stale report-generation attempt should yield to a newer one) |
+| `scan-progress-report` (existing, keep) | The generated report pages | `generate-scan-progress.yml` | false (changed 2026-11-08: yielding to a newer attempt starves the report once a run outlasts the gap between triggers; see 3.6) |
 | `pages` (existing, keep) | The Pages deployment | `deploy-pages.yml` | false (existing, correct — never cancel a deploy in flight) |
 | `issue-check-runs` (existing, keep — already correctly isolated) | Issue-polling job | `issue-triggered-validation.yml` | false |
 
