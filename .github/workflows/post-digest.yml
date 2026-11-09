@@ -1,0 +1,98 @@
+name: Post weekly digest to Mastodon
+
+# Publishes ONE reviewed draft from a `digest-draft` issue opened by
+# weekly-digest.yml.  It runs only when a maintainer starts it by hand, and
+# previews by default: untick "dry run" to publish.
+#
+# Setup (once, by a maintainer):
+#   - Repository secrets MASTODON_INSTANCE_URL (e.g. https://mastodon.example)
+#     and MASTODON_ACCESS_TOKEN (scopes: write:statuses and profile;
+#     read:accounts instead of profile before Mastodon 4.3).
+#   - On the account, turn on "This is an automated account"; posting is
+#     refused until it is set.
+#   - Optional: add required reviewers to the `mastodon` environment for a
+#     second approval before anything is posted.
+# See docs/weekly-digest.md.
+
+on:
+  workflow_dispatch:
+    inputs:
+      issue:
+        description: "Number of the 'Weekly digest drafts' issue"
+        required: true
+        type: number
+      draft:
+        description: "Draft number within that issue"
+        required: true
+        type: choice
+        options: ["1", "2", "3"]
+      dry_run:
+        description: "Dry run: check and show the draft without posting"
+        required: true
+        type: boolean
+        default: true
+
+concurrency:
+  group: post-digest
+  cancel-in-progress: false
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment: mastodon
+    permissions:
+      contents: read
+      issues: write   # record the posted link on the issue
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Read the reviewed issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE: ${{ inputs.issue }}
+        run: |
+          gh api "repos/${GITHUB_REPOSITORY}/issues/${ISSUE}" > issue.json
+          gh api --paginate "repos/${GITHUB_REPOSITORY}/issues/${ISSUE}/comments" \
+            --jq '.[].body' > comments.txt
+
+      - name: Check and post the draft
+        env:
+          DRAFT: ${{ inputs.draft }}
+          DRY_RUN: ${{ inputs.dry_run }}
+          MASTODON_INSTANCE_URL: ${{ !inputs.dry_run && secrets.MASTODON_INSTANCE_URL || '' }}
+          MASTODON_ACCESS_TOKEN: ${{ !inputs.dry_run && secrets.MASTODON_ACCESS_TOKEN || '' }}
+        run: |
+          ARGS=(--issue-json issue.json --comments-file comments.txt
+                --draft "$DRAFT" --result-file result.json)
+          if [ "$DRY_RUN" = "true" ]; then
+            ARGS+=(--dry-run)
+          fi
+          python3 -m src.cli.post_digest "${ARGS[@]}"
+
+      - name: Record the post on the issue
+        if: ${{ !inputs.dry_run }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE: ${{ inputs.issue }}
+          DRAFT: ${{ inputs.draft }}
+        run: |
+          URL=$(jq -r '.url' result.json)
+          printf '<!-- digest-posted:%s -->\nPosted draft %s: %s\n' "$DRAFT" "$DRAFT" "$URL" \
+            > comment.md
+          gh issue comment "$ISSUE" --body-file comment.md
+          echo "Posted draft ${DRAFT}: ${URL}" >> "$GITHUB_STEP_SUMMARY"
