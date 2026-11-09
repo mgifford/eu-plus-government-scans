@@ -1,7 +1,10 @@
 """Tests for Generate Scan Progress workflow artifact contents."""
 
+import re
+import subprocess
 from pathlib import Path
 
+import pytest
 import yaml
 
 
@@ -61,3 +64,50 @@ def test_correlation_report_cannot_block_other_reports() -> None:
         "steps.tech_lighthouse.outcome" in str(s.get("if", ""))
         for s in steps[steps.index(step) + 1:]
     ), "No later step warns when the correlation report did not finish."
+
+
+def _commit_step_paths(steps: list[dict]) -> list[str]:
+    """Return the paths the commit step passes to ``git add``."""
+    step = next((s for s in steps if s.get("name") == "Commit progress report to repository"), None)
+    assert step is not None, "Commit progress report to repository step is missing."
+    match = re.search(r"git add ((?:[^\n]*\\\n)*[^\n]*)", step.get("run", ""))
+    assert match is not None, "The commit step no longer runs git add."
+    return match.group(1).replace("\\\n", " ").split()
+
+
+def test_commit_step_stages_every_tracked_file_the_workflow_writes() -> None:
+    """A tracked report left out of ``git add`` blocks the push.
+
+    The commit step runs ``git pull --rebase`` after committing, and git
+    refuses to rebase while a tracked file has unstaged changes.  That is how
+    docs/user-preferences.md, regenerated on every run but never staged, failed
+    the first run to reach the commit step after the 2026-11 freeze.
+    """
+    workflow_path = Path(".github/workflows/generate-scan-progress.yml")
+    workflow = yaml.safe_load(workflow_path.read_text(encoding="utf-8"))
+    steps = workflow.get("jobs", {}).get("generate-progress-report", {}).get("steps", [])
+
+    written = {
+        path
+        for step in steps
+        for path in re.findall(
+            r"(?:--(?:page|output|update-index|index|data|csv)\s+|>\s*)(docs/[^\s\;]+)",
+            step.get("run", ""),
+        )
+    }
+    assert "docs/user-preferences.md" in written, "Output paths are no longer found."
+
+    try:
+        listed = subprocess.run(
+            ["git", "ls-files", "--", *sorted(written)],
+            capture_output=True, check=True, text=True,
+        ).stdout.split()
+    except (OSError, subprocess.CalledProcessError):
+        pytest.skip("needs a git checkout to tell which reports are tracked")
+
+    staged = _commit_step_paths(steps)
+    missing = [
+        path for path in listed
+        if not any(path == entry or path.startswith(entry.rstrip("/") + "/") for entry in staged)
+    ]
+    assert missing == [], f"Tracked reports the commit step never stages: {missing}"

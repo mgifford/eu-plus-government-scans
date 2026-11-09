@@ -327,6 +327,7 @@ jobs:
                   docs/technology-scanning.md docs/technology-index.json \
                   docs/third-party-tools.md \
                   docs/accessibility-statements.md \
+                  docs/user-preferences.md \
                   docs/lighthouse-results.md \
                   docs/tech-lighthouse.md \
                   docs/data/gov-domains.json \
