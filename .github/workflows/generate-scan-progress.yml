@@ -198,9 +198,10 @@ jobs:
             --data docs/tech-lighthouse-data.json \
             2>&1 | tee tech-lighthouse-report-output.txt
 
-      # outcome is the result before continue-on-error is applied.  Compare
-      # against success rather than failure, because a step that hits its
-      # timeout is not documented as reporting "failure".
+      # outcome is the result before continue-on-error is applied.  The
+      # runner marks a step that hits its own timeout as failed and then
+      # applies continue-on-error (actions/runner, StepsRunner.cs), but the
+      # docs do not promise that, so compare against success.
       - name: Warn when the correlation report did not finish
         if: steps.tech_lighthouse.outcome != 'success'
         run: |
