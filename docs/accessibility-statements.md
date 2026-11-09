@@ -5,14 +5,14 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-10-18 05:20 UTC — last scan: 2026-10-17_
+_Stats as of 2026-11-09 19:29 UTC — last scan: 2026-11-09_
 
-**346** scan batches run
+**509** scan batches run
 
 **87,690** of **87,696** available pages scanned (**100.0%** coverage)
-**81,513** of **87,690** scanned pages were reachable (**93.0%**)
-**41,432** of **81,513** reachable pages have an accessibility statement (**50.8%**)
-**36,486** pages have the statement link in the footer (**88.1%** of pages with a statement)
+**82,033** of **87,690** scanned pages were reachable (**93.5%**)
+**41,981** of **82,033** reachable pages have an accessibility statement (**51.2%**)
+**37,003** pages have the statement link in the footer (**88.1%** of pages with a statement)
 
 📥 Machine-readable results are available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
 
@@ -26,39 +26,39 @@ Each country entry in the JSON file includes page-level evidence for pages with 
 
 | Country | Scanned | Available | Reachable | Has Statement | In Footer | Statement % | Scan Period |
 |---------|---------|-----------|-----------|--------------|-----------|------------|-------------|
-| Austria | 822 | 822 | 788 | 556 | 525 | 70.6% | Aug 2026 – Sep 2026 |
-| Belgium | 1,329 | 1,329 | 1,239 | 580 | 527 | 46.8% | Aug 2026 – Oct 2026 |
-| Bulgaria | 353 | 353 | 305 | 96 | 86 | 31.5% | Aug 2026 – Sep 2026 |
-| Canada | 4,469 | 4,469 | 4,241 | 1,067 | 876 | 25.2% | Aug 2026 – Oct 2026 |
-| Croatia | 257 | 257 | 254 | 105 | 80 | 41.3% | Aug 2026 – Sep 2026 |
-| Czechia | 866 | 866 | 798 | 446 | 397 | 55.9% | Aug 2026 – Sep 2026 |
-| Denmark | 1,536 | 1,536 | 1,507 | 959 | 941 | 63.6% | Aug 2026 – Sep 2026 |
-| Estonia | 401 | 401 | 390 | 149 | 79 | 38.2% | Aug 2026 – Sep 2026 |
-| Finland | 199 | 199 | 189 | 134 | 127 | 70.9% | Aug 2026 – Sep 2026 |
-| France | 10,009 | 10,009 | 9,123 | 4,982 | 4,854 | 54.6% | Aug 2026 – Oct 2026 |
-| Germany | 6,599 | 6,599 | 6,498 | 4,696 | 3,963 | 72.3% | Aug 2026 – Oct 2026 |
-| Greece | 1,752 | 1,752 | 1,634 | 424 | 273 | 25.9% | Aug 2026 – Oct 2026 |
-| Hungary | 392 | 392 | 293 | 57 | 49 | 19.5% | Aug 2026 – Sep 2026 |
-| Iceland | 145 | 145 | 143 | 15 | 5 | 10.5% | Aug 2026 – Sep 2026 |
-| Ireland | 536 | 536 | 499 | 254 | 241 | 50.9% | Aug 2026 – Sep 2026 |
-| Italy | 5,351 | 5,351 | 4,849 | 2,674 | 2,597 | 55.1% | Aug 2026 – Oct 2026 |
-| Latvia | 803 | 803 | 762 | 492 | 449 | 64.6% | Aug 2026 – Sep 2026 |
-| Lithuania | 122 | 122 | 114 | 1 | 0 | 0.9% | Aug 2026 – Sep 2026 |
-| Luxembourg | 573 | 573 | 521 | 345 | 334 | 66.2% | Aug 2026 – Sep 2026 |
-| Malta | 610 | 610 | 595 | 384 | 379 | 64.5% | Aug 2026 – Sep 2026 |
-| Netherlands | 945 | 945 | 903 | 413 | 405 | 45.7% | Aug 2026 – Oct 2026 |
-| Norway | 249 | 249 | 243 | 115 | 107 | 47.3% | Aug 2026 – Sep 2026 |
-| Poland | 14,951 | 14,951 | 13,803 | 5,847 | 3,740 | 42.4% | Aug 2026 – Oct 2026 |
-| Portugal | 3,508 | 3,508 | 3,207 | 811 | 670 | 25.3% | Aug 2026 – Oct 2026 |
-| Cyprus | 29 | 29 | 29 | 1 | 1 | 3.4% | Aug 2026 – Sep 2026 |
-| Romania | 807 | 807 | 351 | 30 | 10 | 8.5% | Aug 2026 – Oct 2026 |
-| Slovakia | 442 | 442 | 413 | 187 | 166 | 45.3% | Aug 2026 – Sep 2026 |
-| Slovenia | 214 | 214 | 207 | 116 | 81 | 56.0% | Aug 2026 – Sep 2026 |
-| Spain | 6,091 | 6,091 | 5,244 | 2,457 | 2,168 | 46.9% | Aug 2026 – Oct 2026 |
-| Sweden | 1,702 | 1,702 | 1,629 | 964 | 879 | 59.2% | Aug 2026 – Sep 2026 |
-| Switzerland | 2,123 | 2,123 | 2,082 | 1,034 | 1,033 | 49.7% | Aug 2026 – Sep 2026 |
-| United Kingdom | 19,511 | 19,511 | 18,666 | 11,047 | 10,450 | 59.2% | Aug 2026 – Oct 2026 |
-| **Total** | **87,696** | **87,696** | **81,519** | **41,438** | **36,492** | **50.8%** | — |
+| Austria | 822 | 822 | 788 | 560 | 533 | 71.1% | Aug 2026 – Oct 2026 |
+| Belgium | 1,329 | 1,329 | 1,239 | 584 | 531 | 47.1% | Aug 2026 – Nov 2026 |
+| Bulgaria | 353 | 353 | 308 | 97 | 87 | 31.5% | Aug 2026 – Oct 2026 |
+| Canada | 4,469 | 4,469 | 4,287 | 1,085 | 890 | 25.3% | Aug 2026 – Nov 2026 |
+| Croatia | 257 | 257 | 254 | 105 | 80 | 41.3% | Aug 2026 – Oct 2026 |
+| Czechia | 866 | 866 | 804 | 451 | 403 | 56.1% | Aug 2026 – Oct 2026 |
+| Denmark | 1,536 | 1,536 | 1,509 | 967 | 949 | 64.1% | Aug 2026 – Oct 2026 |
+| Estonia | 401 | 401 | 390 | 152 | 79 | 39.0% | Aug 2026 – Oct 2026 |
+| Finland | 199 | 199 | 189 | 134 | 127 | 70.9% | Aug 2026 – Oct 2026 |
+| France | 10,009 | 10,009 | 9,168 | 5,100 | 4,969 | 55.6% | Aug 2026 – Nov 2026 |
+| Germany | 6,599 | 6,599 | 6,505 | 4,706 | 3,978 | 72.3% | Aug 2026 – Nov 2026 |
+| Greece | 1,752 | 1,752 | 1,644 | 444 | 290 | 27.0% | Aug 2026 – Nov 2026 |
+| Hungary | 392 | 392 | 307 | 65 | 57 | 21.2% | Aug 2026 – Oct 2026 |
+| Iceland | 145 | 145 | 143 | 15 | 5 | 10.5% | Aug 2026 – Oct 2026 |
+| Ireland | 536 | 536 | 499 | 265 | 252 | 53.1% | Aug 2026 – Oct 2026 |
+| Italy | 5,351 | 5,351 | 4,894 | 2,721 | 2,639 | 55.6% | Aug 2026 – Nov 2026 |
+| Latvia | 803 | 803 | 767 | 493 | 452 | 64.3% | Aug 2026 – Oct 2026 |
+| Lithuania | 122 | 122 | 114 | 1 | 0 | 0.9% | Aug 2026 – Oct 2026 |
+| Luxembourg | 573 | 573 | 534 | 359 | 348 | 67.2% | Aug 2026 – Oct 2026 |
+| Malta | 610 | 610 | 595 | 386 | 381 | 64.9% | Aug 2026 – Oct 2026 |
+| Netherlands | 945 | 945 | 915 | 419 | 411 | 45.8% | Aug 2026 – Nov 2026 |
+| Norway | 249 | 249 | 243 | 115 | 109 | 47.3% | Aug 2026 – Oct 2026 |
+| Poland | 14,951 | 14,951 | 13,873 | 5,925 | 3,807 | 42.7% | Aug 2026 – Nov 2026 |
+| Portugal | 3,508 | 3,508 | 3,222 | 831 | 686 | 25.8% | Aug 2026 – Nov 2026 |
+| Cyprus | 29 | 29 | 29 | 1 | 1 | 3.4% | Aug 2026 – Oct 2026 |
+| Romania | 807 | 807 | 354 | 30 | 10 | 8.5% | Aug 2026 – Nov 2026 |
+| Slovakia | 442 | 442 | 416 | 190 | 169 | 45.7% | Aug 2026 – Oct 2026 |
+| Slovenia | 214 | 214 | 207 | 116 | 81 | 56.0% | Aug 2026 – Oct 2026 |
+| Spain | 6,091 | 6,091 | 5,435 | 2,527 | 2,232 | 46.5% | Aug 2026 – Nov 2026 |
+| Sweden | 1,702 | 1,702 | 1,631 | 973 | 888 | 59.7% | Aug 2026 – Oct 2026 |
+| Switzerland | 2,123 | 2,123 | 2,084 | 1,034 | 1,033 | 49.6% | Aug 2026 – Oct 2026 |
+| United Kingdom | 19,511 | 19,511 | 18,692 | 11,136 | 10,532 | 59.6% | Aug 2026 – Nov 2026 |
+| **Total** | **87,696** | **87,696** | **82,039** | **41,987** | **37,009** | **51.2%** | — |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
