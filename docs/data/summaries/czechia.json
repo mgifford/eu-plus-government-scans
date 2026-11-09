@@ -1,6 +1,6 @@
 {
   "country_code": "CZECHIA",
-  "total_relationships": 2618,
+  "total_relationships": 2619,
   "total_source_domains": 54,
   "top_source_domains": [
     {
@@ -9,7 +9,7 @@
     },
     {
       "domain": "brno.cz",
-      "count": 3475
+      "count": 3952
     },
     {
       "domain": "justice.cz",
@@ -211,47 +211,47 @@
     },
     {
       "domain": "brno.cz",
-      "count": 1678
+      "count": 1932
     },
     {
       "domain": "justice.cz",
       "count": 1368
     },
     {
+      "domain": "facebook.com",
+      "count": 783
+    },
+    {
       "domain": "googleapis.com",
       "count": 783
     },
     {
-      "domain": "facebook.com",
-      "count": 754
+      "domain": "instagram.com",
+      "count": 412
     },
     {
       "domain": "plzensky-kraj.cz",
       "count": 409
     },
     {
-      "domain": "instagram.com",
-      "count": 391
-    },
-    {
       "domain": "kraj-lbc.cz",
       "count": 382
+    },
+    {
+      "domain": "twitter.com",
+      "count": 363
     },
     {
       "domain": "mpsv.cz",
       "count": 360
     },
     {
-      "domain": "twitter.com",
-      "count": 352
+      "domain": "youtube.com",
+      "count": 353
     },
     {
       "domain": "psp.cz",
       "count": 332
-    },
-    {
-      "domain": "youtube.com",
-      "count": 330
     },
     {
       "domain": "googletagmanager.com",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "google.com",
-      "count": 243
+      "count": 248
     },
     {
       "domain": "linkedin.com",
@@ -346,16 +346,16 @@
       "count": 148
     },
     {
+      "domain": "smlouvy.gov.cz",
+      "count": 140
+    },
+    {
       "domain": "portal.gov.cz",
       "count": 140
     },
     {
       "domain": "highcharts.com",
       "count": 135
-    },
-    {
-      "domain": "smlouvy.gov.cz",
-      "count": 131
     },
     {
       "domain": "nzip.cz",
@@ -374,6 +374,10 @@
       "count": 103
     },
     {
+      "domain": "x.com",
+      "count": 96
+    },
+    {
       "domain": "tenderarena.cz",
       "count": 96
     },
@@ -382,16 +386,12 @@
       "count": 96
     },
     {
-      "domain": "x.com",
-      "count": 90
-    },
-    {
       "domain": "arcgis.com",
-      "count": 87
+      "count": 93
     },
     {
       "domain": "mvcr.cz",
-      "count": 83
+      "count": 86
     },
     {
       "domain": "zdravaova.cz",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 1553,
+    "editorial_link": 1554,
     "script_dependency": 326,
     "stylesheet_dependency": 276,
     "form_destination": 164,
     "image_or_media_dependency": 236,
     "font_or_preload_dependency": 63
   },
-  "generated_at": "2026-11-08T13:38:50.226766+00:00"
+  "generated_at": "2026-11-08T22:32:07.176651+00:00"
 }

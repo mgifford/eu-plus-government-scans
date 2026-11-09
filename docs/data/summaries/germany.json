@@ -1,11 +1,11 @@
 {
   "country_code": "GERMANY",
-  "total_relationships": 21932,
+  "total_relationships": 21935,
   "total_source_domains": 231,
   "top_source_domains": [
     {
       "domain": "sachsen.de",
-      "count": 95431
+      "count": 95437
     },
     {
       "domain": "rlp.de",
@@ -112,6 +112,10 @@
       "count": 672
     },
     {
+      "domain": "thw.de",
+      "count": 669
+    },
+    {
       "domain": "arbeitsagentur.de",
       "count": 668
     },
@@ -120,12 +124,8 @@
       "count": 659
     },
     {
-      "domain": "thw.de",
-      "count": 649
-    },
-    {
       "domain": "rki.de",
-      "count": 600
+      "count": 624
     },
     {
       "domain": "bundesimmobilien.de",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "sachsen.de",
-      "count": 83843
+      "count": 83849
     },
     {
       "domain": "rlp.de",
@@ -243,15 +243,15 @@
     },
     {
       "domain": "facebook.com",
-      "count": 7083
+      "count": 7084
     },
     {
       "domain": "instagram.com",
-      "count": 6853
+      "count": 6856
     },
     {
       "domain": "bund.de",
-      "count": 6218
+      "count": 6224
     },
     {
       "domain": "thueringen.de",
@@ -267,11 +267,11 @@
     },
     {
       "domain": "youtube.com",
-      "count": 4353
+      "count": 4355
     },
     {
       "domain": "linkedin.com",
-      "count": 3588
+      "count": 3590
     },
     {
       "domain": "berlin.de",
@@ -295,7 +295,7 @@
     },
     {
       "domain": "readspeaker.com",
-      "count": 1682
+      "count": 1683
     },
     {
       "domain": "zvg-portal.de",
@@ -323,7 +323,7 @@
     },
     {
       "domain": "google.com",
-      "count": 1102
+      "count": 1103
     },
     {
       "domain": "duesseldorf.de",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 11156,
+    "editorial_link": 11159,
     "font_or_preload_dependency": 350,
     "image_or_media_dependency": 2741,
     "script_dependency": 2861,
     "stylesheet_dependency": 2696,
     "form_destination": 2128
   },
-  "generated_at": "2026-11-08T13:38:50.320581+00:00"
+  "generated_at": "2026-11-09T16:06:59.416469+00:00"
 }

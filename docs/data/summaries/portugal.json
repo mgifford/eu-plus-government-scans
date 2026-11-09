@@ -211,15 +211,15 @@
     },
     {
       "domain": "facebook.com",
-      "count": 4015
+      "count": 4018
     },
     {
       "domain": "youtube.com",
-      "count": 3285
+      "count": 3288
     },
     {
       "domain": "instagram.com",
-      "count": 3142
+      "count": 3145
     },
     {
       "domain": "googletagmanager.com",
@@ -247,7 +247,7 @@
     },
     {
       "domain": "portugal.gov.pt",
-      "count": 1547
+      "count": 1550
     },
     {
       "domain": "wiremaze.com",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 1092
+      "count": 1095
     },
     {
       "domain": "cm-porto.pt",
@@ -287,7 +287,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 905
+      "count": 908
     },
     {
       "domain": "anmp.pt",
@@ -367,7 +367,7 @@
     },
     {
       "domain": "recuperarportugal.gov.pt",
-      "count": 467
+      "count": 470
     },
     {
       "domain": "cm-estarreja.pt",
@@ -414,5 +414,5 @@
     "form_destination": 747,
     "image_or_media_dependency": 1121
   },
-  "generated_at": "2026-11-08T13:38:50.077282+00:00"
+  "generated_at": "2026-11-09T16:06:59.113022+00:00"
 }

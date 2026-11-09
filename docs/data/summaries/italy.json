@@ -160,12 +160,12 @@
       "count": 883
     },
     {
-      "domain": "comune.napoli.it",
-      "count": 823
+      "domain": "istat.it",
+      "count": 836
     },
     {
-      "domain": "istat.it",
-      "count": 822
+      "domain": "comune.napoli.it",
+      "count": 823
     },
     {
       "domain": "comune.cremona.it",
@@ -231,7 +231,7 @@
     },
     {
       "domain": "agid.gov.it",
-      "count": 6639
+      "count": 6641
     },
     {
       "domain": "instagram.com",
@@ -414,5 +414,5 @@
     "form_destination": 1456,
     "font_or_preload_dependency": 263
   },
-  "generated_at": "2026-11-07T22:16:50.943393+00:00"
+  "generated_at": "2026-11-09T05:38:00.272118+00:00"
 }

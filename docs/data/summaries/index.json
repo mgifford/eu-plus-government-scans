@@ -34,29 +34,29 @@
     "total_source_domains": 34,
     "file": "norway.json"
   },
-  "CZECHIA": {
-    "total_relationships": 2618,
-    "total_source_domains": 54,
-    "file": "czechia.json"
-  },
-  "GERMANY": {
-    "total_relationships": 21932,
-    "total_source_domains": 231,
-    "file": "germany.json"
-  },
-  "ESTONIA": {
-    "total_relationships": 1650,
-    "total_source_domains": 32,
-    "file": "estonia.json"
-  },
   "IRELAND": {
     "total_relationships": 2130,
     "total_source_domains": 105,
     "file": "ireland.json"
   },
+  "GERMANY": {
+    "total_relationships": 21935,
+    "total_source_domains": 231,
+    "file": "germany.json"
+  },
+  "HUNGARY": {
+    "total_relationships": 1691,
+    "total_source_domains": 28,
+    "file": "hungary.json"
+  },
+  "MALTA": {
+    "total_relationships": 1720,
+    "total_source_domains": 3,
+    "file": "malta.json"
+  },
   "UNITED_KINGDOM_UK": {
-    "total_relationships": 321926,
-    "total_source_domains": 9397,
+    "total_relationships": 322334,
+    "total_source_domains": 9415,
     "file": "united_kingdom_uk.json"
   }
 }

@@ -29,7 +29,7 @@
     },
     {
       "domain": "culture.gov.gr",
-      "count": 868
+      "count": 903
     },
     {
       "domain": "pde.gov.gr",
@@ -207,11 +207,11 @@
   "top_target_domains": [
     {
       "domain": "googleapis.com",
-      "count": 3937
+      "count": 3939
     },
     {
       "domain": "facebook.com",
-      "count": 2200
+      "count": 2202
     },
     {
       "domain": "diavgeia.gov.gr",
@@ -219,11 +219,11 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 1583
+      "count": 1586
     },
     {
       "domain": "youtube.com",
-      "count": 1448
+      "count": 1450
     },
     {
       "domain": "minedu.gov.gr",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "userway.org",
-      "count": 884
+      "count": 886
     },
     {
       "domain": "jsdelivr.net",
@@ -263,7 +263,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 835
+      "count": 838
     },
     {
       "domain": "pdm.gov.gr",
@@ -306,16 +306,16 @@
       "count": 390
     },
     {
+      "domain": "culture.gov.gr",
+      "count": 385
+    },
+    {
       "domain": "eopyy.gov.gr",
       "count": 384
     },
     {
       "domain": "minagric.gr",
       "count": 377
-    },
-    {
-      "domain": "culture.gov.gr",
-      "count": 375
     },
     {
       "domain": "ypes.gr",
@@ -414,5 +414,5 @@
     "script_dependency": 1285,
     "stylesheet_dependency": 1055
   },
-  "generated_at": "2026-11-07T13:20:30.233212+00:00"
+  "generated_at": "2026-11-08T22:32:06.964182+00:00"
 }
