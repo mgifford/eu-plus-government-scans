@@ -39,7 +39,7 @@ A skipped week is better than a post built on stale numbers.
 
 ## Checking a post
 
-Each post links to an evidence file for its week in [`docs/data/digest/`](https://github.com/mgifford/eu-plus-government-scans/tree/main/docs/data/digest). The file is JSON and lists:
+Each post links to an evidence file for its week, stored in the repository as `docs/data/digest/<week-ending>.json`. The file is JSON and lists:
 
 - every page counted as gained or lost, with its country, scan time, how many earlier scans it was compared with, and the links found;
 - the number of pages compared, in total and per country; and
