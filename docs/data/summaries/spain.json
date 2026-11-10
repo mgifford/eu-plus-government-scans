@@ -1,6 +1,6 @@
 {
   "country_code": "SPAIN",
-  "total_relationships": 16721,
+  "total_relationships": 16712,
   "total_source_domains": 241,
   "top_source_domains": [
     {
@@ -9,7 +9,7 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 37869
+      "count": 38183
     },
     {
       "domain": "gva.es",
@@ -21,19 +21,19 @@
     },
     {
       "domain": "aragon.es",
-      "count": 5291
+      "count": 5471
     },
     {
       "domain": "madrid.es",
-      "count": 4268
+      "count": 4544
     },
     {
       "domain": "juntaex.es",
-      "count": 3126
+      "count": 3385
     },
     {
       "domain": "caib.es",
-      "count": 2908
+      "count": 2935
     },
     {
       "domain": "sede.gob.es",
@@ -41,51 +41,59 @@
     },
     {
       "domain": "ayto-torrejon.es",
-      "count": 2282
+      "count": 2460
     },
     {
       "domain": "sanidad.gob.es",
-      "count": 1961
-    },
-    {
-      "domain": "carm.es",
-      "count": 1797
+      "count": 2028
     },
     {
       "domain": "defensa.gob.es",
-      "count": 1743
+      "count": 1983
     },
     {
-      "domain": "jccm.es",
-      "count": 1522
-    },
-    {
-      "domain": "inaem.gob.es",
-      "count": 1411
+      "domain": "carm.es",
+      "count": 1813
     },
     {
       "domain": "hacienda.gob.es",
-      "count": 1408
+      "count": 1657
+    },
+    {
+      "domain": "jccm.es",
+      "count": 1572
+    },
+    {
+      "domain": "inaem.gob.es",
+      "count": 1442
     },
     {
       "domain": "digital.gob.es",
-      "count": 1275
+      "count": 1390
     },
     {
       "domain": "aemet.es",
-      "count": 1131
+      "count": 1227
     },
     {
       "domain": "ayto-meco.es",
       "count": 1120
     },
     {
-      "domain": "valencia.es",
-      "count": 1082
+      "domain": "ayto-fuenlabrada.es",
+      "count": 1074
     },
     {
-      "domain": "ayto-fuenlabrada.es",
-      "count": 1060
+      "domain": "juntadeandalucia.es",
+      "count": 1038
+    },
+    {
+      "domain": "ayto-alcaladehenares.es",
+      "count": 1028
+    },
+    {
+      "domain": "valencia.es",
+      "count": 993
     },
     {
       "domain": "asturias.es",
@@ -93,43 +101,35 @@
     },
     {
       "domain": "cultura.gob.es",
-      "count": 961
-    },
-    {
-      "domain": "ayto-alcaladehenares.es",
-      "count": 945
-    },
-    {
-      "domain": "juntadeandalucia.es",
-      "count": 921
+      "count": 987
     },
     {
       "domain": "seg-social.es",
-      "count": 885
+      "count": 966
     },
     {
       "domain": "miteco.gob.es",
-      "count": 797
+      "count": 951
     },
     {
       "domain": "mjusticia.gob.es",
-      "count": 759
+      "count": 800
+    },
+    {
+      "domain": "educacionfpydeportes.gob.es",
+      "count": 760
+    },
+    {
+      "domain": "inclusion.gob.es",
+      "count": 754
     },
     {
       "domain": "comercio.gob.es",
       "count": 720
     },
     {
-      "domain": "inclusion.gob.es",
-      "count": 680
-    },
-    {
-      "domain": "educacionfpydeportes.gob.es",
-      "count": 677
-    },
-    {
       "domain": "transportes.gob.es",
-      "count": 633
+      "count": 681
     },
     {
       "domain": "consumo.gob.es",
@@ -144,64 +144,64 @@
       "count": 592
     },
     {
+      "domain": "dgt.es",
+      "count": 569
+    },
+    {
+      "domain": "aemps.gob.es",
+      "count": 560
+    },
+    {
+      "domain": "ine.es",
+      "count": 551
+    },
+    {
+      "domain": "ayto-villacanada.es",
+      "count": 545
+    },
+    {
       "domain": "dgt.gob.es",
       "count": 532
     },
     {
-      "domain": "ine.es",
-      "count": 526
+      "domain": "administracion.gob.es",
+      "count": 510
     },
     {
-      "domain": "dgt.es",
-      "count": 509
+      "domain": "ayto-nuevobaztan.es",
+      "count": 502
     },
     {
       "domain": "ayto-pinto.es",
       "count": 495
     },
     {
-      "domain": "aemps.gob.es",
-      "count": 487
-    },
-    {
-      "domain": "administracion.gob.es",
-      "count": 483
-    },
-    {
       "domain": "ayto-smv.es",
       "count": 478
     },
     {
-      "domain": "ayto-villacanada.es",
-      "count": 474
-    },
-    {
-      "domain": "ayto-nuevobaztan.es",
-      "count": 450
-    },
-    {
       "domain": "zaragoza.es",
-      "count": 424
+      "count": 472
+    },
+    {
+      "domain": "ayto-caceres.es",
+      "count": 446
+    },
+    {
+      "domain": "igualdad.gob.es",
+      "count": 440
     },
     {
       "domain": "marbella.es",
       "count": 416
     },
     {
-      "domain": "alhamademurcia.es",
-      "count": 383
-    },
-    {
-      "domain": "ayto-caceres.es",
-      "count": 383
-    },
-    {
       "domain": "congreso.es",
-      "count": 373
+      "count": 415
     },
     {
       "domain": "policia.es",
-      "count": 372
+      "count": 399
     }
   ],
   "top_target_domains": [
@@ -211,7 +211,7 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 18928
+      "count": 19094
     },
     {
       "domain": "gva.es",
@@ -219,63 +219,63 @@
     },
     {
       "domain": "facebook.com",
-      "count": 5189
+      "count": 5361
     },
     {
       "domain": "twitter.com",
-      "count": 4765
+      "count": 4902
     },
     {
       "domain": "youtube.com",
-      "count": 4407
+      "count": 4555
     },
     {
       "domain": "googleapis.com",
-      "count": 4156
+      "count": 4271
     },
     {
       "domain": "google.com",
-      "count": 4087
+      "count": 4236
     },
     {
       "domain": "jccm.es",
-      "count": 3922
+      "count": 3980
     },
     {
       "domain": "instagram.com",
-      "count": 3808
+      "count": 3961
     },
     {
       "domain": "navarra.es",
-      "count": 3330
+      "count": 3332
     },
     {
       "domain": "aragon.es",
-      "count": 2821
+      "count": 2907
     },
     {
       "domain": "madrid.es",
-      "count": 2241
+      "count": 2397
     },
     {
       "domain": "w3.org",
-      "count": 1974
+      "count": 2011
     },
     {
       "domain": "googletagmanager.com",
-      "count": 1872
+      "count": 1943
     },
     {
       "domain": "linkedin.com",
-      "count": 1775
+      "count": 1856
     },
     {
       "domain": "juntaex.es",
-      "count": 1708
+      "count": 1795
     },
     {
       "domain": "caib.es",
-      "count": 1688
+      "count": 1699
     },
     {
       "domain": "educativa.com",
@@ -283,136 +283,136 @@
     },
     {
       "domain": "ayto-torrejon.es",
-      "count": 1493
+      "count": 1603
     },
     {
       "domain": "gstatic.com",
-      "count": 1329
+      "count": 1356
     },
     {
       "domain": "redsara.es",
-      "count": 1184
-    },
-    {
-      "domain": "blogspot.com",
-      "count": 1131
-    },
-    {
-      "domain": "x.com",
-      "count": 1113
+      "count": 1208
     },
     {
       "domain": "hacienda.gob.es",
-      "count": 991
+      "count": 1189
+    },
+    {
+      "domain": "x.com",
+      "count": 1170
+    },
+    {
+      "domain": "blogspot.com",
+      "count": 1134
     },
     {
       "domain": "europa.eu",
-      "count": 988
-    },
-    {
-      "domain": "carm.es",
-      "count": 980
-    },
-    {
-      "domain": "google.es",
-      "count": 960
+      "count": 1036
     },
     {
       "domain": "cloudflare.com",
-      "count": 928
+      "count": 998
     },
     {
-      "domain": "flickr.com",
-      "count": 919
+      "domain": "carm.es",
+      "count": 995
+    },
+    {
+      "domain": "google.es",
+      "count": 971
     },
     {
       "domain": "sanidad.gob.es",
-      "count": 911
+      "count": 943
+    },
+    {
+      "domain": "flickr.com",
+      "count": 940
     },
     {
       "domain": "boe.es",
-      "count": 865
+      "count": 926
     },
     {
       "domain": "fontawesome.com",
-      "count": 807
-    },
-    {
-      "domain": "jsdelivr.net",
-      "count": 769
-    },
-    {
-      "domain": "insuit.net",
-      "count": 763
+      "count": 830
     },
     {
       "domain": "aemet.es",
-      "count": 760
+      "count": 811
+    },
+    {
+      "domain": "jsdelivr.net",
+      "count": 802
+    },
+    {
+      "domain": "insuit.net",
+      "count": 800
     },
     {
       "domain": "defensa.gob.es",
-      "count": 695
-    },
-    {
-      "domain": "sede.gob.es",
-      "count": 647
-    },
-    {
-      "domain": "asturias.es",
-      "count": 640
+      "count": 779
     },
     {
       "domain": "juntadeandalucia.es",
-      "count": 618
+      "count": 692
     },
     {
-      "domain": "ayto-fuenlabrada.es",
-      "count": 608
+      "domain": "sede.gob.es",
+      "count": 658
     },
     {
       "domain": "administracion.gob.es",
-      "count": 601
+      "count": 653
+    },
+    {
+      "domain": "asturias.es",
+      "count": 644
+    },
+    {
+      "domain": "ayto-fuenlabrada.es",
+      "count": 631
     },
     {
       "domain": "readspeaker.com",
-      "count": 551
+      "count": 571
+    },
+    {
+      "domain": "transparencia.gob.es",
+      "count": 544
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 519
-    },
-    {
-      "domain": "vimeo.com",
-      "count": 509
+      "count": 537
     },
     {
       "domain": "blogspot.com.es",
-      "count": 507
+      "count": 519
+    },
+    {
+      "domain": "digital.gob.es",
+      "count": 516
+    },
+    {
+      "domain": "vimeo.com",
+      "count": 515
+    },
+    {
+      "domain": "seg-social.es",
+      "count": 513
     },
     {
       "domain": "ilunionaccede.es",
       "count": 497
-    },
-    {
-      "domain": "saludcastillayleon.es",
-      "count": 497
-    },
-    {
-      "domain": "turismocastillayleon.com",
-      "count": 497
-    },
-    {
-      "domain": "sharethis.com",
-      "count": 491
     }
   ],
   "relationship_types": {
-    "script_dependency": 2411,
+    "script_dependency": 2405,
     "image_or_media_dependency": 2041,
-    "stylesheet_dependency": 2061,
-    "editorial_link": 8535,
-    "form_destination": 1519,
+    "stylesheet_dependency": 2057,
+    "editorial_link": 8538,
+    "form_destination": 1517,
     "font_or_preload_dependency": 154
   },
-  "generated_at": "2026-11-09T05:38:00.894589+00:00"
+  "generated_at": "2026-11-10T15:13:15.009930+00:00"
 }

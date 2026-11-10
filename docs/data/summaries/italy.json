@@ -1,6 +1,6 @@
 {
   "country_code": "ITALY",
-  "total_relationships": 16397,
+  "total_relationships": 16393,
   "total_source_domains": 154,
   "top_source_domains": [
     {
@@ -13,7 +13,7 @@
     },
     {
       "domain": "cultura.gov.it",
-      "count": 19100
+      "count": 20030
     },
     {
       "domain": "regione.lombardia.it",
@@ -33,7 +33,7 @@
     },
     {
       "domain": "comune.parma.it",
-      "count": 4335
+      "count": 4356
     },
     {
       "domain": "regione.lazio.it",
@@ -215,27 +215,27 @@
     },
     {
       "domain": "facebook.com",
-      "count": 10178
+      "count": 10238
     },
     {
       "domain": "cultura.gov.it",
-      "count": 8861
+      "count": 9371
     },
     {
       "domain": "youtube.com",
-      "count": 8095
+      "count": 8136
     },
     {
       "domain": "twitter.com",
-      "count": 8055
+      "count": 8059
     },
     {
       "domain": "agid.gov.it",
-      "count": 6641
+      "count": 6661
     },
     {
       "domain": "instagram.com",
-      "count": 6348
+      "count": 6400
     },
     {
       "domain": "regione.lombardia.it",
@@ -247,7 +247,7 @@
     },
     {
       "domain": "regione.emilia-romagna.it",
-      "count": 3974
+      "count": 3975
     },
     {
       "domain": "europa.eu",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 3190
+      "count": 3198
     },
     {
       "domain": "viaggiaresicuri.it",
@@ -271,7 +271,7 @@
     },
     {
       "domain": "whatsapp.com",
-      "count": 2638
+      "count": 2640
     },
     {
       "domain": "regione.campania.it",
@@ -279,11 +279,11 @@
     },
     {
       "domain": "comune.parma.it",
-      "count": 2471
+      "count": 2479
     },
     {
       "domain": "linkedin.com",
-      "count": 2468
+      "count": 2475
     },
     {
       "domain": "regione.lazio.it",
@@ -307,11 +307,11 @@
     },
     {
       "domain": "beniculturali.it",
-      "count": 1582
+      "count": 1668
     },
     {
       "domain": "google.com",
-      "count": 1552
+      "count": 1559
     },
     {
       "domain": "comune.bologna.it",
@@ -319,7 +319,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 1515
+      "count": 1522
     },
     {
       "domain": "mef.gov.it",
@@ -339,7 +339,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 1296
+      "count": 1298
     },
     {
       "domain": "interno.gov.it",
@@ -359,7 +359,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 1009
+      "count": 1011
     },
     {
       "domain": "difesa.it",
@@ -367,7 +367,7 @@
     },
     {
       "domain": "t.me",
-      "count": 901
+      "count": 902
     },
     {
       "domain": "lavoro.gov.it",
@@ -394,12 +394,12 @@
       "count": 723
     },
     {
-      "domain": "quirinale.it",
+      "domain": "italia.it",
       "count": 675
     },
     {
-      "domain": "italia.it",
-      "count": 673
+      "domain": "quirinale.it",
+      "count": 675
     },
     {
       "domain": "opportunitaly.gov.it",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "image_or_media_dependency": 2071,
-    "editorial_link": 7653,
+    "image_or_media_dependency": 2070,
+    "editorial_link": 7651,
     "script_dependency": 2621,
     "stylesheet_dependency": 2333,
-    "form_destination": 1456,
+    "form_destination": 1455,
     "font_or_preload_dependency": 263
   },
-  "generated_at": "2026-11-09T05:38:00.272118+00:00"
+  "generated_at": "2026-11-10T15:13:14.453237+00:00"
 }

@@ -1,6 +1,6 @@
 {
   "country_code": "FRANCE",
-  "total_relationships": 30462,
+  "total_relationships": 30463,
   "total_source_domains": 677,
   "top_source_domains": [
     {
@@ -57,7 +57,7 @@
     },
     {
       "domain": "lyon.fr",
-      "count": 2964
+      "count": 2973
     },
     {
       "domain": "anct.gouv.fr",
@@ -65,7 +65,7 @@
     },
     {
       "domain": "marseille.fr",
-      "count": 2768
+      "count": 2788
     },
     {
       "domain": "montpellier.fr",
@@ -105,7 +105,7 @@
     },
     {
       "domain": "sports.gouv.fr",
-      "count": 2146
+      "count": 2169
     },
     {
       "domain": "centre-valdeloire.fr",
@@ -121,7 +121,7 @@
     },
     {
       "domain": "lille.fr",
-      "count": 1932
+      "count": 1945
     },
     {
       "domain": "lamayenne.fr",
@@ -196,12 +196,12 @@
       "count": 1461
     },
     {
-      "domain": "lenord.fr",
-      "count": 1415
+      "domain": "etudiant.gouv.fr",
+      "count": 1422
     },
     {
-      "domain": "logement.gouv.fr",
-      "count": 1404
+      "domain": "lenord.fr",
+      "count": 1415
     }
   ],
   "top_target_domains": [
@@ -215,7 +215,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 11358
+      "count": 11364
     },
     {
       "domain": "paris.fr",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 7798
+      "count": 7803
     },
     {
       "domain": "skolengo.com",
@@ -231,7 +231,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 6808
+      "count": 6812
     },
     {
       "domain": "cnam.fr",
@@ -239,11 +239,11 @@
     },
     {
       "domain": "data.gouv.fr",
-      "count": 6480
+      "count": 6484
     },
     {
       "domain": "twitter.com",
-      "count": 5914
+      "count": 5916
     },
     {
       "domain": "developpement-durable.gouv.fr",
@@ -251,23 +251,23 @@
     },
     {
       "domain": "youtube.com",
-      "count": 5555
+      "count": 5560
     },
     {
       "domain": "googleapis.com",
-      "count": 5526
+      "count": 5531
     },
     {
       "domain": "legifrance.gouv.fr",
-      "count": 5517
+      "count": 5522
     },
     {
       "domain": "github.com",
-      "count": 4359
+      "count": 4362
     },
     {
       "domain": "info.gouv.fr",
-      "count": 3454
+      "count": 3458
     },
     {
       "domain": "education.gouv.fr",
@@ -275,15 +275,15 @@
     },
     {
       "domain": "service-public.fr",
-      "count": 3046
+      "count": 3048
+    },
+    {
+      "domain": "service-public.gouv.fr",
+      "count": 2975
     },
     {
       "domain": "rennes.fr",
       "count": 2975
-    },
-    {
-      "domain": "service-public.gouv.fr",
-      "count": 2972
     },
     {
       "domain": "ac-grenoble.fr",
@@ -291,11 +291,11 @@
     },
     {
       "domain": "beta.gouv.fr",
-      "count": 2799
+      "count": 2800
     },
     {
       "domain": "google.com",
-      "count": 2512
+      "count": 2514
     },
     {
       "domain": "culture.gouv.fr",
@@ -303,7 +303,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 2317
+      "count": 2319
     },
     {
       "domain": "loire-atlantique.fr",
@@ -311,7 +311,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 2278
+      "count": 2279
     },
     {
       "domain": "numerique.gouv.fr",
@@ -319,7 +319,7 @@
     },
     {
       "domain": "x.com",
-      "count": 2070
+      "count": 2074
     },
     {
       "domain": "defense.gouv.fr",
@@ -339,15 +339,15 @@
     },
     {
       "domain": "lyon.fr",
-      "count": 1814
+      "count": 1822
     },
     {
       "domain": "marseille.fr",
-      "count": 1722
+      "count": 1734
     },
     {
       "domain": "unpkg.com",
-      "count": 1680
+      "count": 1682
     },
     {
       "domain": "gouvernement.fr",
@@ -363,7 +363,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 1460
+      "count": 1462
     },
     {
       "domain": "puy-de-dome.fr",
@@ -399,7 +399,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 1186
+      "count": 1188
     },
     {
       "domain": "tarteaucitron.io",
@@ -412,7 +412,7 @@
     "editorial_link": 15867,
     "image_or_media_dependency": 3558,
     "form_destination": 1704,
-    "font_or_preload_dependency": 705
+    "font_or_preload_dependency": 706
   },
-  "generated_at": "2026-11-09T05:38:00.583075+00:00"
+  "generated_at": "2026-11-10T15:13:14.731004+00:00"
 }

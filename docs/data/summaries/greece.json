@@ -52,12 +52,12 @@
       "count": 740
     },
     {
-      "domain": "heraklion.gr",
-      "count": 683
+      "domain": "dypa.gov.gr",
+      "count": 684
     },
     {
-      "domain": "dypa.gov.gr",
-      "count": 680
+      "domain": "heraklion.gr",
+      "count": 683
     },
     {
       "domain": "vvv.gov.gr",
@@ -347,7 +347,7 @@
     },
     {
       "domain": "dypa.gov.gr",
-      "count": 306
+      "count": 310
     },
     {
       "domain": "espa.gr",
@@ -414,5 +414,5 @@
     "script_dependency": 1285,
     "stylesheet_dependency": 1055
   },
-  "generated_at": "2026-11-08T22:32:06.964182+00:00"
+  "generated_at": "2026-11-10T02:03:01.790284+00:00"
 }
