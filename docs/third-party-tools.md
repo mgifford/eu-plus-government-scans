@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-11-10 08:09 UTC — last scan: 2026-11-09_
+_Stats as of 2026-11-10 08:42 UTC — last scan: 2026-11-10_
 
-**502** scan batches run
+**503** scan batches run
 
 **87,690** of **87,696** available pages scanned (**100.0%** coverage)
-**81,826** of **87,690** scanned pages were reachable (**93.3%**)
-**38,945** reachable pages loaded at least one third-party script (**47.6%** of reachable)
-**46,505** known third-party service loads identified
+**81,831** of **87,690** scanned pages were reachable (**93.3%**)
+**38,948** reachable pages loaded at least one third-party script (**47.6%** of reachable)
+**46,506** known third-party service loads identified
 **26** unique known services across **17** categories
 
 ---
@@ -31,7 +31,7 @@ _Stats as of 2026-11-10 08:09 UTC — last scan: 2026-11-09_
 | Estonia | 401 | 401 | 385 | 140 | 117 | 36.4 | 30.4 | 2026-10-26 |
 | Finland | 199 | 199 | 189 | 47 | 26 | 24.9 | 13.8 | 2026-10-26 |
 | France | 10,009 | 10,009 | 9,294 | 4,258 | 2,322 | 45.8 | 25.0 | 2026-11-09 |
-| Germany | 6,599 | 6,599 | 6,484 | 1,735 | 334 | 26.8 | 5.2 | 2026-11-08 |
+| Germany | 6,599 | 6,599 | 6,489 | 1,738 | 335 | 26.8 | 5.2 | 2026-11-10 |
 | Greece | 1,752 | 1,752 | 1,647 | 819 | 1,110 | 49.7 | 67.4 | 2026-11-05 |
 | Hungary | 392 | 392 | 307 | 133 | 195 | 43.3 | 63.5 | 2026-10-27 |
 | Iceland | 145 | 145 | 143 | 81 | 43 | 56.6 | 30.1 | 2026-10-27 |
@@ -72,7 +72,7 @@ _Stats as of 2026-11-10 08:09 UTC — last scan: 2026-11-09_
 | 8 | jQuery | **2,742** |
 | 9 | Font Awesome | **1,861** |
 | 10 | Bootstrap | **915** |
-| 11 | Cookiebot | **813** |
+| 11 | Cookiebot | **814** |
 | 12 | Adobe Dynamic Tag Management / Launch | **526** |
 | 13 | Facebook Pixel | **443** |
 | 14 | CookieInformation | **395** |
@@ -97,7 +97,7 @@ _Stats as of 2026-11-10 08:09 UTC — last scan: 2026-11-09_
 | 8 | jQuery | **2,174** | **11.6%** |
 | 9 | Font Awesome | **1,485** | **7.9%** |
 | 10 | Bootstrap | **908** | **4.9%** |
-| 11 | Cookiebot | **794** | **4.3%** |
+| 11 | Cookiebot | **795** | **4.3%** |
 | 12 | Adobe Dynamic Tag Management / Launch | **523** | **2.8%** |
 | 13 | Facebook Pixel | **428** | **2.3%** |
 | 14 | CookieInformation | **395** | **2.1%** |
@@ -119,7 +119,7 @@ _Stats as of 2026-11-10 08:09 UTC — last scan: 2026-11-09_
 | 5 | CAPTCHA | **4,828** |
 | 6 | Tag Manager | **4,633** |
 | 7 | Icon Library | **1,861** |
-| 8 | Cookie Consent | **1,593** |
+| 8 | Cookie Consent | **1,594** |
 | 9 | UI Framework | **915** |
 | 10 | Advertising | **443** |
 | 11 | Error Tracking | **222** |
@@ -147,7 +147,7 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 | 2 | Security | **5,068** |
 | 3 | CAPTCHA | **4,828** |
 | 4 | Tag Manager | **4,633** |
-| 5 | Cookie Consent | **1,593** |
+| 5 | Cookie Consent | **1,594** |
 | 6 | Advertising | **443** |
 | 7 | Error Tracking | **222** |
 | 8 | Payments | **45** |

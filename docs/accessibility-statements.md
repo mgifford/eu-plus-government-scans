@@ -5,14 +5,14 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-11-10 08:09 UTC — last scan: 2026-11-09_
+_Stats as of 2026-11-10 08:43 UTC — last scan: 2026-11-10_
 
-**511** scan batches run
+**512** scan batches run
 
 **87,690** of **87,696** available pages scanned (**100.0%** coverage)
-**82,036** of **87,690** scanned pages were reachable (**93.6%**)
-**41,988** of **82,036** reachable pages have an accessibility statement (**51.2%**)
-**37,010** pages have the statement link in the footer (**88.1%** of pages with a statement)
+**82,068** of **87,690** scanned pages were reachable (**93.6%**)
+**42,029** of **82,068** reachable pages have an accessibility statement (**51.2%**)
+**37,051** pages have the statement link in the footer (**88.2%** of pages with a statement)
 
 📥 Machine-readable results are available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
 
@@ -35,7 +35,7 @@ Each country entry in the JSON file includes page-level evidence for pages with 
 | Denmark | 1,536 | 1,536 | 1,509 | 967 | 949 | 64.1% | Aug 2026 – Oct 2026 |
 | Estonia | 401 | 401 | 390 | 152 | 79 | 39.0% | Aug 2026 – Oct 2026 |
 | Finland | 199 | 199 | 189 | 134 | 127 | 70.9% | Aug 2026 – Oct 2026 |
-| France | 10,009 | 10,009 | 9,168 | 5,100 | 4,969 | 55.6% | Aug 2026 – Nov 2026 |
+| France | 10,009 | 10,009 | 9,200 | 5,141 | 5,010 | 55.9% | Aug 2026 – Nov 2026 |
 | Germany | 6,599 | 6,599 | 6,505 | 4,706 | 3,978 | 72.3% | Aug 2026 – Nov 2026 |
 | Greece | 1,752 | 1,752 | 1,644 | 444 | 290 | 27.0% | Aug 2026 – Nov 2026 |
 | Hungary | 392 | 392 | 307 | 65 | 57 | 21.2% | Aug 2026 – Oct 2026 |
@@ -58,7 +58,7 @@ Each country entry in the JSON file includes page-level evidence for pages with 
 | Sweden | 1,702 | 1,702 | 1,631 | 973 | 888 | 59.7% | Aug 2026 – Oct 2026 |
 | Switzerland | 2,123 | 2,123 | 2,084 | 1,034 | 1,033 | 49.6% | Aug 2026 – Oct 2026 |
 | United Kingdom | 19,511 | 19,511 | 18,695 | 11,142 | 10,538 | 59.6% | Aug 2026 – Nov 2026 |
-| **Total** | **87,696** | **87,696** | **82,042** | **41,994** | **37,016** | **51.2%** | — |
+| **Total** | **87,696** | **87,696** | **82,074** | **42,035** | **37,057** | **51.2%** | — |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
