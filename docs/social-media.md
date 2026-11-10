@@ -24,11 +24,11 @@ layout: page
 <div id="sm-tier-pie-container" style="float:right;margin:0 0 1rem 1.5rem;width:260px;max-width:45%;">
 <svg role="img" aria-labelledby="pie-title pie-desc" viewBox="0 0 240 314" width="240" height="314" xmlns="http://www.w3.org/2000/svg">
 <title id="pie-title">Social media tier distribution</title>
-<desc id="pie-desc">Pie chart: social media tier distribution across 87,696 scanned pages. Legacy only: 31,837 (36.3%), Modern only: 156 (0.2%), Mixed: 1,106 (1.3%), No Social: 49,135 (56.0%)</desc>
-<path d="M 120,110 L 120.000,20.000 A 90,90 0 0,1 178.600,178.308 Z" fill="#1a8cd8" stroke="#fff" stroke-width="1"><title>Twitter/X only: 31,837 (38.7%)</title></path>
-<path d="M 120,110 L 178.600,178.308 A 90,90 0 0,1 177.782,179.002 Z" fill="#0085ff" stroke="#fff" stroke-width="1"><title>Modern only: 156 (0.2%)</title></path>
-<path d="M 120,110 L 177.782,179.002 A 90,90 0 0,1 171.752,183.633 Z" fill="#7856ff" stroke="#fff" stroke-width="1"><title>Mixed: 1,106 (1.3%)</title></path>
-<path d="M 120,110 L 171.752,183.633 A 90,90 0 1,1 120.000,20.000 Z" fill="#cccccc" stroke="#fff" stroke-width="1"><title>No Social: 49,135 (59.8%)</title></path>
+<desc id="pie-desc">Pie chart: social media tier distribution across 87,696 scanned pages. Legacy only: 31,855 (36.3%), Modern only: 156 (0.2%), Mixed: 1,108 (1.3%), No Social: 49,117 (56.0%)</desc>
+<path d="M 120,110 L 120.000,20.000 A 90,90 0 0,1 178.510,178.385 Z" fill="#1a8cd8" stroke="#fff" stroke-width="1"><title>Twitter/X only: 31,855 (38.7%)</title></path>
+<path d="M 120,110 L 178.510,178.385 A 90,90 0 0,1 177.691,179.078 Z" fill="#0085ff" stroke="#fff" stroke-width="1"><title>Modern only: 156 (0.2%)</title></path>
+<path d="M 120,110 L 177.691,179.078 A 90,90 0 0,1 171.643,183.709 Z" fill="#7856ff" stroke="#fff" stroke-width="1"><title>Mixed: 1,108 (1.3%)</title></path>
+<path d="M 120,110 L 171.643,183.709 A 90,90 0 1,1 120.000,20.000 Z" fill="#cccccc" stroke="#fff" stroke-width="1"><title>No Social: 49,117 (59.7%)</title></path>
 <rect x="20" y="216" width="14" height="14" fill="#1a8cd8"/>
 <text x="40" y="227" font-size="11" font-family="sans-serif" fill="#333">Twitter/X only (38.7%)</text>
 <rect x="20" y="238" width="14" height="14" fill="#0085ff"/>
@@ -36,28 +36,28 @@ layout: page
 <rect x="20" y="260" width="14" height="14" fill="#7856ff"/>
 <text x="40" y="271" font-size="11" font-family="sans-serif" fill="#333">Mixed (1.3%)</text>
 <rect x="20" y="282" width="14" height="14" fill="#cccccc"/>
-<text x="40" y="293" font-size="11" font-family="sans-serif" fill="#333">No Social (59.8%)</text>
+<text x="40" y="293" font-size="11" font-family="sans-serif" fill="#333">No Social (59.7%)</text>
 </svg>
 <p style="text-align:center;font-size:0.75em;margin:0.3rem 0 0;color:#555;font-style:italic;">Social media tier distribution</p>
 </div>
 
-_Stats as of 2026-11-10 15:38 UTC — last scan: 2026-11-10_
+_Stats as of 2026-11-10 17:12 UTC — last scan: 2026-11-10_
 
-**394** scan batches run
+**398** scan batches run
 
 **87,690** of **87,696** available pages scanned (**100.0%** coverage)
-**82,228** of **87,690** scanned pages were reachable (**93.8%**)
+**82,230** of **87,690** scanned pages were reachable (**93.8%**)
 
 **Legacy social media** (older, centralised platforms):
 
 | Platform | Pages with link | % of scanned | % of reachable |
 |----------|----------------|:------------:|:--------------:|
-| 🐦 Twitter | **13,672** | 15.6% | 16.6% |
-| ✖ X | **3,791** | 4.3% | 4.6% |
-| 👍 Facebook | **29,294** | 33.4% | 35.6% |
-| 💼 LinkedIn | **10,668** | 12.2% | 13.0% |
+| 🐦 Twitter | **13,673** | 15.6% | 16.6% |
+| ✖ X | **3,789** | 4.3% | 4.6% |
+| 👍 Facebook | **29,298** | 33.4% | 35.6% |
+| 💼 LinkedIn | **10,671** | 12.2% | 13.0% |
 | TikTok | **1,625** | 1.9% | 2.0% |
-| YouTube | **3,856** | 4.4% | 4.7% |
+| YouTube | **4,044** | 4.6% | 4.9% |
 
 **Modern / open social media** (decentralised or open platforms):
 
@@ -66,7 +66,7 @@ _Stats as of 2026-11-10 15:38 UTC — last scan: 2026-11-10_
 | 🦋 Bluesky | **861** | 1.0% | 1.0% |
 | Blacksky | **0** | 0.0% | 0.0% |
 | Gander | **0** | 0.0% | 0.0% |
-| 🐘 Mastodon / Fediverse | **499** | 0.6% | 0.6% |
+| 🐘 Mastodon / Fediverse | **501** | 0.6% | 0.6% |
 
 <div style="clear:both;"></div>
 
@@ -81,7 +81,7 @@ Countries ranked by **Digital Sovereignty Score**: the percentage of reachable p
 | Rank | Country | Sovereignty Score | No Social | Modern Only | Legacy Exposure | Tier |
 |------|---------|:-----------------:|:---------:|:-----------:|:---------------:|------|
 | 1 | Finland | 76.7% | 145 | 0 | 23.3% | 🥉 Growing |
-| 2 | Norway | 76.1% | 183 | 2 | 23.9% | 🥉 Growing |
+| 2 | Norway | 75.8% | 183 | 2 | 24.2% | 🥉 Growing |
 | 3 | Lithuania | 74.6% | 85 | 0 | 25.4% | 🥉 Growing |
 | 4 | Iceland | 72.7% | 104 | 0 | 27.3% | 🥉 Growing |
 | 5 | Malta | 71.9% | 428 | 0 | 28.1% | 🥉 Growing |
@@ -90,16 +90,16 @@ Countries ranked by **Digital Sovereignty Score**: the percentage of reachable p
 | 8 | Portugal | 67.1% | 2,160 | 1 | 32.9% | 🥉 Growing |
 | 9 | France | 66.7% | 6,206 | 15 | 33.3% | 🥉 Growing |
 | 10 | Greece | 65.8% | 1,080 | 1 | 34.2% | 🥉 Growing |
-| 11 | Slovenia | 65.7% | 136 | 0 | 34.3% | 🥉 Growing |
-| 12 | Netherlands | 64.8% | 582 | 10 | 35.2% | 🥉 Growing |
-| 13 | Switzerland | 64.7% | 1,332 | 16 | 35.3% | 🥉 Growing |
-| 14 | Denmark | 63.0% | 951 | 0 | 37.0% | 🥉 Growing |
-| 15 | Sweden | 62.8% | 1,023 | 1 | 37.2% | 🥉 Growing |
-| 16 | United Kingdom | 62.8% | 11,764 | 7 | 37.2% | 🥉 Growing |
+| 11 | Netherlands | 64.8% | 582 | 10 | 35.2% | 🥉 Growing |
+| 12 | Switzerland | 64.7% | 1,332 | 16 | 35.3% | 🥉 Growing |
+| 13 | Denmark | 63.0% | 951 | 0 | 37.0% | 🥉 Growing |
+| 14 | Sweden | 62.8% | 1,023 | 1 | 37.2% | 🥉 Growing |
+| 15 | United Kingdom | 62.8% | 11,764 | 7 | 37.2% | 🥉 Growing |
+| 16 | Slovenia | 62.5% | 130 | 0 | 37.5% | 🥉 Growing |
 | 17 | Romania | 62.2% | 216 | 3 | 37.8% | 🥉 Growing |
 | 18 | Czechia | 62.1% | 499 | 0 | 37.9% | 🥉 Growing |
 | 19 | Slovakia | 60.1% | 250 | 0 | 39.9% | 🥉 Growing |
-| 20 | Belgium | 59.6% | 735 | 4 | 40.4% | 🥉 Growing |
+| 20 | Belgium | 58.7% | 723 | 4 | 41.3% | 🥉 Growing |
 | 21 | Croatia | 58.7% | 149 | 0 | 41.3% | 🥉 Growing |
 | 22 | Hungary | 57.5% | 220 | 2 | 42.5% | 🥉 Growing |
 | 23 | Spain | 57.1% | 3,071 | 2 | 42.9% | 🥉 Growing |
@@ -122,7 +122,7 @@ Countries ranked by **Digital Sovereignty Score**: the percentage of reachable p
 | Country | Scanned | Available | Reachable | Sov. Score | No Social | Legacy-only | Twitter | X | Facebook | LinkedIn | TikTok | YouTube | Modern | Mixed | Bluesky | Blacksky | Gander | Mastodon | Scan Period |
 |---------|---------|-----------|-----------|:----------:|-----------|-------------|---------|---|----------|----------|--------|---------|--------|-------|---------|----------|--------|----------|-------------|
 | Austria | 822 | 822 | 789 | 52.2% | 412 | 359 | 32 | 24 | 351 | 187 | 19 | 258 | 0 | 18 | 18 | 0 | 0 | 0 | Aug 2026 – Nov 2026 |
-| Belgium | 1,329 | 1,329 | 1,239 | 59.6% | 735 | 458 | 161 | 78 | 454 | 329 | 21 | 39 | 4 | 42 | 26 | 0 | 0 | 20 | Aug 2026 – Oct 2026 |
+| Belgium | 1,329 | 1,329 | 1,239 | 58.7% | 723 | 468 | 162 | 76 | 457 | 332 | 21 | 159 | 4 | 44 | 26 | 0 | 0 | 22 | Aug 2026 – Nov 2026 |
 | Bulgaria | 353 | 353 | 305 | 56.7% | 173 | 132 | 22 | 6 | 114 | 11 | 2 | 63 | 0 | 0 | 0 | 0 | 0 | 0 | Aug 2026 – Nov 2026 |
 | Canada | 4,469 | 4,469 | 4,279 | 68.8% | 2,939 | 1,288 | 458 | 144 | 1,232 | 575 | 20 | 140 | 4 | 48 | 51 | 0 | 0 | 1 | Aug 2026 – Oct 2026 |
 | Croatia | 257 | 257 | 254 | 58.7% | 149 | 105 | 47 | 15 | 98 | 35 | 22 | 68 | 0 | 0 | 0 | 0 | 0 | 0 | Aug 2026 – Nov 2026 |
@@ -142,18 +142,18 @@ Countries ranked by **Digital Sovereignty Score**: the percentage of reachable p
 | Luxembourg | 573 | 573 | 543 | 47.1% | 256 | 146 | 176 | 9 | 264 | 229 | 14 | 30 | 0 | 141 | 141 | 0 | 0 | 3 | Aug 2026 – Oct 2026 |
 | Malta | 610 | 610 | 595 | 71.9% | 428 | 167 | 47 | 15 | 158 | 70 | 10 | 53 | 0 | 0 | 0 | 0 | 0 | 0 | Aug 2026 – Nov 2026 |
 | Netherlands | 945 | 945 | 913 | 64.8% | 582 | 256 | 109 | 85 | 279 | 208 | 7 | 34 | 10 | 65 | 47 | 0 | 0 | 33 | Aug 2026 – Oct 2026 |
-| Norway | 249 | 249 | 243 | 76.1% | 183 | 58 | 9 | 13 | 39 | 45 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | 2 | Aug 2026 – Oct 2026 |
+| Norway | 249 | 249 | 244 | 75.8% | 183 | 59 | 9 | 13 | 40 | 45 | 0 | 16 | 2 | 0 | 0 | 0 | 0 | 2 | Aug 2026 – Nov 2026 |
 | Poland | 14,951 | 14,951 | 13,882 | 48.7% | 6,721 | 7,075 | 1,017 | 342 | 6,993 | 813 | 535 | 702 | 36 | 50 | 1 | 0 | 0 | 85 | Aug 2026 – Nov 2026 |
 | Portugal | 3,508 | 3,508 | 3,219 | 67.1% | 2,160 | 1,051 | 343 | 84 | 999 | 253 | 42 | 152 | 1 | 7 | 2 | 0 | 0 | 6 | Aug 2026 – Oct 2026 |
-| Cyprus | 29 | 29 | 29 | 48.3% | 14 | 15 | 9 | 1 | 15 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Aug 2026 – Oct 2026 |
+| Cyprus | 29 | 29 | 29 | 48.3% | 14 | 15 | 9 | 1 | 15 | 3 | 0 | 13 | 0 | 0 | 0 | 0 | 0 | 0 | Aug 2026 – Nov 2026 |
 | Romania | 807 | 807 | 352 | 62.2% | 216 | 133 | 40 | 8 | 133 | 16 | 5 | 6 | 3 | 0 | 0 | 0 | 0 | 3 | Aug 2026 – Oct 2026 |
 | Slovakia | 442 | 442 | 416 | 60.1% | 250 | 165 | 19 | 12 | 161 | 62 | 10 | 11 | 0 | 1 | 1 | 0 | 0 | 0 | Aug 2026 – Oct 2026 |
-| Slovenia | 214 | 214 | 207 | 65.7% | 136 | 70 | 24 | 7 | 68 | 12 | 6 | 7 | 0 | 1 | 1 | 0 | 0 | 0 | Aug 2026 – Oct 2026 |
+| Slovenia | 214 | 214 | 208 | 62.5% | 130 | 77 | 24 | 7 | 68 | 12 | 6 | 47 | 0 | 1 | 1 | 0 | 0 | 0 | Aug 2026 – Nov 2026 |
 | Spain | 6,091 | 6,091 | 5,386 | 57.1% | 3,071 | 2,233 | 1,618 | 501 | 1,763 | 538 | 160 | 202 | 2 | 80 | 72 | 0 | 0 | 10 | Aug 2026 – Nov 2026 |
 | Sweden | 1,702 | 1,702 | 1,631 | 62.8% | 1,023 | 593 | 82 | 21 | 506 | 419 | 26 | 20 | 1 | 14 | 14 | 0 | 0 | 1 | Aug 2026 – Oct 2026 |
 | Switzerland | 2,123 | 2,123 | 2,084 | 64.7% | 1,332 | 667 | 228 | 226 | 251 | 573 | 12 | 108 | 16 | 69 | 55 | 0 | 0 | 32 | Aug 2026 – Oct 2026 |
 | United Kingdom | 19,511 | 19,511 | 18,731 | 62.8% | 11,764 | 6,836 | 3,618 | 1,007 | 6,181 | 2,434 | 227 | 460 | 7 | 124 | 126 | 0 | 0 | 5 | Aug 2026 – Nov 2026 |
-| **Total** | **87,696** | **87,696** | **82,234** | **59.9%** | **49,135** | **31,837** | **13,678** | **3,797** | **29,300** | **10,668** | **1,625** | **3,857** | **156** | **1,106** | **861** | **0** | **0** | **499** | — |
+| **Total** | **87,696** | **87,696** | **82,236** | **59.9%** | **49,117** | **31,855** | **13,679** | **3,795** | **29,304** | **10,671** | **1,625** | **4,046** | **156** | **1,108** | **861** | **0** | **0** | **501** | — |
 
 > Hover or focus any non-zero country-table count to preview matching pages. Activate the number to keep the preview open. Full machine-readable data is available as the [social-media-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
 
