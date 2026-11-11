@@ -21,7 +21,7 @@
     },
     {
       "domain": "nrw.de",
-      "count": 32312
+      "count": 32330
     },
     {
       "domain": "diplo.de",
@@ -41,7 +41,7 @@
     },
     {
       "domain": "bund.de",
-      "count": 9147
+      "count": 9155
     },
     {
       "domain": "thueringen.de",
@@ -223,11 +223,11 @@
     },
     {
       "domain": "nrw.de",
-      "count": 20651
+      "count": 20666
     },
     {
       "domain": "hessen.de",
-      "count": 12722
+      "count": 12723
     },
     {
       "domain": "hamburg.de",
@@ -251,7 +251,7 @@
     },
     {
       "domain": "bund.de",
-      "count": 6224
+      "count": 6230
     },
     {
       "domain": "thueringen.de",
@@ -414,5 +414,5 @@
     "stylesheet_dependency": 2696,
     "form_destination": 2128
   },
-  "generated_at": "2026-11-09T16:06:59.416469+00:00"
+  "generated_at": "2026-11-11T14:27:24.165491+00:00"
 }

@@ -5,7 +5,7 @@
   "top_source_domains": [
     {
       "domain": "gov.si",
-      "count": 4702
+      "count": 4738
     },
     {
       "domain": "maribor.si",
@@ -71,11 +71,11 @@
   "top_target_domains": [
     {
       "domain": "gov.si",
-      "count": 3206
+      "count": 3218
     },
     {
       "domain": "facebook.com",
-      "count": 263
+      "count": 265
     },
     {
       "domain": "maribor.si",
@@ -91,14 +91,14 @@
     },
     {
       "domain": "youtube.com",
-      "count": 185
-    },
-    {
-      "domain": "google.com",
-      "count": 178
+      "count": 187
     },
     {
       "domain": "googleapis.com",
+      "count": 180
+    },
+    {
+      "domain": "google.com",
       "count": 178
     },
     {
@@ -111,7 +111,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 135
+      "count": 137
     },
     {
       "domain": "kamnik.si",
@@ -143,7 +143,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 61
+      "count": 63
     },
     {
       "domain": "koper.si",
@@ -179,7 +179,7 @@
     },
     {
       "domain": "evropskasredstva.si",
-      "count": 41
+      "count": 43
     },
     {
       "domain": "cloudflare.com",
@@ -278,5 +278,5 @@
     "stylesheet_dependency": 98,
     "form_destination": 45
   },
-  "generated_at": "2026-11-02T15:40:32.513791+00:00"
+  "generated_at": "2026-11-11T14:27:24.271646+00:00"
 }

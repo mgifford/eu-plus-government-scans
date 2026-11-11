@@ -1,6 +1,6 @@
 {
   "country_code": "FRANCE",
-  "total_relationships": 30463,
+  "total_relationships": 30422,
   "total_source_domains": 677,
   "top_source_domains": [
     {
@@ -17,7 +17,7 @@
     },
     {
       "domain": "developpement-durable.gouv.fr",
-      "count": 11301
+      "count": 10855
     },
     {
       "domain": "cnam.fr",
@@ -215,7 +215,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 11364
+      "count": 11382
     },
     {
       "domain": "paris.fr",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 7803
+      "count": 7817
     },
     {
       "domain": "skolengo.com",
@@ -231,7 +231,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 6812
+      "count": 6827
     },
     {
       "domain": "cnam.fr",
@@ -239,35 +239,35 @@
     },
     {
       "domain": "data.gouv.fr",
-      "count": 6484
+      "count": 6501
     },
     {
       "domain": "twitter.com",
-      "count": 5916
-    },
-    {
-      "domain": "developpement-durable.gouv.fr",
-      "count": 5616
+      "count": 5933
     },
     {
       "domain": "youtube.com",
-      "count": 5560
+      "count": 5561
+    },
+    {
+      "domain": "legifrance.gouv.fr",
+      "count": 5539
     },
     {
       "domain": "googleapis.com",
       "count": 5531
     },
     {
-      "domain": "legifrance.gouv.fr",
-      "count": 5522
+      "domain": "developpement-durable.gouv.fr",
+      "count": 5316
     },
     {
       "domain": "github.com",
-      "count": 4362
+      "count": 4379
     },
     {
       "domain": "info.gouv.fr",
-      "count": 3458
+      "count": 3475
     },
     {
       "domain": "education.gouv.fr",
@@ -275,11 +275,11 @@
     },
     {
       "domain": "service-public.fr",
-      "count": 3048
+      "count": 3050
     },
     {
       "domain": "service-public.gouv.fr",
-      "count": 2975
+      "count": 2992
     },
     {
       "domain": "rennes.fr",
@@ -291,7 +291,7 @@
     },
     {
       "domain": "beta.gouv.fr",
-      "count": 2800
+      "count": 2796
     },
     {
       "domain": "google.com",
@@ -319,7 +319,7 @@
     },
     {
       "domain": "x.com",
-      "count": 2074
+      "count": 2080
     },
     {
       "domain": "defense.gouv.fr",
@@ -399,7 +399,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 1188
+      "count": 1189
     },
     {
       "domain": "tarteaucitron.io",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "script_dependency": 4533,
-    "stylesheet_dependency": 4095,
-    "editorial_link": 15867,
-    "image_or_media_dependency": 3558,
-    "form_destination": 1704,
+    "script_dependency": 4529,
+    "stylesheet_dependency": 4091,
+    "editorial_link": 15842,
+    "image_or_media_dependency": 3554,
+    "form_destination": 1700,
     "font_or_preload_dependency": 706
   },
-  "generated_at": "2026-11-10T15:13:14.731004+00:00"
+  "generated_at": "2026-11-11T14:27:23.163699+00:00"
 }

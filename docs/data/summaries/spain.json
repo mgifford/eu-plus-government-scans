@@ -219,11 +219,11 @@
     },
     {
       "domain": "facebook.com",
-      "count": 5361
+      "count": 5362
     },
     {
       "domain": "twitter.com",
-      "count": 4902
+      "count": 4903
     },
     {
       "domain": "youtube.com",
@@ -235,7 +235,7 @@
     },
     {
       "domain": "google.com",
-      "count": 4236
+      "count": 4237
     },
     {
       "domain": "jccm.es",
@@ -243,7 +243,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 3961
+      "count": 3962
     },
     {
       "domain": "navarra.es",
@@ -259,15 +259,15 @@
     },
     {
       "domain": "w3.org",
-      "count": 2011
+      "count": 2012
     },
     {
       "domain": "googletagmanager.com",
-      "count": 1943
+      "count": 1944
     },
     {
       "domain": "linkedin.com",
-      "count": 1856
+      "count": 1857
     },
     {
       "domain": "juntaex.es",
@@ -299,7 +299,7 @@
     },
     {
       "domain": "x.com",
-      "count": 1170
+      "count": 1171
     },
     {
       "domain": "blogspot.com",
@@ -347,7 +347,7 @@
     },
     {
       "domain": "insuit.net",
-      "count": 800
+      "count": 801
     },
     {
       "domain": "defensa.gob.es",
@@ -363,7 +363,7 @@
     },
     {
       "domain": "administracion.gob.es",
-      "count": 653
+      "count": 654
     },
     {
       "domain": "asturias.es",
@@ -414,5 +414,5 @@
     "form_destination": 1517,
     "font_or_preload_dependency": 154
   },
-  "generated_at": "2026-11-10T15:13:15.009930+00:00"
+  "generated_at": "2026-11-11T14:27:23.496918+00:00"
 }
