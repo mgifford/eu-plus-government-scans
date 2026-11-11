@@ -5,10 +5,10 @@ layout: page
 
 <!-- TECH_LIGHTHOUSE_STATS_START -->
 
-_Generated: 2026-11-11 16:55 UTC_
+_Generated: 2026-11-11 19:59 UTC_
 
-**68,547** URLs with both technology detection and Lighthouse scores
-out of **75,293** technology-detected URLs and **75,028** Lighthouse-audited URLs
+**68,551** URLs with both technology detection and Lighthouse scores
+out of **75,293** technology-detected URLs and **75,034** Lighthouse-audited URLs
 
 ---
 
@@ -18,16 +18,16 @@ Average Google Lighthouse scores (0–100) for pages where each technology was d
 
 | # | Technology | Pages | Countries | Perf | A11y | Best Prac | SEO |
 |--:|-----------|------:|----------:|-----:|-----:|----------:|----:|
-| 1 | jQuery | **41,028** | 32 | 87 | 89 | 90 | 89 |
+| 1 | jQuery | **41,030** | 32 | 87 | 89 | 90 | 89 |
 | 2 | PHP | **24,669** | 32 | 88 | 90 | 91 | 90 |
 | 3 | Apache | **20,103** | 32 | 86 | 86 | 89 | 88 |
-| 4 | Bootstrap | **18,801** | 32 | 88 | 89 | 90 | 88 |
-| 5 | Font Awesome | **18,395** | 32 | 87 | 89 | 89 | 89 |
-| 6 | Google Tag Manager | **16,592** | 32 | 87 | 91 | 89 | 90 |
-| 7 | Google Font API | **16,222** | 32 | 87 | 88 | 89 | 89 |
+| 4 | Bootstrap | **18,803** | 32 | 88 | 89 | 90 | 88 |
+| 5 | Font Awesome | **18,397** | 32 | 87 | 89 | 89 | 89 |
+| 6 | Google Tag Manager | **16,592** | 32 | 87 | 90 | 89 | 90 |
+| 7 | Google Font API | **16,224** | 32 | 87 | 88 | 89 | 89 |
 | 8 | MySQL | **14,437** | 32 | 88 | 89 | 90 | 90 |
 | 9 | WordPress | **14,335** | 32 | 88 | 89 | 90 | 90 |
-| 10 | Nginx | **12,570** | 32 | 89 | 91 | 92 | 90 |
+| 10 | Nginx | **12,572** | 32 | 89 | 91 | 92 | 90 |
 | 11 | jQuery Migrate | **12,557** | 32 | 87 | 89 | 89 | 90 |
 | 12 | Cloudflare | **7,071** | 32 | 89 | 92 | 88 | 81 |
 | 13 | Windows Server | **6,722** | 31 | 89 | 88 | 88 | 86 |
