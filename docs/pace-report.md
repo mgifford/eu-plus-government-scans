@@ -3,7 +3,7 @@ title: Scanner Cycle Pace Report
 layout: page
 ---
 
-_Generated: 2026-11-11 07:26 UTC_
+_Generated: 2026-11-11 07:59 UTC_
 
 Whether each scanner is on pace to complete its target cycle (30 days for most
 covered in the last 7 days projected forward against the full eligible corpus.
@@ -14,10 +14,10 @@ Section 11 for the methodology.
 
 | Scanner | Target cycle | Eligible URLs | Corpus covered | Covered (window) | Daily throughput | Projected cycle | Status |
 |---|---|---|---|---|---|---|---|
-| accessibility | 30d | 87,696 | 100.0% (87,690) | 16,624 (last 7d) | 2,374.9/day | 36.9d | 🟡 Marginal |
+| accessibility | 30d | 87,696 | 100.0% (87,690) | 16,329 (last 7d) | 2,332.7/day | 37.6d | 🟡 Marginal |
 | social_media | 30d | 87,696 | 100.0% (87,690) | 22,683 (last 7d) | 3,240.4/day | 27.1d | 🟢 On pace |
 | technology | 30d | 87,696 | 100.0% (87,690) | 4,317 (last 7d) | 616.7/day | 142.2d | 🟢 Caught up |
-| third_party_js | 30d | 87,696 | 100.0% (87,690) | 16,284 (last 7d) | 2,326.3/day | 37.7d | 🟡 Marginal |
+| third_party_js | 30d | 87,696 | 100.0% (87,690) | 15,782 (last 7d) | 2,254.6/day | 38.9d | 🟡 Marginal |
 | overlays | 30d | 87,696 | 1.7% (1,523) | 1,269 (last 7d) | 181.3/day | 483.7d | 🔴 Behind |
 | preferences | 90d | 87,696 | 5.7% (5,031) | 2,346 (last 7d) | 335.1/day | 261.7d | 🔴 Behind |
 | relationships | 60d | 87,696 | 94.6% (82,930) | 14,602 (last 7d) | 2,086.0/day | 42.0d | 🟢 Ahead |
