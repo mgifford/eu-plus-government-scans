@@ -5,10 +5,10 @@ layout: page
 
 <!-- TECH_LIGHTHOUSE_STATS_START -->
 
-_Generated: 2026-11-11 19:59 UTC_
+_Generated: 2026-11-12 01:13 UTC_
 
-**68,551** URLs with both technology detection and Lighthouse scores
-out of **75,293** technology-detected URLs and **75,034** Lighthouse-audited URLs
+**68,553** URLs with both technology detection and Lighthouse scores
+out of **75,293** technology-detected URLs and **75,036** Lighthouse-audited URLs
 
 ---
 
@@ -20,7 +20,7 @@ Average Google Lighthouse scores (0–100) for pages where each technology was d
 |--:|-----------|------:|----------:|-----:|-----:|----------:|----:|
 | 1 | jQuery | **41,030** | 32 | 87 | 89 | 90 | 89 |
 | 2 | PHP | **24,669** | 32 | 88 | 90 | 91 | 90 |
-| 3 | Apache | **20,103** | 32 | 86 | 86 | 89 | 88 |
+| 3 | Apache | **20,104** | 32 | 86 | 86 | 89 | 88 |
 | 4 | Bootstrap | **18,803** | 32 | 88 | 89 | 90 | 88 |
 | 5 | Font Awesome | **18,397** | 32 | 87 | 89 | 89 | 89 |
 | 6 | Google Tag Manager | **16,592** | 32 | 87 | 90 | 89 | 90 |
@@ -47,7 +47,7 @@ Average Google Lighthouse scores (0–100) for pages where each technology was d
 | 27 | Amazon Cloudfront | **3,090** | 24 | 89 | 95 | 94 | 90 |
 | 28 | Cart Functionality | **2,637** | 24 | 87 | 87 | 89 | 90 |
 | 29 | OWL Carousel | **2,613** | 29 | 83 | 87 | 87 | 87 |
-| 30 | Java | **2,573** | 29 | 88 | 92 | 93 | 89 |
+| 30 | Java | **2,574** | 29 | 88 | 92 | 93 | 89 |
 
 ## Top Technologies by Country
 
