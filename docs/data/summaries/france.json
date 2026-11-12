@@ -239,7 +239,7 @@
     },
     {
       "domain": "data.gouv.fr",
-      "count": 6501
+      "count": 6504
     },
     {
       "domain": "twitter.com",
@@ -247,11 +247,11 @@
     },
     {
       "domain": "youtube.com",
-      "count": 5561
+      "count": 5562
     },
     {
       "domain": "legifrance.gouv.fr",
-      "count": 5539
+      "count": 5542
     },
     {
       "domain": "googleapis.com",
@@ -263,11 +263,11 @@
     },
     {
       "domain": "github.com",
-      "count": 4379
+      "count": 4382
     },
     {
       "domain": "info.gouv.fr",
-      "count": 3475
+      "count": 3478
     },
     {
       "domain": "education.gouv.fr",
@@ -275,7 +275,7 @@
     },
     {
       "domain": "service-public.fr",
-      "count": 3050
+      "count": 3053
     },
     {
       "domain": "service-public.gouv.fr",
@@ -414,5 +414,5 @@
     "form_destination": 1700,
     "font_or_preload_dependency": 706
   },
-  "generated_at": "2026-11-11T14:27:23.163699+00:00"
+  "generated_at": "2026-11-12T15:30:34.655670+00:00"
 }

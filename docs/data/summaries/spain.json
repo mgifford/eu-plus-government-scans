@@ -9,7 +9,7 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 38183
+      "count": 38237
     },
     {
       "domain": "gva.es",
@@ -211,7 +211,7 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 19094
+      "count": 19122
     },
     {
       "domain": "gva.es",
@@ -219,15 +219,15 @@
     },
     {
       "domain": "facebook.com",
-      "count": 5362
+      "count": 5366
     },
     {
       "domain": "twitter.com",
-      "count": 4903
+      "count": 4905
     },
     {
       "domain": "youtube.com",
-      "count": 4555
+      "count": 4557
     },
     {
       "domain": "googleapis.com",
@@ -235,11 +235,11 @@
     },
     {
       "domain": "google.com",
-      "count": 4237
+      "count": 4240
     },
     {
       "domain": "jccm.es",
-      "count": 3980
+      "count": 3986
     },
     {
       "domain": "instagram.com",
@@ -303,7 +303,7 @@
     },
     {
       "domain": "blogspot.com",
-      "count": 1134
+      "count": 1135
     },
     {
       "domain": "europa.eu",
@@ -355,7 +355,7 @@
     },
     {
       "domain": "juntadeandalucia.es",
-      "count": 692
+      "count": 693
     },
     {
       "domain": "sede.gob.es",
@@ -395,15 +395,15 @@
     },
     {
       "domain": "vimeo.com",
-      "count": 515
+      "count": 516
     },
     {
       "domain": "seg-social.es",
       "count": 513
     },
     {
-      "domain": "ilunionaccede.es",
-      "count": 497
+      "domain": "sharethis.com",
+      "count": 499
     }
   ],
   "relationship_types": {
@@ -414,5 +414,5 @@
     "form_destination": 1517,
     "font_or_preload_dependency": 154
   },
-  "generated_at": "2026-11-11T14:27:23.496918+00:00"
+  "generated_at": "2026-11-12T15:30:35.099761+00:00"
 }

@@ -1,44 +1,44 @@
 ﻿country_code,country,service,domains_depending,scanned_domains,percent
-UNITED_KINGDOM_UK,United Kingdom,googleapis.com,1583,3362,47.1
-UNITED_KINGDOM_UK,United Kingdom,googletagmanager.com,1246,3362,37.1
-UNITED_KINGDOM_UK,United Kingdom,gstatic.com,595,3362,17.7
-UNITED_KINGDOM_UK,United Kingdom,jsdelivr.net,447,3362,13.3
-UNITED_KINGDOM_UK,United Kingdom,fontawesome.com,402,3362,12.0
-UNITED_KINGDOM_UK,United Kingdom,google.com,1203,3362,35.8
-UNITED_KINGDOM_UK,United Kingdom,cloudflare.com,953,3362,28.3
-UNITED_KINGDOM_UK,United Kingdom,jquery.com,184,3362,5.5
-UNITED_KINGDOM_UK,United Kingdom,unpkg.com,341,3362,10.1
-UNITED_KINGDOM_UK,United Kingdom,bootstrapcdn.com,157,3362,4.7
-UNITED_KINGDOM_UK,United Kingdom,typekit.net,149,3362,4.4
-UNITED_KINGDOM_UK,United Kingdom,cookiebot.com,60,3362,1.8
-UNITED_KINGDOM_UK,United Kingdom,facebook.com,24,3362,0.7
-UNITED_KINGDOM_UK,United Kingdom,facebook.net,62,3362,1.8
-UNITED_KINGDOM_UK,United Kingdom,addtoany.com,38,3362,1.1
-UNITED_KINGDOM_UK,United Kingdom,amazonaws.com,138,3362,4.1
-UNITED_KINGDOM_UK,United Kingdom,arcgis.com,26,3362,0.8
-UNITED_KINGDOM_UK,United Kingdom,cdn-cookieyes.com,62,3362,1.8
-UNITED_KINGDOM_UK,United Kingdom,cloudfront.net,362,3362,10.8
-UNITED_KINGDOM_UK,United Kingdom,datatables.net,32,3362,1.0
-POLAND,Poland,googleapis.com,1477,2447,60.4
-POLAND,Poland,googletagmanager.com,671,2447,27.4
-POLAND,Poland,gstatic.com,510,2447,20.8
-POLAND,Poland,jsdelivr.net,187,2447,7.6
-POLAND,Poland,fontawesome.com,144,2447,5.9
-POLAND,Poland,google.com,378,2447,15.4
-POLAND,Poland,cloudflare.com,247,2447,10.1
-POLAND,Poland,jquery.com,130,2447,5.3
-POLAND,Poland,unpkg.com,64,2447,2.6
-POLAND,Poland,bootstrapcdn.com,159,2447,6.5
-POLAND,Poland,typekit.net,29,2447,1.2
-POLAND,Poland,cookiebot.com,26,2447,1.1
-POLAND,Poland,facebook.com,118,2447,4.8
-POLAND,Poland,facebook.net,68,2447,2.8
-POLAND,Poland,addtoany.com,23,2447,0.9
-POLAND,Poland,amazonaws.com,9,2447,0.4
-POLAND,Poland,arcgis.com,2,2447,0.1
-POLAND,Poland,cdn-cookieyes.com,73,2447,3.0
-POLAND,Poland,cloudfront.net,27,2447,1.1
-POLAND,Poland,datatables.net,30,2447,1.2
+UNITED_KINGDOM_UK,United Kingdom,googleapis.com,1587,3368,47.1
+UNITED_KINGDOM_UK,United Kingdom,googletagmanager.com,1251,3368,37.1
+UNITED_KINGDOM_UK,United Kingdom,gstatic.com,600,3368,17.8
+UNITED_KINGDOM_UK,United Kingdom,jsdelivr.net,452,3368,13.4
+UNITED_KINGDOM_UK,United Kingdom,fontawesome.com,404,3368,12.0
+UNITED_KINGDOM_UK,United Kingdom,google.com,1204,3368,35.7
+UNITED_KINGDOM_UK,United Kingdom,cloudflare.com,953,3368,28.3
+UNITED_KINGDOM_UK,United Kingdom,jquery.com,183,3368,5.4
+UNITED_KINGDOM_UK,United Kingdom,unpkg.com,340,3368,10.1
+UNITED_KINGDOM_UK,United Kingdom,bootstrapcdn.com,158,3368,4.7
+UNITED_KINGDOM_UK,United Kingdom,typekit.net,149,3368,4.4
+UNITED_KINGDOM_UK,United Kingdom,cookiebot.com,60,3368,1.8
+UNITED_KINGDOM_UK,United Kingdom,facebook.com,24,3368,0.7
+UNITED_KINGDOM_UK,United Kingdom,facebook.net,62,3368,1.8
+UNITED_KINGDOM_UK,United Kingdom,addtoany.com,39,3368,1.2
+UNITED_KINGDOM_UK,United Kingdom,amazonaws.com,138,3368,4.1
+UNITED_KINGDOM_UK,United Kingdom,arcgis.com,26,3368,0.8
+UNITED_KINGDOM_UK,United Kingdom,cdn-cookieyes.com,62,3368,1.8
+UNITED_KINGDOM_UK,United Kingdom,cloudfront.net,362,3368,10.7
+UNITED_KINGDOM_UK,United Kingdom,datatables.net,32,3368,1.0
+POLAND,Poland,googleapis.com,1480,2448,60.5
+POLAND,Poland,googletagmanager.com,671,2448,27.4
+POLAND,Poland,gstatic.com,513,2448,21.0
+POLAND,Poland,jsdelivr.net,187,2448,7.6
+POLAND,Poland,fontawesome.com,144,2448,5.9
+POLAND,Poland,google.com,379,2448,15.5
+POLAND,Poland,cloudflare.com,248,2448,10.1
+POLAND,Poland,jquery.com,130,2448,5.3
+POLAND,Poland,unpkg.com,64,2448,2.6
+POLAND,Poland,bootstrapcdn.com,160,2448,6.5
+POLAND,Poland,typekit.net,29,2448,1.2
+POLAND,Poland,cookiebot.com,26,2448,1.1
+POLAND,Poland,facebook.com,118,2448,4.8
+POLAND,Poland,facebook.net,68,2448,2.8
+POLAND,Poland,addtoany.com,23,2448,0.9
+POLAND,Poland,amazonaws.com,9,2448,0.4
+POLAND,Poland,arcgis.com,2,2448,0.1
+POLAND,Poland,cdn-cookieyes.com,73,2448,3.0
+POLAND,Poland,cloudfront.net,27,2448,1.1
+POLAND,Poland,datatables.net,30,2448,1.2
 FRANCE,France,googleapis.com,230,669,34.4
 FRANCE,France,googletagmanager.com,89,669,13.3
 FRANCE,France,gstatic.com,115,669,17.2

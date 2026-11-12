@@ -13,7 +13,7 @@
     },
     {
       "domain": "cultura.gov.it",
-      "count": 21173
+      "count": 21259
     },
     {
       "domain": "regione.lombardia.it",
@@ -73,7 +73,7 @@
     },
     {
       "domain": "interno.gov.it",
-      "count": 2036
+      "count": 2053
     },
     {
       "domain": "comune.genova.it",
@@ -125,7 +125,7 @@
     },
     {
       "domain": "regione.piemonte.it",
-      "count": 1044
+      "count": 1064
     },
     {
       "domain": "comune.trento.it",
@@ -215,27 +215,27 @@
     },
     {
       "domain": "facebook.com",
-      "count": 10309
+      "count": 10316
     },
     {
       "domain": "cultura.gov.it",
-      "count": 9881
+      "count": 9929
     },
     {
       "domain": "youtube.com",
-      "count": 8175
+      "count": 8181
     },
     {
       "domain": "twitter.com",
-      "count": 8071
+      "count": 8075
     },
     {
       "domain": "agid.gov.it",
-      "count": 6695
+      "count": 6699
     },
     {
       "domain": "instagram.com",
-      "count": 6446
+      "count": 6453
     },
     {
       "domain": "regione.lombardia.it",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 3229
+      "count": 3236
     },
     {
       "domain": "viaggiaresicuri.it",
@@ -307,7 +307,7 @@
     },
     {
       "domain": "beniculturali.it",
-      "count": 1772
+      "count": 1780
     },
     {
       "domain": "google.com",
@@ -339,11 +339,11 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 1300
+      "count": 1302
     },
     {
       "domain": "interno.gov.it",
-      "count": 1209
+      "count": 1216
     },
     {
       "domain": "comune.verona.it",
@@ -359,7 +359,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 1019
+      "count": 1023
     },
     {
       "domain": "difesa.it",
@@ -414,5 +414,5 @@
     "form_destination": 1454,
     "font_or_preload_dependency": 262
   },
-  "generated_at": "2026-11-11T14:27:22.819887+00:00"
+  "generated_at": "2026-11-12T15:30:33.798370+00:00"
 }

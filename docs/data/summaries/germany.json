@@ -1,6 +1,6 @@
 {
   "country_code": "GERMANY",
-  "total_relationships": 21935,
+  "total_relationships": 21954,
   "total_source_domains": 231,
   "top_source_domains": [
     {
@@ -21,7 +21,7 @@
     },
     {
       "domain": "nrw.de",
-      "count": 32330
+      "count": 32400
     },
     {
       "domain": "diplo.de",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "nrw.de",
-      "count": 20666
+      "count": 20692
     },
     {
       "domain": "hessen.de",
@@ -247,7 +247,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 6856
+      "count": 6859
     },
     {
       "domain": "bund.de",
@@ -387,7 +387,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 723
+      "count": 726
     },
     {
       "domain": "stuttgart.de",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 11159,
+    "editorial_link": 11178,
     "font_or_preload_dependency": 350,
     "image_or_media_dependency": 2741,
     "script_dependency": 2861,
     "stylesheet_dependency": 2696,
     "form_destination": 2128
   },
-  "generated_at": "2026-11-11T14:27:24.165491+00:00"
+  "generated_at": "2026-11-12T15:30:35.537372+00:00"
 }
