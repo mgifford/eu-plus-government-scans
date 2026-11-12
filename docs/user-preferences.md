@@ -23,16 +23,16 @@ the government sites in this corpus:
 
 <!-- USER_PREFERENCES_STATS_START -->
 
-_Stats as of 2026-11-12 09:51 UTC — last scan: 2026-11-05_
+_Stats as of 2026-11-12 14:54 UTC — last scan: 2026-11-12_
 
 **Browser user preferences and design-system adoption**
 
-**5,031** of **87,696** available pages scanned (**5.7%** coverage)
-**4,622** of **5,031** scanned pages were reachable (**91.9%**)
-**3,999** of **4,622** reachable pages had at least one stylesheet checked (CSS tier: **86.5%**)
-**2,007** of **4,622** reachable pages show at least one user-preference signal (**43.4%**)
-Pages containing an explicit override (`forced-color-adjust: none`): **38** — a *risk signal* for manual review under EN 301 549 clause 9.7, not a confirmed failure
-Pages matching the HTML signatures of a curated design system: **11**
+**7,180** of **87,696** available pages scanned (**8.2%** coverage)
+**6,656** of **7,180** scanned pages were reachable (**92.7%**)
+**5,692** of **6,656** reachable pages had at least one stylesheet checked (CSS tier: **85.5%**)
+**2,767** of **6,656** reachable pages show at least one user-preference signal (**41.6%**)
+Pages containing an explicit override (`forced-color-adjust: none`): **80** — a *risk signal* for manual review under EN 301 549 clause 9.7, not a confirmed failure
+Pages matching the HTML signatures of a curated design system: **15**
 
 > Registry coverage: **4** of **22** curated design-system entries have confirmed adoption signatures (**6** entries still need review). Systems without signatures cannot yet be measured for adoption.
 
@@ -42,12 +42,12 @@ Pages matching the HTML signatures of a curated design system: **11**
 
 | Signal | Pages | % of reachable |
 |--------|------:|---------------:|
-| Dark/light colour scheme (`prefers-color-scheme`) | 211 | 4.6% |
-| Declared colour scheme (`color-scheme`) | 257 | 5.6% |
-| Reduced motion (`prefers-reduced-motion`) | 1,836 | 39.7% |
-| Increased contrast (`prefers-contrast`) | 123 | 2.7% |
-| Reduced transparency (`prefers-reduced-transparency`) | 2 | 0.0% |
-| Forced colours / high contrast (`forced-colors`) | 142 | 3.1% |
+| Dark/light colour scheme (`prefers-color-scheme`) | 298 | 4.5% |
+| Declared colour scheme (`color-scheme`) | 370 | 5.6% |
+| Reduced motion (`prefers-reduced-motion`) | 2,435 | 36.6% |
+| Increased contrast (`prefers-contrast`) | 240 | 3.6% |
+| Reduced transparency (`prefers-reduced-transparency`) | 6 | 0.1% |
+| Forced colours / high contrast (`forced-colors`) | 238 | 3.6% |
 
 Counts are pages where the signal appeared in the page HTML **or** a fetched stylesheet. Attribution (HTML vs first-party CSS vs third-party CSS) is in the JSON ``feature_sources`` field.
 
@@ -65,12 +65,12 @@ Counts are pages where the signal appeared in the page HTML **or** a fetched sty
 | [Designsystem.dk](https://designsystem.dk/) | Denmark | design_system | not curated | 0 |
 | [Helsinki Design System](https://hds.hel.fi/) ⚠ | Finland | design_system | ✓ | 0 |
 | [Suomi.fi Design System](https://designsystem.suomi.fi/) | Finland | design_system | not curated | 0 |
-| [Système de Design de l'État](https://www.systeme-de-design.gouv.fr/version-courante/fr) | France | design_system | ✓ | 11 |
+| [Système de Design de l'État](https://www.systeme-de-design.gouv.fr/version-courante/fr) | France | design_system | ✓ | 13 |
 | [Angie Design System](https://digitalservicebund.github.io/angie/) | Germany | design_system | not curated | 0 |
 | [Government Digital Services Design Guide](https://guide.services.gov.gr/) ⚠ | Greece | design_system | not curated | 0 |
 | [Government Design System (Hungary)](https://services.gov.hu/design-system) | Hungary | design_system | not curated | 0 |
 | [Accessibilité public.lu](https://accessibilite.public.lu/en/index.html) ⚠ | Luxembourg | accessibility_guide | not curated | 0 |
-| [NL Design System](https://nldesignsystem.nl/) ⚠ | Netherlands | design_system | ✓ | 0 |
+| [NL Design System](https://nldesignsystem.nl/) ⚠ | Netherlands | design_system | ✓ | 2 |
 | [DESY Design System](https://desy.aragon.es/) | Spain | design_system | not curated | 0 |
 | [Dintel Design System](https://dintel.redsara.es/) | Spain | design_system | not curated | 0 |
 | [Sharing Sweden Brand Identity](https://sharingsweden.se/the-sweden-brand/brand-visual-identity) | Sweden | brand_identity | not curated | 0 |
@@ -93,8 +93,9 @@ Counts are pages where the signal appeared in the page HTML **or** a fetched sty
 | Austria | 822 | 822 | 748 | 720 | 545 | 72.9% | 23 | 540 | 21 | 0 | 3 |
 | Belgium | 1,329 | 1,329 | 1,192 | 1,064 | 413 | 34.6% | 77 | 376 | 41 | 6 | 3 |
 | Bulgaria | 353 | 353 | 295 | 223 | 111 | 37.6% | 2 | 111 | 5 | 0 | 0 |
-| Canada | 2,527 | 4,469 | 2,387 | 1,992 | 938 | 39.3% | 109 | 809 | 75 | 32 | 5 |
-| **Total** | **5,031** | **87,696** | **4,622** | **3,999** | **2,007** | **43.4%** | **211** | **1,836** | **142** | **38** | **11** |
+| Canada | 4,469 | 4,469 | 4,217 | 3,553 | 1,632 | 38.7% | 191 | 1,344 | 168 | 74 | 9 |
+| Croatia | 207 | 257 | 204 | 132 | 66 | 32.4% | 5 | 64 | 3 | 0 | 0 |
+| **Total** | **7,180** | **87,696** | **6,656** | **5,692** | **2,767** | **41.6%** | **298** | **2,435** | **238** | **80** | **15** |
 
 ---
 
