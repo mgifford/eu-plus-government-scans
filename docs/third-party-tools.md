@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-11-13 07:51 UTC — last scan: 2026-11-12_
+_Stats as of 2026-11-13 08:22 UTC — last scan: 2026-11-13_
 
-**509** scan batches run
+**510** scan batches run
 
 **87,690** of **87,696** available pages scanned (**100.0%** coverage)
-**81,873** of **87,690** scanned pages were reachable (**93.4%**)
+**81,874** of **87,690** scanned pages were reachable (**93.4%**)
 **39,002** reachable pages loaded at least one third-party script (**47.6%** of reachable)
-**46,439** known third-party service loads identified
+**46,436** known third-party service loads identified
 **26** unique known services across **17** categories
 
 ---
@@ -31,7 +31,7 @@ _Stats as of 2026-11-13 07:51 UTC — last scan: 2026-11-12_
 | Estonia | 401 | 401 | 385 | 140 | 117 | 36.4 | 30.4 | 2026-10-26 |
 | Finland | 199 | 199 | 189 | 47 | 26 | 24.9 | 13.8 | 2026-10-26 |
 | France | 10,009 | 10,009 | 9,295 | 4,264 | 2,305 | 45.9 | 24.8 | 2026-11-12 |
-| Germany | 6,599 | 6,599 | 6,489 | 1,738 | 335 | 26.8 | 5.2 | 2026-11-10 |
+| Germany | 6,599 | 6,599 | 6,490 | 1,738 | 332 | 26.8 | 5.1 | 2026-11-13 |
 | Greece | 1,752 | 1,752 | 1,647 | 819 | 1,110 | 49.7 | 67.4 | 2026-11-05 |
 | Hungary | 392 | 392 | 307 | 133 | 195 | 43.3 | 63.5 | 2026-10-27 |
 | Iceland | 145 | 145 | 143 | 81 | 43 | 56.6 | 30.1 | 2026-10-27 |
@@ -71,7 +71,7 @@ _Stats as of 2026-11-13 07:51 UTC — last scan: 2026-11-12_
 | 7 | unpkg CDN | **2,864** |
 | 8 | jQuery | **2,741** |
 | 9 | Font Awesome | **1,861** |
-| 10 | Bootstrap | **914** |
+| 10 | Bootstrap | **911** |
 | 11 | Cookiebot | **815** |
 | 12 | Adobe Dynamic Tag Management / Launch | **523** |
 | 13 | Facebook Pixel | **441** |
@@ -96,7 +96,7 @@ _Stats as of 2026-11-13 07:51 UTC — last scan: 2026-11-12_
 | 7 | unpkg CDN | **2,212** | **11.8%** |
 | 8 | jQuery | **2,173** | **11.6%** |
 | 9 | Font Awesome | **1,485** | **7.9%** |
-| 10 | Bootstrap | **907** | **4.9%** |
+| 10 | Bootstrap | **904** | **4.8%** |
 | 11 | Cookiebot | **796** | **4.3%** |
 | 12 | Adobe Dynamic Tag Management / Launch | **520** | **2.8%** |
 | 13 | Facebook Pixel | **426** | **2.3%** |
@@ -120,7 +120,7 @@ _Stats as of 2026-11-13 07:51 UTC — last scan: 2026-11-12_
 | 6 | Tag Manager | **4,613** |
 | 7 | Icon Library | **1,861** |
 | 8 | Cookie Consent | **1,593** |
-| 9 | UI Framework | **914** |
+| 9 | UI Framework | **911** |
 | 10 | Advertising | **441** |
 | 11 | Error Tracking | **222** |
 | 12 | Payments | **45** |
@@ -137,7 +137,7 @@ Infrastructure-heavy categories (CDNs, core libraries, and UI assets):
 | 1 | CDN | **20,040** |
 | 2 | JavaScript Library | **5,919** |
 | 3 | Icon Library | **1,861** |
-| 4 | UI Framework | **914** |
+| 4 | UI Framework | **911** |
 
 Policy-relevant categories (tracking, consent, support, and security tooling):
 
@@ -168,7 +168,7 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 | 5 | `maps.googleapis.com` | **1,696** | **1,678** |
 | 6 | `content.powerapps.com` | **1,546** | **128** |
 | 7 | `static.parastorage.com` | **1,497** | **140** |
-| 8 | `www.styleguide.sachsen.de` | **1,279** | **320** |
+| 8 | `www.styleguide.sachsen.de` | **1,275** | **319** |
 | 9 | `cc.cdn.civiccomputing.com` | **955** | **952** |
 | 10 | `ajax.aspnetcdn.com` | **898** | **443** |
 | 11 | `static.addtoany.com` | **870** | **854** |
