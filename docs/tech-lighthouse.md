@@ -5,10 +5,10 @@ layout: page
 
 <!-- TECH_LIGHTHOUSE_STATS_START -->
 
-_Generated: 2026-11-12 18:11 UTC_
+_Generated: 2026-11-13 07:52 UTC_
 
-**68,651** URLs with both technology detection and Lighthouse scores
-out of **75,400** technology-detected URLs and **75,041** Lighthouse-audited URLs
+**68,683** URLs with both technology detection and Lighthouse scores
+out of **75,430** technology-detected URLs and **75,064** Lighthouse-audited URLs
 
 ---
 
@@ -18,36 +18,36 @@ Average Google Lighthouse scores (0–100) for pages where each technology was d
 
 | # | Technology | Pages | Countries | Perf | A11y | Best Prac | SEO |
 |--:|-----------|------:|----------:|-----:|-----:|----------:|----:|
-| 1 | jQuery | **41,094** | 32 | 87 | 89 | 90 | 89 |
-| 2 | PHP | **24,676** | 32 | 88 | 90 | 91 | 90 |
-| 3 | Apache | **20,097** | 32 | 86 | 86 | 89 | 88 |
-| 4 | Bootstrap | **18,816** | 32 | 88 | 89 | 90 | 88 |
-| 5 | Font Awesome | **18,409** | 32 | 87 | 89 | 89 | 89 |
-| 6 | Google Tag Manager | **16,633** | 32 | 87 | 90 | 89 | 90 |
-| 7 | Google Font API | **16,224** | 32 | 87 | 88 | 89 | 89 |
-| 8 | MySQL | **14,444** | 32 | 88 | 89 | 90 | 90 |
-| 9 | WordPress | **14,342** | 32 | 88 | 89 | 90 | 90 |
-| 10 | Nginx | **12,596** | 32 | 89 | 91 | 92 | 90 |
-| 11 | jQuery Migrate | **12,554** | 32 | 87 | 89 | 89 | 90 |
-| 12 | Cloudflare | **7,089** | 32 | 89 | 92 | 88 | 81 |
-| 13 | Windows Server | **6,714** | 31 | 89 | 88 | 88 | 86 |
-| 14 | IIS | **6,605** | 31 | 89 | 88 | 88 | 86 |
-| 15 | jQuery UI | **6,028** | 32 | 87 | 88 | 88 | 87 |
-| 16 | Microsoft ASP.NET | **5,806** | 31 | 89 | 88 | 88 | 86 |
-| 17 | Drupal | **5,037** | 29 | 89 | 92 | 91 | 92 |
-| 18 | Yoast SEO | **4,776** | 30 | 87 | 89 | 88 | 90 |
-| 19 | reCAPTCHA | **4,717** | 30 | 87 | 91 | 88 | 90 |
-| 20 | jsDelivr | **4,465** | 32 | 87 | 90 | 90 | 89 |
+| 1 | jQuery | **40,987** | 32 | 87 | 89 | 90 | 89 |
+| 2 | PHP | **24,591** | 32 | 88 | 90 | 91 | 91 |
+| 3 | Apache | **20,075** | 32 | 86 | 86 | 89 | 88 |
+| 4 | Bootstrap | **18,779** | 32 | 88 | 89 | 90 | 88 |
+| 5 | Font Awesome | **18,336** | 32 | 87 | 89 | 89 | 89 |
+| 6 | Google Tag Manager | **16,592** | 32 | 87 | 90 | 89 | 90 |
+| 7 | Google Font API | **16,135** | 32 | 87 | 88 | 89 | 89 |
+| 8 | MySQL | **14,360** | 32 | 88 | 89 | 90 | 91 |
+| 9 | WordPress | **14,258** | 32 | 88 | 89 | 90 | 91 |
+| 10 | Nginx | **12,604** | 32 | 89 | 91 | 92 | 90 |
+| 11 | jQuery Migrate | **12,456** | 32 | 87 | 89 | 89 | 90 |
+| 12 | Cloudflare | **7,100** | 32 | 89 | 92 | 88 | 81 |
+| 13 | Windows Server | **6,698** | 31 | 89 | 88 | 88 | 86 |
+| 14 | IIS | **6,587** | 31 | 89 | 88 | 88 | 86 |
+| 15 | jQuery UI | **6,022** | 32 | 87 | 88 | 88 | 87 |
+| 16 | Microsoft ASP.NET | **5,798** | 31 | 89 | 88 | 88 | 86 |
+| 17 | Drupal | **5,032** | 29 | 89 | 92 | 91 | 92 |
+| 18 | reCAPTCHA | **4,718** | 30 | 87 | 91 | 88 | 90 |
+| 19 | Yoast SEO | **4,694** | 30 | 87 | 89 | 88 | 90 |
+| 20 | jsDelivr | **4,389** | 32 | 87 | 90 | 90 | 89 |
 | 21 | Slick | **3,770** | 30 | 82 | 88 | 90 | 89 |
-| 22 | Lightbox | **3,494** | 32 | 86 | 87 | 88 | 88 |
-| 23 | Modernizr | **3,418** | 29 | 88 | 89 | 88 | 90 |
-| 24 | Elementor | **3,207** | 28 | 85 | 89 | 89 | 89 |
-| 25 | Amazon Web Services | **3,146** | 24 | 89 | 95 | 94 | 90 |
+| 22 | Lightbox | **3,422** | 32 | 86 | 87 | 88 | 88 |
+| 23 | Modernizr | **3,409** | 29 | 88 | 89 | 88 | 90 |
+| 24 | Amazon Web Services | **3,143** | 24 | 89 | 95 | 94 | 90 |
+| 25 | Elementor | **3,125** | 29 | 85 | 89 | 89 | 90 |
 | 26 | LiteSpeed | **3,120** | 22 | 90 | 87 | 87 | 91 |
-| 27 | Amazon Cloudfront | **3,092** | 24 | 89 | 95 | 94 | 90 |
-| 28 | Cart Functionality | **2,641** | 24 | 86 | 87 | 89 | 90 |
-| 29 | OWL Carousel | **2,613** | 29 | 83 | 87 | 87 | 87 |
-| 30 | Java | **2,574** | 29 | 88 | 92 | 93 | 89 |
+| 27 | Amazon Cloudfront | **3,089** | 24 | 89 | 95 | 94 | 90 |
+| 28 | Cart Functionality | **2,637** | 24 | 87 | 87 | 89 | 90 |
+| 29 | Java | **2,574** | 29 | 88 | 92 | 93 | 89 |
+| 30 | OWL Carousel | **2,546** | 30 | 82 | 87 | 87 | 88 |
 
 ## Top Technologies by Country
 
