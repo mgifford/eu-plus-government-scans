@@ -97,7 +97,7 @@
     },
     {
       "domain": "comune.torino.it",
-      "count": 1541
+      "count": 1555
     },
     {
       "domain": "regione.sicilia.it",
@@ -120,12 +120,12 @@
       "count": 1223
     },
     {
-      "domain": "comune.perugia.it",
-      "count": 1068
+      "domain": "regione.piemonte.it",
+      "count": 1130
     },
     {
-      "domain": "regione.piemonte.it",
-      "count": 1064
+      "domain": "comune.perugia.it",
+      "count": 1068
     },
     {
       "domain": "comune.trento.it",
@@ -160,16 +160,16 @@
       "count": 883
     },
     {
+      "domain": "comune.cremona.it",
+      "count": 836
+    },
+    {
       "domain": "istat.it",
       "count": 836
     },
     {
       "domain": "comune.napoli.it",
       "count": 823
-    },
-    {
-      "domain": "comune.cremona.it",
-      "count": 811
     },
     {
       "domain": "comune.oristano.it",
@@ -215,7 +215,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 10316
+      "count": 10319
     },
     {
       "domain": "cultura.gov.it",
@@ -223,19 +223,19 @@
     },
     {
       "domain": "youtube.com",
-      "count": 8181
+      "count": 8184
     },
     {
       "domain": "twitter.com",
-      "count": 8075
+      "count": 8078
     },
     {
       "domain": "agid.gov.it",
-      "count": 6699
+      "count": 6708
     },
     {
       "domain": "instagram.com",
-      "count": 6453
+      "count": 6456
     },
     {
       "domain": "regione.lombardia.it",
@@ -251,7 +251,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 3712
+      "count": 3713
     },
     {
       "domain": "googleapis.com",
@@ -271,19 +271,19 @@
     },
     {
       "domain": "whatsapp.com",
-      "count": 2641
+      "count": 2644
     },
     {
       "domain": "regione.campania.it",
       "count": 2496
     },
     {
-      "domain": "comune.parma.it",
-      "count": 2479
+      "domain": "linkedin.com",
+      "count": 2481
     },
     {
-      "domain": "linkedin.com",
-      "count": 2478
+      "domain": "comune.parma.it",
+      "count": 2479
     },
     {
       "domain": "regione.lazio.it",
@@ -374,12 +374,12 @@
       "count": 899
     },
     {
-      "domain": "comune.modena.it",
-      "count": 834
+      "domain": "comune.torino.it",
+      "count": 841
     },
     {
-      "domain": "comune.torino.it",
-      "count": 829
+      "domain": "comune.modena.it",
+      "count": 834
     },
     {
       "domain": "scuolamagistratura.it",
@@ -402,8 +402,8 @@
       "count": 675
     },
     {
-      "domain": "opportunitaly.gov.it",
-      "count": 657
+      "domain": "regione.piemonte.it",
+      "count": 661
     }
   ],
   "relationship_types": {
@@ -414,5 +414,5 @@
     "form_destination": 1454,
     "font_or_preload_dependency": 262
   },
-  "generated_at": "2026-11-12T15:30:33.798370+00:00"
+  "generated_at": "2026-11-13T06:03:35.022651+00:00"
 }

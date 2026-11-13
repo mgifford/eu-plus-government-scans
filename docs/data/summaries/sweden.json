@@ -29,7 +29,7 @@
     },
     {
       "domain": "stockholm.se",
-      "count": 1207
+      "count": 1213
     },
     {
       "domain": "vgregion.se",
@@ -97,7 +97,7 @@
     },
     {
       "domain": "regionvarmland.se",
-      "count": 499
+      "count": 505
     },
     {
       "domain": "vasteras.se",
@@ -271,7 +271,7 @@
     },
     {
       "domain": "stockholm.se",
-      "count": 642
+      "count": 648
     },
     {
       "domain": "google.com",
@@ -414,5 +414,5 @@
     "image_or_media_dependency": 680,
     "font_or_preload_dependency": 318
   },
-  "generated_at": "2026-11-11T14:27:24.382567+00:00"
+  "generated_at": "2026-11-13T06:03:36.443992+00:00"
 }

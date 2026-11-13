@@ -9,7 +9,7 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 38237
+      "count": 38330
     },
     {
       "domain": "gva.es",
@@ -211,7 +211,7 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 19122
+      "count": 19164
     },
     {
       "domain": "gva.es",
@@ -219,15 +219,15 @@
     },
     {
       "domain": "facebook.com",
-      "count": 5366
+      "count": 5370
     },
     {
       "domain": "twitter.com",
-      "count": 4905
+      "count": 4909
     },
     {
       "domain": "youtube.com",
-      "count": 4557
+      "count": 4560
     },
     {
       "domain": "googleapis.com",
@@ -235,15 +235,15 @@
     },
     {
       "domain": "google.com",
-      "count": 4240
+      "count": 4246
     },
     {
       "domain": "jccm.es",
-      "count": 3986
+      "count": 3995
     },
     {
       "domain": "instagram.com",
-      "count": 3962
+      "count": 3965
     },
     {
       "domain": "navarra.es",
@@ -303,7 +303,7 @@
     },
     {
       "domain": "blogspot.com",
-      "count": 1135
+      "count": 1137
     },
     {
       "domain": "europa.eu",
@@ -319,7 +319,7 @@
     },
     {
       "domain": "google.es",
-      "count": 971
+      "count": 973
     },
     {
       "domain": "sanidad.gob.es",
@@ -387,14 +387,14 @@
     },
     {
       "domain": "blogspot.com.es",
+      "count": 520
+    },
+    {
+      "domain": "vimeo.com",
       "count": 519
     },
     {
       "domain": "digital.gob.es",
-      "count": 516
-    },
-    {
-      "domain": "vimeo.com",
       "count": 516
     },
     {
@@ -403,7 +403,7 @@
     },
     {
       "domain": "sharethis.com",
-      "count": 499
+      "count": 500
     }
   ],
   "relationship_types": {
@@ -414,5 +414,5 @@
     "form_destination": 1517,
     "font_or_preload_dependency": 154
   },
-  "generated_at": "2026-11-12T15:30:35.099761+00:00"
+  "generated_at": "2026-11-13T06:03:35.915343+00:00"
 }
