@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-11-13 09:31 UTC_
+_Generated: 2026-11-13 12:40 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -14,10 +14,10 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
 | **Combined Reachability** | **82,259 confirmed reachable** | 87,696 | **<span role="img" aria-label="93.8% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:113px;"></span></span><span class="sm-bar__label">93.8%</span></span>** | — |
-| Social Media | 87,696 scanned (82,253 reachable) | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 48.0 days |
-| Technology | 87,696 scanned | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 51.2 days |
-| Lighthouse | 75,064 scanned | 87,696 | <span role="img" aria-label="85.6% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:103px;"></span></span><span class="sm-bar__label">85.6%</span></span> | 33.3 days |
-| Accessibility Statements | 87,696 scanned | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 53.8 days |
+| Social Media | 87,696 scanned (82,253 reachable) | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 48.2 days |
+| Technology | 87,696 scanned | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 51.4 days |
+| Lighthouse | 75,085 scanned | 87,696 | <span role="img" aria-label="85.6% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:103px;"></span></span><span class="sm-bar__label">85.6%</span></span> | 33.3 days |
+| Accessibility Statements | 87,696 scanned | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 54.0 days |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by any scan type. **Avg Age** shows the mean number of days (or hours) since each URL in that scan type was last scanned — lower is fresher.
 
@@ -143,12 +143,12 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Denmark | 1,364 | 87 | 95 | 96 | 90 | 2026-11-12 |
 | Estonia | 365 | 91 | 87 | 86 | 86 | 2026-10-24 |
 | Finland | 184 | 87 | 94 | 96 | 87 | 2026-10-24 |
-| France | 8,111 | 90 | 90 | 92 | 91 | 2026-11-12 |
+| France | 8,117 | 90 | 90 | 92 | 91 | 2026-11-13 |
 | Germany | 6,224 | 86 | 90 | 95 | 88 | 2026-11-13 |
 | Greece | 1,560 | 86 | 86 | 90 | 88 | 2026-11-09 |
 | Hungary | 384 | 89 | 77 | 83 | 86 | 2026-10-30 |
 | Iceland | 133 | 91 | 92 | 91 | 91 | 2026-10-22 |
-| Ireland | 484 | 91 | 92 | 90 | 87 | 2026-11-06 |
+| Ireland | 494 | 91 | 92 | 90 | 87 | 2026-11-13 |
 | Italy | 4,568 | 88 | 88 | 92 | 88 | 2026-11-11 |
 | Latvia | 473 | 87 | 86 | 91 | 85 | 2026-11-04 |
 | Lithuania | 111 | 86 | 82 | 87 | 84 | 2026-10-23 |
@@ -162,10 +162,10 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Romania | 241 | 88 | 77 | 89 | 84 | 2026-11-07 |
 | Slovakia | 422 | 90 | 88 | 90 | 88 | 2026-10-25 |
 | Slovenia | 208 | 87 | 80 | 89 | 85 | 2026-10-22 |
-| Spain | 5,114 | 83 | 81 | 81 | 84 | 2026-11-12 |
+| Spain | 5,117 | 83 | 81 | 81 | 84 | 2026-11-13 |
 | Sweden | 1,596 | 90 | 93 | 93 | 87 | 2026-11-12 |
 | Switzerland | 1,696 | 85 | 91 | 96 | 87 | 2026-11-13 |
-| United Kingdom | 17,255 | 90 | 94 | 92 | 87 | 2026-11-12 |
+| United Kingdom | 17,257 | 90 | 94 | 92 | 87 | 2026-11-13 |
 
 > Scores are averages across all successfully audited URLs, displayed as 0–100 (multiply source values × 100).
 
