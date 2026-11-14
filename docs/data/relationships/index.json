@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-13T14:49:15.784653+00:00",
+  "generated_at": "2026-11-14T13:49:44.489452+00:00",
   "shard_max_bytes": 33554432,
-  "total_rows": 333537,
-  "total_bytes": 198056176,
+  "total_rows": 334309,
+  "total_bytes": 198462710,
   "shards": [
     {
       "file": "app.001.jsonl",
@@ -62,7 +62,7 @@
       "file": "clinic.001.jsonl",
       "group": "clinic",
       "rows": 14,
-      "bytes": 7559
+      "bytes": 7570
     },
     {
       "file": "cloud.001.jsonl",
@@ -86,7 +86,7 @@
       "file": "cymru.001.jsonl",
       "group": "cymru",
       "rows": 173,
-      "bytes": 99776
+      "bytes": 99786
     },
     {
       "file": "cz.001.jsonl",
@@ -116,13 +116,13 @@
       "file": "es.001.jsonl",
       "group": "es",
       "rows": 17391,
-      "bytes": 10956623
+      "bytes": 10956654
     },
     {
       "file": "eu.001.jsonl",
       "group": "eu",
       "rows": 3661,
-      "bytes": 2132689
+      "bytes": 2132696
     },
     {
       "file": "eus.001.jsonl",
@@ -140,7 +140,7 @@
       "file": "fr.001.jsonl",
       "group": "fr",
       "rows": 31785,
-      "bytes": 20956716
+      "bytes": 20956662
     },
     {
       "file": "frl.001.jsonl",
@@ -200,7 +200,7 @@
       "file": "it.001.jsonl",
       "group": "it",
       "rows": 16691,
-      "bytes": 10784475
+      "bytes": 10784479
     },
     {
       "file": "kh.001.jsonl",
@@ -218,7 +218,7 @@
       "file": "lu.001.jsonl",
       "group": "lu",
       "rows": 2143,
-      "bytes": 1295356
+      "bytes": 1295333
     },
     {
       "file": "lv.001.jsonl",
@@ -289,14 +289,14 @@
     {
       "file": "pl.001.jsonl",
       "group": "pl",
-      "rows": 59269,
-      "bytes": 33554387
+      "rows": 59374,
+      "bytes": 33553995
     },
     {
       "file": "pl.002.jsonl",
       "group": "pl",
-      "rows": 5138,
-      "bytes": 2925077
+      "rows": 5213,
+      "bytes": 3020666
     },
     {
       "file": "pt.001.jsonl",
@@ -319,8 +319,8 @@
     {
       "file": "scot.001.jsonl",
       "group": "scot",
-      "rows": 630,
-      "bytes": 363839
+      "rows": 644,
+      "bytes": 370471
     },
     {
       "file": "se.001.jsonl",
@@ -361,14 +361,14 @@
     {
       "file": "uk.001.jsonl",
       "group": "uk",
-      "rows": 59546,
-      "bytes": 33554093
+      "rows": 59565,
+      "bytes": 33554118
     },
     {
       "file": "uk.002.jsonl",
       "group": "uk",
-      "rows": 20088,
-      "bytes": 11283007
+      "rows": 20647,
+      "bytes": 11587701
     },
     {
       "file": "wales.001.jsonl",

@@ -9,7 +9,7 @@
     },
     {
       "domain": "public.lu",
-      "count": 7619
+      "count": 7793
     },
     {
       "domain": "uni.lu",
@@ -163,7 +163,7 @@
   "top_target_domains": [
     {
       "domain": "public.lu",
-      "count": 7442
+      "count": 7548
     },
     {
       "domain": "gouvernement.lu",
@@ -171,11 +171,11 @@
     },
     {
       "domain": "facebook.com",
-      "count": 1002
+      "count": 1010
     },
     {
       "domain": "linkedin.com",
-      "count": 921
+      "count": 926
     },
     {
       "domain": "uni.lu",
@@ -183,7 +183,7 @@
     },
     {
       "domain": "twitter.com",
-      "count": 687
+      "count": 688
     },
     {
       "domain": "bsky.app",
@@ -191,11 +191,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 527
+      "count": 534
     },
     {
       "domain": "adobedtm.com",
-      "count": 504
+      "count": 516
     },
     {
       "domain": "etat.lu",
@@ -203,11 +203,11 @@
     },
     {
       "domain": "youtube.com",
-      "count": 352
+      "count": 359
     },
     {
       "domain": "europa.eu",
-      "count": 295
+      "count": 298
     },
     {
       "domain": "googleapis.com",
@@ -258,12 +258,12 @@
       "count": 97
     },
     {
-      "domain": "quilium.io",
-      "count": 86
+      "domain": "readspeaker.com",
+      "count": 92
     },
     {
-      "domain": "readspeaker.com",
-      "count": 79
+      "domain": "quilium.io",
+      "count": 86
     },
     {
       "domain": "typekit.net",
@@ -370,5 +370,5 @@
     "stylesheet_dependency": 243,
     "font_or_preload_dependency": 29
   },
-  "generated_at": "2026-11-12T15:30:34.941468+00:00"
+  "generated_at": "2026-11-14T00:06:41.128973+00:00"
 }

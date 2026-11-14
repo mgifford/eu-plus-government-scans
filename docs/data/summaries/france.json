@@ -1,6 +1,6 @@
 {
   "country_code": "FRANCE",
-  "total_relationships": 30422,
+  "total_relationships": 30421,
   "total_source_domains": 677,
   "top_source_domains": [
     {
@@ -239,7 +239,7 @@
     },
     {
       "domain": "data.gouv.fr",
-      "count": 6504
+      "count": 6506
     },
     {
       "domain": "twitter.com",
@@ -247,11 +247,11 @@
     },
     {
       "domain": "youtube.com",
-      "count": 5562
+      "count": 5563
     },
     {
       "domain": "legifrance.gouv.fr",
-      "count": 5542
+      "count": 5544
     },
     {
       "domain": "googleapis.com",
@@ -263,11 +263,11 @@
     },
     {
       "domain": "github.com",
-      "count": 4382
+      "count": 4384
     },
     {
       "domain": "info.gouv.fr",
-      "count": 3478
+      "count": 3480
     },
     {
       "domain": "education.gouv.fr",
@@ -275,7 +275,7 @@
     },
     {
       "domain": "service-public.fr",
-      "count": 3053
+      "count": 3055
     },
     {
       "domain": "service-public.gouv.fr",
@@ -311,7 +311,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 2279
+      "count": 2274
     },
     {
       "domain": "numerique.gouv.fr",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "script_dependency": 4529,
+    "script_dependency": 4528,
     "stylesheet_dependency": 4091,
     "editorial_link": 15842,
     "image_or_media_dependency": 3554,
     "form_destination": 1700,
     "font_or_preload_dependency": 706
   },
-  "generated_at": "2026-11-13T06:03:35.599287+00:00"
+  "generated_at": "2026-11-14T13:49:51.126256+00:00"
 }
