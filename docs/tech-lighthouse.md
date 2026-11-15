@@ -5,10 +5,10 @@ layout: page
 
 <!-- TECH_LIGHTHOUSE_STATS_START -->
 
-_Generated: 2026-11-15 14:44 UTC_
+_Generated: 2026-11-15 21:51 UTC_
 
 **68,723** URLs with both technology detection and Lighthouse scores
-out of **75,473** technology-detected URLs and **75,187** Lighthouse-audited URLs
+out of **75,473** technology-detected URLs and **75,198** Lighthouse-audited URLs
 
 ---
 
@@ -30,15 +30,15 @@ Average Google Lighthouse scores (0–100) for pages where each technology was d
 | 10 | Nginx | **12,630** | 32 | 89 | 91 | 92 | 90 |
 | 11 | jQuery Migrate | **12,430** | 32 | 87 | 89 | 89 | 90 |
 | 12 | Cloudflare | **7,127** | 32 | 89 | 92 | 88 | 81 |
-| 13 | Windows Server | **6,690** | 31 | 89 | 88 | 88 | 86 |
-| 14 | IIS | **6,580** | 31 | 89 | 88 | 88 | 86 |
+| 13 | Windows Server | **6,690** | 31 | 90 | 88 | 88 | 86 |
+| 14 | IIS | **6,580** | 31 | 90 | 88 | 88 | 86 |
 | 15 | jQuery UI | **6,022** | 32 | 87 | 88 | 88 | 87 |
-| 16 | Microsoft ASP.NET | **5,795** | 31 | 89 | 88 | 88 | 86 |
+| 16 | Microsoft ASP.NET | **5,795** | 31 | 90 | 88 | 88 | 86 |
 | 17 | Drupal | **5,041** | 29 | 89 | 92 | 91 | 91 |
 | 18 | Yoast SEO | **4,742** | 30 | 87 | 89 | 88 | 90 |
 | 19 | reCAPTCHA | **4,728** | 30 | 87 | 91 | 88 | 90 |
-| 20 | jsDelivr | **4,388** | 32 | 87 | 90 | 90 | 89 |
-| 21 | Slick | **3,770** | 30 | 82 | 88 | 89 | 89 |
+| 20 | jsDelivr | **4,388** | 32 | 88 | 90 | 90 | 89 |
+| 21 | Slick | **3,770** | 30 | 83 | 88 | 89 | 89 |
 | 22 | Lightbox | **3,433** | 32 | 87 | 87 | 88 | 88 |
 | 23 | Modernizr | **3,388** | 29 | 88 | 89 | 88 | 90 |
 | 24 | Amazon Web Services | **3,147** | 24 | 89 | 95 | 94 | 90 |
@@ -47,7 +47,7 @@ Average Google Lighthouse scores (0–100) for pages where each technology was d
 | 27 | Amazon Cloudfront | **3,093** | 24 | 89 | 95 | 94 | 90 |
 | 28 | Cart Functionality | **2,657** | 24 | 87 | 87 | 89 | 90 |
 | 29 | Java | **2,572** | 29 | 88 | 92 | 93 | 89 |
-| 30 | OWL Carousel | **2,543** | 30 | 83 | 87 | 87 | 88 |
+| 30 | OWL Carousel | **2,543** | 30 | 82 | 87 | 87 | 88 |
 
 ## Top Technologies by Country
 
