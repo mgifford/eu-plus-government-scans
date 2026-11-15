@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-11-15 10:16 UTC_
+_Generated: 2026-11-15 14:43 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -14,10 +14,10 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
 | **Combined Reachability** | **82,296 confirmed reachable** | 87,696 | **<span role="img" aria-label="93.8% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:113px;"></span></span><span class="sm-bar__label">93.8%</span></span>** | — |
-| Social Media | 87,696 scanned (82,292 reachable) | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 49.0 days |
+| Social Media | 87,696 scanned (82,292 reachable) | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 49.2 days |
 | Technology | 87,696 scanned | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 51.8 days |
-| Lighthouse | 75,187 scanned | 87,696 | <span role="img" aria-label="85.7% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:103px;"></span></span><span class="sm-bar__label">85.7%</span></span> | 34.8 days |
-| Accessibility Statements | 87,696 scanned | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 54.7 days |
+| Lighthouse | 75,187 scanned | 87,696 | <span role="img" aria-label="85.7% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:103px;"></span></span><span class="sm-bar__label">85.7%</span></span> | 35.0 days |
+| Accessibility Statements | 87,696 scanned | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 54.9 days |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by any scan type. **Avg Age** shows the mean number of days (or hours) since each URL in that scan type was last scanned — lower is fresher.
 
@@ -98,7 +98,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Country | URLs Scanned | Last Scan |
 |---------|-------------|----------|
 | Austria | 822 | 2026-11-10 |
-| Belgium | 1,329 | 2026-11-12 |
+| Belgium | 1,329 | 2026-11-15 |
 | Bulgaria | 353 | 2026-11-10 |
 | Canada | 4,469 | 2026-11-14 |
 | Croatia | 257 | 2026-11-11 |
@@ -106,7 +106,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Denmark | 1,536 | 2026-11-15 |
 | Estonia | 401 | 2026-11-11 |
 | Finland | 199 | 2026-11-11 |
-| France | 10,009 | 2026-11-12 |
+| France | 10,009 | 2026-11-15 |
 | Germany | 6,599 | 2026-11-15 |
 | Greece | 1,752 | 2026-11-13 |
 | Hungary | 392 | 2026-11-12 |
@@ -115,7 +115,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Italy | 5,351 | 2026-11-14 |
 | Latvia | 803 | 2026-11-13 |
 | Lithuania | 122 | 2026-11-12 |
-| Luxembourg | 573 | 2026-11-12 |
+| Luxembourg | 573 | 2026-11-15 |
 | Malta | 610 | 2026-11-13 |
 | Netherlands | 945 | 2026-11-12 |
 | Norway | 249 | 2026-11-12 |
