@@ -1,6 +1,6 @@
 {
   "country_code": "FRANCE",
-  "total_relationships": 30421,
+  "total_relationships": 30418,
   "total_source_domains": 677,
   "top_source_domains": [
     {
@@ -173,7 +173,7 @@
     },
     {
       "domain": "gard.fr",
-      "count": 1596
+      "count": 1602
     },
     {
       "domain": "esante.gouv.fr",
@@ -215,7 +215,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 11382
+      "count": 11386
     },
     {
       "domain": "paris.fr",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 7817
+      "count": 7819
     },
     {
       "domain": "skolengo.com",
@@ -231,7 +231,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 6827
+      "count": 6829
     },
     {
       "domain": "cnam.fr",
@@ -239,19 +239,19 @@
     },
     {
       "domain": "data.gouv.fr",
-      "count": 6506
+      "count": 6508
     },
     {
       "domain": "twitter.com",
-      "count": 5933
+      "count": 5934
     },
     {
       "domain": "youtube.com",
-      "count": 5563
+      "count": 5565
     },
     {
       "domain": "legifrance.gouv.fr",
-      "count": 5544
+      "count": 5546
     },
     {
       "domain": "googleapis.com",
@@ -263,11 +263,11 @@
     },
     {
       "domain": "github.com",
-      "count": 4384
+      "count": 4386
     },
     {
       "domain": "info.gouv.fr",
-      "count": 3480
+      "count": 3482
     },
     {
       "domain": "education.gouv.fr",
@@ -275,7 +275,7 @@
     },
     {
       "domain": "service-public.fr",
-      "count": 3055
+      "count": 3057
     },
     {
       "domain": "service-public.gouv.fr",
@@ -303,7 +303,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 2319
+      "count": 2325
     },
     {
       "domain": "loire-atlantique.fr",
@@ -319,7 +319,7 @@
     },
     {
       "domain": "x.com",
-      "count": 2080
+      "count": 2082
     },
     {
       "domain": "defense.gouv.fr",
@@ -409,10 +409,10 @@
   "relationship_types": {
     "script_dependency": 4528,
     "stylesheet_dependency": 4091,
-    "editorial_link": 15842,
-    "image_or_media_dependency": 3554,
+    "editorial_link": 15841,
+    "image_or_media_dependency": 3552,
     "form_destination": 1700,
     "font_or_preload_dependency": 706
   },
-  "generated_at": "2026-11-14T13:49:51.126256+00:00"
+  "generated_at": "2026-11-15T05:46:17.423094+00:00"
 }

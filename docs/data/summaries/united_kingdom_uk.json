@@ -1,7 +1,7 @@
 {
   "country_code": "UNITED_KINGDOM_UK",
-  "total_relationships": 323606,
-  "total_source_domains": 9468,
+  "total_relationships": 323719,
+  "total_source_domains": 9479,
   "top_source_domains": [
     {
       "domain": "sachsen.de",
@@ -29,7 +29,7 @@
     },
     {
       "domain": "poznan.pl",
-      "count": 62288
+      "count": 62317
     },
     {
       "domain": "esteri.it",
@@ -48,12 +48,12 @@
       "count": 42275
     },
     {
-      "domain": "niedersachsen.de",
-      "count": 38540
+      "domain": "castillalamancha.es",
+      "count": 38635
     },
     {
-      "domain": "castillalamancha.es",
-      "count": 38420
+      "domain": "niedersachsen.de",
+      "count": 38540
     },
     {
       "domain": "gencat.cat",
@@ -116,16 +116,16 @@
       "count": 15736
     },
     {
+      "domain": "uni.opole.pl",
+      "count": 15295
+    },
+    {
       "domain": "haute-garonne.fr",
       "count": 15189
     },
     {
-      "domain": "uni.opole.pl",
-      "count": 15149
-    },
-    {
       "domain": "scot.nhs.uk",
-      "count": 14807
+      "count": 15002
     },
     {
       "domain": "belgium.be",
@@ -136,12 +136,12 @@
       "count": 13648
     },
     {
-      "domain": "ooe.gv.at",
-      "count": 13435
+      "domain": "ug.edu.pl",
+      "count": 13571
     },
     {
-      "domain": "ug.edu.pl",
-      "count": 13332
+      "domain": "ooe.gv.at",
+      "count": 13435
     },
     {
       "domain": "paris.fr",
@@ -168,12 +168,12 @@
       "count": 10986
     },
     {
-      "domain": "developpement-durable.gouv.fr",
-      "count": 10855
+      "domain": "gdynia.pl",
+      "count": 10907
     },
     {
-      "domain": "gdynia.pl",
-      "count": 10756
+      "domain": "developpement-durable.gouv.fr",
+      "count": 10855
     },
     {
       "domain": "wallonie.be",
@@ -196,22 +196,22 @@
       "count": 9155
     },
     {
-      "domain": "epfl.ch",
-      "count": 8699
+      "domain": "service.gov.uk",
+      "count": 8758
     },
     {
-      "domain": "service.gov.uk",
+      "domain": "epfl.ch",
       "count": 8699
     }
   ],
   "top_target_domains": [
     {
       "domain": "facebook.com",
-      "count": 120781
+      "count": 121679
     },
     {
       "domain": "googleapis.com",
-      "count": 99722
+      "count": 100696
     },
     {
       "domain": "sachsen.de",
@@ -223,11 +223,11 @@
     },
     {
       "domain": "instagram.com",
-      "count": 70329
+      "count": 70784
     },
     {
       "domain": "youtube.com",
-      "count": 66553
+      "count": 66941
     },
     {
       "domain": "auvergnerhonealpes.fr",
@@ -235,23 +235,23 @@
     },
     {
       "domain": "google.com",
-      "count": 56609
+      "count": 57284
     },
     {
       "domain": "twitter.com",
-      "count": 55766
+      "count": 56098
     },
     {
       "domain": "linkedin.com",
-      "count": 49692
+      "count": 49938
     },
     {
       "domain": "googletagmanager.com",
-      "count": 46231
+      "count": 46698
     },
     {
       "domain": "krakow.pl",
-      "count": 44483
+      "count": 44484
     },
     {
       "domain": "gouv.qc.ca",
@@ -275,15 +275,15 @@
     },
     {
       "domain": "poznan.pl",
-      "count": 31197
+      "count": 31211
     },
     {
       "domain": "cloudflare.com",
-      "count": 30066
+      "count": 30413
     },
     {
       "domain": "jsdelivr.net",
-      "count": 29132
+      "count": 29367
     },
     {
       "domain": "bayern.de",
@@ -291,7 +291,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 25516
+      "count": 25735
     },
     {
       "domain": "esteri.it",
@@ -307,7 +307,7 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 19209
+      "count": 19313
     },
     {
       "domain": "gov.mt",
@@ -319,15 +319,15 @@
     },
     {
       "domain": "fontawesome.com",
-      "count": 14339
+      "count": 14438
+    },
+    {
+      "domain": "x.com",
+      "count": 14179
     },
     {
       "domain": "admin.ch",
       "count": 14157
-    },
-    {
-      "domain": "x.com",
-      "count": 14083
     },
     {
       "domain": "gdansk.pl",
@@ -338,16 +338,16 @@
       "count": 12723
     },
     {
+      "domain": "unpkg.com",
+      "count": 12237
+    },
+    {
       "domain": "hamburg.de",
       "count": 12229
     },
     {
       "domain": "europa.eu",
-      "count": 12136
-    },
-    {
-      "domain": "unpkg.com",
-      "count": 12110
+      "count": 12139
     },
     {
       "domain": "gva.es",
@@ -358,12 +358,16 @@
       "count": 11395
     },
     {
-      "domain": "bootstrapcdn.com",
-      "count": 10877
+      "domain": "uni.opole.pl",
+      "count": 10948
     },
     {
-      "domain": "uni.opole.pl",
-      "count": 10855
+      "domain": "bootstrapcdn.com",
+      "count": 10927
+    },
+    {
+      "domain": "cqc.org.uk",
+      "count": 10596
     },
     {
       "domain": "diplo.de",
@@ -371,11 +375,11 @@
     },
     {
       "domain": "jquery.com",
-      "count": 10440
+      "count": 10482
     },
     {
-      "domain": "cqc.org.uk",
-      "count": 10186
+      "domain": "cloudfront.net",
+      "count": 10000
     },
     {
       "domain": "cultura.gov.it",
@@ -390,8 +394,8 @@
       "count": 9570
     },
     {
-      "domain": "cloudfront.net",
-      "count": 9509
+      "domain": "www.nhs.uk",
+      "count": 8731
     },
     {
       "domain": "steiermark.at",
@@ -399,20 +403,16 @@
     },
     {
       "domain": "ug.edu.pl",
-      "count": 8468
-    },
-    {
-      "domain": "www.nhs.uk",
-      "count": 8429
+      "count": 8576
     }
   ],
   "relationship_types": {
-    "editorial_link": 166707,
-    "form_destination": 21578,
-    "image_or_media_dependency": 33947,
-    "script_dependency": 51477,
-    "stylesheet_dependency": 41315,
-    "font_or_preload_dependency": 8582
+    "editorial_link": 166743,
+    "form_destination": 21591,
+    "image_or_media_dependency": 33942,
+    "script_dependency": 51510,
+    "stylesheet_dependency": 41342,
+    "font_or_preload_dependency": 8591
   },
-  "generated_at": "2026-11-14T13:49:52.041984+00:00"
+  "generated_at": "2026-11-15T05:46:18.558680+00:00"
 }

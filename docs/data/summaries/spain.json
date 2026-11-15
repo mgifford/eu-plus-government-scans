@@ -1,6 +1,6 @@
 {
   "country_code": "SPAIN",
-  "total_relationships": 16712,
+  "total_relationships": 16713,
   "total_source_domains": 241,
   "top_source_domains": [
     {
@@ -9,7 +9,7 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 38420
+      "count": 38635
     },
     {
       "domain": "gva.es",
@@ -211,7 +211,7 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 19209
+      "count": 19313
     },
     {
       "domain": "gva.es",
@@ -219,31 +219,31 @@
     },
     {
       "domain": "facebook.com",
-      "count": 5385
+      "count": 5398
     },
     {
       "domain": "twitter.com",
-      "count": 4921
+      "count": 4930
     },
     {
       "domain": "youtube.com",
-      "count": 4570
+      "count": 4583
     },
     {
       "domain": "googleapis.com",
-      "count": 4271
+      "count": 4274
     },
     {
       "domain": "google.com",
-      "count": 4253
+      "count": 4268
     },
     {
       "domain": "jccm.es",
-      "count": 4003
+      "count": 4025
     },
     {
       "domain": "instagram.com",
-      "count": 3970
+      "count": 3978
     },
     {
       "domain": "navarra.es",
@@ -263,11 +263,11 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 1944
+      "count": 1950
     },
     {
       "domain": "linkedin.com",
-      "count": 1864
+      "count": 1865
     },
     {
       "domain": "juntaex.es",
@@ -299,7 +299,7 @@
     },
     {
       "domain": "x.com",
-      "count": 1174
+      "count": 1177
     },
     {
       "domain": "blogspot.com",
@@ -307,11 +307,11 @@
     },
     {
       "domain": "europa.eu",
-      "count": 1044
+      "count": 1046
     },
     {
       "domain": "cloudflare.com",
-      "count": 998
+      "count": 1007
     },
     {
       "domain": "carm.es",
@@ -319,7 +319,7 @@
     },
     {
       "domain": "google.es",
-      "count": 976
+      "count": 984
     },
     {
       "domain": "sanidad.gob.es",
@@ -387,11 +387,11 @@
     },
     {
       "domain": "vimeo.com",
-      "count": 522
+      "count": 524
     },
     {
       "domain": "blogspot.com.es",
-      "count": 520
+      "count": 523
     },
     {
       "domain": "seg-social.es",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "script_dependency": 2405,
-    "image_or_media_dependency": 2041,
+    "script_dependency": 2406,
+    "image_or_media_dependency": 2040,
     "stylesheet_dependency": 2057,
     "editorial_link": 8538,
     "form_destination": 1517,
-    "font_or_preload_dependency": 154
+    "font_or_preload_dependency": 155
   },
-  "generated_at": "2026-11-14T13:49:51.445550+00:00"
+  "generated_at": "2026-11-15T05:46:17.734793+00:00"
 }

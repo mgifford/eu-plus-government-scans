@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-14T13:49:44.489452+00:00",
+  "generated_at": "2026-11-15T14:18:28.155692+00:00",
   "shard_max_bytes": 33554432,
-  "total_rows": 334309,
-  "total_bytes": 198462710,
+  "total_rows": 334723,
+  "total_bytes": 198706296,
   "shards": [
     {
       "file": "app.001.jsonl",
@@ -115,14 +115,14 @@
     {
       "file": "es.001.jsonl",
       "group": "es",
-      "rows": 17391,
-      "bytes": 10956654
+      "rows": 17393,
+      "bytes": 10958523
     },
     {
       "file": "eu.001.jsonl",
       "group": "eu",
-      "rows": 3661,
-      "bytes": 2132696
+      "rows": 3668,
+      "bytes": 2136240
     },
     {
       "file": "eus.001.jsonl",
@@ -140,7 +140,7 @@
       "file": "fr.001.jsonl",
       "group": "fr",
       "rows": 31785,
-      "bytes": 20956662
+      "bytes": 20956620
     },
     {
       "file": "frl.001.jsonl",
@@ -199,8 +199,8 @@
     {
       "file": "it.001.jsonl",
       "group": "it",
-      "rows": 16691,
-      "bytes": 10784479
+      "rows": 16692,
+      "bytes": 10784923
     },
     {
       "file": "kh.001.jsonl",
@@ -277,8 +277,8 @@
     {
       "file": "org.001.jsonl",
       "group": "org",
-      "rows": 732,
-      "bytes": 389705
+      "rows": 749,
+      "bytes": 398345
     },
     {
       "file": "other.001.jsonl",
@@ -289,14 +289,14 @@
     {
       "file": "pl.001.jsonl",
       "group": "pl",
-      "rows": 59374,
-      "bytes": 33553995
+      "rows": 59419,
+      "bytes": 33553648
     },
     {
       "file": "pl.002.jsonl",
       "group": "pl",
-      "rows": 5213,
-      "bytes": 3020666
+      "rows": 5341,
+      "bytes": 3133756
     },
     {
       "file": "pt.001.jsonl",
@@ -361,20 +361,20 @@
     {
       "file": "uk.001.jsonl",
       "group": "uk",
-      "rows": 59565,
-      "bytes": 33554118
+      "rows": 59564,
+      "bytes": 33554419
     },
     {
       "file": "uk.002.jsonl",
       "group": "uk",
-      "rows": 20647,
-      "bytes": 11587701
+      "rows": 20850,
+      "bytes": 11698398
     },
     {
       "file": "wales.001.jsonl",
       "group": "wales",
-      "rows": 628,
-      "bytes": 386737
+      "rows": 640,
+      "bytes": 392127
     }
   ]
 }

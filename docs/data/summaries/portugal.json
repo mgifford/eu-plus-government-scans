@@ -53,7 +53,7 @@
     },
     {
       "domain": "bnportugal.gov.pt",
-      "count": 1151
+      "count": 1160
     },
     {
       "domain": "cm-pontedelima.pt",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "googleapis.com",
-      "count": 4303
+      "count": 4307
     },
     {
       "domain": "facebook.com",
@@ -227,7 +227,7 @@
     },
     {
       "domain": "google.com",
-      "count": 2736
+      "count": 2737
     },
     {
       "domain": "madeira.gov.pt",
@@ -267,7 +267,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 1365
+      "count": 1368
     },
     {
       "domain": "twitter.com",
@@ -275,7 +275,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 1110
+      "count": 1113
     },
     {
       "domain": "linkedin.com",
@@ -335,7 +335,7 @@
     },
     {
       "domain": "bnportugal.gov.pt",
-      "count": 573
+      "count": 578
     },
     {
       "domain": "cm-sintra.pt",
@@ -414,5 +414,5 @@
     "form_destination": 747,
     "image_or_media_dependency": 1121
   },
-  "generated_at": "2026-11-14T13:49:49.888820+00:00"
+  "generated_at": "2026-11-15T14:18:31.691018+00:00"
 }

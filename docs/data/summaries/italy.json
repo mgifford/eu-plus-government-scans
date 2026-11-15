@@ -1,6 +1,6 @@
 {
   "country_code": "ITALY",
-  "total_relationships": 16391,
+  "total_relationships": 16392,
   "total_source_domains": 154,
   "top_source_domains": [
     {
@@ -121,7 +121,7 @@
     },
     {
       "domain": "regione.piemonte.it",
-      "count": 1130
+      "count": 1170
     },
     {
       "domain": "comune.perugia.it",
@@ -156,12 +156,12 @@
       "count": 939
     },
     {
-      "domain": "mise.gov.it",
-      "count": 883
+      "domain": "comune.cremona.it",
+      "count": 899
     },
     {
-      "domain": "comune.cremona.it",
-      "count": 836
+      "domain": "mise.gov.it",
+      "count": 883
     },
     {
       "domain": "istat.it",
@@ -169,6 +169,10 @@
     },
     {
       "domain": "comune.napoli.it",
+      "count": 823
+    },
+    {
+      "domain": "comune.novara.it",
       "count": 823
     },
     {
@@ -186,10 +190,6 @@
     {
       "domain": "comune.pisa.it",
       "count": 783
-    },
-    {
-      "domain": "comune.novara.it",
-      "count": 778
     },
     {
       "domain": "comune.foggia.it",
@@ -215,7 +215,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 10319
+      "count": 10336
     },
     {
       "domain": "cultura.gov.it",
@@ -223,27 +223,27 @@
     },
     {
       "domain": "youtube.com",
-      "count": 8184
+      "count": 8198
     },
     {
       "domain": "twitter.com",
-      "count": 8078
+      "count": 8081
     },
     {
       "domain": "agid.gov.it",
-      "count": 6708
+      "count": 6725
     },
     {
       "domain": "instagram.com",
-      "count": 6456
+      "count": 6469
     },
     {
       "domain": "regione.lombardia.it",
-      "count": 4326
+      "count": 4334
     },
     {
       "domain": "governo.it",
-      "count": 4262
+      "count": 4263
     },
     {
       "domain": "regione.emilia-romagna.it",
@@ -271,7 +271,7 @@
     },
     {
       "domain": "whatsapp.com",
-      "count": 2645
+      "count": 2650
     },
     {
       "domain": "regione.campania.it",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 2481
+      "count": 2483
     },
     {
       "domain": "comune.parma.it",
@@ -319,7 +319,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 1531
+      "count": 1533
     },
     {
       "domain": "mef.gov.it",
@@ -367,7 +367,7 @@
     },
     {
       "domain": "t.me",
-      "count": 904
+      "count": 907
     },
     {
       "domain": "lavoro.gov.it",
@@ -395,24 +395,24 @@
     },
     {
       "domain": "italia.it",
-      "count": 678
+      "count": 693
+    },
+    {
+      "domain": "regione.piemonte.it",
+      "count": 687
     },
     {
       "domain": "quirinale.it",
       "count": 675
-    },
-    {
-      "domain": "regione.piemonte.it",
-      "count": 661
     }
   ],
   "relationship_types": {
     "image_or_media_dependency": 2071,
-    "editorial_link": 7648,
+    "editorial_link": 7649,
     "script_dependency": 2622,
     "stylesheet_dependency": 2334,
     "form_destination": 1454,
     "font_or_preload_dependency": 262
   },
-  "generated_at": "2026-11-14T13:49:50.518825+00:00"
+  "generated_at": "2026-11-15T14:18:31.899638+00:00"
 }
