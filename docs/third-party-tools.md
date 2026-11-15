@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-11-15 07:39 UTC — last scan: 2026-11-14_
+_Stats as of 2026-11-15 08:12 UTC — last scan: 2026-11-15_
 
-**514** scan batches run
+**515** scan batches run
 
 **87,690** of **87,696** available pages scanned (**100.0%** coverage)
-**81,968** of **87,690** scanned pages were reachable (**93.5%**)
-**39,076** reachable pages loaded at least one third-party script (**47.7%** of reachable)
-**46,475** known third-party service loads identified
+**81,978** of **87,690** scanned pages were reachable (**93.5%**)
+**39,083** reachable pages loaded at least one third-party script (**47.7%** of reachable)
+**46,469** known third-party service loads identified
 **26** unique known services across **17** categories
 
 ---
@@ -30,7 +30,7 @@ _Stats as of 2026-11-15 07:39 UTC — last scan: 2026-11-14_
 | Denmark | 1,536 | 1,536 | 1,507 | 824 | 2,049 | 54.7 | 136.0 | 2026-11-03 |
 | Estonia | 401 | 401 | 385 | 140 | 117 | 36.4 | 30.4 | 2026-10-26 |
 | Finland | 199 | 199 | 189 | 47 | 26 | 24.9 | 13.8 | 2026-10-26 |
-| France | 10,009 | 10,009 | 9,295 | 4,264 | 2,305 | 45.9 | 24.8 | 2026-11-12 |
+| France | 10,009 | 10,009 | 9,305 | 4,271 | 2,299 | 45.9 | 24.7 | 2026-11-15 |
 | Germany | 6,599 | 6,599 | 6,490 | 1,738 | 332 | 26.8 | 5.1 | 2026-11-13 |
 | Greece | 1,752 | 1,752 | 1,647 | 819 | 1,110 | 49.7 | 67.4 | 2026-11-05 |
 | Hungary | 392 | 392 | 307 | 133 | 195 | 43.3 | 63.5 | 2026-10-27 |
@@ -62,15 +62,15 @@ _Stats as of 2026-11-15 07:39 UTC — last scan: 2026-11-14_
 
 | # | Service | Loads |
 |--:|---------|------:|
-| 1 | Google Analytics (GA4) | **8,705** |
-| 2 | cdnjs (Cloudflare CDN) | **7,706** |
-| 3 | jsDelivr CDN | **6,317** |
-| 4 | Google reCAPTCHA | **4,831** |
-| 5 | Google Tag Manager | **4,087** |
-| 6 | Google Hosted Libraries | **3,178** |
-| 7 | unpkg CDN | **2,874** |
+| 1 | Google Analytics (GA4) | **8,702** |
+| 2 | cdnjs (Cloudflare CDN) | **7,703** |
+| 3 | jsDelivr CDN | **6,325** |
+| 4 | Google reCAPTCHA | **4,832** |
+| 5 | Google Tag Manager | **4,086** |
+| 6 | Google Hosted Libraries | **3,175** |
+| 7 | unpkg CDN | **2,870** |
 | 8 | jQuery | **2,739** |
-| 9 | Font Awesome | **1,863** |
+| 9 | Font Awesome | **1,862** |
 | 10 | Bootstrap | **906** |
 | 11 | Cookiebot | **815** |
 | 12 | Adobe Dynamic Tag Management / Launch | **523** |
@@ -87,15 +87,15 @@ _Stats as of 2026-11-15 07:39 UTC — last scan: 2026-11-14_
 
 | # | Service | Reachable Pages | Prevalence of Reachable Pages |
 |--:|---------|----------------:|------------------------------:|
-| 1 | Google Analytics (GA4) | **8,473** | **45.3%** |
-| 2 | Google reCAPTCHA | **4,553** | **24.3%** |
-| 3 | jsDelivr CDN | **4,278** | **22.9%** |
-| 4 | cdnjs (Cloudflare CDN) | **3,933** | **21.0%** |
-| 5 | Google Tag Manager | **3,897** | **20.8%** |
-| 6 | Google Hosted Libraries | **2,871** | **15.3%** |
-| 7 | unpkg CDN | **2,219** | **11.9%** |
+| 1 | Google Analytics (GA4) | **8,470** | **45.3%** |
+| 2 | Google reCAPTCHA | **4,554** | **24.3%** |
+| 3 | jsDelivr CDN | **4,286** | **22.9%** |
+| 4 | cdnjs (Cloudflare CDN) | **3,930** | **21.0%** |
+| 5 | Google Tag Manager | **3,896** | **20.8%** |
+| 6 | Google Hosted Libraries | **2,868** | **15.3%** |
+| 7 | unpkg CDN | **2,215** | **11.8%** |
 | 8 | jQuery | **2,169** | **11.6%** |
-| 9 | Font Awesome | **1,487** | **8.0%** |
+| 9 | Font Awesome | **1,486** | **7.9%** |
 | 10 | Bootstrap | **899** | **4.8%** |
 | 11 | Cookiebot | **796** | **4.3%** |
 | 12 | Adobe Dynamic Tag Management / Launch | **520** | **2.8%** |
@@ -112,13 +112,13 @@ _Stats as of 2026-11-15 07:39 UTC — last scan: 2026-11-14_
 
 | # | Category | Loads |
 |--:|----------|------:|
-| 1 | CDN | **20,075** |
-| 2 | Analytics | **9,830** |
-| 3 | JavaScript Library | **5,917** |
-| 4 | Security | **5,075** |
-| 5 | CAPTCHA | **4,831** |
-| 6 | Tag Manager | **4,610** |
-| 7 | Icon Library | **1,863** |
+| 1 | CDN | **20,073** |
+| 2 | Analytics | **9,827** |
+| 3 | JavaScript Library | **5,914** |
+| 4 | Security | **5,076** |
+| 5 | CAPTCHA | **4,832** |
+| 6 | Tag Manager | **4,609** |
+| 7 | Icon Library | **1,862** |
 | 8 | Cookie Consent | **1,593** |
 | 9 | UI Framework | **906** |
 | 10 | Advertising | **442** |
@@ -134,19 +134,19 @@ Infrastructure-heavy categories (CDNs, core libraries, and UI assets):
 
 | # | Infrastructure Category | Loads |
 |--:|--------------------------|------:|
-| 1 | CDN | **20,075** |
-| 2 | JavaScript Library | **5,917** |
-| 3 | Icon Library | **1,863** |
+| 1 | CDN | **20,073** |
+| 2 | JavaScript Library | **5,914** |
+| 3 | Icon Library | **1,862** |
 | 4 | UI Framework | **906** |
 
 Policy-relevant categories (tracking, consent, support, and security tooling):
 
 | # | Policy-Relevant Category | Loads |
 |--:|--------------------------|------:|
-| 1 | Analytics | **9,830** |
-| 2 | Security | **5,075** |
-| 3 | CAPTCHA | **4,831** |
-| 4 | Tag Manager | **4,610** |
+| 1 | Analytics | **9,827** |
+| 2 | Security | **5,076** |
+| 3 | CAPTCHA | **4,832** |
+| 4 | Tag Manager | **4,609** |
 | 5 | Cookie Consent | **1,593** |
 | 6 | Advertising | **442** |
 | 7 | Error Tracking | **222** |
@@ -161,17 +161,17 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 
 | # | Host | Loads | Reachable Pages |
 |--:|------|------:|----------------:|
-| 1 | `cdn.ent.auvergnerhonealpes.fr` | **15,112** | **1,648** |
+| 1 | `cdn.ent.auvergnerhonealpes.fr` | **15,103** | **1,648** |
 | 2 | `cdn.ecollege.haute-garonne.fr` | **2,422** | **270** |
 | 3 | `translate.google.com` | **2,298** | **2,295** |
 | 4 | `www.cqc.org.uk` | **1,747** | **1,727** |
-| 5 | `maps.googleapis.com` | **1,699** | **1,681** |
+| 5 | `maps.googleapis.com` | **1,702** | **1,684** |
 | 6 | `content.powerapps.com` | **1,546** | **128** |
 | 7 | `static.parastorage.com` | **1,497** | **140** |
 | 8 | `www.styleguide.sachsen.de` | **1,275** | **319** |
 | 9 | `cc.cdn.civiccomputing.com` | **955** | **952** |
 | 10 | `ajax.aspnetcdn.com` | **898** | **443** |
-| 11 | `static.addtoany.com` | **870** | **854** |
+| 11 | `static.addtoany.com` | **872** | **856** |
 | 12 | `cdn-cookieyes.com` | **796** | **792** |
 | 13 | `d2m1owqtx0c1qg.cloudfront.net` | **792** | **411** |
 | 14 | `dksxg5o1pn16c.cloudfront.net` | **780** | **57** |
