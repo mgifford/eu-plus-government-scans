@@ -5,12 +5,12 @@ layout: page
 
 <!-- TECH_STATS_START -->
 
-_Stats as of 2026-11-15 22:56 UTC — last scan: 2026-11-15_
+_Stats as of 2026-11-15 23:37 UTC — last scan: 2026-11-15_
 
-**431** scan batches run
+**435** scan batches run
 
 **87,690** of **87,696** available pages scanned (**100.0%** coverage)
-**81,790** pages with technology detections (**93.3%** of scanned)
+**81,795** pages with technology detections (**93.3%** of scanned)
 **476** unique technologies identified
 
 ---
@@ -30,22 +30,22 @@ _Stats as of 2026-11-15 22:56 UTC — last scan: 2026-11-15_
 | Finland | 199 | 191 | 199 | 2026-11-11 |
 | France | 10,009 | 9,299 | 10,009 | 2026-11-15 |
 | Germany | 6,599 | 6,479 | 6,599 | 2026-11-15 |
-| Greece | 1,752 | 1,640 | 1,752 | 2026-11-13 |
+| Greece | 1,752 | 1,643 | 1,752 | 2026-11-15 |
 | Hungary | 392 | 384 | 392 | 2026-11-12 |
 | Iceland | 145 | 143 | 145 | 2026-11-12 |
 | Ireland | 536 | 501 | 536 | 2026-11-12 |
 | Italy | 5,351 | 4,770 | 5,351 | 2026-11-14 |
-| Latvia | 803 | 764 | 803 | 2026-11-13 |
+| Latvia | 803 | 764 | 803 | 2026-11-15 |
 | Lithuania | 122 | 114 | 122 | 2026-11-12 |
 | Luxembourg | 573 | 532 | 573 | 2026-11-15 |
-| Malta | 610 | 593 | 610 | 2026-11-13 |
+| Malta | 610 | 593 | 610 | 2026-11-15 |
 | Netherlands | 945 | 903 | 945 | 2026-11-12 |
 | Norway | 249 | 243 | 249 | 2026-11-12 |
 | Poland | 14,951 | 13,810 | 14,951 | 2026-11-14 |
 | Portugal | 3,508 | 3,182 | 3,508 | 2026-11-13 |
 | Cyprus | 29 | 29 | 29 | 2026-11-12 |
 | Romania | 807 | 351 | 807 | 2026-11-13 |
-| Slovakia | 442 | 416 | 442 | 2026-11-13 |
+| Slovakia | 442 | 418 | 442 | 2026-11-15 |
 | Slovenia | 214 | 209 | 214 | 2026-11-13 |
 | Spain | 6,091 | 5,340 | 6,091 | 2026-11-14 |
 | Sweden | 1,702 | 1,629 | 1,702 | 2026-11-13 |
@@ -60,46 +60,46 @@ _Stats as of 2026-11-15 22:56 UTC — last scan: 2026-11-15_
 
 | # | Technology | Pages | Categories |
 |--:|-----------|------:|-----------|
-| 1 | jQuery | **43,705** | JavaScript libraries |
-| 2 | PHP | **26,725** | Programming languages |
-| 3 | Apache | **21,850** | Web servers |
-| 4 | Font Awesome | **19,940** | Font scripts |
-| 5 | Bootstrap | **19,801** | UI frameworks |
-| 6 | Google Tag Manager | **17,615** | Tag managers |
-| 7 | Google Font API | **17,450** | Font scripts |
-| 8 | MySQL | **15,573** | Databases |
-| 9 | WordPress | **15,464** | Blogs, CMS |
+| 1 | jQuery | **43,481** | JavaScript libraries |
+| 2 | PHP | **26,528** | Programming languages |
+| 3 | Apache | **21,839** | Web servers |
+| 4 | Font Awesome | **19,788** | Font scripts |
+| 5 | Bootstrap | **19,682** | UI frameworks |
+| 6 | Google Tag Manager | **17,481** | Tag managers |
+| 7 | Google Font API | **17,283** | Font scripts |
+| 8 | MySQL | **15,382** | Databases |
+| 9 | WordPress | **15,273** | Blogs, CMS |
 | 10 | Nginx | **13,692** | Reverse proxies, Web servers |
-| 11 | jQuery Migrate | **13,436** | JavaScript libraries |
+| 11 | jQuery Migrate | **13,248** | JavaScript libraries |
 | 12 | Cloudflare | **7,738** | CDN |
-| 13 | Windows Server | **7,114** | Operating systems |
-| 14 | IIS | **7,001** | Web servers |
-| 15 | jQuery UI | **6,437** | JavaScript libraries |
-| 16 | Microsoft ASP.NET | **6,171** | Web frameworks |
-| 17 | Drupal | **5,576** | CMS |
-| 18 | Yoast SEO | **5,113** | SEO |
-| 19 | reCAPTCHA | **5,005** | Security |
-| 20 | jsDelivr | **4,650** | CDN |
+| 13 | Windows Server | **7,067** | Operating systems |
+| 14 | IIS | **6,954** | Web servers |
+| 15 | jQuery UI | **6,425** | JavaScript libraries |
+| 16 | Microsoft ASP.NET | **6,124** | Web frameworks |
+| 17 | Drupal | **5,573** | CMS |
+| 18 | reCAPTCHA | **4,992** | Security |
+| 19 | Yoast SEO | **4,935** | SEO |
+| 20 | jsDelivr | **4,531** | CDN |
 
 ### Top Technology Categories
 
 | # | Category | Pages |
 |--:|---------|------:|
-| 1 | JavaScript libraries | **86,282** |
-| 2 | Web servers | **48,235** |
-| 3 | Font scripts | **38,674** |
-| 4 | Programming languages | **33,538** |
-| 5 | CMS | **28,175** |
-| 6 | UI frameworks | **26,072** |
-| 7 | Tag managers | **17,651** |
-| 8 | CDN | **16,838** |
-| 9 | Databases | **16,320** |
-| 10 | Blogs | **15,614** |
+| 1 | JavaScript libraries | **85,670** |
+| 2 | Web servers | **48,176** |
+| 3 | Font scripts | **38,355** |
+| 4 | Programming languages | **33,343** |
+| 5 | CMS | **27,979** |
+| 6 | UI frameworks | **25,850** |
+| 7 | Tag managers | **17,517** |
+| 8 | CDN | **16,719** |
+| 9 | Databases | **16,129** |
+| 10 | Blogs | **15,423** |
 | 11 | Reverse proxies | **14,293** |
-| 12 | Operating systems | **11,268** |
-| 13 | Web frameworks | **9,417** |
-| 14 | JavaScript frameworks | **8,121** |
-| 15 | Miscellaneous | **6,046** |
+| 12 | Operating systems | **11,218** |
+| 13 | Web frameworks | **9,372** |
+| 14 | JavaScript frameworks | **8,124** |
+| 15 | Miscellaneous | **5,945** |
 
 📥 Machine-readable results: [Download machine-readable technology data (JSON)](technology-data.json)
 
