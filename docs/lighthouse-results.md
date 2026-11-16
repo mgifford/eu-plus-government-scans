@@ -5,12 +5,12 @@ layout: page
 
 <!-- LIGHTHOUSE_STATS_START -->
 
-_Stats as of 2026-11-15 23:38 UTC — last scan: 2026-11-15_
+_Stats as of 2026-11-16 00:10 UTC — last scan: 2026-11-15_
 
-**1,786** scan batches run
+**1,795** scan batches run
 
 **87,690** of **87,696** available pages audited (**100.0%** coverage)
-**75,192** successful audits (**85.7%** of audited)
+**75,208** successful audits (**85.8%** of audited)
 
 **Overall average Lighthouse scores** (0–100 scale):
 
