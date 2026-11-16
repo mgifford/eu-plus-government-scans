@@ -56,12 +56,12 @@
       "count": 418
     },
     {
-      "domain": "msp.gov.cz",
-      "count": 397
+      "domain": "mzcr.cz",
+      "count": 403
     },
     {
-      "domain": "mzcr.cz",
-      "count": 392
+      "domain": "msp.gov.cz",
+      "count": 397
     },
     {
       "domain": "cnb.cz",
@@ -254,12 +254,12 @@
       "count": 332
     },
     {
-      "domain": "googletagmanager.com",
-      "count": 321
+      "domain": "mzcr.cz",
+      "count": 324
     },
     {
-      "domain": "mzcr.cz",
-      "count": 317
+      "domain": "googletagmanager.com",
+      "count": 321
     },
     {
       "domain": "mzp.cz",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "google.com",
-      "count": 248
+      "count": 250
     },
     {
       "domain": "linkedin.com",
@@ -414,5 +414,5 @@
     "image_or_media_dependency": 236,
     "font_or_preload_dependency": 63
   },
-  "generated_at": "2026-11-15T14:18:32.708924+00:00"
+  "generated_at": "2026-11-16T15:42:27.847055+00:00"
 }

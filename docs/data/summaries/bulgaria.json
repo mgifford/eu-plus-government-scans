@@ -9,7 +9,7 @@
     },
     {
       "domain": "government.bg",
-      "count": 1612
+      "count": 1626
     },
     {
       "domain": "gabrovo.bg",
@@ -144,6 +144,10 @@
       "count": 49
     },
     {
+      "domain": "dker.bg",
+      "count": 48
+    },
+    {
       "domain": "cadastre.bg",
       "count": 45
     },
@@ -170,10 +174,6 @@
     {
       "domain": "mfa.bg",
       "count": 37
-    },
-    {
-      "domain": "dker.bg",
-      "count": 36
     },
     {
       "domain": "nbksrs.bg",
@@ -211,7 +211,7 @@
     },
     {
       "domain": "government.bg",
-      "count": 812
+      "count": 816
     },
     {
       "domain": "varna.bg",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 466
+      "count": 467
     },
     {
       "domain": "pleven.bg",
@@ -231,7 +231,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 432
+      "count": 435
     },
     {
       "domain": "burgas.bg",
@@ -247,7 +247,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 247
+      "count": 248
     },
     {
       "domain": "lovech.bg",
@@ -299,7 +299,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 129
+      "count": 130
     },
     {
       "domain": "pazardzhik.bg",
@@ -307,7 +307,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 116
+      "count": 118
     },
     {
       "domain": "bnb.bg",
@@ -355,7 +355,7 @@
     },
     {
       "domain": "evroto.bg",
-      "count": 62
+      "count": 63
     },
     {
       "domain": "linkedin.com",
@@ -394,16 +394,16 @@
       "count": 44
     },
     {
+      "domain": "dker.bg",
+      "count": 44
+    },
+    {
       "domain": "nhif.bg",
       "count": 44
     },
     {
       "domain": "itservice-bg.net",
       "count": 44
-    },
-    {
-      "domain": "gov.bg",
-      "count": 42
     }
   ],
   "relationship_types": {
@@ -414,5 +414,5 @@
     "stylesheet_dependency": 203,
     "font_or_preload_dependency": 21
   },
-  "generated_at": "2026-11-14T13:49:51.547091+00:00"
+  "generated_at": "2026-11-15T23:18:34.712497+00:00"
 }

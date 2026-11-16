@@ -16,16 +16,16 @@
       "count": 1879
     },
     {
+      "domain": "vaxjo.se",
+      "count": 1716
+    },
+    {
       "domain": "regionorebrolan.se",
       "count": 1641
     },
     {
-      "domain": "vaxjo.se",
-      "count": 1625
-    },
-    {
       "domain": "norrkoping.se",
-      "count": 1268
+      "count": 1388
     },
     {
       "domain": "stockholm.se",
@@ -211,15 +211,15 @@
     },
     {
       "domain": "facebook.com",
-      "count": 1996
+      "count": 2009
     },
     {
       "domain": "linkedin.com",
-      "count": 1716
+      "count": 1724
     },
     {
       "domain": "instagram.com",
-      "count": 1639
+      "count": 1650
     },
     {
       "domain": "regionstockholm.se",
@@ -231,11 +231,15 @@
     },
     {
       "domain": "vaxjo.se",
-      "count": 1156
+      "count": 1220
     },
     {
       "domain": "1177.se",
       "count": 958
+    },
+    {
+      "domain": "norrkoping.se",
+      "count": 882
     },
     {
       "domain": "regionorebrolan.se",
@@ -243,11 +247,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 829
-    },
-    {
-      "domain": "norrkoping.se",
-      "count": 810
+      "count": 832
     },
     {
       "domain": "eskilstuna.se",
@@ -267,15 +267,15 @@
     },
     {
       "domain": "readspeaker.com",
-      "count": 663
+      "count": 675
+    },
+    {
+      "domain": "google.com",
+      "count": 649
     },
     {
       "domain": "stockholm.se",
       "count": 648
-    },
-    {
-      "domain": "google.com",
-      "count": 639
     },
     {
       "domain": "trafikverket.se",
@@ -319,7 +319,7 @@
     },
     {
       "domain": "rekai.se",
-      "count": 351
+      "count": 354
     },
     {
       "domain": "vasteras.se",
@@ -343,7 +343,7 @@
     },
     {
       "domain": "pts.se",
-      "count": 317
+      "count": 318
     },
     {
       "domain": "kronofogden.se",
@@ -379,7 +379,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 267
+      "count": 271
     },
     {
       "domain": "ostersund.se",
@@ -414,5 +414,5 @@
     "image_or_media_dependency": 680,
     "font_or_preload_dependency": 318
   },
-  "generated_at": "2026-11-13T06:03:36.443992+00:00"
+  "generated_at": "2026-11-16T15:42:28.952375+00:00"
 }

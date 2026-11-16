@@ -72,12 +72,12 @@
       "count": 2767
     },
     {
-      "domain": "normandie.fr",
-      "count": 2716
+      "domain": "bordeaux-metropole.fr",
+      "count": 2746
     },
     {
-      "domain": "bordeaux-metropole.fr",
-      "count": 2693
+      "domain": "normandie.fr",
+      "count": 2716
     },
     {
       "domain": "agriculture.gouv.fr",
@@ -173,7 +173,7 @@
     },
     {
       "domain": "gard.fr",
-      "count": 1602
+      "count": 1604
     },
     {
       "domain": "esante.gouv.fr",
@@ -210,12 +210,12 @@
       "count": 61234
     },
     {
-      "domain": "haute-garonne.fr",
-      "count": 11395
+      "domain": "facebook.com",
+      "count": 11402
     },
     {
-      "domain": "facebook.com",
-      "count": 11386
+      "domain": "haute-garonne.fr",
+      "count": 11395
     },
     {
       "domain": "paris.fr",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 7819
+      "count": 7831
     },
     {
       "domain": "skolengo.com",
@@ -231,7 +231,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 6829
+      "count": 6844
     },
     {
       "domain": "cnam.fr",
@@ -239,19 +239,19 @@
     },
     {
       "domain": "data.gouv.fr",
-      "count": 6508
+      "count": 6520
     },
     {
       "domain": "twitter.com",
-      "count": 5934
+      "count": 5950
     },
     {
       "domain": "youtube.com",
-      "count": 5565
+      "count": 5568
     },
     {
       "domain": "legifrance.gouv.fr",
-      "count": 5546
+      "count": 5558
     },
     {
       "domain": "googleapis.com",
@@ -263,11 +263,11 @@
     },
     {
       "domain": "github.com",
-      "count": 4386
+      "count": 4401
     },
     {
       "domain": "info.gouv.fr",
-      "count": 3482
+      "count": 3494
     },
     {
       "domain": "education.gouv.fr",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "service-public.gouv.fr",
-      "count": 2992
+      "count": 3004
     },
     {
       "domain": "rennes.fr",
@@ -303,7 +303,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 2325
+      "count": 2326
     },
     {
       "domain": "loire-atlantique.fr",
@@ -315,11 +315,11 @@
     },
     {
       "domain": "numerique.gouv.fr",
-      "count": 2212
+      "count": 2213
     },
     {
       "domain": "x.com",
-      "count": 2082
+      "count": 2086
     },
     {
       "domain": "defense.gouv.fr",
@@ -371,11 +371,11 @@
     },
     {
       "domain": "interieur.gouv.fr",
-      "count": 1418
+      "count": 1419
     },
     {
       "domain": "bordeaux-metropole.fr",
-      "count": 1396
+      "count": 1414
     },
     {
       "domain": "nice.fr",
@@ -383,7 +383,7 @@
     },
     {
       "domain": "agriculture.gouv.fr",
-      "count": 1348
+      "count": 1349
     },
     {
       "domain": "anct.gouv.fr",
@@ -403,7 +403,7 @@
     },
     {
       "domain": "tarteaucitron.io",
-      "count": 1179
+      "count": 1182
     }
   ],
   "relationship_types": {
@@ -414,5 +414,5 @@
     "form_destination": 1700,
     "font_or_preload_dependency": 706
   },
-  "generated_at": "2026-11-15T05:46:17.423094+00:00"
+  "generated_at": "2026-11-16T15:42:27.082345+00:00"
 }

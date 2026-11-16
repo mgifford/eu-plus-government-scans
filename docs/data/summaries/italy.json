@@ -1,6 +1,6 @@
 {
   "country_code": "ITALY",
-  "total_relationships": 16392,
+  "total_relationships": 16388,
   "total_source_domains": 154,
   "top_source_domains": [
     {
@@ -97,7 +97,7 @@
     },
     {
       "domain": "comune.torino.it",
-      "count": 1555
+      "count": 1558
     },
     {
       "domain": "regione.sicilia.it",
@@ -215,7 +215,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 10336
+      "count": 10337
     },
     {
       "domain": "cultura.gov.it",
@@ -223,15 +223,15 @@
     },
     {
       "domain": "youtube.com",
-      "count": 8198
+      "count": 8201
     },
     {
       "domain": "twitter.com",
-      "count": 8081
+      "count": 8082
     },
     {
       "domain": "agid.gov.it",
-      "count": 6725
+      "count": 6727
     },
     {
       "domain": "instagram.com",
@@ -239,7 +239,7 @@
     },
     {
       "domain": "regione.lombardia.it",
-      "count": 4334
+      "count": 4336
     },
     {
       "domain": "governo.it",
@@ -375,7 +375,7 @@
     },
     {
       "domain": "comune.torino.it",
-      "count": 841
+      "count": 846
     },
     {
       "domain": "comune.modena.it",
@@ -408,11 +408,11 @@
   ],
   "relationship_types": {
     "image_or_media_dependency": 2071,
-    "editorial_link": 7649,
+    "editorial_link": 7645,
     "script_dependency": 2622,
     "stylesheet_dependency": 2334,
     "form_destination": 1454,
     "font_or_preload_dependency": 262
   },
-  "generated_at": "2026-11-15T14:18:31.899638+00:00"
+  "generated_at": "2026-11-16T15:42:28.760753+00:00"
 }

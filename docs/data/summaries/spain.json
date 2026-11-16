@@ -9,7 +9,7 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 38635
+      "count": 38657
     },
     {
       "domain": "gva.es",
@@ -211,7 +211,7 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 19313
+      "count": 19324
     },
     {
       "domain": "gva.es",
@@ -219,11 +219,11 @@
     },
     {
       "domain": "facebook.com",
-      "count": 5398
+      "count": 5402
     },
     {
       "domain": "twitter.com",
-      "count": 4930
+      "count": 4937
     },
     {
       "domain": "youtube.com",
@@ -235,11 +235,11 @@
     },
     {
       "domain": "google.com",
-      "count": 4268
+      "count": 4272
     },
     {
       "domain": "jccm.es",
-      "count": 4025
+      "count": 4027
     },
     {
       "domain": "instagram.com",
@@ -267,7 +267,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 1865
+      "count": 1868
     },
     {
       "domain": "juntaex.es",
@@ -303,11 +303,11 @@
     },
     {
       "domain": "blogspot.com",
-      "count": 1137
+      "count": 1138
     },
     {
       "domain": "europa.eu",
-      "count": 1046
+      "count": 1049
     },
     {
       "domain": "cloudflare.com",
@@ -319,7 +319,7 @@
     },
     {
       "domain": "google.es",
-      "count": 984
+      "count": 985
     },
     {
       "domain": "sanidad.gob.es",
@@ -342,12 +342,12 @@
       "count": 811
     },
     {
-      "domain": "insuit.net",
-      "count": 805
+      "domain": "jsdelivr.net",
+      "count": 808
     },
     {
-      "domain": "jsdelivr.net",
-      "count": 802
+      "domain": "insuit.net",
+      "count": 805
     },
     {
       "domain": "defensa.gob.es",
@@ -414,5 +414,5 @@
     "form_destination": 1517,
     "font_or_preload_dependency": 155
   },
-  "generated_at": "2026-11-15T05:46:17.734793+00:00"
+  "generated_at": "2026-11-16T15:42:27.630141+00:00"
 }
