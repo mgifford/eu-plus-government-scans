@@ -5,10 +5,10 @@ layout: page
 
 <!-- TECH_LIGHTHOUSE_STATS_START -->
 
-_Generated: 2026-11-15 21:51 UTC_
+_Generated: 2026-11-16 07:33 UTC_
 
-**68,723** URLs with both technology detection and Lighthouse scores
-out of **75,473** technology-detected URLs and **75,198** Lighthouse-audited URLs
+**68,731** URLs with both technology detection and Lighthouse scores
+out of **75,482** technology-detected URLs and **75,224** Lighthouse-audited URLs
 
 ---
 
@@ -18,36 +18,36 @@ Average Google Lighthouse scores (0–100) for pages where each technology was d
 
 | # | Technology | Pages | Countries | Perf | A11y | Best Prac | SEO |
 |--:|-----------|------:|----------:|-----:|-----:|----------:|----:|
-| 1 | jQuery | **41,041** | 32 | 88 | 89 | 90 | 89 |
-| 2 | PHP | **24,653** | 32 | 88 | 90 | 91 | 91 |
-| 3 | Apache | **20,032** | 32 | 86 | 86 | 89 | 88 |
-| 4 | Bootstrap | **18,795** | 32 | 88 | 89 | 90 | 88 |
-| 5 | Font Awesome | **18,404** | 32 | 87 | 89 | 89 | 89 |
-| 6 | Google Tag Manager | **16,626** | 32 | 87 | 90 | 89 | 90 |
-| 7 | Google Font API | **16,179** | 32 | 87 | 88 | 89 | 89 |
-| 8 | MySQL | **14,435** | 32 | 88 | 89 | 90 | 91 |
-| 9 | WordPress | **14,334** | 32 | 88 | 89 | 90 | 91 |
-| 10 | Nginx | **12,630** | 32 | 89 | 91 | 92 | 90 |
-| 11 | jQuery Migrate | **12,430** | 32 | 87 | 89 | 89 | 90 |
-| 12 | Cloudflare | **7,127** | 32 | 89 | 92 | 88 | 81 |
-| 13 | Windows Server | **6,690** | 31 | 90 | 88 | 88 | 86 |
-| 14 | IIS | **6,580** | 31 | 90 | 88 | 88 | 86 |
-| 15 | jQuery UI | **6,022** | 32 | 87 | 88 | 88 | 87 |
-| 16 | Microsoft ASP.NET | **5,795** | 31 | 90 | 88 | 88 | 86 |
-| 17 | Drupal | **5,041** | 29 | 89 | 92 | 91 | 91 |
-| 18 | Yoast SEO | **4,742** | 30 | 87 | 89 | 88 | 90 |
-| 19 | reCAPTCHA | **4,728** | 30 | 87 | 91 | 88 | 90 |
-| 20 | jsDelivr | **4,388** | 32 | 88 | 90 | 90 | 89 |
-| 21 | Slick | **3,770** | 30 | 83 | 88 | 89 | 89 |
-| 22 | Lightbox | **3,433** | 32 | 87 | 87 | 88 | 88 |
-| 23 | Modernizr | **3,388** | 29 | 88 | 89 | 88 | 90 |
-| 24 | Amazon Web Services | **3,147** | 24 | 89 | 95 | 94 | 90 |
-| 25 | Elementor | **3,128** | 29 | 85 | 89 | 89 | 90 |
-| 26 | LiteSpeed | **3,107** | 22 | 90 | 87 | 87 | 91 |
-| 27 | Amazon Cloudfront | **3,093** | 24 | 89 | 95 | 94 | 90 |
-| 28 | Cart Functionality | **2,657** | 24 | 87 | 87 | 89 | 90 |
-| 29 | Java | **2,572** | 29 | 88 | 92 | 93 | 89 |
-| 30 | OWL Carousel | **2,543** | 30 | 82 | 87 | 87 | 88 |
+| 1 | jQuery | **40,826** | 32 | 88 | 89 | 90 | 89 |
+| 2 | PHP | **24,462** | 32 | 88 | 90 | 91 | 91 |
+| 3 | Apache | **20,018** | 32 | 86 | 86 | 89 | 88 |
+| 4 | Bootstrap | **18,677** | 32 | 88 | 89 | 90 | 88 |
+| 5 | Font Awesome | **18,246** | 32 | 87 | 89 | 89 | 89 |
+| 6 | Google Tag Manager | **16,497** | 32 | 87 | 90 | 89 | 90 |
+| 7 | Google Font API | **16,016** | 32 | 87 | 88 | 89 | 90 |
+| 8 | MySQL | **14,247** | 32 | 88 | 89 | 90 | 91 |
+| 9 | WordPress | **14,146** | 32 | 88 | 89 | 90 | 91 |
+| 10 | Nginx | **12,637** | 32 | 89 | 91 | 92 | 90 |
+| 11 | jQuery Migrate | **12,243** | 32 | 87 | 89 | 89 | 90 |
+| 12 | Cloudflare | **7,128** | 32 | 89 | 92 | 88 | 81 |
+| 13 | Windows Server | **6,643** | 31 | 90 | 88 | 88 | 86 |
+| 14 | IIS | **6,533** | 31 | 90 | 88 | 88 | 86 |
+| 15 | jQuery UI | **6,014** | 32 | 87 | 88 | 88 | 87 |
+| 16 | Microsoft ASP.NET | **5,748** | 31 | 90 | 88 | 88 | 87 |
+| 17 | Drupal | **5,038** | 29 | 89 | 92 | 91 | 91 |
+| 18 | reCAPTCHA | **4,723** | 30 | 87 | 91 | 87 | 90 |
+| 19 | Yoast SEO | **4,564** | 30 | 87 | 89 | 89 | 91 |
+| 20 | jsDelivr | **4,269** | 32 | 88 | 90 | 90 | 90 |
+| 21 | Slick | **3,765** | 30 | 83 | 88 | 89 | 89 |
+| 22 | Modernizr | **3,380** | 29 | 88 | 89 | 88 | 90 |
+| 23 | Lightbox | **3,323** | 32 | 86 | 87 | 88 | 89 |
+| 24 | Amazon Web Services | **3,149** | 24 | 89 | 95 | 94 | 90 |
+| 25 | LiteSpeed | **3,106** | 22 | 90 | 87 | 87 | 91 |
+| 26 | Amazon Cloudfront | **3,095** | 24 | 89 | 95 | 94 | 90 |
+| 27 | Elementor | **2,940** | 29 | 85 | 90 | 90 | 91 |
+| 28 | Cart Functionality | **2,661** | 25 | 87 | 87 | 89 | 90 |
+| 29 | Java | **2,574** | 29 | 89 | 92 | 93 | 89 |
+| 30 | OWL Carousel | **2,433** | 30 | 82 | 87 | 87 | 89 |
 
 ## Top Technologies by Country
 
