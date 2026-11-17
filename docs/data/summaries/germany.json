@@ -1,6 +1,6 @@
 {
   "country_code": "GERMANY",
-  "total_relationships": 21954,
+  "total_relationships": 21955,
   "total_source_domains": 231,
   "top_source_domains": [
     {
@@ -81,7 +81,7 @@
     },
     {
       "domain": "brandenburg.de",
-      "count": 1523
+      "count": 1558
     },
     {
       "domain": "dortmund.de",
@@ -243,11 +243,11 @@
     },
     {
       "domain": "facebook.com",
-      "count": 7084
+      "count": 7086
     },
     {
       "domain": "instagram.com",
-      "count": 6859
+      "count": 6861
     },
     {
       "domain": "bund.de",
@@ -267,7 +267,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 4355
+      "count": 4357
     },
     {
       "domain": "linkedin.com",
@@ -283,7 +283,7 @@
     },
     {
       "domain": "auswaertiges-amt.de",
-      "count": 2776
+      "count": 2778
     },
     {
       "domain": "justiz.nrw",
@@ -335,7 +335,7 @@
     },
     {
       "domain": "brandenburg.de",
-      "count": 1063
+      "count": 1073
     },
     {
       "domain": "justiz-karriere.nrw",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 11178,
+    "editorial_link": 11179,
     "font_or_preload_dependency": 350,
     "image_or_media_dependency": 2741,
     "script_dependency": 2861,
     "stylesheet_dependency": 2696,
     "form_destination": 2128
   },
-  "generated_at": "2026-11-16T15:42:26.268899+00:00"
+  "generated_at": "2026-11-17T16:22:12.785039+00:00"
 }

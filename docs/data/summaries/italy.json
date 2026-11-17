@@ -92,12 +92,12 @@
       "count": 1728
     },
     {
-      "domain": "lavoro.gov.it",
-      "count": 1576
+      "domain": "comune.torino.it",
+      "count": 1606
     },
     {
-      "domain": "comune.torino.it",
-      "count": 1558
+      "domain": "lavoro.gov.it",
+      "count": 1576
     },
     {
       "domain": "regione.sicilia.it",
@@ -121,7 +121,7 @@
     },
     {
       "domain": "regione.piemonte.it",
-      "count": 1170
+      "count": 1179
     },
     {
       "domain": "comune.perugia.it",
@@ -215,7 +215,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 10337
+      "count": 10339
     },
     {
       "domain": "cultura.gov.it",
@@ -227,7 +227,7 @@
     },
     {
       "domain": "twitter.com",
-      "count": 8082
+      "count": 8084
     },
     {
       "domain": "agid.gov.it",
@@ -271,7 +271,7 @@
     },
     {
       "domain": "whatsapp.com",
-      "count": 2650
+      "count": 2652
     },
     {
       "domain": "regione.campania.it",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 2483
+      "count": 2485
     },
     {
       "domain": "comune.parma.it",
@@ -343,7 +343,7 @@
     },
     {
       "domain": "interno.gov.it",
-      "count": 1216
+      "count": 1217
     },
     {
       "domain": "comune.verona.it",
@@ -375,7 +375,7 @@
     },
     {
       "domain": "comune.torino.it",
-      "count": 846
+      "count": 881
     },
     {
       "domain": "comune.modena.it",
@@ -394,12 +394,12 @@
       "count": 723
     },
     {
-      "domain": "italia.it",
-      "count": 693
+      "domain": "regione.piemonte.it",
+      "count": 696
     },
     {
-      "domain": "regione.piemonte.it",
-      "count": 687
+      "domain": "italia.it",
+      "count": 693
     },
     {
       "domain": "quirinale.it",
@@ -414,5 +414,5 @@
     "form_destination": 1454,
     "font_or_preload_dependency": 262
   },
-  "generated_at": "2026-11-16T15:42:28.760753+00:00"
+  "generated_at": "2026-11-17T16:22:14.242593+00:00"
 }
