@@ -9,7 +9,7 @@
     },
     {
       "domain": "maribor.si",
-      "count": 521
+      "count": 534
     },
     {
       "domain": "ptuj.si",
@@ -75,11 +75,11 @@
     },
     {
       "domain": "facebook.com",
-      "count": 266
+      "count": 267
     },
     {
       "domain": "maribor.si",
-      "count": 236
+      "count": 241
     },
     {
       "domain": "ljubljana.si",
@@ -95,7 +95,7 @@
     },
     {
       "domain": "google.com",
-      "count": 180
+      "count": 182
     },
     {
       "domain": "googleapis.com",
@@ -111,7 +111,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 138
+      "count": 139
     },
     {
       "domain": "kamnik.si",
@@ -131,7 +131,7 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 75
+      "count": 76
     },
     {
       "domain": "vlada.si",
@@ -278,5 +278,5 @@
     "stylesheet_dependency": 98,
     "form_destination": 45
   },
-  "generated_at": "2026-11-16T15:42:28.565675+00:00"
+  "generated_at": "2026-11-18T15:32:55.596984+00:00"
 }

@@ -255,7 +255,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 5531
+      "count": 5533
     },
     {
       "domain": "developpement-durable.gouv.fr",
@@ -414,5 +414,5 @@
     "form_destination": 1700,
     "font_or_preload_dependency": 706
   },
-  "generated_at": "2026-11-17T16:22:14.564154+00:00"
+  "generated_at": "2026-11-18T15:32:53.316158+00:00"
 }

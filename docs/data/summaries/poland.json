@@ -1,6 +1,6 @@
 {
   "country_code": "POLAND",
-  "total_relationships": 62757,
+  "total_relationships": 62779,
   "total_source_domains": 2529,
   "top_source_domains": [
     {
@@ -13,7 +13,7 @@
     },
     {
       "domain": "poznan.pl",
-      "count": 62317
+      "count": 62318
     },
     {
       "domain": "gdansk.pl",
@@ -73,7 +73,7 @@
     },
     {
       "domain": "edu.wroclaw.pl",
-      "count": 2761
+      "count": 2876
     },
     {
       "domain": "czestochowa.pl",
@@ -152,6 +152,10 @@
       "count": 798
     },
     {
+      "domain": "um.ostrowiec.pl",
+      "count": 785
+    },
+    {
       "domain": "elektronik.rzeszow.pl",
       "count": 768
     },
@@ -162,10 +166,6 @@
     {
       "domain": "kocmyrzow-luborzyca.ug.gov.pl",
       "count": 760
-    },
-    {
-      "domain": "um.ostrowiec.pl",
-      "count": 758
     },
     {
       "domain": "powiatwlodawski.pl",
@@ -215,19 +215,19 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 33608
+      "count": 33633
     },
     {
       "domain": "poznan.pl",
-      "count": 31219
+      "count": 31220
     },
     {
       "domain": "facebook.com",
-      "count": 30258
+      "count": 30267
     },
     {
       "domain": "gdansk.pl",
-      "count": 13516
+      "count": 13517
     },
     {
       "domain": "uni.opole.pl",
@@ -235,19 +235,19 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 12058
+      "count": 12061
     },
     {
       "domain": "instagram.com",
-      "count": 11914
+      "count": 11919
     },
     {
       "domain": "youtube.com",
-      "count": 11655
+      "count": 11661
     },
     {
       "domain": "google.com",
-      "count": 11313
+      "count": 11320
     },
     {
       "domain": "ug.edu.pl",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 8428
+      "count": 8438
     },
     {
       "domain": "torun.pl",
@@ -267,7 +267,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 5770
+      "count": 5774
     },
     {
       "domain": "gdynia.pl",
@@ -275,15 +275,15 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 5518
+      "count": 5520
     },
     {
       "domain": "www.gov.pl",
-      "count": 4560
+      "count": 4565
     },
     {
       "domain": "twitter.com",
-      "count": 3965
+      "count": 3966
     },
     {
       "domain": "mixbet.radom.pl",
@@ -295,7 +295,7 @@
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 3875
+      "count": 3881
     },
     {
       "domain": "fontawesome.com",
@@ -311,11 +311,11 @@
     },
     {
       "domain": "bip.gov.pl",
-      "count": 2897
+      "count": 2905
     },
     {
       "domain": "unpkg.com",
-      "count": 2634
+      "count": 2638
     },
     {
       "domain": "edupage.org",
@@ -331,11 +331,11 @@
     },
     {
       "domain": "goo.gl",
-      "count": 2437
+      "count": 2438
     },
     {
       "domain": "wordpress.org",
-      "count": 2314
+      "count": 2316
     },
     {
       "domain": "jquery.com",
@@ -343,7 +343,7 @@
     },
     {
       "domain": "epuap.gov.pl",
-      "count": 2084
+      "count": 2086
     },
     {
       "domain": "tiktok.com",
@@ -383,7 +383,7 @@
     },
     {
       "domain": "edu.wroclaw.pl",
-      "count": 1241
+      "count": 1286
     },
     {
       "domain": "www.bydgoszcz.pl",
@@ -399,20 +399,20 @@
     },
     {
       "domain": "wroc.pl",
-      "count": 1090
+      "count": 1091
     },
     {
       "domain": "dziennikustaw.gov.pl",
-      "count": 1067
+      "count": 1069
     }
   ],
   "relationship_types": {
-    "editorial_link": 34027,
-    "form_destination": 3358,
-    "image_or_media_dependency": 6889,
-    "script_dependency": 8844,
-    "stylesheet_dependency": 7719,
-    "font_or_preload_dependency": 1920
+    "editorial_link": 34045,
+    "form_destination": 3359,
+    "image_or_media_dependency": 6890,
+    "script_dependency": 8846,
+    "stylesheet_dependency": 7720,
+    "font_or_preload_dependency": 1919
   },
-  "generated_at": "2026-11-17T16:22:15.828130+00:00"
+  "generated_at": "2026-11-18T15:32:55.501727+00:00"
 }

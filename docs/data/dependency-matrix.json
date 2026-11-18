@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T16:22:18.859339+00:00",
+  "generated_at": "2026-11-18T15:32:58.706421+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -178,7 +178,7 @@
     {
       "service": "googletagmanager.com",
       "countries": 32,
-      "domains": 2789
+      "domains": 2790
     },
     {
       "service": "gstatic.com",
@@ -444,9 +444,9 @@
       "country_code": "POLAND",
       "country": "Poland",
       "service": "googletagmanager.com",
-      "domains": 686,
+      "domains": 687,
       "scanned_domains": 2464,
-      "percent": 27.8
+      "percent": 27.9
     },
     {
       "country_code": "POLAND",

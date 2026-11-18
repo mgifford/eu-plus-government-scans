@@ -17,7 +17,7 @@
     },
     {
       "domain": "brasovcity.ro",
-      "count": 948
+      "count": 968
     },
     {
       "domain": "pmb.ro",
@@ -123,15 +123,15 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 534
+      "count": 535
     },
     {
       "domain": "facebook.com",
-      "count": 524
+      "count": 525
     },
     {
       "domain": "google.com",
-      "count": 415
+      "count": 417
     },
     {
       "domain": "just.ro",
@@ -142,12 +142,12 @@
       "count": 360
     },
     {
-      "domain": "senat.ro",
-      "count": 322
+      "domain": "brasovcity.ro",
+      "count": 328
     },
     {
-      "domain": "brasovcity.ro",
-      "count": 321
+      "domain": "senat.ro",
+      "count": 322
     },
     {
       "domain": "mae.ro",
@@ -167,7 +167,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 237
+      "count": 238
     },
     {
       "domain": "fiipregatit.ro",
@@ -190,11 +190,11 @@
       "count": 184
     },
     {
-      "domain": "mfinante.ro",
-      "count": 170
+      "domain": "instagram.com",
+      "count": 171
     },
     {
-      "domain": "instagram.com",
+      "domain": "mfinante.ro",
       "count": 170
     },
     {
@@ -203,7 +203,7 @@
     },
     {
       "domain": "youtube.com",
-      "count": 157
+      "count": 158
     },
     {
       "domain": "twitter.com",
@@ -227,7 +227,7 @@
     },
     {
       "domain": "userway.org",
-      "count": 101
+      "count": 103
     },
     {
       "domain": "112.ro",
@@ -235,7 +235,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 82
+      "count": 84
     },
     {
       "domain": "bootstrapcdn.com",
@@ -310,5 +310,5 @@
     "form_destination": 95,
     "font_or_preload_dependency": 28
   },
-  "generated_at": "2026-11-17T16:22:14.767111+00:00"
+  "generated_at": "2026-11-18T15:32:54.579574+00:00"
 }
