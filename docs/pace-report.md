@@ -3,7 +3,7 @@ title: Scanner Cycle Pace Report
 layout: page
 ---
 
-_Generated: 2026-11-18 02:18 UTC_
+_Generated: 2026-11-18 07:28 UTC_
 
 Whether each scanner is on pace to complete its target cycle (30 days for most
 covered in the last 7 days projected forward against the full eligible corpus.
@@ -14,14 +14,14 @@ Section 11 for the methodology.
 
 | Scanner | Target cycle | Eligible URLs | Corpus covered | Covered (window) | Daily throughput | Projected cycle | Status |
 |---|---|---|---|---|---|---|---|
-| accessibility | 30d | 87,696 | 100.0% (87,690) | 20,329 (last 7d) | 2,904.1/day | 30.2d | 🟡 Marginal |
-| social_media | 30d | 87,696 | 100.0% (87,690) | 20,318 (last 7d) | 2,902.6/day | 30.2d | 🟡 Marginal |
-| technology | 30d | 87,696 | 100.0% (87,690) | 25,644 (last 7d) | 3,663.4/day | 23.9d | 🟢 Ahead |
-| third_party_js | 30d | 87,696 | 100.0% (87,690) | 15,088 (last 7d) | 2,155.4/day | 40.7d | 🟢 Caught up |
+| accessibility | 30d | 87,696 | 100.0% (87,690) | 19,717 (last 7d) | 2,816.7/day | 31.1d | 🟡 Marginal |
+| social_media | 30d | 87,696 | 100.0% (87,690) | 19,229 (last 7d) | 2,747.0/day | 31.9d | 🟡 Marginal |
+| technology | 30d | 87,696 | 100.0% (87,690) | 23,966 (last 7d) | 3,423.7/day | 25.6d | 🟢 On pace |
+| third_party_js | 30d | 87,696 | 100.0% (87,690) | 14,767 (last 7d) | 2,109.6/day | 41.6d | 🟢 Caught up |
 | overlays | 30d | 87,696 | 1.7% (1,523) | 0 (last 7d) | 0.0/day | —d | ⚪ No data |
 | preferences | 90d | 87,696 | 8.2% (7,180) | 2,149 (last 7d) | 307.0/day | 285.7d | 🔴 Behind |
-| relationships | 60d | 87,696 | 94.6% (82,957) | 16,188 (last 7d) | 2,312.6/day | 37.9d | 🟢 Ahead |
-| lighthouse | 60d | 87,696 | 100.0% (87,690) | 13,065 (last 7d) | 1,866.4/day | 47.0d | 🟢 Ahead |
+| relationships | 60d | 87,696 | 94.6% (82,957) | 15,484 (last 7d) | 2,212.0/day | 39.6d | 🟢 Ahead |
+| lighthouse | 60d | 87,696 | 100.0% (87,690) | 13,995 (last 7d) | 1,999.3/day | 43.9d | 🟢 Ahead |
 
 _Projection method: `effective daily throughput = distinct URLs covered in the last 7 days ÷ 7`;
 `projected cycle days = eligible URLs ÷ effective daily throughput`. The 7-day measurement
