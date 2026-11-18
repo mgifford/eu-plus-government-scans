@@ -5,12 +5,12 @@ layout: page
 
 <!-- LIGHTHOUSE_STATS_START -->
 
-_Stats as of 2026-11-17 22:24 UTC — last scan: 2026-11-17_
+_Stats as of 2026-11-18 00:53 UTC — last scan: 2026-11-18_
 
-**1,809** scan batches run
+**1,811** scan batches run
 
 **87,690** of **87,696** available pages audited (**100.0%** coverage)
-**75,239** successful audits (**85.8%** of audited)
+**75,250** successful audits (**85.8%** of audited)
 
 **Overall average Lighthouse scores** (0–100 scale):
 
@@ -27,7 +27,7 @@ _Stats as of 2026-11-17 22:24 UTC — last scan: 2026-11-17_
 | Austria | 822 | 822 | 88 | 90 | 92 | 89 | 2026-11-15 |
 | Belgium | 1,329 | 1,329 | 87 | 92 | 92 | 90 | 2026-11-15 |
 | Bulgaria | 353 | 353 | 86 | 81 | 88 | 88 | 2026-11-06 |
-| Canada | 4,469 | 4,469 | 93 | 89 | 89 | 88 | 2026-11-16 |
+| Canada | 4,469 | 4,469 | 93 | 89 | 89 | 88 | 2026-11-18 |
 | Croatia | 257 | 257 | 91 | 72 | 92 | 90 | 2026-10-25 |
 | Czechia | 866 | 866 | 90 | 87 | 92 | 88 | 2026-11-15 |
 | Denmark | 1,536 | 1,536 | 87 | 95 | 96 | 90 | 2026-11-15 |
@@ -52,7 +52,7 @@ _Stats as of 2026-11-17 22:24 UTC — last scan: 2026-11-17_
 | Romania | 807 | 807 | 89 | 78 | 90 | 84 | 2026-11-15 |
 | Slovakia | 442 | 442 | 90 | 88 | 90 | 88 | 2026-11-03 |
 | Slovenia | 214 | 214 | 87 | 80 | 89 | 85 | 2026-10-24 |
-| Spain | 6,091 | 6,091 | 83 | 80 | 80 | 84 | 2026-11-16 |
+| Spain | 6,091 | 6,091 | 84 | 79 | 80 | 83 | 2026-11-18 |
 | Sweden | 1,702 | 1,702 | 91 | 93 | 93 | 87 | 2026-11-15 |
 | Switzerland | 2,123 | 2,123 | 86 | 91 | 96 | 87 | 2026-11-17 |
 | United Kingdom | 19,511 | 19,511 | 90 | 94 | 92 | 87 | 2026-11-17 |
