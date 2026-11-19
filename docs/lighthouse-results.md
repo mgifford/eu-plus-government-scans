@@ -5,12 +5,12 @@ layout: page
 
 <!-- LIGHTHOUSE_STATS_START -->
 
-_Stats as of 2026-11-19 00:23 UTC — last scan: 2026-11-18_
+_Stats as of 2026-11-19 00:56 UTC — last scan: 2026-11-19_
 
-**1,814** scan batches run
+**1,819** scan batches run
 
 **87,690** of **87,696** available pages audited (**100.0%** coverage)
-**75,260** successful audits (**85.8%** of audited)
+**75,268** successful audits (**85.8%** of audited)
 
 **Overall average Lighthouse scores** (0–100 scale):
 
@@ -39,23 +39,23 @@ _Stats as of 2026-11-19 00:23 UTC — last scan: 2026-11-18_
 | Hungary | 392 | 392 | 89 | 77 | 83 | 86 | 2026-10-30 |
 | Iceland | 145 | 145 | 91 | 92 | 91 | 91 | 2026-10-25 |
 | Ireland | 536 | 536 | 91 | 92 | 90 | 87 | 2026-11-14 |
-| Italy | 5,351 | 5,351 | 88 | 88 | 92 | 88 | 2026-11-17 |
-| Latvia | 803 | 803 | 87 | 86 | 91 | 85 | 2026-11-15 |
+| Italy | 5,351 | 5,351 | 88 | 88 | 92 | 88 | 2026-11-18 |
+| Latvia | 803 | 803 | 87 | 86 | 91 | 85 | 2026-11-18 |
 | Lithuania | 122 | 122 | 86 | 82 | 87 | 84 | 2026-10-25 |
 | Luxembourg | 573 | 573 | 91 | 93 | 94 | 91 | 2026-11-14 |
 | Malta | 610 | 610 | 89 | 86 | 80 | 79 | 2026-11-17 |
 | Netherlands | 945 | 945 | 91 | 94 | 94 | 88 | 2026-11-15 |
 | Norway | 249 | 249 | 91 | 93 | 92 | 89 | 2026-11-14 |
 | Poland | 14,951 | 14,951 | 87 | 86 | 88 | 90 | 2026-11-18 |
-| Portugal | 3,508 | 3,508 | 85 | 85 | 87 | 86 | 2026-11-17 |
+| Portugal | 3,508 | 3,508 | 85 | 85 | 87 | 85 | 2026-11-18 |
 | Cyprus | 29 | 29 | 81 | 86 | 83 | 86 | 2026-10-23 |
 | Romania | 807 | 807 | 89 | 78 | 90 | 84 | 2026-11-15 |
 | Slovakia | 442 | 442 | 90 | 88 | 90 | 88 | 2026-11-03 |
 | Slovenia | 214 | 214 | 87 | 80 | 89 | 85 | 2026-10-24 |
 | Spain | 6,091 | 6,091 | 84 | 79 | 80 | 83 | 2026-11-18 |
 | Sweden | 1,702 | 1,702 | 91 | 93 | 93 | 87 | 2026-11-15 |
-| Switzerland | 2,123 | 2,123 | 86 | 91 | 96 | 87 | 2026-11-17 |
-| United Kingdom | 19,511 | 19,511 | 90 | 94 | 92 | 87 | 2026-11-17 |
+| Switzerland | 2,123 | 2,123 | 86 | 91 | 96 | 87 | 2026-11-18 |
+| United Kingdom | 19,511 | 19,511 | 90 | 94 | 92 | 87 | 2026-11-19 |
 
 > Scores are averages across all successfully audited URLs, displayed as 0–100 (Lighthouse stores scores as 0.0–1.0 internally).
 
