@@ -1,6 +1,6 @@
 {
   "country_code": "POLAND",
-  "total_relationships": 62779,
+  "total_relationships": 62780,
   "total_source_domains": 2529,
   "top_source_domains": [
     {
@@ -37,7 +37,7 @@
     },
     {
       "domain": "gdynia.pl",
-      "count": 12344
+      "count": 12357
     },
     {
       "domain": "edu.bydgoszcz.pl",
@@ -45,7 +45,7 @@
     },
     {
       "domain": "gorzow.pl",
-      "count": 5833
+      "count": 5882
     },
     {
       "domain": "edu.bialystok.pl",
@@ -215,7 +215,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 33633
+      "count": 33645
     },
     {
       "domain": "poznan.pl",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 30267
+      "count": 30269
     },
     {
       "domain": "gdansk.pl",
@@ -235,15 +235,15 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 12061
+      "count": 12063
     },
     {
       "domain": "instagram.com",
-      "count": 11919
+      "count": 11921
     },
     {
       "domain": "youtube.com",
-      "count": 11661
+      "count": 11663
     },
     {
       "domain": "google.com",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 8438
+      "count": 8441
     },
     {
       "domain": "torun.pl",
@@ -267,11 +267,11 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 5774
+      "count": 5780
     },
     {
       "domain": "gdynia.pl",
-      "count": 5555
+      "count": 5563
     },
     {
       "domain": "cloudflare.com",
@@ -283,7 +283,7 @@
     },
     {
       "domain": "twitter.com",
-      "count": 3966
+      "count": 3968
     },
     {
       "domain": "mixbet.radom.pl",
@@ -303,7 +303,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 3708
+      "count": 3710
     },
     {
       "domain": "edu.bialystok.pl",
@@ -315,7 +315,7 @@
     },
     {
       "domain": "unpkg.com",
-      "count": 2638
+      "count": 2644
     },
     {
       "domain": "edupage.org",
@@ -327,11 +327,11 @@
     },
     {
       "domain": "gorzow.pl",
-      "count": 2471
+      "count": 2486
     },
     {
       "domain": "goo.gl",
-      "count": 2438
+      "count": 2440
     },
     {
       "domain": "wordpress.org",
@@ -339,7 +339,7 @@
     },
     {
       "domain": "jquery.com",
-      "count": 2124
+      "count": 2126
     },
     {
       "domain": "epuap.gov.pl",
@@ -410,9 +410,9 @@
     "editorial_link": 34045,
     "form_destination": 3359,
     "image_or_media_dependency": 6890,
-    "script_dependency": 8846,
+    "script_dependency": 8847,
     "stylesheet_dependency": 7720,
     "font_or_preload_dependency": 1919
   },
-  "generated_at": "2026-11-18T15:32:55.501727+00:00"
+  "generated_at": "2026-11-19T06:50:25.687353+00:00"
 }

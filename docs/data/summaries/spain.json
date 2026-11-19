@@ -9,7 +9,7 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 38778
+      "count": 38799
     },
     {
       "domain": "gva.es",
@@ -211,7 +211,7 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 19378
+      "count": 19389
     },
     {
       "domain": "gva.es",
@@ -219,19 +219,19 @@
     },
     {
       "domain": "facebook.com",
-      "count": 5411
+      "count": 5412
     },
     {
       "domain": "twitter.com",
-      "count": 4946
+      "count": 4947
     },
     {
       "domain": "youtube.com",
-      "count": 4592
+      "count": 4593
     },
     {
       "domain": "google.com",
-      "count": 4279
+      "count": 4280
     },
     {
       "domain": "googleapis.com",
@@ -239,7 +239,7 @@
     },
     {
       "domain": "jccm.es",
-      "count": 4038
+      "count": 4040
     },
     {
       "domain": "instagram.com",
@@ -319,7 +319,7 @@
     },
     {
       "domain": "google.es",
-      "count": 988
+      "count": 989
     },
     {
       "domain": "sanidad.gob.es",
@@ -386,12 +386,12 @@
       "count": 537
     },
     {
-      "domain": "blogspot.com.es",
+      "domain": "vimeo.com",
       "count": 528
     },
     {
-      "domain": "vimeo.com",
-      "count": 527
+      "domain": "blogspot.com.es",
+      "count": 528
     },
     {
       "domain": "seg-social.es",
@@ -414,5 +414,5 @@
     "form_destination": 1517,
     "font_or_preload_dependency": 155
   },
-  "generated_at": "2026-11-18T15:32:54.679917+00:00"
+  "generated_at": "2026-11-19T06:50:24.168471+00:00"
 }

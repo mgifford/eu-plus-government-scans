@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T15:32:58.706421+00:00",
+  "generated_at": "2026-11-19T16:28:28.080166+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -66,7 +66,7 @@
     {
       "country_code": "IRELAND",
       "country": "Ireland",
-      "scanned_domains": 104
+      "scanned_domains": 107
     },
     {
       "country_code": "DENMARK",
@@ -173,22 +173,22 @@
     {
       "service": "googleapis.com",
       "countries": 32,
-      "domains": 4481
+      "domains": 4485
     },
     {
       "service": "googletagmanager.com",
       "countries": 32,
-      "domains": 2790
+      "domains": 2789
     },
     {
       "service": "gstatic.com",
       "countries": 32,
-      "domains": 1760
+      "domains": 1763
     },
     {
       "service": "jsdelivr.net",
       "countries": 32,
-      "domains": 1204
+      "domains": 1205
     },
     {
       "service": "fontawesome.com",
@@ -203,17 +203,17 @@
     {
       "service": "cloudflare.com",
       "countries": 31,
-      "domains": 1796
+      "domains": 1797
     },
     {
       "service": "jquery.com",
       "countries": 30,
-      "domains": 627
+      "domains": 626
     },
     {
       "service": "unpkg.com",
       "countries": 29,
-      "domains": 675
+      "domains": 674
     },
     {
       "service": "bootstrapcdn.com",
@@ -223,7 +223,7 @@
     {
       "service": "typekit.net",
       "countries": 26,
-      "domains": 293
+      "domains": 294
     },
     {
       "service": "cookiebot.com",
@@ -444,7 +444,7 @@
       "country_code": "POLAND",
       "country": "Poland",
       "service": "googletagmanager.com",
-      "domains": 687,
+      "domains": 688,
       "scanned_domains": 2464,
       "percent": 27.9
     },
@@ -1556,9 +1556,9 @@
       "country_code": "CANADA",
       "country": "Canada",
       "service": "googleapis.com",
-      "domains": 108,
+      "domains": 109,
       "scanned_domains": 196,
-      "percent": 55.1
+      "percent": 55.6
     },
     {
       "country_code": "CANADA",
@@ -2036,136 +2036,136 @@
       "country_code": "IRELAND",
       "country": "Ireland",
       "service": "googleapis.com",
-      "domains": 50,
-      "scanned_domains": 104,
-      "percent": 48.1
+      "domains": 53,
+      "scanned_domains": 107,
+      "percent": 49.5
     },
     {
       "country_code": "IRELAND",
       "country": "Ireland",
       "service": "googletagmanager.com",
       "domains": 30,
-      "scanned_domains": 104,
-      "percent": 28.8
+      "scanned_domains": 107,
+      "percent": 28.0
     },
     {
       "country_code": "IRELAND",
       "country": "Ireland",
       "service": "gstatic.com",
-      "domains": 18,
-      "scanned_domains": 104,
-      "percent": 17.3
+      "domains": 21,
+      "scanned_domains": 107,
+      "percent": 19.6
     },
     {
       "country_code": "IRELAND",
       "country": "Ireland",
       "service": "jsdelivr.net",
-      "domains": 19,
-      "scanned_domains": 104,
-      "percent": 18.3
+      "domains": 20,
+      "scanned_domains": 107,
+      "percent": 18.7
     },
     {
       "country_code": "IRELAND",
       "country": "Ireland",
       "service": "fontawesome.com",
       "domains": 10,
-      "scanned_domains": 104,
-      "percent": 9.6
+      "scanned_domains": 107,
+      "percent": 9.3
     },
     {
       "country_code": "IRELAND",
       "country": "Ireland",
       "service": "google.com",
-      "domains": 18,
-      "scanned_domains": 104,
-      "percent": 17.3
+      "domains": 19,
+      "scanned_domains": 107,
+      "percent": 17.8
     },
     {
       "country_code": "IRELAND",
       "country": "Ireland",
       "service": "cloudflare.com",
-      "domains": 18,
-      "scanned_domains": 104,
-      "percent": 17.3
+      "domains": 19,
+      "scanned_domains": 107,
+      "percent": 17.8
     },
     {
       "country_code": "IRELAND",
       "country": "Ireland",
       "service": "jquery.com",
-      "domains": 14,
-      "scanned_domains": 104,
-      "percent": 13.5
+      "domains": 13,
+      "scanned_domains": 107,
+      "percent": 12.1
     },
     {
       "country_code": "IRELAND",
       "country": "Ireland",
       "service": "unpkg.com",
       "domains": 4,
-      "scanned_domains": 104,
-      "percent": 3.8
+      "scanned_domains": 107,
+      "percent": 3.7
     },
     {
       "country_code": "IRELAND",
       "country": "Ireland",
       "service": "bootstrapcdn.com",
       "domains": 11,
-      "scanned_domains": 104,
-      "percent": 10.6
+      "scanned_domains": 107,
+      "percent": 10.3
     },
     {
       "country_code": "IRELAND",
       "country": "Ireland",
       "service": "typekit.net",
-      "domains": 7,
-      "scanned_domains": 104,
-      "percent": 6.7
+      "domains": 8,
+      "scanned_domains": 107,
+      "percent": 7.5
     },
     {
       "country_code": "IRELAND",
       "country": "Ireland",
       "service": "cookiebot.com",
       "domains": 14,
-      "scanned_domains": 104,
-      "percent": 13.5
+      "scanned_domains": 107,
+      "percent": 13.1
     },
     {
       "country_code": "IRELAND",
       "country": "Ireland",
       "service": "facebook.com",
       "domains": 3,
-      "scanned_domains": 104,
-      "percent": 2.9
+      "scanned_domains": 107,
+      "percent": 2.8
     },
     {
       "country_code": "IRELAND",
       "country": "Ireland",
       "service": "facebook.net",
       "domains": 1,
-      "scanned_domains": 104,
-      "percent": 1.0
+      "scanned_domains": 107,
+      "percent": 0.9
     },
     {
       "country_code": "IRELAND",
       "country": "Ireland",
       "service": "addtoany.com",
       "domains": 1,
-      "scanned_domains": 104,
-      "percent": 1.0
+      "scanned_domains": 107,
+      "percent": 0.9
     },
     {
       "country_code": "IRELAND",
       "country": "Ireland",
       "service": "amazonaws.com",
       "domains": 8,
-      "scanned_domains": 104,
-      "percent": 7.7
+      "scanned_domains": 107,
+      "percent": 7.5
     },
     {
       "country_code": "IRELAND",
       "country": "Ireland",
       "service": "arcgis.com",
       "domains": 2,
-      "scanned_domains": 104,
+      "scanned_domains": 107,
       "percent": 1.9
     },
     {
@@ -2173,15 +2173,15 @@
       "country": "Ireland",
       "service": "cdn-cookieyes.com",
       "domains": 3,
-      "scanned_domains": 104,
-      "percent": 2.9
+      "scanned_domains": 107,
+      "percent": 2.8
     },
     {
       "country_code": "IRELAND",
       "country": "Ireland",
       "service": "cloudfront.net",
       "domains": 2,
-      "scanned_domains": 104,
+      "scanned_domains": 107,
       "percent": 1.9
     },
     {
@@ -2189,8 +2189,8 @@
       "country": "Ireland",
       "service": "datatables.net",
       "domains": 3,
-      "scanned_domains": 104,
-      "percent": 2.9
+      "scanned_domains": 107,
+      "percent": 2.8
     },
     {
       "country_code": "DENMARK",
@@ -2716,9 +2716,9 @@
       "country_code": "BELGIUM",
       "country": "Belgium",
       "service": "google.com",
-      "domains": 7,
+      "domains": 6,
       "scanned_domains": 43,
-      "percent": 16.3
+      "percent": 14.0
     },
     {
       "country_code": "BELGIUM",
@@ -3156,9 +3156,9 @@
       "country_code": "AUSTRIA",
       "country": "Austria",
       "service": "googleapis.com",
-      "domains": 7,
+      "domains": 8,
       "scanned_domains": 34,
-      "percent": 20.6
+      "percent": 23.5
     },
     {
       "country_code": "AUSTRIA",
@@ -3484,9 +3484,9 @@
       "country_code": "CZECHIA",
       "country": "Czechia",
       "service": "googletagmanager.com",
-      "domains": 15,
+      "domains": 14,
       "scanned_domains": 32,
-      "percent": 46.9
+      "percent": 43.8
     },
     {
       "country_code": "CZECHIA",
@@ -3540,9 +3540,9 @@
       "country_code": "CZECHIA",
       "country": "Czechia",
       "service": "unpkg.com",
-      "domains": 6,
+      "domains": 5,
       "scanned_domains": 32,
-      "percent": 18.8
+      "percent": 15.6
     },
     {
       "country_code": "CZECHIA",
@@ -3636,17 +3636,17 @@
       "country_code": "CROATIA",
       "country": "Croatia",
       "service": "googleapis.com",
-      "domains": 15,
+      "domains": 14,
       "scanned_domains": 31,
-      "percent": 48.4
+      "percent": 45.2
     },
     {
       "country_code": "CROATIA",
       "country": "Croatia",
       "service": "googletagmanager.com",
-      "domains": 20,
+      "domains": 19,
       "scanned_domains": 31,
-      "percent": 64.5
+      "percent": 61.3
     },
     {
       "country_code": "CROATIA",

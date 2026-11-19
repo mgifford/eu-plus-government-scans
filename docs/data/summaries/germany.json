@@ -1,15 +1,15 @@
 {
   "country_code": "GERMANY",
-  "total_relationships": 21955,
+  "total_relationships": 21956,
   "total_source_domains": 231,
   "top_source_domains": [
     {
       "domain": "sachsen.de",
-      "count": 95437
+      "count": 95742
     },
     {
       "domain": "rlp.de",
-      "count": 43859
+      "count": 44683
     },
     {
       "domain": "bayern.de",
@@ -207,11 +207,11 @@
   "top_target_domains": [
     {
       "domain": "sachsen.de",
-      "count": 83849
+      "count": 84104
     },
     {
       "domain": "rlp.de",
-      "count": 34992
+      "count": 35677
     },
     {
       "domain": "niedersachsen.de",
@@ -243,15 +243,15 @@
     },
     {
       "domain": "facebook.com",
-      "count": 7086
+      "count": 7093
     },
     {
       "domain": "instagram.com",
-      "count": 6861
+      "count": 6878
     },
     {
       "domain": "bund.de",
-      "count": 6230
+      "count": 6234
     },
     {
       "domain": "thueringen.de",
@@ -263,15 +263,15 @@
     },
     {
       "domain": "twitter.com",
-      "count": 4581
+      "count": 4593
     },
     {
       "domain": "youtube.com",
-      "count": 4357
+      "count": 4370
     },
     {
       "domain": "linkedin.com",
-      "count": 3590
+      "count": 3613
     },
     {
       "domain": "berlin.de",
@@ -291,7 +291,7 @@
     },
     {
       "domain": "etracker.com",
-      "count": 1846
+      "count": 1852
     },
     {
       "domain": "readspeaker.com",
@@ -299,15 +299,15 @@
     },
     {
       "domain": "zvg-portal.de",
-      "count": 1519
+      "count": 1522
     },
     {
       "domain": "enable-javascript.com",
-      "count": 1371
+      "count": 1377
     },
     {
       "domain": "lehrer-werden-in-sachsen.de",
-      "count": 1324
+      "count": 1328
     },
     {
       "domain": "polyplanet.de",
@@ -323,7 +323,7 @@
     },
     {
       "domain": "google.com",
-      "count": 1103
+      "count": 1107
     },
     {
       "domain": "duesseldorf.de",
@@ -367,7 +367,7 @@
     },
     {
       "domain": "justiz.de",
-      "count": 829
+      "count": 831
     },
     {
       "domain": "deutschland.de",
@@ -379,7 +379,7 @@
     },
     {
       "domain": "xing.com",
-      "count": 773
+      "count": 774
     },
     {
       "domain": "eye-able.com",
@@ -399,7 +399,7 @@
     },
     {
       "domain": "tiktok.com",
-      "count": 550
+      "count": 562
     },
     {
       "domain": "make-it-in-germany.com",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 11179,
+    "editorial_link": 11180,
     "font_or_preload_dependency": 350,
     "image_or_media_dependency": 2741,
     "script_dependency": 2861,
     "stylesheet_dependency": 2696,
     "form_destination": 2128
   },
-  "generated_at": "2026-11-18T15:32:53.602178+00:00"
+  "generated_at": "2026-11-19T06:50:23.644800+00:00"
 }
