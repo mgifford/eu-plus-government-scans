@@ -1,11 +1,11 @@
 {
   "country_code": "MALTA",
-  "total_relationships": 1720,
+  "total_relationships": 1726,
   "total_source_domains": 3,
   "top_source_domains": [
     {
       "domain": "gov.mt",
-      "count": 32921
+      "count": 33279
     },
     {
       "domain": "parlament.mt",
@@ -19,27 +19,27 @@
   "top_target_domains": [
     {
       "domain": "gov.mt",
-      "count": 17139
+      "count": 17340
     },
     {
       "domain": "googleapis.com",
-      "count": 1884
+      "count": 1900
     },
     {
       "domain": "jsdelivr.net",
-      "count": 1871
+      "count": 1877
     },
     {
       "domain": "jquery.com",
-      "count": 1418
+      "count": 1420
     },
     {
       "domain": "youtube.com",
-      "count": 1152
+      "count": 1157
     },
     {
       "domain": "googletagmanager.com",
-      "count": 1120
+      "count": 1133
     },
     {
       "domain": "wordpress.org",
@@ -51,31 +51,31 @@
     },
     {
       "domain": "facebook.com",
-      "count": 663
+      "count": 671
     },
     {
       "domain": "europa.eu",
-      "count": 510
+      "count": 519
     },
     {
       "domain": "gstatic.com",
-      "count": 437
+      "count": 444
     },
     {
       "domain": "instagram.com",
-      "count": 422
+      "count": 425
     },
     {
       "domain": "google.com",
-      "count": 392
+      "count": 398
     },
     {
       "domain": "cloudflare.com",
-      "count": 322
+      "count": 329
     },
     {
       "domain": "linkedin.com",
-      "count": 319
+      "count": 325
     },
     {
       "domain": "wponetap.com",
@@ -83,19 +83,19 @@
     },
     {
       "domain": "twitter.com",
-      "count": 179
+      "count": 182
     },
     {
       "domain": "fontawesome.com",
-      "count": 127
+      "count": 130
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 97
+      "count": 102
     },
     {
       "domain": "corterm.com",
-      "count": 88
+      "count": 91
     },
     {
       "domain": "unpkg.com",
@@ -103,19 +103,19 @@
     },
     {
       "domain": "office.com",
-      "count": 71
+      "count": 74
     },
     {
       "domain": "microsoft.com",
-      "count": 70
+      "count": 71
     },
     {
       "domain": "legislation.mt",
-      "count": 68
+      "count": 69
     },
     {
       "domain": "goo.gl",
-      "count": 66
+      "count": 67
     },
     {
       "domain": "fbcdn.net",
@@ -130,19 +130,19 @@
       "count": 56
     },
     {
+      "domain": "cdnserver.net",
+      "count": 50
+    },
+    {
       "domain": "cookiedatabase.org",
-      "count": 48
+      "count": 50
     },
     {
       "domain": "um.edu.mt",
-      "count": 43
+      "count": 44
     },
     {
       "domain": "2isoftware.com",
-      "count": 40
-    },
-    {
-      "domain": "cdnserver.net",
       "count": 40
     },
     {
@@ -158,12 +158,20 @@
       "count": 32
     },
     {
+      "domain": "2iltd.com",
+      "count": 28
+    },
+    {
       "domain": "arcgis.com",
       "count": 28
     },
     {
-      "domain": "2iltd.com",
-      "count": 26
+      "domain": "dna.studio",
+      "count": 27
+    },
+    {
+      "domain": "eventsingozo.com",
+      "count": 27
     },
     {
       "domain": "idpc.org.mt",
@@ -171,6 +179,10 @@
     },
     {
       "domain": "ifg.mt",
+      "count": 25
+    },
+    {
+      "domain": "simplybook.me",
       "count": 25
     },
     {
@@ -194,14 +206,6 @@
       "count": 24
     },
     {
-      "domain": "dna.studio",
-      "count": 24
-    },
-    {
-      "domain": "eventsingozo.com",
-      "count": 24
-    },
-    {
       "domain": "fondi.eu",
       "count": 24
     },
@@ -212,19 +216,15 @@
     {
       "domain": "odoo.com",
       "count": 24
-    },
-    {
-      "domain": "simplybook.me",
-      "count": 24
     }
   ],
   "relationship_types": {
-    "editorial_link": 700,
-    "script_dependency": 276,
-    "image_or_media_dependency": 276,
-    "stylesheet_dependency": 266,
-    "font_or_preload_dependency": 13,
-    "form_destination": 189
+    "editorial_link": 701,
+    "script_dependency": 277,
+    "image_or_media_dependency": 277,
+    "stylesheet_dependency": 267,
+    "font_or_preload_dependency": 14,
+    "form_destination": 190
   },
-  "generated_at": "2026-11-19T06:50:23.547695+00:00"
+  "generated_at": "2026-11-20T01:09:14.657950+00:00"
 }

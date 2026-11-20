@@ -1,47 +1,47 @@
 {
   "country_code": "LITHUANIA",
-  "total_relationships": 533,
+  "total_relationships": 537,
   "total_source_domains": 16,
   "top_source_domains": [
     {
       "domain": "kaunas.lt",
-      "count": 1489
+      "count": 1828
     },
     {
       "domain": "smm.lt",
-      "count": 551
+      "count": 720
     },
     {
       "domain": "klaipeda.lt",
-      "count": 538
+      "count": 655
     },
     {
       "domain": "siauliai.lt",
-      "count": 428
+      "count": 525
     },
     {
       "domain": "vmi.lt",
-      "count": 310
+      "count": 365
     },
     {
       "domain": "lrs.lt",
-      "count": 227
+      "count": 237
     },
     {
       "domain": "kaunasin.lt",
-      "count": 186
+      "count": 234
     },
     {
       "domain": "lnb.lt",
-      "count": 82
-    },
-    {
-      "domain": "panevezys.lt",
-      "count": 80
+      "count": 103
     },
     {
       "domain": "alytus.lt",
-      "count": 78
+      "count": 97
+    },
+    {
+      "domain": "panevezys.lt",
+      "count": 94
     },
     {
       "domain": "sveikata.lt",
@@ -52,16 +52,16 @@
       "count": 48
     },
     {
-      "domain": "stat.gov.lt",
-      "count": 18
-    },
-    {
       "domain": "finmin.lt",
-      "count": 16
+      "count": 20
     },
     {
       "domain": "vilnius.lt",
-      "count": 16
+      "count": 20
+    },
+    {
+      "domain": "stat.gov.lt",
+      "count": 18
     },
     {
       "domain": "smsm.lt",
@@ -71,190 +71,194 @@
   "top_target_domains": [
     {
       "domain": "kaunas.lt",
-      "count": 709
+      "count": 882
     },
     {
       "domain": "smm.lt",
-      "count": 324
+      "count": 430
     },
     {
       "domain": "vmi.lt",
-      "count": 238
+      "count": 284
     },
     {
       "domain": "googleapis.com",
-      "count": 206
+      "count": 256
     },
     {
       "domain": "siauliai.lt",
-      "count": 168
+      "count": 210
     },
     {
       "domain": "klaipeda.lt",
-      "count": 158
-    },
-    {
-      "domain": "lrs.lt",
-      "count": 138
+      "count": 186
     },
     {
       "domain": "facebook.com",
-      "count": 129
+      "count": 150
+    },
+    {
+      "domain": "lrs.lt",
+      "count": 135
     },
     {
       "domain": "instagram.com",
-      "count": 91
-    },
-    {
-      "domain": "youtube.com",
-      "count": 81
-    },
-    {
-      "domain": "jsdelivr.net",
-      "count": 80
+      "count": 111
     },
     {
       "domain": "cloudflare.com",
-      "count": 79
+      "count": 101
+    },
+    {
+      "domain": "youtube.com",
+      "count": 98
     },
     {
       "domain": "googletagmanager.com",
-      "count": 79
+      "count": 95
     },
     {
       "domain": "google.com",
-      "count": 76
+      "count": 94
     },
     {
-      "domain": "linkedin.com",
-      "count": 73
+      "domain": "jsdelivr.net",
+      "count": 90
     },
     {
       "domain": "kaunasin.lt",
-      "count": 72
+      "count": 90
+    },
+    {
+      "domain": "linkedin.com",
+      "count": 88
     },
     {
       "domain": "panevezys.lt",
-      "count": 60
+      "count": 71
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 56
+      "count": 70
     },
     {
       "domain": "arcgis.com",
-      "count": 50
+      "count": 57
     },
     {
       "domain": "gstatic.com",
-      "count": 40
+      "count": 47
+    },
+    {
+      "domain": "alytus.lt",
+      "count": 41
     },
     {
       "domain": "sveikata.lt",
       "count": 40
     },
     {
-      "domain": "alytus.lt",
-      "count": 33
-    },
-    {
       "domain": "jquery.com",
-      "count": 30
+      "count": 37
     },
     {
       "domain": "spis.lt",
-      "count": 28
+      "count": 35
     },
     {
       "domain": "emokykla.lt",
-      "count": 28
+      "count": 35
     },
     {
       "domain": "lnb.lt",
-      "count": 26
+      "count": 33
     },
     {
       "domain": "heyzine.com",
-      "count": 24
+      "count": 30
     },
     {
       "domain": "planuojustatau.lt",
-      "count": 24
+      "count": 30
+    },
+    {
+      "domain": "lrv.lt",
+      "count": 30
+    },
+    {
+      "domain": "e-tar.lt",
+      "count": 27
+    },
+    {
+      "domain": "fontawesome.com",
+      "count": 27
+    },
+    {
+      "domain": "sodra.lt",
+      "count": 26
     },
     {
       "domain": "migracija.lt",
       "count": 24
     },
     {
-      "domain": "lrv.lt",
-      "count": 24
-    },
-    {
-      "domain": "e-tar.lt",
-      "count": 23
-    },
-    {
-      "domain": "fontawesome.com",
-      "count": 22
-    },
-    {
-      "domain": "sodra.lt",
-      "count": 22
-    },
-    {
-      "domain": "twitter.com",
-      "count": 17
-    },
-    {
       "domain": "epaslaugos.lt",
-      "count": 16
+      "count": 20
     },
     {
       "domain": "vilnius.lt",
-      "count": 16
+      "count": 20
     },
     {
       "domain": "europa.eu",
-      "count": 15
+      "count": 19
     },
     {
       "domain": "esinvesticijos.lt",
-      "count": 12
+      "count": 15
     },
     {
       "domain": "finmin.lt",
-      "count": 12
+      "count": 15
     },
     {
       "domain": "kaunaspilnasrenginiu.lt",
-      "count": 12
+      "count": 15
     },
     {
       "domain": "registrucentras.lt",
-      "count": 12
+      "count": 15
     },
     {
       "domain": "sharethis.com",
-      "count": 12
+      "count": 15
     },
     {
       "domain": "vienasaskaita.lt",
-      "count": 12
+      "count": 15
     },
     {
       "domain": "cookiebot.com",
-      "count": 12
+      "count": 15
     },
     {
       "domain": "itsneat.digital",
-      "count": 12
+      "count": 15
     },
     {
       "domain": "kaunastika.lt",
-      "count": 12
+      "count": 15
     },
     {
       "domain": "userway.org",
+      "count": 15
+    },
+    {
+      "domain": "flickr.com",
+      "count": 12
+    },
+    {
+      "domain": "sharepoint.com",
       "count": 12
     },
     {
@@ -262,11 +266,7 @@
       "count": 12
     },
     {
-      "domain": "flickr.com",
-      "count": 11
-    },
-    {
-      "domain": "sharepoint.com",
+      "domain": "spotify.com",
       "count": 11
     }
   ],
@@ -274,9 +274,9 @@
     "image_or_media_dependency": 49,
     "form_destination": 31,
     "font_or_preload_dependency": 10,
-    "script_dependency": 95,
-    "stylesheet_dependency": 71,
-    "editorial_link": 277
+    "script_dependency": 97,
+    "stylesheet_dependency": 72,
+    "editorial_link": 278
   },
-  "generated_at": "2026-11-19T16:28:26.210451+00:00"
+  "generated_at": "2026-11-20T01:09:14.839510+00:00"
 }

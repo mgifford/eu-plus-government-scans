@@ -1,11 +1,11 @@
 {
   "country_code": "GREECE",
-  "total_relationships": 8691,
+  "total_relationships": 8685,
   "total_source_domains": 367,
   "top_source_domains": [
     {
       "domain": "minedu.gov.gr",
-      "count": 2333
+      "count": 2383
     },
     {
       "domain": "pdm.gov.gr",
@@ -20,64 +20,64 @@
       "count": 1324
     },
     {
-      "domain": "crete.gov.gr",
-      "count": 1084
+      "domain": "mfa.gr",
+      "count": 1093
     },
     {
-      "domain": "mfa.gr",
-      "count": 984
+      "domain": "crete.gov.gr",
+      "count": 1084
     },
     {
       "domain": "culture.gov.gr",
       "count": 903
     },
     {
+      "domain": "minagric.gr",
+      "count": 867
+    },
+    {
       "domain": "pde.gov.gr",
       "count": 848
     },
     {
-      "domain": "services.gov.gr",
-      "count": 820
+      "domain": "php.gov.gr",
+      "count": 840
+    },
+    {
+      "domain": "heraklion.gr",
+      "count": 839
     },
     {
       "domain": "yme.gov.gr",
-      "count": 815
+      "count": 832
     },
     {
-      "domain": "minagric.gr",
-      "count": 805
+      "domain": "services.gov.gr",
+      "count": 828
     },
     {
-      "domain": "php.gov.gr",
-      "count": 740
+      "domain": "cityofathens.gr",
+      "count": 745
+    },
+    {
+      "domain": "vvv.gov.gr",
+      "count": 705
     },
     {
       "domain": "dypa.gov.gr",
       "count": 684
     },
     {
-      "domain": "heraklion.gr",
-      "count": 683
-    },
-    {
-      "domain": "vvv.gov.gr",
-      "count": 656
+      "domain": "statistics.gr",
+      "count": 637
     },
     {
       "domain": "paiania.gov.gr",
       "count": 624
     },
     {
-      "domain": "statistics.gr",
-      "count": 623
-    },
-    {
       "domain": "minfin.gov.gr",
       "count": 620
-    },
-    {
-      "domain": "cityofathens.gr",
-      "count": 597
     },
     {
       "domain": "attica.gov.gr",
@@ -86,6 +86,10 @@
     {
       "domain": "sami.gov.gr",
       "count": 588
+    },
+    {
+      "domain": "aade.gr",
+      "count": 560
     },
     {
       "domain": "pnai.gov.gr",
@@ -128,8 +132,8 @@
       "count": 456
     },
     {
-      "domain": "aade.gr",
-      "count": 449
+      "domain": "anaptyxi.gov.gr",
+      "count": 455
     },
     {
       "domain": "serres.gr",
@@ -164,16 +168,16 @@
       "count": 424
     },
     {
-      "domain": "anaptyxi.gov.gr",
-      "count": 416
-    },
-    {
       "domain": "loutraki.gov.gr",
       "count": 397
     },
     {
       "domain": "thira.gov.gr",
       "count": 392
+    },
+    {
+      "domain": "syzefxis.gov.gr",
+      "count": 385
     },
     {
       "domain": "diavgeia.gov.gr",
@@ -184,6 +188,10 @@
       "count": 374
     },
     {
+      "domain": "1555.gov.gr",
+      "count": 361
+    },
+    {
       "domain": "apdkritis.gov.gr",
       "count": 360
     },
@@ -192,82 +200,74 @@
       "count": 356
     },
     {
-      "domain": "syzefxis.gov.gr",
-      "count": 350
-    },
-    {
       "domain": "ppel.gov.gr",
       "count": 347
-    },
-    {
-      "domain": "alonissos.gov.gr",
-      "count": 340
     }
   ],
   "top_target_domains": [
     {
       "domain": "googleapis.com",
-      "count": 3939
+      "count": 3998
     },
     {
       "domain": "facebook.com",
-      "count": 2202
+      "count": 2245
     },
     {
       "domain": "diavgeia.gov.gr",
-      "count": 1740
+      "count": 1761
     },
     {
       "domain": "googletagmanager.com",
-      "count": 1586
+      "count": 1607
     },
     {
       "domain": "youtube.com",
-      "count": 1450
+      "count": 1477
     },
     {
       "domain": "minedu.gov.gr",
-      "count": 1397
+      "count": 1416
     },
     {
       "domain": "google.com",
-      "count": 1348
-    },
-    {
-      "domain": "gstatic.com",
-      "count": 1150
+      "count": 1370
     },
     {
       "domain": "europa.eu",
-      "count": 1142
+      "count": 1154
+    },
+    {
+      "domain": "gstatic.com",
+      "count": 1152
     },
     {
       "domain": "www.gov.gr",
-      "count": 992
+      "count": 998
     },
     {
       "domain": "twitter.com",
-      "count": 960
+      "count": 996
     },
     {
       "domain": "instagram.com",
-      "count": 918
+      "count": 944
     },
     {
       "domain": "userway.org",
-      "count": 886
+      "count": 894
     },
     {
       "domain": "jsdelivr.net",
-      "count": 875
+      "count": 878
     },
     {
       "domain": "cloudflare.com",
-      "count": 838
+      "count": 856
     },
     {
       "domain": "pdm.gov.gr",
-      "count": 801
+      "count": 802
     },
     {
       "domain": "thessaloniki.gr",
@@ -275,35 +275,51 @@
     },
     {
       "domain": "services.gov.gr",
-      "count": 616
+      "count": 623
     },
     {
       "domain": "linkedin.com",
-      "count": 570
+      "count": 585
     },
     {
       "domain": "mindev.gov.gr",
-      "count": 565
-    },
-    {
-      "domain": "crete.gov.gr",
-      "count": 479
-    },
-    {
-      "domain": "gsis.gr",
-      "count": 462
+      "count": 567
     },
     {
       "domain": "mfa.gr",
-      "count": 441
+      "count": 490
+    },
+    {
+      "domain": "crete.gov.gr",
+      "count": 480
+    },
+    {
+      "domain": "gsis.gr",
+      "count": 464
+    },
+    {
+      "domain": "cityofathens.gr",
+      "count": 452
+    },
+    {
+      "domain": "heraklion.gr",
+      "count": 443
     },
     {
       "domain": "statistics.gr",
+      "count": 411
+    },
+    {
+      "domain": "aade.gr",
+      "count": 404
+    },
+    {
+      "domain": "minagric.gr",
       "count": 397
     },
     {
       "domain": "ypen.gov.gr",
-      "count": 390
+      "count": 391
     },
     {
       "domain": "culture.gov.gr",
@@ -314,56 +330,40 @@
       "count": 384
     },
     {
-      "domain": "minagric.gr",
-      "count": 377
-    },
-    {
       "domain": "ypes.gr",
-      "count": 373
-    },
-    {
-      "domain": "heraklion.gr",
-      "count": 363
-    },
-    {
-      "domain": "cityofathens.gr",
-      "count": 362
+      "count": 376
     },
     {
       "domain": "unpkg.com",
-      "count": 340
-    },
-    {
-      "domain": "aade.gr",
-      "count": 337
+      "count": 349
     },
     {
       "domain": "greece20.gov.gr",
-      "count": 330
+      "count": 335
     },
     {
       "domain": "fontawesome.com",
-      "count": 318
+      "count": 323
     },
     {
       "domain": "dypa.gov.gr",
-      "count": 310
+      "count": 313
     },
     {
       "domain": "espa.gr",
-      "count": 305
-    },
-    {
-      "domain": "mindigital.gr",
-      "count": 305
+      "count": 312
     },
     {
       "domain": "vvv.gov.gr",
-      "count": 288
+      "count": 311
+    },
+    {
+      "domain": "mindigital.gr",
+      "count": 306
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 283
+      "count": 293
     },
     {
       "domain": "necca.gov.gr",
@@ -371,48 +371,48 @@
     },
     {
       "domain": "grnet.gr",
-      "count": 276
+      "count": 279
     },
     {
       "domain": "ppel.gov.gr",
-      "count": 243
+      "count": 244
     },
     {
       "domain": "moh.gov.gr",
-      "count": 239
+      "count": 242
     },
     {
       "domain": "x.com",
-      "count": 237
+      "count": 239
     },
     {
       "domain": "pde.gov.gr",
-      "count": 235
-    },
-    {
-      "domain": "et.gr",
-      "count": 228
+      "count": 236
     },
     {
       "domain": "yme.gov.gr",
-      "count": 220
+      "count": 233
+    },
+    {
+      "domain": "et.gr",
+      "count": 230
+    },
+    {
+      "domain": "wp.com",
+      "count": 226
     },
     {
       "domain": "attica.gov.gr",
       "count": 216
-    },
-    {
-      "domain": "wp.com",
-      "count": 212
     }
   ],
   "relationship_types": {
-    "editorial_link": 5009,
-    "font_or_preload_dependency": 308,
-    "form_destination": 375,
+    "editorial_link": 5007,
+    "form_destination": 374,
     "image_or_media_dependency": 659,
     "script_dependency": 1285,
-    "stylesheet_dependency": 1055
+    "stylesheet_dependency": 1055,
+    "font_or_preload_dependency": 305
   },
-  "generated_at": "2026-11-19T06:50:23.376923+00:00"
+  "generated_at": "2026-11-20T01:09:15.021646+00:00"
 }
