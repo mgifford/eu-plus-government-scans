@@ -5,14 +5,14 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-11-20 07:57 UTC — last scan: 2026-11-19_
+_Stats as of 2026-11-20 08:36 UTC — last scan: 2026-11-20_
 
-**542** scan batches run
+**545** scan batches run
 
 **87,690** of **87,696** available pages scanned (**100.0%** coverage)
-**82,233** of **87,690** scanned pages were reachable (**93.8%**)
-**42,712** of **82,233** reachable pages have an accessibility statement (**51.9%**)
-**37,724** pages have the statement link in the footer (**88.3%** of pages with a statement)
+**82,245** of **87,690** scanned pages were reachable (**93.8%**)
+**42,716** of **82,245** reachable pages have an accessibility statement (**51.9%**)
+**37,729** pages have the statement link in the footer (**88.3%** of pages with a statement)
 
 📥 Machine-readable results are available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
 
@@ -26,7 +26,7 @@ Each country entry in the JSON file includes page-level evidence for pages with 
 
 | Country | Scanned | Available | Reachable | Has Statement | In Footer | Statement % | Scan Period |
 |---------|---------|-----------|-----------|--------------|-----------|------------|-------------|
-| Austria | 822 | 822 | 788 | 560 | 533 | 71.1% | Aug 2026 – Oct 2026 |
+| Austria | 822 | 822 | 788 | 561 | 534 | 71.2% | Aug 2026 – Nov 2026 |
 | Belgium | 1,329 | 1,329 | 1,239 | 584 | 531 | 47.1% | Aug 2026 – Nov 2026 |
 | Bulgaria | 353 | 353 | 308 | 97 | 87 | 31.5% | Aug 2026 – Oct 2026 |
 | Canada | 4,469 | 4,469 | 4,287 | 1,085 | 890 | 25.3% | Aug 2026 – Nov 2026 |
@@ -41,7 +41,7 @@ Each country entry in the JSON file includes page-level evidence for pages with 
 | Hungary | 392 | 392 | 307 | 65 | 57 | 21.2% | Aug 2026 – Oct 2026 |
 | Iceland | 145 | 145 | 143 | 15 | 5 | 10.5% | Aug 2026 – Oct 2026 |
 | Ireland | 536 | 536 | 499 | 265 | 252 | 53.1% | Aug 2026 – Oct 2026 |
-| Italy | 5,351 | 5,351 | 4,895 | 2,723 | 2,641 | 55.6% | Aug 2026 – Nov 2026 |
+| Italy | 5,351 | 5,351 | 4,905 | 2,726 | 2,645 | 55.6% | Aug 2026 – Nov 2026 |
 | Latvia | 803 | 803 | 767 | 493 | 452 | 64.3% | Aug 2026 – Oct 2026 |
 | Lithuania | 122 | 122 | 114 | 1 | 0 | 0.9% | Aug 2026 – Oct 2026 |
 | Luxembourg | 573 | 573 | 534 | 359 | 348 | 67.2% | Aug 2026 – Oct 2026 |
@@ -54,11 +54,11 @@ Each country entry in the JSON file includes page-level evidence for pages with 
 | Romania | 807 | 807 | 354 | 30 | 10 | 8.5% | Aug 2026 – Nov 2026 |
 | Slovakia | 442 | 442 | 416 | 190 | 169 | 45.7% | Aug 2026 – Oct 2026 |
 | Slovenia | 214 | 214 | 207 | 116 | 81 | 56.0% | Aug 2026 – Oct 2026 |
-| Spain | 6,091 | 6,091 | 5,449 | 2,533 | 2,238 | 46.5% | Aug 2026 – Nov 2026 |
+| Spain | 6,091 | 6,091 | 5,451 | 2,533 | 2,238 | 46.5% | Aug 2026 – Nov 2026 |
 | Sweden | 1,702 | 1,702 | 1,631 | 973 | 888 | 59.7% | Aug 2026 – Oct 2026 |
 | Switzerland | 2,123 | 2,123 | 2,084 | 1,034 | 1,033 | 49.6% | Aug 2026 – Oct 2026 |
 | United Kingdom | 19,511 | 19,511 | 18,721 | 11,677 | 11,059 | 62.4% | Aug 2026 – Nov 2026 |
-| **Total** | **87,696** | **87,696** | **82,239** | **42,718** | **37,730** | **51.9%** | — |
+| **Total** | **87,696** | **87,696** | **82,251** | **42,722** | **37,735** | **51.9%** | — |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
