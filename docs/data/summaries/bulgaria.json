@@ -1,418 +1,418 @@
 {
   "country_code": "BULGARIA",
-  "total_relationships": 1768,
-  "total_source_domains": 51,
+  "total_relationships": 1858,
+  "total_source_domains": 54,
   "top_source_domains": [
     {
       "domain": "sofia.bg",
-      "count": 1882
+      "count": 2301
     },
     {
       "domain": "government.bg",
-      "count": 1626
+      "count": 1981
     },
     {
       "domain": "gabrovo.bg",
-      "count": 1171
+      "count": 1474
     },
     {
       "domain": "varna.bg",
-      "count": 1124
+      "count": 1399
     },
     {
       "domain": "burgas.bg",
-      "count": 812
+      "count": 1016
     },
     {
       "domain": "pleven.bg",
-      "count": 770
+      "count": 968
     },
     {
       "domain": "pernik.bg",
-      "count": 556
+      "count": 695
     },
     {
       "domain": "shumen.bg",
-      "count": 476
+      "count": 590
     },
     {
       "domain": "nsi.bg",
-      "count": 469
+      "count": 578
     },
     {
       "domain": "sliven.bg",
-      "count": 458
-    },
-    {
-      "domain": "haskovo.bg",
-      "count": 356
+      "count": 572
     },
     {
       "domain": "lovech.bg",
-      "count": 356
+      "count": 448
     },
     {
-      "domain": "president.bg",
-      "count": 304
-    },
-    {
-      "domain": "pazardzhik.bg",
-      "count": 264
-    },
-    {
-      "domain": "dobrich.bg",
-      "count": 250
+      "domain": "haskovo.bg",
+      "count": 446
     },
     {
       "domain": "plovdiv.bg",
-      "count": 246
+      "count": 439
+    },
+    {
+      "domain": "president.bg",
+      "count": 380
+    },
+    {
+      "domain": "pazardzhik.bg",
+      "count": 330
+    },
+    {
+      "domain": "dobrich.bg",
+      "count": 313
     },
     {
       "domain": "yambol.bg",
-      "count": 227
+      "count": 284
     },
     {
       "domain": "silistra.bg",
-      "count": 164
+      "count": 205
     },
     {
       "domain": "iag.bg",
-      "count": 128
+      "count": 160
+    },
+    {
+      "domain": "bnb.bg",
+      "count": 140
+    },
+    {
+      "domain": "cem.bg",
+      "count": 131
+    },
+    {
+      "domain": "mrrb.bg",
+      "count": 130
     },
     {
       "domain": "crc.bg",
       "count": 124
     },
     {
-      "domain": "bnb.bg",
-      "count": 112
-    },
-    {
-      "domain": "cem.bg",
-      "count": 108
-    },
-    {
-      "domain": "mrrb.bg",
-      "count": 104
-    },
-    {
       "domain": "ombudsman.bg",
-      "count": 90
+      "count": 120
     },
     {
       "domain": "iamn.bg",
-      "count": 88
+      "count": 110
     },
     {
       "domain": "kzp.bg",
-      "count": 74
+      "count": 93
+    },
+    {
+      "domain": "parliament.bg",
+      "count": 82
+    },
+    {
+      "domain": "mod.bg",
+      "count": 79
+    },
+    {
+      "domain": "constcourt.bg",
+      "count": 75
+    },
+    {
+      "domain": "nab-bas.bg",
+      "count": 75
     },
     {
       "domain": "gov.bg",
-      "count": 64
+      "count": 70
+    },
+    {
+      "domain": "nipa.bg",
+      "count": 70
+    },
+    {
+      "domain": "fsc.bg",
+      "count": 65
     },
     {
       "domain": "nhif.bg",
       "count": 64
     },
     {
-      "domain": "parliament.bg",
-      "count": 64
-    },
-    {
-      "domain": "mod.bg",
-      "count": 63
-    },
-    {
-      "domain": "constcourt.bg",
+      "domain": "bda.bg",
       "count": 60
     },
     {
-      "domain": "nab-bas.bg",
-      "count": 60
+      "domain": "nssi.bg",
+      "count": 57
     },
     {
-      "domain": "nipa.bg",
+      "domain": "cadastre.bg",
       "count": 56
     },
     {
-      "domain": "fsc.bg",
-      "count": 52
+      "domain": "statereserve.bg",
+      "count": 56
     },
     {
-      "domain": "bda.bg",
-      "count": 49
+      "domain": "dar.bg",
+      "count": 50
+    },
+    {
+      "domain": "registryagency.bg",
+      "count": 50
     },
     {
       "domain": "dker.bg",
       "count": 48
     },
     {
-      "domain": "cadastre.bg",
-      "count": 45
+      "domain": "mfa.bg",
+      "count": 47
     },
     {
-      "domain": "statereserve.bg",
+      "domain": "nbksrs.bg",
       "count": 45
-    },
-    {
-      "domain": "nssi.bg",
-      "count": 44
     },
     {
       "domain": "cposa.bg",
       "count": 40
     },
     {
-      "domain": "dar.bg",
-      "count": 40
-    },
-    {
-      "domain": "registryagency.bg",
-      "count": 40
-    },
-    {
-      "domain": "mfa.bg",
-      "count": 37
-    },
-    {
-      "domain": "nbksrs.bg",
-      "count": 36
-    },
-    {
       "domain": "nra.bg",
-      "count": 32
+      "count": 40
     },
     {
       "domain": "dato.bg",
-      "count": 28
+      "count": 35
     },
     {
       "domain": "caaf.bg",
-      "count": 24
-    },
-    {
-      "domain": "egov.bg",
-      "count": 22
+      "count": 30
     },
     {
       "domain": "comdos.bg",
-      "count": 20
+      "count": 25
     },
     {
-      "domain": "militaryclubs.bg",
-      "count": 11
+      "domain": "egov.bg",
+      "count": 25
+    },
+    {
+      "domain": "aop.bg",
+      "count": 23
     }
   ],
   "top_target_domains": [
     {
       "domain": "sofia.bg",
-      "count": 853
+      "count": 1054
     },
     {
       "domain": "government.bg",
-      "count": 816
+      "count": 982
     },
     {
       "domain": "varna.bg",
-      "count": 552
+      "count": 685
     },
     {
       "domain": "gabrovo.bg",
-      "count": 530
+      "count": 658
     },
     {
       "domain": "facebook.com",
-      "count": 467
+      "count": 585
     },
     {
       "domain": "pleven.bg",
-      "count": 446
+      "count": 558
     },
     {
       "domain": "googleapis.com",
-      "count": 435
+      "count": 550
     },
     {
       "domain": "burgas.bg",
-      "count": 376
+      "count": 470
     },
     {
       "domain": "google.com",
-      "count": 358
+      "count": 454
     },
     {
       "domain": "nsi.bg",
-      "count": 307
+      "count": 380
     },
     {
       "domain": "youtube.com",
-      "count": 248
+      "count": 312
     },
     {
       "domain": "lovech.bg",
-      "count": 216
+      "count": 270
     },
     {
       "domain": "sliven.bg",
-      "count": 212
+      "count": 265
     },
     {
       "domain": "pernik.bg",
-      "count": 200
+      "count": 250
     },
     {
       "domain": "haskovo.bg",
-      "count": 176
-    },
-    {
-      "domain": "shumen.bg",
-      "count": 172
+      "count": 221
     },
     {
       "domain": "nksoftware.net",
-      "count": 168
+      "count": 210
+    },
+    {
+      "domain": "shumen.bg",
+      "count": 210
     },
     {
       "domain": "egov.bg",
-      "count": 161
-    },
-    {
-      "domain": "cloudflare.com",
-      "count": 150
-    },
-    {
-      "domain": "instagram.com",
-      "count": 150
+      "count": 202
     },
     {
       "domain": "googletagmanager.com",
-      "count": 148
+      "count": 192
+    },
+    {
+      "domain": "cloudflare.com",
+      "count": 188
+    },
+    {
+      "domain": "instagram.com",
+      "count": 186
     },
     {
       "domain": "dobrich.bg",
-      "count": 146
+      "count": 183
     },
     {
       "domain": "president.bg",
-      "count": 144
+      "count": 179
     },
     {
       "domain": "gstatic.com",
-      "count": 130
+      "count": 165
     },
     {
       "domain": "pazardzhik.bg",
-      "count": 128
-    },
-    {
-      "domain": "jsdelivr.net",
-      "count": 118
-    },
-    {
-      "domain": "bnb.bg",
-      "count": 104
-    },
-    {
-      "domain": "europa.eu",
-      "count": 99
-    },
-    {
-      "domain": "parliament.bg",
-      "count": 96
-    },
-    {
-      "domain": "silistra.bg",
-      "count": 92
-    },
-    {
-      "domain": "twitter.com",
-      "count": 90
-    },
-    {
-      "domain": "uslugi.io",
-      "count": 88
-    },
-    {
-      "domain": "yambol.bg",
-      "count": 80
-    },
-    {
-      "domain": "imeon.bg",
-      "count": 76
-    },
-    {
-      "domain": "eop.bg",
-      "count": 74
+      "count": 160
     },
     {
       "domain": "plovdiv.bg",
-      "count": 72
+      "count": 160
+    },
+    {
+      "domain": "jsdelivr.net",
+      "count": 146
+    },
+    {
+      "domain": "bnb.bg",
+      "count": 130
+    },
+    {
+      "domain": "europa.eu",
+      "count": 123
+    },
+    {
+      "domain": "parliament.bg",
+      "count": 121
+    },
+    {
+      "domain": "silistra.bg",
+      "count": 115
+    },
+    {
+      "domain": "uslugi.io",
+      "count": 110
+    },
+    {
+      "domain": "twitter.com",
+      "count": 108
+    },
+    {
+      "domain": "yambol.bg",
+      "count": 100
+    },
+    {
+      "domain": "eop.bg",
+      "count": 96
+    },
+    {
+      "domain": "imeon.bg",
+      "count": 95
     },
     {
       "domain": "116111.bg",
-      "count": 66
-    },
-    {
-      "domain": "evroto.bg",
-      "count": 63
+      "count": 84
     },
     {
       "domain": "linkedin.com",
-      "count": 62
-    },
-    {
-      "domain": "bootstrapcdn.com",
-      "count": 60
+      "count": 80
     },
     {
       "domain": "iag.bg",
-      "count": 60
+      "count": 75
     },
     {
       "domain": "ombudsman.bg",
-      "count": 60
+      "count": 75
+    },
+    {
+      "domain": "bootstrapcdn.com",
+      "count": 73
+    },
+    {
+      "domain": "evroto.bg",
+      "count": 72
     },
     {
       "domain": "jquery.com",
-      "count": 58
+      "count": 71
     },
     {
       "domain": "mfa.bg",
-      "count": 48
+      "count": 60
     },
     {
       "domain": "sliven.net",
-      "count": 48
+      "count": 60
     },
     {
       "domain": "cadastre.bg",
-      "count": 44
-    },
-    {
-      "domain": "nra.bg",
-      "count": 44
-    },
-    {
-      "domain": "dker.bg",
-      "count": 44
-    },
-    {
-      "domain": "nhif.bg",
-      "count": 44
+      "count": 55
     },
     {
       "domain": "itservice-bg.net",
-      "count": 44
+      "count": 55
+    },
+    {
+      "domain": "nra.bg",
+      "count": 54
+    },
+    {
+      "domain": "eufunds.bg",
+      "count": 50
+    },
+    {
+      "domain": "smartburgas.eu",
+      "count": 50
     }
   ],
   "relationship_types": {
-    "editorial_link": 1049,
-    "form_destination": 106,
-    "image_or_media_dependency": 157,
-    "script_dependency": 232,
-    "stylesheet_dependency": 203,
-    "font_or_preload_dependency": 21
+    "editorial_link": 1100,
+    "form_destination": 112,
+    "image_or_media_dependency": 166,
+    "script_dependency": 241,
+    "stylesheet_dependency": 213,
+    "font_or_preload_dependency": 26
   },
-  "generated_at": "2026-11-19T06:50:25.774007+00:00"
+  "generated_at": "2026-11-21T15:05:34.109141+00:00"
 }

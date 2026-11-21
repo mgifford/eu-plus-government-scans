@@ -1,6 +1,6 @@
 {
   "country_code": "AUSTRIA",
-  "total_relationships": 2995,
+  "total_relationships": 2996,
   "total_source_domains": 37,
   "top_source_domains": [
     {
@@ -9,11 +9,11 @@
     },
     {
       "domain": "ooe.gv.at",
-      "count": 16358
+      "count": 16793
     },
     {
       "domain": "wien.gv.at",
-      "count": 3270
+      "count": 3354
     },
     {
       "domain": "noe.gv.at",
@@ -53,11 +53,11 @@
     },
     {
       "domain": "tirol.gv.at",
-      "count": 362
+      "count": 380
     },
     {
       "domain": "salzburg.gv.at",
-      "count": 353
+      "count": 376
     },
     {
       "domain": "bmi.gv.at",
@@ -81,7 +81,7 @@
     },
     {
       "domain": "usp.gv.at",
-      "count": 251
+      "count": 275
     },
     {
       "domain": "oesterreich.gv.at",
@@ -92,12 +92,12 @@
       "count": 207
     },
     {
-      "domain": "gesundheit.gv.at",
-      "count": 183
+      "domain": "fma.gv.at",
+      "count": 188
     },
     {
-      "domain": "fma.gv.at",
-      "count": 174
+      "domain": "gesundheit.gv.at",
+      "count": 183
     },
     {
       "domain": "bmj.gv.at",
@@ -112,12 +112,16 @@
       "count": 120
     },
     {
+      "domain": "vfgh.gv.at",
+      "count": 120
+    },
+    {
       "domain": "rtr.at",
       "count": 100
     },
     {
-      "domain": "vfgh.gv.at",
-      "count": 96
+      "domain": "vwgh.gv.at",
+      "count": 90
     },
     {
       "domain": "land-oberoesterreich.gv.at",
@@ -126,10 +130,6 @@
     {
       "domain": "id-austria.gv.at",
       "count": 75
-    },
-    {
-      "domain": "vwgh.gv.at",
-      "count": 72
     },
     {
       "domain": "bmk.gv.at",
@@ -159,15 +159,15 @@
     },
     {
       "domain": "ooe.gv.at",
-      "count": 6068
+      "count": 6229
     },
     {
       "domain": "wien.gv.at",
-      "count": 2169
+      "count": 2213
     },
     {
       "domain": "facebook.com",
-      "count": 1896
+      "count": 1913
     },
     {
       "domain": "stmk.gv.at",
@@ -175,23 +175,23 @@
     },
     {
       "domain": "instagram.com",
-      "count": 1379
+      "count": 1386
     },
     {
       "domain": "youtube.com",
-      "count": 1252
+      "count": 1258
     },
     {
       "domain": "linkedin.com",
-      "count": 1014
+      "count": 1016
     },
     {
       "domain": "gem2go.at",
-      "count": 876
+      "count": 900
     },
     {
       "domain": "datareporter.eu",
-      "count": 805
+      "count": 806
     },
     {
       "domain": "vorarlberg.at",
@@ -203,11 +203,15 @@
     },
     {
       "domain": "bundesheer.at",
-      "count": 527
+      "count": 528
     },
     {
       "domain": "oesterreich.gv.at",
-      "count": 429
+      "count": 430
+    },
+    {
+      "domain": "bka.gv.at",
+      "count": 404
     },
     {
       "domain": "noe.gv.at",
@@ -215,15 +219,11 @@
     },
     {
       "domain": "ams.at",
-      "count": 399
-    },
-    {
-      "domain": "bka.gv.at",
-      "count": 399
+      "count": 400
     },
     {
       "domain": "bmf.gv.at",
-      "count": 369
+      "count": 375
     },
     {
       "domain": "uwz.at",
@@ -238,48 +238,48 @@
       "count": 277
     },
     {
+      "domain": "usp.gv.at",
+      "count": 275
+    },
+    {
       "domain": "justiz.gv.at",
       "count": 270
+    },
+    {
+      "domain": "salzburg.gv.at",
+      "count": 265
     },
     {
       "domain": "statistik.at",
       "count": 260
     },
     {
-      "domain": "salzburg.gv.at",
-      "count": 254
-    },
-    {
-      "domain": "usp.gv.at",
-      "count": 252
+      "domain": "land-oberoesterreich.gv.at",
+      "count": 248
     },
     {
       "domain": "bmi.gv.at",
-      "count": 242
+      "count": 244
     },
     {
       "domain": "bmbwf.gv.at",
       "count": 240
     },
     {
-      "domain": "land-oberoesterreich.gv.at",
+      "domain": "tirol.gv.at",
       "count": 239
     },
     {
-      "domain": "tirol.gv.at",
-      "count": 231
-    },
-    {
       "domain": "google.com",
-      "count": 221
+      "count": 229
     },
     {
       "domain": "doris.at",
-      "count": 197
+      "count": 204
     },
     {
       "domain": "wko.at",
-      "count": 192
+      "count": 198
     },
     {
       "domain": "bfvfb.at",
@@ -290,24 +290,24 @@
       "count": 189
     },
     {
+      "domain": "dioezese-linz.at",
+      "count": 180
+    },
+    {
       "domain": "flickr.com",
       "count": 178
     },
     {
-      "domain": "dioezese-linz.at",
-      "count": 176
-    },
-    {
       "domain": "altstoffsammelzentrum.at",
-      "count": 172
-    },
-    {
-      "domain": "twitter.com",
-      "count": 156
+      "count": 175
     },
     {
       "domain": "salzkammergut.at",
-      "count": 154
+      "count": 160
+    },
+    {
+      "domain": "twitter.com",
+      "count": 157
     },
     {
       "domain": "bmeia.gv.at",
@@ -315,10 +315,14 @@
     },
     {
       "domain": "fundamt.gv.at",
-      "count": 133
+      "count": 135
     },
     {
       "domain": "polizei.gv.at",
+      "count": 130
+    },
+    {
+      "domain": "standortooe.at",
       "count": 130
     },
     {
@@ -326,20 +330,20 @@
       "count": 129
     },
     {
+      "domain": "gem2go.info",
+      "count": 125
+    },
+    {
       "domain": "umweltprofis.at",
       "count": 125
     },
     {
-      "domain": "standortooe.at",
-      "count": 124
-    },
-    {
-      "domain": "gem2go.info",
-      "count": 123
-    },
-    {
       "domain": "bkms-system.net",
-      "count": 118
+      "count": 120
+    },
+    {
+      "domain": "fma.gv.at",
+      "count": 120
     },
     {
       "domain": "bmj.gv.at",
@@ -347,20 +351,16 @@
     },
     {
       "domain": "ooevv.at",
-      "count": 113
-    },
-    {
-      "domain": "fma.gv.at",
-      "count": 108
+      "count": 115
     }
   ],
   "relationship_types": {
-    "editorial_link": 1569,
+    "editorial_link": 1572,
     "form_destination": 293,
     "image_or_media_dependency": 342,
-    "script_dependency": 391,
+    "script_dependency": 389,
     "stylesheet_dependency": 357,
     "font_or_preload_dependency": 43
   },
-  "generated_at": "2026-11-19T06:50:25.862529+00:00"
+  "generated_at": "2026-11-21T00:31:50.140661+00:00"
 }

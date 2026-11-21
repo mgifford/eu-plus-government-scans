@@ -1,6 +1,6 @@
 {
   "country_code": "SWEDEN",
-  "total_relationships": 6214,
+  "total_relationships": 6215,
   "total_source_domains": 245,
   "top_source_domains": [
     {
@@ -17,7 +17,7 @@
     },
     {
       "domain": "vaxjo.se",
-      "count": 1716
+      "count": 1757
     },
     {
       "domain": "regionorebrolan.se",
@@ -211,15 +211,15 @@
     },
     {
       "domain": "facebook.com",
-      "count": 2009
+      "count": 2011
     },
     {
       "domain": "linkedin.com",
-      "count": 1724
+      "count": 1726
     },
     {
       "domain": "instagram.com",
-      "count": 1650
+      "count": 1652
     },
     {
       "domain": "regionstockholm.se",
@@ -231,7 +231,7 @@
     },
     {
       "domain": "vaxjo.se",
-      "count": 1220
+      "count": 1253
     },
     {
       "domain": "1177.se",
@@ -319,7 +319,7 @@
     },
     {
       "domain": "rekai.se",
-      "count": 354
+      "count": 356
     },
     {
       "domain": "vasteras.se",
@@ -408,11 +408,11 @@
   ],
   "relationship_types": {
     "editorial_link": 2722,
-    "script_dependency": 1134,
+    "script_dependency": 1135,
     "stylesheet_dependency": 870,
     "form_destination": 490,
     "image_or_media_dependency": 680,
     "font_or_preload_dependency": 318
   },
-  "generated_at": "2026-11-19T06:50:25.305099+00:00"
+  "generated_at": "2026-11-21T00:31:49.237528+00:00"
 }

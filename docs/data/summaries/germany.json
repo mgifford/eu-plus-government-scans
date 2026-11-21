@@ -1,15 +1,15 @@
 {
   "country_code": "GERMANY",
-  "total_relationships": 21956,
+  "total_relationships": 21959,
   "total_source_domains": 231,
   "top_source_domains": [
     {
       "domain": "sachsen.de",
-      "count": 95742
+      "count": 95891
     },
     {
       "domain": "rlp.de",
-      "count": 44683
+      "count": 46777
     },
     {
       "domain": "bayern.de",
@@ -207,19 +207,19 @@
   "top_target_domains": [
     {
       "domain": "sachsen.de",
-      "count": 84104
+      "count": 84244
     },
     {
       "domain": "rlp.de",
-      "count": 35677
+      "count": 36981
     },
     {
       "domain": "niedersachsen.de",
-      "count": 34759
+      "count": 34761
     },
     {
       "domain": "bayern.de",
-      "count": 26917
+      "count": 26919
     },
     {
       "domain": "nrw.de",
@@ -227,11 +227,11 @@
     },
     {
       "domain": "hessen.de",
-      "count": 12723
+      "count": 12725
     },
     {
       "domain": "hamburg.de",
-      "count": 12229
+      "count": 12233
     },
     {
       "domain": "diplo.de",
@@ -239,43 +239,43 @@
     },
     {
       "domain": "sachsen-anhalt.de",
-      "count": 8044
+      "count": 8046
     },
     {
       "domain": "facebook.com",
-      "count": 7093
+      "count": 7110
     },
     {
       "domain": "instagram.com",
-      "count": 6878
+      "count": 6920
     },
     {
       "domain": "bund.de",
-      "count": 6234
+      "count": 6237
     },
     {
       "domain": "thueringen.de",
-      "count": 5354
+      "count": 5356
     },
     {
       "domain": "bremen.de",
-      "count": 4615
+      "count": 4617
     },
     {
       "domain": "twitter.com",
-      "count": 4593
+      "count": 4598
     },
     {
       "domain": "youtube.com",
-      "count": 4370
+      "count": 4398
     },
     {
       "domain": "linkedin.com",
-      "count": 3613
+      "count": 3641
     },
     {
       "domain": "berlin.de",
-      "count": 3242
+      "count": 3246
     },
     {
       "domain": "baden-wuerttemberg.de",
@@ -283,7 +283,7 @@
     },
     {
       "domain": "auswaertiges-amt.de",
-      "count": 2778
+      "count": 2779
     },
     {
       "domain": "justiz.nrw",
@@ -291,7 +291,7 @@
     },
     {
       "domain": "etracker.com",
-      "count": 1852
+      "count": 1854
     },
     {
       "domain": "readspeaker.com",
@@ -299,15 +299,15 @@
     },
     {
       "domain": "zvg-portal.de",
-      "count": 1522
+      "count": 1524
     },
     {
       "domain": "enable-javascript.com",
-      "count": 1377
+      "count": 1379
     },
     {
       "domain": "lehrer-werden-in-sachsen.de",
-      "count": 1328
+      "count": 1330
     },
     {
       "domain": "polyplanet.de",
@@ -323,7 +323,7 @@
     },
     {
       "domain": "google.com",
-      "count": 1107
+      "count": 1110
     },
     {
       "domain": "duesseldorf.de",
@@ -335,7 +335,7 @@
     },
     {
       "domain": "brandenburg.de",
-      "count": 1073
+      "count": 1077
     },
     {
       "domain": "justiz-karriere.nrw",
@@ -343,7 +343,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 996
+      "count": 1000
     },
     {
       "domain": "schulcms.net",
@@ -363,11 +363,11 @@
     },
     {
       "domain": "dwd.de",
-      "count": 838
+      "count": 840
     },
     {
       "domain": "justiz.de",
-      "count": 831
+      "count": 834
     },
     {
       "domain": "deutschland.de",
@@ -379,7 +379,7 @@
     },
     {
       "domain": "xing.com",
-      "count": 774
+      "count": 781
     },
     {
       "domain": "eye-able.com",
@@ -387,7 +387,7 @@
     },
     {
       "domain": "europa.eu",
-      "count": 726
+      "count": 735
     },
     {
       "domain": "stuttgart.de",
@@ -399,7 +399,7 @@
     },
     {
       "domain": "tiktok.com",
-      "count": 562
+      "count": 580
     },
     {
       "domain": "make-it-in-germany.com",
@@ -408,11 +408,11 @@
   ],
   "relationship_types": {
     "editorial_link": 11180,
-    "font_or_preload_dependency": 350,
-    "image_or_media_dependency": 2741,
+    "font_or_preload_dependency": 351,
+    "image_or_media_dependency": 2742,
     "script_dependency": 2861,
-    "stylesheet_dependency": 2696,
+    "stylesheet_dependency": 2697,
     "form_destination": 2128
   },
-  "generated_at": "2026-11-19T06:50:23.644800+00:00"
+  "generated_at": "2026-11-21T06:30:20.680243+00:00"
 }

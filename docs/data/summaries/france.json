@@ -211,7 +211,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 11402
+      "count": 11403
     },
     {
       "domain": "haute-garonne.fr",
@@ -223,7 +223,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 7831
+      "count": 7832
     },
     {
       "domain": "skolengo.com",
@@ -231,7 +231,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 6844
+      "count": 6845
     },
     {
       "domain": "cnam.fr",
@@ -239,7 +239,7 @@
     },
     {
       "domain": "data.gouv.fr",
-      "count": 6520
+      "count": 6521
     },
     {
       "domain": "twitter.com",
@@ -251,7 +251,7 @@
     },
     {
       "domain": "legifrance.gouv.fr",
-      "count": 5558
+      "count": 5559
     },
     {
       "domain": "googleapis.com",
@@ -263,11 +263,11 @@
     },
     {
       "domain": "github.com",
-      "count": 4401
+      "count": 4402
     },
     {
       "domain": "info.gouv.fr",
-      "count": 3494
+      "count": 3495
     },
     {
       "domain": "education.gouv.fr",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "service-public.gouv.fr",
-      "count": 3004
+      "count": 3005
     },
     {
       "domain": "rennes.fr",
@@ -319,7 +319,7 @@
     },
     {
       "domain": "x.com",
-      "count": 2086
+      "count": 2087
     },
     {
       "domain": "defense.gouv.fr",
@@ -414,5 +414,5 @@
     "form_destination": 1700,
     "font_or_preload_dependency": 706
   },
-  "generated_at": "2026-11-19T06:50:25.133127+00:00"
+  "generated_at": "2026-11-21T00:31:49.935187+00:00"
 }
