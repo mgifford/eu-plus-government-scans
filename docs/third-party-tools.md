@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-11-21 08:20 UTC — last scan: 2026-11-20_
+_Stats as of 2026-11-21 08:53 UTC — last scan: 2026-11-21_
 
-**535** scan batches run
+**536** scan batches run
 
 **87,690** of **87,696** available pages scanned (**100.0%** coverage)
 **82,101** of **87,690** scanned pages were reachable (**93.6%**)
 **39,221** reachable pages loaded at least one third-party script (**47.8%** of reachable)
-**46,431** known third-party service loads identified
+**46,429** known third-party service loads identified
 **26** unique known services across **17** categories
 
 ---
@@ -46,7 +46,7 @@ _Stats as of 2026-11-21 08:20 UTC — last scan: 2026-11-20_
 | Poland | 14,951 | 14,951 | 13,733 | 7,229 | 9,850 | 52.6 | 71.7 | 2026-11-20 |
 | Portugal | 3,508 | 3,508 | 3,222 | 1,340 | 2,149 | 41.6 | 66.7 | 2026-11-20 |
 | Cyprus | 29 | 29 | 29 | 13 | 15 | 44.8 | 51.7 | 2026-10-28 |
-| Romania | 807 | 807 | 352 | 256 | 262 | 72.7 | 74.4 | 2026-10-30 |
+| Romania | 807 | 807 | 352 | 256 | 260 | 72.7 | 73.9 | 2026-11-21 |
 | Slovakia | 442 | 442 | 418 | 221 | 260 | 52.9 | 62.2 | 2026-10-28 |
 | Slovenia | 214 | 214 | 207 | 56 | 74 | 27.1 | 35.7 | 2026-10-25 |
 | Spain | 6,091 | 6,091 | 5,459 | 2,797 | 2,572 | 51.2 | 47.1 | 2026-11-20 |
@@ -62,7 +62,7 @@ _Stats as of 2026-11-21 08:20 UTC — last scan: 2026-11-20_
 
 | # | Service | Loads |
 |--:|---------|------:|
-| 1 | Google Analytics (GA4) | **8,630** |
+| 1 | Google Analytics (GA4) | **8,628** |
 | 2 | cdnjs (Cloudflare CDN) | **7,726** |
 | 3 | jsDelivr CDN | **6,310** |
 | 4 | Google reCAPTCHA | **4,844** |
@@ -87,7 +87,7 @@ _Stats as of 2026-11-21 08:20 UTC — last scan: 2026-11-20_
 
 | # | Service | Reachable Pages | Prevalence of Reachable Pages |
 |--:|---------|----------------:|------------------------------:|
-| 1 | Google Analytics (GA4) | **8,400** | **44.9%** |
+| 1 | Google Analytics (GA4) | **8,398** | **44.9%** |
 | 2 | Google reCAPTCHA | **4,567** | **24.4%** |
 | 3 | jsDelivr CDN | **4,274** | **22.8%** |
 | 4 | cdnjs (Cloudflare CDN) | **3,946** | **21.1%** |
@@ -113,7 +113,7 @@ _Stats as of 2026-11-21 08:20 UTC — last scan: 2026-11-20_
 | # | Category | Loads |
 |--:|----------|------:|
 | 1 | CDN | **20,084** |
-| 2 | Analytics | **9,752** |
+| 2 | Analytics | **9,750** |
 | 3 | JavaScript Library | **5,893** |
 | 4 | Security | **5,088** |
 | 5 | CAPTCHA | **4,844** |
@@ -143,7 +143,7 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 
 | # | Policy-Relevant Category | Loads |
 |--:|--------------------------|------:|
-| 1 | Analytics | **9,752** |
+| 1 | Analytics | **9,750** |
 | 2 | Security | **5,088** |
 | 3 | CAPTCHA | **4,844** |
 | 4 | Tag Manager | **4,615** |
