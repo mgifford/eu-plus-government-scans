@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-11-21 21:34 UTC_
+_Generated: 2026-11-21 22:31 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -14,7 +14,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
 | **Combined Reachability** | **82,376 confirmed reachable** | 87,696 | **<span role="img" aria-label="93.9% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:113px;"></span></span><span class="sm-bar__label">93.9%</span></span>** | — |
-| Social Media | 87,696 scanned (82,374 reachable) | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 52.7 days |
+| Social Media | 87,696 scanned (82,374 reachable) | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 52.6 days |
 | Technology | 87,696 scanned | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 54.9 days |
 | Lighthouse | 75,345 scanned | 87,696 | <span role="img" aria-label="85.9% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:103px;"></span></span><span class="sm-bar__label">85.9%</span></span> | 39.8 days |
 | Accessibility Statements | 87,696 scanned | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 58.7 days |
@@ -81,7 +81,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Poland | 14,951 | 14,951 | 13,900 | 7,119 | 33 | 50 | 6,698 | 1,021 | 342 | 1 | 82 | Aug 2026 – Nov 2026 |
 | Portugal | 3,508 | 3,508 | 3,229 | 1,090 | 1 | 7 | 2,131 | 348 | 94 | 2 | 6 | Aug 2026 – Nov 2026 |
 | Cyprus | 29 | 29 | 29 | 15 | 0 | 0 | 14 | 9 | 1 | 0 | 0 | Aug 2026 – Nov 2026 |
-| Romania | 807 | 807 | 352 | 135 | 3 | 0 | 214 | 40 | 8 | 0 | 3 | Aug 2026 – Nov 2026 |
+| Romania | 807 | 807 | 352 | 138 | 3 | 0 | 211 | 43 | 8 | 0 | 3 | Aug 2026 – Nov 2026 |
 | Slovakia | 442 | 442 | 418 | 161 | 0 | 1 | 256 | 19 | 12 | 1 | 0 | Aug 2026 – Nov 2026 |
 | Slovenia | 214 | 214 | 208 | 77 | 0 | 1 | 130 | 24 | 7 | 1 | 0 | Aug 2026 – Nov 2026 |
 | Spain | 6,091 | 6,091 | 5,439 | 2,323 | 2 | 80 | 3,034 | 1,622 | 512 | 72 | 10 | Aug 2026 – Nov 2026 |
