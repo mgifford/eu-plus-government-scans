@@ -3,7 +3,7 @@ title: Scan Progress Report
 layout: page
 ---
 
-_Generated: 2026-11-22 18:06 UTC_
+_Generated: 2026-11-22 18:38 UTC_
 
 This report tracks how far along each scan type is across all countries. It is regenerated automatically after every scan run.
 
@@ -14,9 +14,9 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Scan Type | Pages Scanned | Available | Coverage | Avg Age |
 |-----------|--------------|-----------|----------|---------|
 | **Combined Reachability** | **82,384 confirmed reachable** | 87,696 | **<span role="img" aria-label="93.9% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:113px;"></span></span><span class="sm-bar__label">93.9%</span></span>** | — |
-| Social Media | 87,696 scanned (82,382 reachable) | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 53.0 days |
+| Social Media | 87,696 scanned (82,382 reachable) | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 53.1 days |
 | Technology | 87,696 scanned | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 55.7 days |
-| Lighthouse | 75,357 scanned | 87,696 | <span role="img" aria-label="85.9% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:103px;"></span></span><span class="sm-bar__label">85.9%</span></span> | 40.5 days |
+| Lighthouse | 75,362 scanned | 87,696 | <span role="img" aria-label="85.9% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:103px;"></span></span><span class="sm-bar__label">85.9%</span></span> | 40.5 days |
 | Accessibility Statements | 87,696 scanned | 87,696 | <span role="img" aria-label="100.0% complete" class="sm-bar"><span class="sm-bar__track" style="width:120px;"><span class="sm-bar__fill sm-bar__fill--green" style="width:120px;"></span></span><span class="sm-bar__label">100.0%</span></span> | 59.0 days |
 
 > **Combined Reachability** counts each URL once if it was confirmed reachable by any scan type. **Avg Age** shows the mean number of days (or hours) since each URL in that scan type was last scanned — lower is fresher.
@@ -146,7 +146,7 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | France | 8,167 | 91 | 90 | 92 | 90 | 2026-11-21 |
 | Germany | 6,226 | 87 | 90 | 95 | 88 | 2026-11-22 |
 | Greece | 1,560 | 87 | 86 | 90 | 88 | 2026-11-21 |
-| Hungary | 384 | 89 | 77 | 83 | 86 | 2026-10-30 |
+| Hungary | 384 | 89 | 77 | 83 | 86 | 2026-11-22 |
 | Iceland | 133 | 91 | 92 | 91 | 91 | 2026-10-22 |
 | Ireland | 494 | 91 | 92 | 90 | 87 | 2026-11-13 |
 | Italy | 4,603 | 88 | 88 | 92 | 88 | 2026-11-22 |
@@ -162,10 +162,10 @@ Coverage is measured as pages scanned out of **87,696** pages available in the s
 | Romania | 241 | 89 | 78 | 90 | 84 | 2026-11-20 |
 | Slovakia | 422 | 90 | 88 | 90 | 88 | 2026-11-21 |
 | Slovenia | 208 | 87 | 80 | 89 | 85 | 2026-11-21 |
-| Spain | 5,165 | 84 | 79 | 80 | 83 | 2026-11-22 |
+| Spain | 5,166 | 84 | 79 | 80 | 83 | 2026-11-22 |
 | Sweden | 1,596 | 91 | 93 | 93 | 87 | 2026-11-21 |
 | Switzerland | 1,739 | 84 | 91 | 96 | 87 | 2026-11-21 |
-| United Kingdom | 17,296 | 90 | 94 | 92 | 87 | 2026-11-22 |
+| United Kingdom | 17,300 | 90 | 94 | 92 | 87 | 2026-11-22 |
 
 > Scores are averages across all successfully audited URLs, displayed as 0–100 (multiply source values × 100).
 
