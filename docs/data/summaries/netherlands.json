@@ -1,7 +1,7 @@
 {
   "country_code": "NETHERLANDS",
-  "total_relationships": 2992,
-  "total_source_domains": 74,
+  "total_relationships": 3008,
+  "total_source_domains": 75,
   "top_source_domains": [
     {
       "domain": "overheid.nl",
@@ -9,7 +9,7 @@
     },
     {
       "domain": "amsterdam.nl",
-      "count": 2717
+      "count": 2727
     },
     {
       "domain": "denhaag.nl",
@@ -36,6 +36,10 @@
       "count": 1350
     },
     {
+      "domain": "almere.nl",
+      "count": 1026
+    },
+    {
       "domain": "drenthe.nl",
       "count": 930
     },
@@ -48,12 +52,12 @@
       "count": 902
     },
     {
-      "domain": "almere.nl",
-      "count": 868
-    },
-    {
       "domain": "eindhoven.nl",
       "count": 835
+    },
+    {
+      "domain": "cbs.nl",
+      "count": 773
     },
     {
       "domain": "zaanstad.nl",
@@ -64,166 +68,162 @@
       "count": 756
     },
     {
-      "domain": "cbs.nl",
-      "count": 660
+      "domain": "ede.nl",
+      "count": 636
     },
     {
       "domain": "zuid-holland.nl",
-      "count": 583
+      "count": 587
     },
     {
-      "domain": "ede.nl",
-      "count": 520
+      "domain": "noord-holland.nl",
+      "count": 548
+    },
+    {
+      "domain": "brabant.nl",
+      "count": 537
+    },
+    {
+      "domain": "alphenaandenrijn.nl",
+      "count": 504
+    },
+    {
+      "domain": "provincie-utrecht.nl",
+      "count": 496
+    },
+    {
+      "domain": "kvk.nl",
+      "count": 475
     },
     {
       "domain": "rvo.nl",
       "count": 474
     },
     {
-      "domain": "alphenaandenrijn.nl",
-      "count": 461
-    },
-    {
-      "domain": "brabant.nl",
-      "count": 449
-    },
-    {
-      "domain": "noord-holland.nl",
-      "count": 443
-    },
-    {
-      "domain": "provincie-utrecht.nl",
-      "count": 438
-    },
-    {
-      "domain": "kvk.nl",
-      "count": 426
-    },
-    {
-      "domain": "rechtspraak.nl",
-      "count": 382
-    },
-    {
-      "domain": "tweedekamer.nl",
-      "count": 375
-    },
-    {
       "domain": "leeuwarden.nl",
-      "count": 374
+      "count": 441
     },
     {
       "domain": "leiden.nl",
-      "count": 356
+      "count": 436
     },
     {
-      "domain": "overijssel.nl",
-      "count": 352
+      "domain": "rechtspraak.nl",
+      "count": 435
+    },
+    {
+      "domain": "tweedekamer.nl",
+      "count": 432
     },
     {
       "domain": "arnhem.nl",
-      "count": 340
+      "count": 408
     },
     {
       "domain": "deventer.nl",
-      "count": 336
+      "count": 407
+    },
+    {
+      "domain": "overijssel.nl",
+      "count": 392
+    },
+    {
+      "domain": "politie.nl",
+      "count": 380
+    },
+    {
+      "domain": "alkmaar.nl",
+      "count": 329
+    },
+    {
+      "domain": "amersfoort.nl",
+      "count": 329
     },
     {
       "domain": "gov.nl",
       "count": 310
     },
     {
-      "domain": "politie.nl",
-      "count": 309
-    },
-    {
-      "domain": "alkmaar.nl",
-      "count": 282
-    },
-    {
       "domain": "tilburg.nl",
-      "count": 281
-    },
-    {
-      "domain": "amersfoort.nl",
-      "count": 272
+      "count": 292
     },
     {
       "domain": "dordrecht.nl",
-      "count": 270
-    },
-    {
-      "domain": "s-hertogenbosch.nl",
-      "count": 268
+      "count": 290
     },
     {
       "domain": "haarlem.nl",
-      "count": 229
-    },
-    {
-      "domain": "limburg.nl",
-      "count": 222
-    },
-    {
-      "domain": "enschede.nl",
-      "count": 221
+      "count": 285
     },
     {
       "domain": "marechaussee.nl",
-      "count": 220
+      "count": 275
+    },
+    {
+      "domain": "limburg.nl",
+      "count": 259
+    },
+    {
+      "domain": "s-hertogenbosch.nl",
+      "count": 258
     },
     {
       "domain": "provinciegroningen.nl",
-      "count": 216
-    },
-    {
-      "domain": "zeeland.nl",
-      "count": 216
+      "count": 255
     },
     {
       "domain": "gelderland.nl",
-      "count": 198
+      "count": 248
+    },
+    {
+      "domain": "enschede.nl",
+      "count": 243
     },
     {
       "domain": "delft.nl",
-      "count": 182
+      "count": 227
+    },
+    {
+      "domain": "zeeland.nl",
+      "count": 223
     },
     {
       "domain": "friesland.nl",
-      "count": 162
+      "count": 207
     },
     {
       "domain": "flevoland.nl",
-      "count": 148
-    },
-    {
-      "domain": "autoriteitpersoonsgegevens.nl",
-      "count": 144
+      "count": 185
     },
     {
       "domain": "eerstekamer.nl",
-      "count": 140
+      "count": 175
+    },
+    {
+      "domain": "autoriteitpersoonsgegevens.nl",
+      "count": 160
     }
   ],
   "top_target_domains": [
     {
       "domain": "overheid.nl",
-      "count": 2500
+      "count": 2508
     },
     {
       "domain": "amsterdam.nl",
-      "count": 1802
+      "count": 1809
     },
     {
       "domain": "facebook.com",
-      "count": 1265
+      "count": 1370
     },
     {
       "domain": "linkedin.com",
-      "count": 1192
+      "count": 1288
     },
     {
       "domain": "instagram.com",
-      "count": 1116
+      "count": 1215
     },
     {
       "domain": "nijmegen.nl",
@@ -234,24 +234,28 @@
       "count": 874
     },
     {
+      "domain": "youtube.com",
+      "count": 831
+    },
+    {
       "domain": "utrecht.nl",
       "count": 795
     },
     {
-      "domain": "youtube.com",
-      "count": 768
-    },
-    {
       "domain": "readspeaker.com",
-      "count": 755
+      "count": 789
     },
     {
       "domain": "rotterdam.nl",
       "count": 750
     },
     {
+      "domain": "almere.nl",
+      "count": 710
+    },
+    {
       "domain": "groningen.nl",
-      "count": 678
+      "count": 679
     },
     {
       "domain": "venlo.nl",
@@ -259,27 +263,23 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 597
+      "count": 607
     },
     {
       "domain": "belastingdienst.nl",
       "count": 586
     },
     {
-      "domain": "almere.nl",
-      "count": 568
+      "domain": "cbs.nl",
+      "count": 532
+    },
+    {
+      "domain": "twitter.com",
+      "count": 515
     },
     {
       "domain": "eindhoven.nl",
       "count": 491
-    },
-    {
-      "domain": "twitter.com",
-      "count": 489
-    },
-    {
-      "domain": "cbs.nl",
-      "count": 468
     },
     {
       "domain": "breda.nl",
@@ -291,15 +291,19 @@
     },
     {
       "domain": "x.com",
-      "count": 363
+      "count": 391
+    },
+    {
+      "domain": "kvk.nl",
+      "count": 375
+    },
+    {
+      "domain": "ede.nl",
+      "count": 356
     },
     {
       "domain": "drenthe.nl",
       "count": 355
-    },
-    {
-      "domain": "kvk.nl",
-      "count": 350
     },
     {
       "domain": "zaanstad.nl",
@@ -307,112 +311,108 @@
     },
     {
       "domain": "rijksoverheid.nl",
-      "count": 315
+      "count": 322
     },
     {
       "domain": "google.com",
-      "count": 297
+      "count": 295
     },
     {
-      "domain": "ede.nl",
-      "count": 292
+      "domain": "tweedekamer.nl",
+      "count": 293
     },
     {
       "domain": "zuid-holland.nl",
-      "count": 285
+      "count": 289
     },
     {
       "domain": "zoetermeer.nl",
       "count": 280
     },
     {
-      "domain": "tweedekamer.nl",
-      "count": 254
-    },
-    {
       "domain": "rechtspraak.nl",
-      "count": 235
+      "count": 274
     },
     {
       "domain": "alphenaandenrijn.nl",
-      "count": 234
-    },
-    {
-      "domain": "googletagmanager.com",
-      "count": 217
-    },
-    {
-      "domain": "leeuwarden.nl",
-      "count": 201
-    },
-    {
-      "domain": "bsky.app",
-      "count": 200
-    },
-    {
-      "domain": "provincie-utrecht.nl",
-      "count": 198
+      "count": 256
     },
     {
       "domain": "noord-holland.nl",
-      "count": 196
+      "count": 242
     },
     {
-      "domain": "gstatic.com",
-      "count": 195
+      "domain": "leeuwarden.nl",
+      "count": 235
     },
     {
-      "domain": "siteimproveanalytics.com",
-      "count": 189
-    },
-    {
-      "domain": "arnhem.nl",
-      "count": 185
-    },
-    {
-      "domain": "brabant.nl",
-      "count": 185
+      "domain": "bsky.app",
+      "count": 226
     },
     {
       "domain": "leiden.nl",
-      "count": 184
+      "count": 221
+    },
+    {
+      "domain": "googletagmanager.com",
+      "count": 220
+    },
+    {
+      "domain": "marechaussee.nl",
+      "count": 220
+    },
+    {
+      "domain": "provincie-utrecht.nl",
+      "count": 219
+    },
+    {
+      "domain": "brabant.nl",
+      "count": 218
+    },
+    {
+      "domain": "arnhem.nl",
+      "count": 215
+    },
+    {
+      "domain": "overijssel.nl",
+      "count": 206
+    },
+    {
+      "domain": "gstatic.com",
+      "count": 203
+    },
+    {
+      "domain": "siteimproveanalytics.com",
+      "count": 200
+    },
+    {
+      "domain": "politie.nl",
+      "count": 200
+    },
+    {
+      "domain": "deventer.nl",
+      "count": 190
+    },
+    {
+      "domain": "enschede.nl",
+      "count": 186
     },
     {
       "domain": "sim-cdn.nl",
       "count": 184
     },
     {
-      "domain": "overijssel.nl",
-      "count": 180
-    },
-    {
-      "domain": "marechaussee.nl",
-      "count": 177
-    },
-    {
-      "domain": "enschede.nl",
-      "count": 171
-    },
-    {
-      "domain": "jsdelivr.net",
-      "count": 170
-    },
-    {
       "domain": "autoriteitpersoonsgegevens.nl",
-      "count": 166
-    },
-    {
-      "domain": "politie.nl",
-      "count": 162
+      "count": 183
     }
   ],
   "relationship_types": {
-    "editorial_link": 1351,
-    "font_or_preload_dependency": 124,
-    "form_destination": 194,
+    "editorial_link": 1366,
+    "font_or_preload_dependency": 126,
+    "form_destination": 190,
     "image_or_media_dependency": 303,
-    "script_dependency": 566,
+    "script_dependency": 569,
     "stylesheet_dependency": 454
   },
-  "generated_at": "2026-11-20T15:43:47.259812+00:00"
+  "generated_at": "2026-11-22T06:04:42.112558+00:00"
 }

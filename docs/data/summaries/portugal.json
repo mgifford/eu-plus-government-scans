@@ -101,7 +101,7 @@
     },
     {
       "domain": "cm-feira.pt",
-      "count": 898
+      "count": 905
     },
     {
       "domain": "cm-sintra.pt",
@@ -211,23 +211,23 @@
     },
     {
       "domain": "facebook.com",
-      "count": 4154
+      "count": 4160
     },
     {
       "domain": "youtube.com",
-      "count": 3382
+      "count": 3385
     },
     {
       "domain": "instagram.com",
-      "count": 3237
+      "count": 3240
     },
     {
       "domain": "googletagmanager.com",
-      "count": 2928
+      "count": 2931
     },
     {
       "domain": "google.com",
-      "count": 2811
+      "count": 2817
     },
     {
       "domain": "madeira.gov.pt",
@@ -294,12 +294,12 @@
       "count": 911
     },
     {
-      "domain": "cm-olhao.pt",
+      "domain": "w3.org",
       "count": 730
     },
     {
-      "domain": "w3.org",
-      "count": 727
+      "domain": "cm-olhao.pt",
+      "count": 730
     },
     {
       "domain": "cm-braga.pt",
@@ -382,12 +382,12 @@
       "count": 472
     },
     {
-      "domain": "autarquia360.com",
-      "count": 460
+      "domain": "cm-feira.pt",
+      "count": 462
     },
     {
-      "domain": "cm-feira.pt",
-      "count": 457
+      "domain": "autarquia360.com",
+      "count": 460
     },
     {
       "domain": "usabilidade.gov.pt",
@@ -414,5 +414,5 @@
     "form_destination": 747,
     "image_or_media_dependency": 1122
   },
-  "generated_at": "2026-11-20T15:43:47.823984+00:00"
+  "generated_at": "2026-11-22T14:55:28.980442+00:00"
 }

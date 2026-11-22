@@ -1,17 +1,32 @@
 {
-  "BULGARIA": {
-    "total_relationships": 1858,
-    "total_source_domains": 54,
-    "file": "bulgaria.json"
+  "ICELAND": {
+    "total_relationships": 535,
+    "total_source_domains": 21,
+    "file": "iceland.json"
   },
-  "DENMARK": {
-    "total_relationships": 4387,
-    "total_source_domains": 87,
-    "file": "denmark.json"
+  "MALTA": {
+    "total_relationships": 1726,
+    "total_source_domains": 3,
+    "file": "malta.json"
   },
-  "ITALY": {
-    "total_relationships": 16386,
-    "total_source_domains": 154,
-    "file": "italy.json"
+  "PORTUGAL": {
+    "total_relationships": 13566,
+    "total_source_domains": 388,
+    "file": "portugal.json"
+  },
+  "NORWAY": {
+    "total_relationships": 873,
+    "total_source_domains": 34,
+    "file": "norway.json"
+  },
+  "LUXEMBOURG": {
+    "total_relationships": 2090,
+    "total_source_domains": 39,
+    "file": "luxembourg.json"
+  },
+  "UNITED_KINGDOM_UK": {
+    "total_relationships": 325052,
+    "total_source_domains": 9514,
+    "file": "united_kingdom_uk.json"
   }
 }

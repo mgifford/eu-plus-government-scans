@@ -5,11 +5,11 @@
   "top_source_domains": [
     {
       "domain": "gouvernement.lu",
-      "count": 9733
+      "count": 10108
     },
     {
       "domain": "public.lu",
-      "count": 8347
+      "count": 8536
     },
     {
       "domain": "uni.lu",
@@ -163,19 +163,19 @@
   "top_target_domains": [
     {
       "domain": "public.lu",
-      "count": 8095
+      "count": 8349
     },
     {
       "domain": "gouvernement.lu",
-      "count": 4391
+      "count": 4529
     },
     {
       "domain": "facebook.com",
-      "count": 1051
+      "count": 1077
     },
     {
       "domain": "linkedin.com",
-      "count": 971
+      "count": 1000
     },
     {
       "domain": "uni.lu",
@@ -183,31 +183,31 @@
     },
     {
       "domain": "twitter.com",
-      "count": 722
+      "count": 743
     },
     {
       "domain": "bsky.app",
-      "count": 595
+      "count": 616
     },
     {
       "domain": "adobedtm.com",
-      "count": 563
+      "count": 584
     },
     {
       "domain": "instagram.com",
-      "count": 546
+      "count": 557
     },
     {
       "domain": "etat.lu",
-      "count": 394
+      "count": 399
     },
     {
       "domain": "youtube.com",
-      "count": 372
+      "count": 375
     },
     {
       "domain": "europa.eu",
-      "count": 322
+      "count": 333
     },
     {
       "domain": "googleapis.com",
@@ -250,12 +250,12 @@
       "count": 103
     },
     {
-      "domain": "chem.lu",
-      "count": 100
+      "domain": "google.com",
+      "count": 101
     },
     {
-      "domain": "google.com",
-      "count": 99
+      "domain": "chem.lu",
+      "count": 100
     },
     {
       "domain": "readspeaker.com",
@@ -290,12 +290,12 @@
       "count": 72
     },
     {
-      "domain": "sandweiler.lu",
+      "domain": "geoportail.lu",
       "count": 72
     },
     {
-      "domain": "geoportail.lu",
-      "count": 71
+      "domain": "sandweiler.lu",
+      "count": 72
     },
     {
       "domain": "unpkg.com",
@@ -370,5 +370,5 @@
     "stylesheet_dependency": 243,
     "font_or_preload_dependency": 30
   },
-  "generated_at": "2026-11-20T15:43:47.743328+00:00"
+  "generated_at": "2026-11-22T14:55:29.139829+00:00"
 }

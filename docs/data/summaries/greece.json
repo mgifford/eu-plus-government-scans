@@ -1,7 +1,7 @@
 {
   "country_code": "GREECE",
-  "total_relationships": 8685,
-  "total_source_domains": 367,
+  "total_relationships": 8693,
+  "total_source_domains": 368,
   "top_source_domains": [
     {
       "domain": "minedu.gov.gr",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "googleapis.com",
-      "count": 3998
+      "count": 4004
     },
     {
       "domain": "facebook.com",
@@ -215,7 +215,7 @@
     },
     {
       "domain": "diavgeia.gov.gr",
-      "count": 1761
+      "count": 1764
     },
     {
       "domain": "googletagmanager.com",
@@ -231,15 +231,15 @@
     },
     {
       "domain": "google.com",
-      "count": 1370
+      "count": 1366
+    },
+    {
+      "domain": "gstatic.com",
+      "count": 1155
     },
     {
       "domain": "europa.eu",
       "count": 1154
-    },
-    {
-      "domain": "gstatic.com",
-      "count": 1152
     },
     {
       "domain": "www.gov.gr",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "userway.org",
-      "count": 894
+      "count": 890
     },
     {
       "domain": "jsdelivr.net",
@@ -263,7 +263,7 @@
     },
     {
       "domain": "cloudflare.com",
-      "count": 856
+      "count": 852
     },
     {
       "domain": "pdm.gov.gr",
@@ -331,7 +331,7 @@
     },
     {
       "domain": "ypes.gr",
-      "count": 376
+      "count": 379
     },
     {
       "domain": "unpkg.com",
@@ -390,12 +390,12 @@
       "count": 236
     },
     {
-      "domain": "yme.gov.gr",
+      "domain": "et.gr",
       "count": 233
     },
     {
-      "domain": "et.gr",
-      "count": 230
+      "domain": "yme.gov.gr",
+      "count": 233
     },
     {
       "domain": "wp.com",
@@ -407,12 +407,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 5007,
-    "form_destination": 374,
-    "image_or_media_dependency": 659,
-    "script_dependency": 1285,
-    "stylesheet_dependency": 1055,
-    "font_or_preload_dependency": 305
+    "editorial_link": 5014,
+    "form_destination": 375,
+    "image_or_media_dependency": 660,
+    "script_dependency": 1281,
+    "stylesheet_dependency": 1056,
+    "font_or_preload_dependency": 307
   },
-  "generated_at": "2026-11-20T01:09:15.021646+00:00"
+  "generated_at": "2026-11-22T06:04:41.589742+00:00"
 }

@@ -5,7 +5,7 @@
   "top_source_domains": [
     {
       "domain": "kaunas.lt",
-      "count": 1828
+      "count": 1836
     },
     {
       "domain": "smm.lt",
@@ -71,7 +71,7 @@
   "top_target_domains": [
     {
       "domain": "kaunas.lt",
-      "count": 882
+      "count": 887
     },
     {
       "domain": "smm.lt",
@@ -83,7 +83,7 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 256
+      "count": 257
     },
     {
       "domain": "siauliai.lt",
@@ -95,7 +95,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 150
+      "count": 151
     },
     {
       "domain": "lrs.lt",
@@ -103,7 +103,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 111
+      "count": 112
     },
     {
       "domain": "cloudflare.com",
@@ -278,5 +278,5 @@
     "stylesheet_dependency": 72,
     "editorial_link": 278
   },
-  "generated_at": "2026-11-20T01:09:14.839510+00:00"
+  "generated_at": "2026-11-22T06:04:41.692437+00:00"
 }

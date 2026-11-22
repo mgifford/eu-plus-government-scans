@@ -1,11 +1,11 @@
 {
   "country_code": "CROATIA",
-  "total_relationships": 1335,
+  "total_relationships": 1334,
   "total_source_domains": 30,
   "top_source_domains": [
     {
       "domain": "zagreb.hr",
-      "count": 2555
+      "count": 2640
     },
     {
       "domain": "gov.hr",
@@ -56,12 +56,12 @@
       "count": 364
     },
     {
-      "domain": "azop.hr",
-      "count": 318
+      "domain": "osijek.hr",
+      "count": 322
     },
     {
-      "domain": "osijek.hr",
-      "count": 308
+      "domain": "azop.hr",
+      "count": 318
     },
     {
       "domain": "koprivnica.hr",
@@ -126,12 +126,12 @@
   ],
   "top_target_domains": [
     {
-      "domain": "gov.hr",
-      "count": 1251
+      "domain": "zagreb.hr",
+      "count": 1275
     },
     {
-      "domain": "zagreb.hr",
-      "count": 1233
+      "domain": "gov.hr",
+      "count": 1255
     },
     {
       "domain": "rijeka.hr",
@@ -139,7 +139,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 534
+      "count": 536
     },
     {
       "domain": "skole.hr",
@@ -147,15 +147,15 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 453
+      "count": 458
     },
     {
       "domain": "googleapis.com",
-      "count": 346
+      "count": 348
     },
     {
       "domain": "youtube.com",
-      "count": 342
+      "count": 343
     },
     {
       "domain": "hzjz.hr",
@@ -167,7 +167,7 @@
     },
     {
       "domain": "instagram.com",
-      "count": 279
+      "count": 280
     },
     {
       "domain": "hzzo.hr",
@@ -191,7 +191,7 @@
     },
     {
       "domain": "arcgis.com",
-      "count": 198
+      "count": 204
     },
     {
       "domain": "jsdelivr.net",
@@ -199,7 +199,7 @@
     },
     {
       "domain": "google.com",
-      "count": 182
+      "count": 184
     },
     {
       "domain": "vukovar.hr",
@@ -207,7 +207,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 171
+      "count": 172
     },
     {
       "domain": "koprivnica.hr",
@@ -251,15 +251,15 @@
     },
     {
       "domain": "tiktok.com",
-      "count": 85
+      "count": 86
+    },
+    {
+      "domain": "osijek.hr",
+      "count": 86
     },
     {
       "domain": "split.hr",
       "count": 85
-    },
-    {
-      "domain": "osijek.hr",
-      "count": 81
     },
     {
       "domain": "pula.hr",
@@ -270,12 +270,12 @@
       "count": 75
     },
     {
-      "domain": "gstatic.com",
-      "count": 68
+      "domain": "addtoany.com",
+      "count": 70
     },
     {
-      "domain": "addtoany.com",
-      "count": 68
+      "domain": "gstatic.com",
+      "count": 69
     },
     {
       "domain": "nn.hr",
@@ -290,6 +290,10 @@
       "count": 58
     },
     {
+      "domain": "x.com",
+      "count": 56
+    },
+    {
       "domain": "usud.hr",
       "count": 56
     },
@@ -298,16 +302,12 @@
       "count": 55
     },
     {
-      "domain": "x.com",
-      "count": 55
-    },
-    {
       "domain": "omoguru.com",
       "count": 55
     },
     {
       "domain": "mingo.hr",
-      "count": 54
+      "count": 55
     },
     {
       "domain": "mojarijeka.hr",
@@ -327,12 +327,12 @@
     }
   ],
   "relationship_types": {
-    "editorial_link": 872,
+    "editorial_link": 871,
     "font_or_preload_dependency": 15,
     "form_destination": 64,
     "image_or_media_dependency": 97,
     "script_dependency": 164,
     "stylesheet_dependency": 123
   },
-  "generated_at": "2026-11-19T06:50:24.947583+00:00"
+  "generated_at": "2026-11-21T23:36:20.853841+00:00"
 }
