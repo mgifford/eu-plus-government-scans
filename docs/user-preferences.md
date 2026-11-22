@@ -23,7 +23,7 @@ the government sites in this corpus:
 
 <!-- USER_PREFERENCES_STATS_START -->
 
-_Stats as of 2026-11-22 06:48 UTC — last scan: 2026-11-19_
+_Stats as of 2026-11-22 07:21 UTC — last scan: 2026-11-19_
 
 **Browser user preferences and design-system adoption**
 

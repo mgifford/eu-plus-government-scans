@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-11-22 06:47 UTC",
+  "generated_at": "2026-11-22 07:20 UTC",
   "base_url": "https://mgifford.github.io/eu-plus-government-scans/",
   "note": "Compact cross-reference index: technology → page count, categories, and per-country page counts. For full per-URL drilldown data see the technology-data.json workflow artifact.",
   "by_technology": {
     "jQuery": {
-      "pages": 43460,
+      "pages": 43459,
       "categories": [
         "JavaScript libraries"
       ],
@@ -34,7 +34,7 @@
         "POLAND": 10292,
         "PORTUGAL": 1615,
         "REPUBLIC_OF_CYPRUS": 17,
-        "ROMANIA": 285,
+        "ROMANIA": 284,
         "SLOVAKIA": 229,
         "SLOVENIA": 113,
         "SPAIN": 2791,
@@ -164,7 +164,7 @@
       }
     },
     "Bootstrap": {
-      "pages": 19619,
+      "pages": 19618,
       "categories": [
         "UI frameworks"
       ],
@@ -194,7 +194,7 @@
         "POLAND": 4857,
         "PORTUGAL": 728,
         "REPUBLIC_OF_CYPRUS": 13,
-        "ROMANIA": 149,
+        "ROMANIA": 148,
         "SLOVAKIA": 96,
         "SLOVENIA": 64,
         "SPAIN": 1818,
@@ -204,7 +204,7 @@
       }
     },
     "Google Tag Manager": {
-      "pages": 17538,
+      "pages": 17536,
       "categories": [
         "Tag managers"
       ],
@@ -234,7 +234,7 @@
         "POLAND": 3899,
         "PORTUGAL": 717,
         "REPUBLIC_OF_CYPRUS": 8,
-        "ROMANIA": 159,
+        "ROMANIA": 157,
         "SLOVAKIA": 121,
         "SLOVENIA": 24,
         "SPAIN": 1189,
@@ -365,7 +365,7 @@
       }
     },
     "Nginx": {
-      "pages": 13784,
+      "pages": 13786,
       "categories": [
         "Reverse proxies",
         "Web servers"
@@ -396,7 +396,7 @@
         "POLAND": 2635,
         "PORTUGAL": 1079,
         "REPUBLIC_OF_CYPRUS": 3,
-        "ROMANIA": 15,
+        "ROMANIA": 17,
         "SLOVAKIA": 66,
         "SLOVENIA": 25,
         "SPAIN": 587,
@@ -486,7 +486,7 @@
       }
     },
     "Windows Server": {
-      "pages": 7027,
+      "pages": 7022,
       "categories": [
         "Operating systems"
       ],
@@ -515,7 +515,7 @@
         "POLAND": 425,
         "PORTUGAL": 586,
         "REPUBLIC_OF_CYPRUS": 4,
-        "ROMANIA": 18,
+        "ROMANIA": 13,
         "SLOVAKIA": 33,
         "SLOVENIA": 39,
         "SPAIN": 222,
@@ -525,7 +525,7 @@
       }
     },
     "IIS": {
-      "pages": 6921,
+      "pages": 6916,
       "categories": [
         "Web servers"
       ],
@@ -554,7 +554,7 @@
         "POLAND": 414,
         "PORTUGAL": 579,
         "REPUBLIC_OF_CYPRUS": 4,
-        "ROMANIA": 18,
+        "ROMANIA": 13,
         "SLOVAKIA": 33,
         "SLOVENIA": 39,
         "SPAIN": 206,
@@ -603,7 +603,7 @@
       }
     },
     "Microsoft ASP.NET": {
-      "pages": 6109,
+      "pages": 6104,
       "categories": [
         "Web frameworks"
       ],
@@ -632,7 +632,7 @@
         "POLAND": 392,
         "PORTUGAL": 467,
         "REPUBLIC_OF_CYPRUS": 4,
-        "ROMANIA": 11,
+        "ROMANIA": 6,
         "SLOVAKIA": 31,
         "SLOVENIA": 22,
         "SPAIN": 164,
@@ -3491,7 +3491,7 @@
       }
     },
     "SweetAlert2": {
-      "pages": 232,
+      "pages": 231,
       "categories": [
         "JavaScript libraries"
       ],
@@ -3510,7 +3510,7 @@
         "ITALY": 14,
         "POLAND": 63,
         "PORTUGAL": 8,
-        "ROMANIA": 3,
+        "ROMANIA": 2,
         "SPAIN": 29,
         "UNITED_KINGDOM_UK": 10
       }
@@ -6028,20 +6028,6 @@
         "IRELAND": 2
       }
     },
-    "jQuery-pjax": {
-      "pages": 17,
-      "categories": [
-        "Mobile frameworks"
-      ],
-      "by_country": {
-        "CANADA": 2,
-        "GREECE": 2,
-        "ITALY": 2,
-        "POLAND": 3,
-        "ROMANIA": 2,
-        "UNITED_KINGDOM_UK": 6
-      }
-    },
     "nopCommerce": {
       "pages": 17,
       "categories": [
@@ -6113,6 +6099,20 @@
       ],
       "by_country": {
         "POLAND": 16
+      }
+    },
+    "jQuery-pjax": {
+      "pages": 16,
+      "categories": [
+        "Mobile frameworks"
+      ],
+      "by_country": {
+        "CANADA": 2,
+        "GREECE": 2,
+        "ITALY": 2,
+        "POLAND": 3,
+        "ROMANIA": 1,
+        "UNITED_KINGDOM_UK": 6
       }
     },
     "KineticJS": {
@@ -8041,7 +8041,7 @@
   },
   "by_category": {
     "JavaScript libraries": {
-      "pages": 85495,
+      "pages": 85493,
       "technologies": [
         "AOS",
         "Axios",
@@ -8086,7 +8086,7 @@
       ]
     },
     "Web servers": {
-      "pages": 48242,
+      "pages": 48239,
       "technologies": [
         "Akka HTTP",
         "Amazon EC2",
@@ -8222,7 +8222,7 @@
       ]
     },
     "UI frameworks": {
-      "pages": 25714,
+      "pages": 25713,
       "technologies": [
         "Angular Material",
         "Bootstrap",
@@ -8244,7 +8244,7 @@
       ]
     },
     "Tag managers": {
-      "pages": 17574,
+      "pages": 17572,
       "technologies": [
         "Google Tag Manager",
         "TagCommander"
@@ -8291,7 +8291,7 @@
       ]
     },
     "Reverse proxies": {
-      "pages": 14377,
+      "pages": 14379,
       "technologies": [
         "Envoy",
         "F5 BigIP",
@@ -8300,7 +8300,7 @@
       ]
     },
     "Operating systems": {
-      "pages": 11157,
+      "pages": 11152,
       "technologies": [
         "CentOS",
         "Debian",
@@ -8315,7 +8315,7 @@
       ]
     },
     "Web frameworks": {
-      "pages": 9348,
+      "pages": 9343,
       "technologies": [
         "Akka HTTP",
         "Blazor",
@@ -8634,7 +8634,7 @@
       ]
     },
     "Mobile frameworks": {
-      "pages": 273,
+      "pages": 272,
       "technologies": [
         "Sencha Touch",
         "Wink",
