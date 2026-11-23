@@ -1,0 +1,4120 @@
+{
+ "schema": 1,
+ "week": {
+  "first_day": "2026-11-16",
+  "last_day": "2026-11-22"
+ },
+ "generated_at": "2026-11-23T19:28:25.791632+00:00",
+ "notes": {
+  "pages_rechecked": "pages whose latest reachable scan falls in the week and that have enough earlier comparable scans to compare against",
+  "gained": "pages whose latest scan found the item while every earlier comparable scan did not, per group",
+  "lost": "pages whose latest scan did not find the item while every earlier comparable scan did, per group",
+  "earlier_checks": "number of earlier comparable scans of the page",
+  "links": "links found by the latest scan; credential parameters masked",
+  "host": "page host without a leading www., used to count websites"
+ },
+ "sections": {
+  "open_social_platforms": {
+   "status": "skipped",
+   "reason": "only 1 pages could be compared with earlier scans this week; at least 500 are needed",
+   "source": {
+    "artifact": "social-media-metadata",
+    "table": "url_social_media_results",
+    "min_platforms_version": 3,
+    "newest_scan": "2026-11-22T16:58:14.796732+00:00"
+   }
+  },
+  "accessibility_statements": {
+   "status": "drafted",
+   "source": {
+    "artifact": "accessibility-metadata",
+    "table": "url_accessibility_results",
+    "newest_scan": "2026-11-22T17:28:07.238829+00:00"
+   },
+   "rule": "A page gained a statement when its latest successful scan (reachable and parsed without error) found an accessibility statement link and at least 2 earlier successful scans all found none; it lost one when all of those earlier scans found one and the latest does not.",
+   "pages_rechecked": 12440,
+   "countries_rechecked": 18,
+   "by_country": [
+    {
+     "country_code": "AUSTRIA",
+     "country": "Austria",
+     "pages_rechecked": 549,
+     "gained": {
+      "statement": 1
+     },
+     "lost": {
+      "statement": 4
+     }
+    },
+    {
+     "country_code": "BELGIUM",
+     "country": "Belgium",
+     "pages_rechecked": 203,
+     "gained": {
+      "statement": 0
+     },
+     "lost": {
+      "statement": 0
+     }
+    },
+    {
+     "country_code": "CANADA",
+     "country": "Canada",
+     "pages_rechecked": 434,
+     "gained": {
+      "statement": 9
+     },
+     "lost": {
+      "statement": 0
+     }
+    },
+    {
+     "country_code": "CZECHIA",
+     "country": "Czechia",
+     "pages_rechecked": 675,
+     "gained": {
+      "statement": 7
+     },
+     "lost": {
+      "statement": 4
+     }
+    },
+    {
+     "country_code": "FRANCE",
+     "country": "France",
+     "pages_rechecked": 1247,
+     "gained": {
+      "statement": 3
+     },
+     "lost": {
+      "statement": 21
+     }
+    },
+    {
+     "country_code": "GERMANY",
+     "country": "Germany",
+     "pages_rechecked": 478,
+     "gained": {
+      "statement": 1
+     },
+     "lost": {
+      "statement": 5
+     }
+    },
+    {
+     "country_code": "ITALY",
+     "country": "Italy",
+     "pages_rechecked": 614,
+     "gained": {
+      "statement": 4
+     },
+     "lost": {
+      "statement": 3
+     }
+    },
+    {
+     "country_code": "LATVIA",
+     "country": "Latvia",
+     "pages_rechecked": 228,
+     "gained": {
+      "statement": 0
+     },
+     "lost": {
+      "statement": 3
+     }
+    },
+    {
+     "country_code": "LUXEMBOURG",
+     "country": "Luxembourg",
+     "pages_rechecked": 141,
+     "gained": {
+      "statement": 0
+     },
+     "lost": {
+      "statement": 0
+     }
+    },
+    {
+     "country_code": "NETHERLANDS",
+     "country": "Netherlands",
+     "pages_rechecked": 42,
+     "gained": {
+      "statement": 0
+     },
+     "lost": {
+      "statement": 0
+     }
+    },
+    {
+     "country_code": "NORWAY",
+     "country": "Norway",
+     "pages_rechecked": 239,
+     "gained": {
+      "statement": 0
+     },
+     "lost": {
+      "statement": 0
+     }
+    },
+    {
+     "country_code": "POLAND",
+     "country": "Poland",
+     "pages_rechecked": 3325,
+     "gained": {
+      "statement": 17
+     },
+     "lost": {
+      "statement": 37
+     }
+    },
+    {
+     "country_code": "REPUBLIC_OF_CYPRUS",
+     "country": "Cyprus",
+     "pages_rechecked": 29,
+     "gained": {
+      "statement": 1
+     },
+     "lost": {
+      "statement": 0
+     }
+    },
+    {
+     "country_code": "SLOVAKIA",
+     "country": "Slovakia",
+     "pages_rechecked": 387,
+     "gained": {
+      "statement": 6
+     },
+     "lost": {
+      "statement": 0
+     }
+    },
+    {
+     "country_code": "SLOVENIA",
+     "country": "Slovenia",
+     "pages_rechecked": 204,
+     "gained": {
+      "statement": 2
+     },
+     "lost": {
+      "statement": 6
+     }
+    },
+    {
+     "country_code": "SPAIN",
+     "country": "Spain",
+     "pages_rechecked": 215,
+     "gained": {
+      "statement": 2
+     },
+     "lost": {
+      "statement": 0
+     }
+    },
+    {
+     "country_code": "SWEDEN",
+     "country": "Sweden",
+     "pages_rechecked": 544,
+     "gained": {
+      "statement": 0
+     },
+     "lost": {
+      "statement": 4
+     }
+    },
+    {
+     "country_code": "UNITED_KINGDOM_UK",
+     "country": "United Kingdom",
+     "pages_rechecked": 2886,
+     "gained": {
+      "statement": 191
+     },
+     "lost": {
+      "statement": 61
+     }
+    }
+   ],
+   "gained": {
+    "statement": [
+     {
+      "url": "http://extremambiente.juntaex.es/",
+      "host": "extremambiente.juntaex.es",
+      "country_code": "SPAIN",
+      "country": "Spain",
+      "scanned_at": "2026-11-21T22:21:03.243282+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://www.juntaex.es/accesibilidad"
+      ]
+     },
+     {
+      "url": "http://extremambiente.juntaex.es/index.php",
+      "host": "extremambiente.juntaex.es",
+      "country_code": "SPAIN",
+      "country": "Spain",
+      "scanned_at": "2026-11-21T22:21:05.766217+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://www.juntaex.es/accesibilidad"
+      ]
+     },
+     {
+      "url": "http://jobs.dchs.nhs.uk/",
+      "host": "jobs.dchs.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:44:38.012612+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://dchs.nhs.uk/about-us/accessibility-statement"
+      ]
+     },
+     {
+      "url": "http://jobs.liverpoolwomens.nhs.uk/",
+      "host": "jobs.liverpoolwomens.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:46:13.411346+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://www.uhliverpool.nhs.uk/accessibility-statement"
+      ]
+     },
+     {
+      "url": "http://jobs.mtw.nhs.uk/",
+      "host": "jobs.mtw.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:46:55.072613+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://feeds.trac.jobs/about/accessibility"
+      ]
+     },
+     {
+      "url": "https://accessibilite.canada.ca/",
+      "host": "accessibilite.canada.ca",
+      "country_code": "CANADA",
+      "country": "Canada",
+      "scanned_at": "2026-11-21T16:56:40.962063+00:00",
+      "earlier_checks": 4,
+      "links": [
+       "https://accessibilite.canada.ca/enonce-accessibilite"
+      ]
+     },
+     {
+      "url": "https://accessibilite.canada.ca/?wbdisable=true",
+      "host": "accessibilite.canada.ca",
+      "country_code": "CANADA",
+      "country": "Canada",
+      "scanned_at": "2026-11-21T16:56:42.079074+00:00",
+      "earlier_checks": 4,
+      "links": [
+       "https://accessibilite.canada.ca/enonce-accessibilite"
+      ]
+     },
+     {
+      "url": "https://accessibilite.canada.ca/elaboration-normes-accessibilite/resume-de-la-norme-can-asc-112024-rev-2025-lemploi",
+      "host": "accessibilite.canada.ca",
+      "country_code": "CANADA",
+      "country": "Canada",
+      "scanned_at": "2026-11-21T16:56:43.231313+00:00",
+      "earlier_checks": 4,
+      "links": [
+       "https://accessibilite.canada.ca/enonce-accessibilite"
+      ]
+     },
+     {
+      "url": "https://accessible.canada.ca/",
+      "host": "accessible.canada.ca",
+      "country_code": "CANADA",
+      "country": "Canada",
+      "scanned_at": "2026-11-21T16:56:46.073873+00:00",
+      "earlier_checks": 4,
+      "links": [
+       "https://accessible.canada.ca/accessibility-statement"
+      ]
+     },
+     {
+      "url": "https://accessible.canada.ca/?wbdisable=true",
+      "host": "accessible.canada.ca",
+      "country_code": "CANADA",
+      "country": "Canada",
+      "scanned_at": "2026-11-21T16:56:47.177085+00:00",
+      "earlier_checks": 4,
+      "links": [
+       "https://accessible.canada.ca/accessibility-statement"
+      ]
+     },
+     {
+      "url": "https://accessible.canada.ca/creating-accessibility-standards/summary-can-asc-112024-rev-2025-employment",
+      "host": "accessible.canada.ca",
+      "country_code": "CANADA",
+      "country": "Canada",
+      "scanned_at": "2026-11-21T16:56:48.343122+00:00",
+      "earlier_checks": 4,
+      "links": [
+       "https://accessible.canada.ca/accessibility-statement",
+       "https://www.linkedin.com/company/accessibility-standards-canada/"
+      ]
+     },
+     {
+      "url": "https://bdp.parl.ca/",
+      "host": "bdp.parl.ca",
+      "country_code": "CANADA",
+      "country": "Canada",
+      "scanned_at": "2026-11-21T17:02:06.353409+00:00",
+      "earlier_checks": 4,
+      "links": [
+       "https://bdp.parl.ca/fr/apropos/accessibilite"
+      ]
+     },
+     {
+      "url": "https://bdp.parl.ca/sites/PublicWebsite/default/en_CA?",
+      "host": "bdp.parl.ca",
+      "country_code": "CANADA",
+      "country": "Canada",
+      "scanned_at": "2026-11-21T17:02:07.791829+00:00",
+      "earlier_checks": 4,
+      "links": [
+       "https://bdp.parl.ca/en/about/accessibility"
+      ]
+     },
+     {
+      "url": "https://bdp.parl.ca/sites/PublicWebsite/default/fr_CA/ResearchPublications/LegislativeSummaries",
+      "host": "bdp.parl.ca",
+      "country_code": "CANADA",
+      "country": "Canada",
+      "scanned_at": "2026-11-21T17:02:09.186704+00:00",
+      "earlier_checks": 4,
+      "links": [
+       "https://bdp.parl.ca/fr/apropos/accessibilite"
+      ]
+     },
+     {
+      "url": "https://domseniora.opole.pl/category/nasze-wydarzenia/",
+      "host": "domseniora.opole.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-18T07:57:58.760450+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://domseniora.opole.pl/deklaracja-dostepnosci"
+      ]
+     },
+     {
+      "url": "https://drabinianka.rdk.rzeszow.pl/",
+      "host": "drabinianka.rdk.rzeszow.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-18T07:59:48.807300+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://rdk.rzeszow.pl/deklaracja-dostepnosci/"
+      ]
+     },
+     {
+      "url": "https://drabinianka.rdk.rzeszow.pl/wynik-akcji-pomocy-styczen-z-koleda-rzeszowski-dom-kultury-dla-alicji/",
+      "host": "drabinianka.rdk.rzeszow.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-18T07:59:50.803773+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://rdk.rzeszow.pl/deklaracja-dostepnosci/"
+      ]
+     },
+     {
+      "url": "https://esluzby.bratislava.sk/",
+      "host": "esluzby.bratislava.sk",
+      "country_code": "SLOVAKIA",
+      "country": "Slovakia",
+      "scanned_at": "2026-11-22T16:40:00.065120+00:00",
+      "earlier_checks": 4,
+      "links": [
+       "https://bratislava.sk/vyhlasenie-o-pristupnosti"
+      ]
+     },
+     {
+      "url": "https://esluzby.bratislava.sk/info",
+      "host": "esluzby.bratislava.sk",
+      "country_code": "SLOVAKIA",
+      "country": "Slovakia",
+      "scanned_at": "2026-11-22T16:40:02.127899+00:00",
+      "earlier_checks": 4,
+      "links": [
+       "https://bratislava.sk/vyhlasenie-o-pristupnosti"
+      ]
+     },
+     {
+      "url": "https://esluzby.bratislava.sk/info?LifeSituationGroupIDs=OS02",
+      "host": "esluzby.bratislava.sk",
+      "country_code": "SLOVAKIA",
+      "country": "Slovakia",
+      "scanned_at": "2026-11-22T16:40:04.184430+00:00",
+      "earlier_checks": 4,
+      "links": [
+       "https://bratislava.sk/vyhlasenie-o-pristupnosti"
+      ]
+     },
+     {
+      "url": "https://gestion-candidatures.valdemarne.fr/",
+      "host": "gestion-candidatures.valdemarne.fr",
+      "country_code": "FRANCE",
+      "country": "France",
+      "scanned_at": "2026-11-19T17:45:51.997728+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://gestion-candidatures.valdemarne.fr/static/digital-accessibility"
+      ]
+     },
+     {
+      "url": "https://gestion-candidatures.valdemarne.fr/7409/1/cuisinier-f-h?backlink=search",
+      "host": "gestion-candidatures.valdemarne.fr",
+      "country_code": "FRANCE",
+      "country": "France",
+      "scanned_at": "2026-11-19T17:45:54.791545+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://gestion-candidatures.valdemarne.fr/static/digital-accessibility"
+      ]
+     },
+     {
+      "url": "https://gestion-candidatures.valdemarne.fr/search/7-stage-apprentissage",
+      "host": "gestion-candidatures.valdemarne.fr",
+      "country_code": "FRANCE",
+      "country": "France",
+      "scanned_at": "2026-11-19T17:45:56.751244+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://gestion-candidatures.valdemarne.fr/static/digital-accessibility"
+      ]
+     },
+     {
+      "url": "https://gpcm.comune.venezia.it/",
+      "host": "gpcm.comune.venezia.it",
+      "country_code": "ITALY",
+      "country": "Italy",
+      "scanned_at": "2026-11-19T07:53:18.286326+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://form.agid.gov.it/view/3f96c12a-1c1f-40f5-8122-0a1708c7d276"
+      ]
+     },
+     {
+      "url": "https://graduates.nhs.uk/",
+      "host": "graduates.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-19T08:05:28.392261+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://graduates.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://graduates.nhs.uk/scheme/",
+      "host": "graduates.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-19T08:05:30.822233+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://graduates.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://graduates.nhs.uk/trainee-stories/",
+      "host": "graduates.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-19T08:05:33.167846+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://graduates.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://granty.uek.krakow.pl/",
+      "host": "granty.uek.krakow.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-21T07:51:00.723417+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://granty.uek.krakow.pl/czasowa-niedostepnosc-dzialu-projektow-miedzynarodowych/"
+      ]
+     },
+     {
+      "url": "https://headstoneroadsurgery.nhs.uk/",
+      "host": "headstoneroadsurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-20T17:56:58.006958+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://headstoneroadsurgery.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://headstoneroadsurgery.nhs.uk/cookie-information/",
+      "host": "headstoneroadsurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-20T17:56:59.394555+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://headstoneroadsurgery.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://headstoneroadsurgery.nhs.uk/services/appointments/",
+      "host": "headstoneroadsurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-20T17:57:01.022845+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://headstoneroadsurgery.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://heatonroadsurgery.nhs.uk/",
+      "host": "heatonroadsurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-20T17:59:18.885504+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://heatonroadsurgery.nhs.uk/nhs-services/about/policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://heatonroadsurgery.nhs.uk/cookie-information/",
+      "host": "heatonroadsurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-20T17:59:20.130184+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://heatonroadsurgery.nhs.uk/nhs-services/about/policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://heatonroadsurgery.nhs.uk/prevention/",
+      "host": "heatonroadsurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-20T17:59:21.865619+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://heatonroadsurgery.nhs.uk/nhs-services/about/policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://hmgbrand.gcs.civilservice.gov.uk/",
+      "host": "hmgbrand.gcs.civilservice.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:22:33.575460+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://www.brand.gov.uk/accessibility-statement/"
+      ]
+     },
+     {
+      "url": "https://hmgbrand.gcs.civilservice.gov.uk/register/",
+      "host": "hmgbrand.gcs.civilservice.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:22:35.765496+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://www.brand.gov.uk/accessibility-statement/"
+      ]
+     },
+     {
+      "url": "https://honours.cabinetoffice.gov.uk/",
+      "host": "honours.cabinetoffice.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:24:19.093671+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://honours.cabinetoffice.gov.uk/accessibility-statement/"
+      ]
+     },
+     {
+      "url": "https://honours.cabinetoffice.gov.uk/cookies-notice/",
+      "host": "honours.cabinetoffice.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:24:20.356518+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://honours.cabinetoffice.gov.uk/accessibility-statement/"
+      ]
+     },
+     {
+      "url": "https://honours.cabinetoffice.gov.uk/how-to-nominate/",
+      "host": "honours.cabinetoffice.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:24:21.628229+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://honours.cabinetoffice.gov.uk/accessibility-statement/"
+      ]
+     },
+     {
+      "url": "https://hsm.manchester.gov.uk/",
+      "host": "hsm.manchester.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:30:57.626679+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://hsm.manchester.gov.uk/accessibility.page"
+      ]
+     },
+     {
+      "url": "https://hsm.manchester.gov.uk/kb5/manchester/directory/cookies.page",
+      "host": "hsm.manchester.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:31:00.744221+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://hsm.manchester.gov.uk/kb5/manchester/directory/accessibility.page"
+      ]
+     },
+     {
+      "url": "https://hsm.manchester.gov.uk/kb5/manchester/directory/directory.page?directorychannel=3-3-7",
+      "host": "hsm.manchester.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:31:02.981630+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://hsm.manchester.gov.uk/kb5/manchester/directory/accessibility.page"
+      ]
+     },
+     {
+      "url": "https://hucclecotepc.gov.uk/",
+      "host": "hucclecotepc.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:31:20.060512+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://hucclecotepc.gov.uk/accessibility-statement/"
+      ]
+     },
+     {
+      "url": "https://hucclecotepc.gov.uk/consultation-future-of-gloucestershire/",
+      "host": "hucclecotepc.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:31:22.456214+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://hucclecotepc.gov.uk/accessibility-statement/"
+      ]
+     },
+     {
+      "url": "https://hucclecotepc.gov.uk/planning-applications/",
+      "host": "hucclecotepc.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:31:24.593465+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://hucclecotepc.gov.uk/accessibility-statement/"
+      ]
+     },
+     {
+      "url": "https://info.cambridgeshire.gov.uk/",
+      "host": "info.cambridgeshire.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:36:52.387749+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://info.cambridgeshire.gov.uk/accessibility.page"
+      ]
+     },
+     {
+      "url": "https://info.cambridgeshire.gov.uk/kb5/cambridgeshire/directory/cookies.page",
+      "host": "info.cambridgeshire.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:36:54.496039+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://info.cambridgeshire.gov.uk/kb5/cambridgeshire/directory/accessibility.page"
+      ]
+     },
+     {
+      "url": "https://info.cambridgeshire.gov.uk/kb5/cambridgeshire/directory/family.page?camfamilychannel=0",
+      "host": "info.cambridgeshire.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:36:55.863221+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://info.cambridgeshire.gov.uk/kb5/cambridgeshire/directory/accessibility.page"
+      ]
+     },
+     {
+      "url": "https://infolink.suffolk.gov.uk/",
+      "host": "infolink.suffolk.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:38:01.856870+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://infolink.suffolk.gov.uk/accessibility.page"
+      ]
+     },
+     {
+      "url": "https://infolink.suffolk.gov.uk/kb5/suffolk/infolink/accesssuffolk.page?accesssuffolkchannel=0",
+      "host": "infolink.suffolk.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:38:04.565518+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://infolink.suffolk.gov.uk/kb5/suffolk/infolink/accessibility.page"
+      ]
+     },
+     {
+      "url": "https://infolink.suffolk.gov.uk/kb5/suffolk/infolink/privacy_policy.page",
+      "host": "infolink.suffolk.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:38:06.993570+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://infolink.suffolk.gov.uk/kb5/suffolk/infolink/accessibility.page"
+      ]
+     },
+     {
+      "url": "https://informationdirectory.redcar-cleveland.gov.uk/",
+      "host": "informationdirectory.redcar-cleveland.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:38:08.560012+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://www.redcar-cleveland.gov.uk/site-terms/accessibility"
+      ]
+     },
+     {
+      "url": "https://informationdirectory.redcar-cleveland.gov.uk/adults",
+      "host": "informationdirectory.redcar-cleveland.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:38:10.240066+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://www.redcar-cleveland.gov.uk/site-terms/accessibility"
+      ]
+     },
+     {
+      "url": "https://informationdirectory.redcar-cleveland.gov.uk/search-support-groups-and-activities",
+      "host": "informationdirectory.redcar-cleveland.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:38:11.698958+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://www.redcar-cleveland.gov.uk/site-terms/accessibility"
+      ]
+     },
+     {
+      "url": "https://inventari-san.cultura.gov.it/",
+      "host": "inventari-san.cultura.gov.it",
+      "country_code": "ITALY",
+      "country": "Italy",
+      "scanned_at": "2026-11-20T08:16:16.644780+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://inventari-san.cultura.gov.it/accessibilita"
+      ]
+     },
+     {
+      "url": "https://inventari-san.cultura.gov.it/inventari",
+      "host": "inventari-san.cultura.gov.it",
+      "country_code": "ITALY",
+      "country": "Italy",
+      "scanned_at": "2026-11-20T08:16:21.192985+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://inventari-san.cultura.gov.it/accessibilita"
+      ]
+     },
+     {
+      "url": "https://jobs.haringey.gov.uk/",
+      "host": "jobs.haringey.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:45:13.539307+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://jobs.haringey.gov.uk/accessibility-statement"
+      ]
+     },
+     {
+      "url": "https://jobs.haringey.gov.uk/about-haringey",
+      "host": "jobs.haringey.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:45:14.788347+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://jobs.haringey.gov.uk/accessibility-statement"
+      ]
+     },
+     {
+      "url": "https://jobs.hillingdon.gov.uk/",
+      "host": "jobs.hillingdon.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:45:29.853264+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://jobs.hillingdon.gov.uk/1377/principal-accessibility-officer.html"
+      ]
+     },
+     {
+      "url": "https://kariera.justice.cz/",
+      "host": "kariera.justice.cz",
+      "country_code": "CZECHIA",
+      "country": "Czechia",
+      "scanned_at": "2026-11-20T17:19:32.749042+00:00",
+      "earlier_checks": 4,
+      "links": [
+       "https://msp.gov.cz/prohlaseni-o-pristupnosti"
+      ]
+     },
+     {
+      "url": "https://kariera.justice.cz/volne-pozice",
+      "host": "kariera.justice.cz",
+      "country_code": "CZECHIA",
+      "country": "Czechia",
+      "scanned_at": "2026-11-20T17:19:35.473381+00:00",
+      "earlier_checks": 4,
+      "links": [
+       "https://msp.gov.cz/prohlaseni-o-pristupnosti"
+      ]
+     },
+     {
+      "url": "https://kimberley-tc.gov.uk/",
+      "host": "kimberley-tc.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:53:27.574715+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://kimberley-tc.gov.uk/accessibility-statement/"
+      ]
+     },
+     {
+      "url": "https://kimberley-tc.gov.uk/contact-us/",
+      "host": "kimberley-tc.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:53:30.090355+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://kimberley-tc.gov.uk/accessibility-statement/"
+      ]
+     },
+     {
+      "url": "https://kimberley-tc.gov.uk/road-closures-for-the-kimberley-food-festival-sunday-13th-july-2025/",
+      "host": "kimberley-tc.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:53:33.814734+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://kimberley-tc.gov.uk/accessibility-statement/"
+      ]
+     },
+     {
+      "url": "https://konto.bratislava.sk/",
+      "host": "konto.bratislava.sk",
+      "country_code": "SLOVAKIA",
+      "country": "Slovakia",
+      "scanned_at": "2026-11-22T16:41:21.119111+00:00",
+      "earlier_checks": 4,
+      "links": [
+       "https://bratislava.sk/vyhlasenie-o-pristupnosti"
+      ]
+     },
+     {
+      "url": "https://konto.bratislava.sk/mestske-sluzby",
+      "host": "konto.bratislava.sk",
+      "country_code": "SLOVAKIA",
+      "country": "Slovakia",
+      "scanned_at": "2026-11-22T16:41:25.833186+00:00",
+      "earlier_checks": 4,
+      "links": [
+       "https://bratislava.sk/vyhlasenie-o-pristupnosti"
+      ]
+     },
+     {
+      "url": "https://laboratories.newcastle-hospitals.nhs.uk/",
+      "host": "laboratories.newcastle-hospitals.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:55:04.185658+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://laboratories.newcastle-hospitals.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://laboratories.newcastle-hospitals.nhs.uk/cookies",
+      "host": "laboratories.newcastle-hospitals.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:55:05.549773+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://laboratories.newcastle-hospitals.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://laboratories.newcastle-hospitals.nhs.uk/services/",
+      "host": "laboratories.newcastle-hospitals.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:55:07.658630+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://laboratories.newcastle-hospitals.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://leicester.gov.uk/",
+      "host": "leicester.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:59:21.142979+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://leicester.gov.uk/accessibility-statement"
+      ]
+     },
+     {
+      "url": "https://leicester.gov.uk/atoz/",
+      "host": "leicester.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:59:22.721707+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://leicester.gov.uk/accessibility-statement"
+      ]
+     },
+     {
+      "url": "https://lerwickgppractice.scot.nhs.uk/",
+      "host": "lerwickgppractice.scot.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T08:01:10.468300+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://lerwickgppractice.scot.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://lerwickgppractice.scot.nhs.uk/cookie-information/",
+      "host": "lerwickgppractice.scot.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T08:01:12.024319+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://lerwickgppractice.scot.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://lesweb.brno.cz/",
+      "host": "lesweb.brno.cz",
+      "country_code": "CZECHIA",
+      "country": "Czechia",
+      "scanned_at": "2026-11-20T17:22:53.559579+00:00",
+      "earlier_checks": 4,
+      "links": [
+       "https://www.brno.cz/w/prohlaseni-o-pristupnosti"
+      ]
+     },
+     {
+      "url": "https://lesweb.brno.cz/clanek/mapy",
+      "host": "lesweb.brno.cz",
+      "country_code": "CZECHIA",
+      "country": "Czechia",
+      "scanned_at": "2026-11-20T17:22:55.421715+00:00",
+      "earlier_checks": 4,
+      "links": [
+       "https://www.brno.cz/w/prohlaseni-o-pristupnosti"
+      ]
+     },
+     {
+      "url": "https://life.southglos.gov.uk/",
+      "host": "life.southglos.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T08:11:06.890779+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://life.southglos.gov.uk/accessibility.page"
+      ]
+     },
+     {
+      "url": "https://life.southglos.gov.uk/kb5/southglos/directory/advice.page?id=tYixnwXj4qM",
+      "host": "life.southglos.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T08:11:09.172703+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://life.southglos.gov.uk/kb5/southglos/directory/accessibility.page"
+      ]
+     },
+     {
+      "url": "https://lombardiafacile.regione.lombardia.it/",
+      "host": "lombardiafacile.regione.lombardia.it",
+      "country_code": "ITALY",
+      "country": "Italy",
+      "scanned_at": "2026-11-20T08:24:33.500379+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://form.agid.gov.it/r_lombar/www_regione_lombardia_it/dichiarazione"
+      ]
+     },
+     {
+      "url": "https://mpsr.sk/",
+      "host": "mpsr.sk",
+      "country_code": "SLOVAKIA",
+      "country": "Slovakia",
+      "scanned_at": "2026-11-22T16:54:28.956993+00:00",
+      "earlier_checks": 4,
+      "links": [
+       "https://mpsr.sk/sk/vyhlasenie-o-pristupnosti"
+      ]
+     },
+     {
+      "url": "https://primatorka.brno.cz/",
+      "host": "primatorka.brno.cz",
+      "country_code": "CZECHIA",
+      "country": "Czechia",
+      "scanned_at": "2026-11-20T17:32:41.252120+00:00",
+      "earlier_checks": 4,
+      "links": [
+       "https://www.brno.cz/w/prohlaseni-o-pristupnosti"
+      ]
+     },
+     {
+      "url": "https://primatorka.brno.cz/dotazy-primatorce/",
+      "host": "primatorka.brno.cz",
+      "country_code": "CZECHIA",
+      "country": "Czechia",
+      "scanned_at": "2026-11-20T17:32:45.043570+00:00",
+      "earlier_checks": 4,
+      "links": [
+       "https://www.brno.cz/w/prohlaseni-o-pristupnosti"
+      ]
+     },
+     {
+      "url": "https://primatorka.brno.cz/galerie-fotografii/",
+      "host": "primatorka.brno.cz",
+      "country_code": "CZECHIA",
+      "country": "Czechia",
+      "scanned_at": "2026-11-20T17:32:48.044273+00:00",
+      "earlier_checks": 4,
+      "links": [
+       "https://www.brno.cz/w/prohlaseni-o-pristupnosti"
+      ]
+     },
+     {
+      "url": "https://www.bremen.de/",
+      "host": "bremen.de",
+      "country_code": "GERMANY",
+      "country": "Germany",
+      "scanned_at": "2026-11-19T18:19:13.099619+00:00",
+      "earlier_checks": 3,
+      "links": [
+       "https://www.bremen.de/erklaerung-zur-barrierefreiheit"
+      ]
+     },
+     {
+      "url": "https://www.fma.gv.at/",
+      "host": "fma.gv.at",
+      "country_code": "AUSTRIA",
+      "country": "Austria",
+      "scanned_at": "2026-11-20T07:50:57.420859+00:00",
+      "earlier_checks": 4,
+      "links": [
+       "https://www.fma.gv.at/erklaerung-zur-barrierefreiheit/"
+      ]
+     },
+     {
+      "url": "https://www.larnaka.org.cy/en/",
+      "host": "larnaka.org.cy",
+      "country_code": "REPUBLIC_OF_CYPRUS",
+      "country": "Cyprus",
+      "scanned_at": "2026-11-22T16:37:06.653783+00:00",
+      "earlier_checks": 4,
+      "links": [
+       "https://www.larnaka.org.cy/en/projects/co-funded-projects-by-the-european-structural-and-investment-funds-2014-2020/road-redevelopment-and-accessibility-improvements-for-people-with-disabilities-in-central-larnaka/",
+       "https://www.larnaka.org.cy/en/projects/structural-projects/redevelopment-of-the-square-and-facade-improvement-in-zouchouri-redevelopment-of-streets-and-accessibility-for-people-with-disabilities-in-larnacas-urban-center-phase-b/"
+      ]
+     },
+     {
+      "url": "https://www.nova-gorica.si/",
+      "host": "nova-gorica.si",
+      "country_code": "SLOVENIA",
+      "country": "Slovenia",
+      "scanned_at": "2026-11-22T17:00:59.993284+00:00",
+      "earlier_checks": 4,
+      "links": [
+       "https://www.nova-gorica.si/sl/izjava-o-dostopnosti/"
+      ]
+     },
+     {
+      "url": "https://www.nova-gorica.si/sl/novice/za-16-milijonov-evrov-investicij-v-letosnjem-letu/",
+      "host": "nova-gorica.si",
+      "country_code": "SLOVENIA",
+      "country": "Slovenia",
+      "scanned_at": "2026-11-22T17:01:01.377641+00:00",
+      "earlier_checks": 4,
+      "links": [
+       "https://www.nova-gorica.si/sl/izjava-o-dostopnosti/"
+      ]
+     },
+     {
+      "url": "https://www.szkola31.torun.pl/",
+      "host": "szkola31.torun.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-16T19:16:01.319650+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.szkola31.torun.pl/index.php/deklaracja-dostepnosci"
+      ]
+     },
+     {
+      "url": "https://www.szkola31.torun.pl/index.php",
+      "host": "szkola31.torun.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-16T19:16:04.218511+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.szkola31.torun.pl/index.php/deklaracja-dostepnosci"
+      ]
+     },
+     {
+      "url": "https://www.talkeclinic.nhs.uk/",
+      "host": "talkeclinic.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:12:57.641391+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.talkeclinic.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.talkeclinic.nhs.uk/cookie-information/",
+      "host": "talkeclinic.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:12:59.281501+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.talkeclinic.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.talkeclinic.nhs.uk/services/appointments/",
+      "host": "talkeclinic.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:13:00.925223+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.talkeclinic.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.templesowerbymedicalpractice.nhs.uk/",
+      "host": "templesowerbymedicalpractice.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:15:23.352728+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.templesowerbymedicalpractice.nhs.uk/about-section/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.templesowerbymedicalpractice.nhs.uk/cookie-information/",
+      "host": "templesowerbymedicalpractice.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:15:24.835351+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.templesowerbymedicalpractice.nhs.uk/about-section/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.tennantstreetmedicalpractice.nhs.uk/",
+      "host": "tennantstreetmedicalpractice.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:15:30.301038+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.tennantstreetmedicalpractice.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.tennantstreetmedicalpractice.nhs.uk/alerts/harbour-supporting-those-affected-by-domestic-abuse/",
+      "host": "tennantstreetmedicalpractice.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:15:31.703871+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.tennantstreetmedicalpractice.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.tennantstreetmedicalpractice.nhs.uk/cookie-information/",
+      "host": "tennantstreetmedicalpractice.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:15:33.144436+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.tennantstreetmedicalpractice.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.tewv.nhs.uk/",
+      "host": "tewv.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:15:49.057980+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.tewv.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.tewv.nhs.uk/cookies",
+      "host": "tewv.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:15:50.436992+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.tewv.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.tewv.nhs.uk/services/mental-health-support/",
+      "host": "tewv.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:15:51.984549+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.tewv.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.thamesvalley-pcc.gov.uk/",
+      "host": "thamesvalley-pcc.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:15:53.350674+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.thamesvalley-pcc.gov.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.thamesvalley-pcc.gov.uk/contact-us/",
+      "host": "thamesvalley-pcc.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:15:55.394320+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.thamesvalley-pcc.gov.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.thamesvalley-pcc.gov.uk/news/policing-teams-tackle-dangerous-anti-social-driving/",
+      "host": "thamesvalley-pcc.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:15:57.062417+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.thamesvalley-pcc.gov.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.thanet.gov.uk/",
+      "host": "thanet.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:16:06.039519+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.thanet.gov.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.thanet.gov.uk/info-pages/report-council-tax-fraud/",
+      "host": "thanet.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:16:08.309325+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.thanet.gov.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.thanet.gov.uk/online-services/your-collection-day/",
+      "host": "thanet.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:16:09.977437+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.thanet.gov.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.thealexandrapractice.nhs.uk/",
+      "host": "thealexandrapractice.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:16:17.024216+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.thealexandrapractice.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.thealexandrapractice.nhs.uk/cookie-information/",
+      "host": "thealexandrapractice.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:16:18.457696+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.thealexandrapractice.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.thealexandrapractice.nhs.uk/services/contact-us/",
+      "host": "thealexandrapractice.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:16:19.968940+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.thealexandrapractice.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.theansteysurgery.nhs.uk/",
+      "host": "theansteysurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:16:24.873986+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.theansteysurgery.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.theansteysurgery.nhs.uk/cookie-information/",
+      "host": "theansteysurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:16:26.287001+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.theansteysurgery.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.thecommunitypractice-canveyisland.nhs.uk/opening-times",
+      "host": "thecommunitypractice-canveyisland.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:17:03.507402+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.thecommunitypractice-canveyisland.nhs.uk/FooterLinks/Accessibility"
+      ]
+     },
+     {
+      "url": "https://www.thedicconsongrouppracticewigan.nhs.uk/",
+      "host": "thedicconsongrouppracticewigan.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:17:22.483371+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.thedicconsongrouppracticewigan.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.thedicconsongrouppracticewigan.nhs.uk/cookie-information/",
+      "host": "thedicconsongrouppracticewigan.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:17:23.889703+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.thedicconsongrouppracticewigan.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.thedovecotsurgery.nhs.uk/",
+      "host": "thedovecotsurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:17:25.350983+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.thedovecotsurgery.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.thedovecotsurgery.nhs.uk/cookie-information/",
+      "host": "thedovecotsurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:17:26.807510+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.thedovecotsurgery.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.thedovecotsurgery.nhs.uk/services/online-services/",
+      "host": "thedovecotsurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:17:28.274034+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.thedovecotsurgery.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.thedovevalleypractice.nhs.uk/",
+      "host": "thedovevalleypractice.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:17:29.695494+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.thedovevalleypractice.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.thedovevalleypractice.nhs.uk/cookie-information/",
+      "host": "thedovevalleypractice.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:17:32.429619+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.thedovevalleypractice.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.thegrangepracticeramsgate.nhs.uk/",
+      "host": "thegrangepracticeramsgate.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:18:19.079769+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.thegrangepracticeramsgate.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.thegrangepracticeramsgate.nhs.uk/cookie-information/",
+      "host": "thegrangepracticeramsgate.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:18:20.487919+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.thegrangepracticeramsgate.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.thegreenpracticekhc.scot.nhs.uk/",
+      "host": "thegreenpracticekhc.scot.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:18:27.504049+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.thegreenpracticekhc.scot.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.thegreenpracticekhc.scot.nhs.uk/cookie-information/",
+      "host": "thegreenpracticekhc.scot.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:18:29.091612+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.thegreenpracticekhc.scot.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.thehillsurgery.nhs.uk/",
+      "host": "thehillsurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:18:51.336719+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.thehillsurgery.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.thehillsurgery.nhs.uk/cookie-information/",
+      "host": "thehillsurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:18:52.716996+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.thehillsurgery.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.thehillsurgery.nhs.uk/services/appointments/",
+      "host": "thehillsurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:18:54.417305+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.thehillsurgery.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.thepumphousesurgery.nhs.uk/",
+      "host": "thepumphousesurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:21:49.225353+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.thepumphousesurgery.nhs.uk/about-section/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.thepumphousesurgery.nhs.uk/cookie-information/",
+      "host": "thepumphousesurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:21:52.422799+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.thepumphousesurgery.nhs.uk/about-section/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.theriversidesurgeryhighwycombe.nhs.uk/",
+      "host": "theriversidesurgeryhighwycombe.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:22:18.721269+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.theriversidesurgeryhighwycombe.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.theriversidesurgeryhighwycombe.nhs.uk/cookie-information/",
+      "host": "theriversidesurgeryhighwycombe.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:22:21.596648+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.theriversidesurgeryhighwycombe.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.thorndike.nhs.uk/",
+      "host": "thorndike.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:24:27.856927+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.thorndike.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.thorndike.nhs.uk/cookie-information/",
+      "host": "thorndike.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:24:29.254452+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.thorndike.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.thorndike.nhs.uk/services/appointments/",
+      "host": "thorndike.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:24:30.785052+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.thorndike.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.throckleyprimarycare.nhs.uk/",
+      "host": "throckleyprimarycare.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:25:01.894936+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.throckleyprimarycare.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.throckleyprimarycare.nhs.uk/cookie-information/",
+      "host": "throckleyprimarycare.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:25:03.279576+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.throckleyprimarycare.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.tredegarpractice.nhs.uk/",
+      "host": "tredegarpractice.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:28:00.923888+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.tredegarpractice.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.tredegarpractice.nhs.uk/cookie-information/",
+      "host": "tredegarpractice.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:28:02.431534+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.tredegarpractice.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.tredegarpractice.nhs.uk/services/repeat-prescriptions/",
+      "host": "tredegarpractice.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:28:03.930073+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.tredegarpractice.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.treetonmedicalcentre.nhs.uk/",
+      "host": "treetonmedicalcentre.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:28:05.704778+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.treetonmedicalcentre.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.treetonmedicalcentre.nhs.uk/cookie-information/",
+      "host": "treetonmedicalcentre.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:28:07.120319+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.treetonmedicalcentre.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.tri-linkssurgery.nhs.uk/",
+      "host": "tri-linkssurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:28:19.905604+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.tri-linkssurgery.nhs.uk/about-section/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.tri-linkssurgery.nhs.uk/cookie-information/",
+      "host": "tri-linkssurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:28:21.342372+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.tri-linkssurgery.nhs.uk/about-section/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.uhliverpool.nhs.uk/",
+      "host": "uhliverpool.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:29:54.099501+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.uhliverpool.nhs.uk/accessibility-statement"
+      ]
+     },
+     {
+      "url": "https://www.uhliverpool.nhs.uk/privacy-policy",
+      "host": "uhliverpool.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:29:57.206527+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.uhliverpool.nhs.uk/accessibility-statement"
+      ]
+     },
+     {
+      "url": "https://www.uhsussex.nhs.uk/",
+      "host": "uhsussex.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:30:17.923447+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.uhsussex.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.uhsussex.nhs.uk/hospitals/worthing-hospital/",
+      "host": "uhsussex.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:30:19.313266+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.uhsussex.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.uhsussex.nhs.uk/privacy/cookies/",
+      "host": "uhsussex.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:30:21.184501+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.uhsussex.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.ulh.nhs.uk/",
+      "host": "ulh.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:30:41.257232+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.ulh.nhs.uk/support/",
+       "https://www.ulh.nhs.uk/support/accessibility-statement/"
+      ]
+     },
+     {
+      "url": "https://www.ulh.nhs.uk/cookies/",
+      "host": "ulh.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:30:42.518144+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.ulh.nhs.uk/support/",
+       "https://www.ulh.nhs.uk/support/accessibility-statement/"
+      ]
+     },
+     {
+      "url": "https://www.ulh.nhs.uk/patients/outpatients/ive-been-referred-to-ulht-for-an-outpatient-appointment-what-happens-next/",
+      "host": "ulh.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:30:43.954352+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.ulh.nhs.uk/support/",
+       "https://www.ulh.nhs.uk/support/accessibility-statement/"
+      ]
+     },
+     {
+      "url": "https://www.unicitymedicalcentre.nhs.uk/",
+      "host": "unicitymedicalcentre.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:30:45.702536+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.unicitymedicalcentre.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.unicitymedicalcentre.nhs.uk/alerts/important-information-for-registering-with-uni-city-medical-centre/",
+      "host": "unicitymedicalcentre.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:30:47.813656+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.unicitymedicalcentre.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.unicitymedicalcentre.nhs.uk/cookie-information/",
+      "host": "unicitymedicalcentre.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:30:49.298506+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.unicitymedicalcentre.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.uplandsmumbles.wales.nhs.uk/",
+      "host": "uplandsmumbles.wales.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:31:00.944282+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.uplandsmumbles.wales.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.uplandsmumbles.wales.nhs.uk/cookie-information/",
+      "host": "uplandsmumbles.wales.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:31:02.341866+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.uplandsmumbles.wales.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.uplandsmumbles.wales.nhs.uk/patient-info/practice-boundary/",
+      "host": "uplandsmumbles.wales.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:31:03.951048+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.uplandsmumbles.wales.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.ventnortowncouncil.gov.uk/",
+      "host": "ventnortowncouncil.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:33:41.864814+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.ventnortowncouncil.gov.uk/accessibility-statement/"
+      ]
+     },
+     {
+      "url": "https://www.ventnortowncouncil.gov.uk/ventnor-park-included-in-your-loo-could-save-you-project/",
+      "host": "ventnortowncouncil.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:33:43.547976+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.ventnortowncouncil.gov.uk/accessibility-statement/"
+      ]
+     },
+     {
+      "url": "https://www.ventnortowncouncil.gov.uk/your-council/",
+      "host": "ventnortowncouncil.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:33:44.922241+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.ventnortowncouncil.gov.uk/accessibility-statement/"
+      ]
+     },
+     {
+      "url": "https://www.walsgravehealthcentre.nhs.uk/",
+      "host": "walsgravehealthcentre.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:36:35.673032+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.walsgravehealthcentre.nhs.uk/about-section/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.walsgravehealthcentre.nhs.uk/cookie-information/",
+      "host": "walsgravehealthcentre.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:36:37.748265+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.walsgravehealthcentre.nhs.uk/about-section/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.walsgravehealthcentre.nhs.uk/services/appointments/",
+      "host": "walsgravehealthcentre.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:36:39.405571+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.walsgravehealthcentre.nhs.uk/about-section/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.wappinggrouppractice.nhs.uk/",
+      "host": "wappinggrouppractice.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:37:04.222349+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.wappinggrouppractice.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.wappinggrouppractice.nhs.uk/alerts/getubettter-app/",
+      "host": "wappinggrouppractice.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:37:05.535313+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.wappinggrouppractice.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.wappinggrouppractice.nhs.uk/cookie-information/",
+      "host": "wappinggrouppractice.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:37:07.444975+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.wappinggrouppractice.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.washwayroadmedicalcentre.nhs.uk/",
+      "host": "washwayroadmedicalcentre.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:38:38.364836+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.washwayroadmedicalcentre.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.washwayroadmedicalcentre.nhs.uk/cookie-information/",
+      "host": "washwayroadmedicalcentre.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:38:39.784880+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.washwayroadmedicalcentre.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.washwayroadmedicalcentre.nhs.uk/services/appointments/",
+      "host": "washwayroadmedicalcentre.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:38:41.683793+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.washwayroadmedicalcentre.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.wchc.nhs.uk/",
+      "host": "wchc.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:39:34.840467+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.wchc.nhs.uk/help/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.wchc.nhs.uk/careers/vacancies/",
+      "host": "wchc.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:39:36.203511+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.wchc.nhs.uk/help/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.wchc.nhs.uk/help/cookies",
+      "host": "wchc.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:39:37.835142+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.wchc.nhs.uk/help/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.weedonbec-pc.gov.uk/",
+      "host": "weedonbec-pc.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:40:00.414333+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.weedonbec-pc.gov.uk/accessibility"
+      ]
+     },
+     {
+      "url": "https://www.weedonbec-pc.gov.uk/about-the-council",
+      "host": "weedonbec-pc.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:40:03.536377+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.weedonbec-pc.gov.uk/accessibility"
+      ]
+     },
+     {
+      "url": "https://www.weedonbec-pc.gov.uk/api/cookies/handle?preferences=all&v=2",
+      "host": "weedonbec-pc.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:40:05.821131+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.weedonbec-pc.gov.uk/accessibility"
+      ]
+     },
+     {
+      "url": "https://www.wellsroadsurgery.nhs.uk/",
+      "host": "wellsroadsurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:41:29.956927+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.wellsroadsurgery.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.wellsroadsurgery.nhs.uk/cookie-information/",
+      "host": "wellsroadsurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:41:31.347294+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.wellsroadsurgery.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.wellsroadsurgery.nhs.uk/services/appointments/",
+      "host": "wellsroadsurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:41:33.257169+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.wellsroadsurgery.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.westgatesurgery.nhs.uk/",
+      "host": "westgatesurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:44:01.450788+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.westgatesurgery.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.westgatesurgery.nhs.uk/cookie-information/",
+      "host": "westgatesurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:44:02.905578+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.westgatesurgery.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.westmeonsurgery.nhs.uk/",
+      "host": "westmeonsurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:45:00.871304+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.westmeonsurgery.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.westmeonsurgery.nhs.uk/cookie-information/",
+      "host": "westmeonsurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:45:02.416000+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.westmeonsurgery.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.westmeonsurgery.nhs.uk/services/dispensary-opening-times/",
+      "host": "westmeonsurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:45:03.912830+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.westmeonsurgery.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.westmidlands-pcc.gov.uk/",
+      "host": "westmidlands-pcc.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:45:13.095295+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.westmidlands-pcc.gov.uk/accessibility-statement/"
+      ]
+     },
+     {
+      "url": "https://www.westmidlands-pcc.gov.uk/finance/",
+      "host": "westmidlands-pcc.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:45:15.565475+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.westmidlands-pcc.gov.uk/accessibility-statement/"
+      ]
+     },
+     {
+      "url": "https://www.westmidlands-pcc.gov.uk/your-commissioner/",
+      "host": "westmidlands-pcc.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:45:17.987903+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.westmidlands-pcc.gov.uk/accessibility-statement/"
+      ]
+     },
+     {
+      "url": "https://www.westropmedicalpractice.nhs.uk/",
+      "host": "westropmedicalpractice.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:46:23.884579+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.westropmedicalpractice.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.westropmedicalpractice.nhs.uk/cookie-information/",
+      "host": "westropmedicalpractice.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:46:25.139994+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.westropmedicalpractice.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.westropmedicalpractice.nhs.uk/services/contact-your-gp-surgery/",
+      "host": "westropmedicalpractice.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:46:26.593320+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.westropmedicalpractice.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.westwoodclinic.nhs.uk/",
+      "host": "westwoodclinic.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:47:04.168261+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.westwoodclinic.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.westwoodclinic.nhs.uk/cookie-information/",
+      "host": "westwoodclinic.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:47:05.591361+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.westwoodclinic.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.whalebridge.nhs.uk/",
+      "host": "whalebridge.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:47:45.396442+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.whalebridge.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.whalebridge.nhs.uk/cookie-information/",
+      "host": "whalebridge.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:47:47.550525+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.whalebridge.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.what0-18.nhs.uk/",
+      "host": "what0-18.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:47:51.262318+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.what0-18.nhs.uk/legal/accessibility"
+      ]
+     },
+     {
+      "url": "https://www.whitburnhealthcentre.scot.nhs.uk/",
+      "host": "whitburnhealthcentre.scot.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:48:12.094934+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://whitburnhealthcentre.scot.nhs.uk/about-us/practice-policies/website/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.whitburnhealthcentre.scot.nhs.uk/health-information/appointments/",
+      "host": "whitburnhealthcentre.scot.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:48:14.546511+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://whitburnhealthcentre.scot.nhs.uk/about-us/practice-policies/website/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.whitecliffsmedicalcentre.nhs.uk/",
+      "host": "whitecliffsmedicalcentre.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:48:25.958575+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.whitecliffsmedicalcentre.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.whitecliffsmedicalcentre.nhs.uk/cookie-information/",
+      "host": "whitecliffsmedicalcentre.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:48:27.376174+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.whitecliffsmedicalcentre.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.wickersleyparishcouncil.gov.uk/",
+      "host": "wickersleyparishcouncil.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:49:38.940960+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.wickersleyparishcouncil.gov.uk/accessibility-wickersley-parish"
+      ]
+     },
+     {
+      "url": "https://www.wickersleyparishcouncil.gov.uk/api/cookies/handle?preferences=all&v=2",
+      "host": "wickersleyparishcouncil.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:49:41.282873+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.wickersleyparishcouncil.gov.uk/accessibility-wickersley-parish"
+      ]
+     },
+     {
+      "url": "https://www.wickersleyparishcouncil.gov.uk/planning-apps",
+      "host": "wickersleyparishcouncil.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:49:43.755737+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.wickersleyparishcouncil.gov.uk/accessibility-wickersley-parish"
+      ]
+     },
+     {
+      "url": "https://www.willowtreepeterborough.nhs.uk/",
+      "host": "willowtreepeterborough.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:51:27.660670+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.willowtreepeterborough.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.willowtreepeterborough.nhs.uk/cookie-information/",
+      "host": "willowtreepeterborough.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:51:29.260876+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.willowtreepeterborough.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.willowtreepeterborough.nhs.uk/services/appointments/",
+      "host": "willowtreepeterborough.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:51:31.293152+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.willowtreepeterborough.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.wimbp.gorzow.pl/",
+      "host": "wimbp.gorzow.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-16T19:27:59.842679+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.wimbp.gorzow.pl/deklaracja-dostepnosci.html"
+      ]
+     },
+     {
+      "url": "https://www.wimbp.gorzow.pl/kategoria/nowsci-w-dziale-zbiorow-regionalnych/",
+      "host": "wimbp.gorzow.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-16T19:28:02.565730+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.wimbp.gorzow.pl/deklaracja-dostepnosci.html"
+      ]
+     },
+     {
+      "url": "https://www.wimbp.gorzow.pl/v-ogolnopolski-konkurs-literacki-im-jana-grossa/",
+      "host": "wimbp.gorzow.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-16T19:28:05.112050+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.wimbp.gorzow.pl/deklaracja-dostepnosci.html"
+      ]
+     },
+     {
+      "url": "https://www.witleyandmilforddrs.nhs.uk/",
+      "host": "witleyandmilforddrs.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:53:26.761314+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.witleyandmilforddrs.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.witleyandmilforddrs.nhs.uk/cookie-information/",
+      "host": "witleyandmilforddrs.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:53:29.443835+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.witleyandmilforddrs.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.wlga.gov.uk/",
+      "host": "wlga.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:53:40.034937+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.wlga.wales/accessibility-statement/"
+      ]
+     },
+     {
+      "url": "https://www.wmas.nhs.uk/",
+      "host": "wmas.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:53:42.864073+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.wmas.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.wmas.nhs.uk/cookies/",
+      "host": "wmas.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:53:44.092876+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.wmas.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.wmas.nhs.uk/work-with-us/",
+      "host": "wmas.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:53:45.321227+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.wmas.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.woodbanksurgery.nhs.uk/",
+      "host": "woodbanksurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:54:43.568789+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.woodbanksurgery.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.woodbanksurgery.nhs.uk/cookie-information/",
+      "host": "woodbanksurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:54:44.978363+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.woodbanksurgery.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.woodbanksurgery.nhs.uk/team/",
+      "host": "woodbanksurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:54:46.510866+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.woodbanksurgery.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.woodhouseparishcouncil.gov.uk/",
+      "host": "woodhouseparishcouncil.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:55:08.848302+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.woodhouseparishcouncil.gov.uk/accessibility"
+      ]
+     },
+     {
+      "url": "https://www.woodhouseparishcouncil.gov.uk/about-the-council",
+      "host": "woodhouseparishcouncil.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:55:11.071135+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.woodhouseparishcouncil.gov.uk/accessibility"
+      ]
+     },
+     {
+      "url": "https://www.woodlanddrivemedicalcentre.nhs.uk/",
+      "host": "woodlanddrivemedicalcentre.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:55:16.604990+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.woodlanddrivemedicalcentre.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.woodseatsmedicalcentre.nhs.uk/",
+      "host": "woodseatsmedicalcentre.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:56:40.218051+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.woodseatsmedicalcentre.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.woodseatsmedicalcentre.nhs.uk/cookie-information/",
+      "host": "woodseatsmedicalcentre.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:56:43.059070+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.woodseatsmedicalcentre.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.wordsworthhealthcentre.nhs.uk/",
+      "host": "wordsworthhealthcentre.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:57:29.708690+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.wordsworthhealthcentre.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.wordsworthhealthcentre.nhs.uk/alerts/from-1st-august-2025-wordsworth-health-centre-will-be-operating-a-total-triage-system/",
+      "host": "wordsworthhealthcentre.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:57:31.108873+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.wordsworthhealthcentre.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.wordsworthhealthcentre.nhs.uk/cookie-information/",
+      "host": "wordsworthhealthcentre.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:57:32.581510+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.wordsworthhealthcentre.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.wrightingtonstreetsurgery.nhs.uk/",
+      "host": "wrightingtonstreetsurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:58:12.535592+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.wrightingtonstreetsurgery.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.wrightingtonstreetsurgery.nhs.uk/cookie-information/",
+      "host": "wrightingtonstreetsurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:58:14.038896+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.wrightingtonstreetsurgery.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.yetminsterhc.nhs.uk/",
+      "host": "yetminsterhc.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:59:30.409420+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.yetminsterhc.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.yetminsterhc.nhs.uk/cookie-information/",
+      "host": "yetminsterhc.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:59:31.905256+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.yetminsterhc.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.yetminsterhc.nhs.uk/services/appointments/",
+      "host": "yetminsterhc.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:59:33.443002+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www.yetminsterhc.nhs.uk/accessibility/"
+      ]
+     },
+     {
+      "url": "https://www.zsgd.poznan.pl/",
+      "host": "zsgd.poznan.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-17T08:27:39.711551+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://zsgd.poznan.pl/deklaracja-dostepnosci/"
+      ]
+     },
+     {
+      "url": "https://www.zsgd.poznan.pl/?rCH=2",
+      "host": "zsgd.poznan.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-17T08:27:43.870084+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://zsgd.poznan.pl/deklaracja-dostepnosci/"
+      ]
+     },
+     {
+      "url": "https://www.zsgd.poznan.pl/index.php?option=com_content&view=article&id=1424:ogolnopolski-konkurs-plastyczny-moniuszko-w-piesni-i-obrazie&catid=36:konkursy-szkolne&Itemid=277",
+      "host": "zsgd.poznan.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-17T08:27:47.514079+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://zsgd.poznan.pl/deklaracja-dostepnosci/"
+      ]
+     },
+     {
+      "url": "https://www2.local.gov.uk/",
+      "host": "www2.local.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T08:01:29.702684+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www2.local.gov.uk/accessibility-statement"
+      ]
+     },
+     {
+      "url": "https://www2.local.gov.uk/about/news/english-devolution-and-community-empowerment-bill-lga-statement",
+      "host": "www2.local.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T08:01:32.151507+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://www2.local.gov.uk/accessibility-statement"
+      ]
+     },
+     {
+      "url": "https://yatetowncouncil.gov.uk/",
+      "host": "yatetowncouncil.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T08:02:42.934686+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://yatetowncouncil.gov.uk/accessibility"
+      ]
+     },
+     {
+      "url": "https://yatetowncouncil.gov.uk/about",
+      "host": "yatetowncouncil.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T08:02:44.767747+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://yatetowncouncil.gov.uk/accessibility"
+      ]
+     },
+     {
+      "url": "https://yatetowncouncil.gov.uk/yate/parks-and-open-spaces",
+      "host": "yatetowncouncil.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T08:02:48.058031+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://yatetowncouncil.gov.uk/accessibility"
+      ]
+     },
+     {
+      "url": "https://zainmedical.nhs.uk/",
+      "host": "zainmedical.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-17T08:26:06.163904+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://zainmedical.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://zainmedical.nhs.uk/cookie-information/",
+      "host": "zainmedical.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-17T08:26:07.590339+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://zainmedical.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://zainmedical.nhs.uk/services/appointments/",
+      "host": "zainmedical.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-17T08:26:09.019544+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://zainmedical.nhs.uk/about/practice-policies/accessibility/"
+      ]
+     },
+     {
+      "url": "https://zsgd.poznan.pl/",
+      "host": "zsgd.poznan.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-17T09:13:30.267115+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://zsgd.poznan.pl/deklaracja-dostepnosci/"
+      ]
+     },
+     {
+      "url": "https://zsgd.poznan.pl/index.php?option=com_content&view=article&id=1424:ogolnopolski-konkurs-plastyczny-moniuszko-w-piesni-i-obrazie&catid=36:konkursy-szkolne&Itemid=277",
+      "host": "zsgd.poznan.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-17T09:13:33.355776+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://zsgd.poznan.pl/deklaracja-dostepnosci/"
+      ]
+     },
+     {
+      "url": "https://zsgd.poznan.pl/index.php?option=com_content&view=article&id=565&Itemid=438",
+      "host": "zsgd.poznan.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-17T09:13:36.859031+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://zsgd.poznan.pl/deklaracja-dostepnosci/"
+      ]
+     },
+     {
+      "url": "https://zsogrodnik.powiatsochaczew.pl/",
+      "host": "zsogrodnik.powiatsochaczew.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-17T17:56:07.857167+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://zsogrodnik.powiatsochaczew.pl/cms/120217/deklaracja-dostepnosci"
+      ]
+     },
+     {
+      "url": "https://zsogrodnik.powiatsochaczew.pl/cms/113008/wykaz-podrecznikow-do-klasy-i",
+      "host": "zsogrodnik.powiatsochaczew.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-17T17:56:09.737038+00:00",
+      "earlier_checks": 2,
+      "links": [
+       "https://zsogrodnik.powiatsochaczew.pl/cms/120217/deklaracja-dostepnosci"
+      ]
+     }
+    ]
+   },
+   "lost": {
+    "statement": [
+     {
+      "url": "http://zs14.gorzow.pl/",
+      "host": "zs14.gorzow.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-17T09:01:00.233123+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "http://zs14.gorzow.pl/aktualnosci.html",
+      "host": "zs14.gorzow.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-17T09:01:01.949279+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "http://zs14.gorzow.pl/polityka-prywatnosci.html",
+      "host": "zs14.gorzow.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-17T09:01:03.277013+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://bibliotek.huddinge.se/",
+      "host": "bibliotek.huddinge.se",
+      "country_code": "SWEDEN",
+      "country": "Sweden",
+      "scanned_at": "2026-11-22T17:04:31.091065+00:00",
+      "earlier_checks": 4
+     },
+     {
+      "url": "https://bibliotek.huddinge.se/semesterl%C3%A4sning",
+      "host": "bibliotek.huddinge.se",
+      "country_code": "SWEDEN",
+      "country": "Sweden",
+      "scanned_at": "2026-11-22T17:04:32.918063+00:00",
+      "earlier_checks": 4
+     },
+     {
+      "url": "https://bibliotek.huddinge.se/ung-konstsalong",
+      "host": "bibliotek.huddinge.se",
+      "country_code": "SWEDEN",
+      "country": "Sweden",
+      "scanned_at": "2026-11-22T17:04:34.444266+00:00",
+      "earlier_checks": 4
+     },
+     {
+      "url": "https://bibliotek.vaxjo.se/-/sommarlovsha-1",
+      "host": "bibliotek.vaxjo.se",
+      "country_code": "SWEDEN",
+      "country": "Sweden",
+      "scanned_at": "2026-11-22T17:06:07.913224+00:00",
+      "earlier_checks": 4
+     },
+     {
+      "url": "https://dspace.uni.lodz.pl/handle/11089/11",
+      "host": "dspace.uni.lodz.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-18T08:01:11.099133+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://dspace.uni.lodz.pl/handle/11089/21361",
+      "host": "dspace.uni.lodz.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-18T08:01:12.970923+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://dspace.uni.lodz.pl:8443/handle/11089/11",
+      "host": "dspace.uni.lodz.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-18T08:01:16.517985+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://dspace.uni.lodz.pl:8443/handle/11089/21361",
+      "host": "dspace.uni.lodz.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-18T08:01:17.878898+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://eber.uek.krakow.pl/eber/about",
+      "host": "eber.uek.krakow.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-19T08:12:11.110063+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://eber.uek.krakow.pl/eber/index",
+      "host": "eber.uek.krakow.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-19T08:12:12.765300+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://fetedulivre.saint-etienne.fr/",
+      "host": "fetedulivre.saint-etienne.fr",
+      "country_code": "FRANCE",
+      "country": "France",
+      "scanned_at": "2026-11-18T17:30:58.247838+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://fetedulivre.saint-etienne.fr/devenez-benevole/",
+      "host": "fetedulivre.saint-etienne.fr",
+      "country_code": "FRANCE",
+      "country": "France",
+      "scanned_at": "2026-11-18T17:30:59.707617+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://fetedulivre.saint-etienne.fr/visuel-2025/",
+      "host": "fetedulivre.saint-etienne.fr",
+      "country_code": "FRANCE",
+      "country": "France",
+      "scanned_at": "2026-11-18T17:31:00.998092+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://financeurs.moncompteformation.gouv.fr/",
+      "host": "financeurs.moncompteformation.gouv.fr",
+      "country_code": "FRANCE",
+      "country": "France",
+      "scanned_at": "2026-11-18T17:31:14.194659+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://formations.mer.gouv.fr/",
+      "host": "formations.mer.gouv.fr",
+      "country_code": "FRANCE",
+      "country": "France",
+      "scanned_at": "2026-11-18T17:34:17.255144+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://formations.mer.gouv.fr/les-metiers-de-marin-84",
+      "host": "formations.mer.gouv.fr",
+      "country_code": "FRANCE",
+      "country": "France",
+      "scanned_at": "2026-11-18T17:34:18.714310+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://formations.mer.gouv.fr/mes-demarches-77",
+      "host": "formations.mer.gouv.fr",
+      "country_code": "FRANCE",
+      "country": "France",
+      "scanned_at": "2026-11-18T17:34:20.175990+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://formco.agriculture.gouv.fr/",
+      "host": "formco.agriculture.gouv.fr",
+      "country_code": "FRANCE",
+      "country": "France",
+      "scanned_at": "2026-11-18T17:34:21.614262+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://formco.agriculture.gouv.fr/index.html",
+      "host": "formco.agriculture.gouv.fr",
+      "country_code": "FRANCE",
+      "country": "France",
+      "scanned_at": "2026-11-18T17:34:23.120829+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://formco.agriculture.gouv.fr/me-former.html",
+      "host": "formco.agriculture.gouv.fr",
+      "country_code": "FRANCE",
+      "country": "France",
+      "scanned_at": "2026-11-18T17:34:24.541573+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://georisques.gouv.fr/",
+      "host": "georisques.gouv.fr",
+      "country_code": "FRANCE",
+      "country": "France",
+      "scanned_at": "2026-11-19T17:45:00.488238+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://georisques.gouv.fr/expert-recherche-parcelle",
+      "host": "georisques.gouv.fr",
+      "country_code": "FRANCE",
+      "country": "France",
+      "scanned_at": "2026-11-19T17:45:03.388207+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://graftonsquaresurgery.nhs.uk/cookie-policy",
+      "host": "graftonsquaresurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-19T08:05:39.449222+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://grist.numerique.gouv.fr/",
+      "host": "grist.numerique.gouv.fr",
+      "country_code": "FRANCE",
+      "country": "France",
+      "scanned_at": "2026-11-19T17:50:01.093462+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://guidance.submit-learner-data.service.gov.uk/",
+      "host": "guidance.submit-learner-data.service.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-19T08:07:56.616469+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://guidance.submit-learner-data.service.gov.uk/cookies",
+      "host": "guidance.submit-learner-data.service.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-19T08:07:58.244223+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://guidance.submit-learner-data.service.gov.uk/notifications",
+      "host": "guidance.submit-learner-data.service.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-19T08:07:59.862437+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://hallstreetmedicalcentre.nhs.uk/",
+      "host": "hallstreetmedicalcentre.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-19T08:09:06.336854+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://hallstreetmedicalcentre.nhs.uk/cookie-policy",
+      "host": "hallstreetmedicalcentre.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-19T08:09:08.704097+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://havergalsurgery.nhs.uk/FooterLinks/CookiePolicy",
+      "host": "havergalsurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-20T17:55:00.138559+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://hawkhurst-pc.gov.uk/",
+      "host": "hawkhurst-pc.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-20T17:56:25.930702+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://hawkhurst-pc.gov.uk/other-services",
+      "host": "hawkhurst-pc.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-20T17:56:27.028742+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://hawkhurst-pc.gov.uk/parish-council/agendas-and-minutes",
+      "host": "hawkhurst-pc.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-20T17:56:28.128878+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://holt-practice.nhs.uk/cookie-policy",
+      "host": "holt-practice.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:23:32.414339+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://holt-practice.nhs.uk/registrations/",
+      "host": "holt-practice.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:23:34.193085+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://inord.lenord.fr/",
+      "host": "inord.lenord.fr",
+      "country_code": "FRANCE",
+      "country": "France",
+      "scanned_at": "2026-11-19T18:03:37.720001+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://inord.lenord.fr/jcms/prd2_354678/accueil?currentActualite=prd2_698776",
+      "host": "inord.lenord.fr",
+      "country_code": "FRANCE",
+      "country": "France",
+      "scanned_at": "2026-11-19T18:03:39.893238+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://iwc.iow.gov.uk/",
+      "host": "iwc.iow.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:41:21.696805+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://iwc.iow.gov.uk/myaccount/Login.aspx",
+      "host": "iwc.iow.gov.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:41:24.798479+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://jacobins.toulouse.fr/",
+      "host": "jacobins.toulouse.fr",
+      "country_code": "FRANCE",
+      "country": "France",
+      "scanned_at": "2026-11-19T18:07:25.124131+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://jacobins.toulouse.fr/agenda/",
+      "host": "jacobins.toulouse.fr",
+      "country_code": "FRANCE",
+      "country": "France",
+      "scanned_at": "2026-11-19T18:07:26.955441+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://jacobins.toulouse.fr/fr/histoire/",
+      "host": "jacobins.toulouse.fr",
+      "country_code": "FRANCE",
+      "country": "France",
+      "scanned_at": "2026-11-19T18:07:28.783541+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://kingswinfordmedicalpractice.nhs.uk/",
+      "host": "kingswinfordmedicalpractice.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:54:07.496419+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://kingswinfordmedicalpractice.nhs.uk/appointments/",
+      "host": "kingswinfordmedicalpractice.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:54:09.068980+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://kingswinfordmedicalpractice.nhs.uk/cookie-policy",
+      "host": "kingswinfordmedicalpractice.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:54:10.494581+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://kultura.maribor.si/",
+      "host": "kultura.maribor.si",
+      "country_code": "SLOVENIA",
+      "country": "Slovenia",
+      "scanned_at": "2026-11-22T16:56:27.587005+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://kultura.maribor.si/napovednik",
+      "host": "kultura.maribor.si",
+      "country_code": "SLOVENIA",
+      "country": "Slovenia",
+      "scanned_at": "2026-11-22T16:56:29.051642+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://kultura.maribor.si/pravno-obvestilo/",
+      "host": "kultura.maribor.si",
+      "country_code": "SLOVENIA",
+      "country": "Slovenia",
+      "scanned_at": "2026-11-22T16:56:30.396534+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://laboitenumerique.calvados.fr/",
+      "host": "laboitenumerique.calvados.fr",
+      "country_code": "FRANCE",
+      "country": "France",
+      "scanned_at": "2026-11-21T08:29:02.336837+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://laboitenumerique.calvados.fr/accueil-portal.aspx",
+      "host": "laboitenumerique.calvados.fr",
+      "country_code": "FRANCE",
+      "country": "France",
+      "scanned_at": "2026-11-21T08:29:04.158002+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://laboitenumerique.calvados.fr/informations-pratiques.aspx",
+      "host": "laboitenumerique.calvados.fr",
+      "country_code": "FRANCE",
+      "country": "France",
+      "scanned_at": "2026-11-21T08:29:05.998594+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://lambtonroadmedical.nhs.uk/cookie-policy",
+      "host": "lambtonroadmedical.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-22T07:55:22.125056+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://lvif.gov.lv/",
+      "host": "lvif.gov.lv",
+      "country_code": "LATVIA",
+      "country": "Latvia",
+      "scanned_at": "2026-11-21T16:52:00.317574+00:00",
+      "earlier_checks": 4
+     },
+     {
+      "url": "https://lvif.gov.lv/par-mums",
+      "host": "lvif.gov.lv",
+      "country_code": "LATVIA",
+      "country": "Latvia",
+      "scanned_at": "2026-11-21T16:52:01.502577+00:00",
+      "earlier_checks": 4
+     },
+     {
+      "url": "https://lvif.gov.lv/valsts-atbalsts/iedzivotajiem",
+      "host": "lvif.gov.lv",
+      "country_code": "LATVIA",
+      "country": "Latvia",
+      "scanned_at": "2026-11-21T16:52:02.557059+00:00",
+      "earlier_checks": 4
+     },
+     {
+      "url": "https://nalezy.ostrava.cz/",
+      "host": "nalezy.ostrava.cz",
+      "country_code": "CZECHIA",
+      "country": "Czechia",
+      "scanned_at": "2026-11-20T17:26:47.788290+00:00",
+      "earlier_checks": 4
+     },
+     {
+      "url": "https://normelombardia.consiglio.regione.lombardia.it/",
+      "host": "normelombardia.consiglio.regione.lombardia.it",
+      "country_code": "ITALY",
+      "country": "Italy",
+      "scanned_at": "2026-11-21T22:37:22.382853+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://normelombardia.consiglio.regione.lombardia.it/Accessibile/main.aspx?view=ricercaavanzata",
+      "host": "normelombardia.consiglio.regione.lombardia.it",
+      "country_code": "ITALY",
+      "country": "Italy",
+      "scanned_at": "2026-11-21T22:37:24.187581+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://opac.regione.lazio.it/SebinaOpac/.do?sysb=davinci",
+      "host": "opac.regione.lazio.it",
+      "country_code": "ITALY",
+      "country": "Italy",
+      "scanned_at": "2026-11-21T22:40:09.236016+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://plesna.ostrava.cz/cs/home",
+      "host": "plesna.ostrava.cz",
+      "country_code": "CZECHIA",
+      "country": "Czechia",
+      "scanned_at": "2026-11-20T17:31:30.557882+00:00",
+      "earlier_checks": 4
+     },
+     {
+      "url": "https://vzd.mddsz.gov.si/",
+      "host": "vzd.mddsz.gov.si",
+      "country_code": "SLOVENIA",
+      "country": "Slovenia",
+      "scanned_at": "2026-11-22T16:59:58.134370+00:00",
+      "earlier_checks": 4
+     },
+     {
+      "url": "https://vzd.mddsz.gov.si/varnost-in-zdravje-pri-delu/publikacije",
+      "host": "vzd.mddsz.gov.si",
+      "country_code": "SLOVENIA",
+      "country": "Slovenia",
+      "scanned_at": "2026-11-22T16:59:59.574847+00:00",
+      "earlier_checks": 4
+     },
+     {
+      "url": "https://vzd.mddsz.gov.si/varnost-in-zdravje-pri-delu/spletne-aplikacije",
+      "host": "vzd.mddsz.gov.si",
+      "country_code": "SLOVENIA",
+      "country": "Slovenia",
+      "scanned_at": "2026-11-22T17:00:01.027662+00:00",
+      "earlier_checks": 4
+     },
+     {
+      "url": "https://www.digitalfunk.niedersachsen.de/",
+      "host": "digitalfunk.niedersachsen.de",
+      "country_code": "GERMANY",
+      "country": "Germany",
+      "scanned_at": "2026-11-19T18:27:03.564251+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://www.digitalfunk.niedersachsen.de/?rCH=2",
+      "host": "digitalfunk.niedersachsen.de",
+      "country_code": "GERMANY",
+      "country": "Germany",
+      "scanned_at": "2026-11-19T18:27:05.606920+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://www.digitalfunk.niedersachsen.de/index.php/digitalfunk-fuer-den-nutzer",
+      "host": "digitalfunk.niedersachsen.de",
+      "country_code": "GERMANY",
+      "country": "Germany",
+      "scanned_at": "2026-11-19T18:27:07.466772+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://www.energieatlas.rlp.de/earp/unser-portal/aktuelles",
+      "host": "energieatlas.rlp.de",
+      "country_code": "GERMANY",
+      "country": "Germany",
+      "scanned_at": "2026-11-21T17:09:21.789736+00:00",
+      "earlier_checks": 3
+     },
+     {
+      "url": "https://www.fhr.nrw.de/beh_toppmeldungen_archiv/Default-Toppmeldung-3/index.php",
+      "host": "fhr.nrw.de",
+      "country_code": "GERMANY",
+      "country": "Germany",
+      "scanned_at": "2026-11-21T17:11:26.411986+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.ich-tus.steiermark.at/cms/beitrag/12980668/182445458/",
+      "host": "ich-tus.steiermark.at",
+      "country_code": "AUSTRIA",
+      "country": "Austria",
+      "scanned_at": "2026-11-20T07:53:25.243828+00:00",
+      "earlier_checks": 4
+     },
+     {
+      "url": "https://www.ris.bka.gv.at/",
+      "host": "ris.bka.gv.at",
+      "country_code": "AUSTRIA",
+      "country": "Austria",
+      "scanned_at": "2026-11-21T22:00:04.539493+00:00",
+      "earlier_checks": 4
+     },
+     {
+      "url": "https://www.ris.bka.gv.at/Bvb-Oberoesterreich/",
+      "host": "ris.bka.gv.at",
+      "country_code": "AUSTRIA",
+      "country": "Austria",
+      "scanned_at": "2026-11-21T22:00:06.678590+00:00",
+      "earlier_checks": 4
+     },
+     {
+      "url": "https://www.ris.bka.gv.at/default.aspx",
+      "host": "ris.bka.gv.at",
+      "country_code": "AUSTRIA",
+      "country": "Austria",
+      "scanned_at": "2026-11-21T22:00:08.417195+00:00",
+      "earlier_checks": 4
+     },
+     {
+      "url": "https://www.rops.rzeszow.pl/",
+      "host": "rops.rzeszow.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-16T18:53:28.378066+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.rops.rzeszow.pl/a-2318-otwarty-konkurs",
+      "host": "rops.rzeszow.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-16T18:53:31.008763+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.rops.rzeszow.pl/kontakt",
+      "host": "rops.rzeszow.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-16T18:53:32.579647+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.senat.cz/",
+      "host": "senat.cz",
+      "country_code": "CZECHIA",
+      "country": "Czechia",
+      "scanned_at": "2026-11-20T17:47:37.031269+00:00",
+      "earlier_checks": 4
+     },
+     {
+      "url": "https://www.senat.cz/informace/pro_verejnost/prohlidky_senatu/index_solo.php?ke_dni=17.6.2025&O=15&from=V",
+      "host": "senat.cz",
+      "country_code": "CZECHIA",
+      "country": "Czechia",
+      "scanned_at": "2026-11-20T17:47:38.789261+00:00",
+      "earlier_checks": 4
+     },
+     {
+      "url": "https://www.sp37.szczecin.pl/",
+      "host": "sp37.szczecin.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-16T19:05:10.786701+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.sp37.szczecin.pl/index.php/z-zycia-szkoly/wakacje-2025",
+      "host": "sp37.szczecin.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-16T19:05:13.134273+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.symonsmedical.nhs.uk/",
+      "host": "symonsmedical.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:12:48.185899+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.symonsmedical.nhs.uk/clinics-and-services/appointments-tests-referrals/appointments-with-the-doctors/",
+      "host": "symonsmedical.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:12:49.665782+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.szpital-marciniak.wroclaw.pl/",
+      "host": "szpital-marciniak.wroclaw.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-16T19:16:29.421123+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.szpital-marciniak.wroclaw.pl/strona-glowna",
+      "host": "szpital-marciniak.wroclaw.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-16T19:16:31.181683+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.tanyardmuirkirkmedicalgroup.scot.nhs.uk/",
+      "host": "tanyardmuirkirkmedicalgroup.scot.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:14:02.554743+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.teansurgery.nhs.uk/",
+      "host": "teansurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:15:09.343917+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.teansurgery.nhs.uk/appointments-with-the-doctors/",
+      "host": "teansurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:15:10.544948+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.teatrlalek.wroclaw.pl/pl/repertuar-wtl",
+      "host": "teatrlalek.wroclaw.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-16T19:18:35.904509+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.thefishpondsfamilypractice.nhs.uk/",
+      "host": "thefishpondsfamilypractice.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:17:58.676522+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.thefishpondsfamilypractice.nhs.uk/appointmentstest-referrals/appointments-with-the-doctors/",
+      "host": "thefishpondsfamilypractice.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:18:00.133507+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.thefryernsurgery.nhs.uk/",
+      "host": "thefryernsurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:18:01.325560+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.thefryernsurgery.nhs.uk/clinics-and-services/appointments-tests-referrals/appointments-with-the-doctors/",
+      "host": "thefryernsurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:18:02.804727+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.thefryernsurgery.nhs.uk/help-support/",
+      "host": "thefryernsurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:18:04.016898+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.themurraysurgery.scot.nhs.uk/",
+      "host": "themurraysurgery.scot.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:21:12.793162+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.themurraysurgery.scot.nhs.uk/clinics-and-services/",
+      "host": "themurraysurgery.scot.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:21:14.518180+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.theneamanpractice.nhs.uk/",
+      "host": "theneamanpractice.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:21:17.076777+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.theneamanpractice.nhs.uk/clinics-and-services/",
+      "host": "theneamanpractice.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:21:18.282124+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.theneamanpractice.nhs.uk/clinics-and-services/appointments-tests-referrals/appointments-with-the-doctors/",
+      "host": "theneamanpractice.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:21:19.371642+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.thevicaragelanesurgery.nhs.uk/",
+      "host": "thevicaragelanesurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:23:13.137174+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.thevicaragelanesurgery.nhs.uk/appointmentstest-referrals/appointments-with-the-doctors/book-an-appointment/",
+      "host": "thevicaragelanesurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:23:14.607646+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.thevicaragelanesurgery.nhs.uk/help-and-support/",
+      "host": "thevicaragelanesurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:23:15.811359+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.thornliebankdoctors.scot.nhs.uk/",
+      "host": "thornliebankdoctors.scot.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:24:37.484320+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.thornliebankdoctors.scot.nhs.uk/managing-your-health/consultations/",
+      "host": "thornliebankdoctors.scot.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:24:39.298746+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.thurrockhealthcentre.nhs.uk/",
+      "host": "thurrockhealthcentre.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:25:16.805708+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.thurrockhealthcentre.nhs.uk/clinics-and-services/",
+      "host": "thurrockhealthcentre.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:25:18.021830+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.thurrockhealthcentre.nhs.uk/clinics-and-services/appointments-tests-referrals/appointments-with-the-doctors/",
+      "host": "thurrockhealthcentre.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:25:19.084554+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.tilburyhealthcentre.nhs.uk/",
+      "host": "tilburyhealthcentre.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:25:26.846520+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.tilburyhealthcentre.nhs.uk/help-support/",
+      "host": "tilburyhealthcentre.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:25:28.185570+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.trystmedicalcentre.scot.nhs.uk/",
+      "host": "trystmedicalcentre.scot.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:28:29.958412+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.trystmedicalcentre.scot.nhs.uk/appointments-tests-referrals/consultations/",
+      "host": "trystmedicalcentre.scot.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:28:31.718642+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.trystmedicalcentre.scot.nhs.uk/your-care/",
+      "host": "trystmedicalcentre.scot.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:28:32.919961+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.twyford-surgery.nhs.uk/",
+      "host": "twyford-surgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:28:49.913456+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.wallingtonfamilypractice.nhs.uk/",
+      "host": "wallingtonfamilypractice.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:35:49.495582+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.wallingtonfamilypractice.nhs.uk/help-support/",
+      "host": "wallingtonfamilypractice.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:35:50.690670+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.wellstreetcheadle.nhs.uk/",
+      "host": "wellstreetcheadle.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:41:34.502995+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.wellstreetcheadle.nhs.uk/clinics-and-services/",
+      "host": "wellstreetcheadle.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:41:35.692695+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.wellstreetcheadle.nhs.uk/clinics-and-services/appointments/",
+      "host": "wellstreetcheadle.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:41:36.879803+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.wembleyparkgp.nhs.uk/",
+      "host": "wembleyparkgp.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:41:59.483092+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.wembleyparkgp.nhs.uk/clinics-and-services/services/register/",
+      "host": "wembleyparkgp.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:42:00.951597+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.westfarmsurgery.nhs.uk/",
+      "host": "westfarmsurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:43:52.542667+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.westfarmsurgery.nhs.uk/managing-your-health/appointments-with-the-doctors/book-an-appointment/",
+      "host": "westfarmsurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:43:54.022575+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.wilsonpractice.nhs.uk/",
+      "host": "wilsonpractice.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:51:35.103275+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.wilsonpractice.nhs.uk/appointments-with-the-doctors/",
+      "host": "wilsonpractice.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:51:36.382275+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.wrythegreensurgery.nhs.uk/",
+      "host": "wrythegreensurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:58:15.547910+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.wrythegreensurgery.nhs.uk/clinics-and-services/",
+      "host": "wrythegreensurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:58:16.762072+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.wrythegreensurgery.nhs.uk/clinics-and-services/appointments-tests-referrals/appointments-with-the-doctors/",
+      "host": "wrythegreensurgery.nhs.uk",
+      "country_code": "UNITED_KINGDOM_UK",
+      "country": "United Kingdom",
+      "scanned_at": "2026-11-16T07:58:17.957378+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.zdw.lodz.pl/index.html",
+      "host": "zdw.lodz.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-16T19:39:08.850758+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.zdw.lodz.pl/kontakt_alarmowy.html",
+      "host": "zdw.lodz.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-16T19:39:10.659213+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.zss.szczecin.pl/",
+      "host": "zss.szczecin.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-17T08:29:17.673056+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.zss.szczecin.pl/index.php/start/nauka-jazdy",
+      "host": "zss.szczecin.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-17T08:29:19.899031+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://www.zss.szczecin.pl/index.php/uczniowie",
+      "host": "zss.szczecin.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-17T08:29:21.609416+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://wwz.up.poznan.pl/pl/apel-do-spo%C5%82eczno%C5%9Bci-wydzia%C5%82u-medycyny-weterynaryjnej-i-nauk-o-zwierz%C4%99tach",
+      "host": "wwz.up.poznan.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-17T08:31:37.334384+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://wydawnictwo.tnoik.torun.pl/",
+      "host": "wydawnictwo.tnoik.torun.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-17T08:32:49.725711+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://zdp.poznan.pl/",
+      "host": "zdp.poznan.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-17T08:42:30.866443+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://zdp.poznan.pl/informacje-o-zarzadzie-2/",
+      "host": "zdp.poznan.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-17T08:42:32.571031+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://zs.powiatsochaczew.pl/cms/111579/rekrutacja",
+      "host": "zs.powiatsochaczew.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-17T08:57:24.612763+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://zsm.torun.pl/",
+      "host": "zsm.torun.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-17T09:17:08.112186+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://zsm.torun.pl/drodzy-uczniowie/",
+      "host": "zsm.torun.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-17T09:17:10.126433+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://zsm.torun.pl/godziny-pracy-szkoly-w-dniach-19-22-czerwca/",
+      "host": "zsm.torun.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-17T09:17:11.814624+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://zsmosina.powiat.poznan.pl/",
+      "host": "zsmosina.powiat.poznan.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-17T09:18:16.340613+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://zso8.edu.gdansk.pl/",
+      "host": "zso8.edu.gdansk.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-17T17:55:42.480422+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://zso8.edu.gdansk.pl/pl/art/zapraszamy-do-xiv-lo.92068.html",
+      "host": "zso8.edu.gdansk.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-17T17:55:48.138228+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://zsp-benice.powiatkamienski.pl/",
+      "host": "zsp-benice.powiatkamienski.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-17T17:56:11.222112+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://zsp-benice.powiatkamienski.pl/aktualnosc/2338-technikum-w-benicach-na-15-miejscu-w-zachodniopomorskim-rankingu-technikow",
+      "host": "zsp-benice.powiatkamienski.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-17T17:56:12.719349+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://zsp-wolin.powiatkamienski.pl/",
+      "host": "zsp-wolin.powiatkamienski.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-17T17:56:14.056598+00:00",
+      "earlier_checks": 2
+     },
+     {
+      "url": "https://zsp-wolin.powiatkamienski.pl/aktualnosc/2536-uroczysty-apel-z-okazji-zakonczenia-roku-szkolnego-20242025",
+      "host": "zsp-wolin.powiatkamienski.pl",
+      "country_code": "POLAND",
+      "country": "Poland",
+      "scanned_at": "2026-11-17T17:56:15.542365+00:00",
+      "earlier_checks": 2
+     }
+    ]
+   }
+  }
+ }
+}
