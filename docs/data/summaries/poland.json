@@ -1,15 +1,15 @@
 {
   "country_code": "POLAND",
-  "total_relationships": 62767,
+  "total_relationships": 62755,
   "total_source_domains": 2529,
   "top_source_domains": [
     {
       "domain": "krakow.pl",
-      "count": 94512
+      "count": 94604
     },
     {
       "domain": "poznan.pl",
-      "count": 64710
+      "count": 64756
     },
     {
       "domain": "lodz.pl",
@@ -29,7 +29,7 @@
     },
     {
       "domain": "tarnow.pl",
-      "count": 16076
+      "count": 16041
     },
     {
       "domain": "ug.edu.pl",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "krakow.pl",
-      "count": 46248
+      "count": 46289
     },
     {
       "domain": "lodz.pl",
@@ -215,15 +215,15 @@
     },
     {
       "domain": "googleapis.com",
-      "count": 33951
+      "count": 33960
     },
     {
       "domain": "poznan.pl",
-      "count": 32513
+      "count": 32537
     },
     {
       "domain": "facebook.com",
-      "count": 30556
+      "count": 30566
     },
     {
       "domain": "gdansk.pl",
@@ -235,19 +235,19 @@
     },
     {
       "domain": "googletagmanager.com",
-      "count": 12144
+      "count": 12146
     },
     {
       "domain": "instagram.com",
-      "count": 12022
+      "count": 12026
     },
     {
       "domain": "youtube.com",
-      "count": 11736
+      "count": 11741
     },
     {
       "domain": "google.com",
-      "count": 11420
+      "count": 11421
     },
     {
       "domain": "ug.edu.pl",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 8510
+      "count": 8512
     },
     {
       "domain": "torun.pl",
@@ -263,7 +263,7 @@
     },
     {
       "domain": "tarnow.pl",
-      "count": 6578
+      "count": 6557
     },
     {
       "domain": "jsdelivr.net",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "www.gov.pl",
-      "count": 4591
+      "count": 4592
     },
     {
       "domain": "twitter.com",
@@ -299,11 +299,11 @@
     },
     {
       "domain": "fontawesome.com",
-      "count": 3771
+      "count": 3773
     },
     {
       "domain": "linkedin.com",
-      "count": 3744
+      "count": 3745
     },
     {
       "domain": "edu.bialystok.pl",
@@ -347,7 +347,7 @@
     },
     {
       "domain": "tiktok.com",
-      "count": 2014
+      "count": 2016
     },
     {
       "domain": "ursynow.warszawa.pl",
@@ -403,16 +403,16 @@
     },
     {
       "domain": "dziennikustaw.gov.pl",
-      "count": 1075
+      "count": 1076
     }
   ],
   "relationship_types": {
-    "editorial_link": 34037,
-    "form_destination": 3358,
-    "image_or_media_dependency": 6890,
+    "editorial_link": 34030,
+    "form_destination": 3356,
+    "image_or_media_dependency": 6888,
     "script_dependency": 8842,
-    "stylesheet_dependency": 7721,
-    "font_or_preload_dependency": 1919
+    "stylesheet_dependency": 7719,
+    "font_or_preload_dependency": 1920
   },
-  "generated_at": "2026-11-21T23:36:21.055015+00:00"
+  "generated_at": "2026-11-23T18:18:05.910580+00:00"
 }
