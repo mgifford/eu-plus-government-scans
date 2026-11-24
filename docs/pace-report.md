@@ -3,7 +3,7 @@ title: Scanner Cycle Pace Report
 layout: page
 ---
 
-_Generated: 2026-11-24 23:24 UTC_
+_Generated: 2026-11-24 23:58 UTC_
 
 Whether each scanner is on pace to complete its target cycle (30 days for most
 covered in the last 7 days projected forward against the full eligible corpus.
@@ -16,12 +16,12 @@ Section 11 for the methodology.
 |---|---|---|---|---|---|---|---|
 | accessibility | 30d | 87,696 | 100.0% (87,690) | 14,076 (last 7d) | 2,010.9/day | 43.6d | 🟢 Caught up |
 | social_media | 30d | 87,696 | 100.0% (87,690) | 15,186 (last 7d) | 2,169.4/day | 40.4d | 🟢 Caught up |
-| technology | 30d | 87,696 | 100.0% (87,690) | 15,353 (last 7d) | 2,193.3/day | 40.0d | 🟢 Caught up |
+| technology | 30d | 87,696 | 100.0% (87,690) | 16,967 (last 7d) | 2,423.9/day | 36.2d | 🟡 Marginal |
 | third_party_js | 30d | 87,696 | 100.0% (87,690) | 12,404 (last 7d) | 1,772.0/day | 49.5d | 🟢 Caught up |
 | overlays | 30d | 87,696 | 1.7% (1,523) | 0 (last 7d) | 0.0/day | —d | ⚪ No data |
 | preferences | 90d | 87,696 | 10.0% (8,751) | 1,572 (last 7d) | 224.6/day | 390.5d | 🔴 Behind |
 | relationships | 60d | 87,696 | 94.6% (82,962) | 19,677 (last 7d) | 2,811.0/day | 31.2d | 🟢 Ahead |
-| lighthouse | 60d | 87,696 | 100.0% (87,690) | 12,582 (last 7d) | 1,797.4/day | 48.8d | 🟢 On pace |
+| lighthouse | 60d | 87,696 | 100.0% (87,690) | 12,324 (last 7d) | 1,760.6/day | 49.8d | 🟢 On pace |
 
 _Projection method: `effective daily throughput = distinct URLs covered in the last 7 days ÷ 7`;
 `projected cycle days = eligible URLs ÷ effective daily throughput`. The 7-day measurement
