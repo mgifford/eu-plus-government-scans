@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T18:18:07.958754+00:00",
+  "generated_at": "2026-11-24T17:49:55.274964+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -173,12 +173,12 @@
     {
       "service": "googleapis.com",
       "countries": 32,
-      "domains": 4497
+      "domains": 4498
     },
     {
       "service": "googletagmanager.com",
       "countries": 32,
-      "domains": 2783
+      "domains": 2784
     },
     {
       "service": "gstatic.com",
@@ -188,7 +188,7 @@
     {
       "service": "jsdelivr.net",
       "countries": 32,
-      "domains": 1209
+      "domains": 1210
     },
     {
       "service": "fontawesome.com",
@@ -213,7 +213,7 @@
     {
       "service": "unpkg.com",
       "countries": 29,
-      "domains": 672
+      "domains": 671
     },
     {
       "service": "bootstrapcdn.com",
@@ -223,7 +223,7 @@
     {
       "service": "typekit.net",
       "countries": 26,
-      "domains": 294
+      "domains": 296
     },
     {
       "service": "cookiebot.com",
@@ -238,7 +238,7 @@
     {
       "service": "amazonaws.com",
       "countries": 22,
-      "domains": 230
+      "domains": 231
     },
     {
       "service": "facebook.net",
@@ -248,7 +248,7 @@
     {
       "service": "addtoany.com",
       "countries": 21,
-      "domains": 180
+      "domains": 181
     },
     {
       "service": "arcgis.com",
@@ -284,9 +284,9 @@
       "country_code": "UNITED_KINGDOM_UK",
       "country": "United Kingdom",
       "service": "googletagmanager.com",
-      "domains": 1242,
+      "domains": 1241,
       "scanned_domains": 3398,
-      "percent": 36.6
+      "percent": 36.5
     },
     {
       "country_code": "UNITED_KINGDOM_UK",
@@ -300,7 +300,7 @@
       "country_code": "UNITED_KINGDOM_UK",
       "country": "United Kingdom",
       "service": "jsdelivr.net",
-      "domains": 484,
+      "domains": 483,
       "scanned_domains": 3398,
       "percent": 14.2
     },
@@ -340,7 +340,7 @@
       "country_code": "UNITED_KINGDOM_UK",
       "country": "United Kingdom",
       "service": "unpkg.com",
-      "domains": 340,
+      "domains": 339,
       "scanned_domains": 3398,
       "percent": 10.0
     },
@@ -756,17 +756,17 @@
       "country_code": "PORTUGAL",
       "country": "Portugal",
       "service": "googleapis.com",
-      "domains": 224,
+      "domains": 225,
       "scanned_domains": 377,
-      "percent": 59.4
+      "percent": 59.7
     },
     {
       "country_code": "PORTUGAL",
       "country": "Portugal",
       "service": "googletagmanager.com",
-      "domains": 201,
+      "domains": 203,
       "scanned_domains": 377,
-      "percent": 53.3
+      "percent": 53.8
     },
     {
       "country_code": "PORTUGAL",
@@ -780,9 +780,9 @@
       "country_code": "PORTUGAL",
       "country": "Portugal",
       "service": "jsdelivr.net",
-      "domains": 70,
+      "domains": 71,
       "scanned_domains": 377,
-      "percent": 18.6
+      "percent": 18.8
     },
     {
       "country_code": "PORTUGAL",
@@ -876,9 +876,9 @@
       "country_code": "PORTUGAL",
       "country": "Portugal",
       "service": "addtoany.com",
-      "domains": 9,
+      "domains": 10,
       "scanned_domains": 377,
-      "percent": 2.4
+      "percent": 2.7
     },
     {
       "country_code": "PORTUGAL",
@@ -1580,9 +1580,9 @@
       "country_code": "CANADA",
       "country": "Canada",
       "service": "jsdelivr.net",
-      "domains": 39,
+      "domains": 40,
       "scanned_domains": 196,
-      "percent": 19.9
+      "percent": 20.4
     },
     {
       "country_code": "CANADA",
@@ -1636,9 +1636,9 @@
       "country_code": "CANADA",
       "country": "Canada",
       "service": "typekit.net",
-      "domains": 12,
+      "domains": 14,
       "scanned_domains": 196,
-      "percent": 6.1
+      "percent": 7.1
     },
     {
       "country_code": "CANADA",
@@ -5180,9 +5180,9 @@
       "country_code": "SWITZERLAND",
       "country": "Switzerland",
       "service": "amazonaws.com",
-      "domains": 1,
+      "domains": 2,
       "scanned_domains": 9,
-      "percent": 11.1
+      "percent": 22.2
     },
     {
       "country_code": "SWITZERLAND",
