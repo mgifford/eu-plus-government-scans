@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T17:49:55.274964+00:00",
+  "generated_at": "2026-11-25T17:40:20.194481+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -183,7 +183,7 @@
     {
       "service": "gstatic.com",
       "countries": 32,
-      "domains": 1770
+      "domains": 1771
     },
     {
       "service": "jsdelivr.net",
@@ -203,7 +203,7 @@
     {
       "service": "cloudflare.com",
       "countries": 31,
-      "domains": 1802
+      "domains": 1803
     },
     {
       "service": "jquery.com",
@@ -1412,9 +1412,9 @@
       "country_code": "GERMANY",
       "country": "Germany",
       "service": "gstatic.com",
-      "domains": 8,
+      "domains": 9,
       "scanned_domains": 218,
-      "percent": 3.7
+      "percent": 4.1
     },
     {
       "country_code": "GERMANY",
@@ -1444,9 +1444,9 @@
       "country_code": "GERMANY",
       "country": "Germany",
       "service": "cloudflare.com",
-      "domains": 13,
+      "domains": 14,
       "scanned_domains": 218,
-      "percent": 6.0
+      "percent": 6.4
     },
     {
       "country_code": "GERMANY",

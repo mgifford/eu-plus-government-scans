@@ -9,24 +9,9 @@
     "total_source_domains": 3,
     "file": "malta.json"
   },
-  "FRANCE": {
-    "total_relationships": 30453,
-    "total_source_domains": 678,
-    "file": "france.json"
-  },
-  "NORWAY": {
-    "total_relationships": 873,
-    "total_source_domains": 34,
-    "file": "norway.json"
-  },
-  "SWEDEN": {
-    "total_relationships": 6215,
-    "total_source_domains": 245,
-    "file": "sweden.json"
-  },
-  "CANADA": {
-    "total_relationships": 325608,
-    "total_source_domains": 9523,
-    "file": "canada.json"
+  "ITALY": {
+    "total_relationships": 16373,
+    "total_source_domains": 154,
+    "file": "italy.json"
   }
 }

@@ -9,7 +9,7 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 39612
+      "count": 40337
     },
     {
       "domain": "gva.es",
@@ -211,7 +211,7 @@
     },
     {
       "domain": "castillalamancha.es",
-      "count": 19729
+      "count": 20091
     },
     {
       "domain": "gva.es",
@@ -219,31 +219,31 @@
     },
     {
       "domain": "facebook.com",
-      "count": 5452
+      "count": 5486
     },
     {
       "domain": "twitter.com",
-      "count": 4974
+      "count": 4998
     },
     {
       "domain": "youtube.com",
-      "count": 4625
+      "count": 4652
     },
     {
       "domain": "googleapis.com",
-      "count": 4329
+      "count": 4352
     },
     {
       "domain": "google.com",
-      "count": 4299
+      "count": 4331
     },
     {
       "domain": "jccm.es",
-      "count": 4116
+      "count": 4171
     },
     {
       "domain": "instagram.com",
-      "count": 4016
+      "count": 4032
     },
     {
       "domain": "navarra.es",
@@ -259,7 +259,7 @@
     },
     {
       "domain": "w3.org",
-      "count": 2059
+      "count": 2061
     },
     {
       "domain": "googletagmanager.com",
@@ -267,7 +267,7 @@
     },
     {
       "domain": "linkedin.com",
-      "count": 1898
+      "count": 1909
     },
     {
       "domain": "juntaex.es",
@@ -287,7 +287,7 @@
     },
     {
       "domain": "gstatic.com",
-      "count": 1381
+      "count": 1390
     },
     {
       "domain": "redsara.es",
@@ -295,7 +295,7 @@
     },
     {
       "domain": "x.com",
-      "count": 1190
+      "count": 1194
     },
     {
       "domain": "hacienda.gob.es",
@@ -303,27 +303,27 @@
     },
     {
       "domain": "blogspot.com",
-      "count": 1140
+      "count": 1148
     },
     {
       "domain": "europa.eu",
-      "count": 1053
+      "count": 1054
     },
     {
       "domain": "cloudflare.com",
-      "count": 1010
+      "count": 1012
+    },
+    {
+      "domain": "google.es",
+      "count": 1004
     },
     {
       "domain": "carm.es",
       "count": 995
     },
     {
-      "domain": "google.es",
-      "count": 993
-    },
-    {
       "domain": "flickr.com",
-      "count": 969
+      "count": 980
     },
     {
       "domain": "sanidad.gob.es",
@@ -335,11 +335,11 @@
     },
     {
       "domain": "fontawesome.com",
-      "count": 859
+      "count": 870
     },
     {
       "domain": "insuit.net",
-      "count": 829
+      "count": 835
     },
     {
       "domain": "aemet.es",
@@ -347,7 +347,7 @@
     },
     {
       "domain": "jsdelivr.net",
-      "count": 808
+      "count": 810
     },
     {
       "domain": "defensa.gob.es",
@@ -383,26 +383,26 @@
     },
     {
       "domain": "bootstrapcdn.com",
-      "count": 537
+      "count": 539
     },
     {
       "domain": "vimeo.com",
-      "count": 529
+      "count": 539
     },
     {
       "domain": "blogspot.com.es",
-      "count": 529
+      "count": 533
     },
     {
       "domain": "seg-social.es",
       "count": 522
     },
     {
-      "domain": "ilunionaccede.es",
+      "domain": "sharethis.com",
       "count": 519
     },
     {
-      "domain": "saludcastillayleon.es",
+      "domain": "ilunionaccede.es",
       "count": 519
     }
   ],
@@ -414,5 +414,5 @@
     "form_destination": 1517,
     "font_or_preload_dependency": 155
   },
-  "generated_at": "2026-11-23T06:44:44.343633+00:00"
+  "generated_at": "2026-11-25T02:46:13.293433+00:00"
 }
