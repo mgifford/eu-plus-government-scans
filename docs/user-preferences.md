@@ -23,16 +23,16 @@ the government sites in this corpus:
 
 <!-- USER_PREFERENCES_STATS_START -->
 
-_Stats as of 2026-11-26 15:02 UTC — last scan: 2026-11-19_
+_Stats as of 2026-11-26 19:12 UTC — last scan: 2026-11-26_
 
 **Browser user preferences and design-system adoption**
 
-**8,752** of **87,696** available pages scanned (**10.0%** coverage)
-**8,121** of **8,752** scanned pages were reachable (**92.8%**)
-**6,982** of **8,121** reachable pages had at least one stylesheet checked (CSS tier: **86.0%**)
-**3,554** of **8,121** reachable pages show at least one user-preference signal (**43.8%**)
-Pages containing an explicit override (`forced-color-adjust: none`): **89** — a *risk signal* for manual review under EN 301 549 clause 9.7, not a confirmed failure
-Pages matching the HTML signatures of a curated design system: **29**
+**10,344** of **87,696** available pages scanned (**11.8%** coverage)
+**9,635** of **10,344** scanned pages were reachable (**93.1%**)
+**8,254** of **9,635** reachable pages had at least one stylesheet checked (CSS tier: **85.7%**)
+**4,448** of **9,635** reachable pages show at least one user-preference signal (**46.2%**)
+Pages containing an explicit override (`forced-color-adjust: none`): **136** — a *risk signal* for manual review under EN 301 549 clause 9.7, not a confirmed failure
+Pages matching the HTML signatures of a curated design system: **65**
 
 > Registry coverage: **4** of **22** curated design-system entries have confirmed adoption signatures (**6** entries still need review). Systems without signatures cannot yet be measured for adoption.
 
@@ -42,12 +42,12 @@ Pages matching the HTML signatures of a curated design system: **29**
 
 | Signal | Pages | % of reachable |
 |--------|------:|---------------:|
-| Dark/light colour scheme (`prefers-color-scheme`) | 360 | 4.4% |
-| Declared colour scheme (`color-scheme`) | 480 | 5.9% |
-| Reduced motion (`prefers-reduced-motion`) | 3,157 | 38.9% |
-| Increased contrast (`prefers-contrast`) | 254 | 3.1% |
+| Dark/light colour scheme (`prefers-color-scheme`) | 419 | 4.3% |
+| Declared colour scheme (`color-scheme`) | 554 | 5.7% |
+| Reduced motion (`prefers-reduced-motion`) | 4,005 | 41.6% |
+| Increased contrast (`prefers-contrast`) | 288 | 3.0% |
 | Reduced transparency (`prefers-reduced-transparency`) | 6 | 0.1% |
-| Forced colours / high contrast (`forced-colors`) | 266 | 3.3% |
+| Forced colours / high contrast (`forced-colors`) | 364 | 3.8% |
 
 Counts are pages where the signal appeared in the page HTML **or** a fetched stylesheet. Attribution (HTML vs first-party CSS vs third-party CSS) is in the JSON ``feature_sources`` field.
 
@@ -65,7 +65,7 @@ Counts are pages where the signal appeared in the page HTML **or** a fetched sty
 | [Designsystem.dk](https://designsystem.dk/) | Denmark | design_system | not curated | 0 |
 | [Helsinki Design System](https://hds.hel.fi/) ⚠ | Finland | design_system | ✓ | 0 |
 | [Suomi.fi Design System](https://designsystem.suomi.fi/) | Finland | design_system | not curated | 0 |
-| [Système de Design de l'État](https://www.systeme-de-design.gouv.fr/version-courante/fr) | France | design_system | ✓ | 19 |
+| [Système de Design de l'État](https://www.systeme-de-design.gouv.fr/version-courante/fr) | France | design_system | ✓ | 55 |
 | [Angie Design System](https://digitalservicebund.github.io/angie/) | Germany | design_system | not curated | 0 |
 | [Government Digital Services Design Guide](https://guide.services.gov.gr/) ⚠ | Greece | design_system | not curated | 0 |
 | [Government Design System (Hungary)](https://services.gov.hu/design-system) | Hungary | design_system | not curated | 0 |
@@ -96,8 +96,11 @@ Counts are pages where the signal appeared in the page HTML **or** a fetched sty
 | Canada | 4,469 | 4,469 | 4,217 | 3,553 | 1,632 | 38.7% | 191 | 1,344 | 168 | 74 | 9 |
 | Croatia | 257 | 257 | 252 | 178 | 81 | 32.1% | 5 | 79 | 3 | 0 | 1 |
 | Czechia | 866 | 866 | 774 | 664 | 380 | 49.1% | 54 | 328 | 25 | 9 | 8 |
-| Denmark | 656 | 1,536 | 643 | 580 | 392 | 61.0% | 8 | 379 | 3 | 0 | 5 |
-| **Total** | **8,752** | **87,696** | **8,121** | **6,982** | **3,554** | **43.8%** | **360** | **3,157** | **266** | **89** | **29** |
+| Denmark | 1,536 | 1,536 | 1,492 | 1,313 | 907 | 60.8% | 12 | 889 | 23 | 7 | 22 |
+| Estonia | 401 | 401 | 380 | 336 | 247 | 65.0% | 17 | 243 | 23 | 4 | 3 |
+| Finland | 199 | 199 | 187 | 122 | 75 | 40.1% | 10 | 54 | 28 | 5 | 0 |
+| France | 112 | 10,009 | 98 | 81 | 57 | 58.2% | 28 | 41 | 27 | 31 | 16 |
+| **Total** | **10,344** | **87,696** | **9,635** | **8,254** | **4,448** | **46.2%** | **419** | **4,005** | **364** | **136** | **65** |
 
 ---
 
