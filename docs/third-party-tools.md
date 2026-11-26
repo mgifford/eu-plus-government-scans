@@ -5,14 +5,14 @@ layout: page
 
 <!-- THIRD_PARTY_JS_STATS_START -->
 
-_Stats as of 2026-11-26 09:37 UTC — last scan: 2026-11-25_
+_Stats as of 2026-11-26 10:10 UTC — last scan: 2026-11-26_
 
-**558** scan batches run
+**561** scan batches run
 
 **87,690** of **87,696** available pages scanned (**100.0%** coverage)
-**82,143** of **87,690** scanned pages were reachable (**93.7%**)
-**39,562** reachable pages loaded at least one third-party script (**48.2%** of reachable)
-**46,344** known third-party service loads identified
+**82,145** of **87,690** scanned pages were reachable (**93.7%**)
+**39,572** reachable pages loaded at least one third-party script (**48.2%** of reachable)
+**46,343** known third-party service loads identified
 **26** unique known services across **17** categories
 
 ---
@@ -23,9 +23,9 @@ _Stats as of 2026-11-26 09:37 UTC — last scan: 2026-11-25_
 |---------|---------|-----------|-----------|------------------------|--------------------|------------------------|---------------------------|----------|
 | Austria | 822 | 822 | 788 | 284 | 52 | 36.0 | 6.6 | 2026-11-24 |
 | Belgium | 1,329 | 1,329 | 1,241 | 677 | 721 | 54.6 | 58.1 | 2026-11-21 |
-| Bulgaria | 353 | 353 | 305 | 131 | 159 | 43.0 | 52.1 | 2026-10-26 |
+| Bulgaria | 353 | 353 | 305 | 141 | 154 | 46.2 | 50.5 | 2026-11-26 |
 | Canada | 4,469 | 4,469 | 4,281 | 2,531 | 3,552 | 59.1 | 83.0 | 2026-11-21 |
-| Croatia | 257 | 257 | 254 | 139 | 192 | 54.7 | 75.6 | 2026-10-26 |
+| Croatia | 257 | 257 | 254 | 139 | 194 | 54.7 | 76.4 | 2026-11-26 |
 | Czechia | 866 | 866 | 804 | 479 | 736 | 59.6 | 91.5 | 2026-10-29 |
 | Denmark | 1,536 | 1,536 | 1,507 | 835 | 2,053 | 55.4 | 136.2 | 2026-11-24 |
 | Estonia | 401 | 401 | 385 | 140 | 117 | 36.4 | 30.4 | 2026-10-26 |
@@ -50,7 +50,7 @@ _Stats as of 2026-11-26 09:37 UTC — last scan: 2026-11-25_
 | Slovakia | 442 | 442 | 418 | 221 | 260 | 52.9 | 62.2 | 2026-10-28 |
 | Slovenia | 214 | 214 | 209 | 58 | 78 | 27.8 | 37.3 | 2026-11-25 |
 | Spain | 6,091 | 6,091 | 5,474 | 2,810 | 2,616 | 51.3 | 47.8 | 2026-11-25 |
-| Sweden | 1,702 | 1,702 | 1,631 | 553 | 306 | 33.9 | 18.8 | 2026-11-22 |
+| Sweden | 1,702 | 1,702 | 1,633 | 553 | 308 | 33.9 | 18.9 | 2026-11-26 |
 | Switzerland | 2,123 | 2,123 | 2,079 | 421 | 417 | 20.3 | 20.1 | 2026-11-25 |
 | United Kingdom | 19,511 | 19,511 | 18,719 | 10,615 | 14,148 | 56.7 | 75.6 | 2026-11-25 |
 
@@ -62,15 +62,15 @@ _Stats as of 2026-11-26 09:37 UTC — last scan: 2026-11-25_
 
 | # | Service | Loads |
 |--:|---------|------:|
-| 1 | Google Analytics (GA4) | **8,581** |
+| 1 | Google Analytics (GA4) | **8,586** |
 | 2 | cdnjs (Cloudflare CDN) | **7,728** |
-| 3 | jsDelivr CDN | **6,271** |
-| 4 | Google reCAPTCHA | **4,839** |
-| 5 | Google Tag Manager | **4,110** |
-| 6 | Google Hosted Libraries | **3,139** |
+| 3 | jsDelivr CDN | **6,273** |
+| 4 | Google reCAPTCHA | **4,837** |
+| 5 | Google Tag Manager | **4,112** |
+| 6 | Google Hosted Libraries | **3,130** |
 | 7 | unpkg CDN | **2,882** |
 | 8 | jQuery | **2,714** |
-| 9 | Font Awesome | **1,927** |
+| 9 | Font Awesome | **1,928** |
 | 10 | Bootstrap | **906** |
 | 11 | Cookiebot | **812** |
 | 12 | Adobe Dynamic Tag Management / Launch | **516** |
@@ -87,15 +87,15 @@ _Stats as of 2026-11-26 09:37 UTC — last scan: 2026-11-25_
 
 | # | Service | Reachable Pages | Prevalence of Reachable Pages |
 |--:|---------|----------------:|------------------------------:|
-| 1 | Google Analytics (GA4) | **8,354** | **44.6%** |
-| 2 | Google reCAPTCHA | **4,566** | **24.4%** |
-| 3 | jsDelivr CDN | **4,249** | **22.7%** |
+| 1 | Google Analytics (GA4) | **8,362** | **44.7%** |
+| 2 | Google reCAPTCHA | **4,564** | **24.4%** |
+| 3 | jsDelivr CDN | **4,251** | **22.7%** |
 | 4 | cdnjs (Cloudflare CDN) | **3,938** | **21.0%** |
-| 5 | Google Tag Manager | **3,920** | **20.9%** |
-| 6 | Google Hosted Libraries | **2,836** | **15.2%** |
+| 5 | Google Tag Manager | **3,922** | **21.0%** |
+| 6 | Google Hosted Libraries | **2,827** | **15.1%** |
 | 7 | unpkg CDN | **2,216** | **11.8%** |
 | 8 | jQuery | **2,149** | **11.5%** |
-| 9 | Font Awesome | **1,532** | **8.2%** |
+| 9 | Font Awesome | **1,533** | **8.2%** |
 | 10 | Bootstrap | **899** | **4.8%** |
 | 11 | Cookiebot | **793** | **4.2%** |
 | 12 | Adobe Dynamic Tag Management / Launch | **513** | **2.7%** |
@@ -112,13 +112,13 @@ _Stats as of 2026-11-26 09:37 UTC — last scan: 2026-11-25_
 
 | # | Category | Loads |
 |--:|----------|------:|
-| 1 | CDN | **20,020** |
-| 2 | Analytics | **9,698** |
-| 3 | JavaScript Library | **5,853** |
-| 4 | Security | **5,083** |
-| 5 | CAPTCHA | **4,839** |
-| 6 | Tag Manager | **4,626** |
-| 7 | Icon Library | **1,927** |
+| 1 | CDN | **20,013** |
+| 2 | Analytics | **9,703** |
+| 3 | JavaScript Library | **5,844** |
+| 4 | Security | **5,081** |
+| 5 | CAPTCHA | **4,837** |
+| 6 | Tag Manager | **4,628** |
+| 7 | Icon Library | **1,928** |
 | 8 | Cookie Consent | **1,578** |
 | 9 | UI Framework | **906** |
 | 10 | Advertising | **441** |
@@ -134,19 +134,19 @@ Infrastructure-heavy categories (CDNs, core libraries, and UI assets):
 
 | # | Infrastructure Category | Loads |
 |--:|--------------------------|------:|
-| 1 | CDN | **20,020** |
-| 2 | JavaScript Library | **5,853** |
-| 3 | Icon Library | **1,927** |
+| 1 | CDN | **20,013** |
+| 2 | JavaScript Library | **5,844** |
+| 3 | Icon Library | **1,928** |
 | 4 | UI Framework | **906** |
 
 Policy-relevant categories (tracking, consent, support, and security tooling):
 
 | # | Policy-Relevant Category | Loads |
 |--:|--------------------------|------:|
-| 1 | Analytics | **9,698** |
-| 2 | Security | **5,083** |
-| 3 | CAPTCHA | **4,839** |
-| 4 | Tag Manager | **4,626** |
+| 1 | Analytics | **9,703** |
+| 2 | Security | **5,081** |
+| 3 | CAPTCHA | **4,837** |
+| 4 | Tag Manager | **4,628** |
 | 5 | Cookie Consent | **1,578** |
 | 6 | Advertising | **441** |
 | 7 | Error Tracking | **225** |
@@ -163,7 +163,7 @@ Policy-relevant categories (tracking, consent, support, and security tooling):
 |--:|------|------:|----------------:|
 | 1 | `cdn.ent.auvergnerhonealpes.fr` | **15,103** | **1,648** |
 | 2 | `cdn.ecollege.haute-garonne.fr` | **2,422** | **270** |
-| 3 | `translate.google.com` | **2,384** | **2,381** |
+| 3 | `translate.google.com` | **2,390** | **2,387** |
 | 4 | `www.cqc.org.uk` | **1,794** | **1,775** |
 | 5 | `maps.googleapis.com` | **1,693** | **1,675** |
 | 6 | `content.powerapps.com` | **1,546** | **128** |

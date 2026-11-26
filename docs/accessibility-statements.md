@@ -5,14 +5,14 @@ layout: page
 
 <!-- ACCESSIBILITY_STATS_START -->
 
-_Stats as of 2026-11-26 09:37 UTC — last scan: 2026-11-25_
+_Stats as of 2026-11-26 10:10 UTC — last scan: 2026-11-26_
 
-**579** scan batches run
+**581** scan batches run
 
 **87,690** of **87,696** available pages scanned (**100.0%** coverage)
-**82,300** of **87,690** scanned pages were reachable (**93.9%**)
-**42,814** of **82,300** reachable pages have an accessibility statement (**52.0%**)
-**37,818** pages have the statement link in the footer (**88.3%** of pages with a statement)
+**82,320** of **87,690** scanned pages were reachable (**93.9%**)
+**42,828** of **82,320** reachable pages have an accessibility statement (**52.0%**)
+**37,832** pages have the statement link in the footer (**88.3%** of pages with a statement)
 
 📥 Machine-readable results are available as the [accessibility-data.json artifact (machine-readable JSON)](https://github.com/mgifford/eu-plus-government-scans/actions/workflows/generate-scan-progress.yml).
 
@@ -54,11 +54,11 @@ Each country entry in the JSON file includes page-level evidence for pages with 
 | Romania | 807 | 807 | 354 | 30 | 10 | 8.5% | Aug 2026 – Nov 2026 |
 | Slovakia | 442 | 442 | 416 | 196 | 178 | 47.1% | Aug 2026 – Nov 2026 |
 | Slovenia | 214 | 214 | 209 | 118 | 83 | 56.5% | Aug 2026 – Nov 2026 |
-| Spain | 6,091 | 6,091 | 5,465 | 2,535 | 2,240 | 46.4% | Aug 2026 – Nov 2026 |
+| Spain | 6,091 | 6,091 | 5,485 | 2,549 | 2,254 | 46.5% | Aug 2026 – Nov 2026 |
 | Sweden | 1,702 | 1,702 | 1,633 | 973 | 888 | 59.6% | Aug 2026 – Nov 2026 |
 | Switzerland | 2,123 | 2,123 | 2,085 | 1,035 | 1,034 | 49.6% | Aug 2026 – Nov 2026 |
 | United Kingdom | 19,511 | 19,511 | 18,732 | 11,724 | 11,096 | 62.6% | Aug 2026 – Nov 2026 |
-| **Total** | **87,696** | **87,696** | **82,306** | **42,820** | **37,824** | **52.0%** | — |
+| **Total** | **87,696** | **87,696** | **82,326** | **42,834** | **37,838** | **52.0%** | — |
 
 > **Statement %** is the percentage of *reachable* pages that contain at least one link to an accessibility statement.
 
