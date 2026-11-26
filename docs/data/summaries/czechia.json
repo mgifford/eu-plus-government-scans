@@ -1,11 +1,11 @@
 {
   "country_code": "CZECHIA",
-  "total_relationships": 2602,
+  "total_relationships": 2598,
   "total_source_domains": 54,
   "top_source_domains": [
     {
       "domain": "ostrava.cz",
-      "count": 10344
+      "count": 10379
     },
     {
       "domain": "brno.cz",
@@ -207,7 +207,7 @@
   "top_target_domains": [
     {
       "domain": "ostrava.cz",
-      "count": 5117
+      "count": 5154
     },
     {
       "domain": "brno.cz",
@@ -219,7 +219,7 @@
     },
     {
       "domain": "facebook.com",
-      "count": 837
+      "count": 839
     },
     {
       "domain": "googleapis.com",
@@ -287,7 +287,7 @@
     },
     {
       "domain": "ovanet.cz",
-      "count": 236
+      "count": 238
     },
     {
       "domain": "liberec.cz",
@@ -303,7 +303,7 @@
     },
     {
       "domain": "ostravainfo.cz",
-      "count": 206
+      "count": 208
     },
     {
       "domain": "cnb.cz",
@@ -318,16 +318,16 @@
       "count": 185
     },
     {
+      "domain": "cookiedatabase.org",
+      "count": 183
+    },
+    {
       "domain": "gstatic.com",
       "count": 182
     },
     {
-      "domain": "cookiedatabase.org",
-      "count": 181
-    },
-    {
       "domain": "jsdelivr.net",
-      "count": 178
+      "count": 179
     },
     {
       "domain": "md.gov.cz",
@@ -335,11 +335,11 @@
     },
     {
       "domain": "portal.gov.cz",
-      "count": 167
+      "count": 169
     },
     {
       "domain": "smlouvy.gov.cz",
-      "count": 165
+      "count": 167
     },
     {
       "domain": "khk.cz",
@@ -355,7 +355,7 @@
     },
     {
       "domain": "jquery.com",
-      "count": 142
+      "count": 143
     },
     {
       "domain": "nzip.cz",
@@ -402,17 +402,17 @@
       "count": 86
     },
     {
-      "domain": "fajnarodina.cz",
+      "domain": "cityvizor.cz",
       "count": 80
     }
   ],
   "relationship_types": {
-    "editorial_link": 1543,
+    "editorial_link": 1539,
     "script_dependency": 319,
     "stylesheet_dependency": 273,
     "form_destination": 163,
     "image_or_media_dependency": 235,
     "font_or_preload_dependency": 69
   },
-  "generated_at": "2026-11-21T06:30:20.599400+00:00"
+  "generated_at": "2026-11-26T17:16:54.278619+00:00"
 }

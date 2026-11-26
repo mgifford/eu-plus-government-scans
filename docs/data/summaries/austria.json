@@ -9,7 +9,7 @@
     },
     {
       "domain": "ooe.gv.at",
-      "count": 16793
+      "count": 16804
     },
     {
       "domain": "wien.gv.at",
@@ -89,7 +89,7 @@
     },
     {
       "domain": "bka.gv.at",
-      "count": 207
+      "count": 221
     },
     {
       "domain": "fma.gv.at",
@@ -132,12 +132,12 @@
       "count": 75
     },
     {
-      "domain": "bmk.gv.at",
-      "count": 50
+      "domain": "tiere-die-ins-leben-passen.at",
+      "count": 60
     },
     {
-      "domain": "tiere-die-ins-leben-passen.at",
-      "count": 48
+      "domain": "bmk.gv.at",
+      "count": 50
     },
     {
       "domain": "garsten.at",
@@ -159,7 +159,7 @@
     },
     {
       "domain": "ooe.gv.at",
-      "count": 6229
+      "count": 6234
     },
     {
       "domain": "wien.gv.at",
@@ -187,7 +187,7 @@
     },
     {
       "domain": "gem2go.at",
-      "count": 900
+      "count": 901
     },
     {
       "domain": "datareporter.eu",
@@ -211,7 +211,7 @@
     },
     {
       "domain": "bka.gv.at",
-      "count": 404
+      "count": 414
     },
     {
       "domain": "noe.gv.at",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "land-oberoesterreich.gv.at",
-      "count": 248
+      "count": 249
     },
     {
       "domain": "bmi.gv.at",
@@ -279,7 +279,7 @@
     },
     {
       "domain": "wko.at",
-      "count": 198
+      "count": 199
     },
     {
       "domain": "bfvfb.at",
@@ -362,5 +362,5 @@
     "stylesheet_dependency": 357,
     "font_or_preload_dependency": 43
   },
-  "generated_at": "2026-11-24T04:39:44.540646+00:00"
+  "generated_at": "2026-11-26T17:16:53.990939+00:00"
 }

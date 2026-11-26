@@ -4,14 +4,44 @@
     "total_source_domains": 21,
     "file": "iceland.json"
   },
-  "MALTA": {
-    "total_relationships": 1726,
-    "total_source_domains": 3,
-    "file": "malta.json"
+  "SWEDEN": {
+    "total_relationships": 6215,
+    "total_source_domains": 245,
+    "file": "sweden.json"
   },
-  "ITALY": {
-    "total_relationships": 16373,
-    "total_source_domains": 154,
-    "file": "italy.json"
+  "GREECE": {
+    "total_relationships": 8871,
+    "total_source_domains": 375,
+    "file": "greece.json"
+  },
+  "NORWAY": {
+    "total_relationships": 873,
+    "total_source_domains": 34,
+    "file": "norway.json"
+  },
+  "AUSTRIA": {
+    "total_relationships": 2996,
+    "total_source_domains": 37,
+    "file": "austria.json"
+  },
+  "SWITZERLAND": {
+    "total_relationships": 6896,
+    "total_source_domains": 9,
+    "file": "switzerland.json"
+  },
+  "FINLAND": {
+    "total_relationships": 966,
+    "total_source_domains": 41,
+    "file": "finland.json"
+  },
+  "CZECHIA": {
+    "total_relationships": 2598,
+    "total_source_domains": 54,
+    "file": "czechia.json"
+  },
+  "PORTUGAL": {
+    "total_relationships": 13637,
+    "total_source_domains": 389,
+    "file": "portugal.json"
   }
 }

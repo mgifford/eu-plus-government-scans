@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T17:40:20.194481+00:00",
+  "generated_at": "2026-11-26T17:16:56.984786+00:00",
   "metric": "Share of a country's scanned government domains that load at least one asset from the service.",
   "dependency_types": [
     "font_or_preload_dependency",
@@ -173,12 +173,12 @@
     {
       "service": "googleapis.com",
       "countries": 32,
-      "domains": 4498
+      "domains": 4500
     },
     {
       "service": "googletagmanager.com",
       "countries": 32,
-      "domains": 2784
+      "domains": 2786
     },
     {
       "service": "gstatic.com",
@@ -188,7 +188,7 @@
     {
       "service": "jsdelivr.net",
       "countries": 32,
-      "domains": 1210
+      "domains": 1209
     },
     {
       "service": "fontawesome.com",
@@ -203,17 +203,17 @@
     {
       "service": "cloudflare.com",
       "countries": 31,
-      "domains": 1803
+      "domains": 1802
     },
     {
       "service": "jquery.com",
       "countries": 30,
-      "domains": 624
+      "domains": 625
     },
     {
       "service": "unpkg.com",
       "countries": 29,
-      "domains": 671
+      "domains": 673
     },
     {
       "service": "bootstrapcdn.com",
@@ -248,7 +248,7 @@
     {
       "service": "addtoany.com",
       "countries": 21,
-      "domains": 181
+      "domains": 182
     },
     {
       "service": "arcgis.com",
@@ -820,9 +820,9 @@
       "country_code": "PORTUGAL",
       "country": "Portugal",
       "service": "unpkg.com",
-      "domains": 52,
+      "domains": 53,
       "scanned_domains": 377,
-      "percent": 13.8
+      "percent": 14.1
     },
     {
       "country_code": "PORTUGAL",
@@ -916,17 +916,17 @@
       "country_code": "GREECE",
       "country": "Greece",
       "service": "googleapis.com",
-      "domains": 242,
+      "domains": 244,
       "scanned_domains": 372,
-      "percent": 65.1
+      "percent": 65.6
     },
     {
       "country_code": "GREECE",
       "country": "Greece",
       "service": "googletagmanager.com",
-      "domains": 141,
+      "domains": 143,
       "scanned_domains": 372,
-      "percent": 37.9
+      "percent": 38.4
     },
     {
       "country_code": "GREECE",
@@ -940,9 +940,9 @@
       "country_code": "GREECE",
       "country": "Greece",
       "service": "jsdelivr.net",
-      "domains": 62,
+      "domains": 61,
       "scanned_domains": 372,
-      "percent": 16.7
+      "percent": 16.4
     },
     {
       "country_code": "GREECE",
@@ -964,25 +964,25 @@
       "country_code": "GREECE",
       "country": "Greece",
       "service": "cloudflare.com",
-      "domains": 61,
+      "domains": 60,
       "scanned_domains": 372,
-      "percent": 16.4
+      "percent": 16.1
     },
     {
       "country_code": "GREECE",
       "country": "Greece",
       "service": "jquery.com",
-      "domains": 25,
+      "domains": 26,
       "scanned_domains": 372,
-      "percent": 6.7
+      "percent": 7.0
     },
     {
       "country_code": "GREECE",
       "country": "Greece",
       "service": "unpkg.com",
-      "domains": 22,
+      "domains": 23,
       "scanned_domains": 372,
-      "percent": 5.9
+      "percent": 6.2
     },
     {
       "country_code": "GREECE",
@@ -1036,9 +1036,9 @@
       "country_code": "GREECE",
       "country": "Greece",
       "service": "addtoany.com",
-      "domains": 9,
+      "domains": 10,
       "scanned_domains": 372,
-      "percent": 2.4
+      "percent": 2.7
     },
     {
       "country_code": "GREECE",
