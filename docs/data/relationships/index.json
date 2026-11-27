@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-26T17:16:49.857198+00:00",
+  "generated_at": "2026-11-27T17:01:57.640748+00:00",
   "shard_max_bytes": 33554432,
-  "total_rows": 337899,
-  "total_bytes": 200445501,
+  "total_rows": 337972,
+  "total_bytes": 200479413,
   "shards": [
     {
       "file": "app.001.jsonl",
@@ -20,7 +20,7 @@
       "file": "be.001.jsonl",
       "group": "be",
       "rows": 4039,
-      "bytes": 2410477
+      "bytes": 2410391
     },
     {
       "file": "bg.001.jsonl",
@@ -43,8 +43,8 @@
     {
       "file": "ca.001.jsonl",
       "group": "ca",
-      "rows": 13455,
-      "bytes": 8328607
+      "rows": 13459,
+      "bytes": 8332338
     },
     {
       "file": "cat.001.jsonl",
@@ -74,7 +74,7 @@
       "file": "com.001.jsonl",
       "group": "com",
       "rows": 465,
-      "bytes": 274460
+      "bytes": 274457
     },
     {
       "file": "cy.001.jsonl",
@@ -121,8 +121,8 @@
     {
       "file": "eu.001.jsonl",
       "group": "eu",
-      "rows": 3673,
-      "bytes": 2142001
+      "rows": 3675,
+      "bytes": 2142923
     },
     {
       "file": "eus.001.jsonl",
@@ -139,8 +139,8 @@
     {
       "file": "fr.001.jsonl",
       "group": "fr",
-      "rows": 31792,
-      "bytes": 20973765
+      "rows": 31802,
+      "bytes": 20974913
     },
     {
       "file": "frl.001.jsonl",
@@ -325,8 +325,8 @@
     {
       "file": "se.001.jsonl",
       "group": "se",
-      "rows": 6415,
-      "bytes": 3446433
+      "rows": 6467,
+      "bytes": 3472027
     },
     {
       "file": "si.001.jsonl",
@@ -361,14 +361,14 @@
     {
       "file": "uk.001.jsonl",
       "group": "uk",
-      "rows": 59568,
-      "bytes": 33552185
+      "rows": 59572,
+      "bytes": 33554206
     },
     {
       "file": "uk.002.jsonl",
       "group": "uk",
-      "rows": 21103,
-      "bytes": 11836707
+      "rows": 21104,
+      "bytes": 11837292
     },
     {
       "file": "wales.001.jsonl",

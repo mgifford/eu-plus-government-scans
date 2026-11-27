@@ -5,43 +5,13 @@
     "file": "iceland.json"
   },
   "SWEDEN": {
-    "total_relationships": 6215,
-    "total_source_domains": 245,
+    "total_relationships": 6208,
+    "total_source_domains": 246,
     "file": "sweden.json"
   },
-  "GREECE": {
-    "total_relationships": 8871,
-    "total_source_domains": 375,
-    "file": "greece.json"
-  },
-  "NORWAY": {
-    "total_relationships": 873,
-    "total_source_domains": 34,
-    "file": "norway.json"
-  },
-  "AUSTRIA": {
-    "total_relationships": 2996,
-    "total_source_domains": 37,
-    "file": "austria.json"
-  },
-  "SWITZERLAND": {
-    "total_relationships": 6896,
-    "total_source_domains": 9,
-    "file": "switzerland.json"
-  },
-  "FINLAND": {
-    "total_relationships": 966,
-    "total_source_domains": 41,
-    "file": "finland.json"
-  },
-  "CZECHIA": {
-    "total_relationships": 2598,
-    "total_source_domains": 54,
-    "file": "czechia.json"
-  },
-  "PORTUGAL": {
-    "total_relationships": 13637,
-    "total_source_domains": 389,
-    "file": "portugal.json"
+  "CANADA": {
+    "total_relationships": 325717,
+    "total_source_domains": 9525,
+    "file": "canada.json"
   }
 }

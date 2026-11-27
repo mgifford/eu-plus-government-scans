@@ -5,7 +5,7 @@
   "top_source_domains": [
     {
       "domain": "belgium.be",
-      "count": 17755
+      "count": 17768
     },
     {
       "domain": "wallonie.be",
@@ -13,7 +13,7 @@
     },
     {
       "domain": "fgov.be",
-      "count": 4215
+      "count": 4224
     },
     {
       "domain": "vlaanderen.be",
@@ -25,7 +25,7 @@
     },
     {
       "domain": "antwerpen.be",
-      "count": 3312
+      "count": 3316
     },
     {
       "domain": "hainaut.be",
@@ -61,7 +61,7 @@
     },
     {
       "domain": "oost-vlaanderen.be",
-      "count": 558
+      "count": 577
     },
     {
       "domain": "kortrijk.be",
@@ -191,7 +191,7 @@
   "top_target_domains": [
     {
       "domain": "belgium.be",
-      "count": 10082
+      "count": 10090
     },
     {
       "domain": "wallonie.be",
@@ -203,27 +203,27 @@
     },
     {
       "domain": "fgov.be",
-      "count": 2554
+      "count": 2562
     },
     {
       "domain": "facebook.com",
-      "count": 2346
+      "count": 2349
     },
     {
       "domain": "googleapis.com",
-      "count": 2023
+      "count": 2024
     },
     {
       "domain": "linkedin.com",
-      "count": 1838
+      "count": 1840
     },
     {
       "domain": "antwerpen.be",
-      "count": 1789
+      "count": 1792
     },
     {
       "domain": "instagram.com",
-      "count": 1727
+      "count": 1729
     },
     {
       "domain": "mechelen.be",
@@ -231,7 +231,7 @@
     },
     {
       "domain": "enable-javascript.com",
-      "count": 1389
+      "count": 1390
     },
     {
       "domain": "jsdelivr.net",
@@ -247,7 +247,7 @@
     },
     {
       "domain": "unpkg.com",
-      "count": 1046
+      "count": 1047
     },
     {
       "domain": "irisnet.be",
@@ -255,7 +255,7 @@
     },
     {
       "domain": "twitter.com",
-      "count": 816
+      "count": 819
     },
     {
       "domain": "namur.be",
@@ -338,12 +338,12 @@
       "count": 180
     },
     {
-      "domain": "matomo.cloud",
-      "count": 170
+      "domain": "oost-vlaanderen.be",
+      "count": 177
     },
     {
-      "domain": "oost-vlaanderen.be",
-      "count": 168
+      "domain": "matomo.cloud",
+      "count": 172
     },
     {
       "domain": "cloudfront.net",
@@ -398,5 +398,5 @@
     "font_or_preload_dependency": 108,
     "form_destination": 316
   },
-  "generated_at": "2026-11-21T06:30:20.818940+00:00"
+  "generated_at": "2026-11-27T02:20:31.318675+00:00"
 }
